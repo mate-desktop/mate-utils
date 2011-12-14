@@ -1,12 +1,12 @@
-m4_define([mate_utils_major], [2011])
-m4_define([mate_utils_minor], [12])
-m4_define([mate_utils_micro], [01])
+m4_define([mate_utils_major], [1])
+m4_define([mate_utils_minor], [1])
+m4_define([mate_utils_micro], [0])
 
 m4_define([mate_utils_version], [mate_utils_major.mate_utils_minor.mate_utils_micro])
 
 AC_INIT([mate-utils],
         [mate_utils_version],
-        [http://bugzilla.mate.org/enter_bug.cgi?product=mate-utils])
+        [http://www.mate-desktop.org/])
 
 AC_CONFIG_MACRO_DIR([m4])
 
@@ -72,7 +72,7 @@ GLIB_REQUIRED=2.20.0
 GIO_REQUIRED=2.16.0
 GTK_REQUIRED=2.20.0
 GIO_UNIX_REQUIRED=2.18.0
-LIBMATE_PANEL_APPLET_REQUIRED=2.13.4
+LIBMATE_PANEL_APPLET_REQUIRED=1.1.0
 LIBGTOP_REQUIRED=2.12.0
 LIBCANBERRA_GTK_REQUIRED=0.4
 
@@ -106,8 +106,8 @@ AC_SUBST(LIBGDICT_LIBS)
 # Even if this library is not part of the developers platform, we
 # follow the same rules: no ABI breakage (unless unavoidable) and
 # no API breakage past the API freeze.
-m4_define([gdict_major_version], [0])
-m4_define([gdict_minor_version], [11])
+m4_define([gdict_major_version], [1])
+m4_define([gdict_minor_version], [1])
 m4_define([gdict_micro_version], [0])
 m4_define([gdict_version], [gdict_major_version.gdict_minor_version.gdict_micro_version])
 
