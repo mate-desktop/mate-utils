@@ -337,7 +337,7 @@ AS_IF([test "x$enable_maintainer_flags" = "xyes" && test "x$GCC" = "xyes"],
 )
 
 dnl Internationalization
-GETTEXT_PACKAGE=mate-utils-2.0
+GETTEXT_PACKAGE=mate-utils
 AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE], "$GETTEXT_PACKAGE", [Define the gettext package to use])
 AC_SUBST(GETTEXT_PACKAGE)
 AM_GLIB_GNU_GETTEXT
