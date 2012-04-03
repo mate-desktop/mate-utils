@@ -44,8 +44,8 @@ gdict_get_data_dir (void)
 {
   gchar *retval;
 
-  retval = g_build_filename (g_get_home_dir (),
-		  	     ".mate2",
+  retval = g_build_filename (g_get_user_config_dir (),
+		  	     ".mate",
 			     "mate-dictionary",
 			     NULL);
   
