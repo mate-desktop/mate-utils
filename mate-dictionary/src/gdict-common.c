@@ -45,7 +45,7 @@ gdict_get_data_dir (void)
   gchar *retval;
 
   retval = g_build_filename (g_get_user_config_dir (),
-		  	     ".mate",
+		  	     "mate",
 			     "mate-dictionary",
 			     NULL);
   
@@ -59,7 +59,7 @@ gdict_create_data_dir (void)
   gchar *data_dir_name;
   
   data_dir_name = gdict_get_data_dir ();
-  if (g_mkdir (data_dir_name, 0700) == -1)
+  if (g_mkdir_with_parents (data_dir_name, 0700) == -1)
     {
       /* this is weird, but sometimes there's a "mate-dictionary" file
        * inside $HOME/.mate2; see bug #329126.
@@ -93,7 +93,7 @@ gdict_create_data_dir (void)
 
 	  g_free (backup);
 	  
-          if (g_mkdir (data_dir_name, 0700) == -1)
+          if (g_mkdir_with_parents (data_dir_name, 0700) == -1)
             {
               GtkWidget *error_dialog;
 	      
