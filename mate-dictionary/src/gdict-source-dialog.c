@@ -347,7 +347,7 @@ build_new_source (GdictSourceDialog *dialog)
       
   name = g_strdup_printf ("%s.desktop", gdict_source_get_name (source));
   filename = g_build_filename (g_get_user_config_dir (),
-  			       ".mate",
+  			       "mate",
       			       "mate-dictionary",
       			       name,
       			       NULL);
@@ -440,7 +440,7 @@ save_source (GdictSourceDialog *dialog)
       
   name = g_strdup_printf ("%s.desktop", gdict_source_get_name (source));
   filename = g_build_filename (g_get_user_config_dir (),
-      			       ".mate",
+      			       "mate",
 			       "mate-dictionary",
 			       name,
 			       NULL);
