@@ -1,33 +1,34 @@
-# Traducció del mòdul mate-utils de Softcatalà
-# Copyright © 2000-2010 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mate-utils package.
-# Softcatalà <tradmate@softcatala.org>, 2000, 2002.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Gil Forcada <gilforcada@guifi.net>, 2006, 2008.
 # Jordi Mallach <jordi@sindominio.net>, 2002, 2003, 2004, 2005.
 # Josep Puigdemont <josep.puigdemont@gmail.com>, 2005, 2006, 2007.
-# Gil Forcada <gilforcada@guifi.net>, 2006, 2008.
-# Joan Duran <jodufi@gmail.com>, 2008-2010.
-#
+# Softcatalà <tradmate@softcatala.org>, 2000, 2002.
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-utils\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-05 22:50+0100\n"
-"PO-Revision-Date: 2010-04-02 18:21+0200\n"
-"Last-Translator: Joan Duran <jodufi@gmail.com>\n"
-"Language-Team: Catalan <tradmate@softcatala.org>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-12 11:59+0100\n"
+"PO-Revision-Date: 2012-03-12 11:01+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Catalan (http://www.transifex.com/projects/p/MATE/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Language: ca\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../baobab/data/baobab.desktop.in.in.h:1
-msgid "Check folder sizes and available disk space"
-msgstr "Comprova la mida de les carpetes i l'espai disponible al disc"
-
-#: ../baobab/data/baobab.desktop.in.in.h:2
-#: ../baobab/data/baobab-main-window.ui.h:2
+#: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:1
+#: ../baobab/data/baobab-main-window.ui.h:15
 msgid "Disk Usage Analyzer"
 msgstr "Analitzador de l'ús dels discs"
+
+#: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:2
+msgid "Check folder sizes and available disk space"
+msgstr "Comprova la mida de les carpetes i l'espai disponible al disc"
 
 #: ../baobab/data/baobab-dialog-scan-props.ui.h:1
 msgid "Disk Usage Analyzer Preferences"
@@ -35,244 +36,251 @@ msgstr "Preferències de l'analitzador d'utilització del disc"
 
 #: ../baobab/data/baobab-dialog-scan-props.ui.h:2
 msgid "Select _devices to include in filesystem scan:"
-msgstr ""
-"Seleccioneu els _dispositius a incloure en l'escaneig del sistema de fitxers:"
+msgstr "Seleccioneu els _dispositius a incloure en l'escaneig del sistema de fitxers:"
 
 #: ../baobab/data/baobab-dialog-scan-props.ui.h:3
 msgid "_Monitor changes to your home folder"
 msgstr "Fes un _seguiment dels canvis al directori d'usuari"
 
 #: ../baobab/data/baobab-main-window.ui.h:1
-msgid "All_ocated Space"
-msgstr "E_spai ubicat"
-
-#: ../baobab/data/baobab-main-window.ui.h:3
-msgid "Refresh"
-msgstr "Actualitza"
-
-#: ../baobab/data/baobab-main-window.ui.h:4
-msgid "S_can Remote Folder..."
-msgstr "Escaneja una carpeta _remota..."
-
-#: ../baobab/data/baobab-main-window.ui.h:5
-msgid "Scan F_older..."
-msgstr "_Escaneja una carpeta..."
-
-#: ../baobab/data/baobab-main-window.ui.h:6
-msgid "Scan Filesystem"
-msgstr "Escaneja el sistema de fitxers"
-
-#: ../baobab/data/baobab-main-window.ui.h:7
-msgid "Scan Folder"
-msgstr "Escaneja una carpeta"
-
-#: ../baobab/data/baobab-main-window.ui.h:8
-msgid "Scan Home"
-msgstr "Escaneja el directori d'usuari"
-
-#: ../baobab/data/baobab-main-window.ui.h:9
-msgid "Scan Remote Folder"
-msgstr "Escaneja una carpeta remota"
-
-#: ../baobab/data/baobab-main-window.ui.h:10
-msgid "Scan _Filesystem"
-msgstr "Escaneja el sistema de _fitxers"
-
-#: ../baobab/data/baobab-main-window.ui.h:11
-msgid "Scan _Home Folder"
-msgstr "Escaneja la carpeta d'_usuari"
-
-#: ../baobab/data/baobab-main-window.ui.h:12
-msgid "Scan a folder"
-msgstr "Escaneja una carpeta"
-
-#: ../baobab/data/baobab-main-window.ui.h:13
-msgid "Scan a remote folder"
-msgstr "Escaneja una carpeta remota"
-
-#: ../baobab/data/baobab-main-window.ui.h:14
-msgid "Scan filesystem"
-msgstr "Escaneja el sistema de fitxers"
-
-#: ../baobab/data/baobab-main-window.ui.h:15
-msgid "Scan home folder"
-msgstr "Escaneja el directori d'usuari"
-
-#: ../baobab/data/baobab-main-window.ui.h:16
-msgid "St_atusbar"
-msgstr "_Barra d'estat"
-
-#: ../baobab/data/baobab-main-window.ui.h:17
-msgid "Stop scanning"
-msgstr "Atura l'escaneig"
-
-#: ../baobab/data/baobab-main-window.ui.h:18
 msgid "_Analyzer"
 msgstr "_Analitzador"
 
-#: ../baobab/data/baobab-main-window.ui.h:19
-msgid "_Collapse All"
-msgstr "_Redueix-ho tot"
+#: ../baobab/data/baobab-main-window.ui.h:2
+msgid "Scan _Home Folder"
+msgstr "Escaneja la carpeta d'_usuari"
 
-#. Help menu
-#: ../baobab/data/baobab-main-window.ui.h:20
-#: ../mate-dictionary/src/gdict-window.c:1234 ../logview/logview-window.c:866
-msgid "_Contents"
-msgstr "_Continguts"
+#: ../baobab/data/baobab-main-window.ui.h:3
+msgid "Scan _Filesystem"
+msgstr "Escaneja el sistema de _fitxers"
 
-#: ../baobab/data/baobab-main-window.ui.h:21
-#: ../mate-dictionary/src/gdict-window.c:1181 ../logview/logview-window.c:837
+#: ../baobab/data/baobab-main-window.ui.h:4
+msgid "Scan F_older..."
+msgstr "_Escaneja una carpeta..."
+
+#: ../baobab/data/baobab-main-window.ui.h:5
+msgid "S_can Remote Folder..."
+msgstr "Escaneja una carpeta _remota..."
+
+#: ../baobab/data/baobab-main-window.ui.h:6
+#: ../mate-dictionary/src/gdict-window.c:1176 ../logview/logview-window.c:808
 msgid "_Edit"
 msgstr "_Edita"
 
-#: ../baobab/data/baobab-main-window.ui.h:22
+#: ../baobab/data/baobab-main-window.ui.h:7
 msgid "_Expand All"
 msgstr "_Expandeix-ho tot"
 
-#: ../baobab/data/baobab-main-window.ui.h:23
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:3
-#: ../mate-dictionary/src/gdict-window.c:1184 ../logview/logview-window.c:840
-msgid "_Help"
-msgstr "A_juda"
+#: ../baobab/data/baobab-main-window.ui.h:8
+msgid "_Collapse All"
+msgstr "_Redueix-ho tot"
 
-#: ../baobab/data/baobab-main-window.ui.h:24
-msgid "_Toolbar"
-msgstr "Barra d'_eines"
-
-#: ../baobab/data/baobab-main-window.ui.h:25
-#: ../mate-dictionary/src/gdict-window.c:1182 ../logview/logview-window.c:838
+#: ../baobab/data/baobab-main-window.ui.h:9
+#: ../mate-dictionary/src/gdict-window.c:1177 ../logview/logview-window.c:809
 msgid "_View"
 msgstr "_Mostra"
 
+#: ../baobab/data/baobab-main-window.ui.h:10
+msgid "_Toolbar"
+msgstr "Barra d'_eines"
+
+#: ../baobab/data/baobab-main-window.ui.h:11
+msgid "St_atusbar"
+msgstr "_Barra d'estat"
+
+#: ../baobab/data/baobab-main-window.ui.h:12
+msgid "All_ocated Space"
+msgstr "E_spai ubicat"
+
+#: ../baobab/data/baobab-main-window.ui.h:13
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:6
+#: ../mate-dictionary/src/gdict-window.c:1179 ../logview/logview-window.c:811
+msgid "_Help"
+msgstr "A_juda"
+
+#. Help menu
+#: ../baobab/data/baobab-main-window.ui.h:14
+#: ../mate-dictionary/src/gdict-window.c:1229 ../logview/logview-window.c:837
+msgid "_Contents"
+msgstr "_Continguts"
+
+#: ../baobab/data/baobab-main-window.ui.h:16
+msgid "Scan home folder"
+msgstr "Escaneja el directori d'usuari"
+
+#: ../baobab/data/baobab-main-window.ui.h:17
+msgid "Scan Home"
+msgstr "Escaneja el directori d'usuari"
+
+#: ../baobab/data/baobab-main-window.ui.h:18
+msgid "Scan filesystem"
+msgstr "Escaneja el sistema de fitxers"
+
+#: ../baobab/data/baobab-main-window.ui.h:19
+msgid "Scan Filesystem"
+msgstr "Escaneja el sistema de fitxers"
+
+#: ../baobab/data/baobab-main-window.ui.h:20
+msgid "Scan a folder"
+msgstr "Escaneja una carpeta"
+
+#: ../baobab/data/baobab-main-window.ui.h:21
+msgid "Scan Folder"
+msgstr "Escaneja una carpeta"
+
+#: ../baobab/data/baobab-main-window.ui.h:22
+msgid "Scan a remote folder"
+msgstr "Escaneja una carpeta remota"
+
+#: ../baobab/data/baobab-main-window.ui.h:23
+msgid "Scan Remote Folder"
+msgstr "Escaneja una carpeta remota"
+
+#: ../baobab/data/baobab-main-window.ui.h:24
+msgid "Stop scanning"
+msgstr "Atura l'escaneig"
+
+#: ../baobab/data/baobab-main-window.ui.h:25
+msgid "Refresh"
+msgstr "Actualitza"
+
 #: ../baobab/data/baobab.schemas.in.h:1
-msgid "A list of URIs for partitions to be excluded from scanning."
-msgstr "Una llista d'URI de les particions que s'exclouran durant l'escaneig."
-
-#: ../baobab/data/baobab.schemas.in.h:2
-msgid "Enable monitoring of home directory"
-msgstr "Habilita el seguiment del directori d'usuari"
-
-#: ../baobab/data/baobab.schemas.in.h:3
-msgid "Excluded partitions URIs"
-msgstr "URI de les particions excloses"
-
-#: ../baobab/data/baobab.schemas.in.h:4
-msgid "Status Bar is Visible"
-msgstr "La barra d'estat és visible"
-
-#: ../baobab/data/baobab.schemas.in.h:5
-msgid "Subfolders tooltips visible"
-msgstr "Els indicadors de funció de les subcarpetes són visibles"
-
-#: ../baobab/data/baobab.schemas.in.h:6
 msgid "Toolbar is Visible"
 msgstr "La barra d'eines és visible"
 
-#: ../baobab/data/baobab.schemas.in.h:7
-msgid "Whether any change to the home directory should be monitored."
-msgstr "Si s'ha de fer un seguiment de qualsevol canvi al directori d'usuari."
-
-#: ../baobab/data/baobab.schemas.in.h:8
-msgid "Whether the status bar at the bottom of main window should be visible."
-msgstr ""
-"Si la barra d'estat a baix de tot de la finestra principal s'ha de veure."
-
-#: ../baobab/data/baobab.schemas.in.h:9
-msgid "Whether the subfolder tooltips of the selected folder are drawn."
-msgstr ""
-"Si s'han de dibuixar els indicadors de funció de les subcarpetes de la "
-"carpeta seleccionada."
-
-#: ../baobab/data/baobab.schemas.in.h:10
+#: ../baobab/data/baobab.schemas.in.h:2
 msgid "Whether the toolbar should be visible in main window."
 msgstr "Si la barra d'eines s'ha de veure a la finestra principal."
 
-#: ../baobab/src/baobab.c:139 ../baobab/src/baobab.c:326
+#: ../baobab/data/baobab.schemas.in.h:3
+msgid "Status Bar is Visible"
+msgstr "La barra d'estat és visible"
+
+#: ../baobab/data/baobab.schemas.in.h:4
+msgid "Whether the status bar at the bottom of main window should be visible."
+msgstr "Si la barra d'estat a baix de tot de la finestra principal s'ha de veure."
+
+#: ../baobab/data/baobab.schemas.in.h:5
+msgid "Enable monitoring of home directory"
+msgstr "Habilita el seguiment del directori d'usuari"
+
+#: ../baobab/data/baobab.schemas.in.h:6
+msgid "Whether any change to the home directory should be monitored."
+msgstr "Si s'ha de fer un seguiment de qualsevol canvi al directori d'usuari."
+
+#: ../baobab/data/baobab.schemas.in.h:7
+msgid "Excluded partitions URIs"
+msgstr "URI de les particions excloses"
+
+#: ../baobab/data/baobab.schemas.in.h:8
+msgid "A list of URIs for partitions to be excluded from scanning."
+msgstr "Una llista d'URI de les particions que s'exclouran durant l'escaneig."
+
+#: ../baobab/data/baobab.schemas.in.h:9
+msgid "Subfolders tooltips visible"
+msgstr "Els indicadors de funció de les subcarpetes són visibles"
+
+#: ../baobab/data/baobab.schemas.in.h:10
+msgid "Whether the subfolder tooltips of the selected folder are drawn."
+msgstr "Si s'han de dibuixar els indicadors de funció de les subcarpetes de la carpeta seleccionada."
+
+#: ../baobab/src/baobab.c:134 ../baobab/src/baobab.c:353
 msgid "Scanning..."
 msgstr "S'està escanejant..."
 
+#: ../baobab/src/baobab.c:180
+msgid "Total filesystem capacity:"
+msgstr "Capacitat total del sistema de fitxers:"
+
+#: ../baobab/src/baobab.c:181
+msgid "used:"
+msgstr "utilitzat:"
+
+#: ../baobab/src/baobab.c:182
+msgid "available:"
+msgstr "disponible:"
+
 #. set statusbar, percentage and allocated/normal size
-#: ../baobab/src/baobab.c:209 ../baobab/src/baobab.c:268
-#: ../baobab/src/callbacks.c:264
+#: ../baobab/src/baobab.c:238 ../baobab/src/baobab.c:295
+#: ../baobab/src/callbacks.c:260
 msgid "Calculating percentage bars..."
 msgstr "S'estan calculant les barres de percentatge..."
 
-#: ../baobab/src/baobab.c:220 ../baobab/src/baobab.c:1169
-#: ../baobab/src/callbacks.c:268
+#: ../baobab/src/baobab.c:249 ../baobab/src/baobab.c:1289
+#: ../baobab/src/callbacks.c:264
 msgid "Ready"
 msgstr "A punt"
 
-#: ../baobab/src/baobab.c:362
+#: ../baobab/src/baobab.c:386
 msgid "Total filesystem capacity"
 msgstr "Capacitat total del sistema de fitxers"
 
-#: ../baobab/src/baobab.c:384
+#: ../baobab/src/baobab.c:408
 msgid "Total filesystem usage"
 msgstr "Utilització total del sistema de fitxers"
 
-#: ../baobab/src/baobab.c:425
+#: ../baobab/src/baobab.c:449
 msgid "contains hardlinks for:"
 msgstr "conté enllaços forts per a:"
 
-#: ../baobab/src/baobab.c:434
+#: ../baobab/src/baobab.c:458
 #, c-format
 msgid "%5d item"
 msgid_plural "%5d items"
 msgstr[0] "%5d element"
 msgstr[1] "%5d elements"
 
-#: ../baobab/src/baobab.c:785
+#: ../baobab/src/baobab.c:585
 msgid "Could not initialize monitoring"
 msgstr "No s'ha pogut inicialitzar el seguiment"
 
-#: ../baobab/src/baobab.c:786
+#: ../baobab/src/baobab.c:586
 msgid "Changes to your home folder will not be monitored."
 msgstr "No es farà un seguiment dels canvis al directori d'usuari."
 
-#: ../baobab/src/baobab.c:893
+#: ../baobab/src/baobab.c:965
 msgid "Move to parent folder"
 msgstr "Vés a la carpeta pare"
 
-#: ../baobab/src/baobab.c:897
+#: ../baobab/src/baobab.c:969
 msgid "Zoom in"
 msgstr "Amplia"
 
-#: ../baobab/src/baobab.c:901
+#: ../baobab/src/baobab.c:973
 msgid "Zoom out"
 msgstr "Redueix"
 
-#: ../baobab/src/baobab.c:905
+#: ../baobab/src/baobab.c:977
 msgid "Save screenshot"
 msgstr "Desa la captura de pantalla"
 
-#: ../baobab/src/baobab.c:991
+#: ../baobab/src/baobab.c:1114
 msgid "View as Rings Chart"
 msgstr "Visualitza en un diagrama d'anells"
 
-#: ../baobab/src/baobab.c:993
+#: ../baobab/src/baobab.c:1116
 msgid "View as Treemap Chart"
 msgstr "Visualitza en un diagrama de mapa d'arbre"
 
-#: ../baobab/src/baobab.c:1092
+#: ../baobab/src/baobab.c:1214
 msgid "Show version"
 msgstr "Mostra la versió"
 
-#: ../baobab/src/baobab.c:1093
+#: ../baobab/src/baobab.c:1215
 msgid "[DIRECTORY]"
 msgstr "[DIRECTORI]"
 
-#: ../baobab/src/baobab.c:1123
+#: ../baobab/src/baobab.c:1245
 msgid "Too many arguments. Only one directory can be specified."
 msgstr "Hi ha masses paràmetres. Només es pot especificar un directori."
 
-#: ../baobab/src/baobab.c:1141
+#: ../baobab/src/baobab.c:1262
 msgid "Could not detect any mount point."
 msgstr "No s'ha pogut detectar cap punt de muntatge."
 
-#: ../baobab/src/baobab.c:1144
+#: ../baobab/src/baobab.c:1264
 msgid "Without mount points disk usage cannot be analyzed."
-msgstr ""
-"No es pot analitzar la utilització del disc sense els punts de muntatge."
+msgstr "No es pot analitzar la utilització del disc sense els punts de muntatge."
 
 #: ../baobab/src/baobab-chart.c:206
 msgid "Maximum depth"
@@ -298,40 +306,40 @@ msgstr "Node arrel del diagrama"
 msgid "Set the root node from the model"
 msgstr "Estableix el node arrel del diagrama d'anells"
 
-#: ../baobab/src/baobab-chart.c:1695
+#: ../baobab/src/baobab-chart.c:1710
 msgid "Cannot create pixbuf image!"
 msgstr "No s'ha pogut crear la imatge pixbuf."
 
 #. Popup the File chooser dialog
-#: ../baobab/src/baobab-chart.c:1705
+#: ../baobab/src/baobab-chart.c:1720
 msgid "Save Snapshot"
 msgstr "Desa la captura"
 
-#: ../baobab/src/baobab-chart.c:1734
+#: ../baobab/src/baobab-chart.c:1749
 msgid "_Image type:"
 msgstr "Tipus d'_imatge:"
 
-#: ../baobab/src/baobab-prefs.c:181
+#: ../baobab/src/baobab-prefs.c:184
 msgid "Scan"
 msgstr "Escaneja"
 
-#: ../baobab/src/baobab-prefs.c:188
+#: ../baobab/src/baobab-prefs.c:191
 msgid "Device"
 msgstr "Dispositiu"
 
-#: ../baobab/src/baobab-prefs.c:196
+#: ../baobab/src/baobab-prefs.c:199
 msgid "Mount Point"
 msgstr "Punt de muntatge"
 
-#: ../baobab/src/baobab-prefs.c:204
+#: ../baobab/src/baobab-prefs.c:207
 msgid "Filesystem Type"
 msgstr "Tipus de sistema de fitxers"
 
-#: ../baobab/src/baobab-prefs.c:212
+#: ../baobab/src/baobab-prefs.c:215
 msgid "Total Size"
 msgstr "Mida total"
 
-#: ../baobab/src/baobab-prefs.c:221
+#: ../baobab/src/baobab-prefs.c:224
 msgid "Available"
 msgstr "Disponible"
 
@@ -370,71 +378,68 @@ msgstr "WebDAV segur (HTTPS)"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:249
 msgid "Cannot Connect to Server. You must enter a name for the server."
-msgstr ""
-"No es pot connectar al servidor. Heu d'introduir un nom per al servidor."
+msgstr "No es pot connectar al servidor. Heu d'introduir un nom per al servidor."
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:252
 msgid "Please enter a name and try again."
 msgstr "Introduïu un nom i torneu-ho a provar."
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:443
+#: ../baobab/src/baobab-remote-connect-dialog.c:441
 msgid "_Location (URI):"
 msgstr "_Ubicació (URI):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:465
+#: ../baobab/src/baobab-remote-connect-dialog.c:463
 msgid "_Server:"
 msgstr "_Servidor:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:484
+#: ../baobab/src/baobab-remote-connect-dialog.c:482
 msgid "Optional information:"
 msgstr "Informació opcional:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:496
+#: ../baobab/src/baobab-remote-connect-dialog.c:494
 msgid "_Share:"
 msgstr "_Compartit:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:517
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:7
+#: ../baobab/src/baobab-remote-connect-dialog.c:515
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:4
 msgid "_Port:"
 msgstr "_Port:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:537
+#: ../baobab/src/baobab-remote-connect-dialog.c:535
 msgid "_Folder:"
 msgstr "C_arpeta:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:557
+#: ../baobab/src/baobab-remote-connect-dialog.c:555
 msgid "_User Name:"
 msgstr "_Nom d'usuari:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:578
+#: ../baobab/src/baobab-remote-connect-dialog.c:576
 msgid "_Domain Name:"
 msgstr "Nom del _domini:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:645
+#: ../baobab/src/baobab-remote-connect-dialog.c:643
 msgid "Connect to Server"
 msgstr "Connecta al servidor"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:662
+#: ../baobab/src/baobab-remote-connect-dialog.c:660
 msgid "Service _type:"
 msgstr "_Tipus de servei:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:781
+#: ../baobab/src/baobab-remote-connect-dialog.c:779
 msgid "_Scan"
 msgstr "_Escaneja"
 
-#: ../baobab/src/baobab-treeview.c:86
+#: ../baobab/src/baobab-treeview.c:82
 msgid "Rescan your home folder?"
 msgstr "Voleu tornar a escanejar el directori d'usuari?"
 
-#: ../baobab/src/baobab-treeview.c:87
+#: ../baobab/src/baobab-treeview.c:83
 msgid ""
 "The content of your home folder has changed. Select rescan to update the "
 "disk usage details."
-msgstr ""
-"El contingut del vostre directori d'usuari ha canviat. Seleccioneu tornar a "
-"escanejar per actualitzar els detalls d'ús."
+msgstr "El contingut del vostre directori d'usuari ha canviat. Seleccioneu tornar a escanejar per actualitzar els detalls d'ús."
 
-#: ../baobab/src/baobab-treeview.c:88
+#: ../baobab/src/baobab-treeview.c:84
 msgid "_Rescan"
 msgstr "_Torna a escanejar"
 
@@ -454,136 +459,107 @@ msgstr "Mida"
 msgid "Contents"
 msgstr "Continguts"
 
-#: ../baobab/src/baobab-utils.c:110
+#: ../baobab/src/baobab-utils.c:106
 msgid "Select Folder"
 msgstr "Seleccioneu una carpeta"
 
 #. add extra widget
-#: ../baobab/src/baobab-utils.c:122
+#: ../baobab/src/baobab-utils.c:118
 msgid "_Show hidden folders"
 msgstr "_Mostra les carpetes ocultes"
 
-#: ../baobab/src/baobab-utils.c:301
+#: ../baobab/src/baobab-utils.c:297
 msgid "Cannot check an excluded folder!"
 msgstr "No es pot comprovar una carpeta exclosa."
 
-#: ../baobab/src/baobab-utils.c:325
+#: ../baobab/src/baobab-utils.c:321
 #, c-format
 msgid "\"%s\" is not a valid folder"
 msgstr "«%s» no és una carpeta vàlida"
 
-#: ../baobab/src/baobab-utils.c:328
+#: ../baobab/src/baobab-utils.c:324
 msgid "Could not analyze disk usage."
 msgstr "No s'ha pogut analitzar l'ús del disc."
 
-#: ../baobab/src/baobab-utils.c:369
+#: ../baobab/src/baobab-utils.c:364
 msgid "_Open Folder"
 msgstr "O_bre la carpeta"
 
-#: ../baobab/src/baobab-utils.c:375
+#: ../baobab/src/baobab-utils.c:370
 #: ../gsearchtool/gsearchtool-callbacks.c:1203
 msgid "Mo_ve to Trash"
 msgstr "Mo_u a la paperera"
 
-#: ../baobab/src/baobab-utils.c:401
-msgid "Total filesystem capacity:"
-msgstr "Capacitat total del sistema de fitxers:"
-
-#: ../baobab/src/baobab-utils.c:402
-msgid "used:"
-msgstr "utilitzat:"
-
-#: ../baobab/src/baobab-utils.c:403
-msgid "available:"
-msgstr "disponible:"
-
-#: ../baobab/src/baobab-utils.c:447
+#: ../baobab/src/baobab-utils.c:404
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "No s'ha pogut obrir la carpeta «%s»"
 
-#: ../baobab/src/baobab-utils.c:450
+#: ../baobab/src/baobab-utils.c:407
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr "No hi ha cap visualitzador instal·lat capaç de mostrar la carpeta."
 
-#: ../baobab/src/baobab-utils.c:519
+#: ../baobab/src/baobab-utils.c:476
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr "No s'ha pogut moure «%s» a la paperera"
 
-#: ../baobab/src/baobab-utils.c:527
+#: ../baobab/src/baobab-utils.c:484
 msgid "Could not move file to the Trash"
 msgstr "No s'ha pogut moure el fitxer a la paperera"
 
-#: ../baobab/src/baobab-utils.c:529
+#: ../baobab/src/baobab-utils.c:486
 #, c-format
 msgid "Details: %s"
 msgstr "Detalls: %s"
 
-#: ../baobab/src/baobab-utils.c:576
+#: ../baobab/src/baobab-utils.c:533
 msgid "There was an error displaying help."
 msgstr "S'ha produït un error en mostrar l'ajuda."
 
-#: ../baobab/src/callbacks.c:78 ../logview/logview-about.h:49
+#: ../baobab/src/callbacks.c:77 ../logview/logview-about.h:49
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr ""
-"Aquest programa és programari lliure; podeu redistribuir-lo i/o modificar-lo "
-"sota els termes de la Llicència Pública General GNU tal com ha estat "
-"publicada per la Free Software Foundation; ja sigui la versió 2 de la "
-"Llicència o bé (si ho preferiu) qualsevol altra versió posterior."
+msgstr "Aquest programa és programari lliure; podeu redistribuir-lo i/o modificar-lo sota els termes de la Llicència Pública General GNU tal com ha estat publicada per la Free Software Foundation; ja sigui la versió 2 de la Llicència o bé (si ho preferiu) qualsevol altra versió posterior."
 
-#: ../baobab/src/callbacks.c:83 ../logview/logview-about.h:53
+#: ../baobab/src/callbacks.c:82 ../logview/logview-about.h:53
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
 "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
 "more details."
-msgstr ""
-"Aquest programa es distribueix amb l'expectativa que serà útil, però SENSE "
-"CAP GARANTIA; ni tan sols la garantia implícita de COMERCIABILITAT o "
-"ADEQUACIÓ PER UN PROPÒSIT PARTICULAR. Vegeu la Llicència Pública General GNU "
-"per obtenir-ne més detalls."
+msgstr "Aquest programa es distribueix amb l'expectativa que serà útil, però SENSE CAP GARANTIA; ni tan sols la garantia implícita de COMERCIABILITAT o ADEQUACIÓ PER UN PROPÒSIT PARTICULAR. Vegeu la Llicència Pública General GNU per obtenir-ne més detalls."
 
-#: ../baobab/src/callbacks.c:88 ../logview/logview-about.h:57
+#: ../baobab/src/callbacks.c:87 ../logview/logview-about.h:57
 msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"You should have received a copy of the GNU General Public License along with"
+" this program; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
-msgstr ""
-"Hauríeu d'haver rebut una còpia de la Llicència Pública General GNU "
-"juntament amb aquest programa; en cas contrari, escriviu a la  Free Software "
-"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  "
-"USA"
+msgstr "Hauríeu d'haver rebut una còpia de la Llicència Pública General GNU juntament amb aquest programa; en cas contrari, escriviu a la  Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA"
 
-#: ../baobab/src/callbacks.c:101
+#: ../baobab/src/callbacks.c:98
 msgid "Baobab"
 msgstr "Baobab"
 
-#: ../baobab/src/callbacks.c:102
+#: ../baobab/src/callbacks.c:99
 msgid "A graphical tool to analyze disk usage."
 msgstr "Una eina gràfica per analitzar la utilització dels discs."
 
 #. translator credits
-#: ../baobab/src/callbacks.c:110 ../mate-dictionary/src/gdict-about.c:55
+#: ../baobab/src/callbacks.c:105 ../mate-dictionary/src/gdict-about.c:55
 #: ../logview/logview-about.h:63
 msgid "translator-credits"
-msgstr ""
-"Softcatalà <info@softcatala.org>\n"
-"Jordi Mallach <jordi@sindominio.net>\n"
-"Josep Puigdemont <josep.puigdemont@gmail.com>\n"
-"Gil Forcada <gilforcada@guifi.net>\n"
-"Joan Duran <jodufi@gmail.com>"
+msgstr "Softcatalà <info@softcatala.org>\nJordi Mallach <jordi@sindominio.net>\nJosep Puigdemont <josep.puigdemont@gmail.com>\nGil Forcada <gilforcada@guifi.net>\nJoan Duran <jodufi@gmail.com>"
 
-#: ../baobab/src/callbacks.c:207 ../gsearchtool/gsearchtool-callbacks.c:504
+#: ../baobab/src/callbacks.c:203 ../gsearchtool/gsearchtool-callbacks.c:504
 #: ../gsearchtool/gsearchtool-callbacks.c:843
 msgid "The document does not exist."
 msgstr "El document no existeix."
 
-#: ../baobab/src/callbacks.c:318
+#: ../baobab/src/callbacks.c:314
 msgid "The folder does not exist."
 msgstr "El directori no existeix."
 
@@ -600,114 +576,103 @@ msgid "Look up words in a dictionary"
 msgstr "Cerca la paraula a un diccionari"
 
 #: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:1
-msgid "Cl_ear"
-msgstr "_Neteja"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:2
-#: ../mate-dictionary/src/gdict-window.c:1236 ../logview/logview-window.c:868
-msgid "_About"
-msgstr "_Quant a"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:4
 msgid "_Look Up Selected Text"
 msgstr "Consu_lta el text seleccionat"
 
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:5
-#: ../mate-dictionary/src/gdict-window.c:1210
-msgid "_Preferences"
-msgstr "_Preferències"
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:2
+msgid "Cl_ear"
+msgstr "_Neteja"
 
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:6
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:3
 msgid "_Print"
 msgstr "Im_primeix"
 
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:7
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:4
 msgid "_Save"
 msgstr "De_sa"
 
-#: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:1
-msgid "Check word definitions and spellings in an online dictionary"
-msgstr ""
-"Comprova les definicions de paraules i l'ortografia en un diccionari en línia"
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:5
+#: ../mate-dictionary/src/gdict-window.c:1205
+msgid "_Preferences"
+msgstr "_Preferències"
 
-#: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:2
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:7
+#: ../mate-dictionary/src/gdict-window.c:1231 ../logview/logview-window.c:839
+msgid "_About"
+msgstr "_Quant a"
+
+#: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:1
 #: ../mate-dictionary/src/gdict-about.c:78
 #: ../mate-dictionary/src/gdict-app.c:385
-#: ../mate-dictionary/src/gdict-window.c:608
-#: ../mate-dictionary/src/gdict-window.c:1953
+#: ../mate-dictionary/src/gdict-window.c:605
+#: ../mate-dictionary/src/gdict-window.c:1947
 msgid "Dictionary"
 msgstr "Diccionari"
+
+#: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:2
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr "Comprova les definicions de paraules i l'ortografia en un diccionari en línia"
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:1
 msgid "Dictionary server (Deprecated)"
 msgstr "Servidor de diccionari (desaconsellat)"
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:2
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers. This key is deprecated and"
+" no longer in use."
+msgstr "El servidor de diccionari a on connectar. El servidor per defecte és dict.org. Vegeu http://www.dict.org per a detalls d'altres servidors. Aquesta clau està desaconsellada i ja no es fa servir."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:3
 msgid "Port used to connect to server (Deprecated)"
 msgstr "Port utilitzat per connectar al servidor (desaconsellat)"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:3
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:4
+msgid ""
+"The port number to connect to. The default port is 2628. This key is "
+"deprecated and no longer in use."
+msgstr "El número de port a on connectar. El port per defecte és el 2628. Aquesta clau està desaconsellada i ja no s'utilitza."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:5
+msgid "Use smart lookup (Deprecated)"
+msgstr "Utilitza la cerca intel·ligent (desaconsellat)"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:6
 msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE. This key is "
 "deprecated and no longer in use."
-msgstr ""
-"Especifica si s'hauria d'utilitzar la cerca intel·ligent. Aquesta clau depen "
-"de si el servidor permet aquesta opció. El valor per defecte és "
-"«True» (cert). Es desaconsella fer servir aquesta clau."
+msgstr "Especifica si s'hauria d'utilitzar la cerca intel·ligent. Aquesta clau depen de si el servidor permet aquesta opció. El valor per defecte és «True» (cert). Es desaconsella fer servir aquesta clau."
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:4
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:7
 msgid "The default database to use"
 msgstr "La base de dades a utilitzar per defecte"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:5
-msgid "The default height of the application window"
-msgstr "L'alçària per defecte de la finestra de l'aplicació"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:6
-msgid "The default search strategy to use"
-msgstr "L'estratègia de cerca a utilitzar per defecte"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:7
-msgid "The default width of the application window"
-msgstr "L'amplària per defecte de la finestra de l'aplicació"
-
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:8
-msgid ""
-"The dictionary server to connect to. The default server is dict.org. See "
-"http://www.dict.org for details on other servers. This key is deprecated and "
-"no longer in use."
-msgstr ""
-"El servidor de diccionari a on connectar. El servidor per defecte és dict."
-"org. Vegeu http://www.dict.org per a detalls d'altres servidors. Aquesta "
-"clau està desaconsellada i ja no es fa servir."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:9
-msgid "The font to be used when printing"
-msgstr "El tipus de lletra a utilitzar per imprimir"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:10
-msgid "The font to be used when printing a definition."
-msgstr "El tipus de lletra a utilitzar per imprimir una definició."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:11
 msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
 "present in a dictionary source should be searched"
-msgstr ""
-"El nom de la base de dades individual o meta-base de dades a utilitzar en "
-"el servidor de diccionari. Un signe d'exclamació («!») indica que s'hauria de "
-"cercar totes en les bases de dades presents"
+msgstr "El nom de la base de dades individual o meta-base de dades a utilitzar en el servidor de diccionari. Un signe d'exclamació («!») indica que s'hauria de cercar totes en les bases de dades presents"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:12
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:9
+msgid "The default search strategy to use"
+msgstr "L'estratègia de cerca a utilitzar per defecte"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:10
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is 'exact', that is match exact words."
-msgstr ""
-"El nom de l'estratègia de cerca per defecte a utilitzar en un diccionari "
-"font, si està disponible. L'estratègia predeterminada és «exact», que cerca "
-"paraules exactes."
+msgstr "El nom de l'estratègia de cerca per defecte a utilitzar en un diccionari font, si està disponible. L'estratègia predeterminada és «exact», que cerca paraules exactes."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:11
+msgid "The font to be used when printing"
+msgstr "El tipus de lletra a utilitzar per imprimir"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:12
+msgid "The font to be used when printing a definition."
+msgstr "El tipus de lletra a utilitzar per imprimir una definició."
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:13
 msgid "The name of the dictionary source used"
@@ -716,116 +681,90 @@ msgstr "El nom del diccionari font utilitzat"
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:14
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
-msgstr ""
-"El nom del diccionari font utilitzat per obtenir les definicions de les "
-"paraules."
+msgstr "El nom del diccionari font utilitzat per obtenir les definicions de les paraules."
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:15
-msgid "The page of the sidebar to show"
-msgstr "La pàgina a mostrar a la barra lateral"
+msgid "The default width of the application window"
+msgstr "L'amplària per defecte de la finestra de l'aplicació"
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:16
 msgid ""
-"The port number to connect to. The default port is 2628. This key is "
-"deprecated and no longer in use."
-msgstr ""
-"El número de port a on connectar. El port per defecte és el 2628. Aquesta "
-"clau està desaconsellada i ja no s'utilitza."
+"This key defines the window width and it's used to remember the size of the "
+"dictionary window across sessions. Setting it to -1 will make the dictionary"
+" window use a width based on the font size."
+msgstr "Aquesta clau defineix l'amplària de la finestra, i s'utilitza per recordar d'una sessió a l'altra la mida de la finestra del diccionari. Si ho establiu a -1, s'utilitzarà una amplària basada en la mida del tipus de lletra."
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:17
-msgid "The width of the sidebar"
-msgstr "L'amplada de la barra lateral."
+msgid "The default height of the application window"
+msgstr "L'alçària per defecte de la finestra de l'aplicació"
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:18
 msgid ""
-"This key defines the width of the sidebar and it's used to remember the "
-"setting across sessions."
-msgstr ""
-"Aquesta clau defineix l'amplada de la barra lateral i s'utilitza per "
-"recordar la configuració entre sessions."
+"This key defines the window height and it's used to remember the size of the"
+" dictionary window across sessions. Setting it to -1 will make the "
+"dictionary window use a height based on the font size."
+msgstr "Aquesta clau defineix l'alçària de la finestra, i s'utilitza per recordar d'una sessió a l'altra la mida de la finestra del diccionari. Si ho establiu a -1, s'utilitzarà una alçària basada en la mida del tipus de lletra."
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:19
-msgid ""
-"This key defines the window height and it's used to remember the size of the "
-"dictionary window across sessions. Setting it to -1 will make the dictionary "
-"window use a height based on the font size."
-msgstr ""
-"Aquesta clau defineix l'alçària de la finestra, i s'utilitza per recordar "
-"d'una sessió a l'altra la mida de la finestra del diccionari. Si ho establiu "
-"a -1, s'utilitzarà una alçària basada en la mida del tipus de lletra."
+msgid "Whether the application window should be maximized"
+msgstr "Si la finestra de l'aplicació s'ha de maximitzar"
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:20
-msgid ""
-"This key defines the window width and it's used to remember the size of the "
-"dictionary window across sessions. Setting it to -1 will make the dictionary "
-"window use a width based on the font size."
-msgstr ""
-"Aquesta clau defineix l'amplària de la finestra, i s'utilitza per recordar "
-"d'una sessió a l'altra la mida de la finestra del diccionari. Si ho establiu "
-"a -1, s'utilitzarà una amplària basada en la mida del tipus de lletra."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:21
-msgid ""
-"This key defines whether the sidebar should be visible and it's used to "
-"remember the state of the sidebar across sessions. Setting it to TRUE will "
-"make the sidebar always be displayed."
-msgstr ""
-"Aquesta clau defineix si la barra lateral ha de ser visible i s'utilitza per "
-"recordar l'estat de la barra lateral entre sessions. Definint-la com a "
-"«True» (cert) farà que la barra lateral es mostri sempre."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:22
-msgid ""
-"This key defines whether the statusbar should be visible and it's used to "
-"remember the state of the statusbar across sessions. Setting it to TRUE will "
-"make the statusbar always be displayed."
-msgstr ""
-"Aquesta clau defineix si la barra d'estat ha de ser visible i s'utilitza per "
-"recordar l'estat de la barra d'estat entre sessions. Definint-la com a "
-"«True» (cert) farà que la barra d'estat es mostri sempre."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:23
 msgid ""
 "This key defines whether the window should be maximized and it's used to "
 "remember the state of the dictionary window across sessions. Setting it to "
 "TRUE will make the window always appear as maximized."
-msgstr ""
-"Aquesta clau defineix si la finestra s'ha de maximitzar, i s'utilitza per "
-"recordar entre sessió i sessió l'estat de la finestra del diccionari. Si ho "
-"establiu a «True» (cert), la finestra sempre apareixerà maximitzada."
+msgstr "Aquesta clau defineix si la finestra s'ha de maximitzar, i s'utilitza per recordar entre sessió i sessió l'estat de la finestra del diccionari. Si ho establiu a «True» (cert), la finestra sempre apareixerà maximitzada."
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:24
-msgid ""
-"This key defines which page of the sidebar should be displayed and it's used "
-"to remember the setting across sessions.. It can be \"speller\" or "
-"\"databases\"."
-msgstr ""
-"Aquesta clau defineix quina pàgina de la barra lateral s'ha de mostrar i "
-"s'utilitza per recordar la configuració entre sessions. Pot ser "
-"«speller» (pronunciador) o «databases» (bases de dades)."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:25
-msgid "Use smart lookup (Deprecated)"
-msgstr "Utilitza la cerca intel·ligent (desaconsellat)"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:26
-msgid "Whether the application window should be maximized"
-msgstr "Si la finestra de l'aplicació s'ha de maximitzar"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:27
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:21
 msgid "Whether the sidebar should be visible"
 msgstr "Si la barra lateral ha de ser visible"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:28
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:22
+msgid ""
+"This key defines whether the sidebar should be visible and it's used to "
+"remember the state of the sidebar across sessions. Setting it to TRUE will "
+"make the sidebar always be displayed."
+msgstr "Aquesta clau defineix si la barra lateral ha de ser visible i s'utilitza per recordar l'estat de la barra lateral entre sessions. Definint-la com a «True» (cert) farà que la barra lateral es mostri sempre."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:23
 msgid "Whether the statusbar should be visible"
 msgstr "Si la barra d'estat ha de ser visible"
 
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:24
+msgid ""
+"This key defines whether the statusbar should be visible and it's used to "
+"remember the state of the statusbar across sessions. Setting it to TRUE will"
+" make the statusbar always be displayed."
+msgstr "Aquesta clau defineix si la barra d'estat ha de ser visible i s'utilitza per recordar l'estat de la barra d'estat entre sessions. Definint-la com a «True» (cert) farà que la barra d'estat es mostri sempre."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:25
+msgid "The page of the sidebar to show"
+msgstr "La pàgina a mostrar a la barra lateral"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:26
+msgid ""
+"This key defines which page of the sidebar should be displayed and it's used"
+" to remember the setting across sessions.. It can be \"speller\" or "
+"\"databases\"."
+msgstr "Aquesta clau defineix quina pàgina de la barra lateral s'ha de mostrar i s'utilitza per recordar la configuració entre sessions. Pot ser «speller» (pronunciador) o «databases» (bases de dades)."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:27
+msgid "The width of the sidebar"
+msgstr "L'amplada de la barra lateral."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:28
+msgid ""
+"This key defines the width of the sidebar and it's used to remember the "
+"setting across sessions."
+msgstr "Aquesta clau defineix l'amplada de la barra lateral i s'utilitza per recordar la configuració entre sessions."
+
 #: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:1
-msgid "Print"
-msgstr "Imprimeix"
+msgid "_Select a dictionary source for looking up words:"
+msgstr "_Seleccioneu una font de diccionari on cercar paraules:"
 
 #: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:2
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:3
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:6
 msgid "Source"
 msgstr "Font"
 
@@ -834,32 +773,32 @@ msgid "_Print font:"
 msgstr "Ti_pus de lletra per imprimir:"
 
 #: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:4
-msgid "_Select a dictionary source for looking up words:"
-msgstr "_Seleccioneu una font de diccionari on cercar paraules:"
+msgid "Print"
+msgstr "Imprimeix"
 
 #: ../mate-dictionary/data/mate-dictionary-source.ui.h:1
-msgid "Dictionaries"
-msgstr "Diccionaris"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:2
-msgid "H_ostname:"
-msgstr "_Ordinador:"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:4
-msgid "Source Name"
-msgstr "Nom de la font"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:5
-msgid "Strategies"
-msgstr "Estratègies"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:6
 msgid "_Description:"
 msgstr "_Descripció:"
 
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:8
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:2
 msgid "_Transport:"
 msgstr "_Transport:"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:3
+msgid "H_ostname:"
+msgstr "_Ordinador:"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:5
+msgid "Source Name"
+msgstr "Nom de la font"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:7
+msgid "Dictionaries"
+msgstr "Diccionaris"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:8
+msgid "Strategies"
+msgstr "Estratègies"
 
 #: ../mate-dictionary/data/spanish.desktop.in.h:1
 msgid "Spanish Dictionaries"
@@ -909,8 +848,7 @@ msgstr "No hi ha connexió al servidor de diccionari «%s:%d»"
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1060
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
-msgstr ""
-"Ha fallat la cerca de l'ordinador «%s»: no s'ha trobat cap recurs adequat"
+msgstr "Ha fallat la cerca de l'ordinador «%s»: no s'ha trobat cap recurs adequat"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1091
 #, c-format
@@ -927,18 +865,14 @@ msgstr "Ha fallat la cerca de l'ordinador «%s»: no s'ha trobat l'ordinador"
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
 "with code %d (server down)"
-msgstr ""
-"No s'ha pogut connectar al servidor de diccionari «%s:%d». El servidor ha "
-"respost amb el codi %d (el servidor no funciona)"
+msgstr "No s'ha pogut connectar al servidor de diccionari «%s:%d». El servidor ha respost amb el codi %d (el servidor no funciona)"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1196
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
 ": '%s'"
-msgstr ""
-"No s'ha pogut analitzar la resposta del servidor de diccionari\n"
-": «%s»"
+msgstr "No s'ha pogut analitzar la resposta del servidor de diccionari\n: «%s»"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1225
 #, c-format
@@ -985,16 +919,12 @@ msgstr "Ha fallat la connexió al servidor de diccionari a %s:%d"
 msgid ""
 "Error while reading reply from server:\n"
 "%s"
-msgstr ""
-"S'ha produït un error en llegir la resposta del servidor:\n"
-"%s"
+msgstr "S'ha produït un error en llegir la resposta del servidor:\n%s"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1860
 #, c-format
 msgid "Connection timeout for the dictionary server at '%s:%d'"
-msgstr ""
-"S'ha excedit el temps d'espera per a la connexió al servidor de diccionari a "
-"«%s:%d»"
+msgstr "S'ha excedit el temps d'espera per a la connexió al servidor de diccionari a «%s:%d»"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1894
 #, c-format
@@ -1039,40 +969,40 @@ msgstr "Neteja la llista de bases de dades disponibles"
 msgid "Error while matching"
 msgstr "S'ha produït un error en la coincidència"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1134
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1228
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1262
-#: ../logview/logview-window.c:513
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1143
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1237
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1271
+#: ../logview/logview-window.c:485
 msgid "Not found"
 msgstr "No s'ha trobat"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1323
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1332
 msgid "F_ind:"
 msgstr "Ce_rca:"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1336
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1345
 msgid "_Previous"
 msgstr "_Anterior"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1344
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1353
 msgid "_Next"
 msgstr "_Següent"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2519
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2528
 msgid "Error while looking up definition"
 msgstr "S'ha produït un error en cercar la definició"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2561
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2570
 #: ../mate-dictionary/libgdict/gdict-speller.c:737
 msgid "Another search is in progress"
 msgstr "S'està fent una altra cerca"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2562
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2571
 #: ../mate-dictionary/libgdict/gdict-speller.c:738
 msgid "Please wait until the current search ends."
 msgstr "Espereu que finalitzi la cerca actual."
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2601
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2610
 msgid "Error while retrieving the definition"
 msgstr "S'ha produït un error en obtenir la definició"
 
@@ -1152,16 +1082,13 @@ msgstr "No s'ha trobat cap grup «%s» dins la definició del diccionari font"
 #: ../mate-dictionary/libgdict/gdict-source.c:530
 #, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
-msgstr ""
-"No s'ha pogut obtenir la clau «%s» dins la definició del diccionari font: %s"
+msgstr "No s'ha pogut obtenir la clau «%s» dins la definició del diccionari font: %s"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:555
 #, c-format
 msgid ""
 "Unable to get the '%s' key inside the dictionary source definition file: %s"
-msgstr ""
-"No s'ha pogut obtenir la clau «%s» dins del fitxer de definició del "
-"diccionari font: %s"
+msgstr "No s'ha pogut obtenir la clau «%s» dins del fitxer de definició del diccionari font: %s"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:741
 #, c-format
@@ -1199,8 +1126,7 @@ msgstr "Neteja la llista de paraules semblants"
 
 #: ../mate-dictionary/libgdict/gdict-speller.c:378
 msgid "The GdictContext object used to get the word definition"
-msgstr ""
-"L'objecte GdictContext utilitzat per obtenir la definició de la paraula"
+msgstr "L'objecte GdictContext utilitzat per obtenir la definició de la paraula"
 
 #: ../mate-dictionary/libgdict/gdict-speller.c:385
 msgid "The database used to query the GdictContext"
@@ -1254,11 +1180,7 @@ msgid ""
 "  From '%s':\n"
 "\n"
 "%s\n"
-msgstr ""
-"Definició de «%s»\n"
-"  De «%s»:\n"
-"\n"
-"%s\n"
+msgstr "Definició de «%s»\n  De «%s»:\n\n%s\n"
 
 #: ../mate-dictionary/src/gdict-app.c:231
 #, c-format
@@ -1279,9 +1201,7 @@ msgstr "No s'ha pogut trobar cap diccionari font adequat"
 msgid ""
 "Error while looking up the definition of \"%s\":\n"
 "%s"
-msgstr ""
-"S'ha produït un error en cercar la definició de «%s»:\n"
-"%s"
+msgstr "S'ha produït un error en cercar la definició de «%s»:\n%s"
 
 #: ../mate-dictionary/src/gdict-app.c:337
 #: ../mate-dictionary/src/gdict-app.c:351
@@ -1335,55 +1255,55 @@ msgstr "estrat"
 msgid " - Look up words in dictionaries"
 msgstr " - Cerca paraules a diccionaris"
 
-#: ../mate-dictionary/src/gdict-applet.c:205
-#: ../mate-dictionary/src/gdict-window.c:837
+#: ../mate-dictionary/src/gdict-applet.c:206
+#: ../mate-dictionary/src/gdict-window.c:834
 msgid "Save a Copy"
 msgstr "Desa una còpia"
 
-#: ../mate-dictionary/src/gdict-applet.c:215
-#: ../mate-dictionary/src/gdict-window.c:847
+#: ../mate-dictionary/src/gdict-applet.c:216
+#: ../mate-dictionary/src/gdict-window.c:844
 msgid "Untitled document"
 msgstr "Document sense títol"
 
-#: ../mate-dictionary/src/gdict-applet.c:236
-#: ../mate-dictionary/src/gdict-window.c:868
+#: ../mate-dictionary/src/gdict-applet.c:237
+#: ../mate-dictionary/src/gdict-window.c:865
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "S'ha produït un error en escriure a «%s»"
 
-#: ../mate-dictionary/src/gdict-applet.c:361
+#: ../mate-dictionary/src/gdict-applet.c:362
 msgid "Clear the definitions found"
 msgstr "Neteja les definicions trobades"
 
-#: ../mate-dictionary/src/gdict-applet.c:363
+#: ../mate-dictionary/src/gdict-applet.c:364
 msgid "Clear definition"
 msgstr "Neteja la definició"
 
-#: ../mate-dictionary/src/gdict-applet.c:364
+#: ../mate-dictionary/src/gdict-applet.c:365
 msgid "Clear the text of the definition"
 msgstr "Neteja el text de la definició"
 
-#: ../mate-dictionary/src/gdict-applet.c:371
+#: ../mate-dictionary/src/gdict-applet.c:372
 msgid "Print the definitions found"
 msgstr "Imprimeix les definicions trobades"
 
-#: ../mate-dictionary/src/gdict-applet.c:373
+#: ../mate-dictionary/src/gdict-applet.c:374
 msgid "Print definition"
 msgstr "Imprimeix la definició"
 
-#: ../mate-dictionary/src/gdict-applet.c:374
+#: ../mate-dictionary/src/gdict-applet.c:375
 msgid "Print the text of the definition"
 msgstr "Imprimeix el text de la definició"
 
-#: ../mate-dictionary/src/gdict-applet.c:381
+#: ../mate-dictionary/src/gdict-applet.c:382
 msgid "Save the definitions found"
 msgstr "Desa les definicions trobades"
 
-#: ../mate-dictionary/src/gdict-applet.c:383
+#: ../mate-dictionary/src/gdict-applet.c:384
 msgid "Save definition"
 msgstr "Desa la definició"
 
-#: ../mate-dictionary/src/gdict-applet.c:384
+#: ../mate-dictionary/src/gdict-applet.c:385
 msgid "Save the text of the definition to a file"
 msgstr "Desa el text de la definició en un fitxer"
 
@@ -1407,64 +1327,63 @@ msgstr "Teclegeu la paraula que vulgueu cercar"
 msgid "Dictionary entry"
 msgstr "Entrada del diccionari"
 
-#: ../mate-dictionary/src/gdict-applet.c:724
-#: ../mate-dictionary/src/gdict-window.c:1001
+#: ../mate-dictionary/src/gdict-applet.c:716
+#: ../mate-dictionary/src/gdict-window.c:998
 msgid "Dictionary Preferences"
 msgstr "Preferències del diccionari"
 
-#: ../mate-dictionary/src/gdict-applet.c:750
-#: ../mate-dictionary/src/gdict-pref-dialog.c:504
-#: ../mate-dictionary/src/gdict-source-dialog.c:494
-#: ../mate-dictionary/src/gdict-window.c:1145
+#: ../mate-dictionary/src/gdict-applet.c:742
+#: ../mate-dictionary/src/gdict-pref-dialog.c:503
+#: ../mate-dictionary/src/gdict-source-dialog.c:479
+#: ../mate-dictionary/src/gdict-window.c:1140
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "S'ha produït un error en mostrar l'ajuda"
 
-#: ../mate-dictionary/src/gdict-applet.c:902
-#: ../mate-dictionary/src/gdict-window.c:517
+#: ../mate-dictionary/src/gdict-applet.c:896
+#: ../mate-dictionary/src/gdict-window.c:514
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "No hi ha cap diccionari font amb el nom «%s»"
 
-#: ../mate-dictionary/src/gdict-applet.c:906
-#: ../mate-dictionary/src/gdict-window.c:521
+#: ../mate-dictionary/src/gdict-applet.c:900
+#: ../mate-dictionary/src/gdict-window.c:518
 msgid "Unable to find dictionary source"
 msgstr "No s'ha pogut trobar el diccionari font"
 
-#: ../mate-dictionary/src/gdict-applet.c:922
-#: ../mate-dictionary/src/gdict-window.c:537
+#: ../mate-dictionary/src/gdict-applet.c:916
+#: ../mate-dictionary/src/gdict-window.c:534
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "No hi ha cap context disponible per a la font «%s»"
 
-#: ../mate-dictionary/src/gdict-applet.c:926
-#: ../mate-dictionary/src/gdict-window.c:541
+#: ../mate-dictionary/src/gdict-applet.c:920
+#: ../mate-dictionary/src/gdict-window.c:538
 msgid "Unable to create a context"
 msgstr "No s'ha pogut crear el context"
 
-#: ../mate-dictionary/src/gdict-applet.c:1191
-#: ../mate-dictionary/src/gdict-window.c:2084
+#: ../mate-dictionary/src/gdict-applet.c:1172
+#: ../mate-dictionary/src/gdict-window.c:2078
 msgid "Unable to connect to MateConf"
 msgstr "No s'ha pogut connectar al MateConf"
 
-#: ../mate-dictionary/src/gdict-applet.c:1204
-#: ../mate-dictionary/src/gdict-window.c:2097
+#: ../mate-dictionary/src/gdict-applet.c:1185
+#: ../mate-dictionary/src/gdict-window.c:2091
 msgid "Unable to get notification for preferences"
 msgstr "No s'ha pogut obtenir la notificació per a les preferències"
 
-#: ../mate-dictionary/src/gdict-applet.c:1218
-#: ../mate-dictionary/src/gdict-window.c:2110
+#: ../mate-dictionary/src/gdict-applet.c:1199
+#: ../mate-dictionary/src/gdict-window.c:2104
 msgid "Unable to get notification for the document font"
-msgstr ""
-"No s'ha pogut obtenir la notificació per al tipus de lletra del document"
+msgstr "No s'ha pogut obtenir la notificació per al tipus de lletra del document"
 
-#: ../mate-dictionary/src/gdict-common.c:79
+#: ../mate-dictionary/src/gdict-common.c:80
 #, c-format
 msgid "Unable to rename file '%s' to '%s': %s"
 msgstr "No s'ha pogut canviar el nom del fitxer «%s» a «%s»: %s"
 
-#: ../mate-dictionary/src/gdict-common.c:103
-#: ../mate-dictionary/src/gdict-common.c:126
+#: ../mate-dictionary/src/gdict-common.c:104
+#: ../mate-dictionary/src/gdict-common.c:127
 #, c-format
 msgid "Unable to create the data directory '%s': %s"
 msgstr "No s'ha pogut crear el directori de dades «%s»: %s"
@@ -1477,29 +1396,29 @@ msgstr "Edita la font del diccionari"
 msgid "Add Dictionary Source"
 msgstr "Afegeix un diccionari font"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:354
+#: ../mate-dictionary/src/gdict-pref-dialog.c:353
 #, c-format
 msgid "Remove \"%s\"?"
 msgstr "Voleu suprimir «%s»?"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:356
+#: ../mate-dictionary/src/gdict-pref-dialog.c:355
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "Això suprimirà per sempre el diccionari font de la llista."
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:386
+#: ../mate-dictionary/src/gdict-pref-dialog.c:385
 #, c-format
 msgid "Unable to remove source '%s'"
 msgstr "No s'ha pogut suprimir la font «%s»"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:667
+#: ../mate-dictionary/src/gdict-pref-dialog.c:666
 msgid "Add a new dictionary source"
 msgstr "Afegeix un diccionari font"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:673
+#: ../mate-dictionary/src/gdict-pref-dialog.c:672
 msgid "Remove the currently selected dictionary source"
 msgstr "Suprimeix el diccionari font seleccionat"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:686
+#: ../mate-dictionary/src/gdict-pref-dialog.c:685
 msgid "Set the font used for printing the definitions"
 msgstr "Estableix el tipus de lletra utilitzat en imprimir les definicions"
 
@@ -1509,207 +1428,207 @@ msgstr "Estableix el tipus de lletra utilitzat en imprimir les definicions"
 msgid "Unable to display the preview: %s"
 msgstr "No s'ha pogut mostrar la previsualització: %s"
 
-#: ../mate-dictionary/src/gdict-source-dialog.c:356
-#: ../mate-dictionary/src/gdict-source-dialog.c:449
+#: ../mate-dictionary/src/gdict-source-dialog.c:341
+#: ../mate-dictionary/src/gdict-source-dialog.c:434
 msgid "Unable to create a source file"
 msgstr "No s'ha pogut crear un fitxer font"
 
-#: ../mate-dictionary/src/gdict-source-dialog.c:374
-#: ../mate-dictionary/src/gdict-source-dialog.c:467
+#: ../mate-dictionary/src/gdict-source-dialog.c:359
+#: ../mate-dictionary/src/gdict-source-dialog.c:452
 msgid "Unable to save source file"
 msgstr "No s'ha pogut desar un fitxer font"
 
-#: ../mate-dictionary/src/gdict-window.c:316
+#: ../mate-dictionary/src/gdict-window.c:315
 #, c-format
 msgid "Searching for '%s'..."
 msgstr "S'està cercant «%s»..."
 
-#: ../mate-dictionary/src/gdict-window.c:348
-#: ../mate-dictionary/src/gdict-window.c:407
+#: ../mate-dictionary/src/gdict-window.c:347
+#: ../mate-dictionary/src/gdict-window.c:404
 msgid "No definitions found"
 msgstr "No s'ha trobat cap definició"
 
-#: ../mate-dictionary/src/gdict-window.c:350
+#: ../mate-dictionary/src/gdict-window.c:349
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
 msgstr[0] "S'ha trobat una definició"
 msgstr[1] "S'han trobat %d definicions"
 
-#: ../mate-dictionary/src/gdict-window.c:606
+#: ../mate-dictionary/src/gdict-window.c:603
 #, c-format
 msgid "%s - Dictionary"
 msgstr "%s - Diccionari"
 
-#: ../mate-dictionary/src/gdict-window.c:1180 ../logview/logview-window.c:836
+#: ../mate-dictionary/src/gdict-window.c:1175 ../logview/logview-window.c:807
 msgid "_File"
 msgstr "_Filtre"
 
-#: ../mate-dictionary/src/gdict-window.c:1183
+#: ../mate-dictionary/src/gdict-window.c:1178
 msgid "_Go"
 msgstr "_Vés"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1187
+#: ../mate-dictionary/src/gdict-window.c:1182
 msgid "_New"
 msgstr "_Nou"
 
-#: ../mate-dictionary/src/gdict-window.c:1188
+#: ../mate-dictionary/src/gdict-window.c:1183
 msgid "New look up"
 msgstr "Nova cerca"
 
-#: ../mate-dictionary/src/gdict-window.c:1189
+#: ../mate-dictionary/src/gdict-window.c:1184
 msgid "_Save a Copy..."
 msgstr "_Desa una còpia..."
 
-#: ../mate-dictionary/src/gdict-window.c:1191
+#: ../mate-dictionary/src/gdict-window.c:1186
 msgid "P_review..."
 msgstr "P_revisualització..."
 
-#: ../mate-dictionary/src/gdict-window.c:1192
+#: ../mate-dictionary/src/gdict-window.c:1187
 msgid "Preview this document"
 msgstr "Previsualitza aquest document"
 
-#: ../mate-dictionary/src/gdict-window.c:1193
+#: ../mate-dictionary/src/gdict-window.c:1188
 msgid "_Print..."
 msgstr "Im_primeix..."
 
-#: ../mate-dictionary/src/gdict-window.c:1194
+#: ../mate-dictionary/src/gdict-window.c:1189
 msgid "Print this document"
 msgstr "Imprimeix aquest document"
 
-#: ../mate-dictionary/src/gdict-window.c:1201 ../logview/logview-window.c:851
+#: ../mate-dictionary/src/gdict-window.c:1196 ../logview/logview-window.c:822
 msgid "Select _All"
 msgstr "_Selecciona-ho tot"
 
-#: ../mate-dictionary/src/gdict-window.c:1204
+#: ../mate-dictionary/src/gdict-window.c:1199
 msgid "Find a word or phrase in the document"
 msgstr "Cerca una paraula o frase al document"
 
-#: ../mate-dictionary/src/gdict-window.c:1206
+#: ../mate-dictionary/src/gdict-window.c:1201
 msgid "Find Ne_xt"
 msgstr "Cerca la se_güent"
 
-#: ../mate-dictionary/src/gdict-window.c:1208
+#: ../mate-dictionary/src/gdict-window.c:1203
 msgid "Find Pre_vious"
 msgstr "Cerca l'an_terior"
 
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1214
+#: ../mate-dictionary/src/gdict-window.c:1209
 msgid "_Previous Definition"
 msgstr "Definició _anterior"
 
-#: ../mate-dictionary/src/gdict-window.c:1215
+#: ../mate-dictionary/src/gdict-window.c:1210
 msgid "Go to the previous definition"
 msgstr "Vés a la definició anterior"
 
-#: ../mate-dictionary/src/gdict-window.c:1216
+#: ../mate-dictionary/src/gdict-window.c:1211
 msgid "_Next Definition"
 msgstr "Definició _següent"
 
-#: ../mate-dictionary/src/gdict-window.c:1217
+#: ../mate-dictionary/src/gdict-window.c:1212
 msgid "Go to the next definition"
 msgstr "Vés a la definició següent"
 
-#: ../mate-dictionary/src/gdict-window.c:1218
+#: ../mate-dictionary/src/gdict-window.c:1213
 msgid "_First Definition"
 msgstr "_Primera definició"
 
-#: ../mate-dictionary/src/gdict-window.c:1219
+#: ../mate-dictionary/src/gdict-window.c:1214
 msgid "Go to the first definition"
 msgstr "Vés a la primera definició"
 
-#: ../mate-dictionary/src/gdict-window.c:1220
+#: ../mate-dictionary/src/gdict-window.c:1215
 msgid "_Last Definition"
 msgstr "Ú_ltima definició"
 
-#: ../mate-dictionary/src/gdict-window.c:1221
+#: ../mate-dictionary/src/gdict-window.c:1216
 msgid "Go to the last definition"
 msgstr "Vés a l'última definició"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1224
+#: ../mate-dictionary/src/gdict-window.c:1219
 msgid "Similar _Words"
 msgstr "_Paraules semblants"
 
-#: ../mate-dictionary/src/gdict-window.c:1226
+#: ../mate-dictionary/src/gdict-window.c:1221
 msgid "Dictionary Sources"
 msgstr "Fonts de diccionari"
 
-#: ../mate-dictionary/src/gdict-window.c:1228
+#: ../mate-dictionary/src/gdict-window.c:1223
 msgid "Available _Databases"
 msgstr "Bases de _dades disponibles"
 
-#: ../mate-dictionary/src/gdict-window.c:1230
+#: ../mate-dictionary/src/gdict-window.c:1225
 msgid "Available St_rategies"
 msgstr "Est_ratègies disponibles"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1247
+#: ../mate-dictionary/src/gdict-window.c:1242
 msgid "_Sidebar"
 msgstr "Barra _lateral"
 
-#: ../mate-dictionary/src/gdict-window.c:1249
+#: ../mate-dictionary/src/gdict-window.c:1244
 msgid "S_tatusbar"
 msgstr "Barra d'_estat"
 
-#: ../mate-dictionary/src/gdict-window.c:1370
+#: ../mate-dictionary/src/gdict-window.c:1365
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "S'ha seleccionat la font de diccionari «%s»"
 
-#: ../mate-dictionary/src/gdict-window.c:1391
+#: ../mate-dictionary/src/gdict-window.c:1386
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "S'ha seleccionat l'estratègia «%s»"
 
-#: ../mate-dictionary/src/gdict-window.c:1411
+#: ../mate-dictionary/src/gdict-window.c:1406
 #, c-format
 msgid "Database `%s' selected"
 msgstr "S'ha seleccionat la base de dades «%s»"
 
-#: ../mate-dictionary/src/gdict-window.c:1431
+#: ../mate-dictionary/src/gdict-window.c:1426
 #, c-format
 msgid "Word `%s' selected"
 msgstr "S'ha seleccionat la paraula «%s»"
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1453
+#: ../mate-dictionary/src/gdict-window.c:1448
 msgid "Double-click on the word to look up"
 msgstr "Feu un doble clic a la paraula per cercar-la"
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1459
+#: ../mate-dictionary/src/gdict-window.c:1454
 msgid "Double-click on the matching strategy to use"
 msgstr "Feu un doble clic a l'estratègia de coincidència a emprar"
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1464
+#: ../mate-dictionary/src/gdict-window.c:1459
 msgid "Double-click on the source to use"
 msgstr "Feu un doble clic a la font a utilitzar"
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1473
+#: ../mate-dictionary/src/gdict-window.c:1468
 msgid "Double-click on the database to use"
 msgstr "Feu doble clic a la base de dades que vulgueu emprar"
 
-#: ../mate-dictionary/src/gdict-window.c:1761
+#: ../mate-dictionary/src/gdict-window.c:1755
 msgid "Look _up:"
 msgstr "_Cerca:"
 
-#: ../mate-dictionary/src/gdict-window.c:1835
+#: ../mate-dictionary/src/gdict-window.c:1829
 msgid "Similar words"
 msgstr "Paraules semblants"
 
-#: ../mate-dictionary/src/gdict-window.c:1848
+#: ../mate-dictionary/src/gdict-window.c:1842
 msgid "Available dictionaries"
 msgstr "Diccionaris disponibles"
 
-#: ../mate-dictionary/src/gdict-window.c:1861
+#: ../mate-dictionary/src/gdict-window.c:1855
 msgid "Available strategies"
 msgstr "Estratègies disponibles"
 
-#: ../mate-dictionary/src/gdict-window.c:1872
+#: ../mate-dictionary/src/gdict-window.c:1866
 msgid "Dictionary sources"
 msgstr "Fonts de diccionaris"
 
@@ -1757,22 +1676,22 @@ msgstr "_Seleccioneu una àrea a capturar"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#.
+#. 
 #: ../mate-screenshot/mate-screenshot.c:478
 msgid "Grab _after a delay of"
 msgstr "Captura _al cap de"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#.
+#. 
 #: ../mate-screenshot/mate-screenshot.c:498
-#: ../mate-screenshot/mate-screenshot.c:1291
+#: ../mate-screenshot/mate-screenshot.c:1289
 msgid "seconds"
 msgstr "segons"
 
-#: ../mate-screenshot/mate-screenshot.c:514
+#: ../mate-screenshot/mate-screenshot.c:516
 #: ../mate-screenshot/mate-screenshot.c:524
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:2
+#: ../mate-screenshot/mate-screenshot.desktop.in.h:1
 msgid "Take Screenshot"
 msgstr "Feu una captura de pantalla"
 
@@ -1788,27 +1707,23 @@ msgstr "Fes una _captura de pantalla"
 msgid "Error while saving screenshot"
 msgstr "S'ha produït un error en desar la captura de pantalla"
 
-#: ../mate-screenshot/mate-screenshot.c:661
+#: ../mate-screenshot/mate-screenshot.c:660
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
 " Error was %s.\n"
 " Please choose another location and retry."
-msgstr ""
-"No s'ha pogut desar la captura de pantalla a %s.\n"
-" L'error ha sigut %s.\n"
-" Trieu una altra ubicació o torneu-ho a intentar."
+msgstr "No s'ha pogut desar la captura de pantalla a %s.\n L'error ha sigut %s.\n Trieu una altra ubicació o torneu-ho a intentar."
 
-#: ../mate-screenshot/mate-screenshot.c:793
+#: ../mate-screenshot/mate-screenshot.c:792
 msgid "Screenshot taken"
 msgstr "S'ha obtingut la captura de pantalla"
 
-#: ../mate-screenshot/mate-screenshot.c:847
+#: ../mate-screenshot/mate-screenshot.c:846
 msgid "Unable to take a screenshot of the current window"
 msgstr "No s'ha pogut fer la captura de la finestra actual"
 
-# Captura enlloc d'instantània per evitar problemes amb caràcters no ascii
-#: ../mate-screenshot/mate-screenshot.c:897
+#: ../mate-screenshot/mate-screenshot.c:896
 #, c-format
 msgid "Screenshot-%s.png"
 msgstr "Captura-%s.png"
@@ -1816,15 +1731,15 @@ msgstr "Captura-%s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if a specific window is
 #. * taken
-#: ../mate-screenshot/mate-screenshot.c:904
+#: ../mate-screenshot/mate-screenshot.c:903
 #, c-format
 msgid "Screenshot-%s-%d.png"
 msgstr "Captura-%s-%d.png"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/mate-screenshot.c:914
-#: ../mate-screenshot/screenshot-dialog.c:356
+#: ../mate-screenshot/mate-screenshot.c:913
+#: ../mate-screenshot/screenshot-dialog.c:353
 #: ../mate-screenshot/screenshot-save.c:196
 msgid "Screenshot.png"
 msgstr "Captura.png"
@@ -1832,147 +1747,138 @@ msgstr "Captura.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/mate-screenshot.c:921
+#: ../mate-screenshot/mate-screenshot.c:920
 #, c-format
 msgid "Screenshot-%d.png"
 msgstr "Captura-%d.png"
 
-#: ../mate-screenshot/mate-screenshot.c:1287
+#: ../mate-screenshot/mate-screenshot.c:1285
 msgid "Grab a window instead of the entire screen"
 msgstr "Captura una finestra en lloc de tota la pantalla"
 
-#: ../mate-screenshot/mate-screenshot.c:1288
+#: ../mate-screenshot/mate-screenshot.c:1286
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Captura una àrea de la pantalla en lloc de tota la pantalla"
 
-#: ../mate-screenshot/mate-screenshot.c:1289
+#: ../mate-screenshot/mate-screenshot.c:1287
 msgid "Include the window border with the screenshot"
 msgstr "Inclou la vora de la finestra en la captura"
 
-#: ../mate-screenshot/mate-screenshot.c:1290
+#: ../mate-screenshot/mate-screenshot.c:1288
 msgid "Remove the window border from the screenshot"
 msgstr "Suprimeix la vora de la finestra en la captura de pantalla"
 
-#: ../mate-screenshot/mate-screenshot.c:1291
+#: ../mate-screenshot/mate-screenshot.c:1289
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Fes la captura al cap de l'estona indicada [en segons]"
 
-#: ../mate-screenshot/mate-screenshot.c:1292
+#: ../mate-screenshot/mate-screenshot.c:1290
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Efecte que s'afegirà a la vora (ombra, vora, o sense)"
 
-#: ../mate-screenshot/mate-screenshot.c:1292
+#: ../mate-screenshot/mate-screenshot.c:1290
 msgid "effect"
 msgstr "efecte"
 
-#: ../mate-screenshot/mate-screenshot.c:1293
+#: ../mate-screenshot/mate-screenshot.c:1291
 msgid "Interactively set options"
 msgstr "Estableix opcions interactivament"
 
-#: ../mate-screenshot/mate-screenshot.c:1304
+#: ../mate-screenshot/mate-screenshot.c:1302
 msgid "Take a picture of the screen"
 msgstr "Fa una fotografia de la pantalla"
 
-#: ../mate-screenshot/mate-screenshot.c:1322
+#: ../mate-screenshot/mate-screenshot.c:1320
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"
-msgstr ""
-"Conflicte d'opcions: no es poden utilitzar al mateix temps --window i --"
-"area.\n"
+msgstr "Conflicte d'opcions: no es poden utilitzar al mateix temps --window i --area.\n"
 
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:1
+#: ../mate-screenshot/mate-screenshot.desktop.in.h:2
 msgid "Save images of your desktop or individual windows"
 msgstr "Desa imatges del vostre escriptori o de finestres individuals"
 
 #: ../mate-screenshot/mate-screenshot.ui.h:1
-msgid "*"
-msgstr "*"
+msgid "Save Screenshot"
+msgstr "Desa la captura"
 
 #: ../mate-screenshot/mate-screenshot.ui.h:2
 msgid "C_opy to Clipboard"
 msgstr "C_opia-ho al porta-retalls"
 
 #: ../mate-screenshot/mate-screenshot.ui.h:3
-msgid "Save Screenshot"
-msgstr "Desa la captura"
+#: ../logview/data/logview-filter.ui.h:1
+msgid "_Name:"
+msgstr "_Nom:"
 
 #: ../mate-screenshot/mate-screenshot.ui.h:4
 msgid "Save in _folder:"
 msgstr "Desa en una _carpeta:"
 
 #: ../mate-screenshot/mate-screenshot.ui.h:5
-#: ../logview/data/logview-filter.ui.h:6
-msgid "_Name:"
-msgstr "_Nom:"
+msgid "*"
+msgstr "*"
 
 #: ../mate-screenshot/mate-screenshot.schemas.in.h:1
-msgid "Border Effect"
-msgstr "Efecte de la vora"
-
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:2
-msgid ""
-"Effect to add to the outside of a border. Possible values are \"shadow\", "
-"\"none\", and \"border\"."
-msgstr ""
-"Efecte que s'afegirà a fora de la vora. Els valors possibles són "
-"«shadow» (ombra), «none» (cap), i «border» (vora)."
-
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:3
-msgid ""
-"Grab just the current window, rather than the whole desktop. This key has "
-"been deprecated and it is no longer in use."
-msgstr ""
-"Captura només la finestra actual, en lloc de tot l'escriptori. Aquesta clau "
-"està desconsellada i no s'utilitza."
-
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:4
-msgid "Include Border"
-msgstr "Inclou la vora"
-
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:5
-msgid "Include Pointer"
-msgstr "Inclou el punter"
-
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:6
-msgid "Include the pointer in the screenshot"
-msgstr "Inclou el punter a la captura de pantalla"
-
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:7
-msgid "Include the window manager border along with the screenshot"
-msgstr "Inclou la vora del gestor de finestres en la captura"
-
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:8
-msgid "Screenshot delay"
-msgstr "Retard de la captura de pantalla"
-
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:9
-msgid "Screenshot directory"
-msgstr "Directori on desar les captures de pantalla"
-
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:10
-msgid "The directory the last screenshot was saved in."
-msgstr "El darrer directori on es va desar la darrera captura de pantalla."
-
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:11
-msgid "The number of seconds to wait before taking the screenshot."
-msgstr "El número de segons a esperar abans de fer la captura de pantalla."
-
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:12
 msgid "Window-specific screenshot (deprecated)"
 msgstr "Captura de pantalla específica de finestres (desconsellat)"
 
-#: ../mate-screenshot/screenshot-dialog.c:239
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:2
+msgid ""
+"Grab just the current window, rather than the whole desktop. This key has "
+"been deprecated and it is no longer in use."
+msgstr "Captura només la finestra actual, en lloc de tot l'escriptori. Aquesta clau està desconsellada i no s'utilitza."
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:3
+msgid "Screenshot delay"
+msgstr "Retard de la captura de pantalla"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:4
+msgid "The number of seconds to wait before taking the screenshot."
+msgstr "El número de segons a esperar abans de fer la captura de pantalla."
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:5
+msgid "Screenshot directory"
+msgstr "Directori on desar les captures de pantalla"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:6
+msgid "The directory the last screenshot was saved in."
+msgstr "El darrer directori on es va desar la darrera captura de pantalla."
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:7
+msgid "Include Border"
+msgstr "Inclou la vora"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:8
+msgid "Include the window manager border along with the screenshot"
+msgstr "Inclou la vora del gestor de finestres en la captura"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:9
+msgid "Include Pointer"
+msgstr "Inclou el punter"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:10
+msgid "Include the pointer in the screenshot"
+msgstr "Inclou el punter a la captura de pantalla"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:11
+msgid "Border Effect"
+msgstr "Efecte de la vora"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:12
+msgid ""
+"Effect to add to the outside of a border. Possible values are \"shadow\", "
+"\"none\", and \"border\"."
+msgstr "Efecte que s'afegirà a fora de la vora. Els valors possibles són «shadow» (ombra), «none» (cap), i «border» (vora)."
+
+#: ../mate-screenshot/screenshot-dialog.c:236
 msgid ""
 "UI definition file for the screenshot program is missing.\n"
 "Please check your installation of mate-utils"
-msgstr ""
-"Falta el fitxer de definició de la interfície d'usuari per al programa de "
-"captura de pantalles.\n"
-"Comproveu la instal·lació del mate-utils"
+msgstr "Falta el fitxer de definició de la interfície d'usuari per al programa de captura de pantalles.\nComproveu la instal·lació del mate-utils"
 
-#: ../mate-screenshot/screenshot-dialog.c:260
+#: ../mate-screenshot/screenshot-dialog.c:257
 msgid "Select a folder"
 msgstr "Seleccioneu un directori"
 
@@ -1981,383 +1887,325 @@ msgstr "Seleccioneu un directori"
 msgid ""
 "Unable to clear the temporary folder:\n"
 "%s"
-msgstr ""
-"No s'ha pogut netejar el directori temporal:\n"
-"%s"
+msgstr "No s'ha pogut netejar el directori temporal:\n%s"
 
 #: ../mate-screenshot/screenshot-save.c:95
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
-msgstr ""
-"El procés fill per desar ha sortit inesperadament. No es pot escriure la "
-"captura al disc."
+msgstr "El procés fill per desar ha sortit inesperadament. No es pot escriure la captura al disc."
 
 #: ../mate-screenshot/screenshot-save.c:223
 msgid "Unknown error saving screenshot to disk"
 msgstr "S'ha produït un error desconegut en desar la captura al disc"
 
 #. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-#: ../mate-screenshot/screenshot-utils.c:828
+#: ../mate-screenshot/screenshot-utils.c:894
 msgid "Untitled Window"
 msgstr "Finestra sense títol"
 
-#: ../mate-screenshot/screenshot-xfer.c:74
+#: ../mate-screenshot/screenshot-xfer.c:72
 msgid "File already exists"
 msgstr "El fitxer ja existeix"
 
-#: ../mate-screenshot/screenshot-xfer.c:77
+#: ../mate-screenshot/screenshot-xfer.c:75
 #, c-format
 msgid "The file \"%s\" already exists. Would you like to replace it?"
 msgstr "Ja existeix el fitxer «%s». Voleu reemplaçar-lo?"
 
-#: ../mate-screenshot/screenshot-xfer.c:84
+#: ../mate-screenshot/screenshot-xfer.c:82
 #: ../gsearchtool/gsearchtool-callbacks.c:1722
 msgid "_Replace"
 msgstr "_Reemplaça"
 
-#: ../mate-screenshot/screenshot-xfer.c:122
+#: ../mate-screenshot/screenshot-xfer.c:120
 msgid "Saving file..."
 msgstr "S'està desant el fitxer..."
 
-#: ../mate-screenshot/screenshot-xfer.c:294
+#: ../mate-screenshot/screenshot-xfer.c:290
 msgid "Can't access source file"
 msgstr "No es pot accedir al fitxer font"
 
 #: ../gsearchtool/mate-search-tool.desktop.in.h:1
-msgid "Locate documents and folders on this computer by name or content"
-msgstr ""
-"Localitza documents i directoris en aquest ordinador pel nom o contingut"
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:2
 msgid "Search for Files..."
 msgstr "Cerca fitxers..."
 
+#: ../gsearchtool/mate-search-tool.desktop.in.h:2
+msgid "Locate documents and folders on this computer by name or content"
+msgstr "Localitza documents i directoris en aquest ordinador pel nom o contingut"
+
 #: ../gsearchtool/mate-search-tool.schemas.in.h:1
-msgid "Default Window Height"
-msgstr "Alçada predeterminada de la finestra"
+msgid "Show Additional Options"
+msgstr "Mostra opcions addicionals"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:2
-msgid "Default Window Maximized"
-msgstr "Finestra maximitzada per defecte"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:3
-msgid "Default Window Width"
-msgstr "Amplada per defecte de la finestra"
-
+#. Translators: The quoted text is the label of the additional
+#. options expander that is translated elsewhere.
 #: ../gsearchtool/mate-search-tool.schemas.in.h:4
-msgid "Disable Quick Search"
-msgstr "Inhabilita la cerca ràpida"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:5
-msgid "Disable Quick Search Second Scan"
-msgstr "Inhabilita el segon pas de la cerca ràpida"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:6
-msgid "Look in Folder"
-msgstr "Cerca a la carpeta"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:7
-msgid "Quick Search Excluded Paths"
-msgstr "Camins exclosos de la cerca ràpida"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:8
-msgid "Quick Search Second Scan Excluded Paths"
-msgstr "Camins exclosos del segon pas de la cerca ràpida"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:9
-msgid "Search Result Columns Order"
-msgstr "Ordre de les columnes del resultat de la cerca"
+msgid ""
+"This key determines if the \"Select more options\" section is expanded when "
+"the search tool is started."
+msgstr "Aquesta clau determina si l'opció de cerca «Mostra més opcions» està expandida en iniciar l'eina de cerca."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:12
+#: ../gsearchtool/mate-search-tool.schemas.in.h:7
 msgid "Select the search option \"Contains the text\""
 msgstr "Selecciona l'opció de cerca «Conté el text»"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:8
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr "Aquesta clau determina si l'opció de cerca «Conté el text» està seleccionada en iniciar l'eina de cerca."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:11
+msgid "Select the search option \"Date modified less than\""
+msgstr "Selecciona l'opció de cerca «La data de modificació és anterior a»"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:12
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
+msgstr "Aquesta clau determina si l'opció de cerca «La data de modificació és anterior a» està seleccionada en iniciar l'eina de cerca."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/mate-search-tool.schemas.in.h:15
-msgid "Select the search option \"Date modified less than\""
-msgstr "Selecciona l'opció de cerca «La data de modificació és anterior a»"
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:18
 msgid "Select the search option \"Date modified more than\""
 msgstr "Selecciona l'opció de cerca «La data de modificació és posterior a»"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:21
-msgid "Select the search option \"Exclude other filesystems\""
-msgstr "Selecciona l'opció de cerca «Exclou altres sistemes de fitxers»"
+#: ../gsearchtool/mate-search-tool.schemas.in.h:16
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
+msgstr "Aquesta clau determina si l'opció de cerca «La data de modificació és posterior a» està seleccionada en iniciar l'eina de cerca."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:19
+msgid "Select the search option \"Size at least\""
+msgstr "Selecciona l'opció de cerca «La mida és almenys»"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:20
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr "Aquesta clau determina si l'opció de cerca «La mida és almenys» està seleccionada en iniciar l'eina de cerca."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:23
+msgid "Select the search option \"Size at most\""
+msgstr "Selecciona l'opció de cerca «La mida és com a molt»"
+
 #: ../gsearchtool/mate-search-tool.schemas.in.h:24
-msgid "Select the search option \"File is empty\""
-msgstr "Selecciona l'opció de cerca «El fitxer està buit»"
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
+msgstr "Aquesta clau determina si l'opció de cerca «La mida és com a molt» està seleccionada en iniciar l'eina de cerca."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/mate-search-tool.schemas.in.h:27
-msgid "Select the search option \"Follow symbolic links\""
-msgstr "Selecciona l'opció de cerca «Segueix els enllaços simbòlics»"
+msgid "Select the search option \"File is empty\""
+msgstr "Selecciona l'opció de cerca «El fitxer està buit»"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:28
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
+msgstr "Aquesta clau determina si l'opció de cerca «El fitxer està buit» està seleccionada en iniciar l'eina de cerca."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:30
-msgid "Select the search option \"Name does not contain\""
-msgstr "Selecciona l'opció de cerca «El nom no conté»"
+#: ../gsearchtool/mate-search-tool.schemas.in.h:31
+msgid "Select the search option \"Owned by user\""
+msgstr "Selecciona l'opció de cerca «Propietari del fitxer»"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:32
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
+msgstr "Aquesta clau determina si l'opció de cerca «Propietari del fitxer» està seleccionada en iniciar l'eina de cerca."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:33
-msgid "Select the search option \"Name matches regular expression\""
-msgstr ""
-"Selecciona l'opció de cerca «El nom coincideix amb una expressió regular»"
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:36
+#: ../gsearchtool/mate-search-tool.schemas.in.h:35
 msgid "Select the search option \"Owned by group\""
 msgstr "Selecciona l'opció de cerca «Grup del fitxer»"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:36
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when"
+" the search tool is started."
+msgstr "Aquesta clau determina si l'opció de cerca «Grup del fitxer» està seleccionada en iniciar l'eina de cerca."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/mate-search-tool.schemas.in.h:39
-msgid "Select the search option \"Owned by user\""
-msgstr "Selecciona l'opció de cerca «Propietari del fitxer»"
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:42
 msgid "Select the search option \"Owner is unrecognized\""
 msgstr "Selecciona l'opció de cerca «No es reconeix el propietari»"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:45
-msgid "Select the search option \"Show hidden files and folders\""
-msgstr "Selecciona l'opció de cerca «Mostra fitxers i carpetes ocultes»"
+#: ../gsearchtool/mate-search-tool.schemas.in.h:40
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
+msgstr "Aquesta clau determina si l'opció de cerca «No es coneix el propietari» està seleccionada en iniciar l'eina de cerca."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:43
+msgid "Select the search option \"Name does not contain\""
+msgstr "Selecciona l'opció de cerca «El nom no conté»"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:44
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr "Aquesta clau determina si l'opció de cerca «El nom no conté» està seleccionada en iniciar l'eina de cerca."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:47
+msgid "Select the search option \"Name matches regular expression\""
+msgstr "Selecciona l'opció de cerca «El nom coincideix amb una expressió regular»"
+
 #: ../gsearchtool/mate-search-tool.schemas.in.h:48
-msgid "Select the search option \"Size at least\""
-msgstr "Selecciona l'opció de cerca «La mida és almenys»"
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option"
+" is selected when the search tool is started."
+msgstr "Aquesta clau determina si l'opció de cerca «El nom coincideix amb una expressió regular» està seleccionada en iniciar l'eina de cerca."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/mate-search-tool.schemas.in.h:51
-msgid "Select the search option \"Size at most\""
-msgstr "Selecciona l'opció de cerca «La mida és com a molt»"
+msgid "Select the search option \"Show hidden files and folders\""
+msgstr "Selecciona l'opció de cerca «Mostra fitxers i carpetes ocultes»"
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:52
-msgid "Show Additional Options"
-msgstr "Mostra opcions addicionals"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:53
-msgid "This key defines the default value of the \"Look in Folder\" widget."
-msgstr ""
-"Aquesta clau defineix el valor predeterminat del giny «Cerca a la carpeta»."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:54
 msgid ""
-"This key defines the order of the columns in the search results. This key "
-"should not be modified by the user."
-msgstr ""
-"Aquesta clau defineix l'ordre de les columnes del resultat de la cerca. "
-"L'usuari no hauria de modificar aquesta clau."
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
+msgstr "Aquesta clau determina si l'opció de cerca «Mostra fitxers i carpetes ocultes» està seleccionada en iniciar l'eina de cerca."
 
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
 #: ../gsearchtool/mate-search-tool.schemas.in.h:55
-msgid ""
-"This key defines the paths the search tool will exclude from a quick search. "
-"The wildcards '*' and '?' are supported. The default values are /mnt/*, /"
-"media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-msgstr ""
-"Aquesta clau defineix quins camins exclourà l'eina de cerca de la cerca "
-"ràpida. Els comodins «*» i «?» valen. Els valors per defecte són /mnt/*, /"
-"media/*, /dev/*, /tmp/*, /proc/*, i /var/*."
+msgid "Select the search option \"Follow symbolic links\""
+msgstr "Selecciona l'opció de cerca «Segueix els enllaços simbòlics»"
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:56
+msgid ""
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr "Aquesta clau determina si l'opció de cerca «Segueix els enllaços simbòlics» està seleccionada en iniciar l'eina de cerca."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:59
+msgid "Select the search option \"Exclude other filesystems\""
+msgstr "Selecciona l'opció de cerca «Exclou altres sistemes de fitxers»"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:60
+msgid ""
+"This key determines if the \"Exclude other filesystems\" search option is "
+"selected when the search tool is started."
+msgstr "Aquesta clau determina si l'opció de cerca «Exclou altres sistemes de fitxers» està seleccionada en iniciar l'eina de cerca."
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:61
+msgid "Disable Quick Search"
+msgstr "Inhabilita la cerca ràpida"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:62
+msgid ""
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
+msgstr "Aquesta clau determina si l'eina de cerca inhabilita l'ús de l'ordre locate quan es fan cerques simples de noms de fitxer."
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:63
+msgid "Quick Search Excluded Paths"
+msgstr "Camins exclosos de la cerca ràpida"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:64
+msgid ""
+"This key defines the paths the search tool will exclude from a quick search."
+" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
+"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
+msgstr "Aquesta clau defineix quins camins exclourà l'eina de cerca de la cerca ràpida. Els comodins «*» i «?» valen. Els valors per defecte són /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, i /var/*."
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:65
+msgid "Disable Quick Search Second Scan"
+msgstr "Inhabilita el segon pas de la cerca ràpida"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:66
+msgid ""
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
+msgstr "Aquesta clau determina si l'eina de cerca inhabilita l'ús de l'ordre find després d'executar la cerca ràpida."
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:67
+msgid "Quick Search Second Scan Excluded Paths"
+msgstr "Camins exclosos del segon pas de la cerca ràpida"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:68
 msgid ""
 "This key defines the paths the search tool will exclude from a second scan "
 "when performing a quick search. The second scan uses the find command to "
 "search for files. The purpose of the second scan is to find files that have "
-"not been indexed. The wildcards '*' and '?' are supported. The default value "
-"is /."
-msgstr ""
-"Aquesta clau defineix quins camins exclourà l'eina de cerca del segon pas de "
-"la cerca ràpida. El segon pas utilitza l'ordre find per cercar fitxers. La "
-"idea del segon pas és cercar fitxers que no estan indexats. Els comodins «*» "
-"i «?» valen. El valor per defecte és /."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:57
-msgid ""
-"This key defines the window height, and it's used to remember the size of "
-"the search tool between sessions. Setting it to -1 will make the search tool "
-"use the default height."
-msgstr ""
-"Aquesta clau defineix l'alçària de la finestra, i s'utilitza per recordar la "
-"mida de l'eina de cerca entre sessions. Si ho establiu a -1, s'utilitzarà "
-"l'alçària per defecte."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:58
-msgid ""
-"This key defines the window width, and it's used to remember the size of the "
-"search tool between sessions. Setting it to -1 will make the search tool use "
-"the default width."
-msgstr ""
-"Aquesta clau defineix l'amplada de la finestra, i s'utilitza per recordar la "
-"mida de l'eina de cerca entre sessions. Si ho establiu a -1, s'utilitzarà "
-"l'amplada per defecte."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:59
-msgid ""
-"This key determines if the \"Contains the text\" search option is selected "
-"when the search tool is started."
-msgstr ""
-"Aquesta clau determina si l'opció de cerca «Conté el text» està seleccionada "
-"en iniciar l'eina de cerca."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:60
-msgid ""
-"This key determines if the \"Date modified less than\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Aquesta clau determina si l'opció de cerca «La data de modificació és "
-"anterior a» està seleccionada en iniciar l'eina de cerca."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:61
-msgid ""
-"This key determines if the \"Date modified more than\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Aquesta clau determina si l'opció de cerca «La data de modificació és "
-"posterior a» està seleccionada en iniciar l'eina de cerca."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:62
-msgid ""
-"This key determines if the \"Exclude other filesystems\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Aquesta clau determina si l'opció de cerca «Exclou altres sistemes de "
-"fitxers» està seleccionada en iniciar l'eina de cerca."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:63
-msgid ""
-"This key determines if the \"File is empty\" search option is selected when "
-"the search tool is started."
-msgstr ""
-"Aquesta clau determina si l'opció de cerca «El fitxer està buit» està "
-"seleccionada en iniciar l'eina de cerca."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:64
-msgid ""
-"This key determines if the \"Follow symbolic links\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Aquesta clau determina si l'opció de cerca «Segueix els enllaços simbòlics» "
-"està seleccionada en iniciar l'eina de cerca."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:65
-msgid ""
-"This key determines if the \"Name does not contain\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Aquesta clau determina si l'opció de cerca «El nom no conté» està "
-"seleccionada en iniciar l'eina de cerca."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:66
-msgid ""
-"This key determines if the \"Name matches regular expression\" search option "
-"is selected when the search tool is started."
-msgstr ""
-"Aquesta clau determina si l'opció de cerca «El nom coincideix amb una "
-"expressió regular» està seleccionada en iniciar l'eina de cerca."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:67
-msgid ""
-"This key determines if the \"Owned by group\" search option is selected when "
-"the search tool is started."
-msgstr ""
-"Aquesta clau determina si l'opció de cerca «Grup del fitxer» està "
-"seleccionada en iniciar l'eina de cerca."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:68
-msgid ""
-"This key determines if the \"Owned by user\" search option is selected when "
-"the search tool is started."
-msgstr ""
-"Aquesta clau determina si l'opció de cerca «Propietari del fitxer» està "
-"seleccionada en iniciar l'eina de cerca."
+"not been indexed. The wildcards '*' and '?' are supported. The default value"
+" is /."
+msgstr "Aquesta clau defineix quins camins exclourà l'eina de cerca del segon pas de la cerca ràpida. El segon pas utilitza l'ordre find per cercar fitxers. La idea del segon pas és cercar fitxers que no estan indexats. Els comodins «*» i «?» valen. El valor per defecte és /."
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:69
-msgid ""
-"This key determines if the \"Owner is unrecognized\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Aquesta clau determina si l'opció de cerca «No es coneix el propietari» està "
-"seleccionada en iniciar l'eina de cerca."
+msgid "Search Result Columns Order"
+msgstr "Ordre de les columnes del resultat de la cerca"
 
-#. Translators: The quoted text is the label of the additional
-#. options expander that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:70
+msgid ""
+"This key defines the order of the columns in the search results. This key "
+"should not be modified by the user."
+msgstr "Aquesta clau defineix l'ordre de les columnes del resultat de la cerca. L'usuari no hauria de modificar aquesta clau."
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:71
+msgid "Default Window Width"
+msgstr "Amplada per defecte de la finestra"
+
 #: ../gsearchtool/mate-search-tool.schemas.in.h:72
 msgid ""
-"This key determines if the \"Select more options\" section is expanded when "
-"the search tool is started."
-msgstr ""
-"Aquesta clau determina si l'opció de cerca «Mostra més opcions» està "
-"expandida en iniciar l'eina de cerca."
+"This key defines the window width, and it's used to remember the size of the"
+" search tool between sessions. Setting it to -1 will make the search tool "
+"use the default width."
+msgstr "Aquesta clau defineix l'amplada de la finestra, i s'utilitza per recordar la mida de l'eina de cerca entre sessions. Si ho establiu a -1, s'utilitzarà l'amplada per defecte."
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:73
-msgid ""
-"This key determines if the \"Show hidden files and folders\" search option "
-"is selected when the search tool is started."
-msgstr ""
-"Aquesta clau determina si l'opció de cerca «Mostra fitxers i carpetes "
-"ocultes» està seleccionada en iniciar l'eina de cerca."
+msgid "Default Window Height"
+msgstr "Alçada predeterminada de la finestra"
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:74
 msgid ""
-"This key determines if the \"Size at least\" search option is selected when "
-"the search tool is started."
-msgstr ""
-"Aquesta clau determina si l'opció de cerca «La mida és almenys» està "
-"seleccionada en iniciar l'eina de cerca."
+"This key defines the window height, and it's used to remember the size of "
+"the search tool between sessions. Setting it to -1 will make the search tool"
+" use the default height."
+msgstr "Aquesta clau defineix l'alçària de la finestra, i s'utilitza per recordar la mida de l'eina de cerca entre sessions. Si ho establiu a -1, s'utilitzarà l'alçària per defecte."
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:75
-msgid ""
-"This key determines if the \"Size at most\" search option is selected when "
-"the search tool is started."
-msgstr ""
-"Aquesta clau determina si l'opció de cerca «La mida és com a molt» està "
-"seleccionada en iniciar l'eina de cerca."
+msgid "Default Window Maximized"
+msgstr "Finestra maximitzada per defecte"
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:76
 msgid ""
-"This key determines if the search tool disables the use of the find command "
-"after performing a quick search."
-msgstr ""
-"Aquesta clau determina si l'eina de cerca inhabilita l'ús de l'ordre find "
-"després d'executar la cerca ràpida."
+"This key determines if the search tool window starts in a maximized state."
+msgstr "Aquesta clau determina si la finestra de l'eina de cerca s'inicia maximitzada."
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:77
-msgid ""
-"This key determines if the search tool disables the use of the locate "
-"command when performing simple file name searches."
-msgstr ""
-"Aquesta clau determina si l'eina de cerca inhabilita l'ús de l'ordre locate "
-"quan es fan cerques simples de noms de fitxer."
+msgid "Look in Folder"
+msgstr "Cerca a la carpeta"
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:78
-msgid ""
-"This key determines if the search tool window starts in a maximized state."
-msgstr ""
-"Aquesta clau determina si la finestra de l'eina de cerca s'inicia "
-"maximitzada."
+msgid "This key defines the default value of the \"Look in Folder\" widget."
+msgstr "Aquesta clau defineix el valor predeterminat del giny «Cerca a la carpeta»."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:194
 msgid "Could not open help document."
@@ -2488,8 +2336,7 @@ msgstr "El document «%s» ja existeix. Voleu reemplaçar-lo?"
 
 #: ../gsearchtool/gsearchtool-callbacks.c:1707
 msgid "If you replace an existing file, its contents will be overwritten."
-msgstr ""
-"Si reemplaceu un fitxer existent, es sobreescriuran els seus continguts."
+msgstr "Si reemplaceu un fitxer existent, es sobreescriuran els seus continguts."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:1772
 msgid "The document name you selected is a folder."
@@ -2504,9 +2351,7 @@ msgstr "Pot ser que no tingueu permisos d'escriptura per al document."
 msgid ""
 "MateConf error:\n"
 "  %s"
-msgstr ""
-"Error de MateConf:\n"
-"  %s"
+msgstr "Error de MateConf:\n  %s"
 
 #. Translators:  Below are the strings displayed in the 'Date Modified'
 #. column of the list view.  The format of this string can vary depending
@@ -2539,14 +2384,14 @@ msgstr "enllaç a %s"
 #. Localizers:
 #. * Feel free to leave out the st, nd, rd and th suffix or
 #. * make some or all of them match.
-#.
+#. 
 #. localizers: tag used to detect the first copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1490
+#: ../gsearchtool/gsearchtool-support.c:1495
 msgid " (copy)"
 msgstr " (còpia)"
 
 #. localizers: tag used to detect the second copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1492
+#: ../gsearchtool/gsearchtool-support.c:1497
 msgid " (another copy)"
 msgstr " (una altra còpia)"
 
@@ -2554,36 +2399,36 @@ msgstr " (una altra còpia)"
 #. localizers: tag used to detect the x12th copy of a file
 #. localizers: tag used to detect the x13th copy of a file
 #. localizers: tag used to detect the xxth copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1495
-#: ../gsearchtool/gsearchtool-support.c:1497
-#: ../gsearchtool/gsearchtool-support.c:1499
-#: ../gsearchtool/gsearchtool-support.c:1509
+#: ../gsearchtool/gsearchtool-support.c:1500
+#: ../gsearchtool/gsearchtool-support.c:1502
+#: ../gsearchtool/gsearchtool-support.c:1504
+#: ../gsearchtool/gsearchtool-support.c:1514
 msgid "th copy)"
 msgstr "a còpia)"
 
 #. localizers: tag used to detect the x1st copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1502
+#: ../gsearchtool/gsearchtool-support.c:1507
 msgid "st copy)"
 msgstr "a còpia)"
 
 #. localizers: tag used to detect the x2nd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1504
+#: ../gsearchtool/gsearchtool-support.c:1509
 msgid "nd copy)"
 msgstr "a còpia)"
 
 #. localizers: tag used to detect the x3rd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1506
+#: ../gsearchtool/gsearchtool-support.c:1511
 msgid "rd copy)"
 msgstr "a còpia)"
 
 #. localizers: appended to first file copy
-#: ../gsearchtool/gsearchtool-support.c:1523
+#: ../gsearchtool/gsearchtool-support.c:1528
 #, c-format
 msgid "%s (copy)%s"
 msgstr "%s (còpia)%s"
 
 #. localizers: appended to second file copy
-#: ../gsearchtool/gsearchtool-support.c:1525
+#: ../gsearchtool/gsearchtool-support.c:1530
 #, c-format
 msgid "%s (another copy)%s"
 msgstr "%s (una altra còpia)%s"
@@ -2592,324 +2437,317 @@ msgstr "%s (una altra còpia)%s"
 #. localizers: appended to x12th file copy
 #. localizers: appended to x13th file copy
 #. localizers: appended to xxth file copy
-#: ../gsearchtool/gsearchtool-support.c:1528
-#: ../gsearchtool/gsearchtool-support.c:1530
-#: ../gsearchtool/gsearchtool-support.c:1532
-#: ../gsearchtool/gsearchtool-support.c:1541
+#: ../gsearchtool/gsearchtool-support.c:1533
+#: ../gsearchtool/gsearchtool-support.c:1535
+#: ../gsearchtool/gsearchtool-support.c:1537
+#: ../gsearchtool/gsearchtool-support.c:1546
 #, c-format
 msgid "%s (%dth copy)%s"
 msgstr "%s (%da còpia)%s"
 
 #. localizers: appended to x1st file copy
-#: ../gsearchtool/gsearchtool-support.c:1535
+#: ../gsearchtool/gsearchtool-support.c:1540
 #, c-format
 msgid "%s (%dst copy)%s"
 msgstr "%s (%da còpia)%s"
 
 #. localizers: appended to x2nd file copy
-#: ../gsearchtool/gsearchtool-support.c:1537
+#: ../gsearchtool/gsearchtool-support.c:1542
 #, c-format
 msgid "%s (%dnd copy)%s"
 msgstr "%s (%da còpia)%s"
 
 #. localizers: appended to x3rd file copy
-#: ../gsearchtool/gsearchtool-support.c:1539
+#: ../gsearchtool/gsearchtool-support.c:1544
 #, c-format
 msgid "%s (%drd copy)%s"
 msgstr "%s (%da còpia)%s"
 
-#: ../gsearchtool/gsearchtool-support.c:1586
+#: ../gsearchtool/gsearchtool-support.c:1591
 msgid " (invalid Unicode)"
 msgstr " (Unicode no vàlid)"
 
 #. localizers: opening parentheses to match the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1675
+#: ../gsearchtool/gsearchtool-support.c:1680
 msgid " ("
 msgstr " ("
 
 #. localizers: opening parentheses of the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1683
+#: ../gsearchtool/gsearchtool-support.c:1688
 #, c-format
 msgid " (%d"
 msgstr " (%d"
 
-#: ../gsearchtool/gsearchtool.c:81
+#: ../gsearchtool/gsearchtool.c:80
 msgid "Contains the _text"
 msgstr "Conté el _text"
 
-#: ../gsearchtool/gsearchtool.c:83
+#: ../gsearchtool/gsearchtool.c:82
 msgid "_Date modified less than"
 msgstr "La _data de modificació és anterior a"
 
-#: ../gsearchtool/gsearchtool.c:83 ../gsearchtool/gsearchtool.c:84
+#: ../gsearchtool/gsearchtool.c:82 ../gsearchtool/gsearchtool.c:83
 msgid "days"
 msgstr "dies"
 
-#: ../gsearchtool/gsearchtool.c:84
+#: ../gsearchtool/gsearchtool.c:83
 msgid "Date modified more than"
 msgstr "La data de modificació és posterior a"
 
-#: ../gsearchtool/gsearchtool.c:86
+#: ../gsearchtool/gsearchtool.c:85
 msgid "S_ize at least"
 msgstr "La _mida és almenys"
 
-#: ../gsearchtool/gsearchtool.c:86 ../gsearchtool/gsearchtool.c:87
+#: ../gsearchtool/gsearchtool.c:85 ../gsearchtool/gsearchtool.c:86
 msgid "kilobytes"
 msgstr "kilobytes"
 
-#: ../gsearchtool/gsearchtool.c:87
+#: ../gsearchtool/gsearchtool.c:86
 msgid "Si_ze at most"
 msgstr "La mida és com a mol_t"
 
-#: ../gsearchtool/gsearchtool.c:88
+#: ../gsearchtool/gsearchtool.c:87
 msgid "File is empty"
 msgstr "El fitxer està buit"
 
-#: ../gsearchtool/gsearchtool.c:90
+#: ../gsearchtool/gsearchtool.c:89
 msgid "Owned by _user"
 msgstr "Pr_opietari del fitxer"
 
-#: ../gsearchtool/gsearchtool.c:91
+#: ../gsearchtool/gsearchtool.c:90
 msgid "Owned by _group"
 msgstr "_Grup del fitxer"
 
-#: ../gsearchtool/gsearchtool.c:92
+#: ../gsearchtool/gsearchtool.c:91
 msgid "Owner is unrecognized"
 msgstr "No es reconeix el propietari"
 
-#: ../gsearchtool/gsearchtool.c:94
+#: ../gsearchtool/gsearchtool.c:93
 msgid "Na_me does not contain"
 msgstr "El no_m no conté"
 
-#: ../gsearchtool/gsearchtool.c:95
+#: ../gsearchtool/gsearchtool.c:94
 msgid "Name matches regular e_xpression"
 msgstr "El nom coincideix amb una e_xpressió regular"
 
-#: ../gsearchtool/gsearchtool.c:97
+#: ../gsearchtool/gsearchtool.c:96
 msgid "Show hidden and backup files"
 msgstr "Mostra els fitxers ocults i de còpia de seguretat"
 
-#: ../gsearchtool/gsearchtool.c:98
+#: ../gsearchtool/gsearchtool.c:97
 msgid "Follow symbolic links"
 msgstr "Segueix els enllaços simbòlics"
 
-#: ../gsearchtool/gsearchtool.c:99
+#: ../gsearchtool/gsearchtool.c:98
 msgid "Exclude other filesystems"
 msgstr "Exclou altres sistemes de fitxers"
 
-#: ../gsearchtool/gsearchtool.c:157
+#: ../gsearchtool/gsearchtool.c:156
 msgid "Show version of the application"
 msgstr "Mostra la versió de l'aplicació"
 
-#: ../gsearchtool/gsearchtool.c:158 ../gsearchtool/gsearchtool.c:163
-#: ../gsearchtool/gsearchtool.c:172
+#: ../gsearchtool/gsearchtool.c:157 ../gsearchtool/gsearchtool.c:162
+#: ../gsearchtool/gsearchtool.c:171
 msgid "STRING"
 msgstr "CADENA"
 
-#: ../gsearchtool/gsearchtool.c:159
+#: ../gsearchtool/gsearchtool.c:158
 msgid "PATH"
 msgstr "CAMÍ"
 
-#: ../gsearchtool/gsearchtool.c:160
+#: ../gsearchtool/gsearchtool.c:159
 msgid "VALUE"
 msgstr "VALOR"
 
-#: ../gsearchtool/gsearchtool.c:164 ../gsearchtool/gsearchtool.c:165
+#: ../gsearchtool/gsearchtool.c:163 ../gsearchtool/gsearchtool.c:164
 msgid "DAYS"
 msgstr "DIES"
 
-#: ../gsearchtool/gsearchtool.c:166 ../gsearchtool/gsearchtool.c:167
+#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
 msgid "KILOBYTES"
 msgstr "KILOBYTES"
 
-#: ../gsearchtool/gsearchtool.c:169
+#: ../gsearchtool/gsearchtool.c:168
 msgid "USER"
 msgstr "USUARI"
 
-#: ../gsearchtool/gsearchtool.c:170
+#: ../gsearchtool/gsearchtool.c:169
 msgid "GROUP"
 msgstr "GRUP"
 
-#: ../gsearchtool/gsearchtool.c:173
+#: ../gsearchtool/gsearchtool.c:172
 msgid "PATTERN"
 msgstr "PATRÓ"
 
-#: ../gsearchtool/gsearchtool.c:384
+#: ../gsearchtool/gsearchtool.c:383
 msgid "A locate database has probably not been created."
 msgstr "Possiblement no s'hagi creat cap base de dades locate."
 
-#: ../gsearchtool/gsearchtool.c:486
+#: ../gsearchtool/gsearchtool.c:485
 #, c-format
 msgid "Character set conversion failed for \"%s\""
 msgstr "Ha fallat la conversió del conjunt de caràcters de «%s»"
 
-#: ../gsearchtool/gsearchtool.c:510
+#: ../gsearchtool/gsearchtool.c:509
 msgid "Searching..."
 msgstr "S'està cercant..."
 
-#: ../gsearchtool/gsearchtool.c:510 ../gsearchtool/gsearchtool.c:1016
+#: ../gsearchtool/gsearchtool.c:509 ../gsearchtool/gsearchtool.c:1015
 #: ../gsearchtool/gsearchtool.c:2988
 msgid "Search for Files"
 msgstr "Cerca fitxers"
 
-#: ../gsearchtool/gsearchtool.c:962 ../gsearchtool/gsearchtool.c:991
+#: ../gsearchtool/gsearchtool.c:961 ../gsearchtool/gsearchtool.c:990
 msgid "No files found"
 msgstr "No s'ha trobat cap fitxer"
 
-#: ../gsearchtool/gsearchtool.c:984
+#: ../gsearchtool/gsearchtool.c:983
 msgid "(stopped)"
 msgstr "(parat)"
 
-#: ../gsearchtool/gsearchtool.c:990
+#: ../gsearchtool/gsearchtool.c:989
 msgid "No Files Found"
 msgstr "No s'ha trobat cap fitxer"
 
-#: ../gsearchtool/gsearchtool.c:995
+#: ../gsearchtool/gsearchtool.c:994
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
 msgstr[0] "S'ha trobat %'d fitxer"
 msgstr[1] "S'han trobat %'d fitxers"
 
-#: ../gsearchtool/gsearchtool.c:999 ../gsearchtool/gsearchtool.c:1037
+#: ../gsearchtool/gsearchtool.c:998 ../gsearchtool/gsearchtool.c:1036
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
 msgstr[0] "S'ha trobat %'d fitxer"
 msgstr[1] "S'han trobat %'d fitxers"
 
-#: ../gsearchtool/gsearchtool.c:1128
+#: ../gsearchtool/gsearchtool.c:1127
 msgid "Entry changed called for a non entry option!"
 msgstr "S'ha demanat un canvi per a una entrada sense opcions!"
 
-#: ../gsearchtool/gsearchtool.c:1288
+#: ../gsearchtool/gsearchtool.c:1287
 msgid "Set the text of \"Name contains\" search option"
 msgstr "Estableix el text de l'opció de cerca «El nom conté»"
 
-#: ../gsearchtool/gsearchtool.c:1289
+#: ../gsearchtool/gsearchtool.c:1288
 msgid "Set the text of \"Look in folder\" search option"
 msgstr "Estableix el text de l'opció de cerca «Cerca a la carpeta»"
 
-#: ../gsearchtool/gsearchtool.c:1290
+#: ../gsearchtool/gsearchtool.c:1289
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr "Ordena els fitxers per: nom, carpeta, mida, tipus o data"
 
-#: ../gsearchtool/gsearchtool.c:1291
+#: ../gsearchtool/gsearchtool.c:1290
 msgid "Set sort order to descending, the default is ascending"
 msgstr "Estableix l'ordre del resultat a descendent, per defecte és ascendent"
 
-#: ../gsearchtool/gsearchtool.c:1292
+#: ../gsearchtool/gsearchtool.c:1291
 msgid "Automatically start a search"
 msgstr "Comença una cerca automàticament"
 
-#: ../gsearchtool/gsearchtool.c:1298
+#: ../gsearchtool/gsearchtool.c:1297
 #, c-format
 msgid "Select the \"%s\" search option"
 msgstr "Selecciona l'opció de cerca «%s»"
 
-#: ../gsearchtool/gsearchtool.c:1301
+#: ../gsearchtool/gsearchtool.c:1300
 #, c-format
 msgid "Select and set the \"%s\" search option"
 msgstr "Selecciona i estableix l'opció de cerca «%s»"
 
-#: ../gsearchtool/gsearchtool.c:1408
+#: ../gsearchtool/gsearchtool.c:1407
 msgid "Invalid option passed to sortby command line argument."
-msgstr ""
-"S'ha passat una opció no vàlida a l'argument de la línia d'ordres «sortby»."
+msgstr "S'ha passat una opció no vàlida a l'argument de la línia d'ordres «sortby»."
 
-#: ../gsearchtool/gsearchtool.c:1702
+#: ../gsearchtool/gsearchtool.c:1701
 msgid ""
 "\n"
 "... Too many errors to display ..."
-msgstr ""
-"\n"
-"... Hi ha massa errors per mostrar ..."
+msgstr "\n... Hi ha massa errors per mostrar ..."
 
-#: ../gsearchtool/gsearchtool.c:1716
+#: ../gsearchtool/gsearchtool.c:1715
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
-msgstr ""
-"El resultat de la cerca pot ser invàlid. S'han produït errors en fer la "
-"cerca."
+msgstr "El resultat de la cerca pot ser invàlid. S'han produït errors en fer la cerca."
 
-#: ../gsearchtool/gsearchtool.c:1728 ../gsearchtool/gsearchtool.c:1772
+#: ../gsearchtool/gsearchtool.c:1727 ../gsearchtool/gsearchtool.c:1771
 msgid "Show more _details"
 msgstr "Mostra més _detalls"
 
-#: ../gsearchtool/gsearchtool.c:1758
+#: ../gsearchtool/gsearchtool.c:1757
 msgid ""
 "The search results may be out of date or invalid.  Do you want to disable "
 "the quick search feature?"
-msgstr ""
-"Els resultats de les cerques poden estar desactualitzades o no ser vàlides.  "
-"Voleu inhabilitar la funcionalitat de cerca ràpida?"
+msgstr "Els resultats de les cerques poden estar desactualitzades o no ser vàlides.  Voleu inhabilitar la funcionalitat de cerca ràpida?"
 
-#: ../gsearchtool/gsearchtool.c:1783
+#: ../gsearchtool/gsearchtool.c:1782
 msgid "Disable _Quick Search"
 msgstr "Inhabilita la cerca _ràpida"
 
-#: ../gsearchtool/gsearchtool.c:1810
+#: ../gsearchtool/gsearchtool.c:1809
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
 msgstr "No es pot establir el grup per al procés fill %d: %s.\n"
 
-#: ../gsearchtool/gsearchtool.c:1835
+#: ../gsearchtool/gsearchtool.c:1834
 msgid "Error parsing the search command."
 msgstr "S'ha produït un error en analitzar l'ordre de cerca."
 
-#: ../gsearchtool/gsearchtool.c:1868
+#: ../gsearchtool/gsearchtool.c:1867
 msgid "Error running the search command."
 msgstr "S'ha produït un error en executar l'ordre de cerca."
 
-#: ../gsearchtool/gsearchtool.c:1988
+#: ../gsearchtool/gsearchtool.c:1987
 #, c-format
 msgid "Enter a text value for the \"%s\" search option."
 msgstr "Introduïu un valor de text per a l'opció de cerca «%s»."
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:1993
+#: ../gsearchtool/gsearchtool.c:1992
 #, c-format
 msgid "\"%s\" in %s"
 msgstr "«%s» a %s"
 
-#: ../gsearchtool/gsearchtool.c:1995
+#: ../gsearchtool/gsearchtool.c:1994
 #, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
 msgstr "Introduïu el valor de %s per a l'opció de cerca «%s»."
 
-#: ../gsearchtool/gsearchtool.c:2053
+#: ../gsearchtool/gsearchtool.c:2052
 #, c-format
 msgid "Remove \"%s\""
 msgstr "Suprimeix «%s»"
 
-#: ../gsearchtool/gsearchtool.c:2054
+#: ../gsearchtool/gsearchtool.c:2053
 #, c-format
 msgid "Click to remove the \"%s\" search option."
 msgstr "Feu clic per suprimir l'opció de cerca «%s»."
 
-#: ../gsearchtool/gsearchtool.c:2147
+#: ../gsearchtool/gsearchtool.c:2146
 msgid "A_vailable options:"
 msgstr "Opcions _disponibles:"
 
-#: ../gsearchtool/gsearchtool.c:2176
+#: ../gsearchtool/gsearchtool.c:2175
 msgid "Available options"
 msgstr "Opcions disponibles"
 
-#: ../gsearchtool/gsearchtool.c:2177
+#: ../gsearchtool/gsearchtool.c:2176
 msgid "Select a search option from the drop-down list."
 msgstr "Seleccioneu una opció de cerca de la llista desplegable."
 
-#: ../gsearchtool/gsearchtool.c:2189
+#: ../gsearchtool/gsearchtool.c:2188
 msgid "Add search option"
 msgstr "Afegeix una opció de cerca"
 
-#: ../gsearchtool/gsearchtool.c:2190
+#: ../gsearchtool/gsearchtool.c:2189
 msgid "Click to add the selected available search option."
 msgstr "Feu clic per afegir l'opció de cerca disponible seleccionada."
 
-#: ../gsearchtool/gsearchtool.c:2279
+#: ../gsearchtool/gsearchtool.c:2278
 msgid "S_earch results:"
 msgstr "Resultats de la c_erca:"
 
@@ -2951,8 +2789,7 @@ msgstr "Cerca a la carpeta"
 
 #: ../gsearchtool/gsearchtool.c:2795
 msgid "Select the folder or device from which you want to begin the search."
-msgstr ""
-"Seleccioneu el directori o dispositiu des d'on vulgueu iniciar la cerca."
+msgstr "Seleccioneu el directori o dispositiu des d'on vulgueu iniciar la cerca."
 
 #: ../gsearchtool/gsearchtool.c:2813
 msgid "Select more _options"
@@ -2964,8 +2801,7 @@ msgstr "Seleccioneu més opcions"
 
 #: ../gsearchtool/gsearchtool.c:2822
 msgid "Click to expand or collapse the list of available options."
-msgstr ""
-"Feu clic per expandir o reduir la llista d'opcions de cerca disponibles."
+msgstr "Feu clic per expandir o reduir la llista d'opcions de cerca disponibles."
 
 #: ../gsearchtool/gsearchtool.c:2846
 msgid "Click to display the help manual."
@@ -3020,9 +2856,7 @@ msgstr "No s'ha reconegut l'opció de llançament: %d"
 #: ../libeggsmclient/eggdesktopfile.c:1373
 #, c-format
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr ""
-"No es poden passar URI de documents a una entrada d'escriptori de tipus "
-"«Type=Link»"
+msgstr "No es poden passar URI de documents a una entrada d'escriptori de tipus «Type=Link»"
 
 #: ../libeggsmclient/eggdesktopfile.c:1392
 #, c-format
@@ -3066,87 +2900,76 @@ msgid "View or monitor system log files"
 msgstr "Visualitza o fes un seguiment dels fitxers de registre del sistema"
 
 #: ../logview/data/mate-system-log.schemas.in.h:1
-msgid "Height of the main window in pixels"
-msgstr "Alçaria en píxels de la finestra principal"
-
-#: ../logview/data/mate-system-log.schemas.in.h:2
 msgid "Log file to open up on startup"
 msgstr "Fitxers de registre a obrir en iniciar"
 
-#: ../logview/data/mate-system-log.schemas.in.h:3
-msgid "Log files to open up on startup"
-msgstr "Fitxers de registre a obrir en iniciar"
+#: ../logview/data/mate-system-log.schemas.in.h:2
+msgid ""
+"Specifies the log file displayed at startup. The default is either "
+"/var/adm/messages or /var/log/messages, depending on your operating system."
+msgstr "Especifica el fitxer de registre a obrir en iniciar. Per defecte, és /var/adm/messages o /var/log/messages, depenent del vostre sistema operatiu."
 
-#: ../logview/data/mate-system-log.schemas.in.h:4
+#: ../logview/data/mate-system-log.schemas.in.h:3
 msgid "Size of the font used to display the log"
 msgstr "Mida del tipus de lletra que s'utilitzarà per mostrar el registre"
 
-#: ../logview/data/mate-system-log.schemas.in.h:5
-msgid ""
-"Specifies a list of log files to open up at startup. A default list is "
-"created by reading /etc/syslog.conf."
-msgstr ""
-"Especifica una llista de fitxers de registre a obrir en iniciar. La llista "
-"per defecte es crea llegint /etc/syslog.conf."
-
-#: ../logview/data/mate-system-log.schemas.in.h:6
-msgid "Specifies the height of the log viewer main window in pixels."
-msgstr ""
-"Especifica l'alçària de la finestra principal del visualitzador de fitxers "
-"de registres."
-
-#: ../logview/data/mate-system-log.schemas.in.h:7
-msgid ""
-"Specifies the log file displayed at startup. The default is either /var/adm/"
-"messages or /var/log/messages, depending on your operating system."
-msgstr ""
-"Especifica el fitxer de registre a obrir en iniciar. Per defecte, és /var/"
-"adm/messages o /var/log/messages, depenent del vostre sistema operatiu."
-
-#: ../logview/data/mate-system-log.schemas.in.h:8
+#: ../logview/data/mate-system-log.schemas.in.h:4
 msgid ""
 "Specifies the size of the fixed-width font used to display the log in the "
 "main tree view. The default is taken from the default terminal font size."
-msgstr ""
-"Especifica la mida del tipus de lletra d'amplada fixa utilitzada per mostrar "
-"el registre en la vista en arbre principal. Per defecte s'utilitza el mateix "
-"valor que el de la mida del tipus de lletra del terminal."
+msgstr "Especifica la mida del tipus de lletra d'amplada fixa utilitzada per mostrar el registre en la vista en arbre principal. Per defecte s'utilitza el mateix valor que el de la mida del tipus de lletra del terminal."
 
-#: ../logview/data/mate-system-log.schemas.in.h:9
-msgid "Specifies the width of the log viewer main window in pixels."
-msgstr ""
-"Especifica l'amplada en píxels de la finestra principal del visualitzador de "
-"fitxers de registre."
+#: ../logview/data/mate-system-log.schemas.in.h:5
+msgid "Height of the main window in pixels"
+msgstr "Alçaria en píxels de la finestra principal"
 
-#: ../logview/data/mate-system-log.schemas.in.h:10
+#: ../logview/data/mate-system-log.schemas.in.h:6
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "Especifica l'alçària de la finestra principal del visualitzador de fitxers de registres."
+
+#: ../logview/data/mate-system-log.schemas.in.h:7
 msgid "Width of the main window in pixels"
 msgstr "Amplada en píxels de la finestra principal"
 
-#: ../logview/data/logview-filter.ui.h:1
-msgid "Background:"
-msgstr "Segon pla:"
+#: ../logview/data/mate-system-log.schemas.in.h:8
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "Especifica l'amplada en píxels de la finestra principal del visualitzador de fitxers de registre."
+
+#: ../logview/data/mate-system-log.schemas.in.h:9
+msgid "Log files to open up on startup"
+msgstr "Fitxers de registre a obrir en iniciar"
+
+#: ../logview/data/mate-system-log.schemas.in.h:10
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr "Especifica una llista de fitxers de registre a obrir en iniciar. La llista per defecte es crea llegint /etc/syslog.conf."
 
 #: ../logview/data/logview-filter.ui.h:2
-msgid "Effect:"
-msgstr "Efecte:"
+msgid "_Regular Expression:"
+msgstr "Expressió _regular:"
 
 #: ../logview/data/logview-filter.ui.h:3
-msgid "Foreground:"
-msgstr "Primer pla:"
+msgid "Highlight"
+msgstr "Realça"
 
 #: ../logview/data/logview-filter.ui.h:4
 msgid "Hide"
 msgstr "Oculta"
 
 #: ../logview/data/logview-filter.ui.h:5
-msgid "Highlight"
-msgstr "Realça"
+msgid "Foreground:"
+msgstr "Primer pla:"
+
+#: ../logview/data/logview-filter.ui.h:6
+msgid "Background:"
+msgstr "Segon pla:"
 
 #: ../logview/data/logview-filter.ui.h:7
-msgid "_Regular Expression:"
-msgstr "Expressió _regular:"
+msgid "Effect:"
+msgstr "Efecte:"
 
-#: ../logview/logview-app.c:375
+#: ../logview/logview-app.c:374
 #, c-format
 msgid "Impossible to open the file %s"
 msgstr "No s'ha pogut obrir el fitxer %s"
@@ -3172,15 +2995,15 @@ msgstr "L'expressió regular no és vàlida: %s"
 msgid "Please specify either foreground or background color!"
 msgstr "Especifiqueu el color de primer pla o de segon pla"
 
-#: ../logview/logview-filter-manager.c:293
+#: ../logview/logview-filter-manager.c:292
 msgid "Edit filter"
 msgstr "Edita el filtre"
 
-#: ../logview/logview-filter-manager.c:293
+#: ../logview/logview-filter-manager.c:292
 msgid "Add new filter"
 msgstr "Afegeix un filtre nou"
 
-#: ../logview/logview-filter-manager.c:503
+#: ../logview/logview-filter-manager.c:502
 msgid "Filters"
 msgstr "Filtres"
 
@@ -3210,9 +3033,7 @@ msgstr "Neteja la cadena de cerca"
 
 #: ../logview/logview-log.c:595
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
-msgstr ""
-"S'ha produït un error en descomprimir el registre comprimit amb GZip. Pot "
-"ser que el fitxer estigui malmès."
+msgstr "S'ha produït un error en descomprimir el registre comprimit amb GZip. Pot ser que el fitxer estigui malmès."
 
 #: ../logview/logview-log.c:642
 msgid "You don't have enough permissions to read the file."
@@ -3224,31 +3045,29 @@ msgstr "El fitxer no és un fitxer normal o un fitxer de text."
 
 #: ../logview/logview-log.c:739
 msgid "This version of System Log does not support GZipped logs."
-msgstr ""
-"Aquesta versió del registre del sistema no admet registres comprimits amb el "
-"Gzip."
+msgstr "Aquesta versió del registre del sistema no admet registres comprimits amb el Gzip."
 
 #: ../logview/logview-loglist.c:311
 msgid "Loading..."
 msgstr "S'està carregant..."
 
-#: ../logview/logview-main.c:62
+#: ../logview/logview-main.c:61
 msgid "Show the application's version"
 msgstr "Mostra la versió de l'aplicació"
 
-#: ../logview/logview-main.c:64
+#: ../logview/logview-main.c:63
 msgid "[LOGFILE...]"
 msgstr "[FITXER DE REGISTRE...]"
 
-#: ../logview/logview-main.c:68
+#: ../logview/logview-main.c:67
 msgid " - Browse and monitor logs"
 msgstr " - Navega i fes un seguiment dels registres"
 
-#: ../logview/logview-main.c:103
+#: ../logview/logview-main.c:102
 msgid "Log Viewer"
 msgstr "Visualitzador de registres del sistema"
 
-#: ../logview/logview-window.c:38 ../logview/logview-window.c:788
+#: ../logview/logview-window.c:38 ../logview/logview-window.c:759
 msgid "System Log Viewer"
 msgstr "Visualitzador de registres del sistema"
 
@@ -3262,1029 +3081,132 @@ msgstr "darrera actualització: %s"
 msgid "%d lines (%s) - %s"
 msgstr "%d línies (%s) - %s"
 
-#: ../logview/logview-window.c:343
+#: ../logview/logview-window.c:317
 msgid "Open Log"
 msgstr "Obre un fitxer de registre"
 
-#: ../logview/logview-window.c:382
+#: ../logview/logview-window.c:356
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "S'ha produït un error en mostrar l'ajuda: %s"
 
-#: ../logview/logview-window.c:498
+#: ../logview/logview-window.c:470
 msgid "Wrapped"
 msgstr "Ajustat"
 
-#: ../logview/logview-window.c:793
+#: ../logview/logview-window.c:764
 msgid "A system log viewer for MATE."
 msgstr "Un visualitzador de registres del sistema per al MATE."
 
-#: ../logview/logview-window.c:839
+#: ../logview/logview-window.c:810
 msgid "_Filters"
 msgstr "_Filtres"
 
-#: ../logview/logview-window.c:842
+#: ../logview/logview-window.c:813
 msgid "_Open..."
 msgstr "_Obre..."
 
-#: ../logview/logview-window.c:842
+#: ../logview/logview-window.c:813
 msgid "Open a log from file"
 msgstr "Obre un registre des d'un fitxer"
 
-#: ../logview/logview-window.c:844
+#: ../logview/logview-window.c:815
 msgid "_Close"
 msgstr "Tan_ca"
 
-#: ../logview/logview-window.c:844
+#: ../logview/logview-window.c:815
 msgid "Close this log"
 msgstr "Tanca aquest registre"
 
-#: ../logview/logview-window.c:846
+#: ../logview/logview-window.c:817
 msgid "_Quit"
 msgstr "_Surt"
 
-#: ../logview/logview-window.c:846
+#: ../logview/logview-window.c:817
 msgid "Quit the log viewer"
 msgstr "Surt del visualitzador de registres"
 
-#: ../logview/logview-window.c:849
+#: ../logview/logview-window.c:820
 msgid "_Copy"
 msgstr "_Copia"
 
-#: ../logview/logview-window.c:849
+#: ../logview/logview-window.c:820
 msgid "Copy the selection"
 msgstr "Copia la selecció"
 
-#: ../logview/logview-window.c:851
+#: ../logview/logview-window.c:822
 msgid "Select the entire log"
 msgstr "Selecciona tot el registre"
 
-#: ../logview/logview-window.c:853
+#: ../logview/logview-window.c:824
 msgid "_Find..."
 msgstr "_Cerca..."
 
-#: ../logview/logview-window.c:853
+#: ../logview/logview-window.c:824
 msgid "Find a word or phrase in the log"
 msgstr "Cerca una paraula o frase al registre"
 
-#: ../logview/logview-window.c:856
+#: ../logview/logview-window.c:827
 msgid "Bigger text size"
 msgstr "Mida del text més gran"
 
-#: ../logview/logview-window.c:858
+#: ../logview/logview-window.c:829
 msgid "Smaller text size"
 msgstr "Mida del text més petita"
 
-#: ../logview/logview-window.c:860
+#: ../logview/logview-window.c:831
 msgid "Normal text size"
 msgstr "Mida del text normal"
 
-#: ../logview/logview-window.c:863
+#: ../logview/logview-window.c:834
 msgid "Manage Filters"
 msgstr "Gestiona els filtres"
 
-#: ../logview/logview-window.c:863
+#: ../logview/logview-window.c:834
 msgid "Manage filters"
 msgstr "Gestiona els filtres"
 
-#: ../logview/logview-window.c:866
+#: ../logview/logview-window.c:837
 msgid "Open the help contents for the log viewer"
 msgstr "Obre els continguts de l'ajuda per al visualitzador de registres"
 
-#: ../logview/logview-window.c:868
+#: ../logview/logview-window.c:839
 msgid "Show the about dialog for the log viewer"
-msgstr ""
-"Mostra el quadre de diàleg de «Quant a» per al visualitzador de registres"
+msgstr "Mostra el quadre de diàleg de «Quant a» per al visualitzador de registres"
 
-#: ../logview/logview-window.c:873
+#: ../logview/logview-window.c:844
 msgid "_Statusbar"
 msgstr "_Barra d'estat"
 
-#: ../logview/logview-window.c:873
+#: ../logview/logview-window.c:844
 msgid "Show Status Bar"
 msgstr "Mostra la barra d'estat"
 
-#: ../logview/logview-window.c:875
+#: ../logview/logview-window.c:846
 msgid "Side _Pane"
 msgstr "_Subfinestra lateral"
 
-#: ../logview/logview-window.c:875
+#: ../logview/logview-window.c:846
 msgid "Show Side Pane"
 msgstr "Mostra la subfinestra lateral"
 
-#: ../logview/logview-window.c:877
+#: ../logview/logview-window.c:848
 msgid "Show matches only"
 msgstr "Mostra només les coincidències"
 
-#: ../logview/logview-window.c:877
+#: ../logview/logview-window.c:848
 msgid "Only show lines that match one of the given filters"
-msgstr ""
-"Mostra només les línies que coincideixen amb un dels filtres proporcionats"
+msgstr "Mostra només les línies que coincideixen amb un dels filtres proporcionats"
 
-#: ../logview/logview-window.c:1014
+#: ../logview/logview-window.c:962
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr "No es pot llegir de «%s»"
 
-#: ../logview/logview-window.c:1436
+#: ../logview/logview-window.c:1381
 msgid "Version: "
 msgstr "Versió: "
 
-#: ../logview/logview-window.c:1543
+#: ../logview/logview-window.c:1488
 msgid "Could not open the following files:"
 msgstr "No s'han pogut obrir els fitxers següents:"
-
-#~ msgid "Save snapshot"
-#~ msgstr "Desa la captura de pantalla"
-
-#~ msgid "Floppy Formatter"
-#~ msgstr "Formatador de disquet"
-
-#~ msgid "Format floppy disks"
-#~ msgstr "Formata disquets"
-
-#~ msgid ""
-#~ "0 for the quick format, 1 for a standard one (adds a low-level format) "
-#~ "and finally 2 for a thorough format (adds a bad blocks scan)."
-#~ msgstr ""
-#~ "0 per al format ràpid, 1 per a l'estàndard (afegeix un format de baix "
-#~ "nivell) i 2 per a un format exhaustiu (afegeix un escaneig de blocs amb "
-#~ "errors)."
-
-#~ msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
-#~ msgstr "NOMÉS PER A USUARIS AVANÇATS - rerefons per al format FAT"
-
-#~ msgid "Default filesystem type"
-#~ msgstr "Tipus de sistema de fitxers per defecte"
-
-#~ msgid "Default formatting mode"
-#~ msgstr "Mode de formatació per defecte"
-
-#~ msgid ""
-#~ "TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to "
-#~ "set mtools as the preferred FAT formatting backend."
-#~ msgstr ""
-#~ "CERT per a establir l'mkdosfs com el rerefons de formatació FAT preferit, "
-#~ "o FALS per a emprar l'mtools."
-
-#~ msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
-#~ msgstr ""
-#~ "ext2 per al sistema de fitxers natiu o fat per al sistema de fitxers del "
-#~ "DOS."
-
-#~ msgid "Internal Error: Unable to seek to the correct location."
-#~ msgstr "Error intern: No s'ha pogut desplaçar a la ubicació correcta."
-
-#~ msgid "Internal Error: Weird value (%ld) in do_test\n"
-#~ msgstr "Error intern: valor estrany (%ld) a do_test\n"
-
-#~ msgid "Checking for bad blocks..."
-#~ msgstr "S'estan cercant blocs amb errors..."
-
-#~ msgid "Failed to open device %s for badblock checking\n"
-#~ msgstr ""
-#~ "No s'ha pogut obrir el dispositiu %s per cercar-hi blocs amb errors\n"
-
-#~ msgid "Checking for bad blocks... Done"
-#~ msgstr "S'estan cercant blocs amb errors... fet"
-
-#~ msgid "Formatting the disk..."
-#~ msgstr "S'està formatant el disc..."
-
-#~ msgid "I don't know what this is, but it's very wrong."
-#~ msgstr "Això no se sap què és, però no pot ser gens bo."
-
-#~ msgid "Error formatting track #%d"
-#~ msgstr "S'ha produït un error en formatar la pista #%d"
-
-#~ msgid "Error during completion of formatting"
-#~ msgstr "S'ha produït un error durant la finalització de la formatació"
-
-#~ msgid "Formatting the disk... Done"
-#~ msgstr "S'està formatant el disc... fet"
-
-#~ msgid "Verifying the format..."
-#~ msgstr "S'està verificant el format..."
-
-#~ msgid ""
-#~ "Unable to write to the floppy.\n"
-#~ "\n"
-#~ "Please confirm that it is not write-protected."
-#~ msgstr ""
-#~ "No s'ha pogut escriure al disquet.\n"
-#~ "\n"
-#~ "Confirmeu que no està protegit contra escriptura."
-
-#~ msgid "Insufficient permissions to open floppy device %s."
-#~ msgstr "No teniu prou permisos per obrir la unitat de disquet %s."
-
-#~ msgid ""
-#~ "Unable to access the floppy disk.\n"
-#~ "\n"
-#~ "Please confirm that it is in the drive\n"
-#~ "with the drive door shut."
-#~ msgstr ""
-#~ "No s'ha pogut accedir al disquet.\n"
-#~ "\n"
-#~ "Assegureu-vos que està inserit dins la\n"
-#~ "unitat i que la porta està tancada."
-
-#~ msgid ""
-#~ "Generic error accessing floppy device %s.\n"
-#~ "\n"
-#~ "Error code %s:%d"
-#~ msgstr ""
-#~ "S'ha produït un error genèric en accedir a la unitat de disquet %s.\n"
-#~ "\n"
-#~ "Codi d'error %s:%d"
-
-#~ msgid ""
-#~ "Read Error:\n"
-#~ "Problem reading cylinder %d, expected %d, read %d"
-#~ msgstr ""
-#~ "S'ha profuït un error de lectura:\n"
-#~ "Hi ha hagut un problema en llegir el cilindre %d, s'esperava %d, s'ha "
-#~ "llegit %d"
-
-#~ msgid "Problem reading cylinder %d, expected %d, read %d"
-#~ msgstr ""
-#~ "Hi ha hagut un problema en llegir el cilindre %d, s'esperava %d, s'ha "
-#~ "llegit %d"
-
-#~ msgid "Bad data in cyl %d.  Continuing... "
-#~ msgstr "Dades incorrectes al cilindre %d. S'està continuant... "
-
-#~ msgid "Error closing device %s"
-#~ msgstr "S'ha produït un error en tancar el dispositiu %s"
-
-#~ msgid "Verifying the format... Done"
-#~ msgstr "S'està verificant el format... fet"
-
-#~ msgid "Unable to write to device %s"
-#~ msgstr "No s'ha pogut escriure al dispositiu %s"
-
-#~ msgid ""
-#~ "Generic error accessing floppy device %s.\n"
-#~ "\n"
-#~ "Error code %s"
-#~ msgstr ""
-#~ "S'ha produït un error genèric en accedir a la unitat de disquet %s.\n"
-#~ "\n"
-#~ "Codi d'error %s"
-
-#~ msgid "Could not determine current floppy geometry."
-#~ msgstr "No s'ha pogut determinat la geometria del disquet actual."
-
-#~ msgid "Error while creating a unique filename for the bad blocks list file."
-#~ msgstr ""
-#~ "S'ha produït un error en crear un nom de fitxer únic per al fitxer amb la "
-#~ "llista de blocs amb errors."
-
-#~ msgid "Error while filling the bad blocks list file."
-#~ msgstr ""
-#~ "S'ha produït un error en emplenar el fitxer amb la llista de blocs amb "
-#~ "errors."
-
-#~ msgid "Error while spawning the (%s) command: %s."
-#~ msgstr "S'ha produït un error en invocar l'ordre (%s): %s."
-
-#~ msgid "Unknown mke2fs starting signature, cancelling."
-#~ msgstr "No es reconeix la signatura d'inici de mke2fs, s'està cancel·lant."
-
-#~ msgid ""
-#~ "The filesystem creation utility (%s) reported the following errors:\n"
-#~ "\n"
-#~ "%s (%d)"
-#~ msgstr ""
-#~ "La utilitat de creació de sistemes de fitxers (%s) ha tornat els següents "
-#~ "errors:\n"
-#~ "\n"
-#~ "%s (%d)"
-
-#~ msgid "Abnormal child process termination."
-#~ msgstr "El procés fill ha sortit anormalment."
-
-#~ msgid "Error while spawning the mbadblocks command: %s."
-#~ msgstr "S'ha produït un error en invocar l'ordre mbadblocks: %s."
-
-#~ msgid ""
-#~ "The bad blocks checking utility (mbadblocks) reported the following "
-#~ "errors:\n"
-#~ "%s."
-#~ msgstr ""
-#~ "La utilitat de comprovació de blocs amb errors (mbadblocks) ha tornat els "
-#~ "següents errors:\n"
-#~ "%s."
-
-#~ msgid "Abnormal mbadblocks child process termination."
-#~ msgstr "El procés fill de mbadblocks ha sortit anormalment."
-
-#~ msgid "Making filesystem on disk..."
-#~ msgstr "S'està creant el sistema de fitxers al disquet..."
-
-#~ msgid "Unable to create filesystem correctly."
-#~ msgstr "No s'ha pogut crear el sistema de fitxers correctament."
-
-#~ msgid "Making filesystem on disk... Done"
-#~ msgstr "S'està creant el sistema de fitxers al disquet... fet"
-
-#~ msgid "Checking for bad blocks... (this might take a while)"
-#~ msgstr "S'estan cercant blocs amb errors... (això pot trigar una mica)"
-
-#~ msgid "Error while checking the bad blocks."
-#~ msgstr "S'ha produït un error en comprovar els blocs amb errors."
-
-#~ msgid "    "
-#~ msgstr "    "
-
-#~ msgid ""
-#~ "<small><i><b>Note</b>: The mbadblocks utility isn't installed on this "
-#~ "system.  It must be installed in order to perform a thorough DOS (fat) "
-#~ "formatting.</i></small>"
-#~ msgstr ""
-#~ "<small><i><b>Nota</b>: La utilitat mbadblocks no està instal·lada al "
-#~ "sistema. Ha d'estar instal·lada per a poder fer un formatat DOS (fat) "
-#~ "exhaustiu.</i></small>"
-
-#~ msgid "DOS (FAT)"
-#~ msgstr "DOS (FAT)"
-
-#~ msgid "Double Density 3.5\" (720KB)"
-#~ msgstr "Doble densitat 3.5\" (720KB)"
-
-#~ msgid "Double Density 5.25\" (360KB)"
-#~ msgstr "Doble densitat 5.25\" (360KB)"
-
-#~ msgid "File system _type:"
-#~ msgstr "_Tipus de sistema de fitxers:"
-
-#~ msgid "Filesystem Settings"
-#~ msgstr "Paràmetres del sistema de fitxers:"
-
-#~ msgid "Floppy _density:"
-#~ msgstr "_Densitat del disquet:"
-
-#~ msgid "Floppy de_vice:"
-#~ msgstr "Unitat de dis_quet:"
-
-#~ msgid "Formatting Mode"
-#~ msgstr "Mode de formatat"
-
-#~ msgid "High Density 3.5\" (1.44MB)"
-#~ msgstr "Alta densitat 3.5\" (1.44MB)"
-
-#~ msgid "High Density 5.25\" (1.2MB)"
-#~ msgstr "Alta densitat 5.25\" (1.2MB)"
-
-#~ msgid "Linux Native (ext2)"
-#~ msgstr "Natiu de Linux (ext2)"
-
-#~ msgid "Physical Settings"
-#~ msgstr "Paràmetres físics"
-
-#~ msgid "Thorou_gh (adds a bad blocks check to the standard mode)"
-#~ msgstr ""
-#~ "E_xhaustiu (afegeix una comprovació de blocs amb errors al mode estàndard)"
-
-#~ msgid "Volume _name:"
-#~ msgstr "_Nom del volum:"
-
-#~ msgid "_Format"
-#~ msgstr "_Formata"
-
-#~ msgid "_Quick (only creates the filesystem)"
-#~ msgstr "_Ràpid (només crea el sistema de fitxers)"
-
-#~ msgid "_Standard (adds a low-level format to the quick mode)"
-#~ msgstr "_Estàndard (afegeix un format de baix nivell al mode ràpid)"
-
-#~ msgid "Cannot Format"
-#~ msgstr "No s'ha pogut formatar"
-
-#~ msgid ""
-#~ "Neither the mke2fs nor the mkdosfs/mformat applications are installed. "
-#~ "You can't format a floppy without one of them."
-#~ msgstr ""
-#~ "Cap de les aplicacions mke2fs o mkdosfs/mformat estan instal·lades. No "
-#~ "podeu formatar un disquet sense cap d'elles."
-
-#~ msgid "Unable to open the device %s, formatting cannot continue."
-#~ msgstr "No es pot obrir el dispositiu %s, el formatat no pot continuar."
-
-#~ msgid ""
-#~ "The device %s is disconnected.\n"
-#~ "Please attach device to continue."
-#~ msgstr ""
-#~ "El dispositiu %s està desconnectat.\n"
-#~ "Connecteu el dispositiu per a continuar."
-
-#~ msgid ""
-#~ "You do not have the proper permissions to write to %s, formatting will "
-#~ "not be possible.\n"
-#~ "Contact your system administrator about getting write permissions."
-#~ msgstr ""
-#~ "No teniu suficients permisos per a escriure a %s, no es podrà formatar.\n"
-#~ "Contacteu amb l'administrador del sistema per obtenir permisos "
-#~ "d'escriptura."
-
-#~ msgid "Cannot initialize device"
-#~ msgstr "No es pot inicialitzar el dispositiu"
-
-#~ msgid "Unable to open any device, formatting cannot continue."
-#~ msgstr "No es pot obrir cap dispositiu, el formatat no pot continuar."
-
-#~ msgid "/dev/floppy/0 or /dev/fd0"
-#~ msgstr "/dev/floppy/0 o /dev/fd0"
-
-#~ msgid "Could not display help for the floppy formatter."
-#~ msgstr "No es pot mostrar l'ajuda per al formatador de disquets."
-
-#~ msgid "Incorrect volume name"
-#~ msgstr "El nom del volum no és correcte"
-
-#~ msgid "The volume name can't contain any blank space."
-#~ msgstr "El nom del volum no pot contenir cap espai en blanc."
-
-#~ msgid "The device to format"
-#~ msgstr "El dispositiu a formatar"
-
-#~ msgid "DEVICE"
-#~ msgstr "DISPOSITIU"
-
-#~ msgid "- Floppy Formatter"
-#~ msgstr "- Formatador de disquet"
-
-#~ msgid ""
-#~ "The floppy has been formatted, but <b>%d bad block</b> (out of %d) has "
-#~ "been found and marked."
-#~ msgid_plural ""
-#~ "The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have "
-#~ "been found and marked."
-#~ msgstr[0] ""
-#~ "S'ha formatat el disquet, però s'ha trobat <b>%d bloc defectuós</b> (de %"
-#~ "d) que ha estat marcat."
-#~ msgstr[1] ""
-#~ "S'ha formatat el disquet, però s'han trobat <b>%d blocs defectuosos</b> "
-#~ "(de %d) que han estat marcats."
-
-#~ msgid "Floppy formatted successfully."
-#~ msgstr "S'ha formatat el disquet amb èxit."
-
-#~ msgid "Floppy formatting cancelled."
-#~ msgstr "S'ha cancel·lat el formatat del disquet."
-
-#~ msgid "Format Progress"
-#~ msgstr "Progrés del format"
-
-#~ msgid "Dictionary Server"
-#~ msgstr "Servidor de diccionari"
-
-#~ msgid "Grab a selected _area"
-#~ msgstr "Captura l'_àrea seleccionada"
-
-#~ msgid "O_pen Folder"
-#~ msgstr "O_bre carpeta"
-
-#~ msgid "Close"
-#~ msgstr "Tanca"
-
-#~ msgid "Dictionary and spelling tool"
-#~ msgstr "Diccionari i eina de correcció ortogràfica"
-
-#~ msgid "System Log"
-#~ msgstr "Registre del sistema"
-
-#~ msgid "Current"
-#~ msgstr "Actual"
-
-#~ msgid "One file or more could not be opened"
-#~ msgstr "No s'ha pogut obrir un o més fitxers"
-
-#~ msgid ""
-#~ "%s is not user readable. Either run the program as root or ask the "
-#~ "sysadmin to change the permissions on the file.\n"
-#~ msgstr ""
-#~ "Els usuaris no poden llegir %s. Podeu executar el programa com a root o "
-#~ "demanar a l'administrador del sistema que canviï els permisos del "
-#~ "fitxer.\n"
-
-#~ msgid "%s is too big."
-#~ msgstr "%s és massa gran."
-
-#~ msgid "%s could not be opened."
-#~ msgstr "No s'ha pogut obrir %s."
-
-#~ msgid "%s is not a log file."
-#~ msgstr "%s no és un fitxer de registre."
-
-#~ msgid "Not enough memory."
-#~ msgstr "No hi ha prou memòria."
-
-#~ msgid "%s cannot be opened."
-#~ msgstr "No s'ha pogut obrir %s."
-
-#~ msgid "_Clear"
-#~ msgstr "_Neteja"
-
-#~ msgid "_Filter..."
-#~ msgstr "_Filtre..."
-
-#~ msgid "Filter log"
-#~ msgstr "Filtra el registre"
-
-#~ msgid "Collapse _All"
-#~ msgstr "Redueix-ho tot"
-
-#~ msgid "Collapse all the rows"
-#~ msgstr "Redueix totes les files"
-
-#~ msgid "_Monitor"
-#~ msgstr "Fes un _seguiment"
-
-#~ msgid "Monitor Current Log"
-#~ msgstr "Fes un seguiment del registre actual"
-
-#~ msgid "Ca_lendar"
-#~ msgstr "Ca_lendari"
-
-#~ msgid "Show Calendar Log"
-#~ msgstr "Mostra el registre del calendari"
-
-#~ msgid "%s (monitored) - %s"
-#~ msgstr "%s (se li fa un seguiment) - %s"
-
-#~ msgid "Days"
-#~ msgstr "Dies"
-
-#~ msgid "Pointer towards a GSList of days for the current log."
-#~ msgstr "Punter a una llista GSList de dies del registre actual."
-
-#~ msgid "Show System Log Viewer options"
-#~ msgstr "Mostra les opcions del visualitzador de registres del sistema"
-
-#~ msgid "Unable to create user interface."
-#~ msgstr "No s'ha pogut crear la interfície d'usuari."
-
-#~ msgid "January"
-#~ msgstr "Gener"
-
-#~ msgid "February"
-#~ msgstr "Febrer"
-
-#~ msgid "March"
-#~ msgstr "Març"
-
-#~ msgid "April"
-#~ msgstr "Abril"
-
-#~ msgid "May"
-#~ msgstr "Maig"
-
-#~ msgid "June"
-#~ msgstr "Juny"
-
-#~ msgid "July"
-#~ msgstr "Juliol"
-
-#~ msgid "August"
-#~ msgstr "Agost"
-
-#~ msgid "September"
-#~ msgstr "Setembre"
-
-#~ msgid "October"
-#~ msgstr "Octubre"
-
-#~ msgid "November"
-#~ msgstr "Novembre"
-
-#~ msgid "December"
-#~ msgstr "Desembre"
-
-#~ msgid "Invalid date"
-#~ msgstr "La data no és vàlida"
-
-#~ msgid "%x"
-#~ msgstr "%x"
-
-#~ msgid "This file cannot be monitored."
-#~ msgstr "A aquest fitxer no se li pot fer un seguiment."
-
-#~ msgid "File monitoring is not supported on this file system.\n"
-#~ msgstr "Aquest sistema de fitxers no permet fer seguiments.\n"
-
-#~ msgid "Mate-VFS Error.\n"
-#~ msgstr "S'ha produït un error del MATE-VFS.\n"
-
-#~ msgid "Enter Password"
-#~ msgstr "Introduïu la contrasenya"
-
-#~ msgid "Refresh graph"
-#~ msgstr "Actualitza el gràfic"
-
-#~ msgid "Take a snapshot"
-#~ msgstr "Fes una captura"
-
-#~ msgid "Zoom 100%"
-#~ msgstr "Ampliació al 100%"
-
-#~ msgid "_Depth level:"
-#~ msgstr "Nivell de _profunditat:"
-
-#~ msgid "_Graphical Usage Map"
-#~ msgstr "_Mapa gràfic d'utilització"
-
-#~ msgid "_Total folders:"
-#~ msgstr "Directoris _totals:"
-
-#~ msgid "Invalid UTF-8 characters"
-#~ msgstr "Caràcters UTF-8 invàlids"
-
-#~ msgid "Unlimited"
-#~ msgstr "Il·limitat"
-
-#~ msgid "Cannot allocate memory for graphical window!"
-#~ msgstr "No s'ha pogut ubicar memòria per la finestra gràfica."
-
-#~ msgid "Graphical Usage Map"
-#~ msgstr "Mapa gràfic d'utilització"
-
-#~ msgid "\"%s\" is not a valid location"
-#~ msgstr "«%s» no és una ubicació vàlida"
-
-#~ msgid "Please check the spelling and try again."
-#~ msgstr "Comproveu l'ortografia i torneu-ho a provar."
-
-#~ msgid "%s on %s"
-#~ msgstr "%s a %s"
-
-#~ msgid "_Remove from Trash"
-#~ msgstr "_Suprimeix de la paperera"
-
-#~ msgid "The folder \"%s\" was not moved to the trash."
-#~ msgstr "No s'ha mogut la carpeta «%s» a la paperera."
-
-#~ msgid "Could not find a Trash folder on this system"
-#~ msgstr ""
-#~ "No s'ha pogut trobar la carpeta de la paperera en aquest sistema de "
-#~ "fitxers"
-
-#~ msgid "Delete the folder \"%s\" permanently?"
-#~ msgstr "Voleu suprimir permanentment la carpeta «%s»?"
-
-#~ msgid "Could not move the folder to the trash."
-#~ msgstr "No s'ha pogut moure la carpeta a la paperera."
-
-#~ msgid "_Delete Folder"
-#~ msgstr "_Suprimeix el directori"
-
-#~ msgid "Could not delete the folder \"%s\""
-#~ msgstr "No s'ha pogut suprimir la carpeta «%s»"
-
-#~ msgid "(%d:%02d:%d Remaining)"
-#~ msgstr "(Manquen %d:%02d:%d)"
-
-#~ msgid "(%d:%02d Remaining)"
-#~ msgstr "(Manquen %d:%02d)"
-
-#~ msgid "%ld of %ld"
-#~ msgstr "%ld de %ld"
-
-#~ msgid "Options for Screenshot"
-#~ msgstr "Opcions de la captura de pantalla"
-
-#~ msgid "Preparing to copy"
-#~ msgstr "S'està preparant per copiar"
-
-#~ msgid "Unknown MateVFSXferProgressStatus %d"
-#~ msgstr "MateVFSXferProgressStatus %d desconegut"
-
-#~ msgid "The GdictContext object bound to this entry"
-#~ msgstr "L'objecte GdictContext lligat a aquesta entrada"
-
-#~ msgid "The database to be used to generate the completion list"
-#~ msgstr ""
-#~ "La base de dades que vulgueu emprar per a generar la llista de compleció"
-
-#~ msgid "The matching strategy to be used to generate the completion list"
-#~ msgstr ""
-#~ "L'estratègia de coincidències que vulgueu emprar per generar la llista de "
-#~ "compleció"
-
-#~ msgid "%s (page %d)"
-#~ msgstr "%s (pàgina %d)"
-
-#~ msgid "Print Preview"
-#~ msgstr "Vista prèvia de la impressió"
-
-#~ msgid "Analyze disk usage"
-#~ msgstr "Analitzeu l'ús del disc"
-
-#~ msgid "<b>File Size</b>"
-#~ msgstr "<b>Mida del fitxer</b>"
-
-#~ msgid "<b>Modification Date</b>"
-#~ msgstr "<b>Data de modificació</b>"
-
-#~ msgid "<b>Search Options</b>"
-#~ msgstr "<b>Opcions de cerca</b>"
-
-#~ msgid "A_dvanced Options"
-#~ msgstr "Opcions _avançades"
-
-#~ msgid "A_ny"
-#~ msgstr "Ca_p"
-
-#~ msgid "An_y"
-#~ msgstr "_Qualsevol"
-
-#~ msgid "Directory Tree"
-#~ msgstr "Arbre del directori"
-
-#~ msgid "Exact _match"
-#~ msgstr "Coincidència e_xacta"
-
-#~ msgid "File Search"
-#~ msgstr "Cerca de fitxers"
-
-#~ msgid "Filesystem"
-#~ msgstr "Sistema de fitxers"
-
-#~ msgid "Last m_onth"
-#~ msgstr "Últim _mes"
-
-#~ msgid "Last wee_k"
-#~ msgstr "Última se_tmana"
-
-#~ msgid "Medi_um (< 1 MB)"
-#~ msgstr "Mi_tjà (< 1 MB)"
-
-#~ msgid "Scan Selected F_older..."
-#~ msgstr "Escaneja el direct_ori seleccionat..."
-
-#~ msgid "Se_arch in selected folder:"
-#~ msgstr "Cerc_a en el directori seleccionat:"
-
-#~ msgid "Search"
-#~ msgstr "Cerca"
-
-#~ msgid "Search for File"
-#~ msgstr "Cerca fitxers"
-
-#~ msgid "Search for a file"
-#~ msgstr "Cerca un fitxer"
-
-#~ msgid "Search the _whole filesystem"
-#~ msgstr "Cerca a _tot el sistema de fitxers"
-
-#~ msgid "Show allocated disk usage instead of apparent size"
-#~ msgstr "Mostra la utilització del disc ubicat enlloc de la mida aparent"
-
-#~ msgid "Sma_ll (< 100 kB)"
-#~ msgstr "_Petit (< 100 kB)"
-
-#~ msgid "Sort"
-#~ msgstr "Ordena"
-
-#~ msgid "Sort by name"
-#~ msgstr "Ordena per nom"
-
-#~ msgid "Sort by size"
-#~ msgstr "Ordena per mida"
-
-#~ msgid "Stop"
-#~ msgstr "Atura"
-
-#~ msgid "_Browse..."
-#~ msgstr "_Vés a..."
-
-#~ msgid "_Date"
-#~ msgstr "_Data"
-
-#~ msgid "_Enable auto-detect monitoring of home directory"
-#~ msgstr "Habilita l'_auto-detecció del seguiment del directori d'usuari"
-
-#~ msgid "_Extended search"
-#~ msgstr "_Cerca estesa"
-
-#~ msgid "_Name"
-#~ msgstr "_Nom"
-
-#~ msgid "_Search for file:"
-#~ msgstr "_Cerca un fitxer:"
-
-#~ msgid "_Size"
-#~ msgstr "_Mida"
-
-#~ msgid "_Sort By"
-#~ msgstr "_Ordena per"
-
-#~ msgid "_Type"
-#~ msgstr "_Tipus"
-
-#~ msgid "Unknown"
-#~ msgstr "Desconegut"
-
-#~ msgid "Full path:"
-#~ msgstr "Camí complet:"
-
-#~ msgid "Last Modification:"
-#~ msgstr "Última modificació:"
-
-#~ msgid "Owner:"
-#~ msgstr "Propietari:"
-
-#~ msgid "Allocated bytes:"
-#~ msgstr "Bytes ubicats:"
-
-#~ msgid "scanning..."
-#~ msgstr "s'està escanejant..."
-
-#~ msgid ""
-#~ "Cannot initialize MATE VFS monitoring\n"
-#~ "Some real-time auto-detect function will not be available!"
-#~ msgstr ""
-#~ "No s'ha pogut inicialitzar la monitorització del MATE VFS\n"
-#~ "Algunes funcions d'auto-detecció en temps real no estaran disponibles."
-
-#~ msgid "Save the screenshot"
-#~ msgstr "Desa la captura"
-
-#~ msgid "Graphical map for folder:"
-#~ msgstr "Mapa gràfic per al directori:"
-
-#~ msgid "C_onnect"
-#~ msgstr "C_onnecta"
-
-#~ msgid "Use the Edit->Find menu item or the search toolbar button."
-#~ msgstr ""
-#~ "Utilitzeu l'element del menú Edició->Cerca o el botó de cercar de la "
-#~ "barra d'eines."
-
-#~ msgid "Couldn't find pixmap file: %s"
-#~ msgstr "No s'ha pogut trobar el fitxer de mapa de bits: %s"
-
-#~ msgid "Move to Trash"
-#~ msgstr "Mou a la paperera"
-
-#~ msgid "Folder graphical map"
-#~ msgstr "Mapa gràfic del directori"
-
-#~ msgid "List all files in folder"
-#~ msgstr "Llista tots els fitxers del directori"
-
-#~ msgid "Please provide a file name to search for!"
-#~ msgstr "Proporcioneu un nom de fitxer per cercar."
-
-#~ msgid "file"
-#~ msgstr "fitxer"
-
-#~ msgid "files"
-#~ msgstr "fitxers"
-
-#~ msgid "for total:"
-#~ msgstr "del total:"
-
-#~ msgid "Moving <b>%s</b> to trash failed: %s."
-#~ msgstr "S'ha produït un error en moure <b>%s</b> a la paperera: %s."
-
-#~ msgid "Do you want to delete <b>%s</b> permanently?"
-#~ msgstr "Voleu suprimir <b>%s</b> permanentment?"
-
-#~ msgid "Deleting <b>%s</b> failed: %s."
-#~ msgstr "Ha fallat la supressió de <b>%s</b>: %s."
-
-#~ msgid "A graphical tool to analyse disk usage."
-#~ msgstr "Una eina gràfica per analitzar l'utilització del disc."
-
-#~ msgid "Data_base:"
-#~ msgstr "_Base de dades:"
-
-#~ msgid "_Advanced settings"
-#~ msgstr "Paràmetres _avançats"
-
-#~ msgid "_Strategy:"
-#~ msgstr "E_stratègia:"
-
-#~ msgid "There was an error displaying the help pages for this dialog:"
-#~ msgstr "S'ha produït un error en mostrar l'ajuda per a aquest diàleg:"
-
-#~ msgid "<b>Options</b>"
-#~ msgstr "<b>Opcions</b>"
-
-#~ msgid "<b>Preview</b>"
-#~ msgstr "<b>Visualització prèvia</b>"
-
-#~ msgid "French Dictionaries from Wikipedia"
-#~ msgstr "Diccionaris francesos de la Wikipedia"
-
-#~ msgid "The font to be used by the defbox"
-#~ msgstr "El tipus de lletra a utilitzar en la caixa de la definició"
-
-#~ msgid "Emphasys Color"
-#~ msgstr "Color de l'èmfasi"
-
-#~ msgid "Color of emphasised text"
-#~ msgstr "Color del text emfatitzat"
-
-#~ msgid "Link Color"
-#~ msgstr "Color de l'enllaç"
-
-#~ msgid "Color of hyperlinks"
-#~ msgstr "El color dels hiperenllaços"
-
-#~ msgid "Word Color"
-#~ msgstr "Color de la paraula"
-
-#~ msgid "Source Color"
-#~ msgstr "Color de la font"
-
-#~ msgid "Color of the dictionary source"
-#~ msgstr "Color del diccionari font"
-
-#~ msgid "Progress"
-#~ msgstr "Progrés"
-
-#~ msgid "Definition for '%s' (%d/%d)"
-#~ msgstr "Definició de «%s» (%d/%d)"
-
-#~ msgid "Attempting to look up '%s' but no GdictContext defined.  Aborting."
-#~ msgstr ""
-#~ "S'ha intentat cercar «%s» però no hi ha cap GdictContext definit. "
-#~ "S'avortarà."
-
-#~ msgid "Unable to open the application icon: %s"
-#~ msgstr "No s'ha pogut obrir la icona de l'aplicació: %s"
-
-#~ msgid "Preferences"
-#~ msgstr "Preferències"
-
-#~ msgid "Unable to load the applet icon"
-#~ msgstr "No s'ha pogut carregar la icona de la miniaplicació"
-
-#~ msgid "Unable to load the application icon"
-#~ msgstr "No s'ha pogut carregar la icona de l'aplicació"
-
-#~ msgid "Take a screenshot of your desktop"
-#~ msgstr "Fa una cap captura del vostre escriptori"
-
-#~ msgid "Find files, folders, and documents on your computer"
-#~ msgstr "Cerca fitxers, carpetes i documents al vostre ordinador"
-
-#~ msgid "_Log"
-#~ msgstr "_Registre"
-
-#~ msgid ""
-#~ "Unable to create the data directory '%s': there already is a file with "
-#~ "the same name.  You should move the file and re-run mate-dictionary."
-#~ msgstr ""
-#~ "No s'ha pogut crear el directori de dades «%s»: ja hi ha un fitxer amb "
-#~ "aquest mateix nom. Hauríeu de moure el fitxer i executar de nou el mate-"
-#~ "dictionary."
-
-#~ msgid "Unable to create the data directory '%s'"
-#~ msgstr "No s'ha pogut netejar el directori de dades «%s»"
-
-#~ msgid ""
-#~ "There is a file with the same name in the path.\n"
-#~ "You should move the file and re-run the\n"
-#~ "Dictionary applet"
-#~ msgstr ""
-#~ "Hi ha un fitxer amb el mateix nom.\n"
-#~ "Hauríeu de moure el fitxer i executar de nou\n"
-#~ "la miniaplicació Cerca al diccionari"
-
-#~ msgid "%d definitions found"
-#~ msgstr "S'han trobat %d definicions"
-
-#~ msgid ""
-#~ "Definitions for \"%s\":\n"
-#~ "\n"
-#~ msgstr ""
-#~ "Definició de «%s»;\n"
-#~ "\n"
-
-#~ msgid ""
-#~ "From %s:\n"
-#~ "%s\n"
-#~ msgstr ""
-#~ "De %s:\n"
-#~ "%s\n"
-
-#~ msgid "Unable to load the application icon: %s"
-#~ msgstr "No s'ha pogut carregar la icona de l'aplicació: %s"
-
-#~ msgid "Find _Prev"
-#~ msgstr "Cerca l'_anterior"
-
-#~ msgid "Find _Next"
-#~ msgstr "Cerca el _següent"
-
-#~ msgid "Active"
-#~ msgstr "Activa"
-
-#~ msgid "Active Source"
-#~ msgstr "Fonts actives"
-
-#~ msgid "The GdictSourceLoader used by the application"
-#~ msgstr "L'objecte GdictSourceLoader que utilitza l'aplicació"

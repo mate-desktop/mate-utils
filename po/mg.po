@@ -1,1105 +1,565 @@
-# Malagasy translation of MATE-UTILS.
-# Copyright (C) 2006 THE MATE-UTILS'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the MATE-UTILS package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Fano Rajaonarisoa <rajfanhar@yahoo.fr>, 2006.
 # Thierry Randrianiriana <randrianiriana@gmail.com>, 2006.
-# 
-# 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-utils 2.15.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-18 07:03+0200\n"
-"PO-Revision-Date: 2006-05-29 16:25+0300\n"
-"Last-Translator: Fano Rajaonarisoa <rajfanhar@yahoo.fr>\n"
-"Language-Team: Malagasy <i18n-malagasy-mate@gna.org>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-12 11:59+0100\n"
+"PO-Revision-Date: 2012-03-12 11:07+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n>1;"
+"Language: mg\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 
-#: ../baobab/data/baobab.desktop.in.in.h:1
-msgid "A graphical tool to analyse disk usage"
-msgstr "Fitaovana an-tsary hizahana ny fampiasana ny kapila"
+#: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:1
+#: ../baobab/data/baobab-main-window.ui.h:15
+msgid "Disk Usage Analyzer"
+msgstr ""
 
-#: ../baobab/data/baobab.desktop.in.in.h:2
-msgid "Baobab - Disk Usage Analyser"
-msgstr "Baobab - Mpizaha ny fampiasa ny kapila"
+#: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:2
+msgid "Check folder sizes and available disk space"
+msgstr ""
 
-#: ../baobab/data/baobab.glade.h:1
-msgid "<b>File Size</b>"
-msgstr "<b>Haben'ny rakitra</b>"
+#: ../baobab/data/baobab-dialog-scan-props.ui.h:1
+msgid "Disk Usage Analyzer Preferences"
+msgstr ""
 
-#: ../baobab/data/baobab.glade.h:2
-msgid "<b>Modification Date</b>"
-msgstr "<b>Daty nanaovana fanovana</b>"
+#: ../baobab/data/baobab-dialog-scan-props.ui.h:2
+msgid "Select _devices to include in filesystem scan:"
+msgstr ""
 
-#: ../baobab/data/baobab.glade.h:3
-msgid "<b>Search Options</b>"
-msgstr "<b>Safidin'ny karoka</b>"
+#: ../baobab/data/baobab-dialog-scan-props.ui.h:3
+msgid "_Monitor changes to your home folder"
+msgstr ""
 
-#: ../baobab/data/baobab.glade.h:4
-msgid "A_dvanced Options"
-msgstr "Safidy _avo lenta"
+#: ../baobab/data/baobab-main-window.ui.h:1
+msgid "_Analyzer"
+msgstr ""
 
-#: ../baobab/data/baobab.glade.h:5
-msgid "A_ny"
-msgstr "Izay _misy"
+#: ../baobab/data/baobab-main-window.ui.h:2
+msgid "Scan _Home Folder"
+msgstr ""
 
-#: ../baobab/data/baobab.glade.h:6
-msgid "Allocated _space"
-msgstr "Anjara _toerana "
-
-#: ../baobab/data/baobab.glade.h:7
-msgid "An_y"
-msgstr "Izay _misy"
-
-#: ../baobab/data/baobab.glade.h:8
-msgid "Directory Tree"
-msgstr "Hazon'ny laha-tahiry"
-
-#: ../baobab/data/baobab.glade.h:9
-msgid "Disk Usage Analyser"
-msgstr "Mpizaha ny fampiasana ny kapila"
-
-#: ../baobab/data/baobab.glade.h:10
-msgid "Disk Usage Analyser Preferences"
-msgstr "Safidy manokan'ny mpizaha ny fampiasana ny kapila"
-
-#: ../baobab/data/baobab.glade.h:11
-msgid "Exact _match"
-msgstr "_Fifanandrifiana marina"
-
-#: ../baobab/data/baobab.glade.h:12
-msgid "File Search"
-msgstr "Fikarohana rakitra"
-
-#: ../baobab/data/baobab.glade.h:13
-msgid "Filesystem"
-msgstr "rafi-drakitra"
-
-#: ../baobab/data/baobab.glade.h:14 ../gsearchtool/gsearchtool.c:2498
-msgid "Folder"
-msgstr "Laha-tahiry"
-
-#: ../baobab/data/baobab.glade.h:15
-msgid "Last m_onth"
-msgstr "Tamin'ny _volana lasa"
-
-#: ../baobab/data/baobab.glade.h:16
-msgid "Last wee_k"
-msgstr "Tamin'ny _herinandro lasa"
-
-#: ../baobab/data/baobab.glade.h:17
-msgid "Medi_um (< 1 MB)"
-msgstr "Ant_onony (< 1 Mo)"
-
-#: ../baobab/data/baobab.glade.h:18
-msgid "Scan Selected F_older..."
-msgstr "Hizaha ilay _laha-tahiry voafaritra..."
-
-#: ../baobab/data/baobab.glade.h:19
+#: ../baobab/data/baobab-main-window.ui.h:3
 msgid "Scan _Filesystem"
 msgstr "Hizaha _rafi-drakitra"
 
-#: ../baobab/data/baobab.glade.h:20
-msgid "Scan _Remote Folder..."
-msgstr "Hizaha laha-tahiry _lavi-toerana..."
-
-#: ../baobab/data/baobab.glade.h:21
-msgid "Scan a remote folder"
-msgstr "Mizaha laha-tahiry lavi-toerana iray"
-
-#: ../baobab/data/baobab.glade.h:22
-msgid "Scan a selected folder"
-msgstr "Mizaha laha-tahiry voafaritra iray"
-
-#: ../baobab/data/baobab.glade.h:23
-msgid "Scan the whole filesystem"
-msgstr "Mizaha ny rafi-drakitra iray manontolo"
-
-#: ../baobab/data/baobab.glade.h:24
-msgid "Se_arch in selected folder:"
-msgstr "_Karohy anatin'ny laha-tahiry voafaritra:"
-
-#: ../baobab/data/baobab.glade.h:25
-msgid "Search"
-msgstr "Karohy"
-
-#: ../baobab/data/baobab.glade.h:26
-msgid "Search for File"
-msgstr "Hikaroka rakitra"
-
-#: ../baobab/data/baobab.glade.h:27
-msgid "Search for a file"
-msgstr "Hikaroka rakitra iray"
-
-#: ../baobab/data/baobab.glade.h:28
-msgid "Search the _whole filesystem"
-msgstr "Karohy anatin'ny rafi-drakitra iray _manontolo"
-
-#: ../baobab/data/baobab.glade.h:29
-msgid "Select _devices to be included during system scan:"
+#: ../baobab/data/baobab-main-window.ui.h:4
+msgid "Scan F_older..."
 msgstr ""
-"Safidio ireo _periferika tokony zahavana mandritra ny fizahavana ny rafitra:"
 
-#: ../baobab/data/baobab.glade.h:30
-msgid "Show allocated disk usage instead of apparent size"
+#: ../baobab/data/baobab-main-window.ui.h:5
+msgid "S_can Remote Folder..."
 msgstr ""
-"Ny fampiasana ny kapila voatokana no asehoy fa tsy ny endriky ny habeny"
 
-#: ../baobab/data/baobab.glade.h:31
-msgid "Sma_ll (< 100 kB)"
-msgstr "Ke_ly (< 100 ko)"
-
-#: ../baobab/data/baobab.glade.h:32
-msgid "Sort"
-msgstr "Avaho"
-
-#: ../baobab/data/baobab.glade.h:33
-msgid "Sort by name"
-msgstr "Avaho araka ny anarana"
-
-#: ../baobab/data/baobab.glade.h:34
-msgid "Sort by size"
-msgstr "Avaho araka ny habe"
-
-#: ../baobab/data/baobab.glade.h:35
-msgid "Stop"
-msgstr "Ajanony"
-
-#: ../baobab/data/baobab.glade.h:36
-msgid "Stop scanning"
-msgstr "Ajanony ny fizahavana"
-
-#: ../baobab/data/baobab.glade.h:37
-msgid "Take a snapshot"
-msgstr "Haka sary"
-
-#: ../baobab/data/baobab.glade.h:39
-#, no-c-format
-msgid "Zoom 100%"
-msgstr "zòma 100%"
-
-#: ../baobab/data/baobab.glade.h:40
-msgid "Zoom in"
-msgstr "Zòma manalehibe"
-
-#: ../baobab/data/baobab.glade.h:41
-msgid "Zoom out"
-msgstr "Zòma mampihena"
-
-#: ../baobab/data/baobab.glade.h:42
-msgid "_Analyser"
-msgstr "_Mpizaha"
-
-#: ../baobab/data/baobab.glade.h:43
-msgid "_Browse..."
-msgstr "_Zahavo..."
-
-#. Help menu
-#: ../baobab/data/baobab.glade.h:44 ../mate-dictionary/src/gdict-window.c:841
-#: ../logview/logview.c:114
-msgid "_Contents"
-msgstr "_Mpiaty"
-
-#: ../baobab/data/baobab.glade.h:45
-msgid "_Date"
-msgstr "_Daty"
-
-#: ../baobab/data/baobab.glade.h:46
-msgid "_Depth level:"
-msgstr "_Halalina:"
-
-#: ../baobab/data/baobab.glade.h:47 ../mate-dictionary/src/gdict-window.c:801
-#: ../logview/logview.c:86
+#: ../baobab/data/baobab-main-window.ui.h:6
+#: ../mate-dictionary/src/gdict-window.c:1176 ../logview/logview-window.c:808
 msgid "_Edit"
 msgstr "_Ovay"
 
-#: ../baobab/data/baobab.glade.h:48
-msgid "_Enable auto-detect monitoring of home directory"
+#: ../baobab/data/baobab-main-window.ui.h:7
+msgid "_Expand All"
 msgstr ""
-"_Alefaso ny fitantanana mizaha avy hatrany ny laha-tahirin'ny fandraisana"
 
-#: ../baobab/data/baobab.glade.h:49
-msgid "_Extended search"
-msgstr "_Fikarohana mivelatra"
+#: ../baobab/data/baobab-main-window.ui.h:8
+msgid "_Collapse All"
+msgstr ""
 
-#: ../baobab/data/baobab.glade.h:50
-msgid "_Find..."
-msgstr "_Tadiavo..."
-
-#: ../baobab/data/baobab.glade.h:51
-msgid "_Graphical Usage Map"
-msgstr "_Map'ny fampiasana an-tsary"
-
-#: ../baobab/data/baobab.glade.h:52
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:3
-#: ../mate-dictionary/src/gdict-window.c:803 ../logview/logview.c:88
-msgid "_Help"
-msgstr "_Toro_làlana"
-
-#: ../baobab/data/baobab.glade.h:53
-msgid "_Name"
-msgstr "_Anarana"
-
-#: ../baobab/data/baobab.glade.h:54
-msgid "_Search for file:"
-msgstr "_Misafidiana ny rakitra:"
-
-#: ../baobab/data/baobab.glade.h:55
-msgid "_Size"
-msgstr "_Habe"
-
-#: ../baobab/data/baobab.glade.h:56
-msgid "_Sort By"
-msgstr "_Avaho araka ny"
-
-#: ../baobab/data/baobab.glade.h:57 ../logview/logview.c:122
-msgid "_Statusbar"
-msgstr "Anjan'ny fivoarana"
-
-#: ../baobab/data/baobab.glade.h:58
-msgid "_Toolbar"
-msgstr "_Anjan'ny fitaovana"
-
-#: ../baobab/data/baobab.glade.h:59
-msgid "_Total folders:"
-msgstr "_Totalin'ireo laha-tahiry:"
-
-#: ../baobab/data/baobab.glade.h:60
-msgid "_Type"
-msgstr "_Karazana"
-
-#: ../baobab/data/baobab.glade.h:61 ../logview/logview.c:87
+#: ../baobab/data/baobab-main-window.ui.h:9
+#: ../mate-dictionary/src/gdict-window.c:1177 ../logview/logview-window.c:809
 msgid "_View"
 msgstr "_Jerena"
 
-#: ../baobab/data/baobab.schemas.in.h:1
-msgid "A list of partitions to be excluded from scanning."
-msgstr "Lisitr'ireo tsy tokony ampidirina anatin'ny fizahavana."
+#: ../baobab/data/baobab-main-window.ui.h:10
+msgid "_Toolbar"
+msgstr "_Anjan'ny fitaovana"
 
-#: ../baobab/data/baobab.schemas.in.h:2
-msgid "Enable monitoring of home directory"
-msgstr "Alefaso ny fitantanana ny laha-tahirin'ny fandraisana"
-
-#: ../baobab/data/baobab.schemas.in.h:3
-msgid "Exluded partitions"
-msgstr "Ireo fizarana tsy tafiditra"
-
-#: ../baobab/data/baobab.schemas.in.h:4
-msgid "Status Bar is Visible"
-msgstr "Miseho ny anjan'ny fivoarana"
-
-#: ../baobab/data/baobab.schemas.in.h:5
-msgid "Toolbar is Visible"
-msgstr "Miseho ny anjan'ny fitaovana"
-
-#: ../baobab/data/baobab.schemas.in.h:6
-msgid "Whether any change to the home directory should be monitored."
+#: ../baobab/data/baobab-main-window.ui.h:11
+msgid "St_atusbar"
 msgstr ""
-"Mamaritra hoe tokony tantanana izay fanovana atao amin'ny laha-tahirin'ny "
-"fandraisana na tsia. "
 
-#: ../baobab/data/baobab.schemas.in.h:7
-msgid "Whether the status bar at the bottom of main window should be visible."
+#: ../baobab/data/baobab-main-window.ui.h:12
+msgid "All_ocated Space"
 msgstr ""
-"Mamaritra hoe tokony hiseho eo ambanin'ny fikandrana voalohany indrindra ny "
-"anjan'ny fivoarana na tsia."
 
-#: ../baobab/data/baobab.schemas.in.h:8
-msgid "Whether the toolbar should be visible in main window."
+#: ../baobab/data/baobab-main-window.ui.h:13
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:6
+#: ../mate-dictionary/src/gdict-window.c:1179 ../logview/logview-window.c:811
+msgid "_Help"
+msgstr "_Toro_làlana"
+
+#. Help menu
+#: ../baobab/data/baobab-main-window.ui.h:14
+#: ../mate-dictionary/src/gdict-window.c:1229 ../logview/logview-window.c:837
+msgid "_Contents"
+msgstr "_Mpiaty"
+
+#: ../baobab/data/baobab-main-window.ui.h:16
+msgid "Scan home folder"
 msgstr ""
-"Mamaritra hoe tokony hiseho eo amin'ny fikandrana voalohany indrindra ny "
-"anjan'ny fitaovana na tsia."
 
-#. set statusbar, percentage and allocated/normal size
-#: ../baobab/src/baobab.c:168 ../baobab/src/baobab-utils.c:220
-#: ../baobab/src/callbacks.c:441
-msgid "Calculating percentage bars..."
-msgstr "Mikajy ny anjan'ny isan-jato..."
-
-#: ../baobab/src/baobab.c:174 ../baobab/src/baobab.c:222
-#: ../baobab/src/baobab.c:875 ../baobab/src/baobab-utils.c:228
-#: ../baobab/src/callbacks.c:445
-msgid "Ready"
-msgstr "Vonona"
-
-#: ../baobab/src/baobab.c:253
-msgid "Unknown"
-msgstr "Tsy fantatra"
-
-#: ../baobab/src/baobab.c:277
-msgid "Full path:"
-msgstr "Sori-dàlana feno:"
-
-#: ../baobab/src/baobab.c:278
-msgid "Last Modification:"
-msgstr "Fanovana natao farany:"
-
-#: ../baobab/src/baobab.c:279
-msgid "Owner:"
-msgstr "Tompony:"
-
-#: ../baobab/src/baobab.c:280
-msgid "Allocated bytes:"
-msgstr "Ny octet voatokana:"
-
-#: ../baobab/src/baobab.c:451
-msgid "scanning..."
-msgstr "mizaha..."
-
-#: ../baobab/src/baobab.c:481
-msgid "<i>Total filesystem usage:</i>"
-msgstr "<i>Fampiasana ny rafi-drakitra iray manontolo:</i>"
-
-#: ../baobab/src/baobab.c:534
-msgid "contains hardlinks for:"
-msgstr "ahitana hardlinks ho an'ny:"
-
-#: ../baobab/src/baobab.c:543
-#, c-format
-msgid "% 5d object"
-msgid_plural "% 5d objects"
-msgstr[0] "Zavatra % 5d"
-msgstr[1] "Zavatra % 5d"
-
-#: ../baobab/src/baobab.c:605
-msgid "Invalid UTF-8 characters"
-msgstr "Marika UTF-8 tsy ekena"
-
-#: ../baobab/src/baobab.c:782
-msgid ""
-"Cannot initialize MATE VFS monitoring\n"
-"Some real-time auto-detect function will not be available!"
+#: ../baobab/data/baobab-main-window.ui.h:17
+msgid "Scan Home"
 msgstr ""
-"Tsy afaka manomboka ny mpandrindra VFS an'ny MATE\n"
-"Tsy ho afaka ampiasaina ny fahasahaza fizahavana avy hatrany sasany!"
 
-#: ../baobab/src/baobab-graphwin.c:156
-msgid "Cannot create pixbuf image!"
-msgstr "Tsy afaka mamorona dindo pixbuf!"
-
-#: ../baobab/src/baobab-graphwin.c:162
-msgid "Save the screenshot"
-msgstr "Raiketo ilay sarin'ny efijery"
-
-#: ../baobab/src/baobab-graphwin.c:186
-msgid "Image type:"
-msgstr "Karazan'ilay sary:"
-
-#: ../baobab/src/baobab-graphwin.c:221 ../baobab/src/baobab-graphwin.c:314
-msgid "Unlimited"
-msgstr "Tsy voafetra"
-
-#: ../baobab/src/baobab-graphwin.c:276
-msgid "Cannot allocate memory for graphical window!"
-msgstr "Tsy afaka manokana ampahan'arika ho an'ny fikandrana an-tsary!"
-
-#. Main treemap window
-#: ../baobab/src/baobab-graphwin.c:304
-msgid "Graphical map for folder:"
-msgstr "Map an-tsary ho an'ny laha-tahiry:"
-
-#: ../baobab/src/baobab-prefs.c:146
-msgid "Scan"
-msgstr "Zahavo"
-
-#: ../baobab/src/baobab-prefs.c:153
-msgid "Device"
-msgstr "Periferika"
-
-#: ../baobab/src/baobab-prefs.c:161
-msgid "Mount point"
-msgstr "Toerana fampiakarana"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:125
-#, c-format
-msgid "\"%s\" is not a valid location."
-msgstr "Tsy mety ny toerana \"%s\"."
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:134
-msgid "Please check the spelling and try again."
-msgstr "Jereo ny tsipelina dia andramo indray."
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:160
-msgid "You must enter a name for the server."
-msgstr "Tsy maintsy manome anarana ilay mpizara ianao."
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:163
-msgid "Please enter a name and try again."
-msgstr "Manorata anarana dia andramo indray."
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:301
-#, c-format
-msgid "%s on %s"
-msgstr "%s amin'ny %s"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:400
-msgid "_Location (URI):"
-msgstr "_Toerana (URI):"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:447
-msgid "_Server:"
-msgstr "_Mpizara:"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:466
-msgid "Optional information:"
-msgstr "Laza safidy:"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:478
-msgid "_Share:"
-msgstr "_Fifampizarana:"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:499
-#: ../mate-dictionary/data/mate-dictionary-preferences.glade.h:10
-msgid "_Port:"
-msgstr "_Irika:"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:519
-msgid "_Folder:"
-msgstr "_Laha-tahiry:"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:539
-msgid "_User Name:"
-msgstr "Anaran'ny _mpampiasa:"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:560
-msgid "_Domain Name:"
-msgstr "Anaran-do_mena:"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:620
-msgid "Connect to a Remote Folder"
-msgstr "Hifandray amin'ny laha-tahiry lavi-toerana"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:637
-msgid "Service _type:"
-msgstr "_Karazan-tsampan'asa:"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:646
-msgid "SSH"
-msgstr "SSH"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:648
-msgid "Public FTP"
-msgstr "FTP ho an'ny besinimaro"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:650
-msgid "FTP (with login)"
-msgstr "FTP (mila teny fanalahidy)"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:652
-msgid "Windows share"
-msgstr "Fifampizarana amin'ny Windows"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:654
-msgid "WebDAV (HTTP)"
-msgstr "WebDAV (HTTP)"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:656
-msgid "Secure WebDAV (HTTPS)"
-msgstr "WebDAV (HTTPS) azo antoka"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:658
-msgid "Custom Location"
-msgstr "Toerana safidy"
-
-#: ../baobab/src/baobab-remote-connect-dialog.c:714
-msgid "C_onnect"
-msgstr "Hif_andray"
-
-#: ../baobab/src/baobab-treeview.c:83
-msgid "<i>Use the Edit->Find menu item or the search toolbar button.</i>"
+#: ../baobab/data/baobab-main-window.ui.h:18
+msgid "Scan filesystem"
 msgstr ""
-"<i>Ampiasao ny tolotra Ovay->Tadiavo na ny tsindrin'ny anjan'ny karoka.</i>"
 
-#: ../baobab/src/baobab-utils.c:101
-msgid "Select a Folder"
-msgstr "Misafidiana laha-tahiry iray"
+#: ../baobab/data/baobab-main-window.ui.h:19
+msgid "Scan Filesystem"
+msgstr ""
 
-#. add extra widget
-#: ../baobab/src/baobab-utils.c:113
-msgid "Show hidden folders"
-msgstr "Asehoy ireo laha-tahiry miafina"
+#: ../baobab/data/baobab-main-window.ui.h:20
+msgid "Scan a folder"
+msgstr ""
 
-#: ../baobab/src/baobab-utils.c:193
-msgid "Scanning..."
-msgstr "Mizaha..."
-
-#: ../baobab/src/baobab-utils.c:349 ../baobab/src/baobab-utils.c:353
-#, c-format
-msgid "%s is not a valid folder"
-msgstr "Tsy mety ny laha-tahiry %s"
-
-#: ../baobab/src/baobab-utils.c:379 ../baobab/src/baobab-utils.c:437
-msgid "Remove from Trash"
-msgstr "Esory tao anaty daba"
-
-#: ../baobab/src/baobab-utils.c:382 ../baobab/src/baobab-utils.c:440
-msgid "Move to Trash"
-msgstr "Alefaso anaty daba"
-
-#: ../baobab/src/baobab-utils.c:385
-msgid "Folder graphical map"
-msgstr "Map an-tsarin'ny laha-tahiry"
-
-#: ../baobab/src/baobab-utils.c:389
-msgid "List all files in folder"
-msgstr "Alaharo ireo rakitra rehetra anatin'ny laha-tahiry"
-
-#: ../baobab/src/baobab-utils.c:443
+#: ../baobab/data/baobab-main-window.ui.h:21
 msgid "Scan Folder"
 msgstr "Zahavo ilay laha-tahiry"
 
-#: ../baobab/src/baobab-utils.c:515
-msgid "Please provide a file name to search for!"
-msgstr "Manomeza anaran-drakitra ho karohina!"
+#: ../baobab/data/baobab-main-window.ui.h:22
+msgid "Scan a remote folder"
+msgstr "Mizaha laha-tahiry lavi-toerana iray"
 
-#: ../baobab/src/baobab-utils.c:695
+#: ../baobab/data/baobab-main-window.ui.h:23
+msgid "Scan Remote Folder"
+msgstr ""
+
+#: ../baobab/data/baobab-main-window.ui.h:24
+msgid "Stop scanning"
+msgstr "Ajanony ny fizahavana"
+
+#: ../baobab/data/baobab-main-window.ui.h:25
+msgid "Refresh"
+msgstr ""
+
+#: ../baobab/data/baobab.schemas.in.h:1
+msgid "Toolbar is Visible"
+msgstr "Miseho ny anjan'ny fitaovana"
+
+#: ../baobab/data/baobab.schemas.in.h:2
+msgid "Whether the toolbar should be visible in main window."
+msgstr "Mamaritra hoe tokony hiseho eo amin'ny fikandrana voalohany indrindra ny anjan'ny fitaovana na tsia."
+
+#: ../baobab/data/baobab.schemas.in.h:3
+msgid "Status Bar is Visible"
+msgstr "Miseho ny anjan'ny fivoarana"
+
+#: ../baobab/data/baobab.schemas.in.h:4
+msgid "Whether the status bar at the bottom of main window should be visible."
+msgstr "Mamaritra hoe tokony hiseho eo ambanin'ny fikandrana voalohany indrindra ny anjan'ny fivoarana na tsia."
+
+#: ../baobab/data/baobab.schemas.in.h:5
+msgid "Enable monitoring of home directory"
+msgstr "Alefaso ny fitantanana ny laha-tahirin'ny fandraisana"
+
+#: ../baobab/data/baobab.schemas.in.h:6
+msgid "Whether any change to the home directory should be monitored."
+msgstr "Mamaritra hoe tokony tantanana izay fanovana atao amin'ny laha-tahirin'ny fandraisana na tsia. "
+
+#: ../baobab/data/baobab.schemas.in.h:7
+msgid "Excluded partitions URIs"
+msgstr ""
+
+#: ../baobab/data/baobab.schemas.in.h:8
+msgid "A list of URIs for partitions to be excluded from scanning."
+msgstr ""
+
+#: ../baobab/data/baobab.schemas.in.h:9
+msgid "Subfolders tooltips visible"
+msgstr ""
+
+#: ../baobab/data/baobab.schemas.in.h:10
+msgid "Whether the subfolder tooltips of the selected folder are drawn."
+msgstr ""
+
+#: ../baobab/src/baobab.c:134 ../baobab/src/baobab.c:353
+msgid "Scanning..."
+msgstr "Mizaha..."
+
+#: ../baobab/src/baobab.c:180
 msgid "Total filesystem capacity:"
 msgstr "tontalin'ny haben'ny rafi-drakitra:"
 
-#: ../baobab/src/baobab-utils.c:695
+#: ../baobab/src/baobab.c:181
 msgid "used:"
 msgstr "ampiasaina:"
 
-#: ../baobab/src/baobab-utils.c:696
+#: ../baobab/src/baobab.c:182
 msgid "available:"
 msgstr "misy:"
 
-#: ../baobab/src/baobab-utils.c:734
-msgid "Found:"
-msgstr "hita:"
+#. set statusbar, percentage and allocated/normal size
+#: ../baobab/src/baobab.c:238 ../baobab/src/baobab.c:295
+#: ../baobab/src/callbacks.c:260
+msgid "Calculating percentage bars..."
+msgstr "Mikajy ny anjan'ny isan-jato..."
 
-#: ../baobab/src/baobab-utils.c:735
-msgid "file"
-msgstr "rakitra"
+#: ../baobab/src/baobab.c:249 ../baobab/src/baobab.c:1289
+#: ../baobab/src/callbacks.c:264
+msgid "Ready"
+msgstr "Vonona"
 
-#: ../baobab/src/baobab-utils.c:735
-msgid "files"
-msgstr "rakitra"
-
-#: ../baobab/src/baobab-utils.c:736
-msgid "for total:"
-msgstr "tontaliny:"
-
-#: ../baobab/src/baobab-utils.c:766 ../gsearchtool/gsearchtool-callbacks.c:485
-msgid "There is no installed viewer capable of displaying the document."
+#: ../baobab/src/baobab.c:386
+msgid "Total filesystem capacity"
 msgstr ""
-"Tsy misy rindran'asa voapetraka afaka maneho io tahirin-kevitra io ao. "
 
-#: ../baobab/src/baobab-utils.c:828
-msgid "Cannot find the Trash on this system!"
-msgstr "Tsy ahitana daba amin'ity rafitra ity!"
+#: ../baobab/src/baobab.c:408
+msgid "Total filesystem usage"
+msgstr ""
 
-#: ../baobab/src/baobab-utils.c:835 ../baobab/src/callbacks.c:276
-#: ../gsearchtool/gsearchtool-callbacks.c:470
-#: ../gsearchtool/gsearchtool-callbacks.c:811
-msgid "The document does not exist."
-msgstr "Tsy misy ilay tahirin-kevitra."
+#: ../baobab/src/baobab.c:449
+msgid "contains hardlinks for:"
+msgstr "ahitana hardlinks ho an'ny:"
 
-#: ../baobab/src/baobab-utils.c:847
+#: ../baobab/src/baobab.c:458
 #, c-format
-msgid "Moving <b>%s</b> to trash failed: %s."
-msgstr "Tsy nahomby ny fandefasana ny <b>%s</b> any amin'ny daba: %s."
+msgid "%5d item"
+msgid_plural "%5d items"
+msgstr[0] ""
+msgstr[1] ""
 
-#: ../baobab/src/baobab-utils.c:861
+#: ../baobab/src/baobab.c:585
+msgid "Could not initialize monitoring"
+msgstr ""
+
+#: ../baobab/src/baobab.c:586
+msgid "Changes to your home folder will not be monitored."
+msgstr ""
+
+#: ../baobab/src/baobab.c:965
+msgid "Move to parent folder"
+msgstr ""
+
+#: ../baobab/src/baobab.c:969
+msgid "Zoom in"
+msgstr "Zòma manalehibe"
+
+#: ../baobab/src/baobab.c:973
+msgid "Zoom out"
+msgstr "Zòma mampihena"
+
+#: ../baobab/src/baobab.c:977
+msgid "Save screenshot"
+msgstr ""
+
+#: ../baobab/src/baobab.c:1114
+msgid "View as Rings Chart"
+msgstr ""
+
+#: ../baobab/src/baobab.c:1116
+msgid "View as Treemap Chart"
+msgstr ""
+
+#: ../baobab/src/baobab.c:1214
+msgid "Show version"
+msgstr ""
+
+#: ../baobab/src/baobab.c:1215
+msgid "[DIRECTORY]"
+msgstr ""
+
+#: ../baobab/src/baobab.c:1245
+msgid "Too many arguments. Only one directory can be specified."
+msgstr ""
+
+#: ../baobab/src/baobab.c:1262
+msgid "Could not detect any mount point."
+msgstr ""
+
+#: ../baobab/src/baobab.c:1264
+msgid "Without mount points disk usage cannot be analyzed."
+msgstr ""
+
+#: ../baobab/src/baobab-chart.c:206
+msgid "Maximum depth"
+msgstr ""
+
+#: ../baobab/src/baobab-chart.c:207
+msgid "The maximum depth drawn in the chart from the root"
+msgstr ""
+
+#: ../baobab/src/baobab-chart.c:216
+msgid "Chart model"
+msgstr ""
+
+#: ../baobab/src/baobab-chart.c:217
+msgid "Set the model of the chart"
+msgstr ""
+
+#: ../baobab/src/baobab-chart.c:224
+msgid "Chart root node"
+msgstr ""
+
+#: ../baobab/src/baobab-chart.c:225
+msgid "Set the root node from the model"
+msgstr ""
+
+#: ../baobab/src/baobab-chart.c:1710
+msgid "Cannot create pixbuf image!"
+msgstr "Tsy afaka mamorona dindo pixbuf!"
+
+#. Popup the File chooser dialog
+#: ../baobab/src/baobab-chart.c:1720
+msgid "Save Snapshot"
+msgstr ""
+
+#: ../baobab/src/baobab-chart.c:1749
+msgid "_Image type:"
+msgstr ""
+
+#: ../baobab/src/baobab-prefs.c:184
+msgid "Scan"
+msgstr "Zahavo"
+
+#: ../baobab/src/baobab-prefs.c:191
+msgid "Device"
+msgstr "Periferika"
+
+#: ../baobab/src/baobab-prefs.c:199
+msgid "Mount Point"
+msgstr ""
+
+#: ../baobab/src/baobab-prefs.c:207
+msgid "Filesystem Type"
+msgstr ""
+
+#: ../baobab/src/baobab-prefs.c:215
+msgid "Total Size"
+msgstr ""
+
+#: ../baobab/src/baobab-prefs.c:224
+msgid "Available"
+msgstr ""
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:77
 #, c-format
-msgid "Do you want to delete <b>%s</b> permanently?"
-msgstr "Tianao fafàna tanteraka ve ny <b>%s</b>?"
+msgid "Cannot scan location \"%s\""
+msgstr ""
 
-#: ../baobab/src/baobab-utils.c:873
-#, c-format
-msgid "Deleting <b>%s</b> failed: %s."
-msgstr "Tsy nahomby ny famafana ny <b>%s</b>: %s."
+#: ../baobab/src/baobab-remote-connect-dialog.c:175
+msgid "Custom Location"
+msgstr "Toerana safidy"
 
-#: ../baobab/src/baobab-utils.c:902
+#: ../baobab/src/baobab-remote-connect-dialog.c:177
+msgid "SSH"
+msgstr "SSH"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:180
+msgid "Public FTP"
+msgstr "FTP ho an'ny besinimaro"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:182
+msgid "FTP (with login)"
+msgstr "FTP (mila teny fanalahidy)"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:185
+msgid "Windows share"
+msgstr "Fifampizarana amin'ny Windows"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:187
+msgid "WebDAV (HTTP)"
+msgstr "WebDAV (HTTP)"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:189
+msgid "Secure WebDAV (HTTPS)"
+msgstr "WebDAV (HTTPS) azo antoka"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:249
+msgid "Cannot Connect to Server. You must enter a name for the server."
+msgstr ""
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:252
+msgid "Please enter a name and try again."
+msgstr "Manorata anarana dia andramo indray."
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:441
+msgid "_Location (URI):"
+msgstr "_Toerana (URI):"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:463
+msgid "_Server:"
+msgstr "_Mpizara:"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:482
+msgid "Optional information:"
+msgstr "Laza safidy:"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:494
+msgid "_Share:"
+msgstr "_Fifampizarana:"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:515
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:4
+msgid "_Port:"
+msgstr "_Irika:"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:535
+msgid "_Folder:"
+msgstr "_Laha-tahiry:"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:555
+msgid "_User Name:"
+msgstr "Anaran'ny _mpampiasa:"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:576
+msgid "_Domain Name:"
+msgstr "Anaran-do_mena:"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:643
+msgid "Connect to Server"
+msgstr ""
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:660
+msgid "Service _type:"
+msgstr "_Karazan-tsampan'asa:"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:779
+msgid "_Scan"
+msgstr ""
+
+#: ../baobab/src/baobab-treeview.c:82
+msgid "Rescan your home folder?"
+msgstr ""
+
+#: ../baobab/src/baobab-treeview.c:83
 msgid ""
-"The content of your home directory has changed.\n"
-"Do you want to rescan the last tree to update the folder branch details?"
+"The content of your home folder has changed. Select rescan to update the "
+"disk usage details."
 msgstr ""
-"Niova ny mpiatin'ny laha-tahiry fandraisanao.\n"
-"Tianao zahavana indray ilay hazo farany teo ahitana ny antsipirian'ny "
-"rantsan'ilay laha-tahiry? "
 
-#: ../baobab/src/baobab-utils.c:923
+#: ../baobab/src/baobab-treeview.c:84
+msgid "_Rescan"
+msgstr ""
+
+#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2406
+msgid "Folder"
+msgstr "Laha-tahiry"
+
+#: ../baobab/src/baobab-treeview.c:244
+msgid "Usage"
+msgstr ""
+
+#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2419
+msgid "Size"
+msgstr "Habe"
+
+#: ../baobab/src/baobab-treeview.c:274
+msgid "Contents"
+msgstr ""
+
+#: ../baobab/src/baobab-utils.c:106
+msgid "Select Folder"
+msgstr ""
+
+#. add extra widget
+#: ../baobab/src/baobab-utils.c:118
+msgid "_Show hidden folders"
+msgstr ""
+
+#: ../baobab/src/baobab-utils.c:297
+msgid "Cannot check an excluded folder!"
+msgstr ""
+
+#: ../baobab/src/baobab-utils.c:321
 #, c-format
-msgid "Couldn't find pixmap file: %s"
-msgstr "Tsy nahita ny rakitra pixmap: %s"
+msgid "\"%s\" is not a valid folder"
+msgstr ""
 
-#: ../baobab/src/baobab-utils.c:957 ../logview/logview.c:774
+#: ../baobab/src/baobab-utils.c:324
+msgid "Could not analyze disk usage."
+msgstr ""
+
+#: ../baobab/src/baobab-utils.c:364
+msgid "_Open Folder"
+msgstr ""
+
+#: ../baobab/src/baobab-utils.c:370
+#: ../gsearchtool/gsearchtool-callbacks.c:1203
+msgid "Mo_ve to Trash"
+msgstr "_Alefaso anaty daba"
+
+#: ../baobab/src/baobab-utils.c:404
+#, c-format
+msgid "Could not open folder \"%s\""
+msgstr ""
+
+#: ../baobab/src/baobab-utils.c:407
+msgid "There is no installed viewer capable of displaying the folder."
+msgstr ""
+
+#: ../baobab/src/baobab-utils.c:476
+#, c-format
+msgid "Could not move \"%s\" to the Trash"
+msgstr ""
+
+#: ../baobab/src/baobab-utils.c:484
+msgid "Could not move file to the Trash"
+msgstr ""
+
+#: ../baobab/src/baobab-utils.c:486
+#, c-format
+msgid "Details: %s"
+msgstr ""
+
+#: ../baobab/src/baobab-utils.c:533
 msgid "There was an error displaying help."
 msgstr "Nisy olana teo am-panehoana ireo toro-làlana."
 
-#: ../baobab/src/callbacks.c:75
+#: ../baobab/src/callbacks.c:77 ../logview/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+
+#: ../baobab/src/callbacks.c:82 ../logview/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+
+#: ../baobab/src/callbacks.c:87 ../logview/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with"
+" this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+
+#: ../baobab/src/callbacks.c:98
 msgid "Baobab"
 msgstr "Baobab"
 
-#: ../baobab/src/callbacks.c:76
-msgid "A graphical tool to analyse disk usage."
-msgstr "Fitaovana an-tsary hizahana ny fampiasana ny kapila."
+#: ../baobab/src/callbacks.c:99
+msgid "A graphical tool to analyze disk usage."
+msgstr ""
 
-#. Translator credits
-#: ../baobab/src/callbacks.c:85 ../mate-dictionary/src/gdict-about.c:59
-#: ../logview/about.c:47
+#. translator credits
+#: ../baobab/src/callbacks.c:105 ../mate-dictionary/src/gdict-about.c:55
+#: ../logview/logview-about.h:63
 msgid "translator-credits"
 msgstr "Fankasitrahana ireo mpandika teny"
 
-#: ../baobab/src/callbacks.c:524
+#: ../baobab/src/callbacks.c:203 ../gsearchtool/gsearchtool-callbacks.c:504
+#: ../gsearchtool/gsearchtool-callbacks.c:843
+msgid "The document does not exist."
+msgstr "Tsy misy ilay tahirin-kevitra."
+
+#: ../baobab/src/callbacks.c:314
 msgid "The folder does not exist."
 msgstr "Tsy misy ilay laha-tahiry."
-
-#: ../gfloppy/gfloppy.desktop.in.h:1 ../gfloppy/src/gfloppy2.glade.h:9
-msgid "Floppy Formatter"
-msgstr "Mpanomana zana-kapila"
-
-#: ../gfloppy/gfloppy.desktop.in.h:2
-msgid "Format floppy disks"
-msgstr "Hanomana zana-kapila"
-
-#: ../gfloppy/gfloppy.schemas.in.h:1
-msgid ""
-"0 for the quick format, 1 for a standard one (adds a low-level format) and "
-"finally 2 for a thorough format (adds a bad blocks scan)."
-msgstr ""
-"0 ho an'ny fanomanana malaky, 1 ho an'ny tsotra (miampy fanomanana iva "
-"tantana), ary, farany, 2 ho an'ny fanomanana antsipiriany (miampy fizahana "
-"block simba)."
-
-#: ../gfloppy/gfloppy.schemas.in.h:2
-msgid "ADVANCED USERS ONLY - Default backend for FAT formatting"
-msgstr ""
-"HO AN'NY MPAMPIASA MANANA TRAIKEFA IHANY - Backend tsotra ho an'ny "
-"fanomanana FAT"
-
-#: ../gfloppy/gfloppy.schemas.in.h:3
-msgid "Default filesystem type"
-msgstr "Karazan'ny rafi-drakitra tsotra"
-
-#: ../gfloppy/gfloppy.schemas.in.h:4
-msgid "Default formatting mode"
-msgstr "Fomba fanomanana tsotra"
-
-#: ../gfloppy/gfloppy.schemas.in.h:5
-msgid ""
-"TRUE to set mkdosfs as the preferred FAT formatting backend or FALSE to set "
-"mtools as the preferred FAT formatting backend."
-msgstr ""
-"MARINA raha hamaritra ny backend an'ny fanomanana FAT safidy ho mkdosfs na "
-"DISO raha hamaritra izany ho mtools."
-
-#: ../gfloppy/gfloppy.schemas.in.h:6
-msgid "ext2 for the linux native filesystem or fat for the DOS filesystem."
-msgstr ""
-"ext2 ho an'ny rafi-drakitry ny linux manokana na fat ho an'ny rafi-drakitra "
-"DOS."
-
-#: ../gfloppy/src/badblocks.c:89
-msgid "Internal Error: Unable to seek to the correct location."
-msgstr "Tsy fetezana anatiny: Tsy afaka manandrana manitsy ilay toerana."
-
-#: ../gfloppy/src/badblocks.c:98
-#, c-format
-msgid "Internal Error: Weird value (%ld) in do_test\n"
-msgstr "Tsy fetezana anatiny: Sanda hafahafa (%ld) ao amin'ny do_test\n"
-
-#. while (!i)
-#. ;
-#: ../gfloppy/src/badblocks.c:256
-msgid "Checking for bad blocks..."
-msgstr "Mizaha block simba..."
-
-#: ../gfloppy/src/badblocks.c:268
-#, c-format
-msgid "Failed to open device %s for badblock checking\n"
-msgstr "Tsy nahasokatra ny periferika %s hanaovana fizahana block simba\n"
-
-#: ../gfloppy/src/badblocks.c:288 ../gfloppy/src/gfloppy.c:531
-msgid "Checking for bad blocks... Done"
-msgstr "Mizaha block simba... Vita"
-
-#: ../gfloppy/src/fdformat.c:46
-msgid "Formatting the disk..."
-msgstr "Manomana ilay kapila..."
-
-#: ../gfloppy/src/fdformat.c:49
-msgid "I don't know what this is, but it's very wrong."
-msgstr "Tsy fantatro hoe inona io, saingy ratsy be mihitsy izy io."
-
-#: ../gfloppy/src/fdformat.c:57 ../gfloppy/src/fdformat.c:70
-#, c-format
-msgid "Error formatting track #%d"
-msgstr "Nisy olana teo am-panomanana ny lalam-boasoritra #%d"
-
-#: ../gfloppy/src/fdformat.c:79
-msgid "Error during completion of formatting"
-msgstr "Nisy olana nandritra ny famitana ny fanomanana"
-
-#. XXXX - need to tell parent we're finished
-#: ../gfloppy/src/fdformat.c:83
-msgid "Formatting the disk... Done"
-msgstr "Manomana ilay kapila... Vita"
-
-#. XXXX - tell parent we're starting verify stage
-#: ../gfloppy/src/fdformat.c:99
-msgid "Verifying the format..."
-msgstr "Manamarina ilay lamina..."
-
-#: ../gfloppy/src/fdformat.c:104 ../gfloppy/src/fdformat.c:189
-msgid ""
-"Unable to write to the floppy.\n"
-"\n"
-"Please confirm that it is not write-protected."
-msgstr ""
-"Tsy afaka mandika amin'ilay zana-kapila.\n"
-"\n"
-"Amarino hoe tsy voarara ny fanoratana aminy."
-
-#: ../gfloppy/src/fdformat.c:107 ../gfloppy/src/fdformat.c:192
-#, c-format
-msgid "Insufficient permissions to open floppy device %s."
-msgstr ""
-"Tsy ampy ny fahazoan-dàlana ahafahana manokatra ny periferika mpanodina zana-"
-"kapila %s."
-
-#: ../gfloppy/src/fdformat.c:111 ../gfloppy/src/fdformat.c:196
-msgid ""
-"Unable to access the floppy disk.\n"
-"\n"
-"Please confirm that it is in the drive\n"
-"with the drive door shut."
-msgstr ""
-"Tsy afaka manokatra ilay zana-kapila.\n"
-"\n"
-"Amarino hoe ao anatin'ilay periferika izy io\n"
-"ary mihidy ny irik'ilay periferika."
-
-#: ../gfloppy/src/fdformat.c:114
-#, c-format
-msgid ""
-"Generic error accessing floppy device %s.\n"
-"\n"
-"Error code %s:%d"
-msgstr ""
-"Tsy fetezana ankapobe tamin'ny fanokafana ny periferika mpanodina zana-"
-"kapila %s.\n"
-"\n"
-"fangon'ny tsy fetezana %s:%d"
-
-#: ../gfloppy/src/fdformat.c:137
-#, c-format
-msgid ""
-"Read Error:\n"
-"Problem reading cylinder %d, expected %d, read %d"
-msgstr ""
-"Tsy fetezan'ny famakiana:\n"
-"Misy olana ny famakiana ny cylinder %d, nampoizina %d, voavaky %d"
-
-#: ../gfloppy/src/fdformat.c:140
-#, c-format
-msgid "Problem reading cylinder %d, expected %d, read %d"
-msgstr "Misy olana ny famakiana ny cylinder %d, nampoizina %d, voavaky %d"
-
-#: ../gfloppy/src/fdformat.c:151
-#, c-format
-msgid "Bad data in cyl %d.  Continuing... "
-msgstr "Misy data simba amin'ny cylinder %d. Manohy..."
-
-#: ../gfloppy/src/fdformat.c:160
-#, c-format
-msgid "Error closing device %s"
-msgstr "Nisy olana teo am-panidiana ny periferika %s"
-
-#: ../gfloppy/src/fdformat.c:167
-msgid "Verifying the format... Done"
-msgstr "Manamarina ny lamina... Vita"
-
-#: ../gfloppy/src/fdformat.c:179
-#, c-format
-msgid "Unable to write to device %s"
-msgstr "Tsy afaka manoratra amin'ny periferika %s"
-
-#: ../gfloppy/src/fdformat.c:199
-#, c-format
-msgid ""
-"Generic error accessing floppy device %s.\n"
-"\n"
-"Error code %s"
-msgstr ""
-"Tsy fetezana ankapobe amin'ny fanokafana ny periferika mpanodina zana-kapila "
-"%s.\n"
-"\n"
-"Fangon'ny tsy fetezana %s"
-
-#: ../gfloppy/src/fdformat.c:211
-msgid "Could not determine current floppy geometry."
-msgstr "Tsy nahafaritra ny geometry an'ity zana-kapila ity."
-
-#: ../gfloppy/src/gfloppy.c:219
-msgid "Error while creating a unique filename for the bad blocks list file."
-msgstr ""
-"Nisy olana teo am-pamoronana anara-drakitra tokana ho an'ilay rakitry ny "
-"lisitry ny block simba."
-
-#: ../gfloppy/src/gfloppy.c:239
-msgid "Error while filling the bad blocks list file."
-msgstr "Nisy olana teo am-pamenoana ilay rakitry ny lisitry ny block simba."
-
-#: ../gfloppy/src/gfloppy.c:302
-#, c-format
-msgid "Error while spawning the (%s) command: %s."
-msgstr "Nisy olana teo am-pamoronana ny baiko (%s): %s."
-
-#: ../gfloppy/src/gfloppy.c:328
-msgid "Unknown mke2fs starting signature, cancelling."
-msgstr "Sonia fanombohana mke2fs tsy fantatra. Ajanona."
-
-#: ../gfloppy/src/gfloppy.c:342
-#, c-format
-msgid ""
-"The filesystem creation utility (%s) reported the following errors:\n"
-"\n"
-"%s (%d)"
-msgstr ""
-"Nitatitra ity tsy fetezana ity ny rindran'asa famoronana rafi-drakitra (%"
-"s):\n"
-"\n"
-"%s (%d)"
-
-#: ../gfloppy/src/gfloppy.c:359
-msgid "Abnormal child process termination."
-msgstr "Fijanonan'ny fizotra zanaka hafahafa."
-
-#: ../gfloppy/src/gfloppy.c:384
-#, c-format
-msgid "Error while spawning the mbadblocks command: %s."
-msgstr "Nisy olana teo am-pamoronana ny baiko mbadblocks: %s."
-
-#: ../gfloppy/src/gfloppy.c:396
-#, c-format
-msgid ""
-"The bad blocks checking utility (mbadblocks) reported the following errors:\n"
-"%s."
-msgstr ""
-"Nitatitra ity tsy fetezana manaraka ity ny rindran'asa fizahavana block "
-"simba (mbadblocks):\n"
-"%s."
-
-#: ../gfloppy/src/gfloppy.c:439
-msgid "Abnormal mbadblocks child process termination."
-msgstr "Fijanonan'ny fizotra zanaky ny mbadblocks hafahafa."
-
-#. make the filesystem
-#: ../gfloppy/src/gfloppy.c:465 ../gfloppy/src/gfloppy.c:505
-msgid "Making filesystem on disk..."
-msgstr "Mamorona rafi-drakitra amin'ny kapila..."
-
-#: ../gfloppy/src/gfloppy.c:473
-msgid "Unable to create filesystem correctly."
-msgstr "Tsy afaka namorona rafi-drakitra araka ny tokony ho izy."
-
-#: ../gfloppy/src/gfloppy.c:478 ../gfloppy/src/gfloppy.c:517
-msgid "Making filesystem on disk... Done"
-msgstr "Mamorona rafi-drakitra amin'ny kapila... Vita"
-
-#: ../gfloppy/src/gfloppy.c:522
-msgid "Checking for bad blocks... (this might take a while)"
-msgstr "Mizaha block simba... (mety haharitra elaela izany)"
-
-#: ../gfloppy/src/gfloppy.c:527
-msgid "Error while checking the bad blocks."
-msgstr "Nisy olana teo am-pizahana ireo block simba."
-
-#: ../gfloppy/src/gfloppy2.glade.h:1
-#: ../mate-screenshot/mate-panel-screenshot.glade.h:1
-msgid "    "
-msgstr "    "
-
-#: ../gfloppy/src/gfloppy2.glade.h:2
-#: ../mate-screenshot/mate-screenshot.glade.h:1
-msgid "*"
-msgstr "*"
-
-#: ../gfloppy/src/gfloppy2.glade.h:3
-msgid ""
-"<small><i><b>Note</b>: The mbadblocks utility isn't installed on this "
-"system.  It must be installed in order to perform a thorough DOS (fat) "
-"formatting.</i></small>"
-msgstr ""
-"<small><i><b>Note</b>: Tsy voapetraka ao amin'ny solosainao ny rindran'asa "
-"mbadblocks. Tsy maintsy apetraka io mba ahafahana manao fanomanana DOS (fat) "
-"antsipiriany.</i></small>"
-
-#: ../gfloppy/src/gfloppy2.glade.h:4
-msgid "DOS (FAT)"
-msgstr "DOS (FAT)"
-
-#: ../gfloppy/src/gfloppy2.glade.h:5
-msgid "Double Density 3.5\" (720KB)"
-msgstr "Double Density 3.5\" (720KB)"
-
-#: ../gfloppy/src/gfloppy2.glade.h:6
-msgid "Double Density 5.25\" (360KB)"
-msgstr "Double Density 5.25\" (360KB)"
-
-#: ../gfloppy/src/gfloppy2.glade.h:7
-msgid "File system _type:"
-msgstr "_Karazan'ny rafi-drakitra:"
-
-#: ../gfloppy/src/gfloppy2.glade.h:8
-msgid "Filesystem Settings"
-msgstr "Fandrindran'ny rafi-drakitra"
-
-#: ../gfloppy/src/gfloppy2.glade.h:10
-msgid "Floppy _density:"
-msgstr "_Hakitroky ny zana-kapila:"
-
-#: ../gfloppy/src/gfloppy2.glade.h:11
-msgid "Floppy de_vice:"
-msgstr "_Periferika mpanodina zana-kapila:"
-
-#: ../gfloppy/src/gfloppy2.glade.h:12
-msgid "Formatting Mode"
-msgstr "Fomba fanomanana"
-
-#: ../gfloppy/src/gfloppy2.glade.h:13
-msgid "High Density 3.5\" (1.44MB)"
-msgstr "High Density 3.5\" (1.44MB)"
-
-#: ../gfloppy/src/gfloppy2.glade.h:14
-msgid "High Density 5.25\" (1.2MB)"
-msgstr "High Density 5.25\" (1.2MB)"
-
-#: ../gfloppy/src/gfloppy2.glade.h:15
-msgid "Linux Native (ext2)"
-msgstr "Linux Native (ext2)"
-
-#: ../gfloppy/src/gfloppy2.glade.h:16
-msgid "Physical Settings"
-msgstr "Fandrindrana tena izy"
-
-#: ../gfloppy/src/gfloppy2.glade.h:17
-msgid "Thorou_gh (adds a bad blocks check to the standard mode)"
-msgstr "An_tsipiriany (manampy fizahana block simba amin'ny fomba tsotra)"
-
-#: ../gfloppy/src/gfloppy2.glade.h:18
-msgid "Volume _name:"
-msgstr "Ana_ran'ny kapila:"
-
-#. This is the "format" verb (not the noun).
-#: ../gfloppy/src/gfloppy2.glade.h:20
-msgid "_Format"
-msgstr "_Lamina:"
-
-#: ../gfloppy/src/gfloppy2.glade.h:21
-msgid "_Quick (only creates the filesystem)"
-msgstr "_Malaky (mamorona ireo rafi-drakitra fotsiny)"
-
-#: ../gfloppy/src/gfloppy2.glade.h:22
-msgid "_Standard (adds a low-level format to the quick mode)"
-msgstr "_Tsotra (manampy fanomanana iva tantana amin'ny fomba malaky)"
-
-#: ../gfloppy/src/main.c:259
-msgid "Cannot Format"
-msgstr "Tsy afaka manao fanomanana"
-
-#: ../gfloppy/src/main.c:260
-msgid ""
-"Neither the mke2fs nor the mkdosfs/mformat applications are installed. You "
-"can't format a floppy without one of them."
-msgstr ""
-"Samy tsy misy voapetraka na ny rindran'asa mke2fs na ny rindran'asa mkdosfs/"
-"mformat. Tsy afaka manomana zana-kapila ianao raha tsy manana ny iray "
-"amin'ireo. "
-
-#: ../gfloppy/src/main.c:280
-#, c-format
-msgid "Unable to open the device %s, formatting cannot continue."
-msgstr ""
-"Tsy afaka manokatra ny periferika %s. Tsy afaka tohizana ny fanomanana."
-
-#: ../gfloppy/src/main.c:283 ../gfloppy/src/main.c:345
-#, c-format
-msgid ""
-"The device %s is disconnected.\n"
-"Please attach device to continue."
-msgstr ""
-"Tsy mipetaka ny periferika %s.\n"
-"Apetaho izy io ahafahana manohy."
-
-#: ../gfloppy/src/main.c:286 ../gfloppy/src/main.c:348
-#, c-format
-msgid ""
-"You do not have the proper permissions to write to %s, formatting will not "
-"be possible.\n"
-"Contact your system administrator about getting write permissions."
-msgstr ""
-"Tsy manana ny fahazoan-dàlana ilaina manoratra amin'ny %s ianao. Tsy hety "
-"noho izany ny fanomanana.\n"
-"Angatao amin'ny mpandrindra ny rafitrao ny fahazoan-dàlana manoratra."
-
-#: ../gfloppy/src/main.c:293 ../gfloppy/src/main.c:356
-msgid "Cannot initialize device"
-msgstr "Tsy afaka manomboka ilay periferika"
-
-#: ../gfloppy/src/main.c:342
-msgid "Unable to open any device, formatting cannot continue."
-msgstr "Tsy misy periferika mety sokafana. Tsy afaka hitohy ny fanomanana."
-
-#: ../gfloppy/src/main.c:345 ../gfloppy/src/main.c:348
-msgid "/dev/floppy/0 or /dev/fd0"
-msgstr "/dev/floppy/0 na /dev/fd0"
-
-#: ../gfloppy/src/main.c:509
-msgid "Could not display help for the floppy formatter."
-msgstr "Tsy afaka maneho ireo toro-làlana mikasika ny mpanomana zana-kapila."
-
-#: ../gfloppy/src/main.c:528
-msgid "Incorrect volume name"
-msgstr "Anaran-kapila diso"
-
-#: ../gfloppy/src/main.c:529
-msgid "The volume name can't contain any blank space."
-msgstr "Tsy mety asiana elanelana ny anaran-kapila."
-
-#: ../gfloppy/src/main.c:575
-msgid "The device to format"
-msgstr "Ilay kapila homanina"
-
-#: ../gfloppy/src/main.c:575
-msgid "DEVICE"
-msgstr "KAPILA"
-
-#: ../gfloppy/src/main.c:583
-msgid "- Floppy Formatter"
-msgstr "- Mpanomana zana-kapila"
-
-#: ../gfloppy/src/progress.c:126
-#, c-format
-msgid ""
-"The floppy has been formatted, but <b>%d bad block</b> (out of %d) has been "
-"found and marked."
-msgid_plural ""
-"The floppy has been formatted, but <b>%d bad blocks</b> (out of %d) have "
-"been found and marked."
-msgstr[0] ""
-"Voaomana ilay zana-kapila, saingy nisy <b>block simba %d</b> (amin'ny %d) "
-"hita ary nomarihana"
-msgstr[1] ""
-"Voaomana ilay zana-kapila, saingy nisy <b>block simba %d</b> (amin'ny %d) "
-"hita ary nomarihana"
-
-#: ../gfloppy/src/progress.c:129
-msgid "Floppy formatted successfully."
-msgstr "Vita soa aman-tsara ny fanomanana."
-
-#: ../gfloppy/src/progress.c:135
-msgid "Floppy formatting cancelled."
-msgstr "Nofoanana ny fanomanana ilay zana-kapila."
-
-#: ../gfloppy/src/progress.c:178
-msgid "Format Progress"
-msgstr "Fivoaran'ny fanomanana"
 
 #: ../mate-dictionary/data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
@@ -1114,114 +574,103 @@ msgid "Look up words in a dictionary"
 msgstr "Mikaroka teny ao anatina rakibolana iray"
 
 #: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:1
-msgid "Cl_ear"
-msgstr "Fo_ano"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:2
-#: ../mate-dictionary/src/gdict-window.c:843 ../logview/logview.c:116
-msgid "_About"
-msgstr "_Mombamomba"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:4
 msgid "_Look Up Selected Text"
 msgstr "_Zahavo ny lahabolana voafaritra"
 
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:5
-#: ../mate-dictionary/src/gdict-window.c:827
-msgid "_Preferences"
-msgstr "_Safidy manokana"
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:2
+msgid "Cl_ear"
+msgstr "Fo_ano"
 
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:6
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:3
 msgid "_Print"
 msgstr "_Atontay"
 
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:7
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:4
 msgid "_Save"
 msgstr "_Raiketo"
 
-#: ../mate-dictionary/data/mate-dictionary.desktop.in.h:1
-#: ../mate-dictionary/src/gdict-about.c:98
-#: ../mate-dictionary/src/gdict-app.c:471
-#: ../mate-dictionary/src/gdict-window.c:365
-#: ../mate-dictionary/src/gdict-window.c:1211
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:5
+#: ../mate-dictionary/src/gdict-window.c:1205
+msgid "_Preferences"
+msgstr "_Safidy manokana"
+
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:7
+#: ../mate-dictionary/src/gdict-window.c:1231 ../logview/logview-window.c:839
+msgid "_About"
+msgstr "_Mombamomba"
+
+#: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:1
+#: ../mate-dictionary/src/gdict-about.c:78
+#: ../mate-dictionary/src/gdict-app.c:385
+#: ../mate-dictionary/src/gdict-window.c:605
+#: ../mate-dictionary/src/gdict-window.c:1947
 msgid "Dictionary"
 msgstr "Rakibolana"
 
-#: ../mate-dictionary/data/mate-dictionary.desktop.in.h:2
-msgid "Look up words in an online dictionary"
-msgstr "Hitady teny anaty rakibolana amin'ny Internet"
+#: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:2
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr ""
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:1
 msgid "Dictionary server (Deprecated)"
 msgstr "Mpizara rakibolana (tsy ampiasaina intsony)"
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:2
-msgid "Port used to connect to server (Deprecated)"
-msgstr ""
-"Ny irika ampiasaina ifandraisana amin'ny mpizara (Tsy ampiasaina intsony)"
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers. This key is deprecated and"
+" no longer in use."
+msgstr "Ilay mpizara rakibolana atao ifandraisana. dict.org ny mpizara atao ifandraisana. Jereo ao amin'ny http://www.dict.org ny momobamomba ireo mpizara hafa. Efa tsy ampiasaina intsony io famaha io."
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:3
+msgid "Port used to connect to server (Deprecated)"
+msgstr "Ny irika ampiasaina ifandraisana amin'ny mpizara (Tsy ampiasaina intsony)"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:4
+msgid ""
+"The port number to connect to. The default port is 2628. This key is "
+"deprecated and no longer in use."
+msgstr "Ny laharan'ny irika ifandraisana. 2628 no irika tsotra. Efa tsy ampiasaina intsony io famaha io."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:5
+msgid "Use smart lookup (Deprecated)"
+msgstr "Mampiasà fizahana kinga (Tsy ampiasaina intsoy)"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:6
 msgid ""
 "Specify whether to use smart lookup. This key is dependant on whether the "
 "dictionary server supports this option. The default is TRUE. This key is "
 "deprecated and no longer in use."
-msgstr ""
-"Mamaritra ny fampiasana fizahavana kinga na tsia. Io fahafahana mampiasa io "
-"famaha io dia miakina amin'ny fandraisan'ny mpizara rakibolana an-tànana io "
-"safidy io. MARINA no safidy tsotra. Efa tsy ampiasaina intsony io famaha io."
+msgstr "Mamaritra ny fampiasana fizahavana kinga na tsia. Io fahafahana mampiasa io famaha io dia miakina amin'ny fandraisan'ny mpizara rakibolana an-tànana io safidy io. MARINA no safidy tsotra. Efa tsy ampiasaina intsony io famaha io."
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:4
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:7
 msgid "The default database to use"
 msgstr "Ny soratra fototra tsotra ampiasaina"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:5
-msgid "The default height of the application window"
-msgstr "Ny haavo tsotran'ny fikandran'ilay rindran'asa"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:6
-msgid "The default search strategy to use"
-msgstr "Ny fomba fikarohana tsotra ampiasaina"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:7
-msgid "The default width of the application window"
-msgstr "Ny saka tsotran'ny fikandran'ilay rindran'asa"
-
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:8
-msgid ""
-"The dictionary server to connect to. The default server is dict.org. See "
-"http://www.dict.org for details on other servers. This key is deprecated and "
-"no longer in use."
-msgstr ""
-"Ilay mpizara rakibolana atao ifandraisana. dict.org ny mpizara atao "
-"ifandraisana. Jereo ao amin'ny http://www.dict.org ny momobamomba ireo "
-"mpizara hafa. Efa tsy ampiasaina intsony io famaha io."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:9
-msgid "The font to be used when printing"
-msgstr "Ny endri-tsoratra ampiasaina rehefa hanonta"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:10
-msgid "The font to be used when printing a definition."
-msgstr "Ny endri-tsoratra ampiasaina rehefa hanonta fanoritana iray."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:11
 msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
 "present in a dictionary source should be searched"
-msgstr ""
-"Ny anaran'ny soratra fototra tsotra iray na meta-database ampiasaina amin'ny "
-"loharanon-drakibolana. Ny baraingo (\"!\") dia midika fa tokony ho karohina "
-"avokoa ireo soratra fototra rehetra anatina rakibolana iray"
+msgstr "Ny anaran'ny soratra fototra tsotra iray na meta-database ampiasaina amin'ny loharanon-drakibolana. Ny baraingo (\"!\") dia midika fa tokony ho karohina avokoa ireo soratra fototra rehetra anatina rakibolana iray"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:12
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:9
+msgid "The default search strategy to use"
+msgstr "Ny fomba fikarohana tsotra ampiasaina"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:10
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is 'exact', that is match exact words."
-msgstr ""
-"Ny anaran'ny fomba ampiasaina amin'ny loharon-drakibolana raha misy. "
-"'marina' no fomba tsotra, izany hoe karoka mifanaraka tanteraka amin'ny "
-"zavatra tadiavina."
+msgstr "Ny anaran'ny fomba ampiasaina amin'ny loharon-drakibolana raha misy. 'marina' no fomba tsotra, izany hoe karoka mifanaraka tanteraka amin'ny zavatra tadiavina."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:11
+msgid "The font to be used when printing"
+msgstr "Ny endri-tsoratra ampiasaina rehefa hanonta"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:12
+msgid "The font to be used when printing a definition."
+msgstr "Ny endri-tsoratra ampiasaina rehefa hanonta fanoritana iray."
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:13
 msgid "The name of the dictionary source used"
@@ -1233,1023 +682,1159 @@ msgid ""
 msgstr "Ny anaran'ny loharanon-drakibolana ampiasaina hakana fanoritan-teny."
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:15
-msgid ""
-"The port number to connect to. The default port is 2628. This key is "
-"deprecated and no longer in use."
-msgstr ""
-"Ny laharan'ny irika ifandraisana. 2628 no irika tsotra. Efa tsy ampiasaina "
-"intsony io famaha io."
+msgid "The default width of the application window"
+msgstr "Ny saka tsotran'ny fikandran'ilay rindran'asa"
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:16
 msgid ""
-"This key defines the window height and it's used to remember the size of the "
-"dictionary window across sessions. Setting it to -1 will make the dictionary "
-"window use a height based on the font size."
-msgstr ""
-"Io famaha io dia mamaritra ny haavon'ny fikandrana ary natao itadidiana ny "
-"haben'ilay fikandran'ny rakibolana isaky ny session. Ny famaritana azy ho -1 "
-"dia hahatonga ny fikandran'ny rakibolana hampiasa haavo mifototra amin'ny "
-"haben'ny endri-tsoratra."
+"This key defines the window width and it's used to remember the size of the "
+"dictionary window across sessions. Setting it to -1 will make the dictionary"
+" window use a width based on the font size."
+msgstr "Io famaha io dia mamaritra ny sakan'ny fikandrana ary natao itadidiavana ny haben'ny fikandran'ny rakibolana isaky ny session. Ny famaritana azy ho -1 dia hahatonga ny fikandran'ilay rakibolaa hampiasa saka mifototra amin'ny haben'ny endri-tsoratra."
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:17
-msgid ""
-"This key defines the window width and it's used to remember the size of the "
-"dictionary window across sessions. Setting it to -1 will make the dictionary "
-"window use a width based on the font size."
-msgstr ""
-"Io famaha io dia mamaritra ny sakan'ny fikandrana ary natao itadidiavana ny "
-"haben'ny fikandran'ny rakibolana isaky ny session. Ny famaritana azy ho -1 "
-"dia hahatonga ny fikandran'ilay rakibolaa hampiasa saka mifototra amin'ny "
-"haben'ny endri-tsoratra."
+msgid "The default height of the application window"
+msgstr "Ny haavo tsotran'ny fikandran'ilay rindran'asa"
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:18
+msgid ""
+"This key defines the window height and it's used to remember the size of the"
+" dictionary window across sessions. Setting it to -1 will make the "
+"dictionary window use a height based on the font size."
+msgstr "Io famaha io dia mamaritra ny haavon'ny fikandrana ary natao itadidiana ny haben'ilay fikandran'ny rakibolana isaky ny session. Ny famaritana azy ho -1 dia hahatonga ny fikandran'ny rakibolana hampiasa haavo mifototra amin'ny haben'ny endri-tsoratra."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:19
+msgid "Whether the application window should be maximized"
+msgstr "Mamaritra hoe alehibiazina ny fikandran'ilay rindran'asa na tsia"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:20
 msgid ""
 "This key defines whether the window should be maximized and it's used to "
 "remember the state of the dictionary window across sessions. Setting it to "
 "TRUE will make the window always appear as maximized."
+msgstr "Io famaha io dia mamaritra ny fanalehibiazana ny fikandrana na tsia ary natao itadidiavana ny toetry ny fikandran'ny rakiboana isaky ny session. Ny famaritana azy ho MARINA dia hahatonga ilay fikandrana hisokatra tanteraka foana."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:21
+msgid "Whether the sidebar should be visible"
 msgstr ""
-"Io famaha io dia mamaritra ny fanalehibiazana ny fikandrana na tsia ary "
-"natao itadidiavana ny toetry ny fikandran'ny rakiboana isaky ny session. Ny "
-"famaritana azy ho MARINA dia hahatonga ilay fikandrana hisokatra tanteraka "
-"foana."
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:19
-msgid "Use smart lookup (Deprecated)"
-msgstr "Mampiasà fizahana kinga (Tsy ampiasaina intsoy)"
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:22
+msgid ""
+"This key defines whether the sidebar should be visible and it's used to "
+"remember the state of the sidebar across sessions. Setting it to TRUE will "
+"make the sidebar always be displayed."
+msgstr ""
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:20
-msgid "Whether the application window should be maximized"
-msgstr "Mamaritra hoe alehibiazina ny fikandran'ilay rindran'asa na tsia"
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:23
+msgid "Whether the statusbar should be visible"
+msgstr ""
 
-#: ../mate-dictionary/data/mate-dictionary-preferences.glade.h:1
-msgid "Data_base:"
-msgstr "Soratra _fototra:"
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:24
+msgid ""
+"This key defines whether the statusbar should be visible and it's used to "
+"remember the state of the statusbar across sessions. Setting it to TRUE will"
+" make the statusbar always be displayed."
+msgstr ""
 
-#. Transport methods
-#. Translators: this is the same string used in the file
-#. * mate-dictionary-preferences.glade for the transport_combo
-#. * widget items.
-#.
-#: ../mate-dictionary/data/mate-dictionary-preferences.glade.h:3
-#: ../mate-dictionary/src/gdict-source-dialog.c:146
-msgid "Dictionary Server"
-msgstr "Mpizara rakibolana"
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:25
+msgid "The page of the sidebar to show"
+msgstr ""
 
-#: ../mate-dictionary/data/mate-dictionary-preferences.glade.h:4
-msgid "H_ostname:"
-msgstr "Anaran'ny _mpampiantrano:"
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:26
+msgid ""
+"This key defines which page of the sidebar should be displayed and it's used"
+" to remember the setting across sessions.. It can be \"speller\" or "
+"\"databases\"."
+msgstr ""
 
-#: ../mate-dictionary/data/mate-dictionary-preferences.glade.h:5
-#: ../mate-dictionary/src/gdict-applet.c:231
-#: ../mate-dictionary/src/gdict-window.c:599
-msgid "Print"
-msgstr "Atontay"
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:27
+msgid "The width of the sidebar"
+msgstr ""
 
-#: ../mate-dictionary/data/mate-dictionary-preferences.glade.h:6
-msgid "Source"
-msgstr "Loharano"
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:28
+msgid ""
+"This key defines the width of the sidebar and it's used to remember the "
+"setting across sessions."
+msgstr ""
 
-#: ../mate-dictionary/data/mate-dictionary-preferences.glade.h:7
-msgid "Source Name"
-msgstr "Anaran'ny loharano"
-
-#: ../mate-dictionary/data/mate-dictionary-preferences.glade.h:8
-msgid "_Advanced settings"
-msgstr "_Fandrindrana avo lenta"
-
-#: ../mate-dictionary/data/mate-dictionary-preferences.glade.h:9
-msgid "_Description:"
-msgstr "_Fanoritsoritana:"
-
-#: ../mate-dictionary/data/mate-dictionary-preferences.glade.h:11
-msgid "_Print font:"
-msgstr "_Atontay ilay endri-tsoratra:"
-
-#: ../mate-dictionary/data/mate-dictionary-preferences.glade.h:12
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:1
 msgid "_Select a dictionary source for looking up words:"
 msgstr "_Misafidiana loharanon-drakibolana izahavana teny: "
 
-#: ../mate-dictionary/data/mate-dictionary-preferences.glade.h:13
-msgid "_Strategy:"
-msgstr "_Fomba:"
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:2
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:6
+msgid "Source"
+msgstr "Loharano"
 
-#: ../mate-dictionary/data/mate-dictionary-preferences.glade.h:14
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:3
+msgid "_Print font:"
+msgstr "_Atontay ilay endri-tsoratra:"
+
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:4
+msgid "Print"
+msgstr "Atontay"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:1
+msgid "_Description:"
+msgstr "_Fanoritsoritana:"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:2
 msgid "_Transport:"
 msgstr "_Fitaterana:"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:3
+msgid "H_ostname:"
+msgstr "Anaran'ny _mpampiantrano:"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:5
+msgid "Source Name"
+msgstr "Anaran'ny loharano"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:7
+msgid "Dictionaries"
+msgstr ""
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:8
+msgid "Strategies"
+msgstr ""
 
 #: ../mate-dictionary/data/spanish.desktop.in.h:1
 msgid "Spanish Dictionaries"
 msgstr "Rakibolana Espaniola"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:270
+#: ../mate-dictionary/data/thai.desktop.in.h:1
+msgid "Longdo Thai-English Dictionaries"
+msgstr ""
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:283
 msgid "Client Name"
 msgstr "Anaran'ny mpivatsy"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:271
+#: ../mate-dictionary/libgdict/gdict-client-context.c:284
 msgid "The name of the client of the context object"
 msgstr "Ny anaran'ilay mpivatsy ny zavatry ny seha-kevitra"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:284
+#: ../mate-dictionary/libgdict/gdict-client-context.c:297
 msgid "Hostname"
 msgstr "Anaran'ny mpampiantrano"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:285
+#: ../mate-dictionary/libgdict/gdict-client-context.c:298
 msgid "The hostname of the dictionary server to connect to"
 msgstr "Ny anaran'ny mpampiantrano ilay mpizara rakibolana ifandraisana"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:298
+#: ../mate-dictionary/libgdict/gdict-client-context.c:311
 msgid "Port"
 msgstr "Irika"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:299
+#: ../mate-dictionary/libgdict/gdict-client-context.c:312
 msgid "The port of the dictionary server to connect to"
 msgstr "Ny irik'ilay mpizara rakibolana ifandraisana"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:314
+#: ../mate-dictionary/libgdict/gdict-client-context.c:327
 msgid "Status"
 msgstr "Fivoarana"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:315
+#: ../mate-dictionary/libgdict/gdict-client-context.c:328
 msgid "The status code as returned by the dictionary server"
 msgstr "Ny fangon'ny fivoarana izay alefan'ilay mpizara rakibolana"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:763
+#: ../mate-dictionary/libgdict/gdict-client-context.c:777
 #, c-format
 msgid "No connection to the dictionary server at '%s:%d'"
 msgstr "Ny misy fifandraisana amin'ny ilay mpizara rakibolana amin'ny '%s:%d'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1025
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1060
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
-msgstr ""
-"Tsy nahomby ny fizahavana ho an'ny mpampiantrano '%s': tsy misy zavatra azo "
-"ampiasaina"
+msgstr "Tsy nahomby ny fizahavana ho an'ny mpampiantrano '%s': tsy misy zavatra azo ampiasaina"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1055
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1091
 #, c-format
 msgid "Lookup failed for host '%s': %s"
 msgstr "Tsy nahomby ny fizahavana ho an'ny mpampiantrano '%s': %s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1088
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1125
 #, c-format
 msgid "Lookup failed for host '%s': host not found"
-msgstr ""
-"Tsy nahomby ny fizahavana ho an'ny mpampiantrano '%s': tsy hita ilay "
-"mpampiantrano"
+msgstr "Tsy nahomby ny fizahavana ho an'ny mpampiantrano '%s': tsy hita ilay mpampiantrano"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1140
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1177
 #, c-format
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
 "with code %d (server down)"
-msgstr ""
-"Tsy afaka mifandray amin'ny mpizara rakibolana amin'ny'%s:%d'. Fango %d (tsy "
-"mandeha ny mpizara) no navalin'ilay mpizara"
+msgstr "Tsy afaka mifandray amin'ny mpizara rakibolana amin'ny'%s:%d'. Fango %d (tsy mandeha ny mpizara) no navalin'ilay mpizara"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1159
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1196
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
 ": '%s'"
-msgstr ""
-"Tsy afaka nizarazara ny valin-tenin'ilay mpizara rakibolana\n"
-": '%s'"
+msgstr "Tsy afaka nizarazara ny valin-tenin'ilay mpizara rakibolana\n: '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1188
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1225
 #, c-format
 msgid "No definitions found for '%s'"
 msgstr "Tsy nahita fanoritana ny '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1203
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1240
 #, c-format
 msgid "Invalid database '%s'"
 msgstr "Soratra fototra tsy mety '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1218
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1255
 #, c-format
 msgid "Invalid strategy '%s'"
 msgstr "Fomba tsy mety '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1233
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1270
 #, c-format
 msgid "Bad command '%s'"
 msgstr "Baiko diso '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1248
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1285
 #, c-format
 msgid "Bad parameters for command '%s'"
 msgstr "Mpizahaka diso ho an'ny baiko '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1263
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1300
 #, c-format
 msgid "No databases found on dictionary server at '%s'"
-msgstr ""
-"Tsy nahitana soratra fototra mikasika ny mpizara rakibolana amin'ny '%s'"
+msgstr "Tsy nahitana soratra fototra mikasika ny mpizara rakibolana amin'ny '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1278
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1315
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
 msgstr "Tsy nahitana fomba mikasika ny mpizara rakibolana amin'ny '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1708
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1748
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
 msgstr "Tsy nahomby ny fifandraisana amin'ny mpizara rakibolana amin'ny %s:%d"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1747
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1787
 #, c-format
 msgid ""
 "Error while reading reply from server:\n"
 "%s"
-msgstr ""
-"Nisy olana teo am-pamakiana ny valin-teny avy amin'ilay mpizara:\n"
-"%s"
+msgstr "Nisy olana teo am-pamakiana ny valin-teny avy amin'ilay mpizara:\n%s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1820
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1860
+#, c-format
+msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgstr ""
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1894
+#, c-format
 msgid "No hostname defined for the dictionary server"
 msgstr "Tsy misy anaram-pampiantrano voafaritra ho an'ilay mpizara rakibolana"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1856
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1871
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1930
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1945
+#, c-format
 msgid "Unable to create socket"
 msgstr "Tsy nahaforona socket"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1897
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1971
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
 msgstr "Tsy nahafaritra ny channel ho non-blocking: %s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1912
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1986
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
 msgstr "Tsy afaka nifandray tamin'ny mpizara rakibolana amin'ny '%s:%d'"
 
-#: ../mate-dictionary/libgdict/gdict-context.c:196
+#: ../mate-dictionary/libgdict/gdict-context.c:218
 msgid "Local Only"
 msgstr "An-toerana ihany"
 
-#: ../mate-dictionary/libgdict/gdict-context.c:197
+#: ../mate-dictionary/libgdict/gdict-context.c:219
 msgid "Whether the context uses only local dictionaries or not"
 msgstr "Mamaritra ny fampiasan'ny seha-kevitra rakibolana an-toerana na tsia"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:352
-#: ../mate-dictionary/libgdict/gdict-defbox.c:441
-#: ../mate-dictionary/libgdict/gdict-defbox.c:469
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:382
+msgid "Reload the list of available databases"
+msgstr ""
+
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:394
+msgid "Clear the list of available databases"
+msgstr ""
+
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:841
+#: ../mate-dictionary/libgdict/gdict-speller.c:779
+#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:789
+msgid "Error while matching"
+msgstr ""
+
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1143
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1237
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1271
+#: ../logview/logview-window.c:485
 msgid "Not found"
 msgstr "Tsy hita"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:500
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1332
 msgid "F_ind:"
 msgstr "_Tadiavo:"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:513
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1345
 msgid "_Previous"
 msgstr "_Aloha"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:521
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1353
 msgid "_Next"
 msgstr "_Manaraka"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:694
-#: ../mate-dictionary/libgdict/gdict-entry.c:104
-#: ../mate-dictionary/libgdict/gdict-source.c:303
-msgid "Context"
-msgstr "Seha-kevitra"
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:695
-msgid "The GdictContext object used to get the word definition"
-msgstr "Ilay zavatra GdictContext ampiasaina ahazoana fanoritan-teny"
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:709
-#: ../mate-dictionary/libgdict/gdict-entry.c:119
-#: ../mate-dictionary/libgdict/gdict-source.c:260
-msgid "Database"
-msgstr "Soratra fototra"
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:710
-msgid "The database used to query the GdictContext"
-msgstr "Ny soratra fototra ampiasaina anontaniana ny GdictContext"
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:724
-msgid "Font Name"
-msgstr "Anaran'ny endri-tsoratra"
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:725
-msgid "The font to be used by the defbox"
-msgstr "Ny endri-tsoratra ampiasain'ny defbox"
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:731
-msgid "Emphasys Color"
-msgstr "Loko fanamafisana"
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:732
-msgid "Color of emphasised text"
-msgstr "Lokon'ny lahabolana nohamafisina"
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:737
-msgid "Link Color"
-msgstr "Lokon'ny rohy"
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:738
-msgid "Color of hyperlinks"
-msgstr "Lokon'ny hyperlink"
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:743
-msgid "Word Color"
-msgstr "Lokon'ny teny"
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:744
-msgid "Color of the dictionary word"
-msgstr "Lokon'ny tenin'ilay rakibolana"
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:749
-msgid "Source Color"
-msgstr "Lokon'ny loharano"
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:750
-msgid "Color of the dictionary source"
-msgstr "Lokon'ny loharanon'ilay rakibolana"
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1041
-msgid "Progress"
-msgstr "fivoarana"
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1078
-#, c-format
-msgid "Definition for '%s' (%d/%d)"
-msgstr "Fanoritana ny '%s' (%d/%d)"
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1280
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2528
 msgid "Error while looking up definition"
 msgstr "Nisy olana teo am-pizahana fanoritana"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1324
-#, c-format
-msgid "Attempting to look up '%s' but no GdictContext defined.  Aborting."
-msgstr ""
-"Nanandrana nizaha ny '%s' saingy tsy misy GdictContext voafaritra. Hijanona."
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1332
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2570
+#: ../mate-dictionary/libgdict/gdict-speller.c:737
 msgid "Another search is in progress"
 msgstr "Misy fizahana efa atao"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1333
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2571
+#: ../mate-dictionary/libgdict/gdict-speller.c:738
 msgid "Please wait until the current search ends."
 msgstr "Mandrasa ny fiafaran'ity fizahana iray ity"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1364
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2610
 msgid "Error while retrieving the definition"
 msgstr "Nisy olana teo am-pakana ilay fanoritana"
 
-#: ../mate-dictionary/libgdict/gdict-entry.c:105
-msgid "The GdictContext object bound to this entry"
-msgstr "Ny zavatra GdictContext miaraka amin'ity teny ity"
-
-#: ../mate-dictionary/libgdict/gdict-entry.c:120
-msgid "The database to be used to generate the completion list"
-msgstr "Ny soratra fototra ampiasaina hamoronana ny lisitry ny completion"
-
-#: ../mate-dictionary/libgdict/gdict-entry.c:134
-#: ../mate-dictionary/libgdict/gdict-source.c:274
-msgid "Strategy"
-msgstr "Fomba"
-
-#: ../mate-dictionary/libgdict/gdict-entry.c:135
-msgid "The matching strategy to be used to generate the completion list"
-msgstr "Ny fomba fampifanojoana ampiasaina hamoronana ilay completion list"
-
-#: ../mate-dictionary/libgdict/gdict-source.c:218
+#: ../mate-dictionary/libgdict/gdict-source.c:232
 msgid "Filename"
 msgstr "Anaran-drakitra"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:219
+#: ../mate-dictionary/libgdict/gdict-source.c:233
 msgid "The filename used by this dictionary source"
 msgstr "Ny anaran-drakitra ampiasain'ity loharanon-drakibolana ity"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:232
-#: ../gsearchtool/gsearchtool.c:2474
+#: ../mate-dictionary/libgdict/gdict-source.c:246
+#: ../gsearchtool/gsearchtool.c:2382
 msgid "Name"
 msgstr "Anarana"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:233
+#: ../mate-dictionary/libgdict/gdict-source.c:247
 msgid "The display name of this dictonary source"
 msgstr "Ny anarana misehon'ity loharanon-drakibolana ity"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:246
+#: ../mate-dictionary/libgdict/gdict-source.c:260
 msgid "Description"
 msgstr "Fanoritsoritana"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:247
+#: ../mate-dictionary/libgdict/gdict-source.c:261
 msgid "The description of this dictionary source"
 msgstr "Ny fanoritsoritana ity loharanon-drakibolana ity"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:261
+#: ../mate-dictionary/libgdict/gdict-source.c:274
+#: ../mate-dictionary/libgdict/gdict-speller.c:384
+msgid "Database"
+msgstr "Soratra fototra"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:275
 msgid "The default database of this dictonary source"
 msgstr "Ny soratra fototra tsotra an'ity loharanon-drakibolana ity"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:275
+#: ../mate-dictionary/libgdict/gdict-source.c:288
+#: ../mate-dictionary/libgdict/gdict-speller.c:391
+msgid "Strategy"
+msgstr "Fomba"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:289
 msgid "The default strategy of this dictonary source"
 msgstr "Ny fomba tsotra an'ity loharanon-drakibolana ity"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:288
+#: ../mate-dictionary/libgdict/gdict-source.c:302
 msgid "Transport"
 msgstr "Fitaterana"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:289
+#: ../mate-dictionary/libgdict/gdict-source.c:303
 msgid "The transport mechanism used by this dictionary source"
 msgstr "Ny fomba fitaterana ampiasain'ity loharanon-drakibolana ity"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:304
+#: ../mate-dictionary/libgdict/gdict-source.c:317
+#: ../mate-dictionary/libgdict/gdict-speller.c:377
+msgid "Context"
+msgstr "Seha-kevitra"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:318
 msgid "The GdictContext bound to this source"
 msgstr "Ny GdictContext miaraka amin'ity loharano ity"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:399
+#: ../mate-dictionary/libgdict/gdict-source.c:413
 #, c-format
 msgid "Invalid transport type '%d'"
 msgstr "Karazan-pitaterana tsy mety '%d'"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:427
+#: ../mate-dictionary/libgdict/gdict-source.c:441
 #, c-format
 msgid "No '%s' group found inside the dictionary source definition"
 msgstr "Tsy misy vondrona '%s' anatin'ny fanoritan'ilay loharanon-drakibolana"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:443
-#: ../mate-dictionary/libgdict/gdict-source.c:467
-#: ../mate-dictionary/libgdict/gdict-source.c:491
-#: ../mate-dictionary/libgdict/gdict-source.c:516
+#: ../mate-dictionary/libgdict/gdict-source.c:457
+#: ../mate-dictionary/libgdict/gdict-source.c:481
+#: ../mate-dictionary/libgdict/gdict-source.c:505
+#: ../mate-dictionary/libgdict/gdict-source.c:530
 #, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
-msgstr ""
-"Tsy mety mahazo ny famaha '%s' anatin'ny fanoritan'ilay loharanon-"
-"drakibolana: %s"
+msgstr "Tsy mety mahazo ny famaha '%s' anatin'ny fanoritan'ilay loharanon-drakibolana: %s"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:541
+#: ../mate-dictionary/libgdict/gdict-source.c:555
 #, c-format
 msgid ""
 "Unable to get the '%s' key inside the dictionary source definition file: %s"
-msgstr ""
-"Tsy mety mahazo ny famaha '%s' anatin'ny rakitry ny fanoritan'ny loharanon-"
-"drakibolana: %s"
+msgstr "Tsy mety mahazo ny famaha '%s' anatin'ny rakitry ny fanoritan'ny loharanon-drakibolana: %s"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:727
+#: ../mate-dictionary/libgdict/gdict-source.c:741
+#, c-format
 msgid "Dictionary source does not have name"
 msgstr "Tsy manana anarana ny loharanon'ny rakibolana"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:736
+#: ../mate-dictionary/libgdict/gdict-source.c:750
 #, c-format
 msgid "Dictionary source '%s' has invalid transport '%s'"
 msgstr "Manana fitaterana '%s' tsy mety ny loharanon-drakibolana '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:162
+#: ../mate-dictionary/libgdict/gdict-source-chooser.c:299
+msgid "Reload the list of available sources"
+msgstr ""
+
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:171
 msgid "Paths"
 msgstr "Sori-dàlana"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:163
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:172
 msgid "Search paths used by this object"
 msgstr "Sori-dàlan'ny fikarohana ampiasain'ity zavatra ity"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:175
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:184
 msgid "Sources"
 msgstr "Loharano"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:176
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:185
 msgid "Dictionary sources found"
 msgstr "Hita ireo loharanon-drakibolana"
 
-#: ../mate-dictionary/src/gdict-about.c:61
-#: ../mate-dictionary/src/gdict-applet.c:610
+#: ../mate-dictionary/libgdict/gdict-speller.c:354
+msgid "Clear the list of similar words"
+msgstr ""
+
+#: ../mate-dictionary/libgdict/gdict-speller.c:378
+msgid "The GdictContext object used to get the word definition"
+msgstr "Ilay zavatra GdictContext ampiasaina ahazoana fanoritan-teny"
+
+#: ../mate-dictionary/libgdict/gdict-speller.c:385
+msgid "The database used to query the GdictContext"
+msgstr "Ny soratra fototra ampiasaina anontaniana ny GdictContext"
+
+#: ../mate-dictionary/libgdict/gdict-speller.c:392
+msgid "The strategy used to query the GdictContext"
+msgstr ""
+
+#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:365
+msgid "Reload the list of available strategies"
+msgstr ""
+
+#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:377
+msgid "Clear the list of available strategies"
+msgstr ""
+
+#: ../mate-dictionary/libgdict/gdict-utils.c:97
+msgid "GDict debugging flags to set"
+msgstr ""
+
+#: ../mate-dictionary/libgdict/gdict-utils.c:97
+#: ../mate-dictionary/libgdict/gdict-utils.c:99
+msgid "FLAGS"
+msgstr ""
+
+#: ../mate-dictionary/libgdict/gdict-utils.c:99
+msgid "GDict debugging flags to unset"
+msgstr ""
+
+#: ../mate-dictionary/libgdict/gdict-utils.c:157
+msgid "GDict Options"
+msgstr ""
+
+#: ../mate-dictionary/libgdict/gdict-utils.c:158
+msgid "Show GDict Options"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-about.c:57
+#: ../mate-dictionary/src/gdict-applet.c:591
 msgid "Look up words in dictionaries"
 msgstr "Hitady teny anaty rakibolana"
-
-#: ../mate-dictionary/src/gdict-about.c:87
-#, c-format
-msgid "Unable to open the application icon: %s"
-msgstr "Tsy afaka nanokatra ny kisarin'ilay rindran'asa: %s"
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
 #. * keep the new lines.
-#: ../mate-dictionary/src/gdict-app.c:216
+#: ../mate-dictionary/src/gdict-app.c:217
 #, c-format
 msgid ""
 "Definition for '%s'\n"
 "  From '%s':\n"
 "\n"
 "%s\n"
-msgstr ""
-"Fanoritana ho an'ny '%s'\n"
-" Avy amin'ny '%s':\n"
-"\n"
-"%s\n"
+msgstr "Fanoritana ho an'ny '%s'\n Avy amin'ny '%s':\n\n%s\n"
 
-#: ../mate-dictionary/src/gdict-app.c:230
+#: ../mate-dictionary/src/gdict-app.c:231
 #, c-format
 msgid "Error: %s\n"
 msgstr "Tsy fetezana: %s\n"
 
-#: ../mate-dictionary/src/gdict-app.c:256
+#: ../mate-dictionary/src/gdict-app.c:257
+#, c-format
 msgid "See mate-dictionary --help for usage\n"
-msgstr ""
-"Jereo anatin'ny mate-dictionary --help ny fampiasana ilay rakibolana\n"
+msgstr "Jereo anatin'ny mate-dictionary --help ny fampiasana ilay rakibolana\n"
 
-#: ../mate-dictionary/src/gdict-app.c:269
+#: ../mate-dictionary/src/gdict-app.c:270
 msgid "Unable to find a suitable dictionary source"
 msgstr "Tsy mety mahita loharanon-drakibolana mitombina"
 
-#: ../mate-dictionary/src/gdict-app.c:303
+#: ../mate-dictionary/src/gdict-app.c:304
 #, c-format
 msgid ""
 "Error while looking up the definition of \"%s\":\n"
 "%s"
 msgstr "Nisy olana teo am-pizahavana ny fanoritana ny \"%s\":%s"
 
-#: ../mate-dictionary/src/gdict-app.c:348
-#: ../mate-dictionary/src/gdict-applet.c:1421
-#, c-format
-msgid "Unable to rename file '%s' to '%s': %s"
-msgstr "Tsy mahaova ny anaran'ilay rakitra '%s' ho '%s': %s"
-
-#: ../mate-dictionary/src/gdict-app.c:372
-#: ../mate-dictionary/src/gdict-app.c:395
-#: ../mate-dictionary/src/gdict-applet.c:1445
-#: ../mate-dictionary/src/gdict-applet.c:1468
-#, c-format
-msgid "Unable to create the data directory '%s': %s"
-msgstr "Tsy afaka mamorona ny laha-tahirin'ny data  '%s': %s"
-
-#: ../mate-dictionary/src/gdict-app.c:430
+#: ../mate-dictionary/src/gdict-app.c:337
+#: ../mate-dictionary/src/gdict-app.c:351
 msgid "Words to look up"
 msgstr "Teny ho zahavana"
 
-#: ../mate-dictionary/src/gdict-app.c:430
+#: ../mate-dictionary/src/gdict-app.c:337
+#: ../mate-dictionary/src/gdict-app.c:339
+#: ../mate-dictionary/src/gdict-app.c:351
 msgid "word"
 msgstr "teny"
 
-#: ../mate-dictionary/src/gdict-app.c:432
+#: ../mate-dictionary/src/gdict-app.c:339
+msgid "Words to match"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "Dictionary source to use"
 msgstr "Loharanon-drakibolana ampiasaina"
 
-#: ../mate-dictionary/src/gdict-app.c:432
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "source"
 msgstr "loharano"
 
-#: ../mate-dictionary/src/gdict-app.c:434
+#: ../mate-dictionary/src/gdict-app.c:343
 msgid "Show available dictionary sources"
 msgstr "Asehoy ireo loharanon-drakibolana misy"
 
-#: ../mate-dictionary/src/gdict-app.c:436
+#: ../mate-dictionary/src/gdict-app.c:345
 msgid "Print result to the console"
 msgstr "Atontay amin'ny konsoly ny valiny"
 
-#: ../mate-dictionary/src/gdict-app.c:438
+#: ../mate-dictionary/src/gdict-app.c:347
 msgid "Database to use"
 msgstr "Soratra fototra ampiasaina"
 
+#: ../mate-dictionary/src/gdict-app.c:347
+msgid "db"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-app.c:349
+msgid "Strategy to use"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-app.c:349
+msgid "strat"
+msgstr ""
+
 #. create the new option context
-#: ../mate-dictionary/src/gdict-app.c:454
+#: ../mate-dictionary/src/gdict-app.c:367
 msgid " - Look up words in dictionaries"
 msgstr " - Hizaha teny anaty rakibolana"
 
-#: ../mate-dictionary/src/gdict-app.c:458
-msgid "Dictionary and spelling tool"
-msgstr "Rakibolana sy fitaovana fijerena tsipelina"
-
-#: ../mate-dictionary/src/gdict-app.c:459
-msgid "Show Dictionary options"
-msgstr "Asehoy ireo safidy mikasika ny rakibolana "
-
-#: ../mate-dictionary/src/gdict-applet.c:245
-#: ../mate-dictionary/src/gdict-window.c:544
+#: ../mate-dictionary/src/gdict-applet.c:206
+#: ../mate-dictionary/src/gdict-window.c:834
 msgid "Save a Copy"
 msgstr "Hitana dika mitovy"
 
-#: ../mate-dictionary/src/gdict-applet.c:255
-#: ../mate-dictionary/src/gdict-window.c:554
+#: ../mate-dictionary/src/gdict-applet.c:216
+#: ../mate-dictionary/src/gdict-window.c:844
 msgid "Untitled document"
 msgstr "Tahirin-kevitra vaovao"
 
-#: ../mate-dictionary/src/gdict-applet.c:276
-#: ../mate-dictionary/src/gdict-window.c:575
+#: ../mate-dictionary/src/gdict-applet.c:237
+#: ../mate-dictionary/src/gdict-window.c:865
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "Nisy olana teo am-panoratana amin'ny  '%s'"
 
-#: ../mate-dictionary/src/gdict-applet.c:384
+#: ../mate-dictionary/src/gdict-applet.c:362
 msgid "Clear the definitions found"
 msgstr "Fafao ireo fanoritana hita"
 
-#: ../mate-dictionary/src/gdict-applet.c:387
+#: ../mate-dictionary/src/gdict-applet.c:364
 msgid "Clear definition"
 msgstr "Fafao ilay fanoritana"
 
-#: ../mate-dictionary/src/gdict-applet.c:388
+#: ../mate-dictionary/src/gdict-applet.c:365
 msgid "Clear the text of the definition"
 msgstr "Fafao ny lahabolan'ilay fanoritana"
 
-#: ../mate-dictionary/src/gdict-applet.c:398
+#: ../mate-dictionary/src/gdict-applet.c:372
 msgid "Print the definitions found"
 msgstr "Atontay ireo fanoritana hita"
 
-#: ../mate-dictionary/src/gdict-applet.c:401
+#: ../mate-dictionary/src/gdict-applet.c:374
 msgid "Print definition"
 msgstr "Atontay ilay fanoritana"
 
-#: ../mate-dictionary/src/gdict-applet.c:402
+#: ../mate-dictionary/src/gdict-applet.c:375
 msgid "Print the text of the definition"
 msgstr "Atontay ny lahabolan'ilay fanoritana"
 
-#: ../mate-dictionary/src/gdict-applet.c:412
+#: ../mate-dictionary/src/gdict-applet.c:382
 msgid "Save the definitions found"
 msgstr "Raiketo ilay fanoritana hita"
 
-#: ../mate-dictionary/src/gdict-applet.c:415
+#: ../mate-dictionary/src/gdict-applet.c:384
 msgid "Save definition"
 msgstr "Raiketo ilay fanoritana"
 
-#: ../mate-dictionary/src/gdict-applet.c:416
+#: ../mate-dictionary/src/gdict-applet.c:385
 msgid "Save the text of the definition to a file"
 msgstr "Raiketo anaty rakitra ny lahabolan'ilay fanoritana"
 
-#: ../mate-dictionary/src/gdict-applet.c:550
-msgid "Toggle dictionary window"
-msgstr "Asehoy/afeno ny fikandran'ny rakibolana"
-
-#: ../mate-dictionary/src/gdict-applet.c:551
-msgid "Show or hide the definition window"
-msgstr "Maneho na manafina ny fikandran'ny fanoritana"
-
-#: ../mate-dictionary/src/gdict-applet.c:554
+#: ../mate-dictionary/src/gdict-applet.c:533
 msgid "Click to view the dictionary window"
 msgstr "Kitio isehoan'ny fikandran'ny rakibolana"
 
-#: ../mate-dictionary/src/gdict-applet.c:609
-msgid "Dictionary entry"
-msgstr "Fampidirana ny teny ho zahavana"
+#: ../mate-dictionary/src/gdict-applet.c:535
+msgid "Toggle dictionary window"
+msgstr "Asehoy/afeno ny fikandran'ny rakibolana"
 
-#: ../mate-dictionary/src/gdict-applet.c:613
+#: ../mate-dictionary/src/gdict-applet.c:536
+msgid "Show or hide the definition window"
+msgstr "Maneho na manafina ny fikandran'ny fanoritana"
+
+#: ../mate-dictionary/src/gdict-applet.c:588
 msgid "Type the word you want to look up"
 msgstr "Soraty izay teny tianao zahavana"
 
-#: ../mate-dictionary/src/gdict-applet.c:747
-msgid "Preferences"
-msgstr "Safidy manokana"
+#: ../mate-dictionary/src/gdict-applet.c:590
+msgid "Dictionary entry"
+msgstr "Fampidirana ny teny ho zahavana"
 
-#: ../mate-dictionary/src/gdict-applet.c:779
-#: ../mate-dictionary/src/gdict-pref-dialog.c:471
-#: ../mate-dictionary/src/gdict-source-dialog.c:324
-#: ../mate-dictionary/src/gdict-window.c:765
+#: ../mate-dictionary/src/gdict-applet.c:716
+#: ../mate-dictionary/src/gdict-window.c:998
+msgid "Dictionary Preferences"
+msgstr "Safidy manokan'ny rakibolana"
+
+#: ../mate-dictionary/src/gdict-applet.c:742
+#: ../mate-dictionary/src/gdict-pref-dialog.c:503
+#: ../mate-dictionary/src/gdict-source-dialog.c:479
+#: ../mate-dictionary/src/gdict-window.c:1140
+#, c-format
 msgid "There was an error while displaying help"
 msgstr "Nisy olana teo am-panehoana ireo toro-làlana"
 
-#: ../mate-dictionary/src/gdict-applet.c:938
-#: ../mate-dictionary/src/gdict-window.c:270
+#: ../mate-dictionary/src/gdict-applet.c:896
+#: ../mate-dictionary/src/gdict-window.c:514
 #, c-format
 msgid "No dictionary source available with name '%s'"
-msgstr ""
-"Tsy misy loharanon-drakibolana azo ampiasaina mifanaraka amin'ny anarana '%s'"
+msgstr "Tsy misy loharanon-drakibolana azo ampiasaina mifanaraka amin'ny anarana '%s'"
 
-#: ../mate-dictionary/src/gdict-applet.c:942
-#: ../mate-dictionary/src/gdict-window.c:274
+#: ../mate-dictionary/src/gdict-applet.c:900
+#: ../mate-dictionary/src/gdict-window.c:518
 msgid "Unable to find dictionary source"
 msgstr "Tsy mety mahita ilay loharanon-drakibolana"
 
-#: ../mate-dictionary/src/gdict-applet.c:958
-#: ../mate-dictionary/src/gdict-window.c:290
+#: ../mate-dictionary/src/gdict-applet.c:916
+#: ../mate-dictionary/src/gdict-window.c:534
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "Tsy misy seha-kevitra azo ampiasaina ho an'ny loharano '%s'"
 
-#: ../mate-dictionary/src/gdict-applet.c:962
-#: ../mate-dictionary/src/gdict-window.c:294
+#: ../mate-dictionary/src/gdict-applet.c:920
+#: ../mate-dictionary/src/gdict-window.c:538
 msgid "Unable to create a context"
 msgstr "Tsy mahaforona seha-kevitra"
 
-#: ../mate-dictionary/src/gdict-applet.c:1243
-msgid "Unable to load the applet icon"
-msgstr "Tsy afaka maka ny kisarin'ilay applet"
-
-#: ../mate-dictionary/src/gdict-applet.c:1272
-#: ../mate-dictionary/src/gdict-window.c:1320
+#: ../mate-dictionary/src/gdict-applet.c:1172
+#: ../mate-dictionary/src/gdict-window.c:2078
 msgid "Unable to connect to MateConf"
 msgstr "Tsy afaka mifandray amin'ny MateConf"
 
-#: ../mate-dictionary/src/gdict-applet.c:1287
-#: ../mate-dictionary/src/gdict-window.c:1336
+#: ../mate-dictionary/src/gdict-applet.c:1185
+#: ../mate-dictionary/src/gdict-window.c:2091
 msgid "Unable to get notification for preferences"
 msgstr "Tsy mety mahazo fampilazana ho an'ireo safidy manokana"
 
-#: ../mate-dictionary/src/gdict-applet.c:1302
-#: ../mate-dictionary/src/gdict-window.c:1352
+#: ../mate-dictionary/src/gdict-applet.c:1199
+#: ../mate-dictionary/src/gdict-window.c:2104
 msgid "Unable to get notification for the document font"
 msgstr "Tsy mety mahazo fampilazana ho an'ny endri-tsoratry ny tahirin-kevitra"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:272
+#: ../mate-dictionary/src/gdict-common.c:80
+#, c-format
+msgid "Unable to rename file '%s' to '%s': %s"
+msgstr "Tsy mahaova ny anaran'ilay rakitra '%s' ho '%s': %s"
+
+#: ../mate-dictionary/src/gdict-common.c:104
+#: ../mate-dictionary/src/gdict-common.c:127
+#, c-format
+msgid "Unable to create the data directory '%s': %s"
+msgstr "Tsy afaka mamorona ny laha-tahirin'ny data  '%s': %s"
+
+#: ../mate-dictionary/src/gdict-pref-dialog.c:244
+msgid "Edit Dictionary Source"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-pref-dialog.c:308
 msgid "Add Dictionary Source"
 msgstr "Hanampy loharanon-drakibolana"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:318
+#: ../mate-dictionary/src/gdict-pref-dialog.c:353
 #, c-format
 msgid "Remove \"%s\"?"
 msgstr "Esorina ny \"%s\"?"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:320
+#: ../mate-dictionary/src/gdict-pref-dialog.c:355
 msgid "This will permanently remove the dictionary source from the list."
-msgstr ""
-"Izany dia mamafa tanteraka ilay loharanon-drakibolana tao anaty lisitra."
+msgstr "Izany dia mamafa tanteraka ilay loharanon-drakibolana tao anaty lisitra."
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:350
+#: ../mate-dictionary/src/gdict-pref-dialog.c:385
 #, c-format
 msgid "Unable to remove source '%s'"
 msgstr "Tsy afaka mamafa ny loharano '%s'"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:638
+#: ../mate-dictionary/src/gdict-pref-dialog.c:666
 msgid "Add a new dictionary source"
 msgstr "Manampy loharanon-drakibolana iray vaovao"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:646
+#: ../mate-dictionary/src/gdict-pref-dialog.c:672
 msgid "Remove the currently selected dictionary source"
 msgstr "Manala io loharanon-drakibolana voafaritra io"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:661
+#: ../mate-dictionary/src/gdict-pref-dialog.c:685
 msgid "Set the font used for printing the definitions"
 msgstr "Mamaritra ny endri-tsoratra ampiasaina rehefa hanonta fanoritana"
 
-#: ../mate-dictionary/src/gdict-print.c:187
+#: ../mate-dictionary/src/gdict-print.c:249
+#: ../mate-dictionary/src/gdict-print.c:313
 #, c-format
-msgid "%s (page %d)"
-msgstr "%s (pejy %d)"
+msgid "Unable to display the preview: %s"
+msgstr ""
 
-#: ../mate-dictionary/src/gdict-print.c:246
-msgid "Print Preview"
-msgstr "Topy mason'ny fanontana"
-
-#: ../mate-dictionary/src/gdict-source-dialog.c:276
+#: ../mate-dictionary/src/gdict-source-dialog.c:341
+#: ../mate-dictionary/src/gdict-source-dialog.c:434
 msgid "Unable to create a source file"
 msgstr "Tsy afaka mamorona raki-doharano"
 
-#: ../mate-dictionary/src/gdict-source-dialog.c:295
+#: ../mate-dictionary/src/gdict-source-dialog.c:359
+#: ../mate-dictionary/src/gdict-source-dialog.c:452
 msgid "Unable to save source file"
 msgstr "Tsy afaka mandraikitra ilay raki-doharano"
 
-#: ../mate-dictionary/src/gdict-window.c:175
+#: ../mate-dictionary/src/gdict-window.c:315
 #, c-format
 msgid "Searching for '%s'..."
 msgstr "Mikaroka ny '%s'..."
 
-#: ../mate-dictionary/src/gdict-window.c:199
-#: ../mate-dictionary/src/gdict-window.c:221
+#: ../mate-dictionary/src/gdict-window.c:347
+#: ../mate-dictionary/src/gdict-window.c:404
 msgid "No definitions found"
 msgstr "Tsy nahitana fanoritana"
 
-#: ../mate-dictionary/src/gdict-window.c:201
+#: ../mate-dictionary/src/gdict-window.c:349
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
 msgstr[0] "Nisy fanoritana iray hita"
 msgstr[1] "Nisy fanoritana %d hita"
 
-#: ../mate-dictionary/src/gdict-window.c:363
+#: ../mate-dictionary/src/gdict-window.c:603
 #, c-format
 msgid "%s - Dictionary"
 msgstr "%s - Rakibolana"
 
-#: ../mate-dictionary/src/gdict-window.c:684
-msgid "Dictionary Preferences"
-msgstr "Safidy manokan'ny rakibolana"
-
-#: ../mate-dictionary/src/gdict-window.c:800
+#: ../mate-dictionary/src/gdict-window.c:1175 ../logview/logview-window.c:807
 msgid "_File"
 msgstr "_Rakitra"
 
-#: ../mate-dictionary/src/gdict-window.c:802
+#: ../mate-dictionary/src/gdict-window.c:1178
 msgid "_Go"
 msgstr "_Alefa"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:806
+#: ../mate-dictionary/src/gdict-window.c:1182
 msgid "_New"
 msgstr "_Vaovao"
 
-#: ../mate-dictionary/src/gdict-window.c:807
+#: ../mate-dictionary/src/gdict-window.c:1183
 msgid "New look up"
 msgstr "Fizahana vaovao"
 
-#: ../mate-dictionary/src/gdict-window.c:808
+#: ../mate-dictionary/src/gdict-window.c:1184
 msgid "_Save a Copy..."
 msgstr "_Handraikitra dika mitovy..."
 
-#: ../mate-dictionary/src/gdict-window.c:810
+#: ../mate-dictionary/src/gdict-window.c:1186
+msgid "P_review..."
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-window.c:1187
+msgid "Preview this document"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-window.c:1188
 msgid "_Print..."
 msgstr "_Atontay..."
 
-#: ../mate-dictionary/src/gdict-window.c:811
+#: ../mate-dictionary/src/gdict-window.c:1189
 msgid "Print this document"
 msgstr "Atontay ity tahirin-kevitra ity"
 
-#: ../mate-dictionary/src/gdict-window.c:818 ../logview/logview.c:99
+#: ../mate-dictionary/src/gdict-window.c:1196 ../logview/logview-window.c:822
 msgid "Select _All"
 msgstr "Farito izy _rehetra"
 
-#: ../mate-dictionary/src/gdict-window.c:821
+#: ../mate-dictionary/src/gdict-window.c:1199
 msgid "Find a word or phrase in the document"
 msgstr "Hitady teny na andian-teny anatin'ity tahirin-kevitra ity"
 
-#: ../mate-dictionary/src/gdict-window.c:823
+#: ../mate-dictionary/src/gdict-window.c:1201
 msgid "Find Ne_xt"
 msgstr "_Manaraka"
 
-#: ../mate-dictionary/src/gdict-window.c:825
+#: ../mate-dictionary/src/gdict-window.c:1203
 msgid "Find Pre_vious"
 msgstr "A_loha"
 
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:831
+#: ../mate-dictionary/src/gdict-window.c:1209
 msgid "_Previous Definition"
 msgstr "_Fanoritana teo aloha"
 
-#: ../mate-dictionary/src/gdict-window.c:832
+#: ../mate-dictionary/src/gdict-window.c:1210
 msgid "Go to the previous definition"
 msgstr "Mankany amin'ny fanoritana teo aloha"
 
-#: ../mate-dictionary/src/gdict-window.c:833
+#: ../mate-dictionary/src/gdict-window.c:1211
 msgid "_Next Definition"
 msgstr "Fanoritana _manaraka"
 
-#: ../mate-dictionary/src/gdict-window.c:834
+#: ../mate-dictionary/src/gdict-window.c:1212
 msgid "Go to the next definition"
 msgstr "Mankany amin'ny fanoritana manaraka"
 
-#: ../mate-dictionary/src/gdict-window.c:835
+#: ../mate-dictionary/src/gdict-window.c:1213
 msgid "_First Definition"
 msgstr "Fanoritana _voalohany"
 
-#: ../mate-dictionary/src/gdict-window.c:836
+#: ../mate-dictionary/src/gdict-window.c:1214
 msgid "Go to the first definition"
 msgstr "Mankany amin'ny fanoritana voalohany"
 
-#: ../mate-dictionary/src/gdict-window.c:837
+#: ../mate-dictionary/src/gdict-window.c:1215
 msgid "_Last Definition"
 msgstr "_Fanoritana farany"
 
-#: ../mate-dictionary/src/gdict-window.c:838
+#: ../mate-dictionary/src/gdict-window.c:1216
 msgid "Go to the last definition"
 msgstr "Mankany amin'ny fanoritana farany"
 
-#: ../mate-dictionary/src/gdict-window.c:1133
+#. View menu
+#: ../mate-dictionary/src/gdict-window.c:1219
+msgid "Similar _Words"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-window.c:1221
+msgid "Dictionary Sources"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-window.c:1223
+msgid "Available _Databases"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-window.c:1225
+msgid "Available St_rategies"
+msgstr ""
+
+#. View menu
+#: ../mate-dictionary/src/gdict-window.c:1242
+msgid "_Sidebar"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-window.c:1244
+msgid "S_tatusbar"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-window.c:1365
+#, c-format
+msgid "Dictionary source `%s' selected"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-window.c:1386
+#, c-format
+msgid "Strategy `%s' selected"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-window.c:1406
+#, c-format
+msgid "Database `%s' selected"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-window.c:1426
+#, c-format
+msgid "Word `%s' selected"
+msgstr ""
+
+#. speller
+#: ../mate-dictionary/src/gdict-window.c:1448
+msgid "Double-click on the word to look up"
+msgstr ""
+
+#. strat-chooser
+#: ../mate-dictionary/src/gdict-window.c:1454
+msgid "Double-click on the matching strategy to use"
+msgstr ""
+
+#. source-chooser
+#: ../mate-dictionary/src/gdict-window.c:1459
+msgid "Double-click on the source to use"
+msgstr ""
+
+#. db-chooser
+#: ../mate-dictionary/src/gdict-window.c:1468
+msgid "Double-click on the database to use"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-window.c:1755
 msgid "Look _up:"
 msgstr "_Zahavo:"
 
-#: ../mate-dictionary/src/gdict-window.c:1376
-msgid "Unable to load the application icon"
-msgstr "Tsy afaka maka ny kisarin'ilay rindran'asa"
-
-#: ../mate-screenshot/mate-egg-xfer-dialog.c:191
-msgid " (invalid Unicode)"
-msgstr "(fango diso)"
-
-#: ../mate-screenshot/mate-egg-xfer-dialog.c:471
-#, c-format
-msgid "(%d:%02d:%d Remaining)"
-msgstr "(%d:%02d:%d sisa)"
-
-#: ../mate-screenshot/mate-egg-xfer-dialog.c:476
-#, c-format
-msgid "(%d:%02d Remaining)"
-msgstr "(%d:%02d sisa)"
-
-#: ../mate-screenshot/mate-egg-xfer-dialog.c:587
-#, c-format
-msgid "%ld of %ld"
-msgstr "%ld amin'ny %ld"
-
-#: ../mate-screenshot/mate-panel-screenshot.c:86
-msgid "Error loading help"
-msgstr "Nisy olana teo am-pakana ny toro-làlana"
-
-#: ../mate-screenshot/mate-panel-screenshot.c:87
-msgid "There was an error displaying the help pages for this dialog:"
+#: ../mate-dictionary/src/gdict-window.c:1829
+msgid "Similar words"
 msgstr ""
-"Nisy olana teo am-panehoana ireo pejin'ny toro-làlana ho an'ity takila ity:"
 
-#. translators: this is the name of the file that gets made up
-#. * with the screenshot if a specific window is taken
-#: ../mate-screenshot/mate-panel-screenshot.c:110
-#, c-format
-msgid "Screenshot-%s.png"
-msgstr "Sarin'efijery-%s.png"
+#: ../mate-dictionary/src/gdict-window.c:1842
+msgid "Available dictionaries"
+msgstr ""
 
-#. translators: this is the name of the file that gets made up
-#. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/mate-panel-screenshot.c:116
-#: ../mate-screenshot/screenshot-save.c:164
-msgid "Screenshot.png"
-msgstr "Sarin'efijery.png"
+#: ../mate-dictionary/src/gdict-window.c:1855
+msgid "Available strategies"
+msgstr ""
 
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if a specific window is
-#. * taken
-#: ../mate-screenshot/mate-panel-screenshot.c:152
-#, c-format
-msgid "Screenshot-%s-%d.png"
-msgstr "Sarin'efijery-%s-%d.png"
+#: ../mate-dictionary/src/gdict-window.c:1866
+msgid "Dictionary sources"
+msgstr ""
 
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if the entire screen is
-#. * taken
-#: ../mate-screenshot/mate-panel-screenshot.c:160
-#, c-format
-msgid "Screenshot-%d.png"
-msgstr "Sarin'efijery-%d.png"
+#: ../mate-screenshot/mate-screenshot.c:133
+msgid "Error loading the help page"
+msgstr ""
 
-#: ../mate-screenshot/mate-panel-screenshot.c:337
-msgid "Unable to take a screenshot of the current desktop."
-msgstr "Tsy afaka maka sary ity sehatr'asa ity."
+#: ../mate-screenshot/mate-screenshot.c:245
+msgid "None"
+msgstr ""
 
-#: ../mate-screenshot/mate-panel-screenshot.c:439
-msgid "Grab a window instead of the entire screen"
-msgstr "Fikandrana alaina sary fa tsy ny efijery iray manontolo"
+#: ../mate-screenshot/mate-screenshot.c:246
+msgid "Drop shadow"
+msgstr ""
 
-#: ../mate-screenshot/mate-panel-screenshot.c:440
-msgid "Include the window border with the screenshot"
-msgstr "Ataovy tafiditra anatin'ny sarin'ny efijery ny sisin'ilay fikandrana"
+#: ../mate-screenshot/mate-screenshot.c:247
+msgid "Border"
+msgstr ""
 
-#: ../mate-screenshot/mate-panel-screenshot.c:441
-msgid "Take screenshot after specified delay [in seconds]"
-msgstr "Makà sary aorian'ny fotoana voatondro [segaondra]"
+#. * Include pointer *
+#: ../mate-screenshot/mate-screenshot.c:351
+msgid "Include _pointer"
+msgstr ""
 
-#: ../mate-screenshot/mate-panel-screenshot.c:441
+#. * Include window border *
+#: ../mate-screenshot/mate-screenshot.c:360
+msgid "Include the window _border"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.c:375
+msgid "Apply _effect:"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.c:437
+msgid "Grab the whole _desktop"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.c:449
+msgid "Grab the current _window"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.c:461
+msgid "Select _area to grab"
+msgstr ""
+
+#. translators: this is the first part of the "grab after a
+#. * delay of <spin button> seconds".
+#. 
+#: ../mate-screenshot/mate-screenshot.c:478
+msgid "Grab _after a delay of"
+msgstr ""
+
+#. translators: this is the last part of the "grab after a
+#. * delay of <spin button> seconds".
+#. 
+#: ../mate-screenshot/mate-screenshot.c:498
+#: ../mate-screenshot/mate-screenshot.c:1289
 msgid "seconds"
 msgstr "segeondra"
 
-#: ../mate-screenshot/mate-panel-screenshot.c:442
-msgid "Effect to add to the border"
-msgstr "Effet ampiarahina amin'ny sisiny"
-
-#: ../mate-screenshot/mate-panel-screenshot.c:442
-msgid "effect"
-msgstr "effect"
-
-#: ../mate-screenshot/mate-panel-screenshot.c:452
-msgid "Options for Screenshot"
-msgstr "Safidy mikasika ny sarin'efijery"
-
-#: ../mate-screenshot/mate-panel-screenshot.c:453
-msgid "Show Screenshot options"
-msgstr "Asehoy ireo safidy mikasika ny efijery"
-
-#: ../mate-screenshot/mate-panel-screenshot.c:457
-msgid "Take a picture of the screen"
-msgstr "Haka sary ny efijery"
-
-#: ../mate-screenshot/mate-panel-screenshot.glade.h:2
-msgid "<b>Options</b>"
-msgstr "<b>Safidy</b>"
-
-#: ../mate-screenshot/mate-panel-screenshot.glade.h:3
-msgid "<b>Preview</b>"
-msgstr "<b>Topy maso</b>"
-
-#: ../mate-screenshot/mate-panel-screenshot.glade.h:4
-#: ../mate-screenshot/mate-screenshot.glade.h:2
-msgid "Save Screenshot"
-msgstr "Raiketo ilay sarin'efijery"
-
+#: ../mate-screenshot/mate-screenshot.c:516
+#: ../mate-screenshot/mate-screenshot.c:524
 #: ../mate-screenshot/mate-screenshot.desktop.in.h:1
 msgid "Take Screenshot"
 msgstr "Makà sarin'efijery"
 
+#: ../mate-screenshot/mate-screenshot.c:525
+msgid "Effects"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.c:531
+msgid "Take _Screenshot"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.c:657
+msgid "Error while saving screenshot"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.c:660
+#, c-format
+msgid ""
+"Impossible to save the screenshot to %s.\n"
+" Error was %s.\n"
+" Please choose another location and retry."
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.c:792
+msgid "Screenshot taken"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.c:846
+msgid "Unable to take a screenshot of the current window"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.c:896
+#, c-format
+msgid "Screenshot-%s.png"
+msgstr "Sarin'efijery-%s.png"
+
+#. translators: this is the name of the file that gets
+#. * made up with the screenshot if a specific window is
+#. * taken
+#: ../mate-screenshot/mate-screenshot.c:903
+#, c-format
+msgid "Screenshot-%s-%d.png"
+msgstr "Sarin'efijery-%s-%d.png"
+
+#. translators: this is the name of the file that gets made up
+#. * with the screenshot if the entire screen is taken
+#: ../mate-screenshot/mate-screenshot.c:913
+#: ../mate-screenshot/screenshot-dialog.c:353
+#: ../mate-screenshot/screenshot-save.c:196
+msgid "Screenshot.png"
+msgstr "Sarin'efijery.png"
+
+#. translators: this is the name of the file that gets
+#. * made up with the screenshot if the entire screen is
+#. * taken
+#: ../mate-screenshot/mate-screenshot.c:920
+#, c-format
+msgid "Screenshot-%d.png"
+msgstr "Sarin'efijery-%d.png"
+
+#: ../mate-screenshot/mate-screenshot.c:1285
+msgid "Grab a window instead of the entire screen"
+msgstr "Fikandrana alaina sary fa tsy ny efijery iray manontolo"
+
+#: ../mate-screenshot/mate-screenshot.c:1286
+msgid "Grab an area of the screen instead of the entire screen"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.c:1287
+msgid "Include the window border with the screenshot"
+msgstr "Ataovy tafiditra anatin'ny sarin'ny efijery ny sisin'ilay fikandrana"
+
+#: ../mate-screenshot/mate-screenshot.c:1288
+msgid "Remove the window border from the screenshot"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.c:1289
+msgid "Take screenshot after specified delay [in seconds]"
+msgstr "Makà sary aorian'ny fotoana voatondro [segaondra]"
+
+#: ../mate-screenshot/mate-screenshot.c:1290
+msgid "Effect to add to the border (shadow, border or none)"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.c:1290
+msgid "effect"
+msgstr "effect"
+
+#: ../mate-screenshot/mate-screenshot.c:1291
+msgid "Interactively set options"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.c:1302
+msgid "Take a picture of the screen"
+msgstr "Haka sary ny efijery"
+
+#: ../mate-screenshot/mate-screenshot.c:1320
+#, c-format
+msgid ""
+"Conflicting options: --window and --area should not be used at the same "
+"time.\n"
+msgstr ""
+
 #: ../mate-screenshot/mate-screenshot.desktop.in.h:2
-msgid "Take a screenshot of your desktop"
-msgstr "Maka sary ny sehatr'asanao"
+msgid "Save images of your desktop or individual windows"
+msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.glade.h:3
-msgid "Save in _folder:"
-msgstr "Raiketo anatin'ny _laha-tahiry:"
+#: ../mate-screenshot/mate-screenshot.ui.h:1
+msgid "Save Screenshot"
+msgstr "Raiketo ilay sarin'efijery"
 
-#: ../mate-screenshot/mate-screenshot.glade.h:4
+#: ../mate-screenshot/mate-screenshot.ui.h:2
+msgid "C_opy to Clipboard"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.ui.h:3
+#: ../logview/data/logview-filter.ui.h:1
 msgid "_Name:"
 msgstr "_Anarana:"
 
+#: ../mate-screenshot/mate-screenshot.ui.h:4
+msgid "Save in _folder:"
+msgstr "Raiketo anatin'ny _laha-tahiry:"
+
+#: ../mate-screenshot/mate-screenshot.ui.h:5
+msgid "*"
+msgstr "*"
+
 #: ../mate-screenshot/mate-screenshot.schemas.in.h:1
-msgid "Border Effect"
-msgstr "Effet miaraka amin'ny sisiny"
+msgid "Window-specific screenshot (deprecated)"
+msgstr ""
 
 #: ../mate-screenshot/mate-screenshot.schemas.in.h:2
 msgid ""
-"Effect to add to the outside of a border. Possible values are \"shadow\", "
-"\"none\", and \"black-line\"."
+"Grab just the current window, rather than the whole desktop. This key has "
+"been deprecated and it is no longer in use."
 msgstr ""
-"Effet ampiarahana amin'ny ivelan'ny sisim-pikandrana  iray. \"shadow\", "
-"\"none\", ary \"black-line\" no sanda mety ampiasaina."
 
 #: ../mate-screenshot/mate-screenshot.schemas.in.h:3
-msgid "Include Border"
-msgstr "Ataovy tafiditra ny sisiny"
+msgid "Screenshot delay"
+msgstr ""
 
 #: ../mate-screenshot/mate-screenshot.schemas.in.h:4
-msgid "Include the window manager border along with the screenshot"
+msgid "The number of seconds to wait before taking the screenshot."
 msgstr ""
-"Mampiditra ny sisin'ny mpandrindra fikandrana anatin'ilay sarin'efijery"
 
 #: ../mate-screenshot/mate-screenshot.schemas.in.h:5
 msgid "Screenshot directory"
@@ -2259,157 +1844,189 @@ msgstr "Laha-tahirin'ny sarin'efijery"
 msgid "The directory the last screenshot was saved in."
 msgstr "Ny laha-tahiry nandraiketana ny sarin'efijery farany."
 
-#: ../mate-screenshot/screenshot-dialog.c:197
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:7
+msgid "Include Border"
+msgstr "Ataovy tafiditra ny sisiny"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:8
+msgid "Include the window manager border along with the screenshot"
+msgstr "Mampiditra ny sisin'ny mpandrindra fikandrana anatin'ilay sarin'efijery"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:9
+msgid "Include Pointer"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:10
+msgid "Include the pointer in the screenshot"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:11
+msgid "Border Effect"
+msgstr "Effet miaraka amin'ny sisiny"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:12
 msgid ""
-"Glade file for the screenshot program is missing.\n"
+"Effect to add to the outside of a border. Possible values are \"shadow\", "
+"\"none\", and \"border\"."
+msgstr ""
+
+#: ../mate-screenshot/screenshot-dialog.c:236
+msgid ""
+"UI definition file for the screenshot program is missing.\n"
 "Please check your installation of mate-utils"
 msgstr ""
-"Tsy eo ny rakitra Glade ho an'ny rindranasan'ny sarin'efijery.\n"
-"Jereo ny fametrahanao ny mate-utils"
 
-#: ../mate-screenshot/screenshot-dialog.c:216
+#: ../mate-screenshot/screenshot-dialog.c:257
 msgid "Select a folder"
 msgstr "Misafidiana laha-tahiry iray"
 
-#: ../mate-screenshot/screenshot-save.c:41
+#: ../mate-screenshot/screenshot-save.c:57
 #, c-format
 msgid ""
 "Unable to clear the temporary folder:\n"
 "%s"
-msgstr ""
-"Tsy afaka manafoana ilay laha-tahiry vonjimaika:\n"
-"%s"
+msgstr "Tsy afaka manafoana ilay laha-tahiry vonjimaika:\n%s"
 
-#: ../mate-screenshot/screenshot-save.c:79
+#: ../mate-screenshot/screenshot-save.c:95
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
-msgstr ""
-"Nijanona tampoka ilay fizotra zanaka fandraiketana. Tsy afaka mandraikitra "
-"ilay sarin'efijery amin'ny kapila izahay."
+msgstr "Nijanona tampoka ilay fizotra zanaka fandraiketana. Tsy afaka mandraikitra ilay sarin'efijery amin'ny kapila izahay."
 
-#: ../mate-screenshot/screenshot-save.c:191
+#: ../mate-screenshot/screenshot-save.c:223
 msgid "Unknown error saving screenshot to disk"
-msgstr ""
-"Nisy olana tsy fantatra teo am-pandraiketana ilay sarin'efijery amin'ny "
-"kapila"
+msgstr "Nisy olana tsy fantatra teo am-pandraiketana ilay sarin'efijery amin'ny kapila"
 
-#: ../mate-screenshot/screenshot-utils.c:612
+#. TODO: maybe we should also look at WM_NAME and WM_CLASS?
+#: ../mate-screenshot/screenshot-utils.c:894
 msgid "Untitled Window"
 msgstr "Fikandrana tsy misy anarana"
 
-#: ../mate-screenshot/screenshot-xfer.c:103
-msgid "Preparing to copy"
-msgstr "Miomana ny handika"
-
-#: ../mate-screenshot/screenshot-xfer.c:181
+#: ../mate-screenshot/screenshot-xfer.c:72
 msgid "File already exists"
 msgstr "Efa misy ilay rakitra "
 
-#: ../mate-screenshot/screenshot-xfer.c:184
+#: ../mate-screenshot/screenshot-xfer.c:75
 #, c-format
-msgid "The file \"%s\" already exists.  Would you like to replace it?"
-msgstr "Efa misy ny rakitra \"%s\". Tianao ho tsindriana ve izy io?"
+msgid "The file \"%s\" already exists. Would you like to replace it?"
+msgstr ""
 
-#: ../mate-screenshot/screenshot-xfer.c:190
-#: ../gsearchtool/gsearchtool-callbacks.c:1412
+#: ../mate-screenshot/screenshot-xfer.c:82
+#: ../gsearchtool/gsearchtool-callbacks.c:1722
 msgid "_Replace"
 msgstr "_Tsindrio"
 
-#: ../mate-screenshot/screenshot-xfer.c:230
-#, c-format
-msgid "Unknown MateVFSXferProgressStatus %d"
-msgstr "MateVFSXferProgressStatus tsy fantatra %d"
+#: ../mate-screenshot/screenshot-xfer.c:120
+msgid "Saving file..."
+msgstr ""
+
+#: ../mate-screenshot/screenshot-xfer.c:290
+msgid "Can't access source file"
+msgstr ""
 
 #: ../gsearchtool/mate-search-tool.desktop.in.h:1
-msgid "Locate documents and folders on this computer by name or content"
-msgstr ""
-"Hitady tahirin-kevitra sy laha-tahiry araka ny anarany na ny mpiatiny "
-"anatin'ity solosaina ity"
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:2
 msgid "Search for Files..."
 msgstr "Mikaroka rakitra..."
 
+#: ../gsearchtool/mate-search-tool.desktop.in.h:2
+msgid "Locate documents and folders on this computer by name or content"
+msgstr "Hitady tahirin-kevitra sy laha-tahiry araka ny anarany na ny mpiatiny anatin'ity solosaina ity"
+
 #: ../gsearchtool/mate-search-tool.schemas.in.h:1
-msgid "Default Window Height"
-msgstr "Haavo tsotran'ny fikandrana"
+msgid "Show Additional Options"
+msgstr "Asehoy ireo safidy fanampiny"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:2
-msgid "Default Window Maximized"
-msgstr "Endrika tsotran'ny fikandrana rehefa alehibiazina"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:3
-msgid "Default Window Width"
-msgstr "Saka tsotran'ny fikandrana"
-
+#. Translators: The quoted text is the label of the additional
+#. options expander that is translated elsewhere.
 #: ../gsearchtool/mate-search-tool.schemas.in.h:4
-msgid "Disable Quick Search"
-msgstr "Atsaharo ny karoka faingana"
+msgid ""
+"This key determines if the \"Select more options\" section is expanded when "
+"the search tool is started."
+msgstr "Io famaha io dia milaza raha toa ka mivelatra ny faritra \"Hijery safidy misimisy kokoa\" rehefa alefa ny fitaovam-pikarohana."
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:5
-msgid "Disable Quick Search Second Scan"
-msgstr "Atsaharo ny fikarohan'ny fanindroan'ny karoka faingana"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:6
-msgid "Quick Search Excluded Paths"
-msgstr "Sori-dàlana tsy anaovana karoka faingana"
-
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
 #: ../gsearchtool/mate-search-tool.schemas.in.h:7
-msgid "Quick Search Second Scan Excluded Paths"
-msgstr "Sori-dàlana tsy anaovana fikarohana fanindroan'ny karoka faingana"
+msgid "Select the search option \"Contains the text\""
+msgstr "Ekeo ny safidy \"Misy ilay lahabolana\""
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:8
-msgid "Search Result Columns Order"
-msgstr "Filahatry ny farian'ny vokatry ny karoka"
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr "Io famaha io dia milaza raha toa ka nekena ny safidy \"Misy ilay lahabolana\" rehefa alefa ny fitaovam-pikarohana."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/mate-search-tool.schemas.in.h:11
-msgid "Select the search option \"Contains the text\""
-msgstr "Ekeo ny safidy \"Misy ilay lahabolana\""
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:14
 msgid "Select the search option \"Date modified less than\""
 msgstr "Ekeo ny safidy \"Datin'ny fanovana latsak ny\""
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:17
-msgid "Select the search option \"Date modified more than\""
-msgstr "Ekeo ny safidy \"Datin'ny fanovana maherin'ny\""
+#: ../gsearchtool/mate-search-tool.schemas.in.h:12
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
+msgstr "Io famaha io dia milaza raha toa ka nekena ny safidy \"Datin'ny fanovana latsaka ny\" rehefa alefa ny fitaovam-pikarohana."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:15
+msgid "Select the search option \"Date modified more than\""
+msgstr "Ekeo ny safidy \"Datin'ny fanovana maherin'ny\""
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:16
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
+msgstr "Io famaha io dia milaza raha toa ka nekena ny safidy \"Datin'ny fanovana maherin'ny\" rehefa alefa ny fitaovam-pikarohana."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:19
+msgid "Select the search option \"Size at least\""
+msgstr "Ekeo ny safidy \"Habe farany ambany\""
+
 #: ../gsearchtool/mate-search-tool.schemas.in.h:20
-msgid "Select the search option \"File is empty\""
-msgstr "Ekeo ny safidy \"Foana ilay rakitra\""
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr "Io famaha io dia milaza raha toa ka nekena ny safidy \"Habe farany ambany\" rehefa alefa ny fitaovam-pikarohana."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/mate-search-tool.schemas.in.h:23
-msgid "Select the search option \"Follow symbolic links\""
-msgstr "Ekeo ny safidy \"Araho ireo rohy misolotena\""
+msgid "Select the search option \"Size at most\""
+msgstr "Ekeo ny safidy \"Habe farany ambony\""
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:24
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
+msgstr "Io famaha io dia milaza raha toa ka nekena ny safidy \"Habe farany ambony\" rehefa alefa ny fitaovam-pikarohana."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:26
-msgid "Select the search option \"Include other filesystems\""
-msgstr "Ekeo ny safidy \"Mampidira rafi-drakitra hafa\""
+#: ../gsearchtool/mate-search-tool.schemas.in.h:27
+msgid "Select the search option \"File is empty\""
+msgstr "Ekeo ny safidy \"Foana ilay rakitra\""
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:28
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
+msgstr "Io famaha io dia milaza raha toa ka nekena ny safidy \"Foana ilay rakitra\" rehefa alefa ny fitaovam-pikarohana."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:29
-msgid "Select the search option \"Name does not contain\""
-msgstr "Ekeo ny safidy \"Tsy misy ity ilay anarana\""
+#: ../gsearchtool/mate-search-tool.schemas.in.h:31
+msgid "Select the search option \"Owned by user\""
+msgstr "Ekeo ny safidy \"Fananan'ny mpampiasa\""
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
 #: ../gsearchtool/mate-search-tool.schemas.in.h:32
-msgid "Select the search option \"Name matches regular expression\""
-msgstr "Ekeo ny safidy \"Mifanaraka amin'ny fiteny mahazatra ilay anarana\""
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
+msgstr "Io famaha io dia milaza raha toa ka nekena ny safidy \"Fananan'ny mpampiasa\" rehefa alefa ny fitaovam-pikarohana."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
@@ -2417,1065 +2034,1177 @@ msgstr "Ekeo ny safidy \"Mifanaraka amin'ny fiteny mahazatra ilay anarana\""
 msgid "Select the search option \"Owned by group\""
 msgstr "Ekeo ny safidy \"Fananan'ny vondrona\""
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:38
-msgid "Select the search option \"Owned by user\""
-msgstr "Ekeo ny safidy \"Fananan'ny mpampiasa\""
+#: ../gsearchtool/mate-search-tool.schemas.in.h:36
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when"
+" the search tool is started."
+msgstr "Io famaha io dia milaza raha toa ka nekena ny safidy \"Fananan'ny vondrona\" rehefa alefa ny fitaovam-pikarohana."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:41
+#: ../gsearchtool/mate-search-tool.schemas.in.h:39
 msgid "Select the search option \"Owner is unrecognized\""
 msgstr "Ekeo ny safidy \"Tsy fantatra ny tompony\""
 
+#: ../gsearchtool/mate-search-tool.schemas.in.h:40
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
+msgstr "Io famaha io dia milaza raha toa ka nekena ny safidy \"Tsy fantatra ny tompony\" rehefa alefa ny fitaovam-pikarohana."
+
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:43
+msgid "Select the search option \"Name does not contain\""
+msgstr "Ekeo ny safidy \"Tsy misy ity ilay anarana\""
+
 #: ../gsearchtool/mate-search-tool.schemas.in.h:44
-msgid "Select the search option \"Show hidden files and folders\""
-msgstr "Ekeo ny safidy \"Asehoy ireo rakitra sy laha-tahiry miafina\""
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr "Io famaha io dia milaza raha toa ka nekena ny safidy \"Tsy misy ity ilay anarana\" rehefa alefa ny fitaovam-pikarohana."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/mate-search-tool.schemas.in.h:47
-msgid "Select the search option \"Size at least\""
-msgstr "Ekeo ny safidy \"Habe farany ambany\""
+msgid "Select the search option \"Name matches regular expression\""
+msgstr "Ekeo ny safidy \"Mifanaraka amin'ny fiteny mahazatra ilay anarana\""
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:48
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option"
+" is selected when the search tool is started."
+msgstr "Io famaha io dia milaza raha toa ka nekena ny safidy \"Mifanaraka amin'ny fiteny mahazatra ilay anarana\" rehefa alefa ny fitaovam-pikarohana."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:50
-msgid "Select the search option \"Size at most\""
-msgstr "Ekeo ny safidy \"Habe farany ambony\""
-
 #: ../gsearchtool/mate-search-tool.schemas.in.h:51
-msgid "Show Additional Options"
-msgstr "Asehoy ireo safidy fanampiny"
+msgid "Select the search option \"Show hidden files and folders\""
+msgstr "Ekeo ny safidy \"Asehoy ireo rakitra sy laha-tahiry miafina\""
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:52
 msgid ""
-"This key defines the order of the columns in the search results. This key "
-"should not be modified by the user."
-msgstr ""
-"Io famaha io dia mamaritra ny filaharan'ireo farian'ny valin'ny karoka. Tsy "
-"tokony hovain'ny mpampiasa io famaha io."
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
+msgstr "Io famaha io dia milaza raha toa ka nekena ny safidy \"Asehoy ireo rakitra sy laha-tahiry miafina\" rehefa alefa ny fitaovam-pikarohana."
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:53
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:55
+msgid "Select the search option \"Follow symbolic links\""
+msgstr "Ekeo ny safidy \"Araho ireo rohy misolotena\""
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:56
 msgid ""
-"This key defines the paths the search tool will exclude from a quick search. "
-"The wildcards '*' and '?' are supported. The default values are /mnt/*, /"
-"media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-msgstr ""
-"Io famaha io dia mamaritra ny sori-dàlana tsy hanaovana karoka faingana. "
-"Ekena ireo marika ankapobe '*' ary '?'. /mnt/*, /media/*, /dev/*, /tmp/*, /"
-"proc/*, ary /var/* ireo sanda tsotra."
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr "Io famaha io dia milaza raha toa ka nekena ny safidy \"Araho ireo rohy misolotena\" rehefa alefa ny fitaovam-pikarohana."
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:54
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:59
+msgid "Select the search option \"Exclude other filesystems\""
+msgstr ""
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:60
+msgid ""
+"This key determines if the \"Exclude other filesystems\" search option is "
+"selected when the search tool is started."
+msgstr ""
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:61
+msgid "Disable Quick Search"
+msgstr "Atsaharo ny karoka faingana"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:62
+msgid ""
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
+msgstr "Io famaha io dia milaza raha atsahatry ny fitaovam-pikarohana ny fampiasana ny baiko locate rehefa mikaroka anaran-drakitra tsotsotra izy."
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:63
+msgid "Quick Search Excluded Paths"
+msgstr "Sori-dàlana tsy anaovana karoka faingana"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:64
+msgid ""
+"This key defines the paths the search tool will exclude from a quick search."
+" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
+"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
+msgstr "Io famaha io dia mamaritra ny sori-dàlana tsy hanaovana karoka faingana. Ekena ireo marika ankapobe '*' ary '?'. /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, ary /var/* ireo sanda tsotra."
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:65
+msgid "Disable Quick Search Second Scan"
+msgstr "Atsaharo ny fikarohan'ny fanindroan'ny karoka faingana"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:66
+msgid ""
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
+msgstr "Io famaha io dia milaza raha atsahatry ny fitaovam-pikarohana ny fampiasana ny baiko find rehefa mahavita karoka faingana izy."
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:67
+msgid "Quick Search Second Scan Excluded Paths"
+msgstr "Sori-dàlana tsy anaovana fikarohana fanindroan'ny karoka faingana"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:68
 msgid ""
 "This key defines the paths the search tool will exclude from a second scan "
 "when performing a quick search. The second scan uses the find command to "
 "search for files. The purpose of the second scan is to find files that have "
-"not been indexed. The wildcards '*' and '?' are supported. The default value "
-"is /."
-msgstr ""
-"Io famaha io dia mamaritra ireo sori-dàlana tsy anaovan'ny fitaovana "
-"fikarohana fizahana fanindroa rehefa manao karoka faingana. Ny baiko find no "
-"ampiasain'ny fizahana fanindroa rehefa hitady rakitra. Ny tanjon'ny fizahana "
-"fanindroa dia ny fitadiavana rakitra izay tsy mbola voasokajy. Ekena ireo "
-"marika ankapobe '*' and '?'. / no sanda tsotra."
+"not been indexed. The wildcards '*' and '?' are supported. The default value"
+" is /."
+msgstr "Io famaha io dia mamaritra ireo sori-dàlana tsy anaovan'ny fitaovana fikarohana fizahana fanindroa rehefa manao karoka faingana. Ny baiko find no ampiasain'ny fizahana fanindroa rehefa hitady rakitra. Ny tanjon'ny fizahana fanindroa dia ny fitadiavana rakitra izay tsy mbola voasokajy. Ekena ireo marika ankapobe '*' and '?'. / no sanda tsotra."
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:55
-msgid ""
-"This key defines the window height, and it's used to remember the size of "
-"the search tool between sessions. Setting it to -1 will make the search tool "
-"use the default height."
-msgstr ""
-"Io famaha io dia mamaritra ny haavon'ny fikandrana ary natao itadidiana ny "
-"haben'ilay fikandran'ny fitaovam-pikarohana isaky ny session. Ny famaritana "
-"azy ho -1 dia hahatonga ny fikandran'ny fikarohana hampiasa ny haavo tsotra."
+#: ../gsearchtool/mate-search-tool.schemas.in.h:69
+msgid "Search Result Columns Order"
+msgstr "Filahatry ny farian'ny vokatry ny karoka"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:56
-msgid ""
-"This key defines the window width, and it's used to remember the size of the "
-"search tool between sessions. Setting it to -1 will make the search tool use "
-"the default width."
-msgstr ""
-"Io famaha io dia mamaritra ny sakan'ny fikandrana ary natao itadidiana ny "
-"haben'ilay fikandran'ny fitaovam-pikarohana isaky ny session. Ny famaritana "
-"azy ho -1 dia hahatonga ny fikandran'ny fitaovam-pikarohana hampiasa ny saka "
-"tsotra."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:57
-msgid ""
-"This key determines if the \"Contains the text\" search option is selected "
-"when the search tool is started."
-msgstr ""
-"Io famaha io dia milaza raha toa ka nekena ny safidy \"Misy ilay lahabolana"
-"\" rehefa alefa ny fitaovam-pikarohana."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:58
-msgid ""
-"This key determines if the \"Date modified less than\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Io famaha io dia milaza raha toa ka nekena ny safidy \"Datin'ny fanovana "
-"latsaka ny\" rehefa alefa ny fitaovam-pikarohana."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:59
-msgid ""
-"This key determines if the \"Date modified more than\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Io famaha io dia milaza raha toa ka nekena ny safidy \"Datin'ny fanovana "
-"maherin'ny\" rehefa alefa ny fitaovam-pikarohana."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:60
-msgid ""
-"This key determines if the \"File is empty\" search option is selected when "
-"the search tool is started."
-msgstr ""
-"Io famaha io dia milaza raha toa ka nekena ny safidy \"Foana ilay rakitra\" "
-"rehefa alefa ny fitaovam-pikarohana."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:61
-msgid ""
-"This key determines if the \"Follow symbolic links\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Io famaha io dia milaza raha toa ka nekena ny safidy \"Araho ireo rohy "
-"misolotena\" rehefa alefa ny fitaovam-pikarohana."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:62
-msgid ""
-"This key determines if the \"Include other filesystems\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Io famaha io dia milaza raha toa ka nekena ny safidy \"Mampidira raki-"
-"drafitra hafa\" rehefa alefa ny fitaovam-pikarohana."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:63
-msgid ""
-"This key determines if the \"Name does not contain\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Io famaha io dia milaza raha toa ka nekena ny safidy \"Tsy misy ity ilay "
-"anarana\" rehefa alefa ny fitaovam-pikarohana."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:64
-msgid ""
-"This key determines if the \"Name matches regular expression\" search option "
-"is selected when the search tool is started."
-msgstr ""
-"Io famaha io dia milaza raha toa ka nekena ny safidy \"Mifanaraka amin'ny "
-"fiteny mahazatra ilay anarana\" rehefa alefa ny fitaovam-pikarohana."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:65
-msgid ""
-"This key determines if the \"Owned by group\" search option is selected when "
-"the search tool is started."
-msgstr ""
-"Io famaha io dia milaza raha toa ka nekena ny safidy \"Fananan'ny vondrona\" "
-"rehefa alefa ny fitaovam-pikarohana."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:66
-msgid ""
-"This key determines if the \"Owned by user\" search option is selected when "
-"the search tool is started."
-msgstr ""
-"Io famaha io dia milaza raha toa ka nekena ny safidy \"Fananan'ny mpampiasa"
-"\" rehefa alefa ny fitaovam-pikarohana."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:67
-msgid ""
-"This key determines if the \"Owner is unrecognized\" search option is "
-"selected when the search tool is started."
-msgstr ""
-"Io famaha io dia milaza raha toa ka nekena ny safidy \"Tsy fantatra ny "
-"tompony\" rehefa alefa ny fitaovam-pikarohana."
-
-#. Translators: The quoted text is the label of the additional
-#. options expander that is translated elsewhere.
 #: ../gsearchtool/mate-search-tool.schemas.in.h:70
 msgid ""
-"This key determines if the \"Select more options\" section is expanded when "
-"the search tool is started."
-msgstr ""
-"Io famaha io dia milaza raha toa ka mivelatra ny faritra \"Hijery safidy "
-"misimisy kokoa\" rehefa alefa ny fitaovam-pikarohana."
+"This key defines the order of the columns in the search results. This key "
+"should not be modified by the user."
+msgstr "Io famaha io dia mamaritra ny filaharan'ireo farian'ny valin'ny karoka. Tsy tokony hovain'ny mpampiasa io famaha io."
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:71
-msgid ""
-"This key determines if the \"Show hidden files and folders\" search option "
-"is selected when the search tool is started."
-msgstr ""
-"Io famaha io dia milaza raha toa ka nekena ny safidy \"Asehoy ireo rakitra "
-"sy laha-tahiry miafina\" rehefa alefa ny fitaovam-pikarohana."
+msgid "Default Window Width"
+msgstr "Saka tsotran'ny fikandrana"
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:72
 msgid ""
-"This key determines if the \"Size at least\" search option is selected when "
-"the search tool is started."
-msgstr ""
-"Io famaha io dia milaza raha toa ka nekena ny safidy \"Habe farany ambany\" "
-"rehefa alefa ny fitaovam-pikarohana."
+"This key defines the window width, and it's used to remember the size of the"
+" search tool between sessions. Setting it to -1 will make the search tool "
+"use the default width."
+msgstr "Io famaha io dia mamaritra ny sakan'ny fikandrana ary natao itadidiana ny haben'ilay fikandran'ny fitaovam-pikarohana isaky ny session. Ny famaritana azy ho -1 dia hahatonga ny fikandran'ny fitaovam-pikarohana hampiasa ny saka tsotra."
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:73
-msgid ""
-"This key determines if the \"Size at most\" search option is selected when "
-"the search tool is started."
-msgstr ""
-"Io famaha io dia milaza raha toa ka nekena ny safidy \"Habe farany ambony\" "
-"rehefa alefa ny fitaovam-pikarohana."
+msgid "Default Window Height"
+msgstr "Haavo tsotran'ny fikandrana"
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:74
 msgid ""
-"This key determines if the search tool disables the use of the find command "
-"after performing a quick search."
-msgstr ""
-"Io famaha io dia milaza raha atsahatry ny fitaovam-pikarohana ny fampiasana "
-"ny baiko find rehefa mahavita karoka faingana izy."
+"This key defines the window height, and it's used to remember the size of "
+"the search tool between sessions. Setting it to -1 will make the search tool"
+" use the default height."
+msgstr "Io famaha io dia mamaritra ny haavon'ny fikandrana ary natao itadidiana ny haben'ilay fikandran'ny fitaovam-pikarohana isaky ny session. Ny famaritana azy ho -1 dia hahatonga ny fikandran'ny fikarohana hampiasa ny haavo tsotra."
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:75
-msgid ""
-"This key determines if the search tool disables the use of the locate "
-"command when performing simple file name searches."
-msgstr ""
-"Io famaha io dia milaza raha atsahatry ny fitaovam-pikarohana ny fampiasana "
-"ny baiko locate rehefa mikaroka anaran-drakitra tsotsotra izy."
+msgid "Default Window Maximized"
+msgstr "Endrika tsotran'ny fikandrana rehefa alehibiazina"
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:76
 msgid ""
 "This key determines if the search tool window starts in a maximized state."
-msgstr ""
-"Io famaha io dia milaza raha toa ka nakelezina ny fikandran'ny fitaovam-"
-"pikarohana rehefa alefa izy."
+msgstr "Io famaha io dia milaza raha toa ka nakelezina ny fikandran'ny fitaovam-pikarohana rehefa alefa izy."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:186
+#: ../gsearchtool/mate-search-tool.schemas.in.h:77
+msgid "Look in Folder"
+msgstr ""
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:78
+msgid "This key defines the default value of the \"Look in Folder\" widget."
+msgstr ""
+
+#: ../gsearchtool/gsearchtool-callbacks.c:194
 msgid "Could not open help document."
 msgstr "Tsy afaka manokatra ny tahirin-kevitry ny toro-làlana."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:321
+#: ../gsearchtool/gsearchtool-callbacks.c:345
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
 msgstr[0] "Te hanokatra tahirin-kevitra %d tokoa ve ianao?"
 msgstr[1] "Te hanokatra tahirin-kevitra %d tokoa ve ianao?"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:326
-#: ../gsearchtool/gsearchtool-callbacks.c:514
+#: ../gsearchtool/gsearchtool-callbacks.c:350
+#: ../gsearchtool/gsearchtool-callbacks.c:547
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
 msgstr[0] "Hampisokatra fikandrana %d izany."
 msgstr[1] "Hampisokatra fikandrana %d izany."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:366
+#: ../gsearchtool/gsearchtool-callbacks.c:390
 #, c-format
 msgid "Could not open document \"%s\"."
 msgstr "Tsy nahasokatra ny tahirin-kevitra \"%s\"."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:395
+#: ../gsearchtool/gsearchtool-callbacks.c:419
 #, c-format
 msgid "Could not open folder \"%s\"."
 msgstr "Tsy nahasokatra ny laha-tahiry \"%s\"."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:403
+#: ../gsearchtool/gsearchtool-callbacks.c:427
 msgid "The caja file manager is not running."
 msgstr "Tsy mandeha ny mpandrindra rakitry ny caja."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:509
+#: ../gsearchtool/gsearchtool-callbacks.c:519
+msgid "There is no installed viewer capable of displaying the document."
+msgstr "Tsy misy rindran'asa voapetraka afaka maneho io tahirin-kevitra io ao. "
+
+#: ../gsearchtool/gsearchtool-callbacks.c:542
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
 msgstr[0] "Te hanokatra laha-tahiry %d tokoa ve ianao?"
 msgstr[1] "Te hanokatra laha-tahiry %d tokoa ve ianao?"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:637
+#: ../gsearchtool/gsearchtool-callbacks.c:695
 #, c-format
 msgid "Could not move \"%s\" to trash."
 msgstr "Tsy afaka nandefa ny \"%s\" tany anaty daba."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:668
+#: ../gsearchtool/gsearchtool-callbacks.c:726
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
 msgstr "Tianao fafàna tanteraka ve ny \"%s\"?"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:671
+#: ../gsearchtool/gsearchtool-callbacks.c:729
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr ""
-"Tsy mety ampiasaina ny daba. Tsy afaka nandefa ny \"%s\" tany anaty daba."
+msgstr "Tsy mety ampiasaina ny daba. Tsy afaka nandefa ny \"%s\" tany anaty daba."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:710
+#: ../gsearchtool/gsearchtool-callbacks.c:768
 #, c-format
 msgid "Could not delete \"%s\"."
 msgstr "Tsy afaka namafa ny \"%s\"."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:832
-#, c-format
-msgid "Moving \"%s\" failed: %s."
-msgstr "Tsy nahomby ny famindrana ny \"%s\": %s."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:866
+#: ../gsearchtool/gsearchtool-callbacks.c:879
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
 msgstr "Tsy nahomby ny famafana ny \"%s\": %s."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1297
+#: ../gsearchtool/gsearchtool-callbacks.c:891
+#, c-format
+msgid "Moving \"%s\" failed: %s."
+msgstr "Tsy nahomby ny famindrana ny \"%s\": %s."
+
+#. Popup menu item: Open
+#: ../gsearchtool/gsearchtool-callbacks.c:1019
+#: ../gsearchtool/gsearchtool-callbacks.c:1049
+msgid "_Open"
+msgstr "_Sokafy"
+
+#. Popup menu item: Open with (default)
+#: ../gsearchtool/gsearchtool-callbacks.c:1074
+#, c-format
+msgid "_Open with %s"
+msgstr ""
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1108
+#, c-format
+msgid "Open with %s"
+msgstr ""
+
+#. Popup menu item: Open With
+#: ../gsearchtool/gsearchtool-callbacks.c:1140
+msgid "Open Wit_h"
+msgstr ""
+
+#. Popup menu item: Open Folder
+#: ../gsearchtool/gsearchtool-callbacks.c:1185
+msgid "Open _Folder"
+msgstr ""
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1225
+msgid "_Save Results As..."
+msgstr "_Raiketo toy izao ny valiny..."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1607
 msgid "Save Search Results As..."
 msgstr "Raiketo toy izao ny valin'ny fikarohana..."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1328
+#: ../gsearchtool/gsearchtool-callbacks.c:1638
 msgid "Could not save document."
 msgstr "Tsy afaka nandraikitra ilay tahirin-kevitra."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1329
+#: ../gsearchtool/gsearchtool-callbacks.c:1639
 msgid "You did not select a document name."
 msgstr "Tsy nisafidy anaran-tahirin-kevitra ianao."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1359
+#: ../gsearchtool/gsearchtool-callbacks.c:1669
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr "Tsy afaka nandraikitra ny tahirin-kevitra \"%s\" tamin'ny \"%s\"."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1393
+#: ../gsearchtool/gsearchtool-callbacks.c:1703
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr "Efa misy ny tahirin-kevitra \"%s\". Tianao tsindriana ve izy io?"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1397
+#: ../gsearchtool/gsearchtool-callbacks.c:1707
 msgid "If you replace an existing file, its contents will be overwritten."
-msgstr ""
-"Ho voatsindry ny mpiatin'ny rakitra iray raha toa ka tsindrinao ilay izy."
+msgstr "Ho voatsindry ny mpiatin'ny rakitra iray raha toa ka tsindrinao ilay izy."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1462
+#: ../gsearchtool/gsearchtool-callbacks.c:1772
 msgid "The document name you selected is a folder."
 msgstr "Anaran-daha-tahiry ilay anaran-tahirin-kevitra nosafidianao."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1511
+#: ../gsearchtool/gsearchtool-callbacks.c:1810
 msgid "You may not have write permissions to the document."
 msgstr "Mety tsy manana fahazoan-dàlana hikitika ilay tahirin-kevitra ianao."
 
-#: ../gsearchtool/gsearchtool-support.c:71
+#: ../gsearchtool/gsearchtool-support.c:63
 #, c-format
 msgid ""
 "MateConf error:\n"
 "  %s"
-msgstr ""
-"Tsy fetezana MateConf:\n"
-" %s"
+msgstr "Tsy fetezana MateConf:\n %s"
 
 #. Translators:  Below are the strings displayed in the 'Date Modified'
 #. column of the list view.  The format of this string can vary depending
 #. on age of a file.  Please modify the format of the timestamp to match
 #. your locale.  For example, to display 24 hour time replace the '%-I'
 #. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: ../gsearchtool/gsearchtool-support.c:640
+#: ../gsearchtool/gsearchtool-support.c:696
 msgid "today at %-I:%M %p"
 msgstr "androany at %-I:%M %p"
 
-#: ../gsearchtool/gsearchtool-support.c:642
+#: ../gsearchtool/gsearchtool-support.c:698
 msgid "yesterday at %-I:%M %p"
 msgstr "omaly at %-I:%M %p"
 
-#: ../gsearchtool/gsearchtool-support.c:644
-#: ../gsearchtool/gsearchtool-support.c:646
+#: ../gsearchtool/gsearchtool-support.c:700
+#: ../gsearchtool/gsearchtool-support.c:702
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
 msgstr "%A, %B %-d %Y at %-I:%M:%S %p"
 
-#: ../gsearchtool/gsearchtool-support.c:825
+#: ../gsearchtool/gsearchtool-support.c:889
 msgid "link (broken)"
 msgstr "rohy (simba)"
 
-#: ../gsearchtool/gsearchtool-support.c:829
+#: ../gsearchtool/gsearchtool-support.c:893
 #, c-format
 msgid "link to %s"
 msgstr "rohy mankany amin'ny %s"
 
-#: ../gsearchtool/gsearchtool.c:82
+#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
+#. Localizers:
+#. * Feel free to leave out the st, nd, rd and th suffix or
+#. * make some or all of them match.
+#. 
+#. localizers: tag used to detect the first copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1495
+msgid " (copy)"
+msgstr ""
+
+#. localizers: tag used to detect the second copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1497
+msgid " (another copy)"
+msgstr ""
+
+#. localizers: tag used to detect the x11th copy of a file
+#. localizers: tag used to detect the x12th copy of a file
+#. localizers: tag used to detect the x13th copy of a file
+#. localizers: tag used to detect the xxth copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1500
+#: ../gsearchtool/gsearchtool-support.c:1502
+#: ../gsearchtool/gsearchtool-support.c:1504
+#: ../gsearchtool/gsearchtool-support.c:1514
+msgid "th copy)"
+msgstr ""
+
+#. localizers: tag used to detect the x1st copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1507
+msgid "st copy)"
+msgstr ""
+
+#. localizers: tag used to detect the x2nd copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1509
+msgid "nd copy)"
+msgstr ""
+
+#. localizers: tag used to detect the x3rd copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1511
+msgid "rd copy)"
+msgstr ""
+
+#. localizers: appended to first file copy
+#: ../gsearchtool/gsearchtool-support.c:1528
+#, c-format
+msgid "%s (copy)%s"
+msgstr ""
+
+#. localizers: appended to second file copy
+#: ../gsearchtool/gsearchtool-support.c:1530
+#, c-format
+msgid "%s (another copy)%s"
+msgstr ""
+
+#. localizers: appended to x11th file copy
+#. localizers: appended to x12th file copy
+#. localizers: appended to x13th file copy
+#. localizers: appended to xxth file copy
+#: ../gsearchtool/gsearchtool-support.c:1533
+#: ../gsearchtool/gsearchtool-support.c:1535
+#: ../gsearchtool/gsearchtool-support.c:1537
+#: ../gsearchtool/gsearchtool-support.c:1546
+#, c-format
+msgid "%s (%dth copy)%s"
+msgstr ""
+
+#. localizers: appended to x1st file copy
+#: ../gsearchtool/gsearchtool-support.c:1540
+#, c-format
+msgid "%s (%dst copy)%s"
+msgstr ""
+
+#. localizers: appended to x2nd file copy
+#: ../gsearchtool/gsearchtool-support.c:1542
+#, c-format
+msgid "%s (%dnd copy)%s"
+msgstr ""
+
+#. localizers: appended to x3rd file copy
+#: ../gsearchtool/gsearchtool-support.c:1544
+#, c-format
+msgid "%s (%drd copy)%s"
+msgstr ""
+
+#: ../gsearchtool/gsearchtool-support.c:1591
+msgid " (invalid Unicode)"
+msgstr "(fango diso)"
+
+#. localizers: opening parentheses to match the "th copy)" string
+#: ../gsearchtool/gsearchtool-support.c:1680
+msgid " ("
+msgstr ""
+
+#. localizers: opening parentheses of the "th copy)" string
+#: ../gsearchtool/gsearchtool-support.c:1688
+#, c-format
+msgid " (%d"
+msgstr ""
+
+#: ../gsearchtool/gsearchtool.c:80
 msgid "Contains the _text"
 msgstr "Misy ilay _lahabolana"
 
-#: ../gsearchtool/gsearchtool.c:84
+#: ../gsearchtool/gsearchtool.c:82
 msgid "_Date modified less than"
 msgstr "_Datin'ny fanovana latsaka ny"
 
-#: ../gsearchtool/gsearchtool.c:84 ../gsearchtool/gsearchtool.c:85
+#: ../gsearchtool/gsearchtool.c:82 ../gsearchtool/gsearchtool.c:83
 msgid "days"
 msgstr "andro"
 
-#: ../gsearchtool/gsearchtool.c:85
+#: ../gsearchtool/gsearchtool.c:83
 msgid "Date modified more than"
 msgstr "Datin'ny fanovana maherin'ny"
 
-#: ../gsearchtool/gsearchtool.c:87
+#: ../gsearchtool/gsearchtool.c:85
 msgid "S_ize at least"
 msgstr "Ha_be ambany indrindra"
 
-#: ../gsearchtool/gsearchtool.c:87 ../gsearchtool/gsearchtool.c:88
+#: ../gsearchtool/gsearchtool.c:85 ../gsearchtool/gsearchtool.c:86
 msgid "kilobytes"
 msgstr "kilooctet"
 
-#: ../gsearchtool/gsearchtool.c:88
+#: ../gsearchtool/gsearchtool.c:86
 msgid "Si_ze at most"
 msgstr "Ha_be ambony indrindra"
 
-#: ../gsearchtool/gsearchtool.c:89
+#: ../gsearchtool/gsearchtool.c:87
 msgid "File is empty"
 msgstr "Foana ilay rakitras"
 
-#: ../gsearchtool/gsearchtool.c:91
+#: ../gsearchtool/gsearchtool.c:89
 msgid "Owned by _user"
 msgstr "Fananan'ny _mpampiasa"
 
-#: ../gsearchtool/gsearchtool.c:92
+#: ../gsearchtool/gsearchtool.c:90
 msgid "Owned by _group"
 msgstr "Fananan'ny vondrona"
 
-#: ../gsearchtool/gsearchtool.c:93
+#: ../gsearchtool/gsearchtool.c:91
 msgid "Owner is unrecognized"
 msgstr "Tsy fantatra ny tompony"
 
-#: ../gsearchtool/gsearchtool.c:95
+#: ../gsearchtool/gsearchtool.c:93
 msgid "Na_me does not contain"
 msgstr "Tsy misy ity ilay _anarana"
 
-#: ../gsearchtool/gsearchtool.c:96
+#: ../gsearchtool/gsearchtool.c:94
 msgid "Name matches regular e_xpression"
 msgstr "Mifanaraka amin'ny fi_teny mahazatra ilay anarana"
 
-#: ../gsearchtool/gsearchtool.c:98
+#: ../gsearchtool/gsearchtool.c:96
 msgid "Show hidden and backup files"
 msgstr "Asehoy ireo rakitra sy laha-tahiry miafina"
 
-#: ../gsearchtool/gsearchtool.c:99
+#: ../gsearchtool/gsearchtool.c:97
 msgid "Follow symbolic links"
 msgstr "Araho ireo rohy misolo tena"
 
-#: ../gsearchtool/gsearchtool.c:100
-msgid "Include other filesystems"
-msgstr "Mampidira raki-drafitra hafa"
+#: ../gsearchtool/gsearchtool.c:98
+msgid "Exclude other filesystems"
+msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:181
-msgid "_Open"
-msgstr "_Sokafy"
+#: ../gsearchtool/gsearchtool.c:156
+msgid "Show version of the application"
+msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:182
-msgid "O_pen Folder"
-msgstr "_Hanokatra laha-tahiry"
+#: ../gsearchtool/gsearchtool.c:157 ../gsearchtool/gsearchtool.c:162
+#: ../gsearchtool/gsearchtool.c:171
+msgid "STRING"
+msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:183
-msgid "Mo_ve to Trash"
-msgstr "_Alefaso anaty daba"
+#: ../gsearchtool/gsearchtool.c:158
+msgid "PATH"
+msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:184
-msgid "_Save Results As..."
-msgstr "_Raiketo toy izao ny valiny..."
+#: ../gsearchtool/gsearchtool.c:159
+msgid "VALUE"
+msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:390
+#: ../gsearchtool/gsearchtool.c:163 ../gsearchtool/gsearchtool.c:164
+msgid "DAYS"
+msgstr ""
+
+#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
+msgid "KILOBYTES"
+msgstr ""
+
+#: ../gsearchtool/gsearchtool.c:168
+msgid "USER"
+msgstr ""
+
+#: ../gsearchtool/gsearchtool.c:169
+msgid "GROUP"
+msgstr ""
+
+#: ../gsearchtool/gsearchtool.c:172
+msgid "PATTERN"
+msgstr ""
+
+#: ../gsearchtool/gsearchtool.c:383
 msgid "A locate database has probably not been created."
 msgstr "Mety tsy mbola  nisy soratra fototra locate noforonina angamba."
 
-#: ../gsearchtool/gsearchtool.c:492
+#: ../gsearchtool/gsearchtool.c:485
 #, c-format
 msgid "Character set conversion failed for \"%s\""
 msgstr "Famadihana fitambarana marika tsy nahomby ho an'ny \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:516
+#: ../gsearchtool/gsearchtool.c:509
 msgid "Searching..."
 msgstr "Mikaroka..."
 
-#: ../gsearchtool/gsearchtool.c:516 ../gsearchtool/gsearchtool.c:1021
-#: ../gsearchtool/gsearchtool.c:1299 ../gsearchtool/gsearchtool.c:3150
+#: ../gsearchtool/gsearchtool.c:509 ../gsearchtool/gsearchtool.c:1015
+#: ../gsearchtool/gsearchtool.c:2988
 msgid "Search for Files"
 msgstr "Mikaroka rakitra"
 
-#: ../gsearchtool/gsearchtool.c:967 ../gsearchtool/gsearchtool.c:996
+#: ../gsearchtool/gsearchtool.c:961 ../gsearchtool/gsearchtool.c:990
 msgid "No files found"
 msgstr "Tsy misy rakitra hita"
 
-#: ../gsearchtool/gsearchtool.c:989
+#: ../gsearchtool/gsearchtool.c:983
 msgid "(stopped)"
 msgstr "(najanona)"
 
-#: ../gsearchtool/gsearchtool.c:995
+#: ../gsearchtool/gsearchtool.c:989
 msgid "No Files Found"
 msgstr "Tsy misy rakitra hita"
 
-#: ../gsearchtool/gsearchtool.c:1000
+#: ../gsearchtool/gsearchtool.c:994
 #, c-format
-msgid "%d File Found"
-msgid_plural "%d Files Found"
-msgstr[0] "Rakitra %d no hita"
-msgstr[1] "Rakitra %d no hita"
+msgid "%'d File Found"
+msgid_plural "%'d Files Found"
+msgstr[0] ""
+msgstr[1] ""
 
-#: ../gsearchtool/gsearchtool.c:1004 ../gsearchtool/gsearchtool.c:1042
+#: ../gsearchtool/gsearchtool.c:998 ../gsearchtool/gsearchtool.c:1036
 #, c-format
-msgid "%d file found"
-msgid_plural "%d files found"
-msgstr[0] "rakitra %d no hita"
-msgstr[1] "rakitra %d no hita"
+msgid "%'d file found"
+msgid_plural "%'d files found"
+msgstr[0] ""
+msgstr[1] ""
 
-#: ../gsearchtool/gsearchtool.c:1133
+#: ../gsearchtool/gsearchtool.c:1127
 msgid "Entry changed called for a non entry option!"
 msgstr "Niantso safidy tsy fidirana ilay fidirana voaova!"
 
-#: ../gsearchtool/gsearchtool.c:1384
+#: ../gsearchtool/gsearchtool.c:1287
 msgid "Set the text of \"Name contains\" search option"
 msgstr "Hamaritra ny lahabolan'ny safidim-pikarohana \"Misy ity ilay anarana\""
 
-#: ../gsearchtool/gsearchtool.c:1385
+#: ../gsearchtool/gsearchtool.c:1288
 msgid "Set the text of \"Look in folder\" search option"
-msgstr ""
-"Hamaritra ny lahabolan'ny safidim-pikarohana \"Jereo anatin'ny laha-tahiry\""
+msgstr "Hamaritra ny lahabolan'ny safidim-pikarohana \"Jereo anatin'ny laha-tahiry\""
 
-#: ../gsearchtool/gsearchtool.c:1386
+#: ../gsearchtool/gsearchtool.c:1289
 msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr ""
-"Avaho araka izao ireo rakitra: anarana, laha-tahiry, habe, karazana, na daty"
+msgstr "Avaho araka izao ireo rakitra: anarana, laha-tahiry, habe, karazana, na daty"
 
-#: ../gsearchtool/gsearchtool.c:1387
+#: ../gsearchtool/gsearchtool.c:1290
 msgid "Set sort order to descending, the default is ascending"
-msgstr ""
-"Farito ho midina ny filaharan'ny fanavahana. Miakatra ny filaharana tsotra"
+msgstr "Farito ho midina ny filaharan'ny fanavahana. Miakatra ny filaharana tsotra"
 
-#: ../gsearchtool/gsearchtool.c:1388
+#: ../gsearchtool/gsearchtool.c:1291
 msgid "Automatically start a search"
 msgstr "Avy dia manaova fikarohana"
 
-#: ../gsearchtool/gsearchtool.c:1394
+#: ../gsearchtool/gsearchtool.c:1297
 #, c-format
 msgid "Select the \"%s\" search option"
 msgstr "Ekeo ny safidim-pikarohana \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:1397
+#: ../gsearchtool/gsearchtool.c:1300
 #, c-format
 msgid "Select and set the \"%s\" search option"
 msgstr "Ekeo ary farito ny safidim-pikarohana \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:1504
+#: ../gsearchtool/gsearchtool.c:1407
 msgid "Invalid option passed to sortby command line argument."
 msgstr "Safidy tsy mety no nalefa tany amin'ny lohahevitry ny baiko sortby."
 
-#: ../gsearchtool/gsearchtool.c:1802
+#: ../gsearchtool/gsearchtool.c:1701
 msgid ""
 "\n"
 "... Too many errors to display ..."
-msgstr ""
-"\n"
-"... Be loatra ireo tsy fetezana haseho ..."
+msgstr "\n... Be loatra ireo tsy fetezana haseho ..."
 
-#: ../gsearchtool/gsearchtool.c:1816
+#: ../gsearchtool/gsearchtool.c:1715
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
-msgstr ""
-"Mety tsy mitombina ny valin'ilay fikarohana. Nisy olana teo am-panaovana "
-"ilay fikarohana."
+msgstr "Mety tsy mitombina ny valin'ilay fikarohana. Nisy olana teo am-panaovana ilay fikarohana."
 
-#: ../gsearchtool/gsearchtool.c:1828 ../gsearchtool/gsearchtool.c:1872
+#: ../gsearchtool/gsearchtool.c:1727 ../gsearchtool/gsearchtool.c:1771
 msgid "Show more _details"
 msgstr "Asehoy amin'ny _antsipiriany"
 
-#: ../gsearchtool/gsearchtool.c:1858
+#: ../gsearchtool/gsearchtool.c:1757
 msgid ""
 "The search results may be out of date or invalid.  Do you want to disable "
 "the quick search feature?"
-msgstr ""
-"Mety tsy vaovao intsony na tsy mitombina ny valin'ilay fikarohana. Tianao "
-"atsahatra ve ny fahasahaza karoka faingana?"
+msgstr "Mety tsy vaovao intsony na tsy mitombina ny valin'ilay fikarohana. Tianao atsahatra ve ny fahasahaza karoka faingana?"
 
-#: ../gsearchtool/gsearchtool.c:1883
+#: ../gsearchtool/gsearchtool.c:1782
 msgid "Disable _Quick Search"
 msgstr "Atsaharo ny _karoka faingana"
 
-#: ../gsearchtool/gsearchtool.c:1910
+#: ../gsearchtool/gsearchtool.c:1809
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
 msgstr "Tsy nahafaritra ny id'ny vondrom-pizotra an'ny zanaka %d: %s.\n"
 
-#: ../gsearchtool/gsearchtool.c:1935
+#: ../gsearchtool/gsearchtool.c:1834
 msgid "Error parsing the search command."
 msgstr "Nisy olana teo am-pizarazarana ny baikon'ny fikarohana."
 
-#: ../gsearchtool/gsearchtool.c:1968
+#: ../gsearchtool/gsearchtool.c:1867
 msgid "Error running the search command."
 msgstr "Nisy olana teo am-pandefasana ny baikon'ny fikarohana."
 
-#: ../gsearchtool/gsearchtool.c:2083
+#: ../gsearchtool/gsearchtool.c:1987
 #, c-format
 msgid "Enter a text value for the \"%s\" search option."
 msgstr "Mampidira sandan-dahabolana ho an'ny safidim-pikarohana \"%s\"."
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:2088
+#: ../gsearchtool/gsearchtool.c:1992
 #, c-format
 msgid "\"%s\" in %s"
 msgstr "\"%s\" (%s)"
 
-#: ../gsearchtool/gsearchtool.c:2090
+#: ../gsearchtool/gsearchtool.c:1994
 #, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
 msgstr "Mampidira sanda (%s) ho an'ny safidim-pikarohana \"%s\"."
 
-#: ../gsearchtool/gsearchtool.c:2149
+#: ../gsearchtool/gsearchtool.c:2052
 #, c-format
 msgid "Remove \"%s\""
 msgstr "Esory ny \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:2150
+#: ../gsearchtool/gsearchtool.c:2053
 #, c-format
 msgid "Click to remove the \"%s\" search option."
 msgstr "Tsindrio raha hanesotra ny safidim-pikarohana \"%s\"."
 
-#: ../gsearchtool/gsearchtool.c:2243
+#: ../gsearchtool/gsearchtool.c:2146
 msgid "A_vailable options:"
 msgstr "Ireo safidy _misy:"
 
-#: ../gsearchtool/gsearchtool.c:2272
+#: ../gsearchtool/gsearchtool.c:2175
 msgid "Available options"
 msgstr "Ireo safidy misy"
 
-#: ../gsearchtool/gsearchtool.c:2273
+#: ../gsearchtool/gsearchtool.c:2176
 msgid "Select a search option from the drop-down list."
-msgstr ""
-"Misafidiana safidim-pikarohana iray avy ao amin'ny lisitra misokatra midina."
+msgstr "Misafidiana safidim-pikarohana iray avy ao amin'ny lisitra misokatra midina."
 
-#: ../gsearchtool/gsearchtool.c:2285
+#: ../gsearchtool/gsearchtool.c:2188
 msgid "Add search option"
 msgstr "Hanampy safidim-pikarohana"
 
-#: ../gsearchtool/gsearchtool.c:2286
+#: ../gsearchtool/gsearchtool.c:2189
 msgid "Click to add the selected available search option."
 msgstr "Tsindrio raha hampiditra ilay safidim-pikarohana misy voafaritra."
 
-#: ../gsearchtool/gsearchtool.c:2375
+#: ../gsearchtool/gsearchtool.c:2278
 msgid "S_earch results:"
 msgstr "Valin'ny _karoka:"
 
-#: ../gsearchtool/gsearchtool.c:2414
+#: ../gsearchtool/gsearchtool.c:2322
 msgid "List View"
 msgstr "Sehon'ny lisitra"
 
-#: ../gsearchtool/gsearchtool.c:2510
-msgid "Size"
-msgstr "Habe"
-
-#: ../gsearchtool/gsearchtool.c:2521
+#: ../gsearchtool/gsearchtool.c:2431
 msgid "Type"
 msgstr "Karazana"
 
-#: ../gsearchtool/gsearchtool.c:2532
+#: ../gsearchtool/gsearchtool.c:2443
 msgid "Date Modified"
 msgstr "Datin'ny fanovana"
 
-#: ../gsearchtool/gsearchtool.c:2934
+#: ../gsearchtool/gsearchtool.c:2759
 msgid "_Name contains:"
 msgstr "Misy ity ilay _anarana:"
 
-#: ../gsearchtool/gsearchtool.c:2948 ../gsearchtool/gsearchtool.c:2949
+#: ../gsearchtool/gsearchtool.c:2773 ../gsearchtool/gsearchtool.c:2774
 msgid "Enter a filename or partial filename with or without wildcards."
-msgstr ""
-"Mampidira anaran-drakitra na ampahan'anaran-drakitra iray miaraka na tsy "
-"miaraka amin'ny marika ankapobe."
+msgstr "Mampidira anaran-drakitra na ampahan'anaran-drakitra iray miaraka na tsy miaraka amin'ny marika ankapobe."
 
-#: ../gsearchtool/gsearchtool.c:2949
+#: ../gsearchtool/gsearchtool.c:2774
 msgid "Name contains"
 msgstr "Misy ity ilay anarana"
 
-#: ../gsearchtool/gsearchtool.c:2955
+#: ../gsearchtool/gsearchtool.c:2780
 msgid "_Look in folder:"
 msgstr "_Jereo anatin'ny laha-tahiry:"
 
-#: ../gsearchtool/gsearchtool.c:2961
+#: ../gsearchtool/gsearchtool.c:2786
 msgid "Browse"
 msgstr "Zahavo"
 
-#: ../gsearchtool/gsearchtool.c:2966
+#: ../gsearchtool/gsearchtool.c:2795
 msgid "Look in folder"
 msgstr "Jereo anatin'ny laha-tahiry"
 
-#: ../gsearchtool/gsearchtool.c:2966
+#: ../gsearchtool/gsearchtool.c:2795
 msgid "Select the folder or device from which you want to begin the search."
-msgstr ""
-"safidio ilay laha-tahiry na periferika tianao anombohana ny fikarohana."
+msgstr "safidio ilay laha-tahiry na periferika tianao anombohana ny fikarohana."
 
-#: ../gsearchtool/gsearchtool.c:2977
+#: ../gsearchtool/gsearchtool.c:2813
 msgid "Select more _options"
 msgstr "Hijery _safidy misimisy kokoa"
 
-#: ../gsearchtool/gsearchtool.c:2986
+#: ../gsearchtool/gsearchtool.c:2822
 msgid "Select more options"
 msgstr "Hijery safidy misimisy kokoa"
 
-#: ../gsearchtool/gsearchtool.c:2986
+#: ../gsearchtool/gsearchtool.c:2822
 msgid "Click to expand or collapse the list of available options."
 msgstr "Tsindrio raha hamelatra na hangorona ny lisitry ireo safidy misy."
 
-#: ../gsearchtool/gsearchtool.c:3010
+#: ../gsearchtool/gsearchtool.c:2846
 msgid "Click to display the help manual."
 msgstr "Tsindrio raha haneho ireo toro-làlana."
 
-#: ../gsearchtool/gsearchtool.c:3018
+#: ../gsearchtool/gsearchtool.c:2854
 msgid "Click to close \"Search for Files\"."
 msgstr "Tsindrio raha hanidy ny \"Hikaroka rakitra\"."
 
-#: ../gsearchtool/gsearchtool.c:3044
+#: ../gsearchtool/gsearchtool.c:2880
 msgid "Click to perform a search."
 msgstr "Tsindrio raha hanao fikarohana."
 
-#: ../gsearchtool/gsearchtool.c:3045
+#: ../gsearchtool/gsearchtool.c:2881
 msgid "Click to stop a search."
 msgstr "Tsindrio raha hanajanona fikarohana."
 
-#: ../logview/about.c:51 ../logview/logview.c:37 ../logview/main.c:54
+#: ../gsearchtool/gsearchtool.c:2973
+msgid "- the MATE Search Tool"
+msgstr ""
+
+#: ../gsearchtool/gsearchtool.c:2982
+#, c-format
+msgid "Failed to parse command line arguments: %s\n"
+msgstr ""
+
+#: ../libeggsmclient/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr ""
+
+#: ../libeggsmclient/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr ""
+
+#: ../libeggsmclient/eggdesktopfile.c:958
+#, c-format
+msgid "Starting %s"
+msgstr ""
+
+#: ../libeggsmclient/eggdesktopfile.c:1100
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr ""
+
+#: ../libeggsmclient/eggdesktopfile.c:1168
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr ""
+
+#: ../libeggsmclient/eggdesktopfile.c:1373
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr ""
+
+#: ../libeggsmclient/eggdesktopfile.c:1392
+#, c-format
+msgid "Not a launchable item"
+msgstr ""
+
+#: ../libeggsmclient/eggsmclient.c:225
+msgid "Disable connection to session manager"
+msgstr ""
+
+#: ../libeggsmclient/eggsmclient.c:228
+msgid "Specify file containing saved configuration"
+msgstr ""
+
+#: ../libeggsmclient/eggsmclient.c:228
+msgid "FILE"
+msgstr ""
+
+#: ../libeggsmclient/eggsmclient.c:231
+msgid "Specify session management ID"
+msgstr ""
+
+#: ../libeggsmclient/eggsmclient.c:231
+msgid "ID"
+msgstr ""
+
+#: ../libeggsmclient/eggsmclient.c:252
+msgid "Session management options:"
+msgstr ""
+
+#: ../libeggsmclient/eggsmclient.c:253
+msgid "Show session management options"
+msgstr ""
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr ""
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr ""
+
+#: ../logview/data/mate-system-log.schemas.in.h:1
+msgid "Log file to open up on startup"
+msgstr "Ny raki-tatitra sokafana rehefa hanomboka"
+
+#: ../logview/data/mate-system-log.schemas.in.h:2
+msgid ""
+"Specifies the log file displayed at startup. The default is either "
+"/var/adm/messages or /var/log/messages, depending on your operating system."
+msgstr "Mamaritra ilay raki-tatitra aseho rehefa manomboka. Na /var/adm/messages na /var/log/messages ny sanda tsotra, arakaraka ny rafitra ampiasainao."
+
+#: ../logview/data/mate-system-log.schemas.in.h:3
+msgid "Size of the font used to display the log"
+msgstr "Ny haben'ny endri-tsoratra ampiasaina hanehoana ilay tatitra"
+
+#: ../logview/data/mate-system-log.schemas.in.h:4
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr "Mamaritra ny haben'ilay endri-tsoratra tsy miova saka anehoana ilay tatitra eo amin'ny sehon'ny hazo voaohany indrindra. Nalaina tao amin'ny haben'endri-tsotra tsotran'ny terminal ny sanda tsotra"
+
+#: ../logview/data/mate-system-log.schemas.in.h:5
+msgid "Height of the main window in pixels"
+msgstr "Haavon'ny (pixel) fikandrana voalohany indrindra"
+
+#: ../logview/data/mate-system-log.schemas.in.h:6
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "Mamaritra ny haavon'ny (pixel) fikandran'ny mpaneho tatitra voalohany indrindra."
+
+#: ../logview/data/mate-system-log.schemas.in.h:7
+msgid "Width of the main window in pixels"
+msgstr "Sakan'ny (pixel) fikandrana voalohany indrindra"
+
+#: ../logview/data/mate-system-log.schemas.in.h:8
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "Mamaritra ny sakan'ny (pixel) fikandran'ny mpaneho tatitra voalohany indrindra."
+
+#: ../logview/data/mate-system-log.schemas.in.h:9
+msgid "Log files to open up on startup"
+msgstr "Ny raki-tatrtra sokafana rehefa hanomboka"
+
+#: ../logview/data/mate-system-log.schemas.in.h:10
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr "Mamaritra lisi-draki-tatitra sokafana rehefa manomboka. Misy lisitra tsotra efa noforonin'ny reading /etc/syslog.conf."
+
+#: ../logview/data/logview-filter.ui.h:2
+msgid "_Regular Expression:"
+msgstr ""
+
+#: ../logview/data/logview-filter.ui.h:3
+msgid "Highlight"
+msgstr ""
+
+#: ../logview/data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr ""
+
+#: ../logview/data/logview-filter.ui.h:5
+msgid "Foreground:"
+msgstr ""
+
+#: ../logview/data/logview-filter.ui.h:6
+msgid "Background:"
+msgstr ""
+
+#: ../logview/data/logview-filter.ui.h:7
+msgid "Effect:"
+msgstr ""
+
+#: ../logview/logview-app.c:374
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr ""
+
+#: ../logview/logview-filter-manager.c:90
+msgid "Filter name is empty!"
+msgstr ""
+
+#: ../logview/logview-filter-manager.c:103
+msgid "Filter name may not contain the ':' character"
+msgstr ""
+
+#: ../logview/logview-filter-manager.c:126
+msgid "Regular expression is empty!"
+msgstr ""
+
+#: ../logview/logview-filter-manager.c:142
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr ""
+
+#: ../logview/logview-filter-manager.c:238
+msgid "Please specify either foreground or background color!"
+msgstr ""
+
+#: ../logview/logview-filter-manager.c:292
+msgid "Edit filter"
+msgstr ""
+
+#: ../logview/logview-filter-manager.c:292
+msgid "Add new filter"
+msgstr ""
+
+#: ../logview/logview-filter-manager.c:502
+msgid "Filters"
+msgstr ""
+
+#: ../logview/logview-findbar.c:169
+msgid "_Find:"
+msgstr ""
+
+#: ../logview/logview-findbar.c:184
+msgid "Find Previous"
+msgstr ""
+
+#: ../logview/logview-findbar.c:187
+msgid "Find previous occurrence of the search string"
+msgstr ""
+
+#: ../logview/logview-findbar.c:192
+msgid "Find Next"
+msgstr ""
+
+#: ../logview/logview-findbar.c:195
+msgid "Find next occurrence of the search string"
+msgstr ""
+
+#: ../logview/logview-findbar.c:202
+msgid "Clear the search string"
+msgstr ""
+
+#: ../logview/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr ""
+
+#: ../logview/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr ""
+
+#: ../logview/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr ""
+
+#: ../logview/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr ""
+
+#: ../logview/logview-loglist.c:311
+msgid "Loading..."
+msgstr ""
+
+#: ../logview/logview-main.c:61
+msgid "Show the application's version"
+msgstr "Asehoy ny kinovan'ilay rindran'asa"
+
+#: ../logview/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr ""
+
+#: ../logview/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - Tatitry ny fandrindrana sy fizahana"
+
+#: ../logview/logview-main.c:102
+msgid "Log Viewer"
+msgstr "Mpaneho tatitra"
+
+#: ../logview/logview-window.c:38 ../logview/logview-window.c:759
 msgid "System Log Viewer"
 msgstr "Mpaneho ny tatitry ny rafitra"
 
-#: ../logview/about.c:54
-msgid "A system log viewer for MATE."
-msgstr "Mpaneho ny tatitry ny rafitra ho an'ny MATE."
-
-#: ../logview/mate-system-log.desktop.in.h:1
-msgid "System Log"
-msgstr "Raki-tatitry ny rafitra"
-
-#: ../logview/mate-system-log.desktop.in.h:2
-msgid "View the system log file"
-msgstr "Asehoy ilay raki-tatitry ny rafitra"
-
-#: ../logview/log_repaint.c:179
+#: ../logview/logview-window.c:210
 #, c-format
-msgid "last update : %s"
-msgstr "fanavaozana farany: %s"
+msgid "last update: %s"
+msgstr ""
 
-#: ../logview/log_repaint.c:181
+#: ../logview/logview-window.c:213
 #, c-format
 msgid "%d lines (%s) - %s"
 msgstr "andalana %d (%s) - %s"
 
-#: ../logview/log_repaint.c:219
-msgid "Current"
-msgstr "Ny ampiasaina izao"
-
-#: ../logview/logrtns.c:37
-msgid "One file or more could not be opened"
-msgstr "Tsy nety nosokafana ny rakitra iray na maromaro"
-
-#: ../logview/logrtns.c:59
-#, c-format
-msgid ""
-"%s is not user readable. Either run the program as root or ask the sysadmin "
-"to change the permissions on the file.\n"
-msgstr ""
-"Tsy natao ho vakian'ny mpampiasa ny %s. Amin'ny anaran'ny faka no andefaso "
-"ilay rindran'asa na angataho amin'ny mpitantana ny rafitra ny fahazoan-"
-"dàlana mampiasa ilay rakitra.\n"
-
-#: ../logview/logrtns.c:64
-#, c-format
-msgid "%s is too big."
-msgstr "Lehibe loatra ny %s."
-
-#: ../logview/logrtns.c:67
-#, c-format
-msgid "%s could not be opened."
-msgstr "Tsy nety nosokafana ny %s."
-
-#: ../logview/logrtns.c:378
-#, c-format
-msgid "%s is not a log file."
-msgstr "Tsy raki-tatitra ny %s."
-
-#: ../logview/logrtns.c:384
-msgid "Not enough memory."
-msgstr "Tsy ampy ny arika."
-
-#: ../logview/logrtns.c:398
-#, c-format
-msgid "%s cannot be opened."
-msgstr "Tsy mety sokafana ny %s."
-
-#: ../logview/logview-findbar.c:152
-msgid "_Filter:"
-msgstr "_Sivana:"
-
-#: ../logview/logview-findbar.c:157
-msgid "_Clear"
-msgstr "_Foano:"
-
-#: ../logview/logview.c:85
-msgid "_Log"
-msgstr "_Tatitra"
-
-#: ../logview/logview.c:90
-msgid "_Open..."
-msgstr "_Hanokatra..."
-
-#: ../logview/logview.c:90
-msgid "Open a log from file"
-msgstr "Hanokatra raki-tatitra avy amin'ny rakitra"
-
-#: ../logview/logview.c:92
-msgid "_Close"
-msgstr "_hidio"
-
-#: ../logview/logview.c:92
-msgid "Close this log"
-msgstr "HIdio ity raki-tatitra ity"
-
-#: ../logview/logview.c:94
-msgid "_Quit"
-msgstr "_Ajanony"
-
-#: ../logview/logview.c:94
-msgid "Quit the log viewer"
-msgstr "Manajanona ny mpaneho raki-tatitra"
-
-#: ../logview/logview.c:97
-msgid "_Copy"
-msgstr "_Adikao"
-
-#: ../logview/logview.c:97
-msgid "Copy the selection"
-msgstr "Mandika izay voafaritra"
-
-#: ../logview/logview.c:99
-msgid "Select the entire log"
-msgstr "Farito ilay tatitra iray manontolo"
-
-#: ../logview/logview.c:101
-msgid "_Filter..."
-msgstr "_Hanasivana..."
-
-#: ../logview/logview.c:101
-msgid "Filter log"
-msgstr "Manasivana ny raki-tatitra"
-
-#: ../logview/logview.c:104
-msgid "Bigger text size"
-msgstr "Haben-tsoratra lehibe kokoa"
-
-#: ../logview/logview.c:106
-msgid "Smaller text size"
-msgstr "Haben-tsoratra kely kokoa"
-
-#: ../logview/logview.c:108
-msgid "Normal text size"
-msgstr "Haben-tsoratra araka ny tokony ho izy"
-
-#: ../logview/logview.c:111
-msgid "Collapse _All"
-msgstr "Aorony izy _rehetra"
-
-#: ../logview/logview.c:111
-msgid "Collapse all the rows"
-msgstr "Mangorona ireo fariana rehetra"
-
-#: ../logview/logview.c:114
-msgid "Open the help contents for the log viewer"
-msgstr "Manokatra ny mpiatin'ny toro-làlana mikasika ny mpaneho tatitra"
-
-#: ../logview/logview.c:116
-msgid "Show the about dialog for the log viewer"
-msgstr "Asehoy ny takilan'ny mombamomba mikasika ny mpaneho tatitra"
-
-#: ../logview/logview.c:122
-msgid "Show Status Bar"
-msgstr "Asehoy ny anjan'ny fivoarana"
-
-#: ../logview/logview.c:124
-msgid "Side _Pane"
-msgstr "_Takela an-tsisiny"
-
-#: ../logview/logview.c:124
-msgid "Show Side Pane"
-msgstr "Mampiseho ny takela an-tsisiny"
-
-#: ../logview/logview.c:126
-msgid "_Monitor"
-msgstr "_Mpandrindra"
-
-#: ../logview/logview.c:126
-msgid "Monitor Current Log"
-msgstr "Mandrindra ny tatitra misy amin'izao"
-
-#: ../logview/logview.c:128
-msgid "Ca_lendar"
-msgstr "_Kalandrie"
-
-#: ../logview/logview.c:128
-msgid "Show Calendar Log"
-msgstr "Maneho ny tatitry ny kalandrie"
-
-#: ../logview/logview.c:308
-#, c-format
-msgid "%s (monitored) - %s"
-msgstr "%s (voarindra) - %s"
-
-#: ../logview/logview.c:519
+#: ../logview/logview-window.c:317
 msgid "Open Log"
 msgstr "Hanokatra tatitra"
 
-#: ../logview/logview.c:907
+#: ../logview/logview-window.c:356
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr ""
+
+#: ../logview/logview-window.c:470
+msgid "Wrapped"
+msgstr ""
+
+#: ../logview/logview-window.c:764
+msgid "A system log viewer for MATE."
+msgstr "Mpaneho ny tatitry ny rafitra ho an'ny MATE."
+
+#: ../logview/logview-window.c:810
+msgid "_Filters"
+msgstr ""
+
+#: ../logview/logview-window.c:813
+msgid "_Open..."
+msgstr "_Hanokatra..."
+
+#: ../logview/logview-window.c:813
+msgid "Open a log from file"
+msgstr "Hanokatra raki-tatitra avy amin'ny rakitra"
+
+#: ../logview/logview-window.c:815
+msgid "_Close"
+msgstr "_hidio"
+
+#: ../logview/logview-window.c:815
+msgid "Close this log"
+msgstr "HIdio ity raki-tatitra ity"
+
+#: ../logview/logview-window.c:817
+msgid "_Quit"
+msgstr "_Ajanony"
+
+#: ../logview/logview-window.c:817
+msgid "Quit the log viewer"
+msgstr "Manajanona ny mpaneho raki-tatitra"
+
+#: ../logview/logview-window.c:820
+msgid "_Copy"
+msgstr "_Adikao"
+
+#: ../logview/logview-window.c:820
+msgid "Copy the selection"
+msgstr "Mandika izay voafaritra"
+
+#: ../logview/logview-window.c:822
+msgid "Select the entire log"
+msgstr "Farito ilay tatitra iray manontolo"
+
+#: ../logview/logview-window.c:824
+msgid "_Find..."
+msgstr "_Tadiavo..."
+
+#: ../logview/logview-window.c:824
+msgid "Find a word or phrase in the log"
+msgstr ""
+
+#: ../logview/logview-window.c:827
+msgid "Bigger text size"
+msgstr "Haben-tsoratra lehibe kokoa"
+
+#: ../logview/logview-window.c:829
+msgid "Smaller text size"
+msgstr "Haben-tsoratra kely kokoa"
+
+#: ../logview/logview-window.c:831
+msgid "Normal text size"
+msgstr "Haben-tsoratra araka ny tokony ho izy"
+
+#: ../logview/logview-window.c:834
+msgid "Manage Filters"
+msgstr ""
+
+#: ../logview/logview-window.c:834
+msgid "Manage filters"
+msgstr ""
+
+#: ../logview/logview-window.c:837
+msgid "Open the help contents for the log viewer"
+msgstr "Manokatra ny mpiatin'ny toro-làlana mikasika ny mpaneho tatitra"
+
+#: ../logview/logview-window.c:839
+msgid "Show the about dialog for the log viewer"
+msgstr "Asehoy ny takilan'ny mombamomba mikasika ny mpaneho tatitra"
+
+#: ../logview/logview-window.c:844
+msgid "_Statusbar"
+msgstr "Anjan'ny fivoarana"
+
+#: ../logview/logview-window.c:844
+msgid "Show Status Bar"
+msgstr "Asehoy ny anjan'ny fivoarana"
+
+#: ../logview/logview-window.c:846
+msgid "Side _Pane"
+msgstr "_Takela an-tsisiny"
+
+#: ../logview/logview-window.c:846
+msgid "Show Side Pane"
+msgstr "Mampiseho ny takela an-tsisiny"
+
+#: ../logview/logview-window.c:848
+msgid "Show matches only"
+msgstr ""
+
+#: ../logview/logview-window.c:848
+msgid "Only show lines that match one of the given filters"
+msgstr ""
+
+#: ../logview/logview-window.c:962
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr ""
+
+#: ../logview/logview-window.c:1381
 msgid "Version: "
 msgstr "Kinova:"
 
-#: ../logview/logview.c:976
-msgid "Days"
-msgstr "Andro"
-
-#: ../logview/logview.c:977
-msgid "Pointer towards a GSList of days for the current log."
+#: ../logview/logview-window.c:1488
+msgid "Could not open the following files:"
 msgstr ""
-"Tondro mankany amin'ny GSList misy ny andro avy amin'ny tatitra ampiasaina "
-"izao."
-
-#: ../logview/logview.schemas.in.h:1
-msgid "Height of the main window in pixels"
-msgstr "Haavon'ny (pixel) fikandrana voalohany indrindra"
-
-#: ../logview/logview.schemas.in.h:2
-msgid "Log file to open up on startup"
-msgstr "Ny raki-tatitra sokafana rehefa hanomboka"
-
-#: ../logview/logview.schemas.in.h:3
-msgid "Log files to open up on startup"
-msgstr "Ny raki-tatrtra sokafana rehefa hanomboka"
-
-#: ../logview/logview.schemas.in.h:4
-msgid "Size of the font used to display the log"
-msgstr "Ny haben'ny endri-tsoratra ampiasaina hanehoana ilay tatitra"
-
-#: ../logview/logview.schemas.in.h:5
-msgid ""
-"Specifies a list of log files to open up at startup. A default list is "
-"created by reading /etc/syslog.conf."
-msgstr ""
-"Mamaritra lisi-draki-tatitra sokafana rehefa manomboka. Misy lisitra tsotra "
-"efa noforonin'ny reading /etc/syslog.conf."
-
-#: ../logview/logview.schemas.in.h:6
-msgid "Specifies the height of the log viewer main window in pixels."
-msgstr ""
-"Mamaritra ny haavon'ny (pixel) fikandran'ny mpaneho tatitra voalohany "
-"indrindra."
-
-#: ../logview/logview.schemas.in.h:7
-msgid ""
-"Specifies the log file displayed at startup. The default is either /var/adm/"
-"messages or /var/log/messages, depending on your operating system."
-msgstr ""
-"Mamaritra ilay raki-tatitra aseho rehefa manomboka. Na /var/adm/messages na /"
-"var/log/messages ny sanda tsotra, arakaraka ny rafitra ampiasainao."
-
-#: ../logview/logview.schemas.in.h:8
-msgid ""
-"Specifies the size of the fixed-width font used to display the log in the "
-"main tree view. The default is taken from the default terminal font size."
-msgstr ""
-"Mamaritra ny haben'ilay endri-tsoratra tsy miova saka anehoana ilay tatitra "
-"eo amin'ny sehon'ny hazo voaohany indrindra. Nalaina tao amin'ny haben'endri-"
-"tsotra tsotran'ny terminal ny sanda tsotra"
-
-#: ../logview/logview.schemas.in.h:9
-msgid "Specifies the width of the log viewer main window in pixels."
-msgstr ""
-"Mamaritra ny sakan'ny (pixel) fikandran'ny mpaneho tatitra voalohany "
-"indrindra."
-
-#: ../logview/logview.schemas.in.h:10
-msgid "Width of the main window in pixels"
-msgstr "Sakan'ny (pixel) fikandrana voalohany indrindra"
-
-#: ../logview/main.c:49
-msgid "Show the application's version"
-msgstr "Asehoy ny kinovan'ilay rindran'asa"
-
-#: ../logview/main.c:55
-msgid "Show System Log Viewer options"
-msgstr "Asehoy ireo safidin'ny mpaneho tatitry ny rafitra"
-
-#: ../logview/main.c:59
-msgid " - Browse and monitor logs"
-msgstr " - Tatitry ny fandrindrana sy fizahana"
-
-#: ../logview/main.c:153
-msgid "Log Viewer"
-msgstr "Mpaneho tatitra"
-
-#: ../logview/main.c:162
-msgid "Unable to create user interface."
-msgstr "Tsy afaka mamorona mpanera ho an'ny mpampiasa."
-
-#: ../logview/misc.c:40
-msgid "January"
-msgstr "Janoary"
-
-#: ../logview/misc.c:40
-msgid "February"
-msgstr "FEbroary"
-
-#: ../logview/misc.c:40
-msgid "March"
-msgstr "Martsa"
-
-#: ../logview/misc.c:40
-msgid "April"
-msgstr "Aprily"
-
-#: ../logview/misc.c:40
-msgid "May"
-msgstr "May"
-
-#: ../logview/misc.c:41
-msgid "June"
-msgstr "Jona"
-
-#: ../logview/misc.c:41
-msgid "July"
-msgstr "Jolay"
-
-#: ../logview/misc.c:41
-msgid "August"
-msgstr "Aogositra"
-
-#: ../logview/misc.c:41
-msgid "September"
-msgstr "Septambra"
-
-#: ../logview/misc.c:41
-msgid "October"
-msgstr "Oktobra"
-
-#: ../logview/misc.c:42
-msgid "November"
-msgstr "Novambra"
-
-#: ../logview/misc.c:42
-msgid "December"
-msgstr "Desambra"
-
-#: ../logview/misc.c:162
-msgid "Invalid date"
-msgstr "Daty diso"
-
-#. Translators: Only date format, time will be bogus
-#: ../logview/misc.c:167
-#, c-format
-msgid "%x"
-msgstr "%x"
-
-#: ../logview/monitor.c:83
-msgid "This file cannot be monitored."
-msgstr "Tsy mety tantanana ity rakitra ity."
-
-#: ../logview/monitor.c:86
-msgid "File monitoring is not supported on this file system.\n"
-msgstr ""
-"Tsy raisina an-tànana ny fitantanan-drakitra raha mikasika ity rafi-drakitra "
-"ity.\n"
-
-#: ../logview/monitor.c:88
-msgid "Mate-VFS Error.\n"
-msgstr "Tsy fetezana amin'ny Mate-VFS.\n"
