@@ -1,3 +1,162 @@
+commit 9ee5460aecdd700400126d85b1e3b792b795aaeb
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Mon Jul 16 14:23:32 2012 -0400
+
+    Synced translations for mate-utils
+
+ po/af.po          | 1443 ++++++------
+ po/am.po          | 3770 ++++++++++++++++-------------
+ po/ar.po          | 1719 ++++----------
+ po/as.po          | 2423 +++++++------------
+ po/ast.po         | 2817 ++++++++++------------
+ po/az.po          | 4111 ++++++++++++++++++--------------
+ po/be.po          | 5244 +++++++++++++++++++----------------------
+ po/bg.po          | 1823 +++++++-------
+ po/bn.po          | 1814 +++++++-------
+ po/bn_IN.po       | 1788 +++++++-------
+ po/br.po          | 1850 +++++++--------
+ po/bs.po          | 4056 ++++++++++++++++++--------------
+ po/ca.po          | 2732 +++++++--------------
+ po/ca@valencia.po | 2728 +++++++--------------
+ po/crh.po         | 2399 ++++++++-----------
+ po/cs.po          | 1644 ++++++-------
+ po/cy.po          | 6232 +++++++++++++++++++-----------------------------
+ po/da.po          | 2054 +++++++---------
+ po/de.po          | 1912 +++++++--------
+ po/dz.po          | 3858 +++++++++++++-----------------
+ po/el.po          | 2240 +++++++-----------
+ po/en_CA.po       | 3547 +++++++++++++++-------------
+ po/en_GB.po       | 2664 +++++++--------------
+ po/eo.po          | 1292 +++++-----
+ po/es.po          | 2336 +++++++-----------
+ po/es_CL.po       | 3208 +++++++++++++++++++++++++
+ po/et.po          | 1707 +++++++++-----
+ po/eu.po          | 1918 +++++++--------
+ po/fa.po          | 4861 ++++++++++++++++----------------------
+ po/fi.po          | 2203 +++++++----------
+ po/fr.po          | 1894 +++++++--------
+ po/ga.po          | 1577 +++++++------
+ po/gl.po          | 1710 ++++++--------
+ po/gu.po          | 1876 +++++++--------
+ po/he.po          | 2291 +++++++-----------
+ po/hi.po          | 1887 +++++++--------
+ po/hr.po          | 3188 +++++++++++--------------
+ po/hu.po          | 1792 +++++++-------
+ po/ia.po          | 3208 +++++++++++++++++++++++++
+ po/id.po          | 1628 ++++++-------
+ po/id_ID.po       | 3201 +++++++++++++++++++++++++
+ po/is.po          | 3208 +++++++++++++++++++++++++
+ po/it.po          | 1854 +++++++--------
+ po/ja.po          | 1203 +++++-----
+ po/ka.po          | 3476 +++++++++++++++------------
+ po/kn.po          | 1908 +++++++--------
+ po/ko.po          | 2293 +++++++-----------
+ po/ku.po          | 3339 ++++++++++++--------------
+ po/lt.po          | 2139 +++++++----------
+ po/lv.po          | 2295 +++++++-----------
+ po/mai.po         | 2994 +++++++++++------------
+ po/mg.po          | 3971 +++++++++++++++----------------
+ po/mk.po          | 3129 +++++++++++-------------
+ po/ml.po          | 1889 +++++++--------
+ po/mn.po          | 4067 ++++++++++++++++++--------------
+ po/mr.po          | 1845 +++++++--------
+ po/ms.po          | 4414 +++++++++++++++++++---------------
+ po/nb.po          | 1783 +++++++-------
+ po/nds.po         | 1404 +++++------
+ po/ne.po          | 3418 +++++++++++++--------------
+ po/nl.po          | 1890 +++++++--------
+ po/nn.po          | 4499 +++++++++++++----------------------
+ po/oc.po          | 2795 ++++++++++------------
+ po/or.po          | 1762 +++++++-------
+ po/pa.po          | 2062 +++++++---------
+ po/pl.po          | 1820 +++++++-------
+ po/ps.po          | 2940 +++++++++++------------
+ po/pt.po          | 4008 ++++++++++---------------------
+ po/pt_BR.po       | 2425 +++++++------------
+ po/ro.po          | 1674 ++++++-------
+ po/ru.po          | 1815 +++++++-------
+ po/rw.po          | 4792 ++++++++++++++++++++-----------------
+ po/si.po          | 3368 +++++++++++++-------------
+ po/sk.po          | 1195 ++++------
+ po/sl.po          | 6782 +++++++++++++++++++++++++----------------------------
+ po/sq.po          | 3863 ++++++++++++++++++------------
+ po/sr.po          | 2412 +++++++------------
+ po/sr@latin.po    | 2412 +++++++------------
+ po/sv.po          | 2868 +++++++---------------
+ po/ta.po          | 1765 +++++++-------
+ po/te.po          | 1616 ++++++-------
+ po/th.po          | 3076 +++++++-----------------
+ po/tr.po          | 1846 +++++++--------
+ po/ug.po          | 1183 ++++------
+ po/uk.po          | 1773 +++++++-------
+ po/vi.po          | 2625 ++++++++++-----------
+ po/wa.po          | 4654 ++++++++++++++++++------------------
+ po/xh.po          | 3932 +++++++++++++++++++------------
+ po/zh_CN.po       | 2126 +++++++----------
+ po/zh_HK.po       | 2389 +++++++------------
+ po/zh_TW.po       | 2440 +++++++------------
+ 91 files changed, 114789 insertions(+), 127292 deletions(-)
+
+commit 5932919e44f42ada9088eb8f9ee865a3cc310872
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Sun Jul 15 20:54:27 2012 -0400
+
+    po/gnome-copyrights.txt
+
+ po/gnome-copyrights.txt | 1225 +++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 1225 insertions(+)
+
+commit 16d04e7f177ea2a10144064c3d9c148fed6b8538
+Merge: 69a6f98 f352ff4
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sun May 20 05:48:30 2012 -0700
+
+    Merge pull request #1 from MDykstra/slave
+    
+    Not [~/.config/.mate] but [~/.config/mate] preference directory.
+
+commit f352ff4bab4890518f5e4555ee12f0ecebb31e69
+Author: Marcel Dijkstra <marcel.dykstra@gmail.com>
+Date:   Sun May 20 03:02:50 2012 +0200
+
+    Not [~/.config/.mate] but [~/.config/mate] preference directory.
+
+ mate-dictionary/src/gdict-source-dialog.c |    4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 69a6f98acdc9bd8970944ada986a9c303f72540f
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sun Apr 29 16:05:28 2012 +0200
+
+    fix configuration folder creation, thanks to gapan
+
+ mate-dictionary/src/gdict-common.c |    6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit c41cfe676bafbded92d3c4b914abcfa4d4443641
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Tue Apr 3 18:01:07 2012 +0200
+
+    mate-dictionary: port from ~/.mate2 to ~/.config/mate
+
+ mate-dictionary/docs/source-configuration.txt |    2 +-
+ mate-dictionary/src/gdict-common.c            |    4 ++--
+ mate-dictionary/src/gdict-source-dialog.c     |    8 ++++----
+ 3 files changed, 7 insertions(+), 7 deletions(-)
+
+commit 71babe175bd2940ef88d88659f8b1410bc6b23c6
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Mon Mar 12 12:25:24 2012 +0100
+
+    update for 1.2
+
+ AUTHORS      |    5 +-
+ ChangeLog    | 4694 ++++++++--------------------------------------------------
+ README       |   50 +-
+ autogen.sh   |    4 +-
+ configure.ac |    2 +-
+ 5 files changed, 605 insertions(+), 4150 deletions(-)
+
 commit 54d098703a4b89b8d7175b92a2aacd3a7ab5a121
 Author: Stefano Karapetsas <stefano@karapetsas.com>
 Date:   Mon Mar 12 12:21:20 2012 +0100
@@ -337,7 +496,7 @@ Date:   Wed Dec 14 10:13:54 2011 +0100
  mate-dictionary/help/ChangeLog                     |  211 +
  mate-dictionary/help/Makefile.am                   |    8 +
  mate-dictionary/help/ca/ca.po                      |  445 +
- mate-dictionary/help/cs/cs.po                      |  465 +
+ mate-dictionary/help/cs/cs.po                      |  465 ++
  .../help/cs/figures/mate-dictionary-add-source.png |  Bin 0 -> 20901 bytes
  .../cs/figures/mate-dictionary-applet-window.png   |  Bin 0 -> 18769 bytes
  .../help/cs/figures/mate-dictionary-applet.png     |  Bin 0 -> 1537 bytes
@@ -583,4 +742,4 @@ Date:   Wed Dec 14 10:13:54 2011 +0100
  po/zh_CN.po                                        | 3727 +++++++++
  po/zh_HK.po                                        | 4005 +++++++++
  po/zh_TW.po                                        | 4046 +++++++++
- 557 files changed, 446494 insertions(+), 0 deletions(-)
+ 557 files changed, 446494 insertions(+)
