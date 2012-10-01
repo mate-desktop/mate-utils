@@ -40,6 +40,7 @@
 #include <errno.h>
 #include <stdlib.h>
 #include <sys/wait.h>
+#include <glib.h>
 #include <glib/gi18n.h>
 #include <gdk/gdk.h>
 #include <gio/gio.h>
@@ -857,7 +858,7 @@ add_file_to_search_results (const gchar * file,
 
 	pixbuf = get_file_pixbuf (gsearch, file_info);
 	description = get_file_type_description (file, file_info);
-	readable_size = g_format_size_for_display (g_file_info_get_size (file_info));
+	readable_size = g_format_size (g_file_info_get_size (file_info));
 
 	g_file_info_get_modification_time (file_info, &time_val);
 	readable_date = get_readable_date (gsearch->search_results_date_format_string, time_val.tv_sec); 
