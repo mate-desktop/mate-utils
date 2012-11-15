@@ -337,17 +337,21 @@ logview_manager_add_logs_from_name_list (LogviewManager *manager,
 
 void
 logview_manager_add_logs_from_names (LogviewManager *manager,
-                                     char ** names)
+                                     char ** names,
+                                     const gchar *active)
 {
   int i;
+  gboolean set_active;
 
   g_assert (LOGVIEW_IS_MANAGER (manager));
   g_assert (op == NULL);
 
-  op = multiple_creation_op_new (G_N_ELEMENTS (names));
+  op = multiple_creation_op_new (g_strv_length (names));
 
   for (i = 0; names[i]; i++) {
-    logview_manager_add_log_from_name (manager, names[i], FALSE, TRUE);
+    set_active = (active != NULL) && (!g_ascii_strcasecmp (active, names[i]));
+    logview_manager_add_log_from_name (manager, names[i], set_active,
+                                       TRUE);
   }
 }
 

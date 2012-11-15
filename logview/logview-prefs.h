@@ -70,7 +70,7 @@ void            logview_prefs_store_log               (LogviewPrefs *prefs,
                                                        GFile *file);
 void            logview_prefs_remove_stored_log       (LogviewPrefs *prefs,
                                                        GFile *target);
-GSList *        logview_prefs_get_stored_logfiles     (LogviewPrefs *prefs);
+gchar **        logview_prefs_get_stored_logfiles     (LogviewPrefs *prefs);
 void            logview_prefs_store_fontsize          (LogviewPrefs *prefs,
                                                        int fontsize);
 int             logview_prefs_get_stored_fontsize     (LogviewPrefs *prefs);

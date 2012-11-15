@@ -1,0 +1,34 @@
+<schemalist gettext-domain="mate-utils-2.0">
+  <schema id="org.mate.system-log" path="/org/mate/system-log/">
+    <key name="logfile" type="s">
+      <default>'/var/log/messages'</default>
+      <_summary>Log file to open up on startup</_summary>
+      <_description>Specifies the log file displayed at startup. The default is either /var/adm/messages or  /var/log/messages, depending on your  operating system.</_description>
+    </key>
+    <key name="fontsize" type="i">
+      <default>10</default>
+      <_summary>Size of the font used to display the log</_summary>
+      <_description>Specifies the size of the fixed-width font used to display the log in the main tree view. The default is taken from the default terminal font size.</_description>
+    </key>
+    <key name="height" type="i">
+      <default>400</default>
+      <_summary>Height of the main window in pixels</_summary>
+      <_description>Specifies the height of the log viewer main window in pixels.</_description>
+    </key>
+    <key name="width" type="i">
+      <default>600</default>
+      <_summary>Width of the main window in pixels</_summary>
+      <_description>Specifies the width of the log viewer main window in pixels.</_description>
+    </key>
+    <key name="logfiles" type="as">
+      <default>[]</default>
+      <_summary>Log files to open up on startup</_summary>
+      <_description>Specifies a list of log files to open up at startup. A default list is created by reading /etc/syslog.conf.</_description>
+    </key>
+    <key name="filters" type="as">
+      <default>[]</default>
+      <_summary>List of saved filters</_summary>
+      <_description>List of saved regexp filters</_description>
+    </key>
+  </schema>
+</schemalist>
