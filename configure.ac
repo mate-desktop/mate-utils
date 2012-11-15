@@ -149,8 +149,6 @@ AS_IF([test "x$MATECONFTOOL" = "xno"],
       [AC_MSG_ERROR([mateconftool-2 executable not found in your path - should be installed with MateConf])]
 )
 
-GLIB_GSETTINGS
-
 AM_MATECONF_SOURCE_2
 
 AC_ARG_ENABLE([gdict-applet],
