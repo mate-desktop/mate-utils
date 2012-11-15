@@ -73,7 +73,8 @@ void            logview_manager_add_log_from_gfile  (LogviewManager *manager,
                                                      GFile *file,
                                                      gboolean set_active);
 void            logview_manager_add_logs_from_names (LogviewManager *manager,
-                                                     char ** names);
+                                                     char ** names,
+                                                     const gchar *active);
 void            logview_manager_set_active_log      (LogviewManager *manager,
                                                      LogviewLog *log);
 LogviewLog *    logview_manager_get_active_log      (LogviewManager *manager);

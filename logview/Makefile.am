@@ -1,8 +1,6 @@
 SUBDIRS = data help tests
 
 INCLUDES = \
-	$(MATE_UTILS_CFLAGS)					\
-	$(GTHREAD_CFLAGS)					\
 	-DG_LOG_DOMAIN=\"mate-system-log\"			\
 	-DMATELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"	\
 	-DDATADIR=\""$(datadir)"\"				\
@@ -42,9 +40,18 @@ mate_system_log_SOURCES = 	\
 	logview-filter-manager.c  \
 	$(BUILT_SOURCES)
 
+mate_system_log_CFLAGS =	\
+	$(GLIB_CFLAGS)		\
+	$(GTHREAD_CFLAGS)	\
+	$(GIO_CFLAGS)		\
+	$(GTK_CFLAGS)		\
+	$(NULL)
+
 mate_system_log_LDADD =	\
-	$(MATE_UTILS_LIBS)	\
+	$(GLIB_LIBS)		\
+	$(GIO_LIBS)		\
 	$(GTHREAD_LIBS)		\
+	$(GTK_LIBS)		\
 	$(Z_LIBS)		\
 	-lm
 

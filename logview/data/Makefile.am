@@ -10,27 +10,21 @@ $(desktop_in_files): $(desktop_in_files:.desktop.in=.desktop.in.in)
 
 man_MANS = mate-system-log.1
 
-schemasdir = $(MATECONF_SCHEMA_FILE_DIR)
-schemas_in_files = mate-system-log.schemas.in
-schemas_DATA = $(schemas_in_files:.schemas.in=.schemas)
-@INTLTOOL_SCHEMAS_RULE@
+gsettingsschema_in_files = org.mate.system-log.gschema.xml.in
+gsettings_SCHEMAS = $(gsettingsschema_in_files:.xml.in=.xml)
+.PRECIOUS: $(gsettings_SCHEMAS)
 
-install-data-local: $(schemas_DATA)
-if MATECONF_SCHEMAS_INSTALL
-	if test -z "$(DESTDIR)" ; then \
-		for p in $^ ; do \
-			MATECONF_CONFIG_SOURCE=$(MATECONF_SCHEMA_CONFIG_SOURCE) $(MATECONFTOOL) --makefile-install-rule $$p 2>&1 > /dev/null; \
-		done \
-	fi
-endif
+@INTLTOOL_XML_NOMERGE_RULE@
+
+@GSETTINGS_RULES@
 
 EXTRA_DIST = 			\
 	mate-system-log.desktop.in.in	\
 	$(xml_DATA)		\
 	$(man_MANS)		\
-	$(schemas_in_files)
+	$(gsettingsschema_in_files)
 
 DISTCLEANFILES =		\
 	$(desktop_DATA)		\
 	$(desktop_in_files)	\
-	$(schemas_DATA)
+	$(gsettings_SCHEMAS)
