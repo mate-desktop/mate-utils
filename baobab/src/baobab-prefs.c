@@ -259,8 +259,15 @@ fill_props_model (GtkListStore *store)
 		glibtop_get_fsusage (&fsusage, mountentry->mountdir);
 		fstotal = fsusage.blocks * fsusage.block_size;
 		fsavail = fsusage.bfree * fsusage.block_size;
-		total = g_format_size_for_display(fstotal);
-		avail = g_format_size_for_display(fsavail);
+		
+		#if GLIB_CHECK_VERSION (2, 30, 0)
+			total = g_format_size(fstotal);
+			avail = g_format_size(fsavail);
+		#else
+			total = g_format_size_for_display(fstotal);
+			avail = g_format_size_for_display(fsavail);
+		#endif
+		
 		file = g_file_new_for_path (mountentry->mountdir);
 		uri = g_file_get_uri (file);
 		excluded = baobab_is_excluded_location (file);
