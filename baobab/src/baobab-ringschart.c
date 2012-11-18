@@ -623,7 +623,7 @@ baobab_ringschart_post_draw (GtkWidget *chart, cairo_t *cr)
 
   priv = BAOBAB_RINGSCHART_GET_PRIVATE (chart);
 
-  if (priv->drawing_subtips)
+  if (priv->subfoldertips_enabled)
     {
       /* Reverse the glist, which was created from the tail */
       priv->subtip_items = g_list_reverse (priv->subtip_items);
