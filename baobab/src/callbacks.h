@@ -26,6 +26,7 @@
 #include <gtk/gtk.h>
 #include "baobab-chart.h"
 
+void on_quit_activate (GtkMenuItem *menuitem, gpointer user_data);
 void on_about_activate (GtkMenuItem *menuitem, gpointer user_data);
 void on_menuscanhome_activate (GtkMenuItem *menuitem, gpointer user_data);
 void on_menuallfs_activate (GtkMenuItem *menuitem, gpointer user_data);
@@ -39,7 +40,6 @@ void on_tbstop_clicked (GtkToolButton *toolbutton, gpointer user_data);
 void on_tbrescan_clicked (GtkToolButton *toolbutton, gpointer user_data);
 void on_radio_allfs_clicked (GtkButton *button, gpointer user_data);
 void on_radio_dir_clicked (GtkButton *button, gpointer user_data);
-void on_esci1_activate (GtkObject *object, gpointer user_data);
 gboolean on_delete_activate (GtkWidget *widget, GdkEvent *event, gpointer user_data);
 void open_file_cb (GtkMenuItem *pmenu, gpointer dummy);
 void scan_folder_cb (GtkMenuItem *pmenu, gpointer dummy);
@@ -48,8 +48,6 @@ void list_all_cb (GtkMenuItem *pmenu, gpointer dummy);
 void on_pref_menu (GtkAction *a, gpointer user_data);
 void on_tb_scan_remote_clicked (GtkToolButton *toolbutton, gpointer user_data);
 void on_menu_scan_rem_activate (GtkMenuItem *menuitem, gpointer user_data);
-void on_view_tb_activate (GtkToggleAction *action, gpointer user_data); 
-void on_view_sb_activate (GtkToggleAction *action, gpointer         user_data);
 void on_ck_allocated_activate (GtkToggleAction *action, gpointer user_data);
 void on_helpcontents_activate (GtkAction *a, gpointer user_data);
 void on_tv_selection_changed (GtkTreeSelection *selection, gpointer user_data);
@@ -57,6 +55,5 @@ void on_move_upwards_cb (GtkCheckMenuItem *checkmenuitem, gpointer user_data);
 void on_zoom_in_cb (GtkCheckMenuItem *checkmenuitem, gpointer user_data);
 void on_zoom_out_cb (GtkCheckMenuItem *checkmenuitem, gpointer user_data);
 void on_chart_snapshot_cb (GtkCheckMenuItem *checkmenuitem, gpointer user_data);
-void on_chart_type_change (GtkWidget *combo, gpointer user_data);
 
 #endif /* __BAOBAB_CALLBACKS_H__ */
