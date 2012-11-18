@@ -27,7 +27,6 @@
 #include <string.h>
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
-#include <mateconf/mateconf-client.h>
 #include <gio/gio.h>
 
 #include "baobab.h"
@@ -37,6 +36,12 @@
 #include "baobab-prefs.h"
 #include "baobab-remote-connect-dialog.h"
 #include "baobab-chart.h"
+
+void
+on_quit_activate (GtkMenuItem *menuitem, gpointer user_data)
+{
+	baobab_quit ();
+}
 
 void
 on_menuscanhome_activate (GtkMenuItem *menuitem, gpointer user_data)
@@ -57,15 +62,9 @@ on_menuscandir_activate (GtkMenuItem *menuitem, gpointer user_data)
 }
 
 void
-on_esci1_activate (GtkObject *menuitem, gpointer user_data)
+on_about_activate (GtkMenuItem *menuitem, gpointer user_data)
 {
-	baobab_stop_scan ();
-	gtk_main_quit ();
-}
-
-void on_about_activate(GtkMenuItem* menuitem, gpointer user_data)
-{
-	const gchar* const authors[] = {
+	const gchar * const authors[] = {
 		"Fabio Marzocca <thesaltydog@gmail.com>",
 		"Paolo Borelli <pborelli@katamail.com>",
 		"Benoît Dejean <benoit@placenet.org>",
@@ -185,7 +184,7 @@ gboolean
 on_delete_activate (GtkWidget *widget,
 		    GdkEvent *event, gpointer user_data)
 {
-	on_esci1_activate (NULL, NULL);
+	baobab_quit ();
 	return TRUE;
 }
 
@@ -265,36 +264,6 @@ on_ck_allocated_activate (GtkToggleAction *action,
 }
 
 void
-on_view_tb_activate (GtkToggleAction *action,
-                     gpointer         user_data)
-{
-	gboolean visible;
-
-	visible = gtk_toggle_action_get_active (action);
-	baobab_set_toolbar_visible (visible);
-
-	mateconf_client_set_bool (baobab.mateconf_client,
-			       BAOBAB_TOOLBAR_VISIBLE_KEY,
-			       visible,
-			       NULL);
-}
-
-void
-on_view_sb_activate (GtkToggleAction *action,
-                     gpointer         user_data)
-{
-	gboolean visible;
-
-	visible = gtk_toggle_action_get_active (action);
-	baobab_set_statusbar_visible (visible);
-
-	mateconf_client_set_bool (baobab.mateconf_client,
-			       BAOBAB_STATUSBAR_VISIBLE_KEY,
-			       visible,
-			       NULL);
-}
-
-void
 on_helpcontents_activate (GtkAction *a, gpointer user_data)
 {
 	baobab_help_display (GTK_WINDOW (baobab.window), "baobab", NULL);
@@ -357,38 +326,5 @@ void
 on_chart_snapshot_cb (GtkCheckMenuItem *checkmenuitem, gpointer user_data)
 {
 	baobab_chart_save_snapshot (baobab.current_chart);
-}
-
-void
-on_chart_type_change (GtkWidget *combo, gpointer user_data)
-{
-	GtkWidget *chart;
-	GtkWidget *frame;
-
-	guint active;
-
-	active = gtk_combo_box_get_active (GTK_COMBO_BOX (combo));
-
-	switch (active) {
-	case 0:
-		chart = baobab.rings_chart;
-		break;
-	case 1:
-		chart = baobab.treemap_chart;
-		break;
-	default:
-		g_return_if_reached ();
-	}
-
-	frame = gtk_widget_get_parent (baobab.current_chart);
-
-	baobab_chart_freeze_updates (baobab.current_chart);
-	baobab_chart_thaw_updates (chart);
-
-	g_object_ref_sink (baobab.current_chart);
-	gtk_container_remove (GTK_CONTAINER (frame), baobab.current_chart);
-	gtk_container_add (GTK_CONTAINER (frame), chart);
-
-	baobab.current_chart = chart;
 }
 

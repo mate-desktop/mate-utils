@@ -37,13 +37,17 @@ mate_disk_usage_analyzer_SOURCES = \
 	baobab-treemap.h
 
 mate_disk_usage_analyzer_CFLAGS = \
-	$(MATE_UTILS_CFLAGS) \
+	$(GLIB_CFLAGS) \
+	$(GIO_CFLAGS) \
+	$(GTK_CFLAGS) \
 	$(LIBGTOP_CFLAGS) \
 	$(NULL)
 
 mate_disk_usage_analyzer_LDFLAGS = -export-dynamic
 mate_disk_usage_analyzer_LDADD = \
 	-lm \
-	$(MATE_UTILS_LIBS) \
+	$(GLIB_LIBS) \
+	$(GIO_LIBS) \
+	$(GTK_LIBS) \
 	$(LIBGTOP_LIBS) \
 	$(NULL)
