@@ -28,22 +28,18 @@
 #include <glib.h>
 #include <gtk/gtk.h>
 #include <gio/gio.h>
-#include <mateconf/mateconf-client.h>
 
-typedef struct _baobab_fs baobab_fs;
 struct BaobabSearchOpt;
 
-#define BAOBAB_UI_FILE PKGDATADIR "/baobab-main-window.ui"
-#define BAOBAB_DIALOG_SCAN_UI_FILE PKGDATADIR "/baobab-dialog-scan-props.ui"
-
 /* Settings */
-#define BAOBAB_KEY_DIR "/apps/baobab"
-#define BAOBAB_TOOLBAR_VISIBLE_KEY	BAOBAB_KEY_DIR "/ui/toolbar_visible"
-#define BAOBAB_STATUSBAR_VISIBLE_KEY	BAOBAB_KEY_DIR "/ui/statusbar_visible"
-#define BAOBAB_SUBFLSTIPS_VISIBLE_KEY   BAOBAB_KEY_DIR "/ui/baobab_subfoldertips_visible"
-#define BAOBAB_EXCLUDED_DIRS_KEY	BAOBAB_KEY_DIR "/properties/skip_scan_uri_list"
-#define BAOBAB_ENABLE_HOME_MONITOR_KEY	BAOBAB_KEY_DIR "/properties/enable_home_monitor"
-#define SYSTEM_TOOLBAR_STYLE_KEY	"/desktop/mate/interface/toolbar_style"
+#define BAOBAB_UI_SETTINGS_SCHEMA "org.mate.disk-usage-analyzer.ui"
+#define BAOBAB_PREFS_SETTINGS_SCHEMA "org.mate.disk-usage-analyzer.preferences"
+#define BAOBAB_SETTINGS_TOOLBAR_VISIBLE "toolbar-visible"
+#define BAOBAB_SETTINGS_STATUSBAR_VISIBLE "statusbar-visible"
+#define BAOBAB_SETTINGS_SUBFLSTIPS_VISIBLE "subfoldertips-visible"
+#define BAOBAB_SETTINGS_ACTIVE_CHART "active-chart"
+#define BAOBAB_SETTINGS_MONITOR_HOME "monitor-home"
+#define BAOBAB_SETTINGS_EXCLUDED_URIS "excluded-uris"
 
 typedef struct _BaobabChartMenu BaobabChartMenu;
 
@@ -73,6 +69,7 @@ struct _BaobabApplication {
 	GtkBuilder *main_ui;
 	GtkWidget *window;
 	GtkWidget *tree_view;
+	GtkWidget *chart_frame;
 	GtkWidget *rings_chart;
 	GtkWidget *treemap_chart;
 	GtkWidget *current_chart;
@@ -95,8 +92,10 @@ struct _BaobabApplication {
 	GVolumeMonitor *monitor_vol;
 	GFileMonitor *monitor_home;
 
-	MateConfClient *mateconf_client;
 	gint model_max_depth;
+
+	GSettings *ui_settings;
+	GSettings *prefs_settings;
 };
 
 /* Application singleton */
@@ -124,5 +123,6 @@ gboolean baobab_is_excluded_location (GFile *);
 void baobab_set_toolbar_visible (gboolean visible);
 void baobab_set_statusbar_visible (gboolean visible);
 void baobab_set_statusbar (const gchar *);
+void baobab_quit (void);
 
 #endif /* __BAOBAB_H_ */
