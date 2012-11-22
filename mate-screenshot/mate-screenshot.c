@@ -25,7 +25,6 @@
 /* MAYBE I LIED... -jrb */
 
 #include <config.h>
-#include <mateconf/mateconf-client.h>
 #include <gdk/gdkx.h>
 #include <gdk/gdkkeysyms.h>
 #include <sys/types.h>
@@ -50,13 +49,13 @@
 
 #define SCREENSHOOTER_ICON "applets-screenshooter"
 
-#define MATE_SCREENSHOT_MATECONF  "/apps/mate-screenshot"
-#define INCLUDE_BORDER_KEY      MATE_SCREENSHOT_MATECONF "/include_border"
-#define INCLUDE_POINTER_KEY     MATE_SCREENSHOT_MATECONF "/include_pointer"
-#define LAST_SAVE_DIRECTORY_KEY MATE_SCREENSHOT_MATECONF "/last_save_directory"
-#define BORDER_EFFECT_KEY       MATE_SCREENSHOT_MATECONF "/border_effect"
-#define DELAY_KEY               MATE_SCREENSHOT_MATECONF "/delay"
-
+#define MATE_SCREENSHOT_SCHEMA "org.mate.screenshot"
+#define INCLUDE_BORDER_KEY      "include-border"
+#define INCLUDE_POINTER_KEY     "include-pointer"
+#define LAST_SAVE_DIRECTORY_KEY "last-save-directory"
+#define BORDER_EFFECT_KEY       "border-effect"
+#define DELAY_KEY               "delay"
+#define CAJA_PREFERENCES_SCHEMA "org.mate.caja.preferences"
 
 enum
 {
@@ -97,6 +96,7 @@ static char *last_save_dir = NULL;
 static char *window_title = NULL;
 static char *temporary_file = NULL;
 static gboolean save_immediately = FALSE;
+static GSettings *settings = NULL;
 
 /* Options */
 static gboolean take_window_shot = FALSE;
@@ -548,21 +548,15 @@ create_interactive_dialog (void)
 }
 
 static void
-save_folder_to_mateconf (ScreenshotDialog *dialog)
+save_folder_to_settings (ScreenshotDialog *dialog)
 {
-  MateConfClient *mateconf_client;
   char *folder;
 
-  mateconf_client = mateconf_client_get_default ();
-
   folder = screenshot_dialog_get_folder (dialog);
-  /* Error is NULL, as there's nothing we can do */
-  mateconf_client_set_string (mateconf_client,
-			   LAST_SAVE_DIRECTORY_KEY, folder,
-                           NULL);
+  g_settings_set_string (settings,
+                         LAST_SAVE_DIRECTORY_KEY, folder);
 
   g_free (folder);
-  g_object_unref (mateconf_client);
 }
 
 static void
@@ -626,7 +620,7 @@ save_callback (TransferResult result,
 
   if (result == TRANSFER_OK)
     {
-      save_folder_to_mateconf (dialog);
+      save_folder_to_settings (dialog);
       set_recent_entry (dialog);
       gtk_widget_destroy (toplevel);
       
@@ -1124,20 +1118,34 @@ prepare_screenshot_timeout (gpointer data)
 static gchar *
 get_desktop_dir (void)
 {
-  MateConfClient *mateconf_client;
   gboolean desktop_is_home_dir = FALSE;
   gchar *desktop_dir;
+  const char * const *schemas;
+  gboolean schema_exists = FALSE;
+  gint i;
 
-  mateconf_client = mateconf_client_get_default ();
-  desktop_is_home_dir = mateconf_client_get_bool (mateconf_client,
-                                               "/apps/caja/preferences/desktop_is_home_dir",
-                                               NULL);
+  /* Check if caja schema is installed before trying to read settings */
+  schemas = g_settings_list_schemas ();
+  for (i = 0; schemas[i] != NULL; i++) {
+    if (g_strcmp0 (schemas[i], CAJA_PREFERENCES_SCHEMA) == 0) {
+      schema_exists = TRUE;
+      break;
+    }
+  }
+
+  if (schema_exists) {
+    GSettings *caja_prefs;
+
+    caja_prefs = g_settings_new (CAJA_PREFERENCES_SCHEMA);
+    desktop_is_home_dir = g_settings_get_boolean (caja_prefs, "desktop-is-home-dir");
+
+    g_object_unref (caja_prefs);
+  }
+
   if (desktop_is_home_dir)
     desktop_dir = g_strconcat ("file://", g_get_home_dir (), NULL);
   else
     desktop_dir = g_strconcat ("file://", g_get_user_special_dir (G_USER_DIRECTORY_DESKTOP), NULL);
-
-  g_object_unref (mateconf_client);
 
   return desktop_dir;
 }
@@ -1176,14 +1184,9 @@ expand_initial_tilde (const char *path)
 static void
 load_options (void)
 {
-  MateConfClient *mateconf_client;
-
-  mateconf_client = mateconf_client_get_default ();
-
   /* Find various dirs */
-  last_save_dir = mateconf_client_get_string (mateconf_client,
-                                           LAST_SAVE_DIRECTORY_KEY,
-                                           NULL);
+  last_save_dir = g_settings_get_string (settings,
+                                         LAST_SAVE_DIRECTORY_KEY);
   if (!last_save_dir || !last_save_dir[0])
     {
       last_save_dir = get_desktop_dir ();
@@ -1195,46 +1198,30 @@ load_options (void)
       last_save_dir = tmp;
     }
 
-  include_border = mateconf_client_get_bool (mateconf_client,
-                                          INCLUDE_BORDER_KEY,
-                                          NULL);
+  include_border = g_settings_get_boolean (settings,
+                                           INCLUDE_BORDER_KEY);
 
-  include_pointer = mateconf_client_get_bool (mateconf_client,
-                                          INCLUDE_POINTER_KEY,
-                                          NULL);
+  include_pointer = g_settings_get_boolean (settings,
+                                            INCLUDE_POINTER_KEY);
 
-  border_effect = mateconf_client_get_string (mateconf_client,
-                                           BORDER_EFFECT_KEY,
-                                           NULL);
+  border_effect = g_settings_get_string (settings,
+                                         BORDER_EFFECT_KEY);
   if (!border_effect)
     border_effect = g_strdup ("none");
 
-  delay = mateconf_client_get_int (mateconf_client, DELAY_KEY, NULL);
-
-  g_object_unref (mateconf_client);
+  delay = g_settings_get_int (settings, DELAY_KEY);
 }
 
 static void
 save_options (void)
 {
-  MateConfClient *mateconf_client;
-
-  mateconf_client = mateconf_client_get_default ();
-
-  /* Error is NULL, as there's nothing we can do */
-
-  mateconf_client_set_bool (mateconf_client,
-                         INCLUDE_BORDER_KEY, include_border,
-                         NULL);
-  mateconf_client_set_bool (mateconf_client,
-                         INCLUDE_POINTER_KEY, include_pointer,
-                         NULL);
-  mateconf_client_set_int (mateconf_client, DELAY_KEY, delay, NULL);
-  mateconf_client_set_string (mateconf_client,
-                           BORDER_EFFECT_KEY, border_effect,
-                           NULL);
- 
-  g_object_unref (mateconf_client);
+  g_settings_set_boolean (settings,
+                          INCLUDE_BORDER_KEY, include_border);
+  g_settings_set_boolean (settings,
+                          INCLUDE_POINTER_KEY, include_pointer);
+  g_settings_set_int (settings, DELAY_KEY, delay);
+  g_settings_set_string (settings,
+                         BORDER_EFFECT_KEY, border_effect);
 }
 
 
@@ -1325,6 +1312,7 @@ main (int argc, char *argv[])
   gtk_window_set_default_icon_name (SCREENSHOOTER_ICON);
   screenshooter_init_stock_icons ();
 
+  settings = g_settings_new (MATE_SCREENSHOT_SCHEMA);
   load_options ();
   /* allow the command line to override options */
   if (window_arg)
