@@ -65,6 +65,9 @@ gsettings_SCHEMAS = $(gsettingsschema_in_files:.xml.in=.xml)
 
 @GSETTINGS_RULES@
 
+convertdir = $(datadir)/MateConf/gsettings
+convert_DATA = mate-screenshot.convert
+
 EXTRA_DIST =					\
 	$(gsettingsschema_in_files)		\
 	$(mate_screenshot_in_files)		\
@@ -75,6 +78,7 @@ EXTRA_DIST =					\
 CLEANFILES = \
 	$(BUILT_SOURCES)			 \
 	$(gsettings_SCHEMAS)			 \
+	$(convert_DATA)			 \
 	$(mate_screenshot_DATA)		 \
 	$(sys_DATA)
 
