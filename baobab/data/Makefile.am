@@ -19,12 +19,16 @@ gsettings_SCHEMAS = $(gsettingsschema_in_files:.xml.in=.xml)
 
 @GSETTINGS_RULES@
 
+convertdir = $(datadir)/MateConf/gsettings
+convert_DATA = mate-disk-usage-analyzer.convert
+
 man_MANS = mate-disk-usage-analyzer.1
 
 EXTRA_DIST = \
 	$(ui_DATA) \
 	mate-disk-usage-analyzer.desktop.in.in \
 	$(gsettingsschema_in_files) \
+	$(convert_DATA) \
 	$(man_MANS)
 
 CLEANFILES = \
