@@ -44,6 +44,7 @@
 #include <glib/gi18n.h>
 #include <gdk/gdk.h>
 #include <gio/gio.h>
+#include <locale.h>
 
 #include "gsearchtool.h"
 #include "gsearchtool-callbacks.h"
@@ -511,7 +512,7 @@ start_animation (GSearchWindow * gsearch, gboolean first_pass)
 		gtk_window_set_title (GTK_WINDOW (gsearch->window), title);
 
 		gtk_label_set_text (GTK_LABEL (gsearch->files_found_label), "");
-		if (gsearchtool_mateconf_get_boolean ("/desktop/mate/interface/enable_animations")) {
+		if (g_settings_get_boolean (gsearch->mate_desktop_interface_settings, "enable-animations")) {
 			gtk_spinner_start (GTK_SPINNER (gsearch->progress_spinner));
 			gtk_widget_show (gsearch->progress_spinner);
 		}
@@ -636,7 +637,6 @@ build_search_command (GSearchWindow * gsearch,
 	command = g_string_new ("");
 	gsearch->command_details->is_command_show_hidden_files_enabled = FALSE;
 	gsearch->command_details->name_contains_regex_string = NULL;
-	gsearch->search_results_date_format_string = NULL;
 	gsearch->command_details->name_contains_pattern_string = NULL;
 
 	gsearch->command_details->is_command_first_pass = first_pass;
@@ -654,19 +654,35 @@ build_search_command (GSearchWindow * gsearch,
 		if (gsearch->command_details->is_command_first_pass == TRUE) {
 
 			gchar * locate;
-			gchar * show_thumbnails_string;
+			CajaSpeedTradeoff show_thumbnails_enum;
 			gboolean disable_quick_search;
 
 			locate = g_find_program_in_path ("locate");
-			disable_quick_search = gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/disable_quick_search");
-			gsearch->command_details->is_command_second_pass_enabled = !gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/disable_quick_search_second_scan");
+			disable_quick_search = g_settings_get_boolean (gsearch->mate_search_tool_settings, "disable-quick-search");
+			gsearch->command_details->is_command_second_pass_enabled = !g_settings_get_boolean (gsearch->mate_search_tool_settings, "disable-quick-search-second-scan");
 
-			show_thumbnails_string = gsearchtool_mateconf_get_string ("/apps/caja/preferences/show_image_thumbnails");
-			if ((show_thumbnails_string != NULL) &&
-			    ((strcmp (show_thumbnails_string, "always") == 0) ||
-			     (strcmp (show_thumbnails_string, "local_only") == 0))) {
-			    	gsearch->show_thumbnails = TRUE;
-				gsearch->show_thumbnails_file_size_limit = gsearchtool_mateconf_get_int ("/apps/caja/preferences/thumbnail_limit");
+			/* Use caja settings for thumbnails if caja is installed, else fall back to the caja default */
+			if (gsearch->caja_schema_exists) {
+				show_thumbnails_enum = g_settings_get_enum (gsearch->caja_settings, "show-image-thumbnails");
+			} else {
+				show_thumbnails_enum = SPEED_TRADEOFF_LOCAL_ONLY;
+			}
+
+			if (show_thumbnails_enum == SPEED_TRADEOFF_ALWAYS ||
+				show_thumbnails_enum == SPEED_TRADEOFF_LOCAL_ONLY) {
+				GVariant * value;
+				guint64 size_limit = 10485760;
+
+				if (gsearch->caja_schema_exists) {
+					value = g_settings_get_value (gsearch->caja_settings, "thumbnail-limit");
+					if (value) {
+						size_limit = g_variant_get_uint64 (value);
+						g_variant_unref (value);
+					}
+				}
+
+				gsearch->show_thumbnails = TRUE;
+				gsearch->show_thumbnails_file_size_limit = size_limit;
 			}
 			else {
 				gsearch->show_thumbnails = FALSE;
@@ -692,7 +708,6 @@ build_search_command (GSearchWindow * gsearch,
 							file_is_named_escaped);
 			}
 			g_free (locate);
-			g_free (show_thumbnails_string);
 		}
 		else {
 			g_string_append_printf (command, "find \"%s\" %s \"%s\" -print",
@@ -865,7 +880,7 @@ add_file_to_search_results (const gchar * file,
 	#endif
 
 	g_file_info_get_modification_time (file_info, &time_val);
-	readable_date = get_readable_date (gsearch->search_results_date_format_string, time_val.tv_sec); 
+	readable_date = get_readable_date (gsearch->search_results_date_format, time_val.tv_sec); 
 
 	base_name = g_path_get_basename (file);
 	dir_name = g_path_get_dirname (file);
@@ -1158,71 +1173,76 @@ set_constraint_selected_state (GSearchWindow * gsearch,
 }
 
 void
-set_constraint_mateconf_boolean (gint constraint_id,
-                              gboolean flag)
+set_constraint_gsettings_boolean (gint constraint_id,
+                                  gboolean flag)
 {
+	GSettings * select_settings;
+
+	select_settings = g_settings_new ("org.mate.search-tool.select");
+
 	switch (constraint_id) {
 
 		case SEARCH_CONSTRAINT_CONTAINS_THE_TEXT:
-			gsearchtool_mateconf_set_boolean ("/apps/mate-search-tool/select/contains_the_text",
-	   		       	       	       	       flag);
+			g_settings_set_boolean (select_settings, "contains-the-text",
+	   		       	       	       	flag);
 			break;
 		case SEARCH_CONSTRAINT_DATE_MODIFIED_BEFORE:
-			gsearchtool_mateconf_set_boolean ("/apps/mate-search-tool/select/date_modified_less_than",
-	   		       	       	       	       flag);
+			g_settings_set_boolean (select_settings, "date-modified-less-than",
+	   		       	       	       	flag);
 			break;
 		case SEARCH_CONSTRAINT_DATE_MODIFIED_AFTER:
-			gsearchtool_mateconf_set_boolean ("/apps/mate-search-tool/select/date_modified_more_than",
-	   		       	       	       	       flag);
+			g_settings_set_boolean (select_settings, "date-modified-more-than",
+	   		       	       	       	flag);
 			break;
 		case SEARCH_CONSTRAINT_SIZE_IS_MORE_THAN:
-			gsearchtool_mateconf_set_boolean ("/apps/mate-search-tool/select/size_at_least",
-	   		       	       		       flag);
+			g_settings_set_boolean (select_settings, "size-at-least",
+	   		       	       		    flag);
 			break;
 		case SEARCH_CONSTRAINT_SIZE_IS_LESS_THAN:
-			gsearchtool_mateconf_set_boolean ("/apps/mate-search-tool/select/size_at_most",
-	   		       	       	  	       flag);
+			g_settings_set_boolean (select_settings, "size-at-most",
+	   		       	       	        flag);
 			break;
 		case SEARCH_CONSTRAINT_FILE_IS_EMPTY:
-			gsearchtool_mateconf_set_boolean ("/apps/mate-search-tool/select/file_is_empty",
-	   		       	       	               flag);
+			g_settings_set_boolean (select_settings, "file-is-empty",
+	   		       	       	        flag);
 			break;
 		case SEARCH_CONSTRAINT_OWNED_BY_USER:
-			gsearchtool_mateconf_set_boolean ("/apps/mate-search-tool/select/owned_by_user",
-	   		       	       	               flag);
+			g_settings_set_boolean (select_settings, "owned-by-user",
+	   		       	       	        flag);
 			break;
 		case SEARCH_CONSTRAINT_OWNED_BY_GROUP:
-			gsearchtool_mateconf_set_boolean ("/apps/mate-search-tool/select/owned_by_group",
-	   		       	       	               flag);
+			g_settings_set_boolean (select_settings, "owned-by-group",
+	   		       	       	        flag);
 			break;
 		case SEARCH_CONSTRAINT_OWNER_IS_UNRECOGNIZED:
-			gsearchtool_mateconf_set_boolean ("/apps/mate-search-tool/select/owner_is_unrecognized",
-	   		       	       	               flag);
+			g_settings_set_boolean (select_settings, "owner-is-unrecognized",
+	   		       	       	        flag);
 			break;
 		case SEARCH_CONSTRAINT_FILE_IS_NOT_NAMED:
-			gsearchtool_mateconf_set_boolean ("/apps/mate-search-tool/select/name_does_not_contain",
-	   		       	       	               flag);
+			g_settings_set_boolean (select_settings, "name-does-not-contain",
+	   		       	       	        flag);
 			break;
 		case SEARCH_CONSTRAINT_FILE_MATCHES_REGULAR_EXPRESSION:
-			gsearchtool_mateconf_set_boolean ("/apps/mate-search-tool/select/name_matches_regular_expression",
-	   		       	       	               flag);
+			g_settings_set_boolean (select_settings, "name-matches-regular-expression",
+	   		       	       	        flag);
 			break;
 		case SEARCH_CONSTRAINT_SHOW_HIDDEN_FILES_AND_FOLDERS:
-			gsearchtool_mateconf_set_boolean ("/apps/mate-search-tool/select/show_hidden_files_and_folders",
-	   		       	       	               flag);
+			g_settings_set_boolean (select_settings, "show-hidden-files-and-folders",
+	   		       	       	        flag);
 			break;
 		case SEARCH_CONSTRAINT_FOLLOW_SYMBOLIC_LINKS:
-			gsearchtool_mateconf_set_boolean ("/apps/mate-search-tool/select/follow_symbolic_links",
-	   		       	       	               flag);
+			g_settings_set_boolean (select_settings, "follow-symbolic-links",
+	   		       	       	        flag);
 			break;
 		case SEARCH_CONSTRAINT_SEARCH_OTHER_FILESYSTEMS:
-			gsearchtool_mateconf_set_boolean ("/apps/mate-search-tool/select/exclude_other_filesystems",
-	   		       	       	               flag);
+			g_settings_set_boolean (select_settings, "exclude-other-filesystems",
+	   		       	       	        flag);
 			break;
 
 		default:
 			break;
 	}
+	g_object_unref (select_settings);
 }
 
 /*
@@ -1297,12 +1317,12 @@ gsearch_setup_goption_descriptions (void)
 
 	for (j = 0; GSearchOptionTemplates[j].type != SEARCH_CONSTRAINT_TYPE_NONE; j++) {
 		if (GSearchOptionTemplates[j].type != SEARCH_CONSTRAINT_TYPE_SEPARATOR) {
-			gchar *text = remove_mnemonic_character (GSearchOptionTemplates[j].desc);
+			gchar *text = remove_mnemonic_character (_(GSearchOptionTemplates[j].desc));
 			if (GSearchOptionTemplates[j].type == SEARCH_CONSTRAINT_TYPE_BOOLEAN) {
-				GSearchGOptionEntries[i++].description = g_strdup_printf (_("Select the \"%s\" search option"), _(text));
+				GSearchGOptionEntries[i++].description = g_strdup_printf (_("Select the \"%s\" search option"), text);
 			}
 			else {
-				GSearchGOptionEntries[i++].description = g_strdup_printf (_("Select and set the \"%s\" search option"), _(text));
+				GSearchGOptionEntries[i++].description = g_strdup_printf (_("Select and set the \"%s\" search option"), text);
 			}
 			g_free (text);
 		}
@@ -1587,7 +1607,6 @@ handle_search_command_stdout_io (GIOChannel * ioc,
 			/* Free these strings now because they are reassign values during the second pass. */
 			g_free (gsearch->command_details->name_contains_pattern_string);
 			g_free (gsearch->command_details->name_contains_regex_string);
-			g_free (gsearch->search_results_date_format_string);
 
 			command = build_search_command (gsearch, FALSE);
 			if (command != NULL) {
@@ -1608,7 +1627,6 @@ handle_search_command_stdout_io (GIOChannel * ioc,
 			/* Free the gchar fields of search_command structure. */
 			g_free (gsearch->command_details->name_contains_pattern_string);
 			g_free (gsearch->command_details->name_contains_regex_string);
-			g_free (gsearch->search_results_date_format_string);
 
 		}
 		return FALSE;
@@ -1737,7 +1755,7 @@ handle_search_command_stderr_io (GIOChannel * ioc,
 					label = gtk_label_new (error_msgs->str);
 					gtk_container_add (GTK_CONTAINER (expander), label);
 
-					gtk_box_pack_start (GTK_BOX (GTK_DIALOG (dialog)->vbox), hbox, FALSE, FALSE, 0);
+					gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), hbox, FALSE, FALSE, 0);
 					gtk_widget_show_all (hbox);
 
 					g_signal_connect (G_OBJECT (dialog),
@@ -1781,11 +1799,11 @@ handle_search_command_stderr_io (GIOChannel * ioc,
 					label = gtk_label_new (error_msgs->str);
 					gtk_container_add (GTK_CONTAINER (expander), label);
 
-					gtk_box_pack_start (GTK_BOX (GTK_DIALOG (dialog)->vbox), hbox, FALSE, FALSE, 0);
+					gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), hbox, FALSE, FALSE, 0);
 					gtk_widget_show_all (hbox);
 
 					button = gsearchtool_button_new_with_stock_icon (_("Disable _Quick Search"), GTK_STOCK_OK);
-	                                gtk_widget_set_can_default (button, TRUE);
+					gtk_widget_set_can_default (button, TRUE);
 					gtk_widget_show (button);
 
 					gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, GTK_RESPONSE_OK);
@@ -1853,7 +1871,6 @@ spawn_search_command (GSearchWindow * gsearch,
 		g_free (gsearch->command_details->look_in_folder_string);
 		g_free (gsearch->command_details->name_contains_pattern_string);
 		g_free (gsearch->command_details->name_contains_regex_string);
-		g_free (gsearch->search_results_date_format_string);
 		return;
 	}
 
@@ -1886,7 +1903,6 @@ spawn_search_command (GSearchWindow * gsearch,
 		g_free (gsearch->command_details->look_in_folder_string);
 		g_free (gsearch->command_details->name_contains_pattern_string);
 		g_free (gsearch->command_details->name_contains_regex_string);
-		g_free (gsearch->search_results_date_format_string);
 		return;
 	}
 
@@ -1896,8 +1912,12 @@ spawn_search_command (GSearchWindow * gsearch,
 		gsearch->search_results_pixbuf_hash_table = g_hash_table_new_full (g_str_hash, g_str_equal, g_free, g_object_unref);
 		gsearch->search_results_filename_hash_table = g_hash_table_new_full (g_str_hash, g_str_equal, g_free, NULL);
 
-		/* Get value of caja date_format key */
-		gsearch->search_results_date_format_string = gsearchtool_mateconf_get_string ("/apps/caja/preferences/date_format");
+		/* Get the value of the caja date-format key if available. */
+		if (gsearch->caja_schema_exists) {
+			gsearch->search_results_date_format = g_settings_get_enum (gsearch->caja_settings, "date-format");
+		} else {
+			gsearch->search_results_date_format = CAJA_DATE_FORMAT_LOCALE;
+		}
 
 		gtk_tree_view_scroll_to_point (GTK_TREE_VIEW (gsearch->search_results_tree_view), 0, 0);
 		gtk_tree_model_foreach (GTK_TREE_MODEL (gsearch->search_results_list_store),
@@ -2091,7 +2111,7 @@ add_constraint (GSearchWindow * gsearch,
 
 	constraint->constraint_id = constraint_id;
 	set_constraint_info_defaults (constraint);
-	set_constraint_mateconf_boolean (constraint->constraint_id, TRUE);
+	set_constraint_gsettings_boolean (constraint->constraint_id, TRUE);
 
 	widget = create_constraint_box (gsearch, constraint, value);
 	gtk_box_pack_start (GTK_BOX (gsearch->available_options_vbox), widget, FALSE, FALSE, 0);
@@ -2635,70 +2655,68 @@ set_clone_command (GSearchWindow * gsearch,
 }
 
 static void
-handle_mateconf_settings (GSearchWindow * gsearch)
+handle_gsettings_settings (GSearchWindow * gsearch)
 {
-	gsearchtool_mateconf_add_dir ("/apps/mate-search-tool");
-
-	if (gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/show_additional_options")) {
+	if (g_settings_get_boolean (gsearch->mate_search_tool_settings, "show-additional-options")) {
 		if (gtk_widget_get_visible (gsearch->available_options_vbox) == FALSE) {
 			gtk_expander_set_expanded (GTK_EXPANDER (gsearch->show_more_options_expander), TRUE);
 			gtk_widget_show (gsearch->available_options_vbox);
 		}
 	}
 
-	if (gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/select/contains_the_text")) {
+	if (g_settings_get_boolean (gsearch->mate_search_tool_select_settings, "contains-the-text")) {
 		add_constraint (gsearch, SEARCH_CONSTRAINT_CONTAINS_THE_TEXT, "", FALSE);
 	}
 
-	if (gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/select/date_modified_less_than")) {
+	if (g_settings_get_boolean (gsearch->mate_search_tool_select_settings, "date-modified-less-than")) {
 		add_constraint (gsearch, SEARCH_CONSTRAINT_DATE_MODIFIED_BEFORE, "", FALSE);
 	}
 
-	if (gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/select/date_modified_more_than")) {
+	if (g_settings_get_boolean (gsearch->mate_search_tool_select_settings, "date-modified-more-than")) {
 		add_constraint (gsearch, SEARCH_CONSTRAINT_DATE_MODIFIED_AFTER, "", FALSE);
 	}
 
-	if (gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/select/size_at_least")) {
+	if (g_settings_get_boolean (gsearch->mate_search_tool_select_settings, "size-at-least")) {
 		add_constraint (gsearch, SEARCH_CONSTRAINT_SIZE_IS_MORE_THAN, "", FALSE);
 	}
 
-	if (gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/select/size_at_most")) {
+	if (g_settings_get_boolean (gsearch->mate_search_tool_select_settings, "size-at-most")) {
 		add_constraint (gsearch, SEARCH_CONSTRAINT_SIZE_IS_LESS_THAN, "", FALSE);
 	}
 
-	if (gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/select/file_is_empty")) {
+	if (g_settings_get_boolean (gsearch->mate_search_tool_select_settings, "file-is-empty")) {
 		add_constraint (gsearch, SEARCH_CONSTRAINT_FILE_IS_EMPTY, NULL, FALSE);
 	}
 
-	if (gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/select/owned_by_user")) {
+	if (g_settings_get_boolean (gsearch->mate_search_tool_select_settings, "owned-by-user")) {
 		add_constraint (gsearch, SEARCH_CONSTRAINT_OWNED_BY_USER, "", FALSE);
 	}
 
-	if (gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/select/owned_by_group")) {
+	if (g_settings_get_boolean (gsearch->mate_search_tool_select_settings, "owned-by-group")) {
 		add_constraint (gsearch, SEARCH_CONSTRAINT_OWNED_BY_GROUP, "", FALSE);
 	}
 
-	if (gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/select/owner_is_unrecognized")) {
+	if (g_settings_get_boolean (gsearch->mate_search_tool_select_settings, "owner-is-unrecognized")) {
 		add_constraint (gsearch, SEARCH_CONSTRAINT_OWNER_IS_UNRECOGNIZED, NULL, FALSE);
 	}
 
-	if (gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/select/name_does_not_contain")) {
+	if (g_settings_get_boolean (gsearch->mate_search_tool_select_settings, "name-does-not-contain")) {
 		add_constraint (gsearch, SEARCH_CONSTRAINT_FILE_IS_NOT_NAMED, "", FALSE);
 	}
 
-	if (gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/select/name_matches_regular_expression")) {
+	if (g_settings_get_boolean (gsearch->mate_search_tool_select_settings, "name-matches-regular-expression")) {
 		add_constraint (gsearch, SEARCH_CONSTRAINT_FILE_MATCHES_REGULAR_EXPRESSION, "", FALSE);
 	}
 
-	if (gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/select/show_hidden_files_and_folders")) {
+	if (g_settings_get_boolean (gsearch->mate_search_tool_select_settings, "show-hidden-files-and-folders")) {
 		add_constraint (gsearch, SEARCH_CONSTRAINT_SHOW_HIDDEN_FILES_AND_FOLDERS, NULL, FALSE);
 	}
 
-	if (gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/select/follow_symbolic_links")) {
+	if (g_settings_get_boolean (gsearch->mate_search_tool_select_settings, "follow-symbolic-links")) {
 		add_constraint (gsearch, SEARCH_CONSTRAINT_FOLLOW_SYMBOLIC_LINKS, NULL, FALSE);
 	}
 
-	if (gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/select/exclude_other_filesystems")) {
+	if (g_settings_get_boolean (gsearch->mate_search_tool_select_settings, "exclude-other-filesystems")) {
 		add_constraint (gsearch, SEARCH_CONSTRAINT_SEARCH_OTHER_FILESYSTEMS, NULL, FALSE);
 	}
 }
@@ -2725,9 +2743,31 @@ gsearch_app_create (GSearchWindow * gsearch)
 	GtkWidget * label;
 	GtkWidget * button;
 	GtkWidget * container;
+	const char * const *schemas;
+	gint i;
+
+	gsearch->mate_search_tool_settings = g_settings_new ("org.mate.search-tool");
+	gsearch->mate_search_tool_select_settings = g_settings_new ("org.mate.search-tool.select");
+	gsearch->mate_desktop_interface_settings = g_settings_new ("org.mate.interface");
+
+	/* Check if caja schema is installed before trying to read caja settings */
+	gsearch->caja_schema_exists = FALSE;
+	schemas = g_settings_list_schemas ();
+	for (i = 0; schemas[i] != NULL; i++) {
+		if (g_strcmp0 (schemas[i], CAJA_PREFERENCES_SCHEMA) == 0) {
+			gsearch->caja_schema_exists = TRUE;
+			break;
+		}
+	}
+
+	if (gsearch->caja_schema_exists) {
+		gsearch->caja_settings = g_settings_new (CAJA_PREFERENCES_SCHEMA);
+	} else {
+		gsearch->caja_settings = NULL;
+	}
 
 	gsearch->window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
-	gsearch->is_window_maximized = gsearchtool_mateconf_get_boolean ("/apps/mate-search-tool/default_window_maximized");
+	gsearch->is_window_maximized = g_settings_get_boolean (gsearch->mate_search_tool_settings, "default-window-maximized");
 	g_signal_connect (G_OBJECT (gsearch->window), "size-allocate",
 			  G_CALLBACK (gsearch_window_size_allocate),
 			  gsearch);
@@ -2800,7 +2840,7 @@ gsearch_app_create (GSearchWindow * gsearch)
 		add_atk_namedesc (GTK_WIDGET (gsearch->look_in_folder_button), _("Look in folder"), _("Select the folder or device from which you want to begin the search."));
 	}
 
-	locale_string = gsearchtool_mateconf_get_string ("/apps/mate-search-tool/look_in_folder");
+	locale_string = g_settings_get_string (gsearch->mate_search_tool_settings, "look-in-folder");
 
 	if ((g_file_test (locale_string, G_FILE_TEST_EXISTS) == FALSE) || 
 	    (g_file_test (locale_string, G_FILE_TEST_IS_DIR) == FALSE)) {
@@ -2937,26 +2977,27 @@ gsearch_window_get_type (void)
 }
 
 static void
-gsearchtool_setup_mateconf_notifications (GSearchWindow * gsearch)
+gsearchtool_setup_gsettings_notifications (GSearchWindow * gsearch)
 
 {
 	gchar * click_to_activate_pref;
 
-	/* Get value of caja click behavior (single or double click to activate items) */
-	click_to_activate_pref = gsearchtool_mateconf_get_string ("/apps/caja/preferences/click_policy");
-
-	if (click_to_activate_pref == NULL) {
+	/* Use the default double click behavior if caja isn't installed */
+	if (gsearch->caja_schema_exists == FALSE) {
 		gsearch->is_search_results_single_click_to_activate = FALSE;
 		return;
 	}
 
+	/* Get value of caja click behavior (single or double click to activate items) */
+	click_to_activate_pref = g_settings_get_string (gsearch->caja_settings, "click-policy");
+
 	gsearch->is_search_results_single_click_to_activate =
 		(strncmp (click_to_activate_pref, "single", 6) == 0) ? TRUE : FALSE;
 
-	gsearchtool_mateconf_watch_key ("/apps/caja/preferences",
-	                             "/apps/caja/preferences/click_policy",
-	                             (MateConfClientNotifyFunc) single_click_to_activate_key_changed_cb,
-	                             gsearch);
+	g_signal_connect (gsearch->caja_settings,
+	                  "changed::click-policy",
+	                  G_CALLBACK (single_click_to_activate_key_changed_cb),
+	                  gsearch);
 
 	g_free (click_to_activate_pref);
 }
@@ -2971,6 +3012,7 @@ main (int argc,
 	GError * error = NULL;
 	EggSMClient * client;
 
+	setlocale (LC_ALL, "");
 	bindtextdomain (GETTEXT_PACKAGE, MATELOCALEDIR);
 	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 	textdomain (GETTEXT_PACKAGE);
@@ -3022,10 +3064,10 @@ main (int argc,
 
 	gtk_widget_show (gsearch->window);
 
-	gsearchtool_setup_mateconf_notifications (gsearch);
+	gsearchtool_setup_gsettings_notifications (gsearch);
 
 	if (handle_goption_args (gsearch) == FALSE) {
-		handle_mateconf_settings (gsearch);
+		handle_gsettings_settings (gsearch);
 	}
 
 	gtk_main ();

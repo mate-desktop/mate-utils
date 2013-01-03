@@ -3,8 +3,6 @@ Utilitiesdir = $(datadir)/applications
 SUBDIRS = data help libmateui-deprecated
 
 INCLUDES = \
-	$(MATE_UTILS_CFLAGS) \
-	$(GIO_UNIX_CFLAGS) \
 	-I$(srcdir)/libmateui-deprecated \
 	-I$(top_srcdir)/libeggsmclient \
 	-DG_DISABLE_DEPRECATED \
@@ -18,10 +16,16 @@ libeggsmclient_LIB = $(top_builddir)/libeggsmclient/libeggsmclient.la
 
 bin_PROGRAMS = mate-search-tool
 
-schemadir = $(MATECONF_SCHEMA_FILE_DIR)
-schema_in_file = mate-search-tool.schemas.in
-schema_DATA = $(schema_in_file:.schemas.in=.schemas)
-@INTLTOOL_SCHEMAS_RULE@
+gsettingsschema_in_files = org.mate.search-tool.gschema.xml.in
+gsettings_SCHEMAS = $(gsettingsschema_in_files:.xml.in=.xml)
+.PRECIOUS: $(gsettings_SCHEMAS)
+
+@INTLTOOL_XML_NOMERGE_RULE@
+
+@GSETTINGS_RULES@
+
+convertdir = $(datadir)/MateConf/gsettings
+convert_DATA = mate-search-tool.convert
 
 mate_search_tool_SOURCES = \
 	gsearchtool-support.c \
@@ -31,9 +35,17 @@ mate_search_tool_SOURCES = \
 	gsearchtool.c \
 	gsearchtool.h
 
+mate_search_tool_CFLAGS = \
+	$(GLIB_CFLAGS) \
+	$(GIO_CFLAGS) \
+	$(GIO_UNIX_CFLAGS) \
+	$(GTK_CFLAGS)
+
 mate_search_tool_LDADD = \
-	$(MATE_UTILS_LIBS) \
-	$(GIO_UNIX_LIBS)  \
+	$(GLIB_LIBS) \
+	$(GIO_LIBS) \
+	$(GIO_UNIX_LIBS) \
+	$(GTK_LIBS) \
 	$(libmateui_deprecated_LIB) \
 	$(libeggsmclient_LIB)
 
@@ -46,21 +58,13 @@ Utilities_DATA = $(Utilities_in_files:.desktop.in=.desktop)
 EXTRA_DIST = \
 	$(Utilities_in_files) \
 	$(Utilities_DATA) \
-	$(schema_in_file) \
+	$(gsettingsschema_in_files) \
 	$(man_MANS)
-
-if MATECONF_SCHEMAS_INSTALL
-install-data-local:
-	if test -z "$(DESTDIR)" ; then \
-		MATECONF_CONFIG_SOURCE=$(MATECONF_SCHEMA_CONFIG_SOURCE) $(MATECONFTOOL) --makefile-install-rule $(top_builddir)/gsearchtool/$(schema_DATA) ; \
-	fi
-else
-install-data-local:
-endif
 
 CLEANFILES = \
 	mate-search-tool.desktop \
-	$(schema_DATA)
+	$(convert_DATA) \
+	$(gsettings_SCHEMAS)
 
 disthook:
 	cd $(distdir) ; rm -f $(CLEANFILES)

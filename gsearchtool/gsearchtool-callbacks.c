@@ -58,12 +58,15 @@ store_window_state_and_geometry (GSearchWindow *gsearch)
 	gsearch->window_width = MAX (gsearch->window_width, MINIMUM_WINDOW_WIDTH);
 	gsearch->window_height = MAX (gsearch->window_height, MINIMUM_WINDOW_HEIGHT);
 
-	gsearchtool_mateconf_set_int ("/apps/mate-search-tool/default_window_width",
-	                           gsearch->window_width);
-	gsearchtool_mateconf_set_int ("/apps/mate-search-tool/default_window_height",
-		                   gsearch->window_height);
-	gsearchtool_mateconf_set_boolean ("/apps/mate-search-tool/default_window_maximized",
-	                               gsearch->is_window_maximized);
+	g_settings_set_int (gsearch->mate_search_tool_settings,
+	                    "default-window-width",
+	                    gsearch->window_width);
+	g_settings_set_int (gsearch->mate_search_tool_settings,
+	                    "default-window-height",
+		            gsearch->window_height);
+	g_settings_set_boolean (gsearch->mate_search_tool_settings,
+	                        "default-window-maximized",
+	                        gsearch->is_window_maximized);
 }
 
 static void
@@ -270,13 +273,13 @@ remove_constraint_cb (GtkWidget * widget,
 	                               &gsearch->window_geometry,
 	                               GDK_HINT_MIN_SIZE);
 
-	gtk_container_remove (GTK_CONTAINER (gsearch->available_options_vbox), widget->parent);
+	gtk_container_remove (GTK_CONTAINER (gsearch->available_options_vbox), gtk_widget_get_parent (widget));
 
 	gsearch->available_options_selected_list =
 	    g_list_remove (gsearch->available_options_selected_list, constraint);
 
 	set_constraint_selected_state (gsearch, constraint->constraint_id, FALSE);
-	set_constraint_mateconf_boolean (constraint->constraint_id, FALSE);
+	set_constraint_gsettings_boolean (constraint->constraint_id, FALSE);
 	g_slice_free (GSearchConstraint, constraint);
 	g_list_free (list);
 }
@@ -326,7 +329,7 @@ look_in_folder_changed_cb (GtkWidget * widget,
 	value = gtk_file_chooser_get_filename (GTK_FILE_CHOOSER (gsearch->look_in_folder_button));
 
 	if (value != NULL) {
-		gsearchtool_mateconf_set_string ("/apps/mate-search-tool/look_in_folder", value);
+		g_settings_set_string (gsearch->mate_search_tool_settings, "look-in-folder", value);
 	}
 	g_free (value);
 }
@@ -493,7 +496,7 @@ open_file_cb (GtkMenuItem * action,
 		if (!no_files_found) {
 			GAppInfo * app = NULL;
 
-			if (GTK_IS_OBJECT (action)) {
+			if (GTK_IS_MENU_ITEM (action)) {
 				app = g_object_get_data (G_OBJECT (action), "app");
 			}
 
@@ -1073,6 +1076,7 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 			/* Popup menu item: Open with (default) */
 			str = g_strdup_printf (_("_Open with %s"),  g_app_info_get_name (list->data));
 			new1 = gtk_image_menu_item_new_with_mnemonic (str);
+			g_free (str);
 			gtk_widget_show (new1);
 
 			g_object_set_data_full (G_OBJECT (new1), "app", (GAppInfo *)list->data,
@@ -1112,6 +1116,7 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 				}
 				
 				new1 = gtk_image_menu_item_new_with_mnemonic (str);
+				g_free (str);
 				gtk_widget_show (new1);
 
 				g_object_set_data_full (G_OBJECT (new1), "app", (GAppInfo *)list->data,
@@ -1579,7 +1584,7 @@ drag_file_cb  (GtkWidget * widget,
 				uri_list = g_strconcat (uri_list, "\n", tmp_uri, NULL);
 			}
 			gtk_selection_data_set (selection_data,
-			                        selection_data->target,
+			                        gtk_selection_data_get_target (selection_data),
 			                        8,
 			                        (guchar *) uri_list,
 			                        strlen (uri_list));
@@ -1889,40 +1894,48 @@ disable_quick_search_cb (GtkWidget * dialog,
                          gint response,
                          gpointer data)
 {
+	GSearchWindow * gsearch = data;
+
 	gtk_widget_destroy (GTK_WIDGET (dialog));
 
 	if (response == GTK_RESPONSE_OK) {
-		gsearchtool_mateconf_set_boolean ("/apps/mate-search-tool/disable_quick_search", TRUE);
+		g_settings_set_boolean (gsearch->mate_search_tool_settings, "disable-quick-search", TRUE);
 	}
 }
 
 void
-single_click_to_activate_key_changed_cb (MateConfClient * client,
-                                         guint cnxn_id,
-                                         MateConfEntry * entry,
+single_click_to_activate_key_changed_cb (GSettings * settings,
+                                         gchar * key,
                                          gpointer user_data)
 {
 	GSearchWindow * gsearch = user_data;
-	MateConfValue * value;
+	gchar * value;
 
-	value = mateconf_entry_get_value (entry);
-
-	g_return_if_fail (value->type == MATECONF_VALUE_STRING);
+	value = g_settings_get_string (settings, key);
 
 	gsearch->is_search_results_single_click_to_activate =
-		(strncmp (mateconf_value_get_string (value), "single", 6) == 0) ? TRUE : FALSE;
+		(strncmp (value, "single", 6) == 0) ? TRUE : FALSE;
+
+	g_free (value);
 }
 
 void
 columns_changed_cb (GtkTreeView * treeview,
                     gpointer user_data)
 {
+	GVariantBuilder array_builder;
+	GSearchWindow * gsearch = user_data;
 	GSList * order;
+	GSList * iter;
 
 	order = gsearchtool_get_columns_order (treeview);
 
+	g_variant_builder_init (&array_builder, G_VARIANT_TYPE ("ai"));
+	for (iter = order; iter; iter = iter->next)
+		g_variant_builder_add (&array_builder, "i", GPOINTER_TO_INT (iter->data));
+
 	if (g_slist_length (order) == NUM_VISIBLE_COLUMNS) {
-		gsearchtool_mateconf_set_list ("/apps/mate-search-tool/columns_order", order, MATECONF_VALUE_INT);
+		g_settings_set_value (gsearch->mate_search_tool_settings, "columns-order", g_variant_new ("ai", &array_builder));
 	}
 	g_slist_free (order);
 }

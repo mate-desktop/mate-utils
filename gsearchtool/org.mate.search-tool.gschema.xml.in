@@ -1,0 +1,117 @@
+<schemalist gettext-domain="mate-utils-2.0">
+  <schema id="org.mate.search-tool" path="/org/mate/search-tool/">
+    <key name="search-history" type="a{sas}">
+      <default>[ ]</default>
+      <_summary>Search history</_summary>
+      <_description>This key defines the items which were searched for in the past.</_description>
+    </key>
+    <key name="show-additional-options" type="b">
+      <default>false</default>
+      <_summary>Show Additional Options</_summary>
+    </key>
+    <key name="disable-quick-search" type="b">
+      <default>false</default>
+      <_summary>Disable Quick Search</_summary>
+      <_description>This key determines if the search tool disables the use of the locate command when performing simple file name searches.</_description>
+    </key>
+    <key name="quick-search-excluded-paths" type="as">
+      <default>[ '/mnt/*', '/media/*', '/dev/*', '/tmp/*', '/proc/*', '/var/*' ]</default>
+      <_summary>Quick Search Excluded Paths</_summary>
+      <_description>This key defines the paths the search tool will exclude from a  quick search.  The wildcards '*' and '?' are supported.  The default  values are /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, and /var/*.</_description>
+    </key>
+    <key name="disable-quick-search-second-scan" type="b">
+      <default>false</default>
+      <_summary>Disable Quick Search Second Scan</_summary>
+      <_description>This key determines if the search tool disables the use of the  find command after performing a quick search.</_description>
+    </key>
+    <key name="quick-search-second-scan-excluded-paths" type="as">
+      <default>[ '/' ]</default>
+      <_summary>Quick Search Second Scan Excluded Paths</_summary>
+      <_description>This key defines the paths the search tool will exclude from a  second scan when performing a quick search.  The second scan uses the find command to search for files.  The purpose of the  second scan is to find files that have not been indexed.   The wildcards '*' and '?' are supported.  The default value is /.</_description>
+    </key>
+    <key name="columns-order" type="ai">
+      <default>[ 0 ]</default>
+      <_summary>Search Result Columns Order</_summary>
+      <_description>This key defines the order of the columns in the search results.  This key should not be modified by the user.</_description>
+    </key>
+    <key name="default-window-width" type="i">
+      <default>-1</default>
+      <_summary>Default Window Width</_summary>
+      <_description>This key defines the window width, and it's used to remember the size of the search tool between sessions.  Setting it to -1 will make the search tool use the default width.</_description>
+    </key>
+    <key name="default-window-height" type="i">
+      <default>-1</default>
+      <_summary>Default Window Height</_summary>
+      <_description>This key defines the window height, and it's used to remember the size of the search tool between sessions.  Setting it to -1 will make the search tool use the default height.</_description>
+    </key>
+    <key name="default-window-maximized" type="b">
+      <default>false</default>
+      <_summary>Default Window Maximized</_summary>
+      <_description>This key determines if the search tool window starts in a maximized state.</_description>
+    </key>
+    <key name="look-in-folder" type="s">
+      <default>''</default>
+      <_summary>Look in Folder</_summary>
+      <_description>This key defines the default value of the "Look in Folder" widget.</_description>
+    </key>
+    <child name="select" schema="org.mate.search-tool.select"/>
+  </schema>
+  <schema id="org.mate.search-tool.select" path="/org/mate/search-tool/select/">
+    <key name="contains-the-text" type="b">
+      <default>true</default>
+      <_description>This key determines if the "Contains the text" search option is selected when the search tool is started.</_description>
+    </key>
+    <key name="date-modified-less-than" type="b">
+      <default>false</default>
+      <_description>This key determines if the "Date modified less than" search option  is selected when the search tool is started.</_description>
+    </key>
+    <key name="date-modified-more-than" type="b">
+      <default>false</default>
+      <_description>This key determines if the "Date modified more than" search option  is selected when the search tool is started.</_description>
+    </key>
+    <key name="size-at-least" type="b">
+      <default>false</default>
+      <_description>This key determines if the "Size at least" search option is selected when the search tool is started.</_description>
+    </key>
+    <key name="size-at-most" type="b">
+      <default>false</default>
+      <_description>This key determines if the "Size at most" search option is selected when the search tool is started.</_description>
+    </key>
+    <key name="file-is-empty" type="b">
+      <default>false</default>
+      <_description>This key determines if the "File is empty" search option is selected when the search tool is started.</_description>
+    </key>
+    <key name="owned-by-user" type="b">
+      <default>false</default>
+      <_description>This key determines if the "Owned by user" search option is selected when the search tool is started.</_description>
+    </key>
+    <key name="owned-by-group" type="b">
+      <default>false</default>
+      <_description>This key determines if the "Owned by group" search option is selected when the search tool is started.</_description>
+    </key>
+    <key name="owner-is-unrecognized" type="b">
+      <default>false</default>
+      <_description>This key determines if the "Owner is unrecognized" search option  is selected when the search tool is started.</_description>
+    </key>
+    <key name="name-does-not-contain" type="b">
+      <default>false</default>
+      <_description>This key determines if the "Name does not contain" search option  is selected when the search tool is started.</_description>
+    </key>
+    <key name="name-matches-regular-expression" type="b">
+      <default>false</default>
+      <_description>This key determines if the "Name matches regular expression" search  option is selected when the search tool is started.</_description>
+    </key>
+    <key name="show-hidden-files-and-folders" type="b">
+      <default>false</default>
+      <_description>This key determines if the "Show hidden files and  folders" search option is selected when the search tool  is started.</_description>
+    </key>
+    <key name="follow-symbolic-links" type="b">
+      <default>false</default>
+      <_description>This key determines if the "Follow symbolic links" search option  is selected when the search tool is started.</_description>
+    </key>
+    <key name="exclude-other-filesystems" type="b">
+      <default>false</default>
+      <_description>This key determines if the "Exclude other filesystems" search option  is selected when the search tool is started.</_description>
+    </key>
+  </schema>
+</schemalist>
