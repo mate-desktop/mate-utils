@@ -34,7 +34,6 @@
 #include <string.h>
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
-#include <mateconf/mateconf-client.h>
 
 #include "gsearchtool-entry.h"
 
@@ -57,7 +56,7 @@ struct _GsearchHistoryEntryPrivate
 
 	GtkEntryCompletion *completion;
 
-	MateConfClient        *mateconf_client;
+	GSettings          *settings;
 };
 
 G_DEFINE_TYPE (GsearchHistoryEntry, gsearch_history_entry, GTK_TYPE_COMBO_BOX)
@@ -129,10 +128,10 @@ gsearch_history_entry_finalize (GObject *object)
 
 	g_free (priv->history_id);
 
-	if (priv->mateconf_client != NULL)
+	if (priv->settings != NULL)
 	{
-		g_object_unref (G_OBJECT (priv->mateconf_client));
-		priv->mateconf_client = NULL;
+		g_object_unref (G_OBJECT (priv->settings));
+		priv->settings = NULL;
 	}
 
 	G_OBJECT_CLASS (gsearch_history_entry_parent_class)->finalize (object);
@@ -188,23 +187,7 @@ get_history_store (GsearchHistoryEntry *entry)
 static char *
 get_history_key (GsearchHistoryEntry *entry)
 {
-	gchar *tmp;
-	gchar *key;
-
-	/*
-	 * Store the data under /apps/mate-settings/
-	 * like the old MateEntry did
-	 */
-
-	tmp = mateconf_escape_key (entry->priv->history_id, -1);
-	key = g_strconcat ("/apps/mate-settings/",
-			   "mate-search-tool",
-			   "/history-",
-			   tmp,
-			   NULL);
-	g_free (tmp);
-
-	return key;
+	return g_strdup (entry->priv->history_id);
 }
 
 static GSList *
@@ -241,22 +224,52 @@ get_history_list (GsearchHistoryEntry *entry)
 static void
 gsearch_history_entry_save_history (GsearchHistoryEntry *entry)
 {
-	GSList *mateconf_items;
+	GVariant *history;
+	GSList *items;
 	gchar *key;
+	GVariantBuilder item_builder;
+	GVariantBuilder history_builder;
+	GVariantIter *iter;
+	GVariant     *item;
+	GVariant     *history_list;
+	GSList *list_iter;
+	gchar *history_key;
 
 	g_return_if_fail (GSEARCH_IS_HISTORY_ENTRY (entry));
 
-	mateconf_items = get_history_list (entry);
+	items = get_history_list (entry);
 	key = get_history_key (entry);
 
-	mateconf_client_set_list (entry->priv->mateconf_client,
-			      key,
-			      MATECONF_VALUE_STRING,
-			      mateconf_items,
-			      NULL);
+	history = g_settings_get_value (entry->priv->settings,
+				        "search-history");
 
-	g_slist_foreach (mateconf_items, (GFunc) g_free, NULL);
-	g_slist_free (mateconf_items);
+	g_variant_builder_init (&item_builder, G_VARIANT_TYPE ("as"));
+	for (list_iter = items; list_iter; list_iter = list_iter->next)
+		g_variant_builder_add (&item_builder, "s", (gchar *) list_iter->data);
+
+	g_variant_builder_init (&history_builder, G_VARIANT_TYPE ("a{sas}"));
+	g_variant_builder_add (&history_builder, "{sas}", key, &item_builder);
+
+	if (history) {
+		g_variant_get (history, "a{sas}", &iter);
+		while ((item = g_variant_iter_next_value (iter))) {
+			g_variant_get (item, "{s@as}", &history_key, &history_list);
+			if (g_strcmp0 (history_key, key) != 0)
+				g_variant_builder_add (&history_builder, "{s@as}", history_key, history_list);
+	 		g_free (history_key);
+	 		g_variant_unref (history_list);
+	 		g_variant_unref (item);
+ 		}
+ 		g_variant_iter_free (iter);
+ 		g_variant_unref (history);
+ 	}
+
+	g_settings_set_value (entry->priv->settings,
+			      "search-history",
+			      g_variant_new ("a{sas}", &history_builder));
+
+	g_slist_foreach (items, (GFunc) g_free, NULL);
+	g_slist_free (items);
 	g_free (key);
 }
 
@@ -377,9 +390,9 @@ gsearch_history_entry_append_text (GsearchHistoryEntry *entry,
 static void
 gsearch_history_entry_load_history (GsearchHistoryEntry *entry)
 {
-	GSList *mateconf_items, *l;
 	GtkListStore *store;
 	GtkTreeIter iter;
+	GVariant *history;
 	gchar *key;
 	gint i;
 
@@ -388,27 +401,45 @@ gsearch_history_entry_load_history (GsearchHistoryEntry *entry)
 	store = get_history_store (entry);
 	key = get_history_key (entry);
 
-	mateconf_items = mateconf_client_get_list (entry->priv->mateconf_client,
-					     key,
-					     MATECONF_VALUE_STRING,
-					     NULL);
+	history = g_settings_get_value (entry->priv->settings,
+					"search-history");
 
 	gtk_list_store_clear (store);
 
-	for (l = mateconf_items, i = 0;
-	     l != NULL && i < entry->priv->history_length;
-	     l = l->next, i++)
-	{
-		gtk_list_store_append (store, &iter);
-		gtk_list_store_set (store,
-				    &iter,
-				    0,
-				    l->data,
-				    -1);
-	}
+	if (history) {
+		GVariantIter *history_iter, *history_subiter;
+		GVariant     *history_item, *history_subitem;
+		gchar        *history_key;
+		gchar        *text;
 
-	g_slist_foreach (mateconf_items, (GFunc) g_free, NULL);
-	g_slist_free (mateconf_items);
+		g_variant_get (history, "a{sas}", &history_iter);
+
+		while ((history_item = g_variant_iter_next_value (history_iter))) {
+			i = 0;
+			g_variant_get (history_item, "{sas}", &history_key, &history_subiter);
+
+			if (g_strcmp0 (history_key, key) == 0) {
+				while ((history_subitem = g_variant_iter_next_value (history_subiter)) &&
+				       i < entry->priv->history_length) {
+					g_variant_get (history_subitem, "s", &text);
+					gtk_list_store_append (store, &iter);
+					gtk_list_store_set (store,
+							    &iter,
+							    0,
+							    text,
+							    -1);
+					g_free (text);
+					g_variant_unref (history_subitem);
+					i++;
+				}
+			}
+			g_free (history_key);
+	 		g_variant_iter_free (history_subiter);
+			g_variant_unref (history_item);
+ 		}
+ 		g_variant_iter_free (history_iter);
+		g_variant_unref (history);
+ 	}
 	g_free (key);
 }
 
@@ -438,7 +469,7 @@ gsearch_history_entry_init (GsearchHistoryEntry *entry)
 
 	priv->completion = NULL;
 
-	priv->mateconf_client = mateconf_client_get_default ();
+	priv->settings = g_settings_new ("org.mate.search-tool");
 }
 
 void
@@ -519,10 +550,12 @@ gsearch_history_entry_get_enable_completion (GsearchHistoryEntry *entry)
 	return entry->priv->completion != NULL;
 }
 
-GtkWidget* gsearch_history_entry_new(const gchar *history_id, gboolean enable_completion)
+GtkWidget *
+gsearch_history_entry_new (const gchar *history_id,
+			   gboolean     enable_completion)
 {
-	GtkWidget* ret;
-	GtkListStore* store;
+	GtkWidget *ret;
+	GtkListStore *store;
 
 	g_return_val_if_fail(history_id != NULL, NULL);
 

@@ -476,57 +476,57 @@
 
 <!-- ============= Settings ============================== -->
 
-  <sect1 id="gsearchtool-settings-mateconf-keys">
+  <sect1 id="gsearchtool-settings-gsettings-keys">
     <title>Settings</title> 
 
-    <para><application>&app;</application> provides mateconf keys to modify some of its behavior.  The mateconf values can be changed by starting the <application>Configuration Editor</application> in the following ways:
+    <para><application>&app;</application> provides gsettings keys to modify some of its behavior.  The gsettings values can be changed by starting the <application>Configuration Editor</application> in the following ways:
     </para> 
     <variablelist>
     	<varlistentry>
     		<term><guimenu>Applications</guimenu> menu</term>
     		<listitem>
-    		<para>Choose <menuchoice><guisubmenu>System Tools</guisubmenu><guimenuitem>Configuration Editor</guimenuitem></menuchoice>. </para>
+    		<para>Choose <menuchoice><guisubmenu>System Tools</guisubmenu><guimenuitem>dconf Editor</guimenuitem></menuchoice>. </para>
     		</listitem>
     	</varlistentry>
     	<varlistentry>
     		<term>Command line</term>
     		<listitem>
-    		<para>Execute the following command: <command>mateconf-editor</command></para> 
+    		<para>Execute the following command: <command>dconf-editor</command></para> 
     		</listitem>
     	</varlistentry>	
     </variablelist>
     
     <sect2 id="gsearchtool-disablequicksearch">
     <title>Disable Quick Search</title>
-    <para>Key name: /apps/mate-search-tool/disable_quick_search</para>
+    <para>Key name: org.mate.search-tool.disable-quick-search</para>
     <para>Default value: false</para>
     <para><application>&app;</application> speeds up file name searches by using the <command>locate</command> command.  <command>Locate</command> provides a secure way to index and quickly search for file names.  Because <command>locate</command> relies on a file index, the <guilabel>Search results</guilabel> list may not always be up to date.</para>
     </sect2>
 
     <sect2 id="gsearchtool-disablesecondscan">
     <title>Disable Quick Search Second Scan</title>
-    <para>Key name: /apps/mate-search-tool/disable_quick_search_second_scan</para>
+    <para>Key name: org.mate.search-tool.disable-quick-search-second-scan</para>
     <para>Default value: false</para>
     <para>After completing a quick search, <application>&app;</application> will perform a thorough search using the <command>find</command> command.  The purpose of this second scan is to find files that have not been indexed.  Files that match the search criteria are added to the <guilabel>Search results</guilabel> list keeping the list up to date.</para>
     </sect2>
 
     <sect2 id="gsearchtool-quicksearchexclude">
     <title>Quick Search Excluded Paths</title>
-    <para>Key name: /apps/mate-search-tool/quick_search_excluded_paths</para>
+    <para>Key name: org.mate.search-tool.quick-search-excluded-paths</para>
     <para>Default values: [/mnt/*,/media/*,/dev/*,/tmp/*,/proc/*,/var/*]</para>
     <para><application>&app;</application> will not perform a quick search for paths defined by this key.  File name searches in the defined paths will use the <command>find</command> command.  The wildcards '*' and '?' are supported.</para>
     </sect2>
 
     <sect2 id="gsearchtool-secondscanexclude">
     <title>Quick Search Second Scan Excluded Paths</title>
-    <para>Key name: /apps/mate-search-tool/quick_search_second_scan_excluded_paths</para>
+    <para>Key name: org.mate.search-tool.quick-search-second-scan-excluded-paths</para>
     <para>Default values: [/]</para>
     <para><application>&app;</application> will not perform a second scan after a quick search for the paths defined by this key.  Quick searches in the defined paths will not be followed by a thorough search using the <command>find</command> command.  The wildcards '*' and '?' are supported.</para>
     </sect2>
 
     <sect2 id="gsearchtool-showoptions">
     <title>Show Additional Options</title>
-    <para>Key name: /apps/mate-search-tool/show_additional_options</para>
+    <para>Key name: org.mate.search-tool.show-additional-options</para>
     <para>Default value: false</para>
     <para>This key determines if the <guilabel>Select more options</guilabel> section is expanded when <application>&app;</application> is started.</para>
     </sect2>
