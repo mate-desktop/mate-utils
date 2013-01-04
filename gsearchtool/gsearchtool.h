@@ -34,8 +34,6 @@ extern "C" {
 #endif
 
 #include <gtk/gtk.h>
-#include <mateconf/mateconf.h>
-#include <mateconf/mateconf-client.h>
 
 #define GSEARCH_TYPE_WINDOW gsearch_window_get_type()
 #define GSEARCH_WINDOW(obj) \
@@ -56,6 +54,7 @@ extern "C" {
 #define DEFAULT_WINDOW_HEIGHT  350
 #define WINDOW_HEIGHT_STEP      35
 #define NUM_VISIBLE_COLUMNS      5
+#define CAJA_PREFERENCES_SCHEMA "org.mate.caja.preferences"
 
 typedef enum {
 	STOPPED,
@@ -64,6 +63,18 @@ typedef enum {
 	MAKE_IT_STOP,
 	MAKE_IT_QUIT
 } GSearchCommandStatus;
+
+typedef enum {
+	SPEED_TRADEOFF_ALWAYS = 0,
+	SPEED_TRADEOFF_LOCAL_ONLY,
+	SPEED_TRADEOFF_NEVER
+} CajaSpeedTradeoff;
+
+typedef enum {
+	CAJA_DATE_FORMAT_LOCALE = 0,
+	CAJA_DATE_FORMAT_ISO,
+	CAJA_DATE_FORMAT_INFORMAL
+} CajaDateFormat;
 
 typedef enum {
 	COLUMN_ICON,
@@ -130,7 +141,7 @@ struct _GSearchWindow {
 	GtkTreePath           * search_results_hover_path;
 	GHashTable            * search_results_filename_hash_table;
 	GHashTable            * search_results_pixbuf_hash_table;
-	gchar                 * search_results_date_format_string;
+	CajaDateFormat          search_results_date_format;
 	gint		        show_thumbnails_file_size_limit;
 	gboolean		show_thumbnails;
 	gboolean                is_search_results_single_click_to_activate;
@@ -138,6 +149,12 @@ struct _GSearchWindow {
 	gboolean		is_locate_database_available;
 
 	gchar                 * save_results_as_default_filename;
+
+	GSettings             * mate_search_tool_settings;
+	GSettings             * mate_search_tool_select_settings;
+	GSettings             * mate_desktop_interface_settings;
+	GSettings             * caja_settings;
+	gboolean                caja_schema_exists;
 
 	GSearchCommandDetails * command_details;
 };
@@ -198,8 +215,8 @@ void
 remove_constraint (gint constraint_id);
 
 void
-set_constraint_mateconf_boolean (gint constraint_id,
-                              gboolean flag);
+set_constraint_gsettings_boolean (gint constraint_id,
+                                  gboolean flag);
 void
 set_constraint_selected_state (GSearchWindow * gsearch,
                                gint constraint_id,

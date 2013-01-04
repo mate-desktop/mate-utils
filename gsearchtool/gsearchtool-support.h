@@ -38,40 +38,6 @@ extern "C" {
 #define ICON_SIZE 24
 
 gboolean
-gsearchtool_mateconf_get_boolean (const gchar * key);
-
-void
-gsearchtool_mateconf_set_boolean (const gchar * key,
-                               const gboolean flag);
-gint
-gsearchtool_mateconf_get_int (const gchar * key);
-
-void
-gsearchtool_mateconf_set_int (const gchar * key,
-                           const gint value);
-char *
-gsearchtool_mateconf_get_string (const gchar * key);
-
-void
-gsearchtool_mateconf_set_string (const gchar * key,
-                              const gchar * value);
-
-GSList *
-gsearchtool_mateconf_get_list (const gchar * key,
-                            MateConfValueType list_type);
-void
-gsearchtool_mateconf_set_list (const gchar * key,
-                            GSList * list,
-                            MateConfValueType list_type);
-void
-gsearchtool_mateconf_add_dir (const gchar * dir);
-
-void
-gsearchtool_mateconf_watch_key (const gchar * dir,
-                             const gchar * key,
-                             MateConfClientNotifyFunc callback,
-                             gpointer user_data);
-gboolean
 is_path_hidden (const gchar * path);
 
 gboolean
@@ -102,7 +68,7 @@ gchar *
 remove_mnemonic_character (const gchar * string);
 
 gchar *
-get_readable_date (const gchar * format_string,
+get_readable_date (const CajaDateFormat date_format_enum,
                    const time_t file_time_raw);
 gchar *
 gsearchtool_strdup_strftime (const gchar * format,
