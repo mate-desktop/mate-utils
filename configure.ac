@@ -161,7 +161,7 @@ AS_CASE([$enable_gdict_applet],
         [yes],
         [
           # Gdict applet checks
-          PKG_CHECK_MODULES(APPLET, libmatepanelapplet-2.0 >= $LIBMATE_PANEL_APPLET_REQUIRED)
+          PKG_CHECK_MODULES(APPLET, libmatepanelapplet-4.0 >= $LIBMATE_PANEL_APPLET_REQUIRED)
           AC_SUBST(APPLET_LIBS)
           AC_SUBST(APPLET_CFLAGS)
         ],
