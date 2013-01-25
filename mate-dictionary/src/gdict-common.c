@@ -187,15 +187,3 @@ gdict_show_gerror_dialog (GtkWindow   *parent,
   g_error_free (error);
   error = NULL;
 }
-
-gchar *
-gdict_mateconf_get_string_with_default (MateConfClient *client,
-				     const gchar *key,
-				     const gchar *def)
-{
-  gchar *val;
-
-  val = mateconf_client_get_string (client, key, NULL);
-  return val ? val : g_strdup (def);
-}
-

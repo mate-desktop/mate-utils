@@ -244,7 +244,7 @@ gdict_source_class_init (GdictSourceClass *klass)
   				   PROP_NAME,
   				   g_param_spec_string ("name",
   				   			_("Name"),
-  				   			_("The display name of this dictonary source"),
+  				   			_("The display name of this dictionary source"),
   				   			NULL,
   				   			(G_PARAM_READABLE | G_PARAM_WRITABLE)));
   /**
@@ -272,7 +272,7 @@ gdict_source_class_init (GdictSourceClass *klass)
   				   PROP_DATABASE,
   				   g_param_spec_string ("database",
   				   			_("Database"),
-  				   			_("The default database of this dictonary source"),
+  				   			_("The default database of this dictionary source"),
   				   			NULL,
   				   			(G_PARAM_READABLE | G_PARAM_WRITABLE)));
   /**
@@ -286,7 +286,7 @@ gdict_source_class_init (GdictSourceClass *klass)
   				   PROP_STRATEGY,
   				   g_param_spec_string ("strategy",
   				   			_("Strategy"),
-  				   			_("The default strategy of this dictonary source"),
+  				   			_("The default strategy of this dictionary source"),
   				   			NULL,
   				   			(G_PARAM_READABLE | G_PARAM_WRITABLE)));
   /**

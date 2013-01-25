@@ -28,10 +28,9 @@
 #include <string.h>
 #include <math.h>
 
-#include <gtk/gtk.h>
 #include <glib/gi18n.h>
-
-#include <mateconf/mateconf-client.h>
+#include <gio/gio.h>
+#include <gtk/gtk.h>
 
 #include <libgdict/gdict.h>
 
@@ -178,19 +177,12 @@ end_print (GtkPrintOperation *operation,
 static gchar *
 get_print_font (void)
 {
-  MateConfClient *client;
-  gchar *print_font;
-  
-  client = mateconf_client_get_default ();
-  print_font = mateconf_client_get_string (client,
-  					GDICT_MATECONF_PRINT_FONT_KEY,
-  					NULL);
-  if (!print_font)
-    print_font = g_strdup (GDICT_DEFAULT_PRINT_FONT);
-  
-  g_object_unref (client);
-  
-  return print_font;
+  static GSettings *settings = NULL;
+
+  if (settings == NULL)
+    settings = g_settings_new ("org.mate.dictionary");
+
+  return g_settings_get_string (settings, "print-font");
 }
 
 void

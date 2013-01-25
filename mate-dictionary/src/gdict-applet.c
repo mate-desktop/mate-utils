@@ -26,10 +26,10 @@
 #include <string.h>
 
 #include <glib/gi18n.h>
+#include <gio/gio.h>
 #include <gdk/gdkkeysyms.h>
 #include <gdk-pixbuf/gdk-pixbuf.h>
 #include <gtk/gtk.h>
-#include <mateconf/mateconf-client.h>
 
 #include "gdict-applet.h"
 #include "gdict-about.h"
@@ -53,9 +53,8 @@ struct _GdictAppletPrivate
   guint size;
   GtkOrientation orient;
   
-  MateConfClient *mateconf_client;
-  guint notify_id;
-  guint font_notify_id;
+  GSettings *settings;
+  GSettings *desktop_settings;
 
   gchar *database;
   gchar *strategy;
@@ -850,12 +849,11 @@ gdict_applet_set_database (GdictApplet *applet,
   
   g_free (priv->database);
 
-  if (database)
+  if (database != NULL && *database != '\0')
     priv->database = g_strdup (database);
   else
-    priv->database = gdict_mateconf_get_string_with_default (priv->mateconf_client,
-							  GDICT_MATECONF_DATABASE_KEY,
-							  GDICT_DEFAULT_DATABASE);
+    priv->database = g_settings_get_string (priv->settings,
+							  GDICT_SETTINGS_DATABASE_KEY);
   if (priv->defbox)
     gdict_defbox_set_database (GDICT_DEFBOX (priv->defbox),
 			       priv->database);
@@ -869,12 +867,11 @@ gdict_applet_set_strategy (GdictApplet *applet,
   
   g_free (priv->strategy);
 
-  if (strategy)
+  if (strategy != NULL && *strategy != '\0')
     priv->strategy = g_strdup (strategy);
   else
-    priv->strategy = gdict_mateconf_get_string_with_default (priv->mateconf_client,
-							  GDICT_MATECONF_STRATEGY_KEY,
-							  GDICT_DEFAULT_STRATEGY);
+    priv->strategy = g_settings_get_string (priv->settings,
+							  GDICT_SETTINGS_STRATEGY_KEY);
 }
 
 static GdictContext *
@@ -939,12 +936,11 @@ gdict_applet_set_print_font (GdictApplet *applet,
 
   g_free (priv->print_font);
 
-  if (print_font)
+  if (print_font != NULL && *print_font != '\0')
     priv->print_font = g_strdup (print_font);
   else
-    priv->print_font = gdict_mateconf_get_string_with_default (priv->mateconf_client,
-							    GDICT_MATECONF_PRINT_FONT_KEY,
-							    GDICT_DEFAULT_PRINT_FONT);
+    priv->print_font = g_settings_get_string (priv->settings,
+							    GDICT_SETTINGS_PRINT_FONT_KEY);
 }
 
 static void
@@ -955,12 +951,11 @@ gdict_applet_set_defbox_font (GdictApplet *applet,
 
   g_free (priv->defbox_font);
 
-  if (defbox_font)
+  if (defbox_font != NULL && *defbox_font != '\0')
     priv->defbox_font = g_strdup (defbox_font);
   else
-    priv->defbox_font = gdict_mateconf_get_string_with_default (priv->mateconf_client,
-							     DOCUMENT_FONT_KEY,
-							     GDICT_DEFAULT_DEFBOX_FONT);
+    priv->defbox_font = g_settings_get_string (priv->desktop_settings,
+							     DOCUMENT_FONT_KEY);
 
   if (priv->defbox)
     gdict_defbox_set_font_name (GDICT_DEFBOX (priv->defbox),
@@ -1016,59 +1011,40 @@ gdict_applet_set_source_name (GdictApplet *applet,
 
   g_free (priv->source_name);
 
-  if (source_name)
+  if (source_name != NULL && *source_name != '\0')
     priv->source_name = g_strdup (source_name);
   else
-    priv->source_name = gdict_mateconf_get_string_with_default (priv->mateconf_client,
-							     GDICT_MATECONF_SOURCE_KEY,
-							     GDICT_DEFAULT_SOURCE_NAME);
+    priv->source_name = g_settings_get_string (priv->settings,
+							     GDICT_SETTINGS_SOURCE_KEY);
   
   context = get_context_from_loader (applet);
   gdict_applet_set_context (applet, context);
 }
 
 static void
-gdict_applet_mateconf_notify_cb (MateConfClient *client,
-			      guint        cnxn_id,
-			      MateConfEntry  *entry,
-			      gpointer     user_data)
+gdict_applet_settings_changed_cb (GSettings *settings,
+                  const gchar *key, GdictApplet *applet)
 {
-  GdictApplet *applet = GDICT_APPLET (user_data);
 
-  if (strcmp (entry->key, GDICT_MATECONF_PRINT_FONT_KEY) == 0)
+  if (g_strcmp0 (key, GDICT_SETTINGS_PRINT_FONT_KEY) == 0)
     {
-      if (entry->value && (entry->value->type == MATECONF_VALUE_STRING))
-        gdict_applet_set_print_font (applet, mateconf_value_get_string (entry->value));
-      else
-        gdict_applet_set_print_font (applet, GDICT_DEFAULT_PRINT_FONT);
+        gdict_applet_set_print_font (applet, NULL);
     }
-  else if (strcmp (entry->key, GDICT_MATECONF_SOURCE_KEY) == 0)
+  else if (g_strcmp0 (key, GDICT_SETTINGS_SOURCE_KEY) == 0)
     {
-      if (entry->value && (entry->value->type == MATECONF_VALUE_STRING))
-        gdict_applet_set_source_name (applet, mateconf_value_get_string (entry->value));
-      else
-        gdict_applet_set_source_name (applet, GDICT_DEFAULT_SOURCE_NAME);
+        gdict_applet_set_source_name (applet, NULL);
     }
-  else if (strcmp (entry->key, GDICT_MATECONF_DATABASE_KEY) == 0)
+  else if (g_strcmp0 (key, GDICT_SETTINGS_DATABASE_KEY) == 0)
     {
-      if (entry->value && (entry->value->type == MATECONF_VALUE_STRING))
-        gdict_applet_set_database (applet, mateconf_value_get_string (entry->value));
-      else
-        gdict_applet_set_database (applet, GDICT_DEFAULT_DATABASE);
+        gdict_applet_set_database (applet, NULL);
     }
-  else if (strcmp (entry->key, GDICT_MATECONF_STRATEGY_KEY) == 0)
+  else if (g_strcmp0 (key, GDICT_SETTINGS_STRATEGY_KEY) == 0)
     {
-      if (entry->value && (entry->value->type == MATECONF_VALUE_STRING))
-        gdict_applet_set_strategy (applet, mateconf_value_get_string (entry->value));
-      else
-        gdict_applet_set_strategy (applet, GDICT_DEFAULT_STRATEGY);
+        gdict_applet_set_strategy (applet, NULL);
     }
-  else if (strcmp (entry->key, DOCUMENT_FONT_KEY) == 0)
+  else if (g_strcmp0 (key, DOCUMENT_FONT_KEY) == 0)
     {
-      if (entry->value && (entry->value->type == MATECONF_VALUE_STRING))
-        gdict_applet_set_defbox_font (applet, mateconf_value_get_string (entry->value));
-      else
-        gdict_applet_set_defbox_font (applet, GDICT_DEFAULT_DEFBOX_FONT);
+        gdict_applet_set_defbox_font (applet, NULL);
     }
 }
 
@@ -1081,23 +1057,26 @@ gdict_applet_finalize (GObject *object)
   if (priv->idle_draw_id)
     g_source_remove (priv->idle_draw_id);
 
-  if (priv->notify_id)
-    mateconf_client_notify_remove (priv->mateconf_client, priv->notify_id);
+  if (priv->settings != NULL)
+    {
+      g_object_unref (priv->settings);
+      priv->settings = NULL;
+    }
 
-  if (priv->font_notify_id)
-    mateconf_client_notify_remove (priv->mateconf_client, priv->font_notify_id);
-  
-  if (priv->mateconf_client)
-    g_object_unref (priv->mateconf_client);
-  
+  if (priv->desktop_settings != NULL)
+    {
+      g_object_unref (priv->desktop_settings);
+      priv->desktop_settings = NULL;
+    }
+
   if (priv->context)
     {
       if (priv->lookup_start_id)
         {
           g_signal_handler_disconnect (priv->context, priv->lookup_start_id);
-	  g_signal_handler_disconnect (priv->context, priv->lookup_end_id);
-	  g_signal_handler_disconnect (priv->context, priv->error_id);
-	}
+          g_signal_handler_disconnect (priv->context, priv->lookup_end_id);
+          g_signal_handler_disconnect (priv->context, priv->error_id);
+        }
 
       g_object_unref (priv->context);
     }
@@ -1139,7 +1118,6 @@ gdict_applet_init (GdictApplet *applet)
 {
   GdictAppletPrivate *priv;
   gchar *data_dir;
-  GError *mateconf_error;
 
   priv = GDICT_APPLET_GET_PRIVATE (applet);
   applet->priv = priv;
@@ -1156,52 +1134,16 @@ gdict_applet_init (GdictApplet *applet)
   
   mate_panel_applet_set_flags (MATE_PANEL_APPLET (applet),
 			  MATE_PANEL_APPLET_EXPAND_MINOR);
-  
-  /* get the default mateconf client */
-  if (!priv->mateconf_client)
-    priv->mateconf_client = mateconf_client_get_default ();
-  
-  mateconf_error = NULL;
-  mateconf_client_add_dir (priv->mateconf_client,
-  			GDICT_MATECONF_DIR,
-  			MATECONF_CLIENT_PRELOAD_ONELEVEL,
-  			&mateconf_error);
-  if (mateconf_error)
-    {
-      gdict_show_gerror_dialog (NULL,
-		                _("Unable to connect to MateConf"),
-		                mateconf_error);
-      mateconf_error = NULL;
-    }
-  
-  priv->notify_id = mateconf_client_notify_add (priv->mateconf_client,
-		  			     GDICT_MATECONF_DIR,
-					     gdict_applet_mateconf_notify_cb,
-					     applet, NULL,
-					     &mateconf_error);
-  if (mateconf_error)
-    {
-      gdict_show_gerror_dialog (NULL,
-		                _("Unable to get notification for preferences"),
-		                mateconf_error);
 
-      mateconf_error = NULL;
-    }
-  
-  priv->font_notify_id =  mateconf_client_notify_add (priv->mateconf_client,
-		  				   DOCUMENT_FONT_KEY,
-						   gdict_applet_mateconf_notify_cb,
-						   applet, NULL,
-						   &mateconf_error);
-  if (mateconf_error)
-    {
-      gdict_show_gerror_dialog (NULL,
-                               _("Unable to get notification for the document font"),
-                               mateconf_error);
+  priv->settings = g_settings_new (GDICT_SETTINGS_SCHEMA);
+  priv->desktop_settings = g_settings_new (DESKTOP_SETTINGS_SCHEMA);
 
-      mateconf_error = NULL;
-    }
-  
+  g_signal_connect (priv->settings, "changed",
+                    G_CALLBACK (gdict_applet_settings_changed_cb), applet);
+
+  g_signal_connect (priv->desktop_settings, "changed",
+                    G_CALLBACK (gdict_applet_settings_changed_cb), applet);
+
 #ifndef GDICT_APPLET_STAND_ALONE
   mate_panel_applet_set_background_widget (MATE_PANEL_APPLET (applet),
 		  		      GTK_WIDGET (applet));
@@ -1237,7 +1179,7 @@ gdict_applet_init (GdictApplet *applet)
   /* force first draw */
   gdict_applet_draw (applet);
 
-  /* force retrieval of the configuration from MateConf */
+  /* force retrieval of the configuration from settings */
   gdict_applet_set_source_name (applet, NULL);
   gdict_applet_set_defbox_font (applet, NULL);
   gdict_applet_set_print_font (applet, NULL);
