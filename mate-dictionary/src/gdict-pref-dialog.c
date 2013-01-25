@@ -34,7 +34,7 @@
 #endif
 
 #include <glib/gi18n.h>
-#include <mateconf/mateconf-client.h>
+#include <gio/gio.h>
 
 #include "gdict-source-dialog.h"
 #include "gdict-pref-dialog.h"
@@ -66,8 +66,7 @@ struct _GdictPrefDialog
 
   GtkBuilder *builder;
 
-  MateConfClient *mateconf_client;
-  guint notify_id;
+  GSettings *settings;
   
   gchar *active_source;
   GdictSourceLoader *loader;
@@ -204,14 +203,10 @@ source_renderer_toggled_cb (GtkCellRendererToggle *renderer,
     {
       g_free (dialog->active_source);
       dialog->active_source = g_strdup (name);
-      
-      mateconf_client_set_string (dialog->mateconf_client,
-      			       GDICT_MATECONF_SOURCE_KEY,
-      			       dialog->active_source,
-      			       NULL);
-      
+
+      g_settings_set_string (dialog->settings, GDICT_SETTINGS_SOURCE_KEY, dialog->active_source);
       update_sources_view (dialog);
-      
+
       g_free (name);
     }
   
@@ -434,52 +429,8 @@ font_button_font_set_cb (GtkWidget       *font_button,
   
   g_free (dialog->print_font);
   dialog->print_font = g_strdup (font);
-      
-  mateconf_client_set_string (dialog->mateconf_client,
-  			   GDICT_MATECONF_PRINT_FONT_KEY,
-  			   dialog->print_font,
-  			   NULL);
-}
 
-static void
-gdict_pref_dialog_mateconf_notify_cb (MateConfClient *client,
-				   guint        cnxn_id,
-				   MateConfEntry  *entry,
-				   gpointer     user_data)
-{
-  GdictPrefDialog *dialog = GDICT_PREF_DIALOG (user_data);
-  
-  if (strcmp (entry->key, GDICT_MATECONF_SOURCE_KEY) == 0)
-    {
-      if (entry->value && entry->value->type == MATECONF_VALUE_STRING)
-        {
-          g_free (dialog->active_source);
-          dialog->active_source = g_strdup (mateconf_value_get_string (entry->value));
-        }
-      else
-        {
-          g_free (dialog->active_source);
-          dialog->active_source = g_strdup (GDICT_DEFAULT_SOURCE_NAME);
-        }
-      
-      update_sources_view (dialog);
-    }
-  else if (strcmp (entry->key, GDICT_MATECONF_PRINT_FONT_KEY) == 0)
-    {
-      if (entry->value && entry->value->type == MATECONF_VALUE_STRING)
-        {
-          g_free (dialog->print_font);
-          dialog->print_font = g_strdup (mateconf_value_get_string (entry->value));
-        }
-      else
-        {
-          g_free (dialog->print_font);
-          dialog->print_font = g_strdup (GDICT_DEFAULT_PRINT_FONT);
-        }
-
-      gtk_font_button_set_font_name (GTK_FONT_BUTTON (dialog->font_button),
-		      		     dialog->print_font);
-    }
+  g_settings_set_string (dialog->settings, GDICT_SETTINGS_PRINT_FONT_KEY, dialog->print_font);
 }
 
 static void
@@ -531,11 +482,8 @@ gdict_pref_dialog_finalize (GObject *object)
 {
   GdictPrefDialog *dialog = GDICT_PREF_DIALOG (object);
   
-  if (dialog->notify_id);
-    mateconf_client_notify_remove (dialog->mateconf_client, dialog->notify_id);
-  
-  if (dialog->mateconf_client)
-    g_object_unref (dialog->mateconf_client);
+  if (dialog->settings)
+    g_object_unref (dialog->settings);
   
   if (dialog->builder)
     g_object_unref (dialog->builder);
@@ -615,8 +563,7 @@ gdict_pref_dialog_init (GdictPrefDialog *dialog)
     
   gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
   gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 2);
-  gtk_dialog_set_has_separator (GTK_DIALOG (dialog), FALSE);
-  
+
   /* add buttons */
   gtk_dialog_add_button (GTK_DIALOG (dialog),
   			 "gtk-help",
@@ -625,17 +572,7 @@ gdict_pref_dialog_init (GdictPrefDialog *dialog)
   			 "gtk-close",
   			 GTK_RESPONSE_ACCEPT);
 
-  dialog->mateconf_client = mateconf_client_get_default ();
-  mateconf_client_add_dir (dialog->mateconf_client,
-  			GDICT_MATECONF_DIR,
-  			MATECONF_CLIENT_PRELOAD_ONELEVEL,
-  			NULL);
-  dialog->notify_id = mateconf_client_notify_add (dialog->mateconf_client,
-  					       GDICT_MATECONF_DIR,
-		  			       gdict_pref_dialog_mateconf_notify_cb,
-  					       dialog,
-  					       NULL,
-  					       NULL);
+  dialog->settings = g_settings_new (GDICT_SETTINGS_SCHEMA);
 
   /* get the UI from the GtkBuilder file */
   dialog->builder = gtk_builder_new ();
@@ -657,9 +594,7 @@ gdict_pref_dialog_init (GdictPrefDialog *dialog)
   dialog->sources_view = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "sources_treeview"));
   build_sources_view (dialog);
 
-  dialog->active_source = gdict_mateconf_get_string_with_default (dialog->mateconf_client,
-							       GDICT_MATECONF_SOURCE_KEY,
-							       GDICT_DEFAULT_SOURCE_NAME);
+  dialog->active_source = g_settings_get_string (dialog->settings, GDICT_SETTINGS_SOURCE_KEY);
 
   dialog->sources_add = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "add_button"));
   gtk_widget_set_tooltip_text (dialog->sources_add,
@@ -672,13 +607,8 @@ gdict_pref_dialog_init (GdictPrefDialog *dialog)
                                _("Remove the currently selected dictionary source"));
   g_signal_connect (dialog->sources_remove, "clicked",
   		    G_CALLBACK (source_remove_clicked_cb), dialog);
-  
-  font = mateconf_client_get_string (dialog->mateconf_client,
-  				  GDICT_MATECONF_PRINT_FONT_KEY,
-  				  NULL);
-  if (!font)
-    font = g_strdup (GDICT_DEFAULT_PRINT_FONT);
-  
+
+  font = g_settings_get_string (dialog->settings, GDICT_SETTINGS_PRINT_FONT_KEY);
   dialog->font_button = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "print_font_button"));
   gtk_font_button_set_font_name (GTK_FONT_BUTTON (dialog->font_button), font);
   gtk_widget_set_tooltip_text (dialog->font_button,

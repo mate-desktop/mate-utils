@@ -36,20 +36,14 @@ G_BEGIN_DECLS
 #define GDICT_DEFAULT_PRINT_FONT 	"Serif 10"
 #define GDICT_DEFAULT_SOURCE_NAME 	"Default"
 
-#define GDICT_MATECONF_DIR				"/apps/mate-dictionary"
-#define GDICT_MATECONF_DATABASE_KEY 		GDICT_MATECONF_DIR "/database"
-#define GDICT_MATECONF_STRATEGY_KEY 		GDICT_MATECONF_DIR "/strategy"
-#define GDICT_MATECONF_PRINT_FONT_KEY 		GDICT_MATECONF_DIR "/print-font"
-#define GDICT_MATECONF_SOURCE_KEY 			GDICT_MATECONF_DIR "/source-name"
-#define GDICT_MATECONF_WINDOW_WIDTH_KEY 		GDICT_MATECONF_DIR "/default-window-width"
-#define GDICT_MATECONF_WINDOW_HEIGHT_KEY 		GDICT_MATECONF_DIR "/default-window-height"
-#define GDICT_MATECONF_WINDOW_IS_MAXIMIZED_KEY 	GDICT_MATECONF_DIR "/window-is-maximized"
-#define GDICT_MATECONF_SIDEBAR_VISIBLE_KEY		GDICT_MATECONF_DIR "/sidebar-visible"
-#define GDICT_MATECONF_SIDEBAR_PAGE_KEY            GDICT_MATECONF_DIR "/sidebar-page"
-#define GDICT_MATECONF_SIDEBAR_WIDTH_KEY           GDICT_MATECONF_DIR "/sidebar-width"
-#define GDICT_MATECONF_STATUSBAR_VISIBLE_KEY	GDICT_MATECONF_DIR "/statusbar-visible"
+#define GDICT_SETTINGS_SCHEMA           "org.mate.dictionary"
+#define GDICT_SETTINGS_DATABASE_KEY 	"database"
+#define GDICT_SETTINGS_STRATEGY_KEY 	"strategy"
+#define GDICT_SETTINGS_PRINT_FONT_KEY 	"print-font"
+#define GDICT_SETTINGS_SOURCE_KEY 	"source-name"
 
-#define DOCUMENT_FONT_KEY 			"/desktop/mate/interface/document_font_name"
+#define DESKTOP_SETTINGS_SCHEMA         "org.mate.interface"
+#define DOCUMENT_FONT_KEY               "document-font-name"
 
 typedef struct _GdictPrefDialog        GdictPrefDialog;
 typedef struct _GdictPrefDialogClass   GdictPrefDialogClass;

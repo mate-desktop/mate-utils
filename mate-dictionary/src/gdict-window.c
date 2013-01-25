@@ -28,6 +28,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+#include <errno.h>
 
 #include <gtk/gtk.h>
 #include <glib.h>
@@ -68,10 +69,14 @@ enum
   PROP_ACTION,
   PROP_SOURCE_LOADER,
   PROP_SOURCE_NAME,
+  PROP_DATABASE,
+  PROP_STRATEGY,
   PROP_PRINT_FONT,
   PROP_DEFBOX_FONT,
   PROP_WORD,
-  PROP_WINDOW_ID
+  PROP_WINDOW_ID,
+
+  LAST_PROP
 };
 
 enum
@@ -81,6 +86,7 @@ enum
   LAST_SIGNAL
 };
 
+static GParamSpec *gdict_window_properties[LAST_PROP] = { NULL, };
 static guint gdict_window_signals[LAST_SIGNAL] = { 0 };
 
 static const GtkTargetEntry drop_types[] =
@@ -117,37 +123,27 @@ gdict_window_dispose (GObject *gobject)
 {
   GdictWindow *window = GDICT_WINDOW (gobject);
 
-  if (window->notify_id)
+  if (window->desktop_settings != NULL)
     {
-      mateconf_client_notify_remove (window->mateconf_client, window->notify_id);
-      window->notify_id = 0;
+      g_object_unref (window->desktop_settings);
+      window->desktop_settings = NULL;
     }
 
-  if (window->font_notify_id)
+  if (window->settings != NULL)
     {
-      mateconf_client_notify_remove (window->mateconf_client,
-                                  window->font_notify_id);
-      window->font_notify_id = 0;
-    }
-  
-  if (window->mateconf_client)
-    {
-      g_object_unref (window->mateconf_client);
-      window->mateconf_client = NULL;
+      g_object_unref (window->settings);
+
+      window->settings = NULL;
     }
   
   if (window->context)
     {
       if (window->lookup_start_id)
         {
-          g_signal_handler_disconnect (window->context,
-                                       window->lookup_start_id);
-          g_signal_handler_disconnect (window->context,
-                                       window->definition_id);
-          g_signal_handler_disconnect (window->context,
-                                       window->lookup_end_id);
-          g_signal_handler_disconnect (window->context,
-                                       window->error_id);
+          g_signal_handler_disconnect (window->context, window->lookup_start_id);
+          g_signal_handler_disconnect (window->context, window->definition_id);
+          g_signal_handler_disconnect (window->context, window->lookup_end_id);
+          g_signal_handler_disconnect (window->context, window->error_id);
 
           window->lookup_start_id = 0;
           window->definition_id = 0;
@@ -236,21 +232,22 @@ gdict_window_set_sidebar_visible (GdictWindow *window,
 				  gboolean     is_visible)
 {
   g_assert (GDICT_IS_WINDOW (window));
-  
+
+  is_visible = !!is_visible;
+
   if (is_visible != window->sidebar_visible)
     {
       GtkAction *action;
 
-      if (is_visible)
+      window->sidebar_visible = is_visible;
+
+      if (window->sidebar_visible)
 	gtk_widget_show (window->sidebar_frame);
       else
 	gtk_widget_hide (window->sidebar_frame);
 
-      action = gtk_action_group_get_action (window->action_group,
-                                            "ViewSidebar");
-      gtk_toggle_action_set_active (GTK_TOGGLE_ACTION (action), is_visible);
-
-      window->sidebar_visible = is_visible;
+      action = gtk_action_group_get_action (window->action_group, "ViewSidebar");
+      gtk_toggle_action_set_active (GTK_TOGGLE_ACTION (action), window->sidebar_visible);
     }
 }
 
@@ -260,20 +257,21 @@ gdict_window_set_statusbar_visible (GdictWindow *window,
 {
   g_assert (GDICT_IS_WINDOW (window));
 
+  is_visible = !!is_visible;
+
   if (is_visible != window->statusbar_visible)
     {
       GtkAction *action;
 
-      if (is_visible)
+      window->statusbar_visible = is_visible;
+
+      if (window->statusbar_visible)
 	gtk_widget_show (window->status);
       else
 	gtk_widget_hide (window->status);
 
-      action = gtk_action_group_get_action (window->action_group,
-                                            "ViewStatusbar");
-      gtk_toggle_action_set_active (GTK_TOGGLE_ACTION (action), is_visible);
-
-      window->statusbar_visible = is_visible;
+      action = gtk_action_group_get_action (window->action_group, "ViewStatusbar");
+      gtk_toggle_action_set_active (GTK_TOGGLE_ACTION (action), window->statusbar_visible);
     }
 }
 
@@ -446,14 +444,15 @@ static void
 gdict_window_set_database (GdictWindow *window,
 			   const gchar *database)
 {
+  if (g_strcmp0 (window->database, database) == 0)
+    return;
+
   g_free (window->database);
 
-  if (database)
+  if (database != NULL && *database != '\0')
     window->database = g_strdup (database);
   else
-    window->database = gdict_mateconf_get_string_with_default (window->mateconf_client,
-							    GDICT_MATECONF_DATABASE_KEY,
-							    GDICT_DEFAULT_DATABASE);
+    window->database = g_settings_get_string (window->settings, GDICT_SETTINGS_DATABASE_KEY);
 
   if (window->defbox)
     gdict_defbox_set_database (GDICT_DEFBOX (window->defbox),
@@ -462,20 +461,23 @@ gdict_window_set_database (GdictWindow *window,
   if (window->db_chooser)
     gdict_database_chooser_set_current_database (GDICT_DATABASE_CHOOSER (window->db_chooser),
                                                  window->database);
+
+  g_object_notify_by_pspec (G_OBJECT (window), gdict_window_properties[PROP_DATABASE]);
 }
 
 static void
 gdict_window_set_strategy (GdictWindow *window,
 			   const gchar *strategy)
 {
+  if (g_strcmp0 (window->strategy, strategy) == 0)
+    return;
+
   g_free (window->strategy);
 
-  if (strategy && strategy[0] != '\0')
+  if (strategy != NULL && *strategy != '\0')
     window->strategy = g_strdup (strategy);
   else
-    window->strategy = gdict_mateconf_get_string_with_default (window->mateconf_client,
-							    GDICT_MATECONF_STRATEGY_KEY,
-							    GDICT_DEFAULT_STRATEGY);
+    window->strategy = g_settings_get_string (window->settings, GDICT_SETTINGS_STRATEGY_KEY);
 
   if (window->speller)
     gdict_speller_set_strategy (GDICT_SPELLER (window->speller),
@@ -484,6 +486,8 @@ gdict_window_set_strategy (GdictWindow *window,
   if (window->strat_chooser)
     gdict_strategy_chooser_set_current_strategy (GDICT_STRATEGY_CHOOSER (window->strat_chooser),
                                                  window->strategy);
+
+  g_object_notify_by_pspec (G_OBJECT (window), gdict_window_properties[PROP_STRATEGY]);
 }
 
 static GdictContext *
@@ -555,16 +559,12 @@ gdict_window_set_defbox_font (GdictWindow *window,
 {
   g_free (window->defbox_font);
 
-  if (defbox_font)
+  if (defbox_font != NULL && *defbox_font != '\0')
     window->defbox_font = g_strdup (defbox_font);
   else
-    window->defbox_font = gdict_mateconf_get_string_with_default (window->mateconf_client,
-							       DOCUMENT_FONT_KEY,
-							       GDICT_DEFAULT_DEFBOX_FONT);
+    window->defbox_font = g_settings_get_string (window->desktop_settings, DOCUMENT_FONT_KEY);
 
-  if (window->defbox)
-    gdict_defbox_set_font_name (GDICT_DEFBOX (window->defbox),
-				window->defbox_font);
+  gdict_defbox_set_font_name (GDICT_DEFBOX (window->defbox), window->defbox_font);
 }
 
 static void
@@ -573,12 +573,10 @@ gdict_window_set_print_font (GdictWindow *window,
 {
   g_free (window->print_font);
 
-  if (print_font)
+  if (print_font != NULL && *print_font != '\0')
     window->print_font = g_strdup (print_font);
   else
-    window->print_font = gdict_mateconf_get_string_with_default (window->mateconf_client,
-							      GDICT_MATECONF_PRINT_FONT_KEY,
-							      GDICT_DEFAULT_PRINT_FONT);
+    window->print_font = g_settings_get_string (window->settings, GDICT_SETTINGS_PRINT_FONT_KEY);
 }
 
 static void
@@ -675,12 +673,10 @@ gdict_window_set_source_name (GdictWindow *window,
 
   g_free (window->source_name);
 
-  if (source_name)
+  if (source_name != NULL && *source_name != '\0')
     window->source_name = g_strdup (source_name);
   else
-    window->source_name = gdict_mateconf_get_string_with_default (window->mateconf_client,
-							       GDICT_MATECONF_SOURCE_KEY,
-							       GDICT_DEFAULT_SOURCE_NAME);
+    window->source_name = g_settings_get_string (window->settings, GDICT_SETTINGS_SOURCE_KEY);
 
   context = get_context_from_loader (window);
   gdict_window_set_context (window, context);
@@ -689,7 +685,7 @@ gdict_window_set_source_name (GdictWindow *window,
     gdict_source_chooser_set_current_source (GDICT_SOURCE_CHOOSER (window->source_chooser),
                                              window->source_name);
 
-  g_object_notify (G_OBJECT (window), "source-name");
+  g_object_notify_by_pspec (G_OBJECT (window), gdict_window_properties[PROP_SOURCE_NAME]);
 }
 
 static void
@@ -713,6 +709,12 @@ gdict_window_set_property (GObject      *object,
       break;
     case PROP_SOURCE_NAME:
       gdict_window_set_source_name (window, g_value_get_string (value));
+      break;
+    case PROP_DATABASE:
+      gdict_window_set_database (window, g_value_get_string (value));
+      break;
+    case PROP_STRATEGY:
+      gdict_window_set_strategy (window, g_value_get_string (value));
       break;
     case PROP_WORD:
       gdict_window_set_word (window, g_value_get_string (value), NULL);
@@ -748,6 +750,12 @@ gdict_window_get_property (GObject    *object,
     case PROP_SOURCE_NAME:
       g_value_set_string (value, window->source_name);
       break;
+    case PROP_DATABASE:
+      g_value_set_string (value, window->database);
+      break;
+    case PROP_STRATEGY:
+      g_value_set_string (value, window->strategy);
+      break;
     case PROP_WORD:
       g_value_set_string (value, window->word);
       break;
@@ -767,43 +775,161 @@ gdict_window_get_property (GObject    *object,
 }
 
 static void
+gdict_window_store_state (GdictWindow *window)
+{
+  gchar *state_dir, *state_file;
+  GKeyFile *state_key;
+  gchar *data;
+  gsize data_len;
+  GError *error;
+  const gchar *page_id;
+
+  state_dir = g_build_filename (g_get_user_config_dir (),
+                                "mate",
+                                "mate-dictionary",
+                                NULL);
+
+  if (g_mkdir (state_dir, 0700) == -1)
+    {
+      if (errno != EEXIST)
+        {
+          g_warning ("Unable to create a cache directory: %s", g_strerror (errno));
+          g_free (state_dir);
+          return;
+        }
+    }
+
+  state_file = g_build_filename (state_dir, "window.ini", NULL);
+  state_key = g_key_file_new ();
+
+  /* store the default size of the window and its state, so that
+   * it's picked up by newly created windows
+   */
+  g_key_file_set_integer (state_key, "WindowState", "Width", window->current_width);
+  g_key_file_set_integer (state_key, "WindowState", "Height", window->current_height);
+  g_key_file_set_boolean (state_key, "WindowState", "IsMaximized", window->is_maximized);
+  g_key_file_set_boolean (state_key, "WindowState", "SidebarVisible", window->sidebar_visible);
+  g_key_file_set_boolean (state_key, "WindowState", "StatusbarVisible", window->statusbar_visible);
+  g_key_file_set_integer (state_key, "WindowState", "SidebarWidth", window->sidebar_width);
+
+  page_id = gdict_sidebar_current_page (GDICT_SIDEBAR (window->sidebar));
+  if (page_id == NULL)
+    page_id = GDICT_SIDEBAR_SPELLER_PAGE;
+
+  g_key_file_set_string (state_key, "WindowState", "SidebarPage", page_id);
+
+  error = NULL;
+  data = g_key_file_to_data (state_key, &data_len, &error);
+  if (error != NULL)
+    {
+      g_warning ("Unable to create the window state file: %s", error->message);
+      g_error_free (error);
+    }
+  else
+    {
+      g_file_set_contents (state_file, data, data_len, &error);
+      if (error != NULL)
+        {
+          g_warning ("Unable to write the window state file: %s", error->message);
+          g_error_free (error);
+        }
+
+      g_free (data);
+    }
+
+  g_key_file_free (state_key);
+  g_free (state_file);
+  g_free (state_dir);
+}
+
+static void
+gdict_window_load_state (GdictWindow *window)
+{
+  gchar *state_file;
+  GKeyFile *state_key;
+  gchar *data;
+  gsize data_len;
+  GError *error;
+
+  state_file = g_build_filename (g_get_user_config_dir (),
+                                 "mate",
+                                 "mate-dictionary",
+                                 "window.ini",
+                                 NULL);
+  state_key = g_key_file_new ();
+
+  error = NULL;
+  g_key_file_load_from_file (state_key, state_file, 0, &error);
+  if (error != NULL)
+    {
+      g_warning ("Unable to load the window state file: %s", error->message);
+      g_error_free (error);
+      g_key_file_free (state_key);
+      g_free (state_file);
+      return;
+    }
+
+  window->default_width = g_key_file_get_integer (state_key, "WindowState", "Width", &error);
+  if (error != NULL)
+    {
+      g_clear_error (&error);
+      window->default_width = -1;
+    }
+
+  window->default_height = g_key_file_get_integer (state_key, "WindowState", "Height", &error);
+  if (error != NULL)
+    {
+      g_clear_error (&error);
+      window->default_height = -1;
+    }
+
+  window->is_maximized = g_key_file_get_boolean (state_key, "WindowState", "IsMaximized", &error);
+  if (error != NULL)
+    {
+      g_clear_error (&error);
+      window->is_maximized = FALSE;
+    }
+
+  window->sidebar_visible = g_key_file_get_boolean (state_key, "WindowState", "SidebarVisible", &error);
+  if (error != NULL)
+    {
+      g_clear_error (&error);
+      window->sidebar_visible = FALSE;
+    }
+
+  window->statusbar_visible = g_key_file_get_boolean (state_key, "WindowState", "StatusbarVisible", &error);
+  if (error != NULL)
+    {
+      g_clear_error (&error);
+      window->statusbar_visible = FALSE;
+    }
+
+  window->sidebar_width = g_key_file_get_integer (state_key, "WindowState", "SidebarWidth", &error);
+  if (error != NULL)
+    {
+      g_clear_error (&error);
+      window->sidebar_width = -1;
+    }
+
+  window->sidebar_page = g_key_file_get_string (state_key, "WindowState", "SidebarPage", &error);
+  if (error != NULL)
+    {
+      g_clear_error (&error);
+      window->sidebar_page = NULL;
+    }
+
+  g_key_file_free (state_key);
+  g_free (state_file);
+}
+
+static void
 gdict_window_cmd_file_new (GtkAction   *action,
 			   GdictWindow *window)
 {
   GtkWidget *new_window;
   gchar *word = NULL;
-  
-  /* store the default size of the window and its state, so that
-   * it's picked up by the newly created window
-   */
-  mateconf_client_set_int (window->mateconf_client,
-		        GDICT_MATECONF_WINDOW_WIDTH_KEY,
-		  	window->default_width,
-			NULL);
-  mateconf_client_set_int (window->mateconf_client,
-		  	GDICT_MATECONF_WINDOW_HEIGHT_KEY,
-			window->default_height,
-			NULL);
-  mateconf_client_set_bool (window->mateconf_client,
-		  	 GDICT_MATECONF_WINDOW_IS_MAXIMIZED_KEY,
-			 window->is_maximized,
-			 NULL);
-  mateconf_client_set_bool (window->mateconf_client,
-		  	 GDICT_MATECONF_SIDEBAR_VISIBLE_KEY,
-			 window->sidebar_visible,
-			 NULL);
-  mateconf_client_set_int (window->mateconf_client,
-		  	GDICT_MATECONF_SIDEBAR_WIDTH_KEY,
-			window->sidebar_width,
-			NULL);
-  mateconf_client_set_string (window->mateconf_client,
-		  	   GDICT_MATECONF_SIDEBAR_PAGE_KEY,
-			   gdict_sidebar_current_page (GDICT_SIDEBAR (window->sidebar)),
-			   NULL);
-  mateconf_client_set_bool (window->mateconf_client,
-		  	 GDICT_MATECONF_STATUSBAR_VISIBLE_KEY,
-			 window->statusbar_visible,
-			 NULL);
+
+  gdict_window_store_state (window);
 
   word = gdict_defbox_get_selected_word (GDICT_DEFBOX (window->defbox));
   if (word)
@@ -904,36 +1030,8 @@ gdict_window_cmd_file_close_window (GtkAction   *action,
 {
   g_assert (GDICT_IS_WINDOW (window));
 
-  /* store the default size of the window and its state */
-  mateconf_client_set_int (window->mateconf_client,
-		        GDICT_MATECONF_WINDOW_WIDTH_KEY,
-		  	window->default_width,
-			NULL);
-  mateconf_client_set_int (window->mateconf_client,
-		  	GDICT_MATECONF_WINDOW_HEIGHT_KEY,
-			window->default_height,
-			NULL);
-  mateconf_client_set_bool (window->mateconf_client,
-		  	 GDICT_MATECONF_WINDOW_IS_MAXIMIZED_KEY,
-			 window->is_maximized,
-			 NULL);
-  mateconf_client_set_bool (window->mateconf_client,
-		         GDICT_MATECONF_SIDEBAR_VISIBLE_KEY,
-			 window->sidebar_visible,
-			 NULL);
-  mateconf_client_set_int  (window->mateconf_client,
-		  	 GDICT_MATECONF_SIDEBAR_WIDTH_KEY,
-			 window->sidebar_width,
-			 NULL);
-  mateconf_client_set_string (window->mateconf_client,
-		           GDICT_MATECONF_SIDEBAR_PAGE_KEY,
-			   gdict_sidebar_current_page (GDICT_SIDEBAR (window->sidebar)),
-			   NULL);
-  mateconf_client_set_bool (window->mateconf_client,
-		  	 GDICT_MATECONF_STATUSBAR_VISIBLE_KEY,
-			 window->statusbar_visible,
-			 NULL);
-  
+  gdict_window_store_state (window);
+
   /* if this was called from the uimanager, destroy the widget;
    * otherwise, if it was called from the delete_event, the widget
    * will destroy itself.
@@ -1000,27 +1098,32 @@ gdict_window_cmd_edit_preferences (GtkAction   *action,
 }
 
 static void
-gdict_window_cmd_view_sidebar (GtkAction   *action,
-			       GdictWindow *window)
+gdict_window_cmd_view_sidebar (GtkToggleAction *action,
+			       GdictWindow     *window)
 {
   g_assert (GDICT_IS_WINDOW (window));
 
+  window->sidebar_visible = gtk_toggle_action_get_active (action);
+
   if (window->sidebar_visible)
-    gdict_window_set_sidebar_visible (window, FALSE);
+    gtk_widget_show (window->sidebar_frame);
   else
-    gdict_window_set_sidebar_visible (window, TRUE);
+    gtk_widget_hide (window->sidebar_frame);
 }
 
 static void
-gdict_window_cmd_view_statusbar (GtkAction   *action,
-				 GdictWindow *window)
+gdict_window_cmd_view_statusbar (GtkToggleAction *action,
+				 GdictWindow     *window)
 {
   g_assert (GDICT_IS_WINDOW (window));
 
+  window->statusbar_visible = gtk_toggle_action_get_active (action);
+
   if (window->statusbar_visible)
-    gdict_window_set_statusbar_visible (window, FALSE);
+    gtk_widget_show (window->status);
   else
-    gdict_window_set_statusbar_visible (window, TRUE);
+    gtk_widget_hide (window->status);
+
 }
 
 static void
@@ -1271,62 +1374,6 @@ gdict_window_state_event_cb (GtkWidget           *widget,
 }
 
 static void
-gdict_window_mateconf_notify_cb (MateConfClient *client,
-			      guint        cnxn_id,
-			      MateConfEntry  *entry,
-			      gpointer     user_data)
-{
-  GdictWindow *window;
-
-  window = GDICT_WINDOW (user_data);
-
-  if (strcmp (entry->key, GDICT_MATECONF_PRINT_FONT_KEY) == 0)
-    {
-      if (entry->value && (entry->value->type == MATECONF_VALUE_STRING))
-        gdict_window_set_print_font (window, mateconf_value_get_string (entry->value));
-      else
-        gdict_window_set_print_font (window, GDICT_DEFAULT_PRINT_FONT);
-    }
-  else if (strcmp (entry->key, GDICT_MATECONF_SOURCE_KEY) == 0)
-    {
-      if (entry->value && (entry->value->type == MATECONF_VALUE_STRING))
-        gdict_window_set_source_name (window, mateconf_value_get_string (entry->value));
-      else
-        gdict_window_set_source_name (window, GDICT_DEFAULT_SOURCE_NAME);
-    }
-  else if (strcmp (entry->key, GDICT_MATECONF_DATABASE_KEY) == 0)
-    {
-      if (entry->value && (entry->value->type == MATECONF_VALUE_STRING))
-        gdict_window_set_database (window, mateconf_value_get_string (entry->value));
-      else
-        gdict_window_set_database (window, GDICT_DEFAULT_DATABASE);
-    }
-  else if (strcmp (entry->key, DOCUMENT_FONT_KEY) == 0)
-    {
-      if (entry->value && (entry->value->type == MATECONF_VALUE_STRING))
-        gdict_window_set_defbox_font (window, mateconf_value_get_string (entry->value));
-      else
-        gdict_window_set_defbox_font (window, GDICT_DEFAULT_DEFBOX_FONT);
-    }
-  else if (strcmp (entry->key, GDICT_MATECONF_SIDEBAR_VISIBLE_KEY) == 0)
-    {
-      if (entry->value && (entry->value->type == MATECONF_VALUE_BOOL))
-        gdict_window_set_sidebar_visible (window,
-					  mateconf_value_get_bool (entry->value));
-      else
-        gdict_window_set_sidebar_visible (window, FALSE);
-    }
-  else if (strcmp (entry->key, GDICT_MATECONF_STATUSBAR_VISIBLE_KEY) == 0)
-    {
-      if (entry->value && (entry->value->type == MATECONF_VALUE_BOOL))
-	gdict_window_set_statusbar_visible (window,
-					    mateconf_value_get_bool (entry->value));
-      else
-	gdict_window_set_statusbar_visible (window, FALSE);
-    }
-}
-
-static void
 lookup_word (GdictWindow *window,
              gpointer     dummy)
 {
@@ -1438,6 +1485,9 @@ sidebar_page_changed_cb (GdictSidebar *sidebar,
 
   page_id = gdict_sidebar_current_page (sidebar);
 
+  g_free (window->sidebar_page);
+  window->sidebar_page = g_strdup (page_id);
+
   switch (page_id[0])
     {
     case 's':
@@ -1491,38 +1541,8 @@ gdict_window_link_clicked (GdictDefbox *defbox,
                            GdictWindow *window)
 {
   GtkWidget *new_window;
-  
-  /* store the default size of the window and its state, so that
-   * it's picked up by the newly created window
-   */
-  mateconf_client_set_int (window->mateconf_client,
-		        GDICT_MATECONF_WINDOW_WIDTH_KEY,
-		  	window->default_width,
-			NULL);
-  mateconf_client_set_int (window->mateconf_client,
-		  	GDICT_MATECONF_WINDOW_HEIGHT_KEY,
-			window->default_height,
-			NULL);
-  mateconf_client_set_bool (window->mateconf_client,
-		  	 GDICT_MATECONF_WINDOW_IS_MAXIMIZED_KEY,
-			 window->is_maximized,
-			 NULL);
-  mateconf_client_set_bool (window->mateconf_client,
-		  	 GDICT_MATECONF_SIDEBAR_VISIBLE_KEY,
-			 window->sidebar_visible,
-			 NULL);
-  mateconf_client_set_int (window->mateconf_client,
-		  	GDICT_MATECONF_SIDEBAR_WIDTH_KEY,
-			window->sidebar_width,
-			NULL);
-  mateconf_client_set_string (window->mateconf_client,
-		  	   GDICT_MATECONF_SIDEBAR_PAGE_KEY,
-			   gdict_sidebar_current_page (GDICT_SIDEBAR (window->sidebar)),
-			   NULL);
-  mateconf_client_set_bool (window->mateconf_client,
-		  	 GDICT_MATECONF_STATUSBAR_VISIBLE_KEY,
-			 window->statusbar_visible,
-			 NULL);
+
+  gdict_window_store_state (window);
 
   new_window = gdict_window_new (GDICT_WINDOW_ACTION_LOOKUP,
                                  window->loader,
@@ -1567,8 +1587,8 @@ gdict_window_size_allocate (GtkWidget     *widget,
 
   if (!window->is_maximized)
     {
-      window->default_width = allocation->width;
-      window->default_height = allocation->height;
+      window->current_width = allocation->width;
+      window->current_height = allocation->height;
     }
 
   if (GTK_WIDGET_CLASS (gdict_window_parent_class)->size_allocate)
@@ -1595,17 +1615,6 @@ set_window_default_size (GdictWindow *window)
   /* make sure that the widget is realized */
   gtk_widget_realize (widget);
   
-  /* recover the state from MateConf */
-  width = mateconf_client_get_int (window->mateconf_client,
-		  		GDICT_MATECONF_WINDOW_WIDTH_KEY,
-				NULL);
-  height = mateconf_client_get_int (window->mateconf_client,
-		  		 GDICT_MATECONF_WINDOW_HEIGHT_KEY,
-				 NULL);
-  is_maximized = mateconf_client_get_bool (window->mateconf_client,
-		  			GDICT_MATECONF_WINDOW_IS_MAXIMIZED_KEY,
-					NULL);
-  
   /* XXX - the user wants mate-dictionary to resize itself, so
    * we compute the minimum safe geometry needed for displaying
    * the text returned by a dictionary server, which is based
@@ -1613,10 +1622,11 @@ set_window_default_size (GdictWindow *window)
    * I know, but dictionary servers return pre-formatted text
    * and we can't reformat it ourselves.
    */
-  if (width == -1 || height == -1)
+  if (window->default_width == -1 || window->default_height == -1)
     {
       /* Size based on the font size */
       GtkWidget *defbox = window->defbox;
+      gint width, height;
       
       font_size = pango_font_description_get_size (gtk_widget_get_style (defbox)->font_desc);
       font_size = PANGO_PIXELS (font_size);
@@ -1636,14 +1646,17 @@ set_window_default_size (GdictWindow *window)
       gdk_screen_get_monitor_geometry (screen, monitor_num, &monitor);
       width = MIN (width, monitor.width * 3 / 4);
       height = MIN (height, monitor.height * 3 / 4);
+
+      window->default_width = width;
+      window->default_height = height;
     }
 
   /* Set default size */
   gtk_window_set_default_size (GTK_WINDOW (widget),
-  			       width,
-  			       height);
+                               window->default_width,
+                               window->default_height);
 
-  if (is_maximized)
+  if (window->is_maximized)
     gtk_window_maximize (GTK_WINDOW (widget));
 }
 
@@ -1681,7 +1694,6 @@ gdict_window_constructor (GType                  type,
 {
   GObject *object;
   GdictWindow *window;
-  gint width, height, sidebar_width;
   gboolean is_maximized;
   GtkWidget *hbox;
   GtkWidget *handle;
@@ -1697,11 +1709,14 @@ gdict_window_constructor (GType                  type,
   gboolean statusbar_visible;
   GtkAllocation allocation;
   
-  object = G_OBJECT_CLASS (gdict_window_parent_class)->constructor (type,
-  						   n_construct_properties,
-  						   construct_params);
+  object = G_OBJECT_CLASS (gdict_window_parent_class)->constructor (type, n_construct_properties, construct_params);
   window = GDICT_WINDOW (object);
-  
+
+  window->in_construction = TRUE;
+
+  /* recover the state */
+  gdict_window_load_state (window);
+
   gtk_widget_push_composite_child ();
  
   window->main_box = gtk_vbox_new (FALSE, 0);
@@ -1815,6 +1830,7 @@ gdict_window_constructor (GType                  type,
   g_signal_connect (window->sidebar, "closed",
 		    G_CALLBACK (sidebar_closed_cb),
 		    window);
+  gtk_widget_show (window->sidebar);
   
   /* Speller */
   window->speller = gdict_speller_new ();
@@ -1843,6 +1859,11 @@ gdict_window_constructor (GType                  type,
 			  window->db_chooser);
   gtk_widget_show (window->db_chooser);
 
+  /* bind the database property to the database setting */
+  g_settings_bind (window->settings, GDICT_SETTINGS_DATABASE_KEY,
+                   window, "database",
+                   G_SETTINGS_BIND_DEFAULT);
+
   /* Strategy chooser */
   if (window->context)
     gdict_strategy_chooser_set_context (GDICT_STRATEGY_CHOOSER (window->strat_chooser),
@@ -1856,6 +1877,11 @@ gdict_window_constructor (GType                  type,
                           window->strat_chooser);
   gtk_widget_show (window->strat_chooser);
 
+  /* bind the strategy property to the strategy setting */
+  g_settings_bind (window->settings, GDICT_SETTINGS_STRATEGY_KEY,
+                   window, "strategy",
+                   G_SETTINGS_BIND_DEFAULT);
+
   /* Source chooser */
   window->source_chooser = gdict_source_chooser_new_with_loader (window->loader);
   g_signal_connect (window->source_chooser, "source-activated",
@@ -1867,8 +1893,12 @@ gdict_window_constructor (GType                  type,
                           window->source_chooser);
   gtk_widget_show (window->source_chooser);
 
+  /* bind the source-name property to the source setting */
+  g_settings_bind (window->settings, GDICT_SETTINGS_SOURCE_KEY,
+                   window, "source-name",
+                   G_SETTINGS_BIND_DEFAULT);
+
   gtk_container_add (GTK_CONTAINER (frame2), window->sidebar);
-  gtk_widget_show (window->sidebar);
 
   gtk_paned_pack1 (GTK_PANED (handle), frame1, TRUE, FALSE);
   gtk_paned_pack2 (GTK_PANED (handle), frame2, FALSE, TRUE);
@@ -1878,86 +1908,72 @@ gdict_window_constructor (GType                  type,
 
   gtk_widget_show (window->defbox_frame);
 
+  if (window->sidebar_visible)
+    {
+      GtkAction *action;
+
+      action = gtk_action_group_get_action (window->action_group, "ViewSidebar");
+      gtk_toggle_action_set_active (GTK_TOGGLE_ACTION (action), TRUE);
+      gtk_widget_show (window->sidebar_frame);
+    }
+
   window->status = gtk_statusbar_new ();
-  gtk_statusbar_set_has_resize_grip (GTK_STATUSBAR (window->status), TRUE);
   gtk_box_pack_end (GTK_BOX (window->main_box), window->status, FALSE, FALSE, 0);
-  statusbar_visible = mateconf_client_get_bool (window->mateconf_client,
-		  			     GDICT_MATECONF_STATUSBAR_VISIBLE_KEY,
-					     NULL);
-  gdict_window_set_statusbar_visible (window, statusbar_visible);
+  if (window->statusbar_visible)
+    {
+      GtkAction *action;
+
+      action = gtk_action_group_get_action (window->action_group, "ViewStatusbar");
+      gtk_toggle_action_set_active (GTK_TOGGLE_ACTION (action), TRUE);
+      gtk_widget_show (window->status);
+    }
 
   window->progress = gtk_progress_bar_new ();
   gtk_box_pack_end (GTK_BOX (window->status), window->progress, FALSE, FALSE, 0);
 
-  /* retrieve the font size from mateconf */
-  font_name = gdict_mateconf_get_string_with_default (window->mateconf_client,
-						   DOCUMENT_FONT_KEY,
-						   GDICT_DEFAULT_DEFBOX_FONT);
-
+  /* retrieve the document font size */
+  font_name = g_settings_get_string (window->desktop_settings, DOCUMENT_FONT_KEY);
   gdict_window_set_defbox_font (window, font_name);
   font_desc = pango_font_description_from_string (font_name);
   g_free (font_name);
 
-  sidebar_visible = mateconf_client_get_bool (window->mateconf_client,
-		  			   GDICT_MATECONF_SIDEBAR_VISIBLE_KEY,
-					   NULL);
-  gdict_window_set_sidebar_visible (window, sidebar_visible);
-
-  /* retrieve the window state from mateconf */
-  is_maximized = mateconf_client_get_bool (window->mateconf_client,
-		  			GDICT_MATECONF_WINDOW_IS_MAXIMIZED_KEY,
-					NULL);
-
-  width = mateconf_client_get_int (window->mateconf_client,
-		  		GDICT_MATECONF_WINDOW_WIDTH_KEY,
-				NULL);
-  height = mateconf_client_get_int (window->mateconf_client,
-		  		 GDICT_MATECONF_WINDOW_HEIGHT_KEY,
-				 NULL);
-  sidebar_width = mateconf_client_get_int (window->mateconf_client,
-		  			GDICT_MATECONF_SIDEBAR_WIDTH_KEY,
-					NULL);
-  sidebar_page = mateconf_client_get_string (window->mateconf_client,
-		  			  GDICT_MATECONF_SIDEBAR_PAGE_KEY,
-					  NULL);
+  g_settings_bind (window->desktop_settings, DOCUMENT_FONT_KEY,
+                   window, "defbox-font",
+                   G_SETTINGS_BIND_GET);
 
   /* if the (width, height) tuple is not defined, use the font to
    * calculate the right window geometry
    */
-  if (width == -1 || height == -1)
+  if (window->default_width == -1 || window->default_height == -1)
     {
       gint font_size;
+      gint width, height;
   
       font_size = pango_font_description_get_size (font_desc);
       font_size = PANGO_PIXELS (font_size);
 
       width = MAX (GDICT_WINDOW_COLUMNS * font_size, GDICT_WINDOW_MIN_WIDTH);
       height = MAX (GDICT_WINDOW_ROWS * font_size, GDICT_WINDOW_MIN_HEIGHT);
-    }
-  else
-    {
+
       window->default_width = width;
       window->default_height = height;
     }
 
   pango_font_description_free (font_desc);
   
-  window->is_maximized = is_maximized;
-  
   gtk_window_set_title (GTK_WINDOW (window), _("Dictionary"));
   gtk_window_set_default_size (GTK_WINDOW (window),
-  			       width,
-  			       height);
-  if (is_maximized)
+                               window->default_width,
+                               window->default_height);
+  if (window->is_maximized)
     gtk_window_maximize (GTK_WINDOW (window));
 
   gtk_widget_get_allocation (GTK_WIDGET (window), &allocation);
-  gtk_paned_set_position (GTK_PANED (handle), allocation.width - sidebar_width);
-  if (sidebar_page)
-    {
-      gdict_sidebar_view_page (GDICT_SIDEBAR (window->sidebar), sidebar_page);
-      g_free (sidebar_page);
-    }
+  gtk_paned_set_position (GTK_PANED (handle), allocation.width - window->sidebar_width);
+  if (window->sidebar_page != NULL)
+    gdict_sidebar_view_page (GDICT_SIDEBAR (window->sidebar), window->sidebar_page);
+  else
+    gdict_sidebar_view_page (GDICT_SIDEBAR (window->sidebar), GDICT_SIDEBAR_SPELLER_PAGE);
 
   g_signal_connect (window, "delete-event",
 		    G_CALLBACK (gdict_window_delete_event_cb),
@@ -1972,7 +1988,9 @@ gdict_window_constructor (GType                  type,
   gtk_widget_grab_focus (window->entry);
 
   gtk_widget_pop_composite_child ();
-  
+
+  window->in_construction = FALSE;
+
   return object;
 }
 
@@ -1982,67 +2000,74 @@ gdict_window_class_init (GdictWindowClass *klass)
   GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
   GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
 
-  gobject_class->finalize = gdict_window_finalize;
-  gobject_class->dispose = gdict_window_dispose;
-  gobject_class->set_property = gdict_window_set_property;
-  gobject_class->get_property = gdict_window_get_property;
-  gobject_class->constructor = gdict_window_constructor;
+  gdict_window_properties[PROP_ACTION] =
+    g_param_spec_enum ("action",
+                       "Action",
+                       "The default action performed by the window",
+                       GDICT_TYPE_WINDOW_ACTION,
+                       GDICT_WINDOW_ACTION_CLEAR,
+                       G_PARAM_READWRITE |
+                       G_PARAM_STATIC_STRINGS |
+                       G_PARAM_CONSTRUCT_ONLY);
 
-  widget_class->style_set = gdict_window_style_set;
-  widget_class->size_allocate = gdict_window_size_allocate;
-  
-  g_object_class_install_property (gobject_class,
-  				   PROP_ACTION,
-				   g_param_spec_enum ("action",
-				   		      "Action",
-						      "The default action performed by the window",
-						      GDICT_TYPE_WINDOW_ACTION,
-						      GDICT_WINDOW_ACTION_CLEAR,
-						      (G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY)));
-  g_object_class_install_property (gobject_class,
-  				   PROP_SOURCE_LOADER,
-  				   g_param_spec_object ("source-loader",
-  							"Source Loader",
-  							"The GdictSourceLoader to be used to load dictionary sources",
-  							GDICT_TYPE_SOURCE_LOADER,
-  							(G_PARAM_READABLE | G_PARAM_WRITABLE | G_PARAM_CONSTRUCT_ONLY)));
-  g_object_class_install_property (gobject_class,
-		  		   PROP_SOURCE_NAME,
-				   g_param_spec_string ("source-name",
-					   		"Source Name",
-							"The name of the GdictSource to be used",
-							GDICT_DEFAULT_SOURCE_NAME,
-							(G_PARAM_READABLE | G_PARAM_WRITABLE)));
-  g_object_class_install_property (gobject_class,
-  				   PROP_PRINT_FONT,
-  				   g_param_spec_string ("print-font",
-  				   			"Print Font",
-  				   			"The font name to be used when printing",
-  				   			GDICT_DEFAULT_PRINT_FONT,
-  				   			(G_PARAM_READABLE | G_PARAM_WRITABLE)));
-  g_object_class_install_property (gobject_class,
-		  		   PROP_DEFBOX_FONT,
-				   g_param_spec_string ("defbox-font",
-					   		"Defbox Font",
-							"The font name to be used by the defbox widget",
-							GDICT_DEFAULT_DEFBOX_FONT,
-							(G_PARAM_READABLE | G_PARAM_WRITABLE)));
-  g_object_class_install_property (gobject_class,
-		  		   PROP_WORD,
-				   g_param_spec_string ("word",
-					   		"Word",
-							"The word to search",
-							NULL,
-							(G_PARAM_READABLE | G_PARAM_WRITABLE)));
-  g_object_class_install_property (gobject_class,
-  				   PROP_WINDOW_ID,
-  				   g_param_spec_uint ("window-id",
-  				   		      "Window ID",
-  				   		      "The unique identifier for this window",
-  				   		      0,
-  				   		      G_MAXUINT,
-  				   		      0,
-  				   		      G_PARAM_READABLE));
+  gdict_window_properties[PROP_SOURCE_LOADER] =
+    g_param_spec_object ("source-loader",
+                         "Source Loader",
+                         "The GdictSourceLoader to be used to load dictionary sources",
+                         GDICT_TYPE_SOURCE_LOADER,
+                         G_PARAM_READWRITE |
+                         G_PARAM_STATIC_STRINGS |
+                         G_PARAM_CONSTRUCT_ONLY);
+
+  gdict_window_properties[PROP_SOURCE_NAME] =
+    g_param_spec_string ("source-name",
+                         "Source Name",
+                         "The name of the GdictSource to be used",
+                         GDICT_DEFAULT_SOURCE_NAME,
+                         G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS);
+
+  gdict_window_properties[PROP_DATABASE] =
+    g_param_spec_string ("database",
+                         "Database",
+                         "The name of the database to search",
+                         GDICT_DEFAULT_DATABASE,
+                         G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS);
+
+  gdict_window_properties[PROP_STRATEGY] =
+    g_param_spec_string ("strategy",
+                         "Strategy",
+                         "The name of the strategy",
+                         GDICT_DEFAULT_STRATEGY,
+                         G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS);
+
+  gdict_window_properties[PROP_PRINT_FONT] =
+    g_param_spec_string ("print-font",
+                         "Print Font",
+                         "The font name to be used when printing",
+                         GDICT_DEFAULT_PRINT_FONT,
+                         G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS);
+
+  gdict_window_properties[PROP_DEFBOX_FONT] =
+    g_param_spec_string ("defbox-font",
+                         "Defbox Font",
+                         "The font name to be used by the defbox widget",
+                         GDICT_DEFAULT_DEFBOX_FONT,
+                         G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS);
+
+  gdict_window_properties[PROP_WORD] =
+    g_param_spec_string ("word",
+                         "Word",
+                         "The word to search",
+                         NULL,
+                         G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS);
+
+  gdict_window_properties[PROP_WINDOW_ID] =
+    g_param_spec_uint ("window-id",
+                       "Window ID",
+                       "The unique identifier for this window",
+                       0, G_MAXUINT,
+                       0,
+                       G_PARAM_READABLE | G_PARAM_STATIC_STRINGS);
 
   gdict_window_signals[CREATED] =
     g_signal_new ("created",
@@ -2053,58 +2078,32 @@ gdict_window_class_init (GdictWindowClass *klass)
                   g_cclosure_marshal_VOID__OBJECT,
                   G_TYPE_NONE, 1,
                   GDICT_TYPE_WINDOW);
+
+  gobject_class->finalize = gdict_window_finalize;
+  gobject_class->dispose = gdict_window_dispose;
+  gobject_class->set_property = gdict_window_set_property;
+  gobject_class->get_property = gdict_window_get_property;
+  gobject_class->constructor = gdict_window_constructor;
+
+  g_object_class_install_properties (gobject_class,
+                                     LAST_PROP,
+                                     gdict_window_properties);
+
+  widget_class->style_set = gdict_window_style_set;
+  widget_class->size_allocate = gdict_window_size_allocate;
 }
 
 static void
 gdict_window_init (GdictWindow *window)
 {
-  GError *mateconf_error;
-
   window->action = GDICT_WINDOW_ACTION_CLEAR;
   
   window->loader = NULL;
   window->context = NULL;
 
-  window->mateconf_client = mateconf_client_get_default ();
+  window->settings = g_settings_new (GDICT_SETTINGS_SCHEMA);
+  window->desktop_settings = g_settings_new (DESKTOP_SETTINGS_SCHEMA);
 
-  mateconf_error = NULL;
-  mateconf_client_add_dir (window->mateconf_client,
-  			GDICT_MATECONF_DIR,
-  			MATECONF_CLIENT_PRELOAD_NONE,
-  			&mateconf_error);
-  if (mateconf_error)
-    {
-      gdict_show_gerror_dialog (NULL,
-		                _("Unable to connect to MateConf"),
-		                mateconf_error);
-    }
-
-  window->notify_id = mateconf_client_notify_add (window->mateconf_client,
-  					       GDICT_MATECONF_DIR,
-  					       gdict_window_mateconf_notify_cb,
-  					       window,
-  					       NULL,
-  					       &mateconf_error);
-  if (mateconf_error)
-    {
-      gdict_show_gerror_dialog (NULL,
-		                _("Unable to get notification for preferences"),
-		                mateconf_error);
-    }
-
-  window->font_notify_id = mateconf_client_notify_add (window->mateconf_client,
-		  				    DOCUMENT_FONT_KEY,
-						    gdict_window_mateconf_notify_cb,
-						    window,
-						    NULL,
-						    &mateconf_error);
-  if (mateconf_error)
-    {
-      gdict_show_gerror_dialog (NULL,
-		                _("Unable to get notification for the document font"),
-		                mateconf_error);
-    }
-  
   window->word = NULL;
   window->source_name = NULL;
   window->print_font = NULL;
@@ -2116,6 +2115,9 @@ gdict_window_init (GdictWindow *window)
   window->default_width = -1;
   window->default_height = -1;
   window->is_maximized = FALSE;
+  window->sidebar_visible = FALSE;
+  window->statusbar_visible = FALSE;
+  window->sidebar_page = NULL;
   
   window->window_id = (gulong) time (NULL);
 
@@ -2153,6 +2155,7 @@ gdict_window_new (GdictWindowAction  action,
 	  gtk_entry_set_text (GTK_ENTRY (window->entry), word);
 	  gdict_window_set_word (window, word, NULL);
 	  break;
+
 	case GDICT_WINDOW_ACTION_MATCH:
           {
           GdictSource *source;
@@ -2182,9 +2185,12 @@ gdict_window_new (GdictWindowAction  action,
       
           gdict_speller_match (GDICT_SPELLER (window->speller), word);
           }
+          break;
+
 	case GDICT_WINDOW_ACTION_CLEAR:
           gdict_defbox_clear (GDICT_DEFBOX (window->defbox));
 	  break;
+
 	default:
 	  g_assert_not_reached ();
 	  break;

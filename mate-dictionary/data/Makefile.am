@@ -7,7 +7,7 @@ gdictapp_in_files = mate-dictionary.desktop.in
 gdictapp_DATA = $(gdictapp_in_files:.desktop.in=.desktop)
 
 $(gdictapp_in_files): $(gdictapp_in_files:.desktop.in=.desktop.in.in)
-	@sed -e "s|\@VERSION\@|@VERSION@|" $< > $@
+	$(AM_V_GEN)sed -e "s|\@VERSION\@|@VERSION@|" $< > $@
 
 @INTLTOOL_DESKTOP_RULE@
 
@@ -22,8 +22,10 @@ dictsource_DATA = $(dictsource_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
 builderdir = $(datadir)/mate-dictionary
-builder_DATA = mate-dictionary-preferences.ui \
-	mate-dictionary-source.ui
+builder_DATA = \
+	mate-dictionary-preferences.ui	\
+	mate-dictionary-source.ui	\
+	$(NULL)
 
 uidir = $(datadir)/mate-dictionary
 ui_DATA = mate-dictionary-ui.xml
@@ -39,27 +41,29 @@ server_in_files = MATE_DictionaryApplet.server.in
 server_DATA = $(server_in_files:.server.in=.server)
 
 $(server_in_files): $(server_in_files:.server.in=.server.in.in)
-	@sed \
-		-e "s|\@VERSION\@|@VERSION@|" \
-		-e "s|\@LIBEXECDIR\@|$(libexecdir)|" \
+	$(AM_V_GEN)sed 					\
+		-e "s|\@VERSION\@|@VERSION@|" 		\
+		-e "s|\@LIBEXECDIR\@|$(libexecdir)|" 	\
 	$< > $@
-
 
 @INTLTOOL_SERVER_RULE@
 
 endif # BUILD_GDICT_APPLET
 
-schemadir = $(MATECONF_SCHEMA_FILE_DIR)
-schemas_in_file = mate-dictionary.schemas.in
-schema_DATA = $(schemas_in_file:.schemas.in=.schemas)
-@INTLTOOL_SCHEMAS_RULE@
+gsettingsschema_in_files = org.mate.dictionary.gschema.xml.in
+gsettings_SCHEMAS = $(gsettingsschema_in_files:.xml.in=.xml)
+@INTLTOOL_XML_NOMERGE_RULE@
+@GSETTINGS_RULES@
+
+convertdir = $(datadir)/MateConf/gsettings
+convert_DATA = mate-dictionary.convert
 
 EXTRA_DIST = \
 	MATE_DictionaryApplet.server.in.in \
 	mate-dictionary.desktop.in.in \
 	$(dictsource_in_files) \
 	$(man_MANS) \
-	$(schemas_in_file) \
+	$(gsettingsschema_in_files) \
 	$(builder_DATA) \
 	$(ui_DATA) \
 	$(appletui_DATA) \
@@ -71,14 +75,5 @@ CLEANFILES = \
 	$(server_DATA) \
 	$(gdictapp_in_files) \
 	$(gdictapp_DATA) \
-	$(schema_DATA) \
+	$(gsettings_SCHEMAS) \
 	$(NULL)
-
-if MATECONF_SCHEMAS_INSTALL
-install-data-local:
-	if test -z "$(DESTDIR)" ; then \
-		MATECONF_CONFIG_SOURCE=$(MATECONF_SCHEMA_CONFIG_SOURCE) $(MATECONFTOOL) --makefile-install-rule $(schema_DATA) ; \
-	fi
-else
-install-data-local:
-endif

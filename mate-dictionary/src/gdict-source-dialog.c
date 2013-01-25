@@ -34,7 +34,7 @@
 #endif
 
 #include <glib/gi18n.h>
-#include <mateconf/mateconf-client.h>
+#include <gio/gio.h>
 
 #include "gdict-source-dialog.h"
 #include "gdict-common.h"
@@ -51,9 +51,8 @@ struct _GdictSourceDialog
 
   GtkBuilder *builder; 
 
-  MateConfClient *mateconf_client;
-  guint notify_id;
-  
+  GSettings *settings;
+
   GdictSourceLoader *loader;
   GdictSource *source;
   gchar *source_name;
@@ -499,8 +498,8 @@ gdict_source_dialog_finalize (GObject *object)
 {
   GdictSourceDialog *dialog = GDICT_SOURCE_DIALOG (object);
 
-  if (dialog->mateconf_client)
-    g_object_unref (dialog->mateconf_client);
+  if (dialog->settings)
+    g_object_unref (dialog->settings);
   
   if (dialog->builder)
     g_object_unref (dialog->builder);
@@ -718,8 +717,6 @@ gdict_source_dialog_init (GdictSourceDialog *dialog)
 {
   gtk_widget_set_size_request (GTK_WIDGET (dialog), 400, 300);
   gtk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
-  
-  gtk_dialog_set_has_separator (GTK_DIALOG (dialog), FALSE);
 
   dialog->transport = GDICT_SOURCE_TRANSPORT_INVALID;
 

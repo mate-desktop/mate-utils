@@ -23,9 +23,9 @@
 #ifndef __GDICT_WINDOW_H__
 #define __GDICT_WINDOW_H__
 
+#include <gio/gio.h>
 #include <gdk-pixbuf/gdk-pixbuf.h>
 #include <gtk/gtk.h>
-#include <mateconf/mateconf-client.h>
 #include <libgdict/gdict.h>
 
 G_BEGIN_DECLS
@@ -94,20 +94,24 @@ struct _GdictWindow
   gchar *strategy;
   gchar *print_font;
   gchar *defbox_font;
-  
-  MateConfClient *mateconf_client;
-  guint notify_id;
-  guint font_notify_id;
+
+  GSettings *settings;
+  GSettings *desktop_settings;
 
   GdkCursor *busy_cursor;
 
   gint default_width;
   gint default_height;
+  gint current_width;
+  gint current_height;
   gint sidebar_width;
-  
+
+  gchar *sidebar_page;
+
   guint is_maximized      : 1;
   guint sidebar_visible   : 1;
   guint statusbar_visible : 1;
+  guint in_construction   : 1;
   
   gulong window_id;
 };

@@ -23,8 +23,8 @@
 #ifndef __GDICT_APP_H__
 #define __GDICT_APP_H__
 
+#include <gio/gio.h>
 #include <gtk/gtk.h>
-#include <mateconf/mateconf-client.h>
 #include <libgdict/gdict.h>
 
 #include "gdict-window.h"
@@ -43,7 +43,7 @@ struct _GdictApp
 {
   GObject parent_instance;
 
-  MateConfClient *mateconf_client;
+  GSettings *settings;
 
   GSList *lookup_words;
   GSList *match_words;

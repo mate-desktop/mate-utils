@@ -35,15 +35,21 @@ mate_dictionary_SOURCES = \
 	gdict-window.h 		\
 	main.c			\
 	$(NULL)
+
 mate_dictionary_CFLAGS = \
 	-I$(top_builddir)/mate-dictionary \
 	-I$(top_srcdir)/mate-dictionary \
-	$(MATE_UTILS_CFLAGS) \
+	$(GLIB_CFLAGS) \
+	$(GIO_CFLAGS) \
+	$(GTK_CFLAGS) \
 	$(NULL)
+
 mate_dictionary_LDADD = \
 	-lm			\
 	$(top_builddir)/mate-dictionary/libgdict/libmatedict.la \
-	$(MATE_UTILS_LIBS) \
+	$(GLIB_LIBS) \
+	$(GIO_LIBS) \
+	$(GTK_LIBS) \
 	$(NULL)
 
 if BUILD_GDICT_APPLET
@@ -66,17 +72,23 @@ mate_dictionary_applet_SOURCES = \
 	gdict-source-dialog.c 	\
 	gdict-source-dialog.h 	\
 	$(NULL)
+
 mate_dictionary_applet_CFLAGS = \
 	-I$(top_builddir)/mate-dictionary \
 	-I$(top_srcdir)/mate-dictionary \
-	$(MATE_UTILS_CFLAGS) \
 	$(APPLET_CFLAGS) \
+	$(GLIB_CFLAGS) \
+	$(GIO_CFLAGS) \
+	$(GTK_CFLAGS) \
 	$(NULL)
+
 mate_dictionary_applet_LDADD = \
 	-lm			\
 	$(top_builddir)/mate-dictionary/libgdict/libmatedict.la \
-	$(MATE_UTILS_LIBS) \
 	$(APPLET_LIBS) \
+	$(GLIB_LIBS) \
+	$(GIO_LIBS) \
+	$(GTK_LIBS) \
 	$(NULL)
 
 endif # BUILD_GDICT_APPLET
