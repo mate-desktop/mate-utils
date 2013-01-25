@@ -77,13 +77,6 @@ LIBGTOP_REQUIRED=2.12.0
 LIBCANBERRA_GTK_REQUIRED=0.4
 
 # common checks
-PKG_CHECK_MODULES(MATE_UTILS, glib-2.0 >= $GLIB_REQUIRED dnl
-                               gio-2.0 >= $GIO_REQUIRED   dnl
-                               mateconf-2.0                  dnl
-                               gtk+-2.0 >= $GTK_REQUIRED)
-AC_SUBST(MATE_UTILS_CFLAGS)
-AC_SUBST(MATE_UTILS_LIBS)
-
 PKG_CHECK_MODULES(GLIB, glib-2.0 >= $GLIB_REQUIRED)
 AC_SUBST(GLIB_CFLAGS)
 AC_SUBST(GLIB_LIBS)
@@ -143,14 +136,6 @@ PKG_CHECK_MODULES(XSHAPE, xext x11,
                   [AC_CHECK_HEADERS(X11/extensions/shape.h, XSHAPE_LIBS="-lXext -lX11")])
 AC_SUBST(XSHAPE_LIBS)
 
-# for anything which calls mateconftool-2 correctly
-AC_PATH_PROG(MATECONFTOOL, [mateconftool-2], [no])
-AS_IF([test "x$MATECONFTOOL" = "xno"],
-      [AC_MSG_ERROR([mateconftool-2 executable not found in your path - should be installed with MateConf])]
-)
-
-AM_MATECONF_SOURCE_2
-
 AC_ARG_ENABLE([gdict-applet],
                [AC_HELP_STRING([--enable-gdict-applet=@<:@yes/no@:>@],
                                [Whether to build the Dictionary mate-panel applet])],
@@ -161,7 +146,7 @@ AS_CASE([$enable_gdict_applet],
         [yes],
         [
           # Gdict applet checks
-          PKG_CHECK_MODULES(APPLET, libmatepanelapplet-4.0 >= $LIBMATE_PANEL_APPLET_REQUIRED)
+          PKG_CHECK_MODULES(APPLET, libmatepanelapplet-2.0 >= $LIBMATE_PANEL_APPLET_REQUIRED)
           AC_SUBST(APPLET_LIBS)
           AC_SUBST(APPLET_CFLAGS)
         ],
