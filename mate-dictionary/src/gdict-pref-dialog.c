@@ -78,6 +78,7 @@ struct _GdictPrefDialog
   GtkWidget *sources_view;
   GtkWidget *sources_add;
   GtkWidget *sources_remove;
+  GtkWidget *sources_edit;
   
   gchar *print_font;
   GtkWidget *font_button;
@@ -400,6 +401,46 @@ out:
 }
 
 static void
+source_edit_clicked_cb (GtkButton       *button,
+                        GdictPrefDialog *dialog)
+{
+  GtkTreeSelection *selection;
+  GtkTreeModel *model;
+  GtkTreeIter iter;
+  gboolean is_selected;
+  gchar *name, *description;
+
+  selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (dialog->sources_view));
+  if (!selection)
+    return;
+
+  is_selected = gtk_tree_selection_get_selected (selection, &model, &iter);
+  if (!is_selected)
+    return;
+
+  gtk_tree_model_get (model, &iter, SOURCES_NAME_COLUMN, &name, -1);
+  if (!name)
+    return;
+  else
+    {
+      GtkWidget *edit_dialog;
+
+      edit_dialog = gdict_source_dialog_new (GTK_WINDOW (dialog),
+                                             _("Edit Dictionary Source"),
+                                             GDICT_SOURCE_DIALOG_EDIT,
+                                             dialog->loader,
+                                             name);
+      gtk_dialog_run (GTK_DIALOG (edit_dialog));
+
+      gtk_widget_destroy (edit_dialog);
+    }
+
+  g_free (name);
+
+  update_sources_view (dialog);
+}
+
+static void
 set_source_loader (GdictPrefDialog   *dialog,
 		   GdictSourceLoader *loader)
 {
@@ -608,6 +649,12 @@ gdict_pref_dialog_init (GdictPrefDialog *dialog)
   g_signal_connect (dialog->sources_remove, "clicked",
   		    G_CALLBACK (source_remove_clicked_cb), dialog);
 
+  dialog->sources_edit = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "edit_button"));
+  gtk_widget_set_tooltip_text (dialog->sources_edit,
+                               _("Edit the currently selected dictionary source"));
+  g_signal_connect (dialog->sources_edit, "clicked",
+                    G_CALLBACK (source_edit_clicked_cb), dialog);
+
   font = g_settings_get_string (dialog->settings, GDICT_SETTINGS_PRINT_FONT_KEY);
   dialog->font_button = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "print_font_button"));
   gtk_font_button_set_font_name (GTK_FONT_BUTTON (dialog->font_button), font);
@@ -638,12 +685,12 @@ gdict_show_pref_dialog (GtkWidget         *parent,
   g_return_if_fail (GTK_IS_WIDGET (parent));
   g_return_if_fail (GDICT_IS_SOURCE_LOADER (loader));
   
-  if (parent)
+  if (parent != NULL)
     dialog = g_object_get_data (G_OBJECT (parent), "gdict-pref-dialog");
   else
     dialog = global_dialog;
   
-  if (!dialog)
+  if (dialog == NULL)
     {
       dialog = g_object_new (GDICT_TYPE_PREF_DIALOG,
                              "source-loader", loader,
@@ -656,7 +703,7 @@ gdict_show_pref_dialog (GtkWidget         *parent,
                         G_CALLBACK (gtk_widget_hide_on_delete),
                         NULL);
       
-      if (parent && GTK_IS_WINDOW (parent))
+      if (parent != NULL && GTK_IS_WINDOW (parent))
         {
           gtk_window_set_transient_for (GTK_WINDOW (dialog), GTK_WINDOW (parent));
           gtk_window_set_destroy_with_parent (GTK_WINDOW (dialog), TRUE);
@@ -668,7 +715,6 @@ gdict_show_pref_dialog (GtkWidget         *parent,
         global_dialog = dialog;
     }
 
-  gtk_window_set_screen (GTK_WINDOW (dialog),
- 			 gtk_widget_get_screen (parent));
-  gtk_window_present (GTK_WINDOW (dialog));  
+  gtk_window_set_screen (GTK_WINDOW (dialog), gtk_widget_get_screen (parent));
+  gtk_window_present (GTK_WINDOW (dialog));
 }
