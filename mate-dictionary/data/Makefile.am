@@ -32,21 +32,28 @@ ui_DATA = mate-dictionary-ui.xml
 
 if BUILD_GDICT_APPLET
 
-# applet menu definition
-appletuidir = $(datadir)/mate-2.0/ui
-appletui_DATA = MATE_DictionaryApplet.xml
+# applet file, dbus service, and menu definition
+appletdir = $(datadir)/mate-panel/applets
+applet_in_files = org.mate.DictionaryApplet.mate-panel-applet.in
+applet_DATA = $(applet_in_files:.mate-panel-applet.in=.mate-panel-applet)
 
-serverdir = $(libdir)/matecomponent/servers
-server_in_files = MATE_DictionaryApplet.server.in
-server_DATA = $(server_in_files:.server.in=.server)
+$(applet_in_files): $(applet_in_files).in Makefile
+	$(AM_V_GEN)sed \
+		-e "s|\@LIBEXECDIR\@|$(libexecdir)|" \
+		$< > $@
 
-$(server_in_files): $(server_in_files:.server.in=.server.in.in)
-	$(AM_V_GEN)sed 					\
-		-e "s|\@VERSION\@|@VERSION@|" 		\
-		-e "s|\@LIBEXECDIR\@|$(libexecdir)|" 	\
-	$< > $@
+%.mate-panel-applet: %.mate-panel-applet.in $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache
 
-@INTLTOOL_SERVER_RULE@
+servicedir = $(datadir)/dbus-1/services
+service_in_files = org.mate.panel.applet.DictionaryAppletFactory.service.in
+service_DATA = $(service_in_files:.service.in=.service)
+
+org.mate.panel.applet.DictionaryAppletFactory.service: $(service_in_files)
+	$(AM_V_GEN)sed \
+		-e "s|\@LIBEXECDIR\@|$(libexecdir)|" \
+		$< > $@
+
+ui_DATA += dictionary-applet-menu.xml
 
 endif # BUILD_GDICT_APPLET
 
@@ -59,20 +66,21 @@ convertdir = $(datadir)/MateConf/gsettings
 convert_DATA = mate-dictionary.convert
 
 EXTRA_DIST = \
-	MATE_DictionaryApplet.server.in.in \
+	org.mate.DictionaryApplet.mate-panel-applet.in.in \
+	$(service_in_files) \
 	mate-dictionary.desktop.in.in \
 	$(dictsource_in_files) \
 	$(man_MANS) \
 	$(gsettingsschema_in_files) \
 	$(builder_DATA) \
 	$(ui_DATA) \
-	$(appletui_DATA) \
 	$(NULL)
 
 CLEANFILES = \
+	$(applet_DATA) \
+	$(applet_DATA).in \
+	$(service_DATA) \
 	$(dictsource_DATA) \
-	$(server_in_files) \
-	$(server_DATA) \
 	$(gdictapp_in_files) \
 	$(gdictapp_DATA) \
 	$(gsettings_SCHEMAS) \
