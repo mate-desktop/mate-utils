@@ -5,7 +5,6 @@ INCLUDES = \
 	-DSYSCONFDIR=\""$(sysconfdir)"\"		\
 	-DLIBDIR=\""$(libdir)"\"			\
 	-DDATADIR=\""$(datadir)"\" 			\
-	-DUIDATADIR=\""$(datadir)/mate-2.0/ui"\" 	\
 	-DPKGDATADIR=\""$(datadir)/mate-dictionary"\" 	\
 	-DMATELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
 	$(NULL)

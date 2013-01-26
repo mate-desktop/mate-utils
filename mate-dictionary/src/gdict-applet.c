@@ -78,6 +78,8 @@ struct _GdictAppletPrivate
   GtkWidget *frame;
   GtkWidget *defbox;
 
+  GtkActionGroup* context_menu_action_group;
+
   guint idle_draw_id;
 
   GdkPixbuf *icon;
@@ -254,24 +256,19 @@ static void
 gdict_applet_set_menu_items_sensitive (GdictApplet *applet,
 				       gboolean     is_sensitive)
 {
-  MateComponentUIComponent *popup_component;
-  
-  popup_component = mate_panel_applet_get_popup_component (MATE_PANEL_APPLET (applet));
-  if (!MATECOMPONENT_IS_UI_COMPONENT (popup_component))
-    return;
+  GtkAction *action;
 
-  matecomponent_ui_component_set_prop (popup_component,
-		  		"/commands/Clear",
-				"sensitive", (is_sensitive ? "1" : "0"),
-				NULL);
-  matecomponent_ui_component_set_prop (popup_component,
-		  		"/commands/Print",
-				"sensitive", (is_sensitive ? "1" : "0"),
-				NULL);
-  matecomponent_ui_component_set_prop (popup_component,
-		  		"/commands/Save",
-				"sensitive", (is_sensitive ? "1" : "0"),
-				NULL);
+  action = gtk_action_group_get_action (applet->priv->context_menu_action_group,
+                                        "DictionaryClear");
+  gtk_action_set_sensitive (action, is_sensitive);
+  action = gtk_action_group_get_action (applet->priv->context_menu_action_group,
+                                        "DictionaryPrint");
+  gtk_action_set_sensitive (action, is_sensitive);
+  action = gtk_action_group_get_action (applet->priv->context_menu_action_group,
+                                        "DictionarySave");
+  gtk_action_set_sensitive (action, is_sensitive);
+
+	return;
 }
 
 static gboolean
@@ -670,9 +667,8 @@ gdict_applet_error_cb (GdictContext *context,
 }
 
 static void
-gdict_applet_cmd_lookup (MateComponentUIComponent *component,
-			 GdictApplet       *applet,
-			 const gchar       *cname)
+gdict_applet_cmd_lookup (GtkAction *action,
+			 GdictApplet       *applet)
 {
   GdictAppletPrivate *priv = applet->priv;
   gchar *text = NULL;;
@@ -691,25 +687,29 @@ gdict_applet_cmd_lookup (MateComponentUIComponent *component,
 }
 
 static void
-gdict_applet_cmd_clear (MateComponentUIComponent *component,
-			GdictApplet       *applet,
-			const gchar       *cname)
+gdict_applet_cmd_clear (GtkAction *action,
+			GdictApplet       *applet)
 {
   clear_cb (NULL, applet);
 }
 
 static void
-gdict_applet_cmd_print (MateComponentUIComponent *component,
-			GdictApplet       *applet,
-			const gchar       *cname)
+gdict_applet_cmd_print (GtkAction *action,
+			GdictApplet       *applet)
 {
   print_cb (NULL, applet);
 }
 
 static void
-gdict_applet_cmd_preferences (MateComponentUIComponent *component,
-			      GdictApplet       *applet,
-			      const gchar       *cname)
+gdict_applet_cmd_save (GtkAction *action,
+			GdictApplet       *applet)
+{
+  save_cb (NULL, applet);
+}
+
+static void
+gdict_applet_cmd_preferences (GtkAction *action,
+			      GdictApplet       *applet)
 {
   gdict_show_pref_dialog (GTK_WIDGET (applet),
   			  _("Dictionary Preferences"),
@@ -717,17 +717,15 @@ gdict_applet_cmd_preferences (MateComponentUIComponent *component,
 }
 
 static void
-gdict_applet_cmd_about (MateComponentUIComponent *component,
-			GdictApplet       *applet,
-			const gchar       *cname)
+gdict_applet_cmd_about (GtkAction *action,
+			GdictApplet       *applet)
 {
   gdict_show_about_dialog (GTK_WIDGET (applet));
 }
 
 static void
-gdict_applet_cmd_help (MateComponentUIComponent *component,
-		       GdictApplet       *applet,
-		       const gchar       *cname)
+gdict_applet_cmd_help (GtkAction *action,
+		       GdictApplet       *applet)
 {
   GError *err = NULL;
 
@@ -1057,6 +1055,12 @@ gdict_applet_finalize (GObject *object)
   if (priv->idle_draw_id)
     g_source_remove (priv->idle_draw_id);
 
+  if (priv->context_menu_action_group)
+    {
+      g_object_unref (priv->context_menu_action_group);
+      priv->context_menu_action_group = NULL;
+    }
+
   if (priv->settings != NULL)
     {
       g_object_unref (priv->settings);
@@ -1186,18 +1190,28 @@ gdict_applet_init (GdictApplet *applet)
 }
 
 #ifndef GDICT_APPLET_STAND_ALONE
-static const MateComponentUIVerb gdict_applet_menu_verbs[] =
-{
-  MATECOMPONENT_UI_UNSAFE_VERB ("LookUp", gdict_applet_cmd_lookup),
-  
-  MATECOMPONENT_UI_UNSAFE_VERB ("Clear", gdict_applet_cmd_clear),
-  MATECOMPONENT_UI_UNSAFE_VERB ("Print", gdict_applet_cmd_print),
-  
-  MATECOMPONENT_UI_UNSAFE_VERB ("Preferences", gdict_applet_cmd_preferences),
-  MATECOMPONENT_UI_UNSAFE_VERB ("Help", gdict_applet_cmd_help),
-  MATECOMPONENT_UI_UNSAFE_VERB ("About", gdict_applet_cmd_about),
-
-  MATECOMPONENT_UI_VERB_END
+static const GtkActionEntry gdict_applet_menu_actions[] = {
+  {"DictionaryLookup", GTK_STOCK_FIND, N_("_Look Up Selected Text"),
+    NULL, NULL,
+    G_CALLBACK (gdict_applet_cmd_lookup) },
+  {"DictionaryClear", GTK_STOCK_CLEAR, N_("Cl_ear"),
+    NULL, NULL,
+    G_CALLBACK (gdict_applet_cmd_clear) },
+  {"DictionaryPrint", GTK_STOCK_PRINT, N_("_Print"),
+    NULL, NULL,
+    G_CALLBACK (gdict_applet_cmd_print) },
+  {"DictionarySave", GTK_STOCK_SAVE, N_("_Save"),
+    NULL, NULL,
+    G_CALLBACK (gdict_applet_cmd_save) },
+  {"DictionaryPreferences", GTK_STOCK_PREFERENCES, N_("Preferences"),
+    NULL, NULL,
+    G_CALLBACK (gdict_applet_cmd_preferences) },
+  {"DictionaryHelp", GTK_STOCK_HELP, N_("_Help"),
+    NULL, NULL,
+    G_CALLBACK (gdict_applet_cmd_help) },
+  {"DictionaryAbout", GTK_STOCK_ABOUT, N_("_About"),
+    NULL, NULL,
+    G_CALLBACK (gdict_applet_cmd_about) },
 };
 
 static gboolean
@@ -1206,22 +1220,29 @@ gdict_applet_factory (MatePanelApplet *applet,
 		      gpointer     data)
 {
   gboolean retval = FALSE;
+  gchar *ui_path;
+  GdictApplet *dictionary_applet = GDICT_APPLET (applet);
+  GdictAppletPrivate *priv = dictionary_applet->priv;
 
-  if (((!strcmp (iid, "OAFIID:MATE_DictionaryApplet")) ||
-       (!strcmp (iid, "OAFIID:MATE_GDictApplet"))) &&
-      gdict_create_data_dir ())
+  if (((!strcmp (iid, "DictionaryApplet"))) && gdict_create_data_dir ())
     {
       /* Set up the menu */
-      mate_panel_applet_setup_menu_from_file (applet, UIDATADIR,
-					 "MATE_DictionaryApplet.xml",
-					 NULL,
-					 gdict_applet_menu_verbs,
-					 applet);
+      priv->context_menu_action_group = gtk_action_group_new ("Dictionary Applet Actions");
+      gtk_action_group_set_translation_domain(priv->context_menu_action_group,
+                                              GETTEXT_PACKAGE);
+      gtk_action_group_add_actions(priv->context_menu_action_group,
+								gdict_applet_menu_actions,
+								G_N_ELEMENTS (gdict_applet_menu_actions),
+								applet);
+      ui_path = g_build_filename(PKGDATADIR, "dictionary-applet-menu.xml", NULL);
+      mate_panel_applet_setup_menu_from_file (applet, ui_path,
+                                              priv->context_menu_action_group);
+      g_free (ui_path);
 
       gtk_widget_show (GTK_WIDGET (applet));
 
       /* set the menu items insensitive */
-      gdict_applet_set_menu_items_sensitive (GDICT_APPLET (applet), FALSE);
+      gdict_applet_set_menu_items_sensitive (dictionary_applet, FALSE);
       
       retval = TRUE;
     }
@@ -1230,10 +1251,9 @@ gdict_applet_factory (MatePanelApplet *applet,
 }
 
 /* this defines the main () for the applet */
-MATE_PANEL_APPLET_MATECOMPONENT_FACTORY ("OAFIID:MATE_DictionaryApplet_Factory",
+MATE_PANEL_APPLET_OUT_PROCESS_FACTORY ("DictionaryAppletFactory",
 			     GDICT_TYPE_APPLET,
 			     "mate-dictionary-applet",
-			     VERSION,
 			     gdict_applet_factory,
 			     NULL);
 
