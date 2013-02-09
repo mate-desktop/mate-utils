@@ -726,6 +726,7 @@ baobab_create_statusbar (void)
 			 G_SETTINGS_BIND_DEFAULT);
 }
 
+static void
 baobab_settings_subfoldertips_changed (GSettings *settings,
 									   const gchar *key,
 									   gpointer user_data)
