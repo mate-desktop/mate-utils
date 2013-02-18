@@ -2,7 +2,7 @@ Utilitiesdir = $(datadir)/applications
 
 SUBDIRS = data help libmateui-deprecated
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	-I$(srcdir)/libmateui-deprecated \
 	-I$(top_srcdir)/libeggsmclient \
 	-DG_DISABLE_DEPRECATED \
