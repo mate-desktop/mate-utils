@@ -1,6 +1,6 @@
 SUBDIRS = data help tests
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	-DG_LOG_DOMAIN=\"mate-system-log\"			\
 	-DMATELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"	\
 	-DDATADIR=\""$(datadir)"\"				\
