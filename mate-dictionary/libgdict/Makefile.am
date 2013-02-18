@@ -1,6 +1,6 @@
 NULL =
 
-INCLUDES = -DG_LOG_DOMAIN=\"Gdict\" 				\
+AM_CPPFLAGS = -DG_LOG_DOMAIN=\"Gdict\" 				\
 	-DDATADIR=\""$(datadir)"\" 				\
 	-DLIBDIR=\""$(libdir)"\" 				\
 	-DSYSCONFDIR=\""$(sysconfdir)"\" 			\
