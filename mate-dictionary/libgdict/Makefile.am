@@ -7,7 +7,7 @@ AM_CPPFLAGS = -DG_LOG_DOMAIN=\"Gdict\" 				\
 	-DPREFIX=\""$(prefix)"\" 				\
 	-DMATELOCALEDIR=\""$(mateutilslocaledir)"\" 		\
 	-DGDICTSOURCESDIR=\""$(datadir)/mate-dict/sources"\" 	\
-	-DGDICT_ENABLE_INTERNALS=1 				\
+	-DGDICT_ENABLE_INTERNALS				\
 	-DG_DISABLE_DEPRECATED					\
 	-DGDK_DISABLE_DEPRECATED				\
 	-DGTK_DISABLE_DEPRECATED				\
@@ -54,7 +54,7 @@ lib_LTLIBRARIES = libmatedict.la
 
 # MATE Dictionary shared library
 libmatedict_la_SOURCES  = $(sources_h) $(sources_h_priv) $(sources_c)
-libmatedict_la_CPPFLAGS = $(LIBGDICT_CFLAGS) $(GDICT_DEBUG_CFLAGS) $(MAINTAINER_CFLAGS)
+libmatedict_la_CPPFLAGS = $(AM_CPPFLAGS) $(LIBGDICT_CFLAGS) $(GDICT_DEBUG_CFLAGS) $(MAINTAINER_CFLAGS)
 libmatedict_la_LIBADD   = $(LIBGDICT_LIBS)
 libmatedict_la_LDFLAGS  = \
 	-version-info $(LIBGDICT_LT_VERSION) \
