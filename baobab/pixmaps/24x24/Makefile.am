@@ -2,10 +2,10 @@ NULL =
 
 size = 24x24
 
-iconsdir = $(datadir)/icons/mate/$(size)/apps
+iconsdir = $(datadir)/icons/hicolor/$(size)/apps
 
 icons_DATA =					\
-	baobab.png				\
+	mate-disk-usage-analyzer.png \
 	$(NULL)
 
 icons_SOURCE =					\
