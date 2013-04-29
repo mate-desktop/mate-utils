@@ -2,10 +2,10 @@ NULL =
 
 size = scalable
 
-iconsdir = $(datadir)/icons/mate/$(size)/apps
+iconsdir = $(datadir)/icons/hicolor/$(size)/apps
 
 icons_DATA =					\
-	baobab.svg				\
+	mate-disk-usage-analyzer.svg \
 	$(NULL)
 
 icons_SOURCE =					\
