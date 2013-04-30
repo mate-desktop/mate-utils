@@ -1287,7 +1287,7 @@ main (int argc, char *argv[])
 
 	glibtop_init ();
 
-	gtk_window_set_default_icon_name ("baobab");
+	gtk_window_set_default_icon_name ("mate-disk-usage-analyzer");
 
 	baobab_init ();
 

@@ -98,7 +98,7 @@ on_about_activate (GtkMenuItem *menuitem, gpointer user_data)
 		"comments", _("A graphical tool to analyze disk usage."),
 		"version", VERSION,
 		"copyright", copyright,
-		"logo-icon-name", "baobab",
+		"logo-icon-name", "mate-disk-usage-analyzer",
 		"license", license_trans,
 		"authors", authors,
 		"translator-credits", _("translator-credits"),
