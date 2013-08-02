@@ -348,8 +348,8 @@ AC_SUBST(mateutilslocaledir)
 dnl gtk-doc stuff
 GTK_DOC_CHECK([1.10])
 
-dnl mate-doc-utils stuff
-MATE_DOC_INIT
+dnl yelp-tools stuff
+YELP_HELP_INIT
 
 SHAVE_INIT([m4], [enable])
 

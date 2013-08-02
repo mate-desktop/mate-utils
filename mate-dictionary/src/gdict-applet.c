@@ -730,7 +730,7 @@ gdict_applet_cmd_help (GtkAction *action,
   GError *err = NULL;
 
   gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (applet)),
-		"ghelp:mate-dictionary#mate-dictionary-applet",
+		"help:mate-dictionary#mate-dictionary-applet",
 		gtk_get_current_event_time (), &err);
   
   if (err)

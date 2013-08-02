@@ -185,7 +185,7 @@ click_help_cb (GtkWidget * widget,
 	GtkWidget * window = data;
 	GError * error = NULL;
 
-	gtk_show_uri (gtk_widget_get_screen (widget), "ghelp:mate-search-tool",  
+	gtk_show_uri (gtk_widget_get_screen (widget), "help:mate-search-tool",  
 	              gtk_get_current_event_time (), &error);
 	if (error) {
 		GtkWidget * dialog;

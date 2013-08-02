@@ -1,8 +1,6 @@
-include $(top_srcdir)/mate-doc-utils.make
-dist-hook: doc-dist-hook
+@YELP_HELP_RULES@
 
-DOC_MODULE = mate-dictionary
-DOC_ENTITIES = legal.xml
-DOC_INCLUDES = 
+HELP_ID = mate-dictionary
+HELP_FILES = index.docbook legal.xml
 
-DOC_LINGUAS = ca cs da de el en_GB es eu fi fr it oc ru sv uk zh_CN
+HELP_LINGUAS = ca cs da de el en_GB es eu fi fr it oc ru sv uk zh_CN

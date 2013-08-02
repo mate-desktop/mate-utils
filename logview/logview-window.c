@@ -354,7 +354,7 @@ logview_help (GtkAction *action, GtkWidget *parent_window)
   GError *error = NULL;
 
   gtk_show_uri (gtk_widget_get_screen (parent_window),
-                "ghelp:mate-system-log", gtk_get_current_event_time (),
+                "help:mate-system-log", gtk_get_current_event_time (),
                 &error);
 
   if (error) {
