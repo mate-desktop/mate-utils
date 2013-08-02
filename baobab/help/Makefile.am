@@ -1,8 +1,6 @@
-include $(top_srcdir)/mate-doc-utils.make
-dist-hook: doc-dist-hook
+@YELP_HELP_RULES@
 
-DOC_MODULE = mate-disk-usage-analyzer
-DOC_ENTITIES = legal.xml
-DOC_INCLUDES =
+HELP_ID = mate-disk-usage-analyzer
+HELP_FILES = index.docbook legal.xml
 
-DOC_LINGUAS = ca cs da de el en_GB es eu fi fr it oc pl ru sv uk zh_CN zh_HK zh_TW
+HELP_LINGUAS = ca cs da de el en_GB es eu fi fr it oc pl ru sv uk zh_CN zh_HK zh_TW

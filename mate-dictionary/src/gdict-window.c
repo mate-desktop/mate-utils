@@ -1235,7 +1235,7 @@ gdict_window_cmd_help_contents (GtkAction   *action,
   g_return_if_fail (GDICT_IS_WINDOW (window));
  
   gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (window)),
-                "ghelp:mate-dictionary",
+                "help:mate-dictionary",
                 gtk_get_current_event_time (), &err); 
   if (err)
     {
