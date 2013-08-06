@@ -34,13 +34,11 @@ SUBDIRS = \
 EXTRA_DIST = \
 	omf.make \
 	xmldocs.make \
-	mate-doc-utils.make \
 	COPYING.libs \
 	COPYING.docs
 
 DISTCLEANFILES =                \
-	gtk-doc.make		\
-	mate-doc-utils.make
+	gtk-doc.make
 
 DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper --enable-gtk-doc
 
