@@ -46,7 +46,7 @@ gdict_show_about_dialog (GtkWidget *parent)
   };
 
   const gchar *documenters[] = {
-    "Sun MATE Documentation Team <gdocteam@sun.com>",
+    "Sun GNOME Documentation Team <gdocteam@sun.com>",
     "John Fleck <jfleck@inkstain.net>",
     "Emmanuele Bassi <ebassi@gmail.com>",
     NULL
