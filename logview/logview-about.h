@@ -39,7 +39,7 @@ static const char *logview_about_authors[] = {
 };
 
 static const char *logview_about_documenters[] = {
-  "Sun MATE Documentation Team <gdocteam@sun.com>",
+  "Sun GNOME Documentation Team <gdocteam@sun.com>",
   "Vincent Noel <vincent.noel@gmail.com>",
   "Judith Samson <judith@samsonsource.com>",
   NULL
