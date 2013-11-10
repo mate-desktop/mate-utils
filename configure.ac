@@ -11,7 +11,7 @@ AC_INIT([mate-utils],
 AC_CONFIG_MACRO_DIR([m4])
 
 AC_CONFIG_HEADERS([config.h])
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([dist-xz no-dist-gzip])
 
 MATE_COMMON_INIT
 
