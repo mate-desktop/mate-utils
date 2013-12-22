@@ -470,7 +470,7 @@ gdict_source_dialog_response_cb (GtkDialog *dialog,
       break;
     case GTK_RESPONSE_HELP:
       gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (dialog)),
-                    "help:mate-dictionary#mate-dictionary-add-source",
+                    "help:mate-dictionary/mate-dictionary-add-source",
                     gtk_get_current_event_time (), &err);
       if (err)
         {
