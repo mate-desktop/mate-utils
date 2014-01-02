@@ -809,13 +809,14 @@ static void
 finish_prepare_screenshot (char *initial_uri, GdkWindow *window, GdkRectangle *rectangle)
 {  
   ScreenshotDialog *dialog;
+  gboolean include_mask = (!take_window_shot && !take_area_shot);
 
   /* always disable window border for full-desktop or selected-area screenshots */
   if (!take_window_shot)
-    screenshot = screenshot_get_pixbuf (window, rectangle, include_pointer, FALSE);
+    screenshot = screenshot_get_pixbuf (window, rectangle, include_pointer, FALSE, include_mask);
   else
     {
-      screenshot = screenshot_get_pixbuf (window, rectangle, include_pointer, include_border);
+      screenshot = screenshot_get_pixbuf (window, rectangle, include_pointer, include_border, include_mask);
 
       switch (border_effect[0])
         {
@@ -1368,8 +1369,17 @@ main (int argc, char *argv[])
     }
   else
     {
-      /* start this in an idle anyway and fire up the mainloop */
-      g_idle_add (prepare_screenshot_timeout, NULL);
+      if (interactive_arg)
+        {
+          /* HACK: give time to the dialog to actually disappear.
+           * We don't have any way to tell when the compositor has finished 
+           * re-drawing.
+           */
+          g_timeout_add (200,
+                         prepare_screenshot_timeout, NULL);
+        }
+      else
+        g_idle_add (prepare_screenshot_timeout, NULL);
     }
 
   gtk_main ();
