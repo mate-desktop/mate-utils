@@ -25,6 +25,7 @@ EXTRA_DIST = 			\
 	mate-system-log.desktop.in.in	\
 	$(xml_DATA)		\
 	$(man_MANS)		\
+	$(convert_DATA)	\
 	$(gsettingsschema_in_files)
 
 DISTCLEANFILES =		\
