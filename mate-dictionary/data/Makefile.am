@@ -74,6 +74,7 @@ EXTRA_DIST = \
 	$(gsettingsschema_in_files) \
 	$(builder_DATA) \
 	$(ui_DATA) \
+	$(convert_DATA) \
 	$(NULL)
 
 CLEANFILES = \

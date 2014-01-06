@@ -73,12 +73,12 @@ EXTRA_DIST =					\
 	$(mate_screenshot_in_files)		\
 	$(man_MANS)				\
 	$(ui_DATA)				\
+	$(convert_DATA)			\
 	$(NULL)
 
 CLEANFILES = \
 	$(BUILT_SOURCES)			 \
 	$(gsettings_SCHEMAS)			 \
-	$(convert_DATA)			 \
 	$(mate_screenshot_DATA)		 \
 	$(sys_DATA)
 

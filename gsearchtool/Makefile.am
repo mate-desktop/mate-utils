@@ -58,12 +58,12 @@ Utilities_DATA = $(Utilities_in_files:.desktop.in=.desktop)
 EXTRA_DIST = \
 	$(Utilities_in_files) \
 	$(Utilities_DATA) \
+	$(convert_DATA) \
 	$(gsettingsschema_in_files) \
 	$(man_MANS)
 
 CLEANFILES = \
 	mate-search-tool.desktop \
-	$(convert_DATA) \
 	$(gsettings_SCHEMAS)
 
 disthook:
