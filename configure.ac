@@ -70,11 +70,34 @@ dnl pkg-config check
 
 GLIB_REQUIRED=2.20.0
 GIO_REQUIRED=2.16.0
-GTK_REQUIRED=2.20.0
 GIO_UNIX_REQUIRED=2.18.0
-LIBMATE_PANEL_APPLET_REQUIRED=1.5.0
+LIBMATE_PANEL_APPLET_REQUIRED=1.7.0
 LIBGTOP_REQUIRED=2.12.0
-LIBCANBERRA_GTK_REQUIRED=0.4
+
+dnl GTK library version
+
+AC_MSG_CHECKING([which gtk+ version to compile against])
+AC_ARG_WITH([gtk],
+	[AS_HELP_STRING([--with-gtk=2.0|3.0],[which gtk+ version to compile against (default: 2.0)])],
+	[case "$with_gtk" in
+		2.0|3.0) ;;
+		*) AC_MSG_ERROR([invalid gtk version specified]) ;;
+	 esac],
+	[with_gtk=2.0])
+AC_MSG_RESULT([$with_gtk])
+
+case "$with_gtk" in
+	2.0) GTK_API_VERSION=2.0
+		GTK_REQUIRED=2.24.0
+		LIBCANBERRA_GTK_VERSION=libcanberra-gtk
+		LIBCANBERRA_GTK_REQUIRED=0.4
+		;;
+	3.0) GTK_API_VERSION=3.0
+		GTK_REQUIRED=3.0.0
+		LIBCANBERRA_GTK_VERSION=libcanberra-gtk3
+    LIBCANBERRA_GTK_REQUIRED=0.4
+		;;
+esac
 
 # common checks
 PKG_CHECK_MODULES(GLIB, glib-2.0 >= $GLIB_REQUIRED)
@@ -93,18 +116,18 @@ PKG_CHECK_MODULES(GIO_UNIX, gio-unix-2.0 >= $GIO_UNIX_REQUIRED)
 AC_SUBST(GIO_UNIX_CFLAGS)
 AC_SUBST(GIO_UNIX_LIBS)
 
-PKG_CHECK_MODULES(GTK, gtk+-2.0 >= $GTK_REQUIRED)
+PKG_CHECK_MODULES(GTK, gtk+-$GTK_API_VERSION >= $GTK_REQUIRED)
 AC_SUBST(GTK_CFLAGS)
 AC_SUBST(GTK_LIBS)
 
 # libeggsmclient
-PKG_CHECK_MODULES(LIBEGGSMCLIENT, gtk+-2.0 >= $GTK_REQUIRED)
+PKG_CHECK_MODULES(LIBEGGSMCLIENT, gtk+-$GTK_API_VERSION >= $GTK_REQUIRED)
 AC_SUBST(LIBEGGSMCLIENT_CFLAGS)
 AC_SUBST(LIBEGGSMCLIENT_LIBS)
 
 # libgdict requires just gtk+
 PKG_CHECK_MODULES(LIBGDICT, glib-2.0 >= $GLIB_REQUIRED dnl
-                            gtk+-2.0 >= $GTK_REQUIRED)
+                            gtk+-$GTK_API_VERSION >= $GTK_REQUIRED)
 AC_SUBST(LIBGDICT_CFLAGS)
 AC_SUBST(LIBGDICT_LIBS)
 
@@ -163,7 +186,7 @@ PKG_CHECK_MODULES(LIBGTOP, libgtop-2.0 >= $LIBGTOP_REQUIRED)
 AC_SUBST(LIBGTOP_CFLAGS)
 AC_SUBST(LIBGTOP_LIBS)
 
-PKG_CHECK_MODULES(LIBCANBERRA_GTK, libcanberra-gtk >= $LIBCANBERRA_GTK_REQUIRED)
+PKG_CHECK_MODULES(LIBCANBERRA_GTK, $LIBCANBERRA_GTK_VERSION >= $LIBCANBERRA_GTK_REQUIRED)
 AC_SUBST(LIBCANBERRA_GTK_CFLAGS)
 AC_SUBST(LIBCANBERRA_GTK_LIBS)
 
@@ -406,8 +429,9 @@ mate-utils $VERSION configuration summary:
                          sbin dir : $sbindir
                          data dir : $datadir
 
+                 GTK+ API version : $GTK_API_VERSION
      Debug messages (libmatedict) : $enable_debug
-         API Reference (libgdict) : $enable_gtk_doc
+      API Reference (libmatedict) : $enable_gtk_doc
   Logview built with ZLib support : $msg_zlib
      Dictionary mate-panel applet : $enable_gdict_applet
 "
