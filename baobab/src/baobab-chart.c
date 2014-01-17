@@ -35,6 +35,11 @@
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+/* needed for floor and ceil */
+#include <math.h>
+#endif
+
 #include "baobab-chart.h"
 
 #define BAOBAB_CHART_GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), \
@@ -144,7 +149,11 @@ static void baobab_chart_rows_reordered (GtkTreeModel *model,
                                          gint *new_order,
                                          gpointer data);
 static gboolean baobab_chart_expose (GtkWidget *chart,
+#if GTK_CHECK_VERSION (3, 0, 0)
+                                     cairo_t *cr);
+#else
                                      GdkEventExpose *event);
+#endif
 static void baobab_chart_interpolate_colors (BaobabChartColor *color,
                                              BaobabChartColor colora,
                                              BaobabChartColor colorb,
@@ -186,7 +195,11 @@ baobab_chart_class_init (BaobabChartClass *class)
 
   /* GtkWidget signals */
   widget_class->realize = baobab_chart_realize;
+#if GTK_CHECK_VERSION (3, 0, 0)
+  widget_class->draw = baobab_chart_expose;
+#else
   widget_class->expose_event = baobab_chart_expose;
+#endif
   widget_class->size_allocate = baobab_chart_size_allocate;
   widget_class->scroll_event = baobab_chart_scroll;
 
@@ -316,10 +329,16 @@ baobab_chart_realize (GtkWidget *widget)
   attributes.height = allocation.height;
   attributes.wclass = GDK_INPUT_OUTPUT;
   attributes.visual = gtk_widget_get_visual (widget);
+#if !GTK_CHECK_VERSION (3, 0, 0)
   attributes.colormap = gtk_widget_get_colormap (widget);
+#endif
   attributes.event_mask = gtk_widget_get_events (widget) | GDK_EXPOSURE_MASK;
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  attributes_mask = GDK_WA_X | GDK_WA_Y | GDK_WA_VISUAL;
+#else
   attributes_mask = GDK_WA_X | GDK_WA_Y | GDK_WA_VISUAL | GDK_WA_COLORMAP;
+#endif
 
   window = gdk_window_new (gtk_widget_get_parent_window (widget),
                            &attributes,
@@ -753,15 +772,31 @@ baobab_chart_rows_reordered (GtkTreeModel    *model,
 }
 
 static gboolean
+#if GTK_CHECK_VERSION (3, 0, 0)
+baobab_chart_expose (GtkWidget *chart, cairo_t *cr)
+#else
 baobab_chart_expose (GtkWidget *chart, GdkEventExpose *event)
+#endif
 {
+#if !GTK_CHECK_VERSION (3, 0, 0)
   cairo_t *cr;
+#endif
   BaobabChartPrivate *priv;
   gint w, h;
   gdouble p, sx, sy;
   GtkTreePath *root_path = NULL;
   GtkTreePath *current_path = NULL;
   GtkAllocation allocation;
+
+#if GTK_CHECK_VERSION (3, 0, 0)
+  GdkRectangle area;
+  gdouble x1, y1, x2, y2;
+  cairo_clip_extents (cr, &x1, &y1, &x2, &y2);
+  area.x = floor (x1);
+  area.y = floor (y1);
+  area.width = ceil (x2) - area.x;
+  area.height = ceil (y2) - area.y;
+#endif
 
   priv = BAOBAB_CHART (chart)->priv;
 
@@ -773,8 +808,13 @@ baobab_chart_expose (GtkWidget *chart, GdkEventExpose *event)
   cr = gdk_cairo_create (gtk_widget_get_window (chart));
 
   cairo_rectangle (cr,
+#if GTK_CHECK_VERSION (3, 0, 0)
+                   area.x, area.y,
+                   area.width, area.height);
+#else
                    event->area.x, event->area.y,
                    event->area.width, event->area.height);
+#endif
 
   /* there is no model we can not paint */
   if ((priv->is_frozen) || (priv->model == NULL))
@@ -840,10 +880,16 @@ baobab_chart_expose (GtkWidget *chart, GdkEventExpose *event)
 
       gtk_tree_path_free (root_path);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+      baobab_chart_draw (chart, cr, area);
+#else
       baobab_chart_draw (chart, cr, event->area);
+#endif
     }
 
+#if !GTK_CHECK_VERSION (3, 0, 0)
   cairo_destroy (cr);
+#endif
 
   return FALSE;
 }
@@ -1178,10 +1224,17 @@ baobab_chart_get_pixbuf (GtkWidget *widget)
 		gdk_drawable_get_size(gtk_widget_get_window(widget), &w, &h);
 	#endif
 
+
+#if GTK_CHECK_VERSION(3, 0, 0)
+  pixbuf = gdk_pixbuf_get_from_window (
+#else
   pixbuf = gdk_pixbuf_get_from_drawable (NULL,
+#endif
                                          gtk_widget_get_window (widget),
+#if !GTK_CHECK_VERSION(3, 0, 0)
                                          gdk_colormap_get_system (),
                                          0, 0,
+#endif
                                          0, 0,
                                          w, h);
 
@@ -1751,10 +1804,10 @@ baobab_chart_save_snapshot (GtkWidget *chart)
                       label,
                       FALSE, FALSE, 0);
 
-  opt_menu = gtk_combo_box_new_text ();
-  gtk_combo_box_append_text (GTK_COMBO_BOX (opt_menu), "png");
-  gtk_combo_box_append_text (GTK_COMBO_BOX (opt_menu), "jpeg");
-  gtk_combo_box_append_text (GTK_COMBO_BOX (opt_menu), "bmp");
+  opt_menu = gtk_combo_box_text_new ();
+  gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (opt_menu), "png");
+  gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (opt_menu), "jpeg");
+  gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (opt_menu), "bmp");
   gtk_combo_box_set_active (GTK_COMBO_BOX (opt_menu), 0);
   gtk_box_pack_start (GTK_BOX (hbox), opt_menu, TRUE, TRUE, 0);
 
@@ -1764,7 +1817,7 @@ baobab_chart_save_snapshot (GtkWidget *chart)
   if (gtk_dialog_run (GTK_DIALOG (fs_dlg)) == GTK_RESPONSE_ACCEPT)
     {
       filename = gtk_file_chooser_get_filename (GTK_FILE_CHOOSER (fs_dlg));
-      sel_type = gtk_combo_box_get_active_text (GTK_COMBO_BOX (opt_menu));
+      sel_type = gtk_combo_box_text_get_active_text (GTK_COMBO_BOX_TEXT (opt_menu));
       if (! g_str_has_suffix (filename, sel_type))
         {
           gchar *tmp;
