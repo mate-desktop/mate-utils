@@ -3,28 +3,29 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# jierro <jierro@windowslive.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-12 11:59+0100\n"
-"PO-Revision-Date: 2012-03-12 11:11+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"PO-Revision-Date: 2013-09-02 10:42+0000\n"
+"Last-Translator: jierro <jierro@windowslive.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/projects/p/MATE/language/sl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: sl\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3)\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 
 #: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:1
 #: ../baobab/data/baobab-main-window.ui.h:15
 msgid "Disk Usage Analyzer"
-msgstr "Orodje za analizo porabe diska"
+msgstr "Preučevalnik porabe diska"
 
 #: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:2
 msgid "Check folder sizes and available disk space"
-msgstr "Preveri velikosti map in prostor na disku"
+msgstr "Preveri velikosti map in razpoložljiv prostor na disku"
 
 #: ../baobab/data/baobab-dialog-scan-props.ui.h:1
 msgid "Disk Usage Analyzer Preferences"
@@ -32,7 +33,7 @@ msgstr "Možnosti orodja za analizo porabe diska"
 
 #: ../baobab/data/baobab-dialog-scan-props.ui.h:2
 msgid "Select _devices to include in filesystem scan:"
-msgstr "Izberite _naprave zajete v sistemsko preiskovanje:"
+msgstr "Izberite _naprave za vključitev v preiskovanje datotečnega sistema:"
 
 #: ../baobab/data/baobab-dialog-scan-props.ui.h:3
 msgid "_Monitor changes to your home folder"
@@ -40,7 +41,7 @@ msgstr "_Nadziraj spremembe domače mape"
 
 #: ../baobab/data/baobab-main-window.ui.h:1
 msgid "_Analyzer"
-msgstr "_Orodje za analizo"
+msgstr "_Preučevalnik"
 
 #: ../baobab/data/baobab-main-window.ui.h:2
 msgid "Scan _Home Folder"
@@ -86,7 +87,7 @@ msgstr "_Vrstica stanja"
 
 #: ../baobab/data/baobab-main-window.ui.h:12
 msgid "All_ocated Space"
-msgstr "_Zaseden prostor"
+msgstr "_Dodeljen prostor"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
 #: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:6
@@ -166,11 +167,11 @@ msgstr "Ali naj bodo spremembe v domačem imeniku nadzorovane."
 
 #: ../baobab/data/baobab.schemas.in.h:7
 msgid "Excluded partitions URIs"
-msgstr "Izločeni naslovni URI razdelkov"
+msgstr "Izločeni naslovi URI razdelkov"
 
 #: ../baobab/data/baobab.schemas.in.h:8
 msgid "A list of URIs for partitions to be excluded from scanning."
-msgstr "Seznam naslovov URI razdelkov diska izločenih iz preiskovanja."
+msgstr "Seznam naslovov URI za razdelke, ki bodo izločeni iz preiskovanja."
 
 #: ../baobab/data/baobab.schemas.in.h:9
 msgid "Subfolders tooltips visible"
@@ -178,7 +179,7 @@ msgstr "Pokaži namige podrejenih map"
 
 #: ../baobab/data/baobab.schemas.in.h:10
 msgid "Whether the subfolder tooltips of the selected folder are drawn."
-msgstr "Ali naj bodo izrisani namigi podmap izbrane mape."
+msgstr "Ali naj bodo orodni namigi podmap izbrane mape izrisani."
 
 #: ../baobab/src/baobab.c:134 ../baobab/src/baobab.c:353
 msgid "Scanning..."
@@ -186,11 +187,11 @@ msgstr "Preiskovanje ..."
 
 #: ../baobab/src/baobab.c:180
 msgid "Total filesystem capacity:"
-msgstr "Celotna zmogljivost datotečnega sistema:"
+msgstr "Celotna velikost datotečnega sistema:"
 
 #: ../baobab/src/baobab.c:181
 msgid "used:"
-msgstr "porabljeno:"
+msgstr "uporabljeno:"
 
 #: ../baobab/src/baobab.c:182
 msgid "available:"
@@ -200,7 +201,7 @@ msgstr "na voljo:"
 #: ../baobab/src/baobab.c:238 ../baobab/src/baobab.c:295
 #: ../baobab/src/callbacks.c:260
 msgid "Calculating percentage bars..."
-msgstr "Računanje stolpcev odstotkov ..."
+msgstr "Računanje odstotkovnih stolpcev ..."
 
 #: ../baobab/src/baobab.c:249 ../baobab/src/baobab.c:1289
 #: ../baobab/src/callbacks.c:264
@@ -209,7 +210,7 @@ msgstr "Pripravljeno"
 
 #: ../baobab/src/baobab.c:386
 msgid "Total filesystem capacity"
-msgstr "Celotna zmogljivost datotečnega sistema"
+msgstr "Celotna velikost datotečnega sistema"
 
 #: ../baobab/src/baobab.c:408
 msgid "Total filesystem usage"
@@ -217,20 +218,20 @@ msgstr "Celotna poraba datotečnega sistema"
 
 #: ../baobab/src/baobab.c:449
 msgid "contains hardlinks for:"
-msgstr "vsebuje trde povezave za:"
+msgstr "vsebuje nespremenljive povezave za:"
 
 #: ../baobab/src/baobab.c:458
 #, c-format
 msgid "%5d item"
 msgid_plural "%5d items"
-msgstr[0] "%5d predmetov"
-msgstr[1] "%5d predmet"
-msgstr[2] "%5d predmeta"
+msgstr[0] "%5d predmet"
+msgstr[1] "%5d predmeta"
+msgstr[2] "%5d predmetov"
 msgstr[3] "%5d predmeti"
 
 #: ../baobab/src/baobab.c:585
 msgid "Could not initialize monitoring"
-msgstr "Ni mogoče zagnati merjenja"
+msgstr "Ni mogoče začenjati nadzorovanja"
 
 #: ../baobab/src/baobab.c:586
 msgid "Changes to your home folder will not be monitored."
@@ -238,7 +239,7 @@ msgstr "Ali naj bodo spremembe v domačem imeniku nadzorovane."
 
 #: ../baobab/src/baobab.c:965
 msgid "Move to parent folder"
-msgstr "Premakniti v nadrejeno mapo"
+msgstr "Premakni v nadrejeno mapo"
 
 #: ../baobab/src/baobab.c:969
 msgid "Zoom in"
@@ -250,19 +251,19 @@ msgstr "Oddalji"
 
 #: ../baobab/src/baobab.c:977
 msgid "Save screenshot"
-msgstr "Shrani zajeto sliko"
+msgstr "Shrani zaslonsko sliko"
 
 #: ../baobab/src/baobab.c:1114
 msgid "View as Rings Chart"
-msgstr "Določitev krožnega grafikona"
+msgstr "Pogled krožnega grafikona"
 
 #: ../baobab/src/baobab.c:1116
 msgid "View as Treemap Chart"
-msgstr "Seznamski drevesni pregled grafikona"
+msgstr "Pogled drevesnega seznamskega grafikona"
 
 #: ../baobab/src/baobab.c:1214
 msgid "Show version"
-msgstr "Počasna različica"
+msgstr "Pokaži različico"
 
 #: ../baobab/src/baobab.c:1215
 msgid "[DIRECTORY]"
@@ -278,7 +279,7 @@ msgstr "Ni mogoče zaznati priklopne točke."
 
 #: ../baobab/src/baobab.c:1264
 msgid "Without mount points disk usage cannot be analyzed."
-msgstr "Brez določene priklopne točne, zasedenosti diska ni mogoče določiti."
+msgstr "Brez določene priklopne točne ni mogoče določiti zasedenosti diska."
 
 #: ../baobab/src/baobab-chart.c:206
 msgid "Maximum depth"
@@ -294,7 +295,7 @@ msgstr "Grafični grafikon"
 
 #: ../baobab/src/baobab-chart.c:217
 msgid "Set the model of the chart"
-msgstr "Določitev grafičnega grafikona"
+msgstr "Določitev modela grafičnega grafikona"
 
 #: ../baobab/src/baobab-chart.c:224
 msgid "Chart root node"
@@ -311,7 +312,7 @@ msgstr "Ni mogoče ustvariti slike pixbuf!"
 #. Popup the File chooser dialog
 #: ../baobab/src/baobab-chart.c:1720
 msgid "Save Snapshot"
-msgstr "Shrani zaslonsko sliko"
+msgstr "Shrani posnetek stanja"
 
 #: ../baobab/src/baobab-chart.c:1749
 msgid "_Image type:"
@@ -364,7 +365,7 @@ msgstr "FTP (s prijavo)"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:185
 msgid "Windows share"
-msgstr "Souporaba z Windows sistemom"
+msgstr "Souporaba s sistemom Windows"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:187
 msgid "WebDAV (HTTP)"
@@ -435,7 +436,7 @@ msgstr "Ali naj bo domača mapa ponovno preiskana?"
 msgid ""
 "The content of your home folder has changed. Select rescan to update the "
 "disk usage details."
-msgstr "Vsebina vašega domačega imenika se je spremenila. S ponovno preiskavo se posodobijo podatki o zasedenosti map."
+msgstr "Vsebina vaše domače mape se je spremenila. S ponovno preiskavo se posodobijo podatki o zasedenosti map."
 
 #: ../baobab/src/baobab-treeview.c:84
 msgid "_Rescan"
@@ -468,7 +469,7 @@ msgstr "_Pokaži skrite mape"
 
 #: ../baobab/src/baobab-utils.c:297
 msgid "Cannot check an excluded folder!"
-msgstr "Ni mogoče pregledati izločene mape"
+msgstr "Ni mogoče pregledati izločene mape!"
 
 #: ../baobab/src/baobab-utils.c:321
 #, c-format
@@ -477,7 +478,7 @@ msgstr "\"%s\" ni veljavna mapa"
 
 #: ../baobab/src/baobab-utils.c:324
 msgid "Could not analyze disk usage."
-msgstr "Ni mogoče analizirati porabe diska."
+msgstr "Ni mogoče preučiti uporabe diska."
 
 #: ../baobab/src/baobab-utils.c:364
 msgid "_Open Folder"
@@ -491,20 +492,20 @@ msgstr "Pr_emakni v smeti"
 #: ../baobab/src/baobab-utils.c:404
 #, c-format
 msgid "Could not open folder \"%s\""
-msgstr "Ni mogoče odprti mape \"%s\""
+msgstr "Ni mogoče odpreti mape \"%s\""
 
 #: ../baobab/src/baobab-utils.c:407
 msgid "There is no installed viewer capable of displaying the folder."
-msgstr "Za prikaz mape ni nameščen ustrezen pregledovalnik."
+msgstr "Za prikaz mape ni nameščenega ustreznega pregledovalnika."
 
 #: ../baobab/src/baobab-utils.c:476
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
-msgstr "Ni mogoče premakniti \"%s\" v smeti"
+msgstr "\"%s\" ni mogoče premakniti v smeti"
 
 #: ../baobab/src/baobab-utils.c:484
 msgid "Could not move file to the Trash"
-msgstr "Ni mogoče premakniti datoteke v smeti"
+msgstr "Datoteke ni mogoče premakniti v smeti"
 
 #: ../baobab/src/baobab-utils.c:486
 #, c-format
@@ -513,7 +514,7 @@ msgstr "Podrobnosti: %s"
 
 #: ../baobab/src/baobab-utils.c:533
 msgid "There was an error displaying help."
-msgstr "Prišlo je do napake med prikazovanjem pomoči."
+msgstr "Med prikazovanjem pomoči je prišlo do napake."
 
 #: ../baobab/src/callbacks.c:77 ../logview/logview-about.h:49
 msgid ""
@@ -529,7 +530,7 @@ msgid ""
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
 "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
 "more details."
-msgstr "Ta program je na voljo v upanju, da bo uporaben, vendar je BREZ VSAKRŠNEGA JAMSTVA; tudi brez jamstva o USTREZNOSTI ZA PRODAJO ali PRIMERNOSTI ZA UPORABO. Za več podrobnosti si glejte besedilo Splošnega javnega dovoljenja (GNU GPL)."
+msgstr "Ta program je na voljo v upanju, da bo uporaben, vendar je BREZ VSAKRŠNEGA JAMSTVA; tudi brez jamstva o USTREZNOSTI ZA PRODAJO ali PRIMERNOSTI ZA UPORABO. Za več podrobnosti si oglejte besedilo Splošnega javnega dovoljenja (GNU GPL)."
 
 #: ../baobab/src/callbacks.c:87 ../logview/logview-about.h:57
 msgid ""
@@ -544,13 +545,13 @@ msgstr "Baobab"
 
 #: ../baobab/src/callbacks.c:99
 msgid "A graphical tool to analyze disk usage."
-msgstr "Grafično orodje za analiziranje porabe diska."
+msgstr "Grafično orodje za preučevanje uporabe diska."
 
 #. translator credits
 #: ../baobab/src/callbacks.c:105 ../mate-dictionary/src/gdict-about.c:55
 #: ../logview/logview-about.h:63
 msgid "translator-credits"
-msgstr "Matic Žgur <mr.zgur@gmail.com>\nAndraž Tori <andraz.tori1@guest.arnes.si>\nMatej Urbančič <mateju@svn.mate.org>"
+msgstr "Matic Žgur <mr.zgur@gmail.com>\nAndraž Tori <andraz.tori1@guest.arnes.si>\nMatej Urbančič <mateju@svn.mate.org>\nDamir Jerovšek <damir.jerovsek@ubuntu.si>"
 
 #: ../baobab/src/callbacks.c:203 ../gsearchtool/gsearchtool-callbacks.c:504
 #: ../gsearchtool/gsearchtool-callbacks.c:843
@@ -559,7 +560,7 @@ msgstr "Dokument ne obstaja."
 
 #: ../baobab/src/callbacks.c:314
 msgid "The folder does not exist."
-msgstr "Mapa ne obstaja"
+msgstr "Mapa ne obstaja."
 
 #: ../mate-dictionary/data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
@@ -571,11 +572,11 @@ msgstr "Poizvedba v slovarju"
 
 #: ../mate-dictionary/data/MATE_DictionaryApplet.server.in.in.h:2
 msgid "Look up words in a dictionary"
-msgstr "Poišči besede v slovarju"
+msgstr "Poizvedba besed v slovarju"
 
 #: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:1
 msgid "_Look Up Selected Text"
-msgstr "_Poišči izbrano besedilo"
+msgstr "_Pozvedba izbranega besedila"
 
 #: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:2
 msgid "Cl_ear"
@@ -609,7 +610,7 @@ msgstr "Slovar"
 
 #: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:2
 msgid "Check word definitions and spellings in an online dictionary"
-msgstr "Preverite razlago in črkovanje besede v mrežnem slovarju."
+msgstr "Preverite razlago in črkovanje besede v spletnem slovarju"
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:1
 msgid "Dictionary server (Deprecated)"
@@ -620,7 +621,7 @@ msgid ""
 "The dictionary server to connect to. The default server is dict.org. See "
 "http://www.dict.org for details on other servers. This key is deprecated and"
 " no longer in use."
-msgstr "Strežnik slovarjev na katerega naj se program poveže. Privzeti strežnik je dict.org. Poglejte http://www.dict.org za podrobnosti o ostalih strežnikih. Ta ključ je opuščen in ni več v uporabi."
+msgstr "Strežnik slovarjev, na katerega naj se program poveže. Privzeti strežnik je dict.org. Poglejte http://www.dict.org za podrobnosti o ostalih strežnikih. Ta ključ je opuščen in ni več v uporabi."
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:3
 msgid "Port used to connect to server (Deprecated)"
@@ -630,7 +631,7 @@ msgstr "Vrata, ki se uporabljajo za povezavo s strežnikom (opuščeno)"
 msgid ""
 "The port number to connect to. The default port is 2628. This key is "
 "deprecated and no longer in use."
-msgstr "Številka vrat skozi katera naj se program poveže. Privzeta vrata so 2628. Ta ključ je opuščen in ni več v uporabi."
+msgstr "Številka vrat, skozi katera naj se program poveže. Privzeta vrata so 2628. Ta ključ je opuščen in ni več v uporabi."
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:5
 msgid "Use smart lookup (Deprecated)"
@@ -666,11 +667,11 @@ msgstr "Ime privzete strategije iskanja, ki naj se uporabi v slovarskem viru, č
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:11
 msgid "The font to be used when printing"
-msgstr "Pisava uporabljena za tiskanje"
+msgstr "Pisava, ki naj se uporabi za tiskanje"
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:12
 msgid "The font to be used when printing a definition."
-msgstr "Pisava uporabljena za tiskanje definicij."
+msgstr "Pisava, ki naj se uporabi za tiskanje definicij."
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:13
 msgid "The name of the dictionary source used"
@@ -780,7 +781,7 @@ msgstr "_Opis:"
 
 #: ../mate-dictionary/data/mate-dictionary-source.ui.h:2
 msgid "_Transport:"
-msgstr "_Transportiraj:"
+msgstr "_Prenos:"
 
 #: ../mate-dictionary/data/mate-dictionary-source.ui.h:3
 msgid "H_ostname:"
@@ -828,7 +829,7 @@ msgstr "Vrata"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:312
 msgid "The port of the dictionary server to connect to"
-msgstr "Vrata strežnika slovarja, na katerega se želite priključiti"
+msgstr "Vrata strežnika slovarja, s katerim se želite povezati"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:327
 msgid "Status"
@@ -863,7 +864,7 @@ msgstr "Iskanje za gostitelja '%s' ni uspelo: gostitelj ni bil najden"
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
 "with code %d (server down)"
-msgstr "Ni se mogoče povezati na strežnik slovarja na '%s:%d'. Strežnik je odgovoril s kodo %d (strežnik ne deluje)"
+msgstr "Ni se mogoče povezati s strežniknikom slovarja na '%s:%d'. Strežnik je odgovoril s kodo %d (strežnik ne deluje)"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1196
 #, c-format
@@ -938,7 +939,7 @@ msgstr "Ni mogoče ustvariti vtiča"
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1971
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
-msgstr "Ni mogoče nastaviti kanala kot ne-blokirnega: %s"
+msgstr "Ni mogoče nastaviti kanala kot neblokirnega: %s"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1986
 #, c-format
@@ -951,7 +952,7 @@ msgstr "Samo krajevno"
 
 #: ../mate-dictionary/libgdict/gdict-context.c:219
 msgid "Whether the context uses only local dictionaries or not"
-msgstr "Ali naj kontekst uporabi le krajevne slovarje ali ne"
+msgstr "Ali naj vsebina uporabi le krajevne slovarje ali ne"
 
 #: ../mate-dictionary/libgdict/gdict-database-chooser.c:382
 msgid "Reload the list of available databases"
@@ -965,7 +966,7 @@ msgstr "Počisti seznam zbirk podatkov, ki so na voljo"
 #: ../mate-dictionary/libgdict/gdict-speller.c:779
 #: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:789
 msgid "Error while matching"
-msgstr "Napaka med iskanjem"
+msgstr "Napaka med iskanjem ujemanj"
 
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1143
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1237
@@ -1053,7 +1054,7 @@ msgstr "Prenos"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:303
 msgid "The transport mechanism used by this dictionary source"
-msgstr "Mehanizem transporta, ki ga uporablja ta slovarski vir"
+msgstr "Mehanizem prenosa, ki ga uporablja ta slovarski vir"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:317
 #: ../mate-dictionary/libgdict/gdict-speller.c:377
@@ -1062,12 +1063,12 @@ msgstr "Vsebina"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:318
 msgid "The GdictContext bound to this source"
-msgstr "GdictContext vezan na ta vir"
+msgstr "GdictContext, vezan na ta vir"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:413
 #, c-format
 msgid "Invalid transport type '%d'"
-msgstr "Neveljavna vrsta transporta '%d'"
+msgstr "Neveljavna vrsta prenosa '%d'"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:441
 #, c-format
@@ -1096,7 +1097,7 @@ msgstr "Slovarski vir nima imena"
 #: ../mate-dictionary/libgdict/gdict-source.c:750
 #, c-format
 msgid "Dictionary source '%s' has invalid transport '%s'"
-msgstr "Slovarski vir '%s' ima neveljaven transport '%s'"
+msgstr "Slovarski vir '%s' ima neveljaven prenos '%s'"
 
 #: ../mate-dictionary/libgdict/gdict-source-chooser.c:299
 msgid "Reload the list of available sources"
@@ -1124,7 +1125,7 @@ msgstr "Počisti seznam podobnih besed"
 
 #: ../mate-dictionary/libgdict/gdict-speller.c:378
 msgid "The GdictContext object used to get the word definition"
-msgstr "Predmet GdictContext uporabljen za dobivanje razlag besed"
+msgstr "Predmet GdictContext, uporabljen za pridobivanje razlag besed"
 
 #: ../mate-dictionary/libgdict/gdict-speller.c:385
 msgid "The database used to query the GdictContext"
@@ -1140,11 +1141,11 @@ msgstr "Ponovno naloži seznam strategij"
 
 #: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:377
 msgid "Clear the list of available strategies"
-msgstr "Počisti seznam strategij"
+msgstr "Počisti seznam strategij, ki so na voljo"
 
 #: ../mate-dictionary/libgdict/gdict-utils.c:97
 msgid "GDict debugging flags to set"
-msgstr "GDict zastavice razhroščevanja, ki naj bodo nastavljene"
+msgstr "Zastavice razhroščevanja GDict, ki naj bodo nastavljene"
 
 #: ../mate-dictionary/libgdict/gdict-utils.c:97
 #: ../mate-dictionary/libgdict/gdict-utils.c:99
@@ -1153,11 +1154,11 @@ msgstr "ZASTAVICE"
 
 #: ../mate-dictionary/libgdict/gdict-utils.c:99
 msgid "GDict debugging flags to unset"
-msgstr "GDict zastavice razhroščevanja, ki naj ne bodo nastavljene"
+msgstr "Zastavice razhroščevanja GDict, ki naj ne bodo nastavljene"
 
 #: ../mate-dictionary/libgdict/gdict-utils.c:157
 msgid "GDict Options"
-msgstr "GDict možnosti"
+msgstr "Možnosti GDict"
 
 #: ../mate-dictionary/libgdict/gdict-utils.c:158
 msgid "Show GDict Options"
@@ -1328,7 +1329,7 @@ msgstr "Slovarski vnos"
 #: ../mate-dictionary/src/gdict-applet.c:716
 #: ../mate-dictionary/src/gdict-window.c:998
 msgid "Dictionary Preferences"
-msgstr "Lastnosti slovarja"
+msgstr "Možnosti slovarja"
 
 #: ../mate-dictionary/src/gdict-applet.c:742
 #: ../mate-dictionary/src/gdict-pref-dialog.c:503
@@ -1450,9 +1451,9 @@ msgstr "Ni najdenih razlag"
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
-msgstr[0] "%d najdenih razlag"
-msgstr[1] "%d najdena razlaga"
-msgstr[2] "%d najdeni razlagi"
+msgstr[0] "%d najdena razlaga"
+msgstr[1] "%d najdeni razlagi"
+msgstr[2] "%d najdenih razlag"
 msgstr[3] "%d najdene razlage"
 
 #: ../mate-dictionary/src/gdict-window.c:603
@@ -1557,7 +1558,7 @@ msgstr "Viri slovarja"
 
 #: ../mate-dictionary/src/gdict-window.c:1223
 msgid "Available _Databases"
-msgstr "Razpoložljive _zbirke podatkov"
+msgstr "Razpoložljive _podatkovne zbirke"
 
 #: ../mate-dictionary/src/gdict-window.c:1225
 msgid "Available St_rategies"
@@ -1656,11 +1657,11 @@ msgstr "Vključi _kazalnik"
 #. * Include window border *
 #: ../mate-screenshot/mate-screenshot.c:360
 msgid "Include the window _border"
-msgstr "Vključi tudi robove okna"
+msgstr "Vključi robove okna"
 
 #: ../mate-screenshot/mate-screenshot.c:375
 msgid "Apply _effect:"
-msgstr "Uporabi _učinek:"
+msgstr "Uveljavi _učinek:"
 
 #: ../mate-screenshot/mate-screenshot.c:437
 msgid "Grab the whole _desktop"
@@ -1676,14 +1677,12 @@ msgstr "Izbor _območja zajema"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#. 
 #: ../mate-screenshot/mate-screenshot.c:478
 msgid "Grab _after a delay of"
 msgstr "Zajemi _po zamiku"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#. 
 #: ../mate-screenshot/mate-screenshot.c:498
 #: ../mate-screenshot/mate-screenshot.c:1289
 msgid "seconds"
@@ -1705,7 +1704,7 @@ msgstr "Zajemi zaslonsko sliko"
 
 #: ../mate-screenshot/mate-screenshot.c:657
 msgid "Error while saving screenshot"
-msgstr "Napaka med shranjevanjem zajete slike"
+msgstr "Napaka med shranjevanjem zaslonske slike"
 
 #: ../mate-screenshot/mate-screenshot.c:660
 #, c-format
@@ -1713,7 +1712,7 @@ msgid ""
 "Impossible to save the screenshot to %s.\n"
 " Error was %s.\n"
 " Please choose another location and retry."
-msgstr "Ni mogoče shraniti zajete slike v %s.\nNapaka je %s\nIzberite novo mesto in poskusite znova."
+msgstr "Ni mogoče shraniti zaslonske slike v %s.\nNapaka je %s\nIzberite novo mesto in poskusite znova."
 
 #: ../mate-screenshot/mate-screenshot.c:792
 msgid "Screenshot taken"
@@ -1726,7 +1725,7 @@ msgstr "Ni mogoče zajeti zaslonske slike trenutnega namizja."
 #: ../mate-screenshot/mate-screenshot.c:896
 #, c-format
 msgid "Screenshot-%s.png"
-msgstr "slika-%s.png"
+msgstr "zaslonska_slika-%s.png"
 
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if a specific window is
@@ -1734,7 +1733,7 @@ msgstr "slika-%s.png"
 #: ../mate-screenshot/mate-screenshot.c:903
 #, c-format
 msgid "Screenshot-%s-%d.png"
-msgstr "slika-%s-%d.png"
+msgstr "zaslonska_slika-%s-%d.png"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
@@ -1750,7 +1749,7 @@ msgstr "zaslonska_slika.png"
 #: ../mate-screenshot/mate-screenshot.c:920
 #, c-format
 msgid "Screenshot-%d.png"
-msgstr "slika-%d.png"
+msgstr "zaslonska_slika-%d.png"
 
 #: ../mate-screenshot/mate-screenshot.c:1285
 msgid "Grab a window instead of the entire screen"
@@ -1782,7 +1781,7 @@ msgstr "učinek"
 
 #: ../mate-screenshot/mate-screenshot.c:1291
 msgid "Interactively set options"
-msgstr "Interaktivna določanje možnosti"
+msgstr "Vzajemno določanje možnosti"
 
 #: ../mate-screenshot/mate-screenshot.c:1302
 msgid "Take a picture of the screen"
@@ -1822,7 +1821,7 @@ msgstr "*"
 
 #: ../mate-screenshot/mate-screenshot.schemas.in.h:1
 msgid "Window-specific screenshot (deprecated)"
-msgstr "Okenski zajem (opuščeno)"
+msgstr "Okensko določen zajem (opuščeno)"
 
 #: ../mate-screenshot/mate-screenshot.schemas.in.h:2
 msgid ""
@@ -1836,15 +1835,15 @@ msgstr "Časovni zamik zajema zaslonske slike"
 
 #: ../mate-screenshot/mate-screenshot.schemas.in.h:4
 msgid "The number of seconds to wait before taking the screenshot."
-msgstr "Čas v sekundah, po katerem se šele zajame zaslonska slika."
+msgstr "Čas v sekundah, po katerem se zajame zaslonska slika."
 
 #: ../mate-screenshot/mate-screenshot.schemas.in.h:5
 msgid "Screenshot directory"
-msgstr "Imenik zaslonske slike"
+msgstr "Mapa zaslonske slike"
 
 #: ../mate-screenshot/mate-screenshot.schemas.in.h:6
 msgid "The directory the last screenshot was saved in."
-msgstr "Imenik, v katerega je bila shranjena zadnja zaslonska slika."
+msgstr "Mapa, v katero je bila shranjena zadnja zaslonska slika."
 
 #: ../mate-screenshot/mate-screenshot.schemas.in.h:7
 msgid "Include Border"
@@ -1876,7 +1875,7 @@ msgstr "Učinki, ki so dodani izven robov. Vrednosti na voljo so \"senca\", \"br
 msgid ""
 "UI definition file for the screenshot program is missing.\n"
 "Please check your installation of mate-utils"
-msgstr "Datoteka uporabniškega vmesnika za program zajemanja zaslonske slike manjka.\nPreverite namestitev mate-utils"
+msgstr "Manjka datoteka z določilom uporabniškega vmesnika za program zajemanja zaslonske slike.\nPreverite namestitev mate-utils"
 
 #: ../mate-screenshot/screenshot-dialog.c:257
 msgid "Select a folder"
@@ -1944,7 +1943,7 @@ msgstr "Pokaži dodatne možnosti"
 msgid ""
 "This key determines if the \"Select more options\" section is expanded when "
 "the search tool is started."
-msgstr "Ključ določa, ali naj bo odsek \"Vključi več možnosti\" razširjen, ko je zagnano orodje za iskanje."
+msgstr "Ta ključ določa, ali naj bo odsek \"Vključi več možnosti\" razširjen, ko je zagnano orodje za iskanje."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
@@ -1962,25 +1961,25 @@ msgstr "Ključ določa, ali naj bo vključena možnost iskanja \"Vsebuje besedil
 #. search option that is translated elsewhere.
 #: ../gsearchtool/mate-search-tool.schemas.in.h:11
 msgid "Select the search option \"Date modified less than\""
-msgstr "Izberite možnost iskanja \"Datum spremembe mlajši kot\""
+msgstr "Izberite možnost iskanja \"Datum spremembe, mlajši kot\""
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:12
 msgid ""
 "This key determines if the \"Date modified less than\" search option is "
 "selected when the search tool is started."
-msgstr "Ključ določa, ali naj bo vključena možnost iskanja \"Datum spremembe mlajši kot\", ko je zagnano orodje za iskanje."
+msgstr "Ključ določa, ali naj bo vključena možnost iskanja \"Datum spremembe, mlajši kot\", ko je zagnano orodje za iskanje."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
 #: ../gsearchtool/mate-search-tool.schemas.in.h:15
 msgid "Select the search option \"Date modified more than\""
-msgstr "Izberite možnost iskanja \"Datum spremembe starejši kot\""
+msgstr "Izberite možnost iskanja \"Datum spremembe, starejši kot\""
 
 #: ../gsearchtool/mate-search-tool.schemas.in.h:16
 msgid ""
 "This key determines if the \"Date modified more than\" search option is "
 "selected when the search tool is started."
-msgstr "Ključ določa, ali naj bo vključena možnost iskanja \"Datum spremembe starejši kot\", ko je zagnano orodje za iskanje."
+msgstr "Ključ določa, ali naj bo vključena možnost iskanja \"Datum spremembe, starejši kot\", ko je zagnano orodje za iskanje."
 
 #. Translators: The quoted text is the label of an available
 #. search option that is translated elsewhere.
@@ -2215,9 +2214,9 @@ msgstr "Ni mogoče odpreti dokumenta pomoči."
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] "Ali ste prepričani, da želite odpreti %d dokumentov?"
-msgstr[1] "Ali ste prepričani, da želite odpreti %d dokument?"
-msgstr[2] "Ali ste prepričani, da želite odpreti %d dokumenta?"
+msgstr[0] "Ali ste prepričani, da želite odpreti %d dokument?"
+msgstr[1] "Ali ste prepričani, da želite odpreti %d dokumenta?"
+msgstr[2] "Ali ste prepričani, da želite odpreti %d dokumentov?"
 msgstr[3] "Ali ste prepričani, da želite odpreti %d dokumente?"
 
 #: ../gsearchtool/gsearchtool-callbacks.c:350
@@ -2225,9 +2224,9 @@ msgstr[3] "Ali ste prepričani, da želite odpreti %d dokumente?"
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
-msgstr[0] "Odprlo se bo %d ločenih oken."
-msgstr[1] "Odprlo se bo %d ločeno okno."
-msgstr[2] "Odprli se bosta %d ločeni okni."
+msgstr[0] "Odprlo se bo %d ločeno okno."
+msgstr[1] "Odprlo se bosta %d ločeni okni."
+msgstr[2] "Odprlo se bo %d ločenih oken."
 msgstr[3] "Odprla se bodo %d ločena okna."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:390
@@ -2242,7 +2241,7 @@ msgstr "Ni mogoče odpreti mape \"%s\"."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:427
 msgid "The caja file manager is not running."
-msgstr "Upravljalnik datotek Caja ne teče."
+msgstr "Upravljalnik datotek Caja se ne izvaja."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:519
 msgid "There is no installed viewer capable of displaying the document."
@@ -2252,9 +2251,9 @@ msgstr "Za prikaz dokumenta ni nameščenega pregledovalnika."
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] "Ali ste prepričani, da želite odpreti %d map?"
-msgstr[1] "Ali ste prepričani, da želite odpreti %d mapo?"
-msgstr[2] "Ali ste prepričani, da želite odpreti %d mapi?"
+msgstr[0] "Ali ste prepričani, da želite odpreti %d mapo?"
+msgstr[1] "Ali ste prepričani, da želite odpreti %d mapi?"
+msgstr[2] "Ali ste prepričani, da želite odpreti %d map?"
 msgstr[3] "Ali ste prepričani, da želite odpreti %d mape?"
 
 #: ../gsearchtool/gsearchtool-callbacks.c:695
@@ -2270,7 +2269,7 @@ msgstr "Ali želite trajno izbrisati \"%s\"?"
 #: ../gsearchtool/gsearchtool-callbacks.c:729
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr "Smeti niso na voljo. Ni mogoče premakniti \"%s\" v smeti."
+msgstr "Smeti niso na voljo. \"%s\" ni mogoče premakniti v smeti."
 
 #: ../gsearchtool/gsearchtool-callbacks.c:768
 #, c-format
@@ -2379,7 +2378,7 @@ msgstr "%A, %-d. %B %Y ob %-H:%M:%S"
 
 #: ../gsearchtool/gsearchtool-support.c:889
 msgid "link (broken)"
-msgstr "povezava (prekinjena)"
+msgstr "povezava (pokvarjena)"
 
 #: ../gsearchtool/gsearchtool-support.c:893
 #, c-format
@@ -2390,7 +2389,6 @@ msgstr "povezava do %s"
 #. Localizers:
 #. * Feel free to leave out the st, nd, rd and th suffix or
 #. * make some or all of them match.
-#. 
 #. localizers: tag used to detect the first copy of a file
 #: ../gsearchtool/gsearchtool-support.c:1495
 msgid " (copy)"
@@ -2490,7 +2488,7 @@ msgstr "Vsebuje _besedilo"
 
 #: ../gsearchtool/gsearchtool.c:82
 msgid "_Date modified less than"
-msgstr "_Datum spremembe mlajši kot"
+msgstr "_Datum spremembe, mlajši kot"
 
 #: ../gsearchtool/gsearchtool.c:82 ../gsearchtool/gsearchtool.c:83
 msgid "days"
@@ -2498,7 +2496,7 @@ msgstr "dni"
 
 #: ../gsearchtool/gsearchtool.c:83
 msgid "Date modified more than"
-msgstr "Datum spremembe starejši kot"
+msgstr "Datum spremembe, starejši kot"
 
 #: ../gsearchtool/gsearchtool.c:85
 msgid "S_ize at least"
@@ -2542,7 +2540,7 @@ msgstr "Pokaži skrite datoteke in varnostne kopije"
 
 #: ../gsearchtool/gsearchtool.c:97
 msgid "Follow symbolic links"
-msgstr "Sledi simboličnim povezavam"
+msgstr "Sledi simbolnim povezavam"
 
 #: ../gsearchtool/gsearchtool.c:98
 msgid "Exclude other filesystems"
@@ -2619,18 +2617,18 @@ msgstr "Ni najdenih datotek"
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
-msgstr[0] "%'d najdenih datotek"
-msgstr[1] "%'d najdena datoteka"
-msgstr[2] "%'d najdeni datoteki"
+msgstr[0] "%'d najdena datoteka"
+msgstr[1] "%'d najdeni datoteki"
+msgstr[2] "%'d najdenih datotek"
 msgstr[3] "%'d najdene datoteke"
 
 #: ../gsearchtool/gsearchtool.c:998 ../gsearchtool/gsearchtool.c:1036
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
-msgstr[0] "%'d najdenih datotek"
-msgstr[1] "%'d najdena datoteka"
-msgstr[2] "%'d najdeni datoteki"
+msgstr[0] "%'d najdena datoteka"
+msgstr[1] "%'d najdeni datoteki"
+msgstr[2] "%'d najdenih datotekih"
 msgstr[3] "%'d najdene datoteke"
 
 #: ../gsearchtool/gsearchtool.c:1127
@@ -2739,7 +2737,7 @@ msgstr "Kliknite za odstranitev možnosti iskanja \"%s\"."
 
 #: ../gsearchtool/gsearchtool.c:2146
 msgid "A_vailable options:"
-msgstr "_Možnosti na voljo:"
+msgstr "Razpoložljive _možnosti:"
 
 #: ../gsearchtool/gsearchtool.c:2175
 msgid "Available options"
@@ -2861,7 +2859,7 @@ msgstr "Program ne sprejme dokumentov preko ukazne vrstice"
 #: ../libeggsmclient/eggdesktopfile.c:1168
 #, c-format
 msgid "Unrecognized launch option: %d"
-msgstr "Nepoznana možnost zagona: %d"
+msgstr "Neprepoznana možnost zagona: %d"
 
 #: ../libeggsmclient/eggdesktopfile.c:1373
 #, c-format
@@ -2921,7 +2919,7 @@ msgstr "Določa dnevniško datoteko, ki se odpre ob zagonu. Privzeto je ali /var
 
 #: ../logview/data/mate-system-log.schemas.in.h:3
 msgid "Size of the font used to display the log"
-msgstr "Velikost pisave uporabljene za prikaz dnevnika"
+msgstr "Velikost pisave, uporabljene za prikaz dnevnika"
 
 #: ../logview/data/mate-system-log.schemas.in.h:4
 msgid ""
@@ -2969,7 +2967,7 @@ msgstr "Skrij"
 
 #: ../logview/data/logview-filter.ui.h:5
 msgid "Foreground:"
-msgstr "Barva besedila:"
+msgstr "Ospredje:"
 
 #: ../logview/data/logview-filter.ui.h:6
 msgid "Background:"
@@ -2982,7 +2980,7 @@ msgstr "Učinek:"
 #: ../logview/logview-app.c:374
 #, c-format
 msgid "Impossible to open the file %s"
-msgstr "Ni mogoče odpreti datoteke: '%s"
+msgstr "Ni mogoče odpreti datoteke '%s"
 
 #: ../logview/logview-filter-manager.c:90
 msgid "Filter name is empty!"
@@ -3043,7 +3041,7 @@ msgstr "Počisti iskalni niz"
 
 #: ../logview/logview-log.c:595
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
-msgstr "Napaka med razširjanjem GZip beležnice. Datoteka je morda poškodovana."
+msgstr "Napaka med razširjanjem beležnice, stisnjene z GZip. Datoteka je morda poškodovana."
 
 #: ../logview/logview-log.c:642
 msgid "You don't have enough permissions to read the file."
@@ -3055,7 +3053,7 @@ msgstr "Datoteka ni običajna datoteka ali pa ni besedilna."
 
 #: ../logview/logview-log.c:739
 msgid "This version of System Log does not support GZipped logs."
-msgstr "Različica programa ne podpira GZip skrčenih dnevnikov."
+msgstr "Različica programa ne podpira dnevnikov, skrčenih z GZip."
 
 #: ../logview/logview-loglist.c:311
 msgid "Loading..."
@@ -3098,7 +3096,7 @@ msgstr "Odpri dnevnik"
 #: ../logview/logview-window.c:356
 #, c-format
 msgid "There was an error displaying help: %s"
-msgstr "Pri prikazovanju pomoči je prišlo do napake: %s"
+msgstr "Med prikazovanjem pomoči je prišlo do napake: %s"
 
 #: ../logview/logview-window.c:470
 msgid "Wrapped"
@@ -3182,7 +3180,7 @@ msgstr "Odpre vsebino pomoči za pregledovalnik dnevnikov"
 
 #: ../logview/logview-window.c:839
 msgid "Show the about dialog for the log viewer"
-msgstr "Pokaži pogovorno okno o programu za pregledovalnik dnevnikov"
+msgstr "Pokaži pogovorno okno O programu za pregledovalnik dnevnikov"
 
 #: ../logview/logview-window.c:844
 msgid "_Statusbar"
