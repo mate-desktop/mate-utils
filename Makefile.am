@@ -32,6 +32,7 @@ SUBDIRS = \
 	$(NULL)
 
 EXTRA_DIST = \
+	autogen.sh \
 	omf.make \
 	xmldocs.make \
 	COPYING.libs \
