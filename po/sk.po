@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Ivan Noris <vix@vazka.sk>, 2005
-# Ján Ďanovský <dagsoftware@yahoo.com>, 2013
+# Ján Ďanovský <dagsoftware@yahoo.com>, 2013-2014
 # pavolzetor <pavol@klacansky.com>, 2008, 2009, 2010
 # pavolzetor <pavol@klacansky.com>, 2008-2010
 # Stanislav Višňovský <visnovsky@kde.org>, 2003
@@ -16,8 +16,8 @@ msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-12 11:59+0100\n"
-"PO-Revision-Date: 2014-02-17 19:33+0000\n"
-"Last-Translator: tibbi <tibbbi2@gmail.com>\n"
+"PO-Revision-Date: 2014-02-20 23:20+0000\n"
+"Last-Translator: Ján Ďanovský <dagsoftware@yahoo.com>\n"
 "Language-Team: Slovak (http://www.transifex.com/projects/p/MATE/language/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -166,11 +166,11 @@ msgstr "Či má byť stavový riadok viditeľný v dolnej časti hlavného okna.
 
 #: ../baobab/data/baobab.schemas.in.h:5
 msgid "Enable monitoring of home directory"
-msgstr "Povoliť sledovanie domovského adresára"
+msgstr "Povoliť sledovanie domovského priečinka"
 
 #: ../baobab/data/baobab.schemas.in.h:6
 msgid "Whether any change to the home directory should be monitored."
-msgstr "Či majú byť sledované akékoľvek zmeny v domovskom adresári."
+msgstr "Či majú byť sledované akékoľvek zmeny v domovskom priečinku."
 
 #: ../baobab/data/baobab.schemas.in.h:7
 msgid "Excluded partitions URIs"
@@ -273,11 +273,11 @@ msgstr "Zobraziť verziu"
 
 #: ../baobab/src/baobab.c:1215
 msgid "[DIRECTORY]"
-msgstr "[ADRESÁR]"
+msgstr "[PRIEČINOK]"
 
 #: ../baobab/src/baobab.c:1245
 msgid "Too many arguments. Only one directory can be specified."
-msgstr "Príliš veľa parametrov. Môže byť zadaný len jeden adresár."
+msgstr "Príliš veľa parametrov. Môže byť zadaný len jeden priečinok."
 
 #: ../baobab/src/baobab.c:1262
 msgid "Could not detect any mount point."
@@ -690,7 +690,7 @@ msgstr "Názov zdroja slovníka používaného na získavanie definícií slov."
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:15
 msgid "The default width of the application window"
-msgstr "Predvolená šírka okna aplikácie"
+msgstr "Predvolená šírka okna programu"
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:16
 msgid ""
@@ -701,7 +701,7 @@ msgstr "Tento kľúč definuje šírku okna, a je použitý na zapamätanie veľ
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:17
 msgid "The default height of the application window"
-msgstr "Predvolená výška okna aplikácie"
+msgstr "Predvolená výška okna programu"
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:18
 msgid ""
@@ -712,7 +712,7 @@ msgstr "Tento kľúč definuje výšku okna, a je použitý na zapamätanie veľ
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:19
 msgid "Whether the application window should be maximized"
-msgstr "Či má byť okno aplikácie maximalizované"
+msgstr "Či má byť okno programu maximalizované"
 
 #: ../mate-dictionary/data/mate-dictionary.schemas.in.h:20
 msgid ""
@@ -1391,7 +1391,7 @@ msgstr "Nepodarilo sa premenovať súbor '%s' na '%s': %s"
 #: ../mate-dictionary/src/gdict-common.c:127
 #, c-format
 msgid "Unable to create the data directory '%s': %s"
-msgstr "Nepodarilo sa vytvoriť adresár údajov '%s': %s"
+msgstr "Nepodarilo sa vytvoriť priečinok dát '%s': %s"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:244
 msgid "Edit Dictionary Source"
@@ -1844,11 +1844,11 @@ msgstr "Počet sekúnd, ktoré počkať pred zosnímaním obrazovky."
 
 #: ../mate-screenshot/mate-screenshot.schemas.in.h:5
 msgid "Screenshot directory"
-msgstr "Adresár snímok obrazoviek"
+msgstr "Priečinok snímok obrazoviek"
 
 #: ../mate-screenshot/mate-screenshot.schemas.in.h:6
 msgid "The directory the last screenshot was saved in."
-msgstr "Adresár naposledy použitý pri zachytávaní snímky obrazovky."
+msgstr "Priečinok naposledy použitý pri zachytávaní snímky obrazovky."
 
 #: ../mate-screenshot/mate-screenshot.schemas.in.h:7
 msgid "Include Border"
@@ -2550,7 +2550,7 @@ msgstr "Vynechať iné súborové systémy"
 
 #: ../gsearchtool/gsearchtool.c:156
 msgid "Show version of the application"
-msgstr "Zobraziť verziu aplikácie"
+msgstr "Zobraziť verziu programu"
 
 #: ../gsearchtool/gsearchtool.c:157 ../gsearchtool/gsearchtool.c:162
 #: ../gsearchtool/gsearchtool.c:171
@@ -2854,7 +2854,7 @@ msgstr "Spúšťa sa %s"
 #: ../libeggsmclient/eggdesktopfile.c:1100
 #, c-format
 msgid "Application does not accept documents on command line"
-msgstr "Aplikácia neprijíma dokumenty v príkazovom riadku"
+msgstr "Program neprijíma dokumenty v príkazovom riadku"
 
 #: ../libeggsmclient/eggdesktopfile.c:1168
 #, c-format
@@ -3061,7 +3061,7 @@ msgstr "Načítava sa..."
 
 #: ../logview/logview-main.c:61
 msgid "Show the application's version"
-msgstr "Zobraziť verziu aplikácie"
+msgstr "Zobraziť verziu programu"
 
 #: ../logview/logview-main.c:63
 msgid "[LOGFILE...]"
@@ -3180,7 +3180,7 @@ msgstr "Otvoriť obsah pomocníka pre prehliadač systémových záznamov"
 
 #: ../logview/logview-window.c:839
 msgid "Show the about dialog for the log viewer"
-msgstr "Zobraziť dialóg o aplikácii pre prehliadač systémových záznamov"
+msgstr "Zobraziť dialóg o programe pre prehliadač systémových záznamov"
 
 #: ../logview/logview-window.c:844
 msgid "_Statusbar"
