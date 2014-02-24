@@ -568,9 +568,10 @@ gsearch_history_entry_new (const gchar *history_id,
 	store = gtk_list_store_new(1, G_TYPE_STRING);
 
 	ret = g_object_new(GSEARCH_TYPE_HISTORY_ENTRY,
+						"has-entry", TRUE,
 						"history-id", history_id,
 						"model", store,
-						"has-entry", TRUE,
+						"entry-text-column", 0,
 						NULL);
 
 	g_object_unref (store);
