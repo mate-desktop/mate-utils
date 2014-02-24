@@ -557,7 +557,7 @@ gsearch_history_entry_new (const gchar *history_id,
 	GtkWidget *ret;
 	GtkListStore *store;
 
-	g_return_val_if_fail(history_id != NULL, NULL);
+	g_return_val_if_fail (history_id != NULL, NULL);
 
 	/* Note that we are setting the model, so
 	 * user must be careful to always manipulate
@@ -565,12 +565,13 @@ gsearch_history_entry_new (const gchar *history_id,
 	 * functions.
 	 */
 
-	store = gtk_list_store_new(1, G_TYPE_STRING);
+	store = gtk_list_store_new (1, G_TYPE_STRING);
 
-	ret = g_object_new(GSEARCH_TYPE_HISTORY_ENTRY,
+	ret = g_object_new (GSEARCH_TYPE_HISTORY_ENTRY,
+						"has-entry", TRUE,
 						"history-id", history_id,
 						"model", store,
-						"has-entry", TRUE,
+						"entry-text-column", 0,
 						NULL);
 
 	g_object_unref (store);
