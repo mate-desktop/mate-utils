@@ -88,3 +88,5 @@ dist-hook:
 install-exec-local:
 	rm -f $(DESTDIR)$(bindir)/mate-panel-screenshot
 	ln -s mate-screenshot $(DESTDIR)$(bindir)/mate-panel-screenshot
+	rm -f $(DESTDIR)$(mandir)/man1/mate-panel-screenshot.1
+	ln -s mate-screenshot.1 $(DESTDIR)$(mandir)/man1/mate-panel-screenshot.1
