@@ -12,6 +12,7 @@ AC_CONFIG_MACRO_DIR([m4])
 
 AC_CONFIG_HEADERS([config.h])
 AM_INIT_AUTOMAKE([dist-xz no-dist-gzip check-news])
+m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
 MATE_COMMON_INIT
 
