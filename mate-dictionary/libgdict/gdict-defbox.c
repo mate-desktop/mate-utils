@@ -38,8 +38,11 @@
 #include <string.h>
 #include <stdarg.h>
 
-#include <gdk/gdkkeysyms.h>
 #include <gtk/gtk.h>
+#include <gdk/gdkkeysyms.h>
+#if GTK_CHECK_VERSION (3, 0, 0)
+#include <gdk/gdkkeysyms-compat.h>
+#endif
 #include <glib/gi18n-lib.h>
 
 #include "gdict-defbox.h"

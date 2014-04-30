@@ -27,9 +27,12 @@
 
 #include <glib/gi18n.h>
 #include <gio/gio.h>
-#include <gdk/gdkkeysyms.h>
-#include <gdk-pixbuf/gdk-pixbuf.h>
 #include <gtk/gtk.h>
+#include <gdk/gdkkeysyms.h>
+#if GTK_CHECK_VERSION (3, 0, 0)
+#include <gdk/gdkkeysyms-compat.h>
+#endif
+#include <gdk-pixbuf/gdk-pixbuf.h>
 
 #include "gdict-applet.h"
 #include "gdict-about.h"
@@ -742,6 +745,7 @@ gdict_applet_cmd_help (GtkAction *action,
     }
 }
 
+#if !GTK_CHECK_VERSION (3, 0, 0)
 static void
 gdict_applet_change_background (MatePanelApplet               *applet,
 				MatePanelAppletBackgroundType  type,
@@ -754,6 +758,7 @@ gdict_applet_change_background (MatePanelApplet               *applet,
     								       color,
     								       pixmap);
 }
+#endif
 
 static void
 gdict_applet_change_orient (MatePanelApplet       *applet,
@@ -1111,7 +1116,9 @@ gdict_applet_class_init (GdictAppletClass *klass)
   widget_class->size_allocate = gdict_applet_size_allocate;
   widget_class->style_set = gdict_applet_style_set;
   
+#if !GTK_CHECK_VERSION (3, 0, 0)
   applet_class->change_background = gdict_applet_change_background;
+#endif
   applet_class->change_orient = gdict_applet_change_orient;
   
   g_type_class_add_private (gobject_class, sizeof (GdictAppletPrivate));

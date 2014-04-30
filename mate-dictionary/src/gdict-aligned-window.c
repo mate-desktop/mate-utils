@@ -172,14 +172,13 @@ gdict_aligned_window_position (GdictAlignedWindow *window)
   gdk_window = gtk_widget_get_window (align_widget);
 
   gdk_flush ();
-  
-  gdk_window_get_geometry (gtk_widget_get_window (GTK_WIDGET (window)),
-  			   NULL,
-  			   NULL,
-  			   &our_width,
-  			   &our_height,
-  			   NULL);
-  
+
+#if GTK_CHECK_VERSION (3, 0, 0)
+  gdk_window_get_geometry (gtk_widget_get_window (GTK_WIDGET (window)), NULL, NULL, &our_width, &our_height);
+#else
+  gdk_window_get_geometry (gtk_widget_get_window (GTK_WIDGET (window)), NULL, NULL, &our_width, &our_height, NULL);
+#endif
+
   /* stick, skip taskbar and pager */
   gtk_window_stick (GTK_WINDOW (window));
   gtk_window_set_skip_taskbar_hint (GTK_WINDOW (window), TRUE);
@@ -192,13 +191,12 @@ gdict_aligned_window_position (GdictAlignedWindow *window)
   gdk_window_get_origin (gdk_window,
   			 &entry_x,
   			 &entry_y);
-  gdk_window_get_geometry (gdk_window,
-  			   NULL,
-  			   NULL,
-  			   &entry_width,
-  			   &entry_height,
-  			   NULL);
-  
+#if GTK_CHECK_VERSION (3, 0, 0)
+  gdk_window_get_geometry (gdk_window, NULL, NULL, &entry_width, &entry_height);
+#else
+  gdk_window_get_geometry (gdk_window, NULL, NULL, &entry_width, &entry_height, NULL);
+#endif
+
   if (entry_x + our_width < gdk_screen_width ())
     x = entry_x + 1;
   else
