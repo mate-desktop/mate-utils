@@ -38,7 +38,11 @@
 #include <glib/gi18n.h>
 #include <gio/gio.h>
 
+#include <gtk/gtk.h>
 #include <gdk/gdkkeysyms.h>
+#if GTK_CHECK_VERSION (3, 0, 0)
+#include <gdk/gdkkeysyms-compat.h>
+#endif
 
 #include "gsearchtool.h"
 #include "gsearchtool-callbacks.h"
@@ -200,7 +204,7 @@ click_help_cb (GtkWidget * widget,
 
 		gtk_window_set_title (GTK_WINDOW (dialog), "");
 		gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
-		gtk_box_set_spacing (GTK_BOX (GTK_DIALOG (dialog)->vbox), 14);
+		gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
 		g_signal_connect (G_OBJECT (dialog),
                                   "response",
@@ -365,7 +369,7 @@ display_dialog_file_open_limit (GtkWidget * window,
 
 	gtk_window_set_title (GTK_WINDOW (dialog), "");
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
-	gtk_box_set_spacing (GTK_BOX (GTK_DIALOG (dialog)->vbox), 14);
+	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
 	button = gtk_button_new_from_stock ("gtk-open");
 	gtk_widget_set_can_default (button, TRUE);
@@ -402,7 +406,7 @@ display_dialog_could_not_open_file (GtkWidget * window,
 
 	gtk_window_set_title (GTK_WINDOW (dialog), "");
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
-	gtk_box_set_spacing (GTK_BOX (GTK_DIALOG (dialog)->vbox), 14);
+	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
 	g_signal_connect (G_OBJECT (dialog),
                		  "response",
@@ -431,7 +435,7 @@ display_dialog_could_not_open_folder (GtkWidget * window,
 
 	gtk_window_set_title (GTK_WINDOW (dialog), "");
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
-	gtk_box_set_spacing (GTK_BOX (GTK_DIALOG (dialog)->vbox), 14);
+	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
 	g_signal_connect (G_OBJECT (dialog),
                		  "response",
@@ -562,7 +566,7 @@ display_dialog_folder_open_limit (GtkWidget * window,
 
 	gtk_window_set_title (GTK_WINDOW (dialog), "");
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
-	gtk_box_set_spacing (GTK_BOX (GTK_DIALOG (dialog)->vbox), 14);
+	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
 	button = gtk_button_new_from_stock ("gtk-open");
 	gtk_widget_set_can_default (button, TRUE);
@@ -707,7 +711,7 @@ display_dialog_could_not_move_to_trash (GtkWidget * window,
 
 	gtk_window_set_title (GTK_WINDOW (dialog), "");
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
-	gtk_box_set_spacing (GTK_BOX (GTK_DIALOG (dialog)->vbox), 14);
+	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
 	g_signal_connect (G_OBJECT (dialog),
                		  "response",
@@ -742,7 +746,7 @@ display_dialog_delete_permanently (GtkWidget * window,
 
 	gtk_window_set_title (GTK_WINDOW (dialog), "");
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
-	gtk_box_set_spacing (GTK_BOX (GTK_DIALOG (dialog)->vbox), 14);
+	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
 	button = gtk_button_new_from_stock ("gtk-delete");
 	gtk_widget_set_can_default (button, TRUE);
@@ -780,7 +784,7 @@ display_dialog_could_not_delete (GtkWidget * window,
 
 	gtk_window_set_title (GTK_WINDOW (dialog), "");
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
-	gtk_box_set_spacing (GTK_BOX (GTK_DIALOG (dialog)->vbox), 14);
+	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
 	g_signal_connect (G_OBJECT (dialog),
                		  "response",
@@ -1653,7 +1657,7 @@ display_dialog_could_not_save_no_name (GtkWidget * window)
 
 	gtk_window_set_title (GTK_WINDOW (dialog), "");
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
-	gtk_box_set_spacing (GTK_BOX (GTK_DIALOG (dialog)->vbox), 14);
+	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
 	g_signal_connect (G_OBJECT (dialog),
 	                  "response",
@@ -1685,7 +1689,7 @@ display_dialog_could_not_save_to (GtkWidget * window,
 
 	gtk_window_set_title (GTK_WINDOW (dialog), "");
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
-	gtk_box_set_spacing (GTK_BOX (GTK_DIALOG (dialog)->vbox), 14);
+	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
 	g_signal_connect (G_OBJECT (dialog),
 	                  "response",
@@ -1722,7 +1726,7 @@ display_dialog_could_not_save_exists (GtkWidget * window,
 
 	gtk_window_set_title (GTK_WINDOW (dialog), "");
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
-	gtk_box_set_spacing (GTK_BOX (GTK_DIALOG (dialog)->vbox), 14);
+	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
 	button = gsearchtool_button_new_with_stock_icon (_("_Replace"), GTK_STOCK_OK);
 	GTK_WIDGET_SET_FLAGS (button, GTK_CAN_DEFAULT);
