@@ -30,6 +30,17 @@
 #include <X11/extensions/shape.h>
 #endif
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+#define GdkRegion cairo_region_t
+#define gdk_region_new cairo_region_create
+#define gdk_region_destroy cairo_region_destroy
+#define gdk_region_rectangle cairo_region_create_rectangle
+#define gdk_region_offset cairo_region_translate
+#define gdk_region_intersect cairo_region_intersect
+#define gdk_region_subtract cairo_region_subtract
+#define gdk_region_union_with_rect cairo_region_union_rectangle
+#endif
+
 static GtkWidget *selection_window;
 
 #define SELECTION_NAME "_MATE_PANEL_SCREENSHOT"
@@ -348,15 +359,21 @@ typedef struct {
 } select_area_filter_data;
 
 static gboolean
+#if GTK_CHECK_VERSION (3, 0, 0)
+draw (GtkWidget *window, cairo_t *cr, gpointer unused)
+#else
 expose (GtkWidget *window, GdkEventExpose *event, gpointer unused)
+#endif
 {
   GtkAllocation allocation;
   GtkStyle *style;
+#if !GTK_CHECK_VERSION (3, 0, 0)
   cairo_t *cr;
 
   cr = gdk_cairo_create (event->window);
   gdk_cairo_region (cr, event->region);
   cairo_clip (cr);
+#endif
 
   style = gtk_widget_get_style (window);
 
@@ -385,7 +402,9 @@ expose (GtkWidget *window, GdkEventExpose *event, gpointer unused)
       cairo_paint (cr);
     }
 
+#if !GTK_CHECK_VERSION (3, 0, 0)
   cairo_destroy (cr);
+#endif
 
   return TRUE;
 }
@@ -395,17 +414,35 @@ create_select_window (void)
 {
   GtkWidget *window;
   GdkScreen *screen;
+#if GTK_CHECK_VERSION (3, 0, 0)
+  GdkVisual *visual;
+#endif
 
   screen = gdk_screen_get_default ();
+#if GTK_CHECK_VERSION (3, 0, 0)
+  visual = gdk_screen_get_rgba_visual (screen);
+#endif
 
   window = gtk_window_new (GTK_WINDOW_POPUP);
   if (gdk_screen_is_composited (screen) &&
+#if GTK_CHECK_VERSION (3, 0, 0)
+      visual)
+#else
       gdk_screen_get_rgba_colormap (screen))
+#endif
     {
+#if GTK_CHECK_VERSION (3, 0, 0)
+      gtk_widget_set_visual (window, visual);
+#else
       gtk_widget_set_colormap (window, gdk_screen_get_rgba_colormap (screen));
+#endif
       gtk_widget_set_app_paintable (window, TRUE);
     }
+#if GTK_CHECK_VERSION (3, 0, 0)
+  g_signal_connect (window, "draw", G_CALLBACK (draw), NULL);
+#else
   g_signal_connect (window, "expose-event", G_CALLBACK (expose), NULL);
+#endif
 
   return window;
 }
@@ -444,7 +481,11 @@ select_area_filter (GdkXEvent *gdk_xevent,
                                    data->window);
       return GDK_FILTER_REMOVE;
     case KeyPress:
+#if GTK_CHECK_VERSION (3, 0, 0)
+      if (xevent->xkey.keycode == XKeysymToKeycode (gdk_x11_display_get_xdisplay(gdk_display_get_default()), XK_Escape))
+#else
       if (xevent->xkey.keycode == XKeysymToKeycode (gdk_display, XK_Escape))
+#endif
         {
           data->rect.x = 0;
           data->rect.y = 0;
@@ -527,7 +568,11 @@ find_wm_window (Window xid)
 
   do
     {
+#if GTK_CHECK_VERSION (3, 0, 0)
+      if (XQueryTree (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()), xid, &root,
+#else
       if (XQueryTree (GDK_DISPLAY (), xid, &root,
+#endif
 		      &parent, &children, &nchildren) == 0)
 	{
 	  g_warning ("Couldn't find window manager window");
@@ -607,13 +652,19 @@ blank_rectangle_in_pixbuf (GdkPixbuf *pixbuf, GdkRectangle *rect)
 static void
 blank_region_in_pixbuf (GdkPixbuf *pixbuf, GdkRegion *region)
 {
+#if !GTK_CHECK_VERSION (3, 0, 0)
   GdkRectangle *rects;
+#endif
   int n_rects;
   int i;
   int width, height;
   GdkRectangle pixbuf_rect;
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  n_rects = cairo_region_num_rectangles (region);
+#else
   gdk_region_get_rectangles (region, &rects, &n_rects);
+#endif
 
   width = gdk_pixbuf_get_width (pixbuf);
   height = gdk_pixbuf_get_height (pixbuf);
@@ -626,12 +677,19 @@ blank_region_in_pixbuf (GdkPixbuf *pixbuf, GdkRegion *region)
   for (i = 0; i < n_rects; i++)
     {
       GdkRectangle dest;
+#if GTK_CHECK_VERSION (3, 0, 0)
+      cairo_rectangle_int_t rect;
 
+      cairo_region_get_rectangle (region, i, &rect);
+      if (gdk_rectangle_intersect (&rect, &pixbuf_rect, &dest))
+#else
       if (gdk_rectangle_intersect (rects + i, &pixbuf_rect, &dest))
+#endif
 	blank_rectangle_in_pixbuf (pixbuf, &dest);
     }
-
+#if !GTK_CHECK_VERSION (3, 0, 0)
   g_free (rects);
+#endif
 }
 
 /* When there are multiple monitors with different resolutions, the visible area
@@ -648,7 +706,11 @@ mask_monitors (GdkPixbuf *pixbuf, GdkWindow *root_window)
   GdkRegion *invisible_region;
   GdkRectangle rect;
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  screen = gdk_window_get_screen (root_window);
+#else
   screen = gdk_drawable_get_screen (GDK_DRAWABLE (root_window));
+#endif
 
   region_with_monitors = make_region_with_monitors (screen);
 
@@ -684,11 +746,19 @@ screenshot_get_pixbuf (GdkWindow    *window,
     {
       Window xid, wm;
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+      xid = GDK_WINDOW_XID (window);
+#else
       xid = GDK_WINDOW_XWINDOW (window);
+#endif
       wm = find_wm_window (xid);
 
       if (wm != None)
+#if GTK_CHECK_VERSION (3, 0, 0)
+        window = gdk_x11_window_foreign_new_for_display (gdk_display_get_default (), wm);
+#else
         window = gdk_window_foreign_new (wm);
+#endif
 
       /* fallback to no border if we can't find the WM window. */
     }
@@ -735,9 +805,15 @@ screenshot_get_pixbuf (GdkWindow    *window,
       height = rectangle->height;
     }
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  screenshot = gdk_pixbuf_get_from_window (root,
+                                           x_orig, y_orig,
+                                           width, height);
+#else
   screenshot = gdk_pixbuf_get_from_drawable (NULL, root, NULL,
                                              x_orig, y_orig, 0, 0,
                                              width, height);
+#endif
 
   /*
    * Masking currently only works properly with full-screen shots
@@ -756,8 +832,13 @@ screenshot_get_pixbuf (GdkWindow    *window,
        * of the WM decoration.
        */
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+      rectangles = XShapeGetRectangles (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()),
+                                        GDK_WINDOW_XID (window),
+#else
       rectangles = XShapeGetRectangles (GDK_DISPLAY (),
                                         GDK_WINDOW_XWINDOW (window),
+#endif
                                         ShapeBounding,
                                         &rectangle_count,
                                         &rectangle_order);
@@ -920,8 +1001,8 @@ screenshot_show_error_dialog (GtkWindow   *parent,
     gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
   					      "%s", detail);
 
-  if (parent && parent->group)
-    gtk_window_group_add_window (parent->group, GTK_WINDOW (dialog));
+  if (parent && gtk_window_get_group (parent))
+    gtk_window_group_add_window (gtk_window_get_group (parent), GTK_WINDOW (dialog));
 
   gtk_dialog_run (GTK_DIALOG (dialog));
 

@@ -55,7 +55,7 @@ static gboolean
 on_toplevel_key_press_event (GtkWidget *widget,
 			     GdkEventKey *key)
 {
-  if (key->keyval == GDK_F1)
+  if (key->keyval == GDK_KEY_F1)
     {
       gtk_dialog_response (GTK_DIALOG (widget), GTK_RESPONSE_HELP);
       return TRUE;
@@ -65,14 +65,18 @@ on_toplevel_key_press_event (GtkWidget *widget,
 }
 
 static void
-on_preview_expose_event (GtkWidget      *drawing_area,
-			 GdkEventExpose *event,
-			 gpointer        data)
+#if GTK_CHECK_VERSION (3, 0, 0)
+on_preview_draw (GtkWidget *drawing_area, cairo_t *cr, gpointer data)
+#else
+on_preview_expose_event (GtkWidget *drawing_area, GdkEventExpose *event, gpointer data)
+#endif
 {
   ScreenshotDialog *dialog = data;
   GdkPixbuf *pixbuf = NULL;
   gboolean free_pixbuf = FALSE;
+#if !GTK_CHECK_VERSION (3, 0, 0)
   cairo_t *cr;
+#endif
 
   /* Stolen from GtkImage.  I really should just make the drawing area an
    * image some day */
@@ -85,7 +89,7 @@ on_preview_expose_event (GtkWidget      *drawing_area,
       gtk_icon_source_set_size (source, GTK_ICON_SIZE_SMALL_TOOLBAR);
       gtk_icon_source_set_size_wildcarded (source, FALSE);
                   
-      pixbuf = gtk_style_render_icon (drawing_area->style,
+      pixbuf = gtk_style_render_icon (gtk_widget_get_style (drawing_area),
 				      source,
 				      gtk_widget_get_direction (drawing_area),
 				      gtk_widget_get_state (drawing_area),
@@ -100,14 +104,18 @@ on_preview_expose_event (GtkWidget      *drawing_area,
       pixbuf = g_object_ref (dialog->preview_image);
     }
   
-  cr = gdk_cairo_create (drawing_area->window);
+#if !GTK_CHECK_VERSION (3, 0, 0)
+  cr = gdk_cairo_create (gtk_widget_get_window (drawing_area));
   gdk_cairo_region (cr, event->region);
   cairo_clip (cr);
+#endif
 
   gdk_cairo_set_source_pixbuf (cr, pixbuf, 0, 0);
   cairo_paint (cr);
 
+#if !GTK_CHECK_VERSION (3, 0, 0)
   cairo_destroy (cr);
+#endif
 
   g_object_unref (pixbuf);
 }
@@ -268,7 +276,11 @@ screenshot_dialog_new (GdkPixbuf *screenshot,
 			(gfloat) gdk_pixbuf_get_height (screenshot),
 			FALSE);
   g_signal_connect (toplevel, "key_press_event", G_CALLBACK (on_toplevel_key_press_event), dialog);
+#if GTK_CHECK_VERSION (3, 0, 0)
+  g_signal_connect (preview_darea, "draw", G_CALLBACK (on_preview_draw), dialog);
+#else
   g_signal_connect (preview_darea, "expose_event", G_CALLBACK (on_preview_expose_event), dialog);
+#endif
   g_signal_connect (preview_darea, "button_press_event", G_CALLBACK (on_preview_button_press_event), dialog);
   g_signal_connect (preview_darea, "button_release_event", G_CALLBACK (on_preview_button_release_event), dialog);
   g_signal_connect (preview_darea, "configure_event", G_CALLBACK (on_preview_configure_event), dialog);
@@ -388,12 +400,12 @@ screenshot_dialog_set_busy (ScreenshotDialog *dialog,
       GdkCursor *cursor;
       /* Change cursor to busy */
       cursor = gdk_cursor_new (GDK_WATCH);
-      gdk_window_set_cursor (toplevel->window, cursor);
+      gdk_window_set_cursor (gtk_widget_get_window (toplevel), cursor);
       gdk_cursor_unref (cursor);
     }
   else
     {
-      gdk_window_set_cursor (toplevel->window, NULL);
+      gdk_window_set_cursor (gtk_widget_get_window (toplevel), NULL);
     }
 
   gtk_widget_set_sensitive (toplevel, ! busy);
