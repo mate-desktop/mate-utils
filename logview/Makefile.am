@@ -7,6 +7,7 @@ AM_CPPFLAGS = \
 	-DLOGVIEWINSTALLPREFIX=\""$(prefix)/\""			\
 	-DLOGVIEW_DATADIR=\""$(pkgdatadir)"\"			\
 	$(SUN_OS)						\
+	$(DISABLE_DEPRECATED)					\
 	$(NULL)
 
 bin_PROGRAMS = mate-system-log

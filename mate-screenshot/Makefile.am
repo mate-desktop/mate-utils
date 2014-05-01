@@ -5,6 +5,7 @@ AM_CPPFLAGS =							\
 	-I$(srcdir)						\
 	-DMATELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"	\
 	-DUIDIR=\""$(uidir)"\"					\
+	$(DISABLE_DEPRECATED)					\
 	$(NULL)
 
 bin_PROGRAMS = \

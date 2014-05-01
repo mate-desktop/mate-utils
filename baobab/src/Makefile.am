@@ -8,6 +8,7 @@ AM_CPPFLAGS = \
 	-DPKGDATADIR=\""$(datadir)/mate-disk-usage-analyzer"\" \
 	-DBAOBAB_PIX_DIR=\""$(datadir)/mate-disk-usage-analyzer/pixmaps/"\" \
 	-DMATELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+	$(DISABLE_DEPRECATED) \
 	$(NULL)
 
 bin_PROGRAMS = mate-disk-usage-analyzer
