@@ -75,6 +75,15 @@ GIO_UNIX_REQUIRED=2.18.0
 LIBMATE_PANEL_APPLET_REQUIRED=1.7.0
 LIBGTOP_REQUIRED=2.12.0
 
+AC_ARG_ENABLE(deprecation_flags,
+	[AC_HELP_STRING([--enable-deprecation-flags],
+		[use *_DISABLE_DEPRECATED flags @<:@default=no@:>@])],,
+	[enable_deprecation_flags=no])
+
+if test "x$enable_deprecated" = "xyes"; then
+	DISABLE_DEPRECATED=""
+fi
+
 dnl GTK library version
 
 AC_MSG_CHECKING([which gtk+ version to compile against])
