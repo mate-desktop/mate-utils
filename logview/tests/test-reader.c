@@ -48,8 +48,6 @@ callback (LogviewLog *log,
 
 int main (int argc, char **argv)
 {
-  g_type_init ();
-
   loop = g_main_loop_new (NULL, FALSE);
   logview_log_create ("/var/log/dpkg.log.2.gz", callback, NULL);
   g_main_loop_run (loop);

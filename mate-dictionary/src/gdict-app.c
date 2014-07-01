@@ -352,12 +352,6 @@ gdict_init (int *argc, char ***argv)
     { NULL },
   };
   
-  /* we must have GLib's type system up and running in order to create the
-   * singleton object for mate-dictionary; thus, we can't rely on
-   * mate_program_init() calling g_type_init() for us.
-   */
-  g_type_init ();
-
   g_assert (singleton == NULL);  
   
   singleton = GDICT_APP (g_object_new (GDICT_TYPE_APP, NULL));
