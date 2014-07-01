@@ -1723,7 +1723,7 @@ display_dialog_could_not_save_exists (GtkWidget * window,
 	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
 	button = gsearchtool_button_new_with_stock_icon (_("_Replace"), GTK_STOCK_OK);
-	GTK_WIDGET_SET_FLAGS (button, GTK_CAN_DEFAULT);
+	gtk_widget_set_can_default (button, TRUE);
 	gtk_widget_show (button);
 
 	gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, GTK_RESPONSE_OK);
