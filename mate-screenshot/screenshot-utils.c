@@ -481,11 +481,7 @@ select_area_filter (GdkXEvent *gdk_xevent,
                                    data->window);
       return GDK_FILTER_REMOVE;
     case KeyPress:
-#if GTK_CHECK_VERSION (3, 0, 0)
       if (xevent->xkey.keycode == XKeysymToKeycode (gdk_x11_display_get_xdisplay(gdk_display_get_default()), XK_Escape))
-#else
-      if (xevent->xkey.keycode == XKeysymToKeycode (gdk_display, XK_Escape))
-#endif
         {
           data->rect.x = 0;
           data->rect.y = 0;
@@ -568,11 +564,7 @@ find_wm_window (Window xid)
 
   do
     {
-#if GTK_CHECK_VERSION (3, 0, 0)
       if (XQueryTree (GDK_DISPLAY_XDISPLAY (gdk_display_get_default ()), xid, &root,
-#else
-      if (XQueryTree (GDK_DISPLAY (), xid, &root,
-#endif
 		      &parent, &children, &nchildren) == 0)
 	{
 	  g_warning ("Couldn't find window manager window");
@@ -706,11 +698,7 @@ mask_monitors (GdkPixbuf *pixbuf, GdkWindow *root_window)
   GdkRegion *invisible_region;
   GdkRectangle rect;
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   screen = gdk_window_get_screen (root_window);
-#else
-  screen = gdk_drawable_get_screen (GDK_DRAWABLE (root_window));
-#endif
 
   region_with_monitors = make_region_with_monitors (screen);
 
@@ -746,31 +734,19 @@ screenshot_get_pixbuf (GdkWindow    *window,
     {
       Window xid, wm;
 
-#if GTK_CHECK_VERSION (3, 0, 0)
       xid = GDK_WINDOW_XID (window);
-#else
-      xid = GDK_WINDOW_XWINDOW (window);
-#endif
       wm = find_wm_window (xid);
 
       if (wm != None)
-#if GTK_CHECK_VERSION (3, 0, 0)
         window = gdk_x11_window_foreign_new_for_display (gdk_display_get_default (), wm);
-#else
-        window = gdk_window_foreign_new (wm);
-#endif
 
       /* fallback to no border if we can't find the WM window. */
     }
 
   root = gdk_get_default_root_window ();
 
-	#if GTK_CHECK_VERSION(3, 0, 0)
 		real_width = gdk_window_get_width(window);
 		real_height = gdk_window_get_height(window);
-	#else
-		gdk_drawable_get_size(window, &real_width, &real_height);
-	#endif
 
   gdk_window_get_origin (window, &x_real_orig, &y_real_orig);
 

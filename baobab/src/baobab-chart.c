@@ -1217,12 +1217,8 @@ baobab_chart_get_pixbuf (GtkWidget *widget)
 
   g_return_val_if_fail (BAOBAB_IS_CHART (widget), NULL);
 
-	#if GTK_CHECK_VERSION(3, 0, 0)
 		w = gdk_window_get_width(gtk_widget_get_window(widget));
 		h = gdk_window_get_height(gtk_widget_get_window(widget));
-	#else
-		gdk_drawable_get_size(gtk_widget_get_window(widget), &w, &h);
-	#endif
 
 
 #if GTK_CHECK_VERSION(3, 0, 0)
