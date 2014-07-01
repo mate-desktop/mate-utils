@@ -172,15 +172,9 @@ update_scan_label (void)
 	gchar *available;
 	GtkWidget *label;
 
-	#if GLIB_CHECK_VERSION (2, 30, 0)
 		total = g_format_size (baobab.fs.total);
 		used = g_format_size (baobab.fs.used);
 		available = g_format_size (baobab.fs.avail);
-	#else
-		total = g_format_size_for_display (baobab.fs.total);
-		used = g_format_size_for_display (baobab.fs.used);
-		available = g_format_size_for_display (baobab.fs.avail);
-	#endif
 	
 	/* Translators: these are labels for disk space */
 	markup = g_markup_printf_escaped  ("<small>%s <b>%s</b> (%s %s %s %s )</small>",
@@ -389,11 +383,7 @@ first_row (void)
 
 	gtk_tree_store_append (baobab.model, &root_iter, NULL);
 	
-	#if GLIB_CHECK_VERSION (2, 30, 0)
 		capacity_size = g_format_size (baobab.fs.total);
-	#else
-		capacity_size = g_format_size_for_display (baobab.fs.total);
-	#endif
 	
 	capacity_label = g_strdup (_("Total filesystem capacity"));
 	gtk_tree_store_set (baobab.model, &root_iter,
@@ -410,11 +400,7 @@ first_row (void)
 	gtk_tree_view_set_headers_visible (GTK_TREE_VIEW (baobab.tree_view), FALSE);
 	gtk_tree_store_append (baobab.model, &firstiter, &root_iter);
 	
-	#if GLIB_CHECK_VERSION (2, 30, 0)
 		size = g_format_size (baobab.fs.used);
-	#else
-		size = g_format_size_for_display (baobab.fs.used);
-	#endif
 		
 	if (baobab.fs.total == 0 && baobab.fs.used == 0) {
 		perc = 100.0;
@@ -462,11 +448,7 @@ baobab_fill_model (struct chan_data *data)
 
 	hardlinks = g_string_new ("");
 	if (data->tempHLsize > 0) {
-		#if GLIB_CHECK_VERSION (2, 30, 0)
 			size = g_format_size (data->tempHLsize);
-		#else
-			size = g_format_size_for_display (data->tempHLsize);
-		#endif
 			
 		g_string_assign (hardlinks, "<i>(");
 		g_string_append (hardlinks, _("contains hardlinks for:"));
@@ -481,13 +463,8 @@ baobab_fill_model (struct chan_data *data)
 			 ngettext ("%5d item", "%5d items",
 				   data->elements), data->elements);
 
-	#if GLIB_CHECK_VERSION (2, 30, 0)
 		size = g_format_size (data->size);
 		alloc_size = g_format_size (data->alloc_size);
-	#else
-		size = g_format_size_for_display (data->size);
-		alloc_size = g_format_size_for_display (data->alloc_size);
-	#endif
 	
 	gtk_tree_store_set (baobab.model, &iter,
 			    COL_DIR_NAME, name,

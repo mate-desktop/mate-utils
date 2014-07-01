@@ -873,11 +873,7 @@ add_file_to_search_results (const gchar * file,
 
 	pixbuf = get_file_pixbuf (gsearch, file_info);
 	description = get_file_type_description (file, file_info);
-	#if GLIB_CHECK_VERSION(2, 30, 0)
 		readable_size = g_format_size (g_file_info_get_size (file_info));
-	#else
-		readable_size = g_format_size_for_display (g_file_info_get_size (file_info));
-	#endif
 
 	g_file_info_get_modification_time (file_info, &time_val);
 	readable_date = get_readable_date (gsearch->search_results_date_format, time_val.tv_sec); 

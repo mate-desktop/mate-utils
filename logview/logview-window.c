@@ -212,11 +212,7 @@ logview_update_statusbar (LogviewWindow *logview, LogviewLog *active)
 
   modified = g_strdup_printf (_("last update: %s"), timestring_utf8);
 
-  #if GLIB_CHECK_VERSION (2, 30, 0)
     size = g_format_size (logview_log_get_file_size (active));
-  #else
-    size = g_format_size_for_display (logview_log_get_file_size (active));
-  #endif
   
   statusbar_text = g_strdup_printf (_("%d lines (%s) - %s"), 
                                     logview_log_get_cached_lines_number (active),

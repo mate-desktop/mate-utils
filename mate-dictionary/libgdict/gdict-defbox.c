@@ -52,15 +52,6 @@
 #include "gdict-enum-types.h"
 #include "gdict-marshal.h"
 
-/**
- * G_UNICODE_COMBINING_MARK was deprecated on glib 2.30
- * use G_UNICODE_SPACING_MARK
- */
-
-#if !GLIB_CHECK_VERSION(2, 29, 14)
-	#define G_UNICODE_SPACING_MARK G_UNICODE_COMBINING_MARK
-#endif
-
 #define QUERY_MARGIN	48
 #define ERROR_MARGIN	24
 
@@ -405,7 +396,7 @@ exact_prefix_cmp (const gchar *string,
 	/* If string contains prefix, check that prefix is not followed
 	 * by a unicode mark symbol, e.g. that trailing 'a' in prefix
 	 * is not part of two-char a-with-hat symbol in string. */
-	return type != G_UNICODE_SPACING_MARK &&
+	return type != G_UNICODE_COMBINING_MARK &&
 		type != G_UNICODE_ENCLOSING_MARK &&
 		type != G_UNICODE_NON_SPACING_MARK;
 }

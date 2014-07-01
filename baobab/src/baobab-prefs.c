@@ -248,13 +248,8 @@ fill_props_model (GtkListStore *store)
 		fstotal = fsusage.blocks * fsusage.block_size;
 		fsavail = fsusage.bfree * fsusage.block_size;
 		
-		#if GLIB_CHECK_VERSION (2, 30, 0)
 			total = g_format_size(fstotal);
 			avail = g_format_size(fsavail);
-		#else
-			total = g_format_size_for_display(fstotal);
-			avail = g_format_size_for_display(fsavail);
-		#endif
 		
 		file = g_file_new_for_path (mountentry->mountdir);
 		uri = g_file_get_uri (file);
