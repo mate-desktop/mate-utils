@@ -40,9 +40,6 @@
 
 #include <gtk/gtk.h>
 #include <gdk/gdkkeysyms.h>
-#if GTK_CHECK_VERSION (3, 0, 0)
-#include <gdk/gdkkeysyms-compat.h>
-#endif
 #include <glib/gi18n-lib.h>
 
 #include "gdict-defbox.h"
@@ -1891,19 +1888,19 @@ gdict_defbox_class_init (GdictDefboxClass *klass)
 
   binding_set = gtk_binding_set_by_class (klass);
   gtk_binding_entry_add_signal (binding_set,
-  			        GDK_f, GDK_CONTROL_MASK,
+  			        GDK_KEY_f, GDK_CONTROL_MASK,
   			        "show-find",
   			        0);
   gtk_binding_entry_add_signal (binding_set,
-  			        GDK_g, GDK_CONTROL_MASK,
+  			        GDK_KEY_g, GDK_CONTROL_MASK,
   			        "find-next",
   			        0);
   gtk_binding_entry_add_signal (binding_set,
-  				GDK_g, GDK_SHIFT_MASK | GDK_CONTROL_MASK,
+  				GDK_KEY_g, GDK_SHIFT_MASK | GDK_CONTROL_MASK,
   				"find-previous",
   				0);
   gtk_binding_entry_add_signal (binding_set,
-  			        GDK_Escape, 0,
+  			        GDK_KEY_Escape, 0,
   			        "hide-find",
   			        0);
 

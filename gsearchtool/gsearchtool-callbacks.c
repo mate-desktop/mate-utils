@@ -40,9 +40,6 @@
 
 #include <gtk/gtk.h>
 #include <gdk/gdkkeysyms.h>
-#if GTK_CHECK_VERSION (3, 0, 0)
-#include <gdk/gdkkeysyms-compat.h>
-#endif
 
 #include "gsearchtool.h"
 #include "gsearchtool-callbacks.h"
@@ -965,15 +962,15 @@ file_key_press_event_cb (GtkWidget * widget,
                          GdkEventKey * event,
                          gpointer data)
 {
-	if (event->keyval == GDK_space  ||
-	    event->keyval == GDK_Return ||
-	    event->keyval == GDK_KP_Enter) {
+	if (event->keyval == GDK_KEY_space  ||
+	    event->keyval == GDK_KEY_Return ||
+	    event->keyval == GDK_KEY_KP_Enter) {
 		if (event->state != GDK_CONTROL_MASK) {
 			open_file_cb ((GtkMenuItem *) NULL, data);
 			return TRUE;
 		}
 	}
-	else if (event->keyval == GDK_Delete) {
+	else if (event->keyval == GDK_KEY_Delete) {
 		move_to_trash_cb ((GtkAction *) NULL, data);
 		return TRUE;
 	}
@@ -1837,7 +1834,7 @@ key_press_cb (GtkWidget * widget,
 
 	g_return_val_if_fail (GTK_IS_WIDGET (widget), FALSE);
 
-	if (event->keyval == GDK_Escape) {
+	if (event->keyval == GDK_KEY_Escape) {
 		if (gsearch->command_details->command_status == RUNNING) {
 			click_stop_cb (widget, data);
 		}
@@ -1845,7 +1842,7 @@ key_press_cb (GtkWidget * widget,
 			quit_cb (widget, (GdkEvent *) NULL, data);
 		}
 	}
-	else if (event->keyval == GDK_F10) {
+	else if (event->keyval == GDK_KEY_F10) {
 		if (event->state & GDK_SHIFT_MASK) {
 			gboolean no_files_found = FALSE;
 			GtkTreeModel * model;

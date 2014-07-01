@@ -1120,9 +1120,9 @@ static const struct {
   GdkModifierType modifier;
   const gchar *action;
 } extra_keybindings [] = {
-  { GDK_KP_Add,      GDK_CONTROL_MASK, "ViewZoomIn" },
-  { GDK_KP_Subtract, GDK_CONTROL_MASK, "ViewZoomOut" },
-  { GDK_KP_0,        GDK_CONTROL_MASK, "ViewZoom100" }
+  { GDK_KEY_KP_Add,      GDK_CONTROL_MASK, "ViewZoomIn" },
+  { GDK_KEY_KP_Subtract, GDK_CONTROL_MASK, "ViewZoomOut" },
+  { GDK_KEY_KP_0,        GDK_CONTROL_MASK, "ViewZoom100" }
 };
 
 static gboolean

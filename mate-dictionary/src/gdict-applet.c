@@ -29,9 +29,6 @@
 #include <gio/gio.h>
 #include <gtk/gtk.h>
 #include <gdk/gdkkeysyms.h>
-#if GTK_CHECK_VERSION (3, 0, 0)
-#include <gdk/gdkkeysyms-compat.h>
-#endif
 #include <gdk-pixbuf/gdk-pixbuf.h>
 
 #include "gdict-applet.h"
@@ -281,14 +278,14 @@ window_key_press_event_cb (GtkWidget   *widget,
 {
   GdictApplet *applet = GDICT_APPLET (user_data);
   
-  if (event->keyval == GDK_Escape)
+  if (event->keyval == GDK_KEY_Escape)
     {
       gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (applet->priv->toggle), FALSE);
       gtk_toggle_button_toggled (GTK_TOGGLE_BUTTON (applet->priv->toggle));
 
       return TRUE;
     }
-  else if ((event->keyval == GDK_l) &&
+  else if ((event->keyval == GDK_KEY_l) &&
 	   (event->state & GDK_CONTROL_MASK))
     {
       gtk_widget_grab_focus (applet->priv->entry);
@@ -452,7 +449,7 @@ gdict_applet_entry_key_press_cb (GtkWidget   *widget,
 {
   GdictAppletPrivate *priv = GDICT_APPLET (user_data)->priv;
   
-  if (event->keyval == GDK_Escape)
+  if (event->keyval == GDK_KEY_Escape)
     {
       if (priv->is_window_showing)
 	{
@@ -462,7 +459,7 @@ gdict_applet_entry_key_press_cb (GtkWidget   *widget,
 	  return TRUE;
 	}
     }
-  else if (event->keyval == GDK_Tab)
+  else if (event->keyval == GDK_KEY_Tab)
     {
       if (priv->is_window_showing)
 	gtk_widget_grab_focus (priv->defbox);

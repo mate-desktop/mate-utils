@@ -22,9 +22,6 @@
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
 #include <gdk/gdkkeysyms.h>
-#if GTK_CHECK_VERSION (3, 0, 0)
-#include <gdk/gdkkeysyms-compat.h>
-#endif
 
 #include "logview-findbar.h"
 
@@ -123,7 +120,7 @@ entry_key_press_event_cb (GtkWidget *entry,
 {
   LogviewFindbar *findbar = user_data;
 
-  if (event->keyval == GDK_Escape) {
+  if (event->keyval == GDK_KEY_Escape) {
     g_signal_emit (findbar, signals[CLOSE], 0);
     return TRUE;
   }
