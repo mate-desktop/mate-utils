@@ -1787,9 +1787,7 @@ baobab_chart_save_snapshot (GtkWidget *chart)
   gtk_file_chooser_set_current_folder (GTK_FILE_CHOOSER (fs_dlg),
                                        g_get_home_dir ());
 
-#if GTK_CHECK_VERSION(2,8,0)
   gtk_file_chooser_set_do_overwrite_confirmation (GTK_FILE_CHOOSER (fs_dlg), TRUE);
-#endif
 
   /* extra widget */
   vbox = gtk_vbox_new (FALSE, 0);
