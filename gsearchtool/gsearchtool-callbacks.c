@@ -1714,9 +1714,9 @@ display_dialog_could_not_save_exists (GtkWidget * window,
 	                                 GTK_DIALOG_DESTROY_WITH_PARENT,
 	                                 GTK_MESSAGE_QUESTION,
 	                                 GTK_BUTTONS_CANCEL,
-	                                 primary);
+	                                 "%s", primary);
 	gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
-	                                          secondary);
+	                                          "%s", secondary);
 
 	gtk_window_set_title (GTK_WINDOW (dialog), "");
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
