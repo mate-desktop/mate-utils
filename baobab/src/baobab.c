@@ -189,6 +189,7 @@ update_scan_label (void)
 	label = GTK_WIDGET (gtk_builder_get_object (baobab.main_ui, "label1"));
 
 	gtk_label_set_markup (GTK_LABEL (label), markup);
+	g_free (markup);
 }
 
 void
