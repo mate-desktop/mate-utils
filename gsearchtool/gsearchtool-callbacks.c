@@ -828,14 +828,15 @@ move_to_trash_cb (GtkAction * action,
 				    COLUMN_LOCALE_FILE, &locale_filename,
 			   	    COLUMN_NO_FILES_FOUND, &no_files_found,
 			   	    -1);
-		utf8_filename = g_filename_display_name (locale_filename);
 
 		if (no_files_found) {
 			g_free (utf8_basename);
 			g_free (locale_filename);
 			return;
 		}
-		
+
+		utf8_filename = g_filename_display_name (locale_filename);
+
 		if (idx + 1 == total) {
 			last_selected_path = gtk_tree_model_get_path (GTK_TREE_MODEL (gsearch->search_results_list_store), &iter);
 		}
