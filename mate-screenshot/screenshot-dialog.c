@@ -181,6 +181,7 @@ drag_data_get (GtkWidget          *widget,
       uris[1] = NULL;
       
       gtk_selection_data_set_uris (selection_data, uris);
+      g_strfreev (uris);
     }
   else if (info == TYPE_IMAGE_PNG)
     {

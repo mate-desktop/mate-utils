@@ -92,8 +92,6 @@ is_quick_search_excluded_path (const gchar * path)
 	gboolean     results = FALSE;
 	gint         i;
 
-	settings = g_settings_new ("org.mate.search-tool");
-
 	dir = g_strdup (path);
 
 	/* Remove trailing G_DIR_SEPARATOR. */
@@ -108,6 +106,8 @@ is_quick_search_excluded_path (const gchar * path)
 		return TRUE;
 	}
 	g_free (dir);
+
+	settings = g_settings_new ("org.mate.search-tool");
 
 	/* Check path against the Quick-Search-Excluded-Paths list. */
 	exclude_path_list = g_settings_get_strv (settings, "quick-search-excluded-paths");
@@ -169,8 +169,6 @@ is_second_scan_excluded_path (const gchar * path)
 	gboolean     results = FALSE;
 	gint         i;
 
-	settings = g_settings_new ("org.mate.search-tool");
-
 	dir = g_strdup (path);
 
 	/* Remove trailing G_DIR_SEPARATOR. */
@@ -185,6 +183,8 @@ is_second_scan_excluded_path (const gchar * path)
 		return TRUE;
 	}
 	g_free (dir);
+
+	settings = g_settings_new ("org.mate.search-tool");
 
 	/* Check path against the Quick-Search-Excluded-Paths list. */
 	exclude_path_list = g_settings_get_strv (settings, "quick-search-second-scan-excluded-paths");
