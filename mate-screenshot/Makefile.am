@@ -58,11 +58,14 @@ ui_DATA =					\
 	mate-screenshot.ui			\
 	$(NULL)
 
+@INTLTOOL_XML_RULE@
+appdatadir = $(datadir)/appdata
+appdata_in_files = mate-screenshot.appdata.xml.in
+appdata_DATA = $(appdata_in_files:.xml.in=.xml)
+
 gsettingsschema_in_files = org.mate.screenshot.gschema.xml.in
 gsettings_SCHEMAS = $(gsettingsschema_in_files:.xml.in=.xml)
 .PRECIOUS: $(gsettings_SCHEMAS)
-
-@INTLTOOL_XML_NOMERGE_RULE@
 
 @GSETTINGS_RULES@
 
@@ -71,17 +74,19 @@ convert_DATA = mate-screenshot.convert
 
 EXTRA_DIST =					\
 	$(gsettingsschema_in_files)		\
+	$(appdata_in_files)			\
 	$(mate_screenshot_in_files)		\
 	$(man_MANS)				\
 	$(ui_DATA)				\
-	$(convert_DATA)			\
+	$(convert_DATA)				\
 	$(NULL)
 
 CLEANFILES = \
-	$(BUILT_SOURCES)			 \
-	$(gsettings_SCHEMAS)			 \
-	$(mate_screenshot_DATA)		 \
-	$(sys_DATA)
+	$(BUILT_SOURCES)			\
+	$(gsettings_SCHEMAS)			\
+	$(mate_screenshot_DATA)			\
+	$(sys_DATA)				\
+	mate-screenshot.appdata.xml
 
 dist-hook:
 	cd $(distdir) ; rm -f $(CLEANFILES)

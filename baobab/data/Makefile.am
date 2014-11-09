@@ -15,7 +15,10 @@ gsettingsschema_in_files = org.mate.disk-usage-analyzer.gschema.xml.in
 gsettings_SCHEMAS = $(gsettingsschema_in_files:.xml.in=.xml)
 .PRECIOUS: $(gsettings_SCHEMAS)
 
-@INTLTOOL_XML_NOMERGE_RULE@
+@INTLTOOL_XML_RULE@
+appdatadir = $(datadir)/appdata
+appdata_in_files = mate-disk-usage-analyzer.appdata.xml.in
+appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 
 @GSETTINGS_RULES@
 
@@ -29,9 +32,11 @@ EXTRA_DIST = \
 	mate-disk-usage-analyzer.desktop.in.in \
 	$(gsettingsschema_in_files) \
 	$(convert_DATA) \
+	$(appdata_in_files) \
 	$(man_MANS)
 
 CLEANFILES = \
 	$(baobabapp_in_files) \
 	$(baobabapp_DATA) \
-	$(gsettings_SCHEMAS)
+	$(gsettings_SCHEMAS) \
+	mate-disk-usage-analyzer.appdata.xml

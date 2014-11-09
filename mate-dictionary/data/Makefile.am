@@ -57,9 +57,13 @@ ui_DATA += dictionary-applet-menu.xml
 
 endif # BUILD_GDICT_APPLET
 
+@INTLTOOL_XML_RULE@
+appdatadir = $(datadir)/appdata
+appdata_in_files = mate-dictionary.appdata.xml.in
+appdata_DATA = $(appdata_in_files:.xml.in=.xml)
+
 gsettingsschema_in_files = org.mate.dictionary.gschema.xml.in
 gsettings_SCHEMAS = $(gsettingsschema_in_files:.xml.in=.xml)
-@INTLTOOL_XML_NOMERGE_RULE@
 @GSETTINGS_RULES@
 
 convertdir = $(datadir)/MateConf/gsettings
@@ -72,6 +76,7 @@ EXTRA_DIST = \
 	$(dictsource_in_files) \
 	$(man_MANS) \
 	$(gsettingsschema_in_files) \
+	$(appdata_in_files) \
 	$(builder_DATA) \
 	$(ui_DATA) \
 	$(convert_DATA) \
@@ -85,4 +90,5 @@ CLEANFILES = \
 	$(gdictapp_in_files) \
 	$(gdictapp_DATA) \
 	$(gsettings_SCHEMAS) \
+	mate-dictionary.appdata.xml \
 	$(NULL)
