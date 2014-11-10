@@ -20,6 +20,10 @@
 
 /* logview-app.c */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include "logview-app.h"
 
 #include "logview-manager.h"

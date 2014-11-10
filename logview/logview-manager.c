@@ -21,6 +21,10 @@
 
 /* logview-manager.c */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include "logview-manager.h"
 
 #include <glib/gi18n.h>

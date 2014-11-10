@@ -21,8 +21,6 @@
 #ifndef __LOGVIEW_APP_H__
 #define __LOGVIEW_APP_H__
 
-#include "config.h"
-
 #include <glib-object.h>
 
 G_BEGIN_DECLS
