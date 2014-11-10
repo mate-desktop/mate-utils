@@ -1187,8 +1187,8 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 		}
 	}
 
-	/* Popup menu item: Open Folder */
-	new1 = gtk_image_menu_item_new_with_mnemonic  (_("Open _Folder"));
+	/* Popup menu item: Open Containing Folder */
+	new1 = gtk_image_menu_item_new_with_mnemonic  (_("Open Containing _Folder"));
 	gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
 	gtk_widget_show (new1);
 
