@@ -697,7 +697,7 @@ blank_region_in_pixbuf (GdkPixbuf *pixbuf, GdkRegion *region)
   for (i = 0; i < n_rects; i++)
     {
 #if GTK_CHECK_VERSION (3, 0, 0)
-      cairo_rectangle_int_t rect;
+      cairo_rectangle_int_t rect, dest;
 
       cairo_region_get_rectangle (region, i, &rect);
       if (gdk_rectangle_intersect (&rect, &pixbuf_rect, &dest))
