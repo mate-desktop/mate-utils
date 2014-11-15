@@ -140,9 +140,9 @@ log_read_dates (const char **buffer_lines, time_t current)
 {
   int current_year, offsetyear, i, n, rangemin, rangemax, timestamp_len = 0;
   GSList *days = NULL;
-  GDate *date, *newdate;
+  GDate *date = NULL;
   struct tm *tmptm;
-  char *date_string;
+  char *date_string = NULL;
   Day *day;
   gboolean done = FALSE;
 
@@ -226,7 +226,7 @@ log_read_dates (const char **buffer_lines, time_t current)
       /* this means we finished the current day but we're not at the end
        * of the buffer: reset the parameters for the next day.
        */
-      newdate = NULL;
+      GDate *newdate = NULL;
       
       for (i = day->last_line + 1; buffer_lines[i]; i++) {
         if ((newdate = string_get_date (buffer_lines[i], &date_string, &timestamp_len)) != NULL)
