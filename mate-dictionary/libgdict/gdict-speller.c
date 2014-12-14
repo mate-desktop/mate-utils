@@ -173,7 +173,11 @@ gdict_speller_finalize (GObject *gobject)
     set_gdict_context (speller, NULL);
 
   if (priv->busy_cursor)
+#if GTK_CHECK_VERSION (3, 0, 0)
+    g_object_unref (priv->busy_cursor);
+#else
     gdk_cursor_unref (priv->busy_cursor);
+#endif
 
   g_free (priv->strategy);
   g_free (priv->database);

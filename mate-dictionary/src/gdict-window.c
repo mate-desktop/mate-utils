@@ -1798,7 +1798,11 @@ gdict_window_constructor (GType                  type,
   gtk_box_pack_start (GTK_BOX (hbox), window->entry, TRUE, TRUE, 0);
   gtk_widget_show (window->entry);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  handle = gtk_paned_new (GTK_ORIENTATION_HORIZONTAL)
+#else
   handle = gtk_hpaned_new ();
+#endif
   gtk_box_pack_start (GTK_BOX (vbox), handle, TRUE, TRUE, 0);
   gtk_widget_show (handle);
 

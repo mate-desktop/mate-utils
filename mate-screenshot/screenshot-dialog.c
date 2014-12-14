@@ -402,7 +402,11 @@ screenshot_dialog_set_busy (ScreenshotDialog *dialog,
       /* Change cursor to busy */
       cursor = gdk_cursor_new (GDK_WATCH);
       gdk_window_set_cursor (gtk_widget_get_window (toplevel), cursor);
+#if GTK_CHECK_VERSION (3, 0, 0)
+      g_object_unref (cursor);
+#else
       gdk_cursor_unref (cursor);
+#endif
     }
   else
     {

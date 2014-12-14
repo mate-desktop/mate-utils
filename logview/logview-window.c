@@ -24,9 +24,6 @@
 #include <string.h>
 #include <gtk/gtk.h>
 #include <gdk/gdkkeysyms.h>
-#if GTK_CHECK_VERSION (3, 0, 0)
-#include <gdk/gdkkeysyms-compat.h>
-#endif
 #include <glib/gi18n.h>
 
 #include "logview-window.h"
@@ -1301,7 +1298,11 @@ logview_window_init (LogviewWindow *logview)
   gtk_widget_show (w);
   
   /* panes */
+#if GTK_CHECK_VERSION (3, 0, 0)
+  hpaned = gtk_paned_new (GTK_ORIENTATION_HORIZONTAL);
+#else
   hpaned = gtk_hpaned_new ();
+#endif
   gtk_box_pack_start (GTK_BOX (vbox), hpaned, TRUE, TRUE, 0);
   priv->hpaned = hpaned;
   gtk_widget_show (hpaned);
@@ -1379,11 +1380,7 @@ logview_window_init (LogviewWindow *logview)
   /* version selector */
   priv->version_bar = gtk_hbox_new (FALSE, 0);
   gtk_container_set_border_width (GTK_CONTAINER (priv->version_bar), 3);
-#if GTK_CHECK_VERSION (3, 0, 0)
   priv->version_selector = gtk_combo_box_text_new ();
-#else
-  priv->version_selector = gtk_combo_box_new_text ();
-#endif
   g_signal_connect (priv->version_selector, "changed",
                     G_CALLBACK (logview_version_selector_changed), logview);
   w = gtk_label_new (_("Version: "));

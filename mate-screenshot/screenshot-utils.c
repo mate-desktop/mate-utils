@@ -39,6 +39,7 @@
 #define gdk_region_intersect cairo_region_intersect
 #define gdk_region_subtract cairo_region_subtract
 #define gdk_region_union_with_rect cairo_region_union_rectangle
+#define gdk_cursor_unref g_object_unref
 #endif
 
 static GtkWidget *selection_window;

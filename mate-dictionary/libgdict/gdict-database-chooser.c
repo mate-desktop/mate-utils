@@ -190,7 +190,11 @@ gdict_database_chooser_dispose (GObject *gobject)
 
   if (priv->busy_cursor)
     {
+#if GTK_CHECK_VERSION (3, 0, 0)
+      g_object_unref (priv->busy_cursor);
+#else
       gdk_cursor_unref (priv->busy_cursor);
+#endif
       priv->busy_cursor = NULL;
     }
 

@@ -52,6 +52,10 @@
 #define QUERY_MARGIN	48
 #define ERROR_MARGIN	24
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+#define gdk_cursor_unref g_object_unref
+#endif
+
 typedef struct
 {
   GdictDefinition *definition;
@@ -2853,7 +2857,11 @@ gdict_defbox_set_font_name (GdictDefbox *defbox,
   else
     font_desc = NULL;
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  gtk_widget_override_font (priv->text_view, font_desc);
+#else
   gtk_widget_modify_font (priv->text_view, font_desc);
+#endif
 
   if (font_desc)
     pango_font_description_free (font_desc);
