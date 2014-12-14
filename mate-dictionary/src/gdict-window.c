@@ -32,6 +32,7 @@
 
 #include <gtk/gtk.h>
 #include <glib.h>
+#include <glib/gstdio.h>
 #include <glib/gi18n.h>
 
 #include <libgdict/gdict.h>
