@@ -2739,8 +2739,6 @@ gsearch_app_create (GSearchWindow * gsearch)
 	GtkWidget * label;
 	GtkWidget * button;
 	GtkWidget * container;
-	const char * const *schemas;
-	gint i;
 
 	gsearch->mate_search_tool_settings = g_settings_new ("org.mate.search-tool");
 	gsearch->mate_search_tool_select_settings = g_settings_new ("org.mate.search-tool.select");
@@ -2748,12 +2746,13 @@ gsearch_app_create (GSearchWindow * gsearch)
 
 	/* Check if caja schema is installed before trying to read caja settings */
 	gsearch->caja_schema_exists = FALSE;
-	schemas = g_settings_list_schemas ();
-	for (i = 0; schemas[i] != NULL; i++) {
-		if (g_strcmp0 (schemas[i], CAJA_PREFERENCES_SCHEMA) == 0) {
-			gsearch->caja_schema_exists = TRUE;
-			break;
-		}
+	GSettingsSchema *schema = g_settings_schema_source_lookup (g_settings_schema_source_get_default (),
+								   CAJA_PREFERENCES_SCHEMA,
+								   FALSE);
+
+	if (schema != NULL) {
+		gsearch->caja_schema_exists = TRUE;
+		g_settings_schema_unref (schema);
 	}
 
 	if (gsearch->caja_schema_exists) {
