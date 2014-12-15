@@ -1120,34 +1120,8 @@ prepare_screenshot_timeout (gpointer data)
 static gchar *
 get_desktop_dir (void)
 {
-  gboolean desktop_is_home_dir = FALSE;
   gchar *desktop_dir;
-  const char * const *schemas;
-  gboolean schema_exists = FALSE;
-  gint i;
-
-  /* Check if caja schema is installed before trying to read settings */
-  schemas = g_settings_list_schemas ();
-  for (i = 0; schemas[i] != NULL; i++) {
-    if (g_strcmp0 (schemas[i], CAJA_PREFERENCES_SCHEMA) == 0) {
-      schema_exists = TRUE;
-      break;
-    }
-  }
-
-  if (schema_exists) {
-    GSettings *caja_prefs;
-
-    caja_prefs = g_settings_new (CAJA_PREFERENCES_SCHEMA);
-    desktop_is_home_dir = g_settings_get_boolean (caja_prefs, "desktop-is-home-dir");
-
-    g_object_unref (caja_prefs);
-  }
-
-  if (desktop_is_home_dir)
-    desktop_dir = g_strconcat ("file://", g_get_home_dir (), NULL);
-  else
-    desktop_dir = g_strconcat ("file://", g_get_user_special_dir (G_USER_DIRECTORY_DESKTOP), NULL);
+  desktop_dir = g_strconcat ("file://", g_get_user_special_dir (G_USER_DIRECTORY_DESKTOP), NULL);
 
   return desktop_dir;
 }
