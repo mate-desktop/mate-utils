@@ -1243,7 +1243,6 @@ gdict_window_cmd_help_contents (GtkAction   *action,
       gdict_show_gerror_dialog (GTK_WINDOW (window),
       		                _("There was an error while displaying help"),
       			        err);
-      g_error_free (err);
     }
 }
 
