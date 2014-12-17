@@ -477,7 +477,6 @@ gdict_source_dialog_response_cb (GtkDialog *dialog,
           gdict_show_gerror_dialog (GTK_WINDOW (dialog),
           			    _("There was an error while displaying help"),
           		 	    err);
-          g_error_free (err);
         }
 
       /* we don't want the dialog to close itself */
