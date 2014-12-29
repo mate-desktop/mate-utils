@@ -694,6 +694,10 @@ baobab_create_statusbar (void)
 		return;
 	}
 
+#if !GTK_CHECK_VERSION (3, 0, 0)
+	gtk_statusbar_set_has_resize_grip (GTK_STATUSBAR (baobab.statusbar), TRUE);
+#endif
+
 	g_settings_bind (baobab.ui_settings,
 			 BAOBAB_SETTINGS_STATUSBAR_VISIBLE,
 			 baobab.statusbar, "visible",
@@ -871,7 +875,6 @@ baobab_init (void)
 
 	baobab_create_toolbar ();
 	baobab_create_statusbar ();
-
 	baobab_setup_monitors ();
 
 	g_signal_connect (baobab.ui_settings, "changed::" BAOBAB_SETTINGS_SUBFLSTIPS_VISIBLE,
