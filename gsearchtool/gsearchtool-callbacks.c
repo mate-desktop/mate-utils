@@ -486,7 +486,7 @@ open_file_cb (GtkMenuItem * action,
 		GtkTreeIter iter;
 
 		gtk_tree_model_get_iter (GTK_TREE_MODEL (gsearch->search_results_list_store), &iter,
-		                         g_list_nth (list, idx)->data);
+		                         g_list_nth_data (list, idx));
 
 		gtk_tree_model_get (GTK_TREE_MODEL (gsearch->search_results_list_store), &iter,
     		                    COLUMN_NAME, &utf8_name,
@@ -619,7 +619,7 @@ open_folder_cb (GtkAction * action,
 		GtkTreeIter iter;
 
 		gtk_tree_model_get_iter (GTK_TREE_MODEL (gsearch->search_results_list_store), &iter,
-					 g_list_nth (list, idx)->data);
+					 g_list_nth_data (list, idx));
 
 		gtk_tree_model_get (GTK_TREE_MODEL (gsearch->search_results_list_store), &iter,
 				    COLUMN_RELATIVE_PATH, &utf8_folder,
@@ -821,7 +821,7 @@ move_to_trash_cb (GtkAction * action,
  		                                             &model);
 
 		gtk_tree_model_get_iter (GTK_TREE_MODEL (gsearch->search_results_list_store), &iter,
-					 g_list_nth (list, 0)->data);
+					 g_list_nth_data (list, 0));
 
 		gtk_tree_model_get (GTK_TREE_MODEL (gsearch->search_results_list_store), &iter,
     				    COLUMN_NAME, &utf8_basename,
@@ -1568,7 +1568,7 @@ drag_file_cb  (GtkWidget * widget,
 		gchar * locale_file;
 
 		gtk_tree_model_get_iter (GTK_TREE_MODEL (gsearch->search_results_list_store), &iter,
-		                         g_list_nth (list, idx)->data);
+		                         g_list_nth_data (list, idx));
 
 		gtk_tree_model_get (GTK_TREE_MODEL (gsearch->search_results_list_store), &iter,
 		                    COLUMN_NAME, &utf8_name,
