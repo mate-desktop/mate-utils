@@ -3,27 +3,26 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Dafydd Tomos <l10n@da.fydd.org>, 2004.
-# Gareth Bowker <tgb@tgb.org.uk>, 2005.
-# Owain Green, Gruffudd Williams, Steve Griffiths, 2003.
-# www.kyfieithu.co.uk <kyfieithu@kyfieithu.co.uk>, 2003.
+# Dafydd Tomos <l10n@da.fydd.org>, 2004
+# Gareth Bowker <tgb@tgb.org.uk>, 2005
+# Owain Green, Gruffudd Williams, Steve Griffiths, 2003
+# www.kyfieithu.co.uk <kyfieithu@kyfieithu.co.uk>, 2003
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2012-03-12 11:59+0100\n"
-"PO-Revision-Date: 2012-03-12 11:01+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-24 13:29+0100\n"
+"PO-Revision-Date: 2015-01-24 12:29+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: Welsh (http://www.transifex.com/projects/p/MATE/language/cy/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: cy\n"
-"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != 11) ? 2 : 3\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != 11) ? 2 : 3;\n"
 
 #: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:1
-#: ../baobab/data/baobab-main-window.ui.h:15
-msgid "Disk Usage Analyzer"
+msgid "MATE Disk Usage Analyzer"
 msgstr ""
 
 #: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:2
@@ -63,7 +62,7 @@ msgid "S_can Remote Folder..."
 msgstr ""
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../mate-dictionary/src/gdict-window.c:1176 ../logview/logview-window.c:808
+#: ../mate-dictionary/src/gdict-window.c:1279 ../logview/logview-window.c:809
 msgid "_Edit"
 msgstr "_Golygu"
 
@@ -76,7 +75,7 @@ msgid "_Collapse All"
 msgstr ""
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../mate-dictionary/src/gdict-window.c:1177 ../logview/logview-window.c:809
+#: ../mate-dictionary/src/gdict-window.c:1280 ../logview/logview-window.c:810
 msgid "_View"
 msgstr "_Golwg"
 
@@ -93,16 +92,20 @@ msgid "All_ocated Space"
 msgstr ""
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:6
-#: ../mate-dictionary/src/gdict-window.c:1179 ../logview/logview-window.c:811
+#: ../mate-dictionary/src/gdict-applet.c:1213
+#: ../mate-dictionary/src/gdict-window.c:1282 ../logview/logview-window.c:812
 msgid "_Help"
 msgstr "_Cymorth"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../mate-dictionary/src/gdict-window.c:1229 ../logview/logview-window.c:837
+#: ../mate-dictionary/src/gdict-window.c:1332 ../logview/logview-window.c:838
 msgid "_Contents"
 msgstr "_Cynnwys"
+
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/callbacks.c:97
+msgid "Disk Usage Analyzer"
+msgstr ""
 
 #: ../baobab/data/baobab-main-window.ui.h:16
 msgid "Scan home folder"
@@ -144,86 +147,108 @@ msgstr "Gorffen sagnio"
 msgid "Refresh"
 msgstr ""
 
-#: ../baobab/data/baobab.schemas.in.h:1
-msgid "Toolbar is Visible"
-msgstr "Bar Offer yn Weladwy"
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:1
+msgid "Monitor Home"
+msgstr ""
 
-#: ../baobab/data/baobab.schemas.in.h:2
-msgid "Whether the toolbar should be visible in main window."
-msgstr "A ddylai'r bar offer fod yn weladwy yn y brif ffenestr."
-
-#: ../baobab/data/baobab.schemas.in.h:3
-msgid "Status Bar is Visible"
-msgstr "Bar Statws yn Weladwy"
-
-#: ../baobab/data/baobab.schemas.in.h:4
-msgid "Whether the status bar at the bottom of main window should be visible."
-msgstr "A ddylai'r bar statws ar waelod y brif ffenestr fod yn weladwy."
-
-#: ../baobab/data/baobab.schemas.in.h:5
-msgid "Enable monitoring of home directory"
-msgstr "Galluogi monitro'r cyfeiriadur cartref"
-
-#: ../baobab/data/baobab.schemas.in.h:6
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:2
 msgid "Whether any change to the home directory should be monitored."
 msgstr "A ddylid monitro unrhyw newid i'r cyfeiriadur cartref."
 
-#: ../baobab/data/baobab.schemas.in.h:7
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:3
 msgid "Excluded partitions URIs"
 msgstr ""
 
-#: ../baobab/data/baobab.schemas.in.h:8
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:4
 msgid "A list of URIs for partitions to be excluded from scanning."
 msgstr ""
 
-#: ../baobab/data/baobab.schemas.in.h:9
-msgid "Subfolders tooltips visible"
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:5
+msgid "Toolbar is Visible"
+msgstr "Bar Offer yn Weladwy"
+
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:6
+msgid "Whether the toolbar should be visible in main window."
+msgstr "A ddylai'r bar offer fod yn weladwy yn y brif ffenestr."
+
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:7
+msgid "Statusbar is Visible"
 msgstr ""
 
-#: ../baobab/data/baobab.schemas.in.h:10
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:8
+msgid "Whether the status bar at the bottom of main window should be visible."
+msgstr "A ddylai'r bar statws ar waelod y brif ffenestr fod yn weladwy."
+
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:9
+msgid "Subfolder tips visible"
+msgstr ""
+
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:10
 msgid "Whether the subfolder tooltips of the selected folder are drawn."
 msgstr ""
 
-#: ../baobab/src/baobab.c:134 ../baobab/src/baobab.c:353
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:11
+msgid "Active Chart"
+msgstr ""
+
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:12
+msgid "Which type of chart should be displayed."
+msgstr ""
+
+#: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:1
+msgid "A disk usage analyzing tool for MATE Desktop"
+msgstr ""
+
+#: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:2
+msgid ""
+"<p> As its name implies, Disk Usage Analyzer is a graphical utility that you"
+" can use to view and monitor your disk usage and folder structure. It "
+"displays summary information in ring or treemap charts. </p> <p> You can "
+"perform scans on a file system, your home or any other folder - local or "
+"remote. There is also an option to constantly monitor any external changes "
+"to the home directory and warn the user if a file is added/removed. </p>"
+msgstr ""
+
+#: ../baobab/src/baobab.c:135 ../baobab/src/baobab.c:355
 msgid "Scanning..."
 msgstr "Yn sganio..."
 
-#: ../baobab/src/baobab.c:180
+#: ../baobab/src/baobab.c:181
 msgid "Total filesystem capacity:"
 msgstr "Uchafswm cynnwys y system ffeil:"
 
-#: ../baobab/src/baobab.c:181
+#: ../baobab/src/baobab.c:182
 msgid "used:"
 msgstr "defnyddiwyd:"
 
-#: ../baobab/src/baobab.c:182
+#: ../baobab/src/baobab.c:183
 msgid "available:"
 msgstr "ar gael:"
 
 #. set statusbar, percentage and allocated/normal size
-#: ../baobab/src/baobab.c:238 ../baobab/src/baobab.c:295
-#: ../baobab/src/callbacks.c:260
+#: ../baobab/src/baobab.c:240 ../baobab/src/baobab.c:297
+#: ../baobab/src/callbacks.c:259
 msgid "Calculating percentage bars..."
 msgstr "Cyfrif y barrau canran..."
 
-#: ../baobab/src/baobab.c:249 ../baobab/src/baobab.c:1289
-#: ../baobab/src/callbacks.c:264
+#: ../baobab/src/baobab.c:251 ../baobab/src/baobab.c:1309
+#: ../baobab/src/callbacks.c:263
 msgid "Ready"
 msgstr "Barod"
 
-#: ../baobab/src/baobab.c:386
+#: ../baobab/src/baobab.c:389
 msgid "Total filesystem capacity"
 msgstr ""
 
-#: ../baobab/src/baobab.c:408
+#: ../baobab/src/baobab.c:413
 msgid "Total filesystem usage"
 msgstr ""
 
-#: ../baobab/src/baobab.c:449
+#: ../baobab/src/baobab.c:455
 msgid "contains hardlinks for:"
 msgstr "cynnwys cysylltau caled ar gyfer:"
 
-#: ../baobab/src/baobab.c:458
+#: ../baobab/src/baobab.c:464
 #, c-format
 msgid "%5d item"
 msgid_plural "%5d items"
@@ -232,116 +257,116 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: ../baobab/src/baobab.c:585
+#: ../baobab/src/baobab.c:591
 msgid "Could not initialize monitoring"
 msgstr ""
 
-#: ../baobab/src/baobab.c:586
+#: ../baobab/src/baobab.c:592
 msgid "Changes to your home folder will not be monitored."
 msgstr ""
 
-#: ../baobab/src/baobab.c:965
+#: ../baobab/src/baobab.c:924
 msgid "Move to parent folder"
 msgstr ""
 
-#: ../baobab/src/baobab.c:969
+#: ../baobab/src/baobab.c:928
 msgid "Zoom in"
 msgstr "Chwyddo mewn"
 
-#: ../baobab/src/baobab.c:973
+#: ../baobab/src/baobab.c:932
 msgid "Zoom out"
 msgstr "Chwyddo allan"
 
-#: ../baobab/src/baobab.c:977
+#: ../baobab/src/baobab.c:936
 msgid "Save screenshot"
 msgstr ""
 
-#: ../baobab/src/baobab.c:1114
+#: ../baobab/src/baobab.c:1123
 msgid "View as Rings Chart"
 msgstr ""
 
-#: ../baobab/src/baobab.c:1116
+#: ../baobab/src/baobab.c:1125
 msgid "View as Treemap Chart"
 msgstr ""
 
-#: ../baobab/src/baobab.c:1214
+#: ../baobab/src/baobab.c:1234
 msgid "Show version"
 msgstr ""
 
-#: ../baobab/src/baobab.c:1215
+#: ../baobab/src/baobab.c:1235
 msgid "[DIRECTORY]"
 msgstr ""
 
-#: ../baobab/src/baobab.c:1245
+#: ../baobab/src/baobab.c:1265
 msgid "Too many arguments. Only one directory can be specified."
 msgstr ""
 
-#: ../baobab/src/baobab.c:1262
+#: ../baobab/src/baobab.c:1282
 msgid "Could not detect any mount point."
 msgstr ""
 
-#: ../baobab/src/baobab.c:1264
+#: ../baobab/src/baobab.c:1284
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr ""
 
-#: ../baobab/src/baobab-chart.c:206
+#: ../baobab/src/baobab-chart.c:219
 msgid "Maximum depth"
 msgstr ""
 
-#: ../baobab/src/baobab-chart.c:207
+#: ../baobab/src/baobab-chart.c:220
 msgid "The maximum depth drawn in the chart from the root"
 msgstr ""
 
-#: ../baobab/src/baobab-chart.c:216
+#: ../baobab/src/baobab-chart.c:229
 msgid "Chart model"
 msgstr ""
 
-#: ../baobab/src/baobab-chart.c:217
+#: ../baobab/src/baobab-chart.c:230
 msgid "Set the model of the chart"
 msgstr ""
 
-#: ../baobab/src/baobab-chart.c:224
+#: ../baobab/src/baobab-chart.c:237
 msgid "Chart root node"
 msgstr ""
 
-#: ../baobab/src/baobab-chart.c:225
+#: ../baobab/src/baobab-chart.c:238
 msgid "Set the root node from the model"
 msgstr ""
 
-#: ../baobab/src/baobab-chart.c:1710
+#: ../baobab/src/baobab-chart.c:1759
 msgid "Cannot create pixbuf image!"
 msgstr "Methu creu delwedd picsfap!"
 
 #. Popup the File chooser dialog
-#: ../baobab/src/baobab-chart.c:1720
+#: ../baobab/src/baobab-chart.c:1769
 msgid "Save Snapshot"
 msgstr ""
 
-#: ../baobab/src/baobab-chart.c:1749
+#: ../baobab/src/baobab-chart.c:1796
 msgid "_Image type:"
 msgstr ""
 
-#: ../baobab/src/baobab-prefs.c:184
+#: ../baobab/src/baobab-prefs.c:172
 msgid "Scan"
 msgstr "Sganio"
 
-#: ../baobab/src/baobab-prefs.c:191
+#: ../baobab/src/baobab-prefs.c:179
 msgid "Device"
 msgstr "Dyfais"
 
-#: ../baobab/src/baobab-prefs.c:199
+#: ../baobab/src/baobab-prefs.c:187
 msgid "Mount Point"
 msgstr ""
 
-#: ../baobab/src/baobab-prefs.c:207
+#: ../baobab/src/baobab-prefs.c:195
 msgid "Filesystem Type"
 msgstr ""
 
-#: ../baobab/src/baobab-prefs.c:215
+#: ../baobab/src/baobab-prefs.c:203
 msgid "Total Size"
 msgstr ""
 
-#: ../baobab/src/baobab-prefs.c:224
+#: ../baobab/src/baobab-prefs.c:212
 msgid "Available"
 msgstr ""
 
@@ -423,11 +448,11 @@ msgstr "Enw _Parth:"
 msgid "Connect to Server"
 msgstr ""
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:660
+#: ../baobab/src/baobab-remote-connect-dialog.c:659
 msgid "Service _type:"
 msgstr "_Math gwasanaeth:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:779
+#: ../baobab/src/baobab-remote-connect-dialog.c:778
 msgid "_Scan"
 msgstr ""
 
@@ -445,7 +470,7 @@ msgstr ""
 msgid "_Rescan"
 msgstr ""
 
-#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2406
+#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2427
 msgid "Folder"
 msgstr "Plygell"
 
@@ -453,7 +478,7 @@ msgstr "Plygell"
 msgid "Usage"
 msgstr ""
 
-#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2419
+#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2440
 msgid "Size"
 msgstr "Maint"
 
@@ -470,56 +495,56 @@ msgstr ""
 msgid "_Show hidden folders"
 msgstr ""
 
-#: ../baobab/src/baobab-utils.c:297
+#: ../baobab/src/baobab-utils.c:299
 msgid "Cannot check an excluded folder!"
 msgstr ""
 
-#: ../baobab/src/baobab-utils.c:321
+#: ../baobab/src/baobab-utils.c:323
 #, c-format
 msgid "\"%s\" is not a valid folder"
 msgstr ""
 
-#: ../baobab/src/baobab-utils.c:324
+#: ../baobab/src/baobab-utils.c:326
 msgid "Could not analyze disk usage."
 msgstr ""
 
-#: ../baobab/src/baobab-utils.c:364
+#: ../baobab/src/baobab-utils.c:366
 msgid "_Open Folder"
 msgstr ""
 
-#: ../baobab/src/baobab-utils.c:370
-#: ../gsearchtool/gsearchtool-callbacks.c:1203
+#: ../baobab/src/baobab-utils.c:372
+#: ../gsearchtool/gsearchtool-callbacks.c:1210
 msgid "Mo_ve to Trash"
 msgstr "_Symud i'r Sbwriel"
 
-#: ../baobab/src/baobab-utils.c:404
+#: ../baobab/src/baobab-utils.c:406
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr ""
 
-#: ../baobab/src/baobab-utils.c:407
+#: ../baobab/src/baobab-utils.c:409
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr ""
 
-#: ../baobab/src/baobab-utils.c:476
+#: ../baobab/src/baobab-utils.c:478
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr ""
 
-#: ../baobab/src/baobab-utils.c:484
+#: ../baobab/src/baobab-utils.c:486
 msgid "Could not move file to the Trash"
 msgstr ""
 
-#: ../baobab/src/baobab-utils.c:486
+#: ../baobab/src/baobab-utils.c:488
 #, c-format
 msgid "Details: %s"
 msgstr ""
 
-#: ../baobab/src/baobab-utils.c:533
+#: ../baobab/src/baobab-utils.c:524
 msgid "There was an error displaying help."
 msgstr "'Roedd yna wall wrth ddangos y cymorth."
 
-#: ../baobab/src/callbacks.c:77 ../logview/logview-about.h:49
+#: ../baobab/src/callbacks.c:76 ../logview/logview-about.h:49
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -527,7 +552,7 @@ msgid ""
 "any later version."
 msgstr ""
 
-#: ../baobab/src/callbacks.c:82 ../logview/logview-about.h:53
+#: ../baobab/src/callbacks.c:81 ../logview/logview-about.h:53
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -535,7 +560,7 @@ msgid ""
 "more details."
 msgstr ""
 
-#: ../baobab/src/callbacks.c:87 ../logview/logview-about.h:57
+#: ../baobab/src/callbacks.c:86 ../logview/logview-about.h:57
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
@@ -543,25 +568,21 @@ msgid ""
 msgstr ""
 
 #: ../baobab/src/callbacks.c:98
-msgid "Baobab"
-msgstr "Baobab"
-
-#: ../baobab/src/callbacks.c:99
 msgid "A graphical tool to analyze disk usage."
 msgstr ""
 
 #. translator credits
-#: ../baobab/src/callbacks.c:105 ../mate-dictionary/src/gdict-about.c:55
+#: ../baobab/src/callbacks.c:104 ../mate-dictionary/src/gdict-about.c:55
 #: ../logview/logview-about.h:63
 msgid "translator-credits"
 msgstr "Owain Green\nTelsa Gwynne <hobbit@aloss.ukuu.org.uk>\nDafydd Harries <daf@muse.19inch.net>\nDafydd Tomos <l10n@da.fydd.org>\nRhys Jones <rhys@sucs.org>\nGareth Bowker <tgb@tgb.org.uk>"
 
-#: ../baobab/src/callbacks.c:203 ../gsearchtool/gsearchtool-callbacks.c:504
-#: ../gsearchtool/gsearchtool-callbacks.c:843
+#: ../baobab/src/callbacks.c:202 ../gsearchtool/gsearchtool-callbacks.c:508
+#: ../gsearchtool/gsearchtool-callbacks.c:848
 msgid "The document does not exist."
 msgstr "Nid yw'r ddogfen yn bodoli."
 
-#: ../baobab/src/callbacks.c:314
+#: ../baobab/src/callbacks.c:283
 msgid "The folder does not exist."
 msgstr "Nid yw'r blygell yn bodoli."
 
@@ -569,238 +590,63 @@ msgstr "Nid yw'r blygell yn bodoli."
 msgid "Default Dictionary Server"
 msgstr "Gweinydd Geiriadur Rhagosodedig"
 
-#: ../mate-dictionary/data/MATE_DictionaryApplet.server.in.in.h:1
-msgid "Dictionary Look up"
-msgstr "Chwiliad Geiriadur"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.server.in.in.h:2
-msgid "Look up words in a dictionary"
-msgstr "Chwilio am y gair yn y geiriadur"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:1
-msgid "_Look Up Selected Text"
-msgstr "_Chwilio am y testun a ddewiswyd"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:2
-msgid "Cl_ear"
-msgstr "C_lirio"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:3
-msgid "_Print"
-msgstr "_Argraffu"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:4
-msgid "_Save"
-msgstr "_Cadw"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:5
-#: ../mate-dictionary/src/gdict-window.c:1205
-msgid "_Preferences"
-msgstr "_Hoffterau"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:7
-#: ../mate-dictionary/src/gdict-window.c:1231 ../logview/logview-window.c:839
-msgid "_About"
-msgstr "_Ynghylch"
-
 #: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:1
-#: ../mate-dictionary/src/gdict-about.c:78
-#: ../mate-dictionary/src/gdict-app.c:385
-#: ../mate-dictionary/src/gdict-window.c:605
-#: ../mate-dictionary/src/gdict-window.c:1947
-msgid "Dictionary"
-msgstr "Geiriadur"
+msgid "MATE Dictionary"
+msgstr ""
 
 #: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:2
 msgid "Check word definitions and spellings in an online dictionary"
 msgstr "Chwilio am ddiffiniadau geiriau a'u sillafiad mewn geiriadur ar-lein"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:1
-msgid "Dictionary server (Deprecated)"
-msgstr "Gweinydd geiriadur (Anghymeradwyir)"
+#: ../mate-dictionary/data/mate-dictionary.appdata.xml.in.h:1
+msgid "A dictionary for MATE Desktop"
+msgstr ""
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:2
+#: ../mate-dictionary/data/mate-dictionary.appdata.xml.in.h:2
 msgid ""
-"The dictionary server to connect to. The default server is dict.org. See "
-"http://www.dict.org for details on other servers. This key is deprecated and"
-" no longer in use."
-msgstr "Y gweinydd geiriadur i gysylltu iddo. Y gweinydd rhagosodedig yw dict.org. Gweler http://www.dict.org am fanylion ar weinyddion eraill. Mae'r allwedd hon wedi ei hanghymeradwyo ac nid yw mewn defnydd bellach."
+"<p> MATE Dictionary allows you to look up words in on-line dictionaries. It "
+"comes preconfigured with a list of Dict servers (RFC 2229), to which you can"
+" add your own sources, while you can select specific servers for a specific "
+"query. </p>"
+msgstr ""
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:3
-msgid "Port used to connect to server (Deprecated)"
-msgstr "Porth a ddefnyddir i gysylltu â'r gweinydd (Anghymeradwyir)"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:4
-msgid ""
-"The port number to connect to. The default port is 2628. This key is "
-"deprecated and no longer in use."
-msgstr "Y rhif porth i gysylltu iddo. Y porth diofyn yw 2628. Anghymeradwyir yr allwedd hon ac nid yw mewn defnydd bellach."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:5
-msgid "Use smart lookup (Deprecated)"
-msgstr "Defnyddio chwiliad clyfar (Anghymeradwyir)"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:6
-msgid ""
-"Specify whether to use smart lookup. This key is dependant on whether the "
-"dictionary server supports this option. The default is TRUE. This key is "
-"deprecated and no longer in use."
-msgstr "Nodwch os ydych am ddefnyddio chwiliad clyfar. Dim ond os yw'r gweinydd geiriadur yn cefnogi hynny y gellir defnyddio'r allwedd hon. GWIR yw'r dewis rhagosodedig. Mae'r allwedd hon wedi ei hanghymeradwyo ac nid yw mewn defnydd bellach."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:7
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:1
 msgid "The default database to use"
 msgstr "Y gronfa ddata ragosodedig i'w defnyddio"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:8
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:2
 msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
 "present in a dictionary source should be searched"
 msgstr "Enw'r gronfa ddata unigol, neu'r meta-gronfa ddata, ragosodedig i'w defnyddio ar y gweinydd geiriadur. Mae ebychnod (\"!\") yn dynodi y dylid chwilio pob cronfa ddata o fewn ffynhonnell geiriadur"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:9
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:3
 msgid "The default search strategy to use"
 msgstr "Y strategaeth chwilio ragosodedig i'w defnyddio"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:10
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:4
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is 'exact', that is match exact words."
 msgstr "Enw'r strategaeth chwilio ragosodedig i'w defnyddio ar ffynhonnell geiriadur, os ar gael. Y strategaeth ragosodedig yw 'union', hynny yw, cydweddu geiriau'n union."
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:11
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:5
 msgid "The font to be used when printing"
 msgstr "Y ffont i'w defnyddio wrth argraffu"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:12
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:6
 msgid "The font to be used when printing a definition."
 msgstr "Y ffont i'w defnyddio wrth argraffu diffiniad."
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:13
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:7
 msgid "The name of the dictionary source used"
 msgstr "Enw'r ffynhonnell geiriadur a ddefnyddiwyd"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:14
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:8
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr "Enw'r ffynhonnell geiriadur a ddefnyddir i gyrchu diffiniadau geiriau."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:15
-msgid "The default width of the application window"
-msgstr "Lled rhagosodedig ffenestr y rhaglen"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:16
-msgid ""
-"This key defines the window width and it's used to remember the size of the "
-"dictionary window across sessions. Setting it to -1 will make the dictionary"
-" window use a width based on the font size."
-msgstr "Mae'r allwedd hon yn diffinio lled y ffenestr. Fe'i defnyddir i gofio maint ffenestr y geiriadur o un sesiwn i'r llall. Os caiff ei osod i -1, bydd ffenestr y geiriadur yn defnyddio lled yn seiliedig ar faint y ffont."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:17
-msgid "The default height of the application window"
-msgstr "Uchder ragosodedig ffenestr y rhaglen"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:18
-msgid ""
-"This key defines the window height and it's used to remember the size of the"
-" dictionary window across sessions. Setting it to -1 will make the "
-"dictionary window use a height based on the font size."
-msgstr "Mae'r allwedd hon yn diffinio uchder y ffenestr. Fe'i defnyddir i gofio maint ffenestr y geiriadur o un sesiwn i'r llall. Os caiff ei osod i -1, bydd ffenestr y geiriadur yn defnyddio uchder yn seiliedig ar faint y ffont."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:19
-msgid "Whether the application window should be maximized"
-msgstr "A ddylid mwyhau ffenestr y rhaglen"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:20
-msgid ""
-"This key defines whether the window should be maximized and it's used to "
-"remember the state of the dictionary window across sessions. Setting it to "
-"TRUE will make the window always appear as maximized."
-msgstr "Mae'r allwedd hon yn diffinio a ddylid mwyhau maint y ffenestr. Fe'i defnyddir i gofio maint ffenestr y geiriadur o un sesiwn i'r llall. Os caiff ei osod yn WIR, bydd ffenestr y geiriadur wastad yn ymddangos wedi'i fwyhau."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:21
-msgid "Whether the sidebar should be visible"
-msgstr ""
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:22
-msgid ""
-"This key defines whether the sidebar should be visible and it's used to "
-"remember the state of the sidebar across sessions. Setting it to TRUE will "
-"make the sidebar always be displayed."
-msgstr ""
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:23
-msgid "Whether the statusbar should be visible"
-msgstr ""
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:24
-msgid ""
-"This key defines whether the statusbar should be visible and it's used to "
-"remember the state of the statusbar across sessions. Setting it to TRUE will"
-" make the statusbar always be displayed."
-msgstr ""
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:25
-msgid "The page of the sidebar to show"
-msgstr ""
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:26
-msgid ""
-"This key defines which page of the sidebar should be displayed and it's used"
-" to remember the setting across sessions.. It can be \"speller\" or "
-"\"databases\"."
-msgstr ""
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:27
-msgid "The width of the sidebar"
-msgstr ""
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:28
-msgid ""
-"This key defines the width of the sidebar and it's used to remember the "
-"setting across sessions."
-msgstr ""
-
-#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:1
-msgid "_Select a dictionary source for looking up words:"
-msgstr "_Dewis ffynhonnell geiriadur i chwilio am eiriau:"
-
-#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:2
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:6
-msgid "Source"
-msgstr "Ffynhonnell"
-
-#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:3
-msgid "_Print font:"
-msgstr "_Argraffu ffont:"
-
-#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:4
-msgid "Print"
-msgstr "Argraffu"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:1
-msgid "_Description:"
-msgstr "_Disgrifiad"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:2
-msgid "_Transport:"
-msgstr "_Cludiant:"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:3
-msgid "H_ostname:"
-msgstr "Enw _Gwesteiwr:"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:5
-msgid "Source Name"
-msgstr "Enw Ffynhonnell"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:7
-msgid "Dictionaries"
-msgstr ""
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:8
-msgid "Strategies"
-msgstr ""
 
 #: ../mate-dictionary/data/spanish.desktop.in.h:1
 msgid "Spanish Dictionaries"
@@ -957,54 +803,54 @@ msgstr "Lleol yn Unig"
 msgid "Whether the context uses only local dictionaries or not"
 msgstr "A yw'r cyd-destun yn defnyddio dim ond geiriaduron lleol, ai peidio"
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:382
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:386
 msgid "Reload the list of available databases"
 msgstr ""
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:394
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:398
 msgid "Clear the list of available databases"
 msgstr ""
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:841
-#: ../mate-dictionary/libgdict/gdict-speller.c:779
-#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:789
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:845
+#: ../mate-dictionary/libgdict/gdict-speller.c:783
+#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:793
 msgid "Error while matching"
 msgstr "Gwall wrth gydweddu"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1143
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1237
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1271
-#: ../logview/logview-window.c:485
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
+#: ../logview/logview-window.c:486
 msgid "Not found"
 msgstr "Heb ei ganfod"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1332
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1327
 msgid "F_ind:"
 msgstr "_Canfod:"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1345
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1340
 msgid "_Previous"
 msgstr "_Blaenorol"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1353
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1348
 msgid "_Next"
 msgstr "_Nesaf"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2528
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2523
 msgid "Error while looking up definition"
 msgstr "Gwall wrth edrych am ddiffiniad"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2570
-#: ../mate-dictionary/libgdict/gdict-speller.c:737
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2565
+#: ../mate-dictionary/libgdict/gdict-speller.c:741
 msgid "Another search is in progress"
 msgstr "Mae chwiliad arall ar waith"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2571
-#: ../mate-dictionary/libgdict/gdict-speller.c:738
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2566
+#: ../mate-dictionary/libgdict/gdict-speller.c:742
 msgid "Please wait until the current search ends."
 msgstr "Arhoswch tan fod y chwiliad presennol yn gorffen."
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2610
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2605
 msgid "Error while retrieving the definition"
 msgstr "Gwall wrth estyn diffiniad"
 
@@ -1017,13 +863,13 @@ msgid "The filename used by this dictionary source"
 msgstr "Yr enw ffeil a ddefnyddir gan y ffynhonnell geiriadur yma"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:246
-#: ../gsearchtool/gsearchtool.c:2382
+#: ../gsearchtool/gsearchtool.c:2403
 msgid "Name"
 msgstr "Enw"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:247
-msgid "The display name of this dictonary source"
-msgstr "Yr enw arddangos ar y ffynhonnell geiriadur yma"
+msgid "The display name of this dictionary source"
+msgstr ""
 
 #: ../mate-dictionary/libgdict/gdict-source.c:260
 msgid "Description"
@@ -1034,22 +880,22 @@ msgid "The description of this dictionary source"
 msgstr "Disgrifiad y ffynhonnell geiriadur yma"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:274
-#: ../mate-dictionary/libgdict/gdict-speller.c:384
+#: ../mate-dictionary/libgdict/gdict-speller.c:388
 msgid "Database"
 msgstr "Cronfa ddata"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:275
-msgid "The default database of this dictonary source"
-msgstr "Cronfa ddata ragosodedig y ffynhonnell geiriadur yma"
+msgid "The default database of this dictionary source"
+msgstr ""
 
 #: ../mate-dictionary/libgdict/gdict-source.c:288
-#: ../mate-dictionary/libgdict/gdict-speller.c:391
+#: ../mate-dictionary/libgdict/gdict-speller.c:395
 msgid "Strategy"
 msgstr "Strategaeth"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:289
-msgid "The default strategy of this dictonary source"
-msgstr "Strategaeth ragosodedig y ffynhonnell geiriadur yma"
+msgid "The default strategy of this dictionary source"
+msgstr ""
 
 #: ../mate-dictionary/libgdict/gdict-source.c:302
 msgid "Transport"
@@ -1060,7 +906,7 @@ msgid "The transport mechanism used by this dictionary source"
 msgstr "Y mecanwaith gludiant ddefnyddir gan y ffynhonnell geiriadur yma"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:317
-#: ../mate-dictionary/libgdict/gdict-speller.c:377
+#: ../mate-dictionary/libgdict/gdict-speller.c:381
 msgid "Context"
 msgstr "Cyd-destun"
 
@@ -1102,7 +948,7 @@ msgstr "Does dim enw i'r ffynhonnell geiriadur"
 msgid "Dictionary source '%s' has invalid transport '%s'"
 msgstr "Mae i'r ffynhonnell geiriadur '%s' gludiant annilys '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-source-chooser.c:299
+#: ../mate-dictionary/libgdict/gdict-source-chooser.c:303
 msgid "Reload the list of available sources"
 msgstr ""
 
@@ -1122,27 +968,27 @@ msgstr "Ffynonellau"
 msgid "Dictionary sources found"
 msgstr "Ffynonellau geiriadur wedi'u canfod"
 
-#: ../mate-dictionary/libgdict/gdict-speller.c:354
+#: ../mate-dictionary/libgdict/gdict-speller.c:358
 msgid "Clear the list of similar words"
 msgstr ""
 
-#: ../mate-dictionary/libgdict/gdict-speller.c:378
+#: ../mate-dictionary/libgdict/gdict-speller.c:382
 msgid "The GdictContext object used to get the word definition"
 msgstr "Y gwrthrych GdictContext ddefnyddiwyd i gael diffiniad y gair"
 
-#: ../mate-dictionary/libgdict/gdict-speller.c:385
+#: ../mate-dictionary/libgdict/gdict-speller.c:389
 msgid "The database used to query the GdictContext"
 msgstr "Y gronfa ddata i'w defnyddio i holi'r GdictContext"
 
-#: ../mate-dictionary/libgdict/gdict-speller.c:392
+#: ../mate-dictionary/libgdict/gdict-speller.c:396
 msgid "The strategy used to query the GdictContext"
 msgstr "Y strategaeth i'w defnyddio i holi'r GdictContext"
 
-#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:365
+#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:369
 msgid "Reload the list of available strategies"
 msgstr ""
 
-#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:377
+#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:381
 msgid "Clear the list of available strategies"
 msgstr ""
 
@@ -1168,9 +1014,16 @@ msgid "Show GDict Options"
 msgstr ""
 
 #: ../mate-dictionary/src/gdict-about.c:57
-#: ../mate-dictionary/src/gdict-applet.c:591
+#: ../mate-dictionary/src/gdict-applet.c:587
 msgid "Look up words in dictionaries"
 msgstr "Chwilio am y geiriau yn y geiriaduron"
+
+#: ../mate-dictionary/src/gdict-about.c:78
+#: ../mate-dictionary/src/gdict-app.c:379
+#: ../mate-dictionary/src/gdict-window.c:604
+#: ../mate-dictionary/src/gdict-window.c:1968
+msgid "Dictionary"
+msgstr "Geiriadur"
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
@@ -1253,131 +1106,141 @@ msgid "strat"
 msgstr "strat"
 
 #. create the new option context
-#: ../mate-dictionary/src/gdict-app.c:367
+#: ../mate-dictionary/src/gdict-app.c:361
 msgid " - Look up words in dictionaries"
 msgstr " - Chwilio am eiriau mewn geiriaduron"
 
-#: ../mate-dictionary/src/gdict-applet.c:206
-#: ../mate-dictionary/src/gdict-window.c:834
+#: ../mate-dictionary/src/gdict-applet.c:207
+#: ../mate-dictionary/src/gdict-window.c:961
 msgid "Save a Copy"
 msgstr "Cadw Copi"
 
-#: ../mate-dictionary/src/gdict-applet.c:216
-#: ../mate-dictionary/src/gdict-window.c:844
+#: ../mate-dictionary/src/gdict-applet.c:217
+#: ../mate-dictionary/src/gdict-window.c:971
 msgid "Untitled document"
 msgstr "Dogfen ddideitl"
 
-#: ../mate-dictionary/src/gdict-applet.c:237
-#: ../mate-dictionary/src/gdict-window.c:865
+#: ../mate-dictionary/src/gdict-applet.c:238
+#: ../mate-dictionary/src/gdict-window.c:992
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "Gwall wrth ysgrifennu at '%s'"
 
-#: ../mate-dictionary/src/gdict-applet.c:362
+#: ../mate-dictionary/src/gdict-applet.c:358
 msgid "Clear the definitions found"
 msgstr "Clirio'r diffiniadau a ganfuwyd"
 
-#: ../mate-dictionary/src/gdict-applet.c:364
+#: ../mate-dictionary/src/gdict-applet.c:360
 msgid "Clear definition"
 msgstr "Clirio diffiniad"
 
-#: ../mate-dictionary/src/gdict-applet.c:365
+#: ../mate-dictionary/src/gdict-applet.c:361
 msgid "Clear the text of the definition"
 msgstr "Clirio testun y diffiniad"
 
-#: ../mate-dictionary/src/gdict-applet.c:372
+#: ../mate-dictionary/src/gdict-applet.c:368
 msgid "Print the definitions found"
 msgstr "Argraffu'r diffiniadau a ganfuwyd"
 
-#: ../mate-dictionary/src/gdict-applet.c:374
+#: ../mate-dictionary/src/gdict-applet.c:370
 msgid "Print definition"
 msgstr "Argraffu diffiniad"
 
-#: ../mate-dictionary/src/gdict-applet.c:375
+#: ../mate-dictionary/src/gdict-applet.c:371
 msgid "Print the text of the definition"
 msgstr "Argraffu testun y diffiniad"
 
-#: ../mate-dictionary/src/gdict-applet.c:382
+#: ../mate-dictionary/src/gdict-applet.c:378
 msgid "Save the definitions found"
 msgstr "Cadw'r diffiniadau a ganfuwyd"
 
-#: ../mate-dictionary/src/gdict-applet.c:384
+#: ../mate-dictionary/src/gdict-applet.c:380
 msgid "Save definition"
 msgstr "Cadw diffiniad"
 
-#: ../mate-dictionary/src/gdict-applet.c:385
+#: ../mate-dictionary/src/gdict-applet.c:381
 msgid "Save the text of the definition to a file"
 msgstr "Cadw testun y diffiniad at ffeil"
 
-#: ../mate-dictionary/src/gdict-applet.c:533
+#: ../mate-dictionary/src/gdict-applet.c:529
 msgid "Click to view the dictionary window"
 msgstr "Cliciwch i weld ffenestr y geiriadur"
 
-#: ../mate-dictionary/src/gdict-applet.c:535
+#: ../mate-dictionary/src/gdict-applet.c:531
 msgid "Toggle dictionary window"
 msgstr "Toglu ffenestr y geiriadur"
 
-#: ../mate-dictionary/src/gdict-applet.c:536
+#: ../mate-dictionary/src/gdict-applet.c:532
 msgid "Show or hide the definition window"
 msgstr "Dangos neu guddio'r ffenestr ddiffiniad"
 
-#: ../mate-dictionary/src/gdict-applet.c:588
+#: ../mate-dictionary/src/gdict-applet.c:584
 msgid "Type the word you want to look up"
 msgstr "Teipiwch y gair yr ydych am edrych amdano"
 
-#: ../mate-dictionary/src/gdict-applet.c:590
+#: ../mate-dictionary/src/gdict-applet.c:586
 msgid "Dictionary entry"
 msgstr "Cofnod geiriadur"
 
-#: ../mate-dictionary/src/gdict-applet.c:716
-#: ../mate-dictionary/src/gdict-window.c:998
+#: ../mate-dictionary/src/gdict-applet.c:715
+#: ../mate-dictionary/src/gdict-window.c:1097
 msgid "Dictionary Preferences"
 msgstr "Hoffterau Geiriadur"
 
-#: ../mate-dictionary/src/gdict-applet.c:742
-#: ../mate-dictionary/src/gdict-pref-dialog.c:503
-#: ../mate-dictionary/src/gdict-source-dialog.c:479
-#: ../mate-dictionary/src/gdict-window.c:1140
+#: ../mate-dictionary/src/gdict-applet.c:739
+#: ../mate-dictionary/src/gdict-pref-dialog.c:495
+#: ../mate-dictionary/src/gdict-source-dialog.c:478
+#: ../mate-dictionary/src/gdict-window.c:1244
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "Roedd yna wall wrth ddangos y cymorth"
 
-#: ../mate-dictionary/src/gdict-applet.c:896
-#: ../mate-dictionary/src/gdict-window.c:514
+#: ../mate-dictionary/src/gdict-applet.c:893
+#: ../mate-dictionary/src/gdict-window.c:519
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "Dim ffynhonnell geiriadur ar gael â'r enw '%s'"
 
-#: ../mate-dictionary/src/gdict-applet.c:900
-#: ../mate-dictionary/src/gdict-window.c:518
+#: ../mate-dictionary/src/gdict-applet.c:897
+#: ../mate-dictionary/src/gdict-window.c:523
 msgid "Unable to find dictionary source"
 msgstr "Methu canfod ffynhonnell geiriadur"
 
-#: ../mate-dictionary/src/gdict-applet.c:916
-#: ../mate-dictionary/src/gdict-window.c:534
+#: ../mate-dictionary/src/gdict-applet.c:913
+#: ../mate-dictionary/src/gdict-window.c:539
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "Dim cyd-destun ar gael ar gyfer y ffynhonnell '%s'"
 
-#: ../mate-dictionary/src/gdict-applet.c:920
-#: ../mate-dictionary/src/gdict-window.c:538
+#: ../mate-dictionary/src/gdict-applet.c:917
+#: ../mate-dictionary/src/gdict-window.c:543
 msgid "Unable to create a context"
 msgstr "Methu creu cyd-destun"
 
-#: ../mate-dictionary/src/gdict-applet.c:1172
-#: ../mate-dictionary/src/gdict-window.c:2078
-msgid "Unable to connect to MateConf"
-msgstr "Methu cysylltu â MateConf"
+#: ../mate-dictionary/src/gdict-applet.c:1198
+msgid "_Look Up Selected Text"
+msgstr "_Chwilio am y testun a ddewiswyd"
 
-#: ../mate-dictionary/src/gdict-applet.c:1185
-#: ../mate-dictionary/src/gdict-window.c:2091
-msgid "Unable to get notification for preferences"
-msgstr "Methu cael hysbysiad ar gyfer hoffterau"
+#: ../mate-dictionary/src/gdict-applet.c:1201
+msgid "Cl_ear"
+msgstr "C_lirio"
 
-#: ../mate-dictionary/src/gdict-applet.c:1199
-#: ../mate-dictionary/src/gdict-window.c:2104
-msgid "Unable to get notification for the document font"
-msgstr "Methu cael hysbysiad ar gyfer ffont y ddogfen"
+#: ../mate-dictionary/src/gdict-applet.c:1204
+msgid "_Print"
+msgstr "_Argraffu"
+
+#: ../mate-dictionary/src/gdict-applet.c:1207
+msgid "_Save"
+msgstr "_Cadw"
+
+#: ../mate-dictionary/src/gdict-applet.c:1210
+msgid "Preferences"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-applet.c:1216
+#: ../mate-dictionary/src/gdict-window.c:1334 ../logview/logview-window.c:840
+msgid "_About"
+msgstr "_Ynghylch"
 
 #: ../mate-dictionary/src/gdict-common.c:80
 #, c-format
@@ -1390,67 +1253,72 @@ msgstr "Methu ail-enwi'r ffeil '%s' yn '%s': %s"
 msgid "Unable to create the data directory '%s': %s"
 msgstr "Methu creu'r cyfeiriadur data '%s': %s"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:244
+#: ../mate-dictionary/src/gdict-pref-dialog.c:240
+#: ../mate-dictionary/src/gdict-pref-dialog.c:429
 msgid "Edit Dictionary Source"
 msgstr "Golygu Ffynhonnell Geiriadur"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:308
+#: ../mate-dictionary/src/gdict-pref-dialog.c:304
 msgid "Add Dictionary Source"
 msgstr "Ychwanegu Ffynhonnell Geiriadur"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:353
+#: ../mate-dictionary/src/gdict-pref-dialog.c:349
 #, c-format
 msgid "Remove \"%s\"?"
 msgstr "Tynnu \"%s\"?"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:355
+#: ../mate-dictionary/src/gdict-pref-dialog.c:351
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "Fe fydd hyn yn tynnu'r ffynhonnell geiriadur yn barhaol o'r rhestr."
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:385
+#: ../mate-dictionary/src/gdict-pref-dialog.c:381
 #, c-format
 msgid "Unable to remove source '%s'"
 msgstr "Methu tynnu'r ffynhonnell '%s'"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:666
+#: ../mate-dictionary/src/gdict-pref-dialog.c:642
 msgid "Add a new dictionary source"
 msgstr "Ychwanegu ffynhonnell geiriadur newydd"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:672
+#: ../mate-dictionary/src/gdict-pref-dialog.c:648
 msgid "Remove the currently selected dictionary source"
 msgstr "Tynnu'r ffynhonnell geiriadur sydd wedi'i ddewis ar hyn o bryd"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:685
+#: ../mate-dictionary/src/gdict-pref-dialog.c:654
+msgid "Edit the currently selected dictionary source"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-pref-dialog.c:662
 msgid "Set the font used for printing the definitions"
 msgstr "Gosod y ffont a ddefnyddir i argraffu'r diffiniadau"
 
-#: ../mate-dictionary/src/gdict-print.c:249
-#: ../mate-dictionary/src/gdict-print.c:313
+#: ../mate-dictionary/src/gdict-print.c:241
+#: ../mate-dictionary/src/gdict-print.c:305
 #, c-format
 msgid "Unable to display the preview: %s"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-source-dialog.c:341
-#: ../mate-dictionary/src/gdict-source-dialog.c:434
+#: ../mate-dictionary/src/gdict-source-dialog.c:340
+#: ../mate-dictionary/src/gdict-source-dialog.c:433
 msgid "Unable to create a source file"
 msgstr "Methu creu ffeil ffynhonnell"
 
-#: ../mate-dictionary/src/gdict-source-dialog.c:359
-#: ../mate-dictionary/src/gdict-source-dialog.c:452
+#: ../mate-dictionary/src/gdict-source-dialog.c:358
+#: ../mate-dictionary/src/gdict-source-dialog.c:451
 msgid "Unable to save source file"
 msgstr "Methu cadw ffeil ffynhonnell"
 
-#: ../mate-dictionary/src/gdict-window.c:315
+#: ../mate-dictionary/src/gdict-window.c:314
 #, c-format
 msgid "Searching for '%s'..."
 msgstr "Chwilio am '%s'..."
 
-#: ../mate-dictionary/src/gdict-window.c:347
-#: ../mate-dictionary/src/gdict-window.c:404
+#: ../mate-dictionary/src/gdict-window.c:346
+#: ../mate-dictionary/src/gdict-window.c:403
 msgid "No definitions found"
 msgstr "Ni chanfuwyd unrhyw ddiffiniadau"
 
-#: ../mate-dictionary/src/gdict-window.c:349
+#: ../mate-dictionary/src/gdict-window.c:348
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
@@ -1459,181 +1327,226 @@ msgstr[1] "%d ddiffiniad wedi'u canfod"
 msgstr[2] "%d diffiniad wedi'u canfod"
 msgstr[3] "%d diffiniad wedi'u canfod"
 
-#: ../mate-dictionary/src/gdict-window.c:603
+#: ../mate-dictionary/src/gdict-window.c:602
 #, c-format
 msgid "%s - Dictionary"
 msgstr "%s - Geiriadur"
 
-#: ../mate-dictionary/src/gdict-window.c:1175 ../logview/logview-window.c:807
+#: ../mate-dictionary/src/gdict-window.c:1278 ../logview/logview-window.c:808
 msgid "_File"
 msgstr "_Ffeil"
 
-#: ../mate-dictionary/src/gdict-window.c:1178
+#: ../mate-dictionary/src/gdict-window.c:1281
 msgid "_Go"
 msgstr "_Mynd"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1182
+#: ../mate-dictionary/src/gdict-window.c:1285
 msgid "_New"
 msgstr "_Newydd"
 
-#: ../mate-dictionary/src/gdict-window.c:1183
+#: ../mate-dictionary/src/gdict-window.c:1286
 msgid "New look up"
 msgstr "Chwilio o'r newydd"
 
-#: ../mate-dictionary/src/gdict-window.c:1184
+#: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_Save a Copy..."
 msgstr "_Cadw Copi..."
 
-#: ../mate-dictionary/src/gdict-window.c:1186
+#: ../mate-dictionary/src/gdict-window.c:1289
 msgid "P_review..."
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1187
+#: ../mate-dictionary/src/gdict-window.c:1290
 msgid "Preview this document"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1188
+#: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_Print..."
 msgstr "_Argraffu..."
 
-#: ../mate-dictionary/src/gdict-window.c:1189
+#: ../mate-dictionary/src/gdict-window.c:1292
 msgid "Print this document"
 msgstr "Argraffu'r ddogfen hon"
 
-#: ../mate-dictionary/src/gdict-window.c:1196 ../logview/logview-window.c:822
+#: ../mate-dictionary/src/gdict-window.c:1299 ../logview/logview-window.c:823
 msgid "Select _All"
 msgstr "Dewis _Popeth"
 
-#: ../mate-dictionary/src/gdict-window.c:1199
+#: ../mate-dictionary/src/gdict-window.c:1302
 msgid "Find a word or phrase in the document"
 msgstr "Canfod gair neu gymal yn y testun"
 
-#: ../mate-dictionary/src/gdict-window.c:1201
+#: ../mate-dictionary/src/gdict-window.c:1304
 msgid "Find Ne_xt"
 msgstr "Canfod _Nesaf"
 
-#: ../mate-dictionary/src/gdict-window.c:1203
+#: ../mate-dictionary/src/gdict-window.c:1306
 msgid "Find Pre_vious"
 msgstr "Canfod y _Blaenorol"
 
+#: ../mate-dictionary/src/gdict-window.c:1308
+msgid "_Preferences"
+msgstr "_Hoffterau"
+
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1209
+#: ../mate-dictionary/src/gdict-window.c:1312
 msgid "_Previous Definition"
 msgstr "_Diffiniad Blaenorol"
 
-#: ../mate-dictionary/src/gdict-window.c:1210
+#: ../mate-dictionary/src/gdict-window.c:1313
 msgid "Go to the previous definition"
 msgstr "Mynd i'r diffiniad blaenorol"
 
-#: ../mate-dictionary/src/gdict-window.c:1211
+#: ../mate-dictionary/src/gdict-window.c:1314
 msgid "_Next Definition"
 msgstr "_Diffiniad Nesaf"
 
-#: ../mate-dictionary/src/gdict-window.c:1212
+#: ../mate-dictionary/src/gdict-window.c:1315
 msgid "Go to the next definition"
 msgstr "Mynd i'r diffiniad nesaf"
 
-#: ../mate-dictionary/src/gdict-window.c:1213
+#: ../mate-dictionary/src/gdict-window.c:1316
 msgid "_First Definition"
 msgstr "_Diffiniad Cyntaf"
 
-#: ../mate-dictionary/src/gdict-window.c:1214
+#: ../mate-dictionary/src/gdict-window.c:1317
 msgid "Go to the first definition"
 msgstr "Mynd i'r diffiniad cyntaf"
 
-#: ../mate-dictionary/src/gdict-window.c:1215
+#: ../mate-dictionary/src/gdict-window.c:1318
 msgid "_Last Definition"
 msgstr "_Diffiniad Olaf"
 
-#: ../mate-dictionary/src/gdict-window.c:1216
+#: ../mate-dictionary/src/gdict-window.c:1319
 msgid "Go to the last definition"
 msgstr "Mynd i'r diffiniad olaf"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1219
+#: ../mate-dictionary/src/gdict-window.c:1322
 msgid "Similar _Words"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1221
+#: ../mate-dictionary/src/gdict-window.c:1324
 msgid "Dictionary Sources"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1223
+#: ../mate-dictionary/src/gdict-window.c:1326
 msgid "Available _Databases"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1225
+#: ../mate-dictionary/src/gdict-window.c:1328
 msgid "Available St_rategies"
 msgstr ""
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1242
+#: ../mate-dictionary/src/gdict-window.c:1345
 msgid "_Sidebar"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1244
+#: ../mate-dictionary/src/gdict-window.c:1347
 msgid "S_tatusbar"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1365
+#: ../mate-dictionary/src/gdict-window.c:1412
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1386
+#: ../mate-dictionary/src/gdict-window.c:1433
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1406
+#: ../mate-dictionary/src/gdict-window.c:1453
 #, c-format
 msgid "Database `%s' selected"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1426
+#: ../mate-dictionary/src/gdict-window.c:1473
 #, c-format
 msgid "Word `%s' selected"
 msgstr ""
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1448
+#: ../mate-dictionary/src/gdict-window.c:1498
 msgid "Double-click on the word to look up"
 msgstr ""
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1454
+#: ../mate-dictionary/src/gdict-window.c:1504
 msgid "Double-click on the matching strategy to use"
 msgstr ""
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1459
+#: ../mate-dictionary/src/gdict-window.c:1509
 msgid "Double-click on the source to use"
 msgstr ""
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1468
+#: ../mate-dictionary/src/gdict-window.c:1518
 msgid "Double-click on the database to use"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1755
+#: ../mate-dictionary/src/gdict-window.c:1770
 msgid "Look _up:"
 msgstr "_Chwlio am:"
 
-#: ../mate-dictionary/src/gdict-window.c:1829
+#: ../mate-dictionary/src/gdict-window.c:1849
 msgid "Similar words"
 msgstr "Geiriau tebyg"
 
-#: ../mate-dictionary/src/gdict-window.c:1842
+#: ../mate-dictionary/src/gdict-window.c:1862
 msgid "Available dictionaries"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1855
+#: ../mate-dictionary/src/gdict-window.c:1880
 msgid "Available strategies"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1866
+#: ../mate-dictionary/src/gdict-window.c:1896
 msgid "Dictionary sources"
+msgstr ""
+
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:1
+msgid "_Select a dictionary source for looking up words:"
+msgstr "_Dewis ffynhonnell geiriadur i chwilio am eiriau:"
+
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:2
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:6
+msgid "Source"
+msgstr "Ffynhonnell"
+
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:3
+msgid "_Print font:"
+msgstr "_Argraffu ffont:"
+
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:4
+msgid "Print"
+msgstr "Argraffu"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:1
+msgid "_Description:"
+msgstr "_Disgrifiad"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:2
+msgid "_Transport:"
+msgstr "_Cludiant:"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:3
+msgid "H_ostname:"
+msgstr "Enw _Gwesteiwr:"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:5
+msgid "Source Name"
+msgstr "Enw Ffynhonnell"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:7
+msgid "Dictionaries"
+msgstr ""
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:8
+msgid "Strategies"
 msgstr ""
 
 #: ../mate-screenshot/mate-screenshot.c:133
@@ -1680,16 +1593,14 @@ msgstr ""
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#. 
 #: ../mate-screenshot/mate-screenshot.c:478
 msgid "Grab _after a delay of"
 msgstr ""
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#. 
 #: ../mate-screenshot/mate-screenshot.c:498
-#: ../mate-screenshot/mate-screenshot.c:1289
+#: ../mate-screenshot/mate-screenshot.c:1273
 msgid "seconds"
 msgstr "eiliad"
 
@@ -1703,15 +1614,15 @@ msgstr "Tynnu Sgrînlun"
 msgid "Effects"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.c:531
+#: ../mate-screenshot/mate-screenshot.c:530
 msgid "Take _Screenshot"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.c:657
+#: ../mate-screenshot/mate-screenshot.c:650
 msgid "Error while saving screenshot"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.c:660
+#: ../mate-screenshot/mate-screenshot.c:653
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -1719,15 +1630,15 @@ msgid ""
 " Please choose another location and retry."
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.c:792
+#: ../mate-screenshot/mate-screenshot.c:785
 msgid "Screenshot taken"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.c:846
+#: ../mate-screenshot/mate-screenshot.c:840
 msgid "Unable to take a screenshot of the current window"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.c:896
+#: ../mate-screenshot/mate-screenshot.c:893
 #, c-format
 msgid "Screenshot-%s.png"
 msgstr "Sgrînlun-%s.png"
@@ -1735,15 +1646,15 @@ msgstr "Sgrînlun-%s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if a specific window is
 #. * taken
-#: ../mate-screenshot/mate-screenshot.c:903
+#: ../mate-screenshot/mate-screenshot.c:900
 #, c-format
 msgid "Screenshot-%s-%d.png"
 msgstr "Sgrînlun-%s-%d.png"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/mate-screenshot.c:913
-#: ../mate-screenshot/screenshot-dialog.c:353
+#: ../mate-screenshot/mate-screenshot.c:910
+#: ../mate-screenshot/screenshot-dialog.c:369
 #: ../mate-screenshot/screenshot-save.c:196
 msgid "Screenshot.png"
 msgstr "Sgrînlun.png"
@@ -1751,52 +1662,64 @@ msgstr "Sgrînlun.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/mate-screenshot.c:920
+#: ../mate-screenshot/mate-screenshot.c:917
 #, c-format
 msgid "Screenshot-%d.png"
 msgstr "Sgrînlun-%d.png"
 
-#: ../mate-screenshot/mate-screenshot.c:1285
+#: ../mate-screenshot/mate-screenshot.c:1269
 msgid "Grab a window instead of the entire screen"
 msgstr "Cipio'r ffenest yn hytrach na'r sgrin gyfan"
 
-#: ../mate-screenshot/mate-screenshot.c:1286
+#: ../mate-screenshot/mate-screenshot.c:1270
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.c:1287
+#: ../mate-screenshot/mate-screenshot.c:1271
 msgid "Include the window border with the screenshot"
 msgstr "Cynnwys border y ffenest yn rhan o'r sgrînlun."
 
-#: ../mate-screenshot/mate-screenshot.c:1288
+#: ../mate-screenshot/mate-screenshot.c:1272
 msgid "Remove the window border from the screenshot"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.c:1289
+#: ../mate-screenshot/mate-screenshot.c:1273
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Oedi'r nifer yma o eiliadau cyn tynnu'r sgrînlun"
 
-#: ../mate-screenshot/mate-screenshot.c:1290
+#: ../mate-screenshot/mate-screenshot.c:1274
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.c:1290
+#: ../mate-screenshot/mate-screenshot.c:1274
 msgid "effect"
 msgstr "effaith"
 
-#: ../mate-screenshot/mate-screenshot.c:1291
+#: ../mate-screenshot/mate-screenshot.c:1275
 msgid "Interactively set options"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.c:1302
+#: ../mate-screenshot/mate-screenshot.c:1284
 msgid "Take a picture of the screen"
 msgstr "Cipio llun o'r sgrin"
 
-#: ../mate-screenshot/mate-screenshot.c:1320
+#: ../mate-screenshot/mate-screenshot.c:1302
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:1
+msgid "A screenshot utility for MATE Desktop"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Screenshot is a simple utility that lets you capture screenshots of"
+" your desktop or of application windows. You can select to copy them to the "
+"system clipboard or save them in Portable Network Graphics (.png) image "
+"format. </p>"
 msgstr ""
 
 #: ../mate-screenshot/mate-screenshot.desktop.in.h:2
@@ -1824,65 +1747,58 @@ msgstr "Cadw mewn _plygell:"
 msgid "*"
 msgstr "*"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:1
-msgid "Window-specific screenshot (deprecated)"
-msgstr ""
-
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:2
-msgid ""
-"Grab just the current window, rather than the whole desktop. This key has "
-"been deprecated and it is no longer in use."
-msgstr ""
-
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:3
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:1
 msgid "Screenshot delay"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:4
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:2
 msgid "The number of seconds to wait before taking the screenshot."
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:5
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:3
 msgid "Screenshot directory"
 msgstr "Cyfeiriadur sgrînlun"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:6
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:4
 msgid "The directory the last screenshot was saved in."
 msgstr "Y cyfeiriadur y cadwyd sgrînlun ynddi ddiwethaf."
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:7
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:5
 msgid "Include Border"
 msgstr "Cynnwys Border"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:8
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:6
 msgid "Include the window manager border along with the screenshot"
 msgstr "Cynnwys border y rheolwr ffenestri fel rhan o'r sgrînlun"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:9
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:7
 msgid "Include Pointer"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:10
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:8
 msgid "Include the pointer in the screenshot"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:11
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:9
 msgid "Border Effect"
 msgstr "Effaith Border"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:12
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:10
 msgid ""
 "Effect to add to the outside of a border. Possible values are \"shadow\", "
 "\"none\", and \"border\"."
 msgstr ""
 
-#: ../mate-screenshot/screenshot-dialog.c:236
+#: ../mate-screenshot/screenshot-dialog.c:246
+#, c-format
 msgid ""
-"UI definition file for the screenshot program is missing.\n"
-"Please check your installation of mate-utils"
+"Error loading UI definition file for the screenshot program: \n"
+"%s\n"
+"\n"
+"Please check your installation of mate-utils."
 msgstr ""
 
-#: ../mate-screenshot/screenshot-dialog.c:257
+#: ../mate-screenshot/screenshot-dialog.c:269
 msgid "Select a folder"
 msgstr "Dewiswch blygell"
 
@@ -1904,7 +1820,7 @@ msgid "Unknown error saving screenshot to disk"
 msgstr "Gwall anhysbys wrth gadw'r sgrînlun i ddisg."
 
 #. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-#: ../mate-screenshot/screenshot-utils.c:894
+#: ../mate-screenshot/screenshot-utils.c:998
 msgid "Untitled Window"
 msgstr "Ffenest Ddideitl"
 
@@ -1918,7 +1834,7 @@ msgid "The file \"%s\" already exists. Would you like to replace it?"
 msgstr ""
 
 #: ../mate-screenshot/screenshot-xfer.c:82
-#: ../gsearchtool/gsearchtool-callbacks.c:1722
+#: ../gsearchtool/gsearchtool-callbacks.c:1726
 msgid "_Replace"
 msgstr "_Trosysgrifo"
 
@@ -1930,696 +1846,159 @@ msgstr ""
 msgid "Can't access source file"
 msgstr ""
 
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
+msgid "A file searching tool for MATE Desktop"
+msgstr ""
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Search Tool is a simple but powerful utility that allows you to "
+"search for files and folders on any mounted file system. Its interface gives"
+" you instant access to a wide variety of parameters for each search, such as"
+" text contained within a file, ownership, date of modification, file size, "
+"folder exclusion, etc.. </p>"
+msgstr ""
+
 #: ../gsearchtool/mate-search-tool.desktop.in.h:1
-msgid "Search for Files..."
-msgstr "Chwilio am Ffeiliau..."
+msgid "MATE Search Tool"
+msgstr ""
 
 #: ../gsearchtool/mate-search-tool.desktop.in.h:2
 msgid "Locate documents and folders on this computer by name or content"
 msgstr "Lleoli dogfennau a phlygellau ar y cyfrifiadur hwn wrth eu henw neu eu cynnwys"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:1
-msgid "Show Additional Options"
-msgstr "Dangos Opsiynau Ychwanegol"
-
-#. Translators: The quoted text is the label of the additional
-#. options expander that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:4
-msgid ""
-"This key determines if the \"Select more options\" section is expanded when "
-"the search tool is started."
-msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Dangos rhagor o opsiynau\" wedi'i ehangu ar gychwyn yr offer chwilio."
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:7
-msgid "Select the search option \"Contains the text\""
-msgstr "Dewis yr opsiwn chwilio \"Yn cynnwys y testun\""
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:8
-msgid ""
-"This key determines if the \"Contains the text\" search option is selected "
-"when the search tool is started."
-msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Yn cynnwys y testun\" wedi'i ddewis ar gychwyn yr offer chwilio."
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:11
-msgid "Select the search option \"Date modified less than\""
-msgstr "Dewis yr opsiwn chwilio \"Dyddiad addasu yn llai na\""
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:12
-msgid ""
-"This key determines if the \"Date modified less than\" search option is "
-"selected when the search tool is started."
-msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Dyddiad addasu yn llai na\" wedi'i ddewis ar gychwyn yr offer chwilio."
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:15
-msgid "Select the search option \"Date modified more than\""
-msgstr "Dewis yr opsiwn chwilio \"Dyddiad addasu yn fwy na\""
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:16
-msgid ""
-"This key determines if the \"Date modified more than\" search option is "
-"selected when the search tool is started."
-msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Dyddiad addasu yn fwy na\" wedi'i ddewis ar gychwyn yr offer chwilio."
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:19
-msgid "Select the search option \"Size at least\""
-msgstr "Dewis yr opsiwn chwilio \"Maint o leiaf\""
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:20
-msgid ""
-"This key determines if the \"Size at least\" search option is selected when "
-"the search tool is started."
-msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Maint o leiaf\" wedi'i ddewis ar gychwyn yr offer chwilio."
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:23
-msgid "Select the search option \"Size at most\""
-msgstr "Dewis yr opsiwn chwilio \"Maint mwyaf\""
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:24
-msgid ""
-"This key determines if the \"Size at most\" search option is selected when "
-"the search tool is started."
-msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Maint mwyaf\" wedi'i ddewis ar gychwyn yr offer chwilio."
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:27
-msgid "Select the search option \"File is empty\""
-msgstr "Dewis yr opsiwn chwilio \"Ffeil yn wag\""
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:28
-msgid ""
-"This key determines if the \"File is empty\" search option is selected when "
-"the search tool is started."
-msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Ffeil yn wag\" wedi'i ddewis ar gychwyn yr offer chwilio."
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:31
-msgid "Select the search option \"Owned by user\""
-msgstr "Dewis yr opsiwn chwilio \"Yn berchen i ddefnyddiwr\""
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:32
-msgid ""
-"This key determines if the \"Owned by user\" search option is selected when "
-"the search tool is started."
-msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Yn berchen i ddefnyddiwr\" wedi'i ddewis ar gychwyn yr offer chwilio."
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:35
-msgid "Select the search option \"Owned by group\""
-msgstr "Dewis yr opsiwn chwilio \"Yn berchen i grŵp\""
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:36
-msgid ""
-"This key determines if the \"Owned by group\" search option is selected when"
-" the search tool is started."
-msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Yn berchen i grŵp\" wedi'i ddewis ar gychwyn yr offer chwilio."
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:39
-msgid "Select the search option \"Owner is unrecognized\""
-msgstr "Dewis yr opsiwn chwilio \"Heb berchennog adnabyddedig\""
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:40
-msgid ""
-"This key determines if the \"Owner is unrecognized\" search option is "
-"selected when the search tool is started."
-msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Heb berchennog adnabyddedig\" wedi'i ddewis ar gychwyn yr offer chwilio."
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:43
-msgid "Select the search option \"Name does not contain\""
-msgstr "Dewis yr opsiwn chwilio \"Nid yw'r enw yn cynnwys\""
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:44
-msgid ""
-"This key determines if the \"Name does not contain\" search option is "
-"selected when the search tool is started."
-msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Nid yw'r enw yn cynnwys\" wedi'i ddewis ar gychwyn yr offer chwilio."
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:47
-msgid "Select the search option \"Name matches regular expression\""
-msgstr "Dewis yr opsiwn chwilio \"Ffeil yn cydweddu â mynegiad rheolaidd\""
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:48
-msgid ""
-"This key determines if the \"Name matches regular expression\" search option"
-" is selected when the search tool is started."
-msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Ffeil yn cydweddu â mynegiad rheolaidd\" wedi'i ddewis ar gychwyn yr offer chwilio."
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:51
-msgid "Select the search option \"Show hidden files and folders\""
-msgstr "Dewis yr opsiwn chwilio \"Dewis ffeiliau a ffolderi cudd\""
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:52
-msgid ""
-"This key determines if the \"Show hidden files and folders\" search option "
-"is selected when the search tool is started."
-msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Dangos ffeiliau a ffolderi cudd\" wedi'i ddewis ar gychwyn yr offer chwilio."
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:55
-msgid "Select the search option \"Follow symbolic links\""
-msgstr "Dewis yr opsiwn chwilio \"Dilyn cysylltau symbolaidd\""
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:56
-msgid ""
-"This key determines if the \"Follow symbolic links\" search option is "
-"selected when the search tool is started."
-msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Dilyn cysylltau symbolaidd\" wedi'i ddewis ar gychwyn yr offer chwilio."
-
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:59
-msgid "Select the search option \"Exclude other filesystems\""
-msgstr ""
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:60
-msgid ""
-"This key determines if the \"Exclude other filesystems\" search option is "
-"selected when the search tool is started."
-msgstr ""
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:61
-msgid "Disable Quick Search"
-msgstr "Analluogi Chwilio Cyflym"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:62
-msgid ""
-"This key determines if the search tool disables the use of the locate "
-"command when performing simple file name searches."
-msgstr "Mae'r allwedd yn penderfynu a yw'r offer chwilio yn analluogi'r gorchymyn lleoli ar ôl  gwneud chwiliad cyflym."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:63
-msgid "Quick Search Excluded Paths"
-msgstr "Chwilio Cyflym - Llwybrau wedi Eithrio"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:64
-msgid ""
-"This key defines the paths the search tool will exclude from a quick search."
-" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
-"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-msgstr "Mae'r allwedd yn penderfynu'r llwybrau bydd yr offer chwilio yn eu hepgor o chwiliad cyflym. Cynhelir y gwylltnodau '*' a '?'. Y gwerthoedd rhagosodedig yw /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, a /var/*."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:65
-msgid "Disable Quick Search Second Scan"
-msgstr "Analluogi Ail Sgan Chwilio Cyflym"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:66
-msgid ""
-"This key determines if the search tool disables the use of the find command "
-"after performing a quick search."
-msgstr "Mae'r allwedd yn penderfynu a yw'r offer chwilio yn analluogi'r gorchymyn canfod ar ôl  gwneud chwiliad cyflym."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:67
-msgid "Quick Search Second Scan Excluded Paths"
-msgstr "Chwilio Cyflym - Llwybrau wedi Eithrio o'r Ail Sgan"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:68
-msgid ""
-"This key defines the paths the search tool will exclude from a second scan "
-"when performing a quick search. The second scan uses the find command to "
-"search for files. The purpose of the second scan is to find files that have "
-"not been indexed. The wildcards '*' and '?' are supported. The default value"
-" is /."
-msgstr "Mae'r allwedd yn penderfynu'r llwybrau bydd yr offer chwilio yn eu hepgor o'r ail chwiliad yn ystod y chwiliad cyflym. Mae'r ail chwiliad yn defnyddio'r gorchymyn canfod i chwilio am ffeiliau. Pwrpas yr ail sgan yw canfod ffeiliau sydd heb eu mynegeio. Cynhelir y gwylltnodau '*' a '?'. Y gwerth rhagosodedig yw /."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:69
-msgid "Search Result Columns Order"
-msgstr "Trefn Colofnau Canlyniadau Chwilio"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:70
-msgid ""
-"This key defines the order of the columns in the search results. This key "
-"should not be modified by the user."
-msgstr "Mae'r allwedd hon yn diffinio trefn y colofnau yn y canlyniadau chwilio. Ni ddylai'r defnyddiwr newid yr allwedd hon."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:71
-msgid "Default Window Width"
-msgstr "Lled Ffenestr Rhagosodedig"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:72
-msgid ""
-"This key defines the window width, and it's used to remember the size of the"
-" search tool between sessions. Setting it to -1 will make the search tool "
-"use the default width."
-msgstr "Mae'r allwedd hon yn diffinio lled y ffenestr. Fe'i defnyddir i gofio maint yr arf chwilio o un sesiwn i'r llall. Os caiff ei osod i -1, bydd yr arf chwilio yn defnyddio'r lled rhagosodedig."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:73
-msgid "Default Window Height"
-msgstr "Uchder Rhagosodedig Ffenestr"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:74
-msgid ""
-"This key defines the window height, and it's used to remember the size of "
-"the search tool between sessions. Setting it to -1 will make the search tool"
-" use the default height."
-msgstr "Mae'r allwedd hon yn diffinio uchder y ffenestr. Fe'i defnyddir i gofio maint yr arf chwilio o un sesiwn i'r llall. Os caiff ei osod i -1, bydd yr arf chwilio yn defnyddio'r uchder rhagosodedig."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:75
-msgid "Default Window Maximized"
-msgstr "Ffenestr Ragosodedig wedi'i Mwyhau"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:76
-msgid ""
-"This key determines if the search tool window starts in a maximized state."
-msgstr "Mae'r allwedd yn penderfynu a yw'r ffenestr offer chwilio wedi ei fwyhau wrth gychwyn"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:77
-msgid "Look in Folder"
-msgstr ""
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:78
-msgid "This key defines the default value of the \"Look in Folder\" widget."
-msgstr ""
-
-#: ../gsearchtool/gsearchtool-callbacks.c:194
-msgid "Could not open help document."
-msgstr "Methwyd agor y ddogfen cymorth."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:345
-#, c-format
-msgid "Are you sure you want to open %d document?"
-msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] "Ydych yn siŵr eich bod am agor %d ddogfen?"
-msgstr[1] "Ydych yn siŵr eich bod am agor %d ddogfen?"
-msgstr[2] "Ydych yn siŵr eich bod am agor %d dogfen?"
-msgstr[3] "Ydych yn siŵr eich bod am agor %d dogfen?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:350
-#: ../gsearchtool/gsearchtool-callbacks.c:547
-#, c-format
-msgid "This will open %d separate window."
-msgid_plural "This will open %d separate windows."
-msgstr[0] "Mi fydd hyn yn agor %d ffenestr ar wahân"
-msgstr[1] "Mi fydd hyn yn agor %d ffenestr ar wahân"
-msgstr[2] "Mi fydd hyn yn agor %d ffenestr ar wahân"
-msgstr[3] "Mi fydd hyn yn agor %d ffenestr ar wahân"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:390
-#, c-format
-msgid "Could not open document \"%s\"."
-msgstr "Methwyd agor y ddogfen \"%s\"."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:419
-#, c-format
-msgid "Could not open folder \"%s\"."
-msgstr "Methwyd agor y blygell \"%s\"."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:427
-msgid "The caja file manager is not running."
-msgstr "Nid yw'r trefnydd ffeiliau caja yn rhedeg."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:519
-msgid "There is no installed viewer capable of displaying the document."
-msgstr "Nid oes unrhyw welydd gosodedig sy'n medru dangos y ddogfen."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:542
-#, c-format
-msgid "Are you sure you want to open %d folder?"
-msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] "Ydych yn siŵr eich bod am agor %d plygell?"
-msgstr[1] "Ydych yn siŵr eich bod am agor %d blygell?"
-msgstr[2] "Ydych yn siŵr eich bod am agor %d plygell?"
-msgstr[3] "Ydych yn siŵr eich bod am agor %d plygell?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:695
-#, c-format
-msgid "Could not move \"%s\" to trash."
-msgstr "Methwyd symud y ddogfen \"%s\" i'r sbwriel."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:726
-#, c-format
-msgid "Do you want to delete \"%s\" permanently?"
-msgstr "Ydych eisiau dileu \"%s\" yn barhaol?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:729
-#, c-format
-msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr "Nid yw'r bin sbwriel ar gael. Methwyd symud \"%s\" i'r sbwriel."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:768
-#, c-format
-msgid "Could not delete \"%s\"."
-msgstr "Methwyd a dileu \"%s\"."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:879
-#, c-format
-msgid "Deleting \"%s\" failed: %s."
-msgstr "Methwyd dileu \"%s\": %s"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:891
-#, c-format
-msgid "Moving \"%s\" failed: %s."
-msgstr "Methwyd symud \"%s\": %s"
-
-#. Popup menu item: Open
-#: ../gsearchtool/gsearchtool-callbacks.c:1019
-#: ../gsearchtool/gsearchtool-callbacks.c:1049
-msgid "_Open"
-msgstr "_Agor"
-
-#. Popup menu item: Open with (default)
-#: ../gsearchtool/gsearchtool-callbacks.c:1074
-#, c-format
-msgid "_Open with %s"
-msgstr ""
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1108
-#, c-format
-msgid "Open with %s"
-msgstr ""
-
-#. Popup menu item: Open With
-#: ../gsearchtool/gsearchtool-callbacks.c:1140
-msgid "Open Wit_h"
-msgstr ""
-
-#. Popup menu item: Open Folder
-#: ../gsearchtool/gsearchtool-callbacks.c:1185
-msgid "Open _Folder"
-msgstr ""
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1225
-msgid "_Save Results As..."
-msgstr "_Cadw Canlyniadau Fel..."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1607
-msgid "Save Search Results As..."
-msgstr "Cadw Canlyniadau Chwiliad Fel..."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1638
-msgid "Could not save document."
-msgstr "Methwyd cadw'r ddogfen."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1639
-msgid "You did not select a document name."
-msgstr "Ni ddewisoch enw i'r ddogfen."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1669
-#, c-format
-msgid "Could not save \"%s\" document to \"%s\"."
-msgstr "Methwyd cadw'r ddogfen \"%s\" i \"%s\"."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1703
-#, c-format
-msgid "The document \"%s\" already exists.  Would you like to replace it?"
-msgstr "Mae'r ddogfen \"%s\" yn bodoli'n barod? A hoffech ei drosysgrifo?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1707
-msgid "If you replace an existing file, its contents will be overwritten."
-msgstr "Os ydych yn trosysgrifo ffeil sy'n bodoli, fe fydd ei gynnwys yn cael ei ddileu."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1772
-msgid "The document name you selected is a folder."
-msgstr "Mae enw'r ddogfen a ddewisoch yn enw plygell."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1810
-msgid "You may not have write permissions to the document."
-msgstr "Does gennych chi ddim caniatâd i ysgrifennu i'r ddogfen."
-
-#: ../gsearchtool/gsearchtool-support.c:63
-#, c-format
-msgid ""
-"MateConf error:\n"
-"  %s"
-msgstr "Gwall MateConf:\n  %s"
-
-#. Translators:  Below are the strings displayed in the 'Date Modified'
-#. column of the list view.  The format of this string can vary depending
-#. on age of a file.  Please modify the format of the timestamp to match
-#. your locale.  For example, to display 24 hour time replace the '%-I'
-#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: ../gsearchtool/gsearchtool-support.c:696
-msgid "today at %-I:%M %p"
-msgstr "heddiw am %-I:%M %p"
-
-#: ../gsearchtool/gsearchtool-support.c:698
-msgid "yesterday at %-I:%M %p"
-msgstr "ddoe am %-I:%M %p"
-
-#: ../gsearchtool/gsearchtool-support.c:700
-#: ../gsearchtool/gsearchtool-support.c:702
-msgid "%A, %B %-d %Y at %-I:%M:%S %p"
-msgstr "%A, %B %-d %Y at %-I:%M:%S %p"
-
-#: ../gsearchtool/gsearchtool-support.c:889
-msgid "link (broken)"
-msgstr "cyswllt (wedi torri)"
-
-#: ../gsearchtool/gsearchtool-support.c:893
-#, c-format
-msgid "link to %s"
-msgstr "cyswllt i %s"
-
-#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
-#. Localizers:
-#. * Feel free to leave out the st, nd, rd and th suffix or
-#. * make some or all of them match.
-#. 
-#. localizers: tag used to detect the first copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1495
-msgid " (copy)"
-msgstr ""
-
-#. localizers: tag used to detect the second copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1497
-msgid " (another copy)"
-msgstr ""
-
-#. localizers: tag used to detect the x11th copy of a file
-#. localizers: tag used to detect the x12th copy of a file
-#. localizers: tag used to detect the x13th copy of a file
-#. localizers: tag used to detect the xxth copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1500
-#: ../gsearchtool/gsearchtool-support.c:1502
-#: ../gsearchtool/gsearchtool-support.c:1504
-#: ../gsearchtool/gsearchtool-support.c:1514
-msgid "th copy)"
-msgstr ""
-
-#. localizers: tag used to detect the x1st copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1507
-msgid "st copy)"
-msgstr ""
-
-#. localizers: tag used to detect the x2nd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1509
-msgid "nd copy)"
-msgstr ""
-
-#. localizers: tag used to detect the x3rd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1511
-msgid "rd copy)"
-msgstr ""
-
-#. localizers: appended to first file copy
-#: ../gsearchtool/gsearchtool-support.c:1528
-#, c-format
-msgid "%s (copy)%s"
-msgstr ""
-
-#. localizers: appended to second file copy
-#: ../gsearchtool/gsearchtool-support.c:1530
-#, c-format
-msgid "%s (another copy)%s"
-msgstr ""
-
-#. localizers: appended to x11th file copy
-#. localizers: appended to x12th file copy
-#. localizers: appended to x13th file copy
-#. localizers: appended to xxth file copy
-#: ../gsearchtool/gsearchtool-support.c:1533
-#: ../gsearchtool/gsearchtool-support.c:1535
-#: ../gsearchtool/gsearchtool-support.c:1537
-#: ../gsearchtool/gsearchtool-support.c:1546
-#, c-format
-msgid "%s (%dth copy)%s"
-msgstr ""
-
-#. localizers: appended to x1st file copy
-#: ../gsearchtool/gsearchtool-support.c:1540
-#, c-format
-msgid "%s (%dst copy)%s"
-msgstr ""
-
-#. localizers: appended to x2nd file copy
-#: ../gsearchtool/gsearchtool-support.c:1542
-#, c-format
-msgid "%s (%dnd copy)%s"
-msgstr ""
-
-#. localizers: appended to x3rd file copy
-#: ../gsearchtool/gsearchtool-support.c:1544
-#, c-format
-msgid "%s (%drd copy)%s"
-msgstr ""
-
-#: ../gsearchtool/gsearchtool-support.c:1591
-msgid " (invalid Unicode)"
-msgstr " (Unicode annilys)"
-
-#. localizers: opening parentheses to match the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1680
-msgid " ("
-msgstr ""
-
-#. localizers: opening parentheses of the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1688
-#, c-format
-msgid " (%d"
-msgstr ""
-
-#: ../gsearchtool/gsearchtool.c:80
+#: ../gsearchtool/gsearchtool.c:82
 msgid "Contains the _text"
 msgstr "Yn cynnwys y _testun"
 
-#: ../gsearchtool/gsearchtool.c:82
+#: ../gsearchtool/gsearchtool.c:84
 msgid "_Date modified less than"
 msgstr "Dyddiad addasu yn _llai na"
 
-#: ../gsearchtool/gsearchtool.c:82 ../gsearchtool/gsearchtool.c:83
+#: ../gsearchtool/gsearchtool.c:84 ../gsearchtool/gsearchtool.c:85
 msgid "days"
 msgstr "dyddiau"
 
-#: ../gsearchtool/gsearchtool.c:83
+#: ../gsearchtool/gsearchtool.c:85
 msgid "Date modified more than"
 msgstr "Dyddiad addasu yn fwy na"
 
-#: ../gsearchtool/gsearchtool.c:85
+#: ../gsearchtool/gsearchtool.c:87
 msgid "S_ize at least"
 msgstr "Ma_int o leiaf"
 
-#: ../gsearchtool/gsearchtool.c:85 ../gsearchtool/gsearchtool.c:86
+#: ../gsearchtool/gsearchtool.c:87 ../gsearchtool/gsearchtool.c:88
 msgid "kilobytes"
 msgstr "kilobeit"
 
-#: ../gsearchtool/gsearchtool.c:86
+#: ../gsearchtool/gsearchtool.c:88
 msgid "Si_ze at most"
 msgstr "Maint _hyd at"
 
-#: ../gsearchtool/gsearchtool.c:87
+#: ../gsearchtool/gsearchtool.c:89
 msgid "File is empty"
 msgstr "Ffeil yn wag"
 
-#: ../gsearchtool/gsearchtool.c:89
+#: ../gsearchtool/gsearchtool.c:91
 msgid "Owned by _user"
 msgstr "Yn berchen i _ddefnyddiwr"
 
-#: ../gsearchtool/gsearchtool.c:90
+#: ../gsearchtool/gsearchtool.c:92
 msgid "Owned by _group"
 msgstr "Yn berchen i _grŵp"
 
-#: ../gsearchtool/gsearchtool.c:91
+#: ../gsearchtool/gsearchtool.c:93
 msgid "Owner is unrecognized"
 msgstr "Heb berchennog adnabyddedig"
 
-#: ../gsearchtool/gsearchtool.c:93
+#: ../gsearchtool/gsearchtool.c:95
 msgid "Na_me does not contain"
 msgstr "_Nid yw'r enw yn cynnwys"
 
-#: ../gsearchtool/gsearchtool.c:94
+#: ../gsearchtool/gsearchtool.c:96
 msgid "Name matches regular e_xpression"
 msgstr "Ffeil yn cydweddu â mynegiad _rheolaidd"
 
-#: ../gsearchtool/gsearchtool.c:96
+#: ../gsearchtool/gsearchtool.c:98
 msgid "Show hidden and backup files"
 msgstr "Dangos ffeiliau cudd a ffeiliau copi cadw"
 
-#: ../gsearchtool/gsearchtool.c:97
+#: ../gsearchtool/gsearchtool.c:99
 msgid "Follow symbolic links"
 msgstr "Dilyn cysylltau symbolaidd"
 
-#: ../gsearchtool/gsearchtool.c:98
+#: ../gsearchtool/gsearchtool.c:100
 msgid "Exclude other filesystems"
 msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:156
+#: ../gsearchtool/gsearchtool.c:158
 msgid "Show version of the application"
 msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:157 ../gsearchtool/gsearchtool.c:162
-#: ../gsearchtool/gsearchtool.c:171
+#: ../gsearchtool/gsearchtool.c:159 ../gsearchtool/gsearchtool.c:164
+#: ../gsearchtool/gsearchtool.c:173
 msgid "STRING"
 msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:158
+#: ../gsearchtool/gsearchtool.c:160
 msgid "PATH"
 msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:159
+#: ../gsearchtool/gsearchtool.c:161
 msgid "VALUE"
 msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:163 ../gsearchtool/gsearchtool.c:164
+#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
 msgid "DAYS"
 msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
+#: ../gsearchtool/gsearchtool.c:167 ../gsearchtool/gsearchtool.c:168
 msgid "KILOBYTES"
 msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:168
+#: ../gsearchtool/gsearchtool.c:170
 msgid "USER"
 msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:169
+#: ../gsearchtool/gsearchtool.c:171
 msgid "GROUP"
 msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:172
+#: ../gsearchtool/gsearchtool.c:174
 msgid "PATTERN"
 msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:383
+#: ../gsearchtool/gsearchtool.c:385
 msgid "A locate database has probably not been created."
 msgstr "Mae'n debyg nad yw'r gronfa 'locate' wedi ei chreu."
 
-#: ../gsearchtool/gsearchtool.c:485
+#: ../gsearchtool/gsearchtool.c:487
 #, c-format
 msgid "Character set conversion failed for \"%s\""
 msgstr "Methodd trosiad set nodau \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:509
+#: ../gsearchtool/gsearchtool.c:511
 msgid "Searching..."
 msgstr "Yn chwilio..."
 
-#: ../gsearchtool/gsearchtool.c:509 ../gsearchtool/gsearchtool.c:1015
-#: ../gsearchtool/gsearchtool.c:2988
+#: ../gsearchtool/gsearchtool.c:511 ../gsearchtool/gsearchtool.c:1031
+#: ../gsearchtool/gsearchtool.c:3030
 msgid "Search for Files"
 msgstr "Chwilio am Ffeiliau"
 
-#: ../gsearchtool/gsearchtool.c:961 ../gsearchtool/gsearchtool.c:990
+#: ../gsearchtool/gsearchtool.c:977 ../gsearchtool/gsearchtool.c:1006
 msgid "No files found"
 msgstr "Ni chanfuwyd unrhyw ffeiliau"
 
-#: ../gsearchtool/gsearchtool.c:983
+#: ../gsearchtool/gsearchtool.c:999
 msgid "(stopped)"
 msgstr "(stopiwyd)"
 
-#: ../gsearchtool/gsearchtool.c:989
+#: ../gsearchtool/gsearchtool.c:1005
 msgid "No Files Found"
 msgstr "Ni chanfuwyd unrhyw ffeiliau"
 
-#: ../gsearchtool/gsearchtool.c:994
+#: ../gsearchtool/gsearchtool.c:1010
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
@@ -2628,7 +2007,7 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: ../gsearchtool/gsearchtool.c:998 ../gsearchtool/gsearchtool.c:1036
+#: ../gsearchtool/gsearchtool.c:1014 ../gsearchtool/gsearchtool.c:1052
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
@@ -2637,209 +2016,667 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: ../gsearchtool/gsearchtool.c:1127
+#: ../gsearchtool/gsearchtool.c:1143
 msgid "Entry changed called for a non entry option!"
 msgstr "Galwai'r cofnod newidiwyd am ddewisiad di-gofnod!"
 
-#: ../gsearchtool/gsearchtool.c:1287
+#: ../gsearchtool/gsearchtool.c:1308
 msgid "Set the text of \"Name contains\" search option"
 msgstr "Gosod testun opsiwn chwilio \"Enw yn cynnwys\""
 
-#: ../gsearchtool/gsearchtool.c:1288
+#: ../gsearchtool/gsearchtool.c:1309
 msgid "Set the text of \"Look in folder\" search option"
 msgstr "Gosod testun opsiwn chwilio \"Edrych yn y blygell\""
 
-#: ../gsearchtool/gsearchtool.c:1289
+#: ../gsearchtool/gsearchtool.c:1310
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr "Didoli ffeiliau yn ôl un o'r canlynol: enw, plygell, maint, math, neu ddyddiad"
 
-#: ../gsearchtool/gsearchtool.c:1290
+#: ../gsearchtool/gsearchtool.c:1311
 msgid "Set sort order to descending, the default is ascending"
 msgstr "Gosod trefnu disgynnol; trefn esgynnol sy'n ragosodedig"
 
-#: ../gsearchtool/gsearchtool.c:1291
+#: ../gsearchtool/gsearchtool.c:1312
 msgid "Automatically start a search"
 msgstr "Dechrau chwiliad yn awtomatig"
 
-#: ../gsearchtool/gsearchtool.c:1297
+#: ../gsearchtool/gsearchtool.c:1318
 #, c-format
 msgid "Select the \"%s\" search option"
 msgstr "Dewis yr opsiwn chwilio \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:1300
+#: ../gsearchtool/gsearchtool.c:1321
 #, c-format
 msgid "Select and set the \"%s\" search option"
 msgstr "Dewis a gosod yr opsiwn chwilio \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:1407
+#: ../gsearchtool/gsearchtool.c:1428
 msgid "Invalid option passed to sortby command line argument."
 msgstr "Pasiwyd dewisiad annilys i sort gan ymresymiad llinell orchymyn."
 
-#: ../gsearchtool/gsearchtool.c:1701
+#: ../gsearchtool/gsearchtool.c:1720
 msgid ""
 "\n"
 "... Too many errors to display ..."
 msgstr "\n... Gormod o wallau i'w dangos ..."
 
-#: ../gsearchtool/gsearchtool.c:1715
+#: ../gsearchtool/gsearchtool.c:1734
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
 msgstr "Fe allai canlyniad yr archwiliad fod yn annilys.  Fe gafwyd gwallau wrth wneud yr archwiliad hwn."
 
-#: ../gsearchtool/gsearchtool.c:1727 ../gsearchtool/gsearchtool.c:1771
+#: ../gsearchtool/gsearchtool.c:1746 ../gsearchtool/gsearchtool.c:1790
 msgid "Show more _details"
 msgstr "Dangos mwy o _fanylion"
 
-#: ../gsearchtool/gsearchtool.c:1757
+#: ../gsearchtool/gsearchtool.c:1776
 msgid ""
 "The search results may be out of date or invalid.  Do you want to disable "
 "the quick search feature?"
 msgstr "Fe allai canlyniad yr archwiliad fod yn annilys.  Ydych chi am analluogi'r nodwedd chwilio cyflym?"
 
-#: ../gsearchtool/gsearchtool.c:1782
+#: ../gsearchtool/gsearchtool.c:1801
 msgid "Disable _Quick Search"
 msgstr "Analluogi _Chwilio Cyflym"
 
-#: ../gsearchtool/gsearchtool.c:1809
+#: ../gsearchtool/gsearchtool.c:1828
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
 msgstr "Methu gosod ID grŵp proses y plentyn %d: %s.\n"
 
-#: ../gsearchtool/gsearchtool.c:1834
+#: ../gsearchtool/gsearchtool.c:1853
 msgid "Error parsing the search command."
 msgstr "Gwall wrth ramadegu'r gorchymyn chwilio."
 
-#: ../gsearchtool/gsearchtool.c:1867
+#: ../gsearchtool/gsearchtool.c:1885
 msgid "Error running the search command."
 msgstr "Gwall wrth weithredu'r gorchymyn chwilio."
 
-#: ../gsearchtool/gsearchtool.c:1987
+#: ../gsearchtool/gsearchtool.c:2008
 #, c-format
 msgid "Enter a text value for the \"%s\" search option."
 msgstr "Rhowch werth testun ar gyfer yr opsiwn chwilio \"%s\"."
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:1992
+#: ../gsearchtool/gsearchtool.c:2013
 #, c-format
 msgid "\"%s\" in %s"
 msgstr "\"%s\" mewn %s"
 
-#: ../gsearchtool/gsearchtool.c:1994
+#: ../gsearchtool/gsearchtool.c:2015
 #, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
 msgstr "Rhowch werth yn %s ar gyfer yr opsiwn chwilio \"%s\"."
 
-#: ../gsearchtool/gsearchtool.c:2052
+#: ../gsearchtool/gsearchtool.c:2073
 #, c-format
 msgid "Remove \"%s\""
 msgstr "Gwaredu \"%s\""
 
-#: ../gsearchtool/gsearchtool.c:2053
+#: ../gsearchtool/gsearchtool.c:2074
 #, c-format
 msgid "Click to remove the \"%s\" search option."
 msgstr "Cliciwch i dynnu'r opsiwn chwilio \"%s\" i ffwrdd."
 
-#: ../gsearchtool/gsearchtool.c:2146
+#: ../gsearchtool/gsearchtool.c:2167
 msgid "A_vailable options:"
 msgstr "Dewisiadau a_r gael:"
 
-#: ../gsearchtool/gsearchtool.c:2175
+#: ../gsearchtool/gsearchtool.c:2196
 msgid "Available options"
 msgstr "Dewisiadau ar gael"
 
-#: ../gsearchtool/gsearchtool.c:2176
+#: ../gsearchtool/gsearchtool.c:2197
 msgid "Select a search option from the drop-down list."
 msgstr "Dewiswch opsiwn chwilio o'r ddewislen gwympo."
 
-#: ../gsearchtool/gsearchtool.c:2188
+#: ../gsearchtool/gsearchtool.c:2209
 msgid "Add search option"
 msgstr "Ychwanegu opsiwn chwilio"
 
-#: ../gsearchtool/gsearchtool.c:2189
+#: ../gsearchtool/gsearchtool.c:2210
 msgid "Click to add the selected available search option."
 msgstr "Cliciwch i ychwanegu'r opsiwn chwilio ddewiswyd."
 
-#: ../gsearchtool/gsearchtool.c:2278
+#: ../gsearchtool/gsearchtool.c:2299
 msgid "S_earch results:"
 msgstr "Canlyniadau c_hwilio:"
 
-#: ../gsearchtool/gsearchtool.c:2322
+#: ../gsearchtool/gsearchtool.c:2343
 msgid "List View"
 msgstr "Golwg Rhestr"
 
-#: ../gsearchtool/gsearchtool.c:2431
+#: ../gsearchtool/gsearchtool.c:2452
 msgid "Type"
 msgstr "Math"
 
-#: ../gsearchtool/gsearchtool.c:2443
+#: ../gsearchtool/gsearchtool.c:2464
 msgid "Date Modified"
 msgstr "Dyddiad Addaswyd"
 
-#: ../gsearchtool/gsearchtool.c:2759
+#: ../gsearchtool/gsearchtool.c:2799
 msgid "_Name contains:"
 msgstr "_Enw yn cynnwys:"
 
-#: ../gsearchtool/gsearchtool.c:2773 ../gsearchtool/gsearchtool.c:2774
+#: ../gsearchtool/gsearchtool.c:2813 ../gsearchtool/gsearchtool.c:2814
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr "Rhowch enw ffeil neu enw rhannol ffeil (gallwch ddefnyddio gwylltnodau)."
 
-#: ../gsearchtool/gsearchtool.c:2774
+#: ../gsearchtool/gsearchtool.c:2814
 msgid "Name contains"
 msgstr "Enw yn cynnwys"
 
-#: ../gsearchtool/gsearchtool.c:2780
+#: ../gsearchtool/gsearchtool.c:2820
 msgid "_Look in folder:"
 msgstr "_Edrych yn y blygell:"
 
-#: ../gsearchtool/gsearchtool.c:2786
+#: ../gsearchtool/gsearchtool.c:2826
 msgid "Browse"
 msgstr "Pori"
 
-#: ../gsearchtool/gsearchtool.c:2795
+#: ../gsearchtool/gsearchtool.c:2835
 msgid "Look in folder"
 msgstr "Edrych yn y blygell"
 
-#: ../gsearchtool/gsearchtool.c:2795
+#: ../gsearchtool/gsearchtool.c:2835
 msgid "Select the folder or device from which you want to begin the search."
 msgstr "Dewiswch y ffolder neu'r ddyfais lle'r hoffech chi ddechrau'r chwiliad."
 
-#: ../gsearchtool/gsearchtool.c:2813
+#: ../gsearchtool/gsearchtool.c:2853
 msgid "Select more _options"
 msgstr "Dewis mwy o _opsiynau"
 
-#: ../gsearchtool/gsearchtool.c:2822
+#: ../gsearchtool/gsearchtool.c:2862
 msgid "Select more options"
 msgstr "Dewis mwy o opsiynau"
 
-#: ../gsearchtool/gsearchtool.c:2822
+#: ../gsearchtool/gsearchtool.c:2862
 msgid "Click to expand or collapse the list of available options."
 msgstr "Cliciwch i ehangu neu gyfyngu rhestr yr opsiynau sydd ar gael."
 
-#: ../gsearchtool/gsearchtool.c:2846
+#: ../gsearchtool/gsearchtool.c:2886
 msgid "Click to display the help manual."
 msgstr "Cliciwch i ddangos y llawlyfr cymorth."
 
-#: ../gsearchtool/gsearchtool.c:2854
+#: ../gsearchtool/gsearchtool.c:2894
 msgid "Click to close \"Search for Files\"."
 msgstr "Cliciwch i gau \"Chwilio am Ffeiliau\"."
 
-#: ../gsearchtool/gsearchtool.c:2880
+#: ../gsearchtool/gsearchtool.c:2920
 msgid "Click to perform a search."
 msgstr "Cliciwch i ddechrau chwiliad."
 
-#: ../gsearchtool/gsearchtool.c:2881
+#: ../gsearchtool/gsearchtool.c:2921
 msgid "Click to stop a search."
 msgstr "Cliciwch i ddiweddu chwiliad."
 
-#: ../gsearchtool/gsearchtool.c:2973
+#: ../gsearchtool/gsearchtool.c:3015
 msgid "- the MATE Search Tool"
 msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:2982
+#: ../gsearchtool/gsearchtool.c:3024
 #, c-format
 msgid "Failed to parse command line arguments: %s\n"
+msgstr ""
+
+#: ../gsearchtool/gsearchtool-callbacks.c:198
+msgid "Could not open help document."
+msgstr "Methwyd agor y ddogfen cymorth."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:349
+#, c-format
+msgid "Are you sure you want to open %d document?"
+msgid_plural "Are you sure you want to open %d documents?"
+msgstr[0] "Ydych yn siŵr eich bod am agor %d ddogfen?"
+msgstr[1] "Ydych yn siŵr eich bod am agor %d ddogfen?"
+msgstr[2] "Ydych yn siŵr eich bod am agor %d dogfen?"
+msgstr[3] "Ydych yn siŵr eich bod am agor %d dogfen?"
+
+#: ../gsearchtool/gsearchtool-callbacks.c:354
+#: ../gsearchtool/gsearchtool-callbacks.c:551
+#, c-format
+msgid "This will open %d separate window."
+msgid_plural "This will open %d separate windows."
+msgstr[0] "Mi fydd hyn yn agor %d ffenestr ar wahân"
+msgstr[1] "Mi fydd hyn yn agor %d ffenestr ar wahân"
+msgstr[2] "Mi fydd hyn yn agor %d ffenestr ar wahân"
+msgstr[3] "Mi fydd hyn yn agor %d ffenestr ar wahân"
+
+#: ../gsearchtool/gsearchtool-callbacks.c:394
+#, c-format
+msgid "Could not open document \"%s\"."
+msgstr "Methwyd agor y ddogfen \"%s\"."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:423
+#, c-format
+msgid "Could not open folder \"%s\"."
+msgstr "Methwyd agor y blygell \"%s\"."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:431
+msgid "The caja file manager is not running."
+msgstr "Nid yw'r trefnydd ffeiliau caja yn rhedeg."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:523
+msgid "There is no installed viewer capable of displaying the document."
+msgstr "Nid oes unrhyw welydd gosodedig sy'n medru dangos y ddogfen."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:546
+#, c-format
+msgid "Are you sure you want to open %d folder?"
+msgid_plural "Are you sure you want to open %d folders?"
+msgstr[0] "Ydych yn siŵr eich bod am agor %d plygell?"
+msgstr[1] "Ydych yn siŵr eich bod am agor %d blygell?"
+msgstr[2] "Ydych yn siŵr eich bod am agor %d plygell?"
+msgstr[3] "Ydych yn siŵr eich bod am agor %d plygell?"
+
+#: ../gsearchtool/gsearchtool-callbacks.c:699
+#, c-format
+msgid "Could not move \"%s\" to trash."
+msgstr "Methwyd symud y ddogfen \"%s\" i'r sbwriel."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:730
+#, c-format
+msgid "Do you want to delete \"%s\" permanently?"
+msgstr "Ydych eisiau dileu \"%s\" yn barhaol?"
+
+#: ../gsearchtool/gsearchtool-callbacks.c:733
+#, c-format
+msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
+msgstr "Nid yw'r bin sbwriel ar gael. Methwyd symud \"%s\" i'r sbwriel."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:772
+#, c-format
+msgid "Could not delete \"%s\"."
+msgstr "Methwyd a dileu \"%s\"."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:884
+#, c-format
+msgid "Deleting \"%s\" failed: %s."
+msgstr "Methwyd dileu \"%s\": %s"
+
+#: ../gsearchtool/gsearchtool-callbacks.c:896
+#, c-format
+msgid "Moving \"%s\" failed: %s."
+msgstr "Methwyd symud \"%s\": %s"
+
+#. Popup menu item: Open
+#: ../gsearchtool/gsearchtool-callbacks.c:1024
+#: ../gsearchtool/gsearchtool-callbacks.c:1054
+msgid "_Open"
+msgstr "_Agor"
+
+#. Popup menu item: Open with (default)
+#: ../gsearchtool/gsearchtool-callbacks.c:1079
+#, c-format
+msgid "_Open with %s"
+msgstr ""
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1114
+#, c-format
+msgid "Open with %s"
+msgstr ""
+
+#. Popup menu item: Open With
+#: ../gsearchtool/gsearchtool-callbacks.c:1147
+msgid "Open Wit_h"
+msgstr ""
+
+#. Popup menu item: Open Containing Folder
+#: ../gsearchtool/gsearchtool-callbacks.c:1192
+msgid "Open Containing _Folder"
+msgstr ""
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1232
+msgid "_Save Results As..."
+msgstr "_Cadw Canlyniadau Fel..."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1614
+msgid "Save Search Results As..."
+msgstr "Cadw Canlyniadau Chwiliad Fel..."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1643
+msgid "Could not save document."
+msgstr "Methwyd cadw'r ddogfen."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1644
+msgid "You did not select a document name."
+msgstr "Ni ddewisoch enw i'r ddogfen."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1674
+#, c-format
+msgid "Could not save \"%s\" document to \"%s\"."
+msgstr "Methwyd cadw'r ddogfen \"%s\" i \"%s\"."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1707
+#, c-format
+msgid "The document \"%s\" already exists.  Would you like to replace it?"
+msgstr "Mae'r ddogfen \"%s\" yn bodoli'n barod? A hoffech ei drosysgrifo?"
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1711
+msgid "If you replace an existing file, its contents will be overwritten."
+msgstr "Os ydych yn trosysgrifo ffeil sy'n bodoli, fe fydd ei gynnwys yn cael ei ddileu."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1775
+msgid "The document name you selected is a folder."
+msgstr "Mae enw'r ddogfen a ddewisoch yn enw plygell."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1811
+msgid "You may not have write permissions to the document."
+msgstr "Does gennych chi ddim caniatâd i ysgrifennu i'r ddogfen."
+
+#. Translators:  Below are the strings displayed in the 'Date Modified'
+#. column of the list view.  The format of this string can vary depending
+#. on age of a file.  Please modify the format of the timestamp to match
+#. your locale.  For example, to display 24 hour time replace the '%-I'
+#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
+#: ../gsearchtool/gsearchtool-support.c:448
+msgid "today at %-I:%M %p"
+msgstr "heddiw am %-I:%M %p"
+
+#: ../gsearchtool/gsearchtool-support.c:450
+msgid "yesterday at %-I:%M %p"
+msgstr "ddoe am %-I:%M %p"
+
+#: ../gsearchtool/gsearchtool-support.c:452
+#: ../gsearchtool/gsearchtool-support.c:454
+msgid "%A, %B %-d %Y at %-I:%M:%S %p"
+msgstr "%A, %B %-d %Y at %-I:%M:%S %p"
+
+#: ../gsearchtool/gsearchtool-support.c:641
+msgid "link (broken)"
+msgstr "cyswllt (wedi torri)"
+
+#: ../gsearchtool/gsearchtool-support.c:645
+#, c-format
+msgid "link to %s"
+msgstr "cyswllt i %s"
+
+#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
+#. Localizers:
+#. * Feel free to leave out the st, nd, rd and th suffix or
+#. * make some or all of them match.
+#. localizers: tag used to detect the first copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1257
+msgid " (copy)"
+msgstr ""
+
+#. localizers: tag used to detect the second copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1259
+msgid " (another copy)"
+msgstr ""
+
+#. localizers: tag used to detect the x11th copy of a file
+#. localizers: tag used to detect the x12th copy of a file
+#. localizers: tag used to detect the x13th copy of a file
+#. localizers: tag used to detect the xxth copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1262
+#: ../gsearchtool/gsearchtool-support.c:1264
+#: ../gsearchtool/gsearchtool-support.c:1266
+#: ../gsearchtool/gsearchtool-support.c:1276
+msgid "th copy)"
+msgstr ""
+
+#. localizers: tag used to detect the x1st copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1269
+msgid "st copy)"
+msgstr ""
+
+#. localizers: tag used to detect the x2nd copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1271
+msgid "nd copy)"
+msgstr ""
+
+#. localizers: tag used to detect the x3rd copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1273
+msgid "rd copy)"
+msgstr ""
+
+#. localizers: appended to first file copy
+#: ../gsearchtool/gsearchtool-support.c:1290
+#, c-format
+msgid "%s (copy)%s"
+msgstr ""
+
+#. localizers: appended to second file copy
+#: ../gsearchtool/gsearchtool-support.c:1292
+#, c-format
+msgid "%s (another copy)%s"
+msgstr ""
+
+#. localizers: appended to x11th file copy
+#. localizers: appended to x12th file copy
+#. localizers: appended to x13th file copy
+#. localizers: appended to xxth file copy
+#: ../gsearchtool/gsearchtool-support.c:1295
+#: ../gsearchtool/gsearchtool-support.c:1297
+#: ../gsearchtool/gsearchtool-support.c:1299
+#: ../gsearchtool/gsearchtool-support.c:1308
+#, c-format
+msgid "%s (%dth copy)%s"
+msgstr ""
+
+#. localizers: appended to x1st file copy
+#: ../gsearchtool/gsearchtool-support.c:1302
+#, c-format
+msgid "%s (%dst copy)%s"
+msgstr ""
+
+#. localizers: appended to x2nd file copy
+#: ../gsearchtool/gsearchtool-support.c:1304
+#, c-format
+msgid "%s (%dnd copy)%s"
+msgstr ""
+
+#. localizers: appended to x3rd file copy
+#: ../gsearchtool/gsearchtool-support.c:1306
+#, c-format
+msgid "%s (%drd copy)%s"
+msgstr ""
+
+#: ../gsearchtool/gsearchtool-support.c:1353
+msgid " (invalid Unicode)"
+msgstr " (Unicode annilys)"
+
+#. localizers: opening parentheses to match the "th copy)" string
+#: ../gsearchtool/gsearchtool-support.c:1442
+msgid " ("
+msgstr ""
+
+#. localizers: opening parentheses of the "th copy)" string
+#: ../gsearchtool/gsearchtool-support.c:1450
+#, c-format
+msgid " (%d"
+msgstr ""
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:1
+msgid "Search history"
+msgstr ""
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:2
+msgid "This key defines the items which were searched for in the past."
+msgstr ""
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:3
+msgid "Show Additional Options"
+msgstr "Dangos Opsiynau Ychwanegol"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:4
+msgid "Disable Quick Search"
+msgstr "Analluogi Chwilio Cyflym"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:5
+msgid ""
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
+msgstr "Mae'r allwedd yn penderfynu a yw'r offer chwilio yn analluogi'r gorchymyn lleoli ar ôl  gwneud chwiliad cyflym."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:6
+msgid "Quick Search Excluded Paths"
+msgstr "Chwilio Cyflym - Llwybrau wedi Eithrio"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:7
+msgid ""
+"This key defines the paths the search tool will exclude from a quick search."
+" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
+"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
+msgstr "Mae'r allwedd yn penderfynu'r llwybrau bydd yr offer chwilio yn eu hepgor o chwiliad cyflym. Cynhelir y gwylltnodau '*' a '?'. Y gwerthoedd rhagosodedig yw /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, a /var/*."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:8
+msgid "Disable Quick Search Second Scan"
+msgstr "Analluogi Ail Sgan Chwilio Cyflym"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:9
+msgid ""
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
+msgstr "Mae'r allwedd yn penderfynu a yw'r offer chwilio yn analluogi'r gorchymyn canfod ar ôl  gwneud chwiliad cyflym."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:10
+msgid "Quick Search Second Scan Excluded Paths"
+msgstr "Chwilio Cyflym - Llwybrau wedi Eithrio o'r Ail Sgan"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:11
+msgid ""
+"This key defines the paths the search tool will exclude from a second scan "
+"when performing a quick search. The second scan uses the find command to "
+"search for files. The purpose of the second scan is to find files that have "
+"not been indexed. The wildcards '*' and '?' are supported. The default value"
+" is /."
+msgstr "Mae'r allwedd yn penderfynu'r llwybrau bydd yr offer chwilio yn eu hepgor o'r ail chwiliad yn ystod y chwiliad cyflym. Mae'r ail chwiliad yn defnyddio'r gorchymyn canfod i chwilio am ffeiliau. Pwrpas yr ail sgan yw canfod ffeiliau sydd heb eu mynegeio. Cynhelir y gwylltnodau '*' a '?'. Y gwerth rhagosodedig yw /."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:12
+msgid "Search Result Columns Order"
+msgstr "Trefn Colofnau Canlyniadau Chwilio"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:13
+msgid ""
+"This key defines the order of the columns in the search results. This key "
+"should not be modified by the user."
+msgstr "Mae'r allwedd hon yn diffinio trefn y colofnau yn y canlyniadau chwilio. Ni ddylai'r defnyddiwr newid yr allwedd hon."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:14
+msgid "Default Window Width"
+msgstr "Lled Ffenestr Rhagosodedig"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:15
+msgid ""
+"This key defines the window width, and it's used to remember the size of the"
+" search tool between sessions. Setting it to -1 will make the search tool "
+"use the default width."
+msgstr "Mae'r allwedd hon yn diffinio lled y ffenestr. Fe'i defnyddir i gofio maint yr arf chwilio o un sesiwn i'r llall. Os caiff ei osod i -1, bydd yr arf chwilio yn defnyddio'r lled rhagosodedig."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:16
+msgid "Default Window Height"
+msgstr "Uchder Rhagosodedig Ffenestr"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:17
+msgid ""
+"This key defines the window height, and it's used to remember the size of "
+"the search tool between sessions. Setting it to -1 will make the search tool"
+" use the default height."
+msgstr "Mae'r allwedd hon yn diffinio uchder y ffenestr. Fe'i defnyddir i gofio maint yr arf chwilio o un sesiwn i'r llall. Os caiff ei osod i -1, bydd yr arf chwilio yn defnyddio'r uchder rhagosodedig."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:18
+msgid "Default Window Maximized"
+msgstr "Ffenestr Ragosodedig wedi'i Mwyhau"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:19
+msgid ""
+"This key determines if the search tool window starts in a maximized state."
+msgstr "Mae'r allwedd yn penderfynu a yw'r ffenestr offer chwilio wedi ei fwyhau wrth gychwyn"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:20
+msgid "Look in Folder"
+msgstr ""
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:21
+msgid "This key defines the default value of the \"Look in Folder\" widget."
+msgstr ""
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:22
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Yn cynnwys y testun\" wedi'i ddewis ar gychwyn yr offer chwilio."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:23
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
+msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Dyddiad addasu yn llai na\" wedi'i ddewis ar gychwyn yr offer chwilio."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:24
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
+msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Dyddiad addasu yn fwy na\" wedi'i ddewis ar gychwyn yr offer chwilio."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:25
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Maint o leiaf\" wedi'i ddewis ar gychwyn yr offer chwilio."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:26
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
+msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Maint mwyaf\" wedi'i ddewis ar gychwyn yr offer chwilio."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:27
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
+msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Ffeil yn wag\" wedi'i ddewis ar gychwyn yr offer chwilio."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:28
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
+msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Yn berchen i ddefnyddiwr\" wedi'i ddewis ar gychwyn yr offer chwilio."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:29
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when"
+" the search tool is started."
+msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Yn berchen i grŵp\" wedi'i ddewis ar gychwyn yr offer chwilio."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:30
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
+msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Heb berchennog adnabyddedig\" wedi'i ddewis ar gychwyn yr offer chwilio."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:31
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Nid yw'r enw yn cynnwys\" wedi'i ddewis ar gychwyn yr offer chwilio."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:32
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option"
+" is selected when the search tool is started."
+msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Ffeil yn cydweddu â mynegiad rheolaidd\" wedi'i ddewis ar gychwyn yr offer chwilio."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:33
+msgid ""
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
+msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Dangos ffeiliau a ffolderi cudd\" wedi'i ddewis ar gychwyn yr offer chwilio."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:34
+msgid ""
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr "Allwedd sy'n penderfynu a yw'r opsiwn \"Dilyn cysylltau symbolaidd\" wedi'i ddewis ar gychwyn yr offer chwilio."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:35
+msgid ""
+"This key determines if the \"Exclude other filesystems\" search option is "
+"selected when the search tool is started."
 msgstr ""
 
 #: ../libeggsmclient/eggdesktopfile.c:165
@@ -2852,27 +2689,27 @@ msgstr ""
 msgid "Unrecognized desktop file Version '%s'"
 msgstr ""
 
-#: ../libeggsmclient/eggdesktopfile.c:958
+#: ../libeggsmclient/eggdesktopfile.c:957
 #, c-format
 msgid "Starting %s"
 msgstr ""
 
-#: ../libeggsmclient/eggdesktopfile.c:1100
+#: ../libeggsmclient/eggdesktopfile.c:1098
 #, c-format
 msgid "Application does not accept documents on command line"
 msgstr ""
 
-#: ../libeggsmclient/eggdesktopfile.c:1168
+#: ../libeggsmclient/eggdesktopfile.c:1166
 #, c-format
 msgid "Unrecognized launch option: %d"
 msgstr ""
 
-#: ../libeggsmclient/eggdesktopfile.c:1373
+#: ../libeggsmclient/eggdesktopfile.c:1365
 #, c-format
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 msgstr ""
 
-#: ../libeggsmclient/eggdesktopfile.c:1392
+#: ../libeggsmclient/eggdesktopfile.c:1384
 #, c-format
 msgid "Not a launchable item"
 msgstr ""
@@ -2913,51 +2750,59 @@ msgstr ""
 msgid "View or monitor system log files"
 msgstr "Gweld neu fonitro'r ffeiliau cofnod system"
 
-#: ../logview/data/mate-system-log.schemas.in.h:1
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
 msgid "Log file to open up on startup"
 msgstr "Ffeil gofnod i'w hagor wrth gychwyn"
 
-#: ../logview/data/mate-system-log.schemas.in.h:2
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
 msgid ""
 "Specifies the log file displayed at startup. The default is either "
 "/var/adm/messages or /var/log/messages, depending on your operating system."
 msgstr "Dewis y ffeil gofnod i'w hagor wrth gychwyn. Naill ai /var/adm/messages neu /var/log/messages sy'n rhagosodiad, yn dibynnu ar eich system reoli."
 
-#: ../logview/data/mate-system-log.schemas.in.h:3
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
 msgid "Size of the font used to display the log"
 msgstr "Maint y ffont a ddefnyddir i ddangos y cofnod log"
 
-#: ../logview/data/mate-system-log.schemas.in.h:4
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
 msgid ""
 "Specifies the size of the fixed-width font used to display the log in the "
 "main tree view. The default is taken from the default terminal font size."
 msgstr "Penodi maint y ffont lled benodedig ddefnyddir i ddangos y log yn y brif olwg coeden. Cymerir y rhagosodiad o faint ffont rhagosodedig y derfynell."
 
-#: ../logview/data/mate-system-log.schemas.in.h:5
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
 msgid "Height of the main window in pixels"
 msgstr "Uchder y brif ffenestr, mewn picseli"
 
-#: ../logview/data/mate-system-log.schemas.in.h:6
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
 msgid "Specifies the height of the log viewer main window in pixels."
 msgstr "Penodi uchder prif ffenestr y gwelydd logiau, mewn picseli."
 
-#: ../logview/data/mate-system-log.schemas.in.h:7
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
 msgid "Width of the main window in pixels"
 msgstr "Lled y brif ffenestr, mewn picseli"
 
-#: ../logview/data/mate-system-log.schemas.in.h:8
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
 msgid "Specifies the width of the log viewer main window in pixels."
 msgstr "Penodi lled prif ffenestr y gwelydd logiau, mewn picseli."
 
-#: ../logview/data/mate-system-log.schemas.in.h:9
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
 msgid "Log files to open up on startup"
 msgstr "Ffeil log i'w hagor wrth gychwyn"
 
-#: ../logview/data/mate-system-log.schemas.in.h:10
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
 msgid ""
 "Specifies a list of log files to open up at startup. A default list is "
 "created by reading /etc/syslog.conf."
 msgstr "Dewis y ffeil log i'w hagor wrth gychwyn. Mae rhestr ragosodedig yn cael ei greu gan ddarllen /etc/syslog.conf."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
+msgid "List of saved filters"
+msgstr ""
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
+msgid "List of saved regexp filters"
+msgstr ""
 
 #: ../logview/data/logview-filter.ui.h:2
 msgid "_Regular Expression:"
@@ -2983,65 +2828,65 @@ msgstr ""
 msgid "Effect:"
 msgstr ""
 
-#: ../logview/logview-app.c:374
+#: ../logview/logview-app.c:377
 #, c-format
 msgid "Impossible to open the file %s"
 msgstr ""
 
-#: ../logview/logview-filter-manager.c:90
+#: ../logview/logview-filter-manager.c:94
 msgid "Filter name is empty!"
 msgstr ""
 
-#: ../logview/logview-filter-manager.c:103
+#: ../logview/logview-filter-manager.c:107
 msgid "Filter name may not contain the ':' character"
 msgstr ""
 
-#: ../logview/logview-filter-manager.c:126
+#: ../logview/logview-filter-manager.c:130
 msgid "Regular expression is empty!"
 msgstr ""
 
-#: ../logview/logview-filter-manager.c:142
+#: ../logview/logview-filter-manager.c:146
 #, c-format
 msgid "Regular expression is invalid: %s"
 msgstr ""
 
-#: ../logview/logview-filter-manager.c:238
+#: ../logview/logview-filter-manager.c:242
 msgid "Please specify either foreground or background color!"
 msgstr ""
 
-#: ../logview/logview-filter-manager.c:292
+#: ../logview/logview-filter-manager.c:296
 msgid "Edit filter"
 msgstr ""
 
-#: ../logview/logview-filter-manager.c:292
+#: ../logview/logview-filter-manager.c:296
 msgid "Add new filter"
 msgstr ""
 
-#: ../logview/logview-filter-manager.c:502
+#: ../logview/logview-filter-manager.c:506
 msgid "Filters"
 msgstr ""
 
-#: ../logview/logview-findbar.c:169
+#: ../logview/logview-findbar.c:173
 msgid "_Find:"
 msgstr ""
 
-#: ../logview/logview-findbar.c:184
+#: ../logview/logview-findbar.c:188
 msgid "Find Previous"
 msgstr ""
 
-#: ../logview/logview-findbar.c:187
+#: ../logview/logview-findbar.c:191
 msgid "Find previous occurrence of the search string"
 msgstr ""
 
-#: ../logview/logview-findbar.c:192
+#: ../logview/logview-findbar.c:196
 msgid "Find Next"
 msgstr ""
 
-#: ../logview/logview-findbar.c:195
+#: ../logview/logview-findbar.c:199
 msgid "Find next occurrence of the search string"
 msgstr ""
 
-#: ../logview/logview-findbar.c:202
+#: ../logview/logview-findbar.c:206
 msgid "Clear the search string"
 msgstr ""
 
@@ -3061,7 +2906,7 @@ msgstr ""
 msgid "This version of System Log does not support GZipped logs."
 msgstr ""
 
-#: ../logview/logview-loglist.c:311
+#: ../logview/logview-loglist.c:315
 msgid "Loading..."
 msgstr ""
 
@@ -3077,11 +2922,11 @@ msgstr ""
 msgid " - Browse and monitor logs"
 msgstr " - Pori a monitro logiau"
 
-#: ../logview/logview-main.c:102
+#: ../logview/logview-main.c:100
 msgid "Log Viewer"
 msgstr "Gwelydd Logiau"
 
-#: ../logview/logview-window.c:38 ../logview/logview-window.c:759
+#: ../logview/logview-window.c:38 ../logview/logview-window.c:760
 msgid "System Log Viewer"
 msgstr "Gwelydd Cofnodion System"
 
@@ -3090,137 +2935,137 @@ msgstr "Gwelydd Cofnodion System"
 msgid "last update: %s"
 msgstr ""
 
-#: ../logview/logview-window.c:213
+#: ../logview/logview-window.c:214
 #, c-format
 msgid "%d lines (%s) - %s"
 msgstr "%d llinell (%s) - %s"
 
-#: ../logview/logview-window.c:317
+#: ../logview/logview-window.c:318
 msgid "Open Log"
 msgstr "Agor Log"
 
-#: ../logview/logview-window.c:356
+#: ../logview/logview-window.c:357
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr ""
 
-#: ../logview/logview-window.c:470
+#: ../logview/logview-window.c:471
 msgid "Wrapped"
 msgstr ""
 
-#: ../logview/logview-window.c:764
+#: ../logview/logview-window.c:765
 msgid "A system log viewer for MATE."
 msgstr "Gwelydd cofnodion system ar gyfer MATE."
 
-#: ../logview/logview-window.c:810
+#: ../logview/logview-window.c:811
 msgid "_Filters"
 msgstr ""
 
-#: ../logview/logview-window.c:813
+#: ../logview/logview-window.c:814
 msgid "_Open..."
 msgstr "_Agor..."
 
-#: ../logview/logview-window.c:813
+#: ../logview/logview-window.c:814
 msgid "Open a log from file"
 msgstr "Agor log o'r ffeil"
 
-#: ../logview/logview-window.c:815
+#: ../logview/logview-window.c:816
 msgid "_Close"
 msgstr "_Cau"
 
-#: ../logview/logview-window.c:815
+#: ../logview/logview-window.c:816
 msgid "Close this log"
 msgstr "Cau'r log"
 
-#: ../logview/logview-window.c:817
+#: ../logview/logview-window.c:818
 msgid "_Quit"
 msgstr "_Gadael"
 
-#: ../logview/logview-window.c:817
+#: ../logview/logview-window.c:818
 msgid "Quit the log viewer"
 msgstr "Gadael y gwelydd logiau"
 
-#: ../logview/logview-window.c:820
+#: ../logview/logview-window.c:821
 msgid "_Copy"
 msgstr "_Copïo"
 
-#: ../logview/logview-window.c:820
+#: ../logview/logview-window.c:821
 msgid "Copy the selection"
 msgstr "Torri'r dewisiad"
 
-#: ../logview/logview-window.c:822
+#: ../logview/logview-window.c:823
 msgid "Select the entire log"
 msgstr "Dewis yr holl log"
 
-#: ../logview/logview-window.c:824
+#: ../logview/logview-window.c:825
 msgid "_Find..."
 msgstr "_Canfod..."
 
-#: ../logview/logview-window.c:824
+#: ../logview/logview-window.c:825
 msgid "Find a word or phrase in the log"
 msgstr ""
 
-#: ../logview/logview-window.c:827
+#: ../logview/logview-window.c:828
 msgid "Bigger text size"
 msgstr "Tyfu maint y testun"
 
-#: ../logview/logview-window.c:829
+#: ../logview/logview-window.c:830
 msgid "Smaller text size"
 msgstr "Lleihau maint y testun"
 
-#: ../logview/logview-window.c:831
+#: ../logview/logview-window.c:832
 msgid "Normal text size"
 msgstr "Maint testun arferol"
 
-#: ../logview/logview-window.c:834
+#: ../logview/logview-window.c:835
 msgid "Manage Filters"
 msgstr ""
 
-#: ../logview/logview-window.c:834
+#: ../logview/logview-window.c:835
 msgid "Manage filters"
 msgstr ""
 
-#: ../logview/logview-window.c:837
+#: ../logview/logview-window.c:838
 msgid "Open the help contents for the log viewer"
 msgstr "Agor cynnwys cymorth y gwelydd logiau"
 
-#: ../logview/logview-window.c:839
+#: ../logview/logview-window.c:840
 msgid "Show the about dialog for the log viewer"
 msgstr "Dangos deialog 'ynghylch' y gwelydd logiau"
 
-#: ../logview/logview-window.c:844
+#: ../logview/logview-window.c:845
 msgid "_Statusbar"
 msgstr "_Bar Statws"
 
-#: ../logview/logview-window.c:844
+#: ../logview/logview-window.c:845
 msgid "Show Status Bar"
 msgstr "Dangos y Bar Statws"
 
-#: ../logview/logview-window.c:846
+#: ../logview/logview-window.c:847
 msgid "Side _Pane"
 msgstr "Cwarel _Ochr"
 
-#: ../logview/logview-window.c:846
+#: ../logview/logview-window.c:847
 msgid "Show Side Pane"
 msgstr "Dangos Cwarel Ochr"
 
-#: ../logview/logview-window.c:848
+#: ../logview/logview-window.c:849
 msgid "Show matches only"
 msgstr ""
 
-#: ../logview/logview-window.c:848
+#: ../logview/logview-window.c:849
 msgid "Only show lines that match one of the given filters"
 msgstr ""
 
-#: ../logview/logview-window.c:962
+#: ../logview/logview-window.c:963
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr ""
 
-#: ../logview/logview-window.c:1381
+#: ../logview/logview-window.c:1386
 msgid "Version: "
 msgstr "Fersiwn:"
 
-#: ../logview/logview-window.c:1488
+#: ../logview/logview-window.c:1493
 msgid "Could not open the following files:"
 msgstr ""

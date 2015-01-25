@@ -3,26 +3,25 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Amitakhya Phukan <amitakhya@svn.mate.org>, 2008, 2009.
-# Amitakhya Phukan <aphukan@redhat.com>, 2008.
+# Amitakhya Phukan <amitakhya@svn.mate.org>, 2008, 2009
+# Amitakhya Phukan <aphukan@redhat.com>, 2008
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2012-03-12 11:59+0100\n"
-"PO-Revision-Date: 2012-03-12 11:08+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-24 13:29+0100\n"
+"PO-Revision-Date: 2015-01-24 12:29+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: Assamese (http://www.transifex.com/projects/p/MATE/language/as/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: as\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:1
-#: ../baobab/data/baobab-main-window.ui.h:15
-msgid "Disk Usage Analyzer"
-msgstr "ডিস্ক"
+msgid "MATE Disk Usage Analyzer"
+msgstr ""
 
 #: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:2
 msgid "Check folder sizes and available disk space"
@@ -61,7 +60,7 @@ msgid "S_can Remote Folder..."
 msgstr "এস দূৰবৰ্তী ফোল্ডাৰ."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../mate-dictionary/src/gdict-window.c:1176 ../logview/logview-window.c:808
+#: ../mate-dictionary/src/gdict-window.c:1279 ../logview/logview-window.c:809
 msgid "_Edit"
 msgstr "সম্পাদনা (_E)"
 
@@ -74,7 +73,7 @@ msgid "_Collapse All"
 msgstr "সকল"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../mate-dictionary/src/gdict-window.c:1177 ../logview/logview-window.c:809
+#: ../mate-dictionary/src/gdict-window.c:1280 ../logview/logview-window.c:810
 msgid "_View"
 msgstr "প্ৰদৰ্শন (_V)"
 
@@ -91,16 +90,20 @@ msgid "All_ocated Space"
 msgstr "সকল"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:6
-#: ../mate-dictionary/src/gdict-window.c:1179 ../logview/logview-window.c:811
+#: ../mate-dictionary/src/gdict-applet.c:1213
+#: ../mate-dictionary/src/gdict-window.c:1282 ../logview/logview-window.c:812
 msgid "_Help"
 msgstr "সাহায্য (_H)"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../mate-dictionary/src/gdict-window.c:1229 ../logview/logview-window.c:837
+#: ../mate-dictionary/src/gdict-window.c:1332 ../logview/logview-window.c:838
 msgid "_Contents"
 msgstr "বিষয়বস্তু (_C)"
+
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/callbacks.c:97
+msgid "Disk Usage Analyzer"
+msgstr "ডিস্ক"
 
 #: ../baobab/data/baobab-main-window.ui.h:16
 msgid "Scan home folder"
@@ -142,202 +145,224 @@ msgstr "স্কেন কৰ্ম বন্ধ কৰক"
 msgid "Refresh"
 msgstr "নতুনকৈ প্ৰদৰ্শন"
 
-#: ../baobab/data/baobab.schemas.in.h:1
-msgid "Toolbar is Visible"
-msgstr "টুল-বাৰ প্ৰদৰ্শন কৰা হ'ব"
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:1
+msgid "Monitor Home"
+msgstr ""
 
-#: ../baobab/data/baobab.schemas.in.h:2
-msgid "Whether the toolbar should be visible in main window."
-msgstr "প্ৰধান উইন্ডোৰ নিম্নাংশে টুল-বাৰ দৃশ্যমান হ'ব নে নহয় ।"
-
-#: ../baobab/data/baobab.schemas.in.h:3
-msgid "Status Bar is Visible"
-msgstr "স্ট্যাটাস-বাৰ প্ৰদৰ্শন কৰা হ'ব"
-
-#: ../baobab/data/baobab.schemas.in.h:4
-msgid "Whether the status bar at the bottom of main window should be visible."
-msgstr "প্ৰধান উইন্ডোৰ নিম্নাংশে স্ট্যাটাস-বাৰ দৃশ্যমান হ'ব নে নহয় ।"
-
-#: ../baobab/data/baobab.schemas.in.h:5
-msgid "Enable monitoring of home directory"
-msgstr "ব্যক্তিগত পঞ্জিকাৰ পৰ্যবেক্ষণ সক্ৰিয় কৰা হ'ব"
-
-#: ../baobab/data/baobab.schemas.in.h:6
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:2
 msgid "Whether any change to the home directory should be monitored."
 msgstr "ব্যক্তিগত পঞ্জিকাত কোনো পৰিবৰ্তন পৰ্যবেক্ষিত হ'ব নে নহয় ।"
 
-#: ../baobab/data/baobab.schemas.in.h:7
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:3
 msgid "Excluded partitions URIs"
 msgstr ""
 
-#: ../baobab/data/baobab.schemas.in.h:8
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:4
 msgid "A list of URIs for partitions to be excluded from scanning."
 msgstr ""
 
-#: ../baobab/data/baobab.schemas.in.h:9
-msgid "Subfolders tooltips visible"
-msgstr "উপ-ফোল্ডাৰৰ টুলপ দৃশ্যমান"
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:5
+msgid "Toolbar is Visible"
+msgstr "টুল-বাৰ প্ৰদৰ্শন কৰা হ'ব"
 
-#: ../baobab/data/baobab.schemas.in.h:10
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:6
+msgid "Whether the toolbar should be visible in main window."
+msgstr "প্ৰধান উইন্ডোৰ নিম্নাংশে টুল-বাৰ দৃশ্যমান হ'ব নে নহয় ।"
+
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:7
+msgid "Statusbar is Visible"
+msgstr ""
+
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:8
+msgid "Whether the status bar at the bottom of main window should be visible."
+msgstr "প্ৰধান উইন্ডোৰ নিম্নাংশে স্ট্যাটাস-বাৰ দৃশ্যমান হ'ব নে নহয় ।"
+
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:9
+msgid "Subfolder tips visible"
+msgstr ""
+
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:10
 msgid "Whether the subfolder tooltips of the selected folder are drawn."
 msgstr ""
 
-#: ../baobab/src/baobab.c:134 ../baobab/src/baobab.c:353
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:11
+msgid "Active Chart"
+msgstr ""
+
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:12
+msgid "Which type of chart should be displayed."
+msgstr ""
+
+#: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:1
+msgid "A disk usage analyzing tool for MATE Desktop"
+msgstr ""
+
+#: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:2
+msgid ""
+"<p> As its name implies, Disk Usage Analyzer is a graphical utility that you"
+" can use to view and monitor your disk usage and folder structure. It "
+"displays summary information in ring or treemap charts. </p> <p> You can "
+"perform scans on a file system, your home or any other folder - local or "
+"remote. There is also an option to constantly monitor any external changes "
+"to the home directory and warn the user if a file is added/removed. </p>"
+msgstr ""
+
+#: ../baobab/src/baobab.c:135 ../baobab/src/baobab.c:355
 msgid "Scanning..."
 msgstr "চোৱা হৈছে..."
 
-#: ../baobab/src/baobab.c:180
+#: ../baobab/src/baobab.c:181
 msgid "Total filesystem capacity:"
 msgstr "নথিপত্ৰ-প্ৰণালীৰ মুঠ ধাৰণক্ষমতা:"
 
-#: ../baobab/src/baobab.c:181
+#: ../baobab/src/baobab.c:182
 msgid "used:"
 msgstr "ব্যৱহৃত:"
 
-#: ../baobab/src/baobab.c:182
+#: ../baobab/src/baobab.c:183
 msgid "available:"
 msgstr "উপলব্ধ:"
 
 #. set statusbar, percentage and allocated/normal size
-#: ../baobab/src/baobab.c:238 ../baobab/src/baobab.c:295
-#: ../baobab/src/callbacks.c:260
+#: ../baobab/src/baobab.c:240 ../baobab/src/baobab.c:297
+#: ../baobab/src/callbacks.c:259
 msgid "Calculating percentage bars..."
 msgstr "Calculating percentage bars..."
 
-#: ../baobab/src/baobab.c:249 ../baobab/src/baobab.c:1289
-#: ../baobab/src/callbacks.c:264
+#: ../baobab/src/baobab.c:251 ../baobab/src/baobab.c:1309
+#: ../baobab/src/callbacks.c:263
 msgid "Ready"
 msgstr "প্ৰস্তুত"
 
-#: ../baobab/src/baobab.c:386
+#: ../baobab/src/baobab.c:389
 msgid "Total filesystem capacity"
 msgstr "নথিপত্ৰ-প্ৰণালীৰ মুঠ ধাৰণক্ষমতা"
 
-#: ../baobab/src/baobab.c:408
+#: ../baobab/src/baobab.c:413
 msgid "Total filesystem usage"
 msgstr "নথিপত্ৰ-প্ৰণালীৰ মুঠ ব্যৱহাৰ"
 
-#: ../baobab/src/baobab.c:449
+#: ../baobab/src/baobab.c:455
 msgid "contains hardlinks for:"
 msgstr "ধাৰন কৰি উল্লিখিত সময় অবধি:"
 
-#: ../baobab/src/baobab.c:458
+#: ../baobab/src/baobab.c:464
 #, c-format
 msgid "%5d item"
 msgid_plural "%5d items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../baobab/src/baobab.c:585
+#: ../baobab/src/baobab.c:591
 msgid "Could not initialize monitoring"
 msgstr "নিৰীক্ষণ ব্যৱস্থা আৰম্ভ কৰিবলৈ ব্যৰ্থ"
 
-#: ../baobab/src/baobab.c:586
+#: ../baobab/src/baobab.c:592
 msgid "Changes to your home folder will not be monitored."
 msgstr "Changes to your home folder will not be monitored."
 
-#: ../baobab/src/baobab.c:965
+#: ../baobab/src/baobab.c:924
 msgid "Move to parent folder"
 msgstr "ঊৰ্ধ্বগন ফোল্ডাৰলৈ স্থানান্তৰ কৰক"
 
-#: ../baobab/src/baobab.c:969
+#: ../baobab/src/baobab.c:928
 msgid "Zoom in"
 msgstr "বড় কৰি দেখানো হ'ব"
 
-#: ../baobab/src/baobab.c:973
+#: ../baobab/src/baobab.c:932
 msgid "Zoom out"
 msgstr "ছোট কৰি দেখানো হ'ব"
 
-#: ../baobab/src/baobab.c:977
+#: ../baobab/src/baobab.c:936
 msgid "Save screenshot"
 msgstr ""
 
-#: ../baobab/src/baobab.c:1114
+#: ../baobab/src/baobab.c:1123
 msgid "View as Rings Chart"
 msgstr "বৃত্তাকাৰ ৰেখাচিত্ৰ ৰূপে প্ৰদৰ্শন"
 
-#: ../baobab/src/baobab.c:1116
+#: ../baobab/src/baobab.c:1125
 msgid "View as Treemap Chart"
 msgstr "ট্ৰি-মেপ ৰেখাচিত্ৰ ৰূপত প্ৰদৰ্শন"
 
-#: ../baobab/src/baobab.c:1214
+#: ../baobab/src/baobab.c:1234
 msgid "Show version"
 msgstr "সংস্কৰণ সংখ্যা প্ৰদৰ্শন কৰা হ'ব"
 
-#: ../baobab/src/baobab.c:1215
+#: ../baobab/src/baobab.c:1235
 msgid "[DIRECTORY]"
 msgstr "[DIRECTORY]"
 
-#: ../baobab/src/baobab.c:1245
+#: ../baobab/src/baobab.c:1265
 msgid "Too many arguments. Only one directory can be specified."
 msgstr "অত্যাধিক সংখ্যক তৰ্ক । অকল এটা পঞ্জিকা উল্লেখ কৰা যাব ।"
 
-#: ../baobab/src/baobab.c:1262
+#: ../baobab/src/baobab.c:1282
 msgid "Could not detect any mount point."
 msgstr "কোনো মাউন্ট পইন্ট চিনাক্ত কৰা নাযায় ।"
 
-#: ../baobab/src/baobab.c:1264
+#: ../baobab/src/baobab.c:1284
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr "মাউন্ট পইন্ট নোহোৱাকে ডিস্কতৰ ব্যৱহাৰ বিশ্লেষণ কৰা নাযাব ।"
 
-#: ../baobab/src/baobab-chart.c:206
+#: ../baobab/src/baobab-chart.c:219
 msgid "Maximum depth"
 msgstr "Maximum depth"
 
-#: ../baobab/src/baobab-chart.c:207
+#: ../baobab/src/baobab-chart.c:220
 msgid "The maximum depth drawn in the chart from the root"
 msgstr "ৰেখাচিত্ৰৰ প্ৰাৰম্ভ root ৰ পৰা অঁকা সৰ্বাধিক ধাপৰ সংখ্যা"
 
-#: ../baobab/src/baobab-chart.c:216
+#: ../baobab/src/baobab-chart.c:229
 msgid "Chart model"
 msgstr "ৰেখাচিত্ৰৰ মডেল"
 
-#: ../baobab/src/baobab-chart.c:217
+#: ../baobab/src/baobab-chart.c:230
 msgid "Set the model of the chart"
 msgstr "ৰেখাচিত্ৰৰ মডেল নিৰ্ধাৰণ কৰক"
 
-#: ../baobab/src/baobab-chart.c:224
+#: ../baobab/src/baobab-chart.c:237
 msgid "Chart root node"
 msgstr "ৰেখাচিত্ৰৰ মূল নোড"
 
-#: ../baobab/src/baobab-chart.c:225
+#: ../baobab/src/baobab-chart.c:238
 msgid "Set the root node from the model"
 msgstr "Set নোড"
 
-#: ../baobab/src/baobab-chart.c:1710
+#: ../baobab/src/baobab-chart.c:1759
 msgid "Cannot create pixbuf image!"
 msgstr "pixbuf ছবি নিৰ্মাণ কৰিবলৈ ব্যৰ্থ!"
 
 #. Popup the File chooser dialog
-#: ../baobab/src/baobab-chart.c:1720
+#: ../baobab/src/baobab-chart.c:1769
 msgid "Save Snapshot"
 msgstr "সংৰক্ষণ কৰক স্নেপছট"
 
-#: ../baobab/src/baobab-chart.c:1749
+#: ../baobab/src/baobab-chart.c:1796
 msgid "_Image type:"
 msgstr "চিত্ৰ ধৰন:"
 
-#: ../baobab/src/baobab-prefs.c:184
+#: ../baobab/src/baobab-prefs.c:172
 msgid "Scan"
 msgstr "স্কেন কৰা হ'ব"
 
-#: ../baobab/src/baobab-prefs.c:191
+#: ../baobab/src/baobab-prefs.c:179
 msgid "Device"
 msgstr "ডিভাইস"
 
-#: ../baobab/src/baobab-prefs.c:199
+#: ../baobab/src/baobab-prefs.c:187
 msgid "Mount Point"
 msgstr "মাউন্ট কৰক"
 
-#: ../baobab/src/baobab-prefs.c:207
+#: ../baobab/src/baobab-prefs.c:195
 msgid "Filesystem Type"
 msgstr "নথিপত্ৰপ্ৰণালী ধৰন"
 
-#: ../baobab/src/baobab-prefs.c:215
+#: ../baobab/src/baobab-prefs.c:203
 msgid "Total Size"
 msgstr "মুঠ মাপ"
 
-#: ../baobab/src/baobab-prefs.c:224
+#: ../baobab/src/baobab-prefs.c:212
 msgid "Available"
 msgstr "Available"
 
@@ -419,11 +444,11 @@ msgstr "ডোমেইন নাম: (_D)"
 msgid "Connect to Server"
 msgstr "সেৱকৰ সৈতে সংযোগ স্থাপন কৰা হ'ব"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:660
+#: ../baobab/src/baobab-remote-connect-dialog.c:659
 msgid "Service _type:"
 msgstr "সেৱকৰ ধৰন: (_t) "
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:779
+#: ../baobab/src/baobab-remote-connect-dialog.c:778
 msgid "_Scan"
 msgstr "স্কেন কৰা হ'ব"
 
@@ -441,7 +466,7 @@ msgstr "মুঠ."
 msgid "_Rescan"
 msgstr "_Rescan"
 
-#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2406
+#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2427
 msgid "Folder"
 msgstr "ফোল্ডাৰ"
 
@@ -449,7 +474,7 @@ msgstr "ফোল্ডাৰ"
 msgid "Usage"
 msgstr "Usage"
 
-#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2419
+#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2440
 msgid "Size"
 msgstr "মাপ"
 
@@ -466,56 +491,56 @@ msgstr "ফোল্ডাৰ নিৰ্বাচন কৰক"
 msgid "_Show hidden folders"
 msgstr "_Show hidden folders"
 
-#: ../baobab/src/baobab-utils.c:297
+#: ../baobab/src/baobab-utils.c:299
 msgid "Cannot check an excluded folder!"
 msgstr "অন্তৰ্ভুক্ত নকৰা ফোল্ডাৰ পৰীক্ষা কৰা সম্ভৱ নহয়!"
 
-#: ../baobab/src/baobab-utils.c:321
+#: ../baobab/src/baobab-utils.c:323
 #, c-format
 msgid "\"%s\" is not a valid folder"
 msgstr "\"%s\" এটা বৈধ ফোল্ডাৰ নহয়"
 
-#: ../baobab/src/baobab-utils.c:324
+#: ../baobab/src/baobab-utils.c:326
 msgid "Could not analyze disk usage."
 msgstr "Could not analyze disk usage."
 
-#: ../baobab/src/baobab-utils.c:364
+#: ../baobab/src/baobab-utils.c:366
 msgid "_Open Folder"
 msgstr "খোলক ফোল্ডাৰ"
 
-#: ../baobab/src/baobab-utils.c:370
-#: ../gsearchtool/gsearchtool-callbacks.c:1203
+#: ../baobab/src/baobab-utils.c:372
+#: ../gsearchtool/gsearchtool-callbacks.c:1210
 msgid "Mo_ve to Trash"
 msgstr "আবৰ্জানাৰ বক্সত স্থানান্তৰণ কৰক(_v)"
 
-#: ../baobab/src/baobab-utils.c:404
+#: ../baobab/src/baobab-utils.c:406
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "Could not open folder \"%s\""
 
-#: ../baobab/src/baobab-utils.c:407
+#: ../baobab/src/baobab-utils.c:409
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr "হলো না মুঠ."
 
-#: ../baobab/src/baobab-utils.c:476
+#: ../baobab/src/baobab-utils.c:478
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr "\"%s\" ক Tৰash লৈ নিব নোৱাৰি"
 
-#: ../baobab/src/baobab-utils.c:484
+#: ../baobab/src/baobab-utils.c:486
 msgid "Could not move file to the Trash"
 msgstr "অবৰ্জনাৰ বক্সত নথিপত্ৰ আঁতৰুৱা নাযায় ।"
 
-#: ../baobab/src/baobab-utils.c:486
+#: ../baobab/src/baobab-utils.c:488
 #, c-format
 msgid "Details: %s"
 msgstr "বিৱৰণ: %s"
 
-#: ../baobab/src/baobab-utils.c:533
+#: ../baobab/src/baobab-utils.c:524
 msgid "There was an error displaying help."
 msgstr "সহায়িকা প্ৰদৰ্শনে সমস্যা ।"
 
-#: ../baobab/src/callbacks.c:77 ../logview/logview-about.h:49
+#: ../baobab/src/callbacks.c:76 ../logview/logview-about.h:49
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -523,7 +548,7 @@ msgid ""
 "any later version."
 msgstr "This program is free software; you can redistribute it and/or modify iof the GNU General Public License as published by the Freversion 2 of the License, or (at your option"
 
-#: ../baobab/src/callbacks.c:82 ../logview/logview-about.h:53
+#: ../baobab/src/callbacks.c:81 ../logview/logview-about.h:53
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -531,7 +556,7 @@ msgid ""
 "more details."
 msgstr "This program is distributed in the hope that it will be useful, but WITHOUWARRANTY; without even the implied warranty of MERCHANTABILITY oPARTICULAR PURPOSE.  See the GNU General Public License fo"
 
-#: ../baobab/src/callbacks.c:87 ../logview/logview-about.h:57
+#: ../baobab/src/callbacks.c:86 ../logview/logview-about.h:57
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
@@ -539,25 +564,21 @@ msgid ""
 msgstr "You should have received a copy of the GNU General Public License along witprogram; if not, write to the Free Software Foundation, Inc., 5Floor, Boston, MA  02110-1301, USA"
 
 #: ../baobab/src/callbacks.c:98
-msgid "Baobab"
-msgstr "Baobab"
-
-#: ../baobab/src/callbacks.c:99
 msgid "A graphical tool to analyze disk usage."
 msgstr "অ."
 
 #. translator credits
-#: ../baobab/src/callbacks.c:105 ../mate-dictionary/src/gdict-about.c:55
+#: ../baobab/src/callbacks.c:104 ../mate-dictionary/src/gdict-about.c:55
 #: ../logview/logview-about.h:63
 msgid "translator-credits"
 msgstr "অমিতাক্ষ ফুকন (aphukan@fedoraproject.org)"
 
-#: ../baobab/src/callbacks.c:203 ../gsearchtool/gsearchtool-callbacks.c:504
-#: ../gsearchtool/gsearchtool-callbacks.c:843
+#: ../baobab/src/callbacks.c:202 ../gsearchtool/gsearchtool-callbacks.c:508
+#: ../gsearchtool/gsearchtool-callbacks.c:848
 msgid "The document does not exist."
 msgstr "ডকুমেন্ট বৰ্তমানে উপস্থিত নাই ।"
 
-#: ../baobab/src/callbacks.c:314
+#: ../baobab/src/callbacks.c:283
 msgid "The folder does not exist."
 msgstr "ফোল্ডাৰ বৰ্তমানে অনুপস্থিত ।"
 
@@ -565,238 +586,63 @@ msgstr "ফোল্ডাৰ বৰ্তমানে অনুপস্থি�
 msgid "Default Dictionary Server"
 msgstr "অবিকল্পিত অভিধানৰ সেৱক"
 
-#: ../mate-dictionary/data/MATE_DictionaryApplet.server.in.in.h:1
-msgid "Dictionary Look up"
-msgstr "অভিধানে সন্ধান"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.server.in.in.h:2
-msgid "Look up words in a dictionary"
-msgstr "অভিধানে শব্দ সন্ধান কৰক"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:1
-msgid "_Look Up Selected Text"
-msgstr "নিৰ্বাচিত টেক্সট অনুসন্ধান কৰা হ'ব (_L)"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:2
-msgid "Cl_ear"
-msgstr "ৰিক্ত কৰা (_ম)"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:3
-msgid "_Print"
-msgstr "প্ৰিন্ট কৰক(_P)"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:4
-msgid "_Save"
-msgstr "সংৰক্ষণ (_S)"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:5
-#: ../mate-dictionary/src/gdict-window.c:1205
-msgid "_Preferences"
-msgstr "পছন্দ (_P)"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:7
-#: ../mate-dictionary/src/gdict-window.c:1231 ../logview/logview-window.c:839
-msgid "_About"
-msgstr "পৰিচিতি (_A)"
-
 #: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:1
-#: ../mate-dictionary/src/gdict-about.c:78
-#: ../mate-dictionary/src/gdict-app.c:385
-#: ../mate-dictionary/src/gdict-window.c:605
-#: ../mate-dictionary/src/gdict-window.c:1947
-msgid "Dictionary"
-msgstr "অভিধান"
+msgid "MATE Dictionary"
+msgstr ""
 
 #: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:2
 msgid "Check word definitions and spellings in an online dictionary"
 msgstr "অনশাৰী অভিধানে শব্দেৰ সংজ্ঞা আৰু বানান পৰীক্ষা কৰক"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:1
-msgid "Dictionary server (Deprecated)"
-msgstr "অভিধানৰ সেৱক (অবচিত)"
+#: ../mate-dictionary/data/mate-dictionary.appdata.xml.in.h:1
+msgid "A dictionary for MATE Desktop"
+msgstr ""
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:2
+#: ../mate-dictionary/data/mate-dictionary.appdata.xml.in.h:2
 msgid ""
-"The dictionary server to connect to. The default server is dict.org. See "
-"http://www.dict.org for details on other servers. This key is deprecated and"
-" no longer in use."
-msgstr "সংযোগ স্থাপনৰ উদ্দেশ্যে চিহ্নিত অভিধান সেৱক । অবিকল্পিত সেৱক হল dict.oৰg । অন্যান্য সেৱকৰ বিৱৰণ জানতে http://www.dict.oৰg দেখুন । ইয়াক বৰ্তমানে অবচিত আৰু ব্যৱহৃত হয় না ।"
+"<p> MATE Dictionary allows you to look up words in on-line dictionaries. It "
+"comes preconfigured with a list of Dict servers (RFC 2229), to which you can"
+" add your own sources, while you can select specific servers for a specific "
+"query. </p>"
+msgstr ""
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:3
-msgid "Port used to connect to server (Deprecated)"
-msgstr "সেৱকৰ সৈতে সংযোগ স্থাপনৰ উদ্দেশ্যে ব্যৱহৃত পোৰ্ট (অবচিত)"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:4
-msgid ""
-"The port number to connect to. The default port is 2628. This key is "
-"deprecated and no longer in use."
-msgstr "সংযোগেৰ উদ্দেশ্যে ব্যৱহৃত পোৰ্ট সংখ্যা । অবিকল্পিত পোৰ্ট হল ২৬২৮ । ইয়াক বৰ্তমানে অবচিত আৰু ব্যৱহৃত নহয় ।"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:5
-msgid "Use smart lookup (Deprecated)"
-msgstr "বিশেষ অনুসন্ধান পদ্ধতি ব্যৱহাৰ কৰা হ'ব (অবচিত)"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:6
-msgid ""
-"Specify whether to use smart lookup. This key is dependant on whether the "
-"dictionary server supports this option. The default is TRUE. This key is "
-"deprecated and no longer in use."
-msgstr "বিশেষ অনুসন্ধান পদ্ধতি ব্যৱহৃত হ'ব চাবিনা তা উল্লেখ কৰক । অভিধানৰ সেৱকে এই ব্যৱস্থা সমৰ্থিত হলে ইয়াক প্ৰয়োগ কৰা সম্ভৱ । অবিকল্পিত মান হল TRUE (সত্য) । ইয়াক বৰ্তমানে অবচিত হৈছে আৰু ব্যৱহৃত নহয় ।"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:7
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:1
 msgid "The default database to use"
 msgstr "ব্যৱহাৰৰ বাবে চিহ্নিত অবিকল্পিত ডাটাবেস"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:8
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:2
 msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
 "present in a dictionary source should be searched"
 msgstr "অভিধান সেৱকে ব্যৱহত স্বতন্ত্ৰ ডাটাবেস বা মিটা-ডাটাবেসেৰ নাম । বিস্ময়সূচক চিহ্নৰ (\"!\")  সাহায্যে নিৰ্দিষ্ট সেৱকে উপস্থিত সকল ডাটাবেস অনুসন্ধানৰ নিৰ্দেশ দেওয়া হয় ।"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:9
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:3
 msgid "The default search strategy to use"
 msgstr "অনুসন্ধান কৰ্মে ব্যৱহৃত অবিকল্পিত নীতি"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:10
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:4
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is 'exact', that is match exact words."
 msgstr "মুঠ অবিকল্পিত চলি আছে a উৎস অবিকল্পিত হলো হলো."
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:11
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:5
 msgid "The font to be used when printing"
 msgstr "প্ৰিন্ট কৰাৰ সময় ব্যৱহৃত ফন্ট"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:12
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:6
 msgid "The font to be used when printing a definition."
 msgstr "সংজ্ঞা প্ৰিন্ট কৰাৰ সময় ব্যৱহৃত ফন্ট ।"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:13
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:7
 msgid "The name of the dictionary source used"
 msgstr "ব্যৱহৃথ অভিধান উৎসেৰ নাম"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:14
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:8
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr "শব্দেৰ সংজ্ঞা উদ্ধাৰ কৰিবলৈ ব্যৱহৃত অভিধান উৎসেৰ নাম ।"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:15
-msgid "The default width of the application window"
-msgstr "এপ্লিকেশন উইন্ডোৰ প্ৰস্থেৰ অবিকল্পিত মাপ"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:16
-msgid ""
-"This key defines the window width and it's used to remember the size of the "
-"dictionary window across sessions. Setting it to -1 will make the dictionary"
-" window use a width based on the font size."
-msgstr "আৰু মুঠ a চলি আছে."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:17
-msgid "The default height of the application window"
-msgstr "এপ্লিকেশন উইন্ডোৰ উচ্চতাৰ অবিকল্পিত মাপ"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:18
-msgid ""
-"This key defines the window height and it's used to remember the size of the"
-" dictionary window across sessions. Setting it to -1 will make the "
-"dictionary window use a height based on the font size."
-msgstr "আৰু মুঠ a চলি আছে."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:19
-msgid "Whether the application window should be maximized"
-msgstr "এপ্লিকেশন উইন্ডো সৰ্বোচ্চ মাপে প্ৰদৰ্শিত হ'ব চাবি না"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:20
-msgid ""
-"This key defines whether the window should be maximized and it's used to "
-"remember the state of the dictionary window across sessions. Setting it to "
-"TRUE will make the window always appear as maximized."
-msgstr "আৰু মুঠ."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:21
-msgid "Whether the sidebar should be visible"
-msgstr "সাইড-বাৰ দৃশ্যমান হ'ব চাবি না"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:22
-msgid ""
-"This key defines whether the sidebar should be visible and it's used to "
-"remember the state of the sidebar across sessions. Setting it to TRUE will "
-"make the sidebar always be displayed."
-msgstr "আৰু মুঠ."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:23
-msgid "Whether the statusbar should be visible"
-msgstr "স্ট্যাটাস-বাৰ দৃশ্যমান হ'ব চাবি না"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:24
-msgid ""
-"This key defines whether the statusbar should be visible and it's used to "
-"remember the state of the statusbar across sessions. Setting it to TRUE will"
-" make the statusbar always be displayed."
-msgstr "আৰু মুঠ."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:25
-msgid "The page of the sidebar to show"
-msgstr "পৃষ্ঠা মুঠ"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:26
-msgid ""
-"This key defines which page of the sidebar should be displayed and it's used"
-" to remember the setting across sessions.. It can be \"speller\" or "
-"\"databases\"."
-msgstr "পৃষ্ঠা মুঠ আৰু."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:27
-msgid "The width of the sidebar"
-msgstr "সাইড-বাৰৰ প্ৰস্থেৰ মাপ"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:28
-msgid ""
-"This key defines the width of the sidebar and it's used to remember the "
-"setting across sessions."
-msgstr "মুঠ আৰু."
-
-#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:1
-msgid "_Select a dictionary source for looking up words:"
-msgstr "শব্দ অনুসন্ধানৰ বাবে এটা অভিধান উৎস নিৰ্বাচন কৰক:(_S)"
-
-#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:2
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:6
-msgid "Source"
-msgstr "উৎস"
-
-#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:3
-msgid "_Print font:"
-msgstr "প্ৰিন্ট কৰিবলৈ ব্যৱহৃত ফন্ট:(_P)"
-
-#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:4
-msgid "Print"
-msgstr "প্ৰিন্ট কৰক"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:1
-msgid "_Description:"
-msgstr "বিৱৰণ: (_D)"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:2
-msgid "_Transport:"
-msgstr "পৰিবহণ:(_T)"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:3
-msgid "H_ostname:"
-msgstr "হোস্ট-নেম:(_o)"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:5
-msgid "Source Name"
-msgstr "উৎসেৰ নাম"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:7
-msgid "Dictionaries"
-msgstr "শব্দকোষ"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:8
-msgid "Strategies"
-msgstr "Strategies"
 
 #: ../mate-dictionary/data/spanish.desktop.in.h:1
 msgid "Spanish Dictionaries"
@@ -953,54 +799,54 @@ msgstr "অকল স্থানীয়"
 msgid "Whether the context uses only local dictionaries or not"
 msgstr "কনটেক্সটৰ দ্বাৰা অকল স্থানীয় অভিধান ব্যৱহৃত হ'ব চাবিনা"
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:382
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:386
 msgid "Reload the list of available databases"
 msgstr "উপলব্ধ ডাটাবেসেৰ তালিকা পুনৰায় লোড কৰা হ'ব"
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:394
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:398
 msgid "Clear the list of available databases"
 msgstr "উপলব্ধ ডাটাবেসেৰ তালিকাৰ বিষয়বস্তু আঁতৰাওক"
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:841
-#: ../mate-dictionary/libgdict/gdict-speller.c:779
-#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:789
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:845
+#: ../mate-dictionary/libgdict/gdict-speller.c:783
+#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:793
 msgid "Error while matching"
 msgstr "মেলানোৰ সময় সমস্যা"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1143
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1237
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1271
-#: ../logview/logview-window.c:485
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
+#: ../logview/logview-window.c:486
 msgid "Not found"
 msgstr "পোৱা নাযায়"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1332
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1327
 msgid "F_ind:"
 msgstr "অনুসন্ধান(_i):"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1345
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1340
 msgid "_Previous"
 msgstr "পূৰ্ববৰ্তী (_P)"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1353
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1348
 msgid "_Next"
 msgstr "পৰবৰ্তী (_N)"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2528
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2523
 msgid "Error while looking up definition"
 msgstr "সংজ্ঞা অনুসন্ধানে সমস্যা"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2570
-#: ../mate-dictionary/libgdict/gdict-speller.c:737
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2565
+#: ../mate-dictionary/libgdict/gdict-speller.c:741
 msgid "Another search is in progress"
 msgstr "বৰ্তমানে এটা পৃথক অনুসন্ধান চলছে"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2571
-#: ../mate-dictionary/libgdict/gdict-speller.c:738
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2566
+#: ../mate-dictionary/libgdict/gdict-speller.c:742
 msgid "Please wait until the current search ends."
 msgstr "বৰ্তমান অনুসন্ধান সমাপ্ত হওয়া অবধি অনুগ্ৰহ কৰি অপেক্ষা কৰক ।"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2610
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2605
 msgid "Error while retrieving the definition"
 msgstr "সংজ্ঞা উদ্ধাৰ কৰিবলৈ সমস্যা"
 
@@ -1013,13 +859,13 @@ msgid "The filename used by this dictionary source"
 msgstr "অভিধানৰ উৎসে ব্যৱহৃত নথিপত্ৰৰ নাম"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:246
-#: ../gsearchtool/gsearchtool.c:2382
+#: ../gsearchtool/gsearchtool.c:2403
 msgid "Name"
 msgstr "নাম"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:247
-msgid "The display name of this dictonary source"
-msgstr "অভিধানৰ উৎসেৰ বাবে প্ৰদৰ্শিত নাম"
+msgid "The display name of this dictionary source"
+msgstr ""
 
 #: ../mate-dictionary/libgdict/gdict-source.c:260
 msgid "Description"
@@ -1030,22 +876,22 @@ msgid "The description of this dictionary source"
 msgstr "অভিধানৰ উৎসেৰ বিৱৰণ"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:274
-#: ../mate-dictionary/libgdict/gdict-speller.c:384
+#: ../mate-dictionary/libgdict/gdict-speller.c:388
 msgid "Database"
 msgstr "ডাটাবেস"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:275
-msgid "The default database of this dictonary source"
-msgstr "অভিধানৰ উৎসেৰ দ্বাৰা ব্যৱহৃত অবিকল্পিত ডাটাবেস"
+msgid "The default database of this dictionary source"
+msgstr ""
 
 #: ../mate-dictionary/libgdict/gdict-source.c:288
-#: ../mate-dictionary/libgdict/gdict-speller.c:391
+#: ../mate-dictionary/libgdict/gdict-speller.c:395
 msgid "Strategy"
 msgstr "নীতি"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:289
-msgid "The default strategy of this dictonary source"
-msgstr "অভিধানৰ উৎসেৰ দ্বাৰা ব্যৱহৃত অবিকল্পিত নীতি"
+msgid "The default strategy of this dictionary source"
+msgstr ""
 
 #: ../mate-dictionary/libgdict/gdict-source.c:302
 msgid "Transport"
@@ -1056,7 +902,7 @@ msgid "The transport mechanism used by this dictionary source"
 msgstr "অভিধানৰ উৎসেৰ দ্বাৰা ব্যৱহৃত পৰিবহণ ব্যৱস্থা"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:317
-#: ../mate-dictionary/libgdict/gdict-speller.c:377
+#: ../mate-dictionary/libgdict/gdict-speller.c:381
 msgid "Context"
 msgstr "কনটেক্সট"
 
@@ -1098,7 +944,7 @@ msgstr "অভিধানৰ উৎসেৰ নাম ধাৰ্য কৰ�
 msgid "Dictionary source '%s' has invalid transport '%s'"
 msgstr "'%s' অভিধান উৎসেৰ ক্ষেত্ৰত  অবৈধ পৰিবহণ '%s' চিহ্নিত হৈছে"
 
-#: ../mate-dictionary/libgdict/gdict-source-chooser.c:299
+#: ../mate-dictionary/libgdict/gdict-source-chooser.c:303
 msgid "Reload the list of available sources"
 msgstr "তালিকা মুঠ"
 
@@ -1118,27 +964,27 @@ msgstr "উৎস"
 msgid "Dictionary sources found"
 msgstr "চিনাক্ত হওয়া অভিধানৰ উৎস"
 
-#: ../mate-dictionary/libgdict/gdict-speller.c:354
+#: ../mate-dictionary/libgdict/gdict-speller.c:358
 msgid "Clear the list of similar words"
 msgstr "সমতুল্য শব্দেৰ তালিকাৰ বিষয়বস্তু আঁতৰাওক"
 
-#: ../mate-dictionary/libgdict/gdict-speller.c:378
+#: ../mate-dictionary/libgdict/gdict-speller.c:382
 msgid "The GdictContext object used to get the word definition"
 msgstr "শব্দেৰ সংজ্ঞা প্ৰাপ্ত কৰিবলৈ ব্যৱহৃত GdictContext অবজেক্ট"
 
-#: ../mate-dictionary/libgdict/gdict-speller.c:385
+#: ../mate-dictionary/libgdict/gdict-speller.c:389
 msgid "The database used to query the GdictContext"
 msgstr "GdictContext অনুসন্ধানৰ বাবে ব্যৱহৃত ডাটাবেস"
 
-#: ../mate-dictionary/libgdict/gdict-speller.c:392
+#: ../mate-dictionary/libgdict/gdict-speller.c:396
 msgid "The strategy used to query the GdictContext"
 msgstr "GdictContext অনুসন্ধান কৰিবলৈ ব্যৱহৃত নীতি"
 
-#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:365
+#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:369
 msgid "Reload the list of available strategies"
 msgstr "তালিকা মুঠ"
 
-#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:377
+#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:381
 msgid "Clear the list of available strategies"
 msgstr "Cleaৰ তালিকা মুঠ"
 
@@ -1164,9 +1010,16 @@ msgid "Show GDict Options"
 msgstr "অপশন"
 
 #: ../mate-dictionary/src/gdict-about.c:57
-#: ../mate-dictionary/src/gdict-applet.c:591
+#: ../mate-dictionary/src/gdict-applet.c:587
 msgid "Look up words in dictionaries"
 msgstr "অভিধানে শব্দ অনুসন্ধান কৰক"
+
+#: ../mate-dictionary/src/gdict-about.c:78
+#: ../mate-dictionary/src/gdict-app.c:379
+#: ../mate-dictionary/src/gdict-window.c:604
+#: ../mate-dictionary/src/gdict-window.c:1968
+msgid "Dictionary"
+msgstr "অভিধান"
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
@@ -1249,131 +1102,141 @@ msgid "strat"
 msgstr "stৰat"
 
 #. create the new option context
-#: ../mate-dictionary/src/gdict-app.c:367
+#: ../mate-dictionary/src/gdict-app.c:361
 msgid " - Look up words in dictionaries"
 msgstr " - অভিধানে শব্দ সন্ধান কৰক"
 
-#: ../mate-dictionary/src/gdict-applet.c:206
-#: ../mate-dictionary/src/gdict-window.c:834
+#: ../mate-dictionary/src/gdict-applet.c:207
+#: ../mate-dictionary/src/gdict-window.c:961
 msgid "Save a Copy"
 msgstr "এটা প্ৰতিলিপি সংৰক্ষণ কৰক"
 
-#: ../mate-dictionary/src/gdict-applet.c:216
-#: ../mate-dictionary/src/gdict-window.c:844
+#: ../mate-dictionary/src/gdict-applet.c:217
+#: ../mate-dictionary/src/gdict-window.c:971
 msgid "Untitled document"
 msgstr "নামবিহীন ডকুমেন্ট"
 
-#: ../mate-dictionary/src/gdict-applet.c:237
-#: ../mate-dictionary/src/gdict-window.c:865
+#: ../mate-dictionary/src/gdict-applet.c:238
+#: ../mate-dictionary/src/gdict-window.c:992
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "'%s' ত লিখিবলৈ সমস্যা"
 
-#: ../mate-dictionary/src/gdict-applet.c:362
+#: ../mate-dictionary/src/gdict-applet.c:358
 msgid "Clear the definitions found"
 msgstr "প্ৰাপ্ত সংজ্ঞাসমূহ আঁতৰাওক"
 
-#: ../mate-dictionary/src/gdict-applet.c:364
+#: ../mate-dictionary/src/gdict-applet.c:360
 msgid "Clear definition"
 msgstr "সংজ্ঞা আঁতৰাওক"
 
-#: ../mate-dictionary/src/gdict-applet.c:365
+#: ../mate-dictionary/src/gdict-applet.c:361
 msgid "Clear the text of the definition"
 msgstr "সংজ্ঞাৰ লেখা আঁতৰাওক"
 
-#: ../mate-dictionary/src/gdict-applet.c:372
+#: ../mate-dictionary/src/gdict-applet.c:368
 msgid "Print the definitions found"
 msgstr "প্ৰাপ্ত সংজ্ঞা প্ৰিন্ট কৰক"
 
-#: ../mate-dictionary/src/gdict-applet.c:374
+#: ../mate-dictionary/src/gdict-applet.c:370
 msgid "Print definition"
 msgstr "সংজ্ঞা প্ৰিন্ট কৰক"
 
-#: ../mate-dictionary/src/gdict-applet.c:375
+#: ../mate-dictionary/src/gdict-applet.c:371
 msgid "Print the text of the definition"
 msgstr "সংজ্ঞাৰ তথ্য প্ৰিন্ট কৰক"
 
-#: ../mate-dictionary/src/gdict-applet.c:382
+#: ../mate-dictionary/src/gdict-applet.c:378
 msgid "Save the definitions found"
 msgstr "প্ৰাপ্ত সংজ্ঞা সংৰক্ষণ কৰক"
 
-#: ../mate-dictionary/src/gdict-applet.c:384
+#: ../mate-dictionary/src/gdict-applet.c:380
 msgid "Save definition"
 msgstr "সংজ্ঞা সংৰক্ষণ কৰক"
 
-#: ../mate-dictionary/src/gdict-applet.c:385
+#: ../mate-dictionary/src/gdict-applet.c:381
 msgid "Save the text of the definition to a file"
 msgstr "সংজ্ঞাৰ নথিপত্ৰৰ টেক্সট এটা নথিপত্ৰৰ সংৰক্ষণ কৰক"
 
-#: ../mate-dictionary/src/gdict-applet.c:533
+#: ../mate-dictionary/src/gdict-applet.c:529
 msgid "Click to view the dictionary window"
 msgstr "অভিধানৰ উইন্ডো প্ৰদৰ্শনৰ বাবে ক্লিক কৰক"
 
-#: ../mate-dictionary/src/gdict-applet.c:535
+#: ../mate-dictionary/src/gdict-applet.c:531
 msgid "Toggle dictionary window"
 msgstr "অভিধানৰ উইন্ডো টগল কৰা হ'ব"
 
-#: ../mate-dictionary/src/gdict-applet.c:536
+#: ../mate-dictionary/src/gdict-applet.c:532
 msgid "Show or hide the definition window"
 msgstr "সংজ্ঞা উইন্ডো প্ৰদৰ্শন বা আড়াল কৰা হ'ব"
 
-#: ../mate-dictionary/src/gdict-applet.c:588
+#: ../mate-dictionary/src/gdict-applet.c:584
 msgid "Type the word you want to look up"
 msgstr "অনুসন্ধানৰ উদ্দেশ্যে শব্দ লিখুন"
 
-#: ../mate-dictionary/src/gdict-applet.c:590
+#: ../mate-dictionary/src/gdict-applet.c:586
 msgid "Dictionary entry"
 msgstr "অভিধানৰ শব্দেৰ এন্ট্ৰি"
 
-#: ../mate-dictionary/src/gdict-applet.c:716
-#: ../mate-dictionary/src/gdict-window.c:998
+#: ../mate-dictionary/src/gdict-applet.c:715
+#: ../mate-dictionary/src/gdict-window.c:1097
 msgid "Dictionary Preferences"
 msgstr "অভিধান সম্বন্ধীয় পছন্দ"
 
-#: ../mate-dictionary/src/gdict-applet.c:742
-#: ../mate-dictionary/src/gdict-pref-dialog.c:503
-#: ../mate-dictionary/src/gdict-source-dialog.c:479
-#: ../mate-dictionary/src/gdict-window.c:1140
+#: ../mate-dictionary/src/gdict-applet.c:739
+#: ../mate-dictionary/src/gdict-pref-dialog.c:495
+#: ../mate-dictionary/src/gdict-source-dialog.c:478
+#: ../mate-dictionary/src/gdict-window.c:1244
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "সহায়িকা প্ৰদৰ্শনে সমস্যা"
 
-#: ../mate-dictionary/src/gdict-applet.c:896
-#: ../mate-dictionary/src/gdict-window.c:514
+#: ../mate-dictionary/src/gdict-applet.c:893
+#: ../mate-dictionary/src/gdict-window.c:519
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "'%s' নামক কোনো অভিধান উৎস উপলব্ধ নহয়"
 
-#: ../mate-dictionary/src/gdict-applet.c:900
-#: ../mate-dictionary/src/gdict-window.c:518
+#: ../mate-dictionary/src/gdict-applet.c:897
+#: ../mate-dictionary/src/gdict-window.c:523
 msgid "Unable to find dictionary source"
 msgstr "অভিধানৰ উৎস অনুসন্ধান কৰিবলৈ ব্যৰ্থ"
 
-#: ../mate-dictionary/src/gdict-applet.c:916
-#: ../mate-dictionary/src/gdict-window.c:534
+#: ../mate-dictionary/src/gdict-applet.c:913
+#: ../mate-dictionary/src/gdict-window.c:539
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "'%s' উৎসেৰ বাবে কোনো কনটেক্সট উপলব্ধ নহয়"
 
-#: ../mate-dictionary/src/gdict-applet.c:920
-#: ../mate-dictionary/src/gdict-window.c:538
+#: ../mate-dictionary/src/gdict-applet.c:917
+#: ../mate-dictionary/src/gdict-window.c:543
 msgid "Unable to create a context"
 msgstr "কনটেক্সট নিৰ্মাণ কৰিবলৈ ব্যৰ্থ"
 
-#: ../mate-dictionary/src/gdict-applet.c:1172
-#: ../mate-dictionary/src/gdict-window.c:2078
-msgid "Unable to connect to MateConf"
-msgstr "MateConf'ৰ সৈতে সংযোগ কৰিবলৈ ব্যৰ্থ"
+#: ../mate-dictionary/src/gdict-applet.c:1198
+msgid "_Look Up Selected Text"
+msgstr "নিৰ্বাচিত টেক্সট অনুসন্ধান কৰা হ'ব (_L)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1185
-#: ../mate-dictionary/src/gdict-window.c:2091
-msgid "Unable to get notification for preferences"
-msgstr "পছন্দ সংক্ৰান্ত সূচনাপ্ৰাপ্ত কৰিবলৈ ব্যৰ্থ"
+#: ../mate-dictionary/src/gdict-applet.c:1201
+msgid "Cl_ear"
+msgstr "ৰিক্ত কৰা (_ম)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1199
-#: ../mate-dictionary/src/gdict-window.c:2104
-msgid "Unable to get notification for the document font"
-msgstr "ডকুমেন্টৰ ফন্ট সম্পৰ্কে সূচনা প্ৰাপ্ত কৰিবলৈ ব্যৰ্থ"
+#: ../mate-dictionary/src/gdict-applet.c:1204
+msgid "_Print"
+msgstr "প্ৰিন্ট কৰক(_P)"
+
+#: ../mate-dictionary/src/gdict-applet.c:1207
+msgid "_Save"
+msgstr "সংৰক্ষণ (_S)"
+
+#: ../mate-dictionary/src/gdict-applet.c:1210
+msgid "Preferences"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-applet.c:1216
+#: ../mate-dictionary/src/gdict-window.c:1334 ../logview/logview-window.c:840
+msgid "_About"
+msgstr "পৰিচিতি (_A)"
 
 #: ../mate-dictionary/src/gdict-common.c:80
 #, c-format
@@ -1386,249 +1249,299 @@ msgstr "'%s' নথিপত্ৰৰ নাম '%s' ত পৰিবৰ্ত�
 msgid "Unable to create the data directory '%s': %s"
 msgstr "ডাটা পঞ্জিকা '%s' নিৰ্মাণ কৰিবলৈ ব্যৰ্থ: %s"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:244
+#: ../mate-dictionary/src/gdict-pref-dialog.c:240
+#: ../mate-dictionary/src/gdict-pref-dialog.c:429
 msgid "Edit Dictionary Source"
 msgstr "অভিধানৰ উৎস সম্পাদনা কৰক"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:308
+#: ../mate-dictionary/src/gdict-pref-dialog.c:304
 msgid "Add Dictionary Source"
 msgstr "অভিধানে উৎস যোগ কৰক"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:353
+#: ../mate-dictionary/src/gdict-pref-dialog.c:349
 #, c-format
 msgid "Remove \"%s\"?"
 msgstr "\"%s\" মুছে ফেলা হ'ব চাবি?"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:355
+#: ../mate-dictionary/src/gdict-pref-dialog.c:351
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "এৰ ফলে অভিধান উৎসেৰ নাম স্থায়ীৰূপে তালিকাৰ পৰা মুছে ফেলা হ'ব"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:385
+#: ../mate-dictionary/src/gdict-pref-dialog.c:381
 #, c-format
 msgid "Unable to remove source '%s'"
 msgstr "'%s' উৎস মুছে ফেলা নাযায়"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:666
+#: ../mate-dictionary/src/gdict-pref-dialog.c:642
 msgid "Add a new dictionary source"
 msgstr "নতুন অভিধান উৎস যোগ কৰক"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:672
+#: ../mate-dictionary/src/gdict-pref-dialog.c:648
 msgid "Remove the currently selected dictionary source"
 msgstr "বৰ্তমানে নিৰ্বাচিত অভিধান উৎস মুছে ফেলা হ'ব"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:685
+#: ../mate-dictionary/src/gdict-pref-dialog.c:654
+msgid "Edit the currently selected dictionary source"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-pref-dialog.c:662
 msgid "Set the font used for printing the definitions"
 msgstr "সংজ্ঞা প্ৰিন্ট কৰাৰ বাবে ব্যৱহৃত ফন্ট নিৰ্ধাৰণ কৰক"
 
-#: ../mate-dictionary/src/gdict-print.c:249
-#: ../mate-dictionary/src/gdict-print.c:313
+#: ../mate-dictionary/src/gdict-print.c:241
+#: ../mate-dictionary/src/gdict-print.c:305
 #, c-format
 msgid "Unable to display the preview: %s"
 msgstr "Unable to display the preview: %s"
 
-#: ../mate-dictionary/src/gdict-source-dialog.c:341
-#: ../mate-dictionary/src/gdict-source-dialog.c:434
+#: ../mate-dictionary/src/gdict-source-dialog.c:340
+#: ../mate-dictionary/src/gdict-source-dialog.c:433
 msgid "Unable to create a source file"
 msgstr "উৎস নথিপত্ৰ নিৰ্মাণ কৰিবলৈ ব্যৰ্থ"
 
-#: ../mate-dictionary/src/gdict-source-dialog.c:359
-#: ../mate-dictionary/src/gdict-source-dialog.c:452
+#: ../mate-dictionary/src/gdict-source-dialog.c:358
+#: ../mate-dictionary/src/gdict-source-dialog.c:451
 msgid "Unable to save source file"
 msgstr "উৎস নথিপত্ৰ সংৰক্ষণ কৰিবলৈ ব্যৰ্থ"
 
-#: ../mate-dictionary/src/gdict-window.c:315
+#: ../mate-dictionary/src/gdict-window.c:314
 #, c-format
 msgid "Searching for '%s'..."
 msgstr "'%s' অনুসন্ধান কৰা হৈছে..."
 
-#: ../mate-dictionary/src/gdict-window.c:347
-#: ../mate-dictionary/src/gdict-window.c:404
+#: ../mate-dictionary/src/gdict-window.c:346
+#: ../mate-dictionary/src/gdict-window.c:403
 msgid "No definitions found"
 msgstr "সংজ্ঞা পোৱা নাযায়"
 
-#: ../mate-dictionary/src/gdict-window.c:349
+#: ../mate-dictionary/src/gdict-window.c:348
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
 msgstr[0] "A definition found"
 msgstr[1] "%d definitions found"
 
-#: ../mate-dictionary/src/gdict-window.c:603
+#: ../mate-dictionary/src/gdict-window.c:602
 #, c-format
 msgid "%s - Dictionary"
 msgstr "%s - অভিধান"
 
-#: ../mate-dictionary/src/gdict-window.c:1175 ../logview/logview-window.c:807
+#: ../mate-dictionary/src/gdict-window.c:1278 ../logview/logview-window.c:808
 msgid "_File"
 msgstr "নথিপত্ৰ (_F)"
 
-#: ../mate-dictionary/src/gdict-window.c:1178
+#: ../mate-dictionary/src/gdict-window.c:1281
 msgid "_Go"
 msgstr "গন্তব্য (_G)"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1182
+#: ../mate-dictionary/src/gdict-window.c:1285
 msgid "_New"
 msgstr "নতুন (_N)"
 
-#: ../mate-dictionary/src/gdict-window.c:1183
+#: ../mate-dictionary/src/gdict-window.c:1286
 msgid "New look up"
 msgstr "নতুন অনুসন্ধান"
 
-#: ../mate-dictionary/src/gdict-window.c:1184
+#: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_Save a Copy..."
 msgstr "প্ৰতিলিপি সংৰক্ষণ কৰক...(_S)"
 
-#: ../mate-dictionary/src/gdict-window.c:1186
+#: ../mate-dictionary/src/gdict-window.c:1289
 msgid "P_review..."
 msgstr "P_review..."
 
-#: ../mate-dictionary/src/gdict-window.c:1187
+#: ../mate-dictionary/src/gdict-window.c:1290
 msgid "Preview this document"
 msgstr "Pৰeview"
 
-#: ../mate-dictionary/src/gdict-window.c:1188
+#: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_Print..."
 msgstr "প্ৰিন্ট কৰক (_P)..."
 
-#: ../mate-dictionary/src/gdict-window.c:1189
+#: ../mate-dictionary/src/gdict-window.c:1292
 msgid "Print this document"
 msgstr "এই ডকুমেন্ট প্ৰিন্ট কৰক"
 
-#: ../mate-dictionary/src/gdict-window.c:1196 ../logview/logview-window.c:822
+#: ../mate-dictionary/src/gdict-window.c:1299 ../logview/logview-window.c:823
 msgid "Select _All"
 msgstr "সমস্ত নিৰ্বাচন কৰক (_A)"
 
-#: ../mate-dictionary/src/gdict-window.c:1199
+#: ../mate-dictionary/src/gdict-window.c:1302
 msgid "Find a word or phrase in the document"
 msgstr "ডকুমেন্টত এটা শব্দ বা পংক্তি অনুসন্ধান কৰক"
 
-#: ../mate-dictionary/src/gdict-window.c:1201
+#: ../mate-dictionary/src/gdict-window.c:1304
 msgid "Find Ne_xt"
 msgstr "পৰবৰ্তী উপস্থিতি অনুসন্ধান কৰক (_x)"
 
-#: ../mate-dictionary/src/gdict-window.c:1203
+#: ../mate-dictionary/src/gdict-window.c:1306
 msgid "Find Pre_vious"
 msgstr "পূৰ্ববৰ্তী উপস্থিতি অনুসন্ধান কৰক (_v)"
 
+#: ../mate-dictionary/src/gdict-window.c:1308
+msgid "_Preferences"
+msgstr "পছন্দ (_P)"
+
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1209
+#: ../mate-dictionary/src/gdict-window.c:1312
 msgid "_Previous Definition"
 msgstr "পূৰ্ববৰ্তী সংজ্ঞা (_P)"
 
-#: ../mate-dictionary/src/gdict-window.c:1210
+#: ../mate-dictionary/src/gdict-window.c:1313
 msgid "Go to the previous definition"
 msgstr "পূৰ্ববৰ্তী সংজ্ঞায় চলুন"
 
-#: ../mate-dictionary/src/gdict-window.c:1211
+#: ../mate-dictionary/src/gdict-window.c:1314
 msgid "_Next Definition"
 msgstr "পৰবৰ্তী সংজ্ঞা (_N)"
 
-#: ../mate-dictionary/src/gdict-window.c:1212
+#: ../mate-dictionary/src/gdict-window.c:1315
 msgid "Go to the next definition"
 msgstr "পৰবৰ্তী সংজ্ঞায় চলুন"
 
-#: ../mate-dictionary/src/gdict-window.c:1213
+#: ../mate-dictionary/src/gdict-window.c:1316
 msgid "_First Definition"
 msgstr "প্ৰথম সংজ্ঞা (_F)"
 
-#: ../mate-dictionary/src/gdict-window.c:1214
+#: ../mate-dictionary/src/gdict-window.c:1317
 msgid "Go to the first definition"
 msgstr "প্ৰথম সংজ্ঞায় চলুন"
 
-#: ../mate-dictionary/src/gdict-window.c:1215
+#: ../mate-dictionary/src/gdict-window.c:1318
 msgid "_Last Definition"
 msgstr "সৰ্বশেষ সংজ্ঞা (_L)"
 
-#: ../mate-dictionary/src/gdict-window.c:1216
+#: ../mate-dictionary/src/gdict-window.c:1319
 msgid "Go to the last definition"
 msgstr "সৰ্বশেষ সংজ্ঞায় চলুন"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1219
+#: ../mate-dictionary/src/gdict-window.c:1322
 msgid "Similar _Words"
 msgstr "সমতুল্য শব্দ (_W)"
 
-#: ../mate-dictionary/src/gdict-window.c:1221
+#: ../mate-dictionary/src/gdict-window.c:1324
 msgid "Dictionary Sources"
 msgstr "অভিধান উৎস"
 
-#: ../mate-dictionary/src/gdict-window.c:1223
+#: ../mate-dictionary/src/gdict-window.c:1326
 msgid "Available _Databases"
 msgstr "উপলব্ধ ডাটাবেস (_D)"
 
-#: ../mate-dictionary/src/gdict-window.c:1225
+#: ../mate-dictionary/src/gdict-window.c:1328
 msgid "Available St_rategies"
 msgstr "Available St_rategies"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1242
+#: ../mate-dictionary/src/gdict-window.c:1345
 msgid "_Sidebar"
 msgstr "_Sidebaৰ"
 
-#: ../mate-dictionary/src/gdict-window.c:1244
+#: ../mate-dictionary/src/gdict-window.c:1347
 msgid "S_tatusbar"
 msgstr "স্ট্যাটাস-বাৰ(_t)"
 
-#: ../mate-dictionary/src/gdict-window.c:1365
+#: ../mate-dictionary/src/gdict-window.c:1412
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "শব্দকোষৰ উৎস `%s' নিৰ্ব্বাচন কৰা হৈছে"
 
-#: ../mate-dictionary/src/gdict-window.c:1386
+#: ../mate-dictionary/src/gdict-window.c:1433
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "Strategy `%s' selected"
 
-#: ../mate-dictionary/src/gdict-window.c:1406
+#: ../mate-dictionary/src/gdict-window.c:1453
 #, c-format
 msgid "Database `%s' selected"
 msgstr "ডাটাবেস `%s' নিৰ্বাচন কৰা হৈছে"
 
-#: ../mate-dictionary/src/gdict-window.c:1426
+#: ../mate-dictionary/src/gdict-window.c:1473
 #, c-format
 msgid "Word `%s' selected"
 msgstr "শব্দ `%s' নিৰ্বাচন কৰা হৈছে"
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1448
+#: ../mate-dictionary/src/gdict-window.c:1498
 msgid "Double-click on the word to look up"
 msgstr "অনুসন্ধানৰ উদ্দেশ্যে চিহ্নিত শব্দত দুবাৰ ক্লিক কৰক"
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1454
+#: ../mate-dictionary/src/gdict-window.c:1504
 msgid "Double-click on the matching strategy to use"
 msgstr "ডাবল ক্লিক কৰক চলি আছে"
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1459
+#: ../mate-dictionary/src/gdict-window.c:1509
 msgid "Double-click on the source to use"
 msgstr "ডাবল ক্লিক কৰক চলি আছে উৎস"
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1468
+#: ../mate-dictionary/src/gdict-window.c:1518
 msgid "Double-click on the database to use"
 msgstr "ব্যৱহাৰৰ উদ্দেশ্যে চিহ্নিত ডাটাবেসেৰ উপৰ দুবাৰ ক্লিক কৰক"
 
-#: ../mate-dictionary/src/gdict-window.c:1755
+#: ../mate-dictionary/src/gdict-window.c:1770
 msgid "Look _up:"
 msgstr "সন্ধান:(_u)"
 
-#: ../mate-dictionary/src/gdict-window.c:1829
+#: ../mate-dictionary/src/gdict-window.c:1849
 msgid "Similar words"
 msgstr "সমতুল্য শব্দ"
 
-#: ../mate-dictionary/src/gdict-window.c:1842
+#: ../mate-dictionary/src/gdict-window.c:1862
 msgid "Available dictionaries"
 msgstr "উপলব্ধ অভিধান"
 
-#: ../mate-dictionary/src/gdict-window.c:1855
+#: ../mate-dictionary/src/gdict-window.c:1880
 msgid "Available strategies"
 msgstr "Available strategies"
 
-#: ../mate-dictionary/src/gdict-window.c:1866
+#: ../mate-dictionary/src/gdict-window.c:1896
 msgid "Dictionary sources"
 msgstr "অভিধান"
+
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:1
+msgid "_Select a dictionary source for looking up words:"
+msgstr "শব্দ অনুসন্ধানৰ বাবে এটা অভিধান উৎস নিৰ্বাচন কৰক:(_S)"
+
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:2
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:6
+msgid "Source"
+msgstr "উৎস"
+
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:3
+msgid "_Print font:"
+msgstr "প্ৰিন্ট কৰিবলৈ ব্যৱহৃত ফন্ট:(_P)"
+
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:4
+msgid "Print"
+msgstr "প্ৰিন্ট কৰক"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:1
+msgid "_Description:"
+msgstr "বিৱৰণ: (_D)"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:2
+msgid "_Transport:"
+msgstr "পৰিবহণ:(_T)"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:3
+msgid "H_ostname:"
+msgstr "হোস্ট-নেম:(_o)"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:5
+msgid "Source Name"
+msgstr "উৎসেৰ নাম"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:7
+msgid "Dictionaries"
+msgstr "শব্দকোষ"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:8
+msgid "Strategies"
+msgstr "Strategies"
 
 #: ../mate-screenshot/mate-screenshot.c:133
 msgid "Error loading the help page"
@@ -1674,16 +1587,14 @@ msgstr "গ্ৰহণ কৰাৰ উদ্দেশ্যে প্ৰয়ো
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#. 
 #: ../mate-screenshot/mate-screenshot.c:478
 msgid "Grab _after a delay of"
 msgstr "পৰে a মুঠ"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#. 
 #: ../mate-screenshot/mate-screenshot.c:498
-#: ../mate-screenshot/mate-screenshot.c:1289
+#: ../mate-screenshot/mate-screenshot.c:1273
 msgid "seconds"
 msgstr "ছেকেণ্ড"
 
@@ -1697,15 +1608,15 @@ msgstr "পৰ্দাৰ ছবি নিন"
 msgid "Effects"
 msgstr "Effects"
 
-#: ../mate-screenshot/mate-screenshot.c:531
+#: ../mate-screenshot/mate-screenshot.c:530
 msgid "Take _Screenshot"
 msgstr "পৰ্দাৰ ছবি"
 
-#: ../mate-screenshot/mate-screenshot.c:657
+#: ../mate-screenshot/mate-screenshot.c:650
 msgid "Error while saving screenshot"
 msgstr "পৰ্দাৰ ছবি সংৰক্ষণ কৰিবলৈ সমস্যা"
 
-#: ../mate-screenshot/mate-screenshot.c:660
+#: ../mate-screenshot/mate-screenshot.c:653
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -1713,15 +1624,15 @@ msgid ""
 " Please choose another location and retry."
 msgstr "%s ত পৰ্দাৰ ছবি সংৰক্ষণ কৰা সম্ভৱ নহয় ।\n উৎপন্ন ত্ৰুটি %s\n অনুগ্ৰহ কৰি ভিন্ন অবস্থান নিৰ্বাচন কৰি পুনৰায় প্ৰচেষ্টা কৰক ।"
 
-#: ../mate-screenshot/mate-screenshot.c:792
+#: ../mate-screenshot/mate-screenshot.c:785
 msgid "Screenshot taken"
 msgstr "পৰ্দাৰ ছবি গ্ৰহণ কৰা হৈছে"
 
-#: ../mate-screenshot/mate-screenshot.c:846
+#: ../mate-screenshot/mate-screenshot.c:840
 msgid "Unable to take a screenshot of the current window"
 msgstr "a মুঠ"
 
-#: ../mate-screenshot/mate-screenshot.c:896
+#: ../mate-screenshot/mate-screenshot.c:893
 #, c-format
 msgid "Screenshot-%s.png"
 msgstr "Scৰeenshot-%s.png"
@@ -1729,15 +1640,15 @@ msgstr "Scৰeenshot-%s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if a specific window is
 #. * taken
-#: ../mate-screenshot/mate-screenshot.c:903
+#: ../mate-screenshot/mate-screenshot.c:900
 #, c-format
 msgid "Screenshot-%s-%d.png"
 msgstr "Scৰeenshot-%s-%d.png"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/mate-screenshot.c:913
-#: ../mate-screenshot/screenshot-dialog.c:353
+#: ../mate-screenshot/mate-screenshot.c:910
+#: ../mate-screenshot/screenshot-dialog.c:369
 #: ../mate-screenshot/screenshot-save.c:196
 msgid "Screenshot.png"
 msgstr "Scৰeenshot.png"
@@ -1745,53 +1656,65 @@ msgstr "Scৰeenshot.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/mate-screenshot.c:920
+#: ../mate-screenshot/mate-screenshot.c:917
 #, c-format
 msgid "Screenshot-%d.png"
 msgstr "Scৰeenshot-%d.png"
 
-#: ../mate-screenshot/mate-screenshot.c:1285
+#: ../mate-screenshot/mate-screenshot.c:1269
 msgid "Grab a window instead of the entire screen"
 msgstr "সম্পৰ্ণ পৰ্দাৰ পৰিবৰ্তে অকল এটা উইন্ডোৰ ছবি নিয়া হ'ব"
 
-#: ../mate-screenshot/mate-screenshot.c:1286
+#: ../mate-screenshot/mate-screenshot.c:1270
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "সম্পৰ্ণ পৰ্দাৰ পৰিবৰ্তে, পৰ্দাৰ এটা অংশৰ ছবি নিয়া হ'ব"
 
-#: ../mate-screenshot/mate-screenshot.c:1287
+#: ../mate-screenshot/mate-screenshot.c:1271
 msgid "Include the window border with the screenshot"
 msgstr "পৰ্দাৰ ছবিতে উইন্ডোৰ প্ৰান্তৰেখা অন্তৰ্ভুক্ত কৰা হ'ব"
 
-#: ../mate-screenshot/mate-screenshot.c:1288
+#: ../mate-screenshot/mate-screenshot.c:1272
 msgid "Remove the window border from the screenshot"
 msgstr "পৰ্দাৰ ছবিত উইন্ডোৰ প্ৰান্তৰেখা অন্তৰ্ভুক্ত কৰা ন'হ'ব"
 
-#: ../mate-screenshot/mate-screenshot.c:1289
+#: ../mate-screenshot/mate-screenshot.c:1273
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "সনিৰ্দিষ্ট সময় [ছেকেণ্ডে ব্যক্ত] অতিক্ৰান্ত হওয়াৰ পৰে ছবি নিয়া হ'ব"
 
-#: ../mate-screenshot/mate-screenshot.c:1290
+#: ../mate-screenshot/mate-screenshot.c:1274
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "শূণ্য"
 
-#: ../mate-screenshot/mate-screenshot.c:1290
+#: ../mate-screenshot/mate-screenshot.c:1274
 msgid "effect"
 msgstr "ইফেক্ট"
 
-#: ../mate-screenshot/mate-screenshot.c:1291
+#: ../mate-screenshot/mate-screenshot.c:1275
 msgid "Interactively set options"
 msgstr "Interactively set options"
 
-#: ../mate-screenshot/mate-screenshot.c:1302
+#: ../mate-screenshot/mate-screenshot.c:1284
 msgid "Take a picture of the screen"
 msgstr "সম্পূৰ্ণ পৰ্দাৰ এটা ছবি নিন"
 
-#: ../mate-screenshot/mate-screenshot.c:1320
+#: ../mate-screenshot/mate-screenshot.c:1302
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"
 msgstr "দ্বন্দ্বপূৰ্ণ বিকল্প: --window আৰু --area বিকল্প দুটা একেলগে ব্যৱহাৰ কৰা নাযাব ।\n"
+
+#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:1
+msgid "A screenshot utility for MATE Desktop"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Screenshot is a simple utility that lets you capture screenshots of"
+" your desktop or of application windows. You can select to copy them to the "
+"system clipboard or save them in Portable Network Graphics (.png) image "
+"format. </p>"
+msgstr ""
 
 #: ../mate-screenshot/mate-screenshot.desktop.in.h:2
 msgid "Save images of your desktop or individual windows"
@@ -1818,65 +1741,58 @@ msgstr "চিহ্নিত ফোল্ডাৰে সংৰক্ষণ ক
 msgid "*"
 msgstr "*"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:1
-msgid "Window-specific screenshot (deprecated)"
-msgstr "উইন্ডোৰ ক্ষেত্ৰত নিৰ্দিষ্ট পৰ্দাৰ ছবি (অবচিত)"
-
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:2
-msgid ""
-"Grab just the current window, rather than the whole desktop. This key has "
-"been deprecated and it is no longer in use."
-msgstr "সম্পূৰ্ণ ডেস্কটপৰ পৰিবৰ্তে, অকল বৰ্তমান উইন্ডোৰ ছবি গ্ৰহণ কৰা হ'ব । এই চাবি অবচিত হৈছে আৰু বৰ্তমানে ব্যৱহাৰ কৰা নহয় ।"
-
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:3
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:1
 msgid "Screenshot delay"
 msgstr "পৰ্দাৰ ছবি গ্ৰহণৰ আগতে অপেক্ষাৰ সময়"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:4
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:2
 msgid "The number of seconds to wait before taking the screenshot."
 msgstr "পৰ্দাৰ ছবি তোলাৰ আগতে অপেক্ষাৰ সময়, ছেকেণ্ড অনুযায়ী ধাৰ্য ।"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:5
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:3
 msgid "Screenshot directory"
 msgstr "পৰ্দাৰ ছবি সংৰক্ষণৰ পঞ্জিকা"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:6
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:4
 msgid "The directory the last screenshot was saved in."
 msgstr "পৰ্দাৰ ছবি সংৰক্ষণৰ উদ্দেশ্যে ব্যৱহৃত সৰ্বশেষ ফোল্ডাৰ ।"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:7
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:5
 msgid "Include Border"
 msgstr "প্ৰান্ত ৰেখা অন্তৰ্ভুক্ত কৰা হ'ব"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:8
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:6
 msgid "Include the window manager border along with the screenshot"
 msgstr "পৰ্দাৰ ছবিত উইন্ডো পৰিচালনব্যৱস্থাৰ প্ৰান্তৰেখা অন্তৰ্ভুক্ত কৰা হ'ব"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:9
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:7
 msgid "Include Pointer"
 msgstr "পইন্টাৰ অন্তৰ্ভুক্ত কৰা হ'ব"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:10
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:8
 msgid "Include the pointer in the screenshot"
 msgstr "পৰ্দাৰ ছবিত পইন্টাৰ অন্তৰ্ভুক্ত কৰা হ'ব"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:11
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:9
 msgid "Border Effect"
 msgstr "প্ৰান্তৰেখাৰ ইফেক্ট"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:12
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:10
 msgid ""
 "Effect to add to the outside of a border. Possible values are \"shadow\", "
 "\"none\", and \"border\"."
 msgstr "মুঠ a শূণ্য আৰু."
 
-#: ../mate-screenshot/screenshot-dialog.c:236
+#: ../mate-screenshot/screenshot-dialog.c:246
+#, c-format
 msgid ""
-"UI definition file for the screenshot program is missing.\n"
-"Please check your installation of mate-utils"
-msgstr "পৰ্দাৰ ছবি গ্ৰহণকৰ্তা প্ৰোগ্ৰামৰ বাবে আৱশ্যক UI ডেফিনিছন নথিপত্ৰ উপস্থিত নাই ।\\কৰি প্ৰণালীত mate-utils সংস্থাপন পৰীক্ষা কৰক"
+"Error loading UI definition file for the screenshot program: \n"
+"%s\n"
+"\n"
+"Please check your installation of mate-utils."
+msgstr ""
 
-#: ../mate-screenshot/screenshot-dialog.c:257
+#: ../mate-screenshot/screenshot-dialog.c:269
 msgid "Select a folder"
 msgstr "এটা ফোল্ডাৰ নিৰ্বাচন কৰক"
 
@@ -1898,7 +1814,7 @@ msgid "Unknown error saving screenshot to disk"
 msgstr "ডিস্কত পৰ্দাৰ ছবি সংৰক্ষণ কৰিবলৈ অজ্ঞাত সমস্যা উৎ‌পন্ন হৈছে"
 
 #. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-#: ../mate-screenshot/screenshot-utils.c:894
+#: ../mate-screenshot/screenshot-utils.c:998
 msgid "Untitled Window"
 msgstr "নামবিহীন উইন্ডো"
 
@@ -1912,7 +1828,7 @@ msgid "The file \"%s\" already exists. Would you like to replace it?"
 msgstr "\"%s\" নথিপত্ৰ বৰ্তমানে উপস্থিত আছে ।  আপুনি ইয়াক নতুনকৈ লিখিবলৈ ইচ্ছুক নে ?"
 
 #: ../mate-screenshot/screenshot-xfer.c:82
-#: ../gsearchtool/gsearchtool-callbacks.c:1722
+#: ../gsearchtool/gsearchtool-callbacks.c:1726
 msgid "_Replace"
 msgstr "প্ৰতিস্থাপন (_R)"
 
@@ -1924,456 +1840,539 @@ msgstr "নথিপত্ৰ সংৰক্ষণ কৰা হৈছে..."
 msgid "Can't access source file"
 msgstr "উৎস নথিপত্ৰ ব্যৱহাৰ কৰিবলৈ ব্যৰ্থ"
 
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
+msgid "A file searching tool for MATE Desktop"
+msgstr ""
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Search Tool is a simple but powerful utility that allows you to "
+"search for files and folders on any mounted file system. Its interface gives"
+" you instant access to a wide variety of parameters for each search, such as"
+" text contained within a file, ownership, date of modification, file size, "
+"folder exclusion, etc.. </p>"
+msgstr ""
+
 #: ../gsearchtool/mate-search-tool.desktop.in.h:1
-msgid "Search for Files..."
-msgstr "নথিপত্ৰ অনুসন্ধান..."
+msgid "MATE Search Tool"
+msgstr ""
 
 #: ../gsearchtool/mate-search-tool.desktop.in.h:2
 msgid "Locate documents and folders on this computer by name or content"
 msgstr "নাম বা অন্তৰ্ভুক্ত বিষয় অনুসাৰে এই কম্পিউটাৰে নথিপত্ৰ বা ফোল্ডাৰ অনুসন্ধান কৰক"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:1
-msgid "Show Additional Options"
-msgstr "অতিৰিক্ত বিকল্প প্ৰদৰ্শন কৰা হ'ব"
+#: ../gsearchtool/gsearchtool.c:82
+msgid "Contains the _text"
+msgstr "চিহ্নিত লেখাসহ(_t)"
 
-#. Translators: The quoted text is the label of the additional
-#. options expander that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:4
+#: ../gsearchtool/gsearchtool.c:84
+msgid "_Date modified less than"
+msgstr "সৰ্বশেষ পৰিবৰ্তনৰ তাৰিখ চিহ্নিত সংখ্যাত(_D)"
+
+#: ../gsearchtool/gsearchtool.c:84 ../gsearchtool/gsearchtool.c:85
+msgid "days"
+msgstr "দিন"
+
+#: ../gsearchtool/gsearchtool.c:85
+msgid "Date modified more than"
+msgstr "সৰ্বশেষ পৰিবৰ্তনৰ তাৰিখ চিহ্নিত সংখ্যাৰ ঊৰ্ধ্বে"
+
+#: ../gsearchtool/gsearchtool.c:87
+msgid "S_ize at least"
+msgstr "ন্যূনতম মাপ(_i)"
+
+#: ../gsearchtool/gsearchtool.c:87 ../gsearchtool/gsearchtool.c:88
+msgid "kilobytes"
+msgstr "চাবিলোবাইট"
+
+#: ../gsearchtool/gsearchtool.c:88
+msgid "Si_ze at most"
+msgstr "সৰ্বাধিক মাপ(_z)"
+
+#: ../gsearchtool/gsearchtool.c:89
+msgid "File is empty"
+msgstr "ৰিক্ত নথিপত্ৰ"
+
+#: ../gsearchtool/gsearchtool.c:91
+msgid "Owned by _user"
+msgstr "চিহ্নিত ব্যৱহাৰকৰ্তাৰ মালিকানাধীন(_u)"
+
+#: ../gsearchtool/gsearchtool.c:92
+msgid "Owned by _group"
+msgstr "চিহ্নিত দলেৰ মালিকানাধীন(_g)"
+
+#: ../gsearchtool/gsearchtool.c:93
+msgid "Owner is unrecognized"
+msgstr "অজ্ঞাত মালিকেৰ অধীন"
+
+#: ../gsearchtool/gsearchtool.c:95
+msgid "Na_me does not contain"
+msgstr "নামত অনুপস্থিত(_m)"
+
+#: ../gsearchtool/gsearchtool.c:96
+msgid "Name matches regular e_xpression"
+msgstr "ৰেগুলাৰ এক্সপ্ৰেশনৰ সৈতে মেলানো নাম(_x)"
+
+#: ../gsearchtool/gsearchtool.c:98
+msgid "Show hidden and backup files"
+msgstr "আড়াল কৰা আৰু ব্যাক-আপ নথিপত্ৰ প্ৰদৰ্শন কৰা হ'ব"
+
+#: ../gsearchtool/gsearchtool.c:99
+msgid "Follow symbolic links"
+msgstr "সিম্বলিক লিঙ্ক অনুসৰণ কৰা হ'ব"
+
+#: ../gsearchtool/gsearchtool.c:100
+msgid "Exclude other filesystems"
+msgstr "অন্যান্য নথিপত্ৰ-প্ৰণালী অন্তৰ্ভুক্ত কৰা ন'হ'ব"
+
+#: ../gsearchtool/gsearchtool.c:158
+msgid "Show version of the application"
+msgstr ""
+
+#: ../gsearchtool/gsearchtool.c:159 ../gsearchtool/gsearchtool.c:164
+#: ../gsearchtool/gsearchtool.c:173
+msgid "STRING"
+msgstr "STRING"
+
+#: ../gsearchtool/gsearchtool.c:160
+msgid "PATH"
+msgstr "PATH"
+
+#: ../gsearchtool/gsearchtool.c:161
+msgid "VALUE"
+msgstr "VALUE"
+
+#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
+msgid "DAYS"
+msgstr "DAYS"
+
+#: ../gsearchtool/gsearchtool.c:167 ../gsearchtool/gsearchtool.c:168
+msgid "KILOBYTES"
+msgstr "KILOBYTES"
+
+#: ../gsearchtool/gsearchtool.c:170
+msgid "USER"
+msgstr "USER"
+
+#: ../gsearchtool/gsearchtool.c:171
+msgid "GROUP"
+msgstr "GROUP"
+
+#: ../gsearchtool/gsearchtool.c:174
+msgid "PATTERN"
+msgstr "PATTERN"
+
+#: ../gsearchtool/gsearchtool.c:385
+msgid "A locate database has probably not been created."
+msgstr "সম্ভৱত অনুসন্ধান স্থানৰ ডাটাবেস নিৰ্মিত হয়নি ।"
+
+#: ../gsearchtool/gsearchtool.c:487
+#, c-format
+msgid "Character set conversion failed for \"%s\""
+msgstr "\"%s\"-ৰ ক্ষেত্ৰত অক্ষৰ সংকলন ৰূপান্তৰ কৰ্ম ব্যৰ্থ"
+
+#: ../gsearchtool/gsearchtool.c:511
+msgid "Searching..."
+msgstr "অনুসন্ধান কৰা হৈছে..."
+
+#: ../gsearchtool/gsearchtool.c:511 ../gsearchtool/gsearchtool.c:1031
+#: ../gsearchtool/gsearchtool.c:3030
+msgid "Search for Files"
+msgstr "নথিপত্ৰ অনুসন্ধান"
+
+#: ../gsearchtool/gsearchtool.c:977 ../gsearchtool/gsearchtool.c:1006
+msgid "No files found"
+msgstr "এটাও নথিপত্ৰ পোৱা নাযায়"
+
+#: ../gsearchtool/gsearchtool.c:999
+msgid "(stopped)"
+msgstr "(স্থগিত)"
+
+#: ../gsearchtool/gsearchtool.c:1005
+msgid "No Files Found"
+msgstr "এটাও নথিপত্ৰ পোৱা নাযায়"
+
+#: ../gsearchtool/gsearchtool.c:1010
+#, c-format
+msgid "%'d File Found"
+msgid_plural "%'d Files Found"
+msgstr[0] "%'d নথিপত্ৰ পোৱা গৈছে"
+msgstr[1] "%'d নথিপত্ৰ পোৱা গৈছে"
+
+#: ../gsearchtool/gsearchtool.c:1014 ../gsearchtool/gsearchtool.c:1052
+#, c-format
+msgid "%'d file found"
+msgid_plural "%'d files found"
+msgstr[0] "%'d নথিপত্ৰ পোৱা গৈছে"
+msgstr[1] "%d নথিপত্ৰ পোৱা গৈছে"
+
+#: ../gsearchtool/gsearchtool.c:1143
+msgid "Entry changed called for a non entry option!"
+msgstr "এন্ট্ৰিবিহীন বিকল্পৰ এন্ট্ৰি পৰিবৰ্তনৰ প্ৰচেষ্টা কৰা হৈছে!"
+
+#: ../gsearchtool/gsearchtool.c:1308
+msgid "Set the text of \"Name contains\" search option"
+msgstr "অনুসন্ধান কৰ্মৰ \"নামত উপস্থিত\" বিকল্পৰ টেক্সট লিখুন"
+
+#: ../gsearchtool/gsearchtool.c:1309
+msgid "Set the text of \"Look in folder\" search option"
+msgstr "অনুসন্ধান কৰ্মৰ \"চিহ্নিত ফোল্ডাৰে অনুসন্ধান কৰা হ'ব\" বিকল্পৰ টেক্সট লিখুন"
+
+#: ../gsearchtool/gsearchtool.c:1310
+msgid "Sort files by one of the following: name, folder, size, type, or date"
+msgstr "নথিপত্ৰসমূহ উল্লিখিত বিষয়েৰ যে কোনো এটা ক্ৰমে বিন্যাস কৰা হ'ব: নাম,ফোল্ডাৰ,মাপ,ধৰন বা তাৰিখ"
+
+#: ../gsearchtool/gsearchtool.c:1311
+msgid "Set sort order to descending, the default is ascending"
+msgstr "বড়ৰ পৰা ছোট মান অনুসাৰে বিন্যাস কৰা হ'ব, অবিকল্পিত ক্ৰম ছোটৰ পৰা বড়"
+
+#: ../gsearchtool/gsearchtool.c:1312
+msgid "Automatically start a search"
+msgstr "স্বয়ংক্ৰিয়ভাবে অনুসন্ধান আৰম্ভ কৰা হ'ব"
+
+#: ../gsearchtool/gsearchtool.c:1318
+#, c-format
+msgid "Select the \"%s\" search option"
+msgstr "অনুসন্ধান কৰ্মে \"%s\" বিকল্প নিৰ্বাচন কৰা হ'ব"
+
+#: ../gsearchtool/gsearchtool.c:1321
+#, c-format
+msgid "Select and set the \"%s\" search option"
+msgstr "অনুসন্ধান কৰ্মৰ \"%s\" বিকল্প নিৰ্বাচন কৰি স্থাপন কৰক"
+
+#: ../gsearchtool/gsearchtool.c:1428
+msgid "Invalid option passed to sortby command line argument."
+msgstr "soৰtby আদেশ শাৰী তৰ্কে অবৈধ বিকল্প প্ৰৰিত হৈছে ।"
+
+#: ../gsearchtool/gsearchtool.c:1720
 msgid ""
-"This key determines if the \"Select more options\" section is expanded when "
-"the search tool is started."
-msgstr "\"অতিৰিক্ত বিকল্প নিৰ্বাচন কৰক\" বিভাগটি প্ৰসাৰিত হৈছে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+"\n"
+"... Too many errors to display ..."
+msgstr "\n... অত্যাধিক ত্ৰুটিৰ ফলে বিৱৰণ প্ৰদৰ্শনে সমস্যা ..."
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:7
-msgid "Select the search option \"Contains the text\""
-msgstr " অনুসন্ধান কৰ্মৰ \"চিহ্নিত লেখাসহ\" বিকল্প নিৰ্বাচন কৰক"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:8
+#: ../gsearchtool/gsearchtool.c:1734
 msgid ""
-"This key determines if the \"Contains the text\" search option is selected "
-"when the search tool is started."
-msgstr "\"চিহ্নিত লেখাসহ\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+"The search results may be invalid.  There were errors while performing this "
+"search."
+msgstr "অনুসন্ধানৰ ফলাফল সম্ভৱত বৈধ নহয় ।  অনুসন্ধান চলাকালীন চাবিছু সমস্যা উৎ‌পন্ন হয়েছিল ।"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:11
-msgid "Select the search option \"Date modified less than\""
-msgstr "অনুসন্ধান কৰ্মৰ \"সৰ্বশেষ পৰিবৰ্তনৰ তাৰিখ চিহ্নিত সংখ্যাত\" বিকল্প নিৰ্বাচন কৰক"
+#: ../gsearchtool/gsearchtool.c:1746 ../gsearchtool/gsearchtool.c:1790
+msgid "Show more _details"
+msgstr "অতিৰিক্ত বিৱৰণ প্ৰদৰ্শন কৰা হ'ব (_d)"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:12
+#: ../gsearchtool/gsearchtool.c:1776
 msgid ""
-"This key determines if the \"Date modified less than\" search option is "
-"selected when the search tool is started."
-msgstr "\"সৰ্বশেষ পৰিবৰ্তনৰ তাৰিখ চিহ্নিত সংখ্যাত\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে চাবি না তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+"The search results may be out of date or invalid.  Do you want to disable "
+"the quick search feature?"
+msgstr "অনুসন্ধানৰ ফলাফল অচল বা অবৈধ হওয়াৰ সম্ভাবনা আছে ।  আপুনি ঝটপট অনুসন্ধান ব্যৱস্থা নিষ্ক্ৰিয় কৰিবলৈ ইচ্ছুক নে ?"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:15
-msgid "Select the search option \"Date modified more than\""
-msgstr "অনুসন্ধান কৰ্মৰ \"সৰ্বশেষ পৰিবৰ্তনৰ তাৰিখ চিহ্নিত সংখ্যাৰ ঊৰ্ধ্বে\" বিকল্প নিৰ্বাচন কৰক"
+#: ../gsearchtool/gsearchtool.c:1801
+msgid "Disable _Quick Search"
+msgstr "ঝটপট অনুসন্ধান ব্যৱস্থা নিষ্ক্ৰিয় কৰক (_Q)"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:16
-msgid ""
-"This key determines if the \"Date modified more than\" search option is "
-"selected when the search tool is started."
-msgstr "\"সৰ্বশেষ পৰিবৰ্তনৰ তাৰিখ চিহ্নিত সংখ্যাৰ ঊৰ্ধ্বে\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে চাবি না তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+#: ../gsearchtool/gsearchtool.c:1828
+#, c-format
+msgid "Failed to set process group id of child %d: %s.\n"
+msgstr "চাইল্ড %d-ৰ বাবে প্ৰসেস গ্ৰুপ id স্থাপন কৰিবলৈ ব্যৰ্থ: %s ।\n"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:19
-msgid "Select the search option \"Size at least\""
-msgstr "অনুসন্ধান কৰ্মৰ \"ন্যূনতম মাপ\" বিকল্প নিৰ্বাচন কৰক"
+#: ../gsearchtool/gsearchtool.c:1853
+msgid "Error parsing the search command."
+msgstr "অনুসন্ধানৰ আদেশ পাৰ্স কৰিবলৈ সমস্যা ।"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:20
-msgid ""
-"This key determines if the \"Size at least\" search option is selected when "
-"the search tool is started."
-msgstr "\"ন্যূনতম মাপ\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+#: ../gsearchtool/gsearchtool.c:1885
+msgid "Error running the search command."
+msgstr "অনুসন্ধান কৰ্ম সংক্ৰান্ত আদেশ নিৰ্বাহ কৰিবলৈ সমস্যা ।"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:23
-msgid "Select the search option \"Size at most\""
-msgstr "অনুসন্ধান কৰ্মৰ \"সৰ্বাধিক মাপ\" বিকল্প নিৰ্বাচন কৰক"
+#: ../gsearchtool/gsearchtool.c:2008
+#, c-format
+msgid "Enter a text value for the \"%s\" search option."
+msgstr "অনুসন্ধান সংক্ৰান্ত \"%s\" বিকল্পৰ বাবে এটা টেক্সট মান লিখুন ।"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:24
-msgid ""
-"This key determines if the \"Size at most\" search option is selected when "
-"the search tool is started."
-msgstr "\"সৰ্বাধিক মাপ\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+#. Translators:  Below is a string displaying the search options name
+#. and unit value.  For example, "\"Date modified less than\" in days".
+#: ../gsearchtool/gsearchtool.c:2013
+#, c-format
+msgid "\"%s\" in %s"
+msgstr "\"%s\", %s-ত"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:27
-msgid "Select the search option \"File is empty\""
-msgstr "অনুসন্ধান কৰ্মৰ \"ৰিক্ত নথিপত্ৰ\" বিকল্প নিৰ্বাচন কৰক"
+#: ../gsearchtool/gsearchtool.c:2015
+#, c-format
+msgid "Enter a value in %s for the \"%s\" search option."
+msgstr "%s-ত, অনুসন্ধান কৰ্মৰ \"%s\" বিকল্পৰ বাবে মান লিখুন ।"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:28
-msgid ""
-"This key determines if the \"File is empty\" search option is selected when "
-"the search tool is started."
-msgstr "\"ৰিক্ত নথিপত্ৰ\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+#: ../gsearchtool/gsearchtool.c:2073
+#, c-format
+msgid "Remove \"%s\""
+msgstr "\"%s\" আঁতৰাওক"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:31
-msgid "Select the search option \"Owned by user\""
-msgstr "অনুসন্ধান কৰ্মৰ \"চিহ্নিত ব্যৱহাৰকৰ্তাৰ মালিকানাধীন\" বিকল্প নিৰ্বাচন কৰক"
+#: ../gsearchtool/gsearchtool.c:2074
+#, c-format
+msgid "Click to remove the \"%s\" search option."
+msgstr "ক্লিক কৰি অনুসন্ধান কৰ্মৰ \"%s\" বিকল্পটি আঁতৰাওক ।"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:32
-msgid ""
-"This key determines if the \"Owned by user\" search option is selected when "
-"the search tool is started."
-msgstr "\"চিহ্নিত ব্যৱহাৰকৰ্তাৰ মালিকানাধীন\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+#: ../gsearchtool/gsearchtool.c:2167
+msgid "A_vailable options:"
+msgstr "উপলব্ধ বিকল্প:(_v)"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:35
-msgid "Select the search option \"Owned by group\""
-msgstr "অনুসন্ধান কৰ্মৰ \"চিহ্নিত দলেৰ মালিকানাধীন\" বিকল্প নিৰ্বাচন কৰক"
+#: ../gsearchtool/gsearchtool.c:2196
+msgid "Available options"
+msgstr "উপলব্ধ বিকল্প"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:36
-msgid ""
-"This key determines if the \"Owned by group\" search option is selected when"
-" the search tool is started."
-msgstr "\"চিহ্নিত দলেৰ মালিকানাধীন\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+#: ../gsearchtool/gsearchtool.c:2197
+msgid "Select a search option from the drop-down list."
+msgstr "ড্ৰপ-ডাউন মেনুৰ পৰা অনুসন্ধান সংক্ৰান্ত এটা বিকল্প নিৰ্বাচন কৰক ।"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:39
-msgid "Select the search option \"Owner is unrecognized\""
-msgstr "অনুসন্ধান কৰ্মৰ \"অজ্ঞাত মালিকেৰ অধীন\" বিকল্প নিৰ্বাচন কৰক"
+#: ../gsearchtool/gsearchtool.c:2209
+msgid "Add search option"
+msgstr "অনুসন্ধান কৰ্ম সংক্ৰান্ত বিকল্প যোগ কৰক"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:40
-msgid ""
-"This key determines if the \"Owner is unrecognized\" search option is "
-"selected when the search tool is started."
-msgstr "\"অজ্ঞাত মালিকেৰ অধীনহ\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+#: ../gsearchtool/gsearchtool.c:2210
+msgid "Click to add the selected available search option."
+msgstr "ক্লিক কৰি অনুসন্ধান কৰ্ম সংক্ৰান্ত উপলব্ধ বিকল্পত নিৰ্বাচিত বিকল্প যোগ কৰক ।"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:43
-msgid "Select the search option \"Name does not contain\""
-msgstr "অনুসন্ধান কৰ্মৰ \"নামত অনুপস্থিত\" বিকল্প নিৰ্বাচন কৰক"
+#: ../gsearchtool/gsearchtool.c:2299
+msgid "S_earch results:"
+msgstr "অনুসন্ধানৰ ফলাফল: (_e)"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:44
-msgid ""
-"This key determines if the \"Name does not contain\" search option is "
-"selected when the search tool is started."
-msgstr "\"নামত অনুপস্থিত\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+#: ../gsearchtool/gsearchtool.c:2343
+msgid "List View"
+msgstr "তালিকা অনুসাৰে প্ৰদৰ্শন"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:47
-msgid "Select the search option \"Name matches regular expression\""
-msgstr "অনুসন্ধান কৰ্মৰ \"ৰেগুলাৰ এক্সপ্ৰেশনৰ সৈতে মেলানো নাম\" বিকল্প নিৰ্বাচন কৰক"
+#: ../gsearchtool/gsearchtool.c:2452
+msgid "Type"
+msgstr "ধৰন"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:48
-msgid ""
-"This key determines if the \"Name matches regular expression\" search option"
-" is selected when the search tool is started."
-msgstr "\"ৰেগুলাৰ এক্সপ্ৰেশনৰ সৈতে মেলানো নাম\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+#: ../gsearchtool/gsearchtool.c:2464
+msgid "Date Modified"
+msgstr "পৰিবৰ্তনৰ তাৰিখ"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:51
-msgid "Select the search option \"Show hidden files and folders\""
-msgstr "অনুসন্ধান কৰ্মৰ \"আড়াল কৰা নথিপত্ৰ আৰু ফোল্ডাৰ প্ৰদৰ্শন কৰা হ'ব\" বিকল্প নিৰ্বাচন কৰক"
+#: ../gsearchtool/gsearchtool.c:2799
+msgid "_Name contains:"
+msgstr "নাম (সম্পূৰ্ণ/আংশিক): (_N)"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:52
-msgid ""
-"This key determines if the \"Show hidden files and folders\" search option "
-"is selected when the search tool is started."
-msgstr "\"আড়াল কৰা নথিপত্ৰ আৰু ফোল্ডাৰ প্ৰদৰ্শন কৰা হ'ব\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+#: ../gsearchtool/gsearchtool.c:2813 ../gsearchtool/gsearchtool.c:2814
+msgid "Enter a filename or partial filename with or without wildcards."
+msgstr "ওয়াইল্ড-কাৰ্ড সহ/বিনা নথিপত্ৰৰ সম্পূৰ্ণ/আংশিক নাম লিখুন ।"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:55
-msgid "Select the search option \"Follow symbolic links\""
-msgstr "অনুসন্ধান কৰ্মৰ \"সিম্বলিক লিঙ্ক অনুসৰণ কৰা হ'ব\" বিকল্প নিৰ্বাচন কৰক"
+#: ../gsearchtool/gsearchtool.c:2814
+msgid "Name contains"
+msgstr "নামত উপস্থিত"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:56
-msgid ""
-"This key determines if the \"Follow symbolic links\" search option is "
-"selected when the search tool is started."
-msgstr "\"সিম্বলিক লিঙ্ক অনুসৰণ কৰা হ'ব\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা  অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+#: ../gsearchtool/gsearchtool.c:2820
+msgid "_Look in folder:"
+msgstr "চিহ্নিত ফোল্ডাৰে অনুসন্ধান কৰা হ'ব:(_L)"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:59
-msgid "Select the search option \"Exclude other filesystems\""
-msgstr "অনুসন্ধান কৰ্মৰ \"অন্যান্য নথিপত্ৰ-প্ৰণালী অন্তৰ্ভুক্ত কৰা হ'ব\" বিকল্প নিৰ্বাচন কৰক"
+#: ../gsearchtool/gsearchtool.c:2826
+msgid "Browse"
+msgstr "চৰক"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:60
-msgid ""
-"This key determines if the \"Exclude other filesystems\" search option is "
-"selected when the search tool is started."
-msgstr "\"অন্যান্য নথিপত্ৰ-প্ৰণালী অন্তৰ্ভুক্ত কৰা হ'ব\" অনুসন্ধান বিকল্প নিৰ্বাচিত হয় নে নহয় সেইট"
+#: ../gsearchtool/gsearchtool.c:2835
+msgid "Look in folder"
+msgstr "চিহ্নিত ফোল্ডাৰে অনুসন্ধান কৰা হ'ব"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:61
-msgid "Disable Quick Search"
-msgstr "ঝটপট অনুসন্ধান ব্যৱস্থা নিষ্ক্ৰিয় কৰা হ'ব"
+#: ../gsearchtool/gsearchtool.c:2835
+msgid "Select the folder or device from which you want to begin the search."
+msgstr "যে ফোল্ডাৰৰ পৰা আপুনি অনুসন্ধান শুৰু কৰিবলৈ ইচ্ছুক সেটিৰ নাম লিখুন ।"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:62
-msgid ""
-"This key determines if the search tool disables the use of the locate "
-"command when performing simple file name searches."
-msgstr "এই চাবি দ্বাৰা নিৰ্ধাৰিত হয় নথিপত্ৰৰ নাম অনুসাৰে সাধাৰণ অনুসন্ধানৰ সময় অনুসন্ধান ব্যৱস্থাৰ দ্বাৰা locate আদেশেৰ ব্যৱহাৰ নিষ্ক্ৰিয় কৰা হ'ব নে নহয় ।"
+#: ../gsearchtool/gsearchtool.c:2853
+msgid "Select more _options"
+msgstr "অতিৰিক্ত বিকল্প নিৰ্বাচন(_o)"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:63
-msgid "Quick Search Excluded Paths"
-msgstr "ঝটপট অনুসন্ধান কৰ্মে উপেক্ষিত পাথ"
+#: ../gsearchtool/gsearchtool.c:2862
+msgid "Select more options"
+msgstr "অতিৰিক্ত বিকল্প নিৰ্বাচন কৰক"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:64
-msgid ""
-"This key defines the paths the search tool will exclude from a quick search."
-" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
-"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-msgstr "এই চাবি দ্বাৰা ঝটপট অনুসন্ধান ব্যৱস্থায় বৰ্জিত পাথসমূহ নিৰ্ধাৰিত হয় । '*' আৰু '?' ওয়াইল্ড-কাৰ্ডসমূহ ব্যৱহাৰ কৰা সম্ভৱ হ'ব । অবিকল্পিত মান হল, /mnt/*, /media/*, /dev/*, /tmp/*, /pৰoc/* আৰু /vaৰ/* ।"
+#: ../gsearchtool/gsearchtool.c:2862
+msgid "Click to expand or collapse the list of available options."
+msgstr "উপলব্ধ বিকল্পৰ তালিকা প্ৰসাৰণ বা সঙ্কুচন কৰক ।"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:65
-msgid "Disable Quick Search Second Scan"
-msgstr "ঝটপট অনুসন্ধান আৰু দ্বিতীয় স্কেন ব্যৱস্থা নিষ্ক্ৰিয় কৰক"
+#: ../gsearchtool/gsearchtool.c:2886
+msgid "Click to display the help manual."
+msgstr "ক্লিক কৰি সহায়িকা প্ৰদৰ্শন কৰক ।"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:66
-msgid ""
-"This key determines if the search tool disables the use of the find command "
-"after performing a quick search."
-msgstr "এই চাবি দ্বাৰা নিৰ্ধাৰিত হয় ঝটপট অনুসন্ধানৰ পৰে অনুসন্ধান ব্যৱস্থাৰ দ্বাৰা find আদেশেৰ ব্যৱহাৰ নিষ্ক্ৰিয় কৰা হ'ব নে নহয় ।"
+#: ../gsearchtool/gsearchtool.c:2894
+msgid "Click to close \"Search for Files\"."
+msgstr "ক্লিক কৰি \"নথিপত্ৰ অনুসন্ধান\" বন্ধ কৰক ।"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:67
-msgid "Quick Search Second Scan Excluded Paths"
-msgstr "ঝটপট অনুসন্ধান আৰু দ্বিতীয় স্কেন কৰ্মে উপেক্ষিত পাথ"
+#: ../gsearchtool/gsearchtool.c:2920
+msgid "Click to perform a search."
+msgstr "অনুসন্ধান কৰিবলৈ ক্লিক কৰক ।"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:68
-msgid ""
-"This key defines the paths the search tool will exclude from a second scan "
-"when performing a quick search. The second scan uses the find command to "
-"search for files. The purpose of the second scan is to find files that have "
-"not been indexed. The wildcards '*' and '?' are supported. The default value"
-" is /."
-msgstr "এই চাবি দ্বাৰা ঝটপট অনুসন্ধান ব্যৱস্থায় দ্বিতীয় স্কেনৰ সময় উপেক্ষিত পাথসমূহ নিৰ্ধাৰিত হয় । দ্বিতীয় স্কেনৰ সময় find আদেশেৰ সাহায্যে নথিপত্ৰ অনুসন্ধান কৰা হয় । মূলত ইনডেক্স নকৰা নথিপত্ৰ এই পদ্ধতিতে অনুসন্ধান কৰা হয় । '*' আৰু '?' ওয়াইল্ড-কাৰ্ডসমূহ ব্যৱহাৰ কৰা সম্ভৱ হ'ব । অবিকল্পিত মান হল, / ।"
+#: ../gsearchtool/gsearchtool.c:2921
+msgid "Click to stop a search."
+msgstr "অনুসন্ধান থামাতে ক্লিক কৰক ।"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:69
-msgid "Search Result Columns Order"
-msgstr "বিচাৰক Columns"
+#: ../gsearchtool/gsearchtool.c:3015
+msgid "- the MATE Search Tool"
+msgstr "MATE বিচাৰক"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:70
-msgid ""
-"This key defines the order of the columns in the search results. This key "
-"should not be modified by the user."
-msgstr "মুঠ কলাম."
+#: ../gsearchtool/gsearchtool.c:3024
+#, c-format
+msgid "Failed to parse command line arguments: %s\n"
+msgstr ""
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:71
-msgid "Default Window Width"
-msgstr "উইন্ডোৰ প্ৰস্থেৰ অবিকল্পিত মাপ"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:72
-msgid ""
-"This key defines the window width, and it's used to remember the size of the"
-" search tool between sessions. Setting it to -1 will make the search tool "
-"use the default width."
-msgstr "আৰু মুঠ অবিকল্পিত."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:73
-msgid "Default Window Height"
-msgstr "উইন্ডোৰ উচ্চতাৰ অবিকল্পিত মাপ"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:74
-msgid ""
-"This key defines the window height, and it's used to remember the size of "
-"the search tool between sessions. Setting it to -1 will make the search tool"
-" use the default height."
-msgstr "আৰু মুঠ অবিকল্পিত."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:75
-msgid "Default Window Maximized"
-msgstr "অবিকল্পিত অবস্থায় উইন্ডো সৰ্বোচ্চ মাপে প্ৰদৰ্শিত"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:76
-msgid ""
-"This key determines if the search tool window starts in a maximized state."
-msgstr "এই চাবি দ্বাৰা নিৰ্ধাৰিত হয় প্ৰাৰম্ভসময়ত অনুসন্ধানব্যৱস্থাৰ উইন্ডোৰ ক্ষেত্ৰত সৰ্বোচ্চ মাপ প্ৰয়োগ কৰা হ'ব নে নহয় ।"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:77
-msgid "Look in Folder"
-msgstr "চিহ্নিত ফোল্ডাৰত অনুসন্ধান কৰা হ'ব"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:78
-msgid "This key defines the default value of the \"Look in Folder\" widget."
-msgstr "\"চিহ্নিত ফোল্ডাৰত অনুসন্ধান কৰা হ'ব\" উইজেটৰ অবিকল্পিত মান এই চাবি দ্বাৰা নিৰ্ধাৰিত হয় ।"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:194
+#: ../gsearchtool/gsearchtool-callbacks.c:198
 msgid "Could not open help document."
 msgstr "সহায়িকা প্ৰদৰ্শন কৰা নাযায় ।"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:345
+#: ../gsearchtool/gsearchtool-callbacks.c:349
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
 msgstr[0] "আপুনি নিশ্চিতৰূপে %d ডকুমেন্ট খুলিবলৈ ইচ্ছুক নে ?"
 msgstr[1] "আপুনি নিশ্চিতৰূপে %d ডকুমেন্ট খুলিবলৈ ইচ্ছুক নে ?"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:350
-#: ../gsearchtool/gsearchtool-callbacks.c:547
+#: ../gsearchtool/gsearchtool-callbacks.c:354
+#: ../gsearchtool/gsearchtool-callbacks.c:551
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
 msgstr[0] "এৰ ফলে %d পৃথক উইন্ডো খোলা হ'ব ।"
 msgstr[1] "এৰ ফলে %d পৃথক উইন্ডো খোলা হ'ব ।"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:390
+#: ../gsearchtool/gsearchtool-callbacks.c:394
 #, c-format
 msgid "Could not open document \"%s\"."
 msgstr "\"%s\" ডকুমেন্ট খোলা নাযায় ।"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:419
+#: ../gsearchtool/gsearchtool-callbacks.c:423
 #, c-format
 msgid "Could not open folder \"%s\"."
 msgstr "\"%s\" ফোল্ডাৰ খোলা নাযায় ।"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:427
+#: ../gsearchtool/gsearchtool-callbacks.c:431
 msgid "The caja file manager is not running."
 msgstr "Caja নথিপত্ৰ পৰিচালন ব্যৱস্থা বৰ্তমানে চলছে না ।"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:519
+#: ../gsearchtool/gsearchtool-callbacks.c:523
 msgid "There is no installed viewer capable of displaying the document."
 msgstr "ডকুমেন্ট প্ৰদৰ্শনৰ উদ্দেশ্যে কোনো যথাযত সামগ্ৰী ইনস্টল কৰা হয়নি ।"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:542
+#: ../gsearchtool/gsearchtool-callbacks.c:546
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
 msgstr[0] "আপুনি নিশ্চিতৰূপে %d ফোল্ডাৰ খুলিবলৈ ইচ্ছুক নে ?"
 msgstr[1] "আপুনি নিশ্চিতৰূপে %d ফোল্ডাৰ খুলিবলৈ ইচ্ছুক নে ?"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:695
+#: ../gsearchtool/gsearchtool-callbacks.c:699
 #, c-format
 msgid "Could not move \"%s\" to trash."
 msgstr "\"%s\" অবৰ্জনাৰ বক্সত আঁতৰুৱা নাযায় ।"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:726
+#: ../gsearchtool/gsearchtool-callbacks.c:730
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
 msgstr "আপুনি \"%s\" স্থায়ীৰূপে মুছে ফেলতে ইচ্ছুক নে ?"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:729
+#: ../gsearchtool/gsearchtool-callbacks.c:733
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
 msgstr "অবৰ্জনাৰ বাক্স উপলব্ধ নহয় । \"%s\" অবৰ্জনাৰ বক্সত আঁতৰুৱা নাযায় ।"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:768
+#: ../gsearchtool/gsearchtool-callbacks.c:772
 #, c-format
 msgid "Could not delete \"%s\"."
 msgstr "\"%s\" মুছে ফেলা নাযায় ।"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:879
+#: ../gsearchtool/gsearchtool-callbacks.c:884
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
 msgstr "\"%s\" মুছে ফেলতে ব্যৰ্থ: %s ।"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:891
+#: ../gsearchtool/gsearchtool-callbacks.c:896
 #, c-format
 msgid "Moving \"%s\" failed: %s."
 msgstr "\"%s\" সৰাতে ব্যৰ্থ: %s ।"
 
 #. Popup menu item: Open
-#: ../gsearchtool/gsearchtool-callbacks.c:1019
-#: ../gsearchtool/gsearchtool-callbacks.c:1049
+#: ../gsearchtool/gsearchtool-callbacks.c:1024
+#: ../gsearchtool/gsearchtool-callbacks.c:1054
 msgid "_Open"
 msgstr "খোলো (_O)"
 
 #. Popup menu item: Open with (default)
-#: ../gsearchtool/gsearchtool-callbacks.c:1074
+#: ../gsearchtool/gsearchtool-callbacks.c:1079
 #, c-format
 msgid "_Open with %s"
 msgstr "%s ৰ সহায়ত খোলক (_O)"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1108
+#: ../gsearchtool/gsearchtool-callbacks.c:1114
 #, c-format
 msgid "Open with %s"
 msgstr "%s ৰ সহায়ত খোলক"
 
 #. Popup menu item: Open With
-#: ../gsearchtool/gsearchtool-callbacks.c:1140
+#: ../gsearchtool/gsearchtool-callbacks.c:1147
 msgid "Open Wit_h"
 msgstr "উল্লিখিত প্ৰোগ্ৰামৰ সহায়ত সঞ্চালিত (_h)"
 
-#. Popup menu item: Open Folder
-#: ../gsearchtool/gsearchtool-callbacks.c:1185
-msgid "Open _Folder"
-msgstr "ফোল্ডাৰ খোলক (_O)"
+#. Popup menu item: Open Containing Folder
+#: ../gsearchtool/gsearchtool-callbacks.c:1192
+msgid "Open Containing _Folder"
+msgstr ""
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1225
+#: ../gsearchtool/gsearchtool-callbacks.c:1232
 msgid "_Save Results As..."
 msgstr "নতুন ৰূপে ফলাফল সংৰক্ষণ কৰক(_S)..."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1607
+#: ../gsearchtool/gsearchtool-callbacks.c:1614
 msgid "Save Search Results As..."
 msgstr "অনুসন্ধানৰ ফলাফল নতুন ৰূপে সংৰক্ষণ..."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1638
+#: ../gsearchtool/gsearchtool-callbacks.c:1643
 msgid "Could not save document."
 msgstr "ডকুমেন্ট সংৰক্ষণ কৰিবলৈ ব্যৰ্থ ।"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1639
+#: ../gsearchtool/gsearchtool-callbacks.c:1644
 msgid "You did not select a document name."
 msgstr "ডকুমেন্টৰ কোনো নাম নিৰ্বাচন কৰা হয়নি ।"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1669
+#: ../gsearchtool/gsearchtool-callbacks.c:1674
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr "\"%s\" ডকুমেন্ট \"%s\" ত সংৰক্ষণ কৰা নাযায় ।"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1703
+#: ../gsearchtool/gsearchtool-callbacks.c:1707
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr "\"%s\" ডকুমেন্টটি বৰ্তমানে উপস্থিত আছে ।  আপুনি ইয়াক মুছে নতুন ডকুমেন্ট স্থাপন কৰিবলৈ ইচ্ছুক নে ?"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1707
+#: ../gsearchtool/gsearchtool-callbacks.c:1711
 msgid "If you replace an existing file, its contents will be overwritten."
 msgstr "উপস্থিত কোনো নথিপত্ৰৰ পৰিবৰ্তে নতুন নথিপত্ৰ স্থাপন কৰা হলে পুৰোনো নথিপত্ৰৰ বিষয়বস্তু মুছে ফেলা হ'ব ।"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1772
+#: ../gsearchtool/gsearchtool-callbacks.c:1775
 msgid "The document name you selected is a folder."
 msgstr "আপোনাৰ নিৰ্বাচিত ডকুমেন্ট মূলত এটা ফোল্ডাৰ ।"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1810
+#: ../gsearchtool/gsearchtool-callbacks.c:1811
 msgid "You may not have write permissions to the document."
 msgstr "সম্ভৱত ডকুমেন্টে লেখাৰ অনুমতি আপোনাৰ নাই ।"
-
-#: ../gsearchtool/gsearchtool-support.c:63
-#, c-format
-msgid ""
-"MateConf error:\n"
-"  %s"
-msgstr "MateConf ত্ৰুটি:\n  %s"
 
 #. Translators:  Below are the strings displayed in the 'Date Modified'
 #. column of the list view.  The format of this string can vary depending
 #. on age of a file.  Please modify the format of the timestamp to match
 #. your locale.  For example, to display 24 hour time replace the '%-I'
 #. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: ../gsearchtool/gsearchtool-support.c:696
+#: ../gsearchtool/gsearchtool-support.c:448
 msgid "today at %-I:%M %p"
 msgstr "%-I:%M %p আজ"
 
-#: ../gsearchtool/gsearchtool-support.c:698
+#: ../gsearchtool/gsearchtool-support.c:450
 msgid "yesterday at %-I:%M %p"
 msgstr "%-I:%M %p গতকাল"
 
-#: ../gsearchtool/gsearchtool-support.c:700
-#: ../gsearchtool/gsearchtool-support.c:702
+#: ../gsearchtool/gsearchtool-support.c:452
+#: ../gsearchtool/gsearchtool-support.c:454
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
 msgstr "%A, %B %-d %Y at %-I:%M:%S %p"
 
-#: ../gsearchtool/gsearchtool-support.c:889
+#: ../gsearchtool/gsearchtool-support.c:641
 msgid "link (broken)"
 msgstr "লিঙ্ক (ক্ষতিগ্ৰস্ত)"
 
-#: ../gsearchtool/gsearchtool-support.c:893
+#: ../gsearchtool/gsearchtool-support.c:645
 #, c-format
 msgid "link to %s"
 msgstr "%s-ৰ লিঙ্ক"
@@ -2382,14 +2381,13 @@ msgstr "%s-ৰ লিঙ্ক"
 #. Localizers:
 #. * Feel free to leave out the st, nd, rd and th suffix or
 #. * make some or all of them match.
-#. 
 #. localizers: tag used to detect the first copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1495
+#: ../gsearchtool/gsearchtool-support.c:1257
 msgid " (copy)"
 msgstr " (copy)"
 
 #. localizers: tag used to detect the second copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1497
+#: ../gsearchtool/gsearchtool-support.c:1259
 msgid " (another copy)"
 msgstr " (another copy)"
 
@@ -2397,36 +2395,36 @@ msgstr " (another copy)"
 #. localizers: tag used to detect the x12th copy of a file
 #. localizers: tag used to detect the x13th copy of a file
 #. localizers: tag used to detect the xxth copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1500
-#: ../gsearchtool/gsearchtool-support.c:1502
-#: ../gsearchtool/gsearchtool-support.c:1504
-#: ../gsearchtool/gsearchtool-support.c:1514
+#: ../gsearchtool/gsearchtool-support.c:1262
+#: ../gsearchtool/gsearchtool-support.c:1264
+#: ../gsearchtool/gsearchtool-support.c:1266
+#: ../gsearchtool/gsearchtool-support.c:1276
 msgid "th copy)"
 msgstr "th copy)"
 
 #. localizers: tag used to detect the x1st copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1507
+#: ../gsearchtool/gsearchtool-support.c:1269
 msgid "st copy)"
 msgstr "st copy)"
 
 #. localizers: tag used to detect the x2nd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1509
+#: ../gsearchtool/gsearchtool-support.c:1271
 msgid "nd copy)"
 msgstr "nd copy)"
 
 #. localizers: tag used to detect the x3rd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1511
+#: ../gsearchtool/gsearchtool-support.c:1273
 msgid "rd copy)"
 msgstr "rd copy)"
 
 #. localizers: appended to first file copy
-#: ../gsearchtool/gsearchtool-support.c:1528
+#: ../gsearchtool/gsearchtool-support.c:1290
 #, c-format
 msgid "%s (copy)%s"
 msgstr "%s (copy)%s"
 
 #. localizers: appended to second file copy
-#: ../gsearchtool/gsearchtool-support.c:1530
+#: ../gsearchtool/gsearchtool-support.c:1292
 #, c-format
 msgid "%s (another copy)%s"
 msgstr "%s (another copy)%s"
@@ -2435,396 +2433,235 @@ msgstr "%s (another copy)%s"
 #. localizers: appended to x12th file copy
 #. localizers: appended to x13th file copy
 #. localizers: appended to xxth file copy
-#: ../gsearchtool/gsearchtool-support.c:1533
-#: ../gsearchtool/gsearchtool-support.c:1535
-#: ../gsearchtool/gsearchtool-support.c:1537
-#: ../gsearchtool/gsearchtool-support.c:1546
+#: ../gsearchtool/gsearchtool-support.c:1295
+#: ../gsearchtool/gsearchtool-support.c:1297
+#: ../gsearchtool/gsearchtool-support.c:1299
+#: ../gsearchtool/gsearchtool-support.c:1308
 #, c-format
 msgid "%s (%dth copy)%s"
 msgstr "%s (%dth copy)%s"
 
 #. localizers: appended to x1st file copy
-#: ../gsearchtool/gsearchtool-support.c:1540
+#: ../gsearchtool/gsearchtool-support.c:1302
 #, c-format
 msgid "%s (%dst copy)%s"
 msgstr "%s (%dst copy)%s"
 
 #. localizers: appended to x2nd file copy
-#: ../gsearchtool/gsearchtool-support.c:1542
+#: ../gsearchtool/gsearchtool-support.c:1304
 #, c-format
 msgid "%s (%dnd copy)%s"
 msgstr "%s (%dnd copy)%s"
 
 #. localizers: appended to x3rd file copy
-#: ../gsearchtool/gsearchtool-support.c:1544
+#: ../gsearchtool/gsearchtool-support.c:1306
 #, c-format
 msgid "%s (%drd copy)%s"
 msgstr "%s (%drd copy)%s"
 
-#: ../gsearchtool/gsearchtool-support.c:1591
+#: ../gsearchtool/gsearchtool-support.c:1353
 msgid " (invalid Unicode)"
 msgstr " (অবৈধ ইউনিকোড)"
 
 #. localizers: opening parentheses to match the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1680
+#: ../gsearchtool/gsearchtool-support.c:1442
 msgid " ("
 msgstr " ("
 
 #. localizers: opening parentheses of the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1688
+#: ../gsearchtool/gsearchtool-support.c:1450
 #, c-format
 msgid " (%d"
 msgstr " (%d"
 
-#: ../gsearchtool/gsearchtool.c:80
-msgid "Contains the _text"
-msgstr "চিহ্নিত লেখাসহ(_t)"
-
-#: ../gsearchtool/gsearchtool.c:82
-msgid "_Date modified less than"
-msgstr "সৰ্বশেষ পৰিবৰ্তনৰ তাৰিখ চিহ্নিত সংখ্যাত(_D)"
-
-#: ../gsearchtool/gsearchtool.c:82 ../gsearchtool/gsearchtool.c:83
-msgid "days"
-msgstr "দিন"
-
-#: ../gsearchtool/gsearchtool.c:83
-msgid "Date modified more than"
-msgstr "সৰ্বশেষ পৰিবৰ্তনৰ তাৰিখ চিহ্নিত সংখ্যাৰ ঊৰ্ধ্বে"
-
-#: ../gsearchtool/gsearchtool.c:85
-msgid "S_ize at least"
-msgstr "ন্যূনতম মাপ(_i)"
-
-#: ../gsearchtool/gsearchtool.c:85 ../gsearchtool/gsearchtool.c:86
-msgid "kilobytes"
-msgstr "চাবিলোবাইট"
-
-#: ../gsearchtool/gsearchtool.c:86
-msgid "Si_ze at most"
-msgstr "সৰ্বাধিক মাপ(_z)"
-
-#: ../gsearchtool/gsearchtool.c:87
-msgid "File is empty"
-msgstr "ৰিক্ত নথিপত্ৰ"
-
-#: ../gsearchtool/gsearchtool.c:89
-msgid "Owned by _user"
-msgstr "চিহ্নিত ব্যৱহাৰকৰ্তাৰ মালিকানাধীন(_u)"
-
-#: ../gsearchtool/gsearchtool.c:90
-msgid "Owned by _group"
-msgstr "চিহ্নিত দলেৰ মালিকানাধীন(_g)"
-
-#: ../gsearchtool/gsearchtool.c:91
-msgid "Owner is unrecognized"
-msgstr "অজ্ঞাত মালিকেৰ অধীন"
-
-#: ../gsearchtool/gsearchtool.c:93
-msgid "Na_me does not contain"
-msgstr "নামত অনুপস্থিত(_m)"
-
-#: ../gsearchtool/gsearchtool.c:94
-msgid "Name matches regular e_xpression"
-msgstr "ৰেগুলাৰ এক্সপ্ৰেশনৰ সৈতে মেলানো নাম(_x)"
-
-#: ../gsearchtool/gsearchtool.c:96
-msgid "Show hidden and backup files"
-msgstr "আড়াল কৰা আৰু ব্যাক-আপ নথিপত্ৰ প্ৰদৰ্শন কৰা হ'ব"
-
-#: ../gsearchtool/gsearchtool.c:97
-msgid "Follow symbolic links"
-msgstr "সিম্বলিক লিঙ্ক অনুসৰণ কৰা হ'ব"
-
-#: ../gsearchtool/gsearchtool.c:98
-msgid "Exclude other filesystems"
-msgstr "অন্যান্য নথিপত্ৰ-প্ৰণালী অন্তৰ্ভুক্ত কৰা ন'হ'ব"
-
-#: ../gsearchtool/gsearchtool.c:156
-msgid "Show version of the application"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:1
+msgid "Search history"
 msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:157 ../gsearchtool/gsearchtool.c:162
-#: ../gsearchtool/gsearchtool.c:171
-msgid "STRING"
-msgstr "STRING"
-
-#: ../gsearchtool/gsearchtool.c:158
-msgid "PATH"
-msgstr "PATH"
-
-#: ../gsearchtool/gsearchtool.c:159
-msgid "VALUE"
-msgstr "VALUE"
-
-#: ../gsearchtool/gsearchtool.c:163 ../gsearchtool/gsearchtool.c:164
-msgid "DAYS"
-msgstr "DAYS"
-
-#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
-msgid "KILOBYTES"
-msgstr "KILOBYTES"
-
-#: ../gsearchtool/gsearchtool.c:168
-msgid "USER"
-msgstr "USER"
-
-#: ../gsearchtool/gsearchtool.c:169
-msgid "GROUP"
-msgstr "GROUP"
-
-#: ../gsearchtool/gsearchtool.c:172
-msgid "PATTERN"
-msgstr "PATTERN"
-
-#: ../gsearchtool/gsearchtool.c:383
-msgid "A locate database has probably not been created."
-msgstr "সম্ভৱত অনুসন্ধান স্থানৰ ডাটাবেস নিৰ্মিত হয়নি ।"
-
-#: ../gsearchtool/gsearchtool.c:485
-#, c-format
-msgid "Character set conversion failed for \"%s\""
-msgstr "\"%s\"-ৰ ক্ষেত্ৰত অক্ষৰ সংকলন ৰূপান্তৰ কৰ্ম ব্যৰ্থ"
-
-#: ../gsearchtool/gsearchtool.c:509
-msgid "Searching..."
-msgstr "অনুসন্ধান কৰা হৈছে..."
-
-#: ../gsearchtool/gsearchtool.c:509 ../gsearchtool/gsearchtool.c:1015
-#: ../gsearchtool/gsearchtool.c:2988
-msgid "Search for Files"
-msgstr "নথিপত্ৰ অনুসন্ধান"
-
-#: ../gsearchtool/gsearchtool.c:961 ../gsearchtool/gsearchtool.c:990
-msgid "No files found"
-msgstr "এটাও নথিপত্ৰ পোৱা নাযায়"
-
-#: ../gsearchtool/gsearchtool.c:983
-msgid "(stopped)"
-msgstr "(স্থগিত)"
-
-#: ../gsearchtool/gsearchtool.c:989
-msgid "No Files Found"
-msgstr "এটাও নথিপত্ৰ পোৱা নাযায়"
-
-#: ../gsearchtool/gsearchtool.c:994
-#, c-format
-msgid "%'d File Found"
-msgid_plural "%'d Files Found"
-msgstr[0] "%'d নথিপত্ৰ পোৱা গৈছে"
-msgstr[1] "%'d নথিপত্ৰ পোৱা গৈছে"
-
-#: ../gsearchtool/gsearchtool.c:998 ../gsearchtool/gsearchtool.c:1036
-#, c-format
-msgid "%'d file found"
-msgid_plural "%'d files found"
-msgstr[0] "%'d নথিপত্ৰ পোৱা গৈছে"
-msgstr[1] "%d নথিপত্ৰ পোৱা গৈছে"
-
-#: ../gsearchtool/gsearchtool.c:1127
-msgid "Entry changed called for a non entry option!"
-msgstr "এন্ট্ৰিবিহীন বিকল্পৰ এন্ট্ৰি পৰিবৰ্তনৰ প্ৰচেষ্টা কৰা হৈছে!"
-
-#: ../gsearchtool/gsearchtool.c:1287
-msgid "Set the text of \"Name contains\" search option"
-msgstr "অনুসন্ধান কৰ্মৰ \"নামত উপস্থিত\" বিকল্পৰ টেক্সট লিখুন"
-
-#: ../gsearchtool/gsearchtool.c:1288
-msgid "Set the text of \"Look in folder\" search option"
-msgstr "অনুসন্ধান কৰ্মৰ \"চিহ্নিত ফোল্ডাৰে অনুসন্ধান কৰা হ'ব\" বিকল্পৰ টেক্সট লিখুন"
-
-#: ../gsearchtool/gsearchtool.c:1289
-msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "নথিপত্ৰসমূহ উল্লিখিত বিষয়েৰ যে কোনো এটা ক্ৰমে বিন্যাস কৰা হ'ব: নাম,ফোল্ডাৰ,মাপ,ধৰন বা তাৰিখ"
-
-#: ../gsearchtool/gsearchtool.c:1290
-msgid "Set sort order to descending, the default is ascending"
-msgstr "বড়ৰ পৰা ছোট মান অনুসাৰে বিন্যাস কৰা হ'ব, অবিকল্পিত ক্ৰম ছোটৰ পৰা বড়"
-
-#: ../gsearchtool/gsearchtool.c:1291
-msgid "Automatically start a search"
-msgstr "স্বয়ংক্ৰিয়ভাবে অনুসন্ধান আৰম্ভ কৰা হ'ব"
-
-#: ../gsearchtool/gsearchtool.c:1297
-#, c-format
-msgid "Select the \"%s\" search option"
-msgstr "অনুসন্ধান কৰ্মে \"%s\" বিকল্প নিৰ্বাচন কৰা হ'ব"
-
-#: ../gsearchtool/gsearchtool.c:1300
-#, c-format
-msgid "Select and set the \"%s\" search option"
-msgstr "অনুসন্ধান কৰ্মৰ \"%s\" বিকল্প নিৰ্বাচন কৰি স্থাপন কৰক"
-
-#: ../gsearchtool/gsearchtool.c:1407
-msgid "Invalid option passed to sortby command line argument."
-msgstr "soৰtby আদেশ শাৰী তৰ্কে অবৈধ বিকল্প প্ৰৰিত হৈছে ।"
-
-#: ../gsearchtool/gsearchtool.c:1701
-msgid ""
-"\n"
-"... Too many errors to display ..."
-msgstr "\n... অত্যাধিক ত্ৰুটিৰ ফলে বিৱৰণ প্ৰদৰ্শনে সমস্যা ..."
-
-#: ../gsearchtool/gsearchtool.c:1715
-msgid ""
-"The search results may be invalid.  There were errors while performing this "
-"search."
-msgstr "অনুসন্ধানৰ ফলাফল সম্ভৱত বৈধ নহয় ।  অনুসন্ধান চলাকালীন চাবিছু সমস্যা উৎ‌পন্ন হয়েছিল ।"
-
-#: ../gsearchtool/gsearchtool.c:1727 ../gsearchtool/gsearchtool.c:1771
-msgid "Show more _details"
-msgstr "অতিৰিক্ত বিৱৰণ প্ৰদৰ্শন কৰা হ'ব (_d)"
-
-#: ../gsearchtool/gsearchtool.c:1757
-msgid ""
-"The search results may be out of date or invalid.  Do you want to disable "
-"the quick search feature?"
-msgstr "অনুসন্ধানৰ ফলাফল অচল বা অবৈধ হওয়াৰ সম্ভাবনা আছে ।  আপুনি ঝটপট অনুসন্ধান ব্যৱস্থা নিষ্ক্ৰিয় কৰিবলৈ ইচ্ছুক নে ?"
-
-#: ../gsearchtool/gsearchtool.c:1782
-msgid "Disable _Quick Search"
-msgstr "ঝটপট অনুসন্ধান ব্যৱস্থা নিষ্ক্ৰিয় কৰক (_Q)"
-
-#: ../gsearchtool/gsearchtool.c:1809
-#, c-format
-msgid "Failed to set process group id of child %d: %s.\n"
-msgstr "চাইল্ড %d-ৰ বাবে প্ৰসেস গ্ৰুপ id স্থাপন কৰিবলৈ ব্যৰ্থ: %s ।\n"
-
-#: ../gsearchtool/gsearchtool.c:1834
-msgid "Error parsing the search command."
-msgstr "অনুসন্ধানৰ আদেশ পাৰ্স কৰিবলৈ সমস্যা ।"
-
-#: ../gsearchtool/gsearchtool.c:1867
-msgid "Error running the search command."
-msgstr "অনুসন্ধান কৰ্ম সংক্ৰান্ত আদেশ নিৰ্বাহ কৰিবলৈ সমস্যা ।"
-
-#: ../gsearchtool/gsearchtool.c:1987
-#, c-format
-msgid "Enter a text value for the \"%s\" search option."
-msgstr "অনুসন্ধান সংক্ৰান্ত \"%s\" বিকল্পৰ বাবে এটা টেক্সট মান লিখুন ।"
-
-#. Translators:  Below is a string displaying the search options name
-#. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:1992
-#, c-format
-msgid "\"%s\" in %s"
-msgstr "\"%s\", %s-ত"
-
-#: ../gsearchtool/gsearchtool.c:1994
-#, c-format
-msgid "Enter a value in %s for the \"%s\" search option."
-msgstr "%s-ত, অনুসন্ধান কৰ্মৰ \"%s\" বিকল্পৰ বাবে মান লিখুন ।"
-
-#: ../gsearchtool/gsearchtool.c:2052
-#, c-format
-msgid "Remove \"%s\""
-msgstr "\"%s\" আঁতৰাওক"
-
-#: ../gsearchtool/gsearchtool.c:2053
-#, c-format
-msgid "Click to remove the \"%s\" search option."
-msgstr "ক্লিক কৰি অনুসন্ধান কৰ্মৰ \"%s\" বিকল্পটি আঁতৰাওক ।"
-
-#: ../gsearchtool/gsearchtool.c:2146
-msgid "A_vailable options:"
-msgstr "উপলব্ধ বিকল্প:(_v)"
-
-#: ../gsearchtool/gsearchtool.c:2175
-msgid "Available options"
-msgstr "উপলব্ধ বিকল্প"
-
-#: ../gsearchtool/gsearchtool.c:2176
-msgid "Select a search option from the drop-down list."
-msgstr "ড্ৰপ-ডাউন মেনুৰ পৰা অনুসন্ধান সংক্ৰান্ত এটা বিকল্প নিৰ্বাচন কৰক ।"
-
-#: ../gsearchtool/gsearchtool.c:2188
-msgid "Add search option"
-msgstr "অনুসন্ধান কৰ্ম সংক্ৰান্ত বিকল্প যোগ কৰক"
-
-#: ../gsearchtool/gsearchtool.c:2189
-msgid "Click to add the selected available search option."
-msgstr "ক্লিক কৰি অনুসন্ধান কৰ্ম সংক্ৰান্ত উপলব্ধ বিকল্পত নিৰ্বাচিত বিকল্প যোগ কৰক ।"
-
-#: ../gsearchtool/gsearchtool.c:2278
-msgid "S_earch results:"
-msgstr "অনুসন্ধানৰ ফলাফল: (_e)"
-
-#: ../gsearchtool/gsearchtool.c:2322
-msgid "List View"
-msgstr "তালিকা অনুসাৰে প্ৰদৰ্শন"
-
-#: ../gsearchtool/gsearchtool.c:2431
-msgid "Type"
-msgstr "ধৰন"
-
-#: ../gsearchtool/gsearchtool.c:2443
-msgid "Date Modified"
-msgstr "পৰিবৰ্তনৰ তাৰিখ"
-
-#: ../gsearchtool/gsearchtool.c:2759
-msgid "_Name contains:"
-msgstr "নাম (সম্পূৰ্ণ/আংশিক): (_N)"
-
-#: ../gsearchtool/gsearchtool.c:2773 ../gsearchtool/gsearchtool.c:2774
-msgid "Enter a filename or partial filename with or without wildcards."
-msgstr "ওয়াইল্ড-কাৰ্ড সহ/বিনা নথিপত্ৰৰ সম্পূৰ্ণ/আংশিক নাম লিখুন ।"
-
-#: ../gsearchtool/gsearchtool.c:2774
-msgid "Name contains"
-msgstr "নামত উপস্থিত"
-
-#: ../gsearchtool/gsearchtool.c:2780
-msgid "_Look in folder:"
-msgstr "চিহ্নিত ফোল্ডাৰে অনুসন্ধান কৰা হ'ব:(_L)"
-
-#: ../gsearchtool/gsearchtool.c:2786
-msgid "Browse"
-msgstr "চৰক"
-
-#: ../gsearchtool/gsearchtool.c:2795
-msgid "Look in folder"
-msgstr "চিহ্নিত ফোল্ডাৰে অনুসন্ধান কৰা হ'ব"
-
-#: ../gsearchtool/gsearchtool.c:2795
-msgid "Select the folder or device from which you want to begin the search."
-msgstr "যে ফোল্ডাৰৰ পৰা আপুনি অনুসন্ধান শুৰু কৰিবলৈ ইচ্ছুক সেটিৰ নাম লিখুন ।"
-
-#: ../gsearchtool/gsearchtool.c:2813
-msgid "Select more _options"
-msgstr "অতিৰিক্ত বিকল্প নিৰ্বাচন(_o)"
-
-#: ../gsearchtool/gsearchtool.c:2822
-msgid "Select more options"
-msgstr "অতিৰিক্ত বিকল্প নিৰ্বাচন কৰক"
-
-#: ../gsearchtool/gsearchtool.c:2822
-msgid "Click to expand or collapse the list of available options."
-msgstr "উপলব্ধ বিকল্পৰ তালিকা প্ৰসাৰণ বা সঙ্কুচন কৰক ।"
-
-#: ../gsearchtool/gsearchtool.c:2846
-msgid "Click to display the help manual."
-msgstr "ক্লিক কৰি সহায়িকা প্ৰদৰ্শন কৰক ।"
-
-#: ../gsearchtool/gsearchtool.c:2854
-msgid "Click to close \"Search for Files\"."
-msgstr "ক্লিক কৰি \"নথিপত্ৰ অনুসন্ধান\" বন্ধ কৰক ।"
-
-#: ../gsearchtool/gsearchtool.c:2880
-msgid "Click to perform a search."
-msgstr "অনুসন্ধান কৰিবলৈ ক্লিক কৰক ।"
-
-#: ../gsearchtool/gsearchtool.c:2881
-msgid "Click to stop a search."
-msgstr "অনুসন্ধান থামাতে ক্লিক কৰক ।"
-
-#: ../gsearchtool/gsearchtool.c:2973
-msgid "- the MATE Search Tool"
-msgstr "MATE বিচাৰক"
-
-#: ../gsearchtool/gsearchtool.c:2982
-#, c-format
-msgid "Failed to parse command line arguments: %s\n"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:2
+msgid "This key defines the items which were searched for in the past."
 msgstr ""
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:3
+msgid "Show Additional Options"
+msgstr "অতিৰিক্ত বিকল্প প্ৰদৰ্শন কৰা হ'ব"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:4
+msgid "Disable Quick Search"
+msgstr "ঝটপট অনুসন্ধান ব্যৱস্থা নিষ্ক্ৰিয় কৰা হ'ব"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:5
+msgid ""
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
+msgstr "এই চাবি দ্বাৰা নিৰ্ধাৰিত হয় নথিপত্ৰৰ নাম অনুসাৰে সাধাৰণ অনুসন্ধানৰ সময় অনুসন্ধান ব্যৱস্থাৰ দ্বাৰা locate আদেশেৰ ব্যৱহাৰ নিষ্ক্ৰিয় কৰা হ'ব নে নহয় ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:6
+msgid "Quick Search Excluded Paths"
+msgstr "ঝটপট অনুসন্ধান কৰ্মে উপেক্ষিত পাথ"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:7
+msgid ""
+"This key defines the paths the search tool will exclude from a quick search."
+" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
+"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
+msgstr "এই চাবি দ্বাৰা ঝটপট অনুসন্ধান ব্যৱস্থায় বৰ্জিত পাথসমূহ নিৰ্ধাৰিত হয় । '*' আৰু '?' ওয়াইল্ড-কাৰ্ডসমূহ ব্যৱহাৰ কৰা সম্ভৱ হ'ব । অবিকল্পিত মান হল, /mnt/*, /media/*, /dev/*, /tmp/*, /pৰoc/* আৰু /vaৰ/* ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:8
+msgid "Disable Quick Search Second Scan"
+msgstr "ঝটপট অনুসন্ধান আৰু দ্বিতীয় স্কেন ব্যৱস্থা নিষ্ক্ৰিয় কৰক"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:9
+msgid ""
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
+msgstr "এই চাবি দ্বাৰা নিৰ্ধাৰিত হয় ঝটপট অনুসন্ধানৰ পৰে অনুসন্ধান ব্যৱস্থাৰ দ্বাৰা find আদেশেৰ ব্যৱহাৰ নিষ্ক্ৰিয় কৰা হ'ব নে নহয় ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:10
+msgid "Quick Search Second Scan Excluded Paths"
+msgstr "ঝটপট অনুসন্ধান আৰু দ্বিতীয় স্কেন কৰ্মে উপেক্ষিত পাথ"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:11
+msgid ""
+"This key defines the paths the search tool will exclude from a second scan "
+"when performing a quick search. The second scan uses the find command to "
+"search for files. The purpose of the second scan is to find files that have "
+"not been indexed. The wildcards '*' and '?' are supported. The default value"
+" is /."
+msgstr "এই চাবি দ্বাৰা ঝটপট অনুসন্ধান ব্যৱস্থায় দ্বিতীয় স্কেনৰ সময় উপেক্ষিত পাথসমূহ নিৰ্ধাৰিত হয় । দ্বিতীয় স্কেনৰ সময় find আদেশেৰ সাহায্যে নথিপত্ৰ অনুসন্ধান কৰা হয় । মূলত ইনডেক্স নকৰা নথিপত্ৰ এই পদ্ধতিতে অনুসন্ধান কৰা হয় । '*' আৰু '?' ওয়াইল্ড-কাৰ্ডসমূহ ব্যৱহাৰ কৰা সম্ভৱ হ'ব । অবিকল্পিত মান হল, / ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:12
+msgid "Search Result Columns Order"
+msgstr "বিচাৰক Columns"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:13
+msgid ""
+"This key defines the order of the columns in the search results. This key "
+"should not be modified by the user."
+msgstr "মুঠ কলাম."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:14
+msgid "Default Window Width"
+msgstr "উইন্ডোৰ প্ৰস্থেৰ অবিকল্পিত মাপ"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:15
+msgid ""
+"This key defines the window width, and it's used to remember the size of the"
+" search tool between sessions. Setting it to -1 will make the search tool "
+"use the default width."
+msgstr "আৰু মুঠ অবিকল্পিত."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:16
+msgid "Default Window Height"
+msgstr "উইন্ডোৰ উচ্চতাৰ অবিকল্পিত মাপ"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:17
+msgid ""
+"This key defines the window height, and it's used to remember the size of "
+"the search tool between sessions. Setting it to -1 will make the search tool"
+" use the default height."
+msgstr "আৰু মুঠ অবিকল্পিত."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:18
+msgid "Default Window Maximized"
+msgstr "অবিকল্পিত অবস্থায় উইন্ডো সৰ্বোচ্চ মাপে প্ৰদৰ্শিত"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:19
+msgid ""
+"This key determines if the search tool window starts in a maximized state."
+msgstr "এই চাবি দ্বাৰা নিৰ্ধাৰিত হয় প্ৰাৰম্ভসময়ত অনুসন্ধানব্যৱস্থাৰ উইন্ডোৰ ক্ষেত্ৰত সৰ্বোচ্চ মাপ প্ৰয়োগ কৰা হ'ব নে নহয় ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:20
+msgid "Look in Folder"
+msgstr "চিহ্নিত ফোল্ডাৰত অনুসন্ধান কৰা হ'ব"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:21
+msgid "This key defines the default value of the \"Look in Folder\" widget."
+msgstr "\"চিহ্নিত ফোল্ডাৰত অনুসন্ধান কৰা হ'ব\" উইজেটৰ অবিকল্পিত মান এই চাবি দ্বাৰা নিৰ্ধাৰিত হয় ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:22
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr "\"চিহ্নিত লেখাসহ\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:23
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
+msgstr "\"সৰ্বশেষ পৰিবৰ্তনৰ তাৰিখ চিহ্নিত সংখ্যাত\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে চাবি না তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:24
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
+msgstr "\"সৰ্বশেষ পৰিবৰ্তনৰ তাৰিখ চিহ্নিত সংখ্যাৰ ঊৰ্ধ্বে\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে চাবি না তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:25
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr "\"ন্যূনতম মাপ\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:26
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
+msgstr "\"সৰ্বাধিক মাপ\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:27
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
+msgstr "\"ৰিক্ত নথিপত্ৰ\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:28
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
+msgstr "\"চিহ্নিত ব্যৱহাৰকৰ্তাৰ মালিকানাধীন\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:29
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when"
+" the search tool is started."
+msgstr "\"চিহ্নিত দলেৰ মালিকানাধীন\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:30
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
+msgstr "\"অজ্ঞাত মালিকেৰ অধীনহ\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:31
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr "\"নামত অনুপস্থিত\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:32
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option"
+" is selected when the search tool is started."
+msgstr "\"ৰেগুলাৰ এক্সপ্ৰেশনৰ সৈতে মেলানো নাম\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:33
+msgid ""
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
+msgstr "\"আড়াল কৰা নথিপত্ৰ আৰু ফোল্ডাৰ প্ৰদৰ্শন কৰা হ'ব\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:34
+msgid ""
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr "\"সিম্বলিক লিঙ্ক অনুসৰণ কৰা হ'ব\" অনুসন্ধান বিকল্পটি নিৰ্বাচিত হয়ে নে নহয় তা এই চাবি দ্বাৰা  অনুসন্ধান ব্যৱস্থা আৰম্ভ সময়ত নিৰ্ধাৰিত হয় ।"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:35
+msgid ""
+"This key determines if the \"Exclude other filesystems\" search option is "
+"selected when the search tool is started."
+msgstr "\"অন্যান্য নথিপত্ৰ-প্ৰণালী অন্তৰ্ভুক্ত কৰা হ'ব\" অনুসন্ধান বিকল্প নিৰ্বাচিত হয় নে নহয় সেইট"
 
 #: ../libeggsmclient/eggdesktopfile.c:165
 #, c-format
@@ -2836,27 +2673,27 @@ msgstr "এইটো বৈধ .desktop নথিপত্ৰ নহয়"
 msgid "Unrecognized desktop file Version '%s'"
 msgstr "ডেস্কটপ নথিপত্ৰৰ অজ্ঞাত সংস্কৰণ '%s'"
 
-#: ../libeggsmclient/eggdesktopfile.c:958
+#: ../libeggsmclient/eggdesktopfile.c:957
 #, c-format
 msgid "Starting %s"
 msgstr "%s আৰম্ভ কৰা হৈছে"
 
-#: ../libeggsmclient/eggdesktopfile.c:1100
+#: ../libeggsmclient/eggdesktopfile.c:1098
 #, c-format
 msgid "Application does not accept documents on command line"
 msgstr "এপ্লিকেশন দ্বাৰা আদেশ-শাৰীৰ মাধ্যমে নথিপত্ৰ গ্ৰহণ কৰা নহয়"
 
-#: ../libeggsmclient/eggdesktopfile.c:1168
+#: ../libeggsmclient/eggdesktopfile.c:1166
 #, c-format
 msgid "Unrecognized launch option: %d"
 msgstr "প্ৰাৰম্ভিক বিকল্প অজ্ঞাত: %d"
 
-#: ../libeggsmclient/eggdesktopfile.c:1373
+#: ../libeggsmclient/eggdesktopfile.c:1365
 #, c-format
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 msgstr "'Type=Link' ডেস্কটপ নিবেশৰ ক্ষেত্ৰত নথিপত্ৰৰ URI উল্লেখ কৰা সম্ভৱ নহয়"
 
-#: ../libeggsmclient/eggdesktopfile.c:1392
+#: ../libeggsmclient/eggdesktopfile.c:1384
 #, c-format
 msgid "Not a launchable item"
 msgstr "প্ৰাৰম্ভ কৰাৰ যোগ্য বস্তু নহয়"
@@ -2897,51 +2734,59 @@ msgstr "লগ নথিপত্ৰ প্ৰদৰ্শন ব্যৱস্
 msgid "View or monitor system log files"
 msgstr "প্ৰণালী লগ নথিপত্ৰ পড়ুন বা পৰ্যবেক্ষণ কৰক"
 
-#: ../logview/data/mate-system-log.schemas.in.h:1
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
 msgid "Log file to open up on startup"
 msgstr "প্ৰাৰম্ভে খোলাৰ উদ্দেশ্যে চিহ্নিত লগ নথিপত্ৰ"
 
-#: ../logview/data/mate-system-log.schemas.in.h:2
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
 msgid ""
 "Specifies the log file displayed at startup. The default is either "
 "/var/adm/messages or /var/log/messages, depending on your operating system."
 msgstr "প্ৰাৰম্ভে খোলাৰ উদ্দেশ্যে লগ নথিপত্ৰ নিৰ্ধাৰণ কৰি । ব্যৱহৃত অপাৰেটিং প্ৰণালীৰ উপৰ ভিত্তি কৰি অবিকল্পিতৰূপে /vaৰ/adm/messages বা /vaৰ/log/messages প্ৰয়োগ কৰা হ'ব ।"
 
-#: ../logview/data/mate-system-log.schemas.in.h:3
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
 msgid "Size of the font used to display the log"
 msgstr "লগ প্ৰদৰ্শনৰ বাবে ব্যৱহৃত ফন্টৰ মাপ"
 
-#: ../logview/data/mate-system-log.schemas.in.h:4
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
 msgid ""
 "Specifies the size of the fixed-width font used to display the log in the "
 "main tree view. The default is taken from the default terminal font size."
 msgstr "মুঠ অবিকল্পিত হলো অবিকল্পিত."
 
-#: ../logview/data/mate-system-log.schemas.in.h:5
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
 msgid "Height of the main window in pixels"
 msgstr "প্ৰধান উইন্ডোৰ উচ্চতা, পিক্সেল অনুযায়ী নিৰ্ধাৰিত"
 
-#: ../logview/data/mate-system-log.schemas.in.h:6
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
 msgid "Specifies the height of the log viewer main window in pixels."
 msgstr "লগ প্ৰদৰ্শনৰ প্ৰধান উইন্ডোৰ উচ্চতা, পিক্সেল অনুযায়ী নিৰ্ধাৰিত হয় ।"
 
-#: ../logview/data/mate-system-log.schemas.in.h:7
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
 msgid "Width of the main window in pixels"
 msgstr "প্ৰধান উইন্ডোৰ প্ৰস্থ, পিক্সেল অনুযায়ী নিৰ্ধাৰিত"
 
-#: ../logview/data/mate-system-log.schemas.in.h:8
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
 msgid "Specifies the width of the log viewer main window in pixels."
 msgstr "লগ প্ৰদৰ্শনৰ প্ৰধান উইন্ডোৰ প্ৰস্থ, পিক্সেল অনুযায়ী নিৰ্ধাৰিত হয় ।"
 
-#: ../logview/data/mate-system-log.schemas.in.h:9
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
 msgid "Log files to open up on startup"
 msgstr "প্ৰাৰম্ভে খোলাৰ উদ্দেশ্যে চিহ্নিত লগ নথিপত্ৰ"
 
-#: ../logview/data/mate-system-log.schemas.in.h:10
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
 msgid ""
 "Specifies a list of log files to open up at startup. A default list is "
 "created by reading /etc/syslog.conf."
 msgstr "প্ৰাৰম্ভে খোলাৰ উদ্দেশ্যে লগ নথিপত্ৰৰ তালিকা উল্লেখ কৰি । /etc/syslog.conf নথিপত্ৰৰ পৰা এটা অবিকল্পিত তালিকা নিৰ্মিত হয় ।"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
+msgid "List of saved filters"
+msgstr ""
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
+msgid "List of saved regexp filters"
+msgstr ""
 
 #: ../logview/data/logview-filter.ui.h:2
 msgid "_Regular Expression:"
@@ -2967,65 +2812,65 @@ msgstr ""
 msgid "Effect:"
 msgstr ""
 
-#: ../logview/logview-app.c:374
+#: ../logview/logview-app.c:377
 #, c-format
 msgid "Impossible to open the file %s"
 msgstr "%s নথিপত্ৰ প্ৰদৰ্শন কৰা সম্ভৱ নহয়"
 
-#: ../logview/logview-filter-manager.c:90
+#: ../logview/logview-filter-manager.c:94
 msgid "Filter name is empty!"
 msgstr "ফিল্টাৰৰ নাম ৰিক্ত!"
 
-#: ../logview/logview-filter-manager.c:103
+#: ../logview/logview-filter-manager.c:107
 msgid "Filter name may not contain the ':' character"
 msgstr "ফিল্টাৰৰ নামত ':' চিহ্ন অন্তৰ্ভুক্ত কৰা নাযাব"
 
-#: ../logview/logview-filter-manager.c:126
+#: ../logview/logview-filter-manager.c:130
 msgid "Regular expression is empty!"
 msgstr "ৰেগুলাৰ এক্সপ্ৰেছন ৰিক্ত!"
 
-#: ../logview/logview-filter-manager.c:142
+#: ../logview/logview-filter-manager.c:146
 #, c-format
 msgid "Regular expression is invalid: %s"
 msgstr "ৰেগুলাৰ এক্সপ্ৰেশন বৈধ নহয়: %s"
 
-#: ../logview/logview-filter-manager.c:238
+#: ../logview/logview-filter-manager.c:242
 msgid "Please specify either foreground or background color!"
 msgstr "অনুগ্ৰহ কৰি পটভূমি বা অগ্ৰভূমিৰ ৰংত অকল এটা উল্লেখ কৰক!"
 
-#: ../logview/logview-filter-manager.c:292
+#: ../logview/logview-filter-manager.c:296
 msgid "Edit filter"
 msgstr "ফিল্টাৰ সম্পাদনা"
 
-#: ../logview/logview-filter-manager.c:292
+#: ../logview/logview-filter-manager.c:296
 msgid "Add new filter"
 msgstr "নতুন ফিল্টাৰ যোগ কৰক"
 
-#: ../logview/logview-filter-manager.c:502
+#: ../logview/logview-filter-manager.c:506
 msgid "Filters"
 msgstr "ফিল্টাৰ"
 
-#: ../logview/logview-findbar.c:169
+#: ../logview/logview-findbar.c:173
 msgid "_Find:"
 msgstr "অনুসন্ধান :(_F)"
 
-#: ../logview/logview-findbar.c:184
+#: ../logview/logview-findbar.c:188
 msgid "Find Previous"
 msgstr "পূৰ্ববৰ্তী উপস্থিতি অনুসন্ধান"
 
-#: ../logview/logview-findbar.c:187
+#: ../logview/logview-findbar.c:191
 msgid "Find previous occurrence of the search string"
 msgstr "অনুসন্ধান কৰা পংক্তিৰ পূৰ্ববৰ্তী উপস্থিতি চিনাক্ত কৰক"
 
-#: ../logview/logview-findbar.c:192
+#: ../logview/logview-findbar.c:196
 msgid "Find Next"
 msgstr "পৰবৰ্তী উপস্থিতি অনুসন্ধান"
 
-#: ../logview/logview-findbar.c:195
+#: ../logview/logview-findbar.c:199
 msgid "Find next occurrence of the search string"
 msgstr "অনুসন্ধান কৰা পংক্তিৰ পৰবৰ্তী উপস্থিতি চিনাক্ত কৰক"
 
-#: ../logview/logview-findbar.c:202
+#: ../logview/logview-findbar.c:206
 msgid "Clear the search string"
 msgstr "অনুসন্ধানৰ পংক্তিৰ লেখাৰ ক্ষেত্ৰৰ পৰা তথ্য আঁতৰাওক"
 
@@ -3045,7 +2890,7 @@ msgstr "নথিপত্ৰ সাধাৰণ নথিপত্ৰ বা �
 msgid "This version of System Log does not support GZipped logs."
 msgstr "System Log-ৰ বৰ্তমান সংস্কৰণ দ্বাৰা GZip কৰা লগ নথিপত্ৰ সমৰ্থিত নহয় ।"
 
-#: ../logview/logview-loglist.c:311
+#: ../logview/logview-loglist.c:315
 msgid "Loading..."
 msgstr "তুলি লোৱা হৈছে..."
 
@@ -3061,11 +2906,11 @@ msgstr "[LOGFILE...]"
 msgid " - Browse and monitor logs"
 msgstr " - লগ ব্ৰাউজ আৰু পৰ্যবেক্ষণ কৰক"
 
-#: ../logview/logview-main.c:102
+#: ../logview/logview-main.c:100
 msgid "Log Viewer"
 msgstr "Log Vieweৰ"
 
-#: ../logview/logview-window.c:38 ../logview/logview-window.c:759
+#: ../logview/logview-window.c:38 ../logview/logview-window.c:760
 msgid "System Log Viewer"
 msgstr "System Log Vieweৰ"
 
@@ -3074,137 +2919,137 @@ msgstr "System Log Vieweৰ"
 msgid "last update: %s"
 msgstr "last update: %s"
 
-#: ../logview/logview-window.c:213
+#: ../logview/logview-window.c:214
 #, c-format
 msgid "%d lines (%s) - %s"
 msgstr "%d পংক্তি (%s) - %s"
 
-#: ../logview/logview-window.c:317
+#: ../logview/logview-window.c:318
 msgid "Open Log"
 msgstr "লগ খোলক"
 
-#: ../logview/logview-window.c:356
+#: ../logview/logview-window.c:357
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "সহায় প্ৰদৰ্শন কৰিবলৈ সমস্যা: %s"
 
-#: ../logview/logview-window.c:470
+#: ../logview/logview-window.c:471
 msgid "Wrapped"
 msgstr "বিভাজিত"
 
-#: ../logview/logview-window.c:764
+#: ../logview/logview-window.c:765
 msgid "A system log viewer for MATE."
 msgstr "MATE ত ব্যৱহাৰযোগ্য প্ৰণালী লগ প্ৰদৰ্শক ।"
 
-#: ../logview/logview-window.c:810
+#: ../logview/logview-window.c:811
 msgid "_Filters"
 msgstr "ফিল্টাৰ (_F)"
 
-#: ../logview/logview-window.c:813
+#: ../logview/logview-window.c:814
 msgid "_Open..."
 msgstr "খোলক(_O)..."
 
-#: ../logview/logview-window.c:813
+#: ../logview/logview-window.c:814
 msgid "Open a log from file"
 msgstr "নথিপত্ৰৰ পৰা এটা লগ খোলক"
 
-#: ../logview/logview-window.c:815
+#: ../logview/logview-window.c:816
 msgid "_Close"
 msgstr "বন্ধ (_C)"
 
-#: ../logview/logview-window.c:815
+#: ../logview/logview-window.c:816
 msgid "Close this log"
 msgstr "বৰ্তমান লগ বন্ধ কৰক"
 
-#: ../logview/logview-window.c:817
+#: ../logview/logview-window.c:818
 msgid "_Quit"
 msgstr "প্ৰস্থান (_Q)"
 
-#: ../logview/logview-window.c:817
+#: ../logview/logview-window.c:818
 msgid "Quit the log viewer"
 msgstr "লগ প্ৰদৰ্শকৰ পৰা প্ৰস্থান"
 
-#: ../logview/logview-window.c:820
+#: ../logview/logview-window.c:821
 msgid "_Copy"
 msgstr "নকল কৰক (_C)"
 
-#: ../logview/logview-window.c:820
+#: ../logview/logview-window.c:821
 msgid "Copy the selection"
 msgstr "নিৰ্বাচিত বস্তু নকল কৰক"
 
-#: ../logview/logview-window.c:822
+#: ../logview/logview-window.c:823
 msgid "Select the entire log"
 msgstr "সম্পূৰ্ণ লগ নিৰ্বাচন কৰক"
 
-#: ../logview/logview-window.c:824
+#: ../logview/logview-window.c:825
 msgid "_Find..."
 msgstr "অনুসন্ধান কৰক...(_F)"
 
-#: ../logview/logview-window.c:824
+#: ../logview/logview-window.c:825
 msgid "Find a word or phrase in the log"
 msgstr "লগত এটা শব্দ বা পংক্তি সন্ধান কৰক"
 
-#: ../logview/logview-window.c:827
+#: ../logview/logview-window.c:828
 msgid "Bigger text size"
 msgstr "হৰফেৰ মাপ বৃদ্ধি কৰক"
 
-#: ../logview/logview-window.c:829
+#: ../logview/logview-window.c:830
 msgid "Smaller text size"
 msgstr "হৰফেৰ মাপ হ্ৰাস কৰক"
 
-#: ../logview/logview-window.c:831
+#: ../logview/logview-window.c:832
 msgid "Normal text size"
 msgstr "হৰফেৰ স্বাভাবিক মাপ"
 
-#: ../logview/logview-window.c:834
+#: ../logview/logview-window.c:835
 msgid "Manage Filters"
 msgstr "ফিল্টাৰ পৰিচালনা"
 
-#: ../logview/logview-window.c:834
+#: ../logview/logview-window.c:835
 msgid "Manage filters"
 msgstr "ফিল্টাৰ পৰিচালনা কৰক"
 
-#: ../logview/logview-window.c:837
+#: ../logview/logview-window.c:838
 msgid "Open the help contents for the log viewer"
 msgstr "লগ প্ৰদৰ্শক সংক্ৰান্ত সহায়িকা প্ৰদৰ্শন"
 
-#: ../logview/logview-window.c:839
+#: ../logview/logview-window.c:840
 msgid "Show the about dialog for the log viewer"
 msgstr "লগ প্ৰদৰ্শকেৰ পৰিচিতি প্ৰদৰ্শন"
 
-#: ../logview/logview-window.c:844
+#: ../logview/logview-window.c:845
 msgid "_Statusbar"
 msgstr "স্ট্যাটাস-বাৰ (_S)"
 
-#: ../logview/logview-window.c:844
+#: ../logview/logview-window.c:845
 msgid "Show Status Bar"
 msgstr "স্ট্যাটাস-বাৰ প্ৰদৰ্শন কৰা হ'ব"
 
-#: ../logview/logview-window.c:846
+#: ../logview/logview-window.c:847
 msgid "Side _Pane"
 msgstr "পাৰ্শ্ববৰ্তী পেইন (_P)"
 
-#: ../logview/logview-window.c:846
+#: ../logview/logview-window.c:847
 msgid "Show Side Pane"
 msgstr "পাৰ্শ্ববৰ্তী পেইন প্ৰদৰ্শন কৰা হ'ব"
 
-#: ../logview/logview-window.c:848
+#: ../logview/logview-window.c:849
 msgid "Show matches only"
 msgstr "অকল মিলা তথ্য প্ৰদৰ্শন কৰা হ'ব"
 
-#: ../logview/logview-window.c:848
+#: ../logview/logview-window.c:849
 msgid "Only show lines that match one of the given filters"
 msgstr "উল্লিখিত যি কোনো এটা ফিল্টাৰৰ সৈতে মিল পোৱা পংক্তিসমূহ অকল প্ৰদৰ্শন কৰা হ'ব"
 
-#: ../logview/logview-window.c:962
+#: ../logview/logview-window.c:963
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr ""
 
-#: ../logview/logview-window.c:1381
+#: ../logview/logview-window.c:1386
 msgid "Version: "
 msgstr "সংস্কৰণ : "
 
-#: ../logview/logview-window.c:1488
+#: ../logview/logview-window.c:1493
 msgid "Could not open the following files:"
 msgstr "নিম্নলিখিত নথিপত্ৰ খুলিবলৈ ব্যৰ্থ:"

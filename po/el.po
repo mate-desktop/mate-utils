@@ -3,32 +3,31 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Fotis Tsamis <ftsamis@gmail.com>, 2009.
-# Jennie Petoumenou <epetoumenou@gmail.com>, 2009.
-# Kostas Papadimas <pkst@gnome.org>, 2002, 2003, 2004, 2005, 2006, 2008.
-# Nikos Charonitakis <frolix68@yahoo.gr>, 2003, 2004.
-# Simos Xenitellis <simos@hellug.gr>, 2000, 2001, 2002.
-# Simos Xenitellis <simos.lists@googlemail.com>, 2010.
-# Spiros Papadimitriou <spapadim+@cs.cmu.edu>, 2000.
-# Sterios Prosiniklis <steriosprosiniklis@gmail.com>, 2009.
+# Fotis Tsamis <ftsamis@gmail.com>, 2009
+# Jennie Petoumenou <epetoumenou@gmail.com>, 2009
+# Kostas Papadimas <pkst@gnome.org>, 2002, 2003, 2004, 2005, 2006, 2008
+# Nikos Charonitakis <frolix68@yahoo.gr>, 2003, 2004
+# Simos Xenitellis <simos@hellug.gr>, 2000, 2001, 2002
+# Simos Xenitellis <simos.lists@googlemail.com>, 2010
+# Spiros Papadimitriou <spapadim+@cs.cmu.edu>, 2000
+# Sterios Prosiniklis <steriosprosiniklis@gmail.com>, 2009
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2012-03-12 11:59+0100\n"
-"PO-Revision-Date: 2012-03-12 11:08+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-24 13:29+0100\n"
+"PO-Revision-Date: 2015-01-24 12:29+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
 "Language-Team: Greek (http://www.transifex.com/projects/p/MATE/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: el\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:1
-#: ../baobab/data/baobab-main-window.ui.h:15
-msgid "Disk Usage Analyzer"
-msgstr "Ανάλυση χρήσης δίσκου"
+msgid "MATE Disk Usage Analyzer"
+msgstr ""
 
 #: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:2
 msgid "Check folder sizes and available disk space"
@@ -67,7 +66,7 @@ msgid "S_can Remote Folder..."
 msgstr "Σάρωση α_πομακρυσμένου φακέλου..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../mate-dictionary/src/gdict-window.c:1176 ../logview/logview-window.c:808
+#: ../mate-dictionary/src/gdict-window.c:1279 ../logview/logview-window.c:809
 msgid "_Edit"
 msgstr "_Επεξεργασία"
 
@@ -80,7 +79,7 @@ msgid "_Collapse All"
 msgstr "Σύμπτυξη ό_λων"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../mate-dictionary/src/gdict-window.c:1177 ../logview/logview-window.c:809
+#: ../mate-dictionary/src/gdict-window.c:1280 ../logview/logview-window.c:810
 msgid "_View"
 msgstr "Προ_βολή"
 
@@ -97,16 +96,20 @@ msgid "All_ocated Space"
 msgstr "Εκχωρημένος _χώρος"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:6
-#: ../mate-dictionary/src/gdict-window.c:1179 ../logview/logview-window.c:811
+#: ../mate-dictionary/src/gdict-applet.c:1213
+#: ../mate-dictionary/src/gdict-window.c:1282 ../logview/logview-window.c:812
 msgid "_Help"
 msgstr "_Βοήθεια"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../mate-dictionary/src/gdict-window.c:1229 ../logview/logview-window.c:837
+#: ../mate-dictionary/src/gdict-window.c:1332 ../logview/logview-window.c:838
 msgid "_Contents"
 msgstr "_Περιεχόμενα"
+
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/callbacks.c:97
+msgid "Disk Usage Analyzer"
+msgstr "Ανάλυση χρήσης δίσκου"
 
 #: ../baobab/data/baobab-main-window.ui.h:16
 msgid "Scan home folder"
@@ -148,202 +151,224 @@ msgstr "Διακοπή σάρωσης "
 msgid "Refresh"
 msgstr "Ανανέωση"
 
-#: ../baobab/data/baobab.schemas.in.h:1
-msgid "Toolbar is Visible"
-msgstr "Η εργαλειοθήκη είναι ορατή "
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:1
+msgid "Monitor Home"
+msgstr ""
 
-#: ../baobab/data/baobab.schemas.in.h:2
-msgid "Whether the toolbar should be visible in main window."
-msgstr "Αν η εργαλειοθήκη θα είναι ορατή στο κύριο παράθυρο."
-
-#: ../baobab/data/baobab.schemas.in.h:3
-msgid "Status Bar is Visible"
-msgstr "Η γραμμή κατάστασης είναι ορατή"
-
-#: ../baobab/data/baobab.schemas.in.h:4
-msgid "Whether the status bar at the bottom of main window should be visible."
-msgstr "Αν θα είναι ορατή η γραμμή κατάστασης στο κάτω μέρος του κύριου παραθύρου."
-
-#: ../baobab/data/baobab.schemas.in.h:5
-msgid "Enable monitoring of home directory"
-msgstr "Ενεργοποίηση παρακολούθησης αρχικού καταλόγου"
-
-#: ../baobab/data/baobab.schemas.in.h:6
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:2
 msgid "Whether any change to the home directory should be monitored."
 msgstr "Αν θα παρακολουθείται για αλλαγές ο αρχικός σας κατάλογος."
 
-#: ../baobab/data/baobab.schemas.in.h:7
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:3
 msgid "Excluded partitions URIs"
 msgstr "URI κατατμήσεων που εξαιρούνται"
 
-#: ../baobab/data/baobab.schemas.in.h:8
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:4
 msgid "A list of URIs for partitions to be excluded from scanning."
 msgstr "Μια λίστα URI για κατατμήσεις που θα εξαιρούνται από τη σάρωση."
 
-#: ../baobab/data/baobab.schemas.in.h:9
-msgid "Subfolders tooltips visible"
-msgstr "Συμβουλές οθόνης υποφακέλων ορατοί"
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:5
+msgid "Toolbar is Visible"
+msgstr "Η εργαλειοθήκη είναι ορατή "
 
-#: ../baobab/data/baobab.schemas.in.h:10
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:6
+msgid "Whether the toolbar should be visible in main window."
+msgstr "Αν η εργαλειοθήκη θα είναι ορατή στο κύριο παράθυρο."
+
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:7
+msgid "Statusbar is Visible"
+msgstr ""
+
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:8
+msgid "Whether the status bar at the bottom of main window should be visible."
+msgstr "Αν θα είναι ορατή η γραμμή κατάστασης στο κάτω μέρος του κύριου παραθύρου."
+
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:9
+msgid "Subfolder tips visible"
+msgstr ""
+
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:10
 msgid "Whether the subfolder tooltips of the selected folder are drawn."
 msgstr "Αν θα σχεδιάζονται συμβουλές οθόνης για τους υποφακέλους του επιλεγμένου φακέλου."
 
-#: ../baobab/src/baobab.c:134 ../baobab/src/baobab.c:353
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:11
+msgid "Active Chart"
+msgstr ""
+
+#: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:12
+msgid "Which type of chart should be displayed."
+msgstr ""
+
+#: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:1
+msgid "A disk usage analyzing tool for MATE Desktop"
+msgstr ""
+
+#: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:2
+msgid ""
+"<p> As its name implies, Disk Usage Analyzer is a graphical utility that you"
+" can use to view and monitor your disk usage and folder structure. It "
+"displays summary information in ring or treemap charts. </p> <p> You can "
+"perform scans on a file system, your home or any other folder - local or "
+"remote. There is also an option to constantly monitor any external changes "
+"to the home directory and warn the user if a file is added/removed. </p>"
+msgstr ""
+
+#: ../baobab/src/baobab.c:135 ../baobab/src/baobab.c:355
 msgid "Scanning..."
 msgstr "Σάρωση..."
 
-#: ../baobab/src/baobab.c:180
+#: ../baobab/src/baobab.c:181
 msgid "Total filesystem capacity:"
 msgstr "Συνολική χωρητικότητα συστήματος αρχείων:"
 
-#: ../baobab/src/baobab.c:181
+#: ../baobab/src/baobab.c:182
 msgid "used:"
 msgstr "σε χρήση:"
 
-#: ../baobab/src/baobab.c:182
+#: ../baobab/src/baobab.c:183
 msgid "available:"
 msgstr "Διαθέσιμο:"
 
 #. set statusbar, percentage and allocated/normal size
-#: ../baobab/src/baobab.c:238 ../baobab/src/baobab.c:295
-#: ../baobab/src/callbacks.c:260
+#: ../baobab/src/baobab.c:240 ../baobab/src/baobab.c:297
+#: ../baobab/src/callbacks.c:259
 msgid "Calculating percentage bars..."
 msgstr "Υπολογισμός ποσοστιαίων μπαρών..."
 
-#: ../baobab/src/baobab.c:249 ../baobab/src/baobab.c:1289
-#: ../baobab/src/callbacks.c:264
+#: ../baobab/src/baobab.c:251 ../baobab/src/baobab.c:1309
+#: ../baobab/src/callbacks.c:263
 msgid "Ready"
 msgstr "Έτοιμο"
 
-#: ../baobab/src/baobab.c:386
+#: ../baobab/src/baobab.c:389
 msgid "Total filesystem capacity"
 msgstr "Συνολική χωρητικότητα συστήματος αρχείων"
 
-#: ../baobab/src/baobab.c:408
+#: ../baobab/src/baobab.c:413
 msgid "Total filesystem usage"
 msgstr "Συνολική χρήση συστήματος αρχείων"
 
-#: ../baobab/src/baobab.c:449
+#: ../baobab/src/baobab.c:455
 msgid "contains hardlinks for:"
 msgstr "περιέχει hardlinks για:"
 
-#: ../baobab/src/baobab.c:458
+#: ../baobab/src/baobab.c:464
 #, c-format
 msgid "%5d item"
 msgid_plural "%5d items"
 msgstr[0] "%5d αντικείμενο"
 msgstr[1] "%5d αντικείμενα"
 
-#: ../baobab/src/baobab.c:585
+#: ../baobab/src/baobab.c:591
 msgid "Could not initialize monitoring"
 msgstr "Αδυναμία αρχικοποίησης παρακολούθησης "
 
-#: ../baobab/src/baobab.c:586
+#: ../baobab/src/baobab.c:592
 msgid "Changes to your home folder will not be monitored."
 msgstr "Δεν θα παρακολουθείται για αλλαγές ο αρχικός σας κατάλογος."
 
-#: ../baobab/src/baobab.c:965
+#: ../baobab/src/baobab.c:924
 msgid "Move to parent folder"
 msgstr "Μετακίνηση σε γονικό φάκελο"
 
-#: ../baobab/src/baobab.c:969
+#: ../baobab/src/baobab.c:928
 msgid "Zoom in"
 msgstr "Μεγέθυνση "
 
-#: ../baobab/src/baobab.c:973
+#: ../baobab/src/baobab.c:932
 msgid "Zoom out"
 msgstr "Σμίκρυνση"
 
-#: ../baobab/src/baobab.c:977
+#: ../baobab/src/baobab.c:936
 msgid "Save screenshot"
 msgstr "Αποθήκευση στιγμιότυπου οθόνης"
 
-#: ../baobab/src/baobab.c:1114
+#: ../baobab/src/baobab.c:1123
 msgid "View as Rings Chart"
 msgstr "Προβολή ως διάγραμμα δακτυλίων"
 
-#: ../baobab/src/baobab.c:1116
+#: ../baobab/src/baobab.c:1125
 msgid "View as Treemap Chart"
 msgstr "Προβολή ως  δενδροειδές διάγραμμα "
 
-#: ../baobab/src/baobab.c:1214
+#: ../baobab/src/baobab.c:1234
 msgid "Show version"
 msgstr "Προβολή έκδοσης"
 
-#: ../baobab/src/baobab.c:1215
+#: ../baobab/src/baobab.c:1235
 msgid "[DIRECTORY]"
 msgstr "[ΚΑΤΑΛΟΓΟΣ]"
 
-#: ../baobab/src/baobab.c:1245
+#: ../baobab/src/baobab.c:1265
 msgid "Too many arguments. Only one directory can be specified."
 msgstr "Πάρα πολλές επιλογές. Μόνο ένας κατάλογος μπορεί να οριστεί."
 
-#: ../baobab/src/baobab.c:1262
+#: ../baobab/src/baobab.c:1282
 msgid "Could not detect any mount point."
 msgstr "Δεν εντοπίστηκε κάποιο σημείο προσάρτησης."
 
-#: ../baobab/src/baobab.c:1264
+#: ../baobab/src/baobab.c:1284
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr "Χωρίς τα σημεία προσάρτησης δεν είναι δυνατή η ανάλυση χρήσης δίσκων."
 
-#: ../baobab/src/baobab-chart.c:206
+#: ../baobab/src/baobab-chart.c:219
 msgid "Maximum depth"
 msgstr "Μέγιστο βάθος"
 
-#: ../baobab/src/baobab-chart.c:207
+#: ../baobab/src/baobab-chart.c:220
 msgid "The maximum depth drawn in the chart from the root"
 msgstr "Το μέγιστος βάος που θα σχεδιάζεται στο διάγραμμα από το κατάλογο root"
 
-#: ../baobab/src/baobab-chart.c:216
+#: ../baobab/src/baobab-chart.c:229
 msgid "Chart model"
 msgstr "Μοντέλο διαγράμματος"
 
-#: ../baobab/src/baobab-chart.c:217
+#: ../baobab/src/baobab-chart.c:230
 msgid "Set the model of the chart"
 msgstr "Ορισμός του μοντέλου για το διάγραμμα"
 
-#: ../baobab/src/baobab-chart.c:224
+#: ../baobab/src/baobab-chart.c:237
 msgid "Chart root node"
 msgstr "Κόμβος root διαγράμματος"
 
-#: ../baobab/src/baobab-chart.c:225
+#: ../baobab/src/baobab-chart.c:238
 msgid "Set the root node from the model"
 msgstr "Ορισμός του κόμβου root από το μοντέλο"
 
-#: ../baobab/src/baobab-chart.c:1710
+#: ../baobab/src/baobab-chart.c:1759
 msgid "Cannot create pixbuf image!"
 msgstr "Αδυναμία δημιουργίας εικόνας pixbuf!"
 
 #. Popup the File chooser dialog
-#: ../baobab/src/baobab-chart.c:1720
+#: ../baobab/src/baobab-chart.c:1769
 msgid "Save Snapshot"
 msgstr "Αποθήκευση στιγμιότυπου οθόνης"
 
-#: ../baobab/src/baobab-chart.c:1749
+#: ../baobab/src/baobab-chart.c:1796
 msgid "_Image type:"
 msgstr "Τύπος ε_ικόνας:"
 
-#: ../baobab/src/baobab-prefs.c:184
+#: ../baobab/src/baobab-prefs.c:172
 msgid "Scan"
 msgstr "Σάρωση"
 
-#: ../baobab/src/baobab-prefs.c:191
+#: ../baobab/src/baobab-prefs.c:179
 msgid "Device"
 msgstr "Συσκευή"
 
-#: ../baobab/src/baobab-prefs.c:199
+#: ../baobab/src/baobab-prefs.c:187
 msgid "Mount Point"
 msgstr "Σημείο προσάρτησης"
 
-#: ../baobab/src/baobab-prefs.c:207
+#: ../baobab/src/baobab-prefs.c:195
 msgid "Filesystem Type"
 msgstr "Τύπος συστήματος αρχείων"
 
-#: ../baobab/src/baobab-prefs.c:215
+#: ../baobab/src/baobab-prefs.c:203
 msgid "Total Size"
 msgstr "Συνολικό μέγεθος"
 
-#: ../baobab/src/baobab-prefs.c:224
+#: ../baobab/src/baobab-prefs.c:212
 msgid "Available"
 msgstr "Διαθέσιμο"
 
@@ -425,11 +450,11 @@ msgstr "Ό_νομα τομέα:"
 msgid "Connect to Server"
 msgstr "Σύνδεση στον εξυπηρετητή"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:660
+#: ../baobab/src/baobab-remote-connect-dialog.c:659
 msgid "Service _type:"
 msgstr "Τύπος υ_πηρεσίας:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:779
+#: ../baobab/src/baobab-remote-connect-dialog.c:778
 msgid "_Scan"
 msgstr "_Σάρωση"
 
@@ -447,7 +472,7 @@ msgstr "Τα περιεχόμενα του αρχικού σας καταλόγ�
 msgid "_Rescan"
 msgstr "Σάρωση _ξανά"
 
-#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2406
+#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2427
 msgid "Folder"
 msgstr "Φάκελος"
 
@@ -455,7 +480,7 @@ msgstr "Φάκελος"
 msgid "Usage"
 msgstr "Χρήση"
 
-#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2419
+#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2440
 msgid "Size"
 msgstr "Μέγεθος"
 
@@ -472,56 +497,56 @@ msgstr "Επιλογή φακέλου"
 msgid "_Show hidden folders"
 msgstr "Εμ_φάνιση κρυφών φακέλων"
 
-#: ../baobab/src/baobab-utils.c:297
+#: ../baobab/src/baobab-utils.c:299
 msgid "Cannot check an excluded folder!"
 msgstr "Δεν είναι δυνατός ο έλεγχος φακέλων που εξαιρούνται!"
 
-#: ../baobab/src/baobab-utils.c:321
+#: ../baobab/src/baobab-utils.c:323
 #, c-format
 msgid "\"%s\" is not a valid folder"
 msgstr "Το %s δεν είναι έγκυρος φάκελος"
 
-#: ../baobab/src/baobab-utils.c:324
+#: ../baobab/src/baobab-utils.c:326
 msgid "Could not analyze disk usage."
 msgstr "Αδυναμία ανάλυσης χρήσης του δίσκου"
 
-#: ../baobab/src/baobab-utils.c:364
+#: ../baobab/src/baobab-utils.c:366
 msgid "_Open Folder"
 msgstr "Ά_νοιγμα φακέλου "
 
-#: ../baobab/src/baobab-utils.c:370
-#: ../gsearchtool/gsearchtool-callbacks.c:1203
+#: ../baobab/src/baobab-utils.c:372
+#: ../gsearchtool/gsearchtool-callbacks.c:1210
 msgid "Mo_ve to Trash"
 msgstr "_Μετακίνηση στα απορρίμματα"
 
-#: ../baobab/src/baobab-utils.c:404
+#: ../baobab/src/baobab-utils.c:406
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "Αδυναμία ανοίγματος φακέλου \"%s\"."
 
-#: ../baobab/src/baobab-utils.c:407
+#: ../baobab/src/baobab-utils.c:409
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr "Δεν υπάρχει εγκατεστημένο πρόγραμμα παρουσίασης για την εμφάνιση του φακέλου."
 
-#: ../baobab/src/baobab-utils.c:476
+#: ../baobab/src/baobab-utils.c:478
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr "Αδυναμία μετακίνησης \"%s\" στα απορρίμματα"
 
-#: ../baobab/src/baobab-utils.c:484
+#: ../baobab/src/baobab-utils.c:486
 msgid "Could not move file to the Trash"
 msgstr "Αδυναμία μετακίνησης αρχείου στα απορρίμματα"
 
-#: ../baobab/src/baobab-utils.c:486
+#: ../baobab/src/baobab-utils.c:488
 #, c-format
 msgid "Details: %s"
 msgstr "Λεπτομέρειες: %s"
 
-#: ../baobab/src/baobab-utils.c:533
+#: ../baobab/src/baobab-utils.c:524
 msgid "There was an error displaying help."
 msgstr "Υπήρξε σφάλμα κατά την εμφάνιση της βοήθειας."
 
-#: ../baobab/src/callbacks.c:77 ../logview/logview-about.h:49
+#: ../baobab/src/callbacks.c:76 ../logview/logview-about.h:49
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -529,7 +554,7 @@ msgid ""
 "any later version."
 msgstr "Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Επιτρέπεται η αναδιανομή ή/και η τροποποίησή του υπό τους όρους της Γενικής Άδειας Δημόσιας Χρήσης GNU (GNU General Public License) όπως αυτή δημοσιεύεται από το Ίδρυμα Ελεύθερου Λογισμικού (Free Software Foundation) -είτε της έκδοσης 2 της άδειας, είτε (κατ' επιλογήν) οποιασδήποτε μεταγενέστερης έκδοσης."
 
-#: ../baobab/src/callbacks.c:82 ../logview/logview-about.h:53
+#: ../baobab/src/callbacks.c:81 ../logview/logview-about.h:53
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -537,7 +562,7 @@ msgid ""
 "more details."
 msgstr "Αυτό το πρόγραμμα διανέμεται με την ελπίδα οτι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ ΚΑΜΙΑ ΑΠΟΛΥΤΩΣ ΕΓΓΥΗΣΗ -χωρίς ακόμη και την έμμεση εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε για περισσότερες λεπτομέρειες τη Γενική Άδεια Δημόσιας Χρήσης GNU (GNU General Public License)."
 
-#: ../baobab/src/callbacks.c:87 ../logview/logview-about.h:57
+#: ../baobab/src/callbacks.c:86 ../logview/logview-about.h:57
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
@@ -545,25 +570,21 @@ msgid ""
 msgstr "Θα πρέπει να έχετε λάβει ένα αντίγραφο της Γενικής Άδειας Δημόσιας Χρήσης GNU (GNU General Public License) μαζί με αυτό το πρόγραμμα. Αν όχι, επικοινωνήστε γραπτώς με το Ίδρυμα Ελεύθερου Λογισμικού (Free Software Foundation, Inc.), 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
 #: ../baobab/src/callbacks.c:98
-msgid "Baobab"
-msgstr "Baobab"
-
-#: ../baobab/src/callbacks.c:99
 msgid "A graphical tool to analyze disk usage."
 msgstr "Ένα γραφικό εργαλείο για την ανάλυση της χρήσης του δίσκου."
 
 #. translator credits
-#: ../baobab/src/callbacks.c:105 ../mate-dictionary/src/gdict-about.c:55
+#: ../baobab/src/callbacks.c:104 ../mate-dictionary/src/gdict-about.c:55
 #: ../logview/logview-about.h:63
 msgid "translator-credits"
 msgstr "Σπύρος Παπαδημητρίου <spapadim+@cs.cmu.edu>\nΣυμεών (σίμος) Ξενιτέλλης <simos@hellug.gr>\nΚώστας Παπαδήμας <pkst@gnome.org>\nΝίκος Χαρωνιτάκης <nikosx@gmail.com>"
 
-#: ../baobab/src/callbacks.c:203 ../gsearchtool/gsearchtool-callbacks.c:504
-#: ../gsearchtool/gsearchtool-callbacks.c:843
+#: ../baobab/src/callbacks.c:202 ../gsearchtool/gsearchtool-callbacks.c:508
+#: ../gsearchtool/gsearchtool-callbacks.c:848
 msgid "The document does not exist."
 msgstr "Το έγγραφο δεν υπάρχει."
 
-#: ../baobab/src/callbacks.c:314
+#: ../baobab/src/callbacks.c:283
 msgid "The folder does not exist."
 msgstr "Ο φάκελος δεν υπάρχει."
 
@@ -571,238 +592,63 @@ msgstr "Ο φάκελος δεν υπάρχει."
 msgid "Default Dictionary Server"
 msgstr "Προεπιλεγμένος εξυπηρετητής λεξικού"
 
-#: ../mate-dictionary/data/MATE_DictionaryApplet.server.in.in.h:1
-msgid "Dictionary Look up"
-msgstr "Αναζήτηση λεξικού"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.server.in.in.h:2
-msgid "Look up words in a dictionary"
-msgstr "Αναζήτηση λέξης στο λεξικό"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:1
-msgid "_Look Up Selected Text"
-msgstr "Αναζήτηση επι_λεγμένου κειμένου"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:2
-msgid "Cl_ear"
-msgstr "Ε_κκαθάριση"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:3
-msgid "_Print"
-msgstr "Εκτύ_πωση"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:4
-msgid "_Save"
-msgstr "Απο_θήκευση"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:5
-#: ../mate-dictionary/src/gdict-window.c:1205
-msgid "_Preferences"
-msgstr "_Προτιμήσεις"
-
-#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:7
-#: ../mate-dictionary/src/gdict-window.c:1231 ../logview/logview-window.c:839
-msgid "_About"
-msgstr "_Περί"
-
 #: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:1
-#: ../mate-dictionary/src/gdict-about.c:78
-#: ../mate-dictionary/src/gdict-app.c:385
-#: ../mate-dictionary/src/gdict-window.c:605
-#: ../mate-dictionary/src/gdict-window.c:1947
-msgid "Dictionary"
-msgstr "Λεξικό"
+msgid "MATE Dictionary"
+msgstr ""
 
 #: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:2
 msgid "Check word definitions and spellings in an online dictionary"
 msgstr "Έλεγχος ορισμών λέξεων και ορθογραφίας σε ένα λεξικό του Διαδικτύου"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:1
-msgid "Dictionary server (Deprecated)"
-msgstr "Εξυπηρετητής λεξικού (Deprecated)"
+#: ../mate-dictionary/data/mate-dictionary.appdata.xml.in.h:1
+msgid "A dictionary for MATE Desktop"
+msgstr ""
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:2
+#: ../mate-dictionary/data/mate-dictionary.appdata.xml.in.h:2
 msgid ""
-"The dictionary server to connect to. The default server is dict.org. See "
-"http://www.dict.org for details on other servers. This key is deprecated and"
-" no longer in use."
-msgstr "Ο εξυπηρετητής λεξικού για σύνδεση. Ο προεπιλεγμένος εξυπηρετητής είναι dict.org. Βλέπε http://www.dict.org για λεπτομέρειες για άλλους εξυπηρετητές.This key is deprecated and no longer in use."
+"<p> MATE Dictionary allows you to look up words in on-line dictionaries. It "
+"comes preconfigured with a list of Dict servers (RFC 2229), to which you can"
+" add your own sources, while you can select specific servers for a specific "
+"query. </p>"
+msgstr ""
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:3
-msgid "Port used to connect to server (Deprecated)"
-msgstr "Θύρα που χρησιμοποιείται για σύνδεση στον εξυπηρετητή (Deprecated)"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:4
-msgid ""
-"The port number to connect to. The default port is 2628. This key is "
-"deprecated and no longer in use."
-msgstr "Ο αριθμός θύρας για σύνδεση. Η προεπιλεγμένη θύρα είναι 2628.This key is deprecated and no longer in use."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:5
-msgid "Use smart lookup (Deprecated)"
-msgstr "Χρήση έξυπνης αναζήτησης  (Deprecated)"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:6
-msgid ""
-"Specify whether to use smart lookup. This key is dependant on whether the "
-"dictionary server supports this option. The default is TRUE. This key is "
-"deprecated and no longer in use."
-msgstr "Καθορίστε αν θα χρησιμοποιήσετε την έξυπνη αναζήτηση. Αυτό το κλειδί εξαρτάται αν ο εξυπηρετητής λεξικού υποστηρίζει αυτήν την επιλογή. Η προεπιλογή είναι ΑΛΗΘΈΣ (Deprecated)"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:7
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:1
 msgid "The default database to use"
 msgstr "Η προεπιλεγμένη βάση δεδομένων που θα χρησιμοποιηθεί"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:8
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:2
 msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
 "present in a dictionary source should be searched"
 msgstr "Το όνομα της προεπιλεγμένης ανεξάρτητης βάσης δεδομένων για χρήση στο εξυπηρετητή λεξικού. Ένα θαυμαστικό  (\"!\") καθορίζει ότι το λεξικό του mate θα ψάχνει όλες τις βάσεις σε ένα δοσμένο εξυπηρετητή"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:9
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:3
 msgid "The default search strategy to use"
 msgstr "Η προεπιλεγμένη στρατηγική αναζήτησης που θα χρησιμοποιηθεί"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:10
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:4
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is 'exact', that is match exact words."
 msgstr "Το όνομα της προεπιλεγμένης στρατηγικής αναζήτησης που θα χρησιμοποιείται σε μια πηγή λεξικού,αν είναι διαθέσιμη. Η προεπιλεγμένη στρατηγική είναι 'ακριβώς', που σημαίνει ότι θα ταιριάζει τις λέξεις με ακρίβεια."
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:11
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:5
 msgid "The font to be used when printing"
 msgstr "Η γραμματοσειρά που θα χρησιμοποιείται στην εκτύπωση"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:12
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:6
 msgid "The font to be used when printing a definition."
 msgstr "Η γραμματοσειρά που θα χρησιμοποιείται στην εκτύπωση ενός ορισμού."
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:13
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:7
 msgid "The name of the dictionary source used"
 msgstr "Το όνομα της πηγής λεξικού που χρησιμοποιείται"
 
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:14
+#: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:8
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr "Το όνομα της προεπιλεγμένης πηγής λεξικού για την ανάκτηση των ορισμών των λέξεων."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:15
-msgid "The default width of the application window"
-msgstr "Το προεπιλεγμένο πλάτος του παραθύρου της εφαρμογής"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:16
-msgid ""
-"This key defines the window width and it's used to remember the size of the "
-"dictionary window across sessions. Setting it to -1 will make the dictionary"
-" window use a width based on the font size."
-msgstr "Αυτό το κλειδί καθορίζει το πλάτος του παραθύρου, και χρησιμοποιείται για την απομνημόνευση του του παραθύρου του λεξικού ανάμεσα στις συνεδρίες. Ο ορισμός του σε -1 θα κάνει το παράθυρο του λεξικού να χρησιμοποιεί το προεπιλεγμένο πλάτος."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:17
-msgid "The default height of the application window"
-msgstr "Το προεπιλεγμένο ύψος του παραθύρου της εφαρμογής"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:18
-msgid ""
-"This key defines the window height and it's used to remember the size of the"
-" dictionary window across sessions. Setting it to -1 will make the "
-"dictionary window use a height based on the font size."
-msgstr "Αυτό το κλειδί καθορίζει το ύψος του παραθύρου, και χρησιμοποιείται για την απομνημόνευση του μεγέθους του παραθύρου του λεξικού ανάμεσα στις συνεδρίες. Ο ορισμός του σε -1 θα κάνει το παράθυρο του λεξικού να χρησιμοποιεί το προεπιλεγμένο ύψος."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:19
-msgid "Whether the application window should be maximized"
-msgstr "Αν το παράθυρο της εφαρμογής θα είναι μεγιστοποιημένο"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:20
-msgid ""
-"This key defines whether the window should be maximized and it's used to "
-"remember the state of the dictionary window across sessions. Setting it to "
-"TRUE will make the window always appear as maximized."
-msgstr "Αυτό το κλειδί καθορίζει τη μεγιστοποίηση του παραθύρου, και χρησιμοποιείται για την απομνημόνευση της κατάστασης του παραθύρου του λεξικού ανάμεσα στις συνεδρίες. Ο ορισμός του σε TRUE θα κάνει το παράθυρο να εμφανίζεται πάντα μεγιστοποιημένο."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:21
-msgid "Whether the sidebar should be visible"
-msgstr "Αν η πλευρική στήλη θα είναι ορατή"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:22
-msgid ""
-"This key defines whether the sidebar should be visible and it's used to "
-"remember the state of the sidebar across sessions. Setting it to TRUE will "
-"make the sidebar always be displayed."
-msgstr "Αυτό το κλειδί καθορίζει την ορατότητα της πλευρικής στήλης, και χρησιμοποιείται για την απομνημόνευση της κατάστασης της ορατότητας της πλευρικής στήλης ανάμεσα στις συνεδρίες. Ο ορισμός του σε TRUE θα κάνει την πλευρική στήλη να εμφανίζεται πάντα."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:23
-msgid "Whether the statusbar should be visible"
-msgstr "Αν η γραμμή κατάστασης θα είναι ορατή"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:24
-msgid ""
-"This key defines whether the statusbar should be visible and it's used to "
-"remember the state of the statusbar across sessions. Setting it to TRUE will"
-" make the statusbar always be displayed."
-msgstr "Αυτό το κλειδί καθορίζει την ορατότητα της πλευρικής στήλης, και χρησιμοποιείται για την απομνημόνευση της κατάστασης της ορατότητας της πλευρικής στήλης ανάμεσα στις συνεδρίες. Ο ορισμός του σε TRUE θα κάνει την πλευρική στήλη να εμφανίζεται πάντα."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:25
-msgid "The page of the sidebar to show"
-msgstr "Η σελίδα της πλευρικής στήλης που θα προβληθεί"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:26
-msgid ""
-"This key defines which page of the sidebar should be displayed and it's used"
-" to remember the setting across sessions.. It can be \"speller\" or "
-"\"databases\"."
-msgstr "Αυτό το κλειδί καθορίζει το ποιά σελίδα θα εμφανίζεται στη πλευρική στήλη, και χρησιμοποιείται για την απομνημόνευση της κατάστασης ανάμεσα στις συνεδρίες. Μπορεί να είναι  \"speller\" ή \"databases\"."
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:27
-msgid "The width of the sidebar"
-msgstr "Το πλάτος της πλευρικής στήλης"
-
-#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:28
-msgid ""
-"This key defines the width of the sidebar and it's used to remember the "
-"setting across sessions."
-msgstr "Αυτό το κλειδί καθορίζει το πλάτος της πλευρικής στήλης και χρησιμοποιείται για την απομνημόνευση των ρυθμίσεων ανάμεσα στια συνεδρίες."
-
-#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:1
-msgid "_Select a dictionary source for looking up words:"
-msgstr "Επι_λέξτε μια πηγή λεξικού για την αναζήτηση λέξεων:"
-
-#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:2
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:6
-msgid "Source"
-msgstr "Πηγή"
-
-#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:3
-msgid "_Print font:"
-msgstr "Γραμματοσειρά εκτύ_πωσης:"
-
-#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:4
-msgid "Print"
-msgstr "Εκτύπωση"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:1
-msgid "_Description:"
-msgstr "_Περιγραφή:"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:2
-msgid "_Transport:"
-msgstr "Μετα_φορά:"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:3
-msgid "H_ostname:"
-msgstr "Όνομα _συστήματος"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:5
-msgid "Source Name"
-msgstr "Όνομα πηγής"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:7
-msgid "Dictionaries"
-msgstr "Λεξικά"
-
-#: ../mate-dictionary/data/mate-dictionary-source.ui.h:8
-msgid "Strategies"
-msgstr "Στρατηγικές"
 
 #: ../mate-dictionary/data/spanish.desktop.in.h:1
 msgid "Spanish Dictionaries"
@@ -959,54 +805,54 @@ msgstr "Μόνο τοπικά"
 msgid "Whether the context uses only local dictionaries or not"
 msgstr "Αν θα χρησιμοποιούνται ή όχι μόνο τοπικά λεξικά"
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:382
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:386
 msgid "Reload the list of available databases"
 msgstr "Επαναφόρτωση της λίστας των διαθέσιμων βάσεων δεδομένων"
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:394
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:398
 msgid "Clear the list of available databases"
 msgstr "Καθαρισμός της λίστας των διαθέσιμων βάσεων δεδομένων"
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:841
-#: ../mate-dictionary/libgdict/gdict-speller.c:779
-#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:789
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:845
+#: ../mate-dictionary/libgdict/gdict-speller.c:783
+#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:793
 msgid "Error while matching"
 msgstr "Σφάλμα κατά το ταίριασμα"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1143
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1237
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1271
-#: ../logview/logview-window.c:485
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
+#: ../logview/logview-window.c:486
 msgid "Not found"
 msgstr "Δε βρέθηκαν"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1332
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1327
 msgid "F_ind:"
 msgstr "Εύ_ρεση:"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1345
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1340
 msgid "_Previous"
 msgstr "_Προηγούμενο"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1353
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1348
 msgid "_Next"
 msgstr "_Επόμενο"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2528
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2523
 msgid "Error while looking up definition"
 msgstr "Σφάλμα κατά την αναζήτηση ορισμού"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2570
-#: ../mate-dictionary/libgdict/gdict-speller.c:737
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2565
+#: ../mate-dictionary/libgdict/gdict-speller.c:741
 msgid "Another search is in progress"
 msgstr "Μια άλλη αναζήτηση είναι σε εξέλιξη"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2571
-#: ../mate-dictionary/libgdict/gdict-speller.c:738
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2566
+#: ../mate-dictionary/libgdict/gdict-speller.c:742
 msgid "Please wait until the current search ends."
 msgstr "Παρακαλώ περιμένετε μέχρι να τελειώσει η τρέχουσα αναζήτηση."
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2610
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2605
 msgid "Error while retrieving the definition"
 msgstr "Σφάλμα κατά τη λήψη του ορισμού"
 
@@ -1019,13 +865,13 @@ msgid "The filename used by this dictionary source"
 msgstr "Το όνομα αρχείου που χρησιμοποιείται από αυτή τη πηγή λεξικού."
 
 #: ../mate-dictionary/libgdict/gdict-source.c:246
-#: ../gsearchtool/gsearchtool.c:2382
+#: ../gsearchtool/gsearchtool.c:2403
 msgid "Name"
 msgstr "Όνομα"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:247
-msgid "The display name of this dictonary source"
-msgstr "Το όνομα εμφάνισης αυτής της πηγής λεξικού."
+msgid "The display name of this dictionary source"
+msgstr ""
 
 #: ../mate-dictionary/libgdict/gdict-source.c:260
 msgid "Description"
@@ -1036,22 +882,22 @@ msgid "The description of this dictionary source"
 msgstr "Περιγραφή αυτής της πηγής λεξικού"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:274
-#: ../mate-dictionary/libgdict/gdict-speller.c:384
+#: ../mate-dictionary/libgdict/gdict-speller.c:388
 msgid "Database"
 msgstr "Βάση δεδομένων"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:275
-msgid "The default database of this dictonary source"
-msgstr "Η προεπιλεγμένη βάσης δεδομένων αυτής της πηγής λεξικού"
+msgid "The default database of this dictionary source"
+msgstr ""
 
 #: ../mate-dictionary/libgdict/gdict-source.c:288
-#: ../mate-dictionary/libgdict/gdict-speller.c:391
+#: ../mate-dictionary/libgdict/gdict-speller.c:395
 msgid "Strategy"
 msgstr "Στρατηγική"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:289
-msgid "The default strategy of this dictonary source"
-msgstr "Η προεπιλεγμένη στρατηγική που χρησιμοποιείται από τη πηγή λεξικού."
+msgid "The default strategy of this dictionary source"
+msgstr ""
 
 #: ../mate-dictionary/libgdict/gdict-source.c:302
 msgid "Transport"
@@ -1062,7 +908,7 @@ msgid "The transport mechanism used by this dictionary source"
 msgstr "Ο μηχανισμός μεταφοράς που χρησιμοποιείται από τη πηγή λεξικού."
 
 #: ../mate-dictionary/libgdict/gdict-source.c:317
-#: ../mate-dictionary/libgdict/gdict-speller.c:377
+#: ../mate-dictionary/libgdict/gdict-speller.c:381
 msgid "Context"
 msgstr "Περιεχόμενα"
 
@@ -1104,7 +950,7 @@ msgstr "Η πηγή λεξικού δεν έχει όνομα"
 msgid "Dictionary source '%s' has invalid transport '%s'"
 msgstr "Η πηγή λεξικού '%s' έχει μη έγκυρη μεταφορά '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-source-chooser.c:299
+#: ../mate-dictionary/libgdict/gdict-source-chooser.c:303
 msgid "Reload the list of available sources"
 msgstr "Επαναφόρτωση της λίστας των διαθέσιμων πηγών"
 
@@ -1124,27 +970,27 @@ msgstr "Πηγές"
 msgid "Dictionary sources found"
 msgstr "Βρέθηκαν πηγές λεξικού"
 
-#: ../mate-dictionary/libgdict/gdict-speller.c:354
+#: ../mate-dictionary/libgdict/gdict-speller.c:358
 msgid "Clear the list of similar words"
 msgstr "Καθαρισμός λίστας παρόμοιων λέξεων"
 
-#: ../mate-dictionary/libgdict/gdict-speller.c:378
+#: ../mate-dictionary/libgdict/gdict-speller.c:382
 msgid "The GdictContext object used to get the word definition"
 msgstr "Το αντικείμενο GdictContext που χρησιμοποιείται για τη λήψη του ορισμού λέξης"
 
-#: ../mate-dictionary/libgdict/gdict-speller.c:385
+#: ../mate-dictionary/libgdict/gdict-speller.c:389
 msgid "The database used to query the GdictContext"
 msgstr "Η βάση δεδομένων που χρησιμοποιείται για την αναζήτηση GdictContext"
 
-#: ../mate-dictionary/libgdict/gdict-speller.c:392
+#: ../mate-dictionary/libgdict/gdict-speller.c:396
 msgid "The strategy used to query the GdictContext"
 msgstr "Η στρατηγική που χρησιμοποιείται για την αναζήτηση GdictContext"
 
-#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:365
+#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:369
 msgid "Reload the list of available strategies"
 msgstr "Επαναφόρτωση της λίστας των διαθέσιμων στρατηγικών"
 
-#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:377
+#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:381
 msgid "Clear the list of available strategies"
 msgstr "Καθαρισμός της λίστας των διαθέσιμων στρατηγικών"
 
@@ -1170,9 +1016,16 @@ msgid "Show GDict Options"
 msgstr "Εμφάνιση επιλογών GDict"
 
 #: ../mate-dictionary/src/gdict-about.c:57
-#: ../mate-dictionary/src/gdict-applet.c:591
+#: ../mate-dictionary/src/gdict-applet.c:587
 msgid "Look up words in dictionaries"
 msgstr "Αναζήτηση λέξεων στα λεξικά"
+
+#: ../mate-dictionary/src/gdict-about.c:78
+#: ../mate-dictionary/src/gdict-app.c:379
+#: ../mate-dictionary/src/gdict-window.c:604
+#: ../mate-dictionary/src/gdict-window.c:1968
+msgid "Dictionary"
+msgstr "Λεξικό"
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
@@ -1255,131 +1108,141 @@ msgid "strat"
 msgstr "strat"
 
 #. create the new option context
-#: ../mate-dictionary/src/gdict-app.c:367
+#: ../mate-dictionary/src/gdict-app.c:361
 msgid " - Look up words in dictionaries"
 msgstr "- Αναζήτηση λέξης στα λεξικά"
 
-#: ../mate-dictionary/src/gdict-applet.c:206
-#: ../mate-dictionary/src/gdict-window.c:834
+#: ../mate-dictionary/src/gdict-applet.c:207
+#: ../mate-dictionary/src/gdict-window.c:961
 msgid "Save a Copy"
 msgstr "Αποθήκευση ενός αντιγράφου"
 
-#: ../mate-dictionary/src/gdict-applet.c:216
-#: ../mate-dictionary/src/gdict-window.c:844
+#: ../mate-dictionary/src/gdict-applet.c:217
+#: ../mate-dictionary/src/gdict-window.c:971
 msgid "Untitled document"
 msgstr "Ανώνυμο έγγραφο"
 
-#: ../mate-dictionary/src/gdict-applet.c:237
-#: ../mate-dictionary/src/gdict-window.c:865
+#: ../mate-dictionary/src/gdict-applet.c:238
+#: ../mate-dictionary/src/gdict-window.c:992
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "Σφάλμα κατά την εγγραφή στο '%s'"
 
-#: ../mate-dictionary/src/gdict-applet.c:362
+#: ../mate-dictionary/src/gdict-applet.c:358
 msgid "Clear the definitions found"
 msgstr "Εκκαθάριση των ορισμών που βρέθηκαν"
 
-#: ../mate-dictionary/src/gdict-applet.c:364
+#: ../mate-dictionary/src/gdict-applet.c:360
 msgid "Clear definition"
 msgstr "Εκκαθάριση ορισμού λέξης"
 
-#: ../mate-dictionary/src/gdict-applet.c:365
+#: ../mate-dictionary/src/gdict-applet.c:361
 msgid "Clear the text of the definition"
 msgstr "Εκκαθάριση του κειμένου του ορισμού"
 
-#: ../mate-dictionary/src/gdict-applet.c:372
+#: ../mate-dictionary/src/gdict-applet.c:368
 msgid "Print the definitions found"
 msgstr "Εκτύπωση των ορισμών που βρέθηκαν"
 
-#: ../mate-dictionary/src/gdict-applet.c:374
+#: ../mate-dictionary/src/gdict-applet.c:370
 msgid "Print definition"
 msgstr "Εκτύπωση ορισμού λέξης"
 
-#: ../mate-dictionary/src/gdict-applet.c:375
+#: ../mate-dictionary/src/gdict-applet.c:371
 msgid "Print the text of the definition"
 msgstr "Εκτύπωση του κειμένου του ορισμού"
 
-#: ../mate-dictionary/src/gdict-applet.c:382
+#: ../mate-dictionary/src/gdict-applet.c:378
 msgid "Save the definitions found"
 msgstr "Αποθήκευση των ορισμών που βρέθηκαν"
 
-#: ../mate-dictionary/src/gdict-applet.c:384
+#: ../mate-dictionary/src/gdict-applet.c:380
 msgid "Save definition"
 msgstr "Αποθήκευση ορισμού"
 
-#: ../mate-dictionary/src/gdict-applet.c:385
+#: ../mate-dictionary/src/gdict-applet.c:381
 msgid "Save the text of the definition to a file"
 msgstr "Αποθήκευση του κειμένου του ορισμού σε αρχείο"
 
-#: ../mate-dictionary/src/gdict-applet.c:533
+#: ../mate-dictionary/src/gdict-applet.c:529
 msgid "Click to view the dictionary window"
 msgstr "Κάντε κλικ για να δείτε το παράθυρο του λεξικού"
 
-#: ../mate-dictionary/src/gdict-applet.c:535
+#: ../mate-dictionary/src/gdict-applet.c:531
 msgid "Toggle dictionary window"
 msgstr "Εναλλαγή παραθύρου λεξικού"
 
-#: ../mate-dictionary/src/gdict-applet.c:536
+#: ../mate-dictionary/src/gdict-applet.c:532
 msgid "Show or hide the definition window"
 msgstr "Προβολή η απόκρυψη του παραθύρου του ορισμού"
 
-#: ../mate-dictionary/src/gdict-applet.c:588
+#: ../mate-dictionary/src/gdict-applet.c:584
 msgid "Type the word you want to look up"
 msgstr "Εισάγετε τη λέξη που θέλετε να αναζητήσετε"
 
-#: ../mate-dictionary/src/gdict-applet.c:590
+#: ../mate-dictionary/src/gdict-applet.c:586
 msgid "Dictionary entry"
 msgstr "Λήμμα λεξικού"
 
-#: ../mate-dictionary/src/gdict-applet.c:716
-#: ../mate-dictionary/src/gdict-window.c:998
+#: ../mate-dictionary/src/gdict-applet.c:715
+#: ../mate-dictionary/src/gdict-window.c:1097
 msgid "Dictionary Preferences"
 msgstr "Προτιμήσεις λεξικού"
 
-#: ../mate-dictionary/src/gdict-applet.c:742
-#: ../mate-dictionary/src/gdict-pref-dialog.c:503
-#: ../mate-dictionary/src/gdict-source-dialog.c:479
-#: ../mate-dictionary/src/gdict-window.c:1140
+#: ../mate-dictionary/src/gdict-applet.c:739
+#: ../mate-dictionary/src/gdict-pref-dialog.c:495
+#: ../mate-dictionary/src/gdict-source-dialog.c:478
+#: ../mate-dictionary/src/gdict-window.c:1244
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "Υπήρξε σφάλμα κατά την εμφάνιση της βοήθειας"
 
-#: ../mate-dictionary/src/gdict-applet.c:896
-#: ../mate-dictionary/src/gdict-window.c:514
+#: ../mate-dictionary/src/gdict-applet.c:893
+#: ../mate-dictionary/src/gdict-window.c:519
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "Δεν βρέθηκε διαθέσιμη πηγή λεξικού με το όνομα  '%s'"
 
-#: ../mate-dictionary/src/gdict-applet.c:900
-#: ../mate-dictionary/src/gdict-window.c:518
+#: ../mate-dictionary/src/gdict-applet.c:897
+#: ../mate-dictionary/src/gdict-window.c:523
 msgid "Unable to find dictionary source"
 msgstr "Αδυναμία εύρεσης πηγής λεξικού."
 
-#: ../mate-dictionary/src/gdict-applet.c:916
-#: ../mate-dictionary/src/gdict-window.c:534
+#: ../mate-dictionary/src/gdict-applet.c:913
+#: ../mate-dictionary/src/gdict-window.c:539
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "Δεν υπάρχει διαθέσιμο περιεχόμενο για τη πηγή '%s'"
 
-#: ../mate-dictionary/src/gdict-applet.c:920
-#: ../mate-dictionary/src/gdict-window.c:538
+#: ../mate-dictionary/src/gdict-applet.c:917
+#: ../mate-dictionary/src/gdict-window.c:543
 msgid "Unable to create a context"
 msgstr "Αδύνατη η δημιουργία περιεχομένου"
 
-#: ../mate-dictionary/src/gdict-applet.c:1172
-#: ../mate-dictionary/src/gdict-window.c:2078
-msgid "Unable to connect to MateConf"
-msgstr "Αδύνατη η σύνδεση με το MateConf"
+#: ../mate-dictionary/src/gdict-applet.c:1198
+msgid "_Look Up Selected Text"
+msgstr "Αναζήτηση επι_λεγμένου κειμένου"
 
-#: ../mate-dictionary/src/gdict-applet.c:1185
-#: ../mate-dictionary/src/gdict-window.c:2091
-msgid "Unable to get notification for preferences"
-msgstr "Αδυναμία λήψης ειδοποίησης για προτιμήσεις"
+#: ../mate-dictionary/src/gdict-applet.c:1201
+msgid "Cl_ear"
+msgstr "Ε_κκαθάριση"
 
-#: ../mate-dictionary/src/gdict-applet.c:1199
-#: ../mate-dictionary/src/gdict-window.c:2104
-msgid "Unable to get notification for the document font"
-msgstr "Αδυναμία λήψης ειδοποίησης για τη γραμματοσειρά εγγράφου"
+#: ../mate-dictionary/src/gdict-applet.c:1204
+msgid "_Print"
+msgstr "Εκτύ_πωση"
+
+#: ../mate-dictionary/src/gdict-applet.c:1207
+msgid "_Save"
+msgstr "Απο_θήκευση"
+
+#: ../mate-dictionary/src/gdict-applet.c:1210
+msgid "Preferences"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-applet.c:1216
+#: ../mate-dictionary/src/gdict-window.c:1334 ../logview/logview-window.c:840
+msgid "_About"
+msgstr "_Περί"
 
 #: ../mate-dictionary/src/gdict-common.c:80
 #, c-format
@@ -1392,249 +1255,299 @@ msgstr "Αδύνατη η μετονομασία του αρχείου '%s' σε
 msgid "Unable to create the data directory '%s': %s"
 msgstr "Αδυναμία δημιουργίας του καταλόγου δεδομένων '%s': %s"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:244
+#: ../mate-dictionary/src/gdict-pref-dialog.c:240
+#: ../mate-dictionary/src/gdict-pref-dialog.c:429
 msgid "Edit Dictionary Source"
 msgstr "Επεξεργασία πηγής λεξικού"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:308
+#: ../mate-dictionary/src/gdict-pref-dialog.c:304
 msgid "Add Dictionary Source"
 msgstr "Προσθήκης πηγής λεξικού"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:353
+#: ../mate-dictionary/src/gdict-pref-dialog.c:349
 #, c-format
 msgid "Remove \"%s\"?"
 msgstr "Διαγραφή \"%s\";"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:355
+#: ../mate-dictionary/src/gdict-pref-dialog.c:351
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "Αυτό θα διαγράψει οριστικά την πηγή λεξικού από τη λίστα."
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:385
+#: ../mate-dictionary/src/gdict-pref-dialog.c:381
 #, c-format
 msgid "Unable to remove source '%s'"
 msgstr "Αδύνατη η απομάκρυνση πηγής '%s'"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:666
+#: ../mate-dictionary/src/gdict-pref-dialog.c:642
 msgid "Add a new dictionary source"
 msgstr "Προσθήκη μιας νέας πηγής λεξικού"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:672
+#: ../mate-dictionary/src/gdict-pref-dialog.c:648
 msgid "Remove the currently selected dictionary source"
 msgstr "Απομάκρυνση της επιλεγμένης πηγής λεξικού"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:685
+#: ../mate-dictionary/src/gdict-pref-dialog.c:654
+msgid "Edit the currently selected dictionary source"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-pref-dialog.c:662
 msgid "Set the font used for printing the definitions"
 msgstr "Ορισμός της γραμματοσειράς εκτύπωσης των ορισμών"
 
-#: ../mate-dictionary/src/gdict-print.c:249
-#: ../mate-dictionary/src/gdict-print.c:313
+#: ../mate-dictionary/src/gdict-print.c:241
+#: ../mate-dictionary/src/gdict-print.c:305
 #, c-format
 msgid "Unable to display the preview: %s"
 msgstr "Αδύνατη η προβολή της προεπισκόπησης: %s"
 
-#: ../mate-dictionary/src/gdict-source-dialog.c:341
-#: ../mate-dictionary/src/gdict-source-dialog.c:434
+#: ../mate-dictionary/src/gdict-source-dialog.c:340
+#: ../mate-dictionary/src/gdict-source-dialog.c:433
 msgid "Unable to create a source file"
 msgstr "Αδύνατη η δημιουργία ενός αρχείου πηγής"
 
-#: ../mate-dictionary/src/gdict-source-dialog.c:359
-#: ../mate-dictionary/src/gdict-source-dialog.c:452
+#: ../mate-dictionary/src/gdict-source-dialog.c:358
+#: ../mate-dictionary/src/gdict-source-dialog.c:451
 msgid "Unable to save source file"
 msgstr "Αδυναμία αποθήκευσης αρχείου πηγής"
 
-#: ../mate-dictionary/src/gdict-window.c:315
+#: ../mate-dictionary/src/gdict-window.c:314
 #, c-format
 msgid "Searching for '%s'..."
 msgstr "Αναζήτηση για '%s'..."
 
-#: ../mate-dictionary/src/gdict-window.c:347
-#: ../mate-dictionary/src/gdict-window.c:404
+#: ../mate-dictionary/src/gdict-window.c:346
+#: ../mate-dictionary/src/gdict-window.c:403
 msgid "No definitions found"
 msgstr "Δε βρέθηκαν ορισμοί"
 
-#: ../mate-dictionary/src/gdict-window.c:349
+#: ../mate-dictionary/src/gdict-window.c:348
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
 msgstr[0] "Βρέθηκε ένας ορισμός"
 msgstr[1] "Βρέθηκαν %d ορισμοί"
 
-#: ../mate-dictionary/src/gdict-window.c:603
+#: ../mate-dictionary/src/gdict-window.c:602
 #, c-format
 msgid "%s - Dictionary"
 msgstr "%s - Λεξικό"
 
-#: ../mate-dictionary/src/gdict-window.c:1175 ../logview/logview-window.c:807
+#: ../mate-dictionary/src/gdict-window.c:1278 ../logview/logview-window.c:808
 msgid "_File"
 msgstr "Α_ρχείο"
 
-#: ../mate-dictionary/src/gdict-window.c:1178
+#: ../mate-dictionary/src/gdict-window.c:1281
 msgid "_Go"
 msgstr "_Μετάβαση"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1182
+#: ../mate-dictionary/src/gdict-window.c:1285
 msgid "_New"
 msgstr "_Νέο"
 
-#: ../mate-dictionary/src/gdict-window.c:1183
+#: ../mate-dictionary/src/gdict-window.c:1286
 msgid "New look up"
 msgstr "Νέα αναζήτηση"
 
-#: ../mate-dictionary/src/gdict-window.c:1184
+#: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_Save a Copy..."
 msgstr "Απο_θήκευση ενός αντιγράφου..."
 
-#: ../mate-dictionary/src/gdict-window.c:1186
+#: ../mate-dictionary/src/gdict-window.c:1289
 msgid "P_review..."
 msgstr "Π_ροεπισκόπηση..."
 
-#: ../mate-dictionary/src/gdict-window.c:1187
+#: ../mate-dictionary/src/gdict-window.c:1290
 msgid "Preview this document"
 msgstr "Προεπισκόπηση του εγγράφου"
 
-#: ../mate-dictionary/src/gdict-window.c:1188
+#: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_Print..."
 msgstr "Εκτύ_πωση..."
 
-#: ../mate-dictionary/src/gdict-window.c:1189
+#: ../mate-dictionary/src/gdict-window.c:1292
 msgid "Print this document"
 msgstr "Εκτύπωση του εγγράφου"
 
-#: ../mate-dictionary/src/gdict-window.c:1196 ../logview/logview-window.c:822
+#: ../mate-dictionary/src/gdict-window.c:1299 ../logview/logview-window.c:823
 msgid "Select _All"
 msgstr "Επιλογή ό_λων"
 
-#: ../mate-dictionary/src/gdict-window.c:1199
+#: ../mate-dictionary/src/gdict-window.c:1302
 msgid "Find a word or phrase in the document"
 msgstr "Εύρεση μια λέξης ή φράσης στο κείμενο"
 
-#: ../mate-dictionary/src/gdict-window.c:1201
+#: ../mate-dictionary/src/gdict-window.c:1304
 msgid "Find Ne_xt"
 msgstr "Εύρεση επο_μένου"
 
-#: ../mate-dictionary/src/gdict-window.c:1203
+#: ../mate-dictionary/src/gdict-window.c:1306
 msgid "Find Pre_vious"
 msgstr "Εύρεση _προηγουμένου"
 
+#: ../mate-dictionary/src/gdict-window.c:1308
+msgid "_Preferences"
+msgstr "_Προτιμήσεις"
+
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1209
+#: ../mate-dictionary/src/gdict-window.c:1312
 msgid "_Previous Definition"
 msgstr "_Προηγούμενος ορισμός"
 
-#: ../mate-dictionary/src/gdict-window.c:1210
+#: ../mate-dictionary/src/gdict-window.c:1313
 msgid "Go to the previous definition"
 msgstr "Μετάβαση στο προηγούμενο ορισμό"
 
-#: ../mate-dictionary/src/gdict-window.c:1211
+#: ../mate-dictionary/src/gdict-window.c:1314
 msgid "_Next Definition"
 msgstr "Επόμε_νος ορισμός"
 
-#: ../mate-dictionary/src/gdict-window.c:1212
+#: ../mate-dictionary/src/gdict-window.c:1315
 msgid "Go to the next definition"
 msgstr "Μετάβαση στον επόμενο ορισμό"
 
-#: ../mate-dictionary/src/gdict-window.c:1213
+#: ../mate-dictionary/src/gdict-window.c:1316
 msgid "_First Definition"
 msgstr "Π_ρώτος ορισμός"
 
-#: ../mate-dictionary/src/gdict-window.c:1214
+#: ../mate-dictionary/src/gdict-window.c:1317
 msgid "Go to the first definition"
 msgstr "Μετάβαση στο πρώτο ορισμό"
 
-#: ../mate-dictionary/src/gdict-window.c:1215
+#: ../mate-dictionary/src/gdict-window.c:1318
 msgid "_Last Definition"
 msgstr "_Τελευταίος ορισμός"
 
-#: ../mate-dictionary/src/gdict-window.c:1216
+#: ../mate-dictionary/src/gdict-window.c:1319
 msgid "Go to the last definition"
 msgstr "Μετάβαση στον τελευταίο ορισμό"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1219
+#: ../mate-dictionary/src/gdict-window.c:1322
 msgid "Similar _Words"
 msgstr "Παρόμοιες _λέξεις"
 
-#: ../mate-dictionary/src/gdict-window.c:1221
+#: ../mate-dictionary/src/gdict-window.c:1324
 msgid "Dictionary Sources"
 msgstr "Πηγές λεξικού"
 
-#: ../mate-dictionary/src/gdict-window.c:1223
+#: ../mate-dictionary/src/gdict-window.c:1326
 msgid "Available _Databases"
 msgstr "Διαθέσιμες _βάσεις δεδομένων"
 
-#: ../mate-dictionary/src/gdict-window.c:1225
+#: ../mate-dictionary/src/gdict-window.c:1328
 msgid "Available St_rategies"
 msgstr "Διαθέσιμες _στρατηγικές"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1242
+#: ../mate-dictionary/src/gdict-window.c:1345
 msgid "_Sidebar"
 msgstr "Πλευρική _στήλη"
 
-#: ../mate-dictionary/src/gdict-window.c:1244
+#: ../mate-dictionary/src/gdict-window.c:1347
 msgid "S_tatusbar"
 msgstr "_Γραμμή κατάστασης"
 
-#: ../mate-dictionary/src/gdict-window.c:1365
+#: ../mate-dictionary/src/gdict-window.c:1412
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "Επιλέχθηκε`%s' πηγή λεξικού"
 
-#: ../mate-dictionary/src/gdict-window.c:1386
+#: ../mate-dictionary/src/gdict-window.c:1433
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "Επιλέχθηκε η στρατηγική `%s' "
 
-#: ../mate-dictionary/src/gdict-window.c:1406
+#: ../mate-dictionary/src/gdict-window.c:1453
 #, c-format
 msgid "Database `%s' selected"
 msgstr "Επιλέχθηκε η βάση δεδομένων %s'"
 
-#: ../mate-dictionary/src/gdict-window.c:1426
+#: ../mate-dictionary/src/gdict-window.c:1473
 #, c-format
 msgid "Word `%s' selected"
 msgstr "Επιλέχθηκε η λέξη `%s'"
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1448
+#: ../mate-dictionary/src/gdict-window.c:1498
 msgid "Double-click on the word to look up"
 msgstr "Διπλό κλικ στη λέξη που θέλετε να αναζητήσετε"
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1454
+#: ../mate-dictionary/src/gdict-window.c:1504
 msgid "Double-click on the matching strategy to use"
 msgstr "Διπλό κλικ στη στρατηγική που θα χρησιμοποιηθεί"
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1459
+#: ../mate-dictionary/src/gdict-window.c:1509
 msgid "Double-click on the source to use"
 msgstr "Διπλό κλικ στην πηγή που θα χρησιμοποιηθεί"
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1468
+#: ../mate-dictionary/src/gdict-window.c:1518
 msgid "Double-click on the database to use"
 msgstr "Διπλό κλικ στη βάση δεδομένων που θα χρησιμοποιηθεί"
 
-#: ../mate-dictionary/src/gdict-window.c:1755
+#: ../mate-dictionary/src/gdict-window.c:1770
 msgid "Look _up:"
 msgstr "_Αναζήτηση:"
 
-#: ../mate-dictionary/src/gdict-window.c:1829
+#: ../mate-dictionary/src/gdict-window.c:1849
 msgid "Similar words"
 msgstr "Παρόμοιες λέξεις"
 
-#: ../mate-dictionary/src/gdict-window.c:1842
+#: ../mate-dictionary/src/gdict-window.c:1862
 msgid "Available dictionaries"
 msgstr "Διαθέσιμα λεξικά"
 
-#: ../mate-dictionary/src/gdict-window.c:1855
+#: ../mate-dictionary/src/gdict-window.c:1880
 msgid "Available strategies"
 msgstr "Διαθέσιμες στρατηγικές"
 
-#: ../mate-dictionary/src/gdict-window.c:1866
+#: ../mate-dictionary/src/gdict-window.c:1896
 msgid "Dictionary sources"
 msgstr "Πηγές λεξικού"
+
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:1
+msgid "_Select a dictionary source for looking up words:"
+msgstr "Επι_λέξτε μια πηγή λεξικού για την αναζήτηση λέξεων:"
+
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:2
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:6
+msgid "Source"
+msgstr "Πηγή"
+
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:3
+msgid "_Print font:"
+msgstr "Γραμματοσειρά εκτύ_πωσης:"
+
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:4
+msgid "Print"
+msgstr "Εκτύπωση"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:1
+msgid "_Description:"
+msgstr "_Περιγραφή:"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:2
+msgid "_Transport:"
+msgstr "Μετα_φορά:"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:3
+msgid "H_ostname:"
+msgstr "Όνομα _συστήματος"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:5
+msgid "Source Name"
+msgstr "Όνομα πηγής"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:7
+msgid "Dictionaries"
+msgstr "Λεξικά"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:8
+msgid "Strategies"
+msgstr "Στρατηγικές"
 
 #: ../mate-screenshot/mate-screenshot.c:133
 msgid "Error loading the help page"
@@ -1680,16 +1593,14 @@ msgstr "Επιλογή _περιοχής για λήψη"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#. 
 #: ../mate-screenshot/mate-screenshot.c:478
 msgid "Grab _after a delay of"
 msgstr "Λήψη _μετά από καθυστέρηση "
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#. 
 #: ../mate-screenshot/mate-screenshot.c:498
-#: ../mate-screenshot/mate-screenshot.c:1289
+#: ../mate-screenshot/mate-screenshot.c:1273
 msgid "seconds"
 msgstr "δευτερόλεπτα"
 
@@ -1703,15 +1614,15 @@ msgstr "Λήψη στιγμιότυπου οθόνης"
 msgid "Effects"
 msgstr "Εφέ"
 
-#: ../mate-screenshot/mate-screenshot.c:531
+#: ../mate-screenshot/mate-screenshot.c:530
 msgid "Take _Screenshot"
 msgstr "Λήψη _στιγμιότυπου οθόνης"
 
-#: ../mate-screenshot/mate-screenshot.c:657
+#: ../mate-screenshot/mate-screenshot.c:650
 msgid "Error while saving screenshot"
 msgstr "Σφάλμα κατά το αποθήκευση στιγμιοτύπου οθόνης"
 
-#: ../mate-screenshot/mate-screenshot.c:660
+#: ../mate-screenshot/mate-screenshot.c:653
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -1719,15 +1630,15 @@ msgid ""
 " Please choose another location and retry."
 msgstr "Αδυναμία αποθήκευσης του στιγμιοτύπου στο %s.\n Το σφάλμα ήταν %s\n Παρακαλώ, επιλέξτε άλλη τοποθεσία και προσπαθήστε ξανά."
 
-#: ../mate-screenshot/mate-screenshot.c:792
+#: ../mate-screenshot/mate-screenshot.c:785
 msgid "Screenshot taken"
 msgstr "Λήφθηκε στιγμιότυπο οθόνης"
 
-#: ../mate-screenshot/mate-screenshot.c:846
+#: ../mate-screenshot/mate-screenshot.c:840
 msgid "Unable to take a screenshot of the current window"
 msgstr "Αδυναμία λήψης στιγμιότυπου οθόνης του τρέχοντος παραθύρου"
 
-#: ../mate-screenshot/mate-screenshot.c:896
+#: ../mate-screenshot/mate-screenshot.c:893
 #, c-format
 msgid "Screenshot-%s.png"
 msgstr "Screenshot-%s.png"
@@ -1735,15 +1646,15 @@ msgstr "Screenshot-%s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if a specific window is
 #. * taken
-#: ../mate-screenshot/mate-screenshot.c:903
+#: ../mate-screenshot/mate-screenshot.c:900
 #, c-format
 msgid "Screenshot-%s-%d.png"
 msgstr "Screenshot-%s-%d.png"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/mate-screenshot.c:913
-#: ../mate-screenshot/screenshot-dialog.c:353
+#: ../mate-screenshot/mate-screenshot.c:910
+#: ../mate-screenshot/screenshot-dialog.c:369
 #: ../mate-screenshot/screenshot-save.c:196
 msgid "Screenshot.png"
 msgstr "Screenshot.png"
@@ -1751,53 +1662,65 @@ msgstr "Screenshot.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/mate-screenshot.c:920
+#: ../mate-screenshot/mate-screenshot.c:917
 #, c-format
 msgid "Screenshot-%d.png"
 msgstr "Screenshot-%d.png"
 
-#: ../mate-screenshot/mate-screenshot.c:1285
+#: ../mate-screenshot/mate-screenshot.c:1269
 msgid "Grab a window instead of the entire screen"
 msgstr "Λήψη ενός παραθύρου αντί ολόκληρης της οθόνης"
 
-#: ../mate-screenshot/mate-screenshot.c:1286
+#: ../mate-screenshot/mate-screenshot.c:1270
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Λήψη μιας περιοχής της οθόνης αντί ολόκληρης της οθόνης"
 
-#: ../mate-screenshot/mate-screenshot.c:1287
+#: ../mate-screenshot/mate-screenshot.c:1271
 msgid "Include the window border with the screenshot"
 msgstr "Να συμπεριλαμβάνεται το περίγραμμα παραθύρου με το στιγμιότυπο οθόνης"
 
-#: ../mate-screenshot/mate-screenshot.c:1288
+#: ../mate-screenshot/mate-screenshot.c:1272
 msgid "Remove the window border from the screenshot"
 msgstr "Αφαίρεση του περιγράμματος παραθύρου από το στιγμιότυπο οθόνης"
 
-#: ../mate-screenshot/mate-screenshot.c:1289
+#: ../mate-screenshot/mate-screenshot.c:1273
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Λήψη στιγμιότυπου οθόνης μετά από μια καθορισμένη καθυστέρηση (σε δευτερόλεπτα)"
 
-#: ../mate-screenshot/mate-screenshot.c:1290
+#: ../mate-screenshot/mate-screenshot.c:1274
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Εφέ για προσθήκη στο περίγραμμα  (σκιά, περίγραμμα ή κανένα)"
 
-#: ../mate-screenshot/mate-screenshot.c:1290
+#: ../mate-screenshot/mate-screenshot.c:1274
 msgid "effect"
 msgstr "Εφέ"
 
-#: ../mate-screenshot/mate-screenshot.c:1291
+#: ../mate-screenshot/mate-screenshot.c:1275
 msgid "Interactively set options"
 msgstr "Διαδραστικός ορισμός επιλογών"
 
-#: ../mate-screenshot/mate-screenshot.c:1302
+#: ../mate-screenshot/mate-screenshot.c:1284
 msgid "Take a picture of the screen"
 msgstr "Λήψη μιας φωτογραφίας της οθόνης"
 
-#: ../mate-screenshot/mate-screenshot.c:1320
+#: ../mate-screenshot/mate-screenshot.c:1302
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"
 msgstr "Συγκρουόμενες επιλογές: Τα --windows και --area δεν πρέπει να χρησιμοποιούνται την ίδια στιγμή.\n"
+
+#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:1
+msgid "A screenshot utility for MATE Desktop"
+msgstr ""
+
+#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Screenshot is a simple utility that lets you capture screenshots of"
+" your desktop or of application windows. You can select to copy them to the "
+"system clipboard or save them in Portable Network Graphics (.png) image "
+"format. </p>"
+msgstr ""
 
 #: ../mate-screenshot/mate-screenshot.desktop.in.h:2
 msgid "Save images of your desktop or individual windows"
@@ -1824,65 +1747,58 @@ msgstr "Αποθήκευση στο _φάκελο:"
 msgid "*"
 msgstr "*"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:1
-msgid "Window-specific screenshot (deprecated)"
-msgstr "Στιγμιότυπο οθόνης συγκεκριμένου παραθύρου (υπό κατάργηση)"
-
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:2
-msgid ""
-"Grab just the current window, rather than the whole desktop. This key has "
-"been deprecated and it is no longer in use."
-msgstr "Λήψη μόνο του τρέχοντος παραθύρου αντί όλης της επιφάνειας εργασίας. Αυτό το κλειδί τελεί υπό κατάργηση και δεν χρησιμοποιείται πλέον."
-
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:3
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:1
 msgid "Screenshot delay"
 msgstr "Καθυστέρηση στιγμιότυπου οθόνης"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:4
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:2
 msgid "The number of seconds to wait before taking the screenshot."
 msgstr "Ο αριθμός των δευτερολέπτων αναμονής πριν τη λήψη στιγμιοτύπου οθόνης"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:5
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:3
 msgid "Screenshot directory"
 msgstr "Κατάλογος στιγμιότυπου οθόνης"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:6
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:4
 msgid "The directory the last screenshot was saved in."
 msgstr "Ο κατάλογος που την προηγούμενη φορά αποθηκεύτηκε στιγμιότυπο οθόνης"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:7
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:5
 msgid "Include Border"
 msgstr "Να συμπεριλαμβάνεται το περίγραμμα"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:8
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:6
 msgid "Include the window manager border along with the screenshot"
 msgstr "Να συμπεριλαμβάνεται το περίγραμμα του διαχειριστή παραθύρων μαζί με το στιγμιότυπο οθόνης"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:9
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:7
 msgid "Include Pointer"
 msgstr "Να συμπεριλαμβάνεται ο δείκτης"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:10
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:8
 msgid "Include the pointer in the screenshot"
 msgstr "Να συμπεριλαμβάνεται ο δείκτης στο στιγμιότυπο οθόνης"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:11
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:9
 msgid "Border Effect"
 msgstr "Εφέ περιγράμματος"
 
-#: ../mate-screenshot/mate-screenshot.schemas.in.h:12
+#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:10
 msgid ""
 "Effect to add to the outside of a border. Possible values are \"shadow\", "
 "\"none\", and \"border\"."
 msgstr "Εφέ για προσθήκη στο εξωτερικό του περιγράμματος. Πιθανές τιμές είναι  \"σκιά\", \"τίποτα\", και \"περίγραμμα\"."
 
-#: ../mate-screenshot/screenshot-dialog.c:236
+#: ../mate-screenshot/screenshot-dialog.c:246
+#, c-format
 msgid ""
-"UI definition file for the screenshot program is missing.\n"
-"Please check your installation of mate-utils"
-msgstr "Το αρχείο ορισμού UI  για το πρόγραμμα λήψης στιγμιότυπου οθόνης απουσιάζει.\nΠαρακαλώ ελέγξτε την εγκατάσταση του mate-utils"
+"Error loading UI definition file for the screenshot program: \n"
+"%s\n"
+"\n"
+"Please check your installation of mate-utils."
+msgstr ""
 
-#: ../mate-screenshot/screenshot-dialog.c:257
+#: ../mate-screenshot/screenshot-dialog.c:269
 msgid "Select a folder"
 msgstr "Επιλογή ενός φακέλου"
 
@@ -1904,7 +1820,7 @@ msgid "Unknown error saving screenshot to disk"
 msgstr "Άγνωστο σφάλμα αποθήκευσης στιγμιότυπου οθόνης στο δίσκο."
 
 #. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-#: ../mate-screenshot/screenshot-utils.c:894
+#: ../mate-screenshot/screenshot-utils.c:998
 msgid "Untitled Window"
 msgstr "Παράθυρο δίχως τίτλο"
 
@@ -1918,7 +1834,7 @@ msgid "The file \"%s\" already exists. Would you like to replace it?"
 msgstr "Το αρχείο \"%s\" υπάρχει ήδη. Θέλετε να το αντικαταστήσετε;"
 
 #: ../mate-screenshot/screenshot-xfer.c:82
-#: ../gsearchtool/gsearchtool-callbacks.c:1722
+#: ../gsearchtool/gsearchtool-callbacks.c:1726
 msgid "_Replace"
 msgstr "Α_ντικατάσταση"
 
@@ -1930,456 +1846,539 @@ msgstr "Αποθήκευση αρχείου..."
 msgid "Can't access source file"
 msgstr "Αδυναμία πρόσβασης στο αρχείο πηγής"
 
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
+msgid "A file searching tool for MATE Desktop"
+msgstr ""
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Search Tool is a simple but powerful utility that allows you to "
+"search for files and folders on any mounted file system. Its interface gives"
+" you instant access to a wide variety of parameters for each search, such as"
+" text contained within a file, ownership, date of modification, file size, "
+"folder exclusion, etc.. </p>"
+msgstr ""
+
 #: ../gsearchtool/mate-search-tool.desktop.in.h:1
-msgid "Search for Files..."
-msgstr "Αναζήτηση για αρχεία..."
+msgid "MATE Search Tool"
+msgstr ""
 
 #: ../gsearchtool/mate-search-tool.desktop.in.h:2
 msgid "Locate documents and folders on this computer by name or content"
 msgstr "Εντοπισμός εγγράφων και φακέλων σε αυτό τον υπολογιστή με βάση το όνομα ή το περιεχόμενο"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:1
-msgid "Show Additional Options"
-msgstr "Εμφάνιση πρόσθετων επιλογών"
+#: ../gsearchtool/gsearchtool.c:82
+msgid "Contains the _text"
+msgstr "Περιέχει το _κείμενο"
 
-#. Translators: The quoted text is the label of the additional
-#. options expander that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:4
+#: ../gsearchtool/gsearchtool.c:84
+msgid "_Date modified less than"
+msgstr "Ημερομηνία τ_ροποποίησης μικρότερη από"
+
+#: ../gsearchtool/gsearchtool.c:84 ../gsearchtool/gsearchtool.c:85
+msgid "days"
+msgstr "ημέρες"
+
+#: ../gsearchtool/gsearchtool.c:85
+msgid "Date modified more than"
+msgstr "Ημερομηνία τροποποίησης μεγαλύτερη από"
+
+#: ../gsearchtool/gsearchtool.c:87
+msgid "S_ize at least"
+msgstr "Μέ_γεθος τουλάχιστον"
+
+#: ../gsearchtool/gsearchtool.c:87 ../gsearchtool/gsearchtool.c:88
+msgid "kilobytes"
+msgstr "kilobytes"
+
+#: ../gsearchtool/gsearchtool.c:88
+msgid "Si_ze at most"
+msgstr "Μέ_γεθος το μέγιστο"
+
+#: ../gsearchtool/gsearchtool.c:89
+msgid "File is empty"
+msgstr "Το αρχείο είναι κενό"
+
+#: ../gsearchtool/gsearchtool.c:91
+msgid "Owned by _user"
+msgstr "Ανήκει σε _χρήστη"
+
+#: ../gsearchtool/gsearchtool.c:92
+msgid "Owned by _group"
+msgstr "Ανήκει σε ο_μάδα"
+
+#: ../gsearchtool/gsearchtool.c:93
+msgid "Owner is unrecognized"
+msgstr "Μη αναγνωρίσιμος ιδιοκτήτης"
+
+#: ../gsearchtool/gsearchtool.c:95
+msgid "Na_me does not contain"
+msgstr "Το ό_νομα δεν περιέχει"
+
+#: ../gsearchtool/gsearchtool.c:96
+msgid "Name matches regular e_xpression"
+msgstr "Ταίριασμα κανονικής έ_κφρασης"
+
+#: ../gsearchtool/gsearchtool.c:98
+msgid "Show hidden and backup files"
+msgstr "Εμφάνιση κρυφών αρχείων και αρχείων ασφαλείας."
+
+#: ../gsearchtool/gsearchtool.c:99
+msgid "Follow symbolic links"
+msgstr "Ακολούθηση συμβολικών συνδέσμων"
+
+#: ../gsearchtool/gsearchtool.c:100
+msgid "Exclude other filesystems"
+msgstr "Να μη συμπεριλαμβάνει άλλα συστήματα αρχείων."
+
+#: ../gsearchtool/gsearchtool.c:158
+msgid "Show version of the application"
+msgstr "Προβολή της έκδοσης της εφαρμογής"
+
+#: ../gsearchtool/gsearchtool.c:159 ../gsearchtool/gsearchtool.c:164
+#: ../gsearchtool/gsearchtool.c:173
+msgid "STRING"
+msgstr "ΑΛΦΑΡΙΘΜΗΤΙΚΟ"
+
+#: ../gsearchtool/gsearchtool.c:160
+msgid "PATH"
+msgstr "ΔΙΑΔΡΟΜΗ"
+
+#: ../gsearchtool/gsearchtool.c:161
+msgid "VALUE"
+msgstr "ΤΙΜΗ"
+
+#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
+msgid "DAYS"
+msgstr "ΗΜΕΡΕΣ"
+
+#: ../gsearchtool/gsearchtool.c:167 ../gsearchtool/gsearchtool.c:168
+msgid "KILOBYTES"
+msgstr "KILOBYTES"
+
+#: ../gsearchtool/gsearchtool.c:170
+msgid "USER"
+msgstr "ΧΡΗΣΤΗΣ"
+
+#: ../gsearchtool/gsearchtool.c:171
+msgid "GROUP"
+msgstr "ΟΜΑΔΑ"
+
+#: ../gsearchtool/gsearchtool.c:174
+msgid "PATTERN"
+msgstr "ΜΟΤΙΒΟ"
+
+#: ../gsearchtool/gsearchtool.c:385
+msgid "A locate database has probably not been created."
+msgstr "Πιθανόν να μην έχει δημιουργηθεί μια βάση δεδομένων locate."
+
+#: ../gsearchtool/gsearchtool.c:487
+#, c-format
+msgid "Character set conversion failed for \"%s\""
+msgstr "Αποτυχία μετατροπής κωδικοποίησης χαρακτήρων για \"%s\""
+
+#: ../gsearchtool/gsearchtool.c:511
+msgid "Searching..."
+msgstr "Αναζήτηση..."
+
+#: ../gsearchtool/gsearchtool.c:511 ../gsearchtool/gsearchtool.c:1031
+#: ../gsearchtool/gsearchtool.c:3030
+msgid "Search for Files"
+msgstr "Αναζήτηση για αρχεία"
+
+#: ../gsearchtool/gsearchtool.c:977 ../gsearchtool/gsearchtool.c:1006
+msgid "No files found"
+msgstr "Δε βρέθηκαν αρχεία"
+
+#: ../gsearchtool/gsearchtool.c:999
+msgid "(stopped)"
+msgstr "(διακόπηκε)"
+
+#: ../gsearchtool/gsearchtool.c:1005
+msgid "No Files Found"
+msgstr "Δεν βρέθηκαν αρχεία"
+
+#: ../gsearchtool/gsearchtool.c:1010
+#, c-format
+msgid "%'d File Found"
+msgid_plural "%'d Files Found"
+msgstr[0] "Βρέθηκε %'d αρχείο"
+msgstr[1] "Βρέθηκαν %'d αρχεία"
+
+#: ../gsearchtool/gsearchtool.c:1014 ../gsearchtool/gsearchtool.c:1052
+#, c-format
+msgid "%'d file found"
+msgid_plural "%'d files found"
+msgstr[0] "Βρέθηκε %'d αρχείο"
+msgstr[1] "Βρέθηκαν %'d αρχεία"
+
+#: ../gsearchtool/gsearchtool.c:1143
+msgid "Entry changed called for a non entry option!"
+msgstr "Η αλλαγή εισαγωγής καλέστηκε για επιλογή που δεν επιτρέπει εισαγωγή!"
+
+#: ../gsearchtool/gsearchtool.c:1308
+msgid "Set the text of \"Name contains\" search option"
+msgstr "Ορισμός του κειμένου της επιλογής αναζήτησης \"'Όνομα περιέχει'\""
+
+#: ../gsearchtool/gsearchtool.c:1309
+msgid "Set the text of \"Look in folder\" search option"
+msgstr "Ορισμός του κειμένου της επιλογής αναζήτησης \"αναζήτηση στο φάκελο\" "
+
+#: ../gsearchtool/gsearchtool.c:1310
+msgid "Sort files by one of the following: name, folder, size, type, or date"
+msgstr "Ταξινόμηση αρχείων σύμφωνα με τα ακόλουθα: όνομα, φάκελος. μέγεθος, τύπος, ή ημερομηνία"
+
+#: ../gsearchtool/gsearchtool.c:1311
+msgid "Set sort order to descending, the default is ascending"
+msgstr "Καθορισμός σειράς ταξινόμησης σε φθίνουσα, η εξ ορισμού είναι αύξουσα"
+
+#: ../gsearchtool/gsearchtool.c:1312
+msgid "Automatically start a search"
+msgstr "Αυτόματη έναρξη μιας αναζήτησης"
+
+#: ../gsearchtool/gsearchtool.c:1318
+#, c-format
+msgid "Select the \"%s\" search option"
+msgstr "Επιλογή της επιλογής αναζήτησης \"%s\""
+
+#: ../gsearchtool/gsearchtool.c:1321
+#, c-format
+msgid "Select and set the \"%s\" search option"
+msgstr "Επιλογή και ορισμός της επιλογής αναζήτησης \"%s\""
+
+#: ../gsearchtool/gsearchtool.c:1428
+msgid "Invalid option passed to sortby command line argument."
+msgstr "Πέρασε μη έγκυρη επιλογή στην εντολή ταξινόμησης κατά."
+
+#: ../gsearchtool/gsearchtool.c:1720
 msgid ""
-"This key determines if the \"Select more options\" section is expanded when "
-"the search tool is started."
-msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Εμφάνιση περισσότερων επιλογών\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+"\n"
+"... Too many errors to display ..."
+msgstr "\n...Πάρα πολλά λάθη για εμφάνιση..."
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:7
-msgid "Select the search option \"Contains the text\""
-msgstr "Επιλογή της επιλογής αναζήτησης \"Περιέχει το κείμενο\""
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:8
+#: ../gsearchtool/gsearchtool.c:1734
 msgid ""
-"This key determines if the \"Contains the text\" search option is selected "
-"when the search tool is started."
-msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης  \"Περιέχει το κείμενο\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+"The search results may be invalid.  There were errors while performing this "
+"search."
+msgstr "Τα αποτελέσματα αναζήτησης μπορεί να μην είναι έγκυρα. Υπήρξαν σφάλματα κατα την εκτέλεση αυτής της αναζήτησης."
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:11
-msgid "Select the search option \"Date modified less than\""
-msgstr "Επιλογή της επιλογής αναζήτησης \"Ημερομηνία τροποποίησης μικρότερη από\""
+#: ../gsearchtool/gsearchtool.c:1746 ../gsearchtool/gsearchtool.c:1790
+msgid "Show more _details"
+msgstr "Εμφάνισης περισσότερων _λεπτομερειών"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:12
+#: ../gsearchtool/gsearchtool.c:1776
 msgid ""
-"This key determines if the \"Date modified less than\" search option is "
-"selected when the search tool is started."
-msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης  \"Ημερομηνία τροποποίησης μικρότερη από\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+"The search results may be out of date or invalid.  Do you want to disable "
+"the quick search feature?"
+msgstr "Τα αποτελέσματα αναζήτησης μπορεί να μην είναι έγκυρα. Θέλετε να απενεργοποιήσετε την λειτουργία της γρήγορης αναζήτησης;"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:15
-msgid "Select the search option \"Date modified more than\""
-msgstr "Επιλογή της επιλογής αναζήτησης \"Ημερομηνία τροποποίησης μεγαλύτερη από\""
+#: ../gsearchtool/gsearchtool.c:1801
+msgid "Disable _Quick Search"
+msgstr "Απενεργοποίηση _γρήγορης αναζήτησης"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:16
-msgid ""
-"This key determines if the \"Date modified more than\" search option is "
-"selected when the search tool is started."
-msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης  \"Ημερομηνία τροποποίησης μεγαλύτερη από\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+#: ../gsearchtool/gsearchtool.c:1828
+#, c-format
+msgid "Failed to set process group id of child %d: %s.\n"
+msgstr "Αποτυχία ορισμού process group id of child %d: %s.\n"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:19
-msgid "Select the search option \"Size at least\""
-msgstr "Επιλογή της επιλογής αναζήτησης \"Μέγεθος τουλάχιστον\""
+#: ../gsearchtool/gsearchtool.c:1853
+msgid "Error parsing the search command."
+msgstr "Σφάλμα κατά την ανάλυση της εντολής αναζήτησης."
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:20
-msgid ""
-"This key determines if the \"Size at least\" search option is selected when "
-"the search tool is started."
-msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Μέγεθος τουλάχιστον\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+#: ../gsearchtool/gsearchtool.c:1885
+msgid "Error running the search command."
+msgstr "Σφάλμα κατά την εκτέλεση της εντολής αναζήτησης."
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:23
-msgid "Select the search option \"Size at most\""
-msgstr "Επιλογή της επιλογής αναζήτησης \"Μέγεθος το περισσότερο\""
+#: ../gsearchtool/gsearchtool.c:2008
+#, c-format
+msgid "Enter a text value for the \"%s\" search option."
+msgstr "Εισάγετε μια τιμή κειμένου για την επιλογή αναζήτησης \"%s\"."
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:24
-msgid ""
-"This key determines if the \"Size at most\" search option is selected when "
-"the search tool is started."
-msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Μέγεθος το περισσότερο\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+#. Translators:  Below is a string displaying the search options name
+#. and unit value.  For example, "\"Date modified less than\" in days".
+#: ../gsearchtool/gsearchtool.c:2013
+#, c-format
+msgid "\"%s\" in %s"
+msgstr "\"%s\" σε %s"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:27
-msgid "Select the search option \"File is empty\""
-msgstr "Επιλογή της επιλογής αναζήτησης \"Το αρχείο είναι κενό\""
+#: ../gsearchtool/gsearchtool.c:2015
+#, c-format
+msgid "Enter a value in %s for the \"%s\" search option."
+msgstr "Εισάγετε μια τιμή σε %s για την επιλογή αναζήτησης  \"%s\""
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:28
-msgid ""
-"This key determines if the \"File is empty\" search option is selected when "
-"the search tool is started."
-msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης  \"Το αρχείο είναι κενό\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+#: ../gsearchtool/gsearchtool.c:2073
+#, c-format
+msgid "Remove \"%s\""
+msgstr "Διαγραφή  \"%s\""
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:31
-msgid "Select the search option \"Owned by user\""
-msgstr "Επιλογή της επιλογής αναζήτησης \"Ανήκει σε χρήστη\""
+#: ../gsearchtool/gsearchtool.c:2074
+#, c-format
+msgid "Click to remove the \"%s\" search option."
+msgstr "Πατήστε για αφαίρεση της  επιλογή αναζήτησης  \"%s\""
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:32
-msgid ""
-"This key determines if the \"Owned by user\" search option is selected when "
-"the search tool is started."
-msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Ανήκει σε χρήστη\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+#: ../gsearchtool/gsearchtool.c:2167
+msgid "A_vailable options:"
+msgstr "Δια_θέσιμες επιλογές:"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:35
-msgid "Select the search option \"Owned by group\""
-msgstr "Επιλογή της επιλογής αναζήτησης \"Ανήκει σε ομάδα\""
+#: ../gsearchtool/gsearchtool.c:2196
+msgid "Available options"
+msgstr "Διαθέσιμες επιλογές:"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:36
-msgid ""
-"This key determines if the \"Owned by group\" search option is selected when"
-" the search tool is started."
-msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Ανήκει σε ομάδα\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+#: ../gsearchtool/gsearchtool.c:2197
+msgid "Select a search option from the drop-down list."
+msgstr "Επιλέξτε μια επιλογή αναζήτησης από την κυλιόμενη λίστα"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:39
-msgid "Select the search option \"Owner is unrecognized\""
-msgstr "Επιλογή της επιλογής αναζήτησης \"Μη αναγνωρίσιμος ιδιοκτήτης\""
+#: ../gsearchtool/gsearchtool.c:2209
+msgid "Add search option"
+msgstr "Προσθήκη επιλογής αναζήτησης"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:40
-msgid ""
-"This key determines if the \"Owner is unrecognized\" search option is "
-"selected when the search tool is started."
-msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Μη αναγνωρίσιμος χρήστης\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+#: ../gsearchtool/gsearchtool.c:2210
+msgid "Click to add the selected available search option."
+msgstr "Πατήστε για προσθήκη της επιλεγμένης διαθέσιμης επιλογής αναζήτησης."
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:43
-msgid "Select the search option \"Name does not contain\""
-msgstr "Επιλογή της επιλογής αναζήτησης \"Το όνομα δεν περιέχει\""
+#: ../gsearchtool/gsearchtool.c:2299
+msgid "S_earch results:"
+msgstr "Απο_τελέσματα αναζήτησης:"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:44
-msgid ""
-"This key determines if the \"Name does not contain\" search option is "
-"selected when the search tool is started."
-msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Όνομα δεν περιέχει\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+#: ../gsearchtool/gsearchtool.c:2343
+msgid "List View"
+msgstr "Προβολή λίστας"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:47
-msgid "Select the search option \"Name matches regular expression\""
-msgstr "Επιλογή της επιλογής αναζήτησης \"Ταίριασμα κανονικής έκφρασης\""
+#: ../gsearchtool/gsearchtool.c:2452
+msgid "Type"
+msgstr "Τύπος"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:48
-msgid ""
-"This key determines if the \"Name matches regular expression\" search option"
-" is selected when the search tool is started."
-msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης  \"'Ονομα ταιριάζει με κανονική έκφραση\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+#: ../gsearchtool/gsearchtool.c:2464
+msgid "Date Modified"
+msgstr "Ημερομηνία τροποποίησης"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:51
-msgid "Select the search option \"Show hidden files and folders\""
-msgstr "Επιλογή της επιλογής αναζήτησης \"Εμφάνιση κρυφών αρχείων και φακέλων\""
+#: ../gsearchtool/gsearchtool.c:2799
+msgid "_Name contains:"
+msgstr "Ό_νομα περιέχει:"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:52
-msgid ""
-"This key determines if the \"Show hidden files and folders\" search option "
-"is selected when the search tool is started."
-msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Εμφάνιση κρυφών αρχείων και φακέλων\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+#: ../gsearchtool/gsearchtool.c:2813 ../gsearchtool/gsearchtool.c:2814
+msgid "Enter a filename or partial filename with or without wildcards."
+msgstr "Εισάγετε ένα όνομα αρχείου ή ένα μερικό όνομα αρχείου με ή χωρίς wildcards."
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:55
-msgid "Select the search option \"Follow symbolic links\""
-msgstr "Επιλογή της επιλογής αναζήτησης \"Ακολούθηση συμβολικών συνδέσμων\""
+#: ../gsearchtool/gsearchtool.c:2814
+msgid "Name contains"
+msgstr "Όνομα περιέχει"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:56
-msgid ""
-"This key determines if the \"Follow symbolic links\" search option is "
-"selected when the search tool is started."
-msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Ακολούθηση συμβολικών δεσμών\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+#: ../gsearchtool/gsearchtool.c:2820
+msgid "_Look in folder:"
+msgstr "_Αναζήτηση στο φάκελο:"
 
-#. Translators: The quoted text is the label of an available
-#. search option that is translated elsewhere.
-#: ../gsearchtool/mate-search-tool.schemas.in.h:59
-msgid "Select the search option \"Exclude other filesystems\""
-msgstr "Επιλογή της επιλογής αναζήτησης \"Να μη συμπεριλαμβάνει άλλα συστήματα αρχείων\""
+#: ../gsearchtool/gsearchtool.c:2826
+msgid "Browse"
+msgstr "Περιήγηση"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:60
-msgid ""
-"This key determines if the \"Exclude other filesystems\" search option is "
-"selected when the search tool is started."
-msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Να μη συμπεριλαμβάνονται άλλα συστήματα αρχείων\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:61
-msgid "Disable Quick Search"
-msgstr "Απενεργοποίηση  γρήγορης αναζήτησης"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:62
-msgid ""
-"This key determines if the search tool disables the use of the locate "
-"command when performing simple file name searches."
-msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης απενεργοποιεί τη χρήση της εντολής locate όταν εκτελεί  αναζήτηση απλού ονόματος αρχείου."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:63
-msgid "Quick Search Excluded Paths"
-msgstr "Γρήγορη αναζήτηση διαδρομών που έχουν εξαιρεθεί"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:64
-msgid ""
-"This key defines the paths the search tool will exclude from a quick search."
-" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
-"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-msgstr "Αυτό το κλειδί καθορίζει τις διαδρομές του εργαλείου αναζήτησης που θα εξαιρούνται από την γρήγορη αναζήτηση. Τα wildcards '*' και '?' υποστηρίζονται. Οι προεπιλεγμένες τιμές είναι  /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:65
-msgid "Disable Quick Search Second Scan"
-msgstr "Απενεργοποίηση γρήγορης αναζήτησης δευτερεύουσας σάρωσης"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:66
-msgid ""
-"This key determines if the search tool disables the use of the find command "
-"after performing a quick search."
-msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης απενεργοποιεί τη χρήση της εντολής find όταν εκτελεί μια γρήγορη αναζήτηση."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:67
-msgid "Quick Search Second Scan Excluded Paths"
-msgstr "Γρήγορη αναζήτηση αποκλεισμένων διαδρομών δεύτερης σάρωσης"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:68
-msgid ""
-"This key defines the paths the search tool will exclude from a second scan "
-"when performing a quick search. The second scan uses the find command to "
-"search for files. The purpose of the second scan is to find files that have "
-"not been indexed. The wildcards '*' and '?' are supported. The default value"
-" is /."
-msgstr "Αυτό το κλειδί καθορίζει τις διαδρομές του εργαλείου αναζήτησης που θα εξαιρούνται από την δεύτερη σάρωση όταν γίνεται γρήγορη αναζήτηση. Η δεύτερη σάρωση χρησιμοποιεί την εντολή find για την αναζήτηση αρχείων και ο σκοπός της είναι να βρεθούν τα αρχεία που δεν έχουν ταξινομηθεί. Τα wildcards '*' και '?' υποστηρίζονται. Η προεπιλεγμένη τιμή είναι /."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:69
-msgid "Search Result Columns Order"
-msgstr "Ταξινόμηση στηλών αποτελεσμάτων αναζήτησης:"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:70
-msgid ""
-"This key defines the order of the columns in the search results. This key "
-"should not be modified by the user."
-msgstr "Αυτό το κλειδί καθορίζει τη σειρά των στηλών στα αποτελέσματα αναζήτησης. Δεν πρέπει να τροποποιηθείαπό το χρήστη."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:71
-msgid "Default Window Width"
-msgstr "Προεπιλεγμένο πλάτος παραθύρου"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:72
-msgid ""
-"This key defines the window width, and it's used to remember the size of the"
-" search tool between sessions. Setting it to -1 will make the search tool "
-"use the default width."
-msgstr "Αυτό το κλειδί καθορίζει το πλάτος του παραθύρου, και χρησιμοποιείται για την απομνημόνευση τουμεγέθους του εργαλείου αναζήτησης ανάμεσα στις συνεδρίες. Ο ορισμός του σε -1 θα κάνει το εργαλείοαναζήτησης να χρησιμοποιεί το προεπιλεγμένο ύψος."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:73
-msgid "Default Window Height"
-msgstr "Προεπιλεγμένο ύψος παραθύρου"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:74
-msgid ""
-"This key defines the window height, and it's used to remember the size of "
-"the search tool between sessions. Setting it to -1 will make the search tool"
-" use the default height."
-msgstr "Αυτό το κλειδί καθορίζει το ύψος του παραθύρου, και χρησιμοποιείται για την απομνημόνευση τουμεγέθους του εργαλείου αναζήτησης ανάμεσα στις συνεδρίες. Ο ορισμός του σε -1 θα κάνει το εργαλείοαναζήτησης να χρησιμοποιεί το προεπιλεγμένο ύψος."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:75
-msgid "Default Window Maximized"
-msgstr "Μεγιστοποίηση προεπιλεγμένου παραθύρου"
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:76
-msgid ""
-"This key determines if the search tool window starts in a maximized state."
-msgstr "Αυτό το κλειδί καθορίζει αν το παράθυρο αναζήτησης θα ξεκινάει σε μεγιστοποίηση."
-
-#: ../gsearchtool/mate-search-tool.schemas.in.h:77
-msgid "Look in Folder"
+#: ../gsearchtool/gsearchtool.c:2835
+msgid "Look in folder"
 msgstr "Αναζήτηση σε φάκελο"
 
-#: ../gsearchtool/mate-search-tool.schemas.in.h:78
-msgid "This key defines the default value of the \"Look in Folder\" widget."
-msgstr "Αυτό το κλειδί καθορίζει την προεπιλεγμένη τιμή της λειτουργίας \"Αναζήτηση σε φάκελο\"."
+#: ../gsearchtool/gsearchtool.c:2835
+msgid "Select the folder or device from which you want to begin the search."
+msgstr "Επιλέξτε το φάκελο ή τη συσκευή  από όπου θέλετε να ξεκινήσει η αναζήτηση"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:194
+#: ../gsearchtool/gsearchtool.c:2853
+msgid "Select more _options"
+msgstr "Περισσότερες _επιλογές"
+
+#: ../gsearchtool/gsearchtool.c:2862
+msgid "Select more options"
+msgstr "Περισσότερες επιλογές"
+
+#: ../gsearchtool/gsearchtool.c:2862
+msgid "Click to expand or collapse the list of available options."
+msgstr "Πατήστε για ανάπτυξη η σύμπτυξη μιας λίστας των διαθέσιμων επιλογών."
+
+#: ../gsearchtool/gsearchtool.c:2886
+msgid "Click to display the help manual."
+msgstr "Πατήστε για εμφάνιση του εγχειριδίου βοήθειας."
+
+#: ../gsearchtool/gsearchtool.c:2894
+msgid "Click to close \"Search for Files\"."
+msgstr "Πατήστε για κλείσιμο του \"Αναζήτηση για αρχεία\"."
+
+#: ../gsearchtool/gsearchtool.c:2920
+msgid "Click to perform a search."
+msgstr "Πατήστε για αναζήτηση."
+
+#: ../gsearchtool/gsearchtool.c:2921
+msgid "Click to stop a search."
+msgstr "Πατήστε για να διακόψετε την αναζήτηση"
+
+#: ../gsearchtool/gsearchtool.c:3015
+msgid "- the MATE Search Tool"
+msgstr "- το εργαλείο αναζήτησης του MATE"
+
+#: ../gsearchtool/gsearchtool.c:3024
+#, c-format
+msgid "Failed to parse command line arguments: %s\n"
+msgstr "Αποτυχία ανάλυσης των ορισμάτων της γραμμής εντολής: %s\n"
+
+#: ../gsearchtool/gsearchtool-callbacks.c:198
 msgid "Could not open help document."
 msgstr "Αδυναμία ανοίγματος αρχείου βοήθειας."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:345
+#: ../gsearchtool/gsearchtool-callbacks.c:349
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
 msgstr[0] "Είστε σίγουροι ότι θέλετε να ανοίξετε %d έγγραφο;"
 msgstr[1] "Είστε σίγουροι ότι θέλετε να ανοίξετε %d έγγραφα;"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:350
-#: ../gsearchtool/gsearchtool-callbacks.c:547
+#: ../gsearchtool/gsearchtool-callbacks.c:354
+#: ../gsearchtool/gsearchtool-callbacks.c:551
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
 msgstr[0] "Αυτό θα ανοίξει %d διαφορετικό παράθυρο."
 msgstr[1] "Αυτό θα ανοίξει %d διαφορετικά παράθυρα."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:390
+#: ../gsearchtool/gsearchtool-callbacks.c:394
 #, c-format
 msgid "Could not open document \"%s\"."
 msgstr "Αδυναμία ανοίγματος εγγράφου  \"%s\"."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:419
+#: ../gsearchtool/gsearchtool-callbacks.c:423
 #, c-format
 msgid "Could not open folder \"%s\"."
 msgstr "Αδυναμία ανοίγματος φακέλου \"%s\"."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:427
+#: ../gsearchtool/gsearchtool-callbacks.c:431
 msgid "The caja file manager is not running."
 msgstr "Ο διαχειριστής αρχείων του Ναυτίλου δεν εκτελείται."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:519
+#: ../gsearchtool/gsearchtool-callbacks.c:523
 msgid "There is no installed viewer capable of displaying the document."
 msgstr "Δεν υπάρχει εγκατεστημένο πρόγραμμα παρουσίασης για την εμφάνιση του εγγράφου."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:542
+#: ../gsearchtool/gsearchtool-callbacks.c:546
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
 msgstr[0] "Είστε σίγουροι ότι θέλετε να ανοίξετε %d φάκελο;"
 msgstr[1] "Είστε σίγουροι ότι θέλετε να ανοίξετε %d φακέλους;"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:695
+#: ../gsearchtool/gsearchtool-callbacks.c:699
 #, c-format
 msgid "Could not move \"%s\" to trash."
 msgstr "Αδυναμία μετακίνησης \"%s\" στα απορρίμματα."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:726
+#: ../gsearchtool/gsearchtool-callbacks.c:730
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
 msgstr "Θέλετε την οριστική διαγραφή του \"%s\";"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:729
+#: ../gsearchtool/gsearchtool-callbacks.c:733
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
 msgstr "Τα απορρίμματα δεν είναι προσβάσιμα. Αδυναμία μετακίνησης\"%s\" στα απορρίμματα."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:768
+#: ../gsearchtool/gsearchtool-callbacks.c:772
 #, c-format
 msgid "Could not delete \"%s\"."
 msgstr "Αδυναμία διαγραφής \"%s\"."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:879
+#: ../gsearchtool/gsearchtool-callbacks.c:884
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
 msgstr "Η διαγραφή του \"%s\" απέτυχε: %s."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:891
+#: ../gsearchtool/gsearchtool-callbacks.c:896
 #, c-format
 msgid "Moving \"%s\" failed: %s."
 msgstr "Η μετακίνηση \"%s\" απέτυχε: %s."
 
 #. Popup menu item: Open
-#: ../gsearchtool/gsearchtool-callbacks.c:1019
-#: ../gsearchtool/gsearchtool-callbacks.c:1049
+#: ../gsearchtool/gsearchtool-callbacks.c:1024
+#: ../gsearchtool/gsearchtool-callbacks.c:1054
 msgid "_Open"
 msgstr "Ά_νοιγμα"
 
 #. Popup menu item: Open with (default)
-#: ../gsearchtool/gsearchtool-callbacks.c:1074
+#: ../gsearchtool/gsearchtool-callbacks.c:1079
 #, c-format
 msgid "_Open with %s"
 msgstr "Άνοιγμα _με %s"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1108
+#: ../gsearchtool/gsearchtool-callbacks.c:1114
 #, c-format
 msgid "Open with %s"
 msgstr "Άνοιγμα με %s"
 
 #. Popup menu item: Open With
-#: ../gsearchtool/gsearchtool-callbacks.c:1140
+#: ../gsearchtool/gsearchtool-callbacks.c:1147
 msgid "Open Wit_h"
 msgstr "Άνοιγμα _με"
 
-#. Popup menu item: Open Folder
-#: ../gsearchtool/gsearchtool-callbacks.c:1185
-msgid "Open _Folder"
-msgstr "Άνοιγμα _φακέλου "
+#. Popup menu item: Open Containing Folder
+#: ../gsearchtool/gsearchtool-callbacks.c:1192
+msgid "Open Containing _Folder"
+msgstr ""
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1225
+#: ../gsearchtool/gsearchtool-callbacks.c:1232
 msgid "_Save Results As..."
 msgstr "Αποθήκευ_ση αποτελεσμάτων ως..."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1607
+#: ../gsearchtool/gsearchtool-callbacks.c:1614
 msgid "Save Search Results As..."
 msgstr "Αποθήκευση αποτελεσμάτων αναζήτησης ως..."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1638
+#: ../gsearchtool/gsearchtool-callbacks.c:1643
 msgid "Could not save document."
 msgstr "Αδυναμία αποθήκευσης εγγράφου."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1639
+#: ../gsearchtool/gsearchtool-callbacks.c:1644
 msgid "You did not select a document name."
 msgstr "Δεν επιλέξατε ένα όνομα εγγράφου."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1669
+#: ../gsearchtool/gsearchtool-callbacks.c:1674
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr "Αδυναμία αποθήκευσης εγγράφου   \"%s\" σε \"%s\"."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1703
+#: ../gsearchtool/gsearchtool-callbacks.c:1707
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr "Το έγγραφο\"%s\" υπάρχει ήδη. Θέλετε να το αντικαταστήσετε;"
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1707
+#: ../gsearchtool/gsearchtool-callbacks.c:1711
 msgid "If you replace an existing file, its contents will be overwritten."
 msgstr "Αν αντικαταστήσετε ένα υπάρχον αρχείο, τα περιεχόμενα του θα αντικατασταθούν."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1772
+#: ../gsearchtool/gsearchtool-callbacks.c:1775
 msgid "The document name you selected is a folder."
 msgstr "Το όνομα εγγράφου που επιλέξατε είναι ένας φάκελος."
 
-#: ../gsearchtool/gsearchtool-callbacks.c:1810
+#: ../gsearchtool/gsearchtool-callbacks.c:1811
 msgid "You may not have write permissions to the document."
 msgstr "Μπορεί να μην έχετε τα απαραίτητα δικαιώματα εγγραφής για το έγγραφο."
-
-#: ../gsearchtool/gsearchtool-support.c:63
-#, c-format
-msgid ""
-"MateConf error:\n"
-"  %s"
-msgstr "Σφάλμα MateConf:\n  %s"
 
 #. Translators:  Below are the strings displayed in the 'Date Modified'
 #. column of the list view.  The format of this string can vary depending
 #. on age of a file.  Please modify the format of the timestamp to match
 #. your locale.  For example, to display 24 hour time replace the '%-I'
 #. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: ../gsearchtool/gsearchtool-support.c:696
+#: ../gsearchtool/gsearchtool-support.c:448
 msgid "today at %-I:%M %p"
 msgstr "σήμερα στις %-I:%M %p"
 
-#: ../gsearchtool/gsearchtool-support.c:698
+#: ../gsearchtool/gsearchtool-support.c:450
 msgid "yesterday at %-I:%M %p"
 msgstr "χθες στις %-I:%M %p"
 
-#: ../gsearchtool/gsearchtool-support.c:700
-#: ../gsearchtool/gsearchtool-support.c:702
+#: ../gsearchtool/gsearchtool-support.c:452
+#: ../gsearchtool/gsearchtool-support.c:454
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
 msgstr "%A, %B %-d %Y at %-I:%M:%S %p"
 
-#: ../gsearchtool/gsearchtool-support.c:889
+#: ../gsearchtool/gsearchtool-support.c:641
 msgid "link (broken)"
 msgstr "σύνδεσμος (σπασμένος)"
 
-#: ../gsearchtool/gsearchtool-support.c:893
+#: ../gsearchtool/gsearchtool-support.c:645
 #, c-format
 msgid "link to %s"
 msgstr "σύνδεσμος στο %s"
@@ -2388,14 +2387,13 @@ msgstr "σύνδεσμος στο %s"
 #. Localizers:
 #. * Feel free to leave out the st, nd, rd and th suffix or
 #. * make some or all of them match.
-#. 
 #. localizers: tag used to detect the first copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1495
+#: ../gsearchtool/gsearchtool-support.c:1257
 msgid " (copy)"
 msgstr " (αντίγραφο)"
 
 #. localizers: tag used to detect the second copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1497
+#: ../gsearchtool/gsearchtool-support.c:1259
 msgid " (another copy)"
 msgstr "(και άλλο αντίγραφο)"
 
@@ -2403,36 +2401,36 @@ msgstr "(και άλλο αντίγραφο)"
 #. localizers: tag used to detect the x12th copy of a file
 #. localizers: tag used to detect the x13th copy of a file
 #. localizers: tag used to detect the xxth copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1500
-#: ../gsearchtool/gsearchtool-support.c:1502
-#: ../gsearchtool/gsearchtool-support.c:1504
-#: ../gsearchtool/gsearchtool-support.c:1514
+#: ../gsearchtool/gsearchtool-support.c:1262
+#: ../gsearchtool/gsearchtool-support.c:1264
+#: ../gsearchtool/gsearchtool-support.c:1266
+#: ../gsearchtool/gsearchtool-support.c:1276
 msgid "th copy)"
 msgstr "ο αντίγραφο"
 
 #. localizers: tag used to detect the x1st copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1507
+#: ../gsearchtool/gsearchtool-support.c:1269
 msgid "st copy)"
 msgstr "ο αντίγραφο"
 
 #. localizers: tag used to detect the x2nd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1509
+#: ../gsearchtool/gsearchtool-support.c:1271
 msgid "nd copy)"
 msgstr "ο αντίγραφο)"
 
 #. localizers: tag used to detect the x3rd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1511
+#: ../gsearchtool/gsearchtool-support.c:1273
 msgid "rd copy)"
 msgstr "ο αντίγραφο)"
 
 #. localizers: appended to first file copy
-#: ../gsearchtool/gsearchtool-support.c:1528
+#: ../gsearchtool/gsearchtool-support.c:1290
 #, c-format
 msgid "%s (copy)%s"
 msgstr "%s (αντίγραφο) %s"
 
 #. localizers: appended to second file copy
-#: ../gsearchtool/gsearchtool-support.c:1530
+#: ../gsearchtool/gsearchtool-support.c:1292
 #, c-format
 msgid "%s (another copy)%s"
 msgstr "%s (και άλλο αντίγραφο)%s"
@@ -2441,396 +2439,235 @@ msgstr "%s (και άλλο αντίγραφο)%s"
 #. localizers: appended to x12th file copy
 #. localizers: appended to x13th file copy
 #. localizers: appended to xxth file copy
-#: ../gsearchtool/gsearchtool-support.c:1533
-#: ../gsearchtool/gsearchtool-support.c:1535
-#: ../gsearchtool/gsearchtool-support.c:1537
-#: ../gsearchtool/gsearchtool-support.c:1546
+#: ../gsearchtool/gsearchtool-support.c:1295
+#: ../gsearchtool/gsearchtool-support.c:1297
+#: ../gsearchtool/gsearchtool-support.c:1299
+#: ../gsearchtool/gsearchtool-support.c:1308
 #, c-format
 msgid "%s (%dth copy)%s"
 msgstr "%s (%dο αντίγραφο)%s"
 
 #. localizers: appended to x1st file copy
-#: ../gsearchtool/gsearchtool-support.c:1540
+#: ../gsearchtool/gsearchtool-support.c:1302
 #, c-format
 msgid "%s (%dst copy)%s"
 msgstr "%s (%dο αντίγραφο)%s"
 
 #. localizers: appended to x2nd file copy
-#: ../gsearchtool/gsearchtool-support.c:1542
+#: ../gsearchtool/gsearchtool-support.c:1304
 #, c-format
 msgid "%s (%dnd copy)%s"
 msgstr "%s (%dο αντίγραφο)%s"
 
 #. localizers: appended to x3rd file copy
-#: ../gsearchtool/gsearchtool-support.c:1544
+#: ../gsearchtool/gsearchtool-support.c:1306
 #, c-format
 msgid "%s (%drd copy)%s"
 msgstr "%s (%dο αντίγραφο)%s"
 
-#: ../gsearchtool/gsearchtool-support.c:1591
+#: ../gsearchtool/gsearchtool-support.c:1353
 msgid " (invalid Unicode)"
 msgstr " (μη έγκυρο Unicode)"
 
 #. localizers: opening parentheses to match the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1680
+#: ../gsearchtool/gsearchtool-support.c:1442
 msgid " ("
 msgstr " ("
 
 #. localizers: opening parentheses of the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1688
+#: ../gsearchtool/gsearchtool-support.c:1450
 #, c-format
 msgid " (%d"
 msgstr " (%d"
 
-#: ../gsearchtool/gsearchtool.c:80
-msgid "Contains the _text"
-msgstr "Περιέχει το _κείμενο"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:1
+msgid "Search history"
+msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:82
-msgid "_Date modified less than"
-msgstr "Ημερομηνία τ_ροποποίησης μικρότερη από"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:2
+msgid "This key defines the items which were searched for in the past."
+msgstr ""
 
-#: ../gsearchtool/gsearchtool.c:82 ../gsearchtool/gsearchtool.c:83
-msgid "days"
-msgstr "ημέρες"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:3
+msgid "Show Additional Options"
+msgstr "Εμφάνιση πρόσθετων επιλογών"
 
-#: ../gsearchtool/gsearchtool.c:83
-msgid "Date modified more than"
-msgstr "Ημερομηνία τροποποίησης μεγαλύτερη από"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:4
+msgid "Disable Quick Search"
+msgstr "Απενεργοποίηση  γρήγορης αναζήτησης"
 
-#: ../gsearchtool/gsearchtool.c:85
-msgid "S_ize at least"
-msgstr "Μέ_γεθος τουλάχιστον"
-
-#: ../gsearchtool/gsearchtool.c:85 ../gsearchtool/gsearchtool.c:86
-msgid "kilobytes"
-msgstr "kilobytes"
-
-#: ../gsearchtool/gsearchtool.c:86
-msgid "Si_ze at most"
-msgstr "Μέ_γεθος το μέγιστο"
-
-#: ../gsearchtool/gsearchtool.c:87
-msgid "File is empty"
-msgstr "Το αρχείο είναι κενό"
-
-#: ../gsearchtool/gsearchtool.c:89
-msgid "Owned by _user"
-msgstr "Ανήκει σε _χρήστη"
-
-#: ../gsearchtool/gsearchtool.c:90
-msgid "Owned by _group"
-msgstr "Ανήκει σε ο_μάδα"
-
-#: ../gsearchtool/gsearchtool.c:91
-msgid "Owner is unrecognized"
-msgstr "Μη αναγνωρίσιμος ιδιοκτήτης"
-
-#: ../gsearchtool/gsearchtool.c:93
-msgid "Na_me does not contain"
-msgstr "Το ό_νομα δεν περιέχει"
-
-#: ../gsearchtool/gsearchtool.c:94
-msgid "Name matches regular e_xpression"
-msgstr "Ταίριασμα κανονικής έ_κφρασης"
-
-#: ../gsearchtool/gsearchtool.c:96
-msgid "Show hidden and backup files"
-msgstr "Εμφάνιση κρυφών αρχείων και αρχείων ασφαλείας."
-
-#: ../gsearchtool/gsearchtool.c:97
-msgid "Follow symbolic links"
-msgstr "Ακολούθηση συμβολικών συνδέσμων"
-
-#: ../gsearchtool/gsearchtool.c:98
-msgid "Exclude other filesystems"
-msgstr "Να μη συμπεριλαμβάνει άλλα συστήματα αρχείων."
-
-#: ../gsearchtool/gsearchtool.c:156
-msgid "Show version of the application"
-msgstr "Προβολή της έκδοσης της εφαρμογής"
-
-#: ../gsearchtool/gsearchtool.c:157 ../gsearchtool/gsearchtool.c:162
-#: ../gsearchtool/gsearchtool.c:171
-msgid "STRING"
-msgstr "ΑΛΦΑΡΙΘΜΗΤΙΚΟ"
-
-#: ../gsearchtool/gsearchtool.c:158
-msgid "PATH"
-msgstr "ΔΙΑΔΡΟΜΗ"
-
-#: ../gsearchtool/gsearchtool.c:159
-msgid "VALUE"
-msgstr "ΤΙΜΗ"
-
-#: ../gsearchtool/gsearchtool.c:163 ../gsearchtool/gsearchtool.c:164
-msgid "DAYS"
-msgstr "ΗΜΕΡΕΣ"
-
-#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
-msgid "KILOBYTES"
-msgstr "KILOBYTES"
-
-#: ../gsearchtool/gsearchtool.c:168
-msgid "USER"
-msgstr "ΧΡΗΣΤΗΣ"
-
-#: ../gsearchtool/gsearchtool.c:169
-msgid "GROUP"
-msgstr "ΟΜΑΔΑ"
-
-#: ../gsearchtool/gsearchtool.c:172
-msgid "PATTERN"
-msgstr "ΜΟΤΙΒΟ"
-
-#: ../gsearchtool/gsearchtool.c:383
-msgid "A locate database has probably not been created."
-msgstr "Πιθανόν να μην έχει δημιουργηθεί μια βάση δεδομένων locate."
-
-#: ../gsearchtool/gsearchtool.c:485
-#, c-format
-msgid "Character set conversion failed for \"%s\""
-msgstr "Αποτυχία μετατροπής κωδικοποίησης χαρακτήρων για \"%s\""
-
-#: ../gsearchtool/gsearchtool.c:509
-msgid "Searching..."
-msgstr "Αναζήτηση..."
-
-#: ../gsearchtool/gsearchtool.c:509 ../gsearchtool/gsearchtool.c:1015
-#: ../gsearchtool/gsearchtool.c:2988
-msgid "Search for Files"
-msgstr "Αναζήτηση για αρχεία"
-
-#: ../gsearchtool/gsearchtool.c:961 ../gsearchtool/gsearchtool.c:990
-msgid "No files found"
-msgstr "Δε βρέθηκαν αρχεία"
-
-#: ../gsearchtool/gsearchtool.c:983
-msgid "(stopped)"
-msgstr "(διακόπηκε)"
-
-#: ../gsearchtool/gsearchtool.c:989
-msgid "No Files Found"
-msgstr "Δεν βρέθηκαν αρχεία"
-
-#: ../gsearchtool/gsearchtool.c:994
-#, c-format
-msgid "%'d File Found"
-msgid_plural "%'d Files Found"
-msgstr[0] "Βρέθηκε %'d αρχείο"
-msgstr[1] "Βρέθηκαν %'d αρχεία"
-
-#: ../gsearchtool/gsearchtool.c:998 ../gsearchtool/gsearchtool.c:1036
-#, c-format
-msgid "%'d file found"
-msgid_plural "%'d files found"
-msgstr[0] "Βρέθηκε %'d αρχείο"
-msgstr[1] "Βρέθηκαν %'d αρχεία"
-
-#: ../gsearchtool/gsearchtool.c:1127
-msgid "Entry changed called for a non entry option!"
-msgstr "Η αλλαγή εισαγωγής καλέστηκε για επιλογή που δεν επιτρέπει εισαγωγή!"
-
-#: ../gsearchtool/gsearchtool.c:1287
-msgid "Set the text of \"Name contains\" search option"
-msgstr "Ορισμός του κειμένου της επιλογής αναζήτησης \"'Όνομα περιέχει'\""
-
-#: ../gsearchtool/gsearchtool.c:1288
-msgid "Set the text of \"Look in folder\" search option"
-msgstr "Ορισμός του κειμένου της επιλογής αναζήτησης \"αναζήτηση στο φάκελο\" "
-
-#: ../gsearchtool/gsearchtool.c:1289
-msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "Ταξινόμηση αρχείων σύμφωνα με τα ακόλουθα: όνομα, φάκελος. μέγεθος, τύπος, ή ημερομηνία"
-
-#: ../gsearchtool/gsearchtool.c:1290
-msgid "Set sort order to descending, the default is ascending"
-msgstr "Καθορισμός σειράς ταξινόμησης σε φθίνουσα, η εξ ορισμού είναι αύξουσα"
-
-#: ../gsearchtool/gsearchtool.c:1291
-msgid "Automatically start a search"
-msgstr "Αυτόματη έναρξη μιας αναζήτησης"
-
-#: ../gsearchtool/gsearchtool.c:1297
-#, c-format
-msgid "Select the \"%s\" search option"
-msgstr "Επιλογή της επιλογής αναζήτησης \"%s\""
-
-#: ../gsearchtool/gsearchtool.c:1300
-#, c-format
-msgid "Select and set the \"%s\" search option"
-msgstr "Επιλογή και ορισμός της επιλογής αναζήτησης \"%s\""
-
-#: ../gsearchtool/gsearchtool.c:1407
-msgid "Invalid option passed to sortby command line argument."
-msgstr "Πέρασε μη έγκυρη επιλογή στην εντολή ταξινόμησης κατά."
-
-#: ../gsearchtool/gsearchtool.c:1701
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:5
 msgid ""
-"\n"
-"... Too many errors to display ..."
-msgstr "\n...Πάρα πολλά λάθη για εμφάνιση..."
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
+msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης απενεργοποιεί τη χρήση της εντολής locate όταν εκτελεί  αναζήτηση απλού ονόματος αρχείου."
 
-#: ../gsearchtool/gsearchtool.c:1715
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:6
+msgid "Quick Search Excluded Paths"
+msgstr "Γρήγορη αναζήτηση διαδρομών που έχουν εξαιρεθεί"
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:7
 msgid ""
-"The search results may be invalid.  There were errors while performing this "
-"search."
-msgstr "Τα αποτελέσματα αναζήτησης μπορεί να μην είναι έγκυρα. Υπήρξαν σφάλματα κατα την εκτέλεση αυτής της αναζήτησης."
+"This key defines the paths the search tool will exclude from a quick search."
+" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
+"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
+msgstr "Αυτό το κλειδί καθορίζει τις διαδρομές του εργαλείου αναζήτησης που θα εξαιρούνται από την γρήγορη αναζήτηση. Τα wildcards '*' και '?' υποστηρίζονται. Οι προεπιλεγμένες τιμές είναι  /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
 
-#: ../gsearchtool/gsearchtool.c:1727 ../gsearchtool/gsearchtool.c:1771
-msgid "Show more _details"
-msgstr "Εμφάνισης περισσότερων _λεπτομερειών"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:8
+msgid "Disable Quick Search Second Scan"
+msgstr "Απενεργοποίηση γρήγορης αναζήτησης δευτερεύουσας σάρωσης"
 
-#: ../gsearchtool/gsearchtool.c:1757
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:9
 msgid ""
-"The search results may be out of date or invalid.  Do you want to disable "
-"the quick search feature?"
-msgstr "Τα αποτελέσματα αναζήτησης μπορεί να μην είναι έγκυρα. Θέλετε να απενεργοποιήσετε την λειτουργία της γρήγορης αναζήτησης;"
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
+msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης απενεργοποιεί τη χρήση της εντολής find όταν εκτελεί μια γρήγορη αναζήτηση."
 
-#: ../gsearchtool/gsearchtool.c:1782
-msgid "Disable _Quick Search"
-msgstr "Απενεργοποίηση _γρήγορης αναζήτησης"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:10
+msgid "Quick Search Second Scan Excluded Paths"
+msgstr "Γρήγορη αναζήτηση αποκλεισμένων διαδρομών δεύτερης σάρωσης"
 
-#: ../gsearchtool/gsearchtool.c:1809
-#, c-format
-msgid "Failed to set process group id of child %d: %s.\n"
-msgstr "Αποτυχία ορισμού process group id of child %d: %s.\n"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:11
+msgid ""
+"This key defines the paths the search tool will exclude from a second scan "
+"when performing a quick search. The second scan uses the find command to "
+"search for files. The purpose of the second scan is to find files that have "
+"not been indexed. The wildcards '*' and '?' are supported. The default value"
+" is /."
+msgstr "Αυτό το κλειδί καθορίζει τις διαδρομές του εργαλείου αναζήτησης που θα εξαιρούνται από την δεύτερη σάρωση όταν γίνεται γρήγορη αναζήτηση. Η δεύτερη σάρωση χρησιμοποιεί την εντολή find για την αναζήτηση αρχείων και ο σκοπός της είναι να βρεθούν τα αρχεία που δεν έχουν ταξινομηθεί. Τα wildcards '*' και '?' υποστηρίζονται. Η προεπιλεγμένη τιμή είναι /."
 
-#: ../gsearchtool/gsearchtool.c:1834
-msgid "Error parsing the search command."
-msgstr "Σφάλμα κατά την ανάλυση της εντολής αναζήτησης."
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:12
+msgid "Search Result Columns Order"
+msgstr "Ταξινόμηση στηλών αποτελεσμάτων αναζήτησης:"
 
-#: ../gsearchtool/gsearchtool.c:1867
-msgid "Error running the search command."
-msgstr "Σφάλμα κατά την εκτέλεση της εντολής αναζήτησης."
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:13
+msgid ""
+"This key defines the order of the columns in the search results. This key "
+"should not be modified by the user."
+msgstr "Αυτό το κλειδί καθορίζει τη σειρά των στηλών στα αποτελέσματα αναζήτησης. Δεν πρέπει να τροποποιηθείαπό το χρήστη."
 
-#: ../gsearchtool/gsearchtool.c:1987
-#, c-format
-msgid "Enter a text value for the \"%s\" search option."
-msgstr "Εισάγετε μια τιμή κειμένου για την επιλογή αναζήτησης \"%s\"."
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:14
+msgid "Default Window Width"
+msgstr "Προεπιλεγμένο πλάτος παραθύρου"
 
-#. Translators:  Below is a string displaying the search options name
-#. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:1992
-#, c-format
-msgid "\"%s\" in %s"
-msgstr "\"%s\" σε %s"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:15
+msgid ""
+"This key defines the window width, and it's used to remember the size of the"
+" search tool between sessions. Setting it to -1 will make the search tool "
+"use the default width."
+msgstr "Αυτό το κλειδί καθορίζει το πλάτος του παραθύρου, και χρησιμοποιείται για την απομνημόνευση τουμεγέθους του εργαλείου αναζήτησης ανάμεσα στις συνεδρίες. Ο ορισμός του σε -1 θα κάνει το εργαλείοαναζήτησης να χρησιμοποιεί το προεπιλεγμένο ύψος."
 
-#: ../gsearchtool/gsearchtool.c:1994
-#, c-format
-msgid "Enter a value in %s for the \"%s\" search option."
-msgstr "Εισάγετε μια τιμή σε %s για την επιλογή αναζήτησης  \"%s\""
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:16
+msgid "Default Window Height"
+msgstr "Προεπιλεγμένο ύψος παραθύρου"
 
-#: ../gsearchtool/gsearchtool.c:2052
-#, c-format
-msgid "Remove \"%s\""
-msgstr "Διαγραφή  \"%s\""
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:17
+msgid ""
+"This key defines the window height, and it's used to remember the size of "
+"the search tool between sessions. Setting it to -1 will make the search tool"
+" use the default height."
+msgstr "Αυτό το κλειδί καθορίζει το ύψος του παραθύρου, και χρησιμοποιείται για την απομνημόνευση τουμεγέθους του εργαλείου αναζήτησης ανάμεσα στις συνεδρίες. Ο ορισμός του σε -1 θα κάνει το εργαλείοαναζήτησης να χρησιμοποιεί το προεπιλεγμένο ύψος."
 
-#: ../gsearchtool/gsearchtool.c:2053
-#, c-format
-msgid "Click to remove the \"%s\" search option."
-msgstr "Πατήστε για αφαίρεση της  επιλογή αναζήτησης  \"%s\""
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:18
+msgid "Default Window Maximized"
+msgstr "Μεγιστοποίηση προεπιλεγμένου παραθύρου"
 
-#: ../gsearchtool/gsearchtool.c:2146
-msgid "A_vailable options:"
-msgstr "Δια_θέσιμες επιλογές:"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:19
+msgid ""
+"This key determines if the search tool window starts in a maximized state."
+msgstr "Αυτό το κλειδί καθορίζει αν το παράθυρο αναζήτησης θα ξεκινάει σε μεγιστοποίηση."
 
-#: ../gsearchtool/gsearchtool.c:2175
-msgid "Available options"
-msgstr "Διαθέσιμες επιλογές:"
-
-#: ../gsearchtool/gsearchtool.c:2176
-msgid "Select a search option from the drop-down list."
-msgstr "Επιλέξτε μια επιλογή αναζήτησης από την κυλιόμενη λίστα"
-
-#: ../gsearchtool/gsearchtool.c:2188
-msgid "Add search option"
-msgstr "Προσθήκη επιλογής αναζήτησης"
-
-#: ../gsearchtool/gsearchtool.c:2189
-msgid "Click to add the selected available search option."
-msgstr "Πατήστε για προσθήκη της επιλεγμένης διαθέσιμης επιλογής αναζήτησης."
-
-#: ../gsearchtool/gsearchtool.c:2278
-msgid "S_earch results:"
-msgstr "Απο_τελέσματα αναζήτησης:"
-
-#: ../gsearchtool/gsearchtool.c:2322
-msgid "List View"
-msgstr "Προβολή λίστας"
-
-#: ../gsearchtool/gsearchtool.c:2431
-msgid "Type"
-msgstr "Τύπος"
-
-#: ../gsearchtool/gsearchtool.c:2443
-msgid "Date Modified"
-msgstr "Ημερομηνία τροποποίησης"
-
-#: ../gsearchtool/gsearchtool.c:2759
-msgid "_Name contains:"
-msgstr "Ό_νομα περιέχει:"
-
-#: ../gsearchtool/gsearchtool.c:2773 ../gsearchtool/gsearchtool.c:2774
-msgid "Enter a filename or partial filename with or without wildcards."
-msgstr "Εισάγετε ένα όνομα αρχείου ή ένα μερικό όνομα αρχείου με ή χωρίς wildcards."
-
-#: ../gsearchtool/gsearchtool.c:2774
-msgid "Name contains"
-msgstr "Όνομα περιέχει"
-
-#: ../gsearchtool/gsearchtool.c:2780
-msgid "_Look in folder:"
-msgstr "_Αναζήτηση στο φάκελο:"
-
-#: ../gsearchtool/gsearchtool.c:2786
-msgid "Browse"
-msgstr "Περιήγηση"
-
-#: ../gsearchtool/gsearchtool.c:2795
-msgid "Look in folder"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:20
+msgid "Look in Folder"
 msgstr "Αναζήτηση σε φάκελο"
 
-#: ../gsearchtool/gsearchtool.c:2795
-msgid "Select the folder or device from which you want to begin the search."
-msgstr "Επιλέξτε το φάκελο ή τη συσκευή  από όπου θέλετε να ξεκινήσει η αναζήτηση"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:21
+msgid "This key defines the default value of the \"Look in Folder\" widget."
+msgstr "Αυτό το κλειδί καθορίζει την προεπιλεγμένη τιμή της λειτουργίας \"Αναζήτηση σε φάκελο\"."
 
-#: ../gsearchtool/gsearchtool.c:2813
-msgid "Select more _options"
-msgstr "Περισσότερες _επιλογές"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:22
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης  \"Περιέχει το κείμενο\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
 
-#: ../gsearchtool/gsearchtool.c:2822
-msgid "Select more options"
-msgstr "Περισσότερες επιλογές"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:23
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
+msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης  \"Ημερομηνία τροποποίησης μικρότερη από\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
 
-#: ../gsearchtool/gsearchtool.c:2822
-msgid "Click to expand or collapse the list of available options."
-msgstr "Πατήστε για ανάπτυξη η σύμπτυξη μιας λίστας των διαθέσιμων επιλογών."
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:24
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
+msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης  \"Ημερομηνία τροποποίησης μεγαλύτερη από\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
 
-#: ../gsearchtool/gsearchtool.c:2846
-msgid "Click to display the help manual."
-msgstr "Πατήστε για εμφάνιση του εγχειριδίου βοήθειας."
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:25
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Μέγεθος τουλάχιστον\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
 
-#: ../gsearchtool/gsearchtool.c:2854
-msgid "Click to close \"Search for Files\"."
-msgstr "Πατήστε για κλείσιμο του \"Αναζήτηση για αρχεία\"."
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:26
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
+msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Μέγεθος το περισσότερο\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
 
-#: ../gsearchtool/gsearchtool.c:2880
-msgid "Click to perform a search."
-msgstr "Πατήστε για αναζήτηση."
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:27
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
+msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης  \"Το αρχείο είναι κενό\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
 
-#: ../gsearchtool/gsearchtool.c:2881
-msgid "Click to stop a search."
-msgstr "Πατήστε για να διακόψετε την αναζήτηση"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:28
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
+msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Ανήκει σε χρήστη\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
 
-#: ../gsearchtool/gsearchtool.c:2973
-msgid "- the MATE Search Tool"
-msgstr "- το εργαλείο αναζήτησης του MATE"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:29
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when"
+" the search tool is started."
+msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Ανήκει σε ομάδα\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
 
-#: ../gsearchtool/gsearchtool.c:2982
-#, c-format
-msgid "Failed to parse command line arguments: %s\n"
-msgstr "Αποτυχία ανάλυσης των ορισμάτων της γραμμής εντολής: %s\n"
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:30
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
+msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Μη αναγνωρίσιμος χρήστης\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:31
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Όνομα δεν περιέχει\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:32
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option"
+" is selected when the search tool is started."
+msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης  \"'Ονομα ταιριάζει με κανονική έκφραση\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:33
+msgid ""
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
+msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Εμφάνιση κρυφών αρχείων και φακέλων\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:34
+msgid ""
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Ακολούθηση συμβολικών δεσμών\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
+
+#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:35
+msgid ""
+"This key determines if the \"Exclude other filesystems\" search option is "
+"selected when the search tool is started."
+msgstr "Αυτό το κλειδί καθορίζει αν η επιλογή αναζήτησης \"Να μη συμπεριλαμβάνονται άλλα συστήματα αρχείων\" είναι επιλεγμένη όταν εκκινείται το εργαλείο αναζήτησης."
 
 #: ../libeggsmclient/eggdesktopfile.c:165
 #, c-format
@@ -2842,27 +2679,27 @@ msgstr "Το αρχείο δεν είναι έγκυρο αρχείο .desktop"
 msgid "Unrecognized desktop file Version '%s'"
 msgstr "Μη κατηγοριοποιημένο αρχείο επιφάνειας εργασίας έκδοσης  '%s'"
 
-#: ../libeggsmclient/eggdesktopfile.c:958
+#: ../libeggsmclient/eggdesktopfile.c:957
 #, c-format
 msgid "Starting %s"
 msgstr "Γίνεται εκκίνηση %s"
 
-#: ../libeggsmclient/eggdesktopfile.c:1100
+#: ../libeggsmclient/eggdesktopfile.c:1098
 #, c-format
 msgid "Application does not accept documents on command line"
 msgstr "Η εφαρμογή δεν δέχεται έγγραφα μέσω της γραμμής εντολών"
 
-#: ../libeggsmclient/eggdesktopfile.c:1168
+#: ../libeggsmclient/eggdesktopfile.c:1166
 #, c-format
 msgid "Unrecognized launch option: %d"
 msgstr "Μη κατηγοριοποιημένη επιλογή εκκίνησης : %d"
 
-#: ../libeggsmclient/eggdesktopfile.c:1373
+#: ../libeggsmclient/eggdesktopfile.c:1365
 #, c-format
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 msgstr "Αδυναμία σύνδεσης URIs εγγράφου σε μια καταχώριση επιφάνειας εργασίας 'Type=Link'"
 
-#: ../libeggsmclient/eggdesktopfile.c:1392
+#: ../libeggsmclient/eggdesktopfile.c:1384
 #, c-format
 msgid "Not a launchable item"
 msgstr "Δεν είναι εκκινήσιμο αντικείμενο"
@@ -2903,51 +2740,59 @@ msgstr "Παρακολούθηση αρχείων καταγραφών"
 msgid "View or monitor system log files"
 msgstr "Εμφάνιση ή παρακολούθηση των αρχείων καταγραφής συστήματος"
 
-#: ../logview/data/mate-system-log.schemas.in.h:1
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
 msgid "Log file to open up on startup"
 msgstr "Αρχείο καταγραφής για άνοιγμα κατά την εκκίνηση"
 
-#: ../logview/data/mate-system-log.schemas.in.h:2
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
 msgid ""
 "Specifies the log file displayed at startup. The default is either "
 "/var/adm/messages or /var/log/messages, depending on your operating system."
 msgstr "Καθορίζει το αρχείο καταγραφής που θα ανοίγει κατά την εκκίνηση. Η προεπιλογή  είναι μηνύματα  /var/log/, ανάλογα με τη διανομή σας."
 
-#: ../logview/data/mate-system-log.schemas.in.h:3
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
 msgid "Size of the font used to display the log"
 msgstr "Το μέγεθος της γραμματοσειράς απεικόνισης της καταγραφής"
 
-#: ../logview/data/mate-system-log.schemas.in.h:4
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
 msgid ""
 "Specifies the size of the fixed-width font used to display the log in the "
 "main tree view. The default is taken from the default terminal font size."
 msgstr "Καθορίζει το μέγεθος της σταθερού πλάτους γραμματοσειράς που χρησιμοποιείται για την απεικόνισης της καταγραφής στη προβολή του κύριου δέντρου.Το προεπιλεγμένο μέγεθος είναι το προεπιλεγμένο μέγεθος γραμματοσειράς τερματικού."
 
-#: ../logview/data/mate-system-log.schemas.in.h:5
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
 msgid "Height of the main window in pixels"
 msgstr "Το ύψος του κύριου παραθύρου σε εικονοστοιχεία"
 
-#: ../logview/data/mate-system-log.schemas.in.h:6
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
 msgid "Specifies the height of the log viewer main window in pixels."
 msgstr "Καθορίζει το ύψος του κύριου παραθύρου προβολής καταγραφών σε εικοστοιχεία."
 
-#: ../logview/data/mate-system-log.schemas.in.h:7
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
 msgid "Width of the main window in pixels"
 msgstr "Πλάτος του κυρίου παραθύρου σε εικονοστοιχεία"
 
-#: ../logview/data/mate-system-log.schemas.in.h:8
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
 msgid "Specifies the width of the log viewer main window in pixels."
 msgstr "Καθορίζει το πλάτος σε εικονοστοιχεία του κυρίου παραθύρου προβολής καταγραφών"
 
-#: ../logview/data/mate-system-log.schemas.in.h:9
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
 msgid "Log files to open up on startup"
 msgstr "Αρχείο καταγραφής για άνοιγμα κατά την εκκίνηση"
 
-#: ../logview/data/mate-system-log.schemas.in.h:10
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
 msgid ""
 "Specifies a list of log files to open up at startup. A default list is "
 "created by reading /etc/syslog.conf."
 msgstr "Καθορίζει μια λίστα αρχείων καταγραφής που θα ανοίγει κατά την εκκίνηση. Η προεπιλογή  είναι η ανάγνωση του /etc/syslog.conf."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
+msgid "List of saved filters"
+msgstr ""
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
+msgid "List of saved regexp filters"
+msgstr ""
 
 #: ../logview/data/logview-filter.ui.h:2
 msgid "_Regular Expression:"
@@ -2973,65 +2818,65 @@ msgstr "Παρασκήνιο:"
 msgid "Effect:"
 msgstr "Εφέ:"
 
-#: ../logview/logview-app.c:374
+#: ../logview/logview-app.c:377
 #, c-format
 msgid "Impossible to open the file %s"
 msgstr "Αδύνατο το άνοιγμα του αρχείου %s"
 
-#: ../logview/logview-filter-manager.c:90
+#: ../logview/logview-filter-manager.c:94
 msgid "Filter name is empty!"
 msgstr "Το όνομα του φίλτρου είναι άδειο!"
 
-#: ../logview/logview-filter-manager.c:103
+#: ../logview/logview-filter-manager.c:107
 msgid "Filter name may not contain the ':' character"
 msgstr "Το όνομα του φίλτρου δε μπορεί να περιέχει το χαρακτήρα ':'"
 
-#: ../logview/logview-filter-manager.c:126
+#: ../logview/logview-filter-manager.c:130
 msgid "Regular expression is empty!"
 msgstr "Η κανονική έκφραση είναι άδεια!"
 
-#: ../logview/logview-filter-manager.c:142
+#: ../logview/logview-filter-manager.c:146
 #, c-format
 msgid "Regular expression is invalid: %s"
 msgstr "Η κανονική έκφραση είναι άκυρη: %s"
 
-#: ../logview/logview-filter-manager.c:238
+#: ../logview/logview-filter-manager.c:242
 msgid "Please specify either foreground or background color!"
 msgstr "Παρακαλώ καθορίστε είτε το χρώμα του προσκηνίου είτε του παρασκηνίου!"
 
-#: ../logview/logview-filter-manager.c:292
+#: ../logview/logview-filter-manager.c:296
 msgid "Edit filter"
 msgstr "Επεξεργασία φίλτρου"
 
-#: ../logview/logview-filter-manager.c:292
+#: ../logview/logview-filter-manager.c:296
 msgid "Add new filter"
 msgstr "Προσθήκη νέου φίλτρου"
 
-#: ../logview/logview-filter-manager.c:502
+#: ../logview/logview-filter-manager.c:506
 msgid "Filters"
 msgstr "Φίλτρα"
 
-#: ../logview/logview-findbar.c:169
+#: ../logview/logview-findbar.c:173
 msgid "_Find:"
 msgstr "Εύ_ρεση:"
 
-#: ../logview/logview-findbar.c:184
+#: ../logview/logview-findbar.c:188
 msgid "Find Previous"
 msgstr "Εύρεση _προηγούμενου"
 
-#: ../logview/logview-findbar.c:187
+#: ../logview/logview-findbar.c:191
 msgid "Find previous occurrence of the search string"
 msgstr "Εύρεση της προηγούμενης εμφάνισης του ζητούμενου αλφαριθμητικού"
 
-#: ../logview/logview-findbar.c:192
+#: ../logview/logview-findbar.c:196
 msgid "Find Next"
 msgstr "Εύρεση επό_μενου"
 
-#: ../logview/logview-findbar.c:195
+#: ../logview/logview-findbar.c:199
 msgid "Find next occurrence of the search string"
 msgstr "Εύρεση της επόμενης εμφάνισης του ζητούμενου αλφαριθμητικού"
 
-#: ../logview/logview-findbar.c:202
+#: ../logview/logview-findbar.c:206
 msgid "Clear the search string"
 msgstr "Καθαρισμός του ζητούμενου αλφαριθμητικού"
 
@@ -3051,7 +2896,7 @@ msgstr "Το αρχείο δεν είναι κανονικό αρχείο ή δ�
 msgid "This version of System Log does not support GZipped logs."
 msgstr "Αυτή η έκδοση του System Log δεν υποστηρίζει καταγραφές μορφής GZip."
 
-#: ../logview/logview-loglist.c:311
+#: ../logview/logview-loglist.c:315
 msgid "Loading..."
 msgstr "Φόρτωση..."
 
@@ -3067,11 +2912,11 @@ msgstr "[ΑΡΧΕΙΟΚΑΤΑΓΡΑΦΗΣ...]"
 msgid " - Browse and monitor logs"
 msgstr "- Εξερεύνηση και παρακολούθηση καταγραφών"
 
-#: ../logview/logview-main.c:102
+#: ../logview/logview-main.c:100
 msgid "Log Viewer"
 msgstr "Παρακολούθηση Καταγραφών"
 
-#: ../logview/logview-window.c:38 ../logview/logview-window.c:759
+#: ../logview/logview-window.c:38 ../logview/logview-window.c:760
 msgid "System Log Viewer"
 msgstr "Παρακολούθηση καταγραφών συστήματος"
 
@@ -3080,137 +2925,137 @@ msgstr "Παρακολούθηση καταγραφών συστήματος"
 msgid "last update: %s"
 msgstr "τελευταία ενημέρωση: %s"
 
-#: ../logview/logview-window.c:213
+#: ../logview/logview-window.c:214
 #, c-format
 msgid "%d lines (%s) - %s"
 msgstr "%d γραμμές (%s) - %s"
 
-#: ../logview/logview-window.c:317
+#: ../logview/logview-window.c:318
 msgid "Open Log"
 msgstr "Άνοιγμα αρχείου καταγραφής"
 
-#: ../logview/logview-window.c:356
+#: ../logview/logview-window.c:357
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "Υπήρξε σφάλμα κατά την εμφάνιση της βοήθειας: %s"
 
-#: ../logview/logview-window.c:470
+#: ../logview/logview-window.c:471
 msgid "Wrapped"
 msgstr "Αναδιπλωμένο"
 
-#: ../logview/logview-window.c:764
+#: ../logview/logview-window.c:765
 msgid "A system log viewer for MATE."
 msgstr "Μια εφαρμογή προβολής καταγραφών συστήματος για το MATE."
 
-#: ../logview/logview-window.c:810
+#: ../logview/logview-window.c:811
 msgid "_Filters"
 msgstr "_Φίλτρα"
 
-#: ../logview/logview-window.c:813
+#: ../logview/logview-window.c:814
 msgid "_Open..."
 msgstr "Άν_οιγμα..."
 
-#: ../logview/logview-window.c:813
+#: ../logview/logview-window.c:814
 msgid "Open a log from file"
 msgstr "Άνοιγμα καταγραφής από αρχείο"
 
-#: ../logview/logview-window.c:815
+#: ../logview/logview-window.c:816
 msgid "_Close"
 msgstr "Κλεί_σιμο"
 
-#: ../logview/logview-window.c:815
+#: ../logview/logview-window.c:816
 msgid "Close this log"
 msgstr "Κλείσιμο αυτού του αρχείου καταγραφής"
 
-#: ../logview/logview-window.c:817
+#: ../logview/logview-window.c:818
 msgid "_Quit"
 msgstr "Έ_ξοδος"
 
-#: ../logview/logview-window.c:817
+#: ../logview/logview-window.c:818
 msgid "Quit the log viewer"
 msgstr "Κλείσιμο παρακολούθησης καταγραφών συστήματος"
 
-#: ../logview/logview-window.c:820
+#: ../logview/logview-window.c:821
 msgid "_Copy"
 msgstr "Αντι_γραφή"
 
-#: ../logview/logview-window.c:820
+#: ../logview/logview-window.c:821
 msgid "Copy the selection"
 msgstr "Αντιγραφή της επιλογής"
 
-#: ../logview/logview-window.c:822
+#: ../logview/logview-window.c:823
 msgid "Select the entire log"
 msgstr "Επιλογή όλου του αρχείου καταγραφής"
 
-#: ../logview/logview-window.c:824
+#: ../logview/logview-window.c:825
 msgid "_Find..."
 msgstr "Εύ_ρεση..."
 
-#: ../logview/logview-window.c:824
+#: ../logview/logview-window.c:825
 msgid "Find a word or phrase in the log"
 msgstr "Εύρεση μια λέξης ή φράσης στην καταγραφή"
 
-#: ../logview/logview-window.c:827
+#: ../logview/logview-window.c:828
 msgid "Bigger text size"
 msgstr "Μεγαλύτερο μέγεθος κειμένου"
 
-#: ../logview/logview-window.c:829
+#: ../logview/logview-window.c:830
 msgid "Smaller text size"
 msgstr "Μικρότερο μέγεθος κειμένου"
 
-#: ../logview/logview-window.c:831
+#: ../logview/logview-window.c:832
 msgid "Normal text size"
 msgstr "Κανονικό μέγεθος κειμένου"
 
-#: ../logview/logview-window.c:834
+#: ../logview/logview-window.c:835
 msgid "Manage Filters"
 msgstr "Διαχείριση φίλτρων"
 
-#: ../logview/logview-window.c:834
+#: ../logview/logview-window.c:835
 msgid "Manage filters"
 msgstr "Διαχείριση φίλτρων"
 
-#: ../logview/logview-window.c:837
+#: ../logview/logview-window.c:838
 msgid "Open the help contents for the log viewer"
 msgstr "Άνοιγμα των περιεχομένων βοήθειας για την εφαρμογή προβολής καταγραφών"
 
-#: ../logview/logview-window.c:839
+#: ../logview/logview-window.c:840
 msgid "Show the about dialog for the log viewer"
 msgstr "Προβολή του διαλόγου Περί για τον επεξεργαστή mateconf"
 
-#: ../logview/logview-window.c:844
+#: ../logview/logview-window.c:845
 msgid "_Statusbar"
 msgstr "_Γραμμή κατάστασης"
 
-#: ../logview/logview-window.c:844
+#: ../logview/logview-window.c:845
 msgid "Show Status Bar"
 msgstr "Προβολή γραμμής κατάστασης"
 
-#: ../logview/logview-window.c:846
+#: ../logview/logview-window.c:847
 msgid "Side _Pane"
 msgstr "Πλευρική _στήλη"
 
-#: ../logview/logview-window.c:846
+#: ../logview/logview-window.c:847
 msgid "Show Side Pane"
 msgstr "Προβολή της πλευρικής στηλης"
 
-#: ../logview/logview-window.c:848
+#: ../logview/logview-window.c:849
 msgid "Show matches only"
 msgstr "Εμφάνιση μόνο ταιριασμάτων"
 
-#: ../logview/logview-window.c:848
+#: ../logview/logview-window.c:849
 msgid "Only show lines that match one of the given filters"
 msgstr "Να εμφανίζονται μόνο οι γραμμές που ταιριάζουν με ένα από τα φίλτρα που δίνονται"
 
-#: ../logview/logview-window.c:962
+#: ../logview/logview-window.c:963
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr "Αδυναμία ανάγνωσης από «%s»"
 
-#: ../logview/logview-window.c:1381
+#: ../logview/logview-window.c:1386
 msgid "Version: "
 msgstr "Έκδοση : "
 
-#: ../logview/logview-window.c:1488
+#: ../logview/logview-window.c:1493
 msgid "Could not open the following files:"
 msgstr "Αδυναμία ανοίγματος των ακόλουθων αρχείων:"
