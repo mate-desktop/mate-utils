@@ -2988,16 +2988,16 @@ gsearchtool_setup_gsettings_notifications (GSearchWindow * gsearch)
 		return;
 	}
 
+	g_signal_connect (gsearch->caja_settings,
+	                  "changed::click-policy",
+	                  G_CALLBACK (single_click_to_activate_key_changed_cb),
+	                  gsearch);
+
 	/* Get value of caja click behavior (single or double click to activate items) */
 	click_to_activate_pref = g_settings_get_string (gsearch->caja_settings, "click-policy");
 
 	gsearch->is_search_results_single_click_to_activate =
 		(strncmp (click_to_activate_pref, "single", 6) == 0) ? TRUE : FALSE;
-
-	g_signal_connect (gsearch->caja_settings,
-	                  "changed::click-policy",
-	                  G_CALLBACK (single_click_to_activate_key_changed_cb),
-	                  gsearch);
 
 	g_free (click_to_activate_pref);
 }

@@ -815,17 +815,17 @@ baobab_setup_excluded_locations (void)
 {
 	gchar **uris;
 
+	g_signal_connect (baobab.prefs_settings,
+			 "changed::" BAOBAB_SETTINGS_EXCLUDED_URIS,
+			  G_CALLBACK (excluded_uris_changed),
+			  NULL);
+
 	uris = g_settings_get_strv (baobab.prefs_settings,
 				    BAOBAB_SETTINGS_EXCLUDED_URIS);
 	baobab_set_excluded_locations (uris);
 	g_strfreev (uris);
 
 	sanity_check_excluded_locations ();
-
-	g_signal_connect (baobab.prefs_settings,
-			 "changed::" BAOBAB_SETTINGS_EXCLUDED_URIS,
-			  G_CALLBACK (excluded_uris_changed),
-			  NULL);
 }
 
 static void
@@ -847,13 +847,13 @@ baobab_setup_monitors (void)
 
 	monitor_volume ();
 
-	enable = g_settings_get_boolean (baobab.prefs_settings,
-					 BAOBAB_SETTINGS_MONITOR_HOME);
-
 	g_signal_connect (baobab.prefs_settings,
 			  "changed::" BAOBAB_SETTINGS_MONITOR_HOME,
 			  G_CALLBACK (baobab_settings_monitor_home_changed),
 			  NULL);
+
+	enable = g_settings_get_boolean (baobab.prefs_settings,
+					 BAOBAB_SETTINGS_MONITOR_HOME);
 
 	monitor_home (enable);
 }
