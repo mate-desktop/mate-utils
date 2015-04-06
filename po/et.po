@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-24 13:29+0100\n"
-"PO-Revision-Date: 2015-01-26 08:25+0000\n"
+"PO-Revision-Date: 2015-03-31 07:48+0000\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/MATE/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "Failisüsteemi _läbivaatusele kaasatavate seadmete nimekiri:"
 
 #: ../baobab/data/baobab-dialog-scan-props.ui.h:3
 msgid "_Monitor changes to your home folder"
-msgstr "Kodukataloogis toimuvate _muudatuste jälgimine"
+msgstr "Kodukaustas toimuvate _muudatuste jälgimine"
 
 #: ../baobab/data/baobab-main-window.ui.h:1
 msgid "_Analyzer"
@@ -125,7 +125,7 @@ msgstr "Failisüsteemi läbivaatus"
 
 #: ../baobab/data/baobab-main-window.ui.h:20
 msgid "Scan a folder"
-msgstr "Kataloogi läbivaatamine"
+msgstr "Kataloogi läbivaatus"
 
 #: ../baobab/data/baobab-main-window.ui.h:21
 msgid "Scan Folder"
@@ -133,7 +133,7 @@ msgstr "Kataloogi läbivaatus"
 
 #: ../baobab/data/baobab-main-window.ui.h:22
 msgid "Scan a remote folder"
-msgstr "Kaugkataloogi läbivaatamine"
+msgstr "Kaugkataloogi läbivaatus"
 
 #: ../baobab/data/baobab-main-window.ui.h:23
 msgid "Scan Remote Folder"
@@ -149,11 +149,11 @@ msgstr "Värskenda"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:1
 msgid "Monitor Home"
-msgstr ""
+msgstr "Kodukatausta muudatuste seire"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:2
 msgid "Whether any change to the home directory should be monitored."
-msgstr "Kas kodukataloogis toimuvaid muudatusi tuleb jälgida või mitte."
+msgstr "Kas kodukaustas toimuvaid muudatusi tuleb jälgida või mitte."
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:3
 msgid "Excluded partitions URIs"
@@ -189,11 +189,11 @@ msgstr "Kas valitud kataloogi kohta näidatakse alamkataloogi vihjeid või mitte
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:11
 msgid "Active Chart"
-msgstr ""
+msgstr "Aktiivne diagramm"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:12
 msgid "Which type of chart should be displayed."
-msgstr ""
+msgstr "Kuvatava diagrammi liik."
 
 #: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:1
 msgid "A disk usage analyzing tool for MATE Desktop"
@@ -207,7 +207,7 @@ msgid ""
 "perform scans on a file system, your home or any other folder - local or "
 "remote. There is also an option to constantly monitor any external changes "
 "to the home directory and warn the user if a file is added/removed. </p>"
-msgstr ""
+msgstr "<p> MATE kettakasutuse analüsaator graafiline utiliit kettakasutuse andmete ning kaustade struktuuri kuvamiseks ja seireks. Selle abil saab kuvada kokkuvõtvaid andmeid ring- või puudiagrammina. </p> <p> Programmi abil on võimalik teha läbivaatusi failisüsteemile, sinu kodukaustale või igale muule kaustale – asugu see kohalikus masinas või võrgus. Samuti on võimalik pidev kodukataloogi väliste muutuste seire, et teavitada kasutajat lisatud või eemaldatud failidest. </p>"
 
 #: ../baobab/src/baobab.c:135 ../baobab/src/baobab.c:355
 msgid "Scanning..."
@@ -261,7 +261,7 @@ msgstr "Jälgimist pole võimalik lähtestada"
 
 #: ../baobab/src/baobab.c:592
 msgid "Changes to your home folder will not be monitored."
-msgstr "Kodukataloogis toimuvaid muudatusi ei jälgita."
+msgstr "Kodukaustas toimuvaid muudatusi ei jälgita."
 
 #: ../baobab/src/baobab.c:924
 msgid "Move to parent folder"
@@ -1284,7 +1284,7 @@ msgstr "Hetkel valitud sõnaraamtuallika eemaldamine"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:654
 msgid "Edit the currently selected dictionary source"
-msgstr ""
+msgstr "Hetkel valitud sõnaraamatuallika redigeerimine"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:662
 msgid "Set the font used for printing the definitions"
@@ -1716,7 +1716,7 @@ msgid ""
 " your desktop or of application windows. You can select to copy them to the "
 "system clipboard or save them in Portable Network Graphics (.png) image "
 "format. </p>"
-msgstr ""
+msgstr "<p> MATE Kuvatõmmis on lihtne utiliit töölauast või rakenduste akendest kuvatõmmiste võtmiseks. Tõmmiseid on võimalik kopeerida süsteemi lõikelauale või salvestada PNG (Portable Network Graphics) pildivormingusse. </p>"
 
 #: ../mate-screenshot/mate-screenshot.desktop.in.h:2
 msgid "Save images of your desktop or individual windows"
@@ -1745,7 +1745,7 @@ msgstr "*"
 
 #: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:1
 msgid "Screenshot delay"
-msgstr "Kuvatõmmise viivitus"
+msgstr "Kuvatõmmise tegemise viivitus"
 
 #: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:2
 msgid "The number of seconds to wait before taking the screenshot."
@@ -1792,7 +1792,7 @@ msgid ""
 "%s\n"
 "\n"
 "Please check your installation of mate-utils."
-msgstr ""
+msgstr "Viga kuvatõmmise programmi kasutajaliidese definitsioonide laadimisel :\n%s\n\nPalun kontrolli mate-utils paigaldust."
 
 #: ../mate-screenshot/screenshot-dialog.c:269
 msgid "Select a folder"
@@ -1853,7 +1853,7 @@ msgid ""
 " you instant access to a wide variety of parameters for each search, such as"
 " text contained within a file, ownership, date of modification, file size, "
 "folder exclusion, etc.. </p>"
-msgstr ""
+msgstr "<p> MATE otsimisvahend on lihtne ja võimas vahend failide ja kataloogide otsimiseks igast külgehaagitud failisüsteemist. Selle liides pakub sulle laia valikut parameetreid igat liiki otsingu tarbeks, nagu näiteks failis sisalduv tekst, faili omanik, suurus ja muutmiskuupäev jne... </p>"
 
 #: ../gsearchtool/mate-search-tool.desktop.in.h:1
 msgid "MATE Search Tool"
@@ -1917,15 +1917,15 @@ msgstr "Nimi vastab _regulaaravaldisele"
 
 #: ../gsearchtool/gsearchtool.c:98
 msgid "Show hidden and backup files"
-msgstr "Näidata peidetud ja varufaile"
+msgstr "Näidatakse peidetud faile ja varufaile"
 
 #: ../gsearchtool/gsearchtool.c:99
 msgid "Follow symbolic links"
-msgstr "Järgida nimeviiteid (symlinks)"
+msgstr "Järgitakse nimeviideid"
 
 #: ../gsearchtool/gsearchtool.c:100
 msgid "Exclude other filesystems"
-msgstr "Jäta teised failisüsteemid välja"
+msgstr "Teised failisüsteemid jäetakse välja"
 
 #: ../gsearchtool/gsearchtool.c:158
 msgid "Show version of the application"
@@ -1998,8 +1998,8 @@ msgstr "Ühtegi faili ei leitud"
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
-msgstr[0] "leitud %'d fail"
-msgstr[1] "leitud %'d faili"
+msgstr[0] "Leiti %'d fail"
+msgstr[1] "Leiti %'d faili"
 
 #: ../gsearchtool/gsearchtool.c:1014 ../gsearchtool/gsearchtool.c:1052
 #, c-format
@@ -2022,7 +2022,7 @@ msgstr "Otsinguvaliku \"Alustada kataloogist\" valimine"
 
 #: ../gsearchtool/gsearchtool.c:1310
 msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "Sordi faile järgnevate kriteeriumite alusel: nimi, kaust, suurus, liik või kuupäev"
+msgstr "Failide sortimine järgnevate kriteeriumite alusel: nimi (name), kaust (folder), suurus (size), liik (type) või kuupäev (date)"
 
 #: ../gsearchtool/gsearchtool.c:1311
 msgid "Set sort order to descending, the default is ascending"
@@ -2312,7 +2312,7 @@ msgstr "Ava _rakendusega"
 #. Popup menu item: Open Containing Folder
 #: ../gsearchtool/gsearchtool-callbacks.c:1192
 msgid "Open Containing _Folder"
-msgstr ""
+msgstr "Ava selle faili _kataloog"
 
 #: ../gsearchtool/gsearchtool-callbacks.c:1232
 msgid "_Save Results As..."
@@ -2482,7 +2482,7 @@ msgstr "Otsingu ajalugu"
 
 #: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:2
 msgid "This key defines the items which were searched for in the past."
-msgstr ""
+msgstr "See võti sisaldab viimati tehtud otsinguid."
 
 #: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:3
 msgid "Show Additional Options"
@@ -2651,19 +2651,19 @@ msgstr "See võti määrab käivitamisel otsinguvaliku \"Nimi vastab regulaarava
 msgid ""
 "This key determines if the \"Show hidden files and folders\" search option "
 "is selected when the search tool is started."
-msgstr "See võti määrab käivitamisel otsinguvaliku \"Näidata peidetud ja varufaile\" valituks."
+msgstr "See võti määrab käivitamisel otsinguvaliku \"Näidatakse peidetud faile ja varufaile\" valituks."
 
 #: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:34
 msgid ""
 "This key determines if the \"Follow symbolic links\" search option is "
 "selected when the search tool is started."
-msgstr "See võti määrab käivitamisel otsinguvaliku \"Järgida nimeviiteid\" valituks."
+msgstr "See võti määrab käivitamisel otsinguvaliku \"Järgitakse nimeviideid\" valituks."
 
 #: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:35
 msgid ""
 "This key determines if the \"Exclude other filesystems\" search option is "
 "selected when the search tool is started."
-msgstr "See võti määrab käivitamisel otsinguvaliku \"Jäta teised failisüsteemid välja\" valituks."
+msgstr "See võti määrab käivitamisel otsinguvaliku \"Teised failisüsteemid jäetakse välja\" valituks."
 
 #: ../libeggsmclient/eggdesktopfile.c:165
 #, c-format
