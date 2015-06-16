@@ -62,8 +62,7 @@ appdatadir = $(datadir)/appdata
 appdata_in_files = mate-dictionary.appdata.xml.in
 appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 
-gsettingsschema_in_files = org.mate.dictionary.gschema.xml.in
-gsettings_SCHEMAS = $(gsettingsschema_in_files:.xml.in=.xml)
+gsettings_SCHEMAS = org.mate.dictionary.gschema.xml
 @GSETTINGS_RULES@
 
 convertdir = $(datadir)/MateConf/gsettings
@@ -75,7 +74,6 @@ EXTRA_DIST = \
 	mate-dictionary.desktop.in.in \
 	$(dictsource_in_files) \
 	$(man_MANS) \
-	$(gsettingsschema_in_files) \
 	$(appdata_in_files) \
 	$(builder_DATA) \
 	$(ui_DATA) \

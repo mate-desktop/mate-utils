@@ -10,11 +10,9 @@ $(desktop_in_files): $(desktop_in_files:.desktop.in=.desktop.in.in)
 
 man_MANS = mate-system-log.1
 
-gsettingsschema_in_files = org.mate.system-log.gschema.xml.in
-gsettings_SCHEMAS = $(gsettingsschema_in_files:.xml.in=.xml)
-.PRECIOUS: $(gsettings_SCHEMAS)
+gsettings_SCHEMAS = org.mate.system-log.gschema.xml
 
-@INTLTOOL_XML_NOMERGE_RULE@
+@INTLTOOL_XML_RULE@
 
 @GSETTINGS_RULES@
 
@@ -25,8 +23,7 @@ EXTRA_DIST = 			\
 	mate-system-log.desktop.in.in	\
 	$(xml_DATA)		\
 	$(man_MANS)		\
-	$(convert_DATA)	\
-	$(gsettingsschema_in_files)
+	$(convert_DATA)
 
 DISTCLEANFILES =		\
 	$(desktop_DATA)		\
