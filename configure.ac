@@ -16,7 +16,7 @@ m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
 MATE_COMMON_INIT
 
-IT_PROG_INTLTOOL([0.40.0])
+IT_PROG_INTLTOOL([0.50.1])
 
 AC_ISC_POSIX
 AC_PROG_CXX
@@ -391,6 +391,7 @@ libeggsmclient/Makefile
 
 baobab/Makefile
 baobab/data/Makefile
+baobab/data/org.mate.disk-usage-analyzer.gschema.xml
 baobab/pixmaps/Makefile
 baobab/pixmaps/24x24/Makefile
 baobab/pixmaps/scalable/Makefile
@@ -399,6 +400,7 @@ baobab/help/Makefile
 
 logview/Makefile
 logview/data/Makefile
+logview/data/org.mate.system-log.gschema.xml
 logview/tests/Makefile
 logview/help/Makefile
 
@@ -412,6 +414,7 @@ mate-dictionary/libgdict/Makefile
 mate-dictionary/libgdict/gdict-version.h
 mate-dictionary/libgdict/mate-dict.pc
 mate-dictionary/data/Makefile
+mate-dictionary/data/org.mate.dictionary.gschema.xml
 mate-dictionary/docs/Makefile
 mate-dictionary/docs/reference/Makefile
 mate-dictionary/docs/reference/gdict/Makefile
@@ -420,6 +423,7 @@ mate-dictionary/help/Makefile
 mate-dictionary/src/Makefile
 
 mate-screenshot/Makefile
+mate-screenshot/org.mate.screenshot.gschema.xml
 ])
 
 AC_OUTPUT
