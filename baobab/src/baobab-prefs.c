@@ -111,7 +111,7 @@ filechooser_response_cb (GtkDialog *dialog,
 	switch (response_id) {
 		case GTK_RESPONSE_HELP:
 			baobab_help_display (GTK_WINDOW (baobab.window), 
-			                     "baobab.xml", "baobab-preferences");
+			                     "mate-disk-usage-analyzer", "baobab-preferences");
 			break;
 		case GTK_RESPONSE_DELETE_EVENT:
 		case GTK_RESPONSE_CLOSE:
