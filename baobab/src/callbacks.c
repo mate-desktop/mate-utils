@@ -94,7 +94,6 @@ on_about_activate (GtkMenuItem *menuitem, gpointer user_data)
 	static const gchar copyright[] = "Copyright \xc2\xa9 2005-2010 Fabio Marzocca";
 
 	gtk_show_about_dialog (NULL,
-		"name", _("Disk Usage Analyzer"),
 		"comments", _("A graphical tool to analyze disk usage."),
 		"version", VERSION,
 		"copyright", copyright,
