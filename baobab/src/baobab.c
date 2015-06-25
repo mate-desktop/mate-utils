@@ -1242,7 +1242,7 @@ main (int argc, char *argv[])
 	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 	textdomain (GETTEXT_PACKAGE);
 
-	g_set_application_name ("Baobab");
+	g_set_application_name (_("Disk Usage Analyzer"));
 
 	context = g_option_context_new (NULL);
 	g_option_context_set_ignore_unknown_options (context, FALSE);
