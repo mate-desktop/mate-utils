@@ -507,7 +507,7 @@ baobab_help_display (GtkWindow   *parent,
 	gboolean ret;
 
 	uri = (link_id) ? 
-		g_strdup_printf ("help:%s#%s", file_name, link_id) :
+		g_strdup_printf ("help:%s/%s", file_name, link_id) :
 		g_strdup_printf ("help:%s", file_name);
 
 	ret = gtk_show_uri (gtk_window_get_screen (parent),
