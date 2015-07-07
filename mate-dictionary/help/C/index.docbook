@@ -2,16 +2,16 @@
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
 <!ENTITY app "Dictionary">
 <!ENTITY applet "Dictionary Applet">
-<!ENTITY appversion "2.14.0">
-<!ENTITY date "January 2005">
+<!ENTITY appversion "1.10">
+<!ENTITY date "July 2015">
 <!ENTITY legal SYSTEM "legal.xml">
-<!ENTITY manrevision "1.0.0">
+<!ENTITY manrevision "1.10.0">
 ]>
 <!-- This file describes the Dictionary applet and application. -->
 <!-- 
       (Do not remove this comment block.)
   Maintained by the MATE Documentation Project
-  http://developer.mate.org/projects/gdp
+  http://wiki.mate-desktop.org/dev-doc:doc-team-guide
   Template version: 2.0 beta
   Template last modified 11 April, 2002
   
@@ -29,7 +29,11 @@
         of words.
       </para>
     </abstract>
-    
+
+    <copyright lang="en">
+      <year>2015</year> 
+      <holder>MATE-Dokumentationsprojekt</holder> 
+    </copyright>   
     <copyright>
       <year>2005</year>
       <holder>Emmanuele Bassi</holder>
@@ -44,13 +48,21 @@
 
    -->
    
-    <publisher> 
-      <publishername> MATE Documentation Project </publishername> 
+    <publisher>
+      <publishername>MATE-Dokumentationsprojekt</publishername> 
     </publisher> 
-
+    <publisher> 
+      <publishername>GNOME-Dokumentationsprojekt</publishername> 
+    </publisher>
    &legal;
 
-    <authorgroup> 
+    <authorgroup>
+      <author role="maintainer" lang="en"> 
+	<surname>MATE-Dokumentationsteam</surname> 
+	<affiliation> 
+	  <orgname>Mate desktop</orgname> 
+	</affiliation> 
+      </author>
       <author role="maintainer"> 
 	<firstname>Emmanuele</firstname> 
 	<surname>Bassi</surname> 
@@ -75,12 +87,21 @@
     </authorgroup>
 
     <revhistory>
+      <revision lang="en"> 
+	<revnumber>Dictionary Manual V1.10.0</revnumber> 
+	<date>July 2015</date> 
+	<revdescription> 
+	  <para role="author" lang="en">Wolfgang Ulbrich
+	  </para>
+	  <para role="publisher" lang="en">MATE Documentation Project</para>
+	</revdescription> 
+      </revision>
       <revision> 
 	<revnumber>&app; Manual V&manrevision;</revnumber> 
 	<date>&date;</date> 
 	<revdescription> 
 	  <para role="author">Emmanuele Bassi</para>
-	  <para role="publisher">MATE Documentation Project</para>
+	  <para role="publisher">GNOME Documentation Project</para>
 	</revdescription> 
       </revision>
     </revhistory> 

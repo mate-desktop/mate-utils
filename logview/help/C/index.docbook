@@ -2,15 +2,15 @@
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
 "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [ 
   <!ENTITY legal SYSTEM "legal.xml">
-  <!ENTITY appversion "2.12">
-  <!ENTITY manrevision "2.4">
-  <!ENTITY date "October 2005">
+  <!ENTITY appversion "1.10">
+  <!ENTITY manrevision "1.10">
+  <!ENTITY date "July 2015">
   <!ENTITY app "System Log Viewer">
 ]>
 <!-- 
       (Do not remove this comment block.)
   Maintained by the MATE Documentation Project
-  http://developer.mate.org/projects/gdp
+  http://wiki.mate-desktop.org/dev-doc:doc-team-guide
   Template version: 2.0 beta
   Template last modified Apr 11, 2002
   
@@ -27,6 +27,10 @@
       system log files.</para>
     </abstract>
 
+    <copyright lang="en"> 
+      <year>2015</year> 
+      <holder>MATE-Dokumentationsprojekt</holder> 
+    </copyright>
     <copyright> 
       <year>2003</year> 
       <holder>Sun Microsystems</holder> 
@@ -44,15 +48,24 @@
 
    -->
     <publisher> 
-      <publishername> MATE Documentation Project </publishername> 
+      <publishername>MATE-Dokumentationsprojekt</publishername> 
+    </publisher> 
+    <publisher> 
+      <publishername>GNOME-Dokumentationsprojekt</publishername> 
     </publisher> 
 
    &legal;
 
-   <authorgroup> 
+   <authorgroup>
+      <author role="maintainer" lang="en"> 
+	<surname>MATE-Dokumentationsteam</surname> 
+	<affiliation> 
+	  <orgname>Mate desktop</orgname> 
+	</affiliation> 
+      </author>
    <author> 
 		<firstname>Sun</firstname> 
-		<surname>MATE Documentation Team</surname> 
+		<surname>GNOME Documentation Team</surname> 
 		<affiliation> 
 	  	<orgname>Sun Microsystems</orgname> 
 	  	<address> <email>gdocteam@sun.com</email> </address> 
@@ -63,7 +76,7 @@
 		<firstname>Judith</firstname> 
 		<surname>Samson</surname> 
 		<affiliation> 
-	  	<orgname>MATE Documentation Project</orgname> 
+	  	<orgname>GNOME Documentation Project</orgname> 
 	  	<address> <email>judith@samsonsource.com</email> </address> 
 		</affiliation> 
    </author> 
@@ -72,7 +85,7 @@
 		<firstname>Paul</firstname> 
 		<surname>Cutler</surname> 
 		<affiliation> 
-	  	<orgname>MATE Documentation Team</orgname> 
+	  	<orgname>GNOME Documentation Team</orgname> 
 	  	<address> <email>pcutler@gnome.org</email> </address> 
 		</affiliation> 
    </author> 
@@ -100,6 +113,16 @@
     </authorgroup>
 
     <revhistory>
+           <revision lang="en"> 
+		<revnumber>System Log Viewer Manual V1.10</revnumber> 
+		<date>July 2015</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Wolfgang Ulbrich
+	  		</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+      </revision>
+            <revision lang="en"> 
             <revision> 
 		<revnumber>&app; Manual V2.5</revnumber> 
 		<date>October 2009</date> 
@@ -107,7 +130,7 @@
 	  		<para role="author">Paul Cutler
 	    		<email>pcutler@gnome.org</email>
 	  		</para>
-	  		<para role="publisher">MATE Documentation Project</para>
+	  		<para role="publisher">GNOME Documentation Project</para>
 		</revdescription> 
       </revision>
       <revision> 
@@ -117,7 +140,7 @@
 	  		<para role="author">Vincent Noel
 	    		<email>vincent.noel@gmail.com</email>
 	  		</para>
-	  		<para role="publisher">MATE Documentation Project</para>
+	  		<para role="publisher">GNOME Documentation Project</para>
 		</revdescription> 
       </revision>
       <revision> 
@@ -127,7 +150,7 @@
 	  		<para role="author">Sun GNOME Documentation Team
 	    		<email>gdocteam@sun.com</email>
 	  		</para>
-	  		<para role="publisher">MATE Documentation Project</para>
+	  		<para role="publisher">GNOME Documentation Project</para>
 		</revdescription> 
       </revision>
       <revision> 
@@ -137,7 +160,7 @@
 	  		<para role="author">Sun GNOME Documentation Team
 	    		<email>gdocteam@sun.com</email>
 	  		</para>
-	  		<para role="publisher">MATE Documentation Project</para>
+	  		<para role="publisher">GNOME Documentation Project</para>
 		</revdescription> 
       </revision>
       <revision> 
@@ -147,7 +170,7 @@
 	  		<para role="author">Sun GNOME Documentation Team
 	    		<email>gdocteam@sun.com</email>
 	  		</para>
-	  		<para role="publisher">MATE Documentation Project</para>
+	  		<para role="publisher">GNOME Documentation Project</para>
 		</revdescription> 
       </revision>
       <revision> 
@@ -157,7 +180,7 @@
 	  		<para role="author">Sun GNOME Documentation Team
 	    		<email>gdocteam@sun.com</email>
 	  		</para>
-	  		<para role="publisher">MATE Documentation Project</para>
+	  		<para role="publisher">GNOME Documentation Project</para>
 		</revdescription> 
       </revision> 
       <revision> 
@@ -167,7 +190,7 @@
 	  		<para role="author">Judith Samson
 	    		<email>judith@samsonsource.com</email>
 	  		</para>
-	  		<para role="publisher">MATE Documentation Project</para>
+	  		<para role="publisher">GNOME Documentation Project</para>
 			</revdescription> 
       </revision> 
     </revhistory> 
