@@ -124,7 +124,7 @@ display_help (GtkWindow *parent)
   GError *error = NULL;
 
   gtk_show_uri (gtk_window_get_screen (parent),
-		"help:mate-user-guide/screenshot",
+		"help:mate-user-guide/goseditmainmenu-53",
 		gtk_get_current_event_time (), &error);
 
   if (error)
