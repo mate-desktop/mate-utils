@@ -768,7 +768,7 @@ logview_about (GtkWidget *widget, GtkWidget *window)
                          "translator_credits", strcmp (logview_about_translator_credits,
                                                        "translator-credits") != 0 ?
                                                logview_about_translator_credits : NULL,
-                         "logo_icon_name", "logviewer",
+                         "logo_icon_name", "utilities-system-monitor",
                          NULL);
   g_free (license_trans);
 
