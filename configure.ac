@@ -395,6 +395,7 @@ baobab/help/Makefile
 logview/Makefile
 logview/data/Makefile
 logview/data/org.mate.system-log.gschema.xml
+logview/data/icons/Makefile
 logview/tests/Makefile
 logview/help/Makefile
 

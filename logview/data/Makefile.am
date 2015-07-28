@@ -1,3 +1,5 @@
+SUBDIRS=icons
+
 xmldir = $(pkgdatadir)
 xml_DATA = logview-toolbar.xml logview-filter.ui
 
