@@ -13,8 +13,13 @@ public_icons = \
 	hicolor_apps_scalable_mate-system-log-symbolic.svg \
 	$(NULL)
 
+noinst_DATA = \
+	logview.svg \
+	$(NULL)
+
 EXTRA_DIST = \
 	$(public_icons)		\
+	$(noinst_DATA)		\
 	$(NULL)
 
 ###############################################################################
