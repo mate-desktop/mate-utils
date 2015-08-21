@@ -47,7 +47,7 @@ callback (LogviewLog *log,
 {
   g_print ("callback! err %p, log %p\n", error, log);
 
-  logview_log_read_new_lines (log, new_lines_cb, NULL);
+  logview_log_read_new_lines (log, NULL, new_lines_cb, NULL);
 }
 
 int main (int argc, char **argv)

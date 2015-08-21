@@ -67,6 +67,8 @@ struct _LogviewWindowPrivate {
   gulong monitor_id;
   guint search_timeout_id;
 
+  GCancellable *read_cancellable;
+
   guint filter_merge_id;
   GList *active_filters;
   gboolean matches_only;
@@ -919,12 +921,29 @@ loglist_day_cleared_cb (LogviewLoglist *loglist,
 }
 
 static void
+logview_window_schedule_log_read (LogviewWindow *window,
+                                  LogviewLog *log)
+{
+  if (window->priv->read_cancellable != NULL) {
+    g_cancellable_cancel (window->priv->read_cancellable);
+    g_clear_object (&window->priv->read_cancellable);
+  }
+
+  window->priv->read_cancellable = g_cancellable_new ();
+  logview_log_read_new_lines (log,
+                              window->priv->read_cancellable,
+                              (LogviewNewLinesCallback) read_new_lines_cb,
+                              window);
+}
+
+static void
 log_monitor_changed_cb (LogviewLog *log,
                         gpointer user_data)
 {
+  LogviewWindow *window = user_data;
+
   /* reschedule a read */
-  logview_log_read_new_lines (log, (LogviewNewLinesCallback) read_new_lines_cb,
-                              user_data);
+  logview_window_schedule_log_read (window, log);
 }
 
 static void
@@ -960,10 +979,12 @@ read_new_lines_cb (LogviewLog *log,
   gsize len;
 
   if (error != NULL) {
-    primary = g_strdup_printf (_("Can't read from \"%s\""),
-                               logview_log_get_display_name (log));
-    logview_window_add_error (window, primary, error->message);
-    g_free (primary);
+    if (!g_error_matches (error, G_IO_ERROR, G_IO_ERROR_CANCELLED)) {
+      primary = g_strdup_printf (_("Can't read from \"%s\""),
+                                 logview_log_get_display_name (log));
+      logview_window_add_error (window, primary, error->message);
+      g_free (primary);
+    }
 
     return;
   }
@@ -1065,7 +1086,7 @@ active_log_changed_cb (LogviewManager *manager,
 
   if (lines == NULL || logview_log_has_new_lines (log)) {
     /* read the new lines */
-    logview_log_read_new_lines (log, (LogviewNewLinesCallback) read_new_lines_cb, window);
+    logview_window_schedule_log_read (window, log);
   } else {
     /* start now monitoring the log for changes */
     window->priv->monitor_id = g_signal_connect (log, "log-changed",
@@ -1236,6 +1257,11 @@ static void
 logview_window_finalize (GObject *object)
 {
   LogviewWindow *logview = LOGVIEW_WINDOW (object);
+
+  if (logview->priv->read_cancellable != NULL) {
+    g_cancellable_cancel (logview->priv->read_cancellable);
+    g_clear_object (&logview->priv->read_cancellable);
+  }
 
   g_object_unref (logview->priv->ui_manager);
   G_OBJECT_CLASS (logview_window_parent_class)->finalize (object);
