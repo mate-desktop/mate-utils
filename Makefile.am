@@ -21,7 +21,6 @@ distcleancheck_listfiles = find . -type f -print | grep -v 'omf\.out' | grep -v 
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
 SUBDIRS = \
-	m4			\
 	po			\
 	libeggsmclient		\
 	baobab			\

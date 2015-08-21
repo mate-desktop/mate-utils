@@ -11,8 +11,8 @@ AC_INIT([mate-utils],
 AC_CONFIG_MACRO_DIR([m4])
 
 AC_CONFIG_HEADERS([config.h])
-AM_INIT_AUTOMAKE([dist-xz no-dist-gzip check-news])
-m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
+AM_INIT_AUTOMAKE([1.11 dist-xz no-dist-gzip check-news])
+AM_SILENT_RULES([yes])
 
 MATE_COMMON_INIT
 
@@ -105,7 +105,7 @@ case "$with_gtk" in
 	3.0) GTK_API_VERSION=3.0
 		GTK_REQUIRED=3.0.0
 		LIBCANBERRA_GTK_VERSION=libcanberra-gtk3
-    LIBCANBERRA_GTK_REQUIRED=0.4
+		LIBCANBERRA_GTK_REQUIRED=0.4
 		;;
 esac
 
@@ -376,14 +376,8 @@ GTK_DOC_CHECK([1.10])
 dnl yelp-tools stuff
 YELP_HELP_INIT
 
-SHAVE_INIT([m4], [enable])
-
 AC_CONFIG_FILES([
 Makefile
-
-m4/Makefile
-m4/shave-libtool
-m4/shave
 
 po/Makefile.in
 
