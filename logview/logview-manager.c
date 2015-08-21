@@ -393,6 +393,10 @@ logview_manager_close_active_log (LogviewManager *manager)
   g_assert (LOGVIEW_IS_MANAGER (manager));
 
   active_log = manager->priv->active_log;
+  if (active_log == NULL) {
+    return;
+  }
+
   log_uri = logview_log_get_uri (active_log);
   file = logview_log_get_gfile (active_log);
 

@@ -135,7 +135,8 @@ logview_loglist_find_log (LogviewLoglist *list, LogviewLog *log)
     if (current == log) {
       retval = gtk_tree_iter_copy (&iter);
     }
-    g_object_unref (current);
+    if (current)
+      g_object_unref (current);
   } while (gtk_tree_model_iter_next (model, &iter) != FALSE && retval == NULL);
 
   return retval;
@@ -488,10 +489,12 @@ logview_loglist_update_lines (LogviewLoglist *loglist, LogviewLog *log)
   g_assert (LOGVIEW_IS_LOGLIST (loglist));
   g_assert (LOGVIEW_IS_LOG (log));
 
-  days = logview_log_get_days_for_cached_lines (log);
   parent = logview_loglist_find_log (loglist, log);
-  update_days_and_lines_for_log (loglist, parent, days);
 
-  gtk_tree_iter_free (parent);
+  if (parent) {
+    days = logview_log_get_days_for_cached_lines (log);
+    update_days_and_lines_for_log (loglist, parent, days);
+    gtk_tree_iter_free (parent);
+  }
 }
 
