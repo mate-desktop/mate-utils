@@ -295,13 +295,13 @@ do_read_new_lines (GIOSchedulerJob *io_job,
     g_ptr_array_add (lines, (gpointer) line);
   }
 
+  /* NULL-terminate the array again */
+  g_ptr_array_add (lines, NULL);
+
   if (err) {
     job->err = err;
     goto out;
   }
-
-  /* NULL-terminate the array again */
-  g_ptr_array_add (lines, NULL);
 
   log->priv->has_new_lines = FALSE;
 
