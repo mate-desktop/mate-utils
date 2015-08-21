@@ -95,7 +95,7 @@ gdict_app_init (GdictApp *app)
 
 static void
 gdict_window_destroy_cb (GtkWidget *widget,
-		         gpointer   user_data)
+                         gpointer   user_data)
 {
   GdictWindow *window = GDICT_WINDOW (widget);
   GdictApp *app = GDICT_APP (user_data);
@@ -113,8 +113,8 @@ gdict_window_destroy_cb (GtkWidget *widget,
 
 static void
 gdict_window_created_cb (GdictWindow *parent,
-			 GdictWindow *new_window,
-			 gpointer     user_data)
+                         GdictWindow *new_window,
+                         gpointer     user_data)
 {
   GdictApp *app = GDICT_APP (user_data);
   
@@ -208,8 +208,8 @@ gdict_create_window (GdictApp *app)
 
 static void
 definition_found_cb (GdictContext    *context,
-		     GdictDefinition *definition,
-		     gpointer         user_data)
+                     GdictDefinition *definition,
+                     gpointer         user_data)
 {
   /* Translators: the first is the word found, the second is the
    * database name and the last is the definition's text; please
@@ -226,7 +226,7 @@ definition_found_cb (GdictContext    *context,
 static void
 error_cb (GdictContext *context,
           const GError *error,
-	  gpointer      user_data)
+          gpointer      user_data)
 {
   g_print (_("Error: %s\n"), error->message);
 
@@ -235,7 +235,7 @@ error_cb (GdictContext *context,
 
 static void
 lookup_end_cb (GdictContext *context,
-	       gpointer      user_data)
+               gpointer      user_data)
 {
   GdictApp *app = GDICT_APP (user_data);
 
@@ -295,18 +295,16 @@ gdict_look_up_word_and_quit (GdictApp *app)
       app->remaining_words += 1;
 
       gdict_context_define_word (context,
-		      		 app->database,
-				 word,
-				 &err);
+                                 app->database,
+                                 word,
+                                 &err);
 
       if (err)
-	{
+        {
           g_warning (_("Error while looking up the definition of \"%s\":\n%s"),
-		     word,
-		     err->message);
-
-	  g_error_free (err);
-	}
+                     word, err->message);
+          g_error_free (err);
+        }
     }
 
   gtk_main ();
@@ -400,8 +398,8 @@ gdict_init (int *argc, char ***argv)
       gsize length = g_strv_length (lookup_words);
 
       for (i = 0; i < length; i++)
-	singleton->lookup_words = g_slist_prepend (singleton->lookup_words,
-			                           g_strdup (lookup_words[i]));
+        singleton->lookup_words = g_slist_prepend (singleton->lookup_words,
+                                                   g_strdup (lookup_words[i]));
     }
 
   if (match_words)
@@ -411,7 +409,7 @@ gdict_init (int *argc, char ***argv)
 
       for (i = 0; i < length; i++)
         singleton->match_words = g_slist_prepend (singleton->match_words,
-			                          g_strdup (match_words[i]));
+                                                  g_strdup (match_words[i]));
     }
 
   if (database)
