@@ -284,6 +284,8 @@ logview_manager_set_active_log (LogviewManager *manager,
                                 LogviewLog *log)
 {
   LogviewLog *old_log = NULL;
+  GFile *file;
+  char *path;
 
   g_assert (LOGVIEW_IS_MANAGER (manager));
 
@@ -292,6 +294,12 @@ logview_manager_set_active_log (LogviewManager *manager,
   }
 
   manager->priv->active_log = g_object_ref (log);
+
+  file = logview_log_get_gfile (log);
+  path = g_file_get_path (file);
+  logview_prefs_store_active_logfile (logview_prefs_get (), path);
+  g_free (path);
+  g_object_unref (file);
 
   g_signal_emit (manager, signals[ACTIVE_CHANGED], 0, log, old_log, NULL);
 
