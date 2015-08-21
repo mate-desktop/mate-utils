@@ -298,6 +298,8 @@ run_add_edit_dialog (LogviewFilterManager *manager, LogviewFilter *filter)
   dialog = GTK_WIDGET (gtk_builder_get_object (builder,
                                                "dialog_filter"));
 
+  gtk_window_set_title (GTK_WINDOW (dialog), title);
+
   entry_name = GTK_WIDGET (gtk_builder_get_object (builder,
                                                    "entry_name"));
   entry_regex = GTK_WIDGET (gtk_builder_get_object (builder,
