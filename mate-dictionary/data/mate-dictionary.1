@@ -1,7 +1,8 @@
-.\" mate-dictionary.1 - a online dictionary client
+.\" mate-dictionary.1 - an online dictionary client
+.\" Copyright 2015  MATE developers
 .\" Copyright 2005  Emmanuele Bassi
 .\" Copyright 2001  Jochen Voss
-.TH mate-dictionary 1 "Jan 2 2005" "mate-utils 2.13.4"
+.TH mate-dictionary 1 "Jul 11 2015" "mate-utils 1.10.2"
 .SH NAME
 mate-dictionary \- Look up words on dictionaries
 .SH SYNOPSIS
@@ -29,6 +30,9 @@ online help.
 .BI \-\-look\-up " word"
 Looks up the specified word using the pre-defined dictionary source.
 .TP
+.BI \-\-match " word"
+Matches one or more words using the pre-defined dictionary source.
+.TP
 .BI \-s " source\fR or " \-\-source " source"
 Uses the specified source for looking up words.  This does not affect the
 global settings.
@@ -39,6 +43,14 @@ Lists all the sources available.
 .BR \-n " or " \-\-no\-window
 Using this switch with the \-\-look\-up will print the definitions found
 on the console without launching the GUI.
+.TP
+.BI \-D " database\fR or " \-\-database " database"
+Use the specified database for looking up words. This does not affect the
+global settings.
+.TP
+.BI \-S " strategy\fR or " \-\-strategy " strategy"
+Use the specified strategy for looking up words. This does not affect the
+global settings.
 .TP
 .B \-\-help
 Display help information.
