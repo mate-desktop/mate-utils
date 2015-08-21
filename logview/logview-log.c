@@ -78,6 +78,7 @@ typedef struct {
   GError *err;
   const char **lines;
   GSList *new_days;
+  GCancellable *cancellable;
   LogviewNewLinesCallback callback;
   gpointer user_data;
 } NewLinesJob;
@@ -253,6 +254,8 @@ new_lines_job_done (gpointer data)
     job->callback (job->log, job->lines, job->new_days, job->err, job->user_data);
   }
 
+  g_clear_object (&job->cancellable);
+
   g_slist_foreach (job->new_days, (GFunc) logview_utils_day_free, NULL);
   g_slist_free (job->new_days);
 
@@ -290,7 +293,7 @@ do_read_new_lines (GIOSchedulerJob *io_job,
   g_ptr_array_remove_index (lines, lines->len - 1);
 
   while ((line = g_data_input_stream_read_line (log->priv->stream, NULL,
-                                                NULL, &err)) != NULL)
+                                                job->cancellable, &err)) != NULL)
   {
     g_ptr_array_add (lines, (gpointer) line);
   }
@@ -800,6 +803,7 @@ log_setup_load (LogviewLog *log, LogviewCreateCallback callback,
 
 void
 logview_log_read_new_lines (LogviewLog *log,
+                            GCancellable *cancellable,
                             LogviewNewLinesCallback callback,
                             gpointer user_data)
 {
@@ -809,6 +813,7 @@ logview_log_read_new_lines (LogviewLog *log,
   job = g_slice_new0 (NewLinesJob);
   job->callback = callback;
   job->user_data = user_data;
+  job->cancellable = (cancellable != NULL) ? g_object_ref (cancellable) : NULL;
   job->log = g_object_ref (log);
   job->err = NULL;
   job->lines = NULL;
@@ -817,7 +822,8 @@ logview_log_read_new_lines (LogviewLog *log,
   /* push the fetching job into another thread */
   g_io_scheduler_push_job (do_read_new_lines,
                            job,
-                           NULL, 0, NULL);
+                           NULL, 0,
+                           job->cancellable);
 }
 
 void

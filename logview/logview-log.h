@@ -90,6 +90,7 @@ void          logview_log_create_from_gfile        (GFile *file,
                                                     LogviewCreateCallback callback,
                                                     gpointer user_data);
 void          logview_log_read_new_lines           (LogviewLog *log,
+                                                    GCancellable *cancellable,
                                                     LogviewNewLinesCallback callback,
                                                     gpointer user_data);
 
