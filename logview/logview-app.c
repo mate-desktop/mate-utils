@@ -381,6 +381,18 @@ logview_app_add_error (LogviewApp *app,
   g_free (primary);
 }
 
+static void
+check_error_prefs (gpointer data,
+                   gpointer user_data)
+{
+  gchar **strings = data;
+  LogviewApp *app = user_data;
+  GFile *file = g_file_new_for_path (strings[0]);
+
+  logview_prefs_remove_stored_log (app->priv->prefs, file);
+  g_object_unref (file);
+}
+
 void
 logview_app_add_errors (LogviewApp *app,
                         GPtrArray *errors)
@@ -393,7 +405,11 @@ logview_app_add_errors (LogviewApp *app,
 
   if (errors->len == 0) {
     return;
-  } else if (errors->len == 1) {
+  }
+
+  g_ptr_array_foreach (errors, check_error_prefs, app);
+
+  if (errors->len == 1) {
     char **err;
 
     err = g_ptr_array_index (errors, 0);
