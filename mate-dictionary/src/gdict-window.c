@@ -1047,8 +1047,11 @@ gdict_window_cmd_edit_copy (GtkAction   *action,
 {
   g_assert (GDICT_IS_WINDOW (window));
 
-  gdict_defbox_copy_to_clipboard (GDICT_DEFBOX (window->defbox),
-		  		  gtk_clipboard_get (GDK_SELECTION_CLIPBOARD));
+  if (gtk_widget_has_focus (window->entry))
+    gtk_editable_copy_clipboard (GTK_EDITABLE (window->entry));
+  else
+    gdict_defbox_copy_to_clipboard (GDICT_DEFBOX (window->defbox),
+                                    gtk_clipboard_get (GDK_SELECTION_CLIPBOARD));
 }
 
 static void
@@ -1057,7 +1060,10 @@ gdict_window_cmd_edit_select_all (GtkAction   *action,
 {
   g_assert (GDICT_IS_WINDOW (window));
 
-  gdict_defbox_select_all (GDICT_DEFBOX (window->defbox));
+  if (gtk_widget_has_focus (window->entry))
+    gtk_editable_select_region (GTK_EDITABLE (window->entry), 0, -1);
+  else
+    gdict_defbox_select_all (GDICT_DEFBOX (window->defbox));
 }
 
 static void
