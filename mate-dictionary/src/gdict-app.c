@@ -326,10 +326,8 @@ gdict_init (int *argc, char ***argv)
   gchar **lookup_words = NULL;
   gchar **match_words = NULL;
   gchar *database = NULL;
-  gchar *strategy = NULL;
   gchar *source_name = NULL;
   gboolean no_window = FALSE;
-  gboolean list_sources = FALSE;
 
   const GOptionEntry gdict_app_goptions[] =
   {
@@ -339,14 +337,10 @@ gdict_init (int *argc, char ***argv)
        N_("Words to match"), N_("word") },
     { "source", 's', 0, G_OPTION_ARG_STRING, &source_name,
        N_("Dictionary source to use"), N_("source") },
-    { "list-sources", 'l', 0, G_OPTION_ARG_NONE, &list_sources,
-       N_("Show available dictionary sources"), NULL },
     { "no-window", 'n', 0, G_OPTION_ARG_NONE, &no_window,
        N_("Print result to the console"), NULL },
     { "database", 'D', 0, G_OPTION_ARG_STRING, &database,
        N_("Database to use"), N_("db") },
-    { "strategy", 'S', 0, G_OPTION_ARG_STRING, &strategy,
-       N_("Strategy to use"), N_("strat") },
     { G_OPTION_REMAINING, 0, 0, G_OPTION_ARG_STRING_ARRAY, &lookup_words,
        N_("Words to look up"), N_("word") },
     { NULL },
@@ -422,9 +416,6 @@ gdict_init (int *argc, char ***argv)
 
   if (no_window)
     singleton->no_window = TRUE;
-
-  if (list_sources)
-    singleton->list_sources = TRUE;
 }
 
 void

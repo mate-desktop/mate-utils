@@ -52,7 +52,6 @@ struct _GdictApp
   gchar *database;
   gchar *source_name;
   gboolean no_window;
-  gboolean list_sources;
   
   GdictSourceLoader *loader;
 
