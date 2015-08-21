@@ -406,8 +406,7 @@ logview_manager_close_active_log (LogviewManager *manager)
 
   g_object_unref (file);
 
-  /* we own two refs to the active log; one is inside the hash table */
-  g_object_unref (active_log);
+  /* drop the hash table ref */
   g_hash_table_remove (manager->priv->logs, log_uri);
 
   g_free (log_uri);
