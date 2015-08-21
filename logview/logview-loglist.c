@@ -352,7 +352,7 @@ loglist_sort_func (GtkTreeModel *model,
     case 0:
       gtk_tree_model_get (model, a, LOG_NAME, &name_a, -1);
       gtk_tree_model_get (model, b, LOG_NAME, &name_b, -1);
-      retval = g_strcmp0 (name_a, name_b);
+      retval = g_utf8_collate (name_a, name_b);
       g_free (name_a);
       g_free (name_b);
 
