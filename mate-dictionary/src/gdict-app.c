@@ -252,7 +252,7 @@ gdict_look_up_word_and_quit (GdictApp *app)
   GdictContext *context;
   GSList *l;
   
-  if ((!app->lookup_words) || (!app->match_words))
+  if (!app->lookup_words)
     {
       g_print (_("See mate-dictionary --help for usage\n"));
 
