@@ -383,9 +383,9 @@ first_row (void)
 	gchar *capacity_label, *capacity_size;
 
 	gtk_tree_store_append (baobab.model, &root_iter, NULL);
-	
-		capacity_size = g_format_size (baobab.fs.total);
-	
+
+	capacity_size = g_format_size (baobab.fs.total);
+
 	capacity_label = g_strdup (_("Total filesystem capacity"));
 	gtk_tree_store_set (baobab.model, &root_iter,
 			    COL_DIR_NAME, capacity_label,
@@ -464,9 +464,9 @@ baobab_fill_model (struct chan_data *data)
 			 ngettext ("%5d item", "%5d items",
 				   data->elements), data->elements);
 
-		size = g_format_size (data->size);
-		alloc_size = g_format_size (data->alloc_size);
-	
+	size = g_format_size (data->size);
+	alloc_size = g_format_size (data->alloc_size);
+
 	gtk_tree_store_set (baobab.model, &iter,
 			    COL_DIR_NAME, name,
 			    COL_H_PARSENAME, data->parse_name,
