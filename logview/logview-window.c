@@ -1013,7 +1013,8 @@ read_new_lines_cb (LogviewLog *log,
 
     if (!g_utf8_validate (lines[i], len, NULL)) {
       converted = g_locale_to_utf8 (lines[i], (gssize) len, NULL, &len, NULL);
-      gtk_text_buffer_insert (buffer, &iter, lines[i], len);
+      gtk_text_buffer_insert (buffer, &iter, converted, len);
+      g_free (converted);
     } else {
       gtk_text_buffer_insert (buffer, &iter, lines[i], strlen (lines[i]));
     }
