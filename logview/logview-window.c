@@ -1419,6 +1419,10 @@ logview_window_init (LogviewWindow *logview)
 
   /* status area at bottom */
   priv->statusbar = gtk_statusbar_new ();
+#if GTK_CHECK_VERSION (3, 0, 0)
+	gtk_widget_set_margin_top (GTK_WIDGET (logview->priv->statusbar), 0);
+	gtk_widget_set_margin_bottom (GTK_WIDGET (logview->priv->statusbar), 0);
+#endif
   gtk_box_pack_start (GTK_BOX (vbox), priv->statusbar, FALSE, FALSE, 0);
   gtk_widget_show (priv->statusbar);
 
