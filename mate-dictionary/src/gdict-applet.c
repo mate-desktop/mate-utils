@@ -742,21 +742,6 @@ gdict_applet_cmd_help (GtkAction *action,
     }
 }
 
-#if !GTK_CHECK_VERSION (3, 0, 0)
-static void
-gdict_applet_change_background (MatePanelApplet               *applet,
-				MatePanelAppletBackgroundType  type,
-				GdkColor                  *color,
-				GdkPixmap                 *pixmap)
-{
-  if (MATE_PANEL_APPLET_CLASS (gdict_applet_parent_class)->change_background)
-    MATE_PANEL_APPLET_CLASS (gdict_applet_parent_class)->change_background (applet,
-    								       type,
-    								       color,
-    								       pixmap);
-}
-#endif
-
 static void
 gdict_applet_change_orient (MatePanelApplet       *applet,
 			    MatePanelAppletOrient  orient)
@@ -1113,9 +1098,6 @@ gdict_applet_class_init (GdictAppletClass *klass)
   widget_class->size_allocate = gdict_applet_size_allocate;
   widget_class->style_set = gdict_applet_style_set;
   
-#if !GTK_CHECK_VERSION (3, 0, 0)
-  applet_class->change_background = gdict_applet_change_background;
-#endif
   applet_class->change_orient = gdict_applet_change_orient;
   
   g_type_class_add_private (gobject_class, sizeof (GdictAppletPrivate));
