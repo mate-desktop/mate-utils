@@ -1134,7 +1134,6 @@ gdict_applet_init (GdictApplet *applet)
   g_signal_connect (priv->desktop_settings, "changed",
                     G_CALLBACK (gdict_applet_settings_changed_cb), applet);
 
-#ifndef GDICT_APPLET_STAND_ALONE
   mate_panel_applet_set_background_widget (MATE_PANEL_APPLET (applet),
 		  		      GTK_WIDGET (applet));
 
@@ -1151,14 +1150,6 @@ gdict_applet_init (GdictApplet *applet)
       priv->orient = GTK_ORIENTATION_HORIZONTAL;
       break;
     }
-#else
-  priv->size = 24;
-  priv->orient = GTK_ORIENTATION_HORIZONTAL;
-  g_message ("(in %s) applet { size = %d, orient = %s }",
-  	     G_STRFUNC,
-  	     priv->size,
-  	     (priv->orient == GTK_ORIENTATION_HORIZONTAL ? "H" : "V"));
-#endif /* !GDICT_APPLET_STAND_ALONE */
 
   priv->icon = gtk_icon_theme_load_icon (gtk_icon_theme_get_default (),
 		  			 "accessories-dictionary",
@@ -1175,7 +1166,6 @@ gdict_applet_init (GdictApplet *applet)
   gdict_applet_set_print_font (applet, NULL);
 }
 
-#ifndef GDICT_APPLET_STAND_ALONE
 static const GtkActionEntry gdict_applet_menu_actions[] = {
   {"DictionaryLookup", GTK_STOCK_FIND, N_("_Look Up Selected Text"),
     NULL, NULL,
@@ -1243,39 +1233,3 @@ MATE_PANEL_APPLET_OUT_PROCESS_FACTORY ("DictionaryAppletFactory",
 			     gdict_applet_factory,
 			     NULL);
 
-#else /* GDICT_APPLET_STAND_ALONE */
-
-int
-main (int argc, char *argv[])
-{
-  GtkWidget *window;
-  GtkWidget *applet;
-
-  /* gettext stuff */
-  bindtextdomain (GETTEXT_PACKAGE, MATELOCALEDIR);
-  bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-  textdomain (GETTEXT_PACKAGE);
-
-  gtk_init (&argc, &argv);
-
-  window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
-  g_signal_connect (window, "destroy", G_CALLBACK (gtk_main_quit), NULL);
-
-  applet = GTK_WIDGET (g_object_new (GDICT_TYPE_APPLET, NULL));
-  g_message ("(in %s) typeof(applet) = '%s'",
-  	     G_STRFUNC,
-  	     g_type_name (G_OBJECT_TYPE (applet)));
-
-  gdict_applet_queue_draw (GDICT_APPLET (applet));
-  
-  gtk_container_set_border_width (GTK_CONTAINER (window), 12);
-  gtk_container_add (GTK_CONTAINER (window), applet);
-  
-  gtk_widget_show_all (window);
-  
-  gtk_main ();
-  
-  return 0;
-}
-
-#endif /* !GDICT_APPLET_STAND_ALONE */
