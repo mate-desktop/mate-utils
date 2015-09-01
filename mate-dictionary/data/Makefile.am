@@ -15,7 +15,6 @@ $(gdictapp_in_files): $(gdictapp_in_files:.desktop.in=.desktop.in.in)
 dictsourcedir = $(datadir)/mate-dict/sources
 dictsource_in_files = \
 	default.desktop.in \
-	spanish.desktop.in \
 	thai.desktop.in \
 	$(NULL)
 dictsource_DATA = $(dictsource_in_files:.desktop.in=.desktop)
