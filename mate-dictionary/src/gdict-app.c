@@ -62,8 +62,8 @@ gdict_app_finalize (GObject *object)
   app->current_window = NULL;
   
   g_slist_foreach (app->windows,
-  		   (GFunc) gtk_widget_destroy,
-  		   NULL);
+                   (GFunc) gtk_widget_destroy,
+                   NULL);
   g_slist_free (app->windows);
 
   g_slist_foreach (app->lookup_words, (GFunc) g_free, NULL);
@@ -125,13 +125,13 @@ gdict_window_created_cb (GdictWindow *parent,
    * destroyed, and will add/remove it to the windows list accordingly
    */
   g_signal_connect (new_window, "created",
-  		    G_CALLBACK (gdict_window_created_cb), app);
+                    G_CALLBACK (gdict_window_created_cb), app);
   g_signal_connect (new_window, "destroy",
-  		    G_CALLBACK (gdict_window_destroy_cb), app);
+                    G_CALLBACK (gdict_window_destroy_cb), app);
 
   if (gtk_window_get_group (GTK_WINDOW (parent)))
     gtk_window_group_add_window (gtk_window_get_group (GTK_WINDOW (parent)),
-		    		 GTK_WINDOW (new_window));
+                                 GTK_WINDOW (new_window));
   
   app->windows = g_slist_prepend (app->windows, new_window);
   app->current_window = new_window;
@@ -147,13 +147,13 @@ gdict_create_window (GdictApp *app)
       GtkWidget *window;
 
       window = gdict_window_new (GDICT_WINDOW_ACTION_CLEAR,
-      				 singleton->loader,
-				 singleton->source_name,
-				 NULL);
+                                 singleton->loader,
+                                 singleton->source_name,
+                                 NULL);
       g_signal_connect (window, "created",
-		        G_CALLBACK (gdict_window_created_cb), app);
+                        G_CALLBACK (gdict_window_created_cb), app);
       g_signal_connect (window, "destroy",
-		        G_CALLBACK (gdict_window_destroy_cb), app);
+                        G_CALLBACK (gdict_window_destroy_cb), app);
   
       app->windows = g_slist_prepend (app->windows, window);
       app->current_window = GDICT_WINDOW (window);
@@ -169,14 +169,14 @@ gdict_create_window (GdictApp *app)
       GtkWidget *window;
 
       window = gdict_window_new (GDICT_WINDOW_ACTION_LOOKUP,
-      				 singleton->loader,
-		      		 singleton->source_name,
-				 word);
+                                 singleton->loader,
+                                 singleton->source_name,
+                                 word);
       
       g_signal_connect (window, "created",
-		        G_CALLBACK (gdict_window_created_cb), app);
+                        G_CALLBACK (gdict_window_created_cb), app);
       g_signal_connect (window, "destroy",
-		        G_CALLBACK (gdict_window_destroy_cb), app);
+                        G_CALLBACK (gdict_window_destroy_cb), app);
   
       app->windows = g_slist_prepend (app->windows, window);
       app->current_window = GDICT_WINDOW (window);
@@ -190,14 +190,14 @@ gdict_create_window (GdictApp *app)
       GtkWidget *window;
 
       window = gdict_window_new (GDICT_WINDOW_ACTION_MATCH,
-      				 singleton->loader,
-				 singleton->source_name,
-				 word);
+                                 singleton->loader,
+                                 singleton->source_name,
+                                 word);
       
       g_signal_connect (window, "created",
-      			G_CALLBACK (gdict_window_created_cb), app);
+                        G_CALLBACK (gdict_window_created_cb), app);
       g_signal_connect (window, "destroy",
-      			G_CALLBACK (gdict_window_destroy_cb), app);
+                        G_CALLBACK (gdict_window_destroy_cb), app);
       
       app->windows = g_slist_prepend (app->windows, window);
       app->current_window = GDICT_WINDOW (window);
@@ -215,12 +215,12 @@ definition_found_cb (GdictContext    *context,
    * database name and the last is the definition's text; please
    * keep the new lines. */
   g_print (_("Definition for '%s'\n"
-	     "  From '%s':\n"
-	     "\n"
-	     "%s\n"),
+           "  From '%s':\n"
+           "\n"
+           "%s\n"),
            gdict_definition_get_word (definition),
-	   gdict_definition_get_database (definition),
-	   gdict_definition_get_text (definition));
+           gdict_definition_get_database (definition),
+           gdict_definition_get_text (definition));
 }
 
 static void
@@ -280,11 +280,11 @@ gdict_look_up_word_and_quit (GdictApp *app)
   g_assert (GDICT_IS_CONTEXT (context));
 
   g_signal_connect (context, "definition-found",
-		    G_CALLBACK (definition_found_cb), app);
+                    G_CALLBACK (definition_found_cb), app);
   g_signal_connect (context, "error",
-		    G_CALLBACK (error_cb), app);
+                    G_CALLBACK (error_cb), app);
   g_signal_connect (context, "lookup-end",
-		    G_CALLBACK (lookup_end_cb), app);
+                    G_CALLBACK (lookup_end_cb), app);
 
   app->remaining_words = 0;
   for (l = app->lookup_words; l != NULL; l = l->next)
