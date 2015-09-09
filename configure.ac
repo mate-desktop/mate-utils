@@ -398,6 +398,7 @@ logview/src/tests/Makefile
 
 gsearchtool/Makefile
 gsearchtool/data/Makefile
+gsearchtool/data/org.mate.search-tool.gschema.xml
 gsearchtool/help/Makefile
 gsearchtool/libeggsmclient/Makefile
 gsearchtool/libmateui-deprecated/Makefile
