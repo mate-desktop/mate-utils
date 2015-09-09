@@ -379,8 +379,6 @@ Makefile
 
 po/Makefile.in
 
-libeggsmclient/Makefile
-
 baobab/Makefile
 baobab/data/Makefile
 baobab/data/org.mate.disk-usage-analyzer.gschema.xml
@@ -401,7 +399,9 @@ logview/src/tests/Makefile
 gsearchtool/Makefile
 gsearchtool/data/Makefile
 gsearchtool/help/Makefile
+gsearchtool/libeggsmclient/Makefile
 gsearchtool/libmateui-deprecated/Makefile
+gsearchtool/src/Makefile
 
 mate-dictionary/Makefile
 mate-dictionary/libgdict/Makefile

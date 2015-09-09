@@ -22,7 +22,6 @@ ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
 SUBDIRS = \
 	po			\
-	libeggsmclient		\
 	baobab			\
 	mate-dictionary	\
 	mate-screenshot	\
