@@ -417,7 +417,9 @@ mate-dictionary/help/Makefile
 mate-dictionary/src/Makefile
 
 mate-screenshot/Makefile
-mate-screenshot/org.mate.screenshot.gschema.xml
+mate-screenshot/data/Makefile
+mate-screenshot/data/org.mate.screenshot.gschema.xml
+mate-screenshot/src/Makefile
 ])
 
 AC_OUTPUT
