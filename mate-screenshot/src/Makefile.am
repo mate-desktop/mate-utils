@@ -2,8 +2,7 @@ AM_CPPFLAGS =							\
 	-I.							\
 	-I$(srcdir)						\
 	-DMATELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"	\
-	-DUIDIR=\""$(datadir)/mate-screenshot"\"					\
-	$(DISABLE_DEPRECATED)
+	-DUIDIR=\""$(datadir)/mate-screenshot"\"
 
 bin_PROGRAMS = mate-screenshot
 

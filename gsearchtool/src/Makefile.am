@@ -1,7 +1,6 @@
 AM_CPPFLAGS = \
 	-I$(top_srcdir)/gsearchtool/libeggsmclient \
 	-I$(top_srcdir)/gsearchtool/libmateui-deprecated \
-	$(DISABLE_DEPRECATED) \
 	-DMATELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
 	-DLOCALEDIR=\"$(datadir)/locale\" \
 	-DDATADIR=\""$(datadir)"\" \

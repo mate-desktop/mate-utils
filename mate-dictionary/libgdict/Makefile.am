@@ -8,7 +8,6 @@ AM_CPPFLAGS = -DG_LOG_DOMAIN=\"Gdict\" 				\
 	-DMATELOCALEDIR=\""$(mateutilslocaledir)"\" 		\
 	-DGDICTSOURCESDIR=\""$(datadir)/mate-dict/sources"\" 	\
 	-DGDICT_ENABLE_INTERNALS				\
-	$(DISABLE_DEPRECATED)					\
 	$(NULL)
 
 sources_h =	\

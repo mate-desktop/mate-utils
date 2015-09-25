@@ -1,8 +1,3 @@
-AM_CPPFLAGS = \
-	-DGTK_DISABLE_DEPRECATED	\
-	-DGDK_DISABLE_DEPRECATED	\
-	-DG_DISABLE_DEPRECATED
-
 noinst_LTLIBRARIES = libmateui-deprecated.la
 
 libmateui_deprecated_la_CFLAGS = \

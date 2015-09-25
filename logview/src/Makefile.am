@@ -6,7 +6,6 @@ AM_CPPFLAGS = \
 	-DDATADIR=\""$(datadir)"\"				\
 	-DLOGVIEWINSTALLPREFIX=\""$(prefix)/\""			\
 	-DLOGVIEW_DATADIR=\""$(pkgdatadir)"\"			\
-	$(DISABLE_DEPRECATED)					\
 	$(NULL)
 
 bin_PROGRAMS = mate-system-log
