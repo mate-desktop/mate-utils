@@ -57,14 +57,6 @@ AC_CHECK_FUNCS([getpgid])
 LIBGDICT_LT_VERSION=6:7:0
 AC_SUBST(LIBGDICT_LT_VERSION)
 
-dnl host architecture check
-AS_CASE([$host],
-
-        [*-*-solaris*], [SUN_OS="-DON_SUN_OS"],
-        [*],            [SUN_OS=""]
-)
-AC_SUBST(SUN_OS)
-
 dnl pkg-config check
 
 GLIB_REQUIRED=2.36.0

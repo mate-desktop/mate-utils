@@ -6,7 +6,6 @@ AM_CPPFLAGS = \
 	-DDATADIR=\""$(datadir)"\"				\
 	-DLOGVIEWINSTALLPREFIX=\""$(prefix)/\""			\
 	-DLOGVIEW_DATADIR=\""$(pkgdatadir)"\"			\
-	$(SUN_OS)						\
 	$(DISABLE_DEPRECATED)					\
 	$(NULL)
 
