@@ -1,5 +1,3 @@
-AM_CPPFLAGS = $(DISABLE_DEPRECATED)
-
 noinst_LTLIBRARIES = libeggsmclient.la
 
 libeggsmclient_la_LIBADD = $(LIBEGGSMCLIENT_LIBS)           \

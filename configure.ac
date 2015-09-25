@@ -57,14 +57,6 @@ AC_CHECK_FUNCS([getpgid])
 LIBGDICT_LT_VERSION=6:7:0
 AC_SUBST(LIBGDICT_LT_VERSION)
 
-dnl host architecture check
-AS_CASE([$host],
-
-        [*-*-solaris*], [SUN_OS="-DON_SUN_OS"],
-        [*],            [SUN_OS=""]
-)
-AC_SUBST(SUN_OS)
-
 dnl pkg-config check
 
 GLIB_REQUIRED=2.36.0
@@ -72,15 +64,6 @@ GIO_REQUIRED=2.36.0
 GIO_UNIX_REQUIRED=2.18.0
 LIBMATE_PANEL_APPLET_REQUIRED=1.7.0
 LIBGTOP_REQUIRED=2.12.0
-
-AC_ARG_ENABLE(deprecated,
-	[AC_HELP_STRING([--enable-deprecated],
-		[use *_DISABLE_DEPRECATED flags @<:@default=no@:>@])],,
-	[enable_deprecated=no])
-
-if test "x$enable_deprecated" = "xyes"; then
-	DISABLE_DEPRECATED=""
-fi
 
 dnl GTK library version
 
