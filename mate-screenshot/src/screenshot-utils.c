@@ -453,6 +453,7 @@ create_select_window (void)
 #if GTK_CHECK_VERSION (3, 0, 0)
   GdkVisual *visual;
 #endif
+  gboolean test_screen_type;
 
   screen = gdk_screen_get_default ();
 #if GTK_CHECK_VERSION (3, 0, 0)
@@ -460,13 +461,14 @@ create_select_window (void)
 #endif
 
   window = gtk_window_new (GTK_WINDOW_POPUP);
-  if (gdk_screen_is_composited (screen) &&
+  test_screen_type = gdk_screen_is_composited (screen);  
 #if GTK_CHECK_VERSION (3, 0, 0)
-      visual)
+  test_screen_type = test_screen_type && visual;
 #else
-      gdk_screen_get_rgba_colormap (screen))
+  test_screen_type = test_screen_type && gdk_screen_get_rgba_colormap (screen);
 #endif
-    {
+    if (test_screen_type)
+	{
 #if GTK_CHECK_VERSION (3, 0, 0)
       gtk_widget_set_visual (window, visual);
 #else
