@@ -448,32 +448,25 @@ expose (GtkWidget *window, GdkEventExpose *event, gpointer unused)
 static GtkWidget *
 create_select_window (void)
 {
-  GtkWidget *window;
-  GdkScreen *screen;
-#if GTK_CHECK_VERSION (3, 0, 0)
-  GdkVisual *visual;
-#endif
+  GdkScreen *screen = gdk_screen_get_default ();
+  GtkWidget *window = gtk_window_new (GTK_WINDOW_POPUP);
 
-  screen = gdk_screen_get_default ();
 #if GTK_CHECK_VERSION (3, 0, 0)
-  visual = gdk_screen_get_rgba_visual (screen);
-#endif
-
-  window = gtk_window_new (GTK_WINDOW_POPUP);
-  if (gdk_screen_is_composited (screen) &&
-#if GTK_CHECK_VERSION (3, 0, 0)
-      visual)
-#else
-      gdk_screen_get_rgba_colormap (screen))
-#endif
+  GdkVisual *visual = gdk_screen_get_rgba_visual (screen);
+  if (gdk_screen_is_composited (screen) && visual)
     {
-#if GTK_CHECK_VERSION (3, 0, 0)
       gtk_widget_set_visual (window, visual);
-#else
-      gtk_widget_set_colormap (window, gdk_screen_get_rgba_colormap (screen));
-#endif
       gtk_widget_set_app_paintable (window, TRUE);
     }
+#else
+  GdkColormap *colormap = gdk_screen_get_rgba_colormap (screen);
+  if (gdk_screen_is_composited (screen) && colormap)
+    {
+      gtk_widget_set_colormap (window, colormap);
+      gtk_widget_set_app_paintable (window, TRUE);
+    }
+#endif
+
 #if GTK_CHECK_VERSION (3, 0, 0)
   g_signal_connect (window, "draw", G_CALLBACK (draw), NULL);
 #else
