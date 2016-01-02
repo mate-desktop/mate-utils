@@ -18,14 +18,10 @@ gsettings_SCHEMAS = org.mate.system-log.gschema.xml
 
 @GSETTINGS_RULES@
 
-convertdir = $(datadir)/MateConf/gsettings
-convert_DATA = mate-system-log.convert
-
 EXTRA_DIST = 			\
 	mate-system-log.desktop.in.in	\
 	$(xml_DATA)		\
-	$(man_MANS)		\
-	$(convert_DATA)
+	$(man_MANS)
 
 DISTCLEANFILES =		\
 	$(desktop_DATA)		\

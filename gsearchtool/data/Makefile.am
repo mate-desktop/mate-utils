@@ -9,9 +9,6 @@ gsettings_SCHEMAS = $(gsettingsschema_in_files:.xml.in=.xml)
 
 @GSETTINGS_RULES@
 
-convertdir = $(datadir)/MateConf/gsettings
-convert_DATA = mate-search-tool.convert
-
 @INTLTOOL_XML_RULE@
 appdatadir = $(datadir)/appdata
 appdata_in_files = mate-search-tool.appdata.xml.in
@@ -28,7 +25,6 @@ EXTRA_DIST = \
 	$(appdata_in_files) \
 	$(Utilities_in_files) \
 	$(Utilities_DATA) \
-	$(convert_DATA) \
 	$(gsettingsschema_in_files) \
 	$(man_MANS)
 

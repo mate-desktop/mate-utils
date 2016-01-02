@@ -64,9 +64,6 @@ appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 gsettings_SCHEMAS = org.mate.dictionary.gschema.xml
 @GSETTINGS_RULES@
 
-convertdir = $(datadir)/MateConf/gsettings
-convert_DATA = mate-dictionary.convert
-
 EXTRA_DIST = \
 	org.mate.DictionaryApplet.mate-panel-applet.in.in \
 	$(service_in_files) \
@@ -76,7 +73,6 @@ EXTRA_DIST = \
 	$(appdata_in_files) \
 	$(builder_DATA) \
 	$(ui_DATA) \
-	$(convert_DATA) \
 	$(NULL)
 
 CLEANFILES = \

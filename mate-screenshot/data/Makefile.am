@@ -16,15 +16,11 @@ appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 gsettings_SCHEMAS = org.mate.screenshot.gschema.xml
 @GSETTINGS_RULES@
 
-convertdir = $(datadir)/MateConf/gsettings
-convert_DATA = mate-screenshot.convert
-
 EXTRA_DIST =					\
 	$(appdata_in_files)			\
 	$(mate_screenshot_in_files)	\
 	$(man_MANS)				\
-	$(ui_DATA)				\
-	$(convert_DATA)
+	$(ui_DATA)
 
 CLEANFILES = \
 	$(gsettings_SCHEMAS)	\

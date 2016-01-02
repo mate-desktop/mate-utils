@@ -20,15 +20,11 @@ appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 gsettings_SCHEMAS = org.mate.disk-usage-analyzer.gschema.xml
 @GSETTINGS_RULES@
 
-convertdir = $(datadir)/MateConf/gsettings
-convert_DATA = mate-disk-usage-analyzer.convert
-
 man_MANS = mate-disk-usage-analyzer.1
 
 EXTRA_DIST = \
 	$(ui_DATA) \
 	mate-disk-usage-analyzer.desktop.in.in \
-	$(convert_DATA) \
 	$(appdata_in_files) \
 	$(man_MANS)
 
