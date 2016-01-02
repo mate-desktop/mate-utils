@@ -557,8 +557,7 @@ home_contents_changed (GFileMonitor      *file_monitor,
 	if (strcmp (excluding, ".recently-used") == 0   ||
 	    strcmp (excluding, ".mate2_private") == 0  ||
 	    strcmp (excluding, ".xsession-errors") == 0 ||
-	    strcmp (excluding, ".bash_history") == 0    ||
-	    strcmp (excluding, ".mateconfd") == 0) {
+	    strcmp (excluding, ".bash_history") == 0) {
 		g_free (excluding);
 		return;
 	}
