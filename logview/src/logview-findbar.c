@@ -167,7 +167,11 @@ logview_findbar_init (LogviewFindbar *findbar)
   w = gtk_alignment_new (0.0, 0.5, 1.0, 1.0);
   gtk_alignment_set_padding (GTK_ALIGNMENT (w), 0, 0, 2, 2);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
+#else
   box = gtk_hbox_new (FALSE, 12);
+#endif
   gtk_container_add (GTK_CONTAINER (w), box);
 
   label = gtk_label_new_with_mnemonic (_("_Find:"));

@@ -1182,16 +1182,29 @@ message_area_create_error_box (LogviewWindow *window,
   GtkWidget *primary_label;
   GtkWidget *secondary_label;
   
+#if GTK_CHECK_VERSION (3, 0, 0)
+  hbox_content = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 8);
+#else
   hbox_content = gtk_hbox_new (FALSE, 8);
+#endif
   gtk_widget_show (hbox_content);
 
   image = gtk_image_new_from_stock (GTK_STOCK_DIALOG_ERROR,
                                     GTK_ICON_SIZE_DIALOG);
   gtk_widget_show (image);
   gtk_box_pack_start (GTK_BOX (hbox_content), image, FALSE, FALSE, 0);
-  gtk_misc_set_alignment (GTK_MISC (image), 0.5, 0);
+#if GTK_CHECK_VERSION (3, 0, 0)
+  gtk_widget_set_halign (image, GTK_ALIGN_CENTER);
+  gtk_widget_set_valign (image, GTK_ALIGN_START);
+#else
+  gtk_misc_set_alignment (GTK_MISC (image), 0.5, 0.0);
+#endif
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+#else
   vbox = gtk_vbox_new (FALSE, 6);
+#endif
   gtk_widget_show (vbox);
   gtk_box_pack_start (GTK_BOX (hbox_content), vbox, TRUE, TRUE, 0);
 
@@ -1200,7 +1213,12 @@ message_area_create_error_box (LogviewWindow *window,
   gtk_box_pack_start (GTK_BOX (vbox), primary_label, TRUE, TRUE, 0);
   gtk_label_set_use_markup (GTK_LABEL (primary_label), TRUE);
   gtk_label_set_line_wrap (GTK_LABEL (primary_label), TRUE);
-  gtk_misc_set_alignment (GTK_MISC (primary_label), 0, 0.5);
+#if GTK_CHECK_VERSION (3, 16, 0)
+  gtk_label_set_xalign (GTK_LABEL (primary_label), 0.0);
+  gtk_label_set_yalign (GTK_LABEL (primary_label), 0.5);
+#else
+  gtk_misc_set_alignment (GTK_MISC (primary_label), 0.0, 0.5);
+#endif
   gtk_widget_set_can_focus (primary_label, TRUE);
   gtk_label_set_selectable (GTK_LABEL (primary_label), TRUE);
 
@@ -1213,7 +1231,12 @@ message_area_create_error_box (LogviewWindow *window,
   gtk_label_set_use_markup (GTK_LABEL (secondary_label), TRUE);
   gtk_label_set_line_wrap (GTK_LABEL (secondary_label), TRUE);
   gtk_label_set_selectable (GTK_LABEL (secondary_label), TRUE);
-  gtk_misc_set_alignment (GTK_MISC (secondary_label), 0, 0.5);
+#if GTK_CHECK_VERSION (3, 16, 0)
+  gtk_label_set_xalign (GTK_LABEL (secondary_label), 0.0);
+  gtk_label_set_yalign (GTK_LABEL (secondary_label), 0.5);
+#else
+  gtk_misc_set_alignment (GTK_MISC (secondary_label), 0.0, 0.5);
+#endif
 
   window->priv->message_secondary = secondary_label;
 
@@ -1290,7 +1313,11 @@ logview_window_init (LogviewWindow *logview)
   logview_prefs_get_stored_window_size (priv->prefs, &width, &height);
   gtk_window_set_default_size (GTK_WINDOW (logview), width, height);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+#else
   vbox = gtk_vbox_new (FALSE, 0);
+#endif
   gtk_container_add (GTK_CONTAINER (logview), vbox);
 
   /* create menus */
@@ -1335,7 +1362,11 @@ logview_window_init (LogviewWindow *logview)
   gtk_widget_show (hpaned);
 
   /* first pane : sidebar (list of logs) */
+#if GTK_CHECK_VERSION (3, 0, 0)
+  priv->sidebar = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+#else
   priv->sidebar = gtk_vbox_new (FALSE, 0);
+#endif
   gtk_widget_show (priv->sidebar);
 
   /* first pane: log list */
@@ -1358,7 +1389,11 @@ logview_window_init (LogviewWindow *logview)
                     G_CALLBACK (loglist_day_cleared_cb), logview);
 
   /* second pane: log */
+#if GTK_CHECK_VERSION (3, 0, 0)
+  main_view = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+#else
   main_view = gtk_vbox_new (FALSE, 0);
+#endif
   gtk_paned_pack2 (GTK_PANED (hpaned), main_view, TRUE, TRUE);
 
   /* second pane: error message area */
@@ -1405,7 +1440,11 @@ logview_window_init (LogviewWindow *logview)
   }
 
   /* version selector */
+#if GTK_CHECK_VERSION (3, 0, 0)
+  priv->version_bar = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+#else
   priv->version_bar = gtk_hbox_new (FALSE, 0);
+#endif
   gtk_container_set_border_width (GTK_CONTAINER (priv->version_bar), 3);
   priv->version_selector = gtk_combo_box_text_new ();
   g_signal_connect (priv->version_selector, "changed",
