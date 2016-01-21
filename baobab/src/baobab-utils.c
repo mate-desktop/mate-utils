@@ -337,13 +337,13 @@ baobab_check_dir (GFile	*file)
 }
 
 static void
-add_popupmenu_item (GtkMenu *pmenu, const gchar *label, const gchar *stock, GCallback item_cb)
+add_popupmenu_item (GtkMenu *pmenu, const gchar *label, const gchar *icon_name, GCallback item_cb)
 {
 	GtkWidget *item;
 	GtkWidget *image;
 
 	item = gtk_image_menu_item_new_with_mnemonic (label);
-	image = gtk_image_new_from_stock (stock, GTK_ICON_SIZE_MENU);
+	image = gtk_image_new_from_icon_name (icon_name, GTK_ICON_SIZE_MENU);
 	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (item), image);
 
 	g_signal_connect (item, "activate", item_cb, NULL);
@@ -360,13 +360,13 @@ popupmenu_list (GtkTreePath *path, GdkEventButton *event, gboolean can_trash)
 
 	add_popupmenu_item (GTK_MENU (pmenu),
 			    _("_Open Folder"),
-			    "gtk-open",
+			    "document-open",
 			    G_CALLBACK (open_file_cb));
 
 	if (baobab.is_local && can_trash) {
 		add_popupmenu_item (GTK_MENU (pmenu),
 				    _("Mo_ve to Trash"),
-				    "gtk-delete",
+				    "edit-delete",
 				    G_CALLBACK (trash_dir_cb));
 	}
 

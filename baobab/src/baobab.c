@@ -922,15 +922,15 @@ create_context_menu (void)
 
 	menu->up_item = gtk_image_menu_item_new_with_label (_("Move to parent folder"));
 	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (menu->up_item),
-				       gtk_image_new_from_stock(GTK_STOCK_GO_UP, GTK_ICON_SIZE_MENU));
+				       gtk_image_new_from_icon_name("go-up", GTK_ICON_SIZE_MENU));
 
 	menu->zoom_in_item = gtk_image_menu_item_new_with_label (_("Zoom in")) ;
 	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (menu->zoom_in_item),
-				       gtk_image_new_from_stock(GTK_STOCK_ADD, GTK_ICON_SIZE_MENU));
+				       gtk_image_new_from_icon_name("list-add", GTK_ICON_SIZE_MENU));
 
 	menu->zoom_out_item = gtk_image_menu_item_new_with_label (_("Zoom out"));
 	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (menu->zoom_out_item),
-				       gtk_image_new_from_stock(GTK_STOCK_REMOVE, GTK_ICON_SIZE_MENU));
+				       gtk_image_new_from_icon_name("list-remove", GTK_ICON_SIZE_MENU));
 
 	menu->snapshot_item = gtk_image_menu_item_new_with_label (_("Save screenshot"));
 	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (menu->snapshot_item),
