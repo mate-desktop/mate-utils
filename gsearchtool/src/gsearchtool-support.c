@@ -1128,7 +1128,11 @@ gsearchtool_button_new_with_stock_icon (const gchar * string,
 	label = gtk_label_new_with_mnemonic (string);
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), GTK_WIDGET (button));
 	image = gtk_image_new_from_stock (stock_id, GTK_ICON_SIZE_BUTTON);
+#if GTK_CHECK_VERSION (3, 0, 0)
+	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
+#else
 	hbox = gtk_hbox_new (FALSE, 2);
+#endif
 	align = gtk_alignment_new (0.5, 0.5, 0.0, 0.0);
 	gtk_box_pack_start (GTK_BOX (hbox), image, FALSE, FALSE, 0);
 	gtk_box_pack_end (GTK_BOX (hbox), label, FALSE, FALSE, 0);

@@ -1738,7 +1738,11 @@ handle_search_command_stderr_io (GIOChannel * ioc,
 					gtk_window_set_title (GTK_WINDOW (dialog), "");
 					gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
 
-					hbox = gtk_hbox_new (0, FALSE);
+#if GTK_CHECK_VERSION (3, 0, 0)
+					hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+#else
+					hbox = gtk_hbox_new (FALSE, 0);
+#endif
 
 					spacer = gtk_label_new ("     ");
 					gtk_box_pack_start (GTK_BOX (hbox), spacer, FALSE, FALSE, 0);
@@ -1782,7 +1786,11 @@ handle_search_command_stderr_io (GIOChannel * ioc,
 					gtk_window_set_title (GTK_WINDOW (dialog), "");
 					gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
 
-					hbox = gtk_hbox_new (0, FALSE);
+#if GTK_CHECK_VERSION (3, 0, 0)
+					hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+#else
+					hbox = gtk_hbox_new (FALSE, 0);
+#endif
 
 					spacer = gtk_label_new ("     ");
 					gtk_box_pack_start (GTK_BOX (hbox), spacer, FALSE, FALSE, 0);
@@ -1956,7 +1964,11 @@ create_constraint_box (GSearchWindow * gsearch,
 	GtkWidget * entry_hbox;
 	GtkWidget * button;
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
+#else
 	hbox = gtk_hbox_new (FALSE, 12);
+#endif
 
 	switch (GSearchOptionTemplates[opt->constraint_id].type) {
 	case SEARCH_CONSTRAINT_TYPE_BOOLEAN:
@@ -2032,7 +2044,11 @@ create_constraint_box (GSearchWindow * gsearch,
 				  (gpointer) gsearch);
 
 		/* add text field */
+#if GTK_CHECK_VERSION (3, 0, 0)
+		entry_hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
+#else
 		entry_hbox = gtk_hbox_new (FALSE, 6);
+#endif
 		gtk_box_pack_start (GTK_BOX (hbox), entry_hbox, TRUE, TRUE, 0);
 		gtk_box_pack_start (GTK_BOX (entry_hbox), entry, TRUE, TRUE, 0);
 
@@ -2159,9 +2175,14 @@ create_additional_constraint_section (GSearchWindow * gsearch)
 	GtkWidget * hbox;
 	gchar * desc;
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+	gsearch->available_options_vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
+#else
 	gsearch->available_options_vbox = gtk_vbox_new (FALSE, 6);
-
 	hbox = gtk_hbox_new (FALSE, 12);
+#endif
+
 	gtk_box_pack_end (GTK_BOX (gsearch->available_options_vbox), hbox, FALSE, FALSE, 0);
 
 	desc = g_strconcat (LEFT_LABEL_SPACING, _("A_vailable options:"), NULL);
@@ -2291,9 +2312,14 @@ create_search_results_section (GSearchWindow * gsearch)
 	GtkTreeViewColumn * column;
 	GtkCellRenderer * renderer;
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
+#else
 	vbox = gtk_vbox_new (FALSE, 6);
-
 	hbox = gtk_hbox_new (FALSE, 6);
+#endif
+
 	gtk_box_pack_start (GTK_BOX (vbox), hbox, FALSE, FALSE, 0);
 
 	label = gtk_label_new_with_mnemonic (_("S_earch results:"));
@@ -2786,11 +2812,19 @@ gsearch_app_create (GSearchWindow * gsearch)
 		gtk_window_maximize (GTK_WINDOW (gsearch->window));
 	}
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+	container = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+#else
 	container = gtk_vbox_new (FALSE, 6);
+#endif
 	gtk_container_add (GTK_CONTAINER (gsearch->window), container);
 	gtk_container_set_border_width (GTK_CONTAINER (container), 12);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
+#else
 	hbox = gtk_hbox_new (FALSE, 6);
+#endif
 	gtk_box_pack_start (GTK_BOX (container), hbox, FALSE, FALSE, 0);
 
 	gsearch->name_and_folder_table = gtk_table_new (2, 2, FALSE);
@@ -2866,14 +2900,22 @@ gsearch_app_create (GSearchWindow * gsearch)
 		add_atk_relation (GTK_WIDGET (gsearch->show_more_options_expander), GTK_WIDGET (gsearch->available_options_vbox), ATK_RELATION_CONTROLLER_FOR);
 	}
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 12);
+#else
 	vbox = gtk_vbox_new (FALSE, 12);
+#endif
 	gtk_box_pack_start (GTK_BOX (container), vbox, TRUE, TRUE, 0);
 
 	gsearch->search_results_vbox = create_search_results_section (gsearch);
 	gtk_widget_set_sensitive (GTK_WIDGET (gsearch->search_results_vbox), FALSE);
 	gtk_box_pack_start (GTK_BOX (vbox), gsearch->search_results_vbox, TRUE, TRUE, 0);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+	hbox = gtk_button_box_new (GTK_ORIENTATION_HORIZONTAL);
+#else
 	hbox = gtk_hbutton_box_new ();
+#endif
 	gtk_button_box_set_layout (GTK_BUTTON_BOX (hbox), GTK_BUTTONBOX_END);
 	gtk_box_pack_start (GTK_BOX (vbox), hbox, FALSE, FALSE, 0);
 
