@@ -1189,8 +1189,8 @@ message_area_create_error_box (LogviewWindow *window,
 #endif
   gtk_widget_show (hbox_content);
 
-  image = gtk_image_new_from_stock (GTK_STOCK_DIALOG_ERROR,
-                                    GTK_ICON_SIZE_DIALOG);
+  image = gtk_image_new_from_icon_name ("dialog-error",
+                                        GTK_ICON_SIZE_DIALOG);
   gtk_widget_show (image);
   gtk_box_pack_start (GTK_BOX (hbox_content), image, FALSE, FALSE, 0);
 #if GTK_CHECK_VERSION (3, 0, 0)
