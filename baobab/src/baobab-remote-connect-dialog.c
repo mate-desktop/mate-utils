@@ -439,7 +439,12 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 	
 	if (meth->scheme == NULL) {
 		label = gtk_label_new_with_mnemonic (_("_Location (URI):"));
+#if GTK_CHECK_VERSION (3, 16, 0)
+		gtk_label_set_xalign (GTK_LABEL (label), 0.0);
+		gtk_label_set_yalign (GTK_LABEL (label), 0.5);
+#else
 		gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+#endif
 		gtk_widget_show (label);
 		gtk_table_attach (GTK_TABLE (table), label,
 				  0, 1,
@@ -461,7 +466,12 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 	}
 	
 	label = gtk_label_new_with_mnemonic (_("_Server:"));
+#if GTK_CHECK_VERSION (3, 16, 0)
+	gtk_label_set_xalign (GTK_LABEL (label), 0.0);
+	gtk_label_set_yalign (GTK_LABEL (label), 0.5);
+#else
 	gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+#endif
 	gtk_widget_show (label);
 	gtk_table_attach (GTK_TABLE (table), label,
 			  0, 1,
@@ -480,7 +490,12 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 	i++;
 
 	label = gtk_label_new (_("Optional information:"));
+#if GTK_CHECK_VERSION (3, 16, 0)
+	gtk_label_set_xalign (GTK_LABEL (label), 0.0);
+	gtk_label_set_yalign (GTK_LABEL (label), 0.5);
+#else
 	gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+#endif
 	gtk_widget_show (label);
 	gtk_table_attach (GTK_TABLE (table), label,
 			  0, 2,
@@ -492,7 +507,12 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 	
 	if (meth->flags & SHOW_SHARE) {
 		label = gtk_label_new_with_mnemonic (_("_Share:"));
+#if GTK_CHECK_VERSION (3, 16, 0)
+		gtk_label_set_xalign (GTK_LABEL (label), 0.0);
+		gtk_label_set_yalign (GTK_LABEL (label), 0.5);
+#else
 		gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+#endif
 		gtk_widget_show (label);
 		gtk_table_attach (GTK_TABLE (table), label,
 				  0, 1,
@@ -513,7 +533,12 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 
 	if (meth->flags & SHOW_PORT) {
 		label = gtk_label_new_with_mnemonic (_("_Port:"));
+#if GTK_CHECK_VERSION (3, 16, 0)
+		gtk_label_set_xalign (GTK_LABEL (label), 0.0);
+		gtk_label_set_yalign (GTK_LABEL (label), 0.5);
+#else
 		gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+#endif
 		gtk_widget_show (label);
 		gtk_table_attach (GTK_TABLE (table), label,
 				  0, 1,
@@ -533,7 +558,12 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 	}
 
 	label = gtk_label_new_with_mnemonic (_("_Folder:"));
+#if GTK_CHECK_VERSION (3, 16, 0)
+	gtk_label_set_xalign (GTK_LABEL (label), 0.0);
+	gtk_label_set_yalign (GTK_LABEL (label), 0.5);
+#else
 	gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+#endif
 	gtk_widget_show (label);
 	gtk_table_attach (GTK_TABLE (table), label,
 			  0, 1,
@@ -553,7 +583,12 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 
 	if (meth->flags & SHOW_USER) {
 		label = gtk_label_new_with_mnemonic (_("_User Name:"));
+#if GTK_CHECK_VERSION (3, 16, 0)
+		gtk_label_set_xalign (GTK_LABEL (label), 0.0);
+		gtk_label_set_yalign (GTK_LABEL (label), 0.5);
+#else
 		gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+#endif
 		gtk_widget_show (label);
 		gtk_table_attach (GTK_TABLE (table), label,
 				  0, 1,
@@ -574,7 +609,12 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 
 	if (meth->flags & SHOW_DOMAIN) {
 		label = gtk_label_new_with_mnemonic (_("_Domain Name:"));
+#if GTK_CHECK_VERSION (3, 16, 0)
+		gtk_label_set_xalign (GTK_LABEL (label), 0.0);
+		gtk_label_set_yalign (GTK_LABEL (label), 0.5);
+#else
 		gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+#endif
 		gtk_widget_show (label);
 		gtk_table_attach (GTK_TABLE (table), label,
 				  0, 1,
@@ -645,19 +685,32 @@ baobab_remote_connect_dialog_init (BaobabRemoteConnectDialog *dialog)
 	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 2);
 	gtk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+#else
 	vbox = gtk_vbox_new (FALSE, 6);
+#endif
 	gtk_container_set_border_width (GTK_CONTAINER (vbox), 5);
 	gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))),
 			    vbox, FALSE, TRUE, 0);
 	gtk_widget_show (vbox);
-			    
+
+#if GTK_CHECK_VERSION (3, 0, 0)
+	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
+#else
 	hbox = gtk_hbox_new (FALSE, 6);
+#endif
 	gtk_box_pack_start (GTK_BOX (vbox),
 			    hbox, FALSE, TRUE, 0);
 	gtk_widget_show (hbox);
 	
 	label = gtk_label_new_with_mnemonic (_("Service _type:"));
+#if GTK_CHECK_VERSION (3, 16, 0)
+	gtk_label_set_xalign (GTK_LABEL (label), 0.0);
+	gtk_label_set_yalign (GTK_LABEL (label), 0.5);
+#else
 	gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+#endif
 	gtk_widget_show (label);
 	gtk_box_pack_start (GTK_BOX (hbox),
 			    label, FALSE, FALSE, 0);
@@ -722,8 +775,11 @@ baobab_remote_connect_dialog_init (BaobabRemoteConnectDialog *dialog)
 			  G_CALLBACK (combo_changed_callback),
 			  dialog);
 	
-
+#if GTK_CHECK_VERSION (3, 0, 0)
+	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
+#else
 	hbox = gtk_hbox_new (FALSE, 6);
+#endif
 	gtk_box_pack_start (GTK_BOX (vbox),
 			    hbox, FALSE, TRUE, 0);
 	gtk_widget_show (hbox);
