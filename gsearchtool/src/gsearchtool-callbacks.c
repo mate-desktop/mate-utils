@@ -1025,7 +1025,7 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 		gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
 		gtk_widget_show (new1);
 
-		image1 = gtk_image_new_from_stock ("gtk-open", GTK_ICON_SIZE_MENU);
+		image1 = gtk_image_new_from_icon_name ("document-open", GTK_ICON_SIZE_MENU);
 		gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (new1), image1);
 		gtk_widget_show (image1);
 
@@ -1055,7 +1055,7 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 			gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
 			gtk_widget_show (new1);
 
-			image1 = gtk_image_new_from_stock ("gtk-open", GTK_ICON_SIZE_MENU);
+			image1 = gtk_image_new_from_icon_name ("document-open", GTK_ICON_SIZE_MENU);
 			gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (new1), image1);
 			gtk_widget_show (image1);
 
@@ -1193,7 +1193,7 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 	gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
 	gtk_widget_show (new1);
 
-	image1 = gtk_image_new_from_stock ("gtk-open", GTK_ICON_SIZE_MENU);
+	image1 = gtk_image_new_from_icon_name ("document-open", GTK_ICON_SIZE_MENU);
 	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (new1), image1);
 	gtk_widget_show (image1);
 
@@ -1237,7 +1237,7 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 		gtk_widget_set_sensitive (gsearch->search_results_save_results_as_item, FALSE);
 	}
 
-	image1 = gtk_image_new_from_stock ("gtk-save", GTK_ICON_SIZE_MENU);
+	image1 = gtk_image_new_from_icon_name ("document-save", GTK_ICON_SIZE_MENU);
 	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (gsearch->search_results_save_results_as_item), image1);
 	gtk_widget_show (image1);
 
