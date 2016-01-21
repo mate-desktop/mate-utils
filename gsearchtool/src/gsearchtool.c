@@ -2336,7 +2336,9 @@ create_search_results_section (GSearchWindow * gsearch)
 	gtk_tree_view_set_headers_visible (gsearch->search_results_tree_view, FALSE);
 	gtk_tree_view_set_search_equal_func (gsearch->search_results_tree_view,
 	                                     gsearch_equal_func, NULL, NULL);
+#if !GTK_CHECK_VERSION (3, 14, 0)
 	gtk_tree_view_set_rules_hint (gsearch->search_results_tree_view, TRUE);
+#endif
   	g_object_unref (G_OBJECT (gsearch->search_results_list_store));
 
 	if (gsearch->is_window_accessible) {
