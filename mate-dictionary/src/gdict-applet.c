@@ -575,9 +575,8 @@ gdict_applet_draw (GdictApplet *applet)
       priv->image = gtk_image_new ();
 
       gtk_image_set_pixel_size (GTK_IMAGE (priv->image), priv->size - 10);
-      gtk_image_set_from_stock (GTK_IMAGE (priv->image),
-				GTK_STOCK_MISSING_IMAGE,
-				-1);
+      gtk_image_set_from_icon_name (GTK_IMAGE (priv->image),
+                                    "image-missing", -1);
       
       gtk_box_pack_start (GTK_BOX (hbox), priv->image, FALSE, FALSE, 0);
       gtk_widget_show (priv->image);

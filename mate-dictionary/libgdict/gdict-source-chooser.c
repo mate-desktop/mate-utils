@@ -292,8 +292,8 @@ gdict_source_chooser_constructor (GType                  gtype,
 
   priv->refresh_button = gtk_button_new ();
   gtk_button_set_image (GTK_BUTTON (priv->refresh_button),
-                        gtk_image_new_from_stock (GTK_STOCK_REFRESH,
-                                                  GTK_ICON_SIZE_BUTTON));
+                        gtk_image_new_from_icon_name ("view-refresh",
+                                                      GTK_ICON_SIZE_BUTTON));
   g_signal_connect (priv->refresh_button,
                     "clicked", G_CALLBACK (refresh_button_clicked_cb),
                     chooser);

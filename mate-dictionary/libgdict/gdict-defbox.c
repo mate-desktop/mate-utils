@@ -1313,8 +1313,8 @@ create_find_pane (GdictDefbox *defbox)
   button = gtk_button_new ();
   gtk_button_set_relief (GTK_BUTTON (button), GTK_RELIEF_NONE);
   gtk_button_set_image (GTK_BUTTON (button),
-                        gtk_image_new_from_stock (GTK_STOCK_CLOSE,
-                                                  GTK_ICON_SIZE_BUTTON));
+                        gtk_image_new_from_icon_name ("window-close",
+                                                      GTK_ICON_SIZE_BUTTON));
   g_signal_connect (button, "clicked",
                     G_CALLBACK (close_button_clicked), defbox);
   gtk_box_pack_start (GTK_BOX (hbox1), button, FALSE, FALSE, 0);
@@ -1343,16 +1343,16 @@ create_find_pane (GdictDefbox *defbox)
 
   priv->find_prev = gtk_button_new_with_mnemonic (_("_Previous"));
   gtk_button_set_image (GTK_BUTTON (priv->find_prev),
-  			gtk_image_new_from_stock (GTK_STOCK_GO_BACK,
-  						  GTK_ICON_SIZE_MENU));
+                        gtk_image_new_from_icon_name ("go-previous",
+                                                      GTK_ICON_SIZE_MENU));
   g_signal_connect (priv->find_prev, "clicked",
   		    G_CALLBACK (find_prev_clicked_cb), defbox);
   gtk_box_pack_start (GTK_BOX (hbox1), priv->find_prev, FALSE, FALSE, 0);
 
   priv->find_next = gtk_button_new_with_mnemonic (_("_Next"));
   gtk_button_set_image (GTK_BUTTON (priv->find_next),
-  			gtk_image_new_from_stock (GTK_STOCK_GO_FORWARD,
-  						  GTK_ICON_SIZE_MENU));
+                        gtk_image_new_from_icon_name ("go-next",
+                                                      GTK_ICON_SIZE_MENU));
   g_signal_connect (priv->find_next, "clicked",
   		    G_CALLBACK (find_next_clicked_cb), defbox);
   gtk_box_pack_start (GTK_BOX (hbox1), priv->find_next, FALSE, FALSE, 0);

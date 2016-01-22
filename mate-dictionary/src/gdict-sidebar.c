@@ -367,8 +367,8 @@ gdict_sidebar_init (GdictSidebar *sidebar)
   close_button = gtk_button_new ();
   gtk_button_set_relief (GTK_BUTTON (close_button), GTK_RELIEF_NONE);
   gtk_button_set_image (GTK_BUTTON (close_button),
-		        gtk_image_new_from_stock (GTK_STOCK_CLOSE,
-						  GTK_ICON_SIZE_SMALL_TOOLBAR));
+                        gtk_image_new_from_icon_name ("window-close",
+                                                      GTK_ICON_SIZE_SMALL_TOOLBAR));
   g_signal_connect (close_button, "clicked",
 		    G_CALLBACK (gdict_sidebar_close_clicked_cb),
 		    sidebar);
