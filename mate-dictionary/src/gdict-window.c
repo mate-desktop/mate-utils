@@ -188,7 +188,11 @@ gdict_window_dispose (GObject *gobject)
 
   if (window->busy_cursor)
     {
+#if GTK_CHECK_VERSION (3, 0, 0)
+      g_object_unref (window->busy_cursor);
+#else
       gdk_cursor_unref (window->busy_cursor);
+#endif
       window->busy_cursor = NULL;
     }
 

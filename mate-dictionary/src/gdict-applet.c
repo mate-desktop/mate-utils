@@ -347,8 +347,12 @@ gdict_applet_build_window (GdictApplet *applet)
   gtk_widget_show (priv->defbox);
   gtk_widget_set_can_focus (priv->defbox, TRUE);
   gtk_widget_set_can_default (priv->defbox, TRUE);
-  
+
+#if GTK_CHECK_VERSION (3, 0, 0)
+  bbox = gtk_button_box_new (GTK_ORIENTATION_HORIZONTAL);
+#else
   bbox = gtk_hbutton_box_new ();
+#endif
   gtk_button_box_set_layout (GTK_BUTTON_BOX (bbox), GTK_BUTTONBOX_END);
   gtk_box_set_spacing (GTK_BOX (bbox), 6);
   gtk_box_pack_end (GTK_BOX (vbox), bbox, FALSE, FALSE, 0);

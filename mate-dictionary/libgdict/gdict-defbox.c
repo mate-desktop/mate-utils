@@ -1333,7 +1333,11 @@ create_find_pane (GdictDefbox *defbox)
   gtk_box_pack_start (GTK_BOX (hbox2), priv->find_entry, TRUE, TRUE, 0);
   gtk_label_set_mnemonic_widget (GTK_LABEL (label), priv->find_entry);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  sep = gtk_separator_new (GTK_ORIENTATION_VERTICAL);
+#else
   sep = gtk_vseparator_new ();
+#endif
   gtk_box_pack_start (GTK_BOX (hbox1), sep, FALSE, FALSE, 0);
   gtk_widget_show (sep);
 
