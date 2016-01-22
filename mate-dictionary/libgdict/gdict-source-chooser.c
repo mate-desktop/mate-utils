@@ -96,7 +96,7 @@ enum
 
 static guint source_chooser_signals[LAST_SIGNAL] = { 0, };
 
-G_DEFINE_TYPE (GdictSourceChooser, gdict_source_chooser, GTK_TYPE_VBOX);
+G_DEFINE_TYPE (GdictSourceChooser, gdict_source_chooser, GTK_TYPE_BOX);
 
 static void
 gdict_source_chooser_finalize (GObject *gobject)
@@ -287,7 +287,11 @@ gdict_source_chooser_constructor (GType                  gtype,
   gtk_container_add (GTK_CONTAINER (sw), priv->treeview);
   gtk_widget_show (priv->treeview);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
+#else
   hbox = gtk_hbox_new (FALSE, 6);
+#endif
   priv->buttons_box = hbox;
 
   priv->refresh_button = gtk_button_new ();
@@ -400,6 +404,7 @@ gdict_source_chooser_init (GdictSourceChooser *chooser)
 {
   GdictSourceChooserPrivate *priv;
 
+  gtk_orientable_set_orientation (GTK_ORIENTABLE (chooser), GTK_ORIENTATION_VERTICAL);
   chooser->priv = priv = GDICT_SOURCE_CHOOSER_GET_PRIVATE (chooser);
 
   priv->store = gtk_list_store_new (SOURCE_N_COLUMNS,

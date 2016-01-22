@@ -108,7 +108,7 @@ enum
 
 static guint speller_signals[LAST_SIGNAL] = { 0 };
 
-G_DEFINE_TYPE (GdictSpeller, gdict_speller, GTK_TYPE_VBOX);
+G_DEFINE_TYPE (GdictSpeller, gdict_speller, GTK_TYPE_BOX);
 
 
 static void
@@ -343,7 +343,11 @@ gdict_speller_constructor (GType                  type,
   gtk_container_add (GTK_CONTAINER (sw), priv->treeview);
   gtk_widget_show (priv->treeview);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+#else
   hbox = gtk_hbox_new (FALSE, 0);
+#endif
 
   priv->clear_button = gtk_button_new ();
   gtk_button_set_image (GTK_BUTTON (priv->clear_button),
@@ -416,6 +420,7 @@ gdict_speller_init (GdictSpeller *speller)
 {
   GdictSpellerPrivate *priv;
 
+  gtk_orientable_set_orientation (GTK_ORIENTABLE (speller), GTK_ORIENTATION_VERTICAL);
   speller->priv = priv = GDICT_SPELLER_GET_PRIVATE (speller);
 
   priv->database = NULL;
@@ -467,8 +472,8 @@ gdict_speller_new_with_context (GdictContext *context)
   g_return_val_if_fail (GDICT_IS_CONTEXT (context), NULL);
 
   return g_object_new (GDICT_TYPE_SPELLER,
-		       "context", context,
-		       NULL);
+                       "context", context,
+                       NULL);
 }
 
 /**

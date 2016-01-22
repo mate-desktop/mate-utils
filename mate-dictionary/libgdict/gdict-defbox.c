@@ -133,7 +133,7 @@ static GdkColor default_link_color = { 0, 0, 0, 0xeeee };
 static GdkColor default_visited_link_color = { 0, 0x5555, 0x1a1a, 0x8b8b };
 
 
-G_DEFINE_TYPE (GdictDefbox, gdict_defbox, GTK_TYPE_VBOX);
+G_DEFINE_TYPE (GdictDefbox, gdict_defbox, GTK_TYPE_BOX);
 
 
 static Definition *
@@ -1303,10 +1303,18 @@ create_find_pane (GdictDefbox *defbox)
 
   priv = defbox->priv;
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  find_pane = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+#else
   find_pane = gtk_hbox_new (FALSE, 0);
+#endif
   gtk_container_set_border_width (GTK_CONTAINER (find_pane), 0);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  hbox1 = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
+#else
   hbox1 = gtk_hbox_new (FALSE, 6);
+#endif
   gtk_box_pack_start (GTK_BOX (find_pane), hbox1, TRUE, TRUE, 0);
   gtk_widget_show (hbox1);
 
@@ -1320,7 +1328,11 @@ create_find_pane (GdictDefbox *defbox)
   gtk_box_pack_start (GTK_BOX (hbox1), button, FALSE, FALSE, 0);
   gtk_widget_show (button);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  hbox2 = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
+#else
   hbox2 = gtk_hbox_new (FALSE, 12);
+#endif
   gtk_box_pack_start (GTK_BOX (hbox1), hbox2, TRUE, TRUE, 0);
   gtk_widget_show (hbox2);
 
@@ -1920,6 +1932,7 @@ gdict_defbox_init (GdictDefbox *defbox)
 {
   GdictDefboxPrivate *priv;
 
+  gtk_orientable_set_orientation (GTK_ORIENTABLE (defbox), GTK_ORIENTATION_VERTICAL);
   gtk_box_set_spacing (GTK_BOX (defbox), 6);
 
   priv = GDICT_DEFBOX_GET_PRIVATE (defbox);

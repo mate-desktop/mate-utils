@@ -111,7 +111,7 @@ static guint db_chooser_signals[LAST_SIGNAL] = { 0 };
 
 G_DEFINE_TYPE (GdictDatabaseChooser,
                gdict_database_chooser,
-               GTK_TYPE_VBOX);
+               GTK_TYPE_BOX);
 
 
 static void
@@ -370,7 +370,11 @@ gdict_database_chooser_constructor (GType                  type,
   gtk_container_add (GTK_CONTAINER (sw), priv->treeview);
   gtk_widget_show (priv->treeview);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+#else
   hbox = gtk_hbox_new (FALSE, 0);
+#endif
   priv->buttons_box = hbox;
 
   priv->refresh_button = gtk_button_new ();
@@ -493,6 +497,7 @@ gdict_database_chooser_init (GdictDatabaseChooser *chooser)
 {
   GdictDatabaseChooserPrivate *priv;
 
+  gtk_orientable_set_orientation (GTK_ORIENTABLE (chooser), GTK_ORIENTATION_VERTICAL);
   chooser->priv = priv = GDICT_DATABASE_CHOOSER_GET_PRIVATE (chooser);
 
   priv->results = -1;

@@ -39,14 +39,14 @@ typedef struct _GdictSidebarClass	GdictSidebarClass;
 
 struct _GdictSidebar
 {
-  GtkVBox parent_instance;
+  GtkBox parent_instance;
 
   GdictSidebarPrivate *priv;
 };
 
 struct _GdictSidebarClass
 {
-  GtkVBoxClass parent_class;
+  GtkBoxClass parent_class;
 
   void (*page_changed) (GdictSidebar *sidebar);
   void (*closed)       (GdictSidebar *sidebar);

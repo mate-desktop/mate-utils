@@ -39,14 +39,14 @@ typedef struct _GdictDefboxPrivate GdictDefboxPrivate;
 struct _GdictDefbox
 {
   /*< private >*/
-  GtkVBox parent_instance;
+  GtkBox parent_instance;
 
   GdictDefboxPrivate *priv;
 };
 
 struct _GdictDefboxClass
 {
-  GtkVBoxClass parent_class;
+  GtkBoxClass parent_class;
 
   /* these are all RUN_ACTION signals for key bindings */
   void (*show_find)     (GdictDefbox *defbox);

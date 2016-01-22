@@ -108,7 +108,7 @@ static guint db_chooser_signals[LAST_SIGNAL] = { 0 };
 
 G_DEFINE_TYPE (GdictStrategyChooser,
                gdict_strategy_chooser,
-               GTK_TYPE_VBOX);
+               GTK_TYPE_BOX);
 
 
 static void
@@ -354,7 +354,11 @@ gdict_strategy_chooser_constructor (GType                  type,
   gtk_container_add (GTK_CONTAINER (sw), priv->treeview);
   gtk_widget_show (priv->treeview);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+#else
   hbox = gtk_hbox_new (FALSE, 0);
+#endif
 
   priv->refresh_button = gtk_button_new ();
   gtk_button_set_image (GTK_BUTTON (priv->refresh_button),
@@ -441,6 +445,7 @@ gdict_strategy_chooser_init (GdictStrategyChooser *chooser)
 {
   GdictStrategyChooserPrivate *priv;
 
+  gtk_orientable_set_orientation (GTK_ORIENTABLE (chooser), GTK_ORIENTATION_VERTICAL);
   chooser->priv = priv = GDICT_STRATEGY_CHOOSER_GET_PRIVATE (chooser);
 
   priv->results = -1;

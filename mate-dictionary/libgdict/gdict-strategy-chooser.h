@@ -43,14 +43,14 @@ typedef struct _GdictStrategyChooserClass	GdictStrategyChooserClass;
 
 struct _GdictStrategyChooser
 {
-  GtkVBox parent_instance;
+  GtkBox parent_instance;
   
   GdictStrategyChooserPrivate *priv;
 };
 
 struct _GdictStrategyChooserClass
 {
-  GtkVBoxClass parent_class;
+  GtkBoxClass parent_class;
 
   void (*strategy_activated) (GdictStrategyChooser *chooser,
 		  	      const gchar          *name,

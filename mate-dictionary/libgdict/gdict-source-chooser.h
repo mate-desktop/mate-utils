@@ -39,7 +39,7 @@ typedef struct _GdictSourceChooserClass         GdictSourceChooserClass;
 struct _GdictSourceChooser
 {
   /*< private >*/
-  GtkVBox parent_instance;
+  GtkBox parent_instance;
 
   GdictSourceChooserPrivate *priv;
 };
@@ -47,7 +47,7 @@ struct _GdictSourceChooser
 struct _GdictSourceChooserClass
 {
   /*< private >*/
-  GtkVBoxClass parent_class;
+  GtkBoxClass parent_class;
 
   /*< public >*/
   void (*source_activated)  (GdictSourceChooser *chooser,
