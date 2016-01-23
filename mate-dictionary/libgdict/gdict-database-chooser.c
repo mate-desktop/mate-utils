@@ -341,6 +341,9 @@ gdict_database_chooser_constructor (GType                  type,
   gtk_widget_push_composite_child ();
 
   sw = gtk_scrolled_window_new (NULL, NULL);
+#if GTK_CHECK_VERSION (3, 0, 0)
+  gtk_widget_set_hexpand (sw, TRUE);
+#endif
   gtk_widget_set_composite_name (sw, "gdict-database-chooser-scrolled-window");
   gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (sw),
 		  		  GTK_POLICY_AUTOMATIC,
