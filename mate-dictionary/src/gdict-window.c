@@ -56,6 +56,11 @@
 #define GDICT_SIDEBAR_STRATEGIES_PAGE   "strat-chooser"
 #define GDICT_SIDEBAR_SOURCES_PAGE      "source-chooser"
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+#define gtk_hbox_new(X,Y) gtk_box_new(GTK_ORIENTATION_HORIZONTAL,Y)
+#define gtk_vbox_new(X,Y) gtk_box_new(GTK_ORIENTATION_VERTICAL,Y)
+#endif
+
 enum
 {
   COMPLETION_TEXT_COLUMN,
