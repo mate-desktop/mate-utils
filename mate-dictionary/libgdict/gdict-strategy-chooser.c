@@ -329,7 +329,7 @@ gdict_strategy_chooser_constructor (GType                  type,
 
   sw = gtk_scrolled_window_new (NULL, NULL);
 #if GTK_CHECK_VERSION (3, 0, 0)
-  gtk_widget_set_hexpand (sw, TRUE);
+  gtk_widget_set_vexpand (sw, TRUE);
 #endif
   gtk_widget_set_composite_name (sw, "gdict-strategy-chooser-scrolled-window");
   gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (sw),
