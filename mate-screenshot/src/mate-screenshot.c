@@ -326,6 +326,7 @@ create_effects_frame (GtkWidget   *outer_vbox,
 #else
   main_vbox = gtk_vbox_new (FALSE, 6);
 #endif
+  gtk_widget_set_sensitive (main_vbox, !take_area_shot);
   gtk_box_pack_start (GTK_BOX (outer_vbox), main_vbox, FALSE, FALSE, 0);
   gtk_widget_show (main_vbox);
   effects_vbox = main_vbox;
@@ -516,6 +517,7 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
 #else
   delay_hbox = gtk_hbox_new (FALSE, 6);
 #endif
+  gtk_widget_set_sensitive (delay_hbox, !take_area_shot);
   gtk_box_pack_start (GTK_BOX (vbox), delay_hbox, FALSE, FALSE, 0);
   gtk_widget_show (delay_hbox);
 
