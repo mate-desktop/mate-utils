@@ -6,17 +6,17 @@
 # Adi Roiban https://launchpad.net/~adiroiban, 2008, 2009
 # corneliu.e <corneliueva@yahoo.com>, 2014
 # Dan Damian <dand@dnttm.ro>, 1999, 2001
-# Daniel <danny34ever@yahoo.com>, 2015
+# Daniel <danny34ever@yahoo.com>, 2015-2016
 # Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009
 # Mugurel Tudor <mugurelu@mate.ro>, 2002-2004, 2005, 2006
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-24 13:29+0100\n"
-"PO-Revision-Date: 2015-03-18 15:18+0000\n"
+"POT-Creation-Date: 2015-12-10 13:06+0300\n"
+"PO-Revision-Date: 2016-01-24 15:48+0000\n"
 "Last-Translator: Daniel <danny34ever@yahoo.com>\n"
-"Language-Team: Romanian (http://www.transifex.com/projects/p/MATE/language/ro/)\n"
+"Language-Team: Romanian (http://www.transifex.com/mate/MATE/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -64,7 +64,8 @@ msgid "S_can Remote Folder..."
 msgstr "S_canează un dosar la distanță..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../mate-dictionary/src/gdict-window.c:1279 ../logview/logview-window.c:809
+#: ../logview/src/logview-window.c:811
+#: ../mate-dictionary/src/gdict-window.c:1285
 msgid "_Edit"
 msgstr "_Editare"
 
@@ -77,7 +78,8 @@ msgid "_Collapse All"
 msgstr "_Pliază tot"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../mate-dictionary/src/gdict-window.c:1280 ../logview/logview-window.c:810
+#: ../logview/src/logview-window.c:812
+#: ../mate-dictionary/src/gdict-window.c:1286
 msgid "_View"
 msgstr "_Vizualizare"
 
@@ -94,18 +96,20 @@ msgid "All_ocated Space"
 msgstr "Spațiu al_ocat"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../mate-dictionary/src/gdict-applet.c:1213
-#: ../mate-dictionary/src/gdict-window.c:1282 ../logview/logview-window.c:812
+#: ../logview/src/logview-window.c:814
+#: ../mate-dictionary/src/gdict-applet.c:1185
+#: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Help"
 msgstr "_Ajutor"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../mate-dictionary/src/gdict-window.c:1332 ../logview/logview-window.c:838
+#: ../logview/src/logview-window.c:840
+#: ../mate-dictionary/src/gdict-window.c:1338
 msgid "_Contents"
 msgstr "_Conținut"
 
-#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/callbacks.c:97
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1245
 msgid "Disk Usage Analyzer"
 msgstr "Analizare utilizare disc"
 
@@ -151,7 +155,7 @@ msgstr "Actualizează"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:1
 msgid "Monitor Home"
-msgstr ""
+msgstr "Monitorizare dosar personal"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:2
 msgid "Whether any change to the home directory should be monitored."
@@ -183,7 +187,7 @@ msgstr "Dacă bara de stare din josul ferestrei principale ar trebui sa fie vizi
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:9
 msgid "Subfolder tips visible"
-msgstr ""
+msgstr "Indicii subdosare vizibile"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:10
 msgid "Whether the subfolder tooltips of the selected folder are drawn."
@@ -209,7 +213,7 @@ msgid ""
 "perform scans on a file system, your home or any other folder - local or "
 "remote. There is also an option to constantly monitor any external changes "
 "to the home directory and warn the user if a file is added/removed. </p>"
-msgstr ""
+msgstr "<p> Așa cum numele sugerează, Analizatorul de utilizare a discului este un utilitar grafic pe care îl puteți folosi pentru a vizualiza și monitoriza folosirea și structura dosarelor pe discul dumneavoastră. Afișează sumarul informațiilor în gafice inel sau hartă arbore. </p> <p> Puteți scana un sistem de fișiere, dosarul personal sau orice alt dosar - local sau la distanță. Există de asemenea și o opțiune de a monitoriza constant orice schimbare externă asupra directorului personal și avertizarea utilizatorului dacă un fișier este adăugat/șters. </p>"
 
 #: ../baobab/src/baobab.c:135 ../baobab/src/baobab.c:355
 msgid "Scanning..."
@@ -229,12 +233,12 @@ msgstr "disponibil:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:240 ../baobab/src/baobab.c:297
-#: ../baobab/src/callbacks.c:259
+#: ../baobab/src/callbacks.c:258
 msgid "Calculating percentage bars..."
 msgstr "Se calculează mărimea barelor..."
 
 #: ../baobab/src/baobab.c:251 ../baobab/src/baobab.c:1309
-#: ../baobab/src/callbacks.c:263
+#: ../baobab/src/callbacks.c:262
 msgid "Ready"
 msgstr "Pregătit"
 
@@ -471,7 +475,7 @@ msgstr "Conținutul dosarului personal a fost schimbat. Rescanați pentru a actu
 msgid "_Rescan"
 msgstr "_Rescanează"
 
-#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2427
+#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/src/gsearchtool.c:2427
 msgid "Folder"
 msgstr "Dosar"
 
@@ -479,7 +483,7 @@ msgstr "Dosar"
 msgid "Usage"
 msgstr "Utilizare"
 
-#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2440
+#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/src/gsearchtool.c:2440
 msgid "Size"
 msgstr "Dimensiune"
 
@@ -509,43 +513,43 @@ msgstr "„%s” nu este un dosar valid"
 msgid "Could not analyze disk usage."
 msgstr "Nu s-a putut analiza utilizarea discului."
 
-#: ../baobab/src/baobab-utils.c:366
+#: ../baobab/src/baobab-utils.c:362
 msgid "_Open Folder"
 msgstr "Deschide d_osar"
 
-#: ../baobab/src/baobab-utils.c:372
-#: ../gsearchtool/gsearchtool-callbacks.c:1210
+#: ../baobab/src/baobab-utils.c:368
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1210
 msgid "Mo_ve to Trash"
 msgstr "Mu_tă la coșul de gunoi"
 
-#: ../baobab/src/baobab-utils.c:406
+#: ../baobab/src/baobab-utils.c:402
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "Nu s-a putut deschide dosarul „%s”"
 
-#: ../baobab/src/baobab-utils.c:409
+#: ../baobab/src/baobab-utils.c:405
 msgid "There is no installed viewer capable of displaying the folder."
-msgstr "Nu există nici un vizualizator instalat capabil să afișeze dosarul."
+msgstr "Nu există niciun vizualizator instalat capabil să afișeze dosarul."
 
-#: ../baobab/src/baobab-utils.c:478
+#: ../baobab/src/baobab-utils.c:474
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
-msgstr "„%s” nu poate fi mutat la coșul de gunoi"
+msgstr "„%s” nu poate fi mutat în coșul de gunoi"
 
-#: ../baobab/src/baobab-utils.c:486
+#: ../baobab/src/baobab-utils.c:482
 msgid "Could not move file to the Trash"
-msgstr "Nu s-a putut muta fișierul la coșul de gunoi"
+msgstr "Nu s-a putut muta fișierul în coșul de gunoi"
 
-#: ../baobab/src/baobab-utils.c:488
+#: ../baobab/src/baobab-utils.c:484
 #, c-format
 msgid "Details: %s"
 msgstr "Detalii: %s"
 
-#: ../baobab/src/baobab-utils.c:524
+#: ../baobab/src/baobab-utils.c:520
 msgid "There was an error displaying help."
 msgstr "A intervenit o eroare la afișarea ajutorului."
 
-#: ../baobab/src/callbacks.c:76 ../logview/logview-about.h:49
+#: ../baobab/src/callbacks.c:76 ../logview/src/logview-about.h:49
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -553,39 +557,1297 @@ msgid ""
 "any later version."
 msgstr "Acest program este software liber; îl puteți redistribui și/sau modifica în conformitate cu termenii Licenței Publice Generale GNU așa cum este publicată de Free Software Foundation; fie versiunea 2 a Licenței, fie (la latitudinea dumneavoastră) orice versiune ulterioară."
 
-#: ../baobab/src/callbacks.c:81 ../logview/logview-about.h:53
+#: ../baobab/src/callbacks.c:81 ../logview/src/logview-about.h:53
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
 "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
 "more details."
-msgstr "Acest program este distribuit cu speranța că va fi util, dar FĂRĂ NICI O GARANȚIE, fără garanție implicită de vandabilitate și conformitate unui anumit scop. Citiți Licența Publică Generală GNU pentru detalii."
+msgstr "Acest program este distribuit cu speranța că va fi util, dar FĂRĂ NICIO GARANȚIE, fără garanție implicită de vandabilitate și conformitate unui anumit scop. Citiți Licența Publică Generală GNU pentru detalii."
 
-#: ../baobab/src/callbacks.c:86 ../logview/logview-about.h:57
+#: ../baobab/src/callbacks.c:86 ../logview/src/logview-about.h:57
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 msgstr "Ar trebui să fi primit o copie a Licenței Publice Generale GNU împreună cu acest program; dacă nu, scrieți Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 
-#: ../baobab/src/callbacks.c:98
+#: ../baobab/src/callbacks.c:97
 msgid "A graphical tool to analyze disk usage."
 msgstr "Un program în mod grafic pentru analizarea utilizări discului"
 
 #. translator credits
-#: ../baobab/src/callbacks.c:104 ../mate-dictionary/src/gdict-about.c:55
-#: ../logview/logview-about.h:63
+#: ../baobab/src/callbacks.c:103 ../logview/src/logview-about.h:63
+#: ../mate-dictionary/src/gdict-about.c:55
 msgid "translator-credits"
-msgstr "Iustin Pop <iusty@geocities.com>\nDan Damian <dand@dnttm.ro>\nMugurel Tudor <mugurelu@mate.ro>\n\nContribuții Launchpad:\n  Adi Roiban https://launchpad.net/~adiroiban\n  Alex Eftimie https://launchpad.net/~alexeftimie\n  Ionuț Jula https://launchpad.net/~ionutjula"
+msgstr "Iustin Pop <iusty@geocities.com>\nDaniel Alămiță <danny3@tutanota.com>\nDan Damian <dand@dnttm.ro>\nMugurel Tudor <mugurelu@mate.ro>\n\nContribuții Launchpad:\n  Adi Roiban https://launchpad.net/~adiroiban\n  Alex Eftimie https://launchpad.net/~alexeftimie\n  Ionuț Jula https://launchpad.net/~ionutjula"
 
-#: ../baobab/src/callbacks.c:202 ../gsearchtool/gsearchtool-callbacks.c:508
-#: ../gsearchtool/gsearchtool-callbacks.c:848
+#: ../baobab/src/callbacks.c:201
+#: ../gsearchtool/src/gsearchtool-callbacks.c:508
+#: ../gsearchtool/src/gsearchtool-callbacks.c:848
 msgid "The document does not exist."
 msgstr "Documentul nu există."
 
-#: ../baobab/src/callbacks.c:283
+#: ../baobab/src/callbacks.c:282
 msgid "The folder does not exist."
 msgstr "Dosarul nu există."
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
+msgid "A file searching tool for MATE Desktop"
+msgstr "O unealtă pentru căutare de fișiere pentru desktopul MATE"
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Search Tool is a simple but powerful utility that allows you to "
+"search for files and folders on any mounted file system. Its interface gives"
+" you instant access to a wide variety of parameters for each search, such as"
+" text contained within a file, ownership, date of modification, file size, "
+"folder exclusion, etc.. </p>"
+msgstr "<p> Unealtă de căutare MATE este un utilitar simplu, dar puternic care vă permite să căutați fișiere și dosare pe orice sistem de fișiere montat. Interfața vă oferă acces instantaneu la o gamă largă de parametrii pentru fiecare căutare, cum ar fi textul conținut într-un fișier, deținere, data modificării, mărimea fișierului, excluderea unui dosar, etc.. </p>"
+
+#: ../gsearchtool/data/mate-search-tool.desktop.in.h:1
+msgid "MATE Search Tool"
+msgstr "Unealtă de căutare MATE"
+
+#: ../gsearchtool/data/mate-search-tool.desktop.in.h:2
+msgid "Locate documents and folders on this computer by name or content"
+msgstr "Găsiți documente și dosare pe acest calculator după nume sau conținut"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:1
+msgid "Search history"
+msgstr "Istoric căutare"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:2
+msgid "This key defines the items which were searched for in the past."
+msgstr "Această cheie definește elementele care au fost căutate în trecut."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:3
+msgid "Show Additional Options"
+msgstr "Afișează opțiuni suplimentare"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:4
+msgid "Disable Quick Search"
+msgstr "Dezactivare căutare rapidă"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:5
+msgid ""
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
+msgstr "Această cheie determină dacă utilitarul de căutare dezativează folosirea comenzii locate pentru căutări simple de fișiere."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:6
+msgid "Quick Search Excluded Paths"
+msgstr "Căi excluse pentru căutări rapide"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:7
+msgid ""
+"This key defines the paths the search tool will exclude from a quick search."
+" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
+"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
+msgstr "Această cheie definește căile pe care utilitarul de căutare le va exclude de la o căutare rapidă. Metacaracterele „*” și „?” sunt suportate. Valorile implicite sunt /mnt/* , /media/*, /dev/*, /tmp/*, /proc/*, și /var/*."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:8
+msgid "Disable Quick Search Second Scan"
+msgstr "Dezactivează a doua scanare pentru căutare rapidă"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:9
+msgid ""
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
+msgstr "Această cheie determină dacă utilitarul de căutare dezactivează utilizarea comenzii find după o căutare rapidă."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:10
+msgid "Quick Search Second Scan Excluded Paths"
+msgstr "Căi excluse pentru a doua scanare pentru căutări rapide"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:11
+msgid ""
+"This key defines the paths the search tool will exclude from a second scan "
+"when performing a quick search. The second scan uses the find command to "
+"search for files. The purpose of the second scan is to find files that have "
+"not been indexed. The wildcards '*' and '?' are supported. The default value"
+" is /."
+msgstr "Această cheie definește căile pe care utilitarul de căutare le va exclude de la o a doua scanare în tmpul unei căutari rapidă. A doua scanare folosește comanda find pentru a căuta fișierele. Scopul celei de-a doua scanări este de a găsi fișierele ce nu au fost indexate. Metacaracterele „*” și „?” sunt suportate. Valorile implicite /."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:12
+msgid "Search Result Columns Order"
+msgstr "Ordinea coloanelor la rezultatul căutării"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:13
+msgid ""
+"This key defines the order of the columns in the search results. This key "
+"should not be modified by the user."
+msgstr "Această cheie definește ordinea coloanelor din rezultatele căutării. Această cheie nu ar trebui să fie modificată de către utilizator."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:14
+msgid "Default Window Width"
+msgstr "Lățimea implicită a ferestrei"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:15
+msgid ""
+"This key defines the window width, and it's used to remember the size of the"
+" search tool between sessions. Setting it to -1 will make the search tool "
+"use the default width."
+msgstr "Această cheie definește lățimea ferestrei, și este folosită pentru a memora dimensiunea aplicației de căutare între sesiuni. Setând-o la -1 veți determina aplicația să folosească lățimea implicită."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:16
+msgid "Default Window Height"
+msgstr "Înălțimea implicită a ferestrei"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:17
+msgid ""
+"This key defines the window height, and it's used to remember the size of "
+"the search tool between sessions. Setting it to -1 will make the search tool"
+" use the default height."
+msgstr "Această cheie definește înălțimea ferestrei, și este folosită pentru a memora dimensiunea aplicației de căutare între sesiuni. Setând-o la -1 veți determina aplicația să folosească înălțimea implicită."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:18
+msgid "Default Window Maximized"
+msgstr "Fereastra implicită maximizată"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:19
+msgid ""
+"This key determines if the search tool window starts in a maximized state."
+msgstr "Această cheie determină dacă utilitarul de căutare va porni maximizat."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:20
+msgid "Look in Folder"
+msgstr "Caută în dosar"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:21
+msgid "This key defines the default value of the \"Look in Folder\" widget."
+msgstr "Această cheie definește valoarea implicită pentru miniaplicația „Caută în dosar”"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:22
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr "Această cheie determină dacă opțiunea de căutare „Conține textul” este selectată la pornirea utilitarului de căutare."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:23
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
+msgstr "Această cheie determină dacă opțiunea de căutare „Data modificării mai mică decât” este selectată la pornirea utilitarului de căutare."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:24
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
+msgstr "Această cheie determină dacă opțiunea de căutare „Data modificării mai mare decât” este selectată la pornirea utilitarului de căutare."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:25
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr "Această cheie determină dacă opțiunea de căutare „Mărimea de cel puțin” este selectată la pornirea utilitarului de căutare."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:26
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
+msgstr "Această cheie determină dacă opțiunea de căutare „Mărimea de cel mult” este selectată la pornirea utilitarului de căutare."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:27
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
+msgstr "Această cheie determină dacă opțiunea de căutare „Fișierul este gol” este selectată la pornirea utilitarului de căutare."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:28
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
+msgstr "Această cheie determină dacă opțiunea de căutare „Deținut de utilizatorul” este selectată la pornirea utilitarului de căutare."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:29
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when"
+" the search tool is started."
+msgstr "Această cheie determină dacă opțiunea de căutare „Deținut de grupul” este selectată la pornirea utilitarului de căutare."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:30
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
+msgstr "Această cheie determină dacă opțiunea de căutare „Deținătorul nu a fost recunoscut” este selectată la pornirea utilitarului de căutare."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:31
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr "Această cheie determină dacă opțiunea de căutare „Numele nu conține” este selectată la pornirea utilitarului de căutare."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:32
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option"
+" is selected when the search tool is started."
+msgstr "Această cheie determină dacă opțiunea de căutare „Numele se potrivește expresiei regulate” este selectată la pornirea utilitarului de căutare."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:33
+msgid ""
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
+msgstr "Această cheie determină dacă opțiunea de căutare „Arată fișierele și dosarele ascunse” este selectată la pornirea utilitarului de căutare."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:34
+msgid ""
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr "Această cheie determină dacă opțiunea de căutare „Urmează legăturile simbolice” este selectată la pornirea utilitarului de căutare."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:35
+msgid ""
+"This key determines if the \"Exclude other filesystems\" search option is "
+"selected when the search tool is started."
+msgstr "Această cheie determină dacă opțiunea de căutare „Exclude alte sisteme de fișiere” este selectată la pornirea utilitarului de căutare."
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "Fișierul nu este un fișier .desktop valid"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Versiune nerecunoscută de fișier desktop „%s”"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:957
+#, c-format
+msgid "Starting %s"
+msgstr "Se pornește %s"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1098
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "Aplicația nu acceptă documente în linia de comandă"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1166
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "Opțiune nerecunoscută de de pornire: %d"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1365
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "Nu se poate trimite URI-ul documentului unei intrări desktop „Type=Link”"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1384
+#, c-format
+msgid "Not a launchable item"
+msgstr "Nu este un element care să poate fi pornit"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:225
+msgid "Disable connection to session manager"
+msgstr "Dezactivează conexiunea la administratorul sesiunii"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+msgid "Specify file containing saved configuration"
+msgstr "Specifică fișierul conținând configurația salvată"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+msgid "FILE"
+msgstr "FIȘIER"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+msgid "Specify session management ID"
+msgstr "Specifică ID-ul de administrare al sesiunii"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+msgid "ID"
+msgstr "ID"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:252
+msgid "Session management options:"
+msgstr "Opțiuni de administrare a sesiunii:"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:253
+msgid "Show session management options"
+msgstr "Afișează opțiunile pentru administrarea sesiunii"
+
+#: ../gsearchtool/src/gsearchtool.c:82
+msgid "Contains the _text"
+msgstr "Conține _textul"
+
+#: ../gsearchtool/src/gsearchtool.c:84
+msgid "_Date modified less than"
+msgstr "_Data modificării mai mică decât"
+
+#: ../gsearchtool/src/gsearchtool.c:84 ../gsearchtool/src/gsearchtool.c:85
+msgid "days"
+msgstr "zile"
+
+#: ../gsearchtool/src/gsearchtool.c:85
+msgid "Date modified more than"
+msgstr "Data modificării mai _mare decât"
+
+#: ../gsearchtool/src/gsearchtool.c:87
+msgid "S_ize at least"
+msgstr "Mă_rimea de cel puțin"
+
+#: ../gsearchtool/src/gsearchtool.c:87 ../gsearchtool/src/gsearchtool.c:88
+msgid "kilobytes"
+msgstr "kiloocteți"
+
+#: ../gsearchtool/src/gsearchtool.c:88
+msgid "Si_ze at most"
+msgstr "Mărim_ea cel mult"
+
+#: ../gsearchtool/src/gsearchtool.c:89
+msgid "File is empty"
+msgstr "Fișierul este gol"
+
+#: ../gsearchtool/src/gsearchtool.c:91
+msgid "Owned by _user"
+msgstr "Deținut de _utilizator"
+
+#: ../gsearchtool/src/gsearchtool.c:92
+msgid "Owned by _group"
+msgstr "Deținut de _grup"
+
+#: ../gsearchtool/src/gsearchtool.c:93
+msgid "Owner is unrecognized"
+msgstr "Deținătorul nu este recunoscut"
+
+#: ../gsearchtool/src/gsearchtool.c:95
+msgid "Na_me does not contain"
+msgstr "N_umele nu conține"
+
+#: ../gsearchtool/src/gsearchtool.c:96
+msgid "Name matches regular e_xpression"
+msgstr "Fișierul corespunde e_xpresiei regulare"
+
+#: ../gsearchtool/src/gsearchtool.c:98
+msgid "Show hidden and backup files"
+msgstr "Afișează fișierele ascunse și copiile de siguranță"
+
+#: ../gsearchtool/src/gsearchtool.c:99
+msgid "Follow symbolic links"
+msgstr "Urmează legăturile simbolice"
+
+#: ../gsearchtool/src/gsearchtool.c:100
+msgid "Exclude other filesystems"
+msgstr "Exclude alte sisteme de fișiere"
+
+#: ../gsearchtool/src/gsearchtool.c:158
+msgid "Show version of the application"
+msgstr "Afișează versiunea aplicației"
+
+#: ../gsearchtool/src/gsearchtool.c:159 ../gsearchtool/src/gsearchtool.c:164
+#: ../gsearchtool/src/gsearchtool.c:173
+msgid "STRING"
+msgstr "ȘIR"
+
+#: ../gsearchtool/src/gsearchtool.c:160
+msgid "PATH"
+msgstr "CALE"
+
+#: ../gsearchtool/src/gsearchtool.c:161
+msgid "VALUE"
+msgstr "VALOARE"
+
+#: ../gsearchtool/src/gsearchtool.c:165 ../gsearchtool/src/gsearchtool.c:166
+msgid "DAYS"
+msgstr "ZILE"
+
+#: ../gsearchtool/src/gsearchtool.c:167 ../gsearchtool/src/gsearchtool.c:168
+msgid "KILOBYTES"
+msgstr "KILOOCTEȚI"
+
+#: ../gsearchtool/src/gsearchtool.c:170
+msgid "USER"
+msgstr "UTILZATOR"
+
+#: ../gsearchtool/src/gsearchtool.c:171
+msgid "GROUP"
+msgstr "GRUP"
+
+#: ../gsearchtool/src/gsearchtool.c:174
+msgid "PATTERN"
+msgstr "ȘABLON"
+
+#: ../gsearchtool/src/gsearchtool.c:385
+msgid "A locate database has probably not been created."
+msgstr "O bază de date „locate” nu a fost probabil creată."
+
+#: ../gsearchtool/src/gsearchtool.c:487
+#, c-format
+msgid "Character set conversion failed for \"%s\""
+msgstr "Conversia setului de caractere a eșuat pentru „%s”"
+
+#: ../gsearchtool/src/gsearchtool.c:511
+msgid "Searching..."
+msgstr "Se caută..."
+
+#: ../gsearchtool/src/gsearchtool.c:511 ../gsearchtool/src/gsearchtool.c:1031
+#: ../gsearchtool/src/gsearchtool.c:3030
+msgid "Search for Files"
+msgstr "Caută fișiere"
+
+#: ../gsearchtool/src/gsearchtool.c:977 ../gsearchtool/src/gsearchtool.c:1006
+msgid "No files found"
+msgstr "Niciun fișier găsit"
+
+#: ../gsearchtool/src/gsearchtool.c:999
+msgid "(stopped)"
+msgstr "(oprit)"
+
+#: ../gsearchtool/src/gsearchtool.c:1005
+msgid "No Files Found"
+msgstr "Nu s-a găsit niciun fișier."
+
+#: ../gsearchtool/src/gsearchtool.c:1010
+#, c-format
+msgid "%'d File Found"
+msgid_plural "%'d Files Found"
+msgstr[0] "%d fișier găsit"
+msgstr[1] "%d fișiere găsite"
+msgstr[2] "%d de fișiere găsite"
+
+#: ../gsearchtool/src/gsearchtool.c:1014 ../gsearchtool/src/gsearchtool.c:1052
+#, c-format
+msgid "%'d file found"
+msgid_plural "%'d files found"
+msgstr[0] "%d fișier găsit"
+msgstr[1] "%d fișiere găsite"
+msgstr[2] "%d de fișiere găsite"
+
+#: ../gsearchtool/src/gsearchtool.c:1143
+msgid "Entry changed called for a non entry option!"
+msgstr "Intrarea s-a schimbat pentru o opțiune non-intrare!"
+
+#: ../gsearchtool/src/gsearchtool.c:1308
+msgid "Set the text of \"Name contains\" search option"
+msgstr "Definește textul pentru opțiunea de căutare „Numele conține”"
+
+#: ../gsearchtool/src/gsearchtool.c:1309
+msgid "Set the text of \"Look in folder\" search option"
+msgstr "Definește textul pentru opțiunea de căutare „Caută în dosar”"
+
+#: ../gsearchtool/src/gsearchtool.c:1310
+msgid "Sort files by one of the following: name, folder, size, type, or date"
+msgstr "Sortează fișierele după una dintre următoarele: nume, dosar, mărime, tip sau dată"
+
+#: ../gsearchtool/src/gsearchtool.c:1311
+msgid "Set sort order to descending, the default is ascending"
+msgstr "Definește ordinea de sortare la descrescătoare, implicit este crescătoare"
+
+#: ../gsearchtool/src/gsearchtool.c:1312
+msgid "Automatically start a search"
+msgstr "Pornește automat o căutare"
+
+#: ../gsearchtool/src/gsearchtool.c:1318
+#, c-format
+msgid "Select the \"%s\" search option"
+msgstr "Selectează opțiunea de căutare „%s”"
+
+#: ../gsearchtool/src/gsearchtool.c:1321
+#, c-format
+msgid "Select and set the \"%s\" search option"
+msgstr "Selectează și setează opțiunea de căutare „%s”"
+
+#: ../gsearchtool/src/gsearchtool.c:1428
+msgid "Invalid option passed to sortby command line argument."
+msgstr "Opțiune nevalidă trimisă ca argument comenzii de sortare."
+
+#: ../gsearchtool/src/gsearchtool.c:1720
+msgid ""
+"\n"
+"... Too many errors to display ..."
+msgstr "\n... Prea multe erori pentru afișare ..."
+
+#: ../gsearchtool/src/gsearchtool.c:1734
+msgid ""
+"The search results may be invalid.  There were errors while performing this "
+"search."
+msgstr "Rezultatele căutării ar putea fi nevalide. Au fost întâlnite erori în timpul acestei căutări."
+
+#: ../gsearchtool/src/gsearchtool.c:1746 ../gsearchtool/src/gsearchtool.c:1790
+msgid "Show more _details"
+msgstr "Afișează mai multe _detalii"
+
+#: ../gsearchtool/src/gsearchtool.c:1776
+msgid ""
+"The search results may be out of date or invalid.  Do you want to disable "
+"the quick search feature?"
+msgstr "Rezultatele căutării ar putea fi nevalide. Doriți să dezactivați opțiunea de căutare rapidă?"
+
+#: ../gsearchtool/src/gsearchtool.c:1801
+msgid "Disable _Quick Search"
+msgstr "Dezactivare căutare _rapidă"
+
+#: ../gsearchtool/src/gsearchtool.c:1828
+#, c-format
+msgid "Failed to set process group id of child %d: %s.\n"
+msgstr "Nu s-a putut definii id-ul pentru grupul de procese %d: %s.\n"
+
+#: ../gsearchtool/src/gsearchtool.c:1853
+msgid "Error parsing the search command."
+msgstr "Eroare la analizarea comenzii de căutare."
+
+#: ../gsearchtool/src/gsearchtool.c:1885
+msgid "Error running the search command."
+msgstr "Eroare la rularea comenzii de căutare."
+
+#: ../gsearchtool/src/gsearchtool.c:2008
+#, c-format
+msgid "Enter a text value for the \"%s\" search option."
+msgstr "Introduceți o valoare text pentru opțiunea de căutare „%s”."
+
+#. Translators:  Below is a string displaying the search options name
+#. and unit value.  For example, "\"Date modified less than\" in days".
+#: ../gsearchtool/src/gsearchtool.c:2013
+#, c-format
+msgid "\"%s\" in %s"
+msgstr "„%s” în %s"
+
+#: ../gsearchtool/src/gsearchtool.c:2015
+#, c-format
+msgid "Enter a value in %s for the \"%s\" search option."
+msgstr "Introduceți o valoare în %s pentru opțiunea de căutare „%s”."
+
+#: ../gsearchtool/src/gsearchtool.c:2073
+#, c-format
+msgid "Remove \"%s\""
+msgstr "Șterge „%s”"
+
+#: ../gsearchtool/src/gsearchtool.c:2074
+#, c-format
+msgid "Click to remove the \"%s\" search option."
+msgstr "Clic pentru a șterge opțiunea de căutare „%s”."
+
+#: ../gsearchtool/src/gsearchtool.c:2167
+msgid "A_vailable options:"
+msgstr "Opțiuni _disponibile:"
+
+#: ../gsearchtool/src/gsearchtool.c:2196
+msgid "Available options"
+msgstr "Opțiuni disponibile"
+
+#: ../gsearchtool/src/gsearchtool.c:2197
+msgid "Select a search option from the drop-down list."
+msgstr "Selectați o opțiune de căutare din lista derulantă."
+
+#: ../gsearchtool/src/gsearchtool.c:2209
+msgid "Add search option"
+msgstr "Adaugă o opțiune de căutare"
+
+#: ../gsearchtool/src/gsearchtool.c:2210
+msgid "Click to add the selected available search option."
+msgstr "Clic pentru a adăuga opțiunea selectată disponibilă pentru căutare."
+
+#: ../gsearchtool/src/gsearchtool.c:2299
+msgid "S_earch results:"
+msgstr "R_ezultate căutare:"
+
+#: ../gsearchtool/src/gsearchtool.c:2343
+msgid "List View"
+msgstr "Vizualizare listă"
+
+#: ../gsearchtool/src/gsearchtool.c:2403
+#: ../mate-dictionary/libgdict/gdict-source.c:246
+msgid "Name"
+msgstr "Nume"
+
+#: ../gsearchtool/src/gsearchtool.c:2452
+msgid "Type"
+msgstr "Tip"
+
+#: ../gsearchtool/src/gsearchtool.c:2464
+msgid "Date Modified"
+msgstr "Data modificării"
+
+#: ../gsearchtool/src/gsearchtool.c:2799
+msgid "_Name contains:"
+msgstr "_Numele conține:"
+
+#: ../gsearchtool/src/gsearchtool.c:2813 ../gsearchtool/src/gsearchtool.c:2814
+msgid "Enter a filename or partial filename with or without wildcards."
+msgstr "Introduceți un nume de fișier întreg sau parțial cu sau fără metacaractere."
+
+#: ../gsearchtool/src/gsearchtool.c:2814
+msgid "Name contains"
+msgstr "Numele conține"
+
+#: ../gsearchtool/src/gsearchtool.c:2820
+msgid "_Look in folder:"
+msgstr "_Caută în dosar:"
+
+#: ../gsearchtool/src/gsearchtool.c:2826
+msgid "Browse"
+msgstr "Navighează"
+
+#: ../gsearchtool/src/gsearchtool.c:2835
+msgid "Look in folder"
+msgstr "Caută în dosar"
+
+#: ../gsearchtool/src/gsearchtool.c:2835
+msgid "Select the folder or device from which you want to begin the search."
+msgstr "Selectați dosarul sau dispozitivul în care doriți să porniți căutarea."
+
+#: ../gsearchtool/src/gsearchtool.c:2853
+msgid "Select more _options"
+msgstr "Afișează mai multe _opțiuni"
+
+#: ../gsearchtool/src/gsearchtool.c:2862
+msgid "Select more options"
+msgstr "Afișează mai multe opțiuni"
+
+#: ../gsearchtool/src/gsearchtool.c:2862
+msgid "Click to expand or collapse the list of available options."
+msgstr "Clic pentru a desfășura sau plia lista cu opțiunile de căutare."
+
+#: ../gsearchtool/src/gsearchtool.c:2886
+msgid "Click to display the help manual."
+msgstr "Clic pentru a afișa ajutorul."
+
+#: ../gsearchtool/src/gsearchtool.c:2894
+msgid "Click to close \"Search for Files\"."
+msgstr "Clic pentru a închide „Caută fișiere”."
+
+#: ../gsearchtool/src/gsearchtool.c:2920
+msgid "Click to perform a search."
+msgstr "Clic pentru a realiza o căutare."
+
+#: ../gsearchtool/src/gsearchtool.c:2921
+msgid "Click to stop a search."
+msgstr "Clic pentru a opri o căutare."
+
+#: ../gsearchtool/src/gsearchtool.c:3015
+msgid "- the MATE Search Tool"
+msgstr "- unealta de căutare MATE"
+
+#: ../gsearchtool/src/gsearchtool.c:3024
+#, c-format
+msgid "Failed to parse command line arguments: %s\n"
+msgstr "Nu s-au putut analiza argumentele liniei de comandă: %s\n"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:198
+msgid "Could not open help document."
+msgstr "Nu s-a putut deschide documentul de ajutor."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:349
+#, c-format
+msgid "Are you sure you want to open %d document?"
+msgid_plural "Are you sure you want to open %d documents?"
+msgstr[0] "Sigur doriți să deschideți %d document?"
+msgstr[1] "Sigur doriți să deschideți %d documente?"
+msgstr[2] "Sigur doriți să deschideți %d de documente?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:354
+#: ../gsearchtool/src/gsearchtool-callbacks.c:551
+#, c-format
+msgid "This will open %d separate window."
+msgid_plural "This will open %d separate windows."
+msgstr[0] "Se va deschide %d fereastră separată."
+msgstr[1] "Se vor deschide %d ferestre separate."
+msgstr[2] "Se vor deschide %d de ferestre separate."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:394
+#, c-format
+msgid "Could not open document \"%s\"."
+msgstr "Nu s-a putut deschide documentul „%s“."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:423
+#, c-format
+msgid "Could not open folder \"%s\"."
+msgstr "Nu s-a putut deschide dosarul „%s“."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:431
+msgid "The caja file manager is not running."
+msgstr "Administratorul de fișiere Caja nu este pornit."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:523
+msgid "There is no installed viewer capable of displaying the document."
+msgstr "Nu este instalat nici un vizualizator capabil de a afișa documentul."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:546
+#, c-format
+msgid "Are you sure you want to open %d folder?"
+msgid_plural "Are you sure you want to open %d folders?"
+msgstr[0] "Sigur doriți să deschideți %d dosar?"
+msgstr[1] "Sigur doriți să deschideți %d dosare?"
+msgstr[2] "Sigur doriți să deschideți %d de dosare?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:699
+#, c-format
+msgid "Could not move \"%s\" to trash."
+msgstr "Nu s-a putut muta „%s“ în coșul de gunoi."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:730
+#, c-format
+msgid "Do you want to delete \"%s\" permanently?"
+msgstr "Doriți să ștergeți permanent „%s“?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:733
+#, c-format
+msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
+msgstr "Coșul de gunoi nu este disponibil. Nu s-a putut muta „%s“ în coșul de gunoi."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:772
+#, c-format
+msgid "Could not delete \"%s\"."
+msgstr "Nu s-a putut șterge „%s“."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:884
+#, c-format
+msgid "Deleting \"%s\" failed: %s."
+msgstr "Ștergerea „%s“ a eșuat: %s"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:896
+#, c-format
+msgid "Moving \"%s\" failed: %s."
+msgstr "Mutarea „%s“ a eșuat: %s"
+
+#. Popup menu item: Open
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1024
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1054
+msgid "_Open"
+msgstr "_Deschide"
+
+#. Popup menu item: Open with (default)
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1079
+#, c-format
+msgid "_Open with %s"
+msgstr "_Deschide cu %s"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1114
+#, c-format
+msgid "Open with %s"
+msgstr "Deschide cu %s"
+
+#. Popup menu item: Open With
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1147
+msgid "Open Wit_h"
+msgstr "Deschide _cu"
+
+#. Popup menu item: Open Containing Folder
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1192
+msgid "Open Containing _Folder"
+msgstr "Deschide _dosarul conținător"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1232
+msgid "_Save Results As..."
+msgstr "_Salvează rezultate ca..."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1614
+msgid "Save Search Results As..."
+msgstr "Salvează rezultatele căutării ca..."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1643
+msgid "Could not save document."
+msgstr "Nu s-a putut salva documentul."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1644
+msgid "You did not select a document name."
+msgstr "Nu ați selectat un nume pentru document."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1674
+#, c-format
+msgid "Could not save \"%s\" document to \"%s\"."
+msgstr "Nu s-a putut salva documentul „%s“ către „%s“."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1707
+#, c-format
+msgid "The document \"%s\" already exists.  Would you like to replace it?"
+msgstr "Documentul „%s“ deja există. Doriți să-l înlocuiți?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1711
+msgid "If you replace an existing file, its contents will be overwritten."
+msgstr "Dacă înlocuiți un fișier existent, conținutul va fi suprascris."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1726
+#: ../mate-screenshot/src/screenshot-xfer.c:82
+msgid "_Replace"
+msgstr "În_locuiește"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1775
+msgid "The document name you selected is a folder."
+msgstr "Numele documentului pe care l-ați selectat este un dosar."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1811
+msgid "You may not have write permissions to the document."
+msgstr "Probabil nu aveți permisiuni de scriere pentru document."
+
+#. Translators:  Below are the strings displayed in the 'Date Modified'
+#. column of the list view.  The format of this string can vary depending
+#. on age of a file.  Please modify the format of the timestamp to match
+#. your locale.  For example, to display 24 hour time replace the '%-I'
+#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
+#: ../gsearchtool/src/gsearchtool-support.c:448
+msgid "today at %-I:%M %p"
+msgstr "azi la %-I:%M %p"
+
+#: ../gsearchtool/src/gsearchtool-support.c:450
+msgid "yesterday at %-I:%M %p"
+msgstr "ieri la %-I:%M %p"
+
+#: ../gsearchtool/src/gsearchtool-support.c:452
+#: ../gsearchtool/src/gsearchtool-support.c:454
+msgid "%A, %B %-d %Y at %-I:%M:%S %p"
+msgstr "%A, %B %-d %Y la %-I:%M:%S %p"
+
+#: ../gsearchtool/src/gsearchtool-support.c:641
+msgid "link (broken)"
+msgstr "legătura (ruptă)"
+
+#: ../gsearchtool/src/gsearchtool-support.c:645
+#, c-format
+msgid "link to %s"
+msgstr "legătură căte %s"
+
+#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
+#. Localizers:
+#. * Feel free to leave out the st, nd, rd and th suffix or
+#. * make some or all of them match.
+#. localizers: tag used to detect the first copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1257
+msgid " (copy)"
+msgstr " (copie)"
+
+#. localizers: tag used to detect the second copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1259
+msgid " (another copy)"
+msgstr " (altă copie)"
+
+#. localizers: tag used to detect the x11th copy of a file
+#. localizers: tag used to detect the x12th copy of a file
+#. localizers: tag used to detect the x13th copy of a file
+#. localizers: tag used to detect the xxth copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1262
+#: ../gsearchtool/src/gsearchtool-support.c:1264
+#: ../gsearchtool/src/gsearchtool-support.c:1266
+#: ../gsearchtool/src/gsearchtool-support.c:1276
+msgid "th copy)"
+msgstr "a copie)"
+
+#. localizers: tag used to detect the x1st copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1269
+msgid "st copy)"
+msgstr "a copie)"
+
+#. localizers: tag used to detect the x2nd copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1271
+msgid "nd copy)"
+msgstr "a copie)"
+
+#. localizers: tag used to detect the x3rd copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1273
+msgid "rd copy)"
+msgstr "a copie)"
+
+#. localizers: appended to first file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1290
+#, c-format
+msgid "%s (copy)%s"
+msgstr "%s (copie)%s"
+
+#. localizers: appended to second file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1292
+#, c-format
+msgid "%s (another copy)%s"
+msgstr "%s (altă copie)%s"
+
+#. localizers: appended to x11th file copy
+#. localizers: appended to x12th file copy
+#. localizers: appended to x13th file copy
+#. localizers: appended to xxth file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1295
+#: ../gsearchtool/src/gsearchtool-support.c:1297
+#: ../gsearchtool/src/gsearchtool-support.c:1299
+#: ../gsearchtool/src/gsearchtool-support.c:1308
+#, c-format
+msgid "%s (%dth copy)%s"
+msgstr "%s (a %d-a copie)%s"
+
+#. localizers: appended to x1st file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1302
+#, c-format
+msgid "%s (%dst copy)%s"
+msgstr "%s (a %d-a copie)%s"
+
+#. localizers: appended to x2nd file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1304
+#, c-format
+msgid "%s (%dnd copy)%s"
+msgstr "%s (a %d-a copie)%s"
+
+#. localizers: appended to x3rd file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1306
+#, c-format
+msgid "%s (%drd copy)%s"
+msgstr "%s (a %d-a copie)%s"
+
+#: ../gsearchtool/src/gsearchtool-support.c:1353
+msgid " (invalid Unicode)"
+msgstr " (Unicode nevalid)"
+
+#. localizers: opening parentheses to match the "th copy)" string
+#: ../gsearchtool/src/gsearchtool-support.c:1442
+msgid " ("
+msgstr " ("
+
+#. localizers: opening parentheses of the "th copy)" string
+#: ../gsearchtool/src/gsearchtool-support.c:1450
+#, c-format
+msgid " (%d"
+msgstr " (%d"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "Vizualizator fișier înregistrări"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "Vizualizează sau monitorizează fișierele cu înregistrările de sistem"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
+msgid "Log file to open up on startup"
+msgstr "Fișierul de înregistrări deschis la pornire"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
+msgid ""
+"Specifies the log file displayed at startup. The default is either "
+"/var/adm/messages or /var/log/messages, depending on your operating system."
+msgstr "Specifică fișierul de înregistrare deschis la pornire. Cel implicit este fie /var/adm/messages sau /var/log/messages, depinzând de sistemul de operare."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
+msgid "Size of the font used to display the log"
+msgstr "Mărimea fontului folosit pentru a afișa înregistrările"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr "Specifică mărimea fontului de lățime fixă folosit pentru a afișa înregistrarea în vizualizarea arborescentă principală. Implicit este cea configurată pentru fontul terminalului."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
+msgid "Height of the main window in pixels"
+msgstr "Înălțimea ferestrei principale în pixeli"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "Specifică înălțimea ferestrei principale în pixeli."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
+msgid "Width of the main window in pixels"
+msgstr "Lățimea ferestrei principale în pixeli"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "Specifică lățimea ferestrei principale în pixeli."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
+msgid "Log files to open up on startup"
+msgstr "Fișierele de înregistrări deschise la pornire"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr "Specifică o listă de fișiere de înregistrare deschise la pornire. O listă implicită este creată citind /etc/syslog.conf."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
+msgid "List of saved filters"
+msgstr "Listă de filtre salvate"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
+msgid "List of saved regexp filters"
+msgstr "Listă de filtre expresii regulare salvate"
+
+#: ../logview/data/logview-filter.ui.h:1
+#: ../mate-screenshot/data/mate-screenshot.ui.h:3
+msgid "_Name:"
+msgstr "_Nume:"
+
+#: ../logview/data/logview-filter.ui.h:2
+msgid "_Regular Expression:"
+msgstr "Expresie _regulară:"
+
+#: ../logview/data/logview-filter.ui.h:3
+msgid "Highlight"
+msgstr "Evidențiază"
+
+#: ../logview/data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "Ascunde"
+
+#: ../logview/data/logview-filter.ui.h:5
+msgid "Foreground:"
+msgstr "Prim-plan:"
+
+#: ../logview/data/logview-filter.ui.h:6
+msgid "Background:"
+msgstr "Fundal:"
+
+#: ../logview/data/logview-filter.ui.h:7
+msgid "Effect:"
+msgstr "Efecte:"
+
+#: ../logview/src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "Imposibil de deschis fișierul „%s”"
+
+#: ../logview/src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "Numele filtrului este gol!"
+
+#: ../logview/src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "Numele filtrului nu poate conține caracterul „:”"
+
+#: ../logview/src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "Expresia regulară este vidă!"
+
+#: ../logview/src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "Expresia regulară nu este validă: %s"
+
+#: ../logview/src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "Specificați fie culoarea de prim-plan sau de fundal!"
+
+#: ../logview/src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "Modificare filtru"
+
+#: ../logview/src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "Adaugă filtru nou"
+
+#: ../logview/src/logview-filter-manager.c:508
+msgid "Filters"
+msgstr "Filtre"
+
+#: ../logview/src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "_Caută:"
+
+#: ../logview/src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "Caută anterior"
+
+#: ../logview/src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "Caută apariția anterioară a textului căutat"
+
+#: ../logview/src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "Caută următor"
+
+#: ../logview/src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "Caută următoarea apariție a textului căutat"
+
+#: ../logview/src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "Șterge textul de căutare"
+
+#: ../logview/src/logview-log.c:598
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "Eroare la decomprimarea înregistrării arhivate cu gzip. Este posibil ca fișierul să fie corupt."
+
+#: ../logview/src/logview-log.c:645
+msgid "You don't have enough permissions to read the file."
+msgstr "Nu aveți suficiente permisiuni pentru a citi fișierul."
+
+#: ../logview/src/logview-log.c:660
+msgid "The file is not a regular file or is not a text file."
+msgstr "Acesta nu este un fișier normal sau nu este un fișier text."
+
+#: ../logview/src/logview-log.c:742
+msgid "This version of System Log does not support GZipped logs."
+msgstr "Această versiune a Înregistrări sistem nu suportă înregistrări arhivate cu gzip."
+
+#: ../logview/src/logview-loglist.c:316
+msgid "Loading..."
+msgstr "Se încarcă..."
+
+#: ../logview/src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "Afișează versiunea aplicației"
+
+#: ../logview/src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[FIȘIER_ÎNREGISTRARE...]"
+
+#: ../logview/src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - Afișare și monitorizare înregistrări sistem"
+
+#: ../logview/src/logview-main.c:100
+msgid "Log Viewer"
+msgstr "Vizualizator înregistrări sistem"
+
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:762
+msgid "System Log Viewer"
+msgstr "Vizualizator înregistări sistem"
+
+#: ../logview/src/logview-window.c:212
+#, c-format
+msgid "last update: %s"
+msgstr "ultima actualizare: %s"
+
+#: ../logview/src/logview-window.c:216
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d linii (%s) - %s"
+
+#: ../logview/src/logview-window.c:320
+msgid "Open Log"
+msgstr "Deschide înregistrare"
+
+#: ../logview/src/logview-window.c:359
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "S-a produs o eroare la afișarea ajutorului: %s"
+
+#: ../logview/src/logview-window.c:473
+msgid "Wrapped"
+msgstr "Înfășurat"
+
+#: ../logview/src/logview-window.c:488
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
+msgid "Not found"
+msgstr "Nu a fost găsit"
+
+#: ../logview/src/logview-window.c:767
+msgid "A system log viewer for MATE."
+msgstr "Un vizualizator al înregistrărilor de sistem pentru MATE."
+
+#: ../logview/src/logview-window.c:810
+#: ../mate-dictionary/src/gdict-window.c:1284
+msgid "_File"
+msgstr "_Fișier"
+
+#: ../logview/src/logview-window.c:813
+msgid "_Filters"
+msgstr "_Filtre"
+
+#: ../logview/src/logview-window.c:816
+msgid "_Open..."
+msgstr "_Deschide..."
+
+#: ../logview/src/logview-window.c:816
+msgid "Open a log from file"
+msgstr "Deschide o înregistrare din fișier"
+
+#: ../logview/src/logview-window.c:818
+msgid "_Close"
+msgstr "În_chide"
+
+#: ../logview/src/logview-window.c:818
+msgid "Close this log"
+msgstr "Închide această înregistrare"
+
+#: ../logview/src/logview-window.c:820
+msgid "_Quit"
+msgstr "În_chide"
+
+#: ../logview/src/logview-window.c:820
+msgid "Quit the log viewer"
+msgstr "Închide vizualizatorul de înregistrări"
+
+#: ../logview/src/logview-window.c:823
+msgid "_Copy"
+msgstr "_Copiază"
+
+#: ../logview/src/logview-window.c:823
+msgid "Copy the selection"
+msgstr "Copiază selecția"
+
+#: ../logview/src/logview-window.c:825
+#: ../mate-dictionary/src/gdict-window.c:1305
+msgid "Select _All"
+msgstr "Selecte_ază tot"
+
+#: ../logview/src/logview-window.c:825
+msgid "Select the entire log"
+msgstr "Selectează toată înregistrarea"
+
+#: ../logview/src/logview-window.c:827
+msgid "_Find..."
+msgstr "_Căutare..."
+
+#: ../logview/src/logview-window.c:827
+msgid "Find a word or phrase in the log"
+msgstr "Caută un cuvând sau o frază în înregistrare"
+
+#: ../logview/src/logview-window.c:830
+msgid "Bigger text size"
+msgstr "Text mai mare"
+
+#: ../logview/src/logview-window.c:832
+msgid "Smaller text size"
+msgstr "Text mai mic"
+
+#: ../logview/src/logview-window.c:834
+msgid "Normal text size"
+msgstr "Text de dimensiuni normale"
+
+#: ../logview/src/logview-window.c:837
+msgid "Manage Filters"
+msgstr "Administrare filtre"
+
+#: ../logview/src/logview-window.c:837
+msgid "Manage filters"
+msgstr "Administrare filtre"
+
+#: ../logview/src/logview-window.c:840
+msgid "Open the help contents for the log viewer"
+msgstr "Deschide ajutorul pentru vizualizatorul de înregistrări"
+
+#: ../logview/src/logview-window.c:842
+#: ../mate-dictionary/src/gdict-applet.c:1188
+#: ../mate-dictionary/src/gdict-window.c:1340
+msgid "_About"
+msgstr "_Despre"
+
+#: ../logview/src/logview-window.c:842
+msgid "Show the about dialog for the log viewer"
+msgstr "Afișează dialogul Despre pentru vizualizatorul de înregistrări"
+
+#: ../logview/src/logview-window.c:847
+msgid "_Statusbar"
+msgstr "Bară de _stare"
+
+#: ../logview/src/logview-window.c:847
+msgid "Show Status Bar"
+msgstr "Afișează bara de stare"
+
+#: ../logview/src/logview-window.c:849
+msgid "Side _Pane"
+msgstr "_Panou lateral"
+
+#: ../logview/src/logview-window.c:849
+msgid "Show Side Pane"
+msgstr "Afișează panoul lateral"
+
+#: ../logview/src/logview-window.c:851
+msgid "Show matches only"
+msgstr "Afișează doar potrivirile"
+
+#: ../logview/src/logview-window.c:851
+msgid "Only show lines that match one of the given filters"
+msgstr "Afișează doar liniile care se potrivesc unuia dintre filtrele specificate"
+
+#: ../logview/src/logview-window.c:983
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "Nu s-a putut citi de la „%s”"
+
+#: ../logview/src/logview-window.c:1413
+msgid "Version: "
+msgstr "Versiune: "
+
+#: ../logview/src/logview-window.c:1524
+msgid "Could not open the following files:"
+msgstr "Nu s-au putut deschide următoarele fișiere:"
 
 #: ../mate-dictionary/data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
@@ -609,7 +1871,23 @@ msgid ""
 "comes preconfigured with a list of Dict servers (RFC 2229), to which you can"
 " add your own sources, while you can select specific servers for a specific "
 "query. </p>"
+msgstr "<p> Dicționarul MATE vă permite să căutați cuvinte în dicționarele de pe Internet. Vine preconfigurat cu o listă de  servere DICT (RFC 2229), la care puteți adăuga propriile dumneavoastră surse, în timp ce puteți selecta servere specifice pentru o anumită căutare. </p>"
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:1
+msgid "Dictionary Applet Factory"
 msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:2
+msgid "Factory for the dictionary applet"
+msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:3
+msgid "Dictionary Look up"
+msgstr "Căutare în dicționar"
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:4
+msgid "Look up words in a dictionary"
+msgstr "Căutți cuvinte într-un dicționar"
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:1
 msgid "The default database to use"
@@ -648,10 +1926,6 @@ msgstr "Numele sursei de dicționare folosită"
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr "Numele sursei de dicționare folosită pentru a găsi definiții pentru cuvinte."
-
-#: ../mate-dictionary/data/spanish.desktop.in.h:1
-msgid "Spanish Dictionaries"
-msgstr "Dicționare spaniole"
 
 #: ../mate-dictionary/data/thai.desktop.in.h:1
 msgid "Longdo Thai-English Dictionaries"
@@ -697,7 +1971,7 @@ msgstr "Nici o conexiune către serverul dicționar de la „%s:%d”"
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1060
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
-msgstr "Căutarea a eșuat pentru numele gazdă „%s”: nici o resursă potrivită găsită"
+msgstr "Căutarea a eșuat pentru numele gazdă „%s”: nicio resursă potrivită găsită"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1091
 #, c-format
@@ -726,7 +2000,7 @@ msgstr "Nu s-a putut analiza răspunsul serverului dicționar\n: „%s”"
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1225
 #, c-format
 msgid "No definitions found for '%s'"
-msgstr "Nici o definiție găsită pentru „%s”"
+msgstr "Nicio definiție găsită pentru „%s”"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1240
 #, c-format
@@ -756,7 +2030,7 @@ msgstr "Nici o bază de date găsită pe serverul dicționar de la „%s”"
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1315
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
-msgstr "Nici o strategie găsită pe serverul dicționar de la „%s”"
+msgstr "Nicio strategie găsită pe serverul dicționar de la „%s”"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1748
 #, c-format
@@ -778,7 +2052,7 @@ msgstr "Limită de timp depășită pentru conexiunea la serverul de dicționare
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1894
 #, c-format
 msgid "No hostname defined for the dictionary server"
-msgstr "Nici un nume gazdă definit pentru serverul dicționar"
+msgstr "Niciun nume gazdă definit pentru serverul dicționar"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1930
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1945
@@ -818,13 +2092,6 @@ msgstr "Șterge lista bazelor de date disponibile"
 msgid "Error while matching"
 msgstr "Eroare în timpul potrivirii"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
-#: ../logview/logview-window.c:486
-msgid "Not found"
-msgstr "Nu a fost găsit"
-
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1327
 msgid "F_ind:"
 msgstr "Cau_tă:"
@@ -863,14 +2130,9 @@ msgstr "Nume fișier"
 msgid "The filename used by this dictionary source"
 msgstr "Numele de fișier folosit de acest dicționar sursă"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:246
-#: ../gsearchtool/gsearchtool.c:2403
-msgid "Name"
-msgstr "Nume"
-
 #: ../mate-dictionary/libgdict/gdict-source.c:247
 msgid "The display name of this dictionary source"
-msgstr ""
+msgstr "Numele afișat al acestei surse pentru dicționar"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:260
 msgid "Description"
@@ -923,7 +2185,7 @@ msgstr "Tip de transport „%d” nevalid"
 #: ../mate-dictionary/libgdict/gdict-source.c:441
 #, c-format
 msgid "No '%s' group found inside the dictionary source definition"
-msgstr "Nici un grup „%s” găsit în definiția dicționarului sursă"
+msgstr "Niciun grup „%s” găsit în definiția dicționarului sursă"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:457
 #: ../mate-dictionary/libgdict/gdict-source.c:481
@@ -1020,9 +2282,9 @@ msgid "Look up words in dictionaries"
 msgstr "Caută cuvinte în dicționare"
 
 #: ../mate-dictionary/src/gdict-about.c:78
-#: ../mate-dictionary/src/gdict-app.c:379
+#: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:604
-#: ../mate-dictionary/src/gdict-window.c:1968
+#: ../mate-dictionary/src/gdict-window.c:1974
 msgid "Dictionary"
 msgstr "Dicționar"
 
@@ -1059,55 +2321,43 @@ msgid ""
 "%s"
 msgstr "Eroare la căutarea definiției pentru „%s”:\n%s"
 
-#: ../mate-dictionary/src/gdict-app.c:337
-#: ../mate-dictionary/src/gdict-app.c:351
+#: ../mate-dictionary/src/gdict-app.c:333
+#: ../mate-dictionary/src/gdict-app.c:343
 msgid "Words to look up"
 msgstr "Cuvinte de căutat"
 
-#: ../mate-dictionary/src/gdict-app.c:337
-#: ../mate-dictionary/src/gdict-app.c:339
-#: ../mate-dictionary/src/gdict-app.c:351
+#: ../mate-dictionary/src/gdict-app.c:333
+#: ../mate-dictionary/src/gdict-app.c:335
+#: ../mate-dictionary/src/gdict-app.c:343
 msgid "word"
 msgstr "cuvânt"
 
-#: ../mate-dictionary/src/gdict-app.c:339
+#: ../mate-dictionary/src/gdict-app.c:335
 msgid "Words to match"
 msgstr "Cuvinte de potrivit"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:337
 msgid "Dictionary source to use"
 msgstr "Dicționar sursă de folosit"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:337
 msgid "source"
 msgstr "sursă"
 
-#: ../mate-dictionary/src/gdict-app.c:343
-msgid "Show available dictionary sources"
-msgstr "Afișează dicționarele sursă disponibile"
-
-#: ../mate-dictionary/src/gdict-app.c:345
+#: ../mate-dictionary/src/gdict-app.c:339
 msgid "Print result to the console"
 msgstr "Afișează rezultatul la consolă"
 
-#: ../mate-dictionary/src/gdict-app.c:347
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "Database to use"
 msgstr "Bază de date de folosit"
 
-#: ../mate-dictionary/src/gdict-app.c:347
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "db"
 msgstr "db"
 
-#: ../mate-dictionary/src/gdict-app.c:349
-msgid "Strategy to use"
-msgstr "Strategie de folosit"
-
-#: ../mate-dictionary/src/gdict-app.c:349
-msgid "strat"
-msgstr "strat"
-
 #. create the new option context
-#: ../mate-dictionary/src/gdict-app.c:361
+#: ../mate-dictionary/src/gdict-app.c:353
 msgid " - Look up words in dictionaries"
 msgstr " - Caută cuvinte în dicționare"
 
@@ -1184,64 +2434,59 @@ msgid "Dictionary entry"
 msgstr "Intrare dicționar"
 
 #: ../mate-dictionary/src/gdict-applet.c:715
-#: ../mate-dictionary/src/gdict-window.c:1097
+#: ../mate-dictionary/src/gdict-window.c:1103
 msgid "Dictionary Preferences"
 msgstr "Preferințe dicționar"
 
 #: ../mate-dictionary/src/gdict-applet.c:739
 #: ../mate-dictionary/src/gdict-pref-dialog.c:495
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
-#: ../mate-dictionary/src/gdict-window.c:1244
+#: ../mate-dictionary/src/gdict-window.c:1250
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "A intervenit o eroare la afișarea ajutorului"
 
-#: ../mate-dictionary/src/gdict-applet.c:893
+#: ../mate-dictionary/src/gdict-applet.c:878
 #: ../mate-dictionary/src/gdict-window.c:519
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "Nici un dicționar sursă disponibil cu numele „%s”"
 
-#: ../mate-dictionary/src/gdict-applet.c:897
+#: ../mate-dictionary/src/gdict-applet.c:882
 #: ../mate-dictionary/src/gdict-window.c:523
 msgid "Unable to find dictionary source"
 msgstr "Nu s-a putut găsi dicționarul sursă"
 
-#: ../mate-dictionary/src/gdict-applet.c:913
+#: ../mate-dictionary/src/gdict-applet.c:898
 #: ../mate-dictionary/src/gdict-window.c:539
 #, c-format
 msgid "No context available for source '%s'"
-msgstr "Nici un context disponibil pentru sursa „%s”"
+msgstr "Niciun context disponibil pentru sursa „%s”"
 
-#: ../mate-dictionary/src/gdict-applet.c:917
+#: ../mate-dictionary/src/gdict-applet.c:902
 #: ../mate-dictionary/src/gdict-window.c:543
 msgid "Unable to create a context"
 msgstr "Nu s-a putut crea un context"
 
-#: ../mate-dictionary/src/gdict-applet.c:1198
+#: ../mate-dictionary/src/gdict-applet.c:1170
 msgid "_Look Up Selected Text"
 msgstr "_Caută text selectat"
 
-#: ../mate-dictionary/src/gdict-applet.c:1201
+#: ../mate-dictionary/src/gdict-applet.c:1173
 msgid "Cl_ear"
 msgstr "_Curăță"
 
-#: ../mate-dictionary/src/gdict-applet.c:1204
+#: ../mate-dictionary/src/gdict-applet.c:1176
 msgid "_Print"
 msgstr "Ti_părește"
 
-#: ../mate-dictionary/src/gdict-applet.c:1207
+#: ../mate-dictionary/src/gdict-applet.c:1179
 msgid "_Save"
 msgstr "_Salvează"
 
-#: ../mate-dictionary/src/gdict-applet.c:1210
+#: ../mate-dictionary/src/gdict-applet.c:1182
 msgid "Preferences"
 msgstr "Preferințe"
-
-#: ../mate-dictionary/src/gdict-applet.c:1216
-#: ../mate-dictionary/src/gdict-window.c:1334 ../logview/logview-window.c:840
-msgid "_About"
-msgstr "_Despre"
 
 #: ../mate-dictionary/src/gdict-common.c:80
 #, c-format
@@ -1287,7 +2532,7 @@ msgstr "Șterge dicționarul sursă selectat"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:654
 msgid "Edit the currently selected dictionary source"
-msgstr ""
+msgstr "Editare sursă pentru dicționar selectată"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:662
 msgid "Set the font used for printing the definitions"
@@ -1317,7 +2562,7 @@ msgstr "Se caută după „%s”..."
 #: ../mate-dictionary/src/gdict-window.c:346
 #: ../mate-dictionary/src/gdict-window.c:403
 msgid "No definitions found"
-msgstr "Nici o definiție găsită"
+msgstr "Nicio definiție găsită"
 
 #: ../mate-dictionary/src/gdict-window.c:348
 #, c-format
@@ -1332,179 +2577,171 @@ msgstr[2] "%d de definiții găsite"
 msgid "%s - Dictionary"
 msgstr "%s - Dicționar"
 
-#: ../mate-dictionary/src/gdict-window.c:1278 ../logview/logview-window.c:808
-msgid "_File"
-msgstr "_Fișier"
-
-#: ../mate-dictionary/src/gdict-window.c:1281
+#: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_Go"
 msgstr "_Du-te la"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1285
+#: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_New"
 msgstr "_Nou"
 
-#: ../mate-dictionary/src/gdict-window.c:1286
+#: ../mate-dictionary/src/gdict-window.c:1292
 msgid "New look up"
 msgstr "Căutare nouă"
 
-#: ../mate-dictionary/src/gdict-window.c:1287
+#: ../mate-dictionary/src/gdict-window.c:1293
 msgid "_Save a Copy..."
 msgstr "_Salvează o copie..."
 
-#: ../mate-dictionary/src/gdict-window.c:1289
+#: ../mate-dictionary/src/gdict-window.c:1295
 msgid "P_review..."
 msgstr "P_revizualizare..."
 
-#: ../mate-dictionary/src/gdict-window.c:1290
+#: ../mate-dictionary/src/gdict-window.c:1296
 msgid "Preview this document"
 msgstr "Previzualizează acest document"
 
-#: ../mate-dictionary/src/gdict-window.c:1291
+#: ../mate-dictionary/src/gdict-window.c:1297
 msgid "_Print..."
 msgstr "Ti_părește..."
 
-#: ../mate-dictionary/src/gdict-window.c:1292
+#: ../mate-dictionary/src/gdict-window.c:1298
 msgid "Print this document"
 msgstr "Tipărește acest document"
 
-#: ../mate-dictionary/src/gdict-window.c:1299 ../logview/logview-window.c:823
-msgid "Select _All"
-msgstr "Selecte_ază tot"
-
-#: ../mate-dictionary/src/gdict-window.c:1302
+#: ../mate-dictionary/src/gdict-window.c:1308
 msgid "Find a word or phrase in the document"
 msgstr "Caută un cuvânt sau o frază în acest document"
 
-#: ../mate-dictionary/src/gdict-window.c:1304
+#: ../mate-dictionary/src/gdict-window.c:1310
 msgid "Find Ne_xt"
 msgstr "Caută _următor"
 
-#: ../mate-dictionary/src/gdict-window.c:1306
+#: ../mate-dictionary/src/gdict-window.c:1312
 msgid "Find Pre_vious"
 msgstr "Caută p_recedent"
 
-#: ../mate-dictionary/src/gdict-window.c:1308
+#: ../mate-dictionary/src/gdict-window.c:1314
 msgid "_Preferences"
 msgstr "_Preferințe"
 
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1312
+#: ../mate-dictionary/src/gdict-window.c:1318
 msgid "_Previous Definition"
 msgstr "Definiție _precedentă"
 
-#: ../mate-dictionary/src/gdict-window.c:1313
+#: ../mate-dictionary/src/gdict-window.c:1319
 msgid "Go to the previous definition"
 msgstr "Du-te la definiția precedentă"
 
-#: ../mate-dictionary/src/gdict-window.c:1314
+#: ../mate-dictionary/src/gdict-window.c:1320
 msgid "_Next Definition"
 msgstr "Definiție _următoare"
 
-#: ../mate-dictionary/src/gdict-window.c:1315
+#: ../mate-dictionary/src/gdict-window.c:1321
 msgid "Go to the next definition"
 msgstr "Du-te la următoarea definiție"
 
-#: ../mate-dictionary/src/gdict-window.c:1316
+#: ../mate-dictionary/src/gdict-window.c:1322
 msgid "_First Definition"
 msgstr "Pri_ma definiție"
 
-#: ../mate-dictionary/src/gdict-window.c:1317
+#: ../mate-dictionary/src/gdict-window.c:1323
 msgid "Go to the first definition"
 msgstr "Du-te la prima definiție"
 
-#: ../mate-dictionary/src/gdict-window.c:1318
+#: ../mate-dictionary/src/gdict-window.c:1324
 msgid "_Last Definition"
 msgstr "U_ltima definiție"
 
-#: ../mate-dictionary/src/gdict-window.c:1319
+#: ../mate-dictionary/src/gdict-window.c:1325
 msgid "Go to the last definition"
 msgstr "Du-te la ultima definiție"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1322
+#: ../mate-dictionary/src/gdict-window.c:1328
 msgid "Similar _Words"
 msgstr "Cu_vinte similare"
 
-#: ../mate-dictionary/src/gdict-window.c:1324
+#: ../mate-dictionary/src/gdict-window.c:1330
 msgid "Dictionary Sources"
 msgstr "Surse dicționar"
 
-#: ../mate-dictionary/src/gdict-window.c:1326
+#: ../mate-dictionary/src/gdict-window.c:1332
 msgid "Available _Databases"
 msgstr "Baze de _date disponibile"
 
-#: ../mate-dictionary/src/gdict-window.c:1328
+#: ../mate-dictionary/src/gdict-window.c:1334
 msgid "Available St_rategies"
 msgstr "St_rategii disponibile"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1345
+#: ../mate-dictionary/src/gdict-window.c:1351
 msgid "_Sidebar"
 msgstr "Bara _laterală"
 
-#: ../mate-dictionary/src/gdict-window.c:1347
+#: ../mate-dictionary/src/gdict-window.c:1353
 msgid "S_tatusbar"
 msgstr "Bară de s_tare"
 
-#: ../mate-dictionary/src/gdict-window.c:1412
+#: ../mate-dictionary/src/gdict-window.c:1418
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "Sursă „%s” dicționar selectată"
 
-#: ../mate-dictionary/src/gdict-window.c:1433
+#: ../mate-dictionary/src/gdict-window.c:1439
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "Strategia „%s” selectată"
 
-#: ../mate-dictionary/src/gdict-window.c:1453
+#: ../mate-dictionary/src/gdict-window.c:1459
 #, c-format
 msgid "Database `%s' selected"
 msgstr "Baza de date „%s” selectată"
 
-#: ../mate-dictionary/src/gdict-window.c:1473
+#: ../mate-dictionary/src/gdict-window.c:1479
 #, c-format
 msgid "Word `%s' selected"
 msgstr "Cuvântul „%s” selectat"
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1498
+#: ../mate-dictionary/src/gdict-window.c:1504
 msgid "Double-click on the word to look up"
-msgstr "Dublu-clic pe cuvântul de căutat"
+msgstr "Clic dublu pe cuvântul de căutat"
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1504
+#: ../mate-dictionary/src/gdict-window.c:1510
 msgid "Double-click on the matching strategy to use"
-msgstr "Dublu-clic pe strategia ce va fi folosită"
+msgstr "Clic dublu pe strategia ce va fi folosită"
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1509
+#: ../mate-dictionary/src/gdict-window.c:1515
 msgid "Double-click on the source to use"
-msgstr "Dublu clic pe sursa folosită"
+msgstr "Clic dublu pe sursa folosită"
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1518
+#: ../mate-dictionary/src/gdict-window.c:1524
 msgid "Double-click on the database to use"
-msgstr "Dublu-clic pe baza de date ce va fi folosită"
+msgstr "Clic dublu pe baza de date ce va fi folosită"
 
-#: ../mate-dictionary/src/gdict-window.c:1770
+#: ../mate-dictionary/src/gdict-window.c:1776
 msgid "Look _up:"
 msgstr "Ca_ută:"
 
-#: ../mate-dictionary/src/gdict-window.c:1849
+#: ../mate-dictionary/src/gdict-window.c:1855
 msgid "Similar words"
 msgstr "Cuvinte similare"
 
-#: ../mate-dictionary/src/gdict-window.c:1862
+#: ../mate-dictionary/src/gdict-window.c:1868
 msgid "Available dictionaries"
 msgstr "Dicționare disponibile"
 
-#: ../mate-dictionary/src/gdict-window.c:1880
+#: ../mate-dictionary/src/gdict-window.c:1886
 msgid "Available strategies"
 msgstr "Strategii disponibile"
 
-#: ../mate-dictionary/src/gdict-window.c:1896
+#: ../mate-dictionary/src/gdict-window.c:1902
 msgid "Dictionary sources"
 msgstr "Surse dicționar"
 
@@ -1549,80 +2786,154 @@ msgstr "Dicționare"
 msgid "Strategies"
 msgstr "Strategii"
 
-#: ../mate-screenshot/mate-screenshot.c:133
+#: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:1
+msgid "A screenshot utility for MATE Desktop"
+msgstr "O unealtă pentru capturi de ecran pentru desktopul MATE"
+
+#: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Screenshot is a simple utility that lets you capture screenshots of"
+" your desktop or of application windows. You can select to copy them to the "
+"system clipboard or save them in Portable Network Graphics (.png) image "
+"format. </p>"
+msgstr "<p> Captură de ecran MATE este un utilitar simplu care vă permite să capturați imagini ale desktop-ului sau ale ferestrelor aplicațiilor. Puteți alege să le copiați în memoria clipboard a sistemului sau să le salvați în formatul Portable Network Graphics (.png). </p>"
+
+#: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
+#: ../mate-screenshot/src/mate-screenshot.c:516
+#: ../mate-screenshot/src/mate-screenshot.c:524
+msgid "Take Screenshot"
+msgstr "Salvează o captură de ecran"
+
+#: ../mate-screenshot/data/mate-screenshot.desktop.in.h:2
+msgid "Save images of your desktop or individual windows"
+msgstr "Salvează imagini ale spațiului de lucru sau ale unor ferestre individuale"
+
+#: ../mate-screenshot/data/mate-screenshot.ui.h:1
+msgid "Save Screenshot"
+msgstr "Salvează captura de ecran"
+
+#: ../mate-screenshot/data/mate-screenshot.ui.h:2
+msgid "C_opy to Clipboard"
+msgstr "C_opiază în clipboard"
+
+#: ../mate-screenshot/data/mate-screenshot.ui.h:4
+msgid "Save in _folder:"
+msgstr "Salvează în _dosar:"
+
+#: ../mate-screenshot/data/mate-screenshot.ui.h:5
+msgid "*"
+msgstr "*"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:1
+msgid "Screenshot delay"
+msgstr "Întârziere captură ecran"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:2
+msgid "The number of seconds to wait before taking the screenshot."
+msgstr "Numărul de secunde de așteptat înainde de a captura ecranul."
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:3
+msgid "Screenshot directory"
+msgstr "Dosar pentru capturi"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:4
+msgid "The directory the last screenshot was saved in."
+msgstr "Dosarul în care s-a salvat ultima captură de ecran realizată."
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:5
+msgid "Include Border"
+msgstr "Include contur"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:6
+msgid "Include the window manager border along with the screenshot"
+msgstr "Include conturul administratorului de ferestre în captura de ecran"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:7
+msgid "Include Pointer"
+msgstr "Include cursor"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:8
+msgid "Include the pointer in the screenshot"
+msgstr "Include cursorul în captura de ecran"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:9
+msgid "Border Effect"
+msgstr "Efect contur"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:10
+msgid ""
+"Effect to add to the outside of a border. Possible values are \"shadow\", "
+"\"none\", and \"border\"."
+msgstr "Efect adăugat conturului. Valori posibile sunt „shadow”, „none” și „border”."
+
+#: ../mate-screenshot/src/mate-screenshot.c:133
 msgid "Error loading the help page"
 msgstr "Eroare la încărcarea paginii de ajutor"
 
-#: ../mate-screenshot/mate-screenshot.c:245
+#: ../mate-screenshot/src/mate-screenshot.c:245
 msgid "None"
 msgstr "Nimic"
 
-#: ../mate-screenshot/mate-screenshot.c:246
+#: ../mate-screenshot/src/mate-screenshot.c:246
 msgid "Drop shadow"
 msgstr "Umbră"
 
-#: ../mate-screenshot/mate-screenshot.c:247
+#: ../mate-screenshot/src/mate-screenshot.c:247
 msgid "Border"
 msgstr "Contur"
 
 #. * Include pointer *
-#: ../mate-screenshot/mate-screenshot.c:351
+#: ../mate-screenshot/src/mate-screenshot.c:351
 msgid "Include _pointer"
 msgstr "_Include cursor"
 
 #. * Include window border *
-#: ../mate-screenshot/mate-screenshot.c:360
+#: ../mate-screenshot/src/mate-screenshot.c:360
 msgid "Include the window _border"
 msgstr "Include conturul fere_strei"
 
-#: ../mate-screenshot/mate-screenshot.c:375
+#: ../mate-screenshot/src/mate-screenshot.c:375
 msgid "Apply _effect:"
 msgstr "Aplică _efect:"
 
-#: ../mate-screenshot/mate-screenshot.c:437
+#: ../mate-screenshot/src/mate-screenshot.c:437
 msgid "Grab the whole _desktop"
 msgstr "Capturează tot _desktopul"
 
-#: ../mate-screenshot/mate-screenshot.c:449
+#: ../mate-screenshot/src/mate-screenshot.c:449
 msgid "Grab the current _window"
 msgstr "Capturează fereas_tra curentă"
 
-#: ../mate-screenshot/mate-screenshot.c:461
+#: ../mate-screenshot/src/mate-screenshot.c:461
 msgid "Select _area to grab"
 msgstr "Alegeți _zona de captură"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/mate-screenshot.c:478
+#: ../mate-screenshot/src/mate-screenshot.c:478
 msgid "Grab _after a delay of"
 msgstr "Capturează după o întârziere _de"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/mate-screenshot.c:498
-#: ../mate-screenshot/mate-screenshot.c:1273
+#: ../mate-screenshot/src/mate-screenshot.c:498
+#: ../mate-screenshot/src/mate-screenshot.c:1263
 msgid "seconds"
 msgstr "secunde"
 
-#: ../mate-screenshot/mate-screenshot.c:516
-#: ../mate-screenshot/mate-screenshot.c:524
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:1
-msgid "Take Screenshot"
-msgstr "Salvează o captură de ecran"
-
-#: ../mate-screenshot/mate-screenshot.c:525
+#: ../mate-screenshot/src/mate-screenshot.c:525
 msgid "Effects"
 msgstr "Efecte"
 
-#: ../mate-screenshot/mate-screenshot.c:530
+#: ../mate-screenshot/src/mate-screenshot.c:530
 msgid "Take _Screenshot"
 msgstr "_Captură ecran"
 
-#: ../mate-screenshot/mate-screenshot.c:650
+#: ../mate-screenshot/src/mate-screenshot.c:650
 msgid "Error while saving screenshot"
 msgstr "Eroare la salvarea capturii de ecran"
 
-#: ../mate-screenshot/mate-screenshot.c:653
+#: ../mate-screenshot/src/mate-screenshot.c:653
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -1630,1437 +2941,132 @@ msgid ""
 " Please choose another location and retry."
 msgstr "Nu s-a putut salva captura de ecran în %s.\nEroarea a fost %s.\nAlegeți un alt loc și reîncercați."
 
-#: ../mate-screenshot/mate-screenshot.c:785
+#: ../mate-screenshot/src/mate-screenshot.c:785
 msgid "Screenshot taken"
 msgstr "Captură reușită de ecran"
 
-#: ../mate-screenshot/mate-screenshot.c:840
+#: ../mate-screenshot/src/mate-screenshot.c:840
 msgid "Unable to take a screenshot of the current window"
 msgstr "Nu s-a putut obține o captură a ecranului curent"
 
-#: ../mate-screenshot/mate-screenshot.c:893
-#, c-format
-msgid "Screenshot-%s.png"
-msgstr "Captură-ecran-%s.png"
-
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if a specific window is
-#. * taken
-#: ../mate-screenshot/mate-screenshot.c:900
-#, c-format
-msgid "Screenshot-%s-%d.png"
-msgstr "Captură-ecran-%s-%d.png"
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format (eg, like
+#. * in France: 20:10).
+#: ../mate-screenshot/src/mate-screenshot.c:893
+msgid "%Y-%m-%d %H:%M:%S"
+msgstr "%d-%m-%Y %H:%M:%S"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/mate-screenshot.c:910
-#: ../mate-screenshot/screenshot-dialog.c:369
-#: ../mate-screenshot/screenshot-save.c:196
-msgid "Screenshot.png"
-msgstr "Captură-ecran.png"
+#: ../mate-screenshot/src/mate-screenshot.c:900
+#, c-format
+msgid "Screenshot at %s.png"
+msgstr "Captură de ecran la %s.png"
 
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/mate-screenshot.c:917
+#: ../mate-screenshot/src/mate-screenshot.c:907
 #, c-format
-msgid "Screenshot-%d.png"
-msgstr "Captură-ecran-%d.png"
+msgid "Screenshot at %s - %d.png"
+msgstr "Captură de ecran la %s - %d.png"
 
-#: ../mate-screenshot/mate-screenshot.c:1269
+#: ../mate-screenshot/src/mate-screenshot.c:1259
 msgid "Grab a window instead of the entire screen"
 msgstr "Capturează o fereastră în locul întregului ecran"
 
-#: ../mate-screenshot/mate-screenshot.c:1270
+#: ../mate-screenshot/src/mate-screenshot.c:1260
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Capturează o zonă din ecran în locul întregului ecran"
 
-#: ../mate-screenshot/mate-screenshot.c:1271
+#: ../mate-screenshot/src/mate-screenshot.c:1261
 msgid "Include the window border with the screenshot"
 msgstr "Include și conturul ferestrei în captura de ecran"
 
-#: ../mate-screenshot/mate-screenshot.c:1272
+#: ../mate-screenshot/src/mate-screenshot.c:1262
 msgid "Remove the window border from the screenshot"
 msgstr "Șterge conturul ferestrei din captura de ecran"
 
-#: ../mate-screenshot/mate-screenshot.c:1273
+#: ../mate-screenshot/src/mate-screenshot.c:1263
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Realizează captura de ecran după întârzierea specificată (în secunde)"
 
-#: ../mate-screenshot/mate-screenshot.c:1274
+#: ../mate-screenshot/src/mate-screenshot.c:1264
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Efect de adăugat pe contur (umbră, contur sau nimic)"
 
-#: ../mate-screenshot/mate-screenshot.c:1274
+#: ../mate-screenshot/src/mate-screenshot.c:1264
 msgid "effect"
 msgstr "efect"
 
-#: ../mate-screenshot/mate-screenshot.c:1275
+#: ../mate-screenshot/src/mate-screenshot.c:1265
 msgid "Interactively set options"
 msgstr "Definire opțiuni interactiv"
 
-#: ../mate-screenshot/mate-screenshot.c:1284
+#: ../mate-screenshot/src/mate-screenshot.c:1274
 msgid "Take a picture of the screen"
 msgstr "Realizează o imagine a ecranului"
 
-#: ../mate-screenshot/mate-screenshot.c:1302
+#: ../mate-screenshot/src/mate-screenshot.c:1292
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"
 msgstr "Opțiuni în conflict: --window și --area nu pot fi folosite simulan.\n"
 
-#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:1
-msgid "A screenshot utility for MATE Desktop"
-msgstr "O unealtă pentru capturi de ecran pentru desktopul MATE"
-
-#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:2
-msgid ""
-"<p> MATE Screenshot is a simple utility that lets you capture screenshots of"
-" your desktop or of application windows. You can select to copy them to the "
-"system clipboard or save them in Portable Network Graphics (.png) image "
-"format. </p>"
-msgstr ""
-
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:2
-msgid "Save images of your desktop or individual windows"
-msgstr "Salvează imagini ale spațiului de lucru sau ale unor ferestre individuale"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:1
-msgid "Save Screenshot"
-msgstr "Salvează captura de ecran"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:2
-msgid "C_opy to Clipboard"
-msgstr "C_opiază în clipboard"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:3
-#: ../logview/data/logview-filter.ui.h:1
-msgid "_Name:"
-msgstr "_Nume:"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:4
-msgid "Save in _folder:"
-msgstr "Salvează în _dosar:"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:5
-msgid "*"
-msgstr "*"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:1
-msgid "Screenshot delay"
-msgstr "Întârziere captură ecran"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:2
-msgid "The number of seconds to wait before taking the screenshot."
-msgstr "Numărul de secunde de așteptat înainde de a captura ecranul."
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:3
-msgid "Screenshot directory"
-msgstr "Dosar pentru capturi"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:4
-msgid "The directory the last screenshot was saved in."
-msgstr "Dosarul în care s-a salvat ultima captură de ecran realizată."
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:5
-msgid "Include Border"
-msgstr "Include contur"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:6
-msgid "Include the window manager border along with the screenshot"
-msgstr "Include conturul administratorului de ferestre în captura de ecran"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:7
-msgid "Include Pointer"
-msgstr "Include cursor"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:8
-msgid "Include the pointer in the screenshot"
-msgstr "Include cursorul în captura de ecran"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:9
-msgid "Border Effect"
-msgstr "Efect contur"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:10
-msgid ""
-"Effect to add to the outside of a border. Possible values are \"shadow\", "
-"\"none\", and \"border\"."
-msgstr "Efect adăugat conturului. Valori posibile sunt „shadow”, „none” și „border”."
-
-#: ../mate-screenshot/screenshot-dialog.c:246
+#: ../mate-screenshot/src/screenshot-dialog.c:246
 #, c-format
 msgid ""
 "Error loading UI definition file for the screenshot program: \n"
 "%s\n"
 "\n"
 "Please check your installation of mate-utils."
-msgstr ""
+msgstr "Erroare la încărcarea fișierului de definirea a interfeței pentru programul de captură de ecran: \n%s\n\nVerificați instalarea mate-utils."
 
-#: ../mate-screenshot/screenshot-dialog.c:269
+#: ../mate-screenshot/src/screenshot-dialog.c:269
 msgid "Select a folder"
 msgstr "Alegeți un dosar"
 
-#: ../mate-screenshot/screenshot-save.c:57
+#: ../mate-screenshot/src/screenshot-dialog.c:369
+#: ../mate-screenshot/src/screenshot-save.c:196
+msgid "Screenshot.png"
+msgstr "Captură-ecran.png"
+
+#: ../mate-screenshot/src/screenshot-save.c:57
 #, c-format
 msgid ""
 "Unable to clear the temporary folder:\n"
 "%s"
 msgstr "Nu s-a putut șterge dosarul temporar:\n%s"
 
-#: ../mate-screenshot/screenshot-save.c:95
+#: ../mate-screenshot/src/screenshot-save.c:95
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
 msgstr "Procesul copil pentru salvare s-a terminat în mod neașteptat. Nu se mai poate salva captura de ecran pe disc."
 
-#: ../mate-screenshot/screenshot-save.c:223
+#: ../mate-screenshot/src/screenshot-save.c:223
 msgid "Unknown error saving screenshot to disk"
 msgstr "Eroare necunoscută la salvarea capturii de ecran pe disc"
 
 #. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-#: ../mate-screenshot/screenshot-utils.c:998
+#: ../mate-screenshot/src/screenshot-utils.c:998
 msgid "Untitled Window"
 msgstr "Fereastră fără titlu"
 
-#: ../mate-screenshot/screenshot-xfer.c:72
+#: ../mate-screenshot/src/screenshot-xfer.c:72
 msgid "File already exists"
 msgstr "Fișierul deja există"
 
-#: ../mate-screenshot/screenshot-xfer.c:75
+#: ../mate-screenshot/src/screenshot-xfer.c:75
 #, c-format
 msgid "The file \"%s\" already exists. Would you like to replace it?"
 msgstr "Fișierul „%s” există deja. Doriți să îl înlocuiți?"
 
-#: ../mate-screenshot/screenshot-xfer.c:82
-#: ../gsearchtool/gsearchtool-callbacks.c:1726
-msgid "_Replace"
-msgstr "În_locuiește"
-
-#: ../mate-screenshot/screenshot-xfer.c:120
+#: ../mate-screenshot/src/screenshot-xfer.c:120
 msgid "Saving file..."
 msgstr "Se salvează fișierul..."
 
-#: ../mate-screenshot/screenshot-xfer.c:290
+#: ../mate-screenshot/src/screenshot-xfer.c:290
 msgid "Can't access source file"
 msgstr "Nu s-a putut accesa sursa fișierului"
-
-#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
-msgid "A file searching tool for MATE Desktop"
-msgstr "O unealtă pentru căutare de fișiere pentru desktopul MATE"
-
-#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
-msgid ""
-"<p> MATE Search Tool is a simple but powerful utility that allows you to "
-"search for files and folders on any mounted file system. Its interface gives"
-" you instant access to a wide variety of parameters for each search, such as"
-" text contained within a file, ownership, date of modification, file size, "
-"folder exclusion, etc.. </p>"
-msgstr ""
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:1
-msgid "MATE Search Tool"
-msgstr "Unealtă de căutare MATE"
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:2
-msgid "Locate documents and folders on this computer by name or content"
-msgstr "Găsiți documente și dosare pe acest calculator după nume sau conținut"
-
-#: ../gsearchtool/gsearchtool.c:82
-msgid "Contains the _text"
-msgstr "Conține _textul"
-
-#: ../gsearchtool/gsearchtool.c:84
-msgid "_Date modified less than"
-msgstr "_Data modificării mai mică decât"
-
-#: ../gsearchtool/gsearchtool.c:84 ../gsearchtool/gsearchtool.c:85
-msgid "days"
-msgstr "zile"
-
-#: ../gsearchtool/gsearchtool.c:85
-msgid "Date modified more than"
-msgstr "Data modificării mai _mare decât"
-
-#: ../gsearchtool/gsearchtool.c:87
-msgid "S_ize at least"
-msgstr "Mă_rimea de cel puțin"
-
-#: ../gsearchtool/gsearchtool.c:87 ../gsearchtool/gsearchtool.c:88
-msgid "kilobytes"
-msgstr "kiloocteți"
-
-#: ../gsearchtool/gsearchtool.c:88
-msgid "Si_ze at most"
-msgstr "Mărim_ea cel mult"
-
-#: ../gsearchtool/gsearchtool.c:89
-msgid "File is empty"
-msgstr "Fișierul este gol"
-
-#: ../gsearchtool/gsearchtool.c:91
-msgid "Owned by _user"
-msgstr "Deținut de _utilizator"
-
-#: ../gsearchtool/gsearchtool.c:92
-msgid "Owned by _group"
-msgstr "Deținut de _grup"
-
-#: ../gsearchtool/gsearchtool.c:93
-msgid "Owner is unrecognized"
-msgstr "Proprietarul nu a fost recunoscut"
-
-#: ../gsearchtool/gsearchtool.c:95
-msgid "Na_me does not contain"
-msgstr "N_umele nu conține"
-
-#: ../gsearchtool/gsearchtool.c:96
-msgid "Name matches regular e_xpression"
-msgstr "Fișierul corespunde e_xpresiei regulare"
-
-#: ../gsearchtool/gsearchtool.c:98
-msgid "Show hidden and backup files"
-msgstr "Afișează fișierele ascunse și de backup"
-
-#: ../gsearchtool/gsearchtool.c:99
-msgid "Follow symbolic links"
-msgstr "Urmează legăturile simbolice"
-
-#: ../gsearchtool/gsearchtool.c:100
-msgid "Exclude other filesystems"
-msgstr "Exclude alte sisteme de fișiere"
-
-#: ../gsearchtool/gsearchtool.c:158
-msgid "Show version of the application"
-msgstr "Afișează versiunea aplicației"
-
-#: ../gsearchtool/gsearchtool.c:159 ../gsearchtool/gsearchtool.c:164
-#: ../gsearchtool/gsearchtool.c:173
-msgid "STRING"
-msgstr "ȘIR"
-
-#: ../gsearchtool/gsearchtool.c:160
-msgid "PATH"
-msgstr "CALE"
-
-#: ../gsearchtool/gsearchtool.c:161
-msgid "VALUE"
-msgstr "VALOARE"
-
-#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
-msgid "DAYS"
-msgstr "ZILE"
-
-#: ../gsearchtool/gsearchtool.c:167 ../gsearchtool/gsearchtool.c:168
-msgid "KILOBYTES"
-msgstr "KILOOCTEȚI"
-
-#: ../gsearchtool/gsearchtool.c:170
-msgid "USER"
-msgstr "UTILZATOR"
-
-#: ../gsearchtool/gsearchtool.c:171
-msgid "GROUP"
-msgstr "GRUP"
-
-#: ../gsearchtool/gsearchtool.c:174
-msgid "PATTERN"
-msgstr "ȘABLON"
-
-#: ../gsearchtool/gsearchtool.c:385
-msgid "A locate database has probably not been created."
-msgstr "O bază de date „locate” nu a fost probabil creată."
-
-#: ../gsearchtool/gsearchtool.c:487
-#, c-format
-msgid "Character set conversion failed for \"%s\""
-msgstr "Conversia setului de caractere a eșuat pentru „%s”"
-
-#: ../gsearchtool/gsearchtool.c:511
-msgid "Searching..."
-msgstr "Se caută..."
-
-#: ../gsearchtool/gsearchtool.c:511 ../gsearchtool/gsearchtool.c:1031
-#: ../gsearchtool/gsearchtool.c:3030
-msgid "Search for Files"
-msgstr "Caută fișiere"
-
-#: ../gsearchtool/gsearchtool.c:977 ../gsearchtool/gsearchtool.c:1006
-msgid "No files found"
-msgstr "Nici un fișier găsit"
-
-#: ../gsearchtool/gsearchtool.c:999
-msgid "(stopped)"
-msgstr "(oprit)"
-
-#: ../gsearchtool/gsearchtool.c:1005
-msgid "No Files Found"
-msgstr "Nu s-a găsit nici un fișier."
-
-#: ../gsearchtool/gsearchtool.c:1010
-#, c-format
-msgid "%'d File Found"
-msgid_plural "%'d Files Found"
-msgstr[0] "%d fișier găsit"
-msgstr[1] "%d fișiere găsite"
-msgstr[2] "%d de fișiere găsite"
-
-#: ../gsearchtool/gsearchtool.c:1014 ../gsearchtool/gsearchtool.c:1052
-#, c-format
-msgid "%'d file found"
-msgid_plural "%'d files found"
-msgstr[0] "%d fișier găsit"
-msgstr[1] "%d fișiere găsite"
-msgstr[2] "%d de fișiere găsite"
-
-#: ../gsearchtool/gsearchtool.c:1143
-msgid "Entry changed called for a non entry option!"
-msgstr "Intrarea s-a schimbat pentru o opțiune non-intrare!"
-
-#: ../gsearchtool/gsearchtool.c:1308
-msgid "Set the text of \"Name contains\" search option"
-msgstr "Definește textul pentru opțiunea de căutare „Numele conține”"
-
-#: ../gsearchtool/gsearchtool.c:1309
-msgid "Set the text of \"Look in folder\" search option"
-msgstr "Definește textul pentru opțiunea de căutare „Caută în dosar”"
-
-#: ../gsearchtool/gsearchtool.c:1310
-msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "Sortează fișierele după una dintre următoarele: nume, dosar, mărime, tip sau dată"
-
-#: ../gsearchtool/gsearchtool.c:1311
-msgid "Set sort order to descending, the default is ascending"
-msgstr "Definește ordinea de sortare la descrescătoare, implicit este crescătoare"
-
-#: ../gsearchtool/gsearchtool.c:1312
-msgid "Automatically start a search"
-msgstr "Pornește automat o căutare"
-
-#: ../gsearchtool/gsearchtool.c:1318
-#, c-format
-msgid "Select the \"%s\" search option"
-msgstr "Selectează opțiunea de căutare „%s”"
-
-#: ../gsearchtool/gsearchtool.c:1321
-#, c-format
-msgid "Select and set the \"%s\" search option"
-msgstr "Selectează și setează opțiunea de căutare „%s”"
-
-#: ../gsearchtool/gsearchtool.c:1428
-msgid "Invalid option passed to sortby command line argument."
-msgstr "Opțiune nevalidă trimisă ca argument comenzii de sortare."
-
-#: ../gsearchtool/gsearchtool.c:1720
-msgid ""
-"\n"
-"... Too many errors to display ..."
-msgstr "\n... Prea multe erori pentru afișare ..."
-
-#: ../gsearchtool/gsearchtool.c:1734
-msgid ""
-"The search results may be invalid.  There were errors while performing this "
-"search."
-msgstr "Rezultatele căutării ar putea fi nevalide. Au fost întâlnite erori în timpul acestei căutări."
-
-#: ../gsearchtool/gsearchtool.c:1746 ../gsearchtool/gsearchtool.c:1790
-msgid "Show more _details"
-msgstr "Afișează mai multe _detalii"
-
-#: ../gsearchtool/gsearchtool.c:1776
-msgid ""
-"The search results may be out of date or invalid.  Do you want to disable "
-"the quick search feature?"
-msgstr "Rezultatele căutării ar putea fi nevalide. Doriți să dezactivați opțiunea de căutare rapidă?"
-
-#: ../gsearchtool/gsearchtool.c:1801
-msgid "Disable _Quick Search"
-msgstr "Dezactivare căutare _rapidă"
-
-#: ../gsearchtool/gsearchtool.c:1828
-#, c-format
-msgid "Failed to set process group id of child %d: %s.\n"
-msgstr "Nu s-a putut definii id-ul pentru grupul de procese %d: %s.\n"
-
-#: ../gsearchtool/gsearchtool.c:1853
-msgid "Error parsing the search command."
-msgstr "Eroare la analizarea comenzii de căutare."
-
-#: ../gsearchtool/gsearchtool.c:1885
-msgid "Error running the search command."
-msgstr "Eroare la rularea comenzii de căutare."
-
-#: ../gsearchtool/gsearchtool.c:2008
-#, c-format
-msgid "Enter a text value for the \"%s\" search option."
-msgstr "Introduceți o valoare text pentru opțiunea de căutare „%s”."
-
-#. Translators:  Below is a string displaying the search options name
-#. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:2013
-#, c-format
-msgid "\"%s\" in %s"
-msgstr "„%s” în %s"
-
-#: ../gsearchtool/gsearchtool.c:2015
-#, c-format
-msgid "Enter a value in %s for the \"%s\" search option."
-msgstr "Introduceți o valoare în %s pentru opțiunea de căutare „%s”."
-
-#: ../gsearchtool/gsearchtool.c:2073
-#, c-format
-msgid "Remove \"%s\""
-msgstr "Șterge „%s”"
-
-#: ../gsearchtool/gsearchtool.c:2074
-#, c-format
-msgid "Click to remove the \"%s\" search option."
-msgstr "Clic pentru a șterge opțiunea de căutare „%s”."
-
-#: ../gsearchtool/gsearchtool.c:2167
-msgid "A_vailable options:"
-msgstr "Opțiuni _disponibile:"
-
-#: ../gsearchtool/gsearchtool.c:2196
-msgid "Available options"
-msgstr "Opțiuni disponibile"
-
-#: ../gsearchtool/gsearchtool.c:2197
-msgid "Select a search option from the drop-down list."
-msgstr "Selectați o opțiune de căutare din lista derulantă."
-
-#: ../gsearchtool/gsearchtool.c:2209
-msgid "Add search option"
-msgstr "Adaugă o opțiune de căutare"
-
-#: ../gsearchtool/gsearchtool.c:2210
-msgid "Click to add the selected available search option."
-msgstr "Clic pentru a adăuga opțiunea selectată disponibilă pentru căutare."
-
-#: ../gsearchtool/gsearchtool.c:2299
-msgid "S_earch results:"
-msgstr "R_ezultate căutare:"
-
-#: ../gsearchtool/gsearchtool.c:2343
-msgid "List View"
-msgstr "Vizualizare listă"
-
-#: ../gsearchtool/gsearchtool.c:2452
-msgid "Type"
-msgstr "Tip"
-
-#: ../gsearchtool/gsearchtool.c:2464
-msgid "Date Modified"
-msgstr "Data modificării"
-
-#: ../gsearchtool/gsearchtool.c:2799
-msgid "_Name contains:"
-msgstr "_Numele conține:"
-
-#: ../gsearchtool/gsearchtool.c:2813 ../gsearchtool/gsearchtool.c:2814
-msgid "Enter a filename or partial filename with or without wildcards."
-msgstr "Introduceți un nume de fișier întreg sau parțial cu sau fără metacaractere."
-
-#: ../gsearchtool/gsearchtool.c:2814
-msgid "Name contains"
-msgstr "Numele conține"
-
-#: ../gsearchtool/gsearchtool.c:2820
-msgid "_Look in folder:"
-msgstr "_Caută în dosar:"
-
-#: ../gsearchtool/gsearchtool.c:2826
-msgid "Browse"
-msgstr "Navighează"
-
-#: ../gsearchtool/gsearchtool.c:2835
-msgid "Look in folder"
-msgstr "Caută în dosar"
-
-#: ../gsearchtool/gsearchtool.c:2835
-msgid "Select the folder or device from which you want to begin the search."
-msgstr "Selectați dosarul sau dispozitivul în care doriți să porniți căutarea."
-
-#: ../gsearchtool/gsearchtool.c:2853
-msgid "Select more _options"
-msgstr "Afișează mai multe _opțiuni"
-
-#: ../gsearchtool/gsearchtool.c:2862
-msgid "Select more options"
-msgstr "Afișează mai multe opțiuni"
-
-#: ../gsearchtool/gsearchtool.c:2862
-msgid "Click to expand or collapse the list of available options."
-msgstr "Clic pentru a desfășura sau plia lista cu opțiunile de căutare."
-
-#: ../gsearchtool/gsearchtool.c:2886
-msgid "Click to display the help manual."
-msgstr "Clic pentru a afișa ajutorul."
-
-#: ../gsearchtool/gsearchtool.c:2894
-msgid "Click to close \"Search for Files\"."
-msgstr "Clic pentru a închide „Caută fișiere”."
-
-#: ../gsearchtool/gsearchtool.c:2920
-msgid "Click to perform a search."
-msgstr "Clic pentru a realiza o căutare."
-
-#: ../gsearchtool/gsearchtool.c:2921
-msgid "Click to stop a search."
-msgstr "Clic pentru a opri o căutare."
-
-#: ../gsearchtool/gsearchtool.c:3015
-msgid "- the MATE Search Tool"
-msgstr "- unealta de căutare MATE"
-
-#: ../gsearchtool/gsearchtool.c:3024
-#, c-format
-msgid "Failed to parse command line arguments: %s\n"
-msgstr "Nu s-au putut analiza argumentele liniei de comandă: %s\n"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:198
-msgid "Could not open help document."
-msgstr "Nu s-a putut deschide documentul de ajutor."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:349
-#, c-format
-msgid "Are you sure you want to open %d document?"
-msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] "Doriți să deschideți %d document?"
-msgstr[1] "Doriți să deschideți %d documente?"
-msgstr[2] "Doriți să deschideți %d de documente?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:354
-#: ../gsearchtool/gsearchtool-callbacks.c:551
-#, c-format
-msgid "This will open %d separate window."
-msgid_plural "This will open %d separate windows."
-msgstr[0] "Se va deschide %d fereastră separată."
-msgstr[1] "Se vor deschide %d ferestre separate."
-msgstr[2] "Se vor deschide %d de ferestre separate."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:394
-#, c-format
-msgid "Could not open document \"%s\"."
-msgstr "Nu s-a putut deschide documentul „%s“."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:423
-#, c-format
-msgid "Could not open folder \"%s\"."
-msgstr "Nu s-a putut deschide dosarul „%s“."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:431
-msgid "The caja file manager is not running."
-msgstr "Managerul de fișiere Caja nu este pornit."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:523
-msgid "There is no installed viewer capable of displaying the document."
-msgstr "Nu este instalat nici un vizualizator capabil de a afișa documentul."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:546
-#, c-format
-msgid "Are you sure you want to open %d folder?"
-msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] "Doriți să deschideți %d dosar?"
-msgstr[1] "Doriți să deschideți %d dosare?"
-msgstr[2] "Doriți să deschideți %d de dosare?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:699
-#, c-format
-msgid "Could not move \"%s\" to trash."
-msgstr "Nu s-a putut muta „%s“ la coșul de gunoi."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:730
-#, c-format
-msgid "Do you want to delete \"%s\" permanently?"
-msgstr "Doriți să ștergeți permanent „%s“?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:733
-#, c-format
-msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr "Coșul de gunoi nu este disponibil. Nu s-a putut muta „%s“ la coșul de gunoi."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:772
-#, c-format
-msgid "Could not delete \"%s\"."
-msgstr "Nu s-a putut șterge „%s“."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:884
-#, c-format
-msgid "Deleting \"%s\" failed: %s."
-msgstr "Ștergerea „%s“ a eșuat: %s"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:896
-#, c-format
-msgid "Moving \"%s\" failed: %s."
-msgstr "Mutarea „%s“ a eșuat: %s"
-
-#. Popup menu item: Open
-#: ../gsearchtool/gsearchtool-callbacks.c:1024
-#: ../gsearchtool/gsearchtool-callbacks.c:1054
-msgid "_Open"
-msgstr "_Deschide"
-
-#. Popup menu item: Open with (default)
-#: ../gsearchtool/gsearchtool-callbacks.c:1079
-#, c-format
-msgid "_Open with %s"
-msgstr "_Deschide cu %s"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1114
-#, c-format
-msgid "Open with %s"
-msgstr "Deschide cu %s"
-
-#. Popup menu item: Open With
-#: ../gsearchtool/gsearchtool-callbacks.c:1147
-msgid "Open Wit_h"
-msgstr "Deschide _cu"
-
-#. Popup menu item: Open Containing Folder
-#: ../gsearchtool/gsearchtool-callbacks.c:1192
-msgid "Open Containing _Folder"
-msgstr ""
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1232
-msgid "_Save Results As..."
-msgstr "_Salvează rezultate ca..."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1614
-msgid "Save Search Results As..."
-msgstr "Salvează rezultatele căutării ca..."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1643
-msgid "Could not save document."
-msgstr "Nu s-a putut salva documentul."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1644
-msgid "You did not select a document name."
-msgstr "Nu ați selectat un nume pentru document."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1674
-#, c-format
-msgid "Could not save \"%s\" document to \"%s\"."
-msgstr "Nu s-a putut salva documentul „%s“ către „%s“."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1707
-#, c-format
-msgid "The document \"%s\" already exists.  Would you like to replace it?"
-msgstr "Documentul „%s“ deja există. Doriți să-l înlocuiți?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1711
-msgid "If you replace an existing file, its contents will be overwritten."
-msgstr "Dacă înlocuiți un fișier existent, conținutul va fi suprascris."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1775
-msgid "The document name you selected is a folder."
-msgstr "Numele documentului pe care l-ați selectat este un dosar."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1811
-msgid "You may not have write permissions to the document."
-msgstr "Probabil nu aveți permisiuni de scriere pentru document."
-
-#. Translators:  Below are the strings displayed in the 'Date Modified'
-#. column of the list view.  The format of this string can vary depending
-#. on age of a file.  Please modify the format of the timestamp to match
-#. your locale.  For example, to display 24 hour time replace the '%-I'
-#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: ../gsearchtool/gsearchtool-support.c:448
-msgid "today at %-I:%M %p"
-msgstr "azi la %-I:%M %p"
-
-#: ../gsearchtool/gsearchtool-support.c:450
-msgid "yesterday at %-I:%M %p"
-msgstr "ieri la %-I:%M %p"
-
-#: ../gsearchtool/gsearchtool-support.c:452
-#: ../gsearchtool/gsearchtool-support.c:454
-msgid "%A, %B %-d %Y at %-I:%M:%S %p"
-msgstr "%A, %B %-d %Y la %-I:%M:%S %p"
-
-#: ../gsearchtool/gsearchtool-support.c:641
-msgid "link (broken)"
-msgstr "legătura (ruptă)"
-
-#: ../gsearchtool/gsearchtool-support.c:645
-#, c-format
-msgid "link to %s"
-msgstr "legătură căte %s"
-
-#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
-#. Localizers:
-#. * Feel free to leave out the st, nd, rd and th suffix or
-#. * make some or all of them match.
-#. localizers: tag used to detect the first copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1257
-msgid " (copy)"
-msgstr " (copie)"
-
-#. localizers: tag used to detect the second copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1259
-msgid " (another copy)"
-msgstr " (altă copie)"
-
-#. localizers: tag used to detect the x11th copy of a file
-#. localizers: tag used to detect the x12th copy of a file
-#. localizers: tag used to detect the x13th copy of a file
-#. localizers: tag used to detect the xxth copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1262
-#: ../gsearchtool/gsearchtool-support.c:1264
-#: ../gsearchtool/gsearchtool-support.c:1266
-#: ../gsearchtool/gsearchtool-support.c:1276
-msgid "th copy)"
-msgstr "a copie)"
-
-#. localizers: tag used to detect the x1st copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1269
-msgid "st copy)"
-msgstr "a copie)"
-
-#. localizers: tag used to detect the x2nd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1271
-msgid "nd copy)"
-msgstr "a copie)"
-
-#. localizers: tag used to detect the x3rd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1273
-msgid "rd copy)"
-msgstr "a copie)"
-
-#. localizers: appended to first file copy
-#: ../gsearchtool/gsearchtool-support.c:1290
-#, c-format
-msgid "%s (copy)%s"
-msgstr "%s (copie)%s"
-
-#. localizers: appended to second file copy
-#: ../gsearchtool/gsearchtool-support.c:1292
-#, c-format
-msgid "%s (another copy)%s"
-msgstr "%s (altă copie)%s"
-
-#. localizers: appended to x11th file copy
-#. localizers: appended to x12th file copy
-#. localizers: appended to x13th file copy
-#. localizers: appended to xxth file copy
-#: ../gsearchtool/gsearchtool-support.c:1295
-#: ../gsearchtool/gsearchtool-support.c:1297
-#: ../gsearchtool/gsearchtool-support.c:1299
-#: ../gsearchtool/gsearchtool-support.c:1308
-#, c-format
-msgid "%s (%dth copy)%s"
-msgstr "%s (a %d-a copie)%s"
-
-#. localizers: appended to x1st file copy
-#: ../gsearchtool/gsearchtool-support.c:1302
-#, c-format
-msgid "%s (%dst copy)%s"
-msgstr "%s (a %d-a copie)%s"
-
-#. localizers: appended to x2nd file copy
-#: ../gsearchtool/gsearchtool-support.c:1304
-#, c-format
-msgid "%s (%dnd copy)%s"
-msgstr "%s (a %d-a copie)%s"
-
-#. localizers: appended to x3rd file copy
-#: ../gsearchtool/gsearchtool-support.c:1306
-#, c-format
-msgid "%s (%drd copy)%s"
-msgstr "%s (a %d-a copie)%s"
-
-#: ../gsearchtool/gsearchtool-support.c:1353
-msgid " (invalid Unicode)"
-msgstr " (Unicode nevalid)"
-
-#. localizers: opening parentheses to match the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1442
-msgid " ("
-msgstr " ("
-
-#. localizers: opening parentheses of the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1450
-#, c-format
-msgid " (%d"
-msgstr " (%d"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:1
-msgid "Search history"
-msgstr "Istoric căutare"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:2
-msgid "This key defines the items which were searched for in the past."
-msgstr ""
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:3
-msgid "Show Additional Options"
-msgstr "Afișează opțiuni suplimentare"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:4
-msgid "Disable Quick Search"
-msgstr "Dezactivare căutare rapidă"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:5
-msgid ""
-"This key determines if the search tool disables the use of the locate "
-"command when performing simple file name searches."
-msgstr "Această cheie determină dacă utilitarul de căutare dezativează folosirea comenzii locate pentru căutări simple de fișiere."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:6
-msgid "Quick Search Excluded Paths"
-msgstr "Căi excluse pentru căutări rapide"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:7
-msgid ""
-"This key defines the paths the search tool will exclude from a quick search."
-" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
-"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-msgstr "Această cheie definește căile pe care utilitarul de căutare le va exclude de la o căutare rapidă. Metacaracterele „*” și „?” sunt suportate. Valorile implicite sunt /mnt/* , /media/*, /dev/*, /tmp/*, /proc/*, și /var/*."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:8
-msgid "Disable Quick Search Second Scan"
-msgstr "Dezactivează a doua scanare pentru căutare rapidă"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:9
-msgid ""
-"This key determines if the search tool disables the use of the find command "
-"after performing a quick search."
-msgstr "Această cheie determină dacă utilitarul de căutare dezactivează utilizarea comenzii find după o căutare rapidă."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:10
-msgid "Quick Search Second Scan Excluded Paths"
-msgstr "Căi excluse pentru a doua scanare pentru căutări rapide"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:11
-msgid ""
-"This key defines the paths the search tool will exclude from a second scan "
-"when performing a quick search. The second scan uses the find command to "
-"search for files. The purpose of the second scan is to find files that have "
-"not been indexed. The wildcards '*' and '?' are supported. The default value"
-" is /."
-msgstr "Această cheie definește căile pe care utilitarul de căutare le va exclude de la o a doua scanare în tmpul unei căutari rapidă. A doua scanare folosește comanda find pentru a căuta fișierele. Scopul celei de-a doua scanări este de a găsi fișierele ce nu au fost indexate. Metacaracterele „*” și „?” sunt suportate. Valorile implicite /."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:12
-msgid "Search Result Columns Order"
-msgstr "Ordinea coloanelor la rezultatul căutării"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:13
-msgid ""
-"This key defines the order of the columns in the search results. This key "
-"should not be modified by the user."
-msgstr "Această cheie definește ordinea coloanelor din rezultatele căutării. Această cheie nu ar trebui să fie modificată de către utilizator."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:14
-msgid "Default Window Width"
-msgstr "Lățimea implicită a ferestrei"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:15
-msgid ""
-"This key defines the window width, and it's used to remember the size of the"
-" search tool between sessions. Setting it to -1 will make the search tool "
-"use the default width."
-msgstr "Această cheie definește lățimea ferestrei, și este folosită pentru a memora dimensiunea aplicației de căutare între sesiuni. Setând-o la -1 veți determina aplicația să folosească lățimea implicită."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:16
-msgid "Default Window Height"
-msgstr "Înălțimea implicită a ferestrei"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:17
-msgid ""
-"This key defines the window height, and it's used to remember the size of "
-"the search tool between sessions. Setting it to -1 will make the search tool"
-" use the default height."
-msgstr "Această cheie definește înălțimea ferestrei, și este folosită pentru a memora dimensiunea aplicației de căutare între sesiuni. Setând-o la -1 veți determina aplicația să folosească înălțimea implicită."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:18
-msgid "Default Window Maximized"
-msgstr "Fereastra implicită maximizată"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:19
-msgid ""
-"This key determines if the search tool window starts in a maximized state."
-msgstr "Această cheie determină dacă utilitarul de căutare va porni maximizat."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:20
-msgid "Look in Folder"
-msgstr "Caută în dosar"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:21
-msgid "This key defines the default value of the \"Look in Folder\" widget."
-msgstr "Această cheie definește valoarea implicită pentru miniaplicația „Caută în dosar”"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:22
-msgid ""
-"This key determines if the \"Contains the text\" search option is selected "
-"when the search tool is started."
-msgstr "Această cheie determină dacă opțiunea de căutare „Conține textul” este selectată la pornirea utilitarului de căutare."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:23
-msgid ""
-"This key determines if the \"Date modified less than\" search option is "
-"selected when the search tool is started."
-msgstr "Această cheie determină dacă opțiunea de căutare „Data modificării mai mică decât” este selectată la pornirea utilitarului de căutare."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:24
-msgid ""
-"This key determines if the \"Date modified more than\" search option is "
-"selected when the search tool is started."
-msgstr "Această cheie determină dacă opțiunea de căutare „Data modificării mai mare decât” este selectată la pornirea utilitarului de căutare."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:25
-msgid ""
-"This key determines if the \"Size at least\" search option is selected when "
-"the search tool is started."
-msgstr "Această cheie determină dacă opțiunea de căutare „Mărimea de cel puțin” este selectată la pornirea utilitarului de căutare."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:26
-msgid ""
-"This key determines if the \"Size at most\" search option is selected when "
-"the search tool is started."
-msgstr "Această cheie determină dacă opțiunea de căutare „Mărimea de cel mult” este selectată la pornirea utilitarului de căutare."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:27
-msgid ""
-"This key determines if the \"File is empty\" search option is selected when "
-"the search tool is started."
-msgstr "Această cheie determină dacă opțiunea de căutare „Fișierul este gol” este selectată la pornirea utilitarului de căutare."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:28
-msgid ""
-"This key determines if the \"Owned by user\" search option is selected when "
-"the search tool is started."
-msgstr "Această cheie determină dacă opțiunea de căutare „Deținut de utilizatorul” este selectată la pornirea utilitarului de căutare."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:29
-msgid ""
-"This key determines if the \"Owned by group\" search option is selected when"
-" the search tool is started."
-msgstr "Această cheie determină dacă opțiunea de căutare „Deținut de grupul” este selectată la pornirea utilitarului de căutare."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:30
-msgid ""
-"This key determines if the \"Owner is unrecognized\" search option is "
-"selected when the search tool is started."
-msgstr "Această cheie determină dacă opțiunea de căutare „Proprietarul nu a fost recunoscut” este selectată la pornirea utilitarului de căutare."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:31
-msgid ""
-"This key determines if the \"Name does not contain\" search option is "
-"selected when the search tool is started."
-msgstr "Această cheie determină dacă opțiunea de căutare „Numele nu conține” este selectată la pornirea utilitarului de căutare."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:32
-msgid ""
-"This key determines if the \"Name matches regular expression\" search option"
-" is selected when the search tool is started."
-msgstr "Această cheie determină dacă opțiunea de căutare „Numele se potrivește expresiei regulate” este selectată la pornirea utilitarului de căutare."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:33
-msgid ""
-"This key determines if the \"Show hidden files and folders\" search option "
-"is selected when the search tool is started."
-msgstr "Această cheie determină dacă opțiunea de căutare „Arată fișierele și dosarele ascunse” este selectată la pornirea utilitarului de căutare."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:34
-msgid ""
-"This key determines if the \"Follow symbolic links\" search option is "
-"selected when the search tool is started."
-msgstr "Această cheie determină dacă opțiunea de căutare „Urmează legăturile simbolice” este selectată la pornirea utilitarului de căutare."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:35
-msgid ""
-"This key determines if the \"Exclude other filesystems\" search option is "
-"selected when the search tool is started."
-msgstr "Această cheie determină dacă opțiunea de căutare „Exclude alte sisteme de fișiere” este selectată la pornirea utilitarului de căutare."
-
-#: ../libeggsmclient/eggdesktopfile.c:165
-#, c-format
-msgid "File is not a valid .desktop file"
-msgstr "Fișierul nu este un fișier .desktop valid"
-
-#: ../libeggsmclient/eggdesktopfile.c:188
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "Versiune nerecunoscută de fișier desktop „%s”"
-
-#: ../libeggsmclient/eggdesktopfile.c:957
-#, c-format
-msgid "Starting %s"
-msgstr "Se pornește %s"
-
-#: ../libeggsmclient/eggdesktopfile.c:1098
-#, c-format
-msgid "Application does not accept documents on command line"
-msgstr "Aplicația nu acceptă documente în linia de comandă"
-
-#: ../libeggsmclient/eggdesktopfile.c:1166
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "Opțiune nerecunoscută de de pornire: %d"
-
-#: ../libeggsmclient/eggdesktopfile.c:1365
-#, c-format
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "Nu se poate trimite URI-ul documentului unei intrări desktop „Type=Link”"
-
-#: ../libeggsmclient/eggdesktopfile.c:1384
-#, c-format
-msgid "Not a launchable item"
-msgstr "Nu este un element care să poate fi pornit"
-
-#: ../libeggsmclient/eggsmclient.c:225
-msgid "Disable connection to session manager"
-msgstr "Dezactivează conexiunea la administratorul sesiunii"
-
-#: ../libeggsmclient/eggsmclient.c:228
-msgid "Specify file containing saved configuration"
-msgstr "Specifică fișierul conținând configurația salvată"
-
-#: ../libeggsmclient/eggsmclient.c:228
-msgid "FILE"
-msgstr "FIȘIER"
-
-#: ../libeggsmclient/eggsmclient.c:231
-msgid "Specify session management ID"
-msgstr "Specifică ID-ul de administrare al sesiunii"
-
-#: ../libeggsmclient/eggsmclient.c:231
-msgid "ID"
-msgstr "ID"
-
-#: ../libeggsmclient/eggsmclient.c:252
-msgid "Session management options:"
-msgstr "Opțiuni de administrare a sesiunii:"
-
-#: ../libeggsmclient/eggsmclient.c:253
-msgid "Show session management options"
-msgstr "Afișează opțiunile pentru administrarea sesiunii"
-
-#: ../logview/data/mate-system-log.desktop.in.in.h:1
-msgid "Log File Viewer"
-msgstr "Vizualizator fișier înregistrări"
-
-#: ../logview/data/mate-system-log.desktop.in.in.h:2
-msgid "View or monitor system log files"
-msgstr "Vizualizează sau monitorizează fișierele cu înregistrările de sistem"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
-msgid "Log file to open up on startup"
-msgstr "Fișierul de înregistrări deschis la pornire"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
-msgid ""
-"Specifies the log file displayed at startup. The default is either "
-"/var/adm/messages or /var/log/messages, depending on your operating system."
-msgstr "Specifică fișierul de înregistrare deschis la pornire. Cel implicit este fie /var/adm/messages sau /var/log/messages, depinzând de sistemul de operare."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
-msgid "Size of the font used to display the log"
-msgstr "Mărimea fontului folosit pentru a afișa înregistrările"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
-msgid ""
-"Specifies the size of the fixed-width font used to display the log in the "
-"main tree view. The default is taken from the default terminal font size."
-msgstr "Specifică mărimea fontului de lățime fixă folosit pentru a afișa înregistrarea în vizualizarea arborescentă principală. Implicit este cea configurată pentru fontul terminalului."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
-msgid "Height of the main window in pixels"
-msgstr "Înălțimea ferestrei principale în pixeli"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
-msgid "Specifies the height of the log viewer main window in pixels."
-msgstr "Specifică înălțimea ferestrei principale în pixeli."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
-msgid "Width of the main window in pixels"
-msgstr "Lățimea ferestrei principale în pixeli"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
-msgid "Specifies the width of the log viewer main window in pixels."
-msgstr "Specifică lățimea ferestrei principale în pixeli."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
-msgid "Log files to open up on startup"
-msgstr "Fișierele de înregistrări deschise la pornire"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
-msgid ""
-"Specifies a list of log files to open up at startup. A default list is "
-"created by reading /etc/syslog.conf."
-msgstr "Specifică o listă de fișiere de înregistrare deschise la pornire. O listă implicită este creată citind /etc/syslog.conf."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
-msgid "List of saved filters"
-msgstr "Listă de filtre salvate"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
-msgid "List of saved regexp filters"
-msgstr ""
-
-#: ../logview/data/logview-filter.ui.h:2
-msgid "_Regular Expression:"
-msgstr "Expresie _regulară:"
-
-#: ../logview/data/logview-filter.ui.h:3
-msgid "Highlight"
-msgstr "Evidențiază"
-
-#: ../logview/data/logview-filter.ui.h:4
-msgid "Hide"
-msgstr "Ascunde"
-
-#: ../logview/data/logview-filter.ui.h:5
-msgid "Foreground:"
-msgstr "Prim-plan:"
-
-#: ../logview/data/logview-filter.ui.h:6
-msgid "Background:"
-msgstr "Fundal:"
-
-#: ../logview/data/logview-filter.ui.h:7
-msgid "Effect:"
-msgstr "Efecte:"
-
-#: ../logview/logview-app.c:377
-#, c-format
-msgid "Impossible to open the file %s"
-msgstr "Imposibil de deschis fișierul „%s”"
-
-#: ../logview/logview-filter-manager.c:94
-msgid "Filter name is empty!"
-msgstr "Numele filtrului este gol!"
-
-#: ../logview/logview-filter-manager.c:107
-msgid "Filter name may not contain the ':' character"
-msgstr "Numele filtrului nu poate conține caracterul „:”"
-
-#: ../logview/logview-filter-manager.c:130
-msgid "Regular expression is empty!"
-msgstr "Expresia regulară este vidă!"
-
-#: ../logview/logview-filter-manager.c:146
-#, c-format
-msgid "Regular expression is invalid: %s"
-msgstr "Expresia regulară nu este validă: %s"
-
-#: ../logview/logview-filter-manager.c:242
-msgid "Please specify either foreground or background color!"
-msgstr "Specificați fie culoarea de prim-plan sau de fundal!"
-
-#: ../logview/logview-filter-manager.c:296
-msgid "Edit filter"
-msgstr "Modificare filtru"
-
-#: ../logview/logview-filter-manager.c:296
-msgid "Add new filter"
-msgstr "Adaugă filtru nou"
-
-#: ../logview/logview-filter-manager.c:506
-msgid "Filters"
-msgstr "Filtre"
-
-#: ../logview/logview-findbar.c:173
-msgid "_Find:"
-msgstr "_Caută:"
-
-#: ../logview/logview-findbar.c:188
-msgid "Find Previous"
-msgstr "Caută anterior"
-
-#: ../logview/logview-findbar.c:191
-msgid "Find previous occurrence of the search string"
-msgstr "Caută apariția anterioară a textului căutat"
-
-#: ../logview/logview-findbar.c:196
-msgid "Find Next"
-msgstr "Caută următor"
-
-#: ../logview/logview-findbar.c:199
-msgid "Find next occurrence of the search string"
-msgstr "Caută următoarea apariție a textului căutat"
-
-#: ../logview/logview-findbar.c:206
-msgid "Clear the search string"
-msgstr "Șterge textul de căutare"
-
-#: ../logview/logview-log.c:595
-msgid "Error while uncompressing the GZipped log. The file might be corrupt."
-msgstr "Eroare la decomprimarea înregistrării arhivate cu gzip. Este posibil ca fișierul să fie corupt."
-
-#: ../logview/logview-log.c:642
-msgid "You don't have enough permissions to read the file."
-msgstr "Nu aveți suficiente permisiuni pentru a citi fișierul."
-
-#: ../logview/logview-log.c:657
-msgid "The file is not a regular file or is not a text file."
-msgstr "Acesta nu este un fișier normal sau nu este un fișier text."
-
-#: ../logview/logview-log.c:739
-msgid "This version of System Log does not support GZipped logs."
-msgstr "Această versiune a Înregistrări sistem nu suportă înregistrări arhivate cu gzip."
-
-#: ../logview/logview-loglist.c:315
-msgid "Loading..."
-msgstr "Se încarcă..."
-
-#: ../logview/logview-main.c:61
-msgid "Show the application's version"
-msgstr "Afișează versiunea aplicației"
-
-#: ../logview/logview-main.c:63
-msgid "[LOGFILE...]"
-msgstr "[FIȘIER_ÎNREGISTRARE...]"
-
-#: ../logview/logview-main.c:67
-msgid " - Browse and monitor logs"
-msgstr " - Afișare și monitorizare înregistrări sistem"
-
-#: ../logview/logview-main.c:100
-msgid "Log Viewer"
-msgstr "Vizualizator înregistrări sistem"
-
-#: ../logview/logview-window.c:38 ../logview/logview-window.c:760
-msgid "System Log Viewer"
-msgstr "Vizualizator înregistări sistem"
-
-#: ../logview/logview-window.c:210
-#, c-format
-msgid "last update: %s"
-msgstr "ultima actualizare: %s"
-
-#: ../logview/logview-window.c:214
-#, c-format
-msgid "%d lines (%s) - %s"
-msgstr "%d linii (%s) - %s"
-
-#: ../logview/logview-window.c:318
-msgid "Open Log"
-msgstr "Deschide înregistrare"
-
-#: ../logview/logview-window.c:357
-#, c-format
-msgid "There was an error displaying help: %s"
-msgstr "S-a produs o eroare la afișarea ajutorului: %s"
-
-#: ../logview/logview-window.c:471
-msgid "Wrapped"
-msgstr "Înfășurat"
-
-#: ../logview/logview-window.c:765
-msgid "A system log viewer for MATE."
-msgstr "Un vizualizator al înregistrărilor de sistem pentru MATE."
-
-#: ../logview/logview-window.c:811
-msgid "_Filters"
-msgstr "_Filtre"
-
-#: ../logview/logview-window.c:814
-msgid "_Open..."
-msgstr "_Deschide..."
-
-#: ../logview/logview-window.c:814
-msgid "Open a log from file"
-msgstr "Deschide o înregistrare din fișier"
-
-#: ../logview/logview-window.c:816
-msgid "_Close"
-msgstr "În_chide"
-
-#: ../logview/logview-window.c:816
-msgid "Close this log"
-msgstr "Închide această înregistrare"
-
-#: ../logview/logview-window.c:818
-msgid "_Quit"
-msgstr "În_chide"
-
-#: ../logview/logview-window.c:818
-msgid "Quit the log viewer"
-msgstr "Închide vizualizatorul de înregistrări"
-
-#: ../logview/logview-window.c:821
-msgid "_Copy"
-msgstr "_Copiază"
-
-#: ../logview/logview-window.c:821
-msgid "Copy the selection"
-msgstr "Copiază selecția"
-
-#: ../logview/logview-window.c:823
-msgid "Select the entire log"
-msgstr "Selectează toată înregistrarea"
-
-#: ../logview/logview-window.c:825
-msgid "_Find..."
-msgstr "_Caută..."
-
-#: ../logview/logview-window.c:825
-msgid "Find a word or phrase in the log"
-msgstr "Caută un cuvând sau o frază în înregistrare"
-
-#: ../logview/logview-window.c:828
-msgid "Bigger text size"
-msgstr "Text mai mare"
-
-#: ../logview/logview-window.c:830
-msgid "Smaller text size"
-msgstr "Text mai mic"
-
-#: ../logview/logview-window.c:832
-msgid "Normal text size"
-msgstr "Text de dimensiuni normale"
-
-#: ../logview/logview-window.c:835
-msgid "Manage Filters"
-msgstr "Administrare filtre"
-
-#: ../logview/logview-window.c:835
-msgid "Manage filters"
-msgstr "Administrare filtre"
-
-#: ../logview/logview-window.c:838
-msgid "Open the help contents for the log viewer"
-msgstr "Deschide ajutorul pentru vizualizatorul de înregistrări"
-
-#: ../logview/logview-window.c:840
-msgid "Show the about dialog for the log viewer"
-msgstr "Afișează dialogul Despre pentru vizualizatorul de înregistrări"
-
-#: ../logview/logview-window.c:845
-msgid "_Statusbar"
-msgstr "Bară de _stare"
-
-#: ../logview/logview-window.c:845
-msgid "Show Status Bar"
-msgstr "Afișează bara de stare"
-
-#: ../logview/logview-window.c:847
-msgid "Side _Pane"
-msgstr "_Panou lateral"
-
-#: ../logview/logview-window.c:847
-msgid "Show Side Pane"
-msgstr "Afișează panoul lateral"
-
-#: ../logview/logview-window.c:849
-msgid "Show matches only"
-msgstr "Afișează doar potrivirile"
-
-#: ../logview/logview-window.c:849
-msgid "Only show lines that match one of the given filters"
-msgstr "Afișează doar liniile care se potrivesc unuia dintre filtrele specificate"
-
-#: ../logview/logview-window.c:963
-#, c-format
-msgid "Can't read from \"%s\""
-msgstr "Nu s-a putut citi de la „%s”"
-
-#: ../logview/logview-window.c:1386
-msgid "Version: "
-msgstr "Versiune: "
-
-#: ../logview/logview-window.c:1493
-msgid "Could not open the following files:"
-msgstr "Nu s-au putut deschide următoarele fișiere:"

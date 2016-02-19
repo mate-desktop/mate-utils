@@ -3,24 +3,30 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Adrian Guniš <andygun@seznam.cz>, 2008, 2009, 2010
+# Adrian Guniš <andygun@seznam.cz>, 2008-2010
 # David Sauer <davids@penguin.cz>, 1999
-# George Lebl <jirka@5z.com>, 2000, 2001
+# George Lebl <jirka@5z.com>, 2000-2001
 # Jakub Friedl <jfriedl@suse.cz>, 2006
 # Kamil Páral <ripper42@gmail.com>, 2008
+# Lucas Lommer <drom@kdyne.net>, 2016
 # Lukas Novotny <lukasnov@cvs.mate.org>, 2006
-# Michal Bukovjan <bukm@centrum.cz>, 2002, 2003
+# Martin Kříž <liberte.czech@gmail.com>, 2015
+# Martin Kříž <liberte.czech@gmail.com>, 2015
+# Michal Bukovjan <bukm@centrum.cz>, 2002-2003
 # Miloslav Trmač <mitr@volny.cz>, 2003, 2004, 2005, 2006
+# Miloslav Trmač <mitr@volny.cz>, 2003-2006
 # Petr Kovar <pmkovar@gmail.com>, 2008, 2009
+# Petr Kovar <pmkovar@gmail.com>, 2008-2009
 # Petr Tomeš <ptomes@gmail.com>, 2006
+# Stanislav Kučera <kacernator@quick.cz>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-24 13:29+0100\n"
-"PO-Revision-Date: 2015-01-24 12:29+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Czech (http://www.transifex.com/projects/p/MATE/language/cs/)\n"
+"POT-Creation-Date: 2015-12-10 13:06+0300\n"
+"PO-Revision-Date: 2016-02-15 11:20+0000\n"
+"Last-Translator: Lucas Lommer <drom@kdyne.net>\n"
+"Language-Team: Czech (http://www.transifex.com/mate/MATE/language/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,7 +35,7 @@ msgstr ""
 
 #: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:1
 msgid "MATE Disk Usage Analyzer"
-msgstr ""
+msgstr "Analýza zaplnění disku pro MATE"
 
 #: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:2
 msgid "Check folder sizes and available disk space"
@@ -65,10 +71,11 @@ msgstr "Pro_hledat složku…"
 
 #: ../baobab/data/baobab-main-window.ui.h:5
 msgid "S_can Remote Folder..."
-msgstr "P_rohledat vzdálenou složku..."
+msgstr "P_rohledat vzdálenou složku…"
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../mate-dictionary/src/gdict-window.c:1279 ../logview/logview-window.c:809
+#: ../logview/src/logview-window.c:811
+#: ../mate-dictionary/src/gdict-window.c:1285
 msgid "_Edit"
 msgstr "_Upravit"
 
@@ -81,7 +88,8 @@ msgid "_Collapse All"
 msgstr "S_balit vše"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../mate-dictionary/src/gdict-window.c:1280 ../logview/logview-window.c:810
+#: ../logview/src/logview-window.c:812
+#: ../mate-dictionary/src/gdict-window.c:1286
 msgid "_View"
 msgstr "_Zobrazit"
 
@@ -98,18 +106,20 @@ msgid "All_ocated Space"
 msgstr "_Obsazené místo"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../mate-dictionary/src/gdict-applet.c:1213
-#: ../mate-dictionary/src/gdict-window.c:1282 ../logview/logview-window.c:812
+#: ../logview/src/logview-window.c:814
+#: ../mate-dictionary/src/gdict-applet.c:1185
+#: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Help"
 msgstr "_Nápověda"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../mate-dictionary/src/gdict-window.c:1332 ../logview/logview-window.c:838
+#: ../logview/src/logview-window.c:840
+#: ../mate-dictionary/src/gdict-window.c:1338
 msgid "_Contents"
 msgstr "_Obsah"
 
-#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/callbacks.c:97
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1245
 msgid "Disk Usage Analyzer"
 msgstr "Analyzátor využití disku"
 
@@ -155,7 +165,7 @@ msgstr "Obnovit"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:1
 msgid "Monitor Home"
-msgstr ""
+msgstr "Domovský monitor"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:2
 msgid "Whether any change to the home directory should be monitored."
@@ -179,7 +189,7 @@ msgstr "Jestli má být lišta nástrojů v hlavním okně viditelná."
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:7
 msgid "Statusbar is Visible"
-msgstr ""
+msgstr "Stavový panel je viditelný"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:8
 msgid "Whether the status bar at the bottom of main window should be visible."
@@ -187,7 +197,7 @@ msgstr "Jestli má být stavový řádek ve spodní části hlavního okna vidit
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:9
 msgid "Subfolder tips visible"
-msgstr ""
+msgstr "Tipy pro podsložky viditelné"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:10
 msgid "Whether the subfolder tooltips of the selected folder are drawn."
@@ -195,15 +205,15 @@ msgstr "Jestli jsou popisy tlačítek podsložek z vybrané složky vykresleny."
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:11
 msgid "Active Chart"
-msgstr ""
+msgstr "Aktivní graf"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:12
 msgid "Which type of chart should be displayed."
-msgstr ""
+msgstr "Jaký typ grafu má být zobrazen"
 
 #: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:1
 msgid "A disk usage analyzing tool for MATE Desktop"
-msgstr ""
+msgstr "Nástroj pro zobrazení využití místa na disku"
 
 #: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:2
 msgid ""
@@ -213,7 +223,7 @@ msgid ""
 "perform scans on a file system, your home or any other folder - local or "
 "remote. There is also an option to constantly monitor any external changes "
 "to the home directory and warn the user if a file is added/removed. </p>"
-msgstr ""
+msgstr "<p> Jak název napovídá, Analýza zaplnění disku pro MATE je grafický nástroj, který můžete použít k prohlížení a sledování využití disku a struktury složek. Zobrazuje souhrnné informace v kruhovém grafu či diagramu stylu stromové mapy. </p> <p> Můžete provádět analýzu nad souborovým systémem, domácím adresářem nebo jakoukoliv složkou, místní či vzdálenou. Také obsahuje funkci pro průběžné monitorování změn domácího adresáře a upozorňování uživatele na přidání/odebrání souboru. </p>"
 
 #: ../baobab/src/baobab.c:135 ../baobab/src/baobab.c:355
 msgid "Scanning..."
@@ -233,12 +243,12 @@ msgstr "dostupné:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:240 ../baobab/src/baobab.c:297
-#: ../baobab/src/callbacks.c:259
+#: ../baobab/src/callbacks.c:258
 msgid "Calculating percentage bars..."
 msgstr "Vypočítávají se procenta…"
 
 #: ../baobab/src/baobab.c:251 ../baobab/src/baobab.c:1309
-#: ../baobab/src/callbacks.c:263
+#: ../baobab/src/callbacks.c:262
 msgid "Ready"
 msgstr "Hotovo"
 
@@ -475,7 +485,7 @@ msgstr "Obsah vaší domovské složky se změnil. Zvolte nové prohledávání 
 msgid "_Rescan"
 msgstr "Znovu p_rohledat"
 
-#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2427
+#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/src/gsearchtool.c:2427
 msgid "Folder"
 msgstr "Složka"
 
@@ -483,7 +493,7 @@ msgstr "Složka"
 msgid "Usage"
 msgstr "Využití"
 
-#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2440
+#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/src/gsearchtool.c:2440
 msgid "Size"
 msgstr "Velikost"
 
@@ -513,43 +523,43 @@ msgstr "„%s“ není platná složka"
 msgid "Could not analyze disk usage."
 msgstr "Nelze analyzovat využití disku."
 
-#: ../baobab/src/baobab-utils.c:366
+#: ../baobab/src/baobab-utils.c:362
 msgid "_Open Folder"
 msgstr "_Otevřít složku"
 
-#: ../baobab/src/baobab-utils.c:372
-#: ../gsearchtool/gsearchtool-callbacks.c:1210
+#: ../baobab/src/baobab-utils.c:368
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1210
 msgid "Mo_ve to Trash"
 msgstr "_Přesunout do koše"
 
-#: ../baobab/src/baobab-utils.c:406
+#: ../baobab/src/baobab-utils.c:402
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "Nelze otevřít složku „%s“"
 
-#: ../baobab/src/baobab-utils.c:409
+#: ../baobab/src/baobab-utils.c:405
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr "Není nainstalován žádný prohlížeč schopný zobrazit tuto složku."
 
-#: ../baobab/src/baobab-utils.c:478
+#: ../baobab/src/baobab-utils.c:474
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr "Nelze přesunout „%s“ do koše"
 
-#: ../baobab/src/baobab-utils.c:486
+#: ../baobab/src/baobab-utils.c:482
 msgid "Could not move file to the Trash"
 msgstr "Soubor nelze přesunout do koše"
 
-#: ../baobab/src/baobab-utils.c:488
+#: ../baobab/src/baobab-utils.c:484
 #, c-format
 msgid "Details: %s"
 msgstr "Podrobnosti: %s"
 
-#: ../baobab/src/baobab-utils.c:524
+#: ../baobab/src/baobab-utils.c:520
 msgid "There was an error displaying help."
 msgstr "Při zobrazování nápovědy došlo k chybě."
 
-#: ../baobab/src/callbacks.c:76 ../logview/logview-about.h:49
+#: ../baobab/src/callbacks.c:76 ../logview/src/logview-about.h:49
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -557,7 +567,7 @@ msgid ""
 "any later version."
 msgstr "Tento program je svobodný software; můžete jej šířit a/nebo upravovat podle ustanovení GNU General Public License vydané Free Software Foundation; buď verze 2 této licence nebo (dle vlastního uvážení) kterékoliv pozdější verze."
 
-#: ../baobab/src/callbacks.c:81 ../logview/logview-about.h:53
+#: ../baobab/src/callbacks.c:81 ../logview/src/logview-about.h:53
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -565,31 +575,1289 @@ msgid ""
 "more details."
 msgstr "Tento program je šířen v naději, že bude užitečný, avšak BEZ JAKÉKOLIV ZÁRUKY; neposkytují se ani odvozené záruky PRODEJNOSTI anebo VHODNOSTI PRO URČITÝ ÚČEL. Další podrobnosti hledejte v GNU General Public License."
 
-#: ../baobab/src/callbacks.c:86 ../logview/logview-about.h:57
+#: ../baobab/src/callbacks.c:86 ../logview/src/logview-about.h:57
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 msgstr "Kopii GNU General Public License byste měli obdržet spolu s tímto programem; pokud se tak nestalo, napište si o ni Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
-#: ../baobab/src/callbacks.c:98
+#: ../baobab/src/callbacks.c:97
 msgid "A graphical tool to analyze disk usage."
 msgstr "Grafický nástroj pro analýzu využití disku."
 
 #. translator credits
-#: ../baobab/src/callbacks.c:104 ../mate-dictionary/src/gdict-about.c:55
-#: ../logview/logview-about.h:63
+#: ../baobab/src/callbacks.c:103 ../logview/src/logview-about.h:63
+#: ../mate-dictionary/src/gdict-about.c:55
 msgid "translator-credits"
 msgstr "David Šauer <davids@penguin.cz>\nJirka Lébl <jirka@5z.com>\nMichal Bukovjan <bukm@centrum.cz>\nMiloslav Trmač <mitr@volny.cz>\nPetr Tomeš <ptomes@gmail.com>\nJakub Friedl <jfriedl@suse.cz>\nLukáš Novotný <lukasnov@cvs.mate.org>\nKamil Páral <ripper42@gmail.com>\nPetr Kovář <pknbe@volny.cz>\nAdrian Guniš <andygun696@gmail.com>"
 
-#: ../baobab/src/callbacks.c:202 ../gsearchtool/gsearchtool-callbacks.c:508
-#: ../gsearchtool/gsearchtool-callbacks.c:848
+#: ../baobab/src/callbacks.c:201
+#: ../gsearchtool/src/gsearchtool-callbacks.c:508
+#: ../gsearchtool/src/gsearchtool-callbacks.c:848
 msgid "The document does not exist."
 msgstr "Dokument neexistuje."
 
-#: ../baobab/src/callbacks.c:283
+#: ../baobab/src/callbacks.c:282
 msgid "The folder does not exist."
 msgstr "Složka neexistuje."
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
+msgid "A file searching tool for MATE Desktop"
+msgstr "Vyhledávání souborů pro MATE"
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Search Tool is a simple but powerful utility that allows you to "
+"search for files and folders on any mounted file system. Its interface gives"
+" you instant access to a wide variety of parameters for each search, such as"
+" text contained within a file, ownership, date of modification, file size, "
+"folder exclusion, etc.. </p>"
+msgstr "<p> Vyhledávání souborů pro MATE je jednoduchý ale mocný nástroj umožňující vám hledat soubory a složky na libovolném připojeném souborovém systému. Rozhraní vám umožňuje rychlý přístup k široké škále parametrů hledání jako je vyhledání textu v obsahu souborů, hledání dle vlastníka, data změny, velikosti, nastavení vyjímek hledání u složek a podobně. </p>"
+
+#: ../gsearchtool/data/mate-search-tool.desktop.in.h:1
+msgid "MATE Search Tool"
+msgstr "Vyhledávání souborů pro MATE"
+
+#: ../gsearchtool/data/mate-search-tool.desktop.in.h:2
+msgid "Locate documents and folders on this computer by name or content"
+msgstr "Najít dokumenty a složky v tomto počítači podle jména nebo obsahu"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:1
+msgid "Search history"
+msgstr "Historie hledání"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:2
+msgid "This key defines the items which were searched for in the past."
+msgstr "Tento klíč definuje položky, které byly v minulosti vyhledávány."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:3
+msgid "Show Additional Options"
+msgstr "Zvolit Zobrazit více možností"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:4
+msgid "Disable Quick Search"
+msgstr "Zakázat rychlé hledání"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:5
+msgid ""
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
+msgstr "Tento klíč určuje, jestli nástroj hledání zakazuje použití příkazu locate při provádění jednoduchých hledání názvů souborů."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:6
+msgid "Quick Search Excluded Paths"
+msgstr "Cesty vyjmuté z rychlého hledání"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:7
+msgid ""
+"This key defines the paths the search tool will exclude from a quick search."
+" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
+"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
+msgstr "Tento klíč definuje cesty, které nástroj hledání vyjme z rychlého hledání. Jsou podporovány zástupné znaky „*“ a „?“. Výchozí hodnoty jsou /mnt/*, /media/*, /dev/*, /tmp/*, /proc/* a /var/*."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:8
+msgid "Disable Quick Search Second Scan"
+msgstr "Zakázat druhý průchod rychlého hledání"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:9
+msgid ""
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
+msgstr "Tento klíč určuje, jestli nástroj hledání zakazuje použití příkazu find po provedení rychlého hledání."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:10
+msgid "Quick Search Second Scan Excluded Paths"
+msgstr "Cesty vyjmuté z druhého průchodu rychlého hledání"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:11
+msgid ""
+"This key defines the paths the search tool will exclude from a second scan "
+"when performing a quick search. The second scan uses the find command to "
+"search for files. The purpose of the second scan is to find files that have "
+"not been indexed. The wildcards '*' and '?' are supported. The default value"
+" is /."
+msgstr "Tento klíč definuje cesty, které nástroj hledání vyjme z druhého průchodu při rychlém hledání. Druhý průchod používá pro hledání souborů příkaz find. Účel druhého průchodu je najít soubory, které nebyly indexovány. Jsou podporovány zástupné znaky „*“ a „?“. Výchozí hodnota je /."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:12
+msgid "Search Result Columns Order"
+msgstr "Pořadí sloupců výsledků hledání"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:13
+msgid ""
+"This key defines the order of the columns in the search results. This key "
+"should not be modified by the user."
+msgstr "Tento klíč definuje pořadí sloupců ve výsledcích hledání. Tento klíč by neměl být měněn uživatelem."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:14
+msgid "Default Window Width"
+msgstr "Výchozí šířka okna"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:15
+msgid ""
+"This key defines the window width, and it's used to remember the size of the"
+" search tool between sessions. Setting it to -1 will make the search tool "
+"use the default width."
+msgstr "Tento klíč definuje šířku okna a používá se pro zapamatování velikosti nástroje pro hledání mezi sezeními. Jeho nastavení na -1 způsobí, že nástroj pro hledání bude používat výchozí šířku."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:16
+msgid "Default Window Height"
+msgstr "Výchozí výška okna"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:17
+msgid ""
+"This key defines the window height, and it's used to remember the size of "
+"the search tool between sessions. Setting it to -1 will make the search tool"
+" use the default height."
+msgstr "Tento klíč definuje výšku okna a používá se pro zapamatování velikosti nástroje pro hledání mezi sezeními. Jeho nastavení na -1 způsobí, že nástroj pro hledání bude používat výchozí výšku."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:18
+msgid "Default Window Maximized"
+msgstr "Standardně je okno maximalizované"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:19
+msgid ""
+"This key determines if the search tool window starts in a maximized state."
+msgstr "Tento klíč určuje, jestli se nástroj hledání spouští v maximalizovaném stavu."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:20
+msgid "Look in Folder"
+msgstr "Hledat ve složce"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:21
+msgid "This key defines the default value of the \"Look in Folder\" widget."
+msgstr "Tento klíč definuje výchozí hodnotu widgetu „Hledat ve složce“."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:22
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Obsahuje text“."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:23
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
+msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Datum úpravy méně než“."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:24
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
+msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Datum úpravy více než“."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:25
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Velikost alespoň“."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:26
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
+msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Velikost nejvíce“."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:27
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
+msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Soubor je prázdný“."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:28
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
+msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Vlastněno uživatelem“."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:29
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when"
+" the search tool is started."
+msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Vlastněno skupinou“."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:30
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
+msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Vlastníka nelze rozpoznat“."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:31
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Název neobsahuje“."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:32
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option"
+" is selected when the search tool is started."
+msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Název odpovídá regulárnímu výrazu“."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:33
+msgid ""
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
+msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Zobrazovat skryté soubory a složky“."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:34
+msgid ""
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Sledovat symbolické odkazy“."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:35
+msgid ""
+"This key determines if the \"Exclude other filesystems\" search option is "
+"selected when the search tool is started."
+msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Vyjmout jiné souborové systémy“."
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "Soubor není platným souborem .desktop"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Nerozpoznaná verze „%s“ souboru pracovní plochy"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:957
+#, c-format
+msgid "Starting %s"
+msgstr "Spouští se %s"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1098
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "Aplikace nepřijímá dokumenty z příkazové řádky"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1166
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "Nerozpoznaná volba spuštění: %d"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1365
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "URI dokumentu nelze postoupit položce pracovní plochy „Type=Link“"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1384
+#, c-format
+msgid "Not a launchable item"
+msgstr "Nespustitelná položka"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:225
+msgid "Disable connection to session manager"
+msgstr "Vypnout spojení se správcem sezení"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+msgid "Specify file containing saved configuration"
+msgstr "Stanovit soubor obsahující uloženou konfiguraci"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+msgid "FILE"
+msgstr "SOUBOR"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+msgid "Specify session management ID"
+msgstr "Stanovit ID správy sezení"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+msgid "ID"
+msgstr "ID"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:252
+msgid "Session management options:"
+msgstr "Možnosti správy sezení:"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:253
+msgid "Show session management options"
+msgstr "Zobrazit možnosti správy sezení"
+
+#: ../gsearchtool/src/gsearchtool.c:82
+msgid "Contains the _text"
+msgstr "_Obsahuje text"
+
+#: ../gsearchtool/src/gsearchtool.c:84
+msgid "_Date modified less than"
+msgstr "_Datum úpravy méně než"
+
+#: ../gsearchtool/src/gsearchtool.c:84 ../gsearchtool/src/gsearchtool.c:85
+msgid "days"
+msgstr "dní"
+
+#: ../gsearchtool/src/gsearchtool.c:85
+msgid "Date modified more than"
+msgstr "Datum úpravy více než"
+
+#: ../gsearchtool/src/gsearchtool.c:87
+msgid "S_ize at least"
+msgstr "Veliko_st alespoň"
+
+#: ../gsearchtool/src/gsearchtool.c:87 ../gsearchtool/src/gsearchtool.c:88
+msgid "kilobytes"
+msgstr "kilobajtů"
+
+#: ../gsearchtool/src/gsearchtool.c:88
+msgid "Si_ze at most"
+msgstr "Velikost nejví_ce"
+
+#: ../gsearchtool/src/gsearchtool.c:89
+msgid "File is empty"
+msgstr "Soubor je prázdný"
+
+#: ../gsearchtool/src/gsearchtool.c:91
+msgid "Owned by _user"
+msgstr "Vlastněno _uživatelem"
+
+#: ../gsearchtool/src/gsearchtool.c:92
+msgid "Owned by _group"
+msgstr "Vlastněno s_kupinou"
+
+#: ../gsearchtool/src/gsearchtool.c:93
+msgid "Owner is unrecognized"
+msgstr "Vlastníka nelze rozpoznat"
+
+#: ../gsearchtool/src/gsearchtool.c:95
+msgid "Na_me does not contain"
+msgstr "Náze_v neobsahuje"
+
+#: ../gsearchtool/src/gsearchtool.c:96
+msgid "Name matches regular e_xpression"
+msgstr "Název odpovídá re_gulárnímu výrazu"
+
+#: ../gsearchtool/src/gsearchtool.c:98
+msgid "Show hidden and backup files"
+msgstr "Zobrazovat skryté a záložní soubory"
+
+#: ../gsearchtool/src/gsearchtool.c:99
+msgid "Follow symbolic links"
+msgstr "Sledovat symbolické odkazy"
+
+#: ../gsearchtool/src/gsearchtool.c:100
+msgid "Exclude other filesystems"
+msgstr "Vyjmout jiné souborové systémy"
+
+#: ../gsearchtool/src/gsearchtool.c:158
+msgid "Show version of the application"
+msgstr "Zobrazit verzi aplikace"
+
+#: ../gsearchtool/src/gsearchtool.c:159 ../gsearchtool/src/gsearchtool.c:164
+#: ../gsearchtool/src/gsearchtool.c:173
+msgid "STRING"
+msgstr "ŘETĚZEC"
+
+#: ../gsearchtool/src/gsearchtool.c:160
+msgid "PATH"
+msgstr "CESTA"
+
+#: ../gsearchtool/src/gsearchtool.c:161
+msgid "VALUE"
+msgstr "HODNOTA"
+
+#: ../gsearchtool/src/gsearchtool.c:165 ../gsearchtool/src/gsearchtool.c:166
+msgid "DAYS"
+msgstr "DNY"
+
+#: ../gsearchtool/src/gsearchtool.c:167 ../gsearchtool/src/gsearchtool.c:168
+msgid "KILOBYTES"
+msgstr "KILOBYTY"
+
+#: ../gsearchtool/src/gsearchtool.c:170
+msgid "USER"
+msgstr "UŽIVATEL"
+
+#: ../gsearchtool/src/gsearchtool.c:171
+msgid "GROUP"
+msgstr "SKUPINA"
+
+#: ../gsearchtool/src/gsearchtool.c:174
+msgid "PATTERN"
+msgstr "VZOREK"
+
+#: ../gsearchtool/src/gsearchtool.c:385
+msgid "A locate database has probably not been created."
+msgstr "Pravděpodobně nebyla vytvořena databáze locate."
+
+#: ../gsearchtool/src/gsearchtool.c:487
+#, c-format
+msgid "Character set conversion failed for \"%s\""
+msgstr "Převod znakové sady selhal pro „%s“"
+
+#: ../gsearchtool/src/gsearchtool.c:511
+msgid "Searching..."
+msgstr "Hledání…"
+
+#: ../gsearchtool/src/gsearchtool.c:511 ../gsearchtool/src/gsearchtool.c:1031
+#: ../gsearchtool/src/gsearchtool.c:3030
+msgid "Search for Files"
+msgstr "Hledat soubory"
+
+#: ../gsearchtool/src/gsearchtool.c:977 ../gsearchtool/src/gsearchtool.c:1006
+msgid "No files found"
+msgstr "Nenalezeny žádné soubory"
+
+#: ../gsearchtool/src/gsearchtool.c:999
+msgid "(stopped)"
+msgstr "(zastaveno)"
+
+#: ../gsearchtool/src/gsearchtool.c:1005
+msgid "No Files Found"
+msgstr "Nenalezeny žádné soubory"
+
+#: ../gsearchtool/src/gsearchtool.c:1010
+#, c-format
+msgid "%'d File Found"
+msgid_plural "%'d Files Found"
+msgstr[0] "Nalezen %'d soubor"
+msgstr[1] "Nalezeny %'d soubory"
+msgstr[2] "Nalezeno %'d souborů"
+
+#: ../gsearchtool/src/gsearchtool.c:1014 ../gsearchtool/src/gsearchtool.c:1052
+#, c-format
+msgid "%'d file found"
+msgid_plural "%'d files found"
+msgstr[0] "Nalezen %'d soubor"
+msgstr[1] "Nalezeny %'d soubory"
+msgstr[2] "Nalezeno %'d souborů"
+
+#: ../gsearchtool/src/gsearchtool.c:1143
+msgid "Entry changed called for a non entry option!"
+msgstr "Signál změny políčka volán pro volbu bez políčka!"
+
+#: ../gsearchtool/src/gsearchtool.c:1308
+msgid "Set the text of \"Name contains\" search option"
+msgstr "Nastavit text možnosti hledání „Název obsahuje“"
+
+#: ../gsearchtool/src/gsearchtool.c:1309
+msgid "Set the text of \"Look in folder\" search option"
+msgstr "Nastavit text možnosti hledání „Hledat ve složce“"
+
+#: ../gsearchtool/src/gsearchtool.c:1310
+msgid "Sort files by one of the following: name, folder, size, type, or date"
+msgstr "Třídit soubory podle jednoho z následujícího: název, složka, velikost, typ nebo datum"
+
+#: ../gsearchtool/src/gsearchtool.c:1311
+msgid "Set sort order to descending, the default is ascending"
+msgstr "Nastavit pořadí třídění na sestupné, výchozí je vzestupné"
+
+#: ../gsearchtool/src/gsearchtool.c:1312
+msgid "Automatically start a search"
+msgstr "Automaticky začít vyhledávat"
+
+#: ../gsearchtool/src/gsearchtool.c:1318
+#, c-format
+msgid "Select the \"%s\" search option"
+msgstr "Zvolit možnost hledání „%s“"
+
+#: ../gsearchtool/src/gsearchtool.c:1321
+#, c-format
+msgid "Select and set the \"%s\" search option"
+msgstr "Zvolit a nastavit možnost hledání „%s“"
+
+#: ../gsearchtool/src/gsearchtool.c:1428
+msgid "Invalid option passed to sortby command line argument."
+msgstr "Parametru příkazové řádky sortby byla předána neplatná volba."
+
+#: ../gsearchtool/src/gsearchtool.c:1720
+msgid ""
+"\n"
+"... Too many errors to display ..."
+msgstr "\n… Příliš mnoho chyb k zobrazení …"
+
+#: ../gsearchtool/src/gsearchtool.c:1734
+msgid ""
+"The search results may be invalid.  There were errors while performing this "
+"search."
+msgstr "Výsledky hledání možná nejsou platné. Při hledání došlo k chybám."
+
+#: ../gsearchtool/src/gsearchtool.c:1746 ../gsearchtool/src/gsearchtool.c:1790
+msgid "Show more _details"
+msgstr "Zobrazit více _podrobností"
+
+#: ../gsearchtool/src/gsearchtool.c:1776
+msgid ""
+"The search results may be out of date or invalid.  Do you want to disable "
+"the quick search feature?"
+msgstr "Výsledky hledání jsou možná zastaralé nebo neplatné. Chcete zakázat funkci rychlého hledání?"
+
+#: ../gsearchtool/src/gsearchtool.c:1801
+msgid "Disable _Quick Search"
+msgstr "Zakázat _rychlé hledání"
+
+#: ../gsearchtool/src/gsearchtool.c:1828
+#, c-format
+msgid "Failed to set process group id of child %d: %s.\n"
+msgstr "Nelze nastavit id skupiny procesů potomka %d: %s.\n"
+
+#: ../gsearchtool/src/gsearchtool.c:1853
+msgid "Error parsing the search command."
+msgstr "Chyba při zpracovávání příkazu hledání."
+
+#: ../gsearchtool/src/gsearchtool.c:1885
+msgid "Error running the search command."
+msgstr "Chyba při spouštění příkazu hledání."
+
+#: ../gsearchtool/src/gsearchtool.c:2008
+#, c-format
+msgid "Enter a text value for the \"%s\" search option."
+msgstr "Zadejte textovou hodnotu možnosti hledání „%s“."
+
+#. Translators:  Below is a string displaying the search options name
+#. and unit value.  For example, "\"Date modified less than\" in days".
+#: ../gsearchtool/src/gsearchtool.c:2013
+#, c-format
+msgid "\"%s\" in %s"
+msgstr "„%s“, jednotky %s"
+
+#: ../gsearchtool/src/gsearchtool.c:2015
+#, c-format
+msgid "Enter a value in %s for the \"%s\" search option."
+msgstr "Zadejte hodnotu v %s pro možnost hledání „%s“."
+
+#: ../gsearchtool/src/gsearchtool.c:2073
+#, c-format
+msgid "Remove \"%s\""
+msgstr "Odstranit „%s“"
+
+#: ../gsearchtool/src/gsearchtool.c:2074
+#, c-format
+msgid "Click to remove the \"%s\" search option."
+msgstr "Kliknutím odstraňte možnost hledání „%s“."
+
+#: ../gsearchtool/src/gsearchtool.c:2167
+msgid "A_vailable options:"
+msgstr "Dostupné _možnosti:"
+
+#: ../gsearchtool/src/gsearchtool.c:2196
+msgid "Available options"
+msgstr "Dostupné možnosti"
+
+#: ../gsearchtool/src/gsearchtool.c:2197
+msgid "Select a search option from the drop-down list."
+msgstr "Vyberte možnost hledání z rozbalovacího seznamu."
+
+#: ../gsearchtool/src/gsearchtool.c:2209
+msgid "Add search option"
+msgstr "Přidat možnost hledání"
+
+#: ../gsearchtool/src/gsearchtool.c:2210
+msgid "Click to add the selected available search option."
+msgstr "Kliknutím přidáte vybranou možnost hledání."
+
+#: ../gsearchtool/src/gsearchtool.c:2299
+msgid "S_earch results:"
+msgstr "Výsl_edky hledání:"
+
+#: ../gsearchtool/src/gsearchtool.c:2343
+msgid "List View"
+msgstr "Seznamový pohled"
+
+#: ../gsearchtool/src/gsearchtool.c:2403
+#: ../mate-dictionary/libgdict/gdict-source.c:246
+msgid "Name"
+msgstr "Název"
+
+#: ../gsearchtool/src/gsearchtool.c:2452
+msgid "Type"
+msgstr "Typ"
+
+#: ../gsearchtool/src/gsearchtool.c:2464
+msgid "Date Modified"
+msgstr "Datum změny"
+
+#: ../gsearchtool/src/gsearchtool.c:2799
+msgid "_Name contains:"
+msgstr "_Název obsahuje:"
+
+#: ../gsearchtool/src/gsearchtool.c:2813 ../gsearchtool/src/gsearchtool.c:2814
+msgid "Enter a filename or partial filename with or without wildcards."
+msgstr "Zadejte název souboru nebo část názvu souboru, se zástupnými znaky nebo bez nich."
+
+#: ../gsearchtool/src/gsearchtool.c:2814
+msgid "Name contains"
+msgstr "Název obsahuje"
+
+#: ../gsearchtool/src/gsearchtool.c:2820
+msgid "_Look in folder:"
+msgstr "Hledat ve _složce:"
+
+#: ../gsearchtool/src/gsearchtool.c:2826
+msgid "Browse"
+msgstr "Probírat"
+
+#: ../gsearchtool/src/gsearchtool.c:2835
+msgid "Look in folder"
+msgstr "Hledat ve složce"
+
+#: ../gsearchtool/src/gsearchtool.c:2835
+msgid "Select the folder or device from which you want to begin the search."
+msgstr "Zvolte složku nebo zařízení, kde chcete začít hledat."
+
+#: ../gsearchtool/src/gsearchtool.c:2853
+msgid "Select more _options"
+msgstr "Vybrat další _možnosti"
+
+#: ../gsearchtool/src/gsearchtool.c:2862
+msgid "Select more options"
+msgstr "Vybrat další možnosti"
+
+#: ../gsearchtool/src/gsearchtool.c:2862
+msgid "Click to expand or collapse the list of available options."
+msgstr "Kliknutím rozbalte nebo sbalte seznam dostupných možností."
+
+#: ../gsearchtool/src/gsearchtool.c:2886
+msgid "Click to display the help manual."
+msgstr "Kliknutím zobrazte příručku."
+
+#: ../gsearchtool/src/gsearchtool.c:2894
+msgid "Click to close \"Search for Files\"."
+msgstr "Kliknutím zavřete „Hledat soubory“."
+
+#: ../gsearchtool/src/gsearchtool.c:2920
+msgid "Click to perform a search."
+msgstr "Kliknutím začněte hledat."
+
+#: ../gsearchtool/src/gsearchtool.c:2921
+msgid "Click to stop a search."
+msgstr "Kliknutím zastavte hledání."
+
+#: ../gsearchtool/src/gsearchtool.c:3015
+msgid "- the MATE Search Tool"
+msgstr "- prohledávací nástroj pro MATE"
+
+#: ../gsearchtool/src/gsearchtool.c:3024
+#, c-format
+msgid "Failed to parse command line arguments: %s\n"
+msgstr "Selhala analýza parametrů příkazové řádky: %s\n"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:198
+msgid "Could not open help document."
+msgstr "Nelze otevřít dokument nápovědy."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:349
+#, c-format
+msgid "Are you sure you want to open %d document?"
+msgid_plural "Are you sure you want to open %d documents?"
+msgstr[0] "Opravdu chcete otevřít %d dokument?"
+msgstr[1] "Opravdu chcete otevřít %d dokumenty?"
+msgstr[2] "Opravdu chcete otevřít %d dokumentů?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:354
+#: ../gsearchtool/src/gsearchtool-callbacks.c:551
+#, c-format
+msgid "This will open %d separate window."
+msgid_plural "This will open %d separate windows."
+msgstr[0] "Toto otevře %d oddělené okno."
+msgstr[1] "Toto otevře %d oddělená okna."
+msgstr[2] "Toto otevře %d oddělených oken."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:394
+#, c-format
+msgid "Could not open document \"%s\"."
+msgstr "Nelze otevřít dokument „%s“."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:423
+#, c-format
+msgid "Could not open folder \"%s\"."
+msgstr "Nelze otevřít složku „%s“."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:431
+msgid "The caja file manager is not running."
+msgstr "Správce souborů Caja neběží."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:523
+msgid "There is no installed viewer capable of displaying the document."
+msgstr "Není nainstalován žádný prohlížeč schopný zobrazit tento dokument."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:546
+#, c-format
+msgid "Are you sure you want to open %d folder?"
+msgid_plural "Are you sure you want to open %d folders?"
+msgstr[0] "Opravdu chcete otevřít %d složku?"
+msgstr[1] "Opravdu chcete otevřít %d složky?"
+msgstr[2] "Opravdu chcete otevřít %d složek?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:699
+#, c-format
+msgid "Could not move \"%s\" to trash."
+msgstr "Nelze přesunout „%s“ do koše."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:730
+#, c-format
+msgid "Do you want to delete \"%s\" permanently?"
+msgstr "Chcete „%s“ odstranit natrvalo?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:733
+#, c-format
+msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
+msgstr "Koš není k dispozici. Nelze přesunout „%s“ do koše."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:772
+#, c-format
+msgid "Could not delete \"%s\"."
+msgstr "Nelze odstranit „%s“."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:884
+#, c-format
+msgid "Deleting \"%s\" failed: %s."
+msgstr "Odstraňování „%s“ selhalo: %s."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:896
+#, c-format
+msgid "Moving \"%s\" failed: %s."
+msgstr "Přesun „%s“ selhal: %s."
+
+#. Popup menu item: Open
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1024
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1054
+msgid "_Open"
+msgstr "_Otevřít"
+
+#. Popup menu item: Open with (default)
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1079
+#, c-format
+msgid "_Open with %s"
+msgstr "_Otevřít s %s"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1114
+#, c-format
+msgid "Open with %s"
+msgstr "Otevřít s %s"
+
+#. Popup menu item: Open With
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1147
+msgid "Open Wit_h"
+msgstr "Otevřít _s"
+
+#. Popup menu item: Open Containing Folder
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1192
+msgid "Open Containing _Folder"
+msgstr "Otevřít Containing _složku"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1232
+msgid "_Save Results As..."
+msgstr "Uložit výsledky j_ako…"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1614
+msgid "Save Search Results As..."
+msgstr "Uložit výsledky hledání jako…"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1643
+msgid "Could not save document."
+msgstr "Nelze uložit dokument."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1644
+msgid "You did not select a document name."
+msgstr "Nevybrali jste název dokumentu."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1674
+#, c-format
+msgid "Could not save \"%s\" document to \"%s\"."
+msgstr "Nelze uložit dokument „%s“ do „%s“."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1707
+#, c-format
+msgid "The document \"%s\" already exists.  Would you like to replace it?"
+msgstr "Dokument „%s“ již existuje. Chcete jej nahradit?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1711
+msgid "If you replace an existing file, its contents will be overwritten."
+msgstr "Pokud nahradíte existující soubor, jeho obsah bude přepsán."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1726
+#: ../mate-screenshot/src/screenshot-xfer.c:82
+msgid "_Replace"
+msgstr "_Nahradit"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1775
+msgid "The document name you selected is a folder."
+msgstr "Název dokumentu, který jste vybrali, je složka."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1811
+msgid "You may not have write permissions to the document."
+msgstr "Možná nemáte oprávnění zápisu do dokumentu."
+
+#. Translators:  Below are the strings displayed in the 'Date Modified'
+#. column of the list view.  The format of this string can vary depending
+#. on age of a file.  Please modify the format of the timestamp to match
+#. your locale.  For example, to display 24 hour time replace the '%-I'
+#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
+#: ../gsearchtool/src/gsearchtool-support.c:448
+msgid "today at %-I:%M %p"
+msgstr "dnes v %-H:%M"
+
+#: ../gsearchtool/src/gsearchtool-support.c:450
+msgid "yesterday at %-I:%M %p"
+msgstr "včera v %-H:%M"
+
+#: ../gsearchtool/src/gsearchtool-support.c:452
+#: ../gsearchtool/src/gsearchtool-support.c:454
+msgid "%A, %B %-d %Y at %-I:%M:%S %p"
+msgstr "%A %-d. %B %Y v %-H:%M:%S"
+
+#: ../gsearchtool/src/gsearchtool-support.c:641
+msgid "link (broken)"
+msgstr "odkaz (chybný)"
+
+#: ../gsearchtool/src/gsearchtool-support.c:645
+#, c-format
+msgid "link to %s"
+msgstr "odkaz na %s"
+
+#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
+#. Localizers:
+#. * Feel free to leave out the st, nd, rd and th suffix or
+#. * make some or all of them match.
+#. localizers: tag used to detect the first copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1257
+msgid " (copy)"
+msgstr " (kopie)"
+
+#. localizers: tag used to detect the second copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1259
+msgid " (another copy)"
+msgstr " (další kopie)"
+
+#. localizers: tag used to detect the x11th copy of a file
+#. localizers: tag used to detect the x12th copy of a file
+#. localizers: tag used to detect the x13th copy of a file
+#. localizers: tag used to detect the xxth copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1262
+#: ../gsearchtool/src/gsearchtool-support.c:1264
+#: ../gsearchtool/src/gsearchtool-support.c:1266
+#: ../gsearchtool/src/gsearchtool-support.c:1276
+msgid "th copy)"
+msgstr ". kopie)"
+
+#. localizers: tag used to detect the x1st copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1269
+msgid "st copy)"
+msgstr ". kopie)"
+
+#. localizers: tag used to detect the x2nd copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1271
+msgid "nd copy)"
+msgstr ". kopie)"
+
+#. localizers: tag used to detect the x3rd copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1273
+msgid "rd copy)"
+msgstr ". kopie)"
+
+#. localizers: appended to first file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1290
+#, c-format
+msgid "%s (copy)%s"
+msgstr "%s (kopie)%s"
+
+#. localizers: appended to second file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1292
+#, c-format
+msgid "%s (another copy)%s"
+msgstr "%s (další kopie)%s"
+
+#. localizers: appended to x11th file copy
+#. localizers: appended to x12th file copy
+#. localizers: appended to x13th file copy
+#. localizers: appended to xxth file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1295
+#: ../gsearchtool/src/gsearchtool-support.c:1297
+#: ../gsearchtool/src/gsearchtool-support.c:1299
+#: ../gsearchtool/src/gsearchtool-support.c:1308
+#, c-format
+msgid "%s (%dth copy)%s"
+msgstr "%s (%d. kopie)%s"
+
+#. localizers: appended to x1st file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1302
+#, c-format
+msgid "%s (%dst copy)%s"
+msgstr "%s (%d. kopie)%s"
+
+#. localizers: appended to x2nd file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1304
+#, c-format
+msgid "%s (%dnd copy)%s"
+msgstr "%s (%d. kopie)%s"
+
+#. localizers: appended to x3rd file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1306
+#, c-format
+msgid "%s (%drd copy)%s"
+msgstr "%s (%d. kopie)%s"
+
+#: ../gsearchtool/src/gsearchtool-support.c:1353
+msgid " (invalid Unicode)"
+msgstr " (neplatné Unicode)"
+
+#. localizers: opening parentheses to match the "th copy)" string
+#: ../gsearchtool/src/gsearchtool-support.c:1442
+msgid " ("
+msgstr " ("
+
+#. localizers: opening parentheses of the "th copy)" string
+#: ../gsearchtool/src/gsearchtool-support.c:1450
+#, c-format
+msgid " (%d"
+msgstr " (%d"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "Prohlížeč souborů protokolů"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "Prohlížet nebo sledovat soubory systémových protokolů"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
+msgid "Log file to open up on startup"
+msgstr "Soubor protokolu, který otevřít při startu"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
+msgid ""
+"Specifies the log file displayed at startup. The default is either "
+"/var/adm/messages or /var/log/messages, depending on your operating system."
+msgstr "Určuje soubor protokolu zobrazovaný při startu. Výchozí je buď /var/adm/messages nebo /var/log/messages, podle vašeho operačního systému."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
+msgid "Size of the font used to display the log"
+msgstr "Velikost písma používaného pro zobrazování protokolu"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr "Určuje velikost neproporcionálního písma používaného pro zobrazování protokolů v hlavním stromovém pohledu. Výchozí hodnota je převzata z výchozí velikosti písma terminálu."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
+msgid "Height of the main window in pixels"
+msgstr "Výška hlavního okna v pixelech"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "Určuje výšku hlavního okna prohlížeče protokolů v pixelech."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
+msgid "Width of the main window in pixels"
+msgstr "Šířka hlavního okna v pixelech"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "Určuje šířku hlavního okna prohlížeče protokolů v pixelech."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
+msgid "Log files to open up on startup"
+msgstr "Soubory s protokoly, které otevřít při startu"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr "Určuje seznam souborů s protokoly, které otevřít při startu. Výchozí seznam je vytvořen čtením /etc/syslog.conf."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
+msgid "List of saved filters"
+msgstr "Seznam uložených filtrů"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
+msgid "List of saved regexp filters"
+msgstr "Seznam uložených regulárních výrazů filtrů"
+
+#: ../logview/data/logview-filter.ui.h:1
+#: ../mate-screenshot/data/mate-screenshot.ui.h:3
+msgid "_Name:"
+msgstr "Náz_ev:"
+
+#: ../logview/data/logview-filter.ui.h:2
+msgid "_Regular Expression:"
+msgstr "_Regulární výraz:"
+
+#: ../logview/data/logview-filter.ui.h:3
+msgid "Highlight"
+msgstr "Zvýraznit"
+
+#: ../logview/data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "Skrýt"
+
+#: ../logview/data/logview-filter.ui.h:5
+msgid "Foreground:"
+msgstr "Popředí:"
+
+#: ../logview/data/logview-filter.ui.h:6
+msgid "Background:"
+msgstr "Pozadí:"
+
+#: ../logview/data/logview-filter.ui.h:7
+msgid "Effect:"
+msgstr "Efekt:"
+
+#: ../logview/src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "Nelze otevřít soubor %s"
+
+#: ../logview/src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "Název filtru je prázdný!"
+
+#: ../logview/src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "Název filtru nesmí obsahovat znak „:“"
+
+#: ../logview/src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "Regulární výraz je prázdný!"
+
+#: ../logview/src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "Regulární výraz není platný: %s"
+
+#: ../logview/src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "Prosím stanovte buď barvu popředí nebo pozadí!"
+
+#: ../logview/src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "Upravit filtr"
+
+#: ../logview/src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "Přidat nový filtr"
+
+#: ../logview/src/logview-filter-manager.c:508
+msgid "Filters"
+msgstr "Filtry"
+
+#: ../logview/src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "_Hledat:"
+
+#: ../logview/src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "Najít předchozí"
+
+#: ../logview/src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "Najít předchozí výskyt hledaného řetězce"
+
+#: ../logview/src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "Najít následující"
+
+#: ../logview/src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "Najít následující výskyt hledaného řetězce"
+
+#: ../logview/src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "Vymazat hledaný řetězec"
+
+#: ../logview/src/logview-log.c:598
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "Chyba při rozbalování protokolu zabaleného do GZip. Soubor je možná poškozený."
+
+#: ../logview/src/logview-log.c:645
+msgid "You don't have enough permissions to read the file."
+msgstr "Nemáte dostatečná oprávnění ke čtení souboru."
+
+#: ../logview/src/logview-log.c:660
+msgid "The file is not a regular file or is not a text file."
+msgstr "Soubor není obyčejným nebo textovým souborem."
+
+#: ../logview/src/logview-log.c:742
+msgid "This version of System Log does not support GZipped logs."
+msgstr "Tato verze systémového protokolu nepodporuje protokoly zabalené ve formátu GZip."
+
+#: ../logview/src/logview-loglist.c:316
+msgid "Loading..."
+msgstr "Načítá se…"
+
+#: ../logview/src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "Zobrazit verzi aplikace"
+
+#: ../logview/src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[SOUBOR PROTOKOLU…]"
+
+#: ../logview/src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - Procházet a sledovat protokoly"
+
+#: ../logview/src/logview-main.c:100
+msgid "Log Viewer"
+msgstr "Prohlížeč protokolů"
+
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:762
+msgid "System Log Viewer"
+msgstr "Prohlížeč systémových protokolů"
+
+#: ../logview/src/logview-window.c:212
+#, c-format
+msgid "last update: %s"
+msgstr "poslední aktualizace: %s"
+
+#: ../logview/src/logview-window.c:216
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d řádků (%s) - %s"
+
+#: ../logview/src/logview-window.c:320
+msgid "Open Log"
+msgstr "Otevřít protokol"
+
+#: ../logview/src/logview-window.c:359
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Při zobrazování nápovědy došlo k chybě: %s"
+
+#: ../logview/src/logview-window.c:473
+msgid "Wrapped"
+msgstr "Zabalený"
+
+#: ../logview/src/logview-window.c:488
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
+msgid "Not found"
+msgstr "Nenalezeno"
+
+#: ../logview/src/logview-window.c:767
+msgid "A system log viewer for MATE."
+msgstr "Prohlížeč systémových protokolů pro MATE."
+
+#: ../logview/src/logview-window.c:810
+#: ../mate-dictionary/src/gdict-window.c:1284
+msgid "_File"
+msgstr "_Soubor"
+
+#: ../logview/src/logview-window.c:813
+msgid "_Filters"
+msgstr "_Filtry"
+
+#: ../logview/src/logview-window.c:816
+msgid "_Open..."
+msgstr "_Otevřít…"
+
+#: ../logview/src/logview-window.c:816
+msgid "Open a log from file"
+msgstr "Otevřít protokol ze souboru"
+
+#: ../logview/src/logview-window.c:818
+msgid "_Close"
+msgstr "_Zavřít"
+
+#: ../logview/src/logview-window.c:818
+msgid "Close this log"
+msgstr "Zavřít tento protokol"
+
+#: ../logview/src/logview-window.c:820
+msgid "_Quit"
+msgstr "U_končit"
+
+#: ../logview/src/logview-window.c:820
+msgid "Quit the log viewer"
+msgstr "Ukončit prohlížeč protokolů"
+
+#: ../logview/src/logview-window.c:823
+msgid "_Copy"
+msgstr "_Kopírovat"
+
+#: ../logview/src/logview-window.c:823
+msgid "Copy the selection"
+msgstr "Kopírovat výběr"
+
+#: ../logview/src/logview-window.c:825
+#: ../mate-dictionary/src/gdict-window.c:1305
+msgid "Select _All"
+msgstr "Vybrat vš_e"
+
+#: ../logview/src/logview-window.c:825
+msgid "Select the entire log"
+msgstr "Vybrat celý protokol"
+
+#: ../logview/src/logview-window.c:827
+msgid "_Find..."
+msgstr "_Hledat…"
+
+#: ../logview/src/logview-window.c:827
+msgid "Find a word or phrase in the log"
+msgstr "Najít v protokolu slovo nebo frázi"
+
+#: ../logview/src/logview-window.c:830
+msgid "Bigger text size"
+msgstr "Větší velikost textu"
+
+#: ../logview/src/logview-window.c:832
+msgid "Smaller text size"
+msgstr "Menší velikost textu"
+
+#: ../logview/src/logview-window.c:834
+msgid "Normal text size"
+msgstr "Normální velikost textu"
+
+#: ../logview/src/logview-window.c:837
+msgid "Manage Filters"
+msgstr "Spravovat filtry"
+
+#: ../logview/src/logview-window.c:837
+msgid "Manage filters"
+msgstr "Spravovat filtry"
+
+#: ../logview/src/logview-window.c:840
+msgid "Open the help contents for the log viewer"
+msgstr "Otevřít obsah nápovědy prohlížeče protokolů"
+
+#: ../logview/src/logview-window.c:842
+#: ../mate-dictionary/src/gdict-applet.c:1188
+#: ../mate-dictionary/src/gdict-window.c:1340
+msgid "_About"
+msgstr "O _aplikaci"
+
+#: ../logview/src/logview-window.c:842
+msgid "Show the about dialog for the log viewer"
+msgstr "Zobrazit informace o aplikaci prohlížeče protokolů"
+
+#: ../logview/src/logview-window.c:847
+msgid "_Statusbar"
+msgstr "_Stavový řádek"
+
+#: ../logview/src/logview-window.c:847
+msgid "Show Status Bar"
+msgstr "Zobrazovat stavový řádek"
+
+#: ../logview/src/logview-window.c:849
+msgid "Side _Pane"
+msgstr "_Postranní panel"
+
+#: ../logview/src/logview-window.c:849
+msgid "Show Side Pane"
+msgstr "Zobrazovat postranní panel"
+
+#: ../logview/src/logview-window.c:851
+msgid "Show matches only"
+msgstr "Zobrazit pouze nalezené shody"
+
+#: ../logview/src/logview-window.c:851
+msgid "Only show lines that match one of the given filters"
+msgstr "Zobrazit pouze řádky, které odpovídají jednomu ze stanovených filtrů"
+
+#: ../logview/src/logview-window.c:983
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "Nelze číst z „%s“"
+
+#: ../logview/src/logview-window.c:1413
+msgid "Version: "
+msgstr "Verze: "
+
+#: ../logview/src/logview-window.c:1524
+msgid "Could not open the following files:"
+msgstr "Nelze otevřít následující soubory:"
 
 #: ../mate-dictionary/data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
@@ -597,7 +1865,7 @@ msgstr "Výchozí server se slovníkem"
 
 #: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:1
 msgid "MATE Dictionary"
-msgstr ""
+msgstr "Slovník pro MATE"
 
 #: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:2
 msgid "Check word definitions and spellings in an online dictionary"
@@ -605,7 +1873,7 @@ msgstr "Kontrolovat slova a pravopis v on-line slovníku"
 
 #: ../mate-dictionary/data/mate-dictionary.appdata.xml.in.h:1
 msgid "A dictionary for MATE Desktop"
-msgstr ""
+msgstr "Slovník pro MATE"
 
 #: ../mate-dictionary/data/mate-dictionary.appdata.xml.in.h:2
 msgid ""
@@ -613,7 +1881,23 @@ msgid ""
 "comes preconfigured with a list of Dict servers (RFC 2229), to which you can"
 " add your own sources, while you can select specific servers for a specific "
 "query. </p>"
-msgstr ""
+msgstr "<p> Slovník pro MATE vám umožňuje vyhledávat slova ve slovnících dostupných online. Má předkonfigurován seznam slovníkových serverů (RFC 2229), do kterého můžete přidat své vlastní zdroje, a pro specifické dotazy můžete zvolit specifické servery. </p>"
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:1
+msgid "Dictionary Applet Factory"
+msgstr "Generátor appletu slovníku"
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:2
+msgid "Factory for the dictionary applet"
+msgstr "Generátor pro slovníkový applet"
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:3
+msgid "Dictionary Look up"
+msgstr "Hledání ve slovníku"
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:4
+msgid "Look up words in a dictionary"
+msgstr "Hledat slova ve slovníku"
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:1
 msgid "The default database to use"
@@ -652,10 +1936,6 @@ msgstr "Název používaného zdroje slovníku"
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr "Název zdroje slovníku používaného pro získávání definic slov."
-
-#: ../mate-dictionary/data/spanish.desktop.in.h:1
-msgid "Spanish Dictionaries"
-msgstr "Španělské slovníky"
 
 #: ../mate-dictionary/data/thai.desktop.in.h:1
 msgid "Longdo Thai-English Dictionaries"
@@ -735,7 +2015,7 @@ msgstr "Nenalezena žádná definice „%s“"
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1240
 #, c-format
 msgid "Invalid database '%s'"
-msgstr "Neplatná databáze '%s'"
+msgstr "Neplatná databáze „%s“"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1255
 #, c-format
@@ -798,7 +2078,7 @@ msgstr "Nelze nastavit kanál na neblokující: %s"
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1986
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
-msgstr "Nelze se připojit k serveru se slovníkem na %s:%d"
+msgstr "Nelze se připojit k serveru se slovníkem na „%s:%d“"
 
 #: ../mate-dictionary/libgdict/gdict-context.c:218
 msgid "Local Only"
@@ -821,13 +2101,6 @@ msgstr "Smazat seznam dostupných databází"
 #: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:793
 msgid "Error while matching"
 msgstr "Chyba při porovnávání"
-
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
-#: ../logview/logview-window.c:486
-msgid "Not found"
-msgstr "Nenalezeno"
 
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1327
 msgid "F_ind:"
@@ -867,14 +2140,9 @@ msgstr "Název souboru"
 msgid "The filename used by this dictionary source"
 msgstr "Název souboru používaného tímto zdrojem slovníku"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:246
-#: ../gsearchtool/gsearchtool.c:2403
-msgid "Name"
-msgstr "Název"
-
 #: ../mate-dictionary/libgdict/gdict-source.c:247
 msgid "The display name of this dictionary source"
-msgstr ""
+msgstr "Zobrazovaný název tohoto zdroje slovníku"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:260
 msgid "Description"
@@ -891,7 +2159,7 @@ msgstr "Databáze"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:275
 msgid "The default database of this dictionary source"
-msgstr ""
+msgstr "Výchozí databáze tohoto zdroje slovníku"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:288
 #: ../mate-dictionary/libgdict/gdict-speller.c:395
@@ -900,7 +2168,7 @@ msgstr "Metoda"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:289
 msgid "The default strategy of this dictionary source"
-msgstr ""
+msgstr "Výchozí metoda tohoto zdroje slovníku"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:302
 msgid "Transport"
@@ -1024,9 +2292,9 @@ msgid "Look up words in dictionaries"
 msgstr "Hledat slova ve slovnících"
 
 #: ../mate-dictionary/src/gdict-about.c:78
-#: ../mate-dictionary/src/gdict-app.c:379
+#: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:604
-#: ../mate-dictionary/src/gdict-window.c:1968
+#: ../mate-dictionary/src/gdict-window.c:1974
 msgid "Dictionary"
 msgstr "Slovník"
 
@@ -1063,55 +2331,43 @@ msgid ""
 "%s"
 msgstr "Chyba při vyhledávání definice „%s“:\n%s"
 
-#: ../mate-dictionary/src/gdict-app.c:337
-#: ../mate-dictionary/src/gdict-app.c:351
+#: ../mate-dictionary/src/gdict-app.c:333
+#: ../mate-dictionary/src/gdict-app.c:343
 msgid "Words to look up"
 msgstr "Slova, která hledat"
 
-#: ../mate-dictionary/src/gdict-app.c:337
-#: ../mate-dictionary/src/gdict-app.c:339
-#: ../mate-dictionary/src/gdict-app.c:351
+#: ../mate-dictionary/src/gdict-app.c:333
+#: ../mate-dictionary/src/gdict-app.c:335
+#: ../mate-dictionary/src/gdict-app.c:343
 msgid "word"
 msgstr "slovo"
 
-#: ../mate-dictionary/src/gdict-app.c:339
+#: ../mate-dictionary/src/gdict-app.c:335
 msgid "Words to match"
 msgstr "Slova pro porovnání"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:337
 msgid "Dictionary source to use"
 msgstr "Zdroj slovníku, který používat"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:337
 msgid "source"
 msgstr "zdroj"
 
-#: ../mate-dictionary/src/gdict-app.c:343
-msgid "Show available dictionary sources"
-msgstr "Zobrazit dostupné zdroje slovníků"
-
-#: ../mate-dictionary/src/gdict-app.c:345
+#: ../mate-dictionary/src/gdict-app.c:339
 msgid "Print result to the console"
 msgstr "Vypsat výsledek na konzolu"
 
-#: ../mate-dictionary/src/gdict-app.c:347
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "Database to use"
 msgstr "Databáze, kterou používat"
 
-#: ../mate-dictionary/src/gdict-app.c:347
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "db"
 msgstr "db"
 
-#: ../mate-dictionary/src/gdict-app.c:349
-msgid "Strategy to use"
-msgstr "Metoda, kterou používat"
-
-#: ../mate-dictionary/src/gdict-app.c:349
-msgid "strat"
-msgstr "metoda"
-
 #. create the new option context
-#: ../mate-dictionary/src/gdict-app.c:361
+#: ../mate-dictionary/src/gdict-app.c:353
 msgid " - Look up words in dictionaries"
 msgstr " - Hledat slova ve slovnících"
 
@@ -1188,64 +2444,59 @@ msgid "Dictionary entry"
 msgstr "Položka slovníku"
 
 #: ../mate-dictionary/src/gdict-applet.c:715
-#: ../mate-dictionary/src/gdict-window.c:1097
+#: ../mate-dictionary/src/gdict-window.c:1103
 msgid "Dictionary Preferences"
 msgstr "Nastavení slovníku"
 
 #: ../mate-dictionary/src/gdict-applet.c:739
 #: ../mate-dictionary/src/gdict-pref-dialog.c:495
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
-#: ../mate-dictionary/src/gdict-window.c:1244
+#: ../mate-dictionary/src/gdict-window.c:1250
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "Při zobrazování nápovědy došlo k chybě"
 
-#: ../mate-dictionary/src/gdict-applet.c:893
+#: ../mate-dictionary/src/gdict-applet.c:878
 #: ../mate-dictionary/src/gdict-window.c:519
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "Zdroj slovníku s názvem „%s“ není k dispozici"
 
-#: ../mate-dictionary/src/gdict-applet.c:897
+#: ../mate-dictionary/src/gdict-applet.c:882
 #: ../mate-dictionary/src/gdict-window.c:523
 msgid "Unable to find dictionary source"
 msgstr "Nelze najít zdroj slovníku"
 
-#: ../mate-dictionary/src/gdict-applet.c:913
+#: ../mate-dictionary/src/gdict-applet.c:898
 #: ../mate-dictionary/src/gdict-window.c:539
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "Pro zdroj „%s“ není k dispozici kontext"
 
-#: ../mate-dictionary/src/gdict-applet.c:917
+#: ../mate-dictionary/src/gdict-applet.c:902
 #: ../mate-dictionary/src/gdict-window.c:543
 msgid "Unable to create a context"
 msgstr "Nelze vytvořit kontext"
 
-#: ../mate-dictionary/src/gdict-applet.c:1198
+#: ../mate-dictionary/src/gdict-applet.c:1170
 msgid "_Look Up Selected Text"
 msgstr "_Hledat vybraný text"
 
-#: ../mate-dictionary/src/gdict-applet.c:1201
+#: ../mate-dictionary/src/gdict-applet.c:1173
 msgid "Cl_ear"
 msgstr "_Vymazat"
 
-#: ../mate-dictionary/src/gdict-applet.c:1204
+#: ../mate-dictionary/src/gdict-applet.c:1176
 msgid "_Print"
 msgstr "Vy_tisknout"
 
-#: ../mate-dictionary/src/gdict-applet.c:1207
+#: ../mate-dictionary/src/gdict-applet.c:1179
 msgid "_Save"
 msgstr "_Uložit"
 
-#: ../mate-dictionary/src/gdict-applet.c:1210
+#: ../mate-dictionary/src/gdict-applet.c:1182
 msgid "Preferences"
-msgstr ""
-
-#: ../mate-dictionary/src/gdict-applet.c:1216
-#: ../mate-dictionary/src/gdict-window.c:1334 ../logview/logview-window.c:840
-msgid "_About"
-msgstr "O _aplikaci"
+msgstr "Nastavení"
 
 #: ../mate-dictionary/src/gdict-common.c:80
 #, c-format
@@ -1291,7 +2542,7 @@ msgstr "Odstranit momentálně vybraný zdroj slovníku"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:654
 msgid "Edit the currently selected dictionary source"
-msgstr ""
+msgstr "Úprava aktuálně vybraného zdroje slovníku"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:662
 msgid "Set the font used for printing the definitions"
@@ -1336,179 +2587,171 @@ msgstr[2] "Nalezeno %d definic"
 msgid "%s - Dictionary"
 msgstr "%s - Slovník"
 
-#: ../mate-dictionary/src/gdict-window.c:1278 ../logview/logview-window.c:808
-msgid "_File"
-msgstr "_Soubor"
-
-#: ../mate-dictionary/src/gdict-window.c:1281
+#: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_Go"
 msgstr "Pře_jít"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1285
+#: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_New"
 msgstr "_Nový"
 
-#: ../mate-dictionary/src/gdict-window.c:1286
+#: ../mate-dictionary/src/gdict-window.c:1292
 msgid "New look up"
 msgstr "Nové hledání"
 
-#: ../mate-dictionary/src/gdict-window.c:1287
+#: ../mate-dictionary/src/gdict-window.c:1293
 msgid "_Save a Copy..."
 msgstr "_Uložit kopii…"
 
-#: ../mate-dictionary/src/gdict-window.c:1289
+#: ../mate-dictionary/src/gdict-window.c:1295
 msgid "P_review..."
 msgstr "Ná_hled…"
 
-#: ../mate-dictionary/src/gdict-window.c:1290
+#: ../mate-dictionary/src/gdict-window.c:1296
 msgid "Preview this document"
 msgstr "Zobrazit náhled tohoto dokumentu"
 
-#: ../mate-dictionary/src/gdict-window.c:1291
+#: ../mate-dictionary/src/gdict-window.c:1297
 msgid "_Print..."
 msgstr "Vy_tisknout…"
 
-#: ../mate-dictionary/src/gdict-window.c:1292
+#: ../mate-dictionary/src/gdict-window.c:1298
 msgid "Print this document"
 msgstr "Vytisknout tento dokument"
 
-#: ../mate-dictionary/src/gdict-window.c:1299 ../logview/logview-window.c:823
-msgid "Select _All"
-msgstr "Vybrat vš_e"
-
-#: ../mate-dictionary/src/gdict-window.c:1302
+#: ../mate-dictionary/src/gdict-window.c:1308
 msgid "Find a word or phrase in the document"
 msgstr "Najít v dokumentu slovo nebo frázi"
 
-#: ../mate-dictionary/src/gdict-window.c:1304
+#: ../mate-dictionary/src/gdict-window.c:1310
 msgid "Find Ne_xt"
 msgstr "Najít _následující"
 
-#: ../mate-dictionary/src/gdict-window.c:1306
+#: ../mate-dictionary/src/gdict-window.c:1312
 msgid "Find Pre_vious"
 msgstr "Najít _předchozí"
 
-#: ../mate-dictionary/src/gdict-window.c:1308
+#: ../mate-dictionary/src/gdict-window.c:1314
 msgid "_Preferences"
 msgstr "_Nastavení"
 
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1312
+#: ../mate-dictionary/src/gdict-window.c:1318
 msgid "_Previous Definition"
 msgstr "_Předchozí definice"
 
-#: ../mate-dictionary/src/gdict-window.c:1313
+#: ../mate-dictionary/src/gdict-window.c:1319
 msgid "Go to the previous definition"
 msgstr "Přejít na předchozí definici"
 
-#: ../mate-dictionary/src/gdict-window.c:1314
+#: ../mate-dictionary/src/gdict-window.c:1320
 msgid "_Next Definition"
 msgstr "_Následující definice"
 
-#: ../mate-dictionary/src/gdict-window.c:1315
+#: ../mate-dictionary/src/gdict-window.c:1321
 msgid "Go to the next definition"
 msgstr "Přejít na následující definici"
 
-#: ../mate-dictionary/src/gdict-window.c:1316
+#: ../mate-dictionary/src/gdict-window.c:1322
 msgid "_First Definition"
 msgstr "_První definice"
 
-#: ../mate-dictionary/src/gdict-window.c:1317
+#: ../mate-dictionary/src/gdict-window.c:1323
 msgid "Go to the first definition"
 msgstr "Přejít na první definici"
 
-#: ../mate-dictionary/src/gdict-window.c:1318
+#: ../mate-dictionary/src/gdict-window.c:1324
 msgid "_Last Definition"
 msgstr "Po_slední definice"
 
-#: ../mate-dictionary/src/gdict-window.c:1319
+#: ../mate-dictionary/src/gdict-window.c:1325
 msgid "Go to the last definition"
 msgstr "Přejít na poslední definici"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1322
+#: ../mate-dictionary/src/gdict-window.c:1328
 msgid "Similar _Words"
 msgstr "Podobná _slova"
 
-#: ../mate-dictionary/src/gdict-window.c:1324
+#: ../mate-dictionary/src/gdict-window.c:1330
 msgid "Dictionary Sources"
 msgstr "Zdroje slovníků"
 
-#: ../mate-dictionary/src/gdict-window.c:1326
+#: ../mate-dictionary/src/gdict-window.c:1332
 msgid "Available _Databases"
 msgstr "Dostupné _databáze"
 
-#: ../mate-dictionary/src/gdict-window.c:1328
+#: ../mate-dictionary/src/gdict-window.c:1334
 msgid "Available St_rategies"
 msgstr "Dostupné _metody"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1345
+#: ../mate-dictionary/src/gdict-window.c:1351
 msgid "_Sidebar"
 msgstr "Po_stranní panel"
 
-#: ../mate-dictionary/src/gdict-window.c:1347
+#: ../mate-dictionary/src/gdict-window.c:1353
 msgid "S_tatusbar"
 msgstr "S_tavový řádek"
 
-#: ../mate-dictionary/src/gdict-window.c:1412
+#: ../mate-dictionary/src/gdict-window.c:1418
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "Vybrán zdroj slovníku „%s“"
 
-#: ../mate-dictionary/src/gdict-window.c:1433
+#: ../mate-dictionary/src/gdict-window.c:1439
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "Vybrána metoda „%s“"
 
-#: ../mate-dictionary/src/gdict-window.c:1453
+#: ../mate-dictionary/src/gdict-window.c:1459
 #, c-format
 msgid "Database `%s' selected"
 msgstr "Vybrána databáze „%s“"
 
-#: ../mate-dictionary/src/gdict-window.c:1473
+#: ../mate-dictionary/src/gdict-window.c:1479
 #, c-format
 msgid "Word `%s' selected"
 msgstr "Vybráno slovo „%s“"
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1498
+#: ../mate-dictionary/src/gdict-window.c:1504
 msgid "Double-click on the word to look up"
 msgstr "Klikněte dvakrát na slovo pro jeho vyhledání"
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1504
+#: ../mate-dictionary/src/gdict-window.c:1510
 msgid "Double-click on the matching strategy to use"
 msgstr "Klikněte dvakrát na odpovídající metodu pro její použití"
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1509
+#: ../mate-dictionary/src/gdict-window.c:1515
 msgid "Double-click on the source to use"
 msgstr "Klikněte dvakrát na zdroj pro jeho použití"
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1518
+#: ../mate-dictionary/src/gdict-window.c:1524
 msgid "Double-click on the database to use"
 msgstr "Klikněte dvakrát na databázi, kterou chcete používat"
 
-#: ../mate-dictionary/src/gdict-window.c:1770
+#: ../mate-dictionary/src/gdict-window.c:1776
 msgid "Look _up:"
 msgstr "_Hledat:"
 
-#: ../mate-dictionary/src/gdict-window.c:1849
+#: ../mate-dictionary/src/gdict-window.c:1855
 msgid "Similar words"
 msgstr "Podobná slova"
 
-#: ../mate-dictionary/src/gdict-window.c:1862
+#: ../mate-dictionary/src/gdict-window.c:1868
 msgid "Available dictionaries"
 msgstr "Dostupné slovníky"
 
-#: ../mate-dictionary/src/gdict-window.c:1880
+#: ../mate-dictionary/src/gdict-window.c:1886
 msgid "Available strategies"
 msgstr "Dostupné metody"
 
-#: ../mate-dictionary/src/gdict-window.c:1896
+#: ../mate-dictionary/src/gdict-window.c:1902
 msgid "Dictionary sources"
 msgstr "Zdroje slovníků"
 
@@ -1553,80 +2796,154 @@ msgstr "Slovníky"
 msgid "Strategies"
 msgstr "Metody"
 
-#: ../mate-screenshot/mate-screenshot.c:133
+#: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:1
+msgid "A screenshot utility for MATE Desktop"
+msgstr "Zachycení snímku obrazovky pro MATE"
+
+#: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Screenshot is a simple utility that lets you capture screenshots of"
+" your desktop or of application windows. You can select to copy them to the "
+"system clipboard or save them in Portable Network Graphics (.png) image "
+"format. </p>"
+msgstr "<p> Zachycení snímku obrazovky pro MATE je jednoduchý nástroj umožňující vám zachytit snímek vaší pracovní plochy či oken aplikace. Můžete zvolit jeho zkopírování do schránky či jej uložit ve formátu Portable Network Graphics (.png). </p>"
+
+#: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
+#: ../mate-screenshot/src/mate-screenshot.c:516
+#: ../mate-screenshot/src/mate-screenshot.c:524
+msgid "Take Screenshot"
+msgstr "Zachytit snímek obrazovky"
+
+#: ../mate-screenshot/data/mate-screenshot.desktop.in.h:2
+msgid "Save images of your desktop or individual windows"
+msgstr "Uložit obrázky pracovní plochy nebo konkrétních oken"
+
+#: ../mate-screenshot/data/mate-screenshot.ui.h:1
+msgid "Save Screenshot"
+msgstr "Uložit snímek obrazovky"
+
+#: ../mate-screenshot/data/mate-screenshot.ui.h:2
+msgid "C_opy to Clipboard"
+msgstr "K_opírovat do schránky"
+
+#: ../mate-screenshot/data/mate-screenshot.ui.h:4
+msgid "Save in _folder:"
+msgstr "Uložit do _složky:"
+
+#: ../mate-screenshot/data/mate-screenshot.ui.h:5
+msgid "*"
+msgstr "*"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:1
+msgid "Screenshot delay"
+msgstr "Zpoždění snímku obrazovky"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:2
+msgid "The number of seconds to wait before taking the screenshot."
+msgstr "Doba čekání v sekundách před zachycením snímku obrazovky."
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:3
+msgid "Screenshot directory"
+msgstr "Adresář snímků obrazovky"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:4
+msgid "The directory the last screenshot was saved in."
+msgstr "Adresář, do kterého byl uložen poslední snímek obrazovky."
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:5
+msgid "Include Border"
+msgstr "Zahrnout rámeček"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:6
+msgid "Include the window manager border along with the screenshot"
+msgstr "Zahrnout do snímku obrazovky rámeček správce oken"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:7
+msgid "Include Pointer"
+msgstr "Zahrnout kurzor myši"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:8
+msgid "Include the pointer in the screenshot"
+msgstr "Zahrnout do snímku obrazovky kurzor myši"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:9
+msgid "Border Effect"
+msgstr "Efekt rámečku"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:10
+msgid ""
+"Effect to add to the outside of a border. Possible values are \"shadow\", "
+"\"none\", and \"border\"."
+msgstr "Efekt přidaný k vnější části rámečku. Možné hodnoty jsou „shadow“, „none“ a „border“."
+
+#: ../mate-screenshot/src/mate-screenshot.c:133
 msgid "Error loading the help page"
 msgstr "Chyba při načítání nápovědy"
 
-#: ../mate-screenshot/mate-screenshot.c:245
+#: ../mate-screenshot/src/mate-screenshot.c:245
 msgid "None"
 msgstr "Žádný"
 
-#: ../mate-screenshot/mate-screenshot.c:246
+#: ../mate-screenshot/src/mate-screenshot.c:246
 msgid "Drop shadow"
 msgstr "Vrhat stín"
 
-#: ../mate-screenshot/mate-screenshot.c:247
+#: ../mate-screenshot/src/mate-screenshot.c:247
 msgid "Border"
 msgstr "Rámeček"
 
 #. * Include pointer *
-#: ../mate-screenshot/mate-screenshot.c:351
+#: ../mate-screenshot/src/mate-screenshot.c:351
 msgid "Include _pointer"
 msgstr "Zahrnout _kurzor myši"
 
 #. * Include window border *
-#: ../mate-screenshot/mate-screenshot.c:360
+#: ../mate-screenshot/src/mate-screenshot.c:360
 msgid "Include the window _border"
 msgstr "Zahrnout _rámeček okna"
 
-#: ../mate-screenshot/mate-screenshot.c:375
+#: ../mate-screenshot/src/mate-screenshot.c:375
 msgid "Apply _effect:"
 msgstr "Aplikovat _efekt:"
 
-#: ../mate-screenshot/mate-screenshot.c:437
+#: ../mate-screenshot/src/mate-screenshot.c:437
 msgid "Grab the whole _desktop"
 msgstr "Zachytit _celou pracovní plochu"
 
-#: ../mate-screenshot/mate-screenshot.c:449
+#: ../mate-screenshot/src/mate-screenshot.c:449
 msgid "Grab the current _window"
 msgstr "Zachytit _aktuální okno"
 
-#: ../mate-screenshot/mate-screenshot.c:461
+#: ../mate-screenshot/src/mate-screenshot.c:461
 msgid "Select _area to grab"
 msgstr "Zvolit _oblast zachycení"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/mate-screenshot.c:478
+#: ../mate-screenshot/src/mate-screenshot.c:478
 msgid "Grab _after a delay of"
 msgstr "Zachytit po _prodlevě"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/mate-screenshot.c:498
-#: ../mate-screenshot/mate-screenshot.c:1273
+#: ../mate-screenshot/src/mate-screenshot.c:498
+#: ../mate-screenshot/src/mate-screenshot.c:1263
 msgid "seconds"
 msgstr "sekund"
 
-#: ../mate-screenshot/mate-screenshot.c:516
-#: ../mate-screenshot/mate-screenshot.c:524
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:1
-msgid "Take Screenshot"
-msgstr "Zachytit snímek obrazovky"
-
-#: ../mate-screenshot/mate-screenshot.c:525
+#: ../mate-screenshot/src/mate-screenshot.c:525
 msgid "Effects"
 msgstr "Efekty"
 
-#: ../mate-screenshot/mate-screenshot.c:530
+#: ../mate-screenshot/src/mate-screenshot.c:530
 msgid "Take _Screenshot"
 msgstr "Zachytit _snímek obrazovky"
 
-#: ../mate-screenshot/mate-screenshot.c:650
+#: ../mate-screenshot/src/mate-screenshot.c:650
 msgid "Error while saving screenshot"
 msgstr "Chyba při ukládání snímku obrazovky"
 
-#: ../mate-screenshot/mate-screenshot.c:653
+#: ../mate-screenshot/src/mate-screenshot.c:653
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -1634,1437 +2951,132 @@ msgid ""
 " Please choose another location and retry."
 msgstr "Nelze uložit snímek obrazovky do %s.\n Chyba byla %s.\n Vyberte prosím jiné umístění a zkuste to znovu."
 
-#: ../mate-screenshot/mate-screenshot.c:785
+#: ../mate-screenshot/src/mate-screenshot.c:785
 msgid "Screenshot taken"
 msgstr "Snímek obrazovky zachycen"
 
-#: ../mate-screenshot/mate-screenshot.c:840
+#: ../mate-screenshot/src/mate-screenshot.c:840
 msgid "Unable to take a screenshot of the current window"
 msgstr "Nelze zachytit snímek aktuálního okna"
 
-#: ../mate-screenshot/mate-screenshot.c:893
-#, c-format
-msgid "Screenshot-%s.png"
-msgstr "Snímek obrazovky-%s.png"
-
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if a specific window is
-#. * taken
-#: ../mate-screenshot/mate-screenshot.c:900
-#, c-format
-msgid "Screenshot-%s-%d.png"
-msgstr "Snímek obrazovky-%s-%d.png"
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format (eg, like
+#. * in France: 20:10).
+#: ../mate-screenshot/src/mate-screenshot.c:893
+msgid "%Y-%m-%d %H:%M:%S"
+msgstr "%Y-%m-%d %H:%M:%S"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/mate-screenshot.c:910
-#: ../mate-screenshot/screenshot-dialog.c:369
-#: ../mate-screenshot/screenshot-save.c:196
-msgid "Screenshot.png"
-msgstr "Snímek obrazovky.png"
+#: ../mate-screenshot/src/mate-screenshot.c:900
+#, c-format
+msgid "Screenshot at %s.png"
+msgstr "Snímek obrazovky na %s.png"
 
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/mate-screenshot.c:917
+#: ../mate-screenshot/src/mate-screenshot.c:907
 #, c-format
-msgid "Screenshot-%d.png"
-msgstr "Snímek obrazovky-%d.png"
+msgid "Screenshot at %s - %d.png"
+msgstr "Screenshot na %s - %d.png"
 
-#: ../mate-screenshot/mate-screenshot.c:1269
+#: ../mate-screenshot/src/mate-screenshot.c:1259
 msgid "Grab a window instead of the entire screen"
 msgstr "Zachytit okno místo celé obrazovky"
 
-#: ../mate-screenshot/mate-screenshot.c:1270
+#: ../mate-screenshot/src/mate-screenshot.c:1260
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Zachytit oblast obrazovky místo celé obrazovky"
 
-#: ../mate-screenshot/mate-screenshot.c:1271
+#: ../mate-screenshot/src/mate-screenshot.c:1261
 msgid "Include the window border with the screenshot"
 msgstr "Vložit do snímku obrazovky i rámeček okna"
 
-#: ../mate-screenshot/mate-screenshot.c:1272
+#: ../mate-screenshot/src/mate-screenshot.c:1262
 msgid "Remove the window border from the screenshot"
 msgstr "Odstranit ze snímku obrazovky rámeček okna"
 
-#: ../mate-screenshot/mate-screenshot.c:1273
+#: ../mate-screenshot/src/mate-screenshot.c:1263
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Zachytit snímek obrazovky po zadaném zpoždění [v sekundách]"
 
-#: ../mate-screenshot/mate-screenshot.c:1274
+#: ../mate-screenshot/src/mate-screenshot.c:1264
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Efekt přidaný k rámečku (stín, rámeček nebo žádný)"
 
-#: ../mate-screenshot/mate-screenshot.c:1274
+#: ../mate-screenshot/src/mate-screenshot.c:1264
 msgid "effect"
 msgstr "efekt"
 
-#: ../mate-screenshot/mate-screenshot.c:1275
+#: ../mate-screenshot/src/mate-screenshot.c:1265
 msgid "Interactively set options"
 msgstr "Nastavit volby interaktivně"
 
-#: ../mate-screenshot/mate-screenshot.c:1284
+#: ../mate-screenshot/src/mate-screenshot.c:1274
 msgid "Take a picture of the screen"
 msgstr "Zachytit snímek obrazovky"
 
-#: ../mate-screenshot/mate-screenshot.c:1302
+#: ../mate-screenshot/src/mate-screenshot.c:1292
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"
 msgstr "Konfliktní možnosti: --window a --area nelze použít ve stejnou chvíli.\n"
 
-#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:1
-msgid "A screenshot utility for MATE Desktop"
-msgstr ""
-
-#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:2
-msgid ""
-"<p> MATE Screenshot is a simple utility that lets you capture screenshots of"
-" your desktop or of application windows. You can select to copy them to the "
-"system clipboard or save them in Portable Network Graphics (.png) image "
-"format. </p>"
-msgstr ""
-
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:2
-msgid "Save images of your desktop or individual windows"
-msgstr "Uložit obrázky pracovní plochy nebo konkrétních oken"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:1
-msgid "Save Screenshot"
-msgstr "Uložit snímek obrazovky"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:2
-msgid "C_opy to Clipboard"
-msgstr "K_opírovat do schránky"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:3
-#: ../logview/data/logview-filter.ui.h:1
-msgid "_Name:"
-msgstr "Náz_ev:"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:4
-msgid "Save in _folder:"
-msgstr "Uložit do _složky:"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:5
-msgid "*"
-msgstr "*"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:1
-msgid "Screenshot delay"
-msgstr "Zpoždění snímku obrazovky"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:2
-msgid "The number of seconds to wait before taking the screenshot."
-msgstr "Doba čekání v sekundách před zachycením snímku obrazovky."
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:3
-msgid "Screenshot directory"
-msgstr "Adresář snímků obrazovky"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:4
-msgid "The directory the last screenshot was saved in."
-msgstr "Adresář, do kterého byl uložen poslední snímek obrazovky."
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:5
-msgid "Include Border"
-msgstr "Zahrnout rámeček"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:6
-msgid "Include the window manager border along with the screenshot"
-msgstr "Zahrnout do snímku obrazovky rámeček správce oken"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:7
-msgid "Include Pointer"
-msgstr "Zahrnout kurzor myši"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:8
-msgid "Include the pointer in the screenshot"
-msgstr "Zahrnout do snímku obrazovky kurzor myši"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:9
-msgid "Border Effect"
-msgstr "Efekt rámečku"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:10
-msgid ""
-"Effect to add to the outside of a border. Possible values are \"shadow\", "
-"\"none\", and \"border\"."
-msgstr "Efekt přidaný k vnější části rámečku. Možné hodnoty jsou „shadow“, „none“ a „border“."
-
-#: ../mate-screenshot/screenshot-dialog.c:246
+#: ../mate-screenshot/src/screenshot-dialog.c:246
 #, c-format
 msgid ""
 "Error loading UI definition file for the screenshot program: \n"
 "%s\n"
 "\n"
 "Please check your installation of mate-utils."
-msgstr ""
+msgstr "Chyba při načítání definicí UI souboru pro program zachycení obrazovky chybí:\n%s\n\nZkontrolujte prosím svou instalaci mate-utils"
 
-#: ../mate-screenshot/screenshot-dialog.c:269
+#: ../mate-screenshot/src/screenshot-dialog.c:269
 msgid "Select a folder"
 msgstr "Zvolte složku"
 
-#: ../mate-screenshot/screenshot-save.c:57
+#: ../mate-screenshot/src/screenshot-dialog.c:369
+#: ../mate-screenshot/src/screenshot-save.c:196
+msgid "Screenshot.png"
+msgstr "Snímek obrazovky.png"
+
+#: ../mate-screenshot/src/screenshot-save.c:57
 #, c-format
 msgid ""
 "Unable to clear the temporary folder:\n"
 "%s"
 msgstr "Nelze vymazat dočasnou složku:\n%s"
 
-#: ../mate-screenshot/screenshot-save.c:95
+#: ../mate-screenshot/src/screenshot-save.c:95
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
 msgstr "Proces potomka pro ukládání neočekávaně skončil. Nemůžeme zapsat snímek obrazovky na disk."
 
-#: ../mate-screenshot/screenshot-save.c:223
+#: ../mate-screenshot/src/screenshot-save.c:223
 msgid "Unknown error saving screenshot to disk"
 msgstr "Neznámá chyba při ukládání snímku obrazovky na disk"
 
 #. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-#: ../mate-screenshot/screenshot-utils.c:998
+#: ../mate-screenshot/src/screenshot-utils.c:998
 msgid "Untitled Window"
 msgstr "Nepojmenované okno"
 
-#: ../mate-screenshot/screenshot-xfer.c:72
+#: ../mate-screenshot/src/screenshot-xfer.c:72
 msgid "File already exists"
 msgstr "Soubor již existuje"
 
-#: ../mate-screenshot/screenshot-xfer.c:75
+#: ../mate-screenshot/src/screenshot-xfer.c:75
 #, c-format
 msgid "The file \"%s\" already exists. Would you like to replace it?"
 msgstr "Soubor „%s“ již existuje. Chcete jej nahradit?"
 
-#: ../mate-screenshot/screenshot-xfer.c:82
-#: ../gsearchtool/gsearchtool-callbacks.c:1726
-msgid "_Replace"
-msgstr "_Nahradit"
-
-#: ../mate-screenshot/screenshot-xfer.c:120
+#: ../mate-screenshot/src/screenshot-xfer.c:120
 msgid "Saving file..."
 msgstr "Ukládá se soubor…"
 
-#: ../mate-screenshot/screenshot-xfer.c:290
+#: ../mate-screenshot/src/screenshot-xfer.c:290
 msgid "Can't access source file"
 msgstr "Nelze přistupovat ke zdrojovému souboru"
-
-#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
-msgid "A file searching tool for MATE Desktop"
-msgstr ""
-
-#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
-msgid ""
-"<p> MATE Search Tool is a simple but powerful utility that allows you to "
-"search for files and folders on any mounted file system. Its interface gives"
-" you instant access to a wide variety of parameters for each search, such as"
-" text contained within a file, ownership, date of modification, file size, "
-"folder exclusion, etc.. </p>"
-msgstr ""
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:1
-msgid "MATE Search Tool"
-msgstr ""
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:2
-msgid "Locate documents and folders on this computer by name or content"
-msgstr "Najít dokumenty a složky v tomto počítači podle jména nebo obsahu"
-
-#: ../gsearchtool/gsearchtool.c:82
-msgid "Contains the _text"
-msgstr "_Obsahuje text"
-
-#: ../gsearchtool/gsearchtool.c:84
-msgid "_Date modified less than"
-msgstr "_Datum úpravy méně než"
-
-#: ../gsearchtool/gsearchtool.c:84 ../gsearchtool/gsearchtool.c:85
-msgid "days"
-msgstr "dní"
-
-#: ../gsearchtool/gsearchtool.c:85
-msgid "Date modified more than"
-msgstr "Datum úpravy více než"
-
-#: ../gsearchtool/gsearchtool.c:87
-msgid "S_ize at least"
-msgstr "Veliko_st alespoň"
-
-#: ../gsearchtool/gsearchtool.c:87 ../gsearchtool/gsearchtool.c:88
-msgid "kilobytes"
-msgstr "kilobajtů"
-
-#: ../gsearchtool/gsearchtool.c:88
-msgid "Si_ze at most"
-msgstr "Velikost nejví_ce"
-
-#: ../gsearchtool/gsearchtool.c:89
-msgid "File is empty"
-msgstr "Soubor je prázdný"
-
-#: ../gsearchtool/gsearchtool.c:91
-msgid "Owned by _user"
-msgstr "Vlastněno _uživatelem"
-
-#: ../gsearchtool/gsearchtool.c:92
-msgid "Owned by _group"
-msgstr "Vlastněno s_kupinou"
-
-#: ../gsearchtool/gsearchtool.c:93
-msgid "Owner is unrecognized"
-msgstr "Vlastníka nelze rozpoznat"
-
-#: ../gsearchtool/gsearchtool.c:95
-msgid "Na_me does not contain"
-msgstr "Náze_v neobsahuje"
-
-#: ../gsearchtool/gsearchtool.c:96
-msgid "Name matches regular e_xpression"
-msgstr "Název odpovídá re_gulárnímu výrazu"
-
-#: ../gsearchtool/gsearchtool.c:98
-msgid "Show hidden and backup files"
-msgstr "Zobrazovat skryté a záložní soubory"
-
-#: ../gsearchtool/gsearchtool.c:99
-msgid "Follow symbolic links"
-msgstr "Sledovat symbolické odkazy"
-
-#: ../gsearchtool/gsearchtool.c:100
-msgid "Exclude other filesystems"
-msgstr "Vyjmout jiné souborové systémy"
-
-#: ../gsearchtool/gsearchtool.c:158
-msgid "Show version of the application"
-msgstr "Zobrazit verzi aplikace"
-
-#: ../gsearchtool/gsearchtool.c:159 ../gsearchtool/gsearchtool.c:164
-#: ../gsearchtool/gsearchtool.c:173
-msgid "STRING"
-msgstr "ŘETĚZEC"
-
-#: ../gsearchtool/gsearchtool.c:160
-msgid "PATH"
-msgstr "CESTA"
-
-#: ../gsearchtool/gsearchtool.c:161
-msgid "VALUE"
-msgstr "HODNOTA"
-
-#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
-msgid "DAYS"
-msgstr "DNY"
-
-#: ../gsearchtool/gsearchtool.c:167 ../gsearchtool/gsearchtool.c:168
-msgid "KILOBYTES"
-msgstr "KILOBYTY"
-
-#: ../gsearchtool/gsearchtool.c:170
-msgid "USER"
-msgstr "UŽIVATEL"
-
-#: ../gsearchtool/gsearchtool.c:171
-msgid "GROUP"
-msgstr "SKUPINA"
-
-#: ../gsearchtool/gsearchtool.c:174
-msgid "PATTERN"
-msgstr "VZOREK"
-
-#: ../gsearchtool/gsearchtool.c:385
-msgid "A locate database has probably not been created."
-msgstr "Pravděpodobně nebyla vytvořena databáze locate."
-
-#: ../gsearchtool/gsearchtool.c:487
-#, c-format
-msgid "Character set conversion failed for \"%s\""
-msgstr "Převod znakové sady selhal pro „%s“"
-
-#: ../gsearchtool/gsearchtool.c:511
-msgid "Searching..."
-msgstr "Hledání…"
-
-#: ../gsearchtool/gsearchtool.c:511 ../gsearchtool/gsearchtool.c:1031
-#: ../gsearchtool/gsearchtool.c:3030
-msgid "Search for Files"
-msgstr "Hledat soubory"
-
-#: ../gsearchtool/gsearchtool.c:977 ../gsearchtool/gsearchtool.c:1006
-msgid "No files found"
-msgstr "Nenalezeny žádné soubory"
-
-#: ../gsearchtool/gsearchtool.c:999
-msgid "(stopped)"
-msgstr "(zastaveno)"
-
-#: ../gsearchtool/gsearchtool.c:1005
-msgid "No Files Found"
-msgstr "Nenalezeny žádné soubory"
-
-#: ../gsearchtool/gsearchtool.c:1010
-#, c-format
-msgid "%'d File Found"
-msgid_plural "%'d Files Found"
-msgstr[0] "Nalezen %'d soubor"
-msgstr[1] "Nalezeny %'d soubory"
-msgstr[2] "Nalezeno %'d souborů"
-
-#: ../gsearchtool/gsearchtool.c:1014 ../gsearchtool/gsearchtool.c:1052
-#, c-format
-msgid "%'d file found"
-msgid_plural "%'d files found"
-msgstr[0] "Nalezen %'d soubor"
-msgstr[1] "Nalezeny %'d soubory"
-msgstr[2] "Nalezeno %'d souborů"
-
-#: ../gsearchtool/gsearchtool.c:1143
-msgid "Entry changed called for a non entry option!"
-msgstr "Signál změny políčka volán pro volbu bez políčka!"
-
-#: ../gsearchtool/gsearchtool.c:1308
-msgid "Set the text of \"Name contains\" search option"
-msgstr "Nastavit text možnosti hledání „Název obsahuje“"
-
-#: ../gsearchtool/gsearchtool.c:1309
-msgid "Set the text of \"Look in folder\" search option"
-msgstr "Nastavit text možnosti hledání „Hledat ve složce“"
-
-#: ../gsearchtool/gsearchtool.c:1310
-msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "Třídit soubory podle jednoho z následujícího: název, složka, velikost, typ nebo datum"
-
-#: ../gsearchtool/gsearchtool.c:1311
-msgid "Set sort order to descending, the default is ascending"
-msgstr "Nastavit pořadí třídění na sestupné, výchozí je vzestupné"
-
-#: ../gsearchtool/gsearchtool.c:1312
-msgid "Automatically start a search"
-msgstr "Automaticky začít vyhledávat"
-
-#: ../gsearchtool/gsearchtool.c:1318
-#, c-format
-msgid "Select the \"%s\" search option"
-msgstr "Zvolit možnost hledání „%s“"
-
-#: ../gsearchtool/gsearchtool.c:1321
-#, c-format
-msgid "Select and set the \"%s\" search option"
-msgstr "Zvolit a nastavit možnost hledání „%s“"
-
-#: ../gsearchtool/gsearchtool.c:1428
-msgid "Invalid option passed to sortby command line argument."
-msgstr "Parametru příkazové řádky sortby byla předána neplatná volba."
-
-#: ../gsearchtool/gsearchtool.c:1720
-msgid ""
-"\n"
-"... Too many errors to display ..."
-msgstr "\n… Příliš mnoho chyb k zobrazení …"
-
-#: ../gsearchtool/gsearchtool.c:1734
-msgid ""
-"The search results may be invalid.  There were errors while performing this "
-"search."
-msgstr "Výsledky hledání možná nejsou platné. Při hledání došlo k chybám."
-
-#: ../gsearchtool/gsearchtool.c:1746 ../gsearchtool/gsearchtool.c:1790
-msgid "Show more _details"
-msgstr "Zobrazit více _podrobností"
-
-#: ../gsearchtool/gsearchtool.c:1776
-msgid ""
-"The search results may be out of date or invalid.  Do you want to disable "
-"the quick search feature?"
-msgstr "Výsledky hledání jsou možná zastaralé nebo neplatné. Chcete zakázat funkci rychlého hledání?"
-
-#: ../gsearchtool/gsearchtool.c:1801
-msgid "Disable _Quick Search"
-msgstr "Zakázat _rychlé hledání"
-
-#: ../gsearchtool/gsearchtool.c:1828
-#, c-format
-msgid "Failed to set process group id of child %d: %s.\n"
-msgstr "Nelze nastavit id skupiny procesů potomka %d: %s.\n"
-
-#: ../gsearchtool/gsearchtool.c:1853
-msgid "Error parsing the search command."
-msgstr "Chyba při zpracovávání příkazu hledání."
-
-#: ../gsearchtool/gsearchtool.c:1885
-msgid "Error running the search command."
-msgstr "Chyba při spouštění příkazu hledání."
-
-#: ../gsearchtool/gsearchtool.c:2008
-#, c-format
-msgid "Enter a text value for the \"%s\" search option."
-msgstr "Zadejte textovou hodnotu možnosti hledání „%s“."
-
-#. Translators:  Below is a string displaying the search options name
-#. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:2013
-#, c-format
-msgid "\"%s\" in %s"
-msgstr "„%s“, jednotky %s"
-
-#: ../gsearchtool/gsearchtool.c:2015
-#, c-format
-msgid "Enter a value in %s for the \"%s\" search option."
-msgstr "Zadejte hodnotu v %s pro možnost hledání „%s“."
-
-#: ../gsearchtool/gsearchtool.c:2073
-#, c-format
-msgid "Remove \"%s\""
-msgstr "Odstranit „%s“"
-
-#: ../gsearchtool/gsearchtool.c:2074
-#, c-format
-msgid "Click to remove the \"%s\" search option."
-msgstr "Kliknutím odstraňte možnost hledání „%s“."
-
-#: ../gsearchtool/gsearchtool.c:2167
-msgid "A_vailable options:"
-msgstr "Dostupné _možnosti:"
-
-#: ../gsearchtool/gsearchtool.c:2196
-msgid "Available options"
-msgstr "Dostupné možnosti"
-
-#: ../gsearchtool/gsearchtool.c:2197
-msgid "Select a search option from the drop-down list."
-msgstr "Vyberte možnost hledání z rozbalovacího seznamu."
-
-#: ../gsearchtool/gsearchtool.c:2209
-msgid "Add search option"
-msgstr "Přidat možnost hledání"
-
-#: ../gsearchtool/gsearchtool.c:2210
-msgid "Click to add the selected available search option."
-msgstr "Kliknutím přidáte vybranou možnost hledání."
-
-#: ../gsearchtool/gsearchtool.c:2299
-msgid "S_earch results:"
-msgstr "Výsl_edky hledání:"
-
-#: ../gsearchtool/gsearchtool.c:2343
-msgid "List View"
-msgstr "Seznamový pohled"
-
-#: ../gsearchtool/gsearchtool.c:2452
-msgid "Type"
-msgstr "Typ"
-
-#: ../gsearchtool/gsearchtool.c:2464
-msgid "Date Modified"
-msgstr "Datum změny"
-
-#: ../gsearchtool/gsearchtool.c:2799
-msgid "_Name contains:"
-msgstr "_Název obsahuje:"
-
-#: ../gsearchtool/gsearchtool.c:2813 ../gsearchtool/gsearchtool.c:2814
-msgid "Enter a filename or partial filename with or without wildcards."
-msgstr "Zadejte název souboru nebo část názvu souboru, se zástupnými znaky nebo bez nich."
-
-#: ../gsearchtool/gsearchtool.c:2814
-msgid "Name contains"
-msgstr "Název obsahuje"
-
-#: ../gsearchtool/gsearchtool.c:2820
-msgid "_Look in folder:"
-msgstr "Hledat ve _složce:"
-
-#: ../gsearchtool/gsearchtool.c:2826
-msgid "Browse"
-msgstr "Probírat"
-
-#: ../gsearchtool/gsearchtool.c:2835
-msgid "Look in folder"
-msgstr "Hledat ve složce"
-
-#: ../gsearchtool/gsearchtool.c:2835
-msgid "Select the folder or device from which you want to begin the search."
-msgstr "Zvolte složku nebo zařízení, kde chcete začít hledat."
-
-#: ../gsearchtool/gsearchtool.c:2853
-msgid "Select more _options"
-msgstr "Vybrat další _možnosti"
-
-#: ../gsearchtool/gsearchtool.c:2862
-msgid "Select more options"
-msgstr "Vybrat další možnosti"
-
-#: ../gsearchtool/gsearchtool.c:2862
-msgid "Click to expand or collapse the list of available options."
-msgstr "Kliknutím rozbalte nebo sbalte seznam dostupných možností."
-
-#: ../gsearchtool/gsearchtool.c:2886
-msgid "Click to display the help manual."
-msgstr "Kliknutím zobrazte příručku."
-
-#: ../gsearchtool/gsearchtool.c:2894
-msgid "Click to close \"Search for Files\"."
-msgstr "Kliknutím zavřete „Hledat soubory“."
-
-#: ../gsearchtool/gsearchtool.c:2920
-msgid "Click to perform a search."
-msgstr "Kliknutím začněte hledat."
-
-#: ../gsearchtool/gsearchtool.c:2921
-msgid "Click to stop a search."
-msgstr "Kliknutím zastavte hledání."
-
-#: ../gsearchtool/gsearchtool.c:3015
-msgid "- the MATE Search Tool"
-msgstr "- prohledávací nástroj pro MATE"
-
-#: ../gsearchtool/gsearchtool.c:3024
-#, c-format
-msgid "Failed to parse command line arguments: %s\n"
-msgstr "Selhala analýza parametrů příkazové řádky: %s\n"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:198
-msgid "Could not open help document."
-msgstr "Nelze otevřít dokument nápovědy."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:349
-#, c-format
-msgid "Are you sure you want to open %d document?"
-msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] "Opravdu chcete otevřít %d dokument?"
-msgstr[1] "Opravdu chcete otevřít %d dokumenty?"
-msgstr[2] "Opravdu chcete otevřít %d dokumentů?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:354
-#: ../gsearchtool/gsearchtool-callbacks.c:551
-#, c-format
-msgid "This will open %d separate window."
-msgid_plural "This will open %d separate windows."
-msgstr[0] "Toto otevře %d oddělené okno."
-msgstr[1] "Toto otevře %d oddělená okna."
-msgstr[2] "Toto otevře %d oddělených oken."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:394
-#, c-format
-msgid "Could not open document \"%s\"."
-msgstr "Nelze otevřít dokument „%s“."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:423
-#, c-format
-msgid "Could not open folder \"%s\"."
-msgstr "Nelze otevřít složku „%s“."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:431
-msgid "The caja file manager is not running."
-msgstr "Správce souborů Caja neběží."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:523
-msgid "There is no installed viewer capable of displaying the document."
-msgstr "Není nainstalován žádný prohlížeč schopný zobrazit tento dokument."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:546
-#, c-format
-msgid "Are you sure you want to open %d folder?"
-msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] "Opravdu chcete otevřít %d složku?"
-msgstr[1] "Opravdu chcete otevřít %d složky?"
-msgstr[2] "Opravdu chcete otevřít %d složek?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:699
-#, c-format
-msgid "Could not move \"%s\" to trash."
-msgstr "Nelze přesunout „%s“ do koše."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:730
-#, c-format
-msgid "Do you want to delete \"%s\" permanently?"
-msgstr "Chcete „%s“ odstranit natrvalo?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:733
-#, c-format
-msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr "Koš není k dispozici. Nelze přesunout „%s“ do koše."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:772
-#, c-format
-msgid "Could not delete \"%s\"."
-msgstr "Nelze odstranit „%s“."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:884
-#, c-format
-msgid "Deleting \"%s\" failed: %s."
-msgstr "Odstraňování „%s“ selhalo: %s."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:896
-#, c-format
-msgid "Moving \"%s\" failed: %s."
-msgstr "Přesun „%s“ selhal: %s."
-
-#. Popup menu item: Open
-#: ../gsearchtool/gsearchtool-callbacks.c:1024
-#: ../gsearchtool/gsearchtool-callbacks.c:1054
-msgid "_Open"
-msgstr "_Otevřít"
-
-#. Popup menu item: Open with (default)
-#: ../gsearchtool/gsearchtool-callbacks.c:1079
-#, c-format
-msgid "_Open with %s"
-msgstr "_Otevřít s %s"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1114
-#, c-format
-msgid "Open with %s"
-msgstr "Otevřít s %s"
-
-#. Popup menu item: Open With
-#: ../gsearchtool/gsearchtool-callbacks.c:1147
-msgid "Open Wit_h"
-msgstr "Otevřít _s"
-
-#. Popup menu item: Open Containing Folder
-#: ../gsearchtool/gsearchtool-callbacks.c:1192
-msgid "Open Containing _Folder"
-msgstr ""
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1232
-msgid "_Save Results As..."
-msgstr "Uložit výsledky j_ako…"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1614
-msgid "Save Search Results As..."
-msgstr "Uložit výsledky hledání jako…"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1643
-msgid "Could not save document."
-msgstr "Nelze uložit dokument."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1644
-msgid "You did not select a document name."
-msgstr "Nevybrali jste název dokumentu."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1674
-#, c-format
-msgid "Could not save \"%s\" document to \"%s\"."
-msgstr "Nelze uložit dokument „%s“ do „%s“."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1707
-#, c-format
-msgid "The document \"%s\" already exists.  Would you like to replace it?"
-msgstr "Dokument „%s“ již existuje. Chcete jej nahradit?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1711
-msgid "If you replace an existing file, its contents will be overwritten."
-msgstr "Pokud nahradíte existující soubor, jeho obsah bude přepsán."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1775
-msgid "The document name you selected is a folder."
-msgstr "Název dokumentu, který jste vybrali, je složka."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1811
-msgid "You may not have write permissions to the document."
-msgstr "Možná nemáte oprávnění zápisu do dokumentu."
-
-#. Translators:  Below are the strings displayed in the 'Date Modified'
-#. column of the list view.  The format of this string can vary depending
-#. on age of a file.  Please modify the format of the timestamp to match
-#. your locale.  For example, to display 24 hour time replace the '%-I'
-#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: ../gsearchtool/gsearchtool-support.c:448
-msgid "today at %-I:%M %p"
-msgstr "dnes v %-H:%M"
-
-#: ../gsearchtool/gsearchtool-support.c:450
-msgid "yesterday at %-I:%M %p"
-msgstr "včera v %-H:%M"
-
-#: ../gsearchtool/gsearchtool-support.c:452
-#: ../gsearchtool/gsearchtool-support.c:454
-msgid "%A, %B %-d %Y at %-I:%M:%S %p"
-msgstr "%A %-d. %B %Y v %-H:%M:%S"
-
-#: ../gsearchtool/gsearchtool-support.c:641
-msgid "link (broken)"
-msgstr "odkaz (chybný)"
-
-#: ../gsearchtool/gsearchtool-support.c:645
-#, c-format
-msgid "link to %s"
-msgstr "odkaz na %s"
-
-#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
-#. Localizers:
-#. * Feel free to leave out the st, nd, rd and th suffix or
-#. * make some or all of them match.
-#. localizers: tag used to detect the first copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1257
-msgid " (copy)"
-msgstr " (kopie)"
-
-#. localizers: tag used to detect the second copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1259
-msgid " (another copy)"
-msgstr " (další kopie)"
-
-#. localizers: tag used to detect the x11th copy of a file
-#. localizers: tag used to detect the x12th copy of a file
-#. localizers: tag used to detect the x13th copy of a file
-#. localizers: tag used to detect the xxth copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1262
-#: ../gsearchtool/gsearchtool-support.c:1264
-#: ../gsearchtool/gsearchtool-support.c:1266
-#: ../gsearchtool/gsearchtool-support.c:1276
-msgid "th copy)"
-msgstr ". kopie)"
-
-#. localizers: tag used to detect the x1st copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1269
-msgid "st copy)"
-msgstr ". kopie)"
-
-#. localizers: tag used to detect the x2nd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1271
-msgid "nd copy)"
-msgstr ". kopie)"
-
-#. localizers: tag used to detect the x3rd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1273
-msgid "rd copy)"
-msgstr ". kopie)"
-
-#. localizers: appended to first file copy
-#: ../gsearchtool/gsearchtool-support.c:1290
-#, c-format
-msgid "%s (copy)%s"
-msgstr "%s (kopie)%s"
-
-#. localizers: appended to second file copy
-#: ../gsearchtool/gsearchtool-support.c:1292
-#, c-format
-msgid "%s (another copy)%s"
-msgstr "%s (další kopie)%s"
-
-#. localizers: appended to x11th file copy
-#. localizers: appended to x12th file copy
-#. localizers: appended to x13th file copy
-#. localizers: appended to xxth file copy
-#: ../gsearchtool/gsearchtool-support.c:1295
-#: ../gsearchtool/gsearchtool-support.c:1297
-#: ../gsearchtool/gsearchtool-support.c:1299
-#: ../gsearchtool/gsearchtool-support.c:1308
-#, c-format
-msgid "%s (%dth copy)%s"
-msgstr "%s (%d. kopie)%s"
-
-#. localizers: appended to x1st file copy
-#: ../gsearchtool/gsearchtool-support.c:1302
-#, c-format
-msgid "%s (%dst copy)%s"
-msgstr "%s (%d. kopie)%s"
-
-#. localizers: appended to x2nd file copy
-#: ../gsearchtool/gsearchtool-support.c:1304
-#, c-format
-msgid "%s (%dnd copy)%s"
-msgstr "%s (%d. kopie)%s"
-
-#. localizers: appended to x3rd file copy
-#: ../gsearchtool/gsearchtool-support.c:1306
-#, c-format
-msgid "%s (%drd copy)%s"
-msgstr "%s (%d. kopie)%s"
-
-#: ../gsearchtool/gsearchtool-support.c:1353
-msgid " (invalid Unicode)"
-msgstr " (neplatné Unicode)"
-
-#. localizers: opening parentheses to match the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1442
-msgid " ("
-msgstr " ("
-
-#. localizers: opening parentheses of the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1450
-#, c-format
-msgid " (%d"
-msgstr " (%d"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:1
-msgid "Search history"
-msgstr ""
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:2
-msgid "This key defines the items which were searched for in the past."
-msgstr ""
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:3
-msgid "Show Additional Options"
-msgstr "Zvolit Zobrazit více možností"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:4
-msgid "Disable Quick Search"
-msgstr "Zakázat rychlé hledání"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:5
-msgid ""
-"This key determines if the search tool disables the use of the locate "
-"command when performing simple file name searches."
-msgstr "Tento klíč určuje, jestli nástroj hledání zakazuje použití příkazu locate při provádění jednoduchých hledání názvů souborů."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:6
-msgid "Quick Search Excluded Paths"
-msgstr "Cesty vyjmuté z rychlého hledání"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:7
-msgid ""
-"This key defines the paths the search tool will exclude from a quick search."
-" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
-"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-msgstr "Tento klíč definuje cesty, které nástroj hledání vyjme z rychlého hledání. Jsou podporovány zástupné znaky „*“ a „?“. Výchozí hodnoty jsou /mnt/*, /media/*, /dev/*, /tmp/*, /proc/* a /var/*."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:8
-msgid "Disable Quick Search Second Scan"
-msgstr "Zakázat druhý průchod rychlého hledání"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:9
-msgid ""
-"This key determines if the search tool disables the use of the find command "
-"after performing a quick search."
-msgstr "Tento klíč určuje, jestli nástroj hledání zakazuje použití příkazu find po provedení rychlého hledání."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:10
-msgid "Quick Search Second Scan Excluded Paths"
-msgstr "Cesty vyjmuté z druhého průchodu rychlého hledání"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:11
-msgid ""
-"This key defines the paths the search tool will exclude from a second scan "
-"when performing a quick search. The second scan uses the find command to "
-"search for files. The purpose of the second scan is to find files that have "
-"not been indexed. The wildcards '*' and '?' are supported. The default value"
-" is /."
-msgstr "Tento klíč definuje cesty, které nástroj hledání vyjme z druhého průchodu při rychlém hledání. Druhý průchod používá pro hledání souborů příkaz find. Účel druhého průchodu je najít soubory, které nebyly indexovány. Jsou podporovány zástupné znaky „*“ a „?“. Výchozí hodnota je /."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:12
-msgid "Search Result Columns Order"
-msgstr "Pořadí sloupců výsledků hledání"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:13
-msgid ""
-"This key defines the order of the columns in the search results. This key "
-"should not be modified by the user."
-msgstr "Tento klíč definuje pořadí sloupců ve výsledcích hledání. Tento klíč by neměl být měněn uživatelem."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:14
-msgid "Default Window Width"
-msgstr "Výchozí šířka okna"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:15
-msgid ""
-"This key defines the window width, and it's used to remember the size of the"
-" search tool between sessions. Setting it to -1 will make the search tool "
-"use the default width."
-msgstr "Tento klíč definuje šířku okna a používá se pro zapamatování velikosti nástroje pro hledání mezi sezeními. Jeho nastavení na -1 způsobí, že nástroj pro hledání bude používat výchozí šířku."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:16
-msgid "Default Window Height"
-msgstr "Výchozí výška okna"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:17
-msgid ""
-"This key defines the window height, and it's used to remember the size of "
-"the search tool between sessions. Setting it to -1 will make the search tool"
-" use the default height."
-msgstr "Tento klíč definuje výšku okna a používá se pro zapamatování velikosti nástroje pro hledání mezi sezeními. Jeho nastavení na -1 způsobí, že nástroj pro hledání bude používat výchozí výšku."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:18
-msgid "Default Window Maximized"
-msgstr "Standardně je okno maximalizované"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:19
-msgid ""
-"This key determines if the search tool window starts in a maximized state."
-msgstr "Tento klíč určuje, jestli se nástroj hledání spouští v maximalizovaném stavu."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:20
-msgid "Look in Folder"
-msgstr "Hledat ve složce"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:21
-msgid "This key defines the default value of the \"Look in Folder\" widget."
-msgstr "Tento klíč definuje výchozí hodnotu widgetu „Hledat ve složce“."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:22
-msgid ""
-"This key determines if the \"Contains the text\" search option is selected "
-"when the search tool is started."
-msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Obsahuje text“."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:23
-msgid ""
-"This key determines if the \"Date modified less than\" search option is "
-"selected when the search tool is started."
-msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Datum úpravy méně než“."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:24
-msgid ""
-"This key determines if the \"Date modified more than\" search option is "
-"selected when the search tool is started."
-msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Datum úpravy více než“."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:25
-msgid ""
-"This key determines if the \"Size at least\" search option is selected when "
-"the search tool is started."
-msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Velikost alespoň“."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:26
-msgid ""
-"This key determines if the \"Size at most\" search option is selected when "
-"the search tool is started."
-msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Velikost nejvíce“."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:27
-msgid ""
-"This key determines if the \"File is empty\" search option is selected when "
-"the search tool is started."
-msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Soubor je prázdný“."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:28
-msgid ""
-"This key determines if the \"Owned by user\" search option is selected when "
-"the search tool is started."
-msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Vlastněno uživatelem“."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:29
-msgid ""
-"This key determines if the \"Owned by group\" search option is selected when"
-" the search tool is started."
-msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Vlastněno skupinou“."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:30
-msgid ""
-"This key determines if the \"Owner is unrecognized\" search option is "
-"selected when the search tool is started."
-msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Vlastníka nelze rozpoznat“."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:31
-msgid ""
-"This key determines if the \"Name does not contain\" search option is "
-"selected when the search tool is started."
-msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Název neobsahuje“."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:32
-msgid ""
-"This key determines if the \"Name matches regular expression\" search option"
-" is selected when the search tool is started."
-msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Název odpovídá regulárnímu výrazu“."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:33
-msgid ""
-"This key determines if the \"Show hidden files and folders\" search option "
-"is selected when the search tool is started."
-msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Zobrazovat skryté soubory a složky“."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:34
-msgid ""
-"This key determines if the \"Follow symbolic links\" search option is "
-"selected when the search tool is started."
-msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Sledovat symbolické odkazy“."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:35
-msgid ""
-"This key determines if the \"Exclude other filesystems\" search option is "
-"selected when the search tool is started."
-msgstr "Tento klíč určuje, jestli je při spuštění nástroje hledání zvolena možnost hledání „Vyjmout jiné souborové systémy“."
-
-#: ../libeggsmclient/eggdesktopfile.c:165
-#, c-format
-msgid "File is not a valid .desktop file"
-msgstr "Soubor není platným souborem .desktop"
-
-#: ../libeggsmclient/eggdesktopfile.c:188
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "Nerozpoznaná verze „%s“ souboru pracovní plochy"
-
-#: ../libeggsmclient/eggdesktopfile.c:957
-#, c-format
-msgid "Starting %s"
-msgstr "Spouští se %s"
-
-#: ../libeggsmclient/eggdesktopfile.c:1098
-#, c-format
-msgid "Application does not accept documents on command line"
-msgstr "Aplikace nepřijímá dokumenty z příkazové řádky"
-
-#: ../libeggsmclient/eggdesktopfile.c:1166
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "Nerozpoznaná volba spuštění: %d"
-
-#: ../libeggsmclient/eggdesktopfile.c:1365
-#, c-format
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "URI dokumentu nelze postoupit položce pracovní plochy „Type=Link“"
-
-#: ../libeggsmclient/eggdesktopfile.c:1384
-#, c-format
-msgid "Not a launchable item"
-msgstr "Nespustitelná položka"
-
-#: ../libeggsmclient/eggsmclient.c:225
-msgid "Disable connection to session manager"
-msgstr "Vypnout spojení se správcem sezení"
-
-#: ../libeggsmclient/eggsmclient.c:228
-msgid "Specify file containing saved configuration"
-msgstr "Stanovit soubor obsahující uloženou konfiguraci"
-
-#: ../libeggsmclient/eggsmclient.c:228
-msgid "FILE"
-msgstr "SOUBOR"
-
-#: ../libeggsmclient/eggsmclient.c:231
-msgid "Specify session management ID"
-msgstr "Stanovit ID správy sezení"
-
-#: ../libeggsmclient/eggsmclient.c:231
-msgid "ID"
-msgstr "ID"
-
-#: ../libeggsmclient/eggsmclient.c:252
-msgid "Session management options:"
-msgstr "Možnosti správy sezení:"
-
-#: ../libeggsmclient/eggsmclient.c:253
-msgid "Show session management options"
-msgstr "Zobrazit možnosti správy sezení"
-
-#: ../logview/data/mate-system-log.desktop.in.in.h:1
-msgid "Log File Viewer"
-msgstr "Prohlížeč souborů protokolů"
-
-#: ../logview/data/mate-system-log.desktop.in.in.h:2
-msgid "View or monitor system log files"
-msgstr "Prohlížet nebo sledovat soubory systémových protokolů"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
-msgid "Log file to open up on startup"
-msgstr "Soubor protokolu, který otevřít při startu"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
-msgid ""
-"Specifies the log file displayed at startup. The default is either "
-"/var/adm/messages or /var/log/messages, depending on your operating system."
-msgstr "Určuje soubor protokolu zobrazovaný při startu. Výchozí je buď /var/adm/messages nebo /var/log/messages, podle vašeho operačního systému."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
-msgid "Size of the font used to display the log"
-msgstr "Velikost písma používaného pro zobrazování protokolu"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
-msgid ""
-"Specifies the size of the fixed-width font used to display the log in the "
-"main tree view. The default is taken from the default terminal font size."
-msgstr "Určuje velikost neproporcionálního písma používaného pro zobrazování protokolů v hlavním stromovém pohledu. Výchozí hodnota je převzata z výchozí velikosti písma terminálu."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
-msgid "Height of the main window in pixels"
-msgstr "Výška hlavního okna v pixelech"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
-msgid "Specifies the height of the log viewer main window in pixels."
-msgstr "Určuje výšku hlavního okna prohlížeče protokolů v pixelech."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
-msgid "Width of the main window in pixels"
-msgstr "Šířka hlavního okna v pixelech"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
-msgid "Specifies the width of the log viewer main window in pixels."
-msgstr "Určuje šířku hlavního okna prohlížeče protokolů v pixelech."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
-msgid "Log files to open up on startup"
-msgstr "Soubory s protokoly, které otevřít při startu"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
-msgid ""
-"Specifies a list of log files to open up at startup. A default list is "
-"created by reading /etc/syslog.conf."
-msgstr "Určuje seznam souborů s protokoly, které otevřít při startu. Výchozí seznam je vytvořen čtením /etc/syslog.conf."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
-msgid "List of saved filters"
-msgstr ""
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
-msgid "List of saved regexp filters"
-msgstr ""
-
-#: ../logview/data/logview-filter.ui.h:2
-msgid "_Regular Expression:"
-msgstr "_Regulární výraz:"
-
-#: ../logview/data/logview-filter.ui.h:3
-msgid "Highlight"
-msgstr "Zvýraznit"
-
-#: ../logview/data/logview-filter.ui.h:4
-msgid "Hide"
-msgstr "Skrýt"
-
-#: ../logview/data/logview-filter.ui.h:5
-msgid "Foreground:"
-msgstr "Popředí:"
-
-#: ../logview/data/logview-filter.ui.h:6
-msgid "Background:"
-msgstr "Pozadí:"
-
-#: ../logview/data/logview-filter.ui.h:7
-msgid "Effect:"
-msgstr "Efekt:"
-
-#: ../logview/logview-app.c:377
-#, c-format
-msgid "Impossible to open the file %s"
-msgstr "Nelze otevřít soubor %s"
-
-#: ../logview/logview-filter-manager.c:94
-msgid "Filter name is empty!"
-msgstr "Název filtru je prázdný!"
-
-#: ../logview/logview-filter-manager.c:107
-msgid "Filter name may not contain the ':' character"
-msgstr "Název filtru nesmí obsahovat znak „:“"
-
-#: ../logview/logview-filter-manager.c:130
-msgid "Regular expression is empty!"
-msgstr "Regulární výraz je prázdný!"
-
-#: ../logview/logview-filter-manager.c:146
-#, c-format
-msgid "Regular expression is invalid: %s"
-msgstr "Regulární výraz není platný: %s"
-
-#: ../logview/logview-filter-manager.c:242
-msgid "Please specify either foreground or background color!"
-msgstr "Prosím stanovte buď barvu popředí nebo pozadí!"
-
-#: ../logview/logview-filter-manager.c:296
-msgid "Edit filter"
-msgstr "Upravit filtr"
-
-#: ../logview/logview-filter-manager.c:296
-msgid "Add new filter"
-msgstr "Přidat nový filtr"
-
-#: ../logview/logview-filter-manager.c:506
-msgid "Filters"
-msgstr "Filtry"
-
-#: ../logview/logview-findbar.c:173
-msgid "_Find:"
-msgstr "_Hledat:"
-
-#: ../logview/logview-findbar.c:188
-msgid "Find Previous"
-msgstr "Najít předchozí"
-
-#: ../logview/logview-findbar.c:191
-msgid "Find previous occurrence of the search string"
-msgstr "Najít předchozí výskyt hledaného řetězce"
-
-#: ../logview/logview-findbar.c:196
-msgid "Find Next"
-msgstr "Najít následující"
-
-#: ../logview/logview-findbar.c:199
-msgid "Find next occurrence of the search string"
-msgstr "Najít následující výskyt hledaného řetězce"
-
-#: ../logview/logview-findbar.c:206
-msgid "Clear the search string"
-msgstr "Vymazat hledaný řetězec"
-
-#: ../logview/logview-log.c:595
-msgid "Error while uncompressing the GZipped log. The file might be corrupt."
-msgstr "Chyba při rozbalování protokolu zabaleného do GZip. Soubor je možná poškozený."
-
-#: ../logview/logview-log.c:642
-msgid "You don't have enough permissions to read the file."
-msgstr "Nemáte dostatečná oprávnění ke čtení souboru."
-
-#: ../logview/logview-log.c:657
-msgid "The file is not a regular file or is not a text file."
-msgstr "Soubor není obyčejným nebo textovým souborem."
-
-#: ../logview/logview-log.c:739
-msgid "This version of System Log does not support GZipped logs."
-msgstr "Tato verze systémového protokolu nepodporuje protokoly zabalené ve formátu GZip."
-
-#: ../logview/logview-loglist.c:315
-msgid "Loading..."
-msgstr "Načítá se…"
-
-#: ../logview/logview-main.c:61
-msgid "Show the application's version"
-msgstr "Zobrazit verzi aplikace"
-
-#: ../logview/logview-main.c:63
-msgid "[LOGFILE...]"
-msgstr "[SOUBOR PROTOKOLU…]"
-
-#: ../logview/logview-main.c:67
-msgid " - Browse and monitor logs"
-msgstr " - Procházet a sledovat protokoly"
-
-#: ../logview/logview-main.c:100
-msgid "Log Viewer"
-msgstr "Prohlížeč protokolů"
-
-#: ../logview/logview-window.c:38 ../logview/logview-window.c:760
-msgid "System Log Viewer"
-msgstr "Prohlížeč systémových protokolů"
-
-#: ../logview/logview-window.c:210
-#, c-format
-msgid "last update: %s"
-msgstr "poslední aktualizace: %s"
-
-#: ../logview/logview-window.c:214
-#, c-format
-msgid "%d lines (%s) - %s"
-msgstr "%d řádků (%s) - %s"
-
-#: ../logview/logview-window.c:318
-msgid "Open Log"
-msgstr "Otevřít protokol"
-
-#: ../logview/logview-window.c:357
-#, c-format
-msgid "There was an error displaying help: %s"
-msgstr "Při zobrazování nápovědy došlo k chybě: %s"
-
-#: ../logview/logview-window.c:471
-msgid "Wrapped"
-msgstr "Zabalený"
-
-#: ../logview/logview-window.c:765
-msgid "A system log viewer for MATE."
-msgstr "Prohlížeč systémových protokolů pro MATE."
-
-#: ../logview/logview-window.c:811
-msgid "_Filters"
-msgstr "_Filtry"
-
-#: ../logview/logview-window.c:814
-msgid "_Open..."
-msgstr "_Otevřít…"
-
-#: ../logview/logview-window.c:814
-msgid "Open a log from file"
-msgstr "Otevřít protokol ze souboru"
-
-#: ../logview/logview-window.c:816
-msgid "_Close"
-msgstr "_Zavřít"
-
-#: ../logview/logview-window.c:816
-msgid "Close this log"
-msgstr "Zavřít tento protokol"
-
-#: ../logview/logview-window.c:818
-msgid "_Quit"
-msgstr "U_končit"
-
-#: ../logview/logview-window.c:818
-msgid "Quit the log viewer"
-msgstr "Ukončit prohlížeč protokolů"
-
-#: ../logview/logview-window.c:821
-msgid "_Copy"
-msgstr "_Kopírovat"
-
-#: ../logview/logview-window.c:821
-msgid "Copy the selection"
-msgstr "Kopírovat výběr"
-
-#: ../logview/logview-window.c:823
-msgid "Select the entire log"
-msgstr "Vybrat celý protokol"
-
-#: ../logview/logview-window.c:825
-msgid "_Find..."
-msgstr "_Hledat…"
-
-#: ../logview/logview-window.c:825
-msgid "Find a word or phrase in the log"
-msgstr "Najít v protokolu slovo nebo frázi"
-
-#: ../logview/logview-window.c:828
-msgid "Bigger text size"
-msgstr "Větší velikost textu"
-
-#: ../logview/logview-window.c:830
-msgid "Smaller text size"
-msgstr "Menší velikost textu"
-
-#: ../logview/logview-window.c:832
-msgid "Normal text size"
-msgstr "Normální velikost textu"
-
-#: ../logview/logview-window.c:835
-msgid "Manage Filters"
-msgstr "Spravovat filtry"
-
-#: ../logview/logview-window.c:835
-msgid "Manage filters"
-msgstr "Spravovat filtry"
-
-#: ../logview/logview-window.c:838
-msgid "Open the help contents for the log viewer"
-msgstr "Otevřít obsah nápovědy prohlížeče protokolů"
-
-#: ../logview/logview-window.c:840
-msgid "Show the about dialog for the log viewer"
-msgstr "Zobrazit informace o aplikaci prohlížeče protokolů"
-
-#: ../logview/logview-window.c:845
-msgid "_Statusbar"
-msgstr "_Stavový řádek"
-
-#: ../logview/logview-window.c:845
-msgid "Show Status Bar"
-msgstr "Zobrazovat stavový řádek"
-
-#: ../logview/logview-window.c:847
-msgid "Side _Pane"
-msgstr "_Postranní panel"
-
-#: ../logview/logview-window.c:847
-msgid "Show Side Pane"
-msgstr "Zobrazovat postranní panel"
-
-#: ../logview/logview-window.c:849
-msgid "Show matches only"
-msgstr "Zobrazit pouze nalezené shody"
-
-#: ../logview/logview-window.c:849
-msgid "Only show lines that match one of the given filters"
-msgstr "Zobrazit pouze řádky, které odpovídají jednomu ze stanovených filtrů"
-
-#: ../logview/logview-window.c:963
-#, c-format
-msgid "Can't read from \"%s\""
-msgstr "Nelze číst z „%s“"
-
-#: ../logview/logview-window.c:1386
-msgid "Version: "
-msgstr "Verze: "
-
-#: ../logview/logview-window.c:1493
-msgid "Could not open the following files:"
-msgstr "Nelze otevřít následující soubory:"
