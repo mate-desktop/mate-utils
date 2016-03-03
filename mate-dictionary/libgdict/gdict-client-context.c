@@ -136,7 +136,7 @@ typedef struct
 #define HOSTNAME_LOOKUP_EXPIRE 	300
 
 /* wait 30 seconds between connection and receiving data on the line */
-#define CONNECTION_TIMEOUT      30
+#define CONNECTION_TIMEOUT_SEC  30
 
 enum
 {
@@ -1990,9 +1990,9 @@ gdict_client_context_connect (GdictClientContext  *context,
       return FALSE;
     }
 
-  priv->timeout_id = g_timeout_add (CONNECTION_TIMEOUT * 1000,
-                                    check_for_connection,
-                                    context);
+  priv->timeout_id = g_timeout_add_seconds (CONNECTION_TIMEOUT_SEC,
+                                            check_for_connection,
+                                            context);
 
   /* XXX - remember that g_io_add_watch() increases the reference count
    * of the GIOChannel we are using.
