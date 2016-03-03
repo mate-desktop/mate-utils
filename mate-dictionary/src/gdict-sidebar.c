@@ -460,7 +460,8 @@ gdict_sidebar_add_page (GdictSidebar *sidebar,
   gtk_widget_show (menu_item);
   page->menu_item = menu_item;
 
-  gtk_menu_shell_select_item (GTK_MENU_SHELL (priv->menu), menu_item);
+  if (gtk_widget_get_realized (priv->menu))
+    gtk_menu_shell_select_item (GTK_MENU_SHELL (priv->menu), menu_item);
   gtk_label_set_text (GTK_LABEL (priv->label), page_name);
   gtk_notebook_set_current_page (GTK_NOTEBOOK (priv->notebook), page->index);
 }
@@ -510,7 +511,8 @@ gdict_sidebar_remove_page (GdictSidebar *sidebar,
   page = priv->pages->data;
   if (page)
     {
-      gtk_menu_shell_select_item (GTK_MENU_SHELL (priv->menu), page->menu_item);
+      if (gtk_widget_get_realized (priv->menu))
+        gtk_menu_shell_select_item (GTK_MENU_SHELL (priv->menu), page->menu_item);
       gtk_label_set_text (GTK_LABEL (priv->label), page->name);
       gtk_notebook_set_current_page (GTK_NOTEBOOK (priv->notebook), page->index);
     }
@@ -535,7 +537,8 @@ gdict_sidebar_view_page (GdictSidebar *sidebar,
 
   gtk_notebook_set_current_page (GTK_NOTEBOOK (priv->notebook), page->index);
   gtk_label_set_text (GTK_LABEL (priv->label), page->name);
-  gtk_menu_shell_select_item (GTK_MENU_SHELL (priv->menu), page->menu_item);
+  if (gtk_widget_get_realized (priv->menu))
+    gtk_menu_shell_select_item (GTK_MENU_SHELL (priv->menu), page->menu_item);
 }
 
 const gchar *
