@@ -952,8 +952,8 @@ build_uri (AsyncExistenceJob *job)
   d = g_date_time_new_now_local ();
   /* Translators: This is a strftime format string.
 		 * It is used to display the time in 24-hours format (eg, like
-		 * in France: 20:10). */
-  timestamp = g_date_time_format (d, _("%Y-%m-%d %H:%M:%S"));
+		 * in France: 20:10) but using hyphens in place of colons. */
+  timestamp = g_date_time_format (d, _("%Y-%m-%d %H-%M-%S"));
   g_date_time_unref (d);
 
   if (job->iteration == 0)
