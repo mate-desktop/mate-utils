@@ -1,9 +1,14 @@
 1.13.0
 
-  * Gtk+3: fix a lot of deprecations
-  * screenshot: properly disable effects and delay when launched with -ai
-  * remove idiotic -Werror from "maintainer flags"
-  * drop MateConf migration scripts
+  * Drop MateConf migration scripts
+  * Disable effects and delay options in mate-screenshot UI
+    when launched with -ai command line argument
+  * Use hyphens instead of colons in screenshot filenames
+    by default
+  * GTK+3: fix a lot of deprecations and some UI issues
+  * Don't use -Werror flag in build
+  * Some more fixes and cleanups
+  * Translations update
 
 1.12.0
 
