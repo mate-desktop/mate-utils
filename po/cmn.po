@@ -12,10 +12,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-24 13:29+0100\n"
-"PO-Revision-Date: 2015-01-24 12:29+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Chinese (Mandarin) (http://www.transifex.com/projects/p/MATE/language/cmn/)\n"
+"POT-Creation-Date: 2015-12-10 13:06+0300\n"
+"PO-Revision-Date: 2015-12-10 10:12+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Chinese (Mandarin) (http://www.transifex.com/mate/MATE/language/cmn/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -63,7 +63,8 @@ msgid "S_can Remote Folder..."
 msgstr "掃描遠端資料夾(_C)…"
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../mate-dictionary/src/gdict-window.c:1279 ../logview/logview-window.c:809
+#: ../logview/src/logview-window.c:811
+#: ../mate-dictionary/src/gdict-window.c:1285
 msgid "_Edit"
 msgstr "編輯(_E)"
 
@@ -76,7 +77,8 @@ msgid "_Collapse All"
 msgstr "全部收起(_C)"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../mate-dictionary/src/gdict-window.c:1280 ../logview/logview-window.c:810
+#: ../logview/src/logview-window.c:812
+#: ../mate-dictionary/src/gdict-window.c:1286
 msgid "_View"
 msgstr "檢視(_V)"
 
@@ -93,18 +95,20 @@ msgid "All_ocated Space"
 msgstr "已分配空間(_O)"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../mate-dictionary/src/gdict-applet.c:1213
-#: ../mate-dictionary/src/gdict-window.c:1282 ../logview/logview-window.c:812
+#: ../logview/src/logview-window.c:814
+#: ../mate-dictionary/src/gdict-applet.c:1185
+#: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Help"
 msgstr "求助(_H)"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../mate-dictionary/src/gdict-window.c:1332 ../logview/logview-window.c:838
+#: ../logview/src/logview-window.c:840
+#: ../mate-dictionary/src/gdict-window.c:1338
 msgid "_Contents"
 msgstr "內容(_C)"
 
-#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/callbacks.c:97
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1245
 msgid "Disk Usage Analyzer"
 msgstr "磁碟用量分析器"
 
@@ -228,12 +232,12 @@ msgstr "剩餘："
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:240 ../baobab/src/baobab.c:297
-#: ../baobab/src/callbacks.c:259
+#: ../baobab/src/callbacks.c:258
 msgid "Calculating percentage bars..."
 msgstr "正在計算百分比長條圖…"
 
 #: ../baobab/src/baobab.c:251 ../baobab/src/baobab.c:1309
-#: ../baobab/src/callbacks.c:263
+#: ../baobab/src/callbacks.c:262
 msgid "Ready"
 msgstr "準備就緒"
 
@@ -468,7 +472,7 @@ msgstr "您的個人資料夾的內容已經改變。選擇重新掃描來更新
 msgid "_Rescan"
 msgstr "重新掃描(_R)"
 
-#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2427
+#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/src/gsearchtool.c:2427
 msgid "Folder"
 msgstr "資料夾"
 
@@ -476,7 +480,7 @@ msgstr "資料夾"
 msgid "Usage"
 msgstr "用量"
 
-#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2440
+#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/src/gsearchtool.c:2440
 msgid "Size"
 msgstr "大小"
 
@@ -506,43 +510,43 @@ msgstr "“%s”不是有效的資料夾"
 msgid "Could not analyze disk usage."
 msgstr "無法分析磁碟使用率"
 
-#: ../baobab/src/baobab-utils.c:366
+#: ../baobab/src/baobab-utils.c:362
 msgid "_Open Folder"
 msgstr "開啟資料夾(_O)"
 
-#: ../baobab/src/baobab-utils.c:372
-#: ../gsearchtool/gsearchtool-callbacks.c:1210
+#: ../baobab/src/baobab-utils.c:368
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1210
 msgid "Mo_ve to Trash"
 msgstr "丟進回收筒(_V)"
 
-#: ../baobab/src/baobab-utils.c:406
+#: ../baobab/src/baobab-utils.c:402
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "無法開啟資料夾“%s”"
 
-#: ../baobab/src/baobab-utils.c:409
+#: ../baobab/src/baobab-utils.c:405
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr "沒有任何已安裝的顯示程式可以顯示該檔案。"
 
-#: ../baobab/src/baobab-utils.c:478
+#: ../baobab/src/baobab-utils.c:474
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr "無法將“%s”丟進回收筒"
 
-#: ../baobab/src/baobab-utils.c:486
+#: ../baobab/src/baobab-utils.c:482
 msgid "Could not move file to the Trash"
 msgstr "無法將檔案移至回收筒"
 
-#: ../baobab/src/baobab-utils.c:488
+#: ../baobab/src/baobab-utils.c:484
 #, c-format
 msgid "Details: %s"
 msgstr "詳細資料：%s"
 
-#: ../baobab/src/baobab-utils.c:524
+#: ../baobab/src/baobab-utils.c:520
 msgid "There was an error displaying help."
 msgstr "顯示說明文件時發生錯誤。"
 
-#: ../baobab/src/callbacks.c:76 ../logview/logview-about.h:49
+#: ../baobab/src/callbacks.c:76 ../logview/src/logview-about.h:49
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -550,7 +554,7 @@ msgid ""
 "any later version."
 msgstr "這個程式是自由軟體，您可以遵照自由軟體基金會 (Free Software Foundation) 出版的 GNU 通用公共許可證條款 (GNU General Public License) 第二版來修改和重新發布這一程式，或者自由選擇使用任何更新的版本。"
 
-#: ../baobab/src/callbacks.c:81 ../logview/logview-about.h:53
+#: ../baobab/src/callbacks.c:81 ../logview/src/logview-about.h:53
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -558,31 +562,1279 @@ msgid ""
 "more details."
 msgstr "發布這一程式的目的是希望它有用，但沒有任何擔保。甚至沒有適合特定目的而隱含的擔保。更詳細的情況請參閱 GNU 通用公共許可證。"
 
-#: ../baobab/src/callbacks.c:86 ../logview/logview-about.h:57
+#: ../baobab/src/callbacks.c:86 ../logview/src/logview-about.h:57
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 msgstr "您應該已收到附於本程式的 GNU 通用公共授權的副本；如果沒有，請寫信至：Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301，USA"
 
-#: ../baobab/src/callbacks.c:98
+#: ../baobab/src/callbacks.c:97
 msgid "A graphical tool to analyze disk usage."
 msgstr "分析磁碟使用率的圖形化工具。"
 
 #. translator credits
-#: ../baobab/src/callbacks.c:104 ../mate-dictionary/src/gdict-about.c:55
-#: ../logview/logview-about.h:63
+#: ../baobab/src/callbacks.c:103 ../logview/src/logview-about.h:63
+#: ../mate-dictionary/src/gdict-about.c:55
 msgid "translator-credits"
 msgstr "趙惟倫 <bluebat@member.fsf.org>, 2012, 2013\nChing-Hung Lin <billlin@wshlab2.ee.kuas.edu.tw>, 2006\nLin-Chieh Shangkuan <r93066@csie.ntu.edu.tw>, 2006\nWoodman Tuen <wmtuen@gmail.com>, 2005\nRoy Chan <roy.chan@linux.org.hk>, 2004\nAbel Cheung <abel@oaka.org>, 2001-2004\nMing-Yen Hsu <myhsu@cyberdude.com>, 1999"
 
-#: ../baobab/src/callbacks.c:202 ../gsearchtool/gsearchtool-callbacks.c:508
-#: ../gsearchtool/gsearchtool-callbacks.c:848
+#: ../baobab/src/callbacks.c:201
+#: ../gsearchtool/src/gsearchtool-callbacks.c:508
+#: ../gsearchtool/src/gsearchtool-callbacks.c:848
 msgid "The document does not exist."
 msgstr "資料夾不存在。"
 
-#: ../baobab/src/callbacks.c:283
+#: ../baobab/src/callbacks.c:282
 msgid "The folder does not exist."
 msgstr "資料夾不存在。"
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
+msgid "A file searching tool for MATE Desktop"
+msgstr ""
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Search Tool is a simple but powerful utility that allows you to "
+"search for files and folders on any mounted file system. Its interface gives"
+" you instant access to a wide variety of parameters for each search, such as"
+" text contained within a file, ownership, date of modification, file size, "
+"folder exclusion, etc.. </p>"
+msgstr ""
+
+#: ../gsearchtool/data/mate-search-tool.desktop.in.h:1
+msgid "MATE Search Tool"
+msgstr ""
+
+#: ../gsearchtool/data/mate-search-tool.desktop.in.h:2
+msgid "Locate documents and folders on this computer by name or content"
+msgstr "以名稱或內容尋找此電腦中的文件及資料夾"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:1
+msgid "Search history"
+msgstr ""
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:2
+msgid "This key defines the items which were searched for in the past."
+msgstr ""
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:3
+msgid "Show Additional Options"
+msgstr "顯示額外選項"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:4
+msgid "Disable Quick Search"
+msgstr "停用快速搜尋功能"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:5
+msgid ""
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
+msgstr "本設定鍵決定搜尋工具在進行的檔案名稱搜尋時不使用 locate 指令。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:6
+msgid "Quick Search Excluded Paths"
+msgstr "不包含路徑的快速搜尋"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:7
+msgid ""
+"This key defines the paths the search tool will exclude from a quick search."
+" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
+"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
+msgstr "本設定鍵決定搜尋工具在進行快速搜尋時會忽略的路徑。支援萬用字元「*」及「？」。預設的數值是 /mnt/*，/media/*，/dev/*，/tmp/*，/proc/* 及/var/*。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:8
+msgid "Disable Quick Search Second Scan"
+msgstr "停用快速搜尋第二次掃描功能"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:9
+msgid ""
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
+msgstr "本設定鍵決定搜尋工具在進行快速搜尋後不使用 find 指令"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:10
+msgid "Quick Search Second Scan Excluded Paths"
+msgstr "不包含路徑的快速搜尋第二次掃描"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:11
+msgid ""
+"This key defines the paths the search tool will exclude from a second scan "
+"when performing a quick search. The second scan uses the find command to "
+"search for files. The purpose of the second scan is to find files that have "
+"not been indexed. The wildcards '*' and '?' are supported. The default value"
+" is /."
+msgstr "本設定鍵決定搜尋工具在進行快速搜尋第二次掃描會忽略的路徑。快速搜尋第二次掃描是做用 find 指令來尋找檔案。第二次掃描的目的是尋找那些沒有建構索引的檔案。支援萬用字元「*」及「？」。預設的數值是 ./。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:12
+msgid "Search Result Columns Order"
+msgstr "以行為順序的搜尋結果"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:13
+msgid ""
+"This key defines the order of the columns in the search results. This key "
+"should not be modified by the user."
+msgstr "本設定鍵定義搜尋結果的行順序，它不應該被使用者修改。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:14
+msgid "Default Window Width"
+msgstr "預設視窗寬度"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:15
+msgid ""
+"This key defines the window width, and it's used to remember the size of the"
+" search tool between sessions. Setting it to -1 will make the search tool "
+"use the default width."
+msgstr "本設定鍵定義視窗的寬度，而且用來在不同的執行階段間記住搜尋工具的大小。如果將它的值設為 -1 則會讓搜尋工具使用預設的寬度。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:16
+msgid "Default Window Height"
+msgstr "預設視窗高度"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:17
+msgid ""
+"This key defines the window height, and it's used to remember the size of "
+"the search tool between sessions. Setting it to -1 will make the search tool"
+" use the default height."
+msgstr "本設定鍵定義視窗的高度，而且用來在不同的執行階段間記住搜尋工具的大小。如果將它的值設為 -1 則會讓搜尋工具使用預設的高度。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:18
+msgid "Default Window Maximized"
+msgstr "預設視窗最大化"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:19
+msgid ""
+"This key determines if the search tool window starts in a maximized state."
+msgstr "本設定鍵決定搜尋工具起始時是否最大化"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:20
+msgid "Look in Folder"
+msgstr "在資料夾中搜尋"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:21
+msgid "This key defines the default value of the \"Look in Folder\" widget."
+msgstr "這個設定鍵定義了「在資料夾中搜尋」元件的預設數值。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:22
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「包含指定的文字」選項。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:23
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
+msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「最後修改時間少於」選項。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:24
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
+msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「最後修改時間多於」選項。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:25
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「檔案大小下限」選項。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:26
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
+msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「檔案大小上限」選項。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:27
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
+msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「檔案是空白的」選項。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:28
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
+msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「由指定使用者擁有」選項。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:29
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when"
+" the search tool is started."
+msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「屬於指定群組」選項。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:30
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
+msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「無法識別擁有者」選項。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:31
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「名稱中沒有」選項。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:32
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option"
+" is selected when the search tool is started."
+msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「檔名符合正規表示式」選項。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:33
+msgid ""
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
+msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「顯示隱藏檔案及資料夾」選項。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:34
+msgid ""
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「跟隨符號鏈結」選項。"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:35
+msgid ""
+"This key determines if the \"Exclude other filesystems\" search option is "
+"selected when the search tool is started."
+msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「排除其他檔案系統」選項。"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "檔案不是有效的 .desktop 檔案"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "無法辨識的桌面檔案版本「%s」"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:957
+#, c-format
+msgid "Starting %s"
+msgstr "準備啟動 %s"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1098
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "應用程式不接受以命令列開啟文件"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1166
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "無法辨識的啟動選項：%d"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1365
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "不能傳送文件 URI 至「Type=Link」桌面項目"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1384
+#, c-format
+msgid "Not a launchable item"
+msgstr "不是可以啟動的項目"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:225
+msgid "Disable connection to session manager"
+msgstr "停用到作業階段管理程式的連線"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+msgid "Specify file containing saved configuration"
+msgstr "指定含有已儲存組態的檔案"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+msgid "FILE"
+msgstr "檔案"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+msgid "Specify session management ID"
+msgstr "指定作業階段管理 ID"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+msgid "ID"
+msgstr "ID"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:252
+msgid "Session management options:"
+msgstr "作業階段管理選項："
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:253
+msgid "Show session management options"
+msgstr "顯示作業階段管理選項"
+
+#: ../gsearchtool/src/gsearchtool.c:82
+msgid "Contains the _text"
+msgstr "包含指定的文字(_T)"
+
+#: ../gsearchtool/src/gsearchtool.c:84
+msgid "_Date modified less than"
+msgstr "最後修改時間少於(_D)"
+
+#: ../gsearchtool/src/gsearchtool.c:84 ../gsearchtool/src/gsearchtool.c:85
+msgid "days"
+msgstr "天"
+
+#: ../gsearchtool/src/gsearchtool.c:85
+msgid "Date modified more than"
+msgstr "最後修改時間多於"
+
+#: ../gsearchtool/src/gsearchtool.c:87
+msgid "S_ize at least"
+msgstr "檔案大小下限(_I)"
+
+#: ../gsearchtool/src/gsearchtool.c:87 ../gsearchtool/src/gsearchtool.c:88
+msgid "kilobytes"
+msgstr "KB"
+
+#: ../gsearchtool/src/gsearchtool.c:88
+msgid "Si_ze at most"
+msgstr "檔案大小上限(_Z)"
+
+#: ../gsearchtool/src/gsearchtool.c:89
+msgid "File is empty"
+msgstr "檔案是空白的"
+
+#: ../gsearchtool/src/gsearchtool.c:91
+msgid "Owned by _user"
+msgstr "由指定使用者擁有(_U)"
+
+#: ../gsearchtool/src/gsearchtool.c:92
+msgid "Owned by _group"
+msgstr "屬於指定群組(_G)"
+
+#: ../gsearchtool/src/gsearchtool.c:93
+msgid "Owner is unrecognized"
+msgstr "無法識別擁有者"
+
+#: ../gsearchtool/src/gsearchtool.c:95
+msgid "Na_me does not contain"
+msgstr "名稱中沒有(_M)"
+
+#: ../gsearchtool/src/gsearchtool.c:96
+msgid "Name matches regular e_xpression"
+msgstr "檔名符合正規表示式(_X)"
+
+#: ../gsearchtool/src/gsearchtool.c:98
+msgid "Show hidden and backup files"
+msgstr "顯示隱藏或備份的檔案或資料夾"
+
+#: ../gsearchtool/src/gsearchtool.c:99
+msgid "Follow symbolic links"
+msgstr "跟隨符號鏈結"
+
+#: ../gsearchtool/src/gsearchtool.c:100
+msgid "Exclude other filesystems"
+msgstr "排除其他檔案系統"
+
+#: ../gsearchtool/src/gsearchtool.c:158
+msgid "Show version of the application"
+msgstr "顯示應用程式的版本"
+
+#: ../gsearchtool/src/gsearchtool.c:159 ../gsearchtool/src/gsearchtool.c:164
+#: ../gsearchtool/src/gsearchtool.c:173
+msgid "STRING"
+msgstr "字串"
+
+#: ../gsearchtool/src/gsearchtool.c:160
+msgid "PATH"
+msgstr "路徑"
+
+#: ../gsearchtool/src/gsearchtool.c:161
+msgid "VALUE"
+msgstr "數值"
+
+#: ../gsearchtool/src/gsearchtool.c:165 ../gsearchtool/src/gsearchtool.c:166
+msgid "DAYS"
+msgstr "日數"
+
+#: ../gsearchtool/src/gsearchtool.c:167 ../gsearchtool/src/gsearchtool.c:168
+msgid "KILOBYTES"
+msgstr "千位元組"
+
+#: ../gsearchtool/src/gsearchtool.c:170
+msgid "USER"
+msgstr "使用者"
+
+#: ../gsearchtool/src/gsearchtool.c:171
+msgid "GROUP"
+msgstr "群組"
+
+#: ../gsearchtool/src/gsearchtool.c:174
+msgid "PATTERN"
+msgstr "胚騰"
+
+#: ../gsearchtool/src/gsearchtool.c:385
+msgid "A locate database has probably not been created."
+msgstr "locate 指令的資料庫可能還未建構。"
+
+#: ../gsearchtool/src/gsearchtool.c:487
+#, c-format
+msgid "Character set conversion failed for \"%s\""
+msgstr "“%s”的字元轉換失敗"
+
+#: ../gsearchtool/src/gsearchtool.c:511
+msgid "Searching..."
+msgstr "搜尋中…"
+
+#: ../gsearchtool/src/gsearchtool.c:511 ../gsearchtool/src/gsearchtool.c:1031
+#: ../gsearchtool/src/gsearchtool.c:3030
+msgid "Search for Files"
+msgstr "搜尋檔案"
+
+#: ../gsearchtool/src/gsearchtool.c:977 ../gsearchtool/src/gsearchtool.c:1006
+msgid "No files found"
+msgstr "找不到符合條件的檔案"
+
+#: ../gsearchtool/src/gsearchtool.c:999
+msgid "(stopped)"
+msgstr "（已停止）"
+
+#: ../gsearchtool/src/gsearchtool.c:1005
+msgid "No Files Found"
+msgstr "找不到任何檔案"
+
+#: ../gsearchtool/src/gsearchtool.c:1010
+#, c-format
+msgid "%'d File Found"
+msgid_plural "%'d Files Found"
+msgstr[0] "找到 %'d 個檔案"
+
+#: ../gsearchtool/src/gsearchtool.c:1014 ../gsearchtool/src/gsearchtool.c:1052
+#, c-format
+msgid "%'d file found"
+msgid_plural "%'d files found"
+msgstr[0] "找到 %'d 個檔案"
+
+#: ../gsearchtool/src/gsearchtool.c:1143
+msgid "Entry changed called for a non entry option!"
+msgstr "已變更的欄位使用了無效的欄位選項！"
+
+#: ../gsearchtool/src/gsearchtool.c:1308
+msgid "Set the text of \"Name contains\" search option"
+msgstr "預先填上在「檔名中含有」搜尋選項中的文字"
+
+#: ../gsearchtool/src/gsearchtool.c:1309
+msgid "Set the text of \"Look in folder\" search option"
+msgstr "預先填上在「在資料夾中搜尋」搜尋選項中的文字"
+
+#: ../gsearchtool/src/gsearchtool.c:1310
+msgid "Sort files by one of the following: name, folder, size, type, or date"
+msgstr "根據以下其中一種屬性排列檔案：名稱、資料夾、大小、類型或日期"
+
+#: ../gsearchtool/src/gsearchtool.c:1311
+msgid "Set sort order to descending, the default is ascending"
+msgstr "設定為相反次序排列（預設為順序排列）"
+
+#: ../gsearchtool/src/gsearchtool.c:1312
+msgid "Automatically start a search"
+msgstr "自動開始搜尋"
+
+#: ../gsearchtool/src/gsearchtool.c:1318
+#, c-format
+msgid "Select the \"%s\" search option"
+msgstr "選擇搜尋選項“%s”"
+
+#: ../gsearchtool/src/gsearchtool.c:1321
+#, c-format
+msgid "Select and set the \"%s\" search option"
+msgstr "選擇及設定搜尋選項“%s”"
+
+#: ../gsearchtool/src/gsearchtool.c:1428
+msgid "Invalid option passed to sortby command line argument."
+msgstr "sortby 參數中的選項無效。"
+
+#: ../gsearchtool/src/gsearchtool.c:1720
+msgid ""
+"\n"
+"... Too many errors to display ..."
+msgstr "\n… 錯誤過多，無法顯示 …"
+
+#: ../gsearchtool/src/gsearchtool.c:1734
+msgid ""
+"The search results may be invalid.  There were errors while performing this "
+"search."
+msgstr "搜尋結果可能無效。進行搜尋時發生錯誤。"
+
+#: ../gsearchtool/src/gsearchtool.c:1746 ../gsearchtool/src/gsearchtool.c:1790
+msgid "Show more _details"
+msgstr "顯示更多訊息(_D)"
+
+#: ../gsearchtool/src/gsearchtool.c:1776
+msgid ""
+"The search results may be out of date or invalid.  Do you want to disable "
+"the quick search feature?"
+msgstr "搜尋結果可能過時或者無效。您想要停止使用快速搜尋功能？"
+
+#: ../gsearchtool/src/gsearchtool.c:1801
+msgid "Disable _Quick Search"
+msgstr "停止使用快速搜尋功能(_Q)"
+
+#: ../gsearchtool/src/gsearchtool.c:1828
+#, c-format
+msgid "Failed to set process group id of child %d: %s.\n"
+msgstr "設定子程序 %d 的群組 id 失敗：%s。\n"
+
+#: ../gsearchtool/src/gsearchtool.c:1853
+msgid "Error parsing the search command."
+msgstr "分析搜尋指令時發生錯誤"
+
+#: ../gsearchtool/src/gsearchtool.c:1885
+msgid "Error running the search command."
+msgstr "執行搜尋指令時發生錯誤"
+
+#: ../gsearchtool/src/gsearchtool.c:2008
+#, c-format
+msgid "Enter a text value for the \"%s\" search option."
+msgstr "輸入搜尋選項“%s”搜尋用的文字。"
+
+#. Translators:  Below is a string displaying the search options name
+#. and unit value.  For example, "\"Date modified less than\" in days".
+#: ../gsearchtool/src/gsearchtool.c:2013
+#, c-format
+msgid "\"%s\" in %s"
+msgstr "“%s”%s"
+
+#: ../gsearchtool/src/gsearchtool.c:2015
+#, c-format
+msgid "Enter a value in %s for the \"%s\" search option."
+msgstr "在 %s 輸入搜尋選項“%s”的數值。"
+
+#: ../gsearchtool/src/gsearchtool.c:2073
+#, c-format
+msgid "Remove \"%s\""
+msgstr "移除“%s”"
+
+#: ../gsearchtool/src/gsearchtool.c:2074
+#, c-format
+msgid "Click to remove the \"%s\" search option."
+msgstr "按這裡移除搜尋選項“%s”。"
+
+#: ../gsearchtool/src/gsearchtool.c:2167
+msgid "A_vailable options:"
+msgstr "目前提供的選項(_V):"
+
+#: ../gsearchtool/src/gsearchtool.c:2196
+msgid "Available options"
+msgstr "可用選項"
+
+#: ../gsearchtool/src/gsearchtool.c:2197
+msgid "Select a search option from the drop-down list."
+msgstr "在下拉式選單中選擇搜尋選項。"
+
+#: ../gsearchtool/src/gsearchtool.c:2209
+msgid "Add search option"
+msgstr "加入搜尋選項"
+
+#: ../gsearchtool/src/gsearchtool.c:2210
+msgid "Click to add the selected available search option."
+msgstr "按這裡加入搜尋選項。"
+
+#: ../gsearchtool/src/gsearchtool.c:2299
+msgid "S_earch results:"
+msgstr "搜尋結果(_E):"
+
+#: ../gsearchtool/src/gsearchtool.c:2343
+msgid "List View"
+msgstr "列表顯示"
+
+#: ../gsearchtool/src/gsearchtool.c:2403
+#: ../mate-dictionary/libgdict/gdict-source.c:246
+msgid "Name"
+msgstr "名稱"
+
+#: ../gsearchtool/src/gsearchtool.c:2452
+msgid "Type"
+msgstr "類型"
+
+#: ../gsearchtool/src/gsearchtool.c:2464
+msgid "Date Modified"
+msgstr "修改日期"
+
+#: ../gsearchtool/src/gsearchtool.c:2799
+msgid "_Name contains:"
+msgstr "名稱包含(_N):"
+
+#: ../gsearchtool/src/gsearchtool.c:2813 ../gsearchtool/src/gsearchtool.c:2814
+msgid "Enter a filename or partial filename with or without wildcards."
+msgstr "輸入檔案的名稱或檔案部分的名稱（名稱中可配合萬用字元）。"
+
+#: ../gsearchtool/src/gsearchtool.c:2814
+msgid "Name contains"
+msgstr "名稱包含"
+
+#: ../gsearchtool/src/gsearchtool.c:2820
+msgid "_Look in folder:"
+msgstr "在資料夾中搜尋(_L):"
+
+#: ../gsearchtool/src/gsearchtool.c:2826
+msgid "Browse"
+msgstr "瀏覽"
+
+#: ../gsearchtool/src/gsearchtool.c:2835
+msgid "Look in folder"
+msgstr "在資料夾中搜尋"
+
+#: ../gsearchtool/src/gsearchtool.c:2835
+msgid "Select the folder or device from which you want to begin the search."
+msgstr "選擇準備搜尋的資料夾或裝置。"
+
+#: ../gsearchtool/src/gsearchtool.c:2853
+msgid "Select more _options"
+msgstr "選擇更多選項(_O)"
+
+#: ../gsearchtool/src/gsearchtool.c:2862
+msgid "Select more options"
+msgstr "選擇更多選項"
+
+#: ../gsearchtool/src/gsearchtool.c:2862
+msgid "Click to expand or collapse the list of available options."
+msgstr "按這裡展開或收起一系列搜尋選項。"
+
+#: ../gsearchtool/src/gsearchtool.c:2886
+msgid "Click to display the help manual."
+msgstr "按下本按鈕來顯示說明文件。"
+
+#: ../gsearchtool/src/gsearchtool.c:2894
+msgid "Click to close \"Search for Files\"."
+msgstr "按下本按鈕來關閉「搜尋檔案」。"
+
+#: ../gsearchtool/src/gsearchtool.c:2920
+msgid "Click to perform a search."
+msgstr "按下本按鈕來進行搜尋"
+
+#: ../gsearchtool/src/gsearchtool.c:2921
+msgid "Click to stop a search."
+msgstr "按下本按鈕來停止搜尋。"
+
+#: ../gsearchtool/src/gsearchtool.c:3015
+msgid "- the MATE Search Tool"
+msgstr "- MATE 搜尋工具"
+
+#: ../gsearchtool/src/gsearchtool.c:3024
+#, c-format
+msgid "Failed to parse command line arguments: %s\n"
+msgstr "無法解析命令列引數：%s\n"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:198
+msgid "Could not open help document."
+msgstr "無法開啟說明文件。"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:349
+#, c-format
+msgid "Are you sure you want to open %d document?"
+msgid_plural "Are you sure you want to open %d documents?"
+msgstr[0] "是否確定要開啟 %d 份文件？"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:354
+#: ../gsearchtool/src/gsearchtool-callbacks.c:551
+#, c-format
+msgid "This will open %d separate window."
+msgid_plural "This will open %d separate windows."
+msgstr[0] "這樣會另外開啟 %d 個視窗。"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:394
+#, c-format
+msgid "Could not open document \"%s\"."
+msgstr "無法開啟“%s”文件"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:423
+#, c-format
+msgid "Could not open folder \"%s\"."
+msgstr "無法開啟“%s”資料夾"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:431
+msgid "The caja file manager is not running."
+msgstr "caja 檔案總管並未執行。"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:523
+msgid "There is no installed viewer capable of displaying the document."
+msgstr "沒有任何已安裝的顯示模式可以顯示該檔案。"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:546
+#, c-format
+msgid "Are you sure you want to open %d folder?"
+msgid_plural "Are you sure you want to open %d folders?"
+msgstr[0] "是否確定要開啟 %d 個資料夾？"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:699
+#, c-format
+msgid "Could not move \"%s\" to trash."
+msgstr "無法將“%s”丟進回收筒。"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:730
+#, c-format
+msgid "Do you want to delete \"%s\" permanently?"
+msgstr "是否確定永久刪除“%s”？"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:733
+#, c-format
+msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
+msgstr "回收筒無法使用。未能把“%s”丟進回收筒。"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:772
+#, c-format
+msgid "Could not delete \"%s\"."
+msgstr "無法刪除“%s”。"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:884
+#, c-format
+msgid "Deleting \"%s\" failed: %s."
+msgstr "刪除“%s”失敗：%s。"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:896
+#, c-format
+msgid "Moving \"%s\" failed: %s."
+msgstr "移動“%s”失敗： %s。"
+
+#. Popup menu item: Open
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1024
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1054
+msgid "_Open"
+msgstr "開啟(_O)"
+
+#. Popup menu item: Open with (default)
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1079
+#, c-format
+msgid "_Open with %s"
+msgstr "以 %s 開啟(_O)"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1114
+#, c-format
+msgid "Open with %s"
+msgstr "以 %s 開啟"
+
+#. Popup menu item: Open With
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1147
+msgid "Open Wit_h"
+msgstr "以此開啟(_H)"
+
+#. Popup menu item: Open Containing Folder
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1192
+msgid "Open Containing _Folder"
+msgstr ""
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1232
+msgid "_Save Results As..."
+msgstr "將結果儲存為(_S)…"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1614
+msgid "Save Search Results As..."
+msgstr "將搜尋結果另存為…"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1643
+msgid "Could not save document."
+msgstr "無法儲存文件。"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1644
+msgid "You did not select a document name."
+msgstr "您未選取任何文件。"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1674
+#, c-format
+msgid "Could not save \"%s\" document to \"%s\"."
+msgstr "無法將“%s”文件儲存至“%s”"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1707
+#, c-format
+msgid "The document \"%s\" already exists.  Would you like to replace it?"
+msgstr "文件“%s”已存在，是否確定覆寫這個檔案？"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1711
+msgid "If you replace an existing file, its contents will be overwritten."
+msgstr "如果您取代一個現有的檔案，該檔案的原有內容將會消失。"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1726
+#: ../mate-screenshot/src/screenshot-xfer.c:82
+msgid "_Replace"
+msgstr "取代(_R)"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1775
+msgid "The document name you selected is a folder."
+msgstr "您所選的文件名稱是一個資料夾。"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1811
+msgid "You may not have write permissions to the document."
+msgstr "您沒有足夠權限寫入檔案。"
+
+#. Translators:  Below are the strings displayed in the 'Date Modified'
+#. column of the list view.  The format of this string can vary depending
+#. on age of a file.  Please modify the format of the timestamp to match
+#. your locale.  For example, to display 24 hour time replace the '%-I'
+#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
+#: ../gsearchtool/src/gsearchtool-support.c:448
+msgid "today at %-I:%M %p"
+msgstr "今天 %p %-I:%M"
+
+#: ../gsearchtool/src/gsearchtool-support.c:450
+msgid "yesterday at %-I:%M %p"
+msgstr "昨天 %p %-I:%M"
+
+#: ../gsearchtool/src/gsearchtool-support.c:452
+#: ../gsearchtool/src/gsearchtool-support.c:454
+msgid "%A, %B %-d %Y at %-I:%M:%S %p"
+msgstr "%Y 年 %m 月 %-d 日(%A) %p %-I 時 %M 分 %S 秒"
+
+#: ../gsearchtool/src/gsearchtool-support.c:641
+msgid "link (broken)"
+msgstr "鏈結（目標不存在）"
+
+#: ../gsearchtool/src/gsearchtool-support.c:645
+#, c-format
+msgid "link to %s"
+msgstr "%s 的鏈結"
+
+#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
+#. Localizers:
+#. * Feel free to leave out the st, nd, rd and th suffix or
+#. * make some or all of them match.
+#. localizers: tag used to detect the first copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1257
+msgid " (copy)"
+msgstr " (副本)"
+
+#. localizers: tag used to detect the second copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1259
+msgid " (another copy)"
+msgstr " (另一個副本)"
+
+#. localizers: tag used to detect the x11th copy of a file
+#. localizers: tag used to detect the x12th copy of a file
+#. localizers: tag used to detect the x13th copy of a file
+#. localizers: tag used to detect the xxth copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1262
+#: ../gsearchtool/src/gsearchtool-support.c:1264
+#: ../gsearchtool/src/gsearchtool-support.c:1266
+#: ../gsearchtool/src/gsearchtool-support.c:1276
+msgid "th copy)"
+msgstr "個副本)"
+
+#. localizers: tag used to detect the x1st copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1269
+msgid "st copy)"
+msgstr "個副本)"
+
+#. localizers: tag used to detect the x2nd copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1271
+msgid "nd copy)"
+msgstr "個副本)"
+
+#. localizers: tag used to detect the x3rd copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1273
+msgid "rd copy)"
+msgstr "個副本)"
+
+#. localizers: appended to first file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1290
+#, c-format
+msgid "%s (copy)%s"
+msgstr "%s (副本)%s"
+
+#. localizers: appended to second file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1292
+#, c-format
+msgid "%s (another copy)%s"
+msgstr "%s (另一個副本)%s"
+
+#. localizers: appended to x11th file copy
+#. localizers: appended to x12th file copy
+#. localizers: appended to x13th file copy
+#. localizers: appended to xxth file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1295
+#: ../gsearchtool/src/gsearchtool-support.c:1297
+#: ../gsearchtool/src/gsearchtool-support.c:1299
+#: ../gsearchtool/src/gsearchtool-support.c:1308
+#, c-format
+msgid "%s (%dth copy)%s"
+msgstr "%s（第 %d 個副本）%s"
+
+#. localizers: appended to x1st file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1302
+#, c-format
+msgid "%s (%dst copy)%s"
+msgstr "%s（第 %d 個副本）%s"
+
+#. localizers: appended to x2nd file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1304
+#, c-format
+msgid "%s (%dnd copy)%s"
+msgstr "%s（第 %d 個副本）%s"
+
+#. localizers: appended to x3rd file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1306
+#, c-format
+msgid "%s (%drd copy)%s"
+msgstr "%s（第 %d 個副本）%s"
+
+#: ../gsearchtool/src/gsearchtool-support.c:1353
+msgid " (invalid Unicode)"
+msgstr "（無效的萬國碼）"
+
+#. localizers: opening parentheses to match the "th copy)" string
+#: ../gsearchtool/src/gsearchtool-support.c:1442
+msgid " ("
+msgstr " ("
+
+#. localizers: opening parentheses of the "th copy)" string
+#: ../gsearchtool/src/gsearchtool-support.c:1450
+#, c-format
+msgid " (%d"
+msgstr " (第 %d"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "紀錄檔檢視器"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "顯示或監察系統日誌檔案"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
+msgid "Log file to open up on startup"
+msgstr "啟動程式時開啟的日誌"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
+msgid ""
+"Specifies the log file displayed at startup. The default is either "
+"/var/adm/messages or /var/log/messages, depending on your operating system."
+msgstr "指定啟動時預設開啟的日誌。預設值可能是 /var/adm/messages 或 /var/log/messages，取決於所使用的作業系統。"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
+msgid "Size of the font used to display the log"
+msgstr "顯示日誌時所使用的字型大小"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr "指定在主要樹狀檢視中顯示日誌的等寬字大小。預設為預設終於機的字型大小。"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
+msgid "Height of the main window in pixels"
+msgstr "主視窗的高度（像素）"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "指定日誌檢視主視窗的高度（像素）"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
+msgid "Width of the main window in pixels"
+msgstr "主視窗的寬度（像素）"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "指定日誌檢視主視窗的寬度（像素）"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
+msgid "Log files to open up on startup"
+msgstr "啟動時開啟的日誌檔案"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr "指定啟動時預設開啟的日誌檔案列表。預設列表會根據 /etc/syslog.conf 來建構。"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
+msgid "List of saved filters"
+msgstr ""
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
+msgid "List of saved regexp filters"
+msgstr ""
+
+#: ../logview/data/logview-filter.ui.h:1
+#: ../mate-screenshot/data/mate-screenshot.ui.h:3
+msgid "_Name:"
+msgstr "名稱(_N):"
+
+#: ../logview/data/logview-filter.ui.h:2
+msgid "_Regular Expression:"
+msgstr "正規表示式(_R):"
+
+#: ../logview/data/logview-filter.ui.h:3
+msgid "Highlight"
+msgstr "標示"
+
+#: ../logview/data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "隱藏"
+
+#: ../logview/data/logview-filter.ui.h:5
+msgid "Foreground:"
+msgstr "前景："
+
+#: ../logview/data/logview-filter.ui.h:6
+msgid "Background:"
+msgstr "背景："
+
+#: ../logview/data/logview-filter.ui.h:7
+msgid "Effect:"
+msgstr "效果："
+
+#: ../logview/src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "不可能開啟檔案 %s"
+
+#: ../logview/src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "過濾條件名稱是空的！"
+
+#: ../logview/src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "過濾條件名稱不能包含「:」字元"
+
+#: ../logview/src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "正規表示式是空的！"
+
+#: ../logview/src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "正規表示式是無效的：%s"
+
+#: ../logview/src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "請指定前景或背景的顏色！"
+
+#: ../logview/src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "編輯過濾條件"
+
+#: ../logview/src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "新增過濾器規則"
+
+#: ../logview/src/logview-filter-manager.c:508
+msgid "Filters"
+msgstr "過濾條件"
+
+#: ../logview/src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "尋找(_F):"
+
+#: ../logview/src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "找上一個"
+
+#: ../logview/src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "尋找上一個出現搜尋字串的地方"
+
+#: ../logview/src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "找下一個"
+
+#: ../logview/src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "尋找下一個出現搜尋字串的地方"
+
+#: ../logview/src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "清除搜尋字串"
+
+#: ../logview/src/logview-log.c:598
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "在解壓縮 GZip 壓縮式紀錄檔時發生錯誤。該檔案可能損壞。"
+
+#: ../logview/src/logview-log.c:645
+msgid "You don't have enough permissions to read the file."
+msgstr "您沒有足夠權限讀取該檔案。"
+
+#: ../logview/src/logview-log.c:660
+msgid "The file is not a regular file or is not a text file."
+msgstr "該檔案不是普通的檔案或不是文字檔。"
+
+#: ../logview/src/logview-log.c:742
+msgid "This version of System Log does not support GZipped logs."
+msgstr "這個版本的系統紀錄檔不支援 GZip 壓縮式紀錄檔。"
+
+#: ../logview/src/logview-loglist.c:316
+msgid "Loading..."
+msgstr "載入中…"
+
+#: ../logview/src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "顯示應用程式的版本"
+
+#: ../logview/src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[紀錄檔…]"
+
+#: ../logview/src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - 瀏覽及監視日誌"
+
+#: ../logview/src/logview-main.c:100
+msgid "Log Viewer"
+msgstr "日誌檢視程式"
+
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:762
+msgid "System Log Viewer"
+msgstr "系統日誌顯示程式"
+
+#: ../logview/src/logview-window.c:212
+#, c-format
+msgid "last update: %s"
+msgstr "最後更新：%s"
+
+#: ../logview/src/logview-window.c:216
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d 列 (%s) - %s"
+
+#: ../logview/src/logview-window.c:320
+msgid "Open Log"
+msgstr "開啟日誌"
+
+#: ../logview/src/logview-window.c:359
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "顯示說明文件時發生錯誤：%s"
+
+#: ../logview/src/logview-window.c:473
+msgid "Wrapped"
+msgstr "已包裹"
+
+#: ../logview/src/logview-window.c:488
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
+msgid "Not found"
+msgstr "找不到"
+
+#: ../logview/src/logview-window.c:767
+msgid "A system log viewer for MATE."
+msgstr "適用於 MATE 的系統日誌顯示程式。"
+
+#: ../logview/src/logview-window.c:810
+#: ../mate-dictionary/src/gdict-window.c:1284
+msgid "_File"
+msgstr "檔案(_F)"
+
+#: ../logview/src/logview-window.c:813
+msgid "_Filters"
+msgstr "過濾條件(_F)"
+
+#: ../logview/src/logview-window.c:816
+msgid "_Open..."
+msgstr "開啟(_O)…"
+
+#: ../logview/src/logview-window.c:816
+msgid "Open a log from file"
+msgstr "從檔案中開啟日誌"
+
+#: ../logview/src/logview-window.c:818
+msgid "_Close"
+msgstr "關閉(_C)"
+
+#: ../logview/src/logview-window.c:818
+msgid "Close this log"
+msgstr "關閉本日誌"
+
+#: ../logview/src/logview-window.c:820
+msgid "_Quit"
+msgstr "離開(_Q)"
+
+#: ../logview/src/logview-window.c:820
+msgid "Quit the log viewer"
+msgstr "離開日誌顯示程式"
+
+#: ../logview/src/logview-window.c:823
+msgid "_Copy"
+msgstr "拷貝(_C)"
+
+#: ../logview/src/logview-window.c:823
+msgid "Copy the selection"
+msgstr "拷貝選取的內容"
+
+#: ../logview/src/logview-window.c:825
+#: ../mate-dictionary/src/gdict-window.c:1305
+msgid "Select _All"
+msgstr "全部選取(_A)"
+
+#: ../logview/src/logview-window.c:825
+msgid "Select the entire log"
+msgstr "選取整個日誌"
+
+#: ../logview/src/logview-window.c:827
+msgid "_Find..."
+msgstr "尋找(_F)…"
+
+#: ../logview/src/logview-window.c:827
+msgid "Find a word or phrase in the log"
+msgstr "在紀錄檔中搜尋單字或片語"
+
+#: ../logview/src/logview-window.c:830
+msgid "Bigger text size"
+msgstr "放大字型大小"
+
+#: ../logview/src/logview-window.c:832
+msgid "Smaller text size"
+msgstr "縮小字型大小"
+
+#: ../logview/src/logview-window.c:834
+msgid "Normal text size"
+msgstr "正常字型大小"
+
+#: ../logview/src/logview-window.c:837
+msgid "Manage Filters"
+msgstr "管理過濾條件"
+
+#: ../logview/src/logview-window.c:837
+msgid "Manage filters"
+msgstr "管理過濾條件"
+
+#: ../logview/src/logview-window.c:840
+msgid "Open the help contents for the log viewer"
+msgstr "開啟系統日誌顯示程式的說明文件"
+
+#: ../logview/src/logview-window.c:842
+#: ../mate-dictionary/src/gdict-applet.c:1188
+#: ../mate-dictionary/src/gdict-window.c:1340
+msgid "_About"
+msgstr "關於(_A)"
+
+#: ../logview/src/logview-window.c:842
+msgid "Show the about dialog for the log viewer"
+msgstr "開啟系統日誌顯示程式的關於視窗"
+
+#: ../logview/src/logview-window.c:847
+msgid "_Statusbar"
+msgstr "狀態列(_S)"
+
+#: ../logview/src/logview-window.c:847
+msgid "Show Status Bar"
+msgstr "顯示狀態列"
+
+#: ../logview/src/logview-window.c:849
+msgid "Side _Pane"
+msgstr "側邊窗格(_P)"
+
+#: ../logview/src/logview-window.c:849
+msgid "Show Side Pane"
+msgstr "顯示側面窗格"
+
+#: ../logview/src/logview-window.c:851
+msgid "Show matches only"
+msgstr "只顯示符合項"
+
+#: ../logview/src/logview-window.c:851
+msgid "Only show lines that match one of the given filters"
+msgstr "只顯示符合指定過濾條件的行"
+
+#: ../logview/src/logview-window.c:983
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "不能從「%s」讀取"
+
+#: ../logview/src/logview-window.c:1413
+msgid "Version: "
+msgstr "版本:"
+
+#: ../logview/src/logview-window.c:1524
+msgid "Could not open the following files:"
+msgstr "無法開啟下列檔案："
 
 #: ../mate-dictionary/data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
@@ -606,6 +1858,22 @@ msgid ""
 "comes preconfigured with a list of Dict servers (RFC 2229), to which you can"
 " add your own sources, while you can select specific servers for a specific "
 "query. </p>"
+msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:1
+msgid "Dictionary Applet Factory"
+msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:2
+msgid "Factory for the dictionary applet"
+msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:3
+msgid "Dictionary Look up"
+msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:4
+msgid "Look up words in a dictionary"
 msgstr ""
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:1
@@ -645,10 +1913,6 @@ msgstr "在字典來源中所使用的名稱。"
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr "在字典伺服器中用來擷取字詞解釋的資料庫名稱。"
-
-#: ../mate-dictionary/data/spanish.desktop.in.h:1
-msgid "Spanish Dictionaries"
-msgstr "西班牙文字典"
 
 #: ../mate-dictionary/data/thai.desktop.in.h:1
 msgid "Longdo Thai-English Dictionaries"
@@ -815,13 +2079,6 @@ msgstr "消除現存資料庫列表"
 msgid "Error while matching"
 msgstr "比對時發生錯誤"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
-#: ../logview/logview-window.c:486
-msgid "Not found"
-msgstr "找不到"
-
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1327
 msgid "F_ind:"
 msgstr "尋找(_I):"
@@ -859,11 +2116,6 @@ msgstr "檔案名稱"
 #: ../mate-dictionary/libgdict/gdict-source.c:233
 msgid "The filename used by this dictionary source"
 msgstr "此字典來源所使用的檔案名稱"
-
-#: ../mate-dictionary/libgdict/gdict-source.c:246
-#: ../gsearchtool/gsearchtool.c:2403
-msgid "Name"
-msgstr "名稱"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:247
 msgid "The display name of this dictionary source"
@@ -1017,9 +2269,9 @@ msgid "Look up words in dictionaries"
 msgstr "在字典中查詢字詞"
 
 #: ../mate-dictionary/src/gdict-about.c:78
-#: ../mate-dictionary/src/gdict-app.c:379
+#: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:604
-#: ../mate-dictionary/src/gdict-window.c:1968
+#: ../mate-dictionary/src/gdict-window.c:1974
 msgid "Dictionary"
 msgstr "字典"
 
@@ -1056,55 +2308,43 @@ msgid ""
 "%s"
 msgstr "查詢“%s”解釋時發生錯誤：\n%s"
 
-#: ../mate-dictionary/src/gdict-app.c:337
-#: ../mate-dictionary/src/gdict-app.c:351
+#: ../mate-dictionary/src/gdict-app.c:333
+#: ../mate-dictionary/src/gdict-app.c:343
 msgid "Words to look up"
 msgstr "要查詢的字詞"
 
-#: ../mate-dictionary/src/gdict-app.c:337
-#: ../mate-dictionary/src/gdict-app.c:339
-#: ../mate-dictionary/src/gdict-app.c:351
+#: ../mate-dictionary/src/gdict-app.c:333
+#: ../mate-dictionary/src/gdict-app.c:335
+#: ../mate-dictionary/src/gdict-app.c:343
 msgid "word"
 msgstr "字詞"
 
-#: ../mate-dictionary/src/gdict-app.c:339
+#: ../mate-dictionary/src/gdict-app.c:335
 msgid "Words to match"
 msgstr "比對的字詞"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:337
 msgid "Dictionary source to use"
 msgstr "使用的字典來源"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:337
 msgid "source"
 msgstr "來源"
 
-#: ../mate-dictionary/src/gdict-app.c:343
-msgid "Show available dictionary sources"
-msgstr "顯示現存的字典來源"
-
-#: ../mate-dictionary/src/gdict-app.c:345
+#: ../mate-dictionary/src/gdict-app.c:339
 msgid "Print result to the console"
 msgstr "將結果輸出至終端機"
 
-#: ../mate-dictionary/src/gdict-app.c:347
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "Database to use"
 msgstr "使用的資料庫"
 
-#: ../mate-dictionary/src/gdict-app.c:347
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "db"
 msgstr "db"
 
-#: ../mate-dictionary/src/gdict-app.c:349
-msgid "Strategy to use"
-msgstr "使用的搜尋方法"
-
-#: ../mate-dictionary/src/gdict-app.c:349
-msgid "strat"
-msgstr "strat"
-
 #. create the new option context
-#: ../mate-dictionary/src/gdict-app.c:361
+#: ../mate-dictionary/src/gdict-app.c:353
 msgid " - Look up words in dictionaries"
 msgstr " - 在字典中查字詞"
 
@@ -1181,64 +2421,59 @@ msgid "Dictionary entry"
 msgstr "字典輸入欄位"
 
 #: ../mate-dictionary/src/gdict-applet.c:715
-#: ../mate-dictionary/src/gdict-window.c:1097
+#: ../mate-dictionary/src/gdict-window.c:1103
 msgid "Dictionary Preferences"
 msgstr "字典偏好設定"
 
 #: ../mate-dictionary/src/gdict-applet.c:739
 #: ../mate-dictionary/src/gdict-pref-dialog.c:495
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
-#: ../mate-dictionary/src/gdict-window.c:1244
+#: ../mate-dictionary/src/gdict-window.c:1250
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "顯示說明文件時發生錯誤"
 
-#: ../mate-dictionary/src/gdict-applet.c:893
+#: ../mate-dictionary/src/gdict-applet.c:878
 #: ../mate-dictionary/src/gdict-window.c:519
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "沒有現存字典來源的名稱為「%s」"
 
-#: ../mate-dictionary/src/gdict-applet.c:897
+#: ../mate-dictionary/src/gdict-applet.c:882
 #: ../mate-dictionary/src/gdict-window.c:523
 msgid "Unable to find dictionary source"
 msgstr "無法找到字典來源"
 
-#: ../mate-dictionary/src/gdict-applet.c:913
+#: ../mate-dictionary/src/gdict-applet.c:898
 #: ../mate-dictionary/src/gdict-window.c:539
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "來源「%s」沒有內容存在"
 
-#: ../mate-dictionary/src/gdict-applet.c:917
+#: ../mate-dictionary/src/gdict-applet.c:902
 #: ../mate-dictionary/src/gdict-window.c:543
 msgid "Unable to create a context"
 msgstr "無法建構內容"
 
-#: ../mate-dictionary/src/gdict-applet.c:1198
+#: ../mate-dictionary/src/gdict-applet.c:1170
 msgid "_Look Up Selected Text"
 msgstr "查詢已選字詞(_L)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1201
+#: ../mate-dictionary/src/gdict-applet.c:1173
 msgid "Cl_ear"
 msgstr "清除(_E)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1204
+#: ../mate-dictionary/src/gdict-applet.c:1176
 msgid "_Print"
 msgstr "列印(_P)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1207
+#: ../mate-dictionary/src/gdict-applet.c:1179
 msgid "_Save"
 msgstr "儲存(_S)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1210
+#: ../mate-dictionary/src/gdict-applet.c:1182
 msgid "Preferences"
 msgstr ""
-
-#: ../mate-dictionary/src/gdict-applet.c:1216
-#: ../mate-dictionary/src/gdict-window.c:1334 ../logview/logview-window.c:840
-msgid "_About"
-msgstr "關於(_A)"
 
 #: ../mate-dictionary/src/gdict-common.c:80
 #, c-format
@@ -1327,179 +2562,171 @@ msgstr[0] "找到 %d 字詞解釋"
 msgid "%s - Dictionary"
 msgstr "%s - 字典"
 
-#: ../mate-dictionary/src/gdict-window.c:1278 ../logview/logview-window.c:808
-msgid "_File"
-msgstr "檔案(_F)"
-
-#: ../mate-dictionary/src/gdict-window.c:1281
+#: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_Go"
 msgstr "前往(_G)"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1285
+#: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_New"
 msgstr "新增(_N)"
 
-#: ../mate-dictionary/src/gdict-window.c:1286
+#: ../mate-dictionary/src/gdict-window.c:1292
 msgid "New look up"
 msgstr "新增查詢"
 
-#: ../mate-dictionary/src/gdict-window.c:1287
+#: ../mate-dictionary/src/gdict-window.c:1293
 msgid "_Save a Copy..."
 msgstr "儲存副本(_S)…"
 
-#: ../mate-dictionary/src/gdict-window.c:1289
+#: ../mate-dictionary/src/gdict-window.c:1295
 msgid "P_review..."
 msgstr "預覽(_R)…"
 
-#: ../mate-dictionary/src/gdict-window.c:1290
+#: ../mate-dictionary/src/gdict-window.c:1296
 msgid "Preview this document"
 msgstr "預覽這份文件"
 
-#: ../mate-dictionary/src/gdict-window.c:1291
+#: ../mate-dictionary/src/gdict-window.c:1297
 msgid "_Print..."
 msgstr "列印(_P)…"
 
-#: ../mate-dictionary/src/gdict-window.c:1292
+#: ../mate-dictionary/src/gdict-window.c:1298
 msgid "Print this document"
 msgstr "列印這份文件"
 
-#: ../mate-dictionary/src/gdict-window.c:1299 ../logview/logview-window.c:823
-msgid "Select _All"
-msgstr "全部選取(_A)"
-
-#: ../mate-dictionary/src/gdict-window.c:1302
+#: ../mate-dictionary/src/gdict-window.c:1308
 msgid "Find a word or phrase in the document"
 msgstr "在文件中尋找字詞"
 
-#: ../mate-dictionary/src/gdict-window.c:1304
+#: ../mate-dictionary/src/gdict-window.c:1310
 msgid "Find Ne_xt"
 msgstr "找下一個(_X)"
 
-#: ../mate-dictionary/src/gdict-window.c:1306
+#: ../mate-dictionary/src/gdict-window.c:1312
 msgid "Find Pre_vious"
 msgstr "找上一個(_V)"
 
-#: ../mate-dictionary/src/gdict-window.c:1308
+#: ../mate-dictionary/src/gdict-window.c:1314
 msgid "_Preferences"
 msgstr "偏好設定(_P)"
 
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1312
+#: ../mate-dictionary/src/gdict-window.c:1318
 msgid "_Previous Definition"
 msgstr "上一個字詞解釋(_P)"
 
-#: ../mate-dictionary/src/gdict-window.c:1313
+#: ../mate-dictionary/src/gdict-window.c:1319
 msgid "Go to the previous definition"
 msgstr "前往上一個字詞的解釋"
 
-#: ../mate-dictionary/src/gdict-window.c:1314
+#: ../mate-dictionary/src/gdict-window.c:1320
 msgid "_Next Definition"
 msgstr "下一個字詞解釋(_N)"
 
-#: ../mate-dictionary/src/gdict-window.c:1315
+#: ../mate-dictionary/src/gdict-window.c:1321
 msgid "Go to the next definition"
 msgstr "前往下一個字詞解釋"
 
-#: ../mate-dictionary/src/gdict-window.c:1316
+#: ../mate-dictionary/src/gdict-window.c:1322
 msgid "_First Definition"
 msgstr "第一個字詞解釋(_F)"
 
-#: ../mate-dictionary/src/gdict-window.c:1317
+#: ../mate-dictionary/src/gdict-window.c:1323
 msgid "Go to the first definition"
 msgstr "前往第一個字詞解釋"
 
-#: ../mate-dictionary/src/gdict-window.c:1318
+#: ../mate-dictionary/src/gdict-window.c:1324
 msgid "_Last Definition"
 msgstr "最後一個字詞解釋(_L)"
 
-#: ../mate-dictionary/src/gdict-window.c:1319
+#: ../mate-dictionary/src/gdict-window.c:1325
 msgid "Go to the last definition"
 msgstr "前往最後一個字詞解釋"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1322
+#: ../mate-dictionary/src/gdict-window.c:1328
 msgid "Similar _Words"
 msgstr "近似字詞(_W)"
 
-#: ../mate-dictionary/src/gdict-window.c:1324
+#: ../mate-dictionary/src/gdict-window.c:1330
 msgid "Dictionary Sources"
 msgstr "字典來源"
 
-#: ../mate-dictionary/src/gdict-window.c:1326
+#: ../mate-dictionary/src/gdict-window.c:1332
 msgid "Available _Databases"
 msgstr "現存資料庫(_D)"
 
-#: ../mate-dictionary/src/gdict-window.c:1328
+#: ../mate-dictionary/src/gdict-window.c:1334
 msgid "Available St_rategies"
 msgstr "現有搜尋方法(_R)"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1345
+#: ../mate-dictionary/src/gdict-window.c:1351
 msgid "_Sidebar"
 msgstr "側面窗格(_S)"
 
-#: ../mate-dictionary/src/gdict-window.c:1347
+#: ../mate-dictionary/src/gdict-window.c:1353
 msgid "S_tatusbar"
 msgstr "狀態列(_T)"
 
-#: ../mate-dictionary/src/gdict-window.c:1412
+#: ../mate-dictionary/src/gdict-window.c:1418
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "已選定字典來源「%s」"
 
-#: ../mate-dictionary/src/gdict-window.c:1433
+#: ../mate-dictionary/src/gdict-window.c:1439
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "已選取搜尋方法「%s」"
 
-#: ../mate-dictionary/src/gdict-window.c:1453
+#: ../mate-dictionary/src/gdict-window.c:1459
 #, c-format
 msgid "Database `%s' selected"
 msgstr "已選取資料庫「%s」"
 
-#: ../mate-dictionary/src/gdict-window.c:1473
+#: ../mate-dictionary/src/gdict-window.c:1479
 #, c-format
 msgid "Word `%s' selected"
 msgstr "已選取字詞「%s」"
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1498
+#: ../mate-dictionary/src/gdict-window.c:1504
 msgid "Double-click on the word to look up"
 msgstr "在要查詢的字詞上按兩下滑鼠鍵"
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1504
+#: ../mate-dictionary/src/gdict-window.c:1510
 msgid "Double-click on the matching strategy to use"
 msgstr "在要使用的搜尋方法上按兩下滑鼠鍵"
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1509
+#: ../mate-dictionary/src/gdict-window.c:1515
 msgid "Double-click on the source to use"
 msgstr "在要使用的來源按兩下滑鼠鍵"
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1518
+#: ../mate-dictionary/src/gdict-window.c:1524
 msgid "Double-click on the database to use"
 msgstr "在要使用的資料庫上按兩下滑鼠鍵"
 
-#: ../mate-dictionary/src/gdict-window.c:1770
+#: ../mate-dictionary/src/gdict-window.c:1776
 msgid "Look _up:"
 msgstr "查詢(_U)"
 
-#: ../mate-dictionary/src/gdict-window.c:1849
+#: ../mate-dictionary/src/gdict-window.c:1855
 msgid "Similar words"
 msgstr "近似字詞"
 
-#: ../mate-dictionary/src/gdict-window.c:1862
+#: ../mate-dictionary/src/gdict-window.c:1868
 msgid "Available dictionaries"
 msgstr "現存字典"
 
-#: ../mate-dictionary/src/gdict-window.c:1880
+#: ../mate-dictionary/src/gdict-window.c:1886
 msgid "Available strategies"
 msgstr "現有搜尋方法"
 
-#: ../mate-dictionary/src/gdict-window.c:1896
+#: ../mate-dictionary/src/gdict-window.c:1902
 msgid "Dictionary sources"
 msgstr "字典來源"
 
@@ -1544,172 +2771,11 @@ msgstr "字典"
 msgid "Strategies"
 msgstr "搜尋方法"
 
-#: ../mate-screenshot/mate-screenshot.c:133
-msgid "Error loading the help page"
-msgstr "載入說明文件時發生錯誤"
-
-#: ../mate-screenshot/mate-screenshot.c:245
-msgid "None"
-msgstr "沒有"
-
-#: ../mate-screenshot/mate-screenshot.c:246
-msgid "Drop shadow"
-msgstr "陰影"
-
-#: ../mate-screenshot/mate-screenshot.c:247
-msgid "Border"
-msgstr "邊框"
-
-#. * Include pointer *
-#: ../mate-screenshot/mate-screenshot.c:351
-msgid "Include _pointer"
-msgstr "包含滑鼠指標(_P)"
-
-#. * Include window border *
-#: ../mate-screenshot/mate-screenshot.c:360
-msgid "Include the window _border"
-msgstr "包括視窗邊框(_B)"
-
-#: ../mate-screenshot/mate-screenshot.c:375
-msgid "Apply _effect:"
-msgstr "套用效果(_E)："
-
-#: ../mate-screenshot/mate-screenshot.c:437
-msgid "Grab the whole _desktop"
-msgstr "拍下整個桌面(_D)"
-
-#: ../mate-screenshot/mate-screenshot.c:449
-msgid "Grab the current _window"
-msgstr "拍下目前的視窗(_W)"
-
-#: ../mate-screenshot/mate-screenshot.c:461
-msgid "Select _area to grab"
-msgstr "選擇要抓取的區域(_A)"
-
-#. translators: this is the first part of the "grab after a
-#. * delay of <spin button> seconds".
-#: ../mate-screenshot/mate-screenshot.c:478
-msgid "Grab _after a delay of"
-msgstr "在(_A)"
-
-#. translators: this is the last part of the "grab after a
-#. * delay of <spin button> seconds".
-#: ../mate-screenshot/mate-screenshot.c:498
-#: ../mate-screenshot/mate-screenshot.c:1273
-msgid "seconds"
-msgstr "秒後拍下螢幕截圖"
-
-#: ../mate-screenshot/mate-screenshot.c:516
-#: ../mate-screenshot/mate-screenshot.c:524
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:1
-msgid "Take Screenshot"
-msgstr "拍下螢幕截圖"
-
-#: ../mate-screenshot/mate-screenshot.c:525
-msgid "Effects"
-msgstr "效果"
-
-#: ../mate-screenshot/mate-screenshot.c:530
-msgid "Take _Screenshot"
-msgstr "拍下螢幕截圖(_S)"
-
-#: ../mate-screenshot/mate-screenshot.c:650
-msgid "Error while saving screenshot"
-msgstr "儲存螢幕截圖時發生錯誤"
-
-#: ../mate-screenshot/mate-screenshot.c:653
-#, c-format
-msgid ""
-"Impossible to save the screenshot to %s.\n"
-" Error was %s.\n"
-" Please choose another location and retry."
-msgstr "不可能將螢幕截圖儲存為 %s。\n 錯誤為 %s\n。請選擇另一個位置並再試一次。"
-
-#: ../mate-screenshot/mate-screenshot.c:785
-msgid "Screenshot taken"
-msgstr "螢幕截圖拍攝"
-
-#: ../mate-screenshot/mate-screenshot.c:840
-msgid "Unable to take a screenshot of the current window"
-msgstr "無法拍下目前視窗的螢幕截圖"
-
-#: ../mate-screenshot/mate-screenshot.c:893
-#, c-format
-msgid "Screenshot-%s.png"
-msgstr "Screenshot-%s.png"
-
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if a specific window is
-#. * taken
-#: ../mate-screenshot/mate-screenshot.c:900
-#, c-format
-msgid "Screenshot-%s-%d.png"
-msgstr "Screenshot-%s-%d.png"
-
-#. translators: this is the name of the file that gets made up
-#. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/mate-screenshot.c:910
-#: ../mate-screenshot/screenshot-dialog.c:369
-#: ../mate-screenshot/screenshot-save.c:196
-msgid "Screenshot.png"
-msgstr "Screenshot.png"
-
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if the entire screen is
-#. * taken
-#: ../mate-screenshot/mate-screenshot.c:917
-#, c-format
-msgid "Screenshot-%d.png"
-msgstr "Screenshot-%d.png"
-
-#: ../mate-screenshot/mate-screenshot.c:1269
-msgid "Grab a window instead of the entire screen"
-msgstr "擷取單一視窗而不是整個畫面"
-
-#: ../mate-screenshot/mate-screenshot.c:1270
-msgid "Grab an area of the screen instead of the entire screen"
-msgstr "擷取畫面的一個區域而不是整個畫面"
-
-#: ../mate-screenshot/mate-screenshot.c:1271
-msgid "Include the window border with the screenshot"
-msgstr "螢幕截圖包含視窗邊框"
-
-#: ../mate-screenshot/mate-screenshot.c:1272
-msgid "Remove the window border from the screenshot"
-msgstr "自螢幕截圖移除視窗邊框"
-
-#: ../mate-screenshot/mate-screenshot.c:1273
-msgid "Take screenshot after specified delay [in seconds]"
-msgstr "在指定的時間後（秒）拍攝螢幕截圖"
-
-#: ../mate-screenshot/mate-screenshot.c:1274
-msgid "Effect to add to the border (shadow, border or none)"
-msgstr "加到視窗邊框的效果（陰影、邊框或沒有）"
-
-#: ../mate-screenshot/mate-screenshot.c:1274
-msgid "effect"
-msgstr "效果"
-
-#: ../mate-screenshot/mate-screenshot.c:1275
-msgid "Interactively set options"
-msgstr "互動設定選項"
-
-#: ../mate-screenshot/mate-screenshot.c:1284
-msgid "Take a picture of the screen"
-msgstr "拍下整個螢幕"
-
-#: ../mate-screenshot/mate-screenshot.c:1302
-#, c-format
-msgid ""
-"Conflicting options: --window and --area should not be used at the same "
-"time.\n"
-msgstr "衝突的選項：--window 和 --area 不應同時使用。\n"
-
-#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:1
+#: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:1
 msgid "A screenshot utility for MATE Desktop"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:2
+#: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:2
 msgid ""
 "<p> MATE Screenshot is a simple utility that lets you capture screenshots of"
 " your desktop or of application windows. You can select to copy them to the "
@@ -1717,74 +2783,223 @@ msgid ""
 "format. </p>"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:2
+#: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
+#: ../mate-screenshot/src/mate-screenshot.c:516
+#: ../mate-screenshot/src/mate-screenshot.c:524
+msgid "Take Screenshot"
+msgstr "拍下螢幕截圖"
+
+#: ../mate-screenshot/data/mate-screenshot.desktop.in.h:2
 msgid "Save images of your desktop or individual windows"
 msgstr "將整個桌面或獨立的視窗儲存為圖片"
 
-#: ../mate-screenshot/mate-screenshot.ui.h:1
+#: ../mate-screenshot/data/mate-screenshot.ui.h:1
 msgid "Save Screenshot"
 msgstr "儲存螢幕截圖"
 
-#: ../mate-screenshot/mate-screenshot.ui.h:2
+#: ../mate-screenshot/data/mate-screenshot.ui.h:2
 msgid "C_opy to Clipboard"
 msgstr "拷貝到剪貼簿(_O)"
 
-#: ../mate-screenshot/mate-screenshot.ui.h:3
-#: ../logview/data/logview-filter.ui.h:1
-msgid "_Name:"
-msgstr "名稱(_N):"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:4
+#: ../mate-screenshot/data/mate-screenshot.ui.h:4
 msgid "Save in _folder:"
 msgstr "儲存於資料夾(_F):"
 
-#: ../mate-screenshot/mate-screenshot.ui.h:5
+#: ../mate-screenshot/data/mate-screenshot.ui.h:5
 msgid "*"
 msgstr "×"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:1
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:1
 msgid "Screenshot delay"
 msgstr "螢幕截圖延遲"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:2
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:2
 msgid "The number of seconds to wait before taking the screenshot."
 msgstr "在照下螢幕截圖前等待的秒數。"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:3
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:3
 msgid "Screenshot directory"
 msgstr "螢幕截圖目錄"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:4
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:4
 msgid "The directory the last screenshot was saved in."
 msgstr "上次螢幕截圖擷取程式用作儲存的目錄"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:5
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:5
 msgid "Include Border"
 msgstr "包含邊框"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:6
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:6
 msgid "Include the window manager border along with the screenshot"
 msgstr "螢幕截圖包含視窗管理員邊框"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:7
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:7
 msgid "Include Pointer"
 msgstr "包含滑鼠指標"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:8
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:8
 msgid "Include the pointer in the screenshot"
 msgstr "螢幕截圖包含包含滑鼠指標"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:9
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:9
 msgid "Border Effect"
 msgstr "邊框效果"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:10
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:10
 msgid ""
 "Effect to add to the outside of a border. Possible values are \"shadow\", "
 "\"none\", and \"border\"."
 msgstr "加到邊框外的效果。可用的數值有：“shadow”，“none”及“border”。"
 
-#: ../mate-screenshot/screenshot-dialog.c:246
+#: ../mate-screenshot/src/mate-screenshot.c:133
+msgid "Error loading the help page"
+msgstr "載入說明文件時發生錯誤"
+
+#: ../mate-screenshot/src/mate-screenshot.c:245
+msgid "None"
+msgstr "沒有"
+
+#: ../mate-screenshot/src/mate-screenshot.c:246
+msgid "Drop shadow"
+msgstr "陰影"
+
+#: ../mate-screenshot/src/mate-screenshot.c:247
+msgid "Border"
+msgstr "邊框"
+
+#. * Include pointer *
+#: ../mate-screenshot/src/mate-screenshot.c:351
+msgid "Include _pointer"
+msgstr "包含滑鼠指標(_P)"
+
+#. * Include window border *
+#: ../mate-screenshot/src/mate-screenshot.c:360
+msgid "Include the window _border"
+msgstr "包括視窗邊框(_B)"
+
+#: ../mate-screenshot/src/mate-screenshot.c:375
+msgid "Apply _effect:"
+msgstr "套用效果(_E)："
+
+#: ../mate-screenshot/src/mate-screenshot.c:437
+msgid "Grab the whole _desktop"
+msgstr "拍下整個桌面(_D)"
+
+#: ../mate-screenshot/src/mate-screenshot.c:449
+msgid "Grab the current _window"
+msgstr "拍下目前的視窗(_W)"
+
+#: ../mate-screenshot/src/mate-screenshot.c:461
+msgid "Select _area to grab"
+msgstr "選擇要抓取的區域(_A)"
+
+#. translators: this is the first part of the "grab after a
+#. * delay of <spin button> seconds".
+#: ../mate-screenshot/src/mate-screenshot.c:478
+msgid "Grab _after a delay of"
+msgstr "在(_A)"
+
+#. translators: this is the last part of the "grab after a
+#. * delay of <spin button> seconds".
+#: ../mate-screenshot/src/mate-screenshot.c:498
+#: ../mate-screenshot/src/mate-screenshot.c:1263
+msgid "seconds"
+msgstr "秒後拍下螢幕截圖"
+
+#: ../mate-screenshot/src/mate-screenshot.c:525
+msgid "Effects"
+msgstr "效果"
+
+#: ../mate-screenshot/src/mate-screenshot.c:530
+msgid "Take _Screenshot"
+msgstr "拍下螢幕截圖(_S)"
+
+#: ../mate-screenshot/src/mate-screenshot.c:650
+msgid "Error while saving screenshot"
+msgstr "儲存螢幕截圖時發生錯誤"
+
+#: ../mate-screenshot/src/mate-screenshot.c:653
+#, c-format
+msgid ""
+"Impossible to save the screenshot to %s.\n"
+" Error was %s.\n"
+" Please choose another location and retry."
+msgstr "不可能將螢幕截圖儲存為 %s。\n 錯誤為 %s\n。請選擇另一個位置並再試一次。"
+
+#: ../mate-screenshot/src/mate-screenshot.c:785
+msgid "Screenshot taken"
+msgstr "螢幕截圖拍攝"
+
+#: ../mate-screenshot/src/mate-screenshot.c:840
+msgid "Unable to take a screenshot of the current window"
+msgstr "無法拍下目前視窗的螢幕截圖"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format (eg, like
+#. * in France: 20:10).
+#: ../mate-screenshot/src/mate-screenshot.c:893
+msgid "%Y-%m-%d %H:%M:%S"
+msgstr ""
+
+#. translators: this is the name of the file that gets made up
+#. * with the screenshot if the entire screen is taken
+#: ../mate-screenshot/src/mate-screenshot.c:900
+#, c-format
+msgid "Screenshot at %s.png"
+msgstr ""
+
+#. translators: this is the name of the file that gets
+#. * made up with the screenshot if the entire screen is
+#. * taken
+#: ../mate-screenshot/src/mate-screenshot.c:907
+#, c-format
+msgid "Screenshot at %s - %d.png"
+msgstr ""
+
+#: ../mate-screenshot/src/mate-screenshot.c:1259
+msgid "Grab a window instead of the entire screen"
+msgstr "擷取單一視窗而不是整個畫面"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1260
+msgid "Grab an area of the screen instead of the entire screen"
+msgstr "擷取畫面的一個區域而不是整個畫面"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1261
+msgid "Include the window border with the screenshot"
+msgstr "螢幕截圖包含視窗邊框"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1262
+msgid "Remove the window border from the screenshot"
+msgstr "自螢幕截圖移除視窗邊框"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1263
+msgid "Take screenshot after specified delay [in seconds]"
+msgstr "在指定的時間後（秒）拍攝螢幕截圖"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1264
+msgid "Effect to add to the border (shadow, border or none)"
+msgstr "加到視窗邊框的效果（陰影、邊框或沒有）"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1264
+msgid "effect"
+msgstr "效果"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1265
+msgid "Interactively set options"
+msgstr "互動設定選項"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1274
+msgid "Take a picture of the screen"
+msgstr "拍下整個螢幕"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1292
+#, c-format
+msgid ""
+"Conflicting options: --window and --area should not be used at the same "
+"time.\n"
+msgstr "衝突的選項：--window 和 --area 不應同時使用。\n"
+
+#: ../mate-screenshot/src/screenshot-dialog.c:246
 #, c-format
 msgid ""
 "Error loading UI definition file for the screenshot program: \n"
@@ -1793,1259 +3008,50 @@ msgid ""
 "Please check your installation of mate-utils."
 msgstr ""
 
-#: ../mate-screenshot/screenshot-dialog.c:269
+#: ../mate-screenshot/src/screenshot-dialog.c:269
 msgid "Select a folder"
 msgstr "選擇資料夾"
 
-#: ../mate-screenshot/screenshot-save.c:57
+#: ../mate-screenshot/src/screenshot-dialog.c:369
+#: ../mate-screenshot/src/screenshot-save.c:196
+msgid "Screenshot.png"
+msgstr "Screenshot.png"
+
+#: ../mate-screenshot/src/screenshot-save.c:57
 #, c-format
 msgid ""
 "Unable to clear the temporary folder:\n"
 "%s"
 msgstr "無法清除暫存資料夾：\n%s"
 
-#: ../mate-screenshot/screenshot-save.c:95
+#: ../mate-screenshot/src/screenshot-save.c:95
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
 msgstr "儲存行程在無法預期下離開。我們無法將螢幕截圖寫到磁碟上。"
 
-#: ../mate-screenshot/screenshot-save.c:223
+#: ../mate-screenshot/src/screenshot-save.c:223
 msgid "Unknown error saving screenshot to disk"
 msgstr "儲存螢幕截圖到磁碟時發生不明的錯誤"
 
 #. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-#: ../mate-screenshot/screenshot-utils.c:998
+#: ../mate-screenshot/src/screenshot-utils.c:998
 msgid "Untitled Window"
 msgstr "未命名視窗"
 
-#: ../mate-screenshot/screenshot-xfer.c:72
+#: ../mate-screenshot/src/screenshot-xfer.c:72
 msgid "File already exists"
 msgstr "檔案已經存在"
 
-#: ../mate-screenshot/screenshot-xfer.c:75
+#: ../mate-screenshot/src/screenshot-xfer.c:75
 #, c-format
 msgid "The file \"%s\" already exists. Would you like to replace it?"
 msgstr "檔案“%s”已存在。您要覆寫這個檔案嗎？"
 
-#: ../mate-screenshot/screenshot-xfer.c:82
-#: ../gsearchtool/gsearchtool-callbacks.c:1726
-msgid "_Replace"
-msgstr "取代(_R)"
-
-#: ../mate-screenshot/screenshot-xfer.c:120
+#: ../mate-screenshot/src/screenshot-xfer.c:120
 msgid "Saving file..."
 msgstr "正在儲存檔案…"
 
-#: ../mate-screenshot/screenshot-xfer.c:290
+#: ../mate-screenshot/src/screenshot-xfer.c:290
 msgid "Can't access source file"
 msgstr "無法存取來源檔案"
-
-#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
-msgid "A file searching tool for MATE Desktop"
-msgstr ""
-
-#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
-msgid ""
-"<p> MATE Search Tool is a simple but powerful utility that allows you to "
-"search for files and folders on any mounted file system. Its interface gives"
-" you instant access to a wide variety of parameters for each search, such as"
-" text contained within a file, ownership, date of modification, file size, "
-"folder exclusion, etc.. </p>"
-msgstr ""
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:1
-msgid "MATE Search Tool"
-msgstr ""
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:2
-msgid "Locate documents and folders on this computer by name or content"
-msgstr "以名稱或內容尋找此電腦中的文件及資料夾"
-
-#: ../gsearchtool/gsearchtool.c:82
-msgid "Contains the _text"
-msgstr "包含指定的文字(_T)"
-
-#: ../gsearchtool/gsearchtool.c:84
-msgid "_Date modified less than"
-msgstr "最後修改時間少於(_D)"
-
-#: ../gsearchtool/gsearchtool.c:84 ../gsearchtool/gsearchtool.c:85
-msgid "days"
-msgstr "天"
-
-#: ../gsearchtool/gsearchtool.c:85
-msgid "Date modified more than"
-msgstr "最後修改時間多於"
-
-#: ../gsearchtool/gsearchtool.c:87
-msgid "S_ize at least"
-msgstr "檔案大小下限(_I)"
-
-#: ../gsearchtool/gsearchtool.c:87 ../gsearchtool/gsearchtool.c:88
-msgid "kilobytes"
-msgstr "KB"
-
-#: ../gsearchtool/gsearchtool.c:88
-msgid "Si_ze at most"
-msgstr "檔案大小上限(_Z)"
-
-#: ../gsearchtool/gsearchtool.c:89
-msgid "File is empty"
-msgstr "檔案是空白的"
-
-#: ../gsearchtool/gsearchtool.c:91
-msgid "Owned by _user"
-msgstr "由指定使用者擁有(_U)"
-
-#: ../gsearchtool/gsearchtool.c:92
-msgid "Owned by _group"
-msgstr "屬於指定群組(_G)"
-
-#: ../gsearchtool/gsearchtool.c:93
-msgid "Owner is unrecognized"
-msgstr "無法識別擁有者"
-
-#: ../gsearchtool/gsearchtool.c:95
-msgid "Na_me does not contain"
-msgstr "名稱中沒有(_M)"
-
-#: ../gsearchtool/gsearchtool.c:96
-msgid "Name matches regular e_xpression"
-msgstr "檔名符合正規表示式(_X)"
-
-#: ../gsearchtool/gsearchtool.c:98
-msgid "Show hidden and backup files"
-msgstr "顯示隱藏或備份的檔案或資料夾"
-
-#: ../gsearchtool/gsearchtool.c:99
-msgid "Follow symbolic links"
-msgstr "跟隨符號鏈結"
-
-#: ../gsearchtool/gsearchtool.c:100
-msgid "Exclude other filesystems"
-msgstr "排除其他檔案系統"
-
-#: ../gsearchtool/gsearchtool.c:158
-msgid "Show version of the application"
-msgstr "顯示應用程式的版本"
-
-#: ../gsearchtool/gsearchtool.c:159 ../gsearchtool/gsearchtool.c:164
-#: ../gsearchtool/gsearchtool.c:173
-msgid "STRING"
-msgstr "字串"
-
-#: ../gsearchtool/gsearchtool.c:160
-msgid "PATH"
-msgstr "路徑"
-
-#: ../gsearchtool/gsearchtool.c:161
-msgid "VALUE"
-msgstr "數值"
-
-#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
-msgid "DAYS"
-msgstr "日數"
-
-#: ../gsearchtool/gsearchtool.c:167 ../gsearchtool/gsearchtool.c:168
-msgid "KILOBYTES"
-msgstr "千位元組"
-
-#: ../gsearchtool/gsearchtool.c:170
-msgid "USER"
-msgstr "使用者"
-
-#: ../gsearchtool/gsearchtool.c:171
-msgid "GROUP"
-msgstr "群組"
-
-#: ../gsearchtool/gsearchtool.c:174
-msgid "PATTERN"
-msgstr "胚騰"
-
-#: ../gsearchtool/gsearchtool.c:385
-msgid "A locate database has probably not been created."
-msgstr "locate 指令的資料庫可能還未建構。"
-
-#: ../gsearchtool/gsearchtool.c:487
-#, c-format
-msgid "Character set conversion failed for \"%s\""
-msgstr "“%s”的字元轉換失敗"
-
-#: ../gsearchtool/gsearchtool.c:511
-msgid "Searching..."
-msgstr "搜尋中…"
-
-#: ../gsearchtool/gsearchtool.c:511 ../gsearchtool/gsearchtool.c:1031
-#: ../gsearchtool/gsearchtool.c:3030
-msgid "Search for Files"
-msgstr "搜尋檔案"
-
-#: ../gsearchtool/gsearchtool.c:977 ../gsearchtool/gsearchtool.c:1006
-msgid "No files found"
-msgstr "找不到符合條件的檔案"
-
-#: ../gsearchtool/gsearchtool.c:999
-msgid "(stopped)"
-msgstr "（已停止）"
-
-#: ../gsearchtool/gsearchtool.c:1005
-msgid "No Files Found"
-msgstr "找不到任何檔案"
-
-#: ../gsearchtool/gsearchtool.c:1010
-#, c-format
-msgid "%'d File Found"
-msgid_plural "%'d Files Found"
-msgstr[0] "找到 %'d 個檔案"
-
-#: ../gsearchtool/gsearchtool.c:1014 ../gsearchtool/gsearchtool.c:1052
-#, c-format
-msgid "%'d file found"
-msgid_plural "%'d files found"
-msgstr[0] "找到 %'d 個檔案"
-
-#: ../gsearchtool/gsearchtool.c:1143
-msgid "Entry changed called for a non entry option!"
-msgstr "已變更的欄位使用了無效的欄位選項！"
-
-#: ../gsearchtool/gsearchtool.c:1308
-msgid "Set the text of \"Name contains\" search option"
-msgstr "預先填上在「檔名中含有」搜尋選項中的文字"
-
-#: ../gsearchtool/gsearchtool.c:1309
-msgid "Set the text of \"Look in folder\" search option"
-msgstr "預先填上在「在資料夾中搜尋」搜尋選項中的文字"
-
-#: ../gsearchtool/gsearchtool.c:1310
-msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "根據以下其中一種屬性排列檔案：名稱、資料夾、大小、類型或日期"
-
-#: ../gsearchtool/gsearchtool.c:1311
-msgid "Set sort order to descending, the default is ascending"
-msgstr "設定為相反次序排列（預設為順序排列）"
-
-#: ../gsearchtool/gsearchtool.c:1312
-msgid "Automatically start a search"
-msgstr "自動開始搜尋"
-
-#: ../gsearchtool/gsearchtool.c:1318
-#, c-format
-msgid "Select the \"%s\" search option"
-msgstr "選擇搜尋選項“%s”"
-
-#: ../gsearchtool/gsearchtool.c:1321
-#, c-format
-msgid "Select and set the \"%s\" search option"
-msgstr "選擇及設定搜尋選項“%s”"
-
-#: ../gsearchtool/gsearchtool.c:1428
-msgid "Invalid option passed to sortby command line argument."
-msgstr "sortby 參數中的選項無效。"
-
-#: ../gsearchtool/gsearchtool.c:1720
-msgid ""
-"\n"
-"... Too many errors to display ..."
-msgstr "\n… 錯誤過多，無法顯示 …"
-
-#: ../gsearchtool/gsearchtool.c:1734
-msgid ""
-"The search results may be invalid.  There were errors while performing this "
-"search."
-msgstr "搜尋結果可能無效。進行搜尋時發生錯誤。"
-
-#: ../gsearchtool/gsearchtool.c:1746 ../gsearchtool/gsearchtool.c:1790
-msgid "Show more _details"
-msgstr "顯示更多訊息(_D)"
-
-#: ../gsearchtool/gsearchtool.c:1776
-msgid ""
-"The search results may be out of date or invalid.  Do you want to disable "
-"the quick search feature?"
-msgstr "搜尋結果可能過時或者無效。您想要停止使用快速搜尋功能？"
-
-#: ../gsearchtool/gsearchtool.c:1801
-msgid "Disable _Quick Search"
-msgstr "停止使用快速搜尋功能(_Q)"
-
-#: ../gsearchtool/gsearchtool.c:1828
-#, c-format
-msgid "Failed to set process group id of child %d: %s.\n"
-msgstr "設定子程序 %d 的群組 id 失敗：%s。\n"
-
-#: ../gsearchtool/gsearchtool.c:1853
-msgid "Error parsing the search command."
-msgstr "分析搜尋指令時發生錯誤"
-
-#: ../gsearchtool/gsearchtool.c:1885
-msgid "Error running the search command."
-msgstr "執行搜尋指令時發生錯誤"
-
-#: ../gsearchtool/gsearchtool.c:2008
-#, c-format
-msgid "Enter a text value for the \"%s\" search option."
-msgstr "輸入搜尋選項“%s”搜尋用的文字。"
-
-#. Translators:  Below is a string displaying the search options name
-#. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:2013
-#, c-format
-msgid "\"%s\" in %s"
-msgstr "“%s”%s"
-
-#: ../gsearchtool/gsearchtool.c:2015
-#, c-format
-msgid "Enter a value in %s for the \"%s\" search option."
-msgstr "在 %s 輸入搜尋選項“%s”的數值。"
-
-#: ../gsearchtool/gsearchtool.c:2073
-#, c-format
-msgid "Remove \"%s\""
-msgstr "移除“%s”"
-
-#: ../gsearchtool/gsearchtool.c:2074
-#, c-format
-msgid "Click to remove the \"%s\" search option."
-msgstr "按這裡移除搜尋選項“%s”。"
-
-#: ../gsearchtool/gsearchtool.c:2167
-msgid "A_vailable options:"
-msgstr "目前提供的選項(_V):"
-
-#: ../gsearchtool/gsearchtool.c:2196
-msgid "Available options"
-msgstr "可用選項"
-
-#: ../gsearchtool/gsearchtool.c:2197
-msgid "Select a search option from the drop-down list."
-msgstr "在下拉式選單中選擇搜尋選項。"
-
-#: ../gsearchtool/gsearchtool.c:2209
-msgid "Add search option"
-msgstr "加入搜尋選項"
-
-#: ../gsearchtool/gsearchtool.c:2210
-msgid "Click to add the selected available search option."
-msgstr "按這裡加入搜尋選項。"
-
-#: ../gsearchtool/gsearchtool.c:2299
-msgid "S_earch results:"
-msgstr "搜尋結果(_E):"
-
-#: ../gsearchtool/gsearchtool.c:2343
-msgid "List View"
-msgstr "列表顯示"
-
-#: ../gsearchtool/gsearchtool.c:2452
-msgid "Type"
-msgstr "類型"
-
-#: ../gsearchtool/gsearchtool.c:2464
-msgid "Date Modified"
-msgstr "修改日期"
-
-#: ../gsearchtool/gsearchtool.c:2799
-msgid "_Name contains:"
-msgstr "名稱包含(_N):"
-
-#: ../gsearchtool/gsearchtool.c:2813 ../gsearchtool/gsearchtool.c:2814
-msgid "Enter a filename or partial filename with or without wildcards."
-msgstr "輸入檔案的名稱或檔案部分的名稱（名稱中可配合萬用字元）。"
-
-#: ../gsearchtool/gsearchtool.c:2814
-msgid "Name contains"
-msgstr "名稱包含"
-
-#: ../gsearchtool/gsearchtool.c:2820
-msgid "_Look in folder:"
-msgstr "在資料夾中搜尋(_L):"
-
-#: ../gsearchtool/gsearchtool.c:2826
-msgid "Browse"
-msgstr "瀏覽"
-
-#: ../gsearchtool/gsearchtool.c:2835
-msgid "Look in folder"
-msgstr "在資料夾中搜尋"
-
-#: ../gsearchtool/gsearchtool.c:2835
-msgid "Select the folder or device from which you want to begin the search."
-msgstr "選擇準備搜尋的資料夾或裝置。"
-
-#: ../gsearchtool/gsearchtool.c:2853
-msgid "Select more _options"
-msgstr "選擇更多選項(_O)"
-
-#: ../gsearchtool/gsearchtool.c:2862
-msgid "Select more options"
-msgstr "選擇更多選項"
-
-#: ../gsearchtool/gsearchtool.c:2862
-msgid "Click to expand or collapse the list of available options."
-msgstr "按這裡展開或收起一系列搜尋選項。"
-
-#: ../gsearchtool/gsearchtool.c:2886
-msgid "Click to display the help manual."
-msgstr "按下本按鈕來顯示說明文件。"
-
-#: ../gsearchtool/gsearchtool.c:2894
-msgid "Click to close \"Search for Files\"."
-msgstr "按下本按鈕來關閉「搜尋檔案」。"
-
-#: ../gsearchtool/gsearchtool.c:2920
-msgid "Click to perform a search."
-msgstr "按下本按鈕來進行搜尋"
-
-#: ../gsearchtool/gsearchtool.c:2921
-msgid "Click to stop a search."
-msgstr "按下本按鈕來停止搜尋。"
-
-#: ../gsearchtool/gsearchtool.c:3015
-msgid "- the MATE Search Tool"
-msgstr "- MATE 搜尋工具"
-
-#: ../gsearchtool/gsearchtool.c:3024
-#, c-format
-msgid "Failed to parse command line arguments: %s\n"
-msgstr "無法解析命令列引數：%s\n"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:198
-msgid "Could not open help document."
-msgstr "無法開啟說明文件。"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:349
-#, c-format
-msgid "Are you sure you want to open %d document?"
-msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] "是否確定要開啟 %d 份文件？"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:354
-#: ../gsearchtool/gsearchtool-callbacks.c:551
-#, c-format
-msgid "This will open %d separate window."
-msgid_plural "This will open %d separate windows."
-msgstr[0] "這樣會另外開啟 %d 個視窗。"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:394
-#, c-format
-msgid "Could not open document \"%s\"."
-msgstr "無法開啟“%s”文件"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:423
-#, c-format
-msgid "Could not open folder \"%s\"."
-msgstr "無法開啟“%s”資料夾"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:431
-msgid "The caja file manager is not running."
-msgstr "caja 檔案總管並未執行。"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:523
-msgid "There is no installed viewer capable of displaying the document."
-msgstr "沒有任何已安裝的顯示模式可以顯示該檔案。"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:546
-#, c-format
-msgid "Are you sure you want to open %d folder?"
-msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] "是否確定要開啟 %d 個資料夾？"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:699
-#, c-format
-msgid "Could not move \"%s\" to trash."
-msgstr "無法將“%s”丟進回收筒。"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:730
-#, c-format
-msgid "Do you want to delete \"%s\" permanently?"
-msgstr "是否確定永久刪除“%s”？"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:733
-#, c-format
-msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr "回收筒無法使用。未能把“%s”丟進回收筒。"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:772
-#, c-format
-msgid "Could not delete \"%s\"."
-msgstr "無法刪除“%s”。"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:884
-#, c-format
-msgid "Deleting \"%s\" failed: %s."
-msgstr "刪除“%s”失敗：%s。"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:896
-#, c-format
-msgid "Moving \"%s\" failed: %s."
-msgstr "移動“%s”失敗： %s。"
-
-#. Popup menu item: Open
-#: ../gsearchtool/gsearchtool-callbacks.c:1024
-#: ../gsearchtool/gsearchtool-callbacks.c:1054
-msgid "_Open"
-msgstr "開啟(_O)"
-
-#. Popup menu item: Open with (default)
-#: ../gsearchtool/gsearchtool-callbacks.c:1079
-#, c-format
-msgid "_Open with %s"
-msgstr "以 %s 開啟(_O)"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1114
-#, c-format
-msgid "Open with %s"
-msgstr "以 %s 開啟"
-
-#. Popup menu item: Open With
-#: ../gsearchtool/gsearchtool-callbacks.c:1147
-msgid "Open Wit_h"
-msgstr "以此開啟(_H)"
-
-#. Popup menu item: Open Containing Folder
-#: ../gsearchtool/gsearchtool-callbacks.c:1192
-msgid "Open Containing _Folder"
-msgstr ""
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1232
-msgid "_Save Results As..."
-msgstr "將結果儲存為(_S)…"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1614
-msgid "Save Search Results As..."
-msgstr "將搜尋結果另存為…"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1643
-msgid "Could not save document."
-msgstr "無法儲存文件。"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1644
-msgid "You did not select a document name."
-msgstr "您未選取任何文件。"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1674
-#, c-format
-msgid "Could not save \"%s\" document to \"%s\"."
-msgstr "無法將“%s”文件儲存至“%s”"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1707
-#, c-format
-msgid "The document \"%s\" already exists.  Would you like to replace it?"
-msgstr "文件“%s”已存在，是否確定覆寫這個檔案？"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1711
-msgid "If you replace an existing file, its contents will be overwritten."
-msgstr "如果您取代一個現有的檔案，該檔案的原有內容將會消失。"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1775
-msgid "The document name you selected is a folder."
-msgstr "您所選的文件名稱是一個資料夾。"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1811
-msgid "You may not have write permissions to the document."
-msgstr "您沒有足夠權限寫入檔案。"
-
-#. Translators:  Below are the strings displayed in the 'Date Modified'
-#. column of the list view.  The format of this string can vary depending
-#. on age of a file.  Please modify the format of the timestamp to match
-#. your locale.  For example, to display 24 hour time replace the '%-I'
-#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: ../gsearchtool/gsearchtool-support.c:448
-msgid "today at %-I:%M %p"
-msgstr "今天 %p %-I:%M"
-
-#: ../gsearchtool/gsearchtool-support.c:450
-msgid "yesterday at %-I:%M %p"
-msgstr "昨天 %p %-I:%M"
-
-#: ../gsearchtool/gsearchtool-support.c:452
-#: ../gsearchtool/gsearchtool-support.c:454
-msgid "%A, %B %-d %Y at %-I:%M:%S %p"
-msgstr "%Y 年 %m 月 %-d 日(%A) %p %-I 時 %M 分 %S 秒"
-
-#: ../gsearchtool/gsearchtool-support.c:641
-msgid "link (broken)"
-msgstr "鏈結（目標不存在）"
-
-#: ../gsearchtool/gsearchtool-support.c:645
-#, c-format
-msgid "link to %s"
-msgstr "%s 的鏈結"
-
-#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
-#. Localizers:
-#. * Feel free to leave out the st, nd, rd and th suffix or
-#. * make some or all of them match.
-#. localizers: tag used to detect the first copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1257
-msgid " (copy)"
-msgstr " (副本)"
-
-#. localizers: tag used to detect the second copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1259
-msgid " (another copy)"
-msgstr " (另一個副本)"
-
-#. localizers: tag used to detect the x11th copy of a file
-#. localizers: tag used to detect the x12th copy of a file
-#. localizers: tag used to detect the x13th copy of a file
-#. localizers: tag used to detect the xxth copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1262
-#: ../gsearchtool/gsearchtool-support.c:1264
-#: ../gsearchtool/gsearchtool-support.c:1266
-#: ../gsearchtool/gsearchtool-support.c:1276
-msgid "th copy)"
-msgstr "個副本)"
-
-#. localizers: tag used to detect the x1st copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1269
-msgid "st copy)"
-msgstr "個副本)"
-
-#. localizers: tag used to detect the x2nd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1271
-msgid "nd copy)"
-msgstr "個副本)"
-
-#. localizers: tag used to detect the x3rd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1273
-msgid "rd copy)"
-msgstr "個副本)"
-
-#. localizers: appended to first file copy
-#: ../gsearchtool/gsearchtool-support.c:1290
-#, c-format
-msgid "%s (copy)%s"
-msgstr "%s (副本)%s"
-
-#. localizers: appended to second file copy
-#: ../gsearchtool/gsearchtool-support.c:1292
-#, c-format
-msgid "%s (another copy)%s"
-msgstr "%s (另一個副本)%s"
-
-#. localizers: appended to x11th file copy
-#. localizers: appended to x12th file copy
-#. localizers: appended to x13th file copy
-#. localizers: appended to xxth file copy
-#: ../gsearchtool/gsearchtool-support.c:1295
-#: ../gsearchtool/gsearchtool-support.c:1297
-#: ../gsearchtool/gsearchtool-support.c:1299
-#: ../gsearchtool/gsearchtool-support.c:1308
-#, c-format
-msgid "%s (%dth copy)%s"
-msgstr "%s（第 %d 個副本）%s"
-
-#. localizers: appended to x1st file copy
-#: ../gsearchtool/gsearchtool-support.c:1302
-#, c-format
-msgid "%s (%dst copy)%s"
-msgstr "%s（第 %d 個副本）%s"
-
-#. localizers: appended to x2nd file copy
-#: ../gsearchtool/gsearchtool-support.c:1304
-#, c-format
-msgid "%s (%dnd copy)%s"
-msgstr "%s（第 %d 個副本）%s"
-
-#. localizers: appended to x3rd file copy
-#: ../gsearchtool/gsearchtool-support.c:1306
-#, c-format
-msgid "%s (%drd copy)%s"
-msgstr "%s（第 %d 個副本）%s"
-
-#: ../gsearchtool/gsearchtool-support.c:1353
-msgid " (invalid Unicode)"
-msgstr "（無效的萬國碼）"
-
-#. localizers: opening parentheses to match the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1442
-msgid " ("
-msgstr " ("
-
-#. localizers: opening parentheses of the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1450
-#, c-format
-msgid " (%d"
-msgstr " (第 %d"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:1
-msgid "Search history"
-msgstr ""
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:2
-msgid "This key defines the items which were searched for in the past."
-msgstr ""
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:3
-msgid "Show Additional Options"
-msgstr "顯示額外選項"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:4
-msgid "Disable Quick Search"
-msgstr "停用快速搜尋功能"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:5
-msgid ""
-"This key determines if the search tool disables the use of the locate "
-"command when performing simple file name searches."
-msgstr "本設定鍵決定搜尋工具在進行的檔案名稱搜尋時不使用 locate 指令。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:6
-msgid "Quick Search Excluded Paths"
-msgstr "不包含路徑的快速搜尋"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:7
-msgid ""
-"This key defines the paths the search tool will exclude from a quick search."
-" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
-"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-msgstr "本設定鍵決定搜尋工具在進行快速搜尋時會忽略的路徑。支援萬用字元「*」及「？」。預設的數值是 /mnt/*，/media/*，/dev/*，/tmp/*，/proc/* 及/var/*。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:8
-msgid "Disable Quick Search Second Scan"
-msgstr "停用快速搜尋第二次掃描功能"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:9
-msgid ""
-"This key determines if the search tool disables the use of the find command "
-"after performing a quick search."
-msgstr "本設定鍵決定搜尋工具在進行快速搜尋後不使用 find 指令"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:10
-msgid "Quick Search Second Scan Excluded Paths"
-msgstr "不包含路徑的快速搜尋第二次掃描"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:11
-msgid ""
-"This key defines the paths the search tool will exclude from a second scan "
-"when performing a quick search. The second scan uses the find command to "
-"search for files. The purpose of the second scan is to find files that have "
-"not been indexed. The wildcards '*' and '?' are supported. The default value"
-" is /."
-msgstr "本設定鍵決定搜尋工具在進行快速搜尋第二次掃描會忽略的路徑。快速搜尋第二次掃描是做用 find 指令來尋找檔案。第二次掃描的目的是尋找那些沒有建構索引的檔案。支援萬用字元「*」及「？」。預設的數值是 ./。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:12
-msgid "Search Result Columns Order"
-msgstr "以行為順序的搜尋結果"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:13
-msgid ""
-"This key defines the order of the columns in the search results. This key "
-"should not be modified by the user."
-msgstr "本設定鍵定義搜尋結果的行順序，它不應該被使用者修改。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:14
-msgid "Default Window Width"
-msgstr "預設視窗寬度"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:15
-msgid ""
-"This key defines the window width, and it's used to remember the size of the"
-" search tool between sessions. Setting it to -1 will make the search tool "
-"use the default width."
-msgstr "本設定鍵定義視窗的寬度，而且用來在不同的執行階段間記住搜尋工具的大小。如果將它的值設為 -1 則會讓搜尋工具使用預設的寬度。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:16
-msgid "Default Window Height"
-msgstr "預設視窗高度"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:17
-msgid ""
-"This key defines the window height, and it's used to remember the size of "
-"the search tool between sessions. Setting it to -1 will make the search tool"
-" use the default height."
-msgstr "本設定鍵定義視窗的高度，而且用來在不同的執行階段間記住搜尋工具的大小。如果將它的值設為 -1 則會讓搜尋工具使用預設的高度。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:18
-msgid "Default Window Maximized"
-msgstr "預設視窗最大化"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:19
-msgid ""
-"This key determines if the search tool window starts in a maximized state."
-msgstr "本設定鍵決定搜尋工具起始時是否最大化"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:20
-msgid "Look in Folder"
-msgstr "在資料夾中搜尋"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:21
-msgid "This key defines the default value of the \"Look in Folder\" widget."
-msgstr "這個設定鍵定義了「在資料夾中搜尋」元件的預設數值。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:22
-msgid ""
-"This key determines if the \"Contains the text\" search option is selected "
-"when the search tool is started."
-msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「包含指定的文字」選項。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:23
-msgid ""
-"This key determines if the \"Date modified less than\" search option is "
-"selected when the search tool is started."
-msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「最後修改時間少於」選項。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:24
-msgid ""
-"This key determines if the \"Date modified more than\" search option is "
-"selected when the search tool is started."
-msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「最後修改時間多於」選項。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:25
-msgid ""
-"This key determines if the \"Size at least\" search option is selected when "
-"the search tool is started."
-msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「檔案大小下限」選項。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:26
-msgid ""
-"This key determines if the \"Size at most\" search option is selected when "
-"the search tool is started."
-msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「檔案大小上限」選項。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:27
-msgid ""
-"This key determines if the \"File is empty\" search option is selected when "
-"the search tool is started."
-msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「檔案是空白的」選項。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:28
-msgid ""
-"This key determines if the \"Owned by user\" search option is selected when "
-"the search tool is started."
-msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「由指定使用者擁有」選項。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:29
-msgid ""
-"This key determines if the \"Owned by group\" search option is selected when"
-" the search tool is started."
-msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「屬於指定群組」選項。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:30
-msgid ""
-"This key determines if the \"Owner is unrecognized\" search option is "
-"selected when the search tool is started."
-msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「無法識別擁有者」選項。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:31
-msgid ""
-"This key determines if the \"Name does not contain\" search option is "
-"selected when the search tool is started."
-msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「名稱中沒有」選項。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:32
-msgid ""
-"This key determines if the \"Name matches regular expression\" search option"
-" is selected when the search tool is started."
-msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「檔名符合正規表示式」選項。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:33
-msgid ""
-"This key determines if the \"Show hidden files and folders\" search option "
-"is selected when the search tool is started."
-msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「顯示隱藏檔案及資料夾」選項。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:34
-msgid ""
-"This key determines if the \"Follow symbolic links\" search option is "
-"selected when the search tool is started."
-msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「跟隨符號鏈結」選項。"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:35
-msgid ""
-"This key determines if the \"Exclude other filesystems\" search option is "
-"selected when the search tool is started."
-msgstr "本設定鍵決定在搜尋工具開始搜尋時已選用了「排除其他檔案系統」選項。"
-
-#: ../libeggsmclient/eggdesktopfile.c:165
-#, c-format
-msgid "File is not a valid .desktop file"
-msgstr "檔案不是有效的 .desktop 檔案"
-
-#: ../libeggsmclient/eggdesktopfile.c:188
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "無法辨識的桌面檔案版本「%s」"
-
-#: ../libeggsmclient/eggdesktopfile.c:957
-#, c-format
-msgid "Starting %s"
-msgstr "準備啟動 %s"
-
-#: ../libeggsmclient/eggdesktopfile.c:1098
-#, c-format
-msgid "Application does not accept documents on command line"
-msgstr "應用程式不接受以命令列開啟文件"
-
-#: ../libeggsmclient/eggdesktopfile.c:1166
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "無法辨識的啟動選項：%d"
-
-#: ../libeggsmclient/eggdesktopfile.c:1365
-#, c-format
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "不能傳送文件 URI 至「Type=Link」桌面項目"
-
-#: ../libeggsmclient/eggdesktopfile.c:1384
-#, c-format
-msgid "Not a launchable item"
-msgstr "不是可以啟動的項目"
-
-#: ../libeggsmclient/eggsmclient.c:225
-msgid "Disable connection to session manager"
-msgstr "停用到作業階段管理程式的連線"
-
-#: ../libeggsmclient/eggsmclient.c:228
-msgid "Specify file containing saved configuration"
-msgstr "指定含有已儲存組態的檔案"
-
-#: ../libeggsmclient/eggsmclient.c:228
-msgid "FILE"
-msgstr "檔案"
-
-#: ../libeggsmclient/eggsmclient.c:231
-msgid "Specify session management ID"
-msgstr "指定作業階段管理 ID"
-
-#: ../libeggsmclient/eggsmclient.c:231
-msgid "ID"
-msgstr "ID"
-
-#: ../libeggsmclient/eggsmclient.c:252
-msgid "Session management options:"
-msgstr "作業階段管理選項："
-
-#: ../libeggsmclient/eggsmclient.c:253
-msgid "Show session management options"
-msgstr "顯示作業階段管理選項"
-
-#: ../logview/data/mate-system-log.desktop.in.in.h:1
-msgid "Log File Viewer"
-msgstr "紀錄檔檢視器"
-
-#: ../logview/data/mate-system-log.desktop.in.in.h:2
-msgid "View or monitor system log files"
-msgstr "顯示或監察系統日誌檔案"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
-msgid "Log file to open up on startup"
-msgstr "啟動程式時開啟的日誌"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
-msgid ""
-"Specifies the log file displayed at startup. The default is either "
-"/var/adm/messages or /var/log/messages, depending on your operating system."
-msgstr "指定啟動時預設開啟的日誌。預設值可能是 /var/adm/messages 或 /var/log/messages，取決於所使用的作業系統。"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
-msgid "Size of the font used to display the log"
-msgstr "顯示日誌時所使用的字型大小"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
-msgid ""
-"Specifies the size of the fixed-width font used to display the log in the "
-"main tree view. The default is taken from the default terminal font size."
-msgstr "指定在主要樹狀檢視中顯示日誌的等寬字大小。預設為預設終於機的字型大小。"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
-msgid "Height of the main window in pixels"
-msgstr "主視窗的高度（像素）"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
-msgid "Specifies the height of the log viewer main window in pixels."
-msgstr "指定日誌檢視主視窗的高度（像素）"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
-msgid "Width of the main window in pixels"
-msgstr "主視窗的寬度（像素）"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
-msgid "Specifies the width of the log viewer main window in pixels."
-msgstr "指定日誌檢視主視窗的寬度（像素）"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
-msgid "Log files to open up on startup"
-msgstr "啟動時開啟的日誌檔案"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
-msgid ""
-"Specifies a list of log files to open up at startup. A default list is "
-"created by reading /etc/syslog.conf."
-msgstr "指定啟動時預設開啟的日誌檔案列表。預設列表會根據 /etc/syslog.conf 來建構。"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
-msgid "List of saved filters"
-msgstr ""
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
-msgid "List of saved regexp filters"
-msgstr ""
-
-#: ../logview/data/logview-filter.ui.h:2
-msgid "_Regular Expression:"
-msgstr "正規表示式(_R):"
-
-#: ../logview/data/logview-filter.ui.h:3
-msgid "Highlight"
-msgstr "標示"
-
-#: ../logview/data/logview-filter.ui.h:4
-msgid "Hide"
-msgstr "隱藏"
-
-#: ../logview/data/logview-filter.ui.h:5
-msgid "Foreground:"
-msgstr "前景："
-
-#: ../logview/data/logview-filter.ui.h:6
-msgid "Background:"
-msgstr "背景："
-
-#: ../logview/data/logview-filter.ui.h:7
-msgid "Effect:"
-msgstr "效果："
-
-#: ../logview/logview-app.c:377
-#, c-format
-msgid "Impossible to open the file %s"
-msgstr "不可能開啟檔案 %s"
-
-#: ../logview/logview-filter-manager.c:94
-msgid "Filter name is empty!"
-msgstr "過濾條件名稱是空的！"
-
-#: ../logview/logview-filter-manager.c:107
-msgid "Filter name may not contain the ':' character"
-msgstr "過濾條件名稱不能包含「:」字元"
-
-#: ../logview/logview-filter-manager.c:130
-msgid "Regular expression is empty!"
-msgstr "正規表示式是空的！"
-
-#: ../logview/logview-filter-manager.c:146
-#, c-format
-msgid "Regular expression is invalid: %s"
-msgstr "正規表示式是無效的：%s"
-
-#: ../logview/logview-filter-manager.c:242
-msgid "Please specify either foreground or background color!"
-msgstr "請指定前景或背景的顏色！"
-
-#: ../logview/logview-filter-manager.c:296
-msgid "Edit filter"
-msgstr "編輯過濾條件"
-
-#: ../logview/logview-filter-manager.c:296
-msgid "Add new filter"
-msgstr "新增過濾器規則"
-
-#: ../logview/logview-filter-manager.c:506
-msgid "Filters"
-msgstr "過濾條件"
-
-#: ../logview/logview-findbar.c:173
-msgid "_Find:"
-msgstr "尋找(_F):"
-
-#: ../logview/logview-findbar.c:188
-msgid "Find Previous"
-msgstr "找上一個"
-
-#: ../logview/logview-findbar.c:191
-msgid "Find previous occurrence of the search string"
-msgstr "尋找上一個出現搜尋字串的地方"
-
-#: ../logview/logview-findbar.c:196
-msgid "Find Next"
-msgstr "找下一個"
-
-#: ../logview/logview-findbar.c:199
-msgid "Find next occurrence of the search string"
-msgstr "尋找下一個出現搜尋字串的地方"
-
-#: ../logview/logview-findbar.c:206
-msgid "Clear the search string"
-msgstr "清除搜尋字串"
-
-#: ../logview/logview-log.c:595
-msgid "Error while uncompressing the GZipped log. The file might be corrupt."
-msgstr "在解壓縮 GZip 壓縮式紀錄檔時發生錯誤。該檔案可能損壞。"
-
-#: ../logview/logview-log.c:642
-msgid "You don't have enough permissions to read the file."
-msgstr "您沒有足夠權限讀取該檔案。"
-
-#: ../logview/logview-log.c:657
-msgid "The file is not a regular file or is not a text file."
-msgstr "該檔案不是普通的檔案或不是文字檔。"
-
-#: ../logview/logview-log.c:739
-msgid "This version of System Log does not support GZipped logs."
-msgstr "這個版本的系統紀錄檔不支援 GZip 壓縮式紀錄檔。"
-
-#: ../logview/logview-loglist.c:315
-msgid "Loading..."
-msgstr "載入中…"
-
-#: ../logview/logview-main.c:61
-msgid "Show the application's version"
-msgstr "顯示應用程式的版本"
-
-#: ../logview/logview-main.c:63
-msgid "[LOGFILE...]"
-msgstr "[紀錄檔…]"
-
-#: ../logview/logview-main.c:67
-msgid " - Browse and monitor logs"
-msgstr " - 瀏覽及監視日誌"
-
-#: ../logview/logview-main.c:100
-msgid "Log Viewer"
-msgstr "日誌檢視程式"
-
-#: ../logview/logview-window.c:38 ../logview/logview-window.c:760
-msgid "System Log Viewer"
-msgstr "系統日誌顯示程式"
-
-#: ../logview/logview-window.c:210
-#, c-format
-msgid "last update: %s"
-msgstr "最後更新：%s"
-
-#: ../logview/logview-window.c:214
-#, c-format
-msgid "%d lines (%s) - %s"
-msgstr "%d 列 (%s) - %s"
-
-#: ../logview/logview-window.c:318
-msgid "Open Log"
-msgstr "開啟日誌"
-
-#: ../logview/logview-window.c:357
-#, c-format
-msgid "There was an error displaying help: %s"
-msgstr "顯示說明文件時發生錯誤：%s"
-
-#: ../logview/logview-window.c:471
-msgid "Wrapped"
-msgstr "已包裹"
-
-#: ../logview/logview-window.c:765
-msgid "A system log viewer for MATE."
-msgstr "適用於 MATE 的系統日誌顯示程式。"
-
-#: ../logview/logview-window.c:811
-msgid "_Filters"
-msgstr "過濾條件(_F)"
-
-#: ../logview/logview-window.c:814
-msgid "_Open..."
-msgstr "開啟(_O)…"
-
-#: ../logview/logview-window.c:814
-msgid "Open a log from file"
-msgstr "從檔案中開啟日誌"
-
-#: ../logview/logview-window.c:816
-msgid "_Close"
-msgstr "關閉(_C)"
-
-#: ../logview/logview-window.c:816
-msgid "Close this log"
-msgstr "關閉本日誌"
-
-#: ../logview/logview-window.c:818
-msgid "_Quit"
-msgstr "離開(_Q)"
-
-#: ../logview/logview-window.c:818
-msgid "Quit the log viewer"
-msgstr "離開日誌顯示程式"
-
-#: ../logview/logview-window.c:821
-msgid "_Copy"
-msgstr "拷貝(_C)"
-
-#: ../logview/logview-window.c:821
-msgid "Copy the selection"
-msgstr "拷貝選取的內容"
-
-#: ../logview/logview-window.c:823
-msgid "Select the entire log"
-msgstr "選取整個日誌"
-
-#: ../logview/logview-window.c:825
-msgid "_Find..."
-msgstr "尋找(_F)…"
-
-#: ../logview/logview-window.c:825
-msgid "Find a word or phrase in the log"
-msgstr "在紀錄檔中搜尋單字或片語"
-
-#: ../logview/logview-window.c:828
-msgid "Bigger text size"
-msgstr "放大字型大小"
-
-#: ../logview/logview-window.c:830
-msgid "Smaller text size"
-msgstr "縮小字型大小"
-
-#: ../logview/logview-window.c:832
-msgid "Normal text size"
-msgstr "正常字型大小"
-
-#: ../logview/logview-window.c:835
-msgid "Manage Filters"
-msgstr "管理過濾條件"
-
-#: ../logview/logview-window.c:835
-msgid "Manage filters"
-msgstr "管理過濾條件"
-
-#: ../logview/logview-window.c:838
-msgid "Open the help contents for the log viewer"
-msgstr "開啟系統日誌顯示程式的說明文件"
-
-#: ../logview/logview-window.c:840
-msgid "Show the about dialog for the log viewer"
-msgstr "開啟系統日誌顯示程式的關於視窗"
-
-#: ../logview/logview-window.c:845
-msgid "_Statusbar"
-msgstr "狀態列(_S)"
-
-#: ../logview/logview-window.c:845
-msgid "Show Status Bar"
-msgstr "顯示狀態列"
-
-#: ../logview/logview-window.c:847
-msgid "Side _Pane"
-msgstr "側邊窗格(_P)"
-
-#: ../logview/logview-window.c:847
-msgid "Show Side Pane"
-msgstr "顯示側面窗格"
-
-#: ../logview/logview-window.c:849
-msgid "Show matches only"
-msgstr "只顯示符合項"
-
-#: ../logview/logview-window.c:849
-msgid "Only show lines that match one of the given filters"
-msgstr "只顯示符合指定過濾條件的行"
-
-#: ../logview/logview-window.c:963
-#, c-format
-msgid "Can't read from \"%s\""
-msgstr "不能從「%s」讀取"
-
-#: ../logview/logview-window.c:1386
-msgid "Version: "
-msgstr "版本:"
-
-#: ../logview/logview-window.c:1493
-msgid "Could not open the following files:"
-msgstr "無法開啟下列檔案："

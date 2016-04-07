@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Aefgh Threenine <aefgh3962@gmail.com>, 2016
 # Khunti Yeesoon <sc445138@bucc3.buu.ac.th>, 2003
 # Paisa Seeluangsawat <paisa@users.sf.net>, 2004
 # Supranee Thirawatthanasuk <supranee@opentle.org>, 2004
@@ -10,10 +11,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-24 13:29+0100\n"
-"PO-Revision-Date: 2015-01-24 12:29+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Thai (http://www.transifex.com/projects/p/MATE/language/th/)\n"
+"POT-Creation-Date: 2015-12-10 13:06+0300\n"
+"PO-Revision-Date: 2016-03-06 07:06+0000\n"
+"Last-Translator: Aefgh Threenine <aefgh3962@gmail.com>\n"
+"Language-Team: Thai (http://www.transifex.com/mate/MATE/language/th/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,7 +23,7 @@ msgstr ""
 
 #: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:1
 msgid "MATE Disk Usage Analyzer"
-msgstr ""
+msgstr "โปรแกรมวินิจฉัยการใช้ดิสก์ของ MATE"
 
 #: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:2
 msgid "Check folder sizes and available disk space"
@@ -61,7 +62,8 @@ msgid "S_can Remote Folder..."
 msgstr "ตรวจข้อมูลโฟลเดอร์ในเ_ครือข่าย..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../mate-dictionary/src/gdict-window.c:1279 ../logview/logview-window.c:809
+#: ../logview/src/logview-window.c:811
+#: ../mate-dictionary/src/gdict-window.c:1285
 msgid "_Edit"
 msgstr "แ_ก้ไข"
 
@@ -74,7 +76,8 @@ msgid "_Collapse All"
 msgstr "_พับเก็บทั้งหมด"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../mate-dictionary/src/gdict-window.c:1280 ../logview/logview-window.c:810
+#: ../logview/src/logview-window.c:812
+#: ../mate-dictionary/src/gdict-window.c:1286
 msgid "_View"
 msgstr "_มุมมอง"
 
@@ -91,18 +94,20 @@ msgid "All_ocated Space"
 msgstr "_พื้นที่ที่จอง"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../mate-dictionary/src/gdict-applet.c:1213
-#: ../mate-dictionary/src/gdict-window.c:1282 ../logview/logview-window.c:812
+#: ../logview/src/logview-window.c:814
+#: ../mate-dictionary/src/gdict-applet.c:1185
+#: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Help"
 msgstr "_วิธีใช้"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../mate-dictionary/src/gdict-window.c:1332 ../logview/logview-window.c:838
+#: ../logview/src/logview-window.c:840
+#: ../mate-dictionary/src/gdict-window.c:1338
 msgid "_Contents"
 msgstr "เนื้อ_หา"
 
-#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/callbacks.c:97
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1245
 msgid "Disk Usage Analyzer"
 msgstr "เครื่องมือวิเคราะห์การใช้ดิสก์"
 
@@ -148,7 +153,7 @@ msgstr "ปรับแสดง"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:1
 msgid "Monitor Home"
-msgstr ""
+msgstr "หน้าหลักมอนิเตอร์"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:2
 msgid "Whether any change to the home directory should be monitored."
@@ -172,7 +177,7 @@ msgstr "กำหนดว่าจะแสดงแถบเครื่อง
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:7
 msgid "Statusbar is Visible"
-msgstr ""
+msgstr "แถบสถานะสามารถมองเห็นได้"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:8
 msgid "Whether the status bar at the bottom of main window should be visible."
@@ -180,7 +185,7 @@ msgstr "กำหนดว่าจะแสดงแถบสถานะที
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:9
 msgid "Subfolder tips visible"
-msgstr ""
+msgstr "คำแนะนำโฟลเดอร์ย่อยสามารถมองเห็นได้"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:10
 msgid "Whether the subfolder tooltips of the selected folder are drawn."
@@ -188,15 +193,15 @@ msgstr "กำหนดว่าจะแสดงคำแนะนำเคร
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:11
 msgid "Active Chart"
-msgstr ""
+msgstr "แผนภูมิที่ใช้งาน"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:12
 msgid "Which type of chart should be displayed."
-msgstr ""
+msgstr "แผนภูมิชนิดใดบ้างควรถูกแสดง"
 
 #: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:1
 msgid "A disk usage analyzing tool for MATE Desktop"
-msgstr ""
+msgstr "เครื่องมือวินิจฉัยการใช้ดิสก์สำหรับเดสก์ท็อปของ MATE"
 
 #: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:2
 msgid ""
@@ -226,12 +231,12 @@ msgstr "เหลืออยู่:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:240 ../baobab/src/baobab.c:297
-#: ../baobab/src/callbacks.c:259
+#: ../baobab/src/callbacks.c:258
 msgid "Calculating percentage bars..."
 msgstr "กำลังคำนวณแถบร้อยละ..."
 
 #: ../baobab/src/baobab.c:251 ../baobab/src/baobab.c:1309
-#: ../baobab/src/callbacks.c:263
+#: ../baobab/src/callbacks.c:262
 msgid "Ready"
 msgstr "พร้อม"
 
@@ -466,7 +471,7 @@ msgstr "เนื้อหาของโฟลเดอร์บ้านขอ
 msgid "_Rescan"
 msgstr "_ตรวจข้อมูลใหม่"
 
-#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2427
+#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/src/gsearchtool.c:2427
 msgid "Folder"
 msgstr "โฟลเดอร์"
 
@@ -474,7 +479,7 @@ msgstr "โฟลเดอร์"
 msgid "Usage"
 msgstr "การใช้เนื้อที่"
 
-#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2440
+#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/src/gsearchtool.c:2440
 msgid "Size"
 msgstr "ขนาด"
 
@@ -504,43 +509,43 @@ msgstr "\"%s\" ไม่ใช่โฟลเดอร์ที่ใช้ก�
 msgid "Could not analyze disk usage."
 msgstr "ไม่สามารถวิเคราะห์การใช้งานดิสก์ได้"
 
-#: ../baobab/src/baobab-utils.c:366
+#: ../baobab/src/baobab-utils.c:362
 msgid "_Open Folder"
 msgstr "เปิดโฟ_ลเดอร์"
 
-#: ../baobab/src/baobab-utils.c:372
-#: ../gsearchtool/gsearchtool-callbacks.c:1210
+#: ../baobab/src/baobab-utils.c:368
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1210
 msgid "Mo_ve to Trash"
 msgstr "_ทิ้งลงถังขยะ"
 
-#: ../baobab/src/baobab-utils.c:406
+#: ../baobab/src/baobab-utils.c:402
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "ไม่สามารถเปิดโฟลเดอร์ \"%s\""
 
-#: ../baobab/src/baobab-utils.c:409
+#: ../baobab/src/baobab-utils.c:405
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr "ไม่มีโปรแกรมที่สามารถแสดงโฟลเดอร์นี้ได้ติดตั้งอยู่"
 
-#: ../baobab/src/baobab-utils.c:478
+#: ../baobab/src/baobab-utils.c:474
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr "ไม่สามารถย้าย \"%s\" ไปลงถังขยะ"
 
-#: ../baobab/src/baobab-utils.c:486
+#: ../baobab/src/baobab-utils.c:482
 msgid "Could not move file to the Trash"
 msgstr "ไม่สามารถย้ายแฟ้มไปลงถังขยะ"
 
-#: ../baobab/src/baobab-utils.c:488
+#: ../baobab/src/baobab-utils.c:484
 #, c-format
 msgid "Details: %s"
 msgstr "รายละเอียด: %s"
 
-#: ../baobab/src/baobab-utils.c:524
+#: ../baobab/src/baobab-utils.c:520
 msgid "There was an error displaying help."
 msgstr "เกิดข้อผิดพลาดขณะแสดงวิธีใช้"
 
-#: ../baobab/src/callbacks.c:76 ../logview/logview-about.h:49
+#: ../baobab/src/callbacks.c:76 ../logview/src/logview-about.h:49
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -548,7 +553,7 @@ msgid ""
 "any later version."
 msgstr "โปรแกรมนี้เป็นซอฟต์แวร์เสรี คุณสามารถแจกจ่ายต่อ และ/หรือ แก้ไขโปรแกรมได้ ภายใต้เงื่อนไขของ GNU General Public License ที่เผยแพร่โดยมูลนิธิซอฟต์แวร์เสรี ไม่ว่าจะเป็นสัญญาอนุญาตรุ่นที่ 2 หรือรุ่นถัดมา (ตามแต่คุณจะเลือก)"
 
-#: ../baobab/src/callbacks.c:81 ../logview/logview-about.h:53
+#: ../baobab/src/callbacks.c:81 ../logview/src/logview-about.h:53
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -556,31 +561,1279 @@ msgid ""
 "more details."
 msgstr "โปรแกรมนี้เผยแพร่ด้วยความหวังว่าโปรแกรมจะมีประโยชน์ แต่ *ไม่มีการรับประกันใดๆ* ไม่มีแม้การรับประกัน *อรรถประโยชน์เชิงพาณิชย์* หรือ *ความเหมาะสมสำหรับวัตถุประสงค์เฉพาะกิจใดๆ* กรุณาอ่าน GNU General Public License เพื่อดูรายละเอียดเพิ่มเติม"
 
-#: ../baobab/src/callbacks.c:86 ../logview/logview-about.h:57
+#: ../baobab/src/callbacks.c:86 ../logview/src/logview-about.h:57
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 msgstr "คุณควรจะได้รับสำเนาของ GNU General Public License มาพร้อมกับโปรแกรมนี้ ถ้าคุณไม่ได้รับ กรุณาติดต่อไปที่ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA"
 
-#: ../baobab/src/callbacks.c:98
+#: ../baobab/src/callbacks.c:97
 msgid "A graphical tool to analyze disk usage."
 msgstr "เครื่องมือกราฟิกสำหรับวิเคราะห์การใช้งานดิสก์"
 
 #. translator credits
-#: ../baobab/src/callbacks.c:104 ../mate-dictionary/src/gdict-about.c:55
-#: ../logview/logview-about.h:63
+#: ../baobab/src/callbacks.c:103 ../logview/src/logview-about.h:63
+#: ../mate-dictionary/src/gdict-about.c:55
 msgid "translator-credits"
 msgstr "Khunti Yeesoon\nไพศาข์ สีเหลืองสวัสดิ์\nเทพพิทักษ์ การุญบุญญานันท์\n\nถ้ามีเวลาโปรดมาช่วยกันแปล :-)\nhttp://mate-th.sf.net"
 
-#: ../baobab/src/callbacks.c:202 ../gsearchtool/gsearchtool-callbacks.c:508
-#: ../gsearchtool/gsearchtool-callbacks.c:848
+#: ../baobab/src/callbacks.c:201
+#: ../gsearchtool/src/gsearchtool-callbacks.c:508
+#: ../gsearchtool/src/gsearchtool-callbacks.c:848
 msgid "The document does not exist."
 msgstr "เอกสารไม่มีอยู่จริง"
 
-#: ../baobab/src/callbacks.c:283
+#: ../baobab/src/callbacks.c:282
 msgid "The folder does not exist."
 msgstr "โฟลเดอร์ไม่มีอยู่จริง"
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
+msgid "A file searching tool for MATE Desktop"
+msgstr "เครื่องสำหรับค้นหาแฟ้มสำหรับเดสก์ท็อปของ MATE"
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Search Tool is a simple but powerful utility that allows you to "
+"search for files and folders on any mounted file system. Its interface gives"
+" you instant access to a wide variety of parameters for each search, such as"
+" text contained within a file, ownership, date of modification, file size, "
+"folder exclusion, etc.. </p>"
+msgstr ""
+
+#: ../gsearchtool/data/mate-search-tool.desktop.in.h:1
+msgid "MATE Search Tool"
+msgstr "เครื่องมือค้นหาของ MATE"
+
+#: ../gsearchtool/data/mate-search-tool.desktop.in.h:2
+msgid "Locate documents and folders on this computer by name or content"
+msgstr "ค้นหาเอกสารและโฟลเดอร์ในคอมพิวเตอร์นี้ด้วยชื่อหรือเนื้อหา"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:1
+msgid "Search history"
+msgstr "ประวัติการค้นหา"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:2
+msgid "This key defines the items which were searched for in the past."
+msgstr "คีย์นี้กำหนดรายการที่เคยถูกค้นหามาเมื่อก่อนหน้านี้"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:3
+msgid "Show Additional Options"
+msgstr "แสดงตัวเลือกอื่นๆ"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:4
+msgid "Disable Quick Search"
+msgstr "ปิดการค้นหาแบบเร็ว"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:5
+msgid ""
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
+msgstr "กำหนดให้เครื่องมือค้นหาปิดการใช้คำสั่ง locate สำหรับการค้นหาชื่อแฟ้มอย่างง่าย"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:6
+msgid "Quick Search Excluded Paths"
+msgstr "พาธที่ไม่รวมในการค้นอย่างเร็ว"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:7
+msgid ""
+"This key defines the paths the search tool will exclude from a quick search."
+" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
+"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
+msgstr "กำหนดพาธที่เครื่องมือค้นหาจะไม่รวมในผลลัพธ์ของการค้นอย่างเร็ว สามารถใช้ wildcard '*' และ '?' ได้ ค่าโดยปริยายคือ /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, และ /var/*"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:8
+msgid "Disable Quick Search Second Scan"
+msgstr "ปิดการค้นรอบสองของการค้าหาแบบเร็ว"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:9
+msgid ""
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
+msgstr "กำหนดให้เครื่องมือค้นหาปิดการใช้คำสั่ง find หลังจากค้นหาอย่างเร็วเสร็จแล้ว"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:10
+msgid "Quick Search Second Scan Excluded Paths"
+msgstr "พาธที่ไม่รวมในการค้นอย่างเร็วรอบสอง"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:11
+msgid ""
+"This key defines the paths the search tool will exclude from a second scan "
+"when performing a quick search. The second scan uses the find command to "
+"search for files. The purpose of the second scan is to find files that have "
+"not been indexed. The wildcards '*' and '?' are supported. The default value"
+" is /."
+msgstr "กำหนดพาธที่เครื่องมือค้นหาจะไม่ค้นในรอบสองของการค้นอย่างเร็ว การค้นรอบสองจะใช้คำสั่ง find ในการค้นหาแฟ้ม มีจุดมุ่งหมายเพื่อค้นหาแฟ้มที่ยังไม่ถูกทำดัชนี สามารถใช้ wildcard '*' และ '?' ได้ ค่าโดยปริยายคือ /"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:12
+msgid "Search Result Columns Order"
+msgstr "ลำดับคอลัมน์ในการแสดงผลการค้นหา"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:13
+msgid ""
+"This key defines the order of the columns in the search results. This key "
+"should not be modified by the user."
+msgstr "กำหนดลำดับของคอลัมน์ในการแสดงผลการค้นหา ผู้ใช้ไม่ควรเปลี่ยนแปลงคีย์นี้"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:14
+msgid "Default Window Width"
+msgstr "ความกว้างหน้าต่างปริยาย"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:15
+msgid ""
+"This key defines the window width, and it's used to remember the size of the"
+" search tool between sessions. Setting it to -1 will make the search tool "
+"use the default width."
+msgstr "กำหนดความกว้างของหน้าต่าง และใช้จำขนาดของเครื่องมือค้นหาข้ามวาระ ถ้ากำหนดเป็น -1 จะใช้ความกว้างปริยาย"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:16
+msgid "Default Window Height"
+msgstr "ความสูงหน้าต่างปริยาย"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:17
+msgid ""
+"This key defines the window height, and it's used to remember the size of "
+"the search tool between sessions. Setting it to -1 will make the search tool"
+" use the default height."
+msgstr "กำหนดความสูงของหน้าต่าง และใช้จำขนาดของเครื่องมือค้นหาข้ามวาระ ถ้ากำหนดเป็น -1 จะใช้ความสูงปริยาย"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:18
+msgid "Default Window Maximized"
+msgstr "หน้าต่างขยายเต็มโดยปริยาย"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:19
+msgid ""
+"This key determines if the search tool window starts in a maximized state."
+msgstr "กำหนดว่าเครื่องมือค้นหาจะเริ่มทำงานแบบขยายหน้าต่างเต็มหรือไม่"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:20
+msgid "Look in Folder"
+msgstr "หาในโฟลเดอร์"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:21
+msgid "This key defines the default value of the \"Look in Folder\" widget."
+msgstr "กำหนดค่าปริยายของวิดเจ็ต \"หาในโฟลเดอร์\""
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:22
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr "กำหนดให้เลือกตัวเลือก \"มีข้อความ\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:23
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
+msgstr "กำหนดให้เลือกตัวเลือก \"แก้ไขครั้งล่าสุดภายใน\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:24
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
+msgstr "กำหนดให้เลือกตัวเลือก \"แก้ไขครั้งล่าสุดก่อน\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:25
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr "กำหนดให้เลือกตัวเลือก \"ขนาดอย่างน้อย\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:26
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
+msgstr "กำหนดให้เลือกตัวเลือก \"ขนาดไม่เกิน\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:27
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
+msgstr "กำหนดให้เลือกตัวเลือก \"แฟ้มเปล่าไม่มีข้อมูล\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:28
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
+msgstr "กำหนดให้เลือกตัวเลือก \"เจ้าของคือ\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:29
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when"
+" the search tool is started."
+msgstr "กำหนดให้เลือกตัวเลือก \"เป็นของกลุ่ม\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:30
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
+msgstr "กำหนดให้เลือกตัวเลือก \"ไม่รู้จักเจ้าของ\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:31
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr "กำหนดให้เลือกตัวเลือก \"ชื่อไม่มีคำว่า\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:32
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option"
+" is selected when the search tool is started."
+msgstr "กำหนดให้เลือกตัวเลือก \"ชื่อที่ตรงกับนิพจน์เรกิวลาร์\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:33
+msgid ""
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
+msgstr "กำหนดให้เลือกตัวเลือก \"แสดงแฟ้มสำรอง และแฟ้มที่ถูกซ่อน\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:34
+msgid ""
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr "กำหนดให้เลือกตัวเลือก \"ติดตามลิงก์สัญลักษณ์\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:35
+msgid ""
+"This key determines if the \"Exclude other filesystems\" search option is "
+"selected when the search tool is started."
+msgstr "กำหนดให้เลือกตัวเลือก \"ไม่รวมระบบแฟ้มอื่น\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "แฟ้มนี้ไม่ใช่แฟ้ม .desktop ที่ใช้ได้"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "ไม่รู้จักแฟ้มเดสก์ท็อปรุ่น '%s'"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:957
+#, c-format
+msgid "Starting %s"
+msgstr "กำลังเริ่ม %s"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1098
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "โปรแกรมไม่รับเอกสารในบรรทัดคำสั่ง"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1166
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "ไม่รู้จักตัวเลือกของการเรียกโปรแกรม: %d"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1365
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "ไม่สามารถส่ง URI ของเอกสารไปยังรายการเดสก์ท็อปที่มี 'Type=Link'"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1384
+#, c-format
+msgid "Not a launchable item"
+msgstr "ไม่ใช่รายการที่เรียกทำงานได้"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:225
+msgid "Disable connection to session manager"
+msgstr "ปิดใช้การเชื่อมต่อไปยังโปรแกรมจัดการวาระ"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+msgid "Specify file containing saved configuration"
+msgstr "ระบุแฟ้มที่บันทึกค่าตั้งไว้"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+msgid "FILE"
+msgstr "FILE"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+msgid "Specify session management ID"
+msgstr "ระบุหมายเลขการจัดการวาระ"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+msgid "ID"
+msgstr "ID"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:252
+msgid "Session management options:"
+msgstr "ตัวเลือกเกี่ยวกับการจัดการวาระ:"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:253
+msgid "Show session management options"
+msgstr "แสดงตัวเลือกเกี่ยวกับการจัดการวาระ"
+
+#: ../gsearchtool/src/gsearchtool.c:82
+msgid "Contains the _text"
+msgstr "_มีข้อความ"
+
+#: ../gsearchtool/src/gsearchtool.c:84
+msgid "_Date modified less than"
+msgstr "แก้ไขครั้งล่าสุด_ภายใน"
+
+#: ../gsearchtool/src/gsearchtool.c:84 ../gsearchtool/src/gsearchtool.c:85
+msgid "days"
+msgstr "วัน"
+
+#: ../gsearchtool/src/gsearchtool.c:85
+msgid "Date modified more than"
+msgstr "แก้ไขครั้งล่าสุด_ก่อน"
+
+#: ../gsearchtool/src/gsearchtool.c:87
+msgid "S_ize at least"
+msgstr "ขนาดอ_ย่างน้อย"
+
+#: ../gsearchtool/src/gsearchtool.c:87 ../gsearchtool/src/gsearchtool.c:88
+msgid "kilobytes"
+msgstr "กิโลไบต์"
+
+#: ../gsearchtool/src/gsearchtool.c:88
+msgid "Si_ze at most"
+msgstr "ขนาดไ_ม่เกิน"
+
+#: ../gsearchtool/src/gsearchtool.c:89
+msgid "File is empty"
+msgstr "แฟ้มเปล่าไม่มีข้อมูล"
+
+#: ../gsearchtool/src/gsearchtool.c:91
+msgid "Owned by _user"
+msgstr "เ_จ้าของคือ"
+
+#: ../gsearchtool/src/gsearchtool.c:92
+msgid "Owned by _group"
+msgstr "เป็น_ของกลุ่ม"
+
+#: ../gsearchtool/src/gsearchtool.c:93
+msgid "Owner is unrecognized"
+msgstr "ไม่รู้จักเจ้าของ"
+
+#: ../gsearchtool/src/gsearchtool.c:95
+msgid "Na_me does not contain"
+msgstr "ชื่อไม่มี_คำว่า"
+
+#: ../gsearchtool/src/gsearchtool.c:96
+msgid "Name matches regular e_xpression"
+msgstr "ชื่อที่ตร_งกับนิพจน์เรกิวลาร์"
+
+#: ../gsearchtool/src/gsearchtool.c:98
+msgid "Show hidden and backup files"
+msgstr "แสดงแฟ้มสำรอง และแฟ้มที่ถูกซ่อน"
+
+#: ../gsearchtool/src/gsearchtool.c:99
+msgid "Follow symbolic links"
+msgstr "ติดตามลิงก์สัญลักษณ์"
+
+#: ../gsearchtool/src/gsearchtool.c:100
+msgid "Exclude other filesystems"
+msgstr "ไม่รวมระบบแฟ้มอื่น"
+
+#: ../gsearchtool/src/gsearchtool.c:158
+msgid "Show version of the application"
+msgstr "แสดงเลขรุ่นของโปรแกรม"
+
+#: ../gsearchtool/src/gsearchtool.c:159 ../gsearchtool/src/gsearchtool.c:164
+#: ../gsearchtool/src/gsearchtool.c:173
+msgid "STRING"
+msgstr "STRING"
+
+#: ../gsearchtool/src/gsearchtool.c:160
+msgid "PATH"
+msgstr "PATH"
+
+#: ../gsearchtool/src/gsearchtool.c:161
+msgid "VALUE"
+msgstr "VALUE"
+
+#: ../gsearchtool/src/gsearchtool.c:165 ../gsearchtool/src/gsearchtool.c:166
+msgid "DAYS"
+msgstr "DAYS"
+
+#: ../gsearchtool/src/gsearchtool.c:167 ../gsearchtool/src/gsearchtool.c:168
+msgid "KILOBYTES"
+msgstr "KILOBYTES"
+
+#: ../gsearchtool/src/gsearchtool.c:170
+msgid "USER"
+msgstr "USER"
+
+#: ../gsearchtool/src/gsearchtool.c:171
+msgid "GROUP"
+msgstr "GROUP"
+
+#: ../gsearchtool/src/gsearchtool.c:174
+msgid "PATTERN"
+msgstr "PATTERN"
+
+#: ../gsearchtool/src/gsearchtool.c:385
+msgid "A locate database has probably not been created."
+msgstr "เป็นไปได้ว่าระบบยังไม่ได้สร้างฐานข้อมูล locate"
+
+#: ../gsearchtool/src/gsearchtool.c:487
+#, c-format
+msgid "Character set conversion failed for \"%s\""
+msgstr "ไม่สามารถแปลงรหัสอักขระของ \"%s\""
+
+#: ../gsearchtool/src/gsearchtool.c:511
+msgid "Searching..."
+msgstr "กำลังค้นหา..."
+
+#: ../gsearchtool/src/gsearchtool.c:511 ../gsearchtool/src/gsearchtool.c:1031
+#: ../gsearchtool/src/gsearchtool.c:3030
+msgid "Search for Files"
+msgstr "ค้นหาแฟ้ม"
+
+#: ../gsearchtool/src/gsearchtool.c:977 ../gsearchtool/src/gsearchtool.c:1006
+msgid "No files found"
+msgstr "ไม่พบแฟ้ม"
+
+#: ../gsearchtool/src/gsearchtool.c:999
+msgid "(stopped)"
+msgstr "(หยุด)"
+
+#: ../gsearchtool/src/gsearchtool.c:1005
+msgid "No Files Found"
+msgstr "ไม่พบแฟ้ม"
+
+#: ../gsearchtool/src/gsearchtool.c:1010
+#, c-format
+msgid "%'d File Found"
+msgid_plural "%'d Files Found"
+msgstr[0] "พบ %'d แฟ้ม"
+
+#: ../gsearchtool/src/gsearchtool.c:1014 ../gsearchtool/src/gsearchtool.c:1052
+#, c-format
+msgid "%'d file found"
+msgid_plural "%'d files found"
+msgstr[0] "พบ %'d แฟ้ม"
+
+#: ../gsearchtool/src/gsearchtool.c:1143
+msgid "Entry changed called for a non entry option!"
+msgstr "รายการที่แก้ไขต้องได้รับค่าที่ไม่ว่างเปล่า"
+
+#: ../gsearchtool/src/gsearchtool.c:1308
+msgid "Set the text of \"Name contains\" search option"
+msgstr "ตั้งข้อความสำหรับตัวเลือก \"ชื่อมีคำว่า\""
+
+#: ../gsearchtool/src/gsearchtool.c:1309
+msgid "Set the text of \"Look in folder\" search option"
+msgstr "ตั้งข้อความสำหรับตัวเลือก \"หาในโฟลเดอร์\""
+
+#: ../gsearchtool/src/gsearchtool.c:1310
+msgid "Sort files by one of the following: name, folder, size, type, or date"
+msgstr "เรียงแฟ้มตาม: ชื่อ โฟลเดอร์ ขนาด ชนิด หรือวัน"
+
+#: ../gsearchtool/src/gsearchtool.c:1311
+msgid "Set sort order to descending, the default is ascending"
+msgstr "ใช้การเรียงจากมากไปน้อย  ค่าปริยายคือน้อยไปมาก"
+
+#: ../gsearchtool/src/gsearchtool.c:1312
+msgid "Automatically start a search"
+msgstr "เริ่มการค้นหาโดยอัตโนมัติ"
+
+#: ../gsearchtool/src/gsearchtool.c:1318
+#, c-format
+msgid "Select the \"%s\" search option"
+msgstr "เลือกตัวเลือก '%s'"
+
+#: ../gsearchtool/src/gsearchtool.c:1321
+#, c-format
+msgid "Select and set the \"%s\" search option"
+msgstr "เลือกและตั้งค่าตัวเลือก \"%s\""
+
+#: ../gsearchtool/src/gsearchtool.c:1428
+msgid "Invalid option passed to sortby command line argument."
+msgstr "คำสั่ง sortby ได้รับตัวเลือกที่ใช้ไม่ได้"
+
+#: ../gsearchtool/src/gsearchtool.c:1720
+msgid ""
+"\n"
+"... Too many errors to display ..."
+msgstr "\n... ข้อผิดพลาดเยอะเกินกว่าจะแสดงได้หมด ..."
+
+#: ../gsearchtool/src/gsearchtool.c:1734
+msgid ""
+"The search results may be invalid.  There were errors while performing this "
+"search."
+msgstr "ผลการค้นหาอาจไม่ถูกต้อง  เกิดข้อผิดพลาดขณะค้นหา"
+
+#: ../gsearchtool/src/gsearchtool.c:1746 ../gsearchtool/src/gsearchtool.c:1790
+msgid "Show more _details"
+msgstr "แ_สดงรายละเอียดเพิ่มเติม"
+
+#: ../gsearchtool/src/gsearchtool.c:1776
+msgid ""
+"The search results may be out of date or invalid.  Do you want to disable "
+"the quick search feature?"
+msgstr "ผลการค้นหาอาจเป็นข้อมูลเก่าหรือไม่ถูกต้อง  คุณต้องการปิดการค้นหาแบบเร็วหรือไม่?"
+
+#: ../gsearchtool/src/gsearchtool.c:1801
+msgid "Disable _Quick Search"
+msgstr "ปิดการค้นหาแบบเ_ร็ว"
+
+#: ../gsearchtool/src/gsearchtool.c:1828
+#, c-format
+msgid "Failed to set process group id of child %d: %s.\n"
+msgstr "ไม่สามารถกำหนดหมายเลขกลุ่มของโพรเซสลูกหมายเลข %d: %s\n"
+
+#: ../gsearchtool/src/gsearchtool.c:1853
+msgid "Error parsing the search command."
+msgstr "ไม่เข้าใจคำสั่งค้นหา"
+
+#: ../gsearchtool/src/gsearchtool.c:1885
+msgid "Error running the search command."
+msgstr "เกิดข้อผิดพลาดขณะเรียกใช้งานคำสั่งค้นหา"
+
+#: ../gsearchtool/src/gsearchtool.c:2008
+#, c-format
+msgid "Enter a text value for the \"%s\" search option."
+msgstr "ป้อนข้อความสำหรับตัวเลือกการค้นหา \"%s\""
+
+#. Translators:  Below is a string displaying the search options name
+#. and unit value.  For example, "\"Date modified less than\" in days".
+#: ../gsearchtool/src/gsearchtool.c:2013
+#, c-format
+msgid "\"%s\" in %s"
+msgstr "\"%s\" ในหน่วย %s"
+
+#: ../gsearchtool/src/gsearchtool.c:2015
+#, c-format
+msgid "Enter a value in %s for the \"%s\" search option."
+msgstr "ป้อนค่าในหน่วย %s สำหรับตัวเลือกการค้นหา \"%s\""
+
+#: ../gsearchtool/src/gsearchtool.c:2073
+#, c-format
+msgid "Remove \"%s\""
+msgstr "ลบตัวเลือก \"%s\""
+
+#: ../gsearchtool/src/gsearchtool.c:2074
+#, c-format
+msgid "Click to remove the \"%s\" search option."
+msgstr "คลิกเพื่อลบตัวเลือกการค้นหา \"%s\""
+
+#: ../gsearchtool/src/gsearchtool.c:2167
+msgid "A_vailable options:"
+msgstr "_ตัวเลือกที่มี:"
+
+#: ../gsearchtool/src/gsearchtool.c:2196
+msgid "Available options"
+msgstr "ตัวเลือกที่มี"
+
+#: ../gsearchtool/src/gsearchtool.c:2197
+msgid "Select a search option from the drop-down list."
+msgstr "เลือกตัวเลือกการค้นหาจากเมนู"
+
+#: ../gsearchtool/src/gsearchtool.c:2209
+msgid "Add search option"
+msgstr "เพิ่มตัวเลือกการค้นหา"
+
+#: ../gsearchtool/src/gsearchtool.c:2210
+msgid "Click to add the selected available search option."
+msgstr "คลิกเพื่อเพิ่มตัวเลือกการค้นหาที่ได้เลือกไว้ในรายการ"
+
+#: ../gsearchtool/src/gsearchtool.c:2299
+msgid "S_earch results:"
+msgstr "_ผลการค้นหา:"
+
+#: ../gsearchtool/src/gsearchtool.c:2343
+msgid "List View"
+msgstr "รายการแฟ้มที่พบ"
+
+#: ../gsearchtool/src/gsearchtool.c:2403
+#: ../mate-dictionary/libgdict/gdict-source.c:246
+msgid "Name"
+msgstr "ชื่อ"
+
+#: ../gsearchtool/src/gsearchtool.c:2452
+msgid "Type"
+msgstr "ชนิด"
+
+#: ../gsearchtool/src/gsearchtool.c:2464
+msgid "Date Modified"
+msgstr "วันที่แก้ไข"
+
+#: ../gsearchtool/src/gsearchtool.c:2799
+msgid "_Name contains:"
+msgstr "_ชื่อมีคำว่า:"
+
+#: ../gsearchtool/src/gsearchtool.c:2813 ../gsearchtool/src/gsearchtool.c:2814
+msgid "Enter a filename or partial filename with or without wildcards."
+msgstr "ป้อนชื่อแฟ้มหรือบางส่วนของชื่อแฟ้มที่จะค้นหา สามารถใช้ wildcard ได้"
+
+#: ../gsearchtool/src/gsearchtool.c:2814
+msgid "Name contains"
+msgstr "ชื่อมีคำว่า"
+
+#: ../gsearchtool/src/gsearchtool.c:2820
+msgid "_Look in folder:"
+msgstr "หาในโฟ_ลเดอร์:"
+
+#: ../gsearchtool/src/gsearchtool.c:2826
+msgid "Browse"
+msgstr "เรียกดู"
+
+#: ../gsearchtool/src/gsearchtool.c:2835
+msgid "Look in folder"
+msgstr "หาในโฟลเดอร์"
+
+#: ../gsearchtool/src/gsearchtool.c:2835
+msgid "Select the folder or device from which you want to begin the search."
+msgstr "ใส่ชื่อโฟลเดอร์หรืออุปกรณ์ที่จะใช้เริ่มค้นหา"
+
+#: ../gsearchtool/src/gsearchtool.c:2853
+msgid "Select more _options"
+msgstr "เลือกตัวเลือก_อื่นๆ"
+
+#: ../gsearchtool/src/gsearchtool.c:2862
+msgid "Select more options"
+msgstr "เลือกตัวเลือกอื่นๆ"
+
+#: ../gsearchtool/src/gsearchtool.c:2862
+msgid "Click to expand or collapse the list of available options."
+msgstr "คลิกเพื่อขยายหรือยุบรายการตัวเลือกของการค้นหา"
+
+#: ../gsearchtool/src/gsearchtool.c:2886
+msgid "Click to display the help manual."
+msgstr "คลิกเพื่อเปิดเอกสารแนะนำวิธีใช้"
+
+#: ../gsearchtool/src/gsearchtool.c:2894
+msgid "Click to close \"Search for Files\"."
+msgstr "คลิกถ้าต้องการปิดหน้าต่าง \"ค้นหาแฟ้ม\""
+
+#: ../gsearchtool/src/gsearchtool.c:2920
+msgid "Click to perform a search."
+msgstr "คลิกเพื่อเริ่มค้นหา"
+
+#: ../gsearchtool/src/gsearchtool.c:2921
+msgid "Click to stop a search."
+msgstr "คลิกถ้าต้องการหยุดค้นหา"
+
+#: ../gsearchtool/src/gsearchtool.c:3015
+msgid "- the MATE Search Tool"
+msgstr "- เครื่องมือค้นหาของ MATE"
+
+#: ../gsearchtool/src/gsearchtool.c:3024
+#, c-format
+msgid "Failed to parse command line arguments: %s\n"
+msgstr "แจงอาร์กิวเมนต์บรรทัดคำสั่งไม่สำเร็จ: %s\n"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:198
+msgid "Could not open help document."
+msgstr "ไม่สามารถเปิดเอกสารคำแนะนำช่วยเหลือ"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:349
+#, c-format
+msgid "Are you sure you want to open %d document?"
+msgid_plural "Are you sure you want to open %d documents?"
+msgstr[0] "แน่ใจหรือไม่ว่าจะเปิดเอกสาร %d ฉบับ?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:354
+#: ../gsearchtool/src/gsearchtool-callbacks.c:551
+#, c-format
+msgid "This will open %d separate window."
+msgid_plural "This will open %d separate windows."
+msgstr[0] "จะเปิดหน้าต่างแยก %d หน้าต่าง"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:394
+#, c-format
+msgid "Could not open document \"%s\"."
+msgstr "ไม่สามารถเปิดเอกสาร \"%s\""
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:423
+#, c-format
+msgid "Could not open folder \"%s\"."
+msgstr "ไม่สามารถเปิดโฟลเดอร์ \"%s\""
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:431
+msgid "The caja file manager is not running."
+msgstr "โปรแกรมจัดการแฟ้ม Caja ไม่ได้ทำงานอยู่"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:523
+msgid "There is no installed viewer capable of displaying the document."
+msgstr "ไม่มีโปรแกรมที่สามารถแสดงเอกสารนี้ได้ติดตั้งอยู่"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:546
+#, c-format
+msgid "Are you sure you want to open %d folder?"
+msgid_plural "Are you sure you want to open %d folders?"
+msgstr[0] "แน่ใจหรือไม่ว่าจะเปิดโฟลเดอร์ %d โฟลเดอร์?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:699
+#, c-format
+msgid "Could not move \"%s\" to trash."
+msgstr "ไม่สามารถย้าย \"%s\" ไปลงถังขยะ"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:730
+#, c-format
+msgid "Do you want to delete \"%s\" permanently?"
+msgstr "ต้องการลบ \"%s\" ทิ้งถาวรเลยหรือไม่?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:733
+#, c-format
+msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
+msgstr "ถังขยะใช้งานไม่ได้ จึงไม่สามารถย้าย \"%s\" ไปลงถังขยะ"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:772
+#, c-format
+msgid "Could not delete \"%s\"."
+msgstr "ไม่สามารถลบ \"%s\""
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:884
+#, c-format
+msgid "Deleting \"%s\" failed: %s."
+msgstr "ลบ \"%s\" ไม่สำเร็จ: %s"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:896
+#, c-format
+msgid "Moving \"%s\" failed: %s."
+msgstr "ย้าย \"%s\" ไม่สำเร็จ: %s"
+
+#. Popup menu item: Open
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1024
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1054
+msgid "_Open"
+msgstr "_เปิด"
+
+#. Popup menu item: Open with (default)
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1079
+#, c-format
+msgid "_Open with %s"
+msgstr "_เปิดด้วย %s"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1114
+#, c-format
+msgid "Open with %s"
+msgstr "เปิดด้วย %s"
+
+#. Popup menu item: Open With
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1147
+msgid "Open Wit_h"
+msgstr "เปิดด้ว_ย"
+
+#. Popup menu item: Open Containing Folder
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1192
+msgid "Open Containing _Folder"
+msgstr "_เปิดโฟลเดอร์ที่เก็บ"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1232
+msgid "_Save Results As..."
+msgstr "_บันทึกผลการค้นหาเป็น..."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1614
+msgid "Save Search Results As..."
+msgstr "บันทึกผลการค้นหาเป็น..."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1643
+msgid "Could not save document."
+msgstr "ไม่สามารถบันทึกเอกสาร"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1644
+msgid "You did not select a document name."
+msgstr "คุณยังไม่ได้เลือกชื่อเอกสาร"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1674
+#, c-format
+msgid "Could not save \"%s\" document to \"%s\"."
+msgstr "ไม่สามารถบันทึกเอกสาร \"%s\" ไปยัง \"%s\""
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1707
+#, c-format
+msgid "The document \"%s\" already exists.  Would you like to replace it?"
+msgstr "มีเอกสารชื่อ \"%s\" อยู่แล้ว  จะเขียนทับหรือไม่?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1711
+msgid "If you replace an existing file, its contents will be overwritten."
+msgstr "ถ้าคุณเขียนทับ ข้อมูลในแฟ้มเก่าจะสูญหาย"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1726
+#: ../mate-screenshot/src/screenshot-xfer.c:82
+msgid "_Replace"
+msgstr "เ_ขียนทับ"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1775
+msgid "The document name you selected is a folder."
+msgstr "ชื่อเอกสารที่คุณเลือกเป็นชื่อโฟลเดอร์"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1811
+msgid "You may not have write permissions to the document."
+msgstr "คุณอาจไม่มีสิทธิ์เขียนลงเอกสารนี้"
+
+#. Translators:  Below are the strings displayed in the 'Date Modified'
+#. column of the list view.  The format of this string can vary depending
+#. on age of a file.  Please modify the format of the timestamp to match
+#. your locale.  For example, to display 24 hour time replace the '%-I'
+#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
+#: ../gsearchtool/src/gsearchtool-support.c:448
+msgid "today at %-I:%M %p"
+msgstr "วันนี้ที่ %-I:%M %p"
+
+#: ../gsearchtool/src/gsearchtool-support.c:450
+msgid "yesterday at %-I:%M %p"
+msgstr "เมื่อวานที่ %-I:%M %p"
+
+#: ../gsearchtool/src/gsearchtool-support.c:452
+#: ../gsearchtool/src/gsearchtool-support.c:454
+msgid "%A, %B %-d %Y at %-I:%M:%S %p"
+msgstr "%A %-d %B %Ey, %H:%M:%S น."
+
+#: ../gsearchtool/src/gsearchtool-support.c:641
+msgid "link (broken)"
+msgstr "จุดเชื่อม (ขาด)"
+
+#: ../gsearchtool/src/gsearchtool-support.c:645
+#, c-format
+msgid "link to %s"
+msgstr "เชื่อมไปยัง %s"
+
+#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
+#. Localizers:
+#. * Feel free to leave out the st, nd, rd and th suffix or
+#. * make some or all of them match.
+#. localizers: tag used to detect the first copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1257
+msgid " (copy)"
+msgstr " (copy)"
+
+#. localizers: tag used to detect the second copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1259
+msgid " (another copy)"
+msgstr " (another copy)"
+
+#. localizers: tag used to detect the x11th copy of a file
+#. localizers: tag used to detect the x12th copy of a file
+#. localizers: tag used to detect the x13th copy of a file
+#. localizers: tag used to detect the xxth copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1262
+#: ../gsearchtool/src/gsearchtool-support.c:1264
+#: ../gsearchtool/src/gsearchtool-support.c:1266
+#: ../gsearchtool/src/gsearchtool-support.c:1276
+msgid "th copy)"
+msgstr "th copy)"
+
+#. localizers: tag used to detect the x1st copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1269
+msgid "st copy)"
+msgstr "st copy)"
+
+#. localizers: tag used to detect the x2nd copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1271
+msgid "nd copy)"
+msgstr "nd copy)"
+
+#. localizers: tag used to detect the x3rd copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1273
+msgid "rd copy)"
+msgstr "rd copy)"
+
+#. localizers: appended to first file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1290
+#, c-format
+msgid "%s (copy)%s"
+msgstr "%s (copy)%s"
+
+#. localizers: appended to second file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1292
+#, c-format
+msgid "%s (another copy)%s"
+msgstr "%s (another copy)%s"
+
+#. localizers: appended to x11th file copy
+#. localizers: appended to x12th file copy
+#. localizers: appended to x13th file copy
+#. localizers: appended to xxth file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1295
+#: ../gsearchtool/src/gsearchtool-support.c:1297
+#: ../gsearchtool/src/gsearchtool-support.c:1299
+#: ../gsearchtool/src/gsearchtool-support.c:1308
+#, c-format
+msgid "%s (%dth copy)%s"
+msgstr "%s (%dth copy)%s"
+
+#. localizers: appended to x1st file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1302
+#, c-format
+msgid "%s (%dst copy)%s"
+msgstr "%s (%dst copy)%s"
+
+#. localizers: appended to x2nd file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1304
+#, c-format
+msgid "%s (%dnd copy)%s"
+msgstr "%s (%dnd copy)%s"
+
+#. localizers: appended to x3rd file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1306
+#, c-format
+msgid "%s (%drd copy)%s"
+msgstr "%s (%drd copy)%s"
+
+#: ../gsearchtool/src/gsearchtool-support.c:1353
+msgid " (invalid Unicode)"
+msgstr " (รหัสยูนิโค้ดไม่ถูกต้อง)"
+
+#. localizers: opening parentheses to match the "th copy)" string
+#: ../gsearchtool/src/gsearchtool-support.c:1442
+msgid " ("
+msgstr " ("
+
+#. localizers: opening parentheses of the "th copy)" string
+#: ../gsearchtool/src/gsearchtool-support.c:1450
+#, c-format
+msgid " (%d"
+msgstr " (%d"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "โปรแกรมอ่านแฟ้มปูม"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "อ่านหรือเฝ้าสังเกตปูมของระบบ"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
+msgid "Log file to open up on startup"
+msgstr "แฟ้มปูมที่จะให้เปิดเมื่อเริ่มโปรแกรม"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
+msgid ""
+"Specifies the log file displayed at startup. The default is either "
+"/var/adm/messages or /var/log/messages, depending on your operating system."
+msgstr "กำหนดแฟ้มปูมที่จะแสดงเมื่อเริ่มโปรแกรม  ค่าปริยายเป็นได้ทั้ง /var/adm/messages หรือ /var/log/messages ตามแต่ระบบปฏิบัติการที่ใช้"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
+msgid "Size of the font used to display the log"
+msgstr "ขนาดของแบบอักษรที่ใช้แสดงปูม"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr "กำหนดขนาดของแบบอักษรความกว้างคงที่ที่ใช้แสดงปูมในช่องแสดงหลัก ค่าปริยายจะใช้ขนาดปริยายของแบบอักษรเทอร์มินัล"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
+msgid "Height of the main window in pixels"
+msgstr "ความสูงของหน้าต่างหลักเป็นพิกเซล"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "กำหนดความสูงเป็นพิกเซลของหน้าต่างหลักของโปรแกรมดูปูมระบบ"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
+msgid "Width of the main window in pixels"
+msgstr "ความกว้างของหน้าต่างหลักเป็นพิกเซล"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "กำหนดความกว้างเป็นพิกเซลของหน้าต่างหลักของโปรแกรมดูปูมระบบ"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
+msgid "Log files to open up on startup"
+msgstr "แฟ้มปูมที่จะให้เปิดเมื่อเริ่มโปรแกรม"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr "กำหนดรายการแฟ้มปูมที่จะเปิดเมื่อเริ่มโปรแกรม ค่าปริยายของคีย์นี้จะสร้างจาก /etc/syslog.conf"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
+msgid "List of saved filters"
+msgstr "รายชื่อตัวกรองที่บันทึกไว้"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
+msgid "List of saved regexp filters"
+msgstr "รายชื่อตัวกรอง regexp ที่บันทึกไว้"
+
+#: ../logview/data/logview-filter.ui.h:1
+#: ../mate-screenshot/data/mate-screenshot.ui.h:3
+msgid "_Name:"
+msgstr "_ชื่อ:"
+
+#: ../logview/data/logview-filter.ui.h:2
+msgid "_Regular Expression:"
+msgstr "_นิพจน์เรกิวลาร์"
+
+#: ../logview/data/logview-filter.ui.h:3
+msgid "Highlight"
+msgstr "เน้น"
+
+#: ../logview/data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "ซ่อน"
+
+#: ../logview/data/logview-filter.ui.h:5
+msgid "Foreground:"
+msgstr "สีตัวอักษร:"
+
+#: ../logview/data/logview-filter.ui.h:6
+msgid "Background:"
+msgstr "สีพื้นหลัง:"
+
+#: ../logview/data/logview-filter.ui.h:7
+msgid "Effect:"
+msgstr "เอฟเฟกต์:"
+
+#: ../logview/src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "ไม่สามารถเปิดแฟ้ม %s"
+
+#: ../logview/src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "ชื่อตัวกรองว่างเปล่า!"
+
+#: ../logview/src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "ชื่อตัวกรองจะใช้อักขระ ':' ไม่ได้"
+
+#: ../logview/src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "นิพจน์เรกิวลาร์ว่างเปล่า!"
+
+#: ../logview/src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "นิพจน์เรกิวลาร์ไม่ถูกต้อง: %s"
+
+#: ../logview/src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "กรุณาระบุสีตัวอักษรหรือสีพื้นหลัง!"
+
+#: ../logview/src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "แก้ไขตัวกรอง"
+
+#: ../logview/src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "เพิ่มตัวกรองใหม่"
+
+#: ../logview/src/logview-filter-manager.c:508
+msgid "Filters"
+msgstr "ตัวกรอง"
+
+#: ../logview/src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "_หา:"
+
+#: ../logview/src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "หาก่อนหน้า"
+
+#: ../logview/src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "หาคำในเนื้อความก่อนหน้าจุดที่แล้ว"
+
+#: ../logview/src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "หาต่อ"
+
+#: ../logview/src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "หาคำในเนื้อความถัดจากจุดที่แล้ว"
+
+#: ../logview/src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "ล้างคำค้น"
+
+#: ../logview/src/logview-log.c:598
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "เกิดข้อผิดพลาดขณะคลายปูมที่ GZip ไว้ แฟ้มอาจเสียหาย"
+
+#: ../logview/src/logview-log.c:645
+msgid "You don't have enough permissions to read the file."
+msgstr "คุณไม่มีสิทธิ์เพียงพอที่จะอ่านแฟ้มนี้"
+
+#: ../logview/src/logview-log.c:660
+msgid "The file is not a regular file or is not a text file."
+msgstr "แฟ้มนี้ไม่ใช่แฟ้มปกติ หรือไม่ใช่แฟ้มข้อความ"
+
+#: ../logview/src/logview-log.c:742
+msgid "This version of System Log does not support GZipped logs."
+msgstr "โปรแกรมอ่านปูมของระบบรุ่นนี้ ไม่รองรับปูมที่ GZip ไว้"
+
+#: ../logview/src/logview-loglist.c:316
+msgid "Loading..."
+msgstr "กำลังอ่าน..."
+
+#: ../logview/src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "แสดงรุ่นของโปรแกรม"
+
+#: ../logview/src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[LOGFILE...]"
+
+#: ../logview/src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - เรียกดูและเฝ้าสังเกตปูมต่างๆ"
+
+#: ../logview/src/logview-main.c:100
+msgid "Log Viewer"
+msgstr "โปรแกรมอ่านปูม"
+
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:762
+msgid "System Log Viewer"
+msgstr "โปรแกรมอ่านปูมของระบบ"
+
+#: ../logview/src/logview-window.c:212
+#, c-format
+msgid "last update: %s"
+msgstr "เปลี่ยนแปลงล่าสุด: %s"
+
+#: ../logview/src/logview-window.c:216
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d บรรทัด (%s) - %s"
+
+#: ../logview/src/logview-window.c:320
+msgid "Open Log"
+msgstr "เปิดปูม"
+
+#: ../logview/src/logview-window.c:359
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "เกิดข้อผิดพลาดขณะแสดงคำแนะนำ: %s"
+
+#: ../logview/src/logview-window.c:473
+msgid "Wrapped"
+msgstr "เริ่มหาใหม่"
+
+#: ../logview/src/logview-window.c:488
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
+msgid "Not found"
+msgstr "ไม่พบ"
+
+#: ../logview/src/logview-window.c:767
+msgid "A system log viewer for MATE."
+msgstr "โปรแกรมอ่านปูมของระบบสำหรับ MATE"
+
+#: ../logview/src/logview-window.c:810
+#: ../mate-dictionary/src/gdict-window.c:1284
+msgid "_File"
+msgstr "แ_ฟ้ม"
+
+#: ../logview/src/logview-window.c:813
+msgid "_Filters"
+msgstr "ตัว_กรอง"
+
+#: ../logview/src/logview-window.c:816
+msgid "_Open..."
+msgstr "_เปิด..."
+
+#: ../logview/src/logview-window.c:816
+msgid "Open a log from file"
+msgstr "เปิดแฟ้มปูม"
+
+#: ../logview/src/logview-window.c:818
+msgid "_Close"
+msgstr "ปิ_ด"
+
+#: ../logview/src/logview-window.c:818
+msgid "Close this log"
+msgstr "ปิดปูมนี้"
+
+#: ../logview/src/logview-window.c:820
+msgid "_Quit"
+msgstr "_ออก"
+
+#: ../logview/src/logview-window.c:820
+msgid "Quit the log viewer"
+msgstr "ออกจากโปรแกรมอ่านปูมระบบ"
+
+#: ../logview/src/logview-window.c:823
+msgid "_Copy"
+msgstr "_คัดลอก"
+
+#: ../logview/src/logview-window.c:823
+msgid "Copy the selection"
+msgstr "คัดลอกข้อความที่เลือกเข้าคลิปบอร์ด"
+
+#: ../logview/src/logview-window.c:825
+#: ../mate-dictionary/src/gdict-window.c:1305
+msgid "Select _All"
+msgstr "เลือกทั้ง_หมด"
+
+#: ../logview/src/logview-window.c:825
+msgid "Select the entire log"
+msgstr "เลือกเนื้อหาทั้งหมดของปูม"
+
+#: ../logview/src/logview-window.c:827
+msgid "_Find..."
+msgstr "_หา..."
+
+#: ../logview/src/logview-window.c:827
+msgid "Find a word or phrase in the log"
+msgstr "หาคำหรือวลีในปูม"
+
+#: ../logview/src/logview-window.c:830
+msgid "Bigger text size"
+msgstr "ขยายขนาดตัวอักษร"
+
+#: ../logview/src/logview-window.c:832
+msgid "Smaller text size"
+msgstr "ลดขนาดตัวอักษร"
+
+#: ../logview/src/logview-window.c:834
+msgid "Normal text size"
+msgstr "ขนาดตัวอักษรปกติ"
+
+#: ../logview/src/logview-window.c:837
+msgid "Manage Filters"
+msgstr "จัดการตัวกรอง"
+
+#: ../logview/src/logview-window.c:837
+msgid "Manage filters"
+msgstr "จัดการตัวกรอง"
+
+#: ../logview/src/logview-window.c:840
+msgid "Open the help contents for the log viewer"
+msgstr "เปิดสารบัญเอกสารแนะนำวิธีใช้โปรแกรมอ่านปูมระบบ"
+
+#: ../logview/src/logview-window.c:842
+#: ../mate-dictionary/src/gdict-applet.c:1188
+#: ../mate-dictionary/src/gdict-window.c:1340
+msgid "_About"
+msgstr "เ_กี่ยวกับ"
+
+#: ../logview/src/logview-window.c:842
+msgid "Show the about dialog for the log viewer"
+msgstr "แสดงข้อมูลเกี่ยวกับโปรแกรมอ่านปูมระบบ"
+
+#: ../logview/src/logview-window.c:847
+msgid "_Statusbar"
+msgstr "แถบ_สถานะ"
+
+#: ../logview/src/logview-window.c:847
+msgid "Show Status Bar"
+msgstr "แสดงแถบสถานะ"
+
+#: ../logview/src/logview-window.c:849
+msgid "Side _Pane"
+msgstr "แถบ_ข้าง"
+
+#: ../logview/src/logview-window.c:849
+msgid "Show Side Pane"
+msgstr "แสดงแถบด้านข้าง"
+
+#: ../logview/src/logview-window.c:851
+msgid "Show matches only"
+msgstr "แสดงรายการที่ตรงเท่านั้น"
+
+#: ../logview/src/logview-window.c:851
+msgid "Only show lines that match one of the given filters"
+msgstr "แสดงเฉพาะบรรทัดที่ตรงกับตัวกรองเท่านั้น"
+
+#: ../logview/src/logview-window.c:983
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "ไม่สามารถอ่านจาก \"%s\""
+
+#: ../logview/src/logview-window.c:1413
+msgid "Version: "
+msgstr "รุ่น: "
+
+#: ../logview/src/logview-window.c:1524
+msgid "Could not open the following files:"
+msgstr "ไม่สามารถเปิดแฟ้มต่อไปนี้:"
 
 #: ../mate-dictionary/data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
@@ -588,7 +1841,7 @@ msgstr "เซิร์ฟเวอร์พจนานุกรมปริย
 
 #: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:1
 msgid "MATE Dictionary"
-msgstr ""
+msgstr "พจนานุกรมของ MATE"
 
 #: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:2
 msgid "Check word definitions and spellings in an online dictionary"
@@ -596,7 +1849,7 @@ msgstr "หาความหมายและการสะกดของค
 
 #: ../mate-dictionary/data/mate-dictionary.appdata.xml.in.h:1
 msgid "A dictionary for MATE Desktop"
-msgstr ""
+msgstr "โปรแกรมพจนานุกรมสำหรับเดสก์ท็อปของ MATE"
 
 #: ../mate-dictionary/data/mate-dictionary.appdata.xml.in.h:2
 msgid ""
@@ -605,6 +1858,22 @@ msgid ""
 " add your own sources, while you can select specific servers for a specific "
 "query. </p>"
 msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:1
+msgid "Dictionary Applet Factory"
+msgstr "โรงงานแอพเพล็ตพจนานุกรม"
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:2
+msgid "Factory for the dictionary applet"
+msgstr "โรงงานสำหรับแอพเพล็ตพจนานุกรม"
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:3
+msgid "Dictionary Look up"
+msgstr "ค้นหาในพจนานุกรม"
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:4
+msgid "Look up words in a dictionary"
+msgstr "ค้นหาคำในพจนานุกรม"
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:1
 msgid "The default database to use"
@@ -643,10 +1912,6 @@ msgstr "แหล่งพจนานุกรมที่ใช้"
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr "ชื่อของแหล่งพจนานุกรมที่ใช้ในการค้นหาความหมายคำ"
-
-#: ../mate-dictionary/data/spanish.desktop.in.h:1
-msgid "Spanish Dictionaries"
-msgstr "พจนานุกรมสเปน"
 
 #: ../mate-dictionary/data/thai.desktop.in.h:1
 msgid "Longdo Thai-English Dictionaries"
@@ -813,13 +2078,6 @@ msgstr "ล้างรายการฐานข้อมูลที่มี
 msgid "Error while matching"
 msgstr "เกิดข้อผิดพลาดขณะค้นหา"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
-#: ../logview/logview-window.c:486
-msgid "Not found"
-msgstr "ไม่พบ"
-
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1327
 msgid "F_ind:"
 msgstr "_หา:"
@@ -858,14 +2116,9 @@ msgstr "ชื่อแฟ้ม"
 msgid "The filename used by this dictionary source"
 msgstr "ชื่อแฟ้มที่แหล่งพจนานุกรมนี้ใช้"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:246
-#: ../gsearchtool/gsearchtool.c:2403
-msgid "Name"
-msgstr "ชื่อ"
-
 #: ../mate-dictionary/libgdict/gdict-source.c:247
 msgid "The display name of this dictionary source"
-msgstr ""
+msgstr "ชื่อเรียกของแหล่งพจนานุกรมนี้"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:260
 msgid "Description"
@@ -882,7 +2135,7 @@ msgstr "ฐานข้อมูล"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:275
 msgid "The default database of this dictionary source"
-msgstr ""
+msgstr "ฐานข้อมูลปริยายของแหล่งพจนานุกรมนี้"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:288
 #: ../mate-dictionary/libgdict/gdict-speller.c:395
@@ -891,7 +2144,7 @@ msgstr "กลวิธีการค้นหา"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:289
 msgid "The default strategy of this dictionary source"
-msgstr ""
+msgstr "กลวิธีค้นหาปริยายของแหล่งพจนานุกรมนี้"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:302
 msgid "Transport"
@@ -1015,9 +2268,9 @@ msgid "Look up words in dictionaries"
 msgstr "ค้นหาคำในพจนานุกรมต่างๆ"
 
 #: ../mate-dictionary/src/gdict-about.c:78
-#: ../mate-dictionary/src/gdict-app.c:379
+#: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:604
-#: ../mate-dictionary/src/gdict-window.c:1968
+#: ../mate-dictionary/src/gdict-window.c:1974
 msgid "Dictionary"
 msgstr "พจนานุกรม"
 
@@ -1054,55 +2307,43 @@ msgid ""
 "%s"
 msgstr "เกิดข้อผิดพลาดขณะค้นความหมายของคำว่า \"%s\":\n%s"
 
-#: ../mate-dictionary/src/gdict-app.c:337
-#: ../mate-dictionary/src/gdict-app.c:351
+#: ../mate-dictionary/src/gdict-app.c:333
+#: ../mate-dictionary/src/gdict-app.c:343
 msgid "Words to look up"
 msgstr "คำที่จะค้นหา"
 
-#: ../mate-dictionary/src/gdict-app.c:337
-#: ../mate-dictionary/src/gdict-app.c:339
-#: ../mate-dictionary/src/gdict-app.c:351
+#: ../mate-dictionary/src/gdict-app.c:333
+#: ../mate-dictionary/src/gdict-app.c:335
+#: ../mate-dictionary/src/gdict-app.c:343
 msgid "word"
 msgstr "คำ"
 
-#: ../mate-dictionary/src/gdict-app.c:339
+#: ../mate-dictionary/src/gdict-app.c:335
 msgid "Words to match"
 msgstr "คำที่จะค้นหา"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:337
 msgid "Dictionary source to use"
 msgstr "แหล่งพจนานุกรมที่จะใช้"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:337
 msgid "source"
 msgstr "แหล่ง"
 
-#: ../mate-dictionary/src/gdict-app.c:343
-msgid "Show available dictionary sources"
-msgstr "แสดงแหล่งพจนานุกรมทั้งหมดที่มี"
-
-#: ../mate-dictionary/src/gdict-app.c:345
+#: ../mate-dictionary/src/gdict-app.c:339
 msgid "Print result to the console"
 msgstr "แสดงผลลัพธ์ออกทางคอนโซล"
 
-#: ../mate-dictionary/src/gdict-app.c:347
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "Database to use"
 msgstr "ฐานข้อมูลที่จะใช้"
 
-#: ../mate-dictionary/src/gdict-app.c:347
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "db"
 msgstr "db"
 
-#: ../mate-dictionary/src/gdict-app.c:349
-msgid "Strategy to use"
-msgstr "กลวิธีที่จะใช้"
-
-#: ../mate-dictionary/src/gdict-app.c:349
-msgid "strat"
-msgstr "strat"
-
 #. create the new option context
-#: ../mate-dictionary/src/gdict-app.c:361
+#: ../mate-dictionary/src/gdict-app.c:353
 msgid " - Look up words in dictionaries"
 msgstr " - ค้นหาคำในพจนานุกรมต่างๆ"
 
@@ -1179,64 +2420,59 @@ msgid "Dictionary entry"
 msgstr "ช่องค้นพจนานุกรม"
 
 #: ../mate-dictionary/src/gdict-applet.c:715
-#: ../mate-dictionary/src/gdict-window.c:1097
+#: ../mate-dictionary/src/gdict-window.c:1103
 msgid "Dictionary Preferences"
 msgstr "ปรับแต่งพจนานุกรม"
 
 #: ../mate-dictionary/src/gdict-applet.c:739
 #: ../mate-dictionary/src/gdict-pref-dialog.c:495
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
-#: ../mate-dictionary/src/gdict-window.c:1244
+#: ../mate-dictionary/src/gdict-window.c:1250
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "เกิดข้อผิดพลาดขณะแสดงคำแนะนำ"
 
-#: ../mate-dictionary/src/gdict-applet.c:893
+#: ../mate-dictionary/src/gdict-applet.c:878
 #: ../mate-dictionary/src/gdict-window.c:519
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "ไม่มีแหล่งพจนานุกรมที่ชื่อ '%s'"
 
-#: ../mate-dictionary/src/gdict-applet.c:897
+#: ../mate-dictionary/src/gdict-applet.c:882
 #: ../mate-dictionary/src/gdict-window.c:523
 msgid "Unable to find dictionary source"
 msgstr "หาแหล่งพจนานุกรมไม่พบ"
 
-#: ../mate-dictionary/src/gdict-applet.c:913
+#: ../mate-dictionary/src/gdict-applet.c:898
 #: ../mate-dictionary/src/gdict-window.c:539
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "ไม่มี context สำหรับแหล่ง '%s' ให้ใช้"
 
-#: ../mate-dictionary/src/gdict-applet.c:917
+#: ../mate-dictionary/src/gdict-applet.c:902
 #: ../mate-dictionary/src/gdict-window.c:543
 msgid "Unable to create a context"
 msgstr "ไม่สามารถสร้าง context ได้"
 
-#: ../mate-dictionary/src/gdict-applet.c:1198
+#: ../mate-dictionary/src/gdict-applet.c:1170
 msgid "_Look Up Selected Text"
 msgstr "_หาข้อความที่เลือก"
 
-#: ../mate-dictionary/src/gdict-applet.c:1201
+#: ../mate-dictionary/src/gdict-applet.c:1173
 msgid "Cl_ear"
 msgstr "_ล้าง"
 
-#: ../mate-dictionary/src/gdict-applet.c:1204
+#: ../mate-dictionary/src/gdict-applet.c:1176
 msgid "_Print"
 msgstr "_พิมพ์"
 
-#: ../mate-dictionary/src/gdict-applet.c:1207
+#: ../mate-dictionary/src/gdict-applet.c:1179
 msgid "_Save"
 msgstr "_บันทึก"
 
-#: ../mate-dictionary/src/gdict-applet.c:1210
+#: ../mate-dictionary/src/gdict-applet.c:1182
 msgid "Preferences"
-msgstr ""
-
-#: ../mate-dictionary/src/gdict-applet.c:1216
-#: ../mate-dictionary/src/gdict-window.c:1334 ../logview/logview-window.c:840
-msgid "_About"
-msgstr "เ_กี่ยวกับ"
+msgstr "การตั้งค่า"
 
 #: ../mate-dictionary/src/gdict-common.c:80
 #, c-format
@@ -1282,7 +2518,7 @@ msgstr "ลบแหล่งพจนานุกรมที่เลือก
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:654
 msgid "Edit the currently selected dictionary source"
-msgstr ""
+msgstr "แก้ไขแหล่งพจนานุกรมที่เลือกอยู่"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:662
 msgid "Set the font used for printing the definitions"
@@ -1325,179 +2561,171 @@ msgstr[0] "พบ %d ความหมาย"
 msgid "%s - Dictionary"
 msgstr "%s - พจนานุกรม"
 
-#: ../mate-dictionary/src/gdict-window.c:1278 ../logview/logview-window.c:808
-msgid "_File"
-msgstr "แ_ฟ้ม"
-
-#: ../mate-dictionary/src/gdict-window.c:1281
+#: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_Go"
 msgstr "ไ_ป"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1285
+#: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_New"
 msgstr "ใ_หม่"
 
-#: ../mate-dictionary/src/gdict-window.c:1286
+#: ../mate-dictionary/src/gdict-window.c:1292
 msgid "New look up"
 msgstr "การค้นหาใหม่"
 
-#: ../mate-dictionary/src/gdict-window.c:1287
+#: ../mate-dictionary/src/gdict-window.c:1293
 msgid "_Save a Copy..."
 msgstr "_บันทึกสำเนา..."
 
-#: ../mate-dictionary/src/gdict-window.c:1289
+#: ../mate-dictionary/src/gdict-window.c:1295
 msgid "P_review..."
 msgstr "ตัว_อย่างก่อนพิมพ์..."
 
-#: ../mate-dictionary/src/gdict-window.c:1290
+#: ../mate-dictionary/src/gdict-window.c:1296
 msgid "Preview this document"
 msgstr "ดูตัวอย่างก่อนพิมพ์เอกสารนี้"
 
-#: ../mate-dictionary/src/gdict-window.c:1291
+#: ../mate-dictionary/src/gdict-window.c:1297
 msgid "_Print..."
 msgstr "_พิมพ์..."
 
-#: ../mate-dictionary/src/gdict-window.c:1292
+#: ../mate-dictionary/src/gdict-window.c:1298
 msgid "Print this document"
 msgstr "พิมพ์เอกสารนี้"
 
-#: ../mate-dictionary/src/gdict-window.c:1299 ../logview/logview-window.c:823
-msgid "Select _All"
-msgstr "เลือกทั้ง_หมด"
-
-#: ../mate-dictionary/src/gdict-window.c:1302
+#: ../mate-dictionary/src/gdict-window.c:1308
 msgid "Find a word or phrase in the document"
 msgstr "หาคำหรือวลีในเอกสาร"
 
-#: ../mate-dictionary/src/gdict-window.c:1304
+#: ../mate-dictionary/src/gdict-window.c:1310
 msgid "Find Ne_xt"
 msgstr "หาต่_อ"
 
-#: ../mate-dictionary/src/gdict-window.c:1306
+#: ../mate-dictionary/src/gdict-window.c:1312
 msgid "Find Pre_vious"
 msgstr "หา_ก่อนหน้า"
 
-#: ../mate-dictionary/src/gdict-window.c:1308
+#: ../mate-dictionary/src/gdict-window.c:1314
 msgid "_Preferences"
 msgstr "_ปรับแต่ง"
 
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1312
+#: ../mate-dictionary/src/gdict-window.c:1318
 msgid "_Previous Definition"
 msgstr "ความหมาย_ก่อนหน้า"
 
-#: ../mate-dictionary/src/gdict-window.c:1313
+#: ../mate-dictionary/src/gdict-window.c:1319
 msgid "Go to the previous definition"
 msgstr "ไปยังความหมายก่อนหน้า"
 
-#: ../mate-dictionary/src/gdict-window.c:1314
+#: ../mate-dictionary/src/gdict-window.c:1320
 msgid "_Next Definition"
 msgstr "ความหมาย_ถัดไป"
 
-#: ../mate-dictionary/src/gdict-window.c:1315
+#: ../mate-dictionary/src/gdict-window.c:1321
 msgid "Go to the next definition"
 msgstr "ไปยังความหมายถัดไป"
 
-#: ../mate-dictionary/src/gdict-window.c:1316
+#: ../mate-dictionary/src/gdict-window.c:1322
 msgid "_First Definition"
 msgstr "ความหมายแ_รก"
 
-#: ../mate-dictionary/src/gdict-window.c:1317
+#: ../mate-dictionary/src/gdict-window.c:1323
 msgid "Go to the first definition"
 msgstr "ไปยังความหมายแรก"
 
-#: ../mate-dictionary/src/gdict-window.c:1318
+#: ../mate-dictionary/src/gdict-window.c:1324
 msgid "_Last Definition"
 msgstr "ความหมายสุด_ท้าย"
 
-#: ../mate-dictionary/src/gdict-window.c:1319
+#: ../mate-dictionary/src/gdict-window.c:1325
 msgid "Go to the last definition"
 msgstr "ไปยังความหมายสุดท้าย"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1322
+#: ../mate-dictionary/src/gdict-window.c:1328
 msgid "Similar _Words"
 msgstr "คำ_คล้าย"
 
-#: ../mate-dictionary/src/gdict-window.c:1324
+#: ../mate-dictionary/src/gdict-window.c:1330
 msgid "Dictionary Sources"
 msgstr "แหล่งพจนานุกรม"
 
-#: ../mate-dictionary/src/gdict-window.c:1326
+#: ../mate-dictionary/src/gdict-window.c:1332
 msgid "Available _Databases"
 msgstr "ฐาน_ข้อมูลที่มี"
 
-#: ../mate-dictionary/src/gdict-window.c:1328
+#: ../mate-dictionary/src/gdict-window.c:1334
 msgid "Available St_rategies"
 msgstr "_กลวิธีการค้นหาที่มี"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1345
+#: ../mate-dictionary/src/gdict-window.c:1351
 msgid "_Sidebar"
 msgstr "แถบ_ข้าง"
 
-#: ../mate-dictionary/src/gdict-window.c:1347
+#: ../mate-dictionary/src/gdict-window.c:1353
 msgid "S_tatusbar"
 msgstr "แถบ_สถานะ"
 
-#: ../mate-dictionary/src/gdict-window.c:1412
+#: ../mate-dictionary/src/gdict-window.c:1418
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "เลือกแหล่งพจนานุกรม `%s' แล้ว"
 
-#: ../mate-dictionary/src/gdict-window.c:1433
+#: ../mate-dictionary/src/gdict-window.c:1439
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "เลือกกลวิธีการค้นหา `%s' แล้ว"
 
-#: ../mate-dictionary/src/gdict-window.c:1453
+#: ../mate-dictionary/src/gdict-window.c:1459
 #, c-format
 msgid "Database `%s' selected"
 msgstr "เลือกฐานข้อมูล `%s' แล้ว"
 
-#: ../mate-dictionary/src/gdict-window.c:1473
+#: ../mate-dictionary/src/gdict-window.c:1479
 #, c-format
 msgid "Word `%s' selected"
 msgstr "เลือกคำ `%s' แล้ว"
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1498
+#: ../mate-dictionary/src/gdict-window.c:1504
 msgid "Double-click on the word to look up"
 msgstr "ดับเบิลคลิกที่คำที่คุณต้องการค้นหาความหมาย"
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1504
+#: ../mate-dictionary/src/gdict-window.c:1510
 msgid "Double-click on the matching strategy to use"
 msgstr "ดับเบิลคลิกที่กลวิธีการค้นหาที่จะใช้"
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1509
+#: ../mate-dictionary/src/gdict-window.c:1515
 msgid "Double-click on the source to use"
 msgstr "ดับเบิลคลิกที่แหล่งพจนานุกรมที่จะใช้"
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1518
+#: ../mate-dictionary/src/gdict-window.c:1524
 msgid "Double-click on the database to use"
 msgstr "ดับเบิลคลิกที่ฐานข้อมูลที่จะใช้"
 
-#: ../mate-dictionary/src/gdict-window.c:1770
+#: ../mate-dictionary/src/gdict-window.c:1776
 msgid "Look _up:"
 msgstr "_ค้นหา:"
 
-#: ../mate-dictionary/src/gdict-window.c:1849
+#: ../mate-dictionary/src/gdict-window.c:1855
 msgid "Similar words"
 msgstr "คำคล้าย"
 
-#: ../mate-dictionary/src/gdict-window.c:1862
+#: ../mate-dictionary/src/gdict-window.c:1868
 msgid "Available dictionaries"
 msgstr "พจนานุกรมที่มี"
 
-#: ../mate-dictionary/src/gdict-window.c:1880
+#: ../mate-dictionary/src/gdict-window.c:1886
 msgid "Available strategies"
 msgstr "กลวิธีการค้นหาที่มี"
 
-#: ../mate-dictionary/src/gdict-window.c:1896
+#: ../mate-dictionary/src/gdict-window.c:1902
 msgid "Dictionary sources"
 msgstr "แหล่งพจนานุกรม"
 
@@ -1542,80 +2770,154 @@ msgstr "พจนานุกรม"
 msgid "Strategies"
 msgstr "กลวิธีการค้นหา"
 
-#: ../mate-screenshot/mate-screenshot.c:133
+#: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:1
+msgid "A screenshot utility for MATE Desktop"
+msgstr "ความสามารถในการถ่ายภาพหน้าจอสำหรับเดสก์ท็อปของ MATE"
+
+#: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Screenshot is a simple utility that lets you capture screenshots of"
+" your desktop or of application windows. You can select to copy them to the "
+"system clipboard or save them in Portable Network Graphics (.png) image "
+"format. </p>"
+msgstr "<p> โปรแกรมจับภาพหน้าจอของ MATE เป็นโปรแกรมอรรถประโยชน์อย่างง่ายที่ให้คุณจับภาพหน้าจอของเดสก์ท็อปของคุณ หรือของหน้าต่างโปรแกรมก็ได้ คุณสามารถเลือกที่จะคัดลอกพวกมันไปไว้ที่คลิปบอร์ดของระบบ หรือบันทึกพวกมันในรูปแบบของภาพแบบ Portable Network Graphics (.png) </p>"
+
+#: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
+#: ../mate-screenshot/src/mate-screenshot.c:516
+#: ../mate-screenshot/src/mate-screenshot.c:524
+msgid "Take Screenshot"
+msgstr "บันทึกภาพหน้าจอ"
+
+#: ../mate-screenshot/data/mate-screenshot.desktop.in.h:2
+msgid "Save images of your desktop or individual windows"
+msgstr "บันทึกภาพของเดสก์ท็อปหรือหน้าต่างที่กำหนด"
+
+#: ../mate-screenshot/data/mate-screenshot.ui.h:1
+msgid "Save Screenshot"
+msgstr "บันทึกภาพหน้าจอ"
+
+#: ../mate-screenshot/data/mate-screenshot.ui.h:2
+msgid "C_opy to Clipboard"
+msgstr "_คัดลอกไปยังคลิปบอร์ด"
+
+#: ../mate-screenshot/data/mate-screenshot.ui.h:4
+msgid "Save in _folder:"
+msgstr "บันทึกในโฟ_ลเดอร์:"
+
+#: ../mate-screenshot/data/mate-screenshot.ui.h:5
+msgid "*"
+msgstr "*"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:1
+msgid "Screenshot delay"
+msgstr "เวลาหน่วงก่อนจับภาพ"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:2
+msgid "The number of seconds to wait before taking the screenshot."
+msgstr "จำนวนวินาทีที่จะหยุดคอยก่อนที่จะจับภาพ"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:3
+msgid "Screenshot directory"
+msgstr "โฟลเดอร์เก็บภาพหน้าจอ"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:4
+msgid "The directory the last screenshot was saved in."
+msgstr "โฟลเดอร์ที่เก็บภาพหน้าจอครั้งล่าสุด"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:5
+msgid "Include Border"
+msgstr "รวมกรอบหน้าต่าง"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:6
+msgid "Include the window manager border along with the screenshot"
+msgstr "รวมกรอบหน้าต่างในภาพหน้าต่างที่จับด้วย"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:7
+msgid "Include Pointer"
+msgstr "รวมตัวชี้เมาส์"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:8
+msgid "Include the pointer in the screenshot"
+msgstr "รวมตัวชี้เมาส์ในภาพหน้าจอที่จับด้วย"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:9
+msgid "Border Effect"
+msgstr "เอฟเฟกต์กรอบหน้าต่าง"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:10
+msgid ""
+"Effect to add to the outside of a border. Possible values are \"shadow\", "
+"\"none\", and \"border\"."
+msgstr "เอฟเฟกต์ที่จะเพิ่มให้กับขอบนอกกรอบหน้าต่าง ค่าที่เป็นไปได้คือ \"shadow\", \"none\", และ \"border\""
+
+#: ../mate-screenshot/src/mate-screenshot.c:133
 msgid "Error loading the help page"
 msgstr "เกิดข้อผิดพลาดขณะเปิดหน้าแนะนำวิธีใช้"
 
-#: ../mate-screenshot/mate-screenshot.c:245
+#: ../mate-screenshot/src/mate-screenshot.c:245
 msgid "None"
 msgstr "ไม่มี"
 
-#: ../mate-screenshot/mate-screenshot.c:246
+#: ../mate-screenshot/src/mate-screenshot.c:246
 msgid "Drop shadow"
 msgstr "เงาตกกระทบ"
 
-#: ../mate-screenshot/mate-screenshot.c:247
+#: ../mate-screenshot/src/mate-screenshot.c:247
 msgid "Border"
 msgstr "กรอบ"
 
 #. * Include pointer *
-#: ../mate-screenshot/mate-screenshot.c:351
+#: ../mate-screenshot/src/mate-screenshot.c:351
 msgid "Include _pointer"
 msgstr "จับภาพตัว_ชี้เมาส์ด้วย"
 
 #. * Include window border *
-#: ../mate-screenshot/mate-screenshot.c:360
+#: ../mate-screenshot/src/mate-screenshot.c:360
 msgid "Include the window _border"
 msgstr "จับภาพ_กรอบหน้าต่างด้วย"
 
-#: ../mate-screenshot/mate-screenshot.c:375
+#: ../mate-screenshot/src/mate-screenshot.c:375
 msgid "Apply _effect:"
 msgstr "เพิ่มเ_อฟเฟกต์:"
 
-#: ../mate-screenshot/mate-screenshot.c:437
+#: ../mate-screenshot/src/mate-screenshot.c:437
 msgid "Grab the whole _desktop"
 msgstr "จับภาพพื้นโ_ต๊ะทั้งหมด"
 
-#: ../mate-screenshot/mate-screenshot.c:449
+#: ../mate-screenshot/src/mate-screenshot.c:449
 msgid "Grab the current _window"
 msgstr "จับภาพห_น้าต่างปัจจุบัน"
 
-#: ../mate-screenshot/mate-screenshot.c:461
+#: ../mate-screenshot/src/mate-screenshot.c:461
 msgid "Select _area to grab"
 msgstr "เลือก_พื้นที่ที่จะจับภาพ"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/mate-screenshot.c:478
+#: ../mate-screenshot/src/mate-screenshot.c:478
 msgid "Grab _after a delay of"
 msgstr "จับภาพห_ลังจากรอคอยเป็นเวลา"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/mate-screenshot.c:498
-#: ../mate-screenshot/mate-screenshot.c:1273
+#: ../mate-screenshot/src/mate-screenshot.c:498
+#: ../mate-screenshot/src/mate-screenshot.c:1263
 msgid "seconds"
 msgstr "วินาที"
 
-#: ../mate-screenshot/mate-screenshot.c:516
-#: ../mate-screenshot/mate-screenshot.c:524
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:1
-msgid "Take Screenshot"
-msgstr "บันทึกภาพหน้าจอ"
-
-#: ../mate-screenshot/mate-screenshot.c:525
+#: ../mate-screenshot/src/mate-screenshot.c:525
 msgid "Effects"
 msgstr "เอฟเฟกต์"
 
-#: ../mate-screenshot/mate-screenshot.c:530
+#: ../mate-screenshot/src/mate-screenshot.c:530
 msgid "Take _Screenshot"
 msgstr "บันทึก_ภาพหน้าจอ"
 
-#: ../mate-screenshot/mate-screenshot.c:650
+#: ../mate-screenshot/src/mate-screenshot.c:650
 msgid "Error while saving screenshot"
 msgstr "เกิดข้อผิดพลาดขณะบันทึกภาพหน้าจอ"
 
-#: ../mate-screenshot/mate-screenshot.c:653
+#: ../mate-screenshot/src/mate-screenshot.c:653
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -1623,1427 +2925,132 @@ msgid ""
 " Please choose another location and retry."
 msgstr "ไม่สามารถบันทึกภาพหน้าจอลงใน %s\n ข้อผิดพลาดคือ %s\n กรุณาเลือกแหล่งเก็บอื่นแล้วลองใหม่"
 
-#: ../mate-screenshot/mate-screenshot.c:785
+#: ../mate-screenshot/src/mate-screenshot.c:785
 msgid "Screenshot taken"
 msgstr "จับภาพหน้าจอเสร็จแล้ว"
 
-#: ../mate-screenshot/mate-screenshot.c:840
+#: ../mate-screenshot/src/mate-screenshot.c:840
 msgid "Unable to take a screenshot of the current window"
 msgstr "จับภาพหน้าต่างปัจจุบันไม่สำเร็จ"
 
-#: ../mate-screenshot/mate-screenshot.c:893
-#, c-format
-msgid "Screenshot-%s.png"
-msgstr "Screenshot-%s.png"
-
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if a specific window is
-#. * taken
-#: ../mate-screenshot/mate-screenshot.c:900
-#, c-format
-msgid "Screenshot-%s-%d.png"
-msgstr "Screenshot-%s-%d.png"
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format (eg, like
+#. * in France: 20:10).
+#: ../mate-screenshot/src/mate-screenshot.c:893
+msgid "%Y-%m-%d %H:%M:%S"
+msgstr "%d-%m-%Y %H:%M:%S"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/mate-screenshot.c:910
-#: ../mate-screenshot/screenshot-dialog.c:369
-#: ../mate-screenshot/screenshot-save.c:196
-msgid "Screenshot.png"
-msgstr "Screenshot.png"
+#: ../mate-screenshot/src/mate-screenshot.c:900
+#, c-format
+msgid "Screenshot at %s.png"
+msgstr "ภาพหน้าจอที่จับได้เมื่อเวลา %s.png"
 
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/mate-screenshot.c:917
+#: ../mate-screenshot/src/mate-screenshot.c:907
 #, c-format
-msgid "Screenshot-%d.png"
-msgstr "Screenshot-%d.png"
+msgid "Screenshot at %s - %d.png"
+msgstr "ภาพหน้าจอที่จับได้เมื่อ %s - %d.png"
 
-#: ../mate-screenshot/mate-screenshot.c:1269
+#: ../mate-screenshot/src/mate-screenshot.c:1259
 msgid "Grab a window instead of the entire screen"
 msgstr "จับภาพเฉพาะหน้าต่างหนึ่งแทนที่จะจับทั้งจอ"
 
-#: ../mate-screenshot/mate-screenshot.c:1270
+#: ../mate-screenshot/src/mate-screenshot.c:1260
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "จับภาพเฉพาะพื้นที่หนึ่งบนหน้าจอแทนที่จะจับทั้งจอ"
 
-#: ../mate-screenshot/mate-screenshot.c:1271
+#: ../mate-screenshot/src/mate-screenshot.c:1261
 msgid "Include the window border with the screenshot"
 msgstr "จับภาพกรอบหน้าต่างด้วย"
 
-#: ../mate-screenshot/mate-screenshot.c:1272
+#: ../mate-screenshot/src/mate-screenshot.c:1262
 msgid "Remove the window border from the screenshot"
 msgstr "ลบกรอบหน้าต่างออกจากภาพที่จับ"
 
-#: ../mate-screenshot/mate-screenshot.c:1273
+#: ../mate-screenshot/src/mate-screenshot.c:1263
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "หน่วงเวลา [เป็นวินาที] ก่อนจับภาพ"
 
-#: ../mate-screenshot/mate-screenshot.c:1274
+#: ../mate-screenshot/src/mate-screenshot.c:1264
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "เอฟเฟกต์ที่จะเพิ่มให้กับกรอบ (เงา, กรอบ หรือไม่มี)"
 
-#: ../mate-screenshot/mate-screenshot.c:1274
+#: ../mate-screenshot/src/mate-screenshot.c:1264
 msgid "effect"
 msgstr "เอฟเฟกต์"
 
-#: ../mate-screenshot/mate-screenshot.c:1275
+#: ../mate-screenshot/src/mate-screenshot.c:1265
 msgid "Interactively set options"
 msgstr "กำหนดตัวเลือกแบบโต้ตอบ"
 
-#: ../mate-screenshot/mate-screenshot.c:1284
+#: ../mate-screenshot/src/mate-screenshot.c:1274
 msgid "Take a picture of the screen"
 msgstr "จับภาพหน้าจอ"
 
-#: ../mate-screenshot/mate-screenshot.c:1302
+#: ../mate-screenshot/src/mate-screenshot.c:1292
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"
 msgstr "ตัวเลือกขัดแย้งกัน: --window และ --area ไม่สามารถใช้พร้อมกันได้\n"
 
-#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:1
-msgid "A screenshot utility for MATE Desktop"
-msgstr ""
-
-#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:2
-msgid ""
-"<p> MATE Screenshot is a simple utility that lets you capture screenshots of"
-" your desktop or of application windows. You can select to copy them to the "
-"system clipboard or save them in Portable Network Graphics (.png) image "
-"format. </p>"
-msgstr ""
-
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:2
-msgid "Save images of your desktop or individual windows"
-msgstr "บันทึกภาพของเดสก์ท็อปหรือหน้าต่างที่กำหนด"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:1
-msgid "Save Screenshot"
-msgstr "บันทึกภาพหน้าจอ"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:2
-msgid "C_opy to Clipboard"
-msgstr "_คัดลอกไปยังคลิปบอร์ด"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:3
-#: ../logview/data/logview-filter.ui.h:1
-msgid "_Name:"
-msgstr "_ชื่อ:"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:4
-msgid "Save in _folder:"
-msgstr "บันทึกในโฟ_ลเดอร์:"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:5
-msgid "*"
-msgstr "*"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:1
-msgid "Screenshot delay"
-msgstr "เวลาหน่วงก่อนจับภาพ"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:2
-msgid "The number of seconds to wait before taking the screenshot."
-msgstr "จำนวนวินาทีที่จะหยุดคอยก่อนที่จะจับภาพ"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:3
-msgid "Screenshot directory"
-msgstr "โฟลเดอร์เก็บภาพหน้าจอ"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:4
-msgid "The directory the last screenshot was saved in."
-msgstr "โฟลเดอร์ที่เก็บภาพหน้าจอครั้งล่าสุด"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:5
-msgid "Include Border"
-msgstr "รวมกรอบหน้าต่าง"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:6
-msgid "Include the window manager border along with the screenshot"
-msgstr "รวมกรอบหน้าต่างในภาพหน้าต่างที่จับด้วย"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:7
-msgid "Include Pointer"
-msgstr "รวมตัวชี้เมาส์"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:8
-msgid "Include the pointer in the screenshot"
-msgstr "รวมตัวชี้เมาส์ในภาพหน้าจอที่จับด้วย"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:9
-msgid "Border Effect"
-msgstr "เอฟเฟกต์กรอบหน้าต่าง"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:10
-msgid ""
-"Effect to add to the outside of a border. Possible values are \"shadow\", "
-"\"none\", and \"border\"."
-msgstr "เอฟเฟกต์ที่จะเพิ่มให้กับขอบนอกกรอบหน้าต่าง ค่าที่เป็นไปได้คือ \"shadow\", \"none\", และ \"border\""
-
-#: ../mate-screenshot/screenshot-dialog.c:246
+#: ../mate-screenshot/src/screenshot-dialog.c:246
 #, c-format
 msgid ""
 "Error loading UI definition file for the screenshot program: \n"
 "%s\n"
 "\n"
 "Please check your installation of mate-utils."
-msgstr ""
+msgstr "มีปัญหาในการโหลดแฟ้มโครงแบบส่วนติดต่อผู้ใช้สำหรับโปรแกรมจับภาพหน้าจอ:\n%s\n\nกรุณาตรวจสอบการติดตั้ง mate-utils ของคุณ"
 
-#: ../mate-screenshot/screenshot-dialog.c:269
+#: ../mate-screenshot/src/screenshot-dialog.c:269
 msgid "Select a folder"
 msgstr "เลือกโฟลเดอร์"
 
-#: ../mate-screenshot/screenshot-save.c:57
+#: ../mate-screenshot/src/screenshot-dialog.c:369
+#: ../mate-screenshot/src/screenshot-save.c:196
+msgid "Screenshot.png"
+msgstr "Screenshot.png"
+
+#: ../mate-screenshot/src/screenshot-save.c:57
 #, c-format
 msgid ""
 "Unable to clear the temporary folder:\n"
 "%s"
 msgstr "ไม่สามารถล้างโฟลเดอร์ทำงานชั่วคราว:\n%s"
 
-#: ../mate-screenshot/screenshot-save.c:95
+#: ../mate-screenshot/src/screenshot-save.c:95
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
 msgstr "โพรเซสลูกที่บันทึกแฟ้มหยุดทำงานกระทันหัน จึงไม่สามารถเขียนแฟ้มภาพหน้าจอลงดิสก์ได้"
 
-#: ../mate-screenshot/screenshot-save.c:223
+#: ../mate-screenshot/src/screenshot-save.c:223
 msgid "Unknown error saving screenshot to disk"
 msgstr "เกิดข้อผิดพลาดที่ไม่รู้จักระหว่างบันทึกภาพหน้าจอ"
 
 #. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-#: ../mate-screenshot/screenshot-utils.c:998
+#: ../mate-screenshot/src/screenshot-utils.c:998
 msgid "Untitled Window"
 msgstr "หน้าต่างไม่มีชื่อ"
 
-#: ../mate-screenshot/screenshot-xfer.c:72
+#: ../mate-screenshot/src/screenshot-xfer.c:72
 msgid "File already exists"
 msgstr "มีแฟ้มอยู่แล้ว"
 
-#: ../mate-screenshot/screenshot-xfer.c:75
+#: ../mate-screenshot/src/screenshot-xfer.c:75
 #, c-format
 msgid "The file \"%s\" already exists. Would you like to replace it?"
 msgstr "มีแฟ้มชื่อ \"%s\" อยู่ก่อนแล้ว จะเขียนทับหรือไม่?"
 
-#: ../mate-screenshot/screenshot-xfer.c:82
-#: ../gsearchtool/gsearchtool-callbacks.c:1726
-msgid "_Replace"
-msgstr "เ_ขียนทับ"
-
-#: ../mate-screenshot/screenshot-xfer.c:120
+#: ../mate-screenshot/src/screenshot-xfer.c:120
 msgid "Saving file..."
 msgstr "กำลังบันทึกแฟ้ม..."
 
-#: ../mate-screenshot/screenshot-xfer.c:290
+#: ../mate-screenshot/src/screenshot-xfer.c:290
 msgid "Can't access source file"
 msgstr "ไม่สามารถเข้าถึงแฟ้มต้นทางได้"
-
-#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
-msgid "A file searching tool for MATE Desktop"
-msgstr ""
-
-#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
-msgid ""
-"<p> MATE Search Tool is a simple but powerful utility that allows you to "
-"search for files and folders on any mounted file system. Its interface gives"
-" you instant access to a wide variety of parameters for each search, such as"
-" text contained within a file, ownership, date of modification, file size, "
-"folder exclusion, etc.. </p>"
-msgstr ""
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:1
-msgid "MATE Search Tool"
-msgstr ""
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:2
-msgid "Locate documents and folders on this computer by name or content"
-msgstr "ค้นหาเอกสารและโฟลเดอร์ในคอมพิวเตอร์นี้ด้วยชื่อหรือเนื้อหา"
-
-#: ../gsearchtool/gsearchtool.c:82
-msgid "Contains the _text"
-msgstr "_มีข้อความ"
-
-#: ../gsearchtool/gsearchtool.c:84
-msgid "_Date modified less than"
-msgstr "แก้ไขครั้งล่าสุด_ภายใน"
-
-#: ../gsearchtool/gsearchtool.c:84 ../gsearchtool/gsearchtool.c:85
-msgid "days"
-msgstr "วัน"
-
-#: ../gsearchtool/gsearchtool.c:85
-msgid "Date modified more than"
-msgstr "แก้ไขครั้งล่าสุด_ก่อน"
-
-#: ../gsearchtool/gsearchtool.c:87
-msgid "S_ize at least"
-msgstr "ขนาดอ_ย่างน้อย"
-
-#: ../gsearchtool/gsearchtool.c:87 ../gsearchtool/gsearchtool.c:88
-msgid "kilobytes"
-msgstr "กิโลไบต์"
-
-#: ../gsearchtool/gsearchtool.c:88
-msgid "Si_ze at most"
-msgstr "ขนาดไ_ม่เกิน"
-
-#: ../gsearchtool/gsearchtool.c:89
-msgid "File is empty"
-msgstr "แฟ้มเปล่าไม่มีข้อมูล"
-
-#: ../gsearchtool/gsearchtool.c:91
-msgid "Owned by _user"
-msgstr "เ_จ้าของคือ"
-
-#: ../gsearchtool/gsearchtool.c:92
-msgid "Owned by _group"
-msgstr "เป็น_ของกลุ่ม"
-
-#: ../gsearchtool/gsearchtool.c:93
-msgid "Owner is unrecognized"
-msgstr "ไม่รู้จักเจ้าของ"
-
-#: ../gsearchtool/gsearchtool.c:95
-msgid "Na_me does not contain"
-msgstr "ชื่อไม่มี_คำว่า"
-
-#: ../gsearchtool/gsearchtool.c:96
-msgid "Name matches regular e_xpression"
-msgstr "ชื่อที่ตร_งกับนิพจน์เรกิวลาร์"
-
-#: ../gsearchtool/gsearchtool.c:98
-msgid "Show hidden and backup files"
-msgstr "แสดงแฟ้มสำรอง และแฟ้มที่ถูกซ่อน"
-
-#: ../gsearchtool/gsearchtool.c:99
-msgid "Follow symbolic links"
-msgstr "ติดตามลิงก์สัญลักษณ์"
-
-#: ../gsearchtool/gsearchtool.c:100
-msgid "Exclude other filesystems"
-msgstr "ไม่รวมระบบแฟ้มอื่น"
-
-#: ../gsearchtool/gsearchtool.c:158
-msgid "Show version of the application"
-msgstr "แสดงเลขรุ่นของโปรแกรม"
-
-#: ../gsearchtool/gsearchtool.c:159 ../gsearchtool/gsearchtool.c:164
-#: ../gsearchtool/gsearchtool.c:173
-msgid "STRING"
-msgstr "STRING"
-
-#: ../gsearchtool/gsearchtool.c:160
-msgid "PATH"
-msgstr "PATH"
-
-#: ../gsearchtool/gsearchtool.c:161
-msgid "VALUE"
-msgstr "VALUE"
-
-#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
-msgid "DAYS"
-msgstr "DAYS"
-
-#: ../gsearchtool/gsearchtool.c:167 ../gsearchtool/gsearchtool.c:168
-msgid "KILOBYTES"
-msgstr "KILOBYTES"
-
-#: ../gsearchtool/gsearchtool.c:170
-msgid "USER"
-msgstr "USER"
-
-#: ../gsearchtool/gsearchtool.c:171
-msgid "GROUP"
-msgstr "GROUP"
-
-#: ../gsearchtool/gsearchtool.c:174
-msgid "PATTERN"
-msgstr "PATTERN"
-
-#: ../gsearchtool/gsearchtool.c:385
-msgid "A locate database has probably not been created."
-msgstr "เป็นไปได้ว่าระบบยังไม่ได้สร้างฐานข้อมูล locate"
-
-#: ../gsearchtool/gsearchtool.c:487
-#, c-format
-msgid "Character set conversion failed for \"%s\""
-msgstr "ไม่สามารถแปลงรหัสอักขระของ \"%s\""
-
-#: ../gsearchtool/gsearchtool.c:511
-msgid "Searching..."
-msgstr "กำลังค้นหา..."
-
-#: ../gsearchtool/gsearchtool.c:511 ../gsearchtool/gsearchtool.c:1031
-#: ../gsearchtool/gsearchtool.c:3030
-msgid "Search for Files"
-msgstr "ค้นหาแฟ้ม"
-
-#: ../gsearchtool/gsearchtool.c:977 ../gsearchtool/gsearchtool.c:1006
-msgid "No files found"
-msgstr "ไม่พบแฟ้ม"
-
-#: ../gsearchtool/gsearchtool.c:999
-msgid "(stopped)"
-msgstr "(หยุด)"
-
-#: ../gsearchtool/gsearchtool.c:1005
-msgid "No Files Found"
-msgstr "ไม่พบแฟ้ม"
-
-#: ../gsearchtool/gsearchtool.c:1010
-#, c-format
-msgid "%'d File Found"
-msgid_plural "%'d Files Found"
-msgstr[0] "พบ %'d แฟ้ม"
-
-#: ../gsearchtool/gsearchtool.c:1014 ../gsearchtool/gsearchtool.c:1052
-#, c-format
-msgid "%'d file found"
-msgid_plural "%'d files found"
-msgstr[0] "พบ %'d แฟ้ม"
-
-#: ../gsearchtool/gsearchtool.c:1143
-msgid "Entry changed called for a non entry option!"
-msgstr "รายการที่แก้ไขต้องได้รับค่าที่ไม่ว่างเปล่า"
-
-#: ../gsearchtool/gsearchtool.c:1308
-msgid "Set the text of \"Name contains\" search option"
-msgstr "ตั้งข้อความสำหรับตัวเลือก \"ชื่อมีคำว่า\""
-
-#: ../gsearchtool/gsearchtool.c:1309
-msgid "Set the text of \"Look in folder\" search option"
-msgstr "ตั้งข้อความสำหรับตัวเลือก \"หาในโฟลเดอร์\""
-
-#: ../gsearchtool/gsearchtool.c:1310
-msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "เรียงแฟ้มตาม: ชื่อ โฟลเดอร์ ขนาด ชนิด หรือวัน"
-
-#: ../gsearchtool/gsearchtool.c:1311
-msgid "Set sort order to descending, the default is ascending"
-msgstr "ใช้การเรียงจากมากไปน้อย  ค่าปริยายคือน้อยไปมาก"
-
-#: ../gsearchtool/gsearchtool.c:1312
-msgid "Automatically start a search"
-msgstr "เริ่มการค้นหาโดยอัตโนมัติ"
-
-#: ../gsearchtool/gsearchtool.c:1318
-#, c-format
-msgid "Select the \"%s\" search option"
-msgstr "เลือกตัวเลือก '%s'"
-
-#: ../gsearchtool/gsearchtool.c:1321
-#, c-format
-msgid "Select and set the \"%s\" search option"
-msgstr "เลือกและตั้งค่าตัวเลือก \"%s\""
-
-#: ../gsearchtool/gsearchtool.c:1428
-msgid "Invalid option passed to sortby command line argument."
-msgstr "คำสั่ง sortby ได้รับตัวเลือกที่ใช้ไม่ได้"
-
-#: ../gsearchtool/gsearchtool.c:1720
-msgid ""
-"\n"
-"... Too many errors to display ..."
-msgstr "\n... ข้อผิดพลาดเยอะเกินกว่าจะแสดงได้หมด ..."
-
-#: ../gsearchtool/gsearchtool.c:1734
-msgid ""
-"The search results may be invalid.  There were errors while performing this "
-"search."
-msgstr "ผลการค้นหาอาจไม่ถูกต้อง  เกิดข้อผิดพลาดขณะค้นหา"
-
-#: ../gsearchtool/gsearchtool.c:1746 ../gsearchtool/gsearchtool.c:1790
-msgid "Show more _details"
-msgstr "แ_สดงรายละเอียดเพิ่มเติม"
-
-#: ../gsearchtool/gsearchtool.c:1776
-msgid ""
-"The search results may be out of date or invalid.  Do you want to disable "
-"the quick search feature?"
-msgstr "ผลการค้นหาอาจเป็นข้อมูลเก่าหรือไม่ถูกต้อง  คุณต้องการปิดการค้นหาแบบเร็วหรือไม่?"
-
-#: ../gsearchtool/gsearchtool.c:1801
-msgid "Disable _Quick Search"
-msgstr "ปิดการค้นหาแบบเ_ร็ว"
-
-#: ../gsearchtool/gsearchtool.c:1828
-#, c-format
-msgid "Failed to set process group id of child %d: %s.\n"
-msgstr "ไม่สามารถกำหนดหมายเลขกลุ่มของโพรเซสลูกหมายเลข %d: %s\n"
-
-#: ../gsearchtool/gsearchtool.c:1853
-msgid "Error parsing the search command."
-msgstr "ไม่เข้าใจคำสั่งค้นหา"
-
-#: ../gsearchtool/gsearchtool.c:1885
-msgid "Error running the search command."
-msgstr "เกิดข้อผิดพลาดขณะเรียกใช้งานคำสั่งค้นหา"
-
-#: ../gsearchtool/gsearchtool.c:2008
-#, c-format
-msgid "Enter a text value for the \"%s\" search option."
-msgstr "ป้อนข้อความสำหรับตัวเลือกการค้นหา \"%s\""
-
-#. Translators:  Below is a string displaying the search options name
-#. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:2013
-#, c-format
-msgid "\"%s\" in %s"
-msgstr "\"%s\" ในหน่วย %s"
-
-#: ../gsearchtool/gsearchtool.c:2015
-#, c-format
-msgid "Enter a value in %s for the \"%s\" search option."
-msgstr "ป้อนค่าในหน่วย %s สำหรับตัวเลือกการค้นหา \"%s\""
-
-#: ../gsearchtool/gsearchtool.c:2073
-#, c-format
-msgid "Remove \"%s\""
-msgstr "ลบตัวเลือก \"%s\""
-
-#: ../gsearchtool/gsearchtool.c:2074
-#, c-format
-msgid "Click to remove the \"%s\" search option."
-msgstr "คลิกเพื่อลบตัวเลือกการค้นหา \"%s\""
-
-#: ../gsearchtool/gsearchtool.c:2167
-msgid "A_vailable options:"
-msgstr "_ตัวเลือกที่มี:"
-
-#: ../gsearchtool/gsearchtool.c:2196
-msgid "Available options"
-msgstr "ตัวเลือกที่มี"
-
-#: ../gsearchtool/gsearchtool.c:2197
-msgid "Select a search option from the drop-down list."
-msgstr "เลือกตัวเลือกการค้นหาจากเมนู"
-
-#: ../gsearchtool/gsearchtool.c:2209
-msgid "Add search option"
-msgstr "เพิ่มตัวเลือกการค้นหา"
-
-#: ../gsearchtool/gsearchtool.c:2210
-msgid "Click to add the selected available search option."
-msgstr "คลิกเพื่อเพิ่มตัวเลือกการค้นหาที่ได้เลือกไว้ในรายการ"
-
-#: ../gsearchtool/gsearchtool.c:2299
-msgid "S_earch results:"
-msgstr "_ผลการค้นหา:"
-
-#: ../gsearchtool/gsearchtool.c:2343
-msgid "List View"
-msgstr "รายการแฟ้มที่พบ"
-
-#: ../gsearchtool/gsearchtool.c:2452
-msgid "Type"
-msgstr "ชนิด"
-
-#: ../gsearchtool/gsearchtool.c:2464
-msgid "Date Modified"
-msgstr "วันที่แก้ไข"
-
-#: ../gsearchtool/gsearchtool.c:2799
-msgid "_Name contains:"
-msgstr "_ชื่อมีคำว่า:"
-
-#: ../gsearchtool/gsearchtool.c:2813 ../gsearchtool/gsearchtool.c:2814
-msgid "Enter a filename or partial filename with or without wildcards."
-msgstr "ป้อนชื่อแฟ้มหรือบางส่วนของชื่อแฟ้มที่จะค้นหา สามารถใช้ wildcard ได้"
-
-#: ../gsearchtool/gsearchtool.c:2814
-msgid "Name contains"
-msgstr "ชื่อมีคำว่า"
-
-#: ../gsearchtool/gsearchtool.c:2820
-msgid "_Look in folder:"
-msgstr "หาในโฟ_ลเดอร์:"
-
-#: ../gsearchtool/gsearchtool.c:2826
-msgid "Browse"
-msgstr "เรียกดู"
-
-#: ../gsearchtool/gsearchtool.c:2835
-msgid "Look in folder"
-msgstr "หาในโฟลเดอร์"
-
-#: ../gsearchtool/gsearchtool.c:2835
-msgid "Select the folder or device from which you want to begin the search."
-msgstr "ใส่ชื่อโฟลเดอร์หรืออุปกรณ์ที่จะใช้เริ่มค้นหา"
-
-#: ../gsearchtool/gsearchtool.c:2853
-msgid "Select more _options"
-msgstr "เลือกตัวเลือก_อื่นๆ"
-
-#: ../gsearchtool/gsearchtool.c:2862
-msgid "Select more options"
-msgstr "เลือกตัวเลือกอื่นๆ"
-
-#: ../gsearchtool/gsearchtool.c:2862
-msgid "Click to expand or collapse the list of available options."
-msgstr "คลิกเพื่อขยายหรือยุบรายการตัวเลือกของการค้นหา"
-
-#: ../gsearchtool/gsearchtool.c:2886
-msgid "Click to display the help manual."
-msgstr "คลิกเพื่อเปิดเอกสารแนะนำวิธีใช้"
-
-#: ../gsearchtool/gsearchtool.c:2894
-msgid "Click to close \"Search for Files\"."
-msgstr "คลิกถ้าต้องการปิดหน้าต่าง \"ค้นหาแฟ้ม\""
-
-#: ../gsearchtool/gsearchtool.c:2920
-msgid "Click to perform a search."
-msgstr "คลิกเพื่อเริ่มค้นหา"
-
-#: ../gsearchtool/gsearchtool.c:2921
-msgid "Click to stop a search."
-msgstr "คลิกถ้าต้องการหยุดค้นหา"
-
-#: ../gsearchtool/gsearchtool.c:3015
-msgid "- the MATE Search Tool"
-msgstr "- เครื่องมือค้นหาของ MATE"
-
-#: ../gsearchtool/gsearchtool.c:3024
-#, c-format
-msgid "Failed to parse command line arguments: %s\n"
-msgstr "แจงอาร์กิวเมนต์บรรทัดคำสั่งไม่สำเร็จ: %s\n"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:198
-msgid "Could not open help document."
-msgstr "ไม่สามารถเปิดเอกสารคำแนะนำช่วยเหลือ"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:349
-#, c-format
-msgid "Are you sure you want to open %d document?"
-msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] "แน่ใจหรือไม่ว่าจะเปิดเอกสาร %d ฉบับ?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:354
-#: ../gsearchtool/gsearchtool-callbacks.c:551
-#, c-format
-msgid "This will open %d separate window."
-msgid_plural "This will open %d separate windows."
-msgstr[0] "จะเปิดหน้าต่างแยก %d หน้าต่าง"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:394
-#, c-format
-msgid "Could not open document \"%s\"."
-msgstr "ไม่สามารถเปิดเอกสาร \"%s\""
-
-#: ../gsearchtool/gsearchtool-callbacks.c:423
-#, c-format
-msgid "Could not open folder \"%s\"."
-msgstr "ไม่สามารถเปิดโฟลเดอร์ \"%s\""
-
-#: ../gsearchtool/gsearchtool-callbacks.c:431
-msgid "The caja file manager is not running."
-msgstr "โปรแกรมจัดการแฟ้ม Caja ไม่ได้ทำงานอยู่"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:523
-msgid "There is no installed viewer capable of displaying the document."
-msgstr "ไม่มีโปรแกรมที่สามารถแสดงเอกสารนี้ได้ติดตั้งอยู่"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:546
-#, c-format
-msgid "Are you sure you want to open %d folder?"
-msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] "แน่ใจหรือไม่ว่าจะเปิดโฟลเดอร์ %d โฟลเดอร์?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:699
-#, c-format
-msgid "Could not move \"%s\" to trash."
-msgstr "ไม่สามารถย้าย \"%s\" ไปลงถังขยะ"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:730
-#, c-format
-msgid "Do you want to delete \"%s\" permanently?"
-msgstr "ต้องการลบ \"%s\" ทิ้งถาวรเลยหรือไม่?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:733
-#, c-format
-msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr "ถังขยะใช้งานไม่ได้ จึงไม่สามารถย้าย \"%s\" ไปลงถังขยะ"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:772
-#, c-format
-msgid "Could not delete \"%s\"."
-msgstr "ไม่สามารถลบ \"%s\""
-
-#: ../gsearchtool/gsearchtool-callbacks.c:884
-#, c-format
-msgid "Deleting \"%s\" failed: %s."
-msgstr "ลบ \"%s\" ไม่สำเร็จ: %s"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:896
-#, c-format
-msgid "Moving \"%s\" failed: %s."
-msgstr "ย้าย \"%s\" ไม่สำเร็จ: %s"
-
-#. Popup menu item: Open
-#: ../gsearchtool/gsearchtool-callbacks.c:1024
-#: ../gsearchtool/gsearchtool-callbacks.c:1054
-msgid "_Open"
-msgstr "_เปิด"
-
-#. Popup menu item: Open with (default)
-#: ../gsearchtool/gsearchtool-callbacks.c:1079
-#, c-format
-msgid "_Open with %s"
-msgstr "_เปิดด้วย %s"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1114
-#, c-format
-msgid "Open with %s"
-msgstr "เปิดด้วย %s"
-
-#. Popup menu item: Open With
-#: ../gsearchtool/gsearchtool-callbacks.c:1147
-msgid "Open Wit_h"
-msgstr "เปิดด้ว_ย"
-
-#. Popup menu item: Open Containing Folder
-#: ../gsearchtool/gsearchtool-callbacks.c:1192
-msgid "Open Containing _Folder"
-msgstr ""
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1232
-msgid "_Save Results As..."
-msgstr "_บันทึกผลการค้นหาเป็น..."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1614
-msgid "Save Search Results As..."
-msgstr "บันทึกผลการค้นหาเป็น..."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1643
-msgid "Could not save document."
-msgstr "ไม่สามารถบันทึกเอกสาร"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1644
-msgid "You did not select a document name."
-msgstr "คุณยังไม่ได้เลือกชื่อเอกสาร"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1674
-#, c-format
-msgid "Could not save \"%s\" document to \"%s\"."
-msgstr "ไม่สามารถบันทึกเอกสาร \"%s\" ไปยัง \"%s\""
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1707
-#, c-format
-msgid "The document \"%s\" already exists.  Would you like to replace it?"
-msgstr "มีเอกสารชื่อ \"%s\" อยู่แล้ว  จะเขียนทับหรือไม่?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1711
-msgid "If you replace an existing file, its contents will be overwritten."
-msgstr "ถ้าคุณเขียนทับ ข้อมูลในแฟ้มเก่าจะสูญหาย"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1775
-msgid "The document name you selected is a folder."
-msgstr "ชื่อเอกสารที่คุณเลือกเป็นชื่อโฟลเดอร์"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1811
-msgid "You may not have write permissions to the document."
-msgstr "คุณอาจไม่มีสิทธิ์เขียนลงเอกสารนี้"
-
-#. Translators:  Below are the strings displayed in the 'Date Modified'
-#. column of the list view.  The format of this string can vary depending
-#. on age of a file.  Please modify the format of the timestamp to match
-#. your locale.  For example, to display 24 hour time replace the '%-I'
-#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: ../gsearchtool/gsearchtool-support.c:448
-msgid "today at %-I:%M %p"
-msgstr "วันนี้ที่ %-I:%M %p"
-
-#: ../gsearchtool/gsearchtool-support.c:450
-msgid "yesterday at %-I:%M %p"
-msgstr "เมื่อวานที่ %-I:%M %p"
-
-#: ../gsearchtool/gsearchtool-support.c:452
-#: ../gsearchtool/gsearchtool-support.c:454
-msgid "%A, %B %-d %Y at %-I:%M:%S %p"
-msgstr "%A %-d %B %Ey, %H:%M:%S น."
-
-#: ../gsearchtool/gsearchtool-support.c:641
-msgid "link (broken)"
-msgstr "จุดเชื่อม (ขาด)"
-
-#: ../gsearchtool/gsearchtool-support.c:645
-#, c-format
-msgid "link to %s"
-msgstr "เชื่อมไปยัง %s"
-
-#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
-#. Localizers:
-#. * Feel free to leave out the st, nd, rd and th suffix or
-#. * make some or all of them match.
-#. localizers: tag used to detect the first copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1257
-msgid " (copy)"
-msgstr " (copy)"
-
-#. localizers: tag used to detect the second copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1259
-msgid " (another copy)"
-msgstr " (another copy)"
-
-#. localizers: tag used to detect the x11th copy of a file
-#. localizers: tag used to detect the x12th copy of a file
-#. localizers: tag used to detect the x13th copy of a file
-#. localizers: tag used to detect the xxth copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1262
-#: ../gsearchtool/gsearchtool-support.c:1264
-#: ../gsearchtool/gsearchtool-support.c:1266
-#: ../gsearchtool/gsearchtool-support.c:1276
-msgid "th copy)"
-msgstr "th copy)"
-
-#. localizers: tag used to detect the x1st copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1269
-msgid "st copy)"
-msgstr "st copy)"
-
-#. localizers: tag used to detect the x2nd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1271
-msgid "nd copy)"
-msgstr "nd copy)"
-
-#. localizers: tag used to detect the x3rd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1273
-msgid "rd copy)"
-msgstr "rd copy)"
-
-#. localizers: appended to first file copy
-#: ../gsearchtool/gsearchtool-support.c:1290
-#, c-format
-msgid "%s (copy)%s"
-msgstr "%s (copy)%s"
-
-#. localizers: appended to second file copy
-#: ../gsearchtool/gsearchtool-support.c:1292
-#, c-format
-msgid "%s (another copy)%s"
-msgstr "%s (another copy)%s"
-
-#. localizers: appended to x11th file copy
-#. localizers: appended to x12th file copy
-#. localizers: appended to x13th file copy
-#. localizers: appended to xxth file copy
-#: ../gsearchtool/gsearchtool-support.c:1295
-#: ../gsearchtool/gsearchtool-support.c:1297
-#: ../gsearchtool/gsearchtool-support.c:1299
-#: ../gsearchtool/gsearchtool-support.c:1308
-#, c-format
-msgid "%s (%dth copy)%s"
-msgstr "%s (%dth copy)%s"
-
-#. localizers: appended to x1st file copy
-#: ../gsearchtool/gsearchtool-support.c:1302
-#, c-format
-msgid "%s (%dst copy)%s"
-msgstr "%s (%dst copy)%s"
-
-#. localizers: appended to x2nd file copy
-#: ../gsearchtool/gsearchtool-support.c:1304
-#, c-format
-msgid "%s (%dnd copy)%s"
-msgstr "%s (%dnd copy)%s"
-
-#. localizers: appended to x3rd file copy
-#: ../gsearchtool/gsearchtool-support.c:1306
-#, c-format
-msgid "%s (%drd copy)%s"
-msgstr "%s (%drd copy)%s"
-
-#: ../gsearchtool/gsearchtool-support.c:1353
-msgid " (invalid Unicode)"
-msgstr " (รหัสยูนิโค้ดไม่ถูกต้อง)"
-
-#. localizers: opening parentheses to match the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1442
-msgid " ("
-msgstr " ("
-
-#. localizers: opening parentheses of the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1450
-#, c-format
-msgid " (%d"
-msgstr " (%d"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:1
-msgid "Search history"
-msgstr ""
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:2
-msgid "This key defines the items which were searched for in the past."
-msgstr ""
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:3
-msgid "Show Additional Options"
-msgstr "แสดงตัวเลือกอื่นๆ"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:4
-msgid "Disable Quick Search"
-msgstr "ปิดการค้นหาแบบเร็ว"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:5
-msgid ""
-"This key determines if the search tool disables the use of the locate "
-"command when performing simple file name searches."
-msgstr "กำหนดให้เครื่องมือค้นหาปิดการใช้คำสั่ง locate สำหรับการค้นหาชื่อแฟ้มอย่างง่าย"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:6
-msgid "Quick Search Excluded Paths"
-msgstr "พาธที่ไม่รวมในการค้นอย่างเร็ว"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:7
-msgid ""
-"This key defines the paths the search tool will exclude from a quick search."
-" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
-"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-msgstr "กำหนดพาธที่เครื่องมือค้นหาจะไม่รวมในผลลัพธ์ของการค้นอย่างเร็ว สามารถใช้ wildcard '*' และ '?' ได้ ค่าโดยปริยายคือ /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, และ /var/*"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:8
-msgid "Disable Quick Search Second Scan"
-msgstr "ปิดการค้นรอบสองของการค้าหาแบบเร็ว"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:9
-msgid ""
-"This key determines if the search tool disables the use of the find command "
-"after performing a quick search."
-msgstr "กำหนดให้เครื่องมือค้นหาปิดการใช้คำสั่ง find หลังจากค้นหาอย่างเร็วเสร็จแล้ว"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:10
-msgid "Quick Search Second Scan Excluded Paths"
-msgstr "พาธที่ไม่รวมในการค้นอย่างเร็วรอบสอง"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:11
-msgid ""
-"This key defines the paths the search tool will exclude from a second scan "
-"when performing a quick search. The second scan uses the find command to "
-"search for files. The purpose of the second scan is to find files that have "
-"not been indexed. The wildcards '*' and '?' are supported. The default value"
-" is /."
-msgstr "กำหนดพาธที่เครื่องมือค้นหาจะไม่ค้นในรอบสองของการค้นอย่างเร็ว การค้นรอบสองจะใช้คำสั่ง find ในการค้นหาแฟ้ม มีจุดมุ่งหมายเพื่อค้นหาแฟ้มที่ยังไม่ถูกทำดัชนี สามารถใช้ wildcard '*' และ '?' ได้ ค่าโดยปริยายคือ /"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:12
-msgid "Search Result Columns Order"
-msgstr "ลำดับคอลัมน์ในการแสดงผลการค้นหา"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:13
-msgid ""
-"This key defines the order of the columns in the search results. This key "
-"should not be modified by the user."
-msgstr "กำหนดลำดับของคอลัมน์ในการแสดงผลการค้นหา ผู้ใช้ไม่ควรเปลี่ยนแปลงคีย์นี้"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:14
-msgid "Default Window Width"
-msgstr "ความกว้างหน้าต่างปริยาย"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:15
-msgid ""
-"This key defines the window width, and it's used to remember the size of the"
-" search tool between sessions. Setting it to -1 will make the search tool "
-"use the default width."
-msgstr "กำหนดความกว้างของหน้าต่าง และใช้จำขนาดของเครื่องมือค้นหาข้ามวาระ ถ้ากำหนดเป็น -1 จะใช้ความกว้างปริยาย"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:16
-msgid "Default Window Height"
-msgstr "ความสูงหน้าต่างปริยาย"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:17
-msgid ""
-"This key defines the window height, and it's used to remember the size of "
-"the search tool between sessions. Setting it to -1 will make the search tool"
-" use the default height."
-msgstr "กำหนดความสูงของหน้าต่าง และใช้จำขนาดของเครื่องมือค้นหาข้ามวาระ ถ้ากำหนดเป็น -1 จะใช้ความสูงปริยาย"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:18
-msgid "Default Window Maximized"
-msgstr "หน้าต่างขยายเต็มโดยปริยาย"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:19
-msgid ""
-"This key determines if the search tool window starts in a maximized state."
-msgstr "กำหนดว่าเครื่องมือค้นหาจะเริ่มทำงานแบบขยายหน้าต่างเต็มหรือไม่"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:20
-msgid "Look in Folder"
-msgstr "หาในโฟลเดอร์"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:21
-msgid "This key defines the default value of the \"Look in Folder\" widget."
-msgstr "กำหนดค่าปริยายของวิดเจ็ต \"หาในโฟลเดอร์\""
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:22
-msgid ""
-"This key determines if the \"Contains the text\" search option is selected "
-"when the search tool is started."
-msgstr "กำหนดให้เลือกตัวเลือก \"มีข้อความ\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:23
-msgid ""
-"This key determines if the \"Date modified less than\" search option is "
-"selected when the search tool is started."
-msgstr "กำหนดให้เลือกตัวเลือก \"แก้ไขครั้งล่าสุดภายใน\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:24
-msgid ""
-"This key determines if the \"Date modified more than\" search option is "
-"selected when the search tool is started."
-msgstr "กำหนดให้เลือกตัวเลือก \"แก้ไขครั้งล่าสุดก่อน\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:25
-msgid ""
-"This key determines if the \"Size at least\" search option is selected when "
-"the search tool is started."
-msgstr "กำหนดให้เลือกตัวเลือก \"ขนาดอย่างน้อย\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:26
-msgid ""
-"This key determines if the \"Size at most\" search option is selected when "
-"the search tool is started."
-msgstr "กำหนดให้เลือกตัวเลือก \"ขนาดไม่เกิน\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:27
-msgid ""
-"This key determines if the \"File is empty\" search option is selected when "
-"the search tool is started."
-msgstr "กำหนดให้เลือกตัวเลือก \"แฟ้มเปล่าไม่มีข้อมูล\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:28
-msgid ""
-"This key determines if the \"Owned by user\" search option is selected when "
-"the search tool is started."
-msgstr "กำหนดให้เลือกตัวเลือก \"เจ้าของคือ\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:29
-msgid ""
-"This key determines if the \"Owned by group\" search option is selected when"
-" the search tool is started."
-msgstr "กำหนดให้เลือกตัวเลือก \"เป็นของกลุ่ม\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:30
-msgid ""
-"This key determines if the \"Owner is unrecognized\" search option is "
-"selected when the search tool is started."
-msgstr "กำหนดให้เลือกตัวเลือก \"ไม่รู้จักเจ้าของ\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:31
-msgid ""
-"This key determines if the \"Name does not contain\" search option is "
-"selected when the search tool is started."
-msgstr "กำหนดให้เลือกตัวเลือก \"ชื่อไม่มีคำว่า\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:32
-msgid ""
-"This key determines if the \"Name matches regular expression\" search option"
-" is selected when the search tool is started."
-msgstr "กำหนดให้เลือกตัวเลือก \"ชื่อที่ตรงกับนิพจน์เรกิวลาร์\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:33
-msgid ""
-"This key determines if the \"Show hidden files and folders\" search option "
-"is selected when the search tool is started."
-msgstr "กำหนดให้เลือกตัวเลือก \"แสดงแฟ้มสำรอง และแฟ้มที่ถูกซ่อน\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:34
-msgid ""
-"This key determines if the \"Follow symbolic links\" search option is "
-"selected when the search tool is started."
-msgstr "กำหนดให้เลือกตัวเลือก \"ติดตามลิงก์สัญลักษณ์\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:35
-msgid ""
-"This key determines if the \"Exclude other filesystems\" search option is "
-"selected when the search tool is started."
-msgstr "กำหนดให้เลือกตัวเลือก \"ไม่รวมระบบแฟ้มอื่น\" เมื่อเริ่มเปิดเครื่องมือค้นหา"
-
-#: ../libeggsmclient/eggdesktopfile.c:165
-#, c-format
-msgid "File is not a valid .desktop file"
-msgstr "แฟ้มนี้ไม่ใช่แฟ้ม .desktop ที่ใช้ได้"
-
-#: ../libeggsmclient/eggdesktopfile.c:188
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "ไม่รู้จักแฟ้มเดสก์ท็อปรุ่น '%s'"
-
-#: ../libeggsmclient/eggdesktopfile.c:957
-#, c-format
-msgid "Starting %s"
-msgstr "กำลังเริ่ม %s"
-
-#: ../libeggsmclient/eggdesktopfile.c:1098
-#, c-format
-msgid "Application does not accept documents on command line"
-msgstr "โปรแกรมไม่รับเอกสารในบรรทัดคำสั่ง"
-
-#: ../libeggsmclient/eggdesktopfile.c:1166
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "ไม่รู้จักตัวเลือกของการเรียกโปรแกรม: %d"
-
-#: ../libeggsmclient/eggdesktopfile.c:1365
-#, c-format
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "ไม่สามารถส่ง URI ของเอกสารไปยังรายการเดสก์ท็อปที่มี 'Type=Link'"
-
-#: ../libeggsmclient/eggdesktopfile.c:1384
-#, c-format
-msgid "Not a launchable item"
-msgstr "ไม่ใช่รายการที่เรียกทำงานได้"
-
-#: ../libeggsmclient/eggsmclient.c:225
-msgid "Disable connection to session manager"
-msgstr "ปิดใช้การเชื่อมต่อไปยังโปรแกรมจัดการวาระ"
-
-#: ../libeggsmclient/eggsmclient.c:228
-msgid "Specify file containing saved configuration"
-msgstr "ระบุแฟ้มที่บันทึกค่าตั้งไว้"
-
-#: ../libeggsmclient/eggsmclient.c:228
-msgid "FILE"
-msgstr "FILE"
-
-#: ../libeggsmclient/eggsmclient.c:231
-msgid "Specify session management ID"
-msgstr "ระบุหมายเลขการจัดการวาระ"
-
-#: ../libeggsmclient/eggsmclient.c:231
-msgid "ID"
-msgstr "ID"
-
-#: ../libeggsmclient/eggsmclient.c:252
-msgid "Session management options:"
-msgstr "ตัวเลือกเกี่ยวกับการจัดการวาระ:"
-
-#: ../libeggsmclient/eggsmclient.c:253
-msgid "Show session management options"
-msgstr "แสดงตัวเลือกเกี่ยวกับการจัดการวาระ"
-
-#: ../logview/data/mate-system-log.desktop.in.in.h:1
-msgid "Log File Viewer"
-msgstr "โปรแกรมอ่านแฟ้มปูม"
-
-#: ../logview/data/mate-system-log.desktop.in.in.h:2
-msgid "View or monitor system log files"
-msgstr "อ่านหรือเฝ้าสังเกตปูมของระบบ"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
-msgid "Log file to open up on startup"
-msgstr "แฟ้มปูมที่จะให้เปิดเมื่อเริ่มโปรแกรม"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
-msgid ""
-"Specifies the log file displayed at startup. The default is either "
-"/var/adm/messages or /var/log/messages, depending on your operating system."
-msgstr "กำหนดแฟ้มปูมที่จะแสดงเมื่อเริ่มโปรแกรม  ค่าปริยายเป็นได้ทั้ง /var/adm/messages หรือ /var/log/messages ตามแต่ระบบปฏิบัติการที่ใช้"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
-msgid "Size of the font used to display the log"
-msgstr "ขนาดของแบบอักษรที่ใช้แสดงปูม"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
-msgid ""
-"Specifies the size of the fixed-width font used to display the log in the "
-"main tree view. The default is taken from the default terminal font size."
-msgstr "กำหนดขนาดของแบบอักษรความกว้างคงที่ที่ใช้แสดงปูมในช่องแสดงหลัก ค่าปริยายจะใช้ขนาดปริยายของแบบอักษรเทอร์มินัล"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
-msgid "Height of the main window in pixels"
-msgstr "ความสูงของหน้าต่างหลักเป็นพิกเซล"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
-msgid "Specifies the height of the log viewer main window in pixels."
-msgstr "กำหนดความสูงเป็นพิกเซลของหน้าต่างหลักของโปรแกรมดูปูมระบบ"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
-msgid "Width of the main window in pixels"
-msgstr "ความกว้างของหน้าต่างหลักเป็นพิกเซล"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
-msgid "Specifies the width of the log viewer main window in pixels."
-msgstr "กำหนดความกว้างเป็นพิกเซลของหน้าต่างหลักของโปรแกรมดูปูมระบบ"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
-msgid "Log files to open up on startup"
-msgstr "แฟ้มปูมที่จะให้เปิดเมื่อเริ่มโปรแกรม"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
-msgid ""
-"Specifies a list of log files to open up at startup. A default list is "
-"created by reading /etc/syslog.conf."
-msgstr "กำหนดรายการแฟ้มปูมที่จะเปิดเมื่อเริ่มโปรแกรม ค่าปริยายของคีย์นี้จะสร้างจาก /etc/syslog.conf"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
-msgid "List of saved filters"
-msgstr ""
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
-msgid "List of saved regexp filters"
-msgstr ""
-
-#: ../logview/data/logview-filter.ui.h:2
-msgid "_Regular Expression:"
-msgstr "_นิพจน์เรกิวลาร์"
-
-#: ../logview/data/logview-filter.ui.h:3
-msgid "Highlight"
-msgstr "เน้น"
-
-#: ../logview/data/logview-filter.ui.h:4
-msgid "Hide"
-msgstr "ซ่อน"
-
-#: ../logview/data/logview-filter.ui.h:5
-msgid "Foreground:"
-msgstr "สีตัวอักษร:"
-
-#: ../logview/data/logview-filter.ui.h:6
-msgid "Background:"
-msgstr "สีพื้นหลัง:"
-
-#: ../logview/data/logview-filter.ui.h:7
-msgid "Effect:"
-msgstr "เอฟเฟกต์:"
-
-#: ../logview/logview-app.c:377
-#, c-format
-msgid "Impossible to open the file %s"
-msgstr "ไม่สามารถเปิดแฟ้ม %s"
-
-#: ../logview/logview-filter-manager.c:94
-msgid "Filter name is empty!"
-msgstr "ชื่อตัวกรองว่างเปล่า!"
-
-#: ../logview/logview-filter-manager.c:107
-msgid "Filter name may not contain the ':' character"
-msgstr "ชื่อตัวกรองจะใช้อักขระ ':' ไม่ได้"
-
-#: ../logview/logview-filter-manager.c:130
-msgid "Regular expression is empty!"
-msgstr "นิพจน์เรกิวลาร์ว่างเปล่า!"
-
-#: ../logview/logview-filter-manager.c:146
-#, c-format
-msgid "Regular expression is invalid: %s"
-msgstr "นิพจน์เรกิวลาร์ไม่ถูกต้อง: %s"
-
-#: ../logview/logview-filter-manager.c:242
-msgid "Please specify either foreground or background color!"
-msgstr "กรุณาระบุสีตัวอักษรหรือสีพื้นหลัง!"
-
-#: ../logview/logview-filter-manager.c:296
-msgid "Edit filter"
-msgstr "แก้ไขตัวกรอง"
-
-#: ../logview/logview-filter-manager.c:296
-msgid "Add new filter"
-msgstr "เพิ่มตัวกรองใหม่"
-
-#: ../logview/logview-filter-manager.c:506
-msgid "Filters"
-msgstr "ตัวกรอง"
-
-#: ../logview/logview-findbar.c:173
-msgid "_Find:"
-msgstr "_หา:"
-
-#: ../logview/logview-findbar.c:188
-msgid "Find Previous"
-msgstr "หาก่อนหน้า"
-
-#: ../logview/logview-findbar.c:191
-msgid "Find previous occurrence of the search string"
-msgstr "หาคำในเนื้อความก่อนหน้าจุดที่แล้ว"
-
-#: ../logview/logview-findbar.c:196
-msgid "Find Next"
-msgstr "หาต่อ"
-
-#: ../logview/logview-findbar.c:199
-msgid "Find next occurrence of the search string"
-msgstr "หาคำในเนื้อความถัดจากจุดที่แล้ว"
-
-#: ../logview/logview-findbar.c:206
-msgid "Clear the search string"
-msgstr "ล้างคำค้น"
-
-#: ../logview/logview-log.c:595
-msgid "Error while uncompressing the GZipped log. The file might be corrupt."
-msgstr "เกิดข้อผิดพลาดขณะคลายปูมที่ GZip ไว้ แฟ้มอาจเสียหาย"
-
-#: ../logview/logview-log.c:642
-msgid "You don't have enough permissions to read the file."
-msgstr "คุณไม่มีสิทธิ์เพียงพอที่จะอ่านแฟ้มนี้"
-
-#: ../logview/logview-log.c:657
-msgid "The file is not a regular file or is not a text file."
-msgstr "แฟ้มนี้ไม่ใช่แฟ้มปกติ หรือไม่ใช่แฟ้มข้อความ"
-
-#: ../logview/logview-log.c:739
-msgid "This version of System Log does not support GZipped logs."
-msgstr "โปรแกรมอ่านปูมของระบบรุ่นนี้ ไม่รองรับปูมที่ GZip ไว้"
-
-#: ../logview/logview-loglist.c:315
-msgid "Loading..."
-msgstr "กำลังอ่าน..."
-
-#: ../logview/logview-main.c:61
-msgid "Show the application's version"
-msgstr "แสดงรุ่นของโปรแกรม"
-
-#: ../logview/logview-main.c:63
-msgid "[LOGFILE...]"
-msgstr "[LOGFILE...]"
-
-#: ../logview/logview-main.c:67
-msgid " - Browse and monitor logs"
-msgstr " - เรียกดูและเฝ้าสังเกตปูมต่างๆ"
-
-#: ../logview/logview-main.c:100
-msgid "Log Viewer"
-msgstr "โปรแกรมอ่านปูม"
-
-#: ../logview/logview-window.c:38 ../logview/logview-window.c:760
-msgid "System Log Viewer"
-msgstr "โปรแกรมอ่านปูมของระบบ"
-
-#: ../logview/logview-window.c:210
-#, c-format
-msgid "last update: %s"
-msgstr "เปลี่ยนแปลงล่าสุด: %s"
-
-#: ../logview/logview-window.c:214
-#, c-format
-msgid "%d lines (%s) - %s"
-msgstr "%d บรรทัด (%s) - %s"
-
-#: ../logview/logview-window.c:318
-msgid "Open Log"
-msgstr "เปิดปูม"
-
-#: ../logview/logview-window.c:357
-#, c-format
-msgid "There was an error displaying help: %s"
-msgstr "เกิดข้อผิดพลาดขณะแสดงคำแนะนำ: %s"
-
-#: ../logview/logview-window.c:471
-msgid "Wrapped"
-msgstr "เริ่มหาใหม่"
-
-#: ../logview/logview-window.c:765
-msgid "A system log viewer for MATE."
-msgstr "โปรแกรมอ่านปูมของระบบสำหรับ MATE"
-
-#: ../logview/logview-window.c:811
-msgid "_Filters"
-msgstr "ตัว_กรอง"
-
-#: ../logview/logview-window.c:814
-msgid "_Open..."
-msgstr "_เปิด..."
-
-#: ../logview/logview-window.c:814
-msgid "Open a log from file"
-msgstr "เปิดแฟ้มปูม"
-
-#: ../logview/logview-window.c:816
-msgid "_Close"
-msgstr "ปิ_ด"
-
-#: ../logview/logview-window.c:816
-msgid "Close this log"
-msgstr "ปิดปูมนี้"
-
-#: ../logview/logview-window.c:818
-msgid "_Quit"
-msgstr "_ออก"
-
-#: ../logview/logview-window.c:818
-msgid "Quit the log viewer"
-msgstr "ออกจากโปรแกรมอ่านปูมระบบ"
-
-#: ../logview/logview-window.c:821
-msgid "_Copy"
-msgstr "_คัดลอก"
-
-#: ../logview/logview-window.c:821
-msgid "Copy the selection"
-msgstr "คัดลอกข้อความที่เลือกเข้าคลิปบอร์ด"
-
-#: ../logview/logview-window.c:823
-msgid "Select the entire log"
-msgstr "เลือกเนื้อหาทั้งหมดของปูม"
-
-#: ../logview/logview-window.c:825
-msgid "_Find..."
-msgstr "_หา..."
-
-#: ../logview/logview-window.c:825
-msgid "Find a word or phrase in the log"
-msgstr "หาคำหรือวลีในปูม"
-
-#: ../logview/logview-window.c:828
-msgid "Bigger text size"
-msgstr "ขยายขนาดตัวอักษร"
-
-#: ../logview/logview-window.c:830
-msgid "Smaller text size"
-msgstr "ลดขนาดตัวอักษร"
-
-#: ../logview/logview-window.c:832
-msgid "Normal text size"
-msgstr "ขนาดตัวอักษรปกติ"
-
-#: ../logview/logview-window.c:835
-msgid "Manage Filters"
-msgstr "จัดการตัวกรอง"
-
-#: ../logview/logview-window.c:835
-msgid "Manage filters"
-msgstr "จัดการตัวกรอง"
-
-#: ../logview/logview-window.c:838
-msgid "Open the help contents for the log viewer"
-msgstr "เปิดสารบัญเอกสารแนะนำวิธีใช้โปรแกรมอ่านปูมระบบ"
-
-#: ../logview/logview-window.c:840
-msgid "Show the about dialog for the log viewer"
-msgstr "แสดงข้อมูลเกี่ยวกับโปรแกรมอ่านปูมระบบ"
-
-#: ../logview/logview-window.c:845
-msgid "_Statusbar"
-msgstr "แถบ_สถานะ"
-
-#: ../logview/logview-window.c:845
-msgid "Show Status Bar"
-msgstr "แสดงแถบสถานะ"
-
-#: ../logview/logview-window.c:847
-msgid "Side _Pane"
-msgstr "แถบ_ข้าง"
-
-#: ../logview/logview-window.c:847
-msgid "Show Side Pane"
-msgstr "แสดงแถบด้านข้าง"
-
-#: ../logview/logview-window.c:849
-msgid "Show matches only"
-msgstr "แสดงรายการที่ตรงเท่านั้น"
-
-#: ../logview/logview-window.c:849
-msgid "Only show lines that match one of the given filters"
-msgstr "แสดงเฉพาะบรรทัดที่ตรงกับตัวกรองเท่านั้น"
-
-#: ../logview/logview-window.c:963
-#, c-format
-msgid "Can't read from \"%s\""
-msgstr "ไม่สามารถอ่านจาก \"%s\""
-
-#: ../logview/logview-window.c:1386
-msgid "Version: "
-msgstr "รุ่น: "
-
-#: ../logview/logview-window.c:1493
-msgid "Could not open the following files:"
-msgstr "ไม่สามารถเปิดแฟ้มต่อไปนี้:"

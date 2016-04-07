@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-10 13:06+0300\n"
-"PO-Revision-Date: 2016-02-15 19:41+0000\n"
+"PO-Revision-Date: 2016-03-17 17:03+0000\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/mate/MATE/language/lt/)\n"
 "MIME-Version: 1.0\n"
@@ -154,11 +154,11 @@ msgstr "Atnaujinti"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:1
 msgid "Monitor Home"
-msgstr ""
+msgstr "Stebėti namų aplanką"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:2
 msgid "Whether any change to the home directory should be monitored."
-msgstr "Ar turėtų būti stebimas kiekvienas namų aplanko pakeitimas."
+msgstr "Ar turėtų būti stebimas kiekvienas namų katalogo pakeitimas."
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:3
 msgid "Excluded partitions URIs"
@@ -178,7 +178,7 @@ msgstr "Ar įrankinė turėtų būti matoma pagrindiniame lange."
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:7
 msgid "Statusbar is Visible"
-msgstr "Būsenos juosta yra Matoma"
+msgstr "Būsenos juosta yra matoma"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:8
 msgid "Whether the status bar at the bottom of main window should be visible."
@@ -263,7 +263,7 @@ msgstr[2] "%5d elementų"
 
 #: ../baobab/src/baobab.c:591
 msgid "Could not initialize monitoring"
-msgstr "Nepavyko inicializuoti stebėjimo"
+msgstr "Nepavyko inicijuoti stebėjimo"
 
 #: ../baobab/src/baobab.c:592
 msgid "Changes to your home folder will not be monitored."
@@ -283,7 +283,7 @@ msgstr "Atitraukti"
 
 #: ../baobab/src/baobab.c:936
 msgid "Save screenshot"
-msgstr "Įrašyti ekrano nuotrauką"
+msgstr "Įrašyti ekrano kopiją"
 
 #: ../baobab/src/baobab.c:1123
 msgid "View as Rings Chart"
@@ -299,11 +299,11 @@ msgstr "Rodyti versiją"
 
 #: ../baobab/src/baobab.c:1235
 msgid "[DIRECTORY]"
-msgstr "[APLANKAS]"
+msgstr "[KATALOGAS]"
 
 #: ../baobab/src/baobab.c:1265
 msgid "Too many arguments. Only one directory can be specified."
-msgstr "Per daug argumentų. Galima nurodyti tik vieną aplanką."
+msgstr "Per daug argumentų. Galima nurodyti tik vieną katalogą."
 
 #: ../baobab/src/baobab.c:1282
 msgid "Could not detect any mount point."
@@ -702,12 +702,12 @@ msgstr "Šiame rakte nurodomas lango aukštis, jis naudojamas atsiminti paieško
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:18
 msgid "Default Window Maximized"
-msgstr "Numatytasis langas išdidintas"
+msgstr "Numatytasis langas išskleistas"
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:19
 msgid ""
 "This key determines if the search tool window starts in a maximized state."
-msgstr "Šis raktas nurodo ar paieškos įrankio langas paleidžiamas išdidintas."
+msgstr "Šis raktas nurodo ar paieškos įrankio langas paleidžiamas išskleistas."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:20
 msgid "Look in Folder"
@@ -1548,11 +1548,11 @@ msgstr "Nurodo paleidimo metu atveriamų žurnalo failų sąrašą. Numatytasis 
 
 #: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
 msgid "List of saved filters"
-msgstr "Išsaugotų filtrų sąrašas"
+msgstr "Įrašytų filtrų sąrašas"
 
 #: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
 msgid "List of saved regexp filters"
-msgstr "Išsaugotų regexp filtrų sąrašas"
+msgstr "Įrašytų regexp filtrų sąrašas"
 
 #: ../logview/data/logview-filter.ui.h:1
 #: ../mate-screenshot/data/mate-screenshot.ui.h:3
@@ -2496,7 +2496,7 @@ msgstr "Nepavyko pervadinti failo „%s“ į „%s“: %s"
 #: ../mate-dictionary/src/gdict-common.c:127
 #, c-format
 msgid "Unable to create the data directory '%s': %s"
-msgstr "Nepavyko sukurti duomenų aplanko „%s“: %s"
+msgstr "Nepavyko sukurti duomenų katalogo „%s“: %s"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:240
 #: ../mate-dictionary/src/gdict-pref-dialog.c:429
@@ -2787,7 +2787,7 @@ msgstr "Strategijos"
 
 #: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:1
 msgid "A screenshot utility for MATE Desktop"
-msgstr "Ekrano nuotraukų paslaugų programa MATE Darbalaukiui"
+msgstr "Ekrano kopijų paslaugų programa MATE darbalaukiui"
 
 #: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:2
 msgid ""
@@ -2795,13 +2795,13 @@ msgid ""
 " your desktop or of application windows. You can select to copy them to the "
 "system clipboard or save them in Portable Network Graphics (.png) image "
 "format. </p>"
-msgstr "<p> MATE Screenshot yra paprasta programa, kuri leidžia padaryti darbalaukio arba langų ekranvaizdžius. Juos galite nukopijuoti į sistemos iškarpinę arba išsaugoti PNG (.png) formatu. </p>"
+msgstr "<p> MATE Screenshot yra paprasta programa, kuri leidžia padaryti darbalaukio arba langų ekrano kopijas. Jas galite nukopijuoti į sistemos iškarpinę arba įrašyti PNG (.png) formatu. </p>"
 
 #: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
 #: ../mate-screenshot/src/mate-screenshot.c:516
 #: ../mate-screenshot/src/mate-screenshot.c:524
 msgid "Take Screenshot"
-msgstr "Nufotografuoti ekraną"
+msgstr "Padaryti ekrano kopiją"
 
 #: ../mate-screenshot/data/mate-screenshot.desktop.in.h:2
 msgid "Save images of your desktop or individual windows"
@@ -2809,7 +2809,7 @@ msgstr "Įrašyti jūsų darbalaukio ar atskirų langų nuotraukas"
 
 #: ../mate-screenshot/data/mate-screenshot.ui.h:1
 msgid "Save Screenshot"
-msgstr "Įrašyti nuotrauką"
+msgstr "Įrašyti ekrano kopiją"
 
 #: ../mate-screenshot/data/mate-screenshot.ui.h:2
 msgid "C_opy to Clipboard"
@@ -2825,19 +2825,19 @@ msgstr "*"
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:1
 msgid "Screenshot delay"
-msgstr "Ekrano nuotraukos delsa"
+msgstr "Ekrano kopijos delsa"
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:2
 msgid "The number of seconds to wait before taking the screenshot."
-msgstr "Sekundžių skaičius prieš ekrano nuotrauką"
+msgstr "Sekundžių skaičius prieš ekrano kopiją"
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:3
 msgid "Screenshot directory"
-msgstr "Ekrano nuotraukos aplankas"
+msgstr "Ekrano kopijos katalogas"
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:4
 msgid "The directory the last screenshot was saved in."
-msgstr "Aplankas, kuriame buvo išsaugota paskutinioji ekrano nuotrauka."
+msgstr "Katalogas, kuriame buvo įrašyta paskutinioji ekrano kopija."
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:5
 msgid "Include Border"
@@ -2845,15 +2845,15 @@ msgstr "Įtraukti rėmelį"
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:6
 msgid "Include the window manager border along with the screenshot"
-msgstr "Kartu su ekrano nuotrauka įtraukti ir langų tvarkytuvės rėmelį"
+msgstr "Kartu su ekrano kopija įtraukti ir langų tvarkytuvės rėmelį"
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:7
 msgid "Include Pointer"
-msgstr "Įtraukti žymiklį"
+msgstr "Įtraukti žymeklį"
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:8
 msgid "Include the pointer in the screenshot"
-msgstr "Į ekrano nuotrauką įtraukti ir žymiklį"
+msgstr "Į ekrano kopiją įtraukti ir žymeklį"
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:9
 msgid "Border Effect"
@@ -2926,11 +2926,11 @@ msgstr "Efektai"
 
 #: ../mate-screenshot/src/mate-screenshot.c:530
 msgid "Take _Screenshot"
-msgstr "Nufotografuoti _ekraną"
+msgstr "Padaryti ekrano _kopiją"
 
 #: ../mate-screenshot/src/mate-screenshot.c:650
 msgid "Error while saving screenshot"
-msgstr "Klaida įrašant ekrano nuotrauką"
+msgstr "Klaida įrašant ekrano kopiją"
 
 #: ../mate-screenshot/src/mate-screenshot.c:653
 #, c-format
@@ -2938,15 +2938,15 @@ msgid ""
 "Impossible to save the screenshot to %s.\n"
 " Error was %s.\n"
 " Please choose another location and retry."
-msgstr "Nepavyko įrašyti nuotraukos aplanke %s.\n Klaida: %s.\n Pasirinkite kitą vietą ir bandykite dar kartą."
+msgstr "Nepavyko įrašyti ekrano kopijos aplanke %s.\n Klaida: %s.\n Pasirinkite kitą vietą ir bandykite dar kartą."
 
 #: ../mate-screenshot/src/mate-screenshot.c:785
 msgid "Screenshot taken"
-msgstr "Ekranas nufotografuotas"
+msgstr "Ekrano kopija padaryta"
 
 #: ../mate-screenshot/src/mate-screenshot.c:840
 msgid "Unable to take a screenshot of the current window"
-msgstr "Nepavyko padaryti dabartinio lango nuotraukos"
+msgstr "Nepavyko padaryti dabartinio lango ekrano kopijos"
 
 #. Translators: This is a strftime format string.
 #. * It is used to display the time in 24-hours format (eg, like
@@ -2980,15 +2980,15 @@ msgstr "Vietoje viso ekrano fotografuoti tik tam tikrą sritį"
 
 #: ../mate-screenshot/src/mate-screenshot.c:1261
 msgid "Include the window border with the screenshot"
-msgstr "Į ekrano nuotrauką įtraukti ir lango rėmelį"
+msgstr "Į ekrano kopiją įtraukti ir lango rėmelį"
 
 #: ../mate-screenshot/src/mate-screenshot.c:1262
 msgid "Remove the window border from the screenshot"
-msgstr "Iš ekrano nuotraukos pašalinti lango rėmelį"
+msgstr "Iš ekrano kopijos pašalinti lango rėmelį"
 
 #: ../mate-screenshot/src/mate-screenshot.c:1263
 msgid "Take screenshot after specified delay [in seconds]"
-msgstr "Padaryti nuotrauką praėjus nurodytam laiko tarpui [sekundėmis]"
+msgstr "Padaryti ekrano kopiją praėjus nurodytam laiko tarpui [sekundėmis]"
 
 #: ../mate-screenshot/src/mate-screenshot.c:1264
 msgid "Effect to add to the border (shadow, border or none)"
@@ -3020,7 +3020,7 @@ msgid ""
 "%s\n"
 "\n"
 "Please check your installation of mate-utils."
-msgstr "Klaida, įkeliant Naudotojo Sąsajos apibrėžimo failą ekrano nuotraukų programai:\n%s\nPrašome patikrinti mate-utils įdiegimą."
+msgstr "Klaida, įkeliant Naudotojo Sąsajos apibrėžimo failą ekrano  kopijų programai:\n%s\nPrašome patikrinti mate-utils įdiegimą."
 
 #: ../mate-screenshot/src/screenshot-dialog.c:269
 msgid "Select a folder"
@@ -3029,7 +3029,7 @@ msgstr "Pasirinkite aplanką"
 #: ../mate-screenshot/src/screenshot-dialog.c:369
 #: ../mate-screenshot/src/screenshot-save.c:196
 msgid "Screenshot.png"
-msgstr "Nuotrauka.png"
+msgstr "Ekrano_kopija.png"
 
 #: ../mate-screenshot/src/screenshot-save.c:57
 #, c-format
@@ -3042,11 +3042,11 @@ msgstr "Nepavyko išvalyti laikinojo aplanko:\n%s"
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
-msgstr "Dukterinis saugojimo procesas netikėtai užsidarė. Negalima įšsaugoti nuotraukos į diską."
+msgstr "Dukterinis įrašymo procesas netikėtai užsivėrė. Negalima įrašyti ekrano kopijos į diską."
 
 #: ../mate-screenshot/src/screenshot-save.c:223
 msgid "Unknown error saving screenshot to disk"
-msgstr "Saugant ekrano nuotrauką į diską, įvyko klaida"
+msgstr "Įrašant ekrano kopiją į diską, įvyko klaida"
 
 #. TODO: maybe we should also look at WM_NAME and WM_CLASS?
 #: ../mate-screenshot/src/screenshot-utils.c:998

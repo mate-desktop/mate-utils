@@ -13,10 +13,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-24 13:29+0100\n"
-"PO-Revision-Date: 2015-01-24 12:29+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Tamil (http://www.transifex.com/projects/p/MATE/language/ta/)\n"
+"POT-Creation-Date: 2015-12-10 13:06+0300\n"
+"PO-Revision-Date: 2015-12-10 10:12+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Tamil (http://www.transifex.com/mate/MATE/language/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -64,7 +64,8 @@ msgid "S_can Remote Folder..."
 msgstr "தொலை அடைவினை _வருடவும்..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../mate-dictionary/src/gdict-window.c:1279 ../logview/logview-window.c:809
+#: ../logview/src/logview-window.c:811
+#: ../mate-dictionary/src/gdict-window.c:1285
 msgid "_Edit"
 msgstr "(_E)தொகு"
 
@@ -77,7 +78,8 @@ msgid "_Collapse All"
 msgstr "_ச எல்லாவற்றையும் சுருக்குக"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../mate-dictionary/src/gdict-window.c:1280 ../logview/logview-window.c:810
+#: ../logview/src/logview-window.c:812
+#: ../mate-dictionary/src/gdict-window.c:1286
 msgid "_View"
 msgstr "பார்வை (_V)"
 
@@ -94,18 +96,20 @@ msgid "All_ocated Space"
 msgstr "_ஒதுக்கப்பட்ட இடம் "
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../mate-dictionary/src/gdict-applet.c:1213
-#: ../mate-dictionary/src/gdict-window.c:1282 ../logview/logview-window.c:812
+#: ../logview/src/logview-window.c:814
+#: ../mate-dictionary/src/gdict-applet.c:1185
+#: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Help"
 msgstr "உதவி (_H)"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../mate-dictionary/src/gdict-window.c:1332 ../logview/logview-window.c:838
+#: ../logview/src/logview-window.c:840
+#: ../mate-dictionary/src/gdict-window.c:1338
 msgid "_Contents"
 msgstr "உள்ளடக்கம் (_C)"
 
-#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/callbacks.c:97
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1245
 msgid "Disk Usage Analyzer"
 msgstr "வட்டு பயன்பாடு ஆராய்வி"
 
@@ -229,12 +233,12 @@ msgstr "இருப்பவை:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:240 ../baobab/src/baobab.c:297
-#: ../baobab/src/callbacks.c:259
+#: ../baobab/src/callbacks.c:258
 msgid "Calculating percentage bars..."
 msgstr "சதவீத பட்டைகளை கணக்கிடுகிறது..."
 
 #: ../baobab/src/baobab.c:251 ../baobab/src/baobab.c:1309
-#: ../baobab/src/callbacks.c:263
+#: ../baobab/src/callbacks.c:262
 msgid "Ready"
 msgstr "தயார்"
 
@@ -470,7 +474,7 @@ msgstr "உங்கள் இல்ல அடைவின் உள்ளடக
 msgid "_Rescan"
 msgstr "மீண்டும் வருடு"
 
-#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2427
+#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/src/gsearchtool.c:2427
 msgid "Folder"
 msgstr "கோப்புறை"
 
@@ -478,7 +482,7 @@ msgstr "கோப்புறை"
 msgid "Usage"
 msgstr "பயன்பாடு"
 
-#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2440
+#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/src/gsearchtool.c:2440
 msgid "Size"
 msgstr "அளவு"
 
@@ -508,43 +512,43 @@ msgstr "\"%s\" செல்லுபடியாகும் அடைவு இ
 msgid "Could not analyze disk usage."
 msgstr "வட்டு பயன்பாட்டினை ஆராய முடியவில்லை"
 
-#: ../baobab/src/baobab-utils.c:366
+#: ../baobab/src/baobab-utils.c:362
 msgid "_Open Folder"
 msgstr "_த கோப்பை திறக்கவும்"
 
-#: ../baobab/src/baobab-utils.c:372
-#: ../gsearchtool/gsearchtool-callbacks.c:1210
+#: ../baobab/src/baobab-utils.c:368
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1210
 msgid "Mo_ve to Trash"
 msgstr "(_v)குப்பைக்கு நகர்த்து"
 
-#: ../baobab/src/baobab-utils.c:406
+#: ../baobab/src/baobab-utils.c:402
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "அடைவை திறக்க இயலவில்லை \"%s\"."
 
-#: ../baobab/src/baobab-utils.c:409
+#: ../baobab/src/baobab-utils.c:405
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr "இந்த ஆவணத்தை காட்டக்கூடிய காட்சி மென்பொருள் எதுவும் நிறுவப்படவில்லை"
 
-#: ../baobab/src/baobab-utils.c:478
+#: ../baobab/src/baobab-utils.c:474
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr "\"%s\" ஐ குப்பைக்கு நகர்த்த முடியவில்லை"
 
-#: ../baobab/src/baobab-utils.c:486
+#: ../baobab/src/baobab-utils.c:482
 msgid "Could not move file to the Trash"
 msgstr "கோப்பை குப்பைக்கு நகர்த்த முடியவில்லை"
 
-#: ../baobab/src/baobab-utils.c:488
+#: ../baobab/src/baobab-utils.c:484
 #, c-format
 msgid "Details: %s"
 msgstr "விவரங்கள்: %s"
 
-#: ../baobab/src/baobab-utils.c:524
+#: ../baobab/src/baobab-utils.c:520
 msgid "There was an error displaying help."
 msgstr "உதவியைக் காட்டுவதில் பிழை"
 
-#: ../baobab/src/callbacks.c:76 ../logview/logview-about.h:49
+#: ../baobab/src/callbacks.c:76 ../logview/src/logview-about.h:49
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -552,7 +556,7 @@ msgid ""
 "any later version."
 msgstr "இந்த நிரல் இலவச மென் பொருளாகும். நீங்கள் இலவச மென் பொருள் அமைப்பினால் வெளியிடப்பட்ட ஜிஎன்யு பொது அனுமதிக்கான இந்த 2ம் பதிப்பு அல்லது அடுத்த பதிப்புகள் விதிகளின் படி நீங்கள் (விருப்பப்படி) மாற்றலாம். அல்லது மீண்டும் பறிமாறலாம்"
 
-#: ../baobab/src/callbacks.c:81 ../logview/logview-about.h:53
+#: ../baobab/src/callbacks.c:81 ../logview/src/logview-about.h:53
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -560,31 +564,1284 @@ msgid ""
 "more details."
 msgstr "இந்த நிரல் உபயோகப்படும் என்ற எதிர்பார்ப்புடன் வெளியிடப்படுகிறது. ஆனால் விற்க தகுதி,குறிப்பிட்ட செயலுக்கான தகுதி உள்பட எந்த உத்திரவாதமும் அளிக்கப்படவில்லை. மேற் கொண்டு விவரங்களுக்கு ஜிஎன்யு பொது அனுமதிக்கான விதிகளை பார்க்கவும்"
 
-#: ../baobab/src/callbacks.c:86 ../logview/logview-about.h:57
+#: ../baobab/src/callbacks.c:86 ../logview/src/logview-about.h:57
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 msgstr "இந்த நிரலுடன் ஜிஎன்யு பொது அனுமதிக்கான விதிகளின் பிரதி உங்களுக்கு கிடைத்திருக்க வேண்டும். இல்லையானால் கீழ் கண்ட முகவரிக்கு கடிதம் எழுதவும். Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA "
 
-#: ../baobab/src/callbacks.c:98
+#: ../baobab/src/callbacks.c:97
 msgid "A graphical tool to analyze disk usage."
 msgstr "வட்டு பயன்பாட்டினை ஆராயும் ஒரு வரைகலை கருவி"
 
 #. translator credits
-#: ../baobab/src/callbacks.c:104 ../mate-dictionary/src/gdict-about.c:55
-#: ../logview/logview-about.h:63
+#: ../baobab/src/callbacks.c:103 ../logview/src/logview-about.h:63
+#: ../mate-dictionary/src/gdict-about.c:55
 msgid "translator-credits"
 msgstr "மொழிபெயர்பாளர் நன்றிகள்"
 
-#: ../baobab/src/callbacks.c:202 ../gsearchtool/gsearchtool-callbacks.c:508
-#: ../gsearchtool/gsearchtool-callbacks.c:848
+#: ../baobab/src/callbacks.c:201
+#: ../gsearchtool/src/gsearchtool-callbacks.c:508
+#: ../gsearchtool/src/gsearchtool-callbacks.c:848
 msgid "The document does not exist."
 msgstr "இந்த ஆவணம் கிடைக்கவில்லை. "
 
-#: ../baobab/src/callbacks.c:283
+#: ../baobab/src/callbacks.c:282
 msgid "The folder does not exist."
 msgstr "அடைவு இல்லை."
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
+msgid "A file searching tool for MATE Desktop"
+msgstr ""
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Search Tool is a simple but powerful utility that allows you to "
+"search for files and folders on any mounted file system. Its interface gives"
+" you instant access to a wide variety of parameters for each search, such as"
+" text contained within a file, ownership, date of modification, file size, "
+"folder exclusion, etc.. </p>"
+msgstr ""
+
+#: ../gsearchtool/data/mate-search-tool.desktop.in.h:1
+msgid "MATE Search Tool"
+msgstr ""
+
+#: ../gsearchtool/data/mate-search-tool.desktop.in.h:2
+msgid "Locate documents and folders on this computer by name or content"
+msgstr "இந்த கணினியில் உள்ள ஆவணங்கள் அல்லது அடைவுகளை பெயராலோ உள்ளடக்கத்தாலோ கண்டுபிடிக்கவும்"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:1
+msgid "Search history"
+msgstr ""
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:2
+msgid "This key defines the items which were searched for in the past."
+msgstr ""
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:3
+msgid "Show Additional Options"
+msgstr "கூடுதல் விருப்பங்களை காட்டு"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:4
+msgid "Disable Quick Search"
+msgstr "விரைவு தேடலை செயல்நீக்கு"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:5
+msgid ""
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
+msgstr "இந்த விசை தேடல் கருவி இடத்தை கண்டுபிடி கட்டளையை எளிய கோப்பு தேடல்கள் முடிந்ததும் செயலிழக்கச்செய்யுமா என நிர்ணயிக்கிறது."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:6
+msgid "Quick Search Excluded Paths"
+msgstr "பாதைகளை சேர்க்காமல் விரைவாக தேடவும்"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:7
+msgid ""
+"This key defines the paths the search tool will exclude from a quick search."
+" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
+"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
+msgstr "இந்த விசை தேடல் கருவி விரைவு தேடலுக்கு தவிர்க்கும் பாதைகளை நிர்ணயிக்கிறது. குறியில் குறியும், '?' உம் ஆதரிக்கப்படும். முன்னிருப்பு மதிப்புகள் /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, மற்றும் /var/*."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:8
+msgid "Disable Quick Search Second Scan"
+msgstr "விரைவு தேடல் இரண்டாம் வருடலை செயல்நீக்கு"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:9
+msgid ""
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
+msgstr "இந்த விசை தேடல் கருவி தேடு கட்டளையை விரைவு தேடல் முடிந்ததும் செயலிழக்கச்செய்யுமா என நிர்ணயிக்கிறது."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:10
+msgid "Quick Search Second Scan Excluded Paths"
+msgstr "பாதைகளை சேர்க்காமல் இரண்டாவது வருடலுக்கு விரைவாக தேடவும்"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:11
+msgid ""
+"This key defines the paths the search tool will exclude from a second scan "
+"when performing a quick search. The second scan uses the find command to "
+"search for files. The purpose of the second scan is to find files that have "
+"not been indexed. The wildcards '*' and '?' are supported. The default value"
+" is /."
+msgstr "இந்த விசை தேடல் கருவி விரைவு தேடலுக்கு இரண்டாவது வருடலுக்கு தவிர்க்கும் பாதைகளை நிர்ணயிக்கிறது. இரண்டாவது வருடல் கண்டுபிடி கட்டளையை கோப்புகளை தேட பயன்படுத்துகிறது. இதன் நோக்கம் இதுவரை பட்டியலிடாத கோப்புகளை தேடுவது. குறியில் குறியும், '?' உம் ஆதரிக்கப்படும். முன்னிருப்பு மதிப்பு /."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:12
+msgid "Search Result Columns Order"
+msgstr "தேடல் முடிவு நிரல்கள் வரிசை"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:13
+msgid ""
+"This key defines the order of the columns in the search results. This key "
+"should not be modified by the user."
+msgstr "இந்த விசை தேடல் விடைகளில் உள்ள நெடுவரிசைகள் வரிசையை நிர்ணயிக்கிறது. இந்த விசை பயனரால் மாற்றப்படக்கூடாது."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:14
+msgid "Default Window Width"
+msgstr "முன்னிருப்பு சாளர அகலம்"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:15
+msgid ""
+"This key defines the window width, and it's used to remember the size of the"
+" search tool between sessions. Setting it to -1 will make the search tool "
+"use the default width."
+msgstr "இந்த விசை சாளரத்தின் அகலத்தை நிர்ணயிக்கிறது மற்றும் அமர்வுகளுக்கு இடையில் தேடல் கருவியின் அளவை நினைவு கொள்ள  பயன்படுகிறது. அதை -1 என அமைத்தால் தேடல் கருவியை முன்னிருப்பு அகலத்தை பயன்படுத்தச்செய்யும்."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:16
+msgid "Default Window Height"
+msgstr "முன்னிருப்பு சாளர உயரம்"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:17
+msgid ""
+"This key defines the window height, and it's used to remember the size of "
+"the search tool between sessions. Setting it to -1 will make the search tool"
+" use the default height."
+msgstr "இந்த விசை சாளரத்தின் உயரத்தை நிர்ணயிக்கிறது மற்றும் அமர்வுகளுக்கு இடையில் தேடல் கருவியின் அளவை நினைவு கொள்ள  பயன்படுகிறது. அதை -1 என அமைத்தால் தேடல் கருவியை முன்னிருப்பு உயரத்தை பயன்படுத்தச்செய்யும்."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:18
+msgid "Default Window Maximized"
+msgstr "முன்னிருப்பு சாளர முழு அளவு"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:19
+msgid ""
+"This key determines if the search tool window starts in a maximized state."
+msgstr "இந்த விசை தேடல் கருவி சாளரம் பெரிதாக்கிய நிலையில் துவங்குமா என நிர்ணயிக்கிறது."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:20
+msgid "Look in Folder"
+msgstr "அடைவில் பார்க்கவும்"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:21
+msgid "This key defines the default value of the \"Look in Folder\" widget."
+msgstr "இந்த விசை  \"அடைவில் காண்க\" விட்செட்டின் முன்னிருப்பு மதிப்பை வரையறுக்கிறது "
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:22
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"உரை உள்ளடக்கியது\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:23
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
+msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"தேதி மாற்றப்பட்டது இதை விட குறைந்தது\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:24
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
+msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"தேதி மாற்றப்பட்டது இதை விட அதிகம்\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:25
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"அளவு குறைந்தது\"  தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:26
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
+msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"அளவு அதிக பட்சம்\"  தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:27
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
+msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"கோப்பு காலி\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:28
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
+msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"பயனருக்கு சொந்தம்\"  தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது. "
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:29
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when"
+" the search tool is started."
+msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"குழுக்கு சொந்தம்\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது. "
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:30
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
+msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"பயனர் அடையாளம் தெரியாது\"  தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது. "
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:31
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"பெயரில் இது இல்லை\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:32
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option"
+" is selected when the search tool is started."
+msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"பெயர் வழக்கமான தொடருக்கு பொருந்தம்\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:33
+msgid ""
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
+msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"மறைந்த கோப்புகள் மற்றும் கோப்புகளை காட்டு\"  தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது. "
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:34
+msgid ""
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"சிம் இணைப்புகளை தொடர்\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:35
+msgid ""
+"This key determines if the \"Exclude other filesystems\" search option is "
+"selected when the search tool is started."
+msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"மற்ற கோப்பு அமைப்புகளை விலக்கு\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "கோப்பு செல்லுபடியாகும்  .desktop கோப்பு அல்ல"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "அடையாளம் காணா மேல்மேசை கோப்பு பதிப்பு '%s' "
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:957
+#, c-format
+msgid "Starting %s"
+msgstr "%s ஐ துவக்குகிறது"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1098
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "பயன்பாடு கட்டளை வரியில் ஆவணங்களை ஒப்புக்கொள்ளாது"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1166
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "இனம் காணாத துவக்க தேர்வு: %d"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1365
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "'Type=Link' மேல்மேசை உள்ளீடுக்கு ஆவண யூஆர்ஐ ஐ கொடுக்க இயலாது"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1384
+#, c-format
+msgid "Not a launchable item"
+msgstr "துவக்க முடியாத உருப்படி"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:225
+msgid "Disable connection to session manager"
+msgstr "அமர்வு மேலாளருக்கு இணைப்பை செயல் நீக்கு"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+msgid "Specify file containing saved configuration"
+msgstr "சேமித்த வடிவமைப்பு கூடிய கோப்பை குறிப்பிடுக"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+msgid "FILE"
+msgstr "FILE"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+msgid "Specify session management ID"
+msgstr "அமர்வு மேலாண்மை அடையாளத்தை குறிப்பிடுக"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+msgid "ID"
+msgstr "ஐடி (ID)"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:252
+msgid "Session management options:"
+msgstr "அமர்வு மேலாண்மை தேர்வுகள்:"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:253
+msgid "Show session management options"
+msgstr "அமர்வு மேலாணமை தேர்வுகளை காட்டு"
+
+#: ../gsearchtool/src/gsearchtool.c:82
+msgid "Contains the _text"
+msgstr "(_t)உரையில்"
+
+#: ../gsearchtool/src/gsearchtool.c:84
+msgid "_Date modified less than"
+msgstr "(_D)மாற்றப்பட்ட தேதி குறைந்த பட்சம்"
+
+#: ../gsearchtool/src/gsearchtool.c:84 ../gsearchtool/src/gsearchtool.c:85
+msgid "days"
+msgstr "நாள்"
+
+#: ../gsearchtool/src/gsearchtool.c:85
+msgid "Date modified more than"
+msgstr "மாற்றப்பட்ட தேதி அதிகபட்சம்"
+
+#: ../gsearchtool/src/gsearchtool.c:87
+msgid "S_ize at least"
+msgstr "(_i)குறைந்த பட்ச அளவு"
+
+#: ../gsearchtool/src/gsearchtool.c:87 ../gsearchtool/src/gsearchtool.c:88
+msgid "kilobytes"
+msgstr "கிலோபைட்"
+
+#: ../gsearchtool/src/gsearchtool.c:88
+msgid "Si_ze at most"
+msgstr "(_z)அளவு அதிகபட்சம்"
+
+#: ../gsearchtool/src/gsearchtool.c:89
+msgid "File is empty"
+msgstr "கோப்பு காலியாக உள்ளது"
+
+#: ../gsearchtool/src/gsearchtool.c:91
+msgid "Owned by _user"
+msgstr "(_u)உரிமை பயனீட்டாளருடையது"
+
+#: ../gsearchtool/src/gsearchtool.c:92
+msgid "Owned by _group"
+msgstr "(_g)உரிமை குழுவிற்கு உள்ளது"
+
+#: ../gsearchtool/src/gsearchtool.c:93
+msgid "Owner is unrecognized"
+msgstr "உரிமையாளர் கண்டரியமுடியவில்லை"
+
+#: ../gsearchtool/src/gsearchtool.c:95
+msgid "Na_me does not contain"
+msgstr "(_m)பெயரில் இல்லை"
+
+#: ../gsearchtool/src/gsearchtool.c:96
+msgid "Name matches regular e_xpression"
+msgstr "(_x)பெயர் நிலையான கோப்போடு பொருந்துகிறது"
+
+#: ../gsearchtool/src/gsearchtool.c:98
+msgid "Show hidden and backup files"
+msgstr "மறைந்த மற்றும் காப்பு கோப்புகளை காட்டவும்"
+
+#: ../gsearchtool/src/gsearchtool.c:99
+msgid "Follow symbolic links"
+msgstr "குறியீட்டு இணைப்புகளை பின்தொடர்"
+
+#: ../gsearchtool/src/gsearchtool.c:100
+msgid "Exclude other filesystems"
+msgstr "மற்ற கோப்பு அமைப்புகளை விலக்கவும்"
+
+#: ../gsearchtool/src/gsearchtool.c:158
+msgid "Show version of the application"
+msgstr "பயன்பாட்டின் பதிப்பினை காட்டு"
+
+#: ../gsearchtool/src/gsearchtool.c:159 ../gsearchtool/src/gsearchtool.c:164
+#: ../gsearchtool/src/gsearchtool.c:173
+msgid "STRING"
+msgstr "STRING"
+
+#: ../gsearchtool/src/gsearchtool.c:160
+msgid "PATH"
+msgstr "PATH"
+
+#: ../gsearchtool/src/gsearchtool.c:161
+msgid "VALUE"
+msgstr "VALUE"
+
+#: ../gsearchtool/src/gsearchtool.c:165 ../gsearchtool/src/gsearchtool.c:166
+msgid "DAYS"
+msgstr "DAYS"
+
+#: ../gsearchtool/src/gsearchtool.c:167 ../gsearchtool/src/gsearchtool.c:168
+msgid "KILOBYTES"
+msgstr "KILOBYTES"
+
+#: ../gsearchtool/src/gsearchtool.c:170
+msgid "USER"
+msgstr "USER"
+
+#: ../gsearchtool/src/gsearchtool.c:171
+msgid "GROUP"
+msgstr "GROUP"
+
+#: ../gsearchtool/src/gsearchtool.c:174
+msgid "PATTERN"
+msgstr "PATTERN"
+
+#: ../gsearchtool/src/gsearchtool.c:385
+msgid "A locate database has probably not been created."
+msgstr "ஒரு இடம் கண்டுபிடி தரவுத்தளம் உருவாக்கப்படவில்லை போலுள்ளது."
+
+#: ../gsearchtool/src/gsearchtool.c:487
+#, c-format
+msgid "Character set conversion failed for \"%s\""
+msgstr "எழுத்துரு அமைப்பு மாற்றம் இதற்கு இயலவில்லை \"%s\""
+
+#: ../gsearchtool/src/gsearchtool.c:511
+msgid "Searching..."
+msgstr "தேடுகிறது..."
+
+#: ../gsearchtool/src/gsearchtool.c:511 ../gsearchtool/src/gsearchtool.c:1031
+#: ../gsearchtool/src/gsearchtool.c:3030
+msgid "Search for Files"
+msgstr "கோப்புகளை தேடு"
+
+#: ../gsearchtool/src/gsearchtool.c:977 ../gsearchtool/src/gsearchtool.c:1006
+msgid "No files found"
+msgstr "கோப்புகள் எதுவும் கிடைக்கவில்லை"
+
+#: ../gsearchtool/src/gsearchtool.c:999
+msgid "(stopped)"
+msgstr "(நிருத்தப்பட்டது)"
+
+#: ../gsearchtool/src/gsearchtool.c:1005
+msgid "No Files Found"
+msgstr "கோப்புகள் எதுவும் கிடைக்கவில்லை"
+
+#: ../gsearchtool/src/gsearchtool.c:1010
+#, c-format
+msgid "%'d File Found"
+msgid_plural "%'d Files Found"
+msgstr[0] "%d கோப்பு கிடைத்துள்ளது"
+msgstr[1] "%d கோப்புகள் கிடைத்துள்ளன"
+
+#: ../gsearchtool/src/gsearchtool.c:1014 ../gsearchtool/src/gsearchtool.c:1052
+#, c-format
+msgid "%'d file found"
+msgid_plural "%'d files found"
+msgstr[0] "%d கோப்பு கிடைத்துள்ளது"
+msgstr[1] "%d கோப்புகள் கிடைத்துள்ளன"
+
+#: ../gsearchtool/src/gsearchtool.c:1143
+msgid "Entry changed called for a non entry option!"
+msgstr "உள்ளீடு மாற்றப்பட்டதால் உள்ளீடு இல்லாத தேர்வை அழைக்கிறது!"
+
+#: ../gsearchtool/src/gsearchtool.c:1308
+msgid "Set the text of \"Name contains\" search option"
+msgstr "\"பெயர் கொண்டுள்ள\" உரையை தேடல் விருப்பமாக அமைக்கவும்"
+
+#: ../gsearchtool/src/gsearchtool.c:1309
+msgid "Set the text of \"Look in folder\" search option"
+msgstr "\"அடைவில் தேடு\" உரையை தேடல் விருப்பத்தில் அமைக்கவும்"
+
+#: ../gsearchtool/src/gsearchtool.c:1310
+msgid "Sort files by one of the following: name, folder, size, type, or date"
+msgstr "கோப்புகளை கீழ்கண்டவைகளின் படி அடுக்கவும்:பெயர்,அடைவு, அளவு,வகை அல்லது தேதி"
+
+#: ../gsearchtool/src/gsearchtool.c:1311
+msgid "Set sort order to descending, the default is ascending"
+msgstr "இறங்குவரிசையில் அடுக்கவும், பொதுவாக ஏறுவரிசையில் அடுக்கப்படும்"
+
+#: ../gsearchtool/src/gsearchtool.c:1312
+msgid "Automatically start a search"
+msgstr "தேடலை தானாக துவக்கவும்"
+
+#: ../gsearchtool/src/gsearchtool.c:1318
+#, c-format
+msgid "Select the \"%s\" search option"
+msgstr "\"%s\" தேடல் விருப்பத்தை தேர்ந்தெடுக்கவும்"
+
+#: ../gsearchtool/src/gsearchtool.c:1321
+#, c-format
+msgid "Select and set the \"%s\" search option"
+msgstr "\"%s\" ஐ தேர்ந்தெடுத்து தேடல் விருப்பமாக அமைக்கவும்"
+
+#: ../gsearchtool/src/gsearchtool.c:1428
+msgid "Invalid option passed to sortby command line argument."
+msgstr "அடுக்குவதற்கு செல்லாத தேர்வு பயன்படுத்தப்பட்டது"
+
+#: ../gsearchtool/src/gsearchtool.c:1720
+msgid ""
+"\n"
+"... Too many errors to display ..."
+msgstr "\n... காட்ட அதிக பிழைகள் உள்ளன ..."
+
+#: ../gsearchtool/src/gsearchtool.c:1734
+msgid ""
+"The search results may be invalid.  There were errors while performing this "
+"search."
+msgstr "தேடல் விடைகள் செல்லாது. தேடும் போது பிழை நேர்ந்தது"
+
+#: ../gsearchtool/src/gsearchtool.c:1746 ../gsearchtool/src/gsearchtool.c:1790
+msgid "Show more _details"
+msgstr "(_d)அதிக தகவலை காட்டு"
+
+#: ../gsearchtool/src/gsearchtool.c:1776
+msgid ""
+"The search results may be out of date or invalid.  Do you want to disable "
+"the quick search feature?"
+msgstr "தேடல் விடைகள் காலம் கடந்தவை அல்லது செல்லாது. வேக தேடல் வசதியை செயல்நீக்கம் செய்ய விருப்பமா?"
+
+#: ../gsearchtool/src/gsearchtool.c:1801
+msgid "Disable _Quick Search"
+msgstr "(_Q)வேக தேடலை செயல்நீக்கு"
+
+#: ../gsearchtool/src/gsearchtool.c:1828
+#, c-format
+msgid "Failed to set process group id of child %d: %s.\n"
+msgstr "சேய் குழு அடையாளம் அமைத்தல் தோல்வியுற்றது %d: %s.\n"
+
+#: ../gsearchtool/src/gsearchtool.c:1853
+msgid "Error parsing the search command."
+msgstr "தேடல் கட்டளையை பகுப்பதில் பிழை"
+
+#: ../gsearchtool/src/gsearchtool.c:1885
+msgid "Error running the search command."
+msgstr "தேடல் கட்டளையை இயக்குவதில் பிழை"
+
+#: ../gsearchtool/src/gsearchtool.c:2008
+#, c-format
+msgid "Enter a text value for the \"%s\" search option."
+msgstr "\"%s\"தேடல் விருப்பத்திற்கு உரை மதிப்பினை உள்ளிடவும்."
+
+#. Translators:  Below is a string displaying the search options name
+#. and unit value.  For example, "\"Date modified less than\" in days".
+#: ../gsearchtool/src/gsearchtool.c:2013
+#, c-format
+msgid "\"%s\" in %s"
+msgstr "\"%s\" in %s"
+
+#: ../gsearchtool/src/gsearchtool.c:2015
+#, c-format
+msgid "Enter a value in %s for the \"%s\" search option."
+msgstr "\"%s\" தேடல் விருப்பத்திற்கு %sல் மதிப்பினை உள்ளிடவும்."
+
+#: ../gsearchtool/src/gsearchtool.c:2073
+#, c-format
+msgid "Remove \"%s\""
+msgstr "\"%s\"ஐ நீக்கு"
+
+#: ../gsearchtool/src/gsearchtool.c:2074
+#, c-format
+msgid "Click to remove the \"%s\" search option."
+msgstr "சொடுக்கி \"%s\" தேடல் விருப்பத்தை நீக்கவும்."
+
+#: ../gsearchtool/src/gsearchtool.c:2167
+msgid "A_vailable options:"
+msgstr "இருக்கும் விருப்பங்கள்: (_v)"
+
+#: ../gsearchtool/src/gsearchtool.c:2196
+msgid "Available options"
+msgstr "இருக்கும் விருப்பங்கள்"
+
+#: ../gsearchtool/src/gsearchtool.c:2197
+msgid "Select a search option from the drop-down list."
+msgstr "கீழ் விரி பட்டியலிலிருந்து தேடல் விருப்பத்தை தேர்ந்தெடுக்கவும்"
+
+#: ../gsearchtool/src/gsearchtool.c:2209
+msgid "Add search option"
+msgstr "தேடு விருப்பத்தை சேர்"
+
+#: ../gsearchtool/src/gsearchtool.c:2210
+msgid "Click to add the selected available search option."
+msgstr "தேர்ந்தெடுக்கப்பட்ட இருக்கும் தேடல் விருப்பத்தை சேர்க்க சொடுக்கவும்."
+
+#: ../gsearchtool/src/gsearchtool.c:2299
+msgid "S_earch results:"
+msgstr "(_e)தேடல் விடைகள்:"
+
+#: ../gsearchtool/src/gsearchtool.c:2343
+msgid "List View"
+msgstr "பட்டியல் பார்வை"
+
+#: ../gsearchtool/src/gsearchtool.c:2403
+#: ../mate-dictionary/libgdict/gdict-source.c:246
+msgid "Name"
+msgstr "பெயர்"
+
+#: ../gsearchtool/src/gsearchtool.c:2452
+msgid "Type"
+msgstr "வகை"
+
+#: ../gsearchtool/src/gsearchtool.c:2464
+msgid "Date Modified"
+msgstr "மாற்றப்பட்ட தேதி"
+
+#: ../gsearchtool/src/gsearchtool.c:2799
+msgid "_Name contains:"
+msgstr "பெயர் கொண்ட: (_N)"
+
+#: ../gsearchtool/src/gsearchtool.c:2813 ../gsearchtool/src/gsearchtool.c:2814
+msgid "Enter a filename or partial filename with or without wildcards."
+msgstr "குறியில் குறியுடனோ அல்லது அது இல்லாமலோ ஒரு கோப்புப் பெயர் அல்லது கோப்புப் பெயரில் ஓரளவோ உள்ளிடுக"
+
+#: ../gsearchtool/src/gsearchtool.c:2814
+msgid "Name contains"
+msgstr "பெயர் கொண்ட"
+
+#: ../gsearchtool/src/gsearchtool.c:2820
+msgid "_Look in folder:"
+msgstr "(_L)அடைவில் பார்க்கவும்:"
+
+#: ../gsearchtool/src/gsearchtool.c:2826
+msgid "Browse"
+msgstr "கோப்பு..."
+
+#: ../gsearchtool/src/gsearchtool.c:2835
+msgid "Look in folder"
+msgstr "அடைவில் பார்க்கவும்"
+
+#: ../gsearchtool/src/gsearchtool.c:2835
+msgid "Select the folder or device from which you want to begin the search."
+msgstr "தேடலை ஆரம்பிக்க அடைவு அல்லது சாதனத்தை தேர்ந்தெடுக்கவும்."
+
+#: ../gsearchtool/src/gsearchtool.c:2853
+msgid "Select more _options"
+msgstr "கூடுதல் விருப்பங்களை தேர்ந்தெடு (_o)"
+
+#: ../gsearchtool/src/gsearchtool.c:2862
+msgid "Select more options"
+msgstr "கூடுதல் விருப்பங்களை தேர்ந்தெடு"
+
+#: ../gsearchtool/src/gsearchtool.c:2862
+msgid "Click to expand or collapse the list of available options."
+msgstr "இருக்கும் விருப்பங்களின் பட்டியைலை விரிவாக்க அல்லது குறுக்க சொடுக்கவும்"
+
+#: ../gsearchtool/src/gsearchtool.c:2886
+msgid "Click to display the help manual."
+msgstr "உதவி கையேட்டினை காட்ட சொடுக்கவும்."
+
+#: ../gsearchtool/src/gsearchtool.c:2894
+msgid "Click to close \"Search for Files\"."
+msgstr "\"கோப்புகளை தேட\"என்பதை மூட சொடுக்கவும்."
+
+#: ../gsearchtool/src/gsearchtool.c:2920
+msgid "Click to perform a search."
+msgstr "தேடுவதற்கு சொடுக்கவும்."
+
+#: ../gsearchtool/src/gsearchtool.c:2921
+msgid "Click to stop a search."
+msgstr "தேடுதலை முடிக்க சொடுக்கவும்."
+
+#: ../gsearchtool/src/gsearchtool.c:3015
+msgid "- the MATE Search Tool"
+msgstr "-க்னோம் தேடல் கருவி"
+
+#: ../gsearchtool/src/gsearchtool.c:3024
+#, c-format
+msgid "Failed to parse command line arguments: %s\n"
+msgstr "கட்டளை வரி துணையலகுகளை பகுக்க முடியவில்லை: %s\n"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:198
+msgid "Could not open help document."
+msgstr "உதவி ஆவணத்தை திற்க முடியவில்லை"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:349
+#, c-format
+msgid "Are you sure you want to open %d document?"
+msgid_plural "Are you sure you want to open %d documents?"
+msgstr[0] "%d ஆவணத்தை திறக்க விருப்பமா?"
+msgstr[1] "%d ஆவணத்தை திறக்க விருப்பமா?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:354
+#: ../gsearchtool/src/gsearchtool-callbacks.c:551
+#, c-format
+msgid "This will open %d separate window."
+msgid_plural "This will open %d separate windows."
+msgstr[0] "%d ஆவணத்தை திறக்க விருப்பமா?"
+msgstr[1] "%d தனி சாளரத்தில் திறக்கும்"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:394
+#, c-format
+msgid "Could not open document \"%s\"."
+msgstr "ஆவணைங்களை திறக்க இயலாது\"%s\"."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:423
+#, c-format
+msgid "Could not open folder \"%s\"."
+msgstr "அடைவகங்களை திறக்க இயலாது\"%s\"."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:431
+msgid "The caja file manager is not running."
+msgstr "நாடுலஸ் கோப்பு மேலாளர் இயக்கத்தில் இல்லை"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:523
+msgid "There is no installed viewer capable of displaying the document."
+msgstr "இந்த ஆவணத்தை காட்டக்கூடிய காட்சி மென்பொருள் எதுவும் நிறுவப்படவில்லை"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:546
+#, c-format
+msgid "Are you sure you want to open %d folder?"
+msgid_plural "Are you sure you want to open %d folders?"
+msgstr[0] "%d அடைவை திறக்க விருப்பமா?"
+msgstr[1] "%d அடைவை திறக்க விருப்பமா?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:699
+#, c-format
+msgid "Could not move \"%s\" to trash."
+msgstr "குப்பைக்கு நகர்த்த முடியவில்லை \"%s\""
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:730
+#, c-format
+msgid "Do you want to delete \"%s\" permanently?"
+msgstr "முழுமையாக \"%s\" ஐ நீக்க விருப்பமா?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:733
+#, c-format
+msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
+msgstr "குப்பை இல்லை. \"%s\" ஐ குப்பைக்கு நகர்த்த முடியாது"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:772
+#, c-format
+msgid "Could not delete \"%s\"."
+msgstr "அழிக்க இயலாது\"%s\"."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:884
+#, c-format
+msgid "Deleting \"%s\" failed: %s."
+msgstr "அழிப்பது \"%s\" இயலவில்லை: %s."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:896
+#, c-format
+msgid "Moving \"%s\" failed: %s."
+msgstr "நகருதல்\"%s\"  இயலவில்லை: %s."
+
+#. Popup menu item: Open
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1024
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1054
+msgid "_Open"
+msgstr "(_O)திற"
+
+#. Popup menu item: Open with (default)
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1079
+#, c-format
+msgid "_Open with %s"
+msgstr "%s ஆல் திற (_O)"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1114
+#, c-format
+msgid "Open with %s"
+msgstr "%s ஆல் திற"
+
+#. Popup menu item: Open With
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1147
+msgid "Open Wit_h"
+msgstr "(_h) இதனால் திற"
+
+#. Popup menu item: Open Containing Folder
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1192
+msgid "Open Containing _Folder"
+msgstr ""
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1232
+msgid "_Save Results As..."
+msgstr "(_S) ...என்று முடிவுகளை சேமி"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1614
+msgid "Save Search Results As..."
+msgstr "தேடல் முடிவுகளை ... என சேமி."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1643
+msgid "Could not save document."
+msgstr "ஆவணங்களை சேமிக்க இயலாது"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1644
+msgid "You did not select a document name."
+msgstr "நீங்கள் ஆவணதின் பெயரை தேர்ந்தெடுக்கவில்லை."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1674
+#, c-format
+msgid "Could not save \"%s\" document to \"%s\"."
+msgstr "\"%s\" ஆவனதை \"%s\" ல் செமிக்க இயலவில்லை."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1707
+#, c-format
+msgid "The document \"%s\" already exists.  Would you like to replace it?"
+msgstr "ஆவனம் \"%s\" ஏற்கெனவே உள்ளது.  மாற்ற வேண்டுமா?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1711
+msgid "If you replace an existing file, its contents will be overwritten."
+msgstr "ஏற்கெனவே உள்ள கோப்பை நீங்கள் மாற்றினால் இதன் உள்ளடக்கங்கள் மேலெழுதப்படும்"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1726
+#: ../mate-screenshot/src/screenshot-xfer.c:82
+msgid "_Replace"
+msgstr "மாற்று (_R)"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1775
+msgid "The document name you selected is a folder."
+msgstr "நீங்கள் தேர்வு செய்த ஆவணத்திற்கான பெயரில் அடைவு உள்ளது"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1811
+msgid "You may not have write permissions to the document."
+msgstr "ஆவணத்தில் எழுதும் உரிமை உங்களுக்கு இல்லை"
+
+#. Translators:  Below are the strings displayed in the 'Date Modified'
+#. column of the list view.  The format of this string can vary depending
+#. on age of a file.  Please modify the format of the timestamp to match
+#. your locale.  For example, to display 24 hour time replace the '%-I'
+#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
+#: ../gsearchtool/src/gsearchtool-support.c:448
+msgid "today at %-I:%M %p"
+msgstr "%-I:%M %p ல் இன்று"
+
+#: ../gsearchtool/src/gsearchtool-support.c:450
+msgid "yesterday at %-I:%M %p"
+msgstr "%-I:%M %p ல் நேற்று"
+
+#: ../gsearchtool/src/gsearchtool-support.c:452
+#: ../gsearchtool/src/gsearchtool-support.c:454
+msgid "%A, %B %-d %Y at %-I:%M:%S %p"
+msgstr "%A, %B %-d %Y at %-I:%M:%S %p"
+
+#: ../gsearchtool/src/gsearchtool-support.c:641
+msgid "link (broken)"
+msgstr "தொகுப்பு(உடைந்தது)"
+
+#: ../gsearchtool/src/gsearchtool-support.c:645
+#, c-format
+msgid "link to %s"
+msgstr "%s உடன் இணைத்து"
+
+#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
+#. Localizers:
+#. * Feel free to leave out the st, nd, rd and th suffix or
+#. * make some or all of them match.
+#. localizers: tag used to detect the first copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1257
+msgid " (copy)"
+msgstr " (நகலெடு)"
+
+#. localizers: tag used to detect the second copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1259
+msgid " (another copy)"
+msgstr " (மற்றுமொரு நகலெடு)"
+
+#. localizers: tag used to detect the x11th copy of a file
+#. localizers: tag used to detect the x12th copy of a file
+#. localizers: tag used to detect the x13th copy of a file
+#. localizers: tag used to detect the xxth copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1262
+#: ../gsearchtool/src/gsearchtool-support.c:1264
+#: ../gsearchtool/src/gsearchtool-support.c:1266
+#: ../gsearchtool/src/gsearchtool-support.c:1276
+msgid "th copy)"
+msgstr "ஆவது நகல்)"
+
+#. localizers: tag used to detect the x1st copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1269
+msgid "st copy)"
+msgstr "வது நகல்)"
+
+#. localizers: tag used to detect the x2nd copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1271
+msgid "nd copy)"
+msgstr "ஆவது நகல்)"
+
+#. localizers: tag used to detect the x3rd copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1273
+msgid "rd copy)"
+msgstr "ஆவது நகல்)"
+
+#. localizers: appended to first file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1290
+#, c-format
+msgid "%s (copy)%s"
+msgstr "%s (நகல்)%s"
+
+#. localizers: appended to second file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1292
+#, c-format
+msgid "%s (another copy)%s"
+msgstr "%s (மற்றொரு நகல்)%s"
+
+#. localizers: appended to x11th file copy
+#. localizers: appended to x12th file copy
+#. localizers: appended to x13th file copy
+#. localizers: appended to xxth file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1295
+#: ../gsearchtool/src/gsearchtool-support.c:1297
+#: ../gsearchtool/src/gsearchtool-support.c:1299
+#: ../gsearchtool/src/gsearchtool-support.c:1308
+#, c-format
+msgid "%s (%dth copy)%s"
+msgstr "%s (%d ஆவது நகல்)%s"
+
+#. localizers: appended to x1st file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1302
+#, c-format
+msgid "%s (%dst copy)%s"
+msgstr "%s (%d ஆவது நகல்)%s"
+
+#. localizers: appended to x2nd file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1304
+#, c-format
+msgid "%s (%dnd copy)%s"
+msgstr "%s (%d ஆவது நகல்)%s"
+
+#. localizers: appended to x3rd file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1306
+#, c-format
+msgid "%s (%drd copy)%s"
+msgstr "%s (%d ஆவது நகல்)%s"
+
+#: ../gsearchtool/src/gsearchtool-support.c:1353
+msgid " (invalid Unicode)"
+msgstr " (தவறான யூனிகோட்)"
+
+#. localizers: opening parentheses to match the "th copy)" string
+#: ../gsearchtool/src/gsearchtool-support.c:1442
+msgid " ("
+msgstr " ("
+
+#. localizers: opening parentheses of the "th copy)" string
+#: ../gsearchtool/src/gsearchtool-support.c:1450
+#, c-format
+msgid " (%d"
+msgstr "(%d"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "பதிவு கோப்பு காட்டி"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "கணினி பதிவு கோப்புகளை பார்வையிடு அல்லது கண்காணி"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
+msgid "Log file to open up on startup"
+msgstr "துவக்கதில் திறக்க வேண்டிய பதிவுகோப்புகள்"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
+msgid ""
+"Specifies the log file displayed at startup. The default is either "
+"/var/adm/messages or /var/log/messages, depending on your operating system."
+msgstr "துவக்கத்தில் திறக்க வேண்டிய பதிவு கோப்புகளை குறிக்கிறது. முன்னிருப்பு /var/adm/messages அல்லது /var/log/messages, உங்கள் இயக்கத்தளத்தைப் பொருத்து இருக்கலாம்."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
+msgid "Size of the font used to display the log"
+msgstr "பதிவினை காட்ட பயன்படுத்தப்படும் எழுத்துரு அளவு"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr "முதன்மை கிளை காட்சியில் பதிவேட்டை காட்ட பயன்படும் நிலை அகல எழுத்துருவின் அளவை குறிப்பிடுகிறது. முன்னிருப்பு முனைய எழுத்துரு அளவு."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
+msgid "Height of the main window in pixels"
+msgstr "பிக்ஸல்களில் முதன்மை சாளரத்தின் உயரம்"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "பிக்ஸலில் பதிவு காட்டியின் முதன்மை சாளரத்தின் உயரத்தை குறிக்கிறது."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
+msgid "Width of the main window in pixels"
+msgstr "பிக்ஸலில் முதன்மை சாளரத்தின் அகலம்"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "பிக்ஸலில் பதிவு காட்டியின் முதன்மை சாளரத்தின் அகலத்தை குறிக்கிறது."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
+msgid "Log files to open up on startup"
+msgstr "துவக்கத்தில் திறக்க வேண்டிய பதிவு கோப்புகள்"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr "துவக்கத்தில் திறக்க வேண்டிய பதிவு கோப்புகளை குறிக்கிறது. முன்னிருப்பு பட்டியல் /etc/syslog.conf ஏ படிப்பது மூலம் உருவாக்கப்பட்டிருக்கும்."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
+msgid "List of saved filters"
+msgstr ""
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
+msgid "List of saved regexp filters"
+msgstr ""
+
+#: ../logview/data/logview-filter.ui.h:1
+#: ../mate-screenshot/data/mate-screenshot.ui.h:3
+msgid "_Name:"
+msgstr "பெயர்: (_N)"
+
+#: ../logview/data/logview-filter.ui.h:2
+msgid "_Regular Expression:"
+msgstr "(_R) இயல்பான கூற்று:"
+
+#: ../logview/data/logview-filter.ui.h:3
+msgid "Highlight"
+msgstr "முனைப்புறுத்தல்"
+
+#: ../logview/data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "மறை"
+
+#: ../logview/data/logview-filter.ui.h:5
+msgid "Foreground:"
+msgstr "முன்னணி:"
+
+#: ../logview/data/logview-filter.ui.h:6
+msgid "Background:"
+msgstr "பின்னணி:"
+
+#: ../logview/data/logview-filter.ui.h:7
+msgid "Effect:"
+msgstr "விளைவுகள்:"
+
+#: ../logview/src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "கோப்பு %sஐ திறக்க வாய்ப்பில்லை"
+
+#: ../logview/src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "கோப்பு பெயர் காலியாக உள்ளது!"
+
+#: ../logview/src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "வடிப்பியில் : எழுத்துரு இருக்கலாகாது"
+
+#: ../logview/src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "இயல்பான வெளிப்பாடு வெற்றாக உள்ளது!"
+
+#: ../logview/src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "இயல்பான வெளிப்பாடு செல்லுபடியாகாதது: %s"
+
+#: ../logview/src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "தயை  செய்து முன்புலம் அல்லது பின்புல வண்னத்தை குறிப்பிடுக."
+
+#: ../logview/src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "வடிப்பியை  திருத்துக"
+
+#: ../logview/src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "புதிய வடிப்பியை சேர்க்கவும்"
+
+#: ../logview/src/logview-filter-manager.c:508
+msgid "Filters"
+msgstr "கோப்புகள்"
+
+#: ../logview/src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "தேடு (_F):"
+
+#: ../logview/src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "முந்தையதை தேடு"
+
+#: ../logview/src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "தேடும் சரத்தின் முந்தைய நிகழ்வை தேடு"
+
+#: ../logview/src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "அடுத்ததை தேடு"
+
+#: ../logview/src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "தேடும் சரத்தின் அடுத்த நிகழ்வை தேடு"
+
+#: ../logview/src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "தேடும் சரத்தை துடை"
+
+#: ../logview/src/logview-log.c:598
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "GZipped பதிவை விரிவாக்கும் போது பிழை. கோப்பு அழிக்கப்பட்டிருக்கும்."
+
+#: ../logview/src/logview-log.c:645
+msgid "You don't have enough permissions to read the file."
+msgstr "கோப்பினை வாசிக்க போதிய உரிமை உங்களுக்கு இல்லை"
+
+#: ../logview/src/logview-log.c:660
+msgid "The file is not a regular file or is not a text file."
+msgstr "கோப்பு ஒரு வழக்கமான கோப்பில்லை அல்லது ஒரு உரை கோப்பில்லை."
+
+#: ../logview/src/logview-log.c:742
+msgid "This version of System Log does not support GZipped logs."
+msgstr "இந்த கணினி பதிவின் பதிப்பு GZipped பதிவுகளுக்கு துணைபுரியாது."
+
+#: ../logview/src/logview-loglist.c:316
+msgid "Loading..."
+msgstr "தேடுகிறது..."
+
+#: ../logview/src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "பயன்பாட்டின் பதிப்பினை காட்டு"
+
+#: ../logview/src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[LOGFILE...]"
+
+#: ../logview/src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - பதிவுகளை உலாவு மற்றும் கண்காணி"
+
+#: ../logview/src/logview-main.c:100
+msgid "Log Viewer"
+msgstr "பதிவு காட்டி"
+
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:762
+msgid "System Log Viewer"
+msgstr "கணினி பதிவுகளை பார்க"
+
+#: ../logview/src/logview-window.c:212
+#, c-format
+msgid "last update: %s"
+msgstr "கடைசி புதுப்பித்தல் : %s"
+
+#: ../logview/src/logview-window.c:216
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d வரிகள் (%s) - %s"
+
+#: ../logview/src/logview-window.c:320
+msgid "Open Log"
+msgstr "பதிவினை திற"
+
+#: ../logview/src/logview-window.c:359
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "உதவியைக் காட்டுவதில் பிழை: %s"
+
+#: ../logview/src/logview-window.c:473
+msgid "Wrapped"
+msgstr "சுற்றப்பட்டது"
+
+#: ../logview/src/logview-window.c:488
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
+msgid "Not found"
+msgstr "காண முடியவில்லை"
+
+#: ../logview/src/logview-window.c:767
+msgid "A system log viewer for MATE."
+msgstr "க்னோம் பதிவு பார்க்கும் மென்பொருள்"
+
+#: ../logview/src/logview-window.c:810
+#: ../mate-dictionary/src/gdict-window.c:1284
+msgid "_File"
+msgstr "கோப்பு (_F)"
+
+#: ../logview/src/logview-window.c:813
+msgid "_Filters"
+msgstr "(_F) கோப்புகள்"
+
+#: ../logview/src/logview-window.c:816
+msgid "_Open..."
+msgstr "திற...(_O)"
+
+#: ../logview/src/logview-window.c:816
+msgid "Open a log from file"
+msgstr "கோப்பிலிருந்து ஒரு பதிவினை திறக்கவும்"
+
+#: ../logview/src/logview-window.c:818
+msgid "_Close"
+msgstr "மூடு (_C)"
+
+#: ../logview/src/logview-window.c:818
+msgid "Close this log"
+msgstr "இந்தப் பதிவினை மூடு"
+
+#: ../logview/src/logview-window.c:820
+msgid "_Quit"
+msgstr "வெளியேறு(_Q)"
+
+#: ../logview/src/logview-window.c:820
+msgid "Quit the log viewer"
+msgstr "பதிவு காட்டியை விட்டு வெளியேறு"
+
+#: ../logview/src/logview-window.c:823
+msgid "_Copy"
+msgstr "நகல் (_C)"
+
+#: ../logview/src/logview-window.c:823
+msgid "Copy the selection"
+msgstr "தேர்வு செய்ததை நகலெடு"
+
+#: ../logview/src/logview-window.c:825
+#: ../mate-dictionary/src/gdict-window.c:1305
+msgid "Select _All"
+msgstr "அனைத்தையும் தேர்ந்தெடு (_A)"
+
+#: ../logview/src/logview-window.c:825
+msgid "Select the entire log"
+msgstr "முழு பதிவினை தேர்ந்தெடு"
+
+#: ../logview/src/logview-window.c:827
+msgid "_Find..."
+msgstr "தேடு (_F)..."
+
+#: ../logview/src/logview-window.c:827
+msgid "Find a word or phrase in the log"
+msgstr "இந்த பதிவில் ஒரு சொல் அல்லது சொற்றொடரை தேடு "
+
+#: ../logview/src/logview-window.c:830
+msgid "Bigger text size"
+msgstr "பெரிய உரை அளவு"
+
+#: ../logview/src/logview-window.c:832
+msgid "Smaller text size"
+msgstr "சிறிய உரை அளவு"
+
+#: ../logview/src/logview-window.c:834
+msgid "Normal text size"
+msgstr "இயல்பான உரை அளவு"
+
+#: ../logview/src/logview-window.c:837
+msgid "Manage Filters"
+msgstr "வடிப்பிகளை மேலாள்க"
+
+#: ../logview/src/logview-window.c:837
+msgid "Manage filters"
+msgstr "வடிப்பிகளை மேலாள்க"
+
+#: ../logview/src/logview-window.c:840
+msgid "Open the help contents for the log viewer"
+msgstr "பதிவு காட்டியின் உதவி உள்ளடக்கங்களை திற"
+
+#: ../logview/src/logview-window.c:842
+#: ../mate-dictionary/src/gdict-applet.c:1188
+#: ../mate-dictionary/src/gdict-window.c:1340
+msgid "_About"
+msgstr "பற்றி...(_A)"
+
+#: ../logview/src/logview-window.c:842
+msgid "Show the about dialog for the log viewer"
+msgstr "பதிவு காட்டிக்கு பற்றி உரையாடலை காட்டு"
+
+#: ../logview/src/logview-window.c:847
+msgid "_Statusbar"
+msgstr "நிலைப்பட்டை (_S)"
+
+#: ../logview/src/logview-window.c:847
+msgid "Show Status Bar"
+msgstr "நிலைப்பட்டையை காட்டு"
+
+#: ../logview/src/logview-window.c:849
+msgid "Side _Pane"
+msgstr "பக்க பலகம் (_P)"
+
+#: ../logview/src/logview-window.c:849
+msgid "Show Side Pane"
+msgstr "பக்க பலகத்தை காட்டு"
+
+#: ../logview/src/logview-window.c:851
+msgid "Show matches only"
+msgstr "பொருத்தங்களை மட்டும் காண்பி"
+
+#: ../logview/src/logview-window.c:851
+msgid "Only show lines that match one of the given filters"
+msgstr "கொடுத்த வடிப்பிகளுக்கு பொருத்தமான வரிகளை மட்டும் காண்பி"
+
+#: ../logview/src/logview-window.c:983
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr " \"%s\" -லிருந்து படிக்க முடியவில்லை"
+
+#: ../logview/src/logview-window.c:1413
+msgid "Version: "
+msgstr "பதிப்பு: "
+
+#: ../logview/src/logview-window.c:1524
+msgid "Could not open the following files:"
+msgstr "பின்வரும் கோப்புகளை திறக்க முடியவில்லை:"
 
 #: ../mate-dictionary/data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
@@ -608,6 +1865,22 @@ msgid ""
 "comes preconfigured with a list of Dict servers (RFC 2229), to which you can"
 " add your own sources, while you can select specific servers for a specific "
 "query. </p>"
+msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:1
+msgid "Dictionary Applet Factory"
+msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:2
+msgid "Factory for the dictionary applet"
+msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:3
+msgid "Dictionary Look up"
+msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:4
+msgid "Look up words in a dictionary"
 msgstr ""
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:1
@@ -647,10 +1920,6 @@ msgstr "பயன்படுத்தப்பட்ட அகராதி ம�
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr "சொற்களின் வரையரையை கொண்டு வர பயன்படும் அகராதி மூலத்தின் பெயர். "
-
-#: ../mate-dictionary/data/spanish.desktop.in.h:1
-msgid "Spanish Dictionaries"
-msgstr "ஸ்பானிஷ் அகராதிகள்"
 
 #: ../mate-dictionary/data/thai.desktop.in.h:1
 msgid "Longdo Thai-English Dictionaries"
@@ -817,13 +2086,6 @@ msgstr "இருக்கும் தரவுத்தளங்களின�
 msgid "Error while matching"
 msgstr "பொருந்தும் போது பிழை"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
-#: ../logview/logview-window.c:486
-msgid "Not found"
-msgstr "காண முடியவில்லை"
-
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1327
 msgid "F_ind:"
 msgstr "தேடு: (_i)"
@@ -861,11 +2123,6 @@ msgstr "கோப்பு பெயர்"
 #: ../mate-dictionary/libgdict/gdict-source.c:233
 msgid "The filename used by this dictionary source"
 msgstr "இந்த அகராதி மூலத்தில் பயன்படுத்தப்பட்ட கோப்பு பெயர்"
-
-#: ../mate-dictionary/libgdict/gdict-source.c:246
-#: ../gsearchtool/gsearchtool.c:2403
-msgid "Name"
-msgstr "பெயர்"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:247
 msgid "The display name of this dictionary source"
@@ -1019,9 +2276,9 @@ msgid "Look up words in dictionaries"
 msgstr "அகராதிகளில் சொற்களை தேடவும்"
 
 #: ../mate-dictionary/src/gdict-about.c:78
-#: ../mate-dictionary/src/gdict-app.c:379
+#: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:604
-#: ../mate-dictionary/src/gdict-window.c:1968
+#: ../mate-dictionary/src/gdict-window.c:1974
 msgid "Dictionary"
 msgstr "அகராதி"
 
@@ -1058,55 +2315,43 @@ msgid ""
 "%s"
 msgstr "\"%s\" விளக்கத்தை தேடும் போது பிழை:\n%s"
 
-#: ../mate-dictionary/src/gdict-app.c:337
-#: ../mate-dictionary/src/gdict-app.c:351
+#: ../mate-dictionary/src/gdict-app.c:333
+#: ../mate-dictionary/src/gdict-app.c:343
 msgid "Words to look up"
 msgstr "சொற்களை தேடு"
 
-#: ../mate-dictionary/src/gdict-app.c:337
-#: ../mate-dictionary/src/gdict-app.c:339
-#: ../mate-dictionary/src/gdict-app.c:351
+#: ../mate-dictionary/src/gdict-app.c:333
+#: ../mate-dictionary/src/gdict-app.c:335
+#: ../mate-dictionary/src/gdict-app.c:343
 msgid "word"
 msgstr "சொல்"
 
-#: ../mate-dictionary/src/gdict-app.c:339
+#: ../mate-dictionary/src/gdict-app.c:335
 msgid "Words to match"
 msgstr "பொருந்த சொற்கள்"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:337
 msgid "Dictionary source to use"
 msgstr "பயன்படுத்த வேண்டிய அகராதி மூலம்"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:337
 msgid "source"
 msgstr "மூலம்"
 
-#: ../mate-dictionary/src/gdict-app.c:343
-msgid "Show available dictionary sources"
-msgstr "இருக்கும் அகராதி மூலங்களை காட்டு"
-
-#: ../mate-dictionary/src/gdict-app.c:345
+#: ../mate-dictionary/src/gdict-app.c:339
 msgid "Print result to the console"
 msgstr "பணியகத்தின் தீர்வினை அச்சிடவும்"
 
-#: ../mate-dictionary/src/gdict-app.c:347
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "Database to use"
 msgstr "பயன்படுத்த வேண்டிய தரவுத்தளம்"
 
-#: ../mate-dictionary/src/gdict-app.c:347
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "db"
 msgstr "db"
 
-#: ../mate-dictionary/src/gdict-app.c:349
-msgid "Strategy to use"
-msgstr "பயன்படுத்த கூறு"
-
-#: ../mate-dictionary/src/gdict-app.c:349
-msgid "strat"
-msgstr "ஆரம்பம்"
-
 #. create the new option context
-#: ../mate-dictionary/src/gdict-app.c:361
+#: ../mate-dictionary/src/gdict-app.c:353
 msgid " - Look up words in dictionaries"
 msgstr " - அகராதியில் சொற்களை தேடு"
 
@@ -1183,64 +2428,59 @@ msgid "Dictionary entry"
 msgstr "அகராதி உள்ளீடு"
 
 #: ../mate-dictionary/src/gdict-applet.c:715
-#: ../mate-dictionary/src/gdict-window.c:1097
+#: ../mate-dictionary/src/gdict-window.c:1103
 msgid "Dictionary Preferences"
 msgstr "அகராதி விருப்பங்கள்"
 
 #: ../mate-dictionary/src/gdict-applet.c:739
 #: ../mate-dictionary/src/gdict-pref-dialog.c:495
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
-#: ../mate-dictionary/src/gdict-window.c:1244
+#: ../mate-dictionary/src/gdict-window.c:1250
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "உதவியை காட்டுவதில் பிழை"
 
-#: ../mate-dictionary/src/gdict-applet.c:893
+#: ../mate-dictionary/src/gdict-applet.c:878
 #: ../mate-dictionary/src/gdict-window.c:519
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "'%s' என்ற பெயரில் அகராதி மூலம் எதுவும் இல்லை"
 
-#: ../mate-dictionary/src/gdict-applet.c:897
+#: ../mate-dictionary/src/gdict-applet.c:882
 #: ../mate-dictionary/src/gdict-window.c:523
 msgid "Unable to find dictionary source"
 msgstr "அகராதி மூலத்தினை காண முடியவில்லை"
 
-#: ../mate-dictionary/src/gdict-applet.c:913
+#: ../mate-dictionary/src/gdict-applet.c:898
 #: ../mate-dictionary/src/gdict-window.c:539
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "'%s' மூலத்திற்கு சூழல் எதுவும் இல்லை"
 
-#: ../mate-dictionary/src/gdict-applet.c:917
+#: ../mate-dictionary/src/gdict-applet.c:902
 #: ../mate-dictionary/src/gdict-window.c:543
 msgid "Unable to create a context"
 msgstr "ஒரு சூழலை உருவாக்க முடியவில்லை"
 
-#: ../mate-dictionary/src/gdict-applet.c:1198
+#: ../mate-dictionary/src/gdict-applet.c:1170
 msgid "_Look Up Selected Text"
 msgstr "தேர்ந்தெடுத்த உரையில் தேடுவும் (_L)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1201
+#: ../mate-dictionary/src/gdict-applet.c:1173
 msgid "Cl_ear"
 msgstr "துடை(_e)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1204
+#: ../mate-dictionary/src/gdict-applet.c:1176
 msgid "_Print"
 msgstr "அச்சிடு (_P)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1207
+#: ../mate-dictionary/src/gdict-applet.c:1179
 msgid "_Save"
 msgstr "சேமி (_S)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1210
+#: ../mate-dictionary/src/gdict-applet.c:1182
 msgid "Preferences"
 msgstr ""
-
-#: ../mate-dictionary/src/gdict-applet.c:1216
-#: ../mate-dictionary/src/gdict-window.c:1334 ../logview/logview-window.c:840
-msgid "_About"
-msgstr "பற்றி...(_A)"
 
 #: ../mate-dictionary/src/gdict-common.c:80
 #, c-format
@@ -1330,179 +2570,171 @@ msgstr[1] "%d விளக்கங்கள் கண்டுபிடிக�
 msgid "%s - Dictionary"
 msgstr "%s - அகராதி"
 
-#: ../mate-dictionary/src/gdict-window.c:1278 ../logview/logview-window.c:808
-msgid "_File"
-msgstr "கோப்பு (_F)"
-
-#: ../mate-dictionary/src/gdict-window.c:1281
+#: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_Go"
 msgstr "செல்(_G)"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1285
+#: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_New"
 msgstr "புதிய (_N)"
 
-#: ../mate-dictionary/src/gdict-window.c:1286
+#: ../mate-dictionary/src/gdict-window.c:1292
 msgid "New look up"
 msgstr "புதிய தேடுதல்"
 
-#: ../mate-dictionary/src/gdict-window.c:1287
+#: ../mate-dictionary/src/gdict-window.c:1293
 msgid "_Save a Copy..."
 msgstr "ஒரு நகலை சேமி... (_S)"
 
-#: ../mate-dictionary/src/gdict-window.c:1289
+#: ../mate-dictionary/src/gdict-window.c:1295
 msgid "P_review..."
 msgstr "(_r) முன்பார்வை..."
 
-#: ../mate-dictionary/src/gdict-window.c:1290
+#: ../mate-dictionary/src/gdict-window.c:1296
 msgid "Preview this document"
 msgstr "இந்த ஆவணத்தை முன்பார்வையிடு"
 
-#: ../mate-dictionary/src/gdict-window.c:1291
+#: ../mate-dictionary/src/gdict-window.c:1297
 msgid "_Print..."
 msgstr "அச்சிடு... (_P)"
 
-#: ../mate-dictionary/src/gdict-window.c:1292
+#: ../mate-dictionary/src/gdict-window.c:1298
 msgid "Print this document"
 msgstr "இந்த ஆவணத்தை அச்சிடு"
 
-#: ../mate-dictionary/src/gdict-window.c:1299 ../logview/logview-window.c:823
-msgid "Select _All"
-msgstr "அனைத்தையும் தேர்ந்தெடு (_A)"
-
-#: ../mate-dictionary/src/gdict-window.c:1302
+#: ../mate-dictionary/src/gdict-window.c:1308
 msgid "Find a word or phrase in the document"
 msgstr "இந்த ஆவணத்தில் ஒரு சொல் அல்லது சொற்றொடரை தேடு "
 
-#: ../mate-dictionary/src/gdict-window.c:1304
+#: ../mate-dictionary/src/gdict-window.c:1310
 msgid "Find Ne_xt"
 msgstr "அடுத்ததை தேடு (_x)"
 
-#: ../mate-dictionary/src/gdict-window.c:1306
+#: ../mate-dictionary/src/gdict-window.c:1312
 msgid "Find Pre_vious"
 msgstr "முந்தையதை தேடு (_v)"
 
-#: ../mate-dictionary/src/gdict-window.c:1308
+#: ../mate-dictionary/src/gdict-window.c:1314
 msgid "_Preferences"
 msgstr "(_P)விருப்ப முதன்மைகள்..."
 
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1312
+#: ../mate-dictionary/src/gdict-window.c:1318
 msgid "_Previous Definition"
 msgstr "முந்தைய விளக்கம் (_P)"
 
-#: ../mate-dictionary/src/gdict-window.c:1313
+#: ../mate-dictionary/src/gdict-window.c:1319
 msgid "Go to the previous definition"
 msgstr "முந்தைய விளக்கத்திற்கு செல்லவும்"
 
-#: ../mate-dictionary/src/gdict-window.c:1314
+#: ../mate-dictionary/src/gdict-window.c:1320
 msgid "_Next Definition"
 msgstr "அடுத்த விளக்கம் (_N) "
 
-#: ../mate-dictionary/src/gdict-window.c:1315
+#: ../mate-dictionary/src/gdict-window.c:1321
 msgid "Go to the next definition"
 msgstr "அடுத்த விளக்கத்திற்கு செல்லவும்"
 
-#: ../mate-dictionary/src/gdict-window.c:1316
+#: ../mate-dictionary/src/gdict-window.c:1322
 msgid "_First Definition"
 msgstr "முதல் விளக்கம் (_F)"
 
-#: ../mate-dictionary/src/gdict-window.c:1317
+#: ../mate-dictionary/src/gdict-window.c:1323
 msgid "Go to the first definition"
 msgstr "முதல் விளக்கத்திற்கு செல்"
 
-#: ../mate-dictionary/src/gdict-window.c:1318
+#: ../mate-dictionary/src/gdict-window.c:1324
 msgid "_Last Definition"
 msgstr "கடைசி விளக்கம் (_L)"
 
-#: ../mate-dictionary/src/gdict-window.c:1319
+#: ../mate-dictionary/src/gdict-window.c:1325
 msgid "Go to the last definition"
 msgstr "கடைசி விளக்கத்திற்கு செல்"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1322
+#: ../mate-dictionary/src/gdict-window.c:1328
 msgid "Similar _Words"
 msgstr "ஒரே மாதிரியான சொற்கள் (_W)"
 
-#: ../mate-dictionary/src/gdict-window.c:1324
+#: ../mate-dictionary/src/gdict-window.c:1330
 msgid "Dictionary Sources"
 msgstr "அகராதி வளங்கள்"
 
-#: ../mate-dictionary/src/gdict-window.c:1326
+#: ../mate-dictionary/src/gdict-window.c:1332
 msgid "Available _Databases"
 msgstr "இருக்கும் தரவுத்தளங்கள் (_D)"
 
-#: ../mate-dictionary/src/gdict-window.c:1328
+#: ../mate-dictionary/src/gdict-window.c:1334
 msgid "Available St_rategies"
 msgstr "_த இருக்கும் திட்டங்கள்"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1345
+#: ../mate-dictionary/src/gdict-window.c:1351
 msgid "_Sidebar"
 msgstr "பக்கப்பட்டை(_S)"
 
-#: ../mate-dictionary/src/gdict-window.c:1347
+#: ../mate-dictionary/src/gdict-window.c:1353
 msgid "S_tatusbar"
 msgstr "நிலைப்பட்டை (_t)"
 
-#: ../mate-dictionary/src/gdict-window.c:1412
+#: ../mate-dictionary/src/gdict-window.c:1418
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "அகராதி மூலம் `%s'  தேர்ந்தெடுக்கப்பட்டது"
 
-#: ../mate-dictionary/src/gdict-window.c:1433
+#: ../mate-dictionary/src/gdict-window.c:1439
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "திட்டம் `%s' தேர்ந்தெடுக்கப்பட்டது"
 
-#: ../mate-dictionary/src/gdict-window.c:1453
+#: ../mate-dictionary/src/gdict-window.c:1459
 #, c-format
 msgid "Database `%s' selected"
 msgstr "தரவுத்தளம் `%s' தேர்ந்தெடுக்கப்பட்டது"
 
-#: ../mate-dictionary/src/gdict-window.c:1473
+#: ../mate-dictionary/src/gdict-window.c:1479
 #, c-format
 msgid "Word `%s' selected"
 msgstr "வார்த்தை `%s' தேர்ந்தெடுக்கப்பட்டது"
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1498
+#: ../mate-dictionary/src/gdict-window.c:1504
 msgid "Double-click on the word to look up"
 msgstr "தேட வேண்டிய சொல்லை இருமுறை சொடுக்கவும்"
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1504
+#: ../mate-dictionary/src/gdict-window.c:1510
 msgid "Double-click on the matching strategy to use"
 msgstr "பயன்படுத்த பொருத்தமான திட்டத்தை இருமுறை சொடுக்கவும்"
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1509
+#: ../mate-dictionary/src/gdict-window.c:1515
 msgid "Double-click on the source to use"
 msgstr "பயன்படுத்த வேண்டிய வளத்தை இருமுறை சொடுக்கவும்"
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1518
+#: ../mate-dictionary/src/gdict-window.c:1524
 msgid "Double-click on the database to use"
 msgstr "தரவுத்தளத்தைப் பயன்படுத்த இருமுறை சொடுக்கவும்"
 
-#: ../mate-dictionary/src/gdict-window.c:1770
+#: ../mate-dictionary/src/gdict-window.c:1776
 msgid "Look _up:"
 msgstr "தேடுதல்: (_u)"
 
-#: ../mate-dictionary/src/gdict-window.c:1849
+#: ../mate-dictionary/src/gdict-window.c:1855
 msgid "Similar words"
 msgstr "ஒரே மாதிரியான சொற்கள்"
 
-#: ../mate-dictionary/src/gdict-window.c:1862
+#: ../mate-dictionary/src/gdict-window.c:1868
 msgid "Available dictionaries"
 msgstr "இருக்கும் அகராதிகள்"
 
-#: ../mate-dictionary/src/gdict-window.c:1880
+#: ../mate-dictionary/src/gdict-window.c:1886
 msgid "Available strategies"
 msgstr "இருக்கும் திட்டங்கள்"
 
-#: ../mate-dictionary/src/gdict-window.c:1896
+#: ../mate-dictionary/src/gdict-window.c:1902
 msgid "Dictionary sources"
 msgstr "அகராதியை மூலங்கள் "
 
@@ -1547,172 +2779,11 @@ msgstr "அகராதிகள்"
 msgid "Strategies"
 msgstr "திட்டங்கள்"
 
-#: ../mate-screenshot/mate-screenshot.c:133
-msgid "Error loading the help page"
-msgstr "உதவி பக்கத்தை ஏற்றுவதில் பிழை"
-
-#: ../mate-screenshot/mate-screenshot.c:245
-msgid "None"
-msgstr "ஒன்றுமில்லை"
-
-#: ../mate-screenshot/mate-screenshot.c:246
-msgid "Drop shadow"
-msgstr "நிழலை அமை"
-
-#: ../mate-screenshot/mate-screenshot.c:247
-msgid "Border"
-msgstr "எல்லை"
-
-#. * Include pointer *
-#: ../mate-screenshot/mate-screenshot.c:351
-msgid "Include _pointer"
-msgstr "(_p) சுட்டியை சேர்"
-
-#. * Include window border *
-#: ../mate-screenshot/mate-screenshot.c:360
-msgid "Include the window _border"
-msgstr "சாளரத்தின் எல்லையை சேர்க்கவும்"
-
-#: ../mate-screenshot/mate-screenshot.c:375
-msgid "Apply _effect:"
-msgstr "தோற்றத்தை செயல்படுத்துக:"
-
-#: ../mate-screenshot/mate-screenshot.c:437
-msgid "Grab the whole _desktop"
-msgstr "முழு மேல்மேசையை முன்னிலைப்படுத்தவும்"
-
-#: ../mate-screenshot/mate-screenshot.c:449
-msgid "Grab the current _window"
-msgstr "_தற்போதைய  சாளரத்தை முன்னிலை படுத்து"
-
-#: ../mate-screenshot/mate-screenshot.c:461
-msgid "Select _area to grab"
-msgstr "(_a) பிட்ப்பதற்கு ஒரு இடத்தை தேர்ந்தெடு"
-
-#. translators: this is the first part of the "grab after a
-#. * delay of <spin button> seconds".
-#: ../mate-screenshot/mate-screenshot.c:478
-msgid "Grab _after a delay of"
-msgstr "சாளரத்தை இவ்வளவு தாமதித்து முன்னிலை படுத்து"
-
-#. translators: this is the last part of the "grab after a
-#. * delay of <spin button> seconds".
-#: ../mate-screenshot/mate-screenshot.c:498
-#: ../mate-screenshot/mate-screenshot.c:1273
-msgid "seconds"
-msgstr "விநாடிகள்"
-
-#: ../mate-screenshot/mate-screenshot.c:516
-#: ../mate-screenshot/mate-screenshot.c:524
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:1
-msgid "Take Screenshot"
-msgstr "திரைப்பிடிப்பு செய்யவும்"
-
-#: ../mate-screenshot/mate-screenshot.c:525
-msgid "Effects"
-msgstr "விளைவுகள்"
-
-#: ../mate-screenshot/mate-screenshot.c:530
-msgid "Take _Screenshot"
-msgstr "திரைப்பிடிப்பு செய்யவும்"
-
-#: ../mate-screenshot/mate-screenshot.c:650
-msgid "Error while saving screenshot"
-msgstr "திரைவெட்டை சேமிக்கையில் பிழை"
-
-#: ../mate-screenshot/mate-screenshot.c:653
-#, c-format
-msgid ""
-"Impossible to save the screenshot to %s.\n"
-" Error was %s.\n"
-" Please choose another location and retry."
-msgstr "திரைவெட்டை %s க்கு சேமிக்க முடியவில்லை\nபிழை %s இல் இருந்தது\nதயவு செய்து வேறு இடம் தேர்ந்து எடுத்து முயற்சிக்கவும்."
-
-#: ../mate-screenshot/mate-screenshot.c:785
-msgid "Screenshot taken"
-msgstr "திரைப்பிடிப்பு எடுக்கப்பட்டது"
-
-#: ../mate-screenshot/mate-screenshot.c:840
-msgid "Unable to take a screenshot of the current window"
-msgstr "நடப்பு சாளரத்தை திரை பிடிப்பு செய்ய முடியவில்லை"
-
-#: ../mate-screenshot/mate-screenshot.c:893
-#, c-format
-msgid "Screenshot-%s.png"
-msgstr "திரைபிடிப்பு-%s.png"
-
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if a specific window is
-#. * taken
-#: ../mate-screenshot/mate-screenshot.c:900
-#, c-format
-msgid "Screenshot-%s-%d.png"
-msgstr "திரைப்பிடிப்பு-%s-%d.png"
-
-#. translators: this is the name of the file that gets made up
-#. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/mate-screenshot.c:910
-#: ../mate-screenshot/screenshot-dialog.c:369
-#: ../mate-screenshot/screenshot-save.c:196
-msgid "Screenshot.png"
-msgstr "Screenshot.png"
-
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if the entire screen is
-#. * taken
-#: ../mate-screenshot/mate-screenshot.c:917
-#, c-format
-msgid "Screenshot-%d.png"
-msgstr "திரைப்பிடிப்பு-%d.png"
-
-#: ../mate-screenshot/mate-screenshot.c:1269
-msgid "Grab a window instead of the entire screen"
-msgstr "முழுத்திரைக்கு பதிலாக ஒரு சாளரத்தை எடுக்கவும்"
-
-#: ../mate-screenshot/mate-screenshot.c:1270
-msgid "Grab an area of the screen instead of the entire screen"
-msgstr "முழுத்திரைக்கு பதிலாக திரையின் ஒரு பகுதியை எடுக்கவும்"
-
-#: ../mate-screenshot/mate-screenshot.c:1271
-msgid "Include the window border with the screenshot"
-msgstr "திரைப்பிடிப்பில் சாளரத்தின் எல்லையை சேர்க்கவும்"
-
-#: ../mate-screenshot/mate-screenshot.c:1272
-msgid "Remove the window border from the screenshot"
-msgstr "திரைப்பிடிப்பில் சாளரத்தின் எல்லையை நீக்கவும்"
-
-#: ../mate-screenshot/mate-screenshot.c:1273
-msgid "Take screenshot after specified delay [in seconds]"
-msgstr "குறித்த தாமதம் சென்று பின் திரைவெட்டை எடுக்கவும் (நொடிகளில்)"
-
-#: ../mate-screenshot/mate-screenshot.c:1274
-msgid "Effect to add to the border (shadow, border or none)"
-msgstr "எல்லைக்கு சேர்க்க வேண்டிய தோற்றம் (நிழல், விளிம்பு அல்லது ஏதுமில்லை)"
-
-#: ../mate-screenshot/mate-screenshot.c:1274
-msgid "effect"
-msgstr "தோற்றம்"
-
-#: ../mate-screenshot/mate-screenshot.c:1275
-msgid "Interactively set options"
-msgstr "ஊடாடல் வகையில் விருப்பங்களை அமை"
-
-#: ../mate-screenshot/mate-screenshot.c:1284
-msgid "Take a picture of the screen"
-msgstr "திரையினை ஒரு படம் பிடிக்கவும்"
-
-#: ../mate-screenshot/mate-screenshot.c:1302
-#, c-format
-msgid ""
-"Conflicting options: --window and --area should not be used at the same "
-"time.\n"
-msgstr "முரண்படும் விருப்பங்கள்: --window மற்றும் --area ஒரே நேரத்தில் பயன்படுத்தப்பட கூடாது.\n"
-
-#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:1
+#: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:1
 msgid "A screenshot utility for MATE Desktop"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:2
+#: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:2
 msgid ""
 "<p> MATE Screenshot is a simple utility that lets you capture screenshots of"
 " your desktop or of application windows. You can select to copy them to the "
@@ -1720,74 +2791,223 @@ msgid ""
 "format. </p>"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:2
+#: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
+#: ../mate-screenshot/src/mate-screenshot.c:516
+#: ../mate-screenshot/src/mate-screenshot.c:524
+msgid "Take Screenshot"
+msgstr "திரைப்பிடிப்பு செய்யவும்"
+
+#: ../mate-screenshot/data/mate-screenshot.desktop.in.h:2
 msgid "Save images of your desktop or individual windows"
 msgstr "உங்கள் பணிமேடையின் படங்களை அல்லது தனித்தனி சாளரங்களை சேமிக்கவும்"
 
-#: ../mate-screenshot/mate-screenshot.ui.h:1
+#: ../mate-screenshot/data/mate-screenshot.ui.h:1
 msgid "Save Screenshot"
 msgstr "திரைப்பிடிப்பினை சேமி"
 
-#: ../mate-screenshot/mate-screenshot.ui.h:2
+#: ../mate-screenshot/data/mate-screenshot.ui.h:2
 msgid "C_opy to Clipboard"
 msgstr "(_o) ஒட்டுப்பலகைக்கு பிரதி எடு"
 
-#: ../mate-screenshot/mate-screenshot.ui.h:3
-#: ../logview/data/logview-filter.ui.h:1
-msgid "_Name:"
-msgstr "பெயர்: (_N)"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:4
+#: ../mate-screenshot/data/mate-screenshot.ui.h:4
 msgid "Save in _folder:"
 msgstr "அடைவில் சேமி: (_f)"
 
-#: ../mate-screenshot/mate-screenshot.ui.h:5
+#: ../mate-screenshot/data/mate-screenshot.ui.h:5
 msgid "*"
 msgstr "*"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:1
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:1
 msgid "Screenshot delay"
 msgstr "திரைப்பிடிப்பு தாமதம்"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:2
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:2
 msgid "The number of seconds to wait before taking the screenshot."
 msgstr "திரைவெட்டு எடுக்கு முன் தாமதிக்க வேண்டிய நேரம் வினாடிகளில்"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:3
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:3
 msgid "Screenshot directory"
 msgstr "திரைப்பிடிப்பு அடைவு"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:4
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:4
 msgid "The directory the last screenshot was saved in."
 msgstr "அடைவில் சேமிக்கப்பட்ட கடைசி திரைப்பிடிப்பு."
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:5
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:5
 msgid "Include Border"
 msgstr "எல்லையை சேர்"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:6
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:6
 msgid "Include the window manager border along with the screenshot"
 msgstr "திரைப்பிடிப்புடன் சாளர மேலாளர் எல்லையையும் சேர்க்கவும்"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:7
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:7
 msgid "Include Pointer"
 msgstr "சுட்டியை சேர்"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:8
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:8
 msgid "Include the pointer in the screenshot"
 msgstr "திரைப்பிடிப்பில் சுட்டியை சேர்க்கவும்"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:9
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:9
 msgid "Border Effect"
 msgstr "எல்லை தோற்றம்"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:10
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:10
 msgid ""
 "Effect to add to the outside of a border. Possible values are \"shadow\", "
 "\"none\", and \"border\"."
 msgstr "ஒரு விளிம்புக்கு அப்பால் சேர்க்க வேண்டிய விளைவு. இருக்கக்கூடிய மதிப்புகள் \"நிழல்\", \"எதுவும் இல்லை\", மற்றும் \"விளிம்பு\". "
 
-#: ../mate-screenshot/screenshot-dialog.c:246
+#: ../mate-screenshot/src/mate-screenshot.c:133
+msgid "Error loading the help page"
+msgstr "உதவி பக்கத்தை ஏற்றுவதில் பிழை"
+
+#: ../mate-screenshot/src/mate-screenshot.c:245
+msgid "None"
+msgstr "ஒன்றுமில்லை"
+
+#: ../mate-screenshot/src/mate-screenshot.c:246
+msgid "Drop shadow"
+msgstr "நிழலை அமை"
+
+#: ../mate-screenshot/src/mate-screenshot.c:247
+msgid "Border"
+msgstr "எல்லை"
+
+#. * Include pointer *
+#: ../mate-screenshot/src/mate-screenshot.c:351
+msgid "Include _pointer"
+msgstr "(_p) சுட்டியை சேர்"
+
+#. * Include window border *
+#: ../mate-screenshot/src/mate-screenshot.c:360
+msgid "Include the window _border"
+msgstr "சாளரத்தின் எல்லையை சேர்க்கவும்"
+
+#: ../mate-screenshot/src/mate-screenshot.c:375
+msgid "Apply _effect:"
+msgstr "தோற்றத்தை செயல்படுத்துக:"
+
+#: ../mate-screenshot/src/mate-screenshot.c:437
+msgid "Grab the whole _desktop"
+msgstr "முழு மேல்மேசையை முன்னிலைப்படுத்தவும்"
+
+#: ../mate-screenshot/src/mate-screenshot.c:449
+msgid "Grab the current _window"
+msgstr "_தற்போதைய  சாளரத்தை முன்னிலை படுத்து"
+
+#: ../mate-screenshot/src/mate-screenshot.c:461
+msgid "Select _area to grab"
+msgstr "(_a) பிட்ப்பதற்கு ஒரு இடத்தை தேர்ந்தெடு"
+
+#. translators: this is the first part of the "grab after a
+#. * delay of <spin button> seconds".
+#: ../mate-screenshot/src/mate-screenshot.c:478
+msgid "Grab _after a delay of"
+msgstr "சாளரத்தை இவ்வளவு தாமதித்து முன்னிலை படுத்து"
+
+#. translators: this is the last part of the "grab after a
+#. * delay of <spin button> seconds".
+#: ../mate-screenshot/src/mate-screenshot.c:498
+#: ../mate-screenshot/src/mate-screenshot.c:1263
+msgid "seconds"
+msgstr "விநாடிகள்"
+
+#: ../mate-screenshot/src/mate-screenshot.c:525
+msgid "Effects"
+msgstr "விளைவுகள்"
+
+#: ../mate-screenshot/src/mate-screenshot.c:530
+msgid "Take _Screenshot"
+msgstr "திரைப்பிடிப்பு செய்யவும்"
+
+#: ../mate-screenshot/src/mate-screenshot.c:650
+msgid "Error while saving screenshot"
+msgstr "திரைவெட்டை சேமிக்கையில் பிழை"
+
+#: ../mate-screenshot/src/mate-screenshot.c:653
+#, c-format
+msgid ""
+"Impossible to save the screenshot to %s.\n"
+" Error was %s.\n"
+" Please choose another location and retry."
+msgstr "திரைவெட்டை %s க்கு சேமிக்க முடியவில்லை\nபிழை %s இல் இருந்தது\nதயவு செய்து வேறு இடம் தேர்ந்து எடுத்து முயற்சிக்கவும்."
+
+#: ../mate-screenshot/src/mate-screenshot.c:785
+msgid "Screenshot taken"
+msgstr "திரைப்பிடிப்பு எடுக்கப்பட்டது"
+
+#: ../mate-screenshot/src/mate-screenshot.c:840
+msgid "Unable to take a screenshot of the current window"
+msgstr "நடப்பு சாளரத்தை திரை பிடிப்பு செய்ய முடியவில்லை"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format (eg, like
+#. * in France: 20:10).
+#: ../mate-screenshot/src/mate-screenshot.c:893
+msgid "%Y-%m-%d %H:%M:%S"
+msgstr ""
+
+#. translators: this is the name of the file that gets made up
+#. * with the screenshot if the entire screen is taken
+#: ../mate-screenshot/src/mate-screenshot.c:900
+#, c-format
+msgid "Screenshot at %s.png"
+msgstr ""
+
+#. translators: this is the name of the file that gets
+#. * made up with the screenshot if the entire screen is
+#. * taken
+#: ../mate-screenshot/src/mate-screenshot.c:907
+#, c-format
+msgid "Screenshot at %s - %d.png"
+msgstr ""
+
+#: ../mate-screenshot/src/mate-screenshot.c:1259
+msgid "Grab a window instead of the entire screen"
+msgstr "முழுத்திரைக்கு பதிலாக ஒரு சாளரத்தை எடுக்கவும்"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1260
+msgid "Grab an area of the screen instead of the entire screen"
+msgstr "முழுத்திரைக்கு பதிலாக திரையின் ஒரு பகுதியை எடுக்கவும்"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1261
+msgid "Include the window border with the screenshot"
+msgstr "திரைப்பிடிப்பில் சாளரத்தின் எல்லையை சேர்க்கவும்"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1262
+msgid "Remove the window border from the screenshot"
+msgstr "திரைப்பிடிப்பில் சாளரத்தின் எல்லையை நீக்கவும்"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1263
+msgid "Take screenshot after specified delay [in seconds]"
+msgstr "குறித்த தாமதம் சென்று பின் திரைவெட்டை எடுக்கவும் (நொடிகளில்)"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1264
+msgid "Effect to add to the border (shadow, border or none)"
+msgstr "எல்லைக்கு சேர்க்க வேண்டிய தோற்றம் (நிழல், விளிம்பு அல்லது ஏதுமில்லை)"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1264
+msgid "effect"
+msgstr "தோற்றம்"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1265
+msgid "Interactively set options"
+msgstr "ஊடாடல் வகையில் விருப்பங்களை அமை"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1274
+msgid "Take a picture of the screen"
+msgstr "திரையினை ஒரு படம் பிடிக்கவும்"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1292
+#, c-format
+msgid ""
+"Conflicting options: --window and --area should not be used at the same "
+"time.\n"
+msgstr "முரண்படும் விருப்பங்கள்: --window மற்றும் --area ஒரே நேரத்தில் பயன்படுத்தப்பட கூடாது.\n"
+
+#: ../mate-screenshot/src/screenshot-dialog.c:246
 #, c-format
 msgid ""
 "Error loading UI definition file for the screenshot program: \n"
@@ -1796,1264 +3016,50 @@ msgid ""
 "Please check your installation of mate-utils."
 msgstr ""
 
-#: ../mate-screenshot/screenshot-dialog.c:269
+#: ../mate-screenshot/src/screenshot-dialog.c:269
 msgid "Select a folder"
 msgstr "ஒரு அடைவினை தேர்ந்தெடு"
 
-#: ../mate-screenshot/screenshot-save.c:57
+#: ../mate-screenshot/src/screenshot-dialog.c:369
+#: ../mate-screenshot/src/screenshot-save.c:196
+msgid "Screenshot.png"
+msgstr "Screenshot.png"
+
+#: ../mate-screenshot/src/screenshot-save.c:57
 #, c-format
 msgid ""
 "Unable to clear the temporary folder:\n"
 "%s"
 msgstr "தற்காலிக அடைவினை துடைக்க முடியவில்லை:\n%s"
 
-#: ../mate-screenshot/screenshot-save.c:95
+#: ../mate-screenshot/src/screenshot-save.c:95
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
 msgstr "சேய் சேமி செயல் எதிர்பாராது வெளியேறியது. திரைவெட்டை வட்டுக்கு எழுத இயலவில்லை."
 
-#: ../mate-screenshot/screenshot-save.c:223
+#: ../mate-screenshot/src/screenshot-save.c:223
 msgid "Unknown error saving screenshot to disk"
 msgstr "திரைப்பிடிப்பினை வட்டில் சேமிக்கும் போது தெரியாத பிழை"
 
 #. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-#: ../mate-screenshot/screenshot-utils.c:998
+#: ../mate-screenshot/src/screenshot-utils.c:998
 msgid "Untitled Window"
 msgstr "பெயரில்லாத சாளரம்"
 
-#: ../mate-screenshot/screenshot-xfer.c:72
+#: ../mate-screenshot/src/screenshot-xfer.c:72
 msgid "File already exists"
 msgstr "கோப்பு ஏற்கனவே உள்ளது"
 
-#: ../mate-screenshot/screenshot-xfer.c:75
+#: ../mate-screenshot/src/screenshot-xfer.c:75
 #, c-format
 msgid "The file \"%s\" already exists. Would you like to replace it?"
 msgstr "கோப்பு \"%s\" ஏற்கனவே உள்ளது. இதனை மாற்ற வேண்டுமா?"
 
-#: ../mate-screenshot/screenshot-xfer.c:82
-#: ../gsearchtool/gsearchtool-callbacks.c:1726
-msgid "_Replace"
-msgstr "மாற்று (_R)"
-
-#: ../mate-screenshot/screenshot-xfer.c:120
+#: ../mate-screenshot/src/screenshot-xfer.c:120
 msgid "Saving file..."
 msgstr "கோப்பை சேமிக்கிறது..."
 
-#: ../mate-screenshot/screenshot-xfer.c:290
+#: ../mate-screenshot/src/screenshot-xfer.c:290
 msgid "Can't access source file"
 msgstr "மூலக்கோப்பினை அணுக முடியவில்லை"
-
-#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
-msgid "A file searching tool for MATE Desktop"
-msgstr ""
-
-#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
-msgid ""
-"<p> MATE Search Tool is a simple but powerful utility that allows you to "
-"search for files and folders on any mounted file system. Its interface gives"
-" you instant access to a wide variety of parameters for each search, such as"
-" text contained within a file, ownership, date of modification, file size, "
-"folder exclusion, etc.. </p>"
-msgstr ""
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:1
-msgid "MATE Search Tool"
-msgstr ""
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:2
-msgid "Locate documents and folders on this computer by name or content"
-msgstr "இந்த கணினியில் உள்ள ஆவணங்கள் அல்லது அடைவுகளை பெயராலோ உள்ளடக்கத்தாலோ கண்டுபிடிக்கவும்"
-
-#: ../gsearchtool/gsearchtool.c:82
-msgid "Contains the _text"
-msgstr "(_t)உரையில்"
-
-#: ../gsearchtool/gsearchtool.c:84
-msgid "_Date modified less than"
-msgstr "(_D)மாற்றப்பட்ட தேதி குறைந்த பட்சம்"
-
-#: ../gsearchtool/gsearchtool.c:84 ../gsearchtool/gsearchtool.c:85
-msgid "days"
-msgstr "நாள்"
-
-#: ../gsearchtool/gsearchtool.c:85
-msgid "Date modified more than"
-msgstr "மாற்றப்பட்ட தேதி அதிகபட்சம்"
-
-#: ../gsearchtool/gsearchtool.c:87
-msgid "S_ize at least"
-msgstr "(_i)குறைந்த பட்ச அளவு"
-
-#: ../gsearchtool/gsearchtool.c:87 ../gsearchtool/gsearchtool.c:88
-msgid "kilobytes"
-msgstr "கிலோபைட்"
-
-#: ../gsearchtool/gsearchtool.c:88
-msgid "Si_ze at most"
-msgstr "(_z)அளவு அதிகபட்சம்"
-
-#: ../gsearchtool/gsearchtool.c:89
-msgid "File is empty"
-msgstr "கோப்பு காலியாக உள்ளது"
-
-#: ../gsearchtool/gsearchtool.c:91
-msgid "Owned by _user"
-msgstr "(_u)உரிமை பயனீட்டாளருடையது"
-
-#: ../gsearchtool/gsearchtool.c:92
-msgid "Owned by _group"
-msgstr "(_g)உரிமை குழுவிற்கு உள்ளது"
-
-#: ../gsearchtool/gsearchtool.c:93
-msgid "Owner is unrecognized"
-msgstr "உரிமையாளர் கண்டரியமுடியவில்லை"
-
-#: ../gsearchtool/gsearchtool.c:95
-msgid "Na_me does not contain"
-msgstr "(_m)பெயரில் இல்லை"
-
-#: ../gsearchtool/gsearchtool.c:96
-msgid "Name matches regular e_xpression"
-msgstr "(_x)பெயர் நிலையான கோப்போடு பொருந்துகிறது"
-
-#: ../gsearchtool/gsearchtool.c:98
-msgid "Show hidden and backup files"
-msgstr "மறைந்த மற்றும் காப்பு கோப்புகளை காட்டவும்"
-
-#: ../gsearchtool/gsearchtool.c:99
-msgid "Follow symbolic links"
-msgstr "குறியீட்டு இணைப்புகளை பின்தொடர்"
-
-#: ../gsearchtool/gsearchtool.c:100
-msgid "Exclude other filesystems"
-msgstr "மற்ற கோப்பு அமைப்புகளை விலக்கவும்"
-
-#: ../gsearchtool/gsearchtool.c:158
-msgid "Show version of the application"
-msgstr "பயன்பாட்டின் பதிப்பினை காட்டு"
-
-#: ../gsearchtool/gsearchtool.c:159 ../gsearchtool/gsearchtool.c:164
-#: ../gsearchtool/gsearchtool.c:173
-msgid "STRING"
-msgstr "STRING"
-
-#: ../gsearchtool/gsearchtool.c:160
-msgid "PATH"
-msgstr "PATH"
-
-#: ../gsearchtool/gsearchtool.c:161
-msgid "VALUE"
-msgstr "VALUE"
-
-#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
-msgid "DAYS"
-msgstr "DAYS"
-
-#: ../gsearchtool/gsearchtool.c:167 ../gsearchtool/gsearchtool.c:168
-msgid "KILOBYTES"
-msgstr "KILOBYTES"
-
-#: ../gsearchtool/gsearchtool.c:170
-msgid "USER"
-msgstr "USER"
-
-#: ../gsearchtool/gsearchtool.c:171
-msgid "GROUP"
-msgstr "GROUP"
-
-#: ../gsearchtool/gsearchtool.c:174
-msgid "PATTERN"
-msgstr "PATTERN"
-
-#: ../gsearchtool/gsearchtool.c:385
-msgid "A locate database has probably not been created."
-msgstr "ஒரு இடம் கண்டுபிடி தரவுத்தளம் உருவாக்கப்படவில்லை போலுள்ளது."
-
-#: ../gsearchtool/gsearchtool.c:487
-#, c-format
-msgid "Character set conversion failed for \"%s\""
-msgstr "எழுத்துரு அமைப்பு மாற்றம் இதற்கு இயலவில்லை \"%s\""
-
-#: ../gsearchtool/gsearchtool.c:511
-msgid "Searching..."
-msgstr "தேடுகிறது..."
-
-#: ../gsearchtool/gsearchtool.c:511 ../gsearchtool/gsearchtool.c:1031
-#: ../gsearchtool/gsearchtool.c:3030
-msgid "Search for Files"
-msgstr "கோப்புகளை தேடு"
-
-#: ../gsearchtool/gsearchtool.c:977 ../gsearchtool/gsearchtool.c:1006
-msgid "No files found"
-msgstr "கோப்புகள் எதுவும் கிடைக்கவில்லை"
-
-#: ../gsearchtool/gsearchtool.c:999
-msgid "(stopped)"
-msgstr "(நிருத்தப்பட்டது)"
-
-#: ../gsearchtool/gsearchtool.c:1005
-msgid "No Files Found"
-msgstr "கோப்புகள் எதுவும் கிடைக்கவில்லை"
-
-#: ../gsearchtool/gsearchtool.c:1010
-#, c-format
-msgid "%'d File Found"
-msgid_plural "%'d Files Found"
-msgstr[0] "%d கோப்பு கிடைத்துள்ளது"
-msgstr[1] "%d கோப்புகள் கிடைத்துள்ளன"
-
-#: ../gsearchtool/gsearchtool.c:1014 ../gsearchtool/gsearchtool.c:1052
-#, c-format
-msgid "%'d file found"
-msgid_plural "%'d files found"
-msgstr[0] "%d கோப்பு கிடைத்துள்ளது"
-msgstr[1] "%d கோப்புகள் கிடைத்துள்ளன"
-
-#: ../gsearchtool/gsearchtool.c:1143
-msgid "Entry changed called for a non entry option!"
-msgstr "உள்ளீடு மாற்றப்பட்டதால் உள்ளீடு இல்லாத தேர்வை அழைக்கிறது!"
-
-#: ../gsearchtool/gsearchtool.c:1308
-msgid "Set the text of \"Name contains\" search option"
-msgstr "\"பெயர் கொண்டுள்ள\" உரையை தேடல் விருப்பமாக அமைக்கவும்"
-
-#: ../gsearchtool/gsearchtool.c:1309
-msgid "Set the text of \"Look in folder\" search option"
-msgstr "\"அடைவில் தேடு\" உரையை தேடல் விருப்பத்தில் அமைக்கவும்"
-
-#: ../gsearchtool/gsearchtool.c:1310
-msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "கோப்புகளை கீழ்கண்டவைகளின் படி அடுக்கவும்:பெயர்,அடைவு, அளவு,வகை அல்லது தேதி"
-
-#: ../gsearchtool/gsearchtool.c:1311
-msgid "Set sort order to descending, the default is ascending"
-msgstr "இறங்குவரிசையில் அடுக்கவும், பொதுவாக ஏறுவரிசையில் அடுக்கப்படும்"
-
-#: ../gsearchtool/gsearchtool.c:1312
-msgid "Automatically start a search"
-msgstr "தேடலை தானாக துவக்கவும்"
-
-#: ../gsearchtool/gsearchtool.c:1318
-#, c-format
-msgid "Select the \"%s\" search option"
-msgstr "\"%s\" தேடல் விருப்பத்தை தேர்ந்தெடுக்கவும்"
-
-#: ../gsearchtool/gsearchtool.c:1321
-#, c-format
-msgid "Select and set the \"%s\" search option"
-msgstr "\"%s\" ஐ தேர்ந்தெடுத்து தேடல் விருப்பமாக அமைக்கவும்"
-
-#: ../gsearchtool/gsearchtool.c:1428
-msgid "Invalid option passed to sortby command line argument."
-msgstr "அடுக்குவதற்கு செல்லாத தேர்வு பயன்படுத்தப்பட்டது"
-
-#: ../gsearchtool/gsearchtool.c:1720
-msgid ""
-"\n"
-"... Too many errors to display ..."
-msgstr "\n... காட்ட அதிக பிழைகள் உள்ளன ..."
-
-#: ../gsearchtool/gsearchtool.c:1734
-msgid ""
-"The search results may be invalid.  There were errors while performing this "
-"search."
-msgstr "தேடல் விடைகள் செல்லாது. தேடும் போது பிழை நேர்ந்தது"
-
-#: ../gsearchtool/gsearchtool.c:1746 ../gsearchtool/gsearchtool.c:1790
-msgid "Show more _details"
-msgstr "(_d)அதிக தகவலை காட்டு"
-
-#: ../gsearchtool/gsearchtool.c:1776
-msgid ""
-"The search results may be out of date or invalid.  Do you want to disable "
-"the quick search feature?"
-msgstr "தேடல் விடைகள் காலம் கடந்தவை அல்லது செல்லாது. வேக தேடல் வசதியை செயல்நீக்கம் செய்ய விருப்பமா?"
-
-#: ../gsearchtool/gsearchtool.c:1801
-msgid "Disable _Quick Search"
-msgstr "(_Q)வேக தேடலை செயல்நீக்கு"
-
-#: ../gsearchtool/gsearchtool.c:1828
-#, c-format
-msgid "Failed to set process group id of child %d: %s.\n"
-msgstr "சேய் குழு அடையாளம் அமைத்தல் தோல்வியுற்றது %d: %s.\n"
-
-#: ../gsearchtool/gsearchtool.c:1853
-msgid "Error parsing the search command."
-msgstr "தேடல் கட்டளையை பகுப்பதில் பிழை"
-
-#: ../gsearchtool/gsearchtool.c:1885
-msgid "Error running the search command."
-msgstr "தேடல் கட்டளையை இயக்குவதில் பிழை"
-
-#: ../gsearchtool/gsearchtool.c:2008
-#, c-format
-msgid "Enter a text value for the \"%s\" search option."
-msgstr "\"%s\"தேடல் விருப்பத்திற்கு உரை மதிப்பினை உள்ளிடவும்."
-
-#. Translators:  Below is a string displaying the search options name
-#. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:2013
-#, c-format
-msgid "\"%s\" in %s"
-msgstr "\"%s\" in %s"
-
-#: ../gsearchtool/gsearchtool.c:2015
-#, c-format
-msgid "Enter a value in %s for the \"%s\" search option."
-msgstr "\"%s\" தேடல் விருப்பத்திற்கு %sல் மதிப்பினை உள்ளிடவும்."
-
-#: ../gsearchtool/gsearchtool.c:2073
-#, c-format
-msgid "Remove \"%s\""
-msgstr "\"%s\"ஐ நீக்கு"
-
-#: ../gsearchtool/gsearchtool.c:2074
-#, c-format
-msgid "Click to remove the \"%s\" search option."
-msgstr "சொடுக்கி \"%s\" தேடல் விருப்பத்தை நீக்கவும்."
-
-#: ../gsearchtool/gsearchtool.c:2167
-msgid "A_vailable options:"
-msgstr "இருக்கும் விருப்பங்கள்: (_v)"
-
-#: ../gsearchtool/gsearchtool.c:2196
-msgid "Available options"
-msgstr "இருக்கும் விருப்பங்கள்"
-
-#: ../gsearchtool/gsearchtool.c:2197
-msgid "Select a search option from the drop-down list."
-msgstr "கீழ் விரி பட்டியலிலிருந்து தேடல் விருப்பத்தை தேர்ந்தெடுக்கவும்"
-
-#: ../gsearchtool/gsearchtool.c:2209
-msgid "Add search option"
-msgstr "தேடு விருப்பத்தை சேர்"
-
-#: ../gsearchtool/gsearchtool.c:2210
-msgid "Click to add the selected available search option."
-msgstr "தேர்ந்தெடுக்கப்பட்ட இருக்கும் தேடல் விருப்பத்தை சேர்க்க சொடுக்கவும்."
-
-#: ../gsearchtool/gsearchtool.c:2299
-msgid "S_earch results:"
-msgstr "(_e)தேடல் விடைகள்:"
-
-#: ../gsearchtool/gsearchtool.c:2343
-msgid "List View"
-msgstr "பட்டியல் பார்வை"
-
-#: ../gsearchtool/gsearchtool.c:2452
-msgid "Type"
-msgstr "வகை"
-
-#: ../gsearchtool/gsearchtool.c:2464
-msgid "Date Modified"
-msgstr "மாற்றப்பட்ட தேதி"
-
-#: ../gsearchtool/gsearchtool.c:2799
-msgid "_Name contains:"
-msgstr "பெயர் கொண்ட: (_N)"
-
-#: ../gsearchtool/gsearchtool.c:2813 ../gsearchtool/gsearchtool.c:2814
-msgid "Enter a filename or partial filename with or without wildcards."
-msgstr "குறியில் குறியுடனோ அல்லது அது இல்லாமலோ ஒரு கோப்புப் பெயர் அல்லது கோப்புப் பெயரில் ஓரளவோ உள்ளிடுக"
-
-#: ../gsearchtool/gsearchtool.c:2814
-msgid "Name contains"
-msgstr "பெயர் கொண்ட"
-
-#: ../gsearchtool/gsearchtool.c:2820
-msgid "_Look in folder:"
-msgstr "(_L)அடைவில் பார்க்கவும்:"
-
-#: ../gsearchtool/gsearchtool.c:2826
-msgid "Browse"
-msgstr "கோப்பு..."
-
-#: ../gsearchtool/gsearchtool.c:2835
-msgid "Look in folder"
-msgstr "அடைவில் பார்க்கவும்"
-
-#: ../gsearchtool/gsearchtool.c:2835
-msgid "Select the folder or device from which you want to begin the search."
-msgstr "தேடலை ஆரம்பிக்க அடைவு அல்லது சாதனத்தை தேர்ந்தெடுக்கவும்."
-
-#: ../gsearchtool/gsearchtool.c:2853
-msgid "Select more _options"
-msgstr "கூடுதல் விருப்பங்களை தேர்ந்தெடு (_o)"
-
-#: ../gsearchtool/gsearchtool.c:2862
-msgid "Select more options"
-msgstr "கூடுதல் விருப்பங்களை தேர்ந்தெடு"
-
-#: ../gsearchtool/gsearchtool.c:2862
-msgid "Click to expand or collapse the list of available options."
-msgstr "இருக்கும் விருப்பங்களின் பட்டியைலை விரிவாக்க அல்லது குறுக்க சொடுக்கவும்"
-
-#: ../gsearchtool/gsearchtool.c:2886
-msgid "Click to display the help manual."
-msgstr "உதவி கையேட்டினை காட்ட சொடுக்கவும்."
-
-#: ../gsearchtool/gsearchtool.c:2894
-msgid "Click to close \"Search for Files\"."
-msgstr "\"கோப்புகளை தேட\"என்பதை மூட சொடுக்கவும்."
-
-#: ../gsearchtool/gsearchtool.c:2920
-msgid "Click to perform a search."
-msgstr "தேடுவதற்கு சொடுக்கவும்."
-
-#: ../gsearchtool/gsearchtool.c:2921
-msgid "Click to stop a search."
-msgstr "தேடுதலை முடிக்க சொடுக்கவும்."
-
-#: ../gsearchtool/gsearchtool.c:3015
-msgid "- the MATE Search Tool"
-msgstr "-க்னோம் தேடல் கருவி"
-
-#: ../gsearchtool/gsearchtool.c:3024
-#, c-format
-msgid "Failed to parse command line arguments: %s\n"
-msgstr "கட்டளை வரி துணையலகுகளை பகுக்க முடியவில்லை: %s\n"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:198
-msgid "Could not open help document."
-msgstr "உதவி ஆவணத்தை திற்க முடியவில்லை"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:349
-#, c-format
-msgid "Are you sure you want to open %d document?"
-msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] "%d ஆவணத்தை திறக்க விருப்பமா?"
-msgstr[1] "%d ஆவணத்தை திறக்க விருப்பமா?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:354
-#: ../gsearchtool/gsearchtool-callbacks.c:551
-#, c-format
-msgid "This will open %d separate window."
-msgid_plural "This will open %d separate windows."
-msgstr[0] "%d ஆவணத்தை திறக்க விருப்பமா?"
-msgstr[1] "%d தனி சாளரத்தில் திறக்கும்"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:394
-#, c-format
-msgid "Could not open document \"%s\"."
-msgstr "ஆவணைங்களை திறக்க இயலாது\"%s\"."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:423
-#, c-format
-msgid "Could not open folder \"%s\"."
-msgstr "அடைவகங்களை திறக்க இயலாது\"%s\"."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:431
-msgid "The caja file manager is not running."
-msgstr "நாடுலஸ் கோப்பு மேலாளர் இயக்கத்தில் இல்லை"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:523
-msgid "There is no installed viewer capable of displaying the document."
-msgstr "இந்த ஆவணத்தை காட்டக்கூடிய காட்சி மென்பொருள் எதுவும் நிறுவப்படவில்லை"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:546
-#, c-format
-msgid "Are you sure you want to open %d folder?"
-msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] "%d அடைவை திறக்க விருப்பமா?"
-msgstr[1] "%d அடைவை திறக்க விருப்பமா?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:699
-#, c-format
-msgid "Could not move \"%s\" to trash."
-msgstr "குப்பைக்கு நகர்த்த முடியவில்லை \"%s\""
-
-#: ../gsearchtool/gsearchtool-callbacks.c:730
-#, c-format
-msgid "Do you want to delete \"%s\" permanently?"
-msgstr "முழுமையாக \"%s\" ஐ நீக்க விருப்பமா?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:733
-#, c-format
-msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr "குப்பை இல்லை. \"%s\" ஐ குப்பைக்கு நகர்த்த முடியாது"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:772
-#, c-format
-msgid "Could not delete \"%s\"."
-msgstr "அழிக்க இயலாது\"%s\"."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:884
-#, c-format
-msgid "Deleting \"%s\" failed: %s."
-msgstr "அழிப்பது \"%s\" இயலவில்லை: %s."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:896
-#, c-format
-msgid "Moving \"%s\" failed: %s."
-msgstr "நகருதல்\"%s\"  இயலவில்லை: %s."
-
-#. Popup menu item: Open
-#: ../gsearchtool/gsearchtool-callbacks.c:1024
-#: ../gsearchtool/gsearchtool-callbacks.c:1054
-msgid "_Open"
-msgstr "(_O)திற"
-
-#. Popup menu item: Open with (default)
-#: ../gsearchtool/gsearchtool-callbacks.c:1079
-#, c-format
-msgid "_Open with %s"
-msgstr "%s ஆல் திற (_O)"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1114
-#, c-format
-msgid "Open with %s"
-msgstr "%s ஆல் திற"
-
-#. Popup menu item: Open With
-#: ../gsearchtool/gsearchtool-callbacks.c:1147
-msgid "Open Wit_h"
-msgstr "(_h) இதனால் திற"
-
-#. Popup menu item: Open Containing Folder
-#: ../gsearchtool/gsearchtool-callbacks.c:1192
-msgid "Open Containing _Folder"
-msgstr ""
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1232
-msgid "_Save Results As..."
-msgstr "(_S) ...என்று முடிவுகளை சேமி"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1614
-msgid "Save Search Results As..."
-msgstr "தேடல் முடிவுகளை ... என சேமி."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1643
-msgid "Could not save document."
-msgstr "ஆவணங்களை சேமிக்க இயலாது"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1644
-msgid "You did not select a document name."
-msgstr "நீங்கள் ஆவணதின் பெயரை தேர்ந்தெடுக்கவில்லை."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1674
-#, c-format
-msgid "Could not save \"%s\" document to \"%s\"."
-msgstr "\"%s\" ஆவனதை \"%s\" ல் செமிக்க இயலவில்லை."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1707
-#, c-format
-msgid "The document \"%s\" already exists.  Would you like to replace it?"
-msgstr "ஆவனம் \"%s\" ஏற்கெனவே உள்ளது.  மாற்ற வேண்டுமா?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1711
-msgid "If you replace an existing file, its contents will be overwritten."
-msgstr "ஏற்கெனவே உள்ள கோப்பை நீங்கள் மாற்றினால் இதன் உள்ளடக்கங்கள் மேலெழுதப்படும்"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1775
-msgid "The document name you selected is a folder."
-msgstr "நீங்கள் தேர்வு செய்த ஆவணத்திற்கான பெயரில் அடைவு உள்ளது"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1811
-msgid "You may not have write permissions to the document."
-msgstr "ஆவணத்தில் எழுதும் உரிமை உங்களுக்கு இல்லை"
-
-#. Translators:  Below are the strings displayed in the 'Date Modified'
-#. column of the list view.  The format of this string can vary depending
-#. on age of a file.  Please modify the format of the timestamp to match
-#. your locale.  For example, to display 24 hour time replace the '%-I'
-#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: ../gsearchtool/gsearchtool-support.c:448
-msgid "today at %-I:%M %p"
-msgstr "%-I:%M %p ல் இன்று"
-
-#: ../gsearchtool/gsearchtool-support.c:450
-msgid "yesterday at %-I:%M %p"
-msgstr "%-I:%M %p ல் நேற்று"
-
-#: ../gsearchtool/gsearchtool-support.c:452
-#: ../gsearchtool/gsearchtool-support.c:454
-msgid "%A, %B %-d %Y at %-I:%M:%S %p"
-msgstr "%A, %B %-d %Y at %-I:%M:%S %p"
-
-#: ../gsearchtool/gsearchtool-support.c:641
-msgid "link (broken)"
-msgstr "தொகுப்பு(உடைந்தது)"
-
-#: ../gsearchtool/gsearchtool-support.c:645
-#, c-format
-msgid "link to %s"
-msgstr "%s உடன் இணைத்து"
-
-#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
-#. Localizers:
-#. * Feel free to leave out the st, nd, rd and th suffix or
-#. * make some or all of them match.
-#. localizers: tag used to detect the first copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1257
-msgid " (copy)"
-msgstr " (நகலெடு)"
-
-#. localizers: tag used to detect the second copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1259
-msgid " (another copy)"
-msgstr " (மற்றுமொரு நகலெடு)"
-
-#. localizers: tag used to detect the x11th copy of a file
-#. localizers: tag used to detect the x12th copy of a file
-#. localizers: tag used to detect the x13th copy of a file
-#. localizers: tag used to detect the xxth copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1262
-#: ../gsearchtool/gsearchtool-support.c:1264
-#: ../gsearchtool/gsearchtool-support.c:1266
-#: ../gsearchtool/gsearchtool-support.c:1276
-msgid "th copy)"
-msgstr "ஆவது நகல்)"
-
-#. localizers: tag used to detect the x1st copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1269
-msgid "st copy)"
-msgstr "வது நகல்)"
-
-#. localizers: tag used to detect the x2nd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1271
-msgid "nd copy)"
-msgstr "ஆவது நகல்)"
-
-#. localizers: tag used to detect the x3rd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1273
-msgid "rd copy)"
-msgstr "ஆவது நகல்)"
-
-#. localizers: appended to first file copy
-#: ../gsearchtool/gsearchtool-support.c:1290
-#, c-format
-msgid "%s (copy)%s"
-msgstr "%s (நகல்)%s"
-
-#. localizers: appended to second file copy
-#: ../gsearchtool/gsearchtool-support.c:1292
-#, c-format
-msgid "%s (another copy)%s"
-msgstr "%s (மற்றொரு நகல்)%s"
-
-#. localizers: appended to x11th file copy
-#. localizers: appended to x12th file copy
-#. localizers: appended to x13th file copy
-#. localizers: appended to xxth file copy
-#: ../gsearchtool/gsearchtool-support.c:1295
-#: ../gsearchtool/gsearchtool-support.c:1297
-#: ../gsearchtool/gsearchtool-support.c:1299
-#: ../gsearchtool/gsearchtool-support.c:1308
-#, c-format
-msgid "%s (%dth copy)%s"
-msgstr "%s (%d ஆவது நகல்)%s"
-
-#. localizers: appended to x1st file copy
-#: ../gsearchtool/gsearchtool-support.c:1302
-#, c-format
-msgid "%s (%dst copy)%s"
-msgstr "%s (%d ஆவது நகல்)%s"
-
-#. localizers: appended to x2nd file copy
-#: ../gsearchtool/gsearchtool-support.c:1304
-#, c-format
-msgid "%s (%dnd copy)%s"
-msgstr "%s (%d ஆவது நகல்)%s"
-
-#. localizers: appended to x3rd file copy
-#: ../gsearchtool/gsearchtool-support.c:1306
-#, c-format
-msgid "%s (%drd copy)%s"
-msgstr "%s (%d ஆவது நகல்)%s"
-
-#: ../gsearchtool/gsearchtool-support.c:1353
-msgid " (invalid Unicode)"
-msgstr " (தவறான யூனிகோட்)"
-
-#. localizers: opening parentheses to match the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1442
-msgid " ("
-msgstr " ("
-
-#. localizers: opening parentheses of the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1450
-#, c-format
-msgid " (%d"
-msgstr "(%d"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:1
-msgid "Search history"
-msgstr ""
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:2
-msgid "This key defines the items which were searched for in the past."
-msgstr ""
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:3
-msgid "Show Additional Options"
-msgstr "கூடுதல் விருப்பங்களை காட்டு"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:4
-msgid "Disable Quick Search"
-msgstr "விரைவு தேடலை செயல்நீக்கு"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:5
-msgid ""
-"This key determines if the search tool disables the use of the locate "
-"command when performing simple file name searches."
-msgstr "இந்த விசை தேடல் கருவி இடத்தை கண்டுபிடி கட்டளையை எளிய கோப்பு தேடல்கள் முடிந்ததும் செயலிழக்கச்செய்யுமா என நிர்ணயிக்கிறது."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:6
-msgid "Quick Search Excluded Paths"
-msgstr "பாதைகளை சேர்க்காமல் விரைவாக தேடவும்"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:7
-msgid ""
-"This key defines the paths the search tool will exclude from a quick search."
-" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
-"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-msgstr "இந்த விசை தேடல் கருவி விரைவு தேடலுக்கு தவிர்க்கும் பாதைகளை நிர்ணயிக்கிறது. குறியில் குறியும், '?' உம் ஆதரிக்கப்படும். முன்னிருப்பு மதிப்புகள் /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, மற்றும் /var/*."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:8
-msgid "Disable Quick Search Second Scan"
-msgstr "விரைவு தேடல் இரண்டாம் வருடலை செயல்நீக்கு"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:9
-msgid ""
-"This key determines if the search tool disables the use of the find command "
-"after performing a quick search."
-msgstr "இந்த விசை தேடல் கருவி தேடு கட்டளையை விரைவு தேடல் முடிந்ததும் செயலிழக்கச்செய்யுமா என நிர்ணயிக்கிறது."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:10
-msgid "Quick Search Second Scan Excluded Paths"
-msgstr "பாதைகளை சேர்க்காமல் இரண்டாவது வருடலுக்கு விரைவாக தேடவும்"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:11
-msgid ""
-"This key defines the paths the search tool will exclude from a second scan "
-"when performing a quick search. The second scan uses the find command to "
-"search for files. The purpose of the second scan is to find files that have "
-"not been indexed. The wildcards '*' and '?' are supported. The default value"
-" is /."
-msgstr "இந்த விசை தேடல் கருவி விரைவு தேடலுக்கு இரண்டாவது வருடலுக்கு தவிர்க்கும் பாதைகளை நிர்ணயிக்கிறது. இரண்டாவது வருடல் கண்டுபிடி கட்டளையை கோப்புகளை தேட பயன்படுத்துகிறது. இதன் நோக்கம் இதுவரை பட்டியலிடாத கோப்புகளை தேடுவது. குறியில் குறியும், '?' உம் ஆதரிக்கப்படும். முன்னிருப்பு மதிப்பு /."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:12
-msgid "Search Result Columns Order"
-msgstr "தேடல் முடிவு நிரல்கள் வரிசை"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:13
-msgid ""
-"This key defines the order of the columns in the search results. This key "
-"should not be modified by the user."
-msgstr "இந்த விசை தேடல் விடைகளில் உள்ள நெடுவரிசைகள் வரிசையை நிர்ணயிக்கிறது. இந்த விசை பயனரால் மாற்றப்படக்கூடாது."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:14
-msgid "Default Window Width"
-msgstr "முன்னிருப்பு சாளர அகலம்"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:15
-msgid ""
-"This key defines the window width, and it's used to remember the size of the"
-" search tool between sessions. Setting it to -1 will make the search tool "
-"use the default width."
-msgstr "இந்த விசை சாளரத்தின் அகலத்தை நிர்ணயிக்கிறது மற்றும் அமர்வுகளுக்கு இடையில் தேடல் கருவியின் அளவை நினைவு கொள்ள  பயன்படுகிறது. அதை -1 என அமைத்தால் தேடல் கருவியை முன்னிருப்பு அகலத்தை பயன்படுத்தச்செய்யும்."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:16
-msgid "Default Window Height"
-msgstr "முன்னிருப்பு சாளர உயரம்"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:17
-msgid ""
-"This key defines the window height, and it's used to remember the size of "
-"the search tool between sessions. Setting it to -1 will make the search tool"
-" use the default height."
-msgstr "இந்த விசை சாளரத்தின் உயரத்தை நிர்ணயிக்கிறது மற்றும் அமர்வுகளுக்கு இடையில் தேடல் கருவியின் அளவை நினைவு கொள்ள  பயன்படுகிறது. அதை -1 என அமைத்தால் தேடல் கருவியை முன்னிருப்பு உயரத்தை பயன்படுத்தச்செய்யும்."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:18
-msgid "Default Window Maximized"
-msgstr "முன்னிருப்பு சாளர முழு அளவு"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:19
-msgid ""
-"This key determines if the search tool window starts in a maximized state."
-msgstr "இந்த விசை தேடல் கருவி சாளரம் பெரிதாக்கிய நிலையில் துவங்குமா என நிர்ணயிக்கிறது."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:20
-msgid "Look in Folder"
-msgstr "அடைவில் பார்க்கவும்"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:21
-msgid "This key defines the default value of the \"Look in Folder\" widget."
-msgstr "இந்த விசை  \"அடைவில் காண்க\" விட்செட்டின் முன்னிருப்பு மதிப்பை வரையறுக்கிறது "
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:22
-msgid ""
-"This key determines if the \"Contains the text\" search option is selected "
-"when the search tool is started."
-msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"உரை உள்ளடக்கியது\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:23
-msgid ""
-"This key determines if the \"Date modified less than\" search option is "
-"selected when the search tool is started."
-msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"தேதி மாற்றப்பட்டது இதை விட குறைந்தது\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:24
-msgid ""
-"This key determines if the \"Date modified more than\" search option is "
-"selected when the search tool is started."
-msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"தேதி மாற்றப்பட்டது இதை விட அதிகம்\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:25
-msgid ""
-"This key determines if the \"Size at least\" search option is selected when "
-"the search tool is started."
-msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"அளவு குறைந்தது\"  தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:26
-msgid ""
-"This key determines if the \"Size at most\" search option is selected when "
-"the search tool is started."
-msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"அளவு அதிக பட்சம்\"  தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:27
-msgid ""
-"This key determines if the \"File is empty\" search option is selected when "
-"the search tool is started."
-msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"கோப்பு காலி\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:28
-msgid ""
-"This key determines if the \"Owned by user\" search option is selected when "
-"the search tool is started."
-msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"பயனருக்கு சொந்தம்\"  தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது. "
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:29
-msgid ""
-"This key determines if the \"Owned by group\" search option is selected when"
-" the search tool is started."
-msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"குழுக்கு சொந்தம்\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது. "
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:30
-msgid ""
-"This key determines if the \"Owner is unrecognized\" search option is "
-"selected when the search tool is started."
-msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"பயனர் அடையாளம் தெரியாது\"  தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது. "
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:31
-msgid ""
-"This key determines if the \"Name does not contain\" search option is "
-"selected when the search tool is started."
-msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"பெயரில் இது இல்லை\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:32
-msgid ""
-"This key determines if the \"Name matches regular expression\" search option"
-" is selected when the search tool is started."
-msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"பெயர் வழக்கமான தொடருக்கு பொருந்தம்\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:33
-msgid ""
-"This key determines if the \"Show hidden files and folders\" search option "
-"is selected when the search tool is started."
-msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"மறைந்த கோப்புகள் மற்றும் கோப்புகளை காட்டு\"  தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது. "
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:34
-msgid ""
-"This key determines if the \"Follow symbolic links\" search option is "
-"selected when the search tool is started."
-msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"சிம் இணைப்புகளை தொடர்\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:35
-msgid ""
-"This key determines if the \"Exclude other filesystems\" search option is "
-"selected when the search tool is started."
-msgstr "இந்த விசை தேடல் கருவி துவங்கும் போது \"மற்ற கோப்பு அமைப்புகளை விலக்கு\" தேடல் விருப்பம் தேர்ந்தெடுக்கப்படுமா என நிர்ணயிக்கிறது."
-
-#: ../libeggsmclient/eggdesktopfile.c:165
-#, c-format
-msgid "File is not a valid .desktop file"
-msgstr "கோப்பு செல்லுபடியாகும்  .desktop கோப்பு அல்ல"
-
-#: ../libeggsmclient/eggdesktopfile.c:188
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "அடையாளம் காணா மேல்மேசை கோப்பு பதிப்பு '%s' "
-
-#: ../libeggsmclient/eggdesktopfile.c:957
-#, c-format
-msgid "Starting %s"
-msgstr "%s ஐ துவக்குகிறது"
-
-#: ../libeggsmclient/eggdesktopfile.c:1098
-#, c-format
-msgid "Application does not accept documents on command line"
-msgstr "பயன்பாடு கட்டளை வரியில் ஆவணங்களை ஒப்புக்கொள்ளாது"
-
-#: ../libeggsmclient/eggdesktopfile.c:1166
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "இனம் காணாத துவக்க தேர்வு: %d"
-
-#: ../libeggsmclient/eggdesktopfile.c:1365
-#, c-format
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "'Type=Link' மேல்மேசை உள்ளீடுக்கு ஆவண யூஆர்ஐ ஐ கொடுக்க இயலாது"
-
-#: ../libeggsmclient/eggdesktopfile.c:1384
-#, c-format
-msgid "Not a launchable item"
-msgstr "துவக்க முடியாத உருப்படி"
-
-#: ../libeggsmclient/eggsmclient.c:225
-msgid "Disable connection to session manager"
-msgstr "அமர்வு மேலாளருக்கு இணைப்பை செயல் நீக்கு"
-
-#: ../libeggsmclient/eggsmclient.c:228
-msgid "Specify file containing saved configuration"
-msgstr "சேமித்த வடிவமைப்பு கூடிய கோப்பை குறிப்பிடுக"
-
-#: ../libeggsmclient/eggsmclient.c:228
-msgid "FILE"
-msgstr "FILE"
-
-#: ../libeggsmclient/eggsmclient.c:231
-msgid "Specify session management ID"
-msgstr "அமர்வு மேலாண்மை அடையாளத்தை குறிப்பிடுக"
-
-#: ../libeggsmclient/eggsmclient.c:231
-msgid "ID"
-msgstr "ஐடி (ID)"
-
-#: ../libeggsmclient/eggsmclient.c:252
-msgid "Session management options:"
-msgstr "அமர்வு மேலாண்மை தேர்வுகள்:"
-
-#: ../libeggsmclient/eggsmclient.c:253
-msgid "Show session management options"
-msgstr "அமர்வு மேலாணமை தேர்வுகளை காட்டு"
-
-#: ../logview/data/mate-system-log.desktop.in.in.h:1
-msgid "Log File Viewer"
-msgstr "பதிவு கோப்பு காட்டி"
-
-#: ../logview/data/mate-system-log.desktop.in.in.h:2
-msgid "View or monitor system log files"
-msgstr "கணினி பதிவு கோப்புகளை பார்வையிடு அல்லது கண்காணி"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
-msgid "Log file to open up on startup"
-msgstr "துவக்கதில் திறக்க வேண்டிய பதிவுகோப்புகள்"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
-msgid ""
-"Specifies the log file displayed at startup. The default is either "
-"/var/adm/messages or /var/log/messages, depending on your operating system."
-msgstr "துவக்கத்தில் திறக்க வேண்டிய பதிவு கோப்புகளை குறிக்கிறது. முன்னிருப்பு /var/adm/messages அல்லது /var/log/messages, உங்கள் இயக்கத்தளத்தைப் பொருத்து இருக்கலாம்."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
-msgid "Size of the font used to display the log"
-msgstr "பதிவினை காட்ட பயன்படுத்தப்படும் எழுத்துரு அளவு"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
-msgid ""
-"Specifies the size of the fixed-width font used to display the log in the "
-"main tree view. The default is taken from the default terminal font size."
-msgstr "முதன்மை கிளை காட்சியில் பதிவேட்டை காட்ட பயன்படும் நிலை அகல எழுத்துருவின் அளவை குறிப்பிடுகிறது. முன்னிருப்பு முனைய எழுத்துரு அளவு."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
-msgid "Height of the main window in pixels"
-msgstr "பிக்ஸல்களில் முதன்மை சாளரத்தின் உயரம்"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
-msgid "Specifies the height of the log viewer main window in pixels."
-msgstr "பிக்ஸலில் பதிவு காட்டியின் முதன்மை சாளரத்தின் உயரத்தை குறிக்கிறது."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
-msgid "Width of the main window in pixels"
-msgstr "பிக்ஸலில் முதன்மை சாளரத்தின் அகலம்"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
-msgid "Specifies the width of the log viewer main window in pixels."
-msgstr "பிக்ஸலில் பதிவு காட்டியின் முதன்மை சாளரத்தின் அகலத்தை குறிக்கிறது."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
-msgid "Log files to open up on startup"
-msgstr "துவக்கத்தில் திறக்க வேண்டிய பதிவு கோப்புகள்"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
-msgid ""
-"Specifies a list of log files to open up at startup. A default list is "
-"created by reading /etc/syslog.conf."
-msgstr "துவக்கத்தில் திறக்க வேண்டிய பதிவு கோப்புகளை குறிக்கிறது. முன்னிருப்பு பட்டியல் /etc/syslog.conf ஏ படிப்பது மூலம் உருவாக்கப்பட்டிருக்கும்."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
-msgid "List of saved filters"
-msgstr ""
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
-msgid "List of saved regexp filters"
-msgstr ""
-
-#: ../logview/data/logview-filter.ui.h:2
-msgid "_Regular Expression:"
-msgstr "(_R) இயல்பான கூற்று:"
-
-#: ../logview/data/logview-filter.ui.h:3
-msgid "Highlight"
-msgstr "முனைப்புறுத்தல்"
-
-#: ../logview/data/logview-filter.ui.h:4
-msgid "Hide"
-msgstr "மறை"
-
-#: ../logview/data/logview-filter.ui.h:5
-msgid "Foreground:"
-msgstr "முன்னணி:"
-
-#: ../logview/data/logview-filter.ui.h:6
-msgid "Background:"
-msgstr "பின்னணி:"
-
-#: ../logview/data/logview-filter.ui.h:7
-msgid "Effect:"
-msgstr "விளைவுகள்:"
-
-#: ../logview/logview-app.c:377
-#, c-format
-msgid "Impossible to open the file %s"
-msgstr "கோப்பு %sஐ திறக்க வாய்ப்பில்லை"
-
-#: ../logview/logview-filter-manager.c:94
-msgid "Filter name is empty!"
-msgstr "கோப்பு பெயர் காலியாக உள்ளது!"
-
-#: ../logview/logview-filter-manager.c:107
-msgid "Filter name may not contain the ':' character"
-msgstr "வடிப்பியில் : எழுத்துரு இருக்கலாகாது"
-
-#: ../logview/logview-filter-manager.c:130
-msgid "Regular expression is empty!"
-msgstr "இயல்பான வெளிப்பாடு வெற்றாக உள்ளது!"
-
-#: ../logview/logview-filter-manager.c:146
-#, c-format
-msgid "Regular expression is invalid: %s"
-msgstr "இயல்பான வெளிப்பாடு செல்லுபடியாகாதது: %s"
-
-#: ../logview/logview-filter-manager.c:242
-msgid "Please specify either foreground or background color!"
-msgstr "தயை  செய்து முன்புலம் அல்லது பின்புல வண்னத்தை குறிப்பிடுக."
-
-#: ../logview/logview-filter-manager.c:296
-msgid "Edit filter"
-msgstr "வடிப்பியை  திருத்துக"
-
-#: ../logview/logview-filter-manager.c:296
-msgid "Add new filter"
-msgstr "புதிய வடிப்பியை சேர்க்கவும்"
-
-#: ../logview/logview-filter-manager.c:506
-msgid "Filters"
-msgstr "கோப்புகள்"
-
-#: ../logview/logview-findbar.c:173
-msgid "_Find:"
-msgstr "தேடு (_F):"
-
-#: ../logview/logview-findbar.c:188
-msgid "Find Previous"
-msgstr "முந்தையதை தேடு"
-
-#: ../logview/logview-findbar.c:191
-msgid "Find previous occurrence of the search string"
-msgstr "தேடும் சரத்தின் முந்தைய நிகழ்வை தேடு"
-
-#: ../logview/logview-findbar.c:196
-msgid "Find Next"
-msgstr "அடுத்ததை தேடு"
-
-#: ../logview/logview-findbar.c:199
-msgid "Find next occurrence of the search string"
-msgstr "தேடும் சரத்தின் அடுத்த நிகழ்வை தேடு"
-
-#: ../logview/logview-findbar.c:206
-msgid "Clear the search string"
-msgstr "தேடும் சரத்தை துடை"
-
-#: ../logview/logview-log.c:595
-msgid "Error while uncompressing the GZipped log. The file might be corrupt."
-msgstr "GZipped பதிவை விரிவாக்கும் போது பிழை. கோப்பு அழிக்கப்பட்டிருக்கும்."
-
-#: ../logview/logview-log.c:642
-msgid "You don't have enough permissions to read the file."
-msgstr "கோப்பினை வாசிக்க போதிய உரிமை உங்களுக்கு இல்லை"
-
-#: ../logview/logview-log.c:657
-msgid "The file is not a regular file or is not a text file."
-msgstr "கோப்பு ஒரு வழக்கமான கோப்பில்லை அல்லது ஒரு உரை கோப்பில்லை."
-
-#: ../logview/logview-log.c:739
-msgid "This version of System Log does not support GZipped logs."
-msgstr "இந்த கணினி பதிவின் பதிப்பு GZipped பதிவுகளுக்கு துணைபுரியாது."
-
-#: ../logview/logview-loglist.c:315
-msgid "Loading..."
-msgstr "தேடுகிறது..."
-
-#: ../logview/logview-main.c:61
-msgid "Show the application's version"
-msgstr "பயன்பாட்டின் பதிப்பினை காட்டு"
-
-#: ../logview/logview-main.c:63
-msgid "[LOGFILE...]"
-msgstr "[LOGFILE...]"
-
-#: ../logview/logview-main.c:67
-msgid " - Browse and monitor logs"
-msgstr " - பதிவுகளை உலாவு மற்றும் கண்காணி"
-
-#: ../logview/logview-main.c:100
-msgid "Log Viewer"
-msgstr "பதிவு காட்டி"
-
-#: ../logview/logview-window.c:38 ../logview/logview-window.c:760
-msgid "System Log Viewer"
-msgstr "கணினி பதிவுகளை பார்க"
-
-#: ../logview/logview-window.c:210
-#, c-format
-msgid "last update: %s"
-msgstr "கடைசி புதுப்பித்தல் : %s"
-
-#: ../logview/logview-window.c:214
-#, c-format
-msgid "%d lines (%s) - %s"
-msgstr "%d வரிகள் (%s) - %s"
-
-#: ../logview/logview-window.c:318
-msgid "Open Log"
-msgstr "பதிவினை திற"
-
-#: ../logview/logview-window.c:357
-#, c-format
-msgid "There was an error displaying help: %s"
-msgstr "உதவியைக் காட்டுவதில் பிழை: %s"
-
-#: ../logview/logview-window.c:471
-msgid "Wrapped"
-msgstr "சுற்றப்பட்டது"
-
-#: ../logview/logview-window.c:765
-msgid "A system log viewer for MATE."
-msgstr "க்னோம் பதிவு பார்க்கும் மென்பொருள்"
-
-#: ../logview/logview-window.c:811
-msgid "_Filters"
-msgstr "(_F) கோப்புகள்"
-
-#: ../logview/logview-window.c:814
-msgid "_Open..."
-msgstr "திற...(_O)"
-
-#: ../logview/logview-window.c:814
-msgid "Open a log from file"
-msgstr "கோப்பிலிருந்து ஒரு பதிவினை திறக்கவும்"
-
-#: ../logview/logview-window.c:816
-msgid "_Close"
-msgstr "மூடு (_C)"
-
-#: ../logview/logview-window.c:816
-msgid "Close this log"
-msgstr "இந்தப் பதிவினை மூடு"
-
-#: ../logview/logview-window.c:818
-msgid "_Quit"
-msgstr "வெளியேறு(_Q)"
-
-#: ../logview/logview-window.c:818
-msgid "Quit the log viewer"
-msgstr "பதிவு காட்டியை விட்டு வெளியேறு"
-
-#: ../logview/logview-window.c:821
-msgid "_Copy"
-msgstr "நகல் (_C)"
-
-#: ../logview/logview-window.c:821
-msgid "Copy the selection"
-msgstr "தேர்வு செய்ததை நகலெடு"
-
-#: ../logview/logview-window.c:823
-msgid "Select the entire log"
-msgstr "முழு பதிவினை தேர்ந்தெடு"
-
-#: ../logview/logview-window.c:825
-msgid "_Find..."
-msgstr "தேடு (_F)..."
-
-#: ../logview/logview-window.c:825
-msgid "Find a word or phrase in the log"
-msgstr "இந்த பதிவில் ஒரு சொல் அல்லது சொற்றொடரை தேடு "
-
-#: ../logview/logview-window.c:828
-msgid "Bigger text size"
-msgstr "பெரிய உரை அளவு"
-
-#: ../logview/logview-window.c:830
-msgid "Smaller text size"
-msgstr "சிறிய உரை அளவு"
-
-#: ../logview/logview-window.c:832
-msgid "Normal text size"
-msgstr "இயல்பான உரை அளவு"
-
-#: ../logview/logview-window.c:835
-msgid "Manage Filters"
-msgstr "வடிப்பிகளை மேலாள்க"
-
-#: ../logview/logview-window.c:835
-msgid "Manage filters"
-msgstr "வடிப்பிகளை மேலாள்க"
-
-#: ../logview/logview-window.c:838
-msgid "Open the help contents for the log viewer"
-msgstr "பதிவு காட்டியின் உதவி உள்ளடக்கங்களை திற"
-
-#: ../logview/logview-window.c:840
-msgid "Show the about dialog for the log viewer"
-msgstr "பதிவு காட்டிக்கு பற்றி உரையாடலை காட்டு"
-
-#: ../logview/logview-window.c:845
-msgid "_Statusbar"
-msgstr "நிலைப்பட்டை (_S)"
-
-#: ../logview/logview-window.c:845
-msgid "Show Status Bar"
-msgstr "நிலைப்பட்டையை காட்டு"
-
-#: ../logview/logview-window.c:847
-msgid "Side _Pane"
-msgstr "பக்க பலகம் (_P)"
-
-#: ../logview/logview-window.c:847
-msgid "Show Side Pane"
-msgstr "பக்க பலகத்தை காட்டு"
-
-#: ../logview/logview-window.c:849
-msgid "Show matches only"
-msgstr "பொருத்தங்களை மட்டும் காண்பி"
-
-#: ../logview/logview-window.c:849
-msgid "Only show lines that match one of the given filters"
-msgstr "கொடுத்த வடிப்பிகளுக்கு பொருத்தமான வரிகளை மட்டும் காண்பி"
-
-#: ../logview/logview-window.c:963
-#, c-format
-msgid "Can't read from \"%s\""
-msgstr " \"%s\" -லிருந்து படிக்க முடியவில்லை"
-
-#: ../logview/logview-window.c:1386
-msgid "Version: "
-msgstr "பதிப்பு: "
-
-#: ../logview/logview-window.c:1493
-msgid "Could not open the following files:"
-msgstr "பின்வரும் கோப்புகளை திறக்க முடியவில்லை:"

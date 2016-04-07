@@ -15,10 +15,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-24 13:29+0100\n"
-"PO-Revision-Date: 2015-03-16 17:33+0000\n"
-"Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
-"Language-Team: Galician (http://www.transifex.com/projects/p/MATE/language/gl/)\n"
+"POT-Creation-Date: 2015-12-10 13:06+0300\n"
+"PO-Revision-Date: 2015-12-10 10:12+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Galician (http://www.transifex.com/mate/MATE/language/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -66,7 +66,8 @@ msgid "S_can Remote Folder..."
 msgstr "Anali_zar o cartafol remoto..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../mate-dictionary/src/gdict-window.c:1279 ../logview/logview-window.c:809
+#: ../logview/src/logview-window.c:811
+#: ../mate-dictionary/src/gdict-window.c:1285
 msgid "_Edit"
 msgstr "_Editar"
 
@@ -79,7 +80,8 @@ msgid "_Collapse All"
 msgstr "_Contraer todo"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../mate-dictionary/src/gdict-window.c:1280 ../logview/logview-window.c:810
+#: ../logview/src/logview-window.c:812
+#: ../mate-dictionary/src/gdict-window.c:1286
 msgid "_View"
 msgstr "_Ver"
 
@@ -96,18 +98,20 @@ msgid "All_ocated Space"
 msgstr "Espaz_o asignado"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../mate-dictionary/src/gdict-applet.c:1213
-#: ../mate-dictionary/src/gdict-window.c:1282 ../logview/logview-window.c:812
+#: ../logview/src/logview-window.c:814
+#: ../mate-dictionary/src/gdict-applet.c:1185
+#: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Help"
 msgstr "A_xuda"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../mate-dictionary/src/gdict-window.c:1332 ../logview/logview-window.c:838
+#: ../logview/src/logview-window.c:840
+#: ../mate-dictionary/src/gdict-window.c:1338
 msgid "_Contents"
 msgstr "_Contidos"
 
-#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/callbacks.c:97
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1245
 msgid "Disk Usage Analyzer"
 msgstr "Analizador do uso do disco"
 
@@ -231,12 +235,12 @@ msgstr "dispoñíbel:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:240 ../baobab/src/baobab.c:297
-#: ../baobab/src/callbacks.c:259
+#: ../baobab/src/callbacks.c:258
 msgid "Calculating percentage bars..."
 msgstr "Calculando as barras de porcentaxe..."
 
 #: ../baobab/src/baobab.c:251 ../baobab/src/baobab.c:1309
-#: ../baobab/src/callbacks.c:263
+#: ../baobab/src/callbacks.c:262
 msgid "Ready"
 msgstr "Listo"
 
@@ -472,7 +476,7 @@ msgstr "O contido do seu cartafol persoal cambiou. Seleccione Analizar de novo p
 msgid "_Rescan"
 msgstr "Analiza_r de novo"
 
-#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2427
+#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/src/gsearchtool.c:2427
 msgid "Folder"
 msgstr "Cartafol"
 
@@ -480,7 +484,7 @@ msgstr "Cartafol"
 msgid "Usage"
 msgstr "Uso"
 
-#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2440
+#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/src/gsearchtool.c:2440
 msgid "Size"
 msgstr "Tamaño"
 
@@ -510,43 +514,43 @@ msgstr "«%s» non é un cartafol correcto"
 msgid "Could not analyze disk usage."
 msgstr "Non foi posíbel analizar o uso do disco."
 
-#: ../baobab/src/baobab-utils.c:366
+#: ../baobab/src/baobab-utils.c:362
 msgid "_Open Folder"
 msgstr "_Abrir cartafol"
 
-#: ../baobab/src/baobab-utils.c:372
-#: ../gsearchtool/gsearchtool-callbacks.c:1210
+#: ../baobab/src/baobab-utils.c:368
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1210
 msgid "Mo_ve to Trash"
 msgstr "Mov_er ao lixo"
 
-#: ../baobab/src/baobab-utils.c:406
+#: ../baobab/src/baobab-utils.c:402
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "Non foi posíbel abrir o cartafol «%s»"
 
-#: ../baobab/src/baobab-utils.c:409
+#: ../baobab/src/baobab-utils.c:405
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr "Non hai instalado ningún visor que sexa quen de amosar o cartafol."
 
-#: ../baobab/src/baobab-utils.c:478
+#: ../baobab/src/baobab-utils.c:474
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr "Non foi posíbel mover «%s» ao lixo"
 
-#: ../baobab/src/baobab-utils.c:486
+#: ../baobab/src/baobab-utils.c:482
 msgid "Could not move file to the Trash"
 msgstr "Non foi posíbel mover o ficheiro ao lixo"
 
-#: ../baobab/src/baobab-utils.c:488
+#: ../baobab/src/baobab-utils.c:484
 #, c-format
 msgid "Details: %s"
 msgstr "Detalles: %s"
 
-#: ../baobab/src/baobab-utils.c:524
+#: ../baobab/src/baobab-utils.c:520
 msgid "There was an error displaying help."
 msgstr "Produciuse un erro ao amosar a axuda."
 
-#: ../baobab/src/callbacks.c:76 ../logview/logview-about.h:49
+#: ../baobab/src/callbacks.c:76 ../logview/src/logview-about.h:49
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -554,7 +558,7 @@ msgid ""
 "any later version."
 msgstr "Este programa é software libre; pode redistribuílo ou modificalo baixo as condicións da Licenza pública xeral GNU, tal como a publica a Free Software Foundation; tanto na versión 2 da Licenza como (segundo o seu criterio) en calquera versión posterior."
 
-#: ../baobab/src/callbacks.c:81 ../logview/logview-about.h:53
+#: ../baobab/src/callbacks.c:81 ../logview/src/logview-about.h:53
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -562,31 +566,1284 @@ msgid ""
 "more details."
 msgstr "Este programa distribúese coa intención de que sexa útil, mais SEN NINGUNHA GARANTIA, nin sequera a garantía implícita de VALOR COMERCIAL ou ADECUACIÓN A UN FIN ESPECÍFICO. Consulte a Licenza pública xeral de GNU para máis información."
 
-#: ../baobab/src/callbacks.c:86 ../logview/logview-about.h:57
+#: ../baobab/src/callbacks.c:86 ../logview/src/logview-about.h:57
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 msgstr "Debeu recibir unha copia da Licenza pública xeral GNU xunto con este programa. De non ser así, escriba á Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 
-#: ../baobab/src/callbacks.c:98
+#: ../baobab/src/callbacks.c:97
 msgid "A graphical tool to analyze disk usage."
 msgstr "Unha ferramenta gráfica para analizar o uso do disco."
 
 #. translator credits
-#: ../baobab/src/callbacks.c:104 ../mate-dictionary/src/gdict-about.c:55
-#: ../logview/logview-about.h:63
+#: ../baobab/src/callbacks.c:103 ../logview/src/logview-about.h:63
+#: ../mate-dictionary/src/gdict-about.c:55
 msgid "translator-credits"
 msgstr "Miguel Anxo Bouzada <mbouzada@gmail.com>, 2013.\nProxecto Trasno <proxecto@trasno.net>, 2013.\nFran Diéguez <frandieguez@ubuntu.com>, 2009, 2010.\nAntón Méixome <meixome@mancomun.org>, 2009.\nMancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun.org>, 2009.\nSuso Baleato <suso.baleato@xunta.es>, 2009.\nIgnacio Casal Quinteiro <icq@cvs.mate.org>, 2004, 2005, 2006, 2007,2008.\nJesús Bravo Álvarez <jba@pobox.com>, 2000-2001.\nRuben Lopez Gomez <ryu@mundivia.es>, 1999."
 
-#: ../baobab/src/callbacks.c:202 ../gsearchtool/gsearchtool-callbacks.c:508
-#: ../gsearchtool/gsearchtool-callbacks.c:848
+#: ../baobab/src/callbacks.c:201
+#: ../gsearchtool/src/gsearchtool-callbacks.c:508
+#: ../gsearchtool/src/gsearchtool-callbacks.c:848
 msgid "The document does not exist."
 msgstr "O documento non existe."
 
-#: ../baobab/src/callbacks.c:283
+#: ../baobab/src/callbacks.c:282
 msgid "The folder does not exist."
 msgstr "O cartafol non existe."
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
+msgid "A file searching tool for MATE Desktop"
+msgstr ""
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Search Tool is a simple but powerful utility that allows you to "
+"search for files and folders on any mounted file system. Its interface gives"
+" you instant access to a wide variety of parameters for each search, such as"
+" text contained within a file, ownership, date of modification, file size, "
+"folder exclusion, etc.. </p>"
+msgstr ""
+
+#: ../gsearchtool/data/mate-search-tool.desktop.in.h:1
+msgid "MATE Search Tool"
+msgstr ""
+
+#: ../gsearchtool/data/mate-search-tool.desktop.in.h:2
+msgid "Locate documents and folders on this computer by name or content"
+msgstr "Localizar documentos e cartafoles neste computador por nome ou por contido"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:1
+msgid "Search history"
+msgstr ""
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:2
+msgid "This key defines the items which were searched for in the past."
+msgstr ""
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:3
+msgid "Show Additional Options"
+msgstr "Amosar as opcións adicionais"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:4
+msgid "Disable Quick Search"
+msgstr "Desactivar a busca rápida"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:5
+msgid ""
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
+msgstr "Esta chave determina se desactiva o uso da orde de localización ao efectuar buscas simples de nomes de ficheiro."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:6
+msgid "Quick Search Excluded Paths"
+msgstr "Rutas excluídas da busca rápida"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:7
+msgid ""
+"This key defines the paths the search tool will exclude from a quick search."
+" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
+"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
+msgstr "Esta chave define as rutas que a ferramenta de busca excluirá dunha busca rápida. Permítense os comodíns «*» e «?». Os valores predeterminados son /mnt/*, /media/*, /dev/*, /tmp/*, /proc/* e /var/*."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:8
+msgid "Disable Quick Search Second Scan"
+msgstr "Desactivar a segunda análise da busca rápida"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:9
+msgid ""
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
+msgstr "Esta chave determina se a ferramenta de busca desactiva o uso da orde «find» despois de efectuar unha busca rápida."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:10
+msgid "Quick Search Second Scan Excluded Paths"
+msgstr "Rutas excluídas da segunda análise da busca rápida"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:11
+msgid ""
+"This key defines the paths the search tool will exclude from a second scan "
+"when performing a quick search. The second scan uses the find command to "
+"search for files. The purpose of the second scan is to find files that have "
+"not been indexed. The wildcards '*' and '?' are supported. The default value"
+" is /."
+msgstr "Esta chave define as rutas que a ferramenta de busca excluirá dunha segunda análise ao efectuar unha busca rápida. A segunda análise usa a orde «find» para buscar ficheiros. O obxectivo da segunda análise é buscar ficheiros que non foran indexados. Permítense os comodíns «*» e «?». O valor predeterminado é /."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:12
+msgid "Search Result Columns Order"
+msgstr "Orde das columnas do resultado da busca"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:13
+msgid ""
+"This key defines the order of the columns in the search results. This key "
+"should not be modified by the user."
+msgstr "Esta chave define a orde das columnas nos resultados da busca. Esta chave non debería ser modificada polo usuario."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:14
+msgid "Default Window Width"
+msgstr "Largura predeterminada da xanela"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:15
+msgid ""
+"This key defines the window width, and it's used to remember the size of the"
+" search tool between sessions. Setting it to -1 will make the search tool "
+"use the default width."
+msgstr "Esta chave define a largura da xanela e úsase para lembrar o tamaño da ferramenta de busca entre sesións. Definila como -1 fará que a ferramenta use a largura predeterminada."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:16
+msgid "Default Window Height"
+msgstr "Altura predeterminada da xanela"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:17
+msgid ""
+"This key defines the window height, and it's used to remember the size of "
+"the search tool between sessions. Setting it to -1 will make the search tool"
+" use the default height."
+msgstr "Esta chave define a altura da xanela e úsase para lembrar o tamaño da ferramenta de busca entre sesións. Definila como -1 fará que a ferramenta use a altura predeterminada."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:18
+msgid "Default Window Maximized"
+msgstr "Xanela maximizada predeterminada"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:19
+msgid ""
+"This key determines if the search tool window starts in a maximized state."
+msgstr "Esta chave determina se a ferramenta de busca se inicia en estado maximizado."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:20
+msgid "Look in Folder"
+msgstr "Buscar no cartafol"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:21
+msgid "This key defines the default value of the \"Look in Folder\" widget."
+msgstr "Esta chave define o valor predeterminado do widget «Buscar en cartafol»"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:22
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr "Esta chave determina se a opción «Contains the text» está seleccionada cando se inicia a ferramenta de busca."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:23
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
+msgstr "Esta chave determina se a opción «Date modified less than» está seleccionada cando se inicia a ferramenta de busca."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:24
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
+msgstr "Esta chave determina se a opción «Date modified more than» está seleccionada cando se inicia a ferramenta de busca."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:25
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr "Esta chave determina se a opción «Size at least» está seleccionada cando se inicia a ferramenta de busca."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:26
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
+msgstr "Esta chave determina se a opción «Size at most» está seleccionada cando se inicia a ferramenta de busca."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:27
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
+msgstr "Esta chave determina se a opción «File is empty» está seleccionada cando se inicia a ferramenta de busca."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:28
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
+msgstr "Esta chave determina se a opción «Owned by user» está seleccionada cando se inicia a ferramenta de busca."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:29
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when"
+" the search tool is started."
+msgstr "Esta chave determina se a opción «Owned by group» está seleccionada cando se inicia a ferramenta de busca."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:30
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
+msgstr "Esta chave determina se a opción «Owner is unrecognized» está seleccionada cando se inicia a ferramenta de busca."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:31
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr "Esta chave determina se a opción «Name does not contain» está seleccionada cando se inicia a ferramenta de busca."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:32
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option"
+" is selected when the search tool is started."
+msgstr "Esta chave determina se a opción «Name matches regular expression» está seleccionada cando se inicia a ferramenta de busca."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:33
+msgid ""
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
+msgstr "Esta chave determina se a opción «Show hidden files and folders» está seleccionada cando se inicia a ferramenta de busca."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:34
+msgid ""
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr "Esta chave determina se a opción «Follow symbolic links» está seleccionada cando se inicia a ferramenta de busca."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:35
+msgid ""
+"This key determines if the \"Exclude other filesystems\" search option is "
+"selected when the search tool is started."
+msgstr "Esta chave determina se a opción «Excluír outros sistemas de ficheiros» está seleccionada cando se inicia a ferramenta de busca."
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "O ficheiro non é un ficheiro .desktop correcto"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Versión de ficheiro de escritorio descoñecida «%s»"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:957
+#, c-format
+msgid "Starting %s"
+msgstr "Arrancando %s"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1098
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "O aplicativo non acepta documentos na liña de ordes"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1166
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "Descoñécese a opción de inicio: %d"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1365
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "Non se lle poden pasar URI de documento a unha entrada de escritorio «Type=Link»"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1384
+#, c-format
+msgid "Not a launchable item"
+msgstr "Non é un ítem de inicio"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:225
+msgid "Disable connection to session manager"
+msgstr "Desactivar a conexión ao xestor de sesións"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+msgid "Specify file containing saved configuration"
+msgstr "Especificar o ficheiro que contén a configuración gardada"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+msgid "FILE"
+msgstr "FICHEIRO"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+msgid "Specify session management ID"
+msgstr "Especificar o ID da xestión de sesión"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+msgid "ID"
+msgstr "ID"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:252
+msgid "Session management options:"
+msgstr "Amosar as opcións da xestión de sesión:"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:253
+msgid "Show session management options"
+msgstr "Amosar as opcións da xestión de sesións"
+
+#: ../gsearchtool/src/gsearchtool.c:82
+msgid "Contains the _text"
+msgstr "Contén o _texto"
+
+#: ../gsearchtool/src/gsearchtool.c:84
+msgid "_Date modified less than"
+msgstr "_Data de modificación anterior a"
+
+#: ../gsearchtool/src/gsearchtool.c:84 ../gsearchtool/src/gsearchtool.c:85
+msgid "days"
+msgstr "días"
+
+#: ../gsearchtool/src/gsearchtool.c:85
+msgid "Date modified more than"
+msgstr "Data de modificación posterior a"
+
+#: ../gsearchtool/src/gsearchtool.c:87
+msgid "S_ize at least"
+msgstr "Tamaño mín_imo"
+
+#: ../gsearchtool/src/gsearchtool.c:87 ../gsearchtool/src/gsearchtool.c:88
+msgid "kilobytes"
+msgstr "kilobytes"
+
+#: ../gsearchtool/src/gsearchtool.c:88
+msgid "Si_ze at most"
+msgstr "Tamaño má_ximo"
+
+#: ../gsearchtool/src/gsearchtool.c:89
+msgid "File is empty"
+msgstr "O ficheiro está baleiro"
+
+#: ../gsearchtool/src/gsearchtool.c:91
+msgid "Owned by _user"
+msgstr "Propiedade do _usuario"
+
+#: ../gsearchtool/src/gsearchtool.c:92
+msgid "Owned by _group"
+msgstr "Propiedade do gru_po"
+
+#: ../gsearchtool/src/gsearchtool.c:93
+msgid "Owner is unrecognized"
+msgstr "Non se recoñece o propietario"
+
+#: ../gsearchtool/src/gsearchtool.c:95
+msgid "Na_me does not contain"
+msgstr "O no_me non contén"
+
+#: ../gsearchtool/src/gsearchtool.c:96
+msgid "Name matches regular e_xpression"
+msgstr "O nome coincide coa e_xpresión regular"
+
+#: ../gsearchtool/src/gsearchtool.c:98
+msgid "Show hidden and backup files"
+msgstr "Amosar os ficheiros ocultos e as copias de seguranza"
+
+#: ../gsearchtool/src/gsearchtool.c:99
+msgid "Follow symbolic links"
+msgstr "Seguir as ligazóns simbólicas"
+
+#: ../gsearchtool/src/gsearchtool.c:100
+msgid "Exclude other filesystems"
+msgstr "Excluír outros sistemas de ficheiros"
+
+#: ../gsearchtool/src/gsearchtool.c:158
+msgid "Show version of the application"
+msgstr "Amosar a versión do aplicativo"
+
+#: ../gsearchtool/src/gsearchtool.c:159 ../gsearchtool/src/gsearchtool.c:164
+#: ../gsearchtool/src/gsearchtool.c:173
+msgid "STRING"
+msgstr "CADEA"
+
+#: ../gsearchtool/src/gsearchtool.c:160
+msgid "PATH"
+msgstr "RUTA"
+
+#: ../gsearchtool/src/gsearchtool.c:161
+msgid "VALUE"
+msgstr "VALOR"
+
+#: ../gsearchtool/src/gsearchtool.c:165 ../gsearchtool/src/gsearchtool.c:166
+msgid "DAYS"
+msgstr "DÍAS"
+
+#: ../gsearchtool/src/gsearchtool.c:167 ../gsearchtool/src/gsearchtool.c:168
+msgid "KILOBYTES"
+msgstr "KILOBYTES"
+
+#: ../gsearchtool/src/gsearchtool.c:170
+msgid "USER"
+msgstr "USUARIO"
+
+#: ../gsearchtool/src/gsearchtool.c:171
+msgid "GROUP"
+msgstr "GRUPO"
+
+#: ../gsearchtool/src/gsearchtool.c:174
+msgid "PATTERN"
+msgstr "PATRÓN"
+
+#: ../gsearchtool/src/gsearchtool.c:385
+msgid "A locate database has probably not been created."
+msgstr "Probabelmente non se creou unha base de datos de localización."
+
+#: ../gsearchtool/src/gsearchtool.c:487
+#, c-format
+msgid "Character set conversion failed for \"%s\""
+msgstr "A conversión do conxunto de caracteres fallou por «%s»"
+
+#: ../gsearchtool/src/gsearchtool.c:511
+msgid "Searching..."
+msgstr "Buscando..."
+
+#: ../gsearchtool/src/gsearchtool.c:511 ../gsearchtool/src/gsearchtool.c:1031
+#: ../gsearchtool/src/gsearchtool.c:3030
+msgid "Search for Files"
+msgstr "Buscar ficheiros"
+
+#: ../gsearchtool/src/gsearchtool.c:977 ../gsearchtool/src/gsearchtool.c:1006
+msgid "No files found"
+msgstr "Non se atopou ningún ficheiro"
+
+#: ../gsearchtool/src/gsearchtool.c:999
+msgid "(stopped)"
+msgstr "(detido)"
+
+#: ../gsearchtool/src/gsearchtool.c:1005
+msgid "No Files Found"
+msgstr "Non se atopou ningún ficheiro"
+
+#: ../gsearchtool/src/gsearchtool.c:1010
+#, c-format
+msgid "%'d File Found"
+msgid_plural "%'d Files Found"
+msgstr[0] "%'d ficheiro atopado"
+msgstr[1] "%'d ficheiros atopados"
+
+#: ../gsearchtool/src/gsearchtool.c:1014 ../gsearchtool/src/gsearchtool.c:1052
+#, c-format
+msgid "%'d file found"
+msgid_plural "%'d files found"
+msgstr[0] "%'d ficheiro atopado"
+msgstr[1] "%'d ficheiros atopados"
+
+#: ../gsearchtool/src/gsearchtool.c:1143
+msgid "Entry changed called for a non entry option!"
+msgstr "Pediu unha modificación de entrada para unha opción que non ten entrada!"
+
+#: ../gsearchtool/src/gsearchtool.c:1308
+msgid "Set the text of \"Name contains\" search option"
+msgstr "Configurar o texto da opción de busca «O nome contén»"
+
+#: ../gsearchtool/src/gsearchtool.c:1309
+msgid "Set the text of \"Look in folder\" search option"
+msgstr "Configurar o texto da opción de busca «Buscar no cartafol»"
+
+#: ../gsearchtool/src/gsearchtool.c:1310
+msgid "Sort files by one of the following: name, folder, size, type, or date"
+msgstr "Ordenar os ficheiros por nome, cartafol, tamaño, tipo ou data"
+
+#: ../gsearchtool/src/gsearchtool.c:1311
+msgid "Set sort order to descending, the default is ascending"
+msgstr "Configurar unha orde de clasificación descendente; o predeterminado é ascendente"
+
+#: ../gsearchtool/src/gsearchtool.c:1312
+msgid "Automatically start a search"
+msgstr "Iniciar unha busca automaticamente"
+
+#: ../gsearchtool/src/gsearchtool.c:1318
+#, c-format
+msgid "Select the \"%s\" search option"
+msgstr "Seleccionar a opción de busca «%s»"
+
+#: ../gsearchtool/src/gsearchtool.c:1321
+#, c-format
+msgid "Select and set the \"%s\" search option"
+msgstr "Seleccionar e configurar a opción de busca «%s»"
+
+#: ../gsearchtool/src/gsearchtool.c:1428
+msgid "Invalid option passed to sortby command line argument."
+msgstr "Indicouse unha opción incorrecta no argumento da liña de ordes «sortby»."
+
+#: ../gsearchtool/src/gsearchtool.c:1720
+msgid ""
+"\n"
+"... Too many errors to display ..."
+msgstr "\n... Demasiados erros para amosar ..."
+
+#: ../gsearchtool/src/gsearchtool.c:1734
+msgid ""
+"The search results may be invalid.  There were errors while performing this "
+"search."
+msgstr "O resultado da busca pode non ser correcto. Producironse erros ao efectuar esta busca."
+
+#: ../gsearchtool/src/gsearchtool.c:1746 ../gsearchtool/src/gsearchtool.c:1790
+msgid "Show more _details"
+msgstr "Amosar máis _detalles"
+
+#: ../gsearchtool/src/gsearchtool.c:1776
+msgid ""
+"The search results may be out of date or invalid.  Do you want to disable "
+"the quick search feature?"
+msgstr "Os resultados da busca poden non ser correctos ou non estar ao día. Quere desactivar a función busca rápida?"
+
+#: ../gsearchtool/src/gsearchtool.c:1801
+msgid "Disable _Quick Search"
+msgstr "Desactivar a busca _rápida"
+
+#: ../gsearchtool/src/gsearchtool.c:1828
+#, c-format
+msgid "Failed to set process group id of child %d: %s.\n"
+msgstr "Produciuse un fallo ao definir o id do grupo de proceso do fillo %d: %s.\n"
+
+#: ../gsearchtool/src/gsearchtool.c:1853
+msgid "Error parsing the search command."
+msgstr "Produciuse un erro ao analizar a orde de busca."
+
+#: ../gsearchtool/src/gsearchtool.c:1885
+msgid "Error running the search command."
+msgstr "Produciuse un erro ao executar a orde de busca."
+
+#: ../gsearchtool/src/gsearchtool.c:2008
+#, c-format
+msgid "Enter a text value for the \"%s\" search option."
+msgstr "Introduza un valor de texto para a opción de busca «%s»."
+
+#. Translators:  Below is a string displaying the search options name
+#. and unit value.  For example, "\"Date modified less than\" in days".
+#: ../gsearchtool/src/gsearchtool.c:2013
+#, c-format
+msgid "\"%s\" in %s"
+msgstr "«%s» en %s"
+
+#: ../gsearchtool/src/gsearchtool.c:2015
+#, c-format
+msgid "Enter a value in %s for the \"%s\" search option."
+msgstr "Introduza un valor en %s para a opción de busca «%s»."
+
+#: ../gsearchtool/src/gsearchtool.c:2073
+#, c-format
+msgid "Remove \"%s\""
+msgstr "Eliminar «%s»"
+
+#: ../gsearchtool/src/gsearchtool.c:2074
+#, c-format
+msgid "Click to remove the \"%s\" search option."
+msgstr "Prema para eliminar a opción de busca «%s»."
+
+#: ../gsearchtool/src/gsearchtool.c:2167
+msgid "A_vailable options:"
+msgstr "Opcións _dispoñíbeis:"
+
+#: ../gsearchtool/src/gsearchtool.c:2196
+msgid "Available options"
+msgstr "Opcións dispoñíbeis"
+
+#: ../gsearchtool/src/gsearchtool.c:2197
+msgid "Select a search option from the drop-down list."
+msgstr "Seleccionar opción de busca da lista despregábel."
+
+#: ../gsearchtool/src/gsearchtool.c:2209
+msgid "Add search option"
+msgstr "Engadir unha opción de busca"
+
+#: ../gsearchtool/src/gsearchtool.c:2210
+msgid "Click to add the selected available search option."
+msgstr "Prema para engadir a opción de busca dispoñíbel seleccionada."
+
+#: ../gsearchtool/src/gsearchtool.c:2299
+msgid "S_earch results:"
+msgstr "R_esultados da busca:"
+
+#: ../gsearchtool/src/gsearchtool.c:2343
+msgid "List View"
+msgstr "Visualización de lista"
+
+#: ../gsearchtool/src/gsearchtool.c:2403
+#: ../mate-dictionary/libgdict/gdict-source.c:246
+msgid "Name"
+msgstr "Nome"
+
+#: ../gsearchtool/src/gsearchtool.c:2452
+msgid "Type"
+msgstr "Tipo"
+
+#: ../gsearchtool/src/gsearchtool.c:2464
+msgid "Date Modified"
+msgstr "Data de modificación"
+
+#: ../gsearchtool/src/gsearchtool.c:2799
+msgid "_Name contains:"
+msgstr "O _nome contén:"
+
+#: ../gsearchtool/src/gsearchtool.c:2813 ../gsearchtool/src/gsearchtool.c:2814
+msgid "Enter a filename or partial filename with or without wildcards."
+msgstr "Introduza un nome de ficheiro ou un nome de ficheiro parcial con ou sen comodíns."
+
+#: ../gsearchtool/src/gsearchtool.c:2814
+msgid "Name contains"
+msgstr "O nome contén"
+
+#: ../gsearchtool/src/gsearchtool.c:2820
+msgid "_Look in folder:"
+msgstr "Bus_car no cartafol:"
+
+#: ../gsearchtool/src/gsearchtool.c:2826
+msgid "Browse"
+msgstr "Examinar"
+
+#: ../gsearchtool/src/gsearchtool.c:2835
+msgid "Look in folder"
+msgstr "Buscar no cartafol"
+
+#: ../gsearchtool/src/gsearchtool.c:2835
+msgid "Select the folder or device from which you want to begin the search."
+msgstr "Seleccionar o cartafol ou o dispositivo desde onde quere iniciar a busca."
+
+#: ../gsearchtool/src/gsearchtool.c:2853
+msgid "Select more _options"
+msgstr "Seleccionar máis _opcións"
+
+#: ../gsearchtool/src/gsearchtool.c:2862
+msgid "Select more options"
+msgstr "Seleccionar máis opcións"
+
+#: ../gsearchtool/src/gsearchtool.c:2862
+msgid "Click to expand or collapse the list of available options."
+msgstr "Prema para expandir ou contraer a lista de opcións dispoñíbeis."
+
+#: ../gsearchtool/src/gsearchtool.c:2886
+msgid "Click to display the help manual."
+msgstr "Prema para amosar o manual de axuda."
+
+#: ../gsearchtool/src/gsearchtool.c:2894
+msgid "Click to close \"Search for Files\"."
+msgstr "Prema para pechar «Buscar ficheiros»."
+
+#: ../gsearchtool/src/gsearchtool.c:2920
+msgid "Click to perform a search."
+msgstr "Prema para efectuar unha busca."
+
+#: ../gsearchtool/src/gsearchtool.c:2921
+msgid "Click to stop a search."
+msgstr "Prema para deter a busca."
+
+#: ../gsearchtool/src/gsearchtool.c:3015
+msgid "- the MATE Search Tool"
+msgstr "- a ferramenta de busca do MATE"
+
+#: ../gsearchtool/src/gsearchtool.c:3024
+#, c-format
+msgid "Failed to parse command line arguments: %s\n"
+msgstr "Produciuse un fallo ao analizar os argumentos da liña de ordes: %s\n"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:198
+msgid "Could not open help document."
+msgstr "Non foi posíbel abrir o documento de axuda."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:349
+#, c-format
+msgid "Are you sure you want to open %d document?"
+msgid_plural "Are you sure you want to open %d documents?"
+msgstr[0] "Está seguro de que quere abrir %d documento?"
+msgstr[1] "Está seguro de que quere abrir %d documentos?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:354
+#: ../gsearchtool/src/gsearchtool-callbacks.c:551
+#, c-format
+msgid "This will open %d separate window."
+msgid_plural "This will open %d separate windows."
+msgstr[0] "Isto abrirá %d xanela separada."
+msgstr[1] "Isto abrirá %d xanelas separadas."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:394
+#, c-format
+msgid "Could not open document \"%s\"."
+msgstr "Non foi posíbel abrir o documento «%s»."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:423
+#, c-format
+msgid "Could not open folder \"%s\"."
+msgstr "Non foi posíbel abrir o cartafol «%s»."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:431
+msgid "The caja file manager is not running."
+msgstr "O xestor de ficheiros Caja non está en execución."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:523
+msgid "There is no installed viewer capable of displaying the document."
+msgstr "Non hai instalado un visor que sexa quen de amosar o documento."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:546
+#, c-format
+msgid "Are you sure you want to open %d folder?"
+msgid_plural "Are you sure you want to open %d folders?"
+msgstr[0] "Está seguro de que quere abrir %d cartafol?"
+msgstr[1] "Está seguro de que quere abrir %d cartafoles?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:699
+#, c-format
+msgid "Could not move \"%s\" to trash."
+msgstr "Non foi posíbel mover «%s» ao lixo."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:730
+#, c-format
+msgid "Do you want to delete \"%s\" permanently?"
+msgstr "Quere eliminar «%s» permanentemente?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:733
+#, c-format
+msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
+msgstr "O lixo non está dispoñíbel. Non foi posíbel mover «%s» ao lixo."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:772
+#, c-format
+msgid "Could not delete \"%s\"."
+msgstr "Non foi posíbel eliminar «%s»."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:884
+#, c-format
+msgid "Deleting \"%s\" failed: %s."
+msgstr "Produciuse un fallo ao eliminar «%s»: %s."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:896
+#, c-format
+msgid "Moving \"%s\" failed: %s."
+msgstr "Produciuse un fallo ao mover «%s»: %s."
+
+#. Popup menu item: Open
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1024
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1054
+msgid "_Open"
+msgstr "_Abrir"
+
+#. Popup menu item: Open with (default)
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1079
+#, c-format
+msgid "_Open with %s"
+msgstr "Abrir _con %s"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1114
+#, c-format
+msgid "Open with %s"
+msgstr "Abrir _con %s"
+
+#. Popup menu item: Open With
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1147
+msgid "Open Wit_h"
+msgstr "Abrir _con"
+
+#. Popup menu item: Open Containing Folder
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1192
+msgid "Open Containing _Folder"
+msgstr ""
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1232
+msgid "_Save Results As..."
+msgstr "_Gardar resultados como..."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1614
+msgid "Save Search Results As..."
+msgstr "Gardar os resultados da busca como..."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1643
+msgid "Could not save document."
+msgstr "Non foi posíbel gardar o documento."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1644
+msgid "You did not select a document name."
+msgstr "Non foi posíbel seleccionar un nome de documento."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1674
+#, c-format
+msgid "Could not save \"%s\" document to \"%s\"."
+msgstr "Non foi posíbel gardar o documento «%s» en «%s»."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1707
+#, c-format
+msgid "The document \"%s\" already exists.  Would you like to replace it?"
+msgstr "O documento «%s» xa existe. Quere substituílo?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1711
+msgid "If you replace an existing file, its contents will be overwritten."
+msgstr "Se substitúe un ficheiro existente, o seu contido sobrescribirase."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1726
+#: ../mate-screenshot/src/screenshot-xfer.c:82
+msgid "_Replace"
+msgstr "_Substituír"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1775
+msgid "The document name you selected is a folder."
+msgstr "O nome do documento que seleccionou é un cartafol."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1811
+msgid "You may not have write permissions to the document."
+msgstr "Pode que non teña permiso de escritura no documento."
+
+#. Translators:  Below are the strings displayed in the 'Date Modified'
+#. column of the list view.  The format of this string can vary depending
+#. on age of a file.  Please modify the format of the timestamp to match
+#. your locale.  For example, to display 24 hour time replace the '%-I'
+#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
+#: ../gsearchtool/src/gsearchtool-support.c:448
+msgid "today at %-I:%M %p"
+msgstr "hoxe ás %-I:%M %p"
+
+#: ../gsearchtool/src/gsearchtool-support.c:450
+msgid "yesterday at %-I:%M %p"
+msgstr "onte ás %-I:%M %p"
+
+#: ../gsearchtool/src/gsearchtool-support.c:452
+#: ../gsearchtool/src/gsearchtool-support.c:454
+msgid "%A, %B %-d %Y at %-I:%M:%S %p"
+msgstr "%A, %B de %-d %Y ás %-I:%M:%S %p"
+
+#: ../gsearchtool/src/gsearchtool-support.c:641
+msgid "link (broken)"
+msgstr "ligazón (quebrada)"
+
+#: ../gsearchtool/src/gsearchtool-support.c:645
+#, c-format
+msgid "link to %s"
+msgstr "ligazón para %s"
+
+#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
+#. Localizers:
+#. * Feel free to leave out the st, nd, rd and th suffix or
+#. * make some or all of them match.
+#. localizers: tag used to detect the first copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1257
+msgid " (copy)"
+msgstr " (copia)"
+
+#. localizers: tag used to detect the second copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1259
+msgid " (another copy)"
+msgstr " (outra copia)"
+
+#. localizers: tag used to detect the x11th copy of a file
+#. localizers: tag used to detect the x12th copy of a file
+#. localizers: tag used to detect the x13th copy of a file
+#. localizers: tag used to detect the xxth copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1262
+#: ../gsearchtool/src/gsearchtool-support.c:1264
+#: ../gsearchtool/src/gsearchtool-support.c:1266
+#: ../gsearchtool/src/gsearchtool-support.c:1276
+msgid "th copy)"
+msgstr "ª copia)"
+
+#. localizers: tag used to detect the x1st copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1269
+msgid "st copy)"
+msgstr "ª copia)"
+
+#. localizers: tag used to detect the x2nd copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1271
+msgid "nd copy)"
+msgstr "ª copia)"
+
+#. localizers: tag used to detect the x3rd copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1273
+msgid "rd copy)"
+msgstr "ª copia)"
+
+#. localizers: appended to first file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1290
+#, c-format
+msgid "%s (copy)%s"
+msgstr "%s (copia)%s"
+
+#. localizers: appended to second file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1292
+#, c-format
+msgid "%s (another copy)%s"
+msgstr "%s (outra copia)%s"
+
+#. localizers: appended to x11th file copy
+#. localizers: appended to x12th file copy
+#. localizers: appended to x13th file copy
+#. localizers: appended to xxth file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1295
+#: ../gsearchtool/src/gsearchtool-support.c:1297
+#: ../gsearchtool/src/gsearchtool-support.c:1299
+#: ../gsearchtool/src/gsearchtool-support.c:1308
+#, c-format
+msgid "%s (%dth copy)%s"
+msgstr "%s (%dª copia)%s"
+
+#. localizers: appended to x1st file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1302
+#, c-format
+msgid "%s (%dst copy)%s"
+msgstr "%s (%dª copia)%s"
+
+#. localizers: appended to x2nd file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1304
+#, c-format
+msgid "%s (%dnd copy)%s"
+msgstr "%s (%dª copia)%s"
+
+#. localizers: appended to x3rd file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1306
+#, c-format
+msgid "%s (%drd copy)%s"
+msgstr "%s (%dª copia)%s"
+
+#: ../gsearchtool/src/gsearchtool-support.c:1353
+msgid " (invalid Unicode)"
+msgstr " (Unicode incorrecto)"
+
+#. localizers: opening parentheses to match the "th copy)" string
+#: ../gsearchtool/src/gsearchtool-support.c:1442
+msgid " ("
+msgstr " ("
+
+#. localizers: opening parentheses of the "th copy)" string
+#: ../gsearchtool/src/gsearchtool-support.c:1450
+#, c-format
+msgid " (%d"
+msgstr " (%d"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "Visualizador de ficheiros de rexistro"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "Ver ou monitorizar os ficheiros de rexistro do sistema"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
+msgid "Log file to open up on startup"
+msgstr "Ficheiro de rexistro para abrir ao inicio"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
+msgid ""
+"Specifies the log file displayed at startup. The default is either "
+"/var/adm/messages or /var/log/messages, depending on your operating system."
+msgstr "Especifica o ficheiro de rexistro amosado ao inicio. O predeterminado é /var/adm/messages ou /var/log/messages, dependendo do seu sistema operativo."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
+msgid "Size of the font used to display the log"
+msgstr "Tamaño do tipo de letra usado para amosar o rexistro"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr "Especifica o tamaño do tipo de letra de largura fixa usada para amosar o rexistro na viata de árbore principal. O predeterminado cóllese do tamaño do tipo de letra predeterminado do terminal."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
+msgid "Height of the main window in pixels"
+msgstr "Altura da xanela principal en píxeles"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "Especifica a altura en píxeles da xanela principal do visor."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
+msgid "Width of the main window in pixels"
+msgstr "Largura da xanela principal en píxeles"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "Especifica a largura da xanela principal do visor de rexistros en píxeles."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
+msgid "Log files to open up on startup"
+msgstr "Ficheiros de rexistro para abrir ao inicio"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr "Especifica unha lista de ficheiros de rexistro para abrir ao inicio. Créase unha lista predeterminada ao ler /etc/syslog.conf."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
+msgid "List of saved filters"
+msgstr ""
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
+msgid "List of saved regexp filters"
+msgstr ""
+
+#: ../logview/data/logview-filter.ui.h:1
+#: ../mate-screenshot/data/mate-screenshot.ui.h:3
+msgid "_Name:"
+msgstr "_Nome:"
+
+#: ../logview/data/logview-filter.ui.h:2
+msgid "_Regular Expression:"
+msgstr "Expresión regular:"
+
+#: ../logview/data/logview-filter.ui.h:3
+msgid "Highlight"
+msgstr "Resaltar"
+
+#: ../logview/data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "Agochar"
+
+#: ../logview/data/logview-filter.ui.h:5
+msgid "Foreground:"
+msgstr "Primeiro plano:"
+
+#: ../logview/data/logview-filter.ui.h:6
+msgid "Background:"
+msgstr "Fondo."
+
+#: ../logview/data/logview-filter.ui.h:7
+msgid "Effect:"
+msgstr "Efecto:"
+
+#: ../logview/src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "Non foi posíbel abrir o ficheiro %s"
+
+#: ../logview/src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "O ficheiro está baleiro!"
+
+#: ../logview/src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "O nome de filtro non debe conter o caracter «:»"
+
+#: ../logview/src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "A expresión regular está baleira!"
+
+#: ../logview/src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "A expresión regular non é correcta: %s"
+
+#: ../logview/src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "Esquecifique entre cor de primeiro plano ou de ondo!"
+
+#: ../logview/src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "Editar filtro"
+
+#: ../logview/src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "Engadir novo filtro"
+
+#: ../logview/src/logview-filter-manager.c:508
+msgid "Filters"
+msgstr "Filtros"
+
+#: ../logview/src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "_Buscar:"
+
+#: ../logview/src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "Buscar o anterior"
+
+#: ../logview/src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "Buscar a aparición anterior da cadea que busca"
+
+#: ../logview/src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "Buscar o seguinte"
+
+#: ../logview/src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "Buscar a seguinte aparición da cadea que busca"
+
+#: ../logview/src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "Limpar a cadea de busca"
+
+#: ../logview/src/logview-log.c:598
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "Produciuse un fallo ao descomprimir o rexistro GZipped. Pode que o ficheiro estea danado."
+
+#: ../logview/src/logview-log.c:645
+msgid "You don't have enough permissions to read the file."
+msgstr "Non ten os permisos necesarios para ler o ficheiro."
+
+#: ../logview/src/logview-log.c:660
+msgid "The file is not a regular file or is not a text file."
+msgstr "O ficheiro non é un ficheiro estándar ou de texto."
+
+#: ../logview/src/logview-log.c:742
+msgid "This version of System Log does not support GZipped logs."
+msgstr "Esta versión do System Log non permite os rexistros GZipped."
+
+#: ../logview/src/logview-loglist.c:316
+msgid "Loading..."
+msgstr "Cargando..."
+
+#: ../logview/src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "Amosar a versión do aplicativo"
+
+#: ../logview/src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[FICHEIRO DE REXISTROS...]"
+
+#: ../logview/src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - Examinar e monitorizar os rexistros"
+
+#: ../logview/src/logview-main.c:100
+msgid "Log Viewer"
+msgstr "Visualizador de rexistro"
+
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:762
+msgid "System Log Viewer"
+msgstr "Visualizador do rexistro do sistema"
+
+#: ../logview/src/logview-window.c:212
+#, c-format
+msgid "last update: %s"
+msgstr "última actualización: %s"
+
+#: ../logview/src/logview-window.c:216
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d liñas (%s) - %s"
+
+#: ../logview/src/logview-window.c:320
+msgid "Open Log"
+msgstr "Abrir rexistro"
+
+#: ../logview/src/logview-window.c:359
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Produciuse un erro ao amosar a axuda: %s"
+
+#: ../logview/src/logview-window.c:473
+msgid "Wrapped"
+msgstr "Axustado"
+
+#: ../logview/src/logview-window.c:488
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
+msgid "Not found"
+msgstr "Non atopado"
+
+#: ../logview/src/logview-window.c:767
+msgid "A system log viewer for MATE."
+msgstr "Un visor do rexistro do sistema para o MATE."
+
+#: ../logview/src/logview-window.c:810
+#: ../mate-dictionary/src/gdict-window.c:1284
+msgid "_File"
+msgstr "_Ficheiro"
+
+#: ../logview/src/logview-window.c:813
+msgid "_Filters"
+msgstr "Filtros"
+
+#: ../logview/src/logview-window.c:816
+msgid "_Open..."
+msgstr "_Abrir..."
+
+#: ../logview/src/logview-window.c:816
+msgid "Open a log from file"
+msgstr "Abrir un ficheiro de rexistro"
+
+#: ../logview/src/logview-window.c:818
+msgid "_Close"
+msgstr "_Pechar"
+
+#: ../logview/src/logview-window.c:818
+msgid "Close this log"
+msgstr "Pechar este rexistro"
+
+#: ../logview/src/logview-window.c:820
+msgid "_Quit"
+msgstr "_Saír"
+
+#: ../logview/src/logview-window.c:820
+msgid "Quit the log viewer"
+msgstr "Saír do visor de rexistro do sistema"
+
+#: ../logview/src/logview-window.c:823
+msgid "_Copy"
+msgstr "_Copiar"
+
+#: ../logview/src/logview-window.c:823
+msgid "Copy the selection"
+msgstr "Copiar a selección"
+
+#: ../logview/src/logview-window.c:825
+#: ../mate-dictionary/src/gdict-window.c:1305
+msgid "Select _All"
+msgstr "Seleccionar _todo"
+
+#: ../logview/src/logview-window.c:825
+msgid "Select the entire log"
+msgstr "Seleccionar todo o rexistro"
+
+#: ../logview/src/logview-window.c:827
+msgid "_Find..."
+msgstr "_Buscar..."
+
+#: ../logview/src/logview-window.c:827
+msgid "Find a word or phrase in the log"
+msgstr "Buscar unha palabra ou frase no rexistro"
+
+#: ../logview/src/logview-window.c:830
+msgid "Bigger text size"
+msgstr "Tamaño de texto maior"
+
+#: ../logview/src/logview-window.c:832
+msgid "Smaller text size"
+msgstr "Tamaño de texto menor"
+
+#: ../logview/src/logview-window.c:834
+msgid "Normal text size"
+msgstr "Tamaño de texto normal"
+
+#: ../logview/src/logview-window.c:837
+msgid "Manage Filters"
+msgstr "Xestionar filtros"
+
+#: ../logview/src/logview-window.c:837
+msgid "Manage filters"
+msgstr "Xestionar filtros"
+
+#: ../logview/src/logview-window.c:840
+msgid "Open the help contents for the log viewer"
+msgstr "Abrir os contidos da axuda para o visor de rexistros"
+
+#: ../logview/src/logview-window.c:842
+#: ../mate-dictionary/src/gdict-applet.c:1188
+#: ../mate-dictionary/src/gdict-window.c:1340
+msgid "_About"
+msgstr "_Sobre"
+
+#: ../logview/src/logview-window.c:842
+msgid "Show the about dialog for the log viewer"
+msgstr "Amosar o diálogo Sobre para o visor de rexistros"
+
+#: ../logview/src/logview-window.c:847
+msgid "_Statusbar"
+msgstr "Barra de e_stado"
+
+#: ../logview/src/logview-window.c:847
+msgid "Show Status Bar"
+msgstr "Amosar a barra de estado"
+
+#: ../logview/src/logview-window.c:849
+msgid "Side _Pane"
+msgstr "_Panel lateral"
+
+#: ../logview/src/logview-window.c:849
+msgid "Show Side Pane"
+msgstr "Amosar o panel lateral"
+
+#: ../logview/src/logview-window.c:851
+msgid "Show matches only"
+msgstr "Amosar só as coincidencias"
+
+#: ../logview/src/logview-window.c:851
+msgid "Only show lines that match one of the given filters"
+msgstr "Só amosa as liñas que coinciden cos filtros proporcionados"
+
+#: ../logview/src/logview-window.c:983
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "Non é posíbel ler desde «%s»"
+
+#: ../logview/src/logview-window.c:1413
+msgid "Version: "
+msgstr "Versión: "
+
+#: ../logview/src/logview-window.c:1524
+msgid "Could not open the following files:"
+msgstr "Non foi posíbel abrir os seguintes ficheiros:"
 
 #: ../mate-dictionary/data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
@@ -610,6 +1867,22 @@ msgid ""
 "comes preconfigured with a list of Dict servers (RFC 2229), to which you can"
 " add your own sources, while you can select specific servers for a specific "
 "query. </p>"
+msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:1
+msgid "Dictionary Applet Factory"
+msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:2
+msgid "Factory for the dictionary applet"
+msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:3
+msgid "Dictionary Look up"
+msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:4
+msgid "Look up words in a dictionary"
 msgstr ""
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:1
@@ -649,10 +1922,6 @@ msgstr "O nome da orixe do dicionario usada"
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr "O nome da orixe do dicionario usada para recuperar as definicións das palabras."
-
-#: ../mate-dictionary/data/spanish.desktop.in.h:1
-msgid "Spanish Dictionaries"
-msgstr "Dicionarios de español"
 
 #: ../mate-dictionary/data/thai.desktop.in.h:1
 msgid "Longdo Thai-English Dictionaries"
@@ -819,13 +2088,6 @@ msgstr "Limpar a lista de bases de datos dispoñíbeis"
 msgid "Error while matching"
 msgstr "Produciuse un erro ao estabelecer a equivalencia"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
-#: ../logview/logview-window.c:486
-msgid "Not found"
-msgstr "Non atopado"
-
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1327
 msgid "F_ind:"
 msgstr "_Buscar:"
@@ -863,11 +2125,6 @@ msgstr "Nome do ficheiro"
 #: ../mate-dictionary/libgdict/gdict-source.c:233
 msgid "The filename used by this dictionary source"
 msgstr "O nome de ficheiro usado para esta orixe do dicionario"
-
-#: ../mate-dictionary/libgdict/gdict-source.c:246
-#: ../gsearchtool/gsearchtool.c:2403
-msgid "Name"
-msgstr "Nome"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:247
 msgid "The display name of this dictionary source"
@@ -1021,9 +2278,9 @@ msgid "Look up words in dictionaries"
 msgstr "Buscar palabras en dicionarios"
 
 #: ../mate-dictionary/src/gdict-about.c:78
-#: ../mate-dictionary/src/gdict-app.c:379
+#: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:604
-#: ../mate-dictionary/src/gdict-window.c:1968
+#: ../mate-dictionary/src/gdict-window.c:1974
 msgid "Dictionary"
 msgstr "Dicionario"
 
@@ -1060,55 +2317,43 @@ msgid ""
 "%s"
 msgstr "Produciuse un erro ao buscar a definición de «%s»:\n%s"
 
-#: ../mate-dictionary/src/gdict-app.c:337
-#: ../mate-dictionary/src/gdict-app.c:351
+#: ../mate-dictionary/src/gdict-app.c:333
+#: ../mate-dictionary/src/gdict-app.c:343
 msgid "Words to look up"
 msgstr "Palabras para buscar"
 
-#: ../mate-dictionary/src/gdict-app.c:337
-#: ../mate-dictionary/src/gdict-app.c:339
-#: ../mate-dictionary/src/gdict-app.c:351
+#: ../mate-dictionary/src/gdict-app.c:333
+#: ../mate-dictionary/src/gdict-app.c:335
+#: ../mate-dictionary/src/gdict-app.c:343
 msgid "word"
 msgstr "palabra"
 
-#: ../mate-dictionary/src/gdict-app.c:339
+#: ../mate-dictionary/src/gdict-app.c:335
 msgid "Words to match"
 msgstr "Palabras para equivalencia"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:337
 msgid "Dictionary source to use"
 msgstr "orixe de dicionario para usar"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:337
 msgid "source"
 msgstr "orixe"
 
-#: ../mate-dictionary/src/gdict-app.c:343
-msgid "Show available dictionary sources"
-msgstr "Amosar as orixes de dicionarios dispoñíbeis"
-
-#: ../mate-dictionary/src/gdict-app.c:345
+#: ../mate-dictionary/src/gdict-app.c:339
 msgid "Print result to the console"
 msgstr "Imprimir o resultado na consola"
 
-#: ../mate-dictionary/src/gdict-app.c:347
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "Database to use"
 msgstr "Base de datos para usar"
 
-#: ../mate-dictionary/src/gdict-app.c:347
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "db"
 msgstr "bd"
 
-#: ../mate-dictionary/src/gdict-app.c:349
-msgid "Strategy to use"
-msgstr "Estratexia para usar"
-
-#: ../mate-dictionary/src/gdict-app.c:349
-msgid "strat"
-msgstr "estrato"
-
 #. create the new option context
-#: ../mate-dictionary/src/gdict-app.c:361
+#: ../mate-dictionary/src/gdict-app.c:353
 msgid " - Look up words in dictionaries"
 msgstr " - Buscar palabras en dicionarios"
 
@@ -1185,64 +2430,59 @@ msgid "Dictionary entry"
 msgstr "Entrada de dicionario"
 
 #: ../mate-dictionary/src/gdict-applet.c:715
-#: ../mate-dictionary/src/gdict-window.c:1097
+#: ../mate-dictionary/src/gdict-window.c:1103
 msgid "Dictionary Preferences"
 msgstr "Preferencias de dicionario"
 
 #: ../mate-dictionary/src/gdict-applet.c:739
 #: ../mate-dictionary/src/gdict-pref-dialog.c:495
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
-#: ../mate-dictionary/src/gdict-window.c:1244
+#: ../mate-dictionary/src/gdict-window.c:1250
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "Produciuse un erro ao amosar a axuda"
 
-#: ../mate-dictionary/src/gdict-applet.c:893
+#: ../mate-dictionary/src/gdict-applet.c:878
 #: ../mate-dictionary/src/gdict-window.c:519
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "Non hai ningunha orixe de dicionario co nome «%s»"
 
-#: ../mate-dictionary/src/gdict-applet.c:897
+#: ../mate-dictionary/src/gdict-applet.c:882
 #: ../mate-dictionary/src/gdict-window.c:523
 msgid "Unable to find dictionary source"
 msgstr "Non é posíbel localizar a orixe do dicionario"
 
-#: ../mate-dictionary/src/gdict-applet.c:913
+#: ../mate-dictionary/src/gdict-applet.c:898
 #: ../mate-dictionary/src/gdict-window.c:539
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "Non hai un contexto dispoñíbel para a orixe «%s»"
 
-#: ../mate-dictionary/src/gdict-applet.c:917
+#: ../mate-dictionary/src/gdict-applet.c:902
 #: ../mate-dictionary/src/gdict-window.c:543
 msgid "Unable to create a context"
 msgstr "Non é posíbel crear un contexto"
 
-#: ../mate-dictionary/src/gdict-applet.c:1198
+#: ../mate-dictionary/src/gdict-applet.c:1170
 msgid "_Look Up Selected Text"
 msgstr "Buscar o texto se_leccionado"
 
-#: ../mate-dictionary/src/gdict-applet.c:1201
+#: ../mate-dictionary/src/gdict-applet.c:1173
 msgid "Cl_ear"
 msgstr "Li_mpar"
 
-#: ../mate-dictionary/src/gdict-applet.c:1204
+#: ../mate-dictionary/src/gdict-applet.c:1176
 msgid "_Print"
 msgstr "_Imprimir"
 
-#: ../mate-dictionary/src/gdict-applet.c:1207
+#: ../mate-dictionary/src/gdict-applet.c:1179
 msgid "_Save"
 msgstr "_Gardar"
 
-#: ../mate-dictionary/src/gdict-applet.c:1210
+#: ../mate-dictionary/src/gdict-applet.c:1182
 msgid "Preferences"
 msgstr ""
-
-#: ../mate-dictionary/src/gdict-applet.c:1216
-#: ../mate-dictionary/src/gdict-window.c:1334 ../logview/logview-window.c:840
-msgid "_About"
-msgstr "_Sobre"
 
 #: ../mate-dictionary/src/gdict-common.c:80
 #, c-format
@@ -1332,179 +2572,171 @@ msgstr[1] "Atopáronse %d definicións"
 msgid "%s - Dictionary"
 msgstr "%s - Dicionario"
 
-#: ../mate-dictionary/src/gdict-window.c:1278 ../logview/logview-window.c:808
-msgid "_File"
-msgstr "_Ficheiro"
-
-#: ../mate-dictionary/src/gdict-window.c:1281
+#: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_Go"
 msgstr "_Ir"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1285
+#: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_New"
 msgstr "_Novo"
 
-#: ../mate-dictionary/src/gdict-window.c:1286
+#: ../mate-dictionary/src/gdict-window.c:1292
 msgid "New look up"
 msgstr "Nova busca"
 
-#: ../mate-dictionary/src/gdict-window.c:1287
+#: ../mate-dictionary/src/gdict-window.c:1293
 msgid "_Save a Copy..."
 msgstr "_Gardar unha copia..."
 
-#: ../mate-dictionary/src/gdict-window.c:1289
+#: ../mate-dictionary/src/gdict-window.c:1295
 msgid "P_review..."
 msgstr "_Vista previa..."
 
-#: ../mate-dictionary/src/gdict-window.c:1290
+#: ../mate-dictionary/src/gdict-window.c:1296
 msgid "Preview this document"
 msgstr "Vista previa deste documento"
 
-#: ../mate-dictionary/src/gdict-window.c:1291
+#: ../mate-dictionary/src/gdict-window.c:1297
 msgid "_Print..."
 msgstr "Im_primir..."
 
-#: ../mate-dictionary/src/gdict-window.c:1292
+#: ../mate-dictionary/src/gdict-window.c:1298
 msgid "Print this document"
 msgstr "Imprimir este documento"
 
-#: ../mate-dictionary/src/gdict-window.c:1299 ../logview/logview-window.c:823
-msgid "Select _All"
-msgstr "Seleccionar _todo"
-
-#: ../mate-dictionary/src/gdict-window.c:1302
+#: ../mate-dictionary/src/gdict-window.c:1308
 msgid "Find a word or phrase in the document"
 msgstr "Buscar unha palabra ou frase no documento"
 
-#: ../mate-dictionary/src/gdict-window.c:1304
+#: ../mate-dictionary/src/gdict-window.c:1310
 msgid "Find Ne_xt"
 msgstr "Buscar _seguinte"
 
-#: ../mate-dictionary/src/gdict-window.c:1306
+#: ../mate-dictionary/src/gdict-window.c:1312
 msgid "Find Pre_vious"
 msgstr "Buscar an_terior"
 
-#: ../mate-dictionary/src/gdict-window.c:1308
+#: ../mate-dictionary/src/gdict-window.c:1314
 msgid "_Preferences"
 msgstr "_Preferencias"
 
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1312
+#: ../mate-dictionary/src/gdict-window.c:1318
 msgid "_Previous Definition"
 msgstr "Definición a_nterior"
 
-#: ../mate-dictionary/src/gdict-window.c:1313
+#: ../mate-dictionary/src/gdict-window.c:1319
 msgid "Go to the previous definition"
 msgstr "Ir á definición anterior"
 
-#: ../mate-dictionary/src/gdict-window.c:1314
+#: ../mate-dictionary/src/gdict-window.c:1320
 msgid "_Next Definition"
 msgstr "Definición _seguinte"
 
-#: ../mate-dictionary/src/gdict-window.c:1315
+#: ../mate-dictionary/src/gdict-window.c:1321
 msgid "Go to the next definition"
 msgstr "Ir á seguinte definición"
 
-#: ../mate-dictionary/src/gdict-window.c:1316
+#: ../mate-dictionary/src/gdict-window.c:1322
 msgid "_First Definition"
 msgstr "_Primeira definición"
 
-#: ../mate-dictionary/src/gdict-window.c:1317
+#: ../mate-dictionary/src/gdict-window.c:1323
 msgid "Go to the first definition"
 msgstr "Ir á primeira definición"
 
-#: ../mate-dictionary/src/gdict-window.c:1318
+#: ../mate-dictionary/src/gdict-window.c:1324
 msgid "_Last Definition"
 msgstr "Ú_ltima definición"
 
-#: ../mate-dictionary/src/gdict-window.c:1319
+#: ../mate-dictionary/src/gdict-window.c:1325
 msgid "Go to the last definition"
 msgstr "Ir á última definición"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1322
+#: ../mate-dictionary/src/gdict-window.c:1328
 msgid "Similar _Words"
 msgstr "_Palabras semellantes"
 
-#: ../mate-dictionary/src/gdict-window.c:1324
+#: ../mate-dictionary/src/gdict-window.c:1330
 msgid "Dictionary Sources"
 msgstr "orixes de dicionarios"
 
-#: ../mate-dictionary/src/gdict-window.c:1326
+#: ../mate-dictionary/src/gdict-window.c:1332
 msgid "Available _Databases"
 msgstr "_Bases de datos dispoñíbeis"
 
-#: ../mate-dictionary/src/gdict-window.c:1328
+#: ../mate-dictionary/src/gdict-window.c:1334
 msgid "Available St_rategies"
 msgstr "Est_ratexias dispoñíbeis"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1345
+#: ../mate-dictionary/src/gdict-window.c:1351
 msgid "_Sidebar"
 msgstr "Barra _lateral"
 
-#: ../mate-dictionary/src/gdict-window.c:1347
+#: ../mate-dictionary/src/gdict-window.c:1353
 msgid "S_tatusbar"
 msgstr "Barra de es_tado"
 
-#: ../mate-dictionary/src/gdict-window.c:1412
+#: ../mate-dictionary/src/gdict-window.c:1418
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "orixe de dicionario `%s' seleccionada"
 
-#: ../mate-dictionary/src/gdict-window.c:1433
+#: ../mate-dictionary/src/gdict-window.c:1439
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "Estratexia `%s' seleccionada"
 
-#: ../mate-dictionary/src/gdict-window.c:1453
+#: ../mate-dictionary/src/gdict-window.c:1459
 #, c-format
 msgid "Database `%s' selected"
 msgstr "Base de datos `%s' seleccionada"
 
-#: ../mate-dictionary/src/gdict-window.c:1473
+#: ../mate-dictionary/src/gdict-window.c:1479
 #, c-format
 msgid "Word `%s' selected"
 msgstr "Palabra `%s' seleccionada"
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1498
+#: ../mate-dictionary/src/gdict-window.c:1504
 msgid "Double-click on the word to look up"
 msgstr "Prema dúas veces na palabra para buscala"
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1504
+#: ../mate-dictionary/src/gdict-window.c:1510
 msgid "Double-click on the matching strategy to use"
 msgstr "Prema dúas veces na estratexia de coincidencia que se vai usar"
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1509
+#: ../mate-dictionary/src/gdict-window.c:1515
 msgid "Double-click on the source to use"
 msgstr "Prema dúas veces na orixe que se vai usar"
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1518
+#: ../mate-dictionary/src/gdict-window.c:1524
 msgid "Double-click on the database to use"
 msgstr "Prema dúas veces na base de datos que se vai usar"
 
-#: ../mate-dictionary/src/gdict-window.c:1770
+#: ../mate-dictionary/src/gdict-window.c:1776
 msgid "Look _up:"
 msgstr "B_uscar:"
 
-#: ../mate-dictionary/src/gdict-window.c:1849
+#: ../mate-dictionary/src/gdict-window.c:1855
 msgid "Similar words"
 msgstr "Palabras semellantes"
 
-#: ../mate-dictionary/src/gdict-window.c:1862
+#: ../mate-dictionary/src/gdict-window.c:1868
 msgid "Available dictionaries"
 msgstr "Dicionarios dispoñíbeis"
 
-#: ../mate-dictionary/src/gdict-window.c:1880
+#: ../mate-dictionary/src/gdict-window.c:1886
 msgid "Available strategies"
 msgstr "Estratexias dispoñíbeis"
 
-#: ../mate-dictionary/src/gdict-window.c:1896
+#: ../mate-dictionary/src/gdict-window.c:1902
 msgid "Dictionary sources"
 msgstr "orixes de dicionarios"
 
@@ -1549,172 +2781,11 @@ msgstr "Dicionarios"
 msgid "Strategies"
 msgstr "Estratexias"
 
-#: ../mate-screenshot/mate-screenshot.c:133
-msgid "Error loading the help page"
-msgstr "Produciuse un erro ao cargar a páxina de axuda"
-
-#: ../mate-screenshot/mate-screenshot.c:245
-msgid "None"
-msgstr "Ningún"
-
-#: ../mate-screenshot/mate-screenshot.c:246
-msgid "Drop shadow"
-msgstr "Eliminar sombra"
-
-#: ../mate-screenshot/mate-screenshot.c:247
-msgid "Border"
-msgstr "Bordo"
-
-#. * Include pointer *
-#: ../mate-screenshot/mate-screenshot.c:351
-msgid "Include _pointer"
-msgstr "Incluír p_unteiro"
-
-#. * Include window border *
-#: ../mate-screenshot/mate-screenshot.c:360
-msgid "Include the window _border"
-msgstr "Incluír o _bordo da xanela"
-
-#: ../mate-screenshot/mate-screenshot.c:375
-msgid "Apply _effect:"
-msgstr "Aplicar _efecto:"
-
-#: ../mate-screenshot/mate-screenshot.c:437
-msgid "Grab the whole _desktop"
-msgstr "Capturar to_do o escritorio"
-
-#: ../mate-screenshot/mate-screenshot.c:449
-msgid "Grab the current _window"
-msgstr "Capturar a _xanela actual"
-
-#: ../mate-screenshot/mate-screenshot.c:461
-msgid "Select _area to grab"
-msgstr "Seleccione _área a capturar"
-
-#. translators: this is the first part of the "grab after a
-#. * delay of <spin button> seconds".
-#: ../mate-screenshot/mate-screenshot.c:478
-msgid "Grab _after a delay of"
-msgstr "Capturar despois dun _atraso de"
-
-#. translators: this is the last part of the "grab after a
-#. * delay of <spin button> seconds".
-#: ../mate-screenshot/mate-screenshot.c:498
-#: ../mate-screenshot/mate-screenshot.c:1273
-msgid "seconds"
-msgstr "segundos"
-
-#: ../mate-screenshot/mate-screenshot.c:516
-#: ../mate-screenshot/mate-screenshot.c:524
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:1
-msgid "Take Screenshot"
-msgstr "Facer unha captura de pantalla"
-
-#: ../mate-screenshot/mate-screenshot.c:525
-msgid "Effects"
-msgstr "Efectos"
-
-#: ../mate-screenshot/mate-screenshot.c:530
-msgid "Take _Screenshot"
-msgstr "Facer unha _captura de pantalla"
-
-#: ../mate-screenshot/mate-screenshot.c:650
-msgid "Error while saving screenshot"
-msgstr "Produciuse un erro ao gardar a captura de pantalla"
-
-#: ../mate-screenshot/mate-screenshot.c:653
-#, c-format
-msgid ""
-"Impossible to save the screenshot to %s.\n"
-" Error was %s.\n"
-" Please choose another location and retry."
-msgstr "Non foi posíbel gardar a captura de pantalla en %s.\n O erro foi %s.\n Elixa outra localización e probe de novo."
-
-#: ../mate-screenshot/mate-screenshot.c:785
-msgid "Screenshot taken"
-msgstr "Captura de pantalla feita"
-
-#: ../mate-screenshot/mate-screenshot.c:840
-msgid "Unable to take a screenshot of the current window"
-msgstr "Non é posíbel facer a captura de pantalla da xanela actual"
-
-#: ../mate-screenshot/mate-screenshot.c:893
-#, c-format
-msgid "Screenshot-%s.png"
-msgstr "Captura-de-pantalla-%s.png"
-
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if a specific window is
-#. * taken
-#: ../mate-screenshot/mate-screenshot.c:900
-#, c-format
-msgid "Screenshot-%s-%d.png"
-msgstr "Captura-de-pantalla-%s-%d.png"
-
-#. translators: this is the name of the file that gets made up
-#. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/mate-screenshot.c:910
-#: ../mate-screenshot/screenshot-dialog.c:369
-#: ../mate-screenshot/screenshot-save.c:196
-msgid "Screenshot.png"
-msgstr "Captura-de-pantalla.png"
-
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if the entire screen is
-#. * taken
-#: ../mate-screenshot/mate-screenshot.c:917
-#, c-format
-msgid "Screenshot-%d.png"
-msgstr "Captura-de-pantalla-%d.png"
-
-#: ../mate-screenshot/mate-screenshot.c:1269
-msgid "Grab a window instead of the entire screen"
-msgstr "Capturar unha xanela en vez de toda a pantalla"
-
-#: ../mate-screenshot/mate-screenshot.c:1270
-msgid "Grab an area of the screen instead of the entire screen"
-msgstr "Capturar unha área da pantalla en vez de toda a pantalla"
-
-#: ../mate-screenshot/mate-screenshot.c:1271
-msgid "Include the window border with the screenshot"
-msgstr "Incluír o bordo da xanela na captura de pantalla"
-
-#: ../mate-screenshot/mate-screenshot.c:1272
-msgid "Remove the window border from the screenshot"
-msgstr "Eliminar o bordo da xanela na captura de pantalla"
-
-#: ../mate-screenshot/mate-screenshot.c:1273
-msgid "Take screenshot after specified delay [in seconds]"
-msgstr "Facer a captura de pantalla despois do atraso especificado [en segundos]"
-
-#: ../mate-screenshot/mate-screenshot.c:1274
-msgid "Effect to add to the border (shadow, border or none)"
-msgstr "Efecto para engadir ao bordo (sombra, bordo ou ningún)"
-
-#: ../mate-screenshot/mate-screenshot.c:1274
-msgid "effect"
-msgstr "efecto"
-
-#: ../mate-screenshot/mate-screenshot.c:1275
-msgid "Interactively set options"
-msgstr "Definir as opcións interactivamente"
-
-#: ../mate-screenshot/mate-screenshot.c:1284
-msgid "Take a picture of the screen"
-msgstr "Capturar unha imaxe da pantalla"
-
-#: ../mate-screenshot/mate-screenshot.c:1302
-#, c-format
-msgid ""
-"Conflicting options: --window and --area should not be used at the same "
-"time.\n"
-msgstr "Opcións en conflito: --window e --area non se deberían usar ao mesmo tempo.\n"
-
-#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:1
+#: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:1
 msgid "A screenshot utility for MATE Desktop"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:2
+#: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:2
 msgid ""
 "<p> MATE Screenshot is a simple utility that lets you capture screenshots of"
 " your desktop or of application windows. You can select to copy them to the "
@@ -1722,74 +2793,223 @@ msgid ""
 "format. </p>"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:2
+#: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
+#: ../mate-screenshot/src/mate-screenshot.c:516
+#: ../mate-screenshot/src/mate-screenshot.c:524
+msgid "Take Screenshot"
+msgstr "Facer unha captura de pantalla"
+
+#: ../mate-screenshot/data/mate-screenshot.desktop.in.h:2
 msgid "Save images of your desktop or individual windows"
 msgstr "Gardar imaxes do escritorio ou de xanelas individuais"
 
-#: ../mate-screenshot/mate-screenshot.ui.h:1
+#: ../mate-screenshot/data/mate-screenshot.ui.h:1
 msgid "Save Screenshot"
 msgstr "Gardar a captura de pantalla"
 
-#: ../mate-screenshot/mate-screenshot.ui.h:2
+#: ../mate-screenshot/data/mate-screenshot.ui.h:2
 msgid "C_opy to Clipboard"
 msgstr "C_opiar no portapapeis"
 
-#: ../mate-screenshot/mate-screenshot.ui.h:3
-#: ../logview/data/logview-filter.ui.h:1
-msgid "_Name:"
-msgstr "_Nome:"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:4
+#: ../mate-screenshot/data/mate-screenshot.ui.h:4
 msgid "Save in _folder:"
 msgstr "Gardar no carta_fol:"
 
-#: ../mate-screenshot/mate-screenshot.ui.h:5
+#: ../mate-screenshot/data/mate-screenshot.ui.h:5
 msgid "*"
 msgstr "*"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:1
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:1
 msgid "Screenshot delay"
 msgstr "Atraso da captura de pantalla"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:2
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:2
 msgid "The number of seconds to wait before taking the screenshot."
 msgstr "Número de segundos que hai que esperar antes de facer unha captura de pantalla."
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:3
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:3
 msgid "Screenshot directory"
 msgstr "Cartafol de capturas de pantalla"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:4
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:4
 msgid "The directory the last screenshot was saved in."
 msgstr "O cartafol onde se gardou a última captura de pantalla."
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:5
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:5
 msgid "Include Border"
 msgstr "Incluír bordo"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:6
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:6
 msgid "Include the window manager border along with the screenshot"
 msgstr "Incluír o bordo do xestor de xanelas xunto coa captura de pantalla"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:7
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:7
 msgid "Include Pointer"
 msgstr "Incluír o punteiro"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:8
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:8
 msgid "Include the pointer in the screenshot"
 msgstr "Incluír o punteiro na captura de pantalla"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:9
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:9
 msgid "Border Effect"
 msgstr "Efecto do bordo"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:10
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:10
 msgid ""
 "Effect to add to the outside of a border. Possible values are \"shadow\", "
 "\"none\", and \"border\"."
 msgstr "Efecto para engadir ao contorno exterior dun bordo. Os valores posíbeis son «shadow» (sombra), «none» (ningún) e «border» (bordo)."
 
-#: ../mate-screenshot/screenshot-dialog.c:246
+#: ../mate-screenshot/src/mate-screenshot.c:133
+msgid "Error loading the help page"
+msgstr "Produciuse un erro ao cargar a páxina de axuda"
+
+#: ../mate-screenshot/src/mate-screenshot.c:245
+msgid "None"
+msgstr "Ningún"
+
+#: ../mate-screenshot/src/mate-screenshot.c:246
+msgid "Drop shadow"
+msgstr "Eliminar sombra"
+
+#: ../mate-screenshot/src/mate-screenshot.c:247
+msgid "Border"
+msgstr "Bordo"
+
+#. * Include pointer *
+#: ../mate-screenshot/src/mate-screenshot.c:351
+msgid "Include _pointer"
+msgstr "Incluír p_unteiro"
+
+#. * Include window border *
+#: ../mate-screenshot/src/mate-screenshot.c:360
+msgid "Include the window _border"
+msgstr "Incluír o _bordo da xanela"
+
+#: ../mate-screenshot/src/mate-screenshot.c:375
+msgid "Apply _effect:"
+msgstr "Aplicar _efecto:"
+
+#: ../mate-screenshot/src/mate-screenshot.c:437
+msgid "Grab the whole _desktop"
+msgstr "Capturar to_do o escritorio"
+
+#: ../mate-screenshot/src/mate-screenshot.c:449
+msgid "Grab the current _window"
+msgstr "Capturar a _xanela actual"
+
+#: ../mate-screenshot/src/mate-screenshot.c:461
+msgid "Select _area to grab"
+msgstr "Seleccione _área a capturar"
+
+#. translators: this is the first part of the "grab after a
+#. * delay of <spin button> seconds".
+#: ../mate-screenshot/src/mate-screenshot.c:478
+msgid "Grab _after a delay of"
+msgstr "Capturar despois dun _atraso de"
+
+#. translators: this is the last part of the "grab after a
+#. * delay of <spin button> seconds".
+#: ../mate-screenshot/src/mate-screenshot.c:498
+#: ../mate-screenshot/src/mate-screenshot.c:1263
+msgid "seconds"
+msgstr "segundos"
+
+#: ../mate-screenshot/src/mate-screenshot.c:525
+msgid "Effects"
+msgstr "Efectos"
+
+#: ../mate-screenshot/src/mate-screenshot.c:530
+msgid "Take _Screenshot"
+msgstr "Facer unha _captura de pantalla"
+
+#: ../mate-screenshot/src/mate-screenshot.c:650
+msgid "Error while saving screenshot"
+msgstr "Produciuse un erro ao gardar a captura de pantalla"
+
+#: ../mate-screenshot/src/mate-screenshot.c:653
+#, c-format
+msgid ""
+"Impossible to save the screenshot to %s.\n"
+" Error was %s.\n"
+" Please choose another location and retry."
+msgstr "Non foi posíbel gardar a captura de pantalla en %s.\n O erro foi %s.\n Elixa outra localización e probe de novo."
+
+#: ../mate-screenshot/src/mate-screenshot.c:785
+msgid "Screenshot taken"
+msgstr "Captura de pantalla feita"
+
+#: ../mate-screenshot/src/mate-screenshot.c:840
+msgid "Unable to take a screenshot of the current window"
+msgstr "Non é posíbel facer a captura de pantalla da xanela actual"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format (eg, like
+#. * in France: 20:10).
+#: ../mate-screenshot/src/mate-screenshot.c:893
+msgid "%Y-%m-%d %H:%M:%S"
+msgstr ""
+
+#. translators: this is the name of the file that gets made up
+#. * with the screenshot if the entire screen is taken
+#: ../mate-screenshot/src/mate-screenshot.c:900
+#, c-format
+msgid "Screenshot at %s.png"
+msgstr ""
+
+#. translators: this is the name of the file that gets
+#. * made up with the screenshot if the entire screen is
+#. * taken
+#: ../mate-screenshot/src/mate-screenshot.c:907
+#, c-format
+msgid "Screenshot at %s - %d.png"
+msgstr ""
+
+#: ../mate-screenshot/src/mate-screenshot.c:1259
+msgid "Grab a window instead of the entire screen"
+msgstr "Capturar unha xanela en vez de toda a pantalla"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1260
+msgid "Grab an area of the screen instead of the entire screen"
+msgstr "Capturar unha área da pantalla en vez de toda a pantalla"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1261
+msgid "Include the window border with the screenshot"
+msgstr "Incluír o bordo da xanela na captura de pantalla"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1262
+msgid "Remove the window border from the screenshot"
+msgstr "Eliminar o bordo da xanela na captura de pantalla"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1263
+msgid "Take screenshot after specified delay [in seconds]"
+msgstr "Facer a captura de pantalla despois do atraso especificado [en segundos]"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1264
+msgid "Effect to add to the border (shadow, border or none)"
+msgstr "Efecto para engadir ao bordo (sombra, bordo ou ningún)"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1264
+msgid "effect"
+msgstr "efecto"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1265
+msgid "Interactively set options"
+msgstr "Definir as opcións interactivamente"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1274
+msgid "Take a picture of the screen"
+msgstr "Capturar unha imaxe da pantalla"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1292
+#, c-format
+msgid ""
+"Conflicting options: --window and --area should not be used at the same "
+"time.\n"
+msgstr "Opcións en conflito: --window e --area non se deberían usar ao mesmo tempo.\n"
+
+#: ../mate-screenshot/src/screenshot-dialog.c:246
 #, c-format
 msgid ""
 "Error loading UI definition file for the screenshot program: \n"
@@ -1798,1264 +3018,50 @@ msgid ""
 "Please check your installation of mate-utils."
 msgstr ""
 
-#: ../mate-screenshot/screenshot-dialog.c:269
+#: ../mate-screenshot/src/screenshot-dialog.c:269
 msgid "Select a folder"
 msgstr "Seleccione un cartafol"
 
-#: ../mate-screenshot/screenshot-save.c:57
+#: ../mate-screenshot/src/screenshot-dialog.c:369
+#: ../mate-screenshot/src/screenshot-save.c:196
+msgid "Screenshot.png"
+msgstr "Captura-de-pantalla.png"
+
+#: ../mate-screenshot/src/screenshot-save.c:57
 #, c-format
 msgid ""
 "Unable to clear the temporary folder:\n"
 "%s"
 msgstr "Non é posíbel limpar o cartafol temporal:\n%s"
 
-#: ../mate-screenshot/screenshot-save.c:95
+#: ../mate-screenshot/src/screenshot-save.c:95
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
 msgstr "O proceso de gardado fillo saíu inesperadamente. Non é posíbel escribir a captura de pantalla no disco."
 
-#: ../mate-screenshot/screenshot-save.c:223
+#: ../mate-screenshot/src/screenshot-save.c:223
 msgid "Unknown error saving screenshot to disk"
 msgstr "Produciuse un erro descoñecido ao gardar a captura de pantalla no disco"
 
 #. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-#: ../mate-screenshot/screenshot-utils.c:998
+#: ../mate-screenshot/src/screenshot-utils.c:998
 msgid "Untitled Window"
 msgstr "Xanela sen título"
 
-#: ../mate-screenshot/screenshot-xfer.c:72
+#: ../mate-screenshot/src/screenshot-xfer.c:72
 msgid "File already exists"
 msgstr "O ficheiro xa existe"
 
-#: ../mate-screenshot/screenshot-xfer.c:75
+#: ../mate-screenshot/src/screenshot-xfer.c:75
 #, c-format
 msgid "The file \"%s\" already exists. Would you like to replace it?"
 msgstr "O ficheiro «%s» xa existe. Quere substituílo?"
 
-#: ../mate-screenshot/screenshot-xfer.c:82
-#: ../gsearchtool/gsearchtool-callbacks.c:1726
-msgid "_Replace"
-msgstr "_Substituír"
-
-#: ../mate-screenshot/screenshot-xfer.c:120
+#: ../mate-screenshot/src/screenshot-xfer.c:120
 msgid "Saving file..."
 msgstr "Gardando o ficheiro..."
 
-#: ../mate-screenshot/screenshot-xfer.c:290
+#: ../mate-screenshot/src/screenshot-xfer.c:290
 msgid "Can't access source file"
 msgstr "Non é posíbel acceder ao ficheiro orixe"
-
-#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
-msgid "A file searching tool for MATE Desktop"
-msgstr ""
-
-#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
-msgid ""
-"<p> MATE Search Tool is a simple but powerful utility that allows you to "
-"search for files and folders on any mounted file system. Its interface gives"
-" you instant access to a wide variety of parameters for each search, such as"
-" text contained within a file, ownership, date of modification, file size, "
-"folder exclusion, etc.. </p>"
-msgstr ""
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:1
-msgid "MATE Search Tool"
-msgstr ""
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:2
-msgid "Locate documents and folders on this computer by name or content"
-msgstr "Localizar documentos e cartafoles neste computador por nome ou por contido"
-
-#: ../gsearchtool/gsearchtool.c:82
-msgid "Contains the _text"
-msgstr "Contén o _texto"
-
-#: ../gsearchtool/gsearchtool.c:84
-msgid "_Date modified less than"
-msgstr "_Data de modificación anterior a"
-
-#: ../gsearchtool/gsearchtool.c:84 ../gsearchtool/gsearchtool.c:85
-msgid "days"
-msgstr "días"
-
-#: ../gsearchtool/gsearchtool.c:85
-msgid "Date modified more than"
-msgstr "Data de modificación posterior a"
-
-#: ../gsearchtool/gsearchtool.c:87
-msgid "S_ize at least"
-msgstr "Tamaño mín_imo"
-
-#: ../gsearchtool/gsearchtool.c:87 ../gsearchtool/gsearchtool.c:88
-msgid "kilobytes"
-msgstr "kilobytes"
-
-#: ../gsearchtool/gsearchtool.c:88
-msgid "Si_ze at most"
-msgstr "Tamaño má_ximo"
-
-#: ../gsearchtool/gsearchtool.c:89
-msgid "File is empty"
-msgstr "O ficheiro está baleiro"
-
-#: ../gsearchtool/gsearchtool.c:91
-msgid "Owned by _user"
-msgstr "Propiedade do _usuario"
-
-#: ../gsearchtool/gsearchtool.c:92
-msgid "Owned by _group"
-msgstr "Propiedade do gru_po"
-
-#: ../gsearchtool/gsearchtool.c:93
-msgid "Owner is unrecognized"
-msgstr "Non se recoñece o propietario"
-
-#: ../gsearchtool/gsearchtool.c:95
-msgid "Na_me does not contain"
-msgstr "O no_me non contén"
-
-#: ../gsearchtool/gsearchtool.c:96
-msgid "Name matches regular e_xpression"
-msgstr "O nome coincide coa e_xpresión regular"
-
-#: ../gsearchtool/gsearchtool.c:98
-msgid "Show hidden and backup files"
-msgstr "Amosar os ficheiros ocultos e as copias de seguranza"
-
-#: ../gsearchtool/gsearchtool.c:99
-msgid "Follow symbolic links"
-msgstr "Seguir as ligazóns simbólicas"
-
-#: ../gsearchtool/gsearchtool.c:100
-msgid "Exclude other filesystems"
-msgstr "Excluír outros sistemas de ficheiros"
-
-#: ../gsearchtool/gsearchtool.c:158
-msgid "Show version of the application"
-msgstr "Amosar a versión do aplicativo"
-
-#: ../gsearchtool/gsearchtool.c:159 ../gsearchtool/gsearchtool.c:164
-#: ../gsearchtool/gsearchtool.c:173
-msgid "STRING"
-msgstr "CADEA"
-
-#: ../gsearchtool/gsearchtool.c:160
-msgid "PATH"
-msgstr "RUTA"
-
-#: ../gsearchtool/gsearchtool.c:161
-msgid "VALUE"
-msgstr "VALOR"
-
-#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
-msgid "DAYS"
-msgstr "DÍAS"
-
-#: ../gsearchtool/gsearchtool.c:167 ../gsearchtool/gsearchtool.c:168
-msgid "KILOBYTES"
-msgstr "KILOBYTES"
-
-#: ../gsearchtool/gsearchtool.c:170
-msgid "USER"
-msgstr "USUARIO"
-
-#: ../gsearchtool/gsearchtool.c:171
-msgid "GROUP"
-msgstr "GRUPO"
-
-#: ../gsearchtool/gsearchtool.c:174
-msgid "PATTERN"
-msgstr "PATRÓN"
-
-#: ../gsearchtool/gsearchtool.c:385
-msgid "A locate database has probably not been created."
-msgstr "Probabelmente non se creou unha base de datos de localización."
-
-#: ../gsearchtool/gsearchtool.c:487
-#, c-format
-msgid "Character set conversion failed for \"%s\""
-msgstr "A conversión do conxunto de caracteres fallou por «%s»"
-
-#: ../gsearchtool/gsearchtool.c:511
-msgid "Searching..."
-msgstr "Buscando..."
-
-#: ../gsearchtool/gsearchtool.c:511 ../gsearchtool/gsearchtool.c:1031
-#: ../gsearchtool/gsearchtool.c:3030
-msgid "Search for Files"
-msgstr "Buscar ficheiros"
-
-#: ../gsearchtool/gsearchtool.c:977 ../gsearchtool/gsearchtool.c:1006
-msgid "No files found"
-msgstr "Non se atopou ningún ficheiro"
-
-#: ../gsearchtool/gsearchtool.c:999
-msgid "(stopped)"
-msgstr "(detido)"
-
-#: ../gsearchtool/gsearchtool.c:1005
-msgid "No Files Found"
-msgstr "Non se atopou ningún ficheiro"
-
-#: ../gsearchtool/gsearchtool.c:1010
-#, c-format
-msgid "%'d File Found"
-msgid_plural "%'d Files Found"
-msgstr[0] "%'d ficheiro atopado"
-msgstr[1] "%'d ficheiros atopados"
-
-#: ../gsearchtool/gsearchtool.c:1014 ../gsearchtool/gsearchtool.c:1052
-#, c-format
-msgid "%'d file found"
-msgid_plural "%'d files found"
-msgstr[0] "%'d ficheiro atopado"
-msgstr[1] "%'d ficheiros atopados"
-
-#: ../gsearchtool/gsearchtool.c:1143
-msgid "Entry changed called for a non entry option!"
-msgstr "Pediu unha modificación de entrada para unha opción que non ten entrada!"
-
-#: ../gsearchtool/gsearchtool.c:1308
-msgid "Set the text of \"Name contains\" search option"
-msgstr "Configurar o texto da opción de busca «O nome contén»"
-
-#: ../gsearchtool/gsearchtool.c:1309
-msgid "Set the text of \"Look in folder\" search option"
-msgstr "Configurar o texto da opción de busca «Buscar no cartafol»"
-
-#: ../gsearchtool/gsearchtool.c:1310
-msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "Ordenar os ficheiros por nome, cartafol, tamaño, tipo ou data"
-
-#: ../gsearchtool/gsearchtool.c:1311
-msgid "Set sort order to descending, the default is ascending"
-msgstr "Configurar unha orde de clasificación descendente; o predeterminado é ascendente"
-
-#: ../gsearchtool/gsearchtool.c:1312
-msgid "Automatically start a search"
-msgstr "Iniciar unha busca automaticamente"
-
-#: ../gsearchtool/gsearchtool.c:1318
-#, c-format
-msgid "Select the \"%s\" search option"
-msgstr "Seleccionar a opción de busca «%s»"
-
-#: ../gsearchtool/gsearchtool.c:1321
-#, c-format
-msgid "Select and set the \"%s\" search option"
-msgstr "Seleccionar e configurar a opción de busca «%s»"
-
-#: ../gsearchtool/gsearchtool.c:1428
-msgid "Invalid option passed to sortby command line argument."
-msgstr "Indicouse unha opción incorrecta no argumento da liña de ordes «sortby»."
-
-#: ../gsearchtool/gsearchtool.c:1720
-msgid ""
-"\n"
-"... Too many errors to display ..."
-msgstr "\n... Demasiados erros para amosar ..."
-
-#: ../gsearchtool/gsearchtool.c:1734
-msgid ""
-"The search results may be invalid.  There were errors while performing this "
-"search."
-msgstr "O resultado da busca pode non ser correcto. Producironse erros ao efectuar esta busca."
-
-#: ../gsearchtool/gsearchtool.c:1746 ../gsearchtool/gsearchtool.c:1790
-msgid "Show more _details"
-msgstr "Amosar máis _detalles"
-
-#: ../gsearchtool/gsearchtool.c:1776
-msgid ""
-"The search results may be out of date or invalid.  Do you want to disable "
-"the quick search feature?"
-msgstr "Os resultados da busca poden non ser correctos ou non estar ao día. Quere desactivar a función busca rápida?"
-
-#: ../gsearchtool/gsearchtool.c:1801
-msgid "Disable _Quick Search"
-msgstr "Desactivar a busca _rápida"
-
-#: ../gsearchtool/gsearchtool.c:1828
-#, c-format
-msgid "Failed to set process group id of child %d: %s.\n"
-msgstr "Produciuse un fallo ao definir o id do grupo de proceso do fillo %d: %s.\n"
-
-#: ../gsearchtool/gsearchtool.c:1853
-msgid "Error parsing the search command."
-msgstr "Produciuse un erro ao analizar a orde de busca."
-
-#: ../gsearchtool/gsearchtool.c:1885
-msgid "Error running the search command."
-msgstr "Produciuse un erro ao executar a orde de busca."
-
-#: ../gsearchtool/gsearchtool.c:2008
-#, c-format
-msgid "Enter a text value for the \"%s\" search option."
-msgstr "Introduza un valor de texto para a opción de busca «%s»."
-
-#. Translators:  Below is a string displaying the search options name
-#. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:2013
-#, c-format
-msgid "\"%s\" in %s"
-msgstr "«%s» en %s"
-
-#: ../gsearchtool/gsearchtool.c:2015
-#, c-format
-msgid "Enter a value in %s for the \"%s\" search option."
-msgstr "Introduza un valor en %s para a opción de busca «%s»."
-
-#: ../gsearchtool/gsearchtool.c:2073
-#, c-format
-msgid "Remove \"%s\""
-msgstr "Eliminar «%s»"
-
-#: ../gsearchtool/gsearchtool.c:2074
-#, c-format
-msgid "Click to remove the \"%s\" search option."
-msgstr "Prema para eliminar a opción de busca «%s»."
-
-#: ../gsearchtool/gsearchtool.c:2167
-msgid "A_vailable options:"
-msgstr "Opcións _dispoñíbeis:"
-
-#: ../gsearchtool/gsearchtool.c:2196
-msgid "Available options"
-msgstr "Opcións dispoñíbeis"
-
-#: ../gsearchtool/gsearchtool.c:2197
-msgid "Select a search option from the drop-down list."
-msgstr "Seleccionar opción de busca da lista despregábel."
-
-#: ../gsearchtool/gsearchtool.c:2209
-msgid "Add search option"
-msgstr "Engadir unha opción de busca"
-
-#: ../gsearchtool/gsearchtool.c:2210
-msgid "Click to add the selected available search option."
-msgstr "Prema para engadir a opción de busca dispoñíbel seleccionada."
-
-#: ../gsearchtool/gsearchtool.c:2299
-msgid "S_earch results:"
-msgstr "R_esultados da busca:"
-
-#: ../gsearchtool/gsearchtool.c:2343
-msgid "List View"
-msgstr "Visualización de lista"
-
-#: ../gsearchtool/gsearchtool.c:2452
-msgid "Type"
-msgstr "Tipo"
-
-#: ../gsearchtool/gsearchtool.c:2464
-msgid "Date Modified"
-msgstr "Data de modificación"
-
-#: ../gsearchtool/gsearchtool.c:2799
-msgid "_Name contains:"
-msgstr "O _nome contén:"
-
-#: ../gsearchtool/gsearchtool.c:2813 ../gsearchtool/gsearchtool.c:2814
-msgid "Enter a filename or partial filename with or without wildcards."
-msgstr "Introduza un nome de ficheiro ou un nome de ficheiro parcial con ou sen comodíns."
-
-#: ../gsearchtool/gsearchtool.c:2814
-msgid "Name contains"
-msgstr "O nome contén"
-
-#: ../gsearchtool/gsearchtool.c:2820
-msgid "_Look in folder:"
-msgstr "Bus_car no cartafol:"
-
-#: ../gsearchtool/gsearchtool.c:2826
-msgid "Browse"
-msgstr "Examinar"
-
-#: ../gsearchtool/gsearchtool.c:2835
-msgid "Look in folder"
-msgstr "Buscar no cartafol"
-
-#: ../gsearchtool/gsearchtool.c:2835
-msgid "Select the folder or device from which you want to begin the search."
-msgstr "Seleccionar o cartafol ou o dispositivo desde onde quere iniciar a busca."
-
-#: ../gsearchtool/gsearchtool.c:2853
-msgid "Select more _options"
-msgstr "Seleccionar máis _opcións"
-
-#: ../gsearchtool/gsearchtool.c:2862
-msgid "Select more options"
-msgstr "Seleccionar máis opcións"
-
-#: ../gsearchtool/gsearchtool.c:2862
-msgid "Click to expand or collapse the list of available options."
-msgstr "Prema para expandir ou contraer a lista de opcións dispoñíbeis."
-
-#: ../gsearchtool/gsearchtool.c:2886
-msgid "Click to display the help manual."
-msgstr "Prema para amosar o manual de axuda."
-
-#: ../gsearchtool/gsearchtool.c:2894
-msgid "Click to close \"Search for Files\"."
-msgstr "Prema para pechar «Buscar ficheiros»."
-
-#: ../gsearchtool/gsearchtool.c:2920
-msgid "Click to perform a search."
-msgstr "Prema para efectuar unha busca."
-
-#: ../gsearchtool/gsearchtool.c:2921
-msgid "Click to stop a search."
-msgstr "Prema para deter a busca."
-
-#: ../gsearchtool/gsearchtool.c:3015
-msgid "- the MATE Search Tool"
-msgstr "- a ferramenta de busca do MATE"
-
-#: ../gsearchtool/gsearchtool.c:3024
-#, c-format
-msgid "Failed to parse command line arguments: %s\n"
-msgstr "Produciuse un fallo ao analizar os argumentos da liña de ordes: %s\n"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:198
-msgid "Could not open help document."
-msgstr "Non foi posíbel abrir o documento de axuda."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:349
-#, c-format
-msgid "Are you sure you want to open %d document?"
-msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] "Está seguro de que quere abrir %d documento?"
-msgstr[1] "Está seguro de que quere abrir %d documentos?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:354
-#: ../gsearchtool/gsearchtool-callbacks.c:551
-#, c-format
-msgid "This will open %d separate window."
-msgid_plural "This will open %d separate windows."
-msgstr[0] "Isto abrirá %d xanela separada."
-msgstr[1] "Isto abrirá %d xanelas separadas."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:394
-#, c-format
-msgid "Could not open document \"%s\"."
-msgstr "Non foi posíbel abrir o documento «%s»."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:423
-#, c-format
-msgid "Could not open folder \"%s\"."
-msgstr "Non foi posíbel abrir o cartafol «%s»."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:431
-msgid "The caja file manager is not running."
-msgstr "O xestor de ficheiros Caja non está en execución."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:523
-msgid "There is no installed viewer capable of displaying the document."
-msgstr "Non hai instalado un visor que sexa quen de amosar o documento."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:546
-#, c-format
-msgid "Are you sure you want to open %d folder?"
-msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] "Está seguro de que quere abrir %d cartafol?"
-msgstr[1] "Está seguro de que quere abrir %d cartafoles?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:699
-#, c-format
-msgid "Could not move \"%s\" to trash."
-msgstr "Non foi posíbel mover «%s» ao lixo."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:730
-#, c-format
-msgid "Do you want to delete \"%s\" permanently?"
-msgstr "Quere eliminar «%s» permanentemente?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:733
-#, c-format
-msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr "O lixo non está dispoñíbel. Non foi posíbel mover «%s» ao lixo."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:772
-#, c-format
-msgid "Could not delete \"%s\"."
-msgstr "Non foi posíbel eliminar «%s»."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:884
-#, c-format
-msgid "Deleting \"%s\" failed: %s."
-msgstr "Produciuse un fallo ao eliminar «%s»: %s."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:896
-#, c-format
-msgid "Moving \"%s\" failed: %s."
-msgstr "Produciuse un fallo ao mover «%s»: %s."
-
-#. Popup menu item: Open
-#: ../gsearchtool/gsearchtool-callbacks.c:1024
-#: ../gsearchtool/gsearchtool-callbacks.c:1054
-msgid "_Open"
-msgstr "_Abrir"
-
-#. Popup menu item: Open with (default)
-#: ../gsearchtool/gsearchtool-callbacks.c:1079
-#, c-format
-msgid "_Open with %s"
-msgstr "Abrir _con %s"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1114
-#, c-format
-msgid "Open with %s"
-msgstr "Abrir _con %s"
-
-#. Popup menu item: Open With
-#: ../gsearchtool/gsearchtool-callbacks.c:1147
-msgid "Open Wit_h"
-msgstr "Abrir _con"
-
-#. Popup menu item: Open Containing Folder
-#: ../gsearchtool/gsearchtool-callbacks.c:1192
-msgid "Open Containing _Folder"
-msgstr ""
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1232
-msgid "_Save Results As..."
-msgstr "_Gardar resultados como..."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1614
-msgid "Save Search Results As..."
-msgstr "Gardar os resultados da busca como..."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1643
-msgid "Could not save document."
-msgstr "Non foi posíbel gardar o documento."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1644
-msgid "You did not select a document name."
-msgstr "Non foi posíbel seleccionar un nome de documento."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1674
-#, c-format
-msgid "Could not save \"%s\" document to \"%s\"."
-msgstr "Non foi posíbel gardar o documento «%s» en «%s»."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1707
-#, c-format
-msgid "The document \"%s\" already exists.  Would you like to replace it?"
-msgstr "O documento «%s» xa existe. Quere substituílo?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1711
-msgid "If you replace an existing file, its contents will be overwritten."
-msgstr "Se substitúe un ficheiro existente, o seu contido sobrescribirase."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1775
-msgid "The document name you selected is a folder."
-msgstr "O nome do documento que seleccionou é un cartafol."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1811
-msgid "You may not have write permissions to the document."
-msgstr "Pode que non teña permiso de escritura no documento."
-
-#. Translators:  Below are the strings displayed in the 'Date Modified'
-#. column of the list view.  The format of this string can vary depending
-#. on age of a file.  Please modify the format of the timestamp to match
-#. your locale.  For example, to display 24 hour time replace the '%-I'
-#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: ../gsearchtool/gsearchtool-support.c:448
-msgid "today at %-I:%M %p"
-msgstr "hoxe ás %-I:%M %p"
-
-#: ../gsearchtool/gsearchtool-support.c:450
-msgid "yesterday at %-I:%M %p"
-msgstr "onte ás %-I:%M %p"
-
-#: ../gsearchtool/gsearchtool-support.c:452
-#: ../gsearchtool/gsearchtool-support.c:454
-msgid "%A, %B %-d %Y at %-I:%M:%S %p"
-msgstr "%A, %B de %-d %Y ás %-I:%M:%S %p"
-
-#: ../gsearchtool/gsearchtool-support.c:641
-msgid "link (broken)"
-msgstr "ligazón (quebrada)"
-
-#: ../gsearchtool/gsearchtool-support.c:645
-#, c-format
-msgid "link to %s"
-msgstr "ligazón para %s"
-
-#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
-#. Localizers:
-#. * Feel free to leave out the st, nd, rd and th suffix or
-#. * make some or all of them match.
-#. localizers: tag used to detect the first copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1257
-msgid " (copy)"
-msgstr " (copia)"
-
-#. localizers: tag used to detect the second copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1259
-msgid " (another copy)"
-msgstr " (outra copia)"
-
-#. localizers: tag used to detect the x11th copy of a file
-#. localizers: tag used to detect the x12th copy of a file
-#. localizers: tag used to detect the x13th copy of a file
-#. localizers: tag used to detect the xxth copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1262
-#: ../gsearchtool/gsearchtool-support.c:1264
-#: ../gsearchtool/gsearchtool-support.c:1266
-#: ../gsearchtool/gsearchtool-support.c:1276
-msgid "th copy)"
-msgstr "ª copia)"
-
-#. localizers: tag used to detect the x1st copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1269
-msgid "st copy)"
-msgstr "ª copia)"
-
-#. localizers: tag used to detect the x2nd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1271
-msgid "nd copy)"
-msgstr "ª copia)"
-
-#. localizers: tag used to detect the x3rd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1273
-msgid "rd copy)"
-msgstr "ª copia)"
-
-#. localizers: appended to first file copy
-#: ../gsearchtool/gsearchtool-support.c:1290
-#, c-format
-msgid "%s (copy)%s"
-msgstr "%s (copia)%s"
-
-#. localizers: appended to second file copy
-#: ../gsearchtool/gsearchtool-support.c:1292
-#, c-format
-msgid "%s (another copy)%s"
-msgstr "%s (outra copia)%s"
-
-#. localizers: appended to x11th file copy
-#. localizers: appended to x12th file copy
-#. localizers: appended to x13th file copy
-#. localizers: appended to xxth file copy
-#: ../gsearchtool/gsearchtool-support.c:1295
-#: ../gsearchtool/gsearchtool-support.c:1297
-#: ../gsearchtool/gsearchtool-support.c:1299
-#: ../gsearchtool/gsearchtool-support.c:1308
-#, c-format
-msgid "%s (%dth copy)%s"
-msgstr "%s (%dª copia)%s"
-
-#. localizers: appended to x1st file copy
-#: ../gsearchtool/gsearchtool-support.c:1302
-#, c-format
-msgid "%s (%dst copy)%s"
-msgstr "%s (%dª copia)%s"
-
-#. localizers: appended to x2nd file copy
-#: ../gsearchtool/gsearchtool-support.c:1304
-#, c-format
-msgid "%s (%dnd copy)%s"
-msgstr "%s (%dª copia)%s"
-
-#. localizers: appended to x3rd file copy
-#: ../gsearchtool/gsearchtool-support.c:1306
-#, c-format
-msgid "%s (%drd copy)%s"
-msgstr "%s (%dª copia)%s"
-
-#: ../gsearchtool/gsearchtool-support.c:1353
-msgid " (invalid Unicode)"
-msgstr " (Unicode incorrecto)"
-
-#. localizers: opening parentheses to match the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1442
-msgid " ("
-msgstr " ("
-
-#. localizers: opening parentheses of the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1450
-#, c-format
-msgid " (%d"
-msgstr " (%d"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:1
-msgid "Search history"
-msgstr ""
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:2
-msgid "This key defines the items which were searched for in the past."
-msgstr ""
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:3
-msgid "Show Additional Options"
-msgstr "Amosar as opcións adicionais"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:4
-msgid "Disable Quick Search"
-msgstr "Desactivar a busca rápida"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:5
-msgid ""
-"This key determines if the search tool disables the use of the locate "
-"command when performing simple file name searches."
-msgstr "Esta chave determina se desactiva o uso da orde de localización ao efectuar buscas simples de nomes de ficheiro."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:6
-msgid "Quick Search Excluded Paths"
-msgstr "Rutas excluídas da busca rápida"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:7
-msgid ""
-"This key defines the paths the search tool will exclude from a quick search."
-" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
-"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-msgstr "Esta chave define as rutas que a ferramenta de busca excluirá dunha busca rápida. Permítense os comodíns «*» e «?». Os valores predeterminados son /mnt/*, /media/*, /dev/*, /tmp/*, /proc/* e /var/*."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:8
-msgid "Disable Quick Search Second Scan"
-msgstr "Desactivar a segunda análise da busca rápida"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:9
-msgid ""
-"This key determines if the search tool disables the use of the find command "
-"after performing a quick search."
-msgstr "Esta chave determina se a ferramenta de busca desactiva o uso da orde «find» despois de efectuar unha busca rápida."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:10
-msgid "Quick Search Second Scan Excluded Paths"
-msgstr "Rutas excluídas da segunda análise da busca rápida"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:11
-msgid ""
-"This key defines the paths the search tool will exclude from a second scan "
-"when performing a quick search. The second scan uses the find command to "
-"search for files. The purpose of the second scan is to find files that have "
-"not been indexed. The wildcards '*' and '?' are supported. The default value"
-" is /."
-msgstr "Esta chave define as rutas que a ferramenta de busca excluirá dunha segunda análise ao efectuar unha busca rápida. A segunda análise usa a orde «find» para buscar ficheiros. O obxectivo da segunda análise é buscar ficheiros que non foran indexados. Permítense os comodíns «*» e «?». O valor predeterminado é /."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:12
-msgid "Search Result Columns Order"
-msgstr "Orde das columnas do resultado da busca"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:13
-msgid ""
-"This key defines the order of the columns in the search results. This key "
-"should not be modified by the user."
-msgstr "Esta chave define a orde das columnas nos resultados da busca. Esta chave non debería ser modificada polo usuario."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:14
-msgid "Default Window Width"
-msgstr "Largura predeterminada da xanela"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:15
-msgid ""
-"This key defines the window width, and it's used to remember the size of the"
-" search tool between sessions. Setting it to -1 will make the search tool "
-"use the default width."
-msgstr "Esta chave define a largura da xanela e úsase para lembrar o tamaño da ferramenta de busca entre sesións. Definila como -1 fará que a ferramenta use a largura predeterminada."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:16
-msgid "Default Window Height"
-msgstr "Altura predeterminada da xanela"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:17
-msgid ""
-"This key defines the window height, and it's used to remember the size of "
-"the search tool between sessions. Setting it to -1 will make the search tool"
-" use the default height."
-msgstr "Esta chave define a altura da xanela e úsase para lembrar o tamaño da ferramenta de busca entre sesións. Definila como -1 fará que a ferramenta use a altura predeterminada."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:18
-msgid "Default Window Maximized"
-msgstr "Xanela maximizada predeterminada"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:19
-msgid ""
-"This key determines if the search tool window starts in a maximized state."
-msgstr "Esta chave determina se a ferramenta de busca se inicia en estado maximizado."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:20
-msgid "Look in Folder"
-msgstr "Buscar no cartafol"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:21
-msgid "This key defines the default value of the \"Look in Folder\" widget."
-msgstr "Esta chave define o valor predeterminado do widget «Buscar en cartafol»"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:22
-msgid ""
-"This key determines if the \"Contains the text\" search option is selected "
-"when the search tool is started."
-msgstr "Esta chave determina se a opción «Contains the text» está seleccionada cando se inicia a ferramenta de busca."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:23
-msgid ""
-"This key determines if the \"Date modified less than\" search option is "
-"selected when the search tool is started."
-msgstr "Esta chave determina se a opción «Date modified less than» está seleccionada cando se inicia a ferramenta de busca."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:24
-msgid ""
-"This key determines if the \"Date modified more than\" search option is "
-"selected when the search tool is started."
-msgstr "Esta chave determina se a opción «Date modified more than» está seleccionada cando se inicia a ferramenta de busca."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:25
-msgid ""
-"This key determines if the \"Size at least\" search option is selected when "
-"the search tool is started."
-msgstr "Esta chave determina se a opción «Size at least» está seleccionada cando se inicia a ferramenta de busca."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:26
-msgid ""
-"This key determines if the \"Size at most\" search option is selected when "
-"the search tool is started."
-msgstr "Esta chave determina se a opción «Size at most» está seleccionada cando se inicia a ferramenta de busca."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:27
-msgid ""
-"This key determines if the \"File is empty\" search option is selected when "
-"the search tool is started."
-msgstr "Esta chave determina se a opción «File is empty» está seleccionada cando se inicia a ferramenta de busca."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:28
-msgid ""
-"This key determines if the \"Owned by user\" search option is selected when "
-"the search tool is started."
-msgstr "Esta chave determina se a opción «Owned by user» está seleccionada cando se inicia a ferramenta de busca."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:29
-msgid ""
-"This key determines if the \"Owned by group\" search option is selected when"
-" the search tool is started."
-msgstr "Esta chave determina se a opción «Owned by group» está seleccionada cando se inicia a ferramenta de busca."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:30
-msgid ""
-"This key determines if the \"Owner is unrecognized\" search option is "
-"selected when the search tool is started."
-msgstr "Esta chave determina se a opción «Owner is unrecognized» está seleccionada cando se inicia a ferramenta de busca."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:31
-msgid ""
-"This key determines if the \"Name does not contain\" search option is "
-"selected when the search tool is started."
-msgstr "Esta chave determina se a opción «Name does not contain» está seleccionada cando se inicia a ferramenta de busca."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:32
-msgid ""
-"This key determines if the \"Name matches regular expression\" search option"
-" is selected when the search tool is started."
-msgstr "Esta chave determina se a opción «Name matches regular expression» está seleccionada cando se inicia a ferramenta de busca."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:33
-msgid ""
-"This key determines if the \"Show hidden files and folders\" search option "
-"is selected when the search tool is started."
-msgstr "Esta chave determina se a opción «Show hidden files and folders» está seleccionada cando se inicia a ferramenta de busca."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:34
-msgid ""
-"This key determines if the \"Follow symbolic links\" search option is "
-"selected when the search tool is started."
-msgstr "Esta chave determina se a opción «Follow symbolic links» está seleccionada cando se inicia a ferramenta de busca."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:35
-msgid ""
-"This key determines if the \"Exclude other filesystems\" search option is "
-"selected when the search tool is started."
-msgstr "Esta chave determina se a opción «Excluír outros sistemas de ficheiros» está seleccionada cando se inicia a ferramenta de busca."
-
-#: ../libeggsmclient/eggdesktopfile.c:165
-#, c-format
-msgid "File is not a valid .desktop file"
-msgstr "O ficheiro non é un ficheiro .desktop correcto"
-
-#: ../libeggsmclient/eggdesktopfile.c:188
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "Versión de ficheiro de escritorio descoñecida «%s»"
-
-#: ../libeggsmclient/eggdesktopfile.c:957
-#, c-format
-msgid "Starting %s"
-msgstr "Arrancando %s"
-
-#: ../libeggsmclient/eggdesktopfile.c:1098
-#, c-format
-msgid "Application does not accept documents on command line"
-msgstr "O aplicativo non acepta documentos na liña de ordes"
-
-#: ../libeggsmclient/eggdesktopfile.c:1166
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "Descoñécese a opción de inicio: %d"
-
-#: ../libeggsmclient/eggdesktopfile.c:1365
-#, c-format
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "Non se lle poden pasar URI de documento a unha entrada de escritorio «Type=Link»"
-
-#: ../libeggsmclient/eggdesktopfile.c:1384
-#, c-format
-msgid "Not a launchable item"
-msgstr "Non é un ítem de inicio"
-
-#: ../libeggsmclient/eggsmclient.c:225
-msgid "Disable connection to session manager"
-msgstr "Desactivar a conexión ao xestor de sesións"
-
-#: ../libeggsmclient/eggsmclient.c:228
-msgid "Specify file containing saved configuration"
-msgstr "Especificar o ficheiro que contén a configuración gardada"
-
-#: ../libeggsmclient/eggsmclient.c:228
-msgid "FILE"
-msgstr "FICHEIRO"
-
-#: ../libeggsmclient/eggsmclient.c:231
-msgid "Specify session management ID"
-msgstr "Especificar o ID da xestión de sesión"
-
-#: ../libeggsmclient/eggsmclient.c:231
-msgid "ID"
-msgstr "ID"
-
-#: ../libeggsmclient/eggsmclient.c:252
-msgid "Session management options:"
-msgstr "Amosar as opcións da xestión de sesión:"
-
-#: ../libeggsmclient/eggsmclient.c:253
-msgid "Show session management options"
-msgstr "Amosar as opcións da xestión de sesións"
-
-#: ../logview/data/mate-system-log.desktop.in.in.h:1
-msgid "Log File Viewer"
-msgstr "Visualizador de ficheiros de rexistro"
-
-#: ../logview/data/mate-system-log.desktop.in.in.h:2
-msgid "View or monitor system log files"
-msgstr "Ver ou monitorizar os ficheiros de rexistro do sistema"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
-msgid "Log file to open up on startup"
-msgstr "Ficheiro de rexistro para abrir ao inicio"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
-msgid ""
-"Specifies the log file displayed at startup. The default is either "
-"/var/adm/messages or /var/log/messages, depending on your operating system."
-msgstr "Especifica o ficheiro de rexistro amosado ao inicio. O predeterminado é /var/adm/messages ou /var/log/messages, dependendo do seu sistema operativo."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
-msgid "Size of the font used to display the log"
-msgstr "Tamaño do tipo de letra usado para amosar o rexistro"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
-msgid ""
-"Specifies the size of the fixed-width font used to display the log in the "
-"main tree view. The default is taken from the default terminal font size."
-msgstr "Especifica o tamaño do tipo de letra de largura fixa usada para amosar o rexistro na viata de árbore principal. O predeterminado cóllese do tamaño do tipo de letra predeterminado do terminal."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
-msgid "Height of the main window in pixels"
-msgstr "Altura da xanela principal en píxeles"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
-msgid "Specifies the height of the log viewer main window in pixels."
-msgstr "Especifica a altura en píxeles da xanela principal do visor."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
-msgid "Width of the main window in pixels"
-msgstr "Largura da xanela principal en píxeles"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
-msgid "Specifies the width of the log viewer main window in pixels."
-msgstr "Especifica a largura da xanela principal do visor de rexistros en píxeles."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
-msgid "Log files to open up on startup"
-msgstr "Ficheiros de rexistro para abrir ao inicio"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
-msgid ""
-"Specifies a list of log files to open up at startup. A default list is "
-"created by reading /etc/syslog.conf."
-msgstr "Especifica unha lista de ficheiros de rexistro para abrir ao inicio. Créase unha lista predeterminada ao ler /etc/syslog.conf."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
-msgid "List of saved filters"
-msgstr ""
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
-msgid "List of saved regexp filters"
-msgstr ""
-
-#: ../logview/data/logview-filter.ui.h:2
-msgid "_Regular Expression:"
-msgstr "Expresión regular:"
-
-#: ../logview/data/logview-filter.ui.h:3
-msgid "Highlight"
-msgstr "Resaltar"
-
-#: ../logview/data/logview-filter.ui.h:4
-msgid "Hide"
-msgstr "Agochar"
-
-#: ../logview/data/logview-filter.ui.h:5
-msgid "Foreground:"
-msgstr "Primeiro plano:"
-
-#: ../logview/data/logview-filter.ui.h:6
-msgid "Background:"
-msgstr "Fondo."
-
-#: ../logview/data/logview-filter.ui.h:7
-msgid "Effect:"
-msgstr "Efecto:"
-
-#: ../logview/logview-app.c:377
-#, c-format
-msgid "Impossible to open the file %s"
-msgstr "Non foi posíbel abrir o ficheiro %s"
-
-#: ../logview/logview-filter-manager.c:94
-msgid "Filter name is empty!"
-msgstr "O ficheiro está baleiro!"
-
-#: ../logview/logview-filter-manager.c:107
-msgid "Filter name may not contain the ':' character"
-msgstr "O nome de filtro non debe conter o caracter «:»"
-
-#: ../logview/logview-filter-manager.c:130
-msgid "Regular expression is empty!"
-msgstr "A expresión regular está baleira!"
-
-#: ../logview/logview-filter-manager.c:146
-#, c-format
-msgid "Regular expression is invalid: %s"
-msgstr "A expresión regular non é correcta: %s"
-
-#: ../logview/logview-filter-manager.c:242
-msgid "Please specify either foreground or background color!"
-msgstr "Esquecifique entre cor de primeiro plano ou de ondo!"
-
-#: ../logview/logview-filter-manager.c:296
-msgid "Edit filter"
-msgstr "Editar filtro"
-
-#: ../logview/logview-filter-manager.c:296
-msgid "Add new filter"
-msgstr "Engadir novo filtro"
-
-#: ../logview/logview-filter-manager.c:506
-msgid "Filters"
-msgstr "Filtros"
-
-#: ../logview/logview-findbar.c:173
-msgid "_Find:"
-msgstr "_Buscar:"
-
-#: ../logview/logview-findbar.c:188
-msgid "Find Previous"
-msgstr "Buscar o anterior"
-
-#: ../logview/logview-findbar.c:191
-msgid "Find previous occurrence of the search string"
-msgstr "Buscar a aparición anterior da cadea que busca"
-
-#: ../logview/logview-findbar.c:196
-msgid "Find Next"
-msgstr "Buscar o seguinte"
-
-#: ../logview/logview-findbar.c:199
-msgid "Find next occurrence of the search string"
-msgstr "Buscar a seguinte aparición da cadea que busca"
-
-#: ../logview/logview-findbar.c:206
-msgid "Clear the search string"
-msgstr "Limpar a cadea de busca"
-
-#: ../logview/logview-log.c:595
-msgid "Error while uncompressing the GZipped log. The file might be corrupt."
-msgstr "Produciuse un fallo ao descomprimir o rexistro GZipped. Pode que o ficheiro estea danado."
-
-#: ../logview/logview-log.c:642
-msgid "You don't have enough permissions to read the file."
-msgstr "Non ten os permisos necesarios para ler o ficheiro."
-
-#: ../logview/logview-log.c:657
-msgid "The file is not a regular file or is not a text file."
-msgstr "O ficheiro non é un ficheiro estándar ou de texto."
-
-#: ../logview/logview-log.c:739
-msgid "This version of System Log does not support GZipped logs."
-msgstr "Esta versión do System Log non permite os rexistros GZipped."
-
-#: ../logview/logview-loglist.c:315
-msgid "Loading..."
-msgstr "Cargando..."
-
-#: ../logview/logview-main.c:61
-msgid "Show the application's version"
-msgstr "Amosar a versión do aplicativo"
-
-#: ../logview/logview-main.c:63
-msgid "[LOGFILE...]"
-msgstr "[FICHEIRO DE REXISTROS...]"
-
-#: ../logview/logview-main.c:67
-msgid " - Browse and monitor logs"
-msgstr " - Examinar e monitorizar os rexistros"
-
-#: ../logview/logview-main.c:100
-msgid "Log Viewer"
-msgstr "Visualizador de rexistro"
-
-#: ../logview/logview-window.c:38 ../logview/logview-window.c:760
-msgid "System Log Viewer"
-msgstr "Visualizador do rexistro do sistema"
-
-#: ../logview/logview-window.c:210
-#, c-format
-msgid "last update: %s"
-msgstr "última actualización: %s"
-
-#: ../logview/logview-window.c:214
-#, c-format
-msgid "%d lines (%s) - %s"
-msgstr "%d liñas (%s) - %s"
-
-#: ../logview/logview-window.c:318
-msgid "Open Log"
-msgstr "Abrir rexistro"
-
-#: ../logview/logview-window.c:357
-#, c-format
-msgid "There was an error displaying help: %s"
-msgstr "Produciuse un erro ao amosar a axuda: %s"
-
-#: ../logview/logview-window.c:471
-msgid "Wrapped"
-msgstr "Axustado"
-
-#: ../logview/logview-window.c:765
-msgid "A system log viewer for MATE."
-msgstr "Un visor do rexistro do sistema para o MATE."
-
-#: ../logview/logview-window.c:811
-msgid "_Filters"
-msgstr "Filtros"
-
-#: ../logview/logview-window.c:814
-msgid "_Open..."
-msgstr "_Abrir..."
-
-#: ../logview/logview-window.c:814
-msgid "Open a log from file"
-msgstr "Abrir un ficheiro de rexistro"
-
-#: ../logview/logview-window.c:816
-msgid "_Close"
-msgstr "_Pechar"
-
-#: ../logview/logview-window.c:816
-msgid "Close this log"
-msgstr "Pechar este rexistro"
-
-#: ../logview/logview-window.c:818
-msgid "_Quit"
-msgstr "_Saír"
-
-#: ../logview/logview-window.c:818
-msgid "Quit the log viewer"
-msgstr "Saír do visor de rexistro do sistema"
-
-#: ../logview/logview-window.c:821
-msgid "_Copy"
-msgstr "_Copiar"
-
-#: ../logview/logview-window.c:821
-msgid "Copy the selection"
-msgstr "Copiar a selección"
-
-#: ../logview/logview-window.c:823
-msgid "Select the entire log"
-msgstr "Seleccionar todo o rexistro"
-
-#: ../logview/logview-window.c:825
-msgid "_Find..."
-msgstr "_Buscar..."
-
-#: ../logview/logview-window.c:825
-msgid "Find a word or phrase in the log"
-msgstr "Buscar unha palabra ou frase no rexistro"
-
-#: ../logview/logview-window.c:828
-msgid "Bigger text size"
-msgstr "Tamaño de texto maior"
-
-#: ../logview/logview-window.c:830
-msgid "Smaller text size"
-msgstr "Tamaño de texto menor"
-
-#: ../logview/logview-window.c:832
-msgid "Normal text size"
-msgstr "Tamaño de texto normal"
-
-#: ../logview/logview-window.c:835
-msgid "Manage Filters"
-msgstr "Xestionar filtros"
-
-#: ../logview/logview-window.c:835
-msgid "Manage filters"
-msgstr "Xestionar filtros"
-
-#: ../logview/logview-window.c:838
-msgid "Open the help contents for the log viewer"
-msgstr "Abrir os contidos da axuda para o visor de rexistros"
-
-#: ../logview/logview-window.c:840
-msgid "Show the about dialog for the log viewer"
-msgstr "Amosar o diálogo Sobre para o visor de rexistros"
-
-#: ../logview/logview-window.c:845
-msgid "_Statusbar"
-msgstr "Barra de e_stado"
-
-#: ../logview/logview-window.c:845
-msgid "Show Status Bar"
-msgstr "Amosar a barra de estado"
-
-#: ../logview/logview-window.c:847
-msgid "Side _Pane"
-msgstr "_Panel lateral"
-
-#: ../logview/logview-window.c:847
-msgid "Show Side Pane"
-msgstr "Amosar o panel lateral"
-
-#: ../logview/logview-window.c:849
-msgid "Show matches only"
-msgstr "Amosar só as coincidencias"
-
-#: ../logview/logview-window.c:849
-msgid "Only show lines that match one of the given filters"
-msgstr "Só amosa as liñas que coinciden cos filtros proporcionados"
-
-#: ../logview/logview-window.c:963
-#, c-format
-msgid "Can't read from \"%s\""
-msgstr "Non é posíbel ler desde «%s»"
-
-#: ../logview/logview-window.c:1386
-msgid "Version: "
-msgstr "Versión: "
-
-#: ../logview/logview-window.c:1493
-msgid "Could not open the following files:"
-msgstr "Non foi posíbel abrir os seguintes ficheiros:"

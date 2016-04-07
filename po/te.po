@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-24 13:29+0100\n"
-"PO-Revision-Date: 2015-01-24 12:29+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Telugu (http://www.transifex.com/projects/p/MATE/language/te/)\n"
+"POT-Creation-Date: 2015-12-10 13:06+0300\n"
+"PO-Revision-Date: 2015-12-10 10:12+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
+"Language-Team: Telugu (http://www.transifex.com/mate/MATE/language/te/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -60,7 +60,8 @@ msgid "S_can Remote Folder..."
 msgstr "సూదూర సంచయంను సంశోధించు(_c)..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../mate-dictionary/src/gdict-window.c:1279 ../logview/logview-window.c:809
+#: ../logview/src/logview-window.c:811
+#: ../mate-dictionary/src/gdict-window.c:1285
 msgid "_Edit"
 msgstr "సరిచేయు(_E)"
 
@@ -73,7 +74,8 @@ msgid "_Collapse All"
 msgstr "అన్నింటిని ముకుళించు(_C)"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../mate-dictionary/src/gdict-window.c:1280 ../logview/logview-window.c:810
+#: ../logview/src/logview-window.c:812
+#: ../mate-dictionary/src/gdict-window.c:1286
 msgid "_View"
 msgstr "దర్శనం(_V)"
 
@@ -90,18 +92,20 @@ msgid "All_ocated Space"
 msgstr "ఖళీ నిర్ణయించు(_o)"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../mate-dictionary/src/gdict-applet.c:1213
-#: ../mate-dictionary/src/gdict-window.c:1282 ../logview/logview-window.c:812
+#: ../logview/src/logview-window.c:814
+#: ../mate-dictionary/src/gdict-applet.c:1185
+#: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Help"
 msgstr "సహాయము(_H)"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../mate-dictionary/src/gdict-window.c:1332 ../logview/logview-window.c:838
+#: ../logview/src/logview-window.c:840
+#: ../mate-dictionary/src/gdict-window.c:1338
 msgid "_Contents"
 msgstr "సారాలు(_C)"
 
-#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/callbacks.c:97
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1245
 msgid "Disk Usage Analyzer"
 msgstr "ఖని వినిమయ విశ్లేషకి"
 
@@ -225,12 +229,12 @@ msgstr "లభించు:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:240 ../baobab/src/baobab.c:297
-#: ../baobab/src/callbacks.c:259
+#: ../baobab/src/callbacks.c:258
 msgid "Calculating percentage bars..."
 msgstr "శాతం పట్టీలను గణించుచున్నది..."
 
 #: ../baobab/src/baobab.c:251 ../baobab/src/baobab.c:1309
-#: ../baobab/src/callbacks.c:263
+#: ../baobab/src/callbacks.c:262
 msgid "Ready"
 msgstr "సిద్దము"
 
@@ -466,7 +470,7 @@ msgstr "మీ యొక్క నివాస సంచయ సారము మ�
 msgid "_Rescan"
 msgstr "మరలా సంశోధించు(_R)"
 
-#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2427
+#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/src/gsearchtool.c:2427
 msgid "Folder"
 msgstr "సంచయము"
 
@@ -474,7 +478,7 @@ msgstr "సంచయము"
 msgid "Usage"
 msgstr "వినిమయం"
 
-#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2440
+#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/src/gsearchtool.c:2440
 msgid "Size"
 msgstr "పరిమాణం"
 
@@ -504,43 +508,43 @@ msgstr "\"%s\"  సంచయము వర్తించదు"
 msgid "Could not analyze disk usage."
 msgstr "ఖని వినిమయమును విశ్లేషించలేము."
 
-#: ../baobab/src/baobab-utils.c:366
+#: ../baobab/src/baobab-utils.c:362
 msgid "_Open Folder"
 msgstr "సంచయము తెరువుము(_O)"
 
-#: ../baobab/src/baobab-utils.c:372
-#: ../gsearchtool/gsearchtool-callbacks.c:1210
+#: ../baobab/src/baobab-utils.c:368
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1210
 msgid "Mo_ve to Trash"
 msgstr "చెత్తకుండి కి స్థానాన్ని మార్చుము(_v)"
 
-#: ../baobab/src/baobab-utils.c:406
+#: ../baobab/src/baobab-utils.c:402
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "\"%s\" సంచయమును తెరువలేము"
 
-#: ../baobab/src/baobab-utils.c:409
+#: ../baobab/src/baobab-utils.c:405
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr "సంచయము ప్రదర్శించుట యొక్క తగినటువంటి నెలకొల్పు దర్శిని కలిగిలేదు."
 
-#: ../baobab/src/baobab-utils.c:478
+#: ../baobab/src/baobab-utils.c:474
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr "\"%s\" ను చెత్తకుండి కి స్థానాన్ని మార్చలేము"
 
-#: ../baobab/src/baobab-utils.c:486
+#: ../baobab/src/baobab-utils.c:482
 msgid "Could not move file to the Trash"
 msgstr "దస్త్రమును చెత్తకుండికి కదల్చలేము"
 
-#: ../baobab/src/baobab-utils.c:488
+#: ../baobab/src/baobab-utils.c:484
 #, c-format
 msgid "Details: %s"
 msgstr ": %s"
 
-#: ../baobab/src/baobab-utils.c:524
+#: ../baobab/src/baobab-utils.c:520
 msgid "There was an error displaying help."
 msgstr "సహాయము ప్రదర్శించుటలో ఒక దోషము కలదు."
 
-#: ../baobab/src/callbacks.c:76 ../logview/logview-about.h:49
+#: ../baobab/src/callbacks.c:76 ../logview/src/logview-about.h:49
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -548,7 +552,7 @@ msgid ""
 "any later version."
 msgstr "ఈ ప్రోగ్రామ్ ఉచిత సాఫ్టువేరు; మీరు దానిని ఉచిత సాఫ్టువేరు సంస్థ ద్వారా ప్రచురించబడిన GNU జనరల్ పబ్లిక్ లైసెన్సు వర్షన్ 2, లేదా (మీ ఐచ్చికము వద్ద) దాని తర్వాతి వర్షన్‌కు లోబడి పునఃపంపిణి చేయవచ్చును మరియు/లేదా సవరించవచ్చును;"
 
-#: ../baobab/src/callbacks.c:81 ../logview/logview-about.h:53
+#: ../baobab/src/callbacks.c:81 ../logview/src/logview-about.h:53
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -556,31 +560,1284 @@ msgid ""
 "more details."
 msgstr "ఈ ప్రోగ్రామ్ అది వుపయోగపడుతుంది అనే వుద్దేశ్యముతో పంపిణి చేయబడింది, అయితే ఎటువంటి హామి లేదు; కనీసం వ్యాపారపరంగా లేదా ఫలానా ప్రయోజనం కొరకు ప్రత్యేకించి అనికూడా లేదు.  మరింత సమాచారము కొరకు GNU జనరల్ పబ్లిక్ లైసెన్సును చూడండి."
 
-#: ../baobab/src/callbacks.c:86 ../logview/logview-about.h:57
+#: ../baobab/src/callbacks.c:86 ../logview/src/logview-about.h:57
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 msgstr "ఈ ప్రోగ్రామ్‌తో మీరు వొక GNU జనరల్ పబ్లిక్ లైసెన్సు నకలును కూడా పొందివుంటారు; పొందకపోతే, Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USAకు వ్రాయండి."
 
-#: ../baobab/src/callbacks.c:98
+#: ../baobab/src/callbacks.c:97
 msgid "A graphical tool to analyze disk usage."
 msgstr "ఖని వినిమయ విశ్లేషణకు ఒక చిత్రరూప పనిముట్టు."
 
 #. translator credits
-#: ../baobab/src/callbacks.c:104 ../mate-dictionary/src/gdict-about.c:55
-#: ../logview/logview-about.h:63
+#: ../baobab/src/callbacks.c:103 ../logview/src/logview-about.h:63
+#: ../mate-dictionary/src/gdict-about.c:55
 msgid "translator-credits"
 msgstr "Pramod <pramodfsf@gmail.com>\nKrishna Babu K <kkrothap@redhat.com>"
 
-#: ../baobab/src/callbacks.c:202 ../gsearchtool/gsearchtool-callbacks.c:508
-#: ../gsearchtool/gsearchtool-callbacks.c:848
+#: ../baobab/src/callbacks.c:201
+#: ../gsearchtool/src/gsearchtool-callbacks.c:508
+#: ../gsearchtool/src/gsearchtool-callbacks.c:848
 msgid "The document does not exist."
 msgstr "పత్రం కలిగిలేదు."
 
-#: ../baobab/src/callbacks.c:283
+#: ../baobab/src/callbacks.c:282
 msgid "The folder does not exist."
 msgstr "సంచయము కలిగిలేదు."
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
+msgid "A file searching tool for MATE Desktop"
+msgstr ""
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Search Tool is a simple but powerful utility that allows you to "
+"search for files and folders on any mounted file system. Its interface gives"
+" you instant access to a wide variety of parameters for each search, such as"
+" text contained within a file, ownership, date of modification, file size, "
+"folder exclusion, etc.. </p>"
+msgstr ""
+
+#: ../gsearchtool/data/mate-search-tool.desktop.in.h:1
+msgid "MATE Search Tool"
+msgstr ""
+
+#: ../gsearchtool/data/mate-search-tool.desktop.in.h:2
+msgid "Locate documents and folders on this computer by name or content"
+msgstr "నామము లేదా సారముల ద్వారా పత్రములను మరియు సంచయాలను ఈ కంప్యూటర్ లో గుర్తించండి"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:1
+msgid "Search history"
+msgstr ""
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:2
+msgid "This key defines the items which were searched for in the past."
+msgstr ""
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:3
+msgid "Show Additional Options"
+msgstr "అత్యధికముగా చేర్పబడిన ఇఛ్ఛాపూర్వకములు చూపుము"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:4
+msgid "Disable Quick Search"
+msgstr "తొందరగా వెతుకుటను నిరుపయోగపరచు"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:5
+msgid ""
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
+msgstr "సులభమైన దస్త్రనామ శోధన చేసినప్పుడు శోధన సాధనం గుర్తించు ఆదేశం ఉపయోగంను అచేతనం చేస్తే ఈ మీట నిశ్చయించబడుతుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:6
+msgid "Quick Search Excluded Paths"
+msgstr "తొందరగా వెతుకుట త్రోవలను బహిష్కరించినది"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:7
+msgid ""
+"This key defines the paths the search tool will exclude from a quick search."
+" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
+"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
+msgstr "ఈ కీ శోధన సాధనం త్వరిత శోధన నుండి బహిష్కరించు త్రోవలను నిర్వచిస్తుంది. wildcards '*' మరియు '?' మద్దతునిస్తాయి.అప్రమేయ విలువలు /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:8
+msgid "Disable Quick Search Second Scan"
+msgstr "రెండవ సంశోధనను తొందరగా వెతుకుటను నిరుపయోగపరచు"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:9
+msgid ""
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
+msgstr "త్వరిత శోధన జరిపినతర్వాత శోధన సాధనం వెతుకు ఆదేశం ఉపయోగాన్ని అచేతనం చేస్తే ఈ మీట నిశ్చయించబడుతుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:10
+msgid "Quick Search Second Scan Excluded Paths"
+msgstr "రెండవ సంశోధనను తొందరగా వెతుకుటను బహిష్కరించినది"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:11
+msgid ""
+"This key defines the paths the search tool will exclude from a second scan "
+"when performing a quick search. The second scan uses the find command to "
+"search for files. The purpose of the second scan is to find files that have "
+"not been indexed. The wildcards '*' and '?' are supported. The default value"
+" is /."
+msgstr "శోధన సాధనం త్వరిత శోధనను చేస్తున్నప్పుడు రెండవ సంశోధన నుండి బహిష్కరించు త్రోవలను ఈ మీట నిర్వచిస్తుంది.దస్త్రములను శోధించుటకు రెండవ సంశోధన వెతుకు ఆదేశాన్ని ఉపయోగిస్తుంది.రెండవ సంశోధన యొక్క ఉపయోగార్ధం విషయసూచిక చేయబడనటువంటి దస్త్రంలను వెతుకుట.wildcards '*' మరియు '?' మద్దుతునిస్తాయి.అప్రమేయ విలువ /."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:12
+msgid "Search Result Columns Order"
+msgstr "ఫలితాలను నిలువుపట్టీ క్రమములో వెతుకుము"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:13
+msgid ""
+"This key defines the order of the columns in the search results. This key "
+"should not be modified by the user."
+msgstr "ఈ కీ శోధించిన ఫలితాలలోని నిలువువరుసల క్రమాన్ని నిర్వచిస్తుంది.ఈ కీ వినియోగదారుని చేత మార్చబడకూడదు."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:14
+msgid "Default Window Width"
+msgstr "అప్రమేయ గవాక్ష పొడవు"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:15
+msgid ""
+"This key defines the window width, and it's used to remember the size of the"
+" search tool between sessions. Setting it to -1 will make the search tool "
+"use the default width."
+msgstr "ఈ మీట గవాక్షం వెడల్పును నిర్వచిస్తుంది మరియు సెషన్సు మద్య శోధన సాధనం యొక్క పరిమాణం ను గుర్తుంచుకొనుటకు ఉపయోగించబడుతుంది.-1 కు అమర్చుట శోధన సాధనంను అప్రమేయ వెడల్పును ఉపయోగించుకొనునట్లు చేస్తుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:16
+msgid "Default Window Height"
+msgstr "అప్రమేయ గవాక్షం ఎత్తు"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:17
+msgid ""
+"This key defines the window height, and it's used to remember the size of "
+"the search tool between sessions. Setting it to -1 will make the search tool"
+" use the default height."
+msgstr "ఈ మీట గవాక్షం ఎత్తును నిర్వచిస్తుంది మరియు సెషన్సు మద్య శోధన సాధనం యొక్క పరిమాణం ను గుర్తుంచుకొనుటకు ఉపయోగించబడుతుంది.-1 కు అమర్చుట శోధన సాధనంను అప్రమేయ ఎత్తును ఉపయోగించుకొనునట్లు చేస్తుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:18
+msgid "Default Window Maximized"
+msgstr "అప్రమేయ గవాక్షం పెద్దదిచేయబడింది"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:19
+msgid ""
+"This key determines if the search tool window starts in a maximized state."
+msgstr "శోధన సాధనం గవాక్షం పెద్దదైన స్థితి లో ప్రారంభించబడితే ఈ మీట నిశ్చయించబడుతుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:20
+msgid "Look in Folder"
+msgstr "ఫోల్డర్ నందు చూడుము"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:21
+msgid "This key defines the default value of the \"Look in Folder\" widget."
+msgstr "ఈ కీ \"ఫోల్డర్ నందు చూడు\" విడ్జట్ యొక్క అప్రమేయ విలువను నిర్వచిస్తుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:22
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"పాఠము కలిగిఉన్న\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:23
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
+msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"దీనికి తక్కువగా మార్చబడిన తారీఖు\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:24
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
+msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"దీనికి ఎక్కువగా మార్చబడిన తారీఖు\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:25
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"తక్కువలో ఉన్న పరిమాణం\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:26
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
+msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"ఎక్కువలో ఉన్న పరిమాణం\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:27
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
+msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"దస్త్రం ఖాళీగా ఉంది\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:28
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
+msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"ఈ వినియోగదారునికి స్వకీయమైన\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:29
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when"
+" the search tool is started."
+msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"ఈ సమూహానికి స్వకీయమైన \" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:30
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
+msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"యజమాని గుర్తించబడుటలేదు\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:31
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"ఇది కలిగిలేని నామము\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:32
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option"
+" is selected when the search tool is started."
+msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"ఈ సాదారణ ఎక్సప్రెషన్ కు సరితూగిన నామము\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:33
+msgid ""
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
+msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"దాచబడిన దస్త్రములను మరియు సంచయాలను చూపుము\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:34
+msgid ""
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"చిహ్నపూరిత జోడీలను అనుసరించు\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:35
+msgid ""
+"This key determines if the \"Exclude other filesystems\" search option is "
+"selected when the search tool is started."
+msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"ఇతర దస్త్రసిస్టమ్సును తీసివేయి\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడాలేమో ఈ మీట నిశ్చయించుతుంది."
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "దస్త్రము చెల్లునటువంటి .desktop దస్త్రము కాదు"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "గుర్తించబడని డెస్కుటాప్ ఫైల్ వర్షన్ '%s'"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:957
+#, c-format
+msgid "Starting %s"
+msgstr "%s ప్రారంభించుచున్నది"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1098
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "అనువర్తనము ఆదేశ వరుసనందు పత్రములను ఆమోదించదు"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1166
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "గుర్తించబడని ఆరంభ ఐచ్చికము: %d"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1365
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "పత్రము URIలను 'Type=Link' డెస్కుటాప్ ప్రవేశమునకు పంపలేదు"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1384
+#, c-format
+msgid "Not a launchable item"
+msgstr "ఆరంభించదగు అంశము కాదు"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:225
+msgid "Disable connection to session manager"
+msgstr "అనుసంధానమును సెషన్‌కు నిర్వాహికకు అచేతనముచేయి"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+msgid "Specify file containing saved configuration"
+msgstr "దాచిన ఆకృతీకరణను కలిగివున్న దస్త్రమును తెలుపుము"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+msgid "FILE"
+msgstr "దస్త్రము"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+msgid "Specify session management ID"
+msgstr "సెషన్ నిర్వాహిక ID తెలుపుము"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+msgid "ID"
+msgstr "ID"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:252
+msgid "Session management options:"
+msgstr "సెషన్ నిర్వాహిక ఐచ్చికములు:"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:253
+msgid "Show session management options"
+msgstr "సెషన్ నిర్వాహిక ఐచ్చికములను చూపుము"
+
+#: ../gsearchtool/src/gsearchtool.c:82
+msgid "Contains the _text"
+msgstr "పాఠమును కలిగివున్నది(_t)"
+
+#: ../gsearchtool/src/gsearchtool.c:84
+msgid "_Date modified less than"
+msgstr "తేది కంటే తక్కువ మార్చబడినది(_D)"
+
+#: ../gsearchtool/src/gsearchtool.c:84 ../gsearchtool/src/gsearchtool.c:85
+msgid "days"
+msgstr "రోజులు"
+
+#: ../gsearchtool/src/gsearchtool.c:85
+msgid "Date modified more than"
+msgstr "తేది కంటే ఎక్కువ మార్చబడినది"
+
+#: ../gsearchtool/src/gsearchtool.c:87
+msgid "S_ize at least"
+msgstr "తక్కువ పరిమాణం వద్ద(_i)"
+
+#: ../gsearchtool/src/gsearchtool.c:87 ../gsearchtool/src/gsearchtool.c:88
+msgid "kilobytes"
+msgstr "కిలోబైట్స్"
+
+#: ../gsearchtool/src/gsearchtool.c:88
+msgid "Si_ze at most"
+msgstr "చాలా పరిమాణం వద్ద(_z)"
+
+#: ../gsearchtool/src/gsearchtool.c:89
+msgid "File is empty"
+msgstr "దస్త్రం ఖాళీగావుంది"
+
+#: ../gsearchtool/src/gsearchtool.c:91
+msgid "Owned by _user"
+msgstr "వినియోగదారు ద్వారా స్వకీయమైన(_u)"
+
+#: ../gsearchtool/src/gsearchtool.c:92
+msgid "Owned by _group"
+msgstr "సముదాయం ద్వారా స్వకీయమైన(_g)"
+
+#: ../gsearchtool/src/gsearchtool.c:93
+msgid "Owner is unrecognized"
+msgstr "యజమాని గుర్తింపులేనివాడు"
+
+#: ../gsearchtool/src/gsearchtool.c:95
+msgid "Na_me does not contain"
+msgstr "నామము కలిగి లేదు(_m)"
+
+#: ../gsearchtool/src/gsearchtool.c:96
+msgid "Name matches regular e_xpression"
+msgstr "సాధారణ వ్యక్తీకరణ నామము ఉపమించదు(_x)"
+
+#: ../gsearchtool/src/gsearchtool.c:98
+msgid "Show hidden and backup files"
+msgstr "దాచబడిన మరియు భద్రపరచు దస్త్రములు చూపుము"
+
+#: ../gsearchtool/src/gsearchtool.c:99
+msgid "Follow symbolic links"
+msgstr "చిహ్న పూరితజోడిలను అనుసరించు"
+
+#: ../gsearchtool/src/gsearchtool.c:100
+msgid "Exclude other filesystems"
+msgstr "ఇతర దస్త్రవ్యవస్థలను తీసివేయి"
+
+#: ../gsearchtool/src/gsearchtool.c:158
+msgid "Show version of the application"
+msgstr ""
+
+#: ../gsearchtool/src/gsearchtool.c:159 ../gsearchtool/src/gsearchtool.c:164
+#: ../gsearchtool/src/gsearchtool.c:173
+msgid "STRING"
+msgstr "స్ట్రింగ్"
+
+#: ../gsearchtool/src/gsearchtool.c:160
+msgid "PATH"
+msgstr "త్రోవ"
+
+#: ../gsearchtool/src/gsearchtool.c:161
+msgid "VALUE"
+msgstr "విలువ"
+
+#: ../gsearchtool/src/gsearchtool.c:165 ../gsearchtool/src/gsearchtool.c:166
+msgid "DAYS"
+msgstr "రోజులు"
+
+#: ../gsearchtool/src/gsearchtool.c:167 ../gsearchtool/src/gsearchtool.c:168
+msgid "KILOBYTES"
+msgstr "కిలోబైట్సు"
+
+#: ../gsearchtool/src/gsearchtool.c:170
+msgid "USER"
+msgstr "వినియోగదారి"
+
+#: ../gsearchtool/src/gsearchtool.c:171
+msgid "GROUP"
+msgstr "సమూహం"
+
+#: ../gsearchtool/src/gsearchtool.c:174
+msgid "PATTERN"
+msgstr "క్రమము"
+
+#: ../gsearchtool/src/gsearchtool.c:385
+msgid "A locate database has probably not been created."
+msgstr "గుర్తించు దత్తాంశస్థానము బహుశా సృష్టించబడిఉండక పోవచ్చు"
+
+#: ../gsearchtool/src/gsearchtool.c:487
+#, c-format
+msgid "Character set conversion failed for \"%s\""
+msgstr "\"%s\" కొరకు అక్షర పరివర్తనం అమర్చు"
+
+#: ../gsearchtool/src/gsearchtool.c:511
+msgid "Searching..."
+msgstr "వెతుకుచున్నది..."
+
+#: ../gsearchtool/src/gsearchtool.c:511 ../gsearchtool/src/gsearchtool.c:1031
+#: ../gsearchtool/src/gsearchtool.c:3030
+msgid "Search for Files"
+msgstr "దస్త్రముల కొరకు వెతుకు"
+
+#: ../gsearchtool/src/gsearchtool.c:977 ../gsearchtool/src/gsearchtool.c:1006
+msgid "No files found"
+msgstr "ఎటువంటి దస్త్రములు దొరకలేదు"
+
+#: ../gsearchtool/src/gsearchtool.c:999
+msgid "(stopped)"
+msgstr "(ఆపబడినది)"
+
+#: ../gsearchtool/src/gsearchtool.c:1005
+msgid "No Files Found"
+msgstr "ఎటువంటి దస్త్రములు దొరకలేదు"
+
+#: ../gsearchtool/src/gsearchtool.c:1010
+#, c-format
+msgid "%'d File Found"
+msgid_plural "%'d Files Found"
+msgstr[0] "%'d దస్త్రం కనుగొనబడింది"
+msgstr[1] "%d దస్త్రాలు కనుగొనబడినవి"
+
+#: ../gsearchtool/src/gsearchtool.c:1014 ../gsearchtool/src/gsearchtool.c:1052
+#, c-format
+msgid "%'d file found"
+msgid_plural "%'d files found"
+msgstr[0] "%'d దస్త్రం కనుగొనబడింది"
+msgstr[1] "%'d దస్త్రాలు కనుగొనబడినవి"
+
+#: ../gsearchtool/src/gsearchtool.c:1143
+msgid "Entry changed called for a non entry option!"
+msgstr "ప్రవేశ పెట్టని ఇఛ్ఛాపూర్వకం కొరకు ప్రవేశము మార్చి పిలవబడినది!"
+
+#: ../gsearchtool/src/gsearchtool.c:1308
+msgid "Set the text of \"Name contains\" search option"
+msgstr "పాఠం అమర్చుట యొక్క \"నామము కలిగివున్నది\" ఇఛ్ఛాపూర్వకం వెతుకు"
+
+#: ../gsearchtool/src/gsearchtool.c:1309
+msgid "Set the text of \"Look in folder\" search option"
+msgstr "పాఠం అమర్చుట యొక్క \"సంచయములో చూడుము\"ఇఛ్ఛాపూర్వకం  వెతుకు"
+
+#: ../gsearchtool/src/gsearchtool.c:1310
+msgid "Sort files by one of the following: name, folder, size, type, or date"
+msgstr "క్రింది ఇవ్వబడిన ఒక దాని ద్వారా దస్త్రములు చక్కదిద్దు: నామము, సంచయము, పరిమాణం, రకము, లేదా తేది"
+
+#: ../gsearchtool/src/gsearchtool.c:1311
+msgid "Set sort order to descending, the default is ascending"
+msgstr "చక్కదిద్దు క్రమంను అవరోహణ క్రమములో అమర్చు, అప్రమేయము ఆరోహణ"
+
+#: ../gsearchtool/src/gsearchtool.c:1312
+msgid "Automatically start a search"
+msgstr "వెతుకుటను స్వయంచాలకంగా మొదలుపెట్టు"
+
+#: ../gsearchtool/src/gsearchtool.c:1318
+#, c-format
+msgid "Select the \"%s\" search option"
+msgstr "\"%s\" వెతుకు ఇఛ్ఛాపూర్వకం ఎంచుకొను"
+
+#: ../gsearchtool/src/gsearchtool.c:1321
+#, c-format
+msgid "Select and set the \"%s\" search option"
+msgstr "\"%s\" వెతుకు ఇఛ్ఛాపూర్వకం ఎంచుకొనుము మరియు అమర్చుము"
+
+#: ../gsearchtool/src/gsearchtool.c:1428
+msgid "Invalid option passed to sortby command line argument."
+msgstr "చక్కదిద్దు ఆదేశ వాక్య క్రమానుగత సంకేతం కు నిస్సారమైన ఇఛ్ఛాపూర్వకం పంపబడినది."
+
+#: ../gsearchtool/src/gsearchtool.c:1720
+msgid ""
+"\n"
+"... Too many errors to display ..."
+msgstr "\n... ప్రదర్శించుటకు చాలా దోషములు ..."
+
+#: ../gsearchtool/src/gsearchtool.c:1734
+msgid ""
+"The search results may be invalid.  There were errors while performing this "
+"search."
+msgstr "వెతికిన ఫలితం నిస్సారమై ఉండవచ్చు.  చేస్తున్నపుడు అక్కడ దోషములు ఏర్పడినవి వెతుకు."
+
+#: ../gsearchtool/src/gsearchtool.c:1746 ../gsearchtool/src/gsearchtool.c:1790
+msgid "Show more _details"
+msgstr "చాలా వివరింపులు చూపుము(_d)"
+
+#: ../gsearchtool/src/gsearchtool.c:1776
+msgid ""
+"The search results may be out of date or invalid.  Do you want to disable "
+"the quick search feature?"
+msgstr "శోధించ ఫలితాలు తారీఖు మించిపోయినవి లేదా విలువైనవికావు.  మీరు త్వరిత శోధన ప్రయోజనాన్ని అచేతనం చేయాలనుకుంటున్నారా?"
+
+#: ../gsearchtool/src/gsearchtool.c:1801
+msgid "Disable _Quick Search"
+msgstr "తొందరగా వెతుకుట నిరుపయోగము(_Q)"
+
+#: ../gsearchtool/src/gsearchtool.c:1828
+#, c-format
+msgid "Failed to set process group id of child %d: %s.\n"
+msgstr "%d కు పురోగమన సముదాయ id యొక్క శిశువు అమర్చునపుడు విఫలమైంది: %s.\n"
+
+#: ../gsearchtool/src/gsearchtool.c:1853
+msgid "Error parsing the search command."
+msgstr "వెతుకు ఆదేశంకు పార్సింగ్ దోషము. "
+
+#: ../gsearchtool/src/gsearchtool.c:1885
+msgid "Error running the search command."
+msgstr "వెతుకు ఆదేశం నడుపుతున్నపుడు దోషము."
+
+#: ../gsearchtool/src/gsearchtool.c:2008
+#, c-format
+msgid "Enter a text value for the \"%s\" search option."
+msgstr "\"%s\" వెతుకు ఇఛ్ఛాపూర్వకం కొరకు పాఠం విలువను చేర్చుము."
+
+#. Translators:  Below is a string displaying the search options name
+#. and unit value.  For example, "\"Date modified less than\" in days".
+#: ../gsearchtool/src/gsearchtool.c:2013
+#, c-format
+msgid "\"%s\" in %s"
+msgstr "\"%s\" లో %s"
+
+#: ../gsearchtool/src/gsearchtool.c:2015
+#, c-format
+msgid "Enter a value in %s for the \"%s\" search option."
+msgstr "\"%s\" వెతుకు ఇఛ్ఛాపూర్వకం కొరకు %s లో విలువను చేర్చుము."
+
+#: ../gsearchtool/src/gsearchtool.c:2073
+#, c-format
+msgid "Remove \"%s\""
+msgstr "\"%s\" తొలగించు"
+
+#: ../gsearchtool/src/gsearchtool.c:2074
+#, c-format
+msgid "Click to remove the \"%s\" search option."
+msgstr "\"%s\" వెతుకు ఇఛ్ఛాపూర్వకం తొలగించుటకు నొక్కుము."
+
+#: ../gsearchtool/src/gsearchtool.c:2167
+msgid "A_vailable options:"
+msgstr "లభ్యత కల్గిన ఇఛ్ఛాపూర్వకాలు(_v):"
+
+#: ../gsearchtool/src/gsearchtool.c:2196
+msgid "Available options"
+msgstr "లభ్యత కల్గిన ఇఛ్ఛాపూర్వకాలు"
+
+#: ../gsearchtool/src/gsearchtool.c:2197
+msgid "Select a search option from the drop-down list."
+msgstr "కిందికి లాగు జాబితా నుండి వెతుకు ఇఛ్ఛాపూర్వకంను ఎంచుకొను"
+
+#: ../gsearchtool/src/gsearchtool.c:2209
+msgid "Add search option"
+msgstr "వెతుకు ఇఛ్ఛాపూర్వకం చేర్చుము"
+
+#: ../gsearchtool/src/gsearchtool.c:2210
+msgid "Click to add the selected available search option."
+msgstr "ఎంచుకొనబడిన లభ్యత కల్గిన వెతుకు ఇఛ్ఛాపూర్వకంను చేర్చుటకు నొక్కుము. "
+
+#: ../gsearchtool/src/gsearchtool.c:2299
+msgid "S_earch results:"
+msgstr "వెతికిన ఫలితాలు(_e):"
+
+#: ../gsearchtool/src/gsearchtool.c:2343
+msgid "List View"
+msgstr "జాబితా దర్శనం"
+
+#: ../gsearchtool/src/gsearchtool.c:2403
+#: ../mate-dictionary/libgdict/gdict-source.c:246
+msgid "Name"
+msgstr "నామము"
+
+#: ../gsearchtool/src/gsearchtool.c:2452
+msgid "Type"
+msgstr "విధం, రకము"
+
+#: ../gsearchtool/src/gsearchtool.c:2464
+msgid "Date Modified"
+msgstr "తేది మార్చబడినది"
+
+#: ../gsearchtool/src/gsearchtool.c:2799
+msgid "_Name contains:"
+msgstr "నామము కలిగివున్నది(_N):"
+
+#: ../gsearchtool/src/gsearchtool.c:2813 ../gsearchtool/src/gsearchtool.c:2814
+msgid "Enter a filename or partial filename with or without wildcards."
+msgstr "wildcards తోగాని లేకుండాగాని దస్త్రనామాన్ని లేదా పాక్షిక దస్త్రనామాన్ని ప్రవేశపెట్టండి."
+
+#: ../gsearchtool/src/gsearchtool.c:2814
+msgid "Name contains"
+msgstr "నామము కలిగివున్నది"
+
+#: ../gsearchtool/src/gsearchtool.c:2820
+msgid "_Look in folder:"
+msgstr "సంచయములో చూడుము(_L):"
+
+#: ../gsearchtool/src/gsearchtool.c:2826
+msgid "Browse"
+msgstr "అన్వేషించు"
+
+#: ../gsearchtool/src/gsearchtool.c:2835
+msgid "Look in folder"
+msgstr "సంచయం లో చూడుము"
+
+#: ../gsearchtool/src/gsearchtool.c:2835
+msgid "Select the folder or device from which you want to begin the search."
+msgstr "దేనినుండైతే మీరు శోధన ప్రారంభించాలని అనుకుంటున్నారో ఆ దస్త్రాన్ని కాని లేదా పరికరాన్ని కాని ఎంపకచేసుకొనండి."
+
+#: ../gsearchtool/src/gsearchtool.c:2853
+msgid "Select more _options"
+msgstr "చాలా ఇఛ్ఛాపూర్వకాలు ఎంచుకొను(_o)"
+
+#: ../gsearchtool/src/gsearchtool.c:2862
+msgid "Select more options"
+msgstr "చాలా ఇఛ్ఛాపూర్వకాలు"
+
+#: ../gsearchtool/src/gsearchtool.c:2862
+msgid "Click to expand or collapse the list of available options."
+msgstr "లభ్యత కల్గిన ఇఛ్ఛాపూర్వకముల యొక్క జాబితాను పొడగించుటకు లేదా  నాశనము చేయుటకు నొక్కుము."
+
+#: ../gsearchtool/src/gsearchtool.c:2886
+msgid "Click to display the help manual."
+msgstr "సహాయ నిర్థేశికత ప్రదర్శించుటకు నొక్కుము"
+
+#: ../gsearchtool/src/gsearchtool.c:2894
+msgid "Click to close \"Search for Files\"."
+msgstr "మూయుటకు నొక్కుము \"దస్త్రముల కొరకు వెతుకు\"."
+
+#: ../gsearchtool/src/gsearchtool.c:2920
+msgid "Click to perform a search."
+msgstr "వెతుకుటను నెరవేర్చుటకు నొక్కుము"
+
+#: ../gsearchtool/src/gsearchtool.c:2921
+msgid "Click to stop a search."
+msgstr "వెతుకుటను ఆపివేయుటకు నొక్కుము"
+
+#: ../gsearchtool/src/gsearchtool.c:3015
+msgid "- the MATE Search Tool"
+msgstr "- MATE శోధన సాధనం"
+
+#: ../gsearchtool/src/gsearchtool.c:3024
+#, c-format
+msgid "Failed to parse command line arguments: %s\n"
+msgstr ""
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:198
+msgid "Could not open help document."
+msgstr "సహాయ పత్రమును తెరుచుటకు వీలుకాదు"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:349
+#, c-format
+msgid "Are you sure you want to open %d document?"
+msgid_plural "Are you sure you want to open %d documents?"
+msgstr[0] "మీరు %d పత్రమును తెరుచుటకు నిశ్చయమై ఉన్నారా?"
+msgstr[1] "మీరు %d పత్రములను తెరుచుటకు నిశ్చయమై ఉన్నారా?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:354
+#: ../gsearchtool/src/gsearchtool-callbacks.c:551
+#, c-format
+msgid "This will open %d separate window."
+msgid_plural "This will open %d separate windows."
+msgstr[0] "ఇది %d ప్రత్యక గవాక్షమును తెరుస్తుంది."
+msgstr[1] "ఇది %d ప్రత్యక గవాక్షంలను తెరుస్తుంది."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:394
+#, c-format
+msgid "Could not open document \"%s\"."
+msgstr "\"%s\" పత్రమును తెరుచుటకు వీలుకాదు."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:423
+#, c-format
+msgid "Could not open folder \"%s\"."
+msgstr "\"%s\" సంచయమును తెరుచుటకు వీలుకాదు."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:431
+msgid "The caja file manager is not running."
+msgstr "నాటిలస్ దస్త్ర అభికర్త నడుచుటలేదు."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:523
+msgid "There is no installed viewer capable of displaying the document."
+msgstr "సామర్థ్యముగల పత్రమును ప్రదర్శించుటకు నెలకొల్పబడిన దర్శిని లేదు."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:546
+#, c-format
+msgid "Are you sure you want to open %d folder?"
+msgid_plural "Are you sure you want to open %d folders?"
+msgstr[0] "మీరు %d సంచయమును తెరుచుటకు నిశ్చయమై ఉన్నారా?"
+msgstr[1] "మీరు %d సంచయములను తెరుచుటకు నిశ్చయమై ఉన్నారా?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:699
+#, c-format
+msgid "Could not move \"%s\" to trash."
+msgstr "\"%s\" ను చెత్తకుండి కి కదిపించలేము."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:730
+#, c-format
+msgid "Do you want to delete \"%s\" permanently?"
+msgstr "\"%s\" ను నీవు శాశ్వతంగా తొలగించదలచుకున్నావా?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:733
+#, c-format
+msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
+msgstr "చెత్తకుండి లభించలేదు. \"%s\" ను చెత్తకుండికి కదిపించలేము."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:772
+#, c-format
+msgid "Could not delete \"%s\"."
+msgstr "\"%s\" ను తొలగించలేము."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:884
+#, c-format
+msgid "Deleting \"%s\" failed: %s."
+msgstr "\"%s\" తొలగించుటకు విఫలమైనది : %s."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:896
+#, c-format
+msgid "Moving \"%s\" failed: %s."
+msgstr "\"%s\"ను కదిపించుట విఫలమైనది: %s."
+
+#. Popup menu item: Open
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1024
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1054
+msgid "_Open"
+msgstr "తెరచు(_O)"
+
+#. Popup menu item: Open with (default)
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1079
+#, c-format
+msgid "_Open with %s"
+msgstr "%s తో తెరువుము (_O)"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1114
+#, c-format
+msgid "Open with %s"
+msgstr "%s తో తెరువుము"
+
+#. Popup menu item: Open With
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1147
+msgid "Open Wit_h"
+msgstr "దీనితో తెరువుము (_h)"
+
+#. Popup menu item: Open Containing Folder
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1192
+msgid "Open Containing _Folder"
+msgstr ""
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1232
+msgid "_Save Results As..."
+msgstr "లా ఫలితములు దాచు(_S)..."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1614
+msgid "Save Search Results As..."
+msgstr "వెతుకు ఫలితాలను లా దాచు..."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1643
+msgid "Could not save document."
+msgstr "పత్రమును దాచుటకు వీలుకాదు."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1644
+msgid "You did not select a document name."
+msgstr "మీరు పత్ర నామమును ఎంచుకొనలేదు."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1674
+#, c-format
+msgid "Could not save \"%s\" document to \"%s\"."
+msgstr "\"%s\" పత్రంకు \"%s\" ను దాచలేము."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1707
+#, c-format
+msgid "The document \"%s\" already exists.  Would you like to replace it?"
+msgstr "పత్రం \"%s\" ఇదివరకే కలిగివున్నది. మీరు దాన్ని పునఃస్థాపించుటకు ఇష్టపడుతున్నారా?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1711
+msgid "If you replace an existing file, its contents will be overwritten."
+msgstr "మీరు కలిగివున్న దస్త్రంను పునఃస్థాపించినట్టయితే, దాని సారములు చెరిపిరాయబడును."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1726
+#: ../mate-screenshot/src/screenshot-xfer.c:82
+msgid "_Replace"
+msgstr "పునఃస్థాపించు(_R)"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1775
+msgid "The document name you selected is a folder."
+msgstr "మీరు ఎంచుకున్న పత్ర నామము సంచయం"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1811
+msgid "You may not have write permissions to the document."
+msgstr "మీకు పత్రమునకు వ్రాయుటకు అనుమతులు లేవు."
+
+#. Translators:  Below are the strings displayed in the 'Date Modified'
+#. column of the list view.  The format of this string can vary depending
+#. on age of a file.  Please modify the format of the timestamp to match
+#. your locale.  For example, to display 24 hour time replace the '%-I'
+#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
+#: ../gsearchtool/src/gsearchtool-support.c:448
+msgid "today at %-I:%M %p"
+msgstr "ఈ రోజు %-I:%M %p"
+
+#: ../gsearchtool/src/gsearchtool-support.c:450
+msgid "yesterday at %-I:%M %p"
+msgstr "నిన్న %-I:%M %p"
+
+#: ../gsearchtool/src/gsearchtool-support.c:452
+#: ../gsearchtool/src/gsearchtool-support.c:454
+msgid "%A, %B %-d %Y at %-I:%M:%S %p"
+msgstr "%A, %B %-d %Y at %-I:%M:%S %p"
+
+#: ../gsearchtool/src/gsearchtool-support.c:641
+msgid "link (broken)"
+msgstr "జోడి (విరిగినది)"
+
+#: ../gsearchtool/src/gsearchtool-support.c:645
+#, c-format
+msgid "link to %s"
+msgstr "%s కు జోడి"
+
+#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
+#. Localizers:
+#. * Feel free to leave out the st, nd, rd and th suffix or
+#. * make some or all of them match.
+#. localizers: tag used to detect the first copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1257
+msgid " (copy)"
+msgstr "(నకలు)"
+
+#. localizers: tag used to detect the second copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1259
+msgid " (another copy)"
+msgstr "(వేరొక నకలు)"
+
+#. localizers: tag used to detect the x11th copy of a file
+#. localizers: tag used to detect the x12th copy of a file
+#. localizers: tag used to detect the x13th copy of a file
+#. localizers: tag used to detect the xxth copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1262
+#: ../gsearchtool/src/gsearchtool-support.c:1264
+#: ../gsearchtool/src/gsearchtool-support.c:1266
+#: ../gsearchtool/src/gsearchtool-support.c:1276
+msgid "th copy)"
+msgstr "th నకలు)"
+
+#. localizers: tag used to detect the x1st copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1269
+msgid "st copy)"
+msgstr "st నకలు)"
+
+#. localizers: tag used to detect the x2nd copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1271
+msgid "nd copy)"
+msgstr "nd నకలు)"
+
+#. localizers: tag used to detect the x3rd copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1273
+msgid "rd copy)"
+msgstr "rd నకలు)"
+
+#. localizers: appended to first file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1290
+#, c-format
+msgid "%s (copy)%s"
+msgstr "%s (నకలు)%s"
+
+#. localizers: appended to second file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1292
+#, c-format
+msgid "%s (another copy)%s"
+msgstr "%s (వేరొక నకలు)%s"
+
+#. localizers: appended to x11th file copy
+#. localizers: appended to x12th file copy
+#. localizers: appended to x13th file copy
+#. localizers: appended to xxth file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1295
+#: ../gsearchtool/src/gsearchtool-support.c:1297
+#: ../gsearchtool/src/gsearchtool-support.c:1299
+#: ../gsearchtool/src/gsearchtool-support.c:1308
+#, c-format
+msgid "%s (%dth copy)%s"
+msgstr "%s (%dth నకలు)%s"
+
+#. localizers: appended to x1st file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1302
+#, c-format
+msgid "%s (%dst copy)%s"
+msgstr "%s (%dst నకలు)%s"
+
+#. localizers: appended to x2nd file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1304
+#, c-format
+msgid "%s (%dnd copy)%s"
+msgstr "%s (%dnd నకలు)%s"
+
+#. localizers: appended to x3rd file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1306
+#, c-format
+msgid "%s (%drd copy)%s"
+msgstr "%s (%drd నకలు)%s"
+
+#: ../gsearchtool/src/gsearchtool-support.c:1353
+msgid " (invalid Unicode)"
+msgstr "(నిస్సారమైన యునికోడ్)"
+
+#. localizers: opening parentheses to match the "th copy)" string
+#: ../gsearchtool/src/gsearchtool-support.c:1442
+msgid " ("
+msgstr " ("
+
+#. localizers: opening parentheses of the "th copy)" string
+#: ../gsearchtool/src/gsearchtool-support.c:1450
+#, c-format
+msgid " (%d"
+msgstr " (%d"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "లాగ్ దస్త్రపు దర్శిని"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "దర్శించు లేదా దర్శిని వ్యవస్థ log దస్త్రములు"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
+msgid "Log file to open up on startup"
+msgstr "మొదలు పెట్టినపుడు log దస్త్రం ను తెరుచుటకు"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
+msgid ""
+"Specifies the log file displayed at startup. The default is either "
+"/var/adm/messages or /var/log/messages, depending on your operating system."
+msgstr "ప్రారంభంనందు ప్రదర్శితమయ్యే లాగ్ దస్త్రాన్ని తెలియజేస్తుంది.అప్రమేయమనునది మీ ఆపరేటింగ్ సిస్టమ్ పై ఆధారపడి, /var/adm/messages కాని లేదా /var/log/messages కాని అవుతుంది."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
+msgid "Size of the font used to display the log"
+msgstr "అక్షరశైలి యొక్క పరిమాణము log ను దర్శించుటకు వాడబడినది"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr "లాగ్ ను ప్రధాన ట్రీ దర్శిని లో ప్రదర్శించుటకు ఉపయోగించు నిర్దేశిత-వెడల్పు ఫాంటు యొక్క పరిమాణంను తెలియజేస్తుంది.అప్రమేయం అప్రమేయ టెర్మినల్ ఫాంటు పరిమాణంనుండి తీసుకోబడుతుంది."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
+msgid "Height of the main window in pixels"
+msgstr "పిక్సెల్స్ లో మూల గవాక్షం యొక్క ఎత్తు"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "పిక్సెల్స్ లో మూల గవాక్షం log దర్శకి యొక్క ఎత్తును నిర్థేశిస్తుంది."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
+msgid "Width of the main window in pixels"
+msgstr "పిక్సెల్స్ లో మూల గవాక్షం యొక్క పొడవు"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "పిక్సెల్స్ లో మూల గవాక్షం log దర్శకి యొక్క పొడవును నిర్థేశిస్తుంది."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
+msgid "Log files to open up on startup"
+msgstr "మొదలు పెట్టినపుడు log దస్త్రాల ను తెరుచుటకు"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr "ప్రారంభం నందు తెరువుటకు లాగ్ దస్త్రముల జాబితాను తెలియపరచండి.అప్రమేయ జాబితా /etc/syslog.conf చదువుట ద్వారా సృష్టించబడుతుంది."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
+msgid "List of saved filters"
+msgstr ""
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
+msgid "List of saved regexp filters"
+msgstr ""
+
+#: ../logview/data/logview-filter.ui.h:1
+#: ../mate-screenshot/data/mate-screenshot.ui.h:3
+msgid "_Name:"
+msgstr "నామము(_N):"
+
+#: ../logview/data/logview-filter.ui.h:2
+msgid "_Regular Expression:"
+msgstr ""
+
+#: ../logview/data/logview-filter.ui.h:3
+msgid "Highlight"
+msgstr ""
+
+#: ../logview/data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr ""
+
+#: ../logview/data/logview-filter.ui.h:5
+msgid "Foreground:"
+msgstr ""
+
+#: ../logview/data/logview-filter.ui.h:6
+msgid "Background:"
+msgstr ""
+
+#: ../logview/data/logview-filter.ui.h:7
+msgid "Effect:"
+msgstr ""
+
+#: ../logview/src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "దస్త్రము %sను తెరువుట అసాధ్యము"
+
+#: ../logview/src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "వడపోత నామము ఖాళీగావుంది!"
+
+#: ../logview/src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "వడపోత నామము ':' అక్షరమును కలిగివుండక పోవచ్చును"
+
+#: ../logview/src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "సాధారణ సమీకరణం ఖాళీగా వుంది!"
+
+#: ../logview/src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "సాధారణ సమీకరణం చెల్లనిది: %s"
+
+#: ../logview/src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "దయచేసి ఫోర్‌గ్రౌండ్ లేదా బ్యాక్‌గ్రౌండ్ రంగును తెలుపండి!"
+
+#: ../logview/src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "వడపోతను సరికూర్చుము"
+
+#: ../logview/src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "కొత్త వడపోతను జతచేయి"
+
+#: ../logview/src/logview-filter-manager.c:508
+msgid "Filters"
+msgstr "వడపోతలు"
+
+#: ../logview/src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "కనుగొనుము (_F):"
+
+#: ../logview/src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "ముందుది కనుగొనుము"
+
+#: ../logview/src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "వెతుకుమాట యొక్క సంభవించునది ముందుది వెతుకు"
+
+#: ../logview/src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "తరువాతది కనుగొనుము"
+
+#: ../logview/src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "వెతుకుమాట యొక్క సంభవించునది తరువాత వెతుకు"
+
+#: ../logview/src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "శోధన పదబందం(స్ట్రింగు)ను శుభ్రముచేయుము"
+
+#: ../logview/src/logview-log.c:598
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "GZipped లాగ్‌ను విడమర్చుతుంటే(అన్‌కంప్రెస్) దోషము. బహుశా దస్త్రము పాడైవుంటుంది."
+
+#: ../logview/src/logview-log.c:645
+msgid "You don't have enough permissions to read the file."
+msgstr "దస్త్రమును చదువుటకు మీరు తగినన్ని అనుమతులు కలిగిలేరు."
+
+#: ../logview/src/logview-log.c:660
+msgid "The file is not a regular file or is not a text file."
+msgstr "దస్త్రము సాదారణ దస్త్రముకాదు లేదా టెక్స్ట్ దస్త్రముకాదు."
+
+#: ../logview/src/logview-log.c:742
+msgid "This version of System Log does not support GZipped logs."
+msgstr "సిస్టమ్ లాగ్‌యొక్క ఈ వర్షన్ GZipped లాగ్‌లను మద్దతించదు."
+
+#: ../logview/src/logview-loglist.c:316
+msgid "Loading..."
+msgstr "లోడవుచున్నది..."
+
+#: ../logview/src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "కార్యక్షేత్రముల వివరణము చూపుము"
+
+#: ../logview/src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[LOGFILE...]"
+
+#: ../logview/src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr "-అన్వేషణ మరియు దర్శిని logs"
+
+#: ../logview/src/logview-main.c:100
+msgid "Log Viewer"
+msgstr "Log దర్శకి"
+
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:762
+msgid "System Log Viewer"
+msgstr "వ్యవస్థ Log దర్శకి"
+
+#: ../logview/src/logview-window.c:212
+#, c-format
+msgid "last update: %s"
+msgstr "చివరి తాజాపరచు: %s"
+
+#: ../logview/src/logview-window.c:216
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d లైనులు (%s) - %s"
+
+#: ../logview/src/logview-window.c:320
+msgid "Open Log"
+msgstr "log తెరువుము"
+
+#: ../logview/src/logview-window.c:359
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "సహాయమును ప్రదర్శించుటలో అక్కడ వొక దోషమువుంది: %s"
+
+#: ../logview/src/logview-window.c:473
+msgid "Wrapped"
+msgstr "పొట్లం కట్టబడిన"
+
+#: ../logview/src/logview-window.c:488
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
+msgid "Not found"
+msgstr "లభించలేదు"
+
+#: ../logview/src/logview-window.c:767
+msgid "A system log viewer for MATE."
+msgstr "వ్యవస్థ Log దర్శకి గ్నోమ్ కొరకు."
+
+#: ../logview/src/logview-window.c:810
+#: ../mate-dictionary/src/gdict-window.c:1284
+msgid "_File"
+msgstr "దస్త్రం(_F)"
+
+#: ../logview/src/logview-window.c:813
+msgid "_Filters"
+msgstr "వడపోతలు (_F)"
+
+#: ../logview/src/logview-window.c:816
+msgid "_Open..."
+msgstr "తెరచు(_O)..."
+
+#: ../logview/src/logview-window.c:816
+msgid "Open a log from file"
+msgstr "దస్త్రం నుండి log తెరువుము"
+
+#: ../logview/src/logview-window.c:818
+msgid "_Close"
+msgstr "మూసివేయు(_C)"
+
+#: ../logview/src/logview-window.c:818
+msgid "Close this log"
+msgstr "ఈ log మూసివేయు"
+
+#: ../logview/src/logview-window.c:820
+msgid "_Quit"
+msgstr "త్యజించు(_Q)"
+
+#: ../logview/src/logview-window.c:820
+msgid "Quit the log viewer"
+msgstr "log దర్శకిని త్యజించు"
+
+#: ../logview/src/logview-window.c:823
+msgid "_Copy"
+msgstr "నకలుతీయు(_C)"
+
+#: ../logview/src/logview-window.c:823
+msgid "Copy the selection"
+msgstr "ఎంపికను నకలుతీయు"
+
+#: ../logview/src/logview-window.c:825
+#: ../mate-dictionary/src/gdict-window.c:1305
+msgid "Select _All"
+msgstr "అన్నింటిని ఎంచుకొను(_A)"
+
+#: ../logview/src/logview-window.c:825
+msgid "Select the entire log"
+msgstr "మొత్తం log ను ఎంచుకొను"
+
+#: ../logview/src/logview-window.c:827
+msgid "_Find..."
+msgstr "కనుగొనుము (_F)..."
+
+#: ../logview/src/logview-window.c:827
+msgid "Find a word or phrase in the log"
+msgstr "లాగ్‌నందు పదమును లేదా మాట(ఫ్రేజ్)ను కనుగొనుము"
+
+#: ../logview/src/logview-window.c:830
+msgid "Bigger text size"
+msgstr "పెద్దదైన పాఠం పరిమాణం"
+
+#: ../logview/src/logview-window.c:832
+msgid "Smaller text size"
+msgstr "చిన్నదైన పాఠం పరిమాణం"
+
+#: ../logview/src/logview-window.c:834
+msgid "Normal text size"
+msgstr "సాధారణమైన పాఠం పరిమాణం"
+
+#: ../logview/src/logview-window.c:837
+msgid "Manage Filters"
+msgstr "వడపోతలను నిర్వహించుము"
+
+#: ../logview/src/logview-window.c:837
+msgid "Manage filters"
+msgstr "వడపోతలను నిర్వహించుము"
+
+#: ../logview/src/logview-window.c:840
+msgid "Open the help contents for the log viewer"
+msgstr "log దర్శకి కొరకు సహాయ సారములను తెరువుము"
+
+#: ../logview/src/logview-window.c:842
+#: ../mate-dictionary/src/gdict-applet.c:1188
+#: ../mate-dictionary/src/gdict-window.c:1340
+msgid "_About"
+msgstr "గురించి(_A)"
+
+#: ../logview/src/logview-window.c:842
+msgid "Show the about dialog for the log viewer"
+msgstr " log దర్శకి కొరకు గురించి వివరణ చూపుము"
+
+#: ../logview/src/logview-window.c:847
+msgid "_Statusbar"
+msgstr "సుస్థితి పట్టీ(_S)"
+
+#: ../logview/src/logview-window.c:847
+msgid "Show Status Bar"
+msgstr "సుస్థితి పట్టీ చూపుము"
+
+#: ../logview/src/logview-window.c:849
+msgid "Side _Pane"
+msgstr "పక్క ప్యాన్(_P)"
+
+#: ../logview/src/logview-window.c:849
+msgid "Show Side Pane"
+msgstr "పక్క ప్యాన్ చూపుము"
+
+#: ../logview/src/logview-window.c:851
+msgid "Show matches only"
+msgstr "పోలికలను మాత్రమే చూపుము"
+
+#: ../logview/src/logview-window.c:851
+msgid "Only show lines that match one of the given filters"
+msgstr "ఇచ్చిన వడపోతలలో వొక దానిని పోలు పంక్తులను మాత్రమే చూపుము"
+
+#: ../logview/src/logview-window.c:983
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr ""
+
+#: ../logview/src/logview-window.c:1413
+msgid "Version: "
+msgstr "వివరణము:"
+
+#: ../logview/src/logview-window.c:1524
+msgid "Could not open the following files:"
+msgstr "ఈ క్రింది దస్త్రములను తెరువలేక పోయింది:"
 
 #: ../mate-dictionary/data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
@@ -604,6 +1861,22 @@ msgid ""
 "comes preconfigured with a list of Dict servers (RFC 2229), to which you can"
 " add your own sources, while you can select specific servers for a specific "
 "query. </p>"
+msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:1
+msgid "Dictionary Applet Factory"
+msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:2
+msgid "Factory for the dictionary applet"
+msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:3
+msgid "Dictionary Look up"
+msgstr ""
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:4
+msgid "Look up words in a dictionary"
 msgstr ""
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:1
@@ -643,10 +1916,6 @@ msgstr "నిఘంటువు వనరు యొక్క నామము �
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr "పదముల యొక్క నిర్వచనములు వెలికితీయుటకు నిఘంటువు వనరు యొక్క నామము వాడబడినది."
-
-#: ../mate-dictionary/data/spanish.desktop.in.h:1
-msgid "Spanish Dictionaries"
-msgstr "స్పానిష్ నిఘంటువులు"
 
 #: ../mate-dictionary/data/thai.desktop.in.h:1
 msgid "Longdo Thai-English Dictionaries"
@@ -813,13 +2082,6 @@ msgstr "జాబితా యొక్క లభించు దత్తాం
 msgid "Error while matching"
 msgstr "ఉపమించుతున్నపుడు దోషము"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
-#: ../logview/logview-window.c:486
-msgid "Not found"
-msgstr "లభించలేదు"
-
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1327
 msgid "F_ind:"
 msgstr "వెతుకు(_i):"
@@ -857,11 +2119,6 @@ msgstr "దస్త్ర నామము"
 #: ../mate-dictionary/libgdict/gdict-source.c:233
 msgid "The filename used by this dictionary source"
 msgstr "ఈ నిఘంటువు వనరు ద్వారా ఈ దస్త్ర నామము వాడుదురు"
-
-#: ../mate-dictionary/libgdict/gdict-source.c:246
-#: ../gsearchtool/gsearchtool.c:2403
-msgid "Name"
-msgstr "నామము"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:247
 msgid "The display name of this dictionary source"
@@ -1015,9 +2272,9 @@ msgid "Look up words in dictionaries"
 msgstr "నిఘంటువులలో పదాలకొరకు చూడుము"
 
 #: ../mate-dictionary/src/gdict-about.c:78
-#: ../mate-dictionary/src/gdict-app.c:379
+#: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:604
-#: ../mate-dictionary/src/gdict-window.c:1968
+#: ../mate-dictionary/src/gdict-window.c:1974
 msgid "Dictionary"
 msgstr "నిఘంటువు"
 
@@ -1054,55 +2311,43 @@ msgid ""
 "%s"
 msgstr " \"%s\" యొక్క నిర్వచనం చూస్తున్నపుడు దోషము ఏర్పడింది:\n%s"
 
-#: ../mate-dictionary/src/gdict-app.c:337
-#: ../mate-dictionary/src/gdict-app.c:351
+#: ../mate-dictionary/src/gdict-app.c:333
+#: ../mate-dictionary/src/gdict-app.c:343
 msgid "Words to look up"
 msgstr "పదాలు చూచుటకై"
 
-#: ../mate-dictionary/src/gdict-app.c:337
-#: ../mate-dictionary/src/gdict-app.c:339
-#: ../mate-dictionary/src/gdict-app.c:351
+#: ../mate-dictionary/src/gdict-app.c:333
+#: ../mate-dictionary/src/gdict-app.c:335
+#: ../mate-dictionary/src/gdict-app.c:343
 msgid "word"
 msgstr "పదము"
 
-#: ../mate-dictionary/src/gdict-app.c:339
+#: ../mate-dictionary/src/gdict-app.c:335
 msgid "Words to match"
 msgstr "పదములు జతచేయుటకు"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:337
 msgid "Dictionary source to use"
 msgstr "నిఘంటువు వనరు వాడుటకు"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:337
 msgid "source"
 msgstr "వనరు"
 
-#: ../mate-dictionary/src/gdict-app.c:343
-msgid "Show available dictionary sources"
-msgstr "లభ్యత కల్గిన నిఘంటువు వనరులను చూపుము"
-
-#: ../mate-dictionary/src/gdict-app.c:345
+#: ../mate-dictionary/src/gdict-app.c:339
 msgid "Print result to the console"
 msgstr "ఊరడించు ఫలితమును ముద్రించు"
 
-#: ../mate-dictionary/src/gdict-app.c:347
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "Database to use"
 msgstr "దత్తాంశస్థానము వాడుటకు"
 
-#: ../mate-dictionary/src/gdict-app.c:347
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "db"
 msgstr "db"
 
-#: ../mate-dictionary/src/gdict-app.c:349
-msgid "Strategy to use"
-msgstr "ఎత్తుగడ వాడుటకు"
-
-#: ../mate-dictionary/src/gdict-app.c:349
-msgid "strat"
-msgstr "మొదలుపెట్టు"
-
 #. create the new option context
-#: ../mate-dictionary/src/gdict-app.c:361
+#: ../mate-dictionary/src/gdict-app.c:353
 msgid " - Look up words in dictionaries"
 msgstr "-నిఘంటువులో పదాలు చూచుటకై"
 
@@ -1179,64 +2424,59 @@ msgid "Dictionary entry"
 msgstr "నిఘంటువు చేర్పు"
 
 #: ../mate-dictionary/src/gdict-applet.c:715
-#: ../mate-dictionary/src/gdict-window.c:1097
+#: ../mate-dictionary/src/gdict-window.c:1103
 msgid "Dictionary Preferences"
 msgstr "నిఘంటువు అభీష్టాలు"
 
 #: ../mate-dictionary/src/gdict-applet.c:739
 #: ../mate-dictionary/src/gdict-pref-dialog.c:495
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
-#: ../mate-dictionary/src/gdict-window.c:1244
+#: ../mate-dictionary/src/gdict-window.c:1250
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "సహాయమును ప్రదర్శించుతున్నపుడు అక్కడ దోషము ఏర్పడింది"
 
-#: ../mate-dictionary/src/gdict-applet.c:893
+#: ../mate-dictionary/src/gdict-applet.c:878
 #: ../mate-dictionary/src/gdict-window.c:519
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "'%s' నామముతో ఎటువంటి నిఘంటువు వనరు లభించలేదు"
 
-#: ../mate-dictionary/src/gdict-applet.c:897
+#: ../mate-dictionary/src/gdict-applet.c:882
 #: ../mate-dictionary/src/gdict-window.c:523
 msgid "Unable to find dictionary source"
 msgstr "నిఘంటువు వనరును వెతకలేక పోయింది"
 
-#: ../mate-dictionary/src/gdict-applet.c:913
+#: ../mate-dictionary/src/gdict-applet.c:898
 #: ../mate-dictionary/src/gdict-window.c:539
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "'%s' వనరు కొరకు ఎటువంటి సంధర్భము లభించలేదు"
 
-#: ../mate-dictionary/src/gdict-applet.c:917
+#: ../mate-dictionary/src/gdict-applet.c:902
 #: ../mate-dictionary/src/gdict-window.c:543
 msgid "Unable to create a context"
 msgstr "సంధర్భమును సృష్టించలేము"
 
-#: ../mate-dictionary/src/gdict-applet.c:1198
+#: ../mate-dictionary/src/gdict-applet.c:1170
 msgid "_Look Up Selected Text"
 msgstr "‌ఎంచుకున్న పాఠం వెతుకుము(_L)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1201
+#: ../mate-dictionary/src/gdict-applet.c:1173
 msgid "Cl_ear"
 msgstr "తీసివేయు(_e)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1204
+#: ../mate-dictionary/src/gdict-applet.c:1176
 msgid "_Print"
 msgstr "ముద్రించు(_P)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1207
+#: ../mate-dictionary/src/gdict-applet.c:1179
 msgid "_Save"
 msgstr "దాచు(_S)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1210
+#: ../mate-dictionary/src/gdict-applet.c:1182
 msgid "Preferences"
 msgstr ""
-
-#: ../mate-dictionary/src/gdict-applet.c:1216
-#: ../mate-dictionary/src/gdict-window.c:1334 ../logview/logview-window.c:840
-msgid "_About"
-msgstr "గురించి(_A)"
 
 #: ../mate-dictionary/src/gdict-common.c:80
 #, c-format
@@ -1326,179 +2566,171 @@ msgstr[1] "%d నిర్వచనములు లభించినది"
 msgid "%s - Dictionary"
 msgstr "%s -నిఘంటువు"
 
-#: ../mate-dictionary/src/gdict-window.c:1278 ../logview/logview-window.c:808
-msgid "_File"
-msgstr "దస్త్రం(_F)"
-
-#: ../mate-dictionary/src/gdict-window.c:1281
+#: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_Go"
 msgstr "వెళ్ళు(_G)"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1285
+#: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_New"
 msgstr "కొత్త(_N)"
 
-#: ../mate-dictionary/src/gdict-window.c:1286
+#: ../mate-dictionary/src/gdict-window.c:1292
 msgid "New look up"
 msgstr "కొత్తగా చూచుటకు"
 
-#: ../mate-dictionary/src/gdict-window.c:1287
+#: ../mate-dictionary/src/gdict-window.c:1293
 msgid "_Save a Copy..."
 msgstr "నకలు దాచుము(_S)..."
 
-#: ../mate-dictionary/src/gdict-window.c:1289
+#: ../mate-dictionary/src/gdict-window.c:1295
 msgid "P_review..."
 msgstr "ఉపదర్శనం(_r)..."
 
-#: ../mate-dictionary/src/gdict-window.c:1290
+#: ../mate-dictionary/src/gdict-window.c:1296
 msgid "Preview this document"
 msgstr "ఈ పత్రమును ఉపదర్శనం చేయుము"
 
-#: ../mate-dictionary/src/gdict-window.c:1291
+#: ../mate-dictionary/src/gdict-window.c:1297
 msgid "_Print..."
 msgstr "ముద్రించు(_P)..."
 
-#: ../mate-dictionary/src/gdict-window.c:1292
+#: ../mate-dictionary/src/gdict-window.c:1298
 msgid "Print this document"
 msgstr "ఈ పత్రమును ముద్రించు"
 
-#: ../mate-dictionary/src/gdict-window.c:1299 ../logview/logview-window.c:823
-msgid "Select _All"
-msgstr "అన్నింటిని ఎంచుకొను(_A)"
-
-#: ../mate-dictionary/src/gdict-window.c:1302
+#: ../mate-dictionary/src/gdict-window.c:1308
 msgid "Find a word or phrase in the document"
 msgstr "పత్రములో పదము లేదా పద సముదాయమును వెతుకుము"
 
-#: ../mate-dictionary/src/gdict-window.c:1304
+#: ../mate-dictionary/src/gdict-window.c:1310
 msgid "Find Ne_xt"
 msgstr "తర్వాతది వెతుకు(_x)"
 
-#: ../mate-dictionary/src/gdict-window.c:1306
+#: ../mate-dictionary/src/gdict-window.c:1312
 msgid "Find Pre_vious"
 msgstr "ముందుది వెతుకు(_v)"
 
-#: ../mate-dictionary/src/gdict-window.c:1308
+#: ../mate-dictionary/src/gdict-window.c:1314
 msgid "_Preferences"
 msgstr "అభీష్టాలు(_P)"
 
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1312
+#: ../mate-dictionary/src/gdict-window.c:1318
 msgid "_Previous Definition"
 msgstr "ముందు నిర్వచనం(_P)"
 
-#: ../mate-dictionary/src/gdict-window.c:1313
+#: ../mate-dictionary/src/gdict-window.c:1319
 msgid "Go to the previous definition"
 msgstr "ముందు నిర్వచనం నకు వెళ్ళుము"
 
-#: ../mate-dictionary/src/gdict-window.c:1314
+#: ../mate-dictionary/src/gdict-window.c:1320
 msgid "_Next Definition"
 msgstr "తర్వాతి నిర్వచనం(_N)"
 
-#: ../mate-dictionary/src/gdict-window.c:1315
+#: ../mate-dictionary/src/gdict-window.c:1321
 msgid "Go to the next definition"
 msgstr "తర్వాతి నిర్వచనం నకు వెళ్ళుము"
 
-#: ../mate-dictionary/src/gdict-window.c:1316
+#: ../mate-dictionary/src/gdict-window.c:1322
 msgid "_First Definition"
 msgstr "మొదటి నిర్వచనం(_F)"
 
-#: ../mate-dictionary/src/gdict-window.c:1317
+#: ../mate-dictionary/src/gdict-window.c:1323
 msgid "Go to the first definition"
 msgstr "మొదటి నిర్వచనంకు వెళ్ళు"
 
-#: ../mate-dictionary/src/gdict-window.c:1318
+#: ../mate-dictionary/src/gdict-window.c:1324
 msgid "_Last Definition"
 msgstr "చివరి నిర్వచనం(_L)"
 
-#: ../mate-dictionary/src/gdict-window.c:1319
+#: ../mate-dictionary/src/gdict-window.c:1325
 msgid "Go to the last definition"
 msgstr "చివరి నిర్వచనం కు వెళ్ళు"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1322
+#: ../mate-dictionary/src/gdict-window.c:1328
 msgid "Similar _Words"
 msgstr "పోలిక గల్గిన పదములు(_W)"
 
-#: ../mate-dictionary/src/gdict-window.c:1324
+#: ../mate-dictionary/src/gdict-window.c:1330
 msgid "Dictionary Sources"
 msgstr "నిఘంటువు వనరులు"
 
-#: ../mate-dictionary/src/gdict-window.c:1326
+#: ../mate-dictionary/src/gdict-window.c:1332
 msgid "Available _Databases"
 msgstr "లభించు దత్తాంశ స్థానములు(_D)"
 
-#: ../mate-dictionary/src/gdict-window.c:1328
+#: ../mate-dictionary/src/gdict-window.c:1334
 msgid "Available St_rategies"
 msgstr "లభించు ఎత్తుగడలు(_r)"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1345
+#: ../mate-dictionary/src/gdict-window.c:1351
 msgid "_Sidebar"
 msgstr "పక్క పట్టీ(_S)"
 
-#: ../mate-dictionary/src/gdict-window.c:1347
+#: ../mate-dictionary/src/gdict-window.c:1353
 msgid "S_tatusbar"
 msgstr "సుస్థితి పట్టీ(_t)"
 
-#: ../mate-dictionary/src/gdict-window.c:1412
+#: ../mate-dictionary/src/gdict-window.c:1418
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "నిఘంటువు వనరు `%s' ఎంపికచేయబడింది"
 
-#: ../mate-dictionary/src/gdict-window.c:1433
+#: ../mate-dictionary/src/gdict-window.c:1439
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "ఎత్తుగడ `%s' ఎంచుకొనబడినది"
 
-#: ../mate-dictionary/src/gdict-window.c:1453
+#: ../mate-dictionary/src/gdict-window.c:1459
 #, c-format
 msgid "Database `%s' selected"
 msgstr "దత్తాంశ స్థానము `%s' ఎంచుకొనబడినది"
 
-#: ../mate-dictionary/src/gdict-window.c:1473
+#: ../mate-dictionary/src/gdict-window.c:1479
 #, c-format
 msgid "Word `%s' selected"
 msgstr "పదము `%s' ఎంచుకొనబడినది"
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1498
+#: ../mate-dictionary/src/gdict-window.c:1504
 msgid "Double-click on the word to look up"
 msgstr "ఏ పదముకై వెతుకుతున్నావో దానిపై రెండుసార్లు నొక్కుము"
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1504
+#: ../mate-dictionary/src/gdict-window.c:1510
 msgid "Double-click on the matching strategy to use"
 msgstr "ఉపమించు ఎత్తుగడను వాడుటకు దానిపై రెండుసార్లు నొక్కుము"
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1509
+#: ../mate-dictionary/src/gdict-window.c:1515
 msgid "Double-click on the source to use"
 msgstr "ఉపయోగించుటకు వనరు పైన రెండుసార్లు నొక్కండి"
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1518
+#: ../mate-dictionary/src/gdict-window.c:1524
 msgid "Double-click on the database to use"
 msgstr "దత్తాంశ స్థానమును వాడుటకు దానిపై రెండుసార్లు నొక్కుము"
 
-#: ../mate-dictionary/src/gdict-window.c:1770
+#: ../mate-dictionary/src/gdict-window.c:1776
 msgid "Look _up:"
 msgstr "వెతుకు(_u):"
 
-#: ../mate-dictionary/src/gdict-window.c:1849
+#: ../mate-dictionary/src/gdict-window.c:1855
 msgid "Similar words"
 msgstr "పోలిక కల్గిన పదములు"
 
-#: ../mate-dictionary/src/gdict-window.c:1862
+#: ../mate-dictionary/src/gdict-window.c:1868
 msgid "Available dictionaries"
 msgstr "లభ్యత కల నిఘంటువులు"
 
-#: ../mate-dictionary/src/gdict-window.c:1880
+#: ../mate-dictionary/src/gdict-window.c:1886
 msgid "Available strategies"
 msgstr "లభ్యత కల ఎత్తుగడలు"
 
-#: ../mate-dictionary/src/gdict-window.c:1896
+#: ../mate-dictionary/src/gdict-window.c:1902
 msgid "Dictionary sources"
 msgstr "నిఘంటువు వనరులు"
 
@@ -1543,172 +2775,11 @@ msgstr "నిఘంటువులు"
 msgid "Strategies"
 msgstr "ప్యూహరచనలు"
 
-#: ../mate-screenshot/mate-screenshot.c:133
-msgid "Error loading the help page"
-msgstr "సహాయ పుటను నింపుటలో దోషము"
-
-#: ../mate-screenshot/mate-screenshot.c:245
-msgid "None"
-msgstr "ఏమి లేదు"
-
-#: ../mate-screenshot/mate-screenshot.c:246
-msgid "Drop shadow"
-msgstr "పడవేయు ఛాయ"
-
-#: ../mate-screenshot/mate-screenshot.c:247
-msgid "Border"
-msgstr "సరిహద్దు"
-
-#. * Include pointer *
-#: ../mate-screenshot/mate-screenshot.c:351
-msgid "Include _pointer"
-msgstr "సూచకిని చేర్చుము (_p)"
-
-#. * Include window border *
-#: ../mate-screenshot/mate-screenshot.c:360
-msgid "Include the window _border"
-msgstr "గవాక్ష సరిహాద్దును కలుపుము(_b)"
-
-#: ../mate-screenshot/mate-screenshot.c:375
-msgid "Apply _effect:"
-msgstr "పర్యవసానంను అనుసంధించు(_e):"
-
-#: ../mate-screenshot/mate-screenshot.c:437
-msgid "Grab the whole _desktop"
-msgstr "రంగస్థలం మొత్తాన్ని లాక్కొను(_d)"
-
-#: ../mate-screenshot/mate-screenshot.c:449
-msgid "Grab the current _window"
-msgstr "గవాక్షము మొత్తాన్ని లాక్కొను(_w)"
-
-#: ../mate-screenshot/mate-screenshot.c:461
-msgid "Select _area to grab"
-msgstr "లాగుటకు ప్రాంతమును యెంపికచేయుము (_a)"
-
-#. translators: this is the first part of the "grab after a
-#. * delay of <spin button> seconds".
-#: ../mate-screenshot/mate-screenshot.c:478
-msgid "Grab _after a delay of"
-msgstr "కొంత ఆలస్యము తర్వాత లాక్కొను(_a)"
-
-#. translators: this is the last part of the "grab after a
-#. * delay of <spin button> seconds".
-#: ../mate-screenshot/mate-screenshot.c:498
-#: ../mate-screenshot/mate-screenshot.c:1273
-msgid "seconds"
-msgstr "క్షణాలు"
-
-#: ../mate-screenshot/mate-screenshot.c:516
-#: ../mate-screenshot/mate-screenshot.c:524
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:1
-msgid "Take Screenshot"
-msgstr "తెర ఛాయాచిత్రం తీసుకొను"
-
-#: ../mate-screenshot/mate-screenshot.c:525
-msgid "Effects"
-msgstr "పర్యవసానాలు"
-
-#: ../mate-screenshot/mate-screenshot.c:530
-msgid "Take _Screenshot"
-msgstr "తెర ఛాయాచిత్రం తీసుకొను(_S)"
-
-#: ../mate-screenshot/mate-screenshot.c:650
-msgid "Error while saving screenshot"
-msgstr "స్క్రీన్‌షాట్‌ను దాయుచున్నప్పుడు దోషము"
-
-#: ../mate-screenshot/mate-screenshot.c:653
-#, c-format
-msgid ""
-"Impossible to save the screenshot to %s.\n"
-" Error was %s.\n"
-" Please choose another location and retry."
-msgstr "స్క్రీన్‌షాట్‌ను %sకు దాయుట అసాధ్యము.\n దోషము %s.\n దయచేసి వేరొక స్థానమును యెంచుకొని తిరిగిప్రయత్నించండి."
-
-#: ../mate-screenshot/mate-screenshot.c:785
-msgid "Screenshot taken"
-msgstr "తెరపట్టు(స్క్రీన్‌షాట్) తీసుకొనబడింది"
-
-#: ../mate-screenshot/mate-screenshot.c:840
-msgid "Unable to take a screenshot of the current window"
-msgstr "ప్రస్తుత గవాక్షం యొక్క తెర ఛాయాచిత్రంను తీసుకొనలేకపొతున్నాము"
-
-#: ../mate-screenshot/mate-screenshot.c:893
-#, c-format
-msgid "Screenshot-%s.png"
-msgstr "తెర ఛాయాచిత్రం -%s.png"
-
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if a specific window is
-#. * taken
-#: ../mate-screenshot/mate-screenshot.c:900
-#, c-format
-msgid "Screenshot-%s-%d.png"
-msgstr "తెర ఛాయాచిత్రం-%s-%d.png"
-
-#. translators: this is the name of the file that gets made up
-#. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/mate-screenshot.c:910
-#: ../mate-screenshot/screenshot-dialog.c:369
-#: ../mate-screenshot/screenshot-save.c:196
-msgid "Screenshot.png"
-msgstr "తెర ఛాయాచిత్రం.png"
-
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if the entire screen is
-#. * taken
-#: ../mate-screenshot/mate-screenshot.c:917
-#, c-format
-msgid "Screenshot-%d.png"
-msgstr "తెర ఛాయాచిత్రం-%d.png"
-
-#: ../mate-screenshot/mate-screenshot.c:1269
-msgid "Grab a window instead of the entire screen"
-msgstr "యావత్తు తెరకు బదులు గవాక్షంను లాక్కొను"
-
-#: ../mate-screenshot/mate-screenshot.c:1270
-msgid "Grab an area of the screen instead of the entire screen"
-msgstr "మొత్తము తెరకు బదులుగా తెరనందలి వొక ప్రాంతమును లాగుము"
-
-#: ../mate-screenshot/mate-screenshot.c:1271
-msgid "Include the window border with the screenshot"
-msgstr "తెర ఛాయాచిత్రంతో గవాక్ష సరిహద్దు కలుపుము"
-
-#: ../mate-screenshot/mate-screenshot.c:1272
-msgid "Remove the window border from the screenshot"
-msgstr "తెరపట్టునుండి విండో హద్దును తొలగించుము"
-
-#: ../mate-screenshot/mate-screenshot.c:1273
-msgid "Take screenshot after specified delay [in seconds]"
-msgstr "నిర్థేశితమైన ఆలస్యము తరువాత తెర ఛాయాచిత్రం తీసుకొను [క్షణాలలో]"
-
-#: ../mate-screenshot/mate-screenshot.c:1274
-msgid "Effect to add to the border (shadow, border or none)"
-msgstr "సరిహద్దుకు చేర్చుటకు పర్యవసానము (ఛాయ, సరిహద్దు లేదా ఏమీలేదు)"
-
-#: ../mate-screenshot/mate-screenshot.c:1274
-msgid "effect"
-msgstr "పర్యవసానము"
-
-#: ../mate-screenshot/mate-screenshot.c:1275
-msgid "Interactively set options"
-msgstr "అనుకూలరీతిలో అమర్చిన ఇచ్ఛాపూర్వకాలు"
-
-#: ../mate-screenshot/mate-screenshot.c:1284
-msgid "Take a picture of the screen"
-msgstr "తెర యొక్క ప్రతిరూపాన్ని తీసుకొను"
-
-#: ../mate-screenshot/mate-screenshot.c:1302
-#, c-format
-msgid ""
-"Conflicting options: --window and --area should not be used at the same "
-"time.\n"
-msgstr "విభేదించుచున్న ఐచ్చికములు: --window మరియు --area వొకేసారి వుపయోగించకూడదు.\n"
-
-#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:1
+#: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:1
 msgid "A screenshot utility for MATE Desktop"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:2
+#: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:2
 msgid ""
 "<p> MATE Screenshot is a simple utility that lets you capture screenshots of"
 " your desktop or of application windows. You can select to copy them to the "
@@ -1716,74 +2787,223 @@ msgid ""
 "format. </p>"
 msgstr ""
 
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:2
+#: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
+#: ../mate-screenshot/src/mate-screenshot.c:516
+#: ../mate-screenshot/src/mate-screenshot.c:524
+msgid "Take Screenshot"
+msgstr "తెర ఛాయాచిత్రం తీసుకొను"
+
+#: ../mate-screenshot/data/mate-screenshot.desktop.in.h:2
 msgid "Save images of your desktop or individual windows"
 msgstr "మీ యొక్క రంగస్థలం లేదా వ్యక్తిగత గవాక్షాల ప్రతిరూపాలను దాచుము"
 
-#: ../mate-screenshot/mate-screenshot.ui.h:1
+#: ../mate-screenshot/data/mate-screenshot.ui.h:1
 msgid "Save Screenshot"
 msgstr "తెర ఛాయచిత్రం దాచుము"
 
-#: ../mate-screenshot/mate-screenshot.ui.h:2
+#: ../mate-screenshot/data/mate-screenshot.ui.h:2
 msgid "C_opy to Clipboard"
 msgstr "క్లిప్‌బోర్డునకు నకలుతీయుము (_o)"
 
-#: ../mate-screenshot/mate-screenshot.ui.h:3
-#: ../logview/data/logview-filter.ui.h:1
-msgid "_Name:"
-msgstr "నామము(_N):"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:4
+#: ../mate-screenshot/data/mate-screenshot.ui.h:4
 msgid "Save in _folder:"
 msgstr "సంచయంలో దాచుము(_f):"
 
-#: ../mate-screenshot/mate-screenshot.ui.h:5
+#: ../mate-screenshot/data/mate-screenshot.ui.h:5
 msgid "*"
 msgstr "*"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:1
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:1
 msgid "Screenshot delay"
 msgstr "తెరపట్టు(స్క్రీన్‌షాట్) ఆలస్యము"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:2
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:2
 msgid "The number of seconds to wait before taking the screenshot."
 msgstr "తెరపట్టు(స్క్రీన్‌షాట్) తీసుకొనుటకు ముందుగా వేచివుండవలసిన సమయం సెకనులలో."
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:3
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:3
 msgid "Screenshot directory"
 msgstr "తెర ఛాయచిత్రం వివరము"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:4
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:4
 msgid "The directory the last screenshot was saved in."
 msgstr "చివరి తెర ఛాయచిత్రంలో దాచబడిఉన్న వివరము."
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:5
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:5
 msgid "Include Border"
 msgstr "సరిహద్దు కలుపుము"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:6
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:6
 msgid "Include the window manager border along with the screenshot"
 msgstr "తెర ఛాయచిత్రంతో గవాక్ష అభికర్త సరిహద్దును కూడా కలుపుము"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:7
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:7
 msgid "Include Pointer"
 msgstr "సూచకిని చేర్చుము"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:8
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:8
 msgid "Include the pointer in the screenshot"
 msgstr "తెరపట్టునందు సూచకిని చేర్చుము"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:9
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:9
 msgid "Border Effect"
 msgstr "సరిహద్దు పర్యవసానము"
 
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:10
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:10
 msgid ""
 "Effect to add to the outside of a border. Possible values are \"shadow\", "
 "\"none\", and \"border\"."
 msgstr "బయటఉన్న సరిహద్దుకు కలుపవలిసిన పర్యావసానం.సాధ్యమగు విలువలు \"గవాక్షం\", \"ఏదీకాదు\", మరియు \"సరిహద్దు\"."
 
-#: ../mate-screenshot/screenshot-dialog.c:246
+#: ../mate-screenshot/src/mate-screenshot.c:133
+msgid "Error loading the help page"
+msgstr "సహాయ పుటను నింపుటలో దోషము"
+
+#: ../mate-screenshot/src/mate-screenshot.c:245
+msgid "None"
+msgstr "ఏమి లేదు"
+
+#: ../mate-screenshot/src/mate-screenshot.c:246
+msgid "Drop shadow"
+msgstr "పడవేయు ఛాయ"
+
+#: ../mate-screenshot/src/mate-screenshot.c:247
+msgid "Border"
+msgstr "సరిహద్దు"
+
+#. * Include pointer *
+#: ../mate-screenshot/src/mate-screenshot.c:351
+msgid "Include _pointer"
+msgstr "సూచకిని చేర్చుము (_p)"
+
+#. * Include window border *
+#: ../mate-screenshot/src/mate-screenshot.c:360
+msgid "Include the window _border"
+msgstr "గవాక్ష సరిహాద్దును కలుపుము(_b)"
+
+#: ../mate-screenshot/src/mate-screenshot.c:375
+msgid "Apply _effect:"
+msgstr "పర్యవసానంను అనుసంధించు(_e):"
+
+#: ../mate-screenshot/src/mate-screenshot.c:437
+msgid "Grab the whole _desktop"
+msgstr "రంగస్థలం మొత్తాన్ని లాక్కొను(_d)"
+
+#: ../mate-screenshot/src/mate-screenshot.c:449
+msgid "Grab the current _window"
+msgstr "గవాక్షము మొత్తాన్ని లాక్కొను(_w)"
+
+#: ../mate-screenshot/src/mate-screenshot.c:461
+msgid "Select _area to grab"
+msgstr "లాగుటకు ప్రాంతమును యెంపికచేయుము (_a)"
+
+#. translators: this is the first part of the "grab after a
+#. * delay of <spin button> seconds".
+#: ../mate-screenshot/src/mate-screenshot.c:478
+msgid "Grab _after a delay of"
+msgstr "కొంత ఆలస్యము తర్వాత లాక్కొను(_a)"
+
+#. translators: this is the last part of the "grab after a
+#. * delay of <spin button> seconds".
+#: ../mate-screenshot/src/mate-screenshot.c:498
+#: ../mate-screenshot/src/mate-screenshot.c:1263
+msgid "seconds"
+msgstr "క్షణాలు"
+
+#: ../mate-screenshot/src/mate-screenshot.c:525
+msgid "Effects"
+msgstr "పర్యవసానాలు"
+
+#: ../mate-screenshot/src/mate-screenshot.c:530
+msgid "Take _Screenshot"
+msgstr "తెర ఛాయాచిత్రం తీసుకొను(_S)"
+
+#: ../mate-screenshot/src/mate-screenshot.c:650
+msgid "Error while saving screenshot"
+msgstr "స్క్రీన్‌షాట్‌ను దాయుచున్నప్పుడు దోషము"
+
+#: ../mate-screenshot/src/mate-screenshot.c:653
+#, c-format
+msgid ""
+"Impossible to save the screenshot to %s.\n"
+" Error was %s.\n"
+" Please choose another location and retry."
+msgstr "స్క్రీన్‌షాట్‌ను %sకు దాయుట అసాధ్యము.\n దోషము %s.\n దయచేసి వేరొక స్థానమును యెంచుకొని తిరిగిప్రయత్నించండి."
+
+#: ../mate-screenshot/src/mate-screenshot.c:785
+msgid "Screenshot taken"
+msgstr "తెరపట్టు(స్క్రీన్‌షాట్) తీసుకొనబడింది"
+
+#: ../mate-screenshot/src/mate-screenshot.c:840
+msgid "Unable to take a screenshot of the current window"
+msgstr "ప్రస్తుత గవాక్షం యొక్క తెర ఛాయాచిత్రంను తీసుకొనలేకపొతున్నాము"
+
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format (eg, like
+#. * in France: 20:10).
+#: ../mate-screenshot/src/mate-screenshot.c:893
+msgid "%Y-%m-%d %H:%M:%S"
+msgstr ""
+
+#. translators: this is the name of the file that gets made up
+#. * with the screenshot if the entire screen is taken
+#: ../mate-screenshot/src/mate-screenshot.c:900
+#, c-format
+msgid "Screenshot at %s.png"
+msgstr ""
+
+#. translators: this is the name of the file that gets
+#. * made up with the screenshot if the entire screen is
+#. * taken
+#: ../mate-screenshot/src/mate-screenshot.c:907
+#, c-format
+msgid "Screenshot at %s - %d.png"
+msgstr ""
+
+#: ../mate-screenshot/src/mate-screenshot.c:1259
+msgid "Grab a window instead of the entire screen"
+msgstr "యావత్తు తెరకు బదులు గవాక్షంను లాక్కొను"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1260
+msgid "Grab an area of the screen instead of the entire screen"
+msgstr "మొత్తము తెరకు బదులుగా తెరనందలి వొక ప్రాంతమును లాగుము"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1261
+msgid "Include the window border with the screenshot"
+msgstr "తెర ఛాయాచిత్రంతో గవాక్ష సరిహద్దు కలుపుము"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1262
+msgid "Remove the window border from the screenshot"
+msgstr "తెరపట్టునుండి విండో హద్దును తొలగించుము"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1263
+msgid "Take screenshot after specified delay [in seconds]"
+msgstr "నిర్థేశితమైన ఆలస్యము తరువాత తెర ఛాయాచిత్రం తీసుకొను [క్షణాలలో]"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1264
+msgid "Effect to add to the border (shadow, border or none)"
+msgstr "సరిహద్దుకు చేర్చుటకు పర్యవసానము (ఛాయ, సరిహద్దు లేదా ఏమీలేదు)"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1264
+msgid "effect"
+msgstr "పర్యవసానము"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1265
+msgid "Interactively set options"
+msgstr "అనుకూలరీతిలో అమర్చిన ఇచ్ఛాపూర్వకాలు"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1274
+msgid "Take a picture of the screen"
+msgstr "తెర యొక్క ప్రతిరూపాన్ని తీసుకొను"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1292
+#, c-format
+msgid ""
+"Conflicting options: --window and --area should not be used at the same "
+"time.\n"
+msgstr "విభేదించుచున్న ఐచ్చికములు: --window మరియు --area వొకేసారి వుపయోగించకూడదు.\n"
+
+#: ../mate-screenshot/src/screenshot-dialog.c:246
 #, c-format
 msgid ""
 "Error loading UI definition file for the screenshot program: \n"
@@ -1792,1264 +3012,50 @@ msgid ""
 "Please check your installation of mate-utils."
 msgstr ""
 
-#: ../mate-screenshot/screenshot-dialog.c:269
+#: ../mate-screenshot/src/screenshot-dialog.c:269
 msgid "Select a folder"
 msgstr "సంచయమును ఎంచుకొను"
 
-#: ../mate-screenshot/screenshot-save.c:57
+#: ../mate-screenshot/src/screenshot-dialog.c:369
+#: ../mate-screenshot/src/screenshot-save.c:196
+msgid "Screenshot.png"
+msgstr "తెర ఛాయాచిత్రం.png"
+
+#: ../mate-screenshot/src/screenshot-save.c:57
 #, c-format
 msgid ""
 "Unable to clear the temporary folder:\n"
 "%s"
 msgstr "తాత్కాలిక సంచయములను శుభ్రపరచుటకు వీలుకాదు:\n%s"
 
-#: ../mate-screenshot/screenshot-save.c:95
+#: ../mate-screenshot/src/screenshot-save.c:95
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
 msgstr "శిశువును భద్రపరచు క్రమణం అనుకోకుండా ప్రభావితం అయినది. మేము ఛాయాచిత్రంను డిస్కునకు వ్రాయలేము."
 
-#: ../mate-screenshot/screenshot-save.c:223
+#: ../mate-screenshot/src/screenshot-save.c:223
 msgid "Unknown error saving screenshot to disk"
 msgstr "తెర ఛాయచిత్రం ను ఖనికి దాచుటలో తెలియని దోషము"
 
 #. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-#: ../mate-screenshot/screenshot-utils.c:998
+#: ../mate-screenshot/src/screenshot-utils.c:998
 msgid "Untitled Window"
 msgstr "శీర్షికలేని గవాక్షము"
 
-#: ../mate-screenshot/screenshot-xfer.c:72
+#: ../mate-screenshot/src/screenshot-xfer.c:72
 msgid "File already exists"
 msgstr "దస్త్రం ఇదివరకే కలిగివుంది"
 
-#: ../mate-screenshot/screenshot-xfer.c:75
+#: ../mate-screenshot/src/screenshot-xfer.c:75
 #, c-format
 msgid "The file \"%s\" already exists. Would you like to replace it?"
 msgstr "దస్త్రం \"%s\" ఇదివరకే కలిగివుంది. నీవు దాన్నిపునఃస్థాపించుటకు ఇష్టపడుతున్నావా?"
 
-#: ../mate-screenshot/screenshot-xfer.c:82
-#: ../gsearchtool/gsearchtool-callbacks.c:1726
-msgid "_Replace"
-msgstr "పునఃస్థాపించు(_R)"
-
-#: ../mate-screenshot/screenshot-xfer.c:120
+#: ../mate-screenshot/src/screenshot-xfer.c:120
 msgid "Saving file..."
 msgstr "దస్త్రాన్ని దాయుచున్నది..."
 
-#: ../mate-screenshot/screenshot-xfer.c:290
+#: ../mate-screenshot/src/screenshot-xfer.c:290
 msgid "Can't access source file"
 msgstr "మూలపు దస్త్రాన్ని యాక్సిస్ చేయలేదు"
-
-#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
-msgid "A file searching tool for MATE Desktop"
-msgstr ""
-
-#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
-msgid ""
-"<p> MATE Search Tool is a simple but powerful utility that allows you to "
-"search for files and folders on any mounted file system. Its interface gives"
-" you instant access to a wide variety of parameters for each search, such as"
-" text contained within a file, ownership, date of modification, file size, "
-"folder exclusion, etc.. </p>"
-msgstr ""
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:1
-msgid "MATE Search Tool"
-msgstr ""
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:2
-msgid "Locate documents and folders on this computer by name or content"
-msgstr "నామము లేదా సారముల ద్వారా పత్రములను మరియు సంచయాలను ఈ కంప్యూటర్ లో గుర్తించండి"
-
-#: ../gsearchtool/gsearchtool.c:82
-msgid "Contains the _text"
-msgstr "పాఠమును కలిగివున్నది(_t)"
-
-#: ../gsearchtool/gsearchtool.c:84
-msgid "_Date modified less than"
-msgstr "తేది కంటే తక్కువ మార్చబడినది(_D)"
-
-#: ../gsearchtool/gsearchtool.c:84 ../gsearchtool/gsearchtool.c:85
-msgid "days"
-msgstr "రోజులు"
-
-#: ../gsearchtool/gsearchtool.c:85
-msgid "Date modified more than"
-msgstr "తేది కంటే ఎక్కువ మార్చబడినది"
-
-#: ../gsearchtool/gsearchtool.c:87
-msgid "S_ize at least"
-msgstr "తక్కువ పరిమాణం వద్ద(_i)"
-
-#: ../gsearchtool/gsearchtool.c:87 ../gsearchtool/gsearchtool.c:88
-msgid "kilobytes"
-msgstr "కిలోబైట్స్"
-
-#: ../gsearchtool/gsearchtool.c:88
-msgid "Si_ze at most"
-msgstr "చాలా పరిమాణం వద్ద(_z)"
-
-#: ../gsearchtool/gsearchtool.c:89
-msgid "File is empty"
-msgstr "దస్త్రం ఖాళీగావుంది"
-
-#: ../gsearchtool/gsearchtool.c:91
-msgid "Owned by _user"
-msgstr "వినియోగదారు ద్వారా స్వకీయమైన(_u)"
-
-#: ../gsearchtool/gsearchtool.c:92
-msgid "Owned by _group"
-msgstr "సముదాయం ద్వారా స్వకీయమైన(_g)"
-
-#: ../gsearchtool/gsearchtool.c:93
-msgid "Owner is unrecognized"
-msgstr "యజమాని గుర్తింపులేనివాడు"
-
-#: ../gsearchtool/gsearchtool.c:95
-msgid "Na_me does not contain"
-msgstr "నామము కలిగి లేదు(_m)"
-
-#: ../gsearchtool/gsearchtool.c:96
-msgid "Name matches regular e_xpression"
-msgstr "సాధారణ వ్యక్తీకరణ నామము ఉపమించదు(_x)"
-
-#: ../gsearchtool/gsearchtool.c:98
-msgid "Show hidden and backup files"
-msgstr "దాచబడిన మరియు భద్రపరచు దస్త్రములు చూపుము"
-
-#: ../gsearchtool/gsearchtool.c:99
-msgid "Follow symbolic links"
-msgstr "చిహ్న పూరితజోడిలను అనుసరించు"
-
-#: ../gsearchtool/gsearchtool.c:100
-msgid "Exclude other filesystems"
-msgstr "ఇతర దస్త్రవ్యవస్థలను తీసివేయి"
-
-#: ../gsearchtool/gsearchtool.c:158
-msgid "Show version of the application"
-msgstr ""
-
-#: ../gsearchtool/gsearchtool.c:159 ../gsearchtool/gsearchtool.c:164
-#: ../gsearchtool/gsearchtool.c:173
-msgid "STRING"
-msgstr "స్ట్రింగ్"
-
-#: ../gsearchtool/gsearchtool.c:160
-msgid "PATH"
-msgstr "త్రోవ"
-
-#: ../gsearchtool/gsearchtool.c:161
-msgid "VALUE"
-msgstr "విలువ"
-
-#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
-msgid "DAYS"
-msgstr "రోజులు"
-
-#: ../gsearchtool/gsearchtool.c:167 ../gsearchtool/gsearchtool.c:168
-msgid "KILOBYTES"
-msgstr "కిలోబైట్సు"
-
-#: ../gsearchtool/gsearchtool.c:170
-msgid "USER"
-msgstr "వినియోగదారి"
-
-#: ../gsearchtool/gsearchtool.c:171
-msgid "GROUP"
-msgstr "సమూహం"
-
-#: ../gsearchtool/gsearchtool.c:174
-msgid "PATTERN"
-msgstr "క్రమము"
-
-#: ../gsearchtool/gsearchtool.c:385
-msgid "A locate database has probably not been created."
-msgstr "గుర్తించు దత్తాంశస్థానము బహుశా సృష్టించబడిఉండక పోవచ్చు"
-
-#: ../gsearchtool/gsearchtool.c:487
-#, c-format
-msgid "Character set conversion failed for \"%s\""
-msgstr "\"%s\" కొరకు అక్షర పరివర్తనం అమర్చు"
-
-#: ../gsearchtool/gsearchtool.c:511
-msgid "Searching..."
-msgstr "వెతుకుచున్నది..."
-
-#: ../gsearchtool/gsearchtool.c:511 ../gsearchtool/gsearchtool.c:1031
-#: ../gsearchtool/gsearchtool.c:3030
-msgid "Search for Files"
-msgstr "దస్త్రముల కొరకు వెతుకు"
-
-#: ../gsearchtool/gsearchtool.c:977 ../gsearchtool/gsearchtool.c:1006
-msgid "No files found"
-msgstr "ఎటువంటి దస్త్రములు దొరకలేదు"
-
-#: ../gsearchtool/gsearchtool.c:999
-msgid "(stopped)"
-msgstr "(ఆపబడినది)"
-
-#: ../gsearchtool/gsearchtool.c:1005
-msgid "No Files Found"
-msgstr "ఎటువంటి దస్త్రములు దొరకలేదు"
-
-#: ../gsearchtool/gsearchtool.c:1010
-#, c-format
-msgid "%'d File Found"
-msgid_plural "%'d Files Found"
-msgstr[0] "%'d దస్త్రం కనుగొనబడింది"
-msgstr[1] "%d దస్త్రాలు కనుగొనబడినవి"
-
-#: ../gsearchtool/gsearchtool.c:1014 ../gsearchtool/gsearchtool.c:1052
-#, c-format
-msgid "%'d file found"
-msgid_plural "%'d files found"
-msgstr[0] "%'d దస్త్రం కనుగొనబడింది"
-msgstr[1] "%'d దస్త్రాలు కనుగొనబడినవి"
-
-#: ../gsearchtool/gsearchtool.c:1143
-msgid "Entry changed called for a non entry option!"
-msgstr "ప్రవేశ పెట్టని ఇఛ్ఛాపూర్వకం కొరకు ప్రవేశము మార్చి పిలవబడినది!"
-
-#: ../gsearchtool/gsearchtool.c:1308
-msgid "Set the text of \"Name contains\" search option"
-msgstr "పాఠం అమర్చుట యొక్క \"నామము కలిగివున్నది\" ఇఛ్ఛాపూర్వకం వెతుకు"
-
-#: ../gsearchtool/gsearchtool.c:1309
-msgid "Set the text of \"Look in folder\" search option"
-msgstr "పాఠం అమర్చుట యొక్క \"సంచయములో చూడుము\"ఇఛ్ఛాపూర్వకం  వెతుకు"
-
-#: ../gsearchtool/gsearchtool.c:1310
-msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "క్రింది ఇవ్వబడిన ఒక దాని ద్వారా దస్త్రములు చక్కదిద్దు: నామము, సంచయము, పరిమాణం, రకము, లేదా తేది"
-
-#: ../gsearchtool/gsearchtool.c:1311
-msgid "Set sort order to descending, the default is ascending"
-msgstr "చక్కదిద్దు క్రమంను అవరోహణ క్రమములో అమర్చు, అప్రమేయము ఆరోహణ"
-
-#: ../gsearchtool/gsearchtool.c:1312
-msgid "Automatically start a search"
-msgstr "వెతుకుటను స్వయంచాలకంగా మొదలుపెట్టు"
-
-#: ../gsearchtool/gsearchtool.c:1318
-#, c-format
-msgid "Select the \"%s\" search option"
-msgstr "\"%s\" వెతుకు ఇఛ్ఛాపూర్వకం ఎంచుకొను"
-
-#: ../gsearchtool/gsearchtool.c:1321
-#, c-format
-msgid "Select and set the \"%s\" search option"
-msgstr "\"%s\" వెతుకు ఇఛ్ఛాపూర్వకం ఎంచుకొనుము మరియు అమర్చుము"
-
-#: ../gsearchtool/gsearchtool.c:1428
-msgid "Invalid option passed to sortby command line argument."
-msgstr "చక్కదిద్దు ఆదేశ వాక్య క్రమానుగత సంకేతం కు నిస్సారమైన ఇఛ్ఛాపూర్వకం పంపబడినది."
-
-#: ../gsearchtool/gsearchtool.c:1720
-msgid ""
-"\n"
-"... Too many errors to display ..."
-msgstr "\n... ప్రదర్శించుటకు చాలా దోషములు ..."
-
-#: ../gsearchtool/gsearchtool.c:1734
-msgid ""
-"The search results may be invalid.  There were errors while performing this "
-"search."
-msgstr "వెతికిన ఫలితం నిస్సారమై ఉండవచ్చు.  చేస్తున్నపుడు అక్కడ దోషములు ఏర్పడినవి వెతుకు."
-
-#: ../gsearchtool/gsearchtool.c:1746 ../gsearchtool/gsearchtool.c:1790
-msgid "Show more _details"
-msgstr "చాలా వివరింపులు చూపుము(_d)"
-
-#: ../gsearchtool/gsearchtool.c:1776
-msgid ""
-"The search results may be out of date or invalid.  Do you want to disable "
-"the quick search feature?"
-msgstr "శోధించ ఫలితాలు తారీఖు మించిపోయినవి లేదా విలువైనవికావు.  మీరు త్వరిత శోధన ప్రయోజనాన్ని అచేతనం చేయాలనుకుంటున్నారా?"
-
-#: ../gsearchtool/gsearchtool.c:1801
-msgid "Disable _Quick Search"
-msgstr "తొందరగా వెతుకుట నిరుపయోగము(_Q)"
-
-#: ../gsearchtool/gsearchtool.c:1828
-#, c-format
-msgid "Failed to set process group id of child %d: %s.\n"
-msgstr "%d కు పురోగమన సముదాయ id యొక్క శిశువు అమర్చునపుడు విఫలమైంది: %s.\n"
-
-#: ../gsearchtool/gsearchtool.c:1853
-msgid "Error parsing the search command."
-msgstr "వెతుకు ఆదేశంకు పార్సింగ్ దోషము. "
-
-#: ../gsearchtool/gsearchtool.c:1885
-msgid "Error running the search command."
-msgstr "వెతుకు ఆదేశం నడుపుతున్నపుడు దోషము."
-
-#: ../gsearchtool/gsearchtool.c:2008
-#, c-format
-msgid "Enter a text value for the \"%s\" search option."
-msgstr "\"%s\" వెతుకు ఇఛ్ఛాపూర్వకం కొరకు పాఠం విలువను చేర్చుము."
-
-#. Translators:  Below is a string displaying the search options name
-#. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:2013
-#, c-format
-msgid "\"%s\" in %s"
-msgstr "\"%s\" లో %s"
-
-#: ../gsearchtool/gsearchtool.c:2015
-#, c-format
-msgid "Enter a value in %s for the \"%s\" search option."
-msgstr "\"%s\" వెతుకు ఇఛ్ఛాపూర్వకం కొరకు %s లో విలువను చేర్చుము."
-
-#: ../gsearchtool/gsearchtool.c:2073
-#, c-format
-msgid "Remove \"%s\""
-msgstr "\"%s\" తొలగించు"
-
-#: ../gsearchtool/gsearchtool.c:2074
-#, c-format
-msgid "Click to remove the \"%s\" search option."
-msgstr "\"%s\" వెతుకు ఇఛ్ఛాపూర్వకం తొలగించుటకు నొక్కుము."
-
-#: ../gsearchtool/gsearchtool.c:2167
-msgid "A_vailable options:"
-msgstr "లభ్యత కల్గిన ఇఛ్ఛాపూర్వకాలు(_v):"
-
-#: ../gsearchtool/gsearchtool.c:2196
-msgid "Available options"
-msgstr "లభ్యత కల్గిన ఇఛ్ఛాపూర్వకాలు"
-
-#: ../gsearchtool/gsearchtool.c:2197
-msgid "Select a search option from the drop-down list."
-msgstr "కిందికి లాగు జాబితా నుండి వెతుకు ఇఛ్ఛాపూర్వకంను ఎంచుకొను"
-
-#: ../gsearchtool/gsearchtool.c:2209
-msgid "Add search option"
-msgstr "వెతుకు ఇఛ్ఛాపూర్వకం చేర్చుము"
-
-#: ../gsearchtool/gsearchtool.c:2210
-msgid "Click to add the selected available search option."
-msgstr "ఎంచుకొనబడిన లభ్యత కల్గిన వెతుకు ఇఛ్ఛాపూర్వకంను చేర్చుటకు నొక్కుము. "
-
-#: ../gsearchtool/gsearchtool.c:2299
-msgid "S_earch results:"
-msgstr "వెతికిన ఫలితాలు(_e):"
-
-#: ../gsearchtool/gsearchtool.c:2343
-msgid "List View"
-msgstr "జాబితా దర్శనం"
-
-#: ../gsearchtool/gsearchtool.c:2452
-msgid "Type"
-msgstr "విధం, రకము"
-
-#: ../gsearchtool/gsearchtool.c:2464
-msgid "Date Modified"
-msgstr "తేది మార్చబడినది"
-
-#: ../gsearchtool/gsearchtool.c:2799
-msgid "_Name contains:"
-msgstr "నామము కలిగివున్నది(_N):"
-
-#: ../gsearchtool/gsearchtool.c:2813 ../gsearchtool/gsearchtool.c:2814
-msgid "Enter a filename or partial filename with or without wildcards."
-msgstr "wildcards తోగాని లేకుండాగాని దస్త్రనామాన్ని లేదా పాక్షిక దస్త్రనామాన్ని ప్రవేశపెట్టండి."
-
-#: ../gsearchtool/gsearchtool.c:2814
-msgid "Name contains"
-msgstr "నామము కలిగివున్నది"
-
-#: ../gsearchtool/gsearchtool.c:2820
-msgid "_Look in folder:"
-msgstr "సంచయములో చూడుము(_L):"
-
-#: ../gsearchtool/gsearchtool.c:2826
-msgid "Browse"
-msgstr "అన్వేషించు"
-
-#: ../gsearchtool/gsearchtool.c:2835
-msgid "Look in folder"
-msgstr "సంచయం లో చూడుము"
-
-#: ../gsearchtool/gsearchtool.c:2835
-msgid "Select the folder or device from which you want to begin the search."
-msgstr "దేనినుండైతే మీరు శోధన ప్రారంభించాలని అనుకుంటున్నారో ఆ దస్త్రాన్ని కాని లేదా పరికరాన్ని కాని ఎంపకచేసుకొనండి."
-
-#: ../gsearchtool/gsearchtool.c:2853
-msgid "Select more _options"
-msgstr "చాలా ఇఛ్ఛాపూర్వకాలు ఎంచుకొను(_o)"
-
-#: ../gsearchtool/gsearchtool.c:2862
-msgid "Select more options"
-msgstr "చాలా ఇఛ్ఛాపూర్వకాలు"
-
-#: ../gsearchtool/gsearchtool.c:2862
-msgid "Click to expand or collapse the list of available options."
-msgstr "లభ్యత కల్గిన ఇఛ్ఛాపూర్వకముల యొక్క జాబితాను పొడగించుటకు లేదా  నాశనము చేయుటకు నొక్కుము."
-
-#: ../gsearchtool/gsearchtool.c:2886
-msgid "Click to display the help manual."
-msgstr "సహాయ నిర్థేశికత ప్రదర్శించుటకు నొక్కుము"
-
-#: ../gsearchtool/gsearchtool.c:2894
-msgid "Click to close \"Search for Files\"."
-msgstr "మూయుటకు నొక్కుము \"దస్త్రముల కొరకు వెతుకు\"."
-
-#: ../gsearchtool/gsearchtool.c:2920
-msgid "Click to perform a search."
-msgstr "వెతుకుటను నెరవేర్చుటకు నొక్కుము"
-
-#: ../gsearchtool/gsearchtool.c:2921
-msgid "Click to stop a search."
-msgstr "వెతుకుటను ఆపివేయుటకు నొక్కుము"
-
-#: ../gsearchtool/gsearchtool.c:3015
-msgid "- the MATE Search Tool"
-msgstr "- MATE శోధన సాధనం"
-
-#: ../gsearchtool/gsearchtool.c:3024
-#, c-format
-msgid "Failed to parse command line arguments: %s\n"
-msgstr ""
-
-#: ../gsearchtool/gsearchtool-callbacks.c:198
-msgid "Could not open help document."
-msgstr "సహాయ పత్రమును తెరుచుటకు వీలుకాదు"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:349
-#, c-format
-msgid "Are you sure you want to open %d document?"
-msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] "మీరు %d పత్రమును తెరుచుటకు నిశ్చయమై ఉన్నారా?"
-msgstr[1] "మీరు %d పత్రములను తెరుచుటకు నిశ్చయమై ఉన్నారా?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:354
-#: ../gsearchtool/gsearchtool-callbacks.c:551
-#, c-format
-msgid "This will open %d separate window."
-msgid_plural "This will open %d separate windows."
-msgstr[0] "ఇది %d ప్రత్యక గవాక్షమును తెరుస్తుంది."
-msgstr[1] "ఇది %d ప్రత్యక గవాక్షంలను తెరుస్తుంది."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:394
-#, c-format
-msgid "Could not open document \"%s\"."
-msgstr "\"%s\" పత్రమును తెరుచుటకు వీలుకాదు."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:423
-#, c-format
-msgid "Could not open folder \"%s\"."
-msgstr "\"%s\" సంచయమును తెరుచుటకు వీలుకాదు."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:431
-msgid "The caja file manager is not running."
-msgstr "నాటిలస్ దస్త్ర అభికర్త నడుచుటలేదు."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:523
-msgid "There is no installed viewer capable of displaying the document."
-msgstr "సామర్థ్యముగల పత్రమును ప్రదర్శించుటకు నెలకొల్పబడిన దర్శిని లేదు."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:546
-#, c-format
-msgid "Are you sure you want to open %d folder?"
-msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] "మీరు %d సంచయమును తెరుచుటకు నిశ్చయమై ఉన్నారా?"
-msgstr[1] "మీరు %d సంచయములను తెరుచుటకు నిశ్చయమై ఉన్నారా?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:699
-#, c-format
-msgid "Could not move \"%s\" to trash."
-msgstr "\"%s\" ను చెత్తకుండి కి కదిపించలేము."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:730
-#, c-format
-msgid "Do you want to delete \"%s\" permanently?"
-msgstr "\"%s\" ను నీవు శాశ్వతంగా తొలగించదలచుకున్నావా?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:733
-#, c-format
-msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr "చెత్తకుండి లభించలేదు. \"%s\" ను చెత్తకుండికి కదిపించలేము."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:772
-#, c-format
-msgid "Could not delete \"%s\"."
-msgstr "\"%s\" ను తొలగించలేము."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:884
-#, c-format
-msgid "Deleting \"%s\" failed: %s."
-msgstr "\"%s\" తొలగించుటకు విఫలమైనది : %s."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:896
-#, c-format
-msgid "Moving \"%s\" failed: %s."
-msgstr "\"%s\"ను కదిపించుట విఫలమైనది: %s."
-
-#. Popup menu item: Open
-#: ../gsearchtool/gsearchtool-callbacks.c:1024
-#: ../gsearchtool/gsearchtool-callbacks.c:1054
-msgid "_Open"
-msgstr "తెరచు(_O)"
-
-#. Popup menu item: Open with (default)
-#: ../gsearchtool/gsearchtool-callbacks.c:1079
-#, c-format
-msgid "_Open with %s"
-msgstr "%s తో తెరువుము (_O)"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1114
-#, c-format
-msgid "Open with %s"
-msgstr "%s తో తెరువుము"
-
-#. Popup menu item: Open With
-#: ../gsearchtool/gsearchtool-callbacks.c:1147
-msgid "Open Wit_h"
-msgstr "దీనితో తెరువుము (_h)"
-
-#. Popup menu item: Open Containing Folder
-#: ../gsearchtool/gsearchtool-callbacks.c:1192
-msgid "Open Containing _Folder"
-msgstr ""
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1232
-msgid "_Save Results As..."
-msgstr "లా ఫలితములు దాచు(_S)..."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1614
-msgid "Save Search Results As..."
-msgstr "వెతుకు ఫలితాలను లా దాచు..."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1643
-msgid "Could not save document."
-msgstr "పత్రమును దాచుటకు వీలుకాదు."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1644
-msgid "You did not select a document name."
-msgstr "మీరు పత్ర నామమును ఎంచుకొనలేదు."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1674
-#, c-format
-msgid "Could not save \"%s\" document to \"%s\"."
-msgstr "\"%s\" పత్రంకు \"%s\" ను దాచలేము."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1707
-#, c-format
-msgid "The document \"%s\" already exists.  Would you like to replace it?"
-msgstr "పత్రం \"%s\" ఇదివరకే కలిగివున్నది. మీరు దాన్ని పునఃస్థాపించుటకు ఇష్టపడుతున్నారా?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1711
-msgid "If you replace an existing file, its contents will be overwritten."
-msgstr "మీరు కలిగివున్న దస్త్రంను పునఃస్థాపించినట్టయితే, దాని సారములు చెరిపిరాయబడును."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1775
-msgid "The document name you selected is a folder."
-msgstr "మీరు ఎంచుకున్న పత్ర నామము సంచయం"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1811
-msgid "You may not have write permissions to the document."
-msgstr "మీకు పత్రమునకు వ్రాయుటకు అనుమతులు లేవు."
-
-#. Translators:  Below are the strings displayed in the 'Date Modified'
-#. column of the list view.  The format of this string can vary depending
-#. on age of a file.  Please modify the format of the timestamp to match
-#. your locale.  For example, to display 24 hour time replace the '%-I'
-#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: ../gsearchtool/gsearchtool-support.c:448
-msgid "today at %-I:%M %p"
-msgstr "ఈ రోజు %-I:%M %p"
-
-#: ../gsearchtool/gsearchtool-support.c:450
-msgid "yesterday at %-I:%M %p"
-msgstr "నిన్న %-I:%M %p"
-
-#: ../gsearchtool/gsearchtool-support.c:452
-#: ../gsearchtool/gsearchtool-support.c:454
-msgid "%A, %B %-d %Y at %-I:%M:%S %p"
-msgstr "%A, %B %-d %Y at %-I:%M:%S %p"
-
-#: ../gsearchtool/gsearchtool-support.c:641
-msgid "link (broken)"
-msgstr "జోడి (విరిగినది)"
-
-#: ../gsearchtool/gsearchtool-support.c:645
-#, c-format
-msgid "link to %s"
-msgstr "%s కు జోడి"
-
-#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
-#. Localizers:
-#. * Feel free to leave out the st, nd, rd and th suffix or
-#. * make some or all of them match.
-#. localizers: tag used to detect the first copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1257
-msgid " (copy)"
-msgstr "(నకలు)"
-
-#. localizers: tag used to detect the second copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1259
-msgid " (another copy)"
-msgstr "(వేరొక నకలు)"
-
-#. localizers: tag used to detect the x11th copy of a file
-#. localizers: tag used to detect the x12th copy of a file
-#. localizers: tag used to detect the x13th copy of a file
-#. localizers: tag used to detect the xxth copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1262
-#: ../gsearchtool/gsearchtool-support.c:1264
-#: ../gsearchtool/gsearchtool-support.c:1266
-#: ../gsearchtool/gsearchtool-support.c:1276
-msgid "th copy)"
-msgstr "th నకలు)"
-
-#. localizers: tag used to detect the x1st copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1269
-msgid "st copy)"
-msgstr "st నకలు)"
-
-#. localizers: tag used to detect the x2nd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1271
-msgid "nd copy)"
-msgstr "nd నకలు)"
-
-#. localizers: tag used to detect the x3rd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1273
-msgid "rd copy)"
-msgstr "rd నకలు)"
-
-#. localizers: appended to first file copy
-#: ../gsearchtool/gsearchtool-support.c:1290
-#, c-format
-msgid "%s (copy)%s"
-msgstr "%s (నకలు)%s"
-
-#. localizers: appended to second file copy
-#: ../gsearchtool/gsearchtool-support.c:1292
-#, c-format
-msgid "%s (another copy)%s"
-msgstr "%s (వేరొక నకలు)%s"
-
-#. localizers: appended to x11th file copy
-#. localizers: appended to x12th file copy
-#. localizers: appended to x13th file copy
-#. localizers: appended to xxth file copy
-#: ../gsearchtool/gsearchtool-support.c:1295
-#: ../gsearchtool/gsearchtool-support.c:1297
-#: ../gsearchtool/gsearchtool-support.c:1299
-#: ../gsearchtool/gsearchtool-support.c:1308
-#, c-format
-msgid "%s (%dth copy)%s"
-msgstr "%s (%dth నకలు)%s"
-
-#. localizers: appended to x1st file copy
-#: ../gsearchtool/gsearchtool-support.c:1302
-#, c-format
-msgid "%s (%dst copy)%s"
-msgstr "%s (%dst నకలు)%s"
-
-#. localizers: appended to x2nd file copy
-#: ../gsearchtool/gsearchtool-support.c:1304
-#, c-format
-msgid "%s (%dnd copy)%s"
-msgstr "%s (%dnd నకలు)%s"
-
-#. localizers: appended to x3rd file copy
-#: ../gsearchtool/gsearchtool-support.c:1306
-#, c-format
-msgid "%s (%drd copy)%s"
-msgstr "%s (%drd నకలు)%s"
-
-#: ../gsearchtool/gsearchtool-support.c:1353
-msgid " (invalid Unicode)"
-msgstr "(నిస్సారమైన యునికోడ్)"
-
-#. localizers: opening parentheses to match the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1442
-msgid " ("
-msgstr " ("
-
-#. localizers: opening parentheses of the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1450
-#, c-format
-msgid " (%d"
-msgstr " (%d"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:1
-msgid "Search history"
-msgstr ""
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:2
-msgid "This key defines the items which were searched for in the past."
-msgstr ""
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:3
-msgid "Show Additional Options"
-msgstr "అత్యధికముగా చేర్పబడిన ఇఛ్ఛాపూర్వకములు చూపుము"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:4
-msgid "Disable Quick Search"
-msgstr "తొందరగా వెతుకుటను నిరుపయోగపరచు"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:5
-msgid ""
-"This key determines if the search tool disables the use of the locate "
-"command when performing simple file name searches."
-msgstr "సులభమైన దస్త్రనామ శోధన చేసినప్పుడు శోధన సాధనం గుర్తించు ఆదేశం ఉపయోగంను అచేతనం చేస్తే ఈ మీట నిశ్చయించబడుతుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:6
-msgid "Quick Search Excluded Paths"
-msgstr "తొందరగా వెతుకుట త్రోవలను బహిష్కరించినది"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:7
-msgid ""
-"This key defines the paths the search tool will exclude from a quick search."
-" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
-"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-msgstr "ఈ కీ శోధన సాధనం త్వరిత శోధన నుండి బహిష్కరించు త్రోవలను నిర్వచిస్తుంది. wildcards '*' మరియు '?' మద్దతునిస్తాయి.అప్రమేయ విలువలు /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:8
-msgid "Disable Quick Search Second Scan"
-msgstr "రెండవ సంశోధనను తొందరగా వెతుకుటను నిరుపయోగపరచు"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:9
-msgid ""
-"This key determines if the search tool disables the use of the find command "
-"after performing a quick search."
-msgstr "త్వరిత శోధన జరిపినతర్వాత శోధన సాధనం వెతుకు ఆదేశం ఉపయోగాన్ని అచేతనం చేస్తే ఈ మీట నిశ్చయించబడుతుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:10
-msgid "Quick Search Second Scan Excluded Paths"
-msgstr "రెండవ సంశోధనను తొందరగా వెతుకుటను బహిష్కరించినది"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:11
-msgid ""
-"This key defines the paths the search tool will exclude from a second scan "
-"when performing a quick search. The second scan uses the find command to "
-"search for files. The purpose of the second scan is to find files that have "
-"not been indexed. The wildcards '*' and '?' are supported. The default value"
-" is /."
-msgstr "శోధన సాధనం త్వరిత శోధనను చేస్తున్నప్పుడు రెండవ సంశోధన నుండి బహిష్కరించు త్రోవలను ఈ మీట నిర్వచిస్తుంది.దస్త్రములను శోధించుటకు రెండవ సంశోధన వెతుకు ఆదేశాన్ని ఉపయోగిస్తుంది.రెండవ సంశోధన యొక్క ఉపయోగార్ధం విషయసూచిక చేయబడనటువంటి దస్త్రంలను వెతుకుట.wildcards '*' మరియు '?' మద్దుతునిస్తాయి.అప్రమేయ విలువ /."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:12
-msgid "Search Result Columns Order"
-msgstr "ఫలితాలను నిలువుపట్టీ క్రమములో వెతుకుము"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:13
-msgid ""
-"This key defines the order of the columns in the search results. This key "
-"should not be modified by the user."
-msgstr "ఈ కీ శోధించిన ఫలితాలలోని నిలువువరుసల క్రమాన్ని నిర్వచిస్తుంది.ఈ కీ వినియోగదారుని చేత మార్చబడకూడదు."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:14
-msgid "Default Window Width"
-msgstr "అప్రమేయ గవాక్ష పొడవు"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:15
-msgid ""
-"This key defines the window width, and it's used to remember the size of the"
-" search tool between sessions. Setting it to -1 will make the search tool "
-"use the default width."
-msgstr "ఈ మీట గవాక్షం వెడల్పును నిర్వచిస్తుంది మరియు సెషన్సు మద్య శోధన సాధనం యొక్క పరిమాణం ను గుర్తుంచుకొనుటకు ఉపయోగించబడుతుంది.-1 కు అమర్చుట శోధన సాధనంను అప్రమేయ వెడల్పును ఉపయోగించుకొనునట్లు చేస్తుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:16
-msgid "Default Window Height"
-msgstr "అప్రమేయ గవాక్షం ఎత్తు"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:17
-msgid ""
-"This key defines the window height, and it's used to remember the size of "
-"the search tool between sessions. Setting it to -1 will make the search tool"
-" use the default height."
-msgstr "ఈ మీట గవాక్షం ఎత్తును నిర్వచిస్తుంది మరియు సెషన్సు మద్య శోధన సాధనం యొక్క పరిమాణం ను గుర్తుంచుకొనుటకు ఉపయోగించబడుతుంది.-1 కు అమర్చుట శోధన సాధనంను అప్రమేయ ఎత్తును ఉపయోగించుకొనునట్లు చేస్తుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:18
-msgid "Default Window Maximized"
-msgstr "అప్రమేయ గవాక్షం పెద్దదిచేయబడింది"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:19
-msgid ""
-"This key determines if the search tool window starts in a maximized state."
-msgstr "శోధన సాధనం గవాక్షం పెద్దదైన స్థితి లో ప్రారంభించబడితే ఈ మీట నిశ్చయించబడుతుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:20
-msgid "Look in Folder"
-msgstr "ఫోల్డర్ నందు చూడుము"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:21
-msgid "This key defines the default value of the \"Look in Folder\" widget."
-msgstr "ఈ కీ \"ఫోల్డర్ నందు చూడు\" విడ్జట్ యొక్క అప్రమేయ విలువను నిర్వచిస్తుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:22
-msgid ""
-"This key determines if the \"Contains the text\" search option is selected "
-"when the search tool is started."
-msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"పాఠము కలిగిఉన్న\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:23
-msgid ""
-"This key determines if the \"Date modified less than\" search option is "
-"selected when the search tool is started."
-msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"దీనికి తక్కువగా మార్చబడిన తారీఖు\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:24
-msgid ""
-"This key determines if the \"Date modified more than\" search option is "
-"selected when the search tool is started."
-msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"దీనికి ఎక్కువగా మార్చబడిన తారీఖు\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:25
-msgid ""
-"This key determines if the \"Size at least\" search option is selected when "
-"the search tool is started."
-msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"తక్కువలో ఉన్న పరిమాణం\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:26
-msgid ""
-"This key determines if the \"Size at most\" search option is selected when "
-"the search tool is started."
-msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"ఎక్కువలో ఉన్న పరిమాణం\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:27
-msgid ""
-"This key determines if the \"File is empty\" search option is selected when "
-"the search tool is started."
-msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"దస్త్రం ఖాళీగా ఉంది\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:28
-msgid ""
-"This key determines if the \"Owned by user\" search option is selected when "
-"the search tool is started."
-msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"ఈ వినియోగదారునికి స్వకీయమైన\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:29
-msgid ""
-"This key determines if the \"Owned by group\" search option is selected when"
-" the search tool is started."
-msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"ఈ సమూహానికి స్వకీయమైన \" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:30
-msgid ""
-"This key determines if the \"Owner is unrecognized\" search option is "
-"selected when the search tool is started."
-msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"యజమాని గుర్తించబడుటలేదు\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:31
-msgid ""
-"This key determines if the \"Name does not contain\" search option is "
-"selected when the search tool is started."
-msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"ఇది కలిగిలేని నామము\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:32
-msgid ""
-"This key determines if the \"Name matches regular expression\" search option"
-" is selected when the search tool is started."
-msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"ఈ సాదారణ ఎక్సప్రెషన్ కు సరితూగిన నామము\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:33
-msgid ""
-"This key determines if the \"Show hidden files and folders\" search option "
-"is selected when the search tool is started."
-msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"దాచబడిన దస్త్రములను మరియు సంచయాలను చూపుము\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:34
-msgid ""
-"This key determines if the \"Follow symbolic links\" search option is "
-"selected when the search tool is started."
-msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"చిహ్నపూరిత జోడీలను అనుసరించు\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడి‌వుంటే ఈ మీట నిశ్చయించబడుతుంది."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:35
-msgid ""
-"This key determines if the \"Exclude other filesystems\" search option is "
-"selected when the search tool is started."
-msgstr "శోధన సాధనం ప్రారంభించబడినప్పుడు \"ఇతర దస్త్రసిస్టమ్సును తీసివేయి\" శోధన ఇచ్ఛాపూర్వకం ఎంపికకాబడాలేమో ఈ మీట నిశ్చయించుతుంది."
-
-#: ../libeggsmclient/eggdesktopfile.c:165
-#, c-format
-msgid "File is not a valid .desktop file"
-msgstr "దస్త్రము చెల్లునటువంటి .desktop దస్త్రము కాదు"
-
-#: ../libeggsmclient/eggdesktopfile.c:188
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "గుర్తించబడని డెస్కుటాప్ ఫైల్ వర్షన్ '%s'"
-
-#: ../libeggsmclient/eggdesktopfile.c:957
-#, c-format
-msgid "Starting %s"
-msgstr "%s ప్రారంభించుచున్నది"
-
-#: ../libeggsmclient/eggdesktopfile.c:1098
-#, c-format
-msgid "Application does not accept documents on command line"
-msgstr "అనువర్తనము ఆదేశ వరుసనందు పత్రములను ఆమోదించదు"
-
-#: ../libeggsmclient/eggdesktopfile.c:1166
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "గుర్తించబడని ఆరంభ ఐచ్చికము: %d"
-
-#: ../libeggsmclient/eggdesktopfile.c:1365
-#, c-format
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "పత్రము URIలను 'Type=Link' డెస్కుటాప్ ప్రవేశమునకు పంపలేదు"
-
-#: ../libeggsmclient/eggdesktopfile.c:1384
-#, c-format
-msgid "Not a launchable item"
-msgstr "ఆరంభించదగు అంశము కాదు"
-
-#: ../libeggsmclient/eggsmclient.c:225
-msgid "Disable connection to session manager"
-msgstr "అనుసంధానమును సెషన్‌కు నిర్వాహికకు అచేతనముచేయి"
-
-#: ../libeggsmclient/eggsmclient.c:228
-msgid "Specify file containing saved configuration"
-msgstr "దాచిన ఆకృతీకరణను కలిగివున్న దస్త్రమును తెలుపుము"
-
-#: ../libeggsmclient/eggsmclient.c:228
-msgid "FILE"
-msgstr "దస్త్రము"
-
-#: ../libeggsmclient/eggsmclient.c:231
-msgid "Specify session management ID"
-msgstr "సెషన్ నిర్వాహిక ID తెలుపుము"
-
-#: ../libeggsmclient/eggsmclient.c:231
-msgid "ID"
-msgstr "ID"
-
-#: ../libeggsmclient/eggsmclient.c:252
-msgid "Session management options:"
-msgstr "సెషన్ నిర్వాహిక ఐచ్చికములు:"
-
-#: ../libeggsmclient/eggsmclient.c:253
-msgid "Show session management options"
-msgstr "సెషన్ నిర్వాహిక ఐచ్చికములను చూపుము"
-
-#: ../logview/data/mate-system-log.desktop.in.in.h:1
-msgid "Log File Viewer"
-msgstr "లాగ్ దస్త్రపు దర్శిని"
-
-#: ../logview/data/mate-system-log.desktop.in.in.h:2
-msgid "View or monitor system log files"
-msgstr "దర్శించు లేదా దర్శిని వ్యవస్థ log దస్త్రములు"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
-msgid "Log file to open up on startup"
-msgstr "మొదలు పెట్టినపుడు log దస్త్రం ను తెరుచుటకు"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
-msgid ""
-"Specifies the log file displayed at startup. The default is either "
-"/var/adm/messages or /var/log/messages, depending on your operating system."
-msgstr "ప్రారంభంనందు ప్రదర్శితమయ్యే లాగ్ దస్త్రాన్ని తెలియజేస్తుంది.అప్రమేయమనునది మీ ఆపరేటింగ్ సిస్టమ్ పై ఆధారపడి, /var/adm/messages కాని లేదా /var/log/messages కాని అవుతుంది."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
-msgid "Size of the font used to display the log"
-msgstr "అక్షరశైలి యొక్క పరిమాణము log ను దర్శించుటకు వాడబడినది"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
-msgid ""
-"Specifies the size of the fixed-width font used to display the log in the "
-"main tree view. The default is taken from the default terminal font size."
-msgstr "లాగ్ ను ప్రధాన ట్రీ దర్శిని లో ప్రదర్శించుటకు ఉపయోగించు నిర్దేశిత-వెడల్పు ఫాంటు యొక్క పరిమాణంను తెలియజేస్తుంది.అప్రమేయం అప్రమేయ టెర్మినల్ ఫాంటు పరిమాణంనుండి తీసుకోబడుతుంది."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
-msgid "Height of the main window in pixels"
-msgstr "పిక్సెల్స్ లో మూల గవాక్షం యొక్క ఎత్తు"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
-msgid "Specifies the height of the log viewer main window in pixels."
-msgstr "పిక్సెల్స్ లో మూల గవాక్షం log దర్శకి యొక్క ఎత్తును నిర్థేశిస్తుంది."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
-msgid "Width of the main window in pixels"
-msgstr "పిక్సెల్స్ లో మూల గవాక్షం యొక్క పొడవు"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
-msgid "Specifies the width of the log viewer main window in pixels."
-msgstr "పిక్సెల్స్ లో మూల గవాక్షం log దర్శకి యొక్క పొడవును నిర్థేశిస్తుంది."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
-msgid "Log files to open up on startup"
-msgstr "మొదలు పెట్టినపుడు log దస్త్రాల ను తెరుచుటకు"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
-msgid ""
-"Specifies a list of log files to open up at startup. A default list is "
-"created by reading /etc/syslog.conf."
-msgstr "ప్రారంభం నందు తెరువుటకు లాగ్ దస్త్రముల జాబితాను తెలియపరచండి.అప్రమేయ జాబితా /etc/syslog.conf చదువుట ద్వారా సృష్టించబడుతుంది."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
-msgid "List of saved filters"
-msgstr ""
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
-msgid "List of saved regexp filters"
-msgstr ""
-
-#: ../logview/data/logview-filter.ui.h:2
-msgid "_Regular Expression:"
-msgstr ""
-
-#: ../logview/data/logview-filter.ui.h:3
-msgid "Highlight"
-msgstr ""
-
-#: ../logview/data/logview-filter.ui.h:4
-msgid "Hide"
-msgstr ""
-
-#: ../logview/data/logview-filter.ui.h:5
-msgid "Foreground:"
-msgstr ""
-
-#: ../logview/data/logview-filter.ui.h:6
-msgid "Background:"
-msgstr ""
-
-#: ../logview/data/logview-filter.ui.h:7
-msgid "Effect:"
-msgstr ""
-
-#: ../logview/logview-app.c:377
-#, c-format
-msgid "Impossible to open the file %s"
-msgstr "దస్త్రము %sను తెరువుట అసాధ్యము"
-
-#: ../logview/logview-filter-manager.c:94
-msgid "Filter name is empty!"
-msgstr "వడపోత నామము ఖాళీగావుంది!"
-
-#: ../logview/logview-filter-manager.c:107
-msgid "Filter name may not contain the ':' character"
-msgstr "వడపోత నామము ':' అక్షరమును కలిగివుండక పోవచ్చును"
-
-#: ../logview/logview-filter-manager.c:130
-msgid "Regular expression is empty!"
-msgstr "సాధారణ సమీకరణం ఖాళీగా వుంది!"
-
-#: ../logview/logview-filter-manager.c:146
-#, c-format
-msgid "Regular expression is invalid: %s"
-msgstr "సాధారణ సమీకరణం చెల్లనిది: %s"
-
-#: ../logview/logview-filter-manager.c:242
-msgid "Please specify either foreground or background color!"
-msgstr "దయచేసి ఫోర్‌గ్రౌండ్ లేదా బ్యాక్‌గ్రౌండ్ రంగును తెలుపండి!"
-
-#: ../logview/logview-filter-manager.c:296
-msgid "Edit filter"
-msgstr "వడపోతను సరికూర్చుము"
-
-#: ../logview/logview-filter-manager.c:296
-msgid "Add new filter"
-msgstr "కొత్త వడపోతను జతచేయి"
-
-#: ../logview/logview-filter-manager.c:506
-msgid "Filters"
-msgstr "వడపోతలు"
-
-#: ../logview/logview-findbar.c:173
-msgid "_Find:"
-msgstr "కనుగొనుము (_F):"
-
-#: ../logview/logview-findbar.c:188
-msgid "Find Previous"
-msgstr "ముందుది కనుగొనుము"
-
-#: ../logview/logview-findbar.c:191
-msgid "Find previous occurrence of the search string"
-msgstr "వెతుకుమాట యొక్క సంభవించునది ముందుది వెతుకు"
-
-#: ../logview/logview-findbar.c:196
-msgid "Find Next"
-msgstr "తరువాతది కనుగొనుము"
-
-#: ../logview/logview-findbar.c:199
-msgid "Find next occurrence of the search string"
-msgstr "వెతుకుమాట యొక్క సంభవించునది తరువాత వెతుకు"
-
-#: ../logview/logview-findbar.c:206
-msgid "Clear the search string"
-msgstr "శోధన పదబందం(స్ట్రింగు)ను శుభ్రముచేయుము"
-
-#: ../logview/logview-log.c:595
-msgid "Error while uncompressing the GZipped log. The file might be corrupt."
-msgstr "GZipped లాగ్‌ను విడమర్చుతుంటే(అన్‌కంప్రెస్) దోషము. బహుశా దస్త్రము పాడైవుంటుంది."
-
-#: ../logview/logview-log.c:642
-msgid "You don't have enough permissions to read the file."
-msgstr "దస్త్రమును చదువుటకు మీరు తగినన్ని అనుమతులు కలిగిలేరు."
-
-#: ../logview/logview-log.c:657
-msgid "The file is not a regular file or is not a text file."
-msgstr "దస్త్రము సాదారణ దస్త్రముకాదు లేదా టెక్స్ట్ దస్త్రముకాదు."
-
-#: ../logview/logview-log.c:739
-msgid "This version of System Log does not support GZipped logs."
-msgstr "సిస్టమ్ లాగ్‌యొక్క ఈ వర్షన్ GZipped లాగ్‌లను మద్దతించదు."
-
-#: ../logview/logview-loglist.c:315
-msgid "Loading..."
-msgstr "లోడవుచున్నది..."
-
-#: ../logview/logview-main.c:61
-msgid "Show the application's version"
-msgstr "కార్యక్షేత్రముల వివరణము చూపుము"
-
-#: ../logview/logview-main.c:63
-msgid "[LOGFILE...]"
-msgstr "[LOGFILE...]"
-
-#: ../logview/logview-main.c:67
-msgid " - Browse and monitor logs"
-msgstr "-అన్వేషణ మరియు దర్శిని logs"
-
-#: ../logview/logview-main.c:100
-msgid "Log Viewer"
-msgstr "Log దర్శకి"
-
-#: ../logview/logview-window.c:38 ../logview/logview-window.c:760
-msgid "System Log Viewer"
-msgstr "వ్యవస్థ Log దర్శకి"
-
-#: ../logview/logview-window.c:210
-#, c-format
-msgid "last update: %s"
-msgstr "చివరి తాజాపరచు: %s"
-
-#: ../logview/logview-window.c:214
-#, c-format
-msgid "%d lines (%s) - %s"
-msgstr "%d లైనులు (%s) - %s"
-
-#: ../logview/logview-window.c:318
-msgid "Open Log"
-msgstr "log తెరువుము"
-
-#: ../logview/logview-window.c:357
-#, c-format
-msgid "There was an error displaying help: %s"
-msgstr "సహాయమును ప్రదర్శించుటలో అక్కడ వొక దోషమువుంది: %s"
-
-#: ../logview/logview-window.c:471
-msgid "Wrapped"
-msgstr "పొట్లం కట్టబడిన"
-
-#: ../logview/logview-window.c:765
-msgid "A system log viewer for MATE."
-msgstr "వ్యవస్థ Log దర్శకి గ్నోమ్ కొరకు."
-
-#: ../logview/logview-window.c:811
-msgid "_Filters"
-msgstr "వడపోతలు (_F)"
-
-#: ../logview/logview-window.c:814
-msgid "_Open..."
-msgstr "తెరచు(_O)..."
-
-#: ../logview/logview-window.c:814
-msgid "Open a log from file"
-msgstr "దస్త్రం నుండి log తెరువుము"
-
-#: ../logview/logview-window.c:816
-msgid "_Close"
-msgstr "మూసివేయు(_C)"
-
-#: ../logview/logview-window.c:816
-msgid "Close this log"
-msgstr "ఈ log మూసివేయు"
-
-#: ../logview/logview-window.c:818
-msgid "_Quit"
-msgstr "త్యజించు(_Q)"
-
-#: ../logview/logview-window.c:818
-msgid "Quit the log viewer"
-msgstr "log దర్శకిని త్యజించు"
-
-#: ../logview/logview-window.c:821
-msgid "_Copy"
-msgstr "నకలుతీయు(_C)"
-
-#: ../logview/logview-window.c:821
-msgid "Copy the selection"
-msgstr "ఎంపికను నకలుతీయు"
-
-#: ../logview/logview-window.c:823
-msgid "Select the entire log"
-msgstr "మొత్తం log ను ఎంచుకొను"
-
-#: ../logview/logview-window.c:825
-msgid "_Find..."
-msgstr "కనుగొనుము (_F)..."
-
-#: ../logview/logview-window.c:825
-msgid "Find a word or phrase in the log"
-msgstr "లాగ్‌నందు పదమును లేదా మాట(ఫ్రేజ్)ను కనుగొనుము"
-
-#: ../logview/logview-window.c:828
-msgid "Bigger text size"
-msgstr "పెద్దదైన పాఠం పరిమాణం"
-
-#: ../logview/logview-window.c:830
-msgid "Smaller text size"
-msgstr "చిన్నదైన పాఠం పరిమాణం"
-
-#: ../logview/logview-window.c:832
-msgid "Normal text size"
-msgstr "సాధారణమైన పాఠం పరిమాణం"
-
-#: ../logview/logview-window.c:835
-msgid "Manage Filters"
-msgstr "వడపోతలను నిర్వహించుము"
-
-#: ../logview/logview-window.c:835
-msgid "Manage filters"
-msgstr "వడపోతలను నిర్వహించుము"
-
-#: ../logview/logview-window.c:838
-msgid "Open the help contents for the log viewer"
-msgstr "log దర్శకి కొరకు సహాయ సారములను తెరువుము"
-
-#: ../logview/logview-window.c:840
-msgid "Show the about dialog for the log viewer"
-msgstr " log దర్శకి కొరకు గురించి వివరణ చూపుము"
-
-#: ../logview/logview-window.c:845
-msgid "_Statusbar"
-msgstr "సుస్థితి పట్టీ(_S)"
-
-#: ../logview/logview-window.c:845
-msgid "Show Status Bar"
-msgstr "సుస్థితి పట్టీ చూపుము"
-
-#: ../logview/logview-window.c:847
-msgid "Side _Pane"
-msgstr "పక్క ప్యాన్(_P)"
-
-#: ../logview/logview-window.c:847
-msgid "Show Side Pane"
-msgstr "పక్క ప్యాన్ చూపుము"
-
-#: ../logview/logview-window.c:849
-msgid "Show matches only"
-msgstr "పోలికలను మాత్రమే చూపుము"
-
-#: ../logview/logview-window.c:849
-msgid "Only show lines that match one of the given filters"
-msgstr "ఇచ్చిన వడపోతలలో వొక దానిని పోలు పంక్తులను మాత్రమే చూపుము"
-
-#: ../logview/logview-window.c:963
-#, c-format
-msgid "Can't read from \"%s\""
-msgstr ""
-
-#: ../logview/logview-window.c:1386
-msgid "Version: "
-msgstr "వివరణము:"
-
-#: ../logview/logview-window.c:1493
-msgid "Could not open the following files:"
-msgstr "ఈ క్రింది దస్త్రములను తెరువలేక పోయింది:"

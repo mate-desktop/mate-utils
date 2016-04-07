@@ -4,16 +4,17 @@
 # 
 # Translators:
 # Changwoo Ryu <cwryu@debian.org>, 2007, 2008, 2009, 2010
-# 박정규(Jung Kyu Park) <bagjunggyu@gmail.com>, 2015
+# 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2015
+# 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2016
 # update by Young-Ho, Cha <ganadist@chollian.net>, 2001
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-24 13:29+0100\n"
-"PO-Revision-Date: 2015-03-27 02:07+0000\n"
-"Last-Translator: 박정규(Jung Kyu Park) <bagjunggyu@gmail.com>\n"
-"Language-Team: Korean (http://www.transifex.com/projects/p/MATE/language/ko/)\n"
+"POT-Creation-Date: 2015-12-10 13:06+0300\n"
+"PO-Revision-Date: 2016-03-31 01:07+0000\n"
+"Last-Translator: 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>\n"
+"Language-Team: Korean (http://www.transifex.com/mate/MATE/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,7 +23,7 @@ msgstr ""
 
 #: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:1
 msgid "MATE Disk Usage Analyzer"
-msgstr "마테(MATE) 디스크 사용 분석기"
+msgstr "마테 디스크 사용 분석기"
 
 #: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:2
 msgid "Check folder sizes and available disk space"
@@ -61,7 +62,8 @@ msgid "S_can Remote Folder..."
 msgstr "원격 폴더 검사(_C)..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../mate-dictionary/src/gdict-window.c:1279 ../logview/logview-window.c:809
+#: ../logview/src/logview-window.c:811
+#: ../mate-dictionary/src/gdict-window.c:1285
 msgid "_Edit"
 msgstr "편집(_E)"
 
@@ -74,7 +76,8 @@ msgid "_Collapse All"
 msgstr "모두 접기(_C)"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../mate-dictionary/src/gdict-window.c:1280 ../logview/logview-window.c:810
+#: ../logview/src/logview-window.c:812
+#: ../mate-dictionary/src/gdict-window.c:1286
 msgid "_View"
 msgstr "보기(_V)"
 
@@ -91,18 +94,20 @@ msgid "All_ocated Space"
 msgstr "할당한 크기(_O)"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../mate-dictionary/src/gdict-applet.c:1213
-#: ../mate-dictionary/src/gdict-window.c:1282 ../logview/logview-window.c:812
+#: ../logview/src/logview-window.c:814
+#: ../mate-dictionary/src/gdict-applet.c:1185
+#: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Help"
 msgstr "도움말(_H)"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../mate-dictionary/src/gdict-window.c:1332 ../logview/logview-window.c:838
+#: ../logview/src/logview-window.c:840
+#: ../mate-dictionary/src/gdict-window.c:1338
 msgid "_Contents"
 msgstr "차례(_C)"
 
-#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/callbacks.c:97
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1245
 msgid "Disk Usage Analyzer"
 msgstr "디스크 사용량 분석"
 
@@ -196,7 +201,7 @@ msgstr "어떤 유형의 차트를 표시할까요."
 
 #: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:1
 msgid "A disk usage analyzing tool for MATE Desktop"
-msgstr "MATE 데스크톱용 디스크 사용량 분석 도구"
+msgstr "마테 데스크톱용 디스크 사용량 분석 도구"
 
 #: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:2
 msgid ""
@@ -226,12 +231,12 @@ msgstr "사용 가능:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:240 ../baobab/src/baobab.c:297
-#: ../baobab/src/callbacks.c:259
+#: ../baobab/src/callbacks.c:258
 msgid "Calculating percentage bars..."
 msgstr "퍼센트 표시 계산하는 중..."
 
 #: ../baobab/src/baobab.c:251 ../baobab/src/baobab.c:1309
-#: ../baobab/src/callbacks.c:263
+#: ../baobab/src/callbacks.c:262
 msgid "Ready"
 msgstr "준비"
 
@@ -466,7 +471,7 @@ msgstr "홈 폴더의 내용이 바뀌었습니다. 디스크 사용량 정보�
 msgid "_Rescan"
 msgstr "다시 검사(_R)"
 
-#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2427
+#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/src/gsearchtool.c:2427
 msgid "Folder"
 msgstr "폴더"
 
@@ -474,7 +479,7 @@ msgstr "폴더"
 msgid "Usage"
 msgstr "사용량"
 
-#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2440
+#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/src/gsearchtool.c:2440
 msgid "Size"
 msgstr "크기"
 
@@ -504,43 +509,43 @@ msgstr "\"%s\"은(는) 올바른 폴더가 아닙니다"
 msgid "Could not analyze disk usage."
 msgstr "디스크 사용량을 분석할 수 없습니다."
 
-#: ../baobab/src/baobab-utils.c:366
+#: ../baobab/src/baobab-utils.c:362
 msgid "_Open Folder"
 msgstr "폴더 열기(_O)"
 
-#: ../baobab/src/baobab-utils.c:372
-#: ../gsearchtool/gsearchtool-callbacks.c:1210
+#: ../baobab/src/baobab-utils.c:368
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1210
 msgid "Mo_ve to Trash"
 msgstr "휴지통으로 옮기기(_V)"
 
-#: ../baobab/src/baobab-utils.c:406
+#: ../baobab/src/baobab-utils.c:402
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "\"%s\" 폴더를 열 수 없습니다"
 
-#: ../baobab/src/baobab-utils.c:409
+#: ../baobab/src/baobab-utils.c:405
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr "이 폴더를 표시할 수 있는 보기 프로그램이 설치되어 있지 않습니다."
 
-#: ../baobab/src/baobab-utils.c:478
+#: ../baobab/src/baobab-utils.c:474
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr "\"%s\"을(를) 휴지통에 옮길 수 없습니다"
 
-#: ../baobab/src/baobab-utils.c:486
+#: ../baobab/src/baobab-utils.c:482
 msgid "Could not move file to the Trash"
 msgstr "파일을 휴지통에 옮길 수 없습니다"
 
-#: ../baobab/src/baobab-utils.c:488
+#: ../baobab/src/baobab-utils.c:484
 #, c-format
 msgid "Details: %s"
 msgstr "자세한 정보: %s"
 
-#: ../baobab/src/baobab-utils.c:524
+#: ../baobab/src/baobab-utils.c:520
 msgid "There was an error displaying help."
 msgstr "도움말을 표시하는 데 오류가 발생했습니다."
 
-#: ../baobab/src/callbacks.c:76 ../logview/logview-about.h:49
+#: ../baobab/src/callbacks.c:76 ../logview/src/logview-about.h:49
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -548,7 +553,7 @@ msgid ""
 "any later version."
 msgstr "이 프로그램은 자유 소프트웨어입니다. 소프트웨어의 피양도자는 자유 소프트웨어 재단이 공표한 GNU 일반 공중 사용 허가서 2판 또는 그 이후 판을 임의로 선택해서, 그 규정에 따라 프로그램을 개작하거나 재배포할 수 있습니다."
 
-#: ../baobab/src/callbacks.c:81 ../logview/logview-about.h:53
+#: ../baobab/src/callbacks.c:81 ../logview/src/logview-about.h:53
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -556,31 +561,1279 @@ msgid ""
 "more details."
 msgstr "이 프로그램은 유용하게 사용될 수 있으리라는 희망에서 배포되고 있지만, 특정한 목적에 맞는 적합성 여부나 판매용으로 사용할 수 있으리라는 묵시적인 보증을 포함한 어떠한 형태의 보증도 제공하지 않습니다. 보다 자세한 사항에 대해서는 GNU 일반 공중 사용 허가서를 참고하시기 바랍니다."
 
-#: ../baobab/src/callbacks.c:86 ../logview/logview-about.h:57
+#: ../baobab/src/callbacks.c:86 ../logview/src/logview-about.h:57
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 msgstr "GNU 일반 공중 사용 허가서는 이 프로그램과 함께 제공됩니다. 만약, 이 문서가 누락되어 있다면 다음으로 연락하십시오: Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 
-#: ../baobab/src/callbacks.c:98
+#: ../baobab/src/callbacks.c:97
 msgid "A graphical tool to analyze disk usage."
 msgstr "디스크 사용량을 분석하는 그래픽 도구."
 
 #. translator credits
-#: ../baobab/src/callbacks.c:104 ../mate-dictionary/src/gdict-about.c:55
-#: ../logview/logview-about.h:63
+#: ../baobab/src/callbacks.c:103 ../logview/src/logview-about.h:63
+#: ../mate-dictionary/src/gdict-about.c:55
 msgid "translator-credits"
 msgstr "류창우 <cwryu debian.org>\n차영호 <ganadist gmail.com>"
 
-#: ../baobab/src/callbacks.c:202 ../gsearchtool/gsearchtool-callbacks.c:508
-#: ../gsearchtool/gsearchtool-callbacks.c:848
+#: ../baobab/src/callbacks.c:201
+#: ../gsearchtool/src/gsearchtool-callbacks.c:508
+#: ../gsearchtool/src/gsearchtool-callbacks.c:848
 msgid "The document does not exist."
 msgstr "해당 문서가 없습니다."
 
-#: ../baobab/src/callbacks.c:283
+#: ../baobab/src/callbacks.c:282
 msgid "The folder does not exist."
 msgstr "폴더가 없습니다."
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
+msgid "A file searching tool for MATE Desktop"
+msgstr "마테 데스크톱용 파일 검색 도구 "
+
+#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Search Tool is a simple but powerful utility that allows you to "
+"search for files and folders on any mounted file system. Its interface gives"
+" you instant access to a wide variety of parameters for each search, such as"
+" text contained within a file, ownership, date of modification, file size, "
+"folder exclusion, etc.. </p>"
+msgstr "<p>마테 검색 도구는 연결된 모든 파일 시스템의 파일과 폴더를 찾아낼 수 있는 간단하지만 강력한 도구입니다. 그 인터페이스는 파일에 포함된 텍스트, 소유권, 수정 날짜, 파일 크기, 폴더 제외 등의 다양한 매개 변수에 바로 접근할 수 있게 합니다. </p>"
+
+#: ../gsearchtool/data/mate-search-tool.desktop.in.h:1
+msgid "MATE Search Tool"
+msgstr "마테 검색 도구"
+
+#: ../gsearchtool/data/mate-search-tool.desktop.in.h:2
+msgid "Locate documents and folders on this computer by name or content"
+msgstr "이 컴퓨터의 문서나 폴더를 이름이나 내용으로 찾습니다"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:1
+msgid "Search history"
+msgstr "검색 기록"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:2
+msgid "This key defines the items which were searched for in the past."
+msgstr "이 키는 이전에 검색된 항목을 정의합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:3
+msgid "Show Additional Options"
+msgstr "추가 옵션 보기"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:4
+msgid "Disable Quick Search"
+msgstr "빠른 검색 사용하지 않음"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:5
+msgid ""
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
+msgstr "이 키는 검색 도구가 간단한 파일 이름 검색을 할 때 locate 명령을 사용하지 않을 지 결정합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:6
+msgid "Quick Search Excluded Paths"
+msgstr "빠른 검색 제외할 경로"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:7
+msgid ""
+"This key defines the paths the search tool will exclude from a quick search."
+" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
+"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
+msgstr "이 키는 검색 도구의 빠른 찾기에서 제외할 경로를 지정합니다. '*' 및 '?' 와일드 카드를 사용할 수 있습니다. 기본값은 /mnt/*, /media/*, /dev/*, /tmp/*, /proc/* 그리고 /var/*입니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:8
+msgid "Disable Quick Search Second Scan"
+msgstr "빠른 검색 2단계 사용하지 않음"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:9
+msgid ""
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
+msgstr "이 키는 검색 도구가 빠른 검색을 한 후에 find 명령을 사용하지 않을 지 결정합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:10
+msgid "Quick Search Second Scan Excluded Paths"
+msgstr "빠른 검색 2단계 제외할 경로"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:11
+msgid ""
+"This key defines the paths the search tool will exclude from a second scan "
+"when performing a quick search. The second scan uses the find command to "
+"search for files. The purpose of the second scan is to find files that have "
+"not been indexed. The wildcards '*' and '?' are supported. The default value"
+" is /."
+msgstr "이 키는 검색 도구의 빠른 검색 2단계에서 제외할 경로를 지정합니다. 2단계에서는 find 명령을 사용합니다. 2단계의 목적은 색인을 만들지 않은 파일을 찾는 것입니다. '*' 및 '?' 와일드 카드를 사용할 수 있습니다. 기본값은 /mnt/*, /media/*, /dev/*, /tmp/*, /proc/* 그리고 /var/*입니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:12
+msgid "Search Result Columns Order"
+msgstr "찾은 결과 컬럼 순서"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:13
+msgid ""
+"This key defines the order of the columns in the search results. This key "
+"should not be modified by the user."
+msgstr "이 키는 찾은 결과에서 컬럼 순서를 정합니다. 이 키는 사용자가 고치면 안 됩니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:14
+msgid "Default Window Width"
+msgstr "기본 창 너비"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:15
+msgid ""
+"This key defines the window width, and it's used to remember the size of the"
+" search tool between sessions. Setting it to -1 will make the search tool "
+"use the default width."
+msgstr "이 키는 창 너비를 정합니다. 그리고 세션 사이에서 검색 도구의 크기를 저장하는 데 쓰입니다. -1이 설정되어 있으면 기본 너비로 설정됩니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:16
+msgid "Default Window Height"
+msgstr "기본 창 높이"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:17
+msgid ""
+"This key defines the window height, and it's used to remember the size of "
+"the search tool between sessions. Setting it to -1 will make the search tool"
+" use the default height."
+msgstr "이 키는 창 높이를 정합니다. 그리고 세션 사이에서 검색 도구의 크기를 저장하는 데 쓰입니다. -1이 설정되어 있으면 기본 높이로 설정됩니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:18
+msgid "Default Window Maximized"
+msgstr "기본 창 최대크기 설정"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:19
+msgid ""
+"This key determines if the search tool window starts in a maximized state."
+msgstr "이 키는 검색 도구 창이 최대크기로 시작할 지 결정합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:20
+msgid "Look in Folder"
+msgstr "폴더 안에 찾기"
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:21
+msgid "This key defines the default value of the \"Look in Folder\" widget."
+msgstr "이 키는 \"폴더 안에 찾기' 위젯의 기본값을 지정합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:22
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr "이 키는 검색 도구를 시작할 때 \"텍스트 포함\" 검색 옵션을 선택할 지 결정합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:23
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
+msgstr "이 키는 검색 도구를 시작할 때 \"최근에 바뀐 기간\" 검색 옵션을 선택할 지 결정합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:24
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
+msgstr "이 키는 검색 도구를 시작할 때 \"이후에 바뀐 기간\" 검색 옵션을 선택할 지 결정합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:25
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr "이 키는 검색 도구를 시작할 때 \"최소 크기\" 검색 옵션을 선택할 지 결정합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:26
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
+msgstr "이 키는 검색 도구를 시작할 때 \"최대 크기\" 검색 옵션을 선택할 지 결정합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:27
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
+msgstr "이 키는 검색 도구를 시작할 때 \"비어 있는 파일\" 검색 옵션을 선택할 지 결정합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:28
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
+msgstr "이 키는 검색 도구를 시작할 때 \"소유한 사람\" 검색 옵션을 선택할 지 결정합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:29
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when"
+" the search tool is started."
+msgstr "이 키는 검색 도구를 시작할 때 \"소유한 그룹\" 검색 옵션을 선택할 지 결정합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:30
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
+msgstr "이 키는 검색 도구를 시작할 때 \"소유자 알 수 없음\" 검색 옵션을 선택할 지 결정합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:31
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr "이 키는 검색 도구를 시작할 때 \"이름에 포함하지 않음\" 검색 옵션을 선택할 지 결정합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:32
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option"
+" is selected when the search tool is started."
+msgstr "이 키는 검색 도구를 시작할 때 \"이름에 맞는 정규 표현식\" 검색 옵션을 선택할 지 결정합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:33
+msgid ""
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
+msgstr "이 키는 검색 도구를 시작할 때 \"숨겨진 파일 혹은 폴더 보기\" 검색 옵션을 선택할 지 결정합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:34
+msgid ""
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr "이 키는 검색 도구를 시작할 때 \"심볼릭 링크 따라가기\" 검색 옵션을 선택할 지 결정합니다."
+
+#: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:35
+msgid ""
+"This key determines if the \"Exclude other filesystems\" search option is "
+"selected when the search tool is started."
+msgstr "이 키는 검색 도구를 시작할 때 \"다른 파일 시스템 제외\" 검색 옵션을 선택할 지 결정합니다."
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "올바른 .desktop 파일이 아닙니다"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "desktop 파일 버전을 ('%s') 인식할 수 없습니다"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:957
+#, c-format
+msgid "Starting %s"
+msgstr "%s 시작"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1098
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "명령행에서 문서를 지정할 수 없는 프로그램입니다"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1166
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "알 수 없는 실행 옵션: %d"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1365
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "문서 URI는 'Type=Link' desktop 항목에 넘길 수 없습니다"
+
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1384
+#, c-format
+msgid "Not a launchable item"
+msgstr "실행할 수 있는 항목이 없습니다"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:225
+msgid "Disable connection to session manager"
+msgstr "세션 관리자에 연결하지 않습니다"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+msgid "Specify file containing saved configuration"
+msgstr "설정을 저장할 파일을 지정합니다"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+msgid "FILE"
+msgstr "<파일>"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+msgid "Specify session management ID"
+msgstr "세션 관리 ID를 지정합니다"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+msgid "ID"
+msgstr "<ID>"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:252
+msgid "Session management options:"
+msgstr "세션 관리 옵션:"
+
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:253
+msgid "Show session management options"
+msgstr "세션 관리 옵션을 표시합니다"
+
+#: ../gsearchtool/src/gsearchtool.c:82
+msgid "Contains the _text"
+msgstr "텍스트 포함(_T)"
+
+#: ../gsearchtool/src/gsearchtool.c:84
+msgid "_Date modified less than"
+msgstr "최근에 바뀐 기간(_D)"
+
+#: ../gsearchtool/src/gsearchtool.c:84 ../gsearchtool/src/gsearchtool.c:85
+msgid "days"
+msgstr "일"
+
+#: ../gsearchtool/src/gsearchtool.c:85
+msgid "Date modified more than"
+msgstr "이후에 바뀐 기간"
+
+#: ../gsearchtool/src/gsearchtool.c:87
+msgid "S_ize at least"
+msgstr "최소 크기(_I)"
+
+#: ../gsearchtool/src/gsearchtool.c:87 ../gsearchtool/src/gsearchtool.c:88
+msgid "kilobytes"
+msgstr "킬로바이트"
+
+#: ../gsearchtool/src/gsearchtool.c:88
+msgid "Si_ze at most"
+msgstr "최대 크기(_Z)"
+
+#: ../gsearchtool/src/gsearchtool.c:89
+msgid "File is empty"
+msgstr "비어 있는 파일"
+
+#: ../gsearchtool/src/gsearchtool.c:91
+msgid "Owned by _user"
+msgstr "소유한 사람(_U)"
+
+#: ../gsearchtool/src/gsearchtool.c:92
+msgid "Owned by _group"
+msgstr "소유한 그룹(_G)"
+
+#: ../gsearchtool/src/gsearchtool.c:93
+msgid "Owner is unrecognized"
+msgstr "소유자 알 수 없음"
+
+#: ../gsearchtool/src/gsearchtool.c:95
+msgid "Na_me does not contain"
+msgstr "이름에 들어 있지 않음(_M)"
+
+#: ../gsearchtool/src/gsearchtool.c:96
+msgid "Name matches regular e_xpression"
+msgstr "이름이 정규 표현식에 해당(_X)"
+
+#: ../gsearchtool/src/gsearchtool.c:98
+msgid "Show hidden and backup files"
+msgstr "숨겨진 파일 혹은 백업 파일 보기"
+
+#: ../gsearchtool/src/gsearchtool.c:99
+msgid "Follow symbolic links"
+msgstr "심볼릭 링크 따라가기"
+
+#: ../gsearchtool/src/gsearchtool.c:100
+msgid "Exclude other filesystems"
+msgstr "다른 파일 시스템 제외"
+
+#: ../gsearchtool/src/gsearchtool.c:158
+msgid "Show version of the application"
+msgstr "프로그램의 버전을 표시합니다"
+
+#: ../gsearchtool/src/gsearchtool.c:159 ../gsearchtool/src/gsearchtool.c:164
+#: ../gsearchtool/src/gsearchtool.c:173
+msgid "STRING"
+msgstr "<문자열>"
+
+#: ../gsearchtool/src/gsearchtool.c:160
+msgid "PATH"
+msgstr "<경로>"
+
+#: ../gsearchtool/src/gsearchtool.c:161
+msgid "VALUE"
+msgstr "<값>"
+
+#: ../gsearchtool/src/gsearchtool.c:165 ../gsearchtool/src/gsearchtool.c:166
+msgid "DAYS"
+msgstr "<몇일>"
+
+#: ../gsearchtool/src/gsearchtool.c:167 ../gsearchtool/src/gsearchtool.c:168
+msgid "KILOBYTES"
+msgstr "<킬로바이트>"
+
+#: ../gsearchtool/src/gsearchtool.c:170
+msgid "USER"
+msgstr "<사용자>"
+
+#: ../gsearchtool/src/gsearchtool.c:171
+msgid "GROUP"
+msgstr "<그룹>"
+
+#: ../gsearchtool/src/gsearchtool.c:174
+msgid "PATTERN"
+msgstr "<패턴>"
+
+#: ../gsearchtool/src/gsearchtool.c:385
+msgid "A locate database has probably not been created."
+msgstr "위치 데이터베이스를 아직 만들지 않았습니다."
+
+#: ../gsearchtool/src/gsearchtool.c:487
+#, c-format
+msgid "Character set conversion failed for \"%s\""
+msgstr "\"%s\"에 대한 문자세트 변환이 실패했습니다"
+
+#: ../gsearchtool/src/gsearchtool.c:511
+msgid "Searching..."
+msgstr "찾는 중입니다..."
+
+#: ../gsearchtool/src/gsearchtool.c:511 ../gsearchtool/src/gsearchtool.c:1031
+#: ../gsearchtool/src/gsearchtool.c:3030
+msgid "Search for Files"
+msgstr "파일 검색"
+
+#: ../gsearchtool/src/gsearchtool.c:977 ../gsearchtool/src/gsearchtool.c:1006
+msgid "No files found"
+msgstr "찾은 파일이 없습니다."
+
+#: ../gsearchtool/src/gsearchtool.c:999
+msgid "(stopped)"
+msgstr "(멈춤)"
+
+#: ../gsearchtool/src/gsearchtool.c:1005
+msgid "No Files Found"
+msgstr "파일이 없습니다"
+
+#: ../gsearchtool/src/gsearchtool.c:1010
+#, c-format
+msgid "%'d File Found"
+msgid_plural "%'d Files Found"
+msgstr[0] "%'d개의 파일을 찾았습니다"
+
+#: ../gsearchtool/src/gsearchtool.c:1014 ../gsearchtool/src/gsearchtool.c:1052
+#, c-format
+msgid "%'d file found"
+msgid_plural "%'d files found"
+msgstr[0] "%'d개의 파일을 찾았습니다"
+
+#: ../gsearchtool/src/gsearchtool.c:1143
+msgid "Entry changed called for a non entry option!"
+msgstr "엔트리가 없는 옵션에 대하여 엔트리 바뀜 콜백이 실행되었습니다!"
+
+#: ../gsearchtool/src/gsearchtool.c:1308
+msgid "Set the text of \"Name contains\" search option"
+msgstr "\"이름에 포함\" 검색 옵션의 텍스트 지정"
+
+#: ../gsearchtool/src/gsearchtool.c:1309
+msgid "Set the text of \"Look in folder\" search option"
+msgstr "\"폴더 안에 찾기\" 검색 옵션의 텍스트 지정"
+
+#: ../gsearchtool/src/gsearchtool.c:1310
+msgid "Sort files by one of the following: name, folder, size, type, or date"
+msgstr "파일을 다음 중 하나로 정렬: 이름, 폴더, 크기, 타입, 날짜"
+
+#: ../gsearchtool/src/gsearchtool.c:1311
+msgid "Set sort order to descending, the default is ascending"
+msgstr "정렬 순서를 내림차순으로 합니다. 기본값은 오름차순입니다"
+
+#: ../gsearchtool/src/gsearchtool.c:1312
+msgid "Automatically start a search"
+msgstr "자동으로 검색 시작"
+
+#: ../gsearchtool/src/gsearchtool.c:1318
+#, c-format
+msgid "Select the \"%s\" search option"
+msgstr "\"%s\" 검색 옵션 선택"
+
+#: ../gsearchtool/src/gsearchtool.c:1321
+#, c-format
+msgid "Select and set the \"%s\" search option"
+msgstr "\"%s\" 검색 옵션 선택 및 사용"
+
+#: ../gsearchtool/src/gsearchtool.c:1428
+msgid "Invalid option passed to sortby command line argument."
+msgstr "명령행 인자 sortby에 전달된 옵션이 잘못되었습니다."
+
+#: ../gsearchtool/src/gsearchtool.c:1720
+msgid ""
+"\n"
+"... Too many errors to display ..."
+msgstr "\n... 너무 오류가 많아서 보여 줄 수 없습니다  ..."
+
+#: ../gsearchtool/src/gsearchtool.c:1734
+msgid ""
+"The search results may be invalid.  There were errors while performing this "
+"search."
+msgstr "찾은 결과가 잘못되었을 것입니다.  검색을 실행하는 중에 오류가 발생했습니다."
+
+#: ../gsearchtool/src/gsearchtool.c:1746 ../gsearchtool/src/gsearchtool.c:1790
+msgid "Show more _details"
+msgstr "자세히 보기(_D)"
+
+#: ../gsearchtool/src/gsearchtool.c:1776
+msgid ""
+"The search results may be out of date or invalid.  Do you want to disable "
+"the quick search feature?"
+msgstr "찾은 결과가 잘못되었을 것입니다.  빠른 검색 기능을 끄시겠습니까?"
+
+#: ../gsearchtool/src/gsearchtool.c:1801
+msgid "Disable _Quick Search"
+msgstr "빠른 검색 끄기(_Q)"
+
+#: ../gsearchtool/src/gsearchtool.c:1828
+#, c-format
+msgid "Failed to set process group id of child %d: %s.\n"
+msgstr "하위 프로세스 %d의 프로세스 그룹 ID를 설정하는 데 실패했습니다: %s.\n"
+
+#: ../gsearchtool/src/gsearchtool.c:1853
+msgid "Error parsing the search command."
+msgstr "검색 명령어를 파싱하는 데 오류가 발생했습니다."
+
+#: ../gsearchtool/src/gsearchtool.c:1885
+msgid "Error running the search command."
+msgstr "검색 명령어를 실행하는 데 오류가 발생했습니다."
+
+#: ../gsearchtool/src/gsearchtool.c:2008
+#, c-format
+msgid "Enter a text value for the \"%s\" search option."
+msgstr "\"%s\" 검색 옵션의 텍스트 값을 입력하십시오."
+
+#. Translators:  Below is a string displaying the search options name
+#. and unit value.  For example, "\"Date modified less than\" in days".
+#: ../gsearchtool/src/gsearchtool.c:2013
+#, c-format
+msgid "\"%s\" in %s"
+msgstr "\"%s\" (%s 단위)"
+
+#: ../gsearchtool/src/gsearchtool.c:2015
+#, c-format
+msgid "Enter a value in %s for the \"%s\" search option."
+msgstr "\"%2$s\" 검색 옵션의 %1$s 안의 값을 입력하십시오."
+
+#: ../gsearchtool/src/gsearchtool.c:2073
+#, c-format
+msgid "Remove \"%s\""
+msgstr "\"%s\" 제거"
+
+#: ../gsearchtool/src/gsearchtool.c:2074
+#, c-format
+msgid "Click to remove the \"%s\" search option."
+msgstr "\"%s\" 검색 옵션을 제거하려면 누르십시오."
+
+#: ../gsearchtool/src/gsearchtool.c:2167
+msgid "A_vailable options:"
+msgstr "사용 가능한 옵션(_V):"
+
+#: ../gsearchtool/src/gsearchtool.c:2196
+msgid "Available options"
+msgstr "사용 가능한 옵션"
+
+#: ../gsearchtool/src/gsearchtool.c:2197
+msgid "Select a search option from the drop-down list."
+msgstr "드롭다운 목록에서 검색 옵션을 선택합니다."
+
+#: ../gsearchtool/src/gsearchtool.c:2209
+msgid "Add search option"
+msgstr "검색 옵션을 추가합니다"
+
+#: ../gsearchtool/src/gsearchtool.c:2210
+msgid "Click to add the selected available search option."
+msgstr "선택하신 사용 가능 검색 옵션을 추가하려면 누르십시오."
+
+#: ../gsearchtool/src/gsearchtool.c:2299
+msgid "S_earch results:"
+msgstr "찾은 결과(_E):"
+
+#: ../gsearchtool/src/gsearchtool.c:2343
+msgid "List View"
+msgstr "목록 보기"
+
+#: ../gsearchtool/src/gsearchtool.c:2403
+#: ../mate-dictionary/libgdict/gdict-source.c:246
+msgid "Name"
+msgstr "이름"
+
+#: ../gsearchtool/src/gsearchtool.c:2452
+msgid "Type"
+msgstr "종류"
+
+#: ../gsearchtool/src/gsearchtool.c:2464
+msgid "Date Modified"
+msgstr "고친 날짜"
+
+#: ../gsearchtool/src/gsearchtool.c:2799
+msgid "_Name contains:"
+msgstr "이름에 포함(_N):"
+
+#: ../gsearchtool/src/gsearchtool.c:2813 ../gsearchtool/src/gsearchtool.c:2814
+msgid "Enter a filename or partial filename with or without wildcards."
+msgstr "파일 이름이나 파일 이름의 일부를 입력하십시오 (와일드 카드 사용 가능)."
+
+#: ../gsearchtool/src/gsearchtool.c:2814
+msgid "Name contains"
+msgstr "이름에 포함"
+
+#: ../gsearchtool/src/gsearchtool.c:2820
+msgid "_Look in folder:"
+msgstr "폴더 안에 찾기(_L):"
+
+#: ../gsearchtool/src/gsearchtool.c:2826
+msgid "Browse"
+msgstr "찾아보기"
+
+#: ../gsearchtool/src/gsearchtool.c:2835
+msgid "Look in folder"
+msgstr "폴더 안에 찾습니다"
+
+#: ../gsearchtool/src/gsearchtool.c:2835
+msgid "Select the folder or device from which you want to begin the search."
+msgstr "검색을 시작할 폴더 혹은 장치를 선택하십시오."
+
+#: ../gsearchtool/src/gsearchtool.c:2853
+msgid "Select more _options"
+msgstr "많은 옵션 보기(_O)"
+
+#: ../gsearchtool/src/gsearchtool.c:2862
+msgid "Select more options"
+msgstr "많은 옵션 보기"
+
+#: ../gsearchtool/src/gsearchtool.c:2862
+msgid "Click to expand or collapse the list of available options."
+msgstr "사용 가능한 옵션 목록을 늘리거나 줄입니다."
+
+#: ../gsearchtool/src/gsearchtool.c:2886
+msgid "Click to display the help manual."
+msgstr "도움말을 보려면 누르십시오."
+
+#: ../gsearchtool/src/gsearchtool.c:2894
+msgid "Click to close \"Search for Files\"."
+msgstr "\"파일 검색\"을 닫으려면 누르십시오."
+
+#: ../gsearchtool/src/gsearchtool.c:2920
+msgid "Click to perform a search."
+msgstr "검색을 수행하려면 누르십시오."
+
+#: ../gsearchtool/src/gsearchtool.c:2921
+msgid "Click to stop a search."
+msgstr "검색을 중단하려면 누르십시오."
+
+#: ../gsearchtool/src/gsearchtool.c:3015
+msgid "- the MATE Search Tool"
+msgstr "- 마테 검색 도구"
+
+#: ../gsearchtool/src/gsearchtool.c:3024
+#, c-format
+msgid "Failed to parse command line arguments: %s\n"
+msgstr "명령행 인자 파싱이 실패했습니다: %s\n"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:198
+msgid "Could not open help document."
+msgstr "도움말 문서를 열 수 없습니다."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:349
+#, c-format
+msgid "Are you sure you want to open %d document?"
+msgid_plural "Are you sure you want to open %d documents?"
+msgstr[0] "정말 %d개의 문서를 여시겠습니까?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:354
+#: ../gsearchtool/src/gsearchtool-callbacks.c:551
+#, c-format
+msgid "This will open %d separate window."
+msgid_plural "This will open %d separate windows."
+msgstr[0] "%d개의 창을 각각 열게 됩니다."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:394
+#, c-format
+msgid "Could not open document \"%s\"."
+msgstr "%s 문서를 열 수 없습니다."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:423
+#, c-format
+msgid "Could not open folder \"%s\"."
+msgstr "\"%s\" 폴더를 열 수 없습니다."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:431
+msgid "The caja file manager is not running."
+msgstr "노틸러스 파일 관리자가 실행 중이 아닙니다."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:523
+msgid "There is no installed viewer capable of displaying the document."
+msgstr "이 문서를 표시할 수 있는 보기 프로그램이 설치되어 있지 않습니다."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:546
+#, c-format
+msgid "Are you sure you want to open %d folder?"
+msgid_plural "Are you sure you want to open %d folders?"
+msgstr[0] "정말로 %d개의 폴더를 여시겠습니까"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:699
+#, c-format
+msgid "Could not move \"%s\" to trash."
+msgstr "\"%s\"을(를) 휴지통에 옮길 수 없습니다."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:730
+#, c-format
+msgid "Do you want to delete \"%s\" permanently?"
+msgstr "\"%s\"을(를) 완전히 삭제하시겠습니까?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:733
+#, c-format
+msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
+msgstr "휴지통을 사용할 수 없습니다.  \"%s\"을(를) 휴지통으로 옮길 수 없습니다."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:772
+#, c-format
+msgid "Could not delete \"%s\"."
+msgstr "\"%s\"을(를) 삭제할 수 없습니다."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:884
+#, c-format
+msgid "Deleting \"%s\" failed: %s."
+msgstr "\"%s\"을(를) 삭제하는 데 실패했습니다: %s."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:896
+#, c-format
+msgid "Moving \"%s\" failed: %s."
+msgstr "\"%s\"을(를) 옮기는 데 실패했습니다: %s."
+
+#. Popup menu item: Open
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1024
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1054
+msgid "_Open"
+msgstr "열기(_O)"
+
+#. Popup menu item: Open with (default)
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1079
+#, c-format
+msgid "_Open with %s"
+msgstr "%s에서 열기(_O)"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1114
+#, c-format
+msgid "Open with %s"
+msgstr "%s에서 열기"
+
+#. Popup menu item: Open With
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1147
+msgid "Open Wit_h"
+msgstr "다른 프로그램으로 열기(_H)"
+
+#. Popup menu item: Open Containing Folder
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1192
+msgid "Open Containing _Folder"
+msgstr "포함하는 폴더 열기(_F)"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1232
+msgid "_Save Results As..."
+msgstr "결과를 다른 이름으로 저장(_S)..."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1614
+msgid "Save Search Results As..."
+msgstr "결과를 다른 이름으로 저장..."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1643
+msgid "Could not save document."
+msgstr "문서를 저장할 수 없습니다."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1644
+msgid "You did not select a document name."
+msgstr "문서 이름을 선택하지 않았습니다."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1674
+#, c-format
+msgid "Could not save \"%s\" document to \"%s\"."
+msgstr "\"%s\" 문서를 %s(으)로 저장할 수 없습니다."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1707
+#, c-format
+msgid "The document \"%s\" already exists.  Would you like to replace it?"
+msgstr "\"%s\" 문서가 이미 있습니다.  이 문서를 바꾸시겠습니까?"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1711
+msgid "If you replace an existing file, its contents will be overwritten."
+msgstr "이미 있는 파일을 바꾸면, 그 내용을 덮어 쓰게 됩니다."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1726
+#: ../mate-screenshot/src/screenshot-xfer.c:82
+msgid "_Replace"
+msgstr "바꾸기(_R)"
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1775
+msgid "The document name you selected is a folder."
+msgstr "선택한 문서 이름이 폴더입니다."
+
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1811
+msgid "You may not have write permissions to the document."
+msgstr "문서에 쓰기 권한이 없습니다."
+
+#. Translators:  Below are the strings displayed in the 'Date Modified'
+#. column of the list view.  The format of this string can vary depending
+#. on age of a file.  Please modify the format of the timestamp to match
+#. your locale.  For example, to display 24 hour time replace the '%-I'
+#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
+#: ../gsearchtool/src/gsearchtool-support.c:448
+msgid "today at %-I:%M %p"
+msgstr "오늘 %p %I:%M"
+
+#: ../gsearchtool/src/gsearchtool-support.c:450
+msgid "yesterday at %-I:%M %p"
+msgstr "어제 %p %I:%M"
+
+#: ../gsearchtool/src/gsearchtool-support.c:452
+#: ../gsearchtool/src/gsearchtool-support.c:454
+msgid "%A, %B %-d %Y at %-I:%M:%S %p"
+msgstr "%Y년 %b %e일 %A, %p %I:%M:%S"
+
+#: ../gsearchtool/src/gsearchtool-support.c:641
+msgid "link (broken)"
+msgstr "링크 (깨짐)"
+
+#: ../gsearchtool/src/gsearchtool-support.c:645
+#, c-format
+msgid "link to %s"
+msgstr "%s에 링크"
+
+#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
+#. Localizers:
+#. * Feel free to leave out the st, nd, rd and th suffix or
+#. * make some or all of them match.
+#. localizers: tag used to detect the first copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1257
+msgid " (copy)"
+msgstr " (사본)"
+
+#. localizers: tag used to detect the second copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1259
+msgid " (another copy)"
+msgstr " (다른 사본)"
+
+#. localizers: tag used to detect the x11th copy of a file
+#. localizers: tag used to detect the x12th copy of a file
+#. localizers: tag used to detect the x13th copy of a file
+#. localizers: tag used to detect the xxth copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1262
+#: ../gsearchtool/src/gsearchtool-support.c:1264
+#: ../gsearchtool/src/gsearchtool-support.c:1266
+#: ../gsearchtool/src/gsearchtool-support.c:1276
+msgid "th copy)"
+msgstr "번째 사본)"
+
+#. localizers: tag used to detect the x1st copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1269
+msgid "st copy)"
+msgstr "번째 사본)"
+
+#. localizers: tag used to detect the x2nd copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1271
+msgid "nd copy)"
+msgstr "번째 사본)"
+
+#. localizers: tag used to detect the x3rd copy of a file
+#: ../gsearchtool/src/gsearchtool-support.c:1273
+msgid "rd copy)"
+msgstr "번째 사본)"
+
+#. localizers: appended to first file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1290
+#, c-format
+msgid "%s (copy)%s"
+msgstr "%s (사본)%s"
+
+#. localizers: appended to second file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1292
+#, c-format
+msgid "%s (another copy)%s"
+msgstr "%s (다른 사본)%s"
+
+#. localizers: appended to x11th file copy
+#. localizers: appended to x12th file copy
+#. localizers: appended to x13th file copy
+#. localizers: appended to xxth file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1295
+#: ../gsearchtool/src/gsearchtool-support.c:1297
+#: ../gsearchtool/src/gsearchtool-support.c:1299
+#: ../gsearchtool/src/gsearchtool-support.c:1308
+#, c-format
+msgid "%s (%dth copy)%s"
+msgstr "%s (%d번째 사본)%s"
+
+#. localizers: appended to x1st file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1302
+#, c-format
+msgid "%s (%dst copy)%s"
+msgstr "%s (%d번째 사본)%s"
+
+#. localizers: appended to x2nd file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1304
+#, c-format
+msgid "%s (%dnd copy)%s"
+msgstr "%s (%d번째 사본)%s"
+
+#. localizers: appended to x3rd file copy
+#: ../gsearchtool/src/gsearchtool-support.c:1306
+#, c-format
+msgid "%s (%drd copy)%s"
+msgstr "%s (%d번째 사본)%s"
+
+#: ../gsearchtool/src/gsearchtool-support.c:1353
+msgid " (invalid Unicode)"
+msgstr " (잘못된 유니코드)"
+
+#. localizers: opening parentheses to match the "th copy)" string
+#: ../gsearchtool/src/gsearchtool-support.c:1442
+msgid " ("
+msgstr " ("
+
+#. localizers: opening parentheses of the "th copy)" string
+#: ../gsearchtool/src/gsearchtool-support.c:1450
+#, c-format
+msgid " (%d"
+msgstr " (%d"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "로그 파일 보기"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "시스템의 로그 파일을 보거나 상태 변화를 봅니다"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
+msgid "Log file to open up on startup"
+msgstr "시작할 때 열어 볼 로그 파일"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
+msgid ""
+"Specifies the log file displayed at startup. The default is either "
+"/var/adm/messages or /var/log/messages, depending on your operating system."
+msgstr "시작할 때 열어 볼 로그 파일을 지정합니다. 기본값은 운영체제에 따라 /var/adm/messages 아니면 /var/log/messages입니다."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
+msgid "Size of the font used to display the log"
+msgstr "로그 보기에서 쓰이는 글꼴의 크기"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr "기본 로그 보기에서 쓰이는 고정폭 글꼴의 크기를 지정합니다. 터미널 글꼴 크기를 기본값으로 가져옵니다."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
+msgid "Height of the main window in pixels"
+msgstr "기본 창 높이(픽셀)"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "로그 보기 프로그램의 기본창 높이(픽셀)."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
+msgid "Width of the main window in pixels"
+msgstr "기본 창 너비(픽셀)"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "로그 보기 프로그램 기본 창의 너비를 픽셀로 지정합니다."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
+msgid "Log files to open up on startup"
+msgstr "시작할 때 열어 볼 로그 파일"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr "시작할 때 열어 볼 로그 파일의 목록을 지정합니다. 기본 목록은 /etc/syslog.conf 파일을 읽어서 만듭니다."
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
+msgid "List of saved filters"
+msgstr "저장된 필터 목록"
+
+#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
+msgid "List of saved regexp filters"
+msgstr "저장된 정규 표현식 필터 목록"
+
+#: ../logview/data/logview-filter.ui.h:1
+#: ../mate-screenshot/data/mate-screenshot.ui.h:3
+msgid "_Name:"
+msgstr "이름(_N):"
+
+#: ../logview/data/logview-filter.ui.h:2
+msgid "_Regular Expression:"
+msgstr "정규식(_R):"
+
+#: ../logview/data/logview-filter.ui.h:3
+msgid "Highlight"
+msgstr "강조"
+
+#: ../logview/data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "숨기기"
+
+#: ../logview/data/logview-filter.ui.h:5
+msgid "Foreground:"
+msgstr "전경:"
+
+#: ../logview/data/logview-filter.ui.h:6
+msgid "Background:"
+msgstr "배경:"
+
+#: ../logview/data/logview-filter.ui.h:7
+msgid "Effect:"
+msgstr "효과:"
+
+#: ../logview/src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "%s 파일을 열 수 없습니다"
+
+#: ../logview/src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "필터 이름이 비었습니다!"
+
+#: ../logview/src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "필터 이름에는 ':' 문자가 들어갈 수 없습니다"
+
+#: ../logview/src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "정규식이 비었습니다!"
+
+#: ../logview/src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "정규식이 올바르지 않습니다: %s"
+
+#: ../logview/src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "전경색 혹은 배경색을 지정하십시오!"
+
+#: ../logview/src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "필터 편집"
+
+#: ../logview/src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "새 필터 추가"
+
+#: ../logview/src/logview-filter-manager.c:508
+msgid "Filters"
+msgstr "필터"
+
+#: ../logview/src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "찾기(_F):"
+
+#: ../logview/src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "이전 찾기"
+
+#: ../logview/src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "이전에 있는 검색 문자열을 찾습니다"
+
+#: ../logview/src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "다음 찾기"
+
+#: ../logview/src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "다음에 있는 검색 문자열을 찾습니다"
+
+#: ../logview/src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "검색 문자열 지우기"
+
+#: ../logview/src/logview-log.c:598
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "GZIP 압축한 로그의 압축을 푸는 중 오류가 발생했습니다. 파일이 손상되었을 수 있습니다."
+
+#: ../logview/src/logview-log.c:645
+msgid "You don't have enough permissions to read the file."
+msgstr "파일을 읽을 권한이 없습니다."
+
+#: ../logview/src/logview-log.c:660
+msgid "The file is not a regular file or is not a text file."
+msgstr "파일이 일반 파일이 아니거나 텍스트 파일이 아닙니다."
+
+#: ../logview/src/logview-log.c:742
+msgid "This version of System Log does not support GZipped logs."
+msgstr "이 시스템 로그는 GZIP 압축한 로그를 지원하지 않습니다."
+
+#: ../logview/src/logview-loglist.c:316
+msgid "Loading..."
+msgstr "읽어들이는 중입니다..."
+
+#: ../logview/src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "프로그램의 버전을 봅니다"
+
+#: ../logview/src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[로그파일...]"
+
+#: ../logview/src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - 로그를 찾아보고 감시합니다"
+
+#: ../logview/src/logview-main.c:100
+msgid "Log Viewer"
+msgstr "시스템 로그 보기"
+
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:762
+msgid "System Log Viewer"
+msgstr "시스템 로그 보기"
+
+#: ../logview/src/logview-window.c:212
+#, c-format
+msgid "last update: %s"
+msgstr "마지막 업데이트: %s"
+
+#: ../logview/src/logview-window.c:216
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d번째 줄 (%s) - %s"
+
+#: ../logview/src/logview-window.c:320
+msgid "Open Log"
+msgstr "로그 열기"
+
+#: ../logview/src/logview-window.c:359
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "도움말을 표시하는 데 오류가 발생했습니다: %s"
+
+#: ../logview/src/logview-window.c:473
+msgid "Wrapped"
+msgstr "반대쪽부터 다시 찾음"
+
+#: ../logview/src/logview-window.c:488
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
+msgid "Not found"
+msgstr "일치 하는것이 없습니다"
+
+#: ../logview/src/logview-window.c:767
+msgid "A system log viewer for MATE."
+msgstr "그놈 시스템 로그 보기 프로그램."
+
+#: ../logview/src/logview-window.c:810
+#: ../mate-dictionary/src/gdict-window.c:1284
+msgid "_File"
+msgstr "파일(_F)"
+
+#: ../logview/src/logview-window.c:813
+msgid "_Filters"
+msgstr "필터(_F)"
+
+#: ../logview/src/logview-window.c:816
+msgid "_Open..."
+msgstr "열기(_O)..."
+
+#: ../logview/src/logview-window.c:816
+msgid "Open a log from file"
+msgstr "파일에서 로그 열기"
+
+#: ../logview/src/logview-window.c:818
+msgid "_Close"
+msgstr "닫기(_C)"
+
+#: ../logview/src/logview-window.c:818
+msgid "Close this log"
+msgstr "이 로그를 닫습니다"
+
+#: ../logview/src/logview-window.c:820
+msgid "_Quit"
+msgstr "끝내기(_Q)"
+
+#: ../logview/src/logview-window.c:820
+msgid "Quit the log viewer"
+msgstr "로그 보기 프로그램을 끝냅니다"
+
+#: ../logview/src/logview-window.c:823
+msgid "_Copy"
+msgstr "복사(_C)"
+
+#: ../logview/src/logview-window.c:823
+msgid "Copy the selection"
+msgstr "선택한 부분을 복사합니다"
+
+#: ../logview/src/logview-window.c:825
+#: ../mate-dictionary/src/gdict-window.c:1305
+msgid "Select _All"
+msgstr "모두 선택(_A)"
+
+#: ../logview/src/logview-window.c:825
+msgid "Select the entire log"
+msgstr "전체 로그를 선택합니다"
+
+#: ../logview/src/logview-window.c:827
+msgid "_Find..."
+msgstr "찾기(_F)..."
+
+#: ../logview/src/logview-window.c:827
+msgid "Find a word or phrase in the log"
+msgstr "로그에서 단어나 문구를 찾아 봅니다"
+
+#: ../logview/src/logview-window.c:830
+msgid "Bigger text size"
+msgstr "큰 글자 크기"
+
+#: ../logview/src/logview-window.c:832
+msgid "Smaller text size"
+msgstr "작은 글자 크기"
+
+#: ../logview/src/logview-window.c:834
+msgid "Normal text size"
+msgstr "보통 글자 크기"
+
+#: ../logview/src/logview-window.c:837
+msgid "Manage Filters"
+msgstr "필터 관리"
+
+#: ../logview/src/logview-window.c:837
+msgid "Manage filters"
+msgstr "필터 관리"
+
+#: ../logview/src/logview-window.c:840
+msgid "Open the help contents for the log viewer"
+msgstr "로그 보기 프로그램에 대한 도움말의 차례를 엽니다"
+
+#: ../logview/src/logview-window.c:842
+#: ../mate-dictionary/src/gdict-applet.c:1188
+#: ../mate-dictionary/src/gdict-window.c:1340
+msgid "_About"
+msgstr "정보(_A)"
+
+#: ../logview/src/logview-window.c:842
+msgid "Show the about dialog for the log viewer"
+msgstr "로그 보기 프로그램의 정보 대화 상자를 봅니다"
+
+#: ../logview/src/logview-window.c:847
+msgid "_Statusbar"
+msgstr "상태 표시줄(_S)"
+
+#: ../logview/src/logview-window.c:847
+msgid "Show Status Bar"
+msgstr "상태 표시줄을 봅니다"
+
+#: ../logview/src/logview-window.c:849
+msgid "Side _Pane"
+msgstr "가장자리 창(_P)"
+
+#: ../logview/src/logview-window.c:849
+msgid "Show Side Pane"
+msgstr "가장자리 창을 봅니다"
+
+#: ../logview/src/logview-window.c:851
+msgid "Show matches only"
+msgstr "맞는 항목만 표시"
+
+#: ../logview/src/logview-window.c:851
+msgid "Only show lines that match one of the given filters"
+msgstr "필터에 하나라도 맞는 줄만 표시합니다"
+
+#: ../logview/src/logview-window.c:983
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "\"%s\"에서 읽을 수 없습니다"
+
+#: ../logview/src/logview-window.c:1413
+msgid "Version: "
+msgstr "버전: "
+
+#: ../logview/src/logview-window.c:1524
+msgid "Could not open the following files:"
+msgstr "다음 파일을 열 수 없습니다:"
 
 #: ../mate-dictionary/data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
@@ -588,7 +1841,7 @@ msgstr "기본 사전 서버"
 
 #: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:1
 msgid "MATE Dictionary"
-msgstr "마테(MATE) 사전"
+msgstr "마테 사전"
 
 #: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:2
 msgid "Check word definitions and spellings in an online dictionary"
@@ -604,7 +1857,23 @@ msgid ""
 "comes preconfigured with a list of Dict servers (RFC 2229), to which you can"
 " add your own sources, while you can select specific servers for a specific "
 "query. </p>"
-msgstr "<P> 마테(MATE) 사전은 온라인 사전에서 단어를 찾아 볼 수 있습니다. DICT 서버 (RFC 2229) 목록이 사전 구성되어 제공되며, 여러분의 소스를 추가 할 수 있습니다, 특정 쿼리에 대해 특정 서버를 선택할 수 있구요.</ p>"
+msgstr "<P> 마테 사전은 온라인 사전에서 단어를 찾아 볼 수 있습니다. DICT 서버 (RFC 2229) 목록이 사전 구성되어 제공되며, 여러분의 소스를 추가 할 수 있습니다, 특정 쿼리에 대해 특정 서버를 선택할 수 있구요.</ p>"
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:1
+msgid "Dictionary Applet Factory"
+msgstr "사전 애플릿 팩토리"
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:2
+msgid "Factory for the dictionary applet"
+msgstr "사전 애플릿을 위한 팩토리"
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:3
+msgid "Dictionary Look up"
+msgstr "사전 살펴보기"
+
+#: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:4
+msgid "Look up words in a dictionary"
+msgstr "사전에 있는 단어를 살펴봅니다"
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:1
 msgid "The default database to use"
@@ -643,10 +1912,6 @@ msgstr "사용할 사전 소스의 이름"
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr "단어 정의를 가져올 때 사용할 사전 소스의 이름."
-
-#: ../mate-dictionary/data/spanish.desktop.in.h:1
-msgid "Spanish Dictionaries"
-msgstr "스페인어 사전"
 
 #: ../mate-dictionary/data/thai.desktop.in.h:1
 msgid "Longdo Thai-English Dictionaries"
@@ -813,13 +2078,6 @@ msgstr "사용 가능한 데이터베이스 목록을 비웁니다"
 msgid "Error while matching"
 msgstr "맞춰 보는 데 오류가 발생했습니다"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1138
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1232
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1266
-#: ../logview/logview-window.c:486
-msgid "Not found"
-msgstr "일치 하는것이 없습니다"
-
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1327
 msgid "F_ind:"
 msgstr "찾기(_I):"
@@ -857,11 +2115,6 @@ msgstr "파일 이름"
 #: ../mate-dictionary/libgdict/gdict-source.c:233
 msgid "The filename used by this dictionary source"
 msgstr "이 사전 소스가 사용하는 파일 이름"
-
-#: ../mate-dictionary/libgdict/gdict-source.c:246
-#: ../gsearchtool/gsearchtool.c:2403
-msgid "Name"
-msgstr "이름"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:247
 msgid "The display name of this dictionary source"
@@ -1015,9 +2268,9 @@ msgid "Look up words in dictionaries"
 msgstr "사전에서 단어를 찾습니다"
 
 #: ../mate-dictionary/src/gdict-about.c:78
-#: ../mate-dictionary/src/gdict-app.c:379
+#: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:604
-#: ../mate-dictionary/src/gdict-window.c:1968
+#: ../mate-dictionary/src/gdict-window.c:1974
 msgid "Dictionary"
 msgstr "사전"
 
@@ -1054,55 +2307,43 @@ msgid ""
 "%s"
 msgstr "\"%s\"의 단어 정의를 찾는 데 오류:\n%s"
 
-#: ../mate-dictionary/src/gdict-app.c:337
-#: ../mate-dictionary/src/gdict-app.c:351
+#: ../mate-dictionary/src/gdict-app.c:333
+#: ../mate-dictionary/src/gdict-app.c:343
 msgid "Words to look up"
 msgstr "찾아볼 단어"
 
-#: ../mate-dictionary/src/gdict-app.c:337
-#: ../mate-dictionary/src/gdict-app.c:339
-#: ../mate-dictionary/src/gdict-app.c:351
+#: ../mate-dictionary/src/gdict-app.c:333
+#: ../mate-dictionary/src/gdict-app.c:335
+#: ../mate-dictionary/src/gdict-app.c:343
 msgid "word"
 msgstr "단어"
 
-#: ../mate-dictionary/src/gdict-app.c:339
+#: ../mate-dictionary/src/gdict-app.c:335
 msgid "Words to match"
 msgstr "맞춰볼 단어"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:337
 msgid "Dictionary source to use"
 msgstr "사용할 사전 소스"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:337
 msgid "source"
 msgstr "소스"
 
-#: ../mate-dictionary/src/gdict-app.c:343
-msgid "Show available dictionary sources"
-msgstr "사용 가능한 사전 소스 표시"
-
-#: ../mate-dictionary/src/gdict-app.c:345
+#: ../mate-dictionary/src/gdict-app.c:339
 msgid "Print result to the console"
 msgstr "콘솔에 결과 인쇄"
 
-#: ../mate-dictionary/src/gdict-app.c:347
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "Database to use"
 msgstr "사용할 데이터베이스"
 
-#: ../mate-dictionary/src/gdict-app.c:347
+#: ../mate-dictionary/src/gdict-app.c:341
 msgid "db"
 msgstr "db"
 
-#: ../mate-dictionary/src/gdict-app.c:349
-msgid "Strategy to use"
-msgstr "사용할 방식"
-
-#: ../mate-dictionary/src/gdict-app.c:349
-msgid "strat"
-msgstr "방식"
-
 #. create the new option context
-#: ../mate-dictionary/src/gdict-app.c:361
+#: ../mate-dictionary/src/gdict-app.c:353
 msgid " - Look up words in dictionaries"
 msgstr "- 사전에서 단어를 찾습니다"
 
@@ -1179,64 +2420,59 @@ msgid "Dictionary entry"
 msgstr "사전 입력창"
 
 #: ../mate-dictionary/src/gdict-applet.c:715
-#: ../mate-dictionary/src/gdict-window.c:1097
+#: ../mate-dictionary/src/gdict-window.c:1103
 msgid "Dictionary Preferences"
 msgstr "사전 기본 설정"
 
 #: ../mate-dictionary/src/gdict-applet.c:739
 #: ../mate-dictionary/src/gdict-pref-dialog.c:495
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
-#: ../mate-dictionary/src/gdict-window.c:1244
+#: ../mate-dictionary/src/gdict-window.c:1250
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "도움말을 표시하는 데 오류가 발생했습니다"
 
-#: ../mate-dictionary/src/gdict-applet.c:893
+#: ../mate-dictionary/src/gdict-applet.c:878
 #: ../mate-dictionary/src/gdict-window.c:519
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "이름이 '%s'인 사전 소스가 없습니다"
 
-#: ../mate-dictionary/src/gdict-applet.c:897
+#: ../mate-dictionary/src/gdict-applet.c:882
 #: ../mate-dictionary/src/gdict-window.c:523
 msgid "Unable to find dictionary source"
 msgstr "사전 소스를 찾을 수 없습니다"
 
-#: ../mate-dictionary/src/gdict-applet.c:913
+#: ../mate-dictionary/src/gdict-applet.c:898
 #: ../mate-dictionary/src/gdict-window.c:539
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "'%s' 소스에 대해 사용할 수 있는 컨텍스트가 없습니다"
 
-#: ../mate-dictionary/src/gdict-applet.c:917
+#: ../mate-dictionary/src/gdict-applet.c:902
 #: ../mate-dictionary/src/gdict-window.c:543
 msgid "Unable to create a context"
 msgstr "컨텍스트를 만들 수 없습니다"
 
-#: ../mate-dictionary/src/gdict-applet.c:1198
+#: ../mate-dictionary/src/gdict-applet.c:1170
 msgid "_Look Up Selected Text"
 msgstr "선택한 글자를 찾습니다(_L)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1201
+#: ../mate-dictionary/src/gdict-applet.c:1173
 msgid "Cl_ear"
 msgstr "지우기(_E)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1204
+#: ../mate-dictionary/src/gdict-applet.c:1176
 msgid "_Print"
 msgstr "인쇄(_P)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1207
+#: ../mate-dictionary/src/gdict-applet.c:1179
 msgid "_Save"
 msgstr "저장(_S)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1210
+#: ../mate-dictionary/src/gdict-applet.c:1182
 msgid "Preferences"
 msgstr "환경 설정"
-
-#: ../mate-dictionary/src/gdict-applet.c:1216
-#: ../mate-dictionary/src/gdict-window.c:1334 ../logview/logview-window.c:840
-msgid "_About"
-msgstr "정보(_A)"
 
 #: ../mate-dictionary/src/gdict-common.c:80
 #, c-format
@@ -1325,179 +2561,171 @@ msgstr[0] "%d개의 단어 정의를 찾았습니다"
 msgid "%s - Dictionary"
 msgstr "%s - 사전"
 
-#: ../mate-dictionary/src/gdict-window.c:1278 ../logview/logview-window.c:808
-msgid "_File"
-msgstr "파일(_F)"
-
-#: ../mate-dictionary/src/gdict-window.c:1281
+#: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_Go"
 msgstr "이동(_G)"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1285
+#: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_New"
 msgstr "새로 만들기(_N)"
 
-#: ../mate-dictionary/src/gdict-window.c:1286
+#: ../mate-dictionary/src/gdict-window.c:1292
 msgid "New look up"
 msgstr "새로 찾아 보기"
 
-#: ../mate-dictionary/src/gdict-window.c:1287
+#: ../mate-dictionary/src/gdict-window.c:1293
 msgid "_Save a Copy..."
 msgstr "복사본 저장(_S)..."
 
-#: ../mate-dictionary/src/gdict-window.c:1289
+#: ../mate-dictionary/src/gdict-window.c:1295
 msgid "P_review..."
 msgstr "미리 보기(_R)..."
 
-#: ../mate-dictionary/src/gdict-window.c:1290
+#: ../mate-dictionary/src/gdict-window.c:1296
 msgid "Preview this document"
 msgstr "이 문서를 미리 봅니다"
 
-#: ../mate-dictionary/src/gdict-window.c:1291
+#: ../mate-dictionary/src/gdict-window.c:1297
 msgid "_Print..."
 msgstr "인쇄(_P)..."
 
-#: ../mate-dictionary/src/gdict-window.c:1292
+#: ../mate-dictionary/src/gdict-window.c:1298
 msgid "Print this document"
 msgstr "이 문서를 인쇄합니다"
 
-#: ../mate-dictionary/src/gdict-window.c:1299 ../logview/logview-window.c:823
-msgid "Select _All"
-msgstr "모두 선택(_A)"
-
-#: ../mate-dictionary/src/gdict-window.c:1302
+#: ../mate-dictionary/src/gdict-window.c:1308
 msgid "Find a word or phrase in the document"
 msgstr "문서에서 단어나 문구를 찾아 봅니다"
 
-#: ../mate-dictionary/src/gdict-window.c:1304
+#: ../mate-dictionary/src/gdict-window.c:1310
 msgid "Find Ne_xt"
 msgstr "다음 찾기(_X)"
 
-#: ../mate-dictionary/src/gdict-window.c:1306
+#: ../mate-dictionary/src/gdict-window.c:1312
 msgid "Find Pre_vious"
 msgstr "이전 찾기(_V)"
 
-#: ../mate-dictionary/src/gdict-window.c:1308
+#: ../mate-dictionary/src/gdict-window.c:1314
 msgid "_Preferences"
 msgstr "기본 설정(_P)"
 
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1312
+#: ../mate-dictionary/src/gdict-window.c:1318
 msgid "_Previous Definition"
 msgstr "이전 단어 정의(_P)"
 
-#: ../mate-dictionary/src/gdict-window.c:1313
+#: ../mate-dictionary/src/gdict-window.c:1319
 msgid "Go to the previous definition"
 msgstr "이전 단어 정의로 갑니다"
 
-#: ../mate-dictionary/src/gdict-window.c:1314
+#: ../mate-dictionary/src/gdict-window.c:1320
 msgid "_Next Definition"
 msgstr "다음 단어 정의(_N)"
 
-#: ../mate-dictionary/src/gdict-window.c:1315
+#: ../mate-dictionary/src/gdict-window.c:1321
 msgid "Go to the next definition"
 msgstr "다음 단어 정의로 갑니다"
 
-#: ../mate-dictionary/src/gdict-window.c:1316
+#: ../mate-dictionary/src/gdict-window.c:1322
 msgid "_First Definition"
 msgstr "처음 단어 정의(_F)"
 
-#: ../mate-dictionary/src/gdict-window.c:1317
+#: ../mate-dictionary/src/gdict-window.c:1323
 msgid "Go to the first definition"
 msgstr "첫번째 단어 정의로 갑니다"
 
-#: ../mate-dictionary/src/gdict-window.c:1318
+#: ../mate-dictionary/src/gdict-window.c:1324
 msgid "_Last Definition"
 msgstr "마지막 단어 정의(_L)"
 
-#: ../mate-dictionary/src/gdict-window.c:1319
+#: ../mate-dictionary/src/gdict-window.c:1325
 msgid "Go to the last definition"
 msgstr "마지막 단어 정의로 갑니다"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1322
+#: ../mate-dictionary/src/gdict-window.c:1328
 msgid "Similar _Words"
 msgstr "비슷한 단어(_W)"
 
-#: ../mate-dictionary/src/gdict-window.c:1324
+#: ../mate-dictionary/src/gdict-window.c:1330
 msgid "Dictionary Sources"
 msgstr "사전 소스"
 
-#: ../mate-dictionary/src/gdict-window.c:1326
+#: ../mate-dictionary/src/gdict-window.c:1332
 msgid "Available _Databases"
 msgstr "사용 가능한 데이터베이스(_D)"
 
-#: ../mate-dictionary/src/gdict-window.c:1328
+#: ../mate-dictionary/src/gdict-window.c:1334
 msgid "Available St_rategies"
 msgstr "사용 가능한 찾기 방식(_R)"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1345
+#: ../mate-dictionary/src/gdict-window.c:1351
 msgid "_Sidebar"
 msgstr "가장자리 창(_S)"
 
-#: ../mate-dictionary/src/gdict-window.c:1347
+#: ../mate-dictionary/src/gdict-window.c:1353
 msgid "S_tatusbar"
 msgstr "상태 표시줄(_T)"
 
-#: ../mate-dictionary/src/gdict-window.c:1412
+#: ../mate-dictionary/src/gdict-window.c:1418
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "`%s' 사전 소스를 선택했습니다"
 
-#: ../mate-dictionary/src/gdict-window.c:1433
+#: ../mate-dictionary/src/gdict-window.c:1439
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "`%s' 찾기 방식을 선택했습니다"
 
-#: ../mate-dictionary/src/gdict-window.c:1453
+#: ../mate-dictionary/src/gdict-window.c:1459
 #, c-format
 msgid "Database `%s' selected"
 msgstr "`%s' 데이터베이스를 선택했습니다"
 
-#: ../mate-dictionary/src/gdict-window.c:1473
+#: ../mate-dictionary/src/gdict-window.c:1479
 #, c-format
 msgid "Word `%s' selected"
 msgstr "`%s' 단어를 선택했습니다"
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1498
+#: ../mate-dictionary/src/gdict-window.c:1504
 msgid "Double-click on the word to look up"
 msgstr "찾아보려는 단어를 두번 누르십시오"
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1504
+#: ../mate-dictionary/src/gdict-window.c:1510
 msgid "Double-click on the matching strategy to use"
 msgstr "사용할 찾기 방식을 두 번 누르십시오"
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1509
+#: ../mate-dictionary/src/gdict-window.c:1515
 msgid "Double-click on the source to use"
 msgstr "사용할 소스를 두 번 누르십시오"
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1518
+#: ../mate-dictionary/src/gdict-window.c:1524
 msgid "Double-click on the database to use"
 msgstr "사용할 데이터베이스를 두 번 누르십시오"
 
-#: ../mate-dictionary/src/gdict-window.c:1770
+#: ../mate-dictionary/src/gdict-window.c:1776
 msgid "Look _up:"
 msgstr "단어 찾아 보기(_U):"
 
-#: ../mate-dictionary/src/gdict-window.c:1849
+#: ../mate-dictionary/src/gdict-window.c:1855
 msgid "Similar words"
 msgstr "비슷한 단어"
 
-#: ../mate-dictionary/src/gdict-window.c:1862
+#: ../mate-dictionary/src/gdict-window.c:1868
 msgid "Available dictionaries"
 msgstr "사용 가능한 사전"
 
-#: ../mate-dictionary/src/gdict-window.c:1880
+#: ../mate-dictionary/src/gdict-window.c:1886
 msgid "Available strategies"
 msgstr "사용 가능한 찾기 방식"
 
-#: ../mate-dictionary/src/gdict-window.c:1896
+#: ../mate-dictionary/src/gdict-window.c:1902
 msgid "Dictionary sources"
 msgstr "사전 소스"
 
@@ -1542,80 +2770,154 @@ msgstr "사전"
 msgid "Strategies"
 msgstr "찾기 방식"
 
-#: ../mate-screenshot/mate-screenshot.c:133
+#: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:1
+msgid "A screenshot utility for MATE Desktop"
+msgstr "마테 데스크톱용 화면 촬영 도구"
+
+#: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:2
+msgid ""
+"<p> MATE Screenshot is a simple utility that lets you capture screenshots of"
+" your desktop or of application windows. You can select to copy them to the "
+"system clipboard or save them in Portable Network Graphics (.png) image "
+"format. </p>"
+msgstr "<p> 마테 스크린샷은 바탕 화면 또는 응용 프로그램 창의 화면을 캡처할 수있는 간단한 유틸리티입니다. 선택해서 시스템 클립보드에 복사하고 이동식 네트워크 그래픽 이미지 형식(.png) 으로 저장할 수 있습니다. </p>"
+
+#: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
+#: ../mate-screenshot/src/mate-screenshot.c:516
+#: ../mate-screenshot/src/mate-screenshot.c:524
+msgid "Take Screenshot"
+msgstr "스크린샷 찍기"
+
+#: ../mate-screenshot/data/mate-screenshot.desktop.in.h:2
+msgid "Save images of your desktop or individual windows"
+msgstr "데스크톱이나 창 한 개의 스크린샷을 저장합니다"
+
+#: ../mate-screenshot/data/mate-screenshot.ui.h:1
+msgid "Save Screenshot"
+msgstr "스크린샷 저장"
+
+#: ../mate-screenshot/data/mate-screenshot.ui.h:2
+msgid "C_opy to Clipboard"
+msgstr "클립보드로 복사(_O)"
+
+#: ../mate-screenshot/data/mate-screenshot.ui.h:4
+msgid "Save in _folder:"
+msgstr "폴더에 저장(_F):"
+
+#: ../mate-screenshot/data/mate-screenshot.ui.h:5
+msgid "*"
+msgstr "*"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:1
+msgid "Screenshot delay"
+msgstr "스크린샷 지연 시간"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:2
+msgid "The number of seconds to wait before taking the screenshot."
+msgstr "스크린샷을 찍기 전에 기다릴 시간, 초 단위."
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:3
+msgid "Screenshot directory"
+msgstr "스크린샷 디렉터리"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:4
+msgid "The directory the last screenshot was saved in."
+msgstr "스크린샷을 마지막에 저장할 때 사용한 디렉터리."
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:5
+msgid "Include Border"
+msgstr "테두리 포함"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:6
+msgid "Include the window manager border along with the screenshot"
+msgstr "화면을 잡을 때 창 관리자 테두리도 포함"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:7
+msgid "Include Pointer"
+msgstr "마우스 포인터 포함"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:8
+msgid "Include the pointer in the screenshot"
+msgstr "화면을 찍을 때 마우스 포인터를 포함합니다"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:9
+msgid "Border Effect"
+msgstr "테두리 효과"
+
+#: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:10
+msgid ""
+"Effect to add to the outside of a border. Possible values are \"shadow\", "
+"\"none\", and \"border\"."
+msgstr "테두리에 바깥 쪽에 넣을 효과. 쓸 수 있는 값은 \"shadow\", \"none\", \"border\"입니다."
+
+#: ../mate-screenshot/src/mate-screenshot.c:133
 msgid "Error loading the help page"
 msgstr "도움말 페이지를 읽어들이는 데 오류"
 
-#: ../mate-screenshot/mate-screenshot.c:245
+#: ../mate-screenshot/src/mate-screenshot.c:245
 msgid "None"
 msgstr "없음"
 
-#: ../mate-screenshot/mate-screenshot.c:246
+#: ../mate-screenshot/src/mate-screenshot.c:246
 msgid "Drop shadow"
 msgstr "그림자 넣기"
 
-#: ../mate-screenshot/mate-screenshot.c:247
+#: ../mate-screenshot/src/mate-screenshot.c:247
 msgid "Border"
 msgstr "테두리"
 
 #. * Include pointer *
-#: ../mate-screenshot/mate-screenshot.c:351
+#: ../mate-screenshot/src/mate-screenshot.c:351
 msgid "Include _pointer"
 msgstr "마우스 포인터 포함(_P)"
 
 #. * Include window border *
-#: ../mate-screenshot/mate-screenshot.c:360
+#: ../mate-screenshot/src/mate-screenshot.c:360
 msgid "Include the window _border"
 msgstr "창 테두리 포함(_B)"
 
-#: ../mate-screenshot/mate-screenshot.c:375
+#: ../mate-screenshot/src/mate-screenshot.c:375
 msgid "Apply _effect:"
 msgstr "효과 적용(_E):"
 
-#: ../mate-screenshot/mate-screenshot.c:437
+#: ../mate-screenshot/src/mate-screenshot.c:437
 msgid "Grab the whole _desktop"
 msgstr "전체 데스크톱 찍기(_D)"
 
-#: ../mate-screenshot/mate-screenshot.c:449
+#: ../mate-screenshot/src/mate-screenshot.c:449
 msgid "Grab the current _window"
 msgstr "현재 창 찍기(_W)"
 
-#: ../mate-screenshot/mate-screenshot.c:461
+#: ../mate-screenshot/src/mate-screenshot.c:461
 msgid "Select _area to grab"
 msgstr "잡을 영역 선택(_A)"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/mate-screenshot.c:478
+#: ../mate-screenshot/src/mate-screenshot.c:478
 msgid "Grab _after a delay of"
 msgstr "다음 시간이 지난 후에 찍기(_A): "
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/mate-screenshot.c:498
-#: ../mate-screenshot/mate-screenshot.c:1273
+#: ../mate-screenshot/src/mate-screenshot.c:498
+#: ../mate-screenshot/src/mate-screenshot.c:1263
 msgid "seconds"
 msgstr "초"
 
-#: ../mate-screenshot/mate-screenshot.c:516
-#: ../mate-screenshot/mate-screenshot.c:524
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:1
-msgid "Take Screenshot"
-msgstr "스크린샷 찍기"
-
-#: ../mate-screenshot/mate-screenshot.c:525
+#: ../mate-screenshot/src/mate-screenshot.c:525
 msgid "Effects"
 msgstr "효과"
 
-#: ../mate-screenshot/mate-screenshot.c:530
+#: ../mate-screenshot/src/mate-screenshot.c:530
 msgid "Take _Screenshot"
 msgstr "스크린샷 찍기(_S)"
 
-#: ../mate-screenshot/mate-screenshot.c:650
+#: ../mate-screenshot/src/mate-screenshot.c:650
 msgid "Error while saving screenshot"
 msgstr "스크린샷을 저장하는 데 오류가 발생했습니다"
 
-#: ../mate-screenshot/mate-screenshot.c:653
+#: ../mate-screenshot/src/mate-screenshot.c:653
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -1623,166 +2925,80 @@ msgid ""
 " Please choose another location and retry."
 msgstr "%s에 스크린샷을 저장할 수 없습니다.\n 오류는 %s.\n 다른 위치를 선택하고 다시 시도해 보십시오."
 
-#: ../mate-screenshot/mate-screenshot.c:785
+#: ../mate-screenshot/src/mate-screenshot.c:785
 msgid "Screenshot taken"
 msgstr "스크린샷을 찍었습니다"
 
-#: ../mate-screenshot/mate-screenshot.c:840
+#: ../mate-screenshot/src/mate-screenshot.c:840
 msgid "Unable to take a screenshot of the current window"
 msgstr "현재 창의 스크린샷을 찍을 수 없습니다."
 
-#: ../mate-screenshot/mate-screenshot.c:893
-#, c-format
-msgid "Screenshot-%s.png"
-msgstr "화면-%s.png"
-
-#. translators: this is the name of the file that gets
-#. * made up with the screenshot if a specific window is
-#. * taken
-#: ../mate-screenshot/mate-screenshot.c:900
-#, c-format
-msgid "Screenshot-%s-%d.png"
-msgstr "화면-%s-%d.png"
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format (eg, like
+#. * in France: 20:10).
+#: ../mate-screenshot/src/mate-screenshot.c:893
+msgid "%Y-%m-%d %H:%M:%S"
+msgstr "%Y-%m-%d %H:%M:%S"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/mate-screenshot.c:910
-#: ../mate-screenshot/screenshot-dialog.c:369
-#: ../mate-screenshot/screenshot-save.c:196
-msgid "Screenshot.png"
-msgstr "화면.png"
+#: ../mate-screenshot/src/mate-screenshot.c:900
+#, c-format
+msgid "Screenshot at %s.png"
+msgstr "스크린샷 %s.png"
 
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/mate-screenshot.c:917
+#: ../mate-screenshot/src/mate-screenshot.c:907
 #, c-format
-msgid "Screenshot-%d.png"
-msgstr "화면-%d.png"
+msgid "Screenshot at %s - %d.png"
+msgstr "스크린샷 %s - %d.png"
 
-#: ../mate-screenshot/mate-screenshot.c:1269
+#: ../mate-screenshot/src/mate-screenshot.c:1259
 msgid "Grab a window instead of the entire screen"
 msgstr "전체 화면 대신에 창을 찍습니다"
 
-#: ../mate-screenshot/mate-screenshot.c:1270
+#: ../mate-screenshot/src/mate-screenshot.c:1260
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "전체 화면 대신에 화면의 일정 영역을 찍습니다"
 
-#: ../mate-screenshot/mate-screenshot.c:1271
+#: ../mate-screenshot/src/mate-screenshot.c:1261
 msgid "Include the window border with the screenshot"
 msgstr "화면을 찍을 때 창 테두리를 포함합니다"
 
-#: ../mate-screenshot/mate-screenshot.c:1272
+#: ../mate-screenshot/src/mate-screenshot.c:1262
 msgid "Remove the window border from the screenshot"
 msgstr "화면을 찍을 때 창 테두리를 제거합니다"
 
-#: ../mate-screenshot/mate-screenshot.c:1273
+#: ../mate-screenshot/src/mate-screenshot.c:1263
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "지정한 시간 (초 단위) 이후에 화면을 찍습니다"
 
-#: ../mate-screenshot/mate-screenshot.c:1274
+#: ../mate-screenshot/src/mate-screenshot.c:1264
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "테두리에 넣을 효과 (shadow, border 아니면 none)"
 
-#: ../mate-screenshot/mate-screenshot.c:1274
+#: ../mate-screenshot/src/mate-screenshot.c:1264
 msgid "effect"
 msgstr "테두리 효과"
 
-#: ../mate-screenshot/mate-screenshot.c:1275
+#: ../mate-screenshot/src/mate-screenshot.c:1265
 msgid "Interactively set options"
 msgstr "대화형 인터페이스로 옵션 설정"
 
-#: ../mate-screenshot/mate-screenshot.c:1284
+#: ../mate-screenshot/src/mate-screenshot.c:1274
 msgid "Take a picture of the screen"
 msgstr "화면을 찍습니다"
 
-#: ../mate-screenshot/mate-screenshot.c:1302
+#: ../mate-screenshot/src/mate-screenshot.c:1292
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"
 msgstr "옵션 충돌: --window 옵션과 --area 옵션은 같이 사용할 수 없습니다.\n"
 
-#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:1
-msgid "A screenshot utility for MATE Desktop"
-msgstr "마테(MATE) 데스크톱용 화면 촬영 도구"
-
-#: ../mate-screenshot/mate-screenshot.appdata.xml.in.h:2
-msgid ""
-"<p> MATE Screenshot is a simple utility that lets you capture screenshots of"
-" your desktop or of application windows. You can select to copy them to the "
-"system clipboard or save them in Portable Network Graphics (.png) image "
-"format. </p>"
-msgstr "<p> 마테(MATE) 스크린샷은 바탕 화면 또는 응용 프로그램 창의 화면을 캡처할 수있는 간단한 유틸리티입니다. 선택해서 시스템 클립보드에 복사하고 이동식 네트워크 그래픽 이미지 형식(.png) 으로 저장할 수 있습니다. </p>"
-
-#: ../mate-screenshot/mate-screenshot.desktop.in.h:2
-msgid "Save images of your desktop or individual windows"
-msgstr "데스크톱이나 창 한 개의 스크린샷을 저장합니다"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:1
-msgid "Save Screenshot"
-msgstr "스크린샷 저장"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:2
-msgid "C_opy to Clipboard"
-msgstr "클립보드로 복사(_O)"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:3
-#: ../logview/data/logview-filter.ui.h:1
-msgid "_Name:"
-msgstr "이름(_N):"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:4
-msgid "Save in _folder:"
-msgstr "폴더에 저장(_F):"
-
-#: ../mate-screenshot/mate-screenshot.ui.h:5
-msgid "*"
-msgstr "*"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:1
-msgid "Screenshot delay"
-msgstr "스크린샷 지연 시간"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:2
-msgid "The number of seconds to wait before taking the screenshot."
-msgstr "스크린샷을 찍기 전에 기다릴 시간, 초 단위."
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:3
-msgid "Screenshot directory"
-msgstr "스크린샷 디렉터리"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:4
-msgid "The directory the last screenshot was saved in."
-msgstr "스크린샷을 마지막에 저장할 때 사용한 디렉터리."
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:5
-msgid "Include Border"
-msgstr "테두리 포함"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:6
-msgid "Include the window manager border along with the screenshot"
-msgstr "화면을 잡을 때 창 관리자 테두리도 포함"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:7
-msgid "Include Pointer"
-msgstr "마우스 포인터 포함"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:8
-msgid "Include the pointer in the screenshot"
-msgstr "화면을 찍을 때 마우스 포인터를 포함합니다"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:9
-msgid "Border Effect"
-msgstr "테두리 효과"
-
-#: ../mate-screenshot/org.mate.screenshot.gschema.xml.in.h:10
-msgid ""
-"Effect to add to the outside of a border. Possible values are \"shadow\", "
-"\"none\", and \"border\"."
-msgstr "테두리에 바깥 쪽에 넣을 효과. 쓸 수 있는 값은 \"shadow\", \"none\", \"border\"입니다."
-
-#: ../mate-screenshot/screenshot-dialog.c:246
+#: ../mate-screenshot/src/screenshot-dialog.c:246
 #, c-format
 msgid ""
 "Error loading UI definition file for the screenshot program: \n"
@@ -1791,1259 +3007,50 @@ msgid ""
 "Please check your installation of mate-utils."
 msgstr "스크린샷 프로그램의 UI 정의를 불러오던 중 오류 발생 :\n%s\n\nmate-utils의 설치를 확인하세요."
 
-#: ../mate-screenshot/screenshot-dialog.c:269
+#: ../mate-screenshot/src/screenshot-dialog.c:269
 msgid "Select a folder"
 msgstr "폴더 선택"
 
-#: ../mate-screenshot/screenshot-save.c:57
+#: ../mate-screenshot/src/screenshot-dialog.c:369
+#: ../mate-screenshot/src/screenshot-save.c:196
+msgid "Screenshot.png"
+msgstr "화면.png"
+
+#: ../mate-screenshot/src/screenshot-save.c:57
 #, c-format
 msgid ""
 "Unable to clear the temporary folder:\n"
 "%s"
 msgstr "임시 폴더를 비울 수 없습니다:\n%s"
 
-#: ../mate-screenshot/screenshot-save.c:95
+#: ../mate-screenshot/src/screenshot-save.c:95
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
 msgstr "하위 저장 프로세스가 갑자기 끝났습니다.  잡은 화면 파일을 디스크에 쓸 수 없습니다."
 
-#: ../mate-screenshot/screenshot-save.c:223
+#: ../mate-screenshot/src/screenshot-save.c:223
 msgid "Unknown error saving screenshot to disk"
 msgstr "잡은 화면을 디스크에 저장하는 데 알 수 없는 오류"
 
 #. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-#: ../mate-screenshot/screenshot-utils.c:998
+#: ../mate-screenshot/src/screenshot-utils.c:998
 msgid "Untitled Window"
 msgstr "제목 없는 창"
 
-#: ../mate-screenshot/screenshot-xfer.c:72
+#: ../mate-screenshot/src/screenshot-xfer.c:72
 msgid "File already exists"
 msgstr "파일이 이미 있습니다"
 
-#: ../mate-screenshot/screenshot-xfer.c:75
+#: ../mate-screenshot/src/screenshot-xfer.c:75
 #, c-format
 msgid "The file \"%s\" already exists. Would you like to replace it?"
 msgstr "\"%s\" 파일이 이미 있습니다. 이 파일을 바꾸시겠습니까?"
 
-#: ../mate-screenshot/screenshot-xfer.c:82
-#: ../gsearchtool/gsearchtool-callbacks.c:1726
-msgid "_Replace"
-msgstr "바꾸기(_R)"
-
-#: ../mate-screenshot/screenshot-xfer.c:120
+#: ../mate-screenshot/src/screenshot-xfer.c:120
 msgid "Saving file..."
 msgstr "파일을 저장하는 중입니다..."
 
-#: ../mate-screenshot/screenshot-xfer.c:290
+#: ../mate-screenshot/src/screenshot-xfer.c:290
 msgid "Can't access source file"
 msgstr "원본 파일에 접근할 수 없습니다"
-
-#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
-msgid "A file searching tool for MATE Desktop"
-msgstr "마테(MATE) 데스크톱용 파일 검색 도구 "
-
-#: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
-msgid ""
-"<p> MATE Search Tool is a simple but powerful utility that allows you to "
-"search for files and folders on any mounted file system. Its interface gives"
-" you instant access to a wide variety of parameters for each search, such as"
-" text contained within a file, ownership, date of modification, file size, "
-"folder exclusion, etc.. </p>"
-msgstr "<p>마테(MATE) 검색 도구는 연결된 모든 파일 시스템의 파일과 폴더를 찾아낼 수 있는 간단하지만 강력한 도구입니다. 그 인터페이스는 파일에 포함된 텍스트, 소유권, 수정 날짜, 파일 크기, 폴더 제외 등의 다양한 매개 변수에 바로 접근할 수 있게 합니다. </p>"
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:1
-msgid "MATE Search Tool"
-msgstr "마테(MATE) 검색 도구"
-
-#: ../gsearchtool/mate-search-tool.desktop.in.h:2
-msgid "Locate documents and folders on this computer by name or content"
-msgstr "이 컴퓨터의 문서나 폴더를 이름이나 내용으로 찾습니다"
-
-#: ../gsearchtool/gsearchtool.c:82
-msgid "Contains the _text"
-msgstr "텍스트 포함(_T)"
-
-#: ../gsearchtool/gsearchtool.c:84
-msgid "_Date modified less than"
-msgstr "최근에 바뀐 기간(_D)"
-
-#: ../gsearchtool/gsearchtool.c:84 ../gsearchtool/gsearchtool.c:85
-msgid "days"
-msgstr "일"
-
-#: ../gsearchtool/gsearchtool.c:85
-msgid "Date modified more than"
-msgstr "이후에 바뀐 기간"
-
-#: ../gsearchtool/gsearchtool.c:87
-msgid "S_ize at least"
-msgstr "최소 크기(_I)"
-
-#: ../gsearchtool/gsearchtool.c:87 ../gsearchtool/gsearchtool.c:88
-msgid "kilobytes"
-msgstr "킬로바이트"
-
-#: ../gsearchtool/gsearchtool.c:88
-msgid "Si_ze at most"
-msgstr "최대 크기(_Z)"
-
-#: ../gsearchtool/gsearchtool.c:89
-msgid "File is empty"
-msgstr "비어 있는 파일"
-
-#: ../gsearchtool/gsearchtool.c:91
-msgid "Owned by _user"
-msgstr "소유한 사람(_U)"
-
-#: ../gsearchtool/gsearchtool.c:92
-msgid "Owned by _group"
-msgstr "소유한 그룹(_G)"
-
-#: ../gsearchtool/gsearchtool.c:93
-msgid "Owner is unrecognized"
-msgstr "소유자 알 수 없음"
-
-#: ../gsearchtool/gsearchtool.c:95
-msgid "Na_me does not contain"
-msgstr "이름에 들어 있지 않음(_M)"
-
-#: ../gsearchtool/gsearchtool.c:96
-msgid "Name matches regular e_xpression"
-msgstr "이름이 정규 표현식에 해당(_X)"
-
-#: ../gsearchtool/gsearchtool.c:98
-msgid "Show hidden and backup files"
-msgstr "숨겨진 파일 혹은 백업 파일 보기"
-
-#: ../gsearchtool/gsearchtool.c:99
-msgid "Follow symbolic links"
-msgstr "심볼릭 링크 따라가기"
-
-#: ../gsearchtool/gsearchtool.c:100
-msgid "Exclude other filesystems"
-msgstr "다른 파일 시스템 제외"
-
-#: ../gsearchtool/gsearchtool.c:158
-msgid "Show version of the application"
-msgstr "프로그램의 버전을 표시합니다"
-
-#: ../gsearchtool/gsearchtool.c:159 ../gsearchtool/gsearchtool.c:164
-#: ../gsearchtool/gsearchtool.c:173
-msgid "STRING"
-msgstr "<문자열>"
-
-#: ../gsearchtool/gsearchtool.c:160
-msgid "PATH"
-msgstr "<경로>"
-
-#: ../gsearchtool/gsearchtool.c:161
-msgid "VALUE"
-msgstr "<값>"
-
-#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
-msgid "DAYS"
-msgstr "<몇일>"
-
-#: ../gsearchtool/gsearchtool.c:167 ../gsearchtool/gsearchtool.c:168
-msgid "KILOBYTES"
-msgstr "<킬로바이트>"
-
-#: ../gsearchtool/gsearchtool.c:170
-msgid "USER"
-msgstr "<사용자>"
-
-#: ../gsearchtool/gsearchtool.c:171
-msgid "GROUP"
-msgstr "<그룹>"
-
-#: ../gsearchtool/gsearchtool.c:174
-msgid "PATTERN"
-msgstr "<패턴>"
-
-#: ../gsearchtool/gsearchtool.c:385
-msgid "A locate database has probably not been created."
-msgstr "위치 데이터베이스를 아직 만들지 않았습니다."
-
-#: ../gsearchtool/gsearchtool.c:487
-#, c-format
-msgid "Character set conversion failed for \"%s\""
-msgstr "\"%s\"에 대한 문자세트 변환이 실패했습니다"
-
-#: ../gsearchtool/gsearchtool.c:511
-msgid "Searching..."
-msgstr "찾는 중입니다..."
-
-#: ../gsearchtool/gsearchtool.c:511 ../gsearchtool/gsearchtool.c:1031
-#: ../gsearchtool/gsearchtool.c:3030
-msgid "Search for Files"
-msgstr "파일 검색"
-
-#: ../gsearchtool/gsearchtool.c:977 ../gsearchtool/gsearchtool.c:1006
-msgid "No files found"
-msgstr "찾은 파일이 없습니다."
-
-#: ../gsearchtool/gsearchtool.c:999
-msgid "(stopped)"
-msgstr "(멈춤)"
-
-#: ../gsearchtool/gsearchtool.c:1005
-msgid "No Files Found"
-msgstr "파일이 없습니다"
-
-#: ../gsearchtool/gsearchtool.c:1010
-#, c-format
-msgid "%'d File Found"
-msgid_plural "%'d Files Found"
-msgstr[0] "%'d개의 파일을 찾았습니다"
-
-#: ../gsearchtool/gsearchtool.c:1014 ../gsearchtool/gsearchtool.c:1052
-#, c-format
-msgid "%'d file found"
-msgid_plural "%'d files found"
-msgstr[0] "%'d개의 파일을 찾았습니다"
-
-#: ../gsearchtool/gsearchtool.c:1143
-msgid "Entry changed called for a non entry option!"
-msgstr "엔트리가 없는 옵션에 대하여 엔트리 바뀜 콜백이 실행되었습니다!"
-
-#: ../gsearchtool/gsearchtool.c:1308
-msgid "Set the text of \"Name contains\" search option"
-msgstr "\"이름에 포함\" 검색 옵션의 텍스트 지정"
-
-#: ../gsearchtool/gsearchtool.c:1309
-msgid "Set the text of \"Look in folder\" search option"
-msgstr "\"폴더 안에 찾기\" 검색 옵션의 텍스트 지정"
-
-#: ../gsearchtool/gsearchtool.c:1310
-msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "파일을 다음 중 하나로 정렬: 이름, 폴더, 크기, 타입, 날짜"
-
-#: ../gsearchtool/gsearchtool.c:1311
-msgid "Set sort order to descending, the default is ascending"
-msgstr "정렬 순서를 내림차순으로 합니다. 기본값은 오름차순입니다"
-
-#: ../gsearchtool/gsearchtool.c:1312
-msgid "Automatically start a search"
-msgstr "자동으로 검색 시작"
-
-#: ../gsearchtool/gsearchtool.c:1318
-#, c-format
-msgid "Select the \"%s\" search option"
-msgstr "\"%s\" 검색 옵션 선택"
-
-#: ../gsearchtool/gsearchtool.c:1321
-#, c-format
-msgid "Select and set the \"%s\" search option"
-msgstr "\"%s\" 검색 옵션 선택 및 사용"
-
-#: ../gsearchtool/gsearchtool.c:1428
-msgid "Invalid option passed to sortby command line argument."
-msgstr "명령행 인자 sortby에 전달된 옵션이 잘못되었습니다."
-
-#: ../gsearchtool/gsearchtool.c:1720
-msgid ""
-"\n"
-"... Too many errors to display ..."
-msgstr "\n... 너무 오류가 많아서 보여 줄 수 없습니다  ..."
-
-#: ../gsearchtool/gsearchtool.c:1734
-msgid ""
-"The search results may be invalid.  There were errors while performing this "
-"search."
-msgstr "찾은 결과가 잘못되었을 것입니다.  검색을 실행하는 중에 오류가 발생했습니다."
-
-#: ../gsearchtool/gsearchtool.c:1746 ../gsearchtool/gsearchtool.c:1790
-msgid "Show more _details"
-msgstr "자세히 보기(_D)"
-
-#: ../gsearchtool/gsearchtool.c:1776
-msgid ""
-"The search results may be out of date or invalid.  Do you want to disable "
-"the quick search feature?"
-msgstr "찾은 결과가 잘못되었을 것입니다.  빠른 검색 기능을 끄시겠습니까?"
-
-#: ../gsearchtool/gsearchtool.c:1801
-msgid "Disable _Quick Search"
-msgstr "빠른 검색 끄기(_Q)"
-
-#: ../gsearchtool/gsearchtool.c:1828
-#, c-format
-msgid "Failed to set process group id of child %d: %s.\n"
-msgstr "하위 프로세스 %d의 프로세스 그룹 ID를 설정하는 데 실패했습니다: %s.\n"
-
-#: ../gsearchtool/gsearchtool.c:1853
-msgid "Error parsing the search command."
-msgstr "검색 명령어를 파싱하는 데 오류가 발생했습니다."
-
-#: ../gsearchtool/gsearchtool.c:1885
-msgid "Error running the search command."
-msgstr "검색 명령어를 실행하는 데 오류가 발생했습니다."
-
-#: ../gsearchtool/gsearchtool.c:2008
-#, c-format
-msgid "Enter a text value for the \"%s\" search option."
-msgstr "\"%s\" 검색 옵션의 텍스트 값을 입력하십시오."
-
-#. Translators:  Below is a string displaying the search options name
-#. and unit value.  For example, "\"Date modified less than\" in days".
-#: ../gsearchtool/gsearchtool.c:2013
-#, c-format
-msgid "\"%s\" in %s"
-msgstr "\"%s\" (%s 단위)"
-
-#: ../gsearchtool/gsearchtool.c:2015
-#, c-format
-msgid "Enter a value in %s for the \"%s\" search option."
-msgstr "\"%2$s\" 검색 옵션의 %1$s 안의 값을 입력하십시오."
-
-#: ../gsearchtool/gsearchtool.c:2073
-#, c-format
-msgid "Remove \"%s\""
-msgstr "\"%s\" 제거"
-
-#: ../gsearchtool/gsearchtool.c:2074
-#, c-format
-msgid "Click to remove the \"%s\" search option."
-msgstr "\"%s\" 검색 옵션을 제거하려면 누르십시오."
-
-#: ../gsearchtool/gsearchtool.c:2167
-msgid "A_vailable options:"
-msgstr "사용 가능한 옵션(_V):"
-
-#: ../gsearchtool/gsearchtool.c:2196
-msgid "Available options"
-msgstr "사용 가능한 옵션"
-
-#: ../gsearchtool/gsearchtool.c:2197
-msgid "Select a search option from the drop-down list."
-msgstr "드롭다운 목록에서 검색 옵션을 선택합니다."
-
-#: ../gsearchtool/gsearchtool.c:2209
-msgid "Add search option"
-msgstr "검색 옵션을 추가합니다"
-
-#: ../gsearchtool/gsearchtool.c:2210
-msgid "Click to add the selected available search option."
-msgstr "선택하신 사용 가능 검색 옵션을 추가하려면 누르십시오."
-
-#: ../gsearchtool/gsearchtool.c:2299
-msgid "S_earch results:"
-msgstr "찾은 결과(_E):"
-
-#: ../gsearchtool/gsearchtool.c:2343
-msgid "List View"
-msgstr "목록 보기"
-
-#: ../gsearchtool/gsearchtool.c:2452
-msgid "Type"
-msgstr "종류"
-
-#: ../gsearchtool/gsearchtool.c:2464
-msgid "Date Modified"
-msgstr "고친 날짜"
-
-#: ../gsearchtool/gsearchtool.c:2799
-msgid "_Name contains:"
-msgstr "이름에 포함(_N):"
-
-#: ../gsearchtool/gsearchtool.c:2813 ../gsearchtool/gsearchtool.c:2814
-msgid "Enter a filename or partial filename with or without wildcards."
-msgstr "파일 이름이나 파일 이름의 일부를 입력하십시오 (와일드 카드 사용 가능)."
-
-#: ../gsearchtool/gsearchtool.c:2814
-msgid "Name contains"
-msgstr "이름에 포함"
-
-#: ../gsearchtool/gsearchtool.c:2820
-msgid "_Look in folder:"
-msgstr "폴더 안에 찾기(_L):"
-
-#: ../gsearchtool/gsearchtool.c:2826
-msgid "Browse"
-msgstr "찾아보기"
-
-#: ../gsearchtool/gsearchtool.c:2835
-msgid "Look in folder"
-msgstr "폴더 안에 찾습니다"
-
-#: ../gsearchtool/gsearchtool.c:2835
-msgid "Select the folder or device from which you want to begin the search."
-msgstr "검색을 시작할 폴더 혹은 장치를 선택하십시오."
-
-#: ../gsearchtool/gsearchtool.c:2853
-msgid "Select more _options"
-msgstr "많은 옵션 보기(_O)"
-
-#: ../gsearchtool/gsearchtool.c:2862
-msgid "Select more options"
-msgstr "많은 옵션 보기"
-
-#: ../gsearchtool/gsearchtool.c:2862
-msgid "Click to expand or collapse the list of available options."
-msgstr "사용 가능한 옵션 목록을 늘리거나 줄입니다."
-
-#: ../gsearchtool/gsearchtool.c:2886
-msgid "Click to display the help manual."
-msgstr "도움말을 보려면 누르십시오."
-
-#: ../gsearchtool/gsearchtool.c:2894
-msgid "Click to close \"Search for Files\"."
-msgstr "\"파일 검색\"을 닫으려면 누르십시오."
-
-#: ../gsearchtool/gsearchtool.c:2920
-msgid "Click to perform a search."
-msgstr "검색을 수행하려면 누르십시오."
-
-#: ../gsearchtool/gsearchtool.c:2921
-msgid "Click to stop a search."
-msgstr "검색을 중단하려면 누르십시오."
-
-#: ../gsearchtool/gsearchtool.c:3015
-msgid "- the MATE Search Tool"
-msgstr "- 그놈 검색 도구"
-
-#: ../gsearchtool/gsearchtool.c:3024
-#, c-format
-msgid "Failed to parse command line arguments: %s\n"
-msgstr "명령행 인자 파싱이 실패했습니다: %s\n"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:198
-msgid "Could not open help document."
-msgstr "도움말 문서를 열 수 없습니다."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:349
-#, c-format
-msgid "Are you sure you want to open %d document?"
-msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] "정말 %d개의 문서를 여시겠습니까?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:354
-#: ../gsearchtool/gsearchtool-callbacks.c:551
-#, c-format
-msgid "This will open %d separate window."
-msgid_plural "This will open %d separate windows."
-msgstr[0] "%d개의 창을 각각 열게 됩니다."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:394
-#, c-format
-msgid "Could not open document \"%s\"."
-msgstr "%s 문서를 열 수 없습니다."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:423
-#, c-format
-msgid "Could not open folder \"%s\"."
-msgstr "\"%s\" 폴더를 열 수 없습니다."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:431
-msgid "The caja file manager is not running."
-msgstr "노틸러스 파일 관리자가 실행 중이 아닙니다."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:523
-msgid "There is no installed viewer capable of displaying the document."
-msgstr "이 문서를 표시할 수 있는 보기 프로그램이 설치되어 있지 않습니다."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:546
-#, c-format
-msgid "Are you sure you want to open %d folder?"
-msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] "정말로 %d개의 폴더를 여시겠습니까"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:699
-#, c-format
-msgid "Could not move \"%s\" to trash."
-msgstr "\"%s\"을(를) 휴지통에 옮길 수 없습니다."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:730
-#, c-format
-msgid "Do you want to delete \"%s\" permanently?"
-msgstr "\"%s\"을(를) 완전히 삭제하시겠습니까?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:733
-#, c-format
-msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr "휴지통을 사용할 수 없습니다.  \"%s\"을(를) 휴지통으로 옮길 수 없습니다."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:772
-#, c-format
-msgid "Could not delete \"%s\"."
-msgstr "\"%s\"을(를) 삭제할 수 없습니다."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:884
-#, c-format
-msgid "Deleting \"%s\" failed: %s."
-msgstr "\"%s\"을(를) 삭제하는 데 실패했습니다: %s."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:896
-#, c-format
-msgid "Moving \"%s\" failed: %s."
-msgstr "\"%s\"을(를) 옮기는 데 실패했습니다: %s."
-
-#. Popup menu item: Open
-#: ../gsearchtool/gsearchtool-callbacks.c:1024
-#: ../gsearchtool/gsearchtool-callbacks.c:1054
-msgid "_Open"
-msgstr "열기(_O)"
-
-#. Popup menu item: Open with (default)
-#: ../gsearchtool/gsearchtool-callbacks.c:1079
-#, c-format
-msgid "_Open with %s"
-msgstr "%s에서 열기(_O)"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1114
-#, c-format
-msgid "Open with %s"
-msgstr "%s에서 열기"
-
-#. Popup menu item: Open With
-#: ../gsearchtool/gsearchtool-callbacks.c:1147
-msgid "Open Wit_h"
-msgstr "다른 프로그램으로 열기(_H)"
-
-#. Popup menu item: Open Containing Folder
-#: ../gsearchtool/gsearchtool-callbacks.c:1192
-msgid "Open Containing _Folder"
-msgstr "포함하는 폴더 열기(_F)"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1232
-msgid "_Save Results As..."
-msgstr "결과를 다른 이름으로 저장(_S)..."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1614
-msgid "Save Search Results As..."
-msgstr "결과를 다른 이름으로 저장..."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1643
-msgid "Could not save document."
-msgstr "문서를 저장할 수 없습니다."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1644
-msgid "You did not select a document name."
-msgstr "문서 이름을 선택하지 않았습니다."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1674
-#, c-format
-msgid "Could not save \"%s\" document to \"%s\"."
-msgstr "\"%s\" 문서를 %s(으)로 저장할 수 없습니다."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1707
-#, c-format
-msgid "The document \"%s\" already exists.  Would you like to replace it?"
-msgstr "\"%s\" 문서가 이미 있습니다.  이 문서를 바꾸시겠습니까?"
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1711
-msgid "If you replace an existing file, its contents will be overwritten."
-msgstr "이미 있는 파일을 바꾸면, 그 내용을 덮어 쓰게 됩니다."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1775
-msgid "The document name you selected is a folder."
-msgstr "선택한 문서 이름이 폴더입니다."
-
-#: ../gsearchtool/gsearchtool-callbacks.c:1811
-msgid "You may not have write permissions to the document."
-msgstr "문서에 쓰기 권한이 없습니다."
-
-#. Translators:  Below are the strings displayed in the 'Date Modified'
-#. column of the list view.  The format of this string can vary depending
-#. on age of a file.  Please modify the format of the timestamp to match
-#. your locale.  For example, to display 24 hour time replace the '%-I'
-#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: ../gsearchtool/gsearchtool-support.c:448
-msgid "today at %-I:%M %p"
-msgstr "오늘 %p %I:%M"
-
-#: ../gsearchtool/gsearchtool-support.c:450
-msgid "yesterday at %-I:%M %p"
-msgstr "어제 %p %I:%M"
-
-#: ../gsearchtool/gsearchtool-support.c:452
-#: ../gsearchtool/gsearchtool-support.c:454
-msgid "%A, %B %-d %Y at %-I:%M:%S %p"
-msgstr "%Y년 %b %e일 %A, %p %I:%M:%S"
-
-#: ../gsearchtool/gsearchtool-support.c:641
-msgid "link (broken)"
-msgstr "링크 (깨짐)"
-
-#: ../gsearchtool/gsearchtool-support.c:645
-#, c-format
-msgid "link to %s"
-msgstr "%s에 링크"
-
-#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
-#. Localizers:
-#. * Feel free to leave out the st, nd, rd and th suffix or
-#. * make some or all of them match.
-#. localizers: tag used to detect the first copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1257
-msgid " (copy)"
-msgstr " (사본)"
-
-#. localizers: tag used to detect the second copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1259
-msgid " (another copy)"
-msgstr " (다른 사본)"
-
-#. localizers: tag used to detect the x11th copy of a file
-#. localizers: tag used to detect the x12th copy of a file
-#. localizers: tag used to detect the x13th copy of a file
-#. localizers: tag used to detect the xxth copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1262
-#: ../gsearchtool/gsearchtool-support.c:1264
-#: ../gsearchtool/gsearchtool-support.c:1266
-#: ../gsearchtool/gsearchtool-support.c:1276
-msgid "th copy)"
-msgstr "번째 사본)"
-
-#. localizers: tag used to detect the x1st copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1269
-msgid "st copy)"
-msgstr "번째 사본)"
-
-#. localizers: tag used to detect the x2nd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1271
-msgid "nd copy)"
-msgstr "번째 사본)"
-
-#. localizers: tag used to detect the x3rd copy of a file
-#: ../gsearchtool/gsearchtool-support.c:1273
-msgid "rd copy)"
-msgstr "번째 사본)"
-
-#. localizers: appended to first file copy
-#: ../gsearchtool/gsearchtool-support.c:1290
-#, c-format
-msgid "%s (copy)%s"
-msgstr "%s (사본)%s"
-
-#. localizers: appended to second file copy
-#: ../gsearchtool/gsearchtool-support.c:1292
-#, c-format
-msgid "%s (another copy)%s"
-msgstr "%s (다른 사본)%s"
-
-#. localizers: appended to x11th file copy
-#. localizers: appended to x12th file copy
-#. localizers: appended to x13th file copy
-#. localizers: appended to xxth file copy
-#: ../gsearchtool/gsearchtool-support.c:1295
-#: ../gsearchtool/gsearchtool-support.c:1297
-#: ../gsearchtool/gsearchtool-support.c:1299
-#: ../gsearchtool/gsearchtool-support.c:1308
-#, c-format
-msgid "%s (%dth copy)%s"
-msgstr "%s (%d번째 사본)%s"
-
-#. localizers: appended to x1st file copy
-#: ../gsearchtool/gsearchtool-support.c:1302
-#, c-format
-msgid "%s (%dst copy)%s"
-msgstr "%s (%d번째 사본)%s"
-
-#. localizers: appended to x2nd file copy
-#: ../gsearchtool/gsearchtool-support.c:1304
-#, c-format
-msgid "%s (%dnd copy)%s"
-msgstr "%s (%d번째 사본)%s"
-
-#. localizers: appended to x3rd file copy
-#: ../gsearchtool/gsearchtool-support.c:1306
-#, c-format
-msgid "%s (%drd copy)%s"
-msgstr "%s (%d번째 사본)%s"
-
-#: ../gsearchtool/gsearchtool-support.c:1353
-msgid " (invalid Unicode)"
-msgstr " (잘못된 유니코드)"
-
-#. localizers: opening parentheses to match the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1442
-msgid " ("
-msgstr " ("
-
-#. localizers: opening parentheses of the "th copy)" string
-#: ../gsearchtool/gsearchtool-support.c:1450
-#, c-format
-msgid " (%d"
-msgstr " (%d"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:1
-msgid "Search history"
-msgstr "검색 기록"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:2
-msgid "This key defines the items which were searched for in the past."
-msgstr "이 키는 이전에 검색된 항목을 정의합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:3
-msgid "Show Additional Options"
-msgstr "추가 옵션 보기"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:4
-msgid "Disable Quick Search"
-msgstr "빠른 검색 사용하지 않음"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:5
-msgid ""
-"This key determines if the search tool disables the use of the locate "
-"command when performing simple file name searches."
-msgstr "이 키는 검색 도구가 간단한 파일 이름 검색을 할 때 locate 명령을 사용하지 않을 지 결정합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:6
-msgid "Quick Search Excluded Paths"
-msgstr "빠른 검색 제외할 경로"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:7
-msgid ""
-"This key defines the paths the search tool will exclude from a quick search."
-" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
-"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-msgstr "이 키는 검색 도구의 빠른 찾기에서 제외할 경로를 지정합니다. '*' 및 '?' 와일드 카드를 사용할 수 있습니다. 기본값은 /mnt/*, /media/*, /dev/*, /tmp/*, /proc/* 그리고 /var/*입니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:8
-msgid "Disable Quick Search Second Scan"
-msgstr "빠른 검색 2단계 사용하지 않음"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:9
-msgid ""
-"This key determines if the search tool disables the use of the find command "
-"after performing a quick search."
-msgstr "이 키는 검색 도구가 빠른 검색을 한 후에 find 명령을 사용하지 않을 지 결정합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:10
-msgid "Quick Search Second Scan Excluded Paths"
-msgstr "빠른 검색 2단계 제외할 경로"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:11
-msgid ""
-"This key defines the paths the search tool will exclude from a second scan "
-"when performing a quick search. The second scan uses the find command to "
-"search for files. The purpose of the second scan is to find files that have "
-"not been indexed. The wildcards '*' and '?' are supported. The default value"
-" is /."
-msgstr "이 키는 검색 도구의 빠른 검색 2단계에서 제외할 경로를 지정합니다. 2단계에서는 find 명령을 사용합니다. 2단계의 목적은 색인을 만들지 않은 파일을 찾는 것입니다. '*' 및 '?' 와일드 카드를 사용할 수 있습니다. 기본값은 /mnt/*, /media/*, /dev/*, /tmp/*, /proc/* 그리고 /var/*입니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:12
-msgid "Search Result Columns Order"
-msgstr "찾은 결과 컬럼 순서"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:13
-msgid ""
-"This key defines the order of the columns in the search results. This key "
-"should not be modified by the user."
-msgstr "이 키는 찾은 결과에서 컬럼 순서를 정합니다. 이 키는 사용자가 고치면 안 됩니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:14
-msgid "Default Window Width"
-msgstr "기본 창 너비"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:15
-msgid ""
-"This key defines the window width, and it's used to remember the size of the"
-" search tool between sessions. Setting it to -1 will make the search tool "
-"use the default width."
-msgstr "이 키는 창 너비를 정합니다. 그리고 세션 사이에서 검색 도구의 크기를 저장하는 데 쓰입니다. -1이 설정되어 있으면 기본 너비로 설정됩니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:16
-msgid "Default Window Height"
-msgstr "기본 창 높이"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:17
-msgid ""
-"This key defines the window height, and it's used to remember the size of "
-"the search tool between sessions. Setting it to -1 will make the search tool"
-" use the default height."
-msgstr "이 키는 창 높이를 정합니다. 그리고 세션 사이에서 검색 도구의 크기를 저장하는 데 쓰입니다. -1이 설정되어 있으면 기본 높이로 설정됩니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:18
-msgid "Default Window Maximized"
-msgstr "기본 창 최대크기 설정"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:19
-msgid ""
-"This key determines if the search tool window starts in a maximized state."
-msgstr "이 키는 검색 도구 창이 최대크기로 시작할 지 결정합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:20
-msgid "Look in Folder"
-msgstr "폴더 안에 찾기"
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:21
-msgid "This key defines the default value of the \"Look in Folder\" widget."
-msgstr "이 키는 \"폴더 안에 찾기' 위젯의 기본값을 지정합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:22
-msgid ""
-"This key determines if the \"Contains the text\" search option is selected "
-"when the search tool is started."
-msgstr "이 키는 검색 도구를 시작할 때 \"텍스트 포함\" 검색 옵션을 선택할 지 결정합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:23
-msgid ""
-"This key determines if the \"Date modified less than\" search option is "
-"selected when the search tool is started."
-msgstr "이 키는 검색 도구를 시작할 때 \"최근에 바뀐 기간\" 검색 옵션을 선택할 지 결정합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:24
-msgid ""
-"This key determines if the \"Date modified more than\" search option is "
-"selected when the search tool is started."
-msgstr "이 키는 검색 도구를 시작할 때 \"이후에 바뀐 기간\" 검색 옵션을 선택할 지 결정합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:25
-msgid ""
-"This key determines if the \"Size at least\" search option is selected when "
-"the search tool is started."
-msgstr "이 키는 검색 도구를 시작할 때 \"최소 크기\" 검색 옵션을 선택할 지 결정합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:26
-msgid ""
-"This key determines if the \"Size at most\" search option is selected when "
-"the search tool is started."
-msgstr "이 키는 검색 도구를 시작할 때 \"최대 크기\" 검색 옵션을 선택할 지 결정합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:27
-msgid ""
-"This key determines if the \"File is empty\" search option is selected when "
-"the search tool is started."
-msgstr "이 키는 검색 도구를 시작할 때 \"비어 있는 파일\" 검색 옵션을 선택할 지 결정합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:28
-msgid ""
-"This key determines if the \"Owned by user\" search option is selected when "
-"the search tool is started."
-msgstr "이 키는 검색 도구를 시작할 때 \"소유한 사람\" 검색 옵션을 선택할 지 결정합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:29
-msgid ""
-"This key determines if the \"Owned by group\" search option is selected when"
-" the search tool is started."
-msgstr "이 키는 검색 도구를 시작할 때 \"소유한 그룹\" 검색 옵션을 선택할 지 결정합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:30
-msgid ""
-"This key determines if the \"Owner is unrecognized\" search option is "
-"selected when the search tool is started."
-msgstr "이 키는 검색 도구를 시작할 때 \"소유자 알 수 없음\" 검색 옵션을 선택할 지 결정합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:31
-msgid ""
-"This key determines if the \"Name does not contain\" search option is "
-"selected when the search tool is started."
-msgstr "이 키는 검색 도구를 시작할 때 \"이름에 포함하지 않음\" 검색 옵션을 선택할 지 결정합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:32
-msgid ""
-"This key determines if the \"Name matches regular expression\" search option"
-" is selected when the search tool is started."
-msgstr "이 키는 검색 도구를 시작할 때 \"이름에 맞는 정규 표현식\" 검색 옵션을 선택할 지 결정합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:33
-msgid ""
-"This key determines if the \"Show hidden files and folders\" search option "
-"is selected when the search tool is started."
-msgstr "이 키는 검색 도구를 시작할 때 \"숨겨진 파일 혹은 폴더 보기\" 검색 옵션을 선택할 지 결정합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:34
-msgid ""
-"This key determines if the \"Follow symbolic links\" search option is "
-"selected when the search tool is started."
-msgstr "이 키는 검색 도구를 시작할 때 \"심볼릭 링크 따라가기\" 검색 옵션을 선택할 지 결정합니다."
-
-#: ../gsearchtool/org.mate.search-tool.gschema.xml.in.h:35
-msgid ""
-"This key determines if the \"Exclude other filesystems\" search option is "
-"selected when the search tool is started."
-msgstr "이 키는 검색 도구를 시작할 때 \"다른 파일 시스템 제외\" 검색 옵션을 선택할 지 결정합니다."
-
-#: ../libeggsmclient/eggdesktopfile.c:165
-#, c-format
-msgid "File is not a valid .desktop file"
-msgstr "올바른 .desktop 파일이 아닙니다"
-
-#: ../libeggsmclient/eggdesktopfile.c:188
-#, c-format
-msgid "Unrecognized desktop file Version '%s'"
-msgstr "desktop 파일 버전을 ('%s') 인식할 수 없습니다"
-
-#: ../libeggsmclient/eggdesktopfile.c:957
-#, c-format
-msgid "Starting %s"
-msgstr "%s 시작"
-
-#: ../libeggsmclient/eggdesktopfile.c:1098
-#, c-format
-msgid "Application does not accept documents on command line"
-msgstr "명령행에서 문서를 지정할 수 없는 프로그램입니다"
-
-#: ../libeggsmclient/eggdesktopfile.c:1166
-#, c-format
-msgid "Unrecognized launch option: %d"
-msgstr "알 수 없는 실행 옵션: %d"
-
-#: ../libeggsmclient/eggdesktopfile.c:1365
-#, c-format
-msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "문서 URI는 'Type=Link' desktop 항목에 넘길 수 없습니다"
-
-#: ../libeggsmclient/eggdesktopfile.c:1384
-#, c-format
-msgid "Not a launchable item"
-msgstr "실행할 수 있는 항목이 없습니다"
-
-#: ../libeggsmclient/eggsmclient.c:225
-msgid "Disable connection to session manager"
-msgstr "세션 관리자에 연결하지 않습니다"
-
-#: ../libeggsmclient/eggsmclient.c:228
-msgid "Specify file containing saved configuration"
-msgstr "설정을 저장할 파일을 지정합니다"
-
-#: ../libeggsmclient/eggsmclient.c:228
-msgid "FILE"
-msgstr "<파일>"
-
-#: ../libeggsmclient/eggsmclient.c:231
-msgid "Specify session management ID"
-msgstr "세션 관리 ID를 지정합니다"
-
-#: ../libeggsmclient/eggsmclient.c:231
-msgid "ID"
-msgstr "<ID>"
-
-#: ../libeggsmclient/eggsmclient.c:252
-msgid "Session management options:"
-msgstr "세션 관리 옵션:"
-
-#: ../libeggsmclient/eggsmclient.c:253
-msgid "Show session management options"
-msgstr "세션 관리 옵션을 표시합니다"
-
-#: ../logview/data/mate-system-log.desktop.in.in.h:1
-msgid "Log File Viewer"
-msgstr "로그 파일 보기"
-
-#: ../logview/data/mate-system-log.desktop.in.in.h:2
-msgid "View or monitor system log files"
-msgstr "시스템의 로그 파일을 보거나 상태 변화를 봅니다"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:1
-msgid "Log file to open up on startup"
-msgstr "시작할 때 열어 볼 로그 파일"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:2
-msgid ""
-"Specifies the log file displayed at startup. The default is either "
-"/var/adm/messages or /var/log/messages, depending on your operating system."
-msgstr "시작할 때 열어 볼 로그 파일을 지정합니다. 기본값은 운영체제에 따라 /var/adm/messages 아니면 /var/log/messages입니다."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
-msgid "Size of the font used to display the log"
-msgstr "로그 보기에서 쓰이는 글꼴의 크기"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:4
-msgid ""
-"Specifies the size of the fixed-width font used to display the log in the "
-"main tree view. The default is taken from the default terminal font size."
-msgstr "기본 로그 보기에서 쓰이는 고정폭 글꼴의 크기를 지정합니다. 터미널 글꼴 크기를 기본값으로 가져옵니다."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
-msgid "Height of the main window in pixels"
-msgstr "기본 창 높이(픽셀)"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:6
-msgid "Specifies the height of the log viewer main window in pixels."
-msgstr "로그 보기 프로그램의 기본창 높이(픽셀)."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:7
-msgid "Width of the main window in pixels"
-msgstr "기본 창 너비(픽셀)"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
-msgid "Specifies the width of the log viewer main window in pixels."
-msgstr "로그 보기 프로그램 기본 창의 너비를 픽셀로 지정합니다."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
-msgid "Log files to open up on startup"
-msgstr "시작할 때 열어 볼 로그 파일"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:10
-msgid ""
-"Specifies a list of log files to open up at startup. A default list is "
-"created by reading /etc/syslog.conf."
-msgstr "시작할 때 열어 볼 로그 파일의 목록을 지정합니다. 기본 목록은 /etc/syslog.conf 파일을 읽어서 만듭니다."
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
-msgid "List of saved filters"
-msgstr "저장된 필터 목록"
-
-#: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
-msgid "List of saved regexp filters"
-msgstr "저장된 정규 표현식 필터 목록"
-
-#: ../logview/data/logview-filter.ui.h:2
-msgid "_Regular Expression:"
-msgstr "정규식(_R):"
-
-#: ../logview/data/logview-filter.ui.h:3
-msgid "Highlight"
-msgstr "강조"
-
-#: ../logview/data/logview-filter.ui.h:4
-msgid "Hide"
-msgstr "숨기기"
-
-#: ../logview/data/logview-filter.ui.h:5
-msgid "Foreground:"
-msgstr "전경:"
-
-#: ../logview/data/logview-filter.ui.h:6
-msgid "Background:"
-msgstr "배경:"
-
-#: ../logview/data/logview-filter.ui.h:7
-msgid "Effect:"
-msgstr "효과:"
-
-#: ../logview/logview-app.c:377
-#, c-format
-msgid "Impossible to open the file %s"
-msgstr "%s 파일을 열 수 없습니다"
-
-#: ../logview/logview-filter-manager.c:94
-msgid "Filter name is empty!"
-msgstr "필터 이름이 비었습니다!"
-
-#: ../logview/logview-filter-manager.c:107
-msgid "Filter name may not contain the ':' character"
-msgstr "필터 이름에는 ':' 문자가 들어갈 수 없습니다"
-
-#: ../logview/logview-filter-manager.c:130
-msgid "Regular expression is empty!"
-msgstr "정규식이 비었습니다!"
-
-#: ../logview/logview-filter-manager.c:146
-#, c-format
-msgid "Regular expression is invalid: %s"
-msgstr "정규식이 올바르지 않습니다: %s"
-
-#: ../logview/logview-filter-manager.c:242
-msgid "Please specify either foreground or background color!"
-msgstr "전경색 혹은 배경색을 지정하십시오!"
-
-#: ../logview/logview-filter-manager.c:296
-msgid "Edit filter"
-msgstr "필터 편집"
-
-#: ../logview/logview-filter-manager.c:296
-msgid "Add new filter"
-msgstr "새 필터 추가"
-
-#: ../logview/logview-filter-manager.c:506
-msgid "Filters"
-msgstr "필터"
-
-#: ../logview/logview-findbar.c:173
-msgid "_Find:"
-msgstr "찾기(_F):"
-
-#: ../logview/logview-findbar.c:188
-msgid "Find Previous"
-msgstr "이전 찾기"
-
-#: ../logview/logview-findbar.c:191
-msgid "Find previous occurrence of the search string"
-msgstr "이전에 있는 검색 문자열을 찾습니다"
-
-#: ../logview/logview-findbar.c:196
-msgid "Find Next"
-msgstr "다음 찾기"
-
-#: ../logview/logview-findbar.c:199
-msgid "Find next occurrence of the search string"
-msgstr "다음에 있는 검색 문자열을 찾습니다"
-
-#: ../logview/logview-findbar.c:206
-msgid "Clear the search string"
-msgstr "검색 문자열 지우기"
-
-#: ../logview/logview-log.c:595
-msgid "Error while uncompressing the GZipped log. The file might be corrupt."
-msgstr "GZIP 압축한 로그의 압축을 푸는 중 오류가 발생했습니다. 파일이 손상되었을 수 있습니다."
-
-#: ../logview/logview-log.c:642
-msgid "You don't have enough permissions to read the file."
-msgstr "파일을 읽을 권한이 없습니다."
-
-#: ../logview/logview-log.c:657
-msgid "The file is not a regular file or is not a text file."
-msgstr "파일이 일반 파일이 아니거나 텍스트 파일이 아닙니다."
-
-#: ../logview/logview-log.c:739
-msgid "This version of System Log does not support GZipped logs."
-msgstr "이 시스템 로그는 GZIP 압축한 로그를 지원하지 않습니다."
-
-#: ../logview/logview-loglist.c:315
-msgid "Loading..."
-msgstr "읽어들이는 중입니다..."
-
-#: ../logview/logview-main.c:61
-msgid "Show the application's version"
-msgstr "프로그램의 버전을 봅니다"
-
-#: ../logview/logview-main.c:63
-msgid "[LOGFILE...]"
-msgstr "[로그파일...]"
-
-#: ../logview/logview-main.c:67
-msgid " - Browse and monitor logs"
-msgstr " - 로그를 찾아보고 감시합니다"
-
-#: ../logview/logview-main.c:100
-msgid "Log Viewer"
-msgstr "시스템 로그 보기"
-
-#: ../logview/logview-window.c:38 ../logview/logview-window.c:760
-msgid "System Log Viewer"
-msgstr "시스템 로그 보기"
-
-#: ../logview/logview-window.c:210
-#, c-format
-msgid "last update: %s"
-msgstr "마지막 업데이트: %s"
-
-#: ../logview/logview-window.c:214
-#, c-format
-msgid "%d lines (%s) - %s"
-msgstr "%d번째 줄 (%s) - %s"
-
-#: ../logview/logview-window.c:318
-msgid "Open Log"
-msgstr "로그 열기"
-
-#: ../logview/logview-window.c:357
-#, c-format
-msgid "There was an error displaying help: %s"
-msgstr "도움말을 표시하는 데 오류가 발생했습니다: %s"
-
-#: ../logview/logview-window.c:471
-msgid "Wrapped"
-msgstr "반대쪽부터 다시 찾음"
-
-#: ../logview/logview-window.c:765
-msgid "A system log viewer for MATE."
-msgstr "그놈 시스템 로그 보기 프로그램."
-
-#: ../logview/logview-window.c:811
-msgid "_Filters"
-msgstr "필터(_F)"
-
-#: ../logview/logview-window.c:814
-msgid "_Open..."
-msgstr "열기(_O)..."
-
-#: ../logview/logview-window.c:814
-msgid "Open a log from file"
-msgstr "파일에서 로그 열기"
-
-#: ../logview/logview-window.c:816
-msgid "_Close"
-msgstr "닫기(_C)"
-
-#: ../logview/logview-window.c:816
-msgid "Close this log"
-msgstr "이 로그를 닫습니다"
-
-#: ../logview/logview-window.c:818
-msgid "_Quit"
-msgstr "끝내기(_Q)"
-
-#: ../logview/logview-window.c:818
-msgid "Quit the log viewer"
-msgstr "로그 보기 프로그램을 끝냅니다"
-
-#: ../logview/logview-window.c:821
-msgid "_Copy"
-msgstr "복사(_C)"
-
-#: ../logview/logview-window.c:821
-msgid "Copy the selection"
-msgstr "선택한 부분을 복사합니다"
-
-#: ../logview/logview-window.c:823
-msgid "Select the entire log"
-msgstr "전체 로그를 선택합니다"
-
-#: ../logview/logview-window.c:825
-msgid "_Find..."
-msgstr "찾기(_F)..."
-
-#: ../logview/logview-window.c:825
-msgid "Find a word or phrase in the log"
-msgstr "로그에서 단어나 문구를 찾아 봅니다"
-
-#: ../logview/logview-window.c:828
-msgid "Bigger text size"
-msgstr "큰 글자 크기"
-
-#: ../logview/logview-window.c:830
-msgid "Smaller text size"
-msgstr "작은 글자 크기"
-
-#: ../logview/logview-window.c:832
-msgid "Normal text size"
-msgstr "보통 글자 크기"
-
-#: ../logview/logview-window.c:835
-msgid "Manage Filters"
-msgstr "필터 관리"
-
-#: ../logview/logview-window.c:835
-msgid "Manage filters"
-msgstr "필터 관리"
-
-#: ../logview/logview-window.c:838
-msgid "Open the help contents for the log viewer"
-msgstr "로그 보기 프로그램에 대한 도움말의 차례를 엽니다"
-
-#: ../logview/logview-window.c:840
-msgid "Show the about dialog for the log viewer"
-msgstr "로그 보기 프로그램의 정보 대화 상자를 봅니다"
-
-#: ../logview/logview-window.c:845
-msgid "_Statusbar"
-msgstr "상태 표시줄(_S)"
-
-#: ../logview/logview-window.c:845
-msgid "Show Status Bar"
-msgstr "상태 표시줄을 봅니다"
-
-#: ../logview/logview-window.c:847
-msgid "Side _Pane"
-msgstr "가장자리 창(_P)"
-
-#: ../logview/logview-window.c:847
-msgid "Show Side Pane"
-msgstr "가장자리 창을 봅니다"
-
-#: ../logview/logview-window.c:849
-msgid "Show matches only"
-msgstr "맞는 항목만 표시"
-
-#: ../logview/logview-window.c:849
-msgid "Only show lines that match one of the given filters"
-msgstr "필터에 하나라도 맞는 줄만 표시합니다"
-
-#: ../logview/logview-window.c:963
-#, c-format
-msgid "Can't read from \"%s\""
-msgstr "\"%s\"에서 읽을 수 없습니다"
-
-#: ../logview/logview-window.c:1386
-msgid "Version: "
-msgstr "버전: "
-
-#: ../logview/logview-window.c:1493
-msgid "Could not open the following files:"
-msgstr "다음 파일을 열 수 없습니다:"
