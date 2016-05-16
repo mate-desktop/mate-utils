@@ -89,6 +89,8 @@ case "$with_gtk" in
 		LIBCANBERRA_GTK_REQUIRED=0.4
 		;;
 esac
+AC_SUBST(GTK_API_VERSION)
+AC_SUBST(GTK_REQUIRED)
 
 # common checks
 PKG_CHECK_MODULES(GLIB, glib-2.0 >= $GLIB_REQUIRED)
