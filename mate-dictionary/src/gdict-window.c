@@ -1628,8 +1628,12 @@ set_window_default_size (GdictWindow *window)
   widget = GTK_WIDGET (window);
 
   /* make sure that the widget is realized */
+  /*Do this implicitly in GTK3.21 or segfault results */
+#if GTK_CHECK_VERSION (3, 21, 0) 
+  gtk_widget_show (widget);
+#else
   gtk_widget_realize (widget);
-  
+#endif  
   /* XXX - the user wants mate-dictionary to resize itself, so
    * we compute the minimum safe geometry needed for displaying
    * the text returned by a dictionary server, which is based
