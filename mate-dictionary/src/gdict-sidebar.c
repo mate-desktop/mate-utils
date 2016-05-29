@@ -554,7 +554,8 @@ gdict_sidebar_current_page (GdictSidebar *sidebar)
 
   index = gtk_notebook_get_current_page (GTK_NOTEBOOK (priv->notebook));
   page = g_slist_nth_data (priv->pages, index);
-  g_assert (page != NULL);
+  if (page == NULL)
+    return NULL;
 
   return page->id;
 }
