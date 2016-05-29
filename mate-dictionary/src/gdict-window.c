@@ -1611,6 +1611,7 @@ gdict_window_size_allocate (GtkWidget     *widget,
 		    						 allocation);
 }
 
+#if !GTK_CHECK_VERSION (3, 0, 0)
 static void
 set_window_default_size (GdictWindow *window)
 {
@@ -1629,11 +1630,7 @@ set_window_default_size (GdictWindow *window)
 
   /* make sure that the widget is realized */
   /*Do this implicitly in GTK3.21 or segfault results */
-#if GTK_CHECK_VERSION (3, 21, 0) 
-  gtk_widget_show (widget);
-#else
   gtk_widget_realize (widget);
-#endif  
   /* XXX - the user wants mate-dictionary to resize itself, so
    * we compute the minimum safe geometry needed for displaying
    * the text returned by a dictionary server, which is based
@@ -1689,7 +1686,7 @@ gdict_window_style_set (GtkWidget *widget,
 
   set_window_default_size (GDICT_WINDOW (widget));
 }
-
+#endif
 static void
 gdict_window_handle_notify_position_cb (GtkWidget  *widget,
 					GParamSpec *pspec,
@@ -2112,7 +2109,9 @@ gdict_window_class_init (GdictWindowClass *klass)
                                      LAST_PROP,
                                      gdict_window_properties);
 
+#if !GTK_CHECK_VERSION (3, 0, 0)
   widget_class->style_set = gdict_window_style_set;
+#endif
   widget_class->size_allocate = gdict_window_size_allocate;
 }
 
