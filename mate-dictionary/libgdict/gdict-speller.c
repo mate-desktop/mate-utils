@@ -45,8 +45,10 @@
 #include "gdict-debug.h"
 #include "gdict-private.h"
 
+#if !GTK_CHECK_VERSION(3,0,0)
 #define GDICT_SPELLER_GET_PRIVATE(obj) \
 (G_TYPE_INSTANCE_GET_PRIVATE ((obj), GDICT_TYPE_SPELLER, GdictSpellerPrivate))
+#endif
 
 struct _GdictSpellerPrivate
 {
@@ -108,7 +110,11 @@ enum
 
 static guint speller_signals[LAST_SIGNAL] = { 0 };
 
+#if GTK_CHECK_VERSION(3,0,0)
+G_DEFINE_TYPE_WITH_PRIVATE (GdictSpeller, gdict_speller, GTK_TYPE_BOX)
+#else
 G_DEFINE_TYPE (GdictSpeller, gdict_speller, GTK_TYPE_BOX);
+#endif
 
 
 static void
@@ -314,13 +320,17 @@ gdict_speller_constructor (GType                  type,
   speller = GDICT_SPELLER (object);
   priv = speller->priv;
 
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_push_composite_child ();
+#endif
 
   sw = gtk_scrolled_window_new (NULL, NULL);
 #if GTK_CHECK_VERSION (3, 0, 0)
   gtk_widget_set_vexpand (sw, TRUE);
 #endif
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_set_composite_name (sw, "gdict-speller-scrolled-window");
+#endif
   gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (sw),
   				  GTK_POLICY_AUTOMATIC,
   				  GTK_POLICY_AUTOMATIC);
@@ -336,7 +346,9 @@ gdict_speller_constructor (GType                  type,
 						     NULL);
 
   priv->treeview = gtk_tree_view_new ();
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_set_composite_name (priv->treeview, "gdict-speller-treeview");
+#endif
   gtk_tree_view_set_model (GTK_TREE_VIEW (priv->treeview),
 		           GTK_TREE_MODEL (priv->store));
   gtk_tree_view_set_headers_visible (GTK_TREE_VIEW (priv->treeview), FALSE);
@@ -367,7 +379,9 @@ gdict_speller_constructor (GType                  type,
   gtk_box_pack_end (GTK_BOX (speller), hbox, FALSE, FALSE, 0);
   gtk_widget_show (hbox);
 
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_pop_composite_child ();
+#endif
 
   return object;
 }
@@ -415,7 +429,9 @@ gdict_speller_class_init (GdictSpellerClass *klass)
 		  G_TYPE_STRING,
 		  G_TYPE_STRING);
 
+#if !GTK_CHECK_VERSION(3,0,0)
   g_type_class_add_private (gobject_class, sizeof (GdictSpellerPrivate));
+#endif
 }
 
 static void
@@ -423,8 +439,13 @@ gdict_speller_init (GdictSpeller *speller)
 {
   GdictSpellerPrivate *priv;
 
-  gtk_orientable_set_orientation (GTK_ORIENTABLE (speller), GTK_ORIENTATION_VERTICAL);
+#if GTK_CHECK_VERSION(3,0,0)
+  speller->priv = priv = gdict_speller_get_instance_private (speller);
+#else
   speller->priv = priv = GDICT_SPELLER_GET_PRIVATE (speller);
+#endif
+
+  gtk_orientable_set_orientation (GTK_ORIENTABLE (speller), GTK_ORIENTATION_VERTICAL);
 
   priv->database = NULL;
   priv->strategy = NULL;
@@ -643,7 +664,14 @@ lookup_start_cb (GdictContext *context,
   GdictSpellerPrivate *priv = speller->priv;
 
   if (!priv->busy_cursor)
+#if GTK_CHECK_VERSION(3,0,0)
+    {
+      GdkDisplay *display = gtk_widget_get_display (GTK_WIDGET (speller));
+      priv->busy_cursor = gdk_cursor_new_for_display (display, GDK_WATCH);
+    }
+#else
     priv->busy_cursor = gdk_cursor_new (GDK_WATCH);
+#endif
 
   if (gtk_widget_get_window (GTK_WIDGET (speller)))
     gdk_window_set_cursor (gtk_widget_get_window (GTK_WIDGET (speller)), priv->busy_cursor);
