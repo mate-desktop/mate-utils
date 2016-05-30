@@ -61,6 +61,10 @@
 #define gtk_vbox_new(X,Y) gtk_box_new(GTK_ORIENTATION_VERTICAL,Y)
 #endif
 
+#if !GTK_CHECK_VERSION(3,0,0)
+#define gtk_widget_get_preferred_size(x,y,z) gtk_widget_size_request(x,y)
+#endif
+
 enum
 {
   COMPLETION_TEXT_COLUMN,
@@ -1651,7 +1655,7 @@ set_window_default_size (GdictWindow *window)
       height = font_size * GDICT_WINDOW_ROWS;
 
       /* Use at least the requisition size of the window... */
-      gtk_widget_size_request (widget, &req);
+      gtk_widget_get_preferred_size (widget, NULL, &req);
       width = MAX (width, req.width);
       height = MAX (height, req.height);
 

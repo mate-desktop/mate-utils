@@ -38,6 +38,10 @@
 #include "gdict-common.h"
 #include "gdict-aligned-window.h"
 
+#if !GTK_CHECK_VERSION(3,0,0)
+#define gtk_widget_get_preferred_size(x,y,z) gtk_widget_size_request(x,y)
+#endif
+
 #define GDICT_APPLET_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), GDICT_TYPE_APPLET, GdictAppletClass))
 #define GDICT_APPLET_GET_CLASS(obj)	(G_TYPE_INSTANCE_GET_CLASS ((obj), GDICT_TYPE_APPLET, GdictAppletClass))
 
@@ -149,7 +153,7 @@ set_window_default_size (GdictApplet *applet)
   height = font_size * WINDOW_NUM_ROWS;
 
   /* Use at least the requisition size of the window... */
-  gtk_widget_size_request (widget, &req);
+  gtk_widget_get_preferred_size (widget, NULL, &req);
   width = MAX (width, req.width);
   height = MAX (height, req.height);
 
