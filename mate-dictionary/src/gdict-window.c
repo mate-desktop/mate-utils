@@ -1737,7 +1737,9 @@ gdict_window_constructor (GType                  type,
   /* recover the state */
   gdict_window_load_state (window);
 
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_push_composite_child ();
+#endif
  
   window->main_box = gtk_vbox_new (FALSE, 0);
   gtk_container_add (GTK_CONTAINER (window), window->main_box);
@@ -2011,7 +2013,9 @@ gdict_window_constructor (GType                  type,
 
   gtk_widget_grab_focus (window->entry);
 
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_pop_composite_child ();
+#endif
 
   window->in_construction = FALSE;
 
