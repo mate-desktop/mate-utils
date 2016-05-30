@@ -45,8 +45,10 @@
 #include "gdict-enum-types.h"
 #include "gdict-marshal.h"
 
+#if !GTK_CHECK_VERSION(3,0,0)
 #define GDICT_STRATEGY_CHOOSER_GET_PRIVATE(obj) \
 (G_TYPE_INSTANCE_GET_PRIVATE ((obj), GDICT_TYPE_STRATEGY_CHOOSER, GdictStrategyChooserPrivate))
+#endif
 
 struct _GdictStrategyChooserPrivate
 {
@@ -106,9 +108,15 @@ enum
 
 static guint db_chooser_signals[LAST_SIGNAL] = { 0 };
 
+#if GTK_CHECK_VERSION(3,0,0)
+G_DEFINE_TYPE_WITH_PRIVATE (GdictStrategyChooser,
+               gdict_strategy_chooser,
+               GTK_TYPE_BOX);
+#else
 G_DEFINE_TYPE (GdictStrategyChooser,
                gdict_strategy_chooser,
                GTK_TYPE_BOX);
+#endif
 
 
 static void
@@ -325,13 +333,17 @@ gdict_strategy_chooser_constructor (GType                  type,
   chooser = GDICT_STRATEGY_CHOOSER (object);
   priv = chooser->priv;
 
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_push_composite_child ();
+#endif
 
   sw = gtk_scrolled_window_new (NULL, NULL);
 #if GTK_CHECK_VERSION (3, 0, 0)
   gtk_widget_set_vexpand (sw, TRUE);
 #endif
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_set_composite_name (sw, "gdict-strategy-chooser-scrolled-window");
+#endif
   gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (sw),
 		  		  GTK_POLICY_AUTOMATIC,
 				  GTK_POLICY_AUTOMATIC);
@@ -347,7 +359,9 @@ gdict_strategy_chooser_constructor (GType                  type,
                                                      "weight", STRAT_COLUMN_CURRENT,
 						     NULL);
   priv->treeview = gtk_tree_view_new ();
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_set_composite_name (priv->treeview, "gdict-strategy-chooser-treeview");
+#endif
   gtk_tree_view_set_model (GTK_TREE_VIEW (priv->treeview),
 		  	   GTK_TREE_MODEL (priv->store));
   gtk_tree_view_set_headers_visible (GTK_TREE_VIEW (priv->treeview), FALSE);
@@ -389,8 +403,10 @@ gdict_strategy_chooser_constructor (GType                  type,
 
   gtk_box_pack_end (GTK_BOX (chooser), hbox, FALSE, FALSE, 0);
   gtk_widget_show (hbox);
-  
+
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_pop_composite_child ();
+#endif
 
   return object;
 }
@@ -439,8 +455,10 @@ gdict_strategy_chooser_class_init (GdictStrategyChooserClass *klass)
 		  G_TYPE_NONE, 2,
 		  G_TYPE_STRING,
 		  G_TYPE_STRING);
-  
+
+#if !GTK_CHECK_VERSION(3,0,0)
   g_type_class_add_private (gobject_class, sizeof (GdictStrategyChooserPrivate));
+#endif
 }
 
 static void
@@ -448,8 +466,13 @@ gdict_strategy_chooser_init (GdictStrategyChooser *chooser)
 {
   GdictStrategyChooserPrivate *priv;
 
-  gtk_orientable_set_orientation (GTK_ORIENTABLE (chooser), GTK_ORIENTATION_VERTICAL);
+#if GTK_CHECK_VERSION(3,0,0)
+chooser->priv = priv = gdict_strategy_chooser_get_instance_private (chooser);
+#else
   chooser->priv = priv = GDICT_STRATEGY_CHOOSER_GET_PRIVATE (chooser);
+#endif
+
+  gtk_orientable_set_orientation (GTK_ORIENTABLE (chooser), GTK_ORIENTATION_VERTICAL);
 
   priv->results = -1;
   priv->context = NULL;
@@ -673,7 +696,14 @@ lookup_start_cb (GdictContext *context,
   GdictStrategyChooserPrivate *priv = chooser->priv;
 
   if (!priv->busy_cursor)
+#if GTK_CHECK_VERSION(3,0,0)
+    {
+      GdkDisplay *display = gtk_widget_get_display (GTK_WIDGET (chooser));
+      priv->busy_cursor = gdk_cursor_new_for_display (display, GDK_WATCH);
+    }
+#else
     priv->busy_cursor = gdk_cursor_new (GDK_WATCH);
+#endif
 
   if (gtk_widget_get_window (GTK_WIDGET (chooser)))
     gdk_window_set_cursor (gtk_widget_get_window (GTK_WIDGET (chooser)), priv->busy_cursor);
