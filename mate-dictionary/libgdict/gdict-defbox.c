@@ -63,8 +63,10 @@ typedef struct
   gint begin;
 } Definition;
 
+#if !GTK_CHECK_VERSION(3,0,0)
 #define GDICT_DEFBOX_GET_PRIVATE(obj) \
 (G_TYPE_INSTANCE_GET_PRIVATE ((obj), GDICT_TYPE_DEFBOX, GdictDefboxPrivate))
+#endif
 
 struct _GdictDefboxPrivate
 {
@@ -129,11 +131,15 @@ enum
 };
 
 static guint gdict_defbox_signals[LAST_SIGNAL] = { 0 };
+#if GTK_CHECK_VERSION(3,0,0)
+G_DEFINE_TYPE_WITH_PRIVATE (GdictDefbox, gdict_defbox, GTK_TYPE_BOX)
+#else
 static GdkColor default_link_color = { 0, 0, 0, 0xeeee };
 static GdkColor default_visited_link_color = { 0, 0x5555, 0x1a1a, 0x8b8b };
 
 
 G_DEFINE_TYPE (GdictDefbox, gdict_defbox, GTK_TYPE_BOX);
+#endif
 
 
 static Definition *
@@ -1381,7 +1387,9 @@ static void
 gdict_defbox_init_tags (GdictDefbox *defbox)
 {
   GdictDefboxPrivate *priv = defbox->priv;
+#if !GTK_CHECK_VERSION(3,0,0)
   GdkColor *link_color, *visited_link_color;
+#endif
 
   g_assert (GTK_IS_TEXT_BUFFER (priv->buffer));
 
@@ -1402,6 +1410,40 @@ gdict_defbox_init_tags (GdictDefbox *defbox)
 		  	      "scale", PANGO_SCALE_SMALL,
 			      NULL);
 
+#if GTK_CHECK_VERSION(3,0,0)
+  {
+    GtkSettings *settings = gtk_widget_get_settings (GTK_WIDGET (defbox));
+    gboolean prefer_dark = FALSE;
+    GdkRGBA rgba;
+
+    /* HACK: we're hardcoding the Adwaita values because GtkTextTag
+     * cannot be styled via CSS
+     */
+    g_object_get (settings, "gtk-application-prefer-dark-theme", &prefer_dark, NULL);
+
+    if (!prefer_dark)
+      gdk_rgba_parse (&rgba, "#2a76c6");
+    else
+      gdk_rgba_parse (&rgba, "#4a90d9");
+
+    priv->link_tag =
+      gtk_text_buffer_create_tag (priv->buffer, "link",
+                                  "underline", PANGO_UNDERLINE_SINGLE,
+                                  "foreground-rgba", &rgba,
+                                  NULL);
+
+    if (!prefer_dark)
+      gdk_rgba_parse (&rgba, "#215d9c");
+    else
+      gdk_rgba_parse (&rgba, "#2a76c6");
+
+    priv->visited_link_tag =
+      gtk_text_buffer_create_tag (priv->buffer, "visited-link",
+                                  "underline", PANGO_UNDERLINE_SINGLE,
+                                  "foreground-rgba", &rgba,
+                                  NULL);
+  }
+#else
   link_color = visited_link_color = NULL;
   gtk_widget_style_get (GTK_WIDGET (defbox),
                         "link-color", &link_color,
@@ -1429,6 +1471,7 @@ gdict_defbox_init_tags (GdictDefbox *defbox)
 
   if (visited_link_color != &default_visited_link_color)
     gdk_color_free (visited_link_color);
+#endif
 
   gtk_text_buffer_create_tag (priv->buffer, "phonetic",
                               "foreground", "dark gray",
@@ -1551,10 +1594,24 @@ set_cursor_if_appropriate (GdictDefbox *defbox,
   priv = defbox->priv;
 
   if (!priv->hand_cursor)
+#if GTK_CHECK_VERSION(3,0,0)
+    {
+      GdkDisplay *display = gtk_widget_get_display (GTK_WIDGET (defbox));
+      priv->hand_cursor = gdk_cursor_new_for_display (display, GDK_HAND2);
+    }
+#else
     priv->hand_cursor = gdk_cursor_new (GDK_HAND2);
+#endif
 
   if (!priv->regular_cursor)
+#if GTK_CHECK_VERSION(3,0,0)
+    {
+      GdkDisplay *display = gtk_widget_get_display (GTK_WIDGET (defbox));
+      priv->regular_cursor = gdk_cursor_new_for_display (display, GDK_XTERM);
+    }
+#else
     priv->regular_cursor = gdk_cursor_new (GDK_XTERM);
+#endif
 
   gtk_text_view_get_iter_at_location (text_view, &iter, x, y);
 
@@ -1665,13 +1722,17 @@ gdict_defbox_constructor (GType                  type,
   defbox = GDICT_DEFBOX (object);
   priv = defbox->priv;
 
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_push_composite_child ();
+#endif
 
   sw = gtk_scrolled_window_new (NULL, NULL);
 #if GTK_CHECK_VERSION (3, 0, 0)
   gtk_widget_set_vexpand (sw, TRUE);
 #endif
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_set_composite_name (sw, "gdict-defbox-scrolled-window");
+#endif
   gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (sw),
   				  GTK_POLICY_AUTOMATIC,
   				  GTK_POLICY_AUTOMATIC);
@@ -1684,14 +1745,18 @@ gdict_defbox_constructor (GType                  type,
   gdict_defbox_init_tags (defbox);
 
   priv->text_view = gtk_text_view_new_with_buffer (priv->buffer);
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_set_composite_name (priv->text_view, "gdict-defbox-text-view");
+#endif
   gtk_text_view_set_editable (GTK_TEXT_VIEW (priv->text_view), FALSE);
   gtk_text_view_set_left_margin (GTK_TEXT_VIEW (priv->text_view), 4);
   gtk_container_add (GTK_CONTAINER (sw), priv->text_view);
   gtk_widget_show (priv->text_view);
 
   priv->find_pane = create_find_pane (defbox);
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_set_composite_name (priv->find_pane, "gdict-defbox-find-pane");
+#endif
   gtk_box_pack_end (GTK_BOX (defbox), priv->find_pane, FALSE, FALSE, 0);
 
   /* stuff to make the link machinery work */
@@ -1705,11 +1770,14 @@ gdict_defbox_constructor (GType                  type,
                     G_CALLBACK (defbox_visibility_notify_cb),
                     defbox);
 
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_pop_composite_child ();
+#endif
 
   return object;
 }
 
+#if !GTK_CHECK_VERSION(3,0,0)
 static void
 gdict_defbox_style_set (GtkWidget *widget,
 			GtkStyle  *old_style)
@@ -1745,6 +1813,7 @@ gdict_defbox_style_set (GtkWidget *widget,
   if (visited_link_color != &default_visited_link_color)
     gdk_color_free (visited_link_color);
 }
+#endif
 
 /* we override the GtkWidget::show_all method since we have widgets
  * we don't want to show, such as the find pane
@@ -1815,7 +1884,9 @@ gdict_defbox_class_init (GdictDefboxClass *klass)
   gobject_class->finalize = gdict_defbox_finalize;
 
   widget_class->show_all = gdict_defbox_show_all;
+#if !GTK_CHECK_VERSION(3,0,0)
   widget_class->style_set = gdict_defbox_style_set;
+#endif
 
   /**
    * GdictDefbox:word:
@@ -1941,7 +2012,9 @@ gdict_defbox_class_init (GdictDefboxClass *klass)
   			        "hide-find",
   			        0);
 
+#if !GTK_CHECK_VERSION(3,0,0)
   g_type_class_add_private (klass, sizeof (GdictDefboxPrivate));
+#endif
 }
 
 static void
@@ -1952,7 +2025,11 @@ gdict_defbox_init (GdictDefbox *defbox)
   gtk_orientable_set_orientation (GTK_ORIENTABLE (defbox), GTK_ORIENTATION_VERTICAL);
   gtk_box_set_spacing (GTK_BOX (defbox), 6);
 
+#if GTK_CHECK_VERSION(3,0,0)
+  priv = gdict_defbox_get_instance_private (defbox);
+#else
   priv = GDICT_DEFBOX_GET_PRIVATE (defbox);
+#endif
   defbox->priv = priv;
 
   priv->context = NULL;
@@ -2185,7 +2262,14 @@ lookup_start_cb (GdictContext *context,
   priv->is_searching = TRUE;
 
   if (!priv->busy_cursor)
+#if GTK_CHECK_VERSION(3,0,0)
+    {
+      GdkDisplay *display = gtk_widget_get_display (GTK_WIDGET (defbox));
+      priv->busy_cursor = gdk_cursor_new_for_display (display, GDK_WATCH);
+    }
+#else
     priv->busy_cursor = gdk_cursor_new (GDK_WATCH);
+#endif
 
   window = gtk_text_view_get_window (GTK_TEXT_VIEW (priv->text_view),
   				     GTK_TEXT_WINDOW_WIDGET);
