@@ -1610,7 +1610,9 @@ defbox_motion_notify_cb (GtkWidget      *text_view,
 
   set_cursor_if_appropriate (defbox, GTK_TEXT_VIEW (text_view), bx, by);
 
+#if !GTK_CHECK_VERSION (3, 0, 0)
   gdk_window_get_pointer (gtk_widget_get_window (text_view), NULL, NULL, NULL);
+#endif
 
   return FALSE;
 }
@@ -1620,10 +1622,22 @@ defbox_visibility_notify_cb (GtkWidget          *text_view,
                              GdkEventVisibility *event,
                              GdictDefbox        *defbox)
 {
+#if GTK_CHECK_VERSION (3, 0, 0)
+  GdkDisplay *display;
+  GdkDeviceManager *device_manager;
+  GdkDevice *pointer;
+#endif
   gint wx, wy;
   gint bx, by;
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  display = gdk_window_get_display (event->window);
+  device_manager = gdk_display_get_device_manager (display);
+  pointer = gdk_device_manager_get_client_pointer (device_manager);
+  gdk_window_get_device_position (gtk_widget_get_window (text_view), pointer, &wx, &wy, NULL);
+#else
   gdk_window_get_pointer (gtk_widget_get_window (text_view), &wx, &wy, NULL);
+#endif
 
   gtk_text_view_window_to_buffer_coords (GTK_TEXT_VIEW (text_view),
                                          GTK_TEXT_WINDOW_WIDGET,
