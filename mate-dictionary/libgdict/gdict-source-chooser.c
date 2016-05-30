@@ -47,10 +47,12 @@
 #include "gdict-enum-types.h"
 #include "gdict-marshal.h"
 
+#if !GTK_CHECK_VERSION(3,0,0)
 #define GDICT_SOURCE_CHOOSER_GET_PRIVATE(obj)   \
         (G_TYPE_INSTANCE_GET_PRIVATE ((obj),    \
          GDICT_TYPE_SOURCE_CHOOSER,             \
          GdictSourceChooserPrivate))
+#endif
 
 struct _GdictSourceChooserPrivate
 {
@@ -63,7 +65,9 @@ struct _GdictSourceChooserPrivate
   GdictSourceLoader *loader;
   gint n_sources;
 
+#if !GTK_CHECK_VERSION(3,0,0)
   GdkCursor *busy_cursor;
+#endif
   
   gchar *current_source;
 };
@@ -96,7 +100,11 @@ enum
 
 static guint source_chooser_signals[LAST_SIGNAL] = { 0, };
 
+#if GTK_CHECK_VERSION(3,0,0)
+G_DEFINE_TYPE_WITH_PRIVATE (GdictSourceChooser, gdict_source_chooser, GTK_TYPE_BOX)
+#else
 G_DEFINE_TYPE (GdictSourceChooser, gdict_source_chooser, GTK_TYPE_BOX);
+#endif
 
 static void
 gdict_source_chooser_finalize (GObject *gobject)
@@ -127,15 +135,13 @@ gdict_source_chooser_dispose (GObject *gobject)
       priv->loader = NULL;
     }
 
+#if !GTK_CHECK_VERSION(3,0,0)
   if (priv->busy_cursor)
     {
-#if GTK_CHECK_VERSION (3, 0, 0)
-      g_object_unref (priv->busy_cursor);
-#else
       gdk_cursor_unref (priv->busy_cursor);
-#endif
       priv->busy_cursor = NULL;
     }
+#endif
 
   G_OBJECT_CLASS (gdict_source_chooser_parent_class)->dispose (gobject);
 }
@@ -254,13 +260,17 @@ gdict_source_chooser_constructor (GType                  gtype,
   chooser = GDICT_SOURCE_CHOOSER (retval);
   priv = chooser->priv;
 
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_push_composite_child ();
+#endif
 
   sw = gtk_scrolled_window_new (NULL, NULL);
 #if GTK_CHECK_VERSION (3, 0, 0)
   gtk_widget_set_vexpand (sw, TRUE);
 #endif
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_set_composite_name (sw, "gdict-source-chooser-scrolled-window");
+#endif
   gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (sw),
                                   GTK_POLICY_AUTOMATIC,
                                   GTK_POLICY_AUTOMATIC);
@@ -276,7 +286,9 @@ gdict_source_chooser_constructor (GType                  gtype,
                                                      "weight", SOURCE_CURRENT,
                                                      NULL);
   priv->treeview = gtk_tree_view_new ();
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_set_composite_name (priv->treeview, "gdict-source-chooser-treeview");
+#endif
   gtk_tree_view_set_model (GTK_TREE_VIEW (priv->treeview),
                            GTK_TREE_MODEL (priv->store));
   gtk_tree_view_set_headers_visible (GTK_TREE_VIEW (priv->treeview), FALSE);
@@ -312,7 +324,9 @@ gdict_source_chooser_constructor (GType                  gtype,
   gtk_box_pack_end (GTK_BOX (chooser), hbox, FALSE, FALSE, 0);
   gtk_widget_show (hbox);
 
+#if !GTK_CHECK_VERSION(3,0,0)
   gtk_widget_pop_composite_child ();
+#endif
 
   return retval;
 }
@@ -322,7 +336,9 @@ gdict_source_chooser_class_init (GdictSourceChooserClass *klass)
 {
   GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
 
+#if !GTK_CHECK_VERSION(3,0,0)
   g_type_class_add_private (klass, sizeof (GdictSourceChooserPrivate));
+#endif
 
   gobject_class->finalize = gdict_source_chooser_finalize;
   gobject_class->dispose = gdict_source_chooser_dispose;
@@ -407,8 +423,13 @@ gdict_source_chooser_init (GdictSourceChooser *chooser)
 {
   GdictSourceChooserPrivate *priv;
 
-  gtk_orientable_set_orientation (GTK_ORIENTABLE (chooser), GTK_ORIENTATION_VERTICAL);
+#if GTK_CHECK_VERSION(3,0,0)
+  chooser->priv = priv = gdict_source_chooser_get_instance_private (chooser);
+#else
   chooser->priv = priv = GDICT_SOURCE_CHOOSER_GET_PRIVATE (chooser);
+#endif
+
+  gtk_orientable_set_orientation (GTK_ORIENTABLE (chooser), GTK_ORIENTATION_VERTICAL);
 
   priv->store = gtk_list_store_new (SOURCE_N_COLUMNS,
                                     G_TYPE_INT,    /* TRANSPORT */
@@ -419,7 +440,9 @@ gdict_source_chooser_init (GdictSourceChooser *chooser)
   priv->loader = NULL;
   priv->n_sources = -1;
 
+#if !GTK_CHECK_VERSION(3,0,0)
   priv->busy_cursor = gdk_cursor_new (GDK_WATCH);
+#endif
 }
 
 /**
