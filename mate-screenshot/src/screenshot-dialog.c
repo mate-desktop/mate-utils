@@ -234,7 +234,12 @@ screenshot_dialog_new (GdkPixbuf *screenshot,
   dialog = g_new0 (ScreenshotDialog, 1);
 
   dialog->ui = gtk_builder_new ();
+#if GTK_CHECK_VERSION (3, 0, 0)  
+  res = gtk_builder_add_from_file (dialog->ui, UIDIR "/mate-screenshot-gtk3.ui", &error);
+#else
   res = gtk_builder_add_from_file (dialog->ui, UIDIR "/mate-screenshot.ui", &error);
+#endif
+
   dialog->screenshot = screenshot;
 
   if (res == 0)
