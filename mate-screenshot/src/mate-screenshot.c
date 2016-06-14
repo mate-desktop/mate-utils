@@ -461,9 +461,13 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
   gtk_widget_set_size_request (align, 48, -1);
   gtk_box_pack_start (GTK_BOX (hbox), align, FALSE, FALSE, 0);
   gtk_widget_show (align);
-
+#if GTK_CHECK_VERSION (3, 0, 0)
+  image = gtk_image_new_from_icon_name (SCREENSHOOTER_ICON,
+                                    GTK_ICON_SIZE_DIALOG);
+#else
   image = gtk_image_new_from_stock (SCREENSHOOTER_ICON,
                                     GTK_ICON_SIZE_DIALOG);
+#endif
   gtk_container_add (GTK_CONTAINER (align), image);
   gtk_widget_show (image);
 
