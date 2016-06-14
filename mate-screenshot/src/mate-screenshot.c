@@ -1322,6 +1322,7 @@ main (int argc, char *argv[])
   gboolean disable_border_arg = FALSE;
   gboolean interactive_arg = FALSE;
   gchar *border_effect_arg = NULL;
+  gboolean version_arg = FALSE;
   guint delay_arg = 0;
   GError *error = NULL;
 
@@ -1333,6 +1334,7 @@ main (int argc, char *argv[])
     { "delay", 'd', 0, G_OPTION_ARG_INT, &delay_arg, N_("Take screenshot after specified delay [in seconds]"), N_("seconds") },
     { "border-effect", 'e', 0, G_OPTION_ARG_STRING, &border_effect_arg, N_("Effect to add to the border (shadow, border or none)"), N_("effect") },
     { "interactive", 'i', 0, G_OPTION_ARG_NONE, &interactive_arg, N_("Interactively set options"), NULL },
+    { "version", 0, 0, G_OPTION_ARG_NONE, &version_arg, N_("Print version information and exit"), NULL },
     { NULL },
   };
 
@@ -1357,6 +1359,11 @@ main (int argc, char *argv[])
   }
 
   g_option_context_free (context);
+ 
+  if (version_arg) {
+    g_print ("%s %s\n", g_get_application_name (), VERSION);
+    exit (EXIT_SUCCESS);
+  }
 
   if (window_arg && area_arg) {
     g_printerr (_("Conflicting options: --window and --area should not be "
