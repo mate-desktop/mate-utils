@@ -64,20 +64,32 @@ on_toplevel_key_press_event (GtkWidget *widget,
   return FALSE;
 }
 
-static void
 #if GTK_CHECK_VERSION (3, 0, 0)
-on_preview_draw (GtkWidget *drawing_area, cairo_t *cr, gpointer data)
+static void
+on_preview_draw (GtkWidget      *drawing_area,
+                 cairo_t        *cr,
+                 gpointer        data)
+{
+  ScreenshotDialog *dialog = data;
+  GtkStyleContext *context;
+
+  context = gtk_widget_get_style_context (drawing_area);
+  gtk_style_context_save (context);
+
+  gtk_style_context_set_state (context, gtk_widget_get_state_flags (drawing_area));
+  gtk_render_icon (context, cr, dialog->preview_image, 0, 0);
+
+  gtk_style_context_restore (context);
+}
+
 #else
+static void
 on_preview_expose_event (GtkWidget *drawing_area, GdkEventExpose *event, gpointer data)
-#endif
 {
   ScreenshotDialog *dialog = data;
   GdkPixbuf *pixbuf = NULL;
   gboolean free_pixbuf = FALSE;
-#if !GTK_CHECK_VERSION (3, 0, 0)
   cairo_t *cr;
-#endif
-
   /* Stolen from GtkImage.  I really should just make the drawing area an
    * image some day */
   if (gtk_widget_get_state (drawing_area) != GTK_STATE_NORMAL)
@@ -101,24 +113,19 @@ on_preview_expose_event (GtkWidget *drawing_area, GdkEventExpose *event, gpointe
     }
   else
     {
-      pixbuf = g_object_ref (dialog->preview_image);
+     pixbuf = g_object_ref (dialog->preview_image);
     }
-  
-#if !GTK_CHECK_VERSION (3, 0, 0)
+ 
   cr = gdk_cairo_create (gtk_widget_get_window (drawing_area));
   gdk_cairo_region (cr, event->region);
   cairo_clip (cr);
-#endif
-
   gdk_cairo_set_source_pixbuf (cr, pixbuf, 0, 0);
   cairo_paint (cr);
-
-#if !GTK_CHECK_VERSION (3, 0, 0)
   cairo_destroy (cr);
-#endif
 
   g_object_unref (pixbuf);
 }
+#endif
 
 static gboolean
 on_preview_button_press_event (GtkWidget      *drawing_area,
@@ -234,7 +241,12 @@ screenshot_dialog_new (GdkPixbuf *screenshot,
   dialog = g_new0 (ScreenshotDialog, 1);
 
   dialog->ui = gtk_builder_new ();
+#if GTK_CHECK_VERSION (3, 0, 0)  
+  res = gtk_builder_add_from_file (dialog->ui, UIDIR "/mate-screenshot-gtk3.ui", &error);
+#else
   res = gtk_builder_add_from_file (dialog->ui, UIDIR "/mate-screenshot.ui", &error);
+#endif
+
   dialog->screenshot = screenshot;
 
   if (res == 0)
