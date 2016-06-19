@@ -352,10 +352,12 @@ create_effects_frame (GtkWidget   *outer_vbox,
   gtk_box_pack_start (GTK_BOX (main_vbox), hbox, FALSE, FALSE, 0);
   gtk_widget_show (hbox);
 
+#if !GTK_CHECK_VERSION (3, 0, 0)
   align = gtk_alignment_new (0.0, 0.0, 0.0, 0.0);
   gtk_alignment_set_padding (GTK_ALIGNMENT (align), 0, 0, 12, 0);
   gtk_box_pack_start (GTK_BOX (hbox), align, FALSE, FALSE, 0);
   gtk_widget_show (align);
+#endif
 
 #if GTK_CHECK_VERSION (3, 0, 0)
   vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
@@ -457,10 +459,13 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
   gtk_box_pack_start (GTK_BOX (main_vbox), hbox, FALSE, FALSE, 0);
   gtk_widget_show (hbox);
 
+#if !GTK_CHECK_VERSION (3, 0, 0)
   align = gtk_alignment_new (0.0, 0.0, 0.0, 0.0);
   gtk_widget_set_size_request (align, 48, -1);
   gtk_box_pack_start (GTK_BOX (hbox), align, FALSE, FALSE, 0);
   gtk_widget_show (align);
+#endif
+
 #if GTK_CHECK_VERSION (3, 0, 0)
   image = gtk_image_new_from_icon_name (SCREENSHOOTER_ICON,
                                     GTK_ICON_SIZE_DIALOG);
@@ -590,13 +595,11 @@ create_interactive_dialog (void)
 
   create_screenshot_frame (main_vbox, _("Take Screenshot"));
   create_effects_frame (main_vbox, _("Effects"));
-
   gtk_dialog_add_buttons (GTK_DIALOG (retval),
                           GTK_STOCK_HELP, GTK_RESPONSE_HELP,
                           GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
                           _("Take _Screenshot"), GTK_RESPONSE_OK,
                           NULL);
-
   gtk_dialog_set_default_response (GTK_DIALOG (retval), GTK_RESPONSE_OK);
 
   /* we need to block on "response" and keep showing the interactive
