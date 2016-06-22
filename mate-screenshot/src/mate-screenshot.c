@@ -315,7 +315,9 @@ create_effects_frame (GtkWidget   *outer_vbox,
                       const gchar *frame_title)
 {
   GtkWidget *main_vbox, *vbox, *hbox;
+#if !GTK_CHECK_VERSION (3, 0, 0)
   GtkWidget *align;
+#endif
   GtkWidget *label;
   GtkWidget *check;
   GtkWidget *combo;
@@ -361,10 +363,13 @@ create_effects_frame (GtkWidget   *outer_vbox,
 
 #if GTK_CHECK_VERSION (3, 0, 0)
   vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+  gtk_box_pack_start (GTK_BOX (hbox), vbox, FALSE, FALSE, 0);
+  gtk_widget_set_margin_start (vbox, 12);
 #else
   vbox = gtk_vbox_new (FALSE, 6);
-#endif
   gtk_container_add (GTK_CONTAINER (align), vbox);
+#endif
+
   gtk_widget_show (vbox);
 
   /** Include pointer **/
@@ -421,7 +426,9 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
                          const gchar *frame_title)
 {
   GtkWidget *main_vbox, *vbox, *hbox;
+#if !GTK_CHECK_VERSION (3, 0, 0)
   GtkWidget *align;
+#endif
   GtkWidget *radio;
   GtkWidget *image;
   GtkWidget *spin;
@@ -458,7 +465,6 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
 #endif
   gtk_box_pack_start (GTK_BOX (main_vbox), hbox, FALSE, FALSE, 0);
   gtk_widget_show (hbox);
-
 #if !GTK_CHECK_VERSION (3, 0, 0)
   align = gtk_alignment_new (0.0, 0.0, 0.0, 0.0);
   gtk_widget_set_size_request (align, 48, -1);
@@ -469,11 +475,15 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
 #if GTK_CHECK_VERSION (3, 0, 0)
   image = gtk_image_new_from_icon_name (SCREENSHOOTER_ICON,
                                     GTK_ICON_SIZE_DIALOG);
+
+  gtk_box_pack_start (GTK_BOX (hbox), image, FALSE, FALSE, 0);
+  gtk_widget_set_valign (image, GTK_ALIGN_START);
 #else
   image = gtk_image_new_from_stock (SCREENSHOOTER_ICON,
                                     GTK_ICON_SIZE_DIALOG);
-#endif
   gtk_container_add (GTK_CONTAINER (align), image);
+#endif
+
   gtk_widget_show (image);
 
 #if GTK_CHECK_VERSION (3, 0, 0)
