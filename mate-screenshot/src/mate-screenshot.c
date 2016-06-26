@@ -477,6 +477,7 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
                                     GTK_ICON_SIZE_DIALOG);
 
   gtk_box_pack_start (GTK_BOX (hbox), image, FALSE, FALSE, 0);
+  gtk_widget_set_valign (image, GTK_ALIGN_START);
 #else
   image = gtk_image_new_from_stock (SCREENSHOOTER_ICON,
                                     GTK_ICON_SIZE_DIALOG);
