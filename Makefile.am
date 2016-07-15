@@ -39,7 +39,10 @@ EXTRA_DIST = \
 DISTCLEANFILES =                \
 	gtk-doc.make
 
-DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper --enable-gtk-doc
+DISTCHECK_CONFIGURE_FLAGS = \
+	--disable-scrollkeeper \
+	--enable-gtk-doc \
+	--with-gtk=$(GTK_API_VERSION)
 
 # Build ChangeLog from GIT  history
 ChangeLog:
