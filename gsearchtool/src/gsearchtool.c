@@ -2767,6 +2767,10 @@ gsearch_app_create (GSearchWindow * gsearch)
 	GtkWidget * label;
 	GtkWidget * button;
 	GtkWidget * container;
+#if GTK_CHECK_VERSION (3, 21, 0)
+	GtkStyleContext *context;
+	GtkCssProvider  *cssProvider;
+#endif
 
 	gsearch->mate_search_tool_settings = g_settings_new ("org.mate.search-tool");
 	gsearch->mate_search_tool_select_settings = g_settings_new ("org.mate.search-tool.select");
@@ -2831,6 +2835,21 @@ gsearch_app_create (GSearchWindow * gsearch)
 	gtk_table_set_row_spacings (GTK_TABLE (gsearch->name_and_folder_table), 6);
 	gtk_table_set_col_spacings (GTK_TABLE (gsearch->name_and_folder_table), 12);
 	gtk_container_add (GTK_CONTAINER (hbox), gsearch->name_and_folder_table);
+
+#if GTK_CHECK_VERSION (3, 21, 0)
+	/*workaround for nonexpanding table probably caused by */
+        /* https://git.gnome.org/browse/gtk+/commit/?id=a72f1c76c87de7a8124a809fe9692194273c563e */
+	context = gtk_widget_get_style_context (GTK_WIDGET (gsearch->name_and_folder_table));
+	gtk_style_context_add_class(context, "mate-search-tool-entry");
+	cssProvider = gtk_css_provider_new ();
+	gtk_css_provider_load_from_data (cssProvider,
+                                     ".mate-search-tool-entry combobox{ \n"                                      
+                                     "min-width: 420px;\n"
+                                      "}",-1, NULL);
+	gtk_style_context_add_provider_for_screen (gdk_screen_get_default(), 
+	GTK_STYLE_PROVIDER(cssProvider),  
+	GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+#endif
 
 	label = gtk_label_new_with_mnemonic (_("_Name contains:"));
 	gtk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_LEFT);
