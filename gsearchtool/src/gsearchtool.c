@@ -2827,21 +2827,36 @@ gsearch_app_create (GSearchWindow * gsearch)
 #endif
 	gtk_box_pack_start (GTK_BOX (container), hbox, FALSE, FALSE, 0);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+	gsearch->name_and_folder_table = gtk_grid_new ();
+	gtk_grid_set_row_spacing (GTK_GRID (gsearch->name_and_folder_table), 6);
+	gtk_grid_set_column_spacing (GTK_GRID (gsearch->name_and_folder_table), 12);
+#else
 	gsearch->name_and_folder_table = gtk_table_new (2, 2, FALSE);
 	gtk_table_set_row_spacings (GTK_TABLE (gsearch->name_and_folder_table), 6);
 	gtk_table_set_col_spacings (GTK_TABLE (gsearch->name_and_folder_table), 12);
+#endif
 	gtk_container_add (GTK_CONTAINER (hbox), gsearch->name_and_folder_table);
 
 	label = gtk_label_new_with_mnemonic (_("_Name contains:"));
 	gtk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_LEFT);
 	g_object_set (G_OBJECT (label), "xalign", 0.0, NULL);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+	gtk_grid_attach (GTK_GRID (gsearch->name_and_folder_table), label, 0, 0, 1, 1);
+#else
 	gtk_table_attach (GTK_TABLE (gsearch->name_and_folder_table), label, 0, 1, 0, 1, GTK_FILL, 0, 0, 1);
+#endif
 
 	gsearch->name_contains_entry = gsearch_history_entry_new ("gsearchtool-file-entry", FALSE);
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), gsearch->name_contains_entry);
 	gsearch_history_entry_set_history_length (GSEARCH_HISTORY_ENTRY (gsearch->name_contains_entry), 10);
+#if GTK_CHECK_VERSION (3, 0, 0)
+	gtk_widget_set_hexpand (gsearch->name_contains_entry, TRUE);
+	gtk_grid_attach (GTK_GRID (gsearch->name_and_folder_table), gsearch->name_contains_entry, 1, 0, 1, 1);
+#else
 	gtk_table_attach (GTK_TABLE (gsearch->name_and_folder_table), gsearch->name_contains_entry, 1, 2, 0, 1, GTK_EXPAND | GTK_FILL | GTK_SHRINK, 0, 0, 0);
+#endif
 	entry =  gsearch_history_entry_get_entry (GSEARCH_HISTORY_ENTRY (gsearch->name_contains_entry));
 
 	if (GTK_IS_ACCESSIBLE (gtk_widget_get_accessible (gsearch->name_contains_entry))) {
@@ -2857,11 +2872,20 @@ gsearch_app_create (GSearchWindow * gsearch)
 	gtk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_LEFT);
 	g_object_set (G_OBJECT (label), "xalign", 0.0, NULL);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+	gtk_grid_attach (GTK_GRID (gsearch->name_and_folder_table), label, 0, 1, 1, 1);
+#else
 	gtk_table_attach (GTK_TABLE (gsearch->name_and_folder_table), label, 0, 1, 1, 2, GTK_FILL, 0, 0, 0);
+#endif
 
 	gsearch->look_in_folder_button = gtk_file_chooser_button_new (_("Browse"), GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER);
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), GTK_WIDGET (gsearch->look_in_folder_button));
+#if GTK_CHECK_VERSION (3, 0, 0)
+	gtk_widget_set_hexpand (gsearch->look_in_folder_button, TRUE);
+	gtk_grid_attach (GTK_GRID (gsearch->name_and_folder_table), gsearch->look_in_folder_button, 1, 1, 1, 1);
+#else
 	gtk_table_attach (GTK_TABLE (gsearch->name_and_folder_table), gsearch->look_in_folder_button, 1, 2, 1, 2, GTK_EXPAND | GTK_FILL | GTK_SHRINK, 0, 0, 0);
+#endif
 
 	g_signal_connect (G_OBJECT (gsearch->look_in_folder_button), "current-folder-changed",
 	                  G_CALLBACK (look_in_folder_changed_cb),
