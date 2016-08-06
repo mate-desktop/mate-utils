@@ -454,7 +454,11 @@ on_tree_selection_changed (GtkTreeSelection *selection, LogviewFilterManager *ma
 static void
 logview_filter_manager_init (LogviewFilterManager *manager)
 {
+#if GTK_CHECK_VERSION (3, 0, 0)
+  GtkWidget *grid;
+#else
   GtkWidget *table;
+#endif
   GtkWidget *scrolled_window;
   GtkTreeViewColumn *column;
   GtkCellRenderer *text_renderer;
@@ -478,7 +482,13 @@ logview_filter_manager_init (LogviewFilterManager *manager)
                                                     G_TYPE_OBJECT));
   logview_filter_manager_update_model (manager);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  grid = gtk_grid_new ();
+  gtk_grid_set_row_spacing (GTK_GRID (grid), 6);
+  gtk_grid_set_column_spacing (GTK_GRID (grid), 6);
+#else
   table = gtk_table_new (3, 2, FALSE);
+#endif
   scrolled_window = gtk_scrolled_window_new (NULL, NULL);
   gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (scrolled_window),
                                   GTK_POLICY_AUTOMATIC, GTK_POLICY_AUTOMATIC);
@@ -521,6 +531,19 @@ logview_filter_manager_init (LogviewFilterManager *manager)
                     "changed", G_CALLBACK (on_tree_selection_changed),
                     manager);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  gtk_widget_set_hexpand (scrolled_window, TRUE);
+  gtk_widget_set_vexpand (scrolled_window, TRUE);
+  gtk_grid_attach (GTK_GRID (grid), scrolled_window, 0, 0, 1, 3);
+  gtk_widget_set_valign (priv->add_button, GTK_ALIGN_CENTER);
+  gtk_grid_attach (GTK_GRID (grid), priv->add_button, 1, 0, 1, 1);
+  gtk_widget_set_valign (priv->edit_button, GTK_ALIGN_CENTER);
+  gtk_grid_attach (GTK_GRID (grid), priv->edit_button, 1, 1, 1, 1);
+  gtk_widget_set_valign (priv->remove_button, GTK_ALIGN_CENTER);
+  gtk_grid_attach (GTK_GRID (grid), priv->remove_button, 1, 2, 1, 1);
+  gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (manager))),
+                      grid, TRUE, TRUE, 5);
+#else
   gtk_table_attach_defaults (GTK_TABLE (table),
                              scrolled_window,
                              0, 1, 0, 3);
@@ -535,6 +558,7 @@ logview_filter_manager_init (LogviewFilterManager *manager)
                     1, 2, 2, 3, GTK_FILL, 0, 5, 5);
   gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (manager))),
                       table, TRUE, TRUE, 5);
+#endif
   gtk_widget_show_all (GTK_WIDGET (manager));
 }
 
