@@ -4,13 +4,9 @@ mate_screenshot_DATA = $(mate_screenshot_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
 man_MANS = mate-screenshot.1
-if WITH_GTK3
 uidir = $(datadir)/mate-screenshot
-ui_DATA = mate-screenshot-gtk3.ui
-else
-uidir = $(datadir)/mate-screenshot
-ui_DATA = mate-screenshot.ui
-endif
+ui_DATA = mate-screenshot.ui \
+	mate-screenshot-gtk3.ui
 
 @INTLTOOL_XML_RULE@
 appdatadir = $(datadir)/appdata
