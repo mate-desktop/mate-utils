@@ -72,6 +72,21 @@ on_preview_draw (GtkWidget      *drawing_area,
 {
   ScreenshotDialog *dialog = data;
   GtkStyleContext *context;
+  int width, height;
+
+  width = gtk_widget_get_allocated_width (drawing_area);
+  height = gtk_widget_get_allocated_height (drawing_area);
+
+  if (!dialog->preview_image ||
+      gdk_pixbuf_get_width (dialog->preview_image) != width ||
+      gdk_pixbuf_get_height (dialog->preview_image) != height)
+    {
+      g_clear_object (&dialog->preview_image);
+      dialog->preview_image = gdk_pixbuf_scale_simple (dialog->screenshot,
+                                                       width,
+                                                       height,
+                                                       GDK_INTERP_BILINEAR);
+    }
 
   context = gtk_widget_get_style_context (drawing_area);
   gtk_style_context_save (context);
@@ -153,6 +168,7 @@ on_preview_button_release_event (GtkWidget      *drawing_area,
   return FALSE;
 }
 
+#if !GTK_CHECK_VERSION (3, 0, 0)
 static void
 on_preview_configure_event (GtkWidget         *drawing_area,
 			    GdkEventConfigure *event,
@@ -168,6 +184,7 @@ on_preview_configure_event (GtkWidget         *drawing_area,
 						   event->height,
 						   GDK_INTERP_BILINEAR);
 }
+#endif
 
 static void
 drag_data_get (GtkWidget          *widget,
@@ -299,7 +316,9 @@ screenshot_dialog_new (GdkPixbuf *screenshot,
 #endif
   g_signal_connect (preview_darea, "button_press_event", G_CALLBACK (on_preview_button_press_event), dialog);
   g_signal_connect (preview_darea, "button_release_event", G_CALLBACK (on_preview_button_release_event), dialog);
+#if !GTK_CHECK_VERSION (3, 0, 0)
   g_signal_connect (preview_darea, "configure_event", G_CALLBACK (on_preview_configure_event), dialog);
+#endif
 
   if (take_window_shot)
     gtk_frame_set_shadow_type (GTK_FRAME (aspect_frame), GTK_SHADOW_NONE);
