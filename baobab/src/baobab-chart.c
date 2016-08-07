@@ -314,6 +314,9 @@ baobab_chart_realize (GtkWidget *widget)
   gint attributes_mask;
   GtkAllocation allocation;
   GdkWindow *window;
+#if GTK_CHECK_VERSION (3, 0, 0)
+  GtkStyleContext *context;
+#endif
 
   g_return_if_fail (BAOBAB_IS_CHART (widget));
 
@@ -346,10 +349,15 @@ baobab_chart_realize (GtkWidget *widget)
   gtk_widget_set_window (widget, window);
   gdk_window_set_user_data (window, chart);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  context = gtk_widget_get_style_context (widget);
+  gtk_style_context_set_background (context, window);
+#else
   gtk_widget_style_attach (widget);
   gtk_style_set_background (gtk_widget_get_style (widget),
                             window,
                             GTK_STATE_NORMAL);
+#endif
 
   gtk_widget_add_events (widget,
                          GDK_EXPOSURE_MASK | GDK_BUTTON_PRESS_MASK |
