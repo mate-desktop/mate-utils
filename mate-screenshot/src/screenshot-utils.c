@@ -499,6 +499,7 @@ emit_select_callback_in_idle (gpointer user_data)
 void
 screenshot_select_area_async (SelectAreaCallback callback)
 {
+  GdkDisplay *display;
   GdkCursor               *cursor;
 #if GTK_CHECK_VERSION (3, 0, 0)
   GdkDeviceManager *manager;
@@ -524,10 +525,11 @@ screenshot_select_area_async (SelectAreaCallback callback)
   g_signal_connect (data.window, "button-release-event", G_CALLBACK (select_area_button_release), &data);
   g_signal_connect (data.window, "motion-notify-event", G_CALLBACK (select_area_motion_notify), &data);
 
-  cursor = gdk_cursor_new (GDK_CROSSHAIR);
+  display = gdk_display_get_default ();
+  cursor = gdk_cursor_new_for_display (display, GDK_CROSSHAIR);
 
 #if GTK_CHECK_VERSION (3, 0, 0)
-  manager = gdk_display_get_device_manager (gdk_display_get_default ());
+  manager = gdk_display_get_device_manager (display);
   pointer = gdk_device_manager_get_client_pointer (manager);
   keyboard = gdk_device_get_associated_device (pointer);
 

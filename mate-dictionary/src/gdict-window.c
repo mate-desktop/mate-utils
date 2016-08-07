@@ -316,13 +316,16 @@ static void
 gdict_window_lookup_start_cb (GdictContext *context,
 			      GdictWindow  *window)
 {
+  GdkDisplay *display;
   gchar *message;
+
+  display = gtk_widget_get_display (GTK_WIDGET (window));
 
   if (!window->word)
     return;
 
   if (!window->busy_cursor)
-    window->busy_cursor = gdk_cursor_new (GDK_WATCH);
+    window->busy_cursor = gdk_cursor_new_for_display (display, GDK_WATCH);
 
   message = g_strdup_printf (_("Searching for '%s'..."), window->word);
   

@@ -408,14 +408,16 @@ screenshot_dialog_set_busy (ScreenshotDialog *dialog,
 			    gboolean          busy)
 {
   GtkWidget *toplevel;
+  GdkDisplay *display;
 
   toplevel = screenshot_dialog_get_toplevel (dialog);
+  display = gtk_widget_get_display (GTK_WIDGET (dialog));
 
   if (busy)
     {
       GdkCursor *cursor;
       /* Change cursor to busy */
-      cursor = gdk_cursor_new (GDK_WATCH);
+      cursor = gdk_cursor_new_for_display (display, GDK_WATCH);
       gdk_window_set_cursor (gtk_widget_get_window (toplevel), cursor);
 #if GTK_CHECK_VERSION (3, 0, 0)
       g_object_unref (cursor);

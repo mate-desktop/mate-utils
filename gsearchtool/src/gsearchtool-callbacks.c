@@ -1421,10 +1421,13 @@ file_motion_notify_cb (GtkWidget *widget,
                        GdkEventMotion *event,
                        gpointer user_data)
 {
-        GSearchWindow * gsearch = user_data;
+	GSearchWindow * gsearch = user_data;
+	GdkDisplay *display;
 	GdkCursor * cursor;
 	GtkTreePath * last_hover_path;
 	GtkTreeIter iter;
+
+	display = gtk_widget_get_display (GTK_WIDGET (user_data));
 
 	if (gsearch->is_search_results_single_click_to_activate == FALSE) {
 		return FALSE;
@@ -1442,7 +1445,7 @@ file_motion_notify_cb (GtkWidget *widget,
 				       NULL, NULL, NULL);
 
 	if (gsearch->search_results_hover_path != NULL) {
-		cursor = gdk_cursor_new (GDK_HAND2);
+		cursor = gdk_cursor_new_for_display (display, GDK_HAND2);
 	}
 	else {
 		cursor = NULL;
