@@ -239,7 +239,11 @@ logview_set_font (LogviewWindow *logview,
 
   font_desc = pango_font_description_from_string (fontname);
   if (font_desc) {
+#if GTK_CHECK_VERSION(3,0,0)
+    gtk_widget_override_font (logview->priv->text_view, font_desc);
+#else
     gtk_widget_modify_font (logview->priv->text_view, font_desc);
+#endif
     pango_font_description_free (font_desc);
   }
 }
@@ -254,7 +258,11 @@ logview_set_fontsize (LogviewWindow *logview, gboolean store)
   context = gtk_widget_get_pango_context (priv->text_view);
   fontdesc = pango_context_get_font_description (context);
   pango_font_description_set_size (fontdesc, (priv->fontsize) * PANGO_SCALE);
+#if GTK_CHECK_VERSION(3,0,0)
+  gtk_widget_override_font (priv->text_view, fontdesc);
+#else
   gtk_widget_modify_font (priv->text_view, fontdesc);
+#endif
 
   if (store) {
     logview_prefs_store_fontsize (logview->priv->prefs, priv->fontsize);
