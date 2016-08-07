@@ -145,7 +145,34 @@ populate_tag_table (GtkTextTagTable *tag_table)
   gtk_text_tag_table_add (tag_table, tag); 
 }
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+static void
+populate_style_tag_table (LogviewWindow *logview)
+{
+  GtkTextTagTable *tag_table = logview->priv->tag_table;
+  GtkTextTag *tag;
+  GtkStyleContext *context;
+  GdkRGBA rgba;
 
+  tag = gtk_text_tag_table_lookup (tag_table, "gray");
+
+  if (tag) {
+    gtk_text_tag_table_remove (tag_table, tag);
+  }
+
+  tag = gtk_text_tag_new ("gray");
+
+  context = gtk_widget_get_style_context (logview->priv->text_view);
+  gtk_style_context_save (context);
+  gtk_style_context_add_class (context, "dim-label");
+  gtk_style_context_get_color (context, GTK_STATE_FLAG_NORMAL, &rgba);
+  gtk_style_context_restore (context);
+
+  g_object_set (tag, "foreground-rgba", &rgba, "foreground-set", TRUE, NULL);
+
+  gtk_text_tag_table_add (tag_table, tag);
+}
+#else
 static void
 populate_style_tag_table (GtkStyle *style,
                           GtkTextTagTable *tag_table)
@@ -166,6 +193,7 @@ populate_style_tag_table (GtkStyle *style,
 
   gtk_text_tag_table_add (tag_table, tag);
 }
+#endif
 
 static void
 _gtk_text_buffer_apply_tag_to_rectangle (GtkTextBuffer *buffer, int line_start, int line_end,
@@ -1131,6 +1159,7 @@ tearoff_changed_cb (LogviewPrefs *prefs,
   gtk_ui_manager_set_add_tearoffs (window->priv->ui_manager, have_tearoffs);
 }
 
+#if !GTK_CHECK_VERSION (3, 0, 0)
 static void
 style_set_cb (GtkWidget *widget,
               GtkStyle *prev,
@@ -1141,6 +1170,7 @@ style_set_cb (GtkWidget *widget,
 
   populate_style_tag_table (style, logview->priv->tag_table);
 }
+#endif
 
 static const struct {
   guint keyval;
@@ -1421,8 +1451,12 @@ logview_window_init (LogviewWindow *logview)
 
   priv->tag_table = gtk_text_tag_table_new ();
   populate_tag_table (priv->tag_table);
+
   priv->text_view = gtk_text_view_new ();
   g_object_set (priv->text_view, "editable", FALSE, NULL);
+#if GTK_CHECK_VERSION (3, 0, 0)
+  populate_style_tag_table (logview);
+#endif
 
   gtk_container_add (GTK_CONTAINER (w), priv->text_view);
   gtk_widget_show (priv->text_view);
@@ -1486,8 +1520,10 @@ logview_window_init (LogviewWindow *logview)
                     G_CALLBACK (tearoff_changed_cb), logview);
   g_signal_connect (priv->manager, "active-changed",
                     G_CALLBACK (active_log_changed_cb), logview);
+#if !GTK_CHECK_VERSION (3, 0, 0)
   g_signal_connect (logview, "style-set",
                     G_CALLBACK (style_set_cb), logview);
+#endif
   g_signal_connect (logview, "key-press-event",
                     G_CALLBACK (key_press_event_cb), logview);
 
