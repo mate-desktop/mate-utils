@@ -952,6 +952,10 @@ open_file_with_filemanager (GtkWidget * window,
 	GDesktopAppInfo * d_app_info;
 	GKeyFile * key_file;
 	GdkAppLaunchContext * ctx = NULL;
+#if GTK_CHECK_VERSION (3, 0, 0)
+	GdkScreen *screen;
+	GdkDisplay *display;
+#endif
 	GList * list = NULL;
 	GAppInfo * g_app_info;
 	GFile * g_file;
@@ -991,7 +995,13 @@ open_file_with_filemanager (GtkWidget * window,
 	d_app_info = g_desktop_app_info_new_from_keyfile (key_file);
 
 	if (d_app_info != NULL) {
+#if GTK_CHECK_VERSION (3, 0, 0)
+		screen = gtk_widget_get_screen (GTK_WIDGET (window));
+		display = gdk_screen_get_display (screen);
+		ctx = gdk_display_get_app_launch_context (display);
+#else
 		ctx = gdk_app_launch_context_new ();
+#endif
 		gdk_app_launch_context_set_screen (ctx, gtk_widget_get_screen (window));
 
 		result = g_app_info_launch_uris (G_APP_INFO (d_app_info), list,  G_APP_LAUNCH_CONTEXT (ctx), NULL);
@@ -1019,6 +1029,9 @@ open_file_with_application (GtkWidget * window,
                             GAppInfo * app)
 {
 	GdkAppLaunchContext * context;
+#if GTK_CHECK_VERSION (3, 0, 0)
+	GdkDisplay *display;
+#endif
 	GdkScreen * screen;
 	gboolean result;
 
@@ -1026,8 +1039,13 @@ open_file_with_application (GtkWidget * window,
 		return FALSE;
 	}
 
-	context = gdk_app_launch_context_new ();
 	screen = gtk_widget_get_screen (window);
+#if GTK_CHECK_VERSION (3, 0, 0)
+	display = gdk_screen_get_display (screen);
+	context = gdk_display_get_app_launch_context (display);
+#else
+	context = gdk_app_launch_context_new ();
+#endif
 	gdk_app_launch_context_set_screen (context, screen);
 
 	if (app == NULL) {
