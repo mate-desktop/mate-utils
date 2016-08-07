@@ -79,7 +79,7 @@ baobab_set_busy (gboolean busy)
 
 	if (busy == TRUE) {
 		if (!busy_cursor) {
-			busy_cursor = gdk_cursor_new (GDK_WATCH);
+-			busy_cursor = gdk_cursor_new (GDK_WATCH);
 		}
 		cursor = busy_cursor;
 
