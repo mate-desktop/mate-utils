@@ -139,7 +139,11 @@ unbold_timeout_cb (gpointer user_data)
   PangoFontDescription *desc;
 
   desc = pango_font_description_new ();
+#if GTK_CHECK_VERSION(3,0,0)
+  gtk_widget_override_font (findbar->priv->message, desc);
+#else
   gtk_widget_modify_font (findbar->priv->message, desc);
+#endif
   pango_font_description_free (desc);
 
   findbar->priv->status_bold_id = 0;
@@ -343,7 +347,11 @@ logview_findbar_set_message (LogviewFindbar *findbar,
   if (text) {
     desc = pango_font_description_new ();
     pango_font_description_set_weight (desc, PANGO_WEIGHT_BOLD);
+#if GTK_CHECK_VERSION(3,0,0)
+    gtk_widget_override_font (findbar->priv->message, desc);
+#else
     gtk_widget_modify_font (findbar->priv->message, desc);
+#endif
     pango_font_description_free (desc);
     
     findbar->priv->status_bold_id = g_timeout_add (600, unbold_timeout_cb, findbar);
