@@ -213,6 +213,23 @@ on_dialog_add_edit_reponse (GtkWidget *dialog, int response_id,
 
     if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (radio_color))) {
       if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check_foreground))) {
+#if GTK_CHECK_VERSION (3, 0, 0)
+        GdkRGBA foreground_color;
+        gtk_color_chooser_get_rgba (GTK_COLOR_CHOOSER (color_foreground),
+                                    &foreground_color);
+        g_object_set (G_OBJECT (tag), 
+                      "foreground-rgba", &foreground_color,
+                      "foreground-set", TRUE, NULL);
+      }
+
+      if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check_background))) {
+        GdkRGBA background_color;
+        gtk_color_chooser_get_rgba (GTK_COLOR_CHOOSER (color_background),
+                                    &background_color);
+        g_object_set (tag, 
+                      "paragraph-background-rgba", &background_color,
+                      "paragraph-background-set", TRUE, NULL);
+#else
         GdkColor foreground_color;
         gtk_color_button_get_color (GTK_COLOR_BUTTON (color_foreground),
                                     &foreground_color);
@@ -228,6 +245,7 @@ on_dialog_add_edit_reponse (GtkWidget *dialog, int response_id,
         g_object_set (tag, 
                       "paragraph-background-gdk", &background_color,
                       "paragraph-background-set", TRUE, NULL);
+#endif
       }
       
       if (!gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check_foreground))
@@ -350,6 +368,29 @@ run_add_edit_dialog (LogviewFilterManager *manager, LogviewFilter *filter)
     gtk_entry_set_text (GTK_ENTRY(entry_regex), regex);
 
     if (foreground_set) {
+#if GTK_CHECK_VERSION (3, 0, 0)
+      GdkRGBA *foreground;
+
+      g_object_get (tag, "foreground-rgba", &foreground, NULL);
+      gtk_color_chooser_set_rgba (GTK_COLOR_CHOOSER (color_foreground),
+                                  foreground);
+      gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (check_foreground),
+                                    TRUE);
+
+      gdk_rgba_free (foreground);
+    }
+
+    if (background_set) {
+      GdkRGBA *background;
+
+      g_object_get (tag, "paragraph-background-rgba", &background, NULL);
+      gtk_color_chooser_set_rgba (GTK_COLOR_CHOOSER (color_background),
+                                  background);
+      gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (check_background),
+                                    TRUE);
+
+      gdk_rgba_free (background);
+#else
       GdkColor *foreground;
 
       g_object_get (tag, "foreground-gdk", &foreground, NULL);
@@ -371,6 +412,7 @@ run_add_edit_dialog (LogviewFilterManager *manager, LogviewFilter *filter)
                                     TRUE);
 
       gdk_color_free (background);
+#endif
     }
 
     if (background_set || foreground_set) {
