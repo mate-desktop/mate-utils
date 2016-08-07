@@ -192,7 +192,11 @@ logview_findbar_init (LogviewFindbar *findbar)
   gtk_widget_show_all (GTK_WIDGET (item));
 
   /* "Previous" and "Next" buttons */
+#if GTK_CHECK_VERSION (3, 0, 0)
+  w = gtk_image_new_from_icon_name ("pan-start-symbolic", GTK_ICON_SIZE_BUTTON);
+#else
   w = gtk_arrow_new (GTK_ARROW_LEFT, GTK_SHADOW_NONE);
+#endif
   priv->back_button = gtk_tool_button_new (w, _("Find Previous"));
   gtk_tool_item_set_is_important (priv->back_button, TRUE);
   gtk_tool_item_set_tooltip_text (priv->back_button,
@@ -200,7 +204,11 @@ logview_findbar_init (LogviewFindbar *findbar)
   gtk_toolbar_insert (gtoolbar, priv->back_button, -1);
   gtk_widget_show_all (GTK_WIDGET (priv->back_button));
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+  w = gtk_image_new_from_icon_name ("pan-end-symbolic", GTK_ICON_SIZE_BUTTON);
+#else
   w = gtk_arrow_new (GTK_ARROW_RIGHT, GTK_SHADOW_NONE);
+#endif
   priv->forward_button = gtk_tool_button_new (w, _("Find Next"));
   gtk_tool_item_set_is_important (priv->forward_button, TRUE);
   gtk_tool_item_set_tooltip_text (priv->forward_button,
