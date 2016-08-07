@@ -401,28 +401,49 @@ draw (GtkWidget *window, cairo_t *cr, gpointer unused)
 expose (GtkWidget *window, GdkEventExpose *event, gpointer unused)
 #endif
 {
+#if GTK_CHECK_VERSION (3, 0, 0)
+  GtkStyleContext *style;
+
+  style = gtk_widget_get_style_context (window);
+#else
   GtkAllocation allocation;
   GtkStyle *style;
-#if !GTK_CHECK_VERSION (3, 0, 0)
   cairo_t *cr;
 
   cr = gdk_cairo_create (event->window);
   gdk_cairo_region (cr, event->region);
   cairo_clip (cr);
-#endif
 
   style = gtk_widget_get_style (window);
+#endif
 
   if (gtk_widget_get_app_paintable (window))
     {
+#if !GTK_CHECK_VERSION (3, 0, 0)
       cairo_set_line_width (cr, 1.0);
 
       gtk_widget_get_allocation (window, &allocation);
+#endif
 
       cairo_set_operator (cr, CAIRO_OPERATOR_SOURCE);
       cairo_set_source_rgba (cr, 0, 0, 0, 0);
       cairo_paint (cr);
 
+#if GTK_CHECK_VERSION (3, 0, 0)
+      gtk_style_context_save (style);
+      gtk_style_context_add_class (style, GTK_STYLE_CLASS_RUBBERBAND);
+
+      gtk_render_background (style, cr,
+                             0, 0,
+                             gtk_widget_get_allocated_width (window),
+                             gtk_widget_get_allocated_height (window));
+      gtk_render_frame (style, cr,
+                        0, 0,
+                        gtk_widget_get_allocated_width (window),
+                        gtk_widget_get_allocated_height (window));
+
+      gtk_style_context_restore (style);
+#else
       cairo_set_operator (cr, CAIRO_OPERATOR_OVER);
       gdk_cairo_set_source_color (cr, &style->base[GTK_STATE_SELECTED]);
       cairo_paint_with_alpha (cr, 0.25);
@@ -436,6 +457,7 @@ expose (GtkWidget *window, GdkEventExpose *event, gpointer unused)
     {
       gdk_cairo_set_source_color (cr, &style->base[GTK_STATE_SELECTED]);
       cairo_paint (cr);
+#endif
     }
 
 #if !GTK_CHECK_VERSION (3, 0, 0)
