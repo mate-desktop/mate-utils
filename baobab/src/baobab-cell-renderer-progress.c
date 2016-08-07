@@ -146,6 +146,42 @@ baobab_cell_renderer_progress_get_size (GtkCellRenderer *cell,
 static void
 set_color_according_to_perc (cairo_t *cr, double value)
 {
+#if GTK_CHECK_VERSION (3, 0, 0)
+  static GdkRGBA red;
+  static GdkRGBA yellow;
+  static GdkRGBA green;
+  static gboolean colors_initialized = FALSE;
+
+  if (!colors_initialized)
+    {
+      /* hardcoded tango colors */
+      gdk_rgba_parse (&red, "#cc0000");
+      gdk_rgba_parse (&yellow, "#edd400");
+      gdk_rgba_parse (&green, "#73d216");
+
+      colors_initialized = TRUE;
+    }
+
+  if (value <= 0)
+    {
+      cairo_set_source_rgb (cr, 1, 1, 1);
+      return;
+    }
+  else if (value <= 33.33)
+    {
+      gdk_cairo_set_source_rgba (cr, &green);
+      return;
+    }
+  else if (value <= 66.66)
+    {
+      gdk_cairo_set_source_rgba (cr, &yellow);
+      return;
+    }
+  else if (value <= 100.0)
+    {
+      gdk_cairo_set_source_rgba (cr, &red);
+      return;
+#else
   static GdkColor red;
   static GdkColor yellow;
   static GdkColor green;
@@ -180,6 +216,7 @@ set_color_according_to_perc (cairo_t *cr, double value)
     {
       gdk_cairo_set_source_color (cr, &red);
       return;
+#endif
     }
   else
     g_assert_not_reached ();
