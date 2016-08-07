@@ -76,10 +76,14 @@ baobab_set_busy (gboolean busy)
 	static GdkCursor *busy_cursor = NULL;
 	GdkCursor *cursor = NULL;
 	GdkWindow *window;
+	GdkDisplay *display;
+
+	window = gtk_widget_get_window (baobab.window);
 
 	if (busy == TRUE) {
-		if (!busy_cursor) {
-			busy_cursor = gdk_cursor_new (GDK_WATCH);
+		if (!busy_cursor && window) {
+			display = gtk_widget_get_display (baobab.window);
+			busy_cursor = gdk_cursor_new_for_display (display, GDK_WATCH);
 		}
 		cursor = busy_cursor;
 
@@ -87,7 +91,6 @@ baobab_set_busy (gboolean busy)
 		gtk_spinner_start (GTK_SPINNER (baobab.spinner));
 
 		baobab_chart_freeze_updates (baobab.rings_chart);
-
 		baobab_chart_freeze_updates (baobab.treemap_chart);
 
 		gtk_widget_set_sensitive (baobab.chart_type_combo, FALSE);
@@ -103,7 +106,6 @@ baobab_set_busy (gboolean busy)
 	}
 
 	/* change the cursor */
-	window = gtk_widget_get_window (baobab.window);
 	if (window) {
 		gdk_window_set_cursor (window, cursor);
 	}
