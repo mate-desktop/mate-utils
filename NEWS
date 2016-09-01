@@ -1,5 +1,37 @@
 1.15.1
 
+  * Translations update
+  * GTK+-3 logview-prefs: complete migration to GdkRGBA
+  * GTK+-3 logview-window: don't use GtkStyle to get a dim color
+  * GTK+-3 logview-filter-manger: don't use deprecated GdkColor
+  * GTK+-3 screenshot-dialog: Avoid resizing the preview too much
+  * GTK+-3 screenshot-utils: don't use deprecated GDK api
+  * GTK+-3 screenshot-utils: use GtkStyleContext to draw the area selection
+  * avoid deprecated gdk_cursor_new ()
+  * GTK+-3 babab-chart: use GtkStyleContext
+  * GTK+-3.0 baobab: port GdkColor to GdkRGBA
+  * drop ancient commented code from Makefile
+  * GTK+-3 logview-findbar: avoid deprecated gtk_misc_set_alignment ()
+  * GTK+-3 logvie-findbar: avoid deprecated gtk_arrow_new ()
+  * GTK+-3 logview-findbar: avoid deprecated gtk_widget_modify_font ()
+  * GTK+-3 logview-window: avoid deprecated gtk_widget_modify_font ()
+  * GTK+-3 search: avoid deprecated gdk_app_launch_context_new ()
+  * GTK+-3.0 logview-filter-manager: port GtkTable to GtkGrid
+  * GTK+-3.0 baobab: port GtkTable to GtkGrid
+  * GTK+-3.0 search: port GtkTable to GtkGrid
+  * screenshot: install both UI files
+  * distcheck: explicitly use currently selected GTK+ version
+  * po: drop languages not present on Transifex (or present but empty)
+  * Fix missing image and effect buttons
+  * po: add new .ui file to POTFILES.in
+  * po: actually add new languages from Transifex
+  * Add option to print version and exit
+  * Remove usage of GtkAlignment with GTK+3
+  * Some more fixes for gtk+3
+  * GTK+3 Replace on_preview_expose_event
+  * Remove deprecated usage of gtk_image_new_from_stock
+  * Modify glade file for the new glade format and use it for gtk3
+
 1.15.0
 
   * Translations update
