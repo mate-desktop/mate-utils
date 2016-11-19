@@ -91,7 +91,7 @@ stamp-gdict-marshal.h: gdict-marshal.list $(GLIB_GENMARSHAL) Makefile
 	$(AM_V_GEN)$(GLIB_GENMARSHAL) $< --header --prefix=gdict_marshal > xgen-gmh \
 	&& ( cmp -s xgen-gmh gdict-marshal.h || cp xgen-gmh gdict-marshal.h ) \
 	&& rm -f xgen-gmh \
-	&& echo timestamp > $(@F)
+	&& echo timestamp > $@
 
 gdict-marshal.c: gdict-marshal.list $(GLIB_GENMARSHAL) Makefile
 	$(AM_V_GEN)( echo "#include \"gdict-marshal.h\""; echo; \
@@ -102,19 +102,15 @@ gdict-marshal.c: gdict-marshal.list $(GLIB_GENMARSHAL) Makefile
 gdict-enum-types.h: stamp-gdict-enum-types.h
 	@true
 stamp-gdict-enum-types.h: $(sources_h) gdict-enum-types.h.in Makefile
-	$(AM_V_GEN)( cd $(srcdir) && \
-	  $(GLIB_MKENUMS) \
-	  	--template $(srcdir)/gdict-enum-types.h.in \
-	  $(sources_h) ) > xgen-ceth \
+	$(AM_V_GEN) $(GLIB_MKENUMS) --template $(srcdir)/gdict-enum-types.h.in \
+	  $(sources_h) > xgen-ceth \
 	&& ( cmp -s xgen-ceth gdict-enum-types.h || cp xgen-ceth gdict-enum-types.h ) \
 	&& rm -f xgen-ceth \
-	&& echo timestamp > $(@F)
+	&& echo timestamp > $@
 
 gdict-enum-types.c: gdict-enum-types.h gdict-enum-types.c.in Makefile
-	$(AM_V_GEN)( cd $(srcdir) && \
-	  $(GLIB_MKENUMS) \
-	  	--template $(srcdir)/gdict-enum-types.c.in \
-	  $(sources_h) ) > xgen-cetc \
+	$(AM_V_GEN) $(GLIB_MKENUMS) --template $(srcdir)/gdict-enum-types.c.in \
+	  $(sources_h) > xgen-cetc \
 	&& cp xgen-cetc gdict-enum-types.c \
 	&& rm -f xgen-cetc
 
