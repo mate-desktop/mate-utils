@@ -5,7 +5,7 @@ mate_screenshot_DATA = $(mate_screenshot_in_files:.desktop.in=.desktop)
 
 man_MANS = mate-screenshot.1
 uidir = $(datadir)/mate-screenshot
-ui_DATA = mate-screenshot-gtk3.ui
+ui_DATA = mate-screenshot.ui
 
 @INTLTOOL_XML_RULE@
 appdatadir = $(datadir)/appdata
