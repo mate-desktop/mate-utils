@@ -320,11 +320,6 @@ egg_sm_client_get (void)
       if (global_client_mode != EGG_SM_CLIENT_MODE_DISABLED &&
 	  !sm_client_disable)
 	{
-#if defined (GDK_WINDOWING_WIN32)
-	  global_client = egg_sm_client_win32_new ();
-#elif defined (GDK_WINDOWING_QUARTZ)
-	  global_client = egg_sm_client_osx_new ();
-#else
 	  /* If both D-Bus and XSMP are compiled in, try XSMP first
 	   * (since it supports state saving) and fall back to D-Bus
 	   * if XSMP isn't available.
@@ -336,7 +331,6 @@ egg_sm_client_get (void)
 	  if (!global_client)
 	    global_client = egg_sm_client_dbus_new ();
 # endif
-#endif
 	}
 
       /* Fallback: create a dummy client, so that callers don't have
