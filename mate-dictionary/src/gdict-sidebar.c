@@ -36,10 +36,6 @@
 
 #include "gdict-sidebar.h"
 
-#if !GTK_CHECK_VERSION(3,0,0)
-#define gtk_widget_get_preferred_size(x,y,z) gtk_widget_size_request(x,y)
-#endif
-
 typedef struct
 {
   guint index;
@@ -332,11 +328,7 @@ gdict_sidebar_init (GdictSidebar *sidebar)
   priv->pages_by_id = g_hash_table_new (g_str_hash, g_str_equal);
 
   /* top option menu */
-#if GTK_CHECK_VERSION (3, 0, 0)
   hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-#else
-  hbox = gtk_hbox_new (FALSE, 0);
-#endif
   gtk_box_pack_start (GTK_BOX (sidebar), hbox, FALSE, FALSE, 0);
   gtk_widget_show (hbox);
   priv->hbox = hbox;
@@ -351,11 +343,7 @@ gdict_sidebar_init (GdictSidebar *sidebar)
 		    sidebar);
   priv->select_button = select_button;
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   select_hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-#else
-  select_hbox = gtk_hbox_new (FALSE, 0);
-#endif
 
   priv->label = gtk_label_new (NULL);
 #if GTK_CHECK_VERSION (3, 16, 0)
@@ -367,11 +355,7 @@ gdict_sidebar_init (GdictSidebar *sidebar)
   gtk_box_pack_start (GTK_BOX (select_hbox), priv->label, FALSE, FALSE, 0);
   gtk_widget_show (priv->label);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   arrow = gtk_image_new_from_icon_name ("go-down-symbolic", GTK_ICON_SIZE_BUTTON);
-#else
-  arrow = gtk_arrow_new (GTK_ARROW_DOWN, GTK_SHADOW_NONE);
-#endif
   gtk_box_pack_end (GTK_BOX (select_hbox), arrow, FALSE, FALSE, 0);
   gtk_widget_show (arrow);
 

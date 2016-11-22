@@ -5,7 +5,7 @@ includedir=@includedir@
 
 Name: gdict-1.0
 Description: MATE Dictionary Protocol client library
-Requires: gtk+-@GTK_API_VERSION@ >= @GTK_REQUIRED@
+Requires: gtk+-3.0 >= @GTK_REQUIRED@
 Version: @GDICT_VERSION@
 Libs: -L${libdir} -lmatedict
 Cflags: -I${includedir}/mate-dict

@@ -24,9 +24,7 @@ EXTRA_DIST = \
 DISTCLEANFILES =                \
 	gtk-doc.make
 
-DISTCHECK_CONFIGURE_FLAGS = \
-	--enable-gtk-doc \
-	--with-gtk=$(GTK_API_VERSION)
+DISTCHECK_CONFIGURE_FLAGS = --enable-gtk-doc
 
 # Build ChangeLog from GIT  history
 ChangeLog:

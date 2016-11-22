@@ -64,7 +64,6 @@ on_toplevel_key_press_event (GtkWidget *widget,
   return FALSE;
 }
 
-#if GTK_CHECK_VERSION (3, 0, 0)
 static void
 on_preview_draw (GtkWidget      *drawing_area,
                  cairo_t        *cr,
@@ -97,51 +96,6 @@ on_preview_draw (GtkWidget      *drawing_area,
   gtk_style_context_restore (context);
 }
 
-#else
-static void
-on_preview_expose_event (GtkWidget *drawing_area, GdkEventExpose *event, gpointer data)
-{
-  ScreenshotDialog *dialog = data;
-  GdkPixbuf *pixbuf = NULL;
-  gboolean free_pixbuf = FALSE;
-  cairo_t *cr;
-  /* Stolen from GtkImage.  I really should just make the drawing area an
-   * image some day */
-  if (gtk_widget_get_state (drawing_area) != GTK_STATE_NORMAL)
-    {
-      GtkIconSource *source;
-
-      source = gtk_icon_source_new ();
-      gtk_icon_source_set_pixbuf (source, dialog->preview_image);
-      gtk_icon_source_set_size (source, GTK_ICON_SIZE_SMALL_TOOLBAR);
-      gtk_icon_source_set_size_wildcarded (source, FALSE);
-                  
-      pixbuf = gtk_style_render_icon (gtk_widget_get_style (drawing_area),
-				      source,
-				      gtk_widget_get_direction (drawing_area),
-				      gtk_widget_get_state (drawing_area),
-				      (GtkIconSize) -1,
-				      drawing_area,
-				      "gtk-image");
-      free_pixbuf = TRUE;
-      gtk_icon_source_free (source);
-    }
-  else
-    {
-     pixbuf = g_object_ref (dialog->preview_image);
-    }
- 
-  cr = gdk_cairo_create (gtk_widget_get_window (drawing_area));
-  gdk_cairo_region (cr, event->region);
-  cairo_clip (cr);
-  gdk_cairo_set_source_pixbuf (cr, pixbuf, 0, 0);
-  cairo_paint (cr);
-  cairo_destroy (cr);
-
-  g_object_unref (pixbuf);
-}
-#endif
-
 static gboolean
 on_preview_button_press_event (GtkWidget      *drawing_area,
 			       GdkEventButton *event,
@@ -167,24 +121,6 @@ on_preview_button_release_event (GtkWidget      *drawing_area,
 
   return FALSE;
 }
-
-#if !GTK_CHECK_VERSION (3, 0, 0)
-static void
-on_preview_configure_event (GtkWidget         *drawing_area,
-			    GdkEventConfigure *event,
-			    gpointer           data)
-{
-  ScreenshotDialog *dialog = data;
-
-  if (dialog->preview_image)
-    g_object_unref (G_OBJECT (dialog->preview_image));
-
-  dialog->preview_image = gdk_pixbuf_scale_simple (dialog->screenshot,
-						   event->width,
-						   event->height,
-						   GDK_INTERP_BILINEAR);
-}
-#endif
 
 static void
 drag_data_get (GtkWidget          *widget,
@@ -258,11 +194,7 @@ screenshot_dialog_new (GdkPixbuf *screenshot,
   dialog = g_new0 (ScreenshotDialog, 1);
 
   dialog->ui = gtk_builder_new ();
-#if GTK_CHECK_VERSION (3, 0, 0)  
   res = gtk_builder_add_from_file (dialog->ui, UIDIR "/mate-screenshot-gtk3.ui", &error);
-#else
-  res = gtk_builder_add_from_file (dialog->ui, UIDIR "/mate-screenshot.ui", &error);
-#endif
 
   dialog->screenshot = screenshot;
 
@@ -309,16 +241,9 @@ screenshot_dialog_new (GdkPixbuf *screenshot,
 			(gfloat) gdk_pixbuf_get_height (screenshot),
 			FALSE);
   g_signal_connect (toplevel, "key_press_event", G_CALLBACK (on_toplevel_key_press_event), dialog);
-#if GTK_CHECK_VERSION (3, 0, 0)
   g_signal_connect (preview_darea, "draw", G_CALLBACK (on_preview_draw), dialog);
-#else
-  g_signal_connect (preview_darea, "expose_event", G_CALLBACK (on_preview_expose_event), dialog);
-#endif
   g_signal_connect (preview_darea, "button_press_event", G_CALLBACK (on_preview_button_press_event), dialog);
   g_signal_connect (preview_darea, "button_release_event", G_CALLBACK (on_preview_button_release_event), dialog);
-#if !GTK_CHECK_VERSION (3, 0, 0)
-  g_signal_connect (preview_darea, "configure_event", G_CALLBACK (on_preview_configure_event), dialog);
-#endif
 
   if (take_window_shot)
     gtk_frame_set_shadow_type (GTK_FRAME (aspect_frame), GTK_SHADOW_NONE);
@@ -438,11 +363,7 @@ screenshot_dialog_set_busy (ScreenshotDialog *dialog,
       /* Change cursor to busy */
       cursor = gdk_cursor_new_for_display (display, GDK_WATCH);
       gdk_window_set_cursor (gtk_widget_get_window (toplevel), cursor);
-#if GTK_CHECK_VERSION (3, 0, 0)
       g_object_unref (cursor);
-#else
-      gdk_cursor_unref (cursor);
-#endif
     }
   else
     {

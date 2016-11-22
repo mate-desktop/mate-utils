@@ -213,7 +213,6 @@ on_dialog_add_edit_reponse (GtkWidget *dialog, int response_id,
 
     if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (radio_color))) {
       if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check_foreground))) {
-#if GTK_CHECK_VERSION (3, 0, 0)
         GdkRGBA foreground_color;
         gtk_color_chooser_get_rgba (GTK_COLOR_CHOOSER (color_foreground),
                                     &foreground_color);
@@ -229,23 +228,6 @@ on_dialog_add_edit_reponse (GtkWidget *dialog, int response_id,
         g_object_set (tag, 
                       "paragraph-background-rgba", &background_color,
                       "paragraph-background-set", TRUE, NULL);
-#else
-        GdkColor foreground_color;
-        gtk_color_button_get_color (GTK_COLOR_BUTTON (color_foreground),
-                                    &foreground_color);
-        g_object_set (G_OBJECT (tag), 
-                      "foreground-gdk", &foreground_color,
-                      "foreground-set", TRUE, NULL);
-      }
-
-      if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check_background))) {
-        GdkColor background_color;
-        gtk_color_button_get_color (GTK_COLOR_BUTTON (color_background),
-                                    &background_color);
-        g_object_set (tag, 
-                      "paragraph-background-gdk", &background_color,
-                      "paragraph-background-set", TRUE, NULL);
-#endif
       }
       
       if (!gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check_foreground))
@@ -368,7 +350,6 @@ run_add_edit_dialog (LogviewFilterManager *manager, LogviewFilter *filter)
     gtk_entry_set_text (GTK_ENTRY(entry_regex), regex);
 
     if (foreground_set) {
-#if GTK_CHECK_VERSION (3, 0, 0)
       GdkRGBA *foreground;
 
       g_object_get (tag, "foreground-rgba", &foreground, NULL);
@@ -390,29 +371,6 @@ run_add_edit_dialog (LogviewFilterManager *manager, LogviewFilter *filter)
                                     TRUE);
 
       gdk_rgba_free (background);
-#else
-      GdkColor *foreground;
-
-      g_object_get (tag, "foreground-gdk", &foreground, NULL);
-      gtk_color_button_set_color (GTK_COLOR_BUTTON (color_foreground),
-                                  foreground);
-      gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (check_foreground),
-                                    TRUE);
-
-      gdk_color_free (foreground);
-    }
-
-    if (background_set) {
-      GdkColor *background;
-
-      g_object_get (tag, "paragraph-background-gdk", &background, NULL);
-      gtk_color_button_set_color (GTK_COLOR_BUTTON (color_background),
-                                  background);
-      gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (check_background),
-                                    TRUE);
-
-      gdk_color_free (background);
-#endif
     }
 
     if (background_set || foreground_set) {
@@ -496,11 +454,7 @@ on_tree_selection_changed (GtkTreeSelection *selection, LogviewFilterManager *ma
 static void
 logview_filter_manager_init (LogviewFilterManager *manager)
 {
-#if GTK_CHECK_VERSION (3, 0, 0)
   GtkWidget *grid;
-#else
-  GtkWidget *table;
-#endif
   GtkWidget *scrolled_window;
   GtkTreeViewColumn *column;
   GtkCellRenderer *text_renderer;
@@ -524,13 +478,9 @@ logview_filter_manager_init (LogviewFilterManager *manager)
                                                     G_TYPE_OBJECT));
   logview_filter_manager_update_model (manager);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   grid = gtk_grid_new ();
   gtk_grid_set_row_spacing (GTK_GRID (grid), 6);
   gtk_grid_set_column_spacing (GTK_GRID (grid), 6);
-#else
-  table = gtk_table_new (3, 2, FALSE);
-#endif
   scrolled_window = gtk_scrolled_window_new (NULL, NULL);
   gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (scrolled_window),
                                   GTK_POLICY_AUTOMATIC, GTK_POLICY_AUTOMATIC);
@@ -573,7 +523,6 @@ logview_filter_manager_init (LogviewFilterManager *manager)
                     "changed", G_CALLBACK (on_tree_selection_changed),
                     manager);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   gtk_widget_set_hexpand (scrolled_window, TRUE);
   gtk_widget_set_vexpand (scrolled_window, TRUE);
   gtk_grid_attach (GTK_GRID (grid), scrolled_window, 0, 0, 1, 3);
@@ -585,22 +534,6 @@ logview_filter_manager_init (LogviewFilterManager *manager)
   gtk_grid_attach (GTK_GRID (grid), priv->remove_button, 1, 2, 1, 1);
   gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (manager))),
                       grid, TRUE, TRUE, 5);
-#else
-  gtk_table_attach_defaults (GTK_TABLE (table),
-                             scrolled_window,
-                             0, 1, 0, 3);
-  gtk_table_attach (GTK_TABLE (table),
-                    priv->add_button,
-                    1, 2, 0, 1, GTK_FILL, 0, 5, 5);
-  gtk_table_attach (GTK_TABLE (table),
-                    priv->edit_button,
-                    1, 2, 1, 2, GTK_FILL, 0, 5, 5);
-  gtk_table_attach (GTK_TABLE (table),
-                    priv->remove_button,
-                    1, 2, 2, 3, GTK_FILL, 0, 5, 5);
-  gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (manager))),
-                      table, TRUE, TRUE, 5);
-#endif
   gtk_widget_show_all (GTK_WIDGET (manager));
 }
 

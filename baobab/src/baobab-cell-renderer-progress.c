@@ -99,11 +99,7 @@ baobab_cell_renderer_progress_set_property (GObject *object,
 static void
 baobab_cell_renderer_progress_get_size (GtkCellRenderer *cell,
 					GtkWidget       *widget,
-#if GTK_CHECK_VERSION (3, 0, 0)
 					const GdkRectangle *cell_area,
-#else
-					GdkRectangle    *cell_area,
-#endif
 					gint            *x_offset,
 					gint            *y_offset,
 					gint            *width,
@@ -146,7 +142,6 @@ baobab_cell_renderer_progress_get_size (GtkCellRenderer *cell,
 static void
 set_color_according_to_perc (cairo_t *cr, double value)
 {
-#if GTK_CHECK_VERSION (3, 0, 0)
   static GdkRGBA red;
   static GdkRGBA yellow;
   static GdkRGBA green;
@@ -181,42 +176,6 @@ set_color_according_to_perc (cairo_t *cr, double value)
     {
       gdk_cairo_set_source_rgba (cr, &red);
       return;
-#else
-  static GdkColor red;
-  static GdkColor yellow;
-  static GdkColor green;
-  static gboolean colors_initialized = FALSE;
-
-  if (!colors_initialized)
-    {
-      /* hardcoded tango colors */
-      gdk_color_parse ("#cc0000", &red);
-      gdk_color_parse ("#edd400", &yellow);
-      gdk_color_parse ("#73d216", &green);
-
-      colors_initialized = TRUE;
-    }
-
-  if (value <= 0)
-    {
-      cairo_set_source_rgb (cr, 1, 1, 1);
-      return;
-    }
-  else if (value <= 33.33)
-    {
-      gdk_cairo_set_source_color (cr, &green);
-      return;
-    }
-  else if (value <= 66.66)
-    {
-      gdk_cairo_set_source_color (cr, &yellow);
-      return;
-    }
-  else if (value <= 100.0)
-    {
-      gdk_cairo_set_source_color (cr, &red);
-      return;
-#endif
     }
   else
     g_assert_not_reached ();
@@ -224,37 +183,20 @@ set_color_according_to_perc (cairo_t *cr, double value)
 
 static void
 baobab_cell_renderer_progress_render (GtkCellRenderer *cell,
-#if GTK_CHECK_VERSION (3, 0, 0)
 				      cairo_t         *cr,
-#else
-				      GdkWindow       *window,
-#endif
 				      GtkWidget       *widget,
-#if GTK_CHECK_VERSION (3, 0, 0)
 				      const GdkRectangle *background_area,
 				      const GdkRectangle  *cell_area,
-#else
-				      GdkRectangle    *background_area,
-				      GdkRectangle    *cell_area,
-				      GdkRectangle    *expose_area,
-#endif
 				      guint            flags)
 {
   BaobabCellRendererProgress *cellprogress = BAOBAB_CELL_RENDERER_PROGRESS (cell);
   gint x, y, w, h, perc_w;
   gboolean is_rtl;
-#if !GTK_CHECK_VERSION (3, 0, 0)
-  cairo_t *cr;
-#endif
   gint xpad;
   gint ypad;
   GtkStyle *style;
 
   is_rtl = gtk_widget_get_direction (widget) == GTK_TEXT_DIR_RTL;
-
-#if !GTK_CHECK_VERSION (3, 0, 0)
-  cr = gdk_cairo_create (window);
-#endif
 
   gtk_cell_renderer_get_padding (cell, &xpad, &ypad);
 
@@ -290,10 +232,6 @@ baobab_cell_renderer_progress_render (GtkCellRenderer *cell,
   cairo_rectangle (cr, is_rtl ? (x + w - perc_w) : x, y, perc_w, h);
   set_color_according_to_perc (cr, cellprogress->priv->perc);
   cairo_fill (cr);
-
-#if !GTK_CHECK_VERSION (3, 0, 0)
-  cairo_destroy (cr);
-#endif
 }
 
 static void

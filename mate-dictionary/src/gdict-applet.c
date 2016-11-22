@@ -38,10 +38,6 @@
 #include "gdict-common.h"
 #include "gdict-aligned-window.h"
 
-#if !GTK_CHECK_VERSION(3,0,0)
-#define gtk_widget_get_preferred_size(x,y,z) gtk_widget_size_request(x,y)
-#endif
-
 #define GDICT_APPLET_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), GDICT_TYPE_APPLET, GdictAppletClass))
 #define GDICT_APPLET_GET_CLASS(obj)	(G_TYPE_INSTANCE_GET_CLASS ((obj), GDICT_TYPE_APPLET, GdictAppletClass))
 
@@ -338,11 +334,7 @@ gdict_applet_build_window (GdictApplet *applet)
   gtk_widget_show (frame);
   priv->frame = frame;
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 12);
-#else
-  vbox = gtk_vbox_new (FALSE, 12);
-#endif
   gtk_container_set_border_width (GTK_CONTAINER (vbox), 6);
   gtk_container_add (GTK_CONTAINER (frame), vbox);
   gtk_widget_show (vbox);
@@ -356,11 +348,7 @@ gdict_applet_build_window (GdictApplet *applet)
   gtk_widget_set_can_focus (priv->defbox, TRUE);
   gtk_widget_set_can_default (priv->defbox, TRUE);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   bbox = gtk_button_box_new (GTK_ORIENTATION_HORIZONTAL);
-#else
-  bbox = gtk_hbutton_box_new ();
-#endif
   gtk_button_box_set_layout (GTK_BUTTON_BOX (bbox), GTK_BUTTONBOX_END);
   gtk_box_set_spacing (GTK_BOX (bbox), 6);
   gtk_box_pack_end (GTK_BOX (vbox), bbox, FALSE, FALSE, 0);
@@ -520,22 +508,7 @@ gdict_applet_draw (GdictApplet *applet)
   if (priv->box)
     gtk_widget_destroy (priv->box);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   box = gtk_box_new (priv->orient, 0);
-#else
-  switch (priv->orient)
-    {
-    case GTK_ORIENTATION_VERTICAL:
-      box = gtk_vbox_new (FALSE, 0);
-      break;
-    case GTK_ORIENTATION_HORIZONTAL:
-      box = gtk_hbox_new (FALSE, 0);
-      break;
-    default:
-      g_assert_not_reached ();
-      break;
-    }
-#endif
   
   gtk_container_add (GTK_CONTAINER (applet), box);
   gtk_widget_show (box);
@@ -558,11 +531,7 @@ gdict_applet_draw (GdictApplet *applet)
   gtk_box_pack_start (GTK_BOX (box), priv->toggle, FALSE, FALSE, 0);
   gtk_widget_show (priv->toggle);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-#else
-  hbox = gtk_hbox_new (FALSE, 0);
-#endif
   gtk_container_set_border_width (GTK_CONTAINER (hbox), 0);
   gtk_container_add (GTK_CONTAINER (priv->toggle), hbox);
   gtk_widget_show (hbox);

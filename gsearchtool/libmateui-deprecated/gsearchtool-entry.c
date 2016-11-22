@@ -111,20 +111,12 @@ gsearch_history_entry_get_property (GObject    *object,
 }
 
 static void
-#if GTK_CHECK_VERSION (3, 0, 0)
 gsearch_history_entry_destroy (GtkWidget *object)
-#else
-gsearch_history_entry_destroy (GtkObject *object)
-#endif
 {
 	gsearch_history_entry_set_enable_completion (GSEARCH_HISTORY_ENTRY (object),
 						   FALSE);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
 	GTK_WIDGET_CLASS (gsearch_history_entry_parent_class)->destroy (object);
-#else
-	GTK_OBJECT_CLASS (gsearch_history_entry_parent_class)->destroy (object);
-#endif
 }
 
 static void
@@ -149,20 +141,12 @@ static void
 gsearch_history_entry_class_init (GsearchHistoryEntryClass *klass)
 {
 	GObjectClass   *object_class = G_OBJECT_CLASS (klass);
-#if GTK_CHECK_VERSION (3, 0, 0)
 	GtkWidgetClass *gtkwidget_class = GTK_WIDGET_CLASS (klass);
-#else
-	GtkObjectClass *gtkobject_class = GTK_OBJECT_CLASS (klass);
-#endif
 
 	object_class->set_property = gsearch_history_entry_set_property;
 	object_class->get_property = gsearch_history_entry_get_property;
 	object_class->finalize = gsearch_history_entry_finalize;
-#if GTK_CHECK_VERSION (3, 0, 0)
 	gtkwidget_class->destroy = gsearch_history_entry_destroy;
-#else
-	gtkobject_class->destroy = gsearch_history_entry_destroy;
-#endif
 
 	g_object_class_install_property (object_class,
 					 PROP_HISTORY_ID,

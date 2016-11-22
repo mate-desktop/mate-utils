@@ -56,15 +56,6 @@
 #define GDICT_SIDEBAR_STRATEGIES_PAGE   "strat-chooser"
 #define GDICT_SIDEBAR_SOURCES_PAGE      "source-chooser"
 
-#if GTK_CHECK_VERSION (3, 0, 0)
-#define gtk_hbox_new(X,Y) gtk_box_new(GTK_ORIENTATION_HORIZONTAL,Y)
-#define gtk_vbox_new(X,Y) gtk_box_new(GTK_ORIENTATION_VERTICAL,Y)
-#endif
-
-#if !GTK_CHECK_VERSION(3,0,0)
-#define gtk_widget_get_preferred_size(x,y,z) gtk_widget_size_request(x,y)
-#endif
-
 enum
 {
   COMPLETION_TEXT_COLUMN,
@@ -197,11 +188,7 @@ gdict_window_dispose (GObject *gobject)
 
   if (window->busy_cursor)
     {
-#if GTK_CHECK_VERSION (3, 0, 0)
       g_object_unref (window->busy_cursor);
-#else
-      gdk_cursor_unref (window->busy_cursor);
-#endif
       window->busy_cursor = NULL;
     }
 
@@ -1618,82 +1605,6 @@ gdict_window_size_allocate (GtkWidget     *widget,
 		    						 allocation);
 }
 
-#if !GTK_CHECK_VERSION (3, 0, 0)
-static void
-set_window_default_size (GdictWindow *window)
-{
-  GtkWidget *widget;
-  gboolean is_maximized;
-  gint width, height;
-  gint font_size;
-  GdkScreen *screen;
-  gint monitor_num;
-  GtkRequisition req;
-  GdkRectangle monitor;
-
-  g_assert (GDICT_IS_WINDOW (window));
-
-  widget = GTK_WIDGET (window);
-
-  /* make sure that the widget is realized */
-  /*Do this implicitly in GTK3.21 or segfault results */
-  gtk_widget_realize (widget);
-  /* XXX - the user wants mate-dictionary to resize itself, so
-   * we compute the minimum safe geometry needed for displaying
-   * the text returned by a dictionary server, which is based
-   * on the font size and the ANSI terminal.  this is dumb,
-   * I know, but dictionary servers return pre-formatted text
-   * and we can't reformat it ourselves.
-   */
-  if (window->default_width == -1 || window->default_height == -1)
-    {
-      /* Size based on the font size */
-      GtkWidget *defbox = window->defbox;
-      gint width, height;
-      
-      font_size = pango_font_description_get_size (gtk_widget_get_style (defbox)->font_desc);
-      font_size = PANGO_PIXELS (font_size);
-
-      width = font_size * GDICT_WINDOW_COLUMNS;
-      height = font_size * GDICT_WINDOW_ROWS;
-
-      /* Use at least the requisition size of the window... */
-      gtk_widget_get_preferred_size (widget, NULL, &req);
-      width = MAX (width, req.width);
-      height = MAX (height, req.height);
-
-      /* ... but make it no larger than the monitor */
-      screen = gtk_widget_get_screen (widget);
-      monitor_num = gdk_screen_get_monitor_at_window (screen, gtk_widget_get_window (widget));
-
-      gdk_screen_get_monitor_geometry (screen, monitor_num, &monitor);
-      width = MIN (width, monitor.width * 3 / 4);
-      height = MIN (height, monitor.height * 3 / 4);
-
-      window->default_width = width;
-      window->default_height = height;
-    }
-
-  /* Set default size */
-  gtk_window_set_default_size (GTK_WINDOW (widget),
-                               window->default_width,
-                               window->default_height);
-
-  if (window->is_maximized)
-    gtk_window_maximize (GTK_WINDOW (widget));
-}
-
-static void
-gdict_window_style_set (GtkWidget *widget,
-			GtkStyle  *old_style)
-{
-
-  if (GTK_WIDGET_CLASS (gdict_window_parent_class)->style_set)
-    GTK_WIDGET_CLASS (gdict_window_parent_class)->style_set (widget, old_style);
-
-  set_window_default_size (GDICT_WINDOW (widget));
-}
-#endif
 static void
 gdict_window_handle_notify_position_cb (GtkWidget  *widget,
 					GParamSpec *pspec,
@@ -1740,11 +1651,7 @@ gdict_window_constructor (GType                  type,
   /* recover the state */
   gdict_window_load_state (window);
 
-#if !GTK_CHECK_VERSION(3,0,0)
-  gtk_widget_push_composite_child ();
-#endif
- 
-  window->main_box = gtk_vbox_new (FALSE, 0);
+  window->main_box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
   gtk_container_add (GTK_CONTAINER (window), window->main_box);
   gtk_widget_show (window->main_box);
   
@@ -1783,12 +1690,12 @@ gdict_window_constructor (GType                  type,
       gdict_window_ensure_menu_state (window);
     }
   
-  vbox = gtk_vbox_new (FALSE, 6);
+  vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
   gtk_container_set_border_width (GTK_CONTAINER (vbox), 6);
   gtk_container_add (GTK_CONTAINER (window->main_box), vbox);
   gtk_widget_show (vbox);
   
-  hbox = gtk_hbox_new (FALSE, 12);
+  hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
   gtk_box_pack_start (GTK_BOX (vbox), hbox, FALSE, FALSE, 0);
   gtk_widget_show (hbox);
   
@@ -1822,16 +1729,12 @@ gdict_window_constructor (GType                  type,
   gtk_box_pack_start (GTK_BOX (hbox), window->entry, TRUE, TRUE, 0);
   gtk_widget_show (window->entry);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   handle = gtk_paned_new (GTK_ORIENTATION_HORIZONTAL);
-#else
-  handle = gtk_hpaned_new ();
-#endif
   gtk_box_pack_start (GTK_BOX (vbox), handle, TRUE, TRUE, 0);
   gtk_widget_show (handle);
 
-  frame1 = gtk_vbox_new (FALSE, 0);
-  frame2 = gtk_vbox_new (FALSE, 0);
+  frame1 = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+  frame2 = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
   
   window->defbox = gdict_defbox_new ();
   if (window->context)
@@ -2016,10 +1919,6 @@ gdict_window_constructor (GType                  type,
 
   gtk_widget_grab_focus (window->entry);
 
-#if !GTK_CHECK_VERSION(3,0,0)
-  gtk_widget_pop_composite_child ();
-#endif
-
   window->in_construction = FALSE;
 
   return object;
@@ -2120,9 +2019,6 @@ gdict_window_class_init (GdictWindowClass *klass)
                                      LAST_PROP,
                                      gdict_window_properties);
 
-#if !GTK_CHECK_VERSION (3, 0, 0)
-  widget_class->style_set = gdict_window_style_set;
-#endif
   widget_class->size_allocate = gdict_window_size_allocate;
 }
 

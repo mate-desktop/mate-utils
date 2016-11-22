@@ -695,10 +695,6 @@ baobab_create_statusbar (void)
 		return;
 	}
 
-#if !GTK_CHECK_VERSION (3, 0, 0)
-	gtk_statusbar_set_has_resize_grip (GTK_STATUSBAR (baobab.statusbar), TRUE);
-#endif
-
 	g_settings_bind (baobab.ui_settings,
 			 BAOBAB_SETTINGS_STATUSBAR_VISIBLE,
 			 baobab.statusbar, "visible",

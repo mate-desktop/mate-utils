@@ -139,11 +139,7 @@ unbold_timeout_cb (gpointer user_data)
   PangoFontDescription *desc;
 
   desc = pango_font_description_new ();
-#if GTK_CHECK_VERSION(3,0,0)
   gtk_widget_override_font (findbar->priv->message, desc);
-#else
-  gtk_widget_modify_font (findbar->priv->message, desc);
-#endif
   pango_font_description_free (desc);
 
   findbar->priv->status_bold_id = 0;
@@ -171,11 +167,7 @@ logview_findbar_init (LogviewFindbar *findbar)
   w = gtk_alignment_new (0.0, 0.5, 1.0, 1.0);
   gtk_alignment_set_padding (GTK_ALIGNMENT (w), 0, 0, 2, 2);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
-#else
-  box = gtk_hbox_new (FALSE, 12);
-#endif
   gtk_container_add (GTK_CONTAINER (w), box);
 
   label = gtk_label_new_with_mnemonic (_("_Find:"));
@@ -192,11 +184,7 @@ logview_findbar_init (LogviewFindbar *findbar)
   gtk_widget_show_all (GTK_WIDGET (item));
 
   /* "Previous" and "Next" buttons */
-#if GTK_CHECK_VERSION (3, 0, 0)
   w = gtk_image_new_from_icon_name ("pan-start-symbolic", GTK_ICON_SIZE_BUTTON);
-#else
-  w = gtk_arrow_new (GTK_ARROW_LEFT, GTK_SHADOW_NONE);
-#endif
   priv->back_button = gtk_tool_button_new (w, _("Find Previous"));
   gtk_tool_item_set_is_important (priv->back_button, TRUE);
   gtk_tool_item_set_tooltip_text (priv->back_button,
@@ -204,11 +192,7 @@ logview_findbar_init (LogviewFindbar *findbar)
   gtk_toolbar_insert (gtoolbar, priv->back_button, -1);
   gtk_widget_show_all (GTK_WIDGET (priv->back_button));
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   w = gtk_image_new_from_icon_name ("pan-end-symbolic", GTK_ICON_SIZE_BUTTON);
-#else
-  w = gtk_arrow_new (GTK_ARROW_RIGHT, GTK_SHADOW_NONE);
-#endif
   priv->forward_button = gtk_tool_button_new (w, _("Find Next"));
   gtk_tool_item_set_is_important (priv->forward_button, TRUE);
   gtk_tool_item_set_tooltip_text (priv->forward_button,
@@ -360,11 +344,7 @@ logview_findbar_set_message (LogviewFindbar *findbar,
   if (text) {
     desc = pango_font_description_new ();
     pango_font_description_set_weight (desc, PANGO_WEIGHT_BOLD);
-#if GTK_CHECK_VERSION(3,0,0)
     gtk_widget_override_font (findbar->priv->message, desc);
-#else
-    gtk_widget_modify_font (findbar->priv->message, desc);
-#endif
     pango_font_description_free (desc);
     
     findbar->priv->status_bold_id = g_timeout_add (600, unbold_timeout_cb, findbar);

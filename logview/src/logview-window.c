@@ -145,7 +145,6 @@ populate_tag_table (GtkTextTagTable *tag_table)
   gtk_text_tag_table_add (tag_table, tag); 
 }
 
-#if GTK_CHECK_VERSION (3, 0, 0)
 static void
 populate_style_tag_table (LogviewWindow *logview)
 {
@@ -172,28 +171,6 @@ populate_style_tag_table (LogviewWindow *logview)
 
   gtk_text_tag_table_add (tag_table, tag);
 }
-#else
-static void
-populate_style_tag_table (GtkStyle *style,
-                          GtkTextTagTable *tag_table)
-{
-  GtkTextTag *tag;
-  GdkColor color;
-
-  tag = gtk_text_tag_table_lookup (tag_table, "gray");
-
-  if (tag) {
-    /* FIXME: do we need a way to update the buffer/view? */
-    gtk_text_tag_table_remove (tag_table, tag);
-  }
-
-  tag = gtk_text_tag_new ("gray");
-  color = style->text[GTK_STATE_INSENSITIVE];
-  g_object_set (tag, "foreground-gdk", &color, "foreground-set", TRUE, NULL);
-
-  gtk_text_tag_table_add (tag_table, tag);
-}
-#endif
 
 static void
 _gtk_text_buffer_apply_tag_to_rectangle (GtkTextBuffer *buffer, int line_start, int line_end,
@@ -267,11 +244,7 @@ logview_set_font (LogviewWindow *logview,
 
   font_desc = pango_font_description_from_string (fontname);
   if (font_desc) {
-#if GTK_CHECK_VERSION(3,0,0)
     gtk_widget_override_font (logview->priv->text_view, font_desc);
-#else
-    gtk_widget_modify_font (logview->priv->text_view, font_desc);
-#endif
     pango_font_description_free (font_desc);
   }
 }
@@ -286,11 +259,7 @@ logview_set_fontsize (LogviewWindow *logview, gboolean store)
   context = gtk_widget_get_pango_context (priv->text_view);
   fontdesc = pango_context_get_font_description (context);
   pango_font_description_set_size (fontdesc, (priv->fontsize) * PANGO_SCALE);
-#if GTK_CHECK_VERSION(3,0,0)
   gtk_widget_override_font (priv->text_view, fontdesc);
-#else
-  gtk_widget_modify_font (priv->text_view, fontdesc);
-#endif
 
   if (store) {
     logview_prefs_store_fontsize (logview->priv->prefs, priv->fontsize);
@@ -1159,19 +1128,6 @@ tearoff_changed_cb (LogviewPrefs *prefs,
   gtk_ui_manager_set_add_tearoffs (window->priv->ui_manager, have_tearoffs);
 }
 
-#if !GTK_CHECK_VERSION (3, 0, 0)
-static void
-style_set_cb (GtkWidget *widget,
-              GtkStyle *prev,
-              gpointer user_data)
-{
-  LogviewWindow *logview = user_data;
-  GtkStyle *style = gtk_widget_get_style (widget);
-
-  populate_style_tag_table (style, logview->priv->tag_table);
-}
-#endif
-
 static const struct {
   guint keyval;
   GdkModifierType modifier;
@@ -1220,29 +1176,17 @@ message_area_create_error_box (LogviewWindow *window,
   GtkWidget *primary_label;
   GtkWidget *secondary_label;
   
-#if GTK_CHECK_VERSION (3, 0, 0)
   hbox_content = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 8);
-#else
-  hbox_content = gtk_hbox_new (FALSE, 8);
-#endif
   gtk_widget_show (hbox_content);
 
   image = gtk_image_new_from_icon_name ("dialog-error",
                                         GTK_ICON_SIZE_DIALOG);
   gtk_widget_show (image);
   gtk_box_pack_start (GTK_BOX (hbox_content), image, FALSE, FALSE, 0);
-#if GTK_CHECK_VERSION (3, 0, 0)
   gtk_widget_set_halign (image, GTK_ALIGN_CENTER);
   gtk_widget_set_valign (image, GTK_ALIGN_START);
-#else
-  gtk_misc_set_alignment (GTK_MISC (image), 0.5, 0.0);
-#endif
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-#else
-  vbox = gtk_vbox_new (FALSE, 6);
-#endif
   gtk_widget_show (vbox);
   gtk_box_pack_start (GTK_BOX (hbox_content), vbox, TRUE, TRUE, 0);
 
@@ -1351,11 +1295,7 @@ logview_window_init (LogviewWindow *logview)
   logview_prefs_get_stored_window_size (priv->prefs, &width, &height);
   gtk_window_set_default_size (GTK_WINDOW (logview), width, height);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-#else
-  vbox = gtk_vbox_new (FALSE, 0);
-#endif
   gtk_container_add (GTK_CONTAINER (logview), vbox);
 
   /* create menus */
@@ -1390,21 +1330,13 @@ logview_window_init (LogviewWindow *logview)
   gtk_widget_show (w);
   
   /* panes */
-#if GTK_CHECK_VERSION (3, 0, 0)
   hpaned = gtk_paned_new (GTK_ORIENTATION_HORIZONTAL);
-#else
-  hpaned = gtk_hpaned_new ();
-#endif
   gtk_box_pack_start (GTK_BOX (vbox), hpaned, TRUE, TRUE, 0);
   priv->hpaned = hpaned;
   gtk_widget_show (hpaned);
 
   /* first pane : sidebar (list of logs) */
-#if GTK_CHECK_VERSION (3, 0, 0)
   priv->sidebar = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-#else
-  priv->sidebar = gtk_vbox_new (FALSE, 0);
-#endif
   gtk_widget_show (priv->sidebar);
 
   /* first pane: log list */
@@ -1427,11 +1359,7 @@ logview_window_init (LogviewWindow *logview)
                     G_CALLBACK (loglist_day_cleared_cb), logview);
 
   /* second pane: log */
-#if GTK_CHECK_VERSION (3, 0, 0)
   main_view = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-#else
-  main_view = gtk_vbox_new (FALSE, 0);
-#endif
   gtk_paned_pack2 (GTK_PANED (hpaned), main_view, TRUE, TRUE);
 
   /* second pane: error message area */
@@ -1454,9 +1382,7 @@ logview_window_init (LogviewWindow *logview)
 
   priv->text_view = gtk_text_view_new ();
   g_object_set (priv->text_view, "editable", FALSE, NULL);
-#if GTK_CHECK_VERSION (3, 0, 0)
   populate_style_tag_table (logview);
-#endif
 
   gtk_container_add (GTK_CONTAINER (w), priv->text_view);
   gtk_widget_show (priv->text_view);
@@ -1482,11 +1408,7 @@ logview_window_init (LogviewWindow *logview)
   }
 
   /* version selector */
-#if GTK_CHECK_VERSION (3, 0, 0)
   priv->version_bar = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-#else
-  priv->version_bar = gtk_hbox_new (FALSE, 0);
-#endif
   gtk_container_set_border_width (GTK_CONTAINER (priv->version_bar), 3);
   priv->version_selector = gtk_combo_box_text_new ();
   g_signal_connect (priv->version_selector, "changed",
@@ -1520,19 +1442,14 @@ logview_window_init (LogviewWindow *logview)
                     G_CALLBACK (tearoff_changed_cb), logview);
   g_signal_connect (priv->manager, "active-changed",
                     G_CALLBACK (active_log_changed_cb), logview);
-#if !GTK_CHECK_VERSION (3, 0, 0)
-  g_signal_connect (logview, "style-set",
-                    G_CALLBACK (style_set_cb), logview);
-#endif
   g_signal_connect (logview, "key-press-event",
                     G_CALLBACK (key_press_event_cb), logview);
 
   /* status area at bottom */
   priv->statusbar = gtk_statusbar_new ();
-#if GTK_CHECK_VERSION (3, 0, 0)
 	gtk_widget_set_margin_top (GTK_WIDGET (logview->priv->statusbar), 0);
 	gtk_widget_set_margin_bottom (GTK_WIDGET (logview->priv->statusbar), 0);
-#endif
+
   gtk_box_pack_start (GTK_BOX (vbox), priv->statusbar, FALSE, FALSE, 0);
   gtk_widget_show (priv->statusbar);
 

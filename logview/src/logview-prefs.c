@@ -154,11 +154,7 @@ load_filters (LogviewPrefs *prefs)
   const gchar *str;
   LogviewFilter *filter;
   GtkTextTag *tag;
-#if GTK_CHECK_VERSION (3, 0, 0)
   GdkRGBA color;
-#else
-  GdkColor color;
-#endif
   gint idx;
 
   filters = g_settings_get_strv (prefs->priv->logview_prefs,
@@ -178,7 +174,6 @@ load_filters (LogviewPrefs *prefs)
                   g_str_equal (tokens[FILTER_INVISIBLE], "1"), NULL);
 
     if (strlen (tokens[FILTER_FOREGROUND])) {
-#if GTK_CHECK_VERSION (3, 0, 0)
       gdk_rgba_parse (&color, tokens[FILTER_FOREGROUND]);
       g_object_set (tag, "foreground-rgba", &color,
                     "foreground-set", TRUE, NULL);
@@ -187,16 +182,6 @@ load_filters (LogviewPrefs *prefs)
     if (strlen (tokens[FILTER_BACKGROUND])) {
       gdk_rgba_parse (&color, tokens[FILTER_BACKGROUND]);
       g_object_set (tag, "paragraph-background-rgba", &color,
-#else
-      gdk_color_parse (tokens[FILTER_FOREGROUND], &color);
-      g_object_set (tag, "foreground-gdk", &color, 
-                    "foreground-set", TRUE, NULL);
-    }
-
-    if (strlen (tokens[FILTER_BACKGROUND])) {
-      gdk_color_parse (tokens[FILTER_BACKGROUND], &color);
-      g_object_set (tag, "paragraph-background-gdk", &color, 
-#endif
                     "paragraph-background-set", TRUE, NULL);
     }
 
@@ -219,15 +204,9 @@ save_filter_foreach_func (gpointer key, gpointer value, gpointer user_data)
   GPtrArray *filters;
   const gchar *name;
   LogviewFilter *filter;
-#if GTK_CHECK_VERSION (3, 0, 0)
   GdkRGBA  *foreground;
   gboolean foreground_set;
   GdkRGBA  *background;
-#else
-  GdkColor *foreground;
-  gboolean foreground_set;
-  GdkColor *background;
-#endif
   gboolean background_set;
   gchar *regex, *color;
   gboolean invisible;
@@ -247,7 +226,6 @@ save_filter_foreach_func (gpointer key, gpointer value, gpointer user_data)
                 "texttag", &tag,
                 NULL);
   g_object_get (tag,
-#if GTK_CHECK_VERSION (3, 0, 0)
                 "foreground-set", &foreground_set,
                 "foreground-rgba", &foreground,
                 "paragraph-background-set", &background_set,
@@ -281,41 +259,6 @@ save_filter_foreach_func (gpointer key, gpointer value, gpointer user_data)
   if (background) {
     gdk_rgba_free (background);
   }
-#else
-                "foreground-gdk", &foreground,
-                "paragraph-background-gdk", &background,
-                "foreground-set", &foreground_set,
-                "paragraph-background-set", &background_set,
-                "invisible", &invisible, NULL);
-
-  if (invisible) {
-    g_string_append (prefs_string, "1" DELIMITER);
-  } else {
-    g_string_append (prefs_string, "0" DELIMITER);
-  }
-
-  if (foreground_set) {
-    color = gdk_color_to_string (foreground);
-    g_string_append (prefs_string, color);
-    g_free (color);
-  }
-
-  if (foreground) {
-    gdk_color_free (foreground);
-  }
-
-  g_string_append (prefs_string, DELIMITER);
-
-  if (background_set) {
-    color = gdk_color_to_string (background);
-    g_string_append (prefs_string, color);
-    g_free (color);
-  }
-
-  if (background) {
-    gdk_color_free (background);
-  }
-#endif
 
   g_string_append (prefs_string, DELIMITER);
   g_string_append (prefs_string, regex);

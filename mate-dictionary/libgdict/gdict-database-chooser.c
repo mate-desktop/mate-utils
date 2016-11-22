@@ -190,11 +190,7 @@ gdict_database_chooser_dispose (GObject *gobject)
 
   if (priv->busy_cursor)
     {
-#if GTK_CHECK_VERSION (3, 0, 0)
       g_object_unref (priv->busy_cursor);
-#else
-      gdk_cursor_unref (priv->busy_cursor);
-#endif
       priv->busy_cursor = NULL;
     }
 
@@ -338,17 +334,8 @@ gdict_database_chooser_constructor (GType                  type,
   chooser = GDICT_DATABASE_CHOOSER (object);
   priv = chooser->priv;
 
-#if !GTK_CHECK_VERSION(3,0,0)
-  gtk_widget_push_composite_child ();
-#endif
-
   sw = gtk_scrolled_window_new (NULL, NULL);
-#if GTK_CHECK_VERSION (3, 0, 0)
   gtk_widget_set_vexpand (sw, TRUE);
-#endif
-#if !GTK_CHECK_VERSION(3,0,0)
-  gtk_widget_set_composite_name (sw, "gdict-database-chooser-scrolled-window");
-#endif
   gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (sw),
 		  		  GTK_POLICY_AUTOMATIC,
 				  GTK_POLICY_AUTOMATIC);
@@ -364,9 +351,6 @@ gdict_database_chooser_constructor (GType                  type,
                                                      "weight", DB_COLUMN_CURRENT,
 						     NULL);
   priv->treeview = gtk_tree_view_new ();
-#if !GTK_CHECK_VERSION(3,0,0)
-  gtk_widget_set_composite_name (priv->treeview, "gdict-database-chooser-treeview");
-#endif
   gtk_tree_view_set_model (GTK_TREE_VIEW (priv->treeview),
 		  	   GTK_TREE_MODEL (priv->store));
   gtk_tree_view_set_headers_visible (GTK_TREE_VIEW (priv->treeview), FALSE);
@@ -379,11 +363,7 @@ gdict_database_chooser_constructor (GType                  type,
   gtk_container_add (GTK_CONTAINER (sw), priv->treeview);
   gtk_widget_show (priv->treeview);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
   hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-#else
-  hbox = gtk_hbox_new (FALSE, 0);
-#endif
   priv->buttons_box = hbox;
 
   priv->refresh_button = gtk_button_new ();
@@ -412,10 +392,6 @@ gdict_database_chooser_constructor (GType                  type,
 
   gtk_box_pack_end (GTK_BOX (chooser), hbox, FALSE, FALSE, 0);
   gtk_widget_show (hbox);
-
-#if !GTK_CHECK_VERSION(3,0,0)
-  gtk_widget_pop_composite_child ();
-#endif
 
   return object;
 }
@@ -733,15 +709,11 @@ lookup_start_cb (GdictContext *context,
   GdictDatabaseChooserPrivate *priv = chooser->priv;
 
   if (!priv->busy_cursor)
-#if GTK_CHECK_VERSION(3,0,0)
     {
       GdkDisplay *display = gtk_widget_get_display (GTK_WIDGET (chooser));
 
       priv->busy_cursor = gdk_cursor_new_for_display (display, GDK_WATCH);
     }
-#else
-    priv->busy_cursor = gdk_cursor_new (GDK_WATCH);
-#endif
 
   if (gtk_widget_get_window (GTK_WIDGET (chooser)))
     gdk_window_set_cursor (gtk_widget_get_window (GTK_WIDGET (chooser)), priv->busy_cursor);

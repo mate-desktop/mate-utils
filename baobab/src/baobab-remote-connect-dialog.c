@@ -43,13 +43,7 @@
 */
 
 struct _BaobabRemoteConnectDialogDetails {
-
-#if GTK_CHECK_VERSION (3, 0, 0)
 	GtkWidget *grid;
-#else
-	GtkWidget *table;
-#endif
-	
 	GtkWidget *type_combo;
 	GtkWidget *uri_entry;
 	GtkWidget *server_entry;
@@ -395,11 +389,7 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 {
 	struct MethodInfo *meth;
 	int index, i;
-#if GTK_CHECK_VERSION (3, 0, 0)
 	GtkWidget *label, *grid;
-#else
-	GtkWidget *label, *table;
-#endif
 	GtkTreeIter iter;
 	
 	/* Get our method info */
@@ -409,7 +399,6 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 	g_assert (index < G_N_ELEMENTS (methods) && index >= 0);
 	meth = &(methods[index]);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
 	if (gtk_widget_get_parent (dialog->details->uri_entry) != NULL) {
 		gtk_container_remove (GTK_CONTAINER (dialog->details->grid),
 				      dialog->details->uri_entry);
@@ -444,42 +433,6 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 
 	i = 1;
 	grid = dialog->details->grid;
-#else
-	if (gtk_widget_get_parent (dialog->details->uri_entry) != NULL) {
-		gtk_container_remove (GTK_CONTAINER (dialog->details->table),
-				      dialog->details->uri_entry);
-	}
-	if (gtk_widget_get_parent (dialog->details->server_entry) != NULL) {
-		gtk_container_remove (GTK_CONTAINER (dialog->details->table),
-				      dialog->details->server_entry);
-	}
-	if (gtk_widget_get_parent (dialog->details->share_entry) != NULL) {
-		gtk_container_remove (GTK_CONTAINER (dialog->details->table),
-				      dialog->details->share_entry);
-	}
-	if (gtk_widget_get_parent (dialog->details->port_entry) != NULL) {
-		gtk_container_remove (GTK_CONTAINER (dialog->details->table),
-				      dialog->details->port_entry);
-	}
-	if (gtk_widget_get_parent (dialog->details->folder_entry) != NULL) {
-		gtk_container_remove (GTK_CONTAINER (dialog->details->table),
-				      dialog->details->folder_entry);
-	}
-	if (gtk_widget_get_parent (dialog->details->user_entry) != NULL) {
-		gtk_container_remove (GTK_CONTAINER (dialog->details->table),
-				      dialog->details->user_entry);
-	}
-	if (gtk_widget_get_parent (dialog->details->domain_entry) != NULL) {
-		gtk_container_remove (GTK_CONTAINER (dialog->details->table),
-				      dialog->details->domain_entry);
-	}
-	/* Destroy all labels */
-	gtk_container_foreach (GTK_CONTAINER (dialog->details->table),
-			       (GtkCallback) gtk_widget_destroy, NULL);
-
-	i = 1;
-	table = dialog->details->table;
-#endif
 	
 	if (meth->scheme == NULL) {
 		label = gtk_label_new_with_mnemonic (_("_Location (URI):"));
@@ -490,28 +443,12 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 		gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
 #endif
 		gtk_widget_show (label);
-#if GTK_CHECK_VERSION (3, 0, 0)
 		gtk_grid_attach (GTK_GRID (grid), label, 0, i, 1, 1);
 
 		gtk_label_set_mnemonic_widget (GTK_LABEL (label), dialog->details->uri_entry);
 		gtk_widget_set_hexpand (dialog->details->uri_entry, TRUE);
 		gtk_widget_show (dialog->details->uri_entry);
 		gtk_grid_attach (GTK_GRID (grid), dialog->details->uri_entry, 1, i, 1, 1);
-#else
-		gtk_table_attach (GTK_TABLE (table), label,
-				  0, 1,
-				  i, i+1,
-				  GTK_FILL, GTK_FILL,
-				  0, 0);
-
-		gtk_label_set_mnemonic_widget (GTK_LABEL (label), dialog->details->uri_entry);
-		gtk_widget_show (dialog->details->uri_entry);
-		gtk_table_attach (GTK_TABLE (table), dialog->details->uri_entry,
-				  1, 2,
-				  i, i+1,
-				  GTK_FILL | GTK_EXPAND, GTK_FILL,
-				  0, 0);
-#endif
 
 		i++;
 
@@ -526,28 +463,12 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 	gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
 #endif
 	gtk_widget_show (label);
-#if GTK_CHECK_VERSION (3, 0, 0)
 	gtk_grid_attach (GTK_GRID (grid), label, 0, i, 1, 1);
 
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), dialog->details->server_entry);
 	gtk_widget_set_hexpand (dialog->details->server_entry, TRUE);
 	gtk_widget_show (dialog->details->server_entry);
 	gtk_grid_attach (GTK_GRID (grid), dialog->details->server_entry, 1, i, 1, 1);
-#else
-	gtk_table_attach (GTK_TABLE (table), label,
-			  0, 1,
-			  i, i+1,
-			  GTK_FILL, GTK_FILL,
-			  0, 0);
-
-	gtk_label_set_mnemonic_widget (GTK_LABEL (label), dialog->details->server_entry);
-	gtk_widget_show (dialog->details->server_entry);
-	gtk_table_attach (GTK_TABLE (table), dialog->details->server_entry,
-			  1, 2,
-			  i, i+1,
-			  GTK_FILL | GTK_EXPAND, GTK_FILL,
-			  0, 0);
-#endif
 
 	i++;
 
@@ -559,15 +480,7 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 	gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
 #endif
 	gtk_widget_show (label);
-#if GTK_CHECK_VERSION (3, 0, 0)
 	gtk_grid_attach (GTK_GRID (grid), label, 0, i, 2, 1);
-#else
-	gtk_table_attach (GTK_TABLE (table), label,
-			  0, 2,
-			  i, i+1,
-			  GTK_FILL, GTK_FILL,
-			  0, 0);
-#endif
 
 	i++;
 	
@@ -580,28 +493,12 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 		gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
 #endif
 		gtk_widget_show (label);
-#if GTK_CHECK_VERSION (3, 0, 0)
 		gtk_grid_attach (GTK_GRID (grid), label, 0, i, 1, 1);
 
 		gtk_label_set_mnemonic_widget (GTK_LABEL (label), dialog->details->share_entry);
 		gtk_widget_set_hexpand (dialog->details->share_entry, TRUE);
 		gtk_widget_show (dialog->details->share_entry);
 		gtk_grid_attach (GTK_GRID (grid), dialog->details->share_entry, 1, i, 1, 1);
-#else
-		gtk_table_attach (GTK_TABLE (table), label,
-				  0, 1,
-				  i, i+1,
-				  GTK_FILL, GTK_FILL,
-				  0, 0);
-
-		gtk_label_set_mnemonic_widget (GTK_LABEL (label), dialog->details->share_entry);
-		gtk_widget_show (dialog->details->share_entry);
-		gtk_table_attach (GTK_TABLE (table), dialog->details->share_entry,
-				  1, 2,
-				  i, i+1,
-				  GTK_FILL | GTK_EXPAND, GTK_FILL,
-				  0, 0);
-#endif
 
 		i++;
 	}
@@ -615,28 +512,12 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 		gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
 #endif
 		gtk_widget_show (label);
-#if GTK_CHECK_VERSION (3, 0, 0)
 		gtk_grid_attach (GTK_GRID (grid), label, 0, i, 1, 1);
 
 		gtk_label_set_mnemonic_widget (GTK_LABEL (label), dialog->details->port_entry);
 		gtk_widget_set_hexpand (dialog->details->port_entry, TRUE);
 		gtk_widget_show (dialog->details->port_entry);
 		gtk_grid_attach (GTK_GRID (grid), dialog->details->port_entry, 1, i, 1, 1);
-#else
-		gtk_table_attach (GTK_TABLE (table), label,
-				  0, 1,
-				  i, i+1,
-				  GTK_FILL, GTK_FILL,
-				  0, 0);
-
-		gtk_label_set_mnemonic_widget (GTK_LABEL (label), dialog->details->port_entry);
-		gtk_widget_show (dialog->details->port_entry);
-		gtk_table_attach (GTK_TABLE (table), dialog->details->port_entry,
-				  1, 2,
-				  i, i+1,
-				  GTK_FILL | GTK_EXPAND, GTK_FILL,
-				  0, 0);
-#endif
 
 		i++;
 	}
@@ -649,28 +530,12 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 	gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
 #endif
 	gtk_widget_show (label);
-#if GTK_CHECK_VERSION (3, 0, 0)
 	gtk_grid_attach (GTK_GRID (grid), label, 0, i, 1, 1);
 
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), dialog->details->folder_entry);
 	gtk_widget_set_hexpand (dialog->details->folder_entry, TRUE);
 	gtk_widget_show (dialog->details->folder_entry);
 	gtk_grid_attach (GTK_GRID (grid), dialog->details->folder_entry, 1, i, 1, 1);
-#else
-	gtk_table_attach (GTK_TABLE (table), label,
-			  0, 1,
-			  i, i+1,
-			  GTK_FILL, GTK_FILL,
-			  0, 0);
-
-	gtk_label_set_mnemonic_widget (GTK_LABEL (label), dialog->details->folder_entry);
-	gtk_widget_show (dialog->details->folder_entry);
-	gtk_table_attach (GTK_TABLE (table), dialog->details->folder_entry,
-			  1, 2,
-			  i, i+1,
-			  GTK_FILL | GTK_EXPAND, GTK_FILL,
-			  0, 0);
-#endif
 
 	i++;
 
@@ -683,28 +548,12 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 		gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
 #endif
 		gtk_widget_show (label);
-#if GTK_CHECK_VERSION (3, 0, 0)
 		gtk_grid_attach (GTK_GRID (grid), label, 0, i, 1, 1);
 
 		gtk_label_set_mnemonic_widget (GTK_LABEL (label), dialog->details->user_entry);
 		gtk_widget_set_hexpand (dialog->details->user_entry, TRUE);
 		gtk_widget_show (dialog->details->user_entry);
 		gtk_grid_attach (GTK_GRID (grid), dialog->details->user_entry, 1, i, 1, 1);
-#else
-		gtk_table_attach (GTK_TABLE (table), label,
-				  0, 1,
-				  i, i+1,
-				  GTK_FILL, GTK_FILL,
-				  0, 0);
-
-		gtk_label_set_mnemonic_widget (GTK_LABEL (label), dialog->details->user_entry);
-		gtk_widget_show (dialog->details->user_entry);
-		gtk_table_attach (GTK_TABLE (table), dialog->details->user_entry,
-				  1, 2,
-				  i, i+1,
-				  GTK_FILL | GTK_EXPAND, GTK_FILL,
-				  0, 0);
-#endif
 
 		i++;
 	}
@@ -718,28 +567,12 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 		gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
 #endif
 		gtk_widget_show (label);
-#if GTK_CHECK_VERSION (3, 0, 0)
 		gtk_grid_attach (GTK_GRID (grid), label, 0, i, 1, 1);
 
 		gtk_label_set_mnemonic_widget (GTK_LABEL (label), dialog->details->domain_entry);
 		gtk_widget_set_hexpand (dialog->details->user_entry, TRUE);
 		gtk_widget_show (dialog->details->domain_entry);
 		gtk_grid_attach (GTK_GRID (grid), dialog->details->domain_entry, 1, i, 1, 1);
-#else
-		gtk_table_attach (GTK_TABLE (table), label,
-				  0, 1,
-				  i, i+1,
-				  GTK_FILL, GTK_FILL,
-				  0, 0);
-
-                gtk_label_set_mnemonic_widget (GTK_LABEL (label), dialog->details->domain_entry);
-                gtk_widget_show (dialog->details->domain_entry);
-                gtk_table_attach (GTK_TABLE (table), dialog->details->domain_entry,
-                                  1, 2,
-                                  i, i+1,
-                                  GTK_FILL | GTK_EXPAND, GTK_FILL,
-                                  0, 0);
-#endif
 
                 i++;
         }
@@ -781,11 +614,7 @@ static void
 baobab_remote_connect_dialog_init (BaobabRemoteConnectDialog *dialog)
 {
 	GtkWidget *label;
-#if GTK_CHECK_VERSION (3, 0, 0)
 	GtkWidget *grid;
-#else
-	GtkWidget *table;
-#endif
 	GtkWidget *combo;
 	GtkWidget *hbox;
 	GtkWidget *vbox;
@@ -800,21 +629,13 @@ baobab_remote_connect_dialog_init (BaobabRemoteConnectDialog *dialog)
 	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 2);
 	gtk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
 	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-#else
-	vbox = gtk_vbox_new (FALSE, 6);
-#endif
 	gtk_container_set_border_width (GTK_CONTAINER (vbox), 5);
 	gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))),
 			    vbox, FALSE, TRUE, 0);
 	gtk_widget_show (vbox);
 
-#if GTK_CHECK_VERSION (3, 0, 0)
 	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
-#else
-	hbox = gtk_hbox_new (FALSE, 6);
-#endif
 	gtk_box_pack_start (GTK_BOX (vbox),
 			    hbox, FALSE, TRUE, 0);
 	gtk_widget_show (hbox);
@@ -890,11 +711,7 @@ baobab_remote_connect_dialog_init (BaobabRemoteConnectDialog *dialog)
 			  G_CALLBACK (combo_changed_callback),
 			  dialog);
 	
-#if GTK_CHECK_VERSION (3, 0, 0)
 	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
-#else
-	hbox = gtk_hbox_new (FALSE, 6);
-#endif
 	gtk_box_pack_start (GTK_BOX (vbox),
 			    hbox, FALSE, TRUE, 0);
 	gtk_widget_show (hbox);
@@ -905,21 +722,12 @@ baobab_remote_connect_dialog_init (BaobabRemoteConnectDialog *dialog)
 			    label, FALSE, FALSE, 0);
 	
 
-#if GTK_CHECK_VERSION (3, 0, 0)
 	dialog->details->grid = grid = gtk_grid_new ();
 	gtk_grid_set_row_spacing (GTK_GRID (grid), 6);
 	gtk_grid_set_column_spacing (GTK_GRID (grid), 12);
 	gtk_widget_show (grid);
 	gtk_box_pack_start (GTK_BOX (hbox),
 			    grid, TRUE, TRUE, 0);
-#else
-	dialog->details->table = table = gtk_table_new (5, 2, FALSE);
-	gtk_table_set_row_spacings (GTK_TABLE (table), 6);
-	gtk_table_set_col_spacings (GTK_TABLE (table), 12);
-	gtk_widget_show (table);
-	gtk_box_pack_start (GTK_BOX (hbox),
-			    table, TRUE, TRUE, 0);
-#endif
 
 	dialog->details->uri_entry = gtk_entry_new();
 	dialog->details->server_entry = gtk_entry_new ();
