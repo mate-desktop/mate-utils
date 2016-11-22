@@ -921,7 +921,6 @@ baobab_remote_connect_dialog_init (BaobabRemoteConnectDialog *dialog)
 			    table, TRUE, TRUE, 0);
 #endif
 
-	//dialog->details->uri_entry = caja_location_entry_new ();
 	dialog->details->uri_entry = gtk_entry_new();
 	dialog->details->server_entry = gtk_entry_new ();
 	dialog->details->share_entry = gtk_entry_new ();

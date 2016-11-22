@@ -467,7 +467,7 @@ gdict_strategy_chooser_init (GdictStrategyChooser *chooser)
   GdictStrategyChooserPrivate *priv;
 
 #if GTK_CHECK_VERSION(3,0,0)
-chooser->priv = priv = gdict_strategy_chooser_get_instance_private (chooser);
+  chooser->priv = priv = gdict_strategy_chooser_get_instance_private (chooser);
 #else
   chooser->priv = priv = GDICT_STRATEGY_CHOOSER_GET_PRIVATE (chooser);
 #endif

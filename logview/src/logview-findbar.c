@@ -232,7 +232,7 @@ logview_findbar_init (LogviewFindbar *findbar)
   gtk_tool_item_set_expand (priv->status_item, TRUE);
   priv->message = gtk_label_new ("");
   gtk_label_set_use_markup (GTK_LABEL (priv->message), TRUE);
-#if GTK_CHECK_VERSION(3,16,0)
+#if GTK_CHECK_VERSION (3, 16, 0)
   gtk_label_set_xalign (GTK_LABEL (priv->message), 0.0);
   gtk_label_set_yalign (GTK_LABEL (priv->message), 0.5);
 #else

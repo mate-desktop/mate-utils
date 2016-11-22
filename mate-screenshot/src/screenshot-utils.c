@@ -507,9 +507,9 @@ create_select_window (void)
   g_signal_connect (window, "expose-event", G_CALLBACK (expose), NULL);
 #endif
 
-   gtk_window_move (GTK_WINDOW (window), -100, -100);
-   gtk_window_resize (GTK_WINDOW (window), 10, 10);
-   gtk_widget_show (window);
+  gtk_window_move (GTK_WINDOW (window), -100, -100);
+  gtk_window_resize (GTK_WINDOW (window), 10, 10);
+  gtk_widget_show (window);
   return window;
 }
 
@@ -631,7 +631,7 @@ screenshot_select_area_async (SelectAreaCallback callback)
   gdk_cursor_unref (cursor);
   gdk_flush ();
 
- out:
+out:
   cb_data->rectangle = data.rect;
 
   /* FIXME: we should actually be emitting the callback When

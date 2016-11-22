@@ -324,13 +324,13 @@ egg_sm_client_get (void)
 	   * (since it supports state saving) and fall back to D-Bus
 	   * if XSMP isn't available.
 	   */
-# ifdef EGG_SM_CLIENT_BACKEND_XSMP
+#ifdef EGG_SM_CLIENT_BACKEND_XSMP
 	  global_client = egg_sm_client_xsmp_new ();
-# endif
-# ifdef EGG_SM_CLIENT_BACKEND_DBUS
+#endif
+#ifdef EGG_SM_CLIENT_BACKEND_DBUS
 	  if (!global_client)
 	    global_client = egg_sm_client_dbus_new ();
-# endif
+#endif
 	}
 
       /* Fallback: create a dummy client, so that callers don't have

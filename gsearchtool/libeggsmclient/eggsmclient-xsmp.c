@@ -567,7 +567,7 @@ idle_do_pending_events (gpointer data)
       do_save_yourself (xsmp);
     }
 
- out:
+out:
 #if !GTK_CHECK_VERSION (3, 0, 0)
   gdk_threads_leave ();
 #endif
