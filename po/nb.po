@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-07-01 11:45+0300\n"
-"PO-Revision-Date: 2016-06-30 05:24+0000\n"
+"PO-Revision-Date: 2016-11-19 14:46+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/mate/MATE/language/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -374,11 +374,11 @@ msgstr "Tilgjengelig"
 #: ../baobab/src/baobab-remote-connect-dialog.c:77
 #, c-format
 msgid "Cannot scan location \"%s\""
-msgstr "Kan ikke søke gjennom lokasjon «%s»"
+msgstr "Kan ikke søke gjennom plasseringen| «%s»"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:175
 msgid "Custom Location"
-msgstr "Egendefinert lokasjon"
+msgstr "Egendefinert plassering"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:177
 msgid "SSH"
@@ -410,11 +410,11 @@ msgstr "Kan ikke koble til tjener. Du må oppgi et navn for tjeneren"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:252
 msgid "Please enter a name and try again."
-msgstr "Vennligst oppgi et nytt navn og prøv igjen."
+msgstr "Oppgi et nytt navn og prøv igjen."
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:441
 msgid "_Location (URI):"
-msgstr "_Lokasjon (URI):"
+msgstr "_Plassering (URI):"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:468
 msgid "_Server:"
@@ -582,11 +582,11 @@ msgstr "Kjartan Maraas <kmaraas@gnome.org>\nEspen Stefansen <libbe AT stefansen 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:508
 #: ../gsearchtool/src/gsearchtool-callbacks.c:848
 msgid "The document does not exist."
-msgstr "Dokumentet eksisterer ikke."
+msgstr "Dokumentet fins ikke."
 
 #: ../baobab/src/callbacks.c:282
 msgid "The folder does not exist."
-msgstr "Mappen eksisterer ikke."
+msgstr "Mappen fins ikke."
 
 #: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
 msgid "A file searching tool for MATE Desktop"
@@ -677,7 +677,7 @@ msgstr "Denne nøkkelen definerer rekkefølgen på kolonnene i søkeresultatene.
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:14
 msgid "Default Window Width"
-msgstr "Standard vindusbredde"
+msgstr "Forvalgt vindusbredde"
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:15
 msgid ""
@@ -688,7 +688,7 @@ msgstr "Denne nøkkelen definerer bredden på vinduet, og den er brukt til å hu
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:16
 msgid "Default Window Height"
-msgstr "Standard vindushøyde"
+msgstr "Forvalgt vindushøyde"
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:17
 msgid ""
@@ -839,7 +839,7 @@ msgstr "Slå av tilkobling til sesjonshåndterer"
 
 #: ../gsearchtool/libeggsmclient/eggsmclient.c:228
 msgid "Specify file containing saved configuration"
-msgstr "Oppgi fil som inneholder lagret konfigurasjon"
+msgstr "Oppgi fil som inneholder lagret oppsett"
 
 #: ../gsearchtool/libeggsmclient/eggsmclient.c:228
 msgid "FILE"
@@ -1341,7 +1341,7 @@ msgstr "Kunne ikke lagre dokument «%s» til «%s»."
 #: ../gsearchtool/src/gsearchtool-callbacks.c:1707
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
-msgstr "Dokument «%s» eksisterer allerede. Vil du erstatte den?"
+msgstr "Dokument «%s» finnes allerede. Vil du erstatte den?"
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:1711
 msgid "If you replace an existing file, its contents will be overwritten."
@@ -1600,7 +1600,7 @@ msgstr "Regulært uttrykk er ugyldig: %s"
 
 #: ../logview/src/logview-filter-manager.c:242
 msgid "Please specify either foreground or background color!"
-msgstr "Vennligst oppgi enten forgrunns- eller bakgrunnsfarge!"
+msgstr "Oppgi enten forgrunns- eller bakgrunnsfarge!"
 
 #: ../logview/src/logview-filter-manager.c:296
 msgid "Edit filter"
@@ -2108,7 +2108,7 @@ msgstr "Et annet søk kjører"
 #: ../mate-dictionary/libgdict/gdict-defbox.c:2684
 #: ../mate-dictionary/libgdict/gdict-speller.c:778
 msgid "Please wait until the current search ends."
-msgstr "Vennligst vent til aktivt søk avslutter."
+msgstr "Vent til aktivt søk er ferdig."
 
 #: ../mate-dictionary/libgdict/gdict-defbox.c:2723
 msgid "Error while retrieving the definition"
@@ -2933,7 +2933,7 @@ msgid ""
 "Impossible to save the screenshot to %s.\n"
 " Error was %s.\n"
 " Please choose another location and retry."
-msgstr "Umulig å lagre skjermdump til %s.\n Feilen var %s.\n Vennligst velg en annen lokasjon og prøv igjen."
+msgstr "Umulig å lagre skjermdump til %s.\n Feilen var %s.\n Velg en annen plassering og prøv igjen."
 
 #: ../mate-screenshot/src/mate-screenshot.c:865
 msgid "Screenshot taken"
@@ -3054,12 +3054,12 @@ msgstr "Vindu uten tittel"
 
 #: ../mate-screenshot/src/screenshot-xfer.c:72
 msgid "File already exists"
-msgstr "Filen eksisterer allerede"
+msgstr "Fila finnes allerede"
 
 #: ../mate-screenshot/src/screenshot-xfer.c:75
 #, c-format
 msgid "The file \"%s\" already exists. Would you like to replace it?"
-msgstr "Filen «%s» eksisterer allerede. Vil du erstatte den?"
+msgstr "Fila «%s» finnes allerede. Vil du erstatte den?"
 
 #: ../mate-screenshot/src/screenshot-xfer.c:120
 msgid "Saving file..."
