@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-06 01:18+0300\n"
-"PO-Revision-Date: 2016-12-05 22:19+0000\n"
+"POT-Creation-Date: 2017-04-03 07:49+0300\n"
+"PO-Revision-Date: 2017-04-03 04:52+0000\n"
 "Last-Translator: monsta <monsta@inbox.ru>\n"
 "Language-Team: Korean (http://www.transifex.com/mate/MATE/language/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -2897,7 +2897,7 @@ msgstr "다음 시간이 지난 후에 찍기(_A): "
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
 #: ../mate-screenshot/src/mate-screenshot.c:511
-#: ../mate-screenshot/src/mate-screenshot.c:1280
+#: ../mate-screenshot/src/mate-screenshot.c:1277
 msgid "seconds"
 msgstr "초"
 
@@ -2929,16 +2929,9 @@ msgstr "스크린샷을 찍었습니다"
 msgid "Unable to take a screenshot of the current window"
 msgstr "현재 창의 스크린샷을 찍을 수 없습니다."
 
-#. Translators: This is a strftime format string.
-#. * It is used to display the time in 24-hours format (eg, like
-#. * in France: 20:10) but using hyphens in place of colons.
-#: ../mate-screenshot/src/mate-screenshot.c:909
-msgid "%Y-%m-%d %H-%M-%S"
-msgstr "%Y-%m-%d %H-%M-%S"
-
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/src/mate-screenshot.c:916
+#: ../mate-screenshot/src/mate-screenshot.c:913
 #, c-format
 msgid "Screenshot at %s.png"
 msgstr "스크린샷 %s.png"
@@ -2946,52 +2939,52 @@ msgstr "스크린샷 %s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/src/mate-screenshot.c:923
+#: ../mate-screenshot/src/mate-screenshot.c:920
 #, c-format
 msgid "Screenshot at %s - %d.png"
 msgstr "스크린샷 %s - %d.png"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1276
+#: ../mate-screenshot/src/mate-screenshot.c:1273
 msgid "Grab a window instead of the entire screen"
 msgstr "전체 화면 대신에 창을 찍습니다"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1277
+#: ../mate-screenshot/src/mate-screenshot.c:1274
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "전체 화면 대신에 화면의 일정 영역을 찍습니다"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1278
+#: ../mate-screenshot/src/mate-screenshot.c:1275
 msgid "Include the window border with the screenshot"
 msgstr "화면을 찍을 때 창 테두리를 포함합니다"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1279
+#: ../mate-screenshot/src/mate-screenshot.c:1276
 msgid "Remove the window border from the screenshot"
 msgstr "화면을 찍을 때 창 테두리를 제거합니다"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1280
+#: ../mate-screenshot/src/mate-screenshot.c:1277
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "지정한 시간 (초 단위) 이후에 화면을 찍습니다"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1281
+#: ../mate-screenshot/src/mate-screenshot.c:1278
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "테두리에 넣을 효과 (shadow, border 아니면 none)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1281
+#: ../mate-screenshot/src/mate-screenshot.c:1278
 msgid "effect"
 msgstr "테두리 효과"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1282
+#: ../mate-screenshot/src/mate-screenshot.c:1279
 msgid "Interactively set options"
 msgstr "대화형 인터페이스로 옵션 설정"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1283
+#: ../mate-screenshot/src/mate-screenshot.c:1280
 msgid "Print version information and exit"
 msgstr "버전 정보를 표시하고 끝냅니다"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1292
+#: ../mate-screenshot/src/mate-screenshot.c:1289
 msgid "Take a picture of the screen"
 msgstr "화면을 찍습니다"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1315
+#: ../mate-screenshot/src/mate-screenshot.c:1312
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "

@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-06 01:18+0300\n"
-"PO-Revision-Date: 2017-03-13 02:14+0000\n"
-"Last-Translator: samson <sambelet@yahoo.com>\n"
+"POT-Creation-Date: 2017-04-03 07:49+0300\n"
+"PO-Revision-Date: 2017-04-03 04:51+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
 "Language-Team: Amharic (http://www.transifex.com/mate/MATE/language/am/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1638,7 +1638,7 @@ msgstr "የ ፍለጋውን ሀረግ ማጽጃ"
 
 #: ../logview/src/logview-log.c:598
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
-msgstr ""
+msgstr "ስህተት ተፈጥሯል በማራገፍ ላይ እንዳለ የ GZipped log. ፋይሉ የ ተበላሸ ሊሆን ይችላል"
 
 #: ../logview/src/logview-log.c:645
 msgid "You don't have enough permissions to read the file."
@@ -1650,7 +1650,7 @@ msgstr "ይህ ፋይል መደበኛ ፋይል አይደለም ወይንም የ
 
 #: ../logview/src/logview-log.c:742
 msgid "This version of System Log does not support GZipped logs."
-msgstr ""
+msgstr "ይህ የ ስርአት እትም የ GZipped መግቢያ አይደግፍም"
 
 #: ../logview/src/logview-loglist.c:316
 msgid "Loading..."
@@ -2815,7 +2815,7 @@ msgstr "የመመልከቻውን ፎቶ ማንሻ ማዘግያ "
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:2
 msgid "The number of seconds to wait before taking the screenshot."
-msgstr ""
+msgstr "መመልከቻውን ፎቶ ከማንሳቱ በፊት የሚጠብቀው በ ሰከንዶች ቁጥር "
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:3
 msgid "Screenshot directory"
@@ -2823,7 +2823,7 @@ msgstr "መመልከቻውን ፎቶ ማንሻ ዳይሬክቶሪ "
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:4
 msgid "The directory the last screenshot was saved in."
-msgstr ""
+msgstr "የ መመልከቻ ፎቶ በ መጨረሻ ጊዜ የ ተቀመጠበት ዳይሬክቶሪ"
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:5
 msgid "Include Border"
@@ -2831,7 +2831,7 @@ msgstr "ድንበር ማካተቻ "
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:6
 msgid "Include the window manager border along with the screenshot"
-msgstr ""
+msgstr "የ መስኮት አስተዳዳሪ ድንበር በ መመልከቻ ፎቶ ላይ ማካተቻ"
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:7
 msgid "Include Pointer"
@@ -2839,7 +2839,7 @@ msgstr "ጠቋሚ ማካተቻ "
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:8
 msgid "Include the pointer in the screenshot"
-msgstr ""
+msgstr "በ መመልከቻ ፎቶ ላይ መጠቆሚያ ማካተቻ"
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:9
 msgid "Border Effect"
@@ -2883,26 +2883,26 @@ msgstr " _ውጤቱን መፈጸሚያ:"
 
 #: ../mate-screenshot/src/mate-screenshot.c:444
 msgid "Grab the whole _desktop"
-msgstr ""
+msgstr "በሙሉ _ዴስክቶፕ ፎቶ ማንሻ"
 
 #: ../mate-screenshot/src/mate-screenshot.c:456
 msgid "Grab the current _window"
-msgstr ""
+msgstr "የ አሁኑን _መስኮት ፎቶ ማንሻ"
 
 #: ../mate-screenshot/src/mate-screenshot.c:468
 msgid "Select _area to grab"
-msgstr ""
+msgstr "ይምረጡ _ቦታ ፎቶ ለማንሳት"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
 #: ../mate-screenshot/src/mate-screenshot.c:486
 msgid "Grab _after a delay of"
-msgstr ""
+msgstr "ፎቶ ማንሻ ከ ተወሰነ ማዘግያ _በኋላ"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
 #: ../mate-screenshot/src/mate-screenshot.c:511
-#: ../mate-screenshot/src/mate-screenshot.c:1280
+#: ../mate-screenshot/src/mate-screenshot.c:1277
 msgid "seconds"
 msgstr "ሰከንዶች "
 
@@ -2932,18 +2932,11 @@ msgstr "መመልከቻው ፎቶ ተነስቷል "
 
 #: ../mate-screenshot/src/mate-screenshot.c:856
 msgid "Unable to take a screenshot of the current window"
-msgstr ""
-
-#. Translators: This is a strftime format string.
-#. * It is used to display the time in 24-hours format (eg, like
-#. * in France: 20:10) but using hyphens in place of colons.
-#: ../mate-screenshot/src/mate-screenshot.c:909
-msgid "%Y-%m-%d %H-%M-%S"
-msgstr "%አ-%ወ-%d %ሰ-%ደ-%ሰ"
+msgstr "የ አሁኑን መስኮት ፎቶ ማንሳት አልተቻለም"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/src/mate-screenshot.c:916
+#: ../mate-screenshot/src/mate-screenshot.c:913
 #, c-format
 msgid "Screenshot at %s.png"
 msgstr "መመልከቻውን ፎቶ ማንሻ-%s.png"
@@ -2951,52 +2944,52 @@ msgstr "መመልከቻውን ፎቶ ማንሻ-%s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/src/mate-screenshot.c:923
+#: ../mate-screenshot/src/mate-screenshot.c:920
 #, c-format
 msgid "Screenshot at %s - %d.png"
 msgstr "መመልከቻውን ፎቶ ማንሻ በ %s - %d.png"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1276
+#: ../mate-screenshot/src/mate-screenshot.c:1273
 msgid "Grab a window instead of the entire screen"
 msgstr "ከ ጠቅላላ መመልከቻው ይልቅ መስኮቱን ብቻ ማንሻ"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1277
+#: ../mate-screenshot/src/mate-screenshot.c:1274
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "ከ ጠቅላላ መመልከቻው ይልቅ መስኮቱን አካባቢ ብቻ ማንሻ"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1278
+#: ../mate-screenshot/src/mate-screenshot.c:1275
 msgid "Include the window border with the screenshot"
-msgstr ""
+msgstr "በ መመልከቻ ፎቶ ላይ የ አሁኑን መስኮት ድንበር ማካተቻ "
 
-#: ../mate-screenshot/src/mate-screenshot.c:1279
+#: ../mate-screenshot/src/mate-screenshot.c:1276
 msgid "Remove the window border from the screenshot"
-msgstr ""
+msgstr "በ መመልከቻ ፎቶ ላይ የ አሁኑን መስኮት ድንበር ማስወገጃ"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1280
+#: ../mate-screenshot/src/mate-screenshot.c:1277
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr ""
 
-#: ../mate-screenshot/src/mate-screenshot.c:1281
+#: ../mate-screenshot/src/mate-screenshot.c:1278
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr ""
 
-#: ../mate-screenshot/src/mate-screenshot.c:1281
+#: ../mate-screenshot/src/mate-screenshot.c:1278
 msgid "effect"
 msgstr "ተጽእኖ "
 
-#: ../mate-screenshot/src/mate-screenshot.c:1282
+#: ../mate-screenshot/src/mate-screenshot.c:1279
 msgid "Interactively set options"
 msgstr ""
 
-#: ../mate-screenshot/src/mate-screenshot.c:1283
+#: ../mate-screenshot/src/mate-screenshot.c:1280
 msgid "Print version information and exit"
 msgstr "የ እትም መረጃ ማሳያ እና መውጫ"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1292
+#: ../mate-screenshot/src/mate-screenshot.c:1289
 msgid "Take a picture of the screen"
 msgstr "መመልከቻውን ፎቶ ማንሻ"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1315
+#: ../mate-screenshot/src/mate-screenshot.c:1312
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "

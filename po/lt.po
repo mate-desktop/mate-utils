@@ -5,16 +5,16 @@
 # Translators:
 # Džiugas Grėbliūnas <dziugas.grebliunas@gmail.com>, 2015
 # Gintautas Miliauskas <gintas@akl.lt>, 2006, 2007, 2008
-# Moo, 2014-2016
+# Moo, 2014-2017
 # Tomas Kuliavas <tokul@users.sourceforge.net>, 2003
 # Žygimantas Beručka <zygis@gnome.org>, 2003-2006, 2009, 2010
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-06 01:18+0300\n"
-"PO-Revision-Date: 2016-12-27 12:11+0000\n"
-"Last-Translator: Moo\n"
+"POT-Creation-Date: 2017-04-03 07:49+0300\n"
+"PO-Revision-Date: 2017-04-03 04:52+0000\n"
+"Last-Translator: monsta <monsta@inbox.ru>\n"
 "Language-Team: Lithuanian (http://www.transifex.com/mate/MATE/language/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -622,7 +622,7 @@ msgstr "Šis raktas apibrėžia elementus, kurių buvo ieškoma praeityje."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:3
 msgid "Show Additional Options"
-msgstr "Rodyti daugiau parinkčių"
+msgstr "Rodyti daugiau parametrų"
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:4
 msgid "Disable Quick Search"
@@ -799,7 +799,7 @@ msgstr "Šis raktas nurodo ar „sekti simbolines nuorodas“ parametras yra pa�
 msgid ""
 "This key determines if the \"Exclude other filesystems\" search option is "
 "selected when the search tool is started."
-msgstr "Šis raktas nurodo, ar paieškos parinktis „Neieškoti kitose failų sistemose“ yra pažymėta, kai paleidžiamas paieškos įrankis."
+msgstr "Šis raktas nurodo, ar paieškos parametras „Neieškoti kitose failų sistemose“ yra pažymėtas, kai paleidžiamas paieškos įrankis."
 
 #: ../gsearchtool/libeggsmclient/eggdesktopfile.c:165
 #, c-format
@@ -824,7 +824,7 @@ msgstr "Programa nepriima dokumentų komandų eilutėje"
 #: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1166
 #, c-format
 msgid "Unrecognized launch option: %d"
-msgstr "Neatpažinta paleisties parinktis: %d"
+msgstr "Neatpažintas paleidimo parametras: %d"
 
 #: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1365
 #, c-format
@@ -858,11 +858,11 @@ msgstr "ID"
 
 #: ../gsearchtool/libeggsmclient/eggsmclient.c:252
 msgid "Session management options:"
-msgstr "Seanso valdymo parinktys:"
+msgstr "Seanso valdymo parametrai:"
 
 #: ../gsearchtool/libeggsmclient/eggsmclient.c:253
 msgid "Show session management options"
-msgstr "Rodyti seanso valdymo parinktis"
+msgstr "Rodyti seanso valdymo parametrus"
 
 #: ../gsearchtool/src/gsearchtool.c:82
 msgid "Contains the _text"
@@ -1013,7 +1013,7 @@ msgstr[2] "Rasta %'d failų"
 
 #: ../gsearchtool/src/gsearchtool.c:1143
 msgid "Entry changed called for a non entry option!"
-msgstr "Įrašo keitimo funkcija pritaikyta ne įrašo savybėms!"
+msgstr "Įrašo keitimo funkcija pritaikyta ne įrašo parametrui!"
 
 #: ../gsearchtool/src/gsearchtool.c:1308
 msgid "Set the text of \"Name contains\" search option"
@@ -1038,16 +1038,16 @@ msgstr "Automatiškai pradėti paiešką"
 #: ../gsearchtool/src/gsearchtool.c:1318
 #, c-format
 msgid "Select the \"%s\" search option"
-msgstr "Pasirinkti paieškos parinktį „%s“"
+msgstr "Pasirinkti paieškos parametrą „%s“"
 
 #: ../gsearchtool/src/gsearchtool.c:1321
 #, c-format
 msgid "Select and set the \"%s\" search option"
-msgstr "Pasirinkti ir nustatyti paieškos parinktį „%s“"
+msgstr "Pasirinkti ir nustatyti paieškos parametrą „%s“"
 
 #: ../gsearchtool/src/gsearchtool.c:1428
 msgid "Invalid option passed to sortby command line argument."
-msgstr "Sortby komandų eilutės argumentui pateikta netinkama parinktis."
+msgstr "Sortby komandų eilutės argumentui pateikta netinkamas parametras. "
 
 #: ../gsearchtool/src/gsearchtool.c:1720
 msgid ""
@@ -1091,7 +1091,7 @@ msgstr "Įvyko klaida paleidžiant paieškos komandą."
 #: ../gsearchtool/src/gsearchtool.c:2008
 #, c-format
 msgid "Enter a text value for the \"%s\" search option."
-msgstr "Įveskite tekstinę reikšmę paieškos parinkčiai „%s“."
+msgstr "Įveskite tekstinę reikšmę paieškos parametrui „%s“."
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
@@ -1103,7 +1103,7 @@ msgstr "„%s“ per %s"
 #: ../gsearchtool/src/gsearchtool.c:2015
 #, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
-msgstr "Įveskite %s reikšmę paieškos parinkčiai „%s“."
+msgstr "Įveskite %s reikšmę paieškos parametrui „%s“."
 
 #: ../gsearchtool/src/gsearchtool.c:2073
 #, c-format
@@ -1117,23 +1117,23 @@ msgstr "Spustelėkite, norėdami pašalinti paieškos parametrą „%s“."
 
 #: ../gsearchtool/src/gsearchtool.c:2167
 msgid "A_vailable options:"
-msgstr "_Galimos parinktys:"
+msgstr "_Prieinami parametrai:"
 
 #: ../gsearchtool/src/gsearchtool.c:2196
 msgid "Available options"
-msgstr "Galimos parinktys"
+msgstr "Prieinami parametrai"
 
 #: ../gsearchtool/src/gsearchtool.c:2197
 msgid "Select a search option from the drop-down list."
-msgstr "Išskleidžiamame meniu pasirinkite paieškos parinktį."
+msgstr "Išskleidžiamajame meniu pasirinkite paieškos parametrą."
 
 #: ../gsearchtool/src/gsearchtool.c:2209
 msgid "Add search option"
-msgstr "Pridėti paieškos parinktį"
+msgstr "Pridėti paieškos parametrą"
 
 #: ../gsearchtool/src/gsearchtool.c:2210
 msgid "Click to add the selected available search option."
-msgstr "Spustelėkite, norėdami pridėti pasirinktą galimą paieškos parinktį."
+msgstr "Spustelėkite, norėdami pridėti pasirinktą galimą paieškos parametrą."
 
 #: ../gsearchtool/src/gsearchtool.c:2299
 msgid "S_earch results:"
@@ -1186,15 +1186,15 @@ msgstr "Pasirinkite aplanką arbą įrenginį, kuriame norite pradėti paiešką
 
 #: ../gsearchtool/src/gsearchtool.c:2854
 msgid "Select more _options"
-msgstr "Pasirin_kti daugiau parinkčių"
+msgstr "Pasirin_kti daugiau parametrų"
 
 #: ../gsearchtool/src/gsearchtool.c:2863
 msgid "Select more options"
-msgstr "Pasirinkti daugiau parinkčių"
+msgstr "Pasirinkti daugiau parametrų"
 
 #: ../gsearchtool/src/gsearchtool.c:2863
 msgid "Click to expand or collapse the list of available options."
-msgstr "Spustelėkite, norėdami išskleisti arba sutraukti galimų parinkčių sąrašą."
+msgstr "Spustelėkite, norėdami išskleisti arba sutraukti prieinamų parametrų sąrašą."
 
 #: ../gsearchtool/src/gsearchtool.c:2887
 msgid "Click to display the help manual."
@@ -2269,11 +2269,11 @@ msgstr "Pašalintinos GDict derinimo žymos"
 
 #: ../mate-dictionary/libgdict/gdict-utils.c:157
 msgid "GDict Options"
-msgstr "GDict parinktys"
+msgstr "GDict parametrai"
 
 #: ../mate-dictionary/libgdict/gdict-utils.c:158
 msgid "Show GDict Options"
-msgstr "Rodyti GDict parinktis"
+msgstr "Rodyti GDict parametrus"
 
 #: ../mate-dictionary/src/gdict-about.c:57
 #: ../mate-dictionary/src/gdict-applet.c:575
@@ -2912,7 +2912,7 @@ msgstr "Fotografuoti _po"
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
 #: ../mate-screenshot/src/mate-screenshot.c:511
-#: ../mate-screenshot/src/mate-screenshot.c:1280
+#: ../mate-screenshot/src/mate-screenshot.c:1277
 msgid "seconds"
 msgstr "sekundžių"
 
@@ -2944,16 +2944,9 @@ msgstr "Ekrano kopija padaryta"
 msgid "Unable to take a screenshot of the current window"
 msgstr "Nepavyko padaryti dabartinio lango ekrano kopijos"
 
-#. Translators: This is a strftime format string.
-#. * It is used to display the time in 24-hours format (eg, like
-#. * in France: 20:10) but using hyphens in place of colons.
-#: ../mate-screenshot/src/mate-screenshot.c:909
-msgid "%Y-%m-%d %H-%M-%S"
-msgstr "%Y-%m-%d %H-%M-%S"
-
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/src/mate-screenshot.c:916
+#: ../mate-screenshot/src/mate-screenshot.c:913
 #, c-format
 msgid "Screenshot at %s.png"
 msgstr "Ekrano kopija %s.png"
@@ -2961,57 +2954,57 @@ msgstr "Ekrano kopija %s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/src/mate-screenshot.c:923
+#: ../mate-screenshot/src/mate-screenshot.c:920
 #, c-format
 msgid "Screenshot at %s - %d.png"
 msgstr "Ekrano kopija %s - %d.png"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1276
+#: ../mate-screenshot/src/mate-screenshot.c:1273
 msgid "Grab a window instead of the entire screen"
 msgstr "Vietoje viso ekrano fotografuoti tik langą"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1277
+#: ../mate-screenshot/src/mate-screenshot.c:1274
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Vietoje viso ekrano fotografuoti tik tam tikrą sritį"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1278
+#: ../mate-screenshot/src/mate-screenshot.c:1275
 msgid "Include the window border with the screenshot"
 msgstr "Į ekrano kopiją įtraukti ir lango rėmelį"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1279
+#: ../mate-screenshot/src/mate-screenshot.c:1276
 msgid "Remove the window border from the screenshot"
 msgstr "Iš ekrano kopijos pašalinti lango rėmelį"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1280
+#: ../mate-screenshot/src/mate-screenshot.c:1277
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Padaryti ekrano kopiją praėjus nurodytam laiko tarpui [sekundėmis]"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1281
+#: ../mate-screenshot/src/mate-screenshot.c:1278
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Efektas, pridedamas rėmeliui (šešėlis, rėmelis arba nieko)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1281
+#: ../mate-screenshot/src/mate-screenshot.c:1278
 msgid "effect"
 msgstr "efektas"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1282
+#: ../mate-screenshot/src/mate-screenshot.c:1279
 msgid "Interactively set options"
-msgstr "Interaktyviai nustatyti parinktis"
+msgstr "Interaktyviai nustatyti parametrus"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1283
+#: ../mate-screenshot/src/mate-screenshot.c:1280
 msgid "Print version information and exit"
 msgstr "Parodyti versijos informaciją ir išeiti"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1292
+#: ../mate-screenshot/src/mate-screenshot.c:1289
 msgid "Take a picture of the screen"
 msgstr "Padaryti ekrano nuotrauką"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1315
+#: ../mate-screenshot/src/mate-screenshot.c:1312
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"
-msgstr "Besikertančios parinktys: --window ir --area neturėtų būti naudojamos tuo pačiu metu.\n"
+msgstr "Besikertantys parametrai: --window ir --area neturėtų būti naudojami tuo pačiu metu.\n"
 
 #: ../mate-screenshot/src/screenshot-dialog.c:207
 #, c-format
