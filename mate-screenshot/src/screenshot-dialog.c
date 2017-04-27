@@ -430,7 +430,7 @@ screenshot_dialog_set_busy (ScreenshotDialog *dialog,
   GdkDisplay *display;
 
   toplevel = screenshot_dialog_get_toplevel (dialog);
-  display = gtk_widget_get_display (GTK_WIDGET (dialog));
+  display = gtk_widget_get_display (toplevel);
 
   if (busy)
     {
