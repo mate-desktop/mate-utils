@@ -1120,7 +1120,6 @@ GtkWidget *
 gsearchtool_button_new_with_stock_icon (const gchar * string,
                                         const gchar * stock_id)
 {
-	GtkWidget * align;
 	GtkWidget * button;
 	GtkWidget * hbox;
 	GtkWidget * image;
@@ -1131,12 +1130,10 @@ gsearchtool_button_new_with_stock_icon (const gchar * string,
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), GTK_WIDGET (button));
 	image = gtk_image_new_from_stock (stock_id, GTK_ICON_SIZE_BUTTON);
 	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
-	align = gtk_alignment_new (0.5, 0.5, 0.0, 0.0);
 	gtk_box_pack_start (GTK_BOX (hbox), image, FALSE, FALSE, 0);
 	gtk_box_pack_end (GTK_BOX (hbox), label, FALSE, FALSE, 0);
-	gtk_container_add (GTK_CONTAINER (button), align);
-	gtk_container_add (GTK_CONTAINER (align), hbox);
-	gtk_widget_show_all (align);
+	gtk_container_add (GTK_CONTAINER (button), hbox);
+	gtk_widget_show_all (hbox);
 
 	return button;
 }

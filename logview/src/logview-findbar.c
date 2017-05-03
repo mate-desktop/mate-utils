@@ -164,11 +164,10 @@ logview_findbar_init (LogviewFindbar *findbar)
   priv->status_bold_id = 0;
 
   /* Find: |_______| */
-  w = gtk_alignment_new (0.0, 0.5, 1.0, 1.0);
-  gtk_alignment_set_padding (GTK_ALIGNMENT (w), 0, 0, 2, 2);
-
   box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
-  gtk_container_add (GTK_CONTAINER (w), box);
+  gtk_widget_set_halign (box, GTK_ALIGN_START);
+  gtk_widget_set_margin_start (box, 2);
+  gtk_widget_set_margin_end (box, 2);
 
   label = gtk_label_new_with_mnemonic (_("_Find:"));
   gtk_box_pack_start (GTK_BOX (box), label, FALSE, FALSE, 0);
@@ -179,7 +178,7 @@ logview_findbar_init (LogviewFindbar *findbar)
   gtk_box_pack_start (GTK_BOX (box), priv->entry, TRUE, TRUE, 0);
 
   item = gtk_tool_item_new ();
-  gtk_container_add (GTK_CONTAINER (item), w);
+  gtk_container_add (GTK_CONTAINER (item), box);
   gtk_toolbar_insert (gtoolbar, item, -1);
   gtk_widget_show_all (GTK_WIDGET (item));
 
