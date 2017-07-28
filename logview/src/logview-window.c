@@ -356,7 +356,11 @@ logview_help (GtkAction *action, GtkWidget *parent_window)
 {
   GError *error = NULL;
 
+#if GTK_CHECK_VERSION (3, 22, 0)
+  gtk_show_uri_on_window (GTK_WINDOW (parent_window),
+#else
   gtk_show_uri (gtk_widget_get_screen (parent_window),
+#endif
                 "help:mate-system-log", gtk_get_current_event_time (),
                 &error);
 

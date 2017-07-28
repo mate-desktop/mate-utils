@@ -506,8 +506,15 @@ baobab_help_display (GtkWindow   *parent,
 		g_strdup_printf ("help:%s/%s", file_name, link_id) :
 		g_strdup_printf ("help:%s", file_name);
 
+#if GTK_CHECK_VERSION (3, 22, 0)
+	ret = gtk_show_uri_on_window (parent,
+	                              uri,
+	                              gtk_get_current_event_time (),
+	                              &error);
+#else
 	ret = gtk_show_uri (gtk_window_get_screen (parent),
 			    uri, gtk_get_current_event_time (), &error);
+#endif
 	g_free (uri);
 
 	if (error != NULL) {

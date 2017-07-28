@@ -1243,8 +1243,12 @@ gdict_window_cmd_help_contents (GtkAction   *action,
   GError *err = NULL;
   
   g_return_if_fail (GDICT_IS_WINDOW (window));
- 
+
+#if GTK_CHECK_VERSION (3, 22, 0)
+  gtk_show_uri_on_window (GTK_WINDOW (window),
+#else
   gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (window)),
+#endif
                 "help:mate-dictionary",
                 gtk_get_current_event_time (), &err); 
   if (err)
