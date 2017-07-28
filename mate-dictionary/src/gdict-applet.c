@@ -717,7 +717,11 @@ gdict_applet_cmd_help (GtkAction *action,
 {
   GError *err = NULL;
 
+#if GTK_CHECK_VERSION (3, 22, 0)
+  gtk_show_uri_on_window (NULL,
+#else
   gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (applet)),
+#endif
 		"help:mate-dictionary/mate-dictionary-applet",
 		gtk_get_current_event_time (), &err);
   
