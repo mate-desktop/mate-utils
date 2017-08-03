@@ -546,11 +546,19 @@ find_wm_window (Window xid)
 static cairo_region_t *
 make_region_with_monitors (GdkScreen *screen)
 {
+#if GTK_CHECK_VERSION (3, 22, 0)
+  GdkDisplay     *display;
+#endif
   cairo_region_t *region;
   int num_monitors;
   int i;
 
+#if GTK_CHECK_VERSION (3, 22, 0)
+  display = gdk_screen_get_display (screen);
+  num_monitors = gdk_display_get_n_monitors (display);
+#else
   num_monitors = gdk_screen_get_n_monitors (screen);
+#endif
 
   region = cairo_region_create ();
 
