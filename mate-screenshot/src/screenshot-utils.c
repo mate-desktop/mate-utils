@@ -228,12 +228,23 @@ GdkWindow *
 screenshot_find_current_window ()
 {
   GdkWindow *current_window;
+#if GTK_CHECK_VERSION (3, 20, 0)
+  GdkDisplay *display;
+  GdkSeat *seat;
+#else
   GdkDeviceManager *manager;
+#endif
   GdkDevice *device;
 
   current_window = screenshot_find_active_window ();
+#if GTK_CHECK_VERSION (3, 20, 0)
+  display = gdk_window_get_display (current_window);
+  seat = gdk_display_get_default_seat (display);
+  device = gdk_seat_get_pointer (seat);
+#else
   manager = gdk_display_get_device_manager (gdk_display_get_default ());
   device = gdk_device_manager_get_client_pointer (manager);
+#endif
 
   /* If there's no active window, we fall back to returning the
    * window that the cursor is in.
@@ -446,8 +457,12 @@ screenshot_select_area_async (SelectAreaCallback callback)
 {
   GdkDisplay *display;
   GdkCursor               *cursor;
+#if GTK_CHECK_VERSION (3, 20, 0)
+  GdkSeat *seat;
+#else
   GdkDeviceManager *manager;
   GdkDevice *pointer, *keyboard;
+#endif
   GdkGrabStatus res;
   select_area_filter_data  data;
   GdkRectangle *rectangle;
@@ -471,10 +486,31 @@ screenshot_select_area_async (SelectAreaCallback callback)
   display = gdk_display_get_default ();
   cursor = gdk_cursor_new_for_display (display, GDK_CROSSHAIR);
 
+#if GTK_CHECK_VERSION (3, 20, 0)
+  seat = gdk_display_get_default_seat (display);
+
+  res = gdk_seat_grab (seat,
+                       gtk_widget_get_window (data.window),
+                       GDK_SEAT_CAPABILITY_ALL,
+                       FALSE,
+                       cursor,
+                       NULL,
+                       NULL,
+                       NULL);
+
+  if (res != GDK_GRAB_SUCCESS)
+    {
+      g_object_unref (cursor);
+      goto out;
+    }
+
+  gtk_main ();
+
+  gdk_seat_ungrab (seat);
+#else
   manager = gdk_display_get_device_manager (display);
   pointer = gdk_device_manager_get_client_pointer (manager);
   keyboard = gdk_device_get_associated_device (pointer);
-
 
   res = gdk_device_grab (pointer, gtk_widget_get_window (data.window),
                          GDK_OWNERSHIP_NONE, FALSE,
@@ -505,6 +541,7 @@ screenshot_select_area_async (SelectAreaCallback callback)
 
   gdk_device_ungrab (keyboard, GDK_CURRENT_TIME);
   gdk_device_ungrab (pointer, GDK_CURRENT_TIME);
+#endif
 
   gtk_widget_destroy (data.window);
   g_object_unref (cursor);
@@ -847,13 +884,24 @@ screenshot_get_pixbuf (GdkWindow    *window,
 
       if (cursor_pixbuf != NULL)
         {
+#if GTK_CHECK_VERSION (3, 20, 0)
+          GdkDisplay *display;
+          GdkSeat *seat;
+#else
           GdkDeviceManager *manager;
+#endif
           GdkDevice *device;
           GdkRectangle r1, r2;
           gint cx, cy, xhot, yhot;
 
+#if GTK_CHECK_VERSION (3, 20, 0)
+          display = gdk_window_get_display (window);
+          seat = gdk_display_get_default_seat (display);
+          device = gdk_seat_get_pointer (seat);
+#else
           manager = gdk_display_get_device_manager (gdk_display_get_default ());
           device = gdk_device_manager_get_client_pointer (manager);
+#endif
           gdk_window_get_device_position (window, device, &cx, &cy, NULL);
           sscanf (gdk_pixbuf_get_option (cursor_pixbuf, "x_hot"), "%d", &xhot);
           sscanf (gdk_pixbuf_get_option (cursor_pixbuf, "y_hot"), "%d", &yhot);
