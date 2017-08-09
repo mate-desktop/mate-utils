@@ -699,8 +699,9 @@ mask_monitors (GdkPixbuf *pixbuf, GdkWindow *root_window)
 
   rect.x = 0;
   rect.y = 0;
-  rect.width = gdk_screen_get_width (screen);
-  rect.height = gdk_screen_get_height (screen);
+
+  gdk_window_get_geometry (gdk_screen_get_root_window (screen), NULL, NULL,
+                           &rect.width, &rect.height);
 
   invisible_region = cairo_region_create_rectangle (&rect);
   cairo_region_subtract (invisible_region, region_with_monitors);
