@@ -723,6 +723,10 @@ screenshot_get_pixbuf (GdkWindow    *window,
   GdkPixbuf *screenshot;
   gint x_real_orig, y_real_orig, x_orig, y_orig;
   gint width, real_width, height, real_height;
+  gint sc_width, sc_height;
+
+  gdk_window_get_geometry (gdk_screen_get_root_window (gdk_screen_get_default()),
+                           NULL, NULL, &sc_width, &sc_height);
 
   /* If the screenshot should include the border, we look for the WM window. */
 
@@ -763,11 +767,11 @@ screenshot_get_pixbuf (GdkWindow    *window,
       y_orig = 0;
     }
 
-  if (x_orig + width > gdk_screen_width ())
-    width = gdk_screen_width () - x_orig;
+  if (x_orig + width > sc_width)
+    width = sc_width - x_orig;
 
-  if (y_orig + height > gdk_screen_height ())
-    height = gdk_screen_height () - y_orig;
+  if (y_orig + height > sc_height)
+    height = sc_height - y_orig;
 
   if (rectangle)
     {
@@ -835,11 +839,11 @@ screenshot_get_pixbuf (GdkWindow    *window,
                   rec_height += y_real_orig;
                 }
 
-              if (x_orig + rec_x + rec_width > gdk_screen_width ())
-                rec_width = gdk_screen_width () - x_orig - rec_x;
+              if (x_orig + rec_x + rec_width > sc_width)
+                rec_width = sc_width - x_orig - rec_x;
 
-              if (y_orig + rec_y + rec_height > gdk_screen_height ())
-                rec_height = gdk_screen_height () - y_orig - rec_y;
+              if (y_orig + rec_y + rec_height > sc_height)
+                rec_height = sc_height - y_orig - rec_y;
 
               for (y = rec_y; y < rec_y + rec_height; y++)
                 {
