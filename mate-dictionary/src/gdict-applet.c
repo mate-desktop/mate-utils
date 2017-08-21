@@ -130,8 +130,13 @@ set_window_default_size (GdictApplet *applet)
   GtkWidget *widget, *defbox;
   gint width, height;
   gint font_size;
+#if GTK_CHECK_VERSION (3, 22, 0)
+  GdkDisplay *display;
+  GdkMonitor *monitor_num;
+#else
   GdkScreen *screen;
   gint monitor_num;
+#endif
   GtkRequisition req;
   GdkRectangle monitor;
 
@@ -154,11 +159,18 @@ set_window_default_size (GdictApplet *applet)
   height = MAX (height, req.height);
 
   /* ... but make it no larger than half the monitor size */
+#if GTK_CHECK_VERSION (3, 22, 0)
+  display = gtk_widget_get_display (widget);
+  monitor_num = gdk_display_get_monitor_at_window (display,
+                                                   gtk_widget_get_window (widget));
+  gdk_monitor_get_geometry (monitor_num, &monitor);
+#else
   screen = gtk_widget_get_screen (widget);
   monitor_num = gdk_screen_get_monitor_at_window (screen,
                                                   gtk_widget_get_window (widget));
 
   gdk_screen_get_monitor_geometry (screen, monitor_num, &monitor);
+#endif
 
   width = MIN (width, monitor.width / 2);
   height = MIN (height, monitor.height / 2);

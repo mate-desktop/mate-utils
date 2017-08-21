@@ -603,7 +603,11 @@ make_region_with_monitors (GdkScreen *screen)
     {
       GdkRectangle rect;
 
+#if GTK_CHECK_VERSION (3, 22, 0)
+      gdk_monitor_get_geometry (gdk_display_get_monitor (display, i), &rect);
+#else
       gdk_screen_get_monitor_geometry (screen, i, &rect);
+#endif
       cairo_region_union_rectangle (region, &rect);
     }
 
