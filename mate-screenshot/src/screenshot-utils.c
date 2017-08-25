@@ -21,6 +21,7 @@
 #include "config.h"
 #include "screenshot-utils.h"
 
+#include <X11/Xatom.h>
 #include <gdk/gdkkeysyms.h>
 #include <gtk/gtk.h>
 #include <glib.h>
@@ -133,13 +134,55 @@ screenshot_release_lock (void)
 }
 
 static GdkWindow *
+screen_get_active_window (GdkScreen *screen)
+{
+  GdkWindow *ret = NULL;
+  Atom type_return;
+  gint format_return;
+  gulong nitems_return;
+  gulong bytes_after_return;
+  guchar *data = NULL;
+
+  if (!gdk_x11_screen_supports_net_wm_hint (screen,
+                                            gdk_atom_intern_static_string ("_NET_ACTIVE_WINDOW")))
+    return NULL;
+
+  if (XGetWindowProperty (GDK_DISPLAY_XDISPLAY (gdk_screen_get_display (screen)),
+                          RootWindow (GDK_DISPLAY_XDISPLAY (gdk_screen_get_display (screen)),
+                                      GDK_SCREEN_XNUMBER (screen)),
+                          gdk_x11_get_xatom_by_name_for_display (gdk_screen_get_display (screen),
+                                                                 "_NET_ACTIVE_WINDOW"),
+                          0, 1, False, XA_WINDOW, &type_return,
+                          &format_return, &nitems_return,
+                          &bytes_after_return, &data)
+      == Success)
+    {
+      if ((type_return == XA_WINDOW) && (format_return == 32) && (data))
+        {
+          Window window = *(Window *) data;
+
+          if (window != None)
+            {
+              ret = gdk_x11_window_foreign_new_for_display (gdk_screen_get_display (screen),
+                                                            window);
+            }
+        }
+    }
+
+  if (data)
+    XFree (data);
+
+  return ret;
+}
+
+static GdkWindow *
 screenshot_find_active_window (void)
 {
   GdkWindow *window;
   GdkScreen *default_screen;
 
   default_screen = gdk_screen_get_default ();
-  window = gdk_screen_get_active_window (default_screen);
+  window = screen_get_active_window (default_screen);
 
   return window;
 }
