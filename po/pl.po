@@ -7,6 +7,7 @@
 # Jan Bońkowski <bonkowskijan@gmail.com>, 2015
 # Krzysztof Kokot <kokot300@gmail.com>, 2016
 # Marcin Kralka <marcink96@gmail.com>, 2014
+# Piotr Drąg <piotrdrag@gmail.com>, 2017
 # Piotr Strębski <strebski@gmail.com>, 2015-2016
 # Wiktor Jezioro <wikjezioro@op.pl>, 2015
 msgid ""
@@ -14,14 +15,14 @@ msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-03 07:49+0300\n"
-"PO-Revision-Date: 2017-04-03 04:52+0000\n"
-"Last-Translator: monsta <monsta@inbox.ru>\n"
+"PO-Revision-Date: 2017-08-21 15:01+0000\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish (http://www.transifex.com/mate/MATE/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>=14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
 #: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:1
 msgid "MATE Disk Usage Analyzer"
@@ -155,7 +156,7 @@ msgstr "Odśwież"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:1
 msgid "Monitor Home"
-msgstr "Monitoruj Home"
+msgstr "Monitoruj katalog domowy"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:2
 msgid "Whether any change to the home directory should be monitored."
@@ -195,7 +196,7 @@ msgstr "Określa, czy wyświetlać podpowiedzi z podkatalogami dla zaznaczonych 
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:11
 msgid "Active Chart"
-msgstr "Włącz Wykres"
+msgstr "Włącz wykres"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:12
 msgid "Which type of chart should be displayed."
@@ -203,7 +204,7 @@ msgstr "Który typ wykresu powinien zostać wyświetlony."
 
 #: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:1
 msgid "A disk usage analyzing tool for MATE Desktop"
-msgstr "Narzędzie analizowania użycia dysku dla Środowiska MATE"
+msgstr "Narzędzie analizowania użycia dysku dla środowiska MATE"
 
 #: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:2
 msgid ""
@@ -213,7 +214,7 @@ msgid ""
 "perform scans on a file system, your home or any other folder - local or "
 "remote. There is also an option to constantly monitor any external changes "
 "to the home directory and warn the user if a file is added/removed. </p>"
-msgstr "<p> Jak nazwa sugeruje, Analizator wykorzystania dysku jest graficznym narzędziem którego możesz używać do wyświetlenia i monitorowania użycia twojego dysku i struktury folderów. Wyświetla informację podsumuwującą w wkyresach kołowych lub drzewie. </p> <p> Możesz wykonać skan na systemie plików, twoim katalogu domowym lub każdym innym folderze, lokalnym lub zdalnym. Jest także opcja na ciągłym monitorowaniu każdej zewnętrznej zmiany w twoim katalogu domowym i ostrzeganiu użytkownika jeśli plik jest dodany/usunięty. </p>"
+msgstr "<p> Jak nazwa sugeruje, Analizator wykorzystania dysku jest graficznym narzędziem, którego możesz używać do wyświetlenia i monitorowania użycia dysku i struktury katalogów. Wyświetla informację podsumowującą w wykresach kołowych lub drzewie. </p> <p> Możesz wykonać skan na systemie plików, katalogu domowym lub każdym innym katalogu, lokalnym lub zdalnym. Jest także opcja do ciągłego monitorowania każdej zewnętrznej zmiany w katalogu domowym i ostrzegania użytkownika, jeśli plik został dodany/usunięty. </p>"
 
 #: ../baobab/src/baobab.c:137 ../baobab/src/baobab.c:357
 msgid "Scanning..."
@@ -571,7 +572,7 @@ msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
-msgstr "Z pewnością wraz z niniejszym programem dostarczono także egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie - proszę napisać do Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+msgstr "Z pewnością wraz z niniejszym programem dostarczono także egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie - proszę napisać do Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 
 #: ../baobab/src/callbacks.c:97
 msgid "A graphical tool to analyze disk usage."
@@ -581,7 +582,7 @@ msgstr "Graficzne narzędzie do analizy wykorzystania dysku."
 #: ../baobab/src/callbacks.c:103 ../logview/src/logview-about.h:63
 #: ../mate-dictionary/src/gdict-about.c:55
 msgid "translator-credits"
-msgstr "Aviary.pl <matepl@aviary.pl>, 2008, 2009, 2010"
+msgstr "Tłumacze środowiska MATE, 2012, 2015-2017\n\nZbigniew Chyla, 1999-2003\nArtur Flinta, 2003-2005\nWadim Dziedzic, 2007\nTomasz Dominikowski, 2007-2009\nJoanna Mazgaj, 2008\nPiotr Drąg, 2010\nAviary.pl, 2007-2010"
 
 #: ../baobab/src/callbacks.c:201
 #: ../gsearchtool/src/gsearchtool-callbacks.c:508
@@ -595,7 +596,7 @@ msgstr "Katalog nie istnieje."
 
 #: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:1
 msgid "A file searching tool for MATE Desktop"
-msgstr "Narzędzie wyszukania plików dla Środowiska MATE"
+msgstr "Narzędzie wyszukiwania plików dla środowiska MATE"
 
 #: ../gsearchtool/data/mate-search-tool.appdata.xml.in.h:2
 msgid ""
@@ -604,7 +605,7 @@ msgid ""
 " you instant access to a wide variety of parameters for each search, such as"
 " text contained within a file, ownership, date of modification, file size, "
 "folder exclusion, etc.. </p>"
-msgstr "<p> Narzędzie wyszukiwania MATE jest prostym, aczkolwiek potężnym programem pozwalającym na wyszukiwanie plików i folderów na każdym podłączonym systemie plików. Jego interfejs daje Ci natychmiastowy dostęp do szerokiego wachlarza parametrów dla każdego wyszukiwania, takich jak szukanie tekstu w pliku, właściciela, daty modyfikacji, rozmiaru, wyłączania folderów z szukania itd.. </p>"
+msgstr "<p> Narzędzie wyszukiwania MATE jest prostym, aczkolwiek potężnym programem pozwalającym na wyszukiwanie plików i folderów na każdym podłączonym systemie plików. Jego interfejs daje Ci natychmiastowy dostęp do szerokiego wachlarza parametrów dla każdego wyszukiwania, takich jak szukanie tekstu w pliku, właściciela, daty modyfikacji, rozmiaru, wyłączania folderów z szukania itd. </p>"
 
 #: ../gsearchtool/data/mate-search-tool.desktop.in.h:1
 msgid "MATE Search Tool"
@@ -1330,7 +1331,7 @@ msgstr "Otwórz za pomo_cą"
 #. Popup menu item: Open Containing Folder
 #: ../gsearchtool/src/gsearchtool-callbacks.c:1192
 msgid "Open Containing _Folder"
-msgstr "Otwórz _Folder Zawierający"
+msgstr "Otwórz _katalog zawierający"
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:1232
 msgid "_Save Results As..."
@@ -1382,16 +1383,16 @@ msgstr "Brak uprawnień do zapisu do tego dokumentu."
 #. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
 #: ../gsearchtool/src/gsearchtool-support.c:448
 msgid "today at %-I:%M %p"
-msgstr "dziś o %-H:%M"
+msgstr "dzisiaj o %H:%M"
 
 #: ../gsearchtool/src/gsearchtool-support.c:450
 msgid "yesterday at %-I:%M %p"
-msgstr "wczoraj o %-H:%M"
+msgstr "wczoraj o %H:%M"
 
 #: ../gsearchtool/src/gsearchtool-support.c:452
 #: ../gsearchtool/src/gsearchtool-support.c:454
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
-msgstr "%A, %-d %B %Y o %-H:%M:%S"
+msgstr "%A, %-d %B %Y o %H:%M:%S"
 
 #: ../gsearchtool/src/gsearchtool-support.c:641
 msgid "link (broken)"
@@ -1559,7 +1560,7 @@ msgstr "Lista zapisanych filtrów"
 
 #: ../logview/data/org.mate.system-log.gschema.xml.in.h:12
 msgid "List of saved regexp filters"
-msgstr "Lista zapisanych filtrów regexp"
+msgstr "Lista zapisanych filtrów wyrażeń regularnych"
 
 #: ../logview/data/logview-filter.ui.h:1
 #: ../mate-screenshot/data/mate-screenshot.ui.h:3
@@ -1877,7 +1878,7 @@ msgid ""
 "comes preconfigured with a list of Dict servers (RFC 2229), to which you can"
 " add your own sources, while you can select specific servers for a specific "
 "query. </p>"
-msgstr "<p> Słownik MATE pozwala Ci na sprawdzenie słów w słownikach online. Jest dostarczany prekonfigurowany z listą serwerów Dict (RFC 2229), do których możesz dodawać własne źródła, kiedy możesz wybrać specyficzne serwery dla specyficznego zapytania. </p>"
+msgstr "<p> Słownik MATE umożliwia sprawdzenie słów w słownikach online. Jest dostarczany prekonfigurowany z listą serwerów Dict (RFC 2229), do których możesz dodawać własne źródła, kiedy możesz wybrać specyficzne serwery dla specyficznego zapytania. </p>"
 
 #: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:1
 msgid "Dictionary Applet Factory"
@@ -2538,7 +2539,7 @@ msgstr "Usuwa zaznaczone źródło słownika"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:654
 msgid "Edit the currently selected dictionary source"
-msgstr "Edytuje aktualnie zaznaczone źródło słownika"
+msgstr "Edytuje obecnie zaznaczone źródło słownika"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:662
 msgid "Set the font used for printing the definitions"
@@ -2803,7 +2804,7 @@ msgid ""
 " your desktop or of application windows. You can select to copy them to the "
 "system clipboard or save them in Portable Network Graphics (.png) image "
 "format. </p>"
-msgstr "<p> Mate Screenshot jest prostym narzędziem które pozwala Ci na przechwytywanie zrzutów ekranu twojego pulpitu lub okna aplikacji. Możesz wybrać aby skopiować je do schowka systemowego lub zapisać je w formacie graficznym Portable Network Graphics (.png) </p>"
+msgstr "<p> Mate Screenshot jest prostym narzędziem, które pozwala na przechwytywanie zrzutów ekranu pulpitu lub okna aplikacji. Możesz wybrać, aby skopiować je do schowka systemowego lub zapisać je w formacie graficznym Portable Network Graphics (.png) </p>"
 
 #: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
 #: ../mate-screenshot/src/mate-screenshot.c:534
@@ -2957,7 +2958,7 @@ msgstr "Nie można pobrać zrzutu ekranu bieżącego okna."
 #: ../mate-screenshot/src/mate-screenshot.c:913
 #, c-format
 msgid "Screenshot at %s.png"
-msgstr "Zrzut ekranu w %s.png"
+msgstr "Zrzut ekranu z %s.png"
 
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
@@ -2965,7 +2966,7 @@ msgstr "Zrzut ekranu w %s.png"
 #: ../mate-screenshot/src/mate-screenshot.c:920
 #, c-format
 msgid "Screenshot at %s - %d.png"
-msgstr "Zrzut ekranu w %s - %d.png"
+msgstr "Zrzut ekranu z %s - %d.png"
 
 #: ../mate-screenshot/src/mate-screenshot.c:1273
 msgid "Grab a window instead of the entire screen"
@@ -3030,7 +3031,7 @@ msgstr "Wybór katalogu"
 #: ../mate-screenshot/src/screenshot-dialog.c:325
 #: ../mate-screenshot/src/screenshot-save.c:196
 msgid "Screenshot.png"
-msgstr "zrzut_ekranu.png"
+msgstr "Zrzut ekranu.png"
 
 #: ../mate-screenshot/src/screenshot-save.c:57
 #, c-format
