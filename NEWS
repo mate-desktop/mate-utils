@@ -1,5 +1,22 @@
 ### mate-utils 1.19.0
 
+  * Translations update
+  * gtk 3.22: avoid deprecated gdk_screen_get_monitor... functions:
+  * avoid deprecated gdk_screen_width/height
+  * avoid deprecated gdk_screen_get_width/height
+  * screenshot: avoid deprecated GdkDevice objects
+  * dictionary: avoid deprecated GdkDevice objects
+  * avoid deprecated gdk_screen_get_n_monitors
+  * avoid deprecated gdk_screen_make_display_name
+  * gdict-applet: don't use deprecated gtk_show_uri
+  * don't use deprecated gtk_show_uri
+  * avoid deprecated gdk_screen_get_number
+  * Restore Polish translation credits from GNOME
+  * searchtool & logview: avoid deprecated GtkAlignment
+  * mate-screenshot: fix showing busy cursor when saving area screenshot
+  * screenshot: don't translate the timestamp in the filename
+  * mate-dictionary: include correct header to fix occasional FTBFS
+
 ### mate-utils 1.18.0
 
   * NEWS: use consistent, project wide, markdown-like formatting
