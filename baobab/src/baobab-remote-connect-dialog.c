@@ -775,6 +775,8 @@ baobab_remote_connect_dialog_new (GtkWindow *window, GFile *location)
 
 	dialog = gtk_widget_new (BAOBAB_TYPE_REMOTE_CONNECT_DIALOG, NULL);
 
+	gtk_window_set_transient_for (GTK_WINDOW (dialog), window);
+
 	g_signal_connect (dialog, "response",
 			  G_CALLBACK (response_callback),
 			  window);
