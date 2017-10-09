@@ -770,7 +770,8 @@ logview_about (GtkWidget *widget, GtkWidget *window)
   gtk_show_about_dialog (GTK_WINDOW (window),
                          "name",  _("System Log Viewer"),
                          "version", VERSION,
-                         "copyright", "Copyright \xc2\xa9 1998-2008 Free Software Foundation, Inc.",
+                         "copyright", "Copyright \xc2\xa9 1998-2008 Free Software Foundation, Inc.\n"
+                                      "Copyright \xc2\xa9 2011-2017 MATE developers",
                          "license", license_trans,
                          "wrap-license", TRUE,
                          "comments", _("A system log viewer for MATE."),
