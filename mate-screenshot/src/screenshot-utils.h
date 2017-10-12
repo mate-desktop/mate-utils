@@ -29,7 +29,6 @@ typedef void (* SelectAreaCallback) (GdkRectangle *rectangle);
 
 gboolean   screenshot_grab_lock           (void);
 void       screenshot_release_lock        (void);
-gchar     *screenshot_get_window_title    (GdkWindow *win);
 GdkWindow *screenshot_find_current_window (void);
 void       screenshot_select_area_async   (SelectAreaCallback callback);
 GdkPixbuf *screenshot_get_pixbuf          (GdkWindow *win,
