@@ -28,7 +28,6 @@ void        screenshot_save_start        (GdkPixbuf    *pixbuf,
 					  SaveFunction  callback,
 					  gpointer      user_data);
 const char *screenshot_save_get_filename (void);
-gchar      *screenshot_sanitize_filename (const char   *filename);
 
 
 #endif /* __SCREENSHOT_SAVE_H__ */
