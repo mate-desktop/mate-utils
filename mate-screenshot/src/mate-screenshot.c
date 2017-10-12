@@ -93,7 +93,6 @@ static GdkPixbuf *screenshot = NULL;
 
 /* Global variables*/
 static char *last_save_dir = NULL;
-static char *window_title = NULL;
 static char *temporary_file = NULL;
 static gboolean save_immediately = FALSE;
 static GSettings *settings = NULL;
@@ -1030,7 +1029,7 @@ out:
 }
 
 static GdkWindow *
-find_current_window (char **window_title)
+find_current_window (void)
 {
   GdkWindow *window;
 
@@ -1044,15 +1043,6 @@ find_current_window (char **window_title)
 	{
 	  take_window_shot = FALSE;
 	  window = gdk_get_default_root_window ();
-	}
-      else
-	{
-	  gchar *tmp, *sanitized;
-
-	  tmp = screenshot_get_window_title (window);
-	  sanitized = screenshot_sanitize_filename (tmp);
-	  g_free (tmp);
-	  *window_title = sanitized;
 	}
     }
   else
@@ -1075,7 +1065,7 @@ push_check_file_job (GdkRectangle *rectangle)
   job->base_uris[2] = g_strconcat ("file://", g_get_tmp_dir (), NULL);
   job->iteration = 0;
   job->type = TEST_LAST_DIR;
-  job->window = find_current_window (&window_title);
+  job->window = find_current_window ();
 
   if (rectangle != NULL)
     {
