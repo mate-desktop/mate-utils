@@ -17,8 +17,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-03 07:49+0300\n"
-"PO-Revision-Date: 2017-04-03 04:52+0000\n"
+"POT-Creation-Date: 2017-10-19 14:51+0300\n"
+"PO-Revision-Date: 2017-09-19 11:47+0000\n"
 "Last-Translator: monsta <monsta@inbox.ru>\n"
 "Language-Team: Turkish (http://www.transifex.com/mate/MATE/language/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -68,8 +68,8 @@ msgid "S_can Remote Folder..."
 msgstr "_Uzaktaki Dizini Tara..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../logview/src/logview-window.c:816
-#: ../mate-dictionary/src/gdict-window.c:1288
+#: ../logview/src/logview-window.c:821
+#: ../mate-dictionary/src/gdict-window.c:1292
 msgid "_Edit"
 msgstr "_Düzenle"
 
@@ -82,8 +82,8 @@ msgid "_Collapse All"
 msgstr "Hepsini _Katla"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../logview/src/logview-window.c:817
-#: ../mate-dictionary/src/gdict-window.c:1289
+#: ../logview/src/logview-window.c:822
+#: ../mate-dictionary/src/gdict-window.c:1293
 msgid "_View"
 msgstr "_Görüntüle"
 
@@ -100,16 +100,16 @@ msgid "All_ocated Space"
 msgstr "Ayrılmış _Alan"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../logview/src/logview-window.c:819
-#: ../mate-dictionary/src/gdict-applet.c:1173
-#: ../mate-dictionary/src/gdict-window.c:1291
+#: ../logview/src/logview-window.c:824
+#: ../mate-dictionary/src/gdict-applet.c:1189
+#: ../mate-dictionary/src/gdict-window.c:1295
 msgid "_Help"
 msgstr "_Yardım"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../logview/src/logview-window.c:845
-#: ../mate-dictionary/src/gdict-window.c:1341
+#: ../logview/src/logview-window.c:850
+#: ../mate-dictionary/src/gdict-window.c:1345
 msgid "_Contents"
 msgstr "_İçindekiler"
 
@@ -237,12 +237,12 @@ msgstr "ulaşılabilir:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:242 ../baobab/src/baobab.c:299
-#: ../baobab/src/callbacks.c:258
+#: ../baobab/src/callbacks.c:259
 msgid "Calculating percentage bars..."
 msgstr "Yüzde çubuğu hesaplanıyor..."
 
 #: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1306
-#: ../baobab/src/callbacks.c:262
+#: ../baobab/src/callbacks.c:263
 msgid "Ready"
 msgstr "Hazır"
 
@@ -521,7 +521,7 @@ msgid "_Open Folder"
 msgstr "_Dizin Aç"
 
 #: ../baobab/src/baobab-utils.c:368
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1210
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1215
 msgid "Mo_ve to Trash"
 msgstr "Çöp'e _Taşı"
 
@@ -548,7 +548,7 @@ msgstr "Dosya Çöpe taşınamadı"
 msgid "Details: %s"
 msgstr "Ayrıntılar: %s"
 
-#: ../baobab/src/baobab-utils.c:520
+#: ../baobab/src/baobab-utils.c:527
 msgid "There was an error displaying help."
 msgstr "Yardım gösterilirken bir hata oluştu."
 
@@ -575,23 +575,23 @@ msgid ""
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 msgstr "Bu programla beraber GNU Genel Kamu Lisansını da almış olmalısınız; eğer almadıysanız, Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02110-1302, USA adresine yazınız."
 
-#: ../baobab/src/callbacks.c:97
+#: ../baobab/src/callbacks.c:98
 msgid "A graphical tool to analyze disk usage."
 msgstr "Disk kullanımını analiz etmek için grafiksel bir araç."
 
 #. translator credits
-#: ../baobab/src/callbacks.c:103 ../logview/src/logview-about.h:63
+#: ../baobab/src/callbacks.c:104 ../logview/src/logview-about.h:63
 #: ../mate-dictionary/src/gdict-about.c:55
 msgid "translator-credits"
 msgstr "Barış Çiçek <baris@teamforce.name.tr>"
 
-#: ../baobab/src/callbacks.c:201
-#: ../gsearchtool/src/gsearchtool-callbacks.c:508
-#: ../gsearchtool/src/gsearchtool-callbacks.c:848
+#: ../baobab/src/callbacks.c:202
+#: ../gsearchtool/src/gsearchtool-callbacks.c:513
+#: ../gsearchtool/src/gsearchtool-callbacks.c:853
 msgid "The document does not exist."
 msgstr "Belge bulunmuyor."
 
-#: ../baobab/src/callbacks.c:282
+#: ../baobab/src/callbacks.c:283
 msgid "The folder does not exist."
 msgstr "Dizin mevcut değil."
 
@@ -830,12 +830,12 @@ msgstr "Uygulama komut satırında belgeleri kabul etmez"
 msgid "Unrecognized launch option: %d"
 msgstr "Tanınmayan başlatma seçeneği: %d"
 
-#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1365
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1364
 #, c-format
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 msgstr "Bir 'Type=Link' masaüstü girişine belge URI'leri geçilemez"
 
-#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1384
+#: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1383
 #, c-format
 msgid "Not a launchable item"
 msgstr "Başlatılabilir bir öğe değil"
@@ -1223,147 +1223,147 @@ msgstr "- MATE Arama Aracı"
 msgid "Failed to parse command line arguments: %s\n"
 msgstr "Komut satırı argümanları ayrıştırılamadı: %s\n"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:198
+#: ../gsearchtool/src/gsearchtool-callbacks.c:203
 msgid "Could not open help document."
 msgstr "Yardım belgesi açılamadı."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:349
+#: ../gsearchtool/src/gsearchtool-callbacks.c:354
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
 msgstr[0] "%d belgeyi açmak istediğinizden emin misiniz?"
 msgstr[1] "%d belgeyi açmak istediğinizden emin misiniz?"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:354
-#: ../gsearchtool/src/gsearchtool-callbacks.c:551
+#: ../gsearchtool/src/gsearchtool-callbacks.c:359
+#: ../gsearchtool/src/gsearchtool-callbacks.c:556
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
 msgstr[0] "Bu %d farklı pencere açacak."
 msgstr[1] "Bu %d farklı pencere açacak."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:394
+#: ../gsearchtool/src/gsearchtool-callbacks.c:399
 #, c-format
 msgid "Could not open document \"%s\"."
 msgstr "\"%s\" belgesi açılamadı."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:423
+#: ../gsearchtool/src/gsearchtool-callbacks.c:428
 #, c-format
 msgid "Could not open folder \"%s\"."
 msgstr "\"%s\" dizinü açılamadı."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:431
+#: ../gsearchtool/src/gsearchtool-callbacks.c:436
 msgid "The caja file manager is not running."
 msgstr "Caja dosya yöneticisi çalışmıyor."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:523
+#: ../gsearchtool/src/gsearchtool-callbacks.c:528
 msgid "There is no installed viewer capable of displaying the document."
 msgstr "Belgeyi gösterebilecek bir görüntüleyici yüklü değil."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:546
+#: ../gsearchtool/src/gsearchtool-callbacks.c:551
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
 msgstr[0] "%d tane dizinü açmak istediğinizden emin misiniz?"
 msgstr[1] "%d tane dizinü açmak istediğinizden emin misiniz?"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:699
+#: ../gsearchtool/src/gsearchtool-callbacks.c:704
 #, c-format
 msgid "Could not move \"%s\" to trash."
 msgstr "\"%s\" çöpe taşınamadı."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:730
+#: ../gsearchtool/src/gsearchtool-callbacks.c:735
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
 msgstr "\"%s\" kalıcı olarak silinmesini istediğinizden emin misiniz?"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:733
+#: ../gsearchtool/src/gsearchtool-callbacks.c:738
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
 msgstr "Çöp erişilemez.  \"%s\" çöpe taşınamadı."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:772
+#: ../gsearchtool/src/gsearchtool-callbacks.c:777
 #, c-format
 msgid "Could not delete \"%s\"."
 msgstr "\"%s\" silinemedi."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:884
+#: ../gsearchtool/src/gsearchtool-callbacks.c:889
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
 msgstr "\"%s\" silinemedi: %s."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:896
+#: ../gsearchtool/src/gsearchtool-callbacks.c:901
 #, c-format
 msgid "Moving \"%s\" failed: %s."
 msgstr "\"%s\" taşınamadı: %s."
 
 #. Popup menu item: Open
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1024
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1054
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1029
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1059
 msgid "_Open"
 msgstr "_Aç"
 
 #. Popup menu item: Open with (default)
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1079
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1084
 #, c-format
 msgid "_Open with %s"
 msgstr "%s ile _Aç"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1114
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1119
 #, c-format
 msgid "Open with %s"
 msgstr "%s ile Aç"
 
 #. Popup menu item: Open With
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1147
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1152
 msgid "Open Wit_h"
 msgstr "_Birlikte Aç"
 
 #. Popup menu item: Open Containing Folder
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1192
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1197
 msgid "Open Containing _Folder"
 msgstr "İçeren Klas_örü Aç"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1232
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1237
 msgid "_Save Results As..."
 msgstr "Sonuçları _Farklı Kaydet..."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1617
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1622
 msgid "Save Search Results As..."
 msgstr "Arama Sonuçlarını Farklı Kaydet..."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1646
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1651
 msgid "Could not save document."
 msgstr "Belge kaydedilemedi."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1647
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1652
 msgid "You did not select a document name."
 msgstr "Belge ismi seçmediniz."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1677
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1682
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr "\"%s\" belgesi \"%s\" içine kaydedilemedi."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1710
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1715
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr "\"%s\" belgesi zaten mevcut.  Yerine konulmasını ister misiniz?"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1714
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1719
 msgid "If you replace an existing file, its contents will be overwritten."
 msgstr "Eğer mevcut bir dosyanın yerine koyarsanız, onun içeriği üzerine yazılır."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1729
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1734
 #: ../mate-screenshot/src/screenshot-xfer.c:82
 msgid "_Replace"
 msgstr "_Yerine koy"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1778
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1783
 msgid "The document name you selected is a folder."
 msgstr "Seçtiğiniz belge ismi bir dizin."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1814
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1819
 msgid "You may not have write permissions to the document."
 msgstr "Belgeye yazma haklarına sahip değilsiniz."
 
@@ -1399,12 +1399,12 @@ msgstr "%s bağlantısı"
 #. * Feel free to leave out the st, nd, rd and th suffix or
 #. * make some or all of them match.
 #. localizers: tag used to detect the first copy of a file
-#: ../gsearchtool/src/gsearchtool-support.c:1263
+#: ../gsearchtool/src/gsearchtool-support.c:1260
 msgid " (copy)"
 msgstr " (kopya)"
 
 #. localizers: tag used to detect the second copy of a file
-#: ../gsearchtool/src/gsearchtool-support.c:1265
+#: ../gsearchtool/src/gsearchtool-support.c:1262
 msgid " (another copy)"
 msgstr " (diğer kopya)"
 
@@ -1412,36 +1412,36 @@ msgstr " (diğer kopya)"
 #. localizers: tag used to detect the x12th copy of a file
 #. localizers: tag used to detect the x13th copy of a file
 #. localizers: tag used to detect the xxth copy of a file
-#: ../gsearchtool/src/gsearchtool-support.c:1268
-#: ../gsearchtool/src/gsearchtool-support.c:1270
-#: ../gsearchtool/src/gsearchtool-support.c:1272
-#: ../gsearchtool/src/gsearchtool-support.c:1282
+#: ../gsearchtool/src/gsearchtool-support.c:1265
+#: ../gsearchtool/src/gsearchtool-support.c:1267
+#: ../gsearchtool/src/gsearchtool-support.c:1269
+#: ../gsearchtool/src/gsearchtool-support.c:1279
 msgid "th copy)"
 msgstr ". kopya)"
 
 #. localizers: tag used to detect the x1st copy of a file
-#: ../gsearchtool/src/gsearchtool-support.c:1275
+#: ../gsearchtool/src/gsearchtool-support.c:1272
 msgid "st copy)"
 msgstr ". kopya)"
 
 #. localizers: tag used to detect the x2nd copy of a file
-#: ../gsearchtool/src/gsearchtool-support.c:1277
+#: ../gsearchtool/src/gsearchtool-support.c:1274
 msgid "nd copy)"
 msgstr ". kopya)"
 
 #. localizers: tag used to detect the x3rd copy of a file
-#: ../gsearchtool/src/gsearchtool-support.c:1279
+#: ../gsearchtool/src/gsearchtool-support.c:1276
 msgid "rd copy)"
 msgstr ". kopya)"
 
 #. localizers: appended to first file copy
-#: ../gsearchtool/src/gsearchtool-support.c:1296
+#: ../gsearchtool/src/gsearchtool-support.c:1293
 #, c-format
 msgid "%s (copy)%s"
 msgstr "%s (kopya)%s"
 
 #. localizers: appended to second file copy
-#: ../gsearchtool/src/gsearchtool-support.c:1298
+#: ../gsearchtool/src/gsearchtool-support.c:1295
 #, c-format
 msgid "%s (another copy)%s"
 msgstr "%s (diğer kopya)%s"
@@ -1450,43 +1450,43 @@ msgstr "%s (diğer kopya)%s"
 #. localizers: appended to x12th file copy
 #. localizers: appended to x13th file copy
 #. localizers: appended to xxth file copy
-#: ../gsearchtool/src/gsearchtool-support.c:1301
-#: ../gsearchtool/src/gsearchtool-support.c:1303
-#: ../gsearchtool/src/gsearchtool-support.c:1305
-#: ../gsearchtool/src/gsearchtool-support.c:1314
+#: ../gsearchtool/src/gsearchtool-support.c:1298
+#: ../gsearchtool/src/gsearchtool-support.c:1300
+#: ../gsearchtool/src/gsearchtool-support.c:1302
+#: ../gsearchtool/src/gsearchtool-support.c:1311
 #, c-format
 msgid "%s (%dth copy)%s"
 msgstr "%s (%d. kopya)%s"
 
 #. localizers: appended to x1st file copy
-#: ../gsearchtool/src/gsearchtool-support.c:1308
+#: ../gsearchtool/src/gsearchtool-support.c:1305
 #, c-format
 msgid "%s (%dst copy)%s"
 msgstr "%s (%d. kopya)%s"
 
 #. localizers: appended to x2nd file copy
-#: ../gsearchtool/src/gsearchtool-support.c:1310
+#: ../gsearchtool/src/gsearchtool-support.c:1307
 #, c-format
 msgid "%s (%dnd copy)%s"
 msgstr "%s (%d. kopya)%s"
 
 #. localizers: appended to x3rd file copy
-#: ../gsearchtool/src/gsearchtool-support.c:1312
+#: ../gsearchtool/src/gsearchtool-support.c:1309
 #, c-format
 msgid "%s (%drd copy)%s"
 msgstr "%s (%d. kopya)%s"
 
-#: ../gsearchtool/src/gsearchtool-support.c:1359
+#: ../gsearchtool/src/gsearchtool-support.c:1356
 msgid " (invalid Unicode)"
 msgstr " (geçersiz Unikod)"
 
 #. localizers: opening parentheses to match the "th copy)" string
-#: ../gsearchtool/src/gsearchtool-support.c:1448
+#: ../gsearchtool/src/gsearchtool-support.c:1445
 msgid " ("
 msgstr " ("
 
 #. localizers: opening parentheses of the "th copy)" string
-#: ../gsearchtool/src/gsearchtool-support.c:1456
+#: ../gsearchtool/src/gsearchtool-support.c:1453
 #, c-format
 msgid " (%d"
 msgstr " (%d"
@@ -1620,27 +1620,27 @@ msgstr "Yeni filtre ekle"
 msgid "Filters"
 msgstr "Filtreler"
 
-#: ../logview/src/logview-findbar.c:173
+#: ../logview/src/logview-findbar.c:172
 msgid "_Find:"
 msgstr "_Bul:"
 
-#: ../logview/src/logview-findbar.c:188
+#: ../logview/src/logview-findbar.c:187
 msgid "Find Previous"
 msgstr "Öncekini Bul"
 
-#: ../logview/src/logview-findbar.c:191
+#: ../logview/src/logview-findbar.c:190
 msgid "Find previous occurrence of the search string"
 msgstr "Arama dizgisinin önceki yerini bul"
 
-#: ../logview/src/logview-findbar.c:196
+#: ../logview/src/logview-findbar.c:195
 msgid "Find Next"
 msgstr "Sonrakini Bul"
 
-#: ../logview/src/logview-findbar.c:199
+#: ../logview/src/logview-findbar.c:198
 msgid "Find next occurrence of the search string"
 msgstr "Arama dizgisinin bir sonraki yerini bul"
 
-#: ../logview/src/logview-findbar.c:206
+#: ../logview/src/logview-findbar.c:205
 msgid "Clear the search string"
 msgstr "Arama dizgisini temizle"
 
@@ -1680,7 +1680,7 @@ msgstr " - Günlüklere gözat ve izle"
 msgid "Log Viewer"
 msgstr "Günlük Görüntüleyicisi"
 
-#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:767
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:771
 msgid "System Log Viewer"
 msgstr "Sistem Günlük Görüntüleyicisi"
 
@@ -1698,152 +1698,152 @@ msgstr "%d satır (%s) - %s"
 msgid "Open Log"
 msgstr "Günlük Aç"
 
-#: ../logview/src/logview-window.c:364
+#: ../logview/src/logview-window.c:368
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "Yardım gösterilirken bir hata oluştu: %s"
 
-#: ../logview/src/logview-window.c:478
+#: ../logview/src/logview-window.c:482
 msgid "Wrapped"
 msgstr "Katlanmış"
 
-#: ../logview/src/logview-window.c:493
+#: ../logview/src/logview-window.c:497
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1127
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1221
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1255
 msgid "Not found"
 msgstr "Bulunamadı"
 
-#: ../logview/src/logview-window.c:772
+#: ../logview/src/logview-window.c:777
 msgid "A system log viewer for MATE."
 msgstr "MATE için sistem günlük görüntüleyici."
 
-#: ../logview/src/logview-window.c:815
-#: ../mate-dictionary/src/gdict-window.c:1287
+#: ../logview/src/logview-window.c:820
+#: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_File"
 msgstr "_Dosya"
 
-#: ../logview/src/logview-window.c:818
+#: ../logview/src/logview-window.c:823
 msgid "_Filters"
 msgstr "_Filtreler"
 
-#: ../logview/src/logview-window.c:821
+#: ../logview/src/logview-window.c:826
 msgid "_Open..."
 msgstr "_Aç..."
 
-#: ../logview/src/logview-window.c:821
+#: ../logview/src/logview-window.c:826
 msgid "Open a log from file"
 msgstr "Dosyadan günlük aç"
 
-#: ../logview/src/logview-window.c:823
+#: ../logview/src/logview-window.c:828
 msgid "_Close"
 msgstr "_Kapat"
 
-#: ../logview/src/logview-window.c:823
+#: ../logview/src/logview-window.c:828
 msgid "Close this log"
 msgstr "Günlüğü kapat"
 
-#: ../logview/src/logview-window.c:825
+#: ../logview/src/logview-window.c:830
 msgid "_Quit"
 msgstr "Çı_k"
 
-#: ../logview/src/logview-window.c:825
+#: ../logview/src/logview-window.c:830
 msgid "Quit the log viewer"
 msgstr "Günlük görüntüleyicisinden çık"
 
-#: ../logview/src/logview-window.c:828
+#: ../logview/src/logview-window.c:833
 msgid "_Copy"
 msgstr "_Kopyala"
 
-#: ../logview/src/logview-window.c:828
+#: ../logview/src/logview-window.c:833
 msgid "Copy the selection"
 msgstr "Seçimi kopyala"
 
-#: ../logview/src/logview-window.c:830
-#: ../mate-dictionary/src/gdict-window.c:1308
+#: ../logview/src/logview-window.c:835
+#: ../mate-dictionary/src/gdict-window.c:1312
 msgid "Select _All"
 msgstr "_Tümünü Seç"
 
-#: ../logview/src/logview-window.c:830
+#: ../logview/src/logview-window.c:835
 msgid "Select the entire log"
 msgstr "Tüm günlüğü seç"
 
-#: ../logview/src/logview-window.c:832
+#: ../logview/src/logview-window.c:837
 msgid "_Find..."
 msgstr "_Bul..."
 
-#: ../logview/src/logview-window.c:832
+#: ../logview/src/logview-window.c:837
 msgid "Find a word or phrase in the log"
 msgstr "Günlük içinde bir kelime ya da öbek ara"
 
-#: ../logview/src/logview-window.c:835
+#: ../logview/src/logview-window.c:840
 msgid "Bigger text size"
 msgstr "Daha büyük metin boyutu"
 
-#: ../logview/src/logview-window.c:837
+#: ../logview/src/logview-window.c:842
 msgid "Smaller text size"
 msgstr "Daha küçük metin boyutu"
 
-#: ../logview/src/logview-window.c:839
+#: ../logview/src/logview-window.c:844
 msgid "Normal text size"
 msgstr "Normal metin boyutu"
 
-#: ../logview/src/logview-window.c:842
+#: ../logview/src/logview-window.c:847
 msgid "Manage Filters"
 msgstr "Filtreleri Yönet"
 
-#: ../logview/src/logview-window.c:842
+#: ../logview/src/logview-window.c:847
 msgid "Manage filters"
 msgstr "Filtreleri yönet"
 
-#: ../logview/src/logview-window.c:845
+#: ../logview/src/logview-window.c:850
 msgid "Open the help contents for the log viewer"
 msgstr "Günlük görüntüleyici için yardım dosyasını aç"
 
-#: ../logview/src/logview-window.c:847
-#: ../mate-dictionary/src/gdict-applet.c:1176
-#: ../mate-dictionary/src/gdict-window.c:1343
+#: ../logview/src/logview-window.c:852
+#: ../mate-dictionary/src/gdict-applet.c:1192
+#: ../mate-dictionary/src/gdict-window.c:1347
 msgid "_About"
 msgstr "_Hakkında"
 
-#: ../logview/src/logview-window.c:847
+#: ../logview/src/logview-window.c:852
 msgid "Show the about dialog for the log viewer"
 msgstr "Günlük görüntüleyici için hakkında penceresini göster"
 
-#: ../logview/src/logview-window.c:852
+#: ../logview/src/logview-window.c:857
 msgid "_Statusbar"
 msgstr "_Durum Çubuğu"
 
-#: ../logview/src/logview-window.c:852
+#: ../logview/src/logview-window.c:857
 msgid "Show Status Bar"
 msgstr "Durum Çubuğunu Göster"
 
-#: ../logview/src/logview-window.c:854
+#: ../logview/src/logview-window.c:859
 msgid "Side _Pane"
 msgstr "_Kenar Çubuğu"
 
-#: ../logview/src/logview-window.c:854
+#: ../logview/src/logview-window.c:859
 msgid "Show Side Pane"
 msgstr "Kenar Çubuğunu Göster"
 
-#: ../logview/src/logview-window.c:856
+#: ../logview/src/logview-window.c:861
 msgid "Show matches only"
 msgstr "Sadece eşleşmeler"
 
-#: ../logview/src/logview-window.c:856
+#: ../logview/src/logview-window.c:861
 msgid "Only show lines that match one of the given filters"
 msgstr "Sadece bir ya da daha fazla girilen filtre ile eşleşen satırları göster"
 
-#: ../logview/src/logview-window.c:988
+#: ../logview/src/logview-window.c:993
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr "\"%s\" unsurundan okuma yapılamadı"
 
-#: ../logview/src/logview-window.c:1416
+#: ../logview/src/logview-window.c:1421
 msgid "Version: "
 msgstr "Sürüm: "
 
-#: ../logview/src/logview-window.c:1524
+#: ../logview/src/logview-window.c:1529
 msgid "Could not open the following files:"
 msgstr "Aşağıdaki dosyalar açılamadı:"
 
@@ -2102,21 +2102,21 @@ msgstr "Ö_nceki"
 msgid "_Next"
 msgstr "_Sonraki"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2485
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2494
 msgid "Error while looking up definition"
 msgstr "Tanım aranırken hata"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2527
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2536
 #: ../mate-dictionary/libgdict/gdict-speller.c:731
 msgid "Another search is in progress"
 msgstr "Başka bir arama halen sürmekte"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2528
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2537
 #: ../mate-dictionary/libgdict/gdict-speller.c:732
 msgid "Please wait until the current search ends."
 msgstr "Lütfen geçerli arama bitene kadar bekleyin."
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2567
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2576
 msgid "Error while retrieving the definition"
 msgstr "Tanım alınırken hata"
 
@@ -2274,15 +2274,15 @@ msgstr "GDict Seçenekleri"
 msgid "Show GDict Options"
 msgstr "GDict Seçeneklerini Göster"
 
-#: ../mate-dictionary/src/gdict-about.c:57
-#: ../mate-dictionary/src/gdict-applet.c:575
+#: ../mate-dictionary/src/gdict-about.c:58
+#: ../mate-dictionary/src/gdict-applet.c:587
 msgid "Look up words in dictionaries"
 msgstr "Kelimeleri sözlüklerde ara"
 
-#: ../mate-dictionary/src/gdict-about.c:78
+#: ../mate-dictionary/src/gdict-about.c:79
 #: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:607
-#: ../mate-dictionary/src/gdict-window.c:1896
+#: ../mate-dictionary/src/gdict-window.c:1900
 msgid "Dictionary"
 msgstr "Sözlük"
 
@@ -2359,130 +2359,130 @@ msgstr "db"
 msgid " - Look up words in dictionaries"
 msgstr " - Kelimeleri sözlüklerde ara"
 
-#: ../mate-dictionary/src/gdict-applet.c:207
+#: ../mate-dictionary/src/gdict-applet.c:219
 #: ../mate-dictionary/src/gdict-window.c:964
 msgid "Save a Copy"
 msgstr "Bir Kopya Kaydet"
 
-#: ../mate-dictionary/src/gdict-applet.c:217
+#: ../mate-dictionary/src/gdict-applet.c:229
 #: ../mate-dictionary/src/gdict-window.c:974
 msgid "Untitled document"
 msgstr "İsimsiz doküman"
 
-#: ../mate-dictionary/src/gdict-applet.c:238
+#: ../mate-dictionary/src/gdict-applet.c:250
 #: ../mate-dictionary/src/gdict-window.c:995
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "'%s' dosyasına yazılırken hata"
 
-#: ../mate-dictionary/src/gdict-applet.c:358
+#: ../mate-dictionary/src/gdict-applet.c:370
 msgid "Clear the definitions found"
 msgstr "Bulunan tanımları temizle"
 
-#: ../mate-dictionary/src/gdict-applet.c:360
+#: ../mate-dictionary/src/gdict-applet.c:372
 msgid "Clear definition"
 msgstr "Tanımı temizle"
 
-#: ../mate-dictionary/src/gdict-applet.c:361
+#: ../mate-dictionary/src/gdict-applet.c:373
 msgid "Clear the text of the definition"
 msgstr "Tanımın metnini temizle"
 
-#: ../mate-dictionary/src/gdict-applet.c:368
+#: ../mate-dictionary/src/gdict-applet.c:380
 msgid "Print the definitions found"
 msgstr "Bulunan tanımları yazdır"
 
-#: ../mate-dictionary/src/gdict-applet.c:370
+#: ../mate-dictionary/src/gdict-applet.c:382
 msgid "Print definition"
 msgstr "Tanımı yazdır"
 
-#: ../mate-dictionary/src/gdict-applet.c:371
+#: ../mate-dictionary/src/gdict-applet.c:383
 msgid "Print the text of the definition"
 msgstr "Tanımın metnini yazdır"
 
-#: ../mate-dictionary/src/gdict-applet.c:378
+#: ../mate-dictionary/src/gdict-applet.c:390
 msgid "Save the definitions found"
 msgstr "Bulunan tanımları kaydet"
 
-#: ../mate-dictionary/src/gdict-applet.c:380
+#: ../mate-dictionary/src/gdict-applet.c:392
 msgid "Save definition"
 msgstr "Tanımı kaydet"
 
-#: ../mate-dictionary/src/gdict-applet.c:381
+#: ../mate-dictionary/src/gdict-applet.c:393
 msgid "Save the text of the definition to a file"
 msgstr "Tanım metnini bir dosyaya kaydet"
 
-#: ../mate-dictionary/src/gdict-applet.c:518
+#: ../mate-dictionary/src/gdict-applet.c:530
 msgid "Click to view the dictionary window"
 msgstr "Sözlük penceresini görmek için tıklayın"
 
-#: ../mate-dictionary/src/gdict-applet.c:520
+#: ../mate-dictionary/src/gdict-applet.c:532
 msgid "Toggle dictionary window"
 msgstr "Sözlük penceresi seç"
 
-#: ../mate-dictionary/src/gdict-applet.c:521
+#: ../mate-dictionary/src/gdict-applet.c:533
 msgid "Show or hide the definition window"
 msgstr "Tanım penceresini göster ya da gizle"
 
-#: ../mate-dictionary/src/gdict-applet.c:572
+#: ../mate-dictionary/src/gdict-applet.c:584
 msgid "Type the word you want to look up"
 msgstr "Aramak istediğiniz kelimeyi yazın"
 
-#: ../mate-dictionary/src/gdict-applet.c:574
+#: ../mate-dictionary/src/gdict-applet.c:586
 msgid "Dictionary entry"
 msgstr "Sözlük girişi"
 
-#: ../mate-dictionary/src/gdict-applet.c:703
+#: ../mate-dictionary/src/gdict-applet.c:715
 #: ../mate-dictionary/src/gdict-window.c:1106
 msgid "Dictionary Preferences"
 msgstr "Sözlük Tercihleri"
 
-#: ../mate-dictionary/src/gdict-applet.c:727
-#: ../mate-dictionary/src/gdict-pref-dialog.c:495
-#: ../mate-dictionary/src/gdict-source-dialog.c:478
-#: ../mate-dictionary/src/gdict-window.c:1253
+#: ../mate-dictionary/src/gdict-applet.c:743
+#: ../mate-dictionary/src/gdict-pref-dialog.c:499
+#: ../mate-dictionary/src/gdict-source-dialog.c:482
+#: ../mate-dictionary/src/gdict-window.c:1257
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "Yardım gösterilirken bir hata oluştu"
 
-#: ../mate-dictionary/src/gdict-applet.c:866
+#: ../mate-dictionary/src/gdict-applet.c:882
 #: ../mate-dictionary/src/gdict-window.c:522
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "'%s' isminde ulaşılabilir sözlük kaynağı yok"
 
-#: ../mate-dictionary/src/gdict-applet.c:870
+#: ../mate-dictionary/src/gdict-applet.c:886
 #: ../mate-dictionary/src/gdict-window.c:526
 msgid "Unable to find dictionary source"
 msgstr "Sözlük kaynağı bulunamadı"
 
-#: ../mate-dictionary/src/gdict-applet.c:886
+#: ../mate-dictionary/src/gdict-applet.c:902
 #: ../mate-dictionary/src/gdict-window.c:542
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "'%s' kaynağı için ulaşılabilir bağlam yok"
 
-#: ../mate-dictionary/src/gdict-applet.c:890
+#: ../mate-dictionary/src/gdict-applet.c:906
 #: ../mate-dictionary/src/gdict-window.c:546
 msgid "Unable to create a context"
 msgstr "Bir bağlam oluşturulamadı"
 
-#: ../mate-dictionary/src/gdict-applet.c:1158
+#: ../mate-dictionary/src/gdict-applet.c:1174
 msgid "_Look Up Selected Text"
 msgstr "Seçi_li Metni Ara"
 
-#: ../mate-dictionary/src/gdict-applet.c:1161
+#: ../mate-dictionary/src/gdict-applet.c:1177
 msgid "Cl_ear"
 msgstr "T_emizle"
 
-#: ../mate-dictionary/src/gdict-applet.c:1164
+#: ../mate-dictionary/src/gdict-applet.c:1180
 msgid "_Print"
 msgstr "_Yazdır"
 
-#: ../mate-dictionary/src/gdict-applet.c:1167
+#: ../mate-dictionary/src/gdict-applet.c:1183
 msgid "_Save"
 msgstr "_Kaydet"
 
-#: ../mate-dictionary/src/gdict-applet.c:1170
+#: ../mate-dictionary/src/gdict-applet.c:1186
 msgid "Preferences"
 msgstr "Tercihler"
 
@@ -2520,19 +2520,19 @@ msgstr "Bu, sözlük kaynağını kalıcı olarak listeden kaldıracaktır."
 msgid "Unable to remove source '%s'"
 msgstr "'%s' kaynağı kaldırılamıyor"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:642
+#: ../mate-dictionary/src/gdict-pref-dialog.c:646
 msgid "Add a new dictionary source"
 msgstr "Yeni bir sözlük kaynağı ekle"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:648
+#: ../mate-dictionary/src/gdict-pref-dialog.c:652
 msgid "Remove the currently selected dictionary source"
 msgstr "Geçerli olarak seçili sözlük kaynağını kaldır"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:654
+#: ../mate-dictionary/src/gdict-pref-dialog.c:658
 msgid "Edit the currently selected dictionary source"
 msgstr "Geçerli olarak seçili sözlük kaynağını düzenle"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:662
+#: ../mate-dictionary/src/gdict-pref-dialog.c:666
 msgid "Set the font used for printing the definitions"
 msgstr "Tanımları yazdırmak için kullanılacak yazıtipini belirtin"
 
@@ -2574,171 +2574,171 @@ msgstr[1] "%d tanım bulundu"
 msgid "%s - Dictionary"
 msgstr "%s - Sözlük"
 
-#: ../mate-dictionary/src/gdict-window.c:1290
+#: ../mate-dictionary/src/gdict-window.c:1294
 msgid "_Go"
 msgstr "_Git"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1294
+#: ../mate-dictionary/src/gdict-window.c:1298
 msgid "_New"
 msgstr "_Yeni"
 
-#: ../mate-dictionary/src/gdict-window.c:1295
+#: ../mate-dictionary/src/gdict-window.c:1299
 msgid "New look up"
 msgstr "Yeni arama"
 
-#: ../mate-dictionary/src/gdict-window.c:1296
+#: ../mate-dictionary/src/gdict-window.c:1300
 msgid "_Save a Copy..."
 msgstr "_Bir Kopya Kaydet..."
 
-#: ../mate-dictionary/src/gdict-window.c:1298
+#: ../mate-dictionary/src/gdict-window.c:1302
 msgid "P_review..."
 msgstr "Ö_nizleme..."
 
-#: ../mate-dictionary/src/gdict-window.c:1299
+#: ../mate-dictionary/src/gdict-window.c:1303
 msgid "Preview this document"
 msgstr "Bu belgeyi önizle"
 
-#: ../mate-dictionary/src/gdict-window.c:1300
+#: ../mate-dictionary/src/gdict-window.c:1304
 msgid "_Print..."
 msgstr "_Yazdır..."
 
-#: ../mate-dictionary/src/gdict-window.c:1301
+#: ../mate-dictionary/src/gdict-window.c:1305
 msgid "Print this document"
 msgstr "Bu belgeyi yazdır"
 
-#: ../mate-dictionary/src/gdict-window.c:1311
+#: ../mate-dictionary/src/gdict-window.c:1315
 msgid "Find a word or phrase in the document"
 msgstr "Doküman içinde kelime ya da deyim ara"
 
-#: ../mate-dictionary/src/gdict-window.c:1313
+#: ../mate-dictionary/src/gdict-window.c:1317
 msgid "Find Ne_xt"
 msgstr "_Sonrakini Bul"
 
-#: ../mate-dictionary/src/gdict-window.c:1315
+#: ../mate-dictionary/src/gdict-window.c:1319
 msgid "Find Pre_vious"
 msgstr "Ö_ncekini Bul"
 
-#: ../mate-dictionary/src/gdict-window.c:1317
+#: ../mate-dictionary/src/gdict-window.c:1321
 msgid "_Preferences"
 msgstr "_Tercihler"
 
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1321
+#: ../mate-dictionary/src/gdict-window.c:1325
 msgid "_Previous Definition"
 msgstr "Ön_ceki Tanım"
 
-#: ../mate-dictionary/src/gdict-window.c:1322
+#: ../mate-dictionary/src/gdict-window.c:1326
 msgid "Go to the previous definition"
 msgstr "Önceki tanıma git"
 
-#: ../mate-dictionary/src/gdict-window.c:1323
+#: ../mate-dictionary/src/gdict-window.c:1327
 msgid "_Next Definition"
 msgstr "_Sonraki Tanım"
 
-#: ../mate-dictionary/src/gdict-window.c:1324
+#: ../mate-dictionary/src/gdict-window.c:1328
 msgid "Go to the next definition"
 msgstr "Sonraki tanıma git"
 
-#: ../mate-dictionary/src/gdict-window.c:1325
+#: ../mate-dictionary/src/gdict-window.c:1329
 msgid "_First Definition"
 msgstr "İ_lk tanım"
 
-#: ../mate-dictionary/src/gdict-window.c:1326
+#: ../mate-dictionary/src/gdict-window.c:1330
 msgid "Go to the first definition"
 msgstr "İlk tanıma git"
 
-#: ../mate-dictionary/src/gdict-window.c:1327
+#: ../mate-dictionary/src/gdict-window.c:1331
 msgid "_Last Definition"
 msgstr "S_on Tanım"
 
-#: ../mate-dictionary/src/gdict-window.c:1328
+#: ../mate-dictionary/src/gdict-window.c:1332
 msgid "Go to the last definition"
 msgstr "Son tanıma git"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1331
+#: ../mate-dictionary/src/gdict-window.c:1335
 msgid "Similar _Words"
 msgstr "Benzer _Kelimeler"
 
-#: ../mate-dictionary/src/gdict-window.c:1333
+#: ../mate-dictionary/src/gdict-window.c:1337
 msgid "Dictionary Sources"
 msgstr "Sözlük Kaynakları"
 
-#: ../mate-dictionary/src/gdict-window.c:1335
+#: ../mate-dictionary/src/gdict-window.c:1339
 msgid "Available _Databases"
 msgstr "Ulaşılabilir _Veri tabanları"
 
-#: ../mate-dictionary/src/gdict-window.c:1337
+#: ../mate-dictionary/src/gdict-window.c:1341
 msgid "Available St_rategies"
 msgstr "Ulaşılabilir _Stratejiler"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1354
+#: ../mate-dictionary/src/gdict-window.c:1358
 msgid "_Sidebar"
 msgstr "_Kenar çubuğu"
 
-#: ../mate-dictionary/src/gdict-window.c:1356
+#: ../mate-dictionary/src/gdict-window.c:1360
 msgid "S_tatusbar"
 msgstr "_Durum çubuğu"
 
-#: ../mate-dictionary/src/gdict-window.c:1421
+#: ../mate-dictionary/src/gdict-window.c:1425
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "Sözlük kaynağı `%s' seçildi"
 
-#: ../mate-dictionary/src/gdict-window.c:1442
+#: ../mate-dictionary/src/gdict-window.c:1446
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "Strateji `%s' seçildi"
 
-#: ../mate-dictionary/src/gdict-window.c:1462
+#: ../mate-dictionary/src/gdict-window.c:1466
 #, c-format
 msgid "Database `%s' selected"
 msgstr "Veritabanı `%s' seçildi"
 
-#: ../mate-dictionary/src/gdict-window.c:1482
+#: ../mate-dictionary/src/gdict-window.c:1486
 #, c-format
 msgid "Word `%s' selected"
 msgstr "`%s' kelimesi seçildi"
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1507
+#: ../mate-dictionary/src/gdict-window.c:1511
 msgid "Double-click on the word to look up"
 msgstr "Aranacak kelimenin üzerine çift tıklayın"
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1513
+#: ../mate-dictionary/src/gdict-window.c:1517
 msgid "Double-click on the matching strategy to use"
 msgstr "Kullanılacak eşleşen stratejinin üstüne çift tıklayın"
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1518
+#: ../mate-dictionary/src/gdict-window.c:1522
 msgid "Double-click on the source to use"
 msgstr "Kullanmak için kaynağın üzerine çift tıklayın"
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1527
+#: ../mate-dictionary/src/gdict-window.c:1531
 msgid "Double-click on the database to use"
 msgstr "Kullanılacak veri tabanının üstüne çift tıklayın"
 
-#: ../mate-dictionary/src/gdict-window.c:1702
+#: ../mate-dictionary/src/gdict-window.c:1706
 msgid "Look _up:"
 msgstr "A_ra:"
 
-#: ../mate-dictionary/src/gdict-window.c:1777
+#: ../mate-dictionary/src/gdict-window.c:1781
 msgid "Similar words"
 msgstr "Benzer kelimeler"
 
-#: ../mate-dictionary/src/gdict-window.c:1790
+#: ../mate-dictionary/src/gdict-window.c:1794
 msgid "Available dictionaries"
 msgstr "Ulaşılabilir sözlükler"
 
-#: ../mate-dictionary/src/gdict-window.c:1808
+#: ../mate-dictionary/src/gdict-window.c:1812
 msgid "Available strategies"
 msgstr "Ulaşılabilir stratejiler"
 
-#: ../mate-dictionary/src/gdict-window.c:1824
+#: ../mate-dictionary/src/gdict-window.c:1828
 msgid "Dictionary sources"
 msgstr "Sözlük kaynakları"
 
@@ -2796,8 +2796,8 @@ msgid ""
 msgstr "<p> MATE Ekran Fotoğrafı masaüstünüzün ya da uygulama pencerelerinin fotoğrafını çekmenize imkân sağlayan sade bir programdır. Fotoğrafları sistem panosuna kopyalamayı ya da Taşınabilir Ağ Grafiği (Portable Network Graphics, .png) biçiminde kaydetmeyi seçebilirsiniz. </p>"
 
 #: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
-#: ../mate-screenshot/src/mate-screenshot.c:534
-#: ../mate-screenshot/src/mate-screenshot.c:542
+#: ../mate-screenshot/src/mate-screenshot.c:540
+#: ../mate-screenshot/src/mate-screenshot.c:548
 msgid "Take Screenshot"
 msgstr "Ekran Görüntüsü Al"
 
@@ -2859,74 +2859,74 @@ msgid ""
 "\"none\", and \"border\"."
 msgstr "Kenarlıkların dışına uygulanacak efekt. Geçerli değerler \"shadow\" (gölge), \"none\" (etki yok), \"border\" (kenarlık)."
 
-#: ../mate-screenshot/src/mate-screenshot.c:133
+#: ../mate-screenshot/src/mate-screenshot.c:139
 msgid "Error loading the help page"
 msgstr "Yardım sayfası yüklenirken hata"
 
-#: ../mate-screenshot/src/mate-screenshot.c:245
+#: ../mate-screenshot/src/mate-screenshot.c:251
 msgid "None"
 msgstr "Hiçbiri"
 
-#: ../mate-screenshot/src/mate-screenshot.c:246
+#: ../mate-screenshot/src/mate-screenshot.c:252
 msgid "Drop shadow"
 msgstr "Gölge düşür"
 
-#: ../mate-screenshot/src/mate-screenshot.c:247
+#: ../mate-screenshot/src/mate-screenshot.c:253
 msgid "Border"
 msgstr "Köşelik"
 
 #. * Include pointer *
-#: ../mate-screenshot/src/mate-screenshot.c:352
+#: ../mate-screenshot/src/mate-screenshot.c:358
 msgid "Include _pointer"
 msgstr "_Belirteç içer"
 
 #. * Include window border *
-#: ../mate-screenshot/src/mate-screenshot.c:361
+#: ../mate-screenshot/src/mate-screenshot.c:367
 msgid "Include the window _border"
 msgstr "Pencere _kenarlığı içer"
 
-#: ../mate-screenshot/src/mate-screenshot.c:376
+#: ../mate-screenshot/src/mate-screenshot.c:382
 msgid "Apply _effect:"
 msgstr "Efekt _uygula:"
 
-#: ../mate-screenshot/src/mate-screenshot.c:444
+#: ../mate-screenshot/src/mate-screenshot.c:450
 msgid "Grab the whole _desktop"
 msgstr "Tüm _masaüstünü yakala"
 
-#: ../mate-screenshot/src/mate-screenshot.c:456
+#: ../mate-screenshot/src/mate-screenshot.c:462
 msgid "Grab the current _window"
 msgstr "Mevcut _pencereyi yakala"
 
-#: ../mate-screenshot/src/mate-screenshot.c:468
+#: ../mate-screenshot/src/mate-screenshot.c:474
 msgid "Select _area to grab"
 msgstr "Yakalamak için _alan seçin"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:486
+#: ../mate-screenshot/src/mate-screenshot.c:492
 msgid "Grab _after a delay of"
 msgstr "Yakalamadan ö_nce beklenecek süre"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:511
-#: ../mate-screenshot/src/mate-screenshot.c:1277
+#: ../mate-screenshot/src/mate-screenshot.c:517
+#: ../mate-screenshot/src/mate-screenshot.c:1274
 msgid "seconds"
 msgstr "saniye"
 
-#: ../mate-screenshot/src/mate-screenshot.c:543
+#: ../mate-screenshot/src/mate-screenshot.c:549
 msgid "Effects"
 msgstr "Efektler"
 
-#: ../mate-screenshot/src/mate-screenshot.c:547
+#: ../mate-screenshot/src/mate-screenshot.c:553
 msgid "Take _Screenshot"
 msgstr "Ekran Görüntüsü _Al"
 
-#: ../mate-screenshot/src/mate-screenshot.c:666
+#: ../mate-screenshot/src/mate-screenshot.c:672
 msgid "Error while saving screenshot"
 msgstr "Ekran görüntüsü kaydedilirken hata"
 
-#: ../mate-screenshot/src/mate-screenshot.c:669
+#: ../mate-screenshot/src/mate-screenshot.c:675
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -2934,17 +2934,17 @@ msgid ""
 " Please choose another location and retry."
 msgstr "Ekran görüntüsü %s konumuna kaydedilemiyor.\n Hatası %s\n Lütfen başka bir konum seçin ve tekrar deneyin."
 
-#: ../mate-screenshot/src/mate-screenshot.c:801
+#: ../mate-screenshot/src/mate-screenshot.c:807
 msgid "Screenshot taken"
 msgstr "Ekran görüntüsü alındı"
 
-#: ../mate-screenshot/src/mate-screenshot.c:856
+#: ../mate-screenshot/src/mate-screenshot.c:862
 msgid "Unable to take a screenshot of the current window"
 msgstr "Mevcut pencerenin ekran görüntüsü alınamadı"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/src/mate-screenshot.c:913
+#: ../mate-screenshot/src/mate-screenshot.c:919
 #, c-format
 msgid "Screenshot at %s.png"
 msgstr "Ekran Görüntüsü %s.png"
@@ -2952,52 +2952,52 @@ msgstr "Ekran Görüntüsü %s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/src/mate-screenshot.c:920
+#: ../mate-screenshot/src/mate-screenshot.c:926
 #, c-format
 msgid "Screenshot at %s - %d.png"
 msgstr "Ekran Görüntüsü %s - %d.png"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1273
+#: ../mate-screenshot/src/mate-screenshot.c:1270
 msgid "Grab a window instead of the entire screen"
 msgstr "Tüm ekran yerine bir pencere yakala"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1274
+#: ../mate-screenshot/src/mate-screenshot.c:1271
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Tüm ekran yerine ekranın bir alanını yakala"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1275
+#: ../mate-screenshot/src/mate-screenshot.c:1272
 msgid "Include the window border with the screenshot"
 msgstr "Ekran görüntüsüyle birlikte pencere kenarlıklarını da kapsa"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1276
+#: ../mate-screenshot/src/mate-screenshot.c:1273
 msgid "Remove the window border from the screenshot"
 msgstr "Ekran görüntüsünden pencere kenarlıklarını çıkar"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1277
+#: ../mate-screenshot/src/mate-screenshot.c:1274
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Belirtilen süreden sonra [saniye olarak] ekran görüntüsü al"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1278
+#: ../mate-screenshot/src/mate-screenshot.c:1275
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Çerçeveye eklenecek efekt (gölge, kenarlık ya da hiçbiri)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1278
+#: ../mate-screenshot/src/mate-screenshot.c:1275
 msgid "effect"
 msgstr "Efekt"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1279
+#: ../mate-screenshot/src/mate-screenshot.c:1276
 msgid "Interactively set options"
 msgstr "Seçenekleri etkileşimli olarak ata"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1280
+#: ../mate-screenshot/src/mate-screenshot.c:1277
 msgid "Print version information and exit"
 msgstr "Sürüm bilgisini yazdır ve çık"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1289
+#: ../mate-screenshot/src/mate-screenshot.c:1286
 msgid "Take a picture of the screen"
 msgstr "Ekranın resmini çek"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1312
+#: ../mate-screenshot/src/mate-screenshot.c:1309
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
@@ -3038,11 +3038,6 @@ msgstr "Saklama alt süreci beklenmedik bir şekilde sonlandı. Ekran görüntü
 #: ../mate-screenshot/src/screenshot-save.c:223
 msgid "Unknown error saving screenshot to disk"
 msgstr "Ekran görüntüsü kaydedilirken bilinmeyen hata"
-
-#. TODO: maybe we should also look at WM_NAME and WM_CLASS?
-#: ../mate-screenshot/src/screenshot-utils.c:899
-msgid "Untitled Window"
-msgstr "İsimsiz Pencere"
 
 #: ../mate-screenshot/src/screenshot-xfer.c:72
 msgid "File already exists"
