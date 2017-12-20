@@ -22,6 +22,7 @@
 #include "screenshot-utils.h"
 
 #include <X11/Xatom.h>
+#include <gdk/gdkx.h>
 #include <gdk/gdkkeysyms.h>
 #include <gtk/gtk.h>
 #include <glib.h>
@@ -634,9 +635,8 @@ mask_monitors (GdkPixbuf *pixbuf, GdkWindow *root_window)
 
   rect.x = 0;
   rect.y = 0;
-
-  gdk_window_get_geometry (gdk_screen_get_root_window (screen), NULL, NULL,
-                           &rect.width, &rect.height);
+  rect.width = WidthOfScreen (gdk_x11_screen_get_xscreen (screen));
+  rect.height = HeightOfScreen (gdk_x11_screen_get_xscreen (screen));
 
   invisible_region = cairo_region_create_rectangle (&rect);
   cairo_region_subtract (invisible_region, region_with_monitors);
@@ -658,10 +658,6 @@ screenshot_get_pixbuf (GdkWindow    *window,
   GdkPixbuf *screenshot;
   gint x_real_orig, y_real_orig, x_orig, y_orig;
   gint width, real_width, height, real_height;
-  gint sc_width, sc_height;
-
-  gdk_window_get_geometry (gdk_screen_get_root_window (gdk_screen_get_default()),
-                           NULL, NULL, &sc_width, &sc_height);
 
   /* If the screenshot should include the border, we look for the WM window. */
 
@@ -702,11 +698,11 @@ screenshot_get_pixbuf (GdkWindow    *window,
       y_orig = 0;
     }
 
-  if (x_orig + width > sc_width)
-    width = sc_width - x_orig;
+  if (x_orig + width > WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())))
+    width = WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())) - x_orig;
 
-  if (y_orig + height > sc_height)
-    height = sc_height - y_orig;
+  if (y_orig + height > HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())))
+    height = HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())) - y_orig;
 
   if (rectangle)
     {
@@ -774,11 +770,11 @@ screenshot_get_pixbuf (GdkWindow    *window,
                   rec_height += y_real_orig;
                 }
 
-              if (x_orig + rec_x + rec_width > sc_width)
-                rec_width = sc_width - x_orig - rec_x;
+              if (x_orig + rec_x + rec_width > WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())))
+                rec_width = WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())) - x_orig - rec_x;
 
-              if (y_orig + rec_y + rec_height > sc_height)
-                rec_height = sc_height - y_orig - rec_y;
+              if (y_orig + rec_y + rec_height > HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())))
+                rec_height = HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())) - y_orig - rec_y;
 
               for (y = rec_y; y < rec_y + rec_height; y++)
                 {

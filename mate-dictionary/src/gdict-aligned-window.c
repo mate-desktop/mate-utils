@@ -29,6 +29,7 @@
 #include <string.h>
 
 #include <gtk/gtk.h>
+#include <gdk/gdkx.h>
 
 #include "gdict-aligned-window.h"
 
@@ -157,7 +158,6 @@ gdict_aligned_window_position (GdictAlignedWindow *window)
   GdictAlignedWindowPrivate *priv;
   GtkWidget *align_widget;
   gint our_width, our_height;
-  gint sc_width, sc_height;
   gint entry_x, entry_y, entry_width, entry_height;
   gint x, y;
   GdkGravity gravity = GDK_GRAVITY_NORTH_WEST;
@@ -190,10 +190,7 @@ gdict_aligned_window_position (GdictAlignedWindow *window)
   			 &entry_y);
   gdk_window_get_geometry (gdk_window, NULL, NULL, &entry_width, &entry_height);
 
-  gdk_window_get_geometry (gdk_screen_get_root_window (gdk_screen_get_default()),
-                           NULL, NULL, &sc_width, &sc_height);
-
-  if (entry_x + our_width < sc_width)
+  if (entry_x + our_width < WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())))
     x = entry_x + 1;
   else
     {
@@ -202,7 +199,7 @@ gdict_aligned_window_position (GdictAlignedWindow *window)
       gravity = GDK_GRAVITY_NORTH_EAST;
     }
   
-  if (entry_y + entry_height + our_height < sc_height)
+  if (entry_y + entry_height + our_height < HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())))
     y = entry_y + entry_height - 1;
   else
     {
