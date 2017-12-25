@@ -1292,6 +1292,11 @@ logview_window_init (LogviewWindow *logview)
   int width, height;
   gboolean res;
 
+  GtkStyleContext *s_context;
+
+  s_context = gtk_widget_get_style_context (GTK_WIDGET (logview));
+  gtk_style_context_add_class (s_context, "logview-window");
+
   priv = logview->priv = GET_PRIVATE (logview);
   priv->prefs = logview_prefs_get ();
   priv->manager = logview_manager_get ();
