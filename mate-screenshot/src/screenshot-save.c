@@ -185,8 +185,11 @@ screenshot_save_start (GdkPixbuf    *pixbuf,
   int parent_exit_notification[2];
   int pipe_from_child[2];
 
-  pipe (parent_exit_notification);
-  pipe (pipe_from_child);
+  if (pipe (parent_exit_notification) == -1)
+    perror("pipe error");
+
+  if (pipe (pipe_from_child) == -1)
+    perror("pipe error");
 
   parent_dir = make_temp_directory ();
   if (parent_dir == NULL)
@@ -216,19 +219,19 @@ screenshot_save_start (GdkPixbuf    *pixbuf,
 			     NULL))
 	{
 	  if (error && error->message)
-	    write (pipe_from_child[1],
-		   error->message,
-		   strlen (error->message));
+	    if (write (pipe_from_child[1], error->message, strlen (error->message)) == -1)
+              perror("write error");
 	  else
 #define ERROR_MESSAGE _("Unknown error saving screenshot to disk")
-	    write (pipe_from_child[1],
-		   ERROR_MESSAGE,
-		   strlen (ERROR_MESSAGE));
+	    if (write (pipe_from_child[1], ERROR_MESSAGE, strlen (ERROR_MESSAGE)) == -1)
+              perror("write error");
 	}
       /* By closing the pipe, we let the main process know that we're
        * done saving it. */
       close (pipe_from_child[1]);
-      read (parent_exit_notification[0], &c, 1);
+
+      if (read (parent_exit_notification[0], &c, 1) == -1)
+        perror("read error");
 
       clean_up_temporary_dir (FALSE);
       _exit (0);
