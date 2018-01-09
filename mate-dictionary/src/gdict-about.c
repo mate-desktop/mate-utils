@@ -54,7 +54,7 @@ gdict_show_about_dialog (GtkWidget *parent)
 
   const gchar *translator_credits = _("translator-credits");
   const gchar *copyright = "Copyright \xc2\xa9 2005-2006 Emmanuele Bassi\n"
-                           "Copyright \xc2\xa9 2011-2017 MATE developers";
+                           "Copyright \xc2\xa9 2011-2018 MATE developers";
   const gchar *comments = _("Look up words in dictionaries");
   
   const gchar *license =

@@ -92,7 +92,7 @@ on_about_activate (GtkMenuItem *menuitem, gpointer user_data)
 	gchar* license_trans = g_strjoin("\n\n", _(license[0]), _(license[1]), _(license[2]), NULL);
 
 	static const gchar copyright[] = "Copyright \xc2\xa9 2005-2010 Fabio Marzocca\n"
-	                                 "Copyright \xc2\xa9 2011-2017 MATE developers";
+	                                 "Copyright \xc2\xa9 2011-2018 MATE developers";
 
 	gtk_show_about_dialog (GTK_WINDOW (baobab.window),
 		"comments", _("A graphical tool to analyze disk usage."),
