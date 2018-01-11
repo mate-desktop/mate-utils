@@ -96,6 +96,8 @@ static char *last_save_dir = NULL;
 static char *temporary_file = NULL;
 static gboolean save_immediately = FALSE;
 static GSettings *settings = NULL;
+static gboolean interactive_arg = FALSE;
+static guint delay_arg = 0;
 
 /* Options */
 static gboolean take_window_shot = FALSE;
@@ -737,6 +739,13 @@ screenshot_dialog_response_cb (GtkDialog *d,
     {
       display_help (GTK_WINDOW (d));
     }
+  else if (response_id == SCREENSHOT_RESPONSE_NEW)
+    {
+      gtk_widget_destroy (GTK_WIDGET (d));
+      gtk_main_quit ();
+      interactive_arg = TRUE;
+      loop_dialog_screenshot();
+    }
   else if (response_id == GTK_RESPONSE_OK)
     {
       uri = screenshot_dialog_get_uri (dialog);
@@ -1251,6 +1260,57 @@ screenshooter_init_stock_icons (void)
   g_object_unref (factory);
 }
 
+void
+loop_dialog_screenshot (void)
+{
+  /* interactive mode overrides everything */
+  if (interactive_arg)
+    {
+      GtkWidget *dialog;
+      gint response;
+
+      dialog = create_interactive_dialog ();
+      response = gtk_dialog_run (GTK_DIALOG (dialog));
+      gtk_widget_destroy (dialog);
+
+      switch (response)
+        {
+        case GTK_RESPONSE_DELETE_EVENT:
+        case GTK_RESPONSE_CANCEL:
+          return EXIT_SUCCESS;
+        case GTK_RESPONSE_OK:
+          break;
+        default:
+          g_assert_not_reached ();
+          break;
+        }
+    }
+
+  if (((delay > 0 && interactive_arg) || delay_arg > 0) &&
+      !take_area_shot)
+    {
+      g_timeout_add (delay * 1000,
+		     prepare_screenshot_timeout,
+		     NULL);
+    }
+  else
+    {
+      if (interactive_arg)
+        {
+          /* HACK: give time to the dialog to actually disappear.
+           * We don't have any way to tell when the compositor has finished 
+           * re-drawing.
+           */
+          g_timeout_add (200,
+                         prepare_screenshot_timeout, NULL);
+        }
+      else
+        g_idle_add (prepare_screenshot_timeout, NULL);
+    }
+
+  gtk_main ();
+}
+
 /* main */
 int
 main (int argc, char *argv[])
@@ -1260,10 +1320,8 @@ main (int argc, char *argv[])
   gboolean area_arg = FALSE;
   gboolean include_border_arg = FALSE;
   gboolean disable_border_arg = FALSE;
-  gboolean interactive_arg = FALSE;
   gchar *border_effect_arg = NULL;
   gboolean version_arg = FALSE;
-  guint delay_arg = 0;
   GError *error = NULL;
 
   const GOptionEntry entries[] = {
@@ -1338,52 +1396,7 @@ main (int argc, char *argv[])
   if (delay_arg > 0)
     delay = delay_arg;
 
-  /* interactive mode overrides everything */
-  if (interactive_arg)
-    {
-      GtkWidget *dialog;
-      gint response;
-
-      dialog = create_interactive_dialog ();
-      response = gtk_dialog_run (GTK_DIALOG (dialog));
-      gtk_widget_destroy (dialog);
-
-      switch (response)
-        {
-        case GTK_RESPONSE_DELETE_EVENT:
-        case GTK_RESPONSE_CANCEL:
-          return EXIT_SUCCESS;
-        case GTK_RESPONSE_OK:
-          break;
-        default:
-          g_assert_not_reached ();
-          break;
-        }
-    }
-
-  if (((delay > 0 && interactive_arg) || delay_arg > 0) &&
-      !take_area_shot)
-    {      
-      g_timeout_add (delay * 1000,
-		     prepare_screenshot_timeout,
-		     NULL);
-    }
-  else
-    {
-      if (interactive_arg)
-        {
-          /* HACK: give time to the dialog to actually disappear.
-           * We don't have any way to tell when the compositor has finished 
-           * re-drawing.
-           */
-          g_timeout_add (200,
-                         prepare_screenshot_timeout, NULL);
-        }
-      else
-        g_idle_add (prepare_screenshot_timeout, NULL);
-    }
-
-  gtk_main ();
+  loop_dialog_screenshot();
 
   return EXIT_SUCCESS;
 }
