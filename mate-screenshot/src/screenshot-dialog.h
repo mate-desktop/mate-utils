@@ -26,6 +26,7 @@ typedef struct ScreenshotDialog ScreenshotDialog;
 
 /* Keep in sync with the value defined in the UI file */
 #define SCREENSHOT_RESPONSE_COPY 1
+#define SCREENSHOT_RESPONSE_NEW 22
 
 ScreenshotDialog *screenshot_dialog_new          (GdkPixbuf        *screenshot,
 						  char             *initial_uri,
