@@ -356,11 +356,7 @@ logview_help (GtkAction *action, GtkWidget *parent_window)
 {
   GError *error = NULL;
 
-#if GTK_CHECK_VERSION (3, 22, 0)
   gtk_show_uri_on_window (GTK_WINDOW (parent_window),
-#else
-  gtk_show_uri (gtk_widget_get_screen (parent_window),
-#endif
                 "help:mate-system-log", gtk_get_current_event_time (),
                 &error);
 
@@ -1200,12 +1196,8 @@ message_area_create_error_box (LogviewWindow *window,
   gtk_box_pack_start (GTK_BOX (vbox), primary_label, TRUE, TRUE, 0);
   gtk_label_set_use_markup (GTK_LABEL (primary_label), TRUE);
   gtk_label_set_line_wrap (GTK_LABEL (primary_label), TRUE);
-#if GTK_CHECK_VERSION (3, 16, 0)
   gtk_label_set_xalign (GTK_LABEL (primary_label), 0.0);
   gtk_label_set_yalign (GTK_LABEL (primary_label), 0.5);
-#else
-  gtk_misc_set_alignment (GTK_MISC (primary_label), 0.0, 0.5);
-#endif
   gtk_widget_set_can_focus (primary_label, TRUE);
   gtk_label_set_selectable (GTK_LABEL (primary_label), TRUE);
 
@@ -1218,12 +1210,8 @@ message_area_create_error_box (LogviewWindow *window,
   gtk_label_set_use_markup (GTK_LABEL (secondary_label), TRUE);
   gtk_label_set_line_wrap (GTK_LABEL (secondary_label), TRUE);
   gtk_label_set_selectable (GTK_LABEL (secondary_label), TRUE);
-#if GTK_CHECK_VERSION (3, 16, 0)
   gtk_label_set_xalign (GTK_LABEL (secondary_label), 0.0);
   gtk_label_set_yalign (GTK_LABEL (secondary_label), 0.5);
-#else
-  gtk_misc_set_alignment (GTK_MISC (secondary_label), 0.0, 0.5);
-#endif
 
   window->priv->message_secondary = secondary_label;
 

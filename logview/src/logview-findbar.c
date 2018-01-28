@@ -215,12 +215,8 @@ logview_findbar_init (LogviewFindbar *findbar)
   gtk_tool_item_set_expand (priv->status_item, TRUE);
   priv->message = gtk_label_new ("");
   gtk_label_set_use_markup (GTK_LABEL (priv->message), TRUE);
-#if GTK_CHECK_VERSION (3, 16, 0)
   gtk_label_set_xalign (GTK_LABEL (priv->message), 0.0);
   gtk_label_set_yalign (GTK_LABEL (priv->message), 0.5);
-#else
-  gtk_misc_set_alignment (GTK_MISC (priv->message), 0.0, 0.5);
-#endif
   gtk_container_add (GTK_CONTAINER (priv->status_item), priv->message);
   gtk_widget_show (priv->message);
   gtk_toolbar_insert (gtoolbar, priv->status_item, -1);
