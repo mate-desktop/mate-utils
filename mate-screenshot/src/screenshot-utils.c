@@ -628,15 +628,17 @@ mask_monitors (GdkPixbuf *pixbuf, GdkWindow *root_window)
   cairo_region_t *region_with_monitors;
   cairo_region_t *invisible_region;
   cairo_rectangle_int_t rect;
+  gint scale;
 
   screen = gdk_window_get_screen (root_window);
+  scale = gdk_window_get_scale_factor (root_window);
 
   region_with_monitors = make_region_with_monitors (screen);
 
   rect.x = 0;
   rect.y = 0;
-  rect.width = WidthOfScreen (gdk_x11_screen_get_xscreen (screen));
-  rect.height = HeightOfScreen (gdk_x11_screen_get_xscreen (screen));
+  rect.width = WidthOfScreen (gdk_x11_screen_get_xscreen (screen)) / scale;
+  rect.height = HeightOfScreen (gdk_x11_screen_get_xscreen (screen)) / scale;
 
   invisible_region = cairo_region_create_rectangle (&rect);
   cairo_region_subtract (invisible_region, region_with_monitors);
@@ -658,6 +660,7 @@ screenshot_get_pixbuf (GdkWindow    *window,
   GdkPixbuf *screenshot;
   gint x_real_orig, y_real_orig, x_orig, y_orig;
   gint width, real_width, height, real_height;
+  gint screen_width, screen_height, scale;
 
   /* If the screenshot should include the border, we look for the WM window. */
 
@@ -675,9 +678,13 @@ screenshot_get_pixbuf (GdkWindow    *window,
     }
 
   root = gdk_get_default_root_window ();
+  scale = gdk_window_get_scale_factor (root);
 
-		real_width = gdk_window_get_width(window);
-		real_height = gdk_window_get_height(window);
+  real_width = gdk_window_get_width (window);
+  real_height = gdk_window_get_height (window);
+
+  screen_width = WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())) / scale;
+  screen_height = HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())) / scale;
 
   gdk_window_get_origin (window, &x_real_orig, &y_real_orig);
 
@@ -698,11 +705,11 @@ screenshot_get_pixbuf (GdkWindow    *window,
       y_orig = 0;
     }
 
-  if (x_orig + width > WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())))
-    width = WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())) - x_orig;
+  if (x_orig + width > screen_width)
+    width = screen_width - x_orig;
 
-  if (y_orig + height > HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())))
-    height = HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())) - y_orig;
+  if (y_orig + height > screen_height)
+    height = screen_height - y_orig;
 
   if (rectangle)
     {
@@ -742,6 +749,12 @@ screenshot_get_pixbuf (GdkWindow    *window,
         {
           gboolean has_alpha = gdk_pixbuf_get_has_alpha (screenshot);
 
+          if (scale)
+            {
+              width *= scale;
+              height *= scale;
+            }
+
           tmp = gdk_pixbuf_new (GDK_COLORSPACE_RGB, TRUE, 8, width, height);
           gdk_pixbuf_fill (tmp, 0);
 
@@ -753,8 +766,8 @@ screenshot_get_pixbuf (GdkWindow    *window,
 
               rec_x = rectangles[i].x;
               rec_y = rectangles[i].y;
-              rec_width = rectangles[i].width;
-              rec_height = rectangles[i].height;
+              rec_width = rectangles[i].width / scale;
+              rec_height = rectangles[i].height / scale;
 
               if (x_real_orig < 0)
                 {
@@ -770,11 +783,17 @@ screenshot_get_pixbuf (GdkWindow    *window,
                   rec_height += y_real_orig;
                 }
 
-              if (x_orig + rec_x + rec_width > WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())))
-                rec_width = WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())) - x_orig - rec_x;
+              if (x_orig + rec_x + rec_width > screen_width)
+                rec_width = screen_width - x_orig - rec_x;
 
-              if (y_orig + rec_y + rec_height > HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())))
-                rec_height = HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())) - y_orig - rec_y;
+              if (y_orig + rec_y + rec_height > screen_height)
+                rec_height = screen_height - y_orig - rec_y;
+
+              if (scale)
+                {
+                  rec_width *= scale;
+                  rec_height *= scale;
+                }
 
               for (y = rec_y; y < rec_y + rec_height; y++)
                 {
@@ -782,7 +801,7 @@ screenshot_get_pixbuf (GdkWindow    *window,
                   gint x;
 
                   src_pixels = gdk_pixbuf_get_pixels (screenshot)
-                             + y * gdk_pixbuf_get_rowstride(screenshot)
+                             + y * gdk_pixbuf_get_rowstride (screenshot)
                              + rec_x * (has_alpha ? 4 : 3);
                   dest_pixels = gdk_pixbuf_get_pixels (tmp)
                               + y * gdk_pixbuf_get_rowstride (tmp)
@@ -842,11 +861,17 @@ screenshot_get_pixbuf (GdkWindow    *window,
           sscanf (gdk_pixbuf_get_option (cursor_pixbuf, "x_hot"), "%d", &xhot);
           sscanf (gdk_pixbuf_get_option (cursor_pixbuf, "y_hot"), "%d", &yhot);
 
+          if (scale)
+            {
+              cx *= scale;
+              cy *= scale;
+            }
+
           /* in r1 we have the window coordinates */
           r1.x = x_real_orig;
           r1.y = y_real_orig;
-          r1.width = real_width;
-          r1.height = real_height;
+          r1.width = real_width * scale;
+          r1.height = real_height * scale;
 
           /* in r2 we have the cursor window coordinates */
           r2.x = cx + x_real_orig;
