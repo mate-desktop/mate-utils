@@ -126,16 +126,10 @@ display_help (GtkWindow *parent)
 {
   GError *error = NULL;
 
-#if GTK_CHECK_VERSION (3, 22, 0)
   gtk_show_uri_on_window (parent,
                           "help:mate-user-guide/goseditmainmenu-53",
                           gtk_get_current_event_time (),
                           &error);
-#else
-  gtk_show_uri (gtk_window_get_screen (parent),
-		"help:mate-user-guide/goseditmainmenu-53",
-		gtk_get_current_event_time (), &error);
-#endif
 
   if (error)
     {
@@ -339,12 +333,8 @@ create_effects_frame (GtkWidget   *outer_vbox,
   title = g_strconcat ("<b>", frame_title, "</b>", NULL);
   label = gtk_label_new (title);
   gtk_label_set_use_markup (GTK_LABEL (label), TRUE);
-#if GTK_CHECK_VERSION (3, 16, 0)
   gtk_label_set_xalign (GTK_LABEL (label), 0.0);
   gtk_label_set_yalign (GTK_LABEL (label), 0.5);
-#else
-  gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
-#endif
   gtk_box_pack_start (GTK_BOX (main_vbox), label, FALSE, FALSE, 0);
   gtk_widget_show (label);
   g_free (title);
@@ -385,12 +375,8 @@ create_effects_frame (GtkWidget   *outer_vbox,
 
   label = gtk_label_new_with_mnemonic (_("Apply _effect:"));
   gtk_widget_set_sensitive (label, take_window_shot);
-#if GTK_CHECK_VERSION (3, 16, 0)
   gtk_label_set_xalign (GTK_LABEL (label), 0.0);
   gtk_label_set_yalign (GTK_LABEL (label), 0.5);
-#else
-  gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
-#endif
   gtk_box_pack_start (GTK_BOX (hbox), label, FALSE, FALSE, 0);
   gtk_widget_show (label);
   effect_label = label;
@@ -423,12 +409,8 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
   title = g_strconcat ("<b>", frame_title, "</b>", NULL);
   label = gtk_label_new (title);
   gtk_label_set_use_markup (GTK_LABEL (label), TRUE);
-#if GTK_CHECK_VERSION (3, 16, 0)
   gtk_label_set_xalign (GTK_LABEL (label), 0.0);
   gtk_label_set_yalign (GTK_LABEL (label), 0.5);
-#else
-  gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
-#endif
   gtk_box_pack_start (GTK_BOX (main_vbox), label, FALSE, FALSE, 0);
   gtk_widget_show (label);
   g_free (title);
@@ -494,12 +476,8 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
    * delay of <spin button> seconds".
    */
   label = gtk_label_new_with_mnemonic (_("Grab _after a delay of"));
-#if GTK_CHECK_VERSION (3, 16, 0)
   gtk_label_set_xalign (GTK_LABEL (label), 0.0);
   gtk_label_set_yalign (GTK_LABEL (label), 0.5);
-#else
-  gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
-#endif
   gtk_box_pack_start (GTK_BOX (delay_hbox), label, FALSE, FALSE, 0);
   gtk_widget_show (label);
 
@@ -519,12 +497,8 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
    * delay of <spin button> seconds".
    */
   label = gtk_label_new (_("seconds"));
-#if GTK_CHECK_VERSION (3, 16, 0)
   gtk_label_set_xalign (GTK_LABEL (label), 0.0);
   gtk_label_set_yalign (GTK_LABEL (label), 0.5);
-#else
-  gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
-#endif
   gtk_box_pack_end (GTK_BOX (delay_hbox), label, FALSE, FALSE, 0);
   gtk_widget_show (label);
 }

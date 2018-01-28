@@ -346,12 +346,8 @@ gdict_sidebar_init (GdictSidebar *sidebar)
   select_hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 
   priv->label = gtk_label_new (NULL);
-#if GTK_CHECK_VERSION (3, 16, 0)
   gtk_label_set_xalign (GTK_LABEL (priv->label), 0.0);
   gtk_label_set_yalign (GTK_LABEL (priv->label), 0.5);
-#else
-  gtk_misc_set_alignment (GTK_MISC (priv->label), 0.0, 0.5);
-#endif
   gtk_box_pack_start (GTK_BOX (select_hbox), priv->label, FALSE, FALSE, 0);
   gtk_widget_show (priv->label);
 

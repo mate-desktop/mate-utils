@@ -469,11 +469,7 @@ gdict_source_dialog_response_cb (GtkDialog *dialog,
       build_new_source (GDICT_SOURCE_DIALOG (dialog));
       break;
     case GTK_RESPONSE_HELP:
-#if GTK_CHECK_VERSION (3, 22, 0)
       gtk_show_uri_on_window (GTK_WINDOW (dialog),
-#else
-      gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (dialog)),
-#endif
                     "help:mate-dictionary/mate-dictionary-add-source",
                     gtk_get_current_event_time (), &err);
       if (err)
