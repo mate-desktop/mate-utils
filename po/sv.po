@@ -9,14 +9,15 @@
 # Jonatan Nyberg, 2016
 # Kristoffer Grundström <kristoffer.grundstrom1983@gmail.com>, 2015-2016
 # Martin Norbäck <d95mback@dtek.chalmers.se>, 2000
+# Tobias Lekare <lekare@linux.com>, 2017
 # Urban Berggren <pudberggren@icloud.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-29 10:58+0100\n"
-"PO-Revision-Date: 2017-09-19 11:47+0000\n"
-"Last-Translator: monsta <monsta@inbox.ru>\n"
+"PO-Revision-Date: 2017-12-28 14:48+0000\n"
+"Last-Translator: Tobias Lekare <lekare@linux.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/mate/MATE/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -188,7 +189,7 @@ msgstr "Huruvida statusraden i nedre delen av huvudfönstret ska vara synlig."
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:9
 msgid "Subfolder tips visible"
-msgstr ""
+msgstr "Synliga tips för undermappar"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:10
 msgid "Whether the subfolder tooltips of the selected folder are drawn."
@@ -200,7 +201,7 @@ msgstr "Aktiv kartläggning"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:12
 msgid "Which type of chart should be displayed."
-msgstr ""
+msgstr "Vilken sorts diagram borde visas."
 
 #: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:1
 msgid "A disk usage analyzing tool for MATE Desktop"
@@ -214,7 +215,7 @@ msgid ""
 "perform scans on a file system, your home or any other folder - local or "
 "remote. There is also an option to constantly monitor any external changes "
 "to the home directory and warn the user if a file is added/removed. </p>"
-msgstr ""
+msgstr "<p> Som namnet antyder, Disk Usage Analyzer är ett grafiskt vertyk som  du kan använda för att visa och övervaka din diskanvändning samt katalogstruktur. Den visar sammanfattande information i ring- eller träddiagram. </p> <p> Du kan utföra skanningar på filsystemet, din hemkatalog eller andra kataloger - lokalt eller fjärrstyrt. Det finns också möjlighet att konstant övervaka externa förändringar i hemkatalogen eller varna ifall en fil läggs till eller tas bort. </p>"
 
 #: ../baobab/src/baobab.c:137 ../baobab/src/baobab.c:357
 msgid "Scanning..."
@@ -603,7 +604,7 @@ msgid ""
 " you instant access to a wide variety of parameters for each search, such as"
 " text contained within a file, ownership, date of modification, file size, "
 "folder exclusion, etc.. </p>"
-msgstr ""
+msgstr "<p> MATE Sökverktyg är ett enkelt, men kraftfullt verktyg, som erbjuder dig att söka efter filer eller kataloger bland alla monterade filsystem. Dess gränssnitt ger dig direkt tillgång till en bred mängd av parametrar för varje sökning, såsom textrader inom en fil, äganderätt, datum vid förändring, filstorlek, uteslutning av mappar, m.m. </p>"
 
 #: ../gsearchtool/data/mate-search-tool.desktop.in.h:1
 msgid "MATE Search Tool"
@@ -619,7 +620,7 @@ msgstr "Sökhistoria"
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:2
 msgid "This key defines the items which were searched for in the past."
-msgstr ""
+msgstr "Denna nyckel definierar de föremål som söktes efter tidigare."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:3
 msgid "Show Additional Options"
@@ -1319,7 +1320,7 @@ msgstr "Öppna m_ed"
 #. Popup menu item: Open Containing Folder
 #: ../gsearchtool/src/gsearchtool-callbacks.c:1197
 msgid "Open Containing _Folder"
-msgstr ""
+msgstr "Öppna Innehållande _Katalog"
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:1237
 msgid "_Save Results As..."
@@ -1866,23 +1867,23 @@ msgid ""
 "comes preconfigured with a list of Dict servers (RFC 2229), to which you can"
 " add your own sources, while you can select specific servers for a specific "
 "query. </p>"
-msgstr ""
+msgstr "<p> MATE Ordbok tillåter djg slå upp ord i en ordlista on-line. Den kommer förkonfigurerad med en lista av Dict-servrar (RFC 2229) som du kan utöka med egna källlor samt att du kan välja specifika servrar för en specifik fråga. </p>"
 
 #: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:1
 msgid "Dictionary Applet Factory"
-msgstr ""
+msgstr "Fabrik för panelprogrammet Ordbok"
 
 #: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:2
 msgid "Factory for the dictionary applet"
-msgstr ""
+msgstr "Fabrik för panelprogrammet Ordbok"
 
 #: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:3
 msgid "Dictionary Look up"
-msgstr ""
+msgstr "Ordboksuppslagning"
 
 #: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:4
 msgid "Look up words in a dictionary"
-msgstr ""
+msgstr "Slå upp ord i en ordbok"
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:1
 msgid "The default database to use"
@@ -2144,7 +2145,7 @@ msgstr "Databas"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:275
 msgid "The default database of this dictionary source"
-msgstr ""
+msgstr "Standarddatabasen för denna ordbokskälla"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:288
 #: ../mate-dictionary/libgdict/gdict-speller.c:382
@@ -2153,7 +2154,7 @@ msgstr "Strategi"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:289
 msgid "The default strategy of this dictionary source"
-msgstr ""
+msgstr "Standardstrategin för denna ordbokskälla"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:302
 msgid "Transport"
@@ -2527,7 +2528,7 @@ msgstr "Ta bort den för tillfället markerade ordbokskällan"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:658
 msgid "Edit the currently selected dictionary source"
-msgstr ""
+msgstr "Ändra den markerade ordbokskällan"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:666
 msgid "Set the font used for printing the definitions"
@@ -2782,7 +2783,7 @@ msgstr "Strategier"
 
 #: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:1
 msgid "A screenshot utility for MATE Desktop"
-msgstr ""
+msgstr "Ett skärmbildsverktyg för MATE Skrivbord"
 
 #: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:2
 msgid ""
@@ -2790,7 +2791,7 @@ msgid ""
 " your desktop or of application windows. You can select to copy them to the "
 "system clipboard or save them in Portable Network Graphics (.png) image "
 "format. </p>"
-msgstr ""
+msgstr "<p> MATE Skärmbild är ett enkelt verktyg som låter dig fånga skärmbilder av ditt skrivbord eller av programfönster. Du kan välja att kopiera dem till systemets klippbord eller spara dem i Portable Network Graphics (.png) bildformat. </p>"
 
 #: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
 #: ../mate-screenshot/src/mate-screenshot.c:540
@@ -3008,7 +3009,7 @@ msgid ""
 "%s\n"
 "\n"
 "Please check your installation of mate-utils."
-msgstr ""
+msgstr "Fel vid laddning av definitionsfilen för användargränssnittet för skärmbildsprogrammet: \n%s\n\nVänligen kontrollera din installation av mate-utils."
 
 #: ../mate-screenshot/src/screenshot-dialog.c:230
 msgid "Select a folder"

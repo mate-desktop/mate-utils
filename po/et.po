@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Ivar Smolin <okul@linux.ee>, 2014-2015
+# Ivar Smolin <okul@linux.ee>, 2014-2015,2018
 # Lauris Kaplinski <lauris ariman ee>, 1999
 # Priit Laes <amd store20 com>, 2005
 # Tõivo Leedjärv <toivo linux ee>, 2002
@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-29 10:58+0100\n"
-"PO-Revision-Date: 2017-09-19 11:47+0000\n"
-"Last-Translator: monsta <monsta@inbox.ru>\n"
+"PO-Revision-Date: 2018-01-13 21:48+0000\n"
+"Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian (http://www.transifex.com/mate/MATE/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1843,15 +1843,15 @@ msgstr "Järgnevaid faile pole võimalik avada:"
 
 #: ../mate-dictionary/data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
-msgstr "Vaikimisi sõnaraamatuserver"
+msgstr "Vaikimisi sõnastikuserver"
 
 #: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:1
 msgid "MATE Dictionary"
-msgstr "MATE sõnaraamat"
+msgstr "MATE sõnastik"
 
 #: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:2
 msgid "Check word definitions and spellings in an online dictionary"
-msgstr "Sõnade definitsioonide ja kirjaviiside otsimine onlain-sõnaraamatust"
+msgstr "Sõnade definitsioonide ja kirjaviiside otsimine onlain-sõnastikust"
 
 #: ../mate-dictionary/data/mate-dictionary.appdata.xml.in.h:1
 msgid "A dictionary for MATE Desktop"
@@ -1875,11 +1875,11 @@ msgstr "Factory sõnastikurakendi jaoks"
 
 #: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:3
 msgid "Dictionary Look up"
-msgstr "Otsing sõnaraamatust"
+msgstr "Otsing sõnastikust"
 
 #: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:4
 msgid "Look up words in a dictionary"
-msgstr "Sõna otsimine sõnaraamatust"
+msgstr "Sõna otsimine sõnastikust"
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:1
 msgid "The default database to use"
@@ -1890,7 +1890,7 @@ msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
 "present in a dictionary source should be searched"
-msgstr "Sõnaraamatuserveris vaikimisi allikana kasutatava üksiku andmebaasi või metaandmebaasi nimi. Hüüumärk (\"!\") tähendab, et otsing toimub üle kõigi sõnaraamatuallikas olevate andmebaaside"
+msgstr "Sõnastikuserveris vaikimisi allikana kasutatava üksiku andmebaasi või metaandmebaasi nimi. Hüüumärk (\"!\") tähendab, et otsing toimub üle kõigi sõnastikuallikas olevate andmebaaside"
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:3
 msgid "The default search strategy to use"
@@ -1900,7 +1900,7 @@ msgstr "Vaikimisi kasutatav otsingustrateegia"
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is 'exact', that is match exact words."
-msgstr "Sõnaraamatuallika puhul vaikimisi kasutatav otsingustrateegia (võimaluse korral). Vaikimisi strateegia on 'exact', mis tähendab täpsete vastete otsingut."
+msgstr "Sõnastikuallika puhul vaikimisi kasutatav otsingustrateegia (võimaluse korral). Vaikimisi strateegia on 'exact', mis tähendab täpsete vastete otsingut."
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:5
 msgid "The font to be used when printing"
@@ -1912,12 +1912,12 @@ msgstr "Definitsiooni printimiseks kasutatav kirjatüüp."
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:7
 msgid "The name of the dictionary source used"
-msgstr "Kasutuseloleva sõnaraamatu allika nimi"
+msgstr "Kasutuseloleva sõnastiku allika nimi"
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:8
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
-msgstr "Sõnadefinitsioonide hankimiseks kasutatav sõnaraamatuallikas."
+msgstr "Sõnadefinitsioonide hankimiseks kasutatav sõnastikuallikas."
 
 #: ../mate-dictionary/data/thai.desktop.in.h:1
 msgid "Longdo Thai-English Dictionaries"
@@ -1937,7 +1937,7 @@ msgstr "Hosti nimi"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:298
 msgid "The hostname of the dictionary server to connect to"
-msgstr "Sõnaraamatuserveri hostinimi"
+msgstr "Sõnastikuserveri hostinimi"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:311
 msgid "Port"
@@ -1945,7 +1945,7 @@ msgstr "Port"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:312
 msgid "The port of the dictionary server to connect to"
-msgstr "Sõnaraamatuserveri port, kuhu tuleb ühenduda"
+msgstr "Sõnastikuserveri port, kuhu tuleb ühenduda"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:327
 msgid "Status"
@@ -1953,12 +1953,12 @@ msgstr "Olek"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:328
 msgid "The status code as returned by the dictionary server"
-msgstr "Sõnaraamatuserverist tagastatud olekukood"
+msgstr "Sõnastikuserverist tagastatud olekukood"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:777
 #, c-format
 msgid "No connection to the dictionary server at '%s:%d'"
-msgstr "Sõnaraamatuserveriga asukohas '%s:%d' pole ühendust"
+msgstr "Sõnastikuserveriga asukohas '%s:%d' puudub ühendus"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1060
 #, c-format
@@ -1980,14 +1980,14 @@ msgstr "Tõrge hosti '%s' lahendamisel: hosti ei leitud"
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
 "with code %d (server down)"
-msgstr "Sõnaraamatuserveriga asukohas '%s:%d' pole võimalik ühenduda. Server andis vastuseks koodi %d (teenus ei tööta)"
+msgstr "Sõnastikuserveriga asukohas '%s:%d' pole võimalik ühenduda. Server andis vastuseks koodi %d (teenus ei tööta)"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1196
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
 ": '%s'"
-msgstr "Sõnaraamatuserveri vastust pole võimalik analüüsida\n: '%s'"
+msgstr "Sõnastikuserveri vastust pole võimalik analüüsida\n: '%s'"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1225
 #, c-format
@@ -2017,17 +2017,17 @@ msgstr "Vigased parameetrid käsule '%s'"
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1300
 #, c-format
 msgid "No databases found on dictionary server at '%s'"
-msgstr "Sõnaraamatuserverist '%s' ei leitud ühtegi andmebaasi"
+msgstr "Sõnastikuserverist '%s' ei leitud ühtegi andmebaasi"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1315
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
-msgstr "Sõnaraamatuserverist '%s' ei leitud strateegiaid"
+msgstr "Sõnastikuserverist '%s' ei leitud strateegiaid"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1740
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
-msgstr "Tõrge ühendumisel sõnaraamatuserveriga '%s:%d'"
+msgstr "Tõrge ühendumisel sõnastikuserveriga '%s:%d'"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1779
 #, c-format
@@ -2039,12 +2039,12 @@ msgstr "Viga serverist tuleva vastuse lugemisel:\n%s"
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1852
 #, c-format
 msgid "Connection timeout for the dictionary server at '%s:%d'"
-msgstr "Sõnaraamatuserveriga '%s:%d' ühendumisel ületati ajapiirang"
+msgstr "Sõnastikuserveriga '%s:%d' ühendumisel ületati ajapiirang"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1886
 #, c-format
 msgid "No hostname defined for the dictionary server"
-msgstr "Sõnaraamatuserverile pole hostinime määratud"
+msgstr "Sõnastikuserverile pole hostinime määratud"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1922
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1937
@@ -2060,7 +2060,7 @@ msgstr "Kanalit pole võimalik mitteblokeeruvaks muuta: %s"
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1978
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
-msgstr "Sõnaraamatuserveriga aadressil '%s:%d' pole võimalik ühenduda"
+msgstr "Sõnastikuserveriga aadressil '%s:%d' pole võimalik ühenduda"
 
 #: ../mate-dictionary/libgdict/gdict-context.c:218
 msgid "Local Only"
@@ -2120,11 +2120,11 @@ msgstr "Failinimi"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:233
 msgid "The filename used by this dictionary source"
-msgstr "Selle sõnaraamatuallika poolt kasutatav failinimi"
+msgstr "Selle sõnastikuallika poolt kasutatav failinimi"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:247
 msgid "The display name of this dictionary source"
-msgstr "Selle sõnaraamatuallika nimi kuvamiseks"
+msgstr "Selle sõnastikuallika nimi kuvamiseks"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:260
 msgid "Description"
@@ -2132,7 +2132,7 @@ msgstr "Kirjeldus"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:261
 msgid "The description of this dictionary source"
-msgstr "Sõnaraamatuallika kirjeldus"
+msgstr "Sõnastikuallika kirjeldus"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:274
 #: ../mate-dictionary/libgdict/gdict-speller.c:375
@@ -2141,7 +2141,7 @@ msgstr "Andmebaas"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:275
 msgid "The default database of this dictionary source"
-msgstr "Selle sõnaraamatuallika vaikimisi andmebaas"
+msgstr "Selle sõnastikuallika vaikimisi andmebaas"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:288
 #: ../mate-dictionary/libgdict/gdict-speller.c:382
@@ -2150,7 +2150,7 @@ msgstr "Strateegia"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:289
 msgid "The default strategy of this dictionary source"
-msgstr "Selle sõnaraamatuallika vaikimisi strateegia"
+msgstr "Selle sõnastikuallika vaikimisi strateegia"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:302
 msgid "Transport"
@@ -2158,7 +2158,7 @@ msgstr "Transport"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:303
 msgid "The transport mechanism used by this dictionary source"
-msgstr "Selle sõnaraamatuallika transpordimehhanism"
+msgstr "Selle sõnastikuallika transpordimehhanism"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:317
 #: ../mate-dictionary/libgdict/gdict-speller.c:368
@@ -2177,7 +2177,7 @@ msgstr "Vigane transpordiliik '%d'"
 #: ../mate-dictionary/libgdict/gdict-source.c:441
 #, c-format
 msgid "No '%s' group found inside the dictionary source definition"
-msgstr "Gruppi '%s' ei leitud sõnaraamatu allika kirjeldusest"
+msgstr "Sõnastiku allika kirjeldusest ei leitud gruppi '%s'"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:457
 #: ../mate-dictionary/libgdict/gdict-source.c:481
@@ -2185,7 +2185,7 @@ msgstr "Gruppi '%s' ei leitud sõnaraamatu allika kirjeldusest"
 #: ../mate-dictionary/libgdict/gdict-source.c:530
 #, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
-msgstr "Lähtekirjeldusest pole võtit '%s' võimalik leida: %s"
+msgstr "Sõnastiku lähtekirjeldusest pole võtit '%s' võimalik leida: %s"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:555
 #, c-format
@@ -2196,12 +2196,12 @@ msgstr "Sõnastiku kirjelduste lähtefailist pole võtit '%s' võimalik leida: %
 #: ../mate-dictionary/libgdict/gdict-source.c:741
 #, c-format
 msgid "Dictionary source does not have name"
-msgstr "Sõnaraamatuallikal pole nime"
+msgstr "Sõnastikuallikal pole nime"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:750
 #, c-format
 msgid "Dictionary source '%s' has invalid transport '%s'"
-msgstr "Sõnaraamatuallikal '%s' on vigane transport '%s'"
+msgstr "Sõnastikuallikal '%s' on vigane transport '%s'"
 
 #: ../mate-dictionary/libgdict/gdict-source-chooser.c:283
 msgid "Reload the list of available sources"
@@ -2221,7 +2221,7 @@ msgstr "Allikad"
 
 #: ../mate-dictionary/libgdict/gdict-source-loader.c:185
 msgid "Dictionary sources found"
-msgstr "Leitud sõnaraamatuallikad"
+msgstr "Leitud sõnastikuallikad"
 
 #: ../mate-dictionary/libgdict/gdict-speller.c:347
 msgid "Clear the list of similar words"
@@ -2278,7 +2278,7 @@ msgstr "Sõnade otsimine sõnaraamatutest"
 #: ../mate-dictionary/src/gdict-window.c:607
 #: ../mate-dictionary/src/gdict-window.c:1900
 msgid "Dictionary"
-msgstr "Sõnaraamat"
+msgstr "Sõnastik"
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
@@ -2304,7 +2304,7 @@ msgstr "Kasutamisjuhisteks proovi mate-dictionary --help\n"
 
 #: ../mate-dictionary/src/gdict-app.c:270
 msgid "Unable to find a suitable dictionary source"
-msgstr "Kasutatavat sõnaraamatuallikat pole võimalik leida"
+msgstr "Kasutatavat sõnastikuallikat pole võimalik leida"
 
 #: ../mate-dictionary/src/gdict-app.c:304
 #, c-format
@@ -2330,7 +2330,7 @@ msgstr "Sobivad sõnad"
 
 #: ../mate-dictionary/src/gdict-app.c:337
 msgid "Dictionary source to use"
-msgstr "Kasutatav sõnaraamatuallikas"
+msgstr "Kasutatav sõnastikuallikas"
 
 #: ../mate-dictionary/src/gdict-app.c:337
 msgid "source"
@@ -2407,11 +2407,11 @@ msgstr "Definitsiooniteksti salvestamine faili"
 
 #: ../mate-dictionary/src/gdict-applet.c:530
 msgid "Click to view the dictionary window"
-msgstr "Klõpsa sõnaraamatuakna näitamiseks"
+msgstr "Klõpsa sõnastikuakna näitamiseks"
 
 #: ../mate-dictionary/src/gdict-applet.c:532
 msgid "Toggle dictionary window"
-msgstr "Sõnaraamatuakna sisse- ja väljalülitamine"
+msgstr "Sõnastikuakna sisse- ja väljalülitamine"
 
 #: ../mate-dictionary/src/gdict-applet.c:533
 msgid "Show or hide the definition window"
@@ -2423,12 +2423,12 @@ msgstr "Sisesta sõna, mida soovid otsida"
 
 #: ../mate-dictionary/src/gdict-applet.c:586
 msgid "Dictionary entry"
-msgstr "Sõnaraamatukirje"
+msgstr "Sõnastikukirje"
 
 #: ../mate-dictionary/src/gdict-applet.c:715
 #: ../mate-dictionary/src/gdict-window.c:1106
 msgid "Dictionary Preferences"
-msgstr "Sõnaraamatu eelistused"
+msgstr "Sõnastiku eelistused"
 
 #: ../mate-dictionary/src/gdict-applet.c:743
 #: ../mate-dictionary/src/gdict-pref-dialog.c:499
@@ -2442,12 +2442,12 @@ msgstr "Abiteabe kuvamisel tekkis viga"
 #: ../mate-dictionary/src/gdict-window.c:522
 #, c-format
 msgid "No dictionary source available with name '%s'"
-msgstr "Sõnaraamatuallikat nimega '%s' pole saadaval"
+msgstr "Sõnastikuallikat nimega '%s' pole saadaval"
 
 #: ../mate-dictionary/src/gdict-applet.c:886
 #: ../mate-dictionary/src/gdict-window.c:526
 msgid "Unable to find dictionary source"
-msgstr "Sõnaraamatuallikat pole võimalik leida"
+msgstr "Sõnastikuallikat pole võimalik leida"
 
 #: ../mate-dictionary/src/gdict-applet.c:902
 #: ../mate-dictionary/src/gdict-window.c:542
@@ -2494,11 +2494,11 @@ msgstr "Andmekataloogi '%s' pole võimalik luua: %s"
 #: ../mate-dictionary/src/gdict-pref-dialog.c:240
 #: ../mate-dictionary/src/gdict-pref-dialog.c:429
 msgid "Edit Dictionary Source"
-msgstr "Sõnaraamatuallika redigeerimine"
+msgstr "Sõnastikuallika redigeerimine"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:304
 msgid "Add Dictionary Source"
-msgstr "Sõnaraamatuallika lisamine"
+msgstr "Sõnastikuallika lisamine"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:349
 #, c-format
@@ -2507,7 +2507,7 @@ msgstr "Kas eemaldada \"%s\""
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:351
 msgid "This will permanently remove the dictionary source from the list."
-msgstr "Sõnaraamatuallikas eemaldatakse sellest loetelust jäädavalt."
+msgstr "Sõnastikuallikas eemaldatakse sellest loetelust jäädavalt."
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:381
 #, c-format
@@ -2516,15 +2516,15 @@ msgstr "Allikat %s pole võimalik eemaldada"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:646
 msgid "Add a new dictionary source"
-msgstr "Uue sõnaraamatuallika lisamine"
+msgstr "Uue sõnastikuallika lisamine"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:652
 msgid "Remove the currently selected dictionary source"
-msgstr "Hetkel valitud sõnaraamtuallika eemaldamine"
+msgstr "Hetkel valitud sõnastikuallika eemaldamine"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:658
 msgid "Edit the currently selected dictionary source"
-msgstr "Hetkel valitud sõnaraamatuallika redigeerimine"
+msgstr "Hetkel valitud sõnastikuallika redigeerimine"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:666
 msgid "Set the font used for printing the definitions"
@@ -2566,7 +2566,7 @@ msgstr[1] "Leiti %d definitsiooni"
 #: ../mate-dictionary/src/gdict-window.c:605
 #, c-format
 msgid "%s - Dictionary"
-msgstr "%s - sõnaraamat"
+msgstr "%s - sõnastik"
 
 #: ../mate-dictionary/src/gdict-window.c:1294
 msgid "_Go"
@@ -2657,7 +2657,7 @@ msgstr "_Sarnased sõnad"
 
 #: ../mate-dictionary/src/gdict-window.c:1337
 msgid "Dictionary Sources"
-msgstr "Sõnaraamatuallikad"
+msgstr "Sõnastikuallikad"
 
 #: ../mate-dictionary/src/gdict-window.c:1339
 msgid "Available _Databases"
@@ -2679,7 +2679,7 @@ msgstr "_Olekuriba"
 #: ../mate-dictionary/src/gdict-window.c:1425
 #, c-format
 msgid "Dictionary source `%s' selected"
-msgstr "Sõnaraamatuallikas `%s' on valitud"
+msgstr "Sõnastikuallikas `%s' on valitud"
 
 #: ../mate-dictionary/src/gdict-window.c:1446
 #, c-format
@@ -2734,11 +2734,11 @@ msgstr "Saadaolevad strateegiad"
 
 #: ../mate-dictionary/src/gdict-window.c:1828
 msgid "Dictionary sources"
-msgstr "Sõnaraamatuallikad"
+msgstr "Sõnastikuallikad"
 
 #: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:1
 msgid "_Select a dictionary source for looking up words:"
-msgstr "_Vali sõnaraamat, millest sõnu otsida:"
+msgstr "_Vali sõnastik, millest sõnu otsida:"
 
 #: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:2
 #: ../mate-dictionary/data/mate-dictionary-source.ui.h:6
@@ -2985,7 +2985,7 @@ msgstr "Valikute interaktiivne seadmine"
 
 #: ../mate-screenshot/src/mate-screenshot.c:1277
 msgid "Print version information and exit"
-msgstr ""
+msgstr "Versiooni andmete näitamine ja töö lõpetamine"
 
 #: ../mate-screenshot/src/mate-screenshot.c:1286
 msgid "Take a picture of the screen"
