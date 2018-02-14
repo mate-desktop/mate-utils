@@ -93,8 +93,8 @@ gchar *
 gsearchtool_get_unique_filename (const gchar * path,
                                  const gchar * suffix);
 GtkWidget *
-gsearchtool_button_new_with_stock_icon (const gchar * string,
-                                        const gchar * stock_id);
+gsearchtool_button_new_with_icon (const gchar * string,
+                                  const gchar * icon_name);
 GSList *
 gsearchtool_get_columns_order (GtkTreeView * treeview);
 

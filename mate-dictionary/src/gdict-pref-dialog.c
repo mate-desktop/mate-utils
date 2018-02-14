@@ -352,10 +352,10 @@ source_remove_clicked_cb (GtkWidget       *widget,
       						  "dictionary source from the list."));
       
       gtk_dialog_add_button (GTK_DIALOG (confirm_dialog),
-      			     GTK_STOCK_CANCEL,
+      			     "gtk-cancel",
       			     GTK_RESPONSE_CANCEL);
       gtk_dialog_add_button (GTK_DIALOG (confirm_dialog),
-      			     GTK_STOCK_REMOVE,
+      			     "gtk-remove",
       			     GTK_RESPONSE_OK);
       
       gtk_window_set_title (GTK_WINDOW (confirm_dialog), "");

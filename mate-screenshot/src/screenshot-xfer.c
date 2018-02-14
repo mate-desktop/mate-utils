@@ -76,7 +76,7 @@ do_run_overwrite_confirm_dialog (gpointer _data)
                                               "Would you like to replace it?"), 
 					    data->basename);
   gtk_dialog_add_button (GTK_DIALOG (dialog),
-			 GTK_STOCK_CANCEL,
+			 "gtk-cancel",
 			 GTK_RESPONSE_CANCEL);
   gtk_dialog_add_button (GTK_DIALOG (dialog),
 			 _("_Replace"),

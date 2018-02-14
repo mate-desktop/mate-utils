@@ -964,8 +964,8 @@ gdict_window_cmd_save_as (GtkAction   *action,
   dialog = gtk_file_chooser_dialog_new (_("Save a Copy"),
   					GTK_WINDOW (window),
   					GTK_FILE_CHOOSER_ACTION_SAVE,
-  					GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
-  					GTK_STOCK_SAVE, GTK_RESPONSE_ACCEPT,
+  					"gtk-cancel", GTK_RESPONSE_CANCEL,
+  					"gtk-save", GTK_RESPONSE_ACCEPT,
   					NULL);
   gtk_file_chooser_set_do_overwrite_confirmation (GTK_FILE_CHOOSER (dialog), TRUE);
   
@@ -1291,40 +1291,40 @@ static const GtkActionEntry entries[] =
   { "Help", NULL, N_("_Help") },
 
   /* File menu */
-  { "FileNew", GTK_STOCK_NEW, N_("_New"), "<control>N",
+  { "FileNew", "document-new", N_("_New"), "<control>N",
     N_("New look up"), G_CALLBACK (gdict_window_cmd_file_new) },
-  { "FileSaveAs", GTK_STOCK_SAVE_AS, N_("_Save a Copy..."), NULL, NULL,
+  { "FileSaveAs", "document-save-as", N_("_Save a Copy..."), NULL, NULL,
     G_CALLBACK (gdict_window_cmd_save_as) },
   { "FilePreview", NULL, N_("P_review..."), "<control><shift>P",
     N_("Preview this document"), G_CALLBACK (gdict_window_cmd_file_preview) },
-  { "FilePrint", GTK_STOCK_PRINT, N_("_Print..."), "<control>P",
+  { "FilePrint", "document-print", N_("_Print..."), "<control>P",
     N_("Print this document"), G_CALLBACK (gdict_window_cmd_file_print) },
-  { "FileCloseWindow", GTK_STOCK_CLOSE, NULL, "<control>W", NULL,
+  { "FileCloseWindow", "window-close", N_("_Close"), "<control>W", NULL,
     G_CALLBACK (gdict_window_cmd_file_close_window) },
 
   /* Edit menu */
-  { "EditCopy", GTK_STOCK_COPY, NULL, "<control>C", NULL,
+  { "EditCopy", "edit-copy", N_("_Copy"), "<control>C", NULL,
     G_CALLBACK (gdict_window_cmd_edit_copy) },
   { "EditSelectAll", NULL, N_("Select _All"), "<control>A", NULL,
     G_CALLBACK (gdict_window_cmd_edit_select_all) },
-  { "EditFind", GTK_STOCK_FIND, NULL, "<control>F",
+  { "EditFind", "edit-find", N_("_Find"), "<control>F",
     N_("Find a word or phrase in the document"),
     G_CALLBACK (gdict_window_cmd_edit_find) },
   { "EditFindNext", NULL, N_("Find Ne_xt"), "<control>G", NULL,
     G_CALLBACK (gdict_window_cmd_edit_find_next) },
   { "EditFindPrevious", NULL, N_("Find Pre_vious"), "<control><shift>G", NULL,
     G_CALLBACK (gdict_window_cmd_edit_find_previous) },
-  { "EditPreferences", GTK_STOCK_PREFERENCES, N_("_Preferences"), NULL, NULL,
+  { "EditPreferences", "preferences-desktop", N_("_Preferences"), NULL, NULL,
     G_CALLBACK (gdict_window_cmd_edit_preferences) },
 
   /* Go menu */
-  { "GoPreviousDef", GTK_STOCK_GO_BACK, N_("_Previous Definition"), "<control>Page_Up",
+  { "GoPreviousDef", "go-previous", N_("_Previous Definition"), "<control>Page_Up",
     N_("Go to the previous definition"), G_CALLBACK (gdict_window_cmd_go_previous_def) },
-  { "GoNextDef", GTK_STOCK_GO_FORWARD, N_("_Next Definition"), "<control>Page_Down",
+  { "GoNextDef", "go-next", N_("_Next Definition"), "<control>Page_Down",
     N_("Go to the next definition"), G_CALLBACK (gdict_window_cmd_go_next_def) },
-  { "GoFirstDef", GTK_STOCK_GOTO_FIRST, N_("_First Definition"), "<control>Home",
+  { "GoFirstDef", "go-first", N_("_First Definition"), "<control>Home",
     N_("Go to the first definition"), G_CALLBACK (gdict_window_cmd_go_first_def) },
-  { "GoLastDef", GTK_STOCK_GOTO_LAST, N_("_Last Definition"), "<control>End",
+  { "GoLastDef", "go-last", N_("_Last Definition"), "<control>End",
     N_("Go to the last definition"), G_CALLBACK (gdict_window_cmd_go_last_def) },
 
   /* View menu */
@@ -1338,15 +1338,15 @@ static const GtkActionEntry entries[] =
     G_CALLBACK (gdict_window_cmd_view_strategies), },
 
   /* Help menu */
-  { "HelpContents", GTK_STOCK_HELP, N_("_Contents"), "F1", NULL,
+  { "HelpContents", "help-browser", N_("_Contents"), "F1", NULL,
     G_CALLBACK (gdict_window_cmd_help_contents) },
-  { "HelpAbout", GTK_STOCK_ABOUT, N_("_About"), NULL, NULL,
+  { "HelpAbout", "help-about", N_("_About"), NULL, NULL,
     G_CALLBACK (gdict_window_cmd_help_about) },
   
   /* Accelerators */
   { "Lookup", NULL, "", "<control>L", NULL, G_CALLBACK (gdict_window_cmd_lookup) },
   { "Escape", NULL, "", "Escape", "", G_CALLBACK (gdict_window_cmd_escape) },
-  { "Slash", GTK_STOCK_FIND, NULL, "slash", NULL, G_CALLBACK (gdict_window_cmd_edit_find) },
+  { "Slash", "edit-find", NULL, "slash", NULL, G_CALLBACK (gdict_window_cmd_edit_find) },
 };
 
 static const GtkToggleActionEntry toggle_entries[] = {

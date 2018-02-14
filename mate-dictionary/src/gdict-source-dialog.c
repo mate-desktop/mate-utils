@@ -607,7 +607,7 @@ gdict_source_dialog_constructor (GType                  type,
 
   /* the help button is always visible */
   dialog->help_button = gtk_dialog_add_button (GTK_DIALOG (dialog),
-  					       GTK_STOCK_HELP,
+  					       "gtk-help",
 					       GTK_RESPONSE_HELP);
   
   vbox = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "db-vbox"));
@@ -636,15 +636,15 @@ gdict_source_dialog_constructor (GType                  type,
 
       /* we just allow closing the dialog */
       dialog->close_button  = gtk_dialog_add_button (GTK_DIALOG (dialog),
-      						     GTK_STOCK_CLOSE,
+      						     "gtk-close",
       						     GTK_RESPONSE_CLOSE);
       break;
     case GDICT_SOURCE_DIALOG_CREATE:
       dialog->cancel_button = gtk_dialog_add_button (GTK_DIALOG (dialog),
-      						     GTK_STOCK_CANCEL,
+      						     "gtk-cancel",
       						     GTK_RESPONSE_CANCEL);
       dialog->add_button    = gtk_dialog_add_button (GTK_DIALOG (dialog),
-      						     GTK_STOCK_ADD,
+      						     "gtk-add",
       						     GTK_RESPONSE_ACCEPT);
       /* the "add" button sensitivity is controlled by the transport_combo
        * since it's the only setting that makes a source usable.
@@ -653,10 +653,10 @@ gdict_source_dialog_constructor (GType                  type,
       break;
     case GDICT_SOURCE_DIALOG_EDIT:
       dialog->cancel_button = gtk_dialog_add_button (GTK_DIALOG (dialog),
-      						     GTK_STOCK_CANCEL,
+      						     "gtk-cancel",
       						     GTK_RESPONSE_CANCEL);
       dialog->close_button  = gtk_dialog_add_button (GTK_DIALOG (dialog),
-		      	 			     GTK_STOCK_CLOSE,
+		      	 			     "gtk-close",
 						     GTK_RESPONSE_CLOSE);
       break;
     default:

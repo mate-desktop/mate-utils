@@ -1798,7 +1798,7 @@ handle_search_command_stderr_io (GIOChannel * ioc,
 					gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), hbox, FALSE, FALSE, 0);
 					gtk_widget_show_all (hbox);
 
-					button = gsearchtool_button_new_with_stock_icon (_("Disable _Quick Search"), GTK_STOCK_OK);
+					button = gsearchtool_button_new_with_icon (_("Disable _Quick Search"), "gtk-ok");
 					gtk_widget_set_can_default (button, TRUE);
 					gtk_widget_show (button);
 
@@ -2051,7 +2051,12 @@ create_constraint_box (GSearchWindow * gsearch,
 	        break;
 	}
 
-	button = gtk_button_new_from_stock (GTK_STOCK_REMOVE);
+	button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
+					   "label", "gtk-remove",
+					   "use-stock", TRUE,
+					   "use-underline", TRUE,
+					   NULL));
+
 	gtk_widget_set_can_default (button, FALSE);
 
 	{
@@ -2197,7 +2202,12 @@ create_additional_constraint_section (GSearchWindow * gsearch)
 				  _("Select a search option from the drop-down list."));
 	}
 
-	gsearch->available_options_add_button = gtk_button_new_from_stock (GTK_STOCK_ADD);
+	gsearch->available_options_add_button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
+									  "label", "gtk-add",
+									  "use-stock", TRUE,
+									  "use-underline", TRUE,
+									  NULL));
+
 	gtk_widget_set_can_default (gsearch->available_options_add_button, FALSE);
 	gsearch->available_options_button_size_group = gtk_size_group_new (GTK_SIZE_GROUP_BOTH);
 	gtk_size_group_add_widget (gsearch->available_options_button_size_group, gsearch->available_options_add_button);
@@ -2877,7 +2887,14 @@ gsearch_app_create (GSearchWindow * gsearch)
 	gtk_box_pack_start (GTK_BOX (vbox), hbox, FALSE, FALSE, 0);
 
 	gtk_box_set_spacing (GTK_BOX (hbox), 6);
-	button = gtk_button_new_from_stock (GTK_STOCK_HELP);
+
+	button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
+					   "label", "gtk-help",
+					   "use-stock", TRUE,
+					   "use-underline", TRUE,
+					   NULL));
+
+
 	gtk_widget_set_can_default (button, TRUE);
 	gtk_box_pack_start (GTK_BOX (hbox), button, FALSE, FALSE, 0);
 	gtk_button_box_set_child_secondary (GTK_BUTTON_BOX (hbox), button, TRUE);
@@ -2887,7 +2904,12 @@ gsearch_app_create (GSearchWindow * gsearch)
 		add_atk_namedesc (GTK_WIDGET (button), NULL, _("Click to display the help manual."));
 	}
 
-	button = gtk_button_new_from_stock (GTK_STOCK_CLOSE);
+	button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
+					   "label", "gtk-close",
+					   "use-stock", TRUE,
+					   "use-underline", TRUE,
+					   NULL));
+
 	gtk_widget_set_can_default (button, TRUE);
 	g_signal_connect (G_OBJECT (button), "clicked",
 			  G_CALLBACK (click_close_cb), (gpointer) gsearch);
@@ -2898,8 +2920,17 @@ gsearch_app_create (GSearchWindow * gsearch)
 	gtk_box_pack_start (GTK_BOX (hbox), button, FALSE, FALSE, 0);
 
 	/* Find and Stop buttons... */
-	gsearch->find_button = gtk_button_new_from_stock (GTK_STOCK_FIND);
-	gsearch->stop_button = gtk_button_new_from_stock (GTK_STOCK_STOP);
+	gsearch->find_button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
+							 "label", "gtk-find",
+							 "use-stock", TRUE,
+							 "use-underline", TRUE,
+							 NULL));
+
+	gsearch->stop_button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
+							 "label", "gtk-stop",
+							 "use-stock", TRUE,
+							 "use-underline", TRUE,
+							 NULL));
 
 	gtk_widget_set_can_default (gsearch->find_button, TRUE);
 	gtk_widget_set_can_default (gsearch->stop_button, TRUE);

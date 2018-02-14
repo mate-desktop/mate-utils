@@ -468,7 +468,7 @@ logview_filter_manager_init (LogviewFilterManager *manager)
   priv->prefs = logview_prefs_get ();
 
   gtk_dialog_add_button (GTK_DIALOG(manager),
-                         GTK_STOCK_CLOSE,
+                         "gtk-close",
                          GTK_RESPONSE_CLOSE);
   gtk_window_set_modal (GTK_WINDOW (manager),
                         TRUE);
@@ -502,9 +502,23 @@ logview_filter_manager_init (LogviewFilterManager *manager)
   gtk_tree_view_append_column (GTK_TREE_VIEW (priv->tree),
                                column);
 
-  priv->add_button = gtk_button_new_from_stock (GTK_STOCK_ADD);
-  priv->edit_button = gtk_button_new_from_stock (GTK_STOCK_PROPERTIES);
-  priv->remove_button = gtk_button_new_from_stock (GTK_STOCK_REMOVE);
+  priv->add_button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
+					       "label", "gtk-add",
+					       "use-stock", TRUE,
+					       "use-underline", TRUE,
+					       NULL));
+
+  priv->edit_button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
+						"label", "gtk-properties",
+						"use-stock", TRUE,
+						"use-underline", TRUE,
+						NULL));
+
+  priv->remove_button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
+						  "label", "gtk-remove",
+						  "use-stock", TRUE,
+						  "use-underline", TRUE,
+						  NULL));
 
   gtk_window_set_title (GTK_WINDOW (manager),
                         _("Filters"));

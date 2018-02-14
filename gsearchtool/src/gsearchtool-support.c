@@ -1117,8 +1117,8 @@ gsearchtool_get_unique_filename (const gchar * path,
 }
 
 GtkWidget *
-gsearchtool_button_new_with_stock_icon (const gchar * string,
-                                        const gchar * stock_id)
+gsearchtool_button_new_with_icon (const gchar * string,
+                                  const gchar * icon_name)
 {
 	GtkWidget * button;
 	GtkWidget * hbox;
@@ -1128,7 +1128,7 @@ gsearchtool_button_new_with_stock_icon (const gchar * string,
 	button = gtk_button_new ();
 	label = gtk_label_new_with_mnemonic (string);
 	gtk_label_set_mnemonic_widget (GTK_LABEL (label), GTK_WIDGET (button));
-	image = gtk_image_new_from_stock (stock_id, GTK_ICON_SIZE_BUTTON);
+	image = gtk_image_new_from_icon_name (icon_name, GTK_ICON_SIZE_BUTTON);
 	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
 	gtk_box_pack_start (GTK_BOX (hbox), image, FALSE, FALSE, 0);
 	gtk_box_pack_end (GTK_BOX (hbox), label, FALSE, FALSE, 0);

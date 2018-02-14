@@ -884,7 +884,11 @@ gdict_source_chooser_add_button (GdictSourceChooser *chooser,
 
   priv = chooser->priv;
 
-  button = gtk_button_new_from_stock (button_text);
+  button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
+                                     "label", button_text,
+                                     "use-stock", TRUE,
+                                     "use-underline", TRUE,
+                                     NULL));
 
   gtk_widget_set_can_default (button, TRUE);
 

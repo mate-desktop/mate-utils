@@ -1728,9 +1728,9 @@ baobab_chart_save_snapshot (GtkWidget *chart)
   fs_dlg = gtk_file_chooser_dialog_new (_("Save Snapshot"),
                                         NULL,
                                         GTK_FILE_CHOOSER_ACTION_SAVE,
-                                        GTK_STOCK_CANCEL,
+                                        "gtk-cancel",
                                         GTK_RESPONSE_CANCEL,
-                                        GTK_STOCK_SAVE,
+                                        "gtk-save",
                                         GTK_RESPONSE_ACCEPT, NULL);
 
   item = (BaobabChartItem *) priv->first_item->data;

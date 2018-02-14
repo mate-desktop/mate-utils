@@ -325,8 +325,8 @@ logview_open_log (GtkAction *action, LogviewWindow *logview)
     chooser = gtk_file_chooser_dialog_new (_("Open Log"),
                                            GTK_WINDOW (logview),
                                            GTK_FILE_CHOOSER_ACTION_OPEN,
-                                           GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
-                                           GTK_STOCK_OPEN, GTK_RESPONSE_OK,
+                                           "gtk-cancel", GTK_RESPONSE_CANCEL,
+                                           "gtk-open", GTK_RESPONSE_OK,
                                            NULL);
     gtk_dialog_set_default_response (GTK_DIALOG (chooser), GTK_RESPONSE_OK);
     gtk_window_set_modal (GTK_WINDOW (chooser), TRUE);
@@ -819,33 +819,33 @@ static GtkActionEntry entries[] = {
     { "FilterMenu", NULL, N_("_Filters"), NULL, NULL, NULL },  
     { "HelpMenu", NULL, N_("_Help"), NULL, NULL, NULL },
 
-    { "OpenLog", GTK_STOCK_OPEN, N_("_Open..."), "<control>O", N_("Open a log from file"), 
+    { "OpenLog", "document-open", N_("_Open..."), "<control>O", N_("Open a log from file"), 
       G_CALLBACK (logview_open_log) },
-    { "CloseLog", GTK_STOCK_CLOSE, N_("_Close"), "<control>W", N_("Close this log"), 
+    { "CloseLog", "window-close", N_("_Close"), "<control>W", N_("Close this log"), 
       G_CALLBACK (logview_close_log) },
-    { "Quit", GTK_STOCK_QUIT, N_("_Quit"), "<control>Q", N_("Quit the log viewer"), 
+    { "Quit", "application-exit", N_("_Quit"), "<control>Q", N_("Quit the log viewer"), 
       G_CALLBACK (gtk_main_quit) },
 
-    { "Copy", GTK_STOCK_COPY, N_("_Copy"), "<control>C", N_("Copy the selection"),
+    { "Copy", "edit-copy", N_("_Copy"), "<control>C", N_("Copy the selection"),
       G_CALLBACK (logview_copy) },
     { "SelectAll", NULL, N_("Select _All"), "<Control>A", N_("Select the entire log"),
       G_CALLBACK (logview_select_all) },
-    { "Search", GTK_STOCK_FIND, N_("_Find..."), "<control>F", N_("Find a word or phrase in the log"),
+    { "Search", "edit-find", N_("_Find..."), "<control>F", N_("Find a word or phrase in the log"),
       G_CALLBACK (logview_search) },
 
-    { "ViewZoomIn", GTK_STOCK_ZOOM_IN, NULL, "<control>plus", N_("Bigger text size"),
+    { "ViewZoomIn", "zoom-in", N_("Zoom _In"), "<control>plus", N_("Bigger text size"),
       G_CALLBACK (logview_bigger_text)},
-    { "ViewZoomOut", GTK_STOCK_ZOOM_OUT, NULL, "<control>minus", N_("Smaller text size"),
+    { "ViewZoomOut", "zoom-out", N_("Zoom _Out"), "<control>minus", N_("Smaller text size"),
       G_CALLBACK (logview_smaller_text)},
-    { "ViewZoom100", GTK_STOCK_ZOOM_100, NULL, "<control>0", N_("Normal text size"),
+    { "ViewZoom100", "zoom-original", N_("_Normal Size"), "<control>0", N_("Normal text size"),
       G_CALLBACK (logview_normal_text)},
 
     { "FilterManage", NULL, N_("Manage Filters"), NULL, N_("Manage filters"),
       G_CALLBACK (logview_manage_filters)},
   
-    { "HelpContents", GTK_STOCK_HELP, N_("_Contents"), "F1", N_("Open the help contents for the log viewer"), 
+    { "HelpContents", "help-browser", N_("_Contents"), "F1", N_("Open the help contents for the log viewer"), 
       G_CALLBACK (logview_help) },
-    { "AboutAction", GTK_STOCK_ABOUT, N_("_About"), NULL, N_("Show the about dialog for the log viewer"), 
+    { "AboutAction", "help-about", N_("_About"), NULL, N_("Show the about dialog for the log viewer"), 
       G_CALLBACK (logview_about) },
 };
 
@@ -1364,7 +1364,7 @@ logview_window_init (LogviewWindow *logview)
   priv->message_area = gtk_info_bar_new ();
   message_area_create_error_box (logview, priv->message_area);
   gtk_info_bar_add_button (GTK_INFO_BAR (priv->message_area),
-                           GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE);
+                           "gtk-close", GTK_RESPONSE_CLOSE);
   gtk_box_pack_start (GTK_BOX (main_view), priv->message_area, FALSE, FALSE, 0);
 
   /* second pane: text view */

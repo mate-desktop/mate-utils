@@ -106,9 +106,9 @@ dir_select (gboolean SEARCH, GtkWidget *parent)
 		file_chooser = gtk_file_chooser_dialog_new (_("Select Folder"),
 					      GTK_WINDOW (parent),
 					      GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER,
-					      GTK_STOCK_CANCEL,
+					      "gtk-cancel",
 					      GTK_RESPONSE_CANCEL,
-					      GTK_STOCK_OPEN,
+					      "gtk-open",
 					      GTK_RESPONSE_OK, NULL);
 
 		gtk_file_chooser_set_show_hidden (GTK_FILE_CHOOSER (file_chooser), FALSE);
