@@ -723,7 +723,7 @@ baobab_remote_connect_dialog_init (BaobabRemoteConnectDialog *dialog)
 	setup_for_type (dialog);
 	
 	gtk_dialog_add_button (GTK_DIALOG (dialog),
-			       GTK_STOCK_CANCEL,
+			       "gtk-cancel",
 			       GTK_RESPONSE_CANCEL);
 	gtk_dialog_add_button (GTK_DIALOG (dialog),
 			       _("_Scan"),

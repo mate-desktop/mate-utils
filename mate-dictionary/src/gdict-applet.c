@@ -206,8 +206,8 @@ save_cb (GtkWidget   *widget,
   dialog = gtk_file_chooser_dialog_new (_("Save a Copy"),
   					GTK_WINDOW (priv->window),
   					GTK_FILE_CHOOSER_ACTION_SAVE,
-  					GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
-  					GTK_STOCK_SAVE, GTK_RESPONSE_ACCEPT,
+  					"gtk-cancel", GTK_RESPONSE_CANCEL,
+  					"gtk-save", GTK_RESPONSE_ACCEPT,
   					NULL);
   gtk_file_chooser_set_do_overwrite_confirmation (GTK_FILE_CHOOSER (dialog), TRUE);
   
@@ -353,7 +353,12 @@ gdict_applet_build_window (GdictApplet *applet)
   gtk_box_pack_end (GTK_BOX (vbox), bbox, FALSE, FALSE, 0);
   gtk_widget_show (bbox);
   
-  button = gtk_button_new_from_stock (GTK_STOCK_CLEAR);
+  button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
+				     "label", "gtk-clear",
+				     "use-stock", TRUE,
+				     "use-underline", TRUE,
+				     NULL));
+
   gtk_widget_set_tooltip_text (button, _("Clear the definitions found"));
   set_atk_name_description (button,
 		  	    _("Clear definition"),
@@ -363,7 +368,12 @@ gdict_applet_build_window (GdictApplet *applet)
   gtk_box_pack_start (GTK_BOX (bbox), button, FALSE, FALSE, 0);
   gtk_widget_show (button);
 
-  button = gtk_button_new_from_stock (GTK_STOCK_PRINT);
+  button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
+				     "label", "gtk-print",
+				     "use-stock", TRUE,
+				     "use-underline", TRUE,
+				     NULL));
+
   gtk_widget_set_tooltip_text (button, _("Print the definitions found"));
   set_atk_name_description (button,
 		  	    _("Print definition"),
@@ -373,7 +383,12 @@ gdict_applet_build_window (GdictApplet *applet)
   gtk_box_pack_start (GTK_BOX (bbox), button, FALSE, FALSE, 0);
   gtk_widget_show (button);
 
-  button = gtk_button_new_from_stock (GTK_STOCK_SAVE);
+  button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
+				     "label", "gtk-save",
+				     "use-stock", TRUE,
+				     "use-underline", TRUE,
+				     NULL));
+
   gtk_widget_set_tooltip_text (button, _("Save the definitions found"));
   set_atk_name_description (button,
 		  	    _("Save definition"),
@@ -1154,25 +1169,25 @@ gdict_applet_init (GdictApplet *applet)
 }
 
 static const GtkActionEntry gdict_applet_menu_actions[] = {
-  {"DictionaryLookup", GTK_STOCK_FIND, N_("_Look Up Selected Text"),
+  {"DictionaryLookup", "edit-find", N_("_Look Up Selected Text"),
     NULL, NULL,
     G_CALLBACK (gdict_applet_cmd_lookup) },
-  {"DictionaryClear", GTK_STOCK_CLEAR, N_("Cl_ear"),
+  {"DictionaryClear", "edit-clear", N_("Cl_ear"),
     NULL, NULL,
     G_CALLBACK (gdict_applet_cmd_clear) },
-  {"DictionaryPrint", GTK_STOCK_PRINT, N_("_Print"),
+  {"DictionaryPrint", "document-print", N_("_Print"),
     NULL, NULL,
     G_CALLBACK (gdict_applet_cmd_print) },
-  {"DictionarySave", GTK_STOCK_SAVE, N_("_Save"),
+  {"DictionarySave", "document-save", N_("_Save"),
     NULL, NULL,
     G_CALLBACK (gdict_applet_cmd_save) },
-  {"DictionaryPreferences", GTK_STOCK_PREFERENCES, N_("Preferences"),
+  {"DictionaryPreferences", "preferences-desktop", N_("Preferences"),
     NULL, NULL,
     G_CALLBACK (gdict_applet_cmd_preferences) },
-  {"DictionaryHelp", GTK_STOCK_HELP, N_("_Help"),
+  {"DictionaryHelp", "help-browser", N_("_Help"),
     NULL, NULL,
     G_CALLBACK (gdict_applet_cmd_help) },
-  {"DictionaryAbout", GTK_STOCK_ABOUT, N_("_About"),
+  {"DictionaryAbout", "help-about", N_("_About"),
     NULL, NULL,
     G_CALLBACK (gdict_applet_cmd_about) },
 };

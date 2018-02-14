@@ -526,8 +526,8 @@ create_interactive_dialog (void)
   create_screenshot_frame (main_vbox, _("Take Screenshot"));
   create_effects_frame (main_vbox, _("Effects"));
   gtk_dialog_add_buttons (GTK_DIALOG (retval),
-                          GTK_STOCK_HELP, GTK_RESPONSE_HELP,
-                          GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
+                          "gtk-help", GTK_RESPONSE_HELP,
+                          "gtk-cancel", GTK_RESPONSE_CANCEL,
                           _("Take _Screenshot"), GTK_RESPONSE_OK,
                           NULL);
   gtk_dialog_set_default_response (GTK_DIALOG (retval), GTK_RESPONSE_OK);
