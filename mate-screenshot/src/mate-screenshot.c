@@ -100,6 +100,7 @@ static gboolean interactive_arg = FALSE;
 static guint delay_arg = 0;
 
 /* Options */
+static gboolean noninteractive_clipboard_arg = FALSE;
 static gboolean take_window_shot = FALSE;
 static gboolean take_area_shot = FALSE;
 static gboolean include_border = FALSE;
@@ -705,6 +706,14 @@ save_done_notification (gpointer data)
 }
 
 static void
+save_screenshot_in_clipboard (GdkDisplay *display, GdkPixbuf *screenshot)
+{
+  GtkClipboard *clipboard =
+    gtk_clipboard_get_for_display (display, GDK_SELECTION_CLIPBOARD);
+  gtk_clipboard_set_image (clipboard, screenshot);
+}
+
+static void
 screenshot_dialog_response_cb (GtkDialog *d,
                                gint response_id,
                                ScreenshotDialog *dialog)
@@ -741,13 +750,8 @@ screenshot_dialog_response_cb (GtkDialog *d,
     }
   else if (response_id == SCREENSHOT_RESPONSE_COPY)
     {
-      GtkClipboard *clipboard;
-      GdkPixbuf    *screenshot;
-
-      clipboard = gtk_clipboard_get_for_display (gtk_widget_get_display (GTK_WIDGET (d)),
-                                                 GDK_SELECTION_CLIPBOARD);
-      screenshot = screenshot_dialog_get_screenshot (dialog);
-      gtk_clipboard_set_image (clipboard, screenshot);
+      save_screenshot_in_clipboard (gtk_widget_get_display (GTK_WIDGET (d)),
+                                    screenshot_dialog_get_screenshot (dialog));
     }
   else /* dialog was canceled */
     {
@@ -850,6 +854,14 @@ finish_prepare_screenshot (char *initial_uri, GdkWindow *window, GdkRectangle *r
     }
 
   play_sound_effect (window);
+
+  if (noninteractive_clipboard_arg) {
+    save_screenshot_in_clipboard (gdk_window_get_display (window), screenshot);
+    g_free (initial_uri);
+    /* Done here: */
+    gtk_main_quit ();
+    return;
+  }
 
   dialog = screenshot_dialog_new (screenshot, initial_uri, take_window_shot);
   g_free (initial_uri);
@@ -1303,6 +1315,7 @@ main (int argc, char *argv[])
   const GOptionEntry entries[] = {
     { "window", 'w', 0, G_OPTION_ARG_NONE, &window_arg, N_("Grab a window instead of the entire screen"), NULL },
     { "area", 'a', 0, G_OPTION_ARG_NONE, &area_arg, N_("Grab an area of the screen instead of the entire screen"), NULL },
+    { "clipboard", 'c', 0, G_OPTION_ARG_NONE, &noninteractive_clipboard_arg, N_("Send grabbed area directly to the clipboard"), NULL },
     { "include-border", 'b', 0, G_OPTION_ARG_NONE, &include_border_arg, N_("Include the window border with the screenshot"), NULL },
     { "remove-border", 'B', 0, G_OPTION_ARG_NONE, &disable_border_arg, N_("Remove the window border from the screenshot"), NULL },
     { "delay", 'd', 0, G_OPTION_ARG_INT, &delay_arg, N_("Take screenshot after specified delay [in seconds]"), N_("seconds") },
@@ -1337,6 +1350,12 @@ main (int argc, char *argv[])
   if (version_arg) {
     g_print ("%s %s\n", g_get_application_name (), VERSION);
     exit (EXIT_SUCCESS);
+  }
+
+  if (interactive_arg && noninteractive_clipboard_arg) {
+    g_printerr (_("Conflicting options: --clipboard and --interactive should not be "
+                  "used at the same time.\n"));
+    exit (1);
   }
 
   if (window_arg && area_arg) {
