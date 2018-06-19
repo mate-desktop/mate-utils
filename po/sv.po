@@ -1,24 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005
-# Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010
-# Henrik Mattsson-Mårn <h@reglage.net>, 2016
-# Jonatan Nyberg, 2016
-# Kristoffer Grundström <kristoffer.grundstrom1983@gmail.com>, 2015-2016
-# Martin Norbäck <d95mback@dtek.chalmers.se>, 2000
-# Tobias Lekare <lekare@linux.com>, 2017
-# Urban Berggren <pudberggren@icloud.com>, 2016
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-29 10:58+0100\n"
-"PO-Revision-Date: 2017-12-28 14:48+0000\n"
-"Last-Translator: Tobias Lekare <lekare@linux.com>\n"
-"Language-Team: Swedish (http://www.transifex.com/mate/MATE/language/sv/)\n"
+"POT-Creation-Date: 2018-03-17 21:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Urban Berggren <pudberggren@icloud.com>, 2018\n"
+"Language-Team: Swedish (https://www.transifex.com/mate/teams/13566/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -66,8 +59,8 @@ msgid "S_can Remote Folder..."
 msgstr "Sök av f_järrmapp..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../logview/src/logview-window.c:821
-#: ../mate-dictionary/src/gdict-window.c:1292
+#: ../logview/src/logview-window.c:817
+#: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Edit"
 msgstr "_Redigera"
 
@@ -80,8 +73,8 @@ msgid "_Collapse All"
 msgstr "_Fäll in alla"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../logview/src/logview-window.c:822
-#: ../mate-dictionary/src/gdict-window.c:1293
+#: ../logview/src/logview-window.c:818
+#: ../mate-dictionary/src/gdict-window.c:1289
 msgid "_View"
 msgstr "_Visa"
 
@@ -98,16 +91,16 @@ msgid "All_ocated Space"
 msgstr "All_okerat utrymme"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../logview/src/logview-window.c:824
-#: ../mate-dictionary/src/gdict-applet.c:1189
-#: ../mate-dictionary/src/gdict-window.c:1295
+#: ../logview/src/logview-window.c:820
+#: ../mate-dictionary/src/gdict-applet.c:1172
+#: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_Help"
 msgstr "_Hjälp"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../logview/src/logview-window.c:850
-#: ../mate-dictionary/src/gdict-window.c:1345
+#: ../logview/src/logview-window.c:846
+#: ../mate-dictionary/src/gdict-window.c:1341
 msgid "_Contents"
 msgstr "_Innehåll"
 
@@ -193,7 +186,8 @@ msgstr "Synliga tips för undermappar"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:10
 msgid "Whether the subfolder tooltips of the selected folder are drawn."
-msgstr "Huruvida verktygstips för undermappar för den markerade mappen ska visas."
+msgstr ""
+"Huruvida verktygstips för undermappar för den markerade mappen ska visas."
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:11
 msgid "Active Chart"
@@ -215,7 +209,14 @@ msgid ""
 "perform scans on a file system, your home or any other folder - local or "
 "remote. There is also an option to constantly monitor any external changes "
 "to the home directory and warn the user if a file is added/removed. </p>"
-msgstr "<p> Som namnet antyder, Disk Usage Analyzer är ett grafiskt vertyk som  du kan använda för att visa och övervaka din diskanvändning samt katalogstruktur. Den visar sammanfattande information i ring- eller träddiagram. </p> <p> Du kan utföra skanningar på filsystemet, din hemkatalog eller andra kataloger - lokalt eller fjärrstyrt. Det finns också möjlighet att konstant övervaka externa förändringar i hemkatalogen eller varna ifall en fil läggs till eller tas bort. </p>"
+msgstr ""
+"<p> Som namnet antyder, Disk Usage Analyzer är ett grafiskt vertyk som  du "
+"kan använda för att visa och övervaka din diskanvändning samt "
+"katalogstruktur. Den visar sammanfattande information i ring- eller "
+"träddiagram. </p> <p> Du kan utföra skanningar på filsystemet, din "
+"hemkatalog eller andra kataloger - lokalt eller fjärrstyrt. Det finns också "
+"möjlighet att konstant övervaka externa förändringar i hemkatalogen eller "
+"varna ifall en fil läggs till eller tas bort. </p>"
 
 #: ../baobab/src/baobab.c:137 ../baobab/src/baobab.c:357
 msgid "Scanning..."
@@ -242,7 +243,7 @@ msgstr "Beräknar procentstaplar..."
 #: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1306
 #: ../baobab/src/callbacks.c:263
 msgid "Ready"
-msgstr "Redo"
+msgstr "Klar"
 
 #: ../baobab/src/baobab.c:391
 msgid "Total filesystem capacity"
@@ -260,8 +261,8 @@ msgstr "innehåller hårda länkar för:"
 #, c-format
 msgid "%5d item"
 msgid_plural "%5d items"
-msgstr[0] "%5d objekt"
-msgstr[1] "%5d objekt"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../baobab/src/baobab.c:592
 msgid "Could not initialize monitoring"
@@ -421,44 +422,44 @@ msgstr "Ange ett namn och försök igen."
 msgid "_Location (URI):"
 msgstr "_Plats (URI):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:458
+#: ../baobab/src/baobab-remote-connect-dialog.c:454
 msgid "_Server:"
 msgstr "_Server:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:475
+#: ../baobab/src/baobab-remote-connect-dialog.c:467
 msgid "Optional information:"
 msgstr "Ytterligare information:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:488
+#: ../baobab/src/baobab-remote-connect-dialog.c:476
 msgid "_Share:"
 msgstr "Ut_delning:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:507
+#: ../baobab/src/baobab-remote-connect-dialog.c:491
 #: ../mate-dictionary/data/mate-dictionary-source.ui.h:4
 msgid "_Port:"
 msgstr "_Port:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:525
+#: ../baobab/src/baobab-remote-connect-dialog.c:505
 msgid "_Folder:"
 msgstr "_Mapp:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:543
+#: ../baobab/src/baobab-remote-connect-dialog.c:519
 msgid "_User Name:"
 msgstr "_Användarnamn:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:562
+#: ../baobab/src/baobab-remote-connect-dialog.c:534
 msgid "_Domain Name:"
 msgstr "_Domännamn:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:627
+#: ../baobab/src/baobab-remote-connect-dialog.c:595
 msgid "Connect to Server"
 msgstr "Anslut till server"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:643
+#: ../baobab/src/baobab-remote-connect-dialog.c:611
 msgid "Service _type:"
 msgstr "Tjänste_typ:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:765
+#: ../baobab/src/baobab-remote-connect-dialog.c:729
 msgid "_Scan"
 msgstr "_Sök av"
 
@@ -470,7 +471,9 @@ msgstr "Sök av din hemmapp igen?"
 msgid ""
 "The content of your home folder has changed. Select rescan to update the "
 "disk usage details."
-msgstr "Innehållet i din hemmapp har ändrats. Välj att söka av igen för att uppdatera diskanvändningsdetaljerna."
+msgstr ""
+"Innehållet i din hemmapp har ändrats. Välj att söka av igen för att "
+"uppdatera diskanvändningsdetaljerna."
 
 #: ../baobab/src/baobab-treeview.c:84
 msgid "_Rescan"
@@ -519,7 +522,7 @@ msgid "_Open Folder"
 msgstr "_Öppna mapp"
 
 #: ../baobab/src/baobab-utils.c:368
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1215
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1211
 msgid "Mo_ve to Trash"
 msgstr "_Flytta till papperskorgen"
 
@@ -546,7 +549,7 @@ msgstr "Kunde inte flytta filen till papperskorgen"
 msgid "Details: %s"
 msgstr "Detaljer: %s"
 
-#: ../baobab/src/baobab-utils.c:527
+#: ../baobab/src/baobab-utils.c:522
 msgid "There was an error displaying help."
 msgstr "Det uppstod ett fel vid visning av hjälp."
 
@@ -556,7 +559,11 @@ msgid ""
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Detta program är fri programvara. Du kan distribuera det och/eller modifiera det under villkoren i GNU General Public License, publicerad av Free Software Foundation, antingen version 2 eller (om du så vill) någon senare version."
+msgstr ""
+"Detta program är fri programvara. Du kan distribuera det och/eller modifiera"
+" det under villkoren i GNU General Public License, publicerad av Free "
+"Software Foundation, antingen version 2 eller (om du så vill) någon senare "
+"version."
 
 #: ../baobab/src/callbacks.c:81 ../logview/src/logview-about.h:53
 msgid ""
@@ -564,14 +571,21 @@ msgid ""
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
 "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
 "more details."
-msgstr "Detta program distribueras i hopp om att det ska vara användbart, men UTAN NÅGON SOM HELST GARANTI, även utan underförstådd garanti om SÄLJBARHET eller LÄMPLIGHET FÖR NÅGOT SPECIELLT ÄNDAMÅL. Se GNU General Public License för ytterligare information."
+msgstr ""
+"Detta program distribueras i hopp om att det ska vara användbart, men UTAN "
+"NÅGON SOM HELST GARANTI, även utan underförstådd garanti om SÄLJBARHET eller"
+" LÄMPLIGHET FÖR NÅGOT SPECIELLT ÄNDAMÅL. Se GNU General Public License för "
+"ytterligare information."
 
 #: ../baobab/src/callbacks.c:86 ../logview/src/logview-about.h:57
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
-msgstr "Du bör ha fått en kopia av GNU General Public License tillsammans med detta program. Om inte, skriv till Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"Du bör ha fått en kopia av GNU General Public License tillsammans med detta "
+"program. Om inte, skriv till Free Software Foundation, Inc., 51 Franklin "
+"Street, Fifth Floor, Boston, MA  02110-1301, USA"
 
 #: ../baobab/src/callbacks.c:98
 msgid "A graphical tool to analyze disk usage."
@@ -581,11 +595,11 @@ msgstr "Ett grafiskt verktyg för att analysera diskanvändning."
 #: ../baobab/src/callbacks.c:104 ../logview/src/logview-about.h:63
 #: ../mate-dictionary/src/gdict-about.c:55
 msgid "translator-credits"
-msgstr "Daniel Nylander\nChristian Rose\nMartin Norbäck\nAndreas Hydén\n\nSkicka synpunkter på översättningen till\n<tp-sv@listor.tp-sv.se>."
+msgstr "Kristoffer Grundström <kristoffer.grundstrom1983@gmail.com>"
 
 #: ../baobab/src/callbacks.c:202
-#: ../gsearchtool/src/gsearchtool-callbacks.c:513
-#: ../gsearchtool/src/gsearchtool-callbacks.c:853
+#: ../gsearchtool/src/gsearchtool-callbacks.c:509
+#: ../gsearchtool/src/gsearchtool-callbacks.c:849
 msgid "The document does not exist."
 msgstr "Dokumentet finns inte."
 
@@ -604,7 +618,12 @@ msgid ""
 " you instant access to a wide variety of parameters for each search, such as"
 " text contained within a file, ownership, date of modification, file size, "
 "folder exclusion, etc.. </p>"
-msgstr "<p> MATE Sökverktyg är ett enkelt, men kraftfullt verktyg, som erbjuder dig att söka efter filer eller kataloger bland alla monterade filsystem. Dess gränssnitt ger dig direkt tillgång till en bred mängd av parametrar för varje sökning, såsom textrader inom en fil, äganderätt, datum vid förändring, filstorlek, uteslutning av mappar, m.m. </p>"
+msgstr ""
+"<p> MATE Sökverktyg är ett enkelt, men kraftfullt verktyg, som erbjuder dig "
+"att söka efter filer eller kataloger bland alla monterade filsystem. Dess "
+"gränssnitt ger dig direkt tillgång till en bred mängd av parametrar för "
+"varje sökning, såsom textrader inom en fil, äganderätt, datum vid "
+"förändring, filstorlek, uteslutning av mappar, m.m. </p>"
 
 #: ../gsearchtool/data/mate-search-tool.desktop.in.h:1
 msgid "MATE Search Tool"
@@ -612,7 +631,8 @@ msgstr "MATE Sökverktyg"
 
 #: ../gsearchtool/data/mate-search-tool.desktop.in.h:2
 msgid "Locate documents and folders on this computer by name or content"
-msgstr "Lokalisera dokument och mappar på denna dator efter namn eller innehåll"
+msgstr ""
+"Lokalisera dokument och mappar på denna dator efter namn eller innehåll"
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:1
 msgid "Search history"
@@ -634,7 +654,9 @@ msgstr "Inaktivera snabbsökning"
 msgid ""
 "This key determines if the search tool disables the use of the locate "
 "command when performing simple file name searches."
-msgstr "Denna nyckel avgör om sökverktyget inaktiverar användningen av locate-kommandot då enkla filnamnssökningar genomförs."
+msgstr ""
+"Denna nyckel avgör om sökverktyget inaktiverar användningen av locate-"
+"kommandot då enkla filnamnssökningar genomförs."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:6
 msgid "Quick Search Excluded Paths"
@@ -645,7 +667,10 @@ msgid ""
 "This key defines the paths the search tool will exclude from a quick search."
 " The wildcards '*' and '?' are supported. The default values are /mnt/*, "
 "/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-msgstr "Denna nyckel anger de sökvägar som sökverktyget kommer att undanta från en snabbsökning. Jokertecknen \"*\" och \"?\" stöds. Standardvärdena är /mnt/*, /media/*, /dev/*, /tmp/*, /proc/* och /var/*."
+msgstr ""
+"Denna nyckel anger de sökvägar som sökverktyget kommer att undanta från en "
+"snabbsökning. Jokertecknen \"*\" och \"?\" stöds. Standardvärdena är /mnt/*,"
+" /media/*, /dev/*, /tmp/*, /proc/* och /var/*."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:8
 msgid "Disable Quick Search Second Scan"
@@ -655,7 +680,9 @@ msgstr "Inaktivera andra genomsökning i snabbsökning"
 msgid ""
 "This key determines if the search tool disables the use of the find command "
 "after performing a quick search."
-msgstr "Denna nyckel avgör om sökverktyget inaktiverar användningen av find-kommandot efter det att en snabbsökning genomförts."
+msgstr ""
+"Denna nyckel avgör om sökverktyget inaktiverar användningen av find-"
+"kommandot efter det att en snabbsökning genomförts."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:10
 msgid "Quick Search Second Scan Excluded Paths"
@@ -668,7 +695,12 @@ msgid ""
 "search for files. The purpose of the second scan is to find files that have "
 "not been indexed. The wildcards '*' and '?' are supported. The default value"
 " is /."
-msgstr "Denna nyckel anger de sökvägar som sökverktyget kommer att undanta från en andra genomsökning då en snabbsökning genomförs. Den andra genomsökningen använder find-kommandot för att söka efter filer. Syftet med den andra genomsökningen är att hitta filer som inte har indexerats. Jokertecknen \"*\" och \"?\" stöds. Standardvärdet är /."
+msgstr ""
+"Denna nyckel anger de sökvägar som sökverktyget kommer att undanta från en "
+"andra genomsökning då en snabbsökning genomförs. Den andra genomsökningen "
+"använder find-kommandot för att söka efter filer. Syftet med den andra "
+"genomsökningen är att hitta filer som inte har indexerats. Jokertecknen "
+"\"*\" och \"?\" stöds. Standardvärdet är /."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:12
 msgid "Search Result Columns Order"
@@ -678,7 +710,9 @@ msgstr "Ordning för sökresultatkolumner"
 msgid ""
 "This key defines the order of the columns in the search results. This key "
 "should not be modified by the user."
-msgstr "Denna nyckel definierar ordningen på kolumner i sökresultaten. Denna nyckel bör inte ändras av användaren."
+msgstr ""
+"Denna nyckel definierar ordningen på kolumner i sökresultaten. Denna nyckel "
+"bör inte ändras av användaren."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:14
 msgid "Default Window Width"
@@ -689,7 +723,10 @@ msgid ""
 "This key defines the window width, and it's used to remember the size of the"
 " search tool between sessions. Setting it to -1 will make the search tool "
 "use the default width."
-msgstr "Denna nyckel definierar fönstrets bredd och den används för att komma ihåg storleken på sökverktyget mellan sessioner. Ställa in det till -1 gör att sökverktyget använder standardbredden."
+msgstr ""
+"Denna nyckel definierar fönstrets bredd och den används för att komma ihåg "
+"storleken på sökverktyget mellan sessioner. Ställa in det till -1 gör att "
+"sökverktyget använder standardbredden."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:16
 msgid "Default Window Height"
@@ -700,7 +737,10 @@ msgid ""
 "This key defines the window height, and it's used to remember the size of "
 "the search tool between sessions. Setting it to -1 will make the search tool"
 " use the default height."
-msgstr "Denna nyckel definierar fönstrets höjd och den används för att komma ihåg storleken på sökverktyget mellan sessioner. Ställa in det till -1 gör att sökverktyget använder standardhöjden."
+msgstr ""
+"Denna nyckel definierar fönstrets höjd och den används för att komma ihåg "
+"storleken på sökverktyget mellan sessioner. Ställa in det till -1 gör att "
+"sökverktyget använder standardhöjden."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:18
 msgid "Default Window Maximized"
@@ -709,7 +749,8 @@ msgstr "Maximerat standardfönster"
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:19
 msgid ""
 "This key determines if the search tool window starts in a maximized state."
-msgstr "Denna nyckel bestämmer om sökverktygsfönstret startar i ett maximerat läge."
+msgstr ""
+"Denna nyckel bestämmer om sökverktygsfönstret startar i ett maximerat läge."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:20
 msgid "Look in Folder"
@@ -723,85 +764,113 @@ msgstr "Denna nyckel definierar standardvärdet för widgeten \"Sök i mapp\"."
 msgid ""
 "This key determines if the \"Contains the text\" search option is selected "
 "when the search tool is started."
-msgstr "Denna nyckel avgör om sökalternativet \"Innehåller texten\" är markerat då sökverktyget startas."
+msgstr ""
+"Denna nyckel avgör om sökalternativet \"Innehåller texten\" är markerat då "
+"sökverktyget startas."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:23
 msgid ""
 "This key determines if the \"Date modified less than\" search option is "
 "selected when the search tool is started."
-msgstr "Denna nyckel avgör om sökalternativet \"Ändringsdatum mindre än\" är markerat då sökverktyget startas."
+msgstr ""
+"Denna nyckel avgör om sökalternativet \"Ändringsdatum mindre än\" är "
+"markerat då sökverktyget startas."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:24
 msgid ""
 "This key determines if the \"Date modified more than\" search option is "
 "selected when the search tool is started."
-msgstr "Denna nyckel avgör om sökalternativet \"Ändringsdatum större än\" är markerat då sökverktyget startas."
+msgstr ""
+"Denna nyckel avgör om sökalternativet \"Ändringsdatum större än\" är "
+"markerat då sökverktyget startas."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:25
 msgid ""
 "This key determines if the \"Size at least\" search option is selected when "
 "the search tool is started."
-msgstr "Denna nyckel avgör om sökalternativet \"Storleken är minst\" är markerat då sökverktyget startas."
+msgstr ""
+"Denna nyckel avgör om sökalternativet \"Storleken är minst\" är markerat då "
+"sökverktyget startas."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:26
 msgid ""
 "This key determines if the \"Size at most\" search option is selected when "
 "the search tool is started."
-msgstr "Denna nyckel avgör om sökalternativet \"Storleken är som mest\" är markerat då sökverktyget startas."
+msgstr ""
+"Denna nyckel avgör om sökalternativet \"Storleken är som mest\" är markerat "
+"då sökverktyget startas."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:27
 msgid ""
 "This key determines if the \"File is empty\" search option is selected when "
 "the search tool is started."
-msgstr "Denna nyckel avgör om sökalternativet \"Filen är tom\" är markerat då sökverktyget startas."
+msgstr ""
+"Denna nyckel avgör om sökalternativet \"Filen är tom\" är markerat då "
+"sökverktyget startas."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:28
 msgid ""
 "This key determines if the \"Owned by user\" search option is selected when "
 "the search tool is started."
-msgstr "Denna nyckel avgör om sökalternativet \"Ägs av användaren\" är markerat då sökverktyget startas."
+msgstr ""
+"Denna nyckel avgör om sökalternativet \"Ägs av användaren\" är markerat då "
+"sökverktyget startas."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:29
 msgid ""
 "This key determines if the \"Owned by group\" search option is selected when"
 " the search tool is started."
-msgstr "Denna nyckel avgör om sökalternativet \"Ägs av gruppen\" är markerat då sökverktyget startas."
+msgstr ""
+"Denna nyckel avgör om sökalternativet \"Ägs av gruppen\" är markerat då "
+"sökverktyget startas."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:30
 msgid ""
 "This key determines if the \"Owner is unrecognized\" search option is "
 "selected when the search tool is started."
-msgstr "Denna nyckel avgör om sökalternativet \"Ägaren är okänd\" är markerat då sökverktyget startas."
+msgstr ""
+"Denna nyckel avgör om sökalternativet \"Ägaren är okänd\" är markerat då "
+"sökverktyget startas."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:31
 msgid ""
 "This key determines if the \"Name does not contain\" search option is "
 "selected when the search tool is started."
-msgstr "Denna nyckel avgör om sökalternativet \"Namnet innehåller inte\" är markerat då sökverktyget startas."
+msgstr ""
+"Denna nyckel avgör om sökalternativet \"Namnet innehåller inte\" är markerat"
+" då sökverktyget startas."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:32
 msgid ""
 "This key determines if the \"Name matches regular expression\" search option"
 " is selected when the search tool is started."
-msgstr "Denna nyckel avgör om sökalternativet \"Namnet matchar reguljärt uttryck\" är markerat då sökverktyget startas."
+msgstr ""
+"Denna nyckel avgör om sökalternativet \"Namnet matchar reguljärt uttryck\" "
+"är markerat då sökverktyget startas."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:33
 msgid ""
 "This key determines if the \"Show hidden files and folders\" search option "
 "is selected when the search tool is started."
-msgstr "Denna nyckel avgör om sökalternativet \"Visa dolda filer och mappar\" är markerat då sökverktyget startas."
+msgstr ""
+"Denna nyckel avgör om sökalternativet \"Visa dolda filer och mappar\" är "
+"markerat då sökverktyget startas."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:34
 msgid ""
 "This key determines if the \"Follow symbolic links\" search option is "
 "selected when the search tool is started."
-msgstr "Denna nyckel avgör om sökalternativet \"Följ symboliska länkar\" är markerat då sökverktyget startas."
+msgstr ""
+"Denna nyckel avgör om sökalternativet \"Följ symboliska länkar\" är markerat"
+" då sökverktyget startas."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:35
 msgid ""
 "This key determines if the \"Exclude other filesystems\" search option is "
 "selected when the search tool is started."
-msgstr "Denna nyckel avgör om sökalternativet \"Exkludera andra filsystem\" är markerat då sökverktyget startas."
+msgstr ""
+"Denna nyckel avgör om sökalternativet \"Exkludera andra filsystem\" är "
+"markerat då sökverktyget startas."
 
 #: ../gsearchtool/libeggsmclient/eggdesktopfile.c:165
 #, c-format
@@ -821,7 +890,7 @@ msgstr "Startar %s"
 #: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1098
 #, c-format
 msgid "Application does not accept documents on command line"
-msgstr "Programmet tar inte emot dokument på kommandoraden"
+msgstr "Programmet tar inte emot några dokument på kommandoraden"
 
 #: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1166
 #, c-format
@@ -831,12 +900,12 @@ msgstr "Okänd startflagga: %d"
 #: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1364
 #, c-format
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "Kan inte skicka dokument-URI:er till en \"Type=Link\"-skrivbordspost"
+msgstr "Kan inte skicka dokument-URI:er till ett \"Type=Link\"-skrivbordsobjekt"
 
 #: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1383
 #, c-format
 msgid "Not a launchable item"
-msgstr "Inte ett startbart objekt"
+msgstr "Inte ett körbart objekt"
 
 #: ../gsearchtool/libeggsmclient/eggsmclient.c:225
 msgid "Disable connection to session manager"
@@ -1001,15 +1070,15 @@ msgstr "Inga filer hittades"
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
-msgstr[0] "%'d fil hittades"
-msgstr[1] "%'d filer hittades"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gsearchtool/src/gsearchtool.c:1014 ../gsearchtool/src/gsearchtool.c:1052
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
-msgstr[0] "%'d fil hittades"
-msgstr[1] "%'d filer hittades"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gsearchtool/src/gsearchtool.c:1143
 msgid "Entry changed called for a non entry option!"
@@ -1025,11 +1094,13 @@ msgstr "Ställ in texten för sökalternativet \"Leta i mappen\""
 
 #: ../gsearchtool/src/gsearchtool.c:1310
 msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "Sortera filer efter ett av följande: namn, mapp, storlek, typ eller datum"
+msgstr ""
+"Sortera filer efter ett av följande: namn, mapp, storlek, typ eller datum"
 
 #: ../gsearchtool/src/gsearchtool.c:1311
 msgid "Set sort order to descending, the default is ascending"
-msgstr "Ställ in sorteringsordningen till fallande. Standardalternativet är stigande"
+msgstr ""
+"Ställ in sorteringsordningen till fallande. Standardalternativet är stigande"
 
 #: ../gsearchtool/src/gsearchtool.c:1312
 msgid "Automatically start a search"
@@ -1053,13 +1124,17 @@ msgstr "Ogiltigt alternativ skickat till sortby-kommandoradsargument."
 msgid ""
 "\n"
 "... Too many errors to display ..."
-msgstr "\n...För många fel för att visa..."
+msgstr ""
+"\n"
+"...För många fel för att visa..."
 
 #: ../gsearchtool/src/gsearchtool.c:1734
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
-msgstr "Sökresultaten kan vara felaktiga. Det inträffade fel vid utförandet av denna sökning."
+msgstr ""
+"Sökresultaten kan vara felaktiga. Det inträffade fel vid utförandet av denna"
+" sökning."
 
 #: ../gsearchtool/src/gsearchtool.c:1746 ../gsearchtool/src/gsearchtool.c:1790
 msgid "Show more _details"
@@ -1069,7 +1144,9 @@ msgstr "Visa fler _detaljer"
 msgid ""
 "The search results may be out of date or invalid.  Do you want to disable "
 "the quick search feature?"
-msgstr "Sökresultaten kan vara föråldrade eller ogiltiga. Vill du inaktivera snabbsökningsfunktionen?"
+msgstr ""
+"Sökresultaten kan vara föråldrade eller ogiltiga. Vill du inaktivera "
+"snabbsökningsfunktionen?"
 
 #: ../gsearchtool/src/gsearchtool.c:1801
 msgid "Disable _Quick Search"
@@ -1158,11 +1235,12 @@ msgstr "Ändringsdatum"
 
 #: ../gsearchtool/src/gsearchtool.c:2798
 msgid "_Name contains:"
-msgstr "_Namnet innehåller:"
+msgstr "_Namn innehåller:"
 
 #: ../gsearchtool/src/gsearchtool.c:2813 ../gsearchtool/src/gsearchtool.c:2814
 msgid "Enter a filename or partial filename with or without wildcards."
-msgstr "Ange ett filnamn eller ett ofullständigt filnamn med eller utan jokertecken."
+msgstr ""
+"Ange ett filnamn eller ett ofullständigt filnamn med eller utan jokertecken."
 
 #: ../gsearchtool/src/gsearchtool.c:2814
 msgid "Name contains"
@@ -1194,7 +1272,8 @@ msgstr "Välj fler alternativ"
 
 #: ../gsearchtool/src/gsearchtool.c:2863
 msgid "Click to expand or collapse the list of available options."
-msgstr "Klicka för att fälla ut eller fälla in listan med tillgängliga alternativ."
+msgstr ""
+"Klicka för att fälla ut eller fälla in listan med tillgängliga alternativ."
 
 #: ../gsearchtool/src/gsearchtool.c:2887
 msgid "Click to display the help manual."
@@ -1221,147 +1300,150 @@ msgstr "- MATE-sökverktyget"
 msgid "Failed to parse command line arguments: %s\n"
 msgstr "Misslyckades med att tolka kommandoradsargument: %s\n"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:203
+#: ../gsearchtool/src/gsearchtool-callbacks.c:199
 msgid "Could not open help document."
 msgstr "Kunde inte öppna hjälpdokument."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:354
+#: ../gsearchtool/src/gsearchtool-callbacks.c:350
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] "Är du säker att du vill öppna %d dokument?"
-msgstr[1] "Är du säker att du vill öppna %d dokument?"
+msgstr[0] ""
+msgstr[1] ""
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:359
-#: ../gsearchtool/src/gsearchtool-callbacks.c:556
+#: ../gsearchtool/src/gsearchtool-callbacks.c:355
+#: ../gsearchtool/src/gsearchtool-callbacks.c:552
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
-msgstr[0] "Detta kommer att öppna %d separat fönster."
-msgstr[1] "Detta kommer att öppna %d separata fönster."
+msgstr[0] ""
+msgstr[1] ""
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:399
+#: ../gsearchtool/src/gsearchtool-callbacks.c:395
 #, c-format
 msgid "Could not open document \"%s\"."
 msgstr "Kunde inte öppna dokumentet \"%s\"."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:428
+#: ../gsearchtool/src/gsearchtool-callbacks.c:424
 #, c-format
 msgid "Could not open folder \"%s\"."
 msgstr "Kunde inte öppna mappen \"%s\"."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:436
+#: ../gsearchtool/src/gsearchtool-callbacks.c:432
 msgid "The caja file manager is not running."
 msgstr "Filhanteraren caja körs inte."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:528
+#: ../gsearchtool/src/gsearchtool-callbacks.c:524
 msgid "There is no installed viewer capable of displaying the document."
 msgstr "Det finns ingen visare installerad som klarar visning av dokumentet."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:551
+#: ../gsearchtool/src/gsearchtool-callbacks.c:547
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] "Är du säker att du vill öppna %d mapp?"
-msgstr[1] "Är du säker att du vill öppna %d mappar?"
+msgstr[0] ""
+msgstr[1] ""
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:704
+#: ../gsearchtool/src/gsearchtool-callbacks.c:700
 #, c-format
 msgid "Could not move \"%s\" to trash."
 msgstr "Kunde inte flytta \"%s\" till papperskorgen."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:735
+#: ../gsearchtool/src/gsearchtool-callbacks.c:731
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
 msgstr "Vill du ta bort \"%s\" permanent?"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:738
+#: ../gsearchtool/src/gsearchtool-callbacks.c:734
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr "Papperskorgen är inte tillgänglig. Kunde inte flytta \"%s\" till papperskorgen."
+msgstr ""
+"Papperskorgen är inte tillgänglig. Kunde inte flytta \"%s\" till "
+"papperskorgen."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:777
+#: ../gsearchtool/src/gsearchtool-callbacks.c:773
 #, c-format
 msgid "Could not delete \"%s\"."
 msgstr "Kunde inte ta bort \"%s\"."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:889
+#: ../gsearchtool/src/gsearchtool-callbacks.c:885
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
 msgstr "Borttagning av \"%s\" misslyckades: %s."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:901
+#: ../gsearchtool/src/gsearchtool-callbacks.c:897
 #, c-format
 msgid "Moving \"%s\" failed: %s."
 msgstr "Flytt av \"%s\" misslyckades: %s."
 
 #. Popup menu item: Open
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1029
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1059
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1025
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1055
 msgid "_Open"
 msgstr "_Öppna"
 
 #. Popup menu item: Open with (default)
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1084
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1080
 #, c-format
 msgid "_Open with %s"
 msgstr "_Öppna med %s"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1119
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1115
 #, c-format
 msgid "Open with %s"
 msgstr "Öppna med %s"
 
 #. Popup menu item: Open With
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1152
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1148
 msgid "Open Wit_h"
 msgstr "Öppna m_ed"
 
 #. Popup menu item: Open Containing Folder
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1197
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1193
 msgid "Open Containing _Folder"
 msgstr "Öppna Innehållande _Katalog"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1237
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1233
 msgid "_Save Results As..."
 msgstr "_Spara resultat som..."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1622
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1618
 msgid "Save Search Results As..."
 msgstr "Spara sökresultat som..."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1651
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1647
 msgid "Could not save document."
 msgstr "Kunde inte spara dokumentet."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1652
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1648
 msgid "You did not select a document name."
 msgstr "Du valde inte något namn på dokumentet."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1682
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1678
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr "Kunde inte spara dokumentet \"%s\" till \"%s\"."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1715
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1711
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr "Dokumentet \"%s\" finns redan. Vill du ersätta det?"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1719
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1715
 msgid "If you replace an existing file, its contents will be overwritten."
-msgstr "Om du ersätter en befintlig fil kommer dess innehåll att skrivas över."
+msgstr ""
+"Om du ersätter en befintlig fil kommer dess innehåll att skrivas över."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1734
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1730
 #: ../mate-screenshot/src/screenshot-xfer.c:82
 msgid "_Replace"
 msgstr "_Ersätt"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1783
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1779
 msgid "The document name you selected is a folder."
 msgstr "Dokumentnamnet du valde är en mapp."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1819
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1815
 msgid "You may not have write permissions to the document."
 msgstr "Du kanske inte har skrivrättigheter till dokumentet."
 
@@ -1505,7 +1587,9 @@ msgstr "Loggfil att öppna vid uppstart"
 msgid ""
 "Specifies the log file displayed at startup. The default is either "
 "/var/adm/messages or /var/log/messages, depending on your operating system."
-msgstr "Anger den loggfil som visas vid uppstart. Standard är antingen /var/adm/messages eller /var/log/messages, beroende på ditt operativsystem."
+msgstr ""
+"Anger den loggfil som visas vid uppstart. Standard är antingen "
+"/var/adm/messages eller /var/log/messages, beroende på ditt operativsystem."
 
 #: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
 msgid "Size of the font used to display the log"
@@ -1515,7 +1599,10 @@ msgstr "Storlek på typsnittet som används för att visa loggen"
 msgid ""
 "Specifies the size of the fixed-width font used to display the log in the "
 "main tree view. The default is taken from the default terminal font size."
-msgstr "Anger storleken på det typsnitt med fast breddsteg som används för att visa loggen i huvudträdvyn. Standarden är tagen från storleken för standardterminaltypsnittet."
+msgstr ""
+"Anger storleken på det typsnitt med fast breddsteg som används för att visa "
+"loggen i huvudträdvyn. Standarden är tagen från storleken för "
+"standardterminaltypsnittet."
 
 #: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
 msgid "Height of the main window in pixels"
@@ -1541,7 +1628,9 @@ msgstr "Loggfiler att öppna vid uppstart"
 msgid ""
 "Specifies a list of log files to open up at startup. A default list is "
 "created by reading /etc/syslog.conf."
-msgstr "Anger en lista på loggfiler som öppnas vid uppstart. En standardlista skapas genom att läsa /etc/syslog.conf."
+msgstr ""
+"Anger en lista på loggfiler som öppnas vid uppstart. En standardlista skapas"
+" genom att läsa /etc/syslog.conf."
 
 #: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
 msgid "List of saved filters"
@@ -1678,7 +1767,7 @@ msgstr " - Bläddra och övervaka loggar"
 msgid "Log Viewer"
 msgstr "Loggvisare"
 
-#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:771
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:767
 msgid "System Log Viewer"
 msgstr "Systemloggvisare"
 
@@ -1696,152 +1785,152 @@ msgstr "%d rader (%s) - %s"
 msgid "Open Log"
 msgstr "Öppna logg"
 
-#: ../logview/src/logview-window.c:368
+#: ../logview/src/logview-window.c:364
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "Det uppstod ett fel vid visning av hjälp: %s"
 
-#: ../logview/src/logview-window.c:482
+#: ../logview/src/logview-window.c:478
 msgid "Wrapped"
 msgstr "Radbruten"
 
-#: ../logview/src/logview-window.c:497
+#: ../logview/src/logview-window.c:493
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1127
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1221
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1255
 msgid "Not found"
 msgstr "Hittades inte"
 
-#: ../logview/src/logview-window.c:777
+#: ../logview/src/logview-window.c:773
 msgid "A system log viewer for MATE."
 msgstr "En systemloggvisare för MATE."
 
-#: ../logview/src/logview-window.c:820
-#: ../mate-dictionary/src/gdict-window.c:1291
+#: ../logview/src/logview-window.c:816
+#: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_File"
 msgstr "_Arkiv"
 
-#: ../logview/src/logview-window.c:823
+#: ../logview/src/logview-window.c:819
 msgid "_Filters"
 msgstr "_Filter"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:822
 msgid "_Open..."
 msgstr "_Öppna..."
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:822
 msgid "Open a log from file"
 msgstr "Öppna en logg från fil"
 
-#: ../logview/src/logview-window.c:828
+#: ../logview/src/logview-window.c:824
 msgid "_Close"
-msgstr "S_täng"
+msgstr "_Stäng"
 
-#: ../logview/src/logview-window.c:828
+#: ../logview/src/logview-window.c:824
 msgid "Close this log"
 msgstr "Stäng denna logg"
 
-#: ../logview/src/logview-window.c:830
+#: ../logview/src/logview-window.c:826
 msgid "_Quit"
 msgstr "_Avsluta"
 
-#: ../logview/src/logview-window.c:830
+#: ../logview/src/logview-window.c:826
 msgid "Quit the log viewer"
 msgstr "Avsluta loggvisaren"
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:829
 msgid "_Copy"
 msgstr "_Kopiera"
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:829
 msgid "Copy the selection"
 msgstr "Kopiera markeringen"
 
-#: ../logview/src/logview-window.c:835
-#: ../mate-dictionary/src/gdict-window.c:1312
+#: ../logview/src/logview-window.c:831
+#: ../mate-dictionary/src/gdict-window.c:1308
 msgid "Select _All"
-msgstr "Markera _alla"
+msgstr "Markera _allt"
 
-#: ../logview/src/logview-window.c:835
+#: ../logview/src/logview-window.c:831
 msgid "Select the entire log"
 msgstr "Markera hela loggen"
 
-#: ../logview/src/logview-window.c:837
+#: ../logview/src/logview-window.c:833
 msgid "_Find..."
 msgstr "_Sök..."
 
-#: ../logview/src/logview-window.c:837
+#: ../logview/src/logview-window.c:833
 msgid "Find a word or phrase in the log"
 msgstr "Sök ett ord eller fras i loggen"
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:836
 msgid "Bigger text size"
 msgstr "Större textstorlek"
 
-#: ../logview/src/logview-window.c:842
+#: ../logview/src/logview-window.c:838
 msgid "Smaller text size"
 msgstr "Mindre textstorlek"
 
-#: ../logview/src/logview-window.c:844
+#: ../logview/src/logview-window.c:840
 msgid "Normal text size"
 msgstr "Normal textstorlek"
 
-#: ../logview/src/logview-window.c:847
+#: ../logview/src/logview-window.c:843
 msgid "Manage Filters"
 msgstr "Hantera filter"
 
-#: ../logview/src/logview-window.c:847
+#: ../logview/src/logview-window.c:843
 msgid "Manage filters"
 msgstr "Hantera filter"
 
-#: ../logview/src/logview-window.c:850
+#: ../logview/src/logview-window.c:846
 msgid "Open the help contents for the log viewer"
 msgstr "Öppna loggvisarens hjälpinnehållssida"
 
-#: ../logview/src/logview-window.c:852
-#: ../mate-dictionary/src/gdict-applet.c:1192
-#: ../mate-dictionary/src/gdict-window.c:1347
+#: ../logview/src/logview-window.c:848
+#: ../mate-dictionary/src/gdict-applet.c:1175
+#: ../mate-dictionary/src/gdict-window.c:1343
 msgid "_About"
 msgstr "_Om"
 
-#: ../logview/src/logview-window.c:852
+#: ../logview/src/logview-window.c:848
 msgid "Show the about dialog for the log viewer"
 msgstr "Visa omdialogrutan för loggvisaren"
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:853
 msgid "_Statusbar"
 msgstr "_Statusrad"
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:853
 msgid "Show Status Bar"
 msgstr "Visa statusrad"
 
-#: ../logview/src/logview-window.c:859
+#: ../logview/src/logview-window.c:855
 msgid "Side _Pane"
 msgstr "Sido_panel"
 
-#: ../logview/src/logview-window.c:859
+#: ../logview/src/logview-window.c:855
 msgid "Show Side Pane"
 msgstr "Visa sidopanel"
 
-#: ../logview/src/logview-window.c:861
+#: ../logview/src/logview-window.c:857
 msgid "Show matches only"
 msgstr "Visa endast sökträffar"
 
-#: ../logview/src/logview-window.c:861
+#: ../logview/src/logview-window.c:857
 msgid "Only show lines that match one of the given filters"
 msgstr "Visa endast rader som matchar ett av de angivna filtren"
 
-#: ../logview/src/logview-window.c:993
+#: ../logview/src/logview-window.c:989
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr "Kan inte läsa från \"%s\""
 
-#: ../logview/src/logview-window.c:1421
+#: ../logview/src/logview-window.c:1414
 msgid "Version: "
 msgstr "Version: "
 
-#: ../logview/src/logview-window.c:1529
+#: ../logview/src/logview-window.c:1522
 msgid "Could not open the following files:"
 msgstr "Kunde inte öppna följande filer:"
 
@@ -1867,7 +1956,11 @@ msgid ""
 "comes preconfigured with a list of Dict servers (RFC 2229), to which you can"
 " add your own sources, while you can select specific servers for a specific "
 "query. </p>"
-msgstr "<p> MATE Ordbok tillåter djg slå upp ord i en ordlista on-line. Den kommer förkonfigurerad med en lista av Dict-servrar (RFC 2229) som du kan utöka med egna källlor samt att du kan välja specifika servrar för en specifik fråga. </p>"
+msgstr ""
+"<p> MATE Ordbok tillåter djg slå upp ord i en ordlista on-line. Den kommer "
+"förkonfigurerad med en lista av Dict-servrar (RFC 2229) som du kan utöka med"
+" egna källlor samt att du kan välja specifika servrar för en specifik fråga."
+" </p>"
 
 #: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:1
 msgid "Dictionary Applet Factory"
@@ -1894,7 +1987,10 @@ msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
 "present in a dictionary source should be searched"
-msgstr "Namnet på den individuella standarddatabasen eller meta-databasen att använda på en ordbokskälla. Utropstecknet \"!\" betyder att alla databaser som finns i en ordbokskälla ska sökas"
+msgstr ""
+"Namnet på den individuella standarddatabasen eller meta-databasen att "
+"använda på en ordbokskälla. Utropstecknet \"!\" betyder att alla databaser "
+"som finns i en ordbokskälla ska sökas"
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:3
 msgid "The default search strategy to use"
@@ -1904,7 +2000,9 @@ msgstr "Standardsökstrategin att använda"
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is 'exact', that is match exact words."
-msgstr "Namnet på standardsökstrategin att använda på en ordbokskälla, om tillgänglig. Standardstrategin är \"exact\", alltså exakta ordmatchningar."
+msgstr ""
+"Namnet på standardsökstrategin att använda på en ordbokskälla, om "
+"tillgänglig. Standardstrategin är \"exact\", alltså exakta ordmatchningar."
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:5
 msgid "The font to be used when printing"
@@ -1921,7 +2019,8 @@ msgstr "Namnet för ordbokskällan som används"
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:8
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
-msgstr "Namnet på ordbokskällan som används för att hämta definitioner av ord."
+msgstr ""
+"Namnet på ordbokskällan som används för att hämta definitioner av ord."
 
 #: ../mate-dictionary/data/thai.desktop.in.h:1
 msgid "Longdo Thai-English Dictionaries"
@@ -1967,7 +2066,9 @@ msgstr "Ingen anslutning till ordboksservern på \"%s:%d\""
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1060
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
-msgstr "Uppslagning misslyckades för värdnamnet \"%s\": inga lämpliga resurser hittades"
+msgstr ""
+"Uppslagning misslyckades för värdnamnet \"%s\": inga lämpliga resurser "
+"hittades"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1091
 #, c-format
@@ -1984,14 +2085,18 @@ msgstr "Uppslagning misslyckades för värden \"%s\": värden hittades inte"
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
 "with code %d (server down)"
-msgstr "Kunde inte ansluta till ordboksservern på \"%s:%d\". Servern svarade med kod %d (servern är nere)"
+msgstr ""
+"Kunde inte ansluta till ordboksservern på \"%s:%d\". Servern svarade med kod"
+" %d (servern är nere)"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1196
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
 ": '%s'"
-msgstr "Kunde inte tolka ordboksserverns svar\n: \"%s\""
+msgstr ""
+"Kunde inte tolka ordboksserverns svar\n"
+": \"%s\""
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1225
 #, c-format
@@ -2038,7 +2143,9 @@ msgstr "Anslutning till ordboksservern misslyckades vid %s:%d"
 msgid ""
 "Error while reading reply from server:\n"
 "%s"
-msgstr "Fel vid läsning av svar från server:\n%s"
+msgstr ""
+"Fel vid läsning av svar från server:\n"
+"%s"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1852
 #, c-format
@@ -2100,21 +2207,21 @@ msgstr "_Föregående"
 msgid "_Next"
 msgstr "_Nästa"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2494
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2485
 msgid "Error while looking up definition"
 msgstr "Fel vid uppslagning av definition"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2536
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2527
 #: ../mate-dictionary/libgdict/gdict-speller.c:731
 msgid "Another search is in progress"
 msgstr "En annan sökning pågår"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2537
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2528
 #: ../mate-dictionary/libgdict/gdict-speller.c:732
 msgid "Please wait until the current search ends."
 msgstr "Var god vänta tills den aktuella sökningen är klar."
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2576
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2567
 msgid "Error while retrieving the definition"
 msgstr "Fel vid hämtning av definitionen"
 
@@ -2273,14 +2380,14 @@ msgid "Show GDict Options"
 msgstr "Visa GDict-alternativ"
 
 #: ../mate-dictionary/src/gdict-about.c:58
-#: ../mate-dictionary/src/gdict-applet.c:587
+#: ../mate-dictionary/src/gdict-applet.c:574
 msgid "Look up words in dictionaries"
 msgstr "Slå upp ord i ordböcker"
 
 #: ../mate-dictionary/src/gdict-about.c:79
 #: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:607
-#: ../mate-dictionary/src/gdict-window.c:1900
+#: ../mate-dictionary/src/gdict-window.c:1896
 msgid "Dictionary"
 msgstr "Ordbok"
 
@@ -2294,7 +2401,11 @@ msgid ""
 "  From '%s':\n"
 "\n"
 "%s\n"
-msgstr "Definition för \"%s\"\n  Från \"%s\":\n\n%s\n"
+msgstr ""
+"Definition för \"%s\"\n"
+"  Från \"%s\":\n"
+"\n"
+"%s\n"
 
 #: ../mate-dictionary/src/gdict-app.c:231
 #, c-format
@@ -2315,7 +2426,9 @@ msgstr "Kunde inte hitta en lämplig ordbokskälla"
 msgid ""
 "Error while looking up the definition of \"%s\":\n"
 "%s"
-msgstr "Fel vid uppslag av definitionen för \"%s\":\n%s"
+msgstr ""
+"Fel vid uppslag av definitionen för \"%s\":\n"
+"%s"
 
 #: ../mate-dictionary/src/gdict-app.c:333
 #: ../mate-dictionary/src/gdict-app.c:343
@@ -2357,130 +2470,130 @@ msgstr "db"
 msgid " - Look up words in dictionaries"
 msgstr " - Slå upp ord i ordböcker"
 
-#: ../mate-dictionary/src/gdict-applet.c:219
+#: ../mate-dictionary/src/gdict-applet.c:206
 #: ../mate-dictionary/src/gdict-window.c:964
 msgid "Save a Copy"
 msgstr "Spara en kopia"
 
-#: ../mate-dictionary/src/gdict-applet.c:229
+#: ../mate-dictionary/src/gdict-applet.c:216
 #: ../mate-dictionary/src/gdict-window.c:974
 msgid "Untitled document"
 msgstr "Namnlöst dokument"
 
-#: ../mate-dictionary/src/gdict-applet.c:250
+#: ../mate-dictionary/src/gdict-applet.c:237
 #: ../mate-dictionary/src/gdict-window.c:995
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "Fel vid skrivning till \"%s\""
 
-#: ../mate-dictionary/src/gdict-applet.c:370
+#: ../mate-dictionary/src/gdict-applet.c:357
 msgid "Clear the definitions found"
 msgstr "Rensa definitionerna som hittats"
 
-#: ../mate-dictionary/src/gdict-applet.c:372
+#: ../mate-dictionary/src/gdict-applet.c:359
 msgid "Clear definition"
 msgstr "Töm definition"
 
-#: ../mate-dictionary/src/gdict-applet.c:373
+#: ../mate-dictionary/src/gdict-applet.c:360
 msgid "Clear the text of the definition"
 msgstr "Rensa texten för definitionen"
 
-#: ../mate-dictionary/src/gdict-applet.c:380
+#: ../mate-dictionary/src/gdict-applet.c:367
 msgid "Print the definitions found"
 msgstr "Skriv ut definitionerna som hittats"
 
-#: ../mate-dictionary/src/gdict-applet.c:382
+#: ../mate-dictionary/src/gdict-applet.c:369
 msgid "Print definition"
 msgstr "Skriv ut definition"
 
-#: ../mate-dictionary/src/gdict-applet.c:383
+#: ../mate-dictionary/src/gdict-applet.c:370
 msgid "Print the text of the definition"
 msgstr "Skriv ut texten för definitionen"
 
-#: ../mate-dictionary/src/gdict-applet.c:390
+#: ../mate-dictionary/src/gdict-applet.c:377
 msgid "Save the definitions found"
 msgstr "Spara definitionerna som hittats"
 
-#: ../mate-dictionary/src/gdict-applet.c:392
+#: ../mate-dictionary/src/gdict-applet.c:379
 msgid "Save definition"
 msgstr "Spara definition"
 
-#: ../mate-dictionary/src/gdict-applet.c:393
+#: ../mate-dictionary/src/gdict-applet.c:380
 msgid "Save the text of the definition to a file"
 msgstr "Spara texten för definitionen i en fil"
 
-#: ../mate-dictionary/src/gdict-applet.c:530
+#: ../mate-dictionary/src/gdict-applet.c:517
 msgid "Click to view the dictionary window"
 msgstr "Klicka för att se ordboksfönstret"
 
-#: ../mate-dictionary/src/gdict-applet.c:532
+#: ../mate-dictionary/src/gdict-applet.c:519
 msgid "Toggle dictionary window"
 msgstr "Växla ordboksfönster"
 
-#: ../mate-dictionary/src/gdict-applet.c:533
+#: ../mate-dictionary/src/gdict-applet.c:520
 msgid "Show or hide the definition window"
 msgstr "Visa eller dölj definitionsfönstret"
 
-#: ../mate-dictionary/src/gdict-applet.c:584
+#: ../mate-dictionary/src/gdict-applet.c:571
 msgid "Type the word you want to look up"
 msgstr "Skriv in ordet du vill slå upp"
 
-#: ../mate-dictionary/src/gdict-applet.c:586
+#: ../mate-dictionary/src/gdict-applet.c:573
 msgid "Dictionary entry"
 msgstr "Ordbokspost"
 
-#: ../mate-dictionary/src/gdict-applet.c:715
+#: ../mate-dictionary/src/gdict-applet.c:702
 #: ../mate-dictionary/src/gdict-window.c:1106
 msgid "Dictionary Preferences"
 msgstr "Inställningar för ordbok"
 
-#: ../mate-dictionary/src/gdict-applet.c:743
-#: ../mate-dictionary/src/gdict-pref-dialog.c:499
-#: ../mate-dictionary/src/gdict-source-dialog.c:482
-#: ../mate-dictionary/src/gdict-window.c:1257
+#: ../mate-dictionary/src/gdict-applet.c:726
+#: ../mate-dictionary/src/gdict-pref-dialog.c:495
+#: ../mate-dictionary/src/gdict-source-dialog.c:478
+#: ../mate-dictionary/src/gdict-window.c:1253
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "Det uppstod ett fel vid visning av hjälp"
 
-#: ../mate-dictionary/src/gdict-applet.c:882
+#: ../mate-dictionary/src/gdict-applet.c:865
 #: ../mate-dictionary/src/gdict-window.c:522
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "Ingen ordbokskälla tillgänglig med namnet \"%s\""
 
-#: ../mate-dictionary/src/gdict-applet.c:886
+#: ../mate-dictionary/src/gdict-applet.c:869
 #: ../mate-dictionary/src/gdict-window.c:526
 msgid "Unable to find dictionary source"
 msgstr "Kunde inte hitta ordbokskällan"
 
-#: ../mate-dictionary/src/gdict-applet.c:902
+#: ../mate-dictionary/src/gdict-applet.c:885
 #: ../mate-dictionary/src/gdict-window.c:542
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "Inget sammanhang tillgängligt för källan \"%s\""
 
-#: ../mate-dictionary/src/gdict-applet.c:906
+#: ../mate-dictionary/src/gdict-applet.c:889
 #: ../mate-dictionary/src/gdict-window.c:546
 msgid "Unable to create a context"
 msgstr "Kunde inte skapa ett sammanhang"
 
-#: ../mate-dictionary/src/gdict-applet.c:1174
+#: ../mate-dictionary/src/gdict-applet.c:1157
 msgid "_Look Up Selected Text"
 msgstr "_Slå upp markerad text"
 
-#: ../mate-dictionary/src/gdict-applet.c:1177
+#: ../mate-dictionary/src/gdict-applet.c:1160
 msgid "Cl_ear"
 msgstr "Tö_m"
 
-#: ../mate-dictionary/src/gdict-applet.c:1180
+#: ../mate-dictionary/src/gdict-applet.c:1163
 msgid "_Print"
 msgstr "Skriv _ut"
 
-#: ../mate-dictionary/src/gdict-applet.c:1183
+#: ../mate-dictionary/src/gdict-applet.c:1166
 msgid "_Save"
 msgstr "_Spara"
 
-#: ../mate-dictionary/src/gdict-applet.c:1186
+#: ../mate-dictionary/src/gdict-applet.c:1169
 msgid "Preferences"
 msgstr "Inställningar"
 
@@ -2518,19 +2631,19 @@ msgstr "Detta kommer att permanent ta bort ordbokskällan från listan."
 msgid "Unable to remove source '%s'"
 msgstr "Kunde inte ta bort källan \"%s\""
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:646
+#: ../mate-dictionary/src/gdict-pref-dialog.c:642
 msgid "Add a new dictionary source"
 msgstr "Lägg till en ny ordbokskälla"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:652
+#: ../mate-dictionary/src/gdict-pref-dialog.c:648
 msgid "Remove the currently selected dictionary source"
 msgstr "Ta bort den för tillfället markerade ordbokskällan"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:658
+#: ../mate-dictionary/src/gdict-pref-dialog.c:654
 msgid "Edit the currently selected dictionary source"
 msgstr "Ändra den markerade ordbokskällan"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:666
+#: ../mate-dictionary/src/gdict-pref-dialog.c:662
 msgid "Set the font used for printing the definitions"
 msgstr "Ställ in typsnittet som används för utskrift av definitioner"
 
@@ -2564,179 +2677,179 @@ msgstr "Inga definitioner hittades"
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
-msgstr[0] "En definition hittades"
-msgstr[1] "%d definitioner hittades"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../mate-dictionary/src/gdict-window.c:605
 #, c-format
 msgid "%s - Dictionary"
 msgstr "%s - Ordbok"
 
-#: ../mate-dictionary/src/gdict-window.c:1294
+#: ../mate-dictionary/src/gdict-window.c:1290
 msgid "_Go"
 msgstr "_Gå"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1298
+#: ../mate-dictionary/src/gdict-window.c:1294
 msgid "_New"
 msgstr "_Ny"
 
-#: ../mate-dictionary/src/gdict-window.c:1299
+#: ../mate-dictionary/src/gdict-window.c:1295
 msgid "New look up"
 msgstr "Ny uppslagning"
 
-#: ../mate-dictionary/src/gdict-window.c:1300
+#: ../mate-dictionary/src/gdict-window.c:1296
 msgid "_Save a Copy..."
 msgstr "_Spara en kopia..."
 
-#: ../mate-dictionary/src/gdict-window.c:1302
+#: ../mate-dictionary/src/gdict-window.c:1298
 msgid "P_review..."
 msgstr "Fö_rhandsgranska..."
 
-#: ../mate-dictionary/src/gdict-window.c:1303
+#: ../mate-dictionary/src/gdict-window.c:1299
 msgid "Preview this document"
 msgstr "Förhandsgranska detta dokument"
 
-#: ../mate-dictionary/src/gdict-window.c:1304
+#: ../mate-dictionary/src/gdict-window.c:1300
 msgid "_Print..."
 msgstr "Skriv _ut..."
 
-#: ../mate-dictionary/src/gdict-window.c:1305
+#: ../mate-dictionary/src/gdict-window.c:1301
 msgid "Print this document"
 msgstr "Skriv ut detta dokument"
 
-#: ../mate-dictionary/src/gdict-window.c:1315
+#: ../mate-dictionary/src/gdict-window.c:1311
 msgid "Find a word or phrase in the document"
-msgstr "Sök ett ord eller fras i dokumentet"
+msgstr "Sök ett ord eller en fras i dokumentet"
 
-#: ../mate-dictionary/src/gdict-window.c:1317
+#: ../mate-dictionary/src/gdict-window.c:1313
 msgid "Find Ne_xt"
 msgstr "Sök _nästa"
 
-#: ../mate-dictionary/src/gdict-window.c:1319
+#: ../mate-dictionary/src/gdict-window.c:1315
 msgid "Find Pre_vious"
 msgstr "Sök _föregående"
 
-#: ../mate-dictionary/src/gdict-window.c:1321
+#: ../mate-dictionary/src/gdict-window.c:1317
 msgid "_Preferences"
 msgstr "_Inställningar"
 
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1325
+#: ../mate-dictionary/src/gdict-window.c:1321
 msgid "_Previous Definition"
 msgstr "_Föregående definition"
 
-#: ../mate-dictionary/src/gdict-window.c:1326
+#: ../mate-dictionary/src/gdict-window.c:1322
 msgid "Go to the previous definition"
 msgstr "Gå till den föregående definitionen"
 
-#: ../mate-dictionary/src/gdict-window.c:1327
+#: ../mate-dictionary/src/gdict-window.c:1323
 msgid "_Next Definition"
 msgstr "_Nästa definition"
 
-#: ../mate-dictionary/src/gdict-window.c:1328
+#: ../mate-dictionary/src/gdict-window.c:1324
 msgid "Go to the next definition"
 msgstr "Gå till nästa definition"
 
-#: ../mate-dictionary/src/gdict-window.c:1329
+#: ../mate-dictionary/src/gdict-window.c:1325
 msgid "_First Definition"
 msgstr "_Första definitionen"
 
-#: ../mate-dictionary/src/gdict-window.c:1330
+#: ../mate-dictionary/src/gdict-window.c:1326
 msgid "Go to the first definition"
 msgstr "Gå till den första definitionen"
 
-#: ../mate-dictionary/src/gdict-window.c:1331
+#: ../mate-dictionary/src/gdict-window.c:1327
 msgid "_Last Definition"
 msgstr "_Sista definitionen"
 
-#: ../mate-dictionary/src/gdict-window.c:1332
+#: ../mate-dictionary/src/gdict-window.c:1328
 msgid "Go to the last definition"
 msgstr "Gå till den sista definitionen"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1335
+#: ../mate-dictionary/src/gdict-window.c:1331
 msgid "Similar _Words"
 msgstr "Liknande _ord"
 
-#: ../mate-dictionary/src/gdict-window.c:1337
+#: ../mate-dictionary/src/gdict-window.c:1333
 msgid "Dictionary Sources"
 msgstr "Ordbokskällor"
 
-#: ../mate-dictionary/src/gdict-window.c:1339
+#: ../mate-dictionary/src/gdict-window.c:1335
 msgid "Available _Databases"
 msgstr "Tillgängliga _databaser"
 
-#: ../mate-dictionary/src/gdict-window.c:1341
+#: ../mate-dictionary/src/gdict-window.c:1337
 msgid "Available St_rategies"
 msgstr "Tillgängliga st_rategier"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1358
+#: ../mate-dictionary/src/gdict-window.c:1354
 msgid "_Sidebar"
 msgstr "_Sidorad"
 
-#: ../mate-dictionary/src/gdict-window.c:1360
+#: ../mate-dictionary/src/gdict-window.c:1356
 msgid "S_tatusbar"
 msgstr "S_tatusrad"
 
-#: ../mate-dictionary/src/gdict-window.c:1425
+#: ../mate-dictionary/src/gdict-window.c:1421
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "Ordbokskällan \"%s\" vald"
 
-#: ../mate-dictionary/src/gdict-window.c:1446
+#: ../mate-dictionary/src/gdict-window.c:1442
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "Strategin \"%s\" vald"
 
-#: ../mate-dictionary/src/gdict-window.c:1466
+#: ../mate-dictionary/src/gdict-window.c:1462
 #, c-format
 msgid "Database `%s' selected"
 msgstr "Databasen \"%s\" vald"
 
-#: ../mate-dictionary/src/gdict-window.c:1486
+#: ../mate-dictionary/src/gdict-window.c:1482
 #, c-format
 msgid "Word `%s' selected"
 msgstr "Ordet \"%s\" markerat"
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1511
+#: ../mate-dictionary/src/gdict-window.c:1507
 msgid "Double-click on the word to look up"
 msgstr "Dubbelklicka på ordet att slå upp"
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1517
+#: ../mate-dictionary/src/gdict-window.c:1513
 msgid "Double-click on the matching strategy to use"
 msgstr "Dubbelklicka på matchande strategi att använda"
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1522
+#: ../mate-dictionary/src/gdict-window.c:1518
 msgid "Double-click on the source to use"
 msgstr "Dubbelklicka på källan att använda"
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1531
+#: ../mate-dictionary/src/gdict-window.c:1527
 msgid "Double-click on the database to use"
 msgstr "Dubbelklicka på databasen att använda"
 
-#: ../mate-dictionary/src/gdict-window.c:1706
+#: ../mate-dictionary/src/gdict-window.c:1702
 msgid "Look _up:"
 msgstr "Slå _upp:"
 
-#: ../mate-dictionary/src/gdict-window.c:1781
+#: ../mate-dictionary/src/gdict-window.c:1777
 msgid "Similar words"
 msgstr "Liknande ord"
 
-#: ../mate-dictionary/src/gdict-window.c:1794
+#: ../mate-dictionary/src/gdict-window.c:1790
 msgid "Available dictionaries"
 msgstr "Tillgängliga ordböcker"
 
-#: ../mate-dictionary/src/gdict-window.c:1812
+#: ../mate-dictionary/src/gdict-window.c:1808
 msgid "Available strategies"
 msgstr "Tillgängliga strategier"
 
-#: ../mate-dictionary/src/gdict-window.c:1828
+#: ../mate-dictionary/src/gdict-window.c:1824
 msgid "Dictionary sources"
 msgstr "Ordbokskällor"
 
@@ -2791,11 +2904,15 @@ msgid ""
 " your desktop or of application windows. You can select to copy them to the "
 "system clipboard or save them in Portable Network Graphics (.png) image "
 "format. </p>"
-msgstr "<p> MATE Skärmbild är ett enkelt verktyg som låter dig fånga skärmbilder av ditt skrivbord eller av programfönster. Du kan välja att kopiera dem till systemets klippbord eller spara dem i Portable Network Graphics (.png) bildformat. </p>"
+msgstr ""
+"<p> MATE Skärmbild är ett enkelt verktyg som låter dig fånga skärmbilder av "
+"ditt skrivbord eller av programfönster. Du kan välja att kopiera dem till "
+"systemets klippbord eller spara dem i Portable Network Graphics (.png) "
+"bildformat. </p>"
 
 #: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
-#: ../mate-screenshot/src/mate-screenshot.c:540
-#: ../mate-screenshot/src/mate-screenshot.c:548
+#: ../mate-screenshot/src/mate-screenshot.c:518
+#: ../mate-screenshot/src/mate-screenshot.c:526
 msgid "Take Screenshot"
 msgstr "Ta en skärmbild"
 
@@ -2855,94 +2972,99 @@ msgstr "Rameffekt"
 msgid ""
 "Effect to add to the outside of a border. Possible values are \"shadow\", "
 "\"none\", and \"border\"."
-msgstr "Effekt att lägga till utsidan på ramen. Möjliga värden är \"shadow\", \"none\" och \"border\"."
+msgstr ""
+"Effekt att lägga till utsidan på ramen. Möjliga värden är \"shadow\", "
+"\"none\" och \"border\"."
 
-#: ../mate-screenshot/src/mate-screenshot.c:139
+#: ../mate-screenshot/src/mate-screenshot.c:137
 msgid "Error loading the help page"
 msgstr "Fil vid inläsning av hjälpsidan"
 
-#: ../mate-screenshot/src/mate-screenshot.c:251
+#: ../mate-screenshot/src/mate-screenshot.c:249
 msgid "None"
 msgstr "Ingen"
 
-#: ../mate-screenshot/src/mate-screenshot.c:252
+#: ../mate-screenshot/src/mate-screenshot.c:250
 msgid "Drop shadow"
 msgstr "Skugga"
 
-#: ../mate-screenshot/src/mate-screenshot.c:253
+#: ../mate-screenshot/src/mate-screenshot.c:251
 msgid "Border"
 msgstr "Ram"
 
 #. * Include pointer *
-#: ../mate-screenshot/src/mate-screenshot.c:358
+#: ../mate-screenshot/src/mate-screenshot.c:352
 msgid "Include _pointer"
 msgstr "Inkludera _pekare"
 
 #. * Include window border *
-#: ../mate-screenshot/src/mate-screenshot.c:367
+#: ../mate-screenshot/src/mate-screenshot.c:361
 msgid "Include the window _border"
 msgstr "Inkludera fönster_ramen"
 
-#: ../mate-screenshot/src/mate-screenshot.c:382
+#: ../mate-screenshot/src/mate-screenshot.c:376
 msgid "Apply _effect:"
 msgstr "Tillämpa _effekt:"
 
-#: ../mate-screenshot/src/mate-screenshot.c:450
+#: ../mate-screenshot/src/mate-screenshot.c:436
 msgid "Grab the whole _desktop"
 msgstr "Fånga hela s_krivbordet"
 
-#: ../mate-screenshot/src/mate-screenshot.c:462
+#: ../mate-screenshot/src/mate-screenshot.c:448
 msgid "Grab the current _window"
 msgstr "Fånga aktuellt _fönster"
 
-#: ../mate-screenshot/src/mate-screenshot.c:474
+#: ../mate-screenshot/src/mate-screenshot.c:460
 msgid "Select _area to grab"
 msgstr "Välj _område att fånga"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:492
+#: ../mate-screenshot/src/mate-screenshot.c:478
 msgid "Grab _after a delay of"
 msgstr "Fånga _efter en fördröjning på"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:517
-#: ../mate-screenshot/src/mate-screenshot.c:1274
+#: ../mate-screenshot/src/mate-screenshot.c:499
+#: ../mate-screenshot/src/mate-screenshot.c:1308
 msgid "seconds"
 msgstr "sekunder"
 
-#: ../mate-screenshot/src/mate-screenshot.c:549
+#: ../mate-screenshot/src/mate-screenshot.c:527
 msgid "Effects"
 msgstr "Effekter"
 
-#: ../mate-screenshot/src/mate-screenshot.c:553
+#: ../mate-screenshot/src/mate-screenshot.c:531
 msgid "Take _Screenshot"
 msgstr "Ta en _skärmbild"
 
-#: ../mate-screenshot/src/mate-screenshot.c:672
+#: ../mate-screenshot/src/mate-screenshot.c:650
 msgid "Error while saving screenshot"
 msgstr "Fel vid sparande av skärmbild"
 
-#: ../mate-screenshot/src/mate-screenshot.c:675
+#: ../mate-screenshot/src/mate-screenshot.c:653
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
 " Error was %s.\n"
 " Please choose another location and retry."
-msgstr "Omöjligt att spara skärmbilden till %s.\n Felet var %s.\n Välj en annan plats och försök igen."
+msgstr ""
+"Omöjligt att spara skärmbilden till %s.\n"
+" Felet var %s.\n"
+" Välj en annan plats och försök igen."
 
-#: ../mate-screenshot/src/mate-screenshot.c:807
+#: ../mate-screenshot/src/mate-screenshot.c:792
 msgid "Screenshot taken"
 msgstr "Skärmbild tagen"
 
-#: ../mate-screenshot/src/mate-screenshot.c:862
+#: ../mate-screenshot/src/mate-screenshot.c:847
 msgid "Unable to take a screenshot of the current window"
 msgstr "Kunde inte ta en skärmbild av det aktuella fönstret"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/src/mate-screenshot.c:919
+#: ../mate-screenshot/src/mate-screenshot.c:904
 #, c-format
 msgid "Screenshot at %s.png"
 msgstr "Skärmavbild vid %s.png"
@@ -2950,52 +3072,52 @@ msgstr "Skärmavbild vid %s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/src/mate-screenshot.c:926
+#: ../mate-screenshot/src/mate-screenshot.c:911
 #, c-format
 msgid "Screenshot at %s - %d.png"
 msgstr "Skärmavbild vid %s - %d.png"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1270
+#: ../mate-screenshot/src/mate-screenshot.c:1304
 msgid "Grab a window instead of the entire screen"
 msgstr "Fånga ett fönster istället för hela skärmen"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1271
+#: ../mate-screenshot/src/mate-screenshot.c:1305
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Fånga ett område av skärmen istället för hela skärmen"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1272
+#: ../mate-screenshot/src/mate-screenshot.c:1306
 msgid "Include the window border with the screenshot"
 msgstr "Inkludera fönsterramen i skärmbilden"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1273
+#: ../mate-screenshot/src/mate-screenshot.c:1307
 msgid "Remove the window border from the screenshot"
 msgstr "Ta bort fönsterramen från skärmbilden"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1274
+#: ../mate-screenshot/src/mate-screenshot.c:1308
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Ta skärmbild efter angiven fördröjning [i sekunder]"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1275
+#: ../mate-screenshot/src/mate-screenshot.c:1309
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Effekt att lägga till i ramen (skugga, ram eller ingen)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1275
+#: ../mate-screenshot/src/mate-screenshot.c:1309
 msgid "effect"
 msgstr "effekt"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1276
+#: ../mate-screenshot/src/mate-screenshot.c:1310
 msgid "Interactively set options"
 msgstr "Ställ interaktivt in alternativ"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1277
+#: ../mate-screenshot/src/mate-screenshot.c:1311
 msgid "Print version information and exit"
 msgstr "Skriv version information och avsluta"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1286
+#: ../mate-screenshot/src/mate-screenshot.c:1320
 msgid "Take a picture of the screen"
 msgstr "Ta en bild av skärmen"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1309
+#: ../mate-screenshot/src/mate-screenshot.c:1343
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
@@ -3009,14 +3131,18 @@ msgid ""
 "%s\n"
 "\n"
 "Please check your installation of mate-utils."
-msgstr "Fel vid laddning av definitionsfilen för användargränssnittet för skärmbildsprogrammet: \n%s\n\nVänligen kontrollera din installation av mate-utils."
+msgstr ""
+"Fel vid laddning av definitionsfilen för användargränssnittet för skärmbildsprogrammet: \n"
+"%s\n"
+"\n"
+"Vänligen kontrollera din installation av mate-utils."
 
 #: ../mate-screenshot/src/screenshot-dialog.c:230
 msgid "Select a folder"
 msgstr "Välj en mapp"
 
 #: ../mate-screenshot/src/screenshot-dialog.c:325
-#: ../mate-screenshot/src/screenshot-save.c:196
+#: ../mate-screenshot/src/screenshot-save.c:199
 msgid "Screenshot.png"
 msgstr "Skärmbild.png"
 
@@ -3025,15 +3151,19 @@ msgstr "Skärmbild.png"
 msgid ""
 "Unable to clear the temporary folder:\n"
 "%s"
-msgstr "Kunde inte tömma temporärmappen:\n%s"
+msgstr ""
+"Kunde inte tömma temporärmappen:\n"
+"%s"
 
 #: ../mate-screenshot/src/screenshot-save.c:95
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
-msgstr "Barnprocessen avslutades oväntat. Vi kan inte skriva skärmbilden till hårddisken."
+msgstr ""
+"Barnprocessen avslutades oväntat. Vi kan inte skriva skärmbilden till "
+"hårddisken."
 
-#: ../mate-screenshot/src/screenshot-save.c:223
+#: ../mate-screenshot/src/screenshot-save.c:225
 msgid "Unknown error saving screenshot to disk"
 msgstr "Okänt fel vid sparandet av skärmbilden på hårddisken"
 

@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2017
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-29 10:58+0100\n"
-"PO-Revision-Date: 2017-09-19 14:45+0000\n"
-"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
-"Language-Team: Kazakh (http://www.transifex.com/mate/MATE/language/kk/)\n"
+"POT-Creation-Date: 2018-03-17 21:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2018\n"
+"Language-Team: Kazakh (https://www.transifex.com/mate/teams/13566/kk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: kk\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 #: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:1
 msgid "MATE Disk Usage Analyzer"
@@ -59,8 +59,8 @@ msgid "S_can Remote Folder..."
 msgstr "Қашықтағы буманы с_канерлеу..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../logview/src/logview-window.c:821
-#: ../mate-dictionary/src/gdict-window.c:1292
+#: ../logview/src/logview-window.c:817
+#: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Edit"
 msgstr "Тү_зету"
 
@@ -73,8 +73,8 @@ msgid "_Collapse All"
 msgstr "Барл_ығын жинау"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../logview/src/logview-window.c:822
-#: ../mate-dictionary/src/gdict-window.c:1293
+#: ../logview/src/logview-window.c:818
+#: ../mate-dictionary/src/gdict-window.c:1289
 msgid "_View"
 msgstr "_Түрі"
 
@@ -91,16 +91,16 @@ msgid "All_ocated Space"
 msgstr "Бө_лінген орны"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../logview/src/logview-window.c:824
-#: ../mate-dictionary/src/gdict-applet.c:1189
-#: ../mate-dictionary/src/gdict-window.c:1295
+#: ../logview/src/logview-window.c:820
+#: ../mate-dictionary/src/gdict-applet.c:1172
+#: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_Help"
-msgstr "_Көмек"
+msgstr "Көм_ек"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../logview/src/logview-window.c:850
-#: ../mate-dictionary/src/gdict-window.c:1345
+#: ../logview/src/logview-window.c:846
+#: ../mate-dictionary/src/gdict-window.c:1341
 msgid "_Contents"
 msgstr "Құра_масы"
 
@@ -253,7 +253,8 @@ msgstr "келесіге қатаң сілтемелер бар:"
 #, c-format
 msgid "%5d item"
 msgid_plural "%5d items"
-msgstr[0] "%5d нәрсе"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../baobab/src/baobab.c:592
 msgid "Could not initialize monitoring"
@@ -413,44 +414,44 @@ msgstr "Атын көрсетіп, қайталап көріңіз."
 msgid "_Location (URI):"
 msgstr "Орна_ласу (URI):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:458
+#: ../baobab/src/baobab-remote-connect-dialog.c:454
 msgid "_Server:"
 msgstr "_Сервер:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:475
+#: ../baobab/src/baobab-remote-connect-dialog.c:467
 msgid "Optional information:"
 msgstr "Қосымша ақпарат:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:488
+#: ../baobab/src/baobab-remote-connect-dialog.c:476
 msgid "_Share:"
 msgstr "Бөлісу _бумасы:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:507
+#: ../baobab/src/baobab-remote-connect-dialog.c:491
 #: ../mate-dictionary/data/mate-dictionary-source.ui.h:4
 msgid "_Port:"
 msgstr "_Порт:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:525
+#: ../baobab/src/baobab-remote-connect-dialog.c:505
 msgid "_Folder:"
 msgstr "Бу_ма:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:543
+#: ../baobab/src/baobab-remote-connect-dialog.c:519
 msgid "_User Name:"
 msgstr "_Пайдаланушы аты:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:562
+#: ../baobab/src/baobab-remote-connect-dialog.c:534
 msgid "_Domain Name:"
 msgstr "_Домен аты:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:627
+#: ../baobab/src/baobab-remote-connect-dialog.c:595
 msgid "Connect to Server"
-msgstr "Серверге байланысты орнату"
+msgstr "Сервермен байланысты орнату"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:643
+#: ../baobab/src/baobab-remote-connect-dialog.c:611
 msgid "Service _type:"
 msgstr "Қызмет _түрі:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:765
+#: ../baobab/src/baobab-remote-connect-dialog.c:729
 msgid "_Scan"
 msgstr "_Сканерлеу"
 
@@ -462,7 +463,9 @@ msgstr "Үй бумасын қайта сканерлеу керек пе?"
 msgid ""
 "The content of your home folder has changed. Select rescan to update the "
 "disk usage details."
-msgstr "Үй бумаңыздың құрамасы өзгертілген. Диск қолданылуы ақпаратын жаңарту үшін қайта сканерлеуді таңдаңыз."
+msgstr ""
+"Үй бумаңыздың құрамасы өзгертілген. Диск қолданылуы ақпаратын жаңарту үшін "
+"қайта сканерлеуді таңдаңыз."
 
 #: ../baobab/src/baobab-treeview.c:84
 msgid "_Rescan"
@@ -511,7 +514,7 @@ msgid "_Open Folder"
 msgstr "Буманы а_шу"
 
 #: ../baobab/src/baobab-utils.c:368
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1215
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1211
 msgid "Mo_ve to Trash"
 msgstr "Қоқ_ыс шелегіне тастау"
 
@@ -538,7 +541,7 @@ msgstr "Файлды қоқыс шелегіне тастау мүмкін ем�
 msgid "Details: %s"
 msgstr "Ақпараты: %s"
 
-#: ../baobab/src/baobab-utils.c:527
+#: ../baobab/src/baobab-utils.c:522
 msgid "There was an error displaying help."
 msgstr "Көмекті көрсету кезінде қате кетті."
 
@@ -548,7 +551,10 @@ msgid ""
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Бұл - еркін бағдарлама; сіз оны Free Software Foundation шығарған GNU General Public License аясында еркін тарата не/және өзгерте аласыз; лицензия нұсқасы 2 не (тандауыңызша) кез-келген кейін шыққан."
+msgstr ""
+"Бұл - еркін бағдарлама; сіз оны Free Software Foundation шығарған GNU "
+"General Public License аясында еркін тарата не/және өзгерте аласыз; лицензия"
+" нұсқасы 2 не (тандауыңызша) кез-келген кейін шыққан."
 
 #: ../baobab/src/callbacks.c:81 ../logview/src/logview-about.h:53
 msgid ""
@@ -556,14 +562,21 @@ msgid ""
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
 "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
 "more details."
-msgstr "Бұл бағдарлама пайдалы болады деген сеніммен таратылады, бірақ ЕШҚАНДАЙ КЕПІЛДЕМЕ берілмейді; КОММЕРЦИЯЛЫҚ ҚҰНДЫЛЫҚ немесе белгілі бір МАҚСАТТАРҒА СӘЙКЕС КЕЛЕТІНІ үшін де.  Көбірек білу үшін GNU General Public License қараңыз."
+msgstr ""
+"Бұл бағдарлама пайдалы болады деген сеніммен таратылады, бірақ ЕШҚАНДАЙ "
+"КЕПІЛДЕМЕ берілмейді; КОММЕРЦИЯЛЫҚ ҚҰНДЫЛЫҚ немесе белгілі бір МАҚСАТТАРҒА "
+"СӘЙКЕС КЕЛЕТІНІ үшін де.  Көбірек білу үшін GNU General Public License "
+"қараңыз."
 
 #: ../baobab/src/callbacks.c:86 ../logview/src/logview-about.h:57
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
-msgstr "Сіз бұл бағдарламамен бірге GNU General Public License көшірмесін алуыңыз керек еді; олай болмаса, Free Software Foundation, Inc. ұйымына хабарласыңыз, 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA."
+msgstr ""
+"Сіз бұл бағдарламамен бірге GNU General Public License көшірмесін алуыңыз "
+"керек еді; олай болмаса, Free Software Foundation, Inc. ұйымына "
+"хабарласыңыз, 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA."
 
 #: ../baobab/src/callbacks.c:98
 msgid "A graphical tool to analyze disk usage."
@@ -576,8 +589,8 @@ msgid "translator-credits"
 msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
 
 #: ../baobab/src/callbacks.c:202
-#: ../gsearchtool/src/gsearchtool-callbacks.c:513
-#: ../gsearchtool/src/gsearchtool-callbacks.c:853
+#: ../gsearchtool/src/gsearchtool-callbacks.c:509
+#: ../gsearchtool/src/gsearchtool-callbacks.c:849
 msgid "The document does not exist."
 msgstr "Құжат жоқ болып тұр."
 
@@ -808,7 +821,7 @@ msgstr "Белгісіз desktop файлдың нұсқасы '%s'"
 #: ../gsearchtool/libeggsmclient/eggdesktopfile.c:957
 #, c-format
 msgid "Starting %s"
-msgstr "%s қосылуда"
+msgstr "%s іске қосылуда"
 
 #: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1098
 #, c-format
@@ -993,13 +1006,15 @@ msgstr "Файлдар табылмады"
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
-msgstr[0] "%'d файл табылды"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gsearchtool/src/gsearchtool.c:1014 ../gsearchtool/src/gsearchtool.c:1052
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
-msgstr[0] "%'d файл табылды"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gsearchtool/src/gsearchtool.c:1143
 msgid "Entry changed called for a non entry option!"
@@ -1136,7 +1151,7 @@ msgstr "Тізім көрінісі"
 #: ../gsearchtool/src/gsearchtool.c:2402
 #: ../mate-dictionary/libgdict/gdict-source.c:246
 msgid "Name"
-msgstr "Аты"
+msgstr "Атауы"
 
 #: ../gsearchtool/src/gsearchtool.c:2451
 msgid "Type"
@@ -1164,7 +1179,7 @@ msgstr "Бумадан қ_арау:"
 
 #: ../gsearchtool/src/gsearchtool.c:2826
 msgid "Browse"
-msgstr "Қарап шығу"
+msgstr "Шолу"
 
 #: ../gsearchtool/src/gsearchtool.c:2836
 msgid "Look in folder"
@@ -1211,144 +1226,147 @@ msgstr "- MATE іздеулер сайманы"
 msgid "Failed to parse command line arguments: %s\n"
 msgstr ""
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:203
+#: ../gsearchtool/src/gsearchtool-callbacks.c:199
 msgid "Could not open help document."
 msgstr ""
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:354
+#: ../gsearchtool/src/gsearchtool-callbacks.c:350
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] "%d құжатты ашуды шынымен қалайсыз ба?"
+msgstr[0] ""
+msgstr[1] ""
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:359
-#: ../gsearchtool/src/gsearchtool-callbacks.c:556
+#: ../gsearchtool/src/gsearchtool-callbacks.c:355
+#: ../gsearchtool/src/gsearchtool-callbacks.c:552
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
-msgstr[0] "Бұл әрекет %d бөлек терезені ашады."
+msgstr[0] ""
+msgstr[1] ""
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:399
+#: ../gsearchtool/src/gsearchtool-callbacks.c:395
 #, c-format
 msgid "Could not open document \"%s\"."
 msgstr "\"%s\" құжатын ашу мүмкін емес"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:428
+#: ../gsearchtool/src/gsearchtool-callbacks.c:424
 #, c-format
 msgid "Could not open folder \"%s\"."
 msgstr "\"%s\" бумасын ашу мүмкін емес."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:436
+#: ../gsearchtool/src/gsearchtool-callbacks.c:432
 msgid "The caja file manager is not running."
 msgstr "Caja файлдар басқарушысы орындалып тұрған жоқ."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:528
+#: ../gsearchtool/src/gsearchtool-callbacks.c:524
 msgid "There is no installed viewer capable of displaying the document."
 msgstr "Құжатты көрсете алатын орнатылған көрсеткіш қолданбасы жоқ."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:551
+#: ../gsearchtool/src/gsearchtool-callbacks.c:547
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] "%d буманы ашуды шынымен қалайсыз ба?"
+msgstr[0] ""
+msgstr[1] ""
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:704
+#: ../gsearchtool/src/gsearchtool-callbacks.c:700
 #, c-format
 msgid "Could not move \"%s\" to trash."
 msgstr "\"%s\" қоқыс шелегіне тастау мүмкін емес."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:735
+#: ../gsearchtool/src/gsearchtool-callbacks.c:731
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
 msgstr "\"%s\" қайтарылмастай өшіруді қалайсыз ба?"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:738
+#: ../gsearchtool/src/gsearchtool-callbacks.c:734
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
 msgstr "Қоқыс шелегі қолжетерсіз. \"%s\" қоқыс шелегіне тастау мүмкін емес."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:777
+#: ../gsearchtool/src/gsearchtool-callbacks.c:773
 #, c-format
 msgid "Could not delete \"%s\"."
 msgstr "\"%s\" өшіру мүмкін емес."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:889
+#: ../gsearchtool/src/gsearchtool-callbacks.c:885
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
 msgstr "\"%s\" өшіру сәтсіз аяқталды: %s."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:901
+#: ../gsearchtool/src/gsearchtool-callbacks.c:897
 #, c-format
 msgid "Moving \"%s\" failed: %s."
 msgstr "\"%s\" жылжыту сәтсіз аяқталды: %s."
 
 #. Popup menu item: Open
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1029
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1059
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1025
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1055
 msgid "_Open"
 msgstr "А_шу"
 
 #. Popup menu item: Open with (default)
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1084
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1080
 #, c-format
 msgid "_Open with %s"
 msgstr "%s көмегімен а_шу"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1119
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1115
 #, c-format
 msgid "Open with %s"
 msgstr "%s көмегімен ашу"
 
 #. Popup menu item: Open With
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1152
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1148
 msgid "Open Wit_h"
 msgstr "Кө_мегімен ашу"
 
 #. Popup menu item: Open Containing Folder
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1197
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1193
 msgid "Open Containing _Folder"
 msgstr "Орналасқан _бумасын ашу"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1237
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1233
 msgid "_Save Results As..."
 msgstr "Нәтижені қалайша _сақтау..."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1622
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1618
 msgid "Save Search Results As..."
 msgstr "Іздеу нәтижесін қалайша сақтау..."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1651
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1647
 msgid "Could not save document."
 msgstr "Құжатты сақтау мүмкін емес."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1652
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1648
 msgid "You did not select a document name."
 msgstr ""
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1682
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1678
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr ""
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1715
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1711
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr ""
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1719
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1715
 msgid "If you replace an existing file, its contents will be overwritten."
 msgstr ""
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1734
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1730
 #: ../mate-screenshot/src/screenshot-xfer.c:82
 msgid "_Replace"
 msgstr "А_лмастыру"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1783
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1779
 msgid "The document name you selected is a folder."
 msgstr ""
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1819
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1815
 msgid "You may not have write permissions to the document."
 msgstr ""
 
@@ -1665,7 +1683,7 @@ msgstr ""
 msgid "Log Viewer"
 msgstr "Логтар көрсетушісі"
 
-#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:771
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:767
 msgid "System Log Viewer"
 msgstr ""
 
@@ -1683,152 +1701,152 @@ msgstr ""
 msgid "Open Log"
 msgstr ""
 
-#: ../logview/src/logview-window.c:368
+#: ../logview/src/logview-window.c:364
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "Көмекті көрсету кезінде қате кетті: %s"
 
-#: ../logview/src/logview-window.c:482
+#: ../logview/src/logview-window.c:478
 msgid "Wrapped"
 msgstr ""
 
-#: ../logview/src/logview-window.c:497
+#: ../logview/src/logview-window.c:493
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1127
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1221
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1255
 msgid "Not found"
 msgstr "Табылмады"
 
-#: ../logview/src/logview-window.c:777
+#: ../logview/src/logview-window.c:773
 msgid "A system log viewer for MATE."
 msgstr ""
 
-#: ../logview/src/logview-window.c:820
-#: ../mate-dictionary/src/gdict-window.c:1291
+#: ../logview/src/logview-window.c:816
+#: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_File"
 msgstr "_Файл"
 
-#: ../logview/src/logview-window.c:823
+#: ../logview/src/logview-window.c:819
 msgid "_Filters"
 msgstr "_Сүзгілер"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:822
 msgid "_Open..."
 msgstr "А_шу..."
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:822
 msgid "Open a log from file"
 msgstr ""
 
-#: ../logview/src/logview-window.c:828
+#: ../logview/src/logview-window.c:824
 msgid "_Close"
 msgstr "Жа_бу"
 
-#: ../logview/src/logview-window.c:828
+#: ../logview/src/logview-window.c:824
 msgid "Close this log"
 msgstr ""
 
-#: ../logview/src/logview-window.c:830
+#: ../logview/src/logview-window.c:826
 msgid "_Quit"
 msgstr "_Шығу"
 
-#: ../logview/src/logview-window.c:830
+#: ../logview/src/logview-window.c:826
 msgid "Quit the log viewer"
 msgstr ""
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:829
 msgid "_Copy"
 msgstr "_Көшіру"
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:829
 msgid "Copy the selection"
 msgstr "Ерекшелеуді көшіру"
 
-#: ../logview/src/logview-window.c:835
-#: ../mate-dictionary/src/gdict-window.c:1312
+#: ../logview/src/logview-window.c:831
+#: ../mate-dictionary/src/gdict-window.c:1308
 msgid "Select _All"
 msgstr "Б_арлығын таңдау"
 
-#: ../logview/src/logview-window.c:835
+#: ../logview/src/logview-window.c:831
 msgid "Select the entire log"
 msgstr ""
 
-#: ../logview/src/logview-window.c:837
+#: ../logview/src/logview-window.c:833
 msgid "_Find..."
 msgstr "Та_бу..."
 
-#: ../logview/src/logview-window.c:837
+#: ../logview/src/logview-window.c:833
 msgid "Find a word or phrase in the log"
 msgstr ""
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:836
 msgid "Bigger text size"
 msgstr ""
 
-#: ../logview/src/logview-window.c:842
+#: ../logview/src/logview-window.c:838
 msgid "Smaller text size"
 msgstr ""
 
-#: ../logview/src/logview-window.c:844
+#: ../logview/src/logview-window.c:840
 msgid "Normal text size"
 msgstr ""
 
-#: ../logview/src/logview-window.c:847
+#: ../logview/src/logview-window.c:843
 msgid "Manage Filters"
 msgstr ""
 
-#: ../logview/src/logview-window.c:847
+#: ../logview/src/logview-window.c:843
 msgid "Manage filters"
 msgstr ""
 
-#: ../logview/src/logview-window.c:850
+#: ../logview/src/logview-window.c:846
 msgid "Open the help contents for the log viewer"
 msgstr ""
 
-#: ../logview/src/logview-window.c:852
-#: ../mate-dictionary/src/gdict-applet.c:1192
-#: ../mate-dictionary/src/gdict-window.c:1347
+#: ../logview/src/logview-window.c:848
+#: ../mate-dictionary/src/gdict-applet.c:1175
+#: ../mate-dictionary/src/gdict-window.c:1343
 msgid "_About"
 msgstr "О_сы туралы"
 
-#: ../logview/src/logview-window.c:852
+#: ../logview/src/logview-window.c:848
 msgid "Show the about dialog for the log viewer"
 msgstr ""
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:853
 msgid "_Statusbar"
 msgstr "Қалы_п-күй жолағы"
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:853
 msgid "Show Status Bar"
 msgstr "Қалып-күй жолағын көрсету"
 
-#: ../logview/src/logview-window.c:859
+#: ../logview/src/logview-window.c:855
 msgid "Side _Pane"
 msgstr "Бү_йір панелі"
 
-#: ../logview/src/logview-window.c:859
+#: ../logview/src/logview-window.c:855
 msgid "Show Side Pane"
 msgstr "Бүйір панельін көрсету"
 
-#: ../logview/src/logview-window.c:861
+#: ../logview/src/logview-window.c:857
 msgid "Show matches only"
 msgstr ""
 
-#: ../logview/src/logview-window.c:861
+#: ../logview/src/logview-window.c:857
 msgid "Only show lines that match one of the given filters"
 msgstr ""
 
-#: ../logview/src/logview-window.c:993
+#: ../logview/src/logview-window.c:989
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr ""
 
-#: ../logview/src/logview-window.c:1421
+#: ../logview/src/logview-window.c:1414
 msgid "Version: "
 msgstr "Нұсқасы:"
 
-#: ../logview/src/logview-window.c:1529
+#: ../logview/src/logview-window.c:1522
 msgid "Could not open the following files:"
 msgstr ""
 
@@ -1881,7 +1899,10 @@ msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
 "present in a dictionary source should be searched"
-msgstr "Сөздіктерді ұсынатын қайнар көзінде үнсіз келісім бойынша қолданылатын бөлек дерекқор немесе метадерекқор аты. Леп белгісі (\"!\") қойылса, онда іздеу қайнар көздегі барлық сөздіктер ішінде орындалады"
+msgstr ""
+"Сөздіктерді ұсынатын қайнар көзінде үнсіз келісім бойынша қолданылатын бөлек"
+" дерекқор немесе метадерекқор аты. Леп белгісі (\"!\") қойылса, онда іздеу "
+"қайнар көздегі барлық сөздіктер ішінде орындалады"
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:3
 msgid "The default search strategy to use"
@@ -1891,7 +1912,10 @@ msgstr "Қолданылатын үнсіз келісім стратегияс�
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is 'exact', that is match exact words."
-msgstr "Сөздіктерді ұсынатын қайнар көзінде қолжетерлік болса, үнсіз келісім бойынша қолданылатын стратегия. Бастапқы стратегия - \"exact\", яғни, тек толық сөздерді сәйкестендіру."
+msgstr ""
+"Сөздіктерді ұсынатын қайнар көзінде қолжетерлік болса, үнсіз келісім бойынша"
+" қолданылатын стратегия. Бастапқы стратегия - \"exact\", яғни, тек толық "
+"сөздерді сәйкестендіру."
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:5
 msgid "The font to be used when printing"
@@ -1908,7 +1932,9 @@ msgstr "Сөздіктерді ұсынатын қайнар көзінің ат
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:8
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
-msgstr "Сөздер анықтамаларын алуға қолданылған сөздіктерді ұсынатын қайнар көзінің аты."
+msgstr ""
+"Сөздер анықтамаларын алуға қолданылған сөздіктерді ұсынатын қайнар көзінің "
+"аты."
 
 #: ../mate-dictionary/data/thai.desktop.in.h:1
 msgid "Longdo Thai-English Dictionaries"
@@ -1954,7 +1980,8 @@ msgstr "\"%s:%d\" бойынша орналасқан сөздіктер сер�
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1060
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
-msgstr "\"%s\" хост атын іздеу сәтсіз аяқталды: сәйкес келетін ресурстар табылмады"
+msgstr ""
+"\"%s\" хост атын іздеу сәтсіз аяқталды: сәйкес келетін ресурстар табылмады"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1091
 #, c-format
@@ -1971,14 +1998,18 @@ msgstr "\"%s\" хостын іздеу сәтсіз аяқталды: хост �
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
 "with code %d (server down)"
-msgstr "\"%s:%d\" бойынша орналасқан сөздіктер серверіне байланысу мүмкін емес. Сервер %d кодымен жауап берді (сервер өшіп тұр)"
+msgstr ""
+"\"%s:%d\" бойынша орналасқан сөздіктер серверіне байланысу мүмкін емес. "
+"Сервер %d кодымен жауап берді (сервер өшіп тұр)"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1196
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
 ": '%s'"
-msgstr "Сөздіктер серверінің жауабын талдау мүмкін емес\n: “%s”"
+msgstr ""
+"Сөздіктер серверінің жауабын талдау мүмкін емес\n"
+": “%s”"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1225
 #, c-format
@@ -2018,19 +2049,25 @@ msgstr "\"%s\" бойынша орналасқан сөздіктер серве
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1740
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
-msgstr "%s:%d бойынша орналасқан сөздіктер серверіне байланысты орнату сәтсіз аяқталды"
+msgstr ""
+"%s:%d бойынша орналасқан сөздіктер серверіне байланысты орнату сәтсіз "
+"аяқталды"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1779
 #, c-format
 msgid ""
 "Error while reading reply from server:\n"
 "%s"
-msgstr "Серверден жауапты оқу қатемен аяқталды:\n%s"
+msgstr ""
+"Серверден жауапты оқу қатемен аяқталды:\n"
+"%s"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1852
 #, c-format
 msgid "Connection timeout for the dictionary server at '%s:%d'"
-msgstr "\"%s:%d\" бойынша орналасқан сөздіктер серверіне байланысты орнатуды күту уақыты бітті"
+msgstr ""
+"\"%s:%d\" бойынша орналасқан сөздіктер серверіне байланысты орнатуды күту "
+"уақыты бітті"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1886
 #, c-format
@@ -2087,21 +2124,21 @@ msgstr "А_лдыңғы"
 msgid "_Next"
 msgstr "_Келесі"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2494
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2485
 msgid "Error while looking up definition"
 msgstr "Анықтамасын іздеу қатесі"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2536
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2527
 #: ../mate-dictionary/libgdict/gdict-speller.c:731
 msgid "Another search is in progress"
 msgstr "Басқа іздеу жүруде"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2537
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2528
 #: ../mate-dictionary/libgdict/gdict-speller.c:732
 msgid "Please wait until the current search ends."
 msgstr "Ағымдағы іздеу аяқталғанша дейін күте тұрыңыз."
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2576
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2567
 msgid "Error while retrieving the definition"
 msgstr "Анықтамасын алу қатесі"
 
@@ -2119,7 +2156,7 @@ msgstr ""
 
 #: ../mate-dictionary/libgdict/gdict-source.c:260
 msgid "Description"
-msgstr "Сипаттамасы"
+msgstr "Анықтамасы"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:261
 msgid "The description of this dictionary source"
@@ -2176,13 +2213,17 @@ msgstr "Сөздікті ұсынатын қайнар көзінің анықт
 #: ../mate-dictionary/libgdict/gdict-source.c:530
 #, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
-msgstr "\"%s\" кілтін сөздіктерді ұсынатын қайнар көзінің анықтамасынан алу мүмкін емес: %s"
+msgstr ""
+"\"%s\" кілтін сөздіктерді ұсынатын қайнар көзінің анықтамасынан алу мүмкін "
+"емес: %s"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:555
 #, c-format
 msgid ""
 "Unable to get the '%s' key inside the dictionary source definition file: %s"
-msgstr "\"%s\" кілтін сөздіктерді ұсынатын қайнар көзінің анықтамасы файлынан алу мүмкін емес: %s"
+msgstr ""
+"\"%s\" кілтін сөздіктерді ұсынатын қайнар көзінің анықтамасы файлынан алу "
+"мүмкін емес: %s"
 
 #: ../mate-dictionary/libgdict/gdict-source.c:741
 #, c-format
@@ -2260,14 +2301,14 @@ msgid "Show GDict Options"
 msgstr "GDict опцияларын көрсету"
 
 #: ../mate-dictionary/src/gdict-about.c:58
-#: ../mate-dictionary/src/gdict-applet.c:587
+#: ../mate-dictionary/src/gdict-applet.c:574
 msgid "Look up words in dictionaries"
 msgstr "Сөздерді сөздіктерден іздеу"
 
 #: ../mate-dictionary/src/gdict-about.c:79
 #: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:607
-#: ../mate-dictionary/src/gdict-window.c:1900
+#: ../mate-dictionary/src/gdict-window.c:1896
 msgid "Dictionary"
 msgstr "Сөздік"
 
@@ -2281,7 +2322,11 @@ msgid ""
 "  From '%s':\n"
 "\n"
 "%s\n"
-msgstr "\"%s\" анықтамасы\n  \"%s\" ішінен:\n\n%s\n"
+msgstr ""
+"\"%s\" анықтамасы\n"
+"  \"%s\" ішінен:\n"
+"\n"
+"%s\n"
 
 #: ../mate-dictionary/src/gdict-app.c:231
 #, c-format
@@ -2344,130 +2389,130 @@ msgstr ""
 msgid " - Look up words in dictionaries"
 msgstr "- Сөздерді сөздіктерден іздеу"
 
-#: ../mate-dictionary/src/gdict-applet.c:219
+#: ../mate-dictionary/src/gdict-applet.c:206
 #: ../mate-dictionary/src/gdict-window.c:964
 msgid "Save a Copy"
 msgstr "Көшірмесін сақтау"
 
-#: ../mate-dictionary/src/gdict-applet.c:229
+#: ../mate-dictionary/src/gdict-applet.c:216
 #: ../mate-dictionary/src/gdict-window.c:974
 msgid "Untitled document"
 msgstr "Атаусыз құжат"
 
-#: ../mate-dictionary/src/gdict-applet.c:250
+#: ../mate-dictionary/src/gdict-applet.c:237
 #: ../mate-dictionary/src/gdict-window.c:995
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "\"%s\" ішіне жазу қатесі"
 
-#: ../mate-dictionary/src/gdict-applet.c:370
+#: ../mate-dictionary/src/gdict-applet.c:357
 msgid "Clear the definitions found"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-applet.c:372
+#: ../mate-dictionary/src/gdict-applet.c:359
 msgid "Clear definition"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-applet.c:373
+#: ../mate-dictionary/src/gdict-applet.c:360
 msgid "Clear the text of the definition"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-applet.c:380
+#: ../mate-dictionary/src/gdict-applet.c:367
 msgid "Print the definitions found"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-applet.c:382
+#: ../mate-dictionary/src/gdict-applet.c:369
 msgid "Print definition"
 msgstr "Анықтамасын баспаға шығару"
 
-#: ../mate-dictionary/src/gdict-applet.c:383
+#: ../mate-dictionary/src/gdict-applet.c:370
 msgid "Print the text of the definition"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-applet.c:390
+#: ../mate-dictionary/src/gdict-applet.c:377
 msgid "Save the definitions found"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-applet.c:392
+#: ../mate-dictionary/src/gdict-applet.c:379
 msgid "Save definition"
 msgstr "Анықтамасын сақтау"
 
-#: ../mate-dictionary/src/gdict-applet.c:393
+#: ../mate-dictionary/src/gdict-applet.c:380
 msgid "Save the text of the definition to a file"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-applet.c:530
+#: ../mate-dictionary/src/gdict-applet.c:517
 msgid "Click to view the dictionary window"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-applet.c:532
+#: ../mate-dictionary/src/gdict-applet.c:519
 msgid "Toggle dictionary window"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-applet.c:533
+#: ../mate-dictionary/src/gdict-applet.c:520
 msgid "Show or hide the definition window"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-applet.c:584
+#: ../mate-dictionary/src/gdict-applet.c:571
 msgid "Type the word you want to look up"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-applet.c:586
+#: ../mate-dictionary/src/gdict-applet.c:573
 msgid "Dictionary entry"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-applet.c:715
+#: ../mate-dictionary/src/gdict-applet.c:702
 #: ../mate-dictionary/src/gdict-window.c:1106
 msgid "Dictionary Preferences"
 msgstr "Сөздік баптаулары"
 
-#: ../mate-dictionary/src/gdict-applet.c:743
-#: ../mate-dictionary/src/gdict-pref-dialog.c:499
-#: ../mate-dictionary/src/gdict-source-dialog.c:482
-#: ../mate-dictionary/src/gdict-window.c:1257
+#: ../mate-dictionary/src/gdict-applet.c:726
+#: ../mate-dictionary/src/gdict-pref-dialog.c:495
+#: ../mate-dictionary/src/gdict-source-dialog.c:478
+#: ../mate-dictionary/src/gdict-window.c:1253
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "Көмекті көрсету кезінде қате кетті"
 
-#: ../mate-dictionary/src/gdict-applet.c:882
+#: ../mate-dictionary/src/gdict-applet.c:865
 #: ../mate-dictionary/src/gdict-window.c:522
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "\"%s\" аты бойынша сөздіктер ұсынатын қайнар көзі табылмады"
 
-#: ../mate-dictionary/src/gdict-applet.c:886
+#: ../mate-dictionary/src/gdict-applet.c:869
 #: ../mate-dictionary/src/gdict-window.c:526
 msgid "Unable to find dictionary source"
 msgstr "Сөздіктердің қайнар көзін табу мүмкін емес"
 
-#: ../mate-dictionary/src/gdict-applet.c:902
+#: ../mate-dictionary/src/gdict-applet.c:885
 #: ../mate-dictionary/src/gdict-window.c:542
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "\"%s\" қайнар көзі үшін контекст қолжетерсіз"
 
-#: ../mate-dictionary/src/gdict-applet.c:906
+#: ../mate-dictionary/src/gdict-applet.c:889
 #: ../mate-dictionary/src/gdict-window.c:546
 msgid "Unable to create a context"
 msgstr "Контекстті жасау мүмкін емес"
 
-#: ../mate-dictionary/src/gdict-applet.c:1174
+#: ../mate-dictionary/src/gdict-applet.c:1157
 msgid "_Look Up Selected Text"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-applet.c:1177
+#: ../mate-dictionary/src/gdict-applet.c:1160
 msgid "Cl_ear"
 msgstr "Та_зарту"
 
-#: ../mate-dictionary/src/gdict-applet.c:1180
+#: ../mate-dictionary/src/gdict-applet.c:1163
 msgid "_Print"
 msgstr "Бас_паға шығару"
 
-#: ../mate-dictionary/src/gdict-applet.c:1183
+#: ../mate-dictionary/src/gdict-applet.c:1166
 msgid "_Save"
 msgstr "_Сақтау"
 
-#: ../mate-dictionary/src/gdict-applet.c:1186
+#: ../mate-dictionary/src/gdict-applet.c:1169
 msgid "Preferences"
 msgstr "Баптаулар"
 
@@ -2498,26 +2543,27 @@ msgstr "\"%s\" өшіру керек пе?"
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:351
 msgid "This will permanently remove the dictionary source from the list."
-msgstr "Бұл әрекет сөздіктерді ұсынатын қайнар көзін тізімнен толығымен өшіреді."
+msgstr ""
+"Бұл әрекет сөздіктерді ұсынатын қайнар көзін тізімнен толығымен өшіреді."
 
 #: ../mate-dictionary/src/gdict-pref-dialog.c:381
 #, c-format
 msgid "Unable to remove source '%s'"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:646
+#: ../mate-dictionary/src/gdict-pref-dialog.c:642
 msgid "Add a new dictionary source"
 msgstr "Сөздіктердің жаңа қайнар көзін қосу"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:652
+#: ../mate-dictionary/src/gdict-pref-dialog.c:648
 msgid "Remove the currently selected dictionary source"
 msgstr "Ағымдағы таңдалып тұрған сөздіктердің қайнар көзін өшіру"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:658
+#: ../mate-dictionary/src/gdict-pref-dialog.c:654
 msgid "Edit the currently selected dictionary source"
 msgstr "Ағымдағы таңдалып тұрған сөздіктердің қайнар көзін түзету"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:666
+#: ../mate-dictionary/src/gdict-pref-dialog.c:662
 msgid "Set the font used for printing the definitions"
 msgstr "Анықтамаларды баспаға шығару үшін қолданылатын қаріпті орнату"
 
@@ -2551,178 +2597,179 @@ msgstr ""
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
-msgstr[0] "%d анықтама табылды"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../mate-dictionary/src/gdict-window.c:605
 #, c-format
 msgid "%s - Dictionary"
 msgstr "%s — сөздік"
 
-#: ../mate-dictionary/src/gdict-window.c:1294
+#: ../mate-dictionary/src/gdict-window.c:1290
 msgid "_Go"
 msgstr "Ө_ту"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1298
+#: ../mate-dictionary/src/gdict-window.c:1294
 msgid "_New"
 msgstr "Ж_аңа"
 
-#: ../mate-dictionary/src/gdict-window.c:1299
+#: ../mate-dictionary/src/gdict-window.c:1295
 msgid "New look up"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1300
+#: ../mate-dictionary/src/gdict-window.c:1296
 msgid "_Save a Copy..."
 msgstr "Көшірмесін _сақтау..."
 
-#: ../mate-dictionary/src/gdict-window.c:1302
+#: ../mate-dictionary/src/gdict-window.c:1298
 msgid "P_review..."
 msgstr "Ал_дын-ала қарау..."
 
-#: ../mate-dictionary/src/gdict-window.c:1303
+#: ../mate-dictionary/src/gdict-window.c:1299
 msgid "Preview this document"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1304
+#: ../mate-dictionary/src/gdict-window.c:1300
 msgid "_Print..."
 msgstr "Баспаға шығару"
 
-#: ../mate-dictionary/src/gdict-window.c:1305
+#: ../mate-dictionary/src/gdict-window.c:1301
 msgid "Print this document"
 msgstr "Бұл құжатты баспаға шығару"
 
-#: ../mate-dictionary/src/gdict-window.c:1315
+#: ../mate-dictionary/src/gdict-window.c:1311
 msgid "Find a word or phrase in the document"
 msgstr "Құжаттан сөзді не мәтінді табу"
 
-#: ../mate-dictionary/src/gdict-window.c:1317
+#: ../mate-dictionary/src/gdict-window.c:1313
 msgid "Find Ne_xt"
 msgstr "Ке_лесіні табу"
 
-#: ../mate-dictionary/src/gdict-window.c:1319
+#: ../mate-dictionary/src/gdict-window.c:1315
 msgid "Find Pre_vious"
 msgstr "Ал_дыңғысын табу"
 
-#: ../mate-dictionary/src/gdict-window.c:1321
+#: ../mate-dictionary/src/gdict-window.c:1317
 msgid "_Preferences"
-msgstr "Қалаулар"
+msgstr "Баптаулар"
 
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1325
+#: ../mate-dictionary/src/gdict-window.c:1321
 msgid "_Previous Definition"
 msgstr "_Алдыңғы анықтама"
 
-#: ../mate-dictionary/src/gdict-window.c:1326
+#: ../mate-dictionary/src/gdict-window.c:1322
 msgid "Go to the previous definition"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1327
+#: ../mate-dictionary/src/gdict-window.c:1323
 msgid "_Next Definition"
 msgstr "_Келесі анықтама"
 
-#: ../mate-dictionary/src/gdict-window.c:1328
+#: ../mate-dictionary/src/gdict-window.c:1324
 msgid "Go to the next definition"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1329
+#: ../mate-dictionary/src/gdict-window.c:1325
 msgid "_First Definition"
 msgstr "_Бірінші анықтама"
 
-#: ../mate-dictionary/src/gdict-window.c:1330
+#: ../mate-dictionary/src/gdict-window.c:1326
 msgid "Go to the first definition"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1331
+#: ../mate-dictionary/src/gdict-window.c:1327
 msgid "_Last Definition"
 msgstr "_Соңғы анықтама"
 
-#: ../mate-dictionary/src/gdict-window.c:1332
+#: ../mate-dictionary/src/gdict-window.c:1328
 msgid "Go to the last definition"
 msgstr ""
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1335
+#: ../mate-dictionary/src/gdict-window.c:1331
 msgid "Similar _Words"
 msgstr "Ұқсас _сөздер"
 
-#: ../mate-dictionary/src/gdict-window.c:1337
+#: ../mate-dictionary/src/gdict-window.c:1333
 msgid "Dictionary Sources"
 msgstr "Сөздіктер қайнар көздері"
 
-#: ../mate-dictionary/src/gdict-window.c:1339
+#: ../mate-dictionary/src/gdict-window.c:1335
 msgid "Available _Databases"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1341
+#: ../mate-dictionary/src/gdict-window.c:1337
 msgid "Available St_rategies"
 msgstr "Қолжетерлік с_тратегиялар"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1358
+#: ../mate-dictionary/src/gdict-window.c:1354
 msgid "_Sidebar"
 msgstr "_Бүйір панелі"
 
-#: ../mate-dictionary/src/gdict-window.c:1360
+#: ../mate-dictionary/src/gdict-window.c:1356
 msgid "S_tatusbar"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1425
+#: ../mate-dictionary/src/gdict-window.c:1421
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1446
+#: ../mate-dictionary/src/gdict-window.c:1442
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1466
+#: ../mate-dictionary/src/gdict-window.c:1462
 #, c-format
 msgid "Database `%s' selected"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1486
+#: ../mate-dictionary/src/gdict-window.c:1482
 #, c-format
 msgid "Word `%s' selected"
 msgstr ""
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1511
+#: ../mate-dictionary/src/gdict-window.c:1507
 msgid "Double-click on the word to look up"
 msgstr "Сөзді іздеу үшін оның үстіне қос шертіңіз"
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1517
+#: ../mate-dictionary/src/gdict-window.c:1513
 msgid "Double-click on the matching strategy to use"
 msgstr "Сәйкес келетін стратегияны қолдану үшін оның үстіне қос шертіңіз"
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1522
+#: ../mate-dictionary/src/gdict-window.c:1518
 msgid "Double-click on the source to use"
 msgstr "Қайнар көзді қолдану үшін оның үстіне қос шертіңіз"
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1531
+#: ../mate-dictionary/src/gdict-window.c:1527
 msgid "Double-click on the database to use"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1706
+#: ../mate-dictionary/src/gdict-window.c:1702
 msgid "Look _up:"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1781
+#: ../mate-dictionary/src/gdict-window.c:1777
 msgid "Similar words"
 msgstr "Ұқсас сөздер"
 
-#: ../mate-dictionary/src/gdict-window.c:1794
+#: ../mate-dictionary/src/gdict-window.c:1790
 msgid "Available dictionaries"
 msgstr "Қолжетерлік сөздіктер"
 
-#: ../mate-dictionary/src/gdict-window.c:1812
+#: ../mate-dictionary/src/gdict-window.c:1808
 msgid "Available strategies"
 msgstr "Қолжетерлік стратегиялар"
 
-#: ../mate-dictionary/src/gdict-window.c:1828
+#: ../mate-dictionary/src/gdict-window.c:1824
 msgid "Dictionary sources"
 msgstr "Қолжетерлік қайнар көздері"
 
@@ -2780,8 +2827,8 @@ msgid ""
 msgstr ""
 
 #: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
-#: ../mate-screenshot/src/mate-screenshot.c:540
-#: ../mate-screenshot/src/mate-screenshot.c:548
+#: ../mate-screenshot/src/mate-screenshot.c:518
+#: ../mate-screenshot/src/mate-screenshot.c:526
 msgid "Take Screenshot"
 msgstr "Скриншотты түсіру"
 
@@ -2843,74 +2890,74 @@ msgid ""
 "\"none\", and \"border\"."
 msgstr ""
 
-#: ../mate-screenshot/src/mate-screenshot.c:139
+#: ../mate-screenshot/src/mate-screenshot.c:137
 msgid "Error loading the help page"
 msgstr "Көмекті көрсету кезінде қате кетті"
 
-#: ../mate-screenshot/src/mate-screenshot.c:251
+#: ../mate-screenshot/src/mate-screenshot.c:249
 msgid "None"
 msgstr "Жоқ"
 
-#: ../mate-screenshot/src/mate-screenshot.c:252
+#: ../mate-screenshot/src/mate-screenshot.c:250
 msgid "Drop shadow"
 msgstr "Көлеңке"
 
-#: ../mate-screenshot/src/mate-screenshot.c:253
+#: ../mate-screenshot/src/mate-screenshot.c:251
 msgid "Border"
 msgstr "Шектер"
 
 #. * Include pointer *
-#: ../mate-screenshot/src/mate-screenshot.c:358
+#: ../mate-screenshot/src/mate-screenshot.c:352
 msgid "Include _pointer"
 msgstr "Кур_сорды қоса түсіру"
 
 #. * Include window border *
-#: ../mate-screenshot/src/mate-screenshot.c:367
+#: ../mate-screenshot/src/mate-screenshot.c:361
 msgid "Include the window _border"
 msgstr "Терезе _шекарасын қоса түсіру"
 
-#: ../mate-screenshot/src/mate-screenshot.c:382
+#: ../mate-screenshot/src/mate-screenshot.c:376
 msgid "Apply _effect:"
 msgstr "Эфф_ектті іске асыру:"
 
-#: ../mate-screenshot/src/mate-screenshot.c:450
+#: ../mate-screenshot/src/mate-screenshot.c:436
 msgid "Grab the whole _desktop"
 msgstr "_Жұмыс үстел толығымен"
 
-#: ../mate-screenshot/src/mate-screenshot.c:462
+#: ../mate-screenshot/src/mate-screenshot.c:448
 msgid "Grab the current _window"
 msgstr "Ағымдағы тере_зені түсіріп алу"
 
-#: ../mate-screenshot/src/mate-screenshot.c:474
+#: ../mate-screenshot/src/mate-screenshot.c:460
 msgid "Select _area to grab"
 msgstr "Түсіріп алу үшін _аймақты таңдау"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:492
+#: ../mate-screenshot/src/mate-screenshot.c:478
 msgid "Grab _after a delay of"
 msgstr "_Кідірістен кейін түсіру"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:517
-#: ../mate-screenshot/src/mate-screenshot.c:1274
+#: ../mate-screenshot/src/mate-screenshot.c:499
+#: ../mate-screenshot/src/mate-screenshot.c:1308
 msgid "seconds"
 msgstr "секунд"
 
-#: ../mate-screenshot/src/mate-screenshot.c:549
+#: ../mate-screenshot/src/mate-screenshot.c:527
 msgid "Effects"
 msgstr "Эффекттер"
 
-#: ../mate-screenshot/src/mate-screenshot.c:553
+#: ../mate-screenshot/src/mate-screenshot.c:531
 msgid "Take _Screenshot"
 msgstr "Скр_иншотты түсіру..."
 
-#: ../mate-screenshot/src/mate-screenshot.c:672
+#: ../mate-screenshot/src/mate-screenshot.c:650
 msgid "Error while saving screenshot"
 msgstr "Скриншотты сақтау қатесі"
 
-#: ../mate-screenshot/src/mate-screenshot.c:675
+#: ../mate-screenshot/src/mate-screenshot.c:653
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -2918,17 +2965,17 @@ msgid ""
 " Please choose another location and retry."
 msgstr ""
 
-#: ../mate-screenshot/src/mate-screenshot.c:807
+#: ../mate-screenshot/src/mate-screenshot.c:792
 msgid "Screenshot taken"
 msgstr "Скриншот алынды"
 
-#: ../mate-screenshot/src/mate-screenshot.c:862
+#: ../mate-screenshot/src/mate-screenshot.c:847
 msgid "Unable to take a screenshot of the current window"
 msgstr ""
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/src/mate-screenshot.c:919
+#: ../mate-screenshot/src/mate-screenshot.c:904
 #, c-format
 msgid "Screenshot at %s.png"
 msgstr "Скриншот, %s.png"
@@ -2936,52 +2983,52 @@ msgstr "Скриншот, %s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/src/mate-screenshot.c:926
+#: ../mate-screenshot/src/mate-screenshot.c:911
 #, c-format
 msgid "Screenshot at %s - %d.png"
 msgstr "Скриншот, %s - %d.png"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1270
+#: ../mate-screenshot/src/mate-screenshot.c:1304
 msgid "Grab a window instead of the entire screen"
 msgstr "Толық экран орнына тек терезе скриншотын түсіру"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1271
+#: ../mate-screenshot/src/mate-screenshot.c:1305
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Толық экран орнына тек экранның бір бөлігін түсіріп алу"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1272
+#: ../mate-screenshot/src/mate-screenshot.c:1306
 msgid "Include the window border with the screenshot"
 msgstr "Скриншотқа терезе шекарасын да қосу"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1273
+#: ../mate-screenshot/src/mate-screenshot.c:1307
 msgid "Remove the window border from the screenshot"
 msgstr "Скриншоттан терезе шекарасын алып тастау"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1274
+#: ../mate-screenshot/src/mate-screenshot.c:1308
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Скриншотты көрсетілген кідірістен кейін түсіріп алу (секундпен)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1275
+#: ../mate-screenshot/src/mate-screenshot.c:1309
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr ""
 
-#: ../mate-screenshot/src/mate-screenshot.c:1275
+#: ../mate-screenshot/src/mate-screenshot.c:1309
 msgid "effect"
 msgstr "эффект"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1276
+#: ../mate-screenshot/src/mate-screenshot.c:1310
 msgid "Interactively set options"
 msgstr "Опцияларды интерактивті түрде орнату"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1277
+#: ../mate-screenshot/src/mate-screenshot.c:1311
 msgid "Print version information and exit"
 msgstr "Нұсқа ақпаратын шығару және шығу"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1286
+#: ../mate-screenshot/src/mate-screenshot.c:1320
 msgid "Take a picture of the screen"
 msgstr "Экранның сурет көшірмесін сақтау"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1309
+#: ../mate-screenshot/src/mate-screenshot.c:1343
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
@@ -3002,7 +3049,7 @@ msgid "Select a folder"
 msgstr "Буманы таңдаңыз"
 
 #: ../mate-screenshot/src/screenshot-dialog.c:325
-#: ../mate-screenshot/src/screenshot-save.c:196
+#: ../mate-screenshot/src/screenshot-save.c:199
 msgid "Screenshot.png"
 msgstr "Скриншот.png"
 
@@ -3019,7 +3066,7 @@ msgid ""
 "screenshot to disk."
 msgstr ""
 
-#: ../mate-screenshot/src/screenshot-save.c:223
+#: ../mate-screenshot/src/screenshot-save.c:225
 msgid "Unknown error saving screenshot to disk"
 msgstr ""
 
