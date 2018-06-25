@@ -1,27 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Andras Timar <timar at mate dot hu>, 2001, 2002, 2003
-# Balázs Meskó <meskobalazs@gmail.com>, 2016,2018
-# Falu <info@falu.me>, 2016
-# Falu <info@falu.me>, 2015
-# Gabor Kelemen <kelemeng at mate dot hu>, 2004, 2006, 2007, 2008, 2009, 2010
-# Gabor Sari <saga at mate dot hu>, 2003, 2004
-# Gergely Nagy <greg at mate dot hu>, 2001
-# Laszlo Dvornik <dvornik at mate dot hu>, 2004
-# Mate ORY <orymate at gmail d0t com>, 2006
-# Rezső Páder <rezso@rezso.net>, 2014-2015
-# Szabolcs Ban <shooby at mate dot hu>, 1999, 2000
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-29 10:58+0100\n"
-"PO-Revision-Date: 2018-01-20 18:23+0000\n"
-"Last-Translator: Balázs Meskó <meskobalazs@gmail.com>\n"
-"Language-Team: Hungarian (http://www.transifex.com/mate/MATE/language/hu/)\n"
+"POT-Creation-Date: 2018-03-17 21:06+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Falu <info@falu.me>, 2018\n"
+"Language-Team: Hungarian (https://www.transifex.com/mate/teams/13566/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -69,10 +59,10 @@ msgid "S_can Remote Folder..."
 msgstr "_Távoli mappa vizsgálata…"
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../logview/src/logview-window.c:821
-#: ../mate-dictionary/src/gdict-window.c:1292
+#: ../logview/src/logview-window.c:817
+#: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Edit"
-msgstr "S_zerkesztés"
+msgstr "_Szerkesztés"
 
 #: ../baobab/data/baobab-main-window.ui.h:7
 msgid "_Expand All"
@@ -83,8 +73,8 @@ msgid "_Collapse All"
 msgstr "Összes össze_csukása"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../logview/src/logview-window.c:822
-#: ../mate-dictionary/src/gdict-window.c:1293
+#: ../logview/src/logview-window.c:818
+#: ../mate-dictionary/src/gdict-window.c:1289
 msgid "_View"
 msgstr "_Nézet"
 
@@ -101,16 +91,16 @@ msgid "All_ocated Space"
 msgstr "_Lefoglalt terület"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../logview/src/logview-window.c:824
-#: ../mate-dictionary/src/gdict-applet.c:1189
-#: ../mate-dictionary/src/gdict-window.c:1295
+#: ../logview/src/logview-window.c:820
+#: ../mate-dictionary/src/gdict-applet.c:1187
+#: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_Help"
 msgstr "_Súgó"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../logview/src/logview-window.c:850
-#: ../mate-dictionary/src/gdict-window.c:1345
+#: ../logview/src/logview-window.c:846
+#: ../mate-dictionary/src/gdict-window.c:1341
 msgid "_Contents"
 msgstr "_Tartalom"
 
@@ -218,7 +208,15 @@ msgid ""
 "perform scans on a file system, your home or any other folder - local or "
 "remote. There is also an option to constantly monitor any external changes "
 "to the home directory and warn the user if a file is added/removed. </p>"
-msgstr "<p> Ahogy a neve sugallja, a Lemezhasználat-elemző egy grafikus segédprogram, amelyet lemezhasználat és a mappaszerkezet megtekintésére és megfigyelésére használhatja. Az összesítő információkat gyűrű és hierarchia térkép diagramon jeleníti meg. </p> <p> Átvizsgálhatja a fájlrendszert, a saját mappáját vagy egy tetszőleges mappát – legyen az helyi vagy távoli. Arra is lehetőség van, hogy állandóan figyeljen bármilyen külső változásra a saját mappában és figyelmeztesse a felhasználót ha egy fájlt hozzáadtak/töröltek. </p>"
+msgstr ""
+"<p> Ahogy a neve sugallja, a Lemezhasználat-elemző egy grafikus "
+"segédprogram, amelyet lemezhasználat és a mappaszerkezet megtekintésére és "
+"megfigyelésére használhatja. Az összesítő információkat gyűrű és hierarchia "
+"térkép diagramon jeleníti meg. </p> <p> Átvizsgálhatja a fájlrendszert, a "
+"saját mappáját vagy egy tetszőleges mappát – legyen az helyi vagy távoli. "
+"Arra is lehetőség van, hogy állandóan figyeljen bármilyen külső változásra a"
+" saját mappában és figyelmeztesse a felhasználót ha egy fájlt "
+"hozzáadtak/töröltek. </p>"
 
 #: ../baobab/src/baobab.c:137 ../baobab/src/baobab.c:357
 msgid "Scanning..."
@@ -414,7 +412,9 @@ msgstr "Biztonságos WebDAV (HTTPS)"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:247
 msgid "Cannot Connect to Server. You must enter a name for the server."
-msgstr "Nem lehet a kiszolgálóhoz kapcsolódni. Meg kell adnia egy nevet a kiszolgálónak."
+msgstr ""
+"Nem lehet a kiszolgálóhoz kapcsolódni. Meg kell adnia egy nevet a "
+"kiszolgálónak."
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:250
 msgid "Please enter a name and try again."
@@ -424,44 +424,44 @@ msgstr "Írjon be egy nevet és próbálja meg újra."
 msgid "_Location (URI):"
 msgstr "He_ly (URI):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:458
+#: ../baobab/src/baobab-remote-connect-dialog.c:454
 msgid "_Server:"
 msgstr "_Kiszolgáló:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:475
+#: ../baobab/src/baobab-remote-connect-dialog.c:467
 msgid "Optional information:"
 msgstr "Opcionális információk:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:488
+#: ../baobab/src/baobab-remote-connect-dialog.c:476
 msgid "_Share:"
 msgstr "Meg_osztás:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:507
+#: ../baobab/src/baobab-remote-connect-dialog.c:491
 #: ../mate-dictionary/data/mate-dictionary-source.ui.h:4
 msgid "_Port:"
 msgstr "_Port:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:525
+#: ../baobab/src/baobab-remote-connect-dialog.c:505
 msgid "_Folder:"
 msgstr "_Mappa:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:543
+#: ../baobab/src/baobab-remote-connect-dialog.c:519
 msgid "_User Name:"
 msgstr "_Felhasználónév:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:562
+#: ../baobab/src/baobab-remote-connect-dialog.c:534
 msgid "_Domain Name:"
 msgstr "_Tartománynév:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:627
+#: ../baobab/src/baobab-remote-connect-dialog.c:595
 msgid "Connect to Server"
 msgstr "Kapcsolódás kiszolgálóhoz"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:643
+#: ../baobab/src/baobab-remote-connect-dialog.c:611
 msgid "Service _type:"
 msgstr "Szolgáltatás _típusa:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:765
+#: ../baobab/src/baobab-remote-connect-dialog.c:729
 msgid "_Scan"
 msgstr "_Vizsgálat"
 
@@ -473,13 +473,15 @@ msgstr "Megismétli a saját könyvtárának vizsgálatát?"
 msgid ""
 "The content of your home folder has changed. Select rescan to update the "
 "disk usage details."
-msgstr "A saját könyvtárának tartalma megváltozott. A lemezhasználat részleteinek frissítése érdekében válassza az újraolvasás lehetőséget."
+msgstr ""
+"A saját könyvtárának tartalma megváltozott. A lemezhasználat részleteinek "
+"frissítése érdekében válassza az újraolvasás lehetőséget."
 
 #: ../baobab/src/baobab-treeview.c:84
 msgid "_Rescan"
 msgstr "Új_raolvasás"
 
-#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/src/gsearchtool.c:2426
+#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/src/gsearchtool.c:2436
 msgid "Folder"
 msgstr "Mappa"
 
@@ -487,7 +489,7 @@ msgstr "Mappa"
 msgid "Usage"
 msgstr "Használat"
 
-#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/src/gsearchtool.c:2439
+#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/src/gsearchtool.c:2449
 msgid "Size"
 msgstr "Méret"
 
@@ -522,7 +524,7 @@ msgid "_Open Folder"
 msgstr "Mappa _megnyitása"
 
 #: ../baobab/src/baobab-utils.c:368
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1215
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1226
 msgid "Mo_ve to Trash"
 msgstr "Át_helyezés a Kukába"
 
@@ -533,7 +535,9 @@ msgstr "Nem nyitható meg a(z) „%s” mappa"
 
 #: ../baobab/src/baobab-utils.c:405
 msgid "There is no installed viewer capable of displaying the folder."
-msgstr "Nincs telepítve olyan megjelenítőprogram, amely képes lenne megjeleníteni a mappát."
+msgstr ""
+"Nincs telepítve olyan megjelenítőprogram, amely képes lenne megjeleníteni a "
+"mappát."
 
 #: ../baobab/src/baobab-utils.c:474
 #, c-format
@@ -549,7 +553,7 @@ msgstr "A fájl nem helyezhető át a Kukába"
 msgid "Details: %s"
 msgstr "Részletek: %s"
 
-#: ../baobab/src/baobab-utils.c:527
+#: ../baobab/src/baobab-utils.c:522
 msgid "There was an error displaying help."
 msgstr "Hiba történt a súgó megjelenítése közben."
 
@@ -559,7 +563,10 @@ msgid ""
 "under the terms of the GNU General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Ez a program szabad szoftver; terjeszthető illetve módosítható a Free Software Foundation által kiadott GNU General Public License dokumentumában leírtak; akár a licenc 2-es, akár (tetszőleges) későbbi változata szerint."
+msgstr ""
+"Ez a program szabad szoftver; terjeszthető illetve módosítható a Free "
+"Software Foundation által kiadott GNU General Public License dokumentumában "
+"leírtak; akár a licenc 2-es, akár (tetszőleges) későbbi változata szerint."
 
 #: ../baobab/src/callbacks.c:81 ../logview/src/logview-about.h:53
 msgid ""
@@ -567,14 +574,22 @@ msgid ""
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
 "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
 "more details."
-msgstr "Ez a program abban a reményben kerül közreadásra, hogy hasznos lesz, de minden egyéb GARANCIA NÉLKÜL, az ELADHATÓSÁGRA vagy VALAMELY CÉLRA VALÓ ALKALMAZHATÓSÁGRA való származtatott garanciát is beleértve. További részleteket a GNU General Public License tartalmaz."
+msgstr ""
+"Ez a program abban a reményben kerül közreadásra, hogy hasznos lesz, de "
+"minden egyéb GARANCIA NÉLKÜL, az ELADHATÓSÁGRA vagy VALAMELY CÉLRA VALÓ "
+"ALKALMAZHATÓSÁGRA való származtatott garanciát is beleértve. További "
+"részleteket a GNU General Public License tartalmaz."
 
 #: ../baobab/src/callbacks.c:86 ../logview/src/logview-about.h:57
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
-msgstr "A felhasználónak a programmal együtt meg kell kapnia a GNU General Public License egy példányát; ha mégsem kapta meg, akkor ezt a Free Software Foundationnak küldött levélben jelezze (cím: Free Software Foundation Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.)"
+msgstr ""
+"A felhasználónak a programmal együtt meg kell kapnia a GNU General Public "
+"License egy példányát; ha mégsem kapta meg, akkor ezt a Free Software "
+"Foundationnak küldött levélben jelezze (cím: Free Software Foundation Inc., "
+"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.)"
 
 #: ../baobab/src/callbacks.c:98
 msgid "A graphical tool to analyze disk usage."
@@ -584,11 +599,19 @@ msgstr "Grafikus lemezhasználat-elemző eszköz."
 #: ../baobab/src/callbacks.c:104 ../logview/src/logview-about.h:63
 #: ../mate-dictionary/src/gdict-about.c:55
 msgid "translator-credits"
-msgstr "Bán Szabolcs <shooby@mate.hu>\nDvornik László <dvornik@mate.hu>\nKelemen Gábor <kelemeng@mate.hu>\nNagy Gergely <greg@mate.hu>\nŐry Máté <orymate@gmail.com>\nSári Gábor <saga@mate.hu>\nTímár András <timar@mate.hu>"
+msgstr ""
+"Dvornik László<dvornik at mate dot hu>\n"
+"Kelemen Gábor<kelemeng at mate dot hu>\n"
+"Tímár András<timar at mate dot hu>\n"
+"Rezső Páder<rezso at rezso dot net>\n"
+"Kalman „KAMI” Szalai<kami911 at gmail dot com>\n"
+"Falu<info at falu dot me>\n"
+"Zoltán Rápolthy<real_zolee at hotmail dot com>\n"
+"Meskó Balázs <mesko dot balazs at fsf dot hu>"
 
 #: ../baobab/src/callbacks.c:202
-#: ../gsearchtool/src/gsearchtool-callbacks.c:513
-#: ../gsearchtool/src/gsearchtool-callbacks.c:853
+#: ../gsearchtool/src/gsearchtool-callbacks.c:514
+#: ../gsearchtool/src/gsearchtool-callbacks.c:864
 msgid "The document does not exist."
 msgstr "A dokumentum nem létezik."
 
@@ -607,7 +630,11 @@ msgid ""
 " you instant access to a wide variety of parameters for each search, such as"
 " text contained within a file, ownership, date of modification, file size, "
 "folder exclusion, etc.. </p>"
-msgstr "<p>A MATE kereső egy egyszerű segédeszköz, amellyel fájlok és mappák kereshetőek bármely csatolt fájlrendszeren. Minden kereséshez széles körű lehetőségeket biztosít, pl. szöveg keresése fájlban, tulajdonos, módosítás ideje,fájlméret, mappa kihagyása, stb.. </p>"
+msgstr ""
+"<p>A MATE kereső egy egyszerű segédeszköz, amellyel fájlok és mappák "
+"kereshetőek bármely csatolt fájlrendszeren. Minden kereséshez széles körű "
+"lehetőségeket biztosít, pl. szöveg keresése fájlban, tulajdonos, módosítás "
+"ideje,fájlméret, mappa kihagyása, stb.. </p>"
 
 #: ../gsearchtool/data/mate-search-tool.desktop.in.h:1
 msgid "MATE Search Tool"
@@ -615,7 +642,8 @@ msgstr "MATE keresőeszköz"
 
 #: ../gsearchtool/data/mate-search-tool.desktop.in.h:2
 msgid "Locate documents and folders on this computer by name or content"
-msgstr "Dokumentumok és mappák keresése név vagy tartalom szerint a számítógépen"
+msgstr ""
+"Dokumentumok és mappák keresése név vagy tartalom szerint a számítógépen"
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:1
 msgid "Search history"
@@ -637,7 +665,9 @@ msgstr "Gyors keresés kikapcsolása"
 msgid ""
 "This key determines if the search tool disables the use of the locate "
 "command when performing simple file name searches."
-msgstr "Ez a kulcs meghatározza, hogy a keresőeszköz kikapcsolja-e a locate parancs használatát a egyszerű fájlnévkeresések elvégzésekor."
+msgstr ""
+"Ez a kulcs meghatározza, hogy a keresőeszköz kikapcsolja-e a locate parancs "
+"használatát a egyszerű fájlnévkeresések elvégzésekor."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:6
 msgid "Quick Search Excluded Paths"
@@ -648,7 +678,10 @@ msgid ""
 "This key defines the paths the search tool will exclude from a quick search."
 " The wildcards '*' and '?' are supported. The default values are /mnt/*, "
 "/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
-msgstr "Ez a kulcs megadja a gyors keresésből kihagyandó útvonalakat. A * és ? helyettesítő karakterek támogatottak. Az alapértelmezett értékek: /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, és /var/*."
+msgstr ""
+"Ez a kulcs megadja a gyors keresésből kihagyandó útvonalakat. A * és ? "
+"helyettesítő karakterek támogatottak. Az alapértelmezett értékek: /mnt/*, "
+"/media/*, /dev/*, /tmp/*, /proc/*, és /var/*."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:8
 msgid "Disable Quick Search Second Scan"
@@ -658,7 +691,9 @@ msgstr "Gyors keresés második körének kikapcsolása"
 msgid ""
 "This key determines if the search tool disables the use of the find command "
 "after performing a quick search."
-msgstr "Ez a kulcs meghatározza, hogy a keresőeszköz kikapcsolja-e a find parancs használatát a gyors keresés elvégzése után."
+msgstr ""
+"Ez a kulcs meghatározza, hogy a keresőeszköz kikapcsolja-e a find parancs "
+"használatát a gyors keresés elvégzése után."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:10
 msgid "Quick Search Second Scan Excluded Paths"
@@ -671,7 +706,11 @@ msgid ""
 "search for files. The purpose of the second scan is to find files that have "
 "not been indexed. The wildcards '*' and '?' are supported. The default value"
 " is /."
-msgstr "Ez a kulcs megadja a gyors keresésből kihagyandó útvonalakat. A második keresés a find parancsot használja fájlok keresésére. A második keresés célja a nem indexelt fájlok megtalálása.  A * és ? helyettesítő karakterek támogatottak. Az alapértelmezett érték: /."
+msgstr ""
+"Ez a kulcs megadja a gyors keresésből kihagyandó útvonalakat. A második "
+"keresés a find parancsot használja fájlok keresésére. A második keresés "
+"célja a nem indexelt fájlok megtalálása.  A * és ? helyettesítő karakterek "
+"támogatottak. Az alapértelmezett érték: /."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:12
 msgid "Search Result Columns Order"
@@ -681,7 +720,9 @@ msgstr "Keresési eredmények oszlop sorrendje"
 msgid ""
 "This key defines the order of the columns in the search results. This key "
 "should not be modified by the user."
-msgstr "Ez a kulcs meghatározza a keresési eredményeknél az oszlopok sorrendjét. Ez a kulcs nem módosítható a felhasználó által."
+msgstr ""
+"Ez a kulcs meghatározza a keresési eredményeknél az oszlopok sorrendjét. Ez "
+"a kulcs nem módosítható a felhasználó által."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:14
 msgid "Default Window Width"
@@ -692,7 +733,10 @@ msgid ""
 "This key defines the window width, and it's used to remember the size of the"
 " search tool between sessions. Setting it to -1 will make the search tool "
 "use the default width."
-msgstr "Ez a kulcs meghatározza az ablak szélességét, és arra használható, hogy megjegyezze a Kereső eszköz méretét a munkafolyamatok közt. A -1 érték megadása az alapértelmezett szélesség használatát váltja ki."
+msgstr ""
+"Ez a kulcs meghatározza az ablak szélességét, és arra használható, hogy "
+"megjegyezze a Kereső eszköz méretét a munkafolyamatok közt. A -1 érték "
+"megadása az alapértelmezett szélesség használatát váltja ki."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:16
 msgid "Default Window Height"
@@ -703,7 +747,10 @@ msgid ""
 "This key defines the window height, and it's used to remember the size of "
 "the search tool between sessions. Setting it to -1 will make the search tool"
 " use the default height."
-msgstr "Ez a kulcs meghatározza az ablak magasságát, és arra használható, hogy megjegyezze a Kereső eszköz méretét a munkafolyamatok közt. A -1 érték megadása az alapértelmezett magasság használatát váltja ki."
+msgstr ""
+"Ez a kulcs meghatározza az ablak magasságát, és arra használható, hogy "
+"megjegyezze a Kereső eszköz méretét a munkafolyamatok közt. A -1 érték "
+"megadása az alapértelmezett magasság használatát váltja ki."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:18
 msgid "Default Window Maximized"
@@ -712,7 +759,8 @@ msgstr "Az alapértelmezett ablak teljes méretű"
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:19
 msgid ""
 "This key determines if the search tool window starts in a maximized state."
-msgstr "Ez a kulcs meghatározza, hogy a keresőeszköz teljes méretben induljon-e."
+msgstr ""
+"Ez a kulcs meghatározza, hogy a keresőeszköz teljes méretben induljon-e."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:20
 msgid "Look in Folder"
@@ -720,91 +768,122 @@ msgstr "Keresés mappában"
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:21
 msgid "This key defines the default value of the \"Look in Folder\" widget."
-msgstr "Ez a kulcs megadja a „Keresés mappában” felületi elem alapértelmezett értékét."
+msgstr ""
+"Ez a kulcs megadja a „Keresés mappában” felületi elem alapértelmezett "
+"értékét."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:22
 msgid ""
 "This key determines if the \"Contains the text\" search option is selected "
 "when the search tool is started."
-msgstr "Ez a kulcs meghatározza, hogy a „Tartalmazza ezt a szöveget” keresési lehetőség ki van-e választva a keresőeszköz indításakor."
+msgstr ""
+"Ez a kulcs meghatározza, hogy a „Tartalmazza ezt a szöveget” keresési "
+"lehetőség ki van-e választva a keresőeszköz indításakor."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:23
 msgid ""
 "This key determines if the \"Date modified less than\" search option is "
 "selected when the search tool is started."
-msgstr "Ez a kulcs meghatározza, hogy a „Módosítva kevesebb mint” keresési lehetőség ki van-e választva a keresőeszköz indításakor."
+msgstr ""
+"Ez a kulcs meghatározza, hogy a „Módosítva kevesebb mint” keresési lehetőség"
+" ki van-e választva a keresőeszköz indításakor."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:24
 msgid ""
 "This key determines if the \"Date modified more than\" search option is "
 "selected when the search tool is started."
-msgstr "Ez a kulcs meghatározza, hogy a „Módosítva több mint” keresési lehetőség ki van-e választva a keresőeszköz indításakor."
+msgstr ""
+"Ez a kulcs meghatározza, hogy a „Módosítva több mint” keresési lehetőség ki "
+"van-e választva a keresőeszköz indításakor."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:25
 msgid ""
 "This key determines if the \"Size at least\" search option is selected when "
 "the search tool is started."
-msgstr "Ez a kulcs meghatározza, hogy a „Mérete legalább” keresési lehetőség ki van-e választva a keresőeszköz indításakor."
+msgstr ""
+"Ez a kulcs meghatározza, hogy a „Mérete legalább” keresési lehetőség ki "
+"van-e választva a keresőeszköz indításakor."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:26
 msgid ""
 "This key determines if the \"Size at most\" search option is selected when "
 "the search tool is started."
-msgstr "Ez a kulcs meghatározza, hogy a „Mérete legfeljebb” keresési lehetőség ki van-e választva a keresőeszköz indításakor."
+msgstr ""
+"Ez a kulcs meghatározza, hogy a „Mérete legfeljebb” keresési lehetőség ki "
+"van-e választva a keresőeszköz indításakor."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:27
 msgid ""
 "This key determines if the \"File is empty\" search option is selected when "
 "the search tool is started."
-msgstr "Ez a kulcs meghatározza, hogy az „A fájl üres” keresési lehetőség ki van-e választva a keresőeszköz indításakor."
+msgstr ""
+"Ez a kulcs meghatározza, hogy az „A fájl üres” keresési lehetőség ki van-e "
+"választva a keresőeszköz indításakor."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:28
 msgid ""
 "This key determines if the \"Owned by user\" search option is selected when "
 "the search tool is started."
-msgstr "Ez a kulcs meghatározza, hogy az „A következő felhasználó tulajdona” lehetőség feltétel ki van-e választva a keresőeszköz indításakor."
+msgstr ""
+"Ez a kulcs meghatározza, hogy az „A következő felhasználó tulajdona” "
+"lehetőség feltétel ki van-e választva a keresőeszköz indításakor."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:29
 msgid ""
 "This key determines if the \"Owned by group\" search option is selected when"
 " the search tool is started."
-msgstr "Ez a kulcs meghatározza, hogy az „A következő csoport tulajdona” keresési lehetőség ki van-e választva a keresőeszköz indításakor."
+msgstr ""
+"Ez a kulcs meghatározza, hogy az „A következő csoport tulajdona” keresési "
+"lehetőség ki van-e választva a keresőeszköz indításakor."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:30
 msgid ""
 "This key determines if the \"Owner is unrecognized\" search option is "
 "selected when the search tool is started."
-msgstr "Ez a kulcs meghatározza, hogy az „A tulajdonos felismerhetetlen” keresési lehetőség ki van-e választva a keresőeszköz indításakor."
+msgstr ""
+"Ez a kulcs meghatározza, hogy az „A tulajdonos felismerhetetlen” keresési "
+"lehetőség ki van-e választva a keresőeszköz indításakor."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:31
 msgid ""
 "This key determines if the \"Name does not contain\" search option is "
 "selected when the search tool is started."
-msgstr "Ez a kulcs meghatározza, hogy a „Név nem tartalmazza” keresési lehetőség ki van-e választva a keresőeszköz indításakor."
+msgstr ""
+"Ez a kulcs meghatározza, hogy a „Név nem tartalmazza” keresési lehetőség ki "
+"van-e választva a keresőeszköz indításakor."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:32
 msgid ""
 "This key determines if the \"Name matches regular expression\" search option"
 " is selected when the search tool is started."
-msgstr "Ez a kulcs meghatározza, hogy az „A fájlnév illeszkedik erre a reguláris kifejezésre” keresési lehetőség ki van-e választva a keresőeszköz indításakor."
+msgstr ""
+"Ez a kulcs meghatározza, hogy az „A fájlnév illeszkedik erre a reguláris "
+"kifejezésre” keresési lehetőség ki van-e választva a keresőeszköz "
+"indításakor."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:33
 msgid ""
 "This key determines if the \"Show hidden files and folders\" search option "
 "is selected when the search tool is started."
-msgstr "Ez a kulcs meghatározza, hogy a „Rejtett fájlok és mappák mutatása” keresési lehetőség ki van-e választva a keresőeszköz indításakor."
+msgstr ""
+"Ez a kulcs meghatározza, hogy a „Rejtett fájlok és mappák mutatása” keresési"
+" lehetőség ki van-e választva a keresőeszköz indításakor."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:34
 msgid ""
 "This key determines if the \"Follow symbolic links\" search option is "
 "selected when the search tool is started."
-msgstr "Ez a kulcs meghatározza, hogy a „Szimbolikus linkek követése” keresési lehetőség ki van-e választva a keresőeszköz indításakor."
+msgstr ""
+"Ez a kulcs meghatározza, hogy a „Szimbolikus linkek követése” keresési "
+"lehetőség ki van-e választva a keresőeszköz indításakor."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:35
 msgid ""
 "This key determines if the \"Exclude other filesystems\" search option is "
 "selected when the search tool is started."
-msgstr "Ez a kulcs meghatározza, hogy a „Más fájlrendszerek kizárása a keresésből” keresési lehetőség ki van-e választva a keresőeszköz indításakor."
+msgstr ""
+"Ez a kulcs meghatározza, hogy a „Más fájlrendszerek kizárása a keresésből” "
+"keresési lehetőség ki van-e választva a keresőeszköz indításakor."
 
 #: ../gsearchtool/libeggsmclient/eggdesktopfile.c:165
 #, c-format
@@ -847,7 +926,7 @@ msgstr "A munkamenet-kezelőhöz való csatlakozás tiltása"
 
 #: ../gsearchtool/libeggsmclient/eggsmclient.c:228
 msgid "Specify file containing saved configuration"
-msgstr "Adja meg a mentett beállításokat tartalmazó fájlt"
+msgstr "A mentett beállításokat tartalmazó fájl megadása"
 
 #: ../gsearchtool/libeggsmclient/eggsmclient.c:228
 msgid "FILE"
@@ -855,7 +934,7 @@ msgstr "FÁJL"
 
 #: ../gsearchtool/libeggsmclient/eggsmclient.c:231
 msgid "Specify session management ID"
-msgstr "Adja meg a munkamenet-kezelési azonosítót"
+msgstr "Munkamenet-kezelő azonosítójának megadása"
 
 #: ../gsearchtool/libeggsmclient/eggsmclient.c:231
 msgid "ID"
@@ -879,7 +958,7 @@ msgstr "_Módosítva kevesebb mint"
 
 #: ../gsearchtool/src/gsearchtool.c:84 ../gsearchtool/src/gsearchtool.c:85
 msgid "days"
-msgstr "napja"
+msgstr "nap"
 
 #: ../gsearchtool/src/gsearchtool.c:85
 msgid "Date modified more than"
@@ -984,7 +1063,7 @@ msgid "Searching..."
 msgstr "Keresés…"
 
 #: ../gsearchtool/src/gsearchtool.c:511 ../gsearchtool/src/gsearchtool.c:1031
-#: ../gsearchtool/src/gsearchtool.c:3031
+#: ../gsearchtool/src/gsearchtool.c:3062
 msgid "Search for Files"
 msgstr "Fájlok keresése"
 
@@ -1011,8 +1090,8 @@ msgstr[1] "%'d fájl található"
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
-msgstr[0] "%d fájl található"
-msgstr[1] "%d fájl található"
+msgstr[0] "%'d fájl található"
+msgstr[1] "%'d fájl található"
 
 #: ../gsearchtool/src/gsearchtool.c:1143
 msgid "Entry changed called for a non entry option!"
@@ -1028,7 +1107,9 @@ msgstr "A „Keresés ebben a mappában” keresési lehetőség szövegének be
 
 #: ../gsearchtool/src/gsearchtool.c:1310
 msgid "Sort files by one of the following: name, folder, size, type, or date"
-msgstr "Fájlok rendezése a következők egyike szerint: név, mappa, méret, típus vagy dátum"
+msgstr ""
+"Fájlok rendezése a következők egyike szerint: név, mappa, méret, típus vagy "
+"dátum"
 
 #: ../gsearchtool/src/gsearchtool.c:1311
 msgid "Set sort order to descending, the default is ascending"
@@ -1056,13 +1137,16 @@ msgstr "Érvénytelen beállítás lett átadva a sortby parancssori paramétern
 msgid ""
 "\n"
 "... Too many errors to display ..."
-msgstr "\n… Túl sok hiba van, ennyit nem lehet megjeleníteni …"
+msgstr ""
+"\n"
+"… Túl sok hiba van, ennyit nem lehet megjeleníteni …"
 
 #: ../gsearchtool/src/gsearchtool.c:1734
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
-msgstr "A keresés eredménye érvénytelen. Hiba történt a keresés végrehajtása közben."
+msgstr ""
+"A keresés eredménye érvénytelen. Hiba történt a keresés végrehajtása közben."
 
 #: ../gsearchtool/src/gsearchtool.c:1746 ../gsearchtool/src/gsearchtool.c:1790
 msgid "Show more _details"
@@ -1072,7 +1156,9 @@ msgstr "Több _részlet megjelenítése"
 msgid ""
 "The search results may be out of date or invalid.  Do you want to disable "
 "the quick search feature?"
-msgstr "A keresés eredménye elavult vagy érvénytelen. Ki szeretné kapcsolni a gyors keresés szolgáltatást?"
+msgstr ""
+"A keresés eredménye elavult vagy érvénytelen. Ki szeretné kapcsolni a gyors "
+"keresés szolgáltatást?"
 
 #: ../gsearchtool/src/gsearchtool.c:1801
 msgid "Disable _Quick Search"
@@ -1081,7 +1167,8 @@ msgstr "_Gyors keresés kikapcsolása"
 #: ../gsearchtool/src/gsearchtool.c:1828
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
-msgstr "Nem sikerült beállítani a(z) %d gyermekfolyamat csoportazonosítóját: %s.\n"
+msgstr ""
+"Nem sikerült beállítani a(z) %d gyermekfolyamat csoportazonosítóját: %s.\n"
 
 #: ../gsearchtool/src/gsearchtool.c:1853
 msgid "Error parsing the search command."
@@ -1108,263 +1195,271 @@ msgstr "„%s” egysége: %s"
 msgid "Enter a value in %s for the \"%s\" search option."
 msgstr "Adjon meg egy értéket ebben: %s a(z) „%s” keresési feltételhez."
 
-#: ../gsearchtool/src/gsearchtool.c:2073
+#: ../gsearchtool/src/gsearchtool.c:2078
 #, c-format
 msgid "Remove \"%s\""
 msgstr "„%s” eltávolítása"
 
-#: ../gsearchtool/src/gsearchtool.c:2074
+#: ../gsearchtool/src/gsearchtool.c:2079
 #, c-format
 msgid "Click to remove the \"%s\" search option."
 msgstr "Kattintson ide a(z) „%s” keresési feltétel eltávolításához."
 
-#: ../gsearchtool/src/gsearchtool.c:2167
+#: ../gsearchtool/src/gsearchtool.c:2172
 msgid "A_vailable options:"
 msgstr "_Lehetséges beállítások:"
 
-#: ../gsearchtool/src/gsearchtool.c:2196
+#: ../gsearchtool/src/gsearchtool.c:2201
 msgid "Available options"
 msgstr "Elérhető beállítások"
 
-#: ../gsearchtool/src/gsearchtool.c:2197
+#: ../gsearchtool/src/gsearchtool.c:2202
 msgid "Select a search option from the drop-down list."
 msgstr "Válasszon egy keresési feltételt a legördülő listából."
 
-#: ../gsearchtool/src/gsearchtool.c:2209
+#: ../gsearchtool/src/gsearchtool.c:2219
 msgid "Add search option"
 msgstr "Keresési beállítás hozzáadása"
 
-#: ../gsearchtool/src/gsearchtool.c:2210
+#: ../gsearchtool/src/gsearchtool.c:2220
 msgid "Click to add the selected available search option."
-msgstr "Kattintson ide a kiválasztott rendelkezésre álló keresési feltétel hozzáadásához."
+msgstr ""
+"Kattintson ide a kiválasztott rendelkezésre álló keresési feltétel "
+"hozzáadásához."
 
-#: ../gsearchtool/src/gsearchtool.c:2299
+#: ../gsearchtool/src/gsearchtool.c:2309
 msgid "S_earch results:"
 msgstr "_Keresés eredménye:"
 
-#: ../gsearchtool/src/gsearchtool.c:2342
+#: ../gsearchtool/src/gsearchtool.c:2352
 msgid "List View"
 msgstr "Listanézet"
 
-#: ../gsearchtool/src/gsearchtool.c:2402
+#: ../gsearchtool/src/gsearchtool.c:2412
 #: ../mate-dictionary/libgdict/gdict-source.c:246
 msgid "Name"
 msgstr "Név"
 
-#: ../gsearchtool/src/gsearchtool.c:2451
+#: ../gsearchtool/src/gsearchtool.c:2461
 msgid "Type"
 msgstr "Típus"
 
-#: ../gsearchtool/src/gsearchtool.c:2463
+#: ../gsearchtool/src/gsearchtool.c:2473
 msgid "Date Modified"
 msgstr "Módosítás dátuma"
 
-#: ../gsearchtool/src/gsearchtool.c:2798
+#: ../gsearchtool/src/gsearchtool.c:2808
 msgid "_Name contains:"
 msgstr "_Név tartalmazza:"
 
-#: ../gsearchtool/src/gsearchtool.c:2813 ../gsearchtool/src/gsearchtool.c:2814
+#: ../gsearchtool/src/gsearchtool.c:2823 ../gsearchtool/src/gsearchtool.c:2824
 msgid "Enter a filename or partial filename with or without wildcards."
-msgstr "Adjon meg egy (részleges) fájlnevet helyettesítő karakterekkel vagy azok nélkül."
+msgstr ""
+"Adjon meg egy (részleges) fájlnevet helyettesítő karakterekkel vagy azok "
+"nélkül."
 
-#: ../gsearchtool/src/gsearchtool.c:2814
+#: ../gsearchtool/src/gsearchtool.c:2824
 msgid "Name contains"
 msgstr "Név tartalmazza:"
 
-#: ../gsearchtool/src/gsearchtool.c:2820
+#: ../gsearchtool/src/gsearchtool.c:2830
 msgid "_Look in folder:"
 msgstr "_Keresés ebben a mappában:"
 
-#: ../gsearchtool/src/gsearchtool.c:2826
+#: ../gsearchtool/src/gsearchtool.c:2836
 msgid "Browse"
 msgstr "Tallózás"
 
-#: ../gsearchtool/src/gsearchtool.c:2836
+#: ../gsearchtool/src/gsearchtool.c:2846
 msgid "Look in folder"
 msgstr "Keresés ebben a mappában"
 
-#: ../gsearchtool/src/gsearchtool.c:2836
+#: ../gsearchtool/src/gsearchtool.c:2846
 msgid "Select the folder or device from which you want to begin the search."
 msgstr "Válassza ki a keresés kiindulópontjául szolgáló mappát vagy eszközt."
 
-#: ../gsearchtool/src/gsearchtool.c:2854
+#: ../gsearchtool/src/gsearchtool.c:2864
 msgid "Select more _options"
 msgstr "Több _beállítási lehetőség"
 
-#: ../gsearchtool/src/gsearchtool.c:2863
+#: ../gsearchtool/src/gsearchtool.c:2873
 msgid "Select more options"
 msgstr "Több beállítási lehetőség"
 
-#: ../gsearchtool/src/gsearchtool.c:2863
+#: ../gsearchtool/src/gsearchtool.c:2873
 msgid "Click to expand or collapse the list of available options."
-msgstr "Kattintson ide a rendelkezésre álló keresési feltételek listájának kibontásához vagy összecsukásához."
+msgstr ""
+"Kattintson ide a rendelkezésre álló keresési feltételek listájának "
+"kibontásához vagy összecsukásához."
 
-#: ../gsearchtool/src/gsearchtool.c:2887
+#: ../gsearchtool/src/gsearchtool.c:2904
 msgid "Click to display the help manual."
 msgstr "Kattintson ide a súgó megjelenítéséhez."
 
-#: ../gsearchtool/src/gsearchtool.c:2895
+#: ../gsearchtool/src/gsearchtool.c:2917
 msgid "Click to close \"Search for Files\"."
 msgstr "Kattintson ide a „Fájlok keresése” párbeszédablak bezárásához."
 
-#: ../gsearchtool/src/gsearchtool.c:2921
+#: ../gsearchtool/src/gsearchtool.c:2952
 msgid "Click to perform a search."
 msgstr "Kattintson ide a keresés elvégzéséhez."
 
-#: ../gsearchtool/src/gsearchtool.c:2922
+#: ../gsearchtool/src/gsearchtool.c:2953
 msgid "Click to stop a search."
 msgstr "Kattintson ide a keresés leállításához."
 
-#: ../gsearchtool/src/gsearchtool.c:3016
+#: ../gsearchtool/src/gsearchtool.c:3047
 msgid "- the MATE Search Tool"
 msgstr "– a MATE keresőeszköze"
 
-#: ../gsearchtool/src/gsearchtool.c:3025
+#: ../gsearchtool/src/gsearchtool.c:3056
 #, c-format
 msgid "Failed to parse command line arguments: %s\n"
 msgstr "A parancssori paraméterek feldolgozása meghiúsult: %s\n"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:203
+#: ../gsearchtool/src/gsearchtool-callbacks.c:199
 msgid "Could not open help document."
 msgstr "Nem nyitható meg a súgódokumentum."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:354
+#: ../gsearchtool/src/gsearchtool-callbacks.c:350
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
 msgstr[0] "Biztosan meg akar nyitni %d dokumentumot?"
 msgstr[1] "Biztosan meg akar nyitni %d dokumentumot?"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:359
-#: ../gsearchtool/src/gsearchtool-callbacks.c:556
+#: ../gsearchtool/src/gsearchtool-callbacks.c:355
+#: ../gsearchtool/src/gsearchtool-callbacks.c:557
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
-msgstr[0] "%d különálló ablak fog megnyílni."
-msgstr[1] "%d különálló ablak fog megnyílni."
+msgstr[0] "Ez %d új ablakot fog megnyitni."
+msgstr[1] "Ez %d új ablakot fog megnyitni."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:399
+#: ../gsearchtool/src/gsearchtool-callbacks.c:400
 #, c-format
 msgid "Could not open document \"%s\"."
 msgstr "Nem nyitható meg a(z) „%s” dokumentum."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:428
+#: ../gsearchtool/src/gsearchtool-callbacks.c:429
 #, c-format
 msgid "Could not open folder \"%s\"."
 msgstr "Nem nyitható meg a(z) „%s” mappa."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:436
+#: ../gsearchtool/src/gsearchtool-callbacks.c:437
 msgid "The caja file manager is not running."
 msgstr "Nem fut a Caja fájlkezelő."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:528
+#: ../gsearchtool/src/gsearchtool-callbacks.c:529
 msgid "There is no installed viewer capable of displaying the document."
-msgstr "Nincs olyan nézőprogram telepítve, amely képes lenne megjeleníteni a dokumentumot."
+msgstr ""
+"Nincs olyan nézőprogram telepítve, amely képes lenne megjeleníteni a "
+"dokumentumot."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:551
+#: ../gsearchtool/src/gsearchtool-callbacks.c:552
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
 msgstr[0] "Biztosan meg akar nyitni %d mappát?"
 msgstr[1] "Biztosan meg akar nyitni %d mappát?"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:704
+#: ../gsearchtool/src/gsearchtool-callbacks.c:710
 #, c-format
 msgid "Could not move \"%s\" to trash."
 msgstr "„%s” nem helyezhető át a Kukába."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:735
+#: ../gsearchtool/src/gsearchtool-callbacks.c:741
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
 msgstr "Véglegesen törölni akarja a következőt: „%s”?"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:738
+#: ../gsearchtool/src/gsearchtool-callbacks.c:744
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
 msgstr "Nem érhető el a Kuka. „%s” nem helyezhető át a Kukába."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:777
+#: ../gsearchtool/src/gsearchtool-callbacks.c:788
 #, c-format
 msgid "Could not delete \"%s\"."
 msgstr "„%s” nem törölhető."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:889
+#: ../gsearchtool/src/gsearchtool-callbacks.c:900
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
 msgstr "„%s” törlése sikertelen: %s."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:901
+#: ../gsearchtool/src/gsearchtool-callbacks.c:912
 #, c-format
 msgid "Moving \"%s\" failed: %s."
 msgstr "„%s” áthelyezése sikertelen: %s."
 
 #. Popup menu item: Open
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1029
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1059
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1040
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1070
 msgid "_Open"
 msgstr "_Megnyitás"
 
 #. Popup menu item: Open with (default)
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1084
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1095
 #, c-format
 msgid "_Open with %s"
 msgstr "_Megnyitás ezzel: %s"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1119
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1130
 #, c-format
 msgid "Open with %s"
 msgstr "Megnyitás ezzel: %s"
 
 #. Popup menu item: Open With
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1152
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1163
 msgid "Open Wit_h"
 msgstr "Megnyitás e_zzel"
 
 #. Popup menu item: Open Containing Folder
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1197
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1208
 msgid "Open Containing _Folder"
 msgstr "_Tartalmazó mappa megnyitása"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1237
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1248
 msgid "_Save Results As..."
 msgstr "_Eredmény mentése…"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1622
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1633
 msgid "Save Search Results As..."
 msgstr "Keresés eredményének mentése…"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1651
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1662
 msgid "Could not save document."
 msgstr "A dokumentum nem menthető."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1652
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1663
 msgid "You did not select a document name."
 msgstr "Nem választott ki dokumentumnevet."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1682
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1693
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr "A(z) „%s” dokumentum nem menthető a(z) „%s” helyre."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1715
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1726
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr "A(z) „%s” dokumentum már létezik. Lecseréli?"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1719
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1730
 msgid "If you replace an existing file, its contents will be overwritten."
 msgstr "Ha lecserél egy létező fájlt, akkor annak tartalma felülíródik."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1734
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1745
 #: ../mate-screenshot/src/screenshot-xfer.c:82
 msgid "_Replace"
 msgstr "_Csere"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1783
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1794
 msgid "The document name you selected is a folder."
 msgstr "A kiválasztott dokumentumnév egy mappa."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1819
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1830
 msgid "You may not have write permissions to the document."
 msgstr "Lehet, hogy nincs írási jogosultsága a dokumentumhoz."
 
@@ -1508,7 +1603,10 @@ msgstr "Az indításkor megnyitandó naplófájl"
 msgid ""
 "Specifies the log file displayed at startup. The default is either "
 "/var/adm/messages or /var/log/messages, depending on your operating system."
-msgstr "Megadja az indításkor megjelenítendő naplófájlt. Az alapértelmezett érték vagy a /var/adm/messages vagy a /var/log/messages, az operációs rendszertől függően."
+msgstr ""
+"Megadja az indításkor megjelenítendő naplófájlt. Az alapértelmezett érték "
+"vagy a /var/adm/messages vagy a /var/log/messages, az operációs rendszertől "
+"függően."
 
 #: ../logview/data/org.mate.system-log.gschema.xml.in.h:3
 msgid "Size of the font used to display the log"
@@ -1518,7 +1616,10 @@ msgstr "A napló megjelenítésére használandó betűkészlet mérete"
 msgid ""
 "Specifies the size of the fixed-width font used to display the log in the "
 "main tree view. The default is taken from the default terminal font size."
-msgstr "Megadja a fő fanézetben a napló megjelenítésére használandó rögzített szélességű betűkészlet méretét. Az alapértelmezés az alapértelmezett rögzített szélességű betűkészlet beállításból származik."
+msgstr ""
+"Megadja a fő fanézetben a napló megjelenítésére használandó rögzített "
+"szélességű betűkészlet méretét. Az alapértelmezés az alapértelmezett "
+"rögzített szélességű betűkészlet beállításból származik."
 
 #: ../logview/data/org.mate.system-log.gschema.xml.in.h:5
 msgid "Height of the main window in pixels"
@@ -1544,7 +1645,9 @@ msgstr "Az indításkor megnyitandó naplófájlok"
 msgid ""
 "Specifies a list of log files to open up at startup. A default list is "
 "created by reading /etc/syslog.conf."
-msgstr "Megadja az indításkor megnyitandó naplófájlok listáját. Az alapértelmezett lista az /etc/syslog.conf beolvasásával jön létre."
+msgstr ""
+"Megadja az indításkor megnyitandó naplófájlok listáját. Az alapértelmezett "
+"lista az /etc/syslog.conf beolvasásával jön létre."
 
 #: ../logview/data/org.mate.system-log.gschema.xml.in.h:11
 msgid "List of saved filters"
@@ -1617,7 +1720,7 @@ msgstr "Szűrő szerkesztése"
 msgid "Add new filter"
 msgstr "Új szűrő hozzáadása"
 
-#: ../logview/src/logview-filter-manager.c:510
+#: ../logview/src/logview-filter-manager.c:524
 msgid "Filters"
 msgstr "Szűrők"
 
@@ -1631,7 +1734,7 @@ msgstr "Előző találat"
 
 #: ../logview/src/logview-findbar.c:190
 msgid "Find previous occurrence of the search string"
-msgstr "A szó vagy kifejezés előző előfordulása"
+msgstr "A keresőkifejezés előző előfordulása az oldalon"
 
 #: ../logview/src/logview-findbar.c:195
 msgid "Find Next"
@@ -1639,7 +1742,7 @@ msgstr "Következő találat"
 
 #: ../logview/src/logview-findbar.c:198
 msgid "Find next occurrence of the search string"
-msgstr "A szó vagy kifejezés következő előfordulása"
+msgstr "A keresőkifejezés következő előfordulása az oldalon"
 
 #: ../logview/src/logview-findbar.c:205
 msgid "Clear the search string"
@@ -1659,7 +1762,9 @@ msgstr "A fájl nem szabályos fájl vagy szövegfájl."
 
 #: ../logview/src/logview-log.c:742
 msgid "This version of System Log does not support GZipped logs."
-msgstr "A Naplómegjelenítő ezen változata nem támogatja a Gzip-pel tömörített naplókat."
+msgstr ""
+"A Naplómegjelenítő ezen változata nem támogatja a Gzip-pel tömörített "
+"naplókat."
 
 #: ../logview/src/logview-loglist.c:316
 msgid "Loading..."
@@ -1681,7 +1786,7 @@ msgstr " – Naplók böngészése és megfigyelése"
 msgid "Log Viewer"
 msgstr "Naplómegjelenítő"
 
-#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:771
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:767
 msgid "System Log Viewer"
 msgstr "Rendszernaplónéző"
 
@@ -1699,152 +1804,167 @@ msgstr "%d sor (%s) - %s"
 msgid "Open Log"
 msgstr "Napló megnyitása"
 
-#: ../logview/src/logview-window.c:368
+#: ../logview/src/logview-window.c:364
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "Hiba történt a súgó megjelenítése közben: %s"
 
-#: ../logview/src/logview-window.c:482
+#: ../logview/src/logview-window.c:478
 msgid "Wrapped"
 msgstr "Körbeért"
 
-#: ../logview/src/logview-window.c:497
+#: ../logview/src/logview-window.c:493
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1127
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1221
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1255
 msgid "Not found"
-msgstr "Nincs találat"
+msgstr "Nem található"
 
-#: ../logview/src/logview-window.c:777
+#: ../logview/src/logview-window.c:773
 msgid "A system log viewer for MATE."
 msgstr "Rendszernaplónéző a MATE környezethez."
 
-#: ../logview/src/logview-window.c:820
-#: ../mate-dictionary/src/gdict-window.c:1291
+#: ../logview/src/logview-window.c:816
+#: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_File"
 msgstr "_Fájl"
 
-#: ../logview/src/logview-window.c:823
+#: ../logview/src/logview-window.c:819
 msgid "_Filters"
 msgstr "_Szűrők"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:822
 msgid "_Open..."
 msgstr "_Megnyitás…"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:822
 msgid "Open a log from file"
 msgstr "Napló megnyitása fájlból"
 
-#: ../logview/src/logview-window.c:828
+#: ../logview/src/logview-window.c:824
+#: ../mate-dictionary/src/gdict-window.c:1302
 msgid "_Close"
 msgstr "_Bezárás"
 
-#: ../logview/src/logview-window.c:828
+#: ../logview/src/logview-window.c:824
 msgid "Close this log"
 msgstr "Napló bezárása"
 
-#: ../logview/src/logview-window.c:830
+#: ../logview/src/logview-window.c:826
 msgid "_Quit"
 msgstr "_Kilépés"
 
-#: ../logview/src/logview-window.c:830
+#: ../logview/src/logview-window.c:826
 msgid "Quit the log viewer"
 msgstr "Kilépés a naplónézőből"
 
-#: ../logview/src/logview-window.c:833
+#. Edit menu
+#: ../logview/src/logview-window.c:829
+#: ../mate-dictionary/src/gdict-window.c:1306
 msgid "_Copy"
 msgstr "_Másolás"
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:829
 msgid "Copy the selection"
-msgstr "A kijelölés másolása"
+msgstr "Kijelölés másolása"
 
-#: ../logview/src/logview-window.c:835
-#: ../mate-dictionary/src/gdict-window.c:1312
+#: ../logview/src/logview-window.c:831
+#: ../mate-dictionary/src/gdict-window.c:1308
 msgid "Select _All"
-msgstr "_Mindent kijelöl"
+msgstr "Min_dent kijelöl"
 
-#: ../logview/src/logview-window.c:835
+#: ../logview/src/logview-window.c:831
 msgid "Select the entire log"
 msgstr "Teljes napló kijelölése"
 
-#: ../logview/src/logview-window.c:837
+#: ../logview/src/logview-window.c:833
 msgid "_Find..."
 msgstr "_Keresés…"
 
-#: ../logview/src/logview-window.c:837
+#: ../logview/src/logview-window.c:833
 msgid "Find a word or phrase in the log"
 msgstr "Szó vagy kifejezés keresése a naplóban"
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:836
+msgid "Zoom _In"
+msgstr "_Nagyítás"
+
+#: ../logview/src/logview-window.c:836
 msgid "Bigger text size"
 msgstr "Nagyobb szövegméret"
 
-#: ../logview/src/logview-window.c:842
+#: ../logview/src/logview-window.c:838
+msgid "Zoom _Out"
+msgstr "_Kicsinyítés"
+
+#: ../logview/src/logview-window.c:838
 msgid "Smaller text size"
 msgstr "Kisebb szövegméret"
 
-#: ../logview/src/logview-window.c:844
+#: ../logview/src/logview-window.c:840
+msgid "_Normal Size"
+msgstr "_Normál méret"
+
+#: ../logview/src/logview-window.c:840
 msgid "Normal text size"
 msgstr "Normál szövegméret"
 
-#: ../logview/src/logview-window.c:847
+#: ../logview/src/logview-window.c:843
 msgid "Manage Filters"
 msgstr "Szűrők kezelése"
 
-#: ../logview/src/logview-window.c:847
+#: ../logview/src/logview-window.c:843
 msgid "Manage filters"
 msgstr "Szűrők kezelése"
 
-#: ../logview/src/logview-window.c:850
+#: ../logview/src/logview-window.c:846
 msgid "Open the help contents for the log viewer"
 msgstr "A naplónéző súgójának megnyitása"
 
-#: ../logview/src/logview-window.c:852
-#: ../mate-dictionary/src/gdict-applet.c:1192
-#: ../mate-dictionary/src/gdict-window.c:1347
+#: ../logview/src/logview-window.c:848
+#: ../mate-dictionary/src/gdict-applet.c:1190
+#: ../mate-dictionary/src/gdict-window.c:1343
 msgid "_About"
 msgstr "_Névjegy"
 
-#: ../logview/src/logview-window.c:852
+#: ../logview/src/logview-window.c:848
 msgid "Show the about dialog for the log viewer"
 msgstr "A naplónéző névjegyének megjelenítése"
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:853
 msgid "_Statusbar"
 msgstr "Állapot_sor"
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:853
 msgid "Show Status Bar"
 msgstr "Állapotsor mutatása"
 
-#: ../logview/src/logview-window.c:859
+#: ../logview/src/logview-window.c:855
 msgid "Side _Pane"
-msgstr "Oldal_sáv"
+msgstr "Oldalsá_v"
 
-#: ../logview/src/logview-window.c:859
+#: ../logview/src/logview-window.c:855
 msgid "Show Side Pane"
 msgstr "Az oldalsáv mutatása"
 
-#: ../logview/src/logview-window.c:861
+#: ../logview/src/logview-window.c:857
 msgid "Show matches only"
 msgstr "Csak a találatok megjelenítése"
 
-#: ../logview/src/logview-window.c:861
+#: ../logview/src/logview-window.c:857
 msgid "Only show lines that match one of the given filters"
 msgstr "Csak a valamelyik megadott szűrőre illeszkedő sorok megjelenítése"
 
-#: ../logview/src/logview-window.c:993
+#: ../logview/src/logview-window.c:989
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr "Nem lehet olvasni ebből: „%s”"
 
-#: ../logview/src/logview-window.c:1421
+#: ../logview/src/logview-window.c:1414
 msgid "Version: "
 msgstr "Verzió: "
 
-#: ../logview/src/logview-window.c:1529
+#: ../logview/src/logview-window.c:1522
 msgid "Could not open the following files:"
 msgstr "Nem nyithatók meg a következő fájlok:"
 
@@ -1858,7 +1978,8 @@ msgstr "MATE szótár"
 
 #: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:2
 msgid "Check word definitions and spellings in an online dictionary"
-msgstr "Szavak meghatározásainak és helyesírásának keresése online szótárakban"
+msgstr ""
+"Szavak meghatározásainak és helyesírásának keresése online szótárakban"
 
 #: ../mate-dictionary/data/mate-dictionary.appdata.xml.in.h:1
 msgid "A dictionary for MATE Desktop"
@@ -1870,7 +1991,10 @@ msgid ""
 "comes preconfigured with a list of Dict servers (RFC 2229), to which you can"
 " add your own sources, while you can select specific servers for a specific "
 "query. </p>"
-msgstr "<p>A MATE szótár segítségével szavak kereshetőek online szótárakban. Előre beállítva a Dict szerverek listájával (RFC 2229), amely saját forrásokkal bővíthető, és minden kereséshez megadható a használandó szerver. </p>"
+msgstr ""
+"<p>A MATE szótár segítségével szavak kereshetőek online szótárakban. Előre "
+"beállítva a Dict szerverek listájával (RFC 2229), amely saját forrásokkal "
+"bővíthető, és minden kereséshez megadható a használandó szerver. </p>"
 
 #: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:1
 msgid "Dictionary Applet Factory"
@@ -1897,7 +2021,10 @@ msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
 "present in a dictionary source should be searched"
-msgstr "A szótárforráson használandó egyedi adatbázis vagy meta-adatbázis neve. A felkiáltójel („!”) azt jelenti, hogy a mate-dictionary az adott kiszolgálón fellelhető összes adatbázisban keres"
+msgstr ""
+"A szótárforráson használandó egyedi adatbázis vagy meta-adatbázis neve. A "
+"felkiáltójel („!”) azt jelenti, hogy a mate-dictionary az adott kiszolgálón "
+"fellelhető összes adatbázisban keres"
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:3
 msgid "The default search strategy to use"
@@ -1907,7 +2034,10 @@ msgstr "Az alapértelmezésben használandó keresési stratégia"
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is 'exact', that is match exact words."
-msgstr "Egy szótárforráson alkalmazott alapértelmezett keresési stratégia neve, ha elérhető. Az „exact” keresési stratégia azt jelenti, hogy csak a pontosan egyező szavak fognak találatot adni."
+msgstr ""
+"Egy szótárforráson alkalmazott alapértelmezett keresési stratégia neve, ha "
+"elérhető. Az „exact” keresési stratégia azt jelenti, hogy csak a pontosan "
+"egyező szavak fognak találatot adni."
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:5
 msgid "The font to be used when printing"
@@ -1987,7 +2117,9 @@ msgstr "„%s” kikeresése sikertelen: a kiszolgáló nem található"
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
 "with code %d (server down)"
-msgstr "Nem lehet kapcsolódni „%s:%d” szótárkiszolgálóhoz. A kiszolgáló a következő kódot adta válaszul: %d (a kiszolgáló nem fut)"
+msgstr ""
+"Nem lehet kapcsolódni „%s:%d” szótárkiszolgálóhoz. A kiszolgáló a következő "
+"kódot adta válaszul: %d (a kiszolgáló nem fut)"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1196
 #, c-format
@@ -2041,7 +2173,9 @@ msgstr "A kapcsolódás meghiúsult a(z) %s:%d szótárkiszolgálóhoz"
 msgid ""
 "Error while reading reply from server:\n"
 "%s"
-msgstr "Hiba lépett fel a kiszolgáló válaszának beolvasásakor:\n%s"
+msgstr ""
+"Hiba lépett fel a kiszolgáló válaszának beolvasásakor:\n"
+"%s"
 
 #: ../mate-dictionary/libgdict/gdict-client-context.c:1852
 #, c-format
@@ -2101,23 +2235,23 @@ msgstr "_Előző"
 
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1337
 msgid "_Next"
-msgstr "_Következő"
+msgstr "Kö_vetkező"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2494
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2485
 msgid "Error while looking up definition"
 msgstr "Hiba a meghatározás keresése közben"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2536
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2527
 #: ../mate-dictionary/libgdict/gdict-speller.c:731
 msgid "Another search is in progress"
 msgstr "Egy másik keresés van folyamatban"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2537
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2528
 #: ../mate-dictionary/libgdict/gdict-speller.c:732
 msgid "Please wait until the current search ends."
 msgstr "Kérem, várjon a jelenlegi keresés befejezéséig."
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2576
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2567
 msgid "Error while retrieving the definition"
 msgstr "Hiba a meghatározás letöltése közben"
 
@@ -2276,14 +2410,14 @@ msgid "Show GDict Options"
 msgstr "Szótárbeállítások megjelenítése"
 
 #: ../mate-dictionary/src/gdict-about.c:58
-#: ../mate-dictionary/src/gdict-applet.c:587
+#: ../mate-dictionary/src/gdict-applet.c:589
 msgid "Look up words in dictionaries"
 msgstr "Szó keresése szótárakban"
 
 #: ../mate-dictionary/src/gdict-about.c:79
 #: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:607
-#: ../mate-dictionary/src/gdict-window.c:1900
+#: ../mate-dictionary/src/gdict-window.c:1896
 msgid "Dictionary"
 msgstr "Szótár"
 
@@ -2297,7 +2431,11 @@ msgid ""
 "  From '%s':\n"
 "\n"
 "%s\n"
-msgstr "„%s” meghatározása\n  %s forrásból:\n\n%s\n"
+msgstr ""
+"„%s” meghatározása\n"
+"  %s forrásból:\n"
+"\n"
+"%s\n"
 
 #: ../mate-dictionary/src/gdict-app.c:231
 #, c-format
@@ -2307,7 +2445,8 @@ msgstr "Hiba: %s\n"
 #: ../mate-dictionary/src/gdict-app.c:257
 #, c-format
 msgid "See mate-dictionary --help for usage\n"
-msgstr "Lásd még a „mate-dictionary --help” kimenetét a használati információkért\n"
+msgstr ""
+"Lásd még a „mate-dictionary --help” kimenetét a használati információkért\n"
 
 #: ../mate-dictionary/src/gdict-app.c:270
 msgid "Unable to find a suitable dictionary source"
@@ -2318,7 +2457,9 @@ msgstr "Nem található megfelelő szótárforrás"
 msgid ""
 "Error while looking up the definition of \"%s\":\n"
 "%s"
-msgstr "Hiba „%s” meghatározásának keresése közben:\n%s"
+msgstr ""
+"Hiba „%s” meghatározásának keresése közben:\n"
+"%s"
 
 #: ../mate-dictionary/src/gdict-app.c:333
 #: ../mate-dictionary/src/gdict-app.c:343
@@ -2360,130 +2501,130 @@ msgstr "db"
 msgid " - Look up words in dictionaries"
 msgstr " – Szavak keresése a szótárakban"
 
-#: ../mate-dictionary/src/gdict-applet.c:219
+#: ../mate-dictionary/src/gdict-applet.c:206
 #: ../mate-dictionary/src/gdict-window.c:964
 msgid "Save a Copy"
 msgstr "Másolat mentése"
 
-#: ../mate-dictionary/src/gdict-applet.c:229
+#: ../mate-dictionary/src/gdict-applet.c:216
 #: ../mate-dictionary/src/gdict-window.c:974
 msgid "Untitled document"
 msgstr "Névtelen dokumentum"
 
-#: ../mate-dictionary/src/gdict-applet.c:250
+#: ../mate-dictionary/src/gdict-applet.c:237
 #: ../mate-dictionary/src/gdict-window.c:995
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "Hiba történt „%s” írásakor"
 
-#: ../mate-dictionary/src/gdict-applet.c:370
+#: ../mate-dictionary/src/gdict-applet.c:362
 msgid "Clear the definitions found"
 msgstr "Talált meghatározások törlése"
 
-#: ../mate-dictionary/src/gdict-applet.c:372
+#: ../mate-dictionary/src/gdict-applet.c:364
 msgid "Clear definition"
 msgstr "Meghatározás törlése"
 
-#: ../mate-dictionary/src/gdict-applet.c:373
+#: ../mate-dictionary/src/gdict-applet.c:365
 msgid "Clear the text of the definition"
 msgstr "Meghatározás szövegének törlése"
 
-#: ../mate-dictionary/src/gdict-applet.c:380
+#: ../mate-dictionary/src/gdict-applet.c:377
 msgid "Print the definitions found"
 msgstr "A talált meghatározások nyomtatása"
 
-#: ../mate-dictionary/src/gdict-applet.c:382
+#: ../mate-dictionary/src/gdict-applet.c:379
 msgid "Print definition"
 msgstr "Meghatározás nyomtatása"
 
-#: ../mate-dictionary/src/gdict-applet.c:383
+#: ../mate-dictionary/src/gdict-applet.c:380
 msgid "Print the text of the definition"
 msgstr "Meghatározás szövegének nyomtatása"
 
-#: ../mate-dictionary/src/gdict-applet.c:390
+#: ../mate-dictionary/src/gdict-applet.c:392
 msgid "Save the definitions found"
 msgstr "A talált meghatározások mentése"
 
-#: ../mate-dictionary/src/gdict-applet.c:392
+#: ../mate-dictionary/src/gdict-applet.c:394
 msgid "Save definition"
 msgstr "Meghatározás mentése"
 
-#: ../mate-dictionary/src/gdict-applet.c:393
+#: ../mate-dictionary/src/gdict-applet.c:395
 msgid "Save the text of the definition to a file"
 msgstr "Meghatározás szövegének fájlba mentése"
 
-#: ../mate-dictionary/src/gdict-applet.c:530
+#: ../mate-dictionary/src/gdict-applet.c:532
 msgid "Click to view the dictionary window"
 msgstr "Kattintson a szótárablak megtekintéséhez"
 
-#: ../mate-dictionary/src/gdict-applet.c:532
+#: ../mate-dictionary/src/gdict-applet.c:534
 msgid "Toggle dictionary window"
 msgstr "Szótárablak átváltása"
 
-#: ../mate-dictionary/src/gdict-applet.c:533
+#: ../mate-dictionary/src/gdict-applet.c:535
 msgid "Show or hide the definition window"
 msgstr "Meghatározásablak megjelenítése vagy elrejtése"
 
-#: ../mate-dictionary/src/gdict-applet.c:584
+#: ../mate-dictionary/src/gdict-applet.c:586
 msgid "Type the word you want to look up"
 msgstr "Gépelje be a keresett szót"
 
-#: ../mate-dictionary/src/gdict-applet.c:586
+#: ../mate-dictionary/src/gdict-applet.c:588
 msgid "Dictionary entry"
 msgstr "Szótárbejegyzés"
 
-#: ../mate-dictionary/src/gdict-applet.c:715
+#: ../mate-dictionary/src/gdict-applet.c:717
 #: ../mate-dictionary/src/gdict-window.c:1106
 msgid "Dictionary Preferences"
 msgstr "Szótár beállításai"
 
-#: ../mate-dictionary/src/gdict-applet.c:743
-#: ../mate-dictionary/src/gdict-pref-dialog.c:499
-#: ../mate-dictionary/src/gdict-source-dialog.c:482
-#: ../mate-dictionary/src/gdict-window.c:1257
+#: ../mate-dictionary/src/gdict-applet.c:741
+#: ../mate-dictionary/src/gdict-pref-dialog.c:495
+#: ../mate-dictionary/src/gdict-source-dialog.c:478
+#: ../mate-dictionary/src/gdict-window.c:1253
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "Hiba történt a súgó megjelenítése közben"
 
-#: ../mate-dictionary/src/gdict-applet.c:882
+#: ../mate-dictionary/src/gdict-applet.c:880
 #: ../mate-dictionary/src/gdict-window.c:522
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "Nem található a(z) „%s” nevű szótárforrás"
 
-#: ../mate-dictionary/src/gdict-applet.c:886
+#: ../mate-dictionary/src/gdict-applet.c:884
 #: ../mate-dictionary/src/gdict-window.c:526
 msgid "Unable to find dictionary source"
 msgstr "Nem található szótárforrás"
 
-#: ../mate-dictionary/src/gdict-applet.c:902
+#: ../mate-dictionary/src/gdict-applet.c:900
 #: ../mate-dictionary/src/gdict-window.c:542
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "Nincs elérhető kontextus a(z) „%s” forráshoz"
 
-#: ../mate-dictionary/src/gdict-applet.c:906
+#: ../mate-dictionary/src/gdict-applet.c:904
 #: ../mate-dictionary/src/gdict-window.c:546
 msgid "Unable to create a context"
 msgstr "Nem hozható létre a kontextus"
 
-#: ../mate-dictionary/src/gdict-applet.c:1174
+#: ../mate-dictionary/src/gdict-applet.c:1172
 msgid "_Look Up Selected Text"
 msgstr "_Kijelölt szöveg kikeresése"
 
-#: ../mate-dictionary/src/gdict-applet.c:1177
+#: ../mate-dictionary/src/gdict-applet.c:1175
 msgid "Cl_ear"
 msgstr "Tör_lés"
 
-#: ../mate-dictionary/src/gdict-applet.c:1180
+#: ../mate-dictionary/src/gdict-applet.c:1178
 msgid "_Print"
 msgstr "_Nyomtatás"
 
-#: ../mate-dictionary/src/gdict-applet.c:1183
+#: ../mate-dictionary/src/gdict-applet.c:1181
 msgid "_Save"
 msgstr "_Mentés"
 
-#: ../mate-dictionary/src/gdict-applet.c:1186
+#: ../mate-dictionary/src/gdict-applet.c:1184
 msgid "Preferences"
 msgstr "Beállítások"
 
@@ -2521,19 +2662,19 @@ msgstr "Ez véglegesen eltávolítja a szótárforrást a listából"
 msgid "Unable to remove source '%s'"
 msgstr "A(z) „%s” forrás nem távolítható el"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:646
+#: ../mate-dictionary/src/gdict-pref-dialog.c:642
 msgid "Add a new dictionary source"
 msgstr "Új szótárforrás hozzáadása"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:652
+#: ../mate-dictionary/src/gdict-pref-dialog.c:648
 msgid "Remove the currently selected dictionary source"
 msgstr "A jelenleg kiválasztott szótárforrás eltávolítása"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:658
+#: ../mate-dictionary/src/gdict-pref-dialog.c:654
 msgid "Edit the currently selected dictionary source"
 msgstr "A jelenleg kiválasztott szótárforrás szerkesztése"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:666
+#: ../mate-dictionary/src/gdict-pref-dialog.c:662
 msgid "Set the font used for printing the definitions"
 msgstr "A meghatározások nyomtatásához használt betűkészlet kiválasztása"
 
@@ -2575,171 +2716,175 @@ msgstr[1] "%d meghatározás található"
 msgid "%s - Dictionary"
 msgstr "%s – Szótár"
 
-#: ../mate-dictionary/src/gdict-window.c:1294
+#: ../mate-dictionary/src/gdict-window.c:1290
 msgid "_Go"
 msgstr "_Ugrás"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1298
+#: ../mate-dictionary/src/gdict-window.c:1294
 msgid "_New"
 msgstr "Ú_j"
 
-#: ../mate-dictionary/src/gdict-window.c:1299
+#: ../mate-dictionary/src/gdict-window.c:1295
 msgid "New look up"
 msgstr "Új keresés"
 
-#: ../mate-dictionary/src/gdict-window.c:1300
+#: ../mate-dictionary/src/gdict-window.c:1296
 msgid "_Save a Copy..."
 msgstr "Más_olat mentése…"
 
-#: ../mate-dictionary/src/gdict-window.c:1302
+#: ../mate-dictionary/src/gdict-window.c:1298
 msgid "P_review..."
 msgstr "_Előnézet…"
 
-#: ../mate-dictionary/src/gdict-window.c:1303
+#: ../mate-dictionary/src/gdict-window.c:1299
 msgid "Preview this document"
 msgstr "A dokumentum előnézete"
 
-#: ../mate-dictionary/src/gdict-window.c:1304
+#: ../mate-dictionary/src/gdict-window.c:1300
 msgid "_Print..."
 msgstr "_Nyomtatás…"
 
-#: ../mate-dictionary/src/gdict-window.c:1305
+#: ../mate-dictionary/src/gdict-window.c:1301
 msgid "Print this document"
 msgstr "A jelenlegi dokumentum nyomtatása"
 
-#: ../mate-dictionary/src/gdict-window.c:1315
+#: ../mate-dictionary/src/gdict-window.c:1310
+msgid "_Find"
+msgstr "_Keresés"
+
+#: ../mate-dictionary/src/gdict-window.c:1311
 msgid "Find a word or phrase in the document"
 msgstr "Szó vagy kifejezés keresése a dokumentumban"
 
-#: ../mate-dictionary/src/gdict-window.c:1317
+#: ../mate-dictionary/src/gdict-window.c:1313
 msgid "Find Ne_xt"
-msgstr "_Következő találat"
+msgstr "Kö_vetkező találat"
 
-#: ../mate-dictionary/src/gdict-window.c:1319
+#: ../mate-dictionary/src/gdict-window.c:1315
 msgid "Find Pre_vious"
 msgstr "Elő_ző találat"
 
-#: ../mate-dictionary/src/gdict-window.c:1321
+#: ../mate-dictionary/src/gdict-window.c:1317
 msgid "_Preferences"
 msgstr "_Beállítások"
 
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1325
+#: ../mate-dictionary/src/gdict-window.c:1321
 msgid "_Previous Definition"
 msgstr "_Előző meghatározás"
 
-#: ../mate-dictionary/src/gdict-window.c:1326
+#: ../mate-dictionary/src/gdict-window.c:1322
 msgid "Go to the previous definition"
 msgstr "Ugrás az előző meghatározásra"
 
-#: ../mate-dictionary/src/gdict-window.c:1327
+#: ../mate-dictionary/src/gdict-window.c:1323
 msgid "_Next Definition"
 msgstr "_Következő meghatározás"
 
-#: ../mate-dictionary/src/gdict-window.c:1328
+#: ../mate-dictionary/src/gdict-window.c:1324
 msgid "Go to the next definition"
 msgstr "Ugrás a következő meghatározásra"
 
-#: ../mate-dictionary/src/gdict-window.c:1329
+#: ../mate-dictionary/src/gdict-window.c:1325
 msgid "_First Definition"
 msgstr "El_ső meghatározás"
 
-#: ../mate-dictionary/src/gdict-window.c:1330
+#: ../mate-dictionary/src/gdict-window.c:1326
 msgid "Go to the first definition"
 msgstr "Ugrás az első meghatározásra"
 
-#: ../mate-dictionary/src/gdict-window.c:1331
+#: ../mate-dictionary/src/gdict-window.c:1327
 msgid "_Last Definition"
 msgstr "_Utolsó meghatározás"
 
-#: ../mate-dictionary/src/gdict-window.c:1332
+#: ../mate-dictionary/src/gdict-window.c:1328
 msgid "Go to the last definition"
 msgstr "Ugrás az utolsó meghatározásra"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1335
+#: ../mate-dictionary/src/gdict-window.c:1331
 msgid "Similar _Words"
 msgstr "_Hasonló szavak"
 
-#: ../mate-dictionary/src/gdict-window.c:1337
+#: ../mate-dictionary/src/gdict-window.c:1333
 msgid "Dictionary Sources"
 msgstr "Szótárforrások"
 
-#: ../mate-dictionary/src/gdict-window.c:1339
+#: ../mate-dictionary/src/gdict-window.c:1335
 msgid "Available _Databases"
 msgstr "_Elérhető adatbázisok"
 
-#: ../mate-dictionary/src/gdict-window.c:1341
+#: ../mate-dictionary/src/gdict-window.c:1337
 msgid "Available St_rategies"
 msgstr "Elérhető st_ratégiák"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1358
+#: ../mate-dictionary/src/gdict-window.c:1354
 msgid "_Sidebar"
 msgstr "_Oldalsáv"
 
-#: ../mate-dictionary/src/gdict-window.c:1360
+#: ../mate-dictionary/src/gdict-window.c:1356
 msgid "S_tatusbar"
 msgstr "Á_llapotsor"
 
-#: ../mate-dictionary/src/gdict-window.c:1425
+#: ../mate-dictionary/src/gdict-window.c:1421
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "A szótárforrás („%s”) kiválasztva"
 
-#: ../mate-dictionary/src/gdict-window.c:1446
+#: ../mate-dictionary/src/gdict-window.c:1442
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "A(z) „%s” stratégia kiválasztva"
 
-#: ../mate-dictionary/src/gdict-window.c:1466
+#: ../mate-dictionary/src/gdict-window.c:1462
 #, c-format
 msgid "Database `%s' selected"
 msgstr "A(z) „%s” adatbázis kiválasztva"
 
-#: ../mate-dictionary/src/gdict-window.c:1486
+#: ../mate-dictionary/src/gdict-window.c:1482
 #, c-format
 msgid "Word `%s' selected"
 msgstr "A(z) „%s” szó kiválasztva"
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1511
+#: ../mate-dictionary/src/gdict-window.c:1507
 msgid "Double-click on the word to look up"
 msgstr "Kattintson duplán a szó kikereséséhez"
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1517
+#: ../mate-dictionary/src/gdict-window.c:1513
 msgid "Double-click on the matching strategy to use"
 msgstr "Kattintson duplán a használandó keresési stratégiára"
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1522
+#: ../mate-dictionary/src/gdict-window.c:1518
 msgid "Double-click on the source to use"
 msgstr "Kattintson duplán a használandó szótáron"
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1531
+#: ../mate-dictionary/src/gdict-window.c:1527
 msgid "Double-click on the database to use"
 msgstr "Kattintson duplán a használandó adatbázison"
 
-#: ../mate-dictionary/src/gdict-window.c:1706
+#: ../mate-dictionary/src/gdict-window.c:1702
 msgid "Look _up:"
 msgstr "_Keresés:"
 
-#: ../mate-dictionary/src/gdict-window.c:1781
+#: ../mate-dictionary/src/gdict-window.c:1777
 msgid "Similar words"
 msgstr "Hasonló szavak"
 
-#: ../mate-dictionary/src/gdict-window.c:1794
+#: ../mate-dictionary/src/gdict-window.c:1790
 msgid "Available dictionaries"
 msgstr "Elérhető szótárak"
 
-#: ../mate-dictionary/src/gdict-window.c:1812
+#: ../mate-dictionary/src/gdict-window.c:1808
 msgid "Available strategies"
 msgstr "Elérhető stratégiák"
 
-#: ../mate-dictionary/src/gdict-window.c:1828
+#: ../mate-dictionary/src/gdict-window.c:1824
 msgid "Dictionary sources"
 msgstr "Szótárforrások"
 
@@ -2794,11 +2939,15 @@ msgid ""
 " your desktop or of application windows. You can select to copy them to the "
 "system clipboard or save them in Portable Network Graphics (.png) image "
 "format. </p>"
-msgstr "<p>A MATE Screenshot egy egyszerű segédprogram az asztal vagy egy alkalmazás ablakának „fotózásához”. Az elkészült képernyőkép bemásolható a rendszer vágólapjára, vagy Portable Network Graphics (.png) kép formátumban elmenthető. </p>"
+msgstr ""
+"<p>A MATE Screenshot egy egyszerű segédprogram az asztal vagy egy alkalmazás"
+" ablakának „fotózásához”. Az elkészült képernyőkép bemásolható a rendszer "
+"vágólapjára, vagy Portable Network Graphics (.png) kép formátumban "
+"elmenthető. </p>"
 
 #: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
-#: ../mate-screenshot/src/mate-screenshot.c:540
-#: ../mate-screenshot/src/mate-screenshot.c:548
+#: ../mate-screenshot/src/mate-screenshot.c:518
+#: ../mate-screenshot/src/mate-screenshot.c:526
 msgid "Take Screenshot"
 msgstr "Képernyőkép készítése"
 
@@ -2858,94 +3007,99 @@ msgstr "Kerethatás"
 msgid ""
 "Effect to add to the outside of a border. Possible values are \"shadow\", "
 "\"none\", and \"border\"."
-msgstr "A szegély külső oldalához adandó hatás. Lehetséges értékek: „shadow” (árnyék), „none” (nincs), és „border” (szegély)."
+msgstr ""
+"A szegély külső oldalához adandó hatás. Lehetséges értékek: „shadow” "
+"(árnyék), „none” (nincs), és „border” (szegély)."
 
-#: ../mate-screenshot/src/mate-screenshot.c:139
+#: ../mate-screenshot/src/mate-screenshot.c:137
 msgid "Error loading the help page"
 msgstr "Hiba a súgóoldal betöltése közben"
 
-#: ../mate-screenshot/src/mate-screenshot.c:251
+#: ../mate-screenshot/src/mate-screenshot.c:249
 msgid "None"
 msgstr "Nincs"
 
-#: ../mate-screenshot/src/mate-screenshot.c:252
+#: ../mate-screenshot/src/mate-screenshot.c:250
 msgid "Drop shadow"
 msgstr "Vetett árnyék"
 
-#: ../mate-screenshot/src/mate-screenshot.c:253
+#: ../mate-screenshot/src/mate-screenshot.c:251
 msgid "Border"
 msgstr "Szegély"
 
 #. * Include pointer *
-#: ../mate-screenshot/src/mate-screenshot.c:358
+#: ../mate-screenshot/src/mate-screenshot.c:352
 msgid "Include _pointer"
 msgstr "M_utató bevétele"
 
 #. * Include window border *
-#: ../mate-screenshot/src/mate-screenshot.c:367
+#: ../mate-screenshot/src/mate-screenshot.c:361
 msgid "Include the window _border"
 msgstr "Az ablak _keretének bevétele a képernyőképbe"
 
-#: ../mate-screenshot/src/mate-screenshot.c:382
+#: ../mate-screenshot/src/mate-screenshot.c:376
 msgid "Apply _effect:"
 msgstr "_Hatás alkalmazása:"
 
-#: ../mate-screenshot/src/mate-screenshot.c:450
+#: ../mate-screenshot/src/mate-screenshot.c:436
 msgid "Grab the whole _desktop"
 msgstr "A _teljes asztalról"
 
-#: ../mate-screenshot/src/mate-screenshot.c:462
+#: ../mate-screenshot/src/mate-screenshot.c:448
 msgid "Grab the current _window"
 msgstr "Az _aktuális ablakról"
 
-#: ../mate-screenshot/src/mate-screenshot.c:474
+#: ../mate-screenshot/src/mate-screenshot.c:460
 msgid "Select _area to grab"
 msgstr "_Terület kiválasztása"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:492
+#: ../mate-screenshot/src/mate-screenshot.c:478
 msgid "Grab _after a delay of"
 msgstr "Késl_eltetés:"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:517
-#: ../mate-screenshot/src/mate-screenshot.c:1274
+#: ../mate-screenshot/src/mate-screenshot.c:499
+#: ../mate-screenshot/src/mate-screenshot.c:1308
 msgid "seconds"
 msgstr "másodperc"
 
-#: ../mate-screenshot/src/mate-screenshot.c:549
+#: ../mate-screenshot/src/mate-screenshot.c:527
 msgid "Effects"
 msgstr "Hatások"
 
-#: ../mate-screenshot/src/mate-screenshot.c:553
+#: ../mate-screenshot/src/mate-screenshot.c:531
 msgid "Take _Screenshot"
 msgstr "_Felvétel"
 
-#: ../mate-screenshot/src/mate-screenshot.c:672
+#: ../mate-screenshot/src/mate-screenshot.c:650
 msgid "Error while saving screenshot"
 msgstr "Hiba történt a képernyőkép mentésekor"
 
-#: ../mate-screenshot/src/mate-screenshot.c:675
+#: ../mate-screenshot/src/mate-screenshot.c:653
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
 " Error was %s.\n"
 " Please choose another location and retry."
-msgstr "A képernyőkép nem menthető a(z) %s helyre.\n A hiba: %s\n Válasszon másik helyet és próbálja újra."
+msgstr ""
+"A képernyőkép nem menthető a(z) %s helyre.\n"
+" A hiba: %s\n"
+" Válasszon másik helyet és próbálja újra."
 
-#: ../mate-screenshot/src/mate-screenshot.c:807
+#: ../mate-screenshot/src/mate-screenshot.c:792
 msgid "Screenshot taken"
 msgstr "A képernyőkép elkészült"
 
-#: ../mate-screenshot/src/mate-screenshot.c:862
+#: ../mate-screenshot/src/mate-screenshot.c:847
 msgid "Unable to take a screenshot of the current window"
 msgstr "Nem készíthető képernyőkép az aktuális ablakról"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/src/mate-screenshot.c:919
+#: ../mate-screenshot/src/mate-screenshot.c:904
 #, c-format
 msgid "Screenshot at %s.png"
 msgstr "Képernyőkép %s.png"
@@ -2953,52 +3107,52 @@ msgstr "Képernyőkép %s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/src/mate-screenshot.c:926
+#: ../mate-screenshot/src/mate-screenshot.c:911
 #, c-format
 msgid "Screenshot at %s - %d.png"
 msgstr "Képernyőkép %s - %d.png"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1270
+#: ../mate-screenshot/src/mate-screenshot.c:1304
 msgid "Grab a window instead of the entire screen"
 msgstr "Csak egy ablakról készítsen képernyőképet az egész képernyő helyett"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1271
+#: ../mate-screenshot/src/mate-screenshot.c:1305
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Csak egy területről készítsen képernyőképet az egész képernyő helyett"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1272
+#: ../mate-screenshot/src/mate-screenshot.c:1306
 msgid "Include the window border with the screenshot"
 msgstr "Az ablak keretének bevétele a képernyőképbe"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1273
+#: ../mate-screenshot/src/mate-screenshot.c:1307
 msgid "Remove the window border from the screenshot"
 msgstr "Az ablak keretének bevétele a képernyőképbe"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1274
+#: ../mate-screenshot/src/mate-screenshot.c:1308
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Képernyőkép készítése (másodpercekben) megadott idő letelte után"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1275
+#: ../mate-screenshot/src/mate-screenshot.c:1309
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Az ablak keretéhez adandó hatás (árnyék, szegély vagy nincs)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1275
+#: ../mate-screenshot/src/mate-screenshot.c:1309
 msgid "effect"
 msgstr "hatás"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1276
+#: ../mate-screenshot/src/mate-screenshot.c:1310
 msgid "Interactively set options"
 msgstr "Interaktív mód"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1277
+#: ../mate-screenshot/src/mate-screenshot.c:1311
 msgid "Print version information and exit"
 msgstr "Verziószám kijelzés és kilépés"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1286
+#: ../mate-screenshot/src/mate-screenshot.c:1320
 msgid "Take a picture of the screen"
 msgstr "Kép készítése a képernyőről"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1309
+#: ../mate-screenshot/src/mate-screenshot.c:1343
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
@@ -3012,14 +3166,18 @@ msgid ""
 "%s\n"
 "\n"
 "Please check your installation of mate-utils."
-msgstr "A képernyőkép-készítő program felületfájlja hiányzik:\n%s\n\nEllenőrizze a mate-utils telepítését."
+msgstr ""
+"A képernyőkép-készítő program felületfájlja hiányzik:\n"
+"%s\n"
+"\n"
+"Ellenőrizze a mate-utils telepítését."
 
 #: ../mate-screenshot/src/screenshot-dialog.c:230
 msgid "Select a folder"
-msgstr "Válasszon egy mappát"
+msgstr "Mappa kiválasztása"
 
 #: ../mate-screenshot/src/screenshot-dialog.c:325
-#: ../mate-screenshot/src/screenshot-save.c:196
+#: ../mate-screenshot/src/screenshot-save.c:199
 msgid "Screenshot.png"
 msgstr "Képernyőkép.png"
 
@@ -3028,15 +3186,19 @@ msgstr "Képernyőkép.png"
 msgid ""
 "Unable to clear the temporary folder:\n"
 "%s"
-msgstr "Nem törölhető az átmeneti mappa:\n%s"
+msgstr ""
+"Nem törölhető az átmeneti mappa:\n"
+"%s"
 
 #: ../mate-screenshot/src/screenshot-save.c:95
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
-msgstr "A mentő gyermekfolyamat váratlanul kilépett. A képernyőkép nem írható ki a lemezre."
+msgstr ""
+"A mentő gyermekfolyamat váratlanul kilépett. A képernyőkép nem írható ki a "
+"lemezre."
 
-#: ../mate-screenshot/src/screenshot-save.c:223
+#: ../mate-screenshot/src/screenshot-save.c:225
 msgid "Unknown error saving screenshot to disk"
 msgstr "Ismeretlen hiba a képernyőkép lemezre mentése közben"
 
