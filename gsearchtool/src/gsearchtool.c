@@ -3067,7 +3067,6 @@ main (int argc,
 	window = g_object_new (GSEARCH_TYPE_WINDOW, NULL);
 	gsearch = GSEARCH_WINDOW (window);
 
-	gtk_window_set_wmclass (GTK_WINDOW (gsearch->window), "mate-search-tool", "mate-search-tool");
 	gtk_window_set_resizable (GTK_WINDOW (gsearch->window), TRUE);
 
 	g_signal_connect (G_OBJECT (gsearch->window), "delete_event",
