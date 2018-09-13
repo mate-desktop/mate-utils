@@ -1002,9 +1002,8 @@ on_chart_button_release (BaobabChart *chart,
 					  baobab_chart_can_zoom_out (baobab.current_chart));
 
 		/* show the menu */
-		gtk_menu_popup (GTK_MENU (menu->widget),
-				NULL, NULL, NULL, NULL,
-				event->button, event->time);
+		gtk_menu_popup_at_pointer (GTK_MENU (menu->widget),
+		                           (const GdkEvent*) event);
 
 		gtk_tree_path_free (root_path);
 	}

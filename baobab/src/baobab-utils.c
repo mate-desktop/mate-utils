@@ -371,8 +371,8 @@ popupmenu_list (GtkTreePath *path, GdkEventButton *event, gboolean can_trash)
 	}
 
 	gtk_widget_show_all (pmenu);
-	gtk_menu_popup (GTK_MENU (pmenu), NULL, NULL, NULL, NULL,
-			event->button, event->time);
+	gtk_menu_popup_at_pointer (GTK_MENU (pmenu),
+	                           (const GdkEvent*) event);
 }
 
 void
