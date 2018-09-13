@@ -137,29 +137,6 @@ gdict_sidebar_dispose (GObject *object)
   G_OBJECT_CLASS (gdict_sidebar_parent_class)->dispose (object);
 }
 
-static void
-gdict_sidebar_menu_position_function (GtkMenu  *menu,
-				      gint     *x,
-				      gint     *y,
-				      gboolean *push_in,
-				      gpointer  user_data)
-{
-  GtkWidget *widget;
-  GtkAllocation allocation;
-
-  g_assert (GTK_IS_BUTTON (user_data));
-
-  widget = GTK_WIDGET (user_data);
-
-  gdk_window_get_origin (gtk_widget_get_window (widget), x, y);
-
-  gtk_widget_get_allocation (widget, &allocation);
-  *x += allocation.x;
-  *y += allocation.y + allocation.height;
-
-  *push_in = FALSE;
-}
-
 static gboolean
 gdict_sidebar_select_button_press_cb (GtkWidget      *widget,
 				      GdkEventButton *event,
@@ -182,10 +159,11 @@ gdict_sidebar_select_button_press_cb (GtkWidget      *widget,
       gtk_widget_grab_focus (widget);
 
       gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (widget), TRUE);
-      gtk_menu_popup (GTK_MENU (sidebar->priv->menu),
-		      NULL, NULL,
-		      gdict_sidebar_menu_position_function, widget,
-		      event->button, event->time);
+      gtk_menu_popup_at_widget (GTK_MENU (sidebar->priv->menu),
+                                widget,
+                                GDK_GRAVITY_SOUTH_WEST,
+                                GDK_GRAVITY_NORTH_WEST,
+                                (const GdkEvent*) event);
 
       return TRUE;
     }
@@ -206,10 +184,11 @@ gdict_sidebar_select_key_press_cb (GtkWidget   *widget,
       event->keyval == GDK_KEY_KP_Enter)
     {
       gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (widget), TRUE);
-      gtk_menu_popup (GTK_MENU (sidebar->priv->menu),
-		      NULL, NULL,
-		      gdict_sidebar_menu_position_function, widget,
-		      1, event->time);
+      gtk_menu_popup_at_widget (GTK_MENU (sidebar->priv->menu),
+                                widget,
+                                GDK_GRAVITY_SOUTH_WEST,
+                                GDK_GRAVITY_NORTH_WEST,
+                                (const GdkEvent*) event);
 
       return TRUE;
     }
