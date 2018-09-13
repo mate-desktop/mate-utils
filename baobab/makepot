@@ -1,0 +1,5 @@
+#! /bin/sh
+
+PACKAGE=mate-disk-usage-analyzer;
+
+make -C help $PACKAGE.pot && mv help/$PACKAGE.pot .
