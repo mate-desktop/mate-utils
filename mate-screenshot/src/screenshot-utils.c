@@ -45,6 +45,7 @@ screenshot_grab_lock (void)
 {
   GdkAtom selection_atom;
   gboolean result = FALSE;
+  GdkDisplay *display;
 
   selection_atom = gdk_atom_intern (SELECTION_NAME, FALSE);
   gdk_x11_grab_server ();
@@ -68,7 +69,9 @@ screenshot_grab_lock (void)
 
  out:
   gdk_x11_ungrab_server ();
-  gdk_flush ();
+
+  display = gdk_display_get_default ();
+  gdk_display_flush (display);
 
   return result;
 }
@@ -76,13 +79,16 @@ screenshot_grab_lock (void)
 void
 screenshot_release_lock (void)
 {
+  GdkDisplay *display;
+
   if (selection_window)
     {
       gtk_widget_destroy (selection_window);
       selection_window = NULL;
     }
 
-  gdk_flush ();
+  display = gdk_display_get_default ();
+  gdk_display_flush (display);
 }
 
 static GdkWindow *
@@ -427,7 +433,7 @@ screenshot_select_area_async (SelectAreaCallback callback)
 
   gtk_widget_destroy (data.window);
   g_object_unref (cursor);
-  gdk_flush ();
+  gdk_display_flush (display);
 
 out:
   cb_data->rectangle = data.rect;
