@@ -1386,8 +1386,8 @@ file_button_release_event_cb (GtkWidget * widget,
 			file = g_strdup (((show_app_list == TRUE) ? locale_file_first : NULL));
 
 			build_popup_menu_for_file (gsearch, file);
-			gtk_menu_popup (GTK_MENU (gsearch->search_results_popup_menu), NULL, NULL, NULL, NULL,
-			                event->button, event->time);
+			gtk_menu_popup_at_pointer (GTK_MENU (gsearch->search_results_popup_menu),
+			                           (const GdkEvent*) event);
 			g_free (file);
 
 		}
@@ -1886,8 +1886,8 @@ key_press_cb (GtkWidget * widget,
 			g_list_free (list);
 
 			if (!no_files_found) {
-				gtk_menu_popup (GTK_MENU (gsearch->search_results_popup_menu), NULL, NULL, NULL, NULL,
-				                event->keyval, event->time);
+				gtk_menu_popup_at_pointer (GTK_MENU (gsearch->search_results_popup_menu),
+				                           (const GdkEvent*) event);
 				return TRUE;
 			}
 		}
