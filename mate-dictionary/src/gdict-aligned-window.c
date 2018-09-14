@@ -162,6 +162,7 @@ gdict_aligned_window_position (GdictAlignedWindow *window)
   gint x, y;
   GdkGravity gravity = GDK_GRAVITY_NORTH_WEST;
   GdkWindow *gdk_window;
+  GdkDisplay *display;
 
   g_assert (GDICT_IS_ALIGNED_WINDOW (window));
   priv = window->priv;
@@ -172,7 +173,8 @@ gdict_aligned_window_position (GdictAlignedWindow *window)
   align_widget = priv->align_widget;
   gdk_window = gtk_widget_get_window (align_widget);
 
-  gdk_flush ();
+  display = gdk_display_get_default ();
+  gdk_display_flush (display);
 
   gdk_window_get_geometry (gtk_widget_get_window (GTK_WIDGET (window)), NULL, NULL, &our_width, &our_height);
 
