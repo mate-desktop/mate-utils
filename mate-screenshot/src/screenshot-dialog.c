@@ -372,5 +372,5 @@ screenshot_dialog_set_busy (ScreenshotDialog *dialog,
 
   gtk_widget_set_sensitive (toplevel, ! busy);
 
-  gdk_flush ();
+  gdk_display_flush (display);
 }
