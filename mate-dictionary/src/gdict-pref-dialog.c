@@ -459,19 +459,22 @@ static void
 font_button_font_set_cb (GtkWidget       *font_button,
 			 GdictPrefDialog *dialog)
 {
-  const char *font;
+  gchar *font;
   
   font = gtk_font_chooser_get_font (GTK_FONT_CHOOSER (font_button));
-  if (!font || font[0] == '\0')
-    return;
 
-  if (g_strcmp0 (dialog->print_font, font) == 0)
-    return;
-  
+  if (!font || font[0] == '\0' || g_strcmp0 (dialog->print_font, font) == 0)
+    {
+      g_free (font);
+      return;
+    }
+
   g_free (dialog->print_font);
   dialog->print_font = g_strdup (font);
 
   g_settings_set_string (dialog->settings, GDICT_SETTINGS_PRINT_FONT_KEY, dialog->print_font);
+
+  g_free (font);
 }
 
 static void
