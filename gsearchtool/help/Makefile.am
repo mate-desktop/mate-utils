@@ -3,6 +3,10 @@
 HELP_ID = mate-search-tool
 HELP_FILES = index.docbook legal.xml
 
-HELP_LINGUAS = ca cs de el en_GB es eu fi fr it ko oc ru sv uk zh_CN
-
 HELP_MEDIA = figures/mate-search-tool_window.png
+
+# Add linguas to be ignored, e.g. IGNORE_HELP_LINGUAS = ca de es fr
+IGNORE_HELP_LINGUAS =
+HELP_LINGUAS = $(if $(IGNORE_HELP_LINGUAS), \
+	$(filter-out $(IGNORE_HELP_LINGUAS),$(subst /,,$(dir $(wildcard */*.po)))), \
+	$(subst /,,$(dir $(wildcard */*.po))) )
