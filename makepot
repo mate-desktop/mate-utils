@@ -1,5 +1,22 @@
 #! /bin/sh
 
 PACKAGE=mate-utils;
+DISK=mate-disk-usage-analyzer;
+SEARCH=mate-search-tool;
+LOG=mate-system-log;
+DICT=mate-dictionary;
 
+# main translations
 make -C po $PACKAGE.pot && mv po/$PACKAGE.pot .
+
+# mate-disk-usage-analyzer
+make -C baobab/help $DISK.pot && mv baobab/help/$DISK.pot .
+
+# mate-search-tool
+make -C gsearchtool/help $SEARCH.pot && mv gsearchtool/help/$SEARCH.pot .
+
+# mate-system-log
+make -C logview/help $LOG.pot && mv logview/help/$LOG.pot .
+
+# mate-dictionary
+make -C $DICT/help $DICT.pot && mv $DICT/help/$DICT.pot .
