@@ -3,13 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# 趙惟倫 <bluebat@member.fsf.org>, 2018
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-17 21:06+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2018-10-05 15:24+0200\n"
+"PO-Revision-Date: 2018-03-12 09:18+0000\n"
 "Last-Translator: 趙惟倫 <bluebat@member.fsf.org>, 2018\n"
 "Language-Team: Chinese (Mandarin) (https://www.transifex.com/mate/teams/13566/cmn/)\n"
 "MIME-Version: 1.0\n"
@@ -104,7 +107,7 @@ msgstr "求助(_H)"
 msgid "_Contents"
 msgstr "內容(_C)"
 
-#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1242
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1241
 msgid "Disk Usage Analyzer"
 msgstr "磁碟用量分析器"
 
@@ -232,7 +235,7 @@ msgstr "剩餘："
 msgid "Calculating percentage bars..."
 msgstr "正在計算百分比長條圖…"
 
-#: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1306
+#: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
 #: ../baobab/src/callbacks.c:263
 msgid "Ready"
 msgstr "準備就緒"
@@ -279,31 +282,31 @@ msgstr "拉遠"
 msgid "Save screenshot"
 msgstr "儲存螢幕截圖"
 
-#: ../baobab/src/baobab.c:1120
+#: ../baobab/src/baobab.c:1119
 msgid "View as Rings Chart"
 msgstr "以環狀圖表檢視"
 
-#: ../baobab/src/baobab.c:1122
+#: ../baobab/src/baobab.c:1121
 msgid "View as Treemap Chart"
 msgstr "以樹狀圖表檢視"
 
-#: ../baobab/src/baobab.c:1231
+#: ../baobab/src/baobab.c:1230
 msgid "Show version"
 msgstr "顯示版本"
 
-#: ../baobab/src/baobab.c:1232
+#: ../baobab/src/baobab.c:1231
 msgid "[DIRECTORY]"
 msgstr "[目錄]"
 
-#: ../baobab/src/baobab.c:1262
+#: ../baobab/src/baobab.c:1261
 msgid "Too many arguments. Only one directory can be specified."
 msgstr "參數太多。只能指定一個目錄。"
 
-#: ../baobab/src/baobab.c:1279
+#: ../baobab/src/baobab.c:1278
 msgid "Could not detect any mount point."
 msgstr "無法偵測到任何掛載點。"
 
-#: ../baobab/src/baobab.c:1281
+#: ../baobab/src/baobab.c:1280
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr "沒有掛載點的磁碟機用量無法被分析。"
 
@@ -331,16 +334,16 @@ msgstr "圖表根節點"
 msgid "Set the root node from the model"
 msgstr "從模式中設定根節點"
 
-#: ../baobab/src/baobab-chart.c:1718
+#: ../baobab/src/baobab-chart.c:1714
 msgid "Cannot create pixbuf image!"
 msgstr "無法產生 pixbuf 影像！"
 
 #. Popup the File chooser dialog
-#: ../baobab/src/baobab-chart.c:1728
+#: ../baobab/src/baobab-chart.c:1724
 msgid "Save Snapshot"
 msgstr "儲存螢幕截圖"
 
-#: ../baobab/src/baobab-chart.c:1755
+#: ../baobab/src/baobab-chart.c:1751
 msgid "_Image type:"
 msgstr "影像類型(_I)："
 
@@ -2461,7 +2464,7 @@ msgid "Dictionary Preferences"
 msgstr "字典偏好設定"
 
 #: ../mate-dictionary/src/gdict-applet.c:741
-#: ../mate-dictionary/src/gdict-pref-dialog.c:495
+#: ../mate-dictionary/src/gdict-pref-dialog.c:498
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
 #: ../mate-dictionary/src/gdict-window.c:1253
 #, c-format
@@ -2544,19 +2547,19 @@ msgstr "這會從列表中將字典來源永久刪除。"
 msgid "Unable to remove source '%s'"
 msgstr "無法移除來源「%s」"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:642
+#: ../mate-dictionary/src/gdict-pref-dialog.c:645
 msgid "Add a new dictionary source"
 msgstr "新增一個字典來源"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:648
+#: ../mate-dictionary/src/gdict-pref-dialog.c:651
 msgid "Remove the currently selected dictionary source"
 msgstr "移除目前選擇的字典來源"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:654
+#: ../mate-dictionary/src/gdict-pref-dialog.c:657
 msgid "Edit the currently selected dictionary source"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:662
+#: ../mate-dictionary/src/gdict-pref-dialog.c:665
 msgid "Set the font used for printing the definitions"
 msgstr "設定列印解釋時使用的字型"
 
@@ -2823,8 +2826,8 @@ msgid ""
 msgstr ""
 
 #: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
-#: ../mate-screenshot/src/mate-screenshot.c:518
-#: ../mate-screenshot/src/mate-screenshot.c:526
+#: ../mate-screenshot/src/mate-screenshot.c:519
+#: ../mate-screenshot/src/mate-screenshot.c:527
 msgid "Take Screenshot"
 msgstr "拍下螢幕截圖"
 
@@ -2886,74 +2889,74 @@ msgid ""
 "\"none\", and \"border\"."
 msgstr "加到邊框外的效果。可用的數值有：“shadow”，“none”及“border”。"
 
-#: ../mate-screenshot/src/mate-screenshot.c:137
+#: ../mate-screenshot/src/mate-screenshot.c:138
 msgid "Error loading the help page"
 msgstr "載入說明文件時發生錯誤"
 
-#: ../mate-screenshot/src/mate-screenshot.c:249
+#: ../mate-screenshot/src/mate-screenshot.c:250
 msgid "None"
 msgstr "沒有"
 
-#: ../mate-screenshot/src/mate-screenshot.c:250
+#: ../mate-screenshot/src/mate-screenshot.c:251
 msgid "Drop shadow"
 msgstr "陰影"
 
-#: ../mate-screenshot/src/mate-screenshot.c:251
+#: ../mate-screenshot/src/mate-screenshot.c:252
 msgid "Border"
 msgstr "Border"
 
 #. * Include pointer *
-#: ../mate-screenshot/src/mate-screenshot.c:352
+#: ../mate-screenshot/src/mate-screenshot.c:353
 msgid "Include _pointer"
 msgstr "包含滑鼠指標(_P)"
 
 #. * Include window border *
-#: ../mate-screenshot/src/mate-screenshot.c:361
+#: ../mate-screenshot/src/mate-screenshot.c:362
 msgid "Include the window _border"
 msgstr "包括視窗邊框(_B)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:376
+#: ../mate-screenshot/src/mate-screenshot.c:377
 msgid "Apply _effect:"
 msgstr "套用效果(_E)："
 
-#: ../mate-screenshot/src/mate-screenshot.c:436
+#: ../mate-screenshot/src/mate-screenshot.c:437
 msgid "Grab the whole _desktop"
 msgstr "拍下整個桌面(_D)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:448
+#: ../mate-screenshot/src/mate-screenshot.c:449
 msgid "Grab the current _window"
 msgstr "拍下目前的視窗(_W)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:460
+#: ../mate-screenshot/src/mate-screenshot.c:461
 msgid "Select _area to grab"
 msgstr "選擇要抓取的區域(_A)"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:478
+#: ../mate-screenshot/src/mate-screenshot.c:479
 msgid "Grab _after a delay of"
 msgstr "在(_A)"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:499
-#: ../mate-screenshot/src/mate-screenshot.c:1308
+#: ../mate-screenshot/src/mate-screenshot.c:500
+#: ../mate-screenshot/src/mate-screenshot.c:1321
 msgid "seconds"
 msgstr "秒後拍下螢幕截圖"
 
-#: ../mate-screenshot/src/mate-screenshot.c:527
+#: ../mate-screenshot/src/mate-screenshot.c:528
 msgid "Effects"
 msgstr "效果"
 
-#: ../mate-screenshot/src/mate-screenshot.c:531
+#: ../mate-screenshot/src/mate-screenshot.c:532
 msgid "Take _Screenshot"
 msgstr "拍下螢幕截圖(_S)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:650
+#: ../mate-screenshot/src/mate-screenshot.c:651
 msgid "Error while saving screenshot"
 msgstr "儲存螢幕截圖時發生錯誤"
 
-#: ../mate-screenshot/src/mate-screenshot.c:653
+#: ../mate-screenshot/src/mate-screenshot.c:654
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -2964,17 +2967,17 @@ msgstr ""
 " 錯誤為 %s\n"
 "。請選擇另一個位置並再試一次。"
 
-#: ../mate-screenshot/src/mate-screenshot.c:792
+#: ../mate-screenshot/src/mate-screenshot.c:796
 msgid "Screenshot taken"
 msgstr "螢幕截圖拍攝"
 
-#: ../mate-screenshot/src/mate-screenshot.c:847
+#: ../mate-screenshot/src/mate-screenshot.c:851
 msgid "Unable to take a screenshot of the current window"
 msgstr "無法拍下目前視窗的螢幕截圖"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/src/mate-screenshot.c:904
+#: ../mate-screenshot/src/mate-screenshot.c:916
 #, c-format
 msgid "Screenshot at %s.png"
 msgstr ""
@@ -2982,52 +2985,63 @@ msgstr ""
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/src/mate-screenshot.c:911
+#: ../mate-screenshot/src/mate-screenshot.c:923
 #, c-format
 msgid "Screenshot at %s - %d.png"
 msgstr ""
 
-#: ../mate-screenshot/src/mate-screenshot.c:1304
+#: ../mate-screenshot/src/mate-screenshot.c:1316
 msgid "Grab a window instead of the entire screen"
 msgstr "擷取單一視窗而不是整個畫面"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1305
+#: ../mate-screenshot/src/mate-screenshot.c:1317
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "擷取畫面的一個區域而不是整個畫面"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1306
+#: ../mate-screenshot/src/mate-screenshot.c:1318
+msgid "Send grabbed area directly to the clipboard"
+msgstr ""
+
+#: ../mate-screenshot/src/mate-screenshot.c:1319
 msgid "Include the window border with the screenshot"
 msgstr "螢幕截圖包含視窗邊框"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1307
+#: ../mate-screenshot/src/mate-screenshot.c:1320
 msgid "Remove the window border from the screenshot"
 msgstr "自螢幕截圖移除視窗邊框"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1308
+#: ../mate-screenshot/src/mate-screenshot.c:1321
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "在指定的時間後（秒）拍攝螢幕截圖"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1309
+#: ../mate-screenshot/src/mate-screenshot.c:1322
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "加到視窗邊框的效果（陰影、邊框或沒有）"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1309
+#: ../mate-screenshot/src/mate-screenshot.c:1322
 msgid "effect"
 msgstr "效果"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1310
+#: ../mate-screenshot/src/mate-screenshot.c:1323
 msgid "Interactively set options"
 msgstr "互動設定選項"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1311
+#: ../mate-screenshot/src/mate-screenshot.c:1324
 msgid "Print version information and exit"
 msgstr ""
 
-#: ../mate-screenshot/src/mate-screenshot.c:1320
+#: ../mate-screenshot/src/mate-screenshot.c:1333
 msgid "Take a picture of the screen"
 msgstr "拍下整個螢幕"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1343
+#: ../mate-screenshot/src/mate-screenshot.c:1356
+#, c-format
+msgid ""
+"Conflicting options: --clipboard and --interactive should not be used at the"
+" same time.\n"
+msgstr ""
+
+#: ../mate-screenshot/src/mate-screenshot.c:1362
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "

@@ -3,14 +3,28 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Luis Filipe Teixeira <lufilte@gmail.com>, 2018
+# Manel Tinoco <maneltinoco@gmail.com>, 2018
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2018
+# MS <manuelarodsilva@gmail.com>, 2018
+# Sérgio Marques <smarquespt@gmail.com>, 2018
+# Carlos Moreira, 2018
+# Stefano Karapetsas <stefano@karapetsas.com>, 2018
+# alfalb_mansil, 2018
+# ogalho Carlos Dias Martins <ogalho@gmail.com>, 2018
+# Diogo Oliveira <diogodesigns@gmail.com>, 2018
+# José Vieira <jvieira33@sapo.pt>, 2018
+# Rui <xymarior@yandex.com>, 2018
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-17 21:06+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Manuela Silva <manuela.silva@sky.com>, 2018\n"
+"POT-Creation-Date: 2018-10-05 15:24+0200\n"
+"PO-Revision-Date: 2018-03-12 09:18+0000\n"
+"Last-Translator: Rui <xymarior@yandex.com>, 2018\n"
 "Language-Team: Portuguese (https://www.transifex.com/mate/teams/13566/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -105,7 +119,7 @@ msgstr "A_juda"
 msgid "_Contents"
 msgstr "_Conteúdo"
 
-#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1242
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1241
 msgid "Disk Usage Analyzer"
 msgstr "Analisador de Utilização do Disco"
 
@@ -187,7 +201,8 @@ msgstr "Dicas visíveis nas subpastas"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:10
 msgid "Whether the subfolder tooltips of the selected folder are drawn."
-msgstr "Se as dicas de utilização das subpastas da pasta atual são visíveis."
+msgstr ""
+"Se são visíveis as dicas de contexto da sub-pasta da pasta selecionada."
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:11
 msgid "Active Chart"
@@ -242,7 +257,7 @@ msgstr "disponível:"
 msgid "Calculating percentage bars..."
 msgstr "Calcular barras de percentagem..."
 
-#: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1306
+#: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
 #: ../baobab/src/callbacks.c:263
 msgid "Ready"
 msgstr "Pronto"
@@ -263,8 +278,8 @@ msgstr "contém atalhos fixos para:"
 #, c-format
 msgid "%5d item"
 msgid_plural "%5d items"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%5d item"
+msgstr[1] "%5d items"
 
 #: ../baobab/src/baobab.c:592
 msgid "Could not initialize monitoring"
@@ -290,31 +305,31 @@ msgstr "Reduzir"
 msgid "Save screenshot"
 msgstr "Gravar imagem do ecrã"
 
-#: ../baobab/src/baobab.c:1120
+#: ../baobab/src/baobab.c:1119
 msgid "View as Rings Chart"
 msgstr "Ver como gráfico anelar"
 
-#: ../baobab/src/baobab.c:1122
+#: ../baobab/src/baobab.c:1121
 msgid "View as Treemap Chart"
 msgstr "Ver como gráfico em árvore"
 
-#: ../baobab/src/baobab.c:1231
+#: ../baobab/src/baobab.c:1230
 msgid "Show version"
 msgstr "Mostrar versão"
 
-#: ../baobab/src/baobab.c:1232
+#: ../baobab/src/baobab.c:1231
 msgid "[DIRECTORY]"
 msgstr "[Diretório]"
 
-#: ../baobab/src/baobab.c:1262
+#: ../baobab/src/baobab.c:1261
 msgid "Too many arguments. Only one directory can be specified."
 msgstr "Demasiados argumentos. Só pode especificar um diretório."
 
-#: ../baobab/src/baobab.c:1279
+#: ../baobab/src/baobab.c:1278
 msgid "Could not detect any mount point."
 msgstr "Não se detetou qualquer ponto de montagem."
 
-#: ../baobab/src/baobab.c:1281
+#: ../baobab/src/baobab.c:1280
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr "Sem pontos de montagem para analisar a utilização do disco."
 
@@ -342,16 +357,16 @@ msgstr "Nó raiz do gráfico"
 msgid "Set the root node from the model"
 msgstr "Defina o nó raiz a partir do modelo"
 
-#: ../baobab/src/baobab-chart.c:1718
+#: ../baobab/src/baobab-chart.c:1714
 msgid "Cannot create pixbuf image!"
 msgstr "Incapaz de criar imagem pixbuf!"
 
 #. Popup the File chooser dialog
-#: ../baobab/src/baobab-chart.c:1728
+#: ../baobab/src/baobab-chart.c:1724
 msgid "Save Snapshot"
 msgstr "Gravar captura de ecrã"
 
-#: ../baobab/src/baobab-chart.c:1755
+#: ../baobab/src/baobab-chart.c:1751
 msgid "_Image type:"
 msgstr "Tipo de _imagem:"
 
@@ -1074,15 +1089,15 @@ msgstr "Não se encontraram ficheiros"
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%'d Ficheiro Encontrado"
+msgstr[1] "%'d Ficheiros Encontrados"
 
 #: ../gsearchtool/src/gsearchtool.c:1014 ../gsearchtool/src/gsearchtool.c:1052
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%'d ficheiro encontrado"
+msgstr[1] "%'d ficheiros encontrados"
 
 #: ../gsearchtool/src/gsearchtool.c:1143
 msgid "Entry changed called for a non entry option!"
@@ -1310,16 +1325,16 @@ msgstr "Não pôde abrir o documento de ajuda."
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Tem a certeza que que abrir %d documento?"
+msgstr[1] "Tem a certeza que quer abrir %d documentos?"
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:355
 #: ../gsearchtool/src/gsearchtool-callbacks.c:557
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Isto irá abrir %d janela separada."
+msgstr[1] "Isto irá abrir %d janelas separadas."
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:400
 #, c-format
@@ -1343,8 +1358,8 @@ msgstr "Não existe um visualizador instalado capaz de mostrar o documento."
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Tem a certeza que quer abrir %d pasta?"
+msgstr[1] "Tem a certeza que quer abrir %d pastas?"
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:710
 #, c-format
@@ -1683,7 +1698,7 @@ msgstr "O nome do filtro está vazio!"
 
 #: ../logview/src/logview-filter-manager.c:107
 msgid "Filter name may not contain the ':' character"
-msgstr "Nome do filtro não pode conter o carácter \":\""
+msgstr "Nome do filtro não pode conter o caractere \":\""
 
 #: ../logview/src/logview-filter-manager.c:130
 msgid "Regular expression is empty!"
@@ -2574,7 +2589,7 @@ msgid "Dictionary Preferences"
 msgstr "Preferências do Dicionário"
 
 #: ../mate-dictionary/src/gdict-applet.c:741
-#: ../mate-dictionary/src/gdict-pref-dialog.c:495
+#: ../mate-dictionary/src/gdict-pref-dialog.c:498
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
 #: ../mate-dictionary/src/gdict-window.c:1253
 #, c-format
@@ -2657,19 +2672,19 @@ msgstr "Isto irá apagar permanentemente a fonte de dicionários da lista."
 msgid "Unable to remove source '%s'"
 msgstr "Incapaz de remover a fonte '%s'"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:642
+#: ../mate-dictionary/src/gdict-pref-dialog.c:645
 msgid "Add a new dictionary source"
 msgstr "Adicionar uma nova fonte de dicionários"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:648
+#: ../mate-dictionary/src/gdict-pref-dialog.c:651
 msgid "Remove the currently selected dictionary source"
 msgstr "Remover a fonte de dicionários selecionada atualmente"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:654
+#: ../mate-dictionary/src/gdict-pref-dialog.c:657
 msgid "Edit the currently selected dictionary source"
 msgstr "Editar a fonte de dicionários selecionada atualmente"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:662
+#: ../mate-dictionary/src/gdict-pref-dialog.c:665
 msgid "Set the font used for printing the definitions"
 msgstr "O tipo de letra a ser usado ao imprimir as definições."
 
@@ -2703,8 +2718,8 @@ msgstr "Não se encontraram definições"
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Definição encontrada"
+msgstr[1] "%d definições encontradas"
 
 #: ../mate-dictionary/src/gdict-window.c:605
 #, c-format
@@ -2936,13 +2951,13 @@ msgid ""
 "format. </p>"
 msgstr ""
 "<p> O Mate Screenshot é uma simples ferramenta que te permite capturar uma "
-"imagem da tua área de trabalho ou de uma aplicação. Tu podes selecionar para"
-" copiar a imagem para a área de transferência ou guarda-la em formato PNG "
-"(Portable Network Graphics). </p>"
+"captura de ecrã (imagem) da área de trabalho ou de uma aplicação. Pode "
+"escolher copiar a imagem para a área de transferência ou guardá-la no "
+"formato PNG (Portable Network Graphics). </p>"
 
 #: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
-#: ../mate-screenshot/src/mate-screenshot.c:518
-#: ../mate-screenshot/src/mate-screenshot.c:526
+#: ../mate-screenshot/src/mate-screenshot.c:519
+#: ../mate-screenshot/src/mate-screenshot.c:527
 msgid "Take Screenshot"
 msgstr "Captura de ecrã"
 
@@ -3006,95 +3021,95 @@ msgstr ""
 "Efeito a adicionar ao exterior de uma margem. Valores possíveis são "
 "\"sombreado\", \"nenhum\" e \"margem\"."
 
-#: ../mate-screenshot/src/mate-screenshot.c:137
+#: ../mate-screenshot/src/mate-screenshot.c:138
 msgid "Error loading the help page"
 msgstr "Erro ao carregar a página de ajuda"
 
-#: ../mate-screenshot/src/mate-screenshot.c:249
+#: ../mate-screenshot/src/mate-screenshot.c:250
 msgid "None"
 msgstr "Nenhuma"
 
-#: ../mate-screenshot/src/mate-screenshot.c:250
+#: ../mate-screenshot/src/mate-screenshot.c:251
 msgid "Drop shadow"
 msgstr "Retirar sombreado"
 
-#: ../mate-screenshot/src/mate-screenshot.c:251
+#: ../mate-screenshot/src/mate-screenshot.c:252
 msgid "Border"
 msgstr "Margem"
 
 #. * Include pointer *
-#: ../mate-screenshot/src/mate-screenshot.c:352
+#: ../mate-screenshot/src/mate-screenshot.c:353
 msgid "Include _pointer"
 msgstr "Incluir _ponteiro"
 
 #. * Include window border *
-#: ../mate-screenshot/src/mate-screenshot.c:361
+#: ../mate-screenshot/src/mate-screenshot.c:362
 msgid "Include the window _border"
 msgstr "Incluir a margem da _janela"
 
-#: ../mate-screenshot/src/mate-screenshot.c:376
+#: ../mate-screenshot/src/mate-screenshot.c:377
 msgid "Apply _effect:"
 msgstr "Aplicar _efeito:"
 
-#: ../mate-screenshot/src/mate-screenshot.c:436
+#: ../mate-screenshot/src/mate-screenshot.c:437
 msgid "Grab the whole _desktop"
 msgstr "Capturar todo o _ambiente de trabalho"
 
-#: ../mate-screenshot/src/mate-screenshot.c:448
+#: ../mate-screenshot/src/mate-screenshot.c:449
 msgid "Grab the current _window"
 msgstr "Capturar a _janela atual"
 
-#: ../mate-screenshot/src/mate-screenshot.c:460
+#: ../mate-screenshot/src/mate-screenshot.c:461
 msgid "Select _area to grab"
 msgstr "Selecionar _área a capturar"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:478
+#: ../mate-screenshot/src/mate-screenshot.c:479
 msgid "Grab _after a delay of"
 msgstr "Capturar _após um atraso de"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:499
-#: ../mate-screenshot/src/mate-screenshot.c:1308
+#: ../mate-screenshot/src/mate-screenshot.c:500
+#: ../mate-screenshot/src/mate-screenshot.c:1321
 msgid "seconds"
 msgstr "segundos"
 
-#: ../mate-screenshot/src/mate-screenshot.c:527
+#: ../mate-screenshot/src/mate-screenshot.c:528
 msgid "Effects"
 msgstr "Efeitos"
 
-#: ../mate-screenshot/src/mate-screenshot.c:531
+#: ../mate-screenshot/src/mate-screenshot.c:532
 msgid "Take _Screenshot"
 msgstr "_Captura de ecrã"
 
-#: ../mate-screenshot/src/mate-screenshot.c:650
+#: ../mate-screenshot/src/mate-screenshot.c:651
 msgid "Error while saving screenshot"
-msgstr "Erro ao gravar a captura"
+msgstr "Erro ao gravar a captura de ecrã"
 
-#: ../mate-screenshot/src/mate-screenshot.c:653
+#: ../mate-screenshot/src/mate-screenshot.c:654
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
 " Error was %s.\n"
 " Please choose another location and retry."
 msgstr ""
-"Impossível gravar a imagem em %s.\n"
+"Impossível gravar a captura de ecrã em %s.\n"
 " O erro foi %s.\n"
 " Por favor escolha outro local e tente novamente."
 
-#: ../mate-screenshot/src/mate-screenshot.c:792
+#: ../mate-screenshot/src/mate-screenshot.c:796
 msgid "Screenshot taken"
-msgstr "Captura obtida"
+msgstr "Captura de ecrã feita"
 
-#: ../mate-screenshot/src/mate-screenshot.c:847
+#: ../mate-screenshot/src/mate-screenshot.c:851
 msgid "Unable to take a screenshot of the current window"
 msgstr "Incapaz de capturar o ecrã da janela atual"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/src/mate-screenshot.c:904
+#: ../mate-screenshot/src/mate-screenshot.c:916
 #, c-format
 msgid "Screenshot at %s.png"
 msgstr "Captura de ecrã no %s.png"
@@ -3102,52 +3117,65 @@ msgstr "Captura de ecrã no %s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/src/mate-screenshot.c:911
+#: ../mate-screenshot/src/mate-screenshot.c:923
 #, c-format
 msgid "Screenshot at %s - %d.png"
 msgstr "Captura de ecrã no %s - %d.png"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1304
+#: ../mate-screenshot/src/mate-screenshot.c:1316
 msgid "Grab a window instead of the entire screen"
 msgstr "Capturar uma janela em vez do ecrã inteiro"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1305
+#: ../mate-screenshot/src/mate-screenshot.c:1317
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Capturar uma área do ecrã em vez do ecrã inteiro"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1306
+#: ../mate-screenshot/src/mate-screenshot.c:1318
+msgid "Send grabbed area directly to the clipboard"
+msgstr "Enviar a área capturada diretamente para a área de transferência"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1319
 msgid "Include the window border with the screenshot"
 msgstr "Incluir margem da janela na captura de ecrã"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1307
+#: ../mate-screenshot/src/mate-screenshot.c:1320
 msgid "Remove the window border from the screenshot"
 msgstr "Remover a margem da janela da captura de ecrã"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1308
+#: ../mate-screenshot/src/mate-screenshot.c:1321
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Fazer captura de ecrã após atraso especificado [em segundos]"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1309
+#: ../mate-screenshot/src/mate-screenshot.c:1322
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Efeito a adicionar à margem (sombra, margem, ou nenhum)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1309
+#: ../mate-screenshot/src/mate-screenshot.c:1322
 msgid "effect"
 msgstr "efeito"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1310
+#: ../mate-screenshot/src/mate-screenshot.c:1323
 msgid "Interactively set options"
 msgstr "Definir opções interativamente"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1311
+#: ../mate-screenshot/src/mate-screenshot.c:1324
 msgid "Print version information and exit"
 msgstr "Imprimir informação da versão e sair"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1320
+#: ../mate-screenshot/src/mate-screenshot.c:1333
 msgid "Take a picture of the screen"
 msgstr "Obter imagem do ecrã"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1343
+#: ../mate-screenshot/src/mate-screenshot.c:1356
+#, c-format
+msgid ""
+"Conflicting options: --clipboard and --interactive should not be used at the"
+" same time.\n"
+msgstr ""
+"Opções em conflito: --clipboard e --interactive não devem ser utilizados ao "
+"mesmo tempo.\n"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1362
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
@@ -3163,7 +3191,7 @@ msgid ""
 "\n"
 "Please check your installation of mate-utils."
 msgstr ""
-"Erro ao carregar a definição UI do ficheiro para o programa de captura de ecrâ:\n"
+"Erro ao carregar a definição UI do ficheiro para o programa de captura de ecrã:\n"
 "%s\n"
 "Por favor verifica a instalação do mate-utils."
 
@@ -3195,7 +3223,7 @@ msgstr ""
 
 #: ../mate-screenshot/src/screenshot-save.c:225
 msgid "Unknown error saving screenshot to disk"
-msgstr "Erro desconhecido ao guardar a captura no disco"
+msgstr "Erro desconhecido ao guardar a captura do ecrã no disco"
 
 #: ../mate-screenshot/src/screenshot-xfer.c:72
 msgid "File already exists"

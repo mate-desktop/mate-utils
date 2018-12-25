@@ -3,14 +3,23 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Juraj Oravec, 2018
+# Ján Ďanovský <dagsoftware@yahoo.com>, 2018
+# Dušan Kazik <prescott66@gmail.com>, 2018
+# Stefano Karapetsas <stefano@karapetsas.com>, 2018
+# Tibor Kaputa <tibbbi2@gmail.com>, 2018
+# Pavol Šimo <palo.simo@gmail.com>, 2018
+# Erik Bročko <erik.brocko@letemsvetemapplem.eu>, 2018
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-17 21:06+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Tibor Kaputa <tibbbi2@gmail.com>, 2018\n"
+"POT-Creation-Date: 2018-10-05 15:24+0200\n"
+"PO-Revision-Date: 2018-03-12 09:18+0000\n"
+"Last-Translator: Erik Bročko <erik.brocko@letemsvetemapplem.eu>, 2018\n"
 "Language-Team: Slovak (https://www.transifex.com/mate/teams/13566/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -106,7 +115,7 @@ msgstr "_Pomocník"
 msgid "_Contents"
 msgstr "Ob_sah"
 
-#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1242
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1241
 msgid "Disk Usage Analyzer"
 msgstr "Analyzátor využitia disku"
 
@@ -244,7 +253,7 @@ msgstr "dostupných:"
 msgid "Calculating percentage bars..."
 msgstr "Počítajú sa percentuálne tabuľky..."
 
-#: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1306
+#: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
 #: ../baobab/src/callbacks.c:263
 msgid "Ready"
 msgstr "Pripravený"
@@ -265,10 +274,10 @@ msgstr "obsahuje pevné odkazy pre:"
 #, c-format
 msgid "%5d item"
 msgid_plural "%5d items"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%5d položka"
+msgstr[1] "%5d položky"
+msgstr[2] "%5d položky"
+msgstr[3] "%5d položiek"
 
 #: ../baobab/src/baobab.c:592
 msgid "Could not initialize monitoring"
@@ -294,31 +303,31 @@ msgstr "Oddialiť"
 msgid "Save screenshot"
 msgstr "Uložiť snímku obrazovky"
 
-#: ../baobab/src/baobab.c:1120
+#: ../baobab/src/baobab.c:1119
 msgid "View as Rings Chart"
 msgstr "Zobraziť ako kruhový graf"
 
-#: ../baobab/src/baobab.c:1122
+#: ../baobab/src/baobab.c:1121
 msgid "View as Treemap Chart"
 msgstr "Zobraziť ako stĺpcový graf"
 
-#: ../baobab/src/baobab.c:1231
+#: ../baobab/src/baobab.c:1230
 msgid "Show version"
 msgstr "Zobraziť verziu"
 
-#: ../baobab/src/baobab.c:1232
+#: ../baobab/src/baobab.c:1231
 msgid "[DIRECTORY]"
 msgstr "[PRIEČINOK]"
 
-#: ../baobab/src/baobab.c:1262
+#: ../baobab/src/baobab.c:1261
 msgid "Too many arguments. Only one directory can be specified."
 msgstr "Príliš veľa parametrov. Môže byť zadaný len jeden priečinok."
 
-#: ../baobab/src/baobab.c:1279
+#: ../baobab/src/baobab.c:1278
 msgid "Could not detect any mount point."
 msgstr "Nepodarilo sa rozpoznať žiadny bod pripojenia."
 
-#: ../baobab/src/baobab.c:1281
+#: ../baobab/src/baobab.c:1280
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr "Využitie disku nemôže byť analyzované, ak neexistujú prípojné body."
 
@@ -346,16 +355,16 @@ msgstr "Koreňový uzol grafu"
 msgid "Set the root node from the model"
 msgstr "Nastaviť koreňový uzol z modelu"
 
-#: ../baobab/src/baobab-chart.c:1718
+#: ../baobab/src/baobab-chart.c:1714
 msgid "Cannot create pixbuf image!"
 msgstr "Nemožno vytvoriť obrázok pixbuf!"
 
 #. Popup the File chooser dialog
-#: ../baobab/src/baobab-chart.c:1728
+#: ../baobab/src/baobab-chart.c:1724
 msgid "Save Snapshot"
 msgstr "Uložiť obrázok"
 
-#: ../baobab/src/baobab-chart.c:1755
+#: ../baobab/src/baobab-chart.c:1751
 msgid "_Image type:"
 msgstr "_Typ obrázku:"
 
@@ -1082,19 +1091,19 @@ msgstr "Nenájdené žiadne súbory"
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%'d nájdený súbor"
+msgstr[1] "%'d nájdené súbory"
+msgstr[2] "%'d nájdených súborov"
+msgstr[3] "%'d nájdených súborov"
 
 #: ../gsearchtool/src/gsearchtool.c:1014 ../gsearchtool/src/gsearchtool.c:1052
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%'d nájdený súbor"
+msgstr[1] "%'d nájdené súbory"
+msgstr[2] "%'d nájdených súborov"
+msgstr[3] "%'d nájdených súborov"
 
 #: ../gsearchtool/src/gsearchtool.c:1143
 msgid "Entry changed called for a non entry option!"
@@ -1320,20 +1329,20 @@ msgstr "Nepodarilo sa otvoriť dokument s pomocníkom."
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Naozaj chcete otvoriť %d dokument?"
+msgstr[1] "Naozaj chcete otvoriť %d dokumenty?"
+msgstr[2] "Naozaj chcete otvoriť %d dokumentu?"
+msgstr[3] "Naozaj chcete otvoriť %d dokumentov?"
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:355
 #: ../gsearchtool/src/gsearchtool-callbacks.c:557
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Otvorí sa %d samostatné okno."
+msgstr[1] "Otvorí sa %d samostatné okná."
+msgstr[2] "Otvorí sa %d samostatných okien."
+msgstr[3] "Otvorí sa %d samostatných okien."
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:400
 #, c-format
@@ -1358,10 +1367,10 @@ msgstr ""
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Naozaj chcete otvoriť %d priečinok?"
+msgstr[1] "Naozaj chcete otvoriť %d priečinky?"
+msgstr[2] "Naozaj chcete otvoriť %d priečinkov?"
+msgstr[3] "Naozaj chcete otvoriť %d priečinkov?"
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:710
 #, c-format
@@ -2579,7 +2588,7 @@ msgid "Dictionary Preferences"
 msgstr "Nastavenia slovníka"
 
 #: ../mate-dictionary/src/gdict-applet.c:741
-#: ../mate-dictionary/src/gdict-pref-dialog.c:495
+#: ../mate-dictionary/src/gdict-pref-dialog.c:498
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
 #: ../mate-dictionary/src/gdict-window.c:1253
 #, c-format
@@ -2662,19 +2671,19 @@ msgstr "Toto natrvalo odstráni zdroj slovníka zo zoznamu."
 msgid "Unable to remove source '%s'"
 msgstr "Nepodarilo sa zmazať zdroj „%s“"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:642
+#: ../mate-dictionary/src/gdict-pref-dialog.c:645
 msgid "Add a new dictionary source"
 msgstr "Pridať nový zdroj slovníka"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:648
+#: ../mate-dictionary/src/gdict-pref-dialog.c:651
 msgid "Remove the currently selected dictionary source"
 msgstr "Odstrániť práve vybraný zdroj slovníka"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:654
+#: ../mate-dictionary/src/gdict-pref-dialog.c:657
 msgid "Edit the currently selected dictionary source"
 msgstr "Upraviť momentálne zvolený zdroj slovníka"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:662
+#: ../mate-dictionary/src/gdict-pref-dialog.c:665
 msgid "Set the font used for printing the definitions"
 msgstr "Nastaviť písmo použité pri tlačení definície"
 
@@ -2708,10 +2717,10 @@ msgstr "Nenájdené žiadne definície"
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Nájdená definícia"
+msgstr[1] "Nájdené %d definície"
+msgstr[2] "Nájdených %d definícií"
+msgstr[3] "Nájdených %d definícií"
 
 #: ../mate-dictionary/src/gdict-window.c:605
 #, c-format
@@ -2948,8 +2957,8 @@ msgstr ""
 " Network Graphics (.png). </p>"
 
 #: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
-#: ../mate-screenshot/src/mate-screenshot.c:518
-#: ../mate-screenshot/src/mate-screenshot.c:526
+#: ../mate-screenshot/src/mate-screenshot.c:519
+#: ../mate-screenshot/src/mate-screenshot.c:527
 msgid "Take Screenshot"
 msgstr "Zachytenie snímky obrazovky"
 
@@ -3013,74 +3022,74 @@ msgstr ""
 "Efekt, ktorý sa má pridať okolo okraja. Možné hodnoty sú „shadow“, „none“ a "
 "„border“."
 
-#: ../mate-screenshot/src/mate-screenshot.c:137
+#: ../mate-screenshot/src/mate-screenshot.c:138
 msgid "Error loading the help page"
 msgstr "Chyba pri načítavaní pomocníka"
 
-#: ../mate-screenshot/src/mate-screenshot.c:249
+#: ../mate-screenshot/src/mate-screenshot.c:250
 msgid "None"
 msgstr "Žiadne"
 
-#: ../mate-screenshot/src/mate-screenshot.c:250
+#: ../mate-screenshot/src/mate-screenshot.c:251
 msgid "Drop shadow"
 msgstr "Vrhnutý tieň"
 
-#: ../mate-screenshot/src/mate-screenshot.c:251
+#: ../mate-screenshot/src/mate-screenshot.c:252
 msgid "Border"
 msgstr "Okraj"
 
 #. * Include pointer *
-#: ../mate-screenshot/src/mate-screenshot.c:352
+#: ../mate-screenshot/src/mate-screenshot.c:353
 msgid "Include _pointer"
 msgstr "Zahrnúť k_urzor"
 
 #. * Include window border *
-#: ../mate-screenshot/src/mate-screenshot.c:361
+#: ../mate-screenshot/src/mate-screenshot.c:362
 msgid "Include the window _border"
 msgstr "Zahrnúť ok_raj okna"
 
-#: ../mate-screenshot/src/mate-screenshot.c:376
+#: ../mate-screenshot/src/mate-screenshot.c:377
 msgid "Apply _effect:"
 msgstr "Použiť _efekt:"
 
-#: ../mate-screenshot/src/mate-screenshot.c:436
+#: ../mate-screenshot/src/mate-screenshot.c:437
 msgid "Grab the whole _desktop"
 msgstr "Zachytiť celú pracovnú p_lochu"
 
-#: ../mate-screenshot/src/mate-screenshot.c:448
+#: ../mate-screenshot/src/mate-screenshot.c:449
 msgid "Grab the current _window"
 msgstr "Zachytiť aktuálne o_kno"
 
-#: ../mate-screenshot/src/mate-screenshot.c:460
+#: ../mate-screenshot/src/mate-screenshot.c:461
 msgid "Select _area to grab"
 msgstr "Označiť obl_asť na zachytenie"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:478
+#: ../mate-screenshot/src/mate-screenshot.c:479
 msgid "Grab _after a delay of"
 msgstr "Zachytiť s _oneskorením"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:499
-#: ../mate-screenshot/src/mate-screenshot.c:1308
+#: ../mate-screenshot/src/mate-screenshot.c:500
+#: ../mate-screenshot/src/mate-screenshot.c:1321
 msgid "seconds"
 msgstr "sekúnd"
 
-#: ../mate-screenshot/src/mate-screenshot.c:527
+#: ../mate-screenshot/src/mate-screenshot.c:528
 msgid "Effects"
 msgstr "Efekty"
 
-#: ../mate-screenshot/src/mate-screenshot.c:531
+#: ../mate-screenshot/src/mate-screenshot.c:532
 msgid "Take _Screenshot"
 msgstr "Zachytiť _snímku obrazovky"
 
-#: ../mate-screenshot/src/mate-screenshot.c:650
+#: ../mate-screenshot/src/mate-screenshot.c:651
 msgid "Error while saving screenshot"
 msgstr "Chyba počas ukladania snímky obrazovky"
 
-#: ../mate-screenshot/src/mate-screenshot.c:653
+#: ../mate-screenshot/src/mate-screenshot.c:654
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -3091,17 +3100,17 @@ msgstr ""
 " Chyba bola %s.\n"
 " Prosím, zopakujte to s iným umiestením."
 
-#: ../mate-screenshot/src/mate-screenshot.c:792
+#: ../mate-screenshot/src/mate-screenshot.c:796
 msgid "Screenshot taken"
 msgstr "Zachytená snímka obrazovky"
 
-#: ../mate-screenshot/src/mate-screenshot.c:847
+#: ../mate-screenshot/src/mate-screenshot.c:851
 msgid "Unable to take a screenshot of the current window"
 msgstr "Nepodarilo sa zachytiť snímku aktuálneho okna"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/src/mate-screenshot.c:904
+#: ../mate-screenshot/src/mate-screenshot.c:916
 #, c-format
 msgid "Screenshot at %s.png"
 msgstr "Snímka obrazovky %s.png"
@@ -3109,54 +3118,65 @@ msgstr "Snímka obrazovky %s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/src/mate-screenshot.c:911
+#: ../mate-screenshot/src/mate-screenshot.c:923
 #, c-format
 msgid "Screenshot at %s - %d.png"
 msgstr "Snímka obrazovky %s - %d.png"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1304
+#: ../mate-screenshot/src/mate-screenshot.c:1316
 msgid "Grab a window instead of the entire screen"
 msgstr "Zachytiť okno namiesto celej obrazovky"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1305
+#: ../mate-screenshot/src/mate-screenshot.c:1317
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Zachytiť oblasť obrazovky namiesto celej obrazovky"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1306
+#: ../mate-screenshot/src/mate-screenshot.c:1318
+msgid "Send grabbed area directly to the clipboard"
+msgstr "Odoslať chytenú oblasť do schránky"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1319
 msgid "Include the window border with the screenshot"
 msgstr "Zahrnúť okraj okna do snímky"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1307
+#: ../mate-screenshot/src/mate-screenshot.c:1320
 msgid "Remove the window border from the screenshot"
 msgstr "Odstrániť okraj okna zo snímky obrazovky"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1308
+#: ../mate-screenshot/src/mate-screenshot.c:1321
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Zachytiť snímku obrazovky s určeným oneskorením [v sekundách]"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1309
+#: ../mate-screenshot/src/mate-screenshot.c:1322
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr ""
 "Efekt, ktorý sa má pridať k okraju (shadow - tieň, border - okraj alebo none"
 " - žiadny)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1309
+#: ../mate-screenshot/src/mate-screenshot.c:1322
 msgid "effect"
 msgstr "efekt"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1310
+#: ../mate-screenshot/src/mate-screenshot.c:1323
 msgid "Interactively set options"
 msgstr "Interaktívne nastaviť možnosti"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1311
+#: ../mate-screenshot/src/mate-screenshot.c:1324
 msgid "Print version information and exit"
 msgstr "Vypíše informácie o verzii a skončí"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1320
+#: ../mate-screenshot/src/mate-screenshot.c:1333
 msgid "Take a picture of the screen"
 msgstr "Zachytiť snímku obrazovky"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1343
+#: ../mate-screenshot/src/mate-screenshot.c:1356
+#, c-format
+msgid ""
+"Conflicting options: --clipboard and --interactive should not be used at the"
+" same time.\n"
+msgstr "Konfliktné možnosti: --window a --area by nemali byť používané spolu.\n"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1362
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "

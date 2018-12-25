@@ -3,14 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Oleh, 2018
+# zubr139, 2018
+# Шаповалов Анатолій Романович <elrond.716.smith@gmail.com>, 2018
+# Stefano Karapetsas <stefano@karapetsas.com>, 2018
+# Микола Ткач <znadibnyk@gmail.com>, 2018
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-17 21:06+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Шаповалов Анатолій Романович <elrond.716.smith@gmail.com>, 2018\n"
+"POT-Creation-Date: 2018-10-05 15:24+0200\n"
+"PO-Revision-Date: 2018-03-12 09:18+0000\n"
+"Last-Translator: Микола Ткач <znadibnyk@gmail.com>, 2018\n"
 "Language-Team: Ukrainian (https://www.transifex.com/mate/teams/13566/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -104,7 +111,7 @@ msgstr "_Допомога"
 msgid "_Contents"
 msgstr "_Вміст"
 
-#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1242
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1241
 msgid "Disk Usage Analyzer"
 msgstr "Аналізатор використання диску"
 
@@ -240,7 +247,7 @@ msgstr "доступно:"
 msgid "Calculating percentage bars..."
 msgstr "Обчислення відсоткового співвідношення..."
 
-#: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1306
+#: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
 #: ../baobab/src/callbacks.c:263
 msgid "Ready"
 msgstr "Готовий"
@@ -261,10 +268,10 @@ msgstr "містяться жорсткі посилання на:"
 #, c-format
 msgid "%5d item"
 msgid_plural "%5d items"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%5d об'єкт"
+msgstr[1] "%5d об'єкти"
+msgstr[2] "%5d об'єктів"
+msgstr[3] "%5d об'єктів"
 
 #: ../baobab/src/baobab.c:592
 msgid "Could not initialize monitoring"
@@ -290,31 +297,31 @@ msgstr "Зменшити"
 msgid "Save screenshot"
 msgstr "Зберегти зняток екрану"
 
-#: ../baobab/src/baobab.c:1120
+#: ../baobab/src/baobab.c:1119
 msgid "View as Rings Chart"
 msgstr "Показати у вигляді кругової діяграми"
 
-#: ../baobab/src/baobab.c:1122
+#: ../baobab/src/baobab.c:1121
 msgid "View as Treemap Chart"
 msgstr "Показати у вигляді дерева"
 
-#: ../baobab/src/baobab.c:1231
+#: ../baobab/src/baobab.c:1230
 msgid "Show version"
 msgstr "Показати версію"
 
-#: ../baobab/src/baobab.c:1232
+#: ../baobab/src/baobab.c:1231
 msgid "[DIRECTORY]"
 msgstr "[ТЕКА]"
 
-#: ../baobab/src/baobab.c:1262
+#: ../baobab/src/baobab.c:1261
 msgid "Too many arguments. Only one directory can be specified."
 msgstr "Забагато параметрів. Одночасно можна вказувати лише одну теку."
 
-#: ../baobab/src/baobab.c:1279
+#: ../baobab/src/baobab.c:1278
 msgid "Could not detect any mount point."
 msgstr "Не вдається визначити точку монтування."
 
-#: ../baobab/src/baobab.c:1281
+#: ../baobab/src/baobab.c:1280
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr "Неможливо проаналізувати використання диску без точки монтування."
 
@@ -342,16 +349,16 @@ msgstr "Кореневий вузол діяграми"
 msgid "Set the root node from the model"
 msgstr "Встановити кореневий вузол діяграми"
 
-#: ../baobab/src/baobab-chart.c:1718
+#: ../baobab/src/baobab-chart.c:1714
 msgid "Cannot create pixbuf image!"
 msgstr "Не вдається створити растрове зображення!"
 
 #. Popup the File chooser dialog
-#: ../baobab/src/baobab-chart.c:1728
+#: ../baobab/src/baobab-chart.c:1724
 msgid "Save Snapshot"
 msgstr "Зберегти зняток екрану"
 
-#: ../baobab/src/baobab-chart.c:1755
+#: ../baobab/src/baobab-chart.c:1751
 msgid "_Image type:"
 msgstr "Тип _зображення:"
 
@@ -1073,19 +1080,19 @@ msgstr "Файлів не знайдено"
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%'d Файл знайдено"
+msgstr[1] "%'d Файли знайдено"
+msgstr[2] "%'d Файлів знайдено"
+msgstr[3] "%'d Файлів знайдено"
 
 #: ../gsearchtool/src/gsearchtool.c:1014 ../gsearchtool/src/gsearchtool.c:1052
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%'d файл знайдено"
+msgstr[1] "%'d файли знайдено"
+msgstr[2] "%'d файлів знайдено"
+msgstr[3] "%'d файлів знайдено"
 
 #: ../gsearchtool/src/gsearchtool.c:1143
 msgid "Entry changed called for a non entry option!"
@@ -1312,20 +1319,20 @@ msgstr "Не вдається відкрити документ довідки."
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Справді бажаєте відкрити %d документ?"
+msgstr[1] "Справді бажаєте відкрити %d документи?"
+msgstr[2] "Справді бажаєте відкрити %d документів?"
+msgstr[3] "Справді бажаєте відкрити %d документів?"
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:355
 #: ../gsearchtool/src/gsearchtool-callbacks.c:557
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Буде відкрито %d окреме вікно."
+msgstr[1] "Буде відкрито %d окремі вікна."
+msgstr[2] "Буде відкрито %d окремих вікон."
+msgstr[3] "Буде відкрито %d окремих вікон."
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:400
 #, c-format
@@ -1349,10 +1356,10 @@ msgstr "Немає проґрами відображення здатної ві
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Справді бажаєте відкрити %d теку?"
+msgstr[1] "Справді бажаєте відкрити %d теки?"
+msgstr[2] "Справді бажаєте відкрити %d тек?"
+msgstr[3] "Справді бажаєте відкрити %d тек?"
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:710
 #, c-format
@@ -2571,7 +2578,7 @@ msgid "Dictionary Preferences"
 msgstr "Параметри словника"
 
 #: ../mate-dictionary/src/gdict-applet.c:741
-#: ../mate-dictionary/src/gdict-pref-dialog.c:495
+#: ../mate-dictionary/src/gdict-pref-dialog.c:498
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
 #: ../mate-dictionary/src/gdict-window.c:1253
 #, c-format
@@ -2654,19 +2661,19 @@ msgstr "Це призведе до остаточного вилучення д�
 msgid "Unable to remove source '%s'"
 msgstr "Не дається вилучити джерело '%s'"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:642
+#: ../mate-dictionary/src/gdict-pref-dialog.c:645
 msgid "Add a new dictionary source"
 msgstr "Додати нове джерело словників"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:648
+#: ../mate-dictionary/src/gdict-pref-dialog.c:651
 msgid "Remove the currently selected dictionary source"
 msgstr "Вилучити виділене джерело словників"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:654
+#: ../mate-dictionary/src/gdict-pref-dialog.c:657
 msgid "Edit the currently selected dictionary source"
 msgstr "Редагувати вибране джерело словників"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:662
+#: ../mate-dictionary/src/gdict-pref-dialog.c:665
 msgid "Set the font used for printing the definitions"
 msgstr "Встановити шрифт для друку визначення"
 
@@ -2700,10 +2707,10 @@ msgstr "Не знайдено визначень"
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "знайдено визначення"
+msgstr[1] "%d знайдено визначення"
+msgstr[2] "%d знайдено визначень"
+msgstr[3] "%d знайдено визначень"
 
 #: ../mate-dictionary/src/gdict-window.c:605
 #, c-format
@@ -2745,7 +2752,7 @@ msgstr "Надрукувати цей документ"
 
 #: ../mate-dictionary/src/gdict-window.c:1310
 msgid "_Find"
-msgstr ""
+msgstr "Зна_йти:"
 
 #: ../mate-dictionary/src/gdict-window.c:1311
 msgid "Find a word or phrase in the document"
@@ -2940,8 +2947,8 @@ msgstr ""
 "(.png) . </p>"
 
 #: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
-#: ../mate-screenshot/src/mate-screenshot.c:518
-#: ../mate-screenshot/src/mate-screenshot.c:526
+#: ../mate-screenshot/src/mate-screenshot.c:519
+#: ../mate-screenshot/src/mate-screenshot.c:527
 msgid "Take Screenshot"
 msgstr "Зробити зняток"
 
@@ -3006,74 +3013,74 @@ msgstr ""
 "Ефект, що додається навколо рамки. Можливі варіянти: \"shadow\", \"none\", "
 "та \"border\"."
 
-#: ../mate-screenshot/src/mate-screenshot.c:137
+#: ../mate-screenshot/src/mate-screenshot.c:138
 msgid "Error loading the help page"
 msgstr "Помилка завантаження сторінки довідки"
 
-#: ../mate-screenshot/src/mate-screenshot.c:249
+#: ../mate-screenshot/src/mate-screenshot.c:250
 msgid "None"
 msgstr "Немає"
 
-#: ../mate-screenshot/src/mate-screenshot.c:250
+#: ../mate-screenshot/src/mate-screenshot.c:251
 msgid "Drop shadow"
 msgstr "Відкидати тінь"
 
-#: ../mate-screenshot/src/mate-screenshot.c:251
+#: ../mate-screenshot/src/mate-screenshot.c:252
 msgid "Border"
 msgstr "Рамка"
 
 #. * Include pointer *
-#: ../mate-screenshot/src/mate-screenshot.c:352
+#: ../mate-screenshot/src/mate-screenshot.c:353
 msgid "Include _pointer"
 msgstr "Включити _вказівник"
 
 #. * Include window border *
-#: ../mate-screenshot/src/mate-screenshot.c:361
+#: ../mate-screenshot/src/mate-screenshot.c:362
 msgid "Include the window _border"
 msgstr "Включити _рамку вікна"
 
-#: ../mate-screenshot/src/mate-screenshot.c:376
+#: ../mate-screenshot/src/mate-screenshot.c:377
 msgid "Apply _effect:"
 msgstr "Застосувати _ефект"
 
-#: ../mate-screenshot/src/mate-screenshot.c:436
+#: ../mate-screenshot/src/mate-screenshot.c:437
 msgid "Grab the whole _desktop"
 msgstr "Захопити усю _стільницю"
 
-#: ../mate-screenshot/src/mate-screenshot.c:448
+#: ../mate-screenshot/src/mate-screenshot.c:449
 msgid "Grab the current _window"
 msgstr "Захопити поточне _вікно"
 
-#: ../mate-screenshot/src/mate-screenshot.c:460
+#: ../mate-screenshot/src/mate-screenshot.c:461
 msgid "Select _area to grab"
 msgstr "Виберіть _ділянку захоплення"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:478
+#: ../mate-screenshot/src/mate-screenshot.c:479
 msgid "Grab _after a delay of"
 msgstr "Захопити після _затримки"
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:499
-#: ../mate-screenshot/src/mate-screenshot.c:1308
+#: ../mate-screenshot/src/mate-screenshot.c:500
+#: ../mate-screenshot/src/mate-screenshot.c:1321
 msgid "seconds"
 msgstr "секунд"
 
-#: ../mate-screenshot/src/mate-screenshot.c:527
+#: ../mate-screenshot/src/mate-screenshot.c:528
 msgid "Effects"
 msgstr "Ефекти"
 
-#: ../mate-screenshot/src/mate-screenshot.c:531
+#: ../mate-screenshot/src/mate-screenshot.c:532
 msgid "Take _Screenshot"
 msgstr "Зробити з_няток екрану"
 
-#: ../mate-screenshot/src/mate-screenshot.c:650
+#: ../mate-screenshot/src/mate-screenshot.c:651
 msgid "Error while saving screenshot"
 msgstr "Помилка при збереженні знятку екрану"
 
-#: ../mate-screenshot/src/mate-screenshot.c:653
+#: ../mate-screenshot/src/mate-screenshot.c:654
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -3084,17 +3091,17 @@ msgstr ""
 " Виникла помилка %s.\n"
 " Виберіть иньше місце та спробуйте знову."
 
-#: ../mate-screenshot/src/mate-screenshot.c:792
+#: ../mate-screenshot/src/mate-screenshot.c:796
 msgid "Screenshot taken"
 msgstr "Зняток отримано"
 
-#: ../mate-screenshot/src/mate-screenshot.c:847
+#: ../mate-screenshot/src/mate-screenshot.c:851
 msgid "Unable to take a screenshot of the current window"
 msgstr "Не вдається зробити зняток поточного вікна"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/src/mate-screenshot.c:904
+#: ../mate-screenshot/src/mate-screenshot.c:916
 #, c-format
 msgid "Screenshot at %s.png"
 msgstr "Зняток екрану як %s.png"
@@ -3102,52 +3109,63 @@ msgstr "Зняток екрану як %s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/src/mate-screenshot.c:911
+#: ../mate-screenshot/src/mate-screenshot.c:923
 #, c-format
 msgid "Screenshot at %s - %d.png"
 msgstr "Зняток екрану як %s - %d.png"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1304
+#: ../mate-screenshot/src/mate-screenshot.c:1316
 msgid "Grab a window instead of the entire screen"
 msgstr "Зробити зняток вікна, а не усього екрану"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1305
+#: ../mate-screenshot/src/mate-screenshot.c:1317
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Захопити лише частину екрану"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1306
+#: ../mate-screenshot/src/mate-screenshot.c:1318
+msgid "Send grabbed area directly to the clipboard"
+msgstr ""
+
+#: ../mate-screenshot/src/mate-screenshot.c:1319
 msgid "Include the window border with the screenshot"
 msgstr "Включити рамку вікна у зняток"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1307
+#: ../mate-screenshot/src/mate-screenshot.c:1320
 msgid "Remove the window border from the screenshot"
 msgstr "Вилучити рамку вікна із знятку"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1308
+#: ../mate-screenshot/src/mate-screenshot.c:1321
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Зробити зняток через вказаний час [у секундах]"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1309
+#: ../mate-screenshot/src/mate-screenshot.c:1322
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Ефект, що додається до рамки вікна (тінь, рамка або ніякого)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1309
+#: ../mate-screenshot/src/mate-screenshot.c:1322
 msgid "effect"
 msgstr "ефекти рамки"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1310
+#: ../mate-screenshot/src/mate-screenshot.c:1323
 msgid "Interactively set options"
 msgstr "Встановити параметри інтерактивно"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1311
+#: ../mate-screenshot/src/mate-screenshot.c:1324
 msgid "Print version information and exit"
 msgstr "Вивести інформацію про версію та вийти"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1320
+#: ../mate-screenshot/src/mate-screenshot.c:1333
 msgid "Take a picture of the screen"
 msgstr "Зробити зняток екрану"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1343
+#: ../mate-screenshot/src/mate-screenshot.c:1356
+#, c-format
+msgid ""
+"Conflicting options: --clipboard and --interactive should not be used at the"
+" same time.\n"
+msgstr ""
+
+#: ../mate-screenshot/src/mate-screenshot.c:1362
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "

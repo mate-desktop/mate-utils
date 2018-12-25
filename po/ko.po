@@ -3,13 +3,19 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Alan Lee <bkrhlim@aol.com>, 2018
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2018
+# Stefano Karapetsas <stefano@karapetsas.com>, 2018
+# 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2018
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-17 21:06+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2018-10-05 15:24+0200\n"
+"PO-Revision-Date: 2018-03-12 09:18+0000\n"
 "Last-Translator: 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2018\n"
 "Language-Team: Korean (https://www.transifex.com/mate/teams/13566/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -104,7 +110,7 @@ msgstr "도움말(_H)"
 msgid "_Contents"
 msgstr "콘텐츠(_C)"
 
-#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1242
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1241
 msgid "Disk Usage Analyzer"
 msgstr "디스크 사용량 분석"
 
@@ -236,7 +242,7 @@ msgstr "사용 가능:"
 msgid "Calculating percentage bars..."
 msgstr "퍼센트 표시 계산하는 중..."
 
-#: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1306
+#: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
 #: ../baobab/src/callbacks.c:263
 msgid "Ready"
 msgstr "준비"
@@ -257,7 +263,7 @@ msgstr "다음에 대한 하드 링크 포함:"
 #, c-format
 msgid "%5d item"
 msgid_plural "%5d items"
-msgstr[0] ""
+msgstr[0] "항목 %5d개"
 
 #: ../baobab/src/baobab.c:592
 msgid "Could not initialize monitoring"
@@ -283,31 +289,31 @@ msgstr "축소"
 msgid "Save screenshot"
 msgstr "스크린샷 저장"
 
-#: ../baobab/src/baobab.c:1120
+#: ../baobab/src/baobab.c:1119
 msgid "View as Rings Chart"
 msgstr "링 차트"
 
-#: ../baobab/src/baobab.c:1122
+#: ../baobab/src/baobab.c:1121
 msgid "View as Treemap Chart"
 msgstr "트리맵 차트"
 
-#: ../baobab/src/baobab.c:1231
+#: ../baobab/src/baobab.c:1230
 msgid "Show version"
 msgstr "버전을 표시합니다"
 
-#: ../baobab/src/baobab.c:1232
+#: ../baobab/src/baobab.c:1231
 msgid "[DIRECTORY]"
 msgstr "[디렉터리]"
 
-#: ../baobab/src/baobab.c:1262
+#: ../baobab/src/baobab.c:1261
 msgid "Too many arguments. Only one directory can be specified."
 msgstr "인수가 너무 많습니다. 디렉터리 한 개만 지정할 수 있습니다."
 
-#: ../baobab/src/baobab.c:1279
+#: ../baobab/src/baobab.c:1278
 msgid "Could not detect any mount point."
 msgstr "마우스 위치를 찾지 못했습니다."
 
-#: ../baobab/src/baobab.c:1281
+#: ../baobab/src/baobab.c:1280
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr "마운트 위치가 없으면 디스크 사용량을 분석할 수 없습니다."
 
@@ -335,16 +341,16 @@ msgstr "차트 루트 노드"
 msgid "Set the root node from the model"
 msgstr "모델의 루트 노드를 설정합니다"
 
-#: ../baobab/src/baobab-chart.c:1718
+#: ../baobab/src/baobab-chart.c:1714
 msgid "Cannot create pixbuf image!"
 msgstr "픽스버퍼 그림을 만들 수 없습니다!"
 
 #. Popup the File chooser dialog
-#: ../baobab/src/baobab-chart.c:1728
+#: ../baobab/src/baobab-chart.c:1724
 msgid "Save Snapshot"
 msgstr "스냅샷 저장"
 
-#: ../baobab/src/baobab-chart.c:1755
+#: ../baobab/src/baobab-chart.c:1751
 msgid "_Image type:"
 msgstr "그림 종류(_I):"
 
@@ -1022,13 +1028,13 @@ msgstr "파일이 없습니다"
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
-msgstr[0] ""
+msgstr[0] "파일 %'d개 찾음"
 
 #: ../gsearchtool/src/gsearchtool.c:1014 ../gsearchtool/src/gsearchtool.c:1052
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
-msgstr[0] ""
+msgstr[0] "파일 %'d개 찾음"
 
 #: ../gsearchtool/src/gsearchtool.c:1143
 msgid "Entry changed called for a non entry option!"
@@ -1250,14 +1256,14 @@ msgstr "도움말 문서를 열 수 없습니다."
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] ""
+msgstr[0] "정말로 문서 %d개를 여시겠습니까?"
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:355
 #: ../gsearchtool/src/gsearchtool-callbacks.c:557
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
-msgstr[0] ""
+msgstr[0] "창 %d개를 각각 엽니다."
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:400
 #, c-format
@@ -1281,7 +1287,7 @@ msgstr "이 문서를 표시할 수 있는 보기 프로그램이 설치되어 �
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] ""
+msgstr[0] "정말로 폴더 %d개를 여시겠습니까?"
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:710
 #, c-format
@@ -2484,7 +2490,7 @@ msgid "Dictionary Preferences"
 msgstr "사전 기본 설정"
 
 #: ../mate-dictionary/src/gdict-applet.c:741
-#: ../mate-dictionary/src/gdict-pref-dialog.c:495
+#: ../mate-dictionary/src/gdict-pref-dialog.c:498
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
 #: ../mate-dictionary/src/gdict-window.c:1253
 #, c-format
@@ -2567,19 +2573,19 @@ msgstr "이렇게 하면 목록에서 사전 소스를 완전히 제거하게 �
 msgid "Unable to remove source '%s'"
 msgstr "%s 소스를 제거할 수 없습니다"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:642
+#: ../mate-dictionary/src/gdict-pref-dialog.c:645
 msgid "Add a new dictionary source"
 msgstr "새 사전 소스를 추가합니다"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:648
+#: ../mate-dictionary/src/gdict-pref-dialog.c:651
 msgid "Remove the currently selected dictionary source"
 msgstr "현재 선택한 사전 소스를 지웁니다"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:654
+#: ../mate-dictionary/src/gdict-pref-dialog.c:657
 msgid "Edit the currently selected dictionary source"
 msgstr "지금 선택한 사전 소스를 편집합니다"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:662
+#: ../mate-dictionary/src/gdict-pref-dialog.c:665
 msgid "Set the font used for printing the definitions"
 msgstr "단어 정의를 인쇄하는 데 사용할 글꼴 설정"
 
@@ -2613,7 +2619,7 @@ msgstr "단어 설명이 없습니다"
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
-msgstr[0] ""
+msgstr[0] "단어 정의 %d개 찾음"
 
 #: ../mate-dictionary/src/gdict-window.c:605
 #, c-format
@@ -2655,7 +2661,7 @@ msgstr "이 문서를 인쇄합니다"
 
 #: ../mate-dictionary/src/gdict-window.c:1310
 msgid "_Find"
-msgstr ""
+msgstr "찾기(_F)"
 
 #: ../mate-dictionary/src/gdict-window.c:1311
 msgid "Find a word or phrase in the document"
@@ -2848,8 +2854,8 @@ msgstr ""
 "복사하고 이동식 네트워크 그래픽 이미지 형식(.png) 으로 저장할 수 있습니다. </p>"
 
 #: ../mate-screenshot/data/mate-screenshot.desktop.in.h:1
-#: ../mate-screenshot/src/mate-screenshot.c:518
-#: ../mate-screenshot/src/mate-screenshot.c:526
+#: ../mate-screenshot/src/mate-screenshot.c:519
+#: ../mate-screenshot/src/mate-screenshot.c:527
 msgid "Take Screenshot"
 msgstr "스크린샷 찍기"
 
@@ -2911,74 +2917,74 @@ msgid ""
 "\"none\", and \"border\"."
 msgstr "테두리에 바깥 쪽에 넣을 효과. 쓸 수 있는 값은 \"shadow\", \"none\", \"border\"입니다."
 
-#: ../mate-screenshot/src/mate-screenshot.c:137
+#: ../mate-screenshot/src/mate-screenshot.c:138
 msgid "Error loading the help page"
 msgstr "도움말 페이지를 읽어들이는 데 오류"
 
-#: ../mate-screenshot/src/mate-screenshot.c:249
+#: ../mate-screenshot/src/mate-screenshot.c:250
 msgid "None"
 msgstr "없음"
 
-#: ../mate-screenshot/src/mate-screenshot.c:250
+#: ../mate-screenshot/src/mate-screenshot.c:251
 msgid "Drop shadow"
 msgstr "그림자 넣기"
 
-#: ../mate-screenshot/src/mate-screenshot.c:251
+#: ../mate-screenshot/src/mate-screenshot.c:252
 msgid "Border"
 msgstr "테두리"
 
 #. * Include pointer *
-#: ../mate-screenshot/src/mate-screenshot.c:352
+#: ../mate-screenshot/src/mate-screenshot.c:353
 msgid "Include _pointer"
 msgstr "마우스 포인터 포함(_P)"
 
 #. * Include window border *
-#: ../mate-screenshot/src/mate-screenshot.c:361
+#: ../mate-screenshot/src/mate-screenshot.c:362
 msgid "Include the window _border"
 msgstr "창 테두리 포함(_B)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:376
+#: ../mate-screenshot/src/mate-screenshot.c:377
 msgid "Apply _effect:"
 msgstr "효과 적용(_E):"
 
-#: ../mate-screenshot/src/mate-screenshot.c:436
+#: ../mate-screenshot/src/mate-screenshot.c:437
 msgid "Grab the whole _desktop"
 msgstr "전체 데스크톱 찍기(_D)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:448
+#: ../mate-screenshot/src/mate-screenshot.c:449
 msgid "Grab the current _window"
 msgstr "현재 창 찍기(_W)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:460
+#: ../mate-screenshot/src/mate-screenshot.c:461
 msgid "Select _area to grab"
 msgstr "잡을 영역 선택(_A)"
 
 #. translators: this is the first part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:478
+#: ../mate-screenshot/src/mate-screenshot.c:479
 msgid "Grab _after a delay of"
 msgstr "다음 시간이 지난 후에 찍기(_A): "
 
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
-#: ../mate-screenshot/src/mate-screenshot.c:499
-#: ../mate-screenshot/src/mate-screenshot.c:1308
+#: ../mate-screenshot/src/mate-screenshot.c:500
+#: ../mate-screenshot/src/mate-screenshot.c:1321
 msgid "seconds"
 msgstr "초"
 
-#: ../mate-screenshot/src/mate-screenshot.c:527
+#: ../mate-screenshot/src/mate-screenshot.c:528
 msgid "Effects"
 msgstr "효과"
 
-#: ../mate-screenshot/src/mate-screenshot.c:531
+#: ../mate-screenshot/src/mate-screenshot.c:532
 msgid "Take _Screenshot"
 msgstr "스크린샷 찍기(_S)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:650
+#: ../mate-screenshot/src/mate-screenshot.c:651
 msgid "Error while saving screenshot"
 msgstr "스크린샷을 저장하는 데 오류가 발생했습니다"
 
-#: ../mate-screenshot/src/mate-screenshot.c:653
+#: ../mate-screenshot/src/mate-screenshot.c:654
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -2989,17 +2995,17 @@ msgstr ""
 " 오류는 %s.\n"
 " 다른 위치를 선택하고 다시 시도해 보십시오."
 
-#: ../mate-screenshot/src/mate-screenshot.c:792
+#: ../mate-screenshot/src/mate-screenshot.c:796
 msgid "Screenshot taken"
 msgstr "스크린샷을 찍었습니다"
 
-#: ../mate-screenshot/src/mate-screenshot.c:847
+#: ../mate-screenshot/src/mate-screenshot.c:851
 msgid "Unable to take a screenshot of the current window"
 msgstr "현재 창의 스크린샷을 찍을 수 없습니다."
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
-#: ../mate-screenshot/src/mate-screenshot.c:904
+#: ../mate-screenshot/src/mate-screenshot.c:916
 #, c-format
 msgid "Screenshot at %s.png"
 msgstr "스크린샷 %s.png"
@@ -3007,52 +3013,63 @@ msgstr "스크린샷 %s.png"
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
 #. * taken
-#: ../mate-screenshot/src/mate-screenshot.c:911
+#: ../mate-screenshot/src/mate-screenshot.c:923
 #, c-format
 msgid "Screenshot at %s - %d.png"
 msgstr "스크린샷 %s - %d.png"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1304
+#: ../mate-screenshot/src/mate-screenshot.c:1316
 msgid "Grab a window instead of the entire screen"
 msgstr "전체 화면 대신에 창을 찍습니다"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1305
+#: ../mate-screenshot/src/mate-screenshot.c:1317
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "전체 화면 대신에 화면의 일정 영역을 찍습니다"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1306
+#: ../mate-screenshot/src/mate-screenshot.c:1318
+msgid "Send grabbed area directly to the clipboard"
+msgstr "잡은 영역을 클립 보드에 바로 보냅니다"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1319
 msgid "Include the window border with the screenshot"
 msgstr "화면을 찍을 때 창 테두리를 포함합니다"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1307
+#: ../mate-screenshot/src/mate-screenshot.c:1320
 msgid "Remove the window border from the screenshot"
 msgstr "화면을 찍을 때 창 테두리를 제거합니다"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1308
+#: ../mate-screenshot/src/mate-screenshot.c:1321
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "지정한 시간 (초 단위) 이후에 화면을 찍습니다"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1309
+#: ../mate-screenshot/src/mate-screenshot.c:1322
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "테두리에 넣을 효과 (shadow, border 아니면 none)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1309
+#: ../mate-screenshot/src/mate-screenshot.c:1322
 msgid "effect"
 msgstr "테두리 효과"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1310
+#: ../mate-screenshot/src/mate-screenshot.c:1323
 msgid "Interactively set options"
 msgstr "대화형 인터페이스로 옵션 설정"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1311
+#: ../mate-screenshot/src/mate-screenshot.c:1324
 msgid "Print version information and exit"
 msgstr "버전 정보를 표시하고 끝냅니다"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1320
+#: ../mate-screenshot/src/mate-screenshot.c:1333
 msgid "Take a picture of the screen"
 msgstr "화면을 찍습니다"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1343
+#: ../mate-screenshot/src/mate-screenshot.c:1356
+#, c-format
+msgid ""
+"Conflicting options: --clipboard and --interactive should not be used at the"
+" same time.\n"
+msgstr "옵션 충돌: --clipboard와 --interactive 옵션은 같이 사용할 수 없습니다.\n"
+
+#: ../mate-screenshot/src/mate-screenshot.c:1362
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
