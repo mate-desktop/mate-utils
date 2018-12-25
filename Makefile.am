@@ -24,7 +24,9 @@ EXTRA_DIST = \
 DISTCLEANFILES =                \
 	gtk-doc.make
 
-DISTCHECK_CONFIGURE_FLAGS = --enable-gtk-doc
+DISTCHECK_CONFIGURE_FLAGS = \
+	--enable-gtk-doc \
+	CFLAGS='-Wno-deprecated-declarations'
 
 # Build ChangeLog from GIT  history
 ChangeLog:
