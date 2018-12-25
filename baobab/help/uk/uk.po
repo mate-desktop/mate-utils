@@ -1,133 +1,96 @@
-# Ukrainian translation of baobab manual.
-# Copyright (C) 2005 Free Software Foundation, Inc.
-# Maxim Dziumanenko <dziumanenko@gmail.com>, 2005-2007.
-#
+# Translators:
+# Stefano Karapetsas <stefano@karapetsas.com>, 2018
+# Wolfgang Ulbrich <mate@raveit.de>, 2018
+# Микола Ткач <znadibnyk@gmail.com>, 2018
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: baobab manual\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-10 16:26+0000\n"
-"PO-Revision-Date: 2010-01-10 21:39+0300\n"
-"Last-Translator: Maxim V. Dziumanenko <dziumanenko@softprom.kiev.ua>\n"
-"Language-Team: Ukrainian <uk@li.org>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"POT-Creation-Date: 2018-10-05 15:34+0200\n"
+"PO-Revision-Date: 2018-09-13 09:19+0000\n"
+"Last-Translator: Микола Ткач <znadibnyk@gmail.com>, 2018\n"
+"Language-Team: Ukrainian (https://www.transifex.com/mate/teams/13566/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-#. When image changes, this message will be marked fuzzy or untranslated for you.
-#. It doesn't matter what you translate it to: it's not used at all.
-#: C/baobab.xml:154(None)
-msgid ""
-"@@image: 'figures/baobab_window.png'; md5=100896a46f48130752a9d88ac516fa3a"
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
 msgstr ""
-"@@image: 'figures/baobab_window.png'; md5=100896a46f48130752a9d88ac516fa3a"
+"Yarema aka Knedlyk <yupadmin@gmail.com>,\n"
+"Микола Ткач <znadibnyk@gmail.com>,\n"
+"Oleh Tsyupka <myr4yk@gmail.com>"
 
-#. When image changes, this message will be marked fuzzy or untranslated for you.
-#. It doesn't matter what you translate it to: it's not used at all.
-#: C/baobab.xml:202(None)
-msgid ""
-"@@image: 'figures/baobab_fullscan.png'; md5=17895f3407c9282a55a324642fd20e0b"
-msgstr ""
-"@@image: 'figures/baobab_fullscan.png'; md5=17895f3407c9282a55a324642fd20e0b"
-
-#. When image changes, this message will be marked fuzzy or untranslated for you.
-#. It doesn't matter what you translate it to: it's not used at all.
-#: C/baobab.xml:255(None)
-msgid ""
-"@@image: 'figures/baobab_remote.png'; md5=b11c5d1001dfbab2628df824a2660643"
-msgstr ""
-"@@image: 'figures/baobab_remote.png'; md5=b11c5d1001dfbab2628df824a2660643"
-
-#. When image changes, this message will be marked fuzzy or untranslated for you.
-#. It doesn't matter what you translate it to: it's not used at all.
-#: C/baobab.xml:283(None)
-msgid ""
-"@@image: 'figures/baobab_prefs.png'; md5=94dbb42d65cc8c32e50ac87bf9932811"
-msgstr ""
-"@@image: 'figures/baobab_prefs.png'; md5=94dbb42d65cc8c32e50ac87bf9932811"
-
-#. When image changes, this message will be marked fuzzy or untranslated for you.
-#. It doesn't matter what you translate it to: it's not used at all.
-#: C/baobab.xml:322(None)
-msgid ""
-"@@image: 'figures/baobab_treemaps.png'; md5=b553b49db25f9d6b98efcc394a5d3689"
-msgstr ""
-"@@image: 'figures/baobab_treemaps.png'; md5=b553b49db25f9d6b98efcc394a5d3689"
-
-#. When image changes, this message will be marked fuzzy or untranslated for you.
-#. It doesn't matter what you translate it to: it's not used at all.
-#: C/baobab.xml:366(None)
-msgid ""
-"@@image: 'figures/baobab_ringschart1.png'; "
-"md5=84b2e52d360fbda7311ce59a9532be7a"
-msgstr ""
-"@@image: 'figures/baobab_ringschart1.png'; "
-"md5=84b2e52d360fbda7311ce59a9532be7a"
-
-#. When image changes, this message will be marked fuzzy or untranslated for you.
-#. It doesn't matter what you translate it to: it's not used at all.
-#: C/baobab.xml:394(None)
-msgid ""
-"@@image: 'figures/baobab_ringschart2.png'; "
-"md5=d938ef7e9299de5b304c7654bf14e364"
-msgstr ""
-"@@image: 'figures/baobab_ringschart2.png'; "
-"md5=d938ef7e9299de5b304c7654bf14e364"
-
-#: C/baobab.xml:23(title)
+#. (itstool) path: articleinfo/title
+#: C/index.docbook:23
 msgid "Disk Usage Analyzer Manual"
-msgstr "Посібник з засобу використання диску"
+msgstr "Керівництво користувача аналізатора використання дисків"
 
-#: C/baobab.xml:26(para)
+#. (itstool) path: abstract/para
+#: C/index.docbook:26
 msgid ""
 "Disk Usage Analyzer is a graphical, menu-driven viewer that you can use to "
 "view and monitor your disk usage and folder structure."
 msgstr ""
-"Аналізатор використання диску - графічна програма перегляду та контролю "
-"використання диску та структури каталогів."
 
-#: C/baobab.xml:31(year)
-msgid "2006"
-msgstr "2006"
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:30
+msgid "<year>2015</year> <holder>MATE Documentation Project</holder>"
+msgstr "<year>2015</year> <holder>Проєкт документування MATE</holder>"
 
-#: C/baobab.xml:32(holder)
-msgid "Fabio Marzocca"
-msgstr "Fabio Marzocca"
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:34
+msgid "<year>2006</year> <holder>Fabio Marzocca</holder>"
+msgstr "<year>2006</year> <holder>Фабіо Марцокка</holder>"
 
-#: C/baobab.xml:43(publishername) C/baobab.xml:53(orgname)
-#: C/baobab.xml:88(para)
+#. (itstool) path: publisher/publishername
+#. (itstool) path: revdescription/para
+#: C/index.docbook:47 C/index.docbook:103
 msgid "MATE Documentation Project"
-msgstr "Проект документування MATE"
+msgstr "Проєкт документування MATE"
 
-#: C/baobab.xml:2(para)
+#. (itstool) path: publisher/publishername
+#. (itstool) path: revdescription/para
+#: C/index.docbook:50 C/index.docbook:113
+msgid "GNOME Documentation Project"
+msgstr "Проєкт документації GNOME"
+
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:2
 msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
-"of the GFDL at this <ulink type=\"help\" url=\"help:fdl\">link</ulink> or "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
+" of the GFDL at this <ulink type=\"help\" url=\"help:fdl\">link</ulink> or "
 "in the file COPYING-DOCS distributed with this manual."
 msgstr ""
-"Дозволяється копіювати, розповсюджувати та/або змінювати цей документ на "
+"Дозволяється копіювати, розповсюджувати і/або змінювати цей документ на "
 "умовах ліцензії GNU Free Documentation License (GFDL), версії 1.1 або будь-"
-"якої старшої версії, що опублікована Free Software Foundation без "
-"інваріантних розділів, тексту титульної сторінки, та тексту фінальної "
-"сторінки. Копію GFDL можна знайти <ulink type=\"help\" url=\"help:fdl\">за "
-"адресою</ulink> або у файлі COPYING-DOCS, що постачається з цією довідкою."
+"якої пізнішої версії, оголошеній Фундацією вільного програмного забезпечення"
+" (Free Software Foundation), без незмінюваних частин та без текстів на "
+"обкладинках. Ви можете знайти копію ліцензії GFDL за цим <ulink "
+"type=\"help\" url=\"help:fdl\">посиланням</ulink> або у файлі COPYING-DOCS, "
+"розповсюджуваним з цим документом."
 
-#: C/baobab.xml:12(para)
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:12 C/legal.xml:12
 msgid ""
 "This manual is part of a collection of MATE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in "
-"section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in"
+" section 6 of the license."
 msgstr ""
-"Ця довідка є частиною збірки документації з MATE, що постачається на умовах "
-"ліцензії GFDL. Якщо ви бажаєте розповсюджувати цю довідку окремо від збірки, "
-"можете це зробити додавши до довідки копію ліцензії, як описано у пункті 6 "
-"ліцензії."
+"Цей посібник є частиною збірки документації MATE, яка розповсюджується на "
+"умовах ліцензії GFDL. Якщо ви бажаєте розповсюджувати цей посібник окремо "
+"від збірки, можете це зробити додавши до нього копію ліцензії, як описано в "
+"пункті 6 ліцензії."
 
-#: C/baobab.xml:19(para)
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:19 C/legal.xml:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
 "services are claimed as trademarks. Where those names appear in any MATE "
@@ -135,13 +98,14 @@ msgid ""
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
-"Більшість назв, що використовуються компаніями для розповсюдження їх "
-"продуктів та послуг є торговими марками. Якщо такі назви зустрічаються у "
-"документації з MATE та учасникам проекту документування MATE відомо, що "
-"вони є торговими марками, тоді ці назви пишуться великими літерами або "
+"Деякі назви, які використовуються компаніями для розповсюдження своїх "
+"продуктів та послуг є торговими марками. Якщо такі назви зустрічаються в "
+"документації MATE і учасникам проєкту документування MATE відомо, що вони є "
+"торговими марками, тоді ці назви виділяться великими літерами або "
 "починаються з великої літери."
 
-#: C/baobab.xml:35(para)
+#. (itstool) path: listitem/para
+#: C/index.docbook:35 C/legal.xml:35
 msgid ""
 "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
 "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
@@ -155,30 +119,31 @@ msgid ""
 "ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
 "OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
 msgstr ""
-"ДОКУМЕНТ НАДАЄТЬСЯ \"ЯК Є\", БЕЗ БУДЬ-ЯКИХ ГАРАНТІЇ, ЯВНИХ ЧИ НЕЯВНИХ, "
+"ДОКУМЕНТ НАДАЄТЬСЯ \\\"ЯК Є\\\", БЕЗ БУДЬ-ЯКИХ ГАРАНТІЇ, ЯВНИХ ЧИ НЕЯВНИХ, "
 "ВКЛЮЧАЮЧИ, АЛЕ НЕ ОБМЕЖУЮЧИСЬ, ГАРАНТІЙ ЩО ЦЕЙ ДОКУМЕНТ ЧИ ЗМІНЕНА ВЕРСІЯ "
-"ДОКУМЕНТА ВІЛЬНІ ВІД ДЕФЕКТІВ, ПРИДАТНІ ДО ПРОДАЖУ, ВІДПОВІДАЮТЬ ПЕВНІЙ МЕТІ "
-"АБО НЕ ПОРУШУЮТЬ ЧИЇСЬ ПРАВА. ВЕСЬ РИЗИК ЗА ЯКІСТЬ, ТОЧНІСТЬ, ТА ЧИННІСТЬ "
+"ДОКУМЕНТА ВІЛЬНІ ВІД ДЕФЕКТІВ, ПРИДАТНІ ДО ПРОДАЖУ, ВІДПОВІДАЮТЬ ПЕВНІЙ МЕТІ"
+" АБО НЕ ПОРУШУЮТЬ ЧИЇСЬ ПРАВА. ВЕСЬ РИЗИК ЗА ЯКІСТЬ, ТОЧНІСТЬ, ТА ЧИННІСТЬ "
 "ЦЬОГО ДОКУМЕНТУ АБО ЙОГО ЗМІНЕНИХ ВЕРСІЙ ЛЕЖИТЬ НА ВАС.  ЯКЩО БУДЬ-ЯКИЙ "
 "ДОКУМЕНТ ЧИ ЗМІНЕНА ВЕРСІЯ БУДУТЬ ВИЗНАНІ ДЕФЕКТНИМИ У БУДЬ-ЯКОМУ "
-"ВІДНОШЕННІ, ВИ (НЕ ПОЧАТКОВИЙ УКЛАДАЧ, АВТОР АБО БУДЬ-ЯКИЙ СПІВАВТОР) БЕРЕТЕ "
-"НА СЕБЕ ВИТРАТИ ЗА БУДЬ-ЯКЕ НЕОБХІДНЕ ОБСЛУГОВУВАННЯ, РЕМОНТ ЧИ ВИПРАВЛЕННЯ. "
-"ЦЯ ВІДМОВА ВІД ГАРАНТІЙ СКЛАДАЄ ВАЖЛИВУ ЧАСТИНУ ЦІЄЇ ЛІЦЕНЗІЇ. НЕ "
-"ДОПУСКАЄТЬСЯ ВИКОРИСТАННЯ ЦЬОГО ДОКУМЕНТУ АБО ЙОГО ЗМІНЕНОЇ ВЕРСІЇ БЕЗ "
+"ВІДНОШЕННІ, ВИ (НЕ ПОЧАТКОВИЙ УКЛАДАЧ, АВТОР АБО БУДЬ-ЯКИЙ СПІВАВТОР) БЕРЕТЕ"
+" НА СЕБЕ ВИТРАТИ ЗА БУДЬ-ЯКЕ НЕОБХІДНЕ ОБСЛУГОВУВАННЯ, РЕМОНТ ЧИ "
+"ВИПРАВЛЕННЯ. ЦЯ ВІДМОВА ВІД ГАРАНТІЙ СКЛАДАЄ ВАЖЛИВУ ЧАСТИНУ ЦІЄЇ ЛІЦЕНЗІЇ. "
+"НЕ ДОПУСКАЄТЬСЯ ВИКОРИСТАННЯ ЦЬОГО ДОКУМЕНТУ АБО ЙОГО ЗМІНЕНОЇ ВЕРСІЇ БЕЗ "
 "ПРИЙНЯТТЯ ЦІЄЇ ВІДМОВИ; ТА"
 
-#: C/baobab.xml:55(para)
+#. (itstool) path: listitem/para
+#: C/index.docbook:55 C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
-"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
+" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
-"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
-"POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
+" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
+" POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "НІ ЗА ЯКИХ ОБСТАВИН ТА ЗА БУДЬ-ЯКОГО ЗАКОНОДАВСТВА, ЧИ ТО ГРОМАДЯНСЬКОЇ "
 "ВІДПОВІДАЛЬНОСТІ (ВКЛЮЧАЮЧИ ХАЛАТНІСТЬ), ДОГОВОРУ, ЧИ ЧОГОСЬ ІНШОГО, АВТОР, "
@@ -186,503 +151,598 @@ msgstr ""
 "ЗМІНЕНОЇ ВЕРСІЇ ДОКУМЕНТУ, АБО БУДЬ-ЯКИЙ ПОСТАЧАЛЬНИК БУДЬ-ЯКОЇ З ЦИХ "
 "СТОРІН, НЕ НЕСЕ ВІДПОВІДАЛЬНІСТЬ ПЕРЕД БУДЬ-ЯКОЮ ОСОБОЮ ЗА БУДЬ-ЯКІ ПРЯМІ, "
 "НЕПРЯМІ, ОСОБЛИВІ, ВИПАДКОВІ, АБО ІСТОТНІ ЗБИТКИ БУДЬ-ЯКОГО ХАРАКТЕРУ "
-"ВКЛЮЧАЮЧИ, АЛЕ НЕ ОБМЕЖУЮЧИСЬ, ЗБИТКАМИ ВІД ВТРАТИ ПРЕСТИЖУ, ЗУПИНКИ РОБОТИ, "
-"ЗБОЇВ АБО НЕСПРАВНОСТЕЙ КОМП'ЮТЕРА, АБО БУДЬ-ЯКІ ІНШІ ЗБИТКИ АБО ВТРАТИ ЩО "
+"ВКЛЮЧАЮЧИ, АЛЕ НЕ ОБМЕЖУЮЧИСЬ, ЗБИТКАМИ ВІД ВТРАТИ ПРЕСТИЖУ, ЗУПИНКИ РОБОТИ,"
+" ЗБОЇВ АБО НЕСПРАВНОСТЕЙ КОМП'ЮТЕРА, АБО БУДЬ-ЯКІ ІНШІ ЗБИТКИ АБО ВТРАТИ ЩО "
 "ВИНИКЛИ БЕЗВІДНОСНО АБО ВНАСЛІДОК ВИКОРИСТАННЯ ЦЬОГО ДОКУМЕНТУ ТА ЗМІНЕНИХ "
-"ВЕРСІЙ ЦЬОГО ДОКУМЕНТУ, НАВІТЬ ЯКЩО ЦІ СТОРОНИ, МОЖЛИВО, БУЛИ ПРОІНФОРМОВАНІ "
-"ПРО МОЖЛИВІСТЬ ТАКИХ ЗБИТКІВ."
+"ВЕРСІЙ ЦЬОГО ДОКУМЕНТУ, НАВІТЬ ЯКЩО ЦІ СТОРОНИ, МОЖЛИВО, БУЛИ ПРОІНФОРМОВАНІ"
+" ПРО МОЖЛИВІСТЬ ТАКИХ ЗБИТКІВ."
 
-#: C/baobab.xml:28(para)
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:28 C/legal.xml:28
 msgid ""
 "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
 "OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
-"<placeholder-1/>"
+"<_:orderedlist-1/>"
 msgstr ""
-"ДОКУМЕНТ ТА ЗМІНЕНІ ВЕРСІЇ ЦЬОГО ДОКУМЕНТУ ПОСТАЧАЮТЬСЯ НА УМОВАХ ВІЛЬНОЇ "
-"ЛІЦЕНЗІЇ ДЛЯ ДОКУМЕНТАЦІЇ GNU З ПОДАЛЬШИМ РОЗУМІННЯМ ЩО: <placeholder-1/>"
+"ДОКУМЕНТ Й ЗМІНЕНІ ВЕРСІЇ ДОКУМЕНТУ НАДАЮТЬСЯ ЗА УМОВАМИ ЛІЦЕНЗІЇ "
+"БЕЗКОШТОВНОЇ ДОКУМЕНТАЦІЇ GNU З РОЗУМІННЯМ ЩО: <_:orderedlist-1/>"
 
-#: C/baobab.xml:50(firstname) C/baobab.xml:59(firstname)
-msgid "Fabio"
-msgstr "Fabio"
+#. (itstool) path: authorgroup/author
+#: C/index.docbook:56
+msgid ""
+"<surname>MATE-Dokumentationsteam</surname> <affiliation> <orgname>Mate "
+"desktop</orgname> </affiliation>"
+msgstr ""
 
-#: C/baobab.xml:51(surname) C/baobab.xml:60(surname)
-msgid "Marzocca"
-msgstr "Marzocca"
+#. (itstool) path: authorgroup/author
+#: C/index.docbook:62
+msgid ""
+"<firstname>Fabio</firstname> <surname>Marzocca</surname> <affiliation> "
+"<orgname>GNOME Documentation Project</orgname> <address> "
+"<email>thesaltydog@gmail.com</email> </address> </affiliation>"
+msgstr ""
+"<firstname>Фабіо</firstname> <surname>Марцокка</surname> <affiliation> "
+"<orgname>Проєкт документування GNOME</orgname> <address> "
+"<email>thesaltydog@gmail.com</email> </address> </affiliation>"
 
-#: C/baobab.xml:54(email) C/baobab.xml:62(email)
-msgid "thesaltydog@gmail.com"
-msgstr "thesaltydog@gmail.com"
+#. (itstool) path: authorgroup/author
+#: C/index.docbook:71
+msgid ""
+"<firstname>Fabio</firstname> <surname>Marzocca</surname> <affiliation> "
+"<address><email>thesaltydog@gmail.com</email></address> </affiliation>"
+msgstr ""
+"<firstname>Фабіо</firstname> <surname>Марцокка</surname> <affiliation> "
+"<address><email>thesaltydog@gmail.com</email></address> </affiliation>"
 
-#: C/baobab.xml:82(revnumber)
-msgid "Disk Usage Analyzer Manual 1.0"
-msgstr "Посібник з аналізатору використання диску 1.0"
+#. (itstool) path: revdescription/para
+#: C/index.docbook:101
+msgid "Wolfgang Ulbrich"
+msgstr "Вольфґанґ Ульбріх"
 
-#: C/baobab.xml:83(date)
-msgid "April 2006"
-msgstr "Квітень 2006"
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:97
+msgid ""
+"<revnumber>Disk Usage Analyzer Manual 1.10</revnumber> <date>July "
+"2015</date> <_:revdescription-1/>"
+msgstr ""
 
-#: C/baobab.xml:85(para)
+#. (itstool) path: revdescription/para
+#: C/index.docbook:110
 msgid "Emmanuele Bassi <email>ebassi@gmail.com</email>"
-msgstr "Emmanuele Bassi <email>ebassi@gmail.com</email>"
+msgstr "Емануель Бассі <email>ebassi@gmail.com</email>"
 
-#: C/baobab.xml:93(releaseinfo)
-msgid "This manual describes version 2.15 of Disk Usage Analyzer."
-msgstr "У довідці описується аналізатор використання диску версії 2.15."
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:106
+msgid ""
+"<revnumber>Disk Usage Analyzer Manual 1.0</revnumber> <date>April "
+"2006</date> <_:revdescription-1/>"
+msgstr ""
 
-#: C/baobab.xml:96(title)
+#. (itstool) path: articleinfo/releaseinfo
+#: C/index.docbook:118
+msgid "This manual describes version 1.10 of Disk Usage Analyzer."
+msgstr ""
+
+#. (itstool) path: legalnotice/title
+#: C/index.docbook:121
 msgid "Feedback"
 msgstr "Зворотній зв'язок"
 
-#: C/baobab.xml:97(para)
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:122
 msgid ""
 "To report a bug or make a suggestion regarding the Disk Usage Analyzer "
-"application or this manual, follow the directions in the <ulink url=\"help:"
-"mate-feedback\" type=\"help\">MATE Feedback Page</ulink>."
+"application or this manual, follow the directions in the <ulink url=\"help"
+":mate-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
 msgstr ""
-"Щоб сповістити про помилку або внести пропозицію відносно аналізатора "
-"використання диск чи цієї довідки, слідуйте інструкціям на сторінці <ulink "
-"url=\"help:mate-feedback\" type=\"help\">Зворотний зв'язок з MATE</ulink>."
 
-#: C/baobab.xml:106(primary)
-msgid "Disk Usage Analyser"
-msgstr "Аналізатор використання диску"
+#. (itstool) path: article/indexterm
+#: C/index.docbook:130
+msgid "<primary>Disk Usage Analyzer</primary>"
+msgstr "<primary>Аналізатор використання дисків</primary>"
 
-#: C/baobab.xml:113(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:138
 msgid "Introduction"
 msgstr "Вступ"
 
-#: C/baobab.xml:115(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:140
 msgid ""
 "<application>Disk Usage Analyzer</application> is a graphical, menu-driven "
-"application to analyse disk usage in any Mate environment. "
-"<application>Disk Usage Analyzer</application> can easily scan either the "
-"whole filesystem tree, or a specific user-requested directory branch (local "
-"or remote)."
+"application to analyze disk usage in any Mate environment. <application>Disk"
+" Usage Analyzer</application> can easily scan either the whole filesystem "
+"tree, or a specific user-requested directory branch (local or remote)."
 msgstr ""
-"<application>Аналізатор використання диску</application> - графічна програма "
-"аналізу використання у будь-якому у оточенні Mate. <application>Аналізатор "
-"використання диску</application> може сканувати або всю файлову систему, або "
-"вказані користувачем каталоги (локальні чи віддалені)."
 
-#: C/baobab.xml:119(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:144
 msgid ""
-"It also auto-detects in real-time any changes made to your home directory as "
-"far as any mounted/unmounted device. <application>Disk Usage Analyzer</"
-"application> also provides a full graphical treemap window for each selected "
-"folder."
+"It also auto-detects in real-time any changes made to your home directory as"
+" far as any mounted/unmounted device. <application>Disk Usage "
+"Analyzer</application> also provides a full graphical treemap window for "
+"each selected folder."
 msgstr ""
-"Він також автоматично визначає будь-які зміни в вашому домашньому каталозі, "
-"а також на змонтованих пристроях. <application>Аналізатор використання "
-"диску</application> також відображає графічне дерево для кожноо виділеного "
-"каталогу."
 
-#: C/baobab.xml:128(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:153
 msgid "Getting Started"
 msgstr "Початок роботи"
 
-#: C/baobab.xml:130(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:155
 msgid ""
 "<application>Disk Usage Analyzer</application> can be started in three ways:"
 msgstr ""
-"<application>Аналізатор використання диску</application> можна запустити "
-"трьома способами:"
 
-#: C/baobab.xml:132(para)
+#. (itstool) path: listitem/para
+#: C/index.docbook:157
 msgid ""
-"from Mate menu <menuchoice><guimenu>Applications</"
-"guimenu><guimenuitem>Accessories</guimenuitem></menuchoice>;"
+"from Mate menu "
+"<menuchoice><guimenu>Applications</guimenu><guimenuitem>Accessories</guimenuitem></menuchoice>;"
 msgstr ""
-"У меню <guimenu>Програми</guimenu> <menuchoice><guimenu>Стандартні</"
-"guimenu></menuchoice>."
 
-#: C/baobab.xml:134(para)
+#. (itstool) path: listitem/para
+#: C/index.docbook:159
 msgid "from a terminal window;"
-msgstr "У вікні терміналу;"
+msgstr ""
 
-#: C/baobab.xml:136(para)
+#. (itstool) path: listitem/para
+#: C/index.docbook:161
 msgid "from Caja \"Open with...\" ;"
-msgstr "з меню \"Відкрити у програмі...\" у файловому менеджері;"
+msgstr ""
 
-#: C/baobab.xml:141(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:166
 msgid ""
 "If you want to start <application>Disk Usage Analyzer</application> from a "
 "terminal window, just type:"
 msgstr ""
-"Якщо ви бажаєте запустити <application>Аналізатор використання диску</"
-"application> з вікна терміналу, введіть:"
 
-#: C/baobab.xml:143(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:168
 msgid ""
 "<command>baobab &lt;full_path_to_a_directory&gt;</command>, then press "
 "<keycap>Return</keycap>."
 msgstr ""
-"<command>baobab &lt;повний_шлях_до_каталогу&gt;</command>, потім натисніть "
-"<keycap>Enter</keycap>."
 
-#: C/baobab.xml:145(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:170
 msgid ""
 "If launched from Mate menu, <application>Disk Usage Analyzer</application> "
 "starts and remains in a stand-by state, waiting for user action."
 msgstr ""
-"Якщо <application>Аналізатор використання диску</application> запущений з "
-"меню Mate,  він запускається та залишається у очікувати команд користувача."
 
-#: C/baobab.xml:146(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:171
 msgid ""
 "When you start <application>Disk Usage Analyzer</application> from the Mate "
 "Menu, the following window is displayed."
 msgstr ""
-"Коли ви запускаєте  <application>Аналізатор використання диску</application> "
-"з меню Mate, відображається наступне вікно."
 
-#: C/baobab.xml:150(title)
+#. (itstool) path: figure/title
+#: C/index.docbook:175
 msgid "Disk Usage Analyzer Window"
-msgstr "Вікно аналізатор використання диску"
-
-#: C/baobab.xml:157(phrase)
-msgid ""
-"Shows Disk Usage Analyzer main window. Contains menubar, display area, "
-"scrollbars, and statusbar."
 msgstr ""
-"Показане головне вікно аналізатора використання диску. Містить панель меню, "
-"область відображення, смуги прокрутки та рядок стану."
 
-#. ==== End of Figure ====
-#: C/baobab.xml:164(para)
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:179
+msgctxt "_"
+msgid ""
+"external ref='figures/baobab_window.png' "
+"md5='100896a46f48130752a9d88ac516fa3a'"
+msgstr ""
+"external ref='figures/baobab_window.png' "
+"md5='100896a46f48130752a9d88ac516fa3a'"
+
+#. (itstool) path: screenshot/mediaobject
+#: C/index.docbook:177
+msgid ""
+"<imageobject> <imagedata fileref=\"figures/baobab_window.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows Disk Usage "
+"Analyzer main window. Contains menubar, display area, scrollbars, and "
+"statusbar. </phrase> </textobject>"
+msgstr ""
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:189
 msgid "The user can then:"
-msgstr "Потім користувач може:"
-
-#: C/baobab.xml:166(para)
-msgid "start a full filesystem scan;"
-msgstr "запустити повне сканування файлової системи;"
-
-#: C/baobab.xml:168(para)
-msgid "select a specific local directory branch to scan"
-msgstr "вибрати певний локальний каталог для сканування"
-
-#: C/baobab.xml:170(para)
-msgid "select a remote server and folder to scan"
-msgstr "вибрати віддалений сервер чи теку для сканування"
-
-#: C/baobab.xml:172(para)
-msgid "set preferences"
-msgstr "встановити параметри"
-
-#: C/baobab.xml:176(para)
-msgid ""
-"If you run a full filesystem scan, <application>Disk Usage Analyzer</"
-"application> window will start drawing the tree as soon as the thread starts "
-"scanning the filesystem. If any large partition is mounted on the "
-"filesystem, that will be scanned too."
 msgstr ""
-"Якщо ви запустили повне сканування файлової системи, у вікні "
-"<application>Аналізатор використання диску</application> відображатиметься "
-"дерево. Якщо у файловій системі підключений великий розділ диску, він також "
-"буде сканований."
 
-#: C/baobab.xml:186(title)
+#. (itstool) path: listitem/para
+#: C/index.docbook:191
+msgid "start a full filesystem scan;"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:193
+msgid "select a specific local directory branch to scan"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:195
+msgid "select a remote server and folder to scan"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:197
+msgid "set preferences"
+msgstr ""
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:207
 msgid "Usage"
 msgstr "Використання"
 
-#: C/baobab.xml:189(title)
+#. (itstool) path: sect2/title
+#: C/index.docbook:210
 msgid "Full filesystem scan"
-msgstr "Сканувати усієї файлової системи"
-
-#: C/baobab.xml:190(para)
-msgid ""
-"To start a full filesystem scan select <menuchoice><guimenu>Analyzer</"
-"guimenu><guimenuitem>Scan Filesystem</guimenuitem></menuchoice> from the "
-"menu, or press on the <guibutton>Scan Filesystem</guibutton> toolbar button."
 msgstr ""
-"Для запуску повної файлової системи виберіть меню "
-"<menuchoice><guimenu>Аналізатор</guimenu><guimenuitem>Сканувати файлову "
-"систему</guimenuitem></menuchoice>, або натисніть кнопку "
-"<guibutton>Сканувати файлову систему</guibutton> на панелі інструментів."
 
-#: C/baobab.xml:193(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:211
+msgid ""
+"To start a full filesystem scan select "
+"<menuchoice><guimenu>Analyzer</guimenu><guimenuitem>Scan "
+"Filesystem</guimenuitem></menuchoice> from the menu, or press on the "
+"<guibutton>Scan Filesystem</guibutton> toolbar button."
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:214
 msgid ""
 "When the scanning process ends up, you will get the full tree of your "
 "filesystem, like the one in the next Figure."
 msgstr ""
-"Коли сканування закінчується, ви отримаєте повне дерево файлової системи, як "
-"показано на наступному малюнку."
 
-#: C/baobab.xml:198(title)
+#. (itstool) path: figure/title
+#: C/index.docbook:219
 msgid "Disk Usage Analyzer Full filesystem scan"
-msgstr "Повне сканування файлової системи"
-
-#: C/baobab.xml:205(phrase)
-msgid ""
-"Shows Disk Usage Analyzer full filesystem scan window. Contains menubar, "
-"display area, scrollbars, and statusbar."
 msgstr ""
-"Показано повне сканування аналізатором використання диску. Містить панель "
-"меню, область відображення, смуги прокрутки та рядок стану."
 
-#: C/baobab.xml:212(para)
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:223
+msgctxt "_"
 msgid ""
-"When you run a full filesystem scan, <application>Disk Usage Analyzer</"
-"application> window will start drawing the tree as soon as the thread starts "
-"scanning the filesystem. If any large partition is mounted on the "
-"filesystem, that will be scanned too."
+"external ref='figures/baobab_fullscan.png' "
+"md5='17895f3407c9282a55a324642fd20e0b'"
 msgstr ""
-"Коли ви запускаєте повне сканування файлової системи, у вікні "
-"<application>Аналізатор використання диску</application> відображатиметься "
-"дерево файлової системи. Якщо у файловій системі підключений великий розділ "
-"диску, він також буде сканований."
+"external ref='figures/baobab_fullscan.png' "
+"md5='17895f3407c9282a55a324642fd20e0b'"
 
-#: C/baobab.xml:217(para)
+#. (itstool) path: screenshot/mediaobject
+#: C/index.docbook:221
+msgid ""
+"<imageobject> <imagedata fileref=\"figures/baobab_fullscan.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows Disk Usage "
+"Analyzer full filesystem scan window. Contains menubar, display area, "
+"scrollbars, and statusbar. </phrase> </textobject>"
+msgstr ""
+
+#. (itstool) path: note/para
+#: C/index.docbook:233
+msgid ""
+"When you run a full filesystem scan, <application>Disk Usage "
+"Analyzer</application> window will start drawing the tree as soon as the "
+"thread starts scanning the filesystem. If any large partition is mounted on "
+"the filesystem, that will be scanned too."
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:238
 msgid ""
 "<application>Disk Usage Analyzer</application> will display sizes in the "
-"directory tree as allocated space. This means that the displayed sizes refer "
-"to the actual disk usage and not to the apparent directory size. If you want "
-"to view the apparent file size, uncheck <menuchoice><guimenu>View</"
-"guimenu><guimenuitem>Allocated Space</guimenuitem></menuchoice> ."
+"directory tree as allocated space. This means that the displayed sizes refer"
+" to the actual disk usage and not to the apparent directory size. If you "
+"want to view the apparent file size, uncheck "
+"<menuchoice><guimenu>View</guimenu><guimenuitem>Allocated "
+"Space</guimenuitem></menuchoice> ."
 msgstr ""
-"<application>Аналізатор використання диску</application> відображатиме "
-"розмір зайнятого деревом простору. Це означає, що розміри показують  "
-"справжнє використання диску, а не простір зайнятий каталогом. Якщо ви хочете "
-"бачити простір зайнятий каталогом простір, зніміть позначку з "
-"<menuchoice><guimenu>Вигляд</guimenu><guimenuitem>Зайнятий простір</"
-"guimenuitem></menuchoice> ."
 
-#: C/baobab.xml:222(para)
+#. (itstool) path: warning/para
+#: C/index.docbook:243
 msgid ""
-"<application>Disk Usage Analyzer</application> will not count the /proc dir, "
-"nor any file size that is not related to a \"plain\" file, so symlinks, "
+"<application>Disk Usage Analyzer</application> will not count the /proc dir,"
+" nor any file size that is not related to a \"plain\" file, so symlinks, "
 "character blocks, device blocks will not be part of the directory size."
 msgstr ""
-"<application>Аналізатор використання диску</application> не сканує каталог /"
-"proc, а також не враховує розміні типів файлів, відмінних від \"звичайних\" "
-"файлів, наприклад, символічних посилань, символьних чи блочних пристроїв."
 
-#: C/baobab.xml:226(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:247
 msgid ""
-"Hard-links are managed in a different way: this first hardlink is counted as "
-"a normal file, while the subsequent links to the same inode device are not "
-"counted in the total, but highlighted in the right-hand column of the window."
+"Hard-links are managed in a different way: this first hardlink is counted as"
+" a normal file, while the subsequent links to the same inode device are not "
+"counted in the total, but highlighted in the right-hand column of the "
+"window."
 msgstr ""
-"Жорсткі посилання обробляються іншим чином: першае жорске посилання "
-"вважається звичайним файлом, а наступні посилання на той самий inode не "
-"враховуються у загальній сумі, але виводяться у правому стовпчику вікна."
 
-#: C/baobab.xml:233(title)
+#. (itstool) path: sect2/title
+#: C/index.docbook:254
 msgid "Single folder scan"
-msgstr "Сканувати вибрану теку"
-
-#: C/baobab.xml:235(para)
-msgid ""
-"To start a single folder scan select <menuchoice><guimenu>Analyzer</"
-"guimenu><guimenuitem>Scan Folder...</guimenuitem></menuchoice> from the "
-"menu, or press on the <guibutton>Scan Folder</guibutton> toolbar button."
 msgstr ""
-"Для запуску сканування одного каталогу виберіть к меню "
-"<menuchoice><guimenu>Аналізатор</guimenu><guimenuitem>Сканувати вибрану "
-"теку...</guimenuitem></menuchoice>, або натисніть на кнопку "
-"<guibutton>Сканувати теку</guibutton>  у панелі інструментів."
 
-#: C/baobab.xml:242(title)
+#. (itstool) path: sect2/para
+#: C/index.docbook:256
+msgid ""
+"To start a single folder scan select "
+"<menuchoice><guimenu>Analyzer</guimenu><guimenuitem>Scan "
+"Folder...</guimenuitem></menuchoice> from the menu, or press on the "
+"<guibutton>Scan Folder</guibutton> toolbar button."
+msgstr ""
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:263
 msgid "Remote scan"
-msgstr "Сканувати віддалену теку"
+msgstr ""
 
-#: C/baobab.xml:244(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:265
 msgid ""
 "If you need to scan a remote server-folder, just click on the toolbar icon "
 "<guibutton>Scan Remote Folder</guibutton> or select "
-"<menuchoice><guimenu>Analyzer</guimenu><guimenuitem>Scan Remote Folder</"
-"guimenuitem></menuchoice> from the menu and you will get the following "
-"dialog box. <application>Disk Usage Analyzer</application> can connect to a "
-"server through ssh, ftp, smb, http and https."
+"<menuchoice><guimenu>Analyzer</guimenu><guimenuitem>Scan Remote "
+"Folder</guimenuitem></menuchoice> from the menu and you will get the "
+"following dialog box. <application>Disk Usage Analyzer</application> can "
+"connect to a server through ssh, ftp, smb, http and https."
 msgstr ""
-"Якщо потрібно сканувати віддалену теку на сервері, просто натисніть на "
-"значку <guibutton>Сканувати віддалену теку</guibutton> у панелі інструментів "
-"або виберіть меню <menuchoice><guimenu>Аналізатор</"
-"guimenu><guimenuitem>Сканувати віддалену теку</guimenuitem></menuchoice>, "
-"з'явиться наступне діалогове вікно. <application>Аналізатор використання "
-"диску</application> може з'єднуватись з сервером через ssh, ftp, smb, http "
-"та https."
 
-#: C/baobab.xml:251(title)
+#. (itstool) path: figure/title
+#: C/index.docbook:272
 msgid "Disk Usage Analyzer Remote folder scan"
-msgstr "Сканування віддаленої теки аналізатором використання диску"
-
-#: C/baobab.xml:258(phrase)
-msgid "Shows Disk Usage Analyzer remote folder dialog window."
 msgstr ""
-"Показано вікно сканування віддаленої теки аналізатором використання диску."
 
-#: C/baobab.xml:272(title)
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:276
+msgctxt "_"
+msgid ""
+"external ref='figures/baobab_remote.png' "
+"md5='b11c5d1001dfbab2628df824a2660643'"
+msgstr ""
+"external ref='figures/baobab_remote.png' "
+"md5='b11c5d1001dfbab2628df824a2660643'"
+
+#. (itstool) path: screenshot/mediaobject
+#: C/index.docbook:274
+msgid ""
+"<imageobject> <imagedata fileref=\"figures/baobab_remote.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows Disk Usage "
+"Analyzer remote folder dialog window. </phrase> </textobject>"
+msgstr ""
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:293
 msgid "Preferences"
 msgstr "Параметри"
 
-#: C/baobab.xml:274(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:295
 msgid ""
 "To change the <application>Disk Usage Analyzer</application> application "
-"preferences, choose <menuchoice><guimenu>Edit</"
-"guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>."
+"preferences, choose "
+"<menuchoice><guimenu>Edit</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>."
 msgstr ""
-"Щоб змінити параметри програми <application>Аналізатор використання диску</"
-"application>, виберіть <menuchoice><guimenu>Правка</"
-"guimenu><guimenuitem>Параметри</guimenuitem></menuchoice>."
 
-#: C/baobab.xml:279(title)
+#. (itstool) path: figure/title
+#: C/index.docbook:300
 msgid "Disk Usage Analyzer Preferences Window"
-msgstr "Вікно параметрів аналізатора використання диску"
+msgstr ""
 
-#: C/baobab.xml:286(phrase)
-msgid "Preferences window"
-msgstr "Вікно параметрів"
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:304
+msgctxt "_"
+msgid ""
+"external ref='figures/baobab_prefs.png' "
+"md5='94dbb42d65cc8c32e50ac87bf9932811'"
+msgstr ""
+"external ref='figures/baobab_prefs.png' "
+"md5='94dbb42d65cc8c32e50ac87bf9932811'"
 
-#: C/baobab.xml:294(title)
+#. (itstool) path: screenshot/mediaobject
+#: C/index.docbook:302
+msgid ""
+"<imageobject> <imagedata fileref=\"figures/baobab_prefs.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Preferences window "
+"</phrase> </textobject>"
+msgstr ""
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:315
 msgid "Select devices to be scanned"
-msgstr "Вибір пристрою для сканування"
+msgstr "Виберіть пристрої для сканування"
 
-#: C/baobab.xml:295(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:316
 msgid ""
 "In the first part of the Preferences window, all detected mounted devices "
 "are listed. Click on the checkbox to include/exclude the partition into the "
 "filesystem scanning operations."
 msgstr ""
-"У першій частині вікна параметрів перераховані усі виявлені підключені "
-"файлові системи пристроїв. Для включення/виключення розділу диску у процес "
-"сканування натисніть на полі з відміткою."
 
-#: C/baobab.xml:298(para)
+#. (itstool) path: note/para
+#: C/index.docbook:319
 msgid "The device mounted on \"/\" cannot be excluded from the scan."
-msgstr "Пристрій, що підключений у \"/\", не можна виключити зі скасування."
+msgstr ""
 
-#: C/baobab.xml:302(title)
+#. (itstool) path: sect2/title
+#: C/index.docbook:323
 msgid "Enable monitoring of home"
-msgstr "Увімкнути контроль домашнього каталогу"
+msgstr "Увімкнути спостереження за домашнім каталогом"
 
-#: C/baobab.xml:303(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:324
 msgid ""
 "If this option is checked, <application>Disk Usage Analyzer</application> "
 "will constantly monitor any external changes to home directory and warn the "
 "user if a file is added/removed."
 msgstr ""
-"Якщо відмічений цей параметр, <application>Аналізатор використання диску</"
-"application> буде постійно стежити за зовнішніми змінами у домашньому "
-"каталозі та попереджувати про додавання/видалення файлів у домашньому "
-"каталозі."
 
-#: C/baobab.xml:311(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:332
 msgid "Treemaps"
-msgstr "Мапа-дерево"
-
-#: C/baobab.xml:313(para)
-msgid ""
-"<guilabel>Treemap</guilabel> concepts have been developed by Ben Shneiderman "
-"in the '90s. Read his <ulink type=\"http\" url=\"http://www.cs.umd.edu/hcil/"
-"treemap-history/index.shtml\">vision on treemaps</ulink>."
 msgstr ""
-"Концепцію <guilabel>мапи-дерева</guilabel> винайшов Ben Shneiderman у 90-х "
-"роках. Прочитайте його <ulink type=\"http\" url=\"http://www.cs.umd.edu/hcil/"
-"treemap-history/index.shtml\">бачення мапи-дерева</ulink>."
 
-#: C/baobab.xml:318(title)
-msgid "Disk Usage Analyzer Treemap Window"
-msgstr "Вікно мапи-дерева аналізатора використання диску"
-
-#: C/baobab.xml:325(phrase)
-msgid "Treemap's theory. Shows 2 treemap diagrams"
-msgstr "Теорія мапи-дерева. Показано 2 діаграми мапи-дерева"
-
-#. ==== End of Figure ====
-#: C/baobab.xml:333(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:334
 msgid ""
-"Figure shows an example of treemap's theory. Each node (as shown in the tree "
-"diagram) has a name (a letter) and an associated size (a number). The size "
+"<guilabel>Treemap</guilabel> concepts have been developed by Ben Shneiderman"
+" in the '90s. Read his <ulink type=\"http\" url=\"http://www.cs.umd.edu/hcil"
+"/treemap-history/index.shtml\">vision on treemaps</ulink>."
+msgstr ""
+
+#. (itstool) path: figure/title
+#: C/index.docbook:339
+msgid "Disk Usage Analyzer Treemap Window"
+msgstr ""
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:343
+msgctxt "_"
+msgid ""
+"external ref='figures/baobab_treemaps.png' "
+"md5='b553b49db25f9d6b98efcc394a5d3689'"
+msgstr ""
+"external ref='figures/baobab_treemaps.png' "
+"md5='b553b49db25f9d6b98efcc394a5d3689'"
+
+#. (itstool) path: screenshot/mediaobject
+#: C/index.docbook:341
+msgid ""
+"<imageobject> <imagedata fileref=\"figures/baobab_treemaps.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Treemap's theory. Shows"
+" 2 treemap diagrams </phrase> </textobject>"
+msgstr ""
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:354
+msgid ""
+"Figure shows an example of treemap's theory. Each node (as shown in the tree"
+" diagram) has a name (a letter) and an associated size (a number). The size "
 "of leaves may represent for instance the size of individual files, the size "
 "of non-leaf nodes is the sum of the sizes of its children."
 msgstr ""
-"На малюнку показано приклад теорії мапи-дерева. Кожен вузол (як показано на "
-"діаграмі дерева) має назву (літера) та зв'язаний з ним розмір (число). "
-"Розмір листків може представляти наприклад, розмір окремих файлів, розмір "
-"вузлів не-листків - є сумою розмірів його нащадків."
 
-#: C/baobab.xml:338(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:359
 msgid ""
 "The treemap is constructed via recursive subdivision of the initial "
 "rectangle. The size of each sub-rectangle corresponds to the size of the "
-"node. The direction of subdivision alternates per level: first horizontally, "
-"next vertically, etcetera. As a result, the initial rectangle is partitioned "
-"into smaller rectangles, such that the size of each rectangle reflects the "
-"size of the leaf. The structure of the tree is also reflected in the "
-"treemap, as a result of its construction. Color and annotation can be used "
-"to give extra information about the leaves."
+"node. The direction of subdivision alternates per level: first horizontally,"
+" next vertically, etcetera. As a result, the initial rectangle is "
+"partitioned into smaller rectangles, such that the size of each rectangle "
+"reflects the size of the leaf. The structure of the tree is also reflected "
+"in the treemap, as a result of its construction. Color and annotation can be"
+" used to give extra information about the leaves."
 msgstr ""
-"Мапа-дерево конструюється рекурсивним діленням початкового прямокутника. "
-"Розмір кожної частини прямокутника відповідає розміру вузла. Напрямок поділу "
-"чергується через рівень: спочатку вздовж горизонталі, потім вздовж "
-"вертикалі, тощо. Як наслідок, початковий прямокутник ділиться на менші "
-"прямокутники, таким чином розмір прямокутника відображає розмір листка. Як "
-"наслідок конструювання, структура дерева також відображається мапу-дерево. "
-"Для надання додаткової інформації про листя можуть використовуватись кольори "
-"та анотації."
 
-#: C/baobab.xml:347(para)
+#. (itstool) path: note/para
+#: C/index.docbook:368
 msgid ""
 "Treemaps are very effective when size is the most important feature to be "
 "displayed."
-msgstr "Мапа-дерево дуже ефективна для відображення розміру."
+msgstr ""
 
-#: C/baobab.xml:353(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:374
 msgid "Ringschart"
-msgstr "Кругова діаграма"
+msgstr ""
 
-#: C/baobab.xml:355(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:376
 msgid ""
 "<guilabel>Ringschart</guilabel> is a graphical representation of the disk "
 "usage by a concrete folder. When launching the application, it is notified "
 "the usage of the file system as it can be seen in the next figure:"
 msgstr ""
-"<guilabel>Кругова діаграма</guilabel> - графічне представлення використання "
-"диску конкретними теками. Під час запуску програми, програма сповіщається "
-"про використання файлової системи, як видно на наступному малюнку:"
 
-#: C/baobab.xml:362(title)
+#. (itstool) path: figure/title
+#: C/index.docbook:383
 msgid "Disk Usage Analyzer showing a ringschart with the file system usage"
 msgstr ""
-"Аналізатор використання диску показує кутову діаграму використання файлової "
-"системи"
 
-#: C/baobab.xml:369(phrase)
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:387
+msgctxt "_"
 msgid ""
-"After launching the application, it is showed the file system usage. "
-"Graphical representation on the right."
+"external ref='figures/baobab_ringschart1.png' "
+"md5='84b2e52d360fbda7311ce59a9532be7a'"
 msgstr ""
-"Після запуску програми, показується використання файлової системи. Графічне "
-"представлення праворуч."
+"external ref='figures/baobab_ringschart1.png' "
+"md5='84b2e52d360fbda7311ce59a9532be7a'"
 
-#. ==== End of Figure ====
-#: C/baobab.xml:377(para)
+#. (itstool) path: screenshot/mediaobject
+#: C/index.docbook:385
+msgid ""
+"<imageobject> <imagedata fileref=\"figures/baobab_ringschart1.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>After launching the "
+"application, it is showed the file system usage. Graphical representation on"
+" the right. </phrase> </textobject>"
+msgstr ""
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:398
 msgid ""
 "When you start scanning a folder, the tree of subfolders is created and "
 "listed on the left side. Each row contains information for the name, how "
 "much space it is taking up (percentage and size in KB, MB or GB) and the "
 "number of items (adding files and directories). When this process ends up, "
 "the <guilabel>Ringschart</guilabel> is drawn on the right side. If you stop "
-"it before it has been completed, only a partial representation is done based "
-"on the directories whose usage was computed."
+"it before it has been completed, only a partial representation is done based"
+" on the directories whose usage was computed."
 msgstr ""
-"При скануванні тек у лівій частині створюється дерево підтек. Кожен рядок "
-"містить інформацію про ім'я, зайнятий простір (відсоток та розмір у кБ, МБ "
-"чи ГБ) та кількість елементів (файлів та тек). Коли процес закінчується, "
-"праворуч показується <guilabel>Кругова діаграма</guilabel>. Якщо ви зупините "
-"сканування до його завершення, виводиться лише часткове представлення на "
-"основі просканованих каталогів."
 
-#: C/baobab.xml:390(title)
+#. (itstool) path: figure/title
+#: C/index.docbook:411
 msgid "Disk Usage Analyzer showing a ringschart with the usage of a folder"
-msgstr "Аналізатор диску показує кругову діаграму використання тек"
+msgstr ""
 
-#: C/baobab.xml:397(phrase)
-msgid "After scanning a folder."
-msgstr "Після сканування."
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:415
+msgctxt "_"
+msgid ""
+"external ref='figures/baobab_ringschart2.png' "
+"md5='d938ef7e9299de5b304c7654bf14e364'"
+msgstr ""
+"external ref='figures/baobab_ringschart2.png' "
+"md5='d938ef7e9299de5b304c7654bf14e364'"
 
-#. ==== End of Figure ====
-#: C/baobab.xml:404(para)
+#. (itstool) path: screenshot/mediaobject
+#: C/index.docbook:413
+msgid ""
+"<imageobject> <imagedata fileref=\"figures/baobab_ringschart2.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>After scanning a "
+"folder. </phrase> </textobject>"
+msgstr ""
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:425
 msgid ""
 "The <guilabel>Ringschart</guilabel> is composed of a set of nested rings "
 "around a central circle. This circle symbolizes the root folder of the "
@@ -692,69 +752,61 @@ msgid ""
 "the tree correspond to outer rings in the chart. Each subfolder is "
 "represented by a sector of the ring, its angle being proportional to the "
 "size of the folder's contents, and painted with a different color to ease "
-"visualization. Up to five levels can be drawn; in case that a folder in that "
-"last fifth level contains even more subfolders, this situation will be "
+"visualization. Up to five levels can be drawn; in case that a folder in that"
+" last fifth level contains even more subfolders, this situation will be "
 "pointed by the presence of a black curve close to the edge of that folder's "
 "ring sector. When a folder with no further subfolders is selected to be the "
 "root of the partial tree, only the inner circle will be drawn. When the "
 "mouse pointer hovers one of the folders in the graphic, it will be "
-"highlighted and a tooltip will appears with information about its name and "
-"size. If there are any subfolders, small grey tooltips will appear, "
+"highlighted and a tooltip will appear with information about its name and "
+"size. If there are any subfolders, small gray tooltips will appear, "
 "indicating their names. It's possible that not all of the subfolders' names "
 "are displayed, to avoid overlappings."
 msgstr ""
-"<guilabel>Кругова діаграма</guilabel> складається за набору вкладених кілець "
-"навколо центрального кільця. Це кільце символізує кореневу теку часткового "
-"дерева (тобто, теку яку користувач обрав для сканування). Кожне кільце "
-"представляє рівень у частковому дереві, наприклад, підтеки кореневої теки "
-"будуть у першому кільці, а глибші рівні дерева відповідають зовнішнім "
-"кільцям діаграми. Кожна підтека представлена сектором кільця, його кут "
-"пропорційний розміру вмісту теки, і виводиться різним кольором для спрощення "
-"візуалізації. Виводяться до 5 рівнів; якщо 5-й рівень ще містить вкладені "
-"каталог, він позначається чорною дугою на межі сектора цієї теки. Коли тека "
-"без підтек вибрана коренем часткового дерева, показується лице внутрішнє "
-"коло. Коли вказівник миші вказує на одну з тек у графіку, вона виділяється "
-"кольором та показується підказка з її назвою та розміром. Якщо вона містить "
-"підтеки, виводиться невеликі сірі підказки, з їх іменами. Можуть виводитись "
-"назви не усіх підтек, для уникання перекриття."
 
-#: C/baobab.xml:425(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:446
 msgid ""
-"You can go up and down the rows in the list (optionally expanding those with "
-"subfolders), the graphic representation will change using the selected "
+"You can go up and down the rows in the list (optionally expanding those with"
+" subfolders), the graphic representation will change using the selected "
 "folder as the root of the partial tree to be represented. The folders can "
 "also be navigated from the <guilabel>ringschart</guilabel> itself. If you "
-"click with the left button of your mouse inside a folder, you'll move deeper "
-"by setting the root of the graphic to that folder. If you press the middle "
+"click with the left button of your mouse inside a folder, you'll move deeper"
+" by setting the root of the graphic to that folder. If you press the middle "
 "button (no matter the place as long as you click inside the "
-"<guilabel>ringschart</guilabel> frame) you'll get the opposite behaviour, "
+"<guilabel>ringschart</guilabel> frame) you'll get the opposite behavior, "
 "going back one step in the hierarchy."
 msgstr ""
-"Можна переходити вгору та вниз у списку (необов'язково, розкриваючи "
-"підтеки), графічне представлення буде змінюватись відповідно до обраної "
-"коренем часткового дерева теки. По текам також можна переходити за допомогою "
-"<guilabel>кругової діаграми</guilabel>. Якщо ви клацаєте лівою кнопкою миші "
-"всередині теки, ви переходите вглиб встановлюючи коренем графіку цю теку. "
-"Якщо натискаєте середню кнопку миші (незалежно від того, як довго ви клацали "
-"і переходили всередину  <guilabel>кругової діаграми</guilabel> frame), ви "
-"рухаєтесь у зворотному напрямку по ієрархії."
 
-#: C/baobab.xml:436(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:457
 msgid ""
 "The percentage of its parent's radius that is used by a given folder is "
-"directly proportional to the relation between it's own size and its "
-"parent's. It's easy to understand that the size of a folder is equal or "
-"smaller than its parent's. Although only directories are shown in this "
-"graphical representation, files are taken into account to calculate the "
-"amount of space occupied by folders."
+"directly proportional to the relation between its own size and its parent's."
+" It's easy to understand that the size of a folder is equal or smaller than "
+"its parent's. Although only directories are shown in this graphical "
+"representation, files are taken into account to calculate the amount of "
+"space occupied by folders."
 msgstr ""
-"Відсоток батьківського радіусу, що використовується будь-якою текою прямо "
-"пропорційний відношенню між її власним розміром та батьківським. Просто "
-"зрозуміти, що розмір теки дорівнює або менший за її батьківську. Хоча, у "
-"графічному представленні показуються лише каталоги, файли також "
-"враховуються .при обчисленні зайнятого простору."
 
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
-#: C/baobab.xml:0(None)
-msgid "translator-credits"
-msgstr "Максим Дзюманенко <dziumanenko@gmail.com>"
+#. (itstool) path: para/ulink
+#: C/legal.xml:9
+msgid "link"
+msgstr "посилання"
+
+#. (itstool) path: legalnotice/para
+#: C/legal.xml:2
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
+" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"with this manual."
+msgstr ""
+"Дозволяється копіювати, розповсюджувати і / або змінювати цей документ у "
+"відповідности з умовами ліцензії GNU Free Documentation License (GFDL), "
+"версії 1.1 або будь-якої пізнішої версії, оголошеній Фундацією вільного "
+"програмного забезпечення без будь-яких інваріянтних розділів, без додавання "
+"тексту на початку або в кінці. Ви можете знайти копію GFDL тут <_:ulink-1/> "
+"або у файлі COPYING-DOCS, розповсюджуваному разом з цим керівництвом."
