@@ -10,7 +10,7 @@ gsettings_SCHEMAS = $(gsettingsschema_in_files:.xml.in=.xml)
 @GSETTINGS_RULES@
 
 @INTLTOOL_XML_RULE@
-appdatadir = $(datadir)/appdata
+appdatadir = $(datadir)/metainfo
 appdata_in_files = mate-search-tool.appdata.xml.in
 appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 

@@ -57,7 +57,7 @@ ui_DATA += dictionary-applet-menu.xml
 endif # BUILD_GDICT_APPLET
 
 @INTLTOOL_XML_RULE@
-appdatadir = $(datadir)/appdata
+appdatadir = $(datadir)/metainfo
 appdata_in_files = mate-dictionary.appdata.xml.in
 appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 
