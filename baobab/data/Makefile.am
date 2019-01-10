@@ -13,7 +13,7 @@ $(baobabapp_in_files): $(baobabapp_in_files:.desktop.in=.desktop.in.in)
 
 
 @INTLTOOL_XML_RULE@
-appdatadir = $(datadir)/appdata
+appdatadir = $(datadir)/metainfo
 appdata_in_files = mate-disk-usage-analyzer.appdata.xml.in
 appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 
