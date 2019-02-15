@@ -1,13 +1,13 @@
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# Joe Hansen <joedalton2@yahoo.dk>, 2018
+# Joe Hansen <joedalton2@yahoo.dk>, 2019
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "POT-Creation-Date: 2018-10-05 15:24+0200\n"
 "PO-Revision-Date: 2018-09-13 10:15+0000\n"
-"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>, 2018\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>, 2019\n"
 "Language-Team: Danish (https://www.transifex.com/mate/teams/13566/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -595,11 +595,14 @@ msgid ""
 "device from which you want <application>Search for Files</application> to "
 "begin the search."
 msgstr ""
+"I feltet <guilabel>Se i mappe</guilabel>, vælg mappen eller enheden hvorfra "
+"du ønsker at <application>Søg efter filer</application> skal begynde "
+"søgningen."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:336
 msgid "Click <guibutton>Find</guibutton> to perform the search."
-msgstr ""
+msgstr "Klik <guibutton>Søg</guibutton> for at udføre søgningen."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:339
@@ -612,6 +615,12 @@ msgid ""
 "the application displays the message \"No files found\" in the "
 "<guilabel>Search results</guilabel> list box."
 msgstr ""
+"<application>Søg efter filer</application> søger i den mappe du angiver og "
+"undermapperne for mappen.  <application>Søg efter filer</application> viser "
+"resultatet af søgningen i boksen <guilabel>Søgeresultater</guilabel>. Hvis "
+"<application>Søg efter filer</application> ikke finder nogle filer, der "
+"matcher søgekriterierne, så viser programmet beskeden »Ingen filer fundet« i"
+" boksen <guilabel>Søgeresultater</guilabel>."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:343
@@ -626,11 +635,20 @@ msgid ""
 "search. To update the database, run the command <command>updatedb</command> "
 "as the root user."
 msgstr ""
+"Som standard vil <application>Søg efter filer</application> udføre en hurtig"
+" søgning via kommandoen <command>locate</command> efterfulgt af en mere "
+"grundig søgning via kommandoen <command>find</command>. Kommandoen "
+"<command>locate</command> er hurtigere da den brugere en database med "
+"information om filer. Hvis denne database er mere end en uge gammel, kan "
+"<application>Søg efter filer</application> advare dig om at søgeresultaterne"
+" kan være forældede og give dig mulighed for at deaktivere hurtig søgning. "
+"For at opdatere databasen, kør kommandoen <command>updatedb</command> som "
+"administrator."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:347
 msgid "To Add Search Options"
-msgstr ""
+msgstr "For at tilføje søgeindstillinger"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:348
@@ -644,12 +662,13 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:350
 msgid "Click on the <guilabel>Select more options</guilabel> text."
-msgstr ""
+msgstr "Klik på teksten <guilabel>Vælg flere indstillinger</guilabel>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:351
 msgid "Click on the <guilabel>Available options</guilabel> drop-down list."
 msgstr ""
+"Klik på rullegardinet <guilabel>Tilgængelige indstillinger</guilabel>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:352
@@ -667,6 +686,8 @@ msgid ""
 "Specify the required search information for the search option, as described "
 "in <xref linkend=\"tbl-search-rules\"/>."
 msgstr ""
+"Angiv den krævede søgeinformation for søgeindstillingen, som beskrevet i "
+"<xref linkend=\"tbl-search-rules\"/>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:355
@@ -680,6 +701,8 @@ msgid ""
 "To remove a search option from the current search, click on the "
 "<guibutton>Remove</guibutton> button next to the option."
 msgstr ""
+"For at fjerne en søgeindstilling fra den nuværende søgning, klik på knappen "
+"<guibutton>Fjern</guibutton> ved siden af indstillingen."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:358
@@ -698,7 +721,7 @@ msgstr "Søgeindstillinger"
 #. (itstool) path: entry/para
 #: C/index.docbook:368
 msgid "Option Name"
-msgstr ""
+msgstr "Navn på indstilling"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:370
@@ -908,6 +931,8 @@ msgid ""
 "To open a file displayed in the <guilabel>Search results</guilabel> list "
 "box, perform one of the following steps:"
 msgstr ""
+"For at åbne en fil vist i boksen med <guilabel>Søgeresultater</guilabel>, "
+"udfør en af de følgende trin:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:474
@@ -926,6 +951,9 @@ msgid ""
 "results</guilabel> list box, right-click on the file, then choose "
 "<guimenuitem>Open Containing Folder</guimenuitem>."
 msgstr ""
+"For at åbne mappen der indeholder en fil vist i listeboksen "
+"<guilabel>Søgeresultater</guilabel>, højreklik på filen, vælg så "
+"<guimenuitem>Åbn indeholdende mappe</guimenuitem>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:481
@@ -956,6 +984,11 @@ msgid ""
 "As</guimenuitem>. Enter the name of the file to which you want to save the "
 "results, then click Save."
 msgstr ""
+"For at gemme resultaterne for den sidste søgning som <application>Søg efter "
+"filer</application> udførte, højreklik i listen "
+"<guilabel>Søgeresultater</guilabel>, vælg så <guimenuitem>Gem resultater "
+"som</guimenuitem>. Indtast navnet på filen du ønsker at gemme resultaterne i"
+" og klik på Gem."
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:502
@@ -969,6 +1002,10 @@ msgid ""
 "modify some of its behavior. The gsettings values can be changed by starting"
 " the <application>Configuration Editor</application> in the following ways:"
 msgstr ""
+"<application>Søg efter filer</application> tilbyder gsettings-nøgler til at "
+"ændre noget af opførelsen. Gsettings-værdierne kan ændres ved at starte "
+"<application>Konfigurationsredigeringsprogrammet</application> på de "
+"følgende måder:"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:508
@@ -981,6 +1018,8 @@ msgid ""
 "Choose <menuchoice><guisubmenu>System Tools</guisubmenu><guimenuitem>dconf "
 "Editor</guimenuitem></menuchoice>."
 msgstr ""
+"Vælg <menuchoice><guisubmenu>Systemværktøjer</guisubmenu><guimenuitem>dconf-"
+"redigeringsprogram</guimenuitem></menuchoice>."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:514
@@ -1005,7 +1044,7 @@ msgstr "Key name: org.mate.search-tool.disable-quick-search"
 #. (itstool) path: sect2/para
 #: C/index.docbook:524 C/index.docbook:531 C/index.docbook:552
 msgid "Default value: false"
-msgstr ""
+msgstr "Standardværdi: false (falsk)"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:525
@@ -1016,6 +1055,12 @@ msgid ""
 "<command>locate</command> relies on a file index, the <guilabel>Search "
 "results</guilabel> list may not always be up to date."
 msgstr ""
+"<application>Søg efter filer</application> øger hastigheden på "
+"filnavnssøgning ved at bruge kommandoen <command>locate</command>. "
+"<command>Locate</command> tilbyder en sikker metode til at indeksere og "
+"hurtig søge efter filnavne. Da <command>locate</command> afhænger af et "
+"filindeks, er listen med <guilabel>Søgeresultater</guilabel> ikke altid "
+"opdateret."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:529
@@ -1066,6 +1111,10 @@ msgid ""
 "use the <command>find</command> command. The wildcards '*' and '?' are "
 "supported."
 msgstr ""
+"<application>Søg efter filer</application> vil ikke udføre en hurtig søgning"
+" for stier defineret af denne nøgle.  Søgninger efter filnavne i de "
+"definerede stier vil bruge kommandoen <command>find</command>. Jokertegnene "
+"»*« og »?« er understøttet."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:543
@@ -1091,6 +1140,11 @@ msgid ""
 "the defined paths will not be followed by a thorough search using the "
 "<command>find</command> command. The wildcards '*' and '?' are supported."
 msgstr ""
+"<application>Søg efter filer</application> vil ikke udføre en sekundær "
+"skanning efter en hurtig søgning for stierne defineret af denne nøgle. "
+"Hurtigsøgninger i de definerede stier vil ikke blive fulgt af en grundig "
+"søgning via kommandoen <command>find</command>. Jokertegnene »*« og »?« er "
+"understøttet."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:550

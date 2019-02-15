@@ -1,13 +1,13 @@
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# Joe Hansen <joedalton2@yahoo.dk>, 2018
+# Joe Hansen <joedalton2@yahoo.dk>, 2019
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "POT-Creation-Date: 2018-10-05 15:24+0200\n"
 "PO-Revision-Date: 2018-09-13 09:22+0000\n"
-"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>, 2018\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>, 2019\n"
 "Language-Team: Danish (https://www.transifex.com/mate/teams/13566/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -430,6 +430,10 @@ msgid ""
 "Filesystem</guimenuitem></menuchoice> from the menu, or press on the "
 "<guibutton>Scan Filesystem</guibutton> toolbar button."
 msgstr ""
+"For at starte en fuld filsystemskanning vælg "
+"<menuchoice><guimenu>Analyseprogram</guimenu><guimenuitem>Skan "
+"filsystem</guimenuitem></menuchoice> fra menuen, eller tryk på "
+"værktøjslinjeknappen <guibutton>Skan filsystemfilsystem</guibutton>."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:214
@@ -467,6 +471,10 @@ msgid ""
 "Analyzer full filesystem scan window. Contains menubar, display area, "
 "scrollbars, and statusbar. </phrase> </textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"figures/baobab_fullscan.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Viser "
+"Diskanalyseforbrugs vindue for fuld filsystemskanning. Indeholder menulinje,"
+" visningsområde, rullebjælker og statuslinje. </phrase> </textobject>"
 
 #. (itstool) path: note/para
 #: C/index.docbook:233
@@ -476,6 +484,10 @@ msgid ""
 "thread starts scanning the filesystem. If any large partition is mounted on "
 "the filesystem, that will be scanned too."
 msgstr ""
+"Når du afvikler en fuld filsystemskanning vil "
+"<application>Diskanalyseforbrugs</application> vindue starte tegning af "
+"træet så snart at tråden starter skanning af filsystemet. Hvis en stor "
+"partition er monteret  på filsystemet, vil den også blive skannet."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:238
@@ -487,6 +499,12 @@ msgid ""
 "<menuchoice><guimenu>View</guimenu><guimenuitem>Allocated "
 "Space</guimenuitem></menuchoice> ."
 msgstr ""
+"<application>Diskforbrugsanalyse</application> vil vise størrelser i "
+"mappetræet som allokeret plads. Dette betyder at de viste størrelser "
+"refererer til det faktiske diskforbrug og ikke til den tilsyneladende "
+"mappestørrelse. Hvis du ønsker at vise den tilsyneladende filstørrelse, så "
+"fjern kryds fra <menuchoice><guimenu>Vis</guimenu><guimenuitem>Allokeret "
+"plads</guimenuitem></menuchoice> ."
 
 #. (itstool) path: warning/para
 #: C/index.docbook:243
@@ -508,6 +526,10 @@ msgid ""
 "counted in the total, but highlighted in the right-hand column of the "
 "window."
 msgstr ""
+"Hårde henvisninger håndteres på en anden måde: Den første hårde henvisning "
+"opfattes som en normal fil, mens de efterfølgende henvisninger til den samme"
+" iknudeenhed ikke medtages i totalen, men fremhæves i kolonnen til højre i "
+"vinduet."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:254
@@ -542,6 +564,12 @@ msgid ""
 "following dialog box. <application>Disk Usage Analyzer</application> can "
 "connect to a server through ssh, ftp, smb, http and https."
 msgstr ""
+"Hvis du har brug for at skanne en ekstern servermappe, så klik bare på "
+"værktøjslinjens ikon <guibutton>Skan ekstern mappe</guibutton> eller vælg "
+"<menuchoice><guimenu>Analyseprogram</guimenu><guimenuitem>Skan ekstern "
+"mappe</guimenuitem></menuchoice> fra menuen og du får den følgende "
+"dialogboks. <application>Diskforbrugsanalyse</application> kan forbinde til "
+"en server via ssh, ftp, smb, http og https."
 
 #. (itstool) path: figure/title
 #: C/index.docbook:272
@@ -699,6 +727,9 @@ msgid ""
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Treemap's theory. Shows"
 " 2 treemap diagrams </phrase> </textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"figures/baobab_treemaps.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Treemaps teori. Viser 2"
+" trækortsdiagrammer </phrase> </textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:354
@@ -708,6 +739,11 @@ msgid ""
 "of leaves may represent for instance the size of individual files, the size "
 "of non-leaf nodes is the sum of the sizes of its children."
 msgstr ""
+"Figur viser et eksempel på trækorts teori. Hver knude (som vist i "
+"trædiagrammet) har et navn (et bogstav) og en associeret størrelse (et tal)."
+" Størrelsen på bladene kan for eksempel repræsentere størrelsen på "
+"individuelle filer, størrelsen på knuder, der ikke er blade, er summen på "
+"størrelsen for dens undermapper."
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:359
@@ -721,6 +757,14 @@ msgid ""
 "in the treemap, as a result of its construction. Color and annotation can be"
 " used to give extra information about the leaves."
 msgstr ""
+"Trækortet er konstrueret via rekursiv underopdeling af den oprindelige "
+"rektangel. Størrelsen på hver underrektangel svarer til størrelsen på "
+"knuden. Retningen af underopdelingssuppleanter per niveau: første vandret, "
+"næste lodret, etcetera. Som resultat er den oprindelige rektangel opdelt i "
+"mindre rektangler, sådan at størrelsen af hver rektangel afspejler "
+"størrelsen på bladet. Strukturen på træet er også afspejlet i trækortet, som"
+" et resultat af dets konstruktion. Farve og annotation kan bruges til at "
+"give ekstra information om bladene."
 
 #. (itstool) path: note/para
 #: C/index.docbook:368
@@ -728,11 +772,13 @@ msgid ""
 "Treemaps are very effective when size is the most important feature to be "
 "displayed."
 msgstr ""
+"Trækort er meget effektive når størrelse er den vigtigste funktion, der skal"
+" vises."
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:374
 msgid "Ringschart"
-msgstr ""
+msgstr "Ringdiagram"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:376
@@ -741,11 +787,14 @@ msgid ""
 "usage by a concrete folder. When launching the application, it is notified "
 "the usage of the file system as it can be seen in the next figure:"
 msgstr ""
+"<guilabel>Ringdiagram</guilabel> er en grafisk repræsentation af "
+"diskforbruget i en konkret mappe. Når programmet startes får det besked om "
+"brugen af filsystemet, som det kan ses i den næste figur:"
 
 #. (itstool) path: figure/title
 #: C/index.docbook:383
 msgid "Disk Usage Analyzer showing a ringschart with the file system usage"
-msgstr ""
+msgstr "Diskanalyseforbrug viser et ringdiagram med filsystemforbruget"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -769,6 +818,10 @@ msgid ""
 "application, it is showed the file system usage. Graphical representation on"
 " the right. </phrase> </textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"figures/baobab_ringschart1.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Efter opstart af "
+"programmet vises filsystemts brug. Grafisk repræsentation til højre. "
+"</phrase> </textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:398
@@ -781,11 +834,18 @@ msgid ""
 "it before it has been completed, only a partial representation is done based"
 " on the directories whose usage was computed."
 msgstr ""
+"Når du starter med at skanne en mappe så oprettes træet med undermapper og "
+"vises på den venstre side. Hver række indeholder information om navnet, hvor"
+" meget plads, der er brugt (procent og størrelse i KB, MB eller GB) og "
+"antallet af elementer (filer og mapper). Når denne proces er færdig tegnes "
+"<guilabel>Ringdiagrammet</guilabel> på den højre side. Hvis stopper før det "
+"er færdigt, så udføres kun en delvis repræsentation baseret på de mapper, "
+"hvis forbrug blev beregnet."
 
 #. (itstool) path: figure/title
 #: C/index.docbook:411
 msgid "Disk Usage Analyzer showing a ringschart with the usage of a folder"
-msgstr ""
+msgstr "Diskforbrugsanalyse viser et ringdiagram med brugen af en mappe"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -834,6 +894,24 @@ msgid ""
 "indicating their names. It's possible that not all of the subfolders' names "
 "are displayed, to avoid overlappings."
 msgstr ""
+"<guilabel>Ringdiagrammet</guilabel> består af et sæt af indlejrede ringe "
+"omkring en central cirkel. Denne cirkel symboliserer rodmappen for det "
+"delvise træ (dvs. mappen som brugeren har valgt for skanning). Hver ring "
+"repræsenterer et niveau i det delvise træ, så dvs. undermapperne for "
+"rodmappen vil blive repræsenteret i den første ring, og dybere niveauer i "
+"træet svarer til de ydre ringe i diagrammet. Hver undermappe repræsenteres "
+"af en sektor af ringen, dens vikel er proportionel med størrelsen på mappens"
+" indhold, og tegnet med en anden farve for at gøre visualiseringen "
+"tydeligere. Op til fem niveauer kan tegnes; i tilfælde af at en mappe i det "
+"sidste femte niveau har flere undermapper, så vil denne situation blive "
+"markeret med tilstedeværelsen af en sort kurve tæt på kanten af den mappes "
+"ringsektor. Når en mappe uden yderligere undermapper vælges som rod for det "
+"delvise træ, så vil kun den indre cirkel blive tegnet. Når musemarkøren "
+"bevæges over en af mapperne i grafikken, vil den blive fremhævet og et "
+"værktøjsfif vises med information om dens navn og størrelse. Hvis der er "
+"undermapper, så vil små grå værktøjsfif blive vist, indikerende deres navne."
+" Det er muligt, at ikke alle undermappernes navne bliver vist for at undgå "
+"overlap."
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:446
@@ -848,6 +926,14 @@ msgid ""
 "<guilabel>ringschart</guilabel> frame) you'll get the opposite behavior, "
 "going back one step in the hierarchy."
 msgstr ""
+"Du kan gå op og ned i rækkerne i listen (og valgfrit udvide dem med "
+"undermapper), den grafiske repræsentation vil ændre sig med den valgte mappe"
+" som rod for det delvise træ. Mapperne kan også navigeres fra selve "
+"<guilabel>ringdiagrammet</guilabel>. Hvis du klikker på den venstre knap på "
+"musen inden i en mappe, så går du dybere ved at sætte roden for grafikken "
+"til den mappe. Hvis du trykker på den midterste knap (uanset sted så længe "
+"du klikker inden i rammen for <guilabel>ringdiagrammet</guilabel>), så vil "
+"du få den modsatte opførelse, du går et trin tilbage i hierarkiet."
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:457
@@ -859,6 +945,12 @@ msgid ""
 "representation, files are taken into account to calculate the amount of "
 "space occupied by folders."
 msgstr ""
+"Procenten for overmappens radius, som bruges af en given mappe, er direkte "
+"proportionel med relationen mellem sin egen størrelse og overmappernes. Det "
+"er nemt at forstå, at størrelsen på en mappe svarer til eller er mindre end "
+"overmappernes. Selvom kun mapper vises i den grafiske repræsentation, så "
+"bliver der taget højde for filer i beregningen af mængden af plads optaget "
+"af mapper."
 
 #. (itstool) path: para/ulink
 #: C/legal.xml:9
