@@ -53,8 +53,6 @@ gdict_show_about_dialog (GtkWidget *parent)
   };
 
   const gchar *translator_credits = _("translator-credits");
-  const gchar *copyright = "Copyright \xc2\xa9 2005-2006 Emmanuele Bassi\n"
-                           "Copyright \xc2\xa9 2011-2018 MATE developers";
   const gchar *comments = _("Look up words in dictionaries");
   
   const gchar *license =
@@ -78,7 +76,8 @@ gdict_show_about_dialog (GtkWidget *parent)
   gtk_show_about_dialog (GTK_IS_WINDOW (parent) ? GTK_WINDOW (parent) : NULL,
   			 "name", _("Dictionary"),
   			 "version", VERSION,
-  			 "copyright", copyright,
+			 "copyright", _("Copyright \xc2\xa9 2005-2006 Emmanuele Bassi\n"
+			                "Copyright \xc2\xa9 2011-2019 MATE developers"),
   			 "comments", comments,
   			 "authors", authors,
   			 "documenters", documenters,
