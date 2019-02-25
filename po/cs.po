@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-25 12:31+0100\n"
+"POT-Creation-Date: 2019-02-16 17:18+0100\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
 "Last-Translator: ToMáš Marný, 2019\n"
 "Language-Team: Czech (https://www.transifex.com/mate/teams/13566/cs/)\n"
@@ -246,12 +246,12 @@ msgstr "dostupné:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:242 ../baobab/src/baobab.c:299
-#: ../baobab/src/callbacks.c:259
+#: ../baobab/src/callbacks.c:257
 msgid "Calculating percentage bars..."
 msgstr "Vypočítávají se procenta…"
 
 #: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
-#: ../baobab/src/callbacks.c:263
+#: ../baobab/src/callbacks.c:261
 msgid "Ready"
 msgstr "Hotovo"
 
@@ -597,12 +597,18 @@ msgstr ""
 " pokud se tak nestalo, napište si o ni Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
-#: ../baobab/src/callbacks.c:98
+#: ../baobab/src/callbacks.c:95
 msgid "A graphical tool to analyze disk usage."
 msgstr "Grafický nástroj pro analýzu využití disku."
 
+#: ../baobab/src/callbacks.c:97
+msgid ""
+"Copyright © 2005-2010 Fabio Marzocca\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
+
 #. translator credits
-#: ../baobab/src/callbacks.c:104 ../logview/src/logview-about.h:63
+#: ../baobab/src/callbacks.c:102 ../logview/src/logview-about.h:63
 #: ../mate-dictionary/src/gdict-about.c:55
 msgid "translator-credits"
 msgstr ""
@@ -615,13 +621,13 @@ msgstr ""
 "Petr Kovář <pknbe@volny.cz>\n"
 "Roman Horník <roman.hornik@debian-linux.cz>"
 
-#: ../baobab/src/callbacks.c:202
+#: ../baobab/src/callbacks.c:200
 #: ../gsearchtool/src/gsearchtool-callbacks.c:514
 #: ../gsearchtool/src/gsearchtool-callbacks.c:864
 msgid "The document does not exist."
 msgstr "Dokument neexistuje."
 
-#: ../baobab/src/callbacks.c:283
+#: ../baobab/src/callbacks.c:281
 msgid "The folder does not exist."
 msgstr "Složka neexistuje."
 
@@ -924,31 +930,31 @@ msgstr "Nelze předat URI dokumentu položce .desktop „Type=Link“"
 msgid "Not a launchable item"
 msgstr "Nespustitelná položka"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:225
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:221
 msgid "Disable connection to session manager"
 msgstr "Vypnout spojení se správcem sezení"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:224
 msgid "Specify file containing saved configuration"
 msgstr "Stanovit soubor obsahující uloženou konfiguraci"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:224
 msgid "FILE"
 msgstr "SOUBOR"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:227
 msgid "Specify session management ID"
 msgstr "Stanovit ID Správy sezení"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:227
 msgid "ID"
 msgstr "ID"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:252
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:248
 msgid "Session management options:"
 msgstr "Možnosti Správy sezení:"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:253
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:249
 msgid "Show session management options"
 msgstr "Zobrazit možnosti Správy sezení"
 
@@ -1827,6 +1833,12 @@ msgstr "Zabalený"
 msgid "Not found"
 msgstr "Nenalezeno"
 
+#: ../logview/src/logview-window.c:769
+msgid ""
+"Copyright © 1998-2008 Free Software Foundation, Inc.\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
+
 #: ../logview/src/logview-window.c:773
 msgid "A system log viewer for MATE."
 msgstr "Prohlížeč systémových protokolů pro MATE."
@@ -2418,17 +2430,23 @@ msgstr "Volby GDict"
 msgid "Show GDict Options"
 msgstr "Zobrazit nastavení GDict"
 
-#: ../mate-dictionary/src/gdict-about.c:58
+#: ../mate-dictionary/src/gdict-about.c:56
 #: ../mate-dictionary/src/gdict-applet.c:589
 msgid "Look up words in dictionaries"
 msgstr "Hledat slova ve slovnících"
 
-#: ../mate-dictionary/src/gdict-about.c:79
+#: ../mate-dictionary/src/gdict-about.c:77
 #: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:607
 #: ../mate-dictionary/src/gdict-window.c:1896
 msgid "Dictionary"
 msgstr "Slovník"
+
+#: ../mate-dictionary/src/gdict-about.c:79
+msgid ""
+"Copyright © 2005-2006 Emmanuele Bassi\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please

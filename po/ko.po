@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-25 12:31+0100\n"
+"POT-Creation-Date: 2019-02-16 17:18+0100\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
 "Last-Translator: 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2018\n"
 "Language-Team: Korean (https://www.transifex.com/mate/teams/13566/ko/)\n"
@@ -238,12 +238,12 @@ msgstr "사용 가능:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:242 ../baobab/src/baobab.c:299
-#: ../baobab/src/callbacks.c:259
+#: ../baobab/src/callbacks.c:257
 msgid "Calculating percentage bars..."
 msgstr "퍼센트 표시 계산하는 중..."
 
 #: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
-#: ../baobab/src/callbacks.c:263
+#: ../baobab/src/callbacks.c:261
 msgid "Ready"
 msgstr "준비"
 
@@ -583,12 +583,18 @@ msgstr ""
 "Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  "
 "02110-1301, USA"
 
-#: ../baobab/src/callbacks.c:98
+#: ../baobab/src/callbacks.c:95
 msgid "A graphical tool to analyze disk usage."
 msgstr "디스크 사용량을 분석하는 그래픽 도구."
 
+#: ../baobab/src/callbacks.c:97
+msgid ""
+"Copyright © 2005-2010 Fabio Marzocca\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
+
 #. translator credits
-#: ../baobab/src/callbacks.c:104 ../logview/src/logview-about.h:63
+#: ../baobab/src/callbacks.c:102 ../logview/src/logview-about.h:63
 #: ../mate-dictionary/src/gdict-about.c:55
 msgid "translator-credits"
 msgstr ""
@@ -599,13 +605,13 @@ msgstr ""
 "Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "MATE Desktop Environment Team <https://www.transifex.com/mate/teams/13566/ko/>"
 
-#: ../baobab/src/callbacks.c:202
+#: ../baobab/src/callbacks.c:200
 #: ../gsearchtool/src/gsearchtool-callbacks.c:514
 #: ../gsearchtool/src/gsearchtool-callbacks.c:864
 msgid "The document does not exist."
 msgstr "해당 문서가 없습니다."
 
-#: ../baobab/src/callbacks.c:283
+#: ../baobab/src/callbacks.c:281
 msgid "The folder does not exist."
 msgstr "폴더가 없습니다."
 
@@ -865,31 +871,31 @@ msgstr "문서 URI는 'Type=Link' desktop 항목에 넘길 수 없습니다"
 msgid "Not a launchable item"
 msgstr "실행할 수 있는 항목이 없습니다"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:225
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:221
 msgid "Disable connection to session manager"
 msgstr "세션 관리자에 연결하지 않습니다"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:224
 msgid "Specify file containing saved configuration"
 msgstr "설정을 저장할 파일을 지정합니다"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:224
 msgid "FILE"
 msgstr "<파일>"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:227
 msgid "Specify session management ID"
 msgstr "세션 관리 ID를 지정합니다"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:227
 msgid "ID"
 msgstr "ID"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:252
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:248
 msgid "Session management options:"
 msgstr "세션 관리 옵션:"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:253
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:249
 msgid "Show session management options"
 msgstr "세션 관리 옵션을 표시합니다"
 
@@ -1738,6 +1744,12 @@ msgstr "반대쪽부터 다시 찾음"
 msgid "Not found"
 msgstr "없음"
 
+#: ../logview/src/logview-window.c:769
+msgid ""
+"Copyright © 1998-2008 Free Software Foundation, Inc.\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
+
 #: ../logview/src/logview-window.c:773
 msgid "A system log viewer for MATE."
 msgstr "그놈 시스템 로그 보기 프로그램."
@@ -2321,17 +2333,23 @@ msgstr "그놈 사전 옵션"
 msgid "Show GDict Options"
 msgstr "그놈 사전 옵션 보기"
 
-#: ../mate-dictionary/src/gdict-about.c:58
+#: ../mate-dictionary/src/gdict-about.c:56
 #: ../mate-dictionary/src/gdict-applet.c:589
 msgid "Look up words in dictionaries"
 msgstr "사전에서 단어를 찾습니다"
 
-#: ../mate-dictionary/src/gdict-about.c:79
+#: ../mate-dictionary/src/gdict-about.c:77
 #: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:607
 #: ../mate-dictionary/src/gdict-window.c:1896
 msgid "Dictionary"
 msgstr "사전"
+
+#: ../mate-dictionary/src/gdict-about.c:79
+msgid ""
+"Copyright © 2005-2006 Emmanuele Bassi\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-25 12:31+0100\n"
+"POT-Creation-Date: 2019-02-16 17:18+0100\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
 "Last-Translator: samson <sambelet@yahoo.com>, 2018\n"
 "Language-Team: Amharic (https://www.transifex.com/mate/teams/13566/am/)\n"
@@ -232,12 +232,12 @@ msgstr "ዝግጁ:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:242 ../baobab/src/baobab.c:299
-#: ../baobab/src/callbacks.c:259
+#: ../baobab/src/callbacks.c:257
 msgid "Calculating percentage bars..."
 msgstr "በማስላት ላይ በመቶኛ መደርደሪያ..."
 
 #: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
-#: ../baobab/src/callbacks.c:263
+#: ../baobab/src/callbacks.c:261
 msgid "Ready"
 msgstr "ዝግጁ "
 
@@ -570,23 +570,29 @@ msgid ""
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 msgstr ""
 
-#: ../baobab/src/callbacks.c:98
+#: ../baobab/src/callbacks.c:95
 msgid "A graphical tool to analyze disk usage."
 msgstr "በ ንድፍ መሳሪያ የ ዲስክ አጠቃቀም መመርመሪያ"
 
+#: ../baobab/src/callbacks.c:97
+msgid ""
+"Copyright © 2005-2010 Fabio Marzocca\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
+
 #. translator credits
-#: ../baobab/src/callbacks.c:104 ../logview/src/logview-about.h:63
+#: ../baobab/src/callbacks.c:102 ../logview/src/logview-about.h:63
 #: ../mate-dictionary/src/gdict-about.c:55
 msgid "translator-credits"
 msgstr "Samson-Belete-Belayineh"
 
-#: ../baobab/src/callbacks.c:202
+#: ../baobab/src/callbacks.c:200
 #: ../gsearchtool/src/gsearchtool-callbacks.c:514
 #: ../gsearchtool/src/gsearchtool-callbacks.c:864
 msgid "The document does not exist."
 msgstr "ሰነዱ አልተገኘም "
 
-#: ../baobab/src/callbacks.c:283
+#: ../baobab/src/callbacks.c:281
 msgid "The folder does not exist."
 msgstr "ፎልደሩ አልተገኘም "
 
@@ -855,31 +861,31 @@ msgstr "የ ሰነድ URIs ማለፍ አልተቻለም ወደ የ 'አይነት
 msgid "Not a launchable item"
 msgstr "እቃው የሚጀምር አይነት አይደለም"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:225
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:221
 msgid "Disable connection to session manager"
 msgstr "ከ ክፍለ ጊዜ አስተዳዳሪ ጋር ግንኙነት ማሰናከያ"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:224
 msgid "Specify file containing saved configuration"
 msgstr "የ ተቀመጠውን የ ማሰናጃ ፋይል የያዘውን መወሰኛ"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:224
 msgid "FILE"
 msgstr "ፋይል"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:227
 msgid "Specify session management ID"
 msgstr "የ ክፍለ ጊዜ አስተዳዳሪ ID ይወስኑ "
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:227
 msgid "ID"
 msgstr "መለያ"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:252
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:248
 msgid "Session management options:"
 msgstr "የ ክፍለ ጊዜ አስተዳዳሪ ምርጫ"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:253
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:249
 msgid "Show session management options"
 msgstr "የ ክፍለ ጊዜ አስተዳዳሪ ምርጫ ማሳያ"
 
@@ -1737,6 +1743,12 @@ msgstr "ተጠቅልሏል"
 msgid "Not found"
 msgstr "አልተገኘም "
 
+#: ../logview/src/logview-window.c:769
+msgid ""
+"Copyright © 1998-2008 Free Software Foundation, Inc.\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
+
 #: ../logview/src/logview-window.c:773
 msgid "A system log viewer for MATE."
 msgstr "የ ስርአት መግቢያ መመልከቻ ለ ሜት"
@@ -2317,17 +2329,23 @@ msgstr ""
 msgid "Show GDict Options"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-about.c:58
+#: ../mate-dictionary/src/gdict-about.c:56
 #: ../mate-dictionary/src/gdict-applet.c:589
 msgid "Look up words in dictionaries"
 msgstr "ቃላቶቹን በመዝገበ ቃላቱ ላይ መመልከቻ "
 
-#: ../mate-dictionary/src/gdict-about.c:79
+#: ../mate-dictionary/src/gdict-about.c:77
 #: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:607
 #: ../mate-dictionary/src/gdict-window.c:1896
 msgid "Dictionary"
 msgstr "መዝገበ ቃላት"
+
+#: ../mate-dictionary/src/gdict-about.c:79
+msgid ""
+"Copyright © 2005-2006 Emmanuele Bassi\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please

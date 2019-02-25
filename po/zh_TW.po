@@ -7,17 +7,17 @@
 # Walter Cheuk <wwycheuk@gmail.com>, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
 # 趙惟倫 <bluebat@member.fsf.org>, 2018
-# Jeff Huang <s8321414@gmail.com>, 2018
 # byStarTW (pan93412) <pan93412@gmail.com>, 2018
+# Jeff Huang <s8321414@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-25 12:31+0100\n"
+"POT-Creation-Date: 2019-02-16 17:18+0100\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: byStarTW (pan93412) <pan93412@gmail.com>, 2018\n"
+"Last-Translator: Jeff Huang <s8321414@gmail.com>, 2019\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/mate/teams/13566/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -238,12 +238,12 @@ msgstr "剩餘："
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:242 ../baobab/src/baobab.c:299
-#: ../baobab/src/callbacks.c:259
+#: ../baobab/src/callbacks.c:257
 msgid "Calculating percentage bars..."
 msgstr "正在計算百分比長條圖…"
 
 #: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
-#: ../baobab/src/callbacks.c:263
+#: ../baobab/src/callbacks.c:261
 msgid "Ready"
 msgstr "準備就緒"
 
@@ -579,12 +579,20 @@ msgstr ""
 "您應該已收到附於本程式的 GNU 通用公共授權的副本；如果沒有，請寫信至：Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
-#: ../baobab/src/callbacks.c:98
+#: ../baobab/src/callbacks.c:95
 msgid "A graphical tool to analyze disk usage."
 msgstr "分析磁碟使用率的圖形化工具。"
 
+#: ../baobab/src/callbacks.c:97
+msgid ""
+"Copyright © 2005-2010 Fabio Marzocca\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
+"Copyright © 2005-2010 Fabio Marzocca\n"
+"Copyright © 2011-2019 MATE 開發者"
+
 #. translator credits
-#: ../baobab/src/callbacks.c:104 ../logview/src/logview-about.h:63
+#: ../baobab/src/callbacks.c:102 ../logview/src/logview-about.h:63
 #: ../mate-dictionary/src/gdict-about.c:55
 msgid "translator-credits"
 msgstr ""
@@ -595,13 +603,13 @@ msgstr ""
 "  fetag https://launchpad.net/~coolfire\n"
 "Walter Cheuk <wwycheuk@gmail.com>, 2016."
 
-#: ../baobab/src/callbacks.c:202
+#: ../baobab/src/callbacks.c:200
 #: ../gsearchtool/src/gsearchtool-callbacks.c:514
 #: ../gsearchtool/src/gsearchtool-callbacks.c:864
 msgid "The document does not exist."
 msgstr "資料夾不存在。"
 
-#: ../baobab/src/callbacks.c:283
+#: ../baobab/src/callbacks.c:281
 msgid "The folder does not exist."
 msgstr "資料夾不存在。"
 
@@ -857,31 +865,31 @@ msgstr "不能傳送文件 URI 至「Type=Link」桌面項目"
 msgid "Not a launchable item"
 msgstr "不是可以啟動的項目"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:225
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:221
 msgid "Disable connection to session manager"
 msgstr "停用到作業階段管理程式的連線"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:224
 msgid "Specify file containing saved configuration"
 msgstr "指定含有已儲存組態的檔案"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:224
 msgid "FILE"
 msgstr "檔案"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:227
 msgid "Specify session management ID"
 msgstr "指定作業階段管理 ID"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:227
 msgid "ID"
 msgstr "ID"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:252
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:248
 msgid "Session management options:"
 msgstr "作業階段管理選項:"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:253
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:249
 msgid "Show session management options"
 msgstr "顯示作業階段管理選項"
 
@@ -1729,6 +1737,14 @@ msgstr "已包裹"
 msgid "Not found"
 msgstr "找不到"
 
+#: ../logview/src/logview-window.c:769
+msgid ""
+"Copyright © 1998-2008 Free Software Foundation, Inc.\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
+"Copyright © 1998-2008 自由軟體基金會\n"
+"Copyright © 2011-2019 MATE 開發者"
+
 #: ../logview/src/logview-window.c:773
 msgid "A system log viewer for MATE."
 msgstr "適用於 MATE 的系統日誌顯示程式。"
@@ -2310,17 +2326,25 @@ msgstr "GDict 選項"
 msgid "Show GDict Options"
 msgstr "顯示 GDict 選項"
 
-#: ../mate-dictionary/src/gdict-about.c:58
+#: ../mate-dictionary/src/gdict-about.c:56
 #: ../mate-dictionary/src/gdict-applet.c:589
 msgid "Look up words in dictionaries"
 msgstr "在字典中查詢字詞"
 
-#: ../mate-dictionary/src/gdict-about.c:79
+#: ../mate-dictionary/src/gdict-about.c:77
 #: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:607
 #: ../mate-dictionary/src/gdict-window.c:1896
 msgid "Dictionary"
 msgstr "字典"
+
+#: ../mate-dictionary/src/gdict-about.c:79
+msgid ""
+"Copyright © 2005-2006 Emmanuele Bassi\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
+"Copyright © 2005-2006 Emmanuele Bassi\n"
+"Copyright © 2011-2019 MATE 開發者"
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please

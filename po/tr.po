@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-25 12:31+0100\n"
+"POT-Creation-Date: 2019-02-16 17:18+0100\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
 "Last-Translator: mauron, 2018\n"
 "Language-Team: Turkish (https://www.transifex.com/mate/teams/13566/tr/)\n"
@@ -247,12 +247,12 @@ msgstr "ulaşılabilir:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:242 ../baobab/src/baobab.c:299
-#: ../baobab/src/callbacks.c:259
+#: ../baobab/src/callbacks.c:257
 msgid "Calculating percentage bars..."
 msgstr "Yüzde çubuğu hesaplanıyor..."
 
 #: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
-#: ../baobab/src/callbacks.c:263
+#: ../baobab/src/callbacks.c:261
 msgid "Ready"
 msgstr "Hazır"
 
@@ -597,12 +597,18 @@ msgstr ""
 "almadıysanız, Free Software Foundation, Inc., 59 Temple Place - Suite 330, "
 "Boston, MA 02110-1302, USA adresine yazınız."
 
-#: ../baobab/src/callbacks.c:98
+#: ../baobab/src/callbacks.c:95
 msgid "A graphical tool to analyze disk usage."
 msgstr "Disk kullanımını analiz etmek için grafiksel bir araç."
 
+#: ../baobab/src/callbacks.c:97
+msgid ""
+"Copyright © 2005-2010 Fabio Marzocca\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
+
 #. translator credits
-#: ../baobab/src/callbacks.c:104 ../logview/src/logview-about.h:63
+#: ../baobab/src/callbacks.c:102 ../logview/src/logview-about.h:63
 #: ../mate-dictionary/src/gdict-about.c:55
 msgid "translator-credits"
 msgstr ""
@@ -617,13 +623,13 @@ msgstr ""
 "Atilla Öntaş <tarakbumba@gmail.com>, 2014\n"
 "Emre FIRAT <emrefirat93@gmail.com>, 2013, 2014, 2015"
 
-#: ../baobab/src/callbacks.c:202
+#: ../baobab/src/callbacks.c:200
 #: ../gsearchtool/src/gsearchtool-callbacks.c:514
 #: ../gsearchtool/src/gsearchtool-callbacks.c:864
 msgid "The document does not exist."
 msgstr "Belge bulunmuyor."
 
-#: ../baobab/src/callbacks.c:283
+#: ../baobab/src/callbacks.c:281
 msgid "The folder does not exist."
 msgstr "Dizin mevcut değil."
 
@@ -925,31 +931,31 @@ msgstr "Belge URI'leri bir 'Tür=Bağ' masaüstü girişine geçilemiyor"
 msgid "Not a launchable item"
 msgstr "Başlatılabilir bir öğe değil"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:225
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:221
 msgid "Disable connection to session manager"
 msgstr "Ortam yöneticisiyle bağlantıyı kapat"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:224
 msgid "Specify file containing saved configuration"
 msgstr "Kaydedilen yapılandırmayı içeren dosyayı belirtin"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:228
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:224
 msgid "FILE"
 msgstr "DOSYA"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:227
 msgid "Specify session management ID"
 msgstr "Ortam yönetici ID belirtin"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:231
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:227
 msgid "ID"
 msgstr "No"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:252
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:248
 msgid "Session management options:"
 msgstr "Ortam yönetimi seçenekleri:"
 
-#: ../gsearchtool/libeggsmclient/eggsmclient.c:253
+#: ../gsearchtool/libeggsmclient/eggsmclient.c:249
 msgid "Show session management options"
 msgstr "Ortam yönetimi seçeneklerini göster"
 
@@ -1820,6 +1826,12 @@ msgstr "Katlanmış"
 msgid "Not found"
 msgstr "Bulunamadı"
 
+#: ../logview/src/logview-window.c:769
+msgid ""
+"Copyright © 1998-2008 Free Software Foundation, Inc.\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
+
 #: ../logview/src/logview-window.c:773
 msgid "A system log viewer for MATE."
 msgstr "MATE için sistem günlük görüntüleyici."
@@ -2411,17 +2423,23 @@ msgstr "GDict Seçenekleri"
 msgid "Show GDict Options"
 msgstr "GDict Seçeneklerini Göster"
 
-#: ../mate-dictionary/src/gdict-about.c:58
+#: ../mate-dictionary/src/gdict-about.c:56
 #: ../mate-dictionary/src/gdict-applet.c:589
 msgid "Look up words in dictionaries"
 msgstr "Kelimeleri sözlüklerde ara"
 
-#: ../mate-dictionary/src/gdict-about.c:79
+#: ../mate-dictionary/src/gdict-about.c:77
 #: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:607
 #: ../mate-dictionary/src/gdict-window.c:1896
 msgid "Dictionary"
 msgstr "Sözlük"
+
+#: ../mate-dictionary/src/gdict-about.c:79
+msgid ""
+"Copyright © 2005-2006 Emmanuele Bassi\n"
+"Copyright © 2011-2019 MATE developers"
+msgstr ""
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
