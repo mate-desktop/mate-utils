@@ -663,7 +663,6 @@ update_filter_menu (LogviewWindow *window)
   GList *actions, *l;
   guint id;
   GList *filters;
-  GtkTextBuffer *buffer;
   GtkTextTagTable *table;
   GtkTextTag *tag;
   GtkToggleAction *action;
@@ -674,7 +673,6 @@ update_filter_menu (LogviewWindow *window)
 
   g_return_if_fail (priv->filter_action_group != NULL);
 
-  buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (priv->text_view));
   table = priv->tag_table;
 
   if (priv->filter_merge_id != 0) {

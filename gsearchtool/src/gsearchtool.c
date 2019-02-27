@@ -2513,11 +2513,6 @@ static void
 gsearchtool_init_stock_icons (void)
 {
 	GtkIconFactory * factory;
-	GtkIconSize gsearchtool_icon_size;
-
-	gsearchtool_icon_size = gtk_icon_size_register ("panel-menu",
-							MATE_SEARCH_TOOL_DEFAULT_ICON_SIZE,
-							MATE_SEARCH_TOOL_DEFAULT_ICON_SIZE);
 
 	factory = gtk_icon_factory_new ();
 	gtk_icon_factory_add_default (factory);

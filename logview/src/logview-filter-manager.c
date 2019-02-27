@@ -170,7 +170,7 @@ on_dialog_add_edit_reponse (GtkWidget *dialog, int response_id,
                             LogviewFilterManager *manager)
 {
   GtkWidget *entry_name, *entry_regex;
-  GtkWidget *radio_color, *radio_visible;
+  GtkWidget *radio_color;
   GtkWidget *check_foreground, *check_background;
   GtkWidget *color_foreground, *color_background;
   gchar *old_name;
@@ -189,8 +189,6 @@ on_dialog_add_edit_reponse (GtkWidget *dialog, int response_id,
                                                     "entry_regex"));
   radio_color = GTK_WIDGET (gtk_builder_get_object (builder,
                                                     "radio_color"));
-  radio_visible = GTK_WIDGET (gtk_builder_get_object (builder,
-                                                      "radio_visible"));
   check_foreground = GTK_WIDGET (gtk_builder_get_object (builder,
                                                          "check_foreground"));
   check_background = GTK_WIDGET (gtk_builder_get_object (builder,
