@@ -381,9 +381,7 @@ open_file_with_application (GFile *file)
 	GAppInfo *application;
 	gchar *primary;
 	GFileInfo *info;
-	gchar *uri_scheme;
 	const char *content;
-	gboolean local = FALSE;
 
 	info = g_file_query_info (file,
 				  G_FILE_ATTRIBUTE_STANDARD_CONTENT_TYPE,
@@ -391,9 +389,6 @@ open_file_with_application (GFile *file)
 				  NULL,
 				  NULL);
 	if (!info) return;
-	
-	uri_scheme = g_file_get_uri_scheme (file);
-	if (g_ascii_strcasecmp(uri_scheme,"file") == 0)  local = TRUE;
 	
 	content = g_file_info_get_content_type (info);
 	application = g_app_info_get_default_for_type (content, TRUE);
@@ -419,8 +414,6 @@ open_file_with_application (GFile *file)
 		g_list_free (uris);
 		g_free (uri);
 	}
-
-	g_free (uri_scheme);
 
 	if (application)
 		g_object_unref (application);

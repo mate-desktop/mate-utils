@@ -984,14 +984,12 @@ baobab_chart_set_item_highlight (GtkWidget *chart,
 {
   BaobabChartItem *item;
   BaobabChartPrivate *priv;
-  BaobabChartClass *class;
 
   if (node == NULL)
     return;
 
   item = (BaobabChartItem *) node->data;
   priv = BAOBAB_CHART_GET_PRIVATE (chart);
-  class = BAOBAB_CHART_GET_CLASS (chart);
 
   if (highlighted)
     priv->highlighted_item = node;

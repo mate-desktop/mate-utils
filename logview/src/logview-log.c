@@ -309,7 +309,6 @@ do_read_new_lines (GIOSchedulerJob *io_job,
   log->priv->has_new_lines = FALSE;
 
   /* we'll return only the new lines in the callback */
-  line = g_ptr_array_index (lines, log->priv->lines_no);
   job->lines = (const char **) lines->pdata + log->priv->lines_no;
 
   /* save the new number of days and lines */
