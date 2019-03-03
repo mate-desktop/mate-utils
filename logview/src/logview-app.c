@@ -145,8 +145,7 @@ enumerate_job_finish (EnumerateJob *job)
 
   logview_manager_add_logs_from_name_list (app->priv->manager, files, files->data);
 
-  g_slist_foreach (files, (GFunc) g_free, NULL);
-  g_slist_free (files);
+  g_slist_free_full (files, g_free);
 
   g_object_unref (job->app);
   g_slice_free (EnumerateJob, job);

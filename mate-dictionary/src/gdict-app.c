@@ -61,16 +61,9 @@ gdict_app_finalize (GObject *object)
   
   app->current_window = NULL;
   
-  g_slist_foreach (app->windows,
-                   (GFunc) gtk_widget_destroy,
-                   NULL);
-  g_slist_free (app->windows);
-
-  g_slist_foreach (app->lookup_words, (GFunc) g_free, NULL);
-  g_slist_free (app->lookup_words);
-
-  g_slist_foreach (app->match_words, (GFunc) g_free, NULL);
-  g_slist_free (app->match_words);
+  g_slist_free_full (app->windows, (GDestroyNotify) gtk_widget_destroy);
+  g_slist_free_full (app->lookup_words, g_free);
+  g_slist_free_full (app->match_words, g_free);
 
   g_free (app->database);
   g_free (app->source_name);

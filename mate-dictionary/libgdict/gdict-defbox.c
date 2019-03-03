@@ -215,9 +215,7 @@ gdict_defbox_finalize (GObject *object)
 
   if (priv->definitions)
     {
-      g_slist_foreach (priv->definitions, (GFunc) definition_free, NULL);
-      g_slist_free (priv->definitions);
-
+      g_slist_free_full (priv->definitions, (GDestroyNotify) definition_free);
       priv->definitions = NULL;
     }
 
@@ -2592,11 +2590,7 @@ gdict_defbox_clear (GdictDefbox *defbox)
   /* destroy previously found definitions */
   if (priv->definitions)
     {
-      g_slist_foreach (priv->definitions,
-      		       (GFunc) definition_free,
-      		       NULL);
-      g_slist_free (priv->definitions);
-
+      g_slist_free_full (priv->definitions, (GDestroyNotify) definition_free);
       priv->definitions = NULL;
     }
 

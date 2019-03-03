@@ -2942,7 +2942,7 @@ gsearch_window_finalize (GObject * object)
 }
 
 static void
-gsearch_window_class_init (GSearchWindowClass * klass)
+gsearch_window_class_init (GSearchWindowClass * klass, void * dara)
 {
 	GObjectClass * object_class = (GObjectClass *) klass;
 
@@ -2965,7 +2965,7 @@ gsearch_window_get_type (void)
 			NULL,
 			sizeof (GSearchWindow),
 			0,
-			(GInstanceInitFunc) gsearch_app_create
+			(GInstanceInitFunc)(void (*)(void)) gsearch_app_create
 		};
 		object_type = g_type_register_static (GTK_TYPE_WINDOW, "GSearchWindow", &object_info, 0);
 	}

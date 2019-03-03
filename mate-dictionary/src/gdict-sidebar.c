@@ -116,8 +116,7 @@ gdict_sidebar_finalize (GObject *object)
 
   if (priv->pages)
     {
-      g_slist_foreach (priv->pages, (GFunc) sidebar_page_free, NULL);
-      g_slist_free (priv->pages);
+      g_slist_free_full (priv->pages, (GDestroyNotify) sidebar_page_free);
     }
 
   G_OBJECT_CLASS (gdict_sidebar_parent_class)->finalize (object);
@@ -440,7 +439,7 @@ gdict_sidebar_add_page (GdictSidebar *sidebar,
   g_object_set_qdata_full (G_OBJECT (menu_item),
 			   sidebar_page_id_quark,
                            g_strdup (page_id),
-			   (GDestroyNotify) g_free);
+			   g_free);
   g_signal_connect (menu_item, "activate",
 		    G_CALLBACK (gdict_sidebar_menu_item_activate),
 		    sidebar);

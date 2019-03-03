@@ -115,9 +115,8 @@ do_finalize (GObject *obj)
   }
 
   if (log->priv->days) {
-    g_slist_foreach (log->priv->days,
-                     (GFunc) logview_utils_day_free, NULL);
-    g_slist_free (log->priv->days);
+    g_slist_free_full (log->priv->days,
+                       (GDestroyNotify) logview_utils_day_free);
     log->priv->days = NULL;
   }
 
@@ -256,8 +255,7 @@ new_lines_job_done (gpointer data)
 
   g_clear_object (&job->cancellable);
 
-  g_slist_foreach (job->new_days, (GFunc) logview_utils_day_free, NULL);
-  g_slist_free (job->new_days);
+  g_slist_free_full (job->new_days, (GDestroyNotify) logview_utils_day_free);
 
   /* drop the reference we acquired before */
   g_object_unref (job->log);
@@ -758,8 +756,7 @@ log_load (GIOSchedulerJob *io_job,
 
     if ((days = log_read_dates (parse_data, time (NULL))) != NULL) {
       log->priv->has_days = TRUE;
-      g_slist_foreach (days, (GFunc) logview_utils_day_free, NULL);
-      g_slist_free (days);
+      g_slist_free_full (days, (GDestroyNotify) logview_utils_day_free);
     } else {
       log->priv->has_days = FALSE;
     }
