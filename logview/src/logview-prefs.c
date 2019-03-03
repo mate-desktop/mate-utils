@@ -161,8 +161,8 @@ load_filters (LogviewPrefs *prefs)
                                  PREF_FILTERS);
 
   prefs->priv->filters = g_hash_table_new_full (g_str_hash, g_str_equal,
-                                                (GDestroyNotify) g_free,
-                                                (GDestroyNotify) g_object_unref);
+                                                g_free,
+                                                g_object_unref);
 
   for (idx = 0; filters[idx] != NULL; idx++) {
     str = filters[idx];

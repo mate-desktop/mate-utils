@@ -478,8 +478,7 @@ open_file_cb (GtkMenuItem * action,
 		response = display_dialog_file_open_limit (gsearch->window, g_list_length (list));
 
 		if (response == GTK_RESPONSE_CANCEL) {
-			g_list_foreach (list, (GFunc) gtk_tree_path_free, NULL);
-			g_list_free (list);
+			g_list_free_full (list, (GDestroyNotify) gtk_tree_path_free);
 			return;
 		}
 	}
@@ -535,8 +534,7 @@ open_file_cb (GtkMenuItem * action,
 		g_free (utf8_name);
 		g_free (locale_file);
 	}
-	g_list_foreach (list, (GFunc) gtk_tree_path_free, NULL);
-	g_list_free (list);
+	g_list_free_full (list, (GDestroyNotify) gtk_tree_path_free);
 }
 
 static gint
@@ -616,8 +614,7 @@ open_folder_cb (GtkAction * action,
 		response = display_dialog_folder_open_limit (gsearch->window, g_list_length (list));
 
 		if (response == GTK_RESPONSE_CANCEL) {
-			g_list_foreach (list, (GFunc) gtk_tree_path_free, NULL);
-			g_list_free (list);
+			g_list_free_full (list, (GDestroyNotify) gtk_tree_path_free);
 			return;
 		}
 	}
@@ -651,8 +648,7 @@ open_folder_cb (GtkAction * action,
 
 				display_dialog_could_not_open_folder (gsearch->window, utf8_folder);
 
-				g_list_foreach (list, (GFunc) gtk_tree_path_free, NULL);
-				g_list_free (list);
+				g_list_free_full (list, (GDestroyNotify) gtk_tree_path_free);
 				g_free (locale_folder);
 				g_free (utf8_folder);
 				g_object_unref (g_file);
@@ -665,8 +661,7 @@ open_folder_cb (GtkAction * action,
 		g_free (locale_file);
 		g_free (utf8_folder);
 	}
-	g_list_foreach (list, (GFunc) gtk_tree_path_free, NULL);
-	g_list_free (list);
+	g_list_free_full (list, (GDestroyNotify) gtk_tree_path_free);
 	g_object_unref (g_file);
 	g_object_unref (g_file_info);
 	g_object_unref (g_app_info);
@@ -918,8 +913,7 @@ move_to_trash_cb (GtkAction * action,
 				g_free (message);
 			}
 		}
-		g_list_foreach (list, (GFunc) gtk_tree_path_free, NULL);
-		g_list_free (list);
+		g_list_free_full (list, (GDestroyNotify) gtk_tree_path_free);
 		g_free (locale_filename);
 		g_free (utf8_filename);
 		g_free (utf8_basename);
@@ -1098,7 +1092,7 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 			gtk_widget_show (new1);
 
 			g_object_set_data_full (G_OBJECT (new1), "app", (GAppInfo *)list->data,
-			                        (GDestroyNotify) g_object_unref);
+			                        g_object_unref);
 
 			gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
 			g_signal_connect ((gpointer) new1, "activate", G_CALLBACK (open_file_cb),
@@ -1138,7 +1132,7 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 				gtk_widget_show (new1);
 
 				g_object_set_data_full (G_OBJECT (new1), "app", (GAppInfo *)list->data,
-			                                (GDestroyNotify) g_object_unref);
+			                                g_object_unref);
 
 				if (list_length >= 4) {
 
@@ -1393,8 +1387,7 @@ file_button_release_event_cb (GtkWidget * widget,
 		}
 		g_free (locale_file_first);
 		g_free (utf8_name_first);
-		g_list_foreach (list, (GFunc) gtk_tree_path_free, NULL);
-		g_list_free (list);
+		g_list_free_full (list, (GDestroyNotify) gtk_tree_path_free);
 	}
 	else if (event->button == 1 || event->button == 2) {
 		if (gsearch->is_search_results_single_click_to_activate == TRUE) {
@@ -1546,8 +1539,7 @@ drag_begin_file_cb (GtkWidget * widget,
 		gtk_tree_model_get (GTK_TREE_MODEL (gsearch->search_results_list_store), &iter,
 		                    COLUMN_ICON, &pixbuf,
 		                    -1);
-		g_list_foreach (list, (GFunc) gtk_tree_path_free, NULL);
-		g_list_free (list);
+		g_list_free_full (list, (GDestroyNotify) gtk_tree_path_free);
 
 		if (pixbuf) {
 			gtk_drag_set_icon_pixbuf (context, pixbuf, 0, 0);
@@ -1617,8 +1609,7 @@ drag_file_cb  (GtkWidget * widget,
 		g_free (utf8_name);
 		g_free (locale_file);
 	}
-	g_list_foreach (list, (GFunc) gtk_tree_path_free, NULL);
-	g_list_free (list);
+	g_list_free_full (list, (GDestroyNotify) gtk_tree_path_free);
 	g_free (uri_list);
 }
 
@@ -1882,8 +1873,7 @@ key_press_cb (GtkWidget * widget,
 			gtk_tree_model_get (GTK_TREE_MODEL (gsearch->search_results_list_store), &iter,
 					    COLUMN_NO_FILES_FOUND, &no_files_found, -1);
 
-			g_list_foreach (list, (GFunc) gtk_tree_path_free, NULL);
-			g_list_free (list);
+			g_list_free_full (list, (GDestroyNotify) gtk_tree_path_free);
 
 			if (!no_files_found) {
 				gtk_menu_popup_at_pointer (GTK_MENU (gsearch->search_results_popup_menu),

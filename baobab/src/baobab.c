@@ -721,8 +721,7 @@ baobab_set_excluded_locations (gchar **uris)
 {
 	gint i;
 
-	g_slist_foreach (baobab.excluded_locations, (GFunc) g_object_unref, NULL);
-	g_slist_free (baobab.excluded_locations);
+	g_slist_free_full (baobab.excluded_locations, g_object_unref);
 	baobab.excluded_locations = NULL;
 	for (i = 0; uris[i] != NULL; ++i) {
 		baobab.excluded_locations = g_slist_prepend (baobab.excluded_locations,
@@ -896,8 +895,7 @@ baobab_shutdown (void)
 
 	g_free (baobab.selected_path);
 
-	g_slist_foreach (baobab.excluded_locations, (GFunc) g_object_unref, NULL);
-	g_slist_free (baobab.excluded_locations);
+	g_slist_free_full (baobab.excluded_locations, g_object_unref);
 
 	if (baobab.ui_settings) {
 		g_object_unref (baobab.ui_settings);
@@ -1319,7 +1317,7 @@ main (int argc, char *argv[])
 		g_idle_add_full (G_PRIORITY_DEFAULT_IDLE,
 		                 (GSourceFunc) start_proc_on_command_line,
 		                 file,
-		                 (GDestroyNotify) g_object_unref);
+		                 g_object_unref);
 	}
 	g_strfreev (directories);
 

@@ -478,11 +478,8 @@ gdict_client_context_finalize (GObject *object)
 
   if (priv->commands_queue)
     {
-      g_queue_foreach (priv->commands_queue,
-                       (GFunc) gdict_command_free,
-                       NULL);
-      g_queue_free (priv->commands_queue);
-
+      g_queue_free_full (priv->commands_queue,
+                         (GDestroyNotify) gdict_command_free);
       priv->commands_queue = NULL;
     }
 
@@ -925,11 +922,8 @@ clear_command_queue (GdictClientContext *context)
 
   if (priv->commands_queue)
     {
-      g_queue_foreach (priv->commands_queue,
-                       (GFunc) gdict_command_free,
-                       NULL);
-
-      g_queue_free (priv->commands_queue);
+      g_queue_free_full (priv->commands_queue,
+                         (GDestroyNotify) gdict_command_free);
     }
 
   /* renew */

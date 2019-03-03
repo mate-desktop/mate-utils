@@ -50,7 +50,7 @@
 #include "gdict-private.h"
 
 
-static void gdict_context_class_init (gpointer g_iface);
+static void gdict_context_class_init (gpointer g_iface, void *user_data);
 
 
 GType
@@ -79,7 +79,7 @@ gdict_context_get_type (void)
 
 
 static void
-gdict_context_class_init (gpointer g_iface)
+gdict_context_class_init (gpointer g_iface, void *user_data)
 {
   GType iface_type = G_TYPE_FROM_INTERFACE (g_iface);
 
