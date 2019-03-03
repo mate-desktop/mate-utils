@@ -268,8 +268,7 @@ gsearch_history_entry_save_history (GsearchHistoryEntry *entry)
 			      "search-history",
 			      g_variant_new ("a{sas}", &history_builder));
 
-	g_slist_foreach (items, (GFunc) g_free, NULL);
-	g_slist_free (items);
+	g_slist_free_full (items, g_free);
 	g_free (key);
 }
 

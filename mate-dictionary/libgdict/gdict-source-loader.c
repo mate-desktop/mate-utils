@@ -89,11 +89,8 @@ gdict_source_loader_finalize (GObject *object)
 
   if (priv->paths)
     {
-      g_slist_foreach (priv->paths,
-      		       (GFunc) g_free,
-      		       NULL);
-      g_slist_free (priv->paths);
-
+      g_slist_free_full (priv->paths,
+                         g_free);
       priv->paths = NULL;
     }
 
@@ -102,11 +99,8 @@ gdict_source_loader_finalize (GObject *object)
 
   if (priv->sources)
     {
-      g_slist_foreach (priv->sources,
-      		       (GFunc) g_object_unref,
-      		       NULL);
-      g_slist_free (priv->sources);
-
+      g_slist_free_full (priv->sources,
+                         g_object_unref);
       priv->sources = NULL;
     }
 
@@ -222,7 +216,7 @@ gdict_source_loader_init (GdictSourceLoader *loader)
 
   priv->sources = NULL;
   priv->sources_by_name = g_hash_table_new_full (g_str_hash, g_str_equal,
-		  				 (GDestroyNotify) g_free,
+		  				 g_free,
 						 NULL);
 
   /* ensure that the sources list will be updated */
@@ -366,10 +360,8 @@ gdict_source_loader_update_sources (GdictSourceLoader *loader)
 
   g_assert (GDICT_IS_SOURCE_LOADER (loader));
 
-  g_slist_foreach (loader->priv->sources,
-		   (GFunc) g_object_unref,
-		   NULL);
-  g_slist_free (loader->priv->sources);
+  g_slist_free_full (loader->priv->sources,
+                     g_object_unref);
   loader->priv->sources = NULL;
 
   filenames = build_source_filenames (loader);
@@ -404,10 +396,7 @@ gdict_source_loader_update_sources (GdictSourceLoader *loader)
       g_signal_emit (loader, loader_signals[SOURCE_LOADED], 0, source);
     }
 
-  g_slist_foreach (filenames,
-                   (GFunc) g_free,
-                   NULL);
-  g_slist_free (filenames);
+  g_slist_free_full (filenames, g_free);
 
   loader->priv->paths_dirty = FALSE;
 }
