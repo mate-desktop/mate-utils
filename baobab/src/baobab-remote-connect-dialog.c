@@ -383,6 +383,12 @@ baobab_remote_connect_dialog_class_init (BaobabRemoteConnectDialogClass *class)
 	gobject_class = G_OBJECT_CLASS (class);
 	gobject_class->finalize = baobab_remote_connect_dialog_finalize;
 }
+static void
+destroy_label (GtkWidget *widget,
+               gpointer   user_data)
+{
+  gtk_widget_destroy (widget);
+}
 
 static void
 setup_for_type (BaobabRemoteConnectDialog *dialog)
@@ -429,7 +435,7 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 	}
 	/* Destroy all labels */
 	gtk_container_foreach (GTK_CONTAINER (dialog->details->grid),
-			       (GtkCallback) gtk_widget_destroy, NULL);
+			       destroy_label, NULL);
 
 	i = 1;
 	grid = dialog->details->grid;

@@ -128,7 +128,7 @@ logview_manager_init (LogviewManager *self)
 
   priv->active_log = NULL;
   priv->logs = g_hash_table_new_full (g_str_hash, g_str_equal, 
-                                      (GDestroyNotify) g_free, (GDestroyNotify) g_object_unref);
+                                      g_free, g_object_unref);
 }
 
 static MultipleCreation *
@@ -147,9 +147,8 @@ multiple_creation_op_new (int total)
 static void
 multiple_creation_op_free (MultipleCreation *mc)
 {
-  g_ptr_array_foreach (mc->errors, (GFunc) g_strfreev, NULL);
+  g_ptr_array_set_free_func (mc->errors, (GDestroyNotify) g_strfreev);
   g_ptr_array_free (mc->errors, TRUE);
-
   g_slice_free (MultipleCreation, mc);
 }
 
