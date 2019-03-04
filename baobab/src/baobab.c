@@ -1193,6 +1193,8 @@ initialize_charts (void)
 		gtk_combo_box_set_active (GTK_COMBO_BOX (baobab.chart_type_combo), 0);
 	}
 
+	g_free (saved_chart);
+
 	check_drop_targets (FALSE);
 }
 
