@@ -4,14 +4,33 @@ public_icons_themes = \
 	hicolor	\
 	$(NULL)
 
+png_icons = \
+        hicolor_apps_16x16_mate-system-log.png \
+        hicolor_apps_22x22_mate-system-log.png \
+        hicolor_apps_32x32_mate-system-log.png \
+        hicolor_apps_48x48_mate-system-log.png \
+        hicolor_apps_256x256_mate-system-log.png \
+	$(NULL)
+
 public_icons = \
-	hicolor_apps_16x16_mate-system-log.png \
-	hicolor_apps_22x22_mate-system-log.png \
-	hicolor_apps_32x32_mate-system-log.png \
-	hicolor_apps_48x48_mate-system-log.png \
-	hicolor_apps_256x256_mate-system-log.png \
+	$(png_icons) \
 	hicolor_apps_scalable_mate-system-log-symbolic.svg \
 	$(NULL)
+
+hicolor_apps_16x16_mate-system-log.png: logview.svg
+	inkscape -z $^ --export-area=303:65:319:81 -w=16 -h=16 -e=$@
+
+hicolor_apps_22x22_mate-system-log.png: logview.svg
+	inkscape -z $^ --export-area=303:101:325:123 -w=22 -h=22 -e=$@
+
+hicolor_apps_32x32_mate-system-log.png: logview.svg
+	inkscape -z $^ --export-area=304:142:336:174 -w=32 -h=32 -e=$@
+
+hicolor_apps_48x48_mate-system-log.png: logview.svg
+	inkscape -z $^ --export-area=296:202:344:250 -w=48 -h=48 -e=$@
+
+hicolor_apps_256x256_mate-system-log.png: logview.svg
+	inkscape -z $^ --export-area=33:11:289:267 -w=256 -h=256 -e=$@
 
 noinst_DATA = \
 	logview.svg \
@@ -23,21 +42,6 @@ EXTRA_DIST = \
 	$(NULL)
 
 ###############################################################################
-
-gtk_update_icon_cache = gtk-update-icon-cache -f -t
-
-update-icon-cache:
-	@-if test -z "$(DESTDIR)"; then \
-		echo "Updating Gtk icon cache."; \
-		for theme in $(public_icons_themes); do \
-			$(gtk_update_icon_cache) $(datadir)/icons/$$theme; \
-		done; \
-	else \
-		echo "*** Icon cache not updated.  After (un)install, run this:"; \
-		for theme in $(public_icons_themes); do \
-			echo "***   $(gtk_update_icon_cache) $(datadir)/icons/$$theme"; \
-		done; \
-	fi
 
 install-icons:
 	for icon in $(public_icons); do \
@@ -58,6 +62,25 @@ uninstall-icons:
 		rm -f $(DESTDIR)$(datadir)/icons/$$THEME/$$SIZE/$$CONTEXT/$$ICONFILE; \
 	done
 
-install-data-local: install-icons update-icon-cache
+install-data-local: install-icons
 
-uninstall-local: uninstall-icons update-icon-cache
+uninstall-local: uninstall-icons
+
+gtk_update_icon_cache = gtk-update-icon-cache -f -t $(datadir)/icons/hicolor
+
+install-data-hook: update-icon-cache
+uninstall-hook: update-icon-cache
+update-icon-cache: $(public_icons)
+	@-if test -z "$(DESTDIR)"; then \
+		echo "Updating Gtk icon cache."; \
+		$(gtk_update_icon_cache); \
+	else \
+		echo "*** Icon cache not updated.  After (un)install, run this:"; \
+		echo "***   $(gtk_update_icon_cache)"; \
+	fi
+
+.PHONY: build-png-icons clean-png-icons
+build-png-icons: $(png_icons)
+
+clean-png-icons:
+	rm -f $(png_icons)
