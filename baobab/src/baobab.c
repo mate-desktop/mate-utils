@@ -932,7 +932,7 @@ create_context_menu (void)
 
 	menu->snapshot_item = gtk_image_menu_item_new_with_label (_("Save screenshot"));
 	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (menu->snapshot_item),
-				       gtk_image_new_from_file (BAOBAB_PIX_DIR "shot.png"));
+				       gtk_image_new_from_icon_name ("applets-screenshooter", GTK_ICON_SIZE_MENU));
 
 	gtk_menu_shell_append (GTK_MENU_SHELL (menu->widget),
 			       menu->up_item);

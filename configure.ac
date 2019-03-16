@@ -345,8 +345,6 @@ baobab/Makefile
 baobab/data/Makefile
 baobab/data/org.mate.disk-usage-analyzer.gschema.xml
 baobab/pixmaps/Makefile
-baobab/pixmaps/24x24/Makefile
-baobab/pixmaps/scalable/Makefile
 baobab/src/Makefile
 baobab/help/Makefile
 
