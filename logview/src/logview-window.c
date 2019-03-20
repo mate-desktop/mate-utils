@@ -763,6 +763,12 @@ logview_about (GtkWidget *widget, GtkWidget *window)
                                    _(logview_about_license[1]),
                                    _(logview_about_license[2]), NULL);
 
+#ifdef ENABLE_NLS
+  const char **p;
+  for (p = logview_about_documenters; *p; ++p)
+    *p = _(*p);
+#endif
+
   gtk_show_about_dialog (GTK_WINDOW (window),
                          "program-name", _("System Log Viewer"),
                          "version", VERSION,
