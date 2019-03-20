@@ -72,6 +72,12 @@ on_about_activate (GtkMenuItem *menuitem, gpointer user_data)
 		NULL
 	};
 
+	const gchar* documenters[] = {
+		"Fabio Marzocca <thesaltydog@gmail.com>",
+		N_("MATE Documentation Team"),
+		NULL,
+	};
+
 	const gchar* license[] = {
 		N_("This program is free software; you can redistribute it and/or "
 		"modify it under the terms of the GNU General Public License as "
@@ -91,6 +97,12 @@ on_about_activate (GtkMenuItem *menuitem, gpointer user_data)
 
 	gchar* license_trans = g_strjoin("\n\n", _(license[0]), _(license[1]), _(license[2]), NULL);
 
+#ifdef ENABLE_NLS
+	const char **p;
+	for (p = documenters; *p; ++p)
+		*p = _(*p);
+#endif
+
 	gtk_show_about_dialog (GTK_WINDOW (baobab.window),
 		"program-name", _("Disk Usage Analyzer"),
 		"version", VERSION,
@@ -101,6 +113,7 @@ on_about_activate (GtkMenuItem *menuitem, gpointer user_data)
 		"logo-icon-name", "mate-disk-usage-analyzer",
 		"license", license_trans,
 		"authors", authors,
+		"documenters", documenters,
 		"translator-credits", _("translator-credits"),
 		"wrap-license", TRUE,
 		NULL);

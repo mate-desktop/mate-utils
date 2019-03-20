@@ -46,9 +46,10 @@ gdict_show_about_dialog (GtkWidget *parent)
   };
 
   const gchar *documenters[] = {
-    "Sun GNOME Documentation Team <gdocteam@sun.com>",
+    N_("Sun GNOME Documentation Team <gdocteam@sun.com>"),
     "John Fleck <jfleck@inkstain.net>",
     "Emmanuele Bassi <ebassi@gmail.com>",
+    N_("MATE Documentation Team"),
     NULL
   };
 
@@ -69,12 +70,18 @@ gdict_show_about_dialog (GtkWidget *parent)
     N_("You should have received a copy of the GNU General Public License "
        "along with this program; if not, write to the Free Software "
        "Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA "
-       "02110-1301, USA")
+       "02110-1301, USA.")
   };
 
   g_return_if_fail (GTK_IS_WIDGET (parent));
 
   char *license_trans = g_strjoin ("\n\n", _(license[0]), _(license[1]), _(license[2]), NULL);
+
+#ifdef ENABLE_NLS
+  const char **p;
+  for (p = documenters; *p; ++p)
+    *p = _(*p);
+#endif
 
   gtk_show_about_dialog (GTK_IS_WINDOW (parent) ? GTK_WINDOW (parent) : NULL,
 			 "program-name", _("Dictionary"),
