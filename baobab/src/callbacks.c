@@ -92,8 +92,10 @@ on_about_activate (GtkMenuItem *menuitem, gpointer user_data)
 	gchar* license_trans = g_strjoin("\n\n", _(license[0]), _(license[1]), _(license[2]), NULL);
 
 	gtk_show_about_dialog (GTK_WINDOW (baobab.window),
-		"comments", _("A graphical tool to analyze disk usage."),
+		"program-name", _("Disk Usage Analyzer"),
 		"version", VERSION,
+		"title", _("About Disk Usage Analyzer"),
+		"comments", _("A graphical tool to analyze disk usage."),
 		"copyright", _("Copyright \xc2\xa9 2005-2010 Fabio Marzocca\n"
 		               "Copyright \xc2\xa9 2011-2019 MATE developers"),
 		"logo-icon-name", "mate-disk-usage-analyzer",
