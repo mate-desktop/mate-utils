@@ -764,8 +764,9 @@ logview_about (GtkWidget *widget, GtkWidget *window)
                                    _(logview_about_license[2]), NULL);
 
   gtk_show_about_dialog (GTK_WINDOW (window),
-                         "name",  _("System Log Viewer"),
+                         "program-name", _("System Log Viewer"),
                          "version", VERSION,
+                         "title", _("About System Log Viewer"),
                          "copyright", _("Copyright \xc2\xa9 1998-2008 Free Software Foundation, Inc.\n"
                                         "Copyright \xc2\xa9 2011-2019 MATE developers"),
                          "license", license_trans,
