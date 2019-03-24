@@ -12,7 +12,7 @@ public_icons = \
 	$(NULL)
 
 hicolor_apps_%.png: hicolor_apps_scalable_mate-disk-usage-analyzer.svg
-	rsvg-convert -w $(word 1, $(subst x, ,$(word 1,$(subst _, ,$*)))) -h $(word 2, $(subst x, ,$(word 1,$(subst _, ,$*)))) $^ -o $@
+	$(RSVG_CONVERT) -w $(word 1, $(subst x, ,$(word 1,$(subst _, ,$*)))) -h $(word 2, $(subst x, ,$(word 1,$(subst _, ,$*)))) $^ -o $@
 
 EXTRA_DIST = \
 	$(public_icons)	\
@@ -47,7 +47,7 @@ gtk_update_icon_cache = gtk-update-icon-cache -f -t $(datadir)/icons/hicolor
 
 install-data-hook: update-icon-cache
 uninstall-hook: update-icon-cache
-update-icon-cache: $(public_icons)
+update-icon-cache:
 	@-if test -z "$(DESTDIR)"; then \
 		echo "Updating Gtk icon cache."; \
 		$(gtk_update_icon_cache); \
