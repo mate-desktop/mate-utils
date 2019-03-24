@@ -29,6 +29,16 @@ AM_PROG_LIBTOOL
 AC_PATH_PROG(GLIB_GENMARSHAL, [glib-genmarshal])
 AC_PATH_PROG(GLIB_MKENUMS, [glib-mkenums])
 
+dnl ICONS: convert svg to png
+AC_PATH_PROG(RSVG_CONVERT, rsvg-convert)
+if test x$RSVG_CONVERT = x ; then
+    AC_MSG_ERROR([could not locate rsvg-convert])
+fi
+AC_PATH_PROG(INKSCAPE, inkscape)
+if test x$INKSCAPE = x ; then
+    AC_MSG_ERROR([could not locate inkscape])
+fi
+
 MATE_COMPILE_WARNINGS([yes])
 
 AC_PATH_XTRA

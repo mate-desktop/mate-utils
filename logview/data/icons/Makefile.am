@@ -18,19 +18,19 @@ public_icons = \
 	$(NULL)
 
 hicolor_apps_16x16_mate-system-log.png: logview.svg
-	inkscape -z $^ --export-area=303:65:319:81 -w=16 -h=16 -e=$@
+	$(INKSCAPE) -z $^ --export-area=303:65:319:81 -w=16 -h=16 -e=$@
 
 hicolor_apps_22x22_mate-system-log.png: logview.svg
-	inkscape -z $^ --export-area=303:101:325:123 -w=22 -h=22 -e=$@
+	$(INKSCAPE) -z $^ --export-area=303:101:325:123 -w=22 -h=22 -e=$@
 
 hicolor_apps_32x32_mate-system-log.png: logview.svg
-	inkscape -z $^ --export-area=304:142:336:174 -w=32 -h=32 -e=$@
+	$(INKSCAPE) -z $^ --export-area=304:142:336:174 -w=32 -h=32 -e=$@
 
 hicolor_apps_48x48_mate-system-log.png: logview.svg
-	inkscape -z $^ --export-area=296:202:344:250 -w=48 -h=48 -e=$@
+	$(INKSCAPE) -z $^ --export-area=296:202:344:250 -w=48 -h=48 -e=$@
 
 hicolor_apps_256x256_mate-system-log.png: logview.svg
-	inkscape -z $^ --export-area=33:11:289:267 -w=256 -h=256 -e=$@
+	$(INKSCAPE) -z $^ --export-area=33:11:289:267 -w=256 -h=256 -e=$@
 
 noinst_DATA = \
 	logview.svg \
@@ -70,7 +70,7 @@ gtk_update_icon_cache = gtk-update-icon-cache -f -t $(datadir)/icons/hicolor
 
 install-data-hook: update-icon-cache
 uninstall-hook: update-icon-cache
-update-icon-cache: $(public_icons)
+update-icon-cache:
 	@-if test -z "$(DESTDIR)"; then \
 		echo "Updating Gtk icon cache."; \
 		$(gtk_update_icon_cache); \
