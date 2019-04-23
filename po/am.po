@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# samson <sambelet@yahoo.com>, 2018
+# Stefano Karapetsas <stefano@karapetsas.com>, 2019
+# samson <sambelet@yahoo.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-16 17:18+0100\n"
-"PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: samson <sambelet@yahoo.com>, 2018\n"
+"POT-Creation-Date: 2019-03-24 11:19+0100\n"
+"PO-Revision-Date: 2019-03-16 17:44+0000\n"
+"Last-Translator: samson <sambelet@yahoo.com>, 2019\n"
 "Language-Team: Amharic (https://www.transifex.com/mate/teams/13566/am/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -63,7 +63,7 @@ msgid "S_can Remote Folder..."
 msgstr "የርቀት ፎልደር ማ_ሰሻ..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../logview/src/logview-window.c:817
+#: ../logview/src/logview-window.c:824
 #: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Edit"
 msgstr "_ማረሚያ"
@@ -77,7 +77,7 @@ msgid "_Collapse All"
 msgstr "ሁሉንም _ማሳነሻ "
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../logview/src/logview-window.c:818
+#: ../logview/src/logview-window.c:825
 #: ../mate-dictionary/src/gdict-window.c:1289
 msgid "_View"
 msgstr "_መመልከቻ"
@@ -95,7 +95,7 @@ msgid "All_ocated Space"
 msgstr "ቦታዎች መ_ለያ "
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../logview/src/logview-window.c:820
+#: ../logview/src/logview-window.c:827
 #: ../mate-dictionary/src/gdict-applet.c:1187
 #: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_Help"
@@ -103,12 +103,13 @@ msgstr "_እርዳታ"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../logview/src/logview-window.c:846
+#: ../logview/src/logview-window.c:853
 #: ../mate-dictionary/src/gdict-window.c:1341
 msgid "_Contents"
 msgstr "_ይዞታዎች"
 
 #: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1241
+#: ../baobab/src/callbacks.c:107
 msgid "Disk Usage Analyzer"
 msgstr "የዲስክ አጠቃቀም መርማሪ "
 
@@ -232,12 +233,12 @@ msgstr "ዝግጁ:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:242 ../baobab/src/baobab.c:299
-#: ../baobab/src/callbacks.c:257
+#: ../baobab/src/callbacks.c:272
 msgid "Calculating percentage bars..."
 msgstr "በማስላት ላይ በመቶኛ መደርደሪያ..."
 
 #: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
-#: ../baobab/src/callbacks.c:261
+#: ../baobab/src/callbacks.c:276
 msgid "Ready"
 msgstr "ዝግጁ "
 
@@ -547,7 +548,13 @@ msgstr "ዝርዝሮች: %s"
 msgid "There was an error displaying help."
 msgstr "ስህተት እርዳታ በማሳየት ላይ እንዳለ"
 
-#: ../baobab/src/callbacks.c:76 ../logview/src/logview-about.h:49
+#: ../baobab/src/callbacks.c:77 ../logview/src/logview-about.h:45
+#: ../mate-dictionary/src/gdict-about.c:52
+msgid "MATE Documentation Team"
+msgstr ""
+
+#: ../baobab/src/callbacks.c:82 ../logview/src/logview-about.h:50
+#: ../mate-dictionary/src/gdict-about.c:60
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -555,7 +562,8 @@ msgid ""
 "any later version."
 msgstr ""
 
-#: ../baobab/src/callbacks.c:81 ../logview/src/logview-about.h:53
+#: ../baobab/src/callbacks.c:87 ../logview/src/logview-about.h:54
+#: ../mate-dictionary/src/gdict-about.c:65
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -563,36 +571,40 @@ msgid ""
 "more details."
 msgstr ""
 
-#: ../baobab/src/callbacks.c:86 ../logview/src/logview-about.h:57
+#: ../baobab/src/callbacks.c:92 ../logview/src/logview-about.h:58
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
-"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA."
 msgstr ""
 
-#: ../baobab/src/callbacks.c:95
+#: ../baobab/src/callbacks.c:109
+msgid "About Disk Usage Analyzer"
+msgstr ""
+
+#: ../baobab/src/callbacks.c:110
 msgid "A graphical tool to analyze disk usage."
 msgstr "በ ንድፍ መሳሪያ የ ዲስክ አጠቃቀም መመርመሪያ"
 
-#: ../baobab/src/callbacks.c:97
+#: ../baobab/src/callbacks.c:111
 msgid ""
 "Copyright © 2005-2010 Fabio Marzocca\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
 
 #. translator credits
-#: ../baobab/src/callbacks.c:102 ../logview/src/logview-about.h:63
-#: ../mate-dictionary/src/gdict-about.c:55
+#: ../baobab/src/callbacks.c:117 ../logview/src/logview-about.h:64
+#: ../mate-dictionary/src/gdict-about.c:56
 msgid "translator-credits"
 msgstr "Samson-Belete-Belayineh"
 
-#: ../baobab/src/callbacks.c:200
+#: ../baobab/src/callbacks.c:215
 #: ../gsearchtool/src/gsearchtool-callbacks.c:514
 #: ../gsearchtool/src/gsearchtool-callbacks.c:864
 msgid "The document does not exist."
 msgstr "ሰነዱ አልተገኘም "
 
-#: ../baobab/src/callbacks.c:281
+#: ../baobab/src/callbacks.c:296
 msgid "The folder does not exist."
 msgstr "ፎልደሩ አልተገኘም "
 
@@ -839,7 +851,7 @@ msgstr "ያልታወቀ የ ዴስክቶፕ ፋይል አይነት እትም '%s
 #: ../gsearchtool/libeggsmclient/eggdesktopfile.c:957
 #, c-format
 msgid "Starting %s"
-msgstr "በማስጀመር ላይ %s"
+msgstr "በ ማስጀመር ላይ %s"
 
 #: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1098
 #, c-format
@@ -1258,16 +1270,16 @@ msgstr "የ እርዳታ ሰነዱን መክፈት አልተቻለም "
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] "እርስዎ በ እርግጥ ሰነዱን መክፈት %d ይፈልጋሉ?"
-msgstr[1] "እርስዎ በ እርግጥ ሰነዶቹን መክፈት %d ይፈልጋሉ?"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:355
 #: ../gsearchtool/src/gsearchtool-callbacks.c:557
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
-msgstr[0] "ይህ የተለዩ መስኮቶች %d ይከፍታል"
-msgstr[1] "ይህ የተለዩ መስኮቶች %d ይከፍታል"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:400
 #, c-format
@@ -1291,8 +1303,8 @@ msgstr "ሰነዱን ለማሳየት የ ተገጠመ መመልከቻ የለም 
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] "በእርግጥ ፎልደሮቹን መክፈት %d ይፈልጋሉ?"
-msgstr[1] "በእርግጥ ፎልደሮቹን መክፈት %d ይፈልጋሉ?"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:710
 #, c-format
@@ -1611,6 +1623,10 @@ msgstr "መደብ:"
 msgid "Effect:"
 msgstr "ተጽእኖ:"
 
+#: ../logview/src/logview-about.h:42 ../mate-dictionary/src/gdict-about.c:49
+msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
+msgstr ""
+
 #: ../logview/src/logview-app.c:377
 #, c-format
 msgid "Impossible to open the file %s"
@@ -1709,7 +1725,7 @@ msgstr "መቃኛ እና መግቢያ መቆጣጠሪያ"
 msgid "Log Viewer"
 msgstr "መግቢያ መመልከቻ"
 
-#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:767
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:773
 msgid "System Log Viewer"
 msgstr "የአርአት መግቢያ መመልከቻ"
 
@@ -1743,157 +1759,161 @@ msgstr "ተጠቅልሏል"
 msgid "Not found"
 msgstr "አልተገኘም "
 
-#: ../logview/src/logview-window.c:769
+#: ../logview/src/logview-window.c:775
+msgid "About System Log Viewer"
+msgstr ""
+
+#: ../logview/src/logview-window.c:776
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
 
-#: ../logview/src/logview-window.c:773
+#: ../logview/src/logview-window.c:780
 msgid "A system log viewer for MATE."
 msgstr "የ ስርአት መግቢያ መመልከቻ ለ ሜት"
 
-#: ../logview/src/logview-window.c:816
+#: ../logview/src/logview-window.c:823
 #: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_File"
 msgstr "_ፋይል"
 
-#: ../logview/src/logview-window.c:819
+#: ../logview/src/logview-window.c:826
 msgid "_Filters"
 msgstr "_ማጣሪያዎች"
 
-#: ../logview/src/logview-window.c:822
+#: ../logview/src/logview-window.c:829
 msgid "_Open..."
 msgstr "_መክፈቻ..."
 
-#: ../logview/src/logview-window.c:822
+#: ../logview/src/logview-window.c:829
 msgid "Open a log from file"
 msgstr "መግቢያ ከ ፋይል ውስጥ መክፈቻ"
 
-#: ../logview/src/logview-window.c:824
+#: ../logview/src/logview-window.c:831
 #: ../mate-dictionary/src/gdict-window.c:1302
 msgid "_Close"
 msgstr "_መዝጊያ"
 
-#: ../logview/src/logview-window.c:824
+#: ../logview/src/logview-window.c:831
 msgid "Close this log"
 msgstr "ይህን መግቢያ መዝጊያ"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:833
 msgid "_Quit"
 msgstr "_ማጥፊያ"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:833
 msgid "Quit the log viewer"
 msgstr "የመግቢያ መመልከቻውን ማጥፊያ"
 
 #. Edit menu
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:836
 #: ../mate-dictionary/src/gdict-window.c:1306
 msgid "_Copy"
 msgstr "_ኮፒ "
 
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:836
 msgid "Copy the selection"
 msgstr "የተመረጠውን ኮፒ ማድረጊያ"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:838
 #: ../mate-dictionary/src/gdict-window.c:1308
 msgid "Select _All"
 msgstr "_ሁሉንም መምረጫ"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:838
 msgid "Select the entire log"
 msgstr "ጠቅላላ መግቢያውን መምረጫ"
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:840
 msgid "_Find..."
 msgstr "_መፈለጊያ..."
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:840
 msgid "Find a word or phrase in the log"
 msgstr "በ መግቢያ ውስጥ አረፍተ ነገር መፈለጊያ "
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:843
 msgid "Zoom _In"
 msgstr "በቅርብ _ማሳያ"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:843
 msgid "Bigger text size"
 msgstr "በትልቅ የጽሁፍ መጠን "
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:845
 msgid "Zoom _Out"
 msgstr "በርቀት _ማሳያ"
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:845
 msgid "Smaller text size"
 msgstr "በትንሽ የጽሁፍ መጠን "
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:847
 msgid "_Normal Size"
 msgstr "የ_ተለመደ መጠን"
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:847
 msgid "Normal text size"
 msgstr "በመደበኛ የጽሁፍ መጠን "
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:850
 msgid "Manage Filters"
 msgstr "ማጣሪያዎችን አስተዳዳሪ "
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:850
 msgid "Manage filters"
 msgstr "ማጣሪያዎችን አስተዳዳሪ "
 
-#: ../logview/src/logview-window.c:846
+#: ../logview/src/logview-window.c:853
 msgid "Open the help contents for the log viewer"
 msgstr "የ እርዳታ ይዞታዎች መክፈቻ ለ መግቢያ መመልከቻ"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:855
 #: ../mate-dictionary/src/gdict-applet.c:1190
 #: ../mate-dictionary/src/gdict-window.c:1343
 msgid "_About"
 msgstr "_ስለ"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:855
 msgid "Show the about dialog for the log viewer"
 msgstr "ስለ መግቢያ መመልከቻ ንግግር ማሳያ"
 
-#: ../logview/src/logview-window.c:853
+#: ../logview/src/logview-window.c:860
 msgid "_Statusbar"
 msgstr "የ _ሁኔታ መደርደሪያ "
 
-#: ../logview/src/logview-window.c:853
+#: ../logview/src/logview-window.c:860
 msgid "Show Status Bar"
 msgstr "የሁኔታውች መደርደሪያ "
 
-#: ../logview/src/logview-window.c:855
+#: ../logview/src/logview-window.c:862
 msgid "Side _Pane"
 msgstr "የ ጎን _ክፍል "
 
-#: ../logview/src/logview-window.c:855
+#: ../logview/src/logview-window.c:862
 msgid "Show Side Pane"
 msgstr "የ ጎን ክፍል ማሳያ "
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:864
 msgid "Show matches only"
 msgstr "ተመሳሳይ ብቻ ማሳያ"
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:864
 msgid "Only show lines that match one of the given filters"
 msgstr "አንድ የ ተሰጠውን ማጣሪያ የሚመሳሰል መስመር ብቻ ማሳያ"
 
-#: ../logview/src/logview-window.c:989
+#: ../logview/src/logview-window.c:996
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr "ማንበብ አልተቻለም ከ \"%s\""
 
-#: ../logview/src/logview-window.c:1414
+#: ../logview/src/logview-window.c:1421
 msgid "Version: "
 msgstr "እትም: "
 
-#: ../logview/src/logview-window.c:1522
+#: ../logview/src/logview-window.c:1529
 msgid "Could not open the following files:"
 msgstr "የሚከተሉትን ፋይሎች መክፈት አልተቻለም: "
 
@@ -2329,19 +2349,33 @@ msgstr ""
 msgid "Show GDict Options"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-about.c:56
+#: ../mate-dictionary/src/gdict-about.c:57
 #: ../mate-dictionary/src/gdict-applet.c:589
 msgid "Look up words in dictionaries"
 msgstr "ቃላቶቹን በመዝገበ ቃላቱ ላይ መመልከቻ "
 
-#: ../mate-dictionary/src/gdict-about.c:77
+#: ../mate-dictionary/src/gdict-about.c:70
+msgid ""
+"You should have received a copy of the GNU General Public License along with"
+" this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin St, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"እርስዎ ኮፒ ማግኘት ይችላሉ ከ GNU General Public License along with this program; if "
+"not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth "
+"Floor, Boston, MA 02110-1301, USA."
+
+#: ../mate-dictionary/src/gdict-about.c:87
 #: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:607
 #: ../mate-dictionary/src/gdict-window.c:1896
 msgid "Dictionary"
 msgstr "መዝገበ ቃላት"
 
-#: ../mate-dictionary/src/gdict-about.c:79
+#: ../mate-dictionary/src/gdict-about.c:89
+msgid "About Dictionary"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-about.c:90
 msgid ""
 "Copyright © 2005-2006 Emmanuele Bassi\n"
 "Copyright © 2011-2019 MATE developers"
@@ -2680,7 +2714,7 @@ msgstr ""
 
 #: ../mate-dictionary/src/gdict-window.c:1311
 msgid "Find a word or phrase in the document"
-msgstr "በሰነዱ ውስጥ ቃላት ወይንም ሀረግ መፈለጊያ "
+msgstr "በ ሰነዱ ውስጥ ቃላት ወይንም ሀረግ መፈለጊያ "
 
 #: ../mate-dictionary/src/gdict-window.c:1313
 msgid "Find Ne_xt"

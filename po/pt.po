@@ -4,27 +4,28 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Luis Filipe Teixeira <lufilte@gmail.com>, 2018
-# Manel Tinoco <maneltinoco@gmail.com>, 2018
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2018
-# MS <manuelarodsilva@gmail.com>, 2018
-# Sérgio Marques <smarquespt@gmail.com>, 2018
-# Carlos Moreira, 2018
-# Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# alfalb_mansil, 2018
-# ogalho Carlos Dias Martins <ogalho@gmail.com>, 2018
-# Diogo Oliveira <diogodesigns@gmail.com>, 2018
-# José Vieira <jvieira33@sapo.pt>, 2018
-# Rui <xymarior@yandex.com>, 2018
+# Wolfgang Ulbrich <mate@raveit.de>, 2019
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2019
+# Luis Filipe Teixeira <lufilte@gmail.com>, 2019
+# MS <manuelarodsilva@gmail.com>, 2019
+# Manel Tinoco <maneltinoco@gmail.com>, 2019
+# Sérgio Marques <smarquespt@gmail.com>, 2019
+# Stefano Karapetsas <stefano@karapetsas.com>, 2019
+# alfalb_mansil, 2019
+# ogalho Carlos Dias Martins <ogalho@gmail.com>, 2019
+# Diogo Oliveira <diogodesigns@gmail.com>, 2019
+# José Vieira <jvieira33@sapo.pt>, 2019
+# Carlos Moreira, 2019
+# Rui <xymarior@yandex.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-16 17:18+0100\n"
-"PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: Rui <xymarior@yandex.com>, 2018\n"
+"POT-Creation-Date: 2019-03-24 11:19+0100\n"
+"PO-Revision-Date: 2019-03-16 17:44+0000\n"
+"Last-Translator: Rui <xymarior@yandex.com>, 2019\n"
 "Language-Team: Portuguese (https://www.transifex.com/mate/teams/13566/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -74,7 +75,7 @@ msgid "S_can Remote Folder..."
 msgstr "Analisar pasta _remota..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../logview/src/logview-window.c:817
+#: ../logview/src/logview-window.c:824
 #: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Edit"
 msgstr "_Editar"
@@ -88,7 +89,7 @@ msgid "_Collapse All"
 msgstr "Re_colher tudo"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../logview/src/logview-window.c:818
+#: ../logview/src/logview-window.c:825
 #: ../mate-dictionary/src/gdict-window.c:1289
 msgid "_View"
 msgstr "_Ver"
@@ -106,7 +107,7 @@ msgid "All_ocated Space"
 msgstr "Espaço al_ocado"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../logview/src/logview-window.c:820
+#: ../logview/src/logview-window.c:827
 #: ../mate-dictionary/src/gdict-applet.c:1187
 #: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_Help"
@@ -114,12 +115,13 @@ msgstr "A_juda"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../logview/src/logview-window.c:846
+#: ../logview/src/logview-window.c:853
 #: ../mate-dictionary/src/gdict-window.c:1341
 msgid "_Contents"
 msgstr "_Conteúdo"
 
 #: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1241
+#: ../baobab/src/callbacks.c:107
 msgid "Disk Usage Analyzer"
 msgstr "Analisador de Utilização do Disco"
 
@@ -253,12 +255,12 @@ msgstr "disponível:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:242 ../baobab/src/baobab.c:299
-#: ../baobab/src/callbacks.c:257
+#: ../baobab/src/callbacks.c:272
 msgid "Calculating percentage bars..."
 msgstr "Calcular barras de percentagem..."
 
 #: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
-#: ../baobab/src/callbacks.c:261
+#: ../baobab/src/callbacks.c:276
 msgid "Ready"
 msgstr "Pronto"
 
@@ -278,8 +280,8 @@ msgstr "contém atalhos fixos para:"
 #, c-format
 msgid "%5d item"
 msgid_plural "%5d items"
-msgstr[0] "%5d item"
-msgstr[1] "%5d items"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../baobab/src/baobab.c:592
 msgid "Could not initialize monitoring"
@@ -570,7 +572,13 @@ msgstr "Detalhes: %s"
 msgid "There was an error displaying help."
 msgstr "Ocorreu um erro ao mostrar a ajuda."
 
-#: ../baobab/src/callbacks.c:76 ../logview/src/logview-about.h:49
+#: ../baobab/src/callbacks.c:77 ../logview/src/logview-about.h:45
+#: ../mate-dictionary/src/gdict-about.c:52
+msgid "MATE Documentation Team"
+msgstr "Equipa de Documentação do MATE"
+
+#: ../baobab/src/callbacks.c:82 ../logview/src/logview-about.h:50
+#: ../mate-dictionary/src/gdict-about.c:60
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -582,7 +590,8 @@ msgstr ""
 "Software Foundation; ou a versão 2 da licença, ou (por opção) qualquer "
 "versão posterior."
 
-#: ../baobab/src/callbacks.c:81 ../logview/src/logview-about.h:53
+#: ../baobab/src/callbacks.c:87 ../logview/src/logview-about.h:54
+#: ../mate-dictionary/src/gdict-about.c:65
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -594,39 +603,48 @@ msgstr ""
 "UM DETERMINADO PROPÓSITO. Consulte a Licença Pública Genérica GNU para mais "
 "informações."
 
-#: ../baobab/src/callbacks.c:86 ../logview/src/logview-about.h:57
+#: ../baobab/src/callbacks.c:92 ../logview/src/logview-about.h:58
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
-"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA."
 msgstr ""
-"Deverá ter recebido uma cópia da Licença Pública Genérica GNU juntamente com"
-" este programa; caso contrário, escreva para a Free Software Foundation, "
-"Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, EUA."
 
-#: ../baobab/src/callbacks.c:95
+#: ../baobab/src/callbacks.c:109
+msgid "About Disk Usage Analyzer"
+msgstr ""
+
+#: ../baobab/src/callbacks.c:110
 msgid "A graphical tool to analyze disk usage."
 msgstr "Uma ferramenta gráfica de análise de discos."
 
-#: ../baobab/src/callbacks.c:97
+#: ../baobab/src/callbacks.c:111
 msgid ""
 "Copyright © 2005-2010 Fabio Marzocca\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
+"Direitos de Autor © 2005-2010 Fabio Marzocca\n"
+"Direitos de Autor © 2011-2019 programadores do MATE"
 
 #. translator credits
-#: ../baobab/src/callbacks.c:102 ../logview/src/logview-about.h:63
-#: ../mate-dictionary/src/gdict-about.c:55
+#: ../baobab/src/callbacks.c:117 ../logview/src/logview-about.h:64
+#: ../mate-dictionary/src/gdict-about.c:56
 msgid "translator-credits"
-msgstr "créditos de tradução"
+msgstr ""
+"José Vieira, https://www.transifex.com/user/profile/zeh/ , 2018\n"
+"Wolfgang Ulbrich, https://www.transifex.com/user/profile/raveit65/ , 2018\n"
+"Manel Tinoco, https://www.transifex.com/user/profile/maneltinocodefa_gtc_NjkwMT/ , 2018\n"
+"manuelarodsilva, https://www.transifex.com/user/profile/manuelarodsilva/ , 2018\n"
+"Carlos Moreira, https://www.transifex.com/user/profile/crolidge/ , 2018\n"
+"Rui, https://www.transifex.com/user/profile/xendez/ , 2018"
 
-#: ../baobab/src/callbacks.c:200
+#: ../baobab/src/callbacks.c:215
 #: ../gsearchtool/src/gsearchtool-callbacks.c:514
 #: ../gsearchtool/src/gsearchtool-callbacks.c:864
 msgid "The document does not exist."
 msgstr "O documento não existe."
 
-#: ../baobab/src/callbacks.c:281
+#: ../baobab/src/callbacks.c:296
 msgid "The folder does not exist."
 msgstr "A pasta não existe."
 
@@ -726,15 +744,15 @@ msgstr ""
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:12
 msgid "Search Result Columns Order"
-msgstr "Ordem das Colunas nos Resultados de Busca"
+msgstr "Ordem das Colunas nos Resultados de Procuras"
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:13
 msgid ""
 "This key defines the order of the columns in the search results. This key "
 "should not be modified by the user."
 msgstr ""
-"Esta chave determina a ordem das colunas nos resultados de busca. Esta chave"
-" não deve ser modificada pelo utilizador."
+"Esta chave determina a ordem das colunas nos resultados de procuras. Esta "
+"chave não deve ser modificada pelo utilizador."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:14
 msgid "Default Window Width"
@@ -796,8 +814,8 @@ msgid ""
 "This key determines if the \"Date modified less than\" search option is "
 "selected when the search tool is started."
 msgstr ""
-"Esta chave determina se a opção de busca \"Data alterada há menos de\" está "
-"selecionada quando a ferramenta de busca é iniciada."
+"Esta chave determina se a opção de procurar \"Data alterada há menos de\" "
+"está selecionada quando a ferramenta de busca é iniciada."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:24
 msgid ""
@@ -1095,15 +1113,15 @@ msgstr "Não se encontraram ficheiros"
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
-msgstr[0] "%'d Ficheiro Encontrado"
-msgstr[1] "%'d Ficheiros Encontrados"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gsearchtool/src/gsearchtool.c:1014 ../gsearchtool/src/gsearchtool.c:1052
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
-msgstr[0] "%'d ficheiro encontrado"
-msgstr[1] "%'d ficheiros encontrados"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gsearchtool/src/gsearchtool.c:1143
 msgid "Entry changed called for a non entry option!"
@@ -1331,16 +1349,16 @@ msgstr "Não pôde abrir o documento de ajuda."
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] "Tem a certeza que que abrir %d documento?"
-msgstr[1] "Tem a certeza que quer abrir %d documentos?"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:355
 #: ../gsearchtool/src/gsearchtool-callbacks.c:557
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
-msgstr[0] "Isto irá abrir %d janela separada."
-msgstr[1] "Isto irá abrir %d janelas separadas."
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:400
 #, c-format
@@ -1364,8 +1382,8 @@ msgstr "Não existe um visualizador instalado capaz de mostrar o documento."
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] "Tem a certeza que quer abrir %d pasta?"
-msgstr[1] "Tem a certeza que quer abrir %d pastas?"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:710
 #, c-format
@@ -1430,7 +1448,7 @@ msgstr "_Guardar Resultados Como..."
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:1633
 msgid "Save Search Results As..."
-msgstr "Guardar Resultados de Busca Como..."
+msgstr "Guardar Resultados de Procura Como..."
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:1662
 msgid "Could not save document."
@@ -1693,6 +1711,10 @@ msgstr "Fundo:"
 msgid "Effect:"
 msgstr "Efeito:"
 
+#: ../logview/src/logview-about.h:42 ../mate-dictionary/src/gdict-about.c:49
+msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
+msgstr ""
+
 #: ../logview/src/logview-app.c:377
 #, c-format
 msgid "Impossible to open the file %s"
@@ -1792,7 +1814,7 @@ msgstr " - Navegar e monitorizar registos"
 msgid "Log Viewer"
 msgstr "Visualizador de Registos"
 
-#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:767
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:773
 msgid "System Log Viewer"
 msgstr "Visualizador de Registos do Sistema"
 
@@ -1826,157 +1848,163 @@ msgstr "Translineação"
 msgid "Not found"
 msgstr "Não encontrado"
 
-#: ../logview/src/logview-window.c:769
+#: ../logview/src/logview-window.c:775
+msgid "About System Log Viewer"
+msgstr ""
+
+#: ../logview/src/logview-window.c:776
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
+"Direitos de Autor © 1998-2008 Free Software Foundation, Inc.\n"
+"Direitos de Autor © 2011-2019 programadores do MATE"
 
-#: ../logview/src/logview-window.c:773
+#: ../logview/src/logview-window.c:780
 msgid "A system log viewer for MATE."
 msgstr "Um visualizador de registos de Sistema do MATE."
 
-#: ../logview/src/logview-window.c:816
+#: ../logview/src/logview-window.c:823
 #: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_File"
 msgstr "_Ficheiro"
 
-#: ../logview/src/logview-window.c:819
+#: ../logview/src/logview-window.c:826
 msgid "_Filters"
 msgstr "_Filtros"
 
-#: ../logview/src/logview-window.c:822
+#: ../logview/src/logview-window.c:829
 msgid "_Open..."
 msgstr "_Abrir..."
 
-#: ../logview/src/logview-window.c:822
+#: ../logview/src/logview-window.c:829
 msgid "Open a log from file"
 msgstr "Abrir um registo do ficheiro "
 
-#: ../logview/src/logview-window.c:824
+#: ../logview/src/logview-window.c:831
 #: ../mate-dictionary/src/gdict-window.c:1302
 msgid "_Close"
 msgstr "Fe_char"
 
-#: ../logview/src/logview-window.c:824
+#: ../logview/src/logview-window.c:831
 msgid "Close this log"
 msgstr "Fechar este registo"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:833
 msgid "_Quit"
 msgstr "_Sair"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:833
 msgid "Quit the log viewer"
 msgstr "Sair do visualizador de registo"
 
 #. Edit menu
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:836
 #: ../mate-dictionary/src/gdict-window.c:1306
 msgid "_Copy"
 msgstr "_Copiar"
 
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:836
 msgid "Copy the selection"
 msgstr "Copiar a seleção"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:838
 #: ../mate-dictionary/src/gdict-window.c:1308
 msgid "Select _All"
 msgstr "Selecion_ar Tudo"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:838
 msgid "Select the entire log"
 msgstr "Selecionar todo o registo"
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:840
 msgid "_Find..."
 msgstr "_Localizar..."
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:840
 msgid "Find a word or phrase in the log"
 msgstr "Procurar uma palavra ou frase no registo"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:843
 msgid "Zoom _In"
 msgstr "_Ampliar"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:843
 msgid "Bigger text size"
 msgstr "Tamanho maior do texto"
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:845
 msgid "Zoom _Out"
 msgstr "_Reduzir"
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:845
 msgid "Smaller text size"
 msgstr "Tamanho menor do texto"
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:847
 msgid "_Normal Size"
 msgstr "Tamanho _normal"
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:847
 msgid "Normal text size"
 msgstr "Tamanho normal do texto"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:850
 msgid "Manage Filters"
 msgstr "Gerir Filtros"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:850
 msgid "Manage filters"
 msgstr "Gerir Filtros"
 
-#: ../logview/src/logview-window.c:846
+#: ../logview/src/logview-window.c:853
 msgid "Open the help contents for the log viewer"
 msgstr "Abrir o conteúdo da ajuda do visualizador do registo"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:855
 #: ../mate-dictionary/src/gdict-applet.c:1190
 #: ../mate-dictionary/src/gdict-window.c:1343
 msgid "_About"
 msgstr "_Sobre"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:855
 msgid "Show the about dialog for the log viewer"
 msgstr "Mostrar o diálogo Sobre do visualizador do registo"
 
-#: ../logview/src/logview-window.c:853
+#: ../logview/src/logview-window.c:860
 msgid "_Statusbar"
 msgstr "_Barra de estado"
 
-#: ../logview/src/logview-window.c:853
+#: ../logview/src/logview-window.c:860
 msgid "Show Status Bar"
 msgstr "Mostrar Barra de Estado"
 
-#: ../logview/src/logview-window.c:855
+#: ../logview/src/logview-window.c:862
 msgid "Side _Pane"
 msgstr "_Painel lateral"
 
-#: ../logview/src/logview-window.c:855
+#: ../logview/src/logview-window.c:862
 msgid "Show Side Pane"
 msgstr "Mostrar painel lateral"
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:864
 msgid "Show matches only"
 msgstr "Mostrar apenas ocorrências"
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:864
 msgid "Only show lines that match one of the given filters"
 msgstr "Apenas mostrar linhas que correspondem a um dos filtros dados"
 
-#: ../logview/src/logview-window.c:989
+#: ../logview/src/logview-window.c:996
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr "Incapaz de ler \"%s\""
 
-#: ../logview/src/logview-window.c:1414
+#: ../logview/src/logview-window.c:1421
 msgid "Version: "
 msgstr "Versão:"
 
-#: ../logview/src/logview-window.c:1522
+#: ../logview/src/logview-window.c:1529
 msgid "Could not open the following files:"
 msgstr "Não se pôde abrir os seguintes ficheiros:"
 
@@ -2018,11 +2046,11 @@ msgstr "Fábrica da applet dicionário"
 
 #: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:3
 msgid "Dictionary Look up"
-msgstr "Busca no Dicionário"
+msgstr "Procurar no Dicionário"
 
 #: ../mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.in.in.h:4
 msgid "Look up words in a dictionary"
-msgstr "Buscar palavras num dicionário"
+msgstr "Procurar palavras num dicionário"
 
 #: ../mate-dictionary/data/org.mate.dictionary.gschema.xml.in.h:1
 msgid "The default database to use"
@@ -2432,23 +2460,39 @@ msgstr "Opções GDict"
 msgid "Show GDict Options"
 msgstr "Mostrar Opções de GDict"
 
-#: ../mate-dictionary/src/gdict-about.c:56
+#: ../mate-dictionary/src/gdict-about.c:57
 #: ../mate-dictionary/src/gdict-applet.c:589
 msgid "Look up words in dictionaries"
 msgstr "Procurar palavras nos dicionários"
 
-#: ../mate-dictionary/src/gdict-about.c:77
+#: ../mate-dictionary/src/gdict-about.c:70
+msgid ""
+"You should have received a copy of the GNU General Public License along with"
+" this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin St, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"Deverá ter recebido uma cópia da Licença Pública Genérica GNU juntamente com"
+" este programa; caso contrário, escreva para Free Software Foundation, Inc.,"
+" 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA."
+
+#: ../mate-dictionary/src/gdict-about.c:87
 #: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:607
 #: ../mate-dictionary/src/gdict-window.c:1896
 msgid "Dictionary"
 msgstr "Dicionário"
 
-#: ../mate-dictionary/src/gdict-about.c:79
+#: ../mate-dictionary/src/gdict-about.c:89
+msgid "About Dictionary"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-about.c:90
 msgid ""
 "Copyright © 2005-2006 Emmanuele Bassi\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
+"Direitos de Autor © 2005-2006 Emmanuele Bassi\n"
+"Direitos de Autor © 2011-2019 programadores do MATE"
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
@@ -2736,8 +2780,8 @@ msgstr "Não se encontraram definições"
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
-msgstr[0] "Definição encontrada"
-msgstr[1] "%d definições encontradas"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../mate-dictionary/src/gdict-window.c:605
 #, c-format
@@ -2755,7 +2799,7 @@ msgstr "_Novo"
 
 #: ../mate-dictionary/src/gdict-window.c:1295
 msgid "New look up"
-msgstr "Nova busca"
+msgstr "Nova procura"
 
 #: ../mate-dictionary/src/gdict-window.c:1296
 msgid "_Save a Copy..."
@@ -2837,7 +2881,7 @@ msgstr "_Palavras Semelhantes"
 
 #: ../mate-dictionary/src/gdict-window.c:1333
 msgid "Dictionary Sources"
-msgstr "Fontes de Dicionários"
+msgstr "Fontes do Dictionary"
 
 #: ../mate-dictionary/src/gdict-window.c:1335
 msgid "Available _Databases"
@@ -3045,7 +3089,7 @@ msgstr "Erro ao carregar a página de ajuda"
 
 #: ../mate-screenshot/src/mate-screenshot.c:250
 msgid "None"
-msgstr "Nenhuma"
+msgstr "Nenhum"
 
 #: ../mate-screenshot/src/mate-screenshot.c:251
 msgid "Drop shadow"
