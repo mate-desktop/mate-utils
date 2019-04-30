@@ -430,7 +430,6 @@ logview_prefs_remove_stored_log (LogviewPrefs *prefs, GFile *target)
   GFile *stored;
   GPtrArray *new_value;
   gint idx;
-  gboolean removed = FALSE;
 
   g_assert (LOGVIEW_IS_PREFS (prefs));
   g_assert (G_IS_FILE (target));
