@@ -882,7 +882,7 @@ get_context_from_loader (GdictApplet *applet)
 
       gdict_show_error_dialog (NULL,
                                _("Unable to find dictionary source"),
-                               NULL);
+                               detail);
       
       g_free (detail);
 
