@@ -17,20 +17,37 @@ public_icons = \
 	hicolor_apps_scalable_mate-system-log-symbolic.svg \
 	$(NULL)
 
+if HAVE_INKSCAPE
 hicolor_apps_16x16_mate-system-log.png: logview.svg
-	$(INKSCAPE) -z $^ --export-area=303:65:319:81 -w=16 -h=16 -e=$@
+	$(if $(wildcard $(INKSCAPE)), \
+		$(info $(shell $(INKSCAPE) -z $^ --export-area=303:65:319:81 -w=16 -h=16 -e=$@)), \
+		$(error could not locate inkscape) \
+	)
 
 hicolor_apps_22x22_mate-system-log.png: logview.svg
-	$(INKSCAPE) -z $^ --export-area=303:101:325:123 -w=22 -h=22 -e=$@
+	$(if $(wildcard $(INKSCAPE)), \
+		$(info $(shell $(INKSCAPE) -z $^ --export-area=303:101:325:123 -w=22 -h=22 -e=$@)), \
+		$(error could not locate inkscape) \
+	)
 
 hicolor_apps_32x32_mate-system-log.png: logview.svg
-	$(INKSCAPE) -z $^ --export-area=304:142:336:174 -w=32 -h=32 -e=$@
+	$(if $(wildcard $(INKSCAPE)), \
+		$(info $(shell $(INKSCAPE) -z $^ --export-area=304:142:336:174 -w=32 -h=32 -e=$@)), \
+		$(error could not locate inkscape) \
+	)
 
 hicolor_apps_48x48_mate-system-log.png: logview.svg
-	$(INKSCAPE) -z $^ --export-area=296:202:344:250 -w=48 -h=48 -e=$@
+	$(if $(wildcard $(INKSCAPE)), \
+		$(info $(shell $(INKSCAPE) -z $^ --export-area=296:202:344:250 -w=48 -h=48 -e=$@)), \
+		$(error could not locate inkscape) \
+	)
 
 hicolor_apps_256x256_mate-system-log.png: logview.svg
-	$(INKSCAPE) -z $^ --export-area=33:11:289:267 -w=256 -h=256 -e=$@
+	$(if $(wildcard $(INKSCAPE)), \
+		$(info $(shell $(INKSCAPE) -z $^ --export-area=33:11:289:267 -w=256 -h=256 -e=$@)), \
+		$(error could not locate inkscape) \
+	)
+endif
 
 noinst_DATA = \
 	logview.svg \
@@ -43,7 +60,7 @@ EXTRA_DIST = \
 
 ###############################################################################
 
-install-icons:
+install-icons: | $(public_icons)
 	for icon in $(public_icons); do \
 		THEME=`echo $$icon | cut -d_ -f1`; \
 		CONTEXT=`echo $$icon | cut -d_ -f2`; \
@@ -80,7 +97,7 @@ update-icon-cache:
 	fi
 
 .PHONY: build-png-icons clean-png-icons
-build-png-icons: $(png_icons)
+build-png-icons: | $(png_icons)
 
 clean-png-icons:
 	rm -f $(png_icons)
