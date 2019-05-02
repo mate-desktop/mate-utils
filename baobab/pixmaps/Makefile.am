@@ -11,8 +11,10 @@ public_icons = \
 	hicolor_apps_scalable_mate-disk-usage-analyzer.svg \
 	$(NULL)
 
+if HAVE_RSVG_CONVERT
 hicolor_apps_%.png: hicolor_apps_scalable_mate-disk-usage-analyzer.svg
 	$(RSVG_CONVERT) -w $(word 1, $(subst x, ,$(word 1,$(subst _, ,$*)))) -h $(word 2, $(subst x, ,$(word 1,$(subst _, ,$*)))) $^ -o $@
+endif
 
 EXTRA_DIST = \
 	$(public_icons)	\
@@ -20,7 +22,7 @@ EXTRA_DIST = \
 
 ###############################################################################
 
-install-icons: $(public_icons)
+install-icons: | $(public_icons)
 	for icon in $(public_icons); do \
 		THEME=`echo $$icon | cut -d_ -f1`; \
 		CONTEXT=`echo $$icon | cut -d_ -f2`; \
@@ -57,7 +59,7 @@ update-icon-cache:
 	fi
 
 .PHONY: build-png-icons clean-png-icons
-build-png-icons: $(png_icons)
+build-png-icons: | $(png_icons)
 
 clean-png-icons:
 	rm -f $(png_icons)

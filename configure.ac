@@ -31,13 +31,9 @@ AC_PATH_PROG(GLIB_MKENUMS, [glib-mkenums])
 
 dnl ICONS: convert svg to png
 AC_PATH_PROG(RSVG_CONVERT, rsvg-convert)
-if test x$RSVG_CONVERT = x ; then
-    AC_MSG_ERROR([could not locate rsvg-convert])
-fi
+AM_CONDITIONAL([HAVE_RSVG_CONVERT], [test "x$RSVG_CONVERT" != x])
 AC_PATH_PROG(INKSCAPE, inkscape)
-if test x$INKSCAPE = x ; then
-    AC_MSG_ERROR([could not locate inkscape])
-fi
+AM_CONDITIONAL([HAVE_INKSCAPE], [test "x$INKSCAPE" != x])
 
 MATE_COMPILE_WARNINGS([yes])
 
