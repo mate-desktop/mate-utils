@@ -851,8 +851,6 @@ gdict_window_load_state (GdictWindow *window)
 {
   gchar *state_file;
   GKeyFile *state_key;
-  gchar *data;
-  gsize data_len;
   GError *error;
 
   state_file = g_build_filename (g_get_user_config_dir (),
@@ -1628,7 +1626,6 @@ gdict_window_constructor (GType                  type,
 {
   GObject *object;
   GdictWindow *window;
-  gboolean is_maximized;
   GtkWidget *hbox;
   GtkWidget *handle;
   GtkWidget *frame1, *frame2;
@@ -1637,12 +1634,10 @@ gdict_window_constructor (GType                  type,
   GtkActionGroup *action_group;
   GtkAccelGroup *accel_group;
   PangoFontDescription *font_desc;
-  gchar *font_name, *sidebar_page;
+  gchar *font_name;
   GError *error;
-  gboolean sidebar_visible;
-  gboolean statusbar_visible;
   GtkAllocation allocation;
-  
+
   object = G_OBJECT_CLASS (gdict_window_parent_class)->constructor (type, n_construct_properties, construct_params);
   window = GDICT_WINDOW (object);
 

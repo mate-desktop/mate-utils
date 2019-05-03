@@ -377,7 +377,6 @@ static gboolean
 read_gzip_header (GInputStream *is,
                   time_t *modification_time)
 {
-  gboolean res;
 	guchar buffer[GZIP_HEADER_SIZE];
 	gssize bytes, to_skip;
 	guint mode;
@@ -494,7 +493,6 @@ static gboolean
 fill_buffer (GZHandle *gz,
              gsize num_bytes)
 {
-  gboolean res;
   gsize count;
 
   z_stream * zstream = &gz->zstream;

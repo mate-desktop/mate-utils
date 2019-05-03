@@ -646,7 +646,6 @@ baobab_create_toolbar (void)
 	GtkWidget *toolbar;
 	GtkToolItem *item;
 	GtkToolItem *separator;
-	gboolean visible;
 
 	toolbar = GTK_WIDGET (gtk_builder_get_object (baobab.main_ui, "toolbar1"));
 	if (toolbar == NULL) {
@@ -686,8 +685,6 @@ baobab_create_toolbar (void)
 static void
 baobab_create_statusbar (void)
 {
-	gboolean visible;
-
 	baobab.statusbar = GTK_WIDGET (gtk_builder_get_object (baobab.main_ui,
 							       "statusbar1"));
 	if (baobab.statusbar == NULL) {
