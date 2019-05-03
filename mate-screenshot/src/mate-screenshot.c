@@ -1119,7 +1119,6 @@ get_desktop_dir (void)
 {
   gboolean desktop_is_home_dir = FALSE;
   gchar *desktop_dir;
-  gboolean schema_exists = FALSE;
 
   /* Check if caja schema is installed before trying to read settings */
   GSettingsSchema *schema = g_settings_schema_source_lookup (g_settings_schema_source_get_default (),
