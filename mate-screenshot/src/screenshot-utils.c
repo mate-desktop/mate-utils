@@ -389,7 +389,6 @@ screenshot_select_area_async (SelectAreaCallback callback)
   GdkSeat *seat;
   GdkGrabStatus res;
   select_area_filter_data  data;
-  GdkRectangle *rectangle;
   CallbackData *cb_data;
 
   data.rect.x = 0;
