@@ -279,19 +279,19 @@ setup_case_insensitive_arguments (GSearchWindow * gsearch)
 	if ((cmd_stderr != NULL) && (strlen (cmd_stderr) == 0)) {
 		g_free (cmd_stderr);
 		g_free (grep_cmd);
-		
+
 		/* check grep command for -I argument compatibility, bug 568840 */
 		grep_cmd = g_strdup_printf ("%s -i -I 'string' /dev/null", GREP_COMMAND);
 	 	g_spawn_command_line_sync (grep_cmd, NULL, &cmd_stderr, NULL, NULL);
-		
+
 		if ((cmd_stderr != NULL) && (strlen (cmd_stderr) == 0)) {
 	 		GSearchOptionTemplates[SEARCH_CONSTRAINT_CONTAINS_THE_TEXT].option =
 			    g_strdup_printf ("'!' -type p -exec %s -i -I -c '%%s' {} \\;", GREP_COMMAND);
  		}
 		else {
 	 		GSearchOptionTemplates[SEARCH_CONSTRAINT_CONTAINS_THE_TEXT].option =
-			    g_strdup_printf ("'!' -type p -exec %s -i -c '%%s' {} \\;", GREP_COMMAND);		
-		}		
+			    g_strdup_printf ("'!' -type p -exec %s -i -c '%%s' {} \\;", GREP_COMMAND);
+		}
 	}
 	else {
  		GSearchOptionTemplates[SEARCH_CONSTRAINT_CONTAINS_THE_TEXT].option =
@@ -867,7 +867,7 @@ add_file_to_search_results (const gchar * file,
 	if (gtk_tree_view_get_headers_visible (GTK_TREE_VIEW (gsearch->search_results_tree_view)) == FALSE) {
 		gtk_tree_view_set_headers_visible (GTK_TREE_VIEW (gsearch->search_results_tree_view), TRUE);
 	}
-	
+
 	g_file = g_file_new_for_path (file);
 	file_info = g_file_query_info (g_file, "standard::*,time::modified,thumbnail::path", 0, NULL, NULL);
 
@@ -876,7 +876,7 @@ add_file_to_search_results (const gchar * file,
 		readable_size = g_format_size (g_file_info_get_size (file_info));
 
 	g_file_info_get_modification_time (file_info, &time_val);
-	readable_date = get_readable_date (gsearch->search_results_date_format, time_val.tv_sec); 
+	readable_date = get_readable_date (gsearch->search_results_date_format, time_val.tv_sec);
 
 	base_name = g_path_get_basename (file);
 	dir_name = g_path_get_dirname (file);
@@ -1919,7 +1919,7 @@ spawn_search_command (GSearchWindow * gsearch,
 		gtk_tree_model_foreach (GTK_TREE_MODEL (gsearch->search_results_list_store),
 					(GtkTreeModelForeachFunc) tree_model_iter_free_monitor, gsearch);
 		gtk_list_store_clear (GTK_LIST_STORE (gsearch->search_results_list_store));
-		
+
 		gtk_tree_view_column_set_visible (gsearch->search_results_folder_column, TRUE);
 		gtk_tree_view_column_set_visible (gsearch->search_results_size_column, TRUE);
 		gtk_tree_view_column_set_visible (gsearch->search_results_type_column, TRUE);
@@ -2311,7 +2311,7 @@ create_search_results_section (GSearchWindow * gsearch)
 	gtk_box_pack_start (GTK_BOX (hbox), label, FALSE, TRUE, 0);
 
 	gsearch->progress_spinner = gtk_spinner_new ();
-	gtk_widget_set_size_request (gsearch->progress_spinner, 
+	gtk_widget_set_size_request (gsearch->progress_spinner,
                                      GTK_ICON_SIZE_MENU, GTK_ICON_SIZE_MENU);
 	gtk_box_pack_start (GTK_BOX (hbox), gsearch->progress_spinner, FALSE, FALSE, 0);
 
@@ -2553,7 +2553,7 @@ set_clone_command (GSearchWindow * gsearch,
 	g_free (file_is_named_locale);
 
 	look_in_folder_locale = gtk_file_chooser_get_current_folder (GTK_FILE_CHOOSER (gsearch->look_in_folder_button));
-	
+
 	if (look_in_folder_locale == NULL) {
 		look_in_folder_locale = g_strdup ("");
 	}
@@ -2843,12 +2843,12 @@ gsearch_app_create (GSearchWindow * gsearch)
 
 	locale_string = g_settings_get_string (gsearch->mate_search_tool_settings, "look-in-folder");
 
-	if ((g_file_test (locale_string, G_FILE_TEST_EXISTS) == FALSE) || 
+	if ((g_file_test (locale_string, G_FILE_TEST_EXISTS) == FALSE) ||
 	    (g_file_test (locale_string, G_FILE_TEST_IS_DIR) == FALSE)) {
 		g_free (locale_string);
 		locale_string = g_get_current_dir ();
 	}
-	
+
 	utf8_string = g_filename_to_utf8 (locale_string, -1, NULL, NULL, NULL);
 
 	gtk_file_chooser_set_current_folder (GTK_FILE_CHOOSER (gsearch->look_in_folder_button), utf8_string);

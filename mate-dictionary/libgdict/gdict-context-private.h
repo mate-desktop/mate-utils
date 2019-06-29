@@ -62,7 +62,7 @@ struct _GdictDatabase
 {
   gchar *name;
   gchar *full_name;
-  
+
   guint ref_count;
 };
 
@@ -70,7 +70,7 @@ struct _GdictStrategy
 {
   gchar *name;
   gchar *description;
-  
+
   guint ref_count;
 };
 
@@ -78,19 +78,19 @@ struct _GdictMatch
 {
   gchar *database;
   gchar *word;
-  
+
   guint ref_count;
 };
 
 struct _GdictDefinition
 {
   gint total;
-  
+
   gchar *word;
   gchar *database_name;
   gchar *database_full;
   gchar *definition;
-  
+
   guint ref_count;
 };
 

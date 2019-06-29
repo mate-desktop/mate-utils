@@ -43,7 +43,7 @@ typedef struct _LogviewLoglist LogviewLoglist;
 typedef struct _LogviewLoglistClass LogviewLoglistClass;
 typedef struct _LogviewLoglistPrivate LogviewLoglistPrivate;
 
-struct _LogviewLoglist {	
+struct _LogviewLoglist {
   GtkTreeView parent_instance;
   LogviewLoglistPrivate *priv;
 };

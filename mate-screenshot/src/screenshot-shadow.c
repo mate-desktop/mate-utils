@@ -54,13 +54,13 @@ create_blur_filter (int radius)
   ConvFilter *filter;
   int x, y;
   double sum;
-  
+
   filter = g_new0 (ConvFilter, 1);
   filter->size = radius * 2 + 1;
   filter->data = g_new (double, filter->size * filter->size);
 
   sum = 0.0;
-  
+
   for (y = 0 ; y < filter->size; y++)
     {
       for (x = 0 ; x < filter->size; x++)
@@ -80,7 +80,7 @@ create_blur_filter (int radius)
     }
 
   return filter;
-  
+
 }
 
 static ConvFilter *
@@ -88,7 +88,7 @@ create_outline_filter (int radius)
 {
   ConvFilter *filter;
   double *iter;
-  
+
   filter = g_new0 (ConvFilter, 1);
   filter->size = radius * 2 + 1;
   filter->data = g_new (double, filter->size * filter->size);
@@ -118,7 +118,7 @@ create_effect (GdkPixbuf *src,
   int src_width, src_height;
   int src_rowstride, dest_rowstride;
   gboolean src_has_alpha;
-  
+
   guchar *src_pixels, *dest_pixels;
 
   src_has_alpha =  gdk_pixbuf_get_has_alpha (src);
@@ -132,15 +132,15 @@ create_effect (GdkPixbuf *src,
 			 TRUE,
 			 gdk_pixbuf_get_bits_per_sample (src),
 			 dest_width, dest_height);
-  
-  gdk_pixbuf_fill (dest, 0);  
-  
+
+  gdk_pixbuf_fill (dest, 0);
+
   src_pixels = gdk_pixbuf_get_pixels (src);
   src_rowstride = gdk_pixbuf_get_rowstride (src);
-  
+
   dest_pixels = gdk_pixbuf_get_pixels (dest);
   dest_rowstride = gdk_pixbuf_get_rowstride (dest);
-  
+
   for (y = 0; y < dest_height; y++)
     {
       for (x = 0; x < dest_width; x++)
@@ -150,10 +150,10 @@ create_effect (GdkPixbuf *src,
 	  src_x = x - radius;
 	  src_y = y - radius;
 
-	  /* We don't need to compute effect here, since this pixel will be 
+	  /* We don't need to compute effect here, since this pixel will be
 	   * discarded when compositing */
 	  if (src_x >= 0 && src_x < src_width &&
-	      src_y >= 0 && src_y < src_height && 
+	      src_y >= 0 && src_y < src_height &&
 	      (!src_has_alpha ||
 	       src_pixels [src_y * src_rowstride + src_x * 4 + 3] == 0xFF))
 	    continue;
@@ -169,7 +169,7 @@ create_effect (GdkPixbuf *src,
 		      src_x < 0 || src_x >= src_width)
 		    continue;
 
-		  suma += ( src_has_alpha ? 
+		  suma += ( src_has_alpha ?
 			    src_pixels [src_y * src_rowstride + src_x * 4 + 3] :
 			    0xFF ) * filter->data [i * filter->size + j];
 		}
@@ -178,7 +178,7 @@ create_effect (GdkPixbuf *src,
 	  dest_pixels [y * dest_rowstride + x * 4 + 3] = CLAMP (suma * opacity, 0x00, 0xFF);
 	}
     }
-  
+
   return dest;
 }
 
@@ -187,11 +187,11 @@ screenshot_add_shadow (GdkPixbuf **src)
 {
   GdkPixbuf *dest;
   static ConvFilter *filter = NULL;
-  
+
   if (!filter)
     filter = create_blur_filter (BLUR_RADIUS);
-  
-  dest = create_effect (*src, filter, 
+
+  dest = create_effect (*src, filter,
 			BLUR_RADIUS,
                         SHADOW_OFFSET, SHADOW_OPACITY);
 
@@ -213,11 +213,11 @@ screenshot_add_border (GdkPixbuf **src)
 {
   GdkPixbuf *dest;
   static ConvFilter *filter = NULL;
-  
+
   if (!filter)
     filter = create_outline_filter (OUTLINE_RADIUS);
-  
-  dest = create_effect (*src, filter, 
+
+  dest = create_effect (*src, filter,
 			OUTLINE_RADIUS,
                         OUTLINE_OFFSET, OUTLINE_OPACITY);
 

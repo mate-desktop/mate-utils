@@ -45,7 +45,7 @@ struct _GdictDatabaseChooser
 {
   /*< private >*/
   GtkBox parent_instance;
-  
+
   GdictDatabaseChooserPrivate *priv;
 };
 

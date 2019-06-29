@@ -186,8 +186,8 @@ load_filters (LogviewPrefs *prefs)
     }
 
     g_object_set (filter, "texttag", tag, NULL);
-    g_hash_table_insert (prefs->priv->filters, 
-                         g_strdup(tokens[FILTER_NAME]), 
+    g_hash_table_insert (prefs->priv->filters,
+                         g_strdup(tokens[FILTER_NAME]),
                          filter);
 
     g_object_ref (filter);
@@ -265,7 +265,7 @@ save_filter_foreach_func (gpointer key, gpointer value, gpointer user_data)
 
   g_free (regex);
   g_object_unref (tag);
-  
+
   g_ptr_array_add (filters, g_string_free (prefs_string, FALSE));
 }
 

@@ -59,7 +59,7 @@ struct _GdictDatabaseChooserPrivate
   GtkWidget *clear_button;
   GtkWidget *refresh_button;
   GtkWidget *buttons_box;
-  
+
   GdictContext *context;
   gint results;
 
@@ -94,7 +94,7 @@ enum
 enum
 {
   PROP_0,
-  
+
   PROP_CONTEXT,
   PROP_COUNT
 };
@@ -119,25 +119,25 @@ set_gdict_context (GdictDatabaseChooser *chooser,
 		   GdictContext         *context)
 {
   GdictDatabaseChooserPrivate *priv;
-  
+
   g_assert (GDICT_IS_DATABASE_CHOOSER (chooser));
   priv = chooser->priv;
-  
+
   if (priv->context)
     {
       if (priv->start_id)
         {
           GDICT_NOTE (CHOOSER, "Removing old context handlers");
-          
+
           g_signal_handler_disconnect (priv->context, priv->start_id);
           g_signal_handler_disconnect (priv->context, priv->match_id);
           g_signal_handler_disconnect (priv->context, priv->end_id);
-          
+
           priv->start_id = 0;
           priv->end_id = 0;
           priv->match_id = 0;
         }
-      
+
       if (priv->error_id)
         {
           g_signal_handler_disconnect (priv->context, priv->error_id);
@@ -146,7 +146,7 @@ set_gdict_context (GdictDatabaseChooser *chooser,
         }
 
       GDICT_NOTE (CHOOSER, "Removing old context");
-      
+
       g_object_unref (G_OBJECT (priv->context));
 
       priv->context = NULL;
@@ -164,7 +164,7 @@ set_gdict_context (GdictDatabaseChooser *chooser,
     }
 
   GDICT_NOTE (CHOOSER, "Setting new context");
-    
+
   priv->context = g_object_ref (context);
   priv->results = 0;
 }
@@ -176,7 +176,7 @@ gdict_database_chooser_finalize (GObject *gobject)
   GdictDatabaseChooserPrivate *priv = chooser->priv;
 
   g_free (priv->current_db);
-  
+
   G_OBJECT_CLASS (gdict_database_chooser_parent_class)->finalize (gobject);
 }
 
@@ -210,7 +210,7 @@ gdict_database_chooser_set_property (GObject      *gobject,
 				     GParamSpec   *pspec)
 {
   GdictDatabaseChooser *chooser = GDICT_DATABASE_CHOOSER (gobject);
-  
+
   switch (prop_id)
     {
     case PROP_CONTEXT:
@@ -229,7 +229,7 @@ gdict_database_chooser_get_property (GObject    *gobject,
 				     GParamSpec *pspec)
 {
   GdictDatabaseChooser *chooser = GDICT_DATABASE_CHOOSER (gobject);
-  
+
   switch (prop_id)
     {
     case PROP_CONTEXT:
@@ -400,7 +400,7 @@ static void
 gdict_database_chooser_class_init (GdictDatabaseChooserClass *klass)
 {
   GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
-  
+
   gobject_class->finalize = gdict_database_chooser_finalize;
   gobject_class->dispose = gdict_database_chooser_dispose;
   gobject_class->set_property = gdict_database_chooser_set_property;
@@ -535,7 +535,7 @@ GtkWidget *
 gdict_database_chooser_new_with_context (GdictContext *context)
 {
   g_return_val_if_fail (GDICT_IS_CONTEXT (context), NULL);
-  
+
   return g_object_new (GDICT_TYPE_DATABASE_CHOOSER,
                        "context", context,
                        NULL);
@@ -555,7 +555,7 @@ GdictContext *
 gdict_database_chooser_get_context (GdictDatabaseChooser *chooser)
 {
   g_return_val_if_fail (GDICT_IS_DATABASE_CHOOSER (chooser), NULL);
-  
+
   return chooser->priv->context;
 }
 
@@ -668,14 +668,14 @@ gdict_database_chooser_has_database (GdictDatabaseChooser *chooser,
       gtk_tree_model_get (GTK_TREE_MODEL (priv->store), &iter,
                           DB_COLUMN_NAME, &db_name,
                           -1);
-      
+
       if (strcmp (db_name, database) == 0)
         {
           g_free (db_name);
           retval = TRUE;
           break;
         }
-      
+
       g_free (db_name);
     }
   while (gtk_tree_model_iter_next (GTK_TREE_MODEL (priv->store), &iter));
@@ -754,7 +754,7 @@ database_found_cb (GdictContext  *context,
   GDICT_NOTE (CHOOSER, "DATABASE: `%s' (`%s')",
               name,
               full_name);
-  
+
   gtk_list_store_append (priv->store, &iter);
   gtk_list_store_set (priv->store, &iter,
 		      DB_COLUMN_TYPE, DATABASE_NAME,
@@ -793,7 +793,7 @@ gdict_database_chooser_refresh (GdictDatabaseChooser *chooser)
 {
   GdictDatabaseChooserPrivate *priv;
   GError *db_error;
-  
+
   g_return_if_fail (GDICT_IS_DATABASE_CHOOSER (chooser));
 
   priv = chooser->priv;
@@ -879,7 +879,7 @@ typedef struct
 {
   gchar *db_name;
   GdictDatabaseChooser *chooser;
-  
+
   guint found       : 1;
   guint do_select   : 1;
   guint do_activate : 1;
@@ -1090,7 +1090,7 @@ gdict_database_chooser_get_current_database (GdictDatabaseChooser *chooser)
   gchar *retval = NULL;
 
   g_return_val_if_fail (GDICT_IS_DATABASE_CHOOSER (chooser), NULL);
-  
+
   priv = chooser->priv;
 
   selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (priv->treeview));
@@ -1098,7 +1098,7 @@ gdict_database_chooser_get_current_database (GdictDatabaseChooser *chooser)
     return NULL;
 
   gtk_tree_model_get (model, &iter, DB_COLUMN_NAME, &retval, -1);
-  
+
   g_free (priv->current_db);
   priv->current_db = g_strdup (retval);
 

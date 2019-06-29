@@ -71,7 +71,7 @@ logview_utils_day_list_copy (GSList *days)
   return g_slist_reverse (retval);
 }
 
-gint 
+gint
 days_compare (gconstpointer a, gconstpointer b)
 {
   const Day *day1 = a, *day2 = b;
@@ -85,7 +85,7 @@ string_get_date (const char *line, char **time_string, int *timestamp_len)
   GDate *date = NULL;
   struct tm tp;
   char *cp = NULL, *timestamp = NULL;
-  
+
   /* it's safe to assume that if strptime returns NULL, it's
    * because of an error (format unmatched). being a log file, it's very
    * unlikely that there aren't any more characters after the date.
@@ -133,7 +133,7 @@ out:
  * and are then corrected to the correct year once we
  * reach the end.
  *
- * Returns: a #GSList of #Day structures. 
+ * Returns: a #GSList of #Day structures.
  */
 
 GSList *
@@ -216,7 +216,7 @@ log_read_dates (const char **buffer_lines, time_t current)
       } else {
         /* we can't find the same date here; go back to a safer range. */
         rangemax = i;
-        i = floor (((float) rangemin + (float) i) / 2.);               
+        i = floor (((float) rangemin + (float) i) / 2.);
       }
     }
 
@@ -228,7 +228,7 @@ log_read_dates (const char **buffer_lines, time_t current)
        * of the buffer: reset the parameters for the next day.
        */
       GDate *newdate = NULL;
-      
+
       for (i = day->last_line + 1; buffer_lines[i]; i++) {
         if ((newdate = string_get_date (buffer_lines[i], &date_string, &timestamp_len)) != NULL)
         break;

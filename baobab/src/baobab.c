@@ -177,7 +177,7 @@ update_scan_label (void)
 		total = g_format_size (baobab.fs.total);
 		used = g_format_size (baobab.fs.used);
 		available = g_format_size (baobab.fs.avail);
-	
+
 	/* Translators: these are labels for disk space */
 	markup = g_markup_printf_escaped  ("<small>%s <b>%s</b> (%s %s %s %s )</small>",
 					   _("Total filesystem capacity:"), total,
@@ -402,9 +402,9 @@ first_row (void)
 
 	gtk_tree_view_set_headers_visible (GTK_TREE_VIEW (baobab.tree_view), FALSE);
 	gtk_tree_store_append (baobab.model, &firstiter, &root_iter);
-	
+
 		size = g_format_size (baobab.fs.used);
-		
+
 	if (baobab.fs.total == 0 && baobab.fs.used == 0) {
 		perc = 100.0;
 	} else {
@@ -452,7 +452,7 @@ baobab_fill_model (struct chan_data *data)
 	hardlinks = g_string_new ("");
 	if (data->tempHLsize > 0) {
 			size = g_format_size (data->tempHLsize);
-			
+
 		g_string_assign (hardlinks, "<i>(");
 		g_string_append (hardlinks, _("contains hardlinks for:"));
 		g_string_append (hardlinks, " ");
@@ -857,7 +857,7 @@ baobab_init (void)
 	/* Settings */
 	baobab.ui_settings = g_settings_new (BAOBAB_UI_SETTINGS_SCHEMA);
 	baobab.prefs_settings = g_settings_new (BAOBAB_PREFS_SETTINGS_SCHEMA);
-	
+
 	/* Misc */
 	baobab.CONTENTS_CHANGED_DELAYED = FALSE;
 	baobab.STOP_SCANNING = TRUE;

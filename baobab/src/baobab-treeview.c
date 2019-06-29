@@ -16,7 +16,7 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, 
+ * Foundation, Inc., 51 Franklin St, Fifth Floor,
  * Boston, MA  02110-1301  USA
  */
 
@@ -79,7 +79,7 @@ on_tv_cur_changed (GtkTreeView *treeview, gpointer data)
 static void
 contents_changed (void)
 {
-	if (messageyesno (_("Rescan your home folder?"), 
+	if (messageyesno (_("Rescan your home folder?"),
 			  _("The content of your home folder has changed. Select rescan to update the disk usage details."),
 			  GTK_MESSAGE_QUESTION, _("_Rescan"), baobab.window) == GTK_RESPONSE_OK) {
 		baobab_rescan_current_dir ();
@@ -103,7 +103,7 @@ on_tv_button_press (GtkWidget *widget,
 				       event->x, event->y,
 				       &path, NULL, NULL, NULL);
 	if (!path)
-		return TRUE;		
+		return TRUE;
 
 	/* get the selected path */
 	g_free (baobab.selected_path);
@@ -223,7 +223,7 @@ create_directory_treeview (void)
 	gtk_tree_view_column_set_sizing (col, GTK_TREE_VIEW_COLUMN_AUTOSIZE);
 	gtk_tree_view_column_set_resizable (col, TRUE);
 	gtk_tree_view_append_column (GTK_TREE_VIEW (tvw), col);
-	
+
 	/* percentage bar & text column */
 	col = gtk_tree_view_column_new ();
 
@@ -291,7 +291,7 @@ create_directory_treeview (void)
 					GTK_POLICY_AUTOMATIC);
 
 	gtk_tree_view_set_search_equal_func (GTK_TREE_VIEW (tvw),
-	                                     baobab_treeview_equal_func, 
+	                                     baobab_treeview_equal_func,
 	                                     NULL, NULL);
 
 	baobab.model = create_model ();

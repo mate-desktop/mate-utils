@@ -63,7 +63,7 @@ logview_filter_manager_update_model (LogviewFilterManager *manager)
 
   gtk_list_store_clear (GTK_LIST_STORE (manager->priv->model));
 
-  filters = logview_prefs_get_filters (manager->priv->prefs);  
+  filters = logview_prefs_get_filters (manager->priv->prefs);
 
   for (filter = filters; filter != NULL; filter = g_list_next (filter)) {
     g_object_get (filter->data, "name", &name, NULL);
@@ -78,7 +78,7 @@ logview_filter_manager_update_model (LogviewFilterManager *manager)
     g_free (name);
   }
 
-  g_list_free (filters);  
+  g_list_free (filters);
 }
 
 static gboolean
@@ -161,7 +161,7 @@ check_regex (LogviewFilterManager *manager, const gchar *regex)
 static void
 on_check_toggled (GtkToggleButton *button, GtkWidget *widget)
 {
-  gtk_widget_set_sensitive (widget, 
+  gtk_widget_set_sensitive (widget,
                             gtk_toggle_button_get_active (button));
 }
 
@@ -214,7 +214,7 @@ on_dialog_add_edit_reponse (GtkWidget *dialog, int response_id,
         GdkRGBA foreground_color;
         gtk_color_chooser_get_rgba (GTK_COLOR_CHOOSER (color_foreground),
                                     &foreground_color);
-        g_object_set (G_OBJECT (tag), 
+        g_object_set (G_OBJECT (tag),
                       "foreground-rgba", &foreground_color,
                       "foreground-set", TRUE, NULL);
       }
@@ -223,11 +223,11 @@ on_dialog_add_edit_reponse (GtkWidget *dialog, int response_id,
         GdkRGBA background_color;
         gtk_color_chooser_get_rgba (GTK_COLOR_CHOOSER (color_background),
                                     &background_color);
-        g_object_set (tag, 
+        g_object_set (tag,
                       "paragraph-background-rgba", &background_color,
                       "paragraph-background-set", TRUE, NULL);
       }
-      
+
       if (!gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check_foreground))
           && !gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check_background))) {
           GtkWidget *error_dialog;
@@ -282,7 +282,7 @@ run_add_edit_dialog (LogviewFilterManager *manager, LogviewFilter *filter)
 
   error = NULL;
   name = NULL;
-  
+
   gtk_builder_add_from_file (builder, UI_FILE, &error);
 
   if (error) {
@@ -395,7 +395,7 @@ run_add_edit_dialog (LogviewFilterManager *manager, LogviewFilter *filter)
 
 static void
 on_add_clicked (GtkWidget *button, LogviewFilterManager *manager)
-{                                                   
+{
   run_add_edit_dialog (manager, NULL);
 }
 
@@ -426,7 +426,7 @@ on_remove_clicked (GtkWidget *button, LogviewFilterManager *manager)
   GtkTreeModel *model;
   gchar *name;
 
-  selection  = 
+  selection  =
     gtk_tree_view_get_selection (GTK_TREE_VIEW (manager->priv->tree));
 
   gtk_tree_selection_get_selected (selection, &model, &iter);
@@ -446,7 +446,7 @@ on_tree_selection_changed (GtkTreeSelection *selection, LogviewFilterManager *ma
   status = gtk_tree_selection_get_selected (selection, NULL, NULL);
 
   gtk_widget_set_sensitive (manager->priv->edit_button, status);
-  gtk_widget_set_sensitive (manager->priv->remove_button, status);	
+  gtk_widget_set_sensitive (manager->priv->remove_button, status);
 }
 
 static void
@@ -521,11 +521,11 @@ logview_filter_manager_init (LogviewFilterManager *manager)
   gtk_window_set_title (GTK_WINDOW (manager),
                         _("Filters"));
 
-  g_signal_connect (priv->add_button, "clicked", 
+  g_signal_connect (priv->add_button, "clicked",
                     G_CALLBACK (on_add_clicked), manager);
-  g_signal_connect (priv->edit_button, "clicked", 
+  g_signal_connect (priv->edit_button, "clicked",
                     G_CALLBACK (on_edit_clicked), manager);
-  g_signal_connect (priv->remove_button, "clicked", 
+  g_signal_connect (priv->remove_button, "clicked",
                     G_CALLBACK (on_remove_clicked), manager);
 
   gtk_widget_set_sensitive (priv->edit_button, FALSE);

@@ -53,7 +53,7 @@ struct _GdictStrategyChooserPrivate
   GtkWidget *clear_button;
   GtkWidget *refresh_button;
   GtkWidget *buttons_box;
-  
+
   GdictContext *context;
   gint results;
 
@@ -88,7 +88,7 @@ enum
 enum
 {
   PROP_0,
-  
+
   PROP_CONTEXT,
   PROP_COUNT
 };
@@ -112,25 +112,25 @@ set_gdict_context (GdictStrategyChooser *chooser,
 		   GdictContext         *context)
 {
   GdictStrategyChooserPrivate *priv;
-  
+
   g_assert (GDICT_IS_STRATEGY_CHOOSER (chooser));
   priv = chooser->priv;
-  
+
   if (priv->context)
     {
       if (priv->start_id)
         {
           GDICT_NOTE (CHOOSER, "Removing old context handlers");
-          
+
           g_signal_handler_disconnect (priv->context, priv->start_id);
           g_signal_handler_disconnect (priv->context, priv->match_id);
           g_signal_handler_disconnect (priv->context, priv->end_id);
-          
+
           priv->start_id = 0;
           priv->end_id = 0;
           priv->match_id = 0;
         }
-      
+
       if (priv->error_id)
         {
           g_signal_handler_disconnect (priv->context, priv->error_id);
@@ -139,9 +139,9 @@ set_gdict_context (GdictStrategyChooser *chooser,
         }
 
       GDICT_NOTE (CHOOSER, "Removing old context");
-      
+
       g_object_unref (G_OBJECT (priv->context));
-      
+
       priv->context = NULL;
       priv->results = -1;
     }
@@ -157,7 +157,7 @@ set_gdict_context (GdictStrategyChooser *chooser,
     }
 
   GDICT_NOTE (CHOOSER, "Setting new context");
-    
+
   priv->context = g_object_ref (context);
   priv->results = 0;
 }
@@ -203,7 +203,7 @@ gdict_strategy_chooser_set_property (GObject      *gobject,
 				     GParamSpec   *pspec)
 {
   GdictStrategyChooser *chooser = GDICT_STRATEGY_CHOOSER (gobject);
-  
+
   switch (prop_id)
     {
     case PROP_CONTEXT:
@@ -222,7 +222,7 @@ gdict_strategy_chooser_get_property (GObject    *gobject,
 				     GParamSpec *pspec)
 {
   GdictStrategyChooser *chooser = GDICT_STRATEGY_CHOOSER (gobject);
-  
+
   switch (prop_id)
     {
     case PROP_CONTEXT:
@@ -379,13 +379,13 @@ static void
 gdict_strategy_chooser_class_init (GdictStrategyChooserClass *klass)
 {
   GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
-  
+
   gobject_class->finalize = gdict_strategy_chooser_finalize;
   gobject_class->dispose = gdict_strategy_chooser_dispose;
   gobject_class->set_property = gdict_strategy_chooser_set_property;
   gobject_class->get_property = gdict_strategy_chooser_get_property;
   gobject_class->constructor = gdict_strategy_chooser_constructor;
-  
+
   /**
    * GdictStrategyChooser:context:
    *
@@ -477,7 +477,7 @@ GtkWidget *
 gdict_strategy_chooser_new_with_context (GdictContext *context)
 {
   g_return_val_if_fail (GDICT_IS_CONTEXT (context), NULL);
-  
+
   return g_object_new (GDICT_TYPE_STRATEGY_CHOOSER,
                        "context", context,
                        NULL);
@@ -497,7 +497,7 @@ GdictContext *
 gdict_strategy_chooser_get_context (GdictStrategyChooser *chooser)
 {
   g_return_val_if_fail (GDICT_IS_STRATEGY_CHOOSER (chooser), NULL);
-  
+
   return chooser->priv->context;
 }
 
@@ -611,7 +611,7 @@ gdict_strategy_chooser_has_strategy (GdictStrategyChooser *chooser,
       gtk_tree_model_get (GTK_TREE_MODEL (priv->store), &iter,
                           STRAT_COLUMN_NAME, &strat_name,
                           -1);
-      
+
       if (strcmp (strat_name, strategy) == 0)
         {
           retval = TRUE;
@@ -735,7 +735,7 @@ gdict_strategy_chooser_refresh (GdictStrategyChooser *chooser)
 {
   GdictStrategyChooserPrivate *priv;
   GError *db_error;
-  
+
   g_return_if_fail (GDICT_IS_STRATEGY_CHOOSER (chooser));
 
   priv = chooser->priv;
@@ -821,7 +821,7 @@ typedef struct
 {
   gchar *strat_name;
   GdictStrategyChooser *chooser;
-  
+
   guint found       : 1;
   guint do_select   : 1;
   guint do_activate : 1;
@@ -1035,7 +1035,7 @@ gdict_strategy_chooser_get_current_strategy (GdictStrategyChooser *chooser)
   gchar *retval = NULL;
 
   g_return_val_if_fail (GDICT_IS_STRATEGY_CHOOSER (chooser), NULL);
-  
+
   priv = chooser->priv;
 
   selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (priv->treeview));
@@ -1043,7 +1043,7 @@ gdict_strategy_chooser_get_current_strategy (GdictStrategyChooser *chooser)
     return NULL;
 
   gtk_tree_model_get (model, &iter, STRAT_COLUMN_NAME, &retval, -1);
-  
+
   g_free (priv->current_strat);
   priv->current_strat = g_strdup (retval);
 

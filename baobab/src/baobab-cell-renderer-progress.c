@@ -31,7 +31,7 @@ enum
 {
   PROP_0,
   PROP_PERC
-}; 
+};
 
 struct _BaobabCellRendererProgressPrivate
 {
@@ -62,7 +62,7 @@ baobab_cell_renderer_progress_get_property (GObject *object,
 					    GParamSpec *pspec)
 {
   BaobabCellRendererProgress *cellprogress = BAOBAB_CELL_RENDERER_PROGRESS (object);
-  
+
   switch (param_id)
     {
     case PROP_PERC:
@@ -202,7 +202,7 @@ baobab_cell_renderer_progress_render (GtkCellRenderer *cell,
 
   x = cell_area->x + xpad;
   y = cell_area->y + ypad;
-  
+
   w = cell_area->width - xpad * 2;
   h = cell_area->height - ypad * 2;
 
@@ -222,7 +222,7 @@ baobab_cell_renderer_progress_render (GtkCellRenderer *cell,
   y += style->ythickness;
   w -= style->xthickness * 2;
   h -= style->ythickness * 2;
-  
+
   cairo_rectangle (cr, x, y, w, h);
   cairo_set_source_rgb (cr, 1, 1, 1);
   cairo_fill (cr);
@@ -239,10 +239,10 @@ baobab_cell_renderer_progress_class_init (BaobabCellRendererProgressClass *klass
 {
   GObjectClass *object_class = G_OBJECT_CLASS (klass);
   GtkCellRendererClass *cell_class = GTK_CELL_RENDERER_CLASS (klass);
-  
+
   object_class->get_property = baobab_cell_renderer_progress_get_property;
   object_class->set_property = baobab_cell_renderer_progress_set_property;
-  
+
   cell_class->get_size = baobab_cell_renderer_progress_get_size;
   cell_class->render = baobab_cell_renderer_progress_render;
 

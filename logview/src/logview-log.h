@@ -40,7 +40,7 @@ G_BEGIN_DECLS
   (G_TYPE_CHECK_CLASS_TYPE ((klass), LOGVIEW_TYPE_LOG))
 #define LOGVIEW_LOG_GET_CLASS(obj) \
   (G_TYPE_INSTANCE_GET_CLASS ((obj), LOGVIEW_TYPE_LOG, LogviewLogClass))
-  
+
 typedef struct _LogviewLog LogviewLog;
 typedef struct _LogviewLogClass LogviewLogClass;
 typedef struct _LogviewLogPrivate LogviewLogPrivate;

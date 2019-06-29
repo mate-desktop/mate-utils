@@ -38,7 +38,7 @@ struct _LogviewFindbarPrivate {
   GtkToolItem *forward_button;
   GtkToolItem *status_item;
   GtkToolItem *separator;
-  
+
   char *string;
 
   guint status_bold_id;
@@ -147,14 +147,14 @@ unbold_timeout_cb (gpointer user_data)
   return FALSE;
 }
 
-static void 
+static void
 logview_findbar_init (LogviewFindbar *findbar)
 {
   GtkWidget *label, *w, *box;
   GtkToolbar *gtoolbar;
   GtkToolItem *item;
   LogviewFindbarPrivate *priv;
-  
+
   priv = findbar->priv = GET_PRIVATE (findbar);
 
   gtoolbar = GTK_TOOLBAR (findbar);
@@ -341,11 +341,11 @@ logview_findbar_set_message (LogviewFindbar *findbar,
     pango_font_description_set_weight (desc, PANGO_WEIGHT_BOLD);
     gtk_widget_override_font (findbar->priv->message, desc);
     pango_font_description_free (desc);
-    
+
     findbar->priv->status_bold_id = g_timeout_add (600, unbold_timeout_cb, findbar);
   }
 
-  gtk_label_set_text (GTK_LABEL (findbar->priv->message), 
+  gtk_label_set_text (GTK_LABEL (findbar->priv->message),
                       text != NULL ? text : "");
   g_object_set (findbar->priv->separator, "visible", text != NULL, NULL);
   g_object_set (findbar->priv->status_item, "visible", text != NULL, NULL);

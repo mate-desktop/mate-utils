@@ -92,7 +92,7 @@ main (int argc, char *argv[])
     g_critical ("Unable to parse arguments: %s", error->message);
     g_error_free (error);
     g_option_context_free (context);
-    
+
     exit (1);
   }
 
@@ -103,7 +103,7 @@ main (int argc, char *argv[])
 
   if (!app) {
     g_critical ("Unable to create the user interface.");
-  
+
     exit (1);
   } else {
     g_signal_connect (app, "app-quit",

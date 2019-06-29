@@ -73,7 +73,7 @@ do_run_overwrite_confirm_dialog (gpointer _data)
 
   gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
 					    _("The file \"%s\" already exists. "
-                                              "Would you like to replace it?"), 
+                                              "Would you like to replace it?"),
 					    data->basename);
   gtk_dialog_add_button (GTK_DIALOG (dialog),
 			 "gtk-cancel",
@@ -86,7 +86,7 @@ do_run_overwrite_confirm_dialog (gpointer _data)
   gtk_widget_destroy (dialog);
 
   data->resp = response;
-  
+
   return FALSE;
 }
 
@@ -110,9 +110,9 @@ transfer_progress_dialog_new (TransferJob *job)
   TransferDialog *dialog;
   GtkWidget *gdialog;
   GtkWidget *widget;
-  
+
   dialog = g_new0 (TransferDialog, 1);
-  
+
   gdialog = gtk_message_dialog_new (GTK_WINDOW (job->parent),
                                     GTK_DIALOG_DESTROY_WITH_PARENT,
                                     GTK_MESSAGE_OTHER,
@@ -124,7 +124,7 @@ transfer_progress_dialog_new (TransferJob *job)
   gtk_widget_show (widget);
   dialog->progress_bar = widget;
   dialog->dialog = gdialog;
-  
+
   g_signal_connect (gdialog,
                     "response",
                     G_CALLBACK (transfer_dialog_response_cb),
@@ -132,7 +132,7 @@ transfer_progress_dialog_new (TransferJob *job)
 
   job->dialog = dialog;
   gtk_widget_show (gdialog);
-  
+
   return FALSE;
 }
 
@@ -161,12 +161,12 @@ run_overwrite_confirm_dialog (TransferJob *job)
   data->basename = basename;
 
   need_timeout = (job->dialog_timeout_id > 0);
-  
+
   if (need_timeout)
     {
       g_source_remove (job->dialog_timeout_id);
       job->dialog_timeout_id = 0;
-    } 
+    }
 
   g_io_scheduler_job_send_to_mainloop (job->io_job,
                                        do_run_overwrite_confirm_dialog,
@@ -176,11 +176,11 @@ run_overwrite_confirm_dialog (TransferJob *job)
 
   if (need_timeout)
     transfer_progress_dialog_start (job);
-  
+
   g_free (basename);
   g_slice_free (ErrorDialogData, data);
 
-  return response;                                       
+  return response;
 }
 
 static gboolean
@@ -188,12 +188,12 @@ transfer_progress_dialog_update (TransferJob *job)
 {
   TransferDialog *dialog = job->dialog;
   double fraction;
-  
+
   fraction = ((double) job->current_bytes) / ((double) job->total_bytes);
 
   gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR (dialog->progress_bar),
                                  fraction);
-  
+
   return FALSE;
 }
 
@@ -202,9 +202,9 @@ transfer_job_done (gpointer user_data)
 {
   TransferJob *job = user_data;
   TransferDialog *dialog;
-  
+
   dialog = job->dialog;
-  
+
   if (job->dialog_timeout_id)
     {
       g_source_remove (job->dialog_timeout_id);
@@ -212,14 +212,14 @@ transfer_job_done (gpointer user_data)
     }
   if (dialog)
       gtk_widget_destroy (dialog->dialog);
-  
+
   if (job->callback)
     {
       (job->callback) (job->result,
                        job->error,
                        job->callback_data);
     }
-  
+
   g_object_unref (job->source);
   g_object_unref (job->dest);
   g_object_unref (job->cancellable);
@@ -227,7 +227,7 @@ transfer_job_done (gpointer user_data)
   g_free (dialog);
   g_free (job->error);
   g_slice_free (TransferJob, job);
-  
+
   return FALSE;
 }
 
@@ -235,12 +235,12 @@ static void
 transfer_progress_cb (goffset current_num_bytes,
                       goffset total_num_bytes,
                       TransferJob *job)
-{  
+{
   job->current_bytes = current_num_bytes;
 
   if (!job->dialog)
     return;
-   
+
   g_io_scheduler_job_send_to_mainloop_async (job->io_job,
                                              (GSourceFunc) transfer_progress_dialog_update,
                                              job,
@@ -252,7 +252,7 @@ get_file_size (GFile *file)
 {
   GFileInfo *file_info;
   goffset size;
-  
+
   file_info = g_file_query_info (file,
                                  G_FILE_ATTRIBUTE_STANDARD_SIZE,
                                  0, NULL, NULL);
@@ -268,7 +268,7 @@ get_file_size (GFile *file)
        */
       size = -1;
     }
-  
+
   return size;
 }
 
@@ -279,7 +279,7 @@ transfer_file (GIOSchedulerJob *io_job,
 {
   TransferJob *job = user_data;
   GError *error;
-  
+
   job->io_job = io_job;
   job->total_bytes = get_file_size (job->source);
   if (job->total_bytes == -1)
@@ -288,7 +288,7 @@ transfer_file (GIOSchedulerJob *io_job,
       error = NULL;
       job->result = TRANSFER_ERROR;
       job->error = g_strdup (_("Can't access source file"));
-      
+
       goto out;
     }
 
@@ -339,7 +339,7 @@ retry:
           g_cancellable_cancel (job->cancellable);
           job->result = TRANSFER_ERROR;
           job->error = g_strdup (error->message);
-          
+
           goto out;
         }
     }
@@ -347,18 +347,18 @@ retry:
     {
       /* success */
       job->result = TRANSFER_OK;
-      
+
       goto out;
     }
 
 out:
   if (error)
       g_error_free (error);
-    
+
   g_io_scheduler_job_send_to_mainloop_async (io_job,
                                              transfer_job_done,
                                              job,
-                                             NULL);  
+                                             NULL);
   return FALSE;
 }
 

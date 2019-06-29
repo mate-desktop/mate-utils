@@ -16,7 +16,7 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, 
+ * Foundation, Inc., 51 Franklin St, Fifth Floor,
  * Boston, MA  02110-1301  USA
  */
 
@@ -211,13 +211,13 @@ loopdir (GFile *file,
 	if (is_in_dot_gvfs (file))
 		goto exit;
 
-	parse_name = g_file_get_parse_name (file);	
+	parse_name = g_file_get_parse_name (file);
 
 	if (g_file_info_has_attribute (info, G_FILE_ATTRIBUTE_STANDARD_SIZE))
 		retloop.size = g_file_info_get_size (info);
 
 	if (g_file_info_has_attribute (info, G_FILE_ATTRIBUTE_UNIX_BLOCKS))
-		retloop.alloc_size = BLOCK_SIZE * 
+		retloop.alloc_size = BLOCK_SIZE *
 			g_file_info_get_attribute_uint64 (info,
 							  G_FILE_ATTRIBUTE_UNIX_BLOCKS);
 
@@ -269,7 +269,7 @@ loopdir (GFile *file,
 
 		/* is a directory? */
 		if (temp_type == G_FILE_TYPE_DIRECTORY) {
-			GFile *child_dir = g_file_get_child (file, 
+			GFile *child_dir = g_file_get_child (file,
 						g_file_info_get_name (temp_info));
 			temp = loopdir (child_dir, temp_info, count, hla, current_depth+1);
 			retloop.size += temp.size;
@@ -281,13 +281,13 @@ loopdir (GFile *file,
 
 		/* is it a regular file? */
 		else if (temp_type == G_FILE_TYPE_REGULAR) {
- 
+
 			/* check for hard links only on local files */
 			if (g_file_info_has_attribute (temp_info,
 						       G_FILE_ATTRIBUTE_UNIX_NLINK) &&
 				g_file_info_get_attribute_uint32 (temp_info,
 							    G_FILE_ATTRIBUTE_UNIX_NLINK) > 1) {
- 
+
 				if (!baobab_hardlinks_array_add (hla, temp_info)) {
 
 					/* we already acconted for it */
@@ -313,7 +313,7 @@ loopdir (GFile *file,
 
 	/* won't be an error if we've finished normally */
 	if (err != NULL) {
-		g_warning ("error in dir %s: %s\n", 
+		g_warning ("error in dir %s: %s\n",
 			   parse_name, err->message);
 	}
 

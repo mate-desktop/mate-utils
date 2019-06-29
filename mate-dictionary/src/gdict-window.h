@@ -49,11 +49,11 @@ typedef struct _GdictWindowClass GdictWindowClass;
 struct _GdictWindow
 {
   GtkWindow parent_instance;
-  
+
   GtkWidget *main_box;
   GtkWidget *menubar;
   GtkWidget *entry;
-  
+
   /* sidebar widgets */
   GtkWidget *speller;
   GtkWidget *db_chooser;
@@ -62,26 +62,26 @@ struct _GdictWindow
 
   GtkWidget *sidebar;
   GtkWidget *sidebar_frame;
-  
+
   GtkWidget *defbox;
   GtkWidget *defbox_frame;
 
   GtkWidget *status;
   GtkWidget *progress;
-  
+
   GtkUIManager *ui_manager;
   GtkActionGroup *action_group;
- 
+
   GtkEntryCompletion *completion;
   GtkListStore *completion_model;
-  
+
   GdictWindowAction action;
-  
+
   gchar *word;
   gint max_definition;
   gint last_definition;
   gint current_definition;
- 
+
   gchar *source_name;
   GdictSourceLoader *loader;
   GdictContext *context;
@@ -89,7 +89,7 @@ struct _GdictWindow
   guint lookup_start_id;
   guint lookup_end_id;
   guint error_id;
-  
+
   gchar *database;
   gchar *strategy;
   gchar *print_font;
@@ -112,14 +112,14 @@ struct _GdictWindow
   guint sidebar_visible   : 1;
   guint statusbar_visible : 1;
   guint in_construction   : 1;
-  
+
   gulong window_id;
 };
 
 struct _GdictWindowClass
 {
   GtkWindowClass parent_class;
-  
+
   void (*created) (GdictWindow *parent_window,
   		   GdictWindow *new_window);
 };
