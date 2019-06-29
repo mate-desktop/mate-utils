@@ -48,15 +48,15 @@ struct _GdictApp
   GSList *lookup_words;
   GSList *match_words;
   gint remaining_words;
-  
+
   gchar *database;
   gchar *source_name;
   gboolean no_window;
-  
+
   GdictSourceLoader *loader;
 
   GdictWindow *current_window;
-  GSList *windows;  
+  GSList *windows;
 };
 
 

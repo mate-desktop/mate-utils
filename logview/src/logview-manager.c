@@ -127,7 +127,7 @@ logview_manager_init (LogviewManager *self)
   LogviewManagerPrivate *priv = self->priv = GET_PRIVATE (self);
 
   priv->active_log = NULL;
-  priv->logs = g_hash_table_new_full (g_str_hash, g_str_equal, 
+  priv->logs = g_hash_table_new_full (g_str_hash, g_str_equal,
                                       g_free, g_object_unref);
 }
 
@@ -202,7 +202,7 @@ create_log_cb (LogviewLog *log,
 
     g_free (path);
   }
-  
+
   if (data->is_multiple) {
     op->current++;
 

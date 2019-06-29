@@ -49,7 +49,7 @@ typedef struct _GdictPrintData
   gdouble font_size;
 
   gchar **lines;
-  
+
   gint n_lines;
   gint lines_per_page;
   gint n_pages;
@@ -100,10 +100,10 @@ draw_page (GtkPrintOperation *operation,
   width = gtk_print_context_get_width (context);
 
   cairo_rectangle (cr, 0, 0, width, HEADER_HEIGHT (10));
-  
+
   cairo_set_source_rgb (cr, 0.8, 0.8, 0.8);
   cairo_fill_preserve (cr);
-  
+
   cairo_set_source_rgb (cr, 0, 0, 0);
   cairo_set_line_width (cr, 1);
   cairo_stroke (cr);
@@ -138,7 +138,7 @@ draw_page (GtkPrintOperation *operation,
   cairo_move_to (cr, width - text_width - 4,
                      (HEADER_HEIGHT (10) - text_height) / 2);
   pango_cairo_show_layout (cr, layout);
-  
+
   g_object_unref (layout);
 
   /* text */
@@ -146,10 +146,10 @@ draw_page (GtkPrintOperation *operation,
   pango_font_description_set_size (data->font_desc,
                                    data->font_size * PANGO_SCALE);
   pango_layout_set_font_description (layout, data->font_desc);
-  
+
   cairo_move_to (cr, 0, HEADER_HEIGHT (10) + HEADER_GAP (3));
   line = page_number * data->lines_per_page;
-  for (i = 0; i < data->lines_per_page && line < data->n_lines; i++) 
+  for (i = 0; i < data->lines_per_page && line < data->n_lines; i++)
     {
       pango_layout_set_text (layout, data->lines[line], -1);
 
@@ -194,7 +194,7 @@ gdict_show_print_preview (GtkWindow   *parent,
   gchar *print_font;
   gchar *word;
   GError *error;
-  
+
   g_return_if_fail (parent == NULL || GTK_IS_WINDOW (parent));
   g_return_if_fail (GDICT_IS_DEFBOX (defbox));
 
@@ -216,11 +216,11 @@ gdict_show_print_preview (GtkWindow   *parent,
                     / PANGO_SCALE;
   g_free (print_font);
 
-  g_signal_connect (operation, "begin-print", 
+  g_signal_connect (operation, "begin-print",
 		    G_CALLBACK (begin_print), data);
-  g_signal_connect (operation, "draw-page", 
+  g_signal_connect (operation, "draw-page",
 		    G_CALLBACK (draw_page), data);
-  g_signal_connect (operation, "end-print", 
+  g_signal_connect (operation, "end-print",
 		    G_CALLBACK (end_print), data);
 
   error = NULL;
@@ -258,7 +258,7 @@ gdict_show_print_dialog (GtkWindow   *parent,
   gchar *print_font;
   gchar *word;
   GError *error;
-  
+
   g_return_if_fail (parent == NULL || GTK_IS_WINDOW (parent));
   g_return_if_fail (GDICT_IS_DEFBOX (defbox));
 
@@ -280,11 +280,11 @@ gdict_show_print_dialog (GtkWindow   *parent,
                     / PANGO_SCALE;
   g_free (print_font);
 
-  g_signal_connect (operation, "begin-print", 
+  g_signal_connect (operation, "begin-print",
 		    G_CALLBACK (begin_print), data);
-  g_signal_connect (operation, "draw-page", 
+  g_signal_connect (operation, "draw-page",
 		    G_CALLBACK (draw_page), data);
-  g_signal_connect (operation, "end-print", 
+  g_signal_connect (operation, "end-print",
 		    G_CALLBACK (end_print), data);
 
   error = NULL;

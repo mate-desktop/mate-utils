@@ -158,7 +158,7 @@ gdict_get_option_group (void)
                               _("Show GDict Options"),
                               NULL,
                               NULL);
-  
+
   g_option_group_set_parse_hooks (group, pre_parse_hook, post_parse_hook);
   g_option_group_add_entries (group, gdict_args);
   g_option_group_set_translation_domain (group, GETTEXT_PACKAGE);
@@ -188,7 +188,7 @@ gdict_debug_init (gint    *argc,
 
   option_context = g_option_context_new (NULL);
   g_option_context_set_ignore_unknown_options (option_context, TRUE);
-  g_option_context_set_help_enabled (option_context, FALSE); 
+  g_option_context_set_help_enabled (option_context, FALSE);
 
   gdict_group = gdict_get_option_group ();
   g_option_context_set_main_group (option_context, gdict_group);
@@ -237,7 +237,7 @@ _gdict_has_ipv6 (void)
   if (s != -1)
     {
       close(s);
-      
+
       return TRUE;
     }
 #endif
@@ -252,23 +252,23 @@ show_error_dialog (GtkWindow   *parent,
 		   const gchar *detail)
 {
   GtkWidget *dialog;
-  
+
   dialog = gtk_message_dialog_new (parent,
   				   GTK_DIALOG_DESTROY_WITH_PARENT,
   				   GTK_MESSAGE_ERROR,
   				   GTK_BUTTONS_OK,
   				   "%s", message);
   gtk_window_set_title (GTK_WINDOW (dialog), "");
-  
+
   if (detail)
     gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
   					      "%s", detail);
-  
+
   if (parent && gtk_window_get_group (parent))
     gtk_window_group_add_window (gtk_window_get_group (parent), GTK_WINDOW (dialog));
-  
+
   gtk_dialog_run (GTK_DIALOG (dialog));
-  
+
   gtk_widget_destroy (dialog);
 }
 
@@ -277,7 +277,7 @@ static GtkWindow *
 get_toplevel_window (GtkWidget *widget)
 {
   GtkWidget *toplevel;
-  
+
   toplevel = gtk_widget_get_toplevel (widget);
   if (!gtk_widget_is_toplevel (toplevel))
     return NULL;
@@ -302,7 +302,7 @@ _gdict_show_error_dialog (GtkWidget   *widget,
 {
   g_return_if_fail (GTK_IS_WIDGET (widget));
   g_return_if_fail (title != NULL);
-  
+
   show_error_dialog (get_toplevel_window (widget), title, detail);
 }
 
@@ -326,8 +326,8 @@ _gdict_show_gerror_dialog (GtkWidget   *widget,
   g_return_if_fail (GTK_IS_WIDGET (widget));
   g_return_if_fail (title != NULL);
   g_return_if_fail (error != NULL);
-  
+
   show_error_dialog (get_toplevel_window (widget), title, error->message);
-      
+
   g_error_free (error);
 }

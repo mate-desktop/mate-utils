@@ -40,7 +40,7 @@ typedef enum {
 /* Status codes as defined by RFC 2229 */
 typedef enum {
   GDICT_STATUS_INVALID                   = 0,
-    
+
   GDICT_STATUS_N_DATABASES_PRESENT       = 110,
   GDICT_STATUS_N_STRATEGIES_PRESENT      = 111,
   GDICT_STATUS_DATABASE_INFO             = 112,

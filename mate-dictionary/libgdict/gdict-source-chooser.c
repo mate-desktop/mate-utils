@@ -465,7 +465,7 @@ gdict_source_chooser_set_loader (GdictSourceChooser *chooser,
 /**
  * gdict_source_chooser_get_loader:
  * @chooser: a #GdictSourceChooser
- * 
+ *
  * Retrieves the #GdictSourceLoader used by @chooser.
  *
  * Return value: a #GdictSourceLoader or %NULL is none is set
@@ -484,7 +484,7 @@ typedef struct
 {
   gchar *source_name;
   GdictSourceChooser *chooser;
-  
+
   guint found       : 1;
   guint do_select   : 1;
   guint do_activate : 1;
@@ -706,7 +706,7 @@ gdict_source_chooser_get_current_source (GdictSourceChooser *chooser)
   gchar *retval = NULL;
 
   g_return_val_if_fail (GDICT_IS_SOURCE_CHOOSER (chooser), NULL);
-  
+
   priv = chooser->priv;
 
   selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (priv->treeview));
@@ -714,7 +714,7 @@ gdict_source_chooser_get_current_source (GdictSourceChooser *chooser)
     return NULL;
 
   gtk_tree_model_get (model, &iter, SOURCE_NAME, &retval, -1);
-  
+
   g_free (priv->current_source);
   priv->current_source = g_strdup (retval);
 

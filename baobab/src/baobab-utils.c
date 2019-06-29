@@ -16,7 +16,7 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, 
+ * Foundation, Inc., 51 Franklin St, Fifth Floor,
  * Boston, MA  02110-1301  USA
  */
 
@@ -131,7 +131,7 @@ dir_select (gboolean SEARCH, GtkWidget *parent)
 		gtk_window_set_modal (GTK_WINDOW (file_chooser), TRUE);
 		gtk_window_set_position (GTK_WINDOW (file_chooser), GTK_WIN_POS_CENTER_ON_PARENT);
 	}
-	
+
 	gtk_widget_show (GTK_WIDGET (file_chooser));
 
 	return NULL;
@@ -187,17 +187,17 @@ show_bars (GtkTreeModel *mdl,
 		if (readelements == -1) {
 			gtk_tree_store_set (GTK_TREE_STORE (mdl), iter,
 					    COL_DIR_SIZE, "--",
-					    COL_ELEMENTS, "--", -1);				    
+					    COL_ELEMENTS, "--", -1);
 			return FALSE;
 		}
 
  		gtk_tree_model_get (mdl, &parent, COL_H_ELEMENTS,
  				    &readelements, -1);
-                
+
                 gtk_tree_model_get (mdl, iter, size_col, &size, -1);
-		
+
 			sizecstr = g_format_size (size);
-		
+
  		if (readelements == -1) {
 			gtk_tree_store_set (GTK_TREE_STORE (mdl), iter,
 				            COL_DIR_SIZE, sizecstr, -1);
@@ -221,9 +221,9 @@ show_bars (GtkTreeModel *mdl,
 		if (readelements != -1) {
 			gtk_tree_model_get (mdl, iter, size_col, &size,
 					    -1);
-			
+
 				sizecstr = g_format_size (size);
-			
+
 			gtk_tree_store_set (GTK_TREE_STORE (mdl), iter,
 					    COL_H_PERC, 100.0,
 					    COL_DIR_SIZE, sizecstr, -1);
@@ -279,7 +279,7 @@ messageyesno (const gchar *primary_msg,
 	button = gtk_button_new_with_mnemonic (ok_button);
 	gtk_widget_set_can_default (button, TRUE);
 	gtk_widget_show (button);
-	
+
 	gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, GTK_RESPONSE_OK);
 	gtk_dialog_set_default_response (GTK_DIALOG (dialog), GTK_RESPONSE_OK);
 	response = gtk_dialog_run (GTK_DIALOG (dialog));
@@ -311,11 +311,11 @@ baobab_check_dir (GFile	*file)
 		g_error_free (error);
 
 		return FALSE;
-	}	
+	}
 
 	if ((g_file_info_get_file_type (info) != G_FILE_TYPE_DIRECTORY) ||
 		is_virtual_filesystem(file)) {
-		
+
 		char *error_msg = NULL;
 		gchar *name = NULL;
 
@@ -323,7 +323,7 @@ baobab_check_dir (GFile	*file)
 		error_msg = g_strdup_printf (_("\"%s\" is not a valid folder"),
 					     name);
 
-		message (error_msg, _("Could not analyze disk usage."), 
+		message (error_msg, _("Could not analyze disk usage."),
 		         GTK_MESSAGE_ERROR, baobab.window);
 
 		g_free (error_msg);
@@ -389,14 +389,14 @@ open_file_with_application (GFile *file)
 				  NULL,
 				  NULL);
 	if (!info) return;
-	
+
 	content = g_file_info_get_content_type (info);
 	application = g_app_info_get_default_for_type (content, TRUE);
 
 	if (!application) {
-			primary = g_strdup_printf (_("Could not open folder \"%s\""), 
+			primary = g_strdup_printf (_("Could not open folder \"%s\""),
 			                           g_file_get_basename (file));
-			message (primary, 
+			message (primary,
 			         _("There is no installed viewer capable "
 				   "of displaying the folder."),
 				 GTK_MESSAGE_ERROR,
@@ -480,9 +480,9 @@ trash_file (GFile *file)
 		g_free (mess);
 		g_error_free (error);
 
-		return FALSE;		
+		return FALSE;
 	}
-	
+
 	return TRUE;
 }
 
@@ -495,7 +495,7 @@ baobab_help_display (GtkWindow   *parent,
 	char *uri;
 	gboolean ret;
 
-	uri = (link_id) ? 
+	uri = (link_id) ?
 		g_strdup_printf ("help:%s/%s", file_name, link_id) :
 		g_strdup_printf ("help:%s", file_name);
 
@@ -511,7 +511,7 @@ baobab_help_display (GtkWindow   *parent,
 		dialog = gtk_message_dialog_new (parent,
 						 GTK_DIALOG_DESTROY_WITH_PARENT,
 						 GTK_MESSAGE_ERROR,
-						 GTK_BUTTONS_CLOSE, 
+						 GTK_BUTTONS_CLOSE,
 						 _("There was an error displaying help."));
 
 		gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
@@ -533,7 +533,7 @@ is_virtual_filesystem (GFile *file)
 {
 	gboolean ret = FALSE;
 	char *path;
-	
+
 	path = g_file_get_path (file);
 
 	/* FIXME: we need a better way to check virtual FS */

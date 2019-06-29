@@ -2,17 +2,17 @@
 /*
  * mate-utils
  * Copyright (C) Johannes Schmid 2009 <jhs@gnome.org>
- * 
+ *
  * mate-utils is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
  * Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * mate-utils is distributed in the hope that it will be useful, but
  * WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License along
  * with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
@@ -48,9 +48,9 @@ struct _LogviewFilter {
 };
 
 GType           logview_filter_get_type (void) G_GNUC_CONST;
-LogviewFilter * logview_filter_new (const gchar *name, 
+LogviewFilter * logview_filter_new (const gchar *name,
                                     const gchar *regex);
-gboolean        logview_filter_filter (LogviewFilter *filter, 
+gboolean        logview_filter_filter (LogviewFilter *filter,
                                        const gchar *line);
 GtkTextTag *    logview_filter_get_tag (LogviewFilter *filter);
 

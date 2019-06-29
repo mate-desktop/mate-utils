@@ -16,7 +16,7 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, 
+ * Foundation, Inc., 51 Franklin St, Fifth Floor,
  * Boston, MA  02110-1301  USA
  */
 
@@ -110,7 +110,7 @@ filechooser_response_cb (GtkDialog *dialog,
 {
 	switch (response_id) {
 		case GTK_RESPONSE_HELP:
-			baobab_help_display (GTK_WINDOW (baobab.window), 
+			baobab_help_display (GTK_WINDOW (baobab.window),
 			                     "mate-disk-usage-analyzer", "baobab-preferences");
 			break;
 		case GTK_RESPONSE_DELETE_EVENT:
@@ -247,10 +247,10 @@ fill_props_model (GtkListStore *store)
 		glibtop_get_fsusage (&fsusage, mountentry->mountdir);
 		fstotal = fsusage.blocks * fsusage.block_size;
 		fsavail = fsusage.bfree * fsusage.block_size;
-		
+
 			total = g_format_size(fstotal);
 			avail = g_format_size(fsavail);
-		
+
 		file = g_file_new_for_path (mountentry->mountdir);
 		uri = g_file_get_uri (file);
 		excluded = baobab_is_excluded_location (file);

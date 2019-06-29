@@ -79,7 +79,7 @@ typedef enum
   TEST_TMP = 2,
 } TestType;
 
-typedef struct 
+typedef struct
 {
   char *base_uris[3];
   char *retval;
@@ -172,7 +172,7 @@ target_toggled_cb (GtkToggleButton *button,
     {
       take_window_shot = (target_toggle == TARGET_TOGGLE_WINDOW);
       take_area_shot = (target_toggle == TARGET_TOGGLE_AREA);
-      
+
       gtk_widget_set_sensitive (border_check, take_window_shot);
       gtk_widget_set_sensitive (effect_combo, take_window_shot);
       gtk_widget_set_sensitive (effect_label, take_window_shot);
@@ -223,7 +223,7 @@ effect_combo_changed_cb (GtkComboBox *combo,
     }
 }
 
-static gint 
+static gint
 key_press_cb (GtkWidget* widget, GdkEventKey* event, gpointer data)
 {
   if (event->keyval == GDK_KEY_F1)
@@ -266,7 +266,7 @@ create_effects_combo (void)
                               G_TYPE_STRING,
                               G_TYPE_STRING,
                               G_TYPE_UINT);
-  
+
   for (i = 0; i < n_effects; i++)
     {
       GtkTreeIter iter;
@@ -301,7 +301,7 @@ create_effects_combo (void)
     default:
       break;
     }
-  
+
   renderer = gtk_cell_renderer_text_new ();
   gtk_cell_layout_pack_start (GTK_CELL_LAYOUT (retval), renderer, TRUE);
   gtk_cell_layout_set_attributes (GTK_CELL_LAYOUT (retval), renderer,
@@ -541,7 +541,7 @@ create_interactive_dialog (void)
                     NULL);
 
   g_signal_connect (G_OBJECT (retval), "key-press-event",
-                    G_CALLBACK(key_press_cb), 
+                    G_CALLBACK(key_press_cb),
                     NULL);
 
   return retval;
@@ -578,7 +578,7 @@ set_recent_entry (ScreenshotDialog *dialog)
 
   uri = screenshot_dialog_get_uri (dialog);
   recent = gtk_recent_manager_get_default ();
-  
+
   exec_name = g_app_info_get_executable (app);
   app_exec = g_strjoin (" ", exec_name, "%u", NULL);
 
@@ -603,7 +603,7 @@ error_dialog_response_cb (GtkDialog *d,
                           ScreenshotDialog *dialog)
 {
   gtk_widget_destroy (GTK_WIDGET (d));
-  
+
   screenshot_dialog_focus_entry (dialog);
 }
 
@@ -614,7 +614,7 @@ save_callback (TransferResult result,
 {
   ScreenshotDialog *dialog = data;
   GtkWidget *toplevel;
-  
+
   toplevel = screenshot_dialog_get_toplevel (dialog);
   screenshot_dialog_set_busy (dialog, FALSE);
 
@@ -623,7 +623,7 @@ save_callback (TransferResult result,
       save_folder_to_settings (dialog);
       set_recent_entry (dialog);
       gtk_widget_destroy (toplevel);
-      
+
       /* we're done, stop the mainloop now */
       gtk_main_quit ();
     }
@@ -642,7 +642,7 @@ save_callback (TransferResult result,
        */
       GtkWidget *error_dialog;
       char *uri;
-      
+
       uri = screenshot_dialog_get_uri (dialog);
       error_dialog = gtk_message_dialog_new (GTK_WINDOW (toplevel),
                                        GTK_DIALOG_DESTROY_WITH_PARENT,
@@ -662,7 +662,7 @@ save_callback (TransferResult result,
 
       g_free (uri);
     }
-      
+
 }
 
 static void
@@ -677,12 +677,12 @@ try_to_save (ScreenshotDialog *dialog,
 
   source_file = g_file_new_for_path (temporary_file);
   target_file = g_file_new_for_uri (target);
-  
+
   screenshot_xfer_uri (source_file,
                        target_file,
                        screenshot_dialog_get_toplevel (dialog),
                        save_callback, dialog);
-  
+
   /* screenshot_xfer_uri () holds a ref, so we can unref now */
   g_object_unref (source_file);
   g_object_unref (target_file);
@@ -759,7 +759,7 @@ screenshot_dialog_response_cb (GtkDialog *d,
       gtk_main_quit ();
     }
 }
-                               
+
 
 static void
 run_dialog (ScreenshotDialog *dialog)
@@ -767,9 +767,9 @@ run_dialog (ScreenshotDialog *dialog)
   GtkWidget *toplevel;
 
   toplevel = screenshot_dialog_get_toplevel (dialog);
-  
+
   gtk_widget_show (toplevel);
-  
+
   g_signal_connect (toplevel,
                     "response",
                     G_CALLBACK (screenshot_dialog_response_cb),
@@ -817,7 +817,7 @@ play_sound_effect (GdkWindow *window)
 
 static void
 finish_prepare_screenshot (char *initial_uri, GdkWindow *window, GdkRectangle *rectangle)
-{  
+{
   ScreenshotDialog *dialog;
   gboolean include_mask = (!take_window_shot && !take_area_shot);
 
@@ -894,7 +894,7 @@ check_file_done (gpointer user_data)
   finish_prepare_screenshot (job->retval, job->window, job->rectangle);
 
   async_existence_job_free (job);
-  
+
   return FALSE;
 }
 
@@ -1086,7 +1086,7 @@ push_check_file_job (GdkRectangle *rectangle)
                            job,
                            NULL,
                            0, NULL);
-                           
+
 }
 
 static void
@@ -1153,7 +1153,7 @@ expand_initial_tilde (const char *path)
   if (path[1] == '/' || path[1] == '\0') {
     return g_strconcat (g_get_home_dir (), &path[1], NULL);
   }
-  
+
   slash_after_user_name = strchr (&path[1], '/');
   if (slash_after_user_name == NULL) {
     user_name = g_strdup (&path[1]);
@@ -1163,11 +1163,11 @@ expand_initial_tilde (const char *path)
   }
   passwd_file_entry = getpwnam (user_name);
   g_free (user_name);
-  
+
   if (passwd_file_entry == NULL || passwd_file_entry->pw_dir == NULL) {
     return g_strdup (path);
   }
-  
+
   return g_strconcat (passwd_file_entry->pw_dir,
                       slash_after_user_name,
                       NULL);
@@ -1285,7 +1285,7 @@ loop_dialog_screenshot ()
       if (interactive_arg)
         {
           /* HACK: give time to the dialog to actually disappear.
-           * We don't have any way to tell when the compositor has finished 
+           * We don't have any way to tell when the compositor has finished
            * re-drawing.
            */
           g_timeout_add (200,
@@ -1345,7 +1345,7 @@ main (int argc, char *argv[])
   }
 
   g_option_context_free (context);
- 
+
   if (version_arg) {
     g_print ("%s %s\n", g_get_application_name (), VERSION);
     exit (EXIT_SUCCESS);

@@ -38,7 +38,7 @@
 
 
 /* Translators: all the strings in this file are meant to map the
-   similar strings inside caja-connect-server and should be 
+   similar strings inside caja-connect-server and should be
    translated the same way
 */
 
@@ -63,7 +63,7 @@ G_DEFINE_TYPE(BaobabRemoteConnectDialog, baobab_remote_connect_dialog, GTK_TYPE_
 
 
 static void
-display_error_dialog (GError *error, 
+display_error_dialog (GError *error,
 		      GFile *location,
 		      GtkWindow *parent)
 {
@@ -142,13 +142,13 @@ struct MethodInfo {
 /* A collection of flags for MethodInfo.flags */
 enum {
 	DEFAULT_METHOD = 0x00000001,
-	
+
 	/* Widgets to display in setup_for_type */
 	SHOW_SHARE     = 0x00000010,
 	SHOW_PORT      = 0x00000020,
 	SHOW_USER      = 0x00000040,
 	SHOW_DOMAIN    = 0x00000080,
-	
+
 	IS_ANONYMOUS   = 0x00001000
 };
 
@@ -185,7 +185,7 @@ get_method_description (struct MethodInfo *meth)
 		return _("WebDAV (HTTP)");
 	} else if (strcmp (meth->scheme, "davs") == 0) {
 		return _("Secure WebDAV (HTTPS)");
-	
+
 	/* No descriptive text */
 	} else {
 		return meth->scheme;
@@ -206,7 +206,7 @@ baobab_remote_connect_dialog_finalize (GObject *object)
 	g_object_unref (dialog->details->folder_entry);
 	g_object_unref (dialog->details->domain_entry);
 	g_object_unref (dialog->details->user_entry);
-	
+
 	g_free (dialog->details);
 
 	G_OBJECT_CLASS (baobab_remote_connect_dialog_parent_class)->finalize (object);
@@ -220,7 +220,7 @@ connect_to_server (BaobabRemoteConnectDialog *dialog, GtkWindow *app)
 	GFile *location;
 	int index;
 	GtkTreeIter iter;
-	
+
 	/* Get our method info */
 	gtk_combo_box_get_active_iter (GTK_COMBO_BOX (dialog->details->type_combo), &iter);
 	gtk_tree_model_get (gtk_combo_box_get_model (GTK_COMBO_BOX (dialog->details->type_combo)),
@@ -255,7 +255,7 @@ connect_to_server (BaobabRemoteConnectDialog *dialog, GtkWindow *app)
 			g_free (server);
 			return;
 		}
-		
+
 		user = "";
 		port = "";
 		initial_path = "";
@@ -264,11 +264,11 @@ connect_to_server (BaobabRemoteConnectDialog *dialog, GtkWindow *app)
 		free_user = FALSE;
 		free_domain = FALSE;
 		free_port = FALSE;
-		
+
 		/* FTP special case */
 		if (meth->flags & IS_ANONYMOUS) {
 			user = "anonymous";
-		
+
 		/* SMB special case */
 		} else if (strcmp (meth->scheme, "smb") == 0) {
 			t = gtk_editable_get_chars (GTK_EDITABLE (dialog->details->share_entry), 0, -1);
@@ -284,7 +284,7 @@ connect_to_server (BaobabRemoteConnectDialog *dialog, GtkWindow *app)
 		folder = gtk_editable_get_chars (GTK_EDITABLE (dialog->details->folder_entry), 0, -1);
 		if (gtk_widget_get_parent (dialog->details->user_entry) != NULL) {
 			free_user = TRUE;
-			
+
 			t = gtk_editable_get_chars (GTK_EDITABLE (dialog->details->user_entry), 0, -1);
 
 			user = g_uri_escape_string (t, G_URI_RESERVED_CHARS_ALLOWED_IN_USERINFO, FALSE);
@@ -295,7 +295,7 @@ connect_to_server (BaobabRemoteConnectDialog *dialog, GtkWindow *app)
 			free_domain = TRUE;
 
 			domain = gtk_editable_get_chars (GTK_EDITABLE (dialog->details->domain_entry), 0, -1);
-			
+
 			if (strlen (domain) != 0) {
 				t = user;
 
@@ -397,7 +397,7 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 	int index, i;
 	GtkWidget *label, *grid;
 	GtkTreeIter iter;
-	
+
 	/* Get our method info */
 	gtk_combo_box_get_active_iter (GTK_COMBO_BOX (dialog->details->type_combo), &iter);
 	gtk_tree_model_get (gtk_combo_box_get_model (GTK_COMBO_BOX (dialog->details->type_combo)),
@@ -439,7 +439,7 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 
 	i = 1;
 	grid = dialog->details->grid;
-	
+
 	if (meth->scheme == NULL) {
 		label = gtk_label_new_with_mnemonic (_("_Location (URI):"));
 		gtk_label_set_xalign (GTK_LABEL (label), 0.0);
@@ -456,7 +456,7 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 
 		return;
 	}
-	
+
 	label = gtk_label_new_with_mnemonic (_("_Server:"));
 	gtk_label_set_xalign (GTK_LABEL (label), 0.0);
 	gtk_label_set_yalign (GTK_LABEL (label), 0.5);
@@ -477,7 +477,7 @@ setup_for_type (BaobabRemoteConnectDialog *dialog)
 	gtk_grid_attach (GTK_GRID (grid), label, 0, i, 2, 1);
 
 	i++;
-	
+
 	if (meth->flags & SHOW_SHARE) {
 		label = gtk_label_new_with_mnemonic (_("_Share:"));
 		gtk_label_set_xalign (GTK_LABEL (label), 0.0);
@@ -595,7 +595,7 @@ baobab_remote_connect_dialog_init (BaobabRemoteConnectDialog *dialog)
 	GtkListStore *store;
 	GtkCellRenderer *renderer;
 	int i;
-	
+
 	dialog->details = g_new0 (BaobabRemoteConnectDialogDetails, 1);
 
 	gtk_window_set_title (GTK_WINDOW (dialog), _("Connect to Server"));
@@ -613,7 +613,7 @@ baobab_remote_connect_dialog_init (BaobabRemoteConnectDialog *dialog)
 	gtk_box_pack_start (GTK_BOX (vbox),
 			    hbox, FALSE, TRUE, 0);
 	gtk_widget_show (hbox);
-	
+
 	label = gtk_label_new_with_mnemonic (_("Service _type:"));
 	gtk_label_set_xalign (GTK_LABEL (label), 0.0);
 	gtk_label_set_yalign (GTK_LABEL (label), 0.5);
@@ -680,7 +680,7 @@ baobab_remote_connect_dialog_init (BaobabRemoteConnectDialog *dialog)
 	g_signal_connect (combo, "changed",
 			  G_CALLBACK (combo_changed_callback),
 			  dialog);
-	
+
 	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
 	gtk_box_pack_start (GTK_BOX (vbox),
 			    hbox, FALSE, TRUE, 0);
@@ -690,7 +690,7 @@ baobab_remote_connect_dialog_init (BaobabRemoteConnectDialog *dialog)
 	gtk_widget_show (label);
 	gtk_box_pack_start (GTK_BOX (hbox),
 			    label, FALSE, FALSE, 0);
-	
+
 
 	dialog->details->grid = grid = gtk_grid_new ();
 	gtk_grid_set_row_spacing (GTK_GRID (grid), 6);
@@ -725,9 +725,9 @@ baobab_remote_connect_dialog_init (BaobabRemoteConnectDialog *dialog)
 	g_object_ref (dialog->details->folder_entry);
 	g_object_ref (dialog->details->domain_entry);
 	g_object_ref (dialog->details->user_entry);
-	
+
 	setup_for_type (dialog);
-	
+
 	gtk_dialog_add_button (GTK_DIALOG (dialog),
 			       "gtk-cancel",
 			       GTK_RESPONSE_CANCEL);

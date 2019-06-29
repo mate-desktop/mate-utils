@@ -30,7 +30,7 @@
 enum {
   TYPE_IMAGE_PNG,
   TYPE_TEXT_URI_LIST,
-  
+
   LAST_TYPE
 };
 
@@ -139,7 +139,7 @@ drag_data_get (GtkWidget          *widget,
                              screenshot_save_get_filename (),
                              NULL);
       uris[1] = NULL;
-      
+
       gtk_selection_data_set_uris (selection_data, uris);
       g_strfreev (uris);
     }
@@ -270,7 +270,7 @@ screenshot_dialog_new (GdkPixbuf *screenshot,
   gtk_editable_select_region (GTK_EDITABLE (dialog->filename_entry),
 			      0,
 			      pos);
-  
+
   g_free (current_name);
 
   return dialog;

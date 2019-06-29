@@ -205,7 +205,7 @@ tree_selection_changed_cb (GtkTreeSelection *selection,
     gtk_tree_model_get (model, &parent, LOG_OBJECT, &log, -1);
 
     if (!logview_manager_log_is_active (list->priv->manager, log)) {
-      save_day_selection (list, &iter);      
+      save_day_selection (list, &iter);
       logview_manager_set_active_log (list->priv->manager, log);
     } else {
       g_signal_emit (list, signals[DAY_SELECTED], 0, day, NULL);
@@ -232,7 +232,7 @@ manager_active_changed_cb (LogviewManager *manager,
   GtkTreeIter * iter, sel_iter;
   GtkTreeSelection * selection;
 
-  if (list->priv->selection && 
+  if (list->priv->selection &&
       gtk_tree_model_get_iter (GTK_TREE_MODEL (list->priv->model),
                                &sel_iter, list->priv->selection))
   {
@@ -392,7 +392,7 @@ do_finalize (GObject *obj)
   G_OBJECT_CLASS (logview_loglist_parent_class)->finalize (obj);
 }
 
-static void 
+static void
 logview_loglist_init (LogviewLoglist *list)
 {
   GtkTreeStore *model;

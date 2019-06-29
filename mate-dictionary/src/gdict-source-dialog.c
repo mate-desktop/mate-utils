@@ -49,7 +49,7 @@ struct _GdictSourceDialog
 {
   GtkDialog parent_instance;
 
-  GtkBuilder *builder; 
+  GtkBuilder *builder;
 
   GSettings *settings;
 
@@ -57,9 +57,9 @@ struct _GdictSourceDialog
   GdictSource *source;
   gchar *source_name;
   GdictContext *context;
-  
+
   GdictSourceDialogAction action;
-  
+
   GdictSourceTransport transport;
 
   GtkWidget *add_button;
@@ -69,7 +69,7 @@ struct _GdictSourceDialog
 
   GtkWidget *db_chooser;
   GtkWidget *strat_chooser;
-  
+
   GtkWidget *transport_combo;
 };
 
@@ -81,7 +81,7 @@ struct _GdictSourceDialogClass
 enum
 {
   PROP_0,
-  
+
   PROP_SOURCE_LOADER,
   PROP_SOURCE_NAME,
   PROP_ACTION
@@ -95,7 +95,7 @@ set_source_loader (GdictSourceDialog *dialog,
 {
   if (dialog->loader)
     g_object_unref (dialog->loader);
-  
+
   dialog->loader = g_object_ref (loader);
 }
 
@@ -116,11 +116,11 @@ transport_combo_changed_cb (GtkWidget *widget,
       gtk_widget_show (GTK_WIDGET (gtk_builder_get_object (dialog->builder, "hostname_entry")));
       gtk_widget_show (GTK_WIDGET (gtk_builder_get_object (dialog->builder, "port_label")));
       gtk_widget_show (GTK_WIDGET (gtk_builder_get_object (dialog->builder, "port_entry")));
-      
+
       if (dialog->action == GDICT_SOURCE_DIALOG_CREATE)
         {
           gtk_widget_set_sensitive (dialog->add_button, TRUE);
-          
+
           dialog->transport = GDICT_SOURCE_TRANSPORT_DICTD;
         }
     }
@@ -134,7 +134,7 @@ transport_combo_changed_cb (GtkWidget *widget,
       if (dialog->action == GDICT_SOURCE_DIALOG_CREATE)
         {
           gtk_widget_set_sensitive (dialog->add_button, FALSE);
-          
+
           dialog->transport = GDICT_SOURCE_TRANSPORT_INVALID;
         }
     }
@@ -150,9 +150,9 @@ get_text_from_entry (GdictSourceDialog *dialog,
   entry = GTK_WIDGET (gtk_builder_get_object (dialog->builder, entry_name));
   if (!entry)
     return NULL;
-  
+
   retval = gtk_editable_get_chars (GTK_EDITABLE (entry), 0, -1);
-  
+
   return retval;
 }
 
@@ -208,7 +208,7 @@ static void
 update_dialog_ui (GdictSourceDialog *dialog)
 {
   GdictSource *source;
-  
+
   /* TODO - add code to update the contents of the dialog depending
    * on the action; if we are in _CREATE, no action is needed
    */
@@ -222,7 +222,7 @@ update_dialog_ui (GdictSourceDialog *dialog)
 		     "source name has been defined.  Aborting...");
 	  return;
 	}
-      
+
       source = gdict_source_loader_get_source (dialog->loader,
 		      			       dialog->source_name);
       if (!source)
@@ -232,9 +232,9 @@ update_dialog_ui (GdictSourceDialog *dialog)
 		     dialog->source_name);
 	  return;
 	}
-      
+
       g_object_ref (source);
-      
+
       dialog->source = source;
       set_text_to_entry (dialog, "description_entry",
 		         gdict_source_get_description (source));
@@ -252,7 +252,7 @@ update_dialog_ui (GdictSourceDialog *dialog)
                      dialog->source_name);
           return;
         }
-      
+
       set_transport_settings (dialog);
 
       gdict_database_chooser_set_context (GDICT_DATABASE_CHOOSER (dialog->db_chooser),
@@ -286,16 +286,16 @@ build_new_source (GdictSourceDialog *dialog)
   gchar *filename;
   GdictDatabaseChooser *db_chooser;
   GdictStrategyChooser *strat_chooser;
-  
+
   source = gdict_source_new ();
-      
+
   /* use the timestamp and the pid to get a unique name */
   name = g_strdup_printf ("source-%lu-%u",
                           (gulong) time (NULL),
                           (guint) getpid ());
   gdict_source_set_name (source, name);
   g_free (name);
-      
+
   text = get_text_from_entry (dialog, "description_entry");
   gdict_source_set_description (source, text);
   g_free (text);
@@ -317,12 +317,12 @@ build_new_source (GdictSourceDialog *dialog)
     case GDICT_SOURCE_TRANSPORT_DICTD:
       host = get_text_from_entry (dialog, "hostname_entry");
       port = get_text_from_entry (dialog, "port_entry");
-       
+
       gdict_source_set_transport (source, GDICT_SOURCE_TRANSPORT_DICTD,
           			  "hostname", host,
           			  "port", atoi (port),
           			  NULL);
-          
+
       g_free (host);
       g_free (port);
       break;
@@ -331,7 +331,7 @@ build_new_source (GdictSourceDialog *dialog)
       g_warning ("Invalid transport");
       return;
     }
-      
+
   error = NULL;
   data = gdict_source_to_data (source, &length, &error);
   if (error)
@@ -339,11 +339,11 @@ build_new_source (GdictSourceDialog *dialog)
       gdict_show_gerror_dialog (GTK_WINDOW (dialog),
 				_("Unable to create a source file"),
 				error);
-       
+
       g_object_unref (source);
       return;
     }
-      
+
   name = g_strdup_printf ("%s.desktop", gdict_source_get_name (source));
   filename = g_build_filename (g_get_user_config_dir (),
   			       "mate",
@@ -351,7 +351,7 @@ build_new_source (GdictSourceDialog *dialog)
       			       name,
       			       NULL);
   g_free (name);
-      
+
   g_file_set_contents (filename, data, length, &error);
   if (error)
     gdict_show_gerror_dialog (GTK_WINDOW (dialog),
@@ -376,7 +376,7 @@ save_source (GdictSourceDialog *dialog)
   gsize length;
   GError *error;
   gchar *filename;
-  
+
   source = gdict_source_loader_get_source (dialog->loader,
 		  			   dialog->source_name);
   if (!source)
@@ -387,7 +387,7 @@ save_source (GdictSourceDialog *dialog)
 
       return;
     }
-      
+
   text = get_text_from_entry (dialog, "description_entry");
   gdict_source_set_description (source, text);
   g_free (text);
@@ -410,12 +410,12 @@ save_source (GdictSourceDialog *dialog)
     case GDICT_SOURCE_TRANSPORT_DICTD:
       host = get_text_from_entry (dialog, "hostname_entry");
       port = get_text_from_entry (dialog, "port_entry");
-       
+
       gdict_source_set_transport (source, GDICT_SOURCE_TRANSPORT_DICTD,
           			  "hostname", host,
           			  "port", atoi (port),
           			  NULL);
-          
+
       g_free (host);
       g_free (port);
       break;
@@ -424,7 +424,7 @@ save_source (GdictSourceDialog *dialog)
       g_warning ("Invalid transport");
       return;
     }
-      
+
   error = NULL;
   data = gdict_source_to_data (source, &length, &error);
   if (error)
@@ -432,11 +432,11 @@ save_source (GdictSourceDialog *dialog)
       gdict_show_gerror_dialog (GTK_WINDOW (dialog),
 			 	_("Unable to create a source file"),
 			 	error);
-      
+
       g_object_unref (source);
       return;
     }
-      
+
   name = g_strdup_printf ("%s.desktop", gdict_source_get_name (source));
   filename = g_build_filename (g_get_user_config_dir (),
       			       "mate",
@@ -444,7 +444,7 @@ save_source (GdictSourceDialog *dialog)
 			       name,
 			       NULL);
   g_free (name);
-      
+
   g_file_set_contents (filename, data, length, &error);
   if (error)
     gdict_show_gerror_dialog (GTK_WINDOW (dialog),
@@ -462,7 +462,7 @@ gdict_source_dialog_response_cb (GtkDialog *dialog,
 				 gpointer   user_data)
 {
   GError *err = NULL;
-  
+
   switch (response_id)
     {
     case GTK_RESPONSE_ACCEPT:
@@ -499,7 +499,7 @@ gdict_source_dialog_finalize (GObject *object)
 
   if (dialog->settings)
     g_object_unref (dialog->settings);
-  
+
   if (dialog->builder)
     g_object_unref (dialog->builder);
 
@@ -508,10 +508,10 @@ gdict_source_dialog_finalize (GObject *object)
 
   if (dialog->source)
     g_object_unref (dialog->source);
-  
+
   if (dialog->loader)
     g_object_unref (dialog->loader);
-  
+
   G_OBJECT_CLASS (gdict_source_dialog_parent_class)->finalize (object);
 }
 
@@ -522,7 +522,7 @@ gdict_source_dialog_set_property (GObject      *object,
 				  GParamSpec   *pspec)
 {
   GdictSourceDialog *dialog = GDICT_SOURCE_DIALOG (object);
-  
+
   switch (prop_id)
     {
     case PROP_SOURCE_LOADER:
@@ -547,7 +547,7 @@ gdict_source_dialog_get_property (GObject    *object,
 				  GParamSpec *pspec)
 {
   GdictSourceDialog *dialog = GDICT_SOURCE_DIALOG (object);
-  
+
   switch (prop_id)
     {
     case PROP_SOURCE_LOADER:
@@ -592,7 +592,7 @@ gdict_source_dialog_constructor (GType                  type,
     g_error_free (error);
     g_assert_not_reached ();
   }
-  
+
   /* the main widget */
   gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))),
                      GTK_WIDGET (gtk_builder_get_object (dialog->builder, "source_root")));
@@ -609,7 +609,7 @@ gdict_source_dialog_constructor (GType                  type,
   dialog->help_button = gtk_dialog_add_button (GTK_DIALOG (dialog),
   					       "gtk-help",
 					       GTK_RESPONSE_HELP);
-  
+
   vbox = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "db-vbox"));
   dialog->db_chooser = gdict_database_chooser_new ();
   gtk_box_pack_start (GTK_BOX (vbox), dialog->db_chooser, TRUE, TRUE, 0);
@@ -631,7 +631,7 @@ gdict_source_dialog_constructor (GType                  type,
       gtk_editable_set_editable (GTK_EDITABLE (gtk_builder_get_object (dialog->builder, "description_entry")), FALSE);
       gtk_editable_set_editable (GTK_EDITABLE (gtk_builder_get_object (dialog->builder, "hostname_entry")), FALSE);
       gtk_editable_set_editable (GTK_EDITABLE (gtk_builder_get_object (dialog->builder, "port_entry")), FALSE);
-      
+
       gtk_widget_set_sensitive (dialog->transport_combo, FALSE);
 
       /* we just allow closing the dialog */
@@ -663,7 +663,7 @@ gdict_source_dialog_constructor (GType                  type,
       g_assert_not_reached ();
       break;
     }
-  
+
   /* this will take care of updating the contents of the dialog
    * based on the action
    */
@@ -676,12 +676,12 @@ static void
 gdict_source_dialog_class_init (GdictSourceDialogClass *klass)
 {
   GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
-  
+
   gobject_class->constructor = gdict_source_dialog_constructor;
   gobject_class->set_property = gdict_source_dialog_set_property;
   gobject_class->get_property = gdict_source_dialog_get_property;
   gobject_class->finalize = gdict_source_dialog_finalize;
-  
+
   g_object_class_install_property (gobject_class,
   				   PROP_SOURCE_LOADER,
   				   g_param_spec_object ("source-loader",
@@ -728,10 +728,10 @@ gdict_source_dialog_new (GtkWindow               *parent,
 			 const gchar             *source_name)
 {
   GtkWidget *retval;
-  
+
   g_return_val_if_fail ((parent == NULL || GTK_IS_WINDOW (parent)), NULL);
   g_return_val_if_fail (GDICT_IS_SOURCE_LOADER (loader), NULL);
-  
+
   retval = g_object_new (GDICT_TYPE_SOURCE_DIALOG,
   			 "source-loader", loader,
   			 "source-name", source_name,
@@ -746,6 +746,6 @@ gdict_source_dialog_new (GtkWindow               *parent,
       gtk_window_set_screen (GTK_WINDOW (retval),
                              gtk_widget_get_screen (GTK_WIDGET (parent)));
     }
-  
+
   return retval;
 }

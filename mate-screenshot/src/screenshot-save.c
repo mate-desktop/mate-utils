@@ -138,14 +138,14 @@ make_temp_directory (void)
 {
   gint result, i;
   gchar *dir_name;
-  
+
   i = 0;
   do
     {
       gchar *tmp_dir = g_strdup_printf ("mate-screenshot.%u.%d",
                                         (unsigned int) getpid (),
                                         i++);
-      
+
       dir_name = g_build_filename (g_get_tmp_dir (),
                                    tmp_dir,
                                    NULL);

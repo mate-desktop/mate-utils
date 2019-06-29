@@ -190,7 +190,7 @@ setup_file_monitor (LogviewLog *log)
     g_error_free (err);
     return;
   }
-  
+
   /* set the rate to 1sec, as I guess it's not unusual to have more than
    * one line written consequently or in a short time, being a log file.
    */
@@ -232,7 +232,7 @@ add_new_days_to_cache (LogviewLog *log, const char **new_lines, guint lines_offs
       log->priv->days = g_slist_append (log->priv->days, logview_utils_day_copy (day));
     } else if (res == 0) {
       last = last_cached->data;
- 
+
       /* update the lines number */
       last->last_line += day->last_line;
     }
@@ -371,7 +371,7 @@ skip_string (GInputStream *is)
 	} while (c != 0);
 
 	return TRUE;
-} 
+}
 
 static gboolean
 read_gzip_header (GInputStream *is,
@@ -407,7 +407,7 @@ read_gzip_header (GInputStream *is,
 		guchar tmp[2];
 
     bytes = g_input_stream_read (is, tmp, 2, NULL, NULL);
-  
+
     if (bytes != 2) {
 			return FALSE;
     }
@@ -573,7 +573,7 @@ gz_handle_read (GZHandle *gz,
     } else if (z_result != Z_OK) {
       gz->last_z_result = z_result;
     }
-    
+
     if (gz->last_z_result != Z_OK && zstream->avail_out == num_bytes) {
       return result_from_z_result (gz->last_z_result);
     }
@@ -725,7 +725,7 @@ log_load (GIOSchedulerJob *io_job,
       err = create_zlib_error ();
       goto out;
     }
- 
+
     g_object_unref (is);
     is = real_is;
 

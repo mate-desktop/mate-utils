@@ -15,7 +15,7 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, 
+ * Foundation, Inc., 51 Franklin St, Fifth Floor,
  * Boston, MA  02110-1301  USA
  *
  * Authors:
@@ -53,7 +53,7 @@ typedef struct _BaobabRingschartPrivate BaobabRingschartPrivate;
 struct _BaobabRingschart
 {
   BaobabChart parent;
-  
+
   BaobabRingschartPrivate *priv;
 };
 
@@ -64,7 +64,7 @@ struct _BaobabRingschartClass
 
 GType baobab_ringschart_get_type (void) G_GNUC_CONST;
 GtkWidget *baobab_ringschart_new (void);
-void baobab_ringschart_set_subfoldertips_enabled (GtkWidget *chart, 
+void baobab_ringschart_set_subfoldertips_enabled (GtkWidget *chart,
                                                   gboolean enabled);
 
 G_END_DECLS

@@ -184,7 +184,7 @@ enumerate_next_files_async_cb (GObject *source,
     type = g_file_info_get_file_type (info);
     content_type = g_file_info_get_content_type (info);
     name = g_file_info_get_name (info);
-    
+
     if (!g_file_info_get_attribute_boolean (info, "access::can-read")) {
       g_object_unref (info);
       continue;
@@ -245,7 +245,7 @@ enumerate_children_async_cb (GObject *source,
 
   g_file_enumerator_next_files_async (enumerator, G_MAXINT,
                                       G_PRIORITY_DEFAULT,
-                                      NULL, enumerate_next_files_async_cb, job);  
+                                      NULL, enumerate_next_files_async_cb, job);
 }
 
 static void

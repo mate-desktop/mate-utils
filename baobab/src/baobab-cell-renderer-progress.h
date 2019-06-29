@@ -39,7 +39,7 @@ typedef struct _BaobabCellRendererProgressPrivate  BaobabCellRendererProgressPri
 struct _BaobabCellRendererProgress
 {
   GtkCellRenderer parent_instance;
-  
+
   /*< private >*/
   BaobabCellRendererProgressPrivate *priv;
 };
