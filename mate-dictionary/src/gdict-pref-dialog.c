@@ -577,6 +577,66 @@ gdict_pref_dialog_get_property (GObject    *object,
     }
 }
 
+static gboolean
+gdict_dialog_page_scroll_event_cb (GtkWidget *widget, GdkEventScroll *event, GtkWindow *window)
+{
+  GtkNotebook *notebook = GTK_NOTEBOOK (widget);
+  GtkWidget *child, *event_widget, *action_widget;
+
+  child = gtk_notebook_get_nth_page (notebook, gtk_notebook_get_current_page (notebook));
+  if (child == NULL)
+      return FALSE;
+
+  event_widget = gtk_get_event_widget ((GdkEvent *) event);
+
+  /* Ignore scroll events from the content of the page */
+  if (event_widget == NULL ||
+      event_widget == child ||
+      gtk_widget_is_ancestor (event_widget, child))
+      return FALSE;
+
+  /* And also from the action widgets */
+  action_widget = gtk_notebook_get_action_widget (notebook, GTK_PACK_START);
+  if (event_widget == action_widget ||
+      (action_widget != NULL && gtk_widget_is_ancestor (event_widget, action_widget)))
+      return FALSE;
+  action_widget = gtk_notebook_get_action_widget (notebook, GTK_PACK_END);
+  if (event_widget == action_widget ||
+      (action_widget != NULL && gtk_widget_is_ancestor (event_widget, action_widget)))
+      return FALSE;
+
+  switch (event->direction) {
+  case GDK_SCROLL_RIGHT:
+  case GDK_SCROLL_DOWN:
+    gtk_notebook_next_page (notebook);
+    break;
+  case GDK_SCROLL_LEFT:
+  case GDK_SCROLL_UP:
+    gtk_notebook_prev_page (notebook);
+    break;
+  case GDK_SCROLL_SMOOTH:
+    switch (gtk_notebook_get_tab_pos (notebook)) {
+    case GTK_POS_LEFT:
+    case GTK_POS_RIGHT:
+      if (event->delta_y > 0)
+          gtk_notebook_next_page (notebook);
+      else if (event->delta_y < 0)
+          gtk_notebook_prev_page (notebook);
+      break;
+    case GTK_POS_TOP:
+    case GTK_POS_BOTTOM:
+      if (event->delta_x > 0)
+          gtk_notebook_next_page (notebook);
+      else if (event->delta_x < 0)
+          gtk_notebook_prev_page (notebook);
+      break;
+    }
+    break;
+  }
+
+  return TRUE;
+}
+
 static void
 gdict_pref_dialog_class_init (GdictPrefDialogClass *klass)
 {
@@ -634,6 +694,10 @@ gdict_pref_dialog_init (GdictPrefDialog *dialog)
 
   /* keep all the interesting widgets around */
   dialog->notebook = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "preferences_notebook"));
+
+  gtk_widget_add_events (dialog->notebook, GDK_SCROLL_MASK);
+  g_signal_connect (dialog->notebook, "scroll-event",
+                    G_CALLBACK (gdict_dialog_page_scroll_event_cb), GTK_WINDOW (dialog));
 
   dialog->sources_view = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "sources_treeview"));
   build_sources_view (dialog);
