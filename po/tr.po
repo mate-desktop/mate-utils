@@ -6,20 +6,22 @@
 # Translators:
 # Mehmet, 2018
 # Yasin Uysal <yasinuysal22@outlook.com>, 2018
-# Emre FIRAT <emrefirat93@gmail.com>, 2018
 # Butterfly <gokhanlnx@gmail.com>, 2018
 # tarakbumba <tarakbumba@gmail.com>, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# mauron, 2018
+# Sabri Ünal <yakushabb@gmail.com>, 2019
+# mauron, 2019
+# Emre FIRAT <emrefirat93@gmail.com>, 2019
+# Cenk Yıldızlı <goncagul@national.shitposting.agency>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-16 17:18+0100\n"
+"POT-Creation-Date: 2019-03-24 11:07+0100\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: mauron, 2018\n"
+"Last-Translator: Cenk Yıldızlı <goncagul@national.shitposting.agency>, 2019\n"
 "Language-Team: Turkish (https://www.transifex.com/mate/teams/13566/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -68,7 +70,7 @@ msgid "S_can Remote Folder..."
 msgstr "_Uzaktaki Dizini Tara..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../logview/src/logview-window.c:817
+#: ../logview/src/logview-window.c:824
 #: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Edit"
 msgstr "_Düzenle"
@@ -82,7 +84,7 @@ msgid "_Collapse All"
 msgstr "Hepsini _Katla"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../logview/src/logview-window.c:818
+#: ../logview/src/logview-window.c:825
 #: ../mate-dictionary/src/gdict-window.c:1289
 msgid "_View"
 msgstr "_Görünüm"
@@ -100,7 +102,7 @@ msgid "All_ocated Space"
 msgstr "Ayrılmış _Alan"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../logview/src/logview-window.c:820
+#: ../logview/src/logview-window.c:827
 #: ../mate-dictionary/src/gdict-applet.c:1187
 #: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_Help"
@@ -108,12 +110,13 @@ msgstr "_Yardım"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../logview/src/logview-window.c:846
+#: ../logview/src/logview-window.c:853
 #: ../mate-dictionary/src/gdict-window.c:1341
 msgid "_Contents"
 msgstr "İçi_ndekiler"
 
 #: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1241
+#: ../baobab/src/callbacks.c:107
 msgid "Disk Usage Analyzer"
 msgstr "Disk Kullanım Analizcisi"
 
@@ -247,12 +250,12 @@ msgstr "ulaşılabilir:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:242 ../baobab/src/baobab.c:299
-#: ../baobab/src/callbacks.c:257
+#: ../baobab/src/callbacks.c:272
 msgid "Calculating percentage bars..."
 msgstr "Yüzde çubuğu hesaplanıyor..."
 
 #: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
-#: ../baobab/src/callbacks.c:261
+#: ../baobab/src/callbacks.c:276
 msgid "Ready"
 msgstr "Hazır"
 
@@ -564,7 +567,13 @@ msgstr "Ayrıntılar: %s"
 msgid "There was an error displaying help."
 msgstr "Yardım gösterilirken bir hata oluştu."
 
-#: ../baobab/src/callbacks.c:76 ../logview/src/logview-about.h:49
+#: ../baobab/src/callbacks.c:77 ../logview/src/logview-about.h:45
+#: ../mate-dictionary/src/gdict-about.c:52
+msgid "MATE Documentation Team"
+msgstr "MATE Belgelendirme Projesi"
+
+#: ../baobab/src/callbacks.c:82 ../logview/src/logview-about.h:50
+#: ../mate-dictionary/src/gdict-about.c:60
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -575,7 +584,8 @@ msgstr ""
 "Genel Kamu Lisansı'nın 2. veya daha sonraki sürümlerindeki şartlar altında "
 "dağıtabilir ve/veya değiştirilebilir."
 
-#: ../baobab/src/callbacks.c:81 ../logview/src/logview-about.h:53
+#: ../baobab/src/callbacks.c:87 ../logview/src/logview-about.h:54
+#: ../mate-dictionary/src/gdict-about.c:65
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -587,29 +597,35 @@ msgstr ""
 " de vermez. Lütfen daha fazla detay için GNU Genel Kamu Lisansı'nı "
 "inceleyin."
 
-#: ../baobab/src/callbacks.c:86 ../logview/src/logview-about.h:57
+#: ../baobab/src/callbacks.c:92 ../logview/src/logview-about.h:58
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
-"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA."
 msgstr ""
-"Bu programla beraber GNU Genel Kamu Lisansını da almış olmalısınız; eğer "
-"almadıysanız, Free Software Foundation, Inc., 59 Temple Place - Suite 330, "
-"Boston, MA 02110-1302, USA adresine yazınız."
+" Bu programla birlikte GNU Genel Kamu Lisansı'nın da bir kopyasını almış "
+"olmanız gerekiyor: eğer yoksa, Özgür Yazılım Vakfı'na yazın, 51 Franklin "
+"Sokağı, Beşinci Kat, Boston, MA 02110-1301, ABD."
 
-#: ../baobab/src/callbacks.c:95
+#: ../baobab/src/callbacks.c:109
+msgid "About Disk Usage Analyzer"
+msgstr "Disk Kullanım Çözümleyicisi Hakkında"
+
+#: ../baobab/src/callbacks.c:110
 msgid "A graphical tool to analyze disk usage."
 msgstr "Disk kullanımını analiz etmek için grafiksel bir araç."
 
-#: ../baobab/src/callbacks.c:97
+#: ../baobab/src/callbacks.c:111
 msgid ""
 "Copyright © 2005-2010 Fabio Marzocca\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
+"Telif Hakkı © 2005-2010 Fabio Marzocca\n"
+"Telif Hakkı © 2011-2019 MATE geliştiricileri"
 
 #. translator credits
-#: ../baobab/src/callbacks.c:102 ../logview/src/logview-about.h:63
-#: ../mate-dictionary/src/gdict-about.c:55
+#: ../baobab/src/callbacks.c:117 ../logview/src/logview-about.h:64
+#: ../mate-dictionary/src/gdict-about.c:56
 msgid "translator-credits"
 msgstr ""
 "GNOME projesine katkıda bulunanlar:\n"
@@ -623,13 +639,13 @@ msgstr ""
 "Atilla Öntaş <tarakbumba@gmail.com>, 2014\n"
 "Emre FIRAT <emrefirat93@gmail.com>, 2013, 2014, 2015"
 
-#: ../baobab/src/callbacks.c:200
+#: ../baobab/src/callbacks.c:215
 #: ../gsearchtool/src/gsearchtool-callbacks.c:514
 #: ../gsearchtool/src/gsearchtool-callbacks.c:864
 msgid "The document does not exist."
 msgstr "Belge bulunmuyor."
 
-#: ../baobab/src/callbacks.c:281
+#: ../baobab/src/callbacks.c:296
 msgid "The folder does not exist."
 msgstr "Dizin mevcut değil."
 
@@ -1693,6 +1709,10 @@ msgstr "Arka plan:"
 msgid "Effect:"
 msgstr "Etki:"
 
+#: ../logview/src/logview-about.h:42 ../mate-dictionary/src/gdict-about.c:49
+msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
+msgstr "Sun GNOME Dokümantasyon Ekibi <gdocteam@sun.com>"
+
 #: ../logview/src/logview-app.c:377
 #, c-format
 msgid "Impossible to open the file %s"
@@ -1792,7 +1812,7 @@ msgstr " - Günlüklere gözat ve izle"
 msgid "Log Viewer"
 msgstr "Günlük Görüntüleyicisi"
 
-#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:767
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:773
 msgid "System Log Viewer"
 msgstr "Sistem Günlük Görüntüleyicisi"
 
@@ -1826,158 +1846,164 @@ msgstr "Katlanmış"
 msgid "Not found"
 msgstr "Bulunamadı"
 
-#: ../logview/src/logview-window.c:769
+#: ../logview/src/logview-window.c:775
+msgid "About System Log Viewer"
+msgstr "Sistem Kayıt Görüntüleyici Hakkında"
+
+#: ../logview/src/logview-window.c:776
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
+"Telif Hakkı © 1998-2008 Free Software Foundation, Inc.\n"
+"Telif Hakkı © 2011-2019 MATE geliştiricileri"
 
-#: ../logview/src/logview-window.c:773
+#: ../logview/src/logview-window.c:780
 msgid "A system log viewer for MATE."
 msgstr "MATE için sistem günlük görüntüleyici."
 
-#: ../logview/src/logview-window.c:816
+#: ../logview/src/logview-window.c:823
 #: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_File"
 msgstr "_Dosya"
 
-#: ../logview/src/logview-window.c:819
+#: ../logview/src/logview-window.c:826
 msgid "_Filters"
 msgstr "_Filtreler"
 
-#: ../logview/src/logview-window.c:822
+#: ../logview/src/logview-window.c:829
 msgid "_Open..."
 msgstr "_Aç..."
 
-#: ../logview/src/logview-window.c:822
+#: ../logview/src/logview-window.c:829
 msgid "Open a log from file"
 msgstr "Dosyadan günlük aç"
 
-#: ../logview/src/logview-window.c:824
+#: ../logview/src/logview-window.c:831
 #: ../mate-dictionary/src/gdict-window.c:1302
 msgid "_Close"
 msgstr "_Kapat"
 
-#: ../logview/src/logview-window.c:824
+#: ../logview/src/logview-window.c:831
 msgid "Close this log"
 msgstr "Günlüğü kapat"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:833
 msgid "_Quit"
 msgstr "_Çık"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:833
 msgid "Quit the log viewer"
 msgstr "Günlük görüntüleyicisinden çık"
 
 #. Edit menu
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:836
 #: ../mate-dictionary/src/gdict-window.c:1306
 msgid "_Copy"
 msgstr "_Kopyala"
 
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:836
 msgid "Copy the selection"
 msgstr "Seçimi kopyala"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:838
 #: ../mate-dictionary/src/gdict-window.c:1308
 msgid "Select _All"
 msgstr "Tü_münü Seç"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:838
 msgid "Select the entire log"
 msgstr "Tüm günlüğü seç"
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:840
 msgid "_Find..."
 msgstr "_Bul..."
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:840
 msgid "Find a word or phrase in the log"
 msgstr "Günlük içinde bir kelime ya da öbek ara"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:843
 msgid "Zoom _In"
 msgstr "_Yakınlaş"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:843
 msgid "Bigger text size"
 msgstr "Daha büyük metin boyutu"
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:845
 msgid "Zoom _Out"
 msgstr "_Uzaklaştır"
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:845
 msgid "Smaller text size"
 msgstr "Daha küçük metin boyutu"
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:847
 msgid "_Normal Size"
 msgstr "_Normal Boyut"
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:847
 msgid "Normal text size"
 msgstr "Normal metin boyutu"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:850
 msgid "Manage Filters"
 msgstr "Filtreleri Yönet"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:850
 msgid "Manage filters"
 msgstr "Filtreleri yönet"
 
-#: ../logview/src/logview-window.c:846
+#: ../logview/src/logview-window.c:853
 msgid "Open the help contents for the log viewer"
 msgstr "Günlük görüntüleyici için yardım dosyasını aç"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:855
 #: ../mate-dictionary/src/gdict-applet.c:1190
 #: ../mate-dictionary/src/gdict-window.c:1343
 msgid "_About"
 msgstr "_Hakkında"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:855
 msgid "Show the about dialog for the log viewer"
 msgstr "Günlük görüntüleyici için hakkında penceresini göster"
 
-#: ../logview/src/logview-window.c:853
+#: ../logview/src/logview-window.c:860
 msgid "_Statusbar"
 msgstr "_Durum Çubuğu"
 
-#: ../logview/src/logview-window.c:853
+#: ../logview/src/logview-window.c:860
 msgid "Show Status Bar"
 msgstr "Durum Çubuğunu Göster"
 
-#: ../logview/src/logview-window.c:855
+#: ../logview/src/logview-window.c:862
 msgid "Side _Pane"
 msgstr "Yan _Panel"
 
-#: ../logview/src/logview-window.c:855
+#: ../logview/src/logview-window.c:862
 msgid "Show Side Pane"
 msgstr "Kenar Çubuğunu Göster"
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:864
 msgid "Show matches only"
 msgstr "Sadece eşleşmeler"
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:864
 msgid "Only show lines that match one of the given filters"
 msgstr ""
 "Sadece bir ya da daha fazla girilen filtre ile eşleşen satırları göster"
 
-#: ../logview/src/logview-window.c:989
+#: ../logview/src/logview-window.c:996
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr "\"%s\" unsurundan okuma yapılamadı"
 
-#: ../logview/src/logview-window.c:1414
+#: ../logview/src/logview-window.c:1421
 msgid "Version: "
 msgstr "Sürüm: "
 
-#: ../logview/src/logview-window.c:1522
+#: ../logview/src/logview-window.c:1529
 msgid "Could not open the following files:"
 msgstr "Aşağıdaki dosyalar açılamadı:"
 
@@ -2423,23 +2449,39 @@ msgstr "GDict Seçenekleri"
 msgid "Show GDict Options"
 msgstr "GDict Seçeneklerini Göster"
 
-#: ../mate-dictionary/src/gdict-about.c:56
+#: ../mate-dictionary/src/gdict-about.c:57
 #: ../mate-dictionary/src/gdict-applet.c:589
 msgid "Look up words in dictionaries"
 msgstr "Kelimeleri sözlüklerde ara"
 
-#: ../mate-dictionary/src/gdict-about.c:77
+#: ../mate-dictionary/src/gdict-about.c:70
+msgid ""
+"You should have received a copy of the GNU General Public License along with"
+" this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin St, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"Bu programla beraber GNU Genel Kamu Lisansını da almış olmalısınız; eğer "
+"almadıysanız, Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, "
+"Boston, MA 02110-1301, USA adresine yazınız."
+
+#: ../mate-dictionary/src/gdict-about.c:87
 #: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:607
 #: ../mate-dictionary/src/gdict-window.c:1896
 msgid "Dictionary"
 msgstr "Sözlük"
 
-#: ../mate-dictionary/src/gdict-about.c:79
+#: ../mate-dictionary/src/gdict-about.c:89
+msgid "About Dictionary"
+msgstr "Sözlük Hakkında"
+
+#: ../mate-dictionary/src/gdict-about.c:90
 msgid ""
 "Copyright © 2005-2006 Emmanuele Bassi\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
+"Telif Hakkı © 2005-2006 Emmanuele Bassi\n"
+"Telif Hakkı © 2011-2019 MATE geliştiricileri"
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please

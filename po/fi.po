@@ -12,15 +12,16 @@
 # Eslam Ali <talvikahvi@gmail.com>, 2018
 # Ammuu5, 2018
 # nomen omen, 2018
+# Kimmo Kujansuu <mrkujansuu@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-16 17:18+0100\n"
+"POT-Creation-Date: 2019-03-24 11:07+0100\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: nomen omen, 2018\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>, 2019\n"
 "Language-Team: Finnish (https://www.transifex.com/mate/teams/13566/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -69,7 +70,7 @@ msgid "S_can Remote Folder..."
 msgstr "Kartoita _etäkansio…"
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../logview/src/logview-window.c:817
+#: ../logview/src/logview-window.c:824
 #: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Edit"
 msgstr "_Muokkaa"
@@ -83,7 +84,7 @@ msgid "_Collapse All"
 msgstr "_Kutista kaikki"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../logview/src/logview-window.c:818
+#: ../logview/src/logview-window.c:825
 #: ../mate-dictionary/src/gdict-window.c:1289
 msgid "_View"
 msgstr "_Näytä"
@@ -101,7 +102,7 @@ msgid "All_ocated Space"
 msgstr "Varattu _tila"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../logview/src/logview-window.c:820
+#: ../logview/src/logview-window.c:827
 #: ../mate-dictionary/src/gdict-applet.c:1187
 #: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_Help"
@@ -109,12 +110,13 @@ msgstr "_Ohje"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../logview/src/logview-window.c:846
+#: ../logview/src/logview-window.c:853
 #: ../mate-dictionary/src/gdict-window.c:1341
 msgid "_Contents"
 msgstr "_Sisältö"
 
 #: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1241
+#: ../baobab/src/callbacks.c:107
 msgid "Disk Usage Analyzer"
 msgstr "Levynkäytön analysointi"
 
@@ -160,7 +162,7 @@ msgstr "Päivitä"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:1
 msgid "Monitor Home"
-msgstr ""
+msgstr "Näytön koti"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:2
 msgid "Whether any change to the home directory should be monitored."
@@ -192,7 +194,7 @@ msgstr "Näytetäänkö tilarivi pääikkunan alareunassa."
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:9
 msgid "Subfolder tips visible"
-msgstr ""
+msgstr "Alikansioiden vihjeet näkyvissä"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:10
 msgid "Whether the subfolder tooltips of the selected folder are drawn."
@@ -200,11 +202,11 @@ msgstr "Näytetäänkö valitun kansion alikansioiden vihjeet."
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:11
 msgid "Active Chart"
-msgstr ""
+msgstr "Aktiivinen kaavio"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:12
 msgid "Which type of chart should be displayed."
-msgstr ""
+msgstr "Minkä tyyppisen kaavion pitäisi näkyä."
 
 #: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:1
 msgid "A disk usage analyzing tool for MATE Desktop"
@@ -238,12 +240,12 @@ msgstr "vapaana:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:242 ../baobab/src/baobab.c:299
-#: ../baobab/src/callbacks.c:257
+#: ../baobab/src/callbacks.c:272
 msgid "Calculating percentage bars..."
 msgstr "Lasketaan prosenttipalkkeja…"
 
 #: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
-#: ../baobab/src/callbacks.c:261
+#: ../baobab/src/callbacks.c:276
 msgid "Ready"
 msgstr "Valmis"
 
@@ -263,8 +265,8 @@ msgstr "sisältää kovia linkkejä kohteelle:"
 #, c-format
 msgid "%5d item"
 msgid_plural "%5d items"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%5d kohdetta"
+msgstr[1] "%5d kohdetta"
 
 #: ../baobab/src/baobab.c:592
 msgid "Could not initialize monitoring"
@@ -555,7 +557,13 @@ msgstr "Yksityiskohdat: %s"
 msgid "There was an error displaying help."
 msgstr "Ohjeen näyttämisessä tapahtui virhe."
 
-#: ../baobab/src/callbacks.c:76 ../logview/src/logview-about.h:49
+#: ../baobab/src/callbacks.c:77 ../logview/src/logview-about.h:45
+#: ../mate-dictionary/src/gdict-about.c:52
+msgid "MATE Documentation Team"
+msgstr "MATE-dokumentointitiimi"
+
+#: ../baobab/src/callbacks.c:82 ../logview/src/logview-about.h:50
+#: ../mate-dictionary/src/gdict-about.c:60
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -567,7 +575,8 @@ msgstr ""
 "Software Foundation on ne julkaissut; joko lisenssin version 2, tai "
 "(valinnan mukaan) minkä tahansa myöhemmän version mukaisesti."
 
-#: ../baobab/src/callbacks.c:81 ../logview/src/logview-about.h:53
+#: ../baobab/src/callbacks.c:87 ../logview/src/logview-about.h:54
+#: ../mate-dictionary/src/gdict-about.c:65
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -579,29 +588,30 @@ msgstr ""
 "hyväksyttävästä laadusta tai soveltuvuudesta tiettyyn tarkoitukseen. Katso "
 "GPL lisenssistä lisää yksityiskohtia."
 
-#: ../baobab/src/callbacks.c:86 ../logview/src/logview-about.h:57
+#: ../baobab/src/callbacks.c:92 ../logview/src/logview-about.h:58
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
-"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA."
 msgstr ""
-"Tämä ohjelman mukana pitäisi tulla kopio GPL-lisenssistä; jos näin ei ole, "
-"kirjoita osoitteeseen Free Software Foundation Inc., 51 Franklin St, Fifth "
-"Floor, Boston, MA 02110-1301, USA."
 
-#: ../baobab/src/callbacks.c:95
+#: ../baobab/src/callbacks.c:109
+msgid "About Disk Usage Analyzer"
+msgstr "Tietoja levyn käytön analysoimisesta"
+
+#: ../baobab/src/callbacks.c:110
 msgid "A graphical tool to analyze disk usage."
 msgstr "Graafinen työkalu levytilan käytön analysointiin."
 
-#: ../baobab/src/callbacks.c:97
+#: ../baobab/src/callbacks.c:111
 msgid ""
 "Copyright © 2005-2010 Fabio Marzocca\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
 
 #. translator credits
-#: ../baobab/src/callbacks.c:102 ../logview/src/logview-about.h:63
-#: ../mate-dictionary/src/gdict-about.c:55
+#: ../baobab/src/callbacks.c:117 ../logview/src/logview-about.h:64
+#: ../mate-dictionary/src/gdict-about.c:56
 msgid "translator-credits"
 msgstr ""
 "Tommi Vainikainen, 2005\n"
@@ -610,13 +620,13 @@ msgstr ""
 "Jarkko Ranta, 2003-2004\n"
 "Johanna Makkonen, 2003"
 
-#: ../baobab/src/callbacks.c:200
+#: ../baobab/src/callbacks.c:215
 #: ../gsearchtool/src/gsearchtool-callbacks.c:514
 #: ../gsearchtool/src/gsearchtool-callbacks.c:864
 msgid "The document does not exist."
 msgstr "Asiakirja ei ole olemassa."
 
-#: ../baobab/src/callbacks.c:281
+#: ../baobab/src/callbacks.c:296
 msgid "The folder does not exist."
 msgstr "Kansiota ei ole olemassa."
 
@@ -648,7 +658,7 @@ msgstr "Hakuhistoria"
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:2
 msgid "This key defines the items which were searched for in the past."
-msgstr ""
+msgstr "Tämä avain määrittää kohteet, joita etsittiin aiemmin."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:3
 msgid "Show Additional Options"
@@ -1077,8 +1087,8 @@ msgstr "Tiedostoja ei löytynyt"
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%'d tiedostoa löytyi"
+msgstr[1] "%'d tiedostoa löytyi"
 
 #: ../gsearchtool/src/gsearchtool.c:1014 ../gsearchtool/src/gsearchtool.c:1052
 #, c-format
@@ -1403,7 +1413,7 @@ msgstr "Avaa _ohjelmalla"
 #. Popup menu item: Open Containing Folder
 #: ../gsearchtool/src/gsearchtool-callbacks.c:1208
 msgid "Open Containing _Folder"
-msgstr ""
+msgstr "Avaa sisältävä kansio"
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:1248
 msgid "_Save Results As..."
@@ -1671,6 +1681,10 @@ msgstr "Tausta:"
 msgid "Effect:"
 msgstr "Tehoste:"
 
+#: ../logview/src/logview-about.h:42 ../mate-dictionary/src/gdict-about.c:49
+msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
+msgstr ""
+
 #: ../logview/src/logview-app.c:377
 #, c-format
 msgid "Impossible to open the file %s"
@@ -1769,7 +1783,7 @@ msgstr " - selaa ja tarkkaile lokeja"
 msgid "Log Viewer"
 msgstr "Lokikatselin"
 
-#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:767
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:773
 msgid "System Log Viewer"
 msgstr "Maten lokikatselin"
 
@@ -1803,157 +1817,161 @@ msgstr "Rivitetty"
 msgid "Not found"
 msgstr "Ei löydy"
 
-#: ../logview/src/logview-window.c:769
+#: ../logview/src/logview-window.c:775
+msgid "About System Log Viewer"
+msgstr "Tietoja järjestelmälokin katseluohjelmasta"
+
+#: ../logview/src/logview-window.c:776
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
 
-#: ../logview/src/logview-window.c:773
+#: ../logview/src/logview-window.c:780
 msgid "A system log viewer for MATE."
 msgstr "MATEn lokitiedostojen katseluohjelma."
 
-#: ../logview/src/logview-window.c:816
+#: ../logview/src/logview-window.c:823
 #: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_File"
 msgstr "_Tiedosto"
 
-#: ../logview/src/logview-window.c:819
+#: ../logview/src/logview-window.c:826
 msgid "_Filters"
 msgstr "_Suotimet"
 
-#: ../logview/src/logview-window.c:822
+#: ../logview/src/logview-window.c:829
 msgid "_Open..."
 msgstr "_Avaa…"
 
-#: ../logview/src/logview-window.c:822
+#: ../logview/src/logview-window.c:829
 msgid "Open a log from file"
 msgstr "Avaa lokitiedosto"
 
-#: ../logview/src/logview-window.c:824
+#: ../logview/src/logview-window.c:831
 #: ../mate-dictionary/src/gdict-window.c:1302
 msgid "_Close"
 msgstr "_Sulje"
 
-#: ../logview/src/logview-window.c:824
+#: ../logview/src/logview-window.c:831
 msgid "Close this log"
 msgstr "Sulje tämä loki"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:833
 msgid "_Quit"
 msgstr "_Lopeta"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:833
 msgid "Quit the log viewer"
 msgstr "Lopeta lokien katselu"
 
 #. Edit menu
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:836
 #: ../mate-dictionary/src/gdict-window.c:1306
 msgid "_Copy"
 msgstr "_Kopioi"
 
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:836
 msgid "Copy the selection"
 msgstr "Kopioi valinta"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:838
 #: ../mate-dictionary/src/gdict-window.c:1308
 msgid "Select _All"
 msgstr "Valitse k_aikki"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:838
 msgid "Select the entire log"
 msgstr "Valitse koko loki"
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:840
 msgid "_Find..."
 msgstr "_Etsi..."
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:840
 msgid "Find a word or phrase in the log"
 msgstr "Etsi sanaa tai lausetta lokista"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:843
 msgid "Zoom _In"
 msgstr "L_ähennä"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:843
 msgid "Bigger text size"
 msgstr "Suurempi tekstikoko"
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:845
 msgid "Zoom _Out"
 msgstr "L_oitonna"
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:845
 msgid "Smaller text size"
 msgstr "Pienempi tekstikoko"
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:847
 msgid "_Normal Size"
 msgstr "_Normaalikoko"
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:847
 msgid "Normal text size"
 msgstr "Normaali tekstikoko"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:850
 msgid "Manage Filters"
 msgstr "Hallitse suotimia"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:850
 msgid "Manage filters"
 msgstr "Hallitse suotimia"
 
-#: ../logview/src/logview-window.c:846
+#: ../logview/src/logview-window.c:853
 msgid "Open the help contents for the log viewer"
 msgstr "Näytä lokien katselun ohjeen sisältö"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:855
 #: ../mate-dictionary/src/gdict-applet.c:1190
 #: ../mate-dictionary/src/gdict-window.c:1343
 msgid "_About"
 msgstr "_Tietoja"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:855
 msgid "Show the about dialog for the log viewer"
 msgstr "Näytä tietoja lokien katseluohjelmasta"
 
-#: ../logview/src/logview-window.c:853
+#: ../logview/src/logview-window.c:860
 msgid "_Statusbar"
 msgstr "_Tilarivi"
 
-#: ../logview/src/logview-window.c:853
+#: ../logview/src/logview-window.c:860
 msgid "Show Status Bar"
 msgstr "Näytä tilarivi"
 
-#: ../logview/src/logview-window.c:855
+#: ../logview/src/logview-window.c:862
 msgid "Side _Pane"
 msgstr "_Sivupaneeli"
 
-#: ../logview/src/logview-window.c:855
+#: ../logview/src/logview-window.c:862
 msgid "Show Side Pane"
 msgstr "Näytä sivupalkki"
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:864
 msgid "Show matches only"
 msgstr "Näytä vain osumat"
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:864
 msgid "Only show lines that match one of the given filters"
 msgstr "Näytä vain rivit, jotka täsmäävät johonkin annetuista suotimista"
 
-#: ../logview/src/logview-window.c:989
+#: ../logview/src/logview-window.c:996
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr "Ei voi lukea kohteesta ”%s”"
 
-#: ../logview/src/logview-window.c:1414
+#: ../logview/src/logview-window.c:1421
 msgid "Version: "
 msgstr "Versio: "
 
-#: ../logview/src/logview-window.c:1522
+#: ../logview/src/logview-window.c:1529
 msgid "Could not open the following files:"
 msgstr "Seuraavia tiedostoja ei voitu avata:"
 
@@ -2397,19 +2415,30 @@ msgstr "GDict-valinnat"
 msgid "Show GDict Options"
 msgstr "Näytä GDict-valinnat"
 
-#: ../mate-dictionary/src/gdict-about.c:56
+#: ../mate-dictionary/src/gdict-about.c:57
 #: ../mate-dictionary/src/gdict-applet.c:589
 msgid "Look up words in dictionaries"
 msgstr "Etsi sanoja sanakirjoista"
 
-#: ../mate-dictionary/src/gdict-about.c:77
+#: ../mate-dictionary/src/gdict-about.c:70
+msgid ""
+"You should have received a copy of the GNU General Public License along with"
+" this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin St, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-about.c:87
 #: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:607
 #: ../mate-dictionary/src/gdict-window.c:1896
 msgid "Dictionary"
 msgstr "Sanakirja"
 
-#: ../mate-dictionary/src/gdict-about.c:79
+#: ../mate-dictionary/src/gdict-about.c:89
+msgid "About Dictionary"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-about.c:90
 msgid ""
 "Copyright © 2005-2006 Emmanuele Bassi\n"
 "Copyright © 2011-2019 MATE developers"
@@ -2744,7 +2773,7 @@ msgstr "Tulosta tämä asiakirja"
 
 #: ../mate-dictionary/src/gdict-window.c:1310
 msgid "_Find"
-msgstr ""
+msgstr "_Etsi"
 
 #: ../mate-dictionary/src/gdict-window.c:1311
 msgid "Find a word or phrase in the document"

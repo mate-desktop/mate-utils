@@ -8,17 +8,17 @@
 # zubr139, 2018
 # Шаповалов Анатолій Романович <elrond.716.smith@gmail.com>, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# dsafsadf <heneral@gmail.com>, 2018
-# Микола Ткач <chistomov@gmail.com>, 2018
+# dsafsadf <heneral@gmail.com>, 2019
+# Микола Ткач <chistomov@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-16 17:18+0100\n"
+"POT-Creation-Date: 2019-03-24 11:07+0100\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: Микола Ткач <chistomov@gmail.com>, 2018\n"
+"Last-Translator: Микола Ткач <chistomov@gmail.com>, 2019\n"
 "Language-Team: Ukrainian (https://www.transifex.com/mate/teams/13566/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -67,7 +67,7 @@ msgid "S_can Remote Folder..."
 msgstr "Сканувати _віддалену теку..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../logview/src/logview-window.c:817
+#: ../logview/src/logview-window.c:824
 #: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Edit"
 msgstr "_Зміни"
@@ -81,7 +81,7 @@ msgid "_Collapse All"
 msgstr "З_горути усе"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../logview/src/logview-window.c:818
+#: ../logview/src/logview-window.c:825
 #: ../mate-dictionary/src/gdict-window.c:1289
 msgid "_View"
 msgstr "_Перегляд"
@@ -99,7 +99,7 @@ msgid "All_ocated Space"
 msgstr "Зайнятий _простір"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../logview/src/logview-window.c:820
+#: ../logview/src/logview-window.c:827
 #: ../mate-dictionary/src/gdict-applet.c:1187
 #: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_Help"
@@ -107,12 +107,13 @@ msgstr "_Допомога"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../logview/src/logview-window.c:846
+#: ../logview/src/logview-window.c:853
 #: ../mate-dictionary/src/gdict-window.c:1341
 msgid "_Contents"
-msgstr "_Вміст"
+msgstr "_Зміст"
 
 #: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1241
+#: ../baobab/src/callbacks.c:107
 msgid "Disk Usage Analyzer"
 msgstr "Аналізатор використання диску"
 
@@ -198,11 +199,11 @@ msgstr "Чи будуть видимі підказки з назвами тек
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:11
 msgid "Active Chart"
-msgstr "Активна діяграма"
+msgstr "Активна діаграма"
 
 #: ../baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in.h:12
 msgid "Which type of chart should be displayed."
-msgstr "Який тип діяграми повинен бути відображений. "
+msgstr "Який тип діаграми повинен бути відображений. "
 
 #: ../baobab/data/mate-disk-usage-analyzer.appdata.xml.in.h:1
 msgid "A disk usage analyzing tool for MATE Desktop"
@@ -244,12 +245,12 @@ msgstr "доступно:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:242 ../baobab/src/baobab.c:299
-#: ../baobab/src/callbacks.c:257
+#: ../baobab/src/callbacks.c:272
 msgid "Calculating percentage bars..."
 msgstr "Обчислення відсоткового співвідношення..."
 
 #: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
-#: ../baobab/src/callbacks.c:261
+#: ../baobab/src/callbacks.c:276
 msgid "Ready"
 msgstr "Готовий"
 
@@ -328,23 +329,23 @@ msgstr "Неможливо проаналізувати використання
 
 #: ../baobab/src/baobab-chart.c:209
 msgid "Maximum depth"
-msgstr "Максимальна глибина"
+msgstr "Щонайбільша глибина"
 
 #: ../baobab/src/baobab-chart.c:210
 msgid "The maximum depth drawn in the chart from the root"
-msgstr "Максимальна глибина кілець, що відображаються у діяграмі від кореню"
+msgstr "Щонайбільша глибина кілець, що відображаються у діаграмі від кореню"
 
 #: ../baobab/src/baobab-chart.c:219
 msgid "Chart model"
-msgstr "Модель діяграми"
+msgstr "Модель діаграми"
 
 #: ../baobab/src/baobab-chart.c:220
 msgid "Set the model of the chart"
-msgstr "Встановити модель діяграми"
+msgstr "Встановити модель діаграми"
 
 #: ../baobab/src/baobab-chart.c:227
 msgid "Chart root node"
-msgstr "Кореневий вузол діяграми"
+msgstr "Кореневий вузол діаграми"
 
 #: ../baobab/src/baobab-chart.c:228
 msgid "Set the root node from the model"
@@ -357,7 +358,7 @@ msgstr "Не вдається створити растрове зображен
 #. Popup the File chooser dialog
 #: ../baobab/src/baobab-chart.c:1724
 msgid "Save Snapshot"
-msgstr "Зберегти знімок екрану"
+msgstr "Зберегти зняток екрану"
 
 #: ../baobab/src/baobab-chart.c:1751
 msgid "_Image type:"
@@ -394,7 +395,7 @@ msgstr "Не вдається сканувати «%s»"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:173
 msgid "Custom Location"
-msgstr "Иньший шлях"
+msgstr "Инший шлях"
 
 #: ../baobab/src/baobab-remote-connect-dialog.c:175
 msgid "SSH"
@@ -557,13 +558,19 @@ msgstr "Не вдається перемістити файл у смітник.
 #: ../baobab/src/baobab-utils.c:484
 #, c-format
 msgid "Details: %s"
-msgstr "Подробиці: %s"
+msgstr "Докладно: %s"
 
 #: ../baobab/src/baobab-utils.c:522
 msgid "There was an error displaying help."
 msgstr "Помилка показу довідки."
 
-#: ../baobab/src/callbacks.c:76 ../logview/src/logview-about.h:49
+#: ../baobab/src/callbacks.c:77 ../logview/src/logview-about.h:45
+#: ../mate-dictionary/src/gdict-about.c:52
+msgid "MATE Documentation Team"
+msgstr "Команда документування MATE"
+
+#: ../baobab/src/callbacks.c:82 ../logview/src/logview-about.h:50
+#: ../mate-dictionary/src/gdict-about.c:60
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -575,7 +582,8 @@ msgstr ""
 "License), яка оголошена Фундацією вільного проґрамного забезпечення (Free "
 "Software Foundation) під версією 2 або новішою (на Ваш розсуд)."
 
-#: ../baobab/src/callbacks.c:81 ../logview/src/logview-about.h:53
+#: ../baobab/src/callbacks.c:87 ../logview/src/logview-about.h:54
+#: ../mate-dictionary/src/gdict-about.c:65
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -587,43 +595,43 @@ msgstr ""
 "ВІДПОВІДНІСТЬ ВИРІШЕННЯ ПОСТАВЛЕНИХ ЗАВДАНЬ. Для уточнення деталей "
 "зверніться до Загальної ліцензії GNU (GNU General Public License)."
 
-#: ../baobab/src/callbacks.c:86 ../logview/src/logview-about.h:57
+#: ../baobab/src/callbacks.c:92 ../logview/src/logview-about.h:58
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
-"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA."
 msgstr ""
-"Ви могли отримати копію Загальної ліцензії GNU (GNU General Public License) "
-"разом з цією проґрамою; якщо ж цього не сталося, зверніться за адресою: Free"
-" Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  "
-"02110-1301, USA"
 
-#: ../baobab/src/callbacks.c:95
+#: ../baobab/src/callbacks.c:109
+msgid "About Disk Usage Analyzer"
+msgstr "Про аналізатор використання диску"
+
+#: ../baobab/src/callbacks.c:110
 msgid "A graphical tool to analyze disk usage."
 msgstr "Графічне знаряддя для аналізу використання дисків."
 
-#: ../baobab/src/callbacks.c:97
+#: ../baobab/src/callbacks.c:111
 msgid ""
 "Copyright © 2005-2010 Fabio Marzocca\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
 
 #. translator credits
-#: ../baobab/src/callbacks.c:102 ../logview/src/logview-about.h:63
-#: ../mate-dictionary/src/gdict-about.c:55
+#: ../baobab/src/callbacks.c:117 ../logview/src/logview-about.h:64
+#: ../mate-dictionary/src/gdict-about.c:56
 msgid "translator-credits"
 msgstr ""
 "Yarema aka Knedlyk <yupadmin@gmail.com>,\n"
 "Микола Ткач <Stuartlittle1970@gmail.com>,\n"
 "Oleh Tsyupka <myr4yk@gmail.com>"
 
-#: ../baobab/src/callbacks.c:200
+#: ../baobab/src/callbacks.c:215
 #: ../gsearchtool/src/gsearchtool-callbacks.c:514
 #: ../gsearchtool/src/gsearchtool-callbacks.c:864
 msgid "The document does not exist."
 msgstr "Документ не існує."
 
-#: ../baobab/src/callbacks.c:281
+#: ../baobab/src/callbacks.c:296
 msgid "The folder does not exist."
 msgstr "Тека не існує."
 
@@ -655,7 +663,7 @@ msgstr "Шукати документи та теки на цьому комп'�
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:1
 msgid "Search history"
-msgstr "Історія пошуку"
+msgstr "Дієпис пошуку"
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:2
 msgid "This key defines the items which were searched for in the past."
@@ -1507,7 +1515,7 @@ msgstr " (копія)"
 #. localizers: tag used to detect the second copy of a file
 #: ../gsearchtool/src/gsearchtool-support.c:1262
 msgid " (another copy)"
-msgstr " (иньша копія)"
+msgstr " (инша копія)"
 
 #. localizers: tag used to detect the x11th copy of a file
 #. localizers: tag used to detect the x12th copy of a file
@@ -1690,6 +1698,10 @@ msgstr "Тло:"
 msgid "Effect:"
 msgstr "Ефект:"
 
+#: ../logview/src/logview-about.h:42 ../mate-dictionary/src/gdict-about.c:49
+msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
+msgstr ""
+
 #: ../logview/src/logview-app.c:377
 #, c-format
 msgid "Impossible to open the file %s"
@@ -1789,7 +1801,7 @@ msgstr " - Перегляд та контроль журналів"
 msgid "Log Viewer"
 msgstr "Перегляд журналів"
 
-#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:767
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:773
 msgid "System Log Viewer"
 msgstr "Переглядач системних журналів"
 
@@ -1823,157 +1835,161 @@ msgstr "Згорнуто"
 msgid "Not found"
 msgstr "Не знайдено"
 
-#: ../logview/src/logview-window.c:769
+#: ../logview/src/logview-window.c:775
+msgid "About System Log Viewer"
+msgstr "Про переглядач системних журналів"
+
+#: ../logview/src/logview-window.c:776
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
 
-#: ../logview/src/logview-window.c:773
+#: ../logview/src/logview-window.c:780
 msgid "A system log viewer for MATE."
 msgstr "Перегляд системних журналів для MATE."
 
-#: ../logview/src/logview-window.c:816
+#: ../logview/src/logview-window.c:823
 #: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_File"
 msgstr "_Файл"
 
-#: ../logview/src/logview-window.c:819
+#: ../logview/src/logview-window.c:826
 msgid "_Filters"
 msgstr "_Фільтри"
 
-#: ../logview/src/logview-window.c:822
+#: ../logview/src/logview-window.c:829
 msgid "_Open..."
 msgstr "_Відкрити..."
 
-#: ../logview/src/logview-window.c:822
+#: ../logview/src/logview-window.c:829
 msgid "Open a log from file"
 msgstr "Відкрити новий файл журналу"
 
-#: ../logview/src/logview-window.c:824
+#: ../logview/src/logview-window.c:831
 #: ../mate-dictionary/src/gdict-window.c:1302
 msgid "_Close"
 msgstr "_Закрити"
 
-#: ../logview/src/logview-window.c:824
+#: ../logview/src/logview-window.c:831
 msgid "Close this log"
 msgstr "Закрити цей журнал"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:833
 msgid "_Quit"
 msgstr "_Вийти"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:833
 msgid "Quit the log viewer"
 msgstr "Вийти з проґрами перегляду журналів"
 
 #. Edit menu
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:836
 #: ../mate-dictionary/src/gdict-window.c:1306
 msgid "_Copy"
 msgstr "_Копіювати"
 
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:836
 msgid "Copy the selection"
 msgstr "Копіювати виділене"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:838
 #: ../mate-dictionary/src/gdict-window.c:1308
 msgid "Select _All"
 msgstr "Виді_лити усе"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:838
 msgid "Select the entire log"
 msgstr "Виділити увесь журнал"
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:840
 msgid "_Find..."
 msgstr "З_найти..."
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:840
 msgid "Find a word or phrase in the log"
 msgstr "Знайти слово чи фразу у журналі"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:843
 msgid "Zoom _In"
 msgstr "З_більшити"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:843
 msgid "Bigger text size"
 msgstr "Більший розмір тексту"
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:845
 msgid "Zoom _Out"
 msgstr "З_меншити"
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:845
 msgid "Smaller text size"
 msgstr "Менший розмір тексту"
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:847
 msgid "_Normal Size"
 msgstr "_Звичайний розмір"
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:847
 msgid "Normal text size"
 msgstr "Звичайний розмір тексту"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:850
 msgid "Manage Filters"
 msgstr "Керування фільтрами"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:850
 msgid "Manage filters"
 msgstr "Керуваня фільтрами"
 
-#: ../logview/src/logview-window.c:846
+#: ../logview/src/logview-window.c:853
 msgid "Open the help contents for the log viewer"
 msgstr "Відкрити вміст довідки переглядача журналу"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:855
 #: ../mate-dictionary/src/gdict-applet.c:1190
 #: ../mate-dictionary/src/gdict-window.c:1343
 msgid "_About"
 msgstr "_Про проґраму"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:855
 msgid "Show the about dialog for the log viewer"
 msgstr "Відкрити вікно \"Про проґраму\" проґрами перегляду журналу"
 
-#: ../logview/src/logview-window.c:853
+#: ../logview/src/logview-window.c:860
 msgid "_Statusbar"
 msgstr "Панель с_тану"
 
-#: ../logview/src/logview-window.c:853
+#: ../logview/src/logview-window.c:860
 msgid "Show Status Bar"
 msgstr "Показати панель стану"
 
-#: ../logview/src/logview-window.c:855
+#: ../logview/src/logview-window.c:862
 msgid "Side _Pane"
 msgstr "Бі_чна панель"
 
-#: ../logview/src/logview-window.c:855
+#: ../logview/src/logview-window.c:862
 msgid "Show Side Pane"
 msgstr "Показувати бічну панель"
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:864
 msgid "Show matches only"
 msgstr "Показувати лише відповідні"
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:864
 msgid "Only show lines that match one of the given filters"
 msgstr "Показувати рядки, які відповідають одному з вказаних фільтрів"
 
-#: ../logview/src/logview-window.c:989
+#: ../logview/src/logview-window.c:996
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr "Не вдається прочитати з \"%s\""
 
-#: ../logview/src/logview-window.c:1414
+#: ../logview/src/logview-window.c:1421
 msgid "Version: "
 msgstr "Версія: "
 
-#: ../logview/src/logview-window.c:1522
+#: ../logview/src/logview-window.c:1529
 msgid "Could not open the following files:"
 msgstr "Не вдається відкрити такі файли:"
 
@@ -2256,7 +2272,7 @@ msgstr "Помилка при пошуку визначення"
 #: ../mate-dictionary/libgdict/gdict-defbox.c:2527
 #: ../mate-dictionary/libgdict/gdict-speller.c:731
 msgid "Another search is in progress"
-msgstr "Триває иньша операція пошуку "
+msgstr "Триває инша операція пошуку "
 
 #: ../mate-dictionary/libgdict/gdict-defbox.c:2528
 #: ../mate-dictionary/libgdict/gdict-speller.c:732
@@ -2422,19 +2438,33 @@ msgstr "Параметри GDict"
 msgid "Show GDict Options"
 msgstr "Показувати параметри GDict"
 
-#: ../mate-dictionary/src/gdict-about.c:56
+#: ../mate-dictionary/src/gdict-about.c:57
 #: ../mate-dictionary/src/gdict-applet.c:589
 msgid "Look up words in dictionaries"
 msgstr "Пошук слів у словниках"
 
-#: ../mate-dictionary/src/gdict-about.c:77
+#: ../mate-dictionary/src/gdict-about.c:70
+msgid ""
+"You should have received a copy of the GNU General Public License along with"
+" this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin St, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+"Ви повинні були отримати копію GNU General Public License разом з цією "
+"проґрамою; якщо ж цього не сталося, зверніться за адресою: Free Software "
+"Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA."
+
+#: ../mate-dictionary/src/gdict-about.c:87
 #: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:607
 #: ../mate-dictionary/src/gdict-window.c:1896
 msgid "Dictionary"
 msgstr "Словник"
 
-#: ../mate-dictionary/src/gdict-about.c:79
+#: ../mate-dictionary/src/gdict-about.c:89
+msgid "About Dictionary"
+msgstr "Про словник"
+
+#: ../mate-dictionary/src/gdict-about.c:90
 msgid ""
 "Copyright © 2005-2006 Emmanuele Bassi\n"
 "Copyright © 2011-2019 MATE developers"
@@ -3112,18 +3142,18 @@ msgstr ""
 
 #: ../mate-screenshot/src/mate-screenshot.c:796
 msgid "Screenshot taken"
-msgstr "Знімок отримано"
+msgstr "Зняток отримано"
 
 #: ../mate-screenshot/src/mate-screenshot.c:851
 msgid "Unable to take a screenshot of the current window"
-msgstr "Не вдається зробити знімок поточного вікна"
+msgstr "Не вдається зробити зняток поточного вікна"
 
 #. translators: this is the name of the file that gets made up
 #. * with the screenshot if the entire screen is taken
 #: ../mate-screenshot/src/mate-screenshot.c:916
 #, c-format
 msgid "Screenshot at %s.png"
-msgstr "Знімок екрану як %s.png"
+msgstr "Зняток екрану як %s.png"
 
 #. translators: this is the name of the file that gets
 #. * made up with the screenshot if the entire screen is
@@ -3131,11 +3161,11 @@ msgstr "Знімок екрану як %s.png"
 #: ../mate-screenshot/src/mate-screenshot.c:923
 #, c-format
 msgid "Screenshot at %s - %d.png"
-msgstr "Знімок екрану як %s - %d.png"
+msgstr "Зняток екрану як %s - %d.png"
 
 #: ../mate-screenshot/src/mate-screenshot.c:1316
 msgid "Grab a window instead of the entire screen"
-msgstr "Зробити знімок вікна, а не усього екрану"
+msgstr "Зробити зняток вікна, а не усього екрану"
 
 #: ../mate-screenshot/src/mate-screenshot.c:1317
 msgid "Grab an area of the screen instead of the entire screen"
@@ -3147,7 +3177,7 @@ msgstr ""
 
 #: ../mate-screenshot/src/mate-screenshot.c:1319
 msgid "Include the window border with the screenshot"
-msgstr "Включити рамку вікна у знімок"
+msgstr "Включити рамку вікна у зняток"
 
 #: ../mate-screenshot/src/mate-screenshot.c:1320
 msgid "Remove the window border from the screenshot"
@@ -3155,7 +3185,7 @@ msgstr "Вилучити рамку вікна із знятку"
 
 #: ../mate-screenshot/src/mate-screenshot.c:1321
 msgid "Take screenshot after specified delay [in seconds]"
-msgstr "Зробити знімок через вказаний час [у секундах]"
+msgstr "Зробити зняток через вказаний час [у секундах]"
 
 #: ../mate-screenshot/src/mate-screenshot.c:1322
 msgid "Effect to add to the border (shadow, border or none)"
@@ -3175,7 +3205,7 @@ msgstr "Вивести інформацію про версію та вийти"
 
 #: ../mate-screenshot/src/mate-screenshot.c:1333
 msgid "Take a picture of the screen"
-msgstr "Зробити знімок екрану"
+msgstr "Зробити зняток екрану"
 
 #: ../mate-screenshot/src/mate-screenshot.c:1356
 #, c-format
@@ -3230,7 +3260,7 @@ msgid ""
 "screenshot to disk."
 msgstr ""
 "Дочірній процес збереження несподівано завершився. Не вдається зберегти "
-"знімок екрану на диск."
+"зняток екрану на диск."
 
 #: ../mate-screenshot/src/screenshot-save.c:225
 msgid "Unknown error saving screenshot to disk"

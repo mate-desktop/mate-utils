@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-16 17:18+0100\n"
+"POT-Creation-Date: 2019-03-24 11:07+0100\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
 "Last-Translator: karthik holla <karthikholla87@gmail.com>, 2018\n"
 "Language-Team: Kannada (https://www.transifex.com/mate/teams/13566/kn/)\n"
@@ -64,7 +64,7 @@ msgid "S_can Remote Folder..."
 msgstr "ದೂರಸ್ಥ ಕಡತಕೋಶವನ್ನು ಶೋಧಿಸು(_c)..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../logview/src/logview-window.c:817
+#: ../logview/src/logview-window.c:824
 #: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Edit"
 msgstr "ಸಂಪಾದಿಸು(_E)"
@@ -78,7 +78,7 @@ msgid "_Collapse All"
 msgstr "ಎಲ್ಲವನ್ನೂ ಬೀಳಿಸು(_C)"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../logview/src/logview-window.c:818
+#: ../logview/src/logview-window.c:825
 #: ../mate-dictionary/src/gdict-window.c:1289
 msgid "_View"
 msgstr "ನೋಟ(_V)"
@@ -96,7 +96,7 @@ msgid "All_ocated Space"
 msgstr "ನಿಯೋಜಿಸಲಾದ ಸ್ಥಳ(_o)"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../logview/src/logview-window.c:820
+#: ../logview/src/logview-window.c:827
 #: ../mate-dictionary/src/gdict-applet.c:1187
 #: ../mate-dictionary/src/gdict-window.c:1291
 msgid "_Help"
@@ -104,12 +104,13 @@ msgstr "ನೆರವು(_H)"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../logview/src/logview-window.c:846
+#: ../logview/src/logview-window.c:853
 #: ../mate-dictionary/src/gdict-window.c:1341
 msgid "_Contents"
 msgstr "ವಿಷಯಗಳು(_C)"
 
 #: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1241
+#: ../baobab/src/callbacks.c:107
 msgid "Disk Usage Analyzer"
 msgstr "ಡಿಸ್ಕ್‌ ಬಳಕೆಯ ವಿಶ್ಲೇಷಕ"
 
@@ -233,12 +234,12 @@ msgstr "ಲಭ್ಯವಿರುವುದು:"
 
 #. set statusbar, percentage and allocated/normal size
 #: ../baobab/src/baobab.c:242 ../baobab/src/baobab.c:299
-#: ../baobab/src/callbacks.c:257
+#: ../baobab/src/callbacks.c:272
 msgid "Calculating percentage bars..."
 msgstr "ಪ್ರತಿಶತಪಟ್ಟಿಗಳನ್ನು ಲೆಕ್ಕ ಹಾಕಲಾಗುತ್ತಿದೆ..."
 
 #: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
-#: ../baobab/src/callbacks.c:261
+#: ../baobab/src/callbacks.c:276
 msgid "Ready"
 msgstr "ತಯಾರಿದೆ"
 
@@ -552,7 +553,13 @@ msgstr "ವಿವರಗಳು: %s"
 msgid "There was an error displaying help."
 msgstr "ನೆರವನ್ನು ತೋರಿಸುವಾಗ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ."
 
-#: ../baobab/src/callbacks.c:76 ../logview/src/logview-about.h:49
+#: ../baobab/src/callbacks.c:77 ../logview/src/logview-about.h:45
+#: ../mate-dictionary/src/gdict-about.c:52
+msgid "MATE Documentation Team"
+msgstr ""
+
+#: ../baobab/src/callbacks.c:82 ../logview/src/logview-about.h:50
+#: ../mate-dictionary/src/gdict-about.c:60
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -564,7 +571,8 @@ msgstr ""
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 
-#: ../baobab/src/callbacks.c:81 ../logview/src/logview-about.h:53
+#: ../baobab/src/callbacks.c:87 ../logview/src/logview-about.h:54
+#: ../mate-dictionary/src/gdict-about.c:65
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -576,40 +584,41 @@ msgstr ""
 "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
 "more details."
 
-#: ../baobab/src/callbacks.c:86 ../logview/src/logview-about.h:57
+#: ../baobab/src/callbacks.c:92 ../logview/src/logview-about.h:58
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
-"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA."
 msgstr ""
-"You should have received a copy of the GNU General Public License along with"
-" this program; if not, write to the Free Software Foundation, Inc., 51 "
-"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 
-#: ../baobab/src/callbacks.c:95
+#: ../baobab/src/callbacks.c:109
+msgid "About Disk Usage Analyzer"
+msgstr ""
+
+#: ../baobab/src/callbacks.c:110
 msgid "A graphical tool to analyze disk usage."
 msgstr "ಡಿಸ್ಕಿನ ಬಳಕೆಯನ್ನು ವಿಶ್ಲೇಷಿಸುವ ಒಂದು ಚಿತ್ರಾತ್ಮಕ ಉಪಕರಣ."
 
-#: ../baobab/src/callbacks.c:97
+#: ../baobab/src/callbacks.c:111
 msgid ""
 "Copyright © 2005-2010 Fabio Marzocca\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
 
 #. translator credits
-#: ../baobab/src/callbacks.c:102 ../logview/src/logview-about.h:63
-#: ../mate-dictionary/src/gdict-about.c:55
+#: ../baobab/src/callbacks.c:117 ../logview/src/logview-about.h:64
+#: ../mate-dictionary/src/gdict-about.c:56
 msgid "translator-credits"
 msgstr ""
 "ಶಂಕರ್ ಪ್ರಸಾದ್ <svenkate@redhat.com>,ಕಾರ್ತಿಕ ಹೊಳ್ಳ <karthikholla87@gmail.com>"
 
-#: ../baobab/src/callbacks.c:200
+#: ../baobab/src/callbacks.c:215
 #: ../gsearchtool/src/gsearchtool-callbacks.c:514
 #: ../gsearchtool/src/gsearchtool-callbacks.c:864
 msgid "The document does not exist."
 msgstr "ದಸ್ತಾವೇಜು ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ."
 
-#: ../baobab/src/callbacks.c:281
+#: ../baobab/src/callbacks.c:296
 msgid "The folder does not exist."
 msgstr "ಕಡತಕೋಶವು ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ."
 
@@ -1682,6 +1691,10 @@ msgstr "ಹಿನ್ನಲೆ :"
 msgid "Effect:"
 msgstr ""
 
+#: ../logview/src/logview-about.h:42 ../mate-dictionary/src/gdict-about.c:49
+msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
+msgstr ""
+
 #: ../logview/src/logview-app.c:377
 #, c-format
 msgid "Impossible to open the file %s"
@@ -1782,7 +1795,7 @@ msgstr " - ದಾಖಲೆಗಳನ್ನು ವೀಕ್ಷಿಸಿ ಹಾಗ�
 msgid "Log Viewer"
 msgstr "ದಾಖಲೆಯ ವೀಕ್ಷಕ"
 
-#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:767
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:773
 msgid "System Log Viewer"
 msgstr "ಗಣಕ ದಾಖಲೆ ವೀಕ್ಷಕ"
 
@@ -1816,157 +1829,161 @@ msgstr "ಆವರಿಸಲಾದ"
 msgid "Not found"
 msgstr "ದೊರೆತಿಲ್ಲ"
 
-#: ../logview/src/logview-window.c:769
+#: ../logview/src/logview-window.c:775
+msgid "About System Log Viewer"
+msgstr ""
+
+#: ../logview/src/logview-window.c:776
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
 
-#: ../logview/src/logview-window.c:773
+#: ../logview/src/logview-window.c:780
 msgid "A system log viewer for MATE."
 msgstr "MATE ಗಾಗಿನ ಒಂದು ಗಣಕದ ದಾಖಲೆ ವೀಕ್ಷಕ."
 
-#: ../logview/src/logview-window.c:816
+#: ../logview/src/logview-window.c:823
 #: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_File"
 msgstr "ಕಡತ(_F)"
 
-#: ../logview/src/logview-window.c:819
+#: ../logview/src/logview-window.c:826
 msgid "_Filters"
 msgstr "ಶೋಧಕಗಳು(_F)"
 
-#: ../logview/src/logview-window.c:822
+#: ../logview/src/logview-window.c:829
 msgid "_Open..."
 msgstr "ತೆರೆ(_O)..."
 
-#: ../logview/src/logview-window.c:822
+#: ../logview/src/logview-window.c:829
 msgid "Open a log from file"
 msgstr "ಇಲ್ಲಿಂದ ಒಂದು ದಾಖಲೆ ಕಡತವನ್ನು ತೆರೆ"
 
-#: ../logview/src/logview-window.c:824
+#: ../logview/src/logview-window.c:831
 #: ../mate-dictionary/src/gdict-window.c:1302
 msgid "_Close"
 msgstr "ಮುಚ್ಚು (_C)"
 
-#: ../logview/src/logview-window.c:824
+#: ../logview/src/logview-window.c:831
 msgid "Close this log"
 msgstr "ಈ ದಾಖಲೆಯನ್ನು ಮುಚ್ಚು"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:833
 msgid "_Quit"
 msgstr "ಹೊರನಡೆ(_Q)"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:833
 msgid "Quit the log viewer"
 msgstr "ಈ ದಾಖಲೆ ವೀಕ್ಷಕನಿಂದ ನಿರ್ಗಮಿಸು"
 
 #. Edit menu
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:836
 #: ../mate-dictionary/src/gdict-window.c:1306
 msgid "_Copy"
 msgstr "ಕಾಪಿ ಮಾಡು(_C)"
 
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:836
 msgid "Copy the selection"
 msgstr "ಆಯ್ದುದನ್ನು ಕಾಪಿ ಮಾಡು"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:838
 #: ../mate-dictionary/src/gdict-window.c:1308
 msgid "Select _All"
 msgstr "ಎಲ್ಲವನ್ನೂ ಆರಿಸು(_A)"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:838
 msgid "Select the entire log"
 msgstr "ಸಂಪೂರ್ಣ ದಾಖಲೆಯನ್ನು ಆರಿಸು"
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:840
 msgid "_Find..."
 msgstr "ಹುಡುಕು(_F)..."
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:840
 msgid "Find a word or phrase in the log"
 msgstr "ದಾಖಲೆಯಲ್ಲಿ ಒಂದು ಪದ ಅಥವ ವಾಕ್ಯವನ್ನು ಹುಡುಕು"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:843
 msgid "Zoom _In"
 msgstr "ಹಿಗ್ಗಿಸು(_I)"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:843
 msgid "Bigger text size"
 msgstr "ಪಠ್ಯದ ದೊಡ್ಡ ಗಾತ್ರ"
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:845
 msgid "Zoom _Out"
 msgstr "ಕುಗ್ಗಿಸು(_O)"
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:845
 msgid "Smaller text size"
 msgstr "ಪಠ್ಯದ ಚಿಕ್ಕ ಗಾತ್ರ"
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:847
 msgid "_Normal Size"
 msgstr "ಮಾಮೂಲಿ ಗಾತ್ರ(_N)"
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:847
 msgid "Normal text size"
 msgstr "ಪಠ್ಯದ ಸಾಮಾನ್ಯ ಗಾತ್ರ"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:850
 msgid "Manage Filters"
 msgstr "ಫಿಲ್ಟರುಗಳನ್ನು ವ್ಯವಸ್ಥಾಪಿಸಿ"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:850
 msgid "Manage filters"
 msgstr "ಫಿಲ್ಟರುಗಳನ್ನು ವ್ಯವಸ್ಥಾಪಿಸಿ"
 
-#: ../logview/src/logview-window.c:846
+#: ../logview/src/logview-window.c:853
 msgid "Open the help contents for the log viewer"
 msgstr "ದಾಖಲೆ ವೀಕ್ಷಕನಿಗಾಗಿ ನೆರವನ್ನು ತೋರಿಸು"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:855
 #: ../mate-dictionary/src/gdict-applet.c:1190
 #: ../mate-dictionary/src/gdict-window.c:1343
 msgid "_About"
 msgstr "ಇದರ ಬಗ್ಗೆ(_A)"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:855
 msgid "Show the about dialog for the log viewer"
 msgstr "ದಾಖಲೆ ವೀಕ್ಷಕನ ಬಗೆಗಿನ ಮಾಹಿತಿಯ ಸಂವಾದವನ್ನು ತೋರಿಸು"
 
-#: ../logview/src/logview-window.c:853
+#: ../logview/src/logview-window.c:860
 msgid "_Statusbar"
 msgstr "ಸ್ಥಿತಿಪಟ್ಟಿ(_S)"
 
-#: ../logview/src/logview-window.c:853
+#: ../logview/src/logview-window.c:860
 msgid "Show Status Bar"
 msgstr "ಸ್ಥಿತಿ ಪಟ್ಟಿಯನ್ನು ತೋರಿಸು"
 
-#: ../logview/src/logview-window.c:855
+#: ../logview/src/logview-window.c:862
 msgid "Side _Pane"
 msgstr "ಬಲಬದಿಯ ಫಲಕ(_P)"
 
-#: ../logview/src/logview-window.c:855
+#: ../logview/src/logview-window.c:862
 msgid "Show Side Pane"
 msgstr "ಬದಿಯ ಫಲಕವನ್ನು ತೋರಿಸು"
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:864
 msgid "Show matches only"
 msgstr "ತಾಳೆಯಾದವುಗಳನ್ನು ಮಾತ್ರವೆ ತೋರಿಸು"
 
-#: ../logview/src/logview-window.c:857
+#: ../logview/src/logview-window.c:864
 msgid "Only show lines that match one of the given filters"
 msgstr "ಒದಗಿಸಲಾದ ಫಿಲ್ಟರುಗಳಲ್ಲಿ ಒಂದಕ್ಕೆ ತಾಳೆಯಾಗುವ ಸಾಲುಗಳನ್ನು ಮಾತ್ರ ತೋರಿಸು"
 
-#: ../logview/src/logview-window.c:989
+#: ../logview/src/logview-window.c:996
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr ""
 
-#: ../logview/src/logview-window.c:1414
+#: ../logview/src/logview-window.c:1421
 msgid "Version: "
 msgstr "ಆವೃತ್ತಿ: "
 
-#: ../logview/src/logview-window.c:1522
+#: ../logview/src/logview-window.c:1529
 msgid "Could not open the following files:"
 msgstr "ಈ ಕೆಳಗಿನ ಕಡತಗಳನ್ನು ತೆರೆಯಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ:"
 
@@ -2411,19 +2428,30 @@ msgstr "GDict ಆಯ್ಕೆಗಳು"
 msgid "Show GDict Options"
 msgstr "GDict ಆಯ್ಕೆಗಳನ್ನು ತೋರಿಸು"
 
-#: ../mate-dictionary/src/gdict-about.c:56
+#: ../mate-dictionary/src/gdict-about.c:57
 #: ../mate-dictionary/src/gdict-applet.c:589
 msgid "Look up words in dictionaries"
 msgstr "ಶಬ್ಧಕೋಶದಲ್ಲಿ ಪದಗಳಿಗಾಗಿ ಹುಡುಕು"
 
-#: ../mate-dictionary/src/gdict-about.c:77
+#: ../mate-dictionary/src/gdict-about.c:70
+msgid ""
+"You should have received a copy of the GNU General Public License along with"
+" this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin St, Fifth Floor, Boston, MA 02110-1301, USA."
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-about.c:87
 #: ../mate-dictionary/src/gdict-app.c:371
 #: ../mate-dictionary/src/gdict-window.c:607
 #: ../mate-dictionary/src/gdict-window.c:1896
 msgid "Dictionary"
 msgstr "ಶಬ್ಧಕೋಶ"
 
-#: ../mate-dictionary/src/gdict-about.c:79
+#: ../mate-dictionary/src/gdict-about.c:89
+msgid "About Dictionary"
+msgstr ""
+
+#: ../mate-dictionary/src/gdict-about.c:90
 msgid ""
 "Copyright © 2005-2006 Emmanuele Bassi\n"
 "Copyright © 2011-2019 MATE developers"
