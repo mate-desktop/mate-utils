@@ -1,5 +1,25 @@
 ### mate-utils 1.23.0
 
+  * tx: sync with transifex
+  * Remove trailing whitespaces
+  * Change url projet's website
+  * [ci] Add cppcheck html report
+  * Remove unused variables
+  * [ci] Remove inkscape, rsvg-convert from requires
+  * Make inkscape and rsvg-convert optional
+  * mate-screenshot: Variable is assigned a value that is never used
+  * gdict-applet: Variable 'detail' is allocated memory that is never used
+  * logview-prefs: Variable 'removed' is assigned a value that is never used
+  * [ci] Enable Clang Static Analyzer
+  * Fix -Werror=cast-function-type with GCC 8
+  * mate-disk-usage-analyzer: Memory leak
+  * Improve performance by removing unused assignments
+  * GEN png icons from svg files
+  * Update documenters in about dialog
+  * mate-dictionary: Use g_strjoin to build license text
+  * Use program-name and title in gtk_show_about_dialog call
+  * help: update copyright
+
 ### mate-utils 1.22.0
 
   * Translations update
