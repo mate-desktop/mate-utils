@@ -179,7 +179,7 @@ update_scan_label (void)
 		available = g_format_size (baobab.fs.avail);
 
 	/* Translators: these are labels for disk space */
-	markup = g_markup_printf_escaped  ("<small>%s <b>%s</b> (%s %s %s %s )</small>",
+	markup = g_markup_printf_escaped  ("<small>%s <b>%s</b> (%s %s %s %s)</small>",
 					   _("Total filesystem capacity:"), total,
 					   _("used:"), used,
 					   _("available:"), available);
