@@ -200,10 +200,10 @@ _gtk_text_buffer_apply_tag_to_rectangle (GtkTextBuffer *buffer, int line_start, 
 static void
 logview_update_statusbar (LogviewWindow *logview, LogviewLog *active)
 {
+  GDateTime *date_time;
   char *statusbar_text;
-  char *size, *modified, *timestring_utf8;
+  char *size, *modified, *timestring;
   time_t timestamp;
-  char timestring[255];
 
   if (active == NULL) {
     gtk_statusbar_pop (GTK_STATUSBAR (logview->priv->statusbar), 0);
@@ -211,12 +211,11 @@ logview_update_statusbar (LogviewWindow *logview, LogviewLog *active)
   }
 
   timestamp = logview_log_get_timestamp (active);
-  strftime (timestring, sizeof (timestring), "%a %b %e %T %Y", localtime (&timestamp));
-  timestring_utf8 = g_locale_to_utf8 (timestring, -1, NULL, NULL, NULL);
+  date_time = g_date_time_new_from_unix_local (timestamp);
+  timestring = g_date_time_format (date_time, "%c");
+  modified = g_strdup_printf (_("last update: %s"), timestring);
 
-  modified = g_strdup_printf (_("last update: %s"), timestring_utf8);
-
-    size = g_format_size (logview_log_get_file_size (active));
+  size = g_format_size (logview_log_get_file_size (active));
 
   statusbar_text = g_strdup_printf (_("%d lines (%s) - %s"),
                                     logview_log_get_cached_lines_number (active),
@@ -226,9 +225,10 @@ logview_update_statusbar (LogviewWindow *logview, LogviewLog *active)
   gtk_statusbar_push (GTK_STATUSBAR (logview->priv->statusbar), 0, statusbar_text);
 
   g_free (size);
-  g_free (timestring_utf8);
+  g_free (timestring);
   g_free (modified);
   g_free (statusbar_text);
+  g_date_time_unref (date_time);
 }
 
 #define DEFAULT_LOGVIEW_FONT "Monospace 10"
