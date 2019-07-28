@@ -102,7 +102,8 @@ update_days_and_lines_for_log (LogviewLoglist *loglist,
     /* now insert all the days */
     day = l->data;
 
-    g_date_strftime (date, 200, "%A, %e %b", day->date);
+    /* TRANSLATORS: "strftime format options, see the man page for strftime(3) for further information." */
+    g_date_strftime (date, 200, _("%A, %e %b"), day->date);
 
     gtk_tree_store_insert (GTK_TREE_STORE (loglist->priv->model),
                            &iter, log, i);
