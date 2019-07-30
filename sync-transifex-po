@@ -1,0 +1,14 @@
+#!/bin/bash
+
+find . -name *.po -exec rm {} +
+
+tx pull -a
+
+echo "# please keep this list sorted alphabetically" > po/LINGUAS
+for f in po/*.po
+do
+  filename="${f##*/}"
+  filename="${filename%.*}"
+  echo $filename >> po/LINGUAS
+done
+sort -o po/LINGUAS po/LINGUAS
