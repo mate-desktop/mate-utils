@@ -12,3 +12,12 @@ do
   echo $filename >> po/LINGUAS
 done
 sort -o po/LINGUAS po/LINGUAS
+
+# Fix header
+# sudo dnf install -y pology
+find . -name *.po -exec posieve set-header \
+	-sfield:"Content-Type:text/plain; charset=UTF-8" \
+	-sfield:"Project-Id-Version:MATE Desktop Environment" \
+	-srmtitle -stitle:"MATE utility programs" \
+	-srmlicense -slicense:"This file is distributed under the same license as the mate-utils package." \
+	-srmcomment -srmcopyright -scopyright:"Copyright (C) "`date +"%Y"`" MATE team" -sreorder {} +
