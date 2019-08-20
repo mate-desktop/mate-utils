@@ -48,10 +48,7 @@ enum {
   N_COLUMNS
 };
 
-#define LOGVIEW_FILTER_MANAGER_GET_PRIVATE(o)  \
-(G_TYPE_INSTANCE_GET_PRIVATE ((o), LOGVIEW_TYPE_FILTER_MANAGER, LogviewFilterManagerPrivate))
-
-G_DEFINE_TYPE (LogviewFilterManager, logview_filter_manager, GTK_TYPE_DIALOG);
+G_DEFINE_TYPE_WITH_PRIVATE (LogviewFilterManager, logview_filter_manager, GTK_TYPE_DIALOG);
 
 static void
 logview_filter_manager_update_model (LogviewFilterManager *manager)
@@ -458,7 +455,7 @@ logview_filter_manager_init (LogviewFilterManager *manager)
   GtkCellRenderer *text_renderer;
   LogviewFilterManagerPrivate *priv;
 
-  manager->priv = LOGVIEW_FILTER_MANAGER_GET_PRIVATE (manager);
+  manager->priv = logview_filter_manager_get_instance_private (manager);
   priv = manager->priv;
 
   priv->builder = gtk_builder_new ();
@@ -572,8 +569,6 @@ logview_filter_manager_class_init (LogviewFilterManagerClass *klass)
 {
   GObjectClass *object_class = G_OBJECT_CLASS (klass);
   GtkDialogClass *parent_class = GTK_DIALOG_CLASS (klass);
-
-  g_type_class_add_private (klass, sizeof (LogviewFilterManagerPrivate));
 
   object_class->dispose = logview_filter_manager_dispose;
   parent_class->response = logview_filter_manager_response;
