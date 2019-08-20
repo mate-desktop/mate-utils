@@ -74,10 +74,7 @@ struct _LogviewWindowPrivate {
   gboolean matches_only;
 };
 
-#define GET_PRIVATE(o) \
-  (G_TYPE_INSTANCE_GET_PRIVATE ((o), LOGVIEW_TYPE_WINDOW, LogviewWindowPrivate))
-
-G_DEFINE_TYPE (LogviewWindow, logview_window, GTK_TYPE_WINDOW);
+G_DEFINE_TYPE_WITH_PRIVATE (LogviewWindow, logview_window, GTK_TYPE_WINDOW);
 
 static void findbar_close_cb  (LogviewFindbar *findbar,
                                gpointer user_data);
@@ -634,7 +631,7 @@ filter_remove (LogviewWindow *logview, LogviewFilter *filter)
 static void
 on_filter_toggled (GtkToggleAction *action, LogviewWindow *logview)
 {
-  LogviewWindowPrivate *priv = GET_PRIVATE (logview);
+  LogviewWindowPrivate *priv = logview_window_get_instance_private (logview);
   const gchar* name;
   LogviewFilter *filter;
 
@@ -668,7 +665,7 @@ update_filter_menu (LogviewWindow *window)
   GtkToggleAction *action;
   gchar* name;
 
-  priv = GET_PRIVATE (window);
+  priv = logview_window_get_instance_private (window);
   ui = priv->ui_manager;
 
   g_return_if_fail (priv->filter_action_group != NULL);
@@ -1290,7 +1287,7 @@ logview_window_init (LogviewWindow *logview)
   s_context = gtk_widget_get_style_context (GTK_WIDGET (logview));
   gtk_style_context_add_class (s_context, "logview-window");
 
-  priv = logview->priv = GET_PRIVATE (logview);
+  priv = logview->priv = logview_window_get_instance_private (logview);
   priv->prefs = logview_prefs_get ();
   priv->manager = logview_manager_get ();
   priv->monitor_id = 0;
@@ -1473,8 +1470,6 @@ logview_window_class_init (LogviewWindowClass *klass)
   GObjectClass *object_class = (GObjectClass *) klass;
 
   object_class->finalize = logview_window_finalize;
-
-  g_type_class_add_private (klass, sizeof (LogviewWindowPrivate));
 }
 
 /* public methods */
