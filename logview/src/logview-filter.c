@@ -30,21 +30,18 @@ enum {
   PROP_TEXTTAG
 };
 
-G_DEFINE_TYPE (LogviewFilter, logview_filter, G_TYPE_OBJECT);
-
 struct _LogviewFilterPrivate {
   GRegex* regex;
   gchar* name;
   GtkTextTag* tag;
 };
 
-#define LOGVIEW_FILTER_GET_PRIVATE(o)  \
-(G_TYPE_INSTANCE_GET_PRIVATE ((o), LOGVIEW_TYPE_FILTER, LogviewFilterPrivate))
+G_DEFINE_TYPE_WITH_PRIVATE (LogviewFilter, logview_filter, G_TYPE_OBJECT);
 
 static void
 logview_filter_init (LogviewFilter *object)
 {
-  object->priv = LOGVIEW_FILTER_GET_PRIVATE(object);
+  object->priv = logview_filter_get_instance_private (object);
   object->priv->tag = NULL;
 }
 
@@ -154,9 +151,6 @@ logview_filter_class_init (LogviewFilterClass *klass)
                                                         "The text tag to be set on matching lines",
                                                         GTK_TYPE_TEXT_TAG,
                                                         G_PARAM_READABLE | G_PARAM_WRITABLE));
-
-
-  g_type_class_add_private (klass, sizeof (LogviewFilterPrivate));
 }
 
 /* public methods */
