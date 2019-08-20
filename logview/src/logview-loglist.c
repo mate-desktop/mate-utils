@@ -39,10 +39,7 @@ struct _LogviewLoglistPrivate {
   gboolean has_day_selection;
 };
 
-G_DEFINE_TYPE (LogviewLoglist, logview_loglist, GTK_TYPE_TREE_VIEW);
-
-#define GET_PRIVATE(o)  \
-  (G_TYPE_INSTANCE_GET_PRIVATE ((o), LOGVIEW_TYPE_LOGLIST, LogviewLoglistPrivate))
+G_DEFINE_TYPE_WITH_PRIVATE (LogviewLoglist, logview_loglist, GTK_TYPE_TREE_VIEW);
 
 enum {
   LOG_OBJECT = 0,
@@ -401,7 +398,7 @@ logview_loglist_init (LogviewLoglist *list)
   GtkTreeSelection *selection;
   GtkCellRenderer *cell;
 
-  list->priv = GET_PRIVATE (list);
+  list->priv = logview_loglist_get_instance_private (list);
   list->priv->has_day_selection = FALSE;
   list->priv->selection = NULL;
 
@@ -467,8 +464,6 @@ logview_loglist_class_init (LogviewLoglistClass *klass)
                                        NULL, NULL,
                                        g_cclosure_marshal_VOID__VOID,
                                        G_TYPE_NONE, 0);
-
-  g_type_class_add_private (klass, sizeof (LogviewLoglistPrivate));
 }
 
 /* public methods */
