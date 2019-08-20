@@ -66,9 +66,6 @@ enum {
 
 static guint signals[LAST_SIGNAL] = { 0 };
 
-#define GET_PRIVATE(o) \
-  (G_TYPE_INSTANCE_GET_PRIVATE ((o), LOGVIEW_TYPE_PREFS, LogviewPrefsPrivate))
-
 struct _LogviewPrefsPrivate {
   GSettings *logview_prefs;
   GSettings *interface_prefs;
@@ -76,7 +73,7 @@ struct _LogviewPrefsPrivate {
   GHashTable *filters;
 };
 
-G_DEFINE_TYPE (LogviewPrefs, logview_prefs, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE (LogviewPrefs, logview_prefs, G_TYPE_OBJECT);
 
 static void
 do_finalize (GObject *obj)
@@ -114,8 +111,6 @@ logview_prefs_class_init (LogviewPrefsClass *klass)
                                                 g_cclosure_marshal_VOID__BOOLEAN,
                                                 G_TYPE_NONE, 1,
                                                 G_TYPE_BOOLEAN);
-
-  g_type_class_add_private (klass, sizeof (LogviewPrefsPrivate));
 }
 
 static void
@@ -302,7 +297,7 @@ logview_prefs_init (LogviewPrefs *self)
 {
   LogviewPrefsPrivate *priv;
 
-  priv = self->priv = GET_PRIVATE (self);
+  priv = self->priv = logview_prefs_get_instance_private (self);
 
   priv->logview_prefs = g_settings_new (LOGVIEW_SCHEMA);
   priv->interface_prefs = g_settings_new ("org.mate.interface");
