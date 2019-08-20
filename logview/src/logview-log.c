@@ -33,11 +33,6 @@
 #include "logview-log.h"
 #include "logview-utils.h"
 
-G_DEFINE_TYPE (LogviewLog, logview_log, G_TYPE_OBJECT);
-
-#define GET_PRIVATE(o) \
-  (G_TYPE_INSTANCE_GET_PRIVATE ((o), LOGVIEW_TYPE_LOG, LogviewLogPrivate))
-
 enum {
   LOG_CHANGED,
   LAST_SIGNAL
@@ -93,6 +88,8 @@ typedef struct {
   z_stream zstream;
 } GZHandle;
 
+G_DEFINE_TYPE_WITH_PRIVATE (LogviewLog, logview_log, G_TYPE_OBJECT);
+
 static void
 do_finalize (GObject *obj)
 {
@@ -143,14 +140,12 @@ logview_log_class_init (LogviewLogClass *klass)
                                        NULL, NULL,
                                        g_cclosure_marshal_VOID__VOID,
                                        G_TYPE_NONE, 0);
-
-  g_type_class_add_private (klass, sizeof (LogviewLogPrivate));
 }
 
 static void
 logview_log_init (LogviewLog *self)
 {
-  self->priv = GET_PRIVATE (self);
+  self->priv = logview_log_get_instance_private (self);
 
   self->priv->lines = NULL;
   self->priv->lines_no = 0;
