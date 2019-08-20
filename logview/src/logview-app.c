@@ -47,10 +47,7 @@ static guint signals[LAST_SIGNAL] = { 0 };
 
 static LogviewApp *app_singleton = NULL;
 
-G_DEFINE_TYPE (LogviewApp, logview_app, G_TYPE_OBJECT);
-
-#define GET_PRIVATE(o) \
-  (G_TYPE_INSTANCE_GET_PRIVATE ((o), LOGVIEW_TYPE_APP, LogviewAppPrivate))
+G_DEFINE_TYPE_WITH_PRIVATE (LogviewApp, logview_app, G_TYPE_OBJECT);
 
 static gboolean
 main_window_delete_cb (GtkWidget *widget,
@@ -300,14 +297,12 @@ logview_app_class_init (LogviewAppClass *klass)
                   NULL, NULL,
                   g_cclosure_marshal_VOID__VOID,
                   G_TYPE_NONE, 0);
-
-  g_type_class_add_private (klass, sizeof (LogviewAppPrivate));
 }
 
 static void
 logview_app_init (LogviewApp *self)
 {
-  LogviewAppPrivate *priv = self->priv = GET_PRIVATE (self);
+  LogviewAppPrivate *priv = self->priv = logview_app_get_instance_private (self);
 
   priv->prefs = logview_prefs_get ();
   priv->manager = logview_manager_get ();
