@@ -62,10 +62,7 @@ static LogviewManager *singleton = NULL;
 static MultipleCreation *op = NULL;
 static guint signals[LAST_SIGNAL] = { 0 };
 
-G_DEFINE_TYPE (LogviewManager, logview_manager, G_TYPE_OBJECT);
-
-#define GET_PRIVATE(o) \
-  (G_TYPE_INSTANCE_GET_PRIVATE ((o), LOGVIEW_TYPE_MANAGER, LogviewManagerPrivate))
+G_DEFINE_TYPE_WITH_PRIVATE (LogviewManager, logview_manager, G_TYPE_OBJECT);
 
 static void
 logview_manager_finalize (GObject *object)
@@ -117,14 +114,12 @@ logview_manager_class_init (LogviewManagerClass *klass)
                                           G_TYPE_NONE, 2,
                                           LOGVIEW_TYPE_LOG,
                                           LOGVIEW_TYPE_LOG);
-
-  g_type_class_add_private (klass, sizeof (LogviewManagerPrivate));
 }
 
 static void
 logview_manager_init (LogviewManager *self)
 {
-  LogviewManagerPrivate *priv = self->priv = GET_PRIVATE (self);
+  LogviewManagerPrivate *priv = self->priv = logview_manager_get_instance_private (self);
 
   priv->active_log = NULL;
   priv->logs = g_hash_table_new_full (g_str_hash, g_str_equal,
