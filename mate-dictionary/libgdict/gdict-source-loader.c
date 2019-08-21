@@ -48,8 +48,6 @@
 
 #define GDICT_SOURCE_FILE_SUFFIX	 	".desktop"
 
-#define GDICT_SOURCE_LOADER_GET_PRIVATE(obj)	(G_TYPE_INSTANCE_GET_PRIVATE ((obj), GDICT_TYPE_SOURCE_LOADER, GdictSourceLoaderPrivate))
-
 struct _GdictSourceLoaderPrivate
 {
   GSList *paths;
@@ -79,13 +77,13 @@ static guint loader_signals[LAST_SIGNAL] = { 0 };
 
 
 
-G_DEFINE_TYPE (GdictSourceLoader, gdict_source_loader, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE (GdictSourceLoader, gdict_source_loader, G_TYPE_OBJECT);
 
 
 static void
 gdict_source_loader_finalize (GObject *object)
 {
-  GdictSourceLoaderPrivate *priv = GDICT_SOURCE_LOADER_GET_PRIVATE (object);
+  GdictSourceLoaderPrivate *priv = gdict_source_loader_get_instance_private (GDICT_SOURCE_LOADER (object));
 
   if (priv->paths)
     {
@@ -198,8 +196,6 @@ gdict_source_loader_class_init (GdictSourceLoaderClass *klass)
     		  gdict_marshal_VOID__OBJECT,
     		  G_TYPE_NONE, 1,
     		  GDICT_TYPE_SOURCE);
-
-  g_type_class_add_private (klass, sizeof (GdictSourceLoaderPrivate));
 }
 
 static void
@@ -207,7 +203,7 @@ gdict_source_loader_init (GdictSourceLoader *loader)
 {
   GdictSourceLoaderPrivate *priv;
 
-  priv = GDICT_SOURCE_LOADER_GET_PRIVATE (loader);
+  priv = gdict_source_loader_get_instance_private (loader);
   loader->priv = priv;
 
   priv->paths = NULL;
