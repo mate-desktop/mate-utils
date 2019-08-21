@@ -46,8 +46,6 @@ struct _GdictAppletClass
   MatePanelAppletClass parent_class;
 };
 
-#define GDICT_APPLET_GET_PRIVATE(obj)	(G_TYPE_INSTANCE_GET_PRIVATE ((obj), GDICT_TYPE_APPLET, GdictAppletPrivate))
-
 struct _GdictAppletPrivate
 {
   guint size;
@@ -95,7 +93,7 @@ struct _GdictAppletPrivate
 #define WINDOW_NUM_COLUMNS 	47
 #define WINDOW_NUM_ROWS  	20
 
-G_DEFINE_TYPE (GdictApplet, gdict_applet, PANEL_TYPE_APPLET);
+G_DEFINE_TYPE_WITH_PRIVATE (GdictApplet, gdict_applet, PANEL_TYPE_APPLET);
 
 
 static const GtkTargetEntry drop_types[] =
@@ -1101,8 +1099,6 @@ gdict_applet_class_init (GdictAppletClass *klass)
   widget_class->style_set = gdict_applet_style_set;
 
   applet_class->change_orient = gdict_applet_change_orient;
-
-  g_type_class_add_private (gobject_class, sizeof (GdictAppletPrivate));
 }
 
 static void
@@ -1111,7 +1107,7 @@ gdict_applet_init (GdictApplet *applet)
   GdictAppletPrivate *priv;
   gchar *data_dir;
 
-  priv = GDICT_APPLET_GET_PRIVATE (applet);
+  priv = gdict_applet_get_instance_private (applet);
   applet->priv = priv;
 
   if (!priv->loader)
