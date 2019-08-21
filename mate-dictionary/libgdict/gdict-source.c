@@ -60,9 +60,6 @@
 #define SOURCE_KEY_HOSTNAME	"Hostname"
 #define SOURCE_KEY_PORT		"Port"
 
-
-#define GDICT_SOURCE_GET_PRIVATE(obj)	(G_TYPE_INSTANCE_GET_PRIVATE ((obj), GDICT_TYPE_SOURCE, GdictSourcePrivate))
-
 struct _GdictSourcePrivate
 {
   gchar *filename;
@@ -115,7 +112,7 @@ gdict_source_error_quark (void)
 }
 
 
-G_DEFINE_TYPE (GdictSource, gdict_source, G_TYPE_OBJECT);
+G_DEFINE_TYPE_WITH_PRIVATE (GdictSource, gdict_source, G_TYPE_OBJECT);
 
 
 
@@ -191,7 +188,7 @@ gdict_source_get_property (GObject    *object,
 static void
 gdict_source_finalize (GObject *object)
 {
-  GdictSourcePrivate *priv = GDICT_SOURCE_GET_PRIVATE (object);
+  GdictSourcePrivate *priv = gdict_source_get_instance_private (GDICT_SOURCE (object));
 
   g_free (priv->filename);
 
@@ -318,8 +315,6 @@ gdict_source_class_init (GdictSourceClass *klass)
   				   			_("The GdictContext bound to this source"),
   				   			GDICT_TYPE_CONTEXT,
   				   			G_PARAM_READABLE));
-
-  g_type_class_add_private (klass, sizeof (GdictSourcePrivate));
 }
 
 static void
@@ -327,7 +322,7 @@ gdict_source_init (GdictSource *source)
 {
   GdictSourcePrivate *priv;
 
-  priv = GDICT_SOURCE_GET_PRIVATE (source);
+  priv = gdict_source_get_instance_private (source);
   source->priv = priv;
 
   priv->filename = NULL;
