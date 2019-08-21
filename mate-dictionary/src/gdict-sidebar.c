@@ -47,8 +47,6 @@ typedef struct
   GtkWidget *menu_item;
 } SidebarPage;
 
-#define GDICT_SIDEBAR_GET_PRIVATE(obj)	(G_TYPE_INSTANCE_GET_PRIVATE ((obj), GDICT_TYPE_SIDEBAR, GdictSidebarPrivate))
-
 struct _GdictSidebarPrivate
 {
   GHashTable *pages_by_id;
@@ -73,7 +71,7 @@ enum
 static guint sidebar_signals[LAST_SIGNAL] = { 0 };
 static GQuark sidebar_page_id_quark = 0;
 
-G_DEFINE_TYPE (GdictSidebar, gdict_sidebar, GTK_TYPE_BOX);
+G_DEFINE_TYPE_WITH_PRIVATE (GdictSidebar, gdict_sidebar, GTK_TYPE_BOX);
 
 SidebarPage *
 sidebar_page_new (const gchar *id,
@@ -258,8 +256,6 @@ gdict_sidebar_class_init (GdictSidebarClass *klass)
 {
   GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
 
-  g_type_class_add_private (gobject_class, sizeof (GdictSidebarPrivate));
-
   sidebar_page_id_quark = g_quark_from_static_string ("gdict-sidebar-page-id");
 
   gobject_class->finalize = gdict_sidebar_finalize;
@@ -294,7 +290,7 @@ gdict_sidebar_init (GdictSidebar *sidebar)
   GtkWidget *arrow;
 
   gtk_orientable_set_orientation (GTK_ORIENTABLE (sidebar), GTK_ORIENTATION_VERTICAL);
-  sidebar->priv = priv = GDICT_SIDEBAR_GET_PRIVATE (sidebar);
+  sidebar->priv = priv = gdict_sidebar_get_instance_private (sidebar);
 
   /* we store all the pages inside the list, but we keep
    * a pointer inside the hash table for faster look up
