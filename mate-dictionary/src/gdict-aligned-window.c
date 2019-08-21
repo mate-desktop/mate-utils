@@ -33,8 +33,6 @@
 
 #include "gdict-aligned-window.h"
 
-#define GDICT_ALIGNED_WINDOW_GET_PRIVATE(obj)	(G_TYPE_INSTANCE_GET_PRIVATE ((obj), GDICT_TYPE_ALIGNED_WINDOW, GdictAlignedWindowPrivate))
-
 struct _GdictAlignedWindowPrivate
 {
   GtkWidget *align_widget;
@@ -67,7 +65,7 @@ static gboolean gdict_aligned_window_motion_notify_cb (GtkWidget        *widget,
 						       GdictAlignedWindow *aligned_window);
 
 
-G_DEFINE_TYPE (GdictAlignedWindow, gdict_aligned_window, GTK_TYPE_WINDOW);
+G_DEFINE_TYPE_WITH_PRIVATE (GdictAlignedWindow, gdict_aligned_window, GTK_TYPE_WINDOW);
 
 
 
@@ -90,14 +88,12 @@ gdict_aligned_window_class_init (GdictAlignedWindowClass *klass)
   				   			"The widget the window should align to",
   				   			GTK_TYPE_WIDGET,
   				   			G_PARAM_READWRITE));
-
-  g_type_class_add_private (klass, sizeof (GdictAlignedWindowPrivate));
 }
 
 static void
 gdict_aligned_window_init (GdictAlignedWindow *aligned_window)
 {
-  GdictAlignedWindowPrivate *priv = GDICT_ALIGNED_WINDOW_GET_PRIVATE (aligned_window);
+  GdictAlignedWindowPrivate *priv = gdict_aligned_window_get_instance_private (aligned_window);
   GtkWindow *window = GTK_WINDOW (aligned_window);
 
   aligned_window->priv = priv;
@@ -310,7 +306,7 @@ gdict_aligned_window_set_widget (GdictAlignedWindow *aligned_window,
     }
 #endif
 
-  priv = GDICT_ALIGNED_WINDOW_GET_PRIVATE (aligned_window);
+  priv = gdict_aligned_window_get_instance_private (aligned_window);
 
   if (priv->align_widget)
     {
