@@ -48,9 +48,6 @@
 #include "gdict-enum-types.h"
 #include "gdict-marshal.h"
 
-#define GDICT_DATABASE_CHOOSER_GET_PRIVATE(obj) \
-(G_TYPE_INSTANCE_GET_PRIVATE ((obj), GDICT_TYPE_DATABASE_CHOOSER, GdictDatabaseChooserPrivate))
-
 struct _GdictDatabaseChooserPrivate
 {
   GtkListStore *store;
@@ -109,9 +106,9 @@ enum
 
 static guint db_chooser_signals[LAST_SIGNAL] = { 0 };
 
-G_DEFINE_TYPE (GdictDatabaseChooser,
-               gdict_database_chooser,
-               GTK_TYPE_BOX);
+G_DEFINE_TYPE_WITH_PRIVATE (GdictDatabaseChooser,
+                            gdict_database_chooser,
+                            GTK_TYPE_BOX);
 
 
 static void
@@ -475,8 +472,6 @@ gdict_database_chooser_class_init (GdictDatabaseChooserClass *klass)
                   NULL, NULL,
                   gdict_marshal_VOID__VOID,
                   G_TYPE_NONE, 0);
-
-  g_type_class_add_private (gobject_class, sizeof (GdictDatabaseChooserPrivate));
 }
 
 static void
@@ -485,7 +480,7 @@ gdict_database_chooser_init (GdictDatabaseChooser *chooser)
   GdictDatabaseChooserPrivate *priv;
 
   gtk_orientable_set_orientation (GTK_ORIENTABLE (chooser), GTK_ORIENTATION_VERTICAL);
-  chooser->priv = priv = GDICT_DATABASE_CHOOSER_GET_PRIVATE (chooser);
+  chooser->priv = priv = gdict_database_chooser_get_instance_private (chooser);
 
   priv->results = -1;
   priv->context = NULL;
