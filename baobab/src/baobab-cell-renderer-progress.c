@@ -23,10 +23,6 @@
 
 #include "baobab-cell-renderer-progress.h"
 
-#define BAOBAB_CELL_RENDERER_PROGRESS_GET_PRIVATE(object) (G_TYPE_INSTANCE_GET_PRIVATE ((object),                        \
-                                                           BAOBAB_TYPE_CELL_RENDERER_PROGRESS, \
-                                                           BaobabCellRendererProgressPrivate))
-
 enum
 {
   PROP_0,
@@ -38,12 +34,12 @@ struct _BaobabCellRendererProgressPrivate
   double perc;
 };
 
-G_DEFINE_TYPE (BaobabCellRendererProgress, baobab_cell_renderer_progress, GTK_TYPE_CELL_RENDERER)
+G_DEFINE_TYPE_WITH_PRIVATE (BaobabCellRendererProgress, baobab_cell_renderer_progress, GTK_TYPE_CELL_RENDERER)
 
 static void
 baobab_cell_renderer_progress_init (BaobabCellRendererProgress *cellprogress)
 {
-  cellprogress->priv = BAOBAB_CELL_RENDERER_PROGRESS_GET_PRIVATE (cellprogress);
+  cellprogress->priv = baobab_cell_renderer_progress_get_instance_private (cellprogress);
   cellprogress->priv->perc = 0;
 
   gtk_cell_renderer_set_padding (GTK_CELL_RENDERER (cellprogress), 4, 4);
@@ -253,7 +249,4 @@ baobab_cell_renderer_progress_class_init (BaobabCellRendererProgressClass *klass
 						        "precentage",
 						        -1, 100, 0,
 						        G_PARAM_READWRITE));
-
-  g_type_class_add_private (object_class,
-			    sizeof (BaobabCellRendererProgressPrivate));
 }
