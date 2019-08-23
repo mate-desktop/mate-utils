@@ -44,18 +44,12 @@
 #include "baobab-chart.h"
 #include "baobab-ringschart.h"
 
-#define BAOBAB_RINGSCHART_GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), \
-                                            BAOBAB_RINGSCHART_TYPE, \
-                                            BaobabRingschartPrivate))
-
 #define ITEM_BORDER_WIDTH  1
 #define CHART_PADDING     13
 #define ITEM_MIN_ANGLE     0.03
 #define EDGE_ANGLE         0.004
 
 #define SUBFOLDER_TIP_PADDING 3
-
-G_DEFINE_TYPE (BaobabRingschart, baobab_ringschart, BAOBAB_CHART_TYPE);
 
 typedef struct _BaobabRingschartItem BaobabRingschartItem;
 
@@ -77,6 +71,8 @@ struct _BaobabRingschartPrivate
   gboolean drawing_subtips;
   gint subtip_timeout;
 };
+
+G_DEFINE_TYPE_WITH_PRIVATE (BaobabRingschart, baobab_ringschart, BAOBAB_CHART_TYPE);
 
 static void baobab_ringschart_class_init (BaobabRingschartClass *class);
 static void baobab_ringschart_init (BaobabRingschart *object);
@@ -108,10 +104,8 @@ static void baobab_ringschart_post_draw (GtkWidget *chart, cairo_t *cr);
 static void
 baobab_ringschart_class_init (BaobabRingschartClass *class)
 {
-  GObjectClass *obj_class;
   BaobabChartClass *chart_class;
 
-  obj_class = G_OBJECT_CLASS (class);
   chart_class = BAOBAB_CHART_CLASS (class);
 
   /* BaobabChart abstract methods */
@@ -121,8 +115,6 @@ baobab_ringschart_class_init (BaobabRingschartClass *class)
   chart_class->get_item_rectangle = baobab_ringschart_get_item_rectangle;
   chart_class->pre_draw = baobab_ringschart_pre_draw;
   chart_class->post_draw = baobab_ringschart_post_draw;
-
-  g_type_class_add_private (obj_class, sizeof (BaobabRingschartPrivate));
 }
 
 static void
@@ -132,7 +124,7 @@ baobab_ringschart_init (BaobabRingschart *chart)
   GtkSettings* settings;
   gint timeout;
 
-  priv = BAOBAB_RINGSCHART_GET_PRIVATE (chart);
+  priv = baobab_ringschart_get_instance_private (chart);
 
   priv->subfoldertips_enabled = FALSE;
   priv->highlighted_item = NULL;
@@ -189,7 +181,7 @@ baobab_ringschart_draw_item (GtkWidget *chart,
   BaobabChartColor fill_color;
   GtkAllocation allocation;
 
-  priv = BAOBAB_RINGSCHART_GET_PRIVATE (chart);
+  priv = baobab_ringschart_get_instance_private (BAOBAB_RINGSCHART (chart));
 
   data = (BaobabRingschartItem *) item->data;
 
@@ -381,7 +373,7 @@ baobab_ringschart_subfolder_tips_timeout (gpointer data)
 {
   BaobabRingschartPrivate *priv;
 
-  priv = BAOBAB_RINGSCHART_GET_PRIVATE (data);
+  priv = baobab_ringschart_get_instance_private (BAOBAB_RINGSCHART (data));
 
   priv->drawing_subtips = TRUE;
 
@@ -396,7 +388,7 @@ baobab_ringschart_clean_subforlder_tips_state (GtkWidget *chart)
   BaobabRingschartPrivate *priv;
   GList *node;
 
-  priv = BAOBAB_RINGSCHART_GET_PRIVATE (chart);
+  priv = baobab_ringschart_get_instance_private (BAOBAB_RINGSCHART (chart));
 
   if (priv->drawing_subtips)
     gtk_widget_queue_draw (chart);
@@ -450,7 +442,7 @@ baobab_ringschart_draw_subfolder_tips (GtkWidget *chart, cairo_t *cr)
   cairo_rectangle_t tooltip_rect;
   GdkRectangle _rect, last_rect;
 
-  priv = BAOBAB_RINGSCHART_GET_PRIVATE (chart);
+  priv = baobab_ringschart_get_instance_private (BAOBAB_RINGSCHART (chart));
 
   gtk_widget_get_allocation (chart, &allocation);
   q_width = allocation.width / 2;
@@ -596,7 +588,7 @@ baobab_ringschart_pre_draw (GtkWidget *chart, cairo_t *cr)
   BaobabRingschartPrivate *priv;
   BaobabChartItem *hl_item;
 
-  priv = BAOBAB_RINGSCHART_GET_PRIVATE (chart);
+  priv = baobab_ringschart_get_instance_private (BAOBAB_RINGSCHART (chart));
 
   hl_item = baobab_chart_get_highlighted_item (chart);
 
@@ -625,7 +617,7 @@ baobab_ringschart_post_draw (GtkWidget *chart, cairo_t *cr)
 {
   BaobabRingschartPrivate *priv;
 
-  priv = BAOBAB_RINGSCHART_GET_PRIVATE (chart);
+  priv = baobab_ringschart_get_instance_private (BAOBAB_RINGSCHART (chart));
 
   if (priv->subfoldertips_enabled)
     {
@@ -667,7 +659,7 @@ baobab_ringschart_set_subfoldertips_enabled (GtkWidget *chart, gboolean enabled)
 {
   BaobabRingschartPrivate *priv;
 
-  priv = BAOBAB_RINGSCHART_GET_PRIVATE (chart);
+  priv = baobab_ringschart_get_instance_private (BAOBAB_RINGSCHART (chart));
 
   priv->subfoldertips_enabled = enabled;
 
