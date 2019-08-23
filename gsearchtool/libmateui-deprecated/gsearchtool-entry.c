@@ -45,9 +45,6 @@ enum {
 
 #define MIN_ITEM_LEN 0
 #define GSEARCH_HISTORY_ENTRY_HISTORY_LENGTH_DEFAULT 10
-#define GSEARCH_HISTORY_ENTRY_GET_PRIVATE(object)(G_TYPE_INSTANCE_GET_PRIVATE ((object), \
-                                                  GSEARCH_TYPE_HISTORY_ENTRY, \
-                                                  GsearchHistoryEntryPrivate))
 
 struct _GsearchHistoryEntryPrivate
 {
@@ -59,7 +56,7 @@ struct _GsearchHistoryEntryPrivate
 	GSettings          *settings;
 };
 
-G_DEFINE_TYPE (GsearchHistoryEntry, gsearch_history_entry, GTK_TYPE_COMBO_BOX)
+G_DEFINE_TYPE_WITH_PRIVATE (GsearchHistoryEntry, gsearch_history_entry, GTK_TYPE_COMBO_BOX)
 
 static void
 gsearch_history_entry_set_property (GObject      *object,
@@ -169,8 +166,6 @@ gsearch_history_entry_class_init (GsearchHistoryEntryClass *klass)
 							    G_PARAM_STATIC_STRINGS));
 
 	/* TODO: Add enable-completion property */
-
-	g_type_class_add_private (object_class, sizeof(GsearchHistoryEntryPrivate));
 }
 
 static GtkListStore *
@@ -460,7 +455,7 @@ gsearch_history_entry_init (GsearchHistoryEntry *entry)
 {
 	GsearchHistoryEntryPrivate *priv;
 
-	priv = GSEARCH_HISTORY_ENTRY_GET_PRIVATE (entry);
+	priv = gsearch_history_entry_get_instance_private (entry);
 	entry->priv = priv;
 
 	priv->history_id = NULL;
