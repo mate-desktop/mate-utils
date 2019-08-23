@@ -36,10 +36,6 @@
 #include "baobab-chart.h"
 #include "baobab-treemap.h"
 
-#define BAOBAB_TREEMAP_GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), \
-                                         BAOBAB_TREEMAP_TYPE, \
-                                         BaobabTreemapPrivate))
-
 #define ITEM_TEXT_PADDING  3
 #define ITEM_BORDER_WIDTH  1
 #define ITEM_PADDING       6
@@ -49,13 +45,13 @@
 
 #define ITEM_SHOW_LABEL   TRUE
 
-G_DEFINE_TYPE (BaobabTreemap, baobab_treemap, BAOBAB_CHART_TYPE);
-
 struct _BaobabTreemapPrivate
 {
   guint max_visible_depth;
   gboolean more_visible_childs;
 };
+
+G_DEFINE_TYPE_WITH_PRIVATE (BaobabTreemap, baobab_treemap, BAOBAB_CHART_TYPE);
 
 static void baobab_treemap_class_init (BaobabTreemapClass *class);
 static void baobab_treemap_init (BaobabTreemap *object);
@@ -83,10 +79,8 @@ guint baobab_treemap_can_zoom_out (GtkWidget *chart);
 static void
 baobab_treemap_class_init (BaobabTreemapClass *class)
 {
-  GObjectClass *obj_class;
   BaobabChartClass *chart_class;
 
-  obj_class = G_OBJECT_CLASS (class);
   chart_class = BAOBAB_CHART_CLASS (class);
 
   /* BaobabChart abstract methods */
@@ -96,8 +90,6 @@ baobab_treemap_class_init (BaobabTreemapClass *class)
   chart_class->get_item_rectangle = baobab_treemap_get_item_rectangle;
   chart_class->can_zoom_in        = baobab_treemap_can_zoom_in;
   chart_class->can_zoom_out       = baobab_treemap_can_zoom_out;
-
-  g_type_class_add_private (obj_class, sizeof (BaobabTreemapPrivate));
 }
 
 static void
@@ -105,7 +97,7 @@ baobab_treemap_init (BaobabTreemap *chart)
 {
   BaobabTreemapPrivate *priv;
 
-  priv = BAOBAB_TREEMAP_GET_PRIVATE (chart);
+  priv = baobab_treemap_get_instance_private (chart);
 
   chart->priv = priv;
 }
