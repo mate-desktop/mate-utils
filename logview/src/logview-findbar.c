@@ -54,10 +54,7 @@ enum {
 
 static guint signals[LAST_SIGNAL] = { 0 };
 
-G_DEFINE_TYPE (LogviewFindbar, logview_findbar, GTK_TYPE_TOOLBAR);
-
-#define GET_PRIVATE(o) \
-  (G_TYPE_INSTANCE_GET_PRIVATE ((o), LOGVIEW_TYPE_FINDBAR, LogviewFindbarPrivate))
+G_DEFINE_TYPE_WITH_PRIVATE (LogviewFindbar, logview_findbar, GTK_TYPE_TOOLBAR);
 
 static void
 back_button_clicked_cb (GtkToolButton *button,
@@ -155,7 +152,7 @@ logview_findbar_init (LogviewFindbar *findbar)
   GtkToolItem *item;
   LogviewFindbarPrivate *priv;
 
-  priv = findbar->priv = GET_PRIVATE (findbar);
+  priv = findbar->priv = logview_findbar_get_instance_private (findbar);
 
   gtoolbar = GTK_TOOLBAR (findbar);
 
@@ -297,8 +294,6 @@ logview_findbar_class_init (LogviewFindbarClass *klass)
                                         NULL, NULL,
                                         g_cclosure_marshal_VOID__VOID,
                                         G_TYPE_NONE, 0);
-
-  g_type_class_add_private (klass, sizeof (LogviewFindbarPrivate));
 }
 
 /* public methods */
