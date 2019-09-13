@@ -234,10 +234,6 @@ log_read_dates (const char **buffer_lines, time_t current)
         break;
       }
 
-      if (date_string == NULL && i == n - 1) {
-        done = TRUE;
-      }
-
       /* this will set the last line of the "old" log to either:
        * - "n - 1" if we can't find another date
        * - the line before the new date else.
@@ -267,6 +263,9 @@ log_read_dates (const char **buffer_lines, time_t current)
         day->timestamp_len = timestamp_len;
         rangemin = i;
         rangemax = n - 1;
+      } else {
+        /* no other date found */
+        done = TRUE;
       }
     }
   }
