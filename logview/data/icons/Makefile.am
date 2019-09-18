@@ -7,6 +7,7 @@ public_icons_themes = \
 png_icons = \
         hicolor_apps_16x16_mate-system-log.png \
         hicolor_apps_22x22_mate-system-log.png \
+        hicolor_apps_24x24_mate-system-log.png \
         hicolor_apps_32x32_mate-system-log.png \
         hicolor_apps_48x48_mate-system-log.png \
         hicolor_apps_256x256_mate-system-log.png \
@@ -27,6 +28,12 @@ hicolor_apps_16x16_mate-system-log.png: logview.svg
 hicolor_apps_22x22_mate-system-log.png: logview.svg
 	$(if $(wildcard $(INKSCAPE)), \
 		$(info $(shell $(INKSCAPE) -z $^ --export-area=303:101:325:123 -w=22 -h=22 -e=$@)), \
+		$(error could not locate inkscape) \
+	)
+
+hicolor_apps_24x24_mate-system-log.png: logview.svg
+	$(if $(wildcard $(INKSCAPE)), \
+		$(info $(shell $(INKSCAPE) -z $^ --export-area=302:100:326:124 -w=24 -h=24 -e=$@)), \
 		$(error could not locate inkscape) \
 	)
 
