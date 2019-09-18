@@ -5,14 +5,19 @@ distcleancheck_listfiles = find . -type f -print | grep -v 'omf\.out' | grep -v 
 
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
-SUBDIRS = \
+SUBDIRS = 			\
 	po			\
 	baobab			\
-	mate-dictionary	\
-	mate-screenshot	\
+	mate-dictionary		\
+	mate-screenshot		\
 	gsearchtool		\
 	logview			\
 	$(NULL)
+
+if BUILD_DISK_IMAGE_MOUNTER
+SUBDIRS += 			\
+	mate-disk-image-mounter
+endif
 
 EXTRA_DIST = \
 	autogen.sh \
