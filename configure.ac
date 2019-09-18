@@ -73,6 +73,7 @@ GTK_REQUIRED=3.22.0
 LIBMATE_PANEL_APPLET_REQUIRED=1.17.0
 LIBGTOP_REQUIRED=2.12.0
 LIBCANBERRA_GTK_REQUIRED=0.4
+UDISKS2_REQUIRED=1.90.0
 
 AC_SUBST(GTK_REQUIRED)
 
@@ -96,6 +97,27 @@ AC_SUBST(GIO_UNIX_LIBS)
 PKG_CHECK_MODULES(GTK, gtk+-3.0 >= $GTK_REQUIRED)
 AC_SUBST(GTK_CFLAGS)
 AC_SUBST(GTK_LIBS)
+
+AC_ARG_ENABLE([disk-image-mounter],
+               [AC_HELP_STRING([--enable-disk-image-mounter=@<:@yes/no@:>@],
+                               [Whether to build the Disk Image Mounter utility])],
+               [],
+               [enable_disk_image_mounter=yes])
+
+AS_CASE([$enable_disk_image_mounter],
+        [yes],
+        [
+		PKG_CHECK_MODULES(UDISKS2, [udisks2 >= $UDISKS2_REQUIRED])
+		AC_SUBST(UDISKS2_CFLAGS)
+		AC_SUBST(UDISKS2_LIBS)
+        ],
+
+        [no], [],
+
+        [*], [AC_MSG_ERROR([Invalid value for --enable-disk-image-mounter])]
+)
+
+AM_CONDITIONAL([BUILD_DISK_IMAGE_MOUNTER], [test "x$enable_disk_image_mounter" = "xyes"])
 
 # libeggsmclient
 PKG_CHECK_MODULES(LIBEGGSMCLIENT, gtk+-3.0 >= $GTK_REQUIRED)
@@ -353,6 +375,13 @@ mate-screenshot/data/Makefile
 mate-screenshot/data/org.mate.screenshot.gschema.xml
 mate-screenshot/src/Makefile
 ])
+
+AM_COND_IF([BUILD_DISK_IMAGE_MOUNTER],
+           [AC_CONFIG_FILES([mate-disk-image-mounter/Makefile
+                             mate-disk-image-mounter/data/Makefile
+                             mate-disk-image-mounter/src/Makefile])
+           ]
+)
 
 AC_OUTPUT
 
