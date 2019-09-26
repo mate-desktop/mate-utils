@@ -1,3 +1,5 @@
+NULL =
+
 AM_CPPFLAGS =							\
 	-I.							\
 	-I$(srcdir)						\
@@ -24,7 +26,9 @@ mate_screenshot_CFLAGS =		\
 	$(GIO_CFLAGS)			\
 	$(LIBCANBERRA_GTK_CFLAGS)	\
 	$(GTHREAD_CFLAGS)		\
-	$(GTK_CFLAGS)
+	$(GTK_CFLAGS)			\
+	$(WARN_CFLAGS)			\
+	$(NULL)
 
 mate_screenshot_LDFLAGS = -export-dynamic
 

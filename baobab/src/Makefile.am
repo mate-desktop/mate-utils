@@ -41,6 +41,7 @@ mate_disk_usage_analyzer_CFLAGS = \
 	$(GIO_CFLAGS) \
 	$(GTK_CFLAGS) \
 	$(LIBGTOP_CFLAGS) \
+	$(WARN_CFLAGS) \
 	$(NULL)
 
 mate_disk_usage_analyzer_LDFLAGS = -export-dynamic

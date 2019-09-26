@@ -1,3 +1,5 @@
+NULL =
+
 AM_CPPFLAGS = \
 	-I$(top_srcdir)/gsearchtool/libeggsmclient \
 	-I$(top_srcdir)/gsearchtool/libmateui-deprecated \
@@ -23,7 +25,9 @@ mate_search_tool_CFLAGS = \
 	$(GLIB_CFLAGS) \
 	$(GIO_CFLAGS) \
 	$(GIO_UNIX_CFLAGS) \
-	$(GTK_CFLAGS)
+	$(GTK_CFLAGS) \
+	$(WARN_CFLAGS) \
+	$(NULL)
 
 mate_search_tool_LDADD = \
 	$(GLIB_LIBS) \
