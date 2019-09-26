@@ -41,6 +41,7 @@ mate_dictionary_CFLAGS = \
 	$(GLIB_CFLAGS) \
 	$(GIO_CFLAGS) \
 	$(GTK_CFLAGS) \
+	$(WARN_CFLAGS) \
 	$(NULL)
 
 mate_dictionary_LDADD = \
@@ -79,6 +80,7 @@ mate_dictionary_applet_CFLAGS = \
 	$(GLIB_CFLAGS) \
 	$(GIO_CFLAGS) \
 	$(GTK_CFLAGS) \
+	$(WARN_CFLAGS) \
 	$(NULL)
 
 mate_dictionary_applet_LDADD = \

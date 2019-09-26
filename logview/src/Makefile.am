@@ -44,6 +44,7 @@ mate_system_log_CFLAGS =	\
 	$(GTHREAD_CFLAGS)	\
 	$(GIO_CFLAGS)		\
 	$(GTK_CFLAGS)		\
+	$(WARN_CFLAGS)		\
 	$(NULL)
 
 mate_system_log_LDADD =	\
