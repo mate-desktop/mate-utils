@@ -15,6 +15,7 @@ AM_INIT_AUTOMAKE([1.11 dist-xz no-dist-gzip check-news])
 AM_SILENT_RULES([yes])
 
 MATE_COMMON_INIT
+MATE_DEBUG_CHECK([no])
 
 IT_PROG_INTLTOOL([0.50.1])
 
@@ -171,30 +172,11 @@ dnl Other miscellaneous checks
 dnl ***************************************************************
 
 dnl Enable debug messages
-m4_define([debug_default], [m4_if(m4_eval(gdict_minor_version % 2), [1], [yes], [minimum])])
-AC_ARG_ENABLE([debug],
-              [AC_HELP_STRING([--enable-debug=@<:@no/minimum/yes@:>@],
-                              [Enable debug messages @<:@default=debug_default@:>@])],
-              [],
-              [enable_debug=debug_default])
-
-AS_CASE([$enable_debug],
-
-        [yes],
-        [
-          test "$cflags_set" = set || CFLAGS="$CFLAGS -g"
-          GDICT_DEBUG_CFLAGS="-DGDICT_ENABLE_DEBUG"
-        ],
-
-        [minimum],
-        [GDICT_DEBUG_CFLAGS="-DG_DISABLE_CAST_CHECKS"],
-
-        [no],
-        [GDICT_DEBUG_CFLAGS="-DG_DISABLE_ASSERT -DG_DISABLE_CHECKS -DG_DISABLE_CAST_CHECKS"],
-
-        [*], [AC_MSG_ERROR([Unknown argument to --enable-debug])]
+AS_CASE([$ax_enable_debug],
+        [yes],[GDICT_DEBUG_CFLAGS="-DGDICT_ENABLE_DEBUG"],
+        [no],[GDICT_DEBUG_CFLAGS="-DG_DISABLE_ASSERT -DG_DISABLE_CHECKS -DG_DISABLE_CAST_CHECKS"],
+        [*],[GDICT_DEBUG_CFLAGS="-DG_DISABLE_CAST_CHECKS"]
 )
-
 AC_SUBST(GDICT_DEBUG_CFLAGS)
 
 dnl IPv6 support
