@@ -397,6 +397,7 @@ echo "
 mate-utils $VERSION configuration summary:
 
                    Compiler flags : $CFLAGS
+           Compiler warning flags : $WARN_CFLAGS
                      Linker flags : $LDFLAGS
         Maintainer compiler flags : $MAINTAINER_CFLAGS
 
