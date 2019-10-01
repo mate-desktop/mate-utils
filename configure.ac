@@ -288,23 +288,6 @@ AS_IF([test "x$enable_zlib" != "xno"],
 
 AC_SUBST(Z_LIBS)
 
-dnl = Enable strict compiler flags =========================================
-
-# use strict compiler flags only on development releases
-m4_define([maintainer_flags_default], [m4_if(m4_eval(mate_utils_minor % 2), [1], [yes], [no])])
-AC_ARG_ENABLE([maintainer-flags],
-              [AC_HELP_STRING([--enable-maintainer-flags=@<:@no/yes@:>@],
-                              [Use strict compiler flags @<:@default=maintainer_flags_default@:>@])],
-              [],
-              [enable_maintainer_flags=maintainer_flags_default])
-
-AS_IF([test "x$enable_maintainer_flags" = "xyes" && test "x$GCC" = "xyes"],
-      [
-        MAINTAINER_CFLAGS="-Wall -Wshadow -Wcast-align -Wno-uninitialized -Wformat-security -Winit-self"
-        AC_SUBST(MAINTAINER_CFLAGS)
-      ]
-)
-
 dnl Internationalization
 GETTEXT_PACKAGE=mate-utils
 AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE], "$GETTEXT_PACKAGE", [Define the gettext package to use])
@@ -381,7 +364,6 @@ mate-utils $VERSION configuration summary:
                    Compiler flags : $CFLAGS
            Compiler warning flags : $WARN_CFLAGS
                      Linker flags : $LDFLAGS
-        Maintainer compiler flags : $MAINTAINER_CFLAGS
 
                            prefix : $prefix
                       sysconf dir : $sysconfdir
