@@ -52,7 +52,6 @@ libmatedict_la_CPPFLAGS = 	\
 	$(AM_CPPFLAGS)		\
 	$(LIBGDICT_CFLAGS)	\
 	$(GDICT_DEBUG_CFLAGS)	\
-	$(MAINTAINER_CFLAGS)	\
 	$(WARN_CFLAGS)		\
 	$(NULL)
 libmatedict_la_LIBADD   = $(LIBGDICT_LIBS)
