@@ -11,7 +11,7 @@
 # Mingye Wang <arthur200126@gmail.com>, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
 # Mingcong Bai <jeffbai@aosc.xyz>, 2018
-# liushuyu011 <liushuyu011@gmail.com>, 2018
+# shuyu liu <liushuyu011@gmail.com>, 2018
 # zhangxianwei8 <zhang.xianwei8@zte.com.cn>, 2018
 # Wylmer Wang, 2019
 # CNAmira <forucial@icloud.com>, 2019
@@ -21,9 +21,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-24 11:07+0100\n"
+"POT-Creation-Date: 2019-07-06 13:25+0200\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
 "Last-Translator: zhineng404 <zhinengge@gmail.com>, 2019\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/mate/teams/13566/zh_CN/)\n"
@@ -74,8 +74,8 @@ msgid "S_can Remote Folder..."
 msgstr "扫描远程文件夹(_C)..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../logview/src/logview-window.c:824
-#: ../mate-dictionary/src/gdict-window.c:1288
+#: ../logview/src/logview-window.c:822
+#: ../mate-dictionary/src/gdict-window.c:1286
 msgid "_Edit"
 msgstr "编辑(_E)"
 
@@ -88,8 +88,8 @@ msgid "_Collapse All"
 msgstr "全部折叠(_C)"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../logview/src/logview-window.c:825
-#: ../mate-dictionary/src/gdict-window.c:1289
+#: ../logview/src/logview-window.c:823
+#: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_View"
 msgstr "视图(_V)"
 
@@ -106,20 +106,20 @@ msgid "All_ocated Space"
 msgstr "分配的空间(_O)"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../logview/src/logview-window.c:827
+#: ../logview/src/logview-window.c:825
 #: ../mate-dictionary/src/gdict-applet.c:1187
-#: ../mate-dictionary/src/gdict-window.c:1291
+#: ../mate-dictionary/src/gdict-window.c:1289
 msgid "_Help"
 msgstr "帮助(_H)"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../logview/src/logview-window.c:853
-#: ../mate-dictionary/src/gdict-window.c:1341
+#: ../logview/src/logview-window.c:851
+#: ../mate-dictionary/src/gdict-window.c:1339
 msgid "_Contents"
 msgstr "目录(_C)"
 
-#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1241
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1238
 #: ../baobab/src/callbacks.c:107
 msgid "Disk Usage Analyzer"
 msgstr "磁盘使用分析器"
@@ -250,7 +250,7 @@ msgstr "可用："
 msgid "Calculating percentage bars..."
 msgstr "正在计算百分比条..."
 
-#: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
+#: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1302
 #: ../baobab/src/callbacks.c:276
 msgid "Ready"
 msgstr "就绪"
@@ -281,47 +281,47 @@ msgstr "无法初始化监视"
 msgid "Changes to your home folder will not be monitored."
 msgstr "对主目录的更改无法监视。"
 
-#: ../baobab/src/baobab.c:921
+#: ../baobab/src/baobab.c:916
 msgid "Move to parent folder"
 msgstr "移动到父文件夹"
 
-#: ../baobab/src/baobab.c:925
+#: ../baobab/src/baobab.c:920
 msgid "Zoom in"
 msgstr "放大"
 
-#: ../baobab/src/baobab.c:929
+#: ../baobab/src/baobab.c:924
 msgid "Zoom out"
 msgstr "缩小"
 
-#: ../baobab/src/baobab.c:933
+#: ../baobab/src/baobab.c:928
 msgid "Save screenshot"
 msgstr "保存抓图"
 
-#: ../baobab/src/baobab.c:1119
+#: ../baobab/src/baobab.c:1114
 msgid "View as Rings Chart"
 msgstr "查看为圆环图"
 
-#: ../baobab/src/baobab.c:1121
+#: ../baobab/src/baobab.c:1116
 msgid "View as Treemap Chart"
 msgstr "查看为树形图"
 
-#: ../baobab/src/baobab.c:1230
+#: ../baobab/src/baobab.c:1227
 msgid "Show version"
 msgstr "显示版本号"
 
-#: ../baobab/src/baobab.c:1231
+#: ../baobab/src/baobab.c:1228
 msgid "[DIRECTORY]"
 msgstr "[目录]"
 
-#: ../baobab/src/baobab.c:1261
+#: ../baobab/src/baobab.c:1258
 msgid "Too many arguments. Only one directory can be specified."
 msgstr "参数太多，只可以指定一个目录。"
 
-#: ../baobab/src/baobab.c:1278
+#: ../baobab/src/baobab.c:1275
 msgid "Could not detect any mount point."
 msgstr "无法检测到任何挂载点。"
 
-#: ../baobab/src/baobab.c:1280
+#: ../baobab/src/baobab.c:1277
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr "没有挂载点，无法分析磁盘使用情况。"
 
@@ -349,16 +349,16 @@ msgstr "图表根节点"
 msgid "Set the root node from the model"
 msgstr "设定模型的根节点"
 
-#: ../baobab/src/baobab-chart.c:1714
+#: ../baobab/src/baobab-chart.c:1712
 msgid "Cannot create pixbuf image!"
 msgstr "无法创建像素图图像！"
 
 #. Popup the File chooser dialog
-#: ../baobab/src/baobab-chart.c:1724
+#: ../baobab/src/baobab-chart.c:1722
 msgid "Save Snapshot"
 msgstr "保存抓图"
 
-#: ../baobab/src/baobab-chart.c:1751
+#: ../baobab/src/baobab-chart.c:1749
 msgid "_Image type:"
 msgstr "图像类型(_I)："
 
@@ -427,48 +427,48 @@ msgstr "无法连接到服务器。您必须输入服务器的名称。"
 msgid "Please enter a name and try again."
 msgstr "请输入名称然后再试一次。"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:438
+#: ../baobab/src/baobab-remote-connect-dialog.c:444
 msgid "_Location (URI):"
 msgstr "位置(URI)(_L)："
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:454
+#: ../baobab/src/baobab-remote-connect-dialog.c:460
 msgid "_Server:"
 msgstr "服务器(_S)："
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:467
+#: ../baobab/src/baobab-remote-connect-dialog.c:473
 msgid "Optional information:"
 msgstr "可选信息："
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:476
+#: ../baobab/src/baobab-remote-connect-dialog.c:482
 msgid "_Share:"
 msgstr "共享(_S)："
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:491
+#: ../baobab/src/baobab-remote-connect-dialog.c:497
 #: ../mate-dictionary/data/mate-dictionary-source.ui.h:4
 msgid "_Port:"
 msgstr "端口(_P)："
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:505
+#: ../baobab/src/baobab-remote-connect-dialog.c:511
 msgid "_Folder:"
 msgstr "文件夹(_F)："
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:519
+#: ../baobab/src/baobab-remote-connect-dialog.c:525
 msgid "_User Name:"
 msgstr "用户名(_U)："
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:534
+#: ../baobab/src/baobab-remote-connect-dialog.c:540
 msgid "_Domain Name:"
 msgstr "域名(_D)："
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:595
+#: ../baobab/src/baobab-remote-connect-dialog.c:601
 msgid "Connect to Server"
 msgstr "连接到服务器"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:611
+#: ../baobab/src/baobab-remote-connect-dialog.c:617
 msgid "Service _type:"
 msgstr "服务类型(_T)："
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:729
+#: ../baobab/src/baobab-remote-connect-dialog.c:735
 msgid "_Scan"
 msgstr "扫描(_S)"
 
@@ -529,34 +529,34 @@ msgid "_Open Folder"
 msgstr "打开文件夹(_O)"
 
 #: ../baobab/src/baobab-utils.c:368
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1226
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1220
 msgid "Mo_ve to Trash"
 msgstr "移动到回收站(_V)"
 
-#: ../baobab/src/baobab-utils.c:402
+#: ../baobab/src/baobab-utils.c:397
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "无法打开文件夹“%s”"
 
-#: ../baobab/src/baobab-utils.c:405
+#: ../baobab/src/baobab-utils.c:400
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr "没有安装能显示文件夹的查看器。"
 
-#: ../baobab/src/baobab-utils.c:474
+#: ../baobab/src/baobab-utils.c:467
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr "无法将“%s”移动到回收站"
 
-#: ../baobab/src/baobab-utils.c:482
+#: ../baobab/src/baobab-utils.c:475
 msgid "Could not move file to the Trash"
 msgstr "无法将文件移动到回收站"
 
-#: ../baobab/src/baobab-utils.c:484
+#: ../baobab/src/baobab-utils.c:477
 #, c-format
 msgid "Details: %s"
 msgstr "细节：%s"
 
-#: ../baobab/src/baobab-utils.c:522
+#: ../baobab/src/baobab-utils.c:515
 msgid "There was an error displaying help."
 msgstr "显示帮助时出错。"
 
@@ -627,8 +627,8 @@ msgstr ""
 "刘子兴 <liushuyu@aosc.xyz>, 2015-2016"
 
 #: ../baobab/src/callbacks.c:215
-#: ../gsearchtool/src/gsearchtool-callbacks.c:514
-#: ../gsearchtool/src/gsearchtool-callbacks.c:864
+#: ../gsearchtool/src/gsearchtool-callbacks.c:513
+#: ../gsearchtool/src/gsearchtool-callbacks.c:859
 msgid "The document does not exist."
 msgstr "文档不存在。"
 
@@ -1030,7 +1030,7 @@ msgid "Searching..."
 msgstr "正在搜索..."
 
 #: ../gsearchtool/src/gsearchtool.c:511 ../gsearchtool/src/gsearchtool.c:1031
-#: ../gsearchtool/src/gsearchtool.c:3062
+#: ../gsearchtool/src/gsearchtool.c:3057
 msgid "Search for Files"
 msgstr "搜索文件"
 
@@ -1205,67 +1205,67 @@ msgstr "类型"
 msgid "Date Modified"
 msgstr "修改日期"
 
-#: ../gsearchtool/src/gsearchtool.c:2808
+#: ../gsearchtool/src/gsearchtool.c:2803
 msgid "_Name contains:"
 msgstr "名称包含(_N)："
 
-#: ../gsearchtool/src/gsearchtool.c:2823 ../gsearchtool/src/gsearchtool.c:2824
+#: ../gsearchtool/src/gsearchtool.c:2818 ../gsearchtool/src/gsearchtool.c:2819
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr "输入文件名或部分文件名，可以使用通配符。"
 
-#: ../gsearchtool/src/gsearchtool.c:2824
+#: ../gsearchtool/src/gsearchtool.c:2819
 msgid "Name contains"
 msgstr "名称包含"
 
-#: ../gsearchtool/src/gsearchtool.c:2830
+#: ../gsearchtool/src/gsearchtool.c:2825
 msgid "_Look in folder:"
 msgstr "搜索文件夹(_L)："
 
-#: ../gsearchtool/src/gsearchtool.c:2836
+#: ../gsearchtool/src/gsearchtool.c:2831
 msgid "Browse"
 msgstr "浏览"
 
-#: ../gsearchtool/src/gsearchtool.c:2846
+#: ../gsearchtool/src/gsearchtool.c:2841
 msgid "Look in folder"
 msgstr "搜索文件夹"
 
-#: ../gsearchtool/src/gsearchtool.c:2846
+#: ../gsearchtool/src/gsearchtool.c:2841
 msgid "Select the folder or device from which you want to begin the search."
 msgstr "选择您想要开始搜索的文件夹或设备。"
 
-#: ../gsearchtool/src/gsearchtool.c:2864
+#: ../gsearchtool/src/gsearchtool.c:2859
 msgid "Select more _options"
 msgstr "选择更多选项(_O)"
 
-#: ../gsearchtool/src/gsearchtool.c:2873
+#: ../gsearchtool/src/gsearchtool.c:2868
 msgid "Select more options"
 msgstr "选择更多选项"
 
-#: ../gsearchtool/src/gsearchtool.c:2873
+#: ../gsearchtool/src/gsearchtool.c:2868
 msgid "Click to expand or collapse the list of available options."
 msgstr "单击可展开或折叠可用选项列表。"
 
-#: ../gsearchtool/src/gsearchtool.c:2904
+#: ../gsearchtool/src/gsearchtool.c:2899
 msgid "Click to display the help manual."
 msgstr "单击可显示帮助手册。"
 
-#: ../gsearchtool/src/gsearchtool.c:2917
+#: ../gsearchtool/src/gsearchtool.c:2912
 msgid "Click to close \"Search for Files\"."
 msgstr "单击可关闭“搜索文件”。"
 
-#: ../gsearchtool/src/gsearchtool.c:2952
+#: ../gsearchtool/src/gsearchtool.c:2947
 msgid "Click to perform a search."
 msgstr "单击可执行搜索。"
 
-#: ../gsearchtool/src/gsearchtool.c:2953
+#: ../gsearchtool/src/gsearchtool.c:2948
 msgid "Click to stop a search."
 msgstr "单击可停止搜索。"
 
-#: ../gsearchtool/src/gsearchtool.c:3047
+#: ../gsearchtool/src/gsearchtool.c:3042
 msgid "- the MATE Search Tool"
 msgstr "- MATE 搜索工具"
 
-#: ../gsearchtool/src/gsearchtool.c:3056
+#: ../gsearchtool/src/gsearchtool.c:3051
 #, c-format
 msgid "Failed to parse command line arguments: %s\n"
 msgstr "解析命令行参数失败：%s\n"
@@ -1281,7 +1281,7 @@ msgid_plural "Are you sure you want to open %d documents?"
 msgstr[0] "您确定想要打开 %d 个文档吗？"
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:355
-#: ../gsearchtool/src/gsearchtool-callbacks.c:557
+#: ../gsearchtool/src/gsearchtool-callbacks.c:555
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
@@ -1301,113 +1301,113 @@ msgstr "无法打开文件夹“%s”。"
 msgid "The caja file manager is not running."
 msgstr "caja 文件管理器没有运行。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:529
+#: ../gsearchtool/src/gsearchtool-callbacks.c:528
 msgid "There is no installed viewer capable of displaying the document."
 msgstr "没有安装能显示文档的查看器。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:552
+#: ../gsearchtool/src/gsearchtool-callbacks.c:550
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
 msgstr[0] "您确定想要打开 %d 个文件夹吗？"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:710
+#: ../gsearchtool/src/gsearchtool-callbacks.c:705
 #, c-format
 msgid "Could not move \"%s\" to trash."
 msgstr "无法将“%s”移动到回收站。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:741
+#: ../gsearchtool/src/gsearchtool-callbacks.c:736
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
 msgstr "您想要永久删除“%s”吗？"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:744
+#: ../gsearchtool/src/gsearchtool-callbacks.c:739
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
 msgstr "回收站不可用。无法将“%s”移动到回收站。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:788
+#: ../gsearchtool/src/gsearchtool-callbacks.c:783
 #, c-format
 msgid "Could not delete \"%s\"."
 msgstr "无法删除“%s”。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:900
+#: ../gsearchtool/src/gsearchtool-callbacks.c:895
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
 msgstr "删除“%s”失败：%s。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:912
+#: ../gsearchtool/src/gsearchtool-callbacks.c:907
 #, c-format
 msgid "Moving \"%s\" failed: %s."
 msgstr "移动“%s”失败：%s。"
 
 #. Popup menu item: Open
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1040
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1070
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1034
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1064
 msgid "_Open"
 msgstr "打开(_O)"
 
 #. Popup menu item: Open with (default)
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1095
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1089
 #, c-format
 msgid "_Open with %s"
 msgstr "用 %s 打开（_O）"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1130
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1124
 #, c-format
 msgid "Open with %s"
 msgstr "用 %s 打开"
 
 #. Popup menu item: Open With
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1163
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1157
 msgid "Open Wit_h"
 msgstr "打开方式(_H)"
 
 #. Popup menu item: Open Containing Folder
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1208
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1202
 msgid "Open Containing _Folder"
 msgstr "打开包含的文件夹（_F）"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1248
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1242
 msgid "_Save Results As..."
 msgstr "结果另存为(_S)..."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1633
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1624
 msgid "Save Search Results As..."
 msgstr "搜索结果另存为..."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1662
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1653
 msgid "Could not save document."
 msgstr "无法保存文档。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1663
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1654
 msgid "You did not select a document name."
 msgstr "您没有选择文档名称。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1693
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1684
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr "无法将文档“%s”保存到 %s。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1726
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1717
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr "文档“%s”已经存在。您想要替换吗？"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1730
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1721
 msgid "If you replace an existing file, its contents will be overwritten."
 msgstr "如果您替换已有文件，该文件中的全部内容都将被覆盖。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1745
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1736
 #: ../mate-screenshot/src/screenshot-xfer.c:82
 msgid "_Replace"
 msgstr "替换 (_R)"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1794
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1785
 msgid "The document name you selected is a folder."
 msgstr "您选择的文档名是文件夹。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1830
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1821
 msgid "You may not have write permissions to the document."
 msgstr "您可能没有对文档的写权限。"
 
@@ -1631,7 +1631,7 @@ msgstr "效果："
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr "Sun GNOME 文档团队 <gdocteam@sun.com>"
 
-#: ../logview/src/logview-app.c:377
+#: ../logview/src/logview-app.c:376
 #, c-format
 msgid "Impossible to open the file %s"
 msgstr "无法打开文件 %s"
@@ -1653,19 +1653,19 @@ msgstr "正则表达式为空！"
 msgid "Regular expression is invalid: %s"
 msgstr "无效的正则表达式：%s"
 
-#: ../logview/src/logview-filter-manager.c:242
+#: ../logview/src/logview-filter-manager.c:240
 msgid "Please specify either foreground or background color!"
 msgstr "\t请指定或前景或背景颜色！"
 
-#: ../logview/src/logview-filter-manager.c:296
+#: ../logview/src/logview-filter-manager.c:294
 msgid "Edit filter"
 msgstr "编辑过滤器"
 
-#: ../logview/src/logview-filter-manager.c:296
+#: ../logview/src/logview-filter-manager.c:294
 msgid "Add new filter"
 msgstr "添加新的过滤器"
 
-#: ../logview/src/logview-filter-manager.c:524
+#: ../logview/src/logview-filter-manager.c:522
 msgid "Filters"
 msgstr "文件"
 
@@ -1693,19 +1693,19 @@ msgstr "查找被搜索字符串的下次出现"
 msgid "Clear the search string"
 msgstr "清除搜索字符串"
 
-#: ../logview/src/logview-log.c:598
+#: ../logview/src/logview-log.c:593
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
 msgstr "解压缩GZipped日志时发生错误。该文件可能已损坏。"
 
-#: ../logview/src/logview-log.c:645
+#: ../logview/src/logview-log.c:640
 msgid "You don't have enough permissions to read the file."
 msgstr "您没有足够的权限读这个文件。"
 
-#: ../logview/src/logview-log.c:660
+#: ../logview/src/logview-log.c:655
 msgid "The file is not a regular file or is not a text file."
 msgstr "文件不是常规的文件或不是一个文本文件。"
 
-#: ../logview/src/logview-log.c:742
+#: ../logview/src/logview-log.c:737
 msgid "This version of System Log does not support GZipped logs."
 msgstr "这个系统日志的版本不支持GZipped日志。"
 
@@ -1729,7 +1729,7 @@ msgstr " - 浏览及监视日志"
 msgid "Log Viewer"
 msgstr "日志查看器"
 
-#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:773
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:771
 msgid "System Log Viewer"
 msgstr "系统日志查看器"
 
@@ -1757,17 +1757,17 @@ msgid "Wrapped"
 msgstr "换行"
 
 #: ../logview/src/logview-window.c:493
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1127
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1221
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1255
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1125
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1219
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1253
 msgid "Not found"
 msgstr "未找到"
 
-#: ../logview/src/logview-window.c:775
+#: ../logview/src/logview-window.c:773
 msgid "About System Log Viewer"
 msgstr "关于系统日志查看器"
 
-#: ../logview/src/logview-window.c:776
+#: ../logview/src/logview-window.c:774
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
 "Copyright © 2011-2019 MATE developers"
@@ -1775,151 +1775,151 @@ msgstr ""
 "版权所有 © 1998-2008 Free Software Foundation, Inc.\n"
 "版权所有 © 2011-2019 MATE 开发团队"
 
-#: ../logview/src/logview-window.c:780
+#: ../logview/src/logview-window.c:778
 msgid "A system log viewer for MATE."
 msgstr "MATE 系统日志查看器。"
 
-#: ../logview/src/logview-window.c:823
-#: ../mate-dictionary/src/gdict-window.c:1287
+#: ../logview/src/logview-window.c:821
+#: ../mate-dictionary/src/gdict-window.c:1285
 msgid "_File"
 msgstr "文件(_F)"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:824
 msgid "_Filters"
 msgstr "过滤器(_F)"
 
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:827
 msgid "_Open..."
 msgstr "打开(_O)..."
 
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:827
 msgid "Open a log from file"
 msgstr "从文件打开日志"
 
-#: ../logview/src/logview-window.c:831
-#: ../mate-dictionary/src/gdict-window.c:1302
+#: ../logview/src/logview-window.c:829
+#: ../mate-dictionary/src/gdict-window.c:1300
 msgid "_Close"
 msgstr "关闭(_C)"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:829
 msgid "Close this log"
 msgstr "关闭此日志"
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:831
 msgid "_Quit"
 msgstr "退出(_Q)"
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:831
 msgid "Quit the log viewer"
 msgstr "退出日志查看器"
 
 #. Edit menu
-#: ../logview/src/logview-window.c:836
-#: ../mate-dictionary/src/gdict-window.c:1306
+#: ../logview/src/logview-window.c:834
+#: ../mate-dictionary/src/gdict-window.c:1304
 msgid "_Copy"
 msgstr "复制(_C)"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:834
 msgid "Copy the selection"
 msgstr "复制选中内容"
 
-#: ../logview/src/logview-window.c:838
-#: ../mate-dictionary/src/gdict-window.c:1308
+#: ../logview/src/logview-window.c:836
+#: ../mate-dictionary/src/gdict-window.c:1306
 msgid "Select _All"
 msgstr "全选(_A)"
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:836
 msgid "Select the entire log"
 msgstr "选中整个日志"
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:838
 msgid "_Find..."
 msgstr "查找(_F)..."
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:838
 msgid "Find a word or phrase in the log"
 msgstr "在日记中查找单词或短语"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:841
 msgid "Zoom _In"
 msgstr "放大(_I)"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:841
 msgid "Bigger text size"
 msgstr "较大的文本大小"
 
-#: ../logview/src/logview-window.c:845
+#: ../logview/src/logview-window.c:843
 msgid "Zoom _Out"
 msgstr "缩小(_O)"
 
-#: ../logview/src/logview-window.c:845
+#: ../logview/src/logview-window.c:843
 msgid "Smaller text size"
 msgstr "较小的文本大小"
 
-#: ../logview/src/logview-window.c:847
+#: ../logview/src/logview-window.c:845
 msgid "_Normal Size"
 msgstr "正常大小(_N)"
 
-#: ../logview/src/logview-window.c:847
+#: ../logview/src/logview-window.c:845
 msgid "Normal text size"
 msgstr "普通文本大小"
 
-#: ../logview/src/logview-window.c:850
+#: ../logview/src/logview-window.c:848
 msgid "Manage Filters"
 msgstr "管理过滤器"
 
-#: ../logview/src/logview-window.c:850
+#: ../logview/src/logview-window.c:848
 msgid "Manage filters"
 msgstr "管理过滤器"
 
-#: ../logview/src/logview-window.c:853
+#: ../logview/src/logview-window.c:851
 msgid "Open the help contents for the log viewer"
 msgstr "打开日志查看器的帮助目录"
 
-#: ../logview/src/logview-window.c:855
+#: ../logview/src/logview-window.c:853
 #: ../mate-dictionary/src/gdict-applet.c:1190
-#: ../mate-dictionary/src/gdict-window.c:1343
+#: ../mate-dictionary/src/gdict-window.c:1341
 msgid "_About"
 msgstr "关于(_A)"
 
-#: ../logview/src/logview-window.c:855
+#: ../logview/src/logview-window.c:853
 msgid "Show the about dialog for the log viewer"
 msgstr "显示日志查看器的关于对话框"
 
-#: ../logview/src/logview-window.c:860
+#: ../logview/src/logview-window.c:858
 msgid "_Statusbar"
 msgstr "状态栏(_S)"
 
-#: ../logview/src/logview-window.c:860
+#: ../logview/src/logview-window.c:858
 msgid "Show Status Bar"
 msgstr "显示状态栏"
 
-#: ../logview/src/logview-window.c:862
+#: ../logview/src/logview-window.c:860
 msgid "Side _Pane"
 msgstr "侧边栏(_P)"
 
-#: ../logview/src/logview-window.c:862
+#: ../logview/src/logview-window.c:860
 msgid "Show Side Pane"
 msgstr "显示侧边栏"
 
-#: ../logview/src/logview-window.c:864
+#: ../logview/src/logview-window.c:862
 msgid "Show matches only"
 msgstr "仅显示匹配项"
 
-#: ../logview/src/logview-window.c:864
+#: ../logview/src/logview-window.c:862
 msgid "Only show lines that match one of the given filters"
 msgstr "只能显示与给定的过滤器匹配的行"
 
-#: ../logview/src/logview-window.c:996
+#: ../logview/src/logview-window.c:994
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr "不能从“%s”读取"
 
-#: ../logview/src/logview-window.c:1421
+#: ../logview/src/logview-window.c:1419
 msgid "Version: "
 msgstr "版本："
 
-#: ../logview/src/logview-window.c:1529
+#: ../logview/src/logview-window.c:1527
 msgid "Could not open the following files:"
 msgstr "无法打开下列文件："
 
@@ -2039,34 +2039,34 @@ msgstr "状态"
 msgid "The status code as returned by the dictionary server"
 msgstr "字典服务器返回的状态代码"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:777
+#: ../mate-dictionary/libgdict/gdict-client-context.c:774
 #, c-format
 msgid "No connection to the dictionary server at '%s:%d'"
 msgstr "“%s:%d”出的字典服务器无法连接"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1060
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1054
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
 msgstr "查阅主机名“%s”失败：未找到合适的资源"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1091
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1085
 #, c-format
 msgid "Lookup failed for host '%s': %s"
 msgstr "查阅主机“%s”失败：%s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1125
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1119
 #, c-format
 msgid "Lookup failed for host '%s': host not found"
 msgstr "查阅主机“%s”失败：主机未找到"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1177
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1171
 #, c-format
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
 "with code %d (server down)"
 msgstr "无法连接到字典服务器“%s:%d”。服务器返回了代码 %d(服务器已停机)"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1196
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1190
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
@@ -2075,47 +2075,47 @@ msgstr ""
 "无法分析字典服务器回复\n"
 "：“%s”"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1225
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1219
 #, c-format
 msgid "No definitions found for '%s'"
 msgstr "未找到“%s”的定义"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1240
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1234
 #, c-format
 msgid "Invalid database '%s'"
 msgstr "无效的数据库“%s”"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1255
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1249
 #, c-format
 msgid "Invalid strategy '%s'"
 msgstr "无效的策略“%s”"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1270
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1264
 #, c-format
 msgid "Bad command '%s'"
 msgstr "错误的名称“%s”"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1285
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1279
 #, c-format
 msgid "Bad parameters for command '%s'"
 msgstr "命令“%s”的参数错误"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1300
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1294
 #, c-format
 msgid "No databases found on dictionary server at '%s'"
 msgstr "未在字典服务器“%s”找到数据库"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1315
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1309
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
 msgstr "字典服务器“%s”未找到策略"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1740
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1734
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
 msgstr "连接服务器 %s:%d 失败"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1779
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1773
 #, c-format
 msgid ""
 "Error while reading reply from server:\n"
@@ -2124,28 +2124,28 @@ msgstr ""
 "从服务器读取回复出错：\n"
 "%s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1852
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1846
 #, c-format
 msgid "Connection timeout for the dictionary server at '%s:%d'"
 msgstr "连接字典服务器“%s:%d”超时"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1886
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1880
 #, c-format
 msgid "No hostname defined for the dictionary server"
 msgstr "字典服务器未定义主机名"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1922
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1937
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1916
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1931
 #, c-format
 msgid "Unable to create socket"
 msgstr "无法创建套接字"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1963
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1957
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
 msgstr "无法将频道设定为非屏蔽：%s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1978
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1972
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
 msgstr "无法连接到“%s:%d”的字典服务器"
@@ -2172,33 +2172,33 @@ msgstr "清除可用数据库列表"
 msgid "Error while matching"
 msgstr "匹配时出错"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1316
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1314
 msgid "F_ind:"
 msgstr "查找(_I)："
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1329
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1327
 msgid "_Previous"
 msgstr "上一个(_P)"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1337
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1335
 msgid "_Next"
 msgstr "下一个(_N)"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2485
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2483
 msgid "Error while looking up definition"
 msgstr "查阅定义出错"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2527
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2525
 #: ../mate-dictionary/libgdict/gdict-speller.c:731
 msgid "Another search is in progress"
 msgstr "另外一项搜索正在进行中"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2528
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2526
 #: ../mate-dictionary/libgdict/gdict-speller.c:732
 msgid "Please wait until the current search ends."
 msgstr "请稍候，等待当前搜索结束。"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2567
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2565
 msgid "Error while retrieving the definition"
 msgstr "获取定义出错"
 
@@ -2295,19 +2295,19 @@ msgstr "字典源“%s”的传送“%s”无效"
 msgid "Reload the list of available sources"
 msgstr "重新装入可用源列表"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:171
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:165
 msgid "Paths"
 msgstr "路径"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:172
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:166
 msgid "Search paths used by this object"
 msgstr "此对象所使用的搜索路径"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:184
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:178
 msgid "Sources"
 msgstr "源"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:185
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:179
 msgid "Dictionary sources found"
 msgstr "找到的字典源"
 
@@ -2371,9 +2371,9 @@ msgstr ""
 "Inc., 51 Franklin Street, Fifth Floor, Boston, \"\"MA 02110-1301, USA \""
 
 #: ../mate-dictionary/src/gdict-about.c:87
-#: ../mate-dictionary/src/gdict-app.c:371
+#: ../mate-dictionary/src/gdict-app.c:364
 #: ../mate-dictionary/src/gdict-window.c:607
-#: ../mate-dictionary/src/gdict-window.c:1896
+#: ../mate-dictionary/src/gdict-window.c:1891
 msgid "Dictionary"
 msgstr "字典"
 
@@ -2392,7 +2392,7 @@ msgstr ""
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
 #. * keep the new lines.
-#: ../mate-dictionary/src/gdict-app.c:217
+#: ../mate-dictionary/src/gdict-app.c:210
 #, c-format
 msgid ""
 "Definition for '%s'\n"
@@ -2405,21 +2405,21 @@ msgstr ""
 "\n"
 "%s\n"
 
-#: ../mate-dictionary/src/gdict-app.c:231
+#: ../mate-dictionary/src/gdict-app.c:224
 #, c-format
 msgid "Error: %s\n"
 msgstr "错误：%s\n"
 
-#: ../mate-dictionary/src/gdict-app.c:257
+#: ../mate-dictionary/src/gdict-app.c:250
 #, c-format
 msgid "See mate-dictionary --help for usage\n"
 msgstr "请查看 mate-dictionary --help 的用法\n"
 
-#: ../mate-dictionary/src/gdict-app.c:270
+#: ../mate-dictionary/src/gdict-app.c:263
 msgid "Unable to find a suitable dictionary source"
 msgstr "找不到合适的字典源"
 
-#: ../mate-dictionary/src/gdict-app.c:304
+#: ../mate-dictionary/src/gdict-app.c:297
 #, c-format
 msgid ""
 "Error while looking up the definition of \"%s\":\n"
@@ -2428,58 +2428,58 @@ msgstr ""
 "查阅“%s”的定义出错：\n"
 "%s"
 
-#: ../mate-dictionary/src/gdict-app.c:333
-#: ../mate-dictionary/src/gdict-app.c:343
+#: ../mate-dictionary/src/gdict-app.c:326
+#: ../mate-dictionary/src/gdict-app.c:336
 msgid "Words to look up"
 msgstr "要查阅的单词"
 
-#: ../mate-dictionary/src/gdict-app.c:333
-#: ../mate-dictionary/src/gdict-app.c:335
-#: ../mate-dictionary/src/gdict-app.c:343
+#: ../mate-dictionary/src/gdict-app.c:326
+#: ../mate-dictionary/src/gdict-app.c:328
+#: ../mate-dictionary/src/gdict-app.c:336
 msgid "word"
 msgstr "单词"
 
-#: ../mate-dictionary/src/gdict-app.c:335
+#: ../mate-dictionary/src/gdict-app.c:328
 msgid "Words to match"
 msgstr "要匹配的单词"
 
-#: ../mate-dictionary/src/gdict-app.c:337
+#: ../mate-dictionary/src/gdict-app.c:330
 msgid "Dictionary source to use"
 msgstr "要使用的字典源"
 
-#: ../mate-dictionary/src/gdict-app.c:337
+#: ../mate-dictionary/src/gdict-app.c:330
 msgid "source"
 msgstr "源"
 
-#: ../mate-dictionary/src/gdict-app.c:339
+#: ../mate-dictionary/src/gdict-app.c:332
 msgid "Print result to the console"
 msgstr "将结果打印到控制台"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:334
 msgid "Database to use"
 msgstr "要使用的数据库"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:334
 msgid "db"
 msgstr "db"
 
 #. create the new option context
-#: ../mate-dictionary/src/gdict-app.c:353
+#: ../mate-dictionary/src/gdict-app.c:346
 msgid " - Look up words in dictionaries"
 msgstr " - 在字典中查阅单词"
 
 #: ../mate-dictionary/src/gdict-applet.c:206
-#: ../mate-dictionary/src/gdict-window.c:964
+#: ../mate-dictionary/src/gdict-window.c:962
 msgid "Save a Copy"
 msgstr "保存副本"
 
 #: ../mate-dictionary/src/gdict-applet.c:216
-#: ../mate-dictionary/src/gdict-window.c:974
+#: ../mate-dictionary/src/gdict-window.c:972
 msgid "Untitled document"
 msgstr "无标题文档"
 
 #: ../mate-dictionary/src/gdict-applet.c:237
-#: ../mate-dictionary/src/gdict-window.c:995
+#: ../mate-dictionary/src/gdict-window.c:993
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "试图写入“%s”时发生错误"
@@ -2541,14 +2541,14 @@ msgid "Dictionary entry"
 msgstr "字典项"
 
 #: ../mate-dictionary/src/gdict-applet.c:717
-#: ../mate-dictionary/src/gdict-window.c:1106
+#: ../mate-dictionary/src/gdict-window.c:1104
 msgid "Dictionary Preferences"
 msgstr "字典首选项"
 
 #: ../mate-dictionary/src/gdict-applet.c:741
 #: ../mate-dictionary/src/gdict-pref-dialog.c:498
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
-#: ../mate-dictionary/src/gdict-window.c:1253
+#: ../mate-dictionary/src/gdict-window.c:1251
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "显示帮助时出错"
@@ -2682,175 +2682,175 @@ msgstr[0] "找到了 %d 个定义"
 msgid "%s - Dictionary"
 msgstr "%s - 字典"
 
-#: ../mate-dictionary/src/gdict-window.c:1290
+#: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Go"
 msgstr "转到(_G)"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1294
+#: ../mate-dictionary/src/gdict-window.c:1292
 msgid "_New"
 msgstr "新建(_N)"
 
-#: ../mate-dictionary/src/gdict-window.c:1295
+#: ../mate-dictionary/src/gdict-window.c:1293
 msgid "New look up"
 msgstr "新建查阅"
 
-#: ../mate-dictionary/src/gdict-window.c:1296
+#: ../mate-dictionary/src/gdict-window.c:1294
 msgid "_Save a Copy..."
 msgstr "保存副本(_S)..."
 
-#: ../mate-dictionary/src/gdict-window.c:1298
+#: ../mate-dictionary/src/gdict-window.c:1296
 msgid "P_review..."
 msgstr "预览(_R)..."
 
-#: ../mate-dictionary/src/gdict-window.c:1299
+#: ../mate-dictionary/src/gdict-window.c:1297
 msgid "Preview this document"
 msgstr "预览此文档"
 
-#: ../mate-dictionary/src/gdict-window.c:1300
+#: ../mate-dictionary/src/gdict-window.c:1298
 msgid "_Print..."
 msgstr "打印(_P)..."
 
-#: ../mate-dictionary/src/gdict-window.c:1301
+#: ../mate-dictionary/src/gdict-window.c:1299
 msgid "Print this document"
 msgstr "打印此文档"
 
-#: ../mate-dictionary/src/gdict-window.c:1310
+#: ../mate-dictionary/src/gdict-window.c:1308
 msgid "_Find"
 msgstr "查找(_F)"
 
-#: ../mate-dictionary/src/gdict-window.c:1311
+#: ../mate-dictionary/src/gdict-window.c:1309
 msgid "Find a word or phrase in the document"
 msgstr "在文档中查找单词或短语"
 
-#: ../mate-dictionary/src/gdict-window.c:1313
+#: ../mate-dictionary/src/gdict-window.c:1311
 msgid "Find Ne_xt"
 msgstr "查找下一个(_X)"
 
-#: ../mate-dictionary/src/gdict-window.c:1315
+#: ../mate-dictionary/src/gdict-window.c:1313
 msgid "Find Pre_vious"
 msgstr "查找上一个(_V)"
 
-#: ../mate-dictionary/src/gdict-window.c:1317
+#: ../mate-dictionary/src/gdict-window.c:1315
 msgid "_Preferences"
 msgstr "属性(_P)"
 
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1321
+#: ../mate-dictionary/src/gdict-window.c:1319
 msgid "_Previous Definition"
 msgstr "上一个定义(_P)"
 
-#: ../mate-dictionary/src/gdict-window.c:1322
+#: ../mate-dictionary/src/gdict-window.c:1320
 msgid "Go to the previous definition"
 msgstr "转到上一个定义"
 
-#: ../mate-dictionary/src/gdict-window.c:1323
+#: ../mate-dictionary/src/gdict-window.c:1321
 msgid "_Next Definition"
 msgstr "下一个定义(_N)"
 
-#: ../mate-dictionary/src/gdict-window.c:1324
+#: ../mate-dictionary/src/gdict-window.c:1322
 msgid "Go to the next definition"
 msgstr "转到下一个定义"
 
-#: ../mate-dictionary/src/gdict-window.c:1325
+#: ../mate-dictionary/src/gdict-window.c:1323
 msgid "_First Definition"
 msgstr "第一个定义(_F)"
 
-#: ../mate-dictionary/src/gdict-window.c:1326
+#: ../mate-dictionary/src/gdict-window.c:1324
 msgid "Go to the first definition"
 msgstr "转到第一个定义"
 
-#: ../mate-dictionary/src/gdict-window.c:1327
+#: ../mate-dictionary/src/gdict-window.c:1325
 msgid "_Last Definition"
 msgstr "最后一个定义(_L)"
 
-#: ../mate-dictionary/src/gdict-window.c:1328
+#: ../mate-dictionary/src/gdict-window.c:1326
 msgid "Go to the last definition"
 msgstr "转到最后一个定义"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1331
+#: ../mate-dictionary/src/gdict-window.c:1329
 msgid "Similar _Words"
 msgstr "相似单词(_W)"
 
-#: ../mate-dictionary/src/gdict-window.c:1333
+#: ../mate-dictionary/src/gdict-window.c:1331
 msgid "Dictionary Sources"
 msgstr "字典源"
 
-#: ../mate-dictionary/src/gdict-window.c:1335
+#: ../mate-dictionary/src/gdict-window.c:1333
 msgid "Available _Databases"
 msgstr "可用数据库(_D)"
 
-#: ../mate-dictionary/src/gdict-window.c:1337
+#: ../mate-dictionary/src/gdict-window.c:1335
 msgid "Available St_rategies"
 msgstr "可用策略(_R)"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1354
+#: ../mate-dictionary/src/gdict-window.c:1352
 msgid "_Sidebar"
 msgstr "侧边栏(_S)"
 
-#: ../mate-dictionary/src/gdict-window.c:1356
+#: ../mate-dictionary/src/gdict-window.c:1354
 msgid "S_tatusbar"
 msgstr "状态栏(_T)"
 
-#: ../mate-dictionary/src/gdict-window.c:1421
+#: ../mate-dictionary/src/gdict-window.c:1419
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "选中了字典源‘%s’"
 
-#: ../mate-dictionary/src/gdict-window.c:1442
+#: ../mate-dictionary/src/gdict-window.c:1440
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "选中了策略“%s”"
 
-#: ../mate-dictionary/src/gdict-window.c:1462
+#: ../mate-dictionary/src/gdict-window.c:1460
 #, c-format
 msgid "Database `%s' selected"
 msgstr "选中了数据库“%s”"
 
-#: ../mate-dictionary/src/gdict-window.c:1482
+#: ../mate-dictionary/src/gdict-window.c:1480
 #, c-format
 msgid "Word `%s' selected"
 msgstr "选中了单词“%s”"
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1507
+#: ../mate-dictionary/src/gdict-window.c:1505
 msgid "Double-click on the word to look up"
 msgstr "双击您想要查阅的单词"
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1513
+#: ../mate-dictionary/src/gdict-window.c:1511
 msgid "Double-click on the matching strategy to use"
 msgstr "双击您想要使用的策略"
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1518
+#: ../mate-dictionary/src/gdict-window.c:1516
 msgid "Double-click on the source to use"
 msgstr "双击要使用的源"
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1527
+#: ../mate-dictionary/src/gdict-window.c:1525
 msgid "Double-click on the database to use"
 msgstr "双击您想要使用的数据库"
 
-#: ../mate-dictionary/src/gdict-window.c:1702
+#: ../mate-dictionary/src/gdict-window.c:1697
 msgid "Look _up:"
 msgstr "查阅(_U)："
 
-#: ../mate-dictionary/src/gdict-window.c:1777
+#: ../mate-dictionary/src/gdict-window.c:1772
 msgid "Similar words"
 msgstr "相似单词"
 
-#: ../mate-dictionary/src/gdict-window.c:1790
+#: ../mate-dictionary/src/gdict-window.c:1785
 msgid "Available dictionaries"
 msgstr "可用词典"
 
-#: ../mate-dictionary/src/gdict-window.c:1808
+#: ../mate-dictionary/src/gdict-window.c:1803
 msgid "Available strategies"
 msgstr "可用策略"
 
-#: ../mate-dictionary/src/gdict-window.c:1824
+#: ../mate-dictionary/src/gdict-window.c:1819
 msgid "Dictionary sources"
 msgstr "字典源"
 
@@ -3024,7 +3024,7 @@ msgstr "抓取前的延迟(_A)"
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
 #: ../mate-screenshot/src/mate-screenshot.c:500
-#: ../mate-screenshot/src/mate-screenshot.c:1321
+#: ../mate-screenshot/src/mate-screenshot.c:1320
 msgid "seconds"
 msgstr "秒"
 
@@ -3074,58 +3074,58 @@ msgstr "%s 创建的截图.png"
 msgid "Screenshot at %s - %d.png"
 msgstr "%s - %d 创建的截图.png"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1316
+#: ../mate-screenshot/src/mate-screenshot.c:1315
 msgid "Grab a window instead of the entire screen"
 msgstr "抓取窗口，而不是整个屏幕"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1317
+#: ../mate-screenshot/src/mate-screenshot.c:1316
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "抓取屏幕的一个区域，而不是整个屏幕"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1318
+#: ../mate-screenshot/src/mate-screenshot.c:1317
 msgid "Send grabbed area directly to the clipboard"
 msgstr "将抓取区域直接发送到剪贴板"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1319
+#: ../mate-screenshot/src/mate-screenshot.c:1318
 msgid "Include the window border with the screenshot"
 msgstr "抓图中包含窗口边框"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1320
+#: ../mate-screenshot/src/mate-screenshot.c:1319
 msgid "Remove the window border from the screenshot"
 msgstr "去除屏幕截图的窗口边框"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1321
+#: ../mate-screenshot/src/mate-screenshot.c:1320
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "在指定延迟后抓图[以秒计]"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1322
+#: ../mate-screenshot/src/mate-screenshot.c:1321
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "添加到边框的特效(阴影 shadow 、边框 border 或无特效 none)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1322
+#: ../mate-screenshot/src/mate-screenshot.c:1321
 msgid "effect"
 msgstr "效果"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1323
+#: ../mate-screenshot/src/mate-screenshot.c:1322
 msgid "Interactively set options"
 msgstr "交互式设定选项"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1324
+#: ../mate-screenshot/src/mate-screenshot.c:1323
 msgid "Print version information and exit"
 msgstr "显示安装的程序的版本并退出"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1333
+#: ../mate-screenshot/src/mate-screenshot.c:1332
 msgid "Take a picture of the screen"
 msgstr "抓取屏幕的图片"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1356
+#: ../mate-screenshot/src/mate-screenshot.c:1355
 #, c-format
 msgid ""
 "Conflicting options: --clipboard and --interactive should not be used at the"
 " same time.\n"
 msgstr "冲突的选项：-clipboard和--interactive不能同时使用。\n"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1362
+#: ../mate-screenshot/src/mate-screenshot.c:1361
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "

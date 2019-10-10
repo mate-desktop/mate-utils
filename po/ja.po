@@ -18,9 +18,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-24 11:07+0100\n"
+"POT-Creation-Date: 2019-07-06 13:25+0200\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
 "Last-Translator: Aefgh Threenine <aefgh3962@gmail.com>, 2019\n"
 "Language-Team: Japanese (https://www.transifex.com/mate/teams/13566/ja/)\n"
@@ -71,8 +71,8 @@ msgid "S_can Remote Folder..."
 msgstr "リモート・フォルダのスキャン(_C)..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../logview/src/logview-window.c:824
-#: ../mate-dictionary/src/gdict-window.c:1288
+#: ../logview/src/logview-window.c:822
+#: ../mate-dictionary/src/gdict-window.c:1286
 msgid "_Edit"
 msgstr "編集(_E)"
 
@@ -85,8 +85,8 @@ msgid "_Collapse All"
 msgstr "すべて畳む(_C)"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../logview/src/logview-window.c:825
-#: ../mate-dictionary/src/gdict-window.c:1289
+#: ../logview/src/logview-window.c:823
+#: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_View"
 msgstr "表示(_V)"
 
@@ -103,20 +103,20 @@ msgid "All_ocated Space"
 msgstr "使用量の分布(_O)"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../logview/src/logview-window.c:827
+#: ../logview/src/logview-window.c:825
 #: ../mate-dictionary/src/gdict-applet.c:1187
-#: ../mate-dictionary/src/gdict-window.c:1291
+#: ../mate-dictionary/src/gdict-window.c:1289
 msgid "_Help"
 msgstr "ヘルプ(_H)"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../logview/src/logview-window.c:853
-#: ../mate-dictionary/src/gdict-window.c:1341
+#: ../logview/src/logview-window.c:851
+#: ../mate-dictionary/src/gdict-window.c:1339
 msgid "_Contents"
 msgstr "目次(_C)"
 
-#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1241
+#: ../baobab/data/baobab-main-window.ui.h:15 ../baobab/src/baobab.c:1238
 #: ../baobab/src/callbacks.c:107
 msgid "Disk Usage Analyzer"
 msgstr "ディスク使用量の解析"
@@ -246,7 +246,7 @@ msgstr "利用可能:"
 msgid "Calculating percentage bars..."
 msgstr "使用率バーの計算中..."
 
-#: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1305
+#: ../baobab/src/baobab.c:253 ../baobab/src/baobab.c:1302
 #: ../baobab/src/callbacks.c:276
 msgid "Ready"
 msgstr "準備完了です"
@@ -277,47 +277,47 @@ msgstr "監視機能を初期化できませんでした"
 msgid "Changes to your home folder will not be monitored."
 msgstr "ホーム・フォルダに対する変更を監視しません。"
 
-#: ../baobab/src/baobab.c:921
+#: ../baobab/src/baobab.c:916
 msgid "Move to parent folder"
 msgstr "親フォルダへ移動する"
 
-#: ../baobab/src/baobab.c:925
+#: ../baobab/src/baobab.c:920
 msgid "Zoom in"
 msgstr "拡大する"
 
-#: ../baobab/src/baobab.c:929
+#: ../baobab/src/baobab.c:924
 msgid "Zoom out"
 msgstr "縮小する"
 
-#: ../baobab/src/baobab.c:933
+#: ../baobab/src/baobab.c:928
 msgid "Save screenshot"
 msgstr "スクリーンショットの保存"
 
-#: ../baobab/src/baobab.c:1119
+#: ../baobab/src/baobab.c:1114
 msgid "View as Rings Chart"
 msgstr "リング・チャート表示"
 
-#: ../baobab/src/baobab.c:1121
+#: ../baobab/src/baobab.c:1116
 msgid "View as Treemap Chart"
 msgstr "ツリーマップ・チャート表示"
 
-#: ../baobab/src/baobab.c:1230
+#: ../baobab/src/baobab.c:1227
 msgid "Show version"
 msgstr "バージョンを表示"
 
-#: ../baobab/src/baobab.c:1231
+#: ../baobab/src/baobab.c:1228
 msgid "[DIRECTORY]"
 msgstr "[ディレクトリ]"
 
-#: ../baobab/src/baobab.c:1261
+#: ../baobab/src/baobab.c:1258
 msgid "Too many arguments. Only one directory can be specified."
 msgstr "引数が多すぎます。ディレクトリを一つだけ指定可能です。"
 
-#: ../baobab/src/baobab.c:1278
+#: ../baobab/src/baobab.c:1275
 msgid "Could not detect any mount point."
 msgstr "1つもマウントポイントを検出できませんでした"
 
-#: ../baobab/src/baobab.c:1280
+#: ../baobab/src/baobab.c:1277
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr "マウントポイントの無いディスクの容量は解析できません"
 
@@ -345,16 +345,16 @@ msgstr "チャートのルート"
 msgid "Set the root node from the model"
 msgstr "チャートのルートにするフォルダを選択します"
 
-#: ../baobab/src/baobab-chart.c:1714
+#: ../baobab/src/baobab-chart.c:1712
 msgid "Cannot create pixbuf image!"
 msgstr "Pixbuf 画像を生成できません!"
 
 #. Popup the File chooser dialog
-#: ../baobab/src/baobab-chart.c:1724
+#: ../baobab/src/baobab-chart.c:1722
 msgid "Save Snapshot"
 msgstr "スナップショットの保存"
 
-#: ../baobab/src/baobab-chart.c:1751
+#: ../baobab/src/baobab-chart.c:1749
 msgid "_Image type:"
 msgstr "画像の種類(_I):"
 
@@ -423,48 +423,48 @@ msgstr "サーバに接続できません (サーバ名を指定してくださ�
 msgid "Please enter a name and try again."
 msgstr "名前を入力してもう一度実行してください。"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:438
+#: ../baobab/src/baobab-remote-connect-dialog.c:444
 msgid "_Location (URI):"
 msgstr "場所 (URI)(_L):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:454
+#: ../baobab/src/baobab-remote-connect-dialog.c:460
 msgid "_Server:"
 msgstr "サーバ(_S):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:467
+#: ../baobab/src/baobab-remote-connect-dialog.c:473
 msgid "Optional information:"
 msgstr "追加情報:"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:476
+#: ../baobab/src/baobab-remote-connect-dialog.c:482
 msgid "_Share:"
 msgstr "共有する場所(_S):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:491
+#: ../baobab/src/baobab-remote-connect-dialog.c:497
 #: ../mate-dictionary/data/mate-dictionary-source.ui.h:4
 msgid "_Port:"
 msgstr "ポート(_P):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:505
+#: ../baobab/src/baobab-remote-connect-dialog.c:511
 msgid "_Folder:"
 msgstr "フォルダー(_F):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:519
+#: ../baobab/src/baobab-remote-connect-dialog.c:525
 msgid "_User Name:"
 msgstr "ユーザ名(_U):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:534
+#: ../baobab/src/baobab-remote-connect-dialog.c:540
 msgid "_Domain Name:"
 msgstr "ドメイン名(_D):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:595
+#: ../baobab/src/baobab-remote-connect-dialog.c:601
 msgid "Connect to Server"
 msgstr "サーバへの接続"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:611
+#: ../baobab/src/baobab-remote-connect-dialog.c:617
 msgid "Service _type:"
 msgstr "サービスの種類(_T):"
 
-#: ../baobab/src/baobab-remote-connect-dialog.c:729
+#: ../baobab/src/baobab-remote-connect-dialog.c:735
 msgid "_Scan"
 msgstr "スキャン(_S)"
 
@@ -525,34 +525,34 @@ msgid "_Open Folder"
 msgstr "フォルダを開く(_O)"
 
 #: ../baobab/src/baobab-utils.c:368
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1226
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1220
 msgid "Mo_ve to Trash"
 msgstr "ゴミ箱へ移動する(_V)"
 
-#: ../baobab/src/baobab-utils.c:402
+#: ../baobab/src/baobab-utils.c:397
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "\"%s\" と言うフォルダを開けませんでした"
 
-#: ../baobab/src/baobab-utils.c:405
+#: ../baobab/src/baobab-utils.c:400
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr "フォルダを表示する機能を持ったビューアがインストールされていません"
 
-#: ../baobab/src/baobab-utils.c:474
+#: ../baobab/src/baobab-utils.c:467
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr "\"%s\" をゴミ箱に移動できませんでした"
 
-#: ../baobab/src/baobab-utils.c:482
+#: ../baobab/src/baobab-utils.c:475
 msgid "Could not move file to the Trash"
 msgstr "ファイルをゴミ箱に移動できませんでした"
 
-#: ../baobab/src/baobab-utils.c:484
+#: ../baobab/src/baobab-utils.c:477
 #, c-format
 msgid "Details: %s"
 msgstr "詳細: %s"
 
-#: ../baobab/src/baobab-utils.c:522
+#: ../baobab/src/baobab-utils.c:515
 msgid "There was an error displaying help."
 msgstr "ヘルプを表示する際にエラーが発生しました。"
 
@@ -622,8 +622,8 @@ msgstr ""
 "日本GNOMEユーザー会 http://www.gnome.gr.jp/"
 
 #: ../baobab/src/callbacks.c:215
-#: ../gsearchtool/src/gsearchtool-callbacks.c:514
-#: ../gsearchtool/src/gsearchtool-callbacks.c:864
+#: ../gsearchtool/src/gsearchtool-callbacks.c:513
+#: ../gsearchtool/src/gsearchtool-callbacks.c:859
 msgid "The document does not exist."
 msgstr "ドキュメントは存在しません。"
 
@@ -1029,7 +1029,7 @@ msgid "Searching..."
 msgstr "検索中..."
 
 #: ../gsearchtool/src/gsearchtool.c:511 ../gsearchtool/src/gsearchtool.c:1031
-#: ../gsearchtool/src/gsearchtool.c:3062
+#: ../gsearchtool/src/gsearchtool.c:3057
 msgid "Search for Files"
 msgstr "ファイルの検索"
 
@@ -1204,67 +1204,67 @@ msgstr "種類"
 msgid "Date Modified"
 msgstr "変更日時"
 
-#: ../gsearchtool/src/gsearchtool.c:2808
+#: ../gsearchtool/src/gsearchtool.c:2803
 msgid "_Name contains:"
 msgstr "ファイル名が次を含む(_N):"
 
-#: ../gsearchtool/src/gsearchtool.c:2823 ../gsearchtool/src/gsearchtool.c:2824
+#: ../gsearchtool/src/gsearchtool.c:2818 ../gsearchtool/src/gsearchtool.c:2819
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr "ファイル名、またはワイルドカード有り/無しでファイル名の一部を入力してください"
 
-#: ../gsearchtool/src/gsearchtool.c:2824
+#: ../gsearchtool/src/gsearchtool.c:2819
 msgid "Name contains"
 msgstr "対象となる名前"
 
-#: ../gsearchtool/src/gsearchtool.c:2830
+#: ../gsearchtool/src/gsearchtool.c:2825
 msgid "_Look in folder:"
 msgstr "対象となるフォルダ(_L):"
 
-#: ../gsearchtool/src/gsearchtool.c:2836
+#: ../gsearchtool/src/gsearchtool.c:2831
 msgid "Browse"
 msgstr "検索"
 
-#: ../gsearchtool/src/gsearchtool.c:2846
+#: ../gsearchtool/src/gsearchtool.c:2841
 msgid "Look in folder"
 msgstr "対象となるフォルダ"
 
-#: ../gsearchtool/src/gsearchtool.c:2846
+#: ../gsearchtool/src/gsearchtool.c:2841
 msgid "Select the folder or device from which you want to begin the search."
 msgstr "検索を開始したいフォルダまたはデバイスを選択してください"
 
-#: ../gsearchtool/src/gsearchtool.c:2864
+#: ../gsearchtool/src/gsearchtool.c:2859
 msgid "Select more _options"
 msgstr "追加オプションの選択(_O)"
 
-#: ../gsearchtool/src/gsearchtool.c:2873
+#: ../gsearchtool/src/gsearchtool.c:2868
 msgid "Select more options"
 msgstr "もっとたくさんのオプションを選択します"
 
-#: ../gsearchtool/src/gsearchtool.c:2873
+#: ../gsearchtool/src/gsearchtool.c:2868
 msgid "Click to expand or collapse the list of available options."
 msgstr "クリックすると利用可能な検索オプションの一覧を展開または畳みます"
 
-#: ../gsearchtool/src/gsearchtool.c:2904
+#: ../gsearchtool/src/gsearchtool.c:2899
 msgid "Click to display the help manual."
 msgstr "クリックするとヘルプを表示します"
 
-#: ../gsearchtool/src/gsearchtool.c:2917
+#: ../gsearchtool/src/gsearchtool.c:2912
 msgid "Click to close \"Search for Files\"."
 msgstr "クリックすると \"ファイルの検索\" を閉じます"
 
-#: ../gsearchtool/src/gsearchtool.c:2952
+#: ../gsearchtool/src/gsearchtool.c:2947
 msgid "Click to perform a search."
 msgstr "クリックすると検索を実行します"
 
-#: ../gsearchtool/src/gsearchtool.c:2953
+#: ../gsearchtool/src/gsearchtool.c:2948
 msgid "Click to stop a search."
 msgstr "クリックすると検索を停止します"
 
-#: ../gsearchtool/src/gsearchtool.c:3047
+#: ../gsearchtool/src/gsearchtool.c:3042
 msgid "- the MATE Search Tool"
 msgstr "- MATE 向けの検索ツール"
 
-#: ../gsearchtool/src/gsearchtool.c:3056
+#: ../gsearchtool/src/gsearchtool.c:3051
 #, c-format
 msgid "Failed to parse command line arguments: %s\n"
 msgstr "コマンドライン引数の処理に失敗しました: %s\n"
@@ -1280,7 +1280,7 @@ msgid_plural "Are you sure you want to open %d documents?"
 msgstr[0] ""
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:355
-#: ../gsearchtool/src/gsearchtool-callbacks.c:557
+#: ../gsearchtool/src/gsearchtool-callbacks.c:555
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
@@ -1300,113 +1300,113 @@ msgstr "フォルダ \"%s\" を開けませんでした。"
 msgid "The caja file manager is not running."
 msgstr "Caja ファイル・マネージャが実行されていません。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:529
+#: ../gsearchtool/src/gsearchtool-callbacks.c:528
 msgid "There is no installed viewer capable of displaying the document."
 msgstr "ドキュメントを表示するビュワーがインストールされていません。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:552
+#: ../gsearchtool/src/gsearchtool-callbacks.c:550
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
 msgstr[0] ""
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:710
+#: ../gsearchtool/src/gsearchtool-callbacks.c:705
 #, c-format
 msgid "Could not move \"%s\" to trash."
 msgstr "\"%s\" をゴミ箱に移動できませんでした。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:741
+#: ../gsearchtool/src/gsearchtool-callbacks.c:736
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
 msgstr "\"%s\" を完全に削除しますか?"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:744
+#: ../gsearchtool/src/gsearchtool-callbacks.c:739
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
 msgstr "ゴミ箱は利用できません。\"%s\" をゴミ箱へ移動できませんでした。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:788
+#: ../gsearchtool/src/gsearchtool-callbacks.c:783
 #, c-format
 msgid "Could not delete \"%s\"."
 msgstr "\"%s\" を削除できませんでした。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:900
+#: ../gsearchtool/src/gsearchtool-callbacks.c:895
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
 msgstr "\"%s\" の削除に失敗しました: %s"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:912
+#: ../gsearchtool/src/gsearchtool-callbacks.c:907
 #, c-format
 msgid "Moving \"%s\" failed: %s."
 msgstr "\"%s\" の移動に失敗しました: %s 。"
 
 #. Popup menu item: Open
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1040
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1070
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1034
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1064
 msgid "_Open"
 msgstr "開く(_O)"
 
 #. Popup menu item: Open with (default)
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1095
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1089
 #, c-format
 msgid "_Open with %s"
 msgstr "%s で開く(_O)"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1130
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1124
 #, c-format
 msgid "Open with %s"
 msgstr "%s で開く"
 
 #. Popup menu item: Open With
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1163
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1157
 msgid "Open Wit_h"
 msgstr "開く(_H)"
 
 #. Popup menu item: Open Containing Folder
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1208
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1202
 msgid "Open Containing _Folder"
 msgstr "これを含むフォルダーを開く(_F)"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1248
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1242
 msgid "_Save Results As..."
 msgstr "検索結果に名前を付けて保存(_S)"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1633
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1624
 msgid "Save Search Results As..."
 msgstr "検索結果に名前を付けて保存..."
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1662
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1653
 msgid "Could not save document."
 msgstr "ドキュメントを保存できませんでした。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1663
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1654
 msgid "You did not select a document name."
 msgstr "ドキュメントの名前を選択していません。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1693
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1684
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr "ドキュメント \"%s\" を %s へ保存できませんでした。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1726
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1717
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr "ドキュメント \"%s\" は既に存在します。置き換えてもよろしいですか?"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1730
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1721
 msgid "If you replace an existing file, its contents will be overwritten."
 msgstr "既存のファイルを置き換えると、その内容は上書きされます。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1745
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1736
 #: ../mate-screenshot/src/screenshot-xfer.c:82
 msgid "_Replace"
 msgstr "置換(_R)"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1794
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1785
 msgid "The document name you selected is a folder."
 msgstr "指定したドキュメントはフォルダです。"
 
-#: ../gsearchtool/src/gsearchtool-callbacks.c:1830
+#: ../gsearchtool/src/gsearchtool-callbacks.c:1821
 msgid "You may not have write permissions to the document."
 msgstr "そのドキュメントに対する書き込み権限がないようです。"
 
@@ -1633,7 +1633,7 @@ msgstr "効果:"
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
 
-#: ../logview/src/logview-app.c:377
+#: ../logview/src/logview-app.c:376
 #, c-format
 msgid "Impossible to open the file %s"
 msgstr "ファイルを開けません: %s"
@@ -1655,19 +1655,19 @@ msgstr "正規表現が空です!"
 msgid "Regular expression is invalid: %s"
 msgstr "正規表現が正しくありません: %s"
 
-#: ../logview/src/logview-filter-manager.c:242
+#: ../logview/src/logview-filter-manager.c:240
 msgid "Please specify either foreground or background color!"
 msgstr "文字の色あるいは背景色を指定してください!"
 
-#: ../logview/src/logview-filter-manager.c:296
+#: ../logview/src/logview-filter-manager.c:294
 msgid "Edit filter"
 msgstr "フィルタを編集"
 
-#: ../logview/src/logview-filter-manager.c:296
+#: ../logview/src/logview-filter-manager.c:294
 msgid "Add new filter"
 msgstr "新しいフィルタを追加"
 
-#: ../logview/src/logview-filter-manager.c:524
+#: ../logview/src/logview-filter-manager.c:522
 msgid "Filters"
 msgstr "フィルタ"
 
@@ -1695,19 +1695,19 @@ msgstr "ドキュメントの最後に向かって検索します"
 msgid "Clear the search string"
 msgstr "検索する単語をクリアします"
 
-#: ../logview/src/logview-log.c:598
+#: ../logview/src/logview-log.c:593
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
 msgstr "gzip で圧縮されたログの解凍中にエラーが発生しました (ファイルが壊れている可能性あり)"
 
-#: ../logview/src/logview-log.c:645
+#: ../logview/src/logview-log.c:640
 msgid "You don't have enough permissions to read the file."
 msgstr "このファイルを読むための妥当な権限をお持ちではないようです。"
 
-#: ../logview/src/logview-log.c:660
+#: ../logview/src/logview-log.c:655
 msgid "The file is not a regular file or is not a text file."
 msgstr "そのファイルは通常のファイル (テキスト形式) ではないようです。"
 
-#: ../logview/src/logview-log.c:742
+#: ../logview/src/logview-log.c:737
 msgid "This version of System Log does not support GZipped logs."
 msgstr "このバージョンのログ・ビューアは gzip で圧縮したログの閲覧をサポートしていません。"
 
@@ -1731,7 +1731,7 @@ msgstr " - ログの閲覧と監視"
 msgid "Log Viewer"
 msgstr "ログ・ビューア"
 
-#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:773
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:771
 msgid "System Log Viewer"
 msgstr "システム・ログ・ビューア"
 
@@ -1759,167 +1759,167 @@ msgid "Wrapped"
 msgstr "ラップ済"
 
 #: ../logview/src/logview-window.c:493
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1127
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1221
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1255
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1125
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1219
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1253
 msgid "Not found"
 msgstr "見つかりません"
 
-#: ../logview/src/logview-window.c:775
+#: ../logview/src/logview-window.c:773
 msgid "About System Log Viewer"
 msgstr ""
 
-#: ../logview/src/logview-window.c:776
+#: ../logview/src/logview-window.c:774
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
 
-#: ../logview/src/logview-window.c:780
+#: ../logview/src/logview-window.c:778
 msgid "A system log viewer for MATE."
 msgstr "MATE 向けのシステム・ログビューアです。"
 
-#: ../logview/src/logview-window.c:823
-#: ../mate-dictionary/src/gdict-window.c:1287
+#: ../logview/src/logview-window.c:821
+#: ../mate-dictionary/src/gdict-window.c:1285
 msgid "_File"
 msgstr "ファイル(_F)"
 
-#: ../logview/src/logview-window.c:826
+#: ../logview/src/logview-window.c:824
 msgid "_Filters"
 msgstr "フィルタ(_F)"
 
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:827
 msgid "_Open..."
 msgstr "開く(_O).."
 
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:827
 msgid "Open a log from file"
 msgstr "ファイルからログを開きます"
 
-#: ../logview/src/logview-window.c:831
-#: ../mate-dictionary/src/gdict-window.c:1302
+#: ../logview/src/logview-window.c:829
+#: ../mate-dictionary/src/gdict-window.c:1300
 msgid "_Close"
 msgstr "閉じる(_C)"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:829
 msgid "Close this log"
 msgstr "このログを閉じます"
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:831
 msgid "_Quit"
 msgstr "終了 (_Q)"
 
-#: ../logview/src/logview-window.c:833
+#: ../logview/src/logview-window.c:831
 msgid "Quit the log viewer"
 msgstr "ログビューアを終了します"
 
 #. Edit menu
-#: ../logview/src/logview-window.c:836
-#: ../mate-dictionary/src/gdict-window.c:1306
+#: ../logview/src/logview-window.c:834
+#: ../mate-dictionary/src/gdict-window.c:1304
 msgid "_Copy"
 msgstr "コピー(_C)"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:834
 msgid "Copy the selection"
 msgstr "選択部分をコピーします"
 
-#: ../logview/src/logview-window.c:838
-#: ../mate-dictionary/src/gdict-window.c:1308
+#: ../logview/src/logview-window.c:836
+#: ../mate-dictionary/src/gdict-window.c:1306
 msgid "Select _All"
 msgstr "すべて選択(_A)"
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:836
 msgid "Select the entire log"
 msgstr "ログ全体を選択します"
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:838
 msgid "_Find..."
 msgstr "検索(_F)..."
 
-#: ../logview/src/logview-window.c:840
+#: ../logview/src/logview-window.c:838
 msgid "Find a word or phrase in the log"
 msgstr "ログから単語または語句を検索します"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:841
 msgid "Zoom _In"
 msgstr "拡大(_I)"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:841
 msgid "Bigger text size"
 msgstr "文字のサイズを大きくします"
 
-#: ../logview/src/logview-window.c:845
+#: ../logview/src/logview-window.c:843
 msgid "Zoom _Out"
 msgstr "縮小(_O)"
 
-#: ../logview/src/logview-window.c:845
+#: ../logview/src/logview-window.c:843
 msgid "Smaller text size"
 msgstr "文字のサイズを小さくします"
 
-#: ../logview/src/logview-window.c:847
+#: ../logview/src/logview-window.c:845
 msgid "_Normal Size"
 msgstr "元のサイズ(_N)"
 
-#: ../logview/src/logview-window.c:847
+#: ../logview/src/logview-window.c:845
 msgid "Normal text size"
 msgstr "標準の文字サイズにします"
 
-#: ../logview/src/logview-window.c:850
+#: ../logview/src/logview-window.c:848
 msgid "Manage Filters"
 msgstr "フィルタを管理"
 
-#: ../logview/src/logview-window.c:850
+#: ../logview/src/logview-window.c:848
 msgid "Manage filters"
 msgstr "フィルタを管理"
 
-#: ../logview/src/logview-window.c:853
+#: ../logview/src/logview-window.c:851
 msgid "Open the help contents for the log viewer"
 msgstr "ログ・ビューアのヘルプの目次を開きます"
 
-#: ../logview/src/logview-window.c:855
+#: ../logview/src/logview-window.c:853
 #: ../mate-dictionary/src/gdict-applet.c:1190
-#: ../mate-dictionary/src/gdict-window.c:1343
+#: ../mate-dictionary/src/gdict-window.c:1341
 msgid "_About"
 msgstr "情報(_A)"
 
-#: ../logview/src/logview-window.c:855
+#: ../logview/src/logview-window.c:853
 msgid "Show the about dialog for the log viewer"
 msgstr "ログ・ビューアの情報ダイアログを表示します"
 
-#: ../logview/src/logview-window.c:860
+#: ../logview/src/logview-window.c:858
 msgid "_Statusbar"
 msgstr "ステータスバー(_S)"
 
-#: ../logview/src/logview-window.c:860
+#: ../logview/src/logview-window.c:858
 msgid "Show Status Bar"
 msgstr "ステータスバーを表示します"
 
-#: ../logview/src/logview-window.c:862
+#: ../logview/src/logview-window.c:860
 msgid "Side _Pane"
 msgstr "サイドペイン(_P)"
 
-#: ../logview/src/logview-window.c:862
+#: ../logview/src/logview-window.c:860
 msgid "Show Side Pane"
 msgstr "サイドバーを表示します"
 
-#: ../logview/src/logview-window.c:864
+#: ../logview/src/logview-window.c:862
 msgid "Show matches only"
 msgstr "マッチしたもののみ表示"
 
-#: ../logview/src/logview-window.c:864
+#: ../logview/src/logview-window.c:862
 msgid "Only show lines that match one of the given filters"
 msgstr "指定したフィルタの一つにマッチした行だけを表示します"
 
-#: ../logview/src/logview-window.c:996
+#: ../logview/src/logview-window.c:994
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr " \"%s\" から読み取りができません"
 
-#: ../logview/src/logview-window.c:1421
+#: ../logview/src/logview-window.c:1419
 msgid "Version: "
 msgstr "バージョン: "
 
-#: ../logview/src/logview-window.c:1529
+#: ../logview/src/logview-window.c:1527
 msgid "Could not open the following files:"
 msgstr "次のファイルを開けませんでした:"
 
@@ -2041,34 +2041,34 @@ msgstr "状態"
 msgid "The status code as returned by the dictionary server"
 msgstr "辞書サーバが返したステータス・コードです"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:777
+#: ../mate-dictionary/libgdict/gdict-client-context.c:774
 #, c-format
 msgid "No connection to the dictionary server at '%s:%d'"
 msgstr "'%s:%d' に接続している辞書サーバはありません"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1060
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1054
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
 msgstr "ホスト名 '%s' の検索に失敗しました: 適当なリソースが見つかりませんでした"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1091
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1085
 #, c-format
 msgid "Lookup failed for host '%s': %s"
 msgstr "ホスト '%s' の検索に失敗しました: %s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1125
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1119
 #, c-format
 msgid "Lookup failed for host '%s': host not found"
 msgstr "ホスト '%s' の検索に失敗しました: ホストが見つかりませんでした"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1177
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1171
 #, c-format
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
 "with code %d (server down)"
 msgstr "'%s:%d' にある辞書サーバに接続できません。そのサーバがコード %d (サーバがダウン) を返してきました"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1196
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1190
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
@@ -2077,47 +2077,47 @@ msgstr ""
 "辞書サーバの応答を解析できません\n"
 ": '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1225
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1219
 #, c-format
 msgid "No definitions found for '%s'"
 msgstr "'%s' の意味が見つかりませんでした"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1240
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1234
 #, c-format
 msgid "Invalid database '%s'"
 msgstr "データベース '%s' が間違っています"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1255
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1249
 #, c-format
 msgid "Invalid strategy '%s'"
 msgstr "検索ルール '%s' が間違っています"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1270
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1264
 #, c-format
 msgid "Bad command '%s'"
 msgstr "コマンド '%s' が間違っています"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1285
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1279
 #, c-format
 msgid "Bad parameters for command '%s'"
 msgstr "コマンド '%s' の引数が間違っています"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1300
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1294
 #, c-format
 msgid "No databases found on dictionary server at '%s'"
 msgstr "'%s' にある辞書サーバーにデータベースがありませんでした"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1315
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1309
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
 msgstr "'%s' にある辞書サーバに検索ルールがありませんでした"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1740
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1734
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
 msgstr "'%s:%d' にある辞書サーバに接続できませんでした"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1779
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1773
 #, c-format
 msgid ""
 "Error while reading reply from server:\n"
@@ -2126,28 +2126,28 @@ msgstr ""
 "サーバからの応答を解析する際にエラーが発生しました:\n"
 "%s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1852
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1846
 #, c-format
 msgid "Connection timeout for the dictionary server at '%s:%d'"
 msgstr "'%s:%d' の辞書サーバに対する接続がタイムアウトしました"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1886
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1880
 #, c-format
 msgid "No hostname defined for the dictionary server"
 msgstr "辞書サーバのホスト名が定義されていません"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1922
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1937
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1916
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1931
 #, c-format
 msgid "Unable to create socket"
 msgstr "socket(2) を生成できません"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1963
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1957
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
 msgstr "チャンネルにブロック不可の属性を設定できません: %s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1978
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1972
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
 msgstr "'%s:%d' にある辞書サーバに接続できません"
@@ -2174,33 +2174,33 @@ msgstr "利用可能なデータベースの一覧をクリアします"
 msgid "Error while matching"
 msgstr "検索中にエラーが発生しました"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1316
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1314
 msgid "F_ind:"
 msgstr "検索(_I):"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1329
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1327
 msgid "_Previous"
 msgstr "前を検索(_P)"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:1337
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1335
 msgid "_Next"
 msgstr "次を検索(_N)"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2485
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2483
 msgid "Error while looking up definition"
 msgstr "意味を検索する際にエラーが発生しました"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2527
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2525
 #: ../mate-dictionary/libgdict/gdict-speller.c:731
 msgid "Another search is in progress"
 msgstr "他の検索処理が進行中です"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2528
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2526
 #: ../mate-dictionary/libgdict/gdict-speller.c:732
 msgid "Please wait until the current search ends."
 msgstr "現在の検索処理が終了するまで、しばらくお待ちください。"
 
-#: ../mate-dictionary/libgdict/gdict-defbox.c:2567
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2565
 msgid "Error while retrieving the definition"
 msgstr "意味を取得する際にエラーが発生しました"
 
@@ -2297,19 +2297,19 @@ msgstr "辞書 '%s' の変換方法 '%s' が間違っています"
 msgid "Reload the list of available sources"
 msgstr "利用可能な辞書の一覧を更新します"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:171
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:165
 msgid "Paths"
 msgstr "パス名"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:172
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:166
 msgid "Search paths used by this object"
 msgstr "このオブジェクトが使用する検索パスです"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:184
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:178
 msgid "Sources"
 msgstr "辞書"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:185
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:179
 msgid "Dictionary sources found"
 msgstr "見つかった辞書です"
 
@@ -2374,9 +2374,9 @@ msgstr ""
 "へ手紙を書いてください。"
 
 #: ../mate-dictionary/src/gdict-about.c:87
-#: ../mate-dictionary/src/gdict-app.c:371
+#: ../mate-dictionary/src/gdict-app.c:364
 #: ../mate-dictionary/src/gdict-window.c:607
-#: ../mate-dictionary/src/gdict-window.c:1896
+#: ../mate-dictionary/src/gdict-window.c:1891
 msgid "Dictionary"
 msgstr "辞書"
 
@@ -2393,7 +2393,7 @@ msgstr ""
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
 #. * keep the new lines.
-#: ../mate-dictionary/src/gdict-app.c:217
+#: ../mate-dictionary/src/gdict-app.c:210
 #, c-format
 msgid ""
 "Definition for '%s'\n"
@@ -2406,21 +2406,21 @@ msgstr ""
 "\n"
 "%s\n"
 
-#: ../mate-dictionary/src/gdict-app.c:231
+#: ../mate-dictionary/src/gdict-app.c:224
 #, c-format
 msgid "Error: %s\n"
 msgstr "エラー: %s\n"
 
-#: ../mate-dictionary/src/gdict-app.c:257
+#: ../mate-dictionary/src/gdict-app.c:250
 #, c-format
 msgid "See mate-dictionary --help for usage\n"
 msgstr "用法は `mate-dictionary --help` でご覧ください\n"
 
-#: ../mate-dictionary/src/gdict-app.c:270
+#: ../mate-dictionary/src/gdict-app.c:263
 msgid "Unable to find a suitable dictionary source"
 msgstr "妥当な辞書が見つかりません"
 
-#: ../mate-dictionary/src/gdict-app.c:304
+#: ../mate-dictionary/src/gdict-app.c:297
 #, c-format
 msgid ""
 "Error while looking up the definition of \"%s\":\n"
@@ -2429,58 +2429,58 @@ msgstr ""
 "\"%s\" の意味を検索する際にエラーが発生しました:\n"
 "%s"
 
-#: ../mate-dictionary/src/gdict-app.c:333
-#: ../mate-dictionary/src/gdict-app.c:343
+#: ../mate-dictionary/src/gdict-app.c:326
+#: ../mate-dictionary/src/gdict-app.c:336
 msgid "Words to look up"
 msgstr "検索する単語を指定する"
 
-#: ../mate-dictionary/src/gdict-app.c:333
-#: ../mate-dictionary/src/gdict-app.c:335
-#: ../mate-dictionary/src/gdict-app.c:343
+#: ../mate-dictionary/src/gdict-app.c:326
+#: ../mate-dictionary/src/gdict-app.c:328
+#: ../mate-dictionary/src/gdict-app.c:336
 msgid "word"
 msgstr "WORD"
 
-#: ../mate-dictionary/src/gdict-app.c:335
+#: ../mate-dictionary/src/gdict-app.c:328
 msgid "Words to match"
 msgstr "単語そのものを検索する"
 
-#: ../mate-dictionary/src/gdict-app.c:337
+#: ../mate-dictionary/src/gdict-app.c:330
 msgid "Dictionary source to use"
 msgstr "使用する辞書を指定する"
 
-#: ../mate-dictionary/src/gdict-app.c:337
+#: ../mate-dictionary/src/gdict-app.c:330
 msgid "source"
 msgstr "source"
 
-#: ../mate-dictionary/src/gdict-app.c:339
+#: ../mate-dictionary/src/gdict-app.c:332
 msgid "Print result to the console"
 msgstr "検索結果を端末に出力する"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:334
 msgid "Database to use"
 msgstr "使用するデータベースを指定する"
 
-#: ../mate-dictionary/src/gdict-app.c:341
+#: ../mate-dictionary/src/gdict-app.c:334
 msgid "db"
 msgstr "DB"
 
 #. create the new option context
-#: ../mate-dictionary/src/gdict-app.c:353
+#: ../mate-dictionary/src/gdict-app.c:346
 msgid " - Look up words in dictionaries"
 msgstr " - 辞書からいろいろな単語を検索する"
 
 #: ../mate-dictionary/src/gdict-applet.c:206
-#: ../mate-dictionary/src/gdict-window.c:964
+#: ../mate-dictionary/src/gdict-window.c:962
 msgid "Save a Copy"
 msgstr "別名で保存"
 
 #: ../mate-dictionary/src/gdict-applet.c:216
-#: ../mate-dictionary/src/gdict-window.c:974
+#: ../mate-dictionary/src/gdict-window.c:972
 msgid "Untitled document"
 msgstr "編集中のドキュメント"
 
 #: ../mate-dictionary/src/gdict-applet.c:237
-#: ../mate-dictionary/src/gdict-window.c:995
+#: ../mate-dictionary/src/gdict-window.c:993
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "'%s' へ書き込む際にエラーが発生しました"
@@ -2542,14 +2542,14 @@ msgid "Dictionary entry"
 msgstr "辞書のエントリ"
 
 #: ../mate-dictionary/src/gdict-applet.c:717
-#: ../mate-dictionary/src/gdict-window.c:1106
+#: ../mate-dictionary/src/gdict-window.c:1104
 msgid "Dictionary Preferences"
 msgstr "辞書の設定"
 
 #: ../mate-dictionary/src/gdict-applet.c:741
 #: ../mate-dictionary/src/gdict-pref-dialog.c:498
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
-#: ../mate-dictionary/src/gdict-window.c:1253
+#: ../mate-dictionary/src/gdict-window.c:1251
 #, c-format
 msgid "There was an error while displaying help"
 msgstr "ヘルプを表示する際にエラーが発生しました"
@@ -2683,175 +2683,175 @@ msgstr[0] ""
 msgid "%s - Dictionary"
 msgstr "%s - 辞書"
 
-#: ../mate-dictionary/src/gdict-window.c:1290
+#: ../mate-dictionary/src/gdict-window.c:1288
 msgid "_Go"
 msgstr "ジャンプ(_G)"
 
 #. File menu
-#: ../mate-dictionary/src/gdict-window.c:1294
+#: ../mate-dictionary/src/gdict-window.c:1292
 msgid "_New"
 msgstr "新規(_N)"
 
-#: ../mate-dictionary/src/gdict-window.c:1295
+#: ../mate-dictionary/src/gdict-window.c:1293
 msgid "New look up"
 msgstr "新しい検索"
 
-#: ../mate-dictionary/src/gdict-window.c:1296
+#: ../mate-dictionary/src/gdict-window.c:1294
 msgid "_Save a Copy..."
 msgstr "検索結果の保存(_S)..."
 
-#: ../mate-dictionary/src/gdict-window.c:1298
+#: ../mate-dictionary/src/gdict-window.c:1296
 msgid "P_review..."
 msgstr "印刷プレビュー(_R)..."
 
-#: ../mate-dictionary/src/gdict-window.c:1299
+#: ../mate-dictionary/src/gdict-window.c:1297
 msgid "Preview this document"
 msgstr "このドキュメントをプレビュー表示します"
 
-#: ../mate-dictionary/src/gdict-window.c:1300
+#: ../mate-dictionary/src/gdict-window.c:1298
 msgid "_Print..."
 msgstr "印刷(_P)..."
 
-#: ../mate-dictionary/src/gdict-window.c:1301
+#: ../mate-dictionary/src/gdict-window.c:1299
 msgid "Print this document"
 msgstr "このドキュメントを印刷します"
 
-#: ../mate-dictionary/src/gdict-window.c:1310
+#: ../mate-dictionary/src/gdict-window.c:1308
 msgid "_Find"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-window.c:1311
+#: ../mate-dictionary/src/gdict-window.c:1309
 msgid "Find a word or phrase in the document"
 msgstr "このドキュメントの中にある単語や語句を検索します"
 
-#: ../mate-dictionary/src/gdict-window.c:1313
+#: ../mate-dictionary/src/gdict-window.c:1311
 msgid "Find Ne_xt"
 msgstr "次を検索(_X)"
 
-#: ../mate-dictionary/src/gdict-window.c:1315
+#: ../mate-dictionary/src/gdict-window.c:1313
 msgid "Find Pre_vious"
 msgstr "前を検索(_V)"
 
-#: ../mate-dictionary/src/gdict-window.c:1317
+#: ../mate-dictionary/src/gdict-window.c:1315
 msgid "_Preferences"
 msgstr "設定(_P)"
 
 #. Go menu
-#: ../mate-dictionary/src/gdict-window.c:1321
+#: ../mate-dictionary/src/gdict-window.c:1319
 msgid "_Previous Definition"
 msgstr "前の意味へ(_P)"
 
-#: ../mate-dictionary/src/gdict-window.c:1322
+#: ../mate-dictionary/src/gdict-window.c:1320
 msgid "Go to the previous definition"
 msgstr "前の意味にジャンプします"
 
-#: ../mate-dictionary/src/gdict-window.c:1323
+#: ../mate-dictionary/src/gdict-window.c:1321
 msgid "_Next Definition"
 msgstr "次の意味へ(_N)"
 
-#: ../mate-dictionary/src/gdict-window.c:1324
+#: ../mate-dictionary/src/gdict-window.c:1322
 msgid "Go to the next definition"
 msgstr "次の意味へジャンプします"
 
-#: ../mate-dictionary/src/gdict-window.c:1325
+#: ../mate-dictionary/src/gdict-window.c:1323
 msgid "_First Definition"
 msgstr "先頭の意味へ(_F)"
 
-#: ../mate-dictionary/src/gdict-window.c:1326
+#: ../mate-dictionary/src/gdict-window.c:1324
 msgid "Go to the first definition"
 msgstr "先頭の意味へジャンプします"
 
-#: ../mate-dictionary/src/gdict-window.c:1327
+#: ../mate-dictionary/src/gdict-window.c:1325
 msgid "_Last Definition"
 msgstr "最後の意味へ(_L)"
 
-#: ../mate-dictionary/src/gdict-window.c:1328
+#: ../mate-dictionary/src/gdict-window.c:1326
 msgid "Go to the last definition"
 msgstr "最後の意味へジャンプします"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1331
+#: ../mate-dictionary/src/gdict-window.c:1329
 msgid "Similar _Words"
 msgstr "類似語(_W)"
 
-#: ../mate-dictionary/src/gdict-window.c:1333
+#: ../mate-dictionary/src/gdict-window.c:1331
 msgid "Dictionary Sources"
 msgstr "辞書ソース"
 
-#: ../mate-dictionary/src/gdict-window.c:1335
+#: ../mate-dictionary/src/gdict-window.c:1333
 msgid "Available _Databases"
 msgstr "利用可能な辞書の一覧(_D)"
 
-#: ../mate-dictionary/src/gdict-window.c:1337
+#: ../mate-dictionary/src/gdict-window.c:1335
 msgid "Available St_rategies"
 msgstr "利用可能な検索ルールの一覧(_R)"
 
 #. View menu
-#: ../mate-dictionary/src/gdict-window.c:1354
+#: ../mate-dictionary/src/gdict-window.c:1352
 msgid "_Sidebar"
 msgstr "サイドバー(_S)"
 
-#: ../mate-dictionary/src/gdict-window.c:1356
+#: ../mate-dictionary/src/gdict-window.c:1354
 msgid "S_tatusbar"
 msgstr "ステータスバー(_T)"
 
-#: ../mate-dictionary/src/gdict-window.c:1421
+#: ../mate-dictionary/src/gdict-window.c:1419
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "'%s' という辞書を選択しました"
 
-#: ../mate-dictionary/src/gdict-window.c:1442
+#: ../mate-dictionary/src/gdict-window.c:1440
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "'%s' という検索ルールを選択しました"
 
-#: ../mate-dictionary/src/gdict-window.c:1462
+#: ../mate-dictionary/src/gdict-window.c:1460
 #, c-format
 msgid "Database `%s' selected"
 msgstr "'%s' というデータベースを選択しました"
 
-#: ../mate-dictionary/src/gdict-window.c:1482
+#: ../mate-dictionary/src/gdict-window.c:1480
 #, c-format
 msgid "Word `%s' selected"
 msgstr "'%s' という単語を選択しました"
 
 #. speller
-#: ../mate-dictionary/src/gdict-window.c:1507
+#: ../mate-dictionary/src/gdict-window.c:1505
 msgid "Double-click on the word to look up"
 msgstr "単語をダブル・クリックすると検索します"
 
 #. strat-chooser
-#: ../mate-dictionary/src/gdict-window.c:1513
+#: ../mate-dictionary/src/gdict-window.c:1511
 msgid "Double-click on the matching strategy to use"
 msgstr "使用する検索ルールをダブル・クリックしてください"
 
 #. source-chooser
-#: ../mate-dictionary/src/gdict-window.c:1518
+#: ../mate-dictionary/src/gdict-window.c:1516
 msgid "Double-click on the source to use"
 msgstr "使用する辞書をダブル・クリックしてください"
 
 #. db-chooser
-#: ../mate-dictionary/src/gdict-window.c:1527
+#: ../mate-dictionary/src/gdict-window.c:1525
 msgid "Double-click on the database to use"
 msgstr "使用する辞書をダブル・クリックしてください"
 
-#: ../mate-dictionary/src/gdict-window.c:1702
+#: ../mate-dictionary/src/gdict-window.c:1697
 msgid "Look _up:"
 msgstr "検索(_U):"
 
-#: ../mate-dictionary/src/gdict-window.c:1777
+#: ../mate-dictionary/src/gdict-window.c:1772
 msgid "Similar words"
 msgstr "類似語"
 
-#: ../mate-dictionary/src/gdict-window.c:1790
+#: ../mate-dictionary/src/gdict-window.c:1785
 msgid "Available dictionaries"
 msgstr "利用可能な辞書の一覧"
 
-#: ../mate-dictionary/src/gdict-window.c:1808
+#: ../mate-dictionary/src/gdict-window.c:1803
 msgid "Available strategies"
 msgstr "利用可能な検索ルール"
 
-#: ../mate-dictionary/src/gdict-window.c:1824
+#: ../mate-dictionary/src/gdict-window.c:1819
 msgid "Dictionary sources"
 msgstr "辞書のソース"
 
@@ -3026,7 +3026,7 @@ msgstr "取得するまでの待ち時間(_A): "
 #. translators: this is the last part of the "grab after a
 #. * delay of <spin button> seconds".
 #: ../mate-screenshot/src/mate-screenshot.c:500
-#: ../mate-screenshot/src/mate-screenshot.c:1321
+#: ../mate-screenshot/src/mate-screenshot.c:1320
 msgid "seconds"
 msgstr "秒"
 
@@ -3076,58 +3076,58 @@ msgstr "Screenshot at %s.png"
 msgid "Screenshot at %s - %d.png"
 msgstr "Screenshot at %s - %d.png"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1316
+#: ../mate-screenshot/src/mate-screenshot.c:1315
 msgid "Grab a window instead of the entire screen"
 msgstr "画面全体ではなくウィンドウ単体を取得する"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1317
+#: ../mate-screenshot/src/mate-screenshot.c:1316
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "画面全体ではなく一部を取得する"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1318
+#: ../mate-screenshot/src/mate-screenshot.c:1317
 msgid "Send grabbed area directly to the clipboard"
 msgstr ""
 
-#: ../mate-screenshot/src/mate-screenshot.c:1319
+#: ../mate-screenshot/src/mate-screenshot.c:1318
 msgid "Include the window border with the screenshot"
 msgstr "スクリーンショットにウィンドウの境界線を含める"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1320
+#: ../mate-screenshot/src/mate-screenshot.c:1319
 msgid "Remove the window border from the screenshot"
 msgstr "スクリーンショットからウィンドウの境界を取り除く"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1321
+#: ../mate-screenshot/src/mate-screenshot.c:1320
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "指定した時間を経過してからスクリーンショットを撮る [秒単位]"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1322
+#: ../mate-screenshot/src/mate-screenshot.c:1321
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "境界線に適用する画像効果を指定する (shadow, border, none)"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1322
+#: ../mate-screenshot/src/mate-screenshot.c:1321
 msgid "effect"
 msgstr "画像効果"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1323
+#: ../mate-screenshot/src/mate-screenshot.c:1322
 msgid "Interactively set options"
 msgstr "設定ダイアログを表示する"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1324
+#: ../mate-screenshot/src/mate-screenshot.c:1323
 msgid "Print version information and exit"
 msgstr "バージョン情報を表示して終了"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1333
+#: ../mate-screenshot/src/mate-screenshot.c:1332
 msgid "Take a picture of the screen"
 msgstr "画面全体のスクリーンショットを撮る"
 
-#: ../mate-screenshot/src/mate-screenshot.c:1356
+#: ../mate-screenshot/src/mate-screenshot.c:1355
 #, c-format
 msgid ""
 "Conflicting options: --clipboard and --interactive should not be used at the"
 " same time.\n"
 msgstr ""
 
-#: ../mate-screenshot/src/mate-screenshot.c:1362
+#: ../mate-screenshot/src/mate-screenshot.c:1361
 #, c-format
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
