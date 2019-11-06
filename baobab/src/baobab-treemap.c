@@ -53,8 +53,6 @@ struct _BaobabTreemapPrivate
 
 G_DEFINE_TYPE_WITH_PRIVATE (BaobabTreemap, baobab_treemap, BAOBAB_CHART_TYPE);
 
-static void baobab_treemap_class_init (BaobabTreemapClass *class);
-static void baobab_treemap_init (BaobabTreemap *object);
 static void baobab_treemap_draw_rectangle (GtkWidget *chart,
                                            cairo_t *cr,
                                            gdouble x, gdouble y, gdouble width, gdouble height,

@@ -102,8 +102,6 @@ const BaobabChartColor baobab_chart_tango_colors[] = {{0.94, 0.16, 0.16}, /* tan
                                                       {0.91, 0.73, 0.43}, /* tango: e9b96e */
                                                       {0.99, 0.68, 0.25}}; /* tango: fcaf3e */
 
-static void baobab_chart_class_init (BaobabChartClass *class);
-static void baobab_chart_init (BaobabChart *object);
 static void baobab_chart_realize (GtkWidget *widget);
 static void baobab_chart_dispose (GObject *object);
 static void baobab_chart_size_allocate (GtkWidget *widget,

@@ -54,9 +54,6 @@ struct _BaobabRemoteConnectDialogDetails {
 	GtkWidget *user_entry;
 };
 
-static void  baobab_remote_connect_dialog_class_init       (BaobabRemoteConnectDialogClass *class);
-static void  baobab_remote_connect_dialog_init             (BaobabRemoteConnectDialog      *dialog);
-
 G_DEFINE_TYPE(BaobabRemoteConnectDialog, baobab_remote_connect_dialog, GTK_TYPE_DIALOG)
 
 #define RESPONSE_CONNECT GTK_RESPONSE_OK
