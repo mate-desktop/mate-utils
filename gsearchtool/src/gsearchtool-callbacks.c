@@ -47,10 +47,6 @@
 
 #define SILENT_WINDOW_OPEN_LIMIT 5
 
-#ifdef HAVE_GETPGID
-extern pid_t getpgid (pid_t);
-#endif
-
 gboolean row_selected_by_button_press_event;
 
 static void

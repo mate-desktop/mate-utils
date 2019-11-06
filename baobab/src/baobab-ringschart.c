@@ -74,8 +74,6 @@ struct _BaobabRingschartPrivate
 
 G_DEFINE_TYPE_WITH_PRIVATE (BaobabRingschart, baobab_ringschart, BAOBAB_CHART_TYPE);
 
-static void baobab_ringschart_class_init (BaobabRingschartClass *class);
-static void baobab_ringschart_init (BaobabRingschart *object);
 static void baobab_ringschart_draw_sector (cairo_t *cr,
                                            gdouble center_x, gdouble center_y,
                                            gdouble radius, gdouble thickness,
