@@ -181,7 +181,6 @@ screenshot_dialog_new (GdkPixbuf *screenshot,
   GFile *tmp_file;
   GFile *parent_file;
   GError *error = NULL;
-  guint res;
 
   tmp_file = g_file_new_for_uri (initial_uri);
   parent_file = g_file_get_parent (tmp_file);
@@ -194,11 +193,10 @@ screenshot_dialog_new (GdkPixbuf *screenshot,
   dialog = g_new0 (ScreenshotDialog, 1);
 
   dialog->ui = gtk_builder_new ();
-  res = gtk_builder_add_from_file (dialog->ui, UIDIR "/mate-screenshot.ui", &error);
 
   dialog->screenshot = screenshot;
 
-  if (res == 0)
+  if (gtk_builder_add_from_resource (dialog->ui, "/org/mate/screenshot/mate-screenshot.ui", &error) == 0)
     {
       GtkWidget *dialog;
       dialog = gtk_message_dialog_new (NULL, 0,

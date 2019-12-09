@@ -1,7 +1,3 @@
-uidir   = $(datadir)/mate-disk-usage-analyzer
-ui_DATA = baobab-main-window.ui \
-	baobab-dialog-scan-props.ui
-
 baobabappdir = $(datadir)/applications
 baobabapp_in_files = mate-disk-usage-analyzer.desktop.in
 baobabapp_DATA = $(baobabapp_in_files:.desktop.in=.desktop)
@@ -23,10 +19,12 @@ gsettings_SCHEMAS = org.mate.disk-usage-analyzer.gschema.xml
 man_MANS = mate-disk-usage-analyzer.1
 
 EXTRA_DIST = \
-	$(ui_DATA) \
+	baobab-main-window.ui \
+	baobab-dialog-scan-props.ui \
 	mate-disk-usage-analyzer.desktop.in.in \
 	$(appdata_in_files) \
-	$(man_MANS)
+	$(man_MANS) \
+	org.mate.disk-usage-analyzer.gresource.xml
 
 CLEANFILES = \
 	$(baobabapp_in_files) \

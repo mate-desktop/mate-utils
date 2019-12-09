@@ -5,14 +5,18 @@ AM_CPPFLAGS = \
 	-DMATELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"	\
 	-DDATADIR=\""$(datadir)"\"				\
 	-DLOGVIEWINSTALLPREFIX=\""$(prefix)/\""			\
-	-DLOGVIEW_DATADIR=\""$(pkgdatadir)"\"			\
 	$(NULL)
 
 bin_PROGRAMS = mate-system-log
 
 BUILT_SOURCES = 		\
 	logview-marshal.c	\
-	logview-marshal.h
+	logview-marshal.h	\
+	logview-resources.c	\
+	logview-resources.h
+
+nodist_mate_system_log_SOURCES = \
+	$(BUILT_SOURCES)
 
 mate_system_log_SOURCES = 	\
 	logview-app.c		\
@@ -33,11 +37,10 @@ mate_system_log_SOURCES = 	\
 	logview-findbar.c	\
 	logview-prefs.c		\
 	logview-prefs.h		\
-	logview-filter.h       \
-	logview-filter.c       \
-	logview-filter-manager.h       \
-	logview-filter-manager.c  \
-	$(BUILT_SOURCES)
+	logview-filter.h	\
+	logview-filter.c	\
+	logview-filter-manager.h \
+	logview-filter-manager.c
 
 mate_system_log_CFLAGS =	\
 	$(GLIB_CFLAGS)		\
@@ -47,7 +50,7 @@ mate_system_log_CFLAGS =	\
 	$(WARN_CFLAGS)		\
 	$(NULL)
 
-mate_system_log_LDADD =	\
+mate_system_log_LDADD =		\
 	$(GLIB_LIBS)		\
 	$(GIO_LIBS)		\
 	$(GTHREAD_LIBS)		\
@@ -62,9 +65,12 @@ logview-marshal.c: logview-marshal.list $(GLIB_GENMARSHAL)
 	echo "#include \"logview-marshal.h\"" > $@ && \
 	$(GLIB_GENMARSHAL) $< --body --prefix=logview_marshal >> $@
 
+logview-resources.h logview-resources.c: $(srcdir)/../data/org.mate.system-log.gresource.xml Makefile $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies --sourcedir $(srcdir)/../data $(srcdir)/../data/org.mate.system-log.gresource.xml)
+	$(AM_V_GEN) XMLLINT=$(XMLLINT) $(GLIB_COMPILE_RESOURCES) --target $@ --sourcedir $(srcdir)/../data --generate --c-name logview $<
+
 EXTRA_DIST = logview-marshal.list
 
-CLEANFILES = 				\
+CLEANFILES =			\
 	$(BUILT_SOURCES)
 
 dist-hook:

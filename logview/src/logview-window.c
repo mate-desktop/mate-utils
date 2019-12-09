@@ -1311,9 +1311,9 @@ logview_window_init (LogviewWindow *logview)
   accel_group = gtk_ui_manager_get_accel_group (priv->ui_manager);
   gtk_window_add_accel_group (GTK_WINDOW (logview), accel_group);
 
-  res = gtk_ui_manager_add_ui_from_file (priv->ui_manager,
-                                         LOGVIEW_DATADIR "/logview-toolbar.xml",
-                                         &error);
+  res = gtk_ui_manager_add_ui_from_resource (priv->ui_manager,
+                                             "/org/mate/system-log/logview-toolbar.xml",
+                                             &error);
 
   if (res == FALSE) {
     priv->ui_manager = NULL;

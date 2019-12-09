@@ -4,8 +4,6 @@ mate_screenshot_DATA = $(mate_screenshot_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
 man_MANS = mate-screenshot.1
-uidir = $(datadir)/mate-screenshot
-ui_DATA = mate-screenshot.ui
 
 @INTLTOOL_XML_RULE@
 appdatadir = $(datadir)/metainfo
@@ -17,9 +15,10 @@ gsettings_SCHEMAS = org.mate.screenshot.gschema.xml
 
 EXTRA_DIST =					\
 	$(appdata_in_files)			\
-	$(mate_screenshot_in_files)	\
+	$(mate_screenshot_in_files)		\
 	$(man_MANS)				\
-	$(ui_DATA)
+	mate-screenshot.ui			\
+	org.mate.screenshot.gresource.xml
 
 CLEANFILES = \
 	$(gsettings_SCHEMAS)	\

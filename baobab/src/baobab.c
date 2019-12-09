@@ -37,7 +37,7 @@
 #include "baobab-treemap.h"
 #include "baobab-ringschart.h"
 
-#define BAOBAB_UI_FILE PKGDATADIR "/baobab-main-window.ui"
+#define BAOBAB_UI_RESOURCE "/org/mate/disk-usage-analyzer/baobab-main-window.ui"
 
 static void push_iter_in_stack (GtkTreeIter *);
 static GtkTreeIter pop_iter_from_stack (void);
@@ -843,9 +843,7 @@ baobab_init (void)
 
 	/* Load the UI */
 	baobab.main_ui = gtk_builder_new ();
-	gtk_builder_add_from_file (baobab.main_ui, BAOBAB_UI_FILE, &error);
-
-	if (error) {
+	if (gtk_builder_add_from_resource (baobab.main_ui, BAOBAB_UI_RESOURCE, &error) == 0) {
 		g_object_unref (baobab.main_ui);
 		g_critical ("Unable to load the user interface file: %s", error->message);
 		g_error_free (error);
