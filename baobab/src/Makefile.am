@@ -5,13 +5,19 @@ AM_CPPFLAGS = \
 	-DSYSCONFDIR=\""$(sysconfdir)"\" \
 	-DLIBDIR=\""$(libdir)"\" \
 	-DDATADIR=\""$(datadir)"\" \
-	-DPKGDATADIR=\""$(datadir)/mate-disk-usage-analyzer"\" \
 	-DBAOBAB_PIX_DIR=\""$(datadir)/mate-disk-usage-analyzer/pixmaps/"\" \
 	-DMATELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
 	$(NULL)
 
 bin_PROGRAMS = mate-disk-usage-analyzer
 
+BUILT_SOURCES = baobab-resources.h baobab-resources.c
+
+baobab-resources.h baobab-resources.c: $(srcdir)/../data/org.mate.disk-usage-analyzer.gresource.xml Makefile $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies --sourcedir $(srcdir)/../data $(srcdir)/../data/org.mate.disk-usage-analyzer.gresource.xml)
+	$(AM_V_GEN) XMLLINT=$(XMLLINT) $(GLIB_COMPILE_RESOURCES) --target $@ --sourcedir $(srcdir)/../data --generate --c-name baobab $<
+
+nodist_mate_disk_usage_analyzer_SOURCES = \
+	$(BUILT_SOURCES)
 mate_disk_usage_analyzer_SOURCES = \
 	baobab.c \
 	baobab.h \
@@ -52,3 +58,5 @@ mate_disk_usage_analyzer_LDADD = \
 	$(GTK_LIBS) \
 	$(LIBGTOP_LIBS) \
 	$(NULL)
+
+CLEANFILES = $(BUILT_SOURCES)

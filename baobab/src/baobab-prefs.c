@@ -34,7 +34,7 @@
 #include "baobab-utils.h"
 #include "baobab-prefs.h"
 
-#define BAOBAB_PREFERENCES_UI_FILE PKGDATADIR "/baobab-dialog-scan-props.ui"
+#define BAOBAB_PREFERENCES_UI_RESOURCE "/org/mate/disk-usage-analyzer/baobab-dialog-scan-props.ui"
 
 enum
 {
@@ -284,12 +284,9 @@ baobab_prefs_dialog (void)
 	GError *error = NULL;
 
 	builder = gtk_builder_new ();
-	gtk_builder_add_from_file (builder,
-				   BAOBAB_PREFERENCES_UI_FILE,
-				   &error);
 
-	if (error) {
-		g_critical ("Can't load user interface file for the scan properties dialog: %s",
+	if (gtk_builder_add_from_resource (builder, BAOBAB_PREFERENCES_UI_RESOURCE, &error) == 0) {
+		g_critical ("Can't load user interface resource for the scan properties dialog: %s",
 			    error->message);
 		g_object_unref (builder);
 		g_error_free (error);

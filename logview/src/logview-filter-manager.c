@@ -27,7 +27,7 @@
 #include <string.h>
 #include <glib/gi18n.h>
 
-#define UI_FILE LOGVIEW_DATADIR "/logview-filter.ui"
+#define UI_RESOURCE "/org/mate/system-log/logview-filter.ui"
 
 struct _LogviewFilterManagerPrivate {
   GtkWidget *tree;
@@ -280,9 +280,7 @@ run_add_edit_dialog (LogviewFilterManager *manager, LogviewFilter *filter)
   error = NULL;
   name = NULL;
 
-  gtk_builder_add_from_file (builder, UI_FILE, &error);
-
-  if (error) {
+  if (gtk_builder_add_from_resource (builder, UI_RESOURCE, &error) == 0) {
     g_warning ("Could not load filter ui: %s", error->message);
     g_error_free (error);
     return;

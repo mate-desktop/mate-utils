@@ -1,8 +1,5 @@
 SUBDIRS=icons
 
-xmldir = $(pkgdatadir)
-xml_DATA = logview-toolbar.xml logview-filter.ui
-
 desktopdir = $(datadir)/applications
 desktop_in_files = mate-system-log.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
@@ -19,9 +16,11 @@ gsettings_SCHEMAS = org.mate.system-log.gschema.xml
 @GSETTINGS_RULES@
 
 EXTRA_DIST = 			\
+	logview-filter.ui	\
+	logview-toolbar.xml	\
 	mate-system-log.desktop.in.in	\
-	$(xml_DATA)		\
-	$(man_MANS)
+	$(man_MANS)		\
+	org.mate.system-log.gresource.xml
 
 DISTCLEANFILES =		\
 	$(desktop_DATA)		\
