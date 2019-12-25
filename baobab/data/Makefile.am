@@ -5,13 +5,14 @@ baobabapp_DATA = $(baobabapp_in_files:.desktop.in=.desktop)
 $(baobabapp_in_files): $(baobabapp_in_files:.desktop.in=.desktop.in.in)
 	sed -e "s|\@VERSION\@|@VERSION@|" $< > $@
 
-@INTLTOOL_DESKTOP_RULE@
+$(baobabapp_DATA): $(baobabapp_in_files)
+	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
 
-
-@INTLTOOL_XML_RULE@
 appdatadir = $(datadir)/metainfo
 appdata_in_files = mate-disk-usage-analyzer.appdata.xml.in
 appdata_DATA = $(appdata_in_files:.xml.in=.xml)
+$(appdata_DATA): $(appdata_in_files)
+	$(AM_V_GEN) $(MSGFMT) --xml --template $< -d $(top_srcdir)/po -o $@
 
 gsettings_SCHEMAS = org.mate.disk-usage-analyzer.gschema.xml
 @GSETTINGS_RULES@
