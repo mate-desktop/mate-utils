@@ -7,18 +7,19 @@
 # Oleh, 2018
 # zubr139, 2018
 # Шаповалов Анатолій Романович <elrond.716.smith@gmail.com>, 2018
-# Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# dsafsadf <heneral@gmail.com>, 2019
+# Stefano Karapetsas <stefano@karapetsas.com>, 2019
+# Vlad - <priv4417@gmail.com>, 2019
 # Микола Ткач <chistomov@gmail.com>, 2019
+# ZenWalker <scow@riseup.net>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-06 13:25+0200\n"
+"POT-Creation-Date: 2019-10-10 20:09+0200\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: Микола Ткач <chistomov@gmail.com>, 2019\n"
+"Last-Translator: ZenWalker <scow@riseup.net>, 2019\n"
 "Language-Team: Ukrainian (https://www.transifex.com/mate/teams/13566/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -67,7 +68,7 @@ msgid "S_can Remote Folder..."
 msgstr "Сканувати _віддалену теку..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../logview/src/logview-window.c:822
+#: ../logview/src/logview-window.c:819
 #: ../mate-dictionary/src/gdict-window.c:1286
 msgid "_Edit"
 msgstr "_Зміни"
@@ -81,7 +82,7 @@ msgid "_Collapse All"
 msgstr "З_горути усе"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../logview/src/logview-window.c:823
+#: ../logview/src/logview-window.c:820
 #: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_View"
 msgstr "_Перегляд"
@@ -99,15 +100,15 @@ msgid "All_ocated Space"
 msgstr "Зайнятий _простір"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../logview/src/logview-window.c:825
-#: ../mate-dictionary/src/gdict-applet.c:1187
+#: ../logview/src/logview-window.c:822
+#: ../mate-dictionary/src/gdict-applet.c:1183
 #: ../mate-dictionary/src/gdict-window.c:1289
 msgid "_Help"
 msgstr "_Допомога"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../logview/src/logview-window.c:851
+#: ../logview/src/logview-window.c:848
 #: ../mate-dictionary/src/gdict-window.c:1339
 msgid "_Contents"
 msgstr "_Зміст"
@@ -221,8 +222,8 @@ msgstr ""
 "<p> Як випливає з назви, Аналізатор Використання Диску це графічний засіб, "
 "який дає змогу переглядати та контролювати використання дискового простору і"
 " структуру тек. Він показує зведену інформацію у кільцевих або TreeMap "
-"діяграмах..  </p> <p> Ви можете виконувати сканування файлової системи, "
-"Вашої Домашньої директорії або будь-якої иньшої теки - локальної чи "
+"діаграмах..  </p> <p> Ви можете виконувати сканування файлової системи, "
+"Вашої Домашньої директорії або будь-якої иншої теки - локальної чи "
 "віддаленої. Існує також можливість постійно відстежувати будь-які зовнішні "
 "зміни у домашній директорії і попереджувати користувача, якщо файл "
 "додається/вилучається. </p>"
@@ -297,11 +298,11 @@ msgstr "Зменшити"
 
 #: ../baobab/src/baobab.c:928
 msgid "Save screenshot"
-msgstr "Зберегти знімок екрану"
+msgstr "Зберегти зняток екрану"
 
 #: ../baobab/src/baobab.c:1114
 msgid "View as Rings Chart"
-msgstr "Показати у вигляді кругової діяграми"
+msgstr "Показати у вигляді кругової діаграми"
 
 #: ../baobab/src/baobab.c:1116
 msgid "View as Treemap Chart"
@@ -327,40 +328,40 @@ msgstr "Не вдається визначити точку монтування
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr "Неможливо проаналізувати використання диску без точки монтування."
 
-#: ../baobab/src/baobab-chart.c:209
+#: ../baobab/src/baobab-chart.c:205
 msgid "Maximum depth"
 msgstr "Щонайбільша глибина"
 
-#: ../baobab/src/baobab-chart.c:210
+#: ../baobab/src/baobab-chart.c:206
 msgid "The maximum depth drawn in the chart from the root"
 msgstr "Щонайбільша глибина кілець, що відображаються у діаграмі від кореню"
 
-#: ../baobab/src/baobab-chart.c:219
+#: ../baobab/src/baobab-chart.c:215
 msgid "Chart model"
 msgstr "Модель діаграми"
 
-#: ../baobab/src/baobab-chart.c:220
+#: ../baobab/src/baobab-chart.c:216
 msgid "Set the model of the chart"
 msgstr "Встановити модель діаграми"
 
-#: ../baobab/src/baobab-chart.c:227
+#: ../baobab/src/baobab-chart.c:223
 msgid "Chart root node"
 msgstr "Кореневий вузол діаграми"
 
-#: ../baobab/src/baobab-chart.c:228
+#: ../baobab/src/baobab-chart.c:224
 msgid "Set the root node from the model"
-msgstr "Встановити кореневий вузол діяграми"
+msgstr "Встановити кореневий вузол діаграми"
 
-#: ../baobab/src/baobab-chart.c:1712
+#: ../baobab/src/baobab-chart.c:1706
 msgid "Cannot create pixbuf image!"
 msgstr "Не вдається створити растрове зображення!"
 
 #. Popup the File chooser dialog
-#: ../baobab/src/baobab-chart.c:1722
+#: ../baobab/src/baobab-chart.c:1716
 msgid "Save Snapshot"
 msgstr "Зберегти зняток екрану"
 
-#: ../baobab/src/baobab-chart.c:1749
+#: ../baobab/src/baobab-chart.c:1743
 msgid "_Image type:"
 msgstr "Тип _зображення:"
 
@@ -544,7 +545,7 @@ msgstr "Не вдається відкрити теку \"%s\""
 
 #: ../baobab/src/baobab-utils.c:400
 msgid "There is no installed viewer capable of displaying the folder."
-msgstr "Немає проґрами відображення здатної відобразити цю теку."
+msgstr "Немає програми відображення здатної відобразити цю теку."
 
 #: ../baobab/src/baobab-utils.c:467
 #, c-format
@@ -577,9 +578,9 @@ msgid ""
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
-"Ця проґрама є вільним проґрамним забезпеченням. Ви можете поширювати та/або "
+"Ця програма є вільним програмним забезпеченням. Ви можете поширювати та/або "
 "змінювати її, відповідно до умов Загальної ліцензії GNU (GNU General Public "
-"License), яка оголошена Фундацією вільного проґрамного забезпечення (Free "
+"License), яка оголошена Фундацією вільного програмного забезпечення (Free "
 "Software Foundation) під версією 2 або новішою (на Ваш розсуд)."
 
 #: ../baobab/src/callbacks.c:87 ../logview/src/logview-about.h:54
@@ -590,7 +591,7 @@ msgid ""
 "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
 "more details."
 msgstr ""
-"Ця проґрама поширюється зі сподіванням на те, що може бути корисною, однак "
+"Ця програма поширюється зі сподіванням на те, що може бути корисною, однак "
 "БЕЗ ЖОДНИХ ЗАПОРУК; навіть без ймовірної запоруки про МОЖЛИВІСТЬ ПРОДАЖУ чи "
 "ВІДПОВІДНІСТЬ ВИРІШЕННЯ ПОСТАВЛЕНИХ ЗАВДАНЬ. Для уточнення деталей "
 "зверніться до Загальної ліцензії GNU (GNU General Public License)."
@@ -601,6 +602,10 @@ msgid ""
 " this program; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA."
 msgstr ""
+"Ви повинні були отримати копію Генеральної публічної ліцензії GNU разом із "
+"цією програмою; якщо ні, пишіть у Фундацію вільного програмного "
+"забезпечення, Inc., Франклін Стріт, 51, П'ятий поверх, Бостон, MA "
+"02110-1301, США."
 
 #: ../baobab/src/callbacks.c:109
 msgid "About Disk Usage Analyzer"
@@ -615,6 +620,8 @@ msgid ""
 "Copyright © 2005-2010 Fabio Marzocca\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
+"Авторське право © 2005-2010 Фабіо Марзокка\n"
+"Авторське право © 2011-2019 Розробники MATE"
 
 #. translator credits
 #: ../baobab/src/callbacks.c:117 ../logview/src/logview-about.h:64
@@ -683,7 +690,7 @@ msgid ""
 "command when performing simple file name searches."
 msgstr ""
 "Цей ключ визначає, чи забороняє знаряддя пошуку використання команди locate "
-"для прискорення пошуку."
+"для пришвидшення пошуку."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:6
 msgid "Quick Search Excluded Paths"
@@ -708,7 +715,7 @@ msgid ""
 "This key determines if the search tool disables the use of the find command "
 "after performing a quick search."
 msgstr ""
-"Цей ключ визначає чи забороняє проґрама пошуку використання проґрами find "
+"Цей ключ визначає чи забороняє програма пошуку використання програми find "
 "для прискорення пошуку."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:10
@@ -723,7 +730,7 @@ msgid ""
 "not been indexed. The wildcards '*' and '?' are supported. The default value"
 " is /."
 msgstr ""
-"Цей ключ визначає шляхи, які проґрама пошуку буде виключати при другому "
+"Цей ключ визначає шляхи, які програма пошуку буде виключати при другому "
 "проході. Другий прохід використовує команду \"find\" для пошуку файлів. Мета"
 " другого проходу - знайти файли, які не були проіндексовані. Підтримуються "
 "шаблони '*' и '?'. Типові значення - /."
@@ -770,12 +777,12 @@ msgstr ""
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:18
 msgid "Default Window Maximized"
-msgstr "Типовий стан мінімізації вікна"
+msgstr "Типовий стан унайменшення вікна"
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:19
 msgid ""
 "This key determines if the search tool window starts in a maximized state."
-msgstr "Цей ключ визначає чи проґрама запускається у розгорнутому стані."
+msgstr "Цей ключ визначає чи програма запускається у розгорнутому стані."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:20
 msgid "Look in Folder"
@@ -791,7 +798,7 @@ msgid ""
 "when the search tool is started."
 msgstr ""
 "Цей ключ визначає чи буде вибрано параметр \"Містить текст\" при запуску "
-"проґрами пошуку."
+"програми пошуку."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:23
 msgid ""
@@ -799,7 +806,7 @@ msgid ""
 "selected when the search tool is started."
 msgstr ""
 "Цей ключ визначає чи буде вибрано параметр \"Дата останньої зміни менша за\""
-" при запуску проґрами пошуку."
+" при запуску програми пошуку."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:24
 msgid ""
@@ -807,7 +814,7 @@ msgid ""
 "selected when the search tool is started."
 msgstr ""
 "Цей ключ визначає чи буде вибрано параметр \"Дата останньої зміни більша "
-"за\" при запуску проґрами пошуку."
+"за\" при запуску програми пошуку."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:25
 msgid ""
@@ -815,7 +822,7 @@ msgid ""
 "the search tool is started."
 msgstr ""
 "Цей ключ визначає чи буде вибрано параметр \"Розмір принаймні\" при запуску "
-"проґрами пошуку."
+"програми пошуку."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:26
 msgid ""
@@ -823,7 +830,7 @@ msgid ""
 "the search tool is started."
 msgstr ""
 "Цей ключ визначає чи буде вибрано параметр \"Розмір не більше\" при запуску "
-"проґрами пошуку."
+"програми пошуку."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:27
 msgid ""
@@ -831,7 +838,7 @@ msgid ""
 "the search tool is started."
 msgstr ""
 "Цей ключ визначає чи буде вибрано параметр \"Файл порожній\" при запуску "
-"проґрами пошуку."
+"програми пошуку."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:28
 msgid ""
@@ -839,7 +846,7 @@ msgid ""
 "the search tool is started."
 msgstr ""
 "Цей ключ визначає чи буде вибрано параметр \"Належить користувачу\" при "
-"запуску проґрами пошуку."
+"запуску програми пошуку."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:29
 msgid ""
@@ -847,7 +854,7 @@ msgid ""
 " the search tool is started."
 msgstr ""
 "Цей ключ визначає чи буде вибрано параметр \"Належить групі\" при запуску "
-"проґрами пошуку."
+"програми пошуку."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:30
 msgid ""
@@ -855,7 +862,7 @@ msgid ""
 "selected when the search tool is started."
 msgstr ""
 "Цей ключ визначає чи буде вибрано параметр \"Власник невідомий\" при запуску"
-" проґрами пошуку."
+" програми пошуку."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:31
 msgid ""
@@ -863,7 +870,7 @@ msgid ""
 "selected when the search tool is started."
 msgstr ""
 "Цей ключ визначає чи буде вибрано параметр \"Назва не містить\" при запуску "
-"проґрами пошуку."
+"програми пошуку."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:32
 msgid ""
@@ -871,7 +878,7 @@ msgid ""
 " is selected when the search tool is started."
 msgstr ""
 "Цей ключ визначає чи буде вибрано параметр \"Назва відповідає регулярному "
-"виразу\" при запуску проґрами пошуку."
+"виразу\" при запуску програми пошуку."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:33
 msgid ""
@@ -879,7 +886,7 @@ msgid ""
 "is selected when the search tool is started."
 msgstr ""
 "Цей ключ визначає чи буде вибрано параметр \"Показувати приховані файли та "
-"резервні копії файлів\" при запуску проґрами пошуку."
+"резервні копії файлів\" при запуску програми пошуку."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:34
 msgid ""
@@ -887,15 +894,15 @@ msgid ""
 "selected when the search tool is started."
 msgstr ""
 "Цей ключ визначає чи буде вибрано параметр \"Переходити за символічними "
-"посиланнями\" при запуску проґрами пошуку."
+"посиланнями\" при запуску програми пошуку."
 
 #: ../gsearchtool/data/org.mate.search-tool.gschema.xml.in.h:35
 msgid ""
 "This key determines if the \"Exclude other filesystems\" search option is "
 "selected when the search tool is started."
 msgstr ""
-"Цей ключ визначає чи буде вибрано параметр \"Не шукати на иньших файлових "
-"системах\" при запуску проґрами пошуку."
+"Цей ключ визначає чи буде вибрано параметр \"Не шукати на инших файлових "
+"системах\" при запуску програми пошуку."
 
 #: ../gsearchtool/libeggsmclient/eggdesktopfile.c:165
 #, c-format
@@ -915,7 +922,7 @@ msgstr "Запускаю '%s'"
 #: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1098
 #, c-format
 msgid "Application does not accept documents on command line"
-msgstr "Проґрама не може приймати документи з командного рядка"
+msgstr "Програма не може приймати документи з командного рядка"
 
 #: ../gsearchtool/libeggsmclient/eggdesktopfile.c:1166
 #, c-format
@@ -934,7 +941,7 @@ msgstr "Елемент не запускається"
 
 #: ../gsearchtool/libeggsmclient/eggsmclient.c:221
 msgid "Disable connection to session manager"
-msgstr "Заборонити під’єднання до керівника сеансами"
+msgstr "Заборонити під’єднання до керівника сеансів"
 
 #: ../gsearchtool/libeggsmclient/eggsmclient.c:224
 msgid "Specify file containing saved configuration"
@@ -1022,11 +1029,11 @@ msgstr "Переходити за символічними посиланням�
 
 #: ../gsearchtool/src/gsearchtool.c:100
 msgid "Exclude other filesystems"
-msgstr "Не шукати на иньших файлових системах"
+msgstr "Не шукати на инших файлових системах"
 
 #: ../gsearchtool/src/gsearchtool.c:158
 msgid "Show version of the application"
-msgstr "Вивести версію проґрами"
+msgstr "Вивести версію програми"
 
 #: ../gsearchtool/src/gsearchtool.c:159 ../gsearchtool/src/gsearchtool.c:164
 #: ../gsearchtool/src/gsearchtool.c:173
@@ -1059,7 +1066,7 @@ msgstr "ГРУПА"
 
 #: ../gsearchtool/src/gsearchtool.c:174
 msgid "PATTERN"
-msgstr "ШАБЛЬОН"
+msgstr "ШАБЛОН"
 
 #: ../gsearchtool/src/gsearchtool.c:385
 msgid "A locate database has probably not been created."
@@ -1146,7 +1153,7 @@ msgstr "Встановлювати параметр пошуку \"%s\""
 
 #: ../gsearchtool/src/gsearchtool.c:1428
 msgid "Invalid option passed to sortby command line argument."
-msgstr "У аргументі sortby передано неправильний параметр."
+msgstr "У арґументі sortby передано неправильний параметр."
 
 #: ../gsearchtool/src/gsearchtool.c:1720
 msgid ""
@@ -1166,7 +1173,7 @@ msgstr ""
 
 #: ../gsearchtool/src/gsearchtool.c:1746 ../gsearchtool/src/gsearchtool.c:1790
 msgid "Show more _details"
-msgstr "Показати _подробиці"
+msgstr "Показати _докладно"
 
 #: ../gsearchtool/src/gsearchtool.c:1776
 msgid ""
@@ -1249,7 +1256,7 @@ msgid "List View"
 msgstr "Перегляд переліку"
 
 #: ../gsearchtool/src/gsearchtool.c:2412
-#: ../mate-dictionary/libgdict/gdict-source.c:246
+#: ../mate-dictionary/libgdict/gdict-source.c:243
 msgid "Name"
 msgstr "Назва"
 
@@ -1361,11 +1368,11 @@ msgstr "Не вдається відкрити теку \"%s\""
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:437
 msgid "The caja file manager is not running."
-msgstr "Керівник файлами caja не запущений."
+msgstr "Упорядник файлів caja не запущений."
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:528
 msgid "There is no installed viewer capable of displaying the document."
-msgstr "Немає проґрами відображення здатної відобразити документ."
+msgstr "Немає програми відображення здатної відобразити документ."
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:550
 #, c-format
@@ -1416,17 +1423,17 @@ msgstr "_Відкрити"
 #: ../gsearchtool/src/gsearchtool-callbacks.c:1089
 #, c-format
 msgid "_Open with %s"
-msgstr "Відкрити _у проґрамі %s"
+msgstr "Відкрити _у програмі %s"
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:1124
 #, c-format
 msgid "Open with %s"
-msgstr "Відкрити у проґрамі %s"
+msgstr "Відкрити у програмі %s"
 
 #. Popup menu item: Open With
 #: ../gsearchtool/src/gsearchtool-callbacks.c:1157
 msgid "Open Wit_h"
-msgstr "Відкрити у п_роґрамі"
+msgstr "Відкрити у п_рограмі"
 
 #. Popup menu item: Open Containing Folder
 #: ../gsearchtool/src/gsearchtool-callbacks.c:1202
@@ -1461,7 +1468,7 @@ msgstr "Документ \"%s\" вже існує. Бажаєте його за�
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:1721
 msgid "If you replace an existing file, its contents will be overwritten."
-msgstr "Якщо Ви заміните існуючий файл, його вміст буде втрачено."
+msgstr "Якщо Ви заміните наявний файл, його вміст буде втрачено."
 
 #: ../gsearchtool/src/gsearchtool-callbacks.c:1736
 #: ../mate-screenshot/src/screenshot-xfer.c:82
@@ -1553,7 +1560,7 @@ msgstr "%s (копія)%s"
 #: ../gsearchtool/src/gsearchtool-support.c:1295
 #, c-format
 msgid "%s (another copy)%s"
-msgstr "%s (иньша копія)%s"
+msgstr "%s (инша копія)%s"
 
 #. localizers: appended to x11th file copy
 #. localizers: appended to x12th file copy
@@ -1647,7 +1654,7 @@ msgstr "Ширина у точках головного вікна"
 
 #: ../logview/data/org.mate.system-log.gschema.xml.in.h:8
 msgid "Specifies the width of the log viewer main window in pixels."
-msgstr "Вказує у точках ширину вікна проґрами перегляду журналу."
+msgstr "Вказує у точках ширину вікна програми перегляду журналу."
 
 #: ../logview/data/org.mate.system-log.gschema.xml.in.h:9
 msgid "Log files to open up on startup"
@@ -1700,94 +1707,100 @@ msgstr "Ефект:"
 
 #: ../logview/src/logview-about.h:42 ../mate-dictionary/src/gdict-about.c:49
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
-msgstr ""
+msgstr "Sun GNOME Команда документування"
 
-#: ../logview/src/logview-app.c:376
+#: ../logview/src/logview-app.c:371
 #, c-format
 msgid "Impossible to open the file %s"
 msgstr "Не вдається відкрити файл %s"
 
-#: ../logview/src/logview-filter-manager.c:94
+#: ../logview/src/logview-filter-manager.c:91
 msgid "Filter name is empty!"
 msgstr "Ім'я фільтру порожнє!"
 
-#: ../logview/src/logview-filter-manager.c:107
+#: ../logview/src/logview-filter-manager.c:104
 msgid "Filter name may not contain the ':' character"
 msgstr "Фільтр не може містити символ двокрапки"
 
-#: ../logview/src/logview-filter-manager.c:130
+#: ../logview/src/logview-filter-manager.c:127
 msgid "Regular expression is empty!"
 msgstr "Регулярний вираз порожній!"
 
-#: ../logview/src/logview-filter-manager.c:146
+#: ../logview/src/logview-filter-manager.c:143
 #, c-format
 msgid "Regular expression is invalid: %s"
 msgstr "Неправильний регулярний вираз: %s"
 
-#: ../logview/src/logview-filter-manager.c:240
+#: ../logview/src/logview-filter-manager.c:237
 msgid "Please specify either foreground or background color!"
 msgstr "Вкажіть будь-ласка або колір тексту або тла!"
 
-#: ../logview/src/logview-filter-manager.c:294
+#: ../logview/src/logview-filter-manager.c:291
 msgid "Edit filter"
 msgstr "Редагувати фільтр"
 
-#: ../logview/src/logview-filter-manager.c:294
+#: ../logview/src/logview-filter-manager.c:291
 msgid "Add new filter"
 msgstr "Додати новий фільтр"
 
-#: ../logview/src/logview-filter-manager.c:522
+#: ../logview/src/logview-filter-manager.c:519
 msgid "Filters"
 msgstr "_Фільтри"
 
-#: ../logview/src/logview-findbar.c:172
+#: ../logview/src/logview-findbar.c:169
 msgid "_Find:"
 msgstr "З_найти:"
 
-#: ../logview/src/logview-findbar.c:187
+#: ../logview/src/logview-findbar.c:184
 msgid "Find Previous"
 msgstr "Знайти попереднє"
 
-#: ../logview/src/logview-findbar.c:190
+#: ../logview/src/logview-findbar.c:187
 msgid "Find previous occurrence of the search string"
 msgstr "Знайти попередній примірник рядка пошуку"
 
-#: ../logview/src/logview-findbar.c:195
+#: ../logview/src/logview-findbar.c:192
 msgid "Find Next"
 msgstr "Знайти наступне"
 
-#: ../logview/src/logview-findbar.c:198
+#: ../logview/src/logview-findbar.c:195
 msgid "Find next occurrence of the search string"
 msgstr "Знайти наступний примірник рядка пошуку"
 
-#: ../logview/src/logview-findbar.c:205
+#: ../logview/src/logview-findbar.c:202
 msgid "Clear the search string"
 msgstr "Очистити рядок пошуку"
 
-#: ../logview/src/logview-log.c:593
+#: ../logview/src/logview-log.c:588
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
 msgstr ""
 "Помилка при розпакуванні журналу запакованого GZip. Можливо файл пошкоджено."
 
-#: ../logview/src/logview-log.c:640
+#: ../logview/src/logview-log.c:635
 msgid "You don't have enough permissions to read the file."
 msgstr "Бракує прав для читання файлу."
 
-#: ../logview/src/logview-log.c:655
+#: ../logview/src/logview-log.c:650
 msgid "The file is not a regular file or is not a text file."
 msgstr "Файл не є ані звичайним ані текстовим файлом."
 
-#: ../logview/src/logview-log.c:737
+#: ../logview/src/logview-log.c:732
 msgid "This version of System Log does not support GZipped logs."
 msgstr "Ця версія Системного Журналу не підтримує журнали, запаковані GZip."
 
-#: ../logview/src/logview-loglist.c:316
+#. TRANSLATORS: "strftime format options, see the man page for strftime(3) for
+#. further information."
+#: ../logview/src/logview-loglist.c:103
+msgid "%A, %e %b"
+msgstr "%A, %e %b"
+
+#: ../logview/src/logview-loglist.c:314
 msgid "Loading..."
 msgstr "Завантаження..."
 
 #: ../logview/src/logview-main.c:61
 msgid "Show the application's version"
-msgstr "Вивести версію проґрами"
+msgstr "Вивести версію програми"
 
 #: ../logview/src/logview-main.c:63
 msgid "[LOGFILE...]"
@@ -1801,195 +1814,197 @@ msgstr " - Перегляд та контроль журналів"
 msgid "Log Viewer"
 msgstr "Перегляд журналів"
 
-#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:771
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:768
 msgid "System Log Viewer"
 msgstr "Переглядач системних журналів"
 
-#: ../logview/src/logview-window.c:217
+#: ../logview/src/logview-window.c:213
 #, c-format
 msgid "last update: %s"
 msgstr "останнє оновлення : %s"
 
-#: ../logview/src/logview-window.c:221
+#: ../logview/src/logview-window.c:217
 #, c-format
 msgid "%d lines (%s) - %s"
 msgstr "%d рядків (%s) - %s"
 
-#: ../logview/src/logview-window.c:325
+#: ../logview/src/logview-window.c:322
 msgid "Open Log"
 msgstr "Відкрити журнал"
 
-#: ../logview/src/logview-window.c:364
+#: ../logview/src/logview-window.c:361
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "Помилка показу довідки: %s"
 
-#: ../logview/src/logview-window.c:478
+#: ../logview/src/logview-window.c:475
 msgid "Wrapped"
 msgstr "Згорнуто"
 
-#: ../logview/src/logview-window.c:493
+#: ../logview/src/logview-window.c:490
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1125
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1219
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1253
 msgid "Not found"
 msgstr "Не знайдено"
 
-#: ../logview/src/logview-window.c:773
+#: ../logview/src/logview-window.c:770
 msgid "About System Log Viewer"
 msgstr "Про переглядач системних журналів"
 
-#: ../logview/src/logview-window.c:774
+#: ../logview/src/logview-window.c:771
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
+"Авторське право © 1998-2008 Фундація вільного програмного забезпечення, Inc.\n"
+"Авторське право © 2011-2019 Розробники MATE"
 
-#: ../logview/src/logview-window.c:778
+#: ../logview/src/logview-window.c:775
 msgid "A system log viewer for MATE."
 msgstr "Перегляд системних журналів для MATE."
 
-#: ../logview/src/logview-window.c:821
+#: ../logview/src/logview-window.c:818
 #: ../mate-dictionary/src/gdict-window.c:1285
 msgid "_File"
 msgstr "_Файл"
 
-#: ../logview/src/logview-window.c:824
+#: ../logview/src/logview-window.c:821
 msgid "_Filters"
 msgstr "_Фільтри"
 
-#: ../logview/src/logview-window.c:827
+#: ../logview/src/logview-window.c:824
 msgid "_Open..."
 msgstr "_Відкрити..."
 
-#: ../logview/src/logview-window.c:827
+#: ../logview/src/logview-window.c:824
 msgid "Open a log from file"
 msgstr "Відкрити новий файл журналу"
 
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:826
 #: ../mate-dictionary/src/gdict-window.c:1300
 msgid "_Close"
 msgstr "_Закрити"
 
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:826
 msgid "Close this log"
 msgstr "Закрити цей журнал"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:828
 msgid "_Quit"
 msgstr "_Вийти"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:828
 msgid "Quit the log viewer"
-msgstr "Вийти з проґрами перегляду журналів"
+msgstr "Вийти з програми перегляду журналів"
 
 #. Edit menu
-#: ../logview/src/logview-window.c:834
+#: ../logview/src/logview-window.c:831
 #: ../mate-dictionary/src/gdict-window.c:1304
 msgid "_Copy"
 msgstr "_Копіювати"
 
-#: ../logview/src/logview-window.c:834
+#: ../logview/src/logview-window.c:831
 msgid "Copy the selection"
 msgstr "Копіювати виділене"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:833
 #: ../mate-dictionary/src/gdict-window.c:1306
 msgid "Select _All"
 msgstr "Виді_лити усе"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:833
 msgid "Select the entire log"
 msgstr "Виділити увесь журнал"
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:835
 msgid "_Find..."
 msgstr "З_найти..."
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:835
 msgid "Find a word or phrase in the log"
 msgstr "Знайти слово чи фразу у журналі"
 
-#: ../logview/src/logview-window.c:841
+#: ../logview/src/logview-window.c:838
 msgid "Zoom _In"
 msgstr "З_більшити"
 
-#: ../logview/src/logview-window.c:841
+#: ../logview/src/logview-window.c:838
 msgid "Bigger text size"
 msgstr "Більший розмір тексту"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:840
 msgid "Zoom _Out"
 msgstr "З_меншити"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:840
 msgid "Smaller text size"
 msgstr "Менший розмір тексту"
 
-#: ../logview/src/logview-window.c:845
+#: ../logview/src/logview-window.c:842
 msgid "_Normal Size"
 msgstr "_Звичайний розмір"
 
-#: ../logview/src/logview-window.c:845
+#: ../logview/src/logview-window.c:842
 msgid "Normal text size"
 msgstr "Звичайний розмір тексту"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:845
 msgid "Manage Filters"
 msgstr "Керування фільтрами"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:845
 msgid "Manage filters"
 msgstr "Керуваня фільтрами"
 
-#: ../logview/src/logview-window.c:851
+#: ../logview/src/logview-window.c:848
 msgid "Open the help contents for the log viewer"
 msgstr "Відкрити вміст довідки переглядача журналу"
 
-#: ../logview/src/logview-window.c:853
-#: ../mate-dictionary/src/gdict-applet.c:1190
+#: ../logview/src/logview-window.c:850
+#: ../mate-dictionary/src/gdict-applet.c:1186
 #: ../mate-dictionary/src/gdict-window.c:1341
 msgid "_About"
-msgstr "_Про проґраму"
+msgstr "_Про програму"
 
-#: ../logview/src/logview-window.c:853
+#: ../logview/src/logview-window.c:850
 msgid "Show the about dialog for the log viewer"
-msgstr "Відкрити вікно \"Про проґраму\" проґрами перегляду журналу"
+msgstr "Відкрити вікно \"Про програму\" програми перегляду журналу"
 
-#: ../logview/src/logview-window.c:858
+#: ../logview/src/logview-window.c:855
 msgid "_Statusbar"
 msgstr "Панель с_тану"
 
-#: ../logview/src/logview-window.c:858
+#: ../logview/src/logview-window.c:855
 msgid "Show Status Bar"
 msgstr "Показати панель стану"
 
-#: ../logview/src/logview-window.c:860
+#: ../logview/src/logview-window.c:857
 msgid "Side _Pane"
 msgstr "Бі_чна панель"
 
-#: ../logview/src/logview-window.c:860
+#: ../logview/src/logview-window.c:857
 msgid "Show Side Pane"
 msgstr "Показувати бічну панель"
 
-#: ../logview/src/logview-window.c:862
+#: ../logview/src/logview-window.c:859
 msgid "Show matches only"
 msgstr "Показувати лише відповідні"
 
-#: ../logview/src/logview-window.c:862
+#: ../logview/src/logview-window.c:859
 msgid "Only show lines that match one of the given filters"
 msgstr "Показувати рядки, які відповідають одному з вказаних фільтрів"
 
-#: ../logview/src/logview-window.c:994
+#: ../logview/src/logview-window.c:991
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr "Не вдається прочитати з \"%s\""
 
-#: ../logview/src/logview-window.c:1419
+#: ../logview/src/logview-window.c:1416
 msgid "Version: "
 msgstr "Версія: "
 
-#: ../logview/src/logview-window.c:1527
+#: ../logview/src/logview-window.c:1522
 msgid "Could not open the following files:"
 msgstr "Не вдається відкрити такі файли:"
 
@@ -2017,7 +2032,7 @@ msgid ""
 "query. </p>"
 msgstr ""
 "<p> MATE Словник дозволяє шукати слова у мережних словниках. Він початково "
-"зконфігурований з переліком словникових серверів (RFC 2229), у якому Ви "
+"сконфігурований з переліком словникових серверів (RFC 2229), у якому Ви "
 "можете додати свої власні джерела, в той час як Ви можете вибрати певні "
 "сервери для конкретного запиту. </p>"
 
@@ -2118,27 +2133,27 @@ msgstr "Статус"
 msgid "The status code as returned by the dictionary server"
 msgstr "Код статусу, який повертається словниковим сервером"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:774
+#: ../mate-dictionary/libgdict/gdict-client-context.c:772
 #, c-format
 msgid "No connection to the dictionary server at '%s:%d'"
 msgstr "Відсутнє з'єднання зі словниковим сервером '%s:%d'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1054
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1052
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
 msgstr "Помилка пошуку вузла '%s': не знайдено відповідний ресурс"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1085
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1083
 #, c-format
 msgid "Lookup failed for host '%s': %s"
 msgstr "Помилка пошуку вузла '%s': %s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1119
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1117
 #, c-format
 msgid "Lookup failed for host '%s': host not found"
 msgstr "Помилка пошуку вузла '%s': вузол не знайдено"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1171
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1169
 #, c-format
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
@@ -2147,7 +2162,7 @@ msgstr ""
 "Не вдається з'єднатися зі словниковим сервером '%s:%d'. Сервер повернув код "
 "%d (сервер вимкнений)"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1190
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1188
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
@@ -2156,47 +2171,47 @@ msgstr ""
 "Не вдається розібрати відповідь словникового сервера\n"
 ": '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1219
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1217
 #, c-format
 msgid "No definitions found for '%s'"
 msgstr "Немає визначення для '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1234
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1232
 #, c-format
 msgid "Invalid database '%s'"
 msgstr "Неправильна база даних '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1249
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1247
 #, c-format
 msgid "Invalid strategy '%s'"
 msgstr "Неправильна стратегія '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1264
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1262
 #, c-format
 msgid "Bad command '%s'"
 msgstr "Неправильна команда '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1279
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1277
 #, c-format
 msgid "Bad parameters for command '%s'"
 msgstr "Неправильні параметри для команди '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1294
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1292
 #, c-format
 msgid "No databases found on dictionary server at '%s'"
 msgstr "Відсутні бази даних на словниковому сервері '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1309
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1307
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
 msgstr "Не знайдено стратегії на словниковому сервері '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1734
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1732
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
 msgstr "Помилка з'єднання зі словниковим сервером %s:%d"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1773
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1771
 #, c-format
 msgid ""
 "Error while reading reply from server:\n"
@@ -2205,28 +2220,28 @@ msgstr ""
 "Помилка при читанні відповіді сервера:\n"
 "%s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1846
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1844
 #, c-format
 msgid "Connection timeout for the dictionary server at '%s:%d'"
 msgstr "Помилка з'єднання зі словниковим сервером за адресою \"%s:%d\""
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1880
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1878
 #, c-format
 msgid "No hostname defined for the dictionary server"
 msgstr "Не визначено назву вузла словникового сервера"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1916
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1931
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1914
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1929
 #, c-format
 msgid "Unable to create socket"
 msgstr "Не вдається створити сокет"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1957
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1955
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
-msgstr "Не вдається встановити канал у неблокуючий режим: %s"
+msgstr "Не вдається встановити канал у неблоківний режим: %s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1972
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1970
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
 msgstr "Не вдається з'єднатися зі словниковим сервером '%s:%d'"
@@ -2239,15 +2254,15 @@ msgstr "Лише локальні"
 msgid "Whether the context uses only local dictionaries or not"
 msgstr "Чи контекст використовує лише локальні словники"
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:379
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:376
 msgid "Reload the list of available databases"
 msgstr "Перезавантажити перелік доступних баз даних"
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:391
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:388
 msgid "Clear the list of available databases"
 msgstr "Очистити перелік доступних баз даних"
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:841
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:836
 #: ../mate-dictionary/libgdict/gdict-speller.c:773
 #: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:783
 msgid "Error while matching"
@@ -2283,92 +2298,92 @@ msgstr "Зачекайте доки закінчиться поточна опе
 msgid "Error while retrieving the definition"
 msgstr "Помилка при отриманні визначення"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:232
+#: ../mate-dictionary/libgdict/gdict-source.c:229
 msgid "Filename"
 msgstr "Назва файлу"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:233
+#: ../mate-dictionary/libgdict/gdict-source.c:230
 msgid "The filename used by this dictionary source"
 msgstr "Назва файлу, що використовується цим джерелом словників"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:247
+#: ../mate-dictionary/libgdict/gdict-source.c:244
 msgid "The display name of this dictionary source"
 msgstr "Назва відображення цього джерела словників"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:260
+#: ../mate-dictionary/libgdict/gdict-source.c:257
 msgid "Description"
 msgstr "Опис"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:261
+#: ../mate-dictionary/libgdict/gdict-source.c:258
 msgid "The description of this dictionary source"
 msgstr "Опис цього джерела словників"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:274
+#: ../mate-dictionary/libgdict/gdict-source.c:271
 #: ../mate-dictionary/libgdict/gdict-speller.c:375
 msgid "Database"
 msgstr "База даних"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:275
+#: ../mate-dictionary/libgdict/gdict-source.c:272
 msgid "The default database of this dictionary source"
 msgstr "Типова база даних цього джерела словників"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:288
+#: ../mate-dictionary/libgdict/gdict-source.c:285
 #: ../mate-dictionary/libgdict/gdict-speller.c:382
 msgid "Strategy"
 msgstr "Стратегія"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:289
+#: ../mate-dictionary/libgdict/gdict-source.c:286
 msgid "The default strategy of this dictionary source"
 msgstr "Типова стратегія цього джерела словників"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:302
+#: ../mate-dictionary/libgdict/gdict-source.c:299
 msgid "Transport"
 msgstr "Транспорт"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:303
+#: ../mate-dictionary/libgdict/gdict-source.c:300
 msgid "The transport mechanism used by this dictionary source"
 msgstr "Механізм транспорту, що використовується сервером"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:317
+#: ../mate-dictionary/libgdict/gdict-source.c:314
 #: ../mate-dictionary/libgdict/gdict-speller.c:368
 msgid "Context"
 msgstr "Контекст"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:318
+#: ../mate-dictionary/libgdict/gdict-source.c:315
 msgid "The GdictContext bound to this source"
 msgstr "Об'єкт GdictContext, що пов'язаний з цим джерелом"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:413
+#: ../mate-dictionary/libgdict/gdict-source.c:408
 #, c-format
 msgid "Invalid transport type '%d'"
 msgstr "Неправильний тип транспорту '%d'"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:441
+#: ../mate-dictionary/libgdict/gdict-source.c:436
 #, c-format
 msgid "No '%s' group found inside the dictionary source definition"
 msgstr "У визначенні джерела словників відсутня група '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:457
-#: ../mate-dictionary/libgdict/gdict-source.c:481
-#: ../mate-dictionary/libgdict/gdict-source.c:505
-#: ../mate-dictionary/libgdict/gdict-source.c:530
+#: ../mate-dictionary/libgdict/gdict-source.c:452
+#: ../mate-dictionary/libgdict/gdict-source.c:476
+#: ../mate-dictionary/libgdict/gdict-source.c:500
+#: ../mate-dictionary/libgdict/gdict-source.c:525
 #, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
 msgstr "У визначенні джерел словників не вдається отримати ключ '%s': %s"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:555
+#: ../mate-dictionary/libgdict/gdict-source.c:550
 #, c-format
 msgid ""
 "Unable to get the '%s' key inside the dictionary source definition file: %s"
 msgstr ""
 "У файлі визначення джерел словників не вдається отримати ключ '%s': %s"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:741
+#: ../mate-dictionary/libgdict/gdict-source.c:736
 #, c-format
 msgid "Dictionary source does not have name"
 msgstr "Джерело словників не має назви"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:750
+#: ../mate-dictionary/libgdict/gdict-source.c:745
 #, c-format
 msgid "Dictionary source '%s' has invalid transport '%s'"
 msgstr "Джерело словників '%s' має неправильний транспорт '%s'"
@@ -2377,19 +2392,19 @@ msgstr "Джерело словників '%s' має неправильний �
 msgid "Reload the list of available sources"
 msgstr "Перезавантажити перелік доступних джерел"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:165
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:163
 msgid "Paths"
 msgstr "Шляхи"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:166
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:164
 msgid "Search paths used by this object"
 msgstr "Шляхи пошуку, що використовуються цим об'єктом "
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:178
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:176
 msgid "Sources"
 msgstr "Джерела"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:179
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:177
 msgid "Dictionary sources found"
 msgstr "Знайдено джерела словників"
 
@@ -2439,7 +2454,7 @@ msgid "Show GDict Options"
 msgstr "Показувати параметри GDict"
 
 #: ../mate-dictionary/src/gdict-about.c:57
-#: ../mate-dictionary/src/gdict-applet.c:589
+#: ../mate-dictionary/src/gdict-applet.c:587
 msgid "Look up words in dictionaries"
 msgstr "Пошук слів у словниках"
 
@@ -2450,7 +2465,7 @@ msgid ""
 "Franklin St, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr ""
 "Ви повинні були отримати копію GNU General Public License разом з цією "
-"проґрамою; якщо ж цього не сталося, зверніться за адресою: Free Software "
+"програмою; якщо ж цього не сталося, зверніться за адресою: Free Software "
 "Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA."
 
 #: ../mate-dictionary/src/gdict-about.c:87
@@ -2469,6 +2484,8 @@ msgid ""
 "Copyright © 2005-2006 Emmanuele Bassi\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
+"Авторське право © 2005-2006 Еммануель Бас\n"
+"Авторське право © 2011-2019 Розробники MATE"
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
@@ -2549,130 +2566,130 @@ msgstr "БД"
 msgid " - Look up words in dictionaries"
 msgstr " - Пошук слів у словниках"
 
-#: ../mate-dictionary/src/gdict-applet.c:206
+#: ../mate-dictionary/src/gdict-applet.c:204
 #: ../mate-dictionary/src/gdict-window.c:962
 msgid "Save a Copy"
 msgstr "Зберегти копію"
 
-#: ../mate-dictionary/src/gdict-applet.c:216
+#: ../mate-dictionary/src/gdict-applet.c:214
 #: ../mate-dictionary/src/gdict-window.c:972
 msgid "Untitled document"
 msgstr "Документ без заголовку"
 
-#: ../mate-dictionary/src/gdict-applet.c:237
+#: ../mate-dictionary/src/gdict-applet.c:235
 #: ../mate-dictionary/src/gdict-window.c:993
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "Помилка при запису у '%s'"
 
-#: ../mate-dictionary/src/gdict-applet.c:362
+#: ../mate-dictionary/src/gdict-applet.c:360
 msgid "Clear the definitions found"
 msgstr "Очистити знайдені визначення"
 
-#: ../mate-dictionary/src/gdict-applet.c:364
+#: ../mate-dictionary/src/gdict-applet.c:362
 msgid "Clear definition"
 msgstr "Очистити визначення"
 
-#: ../mate-dictionary/src/gdict-applet.c:365
+#: ../mate-dictionary/src/gdict-applet.c:363
 msgid "Clear the text of the definition"
 msgstr "Очистити текст визначення"
 
-#: ../mate-dictionary/src/gdict-applet.c:377
+#: ../mate-dictionary/src/gdict-applet.c:375
 msgid "Print the definitions found"
 msgstr "Друкувати знайдені визначення"
 
-#: ../mate-dictionary/src/gdict-applet.c:379
+#: ../mate-dictionary/src/gdict-applet.c:377
 msgid "Print definition"
 msgstr "Друкувати визначення"
 
-#: ../mate-dictionary/src/gdict-applet.c:380
+#: ../mate-dictionary/src/gdict-applet.c:378
 msgid "Print the text of the definition"
 msgstr "Друкувати текст визначення"
 
-#: ../mate-dictionary/src/gdict-applet.c:392
+#: ../mate-dictionary/src/gdict-applet.c:390
 msgid "Save the definitions found"
 msgstr "Зберегти знайдені визначення"
 
-#: ../mate-dictionary/src/gdict-applet.c:394
+#: ../mate-dictionary/src/gdict-applet.c:392
 msgid "Save definition"
 msgstr "Зберегти визначення"
 
-#: ../mate-dictionary/src/gdict-applet.c:395
+#: ../mate-dictionary/src/gdict-applet.c:393
 msgid "Save the text of the definition to a file"
 msgstr "Зберегти текст визначення у файл"
 
-#: ../mate-dictionary/src/gdict-applet.c:532
+#: ../mate-dictionary/src/gdict-applet.c:530
 msgid "Click to view the dictionary window"
 msgstr "Натисніть, щоб побачити вікно словника"
 
-#: ../mate-dictionary/src/gdict-applet.c:534
+#: ../mate-dictionary/src/gdict-applet.c:532
 msgid "Toggle dictionary window"
 msgstr "Показати/сховати вікно словника"
 
-#: ../mate-dictionary/src/gdict-applet.c:535
+#: ../mate-dictionary/src/gdict-applet.c:533
 msgid "Show or hide the definition window"
 msgstr "Показати чи сховати вікно словника"
 
-#: ../mate-dictionary/src/gdict-applet.c:586
+#: ../mate-dictionary/src/gdict-applet.c:584
 msgid "Type the word you want to look up"
 msgstr "Уведіть слово, яке треба знайти"
 
-#: ../mate-dictionary/src/gdict-applet.c:588
+#: ../mate-dictionary/src/gdict-applet.c:586
 msgid "Dictionary entry"
 msgstr "Словниковий запис"
 
-#: ../mate-dictionary/src/gdict-applet.c:717
+#: ../mate-dictionary/src/gdict-applet.c:715
 #: ../mate-dictionary/src/gdict-window.c:1104
 msgid "Dictionary Preferences"
 msgstr "Параметри словника"
 
-#: ../mate-dictionary/src/gdict-applet.c:741
+#: ../mate-dictionary/src/gdict-applet.c:739
 #: ../mate-dictionary/src/gdict-pref-dialog.c:498
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
 #: ../mate-dictionary/src/gdict-window.c:1251
 #, c-format
 msgid "There was an error while displaying help"
-msgstr "Помилка при відображенні довідки"
+msgstr "Помилка при показу довідки"
 
-#: ../mate-dictionary/src/gdict-applet.c:880
+#: ../mate-dictionary/src/gdict-applet.c:878
 #: ../mate-dictionary/src/gdict-window.c:522
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "Відсутнє джерело з назвою '%s'"
 
-#: ../mate-dictionary/src/gdict-applet.c:884
+#: ../mate-dictionary/src/gdict-applet.c:882
 #: ../mate-dictionary/src/gdict-window.c:526
 msgid "Unable to find dictionary source"
 msgstr "Не вдається знайти джерело словника"
 
-#: ../mate-dictionary/src/gdict-applet.c:900
+#: ../mate-dictionary/src/gdict-applet.c:898
 #: ../mate-dictionary/src/gdict-window.c:542
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "Недоступний контекст для джерела '%s'"
 
-#: ../mate-dictionary/src/gdict-applet.c:904
+#: ../mate-dictionary/src/gdict-applet.c:902
 #: ../mate-dictionary/src/gdict-window.c:546
 msgid "Unable to create a context"
 msgstr "Не вдається створити контекст"
 
-#: ../mate-dictionary/src/gdict-applet.c:1172
+#: ../mate-dictionary/src/gdict-applet.c:1168
 msgid "_Look Up Selected Text"
 msgstr "_Шукати виділений текст"
 
-#: ../mate-dictionary/src/gdict-applet.c:1175
+#: ../mate-dictionary/src/gdict-applet.c:1171
 msgid "Cl_ear"
 msgstr "О_чистити"
 
-#: ../mate-dictionary/src/gdict-applet.c:1178
+#: ../mate-dictionary/src/gdict-applet.c:1174
 msgid "_Print"
 msgstr "Д_рук"
 
-#: ../mate-dictionary/src/gdict-applet.c:1181
+#: ../mate-dictionary/src/gdict-applet.c:1177
 msgid "_Save"
 msgstr "З_берегти"
 
-#: ../mate-dictionary/src/gdict-applet.c:1184
+#: ../mate-dictionary/src/gdict-applet.c:1180
 msgid "Preferences"
 msgstr "Налаштування"
 
@@ -2710,19 +2727,19 @@ msgstr "Це призведе до остаточного вилучення д�
 msgid "Unable to remove source '%s'"
 msgstr "Не дається вилучити джерело '%s'"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:645
+#: ../mate-dictionary/src/gdict-pref-dialog.c:709
 msgid "Add a new dictionary source"
 msgstr "Додати нове джерело словників"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:651
+#: ../mate-dictionary/src/gdict-pref-dialog.c:715
 msgid "Remove the currently selected dictionary source"
 msgstr "Вилучити виділене джерело словників"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:657
+#: ../mate-dictionary/src/gdict-pref-dialog.c:721
 msgid "Edit the currently selected dictionary source"
 msgstr "Редагувати вибране джерело словників"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:665
+#: ../mate-dictionary/src/gdict-pref-dialog.c:729
 msgid "Set the font used for printing the definitions"
 msgstr "Встановити шрифт для друку визначення"
 
@@ -2756,7 +2773,7 @@ msgstr "Не знайдено визначень"
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
-msgstr[0] "знайдено визначення"
+msgstr[0] "%d знайдено визначення"
 msgstr[1] "%d знайдено визначення"
 msgstr[2] "%d знайдено визначень"
 msgstr[3] "%d знайдено визначень"
@@ -2979,6 +2996,78 @@ msgstr "Словники"
 msgid "Strategies"
 msgstr "Стратегії"
 
+#: ../mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in.h:1
+#: ../mate-disk-image-mounter/src/main.c:59
+msgid "MATE Disk Image Mounter"
+msgstr ""
+
+#: ../mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in.h:2
+msgid "Attach and mount one or more disk image files"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:57
+msgid "An error occurred"
+msgstr "Виникла помилка"
+
+#: ../mate-disk-image-mounter/src/main.c:78
+msgid "Allow writing to the image"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:98
+msgid "All Files"
+msgstr "Усі файли"
+
+#: ../mate-disk-image-mounter/src/main.c:102
+msgid "Disk Images (*.img, *.iso)"
+msgstr "Образи дисків (*.img, *.iso)"
+
+#: ../mate-disk-image-mounter/src/main.c:118
+msgid "Select Disk Image(s) to Mount"
+msgstr "Вибрати образ(и) диска для монтування"
+
+#: ../mate-disk-image-mounter/src/main.c:121
+msgid "_Cancel"
+msgstr "_Скасувати"
+
+#: ../mate-disk-image-mounter/src/main.c:122
+msgid "_Mount"
+msgstr "_Змонтувати"
+
+#. Add a RO check button that defaults to RO
+#: ../mate-disk-image-mounter/src/main.c:128
+msgid "Set up _read-only mount"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:129
+msgid ""
+"If checked, the mount will be read-only. This is useful if you don't want "
+"the underlying disk image to be modified"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:173
+#, c-format
+msgid "Error connecting to udisks daemon: %s (%s, %d)"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:181
+msgid "Attach and mount one or more disk image files."
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:229
+#, c-format
+msgid "Cannot open `%s' - maybe the volume isn't mounted?"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:236
+#, c-format
+msgid "Error opening `%s': %m"
+msgstr "Помилка відкриття `%s': %m"
+
+#: ../mate-disk-image-mounter/src/main.c:257
+#, c-format
+msgid "Error attaching disk image: %s (%s, %d)"
+msgstr ""
+
 #: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:1
 msgid "A screenshot utility for MATE Desktop"
 msgstr "Засіб створення знятків екрану для середовища MATE"
@@ -2990,7 +3079,7 @@ msgid ""
 "system clipboard or save them in Portable Network Graphics (.png) image "
 "format. </p>"
 msgstr ""
-"<p> MATE Screenshot це простий засіб, що дозволяє робити знімки усієї "
+"<p> MATE Screenshot це простий засіб, що дозволяє робити знятки усієї "
 "стільниці або вікна застосунку. Ви можете вибрати копіювання їх у буфер "
 "обміну чи зберігання їх у форматі зображення Portable Network Graphics "
 "(.png) . </p>"
@@ -2999,7 +3088,7 @@ msgstr ""
 #: ../mate-screenshot/src/mate-screenshot.c:519
 #: ../mate-screenshot/src/mate-screenshot.c:527
 msgid "Take Screenshot"
-msgstr "Зробити знімок"
+msgstr "Зробити зняток"
 
 #: ../mate-screenshot/data/mate-screenshot.desktop.in.h:2
 msgid "Save images of your desktop or individual windows"
@@ -3007,7 +3096,7 @@ msgstr "Збереження зображень стільниці чи окре
 
 #: ../mate-screenshot/data/mate-screenshot.ui.h:1
 msgid "Save Screenshot"
-msgstr "Зберегти знімок екрану"
+msgstr "Зберегти зняток екрану"
 
 #: ../mate-screenshot/data/mate-screenshot.ui.h:2
 msgid "C_opy to Clipboard"
@@ -3024,7 +3113,7 @@ msgstr "Затримка знятку екрану"
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:2
 msgid "The number of seconds to wait before taking the screenshot."
 msgstr ""
-"Число секунд, яке буде очікуватися до того, як буде зроблено знімок екрану."
+"Число секунд, яке буде очікуватися до того, як буде зроблено зняток екрану."
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:3
 msgid "Screenshot directory"
@@ -3040,7 +3129,7 @@ msgstr "Включити рамку"
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:6
 msgid "Include the window manager border along with the screenshot"
-msgstr "Включити рамку керівника вікнами у знімок екрану"
+msgstr "Включити рамку упорядника вікон у зняток екрану"
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:7
 msgid "Include Pointer"
@@ -3048,7 +3137,7 @@ msgstr "Включити вказівник"
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:8
 msgid "Include the pointer in the screenshot"
-msgstr "Включити вказівник миші у знімок екрану"
+msgstr "Включити вказівник миші у зняток екрану"
 
 #: ../mate-screenshot/data/org.mate.screenshot.gschema.xml.in.h:9
 msgid "Border Effect"
@@ -3059,7 +3148,7 @@ msgid ""
 "Effect to add to the outside of a border. Possible values are \"shadow\", "
 "\"none\", and \"border\"."
 msgstr ""
-"Ефект, що додається навколо рамки. Можливі варіянти: \"shadow\", \"none\", "
+"Ефект, що додається навколо рамки. Можливі варіанти: \"shadow\", \"none\", "
 "та \"border\"."
 
 #: ../mate-screenshot/src/mate-screenshot.c:138
@@ -3136,9 +3225,9 @@ msgid ""
 " Error was %s.\n"
 " Please choose another location and retry."
 msgstr ""
-"Не вдається зберегти знімок екрану у %s.\n"
+"Не вдається зберегти зняток екрану у %s.\n"
 " Виникла помилка %s.\n"
-" Виберіть інше місце та спробуйте знову."
+" Виберіть инше місце та спробуйте знову."
 
 #: ../mate-screenshot/src/mate-screenshot.c:796
 msgid "Screenshot taken"
@@ -3173,7 +3262,7 @@ msgstr "Захопити лише частину екрану"
 
 #: ../mate-screenshot/src/mate-screenshot.c:1317
 msgid "Send grabbed area directly to the clipboard"
-msgstr ""
+msgstr "Надіслати захоплену ділянку безпосередньо у буфер обміну"
 
 #: ../mate-screenshot/src/mate-screenshot.c:1318
 msgid "Include the window border with the screenshot"
@@ -3213,6 +3302,8 @@ msgid ""
 "Conflicting options: --clipboard and --interactive should not be used at the"
 " same time.\n"
 msgstr ""
+"Параметри суперечливі: --clipboard та --interactive не слід застосовувати "
+"одночасно.\n"
 
 #: ../mate-screenshot/src/mate-screenshot.c:1361
 #, c-format
@@ -3231,7 +3322,7 @@ msgid ""
 "\n"
 "Please check your installation of mate-utils."
 msgstr ""
-"Помилка при завантаженні UI файлу визначення для проґрами знятків екрану: \n"
+"Помилка при завантаженні UI файлу визначення для програми знятків екрану: \n"
 "%s\n"
 "\n"
 "Перевірте встановлення mate-utils."

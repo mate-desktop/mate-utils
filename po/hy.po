@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-06 13:25+0200\n"
+"POT-Creation-Date: 2019-10-10 20:09+0200\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
 "Last-Translator: Siranush <ss.m.95@mail.ru>, 2019\n"
 "Language-Team: Armenian (https://www.transifex.com/mate/teams/13566/hy/)\n"
@@ -63,7 +63,7 @@ msgid "S_can Remote Folder..."
 msgstr "Փնտրել Հեռավոր Թղթապանակ․․․"
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../logview/src/logview-window.c:822
+#: ../logview/src/logview-window.c:819
 #: ../mate-dictionary/src/gdict-window.c:1286
 msgid "_Edit"
 msgstr "_Խմբագրել"
@@ -77,7 +77,7 @@ msgid "_Collapse All"
 msgstr "_Ամբողջությամբ ցուցադրել բոլորը"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../logview/src/logview-window.c:823
+#: ../logview/src/logview-window.c:820
 #: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_View"
 msgstr "_Դիտել"
@@ -95,15 +95,15 @@ msgid "All_ocated Space"
 msgstr "Հատկացված տարածք"
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../logview/src/logview-window.c:825
-#: ../mate-dictionary/src/gdict-applet.c:1187
+#: ../logview/src/logview-window.c:822
+#: ../mate-dictionary/src/gdict-applet.c:1183
 #: ../mate-dictionary/src/gdict-window.c:1289
 msgid "_Help"
 msgstr "_Օգնություն"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../logview/src/logview-window.c:851
+#: ../logview/src/logview-window.c:848
 #: ../mate-dictionary/src/gdict-window.c:1339
 msgid "_Contents"
 msgstr "_Բովանդակություն"
@@ -324,40 +324,40 @@ msgid "Without mount points disk usage cannot be analyzed."
 msgstr ""
 "Առանց սկավառակի միավորների տեղադրման օգտագործումը չի կարող վերլուծվել։"
 
-#: ../baobab/src/baobab-chart.c:209
+#: ../baobab/src/baobab-chart.c:205
 msgid "Maximum depth"
 msgstr "Առավելագույն խորություն"
 
-#: ../baobab/src/baobab-chart.c:210
+#: ../baobab/src/baobab-chart.c:206
 msgid "The maximum depth drawn in the chart from the root"
 msgstr "Առավելագույն խորությունը գծված է աղյուսակում արմատից"
 
-#: ../baobab/src/baobab-chart.c:219
+#: ../baobab/src/baobab-chart.c:215
 msgid "Chart model"
 msgstr "Աղյուսակի մոդելը"
 
-#: ../baobab/src/baobab-chart.c:220
+#: ../baobab/src/baobab-chart.c:216
 msgid "Set the model of the chart"
 msgstr "Սահմանել մոդելը գծապատկերում"
 
-#: ../baobab/src/baobab-chart.c:227
+#: ../baobab/src/baobab-chart.c:223
 msgid "Chart root node"
 msgstr "Արձանագրել արմատ հանգույցը"
 
-#: ../baobab/src/baobab-chart.c:228
+#: ../baobab/src/baobab-chart.c:224
 msgid "Set the root node from the model"
 msgstr "Սահմանել արմատային հանգույցը մոդելից"
 
-#: ../baobab/src/baobab-chart.c:1712
+#: ../baobab/src/baobab-chart.c:1706
 msgid "Cannot create pixbuf image!"
 msgstr "Հնարավոր չէ ստեղծել pixbuf պատկեր!"
 
 #. Popup the File chooser dialog
-#: ../baobab/src/baobab-chart.c:1722
+#: ../baobab/src/baobab-chart.c:1716
 msgid "Save Snapshot"
 msgstr "Պահպանել ակնթարթային պատկերը"
 
-#: ../baobab/src/baobab-chart.c:1749
+#: ../baobab/src/baobab-chart.c:1743
 msgid "_Image type:"
 msgstr "_Պատկերի տիպը:"
 
@@ -1248,7 +1248,7 @@ msgid "List View"
 msgstr "Ցանկի Տեսաբերում"
 
 #: ../gsearchtool/src/gsearchtool.c:2412
-#: ../mate-dictionary/libgdict/gdict-source.c:246
+#: ../mate-dictionary/libgdict/gdict-source.c:243
 msgid "Name"
 msgstr "Անուն"
 
@@ -1704,85 +1704,91 @@ msgstr "Ազդեցություն:"
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
 
-#: ../logview/src/logview-app.c:376
+#: ../logview/src/logview-app.c:371
 #, c-format
 msgid "Impossible to open the file %s"
 msgstr "Անհնար է բացել ֆայլը %s"
 
-#: ../logview/src/logview-filter-manager.c:94
+#: ../logview/src/logview-filter-manager.c:91
 msgid "Filter name is empty!"
 msgstr "Ֆիլտրի անունը դատարկ է!"
 
-#: ../logview/src/logview-filter-manager.c:107
+#: ../logview/src/logview-filter-manager.c:104
 msgid "Filter name may not contain the ':' character"
 msgstr "Ֆիլտրի անունը կարող է պարունակել ':' սիմվոլը"
 
-#: ../logview/src/logview-filter-manager.c:130
+#: ../logview/src/logview-filter-manager.c:127
 msgid "Regular expression is empty!"
 msgstr "Կանոնավոր արտահայտությունը դատարկ է!"
 
-#: ../logview/src/logview-filter-manager.c:146
+#: ../logview/src/logview-filter-manager.c:143
 #, c-format
 msgid "Regular expression is invalid: %s"
 msgstr "Կանոնավոր արտահայտությունը անվավեր է: %s"
 
-#: ../logview/src/logview-filter-manager.c:240
+#: ../logview/src/logview-filter-manager.c:237
 msgid "Please specify either foreground or background color!"
 msgstr "Խնդրում ենք սահմանել առաջին պլանի կամ ֆոնի գույնը!"
 
-#: ../logview/src/logview-filter-manager.c:294
+#: ../logview/src/logview-filter-manager.c:291
 msgid "Edit filter"
 msgstr "Խմբագրրել ֆիլտր"
 
-#: ../logview/src/logview-filter-manager.c:294
+#: ../logview/src/logview-filter-manager.c:291
 msgid "Add new filter"
 msgstr "Ավելացնել նոր ֆիլտր"
 
-#: ../logview/src/logview-filter-manager.c:522
+#: ../logview/src/logview-filter-manager.c:519
 msgid "Filters"
 msgstr "Ֆիլտրեր"
 
-#: ../logview/src/logview-findbar.c:172
+#: ../logview/src/logview-findbar.c:169
 msgid "_Find:"
 msgstr "_Գտնել։"
 
-#: ../logview/src/logview-findbar.c:187
+#: ../logview/src/logview-findbar.c:184
 msgid "Find Previous"
 msgstr "Գտնել Նախորդը"
 
-#: ../logview/src/logview-findbar.c:190
+#: ../logview/src/logview-findbar.c:187
 msgid "Find previous occurrence of the search string"
 msgstr "Գտիր որոնման նախորդ դեպքի տողը"
 
-#: ../logview/src/logview-findbar.c:195
+#: ../logview/src/logview-findbar.c:192
 msgid "Find Next"
 msgstr "Գտնել Հաջորդը"
 
-#: ../logview/src/logview-findbar.c:198
+#: ../logview/src/logview-findbar.c:195
 msgid "Find next occurrence of the search string"
 msgstr "Գտիր որոնման հաջորդ դեպքի տողը"
 
-#: ../logview/src/logview-findbar.c:205
+#: ../logview/src/logview-findbar.c:202
 msgid "Clear the search string"
 msgstr "Մաքրել տողի որոնումը"
 
-#: ../logview/src/logview-log.c:593
+#: ../logview/src/logview-log.c:588
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
 msgstr "Սխալ մինչ GZipped log ապասեղմումը։ Ֆայլը կարող է լինել կոռումպացված։"
 
-#: ../logview/src/logview-log.c:640
+#: ../logview/src/logview-log.c:635
 msgid "You don't have enough permissions to read the file."
 msgstr "Դուք չունեք բավարար թույլտվություններ ֆայլը կարդալու համար։"
 
-#: ../logview/src/logview-log.c:655
+#: ../logview/src/logview-log.c:650
 msgid "The file is not a regular file or is not a text file."
 msgstr "Ֆայլը կանոնավոր կամ տեքստային ֆայլ չէ։"
 
-#: ../logview/src/logview-log.c:737
+#: ../logview/src/logview-log.c:732
 msgid "This version of System Log does not support GZipped logs."
 msgstr "Համակարգի Մուտքի այս տարբերակը չի աջակցում GZipped logs։"
 
-#: ../logview/src/logview-loglist.c:316
+#. TRANSLATORS: "strftime format options, see the man page for strftime(3) for
+#. further information."
+#: ../logview/src/logview-loglist.c:103
+msgid "%A, %e %b"
+msgstr ""
+
+#: ../logview/src/logview-loglist.c:314
 msgid "Loading..."
 msgstr "Բեռնում..."
 
@@ -1802,195 +1808,195 @@ msgstr "- Զննել և վերահսկել log֊երը"
 msgid "Log Viewer"
 msgstr "Log Դիտող"
 
-#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:771
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:768
 msgid "System Log Viewer"
 msgstr "Համակարգի Log Դիտող"
 
-#: ../logview/src/logview-window.c:217
+#: ../logview/src/logview-window.c:213
 #, c-format
 msgid "last update: %s"
 msgstr "Վերջին նորացում: %s"
 
-#: ../logview/src/logview-window.c:221
+#: ../logview/src/logview-window.c:217
 #, c-format
 msgid "%d lines (%s) - %s"
 msgstr "%d տողեր (%s) - %s"
 
-#: ../logview/src/logview-window.c:325
+#: ../logview/src/logview-window.c:322
 msgid "Open Log"
 msgstr "Բացել Log"
 
-#: ../logview/src/logview-window.c:364
+#: ../logview/src/logview-window.c:361
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "Օգնության պատուհանը ցույց տալու սխալ կար այստեղ: %s"
 
-#: ../logview/src/logview-window.c:478
+#: ../logview/src/logview-window.c:475
 msgid "Wrapped"
 msgstr "Փաթաթված"
 
-#: ../logview/src/logview-window.c:493
+#: ../logview/src/logview-window.c:490
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1125
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1219
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1253
 msgid "Not found"
 msgstr "Չի գտնվել"
 
-#: ../logview/src/logview-window.c:773
+#: ../logview/src/logview-window.c:770
 msgid "About System Log Viewer"
 msgstr ""
 
-#: ../logview/src/logview-window.c:774
+#: ../logview/src/logview-window.c:771
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
 
-#: ../logview/src/logview-window.c:778
+#: ../logview/src/logview-window.c:775
 msgid "A system log viewer for MATE."
 msgstr "Համակարգի log արտապատկերման միջոց MATE֊ի համար։"
 
-#: ../logview/src/logview-window.c:821
+#: ../logview/src/logview-window.c:818
 #: ../mate-dictionary/src/gdict-window.c:1285
 msgid "_File"
 msgstr "_Ֆայլ"
 
-#: ../logview/src/logview-window.c:824
+#: ../logview/src/logview-window.c:821
 msgid "_Filters"
 msgstr "_ֆիլտրներ"
 
-#: ../logview/src/logview-window.c:827
+#: ../logview/src/logview-window.c:824
 msgid "_Open..."
 msgstr "_Բացել․․․"
 
-#: ../logview/src/logview-window.c:827
+#: ../logview/src/logview-window.c:824
 msgid "Open a log from file"
 msgstr "Բացել log֊ը ֆայլից"
 
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:826
 #: ../mate-dictionary/src/gdict-window.c:1300
 msgid "_Close"
 msgstr "_Փակել"
 
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:826
 msgid "Close this log"
 msgstr "Փակել այս գրանցամատյանը "
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:828
 msgid "_Quit"
 msgstr "_Ելք"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:828
 msgid "Quit the log viewer"
 msgstr "Փակել log արտապատկերման միջոցը"
 
 #. Edit menu
-#: ../logview/src/logview-window.c:834
+#: ../logview/src/logview-window.c:831
 #: ../mate-dictionary/src/gdict-window.c:1304
 msgid "_Copy"
 msgstr "_Պատճեն"
 
-#: ../logview/src/logview-window.c:834
+#: ../logview/src/logview-window.c:831
 msgid "Copy the selection"
 msgstr "Ընտրված հատվածը պատճենել"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:833
 #: ../mate-dictionary/src/gdict-window.c:1306
 msgid "Select _All"
 msgstr "Ընտրել _Ամբողջը"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:833
 msgid "Select the entire log"
 msgstr "Ընտրեք ամբողջ log"
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:835
 msgid "_Find..."
 msgstr "_Գտնել..."
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:835
 msgid "Find a word or phrase in the log"
 msgstr "Գտնել բառը կամ արտահայտությունը մուտքում"
 
-#: ../logview/src/logview-window.c:841
+#: ../logview/src/logview-window.c:838
 msgid "Zoom _In"
 msgstr "Մեծացնել մասշտաբը"
 
-#: ../logview/src/logview-window.c:841
+#: ../logview/src/logview-window.c:838
 msgid "Bigger text size"
 msgstr "Ավելի մեծ տեքստի չափ"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:840
 msgid "Zoom _Out"
 msgstr "Փոքրացնել _Մասշտաբը"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:840
 msgid "Smaller text size"
 msgstr "Ավելի փոքր տեքստի չափ"
 
-#: ../logview/src/logview-window.c:845
+#: ../logview/src/logview-window.c:842
 msgid "_Normal Size"
 msgstr "_Նորմալ Չափ"
 
-#: ../logview/src/logview-window.c:845
+#: ../logview/src/logview-window.c:842
 msgid "Normal text size"
 msgstr "Նորմալ տեքստի չափ"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:845
 msgid "Manage Filters"
 msgstr "Կառավարել Ֆիլտրերը"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:845
 msgid "Manage filters"
 msgstr "Կառավարել ֆիլտրերը"
 
-#: ../logview/src/logview-window.c:851
+#: ../logview/src/logview-window.c:848
 msgid "Open the help contents for the log viewer"
 msgstr "Բացել օգնության համատեքստը log դիտողի համար"
 
-#: ../logview/src/logview-window.c:853
-#: ../mate-dictionary/src/gdict-applet.c:1190
+#: ../logview/src/logview-window.c:850
+#: ../mate-dictionary/src/gdict-applet.c:1186
 #: ../mate-dictionary/src/gdict-window.c:1341
 msgid "_About"
 msgstr "_Մասին"
 
-#: ../logview/src/logview-window.c:853
+#: ../logview/src/logview-window.c:850
 msgid "Show the about dialog for the log viewer"
 msgstr "Ցույց տալ log արտապատկերման միջոցի մասին երկխոսությունը"
 
-#: ../logview/src/logview-window.c:858
+#: ../logview/src/logview-window.c:855
 msgid "_Statusbar"
 msgstr "_Կարգավիճակների վահանակ"
 
-#: ../logview/src/logview-window.c:858
+#: ../logview/src/logview-window.c:855
 msgid "Show Status Bar"
 msgstr "Ցույց տալ Կարգավիճակների Վահանակը"
 
-#: ../logview/src/logview-window.c:860
+#: ../logview/src/logview-window.c:857
 msgid "Side _Pane"
 msgstr "Կողմնակի _Վահանակ"
 
-#: ../logview/src/logview-window.c:860
+#: ../logview/src/logview-window.c:857
 msgid "Show Side Pane"
 msgstr "Ցուցադրել Կողմնակի _Վահանակ"
 
-#: ../logview/src/logview-window.c:862
+#: ../logview/src/logview-window.c:859
 msgid "Show matches only"
 msgstr "Ցույց տալ միայն համապատասխանությունները"
 
-#: ../logview/src/logview-window.c:862
+#: ../logview/src/logview-window.c:859
 msgid "Only show lines that match one of the given filters"
 msgstr "Ցույց տալ միայն տողերը, որոնք համապատասխանում են տվյալ ֆիլտրերին"
 
-#: ../logview/src/logview-window.c:994
+#: ../logview/src/logview-window.c:991
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr "Հնարավոր չէ կարդալ \"%s\"֊ից"
 
-#: ../logview/src/logview-window.c:1419
+#: ../logview/src/logview-window.c:1416
 msgid "Version: "
 msgstr "Տարբերակ։"
 
-#: ../logview/src/logview-window.c:1527
+#: ../logview/src/logview-window.c:1522
 msgid "Could not open the following files:"
 msgstr "Չհաջողվեց բացել հետևյալ ֆայլերը:"
 
@@ -2121,27 +2127,27 @@ msgstr "Կարգավիճակ"
 msgid "The status code as returned by the dictionary server"
 msgstr "Կարգավիճակի կոդը, որպես վերադարձված բառարանի աղբյուրի կողմից"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:774
+#: ../mate-dictionary/libgdict/gdict-client-context.c:772
 #, c-format
 msgid "No connection to the dictionary server at '%s:%d'"
 msgstr "Չկա միացում բառարանի սերվերի վրա '%s:%d'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1054
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1052
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
 msgstr "Հեսթի անվան որոնոնումը ձախողվեց '%s'. համապատասխան ռեսուրսներ չգտնվեց"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1085
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1083
 #, c-format
 msgid "Lookup failed for host '%s': %s"
 msgstr "Որոնումը հոսթի համար ձախողվեց '%s': %s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1119
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1117
 #, c-format
 msgid "Lookup failed for host '%s': host not found"
 msgstr "Հոսթի համար որոնումը ձախողվեց '%s': հոսթ չի գտնվել"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1171
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1169
 #, c-format
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
@@ -2150,7 +2156,7 @@ msgstr ""
 "Անհնար է միացնել բառարանի սերվերը '%s:%d'։ Սերվերը պատասխանեց ծածկագրով %d "
 "(սերվերը անջատված է)"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1190
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1188
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
@@ -2159,47 +2165,47 @@ msgstr ""
 "Անհնար է վերլուծել բառարանի սերվերի պատասխանը\n"
 ": '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1219
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1217
 #, c-format
 msgid "No definitions found for '%s'"
 msgstr "'%s' համար սահմանումներ չեն գտնվել"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1234
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1232
 #, c-format
 msgid "Invalid database '%s'"
 msgstr "Անվավեր տվյալների բազա '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1249
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1247
 #, c-format
 msgid "Invalid strategy '%s'"
 msgstr "Անվավեր ռազմավարություն '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1264
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1262
 #, c-format
 msgid "Bad command '%s'"
 msgstr "Վատ հրամանը  '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1279
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1277
 #, c-format
 msgid "Bad parameters for command '%s'"
 msgstr "'%s' հրամանի համար վատ պարամետրեր"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1294
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1292
 #, c-format
 msgid "No databases found on dictionary server at '%s'"
 msgstr "Տվյալների բազաներ չեն գտնվել բառարանի սերվերի վրա '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1309
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1307
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
 msgstr "Ռազմավարություններ չեն գտնվել բառարանի սերվերի վրա '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1734
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1732
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
 msgstr "Բառարանի սերվերի միացումը ձախողվել է %s:%d"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1773
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1771
 #, c-format
 msgid ""
 "Error while reading reply from server:\n"
@@ -2208,28 +2214,28 @@ msgstr ""
 "Սխալ մինչ սերվերի պատասխանի ընթերցումը։\n"
 "%s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1846
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1844
 #, c-format
 msgid "Connection timeout for the dictionary server at '%s:%d'"
 msgstr "Բառարանի սերվերի միացման ժամանակի ավարտը '%s:%d'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1880
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1878
 #, c-format
 msgid "No hostname defined for the dictionary server"
 msgstr "Բառարանի սերվերի համար հոսթի անուն չի սահմանվել"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1916
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1931
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1914
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1929
 #, c-format
 msgid "Unable to create socket"
 msgstr "Չհաջողվեց ստեղծել սոկետ"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1957
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1955
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
 msgstr "Անհնար է սահմանել կապուղին որպես չփակվող: %s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1972
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1970
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
 msgstr "Անհնար է միանալ բառարանի աղբյուրին '%s:%d'"
@@ -2242,15 +2248,15 @@ msgstr "Միայն Տեղային"
 msgid "Whether the context uses only local dictionaries or not"
 msgstr "Արդյոք համատեքստը օգտագործում է միայն տեղական բառարաններ թե ոչ"
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:379
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:376
 msgid "Reload the list of available databases"
 msgstr "Վերբեռնել հասանելի տվյալների բազաների ցանկը"
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:391
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:388
 msgid "Clear the list of available databases"
 msgstr "Մաքրել հասանելի տվյալների բազաների ցանկը"
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:841
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:836
 #: ../mate-dictionary/libgdict/gdict-speller.c:773
 #: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:783
 msgid "Error while matching"
@@ -2286,92 +2292,92 @@ msgstr "Խնդրում ենք սպասել, մինչ ընթացիկ որոնմա
 msgid "Error while retrieving the definition"
 msgstr "Սխալ մինչ սահմանման վերականգնումը"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:232
+#: ../mate-dictionary/libgdict/gdict-source.c:229
 msgid "Filename"
 msgstr "Ֆայլի անուն"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:233
+#: ../mate-dictionary/libgdict/gdict-source.c:230
 msgid "The filename used by this dictionary source"
 msgstr "Ֆայլի անունը օգտագործվել է այս բառարանի աղբյուրի կողմից"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:247
+#: ../mate-dictionary/libgdict/gdict-source.c:244
 msgid "The display name of this dictionary source"
 msgstr "Ցուցադրել այս բառարանի աղբյուրի անունը"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:260
+#: ../mate-dictionary/libgdict/gdict-source.c:257
 msgid "Description"
 msgstr "Նկարագրություն"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:261
+#: ../mate-dictionary/libgdict/gdict-source.c:258
 msgid "The description of this dictionary source"
 msgstr "Այս բառարանի աղբյուրի սահմանումը"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:274
+#: ../mate-dictionary/libgdict/gdict-source.c:271
 #: ../mate-dictionary/libgdict/gdict-speller.c:375
 msgid "Database"
 msgstr "Տվյալների բազա"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:275
+#: ../mate-dictionary/libgdict/gdict-source.c:272
 msgid "The default database of this dictionary source"
 msgstr "Այս բառարանի աղբյուրի նախնական տվյալների բազան"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:288
+#: ../mate-dictionary/libgdict/gdict-source.c:285
 #: ../mate-dictionary/libgdict/gdict-speller.c:382
 msgid "Strategy"
 msgstr "Ռազմավարություն"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:289
+#: ../mate-dictionary/libgdict/gdict-source.c:286
 msgid "The default strategy of this dictionary source"
 msgstr "Այս բառարանի աղբյուրի նախնական ռազմավարությունը"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:302
+#: ../mate-dictionary/libgdict/gdict-source.c:299
 msgid "Transport"
 msgstr "Տրանսպորտ"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:303
+#: ../mate-dictionary/libgdict/gdict-source.c:300
 msgid "The transport mechanism used by this dictionary source"
 msgstr "Փոխադրման մեխանիզմը օգտագործվում է այս բառարանի աղբյուրի կողմից"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:317
+#: ../mate-dictionary/libgdict/gdict-source.c:314
 #: ../mate-dictionary/libgdict/gdict-speller.c:368
 msgid "Context"
 msgstr "Համատեքստ"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:318
+#: ../mate-dictionary/libgdict/gdict-source.c:315
 msgid "The GdictContext bound to this source"
 msgstr "GdictContext  սահմանափակում է այս աղբյուրը"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:413
+#: ../mate-dictionary/libgdict/gdict-source.c:408
 #, c-format
 msgid "Invalid transport type '%d'"
 msgstr "Անվավեր փոխադրման տիպ '%d'"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:441
+#: ../mate-dictionary/libgdict/gdict-source.c:436
 #, c-format
 msgid "No '%s' group found inside the dictionary source definition"
 msgstr "'%s' խումբ չհայտնաբերվեց բառարանի աղբյուրի սահմանման ներսում"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:457
-#: ../mate-dictionary/libgdict/gdict-source.c:481
-#: ../mate-dictionary/libgdict/gdict-source.c:505
-#: ../mate-dictionary/libgdict/gdict-source.c:530
+#: ../mate-dictionary/libgdict/gdict-source.c:452
+#: ../mate-dictionary/libgdict/gdict-source.c:476
+#: ../mate-dictionary/libgdict/gdict-source.c:500
+#: ../mate-dictionary/libgdict/gdict-source.c:525
 #, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
 msgstr "Անհնար է ստանալ '%s' ստեղնը բառարանի աղբյուրի սահմանման ներսում: %s"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:555
+#: ../mate-dictionary/libgdict/gdict-source.c:550
 #, c-format
 msgid ""
 "Unable to get the '%s' key inside the dictionary source definition file: %s"
 msgstr ""
 "Անհնար է ստանալ '%s' ստեղնը բառարանի աղբյուրի սահմանման ֆայլի ներսում: %s"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:741
+#: ../mate-dictionary/libgdict/gdict-source.c:736
 #, c-format
 msgid "Dictionary source does not have name"
 msgstr "Բառարանի աղբյուրը անուն չունի"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:750
+#: ../mate-dictionary/libgdict/gdict-source.c:745
 #, c-format
 msgid "Dictionary source '%s' has invalid transport '%s'"
 msgstr "Բառարանի աղբյուրը '%s' ունի անվավեր փոխադրում '%s'"
@@ -2380,19 +2386,19 @@ msgstr "Բառարանի աղբյուրը '%s' ունի անվավեր փոխա�
 msgid "Reload the list of available sources"
 msgstr "Վերբեռնել հասանելի աղբյուրների ցանկը"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:165
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:163
 msgid "Paths"
 msgstr "ՈՒղիներ"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:166
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:164
 msgid "Search paths used by this object"
 msgstr "Որոնել այս օբյեկտր կողմից օգտագործված ուղղիները"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:178
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:176
 msgid "Sources"
 msgstr "Աղբյուրներ"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:179
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:177
 msgid "Dictionary sources found"
 msgstr "Գտնել բառարանի աղբյուր"
 
@@ -2442,7 +2448,7 @@ msgid "Show GDict Options"
 msgstr "Դիտել GDict տարբերակները"
 
 #: ../mate-dictionary/src/gdict-about.c:57
-#: ../mate-dictionary/src/gdict-applet.c:589
+#: ../mate-dictionary/src/gdict-applet.c:587
 msgid "Look up words in dictionaries"
 msgstr "Դիտել բառարանի բառերը"
 
@@ -2553,84 +2559,84 @@ msgstr "տբ"
 msgid " - Look up words in dictionaries"
 msgstr "- Դիտել բառարանի բառերը"
 
-#: ../mate-dictionary/src/gdict-applet.c:206
+#: ../mate-dictionary/src/gdict-applet.c:204
 #: ../mate-dictionary/src/gdict-window.c:962
 msgid "Save a Copy"
 msgstr "Պահպանել Պատճենը"
 
-#: ../mate-dictionary/src/gdict-applet.c:216
+#: ../mate-dictionary/src/gdict-applet.c:214
 #: ../mate-dictionary/src/gdict-window.c:972
 msgid "Untitled document"
 msgstr "Անվերնագիր փաստաթղթեր"
 
-#: ../mate-dictionary/src/gdict-applet.c:237
+#: ../mate-dictionary/src/gdict-applet.c:235
 #: ../mate-dictionary/src/gdict-window.c:993
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "Սխալ՝ գրելու ժամանակ '%s'"
 
-#: ../mate-dictionary/src/gdict-applet.c:362
+#: ../mate-dictionary/src/gdict-applet.c:360
 msgid "Clear the definitions found"
 msgstr "Մաքրել գտնված սահմանումները"
 
-#: ../mate-dictionary/src/gdict-applet.c:364
+#: ../mate-dictionary/src/gdict-applet.c:362
 msgid "Clear definition"
 msgstr "Մաքրել սահմանումը"
 
-#: ../mate-dictionary/src/gdict-applet.c:365
+#: ../mate-dictionary/src/gdict-applet.c:363
 msgid "Clear the text of the definition"
 msgstr "Մաքրել սահմանման տեքստը"
 
-#: ../mate-dictionary/src/gdict-applet.c:377
+#: ../mate-dictionary/src/gdict-applet.c:375
 msgid "Print the definitions found"
 msgstr "Տպել գտնված սահմանումները"
 
-#: ../mate-dictionary/src/gdict-applet.c:379
+#: ../mate-dictionary/src/gdict-applet.c:377
 msgid "Print definition"
 msgstr "Տպել սահմանումը"
 
-#: ../mate-dictionary/src/gdict-applet.c:380
+#: ../mate-dictionary/src/gdict-applet.c:378
 msgid "Print the text of the definition"
 msgstr "Տպել սահմանման տեքստը"
 
-#: ../mate-dictionary/src/gdict-applet.c:392
+#: ../mate-dictionary/src/gdict-applet.c:390
 msgid "Save the definitions found"
 msgstr "Պահպանել գտնելու սահմանումները"
 
-#: ../mate-dictionary/src/gdict-applet.c:394
+#: ../mate-dictionary/src/gdict-applet.c:392
 msgid "Save definition"
 msgstr "Պահպանել սահմանումը"
 
-#: ../mate-dictionary/src/gdict-applet.c:395
+#: ../mate-dictionary/src/gdict-applet.c:393
 msgid "Save the text of the definition to a file"
 msgstr "Պահպանել սահմանման տեքստը ֆայլում"
 
-#: ../mate-dictionary/src/gdict-applet.c:532
+#: ../mate-dictionary/src/gdict-applet.c:530
 msgid "Click to view the dictionary window"
 msgstr "Սեղմեք բառարանի պատուհանը տեսնելու համար"
 
-#: ../mate-dictionary/src/gdict-applet.c:534
+#: ../mate-dictionary/src/gdict-applet.c:532
 msgid "Toggle dictionary window"
 msgstr "Փոխանջատել բառարանի պատուհան"
 
-#: ../mate-dictionary/src/gdict-applet.c:535
+#: ../mate-dictionary/src/gdict-applet.c:533
 msgid "Show or hide the definition window"
 msgstr "Ցույց տալ կամ թաքցնել սահմանման պատուհանը"
 
-#: ../mate-dictionary/src/gdict-applet.c:586
+#: ../mate-dictionary/src/gdict-applet.c:584
 msgid "Type the word you want to look up"
 msgstr "Մուտքագրել բառը, որը դուք ցանկանում եք տեսնել վերևում"
 
-#: ../mate-dictionary/src/gdict-applet.c:588
+#: ../mate-dictionary/src/gdict-applet.c:586
 msgid "Dictionary entry"
 msgstr "Բառահոդված"
 
-#: ../mate-dictionary/src/gdict-applet.c:717
+#: ../mate-dictionary/src/gdict-applet.c:715
 #: ../mate-dictionary/src/gdict-window.c:1104
 msgid "Dictionary Preferences"
 msgstr "Բառարանի Նախընտրանքներ"
 
-#: ../mate-dictionary/src/gdict-applet.c:741
+#: ../mate-dictionary/src/gdict-applet.c:739
 #: ../mate-dictionary/src/gdict-pref-dialog.c:498
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
 #: ../mate-dictionary/src/gdict-window.c:1251
@@ -2638,45 +2644,45 @@ msgstr "Բառարանի Նախընտրանքներ"
 msgid "There was an error while displaying help"
 msgstr "Սխալ՝ օգնության պատուհանը ցույց տալու ժամանակ։"
 
-#: ../mate-dictionary/src/gdict-applet.c:880
+#: ../mate-dictionary/src/gdict-applet.c:878
 #: ../mate-dictionary/src/gdict-window.c:522
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "Չկա '%s' անունով հասանելի բառարանի աղբյուր"
 
-#: ../mate-dictionary/src/gdict-applet.c:884
+#: ../mate-dictionary/src/gdict-applet.c:882
 #: ../mate-dictionary/src/gdict-window.c:526
 msgid "Unable to find dictionary source"
 msgstr "Անհնար է գտնել բառարանի աղբյուր"
 
-#: ../mate-dictionary/src/gdict-applet.c:900
+#: ../mate-dictionary/src/gdict-applet.c:898
 #: ../mate-dictionary/src/gdict-window.c:542
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "Չկա '%s' աղբյուրի համար հասանելի կոնտեքստ "
 
-#: ../mate-dictionary/src/gdict-applet.c:904
+#: ../mate-dictionary/src/gdict-applet.c:902
 #: ../mate-dictionary/src/gdict-window.c:546
 msgid "Unable to create a context"
 msgstr "Անհնար է ստեղծել կոնտեքստ"
 
-#: ../mate-dictionary/src/gdict-applet.c:1172
+#: ../mate-dictionary/src/gdict-applet.c:1168
 msgid "_Look Up Selected Text"
 msgstr "_Նայել Ընտրված Տեքստը"
 
-#: ../mate-dictionary/src/gdict-applet.c:1175
+#: ../mate-dictionary/src/gdict-applet.c:1171
 msgid "Cl_ear"
 msgstr "Մաքրել"
 
-#: ../mate-dictionary/src/gdict-applet.c:1178
+#: ../mate-dictionary/src/gdict-applet.c:1174
 msgid "_Print"
 msgstr "_Տպել"
 
-#: ../mate-dictionary/src/gdict-applet.c:1181
+#: ../mate-dictionary/src/gdict-applet.c:1177
 msgid "_Save"
 msgstr "_Պահպանել"
 
-#: ../mate-dictionary/src/gdict-applet.c:1184
+#: ../mate-dictionary/src/gdict-applet.c:1180
 msgid "Preferences"
 msgstr "Հատկություններ"
 
@@ -2714,19 +2720,19 @@ msgstr "Սա մշտապես կհեռացնի բառարանի աղբյուրը �
 msgid "Unable to remove source '%s'"
 msgstr "Անհնար է հեռացնել աղբյուրը '%s'"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:645
+#: ../mate-dictionary/src/gdict-pref-dialog.c:709
 msgid "Add a new dictionary source"
 msgstr "Ավելացնել նոր բառարանի աղբյուր"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:651
+#: ../mate-dictionary/src/gdict-pref-dialog.c:715
 msgid "Remove the currently selected dictionary source"
 msgstr "Հեռացնել ներկայումս ընտրված բառարանի աղբյուրը"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:657
+#: ../mate-dictionary/src/gdict-pref-dialog.c:721
 msgid "Edit the currently selected dictionary source"
 msgstr "Խմբագրել ներկայումս ընտրված բառարանի աղբյուրը"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:665
+#: ../mate-dictionary/src/gdict-pref-dialog.c:729
 msgid "Set the font used for printing the definitions"
 msgstr "Սահմանել տառատեսակը տպագրության սահմանումների օգտագործման համար"
 
@@ -2980,6 +2986,78 @@ msgstr "Բառարաններ"
 #: ../mate-dictionary/data/mate-dictionary-source.ui.h:8
 msgid "Strategies"
 msgstr "Ռազմավարություններ"
+
+#: ../mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in.h:1
+#: ../mate-disk-image-mounter/src/main.c:59
+msgid "MATE Disk Image Mounter"
+msgstr ""
+
+#: ../mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in.h:2
+msgid "Attach and mount one or more disk image files"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:57
+msgid "An error occurred"
+msgstr "Տեղի է ունեցել սխալ"
+
+#: ../mate-disk-image-mounter/src/main.c:78
+msgid "Allow writing to the image"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:98
+msgid "All Files"
+msgstr "Բոլոր Ֆայլերը"
+
+#: ../mate-disk-image-mounter/src/main.c:102
+msgid "Disk Images (*.img, *.iso)"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:118
+msgid "Select Disk Image(s) to Mount"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:121
+msgid "_Cancel"
+msgstr "_Չեղարկել "
+
+#: ../mate-disk-image-mounter/src/main.c:122
+msgid "_Mount"
+msgstr "_Տեղակայել"
+
+#. Add a RO check button that defaults to RO
+#: ../mate-disk-image-mounter/src/main.c:128
+msgid "Set up _read-only mount"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:129
+msgid ""
+"If checked, the mount will be read-only. This is useful if you don't want "
+"the underlying disk image to be modified"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:173
+#, c-format
+msgid "Error connecting to udisks daemon: %s (%s, %d)"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:181
+msgid "Attach and mount one or more disk image files."
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:229
+#, c-format
+msgid "Cannot open `%s' - maybe the volume isn't mounted?"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:236
+#, c-format
+msgid "Error opening `%s': %m"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:257
+#, c-format
+msgid "Error attaching disk image: %s (%s, %d)"
+msgstr ""
 
 #: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:1
 msgid "A screenshot utility for MATE Desktop"

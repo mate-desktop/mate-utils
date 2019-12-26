@@ -6,16 +6,16 @@
 # Translators:
 # Mooglie <mooglietech@gmail.com>, 2018
 # Kamala Kannan, 2018
-# Stefano Karapetsas <stefano@karapetsas.com>, 2018
+# Stefano Karapetsas <stefano@karapetsas.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-06 13:25+0200\n"
+"POT-Creation-Date: 2019-10-10 20:09+0200\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2018\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2019\n"
 "Language-Team: Tamil (https://www.transifex.com/mate/teams/13566/ta/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -64,7 +64,7 @@ msgid "S_can Remote Folder..."
 msgstr "தொலை அடைவினை _வருடவும்..."
 
 #: ../baobab/data/baobab-main-window.ui.h:6
-#: ../logview/src/logview-window.c:822
+#: ../logview/src/logview-window.c:819
 #: ../mate-dictionary/src/gdict-window.c:1286
 msgid "_Edit"
 msgstr "தொகு (_E)"
@@ -78,7 +78,7 @@ msgid "_Collapse All"
 msgstr "_ச எல்லாவற்றையும் சுருக்குக"
 
 #: ../baobab/data/baobab-main-window.ui.h:9
-#: ../logview/src/logview-window.c:823
+#: ../logview/src/logview-window.c:820
 #: ../mate-dictionary/src/gdict-window.c:1287
 msgid "_View"
 msgstr "_பார்"
@@ -96,15 +96,15 @@ msgid "All_ocated Space"
 msgstr "_ஒதுக்கப்பட்ட இடம் "
 
 #: ../baobab/data/baobab-main-window.ui.h:13
-#: ../logview/src/logview-window.c:825
-#: ../mate-dictionary/src/gdict-applet.c:1187
+#: ../logview/src/logview-window.c:822
+#: ../mate-dictionary/src/gdict-applet.c:1183
 #: ../mate-dictionary/src/gdict-window.c:1289
 msgid "_Help"
 msgstr "_உதவி"
 
 #. Help menu
 #: ../baobab/data/baobab-main-window.ui.h:14
-#: ../logview/src/logview-window.c:851
+#: ../logview/src/logview-window.c:848
 #: ../mate-dictionary/src/gdict-window.c:1339
 msgid "_Contents"
 msgstr "_C உள்ளடக்கங்கள்"
@@ -315,40 +315,40 @@ msgstr "எந்த ஏற்றப்புள்ளியையும் க�
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr "ஏற்றப்புள்ளிகள் இல்லாமல் வட்டு பயன்பாடை ஆராய இயலாது"
 
-#: ../baobab/src/baobab-chart.c:209
+#: ../baobab/src/baobab-chart.c:205
 msgid "Maximum depth"
 msgstr "அதிகபட்ச ஆழம்"
 
-#: ../baobab/src/baobab-chart.c:210
+#: ../baobab/src/baobab-chart.c:206
 msgid "The maximum depth drawn in the chart from the root"
 msgstr "வரைபடத்தில் மூலத்தில் இருந்து வரையப்படும் அதிகபட்ச ஆழம்."
 
-#: ../baobab/src/baobab-chart.c:219
+#: ../baobab/src/baobab-chart.c:215
 msgid "Chart model"
 msgstr "வரைபட மாதிரி"
 
-#: ../baobab/src/baobab-chart.c:220
+#: ../baobab/src/baobab-chart.c:216
 msgid "Set the model of the chart"
 msgstr "வரைபட மாதிரியை அமை"
 
-#: ../baobab/src/baobab-chart.c:227
+#: ../baobab/src/baobab-chart.c:223
 msgid "Chart root node"
 msgstr "வரைபட மூல முடிச்சு"
 
-#: ../baobab/src/baobab-chart.c:228
+#: ../baobab/src/baobab-chart.c:224
 msgid "Set the root node from the model"
 msgstr "வளையங்கள் வரைபட மூல முடிச்சை அமை"
 
-#: ../baobab/src/baobab-chart.c:1712
+#: ../baobab/src/baobab-chart.c:1706
 msgid "Cannot create pixbuf image!"
 msgstr "pixbuf உருவினை உருவாக்க முடியவில்லை!"
 
 #. Popup the File chooser dialog
-#: ../baobab/src/baobab-chart.c:1722
+#: ../baobab/src/baobab-chart.c:1716
 msgid "Save Snapshot"
 msgstr "திரைப்பிடிப்பினை சேமி"
 
-#: ../baobab/src/baobab-chart.c:1749
+#: ../baobab/src/baobab-chart.c:1743
 msgid "_Image type:"
 msgstr "_ப பிம்ப வகை:"
 
@@ -1234,7 +1234,7 @@ msgid "List View"
 msgstr "பட்டியல் பார்வை"
 
 #: ../gsearchtool/src/gsearchtool.c:2412
-#: ../mate-dictionary/libgdict/gdict-source.c:246
+#: ../mate-dictionary/libgdict/gdict-source.c:243
 msgid "Name"
 msgstr "பெயர்"
 
@@ -1685,85 +1685,91 @@ msgstr "விளைவுகள்:"
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
 
-#: ../logview/src/logview-app.c:376
+#: ../logview/src/logview-app.c:371
 #, c-format
 msgid "Impossible to open the file %s"
 msgstr "கோப்பு %sஐ திறக்க வாய்ப்பில்லை"
 
-#: ../logview/src/logview-filter-manager.c:94
+#: ../logview/src/logview-filter-manager.c:91
 msgid "Filter name is empty!"
 msgstr "கோப்பு பெயர் காலியாக உள்ளது!"
 
-#: ../logview/src/logview-filter-manager.c:107
+#: ../logview/src/logview-filter-manager.c:104
 msgid "Filter name may not contain the ':' character"
 msgstr "வடிப்பியில் : எழுத்துரு இருக்கலாகாது"
 
-#: ../logview/src/logview-filter-manager.c:130
+#: ../logview/src/logview-filter-manager.c:127
 msgid "Regular expression is empty!"
 msgstr "இயல்பான வெளிப்பாடு வெற்றாக உள்ளது!"
 
-#: ../logview/src/logview-filter-manager.c:146
+#: ../logview/src/logview-filter-manager.c:143
 #, c-format
 msgid "Regular expression is invalid: %s"
 msgstr "இயல்பான வெளிப்பாடு செல்லுபடியாகாதது: %s"
 
-#: ../logview/src/logview-filter-manager.c:240
+#: ../logview/src/logview-filter-manager.c:237
 msgid "Please specify either foreground or background color!"
 msgstr "தயை  செய்து முன்புலம் அல்லது பின்புல வண்னத்தை குறிப்பிடுக."
 
-#: ../logview/src/logview-filter-manager.c:294
+#: ../logview/src/logview-filter-manager.c:291
 msgid "Edit filter"
 msgstr "வடிப்பியை  திருத்துக"
 
-#: ../logview/src/logview-filter-manager.c:294
+#: ../logview/src/logview-filter-manager.c:291
 msgid "Add new filter"
 msgstr "புதிய வடிப்பியை சேர்க்கவும்"
 
-#: ../logview/src/logview-filter-manager.c:522
+#: ../logview/src/logview-filter-manager.c:519
 msgid "Filters"
 msgstr "கோப்புகள்"
 
-#: ../logview/src/logview-findbar.c:172
+#: ../logview/src/logview-findbar.c:169
 msgid "_Find:"
 msgstr "தேடு (_F):"
 
-#: ../logview/src/logview-findbar.c:187
+#: ../logview/src/logview-findbar.c:184
 msgid "Find Previous"
 msgstr "முந்தையதை தேடு"
 
-#: ../logview/src/logview-findbar.c:190
+#: ../logview/src/logview-findbar.c:187
 msgid "Find previous occurrence of the search string"
 msgstr "வார்த்தை அல்லது சொல் தொடரின் முந்தைய தோன்றலை தேடுக"
 
-#: ../logview/src/logview-findbar.c:195
+#: ../logview/src/logview-findbar.c:192
 msgid "Find Next"
 msgstr "அடுத்ததை தேடு"
 
-#: ../logview/src/logview-findbar.c:198
+#: ../logview/src/logview-findbar.c:195
 msgid "Find next occurrence of the search string"
 msgstr "சொல் அல்லது சொற்றொடரின் அடுத்த நிகழ்வை தேடவும்"
 
-#: ../logview/src/logview-findbar.c:205
+#: ../logview/src/logview-findbar.c:202
 msgid "Clear the search string"
 msgstr "தேடும் சரத்தை துடை"
 
-#: ../logview/src/logview-log.c:593
+#: ../logview/src/logview-log.c:588
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
 msgstr "GZipped பதிவை விரிவாக்கும் போது பிழை. கோப்பு அழிக்கப்பட்டிருக்கும்."
 
-#: ../logview/src/logview-log.c:640
+#: ../logview/src/logview-log.c:635
 msgid "You don't have enough permissions to read the file."
 msgstr "கோப்பினை வாசிக்க போதிய உரிமை உங்களுக்கு இல்லை"
 
-#: ../logview/src/logview-log.c:655
+#: ../logview/src/logview-log.c:650
 msgid "The file is not a regular file or is not a text file."
 msgstr "கோப்பு ஒரு வழக்கமான கோப்பில்லை அல்லது ஒரு உரை கோப்பில்லை."
 
-#: ../logview/src/logview-log.c:737
+#: ../logview/src/logview-log.c:732
 msgid "This version of System Log does not support GZipped logs."
 msgstr "இந்த கணினி பதிவின் பதிப்பு GZipped பதிவுகளுக்கு துணைபுரியாது."
 
-#: ../logview/src/logview-loglist.c:316
+#. TRANSLATORS: "strftime format options, see the man page for strftime(3) for
+#. further information."
+#: ../logview/src/logview-loglist.c:103
+msgid "%A, %e %b"
+msgstr ""
+
+#: ../logview/src/logview-loglist.c:314
 msgid "Loading..."
 msgstr "தேடுகிறது..."
 
@@ -1783,195 +1789,195 @@ msgstr " - பதிவுகளை உலாவு மற்றும் கண
 msgid "Log Viewer"
 msgstr "பதிவு காட்டி"
 
-#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:771
+#: ../logview/src/logview-window.c:38 ../logview/src/logview-window.c:768
 msgid "System Log Viewer"
 msgstr "கணினி பதிவுகளை பார்க"
 
-#: ../logview/src/logview-window.c:217
+#: ../logview/src/logview-window.c:213
 #, c-format
 msgid "last update: %s"
 msgstr "கடைசி புதுப்பித்தல் : %s"
 
-#: ../logview/src/logview-window.c:221
+#: ../logview/src/logview-window.c:217
 #, c-format
 msgid "%d lines (%s) - %s"
 msgstr "%d வரிகள் (%s) - %s"
 
-#: ../logview/src/logview-window.c:325
+#: ../logview/src/logview-window.c:322
 msgid "Open Log"
 msgstr "பதிவினை திற"
 
-#: ../logview/src/logview-window.c:364
+#: ../logview/src/logview-window.c:361
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "தொடங்கும் போது பிழை.%s"
 
-#: ../logview/src/logview-window.c:478
+#: ../logview/src/logview-window.c:475
 msgid "Wrapped"
 msgstr "சுற்றப்பட்டது"
 
-#: ../logview/src/logview-window.c:493
+#: ../logview/src/logview-window.c:490
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1125
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1219
 #: ../mate-dictionary/libgdict/gdict-defbox.c:1253
 msgid "Not found"
 msgstr "காண முடியவில்லை"
 
-#: ../logview/src/logview-window.c:773
+#: ../logview/src/logview-window.c:770
 msgid "About System Log Viewer"
 msgstr ""
 
-#: ../logview/src/logview-window.c:774
+#: ../logview/src/logview-window.c:771
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
 "Copyright © 2011-2019 MATE developers"
 msgstr ""
 
-#: ../logview/src/logview-window.c:778
+#: ../logview/src/logview-window.c:775
 msgid "A system log viewer for MATE."
 msgstr "க்னோம் பதிவு பார்க்கும் மென்பொருள்"
 
-#: ../logview/src/logview-window.c:821
+#: ../logview/src/logview-window.c:818
 #: ../mate-dictionary/src/gdict-window.c:1285
 msgid "_File"
 msgstr "_F கோப்பு"
 
-#: ../logview/src/logview-window.c:824
+#: ../logview/src/logview-window.c:821
 msgid "_Filters"
 msgstr "(_F) கோப்புகள்"
 
-#: ../logview/src/logview-window.c:827
+#: ../logview/src/logview-window.c:824
 msgid "_Open..."
 msgstr "திற...(_O)"
 
-#: ../logview/src/logview-window.c:827
+#: ../logview/src/logview-window.c:824
 msgid "Open a log from file"
 msgstr "கோப்பிலிருந்து ஒரு பதிவினை திறக்கவும்"
 
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:826
 #: ../mate-dictionary/src/gdict-window.c:1300
 msgid "_Close"
 msgstr "மூடு (_C)"
 
-#: ../logview/src/logview-window.c:829
+#: ../logview/src/logview-window.c:826
 msgid "Close this log"
 msgstr "இந்தப் பதிவினை மூடு"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:828
 msgid "_Quit"
 msgstr "_வ _வெளிச்செல்"
 
-#: ../logview/src/logview-window.c:831
+#: ../logview/src/logview-window.c:828
 msgid "Quit the log viewer"
 msgstr "பதிவு காட்டியை விட்டு வெளியேறு"
 
 #. Edit menu
-#: ../logview/src/logview-window.c:834
+#: ../logview/src/logview-window.c:831
 #: ../mate-dictionary/src/gdict-window.c:1304
 msgid "_Copy"
 msgstr "நகல் (_C)"
 
-#: ../logview/src/logview-window.c:834
+#: ../logview/src/logview-window.c:831
 msgid "Copy the selection"
 msgstr "தேர்ந்தெடுத்ததை நகலெடுக்கவும்"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:833
 #: ../mate-dictionary/src/gdict-window.c:1306
 msgid "Select _All"
 msgstr "அனைத்தையும் தேர்ந்தெடு (_A)"
 
-#: ../logview/src/logview-window.c:836
+#: ../logview/src/logview-window.c:833
 msgid "Select the entire log"
 msgstr "முழு பதிவினை தேர்ந்தெடு"
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:835
 msgid "_Find..."
 msgstr "_கண்டுபிடி..."
 
-#: ../logview/src/logview-window.c:838
+#: ../logview/src/logview-window.c:835
 msgid "Find a word or phrase in the log"
 msgstr "இந்த பதிவில் ஒரு சொல் அல்லது சொற்றொடரை தேடு "
 
-#: ../logview/src/logview-window.c:841
+#: ../logview/src/logview-window.c:838
 msgid "Zoom _In"
 msgstr "(_I)சிறிதாக்கு"
 
-#: ../logview/src/logview-window.c:841
+#: ../logview/src/logview-window.c:838
 msgid "Bigger text size"
 msgstr "பெரிய உரை அளவு"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:840
 msgid "Zoom _Out"
 msgstr "(_O) விலகிப் பார்"
 
-#: ../logview/src/logview-window.c:843
+#: ../logview/src/logview-window.c:840
 msgid "Smaller text size"
 msgstr "சிறிய உரை அளவு"
 
-#: ../logview/src/logview-window.c:845
+#: ../logview/src/logview-window.c:842
 msgid "_Normal Size"
 msgstr "(_N) இயல்பான அளவு"
 
-#: ../logview/src/logview-window.c:845
+#: ../logview/src/logview-window.c:842
 msgid "Normal text size"
 msgstr "இயல்பான உரை அளவு"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:845
 msgid "Manage Filters"
 msgstr "வடிப்பிகளை மேலாள்க"
 
-#: ../logview/src/logview-window.c:848
+#: ../logview/src/logview-window.c:845
 msgid "Manage filters"
 msgstr "வடிப்பிகளை மேலாள்க"
 
-#: ../logview/src/logview-window.c:851
+#: ../logview/src/logview-window.c:848
 msgid "Open the help contents for the log viewer"
 msgstr "பதிவு காட்டியின் உதவி உள்ளடக்கங்களை திற"
 
-#: ../logview/src/logview-window.c:853
-#: ../mate-dictionary/src/gdict-applet.c:1190
+#: ../logview/src/logview-window.c:850
+#: ../mate-dictionary/src/gdict-applet.c:1186
 #: ../mate-dictionary/src/gdict-window.c:1341
 msgid "_About"
 msgstr "பற்றி "
 
-#: ../logview/src/logview-window.c:853
+#: ../logview/src/logview-window.c:850
 msgid "Show the about dialog for the log viewer"
 msgstr "பதிவு காட்டிக்கு பற்றி உரையாடலை காட்டு"
 
-#: ../logview/src/logview-window.c:858
+#: ../logview/src/logview-window.c:855
 msgid "_Statusbar"
 msgstr "நிலைப்பட்டை (_S)"
 
-#: ../logview/src/logview-window.c:858
+#: ../logview/src/logview-window.c:855
 msgid "Show Status Bar"
 msgstr "நிலைப்பட்டையை காட்டு"
 
-#: ../logview/src/logview-window.c:860
+#: ../logview/src/logview-window.c:857
 msgid "Side _Pane"
 msgstr "பக்க பலகம் (_P)"
 
-#: ../logview/src/logview-window.c:860
+#: ../logview/src/logview-window.c:857
 msgid "Show Side Pane"
 msgstr "பக்க பலகத்தை காட்டு"
 
-#: ../logview/src/logview-window.c:862
+#: ../logview/src/logview-window.c:859
 msgid "Show matches only"
 msgstr "பொருத்தங்களை மட்டும் காண்பி"
 
-#: ../logview/src/logview-window.c:862
+#: ../logview/src/logview-window.c:859
 msgid "Only show lines that match one of the given filters"
 msgstr "கொடுத்த வடிப்பிகளுக்கு பொருத்தமான வரிகளை மட்டும் காண்பி"
 
-#: ../logview/src/logview-window.c:994
+#: ../logview/src/logview-window.c:991
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr " \"%s\" -லிருந்து படிக்க முடியவில்லை"
 
-#: ../logview/src/logview-window.c:1419
+#: ../logview/src/logview-window.c:1416
 msgid "Version: "
 msgstr "பதிப்பு: "
 
-#: ../logview/src/logview-window.c:1527
+#: ../logview/src/logview-window.c:1522
 msgid "Could not open the following files:"
 msgstr "பின்வரும் கோப்புகளை திறக்க முடியவில்லை:"
 
@@ -2094,27 +2100,27 @@ msgstr "நிலை"
 msgid "The status code as returned by the dictionary server"
 msgstr "அகராதி சேவையகத்தால் வழங்கப்பட்ட நிலை குறியீடு"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:774
+#: ../mate-dictionary/libgdict/gdict-client-context.c:772
 #, c-format
 msgid "No connection to the dictionary server at '%s:%d'"
 msgstr "'%s:%d'ல் அகராதி சேவையுடன் இணைப்பு இல்லை."
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1054
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1052
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
 msgstr "புரவனை பார்க்க இயலவில்லை '%s':  பொருத்தமான வளங்கள் காணப்படவில்லை"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1085
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1083
 #, c-format
 msgid "Lookup failed for host '%s': %s"
 msgstr "புரவலன் '%s'ஐ தேட முடியவில்லை: %s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1119
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1117
 #, c-format
 msgid "Lookup failed for host '%s': host not found"
 msgstr "புரவலன் '%s'ஐ தேட முடியவில்லை: புரவலனை காணவில்லை"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1171
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1169
 #, c-format
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
@@ -2123,7 +2129,7 @@ msgstr ""
 "அகராதி சேவையகத்துடன் ('%s:%d'.  இல்) இணைக்க முடியவில்லை. சேவையகம் குறி  %d "
 "என பதில் தந்தது. (சேவயகம் செய்லில் இல்லை)"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1190
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1188
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
@@ -2132,47 +2138,47 @@ msgstr ""
 "அகராதி சேவையக பதிலை கோவைப்படுத்த முடியவில்லை\n"
 ": '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1219
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1217
 #, c-format
 msgid "No definitions found for '%s'"
 msgstr "'%s'க்கு விளக்கம் எதுவும் கிடைக்கவில்லை"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1234
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1232
 #, c-format
 msgid "Invalid database '%s'"
 msgstr "தவறான தரவுத்தளம் '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1249
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1247
 #, c-format
 msgid "Invalid strategy '%s'"
 msgstr "தவறான திட்டம் '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1264
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1262
 #, c-format
 msgid "Bad command '%s'"
 msgstr "தவறான கட்டளை '%s'"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1279
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1277
 #, c-format
 msgid "Bad parameters for command '%s'"
 msgstr "'%s' கட்டளைக்கு தவறான மதிப்புகள்"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1294
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1292
 #, c-format
 msgid "No databases found on dictionary server at '%s'"
 msgstr "'%s'ல் அகராதி சேவையகத்தில் தரவுத்தளங்களை காண முடியவில்லை"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1309
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1307
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
 msgstr "'%s'ல் அகராதி சேவையகத்தில் எந்த கூறுகளும் இல்லை"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1734
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1732
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
 msgstr "%sல் அகராதி சேவையகத்தை இணைக்க முடியவில்லை:%d"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1773
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1771
 #, c-format
 msgid ""
 "Error while reading reply from server:\n"
@@ -2181,28 +2187,28 @@ msgstr ""
 "சேவையகத்திலிருந்து பதிலை படிக்கும் போது பிழை:\n"
 "%s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1846
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1844
 #, c-format
 msgid "Connection timeout for the dictionary server at '%s:%d'"
 msgstr "இந்த அகராதி சேவையகத்துக்கு நேரம் தவறியது. இணைக்க முடியவில்லை:'%s:%d"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1880
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1878
 #, c-format
 msgid "No hostname defined for the dictionary server"
 msgstr "அகராதி சேவையகத்திற்கு ஒரு புரவலன் பெயரும் குறிப்பிடப்படவில்லை"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1916
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1931
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1914
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1929
 #, c-format
 msgid "Unable to create socket"
 msgstr "இணைப்பியை உருவாக்க முடியவில்லை"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1957
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1955
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
 msgstr "தடைபடாத தடம் என அமைக்க முடியவில்லை: %s"
 
-#: ../mate-dictionary/libgdict/gdict-client-context.c:1972
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1970
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
 msgstr "'%sல் அகராதி சேவையகத்தை இணைக்க முடியவில்லை:%d'"
@@ -2215,15 +2221,15 @@ msgstr "இருப்பிடம் மட்டும்"
 msgid "Whether the context uses only local dictionaries or not"
 msgstr "சூழல் உள்ளமை அகராதிகளை மட்டும் பயன்படுத்துகிறதா இல்லையா"
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:379
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:376
 msgid "Reload the list of available databases"
 msgstr "இருக்கும் தரவுத்தளங்களின் பட்டியலை மீண்டும் ஏற்றவும்"
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:391
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:388
 msgid "Clear the list of available databases"
 msgstr "இருக்கும் தரவுத்தளங்களின் பட்டியலை துடைக்கவும்"
 
-#: ../mate-dictionary/libgdict/gdict-database-chooser.c:841
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:836
 #: ../mate-dictionary/libgdict/gdict-speller.c:773
 #: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:783
 msgid "Error while matching"
@@ -2259,92 +2265,92 @@ msgstr "நடப்பு தேடுதல்கள் முடியும�
 msgid "Error while retrieving the definition"
 msgstr "விளக்கங்களை எடுக்கும் போது பிழை"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:232
+#: ../mate-dictionary/libgdict/gdict-source.c:229
 msgid "Filename"
 msgstr "கோப்புப்பெயர்"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:233
+#: ../mate-dictionary/libgdict/gdict-source.c:230
 msgid "The filename used by this dictionary source"
 msgstr "இந்த அகராதி மூலத்தில் பயன்படுத்தப்பட்ட கோப்பு பெயர்"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:247
+#: ../mate-dictionary/libgdict/gdict-source.c:244
 msgid "The display name of this dictionary source"
 msgstr ""
 
-#: ../mate-dictionary/libgdict/gdict-source.c:260
+#: ../mate-dictionary/libgdict/gdict-source.c:257
 msgid "Description"
 msgstr "விவரம்"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:261
+#: ../mate-dictionary/libgdict/gdict-source.c:258
 msgid "The description of this dictionary source"
 msgstr "இந்த அகராதி மூலத்தின் விவரம்"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:274
+#: ../mate-dictionary/libgdict/gdict-source.c:271
 #: ../mate-dictionary/libgdict/gdict-speller.c:375
 msgid "Database"
 msgstr "தரவுத்தளம்"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:275
+#: ../mate-dictionary/libgdict/gdict-source.c:272
 msgid "The default database of this dictionary source"
 msgstr ""
 
-#: ../mate-dictionary/libgdict/gdict-source.c:288
+#: ../mate-dictionary/libgdict/gdict-source.c:285
 #: ../mate-dictionary/libgdict/gdict-speller.c:382
 msgid "Strategy"
 msgstr "திட்டம்"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:289
+#: ../mate-dictionary/libgdict/gdict-source.c:286
 msgid "The default strategy of this dictionary source"
 msgstr ""
 
-#: ../mate-dictionary/libgdict/gdict-source.c:302
+#: ../mate-dictionary/libgdict/gdict-source.c:299
 msgid "Transport"
 msgstr "போக்குவரத்து"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:303
+#: ../mate-dictionary/libgdict/gdict-source.c:300
 msgid "The transport mechanism used by this dictionary source"
 msgstr "இந்த அகராதி மூலத்தில் பயன்படுத்தப்பட்ட போக்குவரத்து தொழில்நுட்பம்"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:317
+#: ../mate-dictionary/libgdict/gdict-source.c:314
 #: ../mate-dictionary/libgdict/gdict-speller.c:368
 msgid "Context"
 msgstr "சூழல்"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:318
+#: ../mate-dictionary/libgdict/gdict-source.c:315
 msgid "The GdictContext bound to this source"
 msgstr "GdictContext இந்த மூலத்துடன் பிணைத்துள்ளது"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:413
+#: ../mate-dictionary/libgdict/gdict-source.c:408
 #, c-format
 msgid "Invalid transport type '%d'"
 msgstr "தவறான போக்குவரத்து வகை '%d'"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:441
+#: ../mate-dictionary/libgdict/gdict-source.c:436
 #, c-format
 msgid "No '%s' group found inside the dictionary source definition"
 msgstr "அகராதி மூலம் வரையரையுள் எந்த  '%s'  குழுவும் இல்லை"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:457
-#: ../mate-dictionary/libgdict/gdict-source.c:481
-#: ../mate-dictionary/libgdict/gdict-source.c:505
-#: ../mate-dictionary/libgdict/gdict-source.c:530
+#: ../mate-dictionary/libgdict/gdict-source.c:452
+#: ../mate-dictionary/libgdict/gdict-source.c:476
+#: ../mate-dictionary/libgdict/gdict-source.c:500
+#: ../mate-dictionary/libgdict/gdict-source.c:525
 #, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
 msgstr "அகராதி மூலம் வரையரையுள் இருக்கும்  '%s'  விசையை பெற இயலவில்லை: %s"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:555
+#: ../mate-dictionary/libgdict/gdict-source.c:550
 #, c-format
 msgid ""
 "Unable to get the '%s' key inside the dictionary source definition file: %s"
 msgstr ""
 "அகராதி மூலம் வரையரை கோப்பில் இருக்கும்  '%s'  விசையை பெற இயலவில்லை: %s"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:741
+#: ../mate-dictionary/libgdict/gdict-source.c:736
 #, c-format
 msgid "Dictionary source does not have name"
 msgstr "அகராதி மூலம் பெயரை கொண்டிருக்கவில்லை"
 
-#: ../mate-dictionary/libgdict/gdict-source.c:750
+#: ../mate-dictionary/libgdict/gdict-source.c:745
 #, c-format
 msgid "Dictionary source '%s' has invalid transport '%s'"
 msgstr "அகராதி மூலம் '%s' தவறான போக்குவரத்து '%s'ஐ கொண்டுள்ளது"
@@ -2353,19 +2359,19 @@ msgstr "அகராதி மூலம் '%s' தவறான போக்க�
 msgid "Reload the list of available sources"
 msgstr "இருக்கும் வளங்களின் பட்டியலை மீண்டும் ஏற்றவும்"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:165
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:163
 msgid "Paths"
 msgstr "பாதைகள்"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:166
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:164
 msgid "Search paths used by this object"
 msgstr "இந்த பொருளால் பயன்படுத்தப்பட்ட தேடல் பாதைகள்"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:178
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:176
 msgid "Sources"
 msgstr "மூலங்கள்"
 
-#: ../mate-dictionary/libgdict/gdict-source-loader.c:179
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:177
 msgid "Dictionary sources found"
 msgstr "அகராதியை மூலங்கள் கண்டுபிடிக்கப்பட்டன"
 
@@ -2415,7 +2421,7 @@ msgid "Show GDict Options"
 msgstr "ஜிடிக் தேர்வுகளை காட்டு"
 
 #: ../mate-dictionary/src/gdict-about.c:57
-#: ../mate-dictionary/src/gdict-applet.c:589
+#: ../mate-dictionary/src/gdict-applet.c:587
 msgid "Look up words in dictionaries"
 msgstr "அகராதிகளில் சொற்களை தேடவும்"
 
@@ -2522,84 +2528,84 @@ msgstr "db"
 msgid " - Look up words in dictionaries"
 msgstr " - அகராதியில் சொற்களை தேடு"
 
-#: ../mate-dictionary/src/gdict-applet.c:206
+#: ../mate-dictionary/src/gdict-applet.c:204
 #: ../mate-dictionary/src/gdict-window.c:962
 msgid "Save a Copy"
 msgstr "நகலாக சேமி"
 
-#: ../mate-dictionary/src/gdict-applet.c:216
+#: ../mate-dictionary/src/gdict-applet.c:214
 #: ../mate-dictionary/src/gdict-window.c:972
 msgid "Untitled document"
 msgstr "தலைப்பில்லாத ஆவணம்"
 
-#: ../mate-dictionary/src/gdict-applet.c:237
+#: ../mate-dictionary/src/gdict-applet.c:235
 #: ../mate-dictionary/src/gdict-window.c:993
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "'%s'க்கு எழுதும் போது பிழை"
 
-#: ../mate-dictionary/src/gdict-applet.c:362
+#: ../mate-dictionary/src/gdict-applet.c:360
 msgid "Clear the definitions found"
 msgstr "கண்டுபிடிக்கப்பட்ட விளக்கங்களை துடை"
 
-#: ../mate-dictionary/src/gdict-applet.c:364
+#: ../mate-dictionary/src/gdict-applet.c:362
 msgid "Clear definition"
 msgstr "விளக்கத்தை துடை"
 
-#: ../mate-dictionary/src/gdict-applet.c:365
+#: ../mate-dictionary/src/gdict-applet.c:363
 msgid "Clear the text of the definition"
 msgstr "உரை விளக்கத்தை துடை"
 
-#: ../mate-dictionary/src/gdict-applet.c:377
+#: ../mate-dictionary/src/gdict-applet.c:375
 msgid "Print the definitions found"
 msgstr "கண்டுபிடிக்கப்பட்ட விளக்கங்களை அச்சிடு"
 
-#: ../mate-dictionary/src/gdict-applet.c:379
+#: ../mate-dictionary/src/gdict-applet.c:377
 msgid "Print definition"
 msgstr "விளக்கத்தை அச்சிடு"
 
-#: ../mate-dictionary/src/gdict-applet.c:380
+#: ../mate-dictionary/src/gdict-applet.c:378
 msgid "Print the text of the definition"
 msgstr "உரை விளக்கத்தை அச்சிடவும்"
 
-#: ../mate-dictionary/src/gdict-applet.c:392
+#: ../mate-dictionary/src/gdict-applet.c:390
 msgid "Save the definitions found"
 msgstr "கண்டுபிடிக்கப்பட்ட விளக்கங்களை சேமி"
 
-#: ../mate-dictionary/src/gdict-applet.c:394
+#: ../mate-dictionary/src/gdict-applet.c:392
 msgid "Save definition"
 msgstr "விளக்கத்தை சேமி"
 
-#: ../mate-dictionary/src/gdict-applet.c:395
+#: ../mate-dictionary/src/gdict-applet.c:393
 msgid "Save the text of the definition to a file"
 msgstr "உரை விளக்கத்தை ஒரு கோப்பாக சேமிக்கவும்"
 
-#: ../mate-dictionary/src/gdict-applet.c:532
+#: ../mate-dictionary/src/gdict-applet.c:530
 msgid "Click to view the dictionary window"
 msgstr "அகராதி சாளரத்தை பார்க்க சொடுக்கவும்"
 
-#: ../mate-dictionary/src/gdict-applet.c:534
+#: ../mate-dictionary/src/gdict-applet.c:532
 msgid "Toggle dictionary window"
 msgstr "அகராதி சாளரத்தை மாற்று"
 
-#: ../mate-dictionary/src/gdict-applet.c:535
+#: ../mate-dictionary/src/gdict-applet.c:533
 msgid "Show or hide the definition window"
 msgstr "விளக்க சாளரத்தை காட்டு அல்லது மறை"
 
-#: ../mate-dictionary/src/gdict-applet.c:586
+#: ../mate-dictionary/src/gdict-applet.c:584
 msgid "Type the word you want to look up"
 msgstr "தேட வேண்டிய சொல்லை தட்டச்சு செய்யவும்"
 
-#: ../mate-dictionary/src/gdict-applet.c:588
+#: ../mate-dictionary/src/gdict-applet.c:586
 msgid "Dictionary entry"
 msgstr "அகராதி உள்ளீடு"
 
-#: ../mate-dictionary/src/gdict-applet.c:717
+#: ../mate-dictionary/src/gdict-applet.c:715
 #: ../mate-dictionary/src/gdict-window.c:1104
 msgid "Dictionary Preferences"
 msgstr "அகராதி விருப்பங்கள்"
 
-#: ../mate-dictionary/src/gdict-applet.c:741
+#: ../mate-dictionary/src/gdict-applet.c:739
 #: ../mate-dictionary/src/gdict-pref-dialog.c:498
 #: ../mate-dictionary/src/gdict-source-dialog.c:478
 #: ../mate-dictionary/src/gdict-window.c:1251
@@ -2607,45 +2613,45 @@ msgstr "அகராதி விருப்பங்கள்"
 msgid "There was an error while displaying help"
 msgstr "உதவியை காட்டுவதில் பிழை"
 
-#: ../mate-dictionary/src/gdict-applet.c:880
+#: ../mate-dictionary/src/gdict-applet.c:878
 #: ../mate-dictionary/src/gdict-window.c:522
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "'%s' என்ற பெயரில் அகராதி மூலம் எதுவும் இல்லை"
 
-#: ../mate-dictionary/src/gdict-applet.c:884
+#: ../mate-dictionary/src/gdict-applet.c:882
 #: ../mate-dictionary/src/gdict-window.c:526
 msgid "Unable to find dictionary source"
 msgstr "அகராதி மூலத்தினை காண முடியவில்லை"
 
-#: ../mate-dictionary/src/gdict-applet.c:900
+#: ../mate-dictionary/src/gdict-applet.c:898
 #: ../mate-dictionary/src/gdict-window.c:542
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "'%s' மூலத்திற்கு சூழல் எதுவும் இல்லை"
 
-#: ../mate-dictionary/src/gdict-applet.c:904
+#: ../mate-dictionary/src/gdict-applet.c:902
 #: ../mate-dictionary/src/gdict-window.c:546
 msgid "Unable to create a context"
 msgstr "ஒரு சூழலை உருவாக்க முடியவில்லை"
 
-#: ../mate-dictionary/src/gdict-applet.c:1172
+#: ../mate-dictionary/src/gdict-applet.c:1168
 msgid "_Look Up Selected Text"
 msgstr "தேர்ந்தெடுத்த உரையில் தேடுவும் (_L)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1175
+#: ../mate-dictionary/src/gdict-applet.c:1171
 msgid "Cl_ear"
 msgstr "துடை(_e)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1178
+#: ../mate-dictionary/src/gdict-applet.c:1174
 msgid "_Print"
 msgstr "அச்சிடு (_P)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1181
+#: ../mate-dictionary/src/gdict-applet.c:1177
 msgid "_Save"
 msgstr "சேமி (_S)"
 
-#: ../mate-dictionary/src/gdict-applet.c:1184
+#: ../mate-dictionary/src/gdict-applet.c:1180
 msgid "Preferences"
 msgstr "விருப்ப தேர்வுகள் "
 
@@ -2683,19 +2689,19 @@ msgstr "இது பட்டியலிருந்து அகராதி 
 msgid "Unable to remove source '%s'"
 msgstr "மூலத்தை நீக்க முடியவில்லை '%s'"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:645
+#: ../mate-dictionary/src/gdict-pref-dialog.c:709
 msgid "Add a new dictionary source"
 msgstr "ஒரு புதிய அகராதி மூலத்தை சேர்"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:651
+#: ../mate-dictionary/src/gdict-pref-dialog.c:715
 msgid "Remove the currently selected dictionary source"
 msgstr "தற்போது தேர்ந்தெடுக்கப்பட்ட அகராதி மூலத்தை நீக்கு"
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:657
+#: ../mate-dictionary/src/gdict-pref-dialog.c:721
 msgid "Edit the currently selected dictionary source"
 msgstr ""
 
-#: ../mate-dictionary/src/gdict-pref-dialog.c:665
+#: ../mate-dictionary/src/gdict-pref-dialog.c:729
 msgid "Set the font used for printing the definitions"
 msgstr "விளக்கங்களை அச்சிட எழுத்துருவினை அமைக்கவும்"
 
@@ -2949,6 +2955,78 @@ msgstr "அகராதிகள்"
 #: ../mate-dictionary/data/mate-dictionary-source.ui.h:8
 msgid "Strategies"
 msgstr "திட்டங்கள்"
+
+#: ../mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in.h:1
+#: ../mate-disk-image-mounter/src/main.c:59
+msgid "MATE Disk Image Mounter"
+msgstr ""
+
+#: ../mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in.h:2
+msgid "Attach and mount one or more disk image files"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:57
+msgid "An error occurred"
+msgstr "ஒரு பிழை ஏற்பட்டுள்ளது"
+
+#: ../mate-disk-image-mounter/src/main.c:78
+msgid "Allow writing to the image"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:98
+msgid "All Files"
+msgstr "அனைத்து கோப்புகள்"
+
+#: ../mate-disk-image-mounter/src/main.c:102
+msgid "Disk Images (*.img, *.iso)"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:118
+msgid "Select Disk Image(s) to Mount"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:121
+msgid "_Cancel"
+msgstr "ரத்து (_C)"
+
+#: ../mate-disk-image-mounter/src/main.c:122
+msgid "_Mount"
+msgstr "ஏற்று (_M)"
+
+#. Add a RO check button that defaults to RO
+#: ../mate-disk-image-mounter/src/main.c:128
+msgid "Set up _read-only mount"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:129
+msgid ""
+"If checked, the mount will be read-only. This is useful if you don't want "
+"the underlying disk image to be modified"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:173
+#, c-format
+msgid "Error connecting to udisks daemon: %s (%s, %d)"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:181
+msgid "Attach and mount one or more disk image files."
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:229
+#, c-format
+msgid "Cannot open `%s' - maybe the volume isn't mounted?"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:236
+#, c-format
+msgid "Error opening `%s': %m"
+msgstr ""
+
+#: ../mate-disk-image-mounter/src/main.c:257
+#, c-format
+msgid "Error attaching disk image: %s (%s, %d)"
+msgstr ""
 
 #: ../mate-screenshot/data/mate-screenshot.appdata.xml.in.h:1
 msgid "A screenshot utility for MATE Desktop"
