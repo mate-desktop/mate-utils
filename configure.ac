@@ -332,11 +332,6 @@ AC_SUBST(GETTEXT_PACKAGE)
 
 GLIB_GSETTINGS
 
-# AM_GLIB_GNU_GETTEXT above substs $DATADIRNAME
-# this is the directory where the *.{mo,gmo} files are installed
-mateutilslocaledir='${prefix}/${DATADIRNAME}/locale'
-AC_SUBST(mateutilslocaledir)
-
 dnl gtk-doc stuff
 GTK_DOC_CHECK([1.10])
 

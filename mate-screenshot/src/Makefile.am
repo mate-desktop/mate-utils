@@ -1,9 +1,9 @@
 NULL =
 
-AM_CPPFLAGS =							\
-	-I.							\
-	-I$(srcdir)						\
-	-DMATELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"	\
+AM_CPPFLAGS =						\
+	-I.						\
+	-I$(srcdir)					\
+	-DMATELOCALEDIR=\""$(datadir)/locale"\"		\
 	$(NULL)
 
 bin_PROGRAMS = mate-screenshot

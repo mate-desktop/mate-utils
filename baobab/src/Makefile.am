@@ -6,7 +6,7 @@ AM_CPPFLAGS = \
 	-DLIBDIR=\""$(libdir)"\" \
 	-DDATADIR=\""$(datadir)"\" \
 	-DBAOBAB_PIX_DIR=\""$(datadir)/mate-disk-usage-analyzer/pixmaps/"\" \
-	-DMATELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+	-DMATELOCALEDIR=\""$(datadir)/locale"\" \
 	$(NULL)
 
 bin_PROGRAMS = mate-disk-usage-analyzer

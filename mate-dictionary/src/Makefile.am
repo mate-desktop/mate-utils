@@ -6,7 +6,7 @@ AM_CPPFLAGS = \
 	-DLIBDIR=\""$(libdir)"\"			\
 	-DDATADIR=\""$(datadir)"\" 			\
 	-DPKGDATADIR=\""$(datadir)/mate-dictionary"\" 	\
-	-DMATELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+	-DMATELOCALEDIR=\""$(datadir)/locale"\"		\
 	$(NULL)
 
 bin_PROGRAMS = mate-dictionary
