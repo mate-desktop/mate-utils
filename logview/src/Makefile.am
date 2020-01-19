@@ -1,10 +1,10 @@
 SUBDIRS = tests
 
-AM_CPPFLAGS = \
-	-DG_LOG_DOMAIN=\"mate-system-log\"			\
-	-DMATELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"	\
-	-DDATADIR=\""$(datadir)"\"				\
-	-DLOGVIEWINSTALLPREFIX=\""$(prefix)/\""			\
+AM_CPPFLAGS =						\
+	-DG_LOG_DOMAIN=\"mate-system-log\"		\
+	-DMATELOCALEDIR=\""$(datadir)/locale"\"		\
+	-DDATADIR=\""$(datadir)"\"			\
+	-DLOGVIEWINSTALLPREFIX=\""$(prefix)/\""		\
 	$(NULL)
 
 bin_PROGRAMS = mate-system-log

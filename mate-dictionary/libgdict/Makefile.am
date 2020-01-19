@@ -5,7 +5,7 @@ AM_CPPFLAGS = -DG_LOG_DOMAIN=\"Gdict\" 				\
 	-DLIBDIR=\""$(libdir)"\" 				\
 	-DSYSCONFDIR=\""$(sysconfdir)"\" 			\
 	-DPREFIX=\""$(prefix)"\" 				\
-	-DMATELOCALEDIR=\""$(mateutilslocaledir)"\" 		\
+	-DMATELOCALEDIR=\""$(datadir)/locale"\"			\
 	-DGDICTSOURCESDIR=\""$(datadir)/mate-dict/sources"\" 	\
 	-DGDICT_ENABLE_INTERNALS				\
 	$(NULL)
