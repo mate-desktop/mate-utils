@@ -99,7 +99,7 @@ struct _BaobabApplication {
 };
 
 /* Application singleton */
-BaobabApplication baobab;
+extern BaobabApplication baobab;
 
 struct chan_data {
 	guint64 size;
