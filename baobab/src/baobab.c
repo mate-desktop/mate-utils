@@ -42,6 +42,8 @@
 static void push_iter_in_stack (GtkTreeIter *);
 static GtkTreeIter pop_iter_from_stack (void);
 
+BaobabApplication baobab;
+
 static gint currentdepth = 0;
 static GtkTreeIter currentiter;
 static GtkTreeIter firstiter;
