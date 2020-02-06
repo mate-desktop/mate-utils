@@ -120,7 +120,7 @@ static GtkWidget *effect_label = NULL;
 static GtkWidget *effects_vbox = NULL;
 static GtkWidget *delay_hbox = NULL;
 
-void loop_dialog_screenshot ();
+void loop_dialog_screenshot (void);
 
 static void
 display_help (GtkWindow *parent)
@@ -1248,7 +1248,7 @@ screenshooter_init_stock_icons (void)
 }
 
 void
-loop_dialog_screenshot ()
+loop_dialog_screenshot (void)
 {
   /* interactive mode overrides everything */
   if (interactive_arg)
