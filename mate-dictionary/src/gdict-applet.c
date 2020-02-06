@@ -96,16 +96,6 @@ struct _GdictAppletPrivate
 G_DEFINE_TYPE_WITH_PRIVATE (GdictApplet, gdict_applet, PANEL_TYPE_APPLET);
 
 
-static const GtkTargetEntry drop_types[] =
-{
-  { "text/plain",    0, 0 },
-  { "TEXT",          0, 0 },
-  { "STRING",        0, 0 },
-  { "UTF8_STRING",   0, 0 },
-};
-static const guint n_drop_types = G_N_ELEMENTS (drop_types);
-
-
 static void
 set_atk_name_description (GtkWidget  *widget,
 			  const char *name,
