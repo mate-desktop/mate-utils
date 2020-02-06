@@ -733,7 +733,6 @@ store_excluded_locations (void)
 {
 	GSList *l;
 	GPtrArray *uris;
-	GSList *uri_list = NULL;
 
 	uris = g_ptr_array_new ();
 
