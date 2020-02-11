@@ -40,6 +40,8 @@
 #include "gdict-common.h"
 
 #define GDICT_SOURCE_UI 	PKGDATADIR "/mate-dictionary-source.ui"
+#define GET_WIDGET(x) (GTK_WIDGET (gtk_builder_get_object (dialog->builder, (x))))
+#define GET_EDITABLE(x) (GTK_EDITABLE (gtk_builder_get_object (dialog->builder, (x))))
 
 /*********************
  * GdictSourceDialog *
@@ -112,10 +114,10 @@ transport_combo_changed_cb (GtkWidget *widget,
 
   if (transport == GDICT_SOURCE_TRANSPORT_DICTD)
     {
-      gtk_widget_show (GTK_WIDGET (gtk_builder_get_object (dialog->builder, "hostname_label")));
-      gtk_widget_show (GTK_WIDGET (gtk_builder_get_object (dialog->builder, "hostname_entry")));
-      gtk_widget_show (GTK_WIDGET (gtk_builder_get_object (dialog->builder, "port_label")));
-      gtk_widget_show (GTK_WIDGET (gtk_builder_get_object (dialog->builder, "port_entry")));
+      gtk_widget_show (GET_WIDGET ("hostname_label"));
+      gtk_widget_show (GET_WIDGET ("hostname_entry"));
+      gtk_widget_show (GET_WIDGET ("port_label"));
+      gtk_widget_show (GET_WIDGET ("port_entry"));
 
       if (dialog->action == GDICT_SOURCE_DIALOG_CREATE)
         {
@@ -126,10 +128,10 @@ transport_combo_changed_cb (GtkWidget *widget,
     }
   else
     {
-      gtk_widget_hide (GTK_WIDGET (gtk_builder_get_object (dialog->builder, "hostname_label")));
-      gtk_widget_hide (GTK_WIDGET (gtk_builder_get_object (dialog->builder, "hostname_entry")));
-      gtk_widget_hide (GTK_WIDGET (gtk_builder_get_object (dialog->builder, "port_label")));
-      gtk_widget_hide (GTK_WIDGET (gtk_builder_get_object (dialog->builder, "port_entry")));
+      gtk_widget_hide (GET_WIDGET ("hostname_label"));
+      gtk_widget_hide (GET_WIDGET ("hostname_entry"));
+      gtk_widget_hide (GET_WIDGET ("port_label"));
+      gtk_widget_hide (GET_WIDGET ("port_entry"));
 
       if (dialog->action == GDICT_SOURCE_DIALOG_CREATE)
         {
@@ -147,7 +149,7 @@ get_text_from_entry (GdictSourceDialog *dialog,
   GtkWidget *entry;
   gchar *retval;
 
-  entry = GTK_WIDGET (gtk_builder_get_object (dialog->builder, entry_name));
+  entry = GET_WIDGET (entry_name);
   if (!entry)
     return NULL;
 
@@ -163,7 +165,7 @@ set_text_to_entry (GdictSourceDialog *dialog,
 {
   GtkWidget *entry;
 
-  entry = GTK_WIDGET (gtk_builder_get_object (dialog->builder, entry_name));
+  entry = GET_WIDGET (entry_name);
   if (!entry)
     return;
 
@@ -190,10 +192,10 @@ set_transport_settings (GdictSourceDialog *dialog)
         set_text_to_entry (dialog, "hostname_entry", hostname);
         set_text_to_entry (dialog, "port_entry", port_str);
 
-        gtk_widget_show (GTK_WIDGET (gtk_builder_get_object (dialog->builder, "hostname_label")));
-        gtk_widget_show (GTK_WIDGET (gtk_builder_get_object (dialog->builder, "hostname_entry")));
-        gtk_widget_show (GTK_WIDGET (gtk_builder_get_object (dialog->builder, "port_label")));
-        gtk_widget_show (GTK_WIDGET (gtk_builder_get_object (dialog->builder, "port_entry")));
+        gtk_widget_show (GET_WIDGET ("hostname_label"));
+        gtk_widget_show (GET_WIDGET ("hostname_entry"));
+        gtk_widget_show (GET_WIDGET ("port_label"));
+        gtk_widget_show (GET_WIDGET ("port_entry"));
 
         g_free (port_str);
       }
@@ -571,7 +573,6 @@ gdict_source_dialog_constructor (GType                  type,
 {
   GObject *object;
   GdictSourceDialog *dialog;
-  GtkWidget *vbox;
   GError *error = NULL;
 
   object = G_OBJECT_CLASS (gdict_source_dialog_parent_class)->constructor (type,
@@ -595,12 +596,12 @@ gdict_source_dialog_constructor (GType                  type,
 
   /* the main widget */
   gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))),
-                     GTK_WIDGET (gtk_builder_get_object (dialog->builder, "source_root")));
+                     GET_WIDGET ("source_root"));
 
   /* the transport combo changes the UI by changing the visible widgets
    * bound to the transport's own options.
    */
-  dialog->transport_combo = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "transport_combo"));
+  dialog->transport_combo = GET_WIDGET ("transport_combo");
   g_signal_connect (dialog->transport_combo, "changed",
   		    G_CALLBACK (transport_combo_changed_cb),
   		    dialog);
@@ -610,14 +611,12 @@ gdict_source_dialog_constructor (GType                  type,
   					       "gtk-help",
 					       GTK_RESPONSE_HELP);
 
-  vbox = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "db-vbox"));
   dialog->db_chooser = gdict_database_chooser_new ();
-  gtk_box_pack_start (GTK_BOX (vbox), dialog->db_chooser, TRUE, TRUE, 0);
+  gtk_box_pack_start (GTK_BOX (GET_WIDGET ("db-vbox")), dialog->db_chooser, TRUE, TRUE, 0);
   gtk_widget_show (dialog->db_chooser);
 
-  vbox = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "strat-vbox"));
   dialog->strat_chooser = gdict_strategy_chooser_new ();
-  gtk_box_pack_start (GTK_BOX (vbox), dialog->strat_chooser, TRUE, TRUE, 0);
+  gtk_box_pack_start (GTK_BOX (GET_WIDGET ("strat-vbox")), dialog->strat_chooser, TRUE, TRUE, 0);
   gtk_widget_show (dialog->strat_chooser);
 
   /* the UI changes depending on the action that the source dialog
@@ -627,10 +626,10 @@ gdict_source_dialog_constructor (GType                  type,
     {
     case GDICT_SOURCE_DIALOG_VIEW:
       /* disable every editable widget */
-      gtk_editable_set_editable (GTK_EDITABLE (gtk_builder_get_object (dialog->builder, "name_entry")), FALSE);
-      gtk_editable_set_editable (GTK_EDITABLE (gtk_builder_get_object (dialog->builder, "description_entry")), FALSE);
-      gtk_editable_set_editable (GTK_EDITABLE (gtk_builder_get_object (dialog->builder, "hostname_entry")), FALSE);
-      gtk_editable_set_editable (GTK_EDITABLE (gtk_builder_get_object (dialog->builder, "port_entry")), FALSE);
+      gtk_editable_set_editable (GET_EDITABLE ("name_entry"), FALSE);
+      gtk_editable_set_editable (GET_EDITABLE ("description_entry"), FALSE);
+      gtk_editable_set_editable (GET_EDITABLE ("hostname_entry"), FALSE);
+      gtk_editable_set_editable (GET_EDITABLE ("port_entry"), FALSE);
 
       gtk_widget_set_sensitive (dialog->transport_combo, FALSE);
 

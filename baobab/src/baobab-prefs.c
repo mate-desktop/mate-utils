@@ -35,6 +35,7 @@
 #include "baobab-prefs.h"
 
 #define BAOBAB_PREFERENCES_UI_RESOURCE "/org/mate/disk-usage-analyzer/baobab-dialog-scan-props.ui"
+#define GET_WIDGET(x) (GTK_WIDGET (gtk_builder_get_object (builder, (x))))
 
 enum
 {
@@ -162,7 +163,7 @@ create_tree_props (GtkBuilder *builder, GtkTreeModel *model)
 	GtkTreeViewColumn *col;
 	GtkWidget *tvw;
 
-	tvw = GTK_WIDGET (gtk_builder_get_object (builder , "tree_view_props"));
+	tvw = GET_WIDGET ("tree_view_props");
 
 	/* checkbox column */
 	cell = gtk_cell_renderer_toggle_new ();
@@ -294,7 +295,7 @@ baobab_prefs_dialog (void)
 		return;
 	}
 
-	dlg = GTK_WIDGET (gtk_builder_get_object (builder, "dialog_scan_props"));
+	dlg = GET_WIDGET ("dialog_scan_props");
 
 	gtk_window_set_transient_for (GTK_WINDOW (dlg),
 				      GTK_WINDOW (baobab.window));
@@ -312,7 +313,7 @@ baobab_prefs_dialog (void)
 	create_tree_props (builder, GTK_TREE_MODEL (model));
 	fill_props_model (model);
 
-	check_enablehome = GTK_WIDGET (gtk_builder_get_object (builder, "check_enable_home"));
+	check_enablehome = GET_WIDGET ("check_enable_home");
 	g_settings_bind (baobab.prefs_settings,
 			 BAOBAB_SETTINGS_MONITOR_HOME,
 			 check_enablehome, "active",

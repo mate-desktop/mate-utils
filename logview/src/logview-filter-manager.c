@@ -28,6 +28,7 @@
 #include <glib/gi18n.h>
 
 #define UI_RESOURCE "/org/mate/system-log/logview-filter.ui"
+#define GET_WIDGET(x) (GTK_WIDGET (gtk_builder_get_object (builder, (x))))
 
 struct _LogviewFilterManagerPrivate {
   GtkWidget *tree;
@@ -180,20 +181,13 @@ on_dialog_add_edit_reponse (GtkWidget *dialog, int response_id,
   old_name = g_object_get_data (G_OBJECT (manager), "old_name");
   builder = manager->priv->builder;
 
-  entry_name = GTK_WIDGET (gtk_builder_get_object (builder,
-                                                   "entry_name"));
-  entry_regex = GTK_WIDGET (gtk_builder_get_object (builder,
-                                                    "entry_regex"));
-  radio_color = GTK_WIDGET (gtk_builder_get_object (builder,
-                                                    "radio_color"));
-  check_foreground = GTK_WIDGET (gtk_builder_get_object (builder,
-                                                         "check_foreground"));
-  check_background = GTK_WIDGET (gtk_builder_get_object (builder,
-                                                         "check_background"));
-  color_foreground = GTK_WIDGET (gtk_builder_get_object (builder,
-                                                         "color_foreground"));
-  color_background = GTK_WIDGET (gtk_builder_get_object (builder,
-                                                         "color_background"));
+  entry_name = GET_WIDGET ("entry_name");
+  entry_regex = GET_WIDGET ("entry_regex");
+  radio_color = GET_WIDGET ("radio_color");
+  check_foreground = GET_WIDGET ("check_foreground");
+  check_background = GET_WIDGET ("check_background");
+  color_foreground = GET_WIDGET ("color_foreground");
+  color_background = GET_WIDGET ("color_background");
 
   if (response_id == GTK_RESPONSE_APPLY) {
     name = gtk_entry_get_text (GTK_ENTRY (entry_name));
@@ -286,33 +280,23 @@ run_add_edit_dialog (LogviewFilterManager *manager, LogviewFilter *filter)
     return;
   }
 
+  dialog = GET_WIDGET ("dialog_filter");
+  entry_name = GET_WIDGET ("entry_name");
+  entry_regex = GET_WIDGET ("entry_regex");
+  radio_color = GET_WIDGET ("radio_color");
+  radio_visible = GET_WIDGET ("radio_visible");
+  check_foreground = GET_WIDGET ("check_foreground");
+  check_background = GET_WIDGET ("check_background");
+  color_foreground = GET_WIDGET ("color_foreground");
+  color_background = GET_WIDGET ("color_background");
+  vbox_color = GET_WIDGET ("vbox_color");
+
   title = (filter != NULL ? _("Edit filter") : _("Add new filter"));
-
-  dialog = GTK_WIDGET (gtk_builder_get_object (builder,
-                                               "dialog_filter"));
-
   gtk_window_set_title (GTK_WINDOW (dialog), title);
-
-  entry_name = GTK_WIDGET (gtk_builder_get_object (builder,
-                                                   "entry_name"));
-  entry_regex = GTK_WIDGET (gtk_builder_get_object (builder,
-                                                    "entry_regex"));
-  radio_color = GTK_WIDGET (gtk_builder_get_object (builder,
-                                                    "radio_color"));
-  radio_visible = GTK_WIDGET (gtk_builder_get_object (builder,
-                                                      "radio_visible"));
 
   gtk_radio_button_set_group (GTK_RADIO_BUTTON (radio_color),
                               gtk_radio_button_get_group (GTK_RADIO_BUTTON (radio_visible)));
 
-  check_foreground = GTK_WIDGET (gtk_builder_get_object (builder,
-                                                         "check_foreground"));
-  check_background = GTK_WIDGET (gtk_builder_get_object (builder,
-                                                         "check_background"));
-  color_foreground = GTK_WIDGET (gtk_builder_get_object (builder,
-                                                         "color_foreground"));
-  color_background = GTK_WIDGET (gtk_builder_get_object (builder,
-                                                         "color_background"));
   g_signal_connect (check_foreground, "toggled", G_CALLBACK (on_check_toggled),
                     color_foreground);
   g_signal_connect (check_background, "toggled", G_CALLBACK (on_check_toggled),
@@ -323,7 +307,6 @@ run_add_edit_dialog (LogviewFilterManager *manager, LogviewFilter *filter)
   on_check_toggled (GTK_TOGGLE_BUTTON (check_background),
                     color_background);
 
-  vbox_color = GTK_WIDGET (gtk_builder_get_object (builder, "vbox_color"));
   g_signal_connect (radio_color, "toggled", G_CALLBACK (on_check_toggled),
                     vbox_color);
   on_check_toggled (GTK_TOGGLE_BUTTON (radio_color),

@@ -27,6 +27,8 @@
 #include <glib/gi18n.h>
 #include <gio/gio.h>
 
+#define GET_WIDGET(x) (GTK_WIDGET (gtk_builder_get_object (dialog->builder, (x))))
+
 enum {
   TYPE_IMAGE_PNG,
   TYPE_TEXT_URI_LIST,
@@ -42,7 +44,7 @@ static GtkTargetEntry drag_types[] =
 
 struct ScreenshotDialog
 {
-  GtkBuilder *ui;
+  GtkBuilder *builder;
   GdkPixbuf *screenshot;
   GdkPixbuf *preview_image;
   GtkWidget *save_widget;
@@ -192,11 +194,11 @@ screenshot_dialog_new (GdkPixbuf *screenshot,
 
   dialog = g_new0 (ScreenshotDialog, 1);
 
-  dialog->ui = gtk_builder_new ();
+  dialog->builder = gtk_builder_new ();
 
   dialog->screenshot = screenshot;
 
-  if (gtk_builder_add_from_resource (dialog->ui, "/org/mate/screenshot/mate-screenshot.ui", &error) == 0)
+  if (gtk_builder_add_from_resource (dialog->builder, "/org/mate/screenshot/mate-screenshot.ui", &error) == 0)
     {
       GtkWidget *dialog;
       dialog = gtk_message_dialog_new (NULL, 0,
@@ -211,7 +213,7 @@ screenshot_dialog_new (GdkPixbuf *screenshot,
       exit (1);
     }
 
-  gtk_builder_set_translation_domain (dialog->ui, GETTEXT_PACKAGE);
+  gtk_builder_set_translation_domain (dialog->builder, GETTEXT_PACKAGE);
 
   width = gdk_pixbuf_get_width (screenshot);
   height = gdk_pixbuf_get_height (screenshot);
@@ -219,11 +221,11 @@ screenshot_dialog_new (GdkPixbuf *screenshot,
   width /= 5;
   height /= 5;
 
-  toplevel = GTK_WIDGET (gtk_builder_get_object (dialog->ui, "toplevel"));
-  aspect_frame = GTK_WIDGET (gtk_builder_get_object (dialog->ui, "aspect_frame"));
-  preview_darea = GTK_WIDGET (gtk_builder_get_object (dialog->ui, "preview_darea"));
-  dialog->filename_entry = GTK_WIDGET (gtk_builder_get_object (dialog->ui, "filename_entry"));
-  file_chooser_box = GTK_WIDGET (gtk_builder_get_object (dialog->ui, "file_chooser_box"));
+  toplevel = GET_WIDGET ("toplevel");
+  aspect_frame = GET_WIDGET ("aspect_frame");
+  preview_darea = GET_WIDGET ("preview_darea");
+  dialog->filename_entry = GET_WIDGET ("filename_entry");
+  file_chooser_box = GET_WIDGET ("file_chooser_box");
 
   dialog->save_widget = gtk_file_chooser_button_new (_("Select a folder"), GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER);
   gtk_file_chooser_set_local_only (GTK_FILE_CHOOSER (dialog->save_widget), FALSE);
@@ -287,7 +289,7 @@ screenshot_dialog_enable_dnd (ScreenshotDialog *dialog)
 
   g_return_if_fail (dialog != NULL);
 
-  preview_darea = GTK_WIDGET (gtk_builder_get_object (dialog->ui, "preview_darea"));
+  preview_darea = GET_WIDGET ("preview_darea");
   gtk_drag_source_set (preview_darea,
 		       GDK_BUTTON1_MASK | GDK_BUTTON3_MASK,
 		       drag_types, G_N_ELEMENTS (drag_types),
@@ -297,7 +299,7 @@ screenshot_dialog_enable_dnd (ScreenshotDialog *dialog)
 GtkWidget *
 screenshot_dialog_get_toplevel (ScreenshotDialog *dialog)
 {
-  return GTK_WIDGET (gtk_builder_get_object (dialog->ui, "toplevel"));
+  return GET_WIDGET ("toplevel");
 }
 
 char *
