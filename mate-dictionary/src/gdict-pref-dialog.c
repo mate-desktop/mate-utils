@@ -41,6 +41,7 @@
 #include "gdict-common.h"
 
 #define GDICT_PREFERENCES_UI 	PKGDATADIR "/mate-dictionary-preferences.ui"
+#define GET_WIDGET(x) (GTK_WIDGET (gtk_builder_get_object (dialog->builder, (x))))
 
 #define DEFAULT_MIN_WIDTH 	220
 #define DEFAULT_MIN_HEIGHT 	330
@@ -690,40 +691,40 @@ gdict_pref_dialog_init (GdictPrefDialog *dialog)
 
   /* the main widget */
   gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))),
-                     GTK_WIDGET (gtk_builder_get_object (dialog->builder, "preferences_root")));
+                     GET_WIDGET ("preferences_root"));
 
   /* keep all the interesting widgets around */
-  dialog->notebook = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "preferences_notebook"));
+  dialog->notebook = GET_WIDGET ("preferences_notebook");
 
   gtk_widget_add_events (dialog->notebook, GDK_SCROLL_MASK);
   g_signal_connect (dialog->notebook, "scroll-event",
                     G_CALLBACK (gdict_dialog_page_scroll_event_cb), GTK_WINDOW (dialog));
 
-  dialog->sources_view = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "sources_treeview"));
+  dialog->sources_view = GET_WIDGET ("sources_treeview");
   build_sources_view (dialog);
 
   dialog->active_source = g_settings_get_string (dialog->settings, GDICT_SETTINGS_SOURCE_KEY);
 
-  dialog->sources_add = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "add_button"));
+  dialog->sources_add = GET_WIDGET ("add_button");
   gtk_widget_set_tooltip_text (dialog->sources_add,
                                _("Add a new dictionary source"));
   g_signal_connect (dialog->sources_add, "clicked",
   		    G_CALLBACK (source_add_clicked_cb), dialog);
 
-  dialog->sources_remove = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "remove_button"));
+  dialog->sources_remove = GET_WIDGET ("remove_button");
   gtk_widget_set_tooltip_text (dialog->sources_remove,
                                _("Remove the currently selected dictionary source"));
   g_signal_connect (dialog->sources_remove, "clicked",
   		    G_CALLBACK (source_remove_clicked_cb), dialog);
 
-  dialog->sources_edit = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "edit_button"));
+  dialog->sources_edit = GET_WIDGET ("edit_button");
   gtk_widget_set_tooltip_text (dialog->sources_edit,
                                _("Edit the currently selected dictionary source"));
   g_signal_connect (dialog->sources_edit, "clicked",
                     G_CALLBACK (source_edit_clicked_cb), dialog);
 
   font = g_settings_get_string (dialog->settings, GDICT_SETTINGS_PRINT_FONT_KEY);
-  dialog->font_button = GTK_WIDGET (gtk_builder_get_object (dialog->builder, "print_font_button"));
+  dialog->font_button = GET_WIDGET ("print_font_button");
   gtk_font_chooser_set_font (GTK_FONT_CHOOSER (dialog->font_button), font);
   gtk_widget_set_tooltip_text (dialog->font_button,
                                _("Set the font used for printing the definitions"));

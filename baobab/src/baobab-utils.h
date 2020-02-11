@@ -40,8 +40,6 @@ void popupmenu_list (GtkTreePath *path, GdkEventButton *event, gboolean can_tras
 void open_file_with_application (GFile *file);
 gboolean can_trash_file (GFile *file);
 gboolean trash_file (GFile *file);
-void set_ui_action_sens (const gchar *name, gboolean sens);
-void set_ui_widget_sens (const gchar *name, gboolean sens);
 gboolean baobab_help_display (GtkWindow *parent, const gchar *file_name, const gchar *link_id);
 gboolean is_virtual_filesystem (GFile *file);
 

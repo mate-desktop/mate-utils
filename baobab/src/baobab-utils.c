@@ -145,24 +145,6 @@ on_toggled (GtkToggleButton *togglebutton, gpointer dialog)
 					  (GTK_FILE_CHOOSER (dialog)));
 }
 
-void
-set_ui_action_sens (const gchar *name, gboolean sens)
-{
-	GtkAction *a;
-
-	a = GTK_ACTION (gtk_builder_get_object (baobab.main_ui, name));
-	gtk_action_set_sensitive (a, sens);
-}
-
-void
-set_ui_widget_sens (const gchar *name, gboolean sens)
-{
-	GtkWidget *w;
-
-	w = GTK_WIDGET (gtk_builder_get_object (baobab.main_ui, name));
-	gtk_widget_set_sensitive (w, sens);
-}
-
 gboolean
 show_bars (GtkTreeModel *mdl,
 	   GtkTreePath *path,

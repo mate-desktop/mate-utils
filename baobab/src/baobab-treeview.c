@@ -34,6 +34,8 @@
 #include "baobab-utils.h"
 #include "callbacks.h"
 
+#define GET_WIDGET(x) (GTK_WIDGET (gtk_builder_get_object (baobab.main_ui, (x))))
+
 static GtkTreeStore *
 create_model (void)
 {
@@ -199,9 +201,8 @@ create_directory_treeview (void)
 {
 	GtkCellRenderer *cell;
 	GtkTreeViewColumn *col;
-	GtkWidget *scrolled;
 
-	GtkWidget *tvw = GTK_WIDGET (gtk_builder_get_object (baobab.main_ui, "treeview1"));
+	GtkWidget *tvw = GET_WIDGET ("treeview1");
 
 	g_signal_connect (tvw, "row-expanded",
 			  G_CALLBACK (on_tv_row_expanded), NULL);
@@ -285,8 +286,7 @@ create_directory_treeview (void)
 
 	gtk_tree_view_collapse_all (GTK_TREE_VIEW (tvw));
 	gtk_tree_view_set_headers_visible (GTK_TREE_VIEW (tvw), FALSE);
-	scrolled = GTK_WIDGET (gtk_builder_get_object (baobab.main_ui, "scrolledwindow1"));
-	gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (scrolled),
+	gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (GET_WIDGET ("scrolledwindow1")),
 					GTK_POLICY_AUTOMATIC,
 					GTK_POLICY_AUTOMATIC);
 

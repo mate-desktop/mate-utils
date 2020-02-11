@@ -38,6 +38,9 @@
 #include "baobab-ringschart.h"
 
 #define BAOBAB_UI_RESOURCE "/org/mate/disk-usage-analyzer/baobab-main-window.ui"
+#define GET_WIDGET(x) (GTK_WIDGET (gtk_builder_get_object (baobab.main_ui, (x))))
+#define GET_ACTION(x) (GTK_ACTION (gtk_builder_get_object (baobab.main_ui, (x))))
+#define GET_TOGGLE_ACTION(x) (GTK_TOGGLE_ACTION (gtk_builder_get_object (baobab.main_ui, (x))))
 
 static void push_iter_in_stack (GtkTreeIter *);
 static GtkTreeIter pop_iter_from_stack (void);
@@ -137,27 +140,27 @@ check_menu_sens (gboolean scanning)
 			gtk_main_iteration ();
 
 		baobab_set_statusbar (_("Scanning..."));
-		set_ui_action_sens ("expand_all", TRUE);
-		set_ui_action_sens ("collapse_all", TRUE);
+		gtk_action_set_sensitive (GET_ACTION ("expand_all"), TRUE);
+		gtk_action_set_sensitive (GET_ACTION ("collapse_all"), TRUE);
 	}
 
 	has_current_location = baobab.current_location != NULL;
 
-	set_ui_action_sens ("menuscanhome", !scanning);
-	set_ui_action_sens ("menuallfs", !scanning);
-	set_ui_action_sens ("menuscandir", !scanning);
-	set_ui_action_sens ("menustop", scanning);
-	set_ui_action_sens ("menurescan", !scanning && has_current_location);
-	set_ui_action_sens ("preferenze1", !scanning);
-	set_ui_action_sens ("menu_scan_rem", !scanning);
-	set_ui_action_sens ("ck_allocated", !scanning && baobab.is_local);
+	gtk_action_set_sensitive (GET_ACTION ("menuscanhome"), !scanning);
+	gtk_action_set_sensitive (GET_ACTION ("menuallfs"), !scanning);
+	gtk_action_set_sensitive (GET_ACTION ("menuscandir"), !scanning);
+	gtk_action_set_sensitive (GET_ACTION ("menustop"), scanning);
+	gtk_action_set_sensitive (GET_ACTION ("menurescan"), !scanning && has_current_location);
+	gtk_action_set_sensitive (GET_ACTION ("preferenze1"), !scanning);
+	gtk_action_set_sensitive (GET_ACTION ("menu_scan_rem"), !scanning);
+	gtk_action_set_sensitive (GET_ACTION ("ck_allocated"), !scanning && baobab.is_local);
 
-	set_ui_widget_sens ("tbscanhome", !scanning);
-	set_ui_widget_sens ("tbscanall", !scanning);
-	set_ui_widget_sens ("tbscandir", !scanning);
-	set_ui_widget_sens ("tbstop", scanning);
-	set_ui_widget_sens ("tbrescan", !scanning && has_current_location);
-	set_ui_widget_sens ("tb_scan_remote", !scanning);
+	gtk_widget_set_sensitive (GET_WIDGET ("tbscanhome"), !scanning);
+	gtk_widget_set_sensitive (GET_WIDGET ("tbscanall"), !scanning);
+	gtk_widget_set_sensitive (GET_WIDGET ("tbscandir"), !scanning);
+	gtk_widget_set_sensitive (GET_WIDGET ("tbstop"), scanning);
+	gtk_widget_set_sensitive (GET_WIDGET ("tbrescan"), !scanning && has_current_location);
+	gtk_widget_set_sensitive (GET_WIDGET ("tb_scan_remote"), !scanning);
 }
 
 static void
@@ -174,7 +177,6 @@ update_scan_label (void)
 	gchar *total;
 	gchar *used;
 	gchar *available;
-	GtkWidget *label;
 
 		total = g_format_size (baobab.fs.total);
 		used = g_format_size (baobab.fs.used);
@@ -190,9 +192,7 @@ update_scan_label (void)
 	g_free (used);
 	g_free (available);
 
-	label = GTK_WIDGET (gtk_builder_get_object (baobab.main_ui, "label1"));
-
-	gtk_label_set_markup (GTK_LABEL (label), markup);
+	gtk_label_set_markup (GTK_LABEL (GET_WIDGET ("label1")), markup);
 	g_free (markup);
 }
 
@@ -228,7 +228,7 @@ baobab_scan_location (GFile *file)
 
 	/* check if the file system is local or remote */
 	baobab.is_local = scan_is_local (file);
-	ck_allocated = GTK_TOGGLE_ACTION (gtk_builder_get_object (baobab.main_ui, "ck_allocated"));
+	ck_allocated = GET_TOGGLE_ACTION ("ck_allocated");
 	if (!baobab.is_local) {
 		gtk_toggle_action_set_active (ck_allocated, FALSE);
 		gtk_action_set_sensitive (GTK_ACTION (ck_allocated), FALSE);
@@ -649,7 +649,7 @@ baobab_create_toolbar (void)
 	GtkToolItem *item;
 	GtkToolItem *separator;
 
-	toolbar = GTK_WIDGET (gtk_builder_get_object (baobab.main_ui, "toolbar1"));
+	toolbar = GET_WIDGET ("toolbar1");
 	if (toolbar == NULL) {
 		g_printerr ("Could not build toolbar\n");
 		return;
@@ -679,7 +679,7 @@ baobab_create_toolbar (void)
 			 G_SETTINGS_BIND_DEFAULT);
 	g_settings_bind (baobab.ui_settings,
 			 BAOBAB_SETTINGS_TOOLBAR_VISIBLE,
-			 GTK_TOGGLE_ACTION (gtk_builder_get_object (baobab.main_ui, "view_tb")), "active",
+			 GET_TOGGLE_ACTION ("view_tb"), "active",
 			 G_SETTINGS_BIND_DEFAULT);
 
 }
@@ -687,8 +687,7 @@ baobab_create_toolbar (void)
 static void
 baobab_create_statusbar (void)
 {
-	baobab.statusbar = GTK_WIDGET (gtk_builder_get_object (baobab.main_ui,
-							       "statusbar1"));
+	baobab.statusbar = GET_WIDGET ("statusbar1");
 	if (baobab.statusbar == NULL) {
 		g_printerr ("Could not build statusbar\n");
 		return;
@@ -700,7 +699,7 @@ baobab_create_statusbar (void)
 			 G_SETTINGS_BIND_DEFAULT);
 	g_settings_bind (baobab.ui_settings,
 			 BAOBAB_SETTINGS_STATUSBAR_VISIBLE,
-			 GTK_TOGGLE_ACTION (gtk_builder_get_object (baobab.main_ui, "view_sb")), "active",
+			 GET_TOGGLE_ACTION ("view_sb"), "active",
 			 G_SETTINGS_BIND_DEFAULT);
 }
 
@@ -1103,7 +1102,7 @@ initialize_charts (void)
 	gtk_frame_set_label_align (GTK_FRAME (baobab.chart_frame), 0.0, 0.0);
 	gtk_frame_set_shadow_type (GTK_FRAME (baobab.chart_frame), GTK_SHADOW_IN);
 
-	hpaned_main = GTK_WIDGET (gtk_builder_get_object (baobab.main_ui, "hpaned_main"));
+	hpaned_main = GET_WIDGET ("hpaned_main");
 	gtk_paned_pack2 (GTK_PANED (hpaned_main),
 			 baobab.chart_frame, TRUE, TRUE);
 	gtk_paned_set_position (GTK_PANED (hpaned_main), 480);
@@ -1118,7 +1117,7 @@ initialize_charts (void)
 			  "changed",
 			  G_CALLBACK (on_chart_type_change), NULL);
 
-	hbox1 = GTK_WIDGET (gtk_builder_get_object (baobab.main_ui, "hbox1"));
+	hbox1 = GET_WIDGET ("hbox1");
 	gtk_container_add (GTK_CONTAINER (hbox1), baobab.chart_type_combo);
 	gtk_box_set_spacing (GTK_BOX (hbox1), 50);
 	gtk_box_set_child_packing (GTK_BOX (hbox1),
@@ -1282,17 +1281,16 @@ main (int argc, char *argv[])
 	check_menu_sens (FALSE);
 	update_scan_label ();
 
-	baobab.window = GTK_WIDGET (gtk_builder_get_object (baobab.main_ui, "baobab_window"));
+	baobab.window = GET_WIDGET ("baobab_window");
 	gtk_window_set_position (GTK_WINDOW (baobab.window),
 				 GTK_WIN_POS_CENTER);
 
 	baobab.tree_view = create_directory_treeview ();
 
-	set_ui_action_sens ("menurescan", FALSE);
+	gtk_action_set_sensitive (GET_ACTION ("menurescan"), FALSE);
 
 	/* set allocated space checkbox */
-	gtk_toggle_action_set_active (GTK_TOGGLE_ACTION (gtk_builder_get_object (baobab.main_ui,
-							 "ck_allocated")),
+	gtk_toggle_action_set_active (GET_TOGGLE_ACTION ("ck_allocated"),
 				      baobab.show_allocated);
 
 	gtk_widget_show (baobab.window);
