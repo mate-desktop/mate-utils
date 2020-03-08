@@ -96,6 +96,9 @@ void
 open_folder_cb (GtkAction * action,
                 gpointer data);
 void
+copy_path_cb (GtkAction * action,
+              gpointer data);
+void
 file_changed_cb (GFileMonitor * handle,
                  const gchar * monitor_uri,
                  const gchar * info_uri,

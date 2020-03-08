@@ -664,6 +664,33 @@ open_folder_cb (GtkAction * action,
 }
 
 void
+copy_path_cb (GtkAction * action,
+              gpointer data)
+{
+	GSearchWindow * gsearch = data;
+	GtkTreeModel * model;
+	GtkTreeIter iter;
+	GList * list;
+	gchar * locale_path;
+	GtkClipboard* clipboard;
+
+	list = gtk_tree_selection_get_selected_rows (GTK_TREE_SELECTION (gsearch->search_results_selection),
+						     &model);
+
+	gtk_tree_model_get_iter (GTK_TREE_MODEL (gsearch->search_results_list_store), &iter,
+				 g_list_nth_data (list, 0));
+
+	gtk_tree_model_get (GTK_TREE_MODEL (gsearch->search_results_list_store), &iter,
+			    COLUMN_LOCALE_FILE, &locale_path,
+			    -1);
+	clipboard = gtk_clipboard_get(GDK_SELECTION_CLIPBOARD);
+	gtk_clipboard_set_text(clipboard, locale_path, -1);
+
+	g_free (locale_path);
+	g_list_free_full (list, (GDestroyNotify) gtk_tree_path_free);
+}
+
+void
 file_changed_cb (GFileMonitor * handle,
                  const gchar * monitor_uri,
                  const gchar * info_uri,
@@ -1207,6 +1234,22 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 	                  "activate",
 	                  G_CALLBACK (open_folder_cb),
 	                  (gpointer) gsearch);
+
+	/* Popup menu item: Copy Path */
+	if (gtk_tree_selection_count_selected_rows (GTK_TREE_SELECTION (gsearch->search_results_selection)) == 1) {
+		new1 = gtk_image_menu_item_new_with_mnemonic  (_("Copy _Path"));
+		gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
+		gtk_widget_show (new1);
+
+		image1 = gtk_image_new_from_icon_name ("edit-copy", GTK_ICON_SIZE_MENU);
+		gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (new1), image1);
+		gtk_widget_show (image1);
+
+		g_signal_connect (G_OBJECT (new1),
+		                  "activate",
+		                  G_CALLBACK (copy_path_cb),
+		                  (gpointer) gsearch);
+	}
 
 	/* Popup menu item: Move to Trash */
 	separatormenuitem1 = gtk_separator_menu_item_new ();
