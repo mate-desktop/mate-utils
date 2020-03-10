@@ -253,30 +253,6 @@ gdict_window_set_sidebar_visible (GdictWindow *window,
 }
 
 static void
-gdict_window_set_statusbar_visible (GdictWindow *window,
-				    gboolean     is_visible)
-{
-  g_assert (GDICT_IS_WINDOW (window));
-
-  is_visible = !!is_visible;
-
-  if (is_visible != window->statusbar_visible)
-    {
-      GtkAction *action;
-
-      window->statusbar_visible = is_visible;
-
-      if (window->statusbar_visible)
-	gtk_widget_show (window->status);
-      else
-	gtk_widget_hide (window->status);
-
-      action = gtk_action_group_get_action (window->action_group, "ViewStatusbar");
-      gtk_toggle_action_set_active (GTK_TOGGLE_ACTION (action), window->statusbar_visible);
-    }
-}
-
-static void
 gdict_window_definition_cb (GdictContext    *context,
 			    GdictDefinition *definition,
 			    GdictWindow     *window)
