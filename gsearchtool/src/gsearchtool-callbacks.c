@@ -1032,11 +1032,98 @@ open_with_list_sort (gconstpointer a,
 	return result;
 }
 
+static GtkWidget *
+mate_image_menu_item_new_from_icon (const gchar *icon_name,
+                                    const gchar *label_name)
+{
+	gchar *concat;
+	GtkWidget *icon;
+	GtkWidget *box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
+
+	if (icon_name)
+		icon = gtk_image_new_from_icon_name (icon_name, GTK_ICON_SIZE_MENU);
+	else
+		icon = gtk_image_new ();
+
+	concat = g_strconcat (label_name, "     ", NULL);
+	GtkWidget *label_menu = gtk_label_new_with_mnemonic (concat);
+	GtkWidget *menuitem = gtk_menu_item_new ();
+
+	gtk_container_add (GTK_CONTAINER (box), icon);
+
+	gtk_container_add (GTK_CONTAINER (box), label_menu);
+
+	gtk_container_add (GTK_CONTAINER (menuitem), box);
+	gtk_widget_show_all (menuitem);
+
+	g_free (concat);
+
+	return menuitem;
+}
+
+static GtkWidget *
+mate_image_menu_item_new_from_gicon (GIcon *icon_img,
+                                     const gchar *label_name)
+{
+	gchar *concat;
+	GtkWidget *icon;
+	GtkWidget *box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
+
+	if (icon_img)
+		icon = gtk_image_new_from_gicon (icon_img, GTK_ICON_SIZE_MENU);
+	else
+		icon = gtk_image_new ();
+
+	concat = g_strconcat (label_name, "     ", NULL);
+	GtkWidget *label_menu = gtk_label_new_with_mnemonic (concat);
+	GtkWidget *menuitem = gtk_menu_item_new ();
+
+	gtk_container_add (GTK_CONTAINER (box), icon);
+
+	gtk_container_add (GTK_CONTAINER (box), label_menu);
+
+	gtk_container_add (GTK_CONTAINER (menuitem), box);
+	gtk_widget_show_all (menuitem);
+
+	g_free (concat);
+
+	return menuitem;
+}
+
+static GtkWidget *
+mate_image_menu_item_new_from_pixbuf (GdkPixbuf   *icon_pixbuf,
+                                      const gchar *label_name)
+{
+	gchar *concat;
+	GtkWidget *icon;
+	GtkWidget *box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
+
+	if (icon_pixbuf)
+		icon = gtk_image_new_from_pixbuf (icon_pixbuf);
+	else
+		icon = gtk_image_new ();
+
+	concat = g_strconcat (label_name, "     ", NULL);
+	GtkWidget *label_menu = gtk_label_new_with_mnemonic (concat);
+	GtkWidget *menuitem = gtk_menu_item_new ();
+
+	gtk_container_add (GTK_CONTAINER (box), icon);
+
+	gtk_container_add (GTK_CONTAINER (box), label_menu);
+
+	gtk_container_add (GTK_CONTAINER (menuitem), box);
+	gtk_widget_show_all (menuitem);
+
+	g_free (concat);
+
+	return menuitem;
+}
+
 static void
 build_popup_menu_for_file (GSearchWindow * gsearch,
                            gchar * file)
 {
-	GtkWidget * new1, * image1, * separatormenuitem1;
+	GtkWidget * new1, * separatormenuitem1;
 	GtkWidget * new2;
 	gint i;
 
@@ -1052,15 +1139,13 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 
 	gsearch->search_results_popup_menu = gtk_menu_new ();
 
+	gtk_menu_set_reserve_toggle_size (GTK_MENU (gsearch->search_results_popup_menu), FALSE);
+
 	if (file == NULL || g_file_test (file, G_FILE_TEST_IS_DIR) == TRUE) {
 		/* Popup menu item: Open */
-		new1 = gtk_image_menu_item_new_with_mnemonic  (_("_Open"));
+		new1 = mate_image_menu_item_new_from_icon ("document-open", _("_Open"));
 		gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
 		gtk_widget_show (new1);
-
-		image1 = gtk_image_new_from_icon_name ("document-open", GTK_ICON_SIZE_MENU);
-		gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (new1), image1);
-		gtk_widget_show (image1);
 
 		g_signal_connect (G_OBJECT (new1),
 		                  "activate",
@@ -1070,10 +1155,10 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 	else {
 		GFile * g_file;
 		GFileInfo * file_info;
-		GIcon * file_icon;
 		GList * list;
 		gchar * str;
 		gint list_length;
+		GIcon * file_icon = NULL;
 
 		g_file = g_file_new_for_path (file);
 		file_info = g_file_query_info (g_file, G_FILE_ATTRIBUTE_STANDARD_CONTENT_TYPE, G_FILE_QUERY_INFO_NONE, NULL, NULL);
@@ -1084,13 +1169,9 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 		if (list_length <= 0) {
 
 			/* Popup menu item: Open */
-			new1 = gtk_image_menu_item_new_with_mnemonic  (_("_Open"));
+			new1 = mate_image_menu_item_new_from_icon ("document-open", _("_Open"));
 			gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
 			gtk_widget_show (new1);
-
-			image1 = gtk_image_new_from_icon_name ("document-open", GTK_ICON_SIZE_MENU);
-			gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (new1), image1);
-			gtk_widget_show (image1);
 
 			g_signal_connect (G_OBJECT (new1),
 			                  "activate",
@@ -1109,8 +1190,17 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 			}
 
 			/* Popup menu item: Open with (default) */
+
+			if (g_app_info_get_icon ((GAppInfo *)list->data) != NULL) {
+				file_icon = g_object_ref (g_app_info_get_icon ((GAppInfo *)list->data));
+
+				if (file_icon == NULL) {
+					file_icon = g_themed_icon_new ("gtk-open");
+				}
+			}
+
 			str = g_strdup_printf (_("_Open with %s"),  g_app_info_get_name (list->data));
-			new1 = gtk_image_menu_item_new_with_mnemonic (str);
+			new1 = mate_image_menu_item_new_from_gicon (file_icon, str);
 			g_free (str);
 			gtk_widget_show (new1);
 
@@ -1120,20 +1210,6 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 			gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
 			g_signal_connect ((gpointer) new1, "activate", G_CALLBACK (open_file_cb),
 					  (gpointer) gsearch);
-
-			if (g_app_info_get_icon ((GAppInfo *)list->data) != NULL) {
-				file_icon = g_object_ref (g_app_info_get_icon ((GAppInfo *)list->data));
-				gtk_image_menu_item_set_always_show_image (GTK_IMAGE_MENU_ITEM (new1), file_icon != NULL);
-
-				if (file_icon == NULL) {
-					file_icon = g_themed_icon_new ("gtk-open");
-				}
-
-				image1 = gtk_image_new_from_gicon (file_icon, GTK_ICON_SIZE_MENU);
-				g_object_unref (file_icon);
-				gtk_widget_show (image1);
-				gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (new1), image1);
-			}
 
 			separatormenuitem1 = gtk_separator_menu_item_new ();
 			gtk_widget_show (separatormenuitem1);
@@ -1150,9 +1226,7 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 					str = g_strdup_printf ("%s",  g_app_info_get_name (list->data));
 				}
 
-				new1 = gtk_image_menu_item_new_with_mnemonic (str);
-				g_free (str);
-				gtk_widget_show (new1);
+				gboolean icon_done = FALSE;
 
 				g_object_set_data_full (G_OBJECT (new1), "app", (GAppInfo *)list->data,
 			                                g_object_unref);
@@ -1161,23 +1235,24 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 
 					if (g_app_info_get_icon ((GAppInfo *)list->data) != NULL) {
 						file_icon = g_object_ref (g_app_info_get_icon ((GAppInfo *)list->data));
-						gtk_image_menu_item_set_always_show_image (GTK_IMAGE_MENU_ITEM (new1), file_icon != NULL);
 
 						if (file_icon == NULL) {
 							file_icon = g_themed_icon_new ("gtk-open");
 						}
 
-						image1 = gtk_image_new_from_gicon (file_icon, GTK_ICON_SIZE_MENU);
+						icon_done = TRUE;
+						new1 = mate_image_menu_item_new_from_gicon (file_icon, str);
 						g_object_unref (file_icon);
-						gtk_widget_show (image1);
-						gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (new1), image1);
+
 					}
 
 					if (i == 0) {
 						gsearch->search_results_popup_submenu = gtk_menu_new ();
 
+						gtk_menu_set_reserve_toggle_size (GTK_MENU (gsearch->search_results_popup_submenu), FALSE);
+
 						/* Popup menu item: Open With */
-					  	new2 = gtk_menu_item_new_with_mnemonic  (_("Open Wit_h"));
+					  	new2 = mate_image_menu_item_new_from_icon (NULL, _("Open Wit_h"));
 				  		gtk_widget_show (new2);
 					 	gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new2);
 
@@ -1196,21 +1271,24 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 					if (g_app_info_get_icon ((GAppInfo *)list->data) != NULL) {
 
 						file_icon = g_object_ref (g_app_info_get_icon ((GAppInfo *)list->data));
-						gtk_image_menu_item_set_always_show_image (GTK_IMAGE_MENU_ITEM (new1), file_icon != NULL);
 
 						if (file_icon == NULL) {
 							file_icon = g_themed_icon_new ("gtk-open");
 						}
 
-						image1 = gtk_image_new_from_gicon (file_icon, GTK_ICON_SIZE_MENU);
+						icon_done = TRUE;
+						new1 = mate_image_menu_item_new_from_gicon (file_icon, str);
 						g_object_unref (file_icon);
-						gtk_widget_show (image1);
-						gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (new1), image1);
 					}
 					gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
 					g_signal_connect ((gpointer) new1, "activate", G_CALLBACK (open_file_cb),
 					                  (gpointer) gsearch);
 				}
+				if (icon_done == FALSE)
+					new1 = mate_image_menu_item_new_from_icon (NULL, str);
+				g_free (str);
+				gtk_widget_show (new1);
+
 			}
 
 			if (list_length >= 2) {
@@ -1222,13 +1300,9 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 	}
 
 	/* Popup menu item: Open Containing Folder */
-	new1 = gtk_image_menu_item_new_with_mnemonic  (_("Open Containing _Folder"));
+	new1 = mate_image_menu_item_new_from_icon ("document-open", _("Open Containing _Folder"));
 	gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
 	gtk_widget_show (new1);
-
-	image1 = gtk_image_new_from_icon_name ("document-open", GTK_ICON_SIZE_MENU);
-	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (new1), image1);
-	gtk_widget_show (image1);
 
 	g_signal_connect (G_OBJECT (new1),
 	                  "activate",
@@ -1237,13 +1311,9 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 
 	/* Popup menu item: Copy Path */
 	if (gtk_tree_selection_count_selected_rows (GTK_TREE_SELECTION (gsearch->search_results_selection)) == 1) {
-		new1 = gtk_image_menu_item_new_with_mnemonic  (_("Copy _Path"));
+		new1 = mate_image_menu_item_new_from_icon ("edit-copy", _("Copy _Path"));
 		gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
 		gtk_widget_show (new1);
-
-		image1 = gtk_image_new_from_icon_name ("edit-copy", GTK_ICON_SIZE_MENU);
-		gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (new1), image1);
-		gtk_widget_show (image1);
 
 		g_signal_connect (G_OBJECT (new1),
 		                  "activate",
@@ -1256,17 +1326,14 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 	gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), separatormenuitem1);
 	gtk_widget_show (separatormenuitem1);
 
-	new1 = gtk_image_menu_item_new_with_mnemonic  (_("Mo_ve to Trash"));
-	gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
-	gtk_widget_show (new1);
-
 	GtkIconTheme *icon_theme;
 	GdkPixbuf *pixbuf;
 	icon_theme = gtk_icon_theme_get_default ();
 	pixbuf = gtk_icon_theme_load_icon (icon_theme, "user-trash", GTK_ICON_SIZE_MENU, 0, NULL);
-	image1 = gtk_image_new_from_pixbuf (pixbuf);
-	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (new1), image1);
-	gtk_widget_show (image1);
+
+	new1 = mate_image_menu_item_new_from_pixbuf (pixbuf, _("Mo_ve to Trash"));
+	gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
+	gtk_widget_show (new1);
 
 	g_signal_connect (G_OBJECT (new1),
 	                  "activate",
@@ -1278,17 +1345,13 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 	gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), separatormenuitem1);
 	gtk_widget_show (separatormenuitem1);
 
-	gsearch->search_results_save_results_as_item = gtk_image_menu_item_new_with_mnemonic  (_("_Save Results As..."));
+	gsearch->search_results_save_results_as_item = mate_image_menu_item_new_from_icon  ("document-save", _("_Save Results As..."));
 	gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), gsearch->search_results_save_results_as_item);
 	gtk_widget_show (gsearch->search_results_save_results_as_item);
 
 	if (gsearch->command_details->command_status == RUNNING) {
 		gtk_widget_set_sensitive (gsearch->search_results_save_results_as_item, FALSE);
 	}
-
-	image1 = gtk_image_new_from_icon_name ("document-save", GTK_ICON_SIZE_MENU);
-	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (gsearch->search_results_save_results_as_item), image1);
-	gtk_widget_show (image1);
 
 	g_signal_connect (G_OBJECT (gsearch->search_results_save_results_as_item),
 	                  "activate",
