@@ -107,7 +107,7 @@ on_about_activate (GtkMenuItem *menuitem, gpointer user_data)
 		"program-name", _("Disk Usage Analyzer"),
 		"version", VERSION,
 		"title", _("About Disk Usage Analyzer"),
-		"comments", _("A graphical tool to analyze disk usage."),
+		"comments", _("Analyze your disk usage through a graphical tool."),
 		"copyright", _("Copyright \xc2\xa9 2005-2010 Fabio Marzocca\n"
 		               "Copyright \xc2\xa9 2011-2020 MATE developers"),
 		"logo-icon-name", "mate-disk-usage-analyzer",

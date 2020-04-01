@@ -772,7 +772,7 @@ logview_about (GtkWidget *widget, GtkWidget *window)
                                         "Copyright \xc2\xa9 2011-2020 MATE developers"),
                          "license", license_trans,
                          "wrap-license", TRUE,
-                         "comments", _("A system log viewer for MATE."),
+                         "comments", _("View, monitor or analyze your system logs in a gradual manner."),
                          "authors", logview_about_authors,
                          "documenters", logview_about_documenters,
                          "translator_credits", strcmp (logview_about_translator_credits,
