@@ -54,7 +54,7 @@ gdict_show_about_dialog (GtkWidget *parent)
   };
 
   const gchar *translator_credits = _("translator-credits");
-  const gchar *comments = _("Look up words in dictionaries");
+  const gchar *comments = _("Look up words or terms in a dictionary source.");
 
   const gchar* license[] = {
     N_("This program is free software; you can redistribute it and/or "
