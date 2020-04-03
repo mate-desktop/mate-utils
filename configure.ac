@@ -258,25 +258,6 @@ AS_IF([test "x$have_ipv6" = "xyes"],
       ]
 )
 
-
-dnl strftime extension checks
-AC_TRY_RUN([
-  #include <time.h>
-  int main (void) {
-    char buf[100];
-    struct tm tm = {0};
-    tm.tm_year = 99;
-    if (strftime(buf, 100, "%EY", &tm) == 4 && strcmp (buf, "1999")==0)
-      return 0;
-    return 1;
-  }
-  ],
-  [
-    AC_DEFINE([HAVE_STRFTIME_EXTENSION], [1],
-              [Define if strftime supports %E and %O modifiers.])
-  ]
-)
-
 dnl mate-search-tool checks
 withval=""
 AC_ARG_WITH([grep],
