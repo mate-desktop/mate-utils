@@ -408,193 +408,33 @@ remove_mnemonic_character (const gchar * string)
 }
 
 gchar *
-get_readable_date (const CajaDateFormat date_format_enum,
-                   const time_t file_time_raw)
+get_readable_date (const CajaDateFormat  date_format_enum,
+                   GDateTime            *file_date_time)
 {
-	struct tm * file_time;
-	gchar * format;
-	GDate * today;
-	GDate * file_date;
-	guint32 file_date_age;
-	gchar * readable_date;
-
-	file_time = localtime (&file_time_raw);
+	const gchar *format;
+	GDateTime   *now;
+	GTimeSpan    file_date_age;
 
 	/* Base format of date column on caja date-format key */
 	if (date_format_enum == CAJA_DATE_FORMAT_LOCALE) {
-		return gsearchtool_strdup_strftime ("%c", file_time);
+		return g_date_time_format (file_date_time, "%c");
 	} else if (date_format_enum == CAJA_DATE_FORMAT_ISO) {
-		return gsearchtool_strdup_strftime ("%Y-%m-%d %H:%M:%S", file_time);
+		return g_date_time_format (file_date_time, "%Y-%m-%d %H:%M:%S");
 	}
 
-	file_date = g_date_new_dmy (file_time->tm_mday,
-			       file_time->tm_mon + 1,
-			       file_time->tm_year + 1900);
+	now = g_date_time_new_now_local ();
+	file_date_age = g_date_time_difference (now, file_date_time);
+	g_date_time_unref (now);
 
-	today = g_date_new ();
-	g_date_set_time_t (today, time (NULL));
-
-	file_date_age = g_date_get_julian (today) - g_date_get_julian (file_date);
-
-	g_date_free (today);
-	g_date_free (file_date);
-
-	if (file_date_age == 0)	{
-	/* Translators:  Below are the strings displayed in the 'Date Modified'
-	   column of the list view.  The format of this string can vary depending
-	   on age of a file.  Please modify the format of the timestamp to match
-	   your locale.  For example, to display 24 hour time replace the '%-I'
-	   with '%-H' and remove the '%p'.  (See bugzilla report #120434.) */
-		format = g_strdup(_("today at %-I:%M %p"));
-	} else if (file_date_age == 1) {
-		format = g_strdup(_("yesterday at %-I:%M %p"));
-	} else if (file_date_age < 7) {
-		format = g_strdup(_("%A, %B %-d %Y at %-I:%M:%S %p"));
+	if (file_date_age < G_TIME_SPAN_DAY)	{
+		format = _("today at %-I:%M %p");
+	} else if (file_date_age < 2 * G_TIME_SPAN_DAY) {
+		format = _("yesterday at %-I:%M %p");
 	} else {
-		format = g_strdup(_("%A, %B %-d %Y at %-I:%M:%S %p"));
+		format = _("%A, %B %-d %Y at %-I:%M:%S %p");
 	}
 
-	readable_date = gsearchtool_strdup_strftime (format, file_time);
-	g_free (format);
-
-	return readable_date;
-}
-
-gchar *
-gsearchtool_strdup_strftime (const gchar * format,
-                             struct tm * time_pieces)
-{
-	/* This function is borrowed from eel's eel_strdup_strftime() */
-	GString * string;
-	const char * remainder, * percent;
-	char code[4], buffer[512];
-	char * piece, * result, * converted;
-	size_t string_length;
-	gboolean strip_leading_zeros, turn_leading_zeros_to_spaces;
-	char modifier;
-	int i;
-
-	/* Format could be translated, and contain UTF-8 chars,
-	 * so convert to locale encoding which strftime uses */
-	converted = g_locale_from_utf8 (format, -1, NULL, NULL, NULL);
-	g_return_val_if_fail (converted != NULL, NULL);
-
-	string = g_string_new ("");
-	remainder = converted;
-
-	/* Walk from % character to % character. */
-	for (;;) {
-		percent = strchr (remainder, '%');
-		if (percent == NULL) {
-			g_string_append (string, remainder);
-			break;
-		}
-		g_string_append_len (string, remainder,
-				     percent - remainder);
-
-		/* Handle the "%" character. */
-		remainder = percent + 1;
-		switch (*remainder) {
-		case '-':
-			strip_leading_zeros = TRUE;
-			turn_leading_zeros_to_spaces = FALSE;
-			remainder++;
-			break;
-		case '_':
-			strip_leading_zeros = FALSE;
-			turn_leading_zeros_to_spaces = TRUE;
-			remainder++;
-			break;
-		case '%':
-			g_string_append_c (string, '%');
-			remainder++;
-			continue;
-		case '\0':
-			g_warning ("Trailing %% passed to gsearchtool_strdup_strftime");
-			g_string_append_c (string, '%');
-			continue;
-		default:
-			strip_leading_zeros = FALSE;
-			turn_leading_zeros_to_spaces = FALSE;
-			break;
-		}
-
-		modifier = 0;
-		if (strchr (SUS_EXTENDED_STRFTIME_MODIFIERS, *remainder) != NULL) {
-			modifier = *remainder;
-			remainder++;
-
-			if (*remainder == 0) {
-				g_warning ("Unfinished %%%c modifier passed to gsearchtool_strdup_strftime", modifier);
-				break;
-			}
-		}
-
-		if (strchr (C_STANDARD_STRFTIME_CHARACTERS, *remainder) == NULL) {
-			g_warning ("gsearchtool_strdup_strftime does not support "
-				   "non-standard escape code %%%c",
-				   *remainder);
-		}
-
-		/* Convert code to strftime format. We have a fixed
-		 * limit here that each code can expand to a maximum
-		 * of 512 bytes, which is probably OK. There's no
-		 * limit on the total size of the result string.
-		 */
-		i = 0;
-		code[i++] = '%';
-		if (modifier != 0) {
-#ifdef HAVE_STRFTIME_EXTENSION
-			code[i++] = modifier;
-#endif
-		}
-		code[i++] = *remainder;
-		code[i++] = '\0';
-		string_length = strftime (buffer, sizeof (buffer),
-					  code, time_pieces);
-		if (string_length == 0) {
-			/* We could put a warning here, but there's no
-			 * way to tell a successful conversion to
-			 * empty string from a failure.
-			 */
-			buffer[0] = '\0';
-		}
-
-		/* Strip leading zeros if requested. */
-		piece = buffer;
-		if (strip_leading_zeros || turn_leading_zeros_to_spaces) {
-			if (strchr (C_STANDARD_NUMERIC_STRFTIME_CHARACTERS, *remainder) == NULL) {
-				g_warning ("gsearchtool_strdup_strftime does not support "
-					   "modifier for non-numeric escape code %%%c%c",
-					   remainder[-1],
-					   *remainder);
-			}
-			if (*piece == '0') {
-				do {
-					piece++;
-				} while (*piece == '0');
-				if (!g_ascii_isdigit (*piece)) {
-				    piece--;
-				}
-			}
-			if (turn_leading_zeros_to_spaces) {
-				memset (buffer, ' ', piece - buffer);
-				piece = buffer;
-			}
-		}
-		remainder++;
-
-		/* Add this piece. */
-		g_string_append (string, piece);
-	}
-
-	/* Convert the string back into utf-8. */
-	result = g_locale_to_utf8 (string->str, -1, NULL, NULL, NULL);
-
-	g_string_free (string, TRUE);
-	g_free (converted);
-
-	return result;
+	return g_date_time_format (file_date_time, format);
 }
 
 gchar *

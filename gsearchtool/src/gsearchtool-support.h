@@ -68,11 +68,8 @@ gchar *
 remove_mnemonic_character (const gchar * string);
 
 gchar *
-get_readable_date (const CajaDateFormat date_format_enum,
-                   const time_t file_time_raw);
-gchar *
-gsearchtool_strdup_strftime (const gchar * format,
-                             struct tm * time_pieces);
+get_readable_date (const CajaDateFormat  date_format_enum,
+                   GDateTime            *file_time_raw);
 gchar *
 get_file_type_description (const gchar * file,
                            GFileInfo * file_info);

@@ -840,7 +840,12 @@ add_file_to_search_results (const gchar * file,
 	GFileInfo * file_info;
 	GFile * g_file;
 	GError * error = NULL;
+	GDateTime * file_dt;
+#if GLIB_CHECK_VERSION(2,61,2)
+	gint64 time_val;
+#else
 	GTimeVal time_val;
+#endif
 	GtkTreePath * path;
 	GtkTreeRowReference * reference;
 	gchar * description;
@@ -875,8 +880,14 @@ add_file_to_search_results (const gchar * file,
 	description = get_file_type_description (file, file_info);
 		readable_size = g_format_size (g_file_info_get_size (file_info));
 
+#if GLIB_CHECK_VERSION(2,61,2)
+	file_dt = g_file_info_get_modification_date_time (file_info);
+	time_val = g_date_time_to_unix (file_dt);
+#else
 	g_file_info_get_modification_time (file_info, &time_val);
-	readable_date = get_readable_date (gsearch->search_results_date_format, time_val.tv_sec);
+	file_dt = g_date_time_new_from_unix_local ((gint64) time_val.tv_sec);
+#endif
+	readable_date = get_readable_date (gsearch->search_results_date_format, file_dt);
 
 	base_name = g_path_get_basename (file);
 	dir_name = g_path_get_dirname (file);
@@ -914,7 +925,11 @@ add_file_to_search_results (const gchar * file,
 			    COLUMN_SIZE, (-1) * (gdouble) g_file_info_get_size(file_info),
 			    COLUMN_TYPE, (description != NULL) ? description : g_strdup (g_file_info_get_content_type (file_info)),
 			    COLUMN_READABLE_DATE, readable_date,
+#if GLIB_CHECK_VERSION(2,61,2)
+			    COLUMN_DATE, (-1) * (gdouble) time_val,
+#else
 			    COLUMN_DATE, (-1) * (gdouble) time_val.tv_sec,
+#endif
 			    COLUMN_NO_FILES_FOUND, FALSE,
 			    -1);
 
@@ -945,6 +960,7 @@ add_file_to_search_results (const gchar * file,
 
 	g_object_unref (g_file);
 	g_object_unref (file_info);
+	g_date_time_unref (file_dt);
 	g_free (base_name);
 	g_free (dir_name);
 	g_free (relative_dir_name);
