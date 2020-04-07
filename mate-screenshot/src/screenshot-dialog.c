@@ -236,10 +236,10 @@ screenshot_dialog_new (GdkPixbuf *screenshot,
   g_free (current_folder);
 
   gtk_widget_set_size_request (preview_darea, width, height);
+  height = gdk_pixbuf_get_height (screenshot);
+  width = gdk_pixbuf_get_width (screenshot);
   gtk_aspect_frame_set (GTK_ASPECT_FRAME (aspect_frame), 0.0, 0.5,
-			gdk_pixbuf_get_width (screenshot)/
-			(gfloat) gdk_pixbuf_get_height (screenshot),
-			FALSE);
+                        (gfloat) width / (gfloat) height, FALSE);
   g_signal_connect (toplevel, "key_press_event", G_CALLBACK (on_toplevel_key_press_event), dialog);
   g_signal_connect (preview_darea, "draw", G_CALLBACK (on_preview_draw), dialog);
   g_signal_connect (preview_darea, "button_press_event", G_CALLBACK (on_preview_button_press_event), dialog);

@@ -905,13 +905,14 @@ add_file_to_search_results (const gchar * file,
 	utf8_relative_dir_name = g_filename_display_name (relative_dir_name);
 
 	gtk_list_store_append (GTK_LIST_STORE (store), iter);
+	goffset file_size = g_file_info_get_size (file_info);
 	gtk_list_store_set (GTK_LIST_STORE (store), iter,
 			    COLUMN_ICON, pixbuf,
 			    COLUMN_NAME, utf8_base_name,
 			    COLUMN_RELATIVE_PATH, utf8_relative_dir_name,
 			    COLUMN_LOCALE_FILE, file,
 			    COLUMN_READABLE_SIZE, readable_size,
-			    COLUMN_SIZE, (-1) * (gdouble) g_file_info_get_size(file_info),
+			    COLUMN_SIZE, (-1) * (gdouble) file_size,
 			    COLUMN_TYPE, (description != NULL) ? description : g_strdup (g_file_info_get_content_type (file_info)),
 			    COLUMN_READABLE_DATE, readable_date,
 			    COLUMN_DATE, (-1) * (gdouble) time_val.tv_sec,

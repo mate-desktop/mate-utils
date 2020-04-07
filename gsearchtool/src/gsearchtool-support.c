@@ -848,23 +848,27 @@ gsearchtool_get_thumbnail_image (const gchar * thumbnail)
 			gfloat scale_factor_y = 1.0;
 			gint scale_x;
 			gint scale_y;
+			gint width;
+			gint height;
 
 			thumbnail_pixbuf = gdk_pixbuf_new_from_file (thumbnail, NULL);
 			gsearchtool_thumbnail_frame_image (&thumbnail_pixbuf);
 
-			if (gdk_pixbuf_get_width (thumbnail_pixbuf) > ICON_SIZE) {
-				scale_factor_x = (gfloat) ICON_SIZE / (gfloat) gdk_pixbuf_get_width (thumbnail_pixbuf);
+			width = gdk_pixbuf_get_width (thumbnail_pixbuf);
+			if (width > ICON_SIZE) {
+				scale_factor_x = (gfloat) ICON_SIZE / (gfloat) width;
 			}
-			if (gdk_pixbuf_get_height (thumbnail_pixbuf) > ICON_SIZE) {
-				scale_factor_y = (gfloat) ICON_SIZE / (gfloat) gdk_pixbuf_get_height (thumbnail_pixbuf);
+			height = gdk_pixbuf_get_height (thumbnail_pixbuf);
+			if (height > ICON_SIZE) {
+				scale_factor_y = (gfloat) ICON_SIZE / (gfloat) height;
 			}
 
-			if (gdk_pixbuf_get_width (thumbnail_pixbuf) > gdk_pixbuf_get_height (thumbnail_pixbuf)) {
+			if (width > height) {
 				scale_x = ICON_SIZE;
-				scale_y = (gint) (gdk_pixbuf_get_height (thumbnail_pixbuf) * scale_factor_x);
+				scale_y = (gint) (height * scale_factor_x);
 			}
 			else {
-				scale_x = (gint) (gdk_pixbuf_get_width (thumbnail_pixbuf) * scale_factor_y);
+				scale_x = (gint) (width * scale_factor_y);
 				scale_y = ICON_SIZE;
 			}
 
