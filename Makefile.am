@@ -31,6 +31,7 @@ DISTCLEANFILES =                \
 
 DISTCHECK_CONFIGURE_FLAGS = \
 	--enable-gtk-doc \
+	--enable-compile-warnings=no \
 	CFLAGS='-Wno-deprecated-declarations'
 
 # Build ChangeLog from GIT  history
