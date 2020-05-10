@@ -925,7 +925,7 @@ add_file_to_search_results (const gchar * file,
 		reference = gtk_tree_row_reference_new (GTK_TREE_MODEL (store), path);
 		gtk_tree_path_free (path);
 
-		handle = g_file_monitor_file (g_file, G_FILE_MONITOR_EVENT_DELETED, NULL, &error);
+		handle = g_file_monitor_file (g_file, G_FILE_MONITOR_NONE, NULL, &error);
 
 		if (error == NULL) {
 			monitor->gsearch = gsearch;
