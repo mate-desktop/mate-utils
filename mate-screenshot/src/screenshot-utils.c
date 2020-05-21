@@ -599,7 +599,8 @@ screenshot_get_pixbuf (GdkWindow    *window,
                        GdkRectangle *rectangle,
                        gboolean      include_pointer,
                        gboolean      include_border,
-                       gboolean      include_mask)
+                       gboolean      include_mask,
+                       gboolean      current_monitor)
 {
   GdkWindow *root;
   GdkPixbuf *screenshot;
@@ -608,7 +609,6 @@ screenshot_get_pixbuf (GdkWindow    *window,
   gint screen_width, screen_height, scale;
 
   /* If the screenshot should include the border, we look for the WM window. */
-
   if (include_border)
     {
       Window xid, wm;
@@ -662,6 +662,25 @@ screenshot_get_pixbuf (GdkWindow    *window,
       y_orig = rectangle->y - y_orig;
       width  = rectangle->width;
       height = rectangle->height;
+    }
+
+  /* Change the area to grab if we want the screen where the application is */
+  if (current_monitor)
+    {
+      GdkWindow *current_window;
+      GdkDisplay *display;
+      GdkMonitor *monitor;
+      GdkRectangle geometry;
+
+      current_window = screenshot_find_active_window ();
+      display = gdk_window_get_display (current_window);
+      monitor = gdk_display_get_monitor_at_window (display, current_window);
+
+      gdk_monitor_get_geometry(monitor, &geometry);
+      x_orig = geometry.x;
+      y_orig = geometry.y;
+      width = geometry.width;
+      height = geometry.height;
     }
 
   screenshot = gdk_pixbuf_get_from_window (root,

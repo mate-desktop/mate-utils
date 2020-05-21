@@ -35,7 +35,8 @@ GdkPixbuf *screenshot_get_pixbuf          (GdkWindow *win,
                                            GdkRectangle *rectangle,
                                            gboolean include_pointer,
                                            gboolean include_border,
-                                           gboolean include_mask);
+                                           gboolean include_mask,
+                                           gboolean current_monitor);
 
 void       screenshot_show_error_dialog   (GtkWindow   *parent,
                                            const gchar *message,
