@@ -600,7 +600,7 @@ screenshot_get_pixbuf (GdkWindow    *window,
                        gboolean      include_pointer,
                        gboolean      include_border,
                        gboolean      include_mask,
-                       gboolean      current_monitor)
+                       gboolean      take_monitor_shot)
 {
   GdkWindow *root;
   GdkPixbuf *screenshot;
@@ -665,7 +665,7 @@ screenshot_get_pixbuf (GdkWindow    *window,
     }
 
   /* Change the area to grab if we want the screen where the application is */
-  if (current_monitor)
+  if (take_monitor_shot)
     {
       GdkWindow *current_window;
       GdkDisplay *display;
