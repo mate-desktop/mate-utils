@@ -599,7 +599,8 @@ screenshot_get_pixbuf (GdkWindow    *window,
                        GdkRectangle *rectangle,
                        gboolean      include_pointer,
                        gboolean      include_border,
-                       gboolean      include_mask)
+                       gboolean      include_mask,
+                       gboolean      take_monitor_shot)
 {
   GdkWindow *root;
   GdkPixbuf *screenshot;
@@ -662,6 +663,33 @@ screenshot_get_pixbuf (GdkWindow    *window,
       y_orig = rectangle->y - y_orig;
       width  = rectangle->width;
       height = rectangle->height;
+    }
+
+  /* Change the area to grab if we want the screen where the application is */
+  if (take_monitor_shot)
+    {
+      GdkSeat *seat;
+      GdkDevice *device;
+      GdkDisplay *display;
+      GdkMonitor *monitor;
+      GdkRectangle geometry;
+      gint px, py;
+
+      display = gdk_window_get_display (window);
+      seat = gdk_display_get_default_seat (display);
+      device = gdk_seat_get_pointer (seat);
+
+      gdk_window_get_device_position (window, device, &px, &py, NULL);
+
+      monitor = gdk_display_get_monitor_at_point (display, px, py);
+
+      g_print("Monitor model : %s\n", gdk_monitor_get_model (monitor));
+
+      gdk_monitor_get_geometry(monitor, &geometry);
+      x_orig = geometry.x;
+      y_orig = geometry.y;
+      width = geometry.width;
+      height = geometry.height;
     }
 
   screenshot = gdk_pixbuf_get_from_window (root,

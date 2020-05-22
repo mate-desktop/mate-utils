@@ -101,6 +101,8 @@ static guint delay_arg = 0;
 
 /* Options */
 static gboolean noninteractive_clipboard_arg = FALSE;
+static gboolean take_desktop_shot = FALSE;
+static gboolean take_monitor_shot = FALSE;
 static gboolean take_window_shot = FALSE;
 static gboolean take_area_shot = FALSE;
 static gboolean include_border = FALSE;
@@ -159,8 +161,9 @@ interactive_dialog_response_cb (GtkDialog *dialog,
 }
 
 #define TARGET_TOGGLE_DESKTOP 0
-#define TARGET_TOGGLE_WINDOW  1
-#define TARGET_TOGGLE_AREA    2
+#define TARGET_TOGGLE_MONITOR 1
+#define TARGET_TOGGLE_WINDOW  2
+#define TARGET_TOGGLE_AREA    3
 
 static void
 target_toggled_cb (GtkToggleButton *button,
@@ -170,6 +173,8 @@ target_toggled_cb (GtkToggleButton *button,
 
   if (gtk_toggle_button_get_active (button))
     {
+      take_desktop_shot = (target_toggle == TARGET_TOGGLE_DESKTOP);
+      take_monitor_shot = (target_toggle == TARGET_TOGGLE_MONITOR);
       take_window_shot = (target_toggle == TARGET_TOGGLE_WINDOW);
       take_area_shot = (target_toggle == TARGET_TOGGLE_AREA);
 
@@ -402,6 +407,7 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
   GtkAdjustment *adjust;
   GSList *group;
   gchar *title;
+  gint monitors_count;
 
   main_vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
   gtk_box_pack_start (GTK_BOX (outer_vbox), main_vbox, FALSE, FALSE, 0);
@@ -435,7 +441,7 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
   group = NULL;
   radio = gtk_radio_button_new_with_mnemonic (group,
                                               _("Grab the whole _desktop"));
-  if (take_window_shot || take_area_shot)
+  if (take_desktop_shot)
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (radio), FALSE);
   g_signal_connect (radio, "toggled",
                     G_CALLBACK (target_toggled_cb),
@@ -443,6 +449,24 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
   gtk_box_pack_start (GTK_BOX (vbox), radio, FALSE, FALSE, 0);
   group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (radio));
   gtk_widget_show (radio);
+
+  /** Grab current monitor only if multiple monitors, hidden for one monitor only **/
+  take_monitor_shot = FALSE;
+  monitors_count = gdk_display_get_n_monitors (gdk_display_get_default ());
+
+  if (monitors_count > 1)
+  {
+    radio = gtk_radio_button_new_with_mnemonic (group,
+                                                _("Grab the _screen where this application is"));
+    if (take_monitor_shot)
+      gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (radio), TRUE);
+    g_signal_connect (radio, "toggled",
+                      G_CALLBACK (target_toggled_cb),
+                      GINT_TO_POINTER (TARGET_TOGGLE_MONITOR));
+    gtk_box_pack_start (GTK_BOX (vbox), radio, FALSE, FALSE, 0);
+    group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (radio));
+    gtk_widget_show (radio);
+  }
 
   /** Grab current window **/
   radio = gtk_radio_button_new_with_mnemonic (group,
@@ -821,12 +845,12 @@ finish_prepare_screenshot (char *initial_uri, GdkWindow *window, GdkRectangle *r
   ScreenshotDialog *dialog;
   gboolean include_mask = (!take_window_shot && !take_area_shot);
 
-  /* always disable window border for full-desktop or selected-area screenshots */
-  if (!take_window_shot)
-    screenshot = screenshot_get_pixbuf (window, rectangle, include_pointer, FALSE, include_mask);
+  /* always disable window border for full-desktop or monitor or selected-area screenshots */
+  if (take_desktop_shot || take_monitor_shot || take_area_shot)
+    screenshot = screenshot_get_pixbuf (window, rectangle, include_pointer, FALSE, include_mask, take_monitor_shot);
   else
     {
-      screenshot = screenshot_get_pixbuf (window, rectangle, include_pointer, include_border, include_mask);
+      screenshot = screenshot_get_pixbuf (window, rectangle, include_pointer, include_border, include_mask, FALSE);
 
       switch (border_effect[0])
         {
