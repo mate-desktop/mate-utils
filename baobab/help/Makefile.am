@@ -17,3 +17,5 @@ IGNORE_HELP_LINGUAS =
 HELP_LINGUAS = $(if $(IGNORE_HELP_LINGUAS), \
 	$(filter-out $(IGNORE_HELP_LINGUAS),$(subst /,,$(dir $(wildcard */*.po)))), \
 	$(subst /,,$(dir $(wildcard */*.po))) )
+
+-include $(top_srcdir)/git.mk

@@ -88,3 +88,5 @@ CLEANFILES = \
 	$(gsettings_SCHEMAS) \
 	mate-dictionary.appdata.xml \
 	$(NULL)
+
+-include $(top_srcdir)/git.mk

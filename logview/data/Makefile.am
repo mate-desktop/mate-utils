@@ -24,3 +24,5 @@ DISTCLEANFILES =		\
 	$(desktop_DATA)		\
 	$(desktop_in_files)	\
 	$(gsettings_SCHEMAS)
+
+-include $(top_srcdir)/git.mk

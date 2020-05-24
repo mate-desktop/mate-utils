@@ -60,3 +60,5 @@ mate_disk_usage_analyzer_LDADD = \
 	$(NULL)
 
 CLEANFILES = $(BUILT_SOURCES)
+
+-include $(top_srcdir)/git.mk
