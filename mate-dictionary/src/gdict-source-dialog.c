@@ -612,11 +612,11 @@ gdict_source_dialog_constructor (GType                  type,
 					       GTK_RESPONSE_HELP);
 
   dialog->db_chooser = gdict_database_chooser_new ();
-  gtk_box_pack_start (GTK_BOX (GET_WIDGET ("db-vbox")), dialog->db_chooser, TRUE, TRUE, 0);
+  gtk_box_pack_start (GTK_BOX (GET_WIDGET ("db-box")), dialog->db_chooser, TRUE, TRUE, 0);
   gtk_widget_show (dialog->db_chooser);
 
   dialog->strat_chooser = gdict_strategy_chooser_new ();
-  gtk_box_pack_start (GTK_BOX (GET_WIDGET ("strat-vbox")), dialog->strat_chooser, TRUE, TRUE, 0);
+  gtk_box_pack_start (GTK_BOX (GET_WIDGET ("strat-box")), dialog->strat_chooser, TRUE, TRUE, 0);
   gtk_widget_show (dialog->strat_chooser);
 
   /* the UI changes depending on the action that the source dialog
