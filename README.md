@@ -25,5 +25,7 @@ Requirements
 The following configure flags can be used:
 
   `--enable-zlib`: Enable ZLib support for Logview [default=yes]
+
   `--with-grep`: Specify the path to the grep command [default=find it ourselves]
+
   `--enable-debug`: Enable debug messages [default=no]
