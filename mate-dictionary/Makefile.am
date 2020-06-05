@@ -1,3 +1,3 @@
 SUBDIRS = libgdict src data docs help
 
-EXTRA_DIST = TODO README AUTHORS
+EXTRA_DIST = TODO README.md AUTHORS
