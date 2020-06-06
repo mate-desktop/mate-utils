@@ -24,7 +24,8 @@ EXTRA_DIST = \
 	omf.make \
 	xmldocs.make \
 	COPYING.libs \
-	COPYING.docs
+	COPYING.docs \
+	README.md
 
 DISTCLEANFILES =                \
 	gtk-doc.make
