@@ -31,7 +31,7 @@ G_BEGIN_DECLS
 void gdict_show_print_preview (GtkWindow   *parent,
                                GdictDefbox *defbox);
 void gdict_show_print_dialog  (GtkWindow   *parent,
-			       GdictDefbox *defbox);
+                               GdictDefbox *defbox);
 
 G_END_DECLS
 

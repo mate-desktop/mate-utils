@@ -10,15 +10,15 @@
 
 int main (int argc, char *argv[])
 {
-	bindtextdomain (GETTEXT_PACKAGE, MATELOCALEDIR);
-	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-	textdomain (GETTEXT_PACKAGE);
+  bindtextdomain (GETTEXT_PACKAGE, MATELOCALEDIR);
+  bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+  textdomain (GETTEXT_PACKAGE);
 
-	gdict_init (&argc, &argv);
+  gdict_init (&argc, &argv);
 
-	gdict_main ();
+  gdict_main ();
 
-	gdict_cleanup ();
+  gdict_cleanup ();
 
-	return EXIT_SUCCESS;
+  return EXIT_SUCCESS;
 }

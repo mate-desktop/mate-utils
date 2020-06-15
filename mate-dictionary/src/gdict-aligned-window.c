@@ -49,25 +49,21 @@ enum
 
 static void gdict_aligned_window_finalize     (GObject      *object);
 static void gdict_aligned_window_get_property (GObject      *object,
-					       guint         prop_id,
-					       GValue       *value,
-					       GParamSpec   *pspec);
+                                               guint         prop_id,
+                                               GValue       *value,
+                                               GParamSpec   *pspec);
 static void gdict_aligned_window_set_property (GObject      *object,
-					       guint         prop_id,
-					       const GValue *value,
-					       GParamSpec   *pspec);
-
-static void     gdict_aligned_window_realize          (GtkWidget        *widget);
-static void     gdict_aligned_window_show             (GtkWidget        *widget);
+                                               guint         prop_id,
+                                               const GValue *value,
+                                               GParamSpec   *pspec);
+static void gdict_aligned_window_realize      (GtkWidget    *widget);
+static void gdict_aligned_window_show         (GtkWidget    *widget);
 
 static gboolean gdict_aligned_window_motion_notify_cb (GtkWidget        *widget,
-						       GdkEventMotion   *event,
-						       GdictAlignedWindow *aligned_window);
-
+                                                       GdkEventMotion   *event,
+                                                       GdictAlignedWindow *aligned_window);
 
 G_DEFINE_TYPE_WITH_PRIVATE (GdictAlignedWindow, gdict_aligned_window, GTK_TYPE_WINDOW);
-
-
 
 static void
 gdict_aligned_window_class_init (GdictAlignedWindowClass *klass)
@@ -83,11 +79,11 @@ gdict_aligned_window_class_init (GdictAlignedWindowClass *klass)
   widget_class->show = gdict_aligned_window_show;
 
   g_object_class_install_property (gobject_class, PROP_ALIGN_WIDGET,
-  				   g_param_spec_object ("align-widget",
-  				   			"Align Widget",
-  				   			"The widget the window should align to",
-  				   			GTK_TYPE_WIDGET,
-  				   			G_PARAM_READWRITE));
+                                   g_param_spec_object ("align-widget",
+                                                        "Align Widget",
+                                                        "The widget the window should align to",
+                                                        GTK_TYPE_WIDGET,
+                                                        G_PARAM_READWRITE));
 }
 
 static void
@@ -111,9 +107,9 @@ gdict_aligned_window_init (GdictAlignedWindow *aligned_window)
 
 static void
 gdict_aligned_window_get_property (GObject    *object,
-				   guint       prop_id,
-				   GValue     *value,
-				   GParamSpec *pspec)
+                                   guint       prop_id,
+                                   GValue     *value,
+                                   GParamSpec *pspec)
 {
   GdictAlignedWindow *aligned_window = GDICT_ALIGNED_WINDOW (object);
 
@@ -130,17 +126,16 @@ gdict_aligned_window_get_property (GObject    *object,
 
 static void
 gdict_aligned_window_set_property (GObject      *object,
-				   guint         prop_id,
-				   const GValue *value,
-				   GParamSpec   *pspec)
+                                   guint         prop_id,
+                                   const GValue *value,
+                                   GParamSpec   *pspec)
 {
   GdictAlignedWindow *aligned_window = GDICT_ALIGNED_WINDOW (object);
 
   switch (prop_id)
     {
     case PROP_ALIGN_WIDGET:
-      gdict_aligned_window_set_widget (aligned_window,
-      				       g_value_get_object (value));
+      gdict_aligned_window_set_widget (aligned_window, g_value_get_object (value));
       break;
     default:
       G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
@@ -183,9 +178,7 @@ gdict_aligned_window_position (GdictAlignedWindow *window)
   gtk_widget_realize (align_widget);
 
   /* get the positional and dimensional attributes of the align widget */
-  gdk_window_get_origin (gdk_window,
-  			 &entry_x,
-  			 &entry_y);
+  gdk_window_get_origin (gdk_window, &entry_x, &entry_y);
   gdk_window_get_geometry (gdk_window, NULL, NULL, &entry_width, &entry_height);
 
   if (entry_x + our_width < WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())))
@@ -236,9 +229,9 @@ gdict_aligned_window_finalize (GObject *object)
 }
 
 static gboolean
-gdict_aligned_window_motion_notify_cb (GtkWidget        *widget,
-				       GdkEventMotion   *event,
-				       GdictAlignedWindow *aligned_window)
+gdict_aligned_window_motion_notify_cb (GtkWidget          *widget,
+                                       GdkEventMotion     *event,
+                                       GdictAlignedWindow *aligned_window)
 {
   GtkAllocation alloc;
   GdkRectangle rect;
@@ -251,8 +244,8 @@ gdict_aligned_window_motion_notify_cb (GtkWidget        *widget,
   rect.height = alloc.height;
 
   gdk_window_invalidate_rect (gtk_widget_get_window (GTK_WIDGET (aligned_window)),
-		  	      &rect,
-			      FALSE);
+                                                     &rect,
+                                                     FALSE);
 
   return FALSE;
 }
@@ -270,8 +263,9 @@ GtkWidget *
 gdict_aligned_window_new (GtkWidget *align_widget)
 {
   return g_object_new (GDICT_TYPE_ALIGNED_WINDOW,
-  		       "align-widget", align_widget,
-  		       NULL);
+                       "align-widget",
+                       align_widget,
+                       NULL);
 }
 
 /**
@@ -287,7 +281,7 @@ gdict_aligned_window_new (GtkWidget *align_widget)
  */
 void
 gdict_aligned_window_set_widget (GdictAlignedWindow *aligned_window,
-			         GtkWidget          *align_widget)
+                                 GtkWidget          *align_widget)
 {
   GdictAlignedWindowPrivate *priv;
 
@@ -316,8 +310,8 @@ gdict_aligned_window_set_widget (GdictAlignedWindow *aligned_window,
 
   priv->align_widget = align_widget;
   priv->motion_id = g_signal_connect (priv->align_widget, "motion-notify-event",
-				      G_CALLBACK (gdict_aligned_window_motion_notify_cb),
-				      aligned_window);
+                            G_CALLBACK (gdict_aligned_window_motion_notify_cb),
+                            aligned_window);
 }
 
 /**

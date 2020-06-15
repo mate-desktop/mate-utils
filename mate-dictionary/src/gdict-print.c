@@ -217,11 +217,11 @@ gdict_show_print_preview (GtkWindow   *parent,
   g_free (print_font);
 
   g_signal_connect (operation, "begin-print",
-		    G_CALLBACK (begin_print), data);
+                    G_CALLBACK (begin_print), data);
   g_signal_connect (operation, "draw-page",
-		    G_CALLBACK (draw_page), data);
+                    G_CALLBACK (draw_page), data);
   g_signal_connect (operation, "end-print",
-		    G_CALLBACK (end_print), data);
+                    G_CALLBACK (end_print), data);
 
   error = NULL;
   gtk_print_operation_run (operation,
@@ -238,12 +238,12 @@ gdict_show_print_preview (GtkWindow   *parent,
                                        GTK_DIALOG_DESTROY_WITH_PARENT,
                                        GTK_MESSAGE_ERROR,
                                        GTK_BUTTONS_CLOSE,
-				       _("Unable to display the preview: %s"),
+                _("Unable to display the preview: %s"),
                                        error->message);
       g_error_free (error);
 
       g_signal_connect (dialog, "response",
-			G_CALLBACK (gtk_widget_destroy), NULL);
+                        G_CALLBACK (gtk_widget_destroy), NULL);
 
       gtk_widget_show (dialog);
     }
@@ -251,7 +251,7 @@ gdict_show_print_preview (GtkWindow   *parent,
 
 void
 gdict_show_print_dialog (GtkWindow   *parent,
-			 GdictDefbox *defbox)
+                         GdictDefbox *defbox)
 {
   GtkPrintOperation *operation;
   GdictPrintData *data;
@@ -281,11 +281,11 @@ gdict_show_print_dialog (GtkWindow   *parent,
   g_free (print_font);
 
   g_signal_connect (operation, "begin-print",
-		    G_CALLBACK (begin_print), data);
+                    G_CALLBACK (begin_print), data);
   g_signal_connect (operation, "draw-page",
-		    G_CALLBACK (draw_page), data);
+                    G_CALLBACK (draw_page), data);
   g_signal_connect (operation, "end-print",
-		    G_CALLBACK (end_print), data);
+                    G_CALLBACK (end_print), data);
 
   error = NULL;
   gtk_print_operation_run (operation,
@@ -302,12 +302,12 @@ gdict_show_print_dialog (GtkWindow   *parent,
                                        GTK_DIALOG_DESTROY_WITH_PARENT,
                                        GTK_MESSAGE_ERROR,
                                        GTK_BUTTONS_CLOSE,
-				       _("Unable to display the preview: %s"),
+                _("Unable to display the preview: %s"),
                                        error->message);
       g_error_free (error);
 
       g_signal_connect (dialog, "response",
-			G_CALLBACK (gtk_widget_destroy), NULL);
+                        G_CALLBACK (gtk_widget_destroy), NULL);
 
       gtk_widget_show (dialog);
     }

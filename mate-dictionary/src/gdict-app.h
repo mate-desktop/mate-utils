@@ -31,9 +31,9 @@
 
 G_BEGIN_DECLS
 
-#define GDICT_TYPE_APP		(gdict_app_get_type ())
-#define GDICT_APP(obj)		(G_TYPE_CHECK_INSTANCE_CAST ((obj), GDICT_TYPE_APP, GdictApp))
-#define GDICT_IS_APP(obj)	(G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDICT_TYPE_APP))
+#define GDICT_TYPE_APP    (gdict_app_get_type ())
+#define GDICT_APP(obj)    (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDICT_TYPE_APP, GdictApp))
+#define GDICT_IS_APP(obj) (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDICT_TYPE_APP))
 
 typedef struct _GdictApp         GdictApp;
 typedef struct _GdictAppClass    GdictAppClass;

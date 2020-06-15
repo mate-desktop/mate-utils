@@ -26,16 +26,16 @@
 
 #include <gtk/gtk.h>
 
-#define GDICT_TYPE_SIDEBAR		(gdict_sidebar_get_type ())
-#define GDICT_SIDEBAR(obj)		(G_TYPE_CHECK_INSTANCE_CAST ((obj), GDICT_TYPE_SIDEBAR, GdictSidebar))
-#define GDICT_IS_SIDEBAR(obj)		(G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDICT_TYPE_SIDEBAR))
-#define GDICT_SIDEBAR_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), GDICT_TYPE_SIDEBAR, GdictSidebarClass))
-#define GDICT_IS_SIDEBAR_CLASS(klass)	(G_TYPE_CHECK_CLASS_TYPE ((klass), GDICT_TYPE_SIDEBAR))
-#define GDICT_SIDEBAR_GET_CLASS(obj)	(G_TYPE_INSTANCE_GET_CLASS ((obj), GDICT_TYPE_SIDEBAR, GdictSidebarClass))
+#define GDICT_TYPE_SIDEBAR      (gdict_sidebar_get_type ())
+#define GDICT_SIDEBAR(obj)      (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDICT_TYPE_SIDEBAR, GdictSidebar))
+#define GDICT_IS_SIDEBAR(obj)   (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDICT_TYPE_SIDEBAR))
+#define GDICT_SIDEBAR_CLASS(klass)  (G_TYPE_CHECK_CLASS_CAST ((klass), GDICT_TYPE_SIDEBAR, GdictSidebarClass))
+#define GDICT_IS_SIDEBAR_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), GDICT_TYPE_SIDEBAR))
+#define GDICT_SIDEBAR_GET_CLASS(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj), GDICT_TYPE_SIDEBAR, GdictSidebarClass))
 
-typedef struct _GdictSidebar		GdictSidebar;
-typedef struct _GdictSidebarPrivate	GdictSidebarPrivate;
-typedef struct _GdictSidebarClass	GdictSidebarClass;
+typedef struct _GdictSidebar GdictSidebar;
+typedef struct _GdictSidebarPrivate GdictSidebarPrivate;
+typedef struct _GdictSidebarClass GdictSidebarClass;
 
 struct _GdictSidebar
 {
@@ -61,13 +61,13 @@ GType                 gdict_sidebar_get_type     (void) G_GNUC_CONST;
 
 GtkWidget *           gdict_sidebar_new          (void);
 void                  gdict_sidebar_add_page     (GdictSidebar *sidebar,
-						  const gchar  *page_id,
-						  const gchar  *page_name,
-						  GtkWidget    *page_widget);
+                                                  const gchar  *page_id,
+                                                  const gchar  *page_name,
+                                                  GtkWidget    *page_widget);
 void                  gdict_sidebar_remove_page  (GdictSidebar *sidebar,
-						  const gchar  *page_id);
+                                                  const gchar  *page_id);
 void                  gdict_sidebar_view_page    (GdictSidebar *sidebar,
-						  const gchar  *page_id);
+                                                  const gchar  *page_id);
 const gchar *gdict_sidebar_current_page (GdictSidebar *sidebar);
 gchar **              gdict_sidebar_list_pages   (GdictSidebar *sidebar,
                                                   gsize        *length) G_GNUC_MALLOC;

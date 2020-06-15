@@ -75,8 +75,8 @@ G_DEFINE_TYPE_WITH_PRIVATE (GdictSidebar, gdict_sidebar, GTK_TYPE_BOX);
 
 SidebarPage *
 sidebar_page_new (const gchar *id,
-		  const gchar *name,
-		  GtkWidget   *widget)
+                  const gchar *name,
+                  GtkWidget   *widget)
 {
   SidebarPage *page;
 
@@ -136,8 +136,8 @@ gdict_sidebar_dispose (GObject *object)
 
 static gboolean
 gdict_sidebar_select_button_press_cb (GtkWidget      *widget,
-				      GdkEventButton *event,
-				      gpointer        user_data)
+                                      GdkEventButton *event,
+                                      gpointer        user_data)
 {
   GdictSidebar *sidebar = GDICT_SIDEBAR (user_data);
   GtkAllocation allocation;
@@ -152,7 +152,7 @@ gdict_sidebar_select_button_press_cb (GtkWidget      *widget,
       gtk_widget_set_size_request (sidebar->priv->menu, -1, -1);
       gtk_widget_get_preferred_size (sidebar->priv->menu, &req, NULL);
       gtk_widget_set_size_request (sidebar->priv->menu,
-		      		   MAX (width, req.width), -1);
+                                   MAX (width, req.width), -1);
       gtk_widget_grab_focus (widget);
 
       gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (widget), TRUE);
@@ -170,8 +170,8 @@ gdict_sidebar_select_button_press_cb (GtkWidget      *widget,
 
 static gboolean
 gdict_sidebar_select_key_press_cb (GtkWidget   *widget,
-				   GdkEventKey *event,
-				   gpointer     user_data)
+                                   GdkEventKey *event,
+                                   gpointer     user_data)
 {
   GdictSidebar *sidebar = GDICT_SIDEBAR (user_data);
 
@@ -195,7 +195,7 @@ gdict_sidebar_select_key_press_cb (GtkWidget   *widget,
 
 static void
 gdict_sidebar_close_clicked_cb (GtkWidget *widget,
-				gpointer   user_data)
+                                gpointer   user_data)
 {
   GdictSidebar *sidebar = GDICT_SIDEBAR (user_data);
 
@@ -204,7 +204,7 @@ gdict_sidebar_close_clicked_cb (GtkWidget *widget,
 
 static void
 gdict_sidebar_menu_deactivate_cb (GtkWidget *widget,
-				  gpointer   user_data)
+                                  gpointer   user_data)
 {
   GdictSidebar *sidebar = GDICT_SIDEBAR (user_data);
   GdictSidebarPrivate *priv = sidebar->priv;
@@ -215,7 +215,7 @@ gdict_sidebar_menu_deactivate_cb (GtkWidget *widget,
 
 static void
 gdict_sidebar_menu_detach_cb (GtkWidget *widget,
-			      GtkMenu   *menu)
+                              GtkMenu   *menu)
 {
   GdictSidebar *sidebar = GDICT_SIDEBAR (widget);
 
@@ -224,7 +224,7 @@ gdict_sidebar_menu_detach_cb (GtkWidget *widget,
 
 static void
 gdict_sidebar_menu_item_activate (GtkWidget *widget,
-				  gpointer   user_data)
+                                  gpointer   user_data)
 {
   GdictSidebar *sidebar = GDICT_SIDEBAR (user_data);
   GdictSidebarPrivate *priv = sidebar->priv;
@@ -263,20 +263,20 @@ gdict_sidebar_class_init (GdictSidebarClass *klass)
 
   sidebar_signals[PAGE_CHANGED] =
     g_signal_new ("page-changed",
-		  G_TYPE_FROM_CLASS (gobject_class),
-		  G_SIGNAL_RUN_LAST,
-		  G_STRUCT_OFFSET (GdictSidebarClass, page_changed),
-		  NULL, NULL,
-		  g_cclosure_marshal_VOID__VOID,
-		  G_TYPE_NONE, 0);
+                  G_TYPE_FROM_CLASS (gobject_class),
+                  G_SIGNAL_RUN_LAST,
+                  G_STRUCT_OFFSET (GdictSidebarClass, page_changed),
+                  NULL, NULL,
+                  g_cclosure_marshal_VOID__VOID,
+                  G_TYPE_NONE, 0);
   sidebar_signals[CLOSED] =
     g_signal_new ("closed",
-		  G_TYPE_FROM_CLASS (gobject_class),
-		  G_SIGNAL_RUN_LAST,
-		  G_STRUCT_OFFSET (GdictSidebarClass, closed),
-		  NULL, NULL,
-		  g_cclosure_marshal_VOID__VOID,
-		  G_TYPE_NONE, 0);
+                  G_TYPE_FROM_CLASS (gobject_class),
+                  G_SIGNAL_RUN_LAST,
+                  G_STRUCT_OFFSET (GdictSidebarClass, closed),
+                  NULL, NULL,
+                  g_cclosure_marshal_VOID__VOID,
+                  G_TYPE_NONE, 0);
 }
 
 static void
@@ -310,11 +310,11 @@ gdict_sidebar_init (GdictSidebar *sidebar)
   select_button = gtk_toggle_button_new ();
   gtk_button_set_relief (GTK_BUTTON (select_button), GTK_RELIEF_NONE);
   g_signal_connect (select_button, "button-press-event",
-		    G_CALLBACK (gdict_sidebar_select_button_press_cb),
-		    sidebar);
+                    G_CALLBACK (gdict_sidebar_select_button_press_cb),
+                    sidebar);
   g_signal_connect (select_button, "key-press-event",
-		    G_CALLBACK (gdict_sidebar_select_key_press_cb),
-		    sidebar);
+                    G_CALLBACK (gdict_sidebar_select_key_press_cb),
+                    sidebar);
   priv->select_button = select_button;
 
   select_hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
@@ -341,19 +341,19 @@ gdict_sidebar_init (GdictSidebar *sidebar)
                         gtk_image_new_from_icon_name ("window-close",
                                                       GTK_ICON_SIZE_SMALL_TOOLBAR));
   g_signal_connect (close_button, "clicked",
-		    G_CALLBACK (gdict_sidebar_close_clicked_cb),
-		    sidebar);
+                    G_CALLBACK (gdict_sidebar_close_clicked_cb),
+                    sidebar);
   gtk_box_pack_end (GTK_BOX (hbox), close_button, FALSE, FALSE, 0);
   gtk_widget_show (close_button);
   priv->close_button = close_button;
 
   sidebar->priv->menu = gtk_menu_new ();
   g_signal_connect (sidebar->priv->menu, "deactivate",
-		    G_CALLBACK (gdict_sidebar_menu_deactivate_cb),
-		    sidebar);
+                    G_CALLBACK (gdict_sidebar_menu_deactivate_cb),
+                    sidebar);
   gtk_menu_attach_to_widget (GTK_MENU (sidebar->priv->menu),
-		  	     GTK_WIDGET (sidebar),
-			     gdict_sidebar_menu_detach_cb);
+                             GTK_WIDGET (sidebar),
+                             gdict_sidebar_menu_detach_cb);
   gtk_widget_show (sidebar->priv->menu);
 
   sidebar->priv->notebook = gtk_notebook_new ();
@@ -375,9 +375,9 @@ gdict_sidebar_new (void)
 
 void
 gdict_sidebar_add_page (GdictSidebar *sidebar,
-			const gchar  *page_id,
-			const gchar  *page_name,
-			GtkWidget    *page_widget)
+                        const gchar  *page_id,
+                        const gchar  *page_name,
+                        GtkWidget    *page_widget)
 {
   GdictSidebarPrivate *priv;
   SidebarPage *page;
@@ -393,9 +393,9 @@ gdict_sidebar_add_page (GdictSidebar *sidebar,
   if (g_hash_table_lookup (priv->pages_by_id, page_id))
     {
       g_warning ("Attempting to add a page to the sidebar with "
-		 "id `%s', but there already is a page with the "
-		 "same id.  Aborting...",
-		 page_id);
+                 "id `%s', but there already is a page with the "
+                 "same id.  Aborting...",
+                 page_id);
       return;
     }
 
@@ -406,18 +406,18 @@ gdict_sidebar_add_page (GdictSidebar *sidebar,
   g_hash_table_insert (priv->pages_by_id, page->id, page);
 
   page->index = gtk_notebook_append_page (GTK_NOTEBOOK (priv->notebook),
-		  			  page_widget,
-					  NULL);
+                                          page_widget,
+                                          NULL);
 
   /* add the menu item for the page */
   menu_item = gtk_image_menu_item_new_with_label (page_name);
   g_object_set_qdata_full (G_OBJECT (menu_item),
-			   sidebar_page_id_quark,
+                           sidebar_page_id_quark,
                            g_strdup (page_id),
-			   g_free);
+                           g_free);
   g_signal_connect (menu_item, "activate",
-		    G_CALLBACK (gdict_sidebar_menu_item_activate),
-		    sidebar);
+                    G_CALLBACK (gdict_sidebar_menu_item_activate),
+                    sidebar);
   gtk_menu_shell_append (GTK_MENU_SHELL (priv->menu), menu_item);
   gtk_widget_show (menu_item);
   page->menu_item = menu_item;
@@ -430,7 +430,7 @@ gdict_sidebar_add_page (GdictSidebar *sidebar,
 
 void
 gdict_sidebar_remove_page (GdictSidebar *sidebar,
-			   const gchar  *page_id)
+                           const gchar  *page_id)
 {
   GdictSidebarPrivate *priv;
   SidebarPage *page;
@@ -444,8 +444,8 @@ gdict_sidebar_remove_page (GdictSidebar *sidebar,
   if ((page = g_hash_table_lookup (priv->pages_by_id, page_id)) == NULL)
     {
       g_warning ("Attempting to remove a page from the sidebar with "
-		 "id `%s', but there is no page with this id. Aborting...",
-		 page_id);
+                 "id `%s', but there is no page with this id. Aborting...",
+                 page_id);
       return;
     }
 
@@ -457,8 +457,8 @@ gdict_sidebar_remove_page (GdictSidebar *sidebar,
       if (menu_item == page->menu_item)
         {
           gtk_container_remove (GTK_CONTAINER (priv->menu), menu_item);
-	  break;
-	}
+          break;
+        }
     }
   g_list_free (children);
 
@@ -484,7 +484,7 @@ gdict_sidebar_remove_page (GdictSidebar *sidebar,
 
 void
 gdict_sidebar_view_page (GdictSidebar *sidebar,
-			 const gchar  *page_id)
+                         const gchar  *page_id)
 {
   GdictSidebarPrivate *priv;
   SidebarPage *page;

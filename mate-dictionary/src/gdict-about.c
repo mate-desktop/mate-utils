@@ -84,20 +84,20 @@ gdict_show_about_dialog (GtkWidget *parent)
 #endif
 
   gtk_show_about_dialog (GTK_IS_WINDOW (parent) ? GTK_WINDOW (parent) : NULL,
-			 "program-name", _("Dictionary"),
-  			 "version", VERSION,
-			 "title", _("About Dictionary"),
-			 "copyright", _("Copyright \xc2\xa9 2005-2006 Emmanuele Bassi\n"
-			                "Copyright \xc2\xa9 2011-2020 MATE developers"),
-  			 "comments", comments,
-  			 "authors", authors,
-  			 "documenters", documenters,
-  			 "translator-credits", translator_credits,
-  			 "logo-icon-name", "accessories-dictionary",
-			 "license", license_trans,
-  			 "wrap-license", TRUE,
-			 "screen", gtk_widget_get_screen (parent),
-  			 NULL);
+                         "program-name", _("Dictionary"),
+                         "version", VERSION,
+                         "title", _("About Dictionary"),
+                         "copyright", _("Copyright \xc2\xa9 2005-2006 Emmanuele Bassi\n"
+                         "Copyright \xc2\xa9 2011-2020 MATE developers"),
+                         "comments", comments,
+                         "authors", authors,
+                         "documenters", documenters,
+                         "translator-credits", translator_credits,
+                         "logo-icon-name", "accessories-dictionary",
+                         "license", license_trans,
+                         "wrap-license", TRUE,
+                         "screen", gtk_widget_get_screen (parent),
+                         NULL);
 
   g_free(license_trans);
 }

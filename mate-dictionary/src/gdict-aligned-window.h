@@ -27,12 +27,12 @@
 
 G_BEGIN_DECLS
 
-#define GDICT_TYPE_ALIGNED_WINDOW		(gdict_aligned_window_get_type ())
-#define GDICT_ALIGNED_WINDOW(obj)		(G_TYPE_CHECK_INSTANCE_CAST ((obj), GDICT_TYPE_ALIGNED_WINDOW, GdictAlignedWindow))
-#define GDICT_IS_ALIGNED_WINDOW(obj)		(G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDICT_TYPE_ALIGNED_WINDOW))
-#define GDICT_ALIGNED_WINDOW_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), GDICT_TYPE_ALIGNED_WINDOW, GdictAlignedWindowClass))
-#define GDICT_IS_ALIGNED_WINDOW_CLASS(klass)	(G_TYPE_CHECK_CLASS_TYPE ((klass), GDICT_TYPE_ALIGNED_WINDOW))
-#define GDICT_ALIGNED_WINDOW_GET_CLASS(obj)	(G_TYPE_INSTANCE_GET_CLASS ((obj), GDICT_TYPE_ALIGNED_WINDOW, GdictAlignedWindowClass))
+#define GDICT_TYPE_ALIGNED_WINDOW     (gdict_aligned_window_get_type ())
+#define GDICT_ALIGNED_WINDOW(obj)     (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDICT_TYPE_ALIGNED_WINDOW, GdictAlignedWindow))
+#define GDICT_IS_ALIGNED_WINDOW(obj)  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDICT_TYPE_ALIGNED_WINDOW))
+#define GDICT_ALIGNED_WINDOW_CLASS(klass) (G_TYPE_CHECK_CLASS_CAST ((klass), GDICT_TYPE_ALIGNED_WINDOW, GdictAlignedWindowClass))
+#define GDICT_IS_ALIGNED_WINDOW_CLASS(klass)  (G_TYPE_CHECK_CLASS_TYPE ((klass), GDICT_TYPE_ALIGNED_WINDOW))
+#define GDICT_ALIGNED_WINDOW_GET_CLASS(obj) (G_TYPE_INSTANCE_GET_CLASS ((obj), GDICT_TYPE_ALIGNED_WINDOW, GdictAlignedWindowClass))
 
 typedef struct _GdictAlignedWindow        GdictAlignedWindow;
 typedef struct _GdictAlignedWindowClass	  GdictAlignedWindowClass;
@@ -61,7 +61,7 @@ GType      gdict_aligned_window_get_type   (void) G_GNUC_CONST;
 
 GtkWidget *gdict_aligned_window_new        (GtkWidget          *align_widget);
 void       gdict_aligned_window_set_widget (GdictAlignedWindow *aligned_window,
-					    GtkWidget          *align_widget);
+                                            GtkWidget          *align_widget);
 GtkWidget *gdict_aligned_window_get_widget (GdictAlignedWindow *aligned_window);
 
 G_END_DECLS

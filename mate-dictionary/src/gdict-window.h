@@ -30,9 +30,9 @@
 
 G_BEGIN_DECLS
 
-#define GDICT_TYPE_WINDOW	(gdict_window_get_type ())
-#define GDICT_WINDOW(obj)	(G_TYPE_CHECK_INSTANCE_CAST ((obj), GDICT_TYPE_WINDOW, GdictWindow))
-#define GDICT_IS_WINDOW(obj)	(G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDICT_TYPE_WINDOW))
+#define GDICT_TYPE_WINDOW     (gdict_window_get_type ())
+#define GDICT_WINDOW(obj)     (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDICT_TYPE_WINDOW, GdictWindow))
+#define GDICT_IS_WINDOW(obj)  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDICT_TYPE_WINDOW))
 
 typedef enum {
   GDICT_WINDOW_ACTION_LOOKUP,
@@ -121,13 +121,13 @@ struct _GdictWindowClass
   GtkWindowClass parent_class;
 
   void (*created) (GdictWindow *parent_window,
-  		   GdictWindow *new_window);
+                   GdictWindow *new_window);
 };
 
 GType      gdict_window_get_type (void) G_GNUC_CONST;
 GtkWidget *gdict_window_new      (GdictWindowAction  action,
-				  GdictSourceLoader *loader,
-				  const gchar       *source_name,
-				  const gchar       *word);
+                                  GdictSourceLoader *loader,
+                                  const gchar       *source_name,
+                                  const gchar       *word);
 
 #endif /* __GDICT_WINDOW_H__ */

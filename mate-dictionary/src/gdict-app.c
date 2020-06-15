@@ -46,10 +46,7 @@ struct _GdictAppClass
   GObjectClass parent_class;
 };
 
-
-
 G_DEFINE_TYPE (GdictApp, gdict_app, G_TYPE_OBJECT);
-
 
 static void
 gdict_app_finalize (GObject *object)

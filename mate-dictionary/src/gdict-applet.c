@@ -38,8 +38,8 @@
 #include "gdict-common.h"
 #include "gdict-aligned-window.h"
 
-#define GDICT_APPLET_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), GDICT_TYPE_APPLET, GdictAppletClass))
-#define GDICT_APPLET_GET_CLASS(obj)	(G_TYPE_INSTANCE_GET_CLASS ((obj), GDICT_TYPE_APPLET, GdictAppletClass))
+#define GDICT_APPLET_CLASS(klass)   (G_TYPE_CHECK_CLASS_CAST ((klass), GDICT_TYPE_APPLET, GdictAppletClass))
+#define GDICT_APPLET_GET_CLASS(obj) (G_TYPE_INSTANCE_GET_CLASS ((obj), GDICT_TYPE_APPLET, GdictAppletClass))
 
 struct _GdictAppletClass
 {
@@ -98,8 +98,8 @@ G_DEFINE_TYPE_WITH_PRIVATE (GdictApplet, gdict_applet, PANEL_TYPE_APPLET);
 
 static void
 set_atk_name_description (GtkWidget  *widget,
-			  const char *name,
-			  const char *description)
+                          const char *name,
+                          const char *description)
 {
   AtkObject *aobj;
 
@@ -156,7 +156,7 @@ set_window_default_size (GdictApplet *applet)
 
 static void
 clear_cb (GtkWidget   *widget,
-	  GdictApplet *applet)
+          GdictApplet *applet)
 {
   GdictAppletPrivate *priv = applet->priv;
 
@@ -170,7 +170,7 @@ clear_cb (GtkWidget   *widget,
 
 static void
 print_cb (GtkWidget   *widget,
-	  GdictApplet *applet)
+          GdictApplet *applet)
 {
   GdictAppletPrivate *priv = applet->priv;
 
@@ -178,7 +178,7 @@ print_cb (GtkWidget   *widget,
     return;
 
   gdict_show_print_dialog (GTK_WINDOW (priv->window),
-  			   GDICT_DEFBOX (priv->defbox));
+                           GDICT_DEFBOX (priv->defbox));
 }
 
 static void
@@ -192,11 +192,11 @@ save_cb (GtkWidget   *widget,
     return;
 
   dialog = gtk_file_chooser_dialog_new (_("Save a Copy"),
-  					GTK_WINDOW (priv->window),
-  					GTK_FILE_CHOOSER_ACTION_SAVE,
-  					"gtk-cancel", GTK_RESPONSE_CANCEL,
-  					"gtk-save", GTK_RESPONSE_ACCEPT,
-  					NULL);
+                                        GTK_WINDOW (priv->window),
+                                        GTK_FILE_CHOOSER_ACTION_SAVE,
+                                        "gtk-cancel", GTK_RESPONSE_CANCEL,
+                                        "gtk-save", GTK_RESPONSE_ACCEPT,
+                                        NULL);
   gtk_file_chooser_set_do_overwrite_confirmation (GTK_FILE_CHOOSER (dialog), TRUE);
 
   /* default to user's $HOME */
@@ -214,10 +214,8 @@ save_cb (GtkWidget   *widget,
 
       text = gdict_defbox_get_text (GDICT_DEFBOX (priv->defbox), &len);
 
-      g_file_set_contents (filename,
-      			   text,
-      			   len,
-      			   &write_error);
+      g_file_set_contents (filename, text, len, &write_error);
+
       if (write_error)
         {
           gchar *message;
@@ -225,8 +223,8 @@ save_cb (GtkWidget   *widget,
           message = g_strdup_printf (_("Error while writing to '%s'"), filename);
 
           gdict_show_error_dialog (GTK_WINDOW (priv->window),
-          			   message,
-          			   write_error->message);
+                                   message,
+                                   write_error->message);
 
           g_error_free (write_error);
           g_free (message);
@@ -241,7 +239,7 @@ save_cb (GtkWidget   *widget,
 
 static void
 gdict_applet_set_menu_items_sensitive (GdictApplet *applet,
-				       gboolean     is_sensitive)
+                                       gboolean     is_sensitive)
 {
   GtkAction *action;
 
@@ -260,8 +258,8 @@ gdict_applet_set_menu_items_sensitive (GdictApplet *applet,
 
 static gboolean
 window_key_press_event_cb (GtkWidget   *widget,
-			   GdkEventKey *event,
-			   gpointer     user_data)
+                           GdkEventKey *event,
+                           gpointer     user_data)
 {
   GdictApplet *applet = GDICT_APPLET (user_data);
 
@@ -273,7 +271,7 @@ window_key_press_event_cb (GtkWidget   *widget,
       return TRUE;
     }
   else if ((event->keyval == GDK_KEY_l) &&
-	   (event->state & GDK_CONTROL_MASK))
+      (event->state & GDK_CONTROL_MASK))
     {
       gtk_widget_grab_focus (applet->priv->entry);
 
@@ -285,7 +283,7 @@ window_key_press_event_cb (GtkWidget   *widget,
 
 static void
 window_show_cb (GtkWidget   *window,
-		GdictApplet *applet)
+                GdictApplet *applet)
 {
   set_window_default_size (applet);
 }
@@ -309,11 +307,11 @@ gdict_applet_build_window (GdictApplet *applet)
 
   window = gdict_aligned_window_new (priv->toggle);
   g_signal_connect (window, "key-press-event",
-		    G_CALLBACK (window_key_press_event_cb),
-		    applet);
+          G_CALLBACK (window_key_press_event_cb),
+          applet);
   g_signal_connect (window, "show",
-  		    G_CALLBACK (window_show_cb),
-		    applet);
+          G_CALLBACK (window_show_cb),
+          applet);
 
   frame = gtk_frame_new (NULL);
   gtk_frame_set_shadow_type (GTK_FRAME (frame), GTK_SHADOW_IN);
@@ -342,45 +340,45 @@ gdict_applet_build_window (GdictApplet *applet)
   gtk_widget_show (bbox);
 
   button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
-				     "label", "gtk-clear",
-				     "use-stock", TRUE,
-				     "use-underline", TRUE,
-				     NULL));
+                       "label", "gtk-clear",
+                       "use-stock", TRUE,
+                       "use-underline", TRUE,
+                       NULL));
 
   gtk_widget_set_tooltip_text (button, _("Clear the definitions found"));
   set_atk_name_description (button,
-		  	    _("Clear definition"),
-			    _("Clear the text of the definition"));
+                            _("Clear definition"),
+                            _("Clear the text of the definition"));
 
   g_signal_connect (button, "clicked", G_CALLBACK (clear_cb), applet);
   gtk_box_pack_start (GTK_BOX (bbox), button, FALSE, FALSE, 0);
   gtk_widget_show (button);
 
   button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
-				     "label", "gtk-print",
-				     "use-stock", TRUE,
-				     "use-underline", TRUE,
-				     NULL));
+                       "label", "gtk-print",
+                       "use-stock", TRUE,
+                       "use-underline", TRUE,
+                       NULL));
 
   gtk_widget_set_tooltip_text (button, _("Print the definitions found"));
   set_atk_name_description (button,
-		  	    _("Print definition"),
-			    _("Print the text of the definition"));
+                            _("Print definition"),
+                            _("Print the text of the definition"));
 
   g_signal_connect (button, "clicked", G_CALLBACK (print_cb), applet);
   gtk_box_pack_start (GTK_BOX (bbox), button, FALSE, FALSE, 0);
   gtk_widget_show (button);
 
   button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
-				     "label", "gtk-save",
-				     "use-stock", TRUE,
-				     "use-underline", TRUE,
-				     NULL));
+                       "label", "gtk-save",
+                       "use-stock", TRUE,
+                       "use-underline", TRUE,
+                       NULL));
 
   gtk_widget_set_tooltip_text (button, _("Save the definitions found"));
   set_atk_name_description (button,
-		  	    _("Save definition"),
-			    _("Save the text of the definition to a file"));
+                            _("Save definition"),
+                            _("Save the text of the definition to a file"));
 
   g_signal_connect (button, "clicked", G_CALLBACK (save_cb), applet);
   gtk_box_pack_start (GTK_BOX (bbox), button, FALSE, FALSE, 0);
@@ -394,7 +392,7 @@ gdict_applet_build_window (GdictApplet *applet)
 
 static gboolean
 gdict_applet_icon_toggled_cb (GtkWidget   *widget,
-			      GdictApplet *applet)
+                              GdictApplet *applet)
 {
   GdictAppletPrivate *priv = applet->priv;
 
@@ -404,7 +402,7 @@ gdict_applet_icon_toggled_cb (GtkWidget   *widget,
   if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (widget)))
     {
       gtk_window_set_screen (GTK_WINDOW (priv->window),
-	                     gtk_widget_get_screen (GTK_WIDGET (applet)));
+                      gtk_widget_get_screen (GTK_WIDGET (applet)));
       gtk_window_present (GTK_WINDOW (priv->window));
       gtk_widget_grab_focus (priv->defbox);
 
@@ -426,7 +424,7 @@ gdict_applet_icon_toggled_cb (GtkWidget   *widget,
 
 static void
 gdict_applet_entry_activate_cb (GtkWidget   *widget,
-				GdictApplet *applet)
+                                GdictApplet *applet)
 {
   GdictAppletPrivate *priv = applet->priv;
   gchar *text;
@@ -446,25 +444,25 @@ gdict_applet_entry_activate_cb (GtkWidget   *widget,
 
 static gboolean
 gdict_applet_entry_key_press_cb (GtkWidget   *widget,
-				 GdkEventKey *event,
-				 gpointer     user_data)
+                                 GdkEventKey *event,
+                                 gpointer     user_data)
 {
   GdictAppletPrivate *priv = GDICT_APPLET (user_data)->priv;
 
   if (event->keyval == GDK_KEY_Escape)
     {
       if (priv->is_window_showing)
-	{
+        {
           gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (priv->toggle), FALSE);
-	  gtk_toggle_button_toggled (GTK_TOGGLE_BUTTON (priv->toggle));
+          gtk_toggle_button_toggled (GTK_TOGGLE_BUTTON (priv->toggle));
 
-	  return TRUE;
-	}
+          return TRUE;
+        }
     }
   else if (event->keyval == GDK_KEY_Tab)
     {
       if (priv->is_window_showing)
-	gtk_widget_grab_focus (priv->defbox);
+        gtk_widget_grab_focus (priv->defbox);
     }
 
   return FALSE;
@@ -472,8 +470,8 @@ gdict_applet_entry_key_press_cb (GtkWidget   *widget,
 
 static gboolean
 gdict_applet_icon_button_press_event_cb (GtkWidget      *widget,
-					 GdkEventButton *event,
-					 GdictApplet    *applet)
+                                         GdkEventButton *event,
+                                         GdictApplet    *applet)
 {
   GdictAppletPrivate *priv = applet->priv;
 
@@ -488,8 +486,8 @@ gdict_applet_icon_button_press_event_cb (GtkWidget      *widget,
 
 static gboolean
 gdict_applet_entry_button_press_event_cb (GtkWidget      *widget,
-					  GdkEventButton *event,
-					  GdictApplet    *applet)
+                                          GdkEventButton *event,
+                                          GdictApplet    *applet)
 {
   mate_panel_applet_request_focus (MATE_PANEL_APPLET (applet), event->time);
 
@@ -519,17 +517,17 @@ gdict_applet_draw (GdictApplet *applet)
   priv->toggle = gtk_toggle_button_new ();
   gtk_widget_set_tooltip_text (priv->toggle, _("Click to view the dictionary window"));
   set_atk_name_description (priv->toggle,
-			    _("Toggle dictionary window"),
-		  	    _("Show or hide the definition window"));
+                            _("Toggle dictionary window"),
+                            _("Show or hide the definition window"));
 
   gtk_button_set_relief (GTK_BUTTON (priv->toggle),
-		  	 GTK_RELIEF_NONE);
+                         GTK_RELIEF_NONE);
   g_signal_connect (priv->toggle, "toggled",
-		    G_CALLBACK (gdict_applet_icon_toggled_cb),
-		    applet);
+                    G_CALLBACK (gdict_applet_icon_toggled_cb),
+                    applet);
   g_signal_connect (priv->toggle, "button-press-event",
-		    G_CALLBACK (gdict_applet_icon_button_press_event_cb),
-		    applet);
+                    G_CALLBACK (gdict_applet_icon_button_press_event_cb),
+                    applet);
   gtk_box_pack_start (GTK_BOX (box), priv->toggle, FALSE, FALSE, 0);
   gtk_widget_show (priv->toggle);
 
@@ -546,9 +544,9 @@ gdict_applet_draw (GdictApplet *applet)
       gtk_image_set_pixel_size (GTK_IMAGE (priv->image), priv->size - 10);
 
       scaled = gdk_pixbuf_scale_simple (priv->icon,
-		      			priv->size - 5,
-					priv->size - 5,
-					GDK_INTERP_BILINEAR);
+                                        priv->size - 5,
+                                        priv->size - 5,
+                                        GDK_INTERP_BILINEAR);
 
       gtk_image_set_from_pixbuf (GTK_IMAGE (priv->image), scaled);
       g_object_unref (scaled);
@@ -573,20 +571,20 @@ gdict_applet_draw (GdictApplet *applet)
   priv->entry = gtk_entry_new ();
   gtk_widget_set_tooltip_text (priv->entry, _("Type the word you want to look up"));
   set_atk_name_description (priv->entry,
-		  	    _("Dictionary entry"),
-			    _("Look up words in dictionaries"));
+                            _("Dictionary entry"),
+                            _("Look up words in dictionaries"));
 
   gtk_editable_set_editable (GTK_EDITABLE (priv->entry), TRUE);
   gtk_entry_set_width_chars (GTK_ENTRY (priv->entry), 12);
   g_signal_connect (priv->entry, "activate",
-  		    G_CALLBACK (gdict_applet_entry_activate_cb),
-  		    applet);
+                    G_CALLBACK (gdict_applet_entry_activate_cb),
+                    applet);
   g_signal_connect (priv->entry, "button-press-event",
-		    G_CALLBACK (gdict_applet_entry_button_press_event_cb),
-		    applet);
+                    G_CALLBACK (gdict_applet_entry_button_press_event_cb),
+                    applet);
   g_signal_connect (priv->entry, "key-press-event",
-		    G_CALLBACK (gdict_applet_entry_key_press_cb),
-		    applet);
+                    G_CALLBACK (gdict_applet_entry_key_press_cb),
+                    applet);
   gtk_box_pack_end (GTK_BOX (box), priv->entry, FALSE, FALSE, 0);
   gtk_widget_show (priv->entry);
 
@@ -613,12 +611,12 @@ gdict_applet_queue_draw (GdictApplet *applet)
 {
   if (!applet->priv->idle_draw_id)
     applet->priv->idle_draw_id = g_idle_add ((GSourceFunc) gdict_applet_draw,
-					     applet);
+                                             applet);
 }
 
 static void
 gdict_applet_lookup_start_cb (GdictContext *context,
-			      GdictApplet  *applet)
+                              GdictApplet  *applet)
 {
   GdictAppletPrivate *priv = applet->priv;
 
@@ -640,7 +638,7 @@ gdict_applet_lookup_start_cb (GdictContext *context,
 
 static void
 gdict_applet_lookup_end_cb (GdictContext *context,
-			    GdictApplet  *applet)
+                            GdictApplet  *applet)
 {
   gdict_applet_set_menu_items_sensitive (applet, TRUE);
 
@@ -649,16 +647,16 @@ gdict_applet_lookup_end_cb (GdictContext *context,
 
 static void
 gdict_applet_error_cb (GdictContext *context,
-		       const GError *error,
-		       GdictApplet  *applet)
+                       const GError *error,
+                       GdictApplet  *applet)
 {
   /* disable menu items */
   gdict_applet_set_menu_items_sensitive (applet, FALSE);
 }
 
 static void
-gdict_applet_cmd_lookup (GtkAction *action,
-			 GdictApplet       *applet)
+gdict_applet_cmd_lookup (GtkAction   *action,
+                         GdictApplet *applet)
 {
   GdictAppletPrivate *priv = applet->priv;
   gchar *text = NULL;;
@@ -677,64 +675,64 @@ gdict_applet_cmd_lookup (GtkAction *action,
 }
 
 static void
-gdict_applet_cmd_clear (GtkAction *action,
-			GdictApplet       *applet)
+gdict_applet_cmd_clear (GtkAction   *action,
+                        GdictApplet *applet)
 {
   clear_cb (NULL, applet);
 }
 
 static void
-gdict_applet_cmd_print (GtkAction *action,
-			GdictApplet       *applet)
+gdict_applet_cmd_print (GtkAction   *action,
+                        GdictApplet *applet)
 {
   print_cb (NULL, applet);
 }
 
 static void
-gdict_applet_cmd_save (GtkAction *action,
-			GdictApplet       *applet)
+gdict_applet_cmd_save (GtkAction   *action,
+                       GdictApplet *applet)
 {
   save_cb (NULL, applet);
 }
 
 static void
-gdict_applet_cmd_preferences (GtkAction *action,
-			      GdictApplet       *applet)
+gdict_applet_cmd_preferences (GtkAction   *action,
+                              GdictApplet *applet)
 {
   gdict_show_pref_dialog (GTK_WIDGET (applet),
-  			  _("Dictionary Preferences"),
-  			  applet->priv->loader);
+                          _("Dictionary Preferences"),
+                          applet->priv->loader);
 }
 
 static void
-gdict_applet_cmd_about (GtkAction *action,
-			GdictApplet       *applet)
+gdict_applet_cmd_about (GtkAction   *action,
+                        GdictApplet *applet)
 {
   gdict_show_about_dialog (GTK_WIDGET (applet));
 }
 
 static void
-gdict_applet_cmd_help (GtkAction *action,
-		       GdictApplet       *applet)
+gdict_applet_cmd_help (GtkAction   *action,
+                       GdictApplet *applet)
 {
   GError *err = NULL;
 
   gtk_show_uri_on_window (NULL,
-		"help:mate-dictionary/mate-dictionary-applet",
-		gtk_get_current_event_time (), &err);
+                          "help:mate-dictionary/mate-dictionary-applet",
+                          gtk_get_current_event_time (), &err);
 
   if (err)
     {
       gdict_show_error_dialog (NULL,
-      			       _("There was an error while displaying help"),
-      			       err->message);
+                               _("There was an error while displaying help"),
+                               err->message);
       g_error_free (err);
     }
 }
 
 static void
 gdict_applet_change_orient (MatePanelApplet       *applet,
-			    MatePanelAppletOrient  orient)
+                            MatePanelAppletOrient  orient)
 {
   GdictAppletPrivate *priv = GDICT_APPLET (applet)->priv;
   guint new_size;
@@ -762,12 +760,12 @@ gdict_applet_change_orient (MatePanelApplet       *applet,
 
   if (MATE_PANEL_APPLET_CLASS (gdict_applet_parent_class)->change_orient)
     MATE_PANEL_APPLET_CLASS (gdict_applet_parent_class)->change_orient (applet,
-    								   orient);
+                                                            orient);
 }
 
 static void
 gdict_applet_size_allocate (GtkWidget    *widget,
-			    GdkRectangle *allocation)
+                            GdkRectangle *allocation)
 {
   GdictApplet *applet = GDICT_APPLET (widget);
   GdictAppletPrivate *priv = applet->priv;
@@ -789,28 +787,28 @@ gdict_applet_size_allocate (GtkWidget    *widget,
         {
           GdkPixbuf *scaled;
 
-	  scaled = gdk_pixbuf_scale_simple (priv->icon,
-			  		    priv->size - 5,
-					    priv->size - 5,
-					    GDK_INTERP_BILINEAR);
+          scaled = gdk_pixbuf_scale_simple (priv->icon,
+                                            priv->size - 5,
+                                            priv->size - 5,
+                                            GDK_INTERP_BILINEAR);
 
-	  gtk_image_set_from_pixbuf (GTK_IMAGE (priv->image), scaled);
-	  g_object_unref (scaled);
-	}
+          gtk_image_set_from_pixbuf (GTK_IMAGE (priv->image), scaled);
+          g_object_unref (scaled);
+        }
      }
 
   if (GTK_WIDGET_CLASS (gdict_applet_parent_class)->size_allocate)
     GTK_WIDGET_CLASS (gdict_applet_parent_class)->size_allocate (widget,
-		    						 allocation);
+                                                                 allocation);
 }
 
 static void
 gdict_applet_style_set (GtkWidget *widget,
-			GtkStyle  *old_style)
+                        GtkStyle  *old_style)
 {
   if (GTK_WIDGET_CLASS (gdict_applet_parent_class)->style_set)
     GTK_WIDGET_CLASS (gdict_applet_parent_class)->style_set (widget,
-		    					     old_style);
+                                                             old_style);
 #if 0
   set_window_default_size (GDICT_APPLET (widget));
 #endif
@@ -818,7 +816,7 @@ gdict_applet_style_set (GtkWidget *widget,
 
 static void
 gdict_applet_set_database (GdictApplet *applet,
-			   const gchar *database)
+                           const gchar *database)
 {
   GdictAppletPrivate *priv = applet->priv;
 
@@ -828,15 +826,15 @@ gdict_applet_set_database (GdictApplet *applet,
     priv->database = g_strdup (database);
   else
     priv->database = g_settings_get_string (priv->settings,
-							  GDICT_SETTINGS_DATABASE_KEY);
+                                            GDICT_SETTINGS_DATABASE_KEY);
   if (priv->defbox)
     gdict_defbox_set_database (GDICT_DEFBOX (priv->defbox),
-			       priv->database);
+                               priv->database);
 }
 
 static void
 gdict_applet_set_strategy (GdictApplet *applet,
-			   const gchar *strategy)
+                           const gchar *strategy)
 {
   GdictAppletPrivate *priv = applet->priv;
 
@@ -846,7 +844,7 @@ gdict_applet_set_strategy (GdictApplet *applet,
     priv->strategy = g_strdup (strategy);
   else
     priv->strategy = g_settings_get_string (priv->settings,
-							  GDICT_SETTINGS_STRATEGY_KEY);
+                                            GDICT_SETTINGS_STRATEGY_KEY);
 }
 
 static GdictContext *
@@ -860,13 +858,13 @@ get_context_from_loader (GdictApplet *applet)
     priv->source_name = g_strdup (GDICT_DEFAULT_SOURCE_NAME);
 
   source = gdict_source_loader_get_source (priv->loader,
-		  			   priv->source_name);
+                                           priv->source_name);
   if (!source)
     {
       gchar *detail;
 
       detail = g_strdup_printf (_("No dictionary source available with name '%s'"),
-      				priv->source_name);
+                                priv->source_name);
 
       gdict_show_error_dialog (NULL,
                                _("Unable to find dictionary source"),
@@ -886,7 +884,7 @@ get_context_from_loader (GdictApplet *applet)
       gchar *detail;
 
       detail = g_strdup_printf (_("No context available for source '%s'"),
-      				gdict_source_get_description (source));
+                                gdict_source_get_description (source));
 
       gdict_show_error_dialog (NULL,
                                _("Unable to create a context"),
@@ -905,7 +903,7 @@ get_context_from_loader (GdictApplet *applet)
 
 static void
 gdict_applet_set_print_font (GdictApplet *applet,
-			     const gchar *print_font)
+                             const gchar *print_font)
 {
   GdictAppletPrivate *priv = applet->priv;
 
@@ -915,12 +913,12 @@ gdict_applet_set_print_font (GdictApplet *applet,
     priv->print_font = g_strdup (print_font);
   else
     priv->print_font = g_settings_get_string (priv->settings,
-							    GDICT_SETTINGS_PRINT_FONT_KEY);
+                                              GDICT_SETTINGS_PRINT_FONT_KEY);
 }
 
 static void
 gdict_applet_set_defbox_font (GdictApplet *applet,
-			      const gchar *defbox_font)
+                              const gchar *defbox_font)
 {
   GdictAppletPrivate *priv = applet->priv;
 
@@ -930,16 +928,16 @@ gdict_applet_set_defbox_font (GdictApplet *applet,
     priv->defbox_font = g_strdup (defbox_font);
   else
     priv->defbox_font = g_settings_get_string (priv->desktop_settings,
-							     DOCUMENT_FONT_KEY);
+                                               DOCUMENT_FONT_KEY);
 
   if (priv->defbox)
     gdict_defbox_set_font_name (GDICT_DEFBOX (priv->defbox),
-				priv->defbox_font);
+                                priv->defbox_font);
 }
 
 static void
 gdict_applet_set_context (GdictApplet  *applet,
-			  GdictContext *context)
+                          GdictContext *context)
 {
   GdictAppletPrivate *priv = applet->priv;
 
@@ -965,21 +963,21 @@ gdict_applet_set_context (GdictApplet  *applet,
 
   /* attach our callbacks */
   priv->lookup_start_id = g_signal_connect (context, "lookup-start",
-					    G_CALLBACK (gdict_applet_lookup_start_cb),
-					    applet);
+              G_CALLBACK (gdict_applet_lookup_start_cb),
+              applet);
   priv->lookup_end_id   = g_signal_connect (context, "lookup-end",
-					    G_CALLBACK (gdict_applet_lookup_end_cb),
-					    applet);
+              G_CALLBACK (gdict_applet_lookup_end_cb),
+              applet);
   priv->error_id        = g_signal_connect (context, "error",
-		  			    G_CALLBACK (gdict_applet_error_cb),
-					    applet);
+              G_CALLBACK (gdict_applet_error_cb),
+              applet);
 
   priv->context = context;
 }
 
 static void
 gdict_applet_set_source_name (GdictApplet *applet,
-			      const gchar *source_name)
+                              const gchar *source_name)
 {
   GdictAppletPrivate *priv = applet->priv;
   GdictContext *context;
@@ -990,15 +988,16 @@ gdict_applet_set_source_name (GdictApplet *applet,
     priv->source_name = g_strdup (source_name);
   else
     priv->source_name = g_settings_get_string (priv->settings,
-							     GDICT_SETTINGS_SOURCE_KEY);
+                                               GDICT_SETTINGS_SOURCE_KEY);
 
   context = get_context_from_loader (applet);
   gdict_applet_set_context (applet, context);
 }
 
 static void
-gdict_applet_settings_changed_cb (GSettings *settings,
-                  const gchar *key, GdictApplet *applet)
+gdict_applet_settings_changed_cb (GSettings   *settings,
+                                  const gchar *key,
+                                  GdictApplet *applet)
 {
 
   if (g_strcmp0 (key, GDICT_SETTINGS_PRINT_FONT_KEY) == 0)
@@ -1111,7 +1110,7 @@ gdict_applet_init (GdictApplet *applet)
   gtk_window_set_default_icon_name ("accessories-dictionary");
 
   mate_panel_applet_set_flags (MATE_PANEL_APPLET (applet),
-			  MATE_PANEL_APPLET_EXPAND_MINOR);
+                               MATE_PANEL_APPLET_EXPAND_MINOR);
 
   priv->settings = g_settings_new (GDICT_SETTINGS_SCHEMA);
   priv->desktop_settings = g_settings_new (DESKTOP_SETTINGS_SCHEMA);
@@ -1123,7 +1122,7 @@ gdict_applet_init (GdictApplet *applet)
                     G_CALLBACK (gdict_applet_settings_changed_cb), applet);
 
   mate_panel_applet_set_background_widget (MATE_PANEL_APPLET (applet),
-		  		      GTK_WIDGET (applet));
+                                           GTK_WIDGET (applet));
 
   priv->size = mate_panel_applet_get_size (MATE_PANEL_APPLET (applet));
 
@@ -1140,10 +1139,10 @@ gdict_applet_init (GdictApplet *applet)
     }
 
   priv->icon = gtk_icon_theme_load_icon (gtk_icon_theme_get_default (),
-		  			 "accessories-dictionary",
-					 48,
-					 0,
-					 NULL);
+                                         "accessories-dictionary",
+                                         48,
+                                         0,
+                                         NULL);
 
   /* force first draw */
   gdict_applet_draw (applet);
@@ -1180,8 +1179,8 @@ static const GtkActionEntry gdict_applet_menu_actions[] = {
 
 static gboolean
 gdict_applet_factory (MatePanelApplet *applet,
-                      const gchar *iid,
-		      gpointer     data)
+                      const gchar     *iid,
+                      gpointer         data)
 {
   gboolean retval = FALSE;
   gchar *ui_path;
@@ -1195,9 +1194,9 @@ gdict_applet_factory (MatePanelApplet *applet,
       gtk_action_group_set_translation_domain(priv->context_menu_action_group,
                                               GETTEXT_PACKAGE);
       gtk_action_group_add_actions(priv->context_menu_action_group,
-								gdict_applet_menu_actions,
-								G_N_ELEMENTS (gdict_applet_menu_actions),
-								applet);
+                                   gdict_applet_menu_actions,
+                                   G_N_ELEMENTS (gdict_applet_menu_actions),
+                                   applet);
       ui_path = g_build_filename(PKGDATADIR, "dictionary-applet-menu.xml", NULL);
       mate_panel_applet_setup_menu_from_file (applet, ui_path,
                                               priv->context_menu_action_group);
@@ -1216,8 +1215,7 @@ gdict_applet_factory (MatePanelApplet *applet,
 
 /* this defines the main () for the applet */
 MATE_PANEL_APPLET_OUT_PROCESS_FACTORY ("DictionaryAppletFactory",
-			     GDICT_TYPE_APPLET,
-			     "mate-dictionary-applet",
-			     gdict_applet_factory,
-			     NULL);
-
+                                       GDICT_TYPE_APPLET,
+                                       "mate-dictionary-applet",
+                                       gdict_applet_factory,
+                                       NULL);

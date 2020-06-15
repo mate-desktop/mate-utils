@@ -26,9 +26,9 @@
 
 G_BEGIN_DECLS
 
-#define GDICT_TYPE_APPLET		(gdict_applet_get_type ())
-#define GDICT_APPLET(obj)		(G_TYPE_CHECK_INSTANCE_CAST ((obj), GDICT_TYPE_APPLET, GdictApplet))
-#define GDICT_IS_APPLET(obj)		(G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDICT_TYPE_APPLET))
+#define GDICT_TYPE_APPLET   (gdict_applet_get_type ())
+#define GDICT_APPLET(obj)   (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDICT_TYPE_APPLET, GdictApplet))
+#define GDICT_IS_APPLET(obj)  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDICT_TYPE_APPLET))
 
 typedef struct _GdictApplet        GdictApplet;
 typedef struct _GdictAppletClass   GdictAppletClass;
