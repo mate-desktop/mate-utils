@@ -6,8 +6,8 @@
  *
  *  (C) 2002 the Free Software Foundation
  *
- *  Authors:   	Dennis Cranston  <dennis_cranston@yahoo.com>
- *		George Lebl
+ *  Authors:    Dennis Cranston  <dennis_cranston@yahoo.com>
+ *              George Lebl
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -36,145 +36,145 @@ extern "C" {
 #include "eggsmclient.h"
 
 void
-version_cb (const gchar * option_name,
-            const gchar * value,
-            gpointer data,
-            GError ** error);
+version_cb (const gchar *option_name,
+            const gchar *value,
+            gpointer     data,
+            GError     **error);
 void
-quit_session_cb (EggSMClient * client,
-                 gpointer data);
+quit_session_cb (EggSMClient *client,
+                 gpointer     data);
 void
-quit_cb (GtkWidget * widget,
-         GdkEvent * event,
-         gpointer data);
+quit_cb (GtkWidget *widget,
+         GdkEvent  *event,
+         gpointer   data);
 void
-click_close_cb (GtkWidget * widget,
-                gpointer data);
+click_close_cb (GtkWidget *widget,
+                gpointer   data);
 void
-click_find_cb (GtkWidget * widget,
-               gpointer	data);
+click_find_cb (GtkWidget *widget,
+               gpointer   data);
 void
-click_stop_cb (GtkWidget * widget,
-               gpointer	data);
+click_stop_cb (GtkWidget *widget,
+               gpointer   data);
 void
-click_help_cb (GtkWidget * widget,
-               gpointer data);
+click_help_cb (GtkWidget *widget,
+               gpointer   data);
 void
-click_expander_cb (GObject * object,
-                   GParamSpec * param_spec,
-                   gpointer data);
+click_expander_cb (GObject    *object,
+                   GParamSpec *param_spec,
+                   gpointer    data);
 void
-size_allocate_cb (GtkWidget * widget,
-                  GtkAllocation * allocation,
-                  gpointer data);
+size_allocate_cb (GtkWidget     *widget,
+                  GtkAllocation *allocation,
+                  gpointer       data);
 void
-add_constraint_cb (GtkWidget * widget,
-                   gpointer data);
+add_constraint_cb (GtkWidget *widget,
+                   gpointer   data);
 void
-remove_constraint_cb (GtkWidget * widget,
-                      gpointer data);
+remove_constraint_cb (GtkWidget *widget,
+                      gpointer   data);
 void
-constraint_activate_cb (GtkWidget * widget,
-                        gpointer data);
+constraint_activate_cb (GtkWidget *widget,
+                        gpointer   data);
 void
-constraint_update_info_cb (GtkWidget * widget,
-                           gpointer data);
+constraint_update_info_cb (GtkWidget *widget,
+                           gpointer   data);
 void
-name_contains_activate_cb (GtkWidget * widget,
-                           gpointer data);
+name_contains_activate_cb (GtkWidget *widget,
+                           gpointer   data);
 void
-look_in_folder_changed_cb (GtkWidget * widget,
-                           gpointer data);
+look_in_folder_changed_cb (GtkWidget *widget,
+                           gpointer   data);
 void
-open_file_cb (GtkMenuItem * action,
-              gpointer data);
+open_file_cb (GtkMenuItem *action,
+              gpointer     data);
 void
-open_file_event_cb (GtkWidget * widget,
-                    GdkEventButton * event,
-                    gpointer data);
+open_file_event_cb (GtkWidget      *widget,
+                    GdkEventButton *event,
+                    gpointer        data);
 void
-open_folder_cb (GtkAction * action,
-                gpointer data);
+open_folder_cb (GtkAction *action,
+                gpointer   data);
 void
-copy_path_cb (GtkAction * action,
-              gpointer data);
+copy_path_cb (GtkAction *action,
+              gpointer   data);
 void
-file_changed_cb (GFileMonitor * handle,
-                 const gchar * monitor_uri,
-                 const gchar * info_uri,
+file_changed_cb (GFileMonitor     *handle,
+                 const gchar      *monitor_uri,
+                 const gchar      *info_uri,
                  GFileMonitorEvent event_type,
-                 gpointer data);
+                 gpointer          data);
 void
-move_to_trash_cb (GtkAction * action,
-                  gpointer data);
+move_to_trash_cb (GtkAction *action,
+                  gpointer   data);
 void
-drag_begin_file_cb (GtkWidget * widget,
-                    GdkDragContext * context,
-                    gpointer data);
+drag_begin_file_cb (GtkWidget      *widget,
+                    GdkDragContext *context,
+                    gpointer        data);
 void
-drag_file_cb (GtkWidget * widget,
-              GdkDragContext * context,
-              GtkSelectionData * selection_data,
-              guint info,
-              guint time,
-              gpointer data);
+drag_file_cb (GtkWidget        *widget,
+              GdkDragContext   *context,
+              GtkSelectionData *selection_data,
+              guint             info,
+              guint             time,
+              gpointer          data);
 void
-show_file_selector_cb (GtkAction * action,
-                       gpointer data);
+show_file_selector_cb (GtkAction *action,
+                       gpointer   data);
 void
-save_results_cb (GtkWidget * chooser,
-                 gint response,
-                 gpointer data);
+save_results_cb (GtkWidget *chooser,
+                 gint       response,
+                 gpointer   data);
 void
-save_session_cb (EggSMClient * client,
-                 GKeyFile * state_file,
-                 gpointer client_data);
+save_session_cb (EggSMClient *client,
+                 GKeyFile    *state_file,
+                 gpointer     client_data);
 gboolean
-key_press_cb (GtkWidget * widget,
-              GdkEventKey * event,
-              gpointer data);
+key_press_cb (GtkWidget   *widget,
+              GdkEventKey *event,
+              gpointer     data);
 gboolean
-file_button_release_event_cb (GtkWidget * widget,
-                              GdkEventButton * event,
-                              gpointer data);
+file_button_release_event_cb (GtkWidget      *widget,
+                              GdkEventButton *event,
+                              gpointer        data);
 gboolean
-file_event_after_cb (GtkWidget 	* widget,
-                     GdkEventButton * event,
-                     gpointer data);
+file_event_after_cb (GtkWidget      *widget,
+                     GdkEventButton *event,
+                     gpointer        data);
 gboolean
-file_button_press_event_cb (GtkWidget * widget,
-                            GdkEventButton * event,
-                            gpointer data);
+file_button_press_event_cb (GtkWidget      *widget,
+                            GdkEventButton *event,
+                            gpointer        data);
 gboolean
-file_key_press_event_cb (GtkWidget * widget,
-                         GdkEventKey * event,
-                         gpointer data);
+file_key_press_event_cb (GtkWidget   *widget,
+                         GdkEventKey *event,
+                         gpointer     data);
 gboolean
-file_motion_notify_cb (GtkWidget *widget,
+file_motion_notify_cb (GtkWidget      *widget,
                        GdkEventMotion *event,
-                       gpointer user_data);
+                       gpointer        user_data);
 gboolean
-file_leave_notify_cb (GtkWidget *widget,
+file_leave_notify_cb (GtkWidget        *widget,
                       GdkEventCrossing *event,
-                      gpointer user_data);
+                      gpointer          user_data);
 gboolean
 not_running_timeout_cb (gpointer data);
 
 void
-disable_quick_search_cb (GtkWidget * dialog,
-                         gint response,
-                         gpointer data);
+disable_quick_search_cb (GtkWidget *dialog,
+                         gint       response,
+                         gpointer   data);
 void
-single_click_to_activate_key_changed_cb (GSettings * settings,
-                                         gchar * key,
-                                         gpointer user_data);
+single_click_to_activate_key_changed_cb (GSettings *settings,
+                                         gchar     *key,
+                                         gpointer   user_data);
 void
-columns_changed_cb (GtkTreeView * treeview,
-                    gpointer user_data);
+columns_changed_cb (GtkTreeView *treeview,
+                    gpointer     user_data);
 gboolean
-window_state_event_cb (GtkWidget * widget,
-                       GdkEventWindowState * event,
-                       gpointer data);
+window_state_event_cb (GtkWidget           *widget,
+                       GdkEventWindowState *event,
+                       gpointer             data);
 
 #ifdef __cplusplus
 }
