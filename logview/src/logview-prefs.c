@@ -37,8 +37,8 @@
 /* logview settings */
 #define LOGVIEW_SCHEMA "org.mate.system-log"
 #define PREF_WIDTH    "width"
-#define PREF_HEIGHT	  "height"
-#define PREF_LOGFILE 	"logfile"
+#define PREF_HEIGHT   "height"
+#define PREF_LOGFILE  "logfile"
 #define PREF_LOGFILES "logfiles"
 #define PREF_FONTSIZE "fontsize"
 #define PREF_FILTERS  "filters"
@@ -364,7 +364,7 @@ logview_prefs_get_have_tearoff (LogviewPrefs *prefs)
 {
   g_assert (LOGVIEW_IS_PREFS (prefs));
 
-	return (g_settings_get_boolean (prefs->priv->interface_prefs, MATE_MENUS_HAVE_TEAROFF));
+  return (g_settings_get_boolean (prefs->priv->interface_prefs, MATE_MENUS_HAVE_TEAROFF));
 }
 
 /* the elements should be freed with g_free () */
@@ -466,7 +466,7 @@ logview_prefs_get_stored_fontsize (LogviewPrefs *prefs)
 {
   g_assert (LOGVIEW_IS_PREFS (prefs));
 
-	return g_settings_get_int (prefs->priv->logview_prefs, PREF_FONTSIZE);
+  return g_settings_get_int (prefs->priv->logview_prefs, PREF_FONTSIZE);
 }
 
 void

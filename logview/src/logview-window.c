@@ -92,30 +92,30 @@ logview_version_selector_changed (GtkComboBox *version_selector, gpointer user_d
 
 }
 #if 0
-	LogviewWindow *logview = user_data;
-	Log *log = logview->curlog;
-	int selected;
+  LogviewWindow *logview = user_data;
+  Log *log = logview->curlog;
+  int selected;
 
     g_assert (LOGVIEW_IS_WINDOW (logview));
 
-	selected = gtk_combo_box_get_active (version_selector);
+  selected = gtk_combo_box_get_active (version_selector);
 
-	if (selected == log->current_version)
-		return;
+  if (selected == log->current_version)
+    return;
 
-	/* select a new version */
-	if (selected == 0) {
-		logview_select_log (logview, log->parent_log);
-	} else {
-		Log *new;
-		if (log->parent_log) {
-			new = log->parent_log->older_logs[selected];
-		} else {
-			new = log->older_logs[selected];
-		}
+  /* select a new version */
+  if (selected == 0) {
+    logview_select_log (logview, log->parent_log);
+  } else {
+    Log *new;
+    if (log->parent_log) {
+      new = log->parent_log->older_logs[selected];
+    } else {
+      new = log->older_logs[selected];
+    }
 
-		logview_select_log (logview, new);
-	}
+    logview_select_log (logview, new);
+  }
 }
 
 #endif
@@ -290,7 +290,7 @@ open_file_selected_cb (GtkWidget *chooser, gint response, LogviewWindow *logview
 
   gtk_widget_hide (GTK_WIDGET (chooser));
   if (response != GTK_RESPONSE_OK) {
-	  return;
+    return;
   }
 
   f = gtk_file_chooser_get_file (GTK_FILE_CHOOSER (chooser));
@@ -1447,8 +1447,8 @@ logview_window_init (LogviewWindow *logview)
 
   /* status area at bottom */
   priv->statusbar = gtk_statusbar_new ();
-	gtk_widget_set_margin_top (GTK_WIDGET (logview->priv->statusbar), 0);
-	gtk_widget_set_margin_bottom (GTK_WIDGET (logview->priv->statusbar), 0);
+  gtk_widget_set_margin_top (GTK_WIDGET (logview->priv->statusbar), 0);
+  gtk_widget_set_margin_bottom (GTK_WIDGET (logview->priv->statusbar), 0);
 
   gtk_box_pack_start (GTK_BOX (vbox), priv->statusbar, FALSE, FALSE, 0);
   gtk_widget_show (priv->statusbar);

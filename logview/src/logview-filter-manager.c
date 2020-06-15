@@ -447,22 +447,22 @@ logview_filter_manager_init (LogviewFilterManager *manager)
                                column);
 
   priv->add_button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
-					       "label", "gtk-add",
-					       "use-stock", TRUE,
-					       "use-underline", TRUE,
-					       NULL));
+                                "label", "gtk-add",
+                                "use-stock", TRUE,
+                                "use-underline", TRUE,
+                                NULL));
 
   priv->edit_button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
-						"label", "gtk-properties",
-						"use-stock", TRUE,
-						"use-underline", TRUE,
-						NULL));
+                                  "label", "gtk-properties",
+                                  "use-stock", TRUE,
+                                  "use-underline", TRUE,
+                                  NULL));
 
   priv->remove_button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
-						  "label", "gtk-remove",
-						  "use-stock", TRUE,
-						  "use-underline", TRUE,
-						  NULL));
+                                    "label", "gtk-remove",
+                                    "use-stock", TRUE,
+                                    "use-underline", TRUE,
+                                    NULL));
 
   gtk_window_set_title (GTK_WINDOW (manager),
                         _("Filters"));

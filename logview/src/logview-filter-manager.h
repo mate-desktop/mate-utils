@@ -37,13 +37,13 @@ typedef struct _LogviewFilterManager LogviewFilterManager;
 typedef struct _LogviewFilterManagerPrivate LogviewFilterManagerPrivate;
 
 struct _LogviewFilterManagerClass {
-	GtkDialogClass parent_class;
+  GtkDialogClass parent_class;
 };
 
 struct _LogviewFilterManager {
-	GtkDialog parent_instance;
+  GtkDialog parent_instance;
 
-	LogviewFilterManagerPrivate* priv;
+  LogviewFilterManagerPrivate* priv;
 };
 
 GType       logview_filter_manager_get_type (void) G_GNUC_CONST;

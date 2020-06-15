@@ -23,10 +23,10 @@
 
 #include <gtk/gtk.h>
 
-#define LOGVIEW_TYPE_WINDOW		  (logview_window_get_type ())
-#define LOGVIEW_WINDOW(obj)		  (G_TYPE_CHECK_INSTANCE_CAST ((obj), LOGVIEW_TYPE_WINDOW, LogviewWindow))
-#define LOGVIEW_WINDOW_CLASS(klass)	  (G_TYPE_CHECK_CLASS_CAST ((klass), LOGVIEW_TYPE_WINDOW, LogviewWindowClass))
-#define LOGVIEW_IS_WINDOW(obj)	  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), LOGVIEW_TYPE_WINDOW))
+#define LOGVIEW_TYPE_WINDOW     (logview_window_get_type ())
+#define LOGVIEW_WINDOW(obj)     (G_TYPE_CHECK_INSTANCE_CAST ((obj), LOGVIEW_TYPE_WINDOW, LogviewWindow))
+#define LOGVIEW_WINDOW_CLASS(klass)   (G_TYPE_CHECK_CLASS_CAST ((klass), LOGVIEW_TYPE_WINDOW, LogviewWindowClass))
+#define LOGVIEW_IS_WINDOW(obj)    (G_TYPE_CHECK_INSTANCE_TYPE ((obj), LOGVIEW_TYPE_WINDOW))
 #define LOGVIEW_IS_WINDOW_CLASS(klass)  (G_TYPE_CHECK_CLASS_TYPE ((obj), LOGVIEW_TYPE_WINDOW))
 #define LOGVIEW_WINDOW_GET_CLASS(obj)   (G_TYPE_INSTANCE_GET_CLASS ((obj), LOGVIEW_TYPE_WINDOW, LogviewWindowClass))
 
@@ -40,7 +40,7 @@ struct _LogviewWindow {
 };
 
 struct _LogviewWindowClass {
-	GtkWindowClass parent_class;
+  GtkWindowClass parent_class;
 };
 
 GType logview_window_get_type (void);

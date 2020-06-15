@@ -354,57 +354,57 @@ log_load_done (gpointer user_data)
 static gboolean
 skip_string (GInputStream *is)
 {
-	guchar c;
-	gssize bytes_read;
+  guchar c;
+  gssize bytes_read;
 
-	do {
-		bytes_read = g_input_stream_read (is, &c, 1, NULL, NULL);
+  do {
+    bytes_read = g_input_stream_read (is, &c, 1, NULL, NULL);
 
-		if (bytes_read != 1) {
-			return FALSE;
+    if (bytes_read != 1) {
+      return FALSE;
     }
-	} while (c != 0);
+  } while (c != 0);
 
-	return TRUE;
+  return TRUE;
 }
 
 static gboolean
 read_gzip_header (GInputStream *is,
                   time_t *modification_time)
 {
-	guchar buffer[GZIP_HEADER_SIZE];
-	gssize bytes, to_skip;
-	guint mode;
-	guint flags;
+  guchar buffer[GZIP_HEADER_SIZE];
+  gssize bytes, to_skip;
+  guint mode;
+  guint flags;
 
-	bytes = g_input_stream_read (is, buffer, GZIP_HEADER_SIZE,
+  bytes = g_input_stream_read (is, buffer, GZIP_HEADER_SIZE,
                                NULL, NULL);
   if (bytes == -1) {
     return FALSE;
   }
 
-	if (bytes != GZIP_HEADER_SIZE)
-		return FALSE;
+  if (bytes != GZIP_HEADER_SIZE)
+    return FALSE;
 
-	if (buffer[0] != GZIP_MAGIC_1 || buffer[1] != GZIP_MAGIC_2)
-		return FALSE;
+  if (buffer[0] != GZIP_MAGIC_1 || buffer[1] != GZIP_MAGIC_2)
+    return FALSE;
 
-	mode = buffer[2];
-	if (mode != 8) /* Mode: deflate */
-		return FALSE;
+  mode = buffer[2];
+  if (mode != 8) /* Mode: deflate */
+    return FALSE;
 
-	flags = buffer[3];
+  flags = buffer[3];
 
-	if (flags & GZIP_FLAG_RESERVED)
-		return FALSE;
+  if (flags & GZIP_FLAG_RESERVED)
+    return FALSE;
 
-	if (flags & GZIP_FLAG_EXTRA_FIELD) {
-		guchar tmp[2];
+  if (flags & GZIP_FLAG_EXTRA_FIELD) {
+    guchar tmp[2];
 
     bytes = g_input_stream_read (is, tmp, 2, NULL, NULL);
 
     if (bytes != 2) {
-			return FALSE;
+      return FALSE;
     }
 
     to_skip = tmp[0] | (tmp[0] << 8);
@@ -412,23 +412,23 @@ read_gzip_header (GInputStream *is,
     if (bytes != to_skip) {
       return FALSE;
     }
-	}
+  }
 
-	if (flags & GZIP_FLAG_ORIG_NAME) {
+  if (flags & GZIP_FLAG_ORIG_NAME) {
     if (!skip_string (is)) {
       return FALSE;
     }
   }
 
-	if (flags & GZIP_FLAG_COMMENT) {
+  if (flags & GZIP_FLAG_COMMENT) {
     if (!skip_string (is)) {
       return FALSE;
     }
   }
 
-	if (flags & GZIP_FLAG_HEAD_CRC) {
+  if (flags & GZIP_FLAG_HEAD_CRC) {
     bytes = g_input_stream_skip (is, 2, NULL, NULL);
-		if (bytes != 2) {
+    if (bytes != 2) {
       return FALSE;
     }
   }
@@ -436,7 +436,7 @@ read_gzip_header (GInputStream *is,
   *modification_time = (buffer[4] | (buffer[5] << 8)
                         | (buffer[6] << 16) | (buffer[7] << 24));
 
-	return TRUE;
+  return TRUE;
 }
 
 static GZHandle *

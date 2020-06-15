@@ -49,7 +49,7 @@ struct _LogviewLoglist {
 };
 
 struct _LogviewLoglistClass {
-	GtkTreeViewClass parent_class;
+  GtkTreeViewClass parent_class;
 
   void (* day_selected) (LogviewLoglist *loglist,
                          Day *day);
