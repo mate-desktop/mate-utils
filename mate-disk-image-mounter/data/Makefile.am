@@ -13,3 +13,5 @@ EXTRA_DIST = 					\
 CLEANFILES = 					\
 	$(diskimagemounter_DATA)		\
 	$(NULL)
+
+-include $(top_srcdir)/git.mk

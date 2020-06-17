@@ -37,3 +37,4 @@ mate_search_tool_LDADD = \
 	$(libeggsmclient_LIB) \
 	$(libmateui_deprecated_LIB)
 
+-include $(top_srcdir)/git.mk

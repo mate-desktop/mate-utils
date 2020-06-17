@@ -127,3 +127,4 @@ distclean-local:
 		rm -f $(MAINTAINERCLEANFILES); \
 	fi
 
+-include $(top_srcdir)/git.mk
