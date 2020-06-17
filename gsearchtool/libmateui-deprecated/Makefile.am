@@ -12,3 +12,5 @@ libmateui_deprecated_la_LIBADD = \
 libmateui_deprecated_la_SOURCES = \
 	gsearchtool-entry.h	\
 	gsearchtool-entry.c
+
+-include $(top_srcdir)/git.mk

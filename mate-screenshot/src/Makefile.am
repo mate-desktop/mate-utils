@@ -61,3 +61,4 @@ install-exec-local:
 	rm -f $(DESTDIR)$(bindir)/mate-panel-screenshot
 	ln -s mate-screenshot $(DESTDIR)$(bindir)/mate-panel-screenshot
 
+-include $(top_srcdir)/git.mk

@@ -25,3 +25,5 @@ mate_disk_image_mounter_LDADD = 			\
 	$(UDISKS2_LIBS)					\
 	$(GTK_LIBS)					\
 	$(NULL)
+
+-include $(top_srcdir)/git.mk

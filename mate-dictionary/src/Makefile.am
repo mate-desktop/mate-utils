@@ -93,3 +93,5 @@ mate_dictionary_applet_LDADD = \
 	$(NULL)
 
 endif # BUILD_GDICT_APPLET
+
+-include $(top_srcdir)/git.mk
