@@ -1,14 +1,14 @@
 NULL =
 
 AM_CPPFLAGS = \
-	-I$(top_srcdir)/gsearchtool/libeggsmclient \
+	-I$(top_srcdir)/gsearchtool/mate-submodules/libegg \
 	-I$(top_srcdir)/gsearchtool/libmateui-deprecated \
 	-DMATELOCALEDIR=\""$(datadir)/locale"\" \
 	-DLOCALEDIR=\"$(datadir)/locale\" \
 	-DDATADIR=\""$(datadir)"\" \
 	-DGREP_COMMAND=\""$(GREP_COMMAND)"\"
 
-libeggsmclient_LIB = $(top_builddir)/gsearchtool/libeggsmclient/libeggsmclient.la
+libeggsmclient_LIB = $(top_builddir)/gsearchtool/mate-submodules/libegg/libegg.la
 libmateui_deprecated_LIB = $(top_builddir)/gsearchtool/libmateui-deprecated/libmateui-deprecated.la
 
 bin_PROGRAMS = mate-search-tool

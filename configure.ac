@@ -131,9 +131,9 @@ AS_CASE([$enable_disk_image_mounter],
 AM_CONDITIONAL([BUILD_DISK_IMAGE_MOUNTER], [test "x$enable_disk_image_mounter" = "xyes"])
 
 # libeggsmclient
-PKG_CHECK_MODULES(LIBEGGSMCLIENT, gtk+-3.0 >= $GTK_REQUIRED)
-AC_SUBST(LIBEGGSMCLIENT_CFLAGS)
-AC_SUBST(LIBEGGSMCLIENT_LIBS)
+PKG_CHECK_MODULES(LIBEGG, sm >= 1.0.0 ice >= 1.0.0 gtk+-3.0 >= $GTK_REQUIRED)
+AC_SUBST(LIBEGG_CFLAGS)
+AC_SUBST(LIBEGG_LIBS)
 
 # libgdict requires just gtk+
 PKG_CHECK_MODULES(LIBGDICT, glib-2.0 >= $GLIB_REQUIRED
@@ -342,7 +342,8 @@ gsearchtool/Makefile
 gsearchtool/data/Makefile
 gsearchtool/data/org.mate.search-tool.gschema.xml
 gsearchtool/help/Makefile
-gsearchtool/libeggsmclient/Makefile
+gsearchtool/mate-submodules/Makefile
+gsearchtool/mate-submodules/libegg/Makefile
 gsearchtool/libmateui-deprecated/Makefile
 gsearchtool/src/Makefile
 
