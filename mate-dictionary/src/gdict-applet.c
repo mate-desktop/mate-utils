@@ -1167,7 +1167,7 @@ static const GtkActionEntry gdict_applet_menu_actions[] = {
   {"DictionarySave", "document-save", N_("_Save"),
     NULL, NULL,
     G_CALLBACK (gdict_applet_cmd_save) },
-  {"DictionaryPreferences", "preferences-desktop", N_("Preferences"),
+  {"DictionaryPreferences", "document-properties", N_("Preferences"),
     NULL, NULL,
     G_CALLBACK (gdict_applet_cmd_preferences) },
   {"DictionaryHelp", "help-browser", N_("_Help"),
