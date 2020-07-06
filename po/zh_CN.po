@@ -11,13 +11,14 @@
 # Mingye Wang <arthur200126@gmail.com>, 2018
 # Mingcong Bai <jeffbai@aosc.xyz>, 2018
 # zhangxianwei8 <zhang.xianwei8@zte.com.cn>, 2018
-# Wylmer Wang, 2019
+# e0c668032ced196bd60f2b6a070d982d_8f72ae0, 2019
 # CNAmira <forucial@icloud.com>, 2019
 # Wenbin Lv <wenbin816@gmail.com>, 2019
 # zhineng404 <zhinengge@gmail.com>, 2019
 # clefebvre <clement.lefebvre@linuxmint.com>, 2019
 # Stefano Karapetsas <stefano@karapetsas.com>, 2019
-# liushuyu011 <liushuyu011@gmail.com>, 2019
+# shuyu liu <liushuyu011@gmail.com>, 2019
+# liulitchi <xingzuo88@qq.com>, 2020
 # 
 msgid ""
 msgstr ""
@@ -25,7 +26,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
 "POT-Creation-Date: 2020-01-13 16:47+0100\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: liushuyu011 <liushuyu011@gmail.com>, 2019\n"
+"Last-Translator: liulitchi <xingzuo88@qq.com>, 2020\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/mate/teams/13566/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -229,14 +230,14 @@ msgid ""
 "As its name implies, Disk Usage Analyzer is a graphical utility that you can"
 " use to view and monitor your disk usage and folder structure. It displays "
 "summary information in ring or treemap charts."
-msgstr ""
+msgstr "磁盘占用分析器为一款实用的图形工具，采用环状表或树形图。可显示并监控磁盘用量，以及文件夹结构。"
 
 #: baobab/data/mate-disk-usage-analyzer.appdata.xml.in:15
 msgid ""
 "You can perform scans on a file system, your home or any other folder - "
 "local or remote. There is also an option to constantly monitor any external "
 "changes to the home directory and warn the user if a file is added/removed."
-msgstr ""
+msgstr "可在任意文件系统及文件夹上执行扫描——无论本地或远程条件下。 还可以持续监视主目录的任何外部更改，并在执行添加/删除文件时抛出警告。"
 
 #: baobab/src/baobab.c:137 baobab/src/baobab.c:357
 msgid "Scanning..."
@@ -653,6 +654,7 @@ msgid ""
 " contained within a file, ownership, date of modification, file size, folder"
 " exclusion, etc.."
 msgstr ""
+"MATE 搜索工具简易实用，可搜索任意已挂载的文件或目录。界面便于快捷配置参数，如文件中的文本、所有者属性、修改日期、文件大小以及排除文件夹等。"
 
 #: gsearchtool/data/mate-search-tool.desktop.in:4
 msgid "Locate documents and folders on this computer by name or content"
@@ -1947,7 +1949,7 @@ msgid ""
 "comes preconfigured with a list of Dict servers (RFC 2229), to which you can"
 " add your own sources, while you can select specific servers for a specific "
 "query."
-msgstr ""
+msgstr "MATE 字典，可在线查阅词汇。它附带了预置好的字典服务器（RFC 2229）。也可以自行添加词源，及选用服务器特定查询。"
 
 #: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:5
 msgid "Dictionary Applet Factory"
@@ -2869,11 +2871,11 @@ msgstr "策略"
 #: mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in:3
 #: mate-disk-image-mounter/src/main.c:59
 msgid "MATE Disk Image Mounter"
-msgstr ""
+msgstr "MATE 磁盘挂载器"
 
 #: mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in:4
 msgid "Attach and mount one or more disk image files"
-msgstr ""
+msgstr "添加并挂载磁盘"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
@@ -2887,7 +2889,7 @@ msgstr "发生了错误"
 
 #: mate-disk-image-mounter/src/main.c:78
 msgid "Allow writing to the image"
-msgstr ""
+msgstr "允许写入镜像"
 
 #: mate-disk-image-mounter/src/main.c:98
 msgid "All Files"
@@ -2895,11 +2897,11 @@ msgstr "全部文件"
 
 #: mate-disk-image-mounter/src/main.c:102
 msgid "Disk Images (*.img, *.iso)"
-msgstr ""
+msgstr "磁盘镜像（*.img、*.iso）"
 
 #: mate-disk-image-mounter/src/main.c:118
 msgid "Select Disk Image(s) to Mount"
-msgstr ""
+msgstr "选择要挂载的镜像"
 
 #: mate-disk-image-mounter/src/main.c:121
 msgid "_Cancel"
@@ -2917,35 +2919,35 @@ msgstr ""
 msgid ""
 "If checked, the mount will be read-only. This is useful if you don't want "
 "the underlying disk image to be modified"
-msgstr ""
+msgstr "选择此项，则挂载只读，适合不改动镜像的情况下。"
 
 #: mate-disk-image-mounter/src/main.c:173
 #, c-format
 msgid "Error connecting to udisks daemon: %s (%s, %d)"
-msgstr ""
+msgstr "链接USB磁盘错误：%s（%s，%d）"
 
 #: mate-disk-image-mounter/src/main.c:181
 msgid "Attach and mount one or more disk image files."
-msgstr ""
+msgstr "添加并挂载磁盘镜像文件。"
 
 #: mate-disk-image-mounter/src/main.c:229
 #, c-format
 msgid "Cannot open `%s' - maybe the volume isn't mounted?"
-msgstr ""
+msgstr "无法打开`%s' - 磁盘是否已挂载？"
 
 #: mate-disk-image-mounter/src/main.c:236
 #, c-format
 msgid "Error opening `%s': %m"
-msgstr ""
+msgstr "打开%s出错：%m"
 
 #: mate-disk-image-mounter/src/main.c:257
 #, c-format
 msgid "Error attaching disk image: %s (%s, %d)"
-msgstr ""
+msgstr "添加磁盘镜像有误：%s（%s，%d）"
 
 #: mate-screenshot/data/mate-screenshot.appdata.xml.in:7
 msgid "MATE Screenshot"
-msgstr ""
+msgstr "MATE 截图"
 
 #: mate-screenshot/data/mate-screenshot.appdata.xml.in:8
 msgid "A screenshot utility for MATE Desktop"
@@ -2957,7 +2959,7 @@ msgid ""
 "your desktop or of application windows. You can select to copy them to the "
 "system clipboard or save them in Portable Network Graphics (.png) image "
 "format."
-msgstr ""
+msgstr "MATE 截图是一款简易实用的截图小工具，可用来捕捉桌面或窗口。可将截图添加到系统剪贴板，或保存为 png 格式。"
 
 #: mate-screenshot/data/mate-screenshot.desktop.in:3
 #: mate-screenshot/src/mate-screenshot.c:519

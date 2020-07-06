@@ -8,11 +8,11 @@
 # huskyviking <husky.viking@seznam.cz>, 2018
 # Roman Horník <roman.hornik@debian-linux.cz>, 2018
 # Michal <sinope@seznam.cz>, 2018
-# Stanislav Kučera <inactive+kacernator@transifex.com>, 2018
-# Lucas Lommer <drom@kdyne.net>, 2019
+# 6e833d5535e2fe0dd9dfa7fe5bf473f2_d78f422 <64c38a0ff10419c64e8e03d54c72b3bd_352524>, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2019
 # LiberteCzech <liberte.czech@gmail.com>, 2019
 # ToMáš Marný, 2020
+# Lucas Lommer <drom@kdyne.net>, 2020
 # 
 msgid ""
 msgstr ""
@@ -20,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
 "POT-Creation-Date: 2020-01-13 16:47+0100\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: ToMáš Marný, 2020\n"
+"Last-Translator: Lucas Lommer <drom@kdyne.net>, 2020\n"
 "Language-Team: Czech (https://www.transifex.com/mate/teams/13566/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +31,7 @@ msgstr ""
 #: baobab/data/mate-disk-usage-analyzer.desktop.in.in:3
 #: baobab/data/mate-disk-usage-analyzer.appdata.xml.in:7
 msgid "MATE Disk Usage Analyzer"
-msgstr "Analýza zaplnění disku pro MATE"
+msgstr "Analyzátor využití disku pro MATE"
 
 #: baobab/data/mate-disk-usage-analyzer.desktop.in.in:4
 msgid "Check folder sizes and available disk space"
@@ -102,7 +102,7 @@ msgstr "_Zobrazit"
 
 #: baobab/data/baobab-main-window.ui:108
 msgid "_Toolbar"
-msgstr "_Lišta nástrojů"
+msgstr "_Nástrojová lišta"
 
 #: baobab/data/baobab-main-window.ui:115
 msgid "St_atusbar"
@@ -636,8 +636,12 @@ msgstr ""
 "Miloslav Trmač <mitr@volny.cz>\n"
 "Petr Tomeš <ptomes@gmail.com>\n"
 "Jakub Friedl <jfriedl@suse.cz>\n"
-"Lucas Lommer <drom@kdyne.net>\n"
+"Petr Tomeš <ptomes@gmail.com>\n"
+"Lukáš Novotný <lukasnov@cvs.gnome.org>\n"
+"Kamil Páral <ripper42@gmail.com>\n"
 "Petr Kovář <pknbe@volny.cz>\n"
+"Lucas Lommer <drom@kdyne.net>\n"
+"Tomas Bzatek <tbzatek@redhat.com>\n"
 "Roman Horník <roman.hornik@debian-linux.cz>"
 
 #: baobab/src/callbacks.c:215 gsearchtool/src/gsearchtool-callbacks.c:509
@@ -666,10 +670,15 @@ msgid ""
 " contained within a file, ownership, date of modification, file size, folder"
 " exclusion, etc.."
 msgstr ""
+"Vyhledávání souborů pro MATE je jednoduchý ale mocný nástroj umožňující vám "
+"vyhledávat soubory a složky na připojených souborových systémech. Jeho "
+"rozhraní vám dává jednoduchý přístup k široké paletě parametrů každého "
+"hledání jako vyhledání textu v souborech, datum poslední úpravy, velikost "
+"souboru, vynechání složek z hledání a podobně."
 
 #: gsearchtool/data/mate-search-tool.desktop.in:4
 msgid "Locate documents and folders on this computer by name or content"
-msgstr "Najít dokumenty a složky v tomto počítači podle jména nebo obsahu"
+msgstr "Hledat dokumenty a složky v tomto počítači podle názvu či obsahu"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
@@ -925,12 +934,12 @@ msgstr ""
 
 #: gsearchtool/libeggsmclient/eggdesktopfile.c:165
 msgid "File is not a valid .desktop file"
-msgstr "Soubor není platným souborem .desktop"
+msgstr "Soubor není platným souborem typu .desktop"
 
 #: gsearchtool/libeggsmclient/eggdesktopfile.c:188
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
-msgstr "Nerozpoznaná verze „%s“ souboru pracovní plochy"
+msgstr "Nerozpoznaný soubor typu .desktop ve verzi „%s“"
 
 #: gsearchtool/libeggsmclient/eggdesktopfile.c:957
 #, c-format
@@ -952,15 +961,15 @@ msgstr "Nelze předat URI dokumentu položce .desktop „Type=Link“"
 
 #: gsearchtool/libeggsmclient/eggdesktopfile.c:1383
 msgid "Not a launchable item"
-msgstr "Nespustitelná položka"
+msgstr "Není spustitelnou položkou"
 
 #: gsearchtool/libeggsmclient/eggsmclient.c:221
 msgid "Disable connection to session manager"
-msgstr "Vypnout spojení se správcem sezení"
+msgstr "Zakázat napojení na správce sezení"
 
 #: gsearchtool/libeggsmclient/eggsmclient.c:224
 msgid "Specify file containing saved configuration"
-msgstr "Stanovit soubor obsahující uloženou konfiguraci"
+msgstr "Vyberte soubor s uloženou konfigurací"
 
 #: gsearchtool/libeggsmclient/eggsmclient.c:224
 msgid "FILE"
@@ -968,7 +977,7 @@ msgstr "SOUBOR"
 
 #: gsearchtool/libeggsmclient/eggsmclient.c:227
 msgid "Specify session management ID"
-msgstr "Stanovit ID Správy sezení"
+msgstr "Zadejte ID správce sezení"
 
 #: gsearchtool/libeggsmclient/eggsmclient.c:227
 msgid "ID"
@@ -976,11 +985,11 @@ msgstr "ID"
 
 #: gsearchtool/libeggsmclient/eggsmclient.c:248
 msgid "Session management options:"
-msgstr "Možnosti Správy sezení:"
+msgstr "Volby správce sezení:"
 
 #: gsearchtool/libeggsmclient/eggsmclient.c:249
 msgid "Show session management options"
-msgstr "Zobrazit možnosti Správy sezení"
+msgstr "Zobrazit volby správce sezení"
 
 #: gsearchtool/src/gsearchtool.c:82
 msgid "Contains the _text"
@@ -1267,7 +1276,7 @@ msgstr "Výsledky hl_edání:"
 
 #: gsearchtool/src/gsearchtool.c:2352
 msgid "List View"
-msgstr "Seznamový pohled"
+msgstr "Zobrazení v seznamu"
 
 #: gsearchtool/src/gsearchtool.c:2412
 #: mate-dictionary/libgdict/gdict-source.c:243
@@ -1367,10 +1376,10 @@ msgstr[3] "Opravdu chcete otevřít %d dokumentů?"
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
-msgstr[0] "Toto otevře %d oddělené okno."
-msgstr[1] "Toto otevře %d oddělená okna."
-msgstr[2] "Toto otevře %d oddělených oken."
-msgstr[3] "Toto otevře %d oddělených oken."
+msgstr[0] "Toto otevře %d samostatné okno."
+msgstr[1] "Toto otevře %d samostatná okna."
+msgstr[2] "Toto otevře %d samostatných oken."
+msgstr[3] "Toto otevře %d samostatných oken."
 
 #: gsearchtool/src/gsearchtool-callbacks.c:396
 #, c-format
@@ -1584,7 +1593,7 @@ msgstr "%s (%d. kopie)%s"
 
 #: gsearchtool/src/gsearchtool-support.c:1356
 msgid " (invalid Unicode)"
-msgstr " (neplatné Unicode)"
+msgstr " (neplatný Unicode)"
 
 #: gsearchtool/src/gsearchtool-support.c:1445
 msgid " ("
@@ -1931,7 +1940,7 @@ msgstr "Větší velikost textu"
 
 #: logview/src/logview-window.c:840
 msgid "Zoom _Out"
-msgstr "_Oddálit"
+msgstr "Z_menšit"
 
 #: logview/src/logview-window.c:840
 msgid "Smaller text size"
@@ -1976,7 +1985,7 @@ msgstr "Zobrazovat stavový řádek"
 
 #: logview/src/logview-window.c:857
 msgid "Side _Pane"
-msgstr "_Postranní lišta"
+msgstr "Postranní _panel"
 
 #: logview/src/logview-window.c:857
 msgid "Show Side Pane"
@@ -2040,6 +2049,10 @@ msgid ""
 " add your own sources, while you can select specific servers for a specific "
 "query."
 msgstr ""
+"Slovník MATE vám umožňuje vyhledávat slova ve slovnících dostupných online. "
+"Má přednastaven seznam serverů se slovníky (dle specifikace RFC 2229) ke "
+"kterým můžete přidat další vlastní zdroje a máte možnost používat specifické"
+" dotazy na specifické servery."
 
 #: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:5
 msgid "Dictionary Applet Factory"
@@ -2759,8 +2772,8 @@ msgid "A definition found"
 msgid_plural "%d definitions found"
 msgstr[0] "Definice nalezena"
 msgstr[1] "%d definice nalezeny"
-msgstr[2] "%d definicí nalezeno"
-msgstr[3] "%d definicí nalezeno"
+msgstr[2] "%d definic nalezeno"
+msgstr[3] "%d definic nalezeno"
 
 #: mate-dictionary/src/gdict-window.c:605
 #, c-format
@@ -2793,7 +2806,7 @@ msgstr "Zobrazit náhled tohoto dokumentu"
 
 #: mate-dictionary/src/gdict-window.c:1298
 msgid "_Print..."
-msgstr "Vy_tisknout…"
+msgstr "_Tisk…"
 
 #: mate-dictionary/src/gdict-window.c:1299
 msgid "Print this document"
@@ -2809,15 +2822,15 @@ msgstr "Najít v dokumentu slovo nebo frázi"
 
 #: mate-dictionary/src/gdict-window.c:1311
 msgid "Find Ne_xt"
-msgstr "Najít _následující"
+msgstr "Hledat _následující"
 
 #: mate-dictionary/src/gdict-window.c:1313
 msgid "Find Pre_vious"
-msgstr "Najít _předchozí"
+msgstr "Hledat _předchozí"
 
 #: mate-dictionary/src/gdict-window.c:1315
 msgid "_Preferences"
-msgstr "Nastavení"
+msgstr "_Předvolby"
 
 #: mate-dictionary/src/gdict-window.c:1319
 msgid "_Previous Definition"
@@ -3053,7 +3066,7 @@ msgstr "Chyba při připojování obrazu disku: %s (%s, %d)"
 
 #: mate-screenshot/data/mate-screenshot.appdata.xml.in:7
 msgid "MATE Screenshot"
-msgstr ""
+msgstr "Snímek obrazovky MATE"
 
 #: mate-screenshot/data/mate-screenshot.appdata.xml.in:8
 msgid "A screenshot utility for MATE Desktop"
@@ -3066,6 +3079,10 @@ msgid ""
 "system clipboard or save them in Portable Network Graphics (.png) image "
 "format."
 msgstr ""
+"Snímek obrazovky MATE je jednoduchý nástroj umožňující pořizování snímků "
+"obrazovky vaší pracovní plochy. Můžete si zvolit zkopírování snímku do "
+"schránky či uložení jako souboru s obrázkem ve formátu Portable Network "
+"Graphics (přípona .png)."
 
 #: mate-screenshot/data/mate-screenshot.desktop.in:3
 #: mate-screenshot/src/mate-screenshot.c:519
@@ -3302,10 +3319,10 @@ msgid ""
 "\n"
 "Please check your installation of mate-utils."
 msgstr ""
-"Chyba při načítání definicí UI souboru pro program zachycení obrazovky chybí:\n"
+"Chyba při načítání definičního souboru uživatelského rozhraní pro program k zachycení obrazovky:\n"
 "%s\n"
 "\n"
-"Zkontrolujte prosím svou instalaci mate-utils"
+"Zkontrolujte prosím svou instalaci mate-utils."
 
 #: mate-screenshot/src/screenshot-dialog.c:228
 msgid "Select a folder"
