@@ -1228,9 +1228,6 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 
 				gboolean icon_done = FALSE;
 
-				g_object_set_data_full (G_OBJECT (new1), "app", (GAppInfo *)list->data,
-			                                g_object_unref);
-
 				if (list_length >= 4) {
 
 					if (g_app_info_get_icon ((GAppInfo *)list->data) != NULL) {
@@ -1289,6 +1286,8 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 				g_free (str);
 				gtk_widget_show (new1);
 
+				g_object_set_data_full (G_OBJECT (new1), "app", (GAppInfo *)list->data,
+			                                g_object_unref);
 			}
 
 			if (list_length >= 2) {
