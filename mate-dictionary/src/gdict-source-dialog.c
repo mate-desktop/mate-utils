@@ -538,6 +538,7 @@ gdict_source_dialog_set_property (GObject      *object,
       dialog->action = (GdictSourceDialogAction) g_value_get_int (value);
       break;
     default:
+      G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
       break;
     }
 }
@@ -562,6 +563,7 @@ gdict_source_dialog_get_property (GObject    *object,
       g_value_set_int (value, dialog->action);
       break;
     default:
+      G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
       break;
     }
 }
