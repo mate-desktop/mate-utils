@@ -556,6 +556,7 @@ gdict_pref_dialog_set_property (GObject      *object,
       set_source_loader (dialog, g_value_get_object (value));
       break;
     default:
+      G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
       break;
     }
 }
@@ -574,6 +575,7 @@ gdict_pref_dialog_get_property (GObject    *object,
       g_value_set_object (value, dialog->loader);
       break;
     default:
+      G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
       break;
     }
 }
