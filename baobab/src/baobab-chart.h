@@ -142,7 +142,7 @@ void baobab_chart_freeze_updates (GtkWidget *chart);
 void baobab_chart_thaw_updates (GtkWidget *chart);
 void baobab_chart_get_item_color (BaobabChartColor *color,
                                   gdouble position,
-                                  gint depth,
+                                  guint depth,
                                   gboolean highlighted);
 void  baobab_chart_move_up_root (GtkWidget *chart);
 void baobab_chart_zoom_in (GtkWidget *chart);

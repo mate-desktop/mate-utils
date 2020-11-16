@@ -92,7 +92,7 @@ struct _BaobabApplication {
 	GVolumeMonitor *monitor_vol;
 	GFileMonitor *monitor_home;
 
-	gint model_max_depth;
+	guint model_max_depth;
 
 	GSettings *ui_settings;
 	GSettings *prefs_settings;
@@ -105,7 +105,7 @@ struct chan_data {
 	guint64 size;
 	guint64 alloc_size;
 	guint64 tempHLsize;
-	guint depth;
+	gint depth;
 	gint elements;
 	gchar *display_name;
 	gchar *parse_name;

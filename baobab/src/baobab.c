@@ -453,7 +453,7 @@ baobab_fill_model (struct chan_data *data)
 
 	hardlinks = g_string_new ("");
 	if (data->tempHLsize > 0) {
-			size = g_format_size (data->tempHLsize);
+		size = g_format_size (data->tempHLsize);
 
 		g_string_assign (hardlinks, "<i>(");
 		g_string_append (hardlinks, _("contains hardlinks for:"));
@@ -1072,7 +1072,7 @@ static void
 on_chart_type_change (GtkWidget *combo, gpointer user_data)
 {
 	GtkWidget *chart;
-	guint active;
+	gint active;
 
 	active = gtk_combo_box_get_active (GTK_COMBO_BOX (combo));
 
