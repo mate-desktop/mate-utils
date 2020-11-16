@@ -102,8 +102,8 @@ on_tv_button_press (GtkWidget *widget,
 	GFile *file;
 
 	gtk_tree_view_get_path_at_pos (GTK_TREE_VIEW (widget),
-				       event->x, event->y,
-				       &path, NULL, NULL, NULL);
+	                               (gint) event->x, (gint) event->y,
+	                               &path, NULL, NULL, NULL);
 	if (!path)
 		return TRUE;
 

@@ -69,7 +69,7 @@ struct _BaobabRingschartPrivate
   guint tips_timeout_event;
   GList *subtip_items;
   gboolean drawing_subtips;
-  gint subtip_timeout;
+  guint subtip_timeout;
 };
 
 G_DEFINE_TYPE_WITH_PRIVATE (BaobabRingschart, baobab_ringschart, BAOBAB_CHART_TYPE);
@@ -132,7 +132,7 @@ baobab_ringschart_init (BaobabRingschart *chart)
 
   settings = gtk_settings_get_default ();
   g_object_get (G_OBJECT (settings), "gtk-tooltip-timeout", &timeout, NULL);
-  priv->subtip_timeout = 2 * timeout;
+  priv->subtip_timeout = 2 * (guint)timeout;
 }
 
 static void
@@ -308,10 +308,10 @@ baobab_ringschart_get_point_min_rect (gdouble cx,
                                       gdouble angle,
                                       GdkRectangle *rect)
 {
-  gdouble x, y;
+  int x, y;
 
-  x = cx + cos (angle) * radius;
-  y = cy + sin (angle) * radius;
+  x = (int) (cx + cos (angle) * radius);
+  y = (int) (cy + sin (angle) * radius);
 
   rect->x = MIN (rect->x, x);
   rect->y = MIN (rect->y, y);
@@ -349,16 +349,16 @@ baobab_ringschart_get_item_rectangle (GtkWidget *chart,
   baobab_ringschart_get_point_min_rect (cx, cy, r2, a2, &rect);
 
   if ( (a1 <= M_PI/2) && (a2 >= M_PI/2) )
-    rect.height = MAX (rect.height, cy + sin (M_PI/2) * r2);
+    rect.height = MAX (rect.height, (int) (cy + sin (M_PI/2) * r2));
 
   if ( (a1 <= M_PI) && (a2 >= M_PI) )
-    rect.x = MIN (rect.x, cx + cos (M_PI) * r2);
+    rect.x = MIN (rect.x, (int) (cx + cos (M_PI) * r2));
 
   if ( (a1 <= M_PI*1.5) && (a2 >= M_PI*1.5) )
-    rect.y = MIN (rect.y, cy + sin (M_PI*1.5) * r2);
+    rect.y = MIN (rect.y, (int) (cy + sin (M_PI*1.5) * r2));
 
   if ( (a1 <= M_PI*2) && (a2 >= M_PI*2) )
-    rect.width = MAX (rect.width, cx + cos (M_PI*2) * r2);
+    rect.width = MAX (rect.width, (int) (cx + cos (M_PI*2) * r2));
 
   rect.width -= rect.x;
   rect.height -= rect.y;
@@ -518,10 +518,10 @@ baobab_ringschart_draw_subfolder_tips (GtkWidget *chart, cairo_t *cr)
         }
 
       /* get the GdkRectangle of the tooltip (with a little padding) */
-      _rect.x = tooltip_rect.x - 1;
-      _rect.y = tooltip_rect.y - 1;
-      _rect.width = tooltip_rect.width + 2;
-      _rect.height = tooltip_rect.height + 2;
+      _rect.x = (int) (tooltip_rect.x - 1.0);
+      _rect.y = (int) (tooltip_rect.y - 1.0);
+      _rect.width = (int) (tooltip_rect.width + 2,0);
+      _rect.height = (int) (tooltip_rect.height + 2.0);
 
       /* Check if tooltip overlaps */
       if (! gdk_rectangle_intersect (&_rect, &last_rect, NULL))

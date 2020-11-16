@@ -377,7 +377,7 @@ baobab_chart_set_property (GObject         *object,
   switch (prop_id)
     {
     case PROP_MAX_DEPTH:
-      baobab_chart_set_max_depth (GTK_WIDGET (chart), g_value_get_int (value));
+      baobab_chart_set_max_depth (GTK_WIDGET (chart), g_value_get_uint (value));
       break;
     case PROP_MODEL:
       baobab_chart_set_model (GTK_WIDGET (chart), g_value_get_object (value));
@@ -404,7 +404,7 @@ baobab_chart_get_property (GObject    *object,
   switch (prop_id)
     {
     case PROP_MAX_DEPTH:
-      g_value_set_int (value, priv->max_depth);
+      g_value_set_uint (value, priv->max_depth);
       break;
     case PROP_MODEL:
       g_value_set_object (value, priv->model);
@@ -747,7 +747,7 @@ baobab_chart_expose (GtkWidget *chart, cairo_t *cr)
 {
   BaobabChartPrivate *priv;
   gint w, h;
-  gdouble p, sx, sy;
+  gdouble p, sx, sy, aux;
   GtkTreePath *root_path = NULL;
   GtkTreePath *current_path = NULL;
   GtkAllocation allocation;
@@ -755,10 +755,18 @@ baobab_chart_expose (GtkWidget *chart, cairo_t *cr)
   GdkRectangle area;
   gdouble x1, y1, x2, y2;
   cairo_clip_extents (cr, &x1, &y1, &x2, &y2);
-  area.x = floor (x1);
-  area.y = floor (y1);
-  area.width = ceil (x2) - area.x;
-  area.height = ceil (y2) - area.y;
+
+  aux = floor (x1);
+  area.x = (int)aux;
+
+  aux = floor (y1);
+  area.y = (int)aux;
+
+  aux = ceil (x2);
+  area.width = (int)aux - area.x;
+
+  aux = ceil (y2);
+  area.height = (int)aux - area.y;
 
   priv = BAOBAB_CHART (chart)->priv;
 
@@ -864,7 +872,7 @@ baobab_chart_interpolate_colors (BaobabChartColor *color,
 void
 baobab_chart_get_item_color (BaobabChartColor *color,
                              gdouble rel_position,
-                             gint depth,
+                             guint depth,
                              gboolean highlighted)
 {
   gdouble intensity;
@@ -880,7 +888,7 @@ baobab_chart_get_item_color (BaobabChartColor *color,
     *color = level_color;
   else
     {
-      color_number = rel_position / (100/3);
+      color_number = (int) (rel_position / (100.0/3.0));
       next_color_number = (color_number + 1) % 6;
 
       baobab_chart_interpolate_colors (color,

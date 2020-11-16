@@ -123,13 +123,13 @@ baobab_cell_renderer_progress_get_size (GtkCellRenderer *cell,
     gtk_cell_renderer_get_alignment (cell, &xalign, &yalign);
     if (x_offset)
     {
-      *x_offset = xalign * (cell_area->width - calc_width);
+      *x_offset = (gint) (xalign * (gfloat) (cell_area->width - calc_width));
       *x_offset = MAX (*x_offset, 0);
     }
 
     if (y_offset)
     {
-      *y_offset = yalign * (cell_area->height - calc_height);
+      *y_offset = (gint) (yalign * (gfloat) (cell_area->height - calc_height));
       *y_offset = MAX (*y_offset, 0);
     }
   }
@@ -223,7 +223,7 @@ baobab_cell_renderer_progress_render (GtkCellRenderer *cell,
   cairo_set_source_rgb (cr, 1, 1, 1);
   cairo_fill (cr);
 
-  perc_w = w * MAX (0, cellprogress->priv->perc) / 100;
+  perc_w = (gint) (w * MAX (0, cellprogress->priv->perc) / 100);
 
   cairo_rectangle (cr, is_rtl ? (x + w - perc_w) : x, y, perc_w, h);
   set_color_according_to_perc (cr, cellprogress->priv->perc);

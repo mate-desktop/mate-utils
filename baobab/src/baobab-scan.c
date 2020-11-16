@@ -125,12 +125,12 @@ baobab_hardlinks_array_free (BaobabHardLinkArray *a)
 	g_array_free (a, TRUE);
 }
 
-#define BLOCK_SIZE 512
+#define BLOCK_SIZE 512UL
 
 struct allsizes {
-	goffset size;
-	goffset alloc_size;
-	gint depth;
+	guint64 size;
+	guint64 alloc_size;
+	guint depth;
 };
 
 static const char *dir_attributes = \
@@ -213,8 +213,10 @@ loopdir (GFile *file,
 
 	parse_name = g_file_get_parse_name (file);
 
-	if (g_file_info_has_attribute (info, G_FILE_ATTRIBUTE_STANDARD_SIZE))
-		retloop.size = g_file_info_get_size (info);
+	if (g_file_info_has_attribute (info, G_FILE_ATTRIBUTE_STANDARD_SIZE)) {
+		goffset file_size = g_file_info_get_size (info);
+		retloop.size = (guint64) file_size;
+	}
 
 	if (g_file_info_has_attribute (info, G_FILE_ATTRIBUTE_UNIX_BLOCKS))
 		retloop.alloc_size = BLOCK_SIZE *
@@ -247,9 +249,9 @@ loopdir (GFile *file,
 	   will be part of the GUI. */
 
 	/* prefill the model */
-	data.size = 1;
-	data.alloc_size = 1;
-	data.depth = count - 1;
+	data.size = 1UL;
+	data.alloc_size = 1UL;
+	data.depth = (gint) count - 1;
 	data.elements = -1;
 	data.display_name = display_name;
 	data.parse_name = parse_name;
@@ -289,9 +291,9 @@ loopdir (GFile *file,
 							    G_FILE_ATTRIBUTE_UNIX_NLINK) > 1) {
 
 				if (!baobab_hardlinks_array_add (hla, temp_info)) {
-
 					/* we already acconted for it */
-					tempHLsize += g_file_info_get_size (temp_info);
+					goffset file_size = g_file_info_get_size (temp_info);
+					tempHLsize += (guint64) file_size;
 					g_object_unref (temp_info);
 					continue;
 				}
@@ -321,7 +323,7 @@ loopdir (GFile *file,
 	data.parse_name = parse_name;
 	data.size = retloop.size;
 	data.alloc_size = retloop.alloc_size;
-	data.depth = count - 1;
+	data.depth = (gint) count - 1;
 	data.elements = elements;
 	data.tempHLsize = tempHLsize;
 	baobab_fill_model (&data);

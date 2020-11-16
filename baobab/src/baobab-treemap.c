@@ -284,17 +284,17 @@ baobab_treemap_get_item_rectangle (GtkWidget *chart,
 
   _rect = (cairo_rectangle_t *) item->data;
 
-  item->rect.x = _rect->x;
-  item->rect.y = _rect->y;
+  item->rect.x = (int) _rect->x;
+  item->rect.y = (int) _rect->y;
   if (item->depth % 2 != 0)
     {
-      item->rect.width = _rect->width - ITEM_PADDING;
-      item->rect.height = _rect->height;
+      item->rect.width = (int) _rect->width - ITEM_PADDING;
+      item->rect.height = (int) _rect->height;
     }
   else
     {
-      item->rect.width = _rect->width;
-      item->rect.height = _rect->height - ITEM_PADDING;
+      item->rect.width = (int) _rect->width;
+      item->rect.height = (int) _rect->height - ITEM_PADDING;
     }
 
 }

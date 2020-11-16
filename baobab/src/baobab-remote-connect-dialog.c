@@ -564,10 +564,6 @@ port_insert_text (GtkEditable *editable,
 {
 	int pos;
 
-	if (new_text_length < 0) {
-		new_text_length = strlen (new_text);
-	}
-
 	/* Only allow digits to be inserted as port number */
 	for (pos = 0; pos < new_text_length; pos++) {
 		if (!g_ascii_isdigit (new_text[pos])) {
