@@ -89,7 +89,7 @@ gdict_arg_no_debug_cb (const char *key,
                            G_N_ELEMENTS (gdict_debug_keys));
   return TRUE;
 }
-#endif /* CLUTTER_ENABLE_DEBUG */
+#endif /* GDICT_ENABLE_DEBUG */
 
 static GOptionEntry gdict_args[] = {
 #ifdef GDICT_ENABLE_DEBUG
