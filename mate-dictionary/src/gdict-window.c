@@ -1258,11 +1258,11 @@ gdict_window_cmd_escape (GtkAction   *action,
 
 static const GtkActionEntry entries[] =
 {
-  { "File", NULL, N_("_File") },
-  { "Edit", NULL, N_("_Edit") },
-  { "View", NULL, N_("_View") },
-  { "Go", NULL, N_("_Go") },
-  { "Help", NULL, N_("_Help") },
+  { "File", NULL, N_("_File"), NULL, NULL, NULL },
+  { "Edit", NULL, N_("_Edit"), NULL, NULL, NULL },
+  { "View", NULL, N_("_View"), NULL, NULL, NULL },
+  { "Go",   NULL, N_("_Go"),   NULL, NULL, NULL },
+  { "Help", NULL, N_("_Help"), NULL, NULL, NULL },
 
   /* File menu */
   { "FileNew", "document-new", N_("_New"), "<control>N",
