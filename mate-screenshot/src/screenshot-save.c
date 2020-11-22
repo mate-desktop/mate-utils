@@ -178,12 +178,12 @@ signal_handler (int sig)
 
 void
 screenshot_save_start (GdkPixbuf    *pixbuf,
-		       SaveFunction  callback,
-		       gpointer      user_data)
+                       SaveFunction  callback,
+                       gpointer      user_data)
 {
   GPid pid;
-  int parent_exit_notification[2];
-  int pipe_from_child[2];
+  int  parent_exit_notification[2];
+  int  pipe_from_child[2];
 
   if (pipe (parent_exit_notification) == -1)
     perror("pipe error");
@@ -196,8 +196,8 @@ screenshot_save_start (GdkPixbuf    *pixbuf,
     return;
 
   tmp_filename = g_build_filename (parent_dir,
-		  		   _("Screenshot.png"),
-				   NULL);
+                                   _("Screenshot.png"),
+                                   NULL);
   save_callback = callback;
   save_user_data = user_data;
 
@@ -214,18 +214,22 @@ screenshot_save_start (GdkPixbuf    *pixbuf,
       close (pipe_from_child [0]);
 
       if (! gdk_pixbuf_save (pixbuf, tmp_filename,
-			     "png", &error,
-			     "tEXt::Software", "mate-screenshot",
-			     NULL))
-	{
-	  if (error && error->message)
-	    if (write (pipe_from_child[1], error->message, strlen (error->message)) == -1)
-              perror("write error");
-	  else
+                             "png", &error,
+                             "tEXt::Software", "mate-screenshot",
+                             NULL))
+        {
+          if (error && error->message)
+            {
+              if (write (pipe_from_child[1], error->message, strlen (error->message)) == -1)
+                perror("write error");
+            }
+          else
+            {
 #define ERROR_MESSAGE _("Unknown error saving screenshot to disk")
-	    if (write (pipe_from_child[1], ERROR_MESSAGE, strlen (ERROR_MESSAGE)) == -1)
-              perror("write error");
-	}
+              if (write (pipe_from_child[1], ERROR_MESSAGE, strlen (ERROR_MESSAGE)) == -1)
+                perror("write error");
+            }
+        }
       /* By closing the pipe, we let the main process know that we're
        * done saving it. */
       close (pipe_from_child[1]);
@@ -245,9 +249,9 @@ screenshot_save_start (GdkPixbuf    *pixbuf,
 
       channel = g_io_channel_unix_new (pipe_from_child[0]);
       g_io_add_watch (channel,
-		      G_IO_IN | G_IO_ERR | G_IO_HUP | G_IO_NVAL,
-		      read_pipe_from_child,
-		      NULL);
+                      G_IO_IN | G_IO_ERR | G_IO_HUP | G_IO_NVAL,
+                      read_pipe_from_child,
+                      NULL);
       g_io_channel_unref (channel);
       g_child_watch_add (pid, child_done_notification, NULL);
     }
