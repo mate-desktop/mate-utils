@@ -1,32 +1,29 @@
-/* Baobab - (C) 2005 Fabio Marzocca
-
-	baobab-remote-connect-dialog.c
-
-   Modified module from caja-connect-server-dialog.c
-   Released under same licence
- */
-/*
- * Caja
+/* Copyright (C) 2005 Fabio Marzocca
  *
+ * Modified module from caja-connect-server-dialog.c.
+ * Released under same licence.
  * Copyright (C) 2003 Red Hat, Inc.
  *
- * Caja is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation; either version 2 of the
- * License, or (at your option) any later version.
+ * This file is part of MATE Utils.
  *
- * Caja is distributed in the hope that it will be useful,
+ * MATE Utils is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * MATE Utils is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
  *
- * You should have received a copy of the GNU General Public
- * License along with this program; see the file COPYING.  If not,
- * write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
- * Boston, MA 02110-1301, USA.
+ * You should have received a copy of the GNU General Public License
+ * along with MATE Utils.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+#ifdef HAVE_CONFIG_H
 #include <config.h>
+#endif
+
 #include "baobab-remote-connect-dialog.h"
 
 #include <string.h>
