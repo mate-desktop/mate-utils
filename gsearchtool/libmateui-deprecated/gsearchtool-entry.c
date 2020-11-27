@@ -1,30 +1,24 @@
-/*
- * gsearchtool-entry.c
+/* Copyright (C) 2009 Dennis Cranston
  *
  * This file was modified from gedit (gedit-history-entry.c).
+ * Copyright (C) Paolo Borelli
  *
- * Copyright (C) 2009 - Dennis Cranston
- * Copyright (C) 2006 - Paolo Borelli
+ * This file is part of MATE Utils.
  *
- * This program is free software; you can redistribute it and/or modify
+ * MATE Utils is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation, either version 2 of the License, or
  * (at your option) any later version.
  *
- * This program is distributed in the hope that it will be useful,
+ * MATE Utils is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor,
- * Boston, MA 02110-1301, USA.
+ * along with MATE Utils.  If not, see <https://www.gnu.org/licenses/>.
  *
- * Author: Paolo Borelli  (gedit-history-entry.c)
- *
- * Gsearchtool port by Dennis Cranston <dennis_cranston@yahoo.com>
- *
+ * Author: Paolo Borelli
  */
 
 #ifdef HAVE_CONFIG_H
