@@ -1701,14 +1701,14 @@ static void
 gdict_defbox_real_find_next (GdictDefbox *defbox)
 {
   /* synthetize a "clicked" signal to the "next" button */
-  gtk_button_clicked (GTK_BUTTON (defbox->priv->find_next));
+  g_signal_emit_by_name (GTK_BUTTON (defbox->priv->find_next), "clicked");
 }
 
 static void
 gdict_defbox_real_find_previous (GdictDefbox *defbox)
 {
   /* synthetize a "clicked" signal to the "prev" button */
-  gtk_button_clicked (GTK_BUTTON (defbox->priv->find_prev));
+  g_signal_emit_by_name (GTK_BUTTON (defbox->priv->find_prev), "clicked");
 }
 
 static void
