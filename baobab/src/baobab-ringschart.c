@@ -517,7 +517,7 @@ baobab_ringschart_draw_subfolder_tips (GtkWidget *chart, cairo_t *cr)
       /* get the GdkRectangle of the tooltip (with a little padding) */
       _rect.x = (int) (tooltip_rect.x - 1.0);
       _rect.y = (int) (tooltip_rect.y - 1.0);
-      _rect.width = (int) (tooltip_rect.width + 2,0);
+      _rect.width = (int) (tooltip_rect.width + 2.0);
       _rect.height = (int) (tooltip_rect.height + 2.0);
 
       /* Check if tooltip overlaps */
