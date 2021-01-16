@@ -82,7 +82,7 @@ gdict_show_about_dialog (GtkWidget *parent)
   			 "version", VERSION,
 			 "title", _("About Dictionary"),
 			 "copyright", _("Copyright \xc2\xa9 2005-2006 Emmanuele Bassi\n"
-			                "Copyright \xc2\xa9 2011-2020 MATE developers"),
+			                "Copyright \xc2\xa9 2011-2021 MATE developers"),
   			 "comments", comments,
   			 "authors", authors,
   			 "documenters", documenters,

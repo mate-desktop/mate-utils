@@ -44,8 +44,9 @@ app_quit_cb (LogviewApp *app,
 static void
 logview_show_version_and_quit (void)
 {
-  g_print ("%s - Version %s\n"
-           "Copyright (C) 2004-2008 Vincent Noel, Cosimo Cecchi and others.\n",
+  g_print (_("%s - Version %s\n"
+             "Copyright (C) 2004-2008 Vincent Noel, Cosimo Cecchi and others.\n"
+             "Copyright (C) 2011-2021 MATE developers.\n"),
            g_get_application_name (),
            VERSION);
 
