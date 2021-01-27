@@ -31,7 +31,9 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <errno.h>
+#ifdef ENABLE_NLS
 #include <locale.h>
+#endif /* ENABLE_NLS */
 #include <glib/gi18n.h>
 #include <gio/gio.h>
 #include <pwd.h>
@@ -1321,10 +1323,12 @@ main (int argc, char *argv[])
     { NULL },
   };
 
+#ifdef ENABLE_NLS
   setlocale (LC_ALL, "");
   bindtextdomain (GETTEXT_PACKAGE, MATELOCALEDIR);
   bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
   textdomain (GETTEXT_PACKAGE);
+#endif /* ENABLE_NLS */
 
   context = g_option_context_new (_("Take a picture of the screen"));
   g_option_context_set_ignore_unknown_options (context, FALSE);

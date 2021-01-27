@@ -16,8 +16,13 @@
 mate_screenshotdir  = $(datadir)/applications
 mate_screenshot_in_files = mate-screenshot.desktop.in
 mate_screenshot_DATA = $(mate_screenshot_in_files:.desktop.in=.desktop)
+
 $(mate_screenshot_DATA): $(mate_screenshot_in_files)
+if USE_NLS
 	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
+else
+	$(AM_V_GEN) cp $< $@
+endif
 
 man_MANS = mate-screenshot.1
 
@@ -25,7 +30,11 @@ appdatadir = $(datadir)/metainfo
 appdata_in_files = mate-screenshot.appdata.xml.in
 appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 $(appdata_DATA): $(appdata_in_files)
+if USE_NLS
 	$(AM_V_GEN) $(MSGFMT) --xml --template $< -d $(top_srcdir)/po -o $@
+else
+	$(AM_V_GEN) cp $< $@
+endif
 
 gsettings_SCHEMAS = org.mate.screenshot.gschema.xml
 @GSETTINGS_RULES@

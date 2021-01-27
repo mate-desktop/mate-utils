@@ -40,7 +40,10 @@
 #include <glib/gi18n.h>
 #include <gdk/gdk.h>
 #include <gio/gio.h>
+
+#ifdef ENABLE_NLS
 #include <locale.h>
+#endif /* ENABLE_NLS */
 
 #include "gsearchtool.h"
 #include "gsearchtool-callbacks.h"
@@ -3047,13 +3050,17 @@ main (int argc,
 	GError * error = NULL;
 	EggSMClient * client;
 
+#ifdef ENABLE_NLS
 	setlocale (LC_ALL, "");
 	bindtextdomain (GETTEXT_PACKAGE, MATELOCALEDIR);
 	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 	textdomain (GETTEXT_PACKAGE);
+#endif /* ENABLE_NLS */
 
 	context = g_option_context_new (N_("- the MATE Search Tool"));
+#ifdef ENABLE_NLS
 	g_option_context_set_translation_domain(context, GETTEXT_PACKAGE);
+#endif /* ENABLE_NLS */
 	gsearch_setup_goption_descriptions ();
 	g_option_context_add_main_entries (context, GSearchGOptionEntries, GETTEXT_PACKAGE);
 	g_option_context_add_group (context, gtk_get_option_group (TRUE));

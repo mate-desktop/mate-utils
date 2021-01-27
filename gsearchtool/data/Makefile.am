@@ -24,16 +24,26 @@ gsettings_SCHEMAS = $(gsettingsschema_in_files:.xml.in=.xml)
 appdatadir = $(datadir)/metainfo
 appdata_in_files = mate-search-tool.appdata.xml.in
 appdata_DATA = $(appdata_in_files:.xml.in=.xml)
+
 $(appdata_DATA): $(appdata_in_files)
+if USE_NLS
 	$(AM_V_GEN) $(MSGFMT) --xml --template $< -d $(top_srcdir)/po -o $@
+else
+	$(AM_V_GEN) cp $< $@
+endif
 
 man_MANS = mate-search-tool.1
 
 Utilitiesdir = $(datadir)/applications
 Utilities_in_files = mate-search-tool.desktop.in
 Utilities_DATA = $(Utilities_in_files:.desktop.in=.desktop)
+
 $(Utilities_DATA): $(Utilities_in_files)
+if USE_NLS
 	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
+else
+	$(AM_V_GEN) cp $< $@
+endif
 
 EXTRA_DIST = \
 	$(icon_DATA) \

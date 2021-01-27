@@ -318,8 +318,10 @@ AS_IF([test "x$enable_zlib" != "xno"],
 AC_SUBST(Z_LIBS)
 
 dnl Internationalization
-AM_GNU_GETTEXT_VERSION([0.19.8])
 AM_GNU_GETTEXT([external])
+AM_GNU_GETTEXT_VERSION([0.19.8])
+AM_GNU_GETTEXT_REQUIRE_VERSION([0.19.8])
+AM_CONDITIONAL([USE_NLS], [test "x${USE_NLS}" = "xyes"])
 
 GETTEXT_PACKAGE=AC_PACKAGE_NAME
 AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE], "$GETTEXT_PACKAGE", [Define the gettext package to use])
@@ -409,4 +411,5 @@ mate-utils $VERSION configuration summary:
       API Reference (libmatedict) : $enable_gtk_doc
   Logview built with ZLib support : $msg_zlib
      Dictionary mate-panel applet : $enable_gdict_applet
+          Native Language support : ${USE_NLS}
 "

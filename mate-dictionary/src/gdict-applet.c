@@ -1191,8 +1191,10 @@ gdict_applet_factory (MatePanelApplet *applet,
     {
       /* Set up the menu */
       priv->context_menu_action_group = gtk_action_group_new ("Dictionary Applet Actions");
+#ifdef ENABLE_NLS
       gtk_action_group_set_translation_domain(priv->context_menu_action_group,
                                               GETTEXT_PACKAGE);
+#endif /* ENABLE_NLS */
       gtk_action_group_add_actions(priv->context_menu_action_group,
 								gdict_applet_menu_actions,
 								G_N_ELEMENTS (gdict_applet_menu_actions),
