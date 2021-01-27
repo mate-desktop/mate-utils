@@ -67,7 +67,9 @@ create_option_context (void)
   };
 
   context = g_option_context_new (_(" - Browse and monitor logs"));
+#ifdef ENABLE_NLS
   g_option_context_set_translation_domain (context, GETTEXT_PACKAGE);
+#endif /* ENABLE_NLS */
   g_option_context_add_main_entries (context, entries, GETTEXT_PACKAGE);
   g_option_context_set_ignore_unknown_options (context, TRUE);
   g_option_context_add_group (context, gtk_get_option_group (TRUE));
@@ -82,9 +84,11 @@ main (int argc, char *argv[])
   GOptionContext *context;
   LogviewApp *app;
 
+#ifdef ENABLE_NLS
   bindtextdomain (GETTEXT_PACKAGE, MATELOCALEDIR);
   bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
   textdomain (GETTEXT_PACKAGE);
+#endif /* ENABLE_NLS */
 
   context = create_option_context ();
 

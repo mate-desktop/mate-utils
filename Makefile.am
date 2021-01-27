@@ -20,8 +20,12 @@ distcleancheck_listfiles = find . -type f -print | grep -v 'omf\.out' | grep -v 
 
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
+if USE_NLS
+PO_SUBDIR = po
+endif
+
 SUBDIRS = 			\
-	po			\
+	$(PO_SUBDIR)		\
 	baobab			\
 	mate-dictionary		\
 	mate-screenshot		\

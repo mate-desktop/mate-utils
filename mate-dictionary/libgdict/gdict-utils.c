@@ -156,7 +156,9 @@ gdict_get_option_group (void)
 
   g_option_group_set_parse_hooks (group, pre_parse_hook, post_parse_hook);
   g_option_group_add_entries (group, gdict_args);
+#ifdef ENABLE_NLS
   g_option_group_set_translation_domain (group, GETTEXT_PACKAGE);
+#endif /* ENABLE_NLS */
 
   return group;
 }

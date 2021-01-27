@@ -33,7 +33,11 @@ dictsource_in_files = \
 dictsource_DATA = $(dictsource_in_files:.desktop.in=.desktop)
 
 %.desktop: %.desktop.in
+if USE_NLS
 	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
+else
+	$(AM_V_GEN) cp $< $@
+endif
 
 builderdir = $(datadir)/mate-dictionary
 builder_DATA = \
@@ -57,7 +61,11 @@ $(applet_in_files): $(applet_in_files).in Makefile
 		$< > $@
 
 $(applet_DATA): $(applet_in_files) Makefile
+if USE_NLS
 	$(AM_V_GEN) $(MSGFMT) --desktop --keyword=Name --keyword=Description --template $< -d $(top_srcdir)/po -o $@
+else
+	$(AM_V_GEN) cp $< $@
+endif
 
 servicedir = $(datadir)/dbus-1/services
 service_in_files = org.mate.panel.applet.DictionaryAppletFactory.service.in
@@ -75,8 +83,13 @@ endif # BUILD_GDICT_APPLET
 appdatadir = $(datadir)/metainfo
 appdata_in_files = mate-dictionary.appdata.xml.in
 appdata_DATA = $(appdata_in_files:.xml.in=.xml)
+
 $(appdata_DATA): $(appdata_in_files)
+if USE_NLS
 	$(AM_V_GEN) $(MSGFMT) --xml --template $< -d $(top_srcdir)/po -o $@
+else
+	$(AM_V_GEN) cp $< $@
+endif
 
 gsettings_SCHEMAS = org.mate.dictionary.gschema.xml
 @GSETTINGS_RULES@

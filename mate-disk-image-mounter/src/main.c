@@ -158,9 +158,11 @@ main (int argc, char *argv[])
   GSList *uris = NULL;
   GSList *l;
 
+#ifdef ENABLE_NLS
   bindtextdomain (GETTEXT_PACKAGE, MATELOCALEDIR);
   bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
   textdomain (GETTEXT_PACKAGE);
+#endif /* ENABLE_NLS */
 
   have_gtk = gtk_init_check (&argc, &argv);
 

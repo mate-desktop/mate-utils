@@ -341,7 +341,9 @@ gdict_init (int *argc, char ***argv)
   /* create the new option context */
   context = g_option_context_new (_(" - Look up words in dictionaries"));
 
+#ifdef ENABLE_NLS
   g_option_context_set_translation_domain (context, GETTEXT_PACKAGE);
+#endif /* ENABLE_NLS */
   g_option_context_add_main_entries (context, gdict_app_goptions, GETTEXT_PACKAGE);
   g_option_context_add_group (context, gdict_get_option_group ());
   g_option_context_add_group (context, gtk_get_option_group (TRUE));
