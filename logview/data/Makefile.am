@@ -24,7 +24,7 @@ $(desktop_in_files): $(desktop_in_files:.desktop.in=.desktop.in.in)
 
 $(desktop_DATA): $(desktop_in_files)
 if USE_NLS
-	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
+	$(AM_V_GEN) $(MSGFMT) --desktop --keyword= --keyword=Name --keyword=Comment --keyword=Keywords --template $< -d $(top_srcdir)/po -o $@
 else
 	$(AM_V_GEN) cp $< $@
 endif
