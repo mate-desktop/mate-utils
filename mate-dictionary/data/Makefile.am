@@ -24,6 +24,13 @@ gdictapp_DATA = $(gdictapp_in_files:.desktop.in=.desktop)
 $(gdictapp_in_files): $(gdictapp_in_files:.desktop.in=.desktop.in.in)
 	$(AM_V_GEN)sed -e "s|\@VERSION\@|@VERSION@|" $< > $@
 
+$(gdictapp_DATA): $(gdictapp_in_files)
+if USE_NLS
+	$(AM_V_GEN) $(MSGFMT) --desktop --keyword= --keyword=Name --keyword=Comment --keyword=Keywords --template $< -d $(top_srcdir)/po -o $@
+else
+	$(AM_V_GEN) cp $< $@
+endif
+
 # dictionary sources definitions
 dictsourcedir = $(datadir)/mate-dict/sources
 dictsource_in_files = \
@@ -32,9 +39,9 @@ dictsource_in_files = \
 	$(NULL)
 dictsource_DATA = $(dictsource_in_files:.desktop.in=.desktop)
 
-%.desktop: %.desktop.in
+$(dictsource_DATA): $(dictsource_in_files)
 if USE_NLS
-	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
+	$(AM_V_GEN) $(MSGFMT) --desktop --keyword= --keyword=Name --keyword=Description --template $< -d $(top_srcdir)/po -o $@
 else
 	$(AM_V_GEN) cp $< $@
 endif
