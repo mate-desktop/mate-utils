@@ -71,7 +71,7 @@ static GQuark sidebar_page_id_quark = 0;
 
 G_DEFINE_TYPE_WITH_PRIVATE (GdictSidebar, gdict_sidebar, GTK_TYPE_BOX);
 
-SidebarPage *
+static SidebarPage *
 sidebar_page_new (const gchar *id,
 		  const gchar *name,
 		  GtkWidget   *widget)
@@ -89,7 +89,7 @@ sidebar_page_new (const gchar *id,
   return page;
 }
 
-void
+static void
 sidebar_page_free (SidebarPage *page)
 {
   if (G_LIKELY (page))

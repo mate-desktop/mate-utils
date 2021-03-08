@@ -363,7 +363,7 @@ baobab_ringschart_get_item_rectangle (GtkWidget *chart,
   item->rect = rect;
 }
 
-gboolean
+static gboolean
 baobab_ringschart_subfolder_tips_timeout (gpointer data)
 {
   BaobabRingschartPrivate *priv;
@@ -377,7 +377,7 @@ baobab_ringschart_subfolder_tips_timeout (gpointer data)
   return FALSE;
 }
 
-void
+static void
 baobab_ringschart_clean_subforlder_tips_state (GtkWidget *chart)
 {
   BaobabRingschartPrivate *priv;

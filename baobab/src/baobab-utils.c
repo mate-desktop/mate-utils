@@ -69,7 +69,7 @@ baobab_get_filesystem (BaobabFS *fs)
 	g_free (mountentries);
 }
 
-void
+static void
 filechooser_cb (GtkWidget *chooser,
                 gint response,
                 gpointer data)

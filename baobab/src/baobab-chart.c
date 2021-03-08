@@ -1170,7 +1170,7 @@ baobab_chart_query_tooltip (GtkWidget  *widget,
   return TRUE;
 }
 
-GdkPixbuf*
+static GdkPixbuf*
 baobab_chart_get_pixbuf (GtkWidget *widget)
 {
   gint w, h;
