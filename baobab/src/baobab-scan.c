@@ -28,7 +28,7 @@
 
 #include "baobab.h"
 #include "baobab-utils.h"
-
+#include "baobab-scan.h"
 
 /*
    Hardlinks handling.
