@@ -9,9 +9,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-utils 1.23.1\n"
+"Project-Id-Version: mate-utils 1.25.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
-"POT-Creation-Date: 2020-01-13 16:47+0100\n"
+"POT-Creation-Date: 2021-01-16 13:52+0100\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2019\n"
 "Language-Team: Irish (https://www.transifex.com/mate/teams/13566/ga/)\n"
@@ -30,27 +30,34 @@ msgstr ""
 msgid "Check folder sizes and available disk space"
 msgstr "Seiceáil méideanna fillteán agus spás diosca le fáil"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: baobab/data/mate-disk-usage-analyzer.desktop.in.in:8
-msgid "mate-disk-usage-analyzer"
-msgstr ""
-
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: baobab/data/mate-disk-usage-analyzer.desktop.in.in:14
 msgid "MATE;check;disk;usage;analyze;size;space;"
 msgstr ""
 
-#: baobab/data/baobab-dialog-scan-props.ui:8
+#: baobab/data/baobab-dialog-scan-props.ui:18
 msgid "Disk Usage Analyzer Preferences"
 msgstr "Sainroghanna Anailíseoir Úsáid Diosca"
 
-#: baobab/data/baobab-dialog-scan-props.ui:80
+#: baobab/data/baobab-dialog-scan-props.ui:32
+#: baobab/data/baobab-main-window.ui:129 logview/src/logview-window.c:824
+#: mate-dictionary/src/gdict-applet.c:1172
+#: mate-dictionary/src/gdict-window.c:1261
+#: mate-screenshot/data/mate-screenshot.ui:54
+msgid "_Help"
+msgstr "Cab_hair"
+
+#: baobab/data/baobab-dialog-scan-props.ui:48 logview/src/logview-window.c:828
+#: mate-dictionary/src/gdict-window.c:1272
+msgid "_Close"
+msgstr "_Dún"
+
+#: baobab/data/baobab-dialog-scan-props.ui:81
 msgid "Select _devices to include in filesystem scan:"
 msgstr "Roghnaigh _gléasanna le cur san áireamh do scanadh an chórais comhad:"
 
-#: baobab/data/baobab-dialog-scan-props.ui:149
+#: baobab/data/baobab-dialog-scan-props.ui:119
 msgid "_Monitor changes to your home folder"
 msgstr "Déan _monatóireacht ar athruithe d'fhillteáin baile"
 
@@ -74,8 +81,8 @@ msgstr "Scan _Fillteán..."
 msgid "S_can Remote Folder..."
 msgstr "Scan Fillteán C_ianda..."
 
-#: baobab/data/baobab-main-window.ui:74 logview/src/logview-window.c:819
-#: mate-dictionary/src/gdict-window.c:1286
+#: baobab/data/baobab-main-window.ui:74 logview/src/logview-window.c:821
+#: mate-dictionary/src/gdict-window.c:1258
 msgid "_Edit"
 msgstr "_Eagar"
 
@@ -87,8 +94,8 @@ msgstr "_Leathnaigh Uile"
 msgid "_Collapse All"
 msgstr "L_aghdaigh Uile"
 
-#: baobab/data/baobab-main-window.ui:101 logview/src/logview-window.c:820
-#: mate-dictionary/src/gdict-window.c:1287
+#: baobab/data/baobab-main-window.ui:101 logview/src/logview-window.c:822
+#: mate-dictionary/src/gdict-window.c:1259
 msgid "_View"
 msgstr "_Amharc"
 
@@ -104,19 +111,13 @@ msgstr "Barra S_tádais"
 msgid "All_ocated Space"
 msgstr "Spás _Dáilte"
 
-#: baobab/data/baobab-main-window.ui:129 logview/src/logview-window.c:822
-#: mate-dictionary/src/gdict-applet.c:1183
-#: mate-dictionary/src/gdict-window.c:1289
-msgid "_Help"
-msgstr "Cab_hair"
-
-#: baobab/data/baobab-main-window.ui:136 logview/src/logview-window.c:848
-#: mate-dictionary/src/gdict-window.c:1339
+#: baobab/data/baobab-main-window.ui:136 logview/src/logview-window.c:850
+#: mate-dictionary/src/gdict-window.c:1311
 msgid "_Contents"
 msgstr "_Inneachar"
 
-#: baobab/data/baobab-main-window.ui:183 baobab/src/baobab.c:1236
-#: baobab/src/callbacks.c:107
+#: baobab/data/baobab-main-window.ui:183 baobab/src/baobab.c:1234
+#: baobab/src/callbacks.c:102
 msgid "Disk Usage Analyzer"
 msgstr "Anailíseoir Úsáid Diosca"
 
@@ -226,27 +227,27 @@ msgid ""
 "changes to the home directory and warn the user if a file is added/removed."
 msgstr ""
 
-#: baobab/src/baobab.c:137 baobab/src/baobab.c:357
+#: baobab/src/baobab.c:140 baobab/src/baobab.c:357
 msgid "Scanning..."
 msgstr "Á scanadh..."
 
-#: baobab/src/baobab.c:183
+#: baobab/src/baobab.c:185
 msgid "Total filesystem capacity:"
 msgstr "Toilleadh an chórais comhad iomlán:"
 
-#: baobab/src/baobab.c:184
+#: baobab/src/baobab.c:186
 msgid "used:"
 msgstr "úsáidte:"
 
-#: baobab/src/baobab.c:185
+#: baobab/src/baobab.c:187
 msgid "available:"
 msgstr "ar fáil:"
 
-#: baobab/src/baobab.c:242 baobab/src/baobab.c:299 baobab/src/callbacks.c:272
+#: baobab/src/baobab.c:242 baobab/src/baobab.c:299 baobab/src/callbacks.c:267
 msgid "Calculating percentage bars..."
 msgstr ""
 
-#: baobab/src/baobab.c:253 baobab/src/baobab.c:1300 baobab/src/callbacks.c:276
+#: baobab/src/baobab.c:253 baobab/src/baobab.c:1297 baobab/src/callbacks.c:271
 msgid "Ready"
 msgstr "Réidh"
 
@@ -280,47 +281,47 @@ msgstr ""
 msgid "Changes to your home folder will not be monitored."
 msgstr ""
 
-#: baobab/src/baobab.c:914
+#: baobab/src/baobab.c:912
 msgid "Move to parent folder"
 msgstr "Bog go máthairfhillteán"
 
-#: baobab/src/baobab.c:918
+#: baobab/src/baobab.c:916
 msgid "Zoom in"
 msgstr "Súmáil isteach"
 
-#: baobab/src/baobab.c:922
+#: baobab/src/baobab.c:920
 msgid "Zoom out"
 msgstr "Súmáil amach"
 
-#: baobab/src/baobab.c:926
+#: baobab/src/baobab.c:924
 msgid "Save screenshot"
 msgstr ""
 
-#: baobab/src/baobab.c:1112
+#: baobab/src/baobab.c:1110
 msgid "View as Rings Chart"
 msgstr "Amharc mar Chairt Fháinní"
 
-#: baobab/src/baobab.c:1114
+#: baobab/src/baobab.c:1112
 msgid "View as Treemap Chart"
 msgstr "Amharc mar Chairt Mhapa Crainn"
 
-#: baobab/src/baobab.c:1225
+#: baobab/src/baobab.c:1223
 msgid "Show version"
 msgstr "Taispeáin leagan"
 
-#: baobab/src/baobab.c:1226
+#: baobab/src/baobab.c:1224
 msgid "[DIRECTORY]"
 msgstr "[COMHADLANN]"
 
-#: baobab/src/baobab.c:1256
+#: baobab/src/baobab.c:1254
 msgid "Too many arguments. Only one directory can be specified."
 msgstr ""
 
-#: baobab/src/baobab.c:1273
+#: baobab/src/baobab.c:1271
 msgid "Could not detect any mount point."
 msgstr "Níorbh fhéidir aon phointe fheistithe a bhrath."
 
-#: baobab/src/baobab.c:1275
+#: baobab/src/baobab.c:1273
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr ""
 
@@ -348,127 +349,127 @@ msgstr ""
 msgid "Set the root node from the model"
 msgstr ""
 
-#: baobab/src/baobab-chart.c:1704
+#: baobab/src/baobab-chart.c:1712
 msgid "Cannot create pixbuf image!"
 msgstr ""
 
-#: baobab/src/baobab-chart.c:1714
+#: baobab/src/baobab-chart.c:1722
 msgid "Save Snapshot"
 msgstr "Sábháil Alaghraf"
 
-#: baobab/src/baobab-chart.c:1741
+#: baobab/src/baobab-chart.c:1749
 msgid "_Image type:"
 msgstr "Cineál í_omhá:"
 
-#: baobab/src/baobab-prefs.c:172
+#: baobab/src/baobab-prefs.c:170
 msgid "Scan"
 msgstr "Scan"
 
-#: baobab/src/baobab-prefs.c:179
+#: baobab/src/baobab-prefs.c:177
 msgid "Device"
 msgstr "Gléas"
 
-#: baobab/src/baobab-prefs.c:187
+#: baobab/src/baobab-prefs.c:185
 msgid "Mount Point"
 msgstr "Pointe Feistithe"
 
-#: baobab/src/baobab-prefs.c:195
+#: baobab/src/baobab-prefs.c:193
 msgid "Filesystem Type"
 msgstr "Cineál an Chórais Comhad"
 
-#: baobab/src/baobab-prefs.c:203
+#: baobab/src/baobab-prefs.c:201
 msgid "Total Size"
 msgstr "Méid Iomlán"
 
-#: baobab/src/baobab-prefs.c:212
+#: baobab/src/baobab-prefs.c:210
 msgid "Available"
 msgstr "Ar Fáil"
 
-#: baobab/src/baobab-remote-connect-dialog.c:72
+#: baobab/src/baobab-remote-connect-dialog.c:69
 #, c-format
 msgid "Cannot scan location \"%s\""
 msgstr ""
 
-#: baobab/src/baobab-remote-connect-dialog.c:170
+#: baobab/src/baobab-remote-connect-dialog.c:167
 msgid "Custom Location"
 msgstr "Suíomh Saincheaptha"
 
-#: baobab/src/baobab-remote-connect-dialog.c:172
+#: baobab/src/baobab-remote-connect-dialog.c:169
 msgid "SSH"
 msgstr "SSH"
 
-#: baobab/src/baobab-remote-connect-dialog.c:175
+#: baobab/src/baobab-remote-connect-dialog.c:172
 msgid "Public FTP"
 msgstr "FTP Poiblí"
 
-#: baobab/src/baobab-remote-connect-dialog.c:177
+#: baobab/src/baobab-remote-connect-dialog.c:174
 msgid "FTP (with login)"
 msgstr "FTP (le logáil isteach)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:180
+#: baobab/src/baobab-remote-connect-dialog.c:177
 msgid "Windows share"
 msgstr "Comhroinnt Windows"
 
-#: baobab/src/baobab-remote-connect-dialog.c:182
+#: baobab/src/baobab-remote-connect-dialog.c:179
 msgid "WebDAV (HTTP)"
 msgstr "WebDAV (HTTP)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:184
+#: baobab/src/baobab-remote-connect-dialog.c:181
 msgid "Secure WebDAV (HTTPS)"
 msgstr "WebDAV Daingean (HTTPS)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:244
+#: baobab/src/baobab-remote-connect-dialog.c:241
 msgid "Cannot Connect to Server. You must enter a name for the server."
 msgstr ""
 "Ní féidir Nascadh le Freastalaí. Ní mór duit ainm a iontráil don "
 "fhreastalaí."
 
-#: baobab/src/baobab-remote-connect-dialog.c:247
+#: baobab/src/baobab-remote-connect-dialog.c:244
 msgid "Please enter a name and try again."
 msgstr "Iontráil ainm agus bain triail as arís, le do thoil."
 
-#: baobab/src/baobab-remote-connect-dialog.c:441
+#: baobab/src/baobab-remote-connect-dialog.c:438
 msgid "_Location (URI):"
 msgstr "_Suíomh (URI):"
 
-#: baobab/src/baobab-remote-connect-dialog.c:457
+#: baobab/src/baobab-remote-connect-dialog.c:454
 msgid "_Server:"
 msgstr "_Freastalaí:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:470
+#: baobab/src/baobab-remote-connect-dialog.c:467
 msgid "Optional information:"
 msgstr "Eolas roghnach:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:479
+#: baobab/src/baobab-remote-connect-dialog.c:476
 msgid "_Share:"
 msgstr "_Comhroinn:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:494
+#: baobab/src/baobab-remote-connect-dialog.c:491
 #: mate-dictionary/data/mate-dictionary-source.ui:121
 msgid "_Port:"
 msgstr "_Port:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:508
+#: baobab/src/baobab-remote-connect-dialog.c:505
 msgid "_Folder:"
 msgstr "_Fillteán:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:522
+#: baobab/src/baobab-remote-connect-dialog.c:519
 msgid "_User Name:"
 msgstr "Ainm Ú_sáideora:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:537
+#: baobab/src/baobab-remote-connect-dialog.c:534
 msgid "_Domain Name:"
 msgstr "Ai_nm Fearainn:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:598
+#: baobab/src/baobab-remote-connect-dialog.c:591
 msgid "Connect to Server"
 msgstr "Nasc le Freastalaí"
 
-#: baobab/src/baobab-remote-connect-dialog.c:614
+#: baobab/src/baobab-remote-connect-dialog.c:607
 msgid "Service _type:"
 msgstr "Ci_neál seirbhíse:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:732
+#: baobab/src/baobab-remote-connect-dialog.c:725
 msgid "_Scan"
 msgstr "_Scan"
 
@@ -486,85 +487,85 @@ msgstr ""
 msgid "_Rescan"
 msgstr "_Athscan"
 
-#: baobab/src/baobab-treeview.c:222 gsearchtool/src/gsearchtool.c:2436
+#: baobab/src/baobab-treeview.c:221 gsearchtool/src/gsearchtool.c:2449
 msgid "Folder"
 msgstr "Fillteán"
 
-#: baobab/src/baobab-treeview.c:244
+#: baobab/src/baobab-treeview.c:243
 msgid "Usage"
 msgstr "Úsáid"
 
-#: baobab/src/baobab-treeview.c:258 gsearchtool/src/gsearchtool.c:2449
+#: baobab/src/baobab-treeview.c:257 gsearchtool/src/gsearchtool.c:2462
 msgid "Size"
 msgstr "Méid"
 
-#: baobab/src/baobab-treeview.c:274
+#: baobab/src/baobab-treeview.c:273
 msgid "Contents"
 msgstr "_Inneachar"
 
-#: baobab/src/baobab-utils.c:106
+#: baobab/src/baobab-utils.c:104
 msgid "Select Folder"
 msgstr "Roghnaigh Fillteán"
 
-#: baobab/src/baobab-utils.c:118
+#: baobab/src/baobab-utils.c:116
 msgid "_Show hidden folders"
 msgstr "_Taispeáin fillteáin folaithe"
 
-#: baobab/src/baobab-utils.c:299
+#: baobab/src/baobab-utils.c:279
 msgid "Cannot check an excluded folder!"
 msgstr ""
 
-#: baobab/src/baobab-utils.c:323
+#: baobab/src/baobab-utils.c:303
 #, c-format
 msgid "\"%s\" is not a valid folder"
 msgstr "Ní fillteán bailí é \"%s\""
 
-#: baobab/src/baobab-utils.c:326
+#: baobab/src/baobab-utils.c:306
 msgid "Could not analyze disk usage."
 msgstr ""
 
-#: baobab/src/baobab-utils.c:362
+#: baobab/src/baobab-utils.c:342
 msgid "_Open Folder"
 msgstr "_Oscail Fillteán"
 
-#: baobab/src/baobab-utils.c:368 gsearchtool/src/gsearchtool-callbacks.c:1216
+#: baobab/src/baobab-utils.c:348 gsearchtool/src/gsearchtool-callbacks.c:1329
 msgid "Mo_ve to Trash"
 msgstr "_Bog go Bruscar"
 
-#: baobab/src/baobab-utils.c:397
+#: baobab/src/baobab-utils.c:377
 #, c-format
 msgid "Could not open folder \"%s\""
 msgstr "Níorbh fhéidir fillteán \"%s\" a oscailt"
 
-#: baobab/src/baobab-utils.c:400
+#: baobab/src/baobab-utils.c:380
 msgid "There is no installed viewer capable of displaying the folder."
 msgstr ""
 
-#: baobab/src/baobab-utils.c:467
+#: baobab/src/baobab-utils.c:447
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
 msgstr "Níorbh fhéidir \"%s\" a bhogadh go dtí an Bruscar"
 
-#: baobab/src/baobab-utils.c:475
+#: baobab/src/baobab-utils.c:455
 msgid "Could not move file to the Trash"
 msgstr "Níorbh fhéidir comhad a bhogadh go dtí an Bruscar"
 
-#: baobab/src/baobab-utils.c:477
+#: baobab/src/baobab-utils.c:457
 #, c-format
 msgid "Details: %s"
 msgstr "Mionsonraí: %s"
 
-#: baobab/src/baobab-utils.c:515
+#: baobab/src/baobab-utils.c:495
 msgid "There was an error displaying help."
 msgstr "Tharla earráid agus cabhair á taispeáint."
 
-#: baobab/src/callbacks.c:77 logview/src/logview-about.h:45
-#: mate-dictionary/src/gdict-about.c:52
+#: baobab/src/callbacks.c:73 logview/src/logview-about.h:43
+#: mate-dictionary/src/gdict-about.c:48
 msgid "MATE Documentation Team"
 msgstr ""
 
-#: baobab/src/callbacks.c:82 logview/src/logview-about.h:50
-#: mate-dictionary/src/gdict-about.c:60
+#: baobab/src/callbacks.c:78 logview/src/logview-about.h:48
+#: mate-dictionary/src/gdict-about.c:56
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -576,8 +577,8 @@ msgstr ""
 "Software Foundation; leagan 2 an License, nó (de do rogha) aon leagan níos "
 "déanaí."
 
-#: baobab/src/callbacks.c:87 logview/src/logview-about.h:54
-#: mate-dictionary/src/gdict-about.c:65
+#: baobab/src/callbacks.c:83 logview/src/logview-about.h:52
+#: mate-dictionary/src/gdict-about.c:61
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -588,41 +589,41 @@ msgstr ""
 "gan an baránta intuigthe INDÍOLTÓIREACHTA nó OIRIÚNACHTA D'FHEIDHM ÁIRITHE "
 "fiú. Féach an GNU General Public License le haghaidh tuilleadh mionsonraí."
 
-#: baobab/src/callbacks.c:92 logview/src/logview-about.h:58
+#: baobab/src/callbacks.c:88 logview/src/logview-about.h:56
+#: mate-dictionary/src/gdict-about.c:66
 msgid ""
 "You should have received a copy of the GNU General Public License along with"
-" this program; if not, write to the Free Software Foundation, Inc., 51 "
-"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA."
+" this program.  If not, see <https://www.gnu.org/licenses/>."
 msgstr ""
 
-#: baobab/src/callbacks.c:109
+#: baobab/src/callbacks.c:104
 msgid "About Disk Usage Analyzer"
 msgstr ""
 
-#: baobab/src/callbacks.c:110
-msgid "A graphical tool to analyze disk usage."
-msgstr "Uirlis ghrafach chun úsáid diosca a anailísiú."
-
-#: baobab/src/callbacks.c:111
-msgid ""
-"Copyright © 2005-2010 Fabio Marzocca\n"
-"Copyright © 2011-2020 MATE developers"
+#: baobab/src/callbacks.c:105
+msgid "Analyze your disk usage through a graphical tool."
 msgstr ""
 
-#: baobab/src/callbacks.c:117 logview/src/logview-about.h:64
-#: mate-dictionary/src/gdict-about.c:56
+#: baobab/src/callbacks.c:106
+msgid ""
+"Copyright © 2005-2010 Fabio Marzocca\n"
+"Copyright © 2011-2021 MATE developers"
+msgstr ""
+
+#: baobab/src/callbacks.c:112 logview/src/logview-about.h:61
+#: mate-dictionary/src/gdict-about.c:52
 msgid "translator-credits"
 msgstr ""
 "Paul Duffy <dubhthach@frink.nuigalway.ie>\n"
 "Alastair McKinstry <mckinstry@computer.org>\n"
 "Seán de Búrca <leftmostcat@gmail.com>"
 
-#: baobab/src/callbacks.c:215 gsearchtool/src/gsearchtool-callbacks.c:509
-#: gsearchtool/src/gsearchtool-callbacks.c:855
+#: baobab/src/callbacks.c:210 gsearchtool/src/gsearchtool-callbacks.c:505
+#: gsearchtool/src/gsearchtool-callbacks.c:878
 msgid "The document does not exist."
 msgstr "Níl an cháipéis ann."
 
-#: baobab/src/callbacks.c:296
+#: baobab/src/callbacks.c:291
 msgid "The folder does not exist."
 msgstr "Níl an fillteán ann."
 
@@ -647,12 +648,6 @@ msgstr ""
 #: gsearchtool/data/mate-search-tool.desktop.in:4
 msgid "Locate documents and folders on this computer by name or content"
 msgstr "Aimsigh cáipéisí agus fillteáin ar an ríomhaire seo trí ainm nó ábhar"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: gsearchtool/data/mate-search-tool.desktop.in:7
-msgid "system-search"
-msgstr ""
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -850,197 +845,197 @@ msgid ""
 "selected when the search tool is started."
 msgstr ""
 
-#: gsearchtool/libeggsmclient/eggdesktopfile.c:165
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:168
 msgid "File is not a valid .desktop file"
 msgstr "Ní comhad .desktop bailí é an comhad"
 
-#: gsearchtool/libeggsmclient/eggdesktopfile.c:188
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:193
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
 msgstr "Leagan comhaid deisce anaithnid '%s'"
 
-#: gsearchtool/libeggsmclient/eggdesktopfile.c:957
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:975
 #, c-format
 msgid "Starting %s"
 msgstr "%s á Thosú"
 
-#: gsearchtool/libeggsmclient/eggdesktopfile.c:1098
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1117
 msgid "Application does not accept documents on command line"
 msgstr ""
 
-#: gsearchtool/libeggsmclient/eggdesktopfile.c:1166
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1185
 #, c-format
 msgid "Unrecognized launch option: %d"
 msgstr "Rogha tosaithe anaithnid: %d"
 
-#: gsearchtool/libeggsmclient/eggdesktopfile.c:1364
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1401
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 msgstr ""
 
-#: gsearchtool/libeggsmclient/eggdesktopfile.c:1383
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1422
 msgid "Not a launchable item"
 msgstr "Ní mír inthosaithe"
 
-#: gsearchtool/libeggsmclient/eggsmclient.c:221
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:233
 msgid "Disable connection to session manager"
 msgstr "Díchumasaigh ceangal le bainisteoir an tseisiúin"
 
-#: gsearchtool/libeggsmclient/eggsmclient.c:224
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:238
 msgid "Specify file containing saved configuration"
 msgstr "Sonraigh comhad ina bhfuil cumraíocht sábháilte"
 
-#: gsearchtool/libeggsmclient/eggsmclient.c:224
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:238
 msgid "FILE"
 msgstr "COMHAD"
 
-#: gsearchtool/libeggsmclient/eggsmclient.c:227
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:243
 msgid "Specify session management ID"
 msgstr "Sonraigh CA bainistíochta seisiún"
 
-#: gsearchtool/libeggsmclient/eggsmclient.c:227
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:243
 msgid "ID"
 msgstr "CA"
 
-#: gsearchtool/libeggsmclient/eggsmclient.c:248
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:269
 msgid "Session management options:"
 msgstr "Roghanna bainistíochta seisiún:"
 
-#: gsearchtool/libeggsmclient/eggsmclient.c:249
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:270
 msgid "Show session management options"
 msgstr "Taispeáin roghanna bainistíochta seisiún"
 
-#: gsearchtool/src/gsearchtool.c:82
+#: gsearchtool/src/gsearchtool.c:78
 msgid "Contains the _text"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:84
+#: gsearchtool/src/gsearchtool.c:80
 msgid "_Date modified less than"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:84 gsearchtool/src/gsearchtool.c:85
+#: gsearchtool/src/gsearchtool.c:80 gsearchtool/src/gsearchtool.c:81
 msgid "days"
 msgstr "lá"
 
-#: gsearchtool/src/gsearchtool.c:85
+#: gsearchtool/src/gsearchtool.c:81
 msgid "Date modified more than"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:87
+#: gsearchtool/src/gsearchtool.c:83
 msgid "S_ize at least"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:87 gsearchtool/src/gsearchtool.c:88
+#: gsearchtool/src/gsearchtool.c:83 gsearchtool/src/gsearchtool.c:84
 msgid "kilobytes"
 msgstr "cilibheart"
 
-#: gsearchtool/src/gsearchtool.c:88
+#: gsearchtool/src/gsearchtool.c:84
 msgid "Si_ze at most"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:89
+#: gsearchtool/src/gsearchtool.c:85
 msgid "File is empty"
 msgstr "Tá an comhad folamh"
 
-#: gsearchtool/src/gsearchtool.c:91
+#: gsearchtool/src/gsearchtool.c:87
 msgid "Owned by _user"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:92
+#: gsearchtool/src/gsearchtool.c:88
 msgid "Owned by _group"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:93
+#: gsearchtool/src/gsearchtool.c:89
 msgid "Owner is unrecognized"
 msgstr "úinir gan aith"
 
-#: gsearchtool/src/gsearchtool.c:95
+#: gsearchtool/src/gsearchtool.c:91
 msgid "Na_me does not contain"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:96
+#: gsearchtool/src/gsearchtool.c:92
 msgid "Name matches regular e_xpression"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:98
+#: gsearchtool/src/gsearchtool.c:94
 msgid "Show hidden and backup files"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:99
+#: gsearchtool/src/gsearchtool.c:95
 msgid "Follow symbolic links"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:100
+#: gsearchtool/src/gsearchtool.c:96
 msgid "Exclude other filesystems"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:158
+#: gsearchtool/src/gsearchtool.c:154
 msgid "Show version of the application"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:159 gsearchtool/src/gsearchtool.c:164
-#: gsearchtool/src/gsearchtool.c:173
+#: gsearchtool/src/gsearchtool.c:155 gsearchtool/src/gsearchtool.c:160
+#: gsearchtool/src/gsearchtool.c:169
 msgid "STRING"
 msgstr "TEAGHRÁN"
 
-#: gsearchtool/src/gsearchtool.c:160
+#: gsearchtool/src/gsearchtool.c:156
 msgid "PATH"
 msgstr "CONAIR"
 
-#: gsearchtool/src/gsearchtool.c:161
+#: gsearchtool/src/gsearchtool.c:157
 msgid "VALUE"
 msgstr "LUACH"
 
-#: gsearchtool/src/gsearchtool.c:165 gsearchtool/src/gsearchtool.c:166
+#: gsearchtool/src/gsearchtool.c:161 gsearchtool/src/gsearchtool.c:162
 msgid "DAYS"
 msgstr "LÁ"
 
-#: gsearchtool/src/gsearchtool.c:167 gsearchtool/src/gsearchtool.c:168
+#: gsearchtool/src/gsearchtool.c:163 gsearchtool/src/gsearchtool.c:164
 msgid "KILOBYTES"
 msgstr "CILIBHEART"
 
-#: gsearchtool/src/gsearchtool.c:170
+#: gsearchtool/src/gsearchtool.c:166
 msgid "USER"
 msgstr "ÚSÁIDEOIR"
 
-#: gsearchtool/src/gsearchtool.c:171
+#: gsearchtool/src/gsearchtool.c:167
 msgid "GROUP"
 msgstr "GRÚPA"
 
-#: gsearchtool/src/gsearchtool.c:174
+#: gsearchtool/src/gsearchtool.c:170
 msgid "PATTERN"
 msgstr "PATRÚN"
 
-#: gsearchtool/src/gsearchtool.c:385
+#: gsearchtool/src/gsearchtool.c:381
 msgid "A locate database has probably not been created."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:487
+#: gsearchtool/src/gsearchtool.c:483
 #, c-format
 msgid "Character set conversion failed for \"%s\""
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:511
+#: gsearchtool/src/gsearchtool.c:507
 msgid "Searching..."
 msgstr "Á Chuardach..."
 
-#: gsearchtool/src/gsearchtool.c:511 gsearchtool/src/gsearchtool.c:1031
-#: gsearchtool/src/gsearchtool.c:3057
+#: gsearchtool/src/gsearchtool.c:507 gsearchtool/src/gsearchtool.c:1044
+#: gsearchtool/src/gsearchtool.c:3070
 msgid "Search for Files"
 msgstr "Cuardaigh ar Chomhaid"
 
-#: gsearchtool/src/gsearchtool.c:977 gsearchtool/src/gsearchtool.c:1006
+#: gsearchtool/src/gsearchtool.c:990 gsearchtool/src/gsearchtool.c:1019
 msgid "No files found"
 msgstr "Comhaid gan aimsiú"
 
-#: gsearchtool/src/gsearchtool.c:999
+#: gsearchtool/src/gsearchtool.c:1012
 msgid "(stopped)"
 msgstr "(stadta)"
 
-#: gsearchtool/src/gsearchtool.c:1005
+#: gsearchtool/src/gsearchtool.c:1018
 msgid "No Files Found"
 msgstr "Comhaid Gan Aimsiú"
 
-#: gsearchtool/src/gsearchtool.c:1010
+#: gsearchtool/src/gsearchtool.c:1023
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
@@ -1050,7 +1045,7 @@ msgstr[2] ""
 msgstr[3] ""
 msgstr[4] ""
 
-#: gsearchtool/src/gsearchtool.c:1014 gsearchtool/src/gsearchtool.c:1052
+#: gsearchtool/src/gsearchtool.c:1027 gsearchtool/src/gsearchtool.c:1065
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
@@ -1060,221 +1055,221 @@ msgstr[2] ""
 msgstr[3] ""
 msgstr[4] ""
 
-#: gsearchtool/src/gsearchtool.c:1143
+#: gsearchtool/src/gsearchtool.c:1156
 msgid "Entry changed called for a non entry option!"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:1308
+#: gsearchtool/src/gsearchtool.c:1321
 msgid "Set the text of \"Name contains\" search option"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:1309
+#: gsearchtool/src/gsearchtool.c:1322
 msgid "Set the text of \"Look in folder\" search option"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:1310
+#: gsearchtool/src/gsearchtool.c:1323
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:1311
+#: gsearchtool/src/gsearchtool.c:1324
 msgid "Set sort order to descending, the default is ascending"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:1312
+#: gsearchtool/src/gsearchtool.c:1325
 msgid "Automatically start a search"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:1318
+#: gsearchtool/src/gsearchtool.c:1331
 #, c-format
 msgid "Select the \"%s\" search option"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:1321
+#: gsearchtool/src/gsearchtool.c:1334
 #, c-format
 msgid "Select and set the \"%s\" search option"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:1428
+#: gsearchtool/src/gsearchtool.c:1441
 msgid "Invalid option passed to sortby command line argument."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:1720
+#: gsearchtool/src/gsearchtool.c:1733
 msgid ""
 "\n"
 "... Too many errors to display ..."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:1734
+#: gsearchtool/src/gsearchtool.c:1747
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:1746 gsearchtool/src/gsearchtool.c:1790
+#: gsearchtool/src/gsearchtool.c:1759 gsearchtool/src/gsearchtool.c:1803
 msgid "Show more _details"
 msgstr "Taispeáin tuilleadh _mionsonraí"
 
-#: gsearchtool/src/gsearchtool.c:1776
+#: gsearchtool/src/gsearchtool.c:1789
 msgid ""
 "The search results may be out of date or invalid.  Do you want to disable "
 "the quick search feature?"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:1801
+#: gsearchtool/src/gsearchtool.c:1814
 msgid "Disable _Quick Search"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:1828
+#: gsearchtool/src/gsearchtool.c:1841
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:1853
+#: gsearchtool/src/gsearchtool.c:1866
 msgid "Error parsing the search command."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:1885
+#: gsearchtool/src/gsearchtool.c:1898
 msgid "Error running the search command."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2008
+#: gsearchtool/src/gsearchtool.c:2021
 #, c-format
 msgid "Enter a text value for the \"%s\" search option."
 msgstr ""
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
-#: gsearchtool/src/gsearchtool.c:2013
+#: gsearchtool/src/gsearchtool.c:2026
 #, c-format
 msgid "\"%s\" in %s"
 msgstr "\"%s\" le %s"
 
-#: gsearchtool/src/gsearchtool.c:2015
+#: gsearchtool/src/gsearchtool.c:2028
 #, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2078
+#: gsearchtool/src/gsearchtool.c:2091
 #, c-format
 msgid "Remove \"%s\""
 msgstr "Bain \"%s\""
 
-#: gsearchtool/src/gsearchtool.c:2079
+#: gsearchtool/src/gsearchtool.c:2092
 #, c-format
 msgid "Click to remove the \"%s\" search option."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2172
+#: gsearchtool/src/gsearchtool.c:2185
 msgid "A_vailable options:"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2201
+#: gsearchtool/src/gsearchtool.c:2214
 msgid "Available options"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2202
+#: gsearchtool/src/gsearchtool.c:2215
 msgid "Select a search option from the drop-down list."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2219
+#: gsearchtool/src/gsearchtool.c:2232
 msgid "Add search option"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2220
+#: gsearchtool/src/gsearchtool.c:2233
 msgid "Click to add the selected available search option."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2309
+#: gsearchtool/src/gsearchtool.c:2322
 msgid "S_earch results:"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2352
+#: gsearchtool/src/gsearchtool.c:2365
 msgid "List View"
 msgstr "Amharc Liosta"
 
-#: gsearchtool/src/gsearchtool.c:2412
-#: mate-dictionary/libgdict/gdict-source.c:243
+#: gsearchtool/src/gsearchtool.c:2425
+#: mate-dictionary/libgdict/gdict-source.c:242
 msgid "Name"
 msgstr "Ainm"
 
-#: gsearchtool/src/gsearchtool.c:2461
+#: gsearchtool/src/gsearchtool.c:2474
 msgid "Type"
 msgstr "Cineál"
 
-#: gsearchtool/src/gsearchtool.c:2473
+#: gsearchtool/src/gsearchtool.c:2486
 msgid "Date Modified"
 msgstr "Dáta Athraithe"
 
-#: gsearchtool/src/gsearchtool.c:2803
+#: gsearchtool/src/gsearchtool.c:2816
 msgid "_Name contains:"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2818 gsearchtool/src/gsearchtool.c:2819
+#: gsearchtool/src/gsearchtool.c:2831 gsearchtool/src/gsearchtool.c:2832
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2819
+#: gsearchtool/src/gsearchtool.c:2832
 msgid "Name contains"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2825
+#: gsearchtool/src/gsearchtool.c:2838
 msgid "_Look in folder:"
 msgstr "_Féach i bhfillteán:"
 
-#: gsearchtool/src/gsearchtool.c:2831
+#: gsearchtool/src/gsearchtool.c:2844
 msgid "Browse"
 msgstr "Brabhsáil"
 
-#: gsearchtool/src/gsearchtool.c:2841
+#: gsearchtool/src/gsearchtool.c:2854
 msgid "Look in folder"
 msgstr "Féach i bhfillteán"
 
-#: gsearchtool/src/gsearchtool.c:2841
+#: gsearchtool/src/gsearchtool.c:2854
 msgid "Select the folder or device from which you want to begin the search."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2859
+#: gsearchtool/src/gsearchtool.c:2872
 msgid "Select more _options"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2868
+#: gsearchtool/src/gsearchtool.c:2881
 msgid "Select more options"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2868
+#: gsearchtool/src/gsearchtool.c:2881
 msgid "Click to expand or collapse the list of available options."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2899
+#: gsearchtool/src/gsearchtool.c:2912
 msgid "Click to display the help manual."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2912
+#: gsearchtool/src/gsearchtool.c:2925
 msgid "Click to close \"Search for Files\"."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2947
+#: gsearchtool/src/gsearchtool.c:2960
 msgid "Click to perform a search."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:2948
+#: gsearchtool/src/gsearchtool.c:2961
 msgid "Click to stop a search."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:3042
+#: gsearchtool/src/gsearchtool.c:3055
 msgid "- the MATE Search Tool"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:3051
+#: gsearchtool/src/gsearchtool.c:3064
 #, c-format
 msgid "Failed to parse command line arguments: %s\n"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:195
+#: gsearchtool/src/gsearchtool-callbacks.c:191
 msgid "Could not open help document."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:346
+#: gsearchtool/src/gsearchtool-callbacks.c:342
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
@@ -1284,8 +1279,8 @@ msgstr[2] ""
 msgstr[3] ""
 msgstr[4] ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:351
-#: gsearchtool/src/gsearchtool-callbacks.c:551
+#: gsearchtool/src/gsearchtool-callbacks.c:347
+#: gsearchtool/src/gsearchtool-callbacks.c:547
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
@@ -1295,25 +1290,25 @@ msgstr[2] ""
 msgstr[3] ""
 msgstr[4] ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:396
+#: gsearchtool/src/gsearchtool-callbacks.c:392
 #, c-format
 msgid "Could not open document \"%s\"."
 msgstr "Teip ag oscailt capéis \"%s\"."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:425
+#: gsearchtool/src/gsearchtool-callbacks.c:421
 #, c-format
 msgid "Could not open folder \"%s\"."
 msgstr "Teip ag oscailt fillteán \"%s\"."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:433
+#: gsearchtool/src/gsearchtool-callbacks.c:429
 msgid "The caja file manager is not running."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:524
+#: gsearchtool/src/gsearchtool-callbacks.c:520
 msgid "There is no installed viewer capable of displaying the document."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:546
+#: gsearchtool/src/gsearchtool-callbacks.c:542
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
@@ -1323,198 +1318,196 @@ msgstr[2] ""
 msgstr[3] ""
 msgstr[4] ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:701
+#: gsearchtool/src/gsearchtool-callbacks.c:724
 #, c-format
 msgid "Could not move \"%s\" to trash."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:732
+#: gsearchtool/src/gsearchtool-callbacks.c:755
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:735
+#: gsearchtool/src/gsearchtool-callbacks.c:758
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:779
+#: gsearchtool/src/gsearchtool-callbacks.c:802
 #, c-format
 msgid "Could not delete \"%s\"."
 msgstr "Níorbh fhéidir \"%s\" a scriosadh."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:891
+#: gsearchtool/src/gsearchtool-callbacks.c:914
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
 msgstr "Theip ar scriosadh \"%s\": %s."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:903
+#: gsearchtool/src/gsearchtool-callbacks.c:926
 #, c-format
 msgid "Moving \"%s\" failed: %s."
 msgstr "Theip ar bhogadh \"%s\": %s."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1030
-#: gsearchtool/src/gsearchtool-callbacks.c:1060
+#: gsearchtool/src/gsearchtool-callbacks.c:1142
+#: gsearchtool/src/gsearchtool-callbacks.c:1168
 msgid "_Open"
 msgstr "_Oscail"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1085
+#: gsearchtool/src/gsearchtool-callbacks.c:1198
 #, c-format
 msgid "_Open with %s"
 msgstr "_Oscail le %s"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1120
+#: gsearchtool/src/gsearchtool-callbacks.c:1219
 #, c-format
 msgid "Open with %s"
 msgstr "Oscail le %s"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1153
+#: gsearchtool/src/gsearchtool-callbacks.c:1248
 msgid "Open Wit_h"
 msgstr "Oscail _Le"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1198
+#: gsearchtool/src/gsearchtool-callbacks.c:1298
 msgid "Open Containing _Folder"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1238
+#: gsearchtool/src/gsearchtool-callbacks.c:1309
+msgid "Copy _Path"
+msgstr ""
+
+#: gsearchtool/src/gsearchtool-callbacks.c:1343
 msgid "_Save Results As..."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1620
+#: gsearchtool/src/gsearchtool-callbacks.c:1721
 msgid "Save Search Results As..."
 msgstr "Sábháil na toradhas an curadach mar..."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1649
+#: gsearchtool/src/gsearchtool-callbacks.c:1750
 msgid "Could not save document."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1650
+#: gsearchtool/src/gsearchtool-callbacks.c:1751
 msgid "You did not select a document name."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1680
+#: gsearchtool/src/gsearchtool-callbacks.c:1781
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1713
+#: gsearchtool/src/gsearchtool-callbacks.c:1814
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1717
+#: gsearchtool/src/gsearchtool-callbacks.c:1818
 msgid "If you replace an existing file, its contents will be overwritten."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1732
-#: mate-screenshot/src/screenshot-xfer.c:82
+#: gsearchtool/src/gsearchtool-callbacks.c:1833
+#: mate-screenshot/src/screenshot-xfer.c:83
 msgid "_Replace"
 msgstr "_Ionadaigh"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1781
+#: gsearchtool/src/gsearchtool-callbacks.c:1882
 msgid "The document name you selected is a folder."
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1817
+#: gsearchtool/src/gsearchtool-callbacks.c:1918
 msgid "You may not have write permissions to the document."
 msgstr ""
 
-#. Translators:  Below are the strings displayed in the 'Date Modified'
-#. column of the list view.  The format of this string can vary depending
-#. on age of a file.  Please modify the format of the timestamp to match
-#. your locale.  For example, to display 24 hour time replace the '%-I'
-#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
-#: gsearchtool/src/gsearchtool-support.c:448
+#: gsearchtool/src/gsearchtool-support.c:426
 msgid "today at %-I:%M %p"
 msgstr "inniu ag %-I:%M %p"
 
-#: gsearchtool/src/gsearchtool-support.c:450
+#: gsearchtool/src/gsearchtool-support.c:428
 msgid "yesterday at %-I:%M %p"
 msgstr "inné ag %-I:%M %p"
 
-#: gsearchtool/src/gsearchtool-support.c:452
-#: gsearchtool/src/gsearchtool-support.c:454
+#: gsearchtool/src/gsearchtool-support.c:430
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
 msgstr "%A, %-d %B %Y ag %-I:%M:%S %p"
 
-#: gsearchtool/src/gsearchtool-support.c:641
+#: gsearchtool/src/gsearchtool-support.c:477
 msgid "link (broken)"
 msgstr "nasc (briste)"
 
-#: gsearchtool/src/gsearchtool-support.c:645
+#: gsearchtool/src/gsearchtool-support.c:481
 #, c-format
 msgid "link to %s"
 msgstr "nasc le %s"
 
-#: gsearchtool/src/gsearchtool-support.c:1260
+#: gsearchtool/src/gsearchtool-support.c:1100
 msgid " (copy)"
 msgstr " (cóip)"
 
-#: gsearchtool/src/gsearchtool-support.c:1262
+#: gsearchtool/src/gsearchtool-support.c:1102
 msgid " (another copy)"
 msgstr " (cóip eile)"
 
-#: gsearchtool/src/gsearchtool-support.c:1265
-#: gsearchtool/src/gsearchtool-support.c:1267
-#: gsearchtool/src/gsearchtool-support.c:1269
-#: gsearchtool/src/gsearchtool-support.c:1279
+#: gsearchtool/src/gsearchtool-support.c:1105
+#: gsearchtool/src/gsearchtool-support.c:1107
+#: gsearchtool/src/gsearchtool-support.c:1109
+#: gsearchtool/src/gsearchtool-support.c:1119
 msgid "th copy)"
 msgstr "ú cóip)"
 
-#: gsearchtool/src/gsearchtool-support.c:1272
+#: gsearchtool/src/gsearchtool-support.c:1112
 msgid "st copy)"
 msgstr "ú chóip)"
 
-#: gsearchtool/src/gsearchtool-support.c:1274
+#: gsearchtool/src/gsearchtool-support.c:1114
 msgid "nd copy)"
 msgstr "ú cóip)"
 
-#: gsearchtool/src/gsearchtool-support.c:1276
+#: gsearchtool/src/gsearchtool-support.c:1116
 msgid "rd copy)"
 msgstr "ú cóip)"
 
-#: gsearchtool/src/gsearchtool-support.c:1293
+#: gsearchtool/src/gsearchtool-support.c:1133
 #, c-format
 msgid "%s (copy)%s"
 msgstr "%s (cóip)%s"
 
-#: gsearchtool/src/gsearchtool-support.c:1295
+#: gsearchtool/src/gsearchtool-support.c:1135
 #, c-format
 msgid "%s (another copy)%s"
 msgstr "%s (cóip eile)%s"
 
-#: gsearchtool/src/gsearchtool-support.c:1298
-#: gsearchtool/src/gsearchtool-support.c:1300
-#: gsearchtool/src/gsearchtool-support.c:1302
-#: gsearchtool/src/gsearchtool-support.c:1311
+#: gsearchtool/src/gsearchtool-support.c:1138
+#: gsearchtool/src/gsearchtool-support.c:1140
+#: gsearchtool/src/gsearchtool-support.c:1142
+#: gsearchtool/src/gsearchtool-support.c:1151
 #, c-format
 msgid "%s (%dth copy)%s"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-support.c:1305
+#: gsearchtool/src/gsearchtool-support.c:1145
 #, c-format
 msgid "%s (%dst copy)%s"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-support.c:1307
+#: gsearchtool/src/gsearchtool-support.c:1147
 #, c-format
 msgid "%s (%dnd copy)%s"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-support.c:1309
+#: gsearchtool/src/gsearchtool-support.c:1149
 #, c-format
 msgid "%s (%drd copy)%s"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool-support.c:1356
+#: gsearchtool/src/gsearchtool-support.c:1196
 msgid " (invalid Unicode)"
 msgstr " (Unicode neamhbhailí)"
 
-#: gsearchtool/src/gsearchtool-support.c:1445
+#: gsearchtool/src/gsearchtool-support.c:1285
 msgid " ("
 msgstr " ("
 
-#: gsearchtool/src/gsearchtool-support.c:1453
+#: gsearchtool/src/gsearchtool-support.c:1293
 #, c-format
 msgid " (%d"
 msgstr " (%d"
@@ -1525,12 +1518,6 @@ msgstr "Amharcán Comhad Loga"
 
 #: logview/data/mate-system-log.desktop.in.in:4
 msgid "View or monitor system log files"
-msgstr ""
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: logview/data/mate-system-log.desktop.in.in:7
-msgid "mate-system-log"
 msgstr ""
 
 #. Translators: Search terms to find this application. Do NOT translate or
@@ -1593,98 +1580,107 @@ msgstr ""
 msgid "List of saved regexp filters"
 msgstr ""
 
-#: logview/data/logview-filter.ui:24
-#: mate-screenshot/data/mate-screenshot.ui:150
+#: logview/data/logview-filter.ui:32 mate-disk-image-mounter/src/main.c:123
+#: mate-screenshot/data/mate-screenshot.ui:89
+msgid "_Cancel"
+msgstr "_Cealaigh"
+
+#: logview/data/logview-filter.ui:48
+msgid "_Apply"
+msgstr ""
+
+#: logview/data/logview-filter.ui:91
+#: mate-screenshot/data/mate-screenshot.ui:190
 msgid "_Name:"
 msgstr "_Ainm:"
 
-#: logview/data/logview-filter.ui:36
+#: logview/data/logview-filter.ui:108
 msgid "_Regular Expression:"
 msgstr ""
 
-#: logview/data/logview-filter.ui:87
+#: logview/data/logview-filter.ui:180
 msgid "Highlight"
 msgstr ""
 
-#: logview/data/logview-filter.ui:98
-msgid "Hide"
-msgstr ""
-
-#: logview/data/logview-filter.ui:121
+#: logview/data/logview-filter.ui:205
 msgid "Foreground:"
 msgstr ""
 
-#: logview/data/logview-filter.ui:153
+#: logview/data/logview-filter.ui:220
 msgid "Background:"
 msgstr ""
 
-#: logview/data/logview-filter.ui:196
+#: logview/data/logview-filter.ui:274
+msgid "Hide"
+msgstr ""
+
+#: logview/data/logview-filter.ui:296
 msgid "Effect:"
 msgstr ""
 
-#: logview/src/logview-about.h:42 mate-dictionary/src/gdict-about.c:49
+#: logview/src/logview-about.h:40 mate-dictionary/src/gdict-about.c:45
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
 
-#: logview/src/logview-app.c:371
+#: logview/src/logview-app.c:368
 #, c-format
 msgid "Impossible to open the file %s"
 msgstr ""
 
-#: logview/src/logview-filter-manager.c:91
+#: logview/src/logview-filter-manager.c:92
 msgid "Filter name is empty!"
 msgstr ""
 
-#: logview/src/logview-filter-manager.c:104
+#: logview/src/logview-filter-manager.c:105
 msgid "Filter name may not contain the ':' character"
 msgstr ""
 
-#: logview/src/logview-filter-manager.c:127
+#: logview/src/logview-filter-manager.c:128
 msgid "Regular expression is empty!"
 msgstr ""
 
-#: logview/src/logview-filter-manager.c:143
+#: logview/src/logview-filter-manager.c:144
 #, c-format
 msgid "Regular expression is invalid: %s"
 msgstr ""
 
-#: logview/src/logview-filter-manager.c:237
+#: logview/src/logview-filter-manager.c:206
 msgid "Please specify either foreground or background color!"
 msgstr ""
 
-#: logview/src/logview-filter-manager.c:289
+#: logview/src/logview-filter-manager.c:281
 msgid "Edit filter"
 msgstr ""
 
-#: logview/src/logview-filter-manager.c:289
+#: logview/src/logview-filter-manager.c:281
 msgid "Add new filter"
 msgstr ""
 
-#: logview/src/logview-filter-manager.c:517
+#: logview/src/logview-filter-manager.c:468
 msgid "Filters"
 msgstr "Scagairí"
 
-#: logview/src/logview-findbar.c:169
+#: logview/src/logview-findbar.c:168
 msgid "_Find:"
 msgstr "_Aimsigh:"
 
-#: logview/src/logview-findbar.c:184
+#: logview/src/logview-findbar.c:183
 msgid "Find Previous"
 msgstr "Aimsigh an Ceann Roimhe Seo"
 
-#: logview/src/logview-findbar.c:187
+#: logview/src/logview-findbar.c:186
 msgid "Find previous occurrence of the search string"
 msgstr ""
 
-#: logview/src/logview-findbar.c:192
+#: logview/src/logview-findbar.c:191
 msgid "Find Next"
 msgstr "Aimsigh an Chéad Cheann Eile"
 
-#: logview/src/logview-findbar.c:195
+#: logview/src/logview-findbar.c:194
 msgid "Find next occurrence of the search string"
 msgstr ""
 
-#: logview/src/logview-findbar.c:202
+#: logview/src/logview-findbar.c:201
 msgid "Clear the search string"
 msgstr ""
 
@@ -1692,225 +1688,229 @@ msgstr ""
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
 msgstr ""
 
-#: logview/src/logview-log.c:635
+#: logview/src/logview-log.c:634
 msgid "You don't have enough permissions to read the file."
 msgstr ""
 
-#: logview/src/logview-log.c:650
+#: logview/src/logview-log.c:649
 msgid "The file is not a regular file or is not a text file."
 msgstr ""
 
-#: logview/src/logview-log.c:732
+#: logview/src/logview-log.c:742
 msgid "This version of System Log does not support GZipped logs."
 msgstr ""
 
-#: logview/src/logview-loglist.c:103
+#: logview/src/logview-loglist.c:102
 msgid "%A, %e %b"
 msgstr ""
 
-#: logview/src/logview-loglist.c:314
+#: logview/src/logview-loglist.c:313
 msgid "Loading..."
 msgstr "Á Luchtú..."
 
-#: logview/src/logview-main.c:61
+#: logview/src/logview-main.c:47
+#, c-format
+msgid ""
+"%s - Version %s\n"
+"Copyright (C) 2004-2008 Vincent Noel, Cosimo Cecchi and others.\n"
+"Copyright (C) 2011-2021 MATE developers.\n"
+msgstr ""
+
+#: logview/src/logview-main.c:63
 msgid "Show the application's version"
 msgstr "Taispeáin leagan an fheidhmchláir"
 
-#: logview/src/logview-main.c:63
+#: logview/src/logview-main.c:65
 msgid "[LOGFILE...]"
 msgstr "[COMHADLOGA...]"
 
-#: logview/src/logview-main.c:67
+#: logview/src/logview-main.c:69
 msgid " - Browse and monitor logs"
 msgstr ""
 
-#: logview/src/logview-main.c:100
+#: logview/src/logview-main.c:102
 msgid "Log Viewer"
 msgstr "Amharcán Logaí"
 
-#: logview/src/logview-window.c:38 logview/src/logview-window.c:768
+#: logview/src/logview-window.c:40 logview/src/logview-window.c:770
 msgid "System Log Viewer"
 msgstr "Amharcán Logaí Córais"
 
-#: logview/src/logview-window.c:213
+#: logview/src/logview-window.c:215
 #, c-format
 msgid "last update: %s"
 msgstr "nuashonrú is déanaí: %s"
 
-#: logview/src/logview-window.c:217
+#: logview/src/logview-window.c:219
 #, c-format
 msgid "%d lines (%s) - %s"
 msgstr "%d líne (%s) - %s"
 
-#: logview/src/logview-window.c:322
+#: logview/src/logview-window.c:324
 msgid "Open Log"
 msgstr "Oscail Loga"
 
-#: logview/src/logview-window.c:361
+#: logview/src/logview-window.c:363
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "Bhí earraid ag taispeáin cabhair: %s"
 
-#: logview/src/logview-window.c:475
+#: logview/src/logview-window.c:477
 msgid "Wrapped"
 msgstr ""
 
-#: logview/src/logview-window.c:490
-#: mate-dictionary/libgdict/gdict-defbox.c:1125
-#: mate-dictionary/libgdict/gdict-defbox.c:1219
-#: mate-dictionary/libgdict/gdict-defbox.c:1253
+#: logview/src/logview-window.c:492
+#: mate-dictionary/libgdict/gdict-defbox.c:1124
+#: mate-dictionary/libgdict/gdict-defbox.c:1218
+#: mate-dictionary/libgdict/gdict-defbox.c:1252
 msgid "Not found"
 msgstr "Gan aimsiú"
 
-#: logview/src/logview-window.c:770
+#: logview/src/logview-window.c:772
 msgid "About System Log Viewer"
 msgstr ""
 
-#: logview/src/logview-window.c:771
+#: logview/src/logview-window.c:773
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
-"Copyright © 2011-2020 MATE developers"
+"Copyright © 2011-2021 MATE developers"
 msgstr ""
 
-#: logview/src/logview-window.c:775
-msgid "A system log viewer for MATE."
+#: logview/src/logview-window.c:777
+msgid "View, monitor or analyze your system logs in a gradual manner."
 msgstr ""
 
-#: logview/src/logview-window.c:818 mate-dictionary/src/gdict-window.c:1285
+#: logview/src/logview-window.c:820 mate-dictionary/src/gdict-window.c:1257
 msgid "_File"
 msgstr "_Comhad"
 
-#: logview/src/logview-window.c:821
+#: logview/src/logview-window.c:823
 msgid "_Filters"
 msgstr "_Scagairí"
 
-#: logview/src/logview-window.c:824
+#: logview/src/logview-window.c:826
 msgid "_Open..."
 msgstr "_Oscail..."
 
-#: logview/src/logview-window.c:824
+#: logview/src/logview-window.c:826
 msgid "Open a log from file"
 msgstr "Oscail loga ó chomhad"
 
-#: logview/src/logview-window.c:826 mate-dictionary/src/gdict-window.c:1300
-msgid "_Close"
-msgstr "_Dún"
-
-#: logview/src/logview-window.c:826
+#: logview/src/logview-window.c:828
 msgid "Close this log"
 msgstr "Dún an loga seo"
 
-#: logview/src/logview-window.c:828
+#: logview/src/logview-window.c:830
 msgid "_Quit"
 msgstr "Scoi_r"
 
-#: logview/src/logview-window.c:828
+#: logview/src/logview-window.c:830
 msgid "Quit the log viewer"
 msgstr ""
 
-#: logview/src/logview-window.c:831 mate-dictionary/src/gdict-window.c:1304
+#: logview/src/logview-window.c:833 mate-dictionary/src/gdict-window.c:1276
 msgid "_Copy"
 msgstr "_Cóipeáil"
 
-#: logview/src/logview-window.c:831
+#: logview/src/logview-window.c:833
 msgid "Copy the selection"
 msgstr "Cóipeáil an roghnú"
 
-#: logview/src/logview-window.c:833 mate-dictionary/src/gdict-window.c:1306
+#: logview/src/logview-window.c:835 mate-dictionary/src/gdict-window.c:1278
 msgid "Select _All"
 msgstr "Roghnaigh _Gach Rud"
 
-#: logview/src/logview-window.c:833
+#: logview/src/logview-window.c:835
 msgid "Select the entire log"
 msgstr ""
 
-#: logview/src/logview-window.c:835
+#: logview/src/logview-window.c:837
 msgid "_Find..."
 msgstr "_Aimsigh..."
 
-#: logview/src/logview-window.c:835
+#: logview/src/logview-window.c:837
 msgid "Find a word or phrase in the log"
 msgstr ""
 
-#: logview/src/logview-window.c:838
+#: logview/src/logview-window.c:840
 msgid "Zoom _In"
 msgstr "Súmáil _Isteach"
 
-#: logview/src/logview-window.c:838
+#: logview/src/logview-window.c:840
 msgid "Bigger text size"
 msgstr ""
 
-#: logview/src/logview-window.c:840
+#: logview/src/logview-window.c:842
 msgid "Zoom _Out"
 msgstr "Súmáil _Amach"
 
-#: logview/src/logview-window.c:840
+#: logview/src/logview-window.c:842
 msgid "Smaller text size"
 msgstr ""
 
-#: logview/src/logview-window.c:842
+#: logview/src/logview-window.c:844
 msgid "_Normal Size"
 msgstr "_Gnáthmhéid"
 
-#: logview/src/logview-window.c:842
+#: logview/src/logview-window.c:844
 msgid "Normal text size"
 msgstr ""
 
-#: logview/src/logview-window.c:845
+#: logview/src/logview-window.c:847
 msgid "Manage Filters"
 msgstr ""
 
-#: logview/src/logview-window.c:845
+#: logview/src/logview-window.c:847
 msgid "Manage filters"
 msgstr ""
 
-#: logview/src/logview-window.c:848
+#: logview/src/logview-window.c:850
 msgid "Open the help contents for the log viewer"
 msgstr ""
 
-#: logview/src/logview-window.c:850 mate-dictionary/src/gdict-applet.c:1186
-#: mate-dictionary/src/gdict-window.c:1341
+#: logview/src/logview-window.c:852 mate-dictionary/src/gdict-applet.c:1175
+#: mate-dictionary/src/gdict-window.c:1313
 msgid "_About"
 msgstr "_Maidir Leis Seo"
 
-#: logview/src/logview-window.c:850
+#: logview/src/logview-window.c:852
 msgid "Show the about dialog for the log viewer"
 msgstr ""
 
-#: logview/src/logview-window.c:855
+#: logview/src/logview-window.c:857
 msgid "_Statusbar"
 msgstr "Barra _Stádais"
 
-#: logview/src/logview-window.c:855
+#: logview/src/logview-window.c:857
 msgid "Show Status Bar"
 msgstr "Taispeáin Barra Stádais"
 
-#: logview/src/logview-window.c:857
+#: logview/src/logview-window.c:859
 msgid "Side _Pane"
 msgstr "_Pána Taoibh"
 
-#: logview/src/logview-window.c:857
+#: logview/src/logview-window.c:859
 msgid "Show Side Pane"
 msgstr "Taispeáin Pána Taoibh"
 
-#: logview/src/logview-window.c:859
+#: logview/src/logview-window.c:861
 msgid "Show matches only"
 msgstr ""
 
-#: logview/src/logview-window.c:859
+#: logview/src/logview-window.c:861
 msgid "Only show lines that match one of the given filters"
 msgstr ""
 
-#: logview/src/logview-window.c:991
+#: logview/src/logview-window.c:993
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr ""
 
-#: logview/src/logview-window.c:1416
+#: logview/src/logview-window.c:1418
 msgid "Version: "
 msgstr "Leagan: "
 
-#: logview/src/logview-window.c:1522
+#: logview/src/logview-window.c:1524
 msgid "Could not open the following files:"
 msgstr "Níorbh fhéidir na comhaid a leanas a oscailt:"
 
@@ -1925,13 +1925,6 @@ msgstr ""
 
 #: mate-dictionary/data/mate-dictionary.desktop.in.in:4
 msgid "Check word definitions and spellings in an online dictionary"
-msgstr ""
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: mate-dictionary/data/mate-dictionary.desktop.in.in:9
-#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:12
-msgid "accessories-dictionary"
 msgstr ""
 
 #. Translators: Search terms to find this application. Do NOT translate or
@@ -2002,66 +1995,66 @@ msgstr ""
 msgid "Thai"
 msgstr "Téalainnis"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:283
+#: mate-dictionary/libgdict/gdict-client-context.c:282
 msgid "Client Name"
 msgstr "Ainm Cliaint"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:284
+#: mate-dictionary/libgdict/gdict-client-context.c:283
 msgid "The name of the client of the context object"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:297
+#: mate-dictionary/libgdict/gdict-client-context.c:296
 msgid "Hostname"
 msgstr "Óstainm"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:298
+#: mate-dictionary/libgdict/gdict-client-context.c:297
 msgid "The hostname of the dictionary server to connect to"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:311
+#: mate-dictionary/libgdict/gdict-client-context.c:310
 msgid "Port"
 msgstr "Port"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:312
+#: mate-dictionary/libgdict/gdict-client-context.c:311
 msgid "The port of the dictionary server to connect to"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:327
+#: mate-dictionary/libgdict/gdict-client-context.c:326
 msgid "Status"
 msgstr "Stádas"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:328
+#: mate-dictionary/libgdict/gdict-client-context.c:327
 msgid "The status code as returned by the dictionary server"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:772
+#: mate-dictionary/libgdict/gdict-client-context.c:771
 #, c-format
 msgid "No connection to the dictionary server at '%s:%d'"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1052
+#: mate-dictionary/libgdict/gdict-client-context.c:1051
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1083
+#: mate-dictionary/libgdict/gdict-client-context.c:1082
 #, c-format
 msgid "Lookup failed for host '%s': %s"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1117
+#: mate-dictionary/libgdict/gdict-client-context.c:1116
 #, c-format
 msgid "Lookup failed for host '%s': host not found"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1169
+#: mate-dictionary/libgdict/gdict-client-context.c:1168
 #, c-format
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
 "with code %d (server down)"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1188
+#: mate-dictionary/libgdict/gdict-client-context.c:1187
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
@@ -2070,313 +2063,306 @@ msgstr ""
 "Ní féidir freagra an fhreastalaí foclóra a pharsáil\n"
 ": '%s'"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1217
+#: mate-dictionary/libgdict/gdict-client-context.c:1216
 #, c-format
 msgid "No definitions found for '%s'"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1232
+#: mate-dictionary/libgdict/gdict-client-context.c:1231
 #, c-format
 msgid "Invalid database '%s'"
 msgstr "Bunachar sonraí neamhbhailí '%s'"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1247
+#: mate-dictionary/libgdict/gdict-client-context.c:1246
 #, c-format
 msgid "Invalid strategy '%s'"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1262
+#: mate-dictionary/libgdict/gdict-client-context.c:1261
 #, c-format
 msgid "Bad command '%s'"
 msgstr "Drochordú '%s'"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1277
+#: mate-dictionary/libgdict/gdict-client-context.c:1276
 #, c-format
 msgid "Bad parameters for command '%s'"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1292
+#: mate-dictionary/libgdict/gdict-client-context.c:1291
 #, c-format
 msgid "No databases found on dictionary server at '%s'"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1307
+#: mate-dictionary/libgdict/gdict-client-context.c:1306
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1732
+#: mate-dictionary/libgdict/gdict-client-context.c:1731
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1771
+#: mate-dictionary/libgdict/gdict-client-context.c:1770
 #, c-format
 msgid ""
 "Error while reading reply from server:\n"
 "%s"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1844
+#: mate-dictionary/libgdict/gdict-client-context.c:1843
 #, c-format
 msgid "Connection timeout for the dictionary server at '%s:%d'"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1878
+#: mate-dictionary/libgdict/gdict-client-context.c:1877
 msgid "No hostname defined for the dictionary server"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1914
-#: mate-dictionary/libgdict/gdict-client-context.c:1929
+#: mate-dictionary/libgdict/gdict-client-context.c:1913
+#: mate-dictionary/libgdict/gdict-client-context.c:1928
 msgid "Unable to create socket"
 msgstr "Ní féidir soicéad a chruthú"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1955
+#: mate-dictionary/libgdict/gdict-client-context.c:1954
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1970
+#: mate-dictionary/libgdict/gdict-client-context.c:1969
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-context.c:218
+#: mate-dictionary/libgdict/gdict-context.c:219
 msgid "Local Only"
 msgstr "Logánta Amháin"
 
-#: mate-dictionary/libgdict/gdict-context.c:219
+#: mate-dictionary/libgdict/gdict-context.c:220
 msgid "Whether the context uses only local dictionaries or not"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-database-chooser.c:376
+#: mate-dictionary/libgdict/gdict-database-chooser.c:375
 msgid "Reload the list of available databases"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-database-chooser.c:388
+#: mate-dictionary/libgdict/gdict-database-chooser.c:387
 msgid "Clear the list of available databases"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-database-chooser.c:836
-#: mate-dictionary/libgdict/gdict-speller.c:773
-#: mate-dictionary/libgdict/gdict-strategy-chooser.c:783
+#: mate-dictionary/libgdict/gdict-database-chooser.c:835
+#: mate-dictionary/libgdict/gdict-speller.c:772
+#: mate-dictionary/libgdict/gdict-strategy-chooser.c:782
 msgid "Error while matching"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-defbox.c:1314
+#: mate-dictionary/libgdict/gdict-defbox.c:1313
 msgid "F_ind:"
 msgstr "A_imsigh:"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:1327
+#: mate-dictionary/libgdict/gdict-defbox.c:1326
 msgid "_Previous"
 msgstr "_Roimhe Seo"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:1335
+#: mate-dictionary/libgdict/gdict-defbox.c:1334
 msgid "_Next"
 msgstr "_Ar Aghaidh"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:2483
+#: mate-dictionary/libgdict/gdict-defbox.c:2482
 msgid "Error while looking up definition"
+msgstr ""
+
+#: mate-dictionary/libgdict/gdict-defbox.c:2524
+#: mate-dictionary/libgdict/gdict-speller.c:730
+msgid "Another search is in progress"
 msgstr ""
 
 #: mate-dictionary/libgdict/gdict-defbox.c:2525
 #: mate-dictionary/libgdict/gdict-speller.c:731
-msgid "Another search is in progress"
-msgstr ""
-
-#: mate-dictionary/libgdict/gdict-defbox.c:2526
-#: mate-dictionary/libgdict/gdict-speller.c:732
 msgid "Please wait until the current search ends."
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-defbox.c:2565
+#: mate-dictionary/libgdict/gdict-defbox.c:2564
 msgid "Error while retrieving the definition"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source.c:229
+#: mate-dictionary/libgdict/gdict-source.c:228
 msgid "Filename"
 msgstr "Ainm Comhaid"
 
-#: mate-dictionary/libgdict/gdict-source.c:230
+#: mate-dictionary/libgdict/gdict-source.c:229
 msgid "The filename used by this dictionary source"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source.c:244
+#: mate-dictionary/libgdict/gdict-source.c:243
 msgid "The display name of this dictionary source"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source.c:257
+#: mate-dictionary/libgdict/gdict-source.c:256
 msgid "Description"
 msgstr "Cur Síos"
 
-#: mate-dictionary/libgdict/gdict-source.c:258
+#: mate-dictionary/libgdict/gdict-source.c:257
 msgid "The description of this dictionary source"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source.c:271
-#: mate-dictionary/libgdict/gdict-speller.c:375
+#: mate-dictionary/libgdict/gdict-source.c:270
+#: mate-dictionary/libgdict/gdict-speller.c:374
 msgid "Database"
 msgstr "Bunachar Sonraí"
 
-#: mate-dictionary/libgdict/gdict-source.c:272
+#: mate-dictionary/libgdict/gdict-source.c:271
 msgid "The default database of this dictionary source"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source.c:285
-#: mate-dictionary/libgdict/gdict-speller.c:382
+#: mate-dictionary/libgdict/gdict-source.c:284
+#: mate-dictionary/libgdict/gdict-speller.c:381
 msgid "Strategy"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source.c:286
+#: mate-dictionary/libgdict/gdict-source.c:285
 msgid "The default strategy of this dictionary source"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source.c:299
+#: mate-dictionary/libgdict/gdict-source.c:298
 msgid "Transport"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source.c:300
+#: mate-dictionary/libgdict/gdict-source.c:299
 msgid "The transport mechanism used by this dictionary source"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source.c:314
-#: mate-dictionary/libgdict/gdict-speller.c:368
+#: mate-dictionary/libgdict/gdict-source.c:313
+#: mate-dictionary/libgdict/gdict-speller.c:367
 msgid "Context"
 msgstr "Comhthéacs"
 
-#: mate-dictionary/libgdict/gdict-source.c:315
+#: mate-dictionary/libgdict/gdict-source.c:314
 msgid "The GdictContext bound to this source"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source.c:408
+#: mate-dictionary/libgdict/gdict-source.c:407
 #, c-format
 msgid "Invalid transport type '%d'"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source.c:436
+#: mate-dictionary/libgdict/gdict-source.c:435
 #, c-format
 msgid "No '%s' group found inside the dictionary source definition"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source.c:452
-#: mate-dictionary/libgdict/gdict-source.c:476
-#: mate-dictionary/libgdict/gdict-source.c:500
-#: mate-dictionary/libgdict/gdict-source.c:525
+#: mate-dictionary/libgdict/gdict-source.c:451
+#: mate-dictionary/libgdict/gdict-source.c:475
+#: mate-dictionary/libgdict/gdict-source.c:499
+#: mate-dictionary/libgdict/gdict-source.c:524
 #, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source.c:550
+#: mate-dictionary/libgdict/gdict-source.c:549
 #, c-format
 msgid ""
 "Unable to get the '%s' key inside the dictionary source definition file: %s"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source.c:736
+#: mate-dictionary/libgdict/gdict-source.c:735
 msgid "Dictionary source does not have name"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source.c:745
+#: mate-dictionary/libgdict/gdict-source.c:744
 #, c-format
 msgid "Dictionary source '%s' has invalid transport '%s'"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source-chooser.c:283
+#: mate-dictionary/libgdict/gdict-source-chooser.c:282
 msgid "Reload the list of available sources"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source-loader.c:163
+#: mate-dictionary/libgdict/gdict-source-loader.c:162
 msgid "Paths"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source-loader.c:164
+#: mate-dictionary/libgdict/gdict-source-loader.c:163
 msgid "Search paths used by this object"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-source-loader.c:176
+#: mate-dictionary/libgdict/gdict-source-loader.c:175
 msgid "Sources"
 msgstr "Foinsí"
 
-#: mate-dictionary/libgdict/gdict-source-loader.c:177
+#: mate-dictionary/libgdict/gdict-source-loader.c:176
 msgid "Dictionary sources found"
 msgstr "Aimsíodh foinsí foclóra"
 
-#: mate-dictionary/libgdict/gdict-speller.c:347
+#: mate-dictionary/libgdict/gdict-speller.c:346
 msgid "Clear the list of similar words"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-speller.c:369
+#: mate-dictionary/libgdict/gdict-speller.c:368
 msgid "The GdictContext object used to get the word definition"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-speller.c:376
+#: mate-dictionary/libgdict/gdict-speller.c:375
 msgid "The database used to query the GdictContext"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-speller.c:383
+#: mate-dictionary/libgdict/gdict-speller.c:382
 msgid "The strategy used to query the GdictContext"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-strategy-chooser.c:358
+#: mate-dictionary/libgdict/gdict-strategy-chooser.c:357
 msgid "Reload the list of available strategies"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-strategy-chooser.c:370
+#: mate-dictionary/libgdict/gdict-strategy-chooser.c:369
 msgid "Clear the list of available strategies"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-utils.c:97
+#: mate-dictionary/libgdict/gdict-utils.c:96
 msgid "GDict debugging flags to set"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-utils.c:97
-#: mate-dictionary/libgdict/gdict-utils.c:99
+#: mate-dictionary/libgdict/gdict-utils.c:96
+#: mate-dictionary/libgdict/gdict-utils.c:98
 msgid "FLAGS"
 msgstr "BRATAÍ"
 
-#: mate-dictionary/libgdict/gdict-utils.c:99
+#: mate-dictionary/libgdict/gdict-utils.c:98
 msgid "GDict debugging flags to unset"
 msgstr ""
 
-#: mate-dictionary/libgdict/gdict-utils.c:157
+#: mate-dictionary/libgdict/gdict-utils.c:152
 msgid "GDict Options"
 msgstr "Roghanna GDict"
 
-#: mate-dictionary/libgdict/gdict-utils.c:158
+#: mate-dictionary/libgdict/gdict-utils.c:153
 msgid "Show GDict Options"
 msgstr "Taispeáin Roghanna GDict"
 
-#: mate-dictionary/src/gdict-about.c:57 mate-dictionary/src/gdict-applet.c:587
-msgid "Look up words in dictionaries"
-msgstr "Cuardaigh focail i bhfoclóirí"
-
-#: mate-dictionary/src/gdict-about.c:70
-msgid ""
-"You should have received a copy of the GNU General Public License along with"
-" this program; if not, write to the Free Software Foundation, Inc., 51 "
-"Franklin St, Fifth Floor, Boston, MA 02110-1301, USA."
+#: mate-dictionary/src/gdict-about.c:53
+msgid "Look up words or terms in a dictionary source."
 msgstr ""
 
-#: mate-dictionary/src/gdict-about.c:87 mate-dictionary/src/gdict-app.c:364
-#: mate-dictionary/src/gdict-window.c:607
-#: mate-dictionary/src/gdict-window.c:1891
+#: mate-dictionary/src/gdict-about.c:81 mate-dictionary/src/gdict-app.c:360
+#: mate-dictionary/src/gdict-window.c:579
+#: mate-dictionary/src/gdict-window.c:1863
 msgid "Dictionary"
 msgstr "Foclóir"
 
-#: mate-dictionary/src/gdict-about.c:89
+#: mate-dictionary/src/gdict-about.c:83
 msgid "About Dictionary"
 msgstr ""
 
-#: mate-dictionary/src/gdict-about.c:90
+#: mate-dictionary/src/gdict-about.c:84
 msgid ""
 "Copyright © 2005-2006 Emmanuele Bassi\n"
-"Copyright © 2011-2020 MATE developers"
+"Copyright © 2011-2021 MATE developers"
 msgstr ""
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
 #. * keep the new lines.
-#: mate-dictionary/src/gdict-app.c:210
+#: mate-dictionary/src/gdict-app.c:206
 #, c-format
 msgid ""
 "Definition for '%s'\n"
@@ -2385,265 +2371,270 @@ msgid ""
 "%s\n"
 msgstr ""
 
-#: mate-dictionary/src/gdict-app.c:224
+#: mate-dictionary/src/gdict-app.c:220
 #, c-format
 msgid "Error: %s\n"
 msgstr "Earráid: %s\n"
 
-#: mate-dictionary/src/gdict-app.c:250
+#: mate-dictionary/src/gdict-app.c:246
 msgid "See mate-dictionary --help for usage\n"
 msgstr ""
 
-#: mate-dictionary/src/gdict-app.c:263
+#: mate-dictionary/src/gdict-app.c:259
 msgid "Unable to find a suitable dictionary source"
 msgstr ""
 
-#: mate-dictionary/src/gdict-app.c:297
+#: mate-dictionary/src/gdict-app.c:293
 #, c-format
 msgid ""
 "Error while looking up the definition of \"%s\":\n"
 "%s"
 msgstr ""
 
-#: mate-dictionary/src/gdict-app.c:326 mate-dictionary/src/gdict-app.c:336
+#: mate-dictionary/src/gdict-app.c:322 mate-dictionary/src/gdict-app.c:332
 msgid "Words to look up"
 msgstr ""
 
-#: mate-dictionary/src/gdict-app.c:326 mate-dictionary/src/gdict-app.c:328
-#: mate-dictionary/src/gdict-app.c:336
+#: mate-dictionary/src/gdict-app.c:322 mate-dictionary/src/gdict-app.c:324
+#: mate-dictionary/src/gdict-app.c:332
 msgid "word"
 msgstr "focal"
 
-#: mate-dictionary/src/gdict-app.c:328
+#: mate-dictionary/src/gdict-app.c:324
 msgid "Words to match"
 msgstr ""
 
-#: mate-dictionary/src/gdict-app.c:330
+#: mate-dictionary/src/gdict-app.c:326
 msgid "Dictionary source to use"
 msgstr "Foinse fhoclóra le húsáid"
 
-#: mate-dictionary/src/gdict-app.c:330
+#: mate-dictionary/src/gdict-app.c:326
 msgid "source"
 msgstr "foinse"
 
-#: mate-dictionary/src/gdict-app.c:332
+#: mate-dictionary/src/gdict-app.c:328
 msgid "Print result to the console"
 msgstr ""
 
-#: mate-dictionary/src/gdict-app.c:334
+#: mate-dictionary/src/gdict-app.c:330
 msgid "Database to use"
 msgstr "Bunachar sonraí le húsáid"
 
-#: mate-dictionary/src/gdict-app.c:334
+#: mate-dictionary/src/gdict-app.c:330
 msgid "db"
 msgstr "db"
 
-#: mate-dictionary/src/gdict-app.c:346
+#: mate-dictionary/src/gdict-app.c:342
 msgid " - Look up words in dictionaries"
 msgstr " - Cuardaigh focail i bhfoclóirí"
 
-#: mate-dictionary/src/gdict-applet.c:204
-#: mate-dictionary/src/gdict-window.c:962
+#: mate-dictionary/src/gdict-applet.c:193
+#: mate-dictionary/src/gdict-window.c:934
 msgid "Save a Copy"
 msgstr "Sábháil Cóip"
 
-#: mate-dictionary/src/gdict-applet.c:214
-#: mate-dictionary/src/gdict-window.c:972
+#: mate-dictionary/src/gdict-applet.c:203
+#: mate-dictionary/src/gdict-window.c:944
 msgid "Untitled document"
 msgstr "Cáipéis gan teideal"
 
-#: mate-dictionary/src/gdict-applet.c:235
-#: mate-dictionary/src/gdict-window.c:993
+#: mate-dictionary/src/gdict-applet.c:224
+#: mate-dictionary/src/gdict-window.c:965
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr ""
 
-#: mate-dictionary/src/gdict-applet.c:360
+#: mate-dictionary/src/gdict-applet.c:349
 msgid "Clear the definitions found"
 msgstr ""
 
-#: mate-dictionary/src/gdict-applet.c:362
+#: mate-dictionary/src/gdict-applet.c:351
 msgid "Clear definition"
 msgstr ""
 
-#: mate-dictionary/src/gdict-applet.c:363
+#: mate-dictionary/src/gdict-applet.c:352
 msgid "Clear the text of the definition"
 msgstr ""
 
-#: mate-dictionary/src/gdict-applet.c:375
+#: mate-dictionary/src/gdict-applet.c:364
 msgid "Print the definitions found"
 msgstr ""
 
-#: mate-dictionary/src/gdict-applet.c:377
+#: mate-dictionary/src/gdict-applet.c:366
 msgid "Print definition"
 msgstr ""
 
-#: mate-dictionary/src/gdict-applet.c:378
+#: mate-dictionary/src/gdict-applet.c:367
 msgid "Print the text of the definition"
 msgstr ""
 
-#: mate-dictionary/src/gdict-applet.c:390
+#: mate-dictionary/src/gdict-applet.c:379
 msgid "Save the definitions found"
 msgstr ""
 
-#: mate-dictionary/src/gdict-applet.c:392
+#: mate-dictionary/src/gdict-applet.c:381
 msgid "Save definition"
 msgstr ""
 
-#: mate-dictionary/src/gdict-applet.c:393
+#: mate-dictionary/src/gdict-applet.c:382
 msgid "Save the text of the definition to a file"
 msgstr ""
 
-#: mate-dictionary/src/gdict-applet.c:530
+#: mate-dictionary/src/gdict-applet.c:519
 msgid "Click to view the dictionary window"
 msgstr ""
 
-#: mate-dictionary/src/gdict-applet.c:532
+#: mate-dictionary/src/gdict-applet.c:521
 msgid "Toggle dictionary window"
 msgstr "Scoránaigh fuinneog fhoclóra"
 
-#: mate-dictionary/src/gdict-applet.c:533
+#: mate-dictionary/src/gdict-applet.c:522
 msgid "Show or hide the definition window"
 msgstr ""
 
-#: mate-dictionary/src/gdict-applet.c:584
+#: mate-dictionary/src/gdict-applet.c:573
 msgid "Type the word you want to look up"
 msgstr ""
 
-#: mate-dictionary/src/gdict-applet.c:586
+#: mate-dictionary/src/gdict-applet.c:575
 msgid "Dictionary entry"
 msgstr "Iontráil fhoclóra"
 
-#: mate-dictionary/src/gdict-applet.c:715
-#: mate-dictionary/src/gdict-window.c:1104
+#: mate-dictionary/src/gdict-applet.c:576
+msgid "Look up words in dictionaries"
+msgstr "Cuardaigh focail i bhfoclóirí"
+
+#: mate-dictionary/src/gdict-applet.c:704
+#: mate-dictionary/src/gdict-window.c:1076
 msgid "Dictionary Preferences"
 msgstr "Sainroghanna Foclóra"
 
-#: mate-dictionary/src/gdict-applet.c:739
-#: mate-dictionary/src/gdict-pref-dialog.c:498
-#: mate-dictionary/src/gdict-source-dialog.c:478
-#: mate-dictionary/src/gdict-window.c:1251
+#: mate-dictionary/src/gdict-applet.c:728
+#: mate-dictionary/src/gdict-pref-dialog.c:495
+#: mate-dictionary/src/gdict-source-dialog.c:476
+#: mate-dictionary/src/gdict-window.c:1223
 msgid "There was an error while displaying help"
 msgstr ""
 
-#: mate-dictionary/src/gdict-applet.c:878
-#: mate-dictionary/src/gdict-window.c:522
+#: mate-dictionary/src/gdict-applet.c:867
+#: mate-dictionary/src/gdict-window.c:494
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr ""
 
-#: mate-dictionary/src/gdict-applet.c:882
-#: mate-dictionary/src/gdict-window.c:526
+#: mate-dictionary/src/gdict-applet.c:871
+#: mate-dictionary/src/gdict-window.c:498
 msgid "Unable to find dictionary source"
 msgstr ""
 
-#: mate-dictionary/src/gdict-applet.c:898
-#: mate-dictionary/src/gdict-window.c:542
+#: mate-dictionary/src/gdict-applet.c:887
+#: mate-dictionary/src/gdict-window.c:514
 #, c-format
 msgid "No context available for source '%s'"
 msgstr ""
 
-#: mate-dictionary/src/gdict-applet.c:902
-#: mate-dictionary/src/gdict-window.c:546
+#: mate-dictionary/src/gdict-applet.c:891
+#: mate-dictionary/src/gdict-window.c:518
 msgid "Unable to create a context"
 msgstr "Ní féidir comhthéacs a chruthú"
 
-#: mate-dictionary/src/gdict-applet.c:1168
+#: mate-dictionary/src/gdict-applet.c:1157
 msgid "_Look Up Selected Text"
 msgstr "_Déan Cóip den Tionscadal Roghnaithe"
 
-#: mate-dictionary/src/gdict-applet.c:1171
+#: mate-dictionary/src/gdict-applet.c:1160
 msgid "Cl_ear"
 msgstr "Gl_an"
 
-#: mate-dictionary/src/gdict-applet.c:1174
+#: mate-dictionary/src/gdict-applet.c:1163
 msgid "_Print"
 msgstr "_Priontáil"
 
-#: mate-dictionary/src/gdict-applet.c:1177
+#: mate-dictionary/src/gdict-applet.c:1166
+#: mate-screenshot/data/mate-screenshot.ui:106
 msgid "_Save"
 msgstr "_Sábháil"
 
-#: mate-dictionary/src/gdict-applet.c:1180
+#: mate-dictionary/src/gdict-applet.c:1169
 msgid "Preferences"
 msgstr "Sainroghanna"
 
-#: mate-dictionary/src/gdict-common.c:80
+#: mate-dictionary/src/gdict-common.c:76
 #, c-format
 msgid "Unable to rename file '%s' to '%s': %s"
 msgstr "Ní féidir comhad '%s' a athainmniú go '%s': %s"
 
-#: mate-dictionary/src/gdict-common.c:104
-#: mate-dictionary/src/gdict-common.c:127
+#: mate-dictionary/src/gdict-common.c:100
+#: mate-dictionary/src/gdict-common.c:123
 #, c-format
 msgid "Unable to create the data directory '%s': %s"
 msgstr "Ní féidir an chomhadlann sonraí '%s' a chruthú: %s"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:240
-#: mate-dictionary/src/gdict-pref-dialog.c:429
+#: mate-dictionary/src/gdict-pref-dialog.c:237
+#: mate-dictionary/src/gdict-pref-dialog.c:426
 msgid "Edit Dictionary Source"
 msgstr "Cuir Foinse Fhoclóra in Eagar"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:304
+#: mate-dictionary/src/gdict-pref-dialog.c:301
 msgid "Add Dictionary Source"
 msgstr "Cuir Foinse Fhoclóra Leis"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:349
+#: mate-dictionary/src/gdict-pref-dialog.c:346
 #, c-format
 msgid "Remove \"%s\"?"
 msgstr "Bain \"%s\"?"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:351
+#: mate-dictionary/src/gdict-pref-dialog.c:348
 msgid "This will permanently remove the dictionary source from the list."
 msgstr ""
 
-#: mate-dictionary/src/gdict-pref-dialog.c:381
+#: mate-dictionary/src/gdict-pref-dialog.c:378
 #, c-format
 msgid "Unable to remove source '%s'"
 msgstr "Ní féidir foinse '%s' a bhaint"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:709
+#: mate-dictionary/src/gdict-pref-dialog.c:712
 msgid "Add a new dictionary source"
 msgstr "Cuir foinse fhoclóra nua leis"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:715
+#: mate-dictionary/src/gdict-pref-dialog.c:718
 msgid "Remove the currently selected dictionary source"
 msgstr ""
 
-#: mate-dictionary/src/gdict-pref-dialog.c:721
+#: mate-dictionary/src/gdict-pref-dialog.c:724
 msgid "Edit the currently selected dictionary source"
 msgstr ""
 
-#: mate-dictionary/src/gdict-pref-dialog.c:729
+#: mate-dictionary/src/gdict-pref-dialog.c:732
 msgid "Set the font used for printing the definitions"
 msgstr ""
 
-#: mate-dictionary/src/gdict-print.c:241 mate-dictionary/src/gdict-print.c:305
+#: mate-dictionary/src/gdict-print.c:237 mate-dictionary/src/gdict-print.c:301
 #, c-format
 msgid "Unable to display the preview: %s"
 msgstr "Ní féidir an réamhamharc a thaispeáint: %s"
 
-#: mate-dictionary/src/gdict-source-dialog.c:340
-#: mate-dictionary/src/gdict-source-dialog.c:433
+#: mate-dictionary/src/gdict-source-dialog.c:338
+#: mate-dictionary/src/gdict-source-dialog.c:431
 msgid "Unable to create a source file"
 msgstr "Ní féidir comhad foinseach a chruthú"
 
-#: mate-dictionary/src/gdict-source-dialog.c:358
-#: mate-dictionary/src/gdict-source-dialog.c:451
+#: mate-dictionary/src/gdict-source-dialog.c:356
+#: mate-dictionary/src/gdict-source-dialog.c:449
 msgid "Unable to save source file"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:317
+#: mate-dictionary/src/gdict-window.c:289
 #, c-format
 msgid "Searching for '%s'..."
 msgstr "Á Chuardach ar '%s'..."
 
-#: mate-dictionary/src/gdict-window.c:349
-#: mate-dictionary/src/gdict-window.c:406
+#: mate-dictionary/src/gdict-window.c:321
+#: mate-dictionary/src/gdict-window.c:378
 msgid "No definitions found"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:351
+#: mate-dictionary/src/gdict-window.c:323
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
@@ -2653,172 +2644,173 @@ msgstr[2] ""
 msgstr[3] ""
 msgstr[4] ""
 
-#: mate-dictionary/src/gdict-window.c:605
+#: mate-dictionary/src/gdict-window.c:577
 #, c-format
 msgid "%s - Dictionary"
 msgstr "%s - Foclóir"
 
-#: mate-dictionary/src/gdict-window.c:1288
+#: mate-dictionary/src/gdict-window.c:1260
 msgid "_Go"
 msgstr "_Téigh"
 
-#: mate-dictionary/src/gdict-window.c:1292
+#: mate-dictionary/src/gdict-window.c:1264
+#: mate-screenshot/data/mate-screenshot.ui:124
 msgid "_New"
 msgstr "_Nua"
 
-#: mate-dictionary/src/gdict-window.c:1293
+#: mate-dictionary/src/gdict-window.c:1265
 msgid "New look up"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1294
+#: mate-dictionary/src/gdict-window.c:1266
 msgid "_Save a Copy..."
 msgstr "_Sábháil Cóip..."
 
-#: mate-dictionary/src/gdict-window.c:1296
+#: mate-dictionary/src/gdict-window.c:1268
 msgid "P_review..."
 msgstr "_Réamhamharc..."
 
-#: mate-dictionary/src/gdict-window.c:1297
+#: mate-dictionary/src/gdict-window.c:1269
 msgid "Preview this document"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1298
+#: mate-dictionary/src/gdict-window.c:1270
 msgid "_Print..."
 msgstr "_Priontáil..."
 
-#: mate-dictionary/src/gdict-window.c:1299
+#: mate-dictionary/src/gdict-window.c:1271
 msgid "Print this document"
 msgstr "Priontáil an cáipéis seo"
 
-#: mate-dictionary/src/gdict-window.c:1308
+#: mate-dictionary/src/gdict-window.c:1280
 msgid "_Find"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1309
+#: mate-dictionary/src/gdict-window.c:1281
 msgid "Find a word or phrase in the document"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1311
+#: mate-dictionary/src/gdict-window.c:1283
 msgid "Find Ne_xt"
 msgstr "An Chéad Cheann _Eile"
 
-#: mate-dictionary/src/gdict-window.c:1313
+#: mate-dictionary/src/gdict-window.c:1285
 msgid "Find Pre_vious"
 msgstr "An Ceann _Roimhe Seo"
 
-#: mate-dictionary/src/gdict-window.c:1315
+#: mate-dictionary/src/gdict-window.c:1287
 msgid "_Preferences"
 msgstr "_Sainroghanna"
 
-#: mate-dictionary/src/gdict-window.c:1319
+#: mate-dictionary/src/gdict-window.c:1291
 msgid "_Previous Definition"
 msgstr "Sainmhíniú _Roimhe Seo"
 
-#: mate-dictionary/src/gdict-window.c:1320
+#: mate-dictionary/src/gdict-window.c:1292
 msgid "Go to the previous definition"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1321
+#: mate-dictionary/src/gdict-window.c:1293
 msgid "_Next Definition"
 msgstr "An Chéad Sainmhíniú _Eile"
 
-#: mate-dictionary/src/gdict-window.c:1322
+#: mate-dictionary/src/gdict-window.c:1294
 msgid "Go to the next definition"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1323
+#: mate-dictionary/src/gdict-window.c:1295
 msgid "_First Definition"
 msgstr "An _Chéad Sainmhíniú"
 
-#: mate-dictionary/src/gdict-window.c:1324
+#: mate-dictionary/src/gdict-window.c:1296
 msgid "Go to the first definition"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1325
+#: mate-dictionary/src/gdict-window.c:1297
 msgid "_Last Definition"
 msgstr "An Sainmhíniú _Deireanach"
 
-#: mate-dictionary/src/gdict-window.c:1326
+#: mate-dictionary/src/gdict-window.c:1298
 msgid "Go to the last definition"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1329
+#: mate-dictionary/src/gdict-window.c:1301
 msgid "Similar _Words"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1331
+#: mate-dictionary/src/gdict-window.c:1303
 msgid "Dictionary Sources"
 msgstr "Foinsí Foclóra"
 
-#: mate-dictionary/src/gdict-window.c:1333
+#: mate-dictionary/src/gdict-window.c:1305
 msgid "Available _Databases"
 msgstr "_Bunachair Sonraí ar Fáil:"
 
-#: mate-dictionary/src/gdict-window.c:1335
+#: mate-dictionary/src/gdict-window.c:1307
 msgid "Available St_rategies"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1352
+#: mate-dictionary/src/gdict-window.c:1324
 msgid "_Sidebar"
 msgstr "Barra _Taoibh"
 
-#: mate-dictionary/src/gdict-window.c:1354
+#: mate-dictionary/src/gdict-window.c:1326
 msgid "S_tatusbar"
 msgstr "Barra _Stádais"
 
-#: mate-dictionary/src/gdict-window.c:1419
+#: mate-dictionary/src/gdict-window.c:1391
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "Roghnaíodh foinse fhoclóra `%s'"
 
-#: mate-dictionary/src/gdict-window.c:1440
+#: mate-dictionary/src/gdict-window.c:1412
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1460
+#: mate-dictionary/src/gdict-window.c:1432
 #, c-format
 msgid "Database `%s' selected"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1480
+#: mate-dictionary/src/gdict-window.c:1452
 #, c-format
 msgid "Word `%s' selected"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1505
+#: mate-dictionary/src/gdict-window.c:1477
 msgid "Double-click on the word to look up"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1511
+#: mate-dictionary/src/gdict-window.c:1483
 msgid "Double-click on the matching strategy to use"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1516
+#: mate-dictionary/src/gdict-window.c:1488
 msgid "Double-click on the source to use"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1525
+#: mate-dictionary/src/gdict-window.c:1497
 msgid "Double-click on the database to use"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1697
+#: mate-dictionary/src/gdict-window.c:1669
 msgid "Look _up:"
 msgstr "C_uardaigh:"
 
-#: mate-dictionary/src/gdict-window.c:1772
+#: mate-dictionary/src/gdict-window.c:1744
 msgid "Similar words"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1785
+#: mate-dictionary/src/gdict-window.c:1757
 msgid "Available dictionaries"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1803
+#: mate-dictionary/src/gdict-window.c:1775
 msgid "Available strategies"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1819
+#: mate-dictionary/src/gdict-window.c:1791
 msgid "Dictionary sources"
 msgstr "Foinsí foclóra"
 
@@ -2827,7 +2819,7 @@ msgid "_Select a dictionary source for looking up words:"
 msgstr ""
 
 #: mate-dictionary/data/mate-dictionary-preferences.ui:132
-#: mate-dictionary/data/mate-dictionary-source.ui:236
+#: mate-dictionary/data/mate-dictionary-source.ui:148
 msgid "Source"
 msgstr "Foinse"
 
@@ -2839,32 +2831,32 @@ msgstr "Cló _priontála:"
 msgid "Print"
 msgstr "Priontáil"
 
-#: mate-dictionary/data/mate-dictionary-source.ui:39
+#: mate-dictionary/data/mate-dictionary-source.ui:38
 msgid "_Description:"
 msgstr "_Tuarascail:"
 
-#: mate-dictionary/data/mate-dictionary-source.ui:67
-msgid "_Transport:"
-msgstr ""
-
-#: mate-dictionary/data/mate-dictionary-source.ui:94
-msgid "H_ostname:"
-msgstr "Ós_tainm:"
-
-#: mate-dictionary/data/mate-dictionary-source.ui:154
+#: mate-dictionary/data/mate-dictionary-source.ui:53
 msgid "Source Name"
 msgstr "Ainm Foinse"
 
-#: mate-dictionary/data/mate-dictionary-source.ui:273
+#: mate-dictionary/data/mate-dictionary-source.ui:65
+msgid "_Transport:"
+msgstr ""
+
+#: mate-dictionary/data/mate-dictionary-source.ui:96
+msgid "H_ostname:"
+msgstr "Ós_tainm:"
+
+#: mate-dictionary/data/mate-dictionary-source.ui:175
 msgid "Dictionaries"
 msgstr "Foclóirí"
 
-#: mate-dictionary/data/mate-dictionary-source.ui:307
+#: mate-dictionary/data/mate-dictionary-source.ui:200
 msgid "Strategies"
 msgstr ""
 
 #: mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in:3
-#: mate-disk-image-mounter/src/main.c:59
+#: mate-disk-image-mounter/src/main.c:61
 msgid "MATE Disk Image Mounter"
 msgstr ""
 
@@ -2872,70 +2864,60 @@ msgstr ""
 msgid "Attach and mount one or more disk image files"
 msgstr ""
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in:8
-msgid "drive-removable-media"
-msgstr ""
-
-#: mate-disk-image-mounter/src/main.c:57
+#: mate-disk-image-mounter/src/main.c:59
 msgid "An error occurred"
 msgstr ""
 
-#: mate-disk-image-mounter/src/main.c:78
+#: mate-disk-image-mounter/src/main.c:80
 msgid "Allow writing to the image"
 msgstr ""
 
-#: mate-disk-image-mounter/src/main.c:98
+#: mate-disk-image-mounter/src/main.c:100
 msgid "All Files"
 msgstr "Gach Comhad"
 
-#: mate-disk-image-mounter/src/main.c:102
+#: mate-disk-image-mounter/src/main.c:104
 msgid "Disk Images (*.img, *.iso)"
 msgstr ""
 
-#: mate-disk-image-mounter/src/main.c:118
+#: mate-disk-image-mounter/src/main.c:120
 msgid "Select Disk Image(s) to Mount"
 msgstr ""
 
-#: mate-disk-image-mounter/src/main.c:121
-msgid "_Cancel"
-msgstr "_Cealaigh"
-
-#: mate-disk-image-mounter/src/main.c:122
+#: mate-disk-image-mounter/src/main.c:124
 msgid "_Mount"
 msgstr "_Feistigh"
 
-#: mate-disk-image-mounter/src/main.c:128
+#: mate-disk-image-mounter/src/main.c:130
 msgid "Set up _read-only mount"
 msgstr ""
 
-#: mate-disk-image-mounter/src/main.c:129
+#: mate-disk-image-mounter/src/main.c:131
 msgid ""
 "If checked, the mount will be read-only. This is useful if you don't want "
 "the underlying disk image to be modified"
 msgstr ""
 
-#: mate-disk-image-mounter/src/main.c:173
+#: mate-disk-image-mounter/src/main.c:175
 #, c-format
 msgid "Error connecting to udisks daemon: %s (%s, %d)"
 msgstr ""
 
-#: mate-disk-image-mounter/src/main.c:181
+#: mate-disk-image-mounter/src/main.c:183
 msgid "Attach and mount one or more disk image files."
 msgstr ""
 
-#: mate-disk-image-mounter/src/main.c:229
+#: mate-disk-image-mounter/src/main.c:231
 #, c-format
 msgid "Cannot open `%s' - maybe the volume isn't mounted?"
 msgstr ""
 
-#: mate-disk-image-mounter/src/main.c:236
+#: mate-disk-image-mounter/src/main.c:238
 #, c-format
 msgid "Error opening `%s': %m"
 msgstr ""
 
-#: mate-disk-image-mounter/src/main.c:257
+#: mate-disk-image-mounter/src/main.c:259
 #, c-format
 msgid "Error attaching disk image: %s (%s, %d)"
 msgstr ""
@@ -2957,19 +2939,13 @@ msgid ""
 msgstr ""
 
 #: mate-screenshot/data/mate-screenshot.desktop.in:3
-#: mate-screenshot/src/mate-screenshot.c:519
-#: mate-screenshot/src/mate-screenshot.c:527
+#: mate-screenshot/src/mate-screenshot.c:516
+#: mate-screenshot/src/mate-screenshot.c:524
 msgid "Take Screenshot"
 msgstr "Tóg Scáilghraf"
 
 #: mate-screenshot/data/mate-screenshot.desktop.in:4
 msgid "Save images of your desktop or individual windows"
-msgstr ""
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: mate-screenshot/data/mate-screenshot.desktop.in:9
-msgid "applets-screenshooter"
 msgstr ""
 
 #. Translators: Search terms to find this application. Do NOT translate or
@@ -2978,15 +2954,15 @@ msgstr ""
 msgid "MATE;screenshot;snapshot;desktop;window;image;"
 msgstr ""
 
-#: mate-screenshot/data/mate-screenshot.ui:9
+#: mate-screenshot/data/mate-screenshot.ui:34
 msgid "Save Screenshot"
 msgstr "Sábháil Scáilghraf"
 
-#: mate-screenshot/data/mate-screenshot.ui:52
+#: mate-screenshot/data/mate-screenshot.ui:71
 msgid "C_opy to Clipboard"
 msgstr ""
 
-#: mate-screenshot/data/mate-screenshot.ui:166
+#: mate-screenshot/data/mate-screenshot.ui:204
 msgid "Save in _folder:"
 msgstr "Sábháil i bh_fillteán:"
 
@@ -3032,68 +3008,68 @@ msgid ""
 "\"none\", and \"border\"."
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:138
+#: mate-screenshot/src/mate-screenshot.c:135
 msgid "Error loading the help page"
 msgstr "Earráid agus leathanach cabhrach á luchtú"
 
-#: mate-screenshot/src/mate-screenshot.c:250
+#: mate-screenshot/src/mate-screenshot.c:247
 msgid "None"
 msgstr "Neamhní"
 
-#: mate-screenshot/src/mate-screenshot.c:251
+#: mate-screenshot/src/mate-screenshot.c:248
 msgid "Drop shadow"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:252
+#: mate-screenshot/src/mate-screenshot.c:249
 msgid "Border"
 msgstr "Imlíne"
 
-#: mate-screenshot/src/mate-screenshot.c:353
+#: mate-screenshot/src/mate-screenshot.c:350
 msgid "Include _pointer"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:362
+#: mate-screenshot/src/mate-screenshot.c:359
 msgid "Include the window _border"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:377
+#: mate-screenshot/src/mate-screenshot.c:374
 msgid "Apply _effect:"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:437
+#: mate-screenshot/src/mate-screenshot.c:434
 msgid "Grab the whole _desktop"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:449
+#: mate-screenshot/src/mate-screenshot.c:446
 msgid "Grab the current _window"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:461
+#: mate-screenshot/src/mate-screenshot.c:458
 msgid "Select _area to grab"
 msgstr "Roghnaigh _achar le gabháil"
 
-#: mate-screenshot/src/mate-screenshot.c:479
+#: mate-screenshot/src/mate-screenshot.c:476
 msgid "Grab _after a delay of"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:500
-#: mate-screenshot/src/mate-screenshot.c:1320
+#: mate-screenshot/src/mate-screenshot.c:497
+#: mate-screenshot/src/mate-screenshot.c:1317
 msgid "seconds"
 msgstr "soicind"
 
-#: mate-screenshot/src/mate-screenshot.c:528
+#: mate-screenshot/src/mate-screenshot.c:525
 msgid "Effects"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:532
+#: mate-screenshot/src/mate-screenshot.c:529
 msgid "Take _Screenshot"
 msgstr "Tóg _Scáilghraf"
 
-#: mate-screenshot/src/mate-screenshot.c:651
+#: mate-screenshot/src/mate-screenshot.c:648
 msgid "Error while saving screenshot"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:654
+#: mate-screenshot/src/mate-screenshot.c:651
 #, c-format
 msgid ""
 "Impossible to save the screenshot to %s.\n"
@@ -3101,81 +3077,81 @@ msgid ""
 " Please choose another location and retry."
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:796
+#: mate-screenshot/src/mate-screenshot.c:793
 msgid "Screenshot taken"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:851
+#: mate-screenshot/src/mate-screenshot.c:848
 msgid "Unable to take a screenshot of the current window"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:916
+#: mate-screenshot/src/mate-screenshot.c:913
 #, c-format
 msgid "Screenshot at %s.png"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:923
+#: mate-screenshot/src/mate-screenshot.c:920
 #, c-format
 msgid "Screenshot at %s - %d.png"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1315
+#: mate-screenshot/src/mate-screenshot.c:1312
 msgid "Grab a window instead of the entire screen"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1316
+#: mate-screenshot/src/mate-screenshot.c:1313
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1317
+#: mate-screenshot/src/mate-screenshot.c:1314
 msgid "Send grabbed area directly to the clipboard"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1318
+#: mate-screenshot/src/mate-screenshot.c:1315
 msgid "Include the window border with the screenshot"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1319
+#: mate-screenshot/src/mate-screenshot.c:1316
 msgid "Remove the window border from the screenshot"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1320
+#: mate-screenshot/src/mate-screenshot.c:1317
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1321
+#: mate-screenshot/src/mate-screenshot.c:1318
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1321
+#: mate-screenshot/src/mate-screenshot.c:1318
 msgid "effect"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1322
+#: mate-screenshot/src/mate-screenshot.c:1319
 msgid "Interactively set options"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1323
+#: mate-screenshot/src/mate-screenshot.c:1320
 msgid "Print version information and exit"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1332
+#: mate-screenshot/src/mate-screenshot.c:1329
 msgid "Take a picture of the screen"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1355
+#: mate-screenshot/src/mate-screenshot.c:1352
 msgid ""
 "Conflicting options: --clipboard and --interactive should not be used at the"
 " same time.\n"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1361
+#: mate-screenshot/src/mate-screenshot.c:1358
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"
 msgstr ""
 
-#: mate-screenshot/src/screenshot-dialog.c:205
+#: mate-screenshot/src/screenshot-dialog.c:209
 #, c-format
 msgid ""
 "Error loading UI definition file for the screenshot program: \n"
@@ -3184,16 +3160,16 @@ msgid ""
 "Please check your installation of mate-utils."
 msgstr ""
 
-#: mate-screenshot/src/screenshot-dialog.c:228
+#: mate-screenshot/src/screenshot-dialog.c:232
 msgid "Select a folder"
 msgstr "Roghnaigh fillteán"
 
-#: mate-screenshot/src/screenshot-dialog.c:323
-#: mate-screenshot/src/screenshot-save.c:199
+#: mate-screenshot/src/screenshot-dialog.c:327
+#: mate-screenshot/src/screenshot-save.c:201
 msgid "Screenshot.png"
 msgstr "Scáilghraf.png"
 
-#: mate-screenshot/src/screenshot-save.c:57
+#: mate-screenshot/src/screenshot-save.c:59
 #, c-format
 msgid ""
 "Unable to clear the temporary folder:\n"
@@ -3202,29 +3178,29 @@ msgstr ""
 "Ní féidir an fillteán sealadach a ghlanadh:\n"
 "%s"
 
-#: mate-screenshot/src/screenshot-save.c:95
+#: mate-screenshot/src/screenshot-save.c:97
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
 msgstr ""
 
-#: mate-screenshot/src/screenshot-save.c:225
+#: mate-screenshot/src/screenshot-save.c:230
 msgid "Unknown error saving screenshot to disk"
 msgstr ""
 
-#: mate-screenshot/src/screenshot-xfer.c:72
+#: mate-screenshot/src/screenshot-xfer.c:73
 msgid "File already exists"
 msgstr ""
 
-#: mate-screenshot/src/screenshot-xfer.c:75
+#: mate-screenshot/src/screenshot-xfer.c:76
 #, c-format
 msgid "The file \"%s\" already exists. Would you like to replace it?"
 msgstr ""
 
-#: mate-screenshot/src/screenshot-xfer.c:120
+#: mate-screenshot/src/screenshot-xfer.c:121
 msgid "Saving file..."
 msgstr "Comhad á shábháil..."
 
-#: mate-screenshot/src/screenshot-xfer.c:290
+#: mate-screenshot/src/screenshot-xfer.c:291
 msgid "Can't access source file"
 msgstr "Ní féidir comhad foinseach a rochtain"

@@ -3,13 +3,14 @@
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
 # Moo, 2018
 # Džiugas Grėbliūnas <dziugas.grebliunas@gmail.com>, 2020
+# Wolfgang Ulbrich <mate@raveit.de>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-01-13 16:47+0100\n"
+"POT-Creation-Date: 2021-01-16 19:49+0100\n"
 "PO-Revision-Date: 2018-09-13 10:55+0000\n"
-"Last-Translator: Džiugas Grėbliūnas <dziugas.grebliunas@gmail.com>, 2020\n"
+"Last-Translator: Wolfgang Ulbrich <mate@raveit.de>, 2021\n"
 "Language-Team: Lithuanian (https://www.transifex.com/mate/teams/13566/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,8 +48,8 @@ msgstr "Žodynas leidžia jums ieškoti žodžių apibrėžimų ir teisingos ra�
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:33
-msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
-msgstr "<year>2015-2020</year> <holder>MATE dokumentacijos projektas</holder>"
+msgid "<year>2015-2021</year> <holder>MATE Documentation Project</holder>"
+msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:37
@@ -170,11 +171,9 @@ msgstr ""
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:60
 msgid ""
-"<surname>MATE-Dokumentationsteam</surname> <affiliation> <orgname>Mate "
+"<surname>MATE Documentation Team</surname> <affiliation> <orgname>Mate "
 "desktop</orgname> </affiliation>"
 msgstr ""
-"<surname>MATE-Dokumentationsteam</surname> <affiliation> <orgname>Mate "
-"darbalaukis</orgname> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:66
@@ -475,6 +474,7 @@ msgstr ""
 msgid ""
 "To find text inside the results of a look up, perform the following steps:"
 msgstr ""
+"Kad surastumėte tekstą tarp paieškos rezultatų, atlikite šiuos žingsnius:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:254
@@ -482,12 +482,15 @@ msgid ""
 "Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Find</guimenuitem> "
 "</menuchoice> to display the <guilabel>Find</guilabel> pane."
 msgstr ""
+"Pasirinkite <menuchoice><guimenu>Taisa</guimenu> "
+"<guimenuitem>Rasti</guimenuitem> </menuchoice>, kad matytumėte polangį "
+"<guilabel>Rasti</guilabel>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:256
 msgid ""
 "Type the text you want to find inside the <guilabel>Search</guilabel> entry."
-msgstr ""
+msgstr "Į <guilabel>Ieškoti</guilabel> įveskite tekstą, kurį norite surasti."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:258
@@ -496,6 +499,9 @@ msgid ""
 "To find the previous occurrence of the text, click "
 "<guibutton>Previous</guibutton>."
 msgstr ""
+"Spauskite <guibutton>Kitas</guibutton>, kad rastumėte kitą pasikartojimą "
+"tekste. Kad rastumėte ankstesnį pasikartojimą tekste, spauskite "
+"<guibutton>Ankstesnis</guibutton>."
 
 #. (itstool) path: sect1/title
 #. (itstool) path: sect2/title
@@ -510,6 +516,9 @@ msgid ""
 " choose "
 "<menuchoice><guimenu>Edit</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>."
 msgstr ""
+"Norėdami pakeisti <application>Žodyno</application> programos nuostatas, "
+"pasirinkite <menuchoice><guimenu>Taisa</guimenu> "
+"<guimenuitem>Nustatymai</guimenuitem></menuchoice>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:276
@@ -537,18 +546,21 @@ msgid ""
 "source.png\" format=\"PNG\"/> </imageobject> <textobject><phrase>Shows the "
 "Source tab of the Preferences dialog.</phrase></textobject>"
 msgstr ""
+"<imageobject><imagedata fileref=\"figures/mate-dictionary-preferences-"
+"source.png\" format=\"PNG\"/></imageobject><textobject><phrase>Rodo Šaltinio"
+" kortelę Nustatymų dialoge.</phrase></textobject>"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:290
 msgid ""
 "To change the dictionary source used to look up words, select the desired "
 "source from the list."
-msgstr ""
+msgstr "Kad pakeistumėte žodyno šaltinį, pasirinkite pageidaujamą iš sąrašo."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:296
 msgid "Adding a new source"
-msgstr ""
+msgstr "Naujo šaltinio pridėjimas"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -571,16 +583,19 @@ msgid ""
 "format=\"PNG\"/> </imageobject> <textobject><phrase>Shows the Add Source "
 "dialog.</phrase></textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"figures/mate-dictionary-add-source.png\" "
+"format=\"PNG\"/> </imageobject> <textobject><phrase>Rodo žodyno šaltinio "
+"pridėjimo dialogą.</phrase></textobject>"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:310
 msgid "To add a new dictionary source, perform the following steps:"
-msgstr ""
+msgstr "Kad pridėtumėte naują žodyno šaltinį, atlikite šiuos žingsnius:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:313
 msgid "Click on the <guibutton>Add</guibutton> button"
-msgstr ""
+msgstr "Spauskite mygtuką <guibutton>Pridėti</guibutton>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:314
@@ -588,6 +603,8 @@ msgid ""
 "Edit the name of the new source inside the <guilabel>Description</guilabel> "
 "entry"
 msgstr ""
+"Pakeiskite naujojo šaltinio pavadinimą <guilabel>Aprašymo</guilabel> "
+"eilutėje"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:315
@@ -595,16 +612,18 @@ msgid ""
 "Change the transport type of the new source using the "
 "<guilabel>Transport</guilabel> combo box"
 msgstr ""
+"Pakeiskite naujojo šaltinio transporto tipą <guilabel>Transporto</guilabel> "
+"jungtiniame langelyje."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:316
 msgid "Edit the attributes of the new source"
-msgstr ""
+msgstr "Pakeiskite kitas naujojo šaltinio savybes"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:317
 msgid "Click <guibutton>Add</guibutton>"
-msgstr ""
+msgstr "Paspauskite <guibutton>Pridėti</guibutton>"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:320
@@ -612,6 +631,8 @@ msgid ""
 "Different source transport types uses different attributes. This is the list"
 " of available attributes per transport type:"
 msgstr ""
+"Skirtingo šaltinio transporto tipai turi skirtingus požymius. Čia yra galimų"
+" transporto požymių sąrašas:"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:327
@@ -621,42 +642,42 @@ msgstr "Transportas"
 #. (itstool) path: entry/para
 #: C/index.docbook:328
 msgid "Attributes"
-msgstr ""
+msgstr "Požymiai"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:333
 msgid "Dictionary Server"
-msgstr ""
+msgstr "Dictionary Server"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:335
 msgid "Hostname: the hostname of the dictionary server"
-msgstr ""
+msgstr "Kompiuterio vardas: serverio, kuriame laikomas žodynas, vardas"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:336
 msgid "Port: the port of the dictionary server"
-msgstr ""
+msgstr "Prievadas: šio serverio prievadas"
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:347
 msgid "Removing a source"
-msgstr ""
+msgstr "Šaltinio pašalinimas"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:349
 msgid "To remove a dictionary source, perform the following steps:"
-msgstr ""
+msgstr "Kad pašalintumėte žodyno šaltinį, atlikite šiuos žingsnius:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:352
 msgid "Select the source you wish to remove"
-msgstr ""
+msgstr "Pasirinkite šalintiną šaltinį"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:353
 msgid "Click the <guibutton>Remove</guibutton> button"
-msgstr ""
+msgstr "Spauskite mygtuką <guibutton>Pašalinti</guibutton>"
 
 #. (itstool) path: warning/para
 #: C/index.docbook:356
@@ -666,11 +687,15 @@ msgid ""
 "wide you may actually not be able to remove them unless you have the right "
 "ownership privileges."
 msgstr ""
+"Jei pašalinate žodyno šaltinį, jis visam laikui ištrinamas iš šaltinių "
+"sąrašo. Taip pat, kadangi kai kurie šaltiniai gali būti sistemos lygmens, "
+"jums gali būti neleista juos pašalinti, nebent turėtumėte reikalingas "
+"savininko privilegijas."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:365
 msgid "Print Options"
-msgstr ""
+msgstr "Spausdinimo nuostatos"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -693,6 +718,9 @@ msgid ""
 "print.png\" format=\"PNG\"/> </imageobject> <textobject><phrase>Shows the "
 "Print tab inside the Preferences dialog.</phrase></textobject>"
 msgstr ""
+"<imageobject><imagedata fileref=\"figures/mate-dictionary-preferences-"
+"print.png\" format=\"PNG\"/></imageobject><textobject><phrase>Rodoma "
+"nustatymų dialogo kortelė „Spausdinti“.</phrase></textobject>"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:379
@@ -700,26 +728,27 @@ msgid ""
 "If you want to change the font name and size used when printing, perform the"
 " following steps:"
 msgstr ""
+"Jei norite pakeisti spausdinimo šriftą ir jo dydį, atlikite šiuos žingsnius:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:383
 msgid "Click on the <guilabel>Print Font</guilabel> button"
-msgstr ""
+msgstr "Spauskite mygtuką <guilabel>Spausdinimo šriftas</guilabel>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:384
 msgid "Select the font and size you wish to use"
-msgstr ""
+msgstr "Pasirinkite pageidaujamą šriftą ir jo dydį"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:385
 msgid "Click <guibutton>Ok</guibutton>"
-msgstr ""
+msgstr "Spauskite <guibutton>Pasirinkti</guibutton>"
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:394
 msgid "The Dictionary Applet"
-msgstr ""
+msgstr "Žodyno įtaisas"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:396
@@ -729,11 +758,14 @@ msgid ""
 "<application>Dictionary Applet</application> applet to a panel and look up "
 "words in dictionaries."
 msgstr ""
+"<application>Žodyno</application> programa pateikiama su skydelio "
+"<application>Žodyno</application> įtaisu.  Galite jį įdėti į skydelį ir "
+"ieškoti žodžių greičiau. "
 
 #. (itstool) path: figure/title
 #: C/index.docbook:402 C/index.docbook:438
 msgid "Dictionary Applet Window"
-msgstr ""
+msgstr "Žodyno įtaiso langas"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -756,11 +788,14 @@ msgid ""
 "format=\"PNG\"/> </imageobject> <textobject><phrase>Shows Dictionary "
 "Applet.</phrase></textobject>"
 msgstr ""
+"<imageobject><imagedata fileref=\"figures/mate-dictionary-applet.png\" "
+"format=\"PNG\"/></imageobject><textobject><phrase>Rodomas Žodyno "
+"įtaisas.</phrase></textobject>"
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:416
 msgid "To Start Dictionary Applet"
-msgstr ""
+msgstr "Žodyno įtaiso paleidimas"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:418
@@ -770,11 +805,15 @@ msgid ""
 "Dictionary Applet in the <application>Add to the panel</application> dialog,"
 " then click <guibutton>OK</guibutton>."
 msgstr ""
+"Kad pridėtumėte <application>Žodyno įtaisą</application> į skydelį, "
+"spustelėkite jį dešiniu pelės klavišu, tada pasirinkite <guimenuitem>Įdėti į"
+" skydelį</guimenuitem>, Pasirinkite  „Paieška žodyne“ įtaisų įdėjimo dialoge"
+" ir paspauskite <guibutton>Užverti</guibutton>.,"
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:427
 msgid "Using the Dictionary Applet"
-msgstr ""
+msgstr "Paieškos žodyne įtaiso naudojimas"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:429
@@ -783,6 +822,10 @@ msgid ""
 "press <keycap>Enter</keycap> or right-click on the dictionary icon and then "
 "choose <guimenuitem>Look up</guimenuitem>."
 msgstr ""
+"Norėdami surasti žodį, įveskite jį į <guilabel>įvedimo lauką</guilabel> ir "
+"paspauskite klavišą <keycap>Įvesti</keycap> arba žodyno piktogramą "
+"paspauskite dešiniu pelės klavišu ir pasirinkite <guimenuitem>Ieškoti "
+"pažymėto teksto</guimenuitem>."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:434
@@ -790,6 +833,8 @@ msgid ""
 "If some definition for the word was found, a window will appear, with the "
 "text of the definitions:"
 msgstr ""
+"Jeigu bus rastas koks nors žodžio apibrėžimas, jis atsiras pagrindinio lango"
+" srityje:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -812,6 +857,9 @@ msgid ""
 "window.png\" format=\"PNG\"/> </imageobject> <textobject><phrase>Shows "
 "Dictionary Applet main window.</phrase></textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"figures/mate-dictionary-application.png\""
+" format=\"PNG\"/> </imageobject> <textobject><phrase>Rodo pagrindinį "
+"Paieškos žodyne įtaiso langą.</phrase></textobject>"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:449
@@ -820,6 +868,10 @@ msgid ""
 "Click <guibutton>Print</guibutton> to print the definitions. Click "
 "<guibutton>Clear</guibutton> to clear the definitions."
 msgstr ""
+"Spaukite <guibutton>Įrašyti</guibutton>, kad išsaugotumėte apibrėžimus į "
+"tekstinį failą. Spauskite <guibutton>Spausdinti</guibutton>, kad apibrėžimus"
+" atspausdintumėte. Spauskite <guibutton>Išvalyti</guibutton>, kad "
+"pašalintumėte apibrėžimus."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:453
@@ -827,6 +879,8 @@ msgid ""
 "You can make the window disappear by left-clicking on the dictionary icon or"
 " by pressing <keycap>Esc</keycap>."
 msgstr ""
+"Galite paslėpti langą, kairiuoju pelės klavišu spustelėdami ant žodyno "
+"piktogramos arba paspaudami <keycap>Gr</keycap> klaviatūroje."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:461
@@ -834,6 +888,9 @@ msgid ""
 "To configure the <application>Dictionary Applet</application>, right-click "
 "on the dictionary icon, then choose <guimenuitem>Preferences</guimenuitem>."
 msgstr ""
+"Kad sukonfigūruotumėte <application>Paieškos žodyne įtaisą</application>, "
+"dešiniu pelės klavišu paspauskite ant žodyno piktogramos, tada pasirinkite "
+"<guimenuitem>Nustatymai</guimenuitem>."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:464
@@ -842,6 +899,9 @@ msgid ""
 "<application>Dictionary</application> application, so refer to <xref linkend"
 "=\"mate-dictionary-preferences\"/>"
 msgstr ""
+"<guilabel>Nustatymų</guilabel> dialogas yra toks pat, kaip ir "
+"<application>Žodyno</application> programoje, todėl žr. <xref linkend"
+"=\"mate-dictionary-preferences\"/>"
 
 #. (itstool) path: para/ulink
 #: C/legal.xml:9
