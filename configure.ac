@@ -15,7 +15,7 @@
 
 m4_define([mate_utils_major], [1])
 m4_define([mate_utils_minor], [25])
-m4_define([mate_utils_micro], [0])
+m4_define([mate_utils_micro], [1])
 
 m4_define([mate_utils_version], [mate_utils_major.mate_utils_minor.mate_utils_micro])
 
