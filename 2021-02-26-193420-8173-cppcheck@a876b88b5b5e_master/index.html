@@ -1,0 +1,265 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cppcheck - HTML report - mate-utils</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+    <script>
+      function getStyle(el, styleProp) {
+        var y;
+
+        if (el.currentStyle) {
+          y = el.currentStyle[styleProp];
+        } else if (window.getComputedStyle) {
+          y = document.defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
+        }
+
+        return y;
+      }
+
+      function toggle() {
+        var el = this.expandable_content;
+        var mark = this.expandable_marker;
+
+        if (el.style.display === "block") {
+          el.style.display = "none";
+          mark.textContent = "[+]";
+        } else {
+          el.style.display = "block";
+          mark.textContent = "[-]";
+        }
+      }
+
+      function initExpandables() {
+        var elements = document.querySelectorAll(".expandable");
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          var el = elements[i];
+          var clickable = el.querySelector("span");
+          var marker = clickable.querySelector(".marker");
+          var content = el.querySelector(".content");
+          var width = clickable.clientWidth - parseInt(getStyle(content, "padding-left")) - parseInt(getStyle(content, "padding-right"));
+          content.style.width = width + "px";
+          clickable.expandable_content = content;
+          clickable.expandable_marker = marker;
+          clickable.addEventListener("click", toggle);
+        }
+      }
+
+      function toggleDisplay(id) {
+        var elements = document.querySelectorAll("." + id);
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          elements[i].classList.toggle("d-none");
+        }
+      }
+
+      function toggleAll() {
+        var elements = document.querySelectorAll("input");
+
+        // starting from 1 since 0 is the "toggle all" input
+        for (var i = 1, len = elements.length; i < len; i++) {
+          var el = elements[i];
+
+          if (el.checked) {
+            el.checked = false;
+          } else {
+            el.checked = true;
+          }
+
+          toggleDisplay(el.id);
+        }
+      }
+      window.addEventListener("load", initExpandables);
+    </script>
+  </head>
+  <body>
+    <div id="header" class="header">
+      <h1>Cppcheck report - mate-utils: </h1>
+    </div>
+    <div class="wrapper">
+      <div id="menu_index">
+       <p id="filename"><a href="index.html">Defect summary;</a> </p>
+
+       <label><input type="checkbox" onclick="toggleAll()" checked> Toggle all</label>
+       <table>
+           <tr><th>Show</th><th>#</th><th>Defect ID</th></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="variableScope" name="variableScope" checked></td><td>72</td><td>variableScope</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="unusedStructMember" name="unusedStructMember" checked></td><td>15</td><td>unusedStructMember</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="varFuncNullUB" name="varFuncNullUB" checked></td><td>8</td><td>varFuncNullUB</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="knownConditionTrueFalse" name="knownConditionTrueFalse" checked></td><td>4</td><td>knownConditionTrueFalse</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="shadowArgument" name="shadowArgument" checked></td><td>2</td><td>shadowArgument</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="uselessAssignmentPtrArg" name="uselessAssignmentPtrArg" checked></td><td>2</td><td>uselessAssignmentPtrArg</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="duplicateConditionalAssign" name="duplicateConditionalAssign" checked></td><td>1</td><td>duplicateConditionalAssign</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="missingInclude" name="missingInclude" checked></td><td>1</td><td>missingInclude</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="nullPointerRedundantCheck" name="nullPointerRedundantCheck" checked></td><td>1</td><td>nullPointerRedundantCheck</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="shadowVariable" name="shadowVariable" checked></td><td>1</td><td>shadowVariable</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="unusedVariable" name="unusedVariable" checked></td><td>1</td><td>unusedVariable</td></tr>
+           <tr><td></td><td>108</td><td>total</td></tr>
+       </table>
+       <p><a href="stats.html">Statistics</a></p>
+    </div>
+    <div id="content_index">
+
+       <table>
+       <tr><th>Line</th><th>Id</th><th>CWE</th><th>Severity</th><th>Message</th></tr>
+       <tr><td colspan="5"><a href="34.html"></a></td></tr>
+         <tr class="missingInclude"><td></td><td>missingInclude</td><td></td><td>information</td><td>Cppcheck cannot find all the include files (use --check-config for details)</td></tr>
+       <tr><td colspan="5"><a href="0.html">baobab/src/baobab-chart.c</a></td></tr>
+       <tr class="variableScope"><td><a href="0.html#line-337">337</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;item&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="0.html#line-465">465</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;item&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="0.html#line-499">499</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;item&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="0.html#line-1010">1010</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;item&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="0.html#line-1416">1416</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;current_root&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="0.html#line-1632">1632</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;parent_path&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="0.html#line-1692">1692</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;sel_type&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="1.html">baobab/src/baobab-remote-connect-dialog.c</a></td></tr>
+       <tr class="variableScope"><td><a href="1.html#line-628">628</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;j&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="2.html">baobab/src/baobab-resources.c</a></td></tr>
+       <tr class="unusedStructMember"><td><a href="2.html#line-10">10</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >union member &apos;Anonymous0::alignment&apos; is never used.</td></tr>
+       <tr class="unusedStructMember"><td><a href="2.html#line-10">10</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >union member &apos;Anonymous0::ptr&apos; is never used.</td></tr>
+       <tr class="unusedStructMember"><td><a href="2.html#line-261">261</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >union member &apos;Anonymous0::alignment&apos; is never used.</td></tr>
+       <tr class="unusedStructMember"><td><a href="2.html#line-261">261</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >union member &apos;Anonymous0::ptr&apos; is never used.</td></tr>
+       <tr><td colspan="5"><a href="3.html">baobab/src/baobab-ringschart.c</a></td></tr>
+       <tr class="variableScope"><td><a href="3.html#line-421">421</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;item&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="3.html#line-433">433</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;layout&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="4.html">baobab/src/baobab-scan.c</a></td></tr>
+       <tr class="variableScope"><td><a href="4.html#line-342">342</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;hla&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="5.html">baobab/src/baobab-treemap.c</a></td></tr>
+       <tr class="variableScope"><td><a href="5.html#line-110">110</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;layout&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="6.html">baobab/src/baobab-utils.c</a></td></tr>
+       <tr class="variableScope"><td><a href="6.html#line-101">101</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;toggle&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="6.html#line-362">362</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;primary&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="7.html">baobab/src/baobab.c</a></td></tr>
+       <tr class="variableScope"><td><a href="7.html#line-82">82</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;display&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="8.html">gsearchtool/libmateui-deprecated/gsearchtool-entry.c</a></td></tr>
+       <tr class="variableScope"><td><a href="8.html#line-222">222</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;item&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="9.html">gsearchtool/mate-submodules/libegg/eggdesktopfile.c</a></td></tr>
+       <tr class="variableScope"><td><a href="9.html#line-497">497</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;try_exec&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="9.html#line-497">497</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;found_program&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="9.html#line-498">498</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;only_show_in&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="9.html#line-498">498</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;not_show_in&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="9.html#line-500">500</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;i&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="9.html#line-622">622</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;p&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="10.html">gsearchtool/mate-submodules/libegg/eggsmclient-xsmp.c</a></td></tr>
+       <tr class="varFuncNullUB"><td><a href="10.html#line-286">286</a></td><td>varFuncNullUB</td><td><a href="https://cwe.mitre.org/data/definitions/475.html">475</a></td><td>portability</td><td >Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.</td></tr>
+       <tr class="varFuncNullUB"><td><a href="10.html#line-294">294</a></td><td>varFuncNullUB</td><td><a href="https://cwe.mitre.org/data/definitions/475.html">475</a></td><td>portability</td><td >Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.</td></tr>
+       <tr class="uselessAssignmentPtrArg"><td><a href="10.html#line-349">349</a></td><td>uselessAssignmentPtrArg</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td >Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?</td></tr>
+       <tr class="variableScope"><td><a href="10.html#line-804">804</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;discard&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="10.html#line-805">805</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;fd&apos; can be reduced.</td></tr>
+       <tr class="varFuncNullUB"><td><a href="10.html#line-817">817</a></td><td>varFuncNullUB</td><td><a href="https://cwe.mitre.org/data/definitions/475.html">475</a></td><td>portability</td><td >Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.</td></tr>
+       <tr class="varFuncNullUB"><td><a href="10.html#line-825">825</a></td><td>varFuncNullUB</td><td><a href="https://cwe.mitre.org/data/definitions/475.html">475</a></td><td>portability</td><td >Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.</td></tr>
+       <tr class="varFuncNullUB"><td><a href="10.html#line-830">830</a></td><td>varFuncNullUB</td><td><a href="https://cwe.mitre.org/data/definitions/475.html">475</a></td><td>portability</td><td >Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.</td></tr>
+       <tr class="variableScope"><td><a href="10.html#line-851">851</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;keys&apos; can be reduced.</td></tr>
+       <tr class="varFuncNullUB"><td><a href="10.html#line-956">956</a></td><td>varFuncNullUB</td><td><a href="https://cwe.mitre.org/data/definitions/475.html">475</a></td><td>portability</td><td >Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.</td></tr>
+       <tr class="varFuncNullUB"><td><a href="10.html#line-964">964</a></td><td>varFuncNullUB</td><td><a href="https://cwe.mitre.org/data/definitions/475.html">475</a></td><td>portability</td><td >Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.</td></tr>
+       <tr class="varFuncNullUB"><td><a href="10.html#line-965">965</a></td><td>varFuncNullUB</td><td><a href="https://cwe.mitre.org/data/definitions/475.html">475</a></td><td>portability</td><td >Passing NULL after the last typed argument to a variadic function leads to undefined behaviour.</td></tr>
+       <tr><td colspan="5"><a href="11.html">gsearchtool/mate-submodules/libegg/eggsmclient.c</a></td></tr>
+       <tr class="knownConditionTrueFalse"><td><a href="11.html#line-362">362</a></td><td>knownConditionTrueFalse</td><td><a href="https://cwe.mitre.org/data/definitions/571.html">571</a></td><td>style</td><td >Condition &apos;!global_client&apos; is always true</td></tr>
+       <tr class="knownConditionTrueFalse"><td><a href="11.html#line-370">370</a></td><td>knownConditionTrueFalse</td><td><a href="https://cwe.mitre.org/data/definitions/571.html">571</a></td><td>style</td><td >Condition &apos;!global_client&apos; is always true</td></tr>
+       <tr><td colspan="5"><a href="12.html">gsearchtool/src/gsearchtool-callbacks.c</a></td></tr>
+       <tr class="variableScope"><td><a href="12.html#line-130">130</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;command&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="12.html#line-1123">1123</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;new2&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="12.html#line-1155">1155</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;str&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="12.html#line-1420">1420</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;tmp&apos; can be reduced.</td></tr>
+       <tr class="shadowArgument"><td><a href="12.html#line-1889">1889</a></td><td>shadowArgument</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >Local variable &apos;response&apos; shadows outer argument</td></tr>
+       <tr><td colspan="5"><a href="13.html">gsearchtool/src/gsearchtool-support.c</a></td></tr>
+       <tr class="variableScope"><td><a href="13.html#line-791">791</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;screen&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="13.html#line-792">792</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;display&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="13.html#line-1169">1169</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;valid_bytes&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="14.html">gsearchtool/src/gsearchtool.c</a></td></tr>
+       <tr class="variableScope"><td><a href="14.html#line-672">672</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;value&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="14.html#line-1061">1061</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;string&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="14.html#line-2249">2249</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;path&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="15.html">logview/src/logview-app.c</a></td></tr>
+       <tr class="variableScope"><td><a href="15.html#line-155">155</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;info&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="15.html#line-157">157</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;content_type&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="15.html#line-157">157</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;name&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="16.html">logview/src/logview-filter-manager.c</a></td></tr>
+       <tr class="variableScope"><td><a href="16.html#line-168">168</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;name&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="16.html#line-169">169</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;regex&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="16.html#line-170">170</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;filter&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="16.html#line-171">171</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;tag&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="17.html">logview/src/logview-findbar.c</a></td></tr>
+       <tr class="variableScope"><td><a href="17.html#line-329">329</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;desc&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="18.html">logview/src/logview-log.c</a></td></tr>
+       <tr class="unusedStructMember"><td><a href="18.html#line-82">82</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >struct member &apos;GZHandle::parent_str&apos; is never used.</td></tr>
+       <tr class="unusedStructMember"><td><a href="18.html#line-83">83</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >struct member &apos;GZHandle::buffer&apos; is never used.</td></tr>
+       <tr class="unusedStructMember"><td><a href="18.html#line-87">87</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >struct member &apos;GZHandle::last_z_result&apos; is never used.</td></tr>
+       <tr class="variableScope"><td><a href="18.html#line-97">97</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;lines&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="18.html#line-201">201</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;res&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="18.html#line-202">202</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;day&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="18.html#line-538">538</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;z_result&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="19.html">logview/src/logview-loglist.c</a></td></tr>
+       <tr class="variableScope"><td><a href="19.html#line-79">79</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;day&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="19.html#line-481">481</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;days&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="20.html">logview/src/logview-manager.c</a></td></tr>
+       <tr class="variableScope"><td><a href="20.html#line-219">219</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;data&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="21.html">logview/src/logview-prefs.c</a></td></tr>
+       <tr class="variableScope"><td><a href="21.html#line-147">147</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;tokens&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="21.html#line-148">148</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;str&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="21.html#line-149">149</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;filter&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="21.html#line-150">150</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;tag&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="21.html#line-384">384</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;stored&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="21.html#line-424">424</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;stored&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="22.html">logview/src/logview-resources.c</a></td></tr>
+       <tr class="unusedStructMember"><td><a href="22.html#line-10">10</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >union member &apos;Anonymous0::alignment&apos; is never used.</td></tr>
+       <tr class="unusedStructMember"><td><a href="22.html#line-10">10</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >union member &apos;Anonymous0::ptr&apos; is never used.</td></tr>
+       <tr class="unusedStructMember"><td><a href="22.html#line-143">143</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >union member &apos;Anonymous0::alignment&apos; is never used.</td></tr>
+       <tr class="unusedStructMember"><td><a href="22.html#line-143">143</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >union member &apos;Anonymous0::ptr&apos; is never used.</td></tr>
+       <tr><td colspan="5"><a href="23.html">logview/src/logview-window.c</a></td></tr>
+       <tr class="variableScope"><td><a href="23.html#line-321">321</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;active&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="23.html#line-482">482</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;mark&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="23.html#line-575">575</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;end&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="23.html#line-576">576</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;text&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="23.html#line-638">638</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;filter&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="23.html#line-666">666</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;tag&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="23.html#line-667">667</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;action&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="23.html#line-988">988</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;primary&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="23.html#line-1518">1518</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;err&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="24.html">logview/src/tests/test-reader.c</a></td></tr>
+       <tr class="unusedVariable"><td><a href="24.html#line-37">37</a></td><td>unusedVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >Unused variable: day</td></tr>
+       <tr class="variableScope"><td><a href="24.html#line-38">38</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;day_s&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="25.html">mate-dictionary/libgdict/gdict-client-context.c</a></td></tr>
+       <tr class="nullPointerRedundantCheck"><td><a href="25.html#line-1488">1488</a></td><td>nullPointerRedundantCheck</td><td><a href="https://cwe.mitre.org/data/definitions/476.html">476</a></td><td>warning</td><td >Either the condition &apos;p&apos; is redundant or there is possible null pointer dereference: p.</td></tr>
+       <tr><td colspan="5"><a href="26.html">mate-dictionary/libgdict/gdict-defbox.c</a></td></tr>
+       <tr class="variableScope"><td><a href="26.html#line-352">352</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;casefold&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="26.html#line-352">352</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;normal&apos; can be reduced.</td></tr>
+       <tr class="knownConditionTrueFalse"><td><a href="26.html#line-932">932</a></td><td>knownConditionTrueFalse</td><td><a href="https://cwe.mitre.org/data/definitions/571.html">571</a></td><td>style</td><td >Condition &apos;limit&apos; is always true</td></tr>
+       <tr class="knownConditionTrueFalse"><td><a href="26.html#line-1015">1015</a></td><td>knownConditionTrueFalse</td><td><a href="https://cwe.mitre.org/data/definitions/571.html">571</a></td><td>style</td><td >Condition &apos;limit&apos; is always true</td></tr>
+       <tr><td colspan="5"><a href="27.html">mate-dictionary/libgdict/gdict-source.c</a></td></tr>
+       <tr class="duplicateConditionalAssign"><td><a href="27.html#line-414">414</a></td><td>duplicateConditionalAssign</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The statement &apos;if (priv-&gt;transport!=transport) priv-&gt;transport=transport&apos; is logically equivalent to &apos;priv-&gt;transport=transport&apos;.</td></tr>
+       <tr><td colspan="5"><a href="28.html">mate-dictionary/src/gdict-common.c</a></td></tr>
+       <tr class="uselessAssignmentPtrArg"><td><a href="28.html#line-184">184</a></td><td>uselessAssignmentPtrArg</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td >Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?</td></tr>
+       <tr><td colspan="5"><a href="29.html">mate-dictionary/src/gdict-window.c</a></td></tr>
+       <tr class="shadowArgument"><td><a href="29.html#line-386">386</a></td><td>shadowArgument</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >Local variable &apos;context&apos; shadows outer argument</td></tr>
+       <tr><td colspan="5"><a href="30.html">mate-screenshot/src/screenshot-dialog.c</a></td></tr>
+       <tr class="shadowVariable"><td><a href="30.html#line-205">205</a></td><td>shadowVariable</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >Local variable &apos;dialog&apos; shadows outer variable</td></tr>
+       <tr><td colspan="5"><a href="31.html">mate-screenshot/src/screenshot-resources.c</a></td></tr>
+       <tr class="unusedStructMember"><td><a href="31.html#line-10">10</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >union member &apos;Anonymous0::alignment&apos; is never used.</td></tr>
+       <tr class="unusedStructMember"><td><a href="31.html#line-10">10</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >union member &apos;Anonymous0::ptr&apos; is never used.</td></tr>
+       <tr class="unusedStructMember"><td><a href="31.html#line-116">116</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >union member &apos;Anonymous0::alignment&apos; is never used.</td></tr>
+       <tr class="unusedStructMember"><td><a href="31.html#line-116">116</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td >union member &apos;Anonymous0::ptr&apos; is never used.</td></tr>
+       <tr><td colspan="5"><a href="32.html">mate-screenshot/src/screenshot-save.c</a></td></tr>
+       <tr class="variableScope"><td><a href="32.html#line-50">50</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;message&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="32.html#line-115">115</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;dialog&apos; can be reduced.</td></tr>
+       <tr class="variableScope"><td><a href="32.html#line-142">142</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;dir_name&apos; can be reduced.</td></tr>
+       <tr><td colspan="5"><a href="33.html">mate-screenshot/src/screenshot-utils.c</a></td></tr>
+       <tr class="variableScope"><td><a href="33.html#line-684">684</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td >The scope of the variable &apos;i&apos; can be reduced.</td></tr>
+       </table>
+      </div> <!-- /.wrapper -->
+    </div>
+    <div id="footer" class="footer">
+      <p>
+        Cppcheck 2.3 - a tool for static C/C++ code analysis<br>
+        <br>
+        Internet: <a href="http://cppcheck.net">http://cppcheck.net</a><br>
+        IRC: <a href="irc://irc.freenode.net/cppcheck">irc://irc.freenode.net/cppcheck</a><br>
+      </p>
+    </div>
+  </body>
+</html>
