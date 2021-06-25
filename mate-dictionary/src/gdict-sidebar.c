@@ -1,4 +1,5 @@
 /* Copyright (C) 2006 Emmanuele Bassi <ebassi@gmail.com>
+ * Copyright (C) 2012-2021 MATE Developers
  *
  * Based on the equivalent widget from Evince by Jonathan Blandford.
  * Copyright (C) 2004 Red Hat, Inc.

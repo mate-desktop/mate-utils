@@ -1,5 +1,6 @@
 /* Copyright (C) 2001-2006 Jonathan Blandford <jrb@alum.mit.edu>
  * Copyright (C) 2008 Cosimo Cecchi <cosimoc@gnome.org>
+ * Copyright (C) 2012-2021 MATE Developers
  *
  * This file is part of MATE Utils.
  *

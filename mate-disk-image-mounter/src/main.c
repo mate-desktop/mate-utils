@@ -1,5 +1,6 @@
 /* -*- mode: C; c-file-style: "gnu"; indent-tabs-mode: nil; -*- */
 /* Copyright (C) 2012 Red Hat, Inc.
+ * Copyright (C) 2012-2021 MATE Developers
  *
  * This file is part of MATE Utils.
  *

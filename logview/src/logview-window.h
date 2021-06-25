@@ -1,5 +1,6 @@
 /* Copyright (C) 1998  Cesar Miquel  <miquel@df.uba.ar>
  * Copyright (C) 2008  Cosimo Cecchi <cosimoc@gnome.org>
+ * Copyright (C) 2012-2021 MATE Developers
  *
  * This file is part of MATE Utils.
  *

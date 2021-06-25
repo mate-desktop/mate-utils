@@ -1,4 +1,5 @@
 /* This file is part of MATE Utils.
+ * Copyright (C) 2012-2021 MATE Developers
  *
  * MATE Utils is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

@@ -1,6 +1,7 @@
 /* -*- Mode: C; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2; -*- */
 /* Copyright (C) 1998 Cesar Miquel <miquel@df.uba.ar>
  * Copyright (C) 2008 Cosimo Cecchi <cosimoc@gnome.org>
+ * Copyright (C) 2012-2021 MATE Developers
  *
  * This file is part of MATE Utils.
  *

@@ -3,6 +3,7 @@
  * Copyright (C) 2004 Vincent Noel
  * Copyright (C) 2006 Emmanuele Bassi
  * Copyright (C) 2008 Cosimo Cecchi <cosimoc@gnome.org>
+ * Copyright (C) 2012-2021 MATE Developers
  *
  * This file is part of MATE Utils.
  *

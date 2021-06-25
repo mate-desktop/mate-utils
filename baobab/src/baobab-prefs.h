@@ -1,4 +1,5 @@
 /* Copyright (C) 2005-2006 Fabio Marzocca  <thesaltydog@gmail.com>
+ * Copyright (C) 2012-2021 MATE Developers
  *
  * This file is part of MATE Utils.
  *

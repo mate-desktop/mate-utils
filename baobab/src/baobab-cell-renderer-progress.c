@@ -1,4 +1,5 @@
 /* Copyright (C) 2006 Paolo Borelli
+ * Copyright (C) 2012-2021 MATE Developers
  *
  * This file is part of MATE Utils.
  *

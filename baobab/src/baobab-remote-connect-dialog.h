@@ -1,4 +1,5 @@
 /* Copyright (C) 2005 Fabio Marzocca
+ * Copyright (C) 2012-2021 MATE Developers
  *
  * Modified module from BaobabRemoteConnectDialog.h.
  * Released under same licence.

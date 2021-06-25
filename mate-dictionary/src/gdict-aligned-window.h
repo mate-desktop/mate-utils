@@ -1,4 +1,5 @@
 /* Copyright (c) 2005 Emmanuele Bassi <ebassi@gmail.com>
+ * Copyright (C) 2012-2021 MATE Developers
  *
  * Ported from Seth Nickell's Python class.
  * Copyright (c) 2003 Seth Nickell
