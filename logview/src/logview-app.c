@@ -185,7 +185,7 @@ enumerate_next_files_async_cb (GObject *source,
       continue;
     }
 
-    if (type != (G_FILE_TYPE_REGULAR || G_FILE_TYPE_SYMBOLIC_LINK) ||
+    if (((type != G_FILE_TYPE_REGULAR) && (type != G_FILE_TYPE_SYMBOLIC_LINK)) ||
         !g_content_type_is_a (content_type, "text/plain"))
     {
       g_object_unref (info);
