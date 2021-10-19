@@ -643,7 +643,7 @@ log_load (GIOSchedulerJob *io_job,
 
   is_archive = g_content_type_equals (content_type, "application/x-gzip");
 
-  if (type != (G_FILE_TYPE_REGULAR || G_FILE_TYPE_SYMBOLIC_LINK) ||
+  if (((type != G_FILE_TYPE_REGULAR) && (type != G_FILE_TYPE_SYMBOLIC_LINK)) ||
       (!g_content_type_is_a (content_type, "text/plain") && !is_archive))
   {
     err = g_error_new_literal (LOGVIEW_ERROR_QUARK, LOGVIEW_ERROR_NOT_A_LOG,
