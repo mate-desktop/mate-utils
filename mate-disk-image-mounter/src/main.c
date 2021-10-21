@@ -191,8 +191,10 @@ main (int argc, char *argv[])
       s = g_option_context_get_help (o, FALSE, NULL);
       g_printerr ("%s", s);
       g_free (s);
+      g_option_context_free (o);
       goto out;
     }
+  g_option_context_free (o);
 
   if (argc > 1)
     {
