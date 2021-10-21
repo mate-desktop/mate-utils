@@ -446,10 +446,10 @@ get_file_type_description (const gchar * file,
 	}
 
 	if (content_type == NULL || g_content_type_is_unknown (content_type) == TRUE) {
-		return g_strdup (g_content_type_get_description ("application/octet-stream"));
+		return g_content_type_get_description ("application/octet-stream");
 	}
 
-	desc = g_strdup (g_content_type_get_description (content_type));
+	desc = g_content_type_get_description (content_type);
 
 	if (g_file_info_get_is_symlink (file_info) == TRUE) {
 
