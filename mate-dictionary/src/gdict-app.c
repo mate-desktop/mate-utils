@@ -355,6 +355,7 @@ gdict_init (int *argc, char ***argv)
 
       exit (1);
     }
+  g_option_context_free (context);
 
   g_set_application_name (_("Dictionary"));
   gtk_window_set_default_icon_name ("accessories-dictionary");
