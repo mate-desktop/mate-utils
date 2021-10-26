@@ -654,18 +654,18 @@ log_load (GIOSchedulerJob *io_job,
   }
 
   log->priv->file_size = g_file_info_get_size (info);
-  #if GLIB_CHECK_VERSION(2,61,2)
-    GDateTime *file_dt;
-    gint64 t;
-    file_dt = g_file_info_get_modification_date_time (info);
-    t = g_date_time_to_unix (file_dt);
-    g_date_time_unref (file_dt);
-    log->priv->file_time = t;
-  #else
-    GTimeVal time_val;
-    g_file_info_get_modification_time (info, &time_val);
-    log->priv->file_time = time_val.tv_sec;
-  #endif
+#if GLIB_CHECK_VERSION(2,61,2)
+  GDateTime *file_dt;
+  gint64 t;
+  file_dt = g_file_info_get_modification_date_time (info);
+  t = g_date_time_to_unix (file_dt);
+  g_date_time_unref (file_dt);
+  log->priv->file_time = t;
+#else
+  GTimeVal time_val;
+  g_file_info_get_modification_time (info, &time_val);
+  log->priv->file_time = time_val.tv_sec;
+#endif
 
   log->priv->display_name = g_strdup (g_file_info_get_display_name (info));
 
