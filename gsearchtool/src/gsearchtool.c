@@ -494,9 +494,9 @@ display_dialog_character_set_conversion_error (GtkWidget * window,
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
 	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
-	g_signal_connect (G_OBJECT (dialog),
-	                  "response",
-	                   G_CALLBACK (gtk_widget_destroy), NULL);
+	g_signal_connect (dialog, "response",
+	                  G_CALLBACK (gtk_widget_destroy),
+	                  NULL);
 
 	gtk_widget_show (dialog);
 }
@@ -1771,9 +1771,9 @@ handle_search_command_stderr_io (GIOChannel * ioc,
 					gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), hbox, FALSE, FALSE, 0);
 					gtk_widget_show_all (hbox);
 
-					g_signal_connect (G_OBJECT (dialog),
-					                  "response",
-					                   G_CALLBACK (gtk_widget_destroy), NULL);
+					g_signal_connect (dialog, "response",
+					                  G_CALLBACK (gtk_widget_destroy),
+					                  NULL);
 
 					gtk_widget_show (dialog);
 				}
@@ -1822,9 +1822,9 @@ handle_search_command_stderr_io (GIOChannel * ioc,
 					gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, GTK_RESPONSE_OK);
 					gtk_dialog_set_default_response (GTK_DIALOG (dialog), GTK_RESPONSE_OK);
 
-					g_signal_connect (G_OBJECT (dialog),
-					                  "response",
-					                  G_CALLBACK (disable_quick_search_cb), (gpointer) gsearch);
+					g_signal_connect (dialog, "response",
+					                  G_CALLBACK (disable_quick_search_cb),
+					                  (gpointer) gsearch);
 
 					gtk_widget_show (dialog);
 				}
@@ -2041,11 +2041,12 @@ create_constraint_box (GSearchWindow * gsearch,
 
 		gtk_label_set_mnemonic_widget (GTK_LABEL (label), GTK_WIDGET (entry));
 
-		g_signal_connect (G_OBJECT (entry), "changed",
-			 	  G_CALLBACK (constraint_update_info_cb), opt);
+		g_signal_connect (entry, "changed",
+		                  G_CALLBACK (constraint_update_info_cb),
+		                  opt);
 
-		g_signal_connect (G_OBJECT (entry), "activate",
-				  G_CALLBACK (constraint_activate_cb),
+		g_signal_connect (entry, "activate",
+		                  G_CALLBACK (constraint_activate_cb),
 				  (gpointer) gsearch);
 
 		/* add text field */
@@ -2082,7 +2083,7 @@ create_constraint_box (GSearchWindow * gsearch,
 		list = g_list_append (list, (gpointer) gsearch);
 		list = g_list_append (list, (gpointer) opt);
 
-		g_signal_connect (G_OBJECT (button), "clicked",
+		g_signal_connect (button, "clicked",
 		                  G_CALLBACK (remove_constraint_cb),
 		                  (gpointer) list);
 
@@ -2229,8 +2230,9 @@ create_additional_constraint_section (GSearchWindow * gsearch)
 	gsearch->available_options_button_size_group = gtk_size_group_new (GTK_SIZE_GROUP_BOTH);
 	gtk_size_group_add_widget (gsearch->available_options_button_size_group, gsearch->available_options_add_button);
 
-	g_signal_connect (G_OBJECT (gsearch->available_options_add_button),"clicked",
-			  G_CALLBACK (add_constraint_cb), (gpointer) gsearch);
+	g_signal_connect (gsearch->available_options_add_button, "clicked",
+			  G_CALLBACK (add_constraint_cb),
+	                  (gpointer) gsearch);
 
 	if (gsearch->is_window_accessible) {
 		add_atk_namedesc (GTK_WIDGET (gsearch->available_options_add_button), _("Add search option"),
@@ -2379,43 +2381,35 @@ create_search_results_section (GSearchWindow * gsearch)
 			     GSearchDndTable, GSearchTotalDnds,
 			     GDK_ACTION_COPY | GDK_ACTION_MOVE | GDK_ACTION_ASK);
 
-	g_signal_connect (G_OBJECT (gsearch->search_results_tree_view),
-			  "drag_data_get",
-			  G_CALLBACK (drag_file_cb),
-			  (gpointer) gsearch);
+	g_signal_connect (gsearch->search_results_tree_view, "drag_data_get",
+	                  G_CALLBACK (drag_file_cb),
+	                  (gpointer) gsearch);
 
-	g_signal_connect (G_OBJECT (gsearch->search_results_tree_view),
-			  "drag_begin",
-			  G_CALLBACK (drag_begin_file_cb),
-			  (gpointer) gsearch);
+	g_signal_connect (gsearch->search_results_tree_view, "drag_begin",
+	                  G_CALLBACK (drag_begin_file_cb),
+	                  (gpointer) gsearch);
 
-	g_signal_connect (G_OBJECT (gsearch->search_results_tree_view),
-			  "event_after",
-		          G_CALLBACK (file_event_after_cb),
-			  (gpointer) gsearch);
+	g_signal_connect (gsearch->search_results_tree_view, "event_after",
+	                  G_CALLBACK (file_event_after_cb),
+	                  (gpointer) gsearch);
 
-	g_signal_connect (G_OBJECT (gsearch->search_results_tree_view),
-			  "button_release_event",
-		          G_CALLBACK (file_button_release_event_cb),
-			  (gpointer) gsearch);
+	g_signal_connect (gsearch->search_results_tree_view, "button_release_event",
+	                  G_CALLBACK (file_button_release_event_cb),
+	                  (gpointer) gsearch);
 
-	g_signal_connect (G_OBJECT (gsearch->search_results_tree_view),
-			  "button_press_event",
-		          G_CALLBACK (file_button_press_event_cb),
-			  (gpointer) gsearch->search_results_tree_view);
+	g_signal_connect (gsearch->search_results_tree_view, "button_press_event",
+	                  G_CALLBACK (file_button_press_event_cb),
+	                  (gpointer) gsearch->search_results_tree_view);
 
-	g_signal_connect (G_OBJECT (gsearch->search_results_tree_view),
-			  "key_press_event",
+	g_signal_connect (gsearch->search_results_tree_view, "key_press_event",
 			  G_CALLBACK (file_key_press_event_cb),
 			  (gpointer) gsearch);
 
-	g_signal_connect (G_OBJECT (gsearch->search_results_tree_view),
-	                  "motion_notify_event",
+	g_signal_connect (gsearch->search_results_tree_view, "motion_notify_event",
 	                  G_CALLBACK (file_motion_notify_cb),
 	                  (gpointer) gsearch);
 
-	g_signal_connect (G_OBJECT (gsearch->search_results_tree_view),
-	                  "leave_notify_event",
+	g_signal_connect (gsearch->search_results_tree_view, "leave_notify_event",
 	                  G_CALLBACK (file_leave_notify_cb),
 	                  (gpointer) gsearch);
 
@@ -2499,8 +2493,7 @@ create_search_results_section (GSearchWindow * gsearch)
 
 	gsearchtool_set_columns_order (gsearch->search_results_tree_view);
 
-	g_signal_connect (G_OBJECT (gsearch->search_results_tree_view),
-	                  "columns-changed",
+	g_signal_connect (gsearch->search_results_tree_view, "columns-changed",
 	                  G_CALLBACK (columns_changed_cb),
 	                  (gpointer) gsearch);
 	return vbox;
@@ -2784,7 +2777,7 @@ gsearch_app_create (GSearchWindow * gsearch)
 
 	gsearch->window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
 	gsearch->is_window_maximized = g_settings_get_boolean (gsearch->mate_search_tool_settings, "default-window-maximized");
-	g_signal_connect (G_OBJECT (gsearch->window), "size-allocate",
+	g_signal_connect (gsearch->window, "size-allocate",
 			  G_CALLBACK (gsearch_window_size_allocate),
 			  gsearch);
 	gsearch->command_details = g_slice_new0 (GSearchCommandDetails);
@@ -2835,7 +2828,7 @@ gsearch_app_create (GSearchWindow * gsearch)
 		add_atk_namedesc (gsearch->name_contains_entry, NULL, _("Enter a filename or partial filename with or without wildcards."));
 		add_atk_namedesc (entry, _("Name contains"), _("Enter a filename or partial filename with or without wildcards."));
 	}
-	g_signal_connect (G_OBJECT (gsearch_history_entry_get_entry (GSEARCH_HISTORY_ENTRY (gsearch->name_contains_entry))), "activate",
+	g_signal_connect (gsearch_history_entry_get_entry (GSEARCH_HISTORY_ENTRY (gsearch->name_contains_entry)), "activate",
 			  G_CALLBACK (name_contains_activate_cb),
 			  (gpointer) gsearch);
 
@@ -2850,9 +2843,9 @@ gsearch_app_create (GSearchWindow * gsearch)
 	gtk_widget_set_hexpand (gsearch->look_in_folder_button, TRUE);
 	gtk_grid_attach (GTK_GRID (gsearch->name_and_folder_table), gsearch->look_in_folder_button, 1, 1, 1, 1);
 
-	g_signal_connect (G_OBJECT (gsearch->look_in_folder_button), "current-folder-changed",
+	g_signal_connect (gsearch->look_in_folder_button, "current-folder-changed",
 	                  G_CALLBACK (look_in_folder_changed_cb),
-			  (gpointer) gsearch);
+	                  (gpointer) gsearch);
 
 	if (gsearch->is_window_accessible) {
 		add_atk_namedesc (GTK_WIDGET (gsearch->look_in_folder_button), _("Look in folder"), _("Select the folder or device from which you want to begin the search."));
@@ -2875,8 +2868,9 @@ gsearch_app_create (GSearchWindow * gsearch)
 
 	gsearch->show_more_options_expander = gtk_expander_new_with_mnemonic (_("Select more _options"));
 	gtk_box_pack_start (GTK_BOX (container), gsearch->show_more_options_expander, FALSE, FALSE, 0);
-	g_signal_connect (G_OBJECT (gsearch->show_more_options_expander), "notify::expanded",
-			  G_CALLBACK (click_expander_cb), (gpointer) gsearch);
+	g_signal_connect (gsearch->show_more_options_expander, "notify::expanded",
+	                  G_CALLBACK (click_expander_cb),
+	                  (gpointer) gsearch);
 
 	create_additional_constraint_section (gsearch);
 	gtk_box_pack_start (GTK_BOX (container), GTK_WIDGET (gsearch->available_options_vbox), FALSE, FALSE, 0);
@@ -2909,8 +2903,9 @@ gsearch_app_create (GSearchWindow * gsearch)
 	gtk_widget_set_can_default (button, TRUE);
 	gtk_box_pack_start (GTK_BOX (hbox), button, FALSE, FALSE, 0);
 	gtk_button_box_set_child_secondary (GTK_BUTTON_BOX (hbox), button, TRUE);
-	g_signal_connect (G_OBJECT (button), "clicked",
-			  G_CALLBACK (click_help_cb), (gpointer) gsearch->window);
+	g_signal_connect (button, "clicked",
+	                  G_CALLBACK (click_help_cb),
+	                  (gpointer) gsearch->window);
   	if (gsearch->is_window_accessible) {
 		add_atk_namedesc (GTK_WIDGET (button), NULL, _("Click to display the help manual."));
 	}
@@ -2922,8 +2917,9 @@ gsearch_app_create (GSearchWindow * gsearch)
 					   NULL));
 
 	gtk_widget_set_can_default (button, TRUE);
-	g_signal_connect (G_OBJECT (button), "clicked",
-			  G_CALLBACK (click_close_cb), (gpointer) gsearch);
+	g_signal_connect (button, "clicked",
+	                  G_CALLBACK (click_close_cb),
+	                  (gpointer) gsearch);
   	if (gsearch->is_window_accessible) {
 		add_atk_namedesc (GTK_WIDGET (button), NULL, _("Click to close \"Search for Files\"."));
 	}
@@ -2952,12 +2948,15 @@ gsearch_app_create (GSearchWindow * gsearch)
 	gtk_widget_set_sensitive (gsearch->stop_button, FALSE);
 	gtk_widget_set_sensitive (gsearch->find_button, TRUE);
 
-	g_signal_connect (G_OBJECT (gsearch->find_button), "clicked",
-	                  G_CALLBACK (click_find_cb), (gpointer) gsearch);
-    	g_signal_connect (G_OBJECT (gsearch->find_button), "size_allocate",
-	                  G_CALLBACK (size_allocate_cb), (gpointer) gsearch->available_options_add_button);
-	g_signal_connect (G_OBJECT (gsearch->stop_button), "clicked",
-	                  G_CALLBACK (click_stop_cb), (gpointer) gsearch);
+	g_signal_connect (gsearch->find_button, "clicked",
+	                  G_CALLBACK (click_find_cb),
+	                  (gpointer) gsearch);
+    	g_signal_connect (gsearch->find_button, "size_allocate",
+	                  G_CALLBACK (size_allocate_cb),
+	                  (gpointer) gsearch->available_options_add_button);
+	g_signal_connect (gsearch->stop_button, "clicked",
+	                  G_CALLBACK (click_stop_cb),
+	                  (gpointer) gsearch);
 
 	if (gsearch->is_window_accessible) {
 		add_atk_namedesc (GTK_WIDGET (gsearch->find_button), NULL, _("Click to perform a search."));
@@ -3084,15 +3083,15 @@ main (int argc,
 
 	gtk_window_set_resizable (GTK_WINDOW (gsearch->window), TRUE);
 
-	g_signal_connect (G_OBJECT (gsearch->window), "delete_event",
-	                            G_CALLBACK (quit_cb),
-	                            (gpointer) gsearch);
-	g_signal_connect (G_OBJECT (gsearch->window), "key_press_event",
-	                            G_CALLBACK (key_press_cb),
-	                            (gpointer) gsearch);
-	g_signal_connect (G_OBJECT (gsearch->window), "window_state_event",
-	                            G_CALLBACK (window_state_event_cb),
-	                            (gpointer) gsearch);
+	g_signal_connect (gsearch->window, "delete_event",
+	                  G_CALLBACK (quit_cb),
+	                  (gpointer) gsearch);
+	g_signal_connect (gsearch->window, "key_press_event",
+	                  G_CALLBACK (key_press_cb),
+	                  (gpointer) gsearch);
+	g_signal_connect (gsearch->window, "window_state_event",
+	                  G_CALLBACK (window_state_event_cb),
+	                  (gpointer) gsearch);
 
 	if ((client = egg_sm_client_get ()) != NULL) {
 		g_signal_connect (client, "save_state",

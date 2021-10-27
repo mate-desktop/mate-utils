@@ -540,7 +540,7 @@ create_interactive_dialog (void)
                     G_CALLBACK (interactive_dialog_response_cb),
                     NULL);
 
-  g_signal_connect (G_OBJECT (retval), "key-press-event",
+  g_signal_connect (retval, "key-press-event",
                     G_CALLBACK(key_press_cb),
                     NULL);
 
