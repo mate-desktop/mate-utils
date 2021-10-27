@@ -760,7 +760,6 @@ screenshot_dialog_response_cb (GtkDialog *d,
     }
 }
 
-
 static void
 run_dialog (ScreenshotDialog *dialog)
 {
@@ -1113,7 +1112,6 @@ prepare_screenshot_timeout (gpointer data)
   return FALSE;
 }
 
-
 static gchar *
 get_desktop_dir (void)
 {
@@ -1216,7 +1214,6 @@ save_options (void)
   g_settings_set_string (settings,
                          BORDER_EFFECT_KEY, border_effect);
 }
-
 
 static void
 register_screenshooter_icon (GtkIconFactory * factory)

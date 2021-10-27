@@ -1546,4 +1546,3 @@ logview_window_add_errors (LogviewWindow *window,
   g_free (secondary);
 }
 
-

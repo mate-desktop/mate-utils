@@ -111,10 +111,7 @@ gdict_source_error_quark (void)
   return quark;
 }
 
-
 G_DEFINE_TYPE_WITH_PRIVATE (GdictSource, gdict_source, G_TYPE_OBJECT);
-
-
 
 static void
 gdict_source_set_property (GObject      *object,

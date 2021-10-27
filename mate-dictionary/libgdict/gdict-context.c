@@ -49,9 +49,7 @@
 #include "gdict-context-private.h"
 #include "gdict-private.h"
 
-
 static void gdict_context_class_init (gpointer g_iface, void *user_data);
-
 
 GType
 gdict_context_get_type (void)
@@ -78,7 +76,6 @@ gdict_context_get_type (void)
 
   return context_type;
 }
-
 
 static void
 gdict_context_class_init (gpointer g_iface, void *user_data)
@@ -413,8 +410,6 @@ gdict_context_define_word (GdictContext  *context,
   							 error);
 }
 
-
-
 /*****************
  * GdictDatabase *
  *****************/
@@ -523,8 +518,6 @@ gdict_database_get_full_name (GdictDatabase *db)
   return db->full_name;
 }
 
-
-
 /*****************
  * GdictStrategy *
  *****************/
@@ -631,8 +624,6 @@ gdict_strategy_get_description (GdictStrategy *strat)
   return strat->description;
 }
 
-
-
 /**************
  * GdictMatch *
  **************/
@@ -737,8 +728,6 @@ gdict_match_get_database (GdictMatch *match)
 
   return match->database;
 }
-
-
 
 /*******************
  * GdictDefinition *

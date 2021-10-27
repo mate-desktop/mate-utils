@@ -239,8 +239,6 @@ static void     gdict_client_context_real_disconnected (GdictClientContext  *con
 static GdictCommand *gdict_command_new  (GdictCommandType  cmd_type);
 static void          gdict_command_free (GdictCommand     *cmd);
 
-
-
 GQuark
 gdict_client_context_error_quark (void)
 {
@@ -1901,7 +1899,6 @@ gdict_client_context_connect (GdictClientContext  *context,
   else
 #endif
     ((struct sockaddr_in *) &priv->sockaddr)->sin_port = g_htons (priv->port);
-
 
 #ifdef ENABLE_IPV6
   if (priv->sockaddr.ss_family == AF_INET6)

@@ -95,7 +95,6 @@ struct _GdictAppletPrivate
 
 G_DEFINE_TYPE_WITH_PRIVATE (GdictApplet, gdict_applet, PANEL_TYPE_APPLET);
 
-
 static void
 set_atk_name_description (GtkWidget  *widget,
 			  const char *name,

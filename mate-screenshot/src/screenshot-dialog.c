@@ -167,7 +167,6 @@ drag_begin (GtkWidget        *widget,
 			    dialog->drag_x, dialog->drag_y);
 }
 
-
 ScreenshotDialog *
 screenshot_dialog_new (GdkPixbuf *screenshot,
 		       char      *initial_uri,

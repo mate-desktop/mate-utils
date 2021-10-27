@@ -2906,7 +2906,6 @@ gsearch_app_create (GSearchWindow * gsearch)
 					   "use-underline", TRUE,
 					   NULL));
 
-
 	gtk_widget_set_can_default (button, TRUE);
 	gtk_box_pack_start (GTK_BOX (hbox), button, FALSE, FALSE, 0);
 	gtk_button_box_set_child_secondary (GTK_BUTTON_BOX (hbox), button, TRUE);

@@ -181,7 +181,6 @@ gdict_speller_finalize (GObject *gobject)
   G_OBJECT_CLASS (gdict_speller_parent_class)->finalize (gobject);
 }
 
-
 static void
 gdict_speller_set_property (GObject      *gobject,
 			    guint         prop_id,

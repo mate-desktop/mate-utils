@@ -167,7 +167,6 @@ static gboolean baobab_chart_query_tooltip (GtkWidget  *widget,
                                             GtkTooltip *tooltip,
                                             gpointer    user_data);
 
-
 static void
 baobab_chart_class_init (BaobabChartClass *class)
 {
@@ -523,8 +522,6 @@ baobab_chart_get_items (GtkWidget *chart, GtkTreePath *root)
       return;
     }
 
-
-
   model_root_path = gtk_tree_path_new_first ();
   gtk_tree_model_get_iter (priv->model, &model_root_iter, model_root_path);
   gtk_tree_path_free (model_root_path);
@@ -656,7 +653,6 @@ baobab_chart_update_draw (BaobabChart* chart,
 
   if (priv->root == NULL)
     root_path = gtk_tree_path_new_first ();
-
 
   root_depth = gtk_tree_path_get_depth (root_path);
   node_depth = gtk_tree_path_get_depth (path);
@@ -1181,7 +1177,6 @@ baobab_chart_get_pixbuf (GtkWidget *widget)
 
 		w = gdk_window_get_width(gtk_widget_get_window(widget));
 		h = gdk_window_get_height(gtk_widget_get_window(widget));
-
 
   pixbuf = gdk_pixbuf_get_from_window (
                                          gtk_widget_get_window (widget),

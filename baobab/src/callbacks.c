@@ -90,7 +90,6 @@ on_about_activate (GtkMenuItem *menuitem, gpointer user_data)
 		"along with this program.  If not, see <https://www.gnu.org/licenses/>.")
 	};
 
-
 	gchar* license_trans = g_strjoin("\n\n", _(license[0]), _(license[1]), _(license[2]), NULL);
 
 #ifdef ENABLE_NLS

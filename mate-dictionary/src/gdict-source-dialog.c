@@ -401,7 +401,6 @@ save_source (GdictSourceDialog *dialog)
   gdict_source_set_strategy (source, text);
   g_free (text);
 
-
   /* get the selected transport id */
   transport = dialog->transport;
   switch (transport)

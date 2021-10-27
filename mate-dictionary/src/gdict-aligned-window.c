@@ -64,10 +64,7 @@ static gboolean gdict_aligned_window_motion_notify_cb (GtkWidget        *widget,
 						       GdkEventMotion   *event,
 						       GdictAlignedWindow *aligned_window);
 
-
 G_DEFINE_TYPE_WITH_PRIVATE (GdictAlignedWindow, gdict_aligned_window, GTK_TYPE_WINDOW);
-
-
 
 static void
 gdict_aligned_window_class_init (GdictAlignedWindowClass *klass)
@@ -256,7 +253,6 @@ gdict_aligned_window_motion_notify_cb (GtkWidget        *widget,
 
   return FALSE;
 }
-
 
 /**
  * gdict_aligned_window_new:

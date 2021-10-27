@@ -142,7 +142,6 @@ static const char *dir_attributes = \
 	G_FILE_ATTRIBUTE_UNIX_DEVICE "," \
 	G_FILE_ATTRIBUTE_ACCESS_CAN_READ;
 
-
 static gboolean
 is_in_dot_gvfs (GFile *file)
 {
