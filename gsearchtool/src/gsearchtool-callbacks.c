@@ -197,9 +197,9 @@ click_help_cb (GtkWidget * widget,
 		gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
 		gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
-		g_signal_connect (G_OBJECT (dialog),
-                                  "response",
-                                  G_CALLBACK (gtk_widget_destroy), NULL);
+		g_signal_connect (dialog, "response",
+		                  G_CALLBACK (gtk_widget_destroy),
+		                  NULL);
 
                 gtk_widget_show (dialog);
                 g_error_free (error);
@@ -404,9 +404,9 @@ display_dialog_could_not_open_file (GtkWidget * window,
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
 	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
-	g_signal_connect (G_OBJECT (dialog),
-               		  "response",
-               		  G_CALLBACK (gtk_widget_destroy), NULL);
+	g_signal_connect (dialog, "response",
+	       		  G_CALLBACK (gtk_widget_destroy),
+	                  NULL);
 
 	gtk_widget_show (dialog);
 	g_free (primary);
@@ -433,9 +433,9 @@ display_dialog_could_not_open_folder (GtkWidget * window,
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
 	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
-	g_signal_connect (G_OBJECT (dialog),
-               		  "response",
-               		  G_CALLBACK (gtk_widget_destroy), NULL);
+	g_signal_connect (dialog, "response",
+	       		  G_CALLBACK (gtk_widget_destroy),
+	                  NULL);
 
 	gtk_widget_show (dialog);
 	g_free (primary);
@@ -736,9 +736,9 @@ display_dialog_could_not_move_to_trash (GtkWidget * window,
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
 	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
-	g_signal_connect (G_OBJECT (dialog),
-               		  "response",
-               		  G_CALLBACK (gtk_widget_destroy), NULL);
+	g_signal_connect (dialog, "response",
+	       		  G_CALLBACK (gtk_widget_destroy),
+	                  NULL);
 	gtk_widget_show (dialog);
 	g_free (primary);
 }
@@ -814,9 +814,9 @@ display_dialog_could_not_delete (GtkWidget * window,
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
 	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
-	g_signal_connect (G_OBJECT (dialog),
-               		  "response",
-               		  G_CALLBACK (gtk_widget_destroy), NULL);
+	g_signal_connect (dialog, "response",
+	       		  G_CALLBACK (gtk_widget_destroy),
+	                  NULL);
 	gtk_widget_show (dialog);
 	g_free (primary);
 }
@@ -1144,8 +1144,7 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 		gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
 		gtk_widget_show (new1);
 
-		g_signal_connect (G_OBJECT (new1),
-		                  "activate",
+		g_signal_connect (new1, "activate",
 		                  G_CALLBACK (open_file_cb),
 		                  (gpointer) gsearch);
 	}
@@ -1170,8 +1169,7 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 			gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
 			gtk_widget_show (new1);
 
-			g_signal_connect (G_OBJECT (new1),
-			                  "activate",
+			g_signal_connect (new1, "activate",
 			                  G_CALLBACK (open_file_cb),
 		        	          (gpointer) gsearch);
 		}
@@ -1258,7 +1256,8 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 					   on the parent menu item.  Since submenus in gtk+ are automatically displayed when
 					   the user hovers over them, most will never click on the parent menu item.
 					   The work-around is to connect to "button-press-event". */
-					g_signal_connect (G_OBJECT(new1), "button-press-event", G_CALLBACK (open_file_event_cb),
+					g_signal_connect (new1, "button-press-event",
+					                  G_CALLBACK (open_file_event_cb),
 					                  (gpointer) gsearch);
 				}
 				else {
@@ -1300,8 +1299,7 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 	gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
 	gtk_widget_show (new1);
 
-	g_signal_connect (G_OBJECT (new1),
-	                  "activate",
+	g_signal_connect (new1, "activate",
 	                  G_CALLBACK (open_folder_cb),
 	                  (gpointer) gsearch);
 
@@ -1311,8 +1309,7 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 		gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
 		gtk_widget_show (new1);
 
-		g_signal_connect (G_OBJECT (new1),
-		                  "activate",
+		g_signal_connect (new1, "activate",
 		                  G_CALLBACK (copy_path_cb),
 		                  (gpointer) gsearch);
 	}
@@ -1331,8 +1328,7 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 	gtk_container_add (GTK_CONTAINER (gsearch->search_results_popup_menu), new1);
 	gtk_widget_show (new1);
 
-	g_signal_connect (G_OBJECT (new1),
-	                  "activate",
+	g_signal_connect (new1, "activate",
 	                  G_CALLBACK (move_to_trash_cb),
 	                  (gpointer) gsearch);
 
@@ -1349,8 +1345,7 @@ build_popup_menu_for_file (GSearchWindow * gsearch,
 		gtk_widget_set_sensitive (gsearch->search_results_save_results_as_item, FALSE);
 	}
 
-	g_signal_connect (G_OBJECT (gsearch->search_results_save_results_as_item),
-	                  "activate",
+	g_signal_connect (gsearch->search_results_save_results_as_item, "activate",
 	                  G_CALLBACK (show_file_selector_cb),
 	                  (gpointer) gsearch);
 }
@@ -1732,7 +1727,7 @@ show_file_selector_cb (GtkAction * action,
 		                               gsearch->save_results_as_default_filename);
 	}
 
-	g_signal_connect (G_OBJECT (file_chooser), "response",
+	g_signal_connect (file_chooser, "response",
 			  G_CALLBACK (save_results_cb), gsearch);
 
 	gtk_window_set_modal (GTK_WINDOW (file_chooser), TRUE);
@@ -1763,9 +1758,9 @@ display_dialog_could_not_save_no_name (GtkWidget * window)
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
 	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
-	g_signal_connect (G_OBJECT (dialog),
-	                  "response",
-	                  G_CALLBACK (gtk_widget_destroy), NULL);
+	g_signal_connect (dialog, "response",
+	                  G_CALLBACK (gtk_widget_destroy),
+	                  NULL);
 	gtk_widget_show (dialog);
 	g_free (primary);
 	g_free (secondary);
@@ -1795,9 +1790,9 @@ display_dialog_could_not_save_to (GtkWidget * window,
 	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
 	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
-	g_signal_connect (G_OBJECT (dialog),
-	                  "response",
-	                  G_CALLBACK (gtk_widget_destroy), NULL);
+	g_signal_connect (dialog, "response",
+	                  G_CALLBACK (gtk_widget_destroy),
+	                  NULL);
 	gtk_widget_show (dialog);
 	g_free (primary);
 }

@@ -330,8 +330,9 @@ run_add_edit_dialog (LogviewFilterManager *manager, LogviewFilter *filter)
 
   g_object_set_data_full (G_OBJECT (manager), "old_name", name, g_free);
 
-  g_signal_connect (G_OBJECT (dialog), "response",
-                    G_CALLBACK (on_dialog_add_edit_reponse), manager);
+  g_signal_connect (dialog, "response",
+                    G_CALLBACK (on_dialog_add_edit_reponse),
+                    manager);
   gtk_window_set_transient_for (GTK_WINDOW (dialog),
                                 GTK_WINDOW (manager));
   gtk_window_set_modal (GTK_WINDOW (dialog),

@@ -254,10 +254,12 @@ screenshot_dialog_new (GdkPixbuf *screenshot,
     gtk_frame_set_shadow_type (GTK_FRAME (aspect_frame), GTK_SHADOW_IN);
 
   /* setup dnd */
-  g_signal_connect (G_OBJECT (preview_darea), "drag_begin",
-		    G_CALLBACK (drag_begin), dialog);
-  g_signal_connect (G_OBJECT (preview_darea), "drag_data_get",
-		    G_CALLBACK (drag_data_get), dialog);
+  g_signal_connect (preview_darea, "drag_begin",
+                    G_CALLBACK (drag_begin),
+                    dialog);
+  g_signal_connect (preview_darea, "drag_data_get",
+                    G_CALLBACK (drag_data_get),
+                    dialog);
 
   gtk_widget_show_all (toplevel);
 
