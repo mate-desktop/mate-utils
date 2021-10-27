@@ -314,7 +314,6 @@ select_area_key_press (GtkWidget *window,
   return TRUE;
 }
 
-
 static gboolean
 draw (GtkWidget *window, cairo_t *cr, gpointer unused)
 {

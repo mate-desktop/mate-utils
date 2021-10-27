@@ -75,10 +75,7 @@ enum
 
 static guint loader_signals[LAST_SIGNAL] = { 0 };
 
-
-
 G_DEFINE_TYPE_WITH_PRIVATE (GdictSourceLoader, gdict_source_loader, G_TYPE_OBJECT);
-
 
 static void
 gdict_source_loader_finalize (GObject *object)

@@ -96,7 +96,6 @@ static void baobab_ringschart_get_item_rectangle (GtkWidget *chart,
 static void baobab_ringschart_pre_draw (GtkWidget *chart, cairo_t *cr);
 static void baobab_ringschart_post_draw (GtkWidget *chart, cairo_t *cr);
 
-
 static void
 baobab_ringschart_class_init (BaobabRingschartClass *class)
 {

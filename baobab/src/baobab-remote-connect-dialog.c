@@ -34,7 +34,6 @@
 
 #include "baobab.h"
 
-
 /* Translators: all the strings in this file are meant to map the
    similar strings inside caja-connect-server and should be
    translated the same way
@@ -55,7 +54,6 @@ struct _BaobabRemoteConnectDialogDetails {
 G_DEFINE_TYPE(BaobabRemoteConnectDialog, baobab_remote_connect_dialog, GTK_TYPE_DIALOG)
 
 #define RESPONSE_CONNECT GTK_RESPONSE_OK
-
 
 static void
 display_error_dialog (GError *error,
@@ -653,7 +651,6 @@ baobab_remote_connect_dialog_init (BaobabRemoteConnectDialog *dialog)
 				    1, get_method_description (&(methods[i])),
 				    -1);
 
-
 		if (methods[i].flags & DEFAULT_METHOD) {
 			gtk_combo_box_set_active_iter (GTK_COMBO_BOX (combo), &iter);
 		}
@@ -681,7 +678,6 @@ baobab_remote_connect_dialog_init (BaobabRemoteConnectDialog *dialog)
 	gtk_widget_show (label);
 	gtk_box_pack_start (GTK_BOX (hbox),
 			    label, FALSE, FALSE, 0);
-
 
 	dialog->details->grid = grid = gtk_grid_new ();
 	gtk_grid_set_row_spacing (GTK_GRID (grid), 6);

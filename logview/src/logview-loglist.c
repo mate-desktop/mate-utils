@@ -169,7 +169,6 @@ log_changed_cb (LogviewLog *log,
   gtk_tree_iter_free (iter);
 }
 
-
 static void
 tree_selection_changed_cb (GtkTreeSelection *selection,
                            gpointer user_data)

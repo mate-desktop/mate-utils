@@ -329,7 +329,6 @@ look_in_folder_changed_cb (GtkWidget * widget,
 	g_free (value);
 }
 
-
 static gint
 display_dialog_file_open_limit (GtkWidget * window,
                                   gint count)
@@ -1710,7 +1709,6 @@ drag_file_cb  (GtkWidget * widget,
 	g_list_free_full (list, (GDestroyNotify) gtk_tree_path_free);
 	g_free (uri_list);
 }
-
 
 void
 show_file_selector_cb (GtkAction * action,

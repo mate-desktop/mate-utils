@@ -97,9 +97,7 @@ enum
   PROP_SOURCE_LOADER
 };
 
-
 G_DEFINE_TYPE (GdictPrefDialog, gdict_pref_dialog, GTK_TYPE_DIALOG);
-
 
 static gboolean
 select_active_source_name (GtkTreeModel *model,

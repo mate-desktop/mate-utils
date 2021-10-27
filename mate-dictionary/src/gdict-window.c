@@ -96,10 +96,7 @@ static const GtkTargetEntry drop_types[] =
 };
 static const guint n_drop_types = G_N_ELEMENTS (drop_types);
 
-
-
 G_DEFINE_TYPE (GdictWindow, gdict_window, GTK_TYPE_WINDOW);
-
 
 static void
 gdict_window_finalize (GObject *gobject)

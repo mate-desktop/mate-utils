@@ -744,8 +744,6 @@ get_themed_icon_pixbuf (GThemedIcon * icon,
 	return pixbuf;
 }
 
-
-
 GdkPixbuf *
 get_file_pixbuf (GSearchWindow * gsearch,
                  GFileInfo * file_info)

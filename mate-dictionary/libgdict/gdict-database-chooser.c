@@ -110,7 +110,6 @@ G_DEFINE_TYPE_WITH_PRIVATE (GdictDatabaseChooser,
                             gdict_database_chooser,
                             GTK_TYPE_BOX);
 
-
 static void
 set_gdict_context (GdictDatabaseChooser *chooser,
 		   GdictContext         *context)
