@@ -66,6 +66,10 @@ gdict_context_get_type (void)
         (GClassInitFunc) gdict_context_class_init,
         NULL,                       /* class_finalize */
         NULL,                       /* class_data */
+        0,                          /* instance_size */
+        0,                          /* n_preallocs */
+        NULL,                       /* instance_init */
+        NULL                        /* value_table */
       };
 
       context_type = g_type_register_static (G_TYPE_INTERFACE,

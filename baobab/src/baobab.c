@@ -1223,7 +1223,7 @@ main (int argc, char *argv[])
 	const GOptionEntry options[] = {
 		{"version", 'V', G_OPTION_FLAG_NO_ARG, G_OPTION_ARG_CALLBACK, show_version, N_("Show version"), NULL},
 		{G_OPTION_REMAINING, 0, 0, G_OPTION_ARG_FILENAME_ARRAY, &directories, NULL, N_("[DIRECTORY]")},
-		{NULL}
+		{ NULL, 0, 0, G_OPTION_ARG_NONE, NULL, NULL, NULL }
 	};
 	GOptionContext *context;
 	GError *error = NULL;

@@ -221,7 +221,7 @@ click_expander_cb (GObject * object,
 		                               GDK_HINT_MIN_SIZE);
 	}
 	else {
-		GdkGeometry default_geometry = {MINIMUM_WINDOW_WIDTH, MINIMUM_WINDOW_HEIGHT};
+		GdkGeometry default_geometry = { MINIMUM_WINDOW_WIDTH, MINIMUM_WINDOW_HEIGHT, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0 };
 
 		gtk_widget_hide (gsearch->available_options_vbox);
 		gtk_window_set_geometry_hints (GTK_WINDOW (gsearch->window),

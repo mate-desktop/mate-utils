@@ -1320,7 +1320,7 @@ main (int argc, char *argv[])
     { "border-effect", 'e', 0, G_OPTION_ARG_STRING, &border_effect_arg, N_("Effect to add to the border (shadow, border or none)"), N_("effect") },
     { "interactive", 'i', 0, G_OPTION_ARG_NONE, &interactive_arg, N_("Interactively set options"), NULL },
     { "version", 0, 0, G_OPTION_ARG_NONE, &version_arg, N_("Print version information and exit"), NULL },
-    { NULL },
+    { NULL, 0, 0, G_OPTION_ARG_NONE, NULL, NULL, NULL },
   };
 
 #ifdef ENABLE_NLS
