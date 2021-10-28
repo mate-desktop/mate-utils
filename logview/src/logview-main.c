@@ -64,7 +64,7 @@ create_option_context (void)
       logview_show_version_and_quit, N_("Show the application's version"), NULL },
     { G_OPTION_REMAINING, '\0', 0, G_OPTION_ARG_FILENAME_ARRAY, &log_files,
       NULL, N_("[LOGFILE...]") },
-    { NULL },
+    { NULL, 0, 0, G_OPTION_ARG_NONE, NULL, NULL, NULL },
   };
 
   context = g_option_context_new (_(" - Browse and monitor logs"));

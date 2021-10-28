@@ -175,7 +175,7 @@ static GOptionEntry GSearchGOptionEntries[] = {
 	{ "hidden", 0, 0, G_OPTION_ARG_NONE, &GSearchGOptionArguments.hidden, NULL, NULL },
 	{ "follow", 0, 0, G_OPTION_ARG_NONE, &GSearchGOptionArguments.follow, NULL, NULL },
 	{ "mounts", 0, 0, G_OPTION_ARG_NONE, &GSearchGOptionArguments.mounts, NULL, NULL },
-	{ NULL }
+	{ NULL, 0, 0, G_OPTION_ARG_NONE, NULL, NULL, NULL }
 };
 
 static gchar * find_command_default_name_argument;
@@ -3008,7 +3008,8 @@ gsearch_window_get_type (void)
 			NULL,
 			sizeof (GSearchWindow),
 			0,
-			(GInstanceInitFunc)(void (*)(void)) gsearch_app_create
+			(GInstanceInitFunc)(void (*)(void)) gsearch_app_create,
+			NULL
 		};
 		object_type = g_type_register_static (GTK_TYPE_WINDOW, "GSearchWindow", &object_info, 0);
 	}

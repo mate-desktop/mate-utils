@@ -79,7 +79,7 @@ static gboolean  opt_writable = FALSE;
 static const GOptionEntry opt_entries[] =
 {
   { "writable", 'w', 0, G_OPTION_ARG_NONE, &opt_writable, N_("Allow writing to the image"), NULL},
-  { NULL }
+  { NULL, 0, 0, G_OPTION_ARG_NONE, NULL, NULL, NULL }
 };
 
 /* ---------------------------------------------------------------------------------------------------- */

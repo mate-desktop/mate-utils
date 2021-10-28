@@ -331,7 +331,7 @@ gdict_init (int *argc, char ***argv)
        N_("Database to use"), N_("db") },
     { G_OPTION_REMAINING, 0, 0, G_OPTION_ARG_STRING_ARRAY, &lookup_words,
        N_("Words to look up"), N_("word") },
-    { NULL },
+    { NULL, 0, 0, G_OPTION_ARG_NONE, NULL, NULL, NULL },
   };
 
   g_assert (singleton == NULL);
