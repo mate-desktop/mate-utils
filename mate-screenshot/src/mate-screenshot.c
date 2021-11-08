@@ -1180,8 +1180,10 @@ load_options (void)
   /* Find various dirs */
   last_save_dir = g_settings_get_string (settings,
                                          LAST_SAVE_DIRECTORY_KEY);
-  if (!last_save_dir || !last_save_dir[0])
+
+  if (*last_save_dir == '\0')
     {
+      g_free (last_save_dir);
       last_save_dir = get_desktop_dir ();
     }
   else if (last_save_dir[0] == '~')
