@@ -407,8 +407,7 @@ gdict_client_context_set_property (GObject      *object,
   switch (prop_id)
     {
     case PROP_HOSTNAME:
-      if (priv->hostname)
-        g_free (priv->hostname);
+      g_free (priv->hostname);
       priv->hostname = g_strdup (g_value_get_string (value));
       gdict_client_context_clear_hostinfo (GDICT_CLIENT_CONTEXT (object));
       break;
@@ -416,8 +415,7 @@ gdict_client_context_set_property (GObject      *object,
       priv->port = g_value_get_uint (value);
       break;
     case PROP_CLIENT_NAME:
-      if (priv->client_name)
-        g_free (priv->client_name);
+      g_free (priv->client_name);
       priv->client_name = g_strdup (g_value_get_string (value));
       break;
     case GDICT_CONTEXT_PROP_LOCAL_ONLY:
@@ -469,8 +467,7 @@ gdict_client_context_finalize (GObject *object)
   /* force disconnection */
   gdict_client_context_force_disconnect (context);
 
-  if (priv->command)
-    gdict_command_free (priv->command);
+  gdict_command_free (priv->command);
 
   if (priv->commands_queue)
     {
@@ -479,11 +476,8 @@ gdict_client_context_finalize (GObject *object)
       priv->commands_queue = NULL;
     }
 
-  if (priv->client_name)
-    g_free (priv->client_name);
-
-  if (priv->hostname)
-    g_free (priv->hostname);
+  g_free (priv->client_name);
+  g_free (priv->hostname);
 
 #ifdef ENABLE_IPV6
   if (priv->host6info)
