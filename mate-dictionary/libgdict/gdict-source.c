@@ -395,8 +395,7 @@ gdict_source_create_context (GdictSource           *source,
 
       context = gdict_client_context_new (hostname, port);
 
-      if (hostname)
-        g_free (hostname);
+      g_free (hostname);
       }
       break;
     default:

@@ -270,9 +270,7 @@ log_read_dates (const char **buffer_lines, time_t current)
     }
   }
 
-  if (date_string) {
-    g_free (date_string);
-  }
+  g_free (date_string);
 
   /* sort the days in chronological order */
   days = g_slist_sort (days, days_compare);
