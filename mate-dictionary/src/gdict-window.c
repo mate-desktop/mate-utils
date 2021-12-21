@@ -235,7 +235,7 @@ gdict_window_set_sidebar_visible (GdictWindow *window,
     {
       GtkAction *action;
 
-      window->sidebar_visible = is_visible;
+      window->sidebar_visible = (is_visible != FALSE);
 
       if (window->sidebar_visible)
 	gtk_widget_show (window->sidebar_frame);
@@ -856,21 +856,21 @@ gdict_window_load_state (GdictWindow *window)
       window->default_height = -1;
     }
 
-  window->is_maximized = g_key_file_get_boolean (state_key, "WindowState", "IsMaximized", &error);
+  window->is_maximized = (g_key_file_get_boolean (state_key, "WindowState", "IsMaximized", &error) != FALSE);
   if (error != NULL)
     {
       g_clear_error (&error);
       window->is_maximized = FALSE;
     }
 
-  window->sidebar_visible = g_key_file_get_boolean (state_key, "WindowState", "SidebarVisible", &error);
+  window->sidebar_visible = (g_key_file_get_boolean (state_key, "WindowState", "SidebarVisible", &error) != FALSE);
   if (error != NULL)
     {
       g_clear_error (&error);
       window->sidebar_visible = FALSE;
     }
 
-  window->statusbar_visible = g_key_file_get_boolean (state_key, "WindowState", "StatusbarVisible", &error);
+  window->statusbar_visible = (g_key_file_get_boolean (state_key, "WindowState", "StatusbarVisible", &error) != FALSE);
   if (error != NULL)
     {
       g_clear_error (&error);
@@ -1082,7 +1082,7 @@ gdict_window_cmd_view_sidebar (GtkToggleAction *action,
 {
   g_assert (GDICT_IS_WINDOW (window));
 
-  window->sidebar_visible = gtk_toggle_action_get_active (action);
+  window->sidebar_visible = (gtk_toggle_action_get_active (action) != FALSE);
 
   if (window->sidebar_visible)
     gtk_widget_show (window->sidebar_frame);
@@ -1096,7 +1096,7 @@ gdict_window_cmd_view_statusbar (GtkToggleAction *action,
 {
   g_assert (GDICT_IS_WINDOW (window));
 
-  window->statusbar_visible = gtk_toggle_action_get_active (action);
+  window->statusbar_visible = (gtk_toggle_action_get_active (action) != FALSE);
 
   if (window->statusbar_visible)
     gtk_widget_show (window->status);

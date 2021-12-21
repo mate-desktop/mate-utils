@@ -1563,7 +1563,7 @@ set_cursor_if_appropriate (GdictDefbox *defbox,
 
   if (hovering != defbox->priv->is_hovering)
     {
-      defbox->priv->is_hovering = hovering;
+      defbox->priv->is_hovering = (hovering != FALSE);
 
       if (defbox->priv->is_hovering)
         gdk_window_set_cursor (gtk_text_view_get_window (text_view,
@@ -2060,7 +2060,7 @@ gdict_defbox_set_show_find (GdictDefbox *defbox,
   if (priv->show_find == show_find)
     return;
 
-  priv->show_find = show_find;
+  priv->show_find = (show_find != FALSE);
   if (priv->show_find)
     {
       gtk_widget_show_all (priv->find_pane);

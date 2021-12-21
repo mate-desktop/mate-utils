@@ -419,7 +419,7 @@ gdict_client_context_set_property (GObject      *object,
       priv->client_name = g_strdup (g_value_get_string (value));
       break;
     case GDICT_CONTEXT_PROP_LOCAL_ONLY:
-      priv->local_only = g_value_get_boolean (value);
+      priv->local_only = (g_value_get_boolean (value) != FALSE);
       break;
     default:
       G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
