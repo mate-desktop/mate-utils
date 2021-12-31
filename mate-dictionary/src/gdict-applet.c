@@ -1183,7 +1183,6 @@ gdict_applet_factory (MatePanelApplet *applet,
 		      gpointer     data)
 {
   gboolean retval = FALSE;
-  gchar *ui_path;
   GdictApplet *dictionary_applet = GDICT_APPLET (applet);
   GdictAppletPrivate *priv = dictionary_applet->priv;
 
@@ -1199,10 +1198,9 @@ gdict_applet_factory (MatePanelApplet *applet,
 								gdict_applet_menu_actions,
 								G_N_ELEMENTS (gdict_applet_menu_actions),
 								applet);
-      ui_path = g_build_filename(PKGDATADIR, "dictionary-applet-menu.xml", NULL);
-      mate_panel_applet_setup_menu_from_file (applet, ui_path,
+      mate_panel_applet_setup_menu_from_file (applet,
+                                              PKGDATADIR "/dictionary-applet-menu.xml",
                                               priv->context_menu_action_group);
-      g_free (ui_path);
 
       gtk_widget_show (GTK_WIDGET (applet));
 
