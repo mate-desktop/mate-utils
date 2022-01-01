@@ -127,7 +127,6 @@ gdict_window_dispose (GObject *gobject)
   if (window->settings != NULL)
     {
       g_object_unref (window->settings);
-
       window->settings = NULL;
     }
 
@@ -185,6 +184,8 @@ gdict_window_dispose (GObject *gobject)
       g_object_unref (window->busy_cursor);
       window->busy_cursor = NULL;
     }
+
+  g_clear_pointer (&window->sidebar_page, g_free);
 
   G_OBJECT_CLASS (gdict_window_parent_class)->dispose (gobject);
 }
