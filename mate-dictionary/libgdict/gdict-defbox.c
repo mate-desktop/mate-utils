@@ -200,6 +200,8 @@ gdict_defbox_dispose (GObject *gobject)
       priv->regular_cursor = NULL;
     }
 
+  g_clear_pointer (&priv->word, g_free);
+
   G_OBJECT_CLASS (gdict_defbox_parent_class)->dispose (gobject);
 }
 
@@ -2548,6 +2550,7 @@ gdict_defbox_lookup (GdictDefbox *defbox,
   				       G_CALLBACK (error_cb),
   				       defbox);
 
+  g_free (priv->word);
   priv->word = g_strdup (word);
   g_object_notify (G_OBJECT (defbox), "word");
 
