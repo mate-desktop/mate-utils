@@ -1281,17 +1281,12 @@ loop_dialog_screenshot (void)
     }
   else
     {
-      if (interactive_arg)
-        {
-          /* HACK: give time to the dialog to actually disappear.
-           * We don't have any way to tell when the compositor has finished
-           * re-drawing.
-           */
-          g_timeout_add (200,
-                         prepare_screenshot_timeout, NULL);
-        }
-      else
-        g_idle_add (prepare_screenshot_timeout, NULL);
+      /* HACK: give time to the dialog to actually disappear.
+       * We don't have any way to tell when the compositor has finished
+       * re-drawing.
+       */
+      g_timeout_add (200,
+                     prepare_screenshot_timeout, NULL);
     }
 
   gtk_main ();
