@@ -125,7 +125,7 @@ AC_SUBST(GTK_CFLAGS)
 AC_SUBST(GTK_LIBS)
 
 AC_ARG_ENABLE([disk-image-mounter],
-               [AC_HELP_STRING([--enable-disk-image-mounter=@<:@yes/no@:>@],
+               [AS_HELP_STRING([--enable-disk-image-mounter=@<:@yes/no@:>@],
                                [Whether to build the Disk Image Mounter utility])],
                [],
                [enable_disk_image_mounter=yes])
@@ -185,7 +185,7 @@ PKG_CHECK_MODULES(XSHAPE, xext x11,
 AC_SUBST(XSHAPE_LIBS)
 
 AC_ARG_ENABLE([gdict-applet],
-               [AC_HELP_STRING([--enable-gdict-applet=@<:@yes/no@:>@],
+               [AS_HELP_STRING([--enable-gdict-applet=@<:@yes/no@:>@],
                                [Whether to build the Dictionary mate-panel applet])],
                [],
                [enable_gdict_applet=yes])
@@ -230,7 +230,7 @@ AC_SUBST(GDICT_DEBUG_CFLAGS)
 dnl IPv6 support
 AC_MSG_CHECKING([whether to enable IPv6])
 AC_ARG_ENABLE([ipv6],
-              [AC_HELP_STRING([--enable-ipv6=@<:@yes/no@:>@],
+              [AS_HELP_STRING([--enable-ipv6=@<:@yes/no@:>@],
                               [Enables compilation of IPv6 code])],
               [],
               [enable_ipv6=yes])
@@ -276,7 +276,7 @@ AS_IF([test "x$have_ipv6" = "xyes"],
 dnl mate-search-tool checks
 withval=""
 AC_ARG_WITH([grep],
-            AC_HELP_STRING([--with-grep=@<:@grep command@:>@]
+            AS_HELP_STRING([--with-grep=@<:@grep command@:>@]
                            [Specify where to find the grep binary]),
             [
               AS_IF([test x$withval != x],
@@ -297,7 +297,7 @@ AC_SUBST(GREP_COMMAND)
 
 dnl logview checks
 AC_ARG_ENABLE([zlib],
-              [AC_HELP_STRING([--disable-zlib], [disable zlib support])])
+              [AS_HELP_STRING([--disable-zlib], [disable zlib support])])
 msg_zlib=no
 Z_LIBS=
 
