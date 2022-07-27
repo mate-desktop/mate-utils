@@ -62,23 +62,17 @@ display_error_dialog (GError *error,
 {
 	GtkWidget *dlg;
 	char *parse_name;
-	char *error_message;
 
 	parse_name = g_file_get_parse_name (location);
-	error_message = g_strdup_printf (_("Cannot scan location \"%s\""),
-					 parse_name);
-	g_free (parse_name);
-
 	dlg = gtk_message_dialog_new (parent,
-				      GTK_DIALOG_DESTROY_WITH_PARENT,
-				      GTK_MESSAGE_ERROR,
-				      GTK_BUTTONS_OK,
-				      error_message, NULL);
+	                              GTK_DIALOG_DESTROY_WITH_PARENT,
+	                              GTK_MESSAGE_ERROR,
+	                              GTK_BUTTONS_OK,
+	                              _("Cannot scan location \"%s\""), parse_name);
+	g_free (parse_name);
 
 	gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dlg),
 						  "%s", error->message);
-
-	g_free (error_message);
 
 	gtk_dialog_run (GTK_DIALOG (dlg));
 	gtk_widget_destroy (dlg);
