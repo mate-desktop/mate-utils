@@ -28,6 +28,8 @@ void on_about_activate (GtkMenuItem *menuitem, gpointer user_data);
 void on_menuscanhome_activate (GtkMenuItem *menuitem, gpointer user_data);
 void on_menuallfs_activate (GtkMenuItem *menuitem, gpointer user_data);
 void on_menuscandir_activate (GtkMenuItem *menuitem, gpointer user_data);
+void on_menu_collapse_activate (GtkMenuItem *menuitem, gpointer user_data);
+void on_menu_expand_activate (GtkMenuItem *menuitem, gpointer user_data);
 void on_menu_stop_activate (GtkMenuItem *menuitem, gpointer user_data);
 void on_menu_rescan_activate (GtkMenuItem *menuitem, gpointer user_data);
 void on_tbscandir_clicked (GtkToolButton *toolbutton, gpointer user_data);
