@@ -7,17 +7,17 @@
 # Kenneth Jenssen <kennethjenssen@yahoo.com>, 2018
 # Kim Malmo <berencamlost@msn.com>, 2018
 # b84df44fb72862b85bae7a669218c6c2, 2019
-# heskjestad <cato@heskjestad.xyz>, 2021
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
 # Allan Nordhøy <epost@anotheragency.no>, 2021
+# heskjestad <cato@heskjestad.xyz>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-utils 1.25.1\n"
+"Project-Id-Version: mate-utils 1.26.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
-"POT-Creation-Date: 2021-06-25 18:01+0200\n"
+"POT-Creation-Date: 2022-10-29 15:36+0200\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>, 2021\n"
+"Last-Translator: heskjestad <cato@heskjestad.xyz>, 2021\n"
 "Language-Team: Norwegian Bokmål (https://www.transifex.com/mate/teams/13566/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -46,14 +46,14 @@ msgstr "Brukervalg for diskanalyse"
 
 #: baobab/data/baobab-dialog-scan-props.ui:32
 #: baobab/data/baobab-main-window.ui:129 logview/src/logview-window.c:825
-#: mate-dictionary/src/gdict-applet.c:1173
-#: mate-dictionary/src/gdict-window.c:1262
+#: mate-dictionary/src/gdict-applet.c:1172
+#: mate-dictionary/src/gdict-window.c:1260
 #: mate-screenshot/data/mate-screenshot.ui:41
 msgid "_Help"
 msgstr "_Hjelp"
 
 #: baobab/data/baobab-dialog-scan-props.ui:48 logview/src/logview-window.c:829
-#: mate-dictionary/src/gdict-window.c:1273
+#: mate-dictionary/src/gdict-window.c:1271
 msgid "_Close"
 msgstr "_Lukk"
 
@@ -86,7 +86,7 @@ msgid "S_can Remote Folder..."
 msgstr "S_øk i ekstern mappe …"
 
 #: baobab/data/baobab-main-window.ui:74 logview/src/logview-window.c:822
-#: mate-dictionary/src/gdict-window.c:1259
+#: mate-dictionary/src/gdict-window.c:1257
 msgid "_Edit"
 msgstr "_Rediger"
 
@@ -99,7 +99,7 @@ msgid "_Collapse All"
 msgstr "S_lå sammen alle"
 
 #: baobab/data/baobab-main-window.ui:101 logview/src/logview-window.c:823
-#: mate-dictionary/src/gdict-window.c:1260
+#: mate-dictionary/src/gdict-window.c:1258
 msgid "_View"
 msgstr "_Vis"
 
@@ -116,12 +116,12 @@ msgid "All_ocated Space"
 msgstr "All_okert plass"
 
 #: baobab/data/baobab-main-window.ui:136 logview/src/logview-window.c:851
-#: mate-dictionary/src/gdict-window.c:1312
+#: mate-dictionary/src/gdict-window.c:1310
 msgid "_Contents"
 msgstr "_Innhold"
 
 #: baobab/data/baobab-main-window.ui:183 baobab/src/baobab.c:1237
-#: baobab/src/callbacks.c:103
+#: baobab/src/callbacks.c:102
 msgid "Disk Usage Analyzer"
 msgstr "Analyse av diskplass"
 
@@ -171,7 +171,7 @@ msgstr "Overvåk hjem"
 
 #: baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in:10
 msgid "Whether any change to the home directory should be monitored."
-msgstr "Om endringer i hjemmekatalogen skal overvåkes."
+msgstr "Om endringer i hjemmemappa skal overvåkes."
 
 #: baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in:14
 msgid "Excluded partitions URIs"
@@ -253,11 +253,11 @@ msgstr "brukt:"
 msgid "available:"
 msgstr "tilgjengelig:"
 
-#: baobab/src/baobab.c:243 baobab/src/baobab.c:300 baobab/src/callbacks.c:268
+#: baobab/src/baobab.c:243 baobab/src/baobab.c:300 baobab/src/callbacks.c:267
 msgid "Calculating percentage bars..."
 msgstr "Beregner prosentsøylene …"
 
-#: baobab/src/baobab.c:254 baobab/src/baobab.c:1300 baobab/src/callbacks.c:272
+#: baobab/src/baobab.c:254 baobab/src/baobab.c:1300 baobab/src/callbacks.c:271
 msgid "Ready"
 msgstr "Klar"
 
@@ -286,7 +286,7 @@ msgstr "Kunne ikke initiere overvåking"
 
 #: baobab/src/baobab.c:594
 msgid "Changes to your home folder will not be monitored."
-msgstr "Endringer i hjemmekatalogen vil ikke overvåkes."
+msgstr "Endringer i hjemmemappa vil ikke overvåkes."
 
 #: baobab/src/baobab.c:913
 msgid "Move to parent folder"
@@ -318,11 +318,11 @@ msgstr "Vis versjon"
 
 #: baobab/src/baobab.c:1225
 msgid "[DIRECTORY]"
-msgstr "[KATALOG]"
+msgstr "[MAPPE]"
 
 #: baobab/src/baobab.c:1257
 msgid "Too many arguments. Only one directory can be specified."
-msgstr "For mange argumenter. Du kan kun oppgi en katalog."
+msgstr "For mange argumenter. Du kan kun oppgi ei mappe."
 
 #: baobab/src/baobab.c:1274
 msgid "Could not detect any mount point."
@@ -332,39 +332,39 @@ msgstr "Fant ingen monteringspunkter."
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr "Diskbruk kan ikke analyseres uten monteringspunkter."
 
-#: baobab/src/baobab-chart.c:204
+#: baobab/src/baobab-chart.c:203
 msgid "Maximum depth"
 msgstr "Maksimal dybde"
 
-#: baobab/src/baobab-chart.c:205
+#: baobab/src/baobab-chart.c:204
 msgid "The maximum depth drawn in the chart from the root"
 msgstr "Maksimal dybde som tegnes i diagrammet fra roten"
 
-#: baobab/src/baobab-chart.c:214
+#: baobab/src/baobab-chart.c:213
 msgid "Chart model"
 msgstr "Modell for diagram"
 
-#: baobab/src/baobab-chart.c:215
+#: baobab/src/baobab-chart.c:214
 msgid "Set the model of the chart"
 msgstr "Sett modell for diagram"
 
-#: baobab/src/baobab-chart.c:222
+#: baobab/src/baobab-chart.c:221
 msgid "Chart root node"
 msgstr "Rotnode for diagram"
 
-#: baobab/src/baobab-chart.c:223
+#: baobab/src/baobab-chart.c:222
 msgid "Set the root node from the model"
 msgstr "Sett rot-node fra modellen"
 
-#: baobab/src/baobab-chart.c:1713
+#: baobab/src/baobab-chart.c:1708
 msgid "Cannot create pixbuf image!"
 msgstr "Kan ikke opprette pixbuf-bilde!"
 
-#: baobab/src/baobab-chart.c:1723
+#: baobab/src/baobab-chart.c:1718
 msgid "Save Snapshot"
 msgstr "Lagre snapshot"
 
-#: baobab/src/baobab-chart.c:1750
+#: baobab/src/baobab-chart.c:1745
 msgid "_Image type:"
 msgstr "B_ildetype:"
 
@@ -392,89 +392,89 @@ msgstr "Total størrelse"
 msgid "Available"
 msgstr "Tilgjengelig"
 
-#: baobab/src/baobab-remote-connect-dialog.c:70
+#: baobab/src/baobab-remote-connect-dialog.c:68
 #, c-format
 msgid "Cannot scan location \"%s\""
 msgstr "Kan ikke søke gjennom plasseringen| «%s»"
 
-#: baobab/src/baobab-remote-connect-dialog.c:168
+#: baobab/src/baobab-remote-connect-dialog.c:166
 msgid "Custom Location"
 msgstr "Egendefinert plassering"
 
-#: baobab/src/baobab-remote-connect-dialog.c:170
+#: baobab/src/baobab-remote-connect-dialog.c:168
 msgid "SSH"
 msgstr "SSH"
 
-#: baobab/src/baobab-remote-connect-dialog.c:173
+#: baobab/src/baobab-remote-connect-dialog.c:171
 msgid "Public FTP"
 msgstr "Offentlig FTP"
 
-#: baobab/src/baobab-remote-connect-dialog.c:175
+#: baobab/src/baobab-remote-connect-dialog.c:173
 msgid "FTP (with login)"
 msgstr "FTP (med innlogging)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:178
+#: baobab/src/baobab-remote-connect-dialog.c:176
 msgid "Windows share"
 msgstr "Delt ressurs"
 
-#: baobab/src/baobab-remote-connect-dialog.c:180
+#: baobab/src/baobab-remote-connect-dialog.c:178
 msgid "WebDAV (HTTP)"
 msgstr "WebDAV (HTTP)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:182
+#: baobab/src/baobab-remote-connect-dialog.c:180
 msgid "Secure WebDAV (HTTPS)"
 msgstr "Sikker WebDAV (HTTPS)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:242
+#: baobab/src/baobab-remote-connect-dialog.c:240
 msgid "Cannot Connect to Server. You must enter a name for the server."
 msgstr "Kan ikke koble til tjener. Du må oppgi et navn for tjeneren"
 
-#: baobab/src/baobab-remote-connect-dialog.c:245
+#: baobab/src/baobab-remote-connect-dialog.c:243
 msgid "Please enter a name and try again."
 msgstr "Oppgi et nytt navn og prøv igjen."
 
-#: baobab/src/baobab-remote-connect-dialog.c:439
+#: baobab/src/baobab-remote-connect-dialog.c:437
 msgid "_Location (URI):"
 msgstr "_Plassering (URI):"
 
-#: baobab/src/baobab-remote-connect-dialog.c:455
+#: baobab/src/baobab-remote-connect-dialog.c:453
 msgid "_Server:"
 msgstr "_Tjener:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:468
+#: baobab/src/baobab-remote-connect-dialog.c:466
 msgid "Optional information:"
 msgstr "Valgfri informasjon:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:477
+#: baobab/src/baobab-remote-connect-dialog.c:475
 msgid "_Share:"
 msgstr "Delt re_ssurs:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:492
+#: baobab/src/baobab-remote-connect-dialog.c:490
 #: mate-dictionary/data/mate-dictionary-source.ui:121
 msgid "_Port:"
 msgstr "_Port:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:506
+#: baobab/src/baobab-remote-connect-dialog.c:504
 msgid "_Folder:"
 msgstr "_Mappe:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:520
+#: baobab/src/baobab-remote-connect-dialog.c:518
 msgid "_User Name:"
 msgstr "Br_ukernavn:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:535
+#: baobab/src/baobab-remote-connect-dialog.c:533
 msgid "_Domain Name:"
 msgstr "_Domenenavn:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:592
+#: baobab/src/baobab-remote-connect-dialog.c:590
 msgid "Connect to Server"
 msgstr "Koble til tjener"
 
-#: baobab/src/baobab-remote-connect-dialog.c:608
+#: baobab/src/baobab-remote-connect-dialog.c:606
 msgid "Service _type:"
 msgstr "_Type tjeneste:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:726
+#: baobab/src/baobab-remote-connect-dialog.c:722
 msgid "_Scan"
 msgstr "_Søk"
 
@@ -494,7 +494,7 @@ msgstr ""
 msgid "_Rescan"
 msgstr "Oppdate_r"
 
-#: baobab/src/baobab-treeview.c:222 gsearchtool/src/gsearchtool.c:2453
+#: baobab/src/baobab-treeview.c:222 gsearchtool/src/gsearchtool.c:2447
 msgid "Folder"
 msgstr "Mappe"
 
@@ -502,7 +502,7 @@ msgstr "Mappe"
 msgid "Usage"
 msgstr "Bruk"
 
-#: baobab/src/baobab-treeview.c:258 gsearchtool/src/gsearchtool.c:2466
+#: baobab/src/baobab-treeview.c:258 gsearchtool/src/gsearchtool.c:2460
 msgid "Size"
 msgstr "Størrelse"
 
@@ -535,7 +535,7 @@ msgstr "Kunne ikke analysere diskbruk"
 msgid "_Open Folder"
 msgstr "_Åpne mappe"
 
-#: baobab/src/baobab-utils.c:349 gsearchtool/src/gsearchtool-callbacks.c:1330
+#: baobab/src/baobab-utils.c:349 gsearchtool/src/gsearchtool-callbacks.c:1326
 msgid "Mo_ve to Trash"
 msgstr "Fl_ytt til papirkurven"
 
@@ -605,15 +605,15 @@ msgstr ""
 "Du skal ha fått en kopi av GNU General Public License med dette programmet. "
 "Hvis ikke, se <https://www.gnu.org/licenses/>."
 
-#: baobab/src/callbacks.c:105
+#: baobab/src/callbacks.c:104
 msgid "About Disk Usage Analyzer"
 msgstr "Om Diskbrukanalyse"
 
-#: baobab/src/callbacks.c:106
+#: baobab/src/callbacks.c:105
 msgid "Analyze your disk usage through a graphical tool."
 msgstr "Analyser diskbruk med et grafisk verktøy."
 
-#: baobab/src/callbacks.c:107
+#: baobab/src/callbacks.c:106
 msgid ""
 "Copyright © 2005-2010 Fabio Marzocca\n"
 "Copyright © 2011-2021 MATE developers"
@@ -621,7 +621,7 @@ msgstr ""
 "Opphavsrett © 2005-2010 Fabio Marzocca\n"
 "Opphavsrett © 2011-2021 MATE-utviklerne"
 
-#: baobab/src/callbacks.c:113 logview/src/logview-about.h:62
+#: baobab/src/callbacks.c:112 logview/src/logview-about.h:62
 #: mate-dictionary/src/gdict-about.c:53
 msgid "translator-credits"
 msgstr ""
@@ -636,12 +636,12 @@ msgstr ""
 "\n"
 "Av totalt 11597 tekststrenger."
 
-#: baobab/src/callbacks.c:211 gsearchtool/src/gsearchtool-callbacks.c:506
-#: gsearchtool/src/gsearchtool-callbacks.c:879
+#: baobab/src/callbacks.c:210 gsearchtool/src/gsearchtool-callbacks.c:505
+#: gsearchtool/src/gsearchtool-callbacks.c:878
 msgid "The document does not exist."
 msgstr "Dokumentet fins ikke."
 
-#: baobab/src/callbacks.c:292
+#: baobab/src/callbacks.c:291
 msgid "The folder does not exist."
 msgstr "Mappen fins ikke."
 
@@ -916,63 +916,63 @@ msgstr ""
 "Denne nøkkelen bestemmer om «Ekskluder andre filsystemer» alternativet skal "
 "gjelde når søkeverktøyet starter."
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:169
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:168
 msgid "File is not a valid .desktop file"
 msgstr "Filen er ikke en gyldig .desktop-fil"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:194
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:193
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
 msgstr "Kjenner ikke igjen versjon «%s» i desktop-fil"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:976
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:975
 #, c-format
 msgid "Starting %s"
 msgstr "Starter %s"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1118
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1117
 msgid "Application does not accept documents on command line"
 msgstr "Programmet tar ikke dokumenter på kommandolinjen"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1186
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1185
 #, c-format
 msgid "Unrecognized launch option: %d"
 msgstr "Kjenner ikke igjen oppstartsalternativ: %d"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1402
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1401
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 msgstr ""
 "Kan ikke gi URIer til dokumenter til en oppføring av type «Types=Link»"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1423
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1422
 msgid "Not a launchable item"
 msgstr "Ikke en startbar oppføring"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:234
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:233
 msgid "Disable connection to session manager"
 msgstr "Slå av tilkobling til øktbehandler"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:239
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:238
 msgid "Specify file containing saved configuration"
 msgstr "Oppgi fil som inneholder lagret oppsett"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:239
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:238
 msgid "FILE"
 msgstr "FIL"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:244
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:243
 msgid "Specify session management ID"
 msgstr "Oppgi øktbehandlings-ID"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:244
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:243
 msgid "ID"
 msgstr "ID"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:270
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:269
 msgid "Session management options:"
 msgstr "Alternativer for øktbehandling:"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:271
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:270
 msgid "Show session management options"
 msgstr "Vis alternativer for øktbehandling"
 
@@ -1091,13 +1091,13 @@ msgid "Searching..."
 msgstr "Søker …"
 
 #: gsearchtool/src/gsearchtool.c:511 gsearchtool/src/gsearchtool.c:1048
-#: gsearchtool/src/gsearchtool.c:3078
+#: gsearchtool/src/gsearchtool.c:3077
 msgid "Search for Files"
 msgstr "Søk etter filer"
 
 #: gsearchtool/src/gsearchtool.c:994 gsearchtool/src/gsearchtool.c:1023
 msgid "No files found"
-msgstr "Ingen filer funnet"
+msgstr "Fant ingen filer"
 
 #: gsearchtool/src/gsearchtool.c:1016
 msgid "(stopped)"
@@ -1105,7 +1105,7 @@ msgstr "(stoppet)"
 
 #: gsearchtool/src/gsearchtool.c:1022
 msgid "No Files Found"
-msgstr "Ingen filer funnet"
+msgstr "Fant ingen filer"
 
 #: gsearchtool/src/gsearchtool.c:1027
 #, c-format
@@ -1223,118 +1223,118 @@ msgstr "«%s» i %s"
 msgid "Enter a value in %s for the \"%s\" search option."
 msgstr "Oppgi en verdi i %s for søkealternativet «%s»."
 
-#: gsearchtool/src/gsearchtool.c:2095
+#: gsearchtool/src/gsearchtool.c:2096
 #, c-format
 msgid "Remove \"%s\""
 msgstr "Fjern «%s»"
 
-#: gsearchtool/src/gsearchtool.c:2096
+#: gsearchtool/src/gsearchtool.c:2097
 #, c-format
 msgid "Click to remove the \"%s\" search option."
 msgstr "Klikk for å fjerne søkealternativet «%s»."
 
-#: gsearchtool/src/gsearchtool.c:2189
+#: gsearchtool/src/gsearchtool.c:2190
 msgid "A_vailable options:"
 msgstr "Til_gjengelige alternativer:"
 
-#: gsearchtool/src/gsearchtool.c:2218
+#: gsearchtool/src/gsearchtool.c:2219
 msgid "Available options"
 msgstr "Tilgjengelige alternativer"
 
-#: gsearchtool/src/gsearchtool.c:2219
+#: gsearchtool/src/gsearchtool.c:2220
 msgid "Select a search option from the drop-down list."
 msgstr "Velg et søkealternativ fra nedtrekksmenyen."
 
-#: gsearchtool/src/gsearchtool.c:2236
+#: gsearchtool/src/gsearchtool.c:2238
 msgid "Add search option"
 msgstr "Legg til et søkealternativ"
 
-#: gsearchtool/src/gsearchtool.c:2237
+#: gsearchtool/src/gsearchtool.c:2239
 msgid "Click to add the selected available search option."
 msgstr "Klikk for å legge til valgt søkealternativ."
 
-#: gsearchtool/src/gsearchtool.c:2326
+#: gsearchtool/src/gsearchtool.c:2328
 msgid "S_earch results:"
 msgstr "S_økeresultater:"
 
-#: gsearchtool/src/gsearchtool.c:2369
+#: gsearchtool/src/gsearchtool.c:2371
 msgid "List View"
 msgstr "Listevisning"
 
-#: gsearchtool/src/gsearchtool.c:2429
-#: mate-dictionary/libgdict/gdict-source.c:243
+#: gsearchtool/src/gsearchtool.c:2423
+#: mate-dictionary/libgdict/gdict-source.c:240
 msgid "Name"
 msgstr "Navn"
 
-#: gsearchtool/src/gsearchtool.c:2478
+#: gsearchtool/src/gsearchtool.c:2472
 msgid "Type"
 msgstr "Type"
 
-#: gsearchtool/src/gsearchtool.c:2490
+#: gsearchtool/src/gsearchtool.c:2484
 msgid "Date Modified"
 msgstr "Endringsdato"
 
-#: gsearchtool/src/gsearchtool.c:2820
+#: gsearchtool/src/gsearchtool.c:2813
 msgid "_Name contains:"
 msgstr "_Navn inneholder:"
 
-#: gsearchtool/src/gsearchtool.c:2835 gsearchtool/src/gsearchtool.c:2836
+#: gsearchtool/src/gsearchtool.c:2828 gsearchtool/src/gsearchtool.c:2829
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr "Oppgi et filnavn eller en del av et filnavn med eller uten jokertegn."
 
-#: gsearchtool/src/gsearchtool.c:2836
+#: gsearchtool/src/gsearchtool.c:2829
 msgid "Name contains"
 msgstr "Navn inneholder"
 
-#: gsearchtool/src/gsearchtool.c:2842
+#: gsearchtool/src/gsearchtool.c:2835
 msgid "_Look in folder:"
 msgstr "_Se i mappe:"
 
-#: gsearchtool/src/gsearchtool.c:2848
+#: gsearchtool/src/gsearchtool.c:2841
 msgid "Browse"
 msgstr "Bla"
 
-#: gsearchtool/src/gsearchtool.c:2858
+#: gsearchtool/src/gsearchtool.c:2851
 msgid "Look in folder"
 msgstr "Se i mappe"
 
-#: gsearchtool/src/gsearchtool.c:2858
+#: gsearchtool/src/gsearchtool.c:2851
 msgid "Select the folder or device from which you want to begin the search."
 msgstr "Velg mappen eller enheten du vil starte søket i."
 
-#: gsearchtool/src/gsearchtool.c:2876
+#: gsearchtool/src/gsearchtool.c:2869
 msgid "Select more _options"
 msgstr "Vis flere _alternativer"
 
-#: gsearchtool/src/gsearchtool.c:2885
+#: gsearchtool/src/gsearchtool.c:2879
 msgid "Select more options"
 msgstr "Vis flere alternativer"
 
-#: gsearchtool/src/gsearchtool.c:2885
+#: gsearchtool/src/gsearchtool.c:2879
 msgid "Click to expand or collapse the list of available options."
 msgstr "Klikk for å utvide eller slå samme listen med søkealternativer."
 
-#: gsearchtool/src/gsearchtool.c:2916
+#: gsearchtool/src/gsearchtool.c:2910
 msgid "Click to display the help manual."
 msgstr "Klikk for å vise hjelp."
 
-#: gsearchtool/src/gsearchtool.c:2929
+#: gsearchtool/src/gsearchtool.c:2924
 msgid "Click to close \"Search for Files\"."
 msgstr "Klikk for å lukke «Søk etter filer»."
 
-#: gsearchtool/src/gsearchtool.c:2964
+#: gsearchtool/src/gsearchtool.c:2962
 msgid "Click to perform a search."
 msgstr "Klikk for å utføre et søk."
 
-#: gsearchtool/src/gsearchtool.c:2965
+#: gsearchtool/src/gsearchtool.c:2963
 msgid "Click to stop a search."
 msgstr "Klikk for å stoppe et søk."
 
-#: gsearchtool/src/gsearchtool.c:3061
+#: gsearchtool/src/gsearchtool.c:3060
 msgid "- the MATE Search Tool"
 msgstr "- MATE-søkeverktøyet"
 
-#: gsearchtool/src/gsearchtool.c:3072
+#: gsearchtool/src/gsearchtool.c:3071
 #, c-format
 msgid "Failed to parse command line arguments: %s\n"
 msgstr "Klarte ikke å tolke kommandolinjeargumenter: %s\n"
@@ -1343,145 +1343,145 @@ msgstr "Klarte ikke å tolke kommandolinjeargumenter: %s\n"
 msgid "Could not open help document."
 msgstr "Kunne ikke åpne hjelpdokumentet."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:343
+#: gsearchtool/src/gsearchtool-callbacks.c:342
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
 msgstr[0] "Er du sikker på at du vil åpne %d dokument?"
 msgstr[1] "Er du sikker på at du vil åpne %d dokumenter?"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:348
-#: gsearchtool/src/gsearchtool-callbacks.c:548
+#: gsearchtool/src/gsearchtool-callbacks.c:347
+#: gsearchtool/src/gsearchtool-callbacks.c:547
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
 msgstr[0] "Dette vil åpne %d separat vindu."
 msgstr[1] "Dette vil åpne %d separate vinduer."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:393
+#: gsearchtool/src/gsearchtool-callbacks.c:392
 #, c-format
 msgid "Could not open document \"%s\"."
 msgstr "Kunne ikke åpne dokument «%s»."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:422
+#: gsearchtool/src/gsearchtool-callbacks.c:421
 #, c-format
 msgid "Could not open folder \"%s\"."
 msgstr "Kunne ikke åpne mappe «%s»."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:430
+#: gsearchtool/src/gsearchtool-callbacks.c:429
 msgid "The caja file manager is not running."
 msgstr "Filhåndtereren Caja kjører ikke."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:521
+#: gsearchtool/src/gsearchtool-callbacks.c:520
 msgid "There is no installed viewer capable of displaying the document."
 msgstr "Du har ikke installert visningsprogram som kan vise dokumentet."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:543
+#: gsearchtool/src/gsearchtool-callbacks.c:542
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
 msgstr[0] "Er du sikker på at du vil åpne %d mappe?"
 msgstr[1] "Er du sikker på at du vil åpne %d mapper?"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:725
+#: gsearchtool/src/gsearchtool-callbacks.c:724
 #, c-format
 msgid "Could not move \"%s\" to trash."
 msgstr "Kunne ikke flytte «%s» til papirkurven."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:756
+#: gsearchtool/src/gsearchtool-callbacks.c:755
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
 msgstr "Vil du slette «%s» permanent?"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:759
+#: gsearchtool/src/gsearchtool-callbacks.c:758
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
 msgstr ""
 "Papirkurven er ikke tilgjengelig. Kunne ikke flytte «%s» til papirkurven."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:803
+#: gsearchtool/src/gsearchtool-callbacks.c:802
 #, c-format
 msgid "Could not delete \"%s\"."
 msgstr "Kan ikke slette «%s»."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:915
+#: gsearchtool/src/gsearchtool-callbacks.c:914
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
 msgstr "Sletting av «%s» mislyktes: %s."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:927
+#: gsearchtool/src/gsearchtool-callbacks.c:926
 #, c-format
 msgid "Moving \"%s\" failed: %s."
 msgstr "Flytting av «%s» mislyktes: %s."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1143
-#: gsearchtool/src/gsearchtool-callbacks.c:1169
+#: gsearchtool/src/gsearchtool-callbacks.c:1142
+#: gsearchtool/src/gsearchtool-callbacks.c:1167
 msgid "_Open"
 msgstr "_Åpne"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1199
+#: gsearchtool/src/gsearchtool-callbacks.c:1196
 #, c-format
 msgid "_Open with %s"
 msgstr "_Åpne med %s"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1220
+#: gsearchtool/src/gsearchtool-callbacks.c:1217
 #, c-format
 msgid "Open with %s"
 msgstr "Åpne med %s"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1249
+#: gsearchtool/src/gsearchtool-callbacks.c:1246
 msgid "Open Wit_h"
 msgstr "Åpne me_d"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1299
+#: gsearchtool/src/gsearchtool-callbacks.c:1297
 msgid "Open Containing _Folder"
 msgstr "Åpne inneholdende _mappe"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1310
+#: gsearchtool/src/gsearchtool-callbacks.c:1307
 msgid "Copy _Path"
 msgstr "Kopier _sti"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1344
+#: gsearchtool/src/gsearchtool-callbacks.c:1339
 msgid "_Save Results As..."
 msgstr "Lagre re_sultater som …"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1722
+#: gsearchtool/src/gsearchtool-callbacks.c:1715
 msgid "Save Search Results As..."
 msgstr "Lagre søkeresultater som …"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1751
+#: gsearchtool/src/gsearchtool-callbacks.c:1744
 msgid "Could not save document."
 msgstr "Kunne ikke lagre dokument."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1752
+#: gsearchtool/src/gsearchtool-callbacks.c:1745
 msgid "You did not select a document name."
 msgstr "Kunne valgte ikke et dokumentnavn."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1782
+#: gsearchtool/src/gsearchtool-callbacks.c:1775
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr "Kunne ikke lagre dokument «%s» til «%s»."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1815
+#: gsearchtool/src/gsearchtool-callbacks.c:1808
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr "Dokument «%s» finnes allerede. Vil du erstatte den?"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1819
+#: gsearchtool/src/gsearchtool-callbacks.c:1812
 msgid "If you replace an existing file, its contents will be overwritten."
 msgstr ""
 "Hvis du erstatter en eksisterende fil vil innholdet i denne bli overskrevet."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1834
+#: gsearchtool/src/gsearchtool-callbacks.c:1827
 #: mate-screenshot/src/screenshot-xfer.c:84
 msgid "_Replace"
 msgstr "_Erstatt"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1883
+#: gsearchtool/src/gsearchtool-callbacks.c:1876
 msgid "The document name you selected is a folder."
 msgstr "Dokumentnavnet du valgte er en mappe."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1919
+#: gsearchtool/src/gsearchtool-callbacks.c:1912
 msgid "You may not have write permissions to the document."
 msgstr "Du har ikke skriverettigheter til dokumentet."
 
@@ -1506,75 +1506,75 @@ msgstr "lenke (ødelagt)"
 msgid "link to %s"
 msgstr "lenke til %s"
 
-#: gsearchtool/src/gsearchtool-support.c:1101
+#: gsearchtool/src/gsearchtool-support.c:1099
 msgid " (copy)"
 msgstr " (kopi)"
 
-#: gsearchtool/src/gsearchtool-support.c:1103
+#: gsearchtool/src/gsearchtool-support.c:1101
 msgid " (another copy)"
 msgstr " (annen kopi)"
 
+#: gsearchtool/src/gsearchtool-support.c:1104
 #: gsearchtool/src/gsearchtool-support.c:1106
 #: gsearchtool/src/gsearchtool-support.c:1108
-#: gsearchtool/src/gsearchtool-support.c:1110
-#: gsearchtool/src/gsearchtool-support.c:1120
+#: gsearchtool/src/gsearchtool-support.c:1118
 msgid "th copy)"
 msgstr ". kopi)"
 
-#: gsearchtool/src/gsearchtool-support.c:1113
+#: gsearchtool/src/gsearchtool-support.c:1111
 msgid "st copy)"
 msgstr ". kopi)"
 
-#: gsearchtool/src/gsearchtool-support.c:1115
+#: gsearchtool/src/gsearchtool-support.c:1113
 msgid "nd copy)"
 msgstr ". kopi)"
 
-#: gsearchtool/src/gsearchtool-support.c:1117
+#: gsearchtool/src/gsearchtool-support.c:1115
 msgid "rd copy)"
 msgstr ". kopi)"
 
-#: gsearchtool/src/gsearchtool-support.c:1134
+#: gsearchtool/src/gsearchtool-support.c:1132
 #, c-format
 msgid "%s (copy)%s"
 msgstr "%s (kopi)%s"
 
-#: gsearchtool/src/gsearchtool-support.c:1136
+#: gsearchtool/src/gsearchtool-support.c:1134
 #, c-format
 msgid "%s (another copy)%s"
 msgstr "%s (en annen kopi)%s"
 
+#: gsearchtool/src/gsearchtool-support.c:1137
 #: gsearchtool/src/gsearchtool-support.c:1139
 #: gsearchtool/src/gsearchtool-support.c:1141
-#: gsearchtool/src/gsearchtool-support.c:1143
-#: gsearchtool/src/gsearchtool-support.c:1152
+#: gsearchtool/src/gsearchtool-support.c:1150
 #, c-format
 msgid "%s (%dth copy)%s"
 msgstr "%s (%d. kopi)%s"
 
-#: gsearchtool/src/gsearchtool-support.c:1146
+#: gsearchtool/src/gsearchtool-support.c:1144
 #, c-format
 msgid "%s (%dst copy)%s"
 msgstr "%s (%d. kopi)%s"
 
-#: gsearchtool/src/gsearchtool-support.c:1148
+#: gsearchtool/src/gsearchtool-support.c:1146
 #, c-format
 msgid "%s (%dnd copy)%s"
 msgstr "%s (%d. kopi)%s"
 
-#: gsearchtool/src/gsearchtool-support.c:1150
+#: gsearchtool/src/gsearchtool-support.c:1148
 #, c-format
 msgid "%s (%drd copy)%s"
 msgstr "%s (%d. kopi)%s"
 
-#: gsearchtool/src/gsearchtool-support.c:1197
+#: gsearchtool/src/gsearchtool-support.c:1195
 msgid " (invalid Unicode)"
 msgstr " (ugyldig Unicode)"
 
-#: gsearchtool/src/gsearchtool-support.c:1286
+#: gsearchtool/src/gsearchtool-support.c:1284
 msgid " ("
 msgstr " ("
 
-#: gsearchtool/src/gsearchtool-support.c:1294
+#: gsearchtool/src/gsearchtool-support.c:1292
 #, c-format
 msgid " (%d"
 msgstr " (%d"
@@ -1730,7 +1730,7 @@ msgstr "Rediger filter"
 msgid "Add new filter"
 msgstr "Legg til nytt filter"
 
-#: logview/src/logview-filter-manager.c:469
+#: logview/src/logview-filter-manager.c:470
 msgid "Filters"
 msgstr "Filtre"
 
@@ -1778,7 +1778,7 @@ msgstr "Denne versjonen av systemlogg støtter ikke komprimerte logger."
 msgid "%A, %e %b"
 msgstr "%A, %e %b"
 
-#: logview/src/logview-loglist.c:314
+#: logview/src/logview-loglist.c:313
 msgid "Loading..."
 msgstr "Laster …"
 
@@ -1837,11 +1837,11 @@ msgid "Wrapped"
 msgstr "Brutt"
 
 #: logview/src/logview-window.c:493
-#: mate-dictionary/libgdict/gdict-defbox.c:1125
-#: mate-dictionary/libgdict/gdict-defbox.c:1219
-#: mate-dictionary/libgdict/gdict-defbox.c:1253
+#: mate-dictionary/libgdict/gdict-defbox.c:1127
+#: mate-dictionary/libgdict/gdict-defbox.c:1221
+#: mate-dictionary/libgdict/gdict-defbox.c:1255
 msgid "Not found"
-msgstr "Ikke funnet"
+msgstr "Fant ikke"
 
 #: logview/src/logview-window.c:773
 msgid "About System Log Viewer"
@@ -1859,7 +1859,7 @@ msgstr ""
 msgid "View, monitor or analyze your system logs in a gradual manner."
 msgstr "Gradvis visning, overvåking og analysering av systemloggene. "
 
-#: logview/src/logview-window.c:821 mate-dictionary/src/gdict-window.c:1258
+#: logview/src/logview-window.c:821 mate-dictionary/src/gdict-window.c:1256
 msgid "_File"
 msgstr "_Fil"
 
@@ -1887,7 +1887,7 @@ msgstr "_Avslutt"
 msgid "Quit the log viewer"
 msgstr "Avslutt loggvisning"
 
-#: logview/src/logview-window.c:834 mate-dictionary/src/gdict-window.c:1277
+#: logview/src/logview-window.c:834 mate-dictionary/src/gdict-window.c:1275
 msgid "_Copy"
 msgstr "_Kopier"
 
@@ -1895,7 +1895,7 @@ msgstr "_Kopier"
 msgid "Copy the selection"
 msgstr "Kopier utvalget"
 
-#: logview/src/logview-window.c:836 mate-dictionary/src/gdict-window.c:1279
+#: logview/src/logview-window.c:836 mate-dictionary/src/gdict-window.c:1277
 msgid "Select _All"
 msgstr "Velg _alt"
 
@@ -1947,8 +1947,8 @@ msgstr "Håndter filtre"
 msgid "Open the help contents for the log viewer"
 msgstr "Åpne hjelp for loggvisning"
 
-#: logview/src/logview-window.c:853 mate-dictionary/src/gdict-applet.c:1176
-#: mate-dictionary/src/gdict-window.c:1314
+#: logview/src/logview-window.c:853 mate-dictionary/src/gdict-applet.c:1175
+#: mate-dictionary/src/gdict-window.c:1312
 msgid "_About"
 msgstr "Om"
 
@@ -2098,60 +2098,59 @@ msgstr "Thai"
 msgid "Longdo Thai-English Dictionaries"
 msgstr "Longdo Thai-Engelsk-ordbøker"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:283
+#: mate-dictionary/libgdict/gdict-client-context.c:281
 msgid "Client Name"
 msgstr "Navn på klient"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:284
+#: mate-dictionary/libgdict/gdict-client-context.c:282
 msgid "The name of the client of the context object"
 msgstr "Navn på klienten til kontekstobjektet"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:297
+#: mate-dictionary/libgdict/gdict-client-context.c:295
 msgid "Hostname"
 msgstr "Vertsnavn"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:298
+#: mate-dictionary/libgdict/gdict-client-context.c:296
 msgid "The hostname of the dictionary server to connect to"
 msgstr "Vertsnavn for ordboktjeneren som skal brukes"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:311
+#: mate-dictionary/libgdict/gdict-client-context.c:309
 msgid "Port"
 msgstr "Port"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:312
+#: mate-dictionary/libgdict/gdict-client-context.c:310
 msgid "The port of the dictionary server to connect to"
 msgstr "Port for ordboktjeneren som skal brukes"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:327
+#: mate-dictionary/libgdict/gdict-client-context.c:325
 msgid "Status"
 msgstr "Status"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:328
+#: mate-dictionary/libgdict/gdict-client-context.c:326
 msgid "The status code as returned by the dictionary server"
 msgstr "Statuskode som returneres av ordboktjeneren."
 
-#: mate-dictionary/libgdict/gdict-client-context.c:772
+#: mate-dictionary/libgdict/gdict-client-context.c:764
 #, c-format
 msgid "No connection to the dictionary server at '%s:%d'"
 msgstr "Ingen tilkobling til ordboktjener på «%s:%d»"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1052
+#: mate-dictionary/libgdict/gdict-client-context.c:1044
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
-msgstr ""
-"Oppslag mislyktes for vertsnavn «%s»: Ingen passende ressurser ble funnet"
+msgstr "Oppslag mislyktes for vertsnavn «%s»: Fant ingen passende ressurser"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1083
+#: mate-dictionary/libgdict/gdict-client-context.c:1075
 #, c-format
 msgid "Lookup failed for host '%s': %s"
 msgstr "Oppslag mislyktes for vert «%s» : %s"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1117
+#: mate-dictionary/libgdict/gdict-client-context.c:1109
 #, c-format
 msgid "Lookup failed for host '%s': host not found"
-msgstr "Oppslag mislyktes for vert «%s»: vert ikke funnet"
+msgstr "Oppslag mislyktes for vert «%s»: Fant ikke vert"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1169
+#: mate-dictionary/libgdict/gdict-client-context.c:1161
 #, c-format
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
@@ -2160,7 +2159,7 @@ msgstr ""
 "Kan ikke koble til ordboktjener på «%s:%d». Tjeneren svarte med kode %d "
 "(tjener nede)"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1188
+#: mate-dictionary/libgdict/gdict-client-context.c:1180
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
@@ -2169,47 +2168,47 @@ msgstr ""
 "Forstår ikke svar fra ordboktjener:\n"
 " «%s»"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1217
+#: mate-dictionary/libgdict/gdict-client-context.c:1209
 #, c-format
 msgid "No definitions found for '%s'"
-msgstr "Ingen definisjoner funnet for «%s»"
+msgstr "Fant ingen definisjoner for «%s»"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1232
+#: mate-dictionary/libgdict/gdict-client-context.c:1224
 #, c-format
 msgid "Invalid database '%s'"
 msgstr "Ugyldig database «%s»"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1247
+#: mate-dictionary/libgdict/gdict-client-context.c:1239
 #, c-format
 msgid "Invalid strategy '%s'"
 msgstr "Ugyldig strategi «%s»"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1262
+#: mate-dictionary/libgdict/gdict-client-context.c:1254
 #, c-format
 msgid "Bad command '%s'"
 msgstr "Ugyldig kommando «%s»"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1277
+#: mate-dictionary/libgdict/gdict-client-context.c:1269
 #, c-format
 msgid "Bad parameters for command '%s'"
 msgstr "Ugyldige parametere for kommando «%s»"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1292
+#: mate-dictionary/libgdict/gdict-client-context.c:1284
 #, c-format
 msgid "No databases found on dictionary server at '%s'"
-msgstr "Ingen databaser funnet på ordboktjener «%s»"
+msgstr "Fant ingen databaser på ordboktjener «%s»"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1307
+#: mate-dictionary/libgdict/gdict-client-context.c:1299
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
-msgstr "Ingen strategier funnet på ordboktjener «%s»"
+msgstr "Fant ingen strategier på ordboktjener «%s»"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1732
+#: mate-dictionary/libgdict/gdict-client-context.c:1724
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
 msgstr "Tilkobling til ordboktjener på «%s:%d» mislyktes"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1771
+#: mate-dictionary/libgdict/gdict-client-context.c:1763
 #, c-format
 msgid ""
 "Error while reading reply from server:\n"
@@ -2218,166 +2217,166 @@ msgstr ""
 "Feil under lesing av svar fra tjener:\n"
 "%s"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1844
+#: mate-dictionary/libgdict/gdict-client-context.c:1836
 #, c-format
 msgid "Connection timeout for the dictionary server at '%s:%d'"
 msgstr "Tidsavbrudd for tilkobling til ordboktjener på «%s:%d»"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1878
+#: mate-dictionary/libgdict/gdict-client-context.c:1870
 msgid "No hostname defined for the dictionary server"
 msgstr "Ingen vertsnavn definert for ordboktjener"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1914
-#: mate-dictionary/libgdict/gdict-client-context.c:1929
+#: mate-dictionary/libgdict/gdict-client-context.c:1905
+#: mate-dictionary/libgdict/gdict-client-context.c:1920
 msgid "Unable to create socket"
 msgstr "Kunne ikke opprette plugg"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1955
+#: mate-dictionary/libgdict/gdict-client-context.c:1946
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
 msgstr "Kunne ikke sette kanal som ikke-blokkerende: %s"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1970
+#: mate-dictionary/libgdict/gdict-client-context.c:1961
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
 msgstr "Kan ikke koble til ordboktjener «%s:%d»"
 
-#: mate-dictionary/libgdict/gdict-context.c:220
+#: mate-dictionary/libgdict/gdict-context.c:221
 msgid "Local Only"
 msgstr "Kun lokale"
 
-#: mate-dictionary/libgdict/gdict-context.c:221
+#: mate-dictionary/libgdict/gdict-context.c:222
 msgid "Whether the context uses only local dictionaries or not"
 msgstr "Om kontekst kun bruker lokale ordbøker eller ikke"
 
-#: mate-dictionary/libgdict/gdict-database-chooser.c:376
+#: mate-dictionary/libgdict/gdict-database-chooser.c:375
 msgid "Reload the list of available databases"
 msgstr "Last listen med tilgjengelige databaser på nytt"
 
-#: mate-dictionary/libgdict/gdict-database-chooser.c:388
+#: mate-dictionary/libgdict/gdict-database-chooser.c:387
 msgid "Clear the list of available databases"
 msgstr "Tøm listen med tilgjengelige databaser"
 
-#: mate-dictionary/libgdict/gdict-database-chooser.c:836
-#: mate-dictionary/libgdict/gdict-speller.c:773
+#: mate-dictionary/libgdict/gdict-database-chooser.c:835
+#: mate-dictionary/libgdict/gdict-speller.c:772
 #: mate-dictionary/libgdict/gdict-strategy-chooser.c:783
 msgid "Error while matching"
 msgstr "Feil med treff"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:1314
+#: mate-dictionary/libgdict/gdict-defbox.c:1316
 msgid "F_ind:"
 msgstr "F_inn:"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:1327
+#: mate-dictionary/libgdict/gdict-defbox.c:1329
 msgid "_Previous"
 msgstr "_Forrige"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:1335
+#: mate-dictionary/libgdict/gdict-defbox.c:1337
 msgid "_Next"
 msgstr "_Neste"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:2483
+#: mate-dictionary/libgdict/gdict-defbox.c:2485
 msgid "Error while looking up definition"
 msgstr "Feil under oppslag av definisjon"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:2525
-#: mate-dictionary/libgdict/gdict-speller.c:731
+#: mate-dictionary/libgdict/gdict-defbox.c:2527
+#: mate-dictionary/libgdict/gdict-speller.c:730
 msgid "Another search is in progress"
 msgstr "Et annet søk kjører"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:2526
-#: mate-dictionary/libgdict/gdict-speller.c:732
+#: mate-dictionary/libgdict/gdict-defbox.c:2528
+#: mate-dictionary/libgdict/gdict-speller.c:731
 msgid "Please wait until the current search ends."
 msgstr "Vent til aktivt søk er ferdig."
 
-#: mate-dictionary/libgdict/gdict-defbox.c:2565
+#: mate-dictionary/libgdict/gdict-defbox.c:2568
 msgid "Error while retrieving the definition"
 msgstr "Feil under henting av definisjonen"
 
-#: mate-dictionary/libgdict/gdict-source.c:229
+#: mate-dictionary/libgdict/gdict-source.c:226
 msgid "Filename"
 msgstr "Filnavn"
 
-#: mate-dictionary/libgdict/gdict-source.c:230
+#: mate-dictionary/libgdict/gdict-source.c:227
 msgid "The filename used by this dictionary source"
 msgstr "Filnavn som brukes av denne ordbokkilden"
 
-#: mate-dictionary/libgdict/gdict-source.c:244
+#: mate-dictionary/libgdict/gdict-source.c:241
 msgid "The display name of this dictionary source"
 msgstr "Kallenavnet for denne ordbokskilden"
 
-#: mate-dictionary/libgdict/gdict-source.c:257
+#: mate-dictionary/libgdict/gdict-source.c:254
 msgid "Description"
 msgstr "Beskrivelse"
 
-#: mate-dictionary/libgdict/gdict-source.c:258
+#: mate-dictionary/libgdict/gdict-source.c:255
 msgid "The description of this dictionary source"
 msgstr "Beskrivelse av denne ordbokkilden"
 
-#: mate-dictionary/libgdict/gdict-source.c:271
-#: mate-dictionary/libgdict/gdict-speller.c:375
+#: mate-dictionary/libgdict/gdict-source.c:268
+#: mate-dictionary/libgdict/gdict-speller.c:374
 msgid "Database"
 msgstr "Database"
 
-#: mate-dictionary/libgdict/gdict-source.c:272
+#: mate-dictionary/libgdict/gdict-source.c:269
 msgid "The default database of this dictionary source"
 msgstr "Denne orbokas forvalgte orddatabase"
 
-#: mate-dictionary/libgdict/gdict-source.c:285
-#: mate-dictionary/libgdict/gdict-speller.c:382
+#: mate-dictionary/libgdict/gdict-source.c:282
+#: mate-dictionary/libgdict/gdict-speller.c:381
 msgid "Strategy"
 msgstr "Strategi"
 
-#: mate-dictionary/libgdict/gdict-source.c:286
+#: mate-dictionary/libgdict/gdict-source.c:283
 msgid "The default strategy of this dictionary source"
 msgstr "Førstelinjestrategien til denne ordbokskilden"
 
-#: mate-dictionary/libgdict/gdict-source.c:299
+#: mate-dictionary/libgdict/gdict-source.c:296
 msgid "Transport"
 msgstr "Transport"
 
-#: mate-dictionary/libgdict/gdict-source.c:300
+#: mate-dictionary/libgdict/gdict-source.c:297
 msgid "The transport mechanism used by this dictionary source"
 msgstr "Transportmekanisme som brukes av denne ordbokkilden"
 
-#: mate-dictionary/libgdict/gdict-source.c:314
-#: mate-dictionary/libgdict/gdict-speller.c:368
+#: mate-dictionary/libgdict/gdict-source.c:311
+#: mate-dictionary/libgdict/gdict-speller.c:367
 msgid "Context"
 msgstr "Sammenheng"
 
-#: mate-dictionary/libgdict/gdict-source.c:315
+#: mate-dictionary/libgdict/gdict-source.c:312
 msgid "The GdictContext bound to this source"
 msgstr "GdictContext er koblet til denne kilden"
 
-#: mate-dictionary/libgdict/gdict-source.c:408
+#: mate-dictionary/libgdict/gdict-source.c:404
 #, c-format
 msgid "Invalid transport type '%d'"
 msgstr "Ugyldig transporttype «%d»"
 
-#: mate-dictionary/libgdict/gdict-source.c:436
+#: mate-dictionary/libgdict/gdict-source.c:432
 #, c-format
 msgid "No '%s' group found inside the dictionary source definition"
-msgstr "Ingen gruppe \"%s\" funnet i ordbokkildens definisjon"
+msgstr "Fant ikke gruppa «%s» i kildedefinisjonen for ordbok"
 
-#: mate-dictionary/libgdict/gdict-source.c:452
-#: mate-dictionary/libgdict/gdict-source.c:476
-#: mate-dictionary/libgdict/gdict-source.c:500
-#: mate-dictionary/libgdict/gdict-source.c:525
+#: mate-dictionary/libgdict/gdict-source.c:448
+#: mate-dictionary/libgdict/gdict-source.c:472
+#: mate-dictionary/libgdict/gdict-source.c:496
+#: mate-dictionary/libgdict/gdict-source.c:521
 #, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
 msgstr "Kunne ikke finne nøkkelen «%s» i kildedefinisjonen for ordbok: %s"
 
-#: mate-dictionary/libgdict/gdict-source.c:550
+#: mate-dictionary/libgdict/gdict-source.c:546
 #, c-format
 msgid ""
 "Unable to get the '%s' key inside the dictionary source definition file: %s"
 msgstr "Kan ikke finne nøkkelen «%s» i definisjonsfilen for ordbokkilde: %s"
 
-#: mate-dictionary/libgdict/gdict-source.c:736
+#: mate-dictionary/libgdict/gdict-source.c:732
 msgid "Dictionary source does not have name"
 msgstr "Ordbokkilde har ikke et navn"
 
-#: mate-dictionary/libgdict/gdict-source.c:745
+#: mate-dictionary/libgdict/gdict-source.c:741
 #, c-format
 msgid "Dictionary source '%s' has invalid transport '%s'"
 msgstr "Ordbokkilde «%s» har ugyldig transport «%s»"
@@ -2386,35 +2385,35 @@ msgstr "Ordbokkilde «%s» har ugyldig transport «%s»"
 msgid "Reload the list of available sources"
 msgstr "Last listen med tilgjengelige kilder på nytt"
 
-#: mate-dictionary/libgdict/gdict-source-loader.c:163
+#: mate-dictionary/libgdict/gdict-source-loader.c:160
 msgid "Paths"
 msgstr "Stier"
 
-#: mate-dictionary/libgdict/gdict-source-loader.c:164
+#: mate-dictionary/libgdict/gdict-source-loader.c:161
 msgid "Search paths used by this object"
 msgstr "Søkestier brukt av dette objektet"
 
-#: mate-dictionary/libgdict/gdict-source-loader.c:176
+#: mate-dictionary/libgdict/gdict-source-loader.c:173
 msgid "Sources"
 msgstr "Kilder"
 
-#: mate-dictionary/libgdict/gdict-source-loader.c:177
+#: mate-dictionary/libgdict/gdict-source-loader.c:174
 msgid "Dictionary sources found"
-msgstr "Ordbokkilder funnet"
+msgstr "Fant ordbokkilder"
 
-#: mate-dictionary/libgdict/gdict-speller.c:347
+#: mate-dictionary/libgdict/gdict-speller.c:346
 msgid "Clear the list of similar words"
 msgstr "Tøm listen med lignende ord"
 
-#: mate-dictionary/libgdict/gdict-speller.c:369
+#: mate-dictionary/libgdict/gdict-speller.c:368
 msgid "The GdictContext object used to get the word definition"
 msgstr "GdictContext-objektet som ble brukt til å finne orddefinisjonen"
 
-#: mate-dictionary/libgdict/gdict-speller.c:376
+#: mate-dictionary/libgdict/gdict-speller.c:375
 msgid "The database used to query the GdictContext"
 msgstr "Database som brukes for spørring mot GdictContext"
 
-#: mate-dictionary/libgdict/gdict-speller.c:383
+#: mate-dictionary/libgdict/gdict-speller.c:382
 msgid "The strategy used to query the GdictContext"
 msgstr "Database som brukes for spørring mot GdictContext"
 
@@ -2451,9 +2450,9 @@ msgstr "Vis GDict-alternativene"
 msgid "Look up words or terms in a dictionary source."
 msgstr "Slå opp ord eller uttrykk i en ordbok."
 
-#: mate-dictionary/src/gdict-about.c:82 mate-dictionary/src/gdict-app.c:363
-#: mate-dictionary/src/gdict-window.c:580
-#: mate-dictionary/src/gdict-window.c:1864
+#: mate-dictionary/src/gdict-about.c:82 mate-dictionary/src/gdict-app.c:360
+#: mate-dictionary/src/gdict-window.c:578
+#: mate-dictionary/src/gdict-window.c:1862
 msgid "Dictionary"
 msgstr "Ordbok"
 
@@ -2472,7 +2471,7 @@ msgstr ""
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
 #. * keep the new lines.
-#: mate-dictionary/src/gdict-app.c:207
+#: mate-dictionary/src/gdict-app.c:203
 #, c-format
 msgid ""
 "Definition for '%s'\n"
@@ -2485,20 +2484,20 @@ msgstr ""
 "\n"
 "%s\n"
 
-#: mate-dictionary/src/gdict-app.c:221
+#: mate-dictionary/src/gdict-app.c:217
 #, c-format
 msgid "Error: %s\n"
 msgstr "Feil: %s\n"
 
-#: mate-dictionary/src/gdict-app.c:247
+#: mate-dictionary/src/gdict-app.c:243
 msgid "See mate-dictionary --help for usage\n"
 msgstr "Se mate-dictionary --help for bruk\n"
 
-#: mate-dictionary/src/gdict-app.c:260
+#: mate-dictionary/src/gdict-app.c:256
 msgid "Unable to find a suitable dictionary source"
 msgstr "Kan ikke finne en passende ordbokkilde"
 
-#: mate-dictionary/src/gdict-app.c:294
+#: mate-dictionary/src/gdict-app.c:290
 #, c-format
 msgid ""
 "Error while looking up the definition of \"%s\":\n"
@@ -2507,171 +2506,171 @@ msgstr ""
 "Feil under oppslag av definisjon for «%s»:\n"
 "%s"
 
-#: mate-dictionary/src/gdict-app.c:323 mate-dictionary/src/gdict-app.c:333
+#: mate-dictionary/src/gdict-app.c:319 mate-dictionary/src/gdict-app.c:329
 msgid "Words to look up"
 msgstr "Ord som skal slås opp"
 
-#: mate-dictionary/src/gdict-app.c:323 mate-dictionary/src/gdict-app.c:325
-#: mate-dictionary/src/gdict-app.c:333
+#: mate-dictionary/src/gdict-app.c:319 mate-dictionary/src/gdict-app.c:321
+#: mate-dictionary/src/gdict-app.c:329
 msgid "word"
 msgstr "ord"
 
-#: mate-dictionary/src/gdict-app.c:325
+#: mate-dictionary/src/gdict-app.c:321
 msgid "Words to match"
 msgstr "Ord som skal slås opp"
 
-#: mate-dictionary/src/gdict-app.c:327
+#: mate-dictionary/src/gdict-app.c:323
 msgid "Dictionary source to use"
 msgstr "Ordbokkilde som skal brukes"
 
-#: mate-dictionary/src/gdict-app.c:327
+#: mate-dictionary/src/gdict-app.c:323
 msgid "source"
 msgstr "kilde"
 
-#: mate-dictionary/src/gdict-app.c:329
+#: mate-dictionary/src/gdict-app.c:325
 msgid "Print result to the console"
 msgstr "Skriv ut resultat på konsollet"
 
-#: mate-dictionary/src/gdict-app.c:331
+#: mate-dictionary/src/gdict-app.c:327
 msgid "Database to use"
 msgstr "Database som skal brukes"
 
-#: mate-dictionary/src/gdict-app.c:331
+#: mate-dictionary/src/gdict-app.c:327
 msgid "db"
 msgstr "db"
 
-#: mate-dictionary/src/gdict-app.c:343
+#: mate-dictionary/src/gdict-app.c:339
 msgid " - Look up words in dictionaries"
 msgstr " - Slå opp ord i ordbøker"
 
-#: mate-dictionary/src/gdict-applet.c:194
-#: mate-dictionary/src/gdict-window.c:935
+#: mate-dictionary/src/gdict-applet.c:193
+#: mate-dictionary/src/gdict-window.c:933
 msgid "Save a Copy"
 msgstr "Lagre en kopi"
 
-#: mate-dictionary/src/gdict-applet.c:204
-#: mate-dictionary/src/gdict-window.c:945
+#: mate-dictionary/src/gdict-applet.c:203
+#: mate-dictionary/src/gdict-window.c:943
 msgid "Untitled document"
 msgstr "Dokument uten tittel"
 
-#: mate-dictionary/src/gdict-applet.c:225
-#: mate-dictionary/src/gdict-window.c:966
+#: mate-dictionary/src/gdict-applet.c:224
+#: mate-dictionary/src/gdict-window.c:964
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "Feil ved skriving til «%s»"
 
-#: mate-dictionary/src/gdict-applet.c:350
+#: mate-dictionary/src/gdict-applet.c:349
 msgid "Clear the definitions found"
 msgstr "Tøm definisjoner som er funnet"
 
-#: mate-dictionary/src/gdict-applet.c:352
+#: mate-dictionary/src/gdict-applet.c:351
 msgid "Clear definition"
 msgstr "Tøm definisjon"
 
-#: mate-dictionary/src/gdict-applet.c:353
+#: mate-dictionary/src/gdict-applet.c:352
 msgid "Clear the text of the definition"
 msgstr "Tøm definisjonsteksten"
 
-#: mate-dictionary/src/gdict-applet.c:365
+#: mate-dictionary/src/gdict-applet.c:364
 msgid "Print the definitions found"
 msgstr "Skriv ut definisjoner som er funnet"
 
-#: mate-dictionary/src/gdict-applet.c:367
+#: mate-dictionary/src/gdict-applet.c:366
 msgid "Print definition"
 msgstr "Skriv ut definisjon"
 
-#: mate-dictionary/src/gdict-applet.c:368
+#: mate-dictionary/src/gdict-applet.c:367
 msgid "Print the text of the definition"
 msgstr "Skriv ut teksten for denne definisjonen"
 
-#: mate-dictionary/src/gdict-applet.c:380
+#: mate-dictionary/src/gdict-applet.c:379
 msgid "Save the definitions found"
 msgstr "Lagre definisjoner som er funnet"
 
-#: mate-dictionary/src/gdict-applet.c:382
+#: mate-dictionary/src/gdict-applet.c:381
 msgid "Save definition"
 msgstr "Lagre definisjon"
 
-#: mate-dictionary/src/gdict-applet.c:383
+#: mate-dictionary/src/gdict-applet.c:382
 msgid "Save the text of the definition to a file"
 msgstr "Lagre definisjonsteksten som fil"
 
-#: mate-dictionary/src/gdict-applet.c:520
+#: mate-dictionary/src/gdict-applet.c:519
 msgid "Click to view the dictionary window"
 msgstr "Klikk for å vise ordbokvinduet"
 
-#: mate-dictionary/src/gdict-applet.c:522
+#: mate-dictionary/src/gdict-applet.c:521
 msgid "Toggle dictionary window"
 msgstr "Veksle ordbokvinduet"
 
-#: mate-dictionary/src/gdict-applet.c:523
+#: mate-dictionary/src/gdict-applet.c:522
 msgid "Show or hide the definition window"
 msgstr "Vis eller skjul definisjonsvinduet"
 
-#: mate-dictionary/src/gdict-applet.c:574
+#: mate-dictionary/src/gdict-applet.c:573
 msgid "Type the word you want to look up"
 msgstr "Skriv ordet du ønsker å slå opp"
 
-#: mate-dictionary/src/gdict-applet.c:576
+#: mate-dictionary/src/gdict-applet.c:575
 msgid "Dictionary entry"
 msgstr "Oppføring i ordbok"
 
-#: mate-dictionary/src/gdict-applet.c:577
+#: mate-dictionary/src/gdict-applet.c:576
 msgid "Look up words in dictionaries"
 msgstr "Slå opp ord i ordbøker"
 
-#: mate-dictionary/src/gdict-applet.c:705
-#: mate-dictionary/src/gdict-window.c:1077
+#: mate-dictionary/src/gdict-applet.c:704
+#: mate-dictionary/src/gdict-window.c:1075
 msgid "Dictionary Preferences"
 msgstr "Brukervalg for ordbok"
 
-#: mate-dictionary/src/gdict-applet.c:729
-#: mate-dictionary/src/gdict-pref-dialog.c:496
-#: mate-dictionary/src/gdict-source-dialog.c:477
-#: mate-dictionary/src/gdict-window.c:1224
+#: mate-dictionary/src/gdict-applet.c:728
+#: mate-dictionary/src/gdict-pref-dialog.c:494
+#: mate-dictionary/src/gdict-source-dialog.c:476
+#: mate-dictionary/src/gdict-window.c:1222
 msgid "There was an error while displaying help"
 msgstr "Det oppstod en feil under visning av hjelp."
 
-#: mate-dictionary/src/gdict-applet.c:868
-#: mate-dictionary/src/gdict-window.c:495
+#: mate-dictionary/src/gdict-applet.c:867
+#: mate-dictionary/src/gdict-window.c:493
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "Ingen ordbokkilde ved navnet «%s» tilgjengelig"
 
-#: mate-dictionary/src/gdict-applet.c:872
-#: mate-dictionary/src/gdict-window.c:499
+#: mate-dictionary/src/gdict-applet.c:871
+#: mate-dictionary/src/gdict-window.c:497
 msgid "Unable to find dictionary source"
 msgstr "Kan ikke finne ordbokkilde"
 
-#: mate-dictionary/src/gdict-applet.c:888
-#: mate-dictionary/src/gdict-window.c:515
+#: mate-dictionary/src/gdict-applet.c:887
+#: mate-dictionary/src/gdict-window.c:513
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "Ingen kontekst tilgjengelig for kilden «%s»"
 
-#: mate-dictionary/src/gdict-applet.c:892
-#: mate-dictionary/src/gdict-window.c:519
+#: mate-dictionary/src/gdict-applet.c:891
+#: mate-dictionary/src/gdict-window.c:517
 msgid "Unable to create a context"
 msgstr "Kan ikke opprette en kontekst"
 
-#: mate-dictionary/src/gdict-applet.c:1158
+#: mate-dictionary/src/gdict-applet.c:1157
 msgid "_Look Up Selected Text"
 msgstr "S_lå opp valgt tekst"
 
-#: mate-dictionary/src/gdict-applet.c:1161
+#: mate-dictionary/src/gdict-applet.c:1160
 msgid "Cl_ear"
 msgstr "_Tøm"
 
-#: mate-dictionary/src/gdict-applet.c:1164
+#: mate-dictionary/src/gdict-applet.c:1163
 msgid "_Print"
 msgstr "S_kriv ut"
 
-#: mate-dictionary/src/gdict-applet.c:1167
+#: mate-dictionary/src/gdict-applet.c:1166
 #: mate-screenshot/data/mate-screenshot.ui:109
 msgid "_Save"
 msgstr "_Lagre"
 
-#: mate-dictionary/src/gdict-applet.c:1170
+#: mate-dictionary/src/gdict-applet.c:1169
 msgid "Preferences"
 msgstr "Innstillinger"
 
@@ -2686,42 +2685,42 @@ msgstr "Kan ikke endre navn på fil «%s» til «%s»: %s"
 msgid "Unable to create the data directory '%s': %s"
 msgstr "Kan ikke opprette datamappen «%s»: %s"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:238
-#: mate-dictionary/src/gdict-pref-dialog.c:427
+#: mate-dictionary/src/gdict-pref-dialog.c:236
+#: mate-dictionary/src/gdict-pref-dialog.c:425
 msgid "Edit Dictionary Source"
 msgstr "Rediger ordbokkilde"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:302
+#: mate-dictionary/src/gdict-pref-dialog.c:300
 msgid "Add Dictionary Source"
 msgstr "Legg til ordbokkilde"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:347
+#: mate-dictionary/src/gdict-pref-dialog.c:345
 #, c-format
 msgid "Remove \"%s\"?"
 msgstr "Fjern «%s»?"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:349
+#: mate-dictionary/src/gdict-pref-dialog.c:347
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "Dette vil fjerne ordbokkilden fra listen permanent."
 
-#: mate-dictionary/src/gdict-pref-dialog.c:379
+#: mate-dictionary/src/gdict-pref-dialog.c:377
 #, c-format
 msgid "Unable to remove source '%s'"
 msgstr "Kan ikke fjerne kilde «%s»"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:713
+#: mate-dictionary/src/gdict-pref-dialog.c:711
 msgid "Add a new dictionary source"
 msgstr "Legg til ny ordbokkilde"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:719
+#: mate-dictionary/src/gdict-pref-dialog.c:717
 msgid "Remove the currently selected dictionary source"
 msgstr "Fjern valgt ordbokkilde"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:725
+#: mate-dictionary/src/gdict-pref-dialog.c:723
 msgid "Edit the currently selected dictionary source"
 msgstr "Rediger valgt ordbokskilde"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:733
+#: mate-dictionary/src/gdict-pref-dialog.c:731
 msgid "Set the font used for printing the definitions"
 msgstr "Sett skrift til bruk for utskrift av definisjoner"
 
@@ -2731,199 +2730,199 @@ msgid "Unable to display the preview: %s"
 msgstr "Kunne ikke forhåndsvise: %s"
 
 #: mate-dictionary/src/gdict-source-dialog.c:339
-#: mate-dictionary/src/gdict-source-dialog.c:432
+#: mate-dictionary/src/gdict-source-dialog.c:431
 msgid "Unable to create a source file"
 msgstr "Kan ikke opprette en kildefil"
 
 #: mate-dictionary/src/gdict-source-dialog.c:357
-#: mate-dictionary/src/gdict-source-dialog.c:450
+#: mate-dictionary/src/gdict-source-dialog.c:449
 msgid "Unable to save source file"
 msgstr "Kan ikke lagre kildefil"
 
-#: mate-dictionary/src/gdict-window.c:290
+#: mate-dictionary/src/gdict-window.c:288
 #, c-format
 msgid "Searching for '%s'..."
 msgstr "Søker etter «%s» …"
 
-#: mate-dictionary/src/gdict-window.c:322
-#: mate-dictionary/src/gdict-window.c:379
+#: mate-dictionary/src/gdict-window.c:320
+#: mate-dictionary/src/gdict-window.c:377
 msgid "No definitions found"
 msgstr "Fant ingen definisjoner"
 
-#: mate-dictionary/src/gdict-window.c:324
+#: mate-dictionary/src/gdict-window.c:322
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
 msgstr[0] "Fant én definisjon"
 msgstr[1] "Fant %d definisjoner"
 
-#: mate-dictionary/src/gdict-window.c:578
+#: mate-dictionary/src/gdict-window.c:576
 #, c-format
 msgid "%s - Dictionary"
 msgstr "%s - Ordbok"
 
-#: mate-dictionary/src/gdict-window.c:1261
+#: mate-dictionary/src/gdict-window.c:1259
 msgid "_Go"
 msgstr "_Gå til"
 
-#: mate-dictionary/src/gdict-window.c:1265
+#: mate-dictionary/src/gdict-window.c:1263
 #: mate-screenshot/data/mate-screenshot.ui:58
 msgid "_New"
 msgstr "_Ny"
 
-#: mate-dictionary/src/gdict-window.c:1266
+#: mate-dictionary/src/gdict-window.c:1264
 msgid "New look up"
 msgstr "Nytt oppslag"
 
-#: mate-dictionary/src/gdict-window.c:1267
+#: mate-dictionary/src/gdict-window.c:1265
 msgid "_Save a Copy..."
 msgstr "_Lagre en kopi …"
 
-#: mate-dictionary/src/gdict-window.c:1269
+#: mate-dictionary/src/gdict-window.c:1267
 msgid "P_review..."
 msgstr "Fo_rhåndsvis …"
 
-#: mate-dictionary/src/gdict-window.c:1270
+#: mate-dictionary/src/gdict-window.c:1268
 msgid "Preview this document"
 msgstr "Forhåndsvis dette dokumentet"
 
-#: mate-dictionary/src/gdict-window.c:1271
+#: mate-dictionary/src/gdict-window.c:1269
 msgid "_Print..."
 msgstr "S_kriv ut …"
 
-#: mate-dictionary/src/gdict-window.c:1272
+#: mate-dictionary/src/gdict-window.c:1270
 msgid "Print this document"
 msgstr "Skriv ut dette dokumentet"
 
-#: mate-dictionary/src/gdict-window.c:1281
+#: mate-dictionary/src/gdict-window.c:1279
 msgid "_Find"
 msgstr "_Finn"
 
-#: mate-dictionary/src/gdict-window.c:1282
+#: mate-dictionary/src/gdict-window.c:1280
 msgid "Find a word or phrase in the document"
 msgstr "Finn et ord eller en frase i dokumentet"
 
-#: mate-dictionary/src/gdict-window.c:1284
+#: mate-dictionary/src/gdict-window.c:1282
 msgid "Find Ne_xt"
 msgstr "Finn ne_ste"
 
-#: mate-dictionary/src/gdict-window.c:1286
+#: mate-dictionary/src/gdict-window.c:1284
 msgid "Find Pre_vious"
 msgstr "Finn forri_ge"
 
-#: mate-dictionary/src/gdict-window.c:1288
+#: mate-dictionary/src/gdict-window.c:1286
 msgid "_Preferences"
 msgstr "Innstillinger"
 
-#: mate-dictionary/src/gdict-window.c:1292
+#: mate-dictionary/src/gdict-window.c:1290
 msgid "_Previous Definition"
 msgstr "_Forrige definisjon"
 
-#: mate-dictionary/src/gdict-window.c:1293
+#: mate-dictionary/src/gdict-window.c:1291
 msgid "Go to the previous definition"
 msgstr "Gå til forrige definisjon"
 
-#: mate-dictionary/src/gdict-window.c:1294
+#: mate-dictionary/src/gdict-window.c:1292
 msgid "_Next Definition"
 msgstr "_Neste definisjon"
 
-#: mate-dictionary/src/gdict-window.c:1295
+#: mate-dictionary/src/gdict-window.c:1293
 msgid "Go to the next definition"
 msgstr "Gå til neste definisjon"
 
-#: mate-dictionary/src/gdict-window.c:1296
+#: mate-dictionary/src/gdict-window.c:1294
 msgid "_First Definition"
 msgstr "_Første definisjon"
 
-#: mate-dictionary/src/gdict-window.c:1297
+#: mate-dictionary/src/gdict-window.c:1295
 msgid "Go to the first definition"
 msgstr "Gå til den første definisjonen"
 
-#: mate-dictionary/src/gdict-window.c:1298
+#: mate-dictionary/src/gdict-window.c:1296
 msgid "_Last Definition"
 msgstr "_Siste definisjon"
 
-#: mate-dictionary/src/gdict-window.c:1299
+#: mate-dictionary/src/gdict-window.c:1297
 msgid "Go to the last definition"
 msgstr "Gå til den siste definisjonen"
 
-#: mate-dictionary/src/gdict-window.c:1302
+#: mate-dictionary/src/gdict-window.c:1300
 msgid "Similar _Words"
 msgstr "Lignende _ord"
 
-#: mate-dictionary/src/gdict-window.c:1304
+#: mate-dictionary/src/gdict-window.c:1302
 msgid "Dictionary Sources"
 msgstr "Ordbokkilder"
 
-#: mate-dictionary/src/gdict-window.c:1306
+#: mate-dictionary/src/gdict-window.c:1304
 msgid "Available _Databases"
 msgstr "Tilgjengelige _databaser"
 
-#: mate-dictionary/src/gdict-window.c:1308
+#: mate-dictionary/src/gdict-window.c:1306
 msgid "Available St_rategies"
 msgstr "Tilgjengelige st_rategier"
 
-#: mate-dictionary/src/gdict-window.c:1325
+#: mate-dictionary/src/gdict-window.c:1323
 msgid "_Sidebar"
 msgstr "_Sidelinje"
 
-#: mate-dictionary/src/gdict-window.c:1327
+#: mate-dictionary/src/gdict-window.c:1325
 msgid "S_tatusbar"
 msgstr "S_tatuslinje"
 
-#: mate-dictionary/src/gdict-window.c:1392
+#: mate-dictionary/src/gdict-window.c:1390
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "Ordbokkilden «%s» er valgt"
 
-#: mate-dictionary/src/gdict-window.c:1413
+#: mate-dictionary/src/gdict-window.c:1411
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "Strategi «%s» valgt"
 
-#: mate-dictionary/src/gdict-window.c:1433
+#: mate-dictionary/src/gdict-window.c:1431
 #, c-format
 msgid "Database `%s' selected"
 msgstr "Database «%s» valgt"
 
-#: mate-dictionary/src/gdict-window.c:1453
+#: mate-dictionary/src/gdict-window.c:1451
 #, c-format
 msgid "Word `%s' selected"
 msgstr "Ord «%s» valgt"
 
-#: mate-dictionary/src/gdict-window.c:1478
+#: mate-dictionary/src/gdict-window.c:1476
 msgid "Double-click on the word to look up"
 msgstr "Dobbeltklikk på ordet du ønsker å slå opp"
 
-#: mate-dictionary/src/gdict-window.c:1484
+#: mate-dictionary/src/gdict-window.c:1482
 msgid "Double-click on the matching strategy to use"
 msgstr "Dobbeltklikk på strategien som skal brukes"
 
-#: mate-dictionary/src/gdict-window.c:1489
+#: mate-dictionary/src/gdict-window.c:1487
 msgid "Double-click on the source to use"
 msgstr "Dobbeltklikk på kilden som skal brukes"
 
-#: mate-dictionary/src/gdict-window.c:1498
+#: mate-dictionary/src/gdict-window.c:1496
 msgid "Double-click on the database to use"
 msgstr "Dobbeltklikk på databasen som skal brukes"
 
-#: mate-dictionary/src/gdict-window.c:1670
+#: mate-dictionary/src/gdict-window.c:1668
 msgid "Look _up:"
 msgstr "Slå _opp:"
 
-#: mate-dictionary/src/gdict-window.c:1745
+#: mate-dictionary/src/gdict-window.c:1743
 msgid "Similar words"
 msgstr "Lignende ord"
 
-#: mate-dictionary/src/gdict-window.c:1758
+#: mate-dictionary/src/gdict-window.c:1756
 msgid "Available dictionaries"
 msgstr "Tilgjengelige ordbøker"
 
-#: mate-dictionary/src/gdict-window.c:1776
+#: mate-dictionary/src/gdict-window.c:1774
 msgid "Available strategies"
 msgstr "Tilgjengelige strategier"
 
-#: mate-dictionary/src/gdict-window.c:1792
+#: mate-dictionary/src/gdict-window.c:1790
 msgid "Dictionary sources"
 msgstr "Ordbokkilder"
 
@@ -3022,17 +3021,17 @@ msgstr "Klarte ikke koble til udisks-nissen: %s (%s, %d)"
 msgid "Attach and mount one or more disk image files."
 msgstr "Monter ett eller flere diskavtrykksfiler."
 
-#: mate-disk-image-mounter/src/main.c:234
+#: mate-disk-image-mounter/src/main.c:236
 #, c-format
 msgid "Cannot open `%s' - maybe the volume isn't mounted?"
 msgstr "Klarte ikke åpne «%s» – kanskje dataområdet ikke er montert?"
 
-#: mate-disk-image-mounter/src/main.c:241
+#: mate-disk-image-mounter/src/main.c:243
 #, c-format
 msgid "Error opening `%s': %m"
 msgstr "Klarte ikke åpne «%s»: %m"
 
-#: mate-disk-image-mounter/src/main.c:262
+#: mate-disk-image-mounter/src/main.c:264
 #, c-format
 msgid "Error attaching disk image: %s (%s, %d)"
 msgstr "Klarte ikke montere diskavtrykket: %s (%s, %d)"
@@ -3098,7 +3097,7 @@ msgstr "Mappe for skjermdump"
 
 #: mate-screenshot/data/org.mate.screenshot.gschema.xml.in:11
 msgid "The directory the last screenshot was saved in."
-msgstr "Katalog hvor forrige skjermdump ble lagret."
+msgstr "Mappe hvor forrige skjermdump ble lagret."
 
 #: mate-screenshot/data/org.mate.screenshot.gschema.xml.in:15
 msgid "Include Border"
@@ -3173,7 +3172,7 @@ msgid "Grab _after a delay of"
 msgstr "T_a skjermdump etter"
 
 #: mate-screenshot/src/mate-screenshot.c:500
-#: mate-screenshot/src/mate-screenshot.c:1320
+#: mate-screenshot/src/mate-screenshot.c:1319
 msgid "seconds"
 msgstr "sekunder"
 
@@ -3200,82 +3199,82 @@ msgstr ""
 " Feilen var %s.\n"
 " Velg en annen plassering og prøv igjen."
 
-#: mate-screenshot/src/mate-screenshot.c:796
+#: mate-screenshot/src/mate-screenshot.c:795
 msgid "Screenshot taken"
 msgstr "Skjermdump tatt"
 
-#: mate-screenshot/src/mate-screenshot.c:851
+#: mate-screenshot/src/mate-screenshot.c:850
 msgid "Unable to take a screenshot of the current window"
 msgstr "Kan ikke ta skjermdump av dette vinduet"
 
-#: mate-screenshot/src/mate-screenshot.c:916
+#: mate-screenshot/src/mate-screenshot.c:915
 #, c-format
 msgid "Screenshot at %s.png"
 msgstr "Skjermbilde på %s.png"
 
-#: mate-screenshot/src/mate-screenshot.c:923
+#: mate-screenshot/src/mate-screenshot.c:922
 #, c-format
 msgid "Screenshot at %s - %d.png"
 msgstr "Skjermbilde på %s - %d.png"
 
-#: mate-screenshot/src/mate-screenshot.c:1315
+#: mate-screenshot/src/mate-screenshot.c:1314
 msgid "Grab a window instead of the entire screen"
 msgstr "Dump et vindu i stedet for hele skjermen"
 
-#: mate-screenshot/src/mate-screenshot.c:1316
+#: mate-screenshot/src/mate-screenshot.c:1315
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Dump en del av skjermen i stedet for hele området"
 
-#: mate-screenshot/src/mate-screenshot.c:1317
+#: mate-screenshot/src/mate-screenshot.c:1316
 msgid "Send grabbed area directly to the clipboard"
 msgstr "Send det dumpede området rett til utklippstavla"
 
-#: mate-screenshot/src/mate-screenshot.c:1318
+#: mate-screenshot/src/mate-screenshot.c:1317
 msgid "Include the window border with the screenshot"
 msgstr "Ta med vinduskant i skjermdumpet"
 
-#: mate-screenshot/src/mate-screenshot.c:1319
+#: mate-screenshot/src/mate-screenshot.c:1318
 msgid "Remove the window border from the screenshot"
 msgstr "Fjern vinduskanten i skjermdumpet"
 
-#: mate-screenshot/src/mate-screenshot.c:1320
+#: mate-screenshot/src/mate-screenshot.c:1319
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Ta skjermdump etter oppgitt pause [i sekunder]"
 
-#: mate-screenshot/src/mate-screenshot.c:1321
+#: mate-screenshot/src/mate-screenshot.c:1320
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Effekt som skal brukes på vinduskanten (skygge, kant eller ingen)"
 
-#: mate-screenshot/src/mate-screenshot.c:1321
+#: mate-screenshot/src/mate-screenshot.c:1320
 msgid "effect"
 msgstr "effekt"
 
-#: mate-screenshot/src/mate-screenshot.c:1322
+#: mate-screenshot/src/mate-screenshot.c:1321
 msgid "Interactively set options"
 msgstr "Spør etter alternativer"
 
-#: mate-screenshot/src/mate-screenshot.c:1323
+#: mate-screenshot/src/mate-screenshot.c:1322
 msgid "Print version information and exit"
 msgstr "Vis versjonsinformasjon og avslutt"
 
-#: mate-screenshot/src/mate-screenshot.c:1334
+#: mate-screenshot/src/mate-screenshot.c:1333
 msgid "Take a picture of the screen"
 msgstr "Ta et bilde av skjermen"
 
-#: mate-screenshot/src/mate-screenshot.c:1357
+#: mate-screenshot/src/mate-screenshot.c:1356
 msgid ""
 "Conflicting options: --clipboard and --interactive should not be used at the"
 " same time.\n"
 msgstr ""
 "Motstridende valg: --clipboard og --interactive kan ikke brukes samtidig.\n"
 
-#: mate-screenshot/src/mate-screenshot.c:1363
+#: mate-screenshot/src/mate-screenshot.c:1362
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"
 msgstr "Konflikt mellom flagg: --window og --area kan ikke brukes samtidig.\n"
 
-#: mate-screenshot/src/screenshot-dialog.c:210
+#: mate-screenshot/src/screenshot-dialog.c:209
 #, c-format
 msgid ""
 "Error loading UI definition file for the screenshot program: \n"
@@ -3288,11 +3287,11 @@ msgstr ""
 "\n"
 "Sjekk din installasjon av mate-utils."
 
-#: mate-screenshot/src/screenshot-dialog.c:233
+#: mate-screenshot/src/screenshot-dialog.c:232
 msgid "Select a folder"
 msgstr "Velg en mappe"
 
-#: mate-screenshot/src/screenshot-dialog.c:328
+#: mate-screenshot/src/screenshot-dialog.c:329
 #: mate-screenshot/src/screenshot-save.c:202
 msgid "Screenshot.png"
 msgstr "Skjermdump.png"

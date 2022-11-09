@@ -4,38 +4,39 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
+# Marco Bartolucci, 2018
 # Emanuele Antonio Faraone <emanueleant03@gmail.com>, 2018
 # Simone Centonze <mypythonit@gmail.com>, 2018
 # Dario Di Nucci <linkin88mail@gmail.com>, 2018
 # Giuseppe Pignataro <rogepix@gmail.com>, 2019
+# Enrico B. <enricobe@hotmail.com>, 2019
 # Marco Z. <minaz666@gmail.com>, 2019
-# Enrico B. <enricobe@hotmail.com>, 2020
-# Alessandro Volturno <alelvb@inwind.it>, 2021
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
-# Marco Bartolucci <nap.84@live.it>, 2021
+# Alessandro Volturno <alelvb@inwind.it>, 2022
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-utils 1.25.1\n"
+"Project-Id-Version: mate-utils 1.26.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
-"POT-Creation-Date: 2021-06-25 18:01+0200\n"
+"POT-Creation-Date: 2022-10-29 15:36+0200\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: Marco Bartolucci <nap.84@live.it>, 2021\n"
+"Last-Translator: Alessandro Volturno <alelvb@inwind.it>, 2022\n"
 "Language-Team: Italian (https://www.transifex.com/mate/teams/13566/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: baobab/data/mate-disk-usage-analyzer.desktop.in.in:3
 #: baobab/data/mate-disk-usage-analyzer.appdata.xml.in:7
 msgid "MATE Disk Usage Analyzer"
-msgstr "Analizzatore di utilizzo del disco di MATE"
+msgstr "MATE Disk Usage Analyzer"
 
 #: baobab/data/mate-disk-usage-analyzer.desktop.in.in:4
 msgid "Check folder sizes and available disk space"
-msgstr "Controlla la dimensione delle cartelle e lo spazio disco disponibile"
+msgstr ""
+"Controlla la dimensione delle cartelle e lo spazio disponibile sul disco "
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -45,18 +46,18 @@ msgstr "MATE;check;disk;usage;analyze;size;space;"
 
 #: baobab/data/baobab-dialog-scan-props.ui:18
 msgid "Disk Usage Analyzer Preferences"
-msgstr "Preferenze di Analizzatore di utilizzo del disco"
+msgstr "Preferenze di Disk Usage Analyzer"
 
 #: baobab/data/baobab-dialog-scan-props.ui:32
 #: baobab/data/baobab-main-window.ui:129 logview/src/logview-window.c:825
-#: mate-dictionary/src/gdict-applet.c:1173
-#: mate-dictionary/src/gdict-window.c:1262
+#: mate-dictionary/src/gdict-applet.c:1172
+#: mate-dictionary/src/gdict-window.c:1260
 #: mate-screenshot/data/mate-screenshot.ui:41
 msgid "_Help"
 msgstr "_Aiuto"
 
 #: baobab/data/baobab-dialog-scan-props.ui:48 logview/src/logview-window.c:829
-#: mate-dictionary/src/gdict-window.c:1273
+#: mate-dictionary/src/gdict-window.c:1271
 msgid "_Close"
 msgstr "_Chiudi"
 
@@ -66,7 +67,7 @@ msgstr "Seleziona i _dispositivi da includere nell'esame del file system:"
 
 #: baobab/data/baobab-dialog-scan-props.ui:119
 msgid "_Monitor changes to your home folder"
-msgstr "_Monitora i cambiamenti alla propria cartella home"
+msgstr "_Monitora le modifiche alla vostra cartella home"
 
 #: baobab/data/baobab-main-window.ui:10
 msgid "_Analyzer"
@@ -74,22 +75,22 @@ msgstr "_Analizzatore"
 
 #: baobab/data/baobab-main-window.ui:17
 msgid "Scan _Home Folder"
-msgstr "Scansiona cartella _home"
+msgstr "Scansiona la cartella _Home"
 
 #: baobab/data/baobab-main-window.ui:26
 msgid "Scan _Filesystem"
-msgstr "Scansiona _file system"
+msgstr "Scansiona il _file system"
 
 #: baobab/data/baobab-main-window.ui:35
 msgid "Scan F_older..."
-msgstr "Scansi_ona cartella..."
+msgstr "Scansi_ona una cartella..."
 
 #: baobab/data/baobab-main-window.ui:44
 msgid "S_can Remote Folder..."
-msgstr "S_cansiona cartella remota..."
+msgstr "S_cansiona una cartella remota..."
 
 #: baobab/data/baobab-main-window.ui:74 logview/src/logview-window.c:822
-#: mate-dictionary/src/gdict-window.c:1259
+#: mate-dictionary/src/gdict-window.c:1257
 msgid "_Edit"
 msgstr "_Modifica"
 
@@ -99,34 +100,34 @@ msgstr "_Espandi tutto"
 
 #: baobab/data/baobab-main-window.ui:87
 msgid "_Collapse All"
-msgstr "_Contrai tutto"
+msgstr "_Collassa tutto"
 
 #: baobab/data/baobab-main-window.ui:101 logview/src/logview-window.c:823
-#: mate-dictionary/src/gdict-window.c:1260
+#: mate-dictionary/src/gdict-window.c:1258
 msgid "_View"
 msgstr "_Visualizza"
 
 #: baobab/data/baobab-main-window.ui:108
 msgid "_Toolbar"
-msgstr "Barra degli _strumenti"
+msgstr "Barra degli s_trumenti"
 
 #: baobab/data/baobab-main-window.ui:115
 msgid "St_atusbar"
-msgstr "Barra di s_tato"
+msgstr "Barra di st_ato"
 
 #: baobab/data/baobab-main-window.ui:122
 msgid "All_ocated Space"
 msgstr "Spazi_o allocato"
 
 #: baobab/data/baobab-main-window.ui:136 logview/src/logview-window.c:851
-#: mate-dictionary/src/gdict-window.c:1312
+#: mate-dictionary/src/gdict-window.c:1310
 msgid "_Contents"
 msgstr "_Sommario"
 
 #: baobab/data/baobab-main-window.ui:183 baobab/src/baobab.c:1237
-#: baobab/src/callbacks.c:103
+#: baobab/src/callbacks.c:102
 msgid "Disk Usage Analyzer"
-msgstr "Analizzatore di utilizzo del disco"
+msgstr "Analizzatore dell'utilizzo del disco"
 
 #: baobab/data/baobab-main-window.ui:224 baobab/data/baobab-main-window.ui:236
 msgid "Scan home folder"
@@ -142,7 +143,7 @@ msgstr "Scansiona il file system"
 
 #: baobab/data/baobab-main-window.ui:249
 msgid "Scan Filesystem"
-msgstr "Scansione fil Fle system"
+msgstr "Scansione file system"
 
 #: baobab/data/baobab-main-window.ui:265
 msgid "Scan a folder"
@@ -178,7 +179,7 @@ msgstr "Indica se ogni modifica della directory home debba essere monitorata."
 
 #: baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in:14
 msgid "Excluded partitions URIs"
-msgstr "URI di partizioni escluse"
+msgstr "URI delle partizioni escluse"
 
 #: baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in:15
 msgid "A list of URIs for partitions to be excluded from scanning."
@@ -219,12 +220,13 @@ msgstr "Grafico attivo"
 
 #: baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in:37
 msgid "Which type of chart should be displayed."
-msgstr "Che tipo dl grafico che debba essere mostrato."
+msgstr "Che tipo dl grafico deve essere mostrato."
 
 #: baobab/data/mate-disk-usage-analyzer.appdata.xml.in:8
 msgid "A disk usage analyzing tool for MATE Desktop"
 msgstr ""
-"Uno strumento per analizzare l'uso del disco per l'ambiente desktop MATE"
+"Uno strumento per analizzare l'utilizzo del disco per l'ambiente desktop "
+"MATE"
 
 #: baobab/data/mate-disk-usage-analyzer.appdata.xml.in:10
 msgid ""
@@ -232,10 +234,9 @@ msgid ""
 " use to view and monitor your disk usage and folder structure. It displays "
 "summary information in ring or treemap charts."
 msgstr ""
-"Come indica il nome, l'Analizzatore di utilizzo del disco di MATE è una "
-"utility grafica per visualizzare l'utilizzo del disco e la struttura delle "
-"cartelle. Mostra informazioni riassuntive sotto forma di grafico ad anello o"
-" ad albero."
+"Come indica il nome, Disk Usage Analyzer di MATE è una utility grafica per "
+"visualizzare l'utilizzo del disco e la struttura delle cartelle. Mostra "
+"informazioni riassuntive sotto forma di grafico ad anello o ad albero."
 
 #: baobab/data/mate-disk-usage-analyzer.appdata.xml.in:15
 msgid ""
@@ -243,8 +244,8 @@ msgid ""
 "local or remote. There is also an option to constantly monitor any external "
 "changes to the home directory and warn the user if a file is added/removed."
 msgstr ""
-"È possibile eseguire scansioni su un filesystem, sulla cartella home o su "
-"qualsiasi altra cartella - locale o remota. Dispone di un'opzione per "
+"È possibile eseguire scansioni su un filesystem, sulla vostra cartella home "
+"o una qualsiasi altra cartella - locale o remota. Dispone di un'opzione per "
 "monitorare costantemente qualsiasi modifica esterna alla directory home e "
 "avvertire l'utente se viene aggiunto/rimosso un file."
 
@@ -258,27 +259,27 @@ msgstr "Capacità totale file system:"
 
 #: baobab/src/baobab.c:187
 msgid "used:"
-msgstr "usati:"
+msgstr "utilizzati:"
 
 #: baobab/src/baobab.c:188
 msgid "available:"
 msgstr "disponibili:"
 
-#: baobab/src/baobab.c:243 baobab/src/baobab.c:300 baobab/src/callbacks.c:268
+#: baobab/src/baobab.c:243 baobab/src/baobab.c:300 baobab/src/callbacks.c:267
 msgid "Calculating percentage bars..."
 msgstr "Calcolo delle barre di percentuale in corso..."
 
-#: baobab/src/baobab.c:254 baobab/src/baobab.c:1300 baobab/src/callbacks.c:272
+#: baobab/src/baobab.c:254 baobab/src/baobab.c:1300 baobab/src/callbacks.c:271
 msgid "Ready"
 msgstr "Pronto"
 
 #: baobab/src/baobab.c:392
 msgid "Total filesystem capacity"
-msgstr "Capacità totale file system"
+msgstr "Capacità totale del file system"
 
 #: baobab/src/baobab.c:416
 msgid "Total filesystem usage"
-msgstr "Utilizzo totale file system"
+msgstr "Utilizzo totale del file system"
 
 #: baobab/src/baobab.c:458
 msgid "contains hardlinks for:"
@@ -290,10 +291,11 @@ msgid "%5d item"
 msgid_plural "%5d items"
 msgstr[0] "%5d oggetto"
 msgstr[1] "%5d oggetti"
+msgstr[2] "%5d oggetti"
 
 #: baobab/src/baobab.c:593
 msgid "Could not initialize monitoring"
-msgstr "Impossibile inizializzare il monitoraggio"
+msgstr "Non è stato possibile inizializzare il monitoraggio"
 
 #: baobab/src/baobab.c:594
 msgid "Changes to your home folder will not be monitored."
@@ -301,7 +303,7 @@ msgstr "I cambiamenti alla vostra cartella home non saranno monitorati."
 
 #: baobab/src/baobab.c:913
 msgid "Move to parent folder"
-msgstr "Spostati alla cartella superiore"
+msgstr "Spostati sulla cartella superiore"
 
 #: baobab/src/baobab.c:917
 msgid "Zoom in"
@@ -313,7 +315,7 @@ msgstr "Riduci ingrandimento"
 
 #: baobab/src/baobab.c:925
 msgid "Save screenshot"
-msgstr "Salva schermata"
+msgstr "Salva la schermata"
 
 #: baobab/src/baobab.c:1111
 msgid "View as Rings Chart"
@@ -337,47 +339,47 @@ msgstr "Troppi argomenti. Può essere specificata una sola directory."
 
 #: baobab/src/baobab.c:1274
 msgid "Could not detect any mount point."
-msgstr "Impossibile rilevare alcun punto di mount."
+msgstr "Non è stato possibile rilevare alcun punto di mount."
 
 #: baobab/src/baobab.c:1276
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr "Senza punti di mount l'utilizzo del disco non può essere analizzato."
 
-#: baobab/src/baobab-chart.c:204
+#: baobab/src/baobab-chart.c:203
 msgid "Maximum depth"
 msgstr "Profondità massima"
 
-#: baobab/src/baobab-chart.c:205
+#: baobab/src/baobab-chart.c:204
 msgid "The maximum depth drawn in the chart from the root"
 msgstr "La profondità massima disegnata nel grafico dalla radice"
 
-#: baobab/src/baobab-chart.c:214
+#: baobab/src/baobab-chart.c:213
 msgid "Chart model"
 msgstr "Modello del grafico"
 
-#: baobab/src/baobab-chart.c:215
+#: baobab/src/baobab-chart.c:214
 msgid "Set the model of the chart"
 msgstr "Imposta il modello del grafico"
 
-#: baobab/src/baobab-chart.c:222
+#: baobab/src/baobab-chart.c:221
 msgid "Chart root node"
 msgstr "Nodo radice del grafico"
 
-#: baobab/src/baobab-chart.c:223
+#: baobab/src/baobab-chart.c:222
 msgid "Set the root node from the model"
 msgstr "Imposta il nodo radice dal modello"
 
-#: baobab/src/baobab-chart.c:1713
+#: baobab/src/baobab-chart.c:1708
 msgid "Cannot create pixbuf image!"
-msgstr "Impossibile creare l'immagine pixbuf!"
+msgstr "Non è possibile creare l'immagine pixbuf!"
 
-#: baobab/src/baobab-chart.c:1723
+#: baobab/src/baobab-chart.c:1718
 msgid "Save Snapshot"
-msgstr "Salva schermata"
+msgstr "Salva la schermata"
 
-#: baobab/src/baobab-chart.c:1750
+#: baobab/src/baobab-chart.c:1745
 msgid "_Image type:"
-msgstr "Tipo _immagine:"
+msgstr "Tipo di _immagine:"
 
 #: baobab/src/baobab-prefs.c:171
 msgid "Scan"
@@ -393,7 +395,7 @@ msgstr "Punto di mount"
 
 #: baobab/src/baobab-prefs.c:194
 msgid "Filesystem Type"
-msgstr "Tipo file system"
+msgstr "Tipo del file system"
 
 #: baobab/src/baobab-prefs.c:202
 msgid "Total Size"
@@ -403,90 +405,91 @@ msgstr "Dimensione totale"
 msgid "Available"
 msgstr "Disponibile"
 
-#: baobab/src/baobab-remote-connect-dialog.c:70
+#: baobab/src/baobab-remote-connect-dialog.c:68
 #, c-format
 msgid "Cannot scan location \"%s\""
-msgstr "Impossibile fare la scansione dell'indirizzo «%s»"
+msgstr "Non è possibile fare la scansione della posizione \"%s\""
+
+#: baobab/src/baobab-remote-connect-dialog.c:166
+msgid "Custom Location"
+msgstr "Posizione personalizzata"
 
 #: baobab/src/baobab-remote-connect-dialog.c:168
-msgid "Custom Location"
-msgstr "Indirizzo personalizzato"
-
-#: baobab/src/baobab-remote-connect-dialog.c:170
 msgid "SSH"
 msgstr "SSH"
 
-#: baobab/src/baobab-remote-connect-dialog.c:173
+#: baobab/src/baobab-remote-connect-dialog.c:171
 msgid "Public FTP"
 msgstr "FTP pubblico"
 
-#: baobab/src/baobab-remote-connect-dialog.c:175
+#: baobab/src/baobab-remote-connect-dialog.c:173
 msgid "FTP (with login)"
 msgstr "FTP (con accesso)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:178
+#: baobab/src/baobab-remote-connect-dialog.c:176
 msgid "Windows share"
 msgstr "Condivisione Windows"
 
-#: baobab/src/baobab-remote-connect-dialog.c:180
+#: baobab/src/baobab-remote-connect-dialog.c:178
 msgid "WebDAV (HTTP)"
 msgstr "WebDAV (HTTP)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:182
+#: baobab/src/baobab-remote-connect-dialog.c:180
 msgid "Secure WebDAV (HTTPS)"
 msgstr "WebDAV sicuro (HTTPS)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:242
+#: baobab/src/baobab-remote-connect-dialog.c:240
 msgid "Cannot Connect to Server. You must enter a name for the server."
 msgstr ""
-"Impossibile connettersi al server. Occorre inserire un nome per il server."
+"Non è possibile connettersi al server. Occorre inserire un nome per il "
+"server."
 
-#: baobab/src/baobab-remote-connect-dialog.c:245
+#: baobab/src/baobab-remote-connect-dialog.c:243
 msgid "Please enter a name and try again."
-msgstr "Inserire un nome e riprovare."
+msgstr "Per favore, inserire un nome e riprovare."
 
-#: baobab/src/baobab-remote-connect-dialog.c:439
+#: baobab/src/baobab-remote-connect-dialog.c:437
 msgid "_Location (URI):"
-msgstr "_Indirizzo (URI):"
+msgstr "_Posizione (URI):"
 
-#: baobab/src/baobab-remote-connect-dialog.c:455
+#: baobab/src/baobab-remote-connect-dialog.c:453
 msgid "_Server:"
 msgstr "_Server:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:468
+#: baobab/src/baobab-remote-connect-dialog.c:466
 msgid "Optional information:"
 msgstr "Informazioni facoltative:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:477
+#: baobab/src/baobab-remote-connect-dialog.c:475
 msgid "_Share:"
 msgstr "Condivi_sione:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:492
+#: baobab/src/baobab-remote-connect-dialog.c:490
 #: mate-dictionary/data/mate-dictionary-source.ui:121
 msgid "_Port:"
 msgstr "_Porta:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:506
+#: baobab/src/baobab-remote-connect-dialog.c:504
 msgid "_Folder:"
 msgstr "_Cartella:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:520
+#: baobab/src/baobab-remote-connect-dialog.c:518
 msgid "_User Name:"
 msgstr "Nome _utente:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:535
+#: baobab/src/baobab-remote-connect-dialog.c:533
 msgid "_Domain Name:"
-msgstr "Nome _dominio:"
+msgstr "Nome del _dominio:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:592
+#: baobab/src/baobab-remote-connect-dialog.c:590
 msgid "Connect to Server"
 msgstr "Connetti al server"
 
-#: baobab/src/baobab-remote-connect-dialog.c:608
+#: baobab/src/baobab-remote-connect-dialog.c:606
 msgid "Service _type:"
 msgstr "_Tipo di servizio:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:726
+#: baobab/src/baobab-remote-connect-dialog.c:722
 msgid "_Scan"
 msgstr "_Scansione"
 
@@ -506,7 +509,7 @@ msgstr ""
 msgid "_Rescan"
 msgstr "Scansiona _nuovamente"
 
-#: baobab/src/baobab-treeview.c:222 gsearchtool/src/gsearchtool.c:2453
+#: baobab/src/baobab-treeview.c:222 gsearchtool/src/gsearchtool.c:2447
 msgid "Folder"
 msgstr "Cartella"
 
@@ -514,7 +517,7 @@ msgstr "Cartella"
 msgid "Usage"
 msgstr "Utilizzo"
 
-#: baobab/src/baobab-treeview.c:258 gsearchtool/src/gsearchtool.c:2466
+#: baobab/src/baobab-treeview.c:258 gsearchtool/src/gsearchtool.c:2460
 msgid "Size"
 msgstr "Dimensione"
 
@@ -524,11 +527,11 @@ msgstr "Sommario"
 
 #: baobab/src/baobab-utils.c:105
 msgid "Select Folder"
-msgstr "Seleziona cartella"
+msgstr "Seleziona una cartella"
 
 #: baobab/src/baobab-utils.c:117
 msgid "_Show hidden folders"
-msgstr "Mo_stra cartelle nascoste"
+msgstr "Mo_stra le cartelle nascoste"
 
 #: baobab/src/baobab-utils.c:280
 msgid "Cannot check an excluded folder!"
@@ -537,24 +540,24 @@ msgstr "Non è possibile controllare una cartella esclusa!"
 #: baobab/src/baobab-utils.c:304
 #, c-format
 msgid "\"%s\" is not a valid folder"
-msgstr "«%s» non è una cartella valida"
+msgstr "\"%s\" non è una cartella valida"
 
 #: baobab/src/baobab-utils.c:307
 msgid "Could not analyze disk usage."
-msgstr "Impossibile analizzare l'utilizzo del disco."
+msgstr "Non è stato possibile analizzare l'utilizzo del disco."
 
 #: baobab/src/baobab-utils.c:343
 msgid "_Open Folder"
 msgstr "_Apri cartella"
 
-#: baobab/src/baobab-utils.c:349 gsearchtool/src/gsearchtool-callbacks.c:1330
+#: baobab/src/baobab-utils.c:349 gsearchtool/src/gsearchtool-callbacks.c:1326
 msgid "Mo_ve to Trash"
-msgstr "S_posta nel cestino"
+msgstr "S_posta nel Cestino"
 
 #: baobab/src/baobab-utils.c:378
 #, c-format
 msgid "Could not open folder \"%s\""
-msgstr "Impossibile aprire la cartella «%s»"
+msgstr "Impossibile aprire la cartella \"%s\""
 
 #: baobab/src/baobab-utils.c:381
 msgid "There is no installed viewer capable of displaying the folder."
@@ -564,11 +567,11 @@ msgstr ""
 #: baobab/src/baobab-utils.c:448
 #, c-format
 msgid "Could not move \"%s\" to the Trash"
-msgstr "Impossibile spostare «%s» nel cestino"
+msgstr "Non è stato possibile spostare \"%s\" nel Cestino"
 
 #: baobab/src/baobab-utils.c:456
 msgid "Could not move file to the Trash"
-msgstr "Impossibile spostare il file nel cestino"
+msgstr "Non è stato possibile spostare il file nel Cestino"
 
 #: baobab/src/baobab-utils.c:458
 #, c-format
@@ -607,7 +610,7 @@ msgid ""
 msgstr ""
 "Questo programma è distribuito nella speranza che sia utile, ma SENZA ALCUNA"
 " GARANZIA, comprese anche la garanzia implicita di VENDIBILITÀ e di "
-"ADEGUATEZZA A UN PARTICOLARE SCOPO. Vedere la Licenza Pubblica Generale GNU "
+"ADEGUATEZZA A UN PARTICOLARE SCOPO. Si veda la GNU General Public License "
 "per maggiori dettagli."
 
 #: baobab/src/callbacks.c:89 logview/src/logview-about.h:57
@@ -620,15 +623,15 @@ msgstr ""
 " insieme a questo programma.  In caso contrario, vedere qui "
 "<https://www.gnu.org/licenses/>."
 
-#: baobab/src/callbacks.c:105
+#: baobab/src/callbacks.c:104
 msgid "About Disk Usage Analyzer"
-msgstr "Informazioni su Analizzatore di utilizzo del disco"
+msgstr "Informazioni su Disk Usage Analyzer"
 
-#: baobab/src/callbacks.c:106
+#: baobab/src/callbacks.c:105
 msgid "Analyze your disk usage through a graphical tool."
 msgstr "Analizza l'utilizzo del disco mediante uno strumento grafico."
 
-#: baobab/src/callbacks.c:107
+#: baobab/src/callbacks.c:106
 msgid ""
 "Copyright © 2005-2010 Fabio Marzocca\n"
 "Copyright © 2011-2021 MATE developers"
@@ -636,24 +639,24 @@ msgstr ""
 "Copyright © 2005-2010 Fabio Marzocca\n"
 "Copyright © 2011-2021 Gli sviluppatori di MATE"
 
-#: baobab/src/callbacks.c:113 logview/src/logview-about.h:62
+#: baobab/src/callbacks.c:112 logview/src/logview-about.h:62
 #: mate-dictionary/src/gdict-about.c:53
 msgid "translator-credits"
-msgstr " Alessandro Volturno, 2020"
+msgstr " Alessandro Volturno, 2020-2022"
 
-#: baobab/src/callbacks.c:211 gsearchtool/src/gsearchtool-callbacks.c:506
-#: gsearchtool/src/gsearchtool-callbacks.c:879
+#: baobab/src/callbacks.c:210 gsearchtool/src/gsearchtool-callbacks.c:505
+#: gsearchtool/src/gsearchtool-callbacks.c:878
 msgid "The document does not exist."
 msgstr "Il documento non esiste."
 
-#: baobab/src/callbacks.c:292
+#: baobab/src/callbacks.c:291
 msgid "The folder does not exist."
 msgstr "La cartella non esiste."
 
 #: gsearchtool/data/mate-search-tool.appdata.xml.in:7
 #: gsearchtool/data/mate-search-tool.desktop.in:3
 msgid "MATE Search Tool"
-msgstr "Strumento di ricerca di MATE"
+msgstr "Search Tool di MATE"
 
 #: gsearchtool/data/mate-search-tool.appdata.xml.in:8
 msgid "A file searching tool for MATE Desktop"
@@ -667,12 +670,12 @@ msgid ""
 " contained within a file, ownership, date of modification, file size, folder"
 " exclusion, etc.."
 msgstr ""
-"Strumento di ricerca MATE è un'applicazione semplice ma potente, che vi "
-"permette di cercare file e cartelle su qualsiasi file system montato. La sua"
-" interfaccia permette di accedere istantaneamente ad un'ampia varietà di "
-"opzioni di ricerca, come il testo contenuto all'interno di un file, una "
-"specifica proprietà, la data di modifica, la dimensione del file, "
-"l'esclusione di cartelle, ecc."
+"MATE Search Tool è un'applicazione semplice ma potente, che vi permette di "
+"cercare file e cartelle su qualsiasi file system montato. La sua interfaccia"
+" permette di accedere istantaneamente ad un'ampia varietà di opzioni di "
+"ricerca, come il testo contenuto all'interno di un file, una specifica "
+"proprietà, la data di modifica, la dimensione del file, l'esclusione di "
+"cartelle, ecc."
 
 #: gsearchtool/data/mate-search-tool.desktop.in:4
 msgid "Locate documents and folders on this computer by name or content"
@@ -698,11 +701,11 @@ msgstr ""
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:10
 msgid "Show Additional Options"
-msgstr "Mostra opzioni aggiuntive"
+msgstr "Mostra le opzioni aggiuntive"
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:14
 msgid "Disable Quick Search"
-msgstr "Disabilita ricerca rapida"
+msgstr "Disabilita la ricerca rapida"
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:15
 msgid ""
@@ -710,7 +713,7 @@ msgid ""
 "command when performing simple file name searches."
 msgstr ""
 "Questa chiave determina se lo strumento di ricerca disabilita il comando "
-"«locate» nelle ricerche semplici sul nome del file."
+"«locate» durante le ricerche sui file name semplici."
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:19
 msgid "Quick Search Excluded Paths"
@@ -736,7 +739,7 @@ msgid ""
 "after performing a quick search."
 msgstr ""
 "Questa chiave determina se lo strumento di ricerca disabilita l'uso del "
-"comando find dopo aver effettuato una ricerca rapida."
+"comando «find» dopo aver effettuato una ricerca rapida."
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:29
 msgid "Quick Search Second Scan Excluded Paths"
@@ -751,14 +754,14 @@ msgid ""
 " is /."
 msgstr ""
 "Questa chiave imposta i percorsi che lo strumento di ricerca esclude da un "
-"secondo passaggio di ricerca veloce. Il secondo passaggio usa il comando "
+"secondo passaggio di ricerca rapida. Il secondo passaggio usa il comando "
 "«find» per cercare i file. Lo scopo del secondo passaggio è trovare i file "
 "che non sono stati indicizzati. I metacaratteri '*' e '?' sono supportati. "
 "Il valore predefinito è /."
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:34
 msgid "Search Result Columns Order"
-msgstr "Ordine colonne del risultato di una ricerca"
+msgstr "Ordine delle colonne del risultato di una ricerca"
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:35
 msgid ""
@@ -795,7 +798,7 @@ msgid ""
 msgstr ""
 "Questa chiave definisce l'altezza della finestra ed è utilizzata per "
 "ricordare la dimensione dello strumento di ricerca tra le sessioni. "
-"Impostandola a -1 farà sì che lo strumento di ricerca usi l'altezza "
+"Impostandola a -1 farà sì che lo strumento di ricerca utilizzi l'altezza "
 "predefinita."
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:49
@@ -816,8 +819,8 @@ msgstr "Cerca nella cartella"
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:55
 msgid "This key defines the default value of the \"Look in Folder\" widget."
 msgstr ""
-"Questa chiave definisce il valore predefinito del widget «Cerca nella "
-"cartella»."
+"Questa chiave definisce il valore predefinito del widget \"Cerca nella "
+"cartella\"."
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:62
 msgid ""
@@ -888,7 +891,7 @@ msgid ""
 "This key determines if the \"Owner is unrecognized\" search option is "
 "selected when the search tool is started."
 msgstr ""
-"Questa chiave determina se l'opzione di ricerca \"Il proprietario è non "
+"Questa chiave determina se l'opzione di ricerca \"Il proprietario non è "
 "riconosciuto\" è attiva quando viene avviato lo strumento di ricerca."
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:98
@@ -932,66 +935,66 @@ msgstr ""
 "Questa chiave determina se l'opzione di ricerca \"Escludi altri file "
 "system\" è attiva quando viene avviato lo strumento di ricerca."
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:169
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:168
 msgid "File is not a valid .desktop file"
 msgstr "Il file non è un file .desktop valido"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:194
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:193
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
-msgstr "Versione «%s» del file desktop non riconosciuta"
+msgstr "Versione '%s' del file desktop non riconosciuta"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:976
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:975
 #, c-format
 msgid "Starting %s"
-msgstr "Avvio di «%s»"
+msgstr "Avvio di %s"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1118
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1117
 msgid "Application does not accept documents on command line"
 msgstr "L'applicazione non accetta documenti sulla riga di comando"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1186
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1185
 #, c-format
 msgid "Unrecognized launch option: %d"
 msgstr "Opzione di lancio non riconosciuta: %d"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1402
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1401
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 msgstr ""
-"Impossibile passare URI di documenti a un elemento desktop con "
+"Impossibile passare URI di documenti ad un elemento desktop con "
 "\"Tipo=Collegamento\""
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1423
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1422
 msgid "Not a launchable item"
 msgstr "Non è un oggetto lanciabile"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:234
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:233
 msgid "Disable connection to session manager"
-msgstr "Disabilita la connessione al gestore di sessione"
+msgstr "Disabilita la connessione al gestore della sessione"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:239
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:238
 msgid "Specify file containing saved configuration"
 msgstr "Specifica il file contenente la configurazione salvata"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:239
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:238
 msgid "FILE"
 msgstr "FILE"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:244
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:243
 msgid "Specify session management ID"
 msgstr "Specifica l'ID di gestione della sessione"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:244
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:243
 msgid "ID"
 msgstr "ID"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:270
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:269
 msgid "Session management options:"
-msgstr "Opzioni di gestione sessione:"
+msgstr "Opzioni di gestione della sessione:"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:271
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:270
 msgid "Show session management options"
-msgstr "Mostra le opzioni di gestione sessione"
+msgstr "Mostra le opzioni di gestione della sessione"
 
 #: gsearchtool/src/gsearchtool.c:82
 msgid "Contains the _text"
@@ -1035,11 +1038,11 @@ msgstr "Posseduto dal _gruppo"
 
 #: gsearchtool/src/gsearchtool.c:93
 msgid "Owner is unrecognized"
-msgstr "Il proprietario è non riconosciuto"
+msgstr "Il proprietario non è riconosciuto"
 
 #: gsearchtool/src/gsearchtool.c:95
 msgid "Na_me does not contain"
-msgstr "Il nome non con_tiene"
+msgstr "Il no_me non contiene"
 
 #: gsearchtool/src/gsearchtool.c:96
 msgid "Name matches regular e_xpression"
@@ -1096,19 +1099,19 @@ msgstr "MODELLO"
 
 #: gsearchtool/src/gsearchtool.c:385
 msgid "A locate database has probably not been created."
-msgstr "Il database per locate probabilmente non è stato creato."
+msgstr "Probabilmente non è stato creato un database di localizzazione."
 
 #: gsearchtool/src/gsearchtool.c:487
 #, c-format
 msgid "Character set conversion failed for \"%s\""
-msgstr "Conversione del set di caratteri fallita per «%s»"
+msgstr "Conversione del set di caratteri fallita per \"%s\""
 
 #: gsearchtool/src/gsearchtool.c:511
 msgid "Searching..."
 msgstr "Ricerca in corso..."
 
 #: gsearchtool/src/gsearchtool.c:511 gsearchtool/src/gsearchtool.c:1048
-#: gsearchtool/src/gsearchtool.c:3078
+#: gsearchtool/src/gsearchtool.c:3077
 msgid "Search for Files"
 msgstr "Cerca File"
 
@@ -1130,6 +1133,7 @@ msgid "%'d File Found"
 msgid_plural "%'d Files Found"
 msgstr[0] "%'d file trovato"
 msgstr[1] "%'d file trovati"
+msgstr[2] "%'d file trovati"
 
 #: gsearchtool/src/gsearchtool.c:1031 gsearchtool/src/gsearchtool.c:1069
 #, c-format
@@ -1137,24 +1141,25 @@ msgid "%'d file found"
 msgid_plural "%'d files found"
 msgstr[0] "%'d file trovato"
 msgstr[1] "%'d file trovati"
+msgstr[2] "%'d file trovati"
 
 #: gsearchtool/src/gsearchtool.c:1160
 msgid "Entry changed called for a non entry option!"
-msgstr "Cambiamento della voce chiamato per un oggetto che non è una voce."
+msgstr "L'ingresso cambiato è stato chiamato per un'opzione di non ingresso!"
 
 #: gsearchtool/src/gsearchtool.c:1325
 msgid "Set the text of \"Name contains\" search option"
-msgstr "Imposta il testo dell'opzione di ricerca «Il nome contiene»"
+msgstr "Imposta il testo dell'opzione di ricerca \"Il nome contiene\""
 
 #: gsearchtool/src/gsearchtool.c:1326
 msgid "Set the text of \"Look in folder\" search option"
-msgstr "Imposta il testo dell'opzione di ricerca «Cerca nella cartella»"
+msgstr "Imposta il testo dell'opzione di ricerca \"Cerca nella cartella\""
 
 #: gsearchtool/src/gsearchtool.c:1327
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr ""
-"Ordina i file per uno dei seguenti criteri: nome, cartella dimensione, tipo "
-"o data"
+"Ordina i file secondo uno dei seguenti criteri: nome, cartella dimensione, "
+"tipo o data"
 
 #: gsearchtool/src/gsearchtool.c:1328
 msgid "Set sort order to descending, the default is ascending"
@@ -1163,17 +1168,17 @@ msgstr ""
 
 #: gsearchtool/src/gsearchtool.c:1329
 msgid "Automatically start a search"
-msgstr "Inizia la ricerca automaticamente"
+msgstr "Inizia automaticamente una ricerca"
 
 #: gsearchtool/src/gsearchtool.c:1335
 #, c-format
 msgid "Select the \"%s\" search option"
-msgstr "Seleziona l'opzione di ricerca «%s»"
+msgstr "Seleziona l'opzione di ricerca \"%s\""
 
 #: gsearchtool/src/gsearchtool.c:1338
 #, c-format
 msgid "Select and set the \"%s\" search option"
-msgstr "Seleziona e imposta l'opzione di ricerca «%s»"
+msgstr "Seleziona e imposta l'opzione di ricerca \"%s\""
 
 #: gsearchtool/src/gsearchtool.c:1445
 msgid "Invalid option passed to sortby command line argument."
@@ -1193,7 +1198,7 @@ msgid ""
 "search."
 msgstr ""
 "Il risultato della ricerca potrebbe non essere valido. Si sono verificati "
-"alcuni errori durante la ricerca."
+"alcuni errori durante l'esecuzione di questa ricerca."
 
 #: gsearchtool/src/gsearchtool.c:1763 gsearchtool/src/gsearchtool.c:1807
 msgid "Show more _details"
@@ -1204,17 +1209,17 @@ msgid ""
 "The search results may be out of date or invalid.  Do you want to disable "
 "the quick search feature?"
 msgstr ""
-"I risultati della ricerca potrebbero essere non aggiornati o non validi.  "
+"I risultati della ricerca potrebbero non essere aggiornati o validi.  "
 "Disabilitare la funzionalità di ricerca rapida?"
 
 #: gsearchtool/src/gsearchtool.c:1818
 msgid "Disable _Quick Search"
-msgstr "Disabilita ricerca _rapida"
+msgstr "Disabilita la ricerca _rapida"
 
 #: gsearchtool/src/gsearchtool.c:1845
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
-msgstr "Impossibile impostare l'id del gruppo al processo figlio %d: %s.\n"
+msgstr "Impossibile impostare l'id del gruppo al figlio %d: %s.\n"
 
 #: gsearchtool/src/gsearchtool.c:1870
 msgid "Error parsing the search command."
@@ -1227,7 +1232,7 @@ msgstr "Errore nell'eseguire il comando di ricerca."
 #: gsearchtool/src/gsearchtool.c:2025
 #, c-format
 msgid "Enter a text value for the \"%s\" search option."
-msgstr "Inserire un valore testuale per l'opzione di ricerca «%s»."
+msgstr "Inserire un valore testuale per l'opzione di ricerca \"%s\"."
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
@@ -1239,270 +1244,275 @@ msgstr "\"%s\" in %s"
 #: gsearchtool/src/gsearchtool.c:2032
 #, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
-msgstr "Inserire un valore in %s per l'opzione di ricerca «%s»."
+msgstr "Inserire un valore in %s per l'opzione di ricerca \"%s\"."
 
-#: gsearchtool/src/gsearchtool.c:2095
+#: gsearchtool/src/gsearchtool.c:2096
 #, c-format
 msgid "Remove \"%s\""
 msgstr "Rimuovi \"%s\""
 
-#: gsearchtool/src/gsearchtool.c:2096
+#: gsearchtool/src/gsearchtool.c:2097
 #, c-format
 msgid "Click to remove the \"%s\" search option."
-msgstr "Fare clic per rimuovere l'opzione di ricerca «%s»"
+msgstr "Fare clic per rimuovere l'opzione di ricerca \"%s\"."
 
-#: gsearchtool/src/gsearchtool.c:2189
+#: gsearchtool/src/gsearchtool.c:2190
 msgid "A_vailable options:"
 msgstr "Op_zioni disponibili:"
 
-#: gsearchtool/src/gsearchtool.c:2218
+#: gsearchtool/src/gsearchtool.c:2219
 msgid "Available options"
 msgstr "Opzioni disponibili"
 
-#: gsearchtool/src/gsearchtool.c:2219
+#: gsearchtool/src/gsearchtool.c:2220
 msgid "Select a search option from the drop-down list."
 msgstr "Selezionare un'opzione di ricerca dal menù a discesa."
 
-#: gsearchtool/src/gsearchtool.c:2236
+#: gsearchtool/src/gsearchtool.c:2238
 msgid "Add search option"
-msgstr "Aggiunge un'opzione di ricerca"
+msgstr "Aggiungi un'opzione di ricerca"
 
-#: gsearchtool/src/gsearchtool.c:2237
+#: gsearchtool/src/gsearchtool.c:2239
 msgid "Click to add the selected available search option."
 msgstr "Fare clic per aggiungere l'opzione di ricerca selezionata."
 
-#: gsearchtool/src/gsearchtool.c:2326
+#: gsearchtool/src/gsearchtool.c:2328
 msgid "S_earch results:"
 msgstr "Risultati della ric_erca:"
 
-#: gsearchtool/src/gsearchtool.c:2369
+#: gsearchtool/src/gsearchtool.c:2371
 msgid "List View"
-msgstr "Vista a elenco"
+msgstr "Vista ad elenco"
 
-#: gsearchtool/src/gsearchtool.c:2429
-#: mate-dictionary/libgdict/gdict-source.c:243
+#: gsearchtool/src/gsearchtool.c:2423
+#: mate-dictionary/libgdict/gdict-source.c:240
 msgid "Name"
 msgstr "Nome"
 
-#: gsearchtool/src/gsearchtool.c:2478
+#: gsearchtool/src/gsearchtool.c:2472
 msgid "Type"
 msgstr "Tipo"
 
-#: gsearchtool/src/gsearchtool.c:2490
+#: gsearchtool/src/gsearchtool.c:2484
 msgid "Date Modified"
 msgstr "Data di modifica"
 
-#: gsearchtool/src/gsearchtool.c:2820
+#: gsearchtool/src/gsearchtool.c:2813
 msgid "_Name contains:"
 msgstr "Il _nome contiene:"
 
-#: gsearchtool/src/gsearchtool.c:2835 gsearchtool/src/gsearchtool.c:2836
+#: gsearchtool/src/gsearchtool.c:2828 gsearchtool/src/gsearchtool.c:2829
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr ""
 "Inserire un nome di file completo o parziale con o senza metacaratteri."
 
-#: gsearchtool/src/gsearchtool.c:2836
+#: gsearchtool/src/gsearchtool.c:2829
 msgid "Name contains"
 msgstr "Il nome contiene"
 
-#: gsearchtool/src/gsearchtool.c:2842
+#: gsearchtool/src/gsearchtool.c:2835
 msgid "_Look in folder:"
 msgstr "C_erca nella cartella:"
 
-#: gsearchtool/src/gsearchtool.c:2848
+#: gsearchtool/src/gsearchtool.c:2841
 msgid "Browse"
 msgstr "Esplora"
 
-#: gsearchtool/src/gsearchtool.c:2858
+#: gsearchtool/src/gsearchtool.c:2851
 msgid "Look in folder"
 msgstr "Cerca nella cartella"
 
-#: gsearchtool/src/gsearchtool.c:2858
+#: gsearchtool/src/gsearchtool.c:2851
 msgid "Select the folder or device from which you want to begin the search."
 msgstr ""
 "Selezionare la cartella o il dispositivo dal quale iniziare la ricerca."
 
-#: gsearchtool/src/gsearchtool.c:2876
+#: gsearchtool/src/gsearchtool.c:2869
 msgid "Select more _options"
-msgstr "Seleziona _più opzioni"
+msgstr "Seleziona più _opzioni"
 
-#: gsearchtool/src/gsearchtool.c:2885
+#: gsearchtool/src/gsearchtool.c:2879
 msgid "Select more options"
 msgstr "Seleziona più opzioni"
 
-#: gsearchtool/src/gsearchtool.c:2885
+#: gsearchtool/src/gsearchtool.c:2879
 msgid "Click to expand or collapse the list of available options."
 msgstr ""
 "Fare clic per espandere o contrarre l'elenco delle opzioni disponibili."
 
-#: gsearchtool/src/gsearchtool.c:2916
+#: gsearchtool/src/gsearchtool.c:2910
 msgid "Click to display the help manual."
 msgstr "Fare clic per visualizzare la guida."
 
-#: gsearchtool/src/gsearchtool.c:2929
+#: gsearchtool/src/gsearchtool.c:2924
 msgid "Click to close \"Search for Files\"."
 msgstr "Fare clic per chiudere \"Cerca file\"."
 
-#: gsearchtool/src/gsearchtool.c:2964
+#: gsearchtool/src/gsearchtool.c:2962
 msgid "Click to perform a search."
 msgstr "Fare clic per iniziare la ricerca."
 
-#: gsearchtool/src/gsearchtool.c:2965
+#: gsearchtool/src/gsearchtool.c:2963
 msgid "Click to stop a search."
 msgstr "Fare clic per fermare la ricerca."
 
-#: gsearchtool/src/gsearchtool.c:3061
+#: gsearchtool/src/gsearchtool.c:3060
 msgid "- the MATE Search Tool"
 msgstr "- lo strumento di ricerca di MATE"
 
-#: gsearchtool/src/gsearchtool.c:3072
+#: gsearchtool/src/gsearchtool.c:3071
 #, c-format
 msgid "Failed to parse command line arguments: %s\n"
 msgstr "È fallita l'analisi degli argomenti della riga di comando: %s\n"
 
 #: gsearchtool/src/gsearchtool-callbacks.c:192
 msgid "Could not open help document."
-msgstr "Impossibile aprire il documento della guida"
+msgstr "Non è stato possibile aprire il documento di aiuto."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:343
+#: gsearchtool/src/gsearchtool-callbacks.c:342
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] "Sei sicuro di voler aprire %d documento?"
-msgstr[1] "Sei sicuro di voler aprire %d documenti?"
+msgstr[0] "Siete sicuri di voler aprire %d documento?"
+msgstr[1] "Siete sicuri di voler aprire %d documenti?"
+msgstr[2] "Siete sicuri di voler aprire %d documenti?"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:348
-#: gsearchtool/src/gsearchtool-callbacks.c:548
+#: gsearchtool/src/gsearchtool-callbacks.c:347
+#: gsearchtool/src/gsearchtool-callbacks.c:547
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
 msgstr[0] "Verrà aperta %d finestra separata."
 msgstr[1] "Verranno aperte %d finestre separate."
+msgstr[2] "Verranno aperte %d finestre separate."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:393
+#: gsearchtool/src/gsearchtool-callbacks.c:392
 #, c-format
 msgid "Could not open document \"%s\"."
-msgstr "Impossibile aprire il documento «%s»."
+msgstr "Impossibile aprire il documento \"%s\"."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:422
+#: gsearchtool/src/gsearchtool-callbacks.c:421
 #, c-format
 msgid "Could not open folder \"%s\"."
-msgstr "Impossibile aprire la cartella «%s»."
+msgstr "Impossibile aprire la cartella \"%s\"."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:430
+#: gsearchtool/src/gsearchtool-callbacks.c:429
 msgid "The caja file manager is not running."
 msgstr "Il file manager Caja non è in esecuzione."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:521
+#: gsearchtool/src/gsearchtool-callbacks.c:520
 msgid "There is no installed viewer capable of displaying the document."
 msgstr ""
 "Non è installato alcun visualizzatore in grado di mostrare il documento."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:543
+#: gsearchtool/src/gsearchtool-callbacks.c:542
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] "Aprire veramente %d cartella?"
-msgstr[1] "Aprire veramente %d cartelle?"
+msgstr[0] "Siete sicuri di voler aprire %d cartella?"
+msgstr[1] "Siete sicuri di voler aprire %d cartelle?"
+msgstr[2] "Siete sicuri di voler aprire %d cartelle?"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:725
+#: gsearchtool/src/gsearchtool-callbacks.c:724
 #, c-format
 msgid "Could not move \"%s\" to trash."
-msgstr "Impossibile spostare «%s» nel cestino."
+msgstr "Non è stato possibile spostare \"%s\" nel cestino."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:756
+#: gsearchtool/src/gsearchtool-callbacks.c:755
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
-msgstr "Volete eliminare definitivamente «%s»?"
+msgstr "Si vuole eliminare definitivamente \"%s\"?"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:759
+#: gsearchtool/src/gsearchtool-callbacks.c:758
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
-msgstr "Il cestino non è disponibile. Impossibile spostare «%s» nel cestino."
+msgstr ""
+"Il cestino non è disponibile. Non è stato possibile spostare \"%s\" nel "
+"cestino."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:803
+#: gsearchtool/src/gsearchtool-callbacks.c:802
 #, c-format
 msgid "Could not delete \"%s\"."
-msgstr "Impossibile eliminare «%s»."
+msgstr "Non è stato possibile eliminare \"%s\"."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:915
+#: gsearchtool/src/gsearchtool-callbacks.c:914
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
-msgstr "Eliminazione di «%s» fallita: %s."
+msgstr "Eliminazione di \"%s\" fallita: %s."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:927
+#: gsearchtool/src/gsearchtool-callbacks.c:926
 #, c-format
 msgid "Moving \"%s\" failed: %s."
-msgstr "Spostamento di «%s» fallito: %s."
+msgstr "Spostamento di \"%s\" fallito: %s."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1143
-#: gsearchtool/src/gsearchtool-callbacks.c:1169
+#: gsearchtool/src/gsearchtool-callbacks.c:1142
+#: gsearchtool/src/gsearchtool-callbacks.c:1167
 msgid "_Open"
 msgstr "_Apri"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1199
+#: gsearchtool/src/gsearchtool-callbacks.c:1196
 #, c-format
 msgid "_Open with %s"
-msgstr "_Apri con «%s»"
+msgstr "_Apri con %s"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1220
+#: gsearchtool/src/gsearchtool-callbacks.c:1217
 #, c-format
 msgid "Open with %s"
-msgstr "Apre con «%s»"
+msgstr "Apre con %s"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1249
+#: gsearchtool/src/gsearchtool-callbacks.c:1246
 msgid "Open Wit_h"
 msgstr "Apri _con"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1299
+#: gsearchtool/src/gsearchtool-callbacks.c:1297
 msgid "Open Containing _Folder"
-msgstr "Apri la _cartella contenitore"
+msgstr "Apri la cartella contenitore"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1310
+#: gsearchtool/src/gsearchtool-callbacks.c:1307
 msgid "Copy _Path"
-msgstr "Copia _percorso"
+msgstr "Copia il _percorso"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1344
+#: gsearchtool/src/gsearchtool-callbacks.c:1339
 msgid "_Save Results As..."
-msgstr "_Salva risultati come..."
+msgstr "_Salva i risultati come..."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1722
+#: gsearchtool/src/gsearchtool-callbacks.c:1715
 msgid "Save Search Results As..."
-msgstr "Salva risultati della ricerca come..."
+msgstr "Salva i risultati della ricerca come..."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1751
+#: gsearchtool/src/gsearchtool-callbacks.c:1744
 msgid "Could not save document."
-msgstr "Impossibile salvare il documento."
+msgstr "Non è stato possibile salvare il documento."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1752
+#: gsearchtool/src/gsearchtool-callbacks.c:1745
 msgid "You did not select a document name."
 msgstr "Non è stato selezionato un nome di documento."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1782
+#: gsearchtool/src/gsearchtool-callbacks.c:1775
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
-msgstr "Impossibile salvare il documento «%s» su «%s»."
+msgstr "Non è stato possibile salvare il documento \"%s\" su \"%s\"."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1815
+#: gsearchtool/src/gsearchtool-callbacks.c:1808
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
-msgstr "Il documento «%s» esiste già. Volete sostituirlo?"
+msgstr "Il documento \"%s\" esiste già. Volete sostituirlo?"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1819
+#: gsearchtool/src/gsearchtool-callbacks.c:1812
 msgid "If you replace an existing file, its contents will be overwritten."
 msgstr ""
 "Se si sostituisce un file esistente il suo contenuto verrà sovrascritto."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1834
+#: gsearchtool/src/gsearchtool-callbacks.c:1827
 #: mate-screenshot/src/screenshot-xfer.c:84
 msgid "_Replace"
 msgstr "_Sostituisci"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1883
+#: gsearchtool/src/gsearchtool-callbacks.c:1876
 msgid "The document name you selected is a folder."
 msgstr "Il nome del documento selezionato è una cartella."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1919
+#: gsearchtool/src/gsearchtool-callbacks.c:1912
 msgid "You may not have write permissions to the document."
 msgstr "Si potrebbe non avere i permessi di scrittura sul documento."
 
@@ -1527,86 +1537,86 @@ msgstr "collegamento (interrotto)"
 msgid "link to %s"
 msgstr "collegamento a %s"
 
-#: gsearchtool/src/gsearchtool-support.c:1101
+#: gsearchtool/src/gsearchtool-support.c:1099
 msgid " (copy)"
 msgstr " (copia)"
 
-#: gsearchtool/src/gsearchtool-support.c:1103
+#: gsearchtool/src/gsearchtool-support.c:1101
 msgid " (another copy)"
 msgstr " (altra copia)"
 
+#: gsearchtool/src/gsearchtool-support.c:1104
 #: gsearchtool/src/gsearchtool-support.c:1106
 #: gsearchtool/src/gsearchtool-support.c:1108
-#: gsearchtool/src/gsearchtool-support.c:1110
-#: gsearchtool/src/gsearchtool-support.c:1120
+#: gsearchtool/src/gsearchtool-support.c:1118
 msgid "th copy)"
 msgstr "ª copia)"
 
-#: gsearchtool/src/gsearchtool-support.c:1113
+#: gsearchtool/src/gsearchtool-support.c:1111
 msgid "st copy)"
 msgstr "ª copia)"
 
-#: gsearchtool/src/gsearchtool-support.c:1115
+#: gsearchtool/src/gsearchtool-support.c:1113
 msgid "nd copy)"
 msgstr "ª copia)"
 
-#: gsearchtool/src/gsearchtool-support.c:1117
+#: gsearchtool/src/gsearchtool-support.c:1115
 msgid "rd copy)"
 msgstr "ª copia)"
 
-#: gsearchtool/src/gsearchtool-support.c:1134
+#: gsearchtool/src/gsearchtool-support.c:1132
 #, c-format
 msgid "%s (copy)%s"
 msgstr "%s (copia)%s"
 
-#: gsearchtool/src/gsearchtool-support.c:1136
+#: gsearchtool/src/gsearchtool-support.c:1134
 #, c-format
 msgid "%s (another copy)%s"
 msgstr "%s (altra copia)%s"
 
+#: gsearchtool/src/gsearchtool-support.c:1137
 #: gsearchtool/src/gsearchtool-support.c:1139
 #: gsearchtool/src/gsearchtool-support.c:1141
-#: gsearchtool/src/gsearchtool-support.c:1143
-#: gsearchtool/src/gsearchtool-support.c:1152
+#: gsearchtool/src/gsearchtool-support.c:1150
 #, c-format
 msgid "%s (%dth copy)%s"
-msgstr "%s (%d° copia)%s"
+msgstr "%s (%dª copia)%s"
+
+#: gsearchtool/src/gsearchtool-support.c:1144
+#, c-format
+msgid "%s (%dst copy)%s"
+msgstr "%s (%dª copia)%s"
 
 #: gsearchtool/src/gsearchtool-support.c:1146
 #, c-format
-msgid "%s (%dst copy)%s"
-msgstr "%s (%d° copia)%s"
+msgid "%s (%dnd copy)%s"
+msgstr "%s (%dª copia)%s"
 
 #: gsearchtool/src/gsearchtool-support.c:1148
 #, c-format
-msgid "%s (%dnd copy)%s"
-msgstr "%s (%d° copia)%s"
-
-#: gsearchtool/src/gsearchtool-support.c:1150
-#, c-format
 msgid "%s (%drd copy)%s"
-msgstr "%s (%d° copia)%s"
+msgstr "%s (%dª copia)%s"
 
-#: gsearchtool/src/gsearchtool-support.c:1197
+#: gsearchtool/src/gsearchtool-support.c:1195
 msgid " (invalid Unicode)"
 msgstr " (Unicode non valido)"
 
-#: gsearchtool/src/gsearchtool-support.c:1286
+#: gsearchtool/src/gsearchtool-support.c:1284
 msgid " ("
 msgstr " ("
 
-#: gsearchtool/src/gsearchtool-support.c:1294
+#: gsearchtool/src/gsearchtool-support.c:1292
 #, c-format
 msgid " (%d"
 msgstr " (%d"
 
 #: logview/data/mate-system-log.desktop.in.in:3
 msgid "Log File Viewer"
-msgstr "Visualizzatore di file di registro"
+msgstr "Log File Viewer"
 
 #: logview/data/mate-system-log.desktop.in.in:4
 msgid "View or monitor system log files"
-msgstr "Visualizza o monitora i file di registro di sistema"
+msgstr "Visualizza o monitora i file di registro del sistema"
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -1623,9 +1633,9 @@ msgid ""
 "Specifies the log file displayed at startup. The default is either "
 "/var/adm/messages or /var/log/messages, depending on your operating system."
 msgstr ""
-"Specifica il file di registro da aprire all'avvio. L'impostazione "
-"predefinita può essere /var/log/messages o /var/adm/messages, a seconda del "
-"vostro sistema operativo."
+"Specifica il file di registro mostrato all'avvio. L'impostazione predefinita"
+" può essere /var/adm/messages o /var/log/messages, a seconda del vostro "
+"sistema operativo."
 
 #: logview/data/org.mate.system-log.gschema.xml.in:10
 msgid "Size of the font used to display the log"
@@ -1636,7 +1646,7 @@ msgid ""
 "Specifies the size of the fixed-width font used to display the log in the "
 "main tree view. The default is taken from the default terminal font size."
 msgstr ""
-"Specifica la dimensione del carattere a larghezza fissa utilizzato per "
+"Specifica la dimensione del font a larghezza fissa utilizzato per "
 "visualizzare il registro nella vista ad albero principale. Il valore "
 "predefinito è preso dalla dimensione predefinita del carattere del "
 "terminale."
@@ -1663,7 +1673,7 @@ msgstr ""
 
 #: logview/data/org.mate.system-log.gschema.xml.in:25
 msgid "Log files to open up on startup"
-msgstr "File di registro da aprire all'avvio"
+msgstr "I file di registro da aprire all'avvio"
 
 #: logview/data/org.mate.system-log.gschema.xml.in:26
 msgid ""
@@ -1675,11 +1685,11 @@ msgstr ""
 
 #: logview/data/org.mate.system-log.gschema.xml.in:30
 msgid "List of saved filters"
-msgstr "Lista dei filtri salvati"
+msgstr "Elenco dei filtri salvati"
 
 #: logview/data/org.mate.system-log.gschema.xml.in:31
 msgid "List of saved regexp filters"
-msgstr "Lista dei filtri di espressioni regolari salvati"
+msgstr "Elenco dei filtri delle espressioni regolari salvati"
 
 #: logview/data/logview-filter.ui:32 mate-disk-image-mounter/src/main.c:124
 #: mate-screenshot/data/mate-screenshot.ui:92
@@ -1726,7 +1736,7 @@ msgstr "Team Documentazione GNOME Sun <gdocteam@sun.com>"
 #: logview/src/logview-app.c:369
 #, c-format
 msgid "Impossible to open the file %s"
-msgstr "Impossibile aprire il file «%s»"
+msgstr "Impossibile aprire il file %s"
 
 #: logview/src/logview-filter-manager.c:93
 msgid "Filter name is empty!"
@@ -1734,7 +1744,7 @@ msgstr "Il nome del filtro è vuoto!"
 
 #: logview/src/logview-filter-manager.c:106
 msgid "Filter name may not contain the ':' character"
-msgstr "Il nome del file non può contenere il carattere «:»"
+msgstr "Il nome del filtro non può contenere il carattere ':'"
 
 #: logview/src/logview-filter-manager.c:129
 msgid "Regular expression is empty!"
@@ -1747,17 +1757,17 @@ msgstr "L'espressione regolare non è valida: %s"
 
 #: logview/src/logview-filter-manager.c:207
 msgid "Please specify either foreground or background color!"
-msgstr "Specifica il colore del testo o dello sfondo!"
+msgstr "Per favore specifica il colore di primo piano o dello sfondo!"
 
 #: logview/src/logview-filter-manager.c:282
 msgid "Edit filter"
-msgstr "Modifica filtro"
+msgstr "Modifica il filtro"
 
 #: logview/src/logview-filter-manager.c:282
 msgid "Add new filter"
-msgstr "Aggiungi nuovo filtro"
+msgstr "Aggiungi un nuovo filtro"
 
-#: logview/src/logview-filter-manager.c:469
+#: logview/src/logview-filter-manager.c:470
 msgid "Filters"
 msgstr "Filtri"
 
@@ -1788,7 +1798,7 @@ msgstr "Cancella la stringa di ricerca"
 #: logview/src/logview-log.c:589
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
 msgstr ""
-"Errore durante la decompressione del gzip log. Il file potrebbe essere "
+"Errore durante la decompressione del log compresso. Il file potrebbe essere "
 "danneggiato."
 
 #: logview/src/logview-log.c:635
@@ -1802,14 +1812,13 @@ msgstr "Il file non è un file regolare o non è un file di testo."
 #: logview/src/logview-log.c:743
 msgid "This version of System Log does not support GZipped logs."
 msgstr ""
-"Questa versione di Visualizzatore di registri di sistema non supporta "
-"registri compressi con gzip."
+"Questa versione di System Log non supporta i registri compressi con gzip."
 
 #: logview/src/logview-loglist.c:103
 msgid "%A, %e %b"
 msgstr "%A, %e %b"
 
-#: logview/src/logview-loglist.c:314
+#: logview/src/logview-loglist.c:313
 msgid "Loading..."
 msgstr "Caricamento..."
 
@@ -1838,11 +1847,11 @@ msgstr " - Esplora e monitora i registri"
 
 #: logview/src/logview-main.c:107
 msgid "Log Viewer"
-msgstr "Visualizzatore di registri"
+msgstr "Log Viewer"
 
 #: logview/src/logview-window.c:41 logview/src/logview-window.c:771
 msgid "System Log Viewer"
-msgstr "Visualizzatore registri di sistema"
+msgstr "System Log Viewer"
 
 #: logview/src/logview-window.c:216
 #, c-format
@@ -1856,7 +1865,7 @@ msgstr "%d righe (%s) - %s"
 
 #: logview/src/logview-window.c:325
 msgid "Open Log"
-msgstr "Apri registro"
+msgstr "Apri il registro"
 
 #: logview/src/logview-window.c:364
 #, c-format
@@ -1868,15 +1877,15 @@ msgid "Wrapped"
 msgstr "Da capo"
 
 #: logview/src/logview-window.c:493
-#: mate-dictionary/libgdict/gdict-defbox.c:1125
-#: mate-dictionary/libgdict/gdict-defbox.c:1219
-#: mate-dictionary/libgdict/gdict-defbox.c:1253
+#: mate-dictionary/libgdict/gdict-defbox.c:1127
+#: mate-dictionary/libgdict/gdict-defbox.c:1221
+#: mate-dictionary/libgdict/gdict-defbox.c:1255
 msgid "Not found"
-msgstr "Non trovata"
+msgstr "Non trovato"
 
 #: logview/src/logview-window.c:773
 msgid "About System Log Viewer"
-msgstr "Info su Visualizzatore registri di sistema"
+msgstr "Informazioni su System Log Viewer"
 
 #: logview/src/logview-window.c:774
 msgid ""
@@ -1888,9 +1897,11 @@ msgstr ""
 
 #: logview/src/logview-window.c:778
 msgid "View, monitor or analyze your system logs in a gradual manner."
-msgstr "Visiona, monitora o analizza il vostro file system in modo graduale."
+msgstr ""
+"Visiona, monitora o analizza il registro del vostro sistema in modo "
+"graduale."
 
-#: logview/src/logview-window.c:821 mate-dictionary/src/gdict-window.c:1258
+#: logview/src/logview-window.c:821 mate-dictionary/src/gdict-window.c:1256
 msgid "_File"
 msgstr "_File"
 
@@ -1904,11 +1915,11 @@ msgstr "_Apri..."
 
 #: logview/src/logview-window.c:827
 msgid "Open a log from file"
-msgstr "Apri un registro dal file"
+msgstr "Apre un registro dal file"
 
 #: logview/src/logview-window.c:829
 msgid "Close this log"
-msgstr "Chiudi questo registro"
+msgstr "Chiude questo registro"
 
 #: logview/src/logview-window.c:831
 msgid "_Quit"
@@ -1918,7 +1929,7 @@ msgstr "_Esci"
 msgid "Quit the log viewer"
 msgstr "Esce dal visualizzatore di registri"
 
-#: logview/src/logview-window.c:834 mate-dictionary/src/gdict-window.c:1277
+#: logview/src/logview-window.c:834 mate-dictionary/src/gdict-window.c:1275
 msgid "_Copy"
 msgstr "_Copia"
 
@@ -1926,7 +1937,7 @@ msgstr "_Copia"
 msgid "Copy the selection"
 msgstr "Copia la selezione"
 
-#: logview/src/logview-window.c:836 mate-dictionary/src/gdict-window.c:1279
+#: logview/src/logview-window.c:836 mate-dictionary/src/gdict-window.c:1277
 msgid "Select _All"
 msgstr "_Seleziona tutto"
 
@@ -1968,7 +1979,7 @@ msgstr "Dimensione del testo normale"
 
 #: logview/src/logview-window.c:848
 msgid "Manage Filters"
-msgstr "Gestisci filtri"
+msgstr "Gestisci i filtri"
 
 #: logview/src/logview-window.c:848
 msgid "Manage filters"
@@ -1976,16 +1987,16 @@ msgstr "Gestisce i filtri"
 
 #: logview/src/logview-window.c:851
 msgid "Open the help contents for the log viewer"
-msgstr "Apri il sommario di aiuto di Visualizzatore di registri"
+msgstr "Apre il sommario di aiuto del visualizzatore di registri"
 
-#: logview/src/logview-window.c:853 mate-dictionary/src/gdict-applet.c:1176
-#: mate-dictionary/src/gdict-window.c:1314
+#: logview/src/logview-window.c:853 mate-dictionary/src/gdict-applet.c:1175
+#: mate-dictionary/src/gdict-window.c:1312
 msgid "_About"
 msgstr "_Informazioni"
 
 #: logview/src/logview-window.c:853
 msgid "Show the about dialog for the log viewer"
-msgstr "Mostra le informazioni su Visualizzatore di registri"
+msgstr "Mostra le informazioni sul visualizzatore di registri"
 
 #: logview/src/logview-window.c:858
 msgid "_Statusbar"
@@ -1997,11 +2008,11 @@ msgstr "Mostra la barra di stato"
 
 #: logview/src/logview-window.c:860
 msgid "Side _Pane"
-msgstr "Riquadro _laterale"
+msgstr "Pannello _laterale"
 
 #: logview/src/logview-window.c:860
 msgid "Show Side Pane"
-msgstr "Mostra il riquadro laterale"
+msgstr "Mostra il pannello laterale"
 
 #: logview/src/logview-window.c:862
 msgid "Show matches only"
@@ -2009,12 +2020,12 @@ msgstr "Mostra solo le corrispondenze"
 
 #: logview/src/logview-window.c:862
 msgid "Only show lines that match one of the given filters"
-msgstr "Mostra solo le righe che corrispondono ai filtri dati"
+msgstr "Mostra solo le righe che corrispondono ai filtri inseriti"
 
 #: logview/src/logview-window.c:994
 #, c-format
 msgid "Can't read from \"%s\""
-msgstr "Impossibile leggere da «%s»"
+msgstr "Non posso leggere da \"%s\""
 
 #: logview/src/logview-window.c:1419
 msgid "Version: "
@@ -2022,7 +2033,7 @@ msgstr "Versione: "
 
 #: logview/src/logview-window.c:1525
 msgid "Could not open the following files:"
-msgstr "Impossibile aprire i seguenti file:"
+msgstr "Non è stato possibile aprire i seguenti file:"
 
 #: mate-dictionary/data/default.desktop.in:3
 msgid "Default"
@@ -2035,7 +2046,7 @@ msgstr "Server di dizionario predefinito"
 #: mate-dictionary/data/mate-dictionary.desktop.in.in:3
 #: mate-dictionary/data/mate-dictionary.appdata.xml.in:7
 msgid "MATE Dictionary"
-msgstr "Dizionario di MATE"
+msgstr "MATE Dictionary"
 
 #: mate-dictionary/data/mate-dictionary.desktop.in.in:4
 msgid "Check word definitions and spellings in an online dictionary"
@@ -2049,7 +2060,7 @@ msgstr "MATE;dictionary;applet;thesaurus;spelling;definitions;online;"
 
 #: mate-dictionary/data/mate-dictionary.appdata.xml.in:8
 msgid "A dictionary for MATE Desktop"
-msgstr "Un dizioneario per l'ambiente desktop MATE"
+msgstr "Un dizionario per il Desktop MATE"
 
 #: mate-dictionary/data/mate-dictionary.appdata.xml.in:10
 msgid ""
@@ -2058,30 +2069,30 @@ msgid ""
 " add your own sources, while you can select specific servers for a specific "
 "query."
 msgstr ""
-"Dizionario di MATE consente di cercare le parole nei dizionari on-line. "
-"Viene fornito preconfigurato con una lista di server Dict (RFC 2229) a cui è"
-" possibile aggiungere le proprie fonti ed è anche possibile selezionare "
-"server specifici per ricerche particolari."
+"MATE Dictionary consente di cercare le parole nei dizionari on-line. Viene "
+"fornito con un elenco di server di dizionario preconfigurato (RFC 2229) a "
+"cui è possibile aggiungere le proprie fonti. È anche possibile selezionare "
+"server specifici per una ricerca particolare."
 
 #: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:5
 msgid "Dictionary Applet Factory"
-msgstr "Fabbrica per Applet Dizionario"
+msgstr "Dictionary Applet Factory"
 
 #: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:6
 msgid "Factory for the dictionary applet"
-msgstr "Fabbrica per le applet dizionario"
+msgstr "Factory per l'applet dizionario"
 
 #: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:9
 msgid "Dictionary Look up"
-msgstr "Consultazione dizionario"
+msgstr "Consultazione del dizionario"
 
 #: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:10
 msgid "Look up words in a dictionary"
-msgstr "Cerca parole su un dizionario"
+msgstr "Cerca parole in un dizionario"
 
 #: mate-dictionary/data/org.mate.dictionary.gschema.xml.in:6
 msgid "The default database to use"
-msgstr "Database predefinito da utilizzare"
+msgstr "Il database predefinito da utilizzare"
 
 #: mate-dictionary/data/org.mate.dictionary.gschema.xml.in:7
 msgid ""
@@ -2089,14 +2100,14 @@ msgid ""
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
-"Nome del database individuale predefinito o del meta-database da utilizzare "
-"su una sorgente del dizionario. Un punto esclamativo (\"!\") specifica che "
-"debbano essere cercati tutti i database presenti in una sorgente di "
-"dizionario"
+"Il nome del database individuale o del meta-database predefinito da "
+"utilizzare su una sorgente dizionario. Un punto esclamativo (\"!\") "
+"specifica che devono essere consultati tutti i database presenti in una "
+"sorgente dizionario"
 
 #: mate-dictionary/data/org.mate.dictionary.gschema.xml.in:11
 msgid "The default search strategy to use"
-msgstr "La strategia di ricerca predefinita da utilizzare"
+msgstr "La strategia di ricerca da utilizzare in modo predefinito"
 
 #: mate-dictionary/data/org.mate.dictionary.gschema.xml.in:12
 msgid ""
@@ -2104,16 +2115,16 @@ msgid ""
 "available. The default strategy is 'exact', that is match exact words."
 msgstr ""
 "Il nome della strategia di ricerca predefinita da utilizzare in una sorgente"
-" dizionario, se disponibile. La strategia predefinita è «exact», che trova "
-"le parole esattamente uguali."
+" dizionario, se disponibile. La strategia predefinita è 'exact', che "
+"significa trova le parole esattamente uguali."
 
 #: mate-dictionary/data/org.mate.dictionary.gschema.xml.in:16
 msgid "The font to be used when printing"
-msgstr "Il tipo di carattere da utilizzare per la stampa"
+msgstr "Il font da utilizzare per la stampa"
 
 #: mate-dictionary/data/org.mate.dictionary.gschema.xml.in:17
 msgid "The font to be used when printing a definition."
-msgstr "Il tipo di carattere da utilizzare quando si stampa una definizione."
+msgstr "Il font da utilizzare quando si stampa una definizione."
 
 #: mate-dictionary/data/org.mate.dictionary.gschema.xml.in:21
 msgid "The name of the dictionary source used"
@@ -2123,7 +2134,7 @@ msgstr "Il nome della sorgente dizionario utilizzata"
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr ""
-"Il nome della sorgente di dizionario utilizzata per ottenere le definizioni "
+"Il nome della sorgente dizionario utilizzata per ottenere le definizioni "
 "delle parole."
 
 #: mate-dictionary/data/thai.desktop.in:3
@@ -2132,120 +2143,122 @@ msgstr "Tailandese"
 
 #: mate-dictionary/data/thai.desktop.in:4
 msgid "Longdo Thai-English Dictionaries"
-msgstr "Dizionari Longdo Thai-English"
+msgstr "Dizionari Longdo Tailandese-Inglese"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:283
+#: mate-dictionary/libgdict/gdict-client-context.c:281
 msgid "Client Name"
-msgstr "Nome client"
+msgstr "Nome del client"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:284
+#: mate-dictionary/libgdict/gdict-client-context.c:282
 msgid "The name of the client of the context object"
 msgstr "Il nome del client dell'oggetto di contesto"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:297
+#: mate-dictionary/libgdict/gdict-client-context.c:295
 msgid "Hostname"
-msgstr "Nome host"
+msgstr "Nome dell'host"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:298
+#: mate-dictionary/libgdict/gdict-client-context.c:296
 msgid "The hostname of the dictionary server to connect to"
-msgstr "Il nome host del server di dizionario a cui connettersi"
+msgstr "Il nome dell'host server di dizionario a cui connettersi"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:311
+#: mate-dictionary/libgdict/gdict-client-context.c:309
 msgid "Port"
 msgstr "Porta"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:312
+#: mate-dictionary/libgdict/gdict-client-context.c:310
 msgid "The port of the dictionary server to connect to"
 msgstr "La porta del server di dizionario a cui connettersi"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:327
+#: mate-dictionary/libgdict/gdict-client-context.c:325
 msgid "Status"
 msgstr "Stato"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:328
+#: mate-dictionary/libgdict/gdict-client-context.c:326
 msgid "The status code as returned by the dictionary server"
-msgstr "Il codice di stato come ritornato dal server di dizionario"
+msgstr ""
+"Il codice di stato così come viene ritornato dal server del dizionario"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:772
+#: mate-dictionary/libgdict/gdict-client-context.c:764
 #, c-format
 msgid "No connection to the dictionary server at '%s:%d'"
-msgstr "Nessuna connessione al server di dizionario a «%s:%d»"
+msgstr "Nessuna connessione al server di dizionario su '%s:%d'"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1052
+#: mate-dictionary/libgdict/gdict-client-context.c:1044
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
 msgstr ""
-"Ricerca fallita per il nome host «%s»: nessuna risorsa adeguata trovata"
+"Ricerca fallita per il nome host '%s': non è stata trovata nessuna risorsa "
+"adeguata"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1083
+#: mate-dictionary/libgdict/gdict-client-context.c:1075
 #, c-format
 msgid "Lookup failed for host '%s': %s"
-msgstr "Ricerca fallita per l'host «%s»: %s"
+msgstr "Ricerca fallita per l'host '%s': %s"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1117
+#: mate-dictionary/libgdict/gdict-client-context.c:1109
 #, c-format
 msgid "Lookup failed for host '%s': host not found"
-msgstr "Ricerca fallita per l'host «%s»: host non trovato"
+msgstr "Ricerca fallita per l'host '%s': host non trovato"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1169
+#: mate-dictionary/libgdict/gdict-client-context.c:1161
 #, c-format
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
 "with code %d (server down)"
 msgstr ""
-"Impossibile connettersi al server di dizionario a «%s:%d». Il server ha "
+"Impossibile connettersi al server di dizionario su '%s:%d'. Il server ha "
 "risposto con il codice %d (server non attivo)"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1188
+#: mate-dictionary/libgdict/gdict-client-context.c:1180
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
 ": '%s'"
 msgstr ""
 "Impossibile analizzare la risposta del server del dizionario\n"
-": «%s»"
+": '%s'"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1217
+#: mate-dictionary/libgdict/gdict-client-context.c:1209
 #, c-format
 msgid "No definitions found for '%s'"
-msgstr "Nessuna definizione trovata per «%s»"
+msgstr "Non è stata trovata nessuna definizione per '%s'"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1232
+#: mate-dictionary/libgdict/gdict-client-context.c:1224
 #, c-format
 msgid "Invalid database '%s'"
-msgstr "Database «%s» non valido"
+msgstr "Database '%s' non valido"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1247
+#: mate-dictionary/libgdict/gdict-client-context.c:1239
 #, c-format
 msgid "Invalid strategy '%s'"
-msgstr "Strategia «%s» non valida"
+msgstr "Strategia '%s' non valida"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1262
+#: mate-dictionary/libgdict/gdict-client-context.c:1254
 #, c-format
 msgid "Bad command '%s'"
-msgstr "Comando «%s» errato"
+msgstr "Comando '%s' errato"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1277
+#: mate-dictionary/libgdict/gdict-client-context.c:1269
 #, c-format
 msgid "Bad parameters for command '%s'"
-msgstr "Parametri errati per il comando «%s»"
+msgstr "Parametri errati per il comando '%s'"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1292
+#: mate-dictionary/libgdict/gdict-client-context.c:1284
 #, c-format
 msgid "No databases found on dictionary server at '%s'"
-msgstr "Nessun database trovato nel server di dizionario a «%s»"
+msgstr "Nessun database trovato nel server di dizionario su '%s'"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1307
+#: mate-dictionary/libgdict/gdict-client-context.c:1299
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
-msgstr "Nessuna strategia trovata nel server di dizionario a «%s»"
+msgstr "Nessuna strategia trovata nel server di dizionario su '%s'"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1732
+#: mate-dictionary/libgdict/gdict-client-context.c:1724
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
-msgstr "Connessione fallita al server di dizionario a «%s:%d»"
+msgstr "Connessione fallita al server di dizionario su '%s:%d'"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1771
+#: mate-dictionary/libgdict/gdict-client-context.c:1763
 #, c-format
 msgid ""
 "Error while reading reply from server:\n"
@@ -2254,211 +2267,211 @@ msgstr ""
 "Errore durante la lettura della risposta dal server:\n"
 "%s"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1844
+#: mate-dictionary/libgdict/gdict-client-context.c:1836
 #, c-format
 msgid "Connection timeout for the dictionary server at '%s:%d'"
-msgstr "Connessione scaduta al server di dizionario a «%s:%d»"
+msgstr "Connessione scaduta al server di dizionario su '%s:%d'"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1878
+#: mate-dictionary/libgdict/gdict-client-context.c:1870
 msgid "No hostname defined for the dictionary server"
-msgstr "Nessun nome host definito per il server di dizionario"
+msgstr "Nessun nome host definito per il server del dizionario"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1914
-#: mate-dictionary/libgdict/gdict-client-context.c:1929
+#: mate-dictionary/libgdict/gdict-client-context.c:1905
+#: mate-dictionary/libgdict/gdict-client-context.c:1920
 msgid "Unable to create socket"
-msgstr "Impossibile creare il socket"
+msgstr "Impossibile creare la connessione"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1955
+#: mate-dictionary/libgdict/gdict-client-context.c:1946
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
 msgstr "Impossibile impostare il canale come non-bloccante: %s"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1970
+#: mate-dictionary/libgdict/gdict-client-context.c:1961
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
-msgstr "Impossibile connettersi al server di dizionario a «%s:%d»"
-
-#: mate-dictionary/libgdict/gdict-context.c:220
-msgid "Local Only"
-msgstr "Solamente locale"
+msgstr "Impossibile connettersi al server di dizionario su '%s:%d'"
 
 #: mate-dictionary/libgdict/gdict-context.c:221
-msgid "Whether the context uses only local dictionaries or not"
-msgstr "Indica se il contesto utilizza solo dizionari locali o no"
+msgid "Local Only"
+msgstr "Solo in locale"
 
-#: mate-dictionary/libgdict/gdict-database-chooser.c:376
+#: mate-dictionary/libgdict/gdict-context.c:222
+msgid "Whether the context uses only local dictionaries or not"
+msgstr "Indica se il contesto debba utilizzare solo dizionari locali o no"
+
+#: mate-dictionary/libgdict/gdict-database-chooser.c:375
 msgid "Reload the list of available databases"
 msgstr "Ricarica l'elenco dei database disponibili"
 
-#: mate-dictionary/libgdict/gdict-database-chooser.c:388
+#: mate-dictionary/libgdict/gdict-database-chooser.c:387
 msgid "Clear the list of available databases"
-msgstr "Pulisci l'elenco dei database disponibili"
+msgstr "Cancella l'elenco dei database disponibili"
 
-#: mate-dictionary/libgdict/gdict-database-chooser.c:836
-#: mate-dictionary/libgdict/gdict-speller.c:773
+#: mate-dictionary/libgdict/gdict-database-chooser.c:835
+#: mate-dictionary/libgdict/gdict-speller.c:772
 #: mate-dictionary/libgdict/gdict-strategy-chooser.c:783
 msgid "Error while matching"
 msgstr "Errore durante la ricerca"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:1314
+#: mate-dictionary/libgdict/gdict-defbox.c:1316
 msgid "F_ind:"
 msgstr "Tr_ova:"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:1327
+#: mate-dictionary/libgdict/gdict-defbox.c:1329
 msgid "_Previous"
 msgstr "_Precedente"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:1335
+#: mate-dictionary/libgdict/gdict-defbox.c:1337
 msgid "_Next"
 msgstr "_Successivo"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:2483
+#: mate-dictionary/libgdict/gdict-defbox.c:2485
 msgid "Error while looking up definition"
 msgstr "Errore durante la ricerca della definizione"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:2525
-#: mate-dictionary/libgdict/gdict-speller.c:731
+#: mate-dictionary/libgdict/gdict-defbox.c:2527
+#: mate-dictionary/libgdict/gdict-speller.c:730
 msgid "Another search is in progress"
 msgstr "Un'altra ricerca è in corso"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:2526
-#: mate-dictionary/libgdict/gdict-speller.c:732
+#: mate-dictionary/libgdict/gdict-defbox.c:2528
+#: mate-dictionary/libgdict/gdict-speller.c:731
 msgid "Please wait until the current search ends."
-msgstr "Attendere finché la ricerca corrente non sia finita."
+msgstr "Attendere finché la ricerca attuale non sia finita."
 
-#: mate-dictionary/libgdict/gdict-defbox.c:2565
+#: mate-dictionary/libgdict/gdict-defbox.c:2568
 msgid "Error while retrieving the definition"
-msgstr "Errore durante l'ottenimento della definizione"
+msgstr "Errore durante il recupero della definizione"
 
-#: mate-dictionary/libgdict/gdict-source.c:229
+#: mate-dictionary/libgdict/gdict-source.c:226
 msgid "Filename"
-msgstr "Nome file"
+msgstr "Nome del file"
 
-#: mate-dictionary/libgdict/gdict-source.c:230
+#: mate-dictionary/libgdict/gdict-source.c:227
 msgid "The filename used by this dictionary source"
 msgstr "Il nome del file utilizzato da questa sorgente dizionario"
 
-#: mate-dictionary/libgdict/gdict-source.c:244
+#: mate-dictionary/libgdict/gdict-source.c:241
 msgid "The display name of this dictionary source"
-msgstr "Il nome visualizzato di questa sorgente dizionario"
+msgstr "Il nome visualizzato per questa sorgente dizionario"
 
-#: mate-dictionary/libgdict/gdict-source.c:257
+#: mate-dictionary/libgdict/gdict-source.c:254
 msgid "Description"
 msgstr "Descrizione"
 
-#: mate-dictionary/libgdict/gdict-source.c:258
+#: mate-dictionary/libgdict/gdict-source.c:255
 msgid "The description of this dictionary source"
 msgstr "La descrizione di questa sorgente dizionario"
 
-#: mate-dictionary/libgdict/gdict-source.c:271
-#: mate-dictionary/libgdict/gdict-speller.c:375
+#: mate-dictionary/libgdict/gdict-source.c:268
+#: mate-dictionary/libgdict/gdict-speller.c:374
 msgid "Database"
 msgstr "Database"
 
-#: mate-dictionary/libgdict/gdict-source.c:272
+#: mate-dictionary/libgdict/gdict-source.c:269
 msgid "The default database of this dictionary source"
 msgstr "Il database predefinito di questa sorgente dizionario"
 
-#: mate-dictionary/libgdict/gdict-source.c:285
-#: mate-dictionary/libgdict/gdict-speller.c:382
+#: mate-dictionary/libgdict/gdict-source.c:282
+#: mate-dictionary/libgdict/gdict-speller.c:381
 msgid "Strategy"
 msgstr "Strategia"
 
-#: mate-dictionary/libgdict/gdict-source.c:286
+#: mate-dictionary/libgdict/gdict-source.c:283
 msgid "The default strategy of this dictionary source"
 msgstr "La strategia predefinita per questa sorgente dizionario"
 
-#: mate-dictionary/libgdict/gdict-source.c:299
+#: mate-dictionary/libgdict/gdict-source.c:296
 msgid "Transport"
 msgstr "Trasporto"
 
-#: mate-dictionary/libgdict/gdict-source.c:300
+#: mate-dictionary/libgdict/gdict-source.c:297
 msgid "The transport mechanism used by this dictionary source"
 msgstr "Il meccanismo di trasporto utilizzato da questa sorgente dizionario"
 
-#: mate-dictionary/libgdict/gdict-source.c:314
-#: mate-dictionary/libgdict/gdict-speller.c:368
+#: mate-dictionary/libgdict/gdict-source.c:311
+#: mate-dictionary/libgdict/gdict-speller.c:367
 msgid "Context"
 msgstr "Contesto"
 
-#: mate-dictionary/libgdict/gdict-source.c:315
+#: mate-dictionary/libgdict/gdict-source.c:312
 msgid "The GdictContext bound to this source"
 msgstr "GdictContext associato a questa sorgente"
 
-#: mate-dictionary/libgdict/gdict-source.c:408
+#: mate-dictionary/libgdict/gdict-source.c:404
 #, c-format
 msgid "Invalid transport type '%d'"
-msgstr "Tipo di trasporto non valido «%d»"
+msgstr "Tipo di trasporto non valido '%d'"
 
-#: mate-dictionary/libgdict/gdict-source.c:436
+#: mate-dictionary/libgdict/gdict-source.c:432
 #, c-format
 msgid "No '%s' group found inside the dictionary source definition"
 msgstr ""
-"Nessun gruppo «%s» trovato nella definizione della sorgente dizionario"
+"Nessun gruppo '%s' trovato nella definizione della sorgente dizionario"
 
-#: mate-dictionary/libgdict/gdict-source.c:452
-#: mate-dictionary/libgdict/gdict-source.c:476
-#: mate-dictionary/libgdict/gdict-source.c:500
-#: mate-dictionary/libgdict/gdict-source.c:525
+#: mate-dictionary/libgdict/gdict-source.c:448
+#: mate-dictionary/libgdict/gdict-source.c:472
+#: mate-dictionary/libgdict/gdict-source.c:496
+#: mate-dictionary/libgdict/gdict-source.c:521
 #, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
 msgstr ""
-"Impossibile ottenere la chiave «%s» all'interno della definizione della "
+"Impossibile ottenere la chiave '%s' all'interno della definizione della "
 "sorgente dizionario: %s"
 
-#: mate-dictionary/libgdict/gdict-source.c:550
+#: mate-dictionary/libgdict/gdict-source.c:546
 #, c-format
 msgid ""
 "Unable to get the '%s' key inside the dictionary source definition file: %s"
 msgstr ""
-"Impossibile ottenere la chiave «%s» all'interno del file di definizione "
+"Impossibile ottenere la chiave '%s' all'interno del file di definizione "
 "della sorgente dizionario: %s"
 
-#: mate-dictionary/libgdict/gdict-source.c:736
+#: mate-dictionary/libgdict/gdict-source.c:732
 msgid "Dictionary source does not have name"
 msgstr "La sorgente dizionario non ha nome"
 
-#: mate-dictionary/libgdict/gdict-source.c:745
+#: mate-dictionary/libgdict/gdict-source.c:741
 #, c-format
 msgid "Dictionary source '%s' has invalid transport '%s'"
-msgstr "La sorgente dizionario «%s» ha trasporto «%s» non valido"
+msgstr "La sorgente dizionario '%s' ha trasporto '%s' non valido"
 
 #: mate-dictionary/libgdict/gdict-source-chooser.c:283
 msgid "Reload the list of available sources"
 msgstr "Ricarica l'elenco delle sorgenti disponibili"
 
-#: mate-dictionary/libgdict/gdict-source-loader.c:163
+#: mate-dictionary/libgdict/gdict-source-loader.c:160
 msgid "Paths"
 msgstr "Percorsi"
 
-#: mate-dictionary/libgdict/gdict-source-loader.c:164
+#: mate-dictionary/libgdict/gdict-source-loader.c:161
 msgid "Search paths used by this object"
 msgstr "Percorsi di ricerca utilizzati da questo oggetto"
 
-#: mate-dictionary/libgdict/gdict-source-loader.c:176
+#: mate-dictionary/libgdict/gdict-source-loader.c:173
 msgid "Sources"
 msgstr "Sorgenti"
 
-#: mate-dictionary/libgdict/gdict-source-loader.c:177
+#: mate-dictionary/libgdict/gdict-source-loader.c:174
 msgid "Dictionary sources found"
 msgstr "Sorgenti dizionario trovate"
 
-#: mate-dictionary/libgdict/gdict-speller.c:347
+#: mate-dictionary/libgdict/gdict-speller.c:346
 msgid "Clear the list of similar words"
-msgstr "Pulisci l'elenco delle parole simili"
+msgstr "Cancella l'elenco delle parole simili"
 
-#: mate-dictionary/libgdict/gdict-speller.c:369
+#: mate-dictionary/libgdict/gdict-speller.c:368
 msgid "The GdictContext object used to get the word definition"
 msgstr ""
-"Oggetto GdictContext utilizzato per ottenere la definizione della parola"
+"L'oggetto GdictContext utilizzato per ottenere la definizione della parola"
 
-#: mate-dictionary/libgdict/gdict-speller.c:376
+#: mate-dictionary/libgdict/gdict-speller.c:375
 msgid "The database used to query the GdictContext"
-msgstr "Database utilizzato per interrogare il GdictContext"
+msgstr "Il database utilizzato per interrogare GdictContext"
 
-#: mate-dictionary/libgdict/gdict-speller.c:383
+#: mate-dictionary/libgdict/gdict-speller.c:382
 msgid "The strategy used to query the GdictContext"
-msgstr "La strategia utilizzata per interrogare il GdictContext"
+msgstr "La strategia utilizzata per interrogare GdictContext"
 
 #: mate-dictionary/libgdict/gdict-strategy-chooser.c:358
 msgid "Reload the list of available strategies"
@@ -2466,11 +2479,11 @@ msgstr "Ricarica l'elenco delle strategie disponibili"
 
 #: mate-dictionary/libgdict/gdict-strategy-chooser.c:370
 msgid "Clear the list of available strategies"
-msgstr "Pulisce l'elenco di strategie disponibili"
+msgstr "Cancella l'elenco delle strategie disponibili"
 
 #: mate-dictionary/libgdict/gdict-utils.c:97
 msgid "GDict debugging flags to set"
-msgstr "Opzioni di debug di GDict da impostare"
+msgstr "Opzioni di debug GDict da impostare"
 
 #: mate-dictionary/libgdict/gdict-utils.c:97
 #: mate-dictionary/libgdict/gdict-utils.c:99
@@ -2479,7 +2492,7 @@ msgstr "OPZIONI"
 
 #: mate-dictionary/libgdict/gdict-utils.c:99
 msgid "GDict debugging flags to unset"
-msgstr "Opzioni di debug di GDict da non impostare"
+msgstr "Opzioni di debug GDict da non impostare"
 
 #: mate-dictionary/libgdict/gdict-utils.c:153
 msgid "GDict Options"
@@ -2487,21 +2500,21 @@ msgstr "Opzioni GDict"
 
 #: mate-dictionary/libgdict/gdict-utils.c:154
 msgid "Show GDict Options"
-msgstr "Mostra opzioni GDict"
+msgstr "Mostra le opzioni GDict"
 
 #: mate-dictionary/src/gdict-about.c:54
 msgid "Look up words or terms in a dictionary source."
 msgstr "Ricerca parole o termini in una sorgente dizionario."
 
-#: mate-dictionary/src/gdict-about.c:82 mate-dictionary/src/gdict-app.c:363
-#: mate-dictionary/src/gdict-window.c:580
-#: mate-dictionary/src/gdict-window.c:1864
+#: mate-dictionary/src/gdict-about.c:82 mate-dictionary/src/gdict-app.c:360
+#: mate-dictionary/src/gdict-window.c:578
+#: mate-dictionary/src/gdict-window.c:1862
 msgid "Dictionary"
-msgstr "Dizionario"
+msgstr "Dictionary"
 
 #: mate-dictionary/src/gdict-about.c:84
 msgid "About Dictionary"
-msgstr "Info su Dizionario"
+msgstr "Informazioni su Dictionary"
 
 #: mate-dictionary/src/gdict-about.c:85
 msgid ""
@@ -2514,7 +2527,7 @@ msgstr ""
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
 #. * keep the new lines.
-#: mate-dictionary/src/gdict-app.c:207
+#: mate-dictionary/src/gdict-app.c:203
 #, c-format
 msgid ""
 "Definition for '%s'\n"
@@ -2522,251 +2535,250 @@ msgid ""
 "\n"
 "%s\n"
 msgstr ""
-"Definizione per «%s»\n"
-"  Da «%s»:\n"
+"Definizione per '%s'\n"
+"  Da '%s':\n"
 "\n"
 "%s\n"
 
-#: mate-dictionary/src/gdict-app.c:221
+#: mate-dictionary/src/gdict-app.c:217
 #, c-format
 msgid "Error: %s\n"
 msgstr "Errore: %s\n"
 
-#: mate-dictionary/src/gdict-app.c:247
+#: mate-dictionary/src/gdict-app.c:243
 msgid "See mate-dictionary --help for usage\n"
-msgstr "Eseguire «mate-dictionary --help» per l'utilizzo\n"
+msgstr "Eseguire «mate-dictionary --help» per informazioni sull'utilizzo\n"
 
-#: mate-dictionary/src/gdict-app.c:260
+#: mate-dictionary/src/gdict-app.c:256
 msgid "Unable to find a suitable dictionary source"
 msgstr "Impossibile trovare una sorgente dizionario adeguata"
 
-#: mate-dictionary/src/gdict-app.c:294
+#: mate-dictionary/src/gdict-app.c:290
 #, c-format
 msgid ""
 "Error while looking up the definition of \"%s\":\n"
 "%s"
 msgstr ""
-"Errore durante la ricerca della definizione di «%s»:\n"
+"Errore durante la ricerca della definizione di \"%s\":\n"
 "%s"
 
-#: mate-dictionary/src/gdict-app.c:323 mate-dictionary/src/gdict-app.c:333
+#: mate-dictionary/src/gdict-app.c:319 mate-dictionary/src/gdict-app.c:329
 msgid "Words to look up"
 msgstr "Parole da cercare"
 
-#: mate-dictionary/src/gdict-app.c:323 mate-dictionary/src/gdict-app.c:325
-#: mate-dictionary/src/gdict-app.c:333
+#: mate-dictionary/src/gdict-app.c:319 mate-dictionary/src/gdict-app.c:321
+#: mate-dictionary/src/gdict-app.c:329
 msgid "word"
 msgstr "parola"
 
-#: mate-dictionary/src/gdict-app.c:325
+#: mate-dictionary/src/gdict-app.c:321
 msgid "Words to match"
 msgstr "Parole da far corrispondere"
 
-#: mate-dictionary/src/gdict-app.c:327
+#: mate-dictionary/src/gdict-app.c:323
 msgid "Dictionary source to use"
 msgstr "Sorgente dizionario da utilizzare"
 
-#: mate-dictionary/src/gdict-app.c:327
+#: mate-dictionary/src/gdict-app.c:323
 msgid "source"
 msgstr "sorgente"
 
-#: mate-dictionary/src/gdict-app.c:329
+#: mate-dictionary/src/gdict-app.c:325
 msgid "Print result to the console"
 msgstr "Stampa il risultato sulla console"
 
-#: mate-dictionary/src/gdict-app.c:331
+#: mate-dictionary/src/gdict-app.c:327
 msgid "Database to use"
 msgstr "Database da utilizzare"
 
-#: mate-dictionary/src/gdict-app.c:331
+#: mate-dictionary/src/gdict-app.c:327
 msgid "db"
 msgstr "db"
 
-#: mate-dictionary/src/gdict-app.c:343
+#: mate-dictionary/src/gdict-app.c:339
 msgid " - Look up words in dictionaries"
-msgstr " - Cerca parole sui dizionari"
+msgstr " - Cerca parole nei dizionari"
 
-#: mate-dictionary/src/gdict-applet.c:194
-#: mate-dictionary/src/gdict-window.c:935
+#: mate-dictionary/src/gdict-applet.c:193
+#: mate-dictionary/src/gdict-window.c:933
 msgid "Save a Copy"
 msgstr "Salva una copia"
 
-#: mate-dictionary/src/gdict-applet.c:204
-#: mate-dictionary/src/gdict-window.c:945
+#: mate-dictionary/src/gdict-applet.c:203
+#: mate-dictionary/src/gdict-window.c:943
 msgid "Untitled document"
 msgstr "Documento senza titolo"
 
-#: mate-dictionary/src/gdict-applet.c:225
-#: mate-dictionary/src/gdict-window.c:966
+#: mate-dictionary/src/gdict-applet.c:224
+#: mate-dictionary/src/gdict-window.c:964
 #, c-format
 msgid "Error while writing to '%s'"
-msgstr "Errore durante la scrittura su «%s»"
+msgstr "Errore durante la scrittura su '%s'"
 
-#: mate-dictionary/src/gdict-applet.c:350
+#: mate-dictionary/src/gdict-applet.c:349
 msgid "Clear the definitions found"
-msgstr "Pulisci le definizioni trovate"
+msgstr "Cancella le definizioni trovate"
+
+#: mate-dictionary/src/gdict-applet.c:351
+msgid "Clear definition"
+msgstr "Cancella la definizione"
 
 #: mate-dictionary/src/gdict-applet.c:352
-msgid "Clear definition"
-msgstr "Pulisci definizione"
-
-#: mate-dictionary/src/gdict-applet.c:353
 msgid "Clear the text of the definition"
-msgstr "Pulisci il testo della definizione"
+msgstr "Cancella il testo della definizione"
 
-#: mate-dictionary/src/gdict-applet.c:365
+#: mate-dictionary/src/gdict-applet.c:364
 msgid "Print the definitions found"
 msgstr "Stampa le definizioni trovate"
 
-#: mate-dictionary/src/gdict-applet.c:367
+#: mate-dictionary/src/gdict-applet.c:366
 msgid "Print definition"
-msgstr "Stampa definizione"
+msgstr "Stampa la definizione"
 
-#: mate-dictionary/src/gdict-applet.c:368
+#: mate-dictionary/src/gdict-applet.c:367
 msgid "Print the text of the definition"
 msgstr "Stampa il testo della definizione"
 
-#: mate-dictionary/src/gdict-applet.c:380
+#: mate-dictionary/src/gdict-applet.c:379
 msgid "Save the definitions found"
 msgstr "Salva le definizioni trovate"
 
-#: mate-dictionary/src/gdict-applet.c:382
+#: mate-dictionary/src/gdict-applet.c:381
 msgid "Save definition"
-msgstr "Salva definizione"
+msgstr "Salva la definizione"
 
-#: mate-dictionary/src/gdict-applet.c:383
+#: mate-dictionary/src/gdict-applet.c:382
 msgid "Save the text of the definition to a file"
-msgstr "Salva il testo della definizione in un file"
+msgstr "Salva il testo della definizione su un file"
 
-#: mate-dictionary/src/gdict-applet.c:520
+#: mate-dictionary/src/gdict-applet.c:519
 msgid "Click to view the dictionary window"
 msgstr "Fare clic per visualizzare la finestra del dizionario"
 
-#: mate-dictionary/src/gdict-applet.c:522
+#: mate-dictionary/src/gdict-applet.c:521
 msgid "Toggle dictionary window"
 msgstr "Commuta la finestra del dizionario"
 
-#: mate-dictionary/src/gdict-applet.c:523
+#: mate-dictionary/src/gdict-applet.c:522
 msgid "Show or hide the definition window"
 msgstr "Mostra o nasconde la finestra della definizione"
 
-#: mate-dictionary/src/gdict-applet.c:574
+#: mate-dictionary/src/gdict-applet.c:573
 msgid "Type the word you want to look up"
 msgstr "Digitare la parola che si vuole ricercare"
 
-#: mate-dictionary/src/gdict-applet.c:576
+#: mate-dictionary/src/gdict-applet.c:575
 msgid "Dictionary entry"
 msgstr "Voce del dizionario"
 
-#: mate-dictionary/src/gdict-applet.c:577
+#: mate-dictionary/src/gdict-applet.c:576
 msgid "Look up words in dictionaries"
 msgstr "Cerca parole nei dizionari"
 
-#: mate-dictionary/src/gdict-applet.c:705
-#: mate-dictionary/src/gdict-window.c:1077
+#: mate-dictionary/src/gdict-applet.c:704
+#: mate-dictionary/src/gdict-window.c:1075
 msgid "Dictionary Preferences"
 msgstr "Preferenze del dizionario"
 
-#: mate-dictionary/src/gdict-applet.c:729
-#: mate-dictionary/src/gdict-pref-dialog.c:496
-#: mate-dictionary/src/gdict-source-dialog.c:477
-#: mate-dictionary/src/gdict-window.c:1224
+#: mate-dictionary/src/gdict-applet.c:728
+#: mate-dictionary/src/gdict-pref-dialog.c:494
+#: mate-dictionary/src/gdict-source-dialog.c:476
+#: mate-dictionary/src/gdict-window.c:1222
 msgid "There was an error while displaying help"
-msgstr "Si è verificato un errore nel mostrare la guida."
+msgstr "Si è verificato un errore nel mostrare il manuale."
 
-#: mate-dictionary/src/gdict-applet.c:868
-#: mate-dictionary/src/gdict-window.c:495
+#: mate-dictionary/src/gdict-applet.c:867
+#: mate-dictionary/src/gdict-window.c:493
 #, c-format
 msgid "No dictionary source available with name '%s'"
-msgstr "Nessuna sorgente dizionario disponibile con nome «%s»"
+msgstr "Nessuna sorgente dizionario disponibile con nome '%s'"
 
-#: mate-dictionary/src/gdict-applet.c:872
-#: mate-dictionary/src/gdict-window.c:499
+#: mate-dictionary/src/gdict-applet.c:871
+#: mate-dictionary/src/gdict-window.c:497
 msgid "Unable to find dictionary source"
 msgstr "Impossibile trovare la sorgente dizionario"
 
-#: mate-dictionary/src/gdict-applet.c:888
-#: mate-dictionary/src/gdict-window.c:515
+#: mate-dictionary/src/gdict-applet.c:887
+#: mate-dictionary/src/gdict-window.c:513
 #, c-format
 msgid "No context available for source '%s'"
-msgstr "Nessun contesto disponibile per la sorgente «%s»"
+msgstr "Nessun contesto disponibile per la sorgente '%s'"
 
-#: mate-dictionary/src/gdict-applet.c:892
-#: mate-dictionary/src/gdict-window.c:519
+#: mate-dictionary/src/gdict-applet.c:891
+#: mate-dictionary/src/gdict-window.c:517
 msgid "Unable to create a context"
 msgstr "Impossibile creare un contesto"
 
-#: mate-dictionary/src/gdict-applet.c:1158
+#: mate-dictionary/src/gdict-applet.c:1157
 msgid "_Look Up Selected Text"
 msgstr "_Cerca il testo selezionato"
 
-#: mate-dictionary/src/gdict-applet.c:1161
+#: mate-dictionary/src/gdict-applet.c:1160
 msgid "Cl_ear"
-msgstr "_Pulisci"
+msgstr "Canc_ella"
 
-#: mate-dictionary/src/gdict-applet.c:1164
+#: mate-dictionary/src/gdict-applet.c:1163
 msgid "_Print"
 msgstr "Stam_pa"
 
-#: mate-dictionary/src/gdict-applet.c:1167
+#: mate-dictionary/src/gdict-applet.c:1166
 #: mate-screenshot/data/mate-screenshot.ui:109
 msgid "_Save"
 msgstr "_Salva"
 
-#: mate-dictionary/src/gdict-applet.c:1170
+#: mate-dictionary/src/gdict-applet.c:1169
 msgid "Preferences"
 msgstr "Preferenze"
 
 #: mate-dictionary/src/gdict-common.c:77
 #, c-format
 msgid "Unable to rename file '%s' to '%s': %s"
-msgstr "Impossibile rinominare il file «%s» in «%s»: %s"
+msgstr "Impossibile rinominare il file '%s' in '%s': %s"
 
 #: mate-dictionary/src/gdict-common.c:101
 #: mate-dictionary/src/gdict-common.c:124
 #, c-format
 msgid "Unable to create the data directory '%s': %s"
-msgstr "Impossibile creare la directory dati «%s»: %s"
+msgstr "Impossibile creare la directory dati '%s': %s"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:238
-#: mate-dictionary/src/gdict-pref-dialog.c:427
+#: mate-dictionary/src/gdict-pref-dialog.c:236
+#: mate-dictionary/src/gdict-pref-dialog.c:425
 msgid "Edit Dictionary Source"
-msgstr "Modifica sorgente dizionario"
+msgstr "Modifica la sorgente dizionario"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:302
+#: mate-dictionary/src/gdict-pref-dialog.c:300
 msgid "Add Dictionary Source"
-msgstr "Aggiungi sorgente dizionario"
+msgstr "Aggiungi una sorgente dizionario"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:347
+#: mate-dictionary/src/gdict-pref-dialog.c:345
 #, c-format
 msgid "Remove \"%s\"?"
-msgstr "Rimuovere «%s»?"
+msgstr "Rimuovere \"%s\"?"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:349
+#: mate-dictionary/src/gdict-pref-dialog.c:347
 msgid "This will permanently remove the dictionary source from the list."
-msgstr "Questo rimuoverà definitivamente la sorgente dizionario dall'elenco."
+msgstr "Questo eliminerà definitivamente la sorgente dizionario dall'elenco."
 
-#: mate-dictionary/src/gdict-pref-dialog.c:379
+#: mate-dictionary/src/gdict-pref-dialog.c:377
 #, c-format
 msgid "Unable to remove source '%s'"
-msgstr "Impossibile rimuovere la sorgente «%s»"
+msgstr "Impossibile rimuovere la sorgente '%s'"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:713
+#: mate-dictionary/src/gdict-pref-dialog.c:711
 msgid "Add a new dictionary source"
 msgstr "Aggiunge una nuova sorgente dizionario"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:719
+#: mate-dictionary/src/gdict-pref-dialog.c:717
 msgid "Remove the currently selected dictionary source"
 msgstr "Rimuove la sorgente dizionario correntemente selezionata"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:725
+#: mate-dictionary/src/gdict-pref-dialog.c:723
 msgid "Edit the currently selected dictionary source"
 msgstr "Modifica la sorgente dizionario correntemente selezionata"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:733
+#: mate-dictionary/src/gdict-pref-dialog.c:731
 msgid "Set the font used for printing the definitions"
-msgstr ""
-"Imposta il tipo di carattere utilizzato per la stampa delle definizioni"
+msgstr "Imposta il font utilizzato per la stampa delle definizioni"
 
 #: mate-dictionary/src/gdict-print.c:238 mate-dictionary/src/gdict-print.c:302
 #, c-format
@@ -2774,205 +2786,206 @@ msgid "Unable to display the preview: %s"
 msgstr "Impossibile visualizzare l'anteprima: %s"
 
 #: mate-dictionary/src/gdict-source-dialog.c:339
-#: mate-dictionary/src/gdict-source-dialog.c:432
+#: mate-dictionary/src/gdict-source-dialog.c:431
 msgid "Unable to create a source file"
 msgstr "Impossibile creare un file sorgente"
 
 #: mate-dictionary/src/gdict-source-dialog.c:357
-#: mate-dictionary/src/gdict-source-dialog.c:450
+#: mate-dictionary/src/gdict-source-dialog.c:449
 msgid "Unable to save source file"
 msgstr "Impossibile salvare il file sorgente"
 
-#: mate-dictionary/src/gdict-window.c:290
+#: mate-dictionary/src/gdict-window.c:288
 #, c-format
 msgid "Searching for '%s'..."
-msgstr "Ricerca di «%s» in corso..."
+msgstr "Ricerca di '%s' in corso..."
 
-#: mate-dictionary/src/gdict-window.c:322
-#: mate-dictionary/src/gdict-window.c:379
+#: mate-dictionary/src/gdict-window.c:320
+#: mate-dictionary/src/gdict-window.c:377
 msgid "No definitions found"
 msgstr "Nessuna definizione trovata"
 
-#: mate-dictionary/src/gdict-window.c:324
+#: mate-dictionary/src/gdict-window.c:322
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
 msgstr[0] "Una definizione trovata"
 msgstr[1] "%d definizioni trovate"
+msgstr[2] "%d definizioni trovate"
 
-#: mate-dictionary/src/gdict-window.c:578
+#: mate-dictionary/src/gdict-window.c:576
 #, c-format
 msgid "%s - Dictionary"
 msgstr "%s - Dizionario"
 
-#: mate-dictionary/src/gdict-window.c:1261
+#: mate-dictionary/src/gdict-window.c:1259
 msgid "_Go"
 msgstr "V_ai"
 
-#: mate-dictionary/src/gdict-window.c:1265
+#: mate-dictionary/src/gdict-window.c:1263
 #: mate-screenshot/data/mate-screenshot.ui:58
 msgid "_New"
 msgstr "_Nuovo"
 
-#: mate-dictionary/src/gdict-window.c:1266
+#: mate-dictionary/src/gdict-window.c:1264
 msgid "New look up"
 msgstr "Nuova ricerca"
 
-#: mate-dictionary/src/gdict-window.c:1267
+#: mate-dictionary/src/gdict-window.c:1265
 msgid "_Save a Copy..."
 msgstr "_Salva una copia..."
 
-#: mate-dictionary/src/gdict-window.c:1269
+#: mate-dictionary/src/gdict-window.c:1267
 msgid "P_review..."
-msgstr "Antepri_ma..."
+msgstr "Antep_rima..."
 
-#: mate-dictionary/src/gdict-window.c:1270
+#: mate-dictionary/src/gdict-window.c:1268
 msgid "Preview this document"
 msgstr "Anteprima di questo documento"
 
-#: mate-dictionary/src/gdict-window.c:1271
+#: mate-dictionary/src/gdict-window.c:1269
 msgid "_Print..."
 msgstr "Stam_pa..."
 
-#: mate-dictionary/src/gdict-window.c:1272
+#: mate-dictionary/src/gdict-window.c:1270
 msgid "Print this document"
 msgstr "Stampa questo documento"
 
-#: mate-dictionary/src/gdict-window.c:1281
+#: mate-dictionary/src/gdict-window.c:1279
 msgid "_Find"
 msgstr "Tr_ova"
 
-#: mate-dictionary/src/gdict-window.c:1282
+#: mate-dictionary/src/gdict-window.c:1280
 msgid "Find a word or phrase in the document"
 msgstr "Trova una parola o frase nel documento"
 
-#: mate-dictionary/src/gdict-window.c:1284
+#: mate-dictionary/src/gdict-window.c:1282
 msgid "Find Ne_xt"
 msgstr "Trova s_uccessivo"
 
-#: mate-dictionary/src/gdict-window.c:1286
+#: mate-dictionary/src/gdict-window.c:1284
 msgid "Find Pre_vious"
 msgstr "Trova pr_ecedente"
 
-#: mate-dictionary/src/gdict-window.c:1288
+#: mate-dictionary/src/gdict-window.c:1286
 msgid "_Preferences"
 msgstr "_Preferenze"
 
-#: mate-dictionary/src/gdict-window.c:1292
+#: mate-dictionary/src/gdict-window.c:1290
 msgid "_Previous Definition"
-msgstr "Definizione pr_ecedente"
+msgstr "Definizione _precedente"
 
-#: mate-dictionary/src/gdict-window.c:1293
+#: mate-dictionary/src/gdict-window.c:1291
 msgid "Go to the previous definition"
-msgstr "Vai alla definizione precedente"
+msgstr "Va alla definizione precedente"
 
-#: mate-dictionary/src/gdict-window.c:1294
+#: mate-dictionary/src/gdict-window.c:1292
 msgid "_Next Definition"
 msgstr "Definizione successi_va"
 
-#: mate-dictionary/src/gdict-window.c:1295
+#: mate-dictionary/src/gdict-window.c:1293
 msgid "Go to the next definition"
-msgstr "Vai alla definizione successiva"
+msgstr "Va alla definizione successiva"
 
-#: mate-dictionary/src/gdict-window.c:1296
+#: mate-dictionary/src/gdict-window.c:1294
 msgid "_First Definition"
 msgstr "Prima de_finizione"
 
-#: mate-dictionary/src/gdict-window.c:1297
+#: mate-dictionary/src/gdict-window.c:1295
 msgid "Go to the first definition"
-msgstr "Vai alla prima definizione"
+msgstr "Va alla prima definizione"
 
-#: mate-dictionary/src/gdict-window.c:1298
+#: mate-dictionary/src/gdict-window.c:1296
 msgid "_Last Definition"
 msgstr "U_ltima definizione"
 
-#: mate-dictionary/src/gdict-window.c:1299
+#: mate-dictionary/src/gdict-window.c:1297
 msgid "Go to the last definition"
-msgstr "Vai all'ultima definizione"
+msgstr "Va all'ultima definizione"
 
-#: mate-dictionary/src/gdict-window.c:1302
+#: mate-dictionary/src/gdict-window.c:1300
 msgid "Similar _Words"
 msgstr "_Parole simili"
 
-#: mate-dictionary/src/gdict-window.c:1304
+#: mate-dictionary/src/gdict-window.c:1302
 msgid "Dictionary Sources"
 msgstr "Sorgenti dizionario"
 
-#: mate-dictionary/src/gdict-window.c:1306
+#: mate-dictionary/src/gdict-window.c:1304
 msgid "Available _Databases"
 msgstr "_Database disponibili"
 
-#: mate-dictionary/src/gdict-window.c:1308
+#: mate-dictionary/src/gdict-window.c:1306
 msgid "Available St_rategies"
 msgstr "St_rategie disponibili"
 
-#: mate-dictionary/src/gdict-window.c:1325
+#: mate-dictionary/src/gdict-window.c:1323
 msgid "_Sidebar"
 msgstr "Barra _laterale"
 
-#: mate-dictionary/src/gdict-window.c:1327
+#: mate-dictionary/src/gdict-window.c:1325
 msgid "S_tatusbar"
 msgstr "Barra di s_tato"
 
-#: mate-dictionary/src/gdict-window.c:1392
+#: mate-dictionary/src/gdict-window.c:1390
 #, c-format
 msgid "Dictionary source `%s' selected"
-msgstr "Selezionata la sorgente dizionario «%s»"
+msgstr "È stata selezionata la sorgente dizionario '%s'"
 
-#: mate-dictionary/src/gdict-window.c:1413
+#: mate-dictionary/src/gdict-window.c:1411
 #, c-format
 msgid "Strategy `%s' selected"
-msgstr "Selezionata la strategia «%s»"
+msgstr "È stata selezionata la strategia '%s'"
 
-#: mate-dictionary/src/gdict-window.c:1433
+#: mate-dictionary/src/gdict-window.c:1431
 #, c-format
 msgid "Database `%s' selected"
-msgstr "Selezionato il database «%s»"
+msgstr "È stato selezionato il database '%s'"
 
-#: mate-dictionary/src/gdict-window.c:1453
+#: mate-dictionary/src/gdict-window.c:1451
 #, c-format
 msgid "Word `%s' selected"
-msgstr "Selezionata la parola «%s»"
+msgstr "È stata selezionata la parola '%s'"
 
-#: mate-dictionary/src/gdict-window.c:1478
+#: mate-dictionary/src/gdict-window.c:1476
 msgid "Double-click on the word to look up"
 msgstr "Doppio clic sulla parola da cercare"
 
-#: mate-dictionary/src/gdict-window.c:1484
+#: mate-dictionary/src/gdict-window.c:1482
 msgid "Double-click on the matching strategy to use"
 msgstr "Doppio clic sulla strategia di confronto da utilizzare"
 
-#: mate-dictionary/src/gdict-window.c:1489
+#: mate-dictionary/src/gdict-window.c:1487
 msgid "Double-click on the source to use"
 msgstr "Doppio clic sulla sorgente da utilizzare"
 
-#: mate-dictionary/src/gdict-window.c:1498
+#: mate-dictionary/src/gdict-window.c:1496
 msgid "Double-click on the database to use"
 msgstr "Doppio clic sul database da utilizzare"
 
-#: mate-dictionary/src/gdict-window.c:1670
+#: mate-dictionary/src/gdict-window.c:1668
 msgid "Look _up:"
 msgstr "_Cerca:"
 
-#: mate-dictionary/src/gdict-window.c:1745
+#: mate-dictionary/src/gdict-window.c:1743
 msgid "Similar words"
 msgstr "Parole simili"
 
-#: mate-dictionary/src/gdict-window.c:1758
+#: mate-dictionary/src/gdict-window.c:1756
 msgid "Available dictionaries"
 msgstr "Dizionari disponibili"
 
-#: mate-dictionary/src/gdict-window.c:1776
+#: mate-dictionary/src/gdict-window.c:1774
 msgid "Available strategies"
 msgstr "Strategie disponibili"
 
-#: mate-dictionary/src/gdict-window.c:1792
+#: mate-dictionary/src/gdict-window.c:1790
 msgid "Dictionary sources"
 msgstr "Sorgenti dizionario"
 
 #: mate-dictionary/data/mate-dictionary-preferences.ui:27
 msgid "_Select a dictionary source for looking up words:"
-msgstr "_Seleziona una sorgente dizionario per cercare parole:"
+msgstr "_Selezionare una sorgente dizionario per cercare le parole:"
 
 #: mate-dictionary/data/mate-dictionary-preferences.ui:132
 #: mate-dictionary/data/mate-dictionary-source.ui:148
@@ -2981,7 +2994,7 @@ msgstr "Sorgente"
 
 #: mate-dictionary/data/mate-dictionary-preferences.ui:162
 msgid "_Print font:"
-msgstr "Carattere per _stampa:"
+msgstr "Font per la _stampa:"
 
 #: mate-dictionary/data/mate-dictionary-preferences.ui:216
 msgid "Print"
@@ -2993,7 +3006,7 @@ msgstr "_Descrizione:"
 
 #: mate-dictionary/data/mate-dictionary-source.ui:53
 msgid "Source Name"
-msgstr "Nome sorgente"
+msgstr "Nome della sorgente"
 
 #: mate-dictionary/data/mate-dictionary-source.ui:65
 msgid "_Transport:"
@@ -3014,7 +3027,7 @@ msgstr "Strategie"
 #: mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in:3
 #: mate-disk-image-mounter/src/main.c:62
 msgid "MATE Disk Image Mounter"
-msgstr "Montaggio di immagini disco di MATE"
+msgstr "MATE Disk Image Mounter"
 
 #: mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in:4
 msgid "Attach and mount one or more disk image files"
@@ -3026,7 +3039,7 @@ msgstr "Si è verificato un errore"
 
 #: mate-disk-image-mounter/src/main.c:81
 msgid "Allow writing to the image"
-msgstr "Permetti scrittura sull'immagine"
+msgstr "Permetti la scrittura sull'immagine"
 
 #: mate-disk-image-mounter/src/main.c:101
 msgid "All Files"
@@ -3038,7 +3051,7 @@ msgstr "Immagini disco (*.img, *.iso)"
 
 #: mate-disk-image-mounter/src/main.c:121
 msgid "Select Disk Image(s) to Mount"
-msgstr "Seleziona immagine(i) disco da montare"
+msgstr "Selezionare le immagine(i) disco da montare"
 
 #: mate-disk-image-mounter/src/main.c:125
 msgid "_Mount"
@@ -3065,28 +3078,28 @@ msgstr "Errore di connessione al demone udisks: %s (%s, %d)"
 msgid "Attach and mount one or more disk image files."
 msgstr "Collega e monta una o più immagini disco"
 
-#: mate-disk-image-mounter/src/main.c:234
+#: mate-disk-image-mounter/src/main.c:236
 #, c-format
 msgid "Cannot open `%s' - maybe the volume isn't mounted?"
-msgstr "Impossibile aprire `%s' - il volume è stato montato?"
+msgstr "Non è possibile aprire '%s' - il volume è stato montato?"
 
-#: mate-disk-image-mounter/src/main.c:241
+#: mate-disk-image-mounter/src/main.c:243
 #, c-format
 msgid "Error opening `%s': %m"
-msgstr "Errore in apertura di `%s': %m"
+msgstr "Errore in apertura di '%s': %m"
 
-#: mate-disk-image-mounter/src/main.c:262
+#: mate-disk-image-mounter/src/main.c:264
 #, c-format
 msgid "Error attaching disk image: %s (%s, %d)"
 msgstr "Errore nel collegamento dell'immagine: %s (%s, %d)"
 
 #: mate-screenshot/data/mate-screenshot.appdata.xml.in:7
 msgid "MATE Screenshot"
-msgstr "Cattura Schermata"
+msgstr "MATE Screenshot"
 
 #: mate-screenshot/data/mate-screenshot.appdata.xml.in:8
 msgid "A screenshot utility for MATE Desktop"
-msgstr "Un'applicazione per catturare schermate per l'ambiente desktop MATE"
+msgstr "Un'applicazione per catturare schermate per il Desktop MATE"
 
 #: mate-screenshot/data/mate-screenshot.appdata.xml.in:10
 msgid ""
@@ -3095,20 +3108,19 @@ msgid ""
 "system clipboard or save them in Portable Network Graphics (.png) image "
 "format."
 msgstr ""
-"Cattura Schermata è una semplice utility che permette di catturare "
-"screenshot del desktop o delle finestre delle applicazioni. È possibile "
-"copiarli negli appunti o salvarli in formato immagine Portable Network "
-"Graphics (.png)."
+"MATE Screenshot è una semplice utility che permette di catturare screenshot "
+"del desktop o delle finestre delle applicazioni. È possibile copiarli negli "
+"appunti o salvarli in formato immagine Portable Network Graphics (.png)."
 
 #: mate-screenshot/data/mate-screenshot.desktop.in:3
 #: mate-screenshot/src/mate-screenshot.c:519
 #: mate-screenshot/src/mate-screenshot.c:527
 msgid "Take Screenshot"
-msgstr "Cattura schermata"
+msgstr "Cattura la schermata"
 
 #: mate-screenshot/data/mate-screenshot.desktop.in:4
 msgid "Save images of your desktop or individual windows"
-msgstr "Salva immagini della propria scrivania o singole finestre"
+msgstr "Salva le immagini della vostra scrivania o di singole finestre"
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -3118,7 +3130,7 @@ msgstr "MATE;screenshot;snapshot;desktop;window;image;"
 
 #: mate-screenshot/data/mate-screenshot.ui:24
 msgid "Save Screenshot"
-msgstr "Salvataggio schermata"
+msgstr "Salvataggio della schermata"
 
 #: mate-screenshot/data/mate-screenshot.ui:74
 msgid "C_opy to Clipboard"
@@ -3150,7 +3162,7 @@ msgstr "Includi bordo"
 
 #: mate-screenshot/data/org.mate.screenshot.gschema.xml.in:16
 msgid "Include the window manager border along with the screenshot"
-msgstr "Includi il bordo del gestore di finestre nella schermata catturata"
+msgstr "Include il bordo del gestore delle finestre nella schermata catturata"
 
 #: mate-screenshot/data/org.mate.screenshot.gschema.xml.in:20
 msgid "Include Pointer"
@@ -3158,7 +3170,7 @@ msgstr "Includi il puntatore"
 
 #: mate-screenshot/data/org.mate.screenshot.gschema.xml.in:21
 msgid "Include the pointer in the screenshot"
-msgstr "Includi il puntatore nella schermata catturata"
+msgstr "Include il puntatore nella schermata catturata"
 
 #: mate-screenshot/data/org.mate.screenshot.gschema.xml.in:25
 msgid "Border Effect"
@@ -3174,7 +3186,7 @@ msgstr ""
 
 #: mate-screenshot/src/mate-screenshot.c:138
 msgid "Error loading the help page"
-msgstr "Errore nel caricare la pagina della guida"
+msgstr "Errore nel caricare la pagina del manuale "
 
 #: mate-screenshot/src/mate-screenshot.c:250
 msgid "None"
@@ -3190,7 +3202,7 @@ msgstr "Bordo"
 
 #: mate-screenshot/src/mate-screenshot.c:353
 msgid "Include _pointer"
-msgstr "Includi _puntatore"
+msgstr "Includi il _puntatore"
 
 #: mate-screenshot/src/mate-screenshot.c:362
 msgid "Include the window _border"
@@ -3198,7 +3210,7 @@ msgstr "Includi il _bordo finestra"
 
 #: mate-screenshot/src/mate-screenshot.c:377
 msgid "Apply _effect:"
-msgstr "Applica _effetto:"
+msgstr "Applica l'_effetto:"
 
 #: mate-screenshot/src/mate-screenshot.c:437
 msgid "Grab the whole _desktop"
@@ -3217,7 +3229,7 @@ msgid "Grab _after a delay of"
 msgstr "C_attura dopo un ritardo di"
 
 #: mate-screenshot/src/mate-screenshot.c:500
-#: mate-screenshot/src/mate-screenshot.c:1320
+#: mate-screenshot/src/mate-screenshot.c:1319
 msgid "seconds"
 msgstr "secondi"
 
@@ -3227,7 +3239,7 @@ msgstr "Effetti"
 
 #: mate-screenshot/src/mate-screenshot.c:532
 msgid "Take _Screenshot"
-msgstr "Cattura _schermata"
+msgstr "Cattura la _schermata"
 
 #: mate-screenshot/src/mate-screenshot.c:651
 msgid "Error while saving screenshot"
@@ -3244,85 +3256,85 @@ msgstr ""
 " L'errore è stato %s.\n"
 " Scegliere un'altra posizione e riprovare."
 
-#: mate-screenshot/src/mate-screenshot.c:796
+#: mate-screenshot/src/mate-screenshot.c:795
 msgid "Screenshot taken"
-msgstr "Cattura schermata"
+msgstr "Schermata catturata"
 
-#: mate-screenshot/src/mate-screenshot.c:851
+#: mate-screenshot/src/mate-screenshot.c:850
 msgid "Unable to take a screenshot of the current window"
 msgstr "Impossibile catturare una schermata della finestra corrente"
 
-#: mate-screenshot/src/mate-screenshot.c:916
+#: mate-screenshot/src/mate-screenshot.c:915
 #, c-format
 msgid "Screenshot at %s.png"
-msgstr "Schermata a %s.png"
+msgstr "Schermata su %s.png"
 
-#: mate-screenshot/src/mate-screenshot.c:923
+#: mate-screenshot/src/mate-screenshot.c:922
 #, c-format
 msgid "Screenshot at %s - %d.png"
-msgstr "Schermata a %s - %d.png"
+msgstr "Schermata su %s - %d.png"
 
-#: mate-screenshot/src/mate-screenshot.c:1315
+#: mate-screenshot/src/mate-screenshot.c:1314
 msgid "Grab a window instead of the entire screen"
 msgstr "Cattura una finestra invece dello schermo intero"
 
-#: mate-screenshot/src/mate-screenshot.c:1316
+#: mate-screenshot/src/mate-screenshot.c:1315
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Cattura un'area dello schermo invece dello schermo intero"
 
-#: mate-screenshot/src/mate-screenshot.c:1317
+#: mate-screenshot/src/mate-screenshot.c:1316
 msgid "Send grabbed area directly to the clipboard"
-msgstr "Invia area selezionata direttamente agli appunti"
+msgstr "Invia l'area catturata direttamente agli appunti"
 
-#: mate-screenshot/src/mate-screenshot.c:1318
+#: mate-screenshot/src/mate-screenshot.c:1317
 msgid "Include the window border with the screenshot"
 msgstr "Nella schermata catturata includi il bordo della finestra"
 
-#: mate-screenshot/src/mate-screenshot.c:1319
+#: mate-screenshot/src/mate-screenshot.c:1318
 msgid "Remove the window border from the screenshot"
 msgstr "Rimuovi il bordo della finestra dalla schermata"
 
-#: mate-screenshot/src/mate-screenshot.c:1320
+#: mate-screenshot/src/mate-screenshot.c:1319
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Cattura una schermata dopo il ritardo specificato (in secondi)"
 
-#: mate-screenshot/src/mate-screenshot.c:1321
+#: mate-screenshot/src/mate-screenshot.c:1320
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Effetto da aggiungere al bordo (ombra, bordo o nessuno)"
 
-#: mate-screenshot/src/mate-screenshot.c:1321
+#: mate-screenshot/src/mate-screenshot.c:1320
 msgid "effect"
 msgstr "effetto"
 
-#: mate-screenshot/src/mate-screenshot.c:1322
+#: mate-screenshot/src/mate-screenshot.c:1321
 msgid "Interactively set options"
-msgstr "Imposta opzioni interattivamente"
+msgstr "Imposta le opzioni interattivamente"
 
-#: mate-screenshot/src/mate-screenshot.c:1323
+#: mate-screenshot/src/mate-screenshot.c:1322
 msgid "Print version information and exit"
 msgstr "Mostra la versione del programma ed esci"
 
-#: mate-screenshot/src/mate-screenshot.c:1334
+#: mate-screenshot/src/mate-screenshot.c:1333
 msgid "Take a picture of the screen"
 msgstr "Cattura un'immagine dello schermo"
 
-#: mate-screenshot/src/mate-screenshot.c:1357
+#: mate-screenshot/src/mate-screenshot.c:1356
 msgid ""
 "Conflicting options: --clipboard and --interactive should not be used at the"
 " same time.\n"
 msgstr ""
 "Opzioni in conflitto: --clipboard e --interactive non possono essere "
-"utilizzate allo stesso tempo.\n"
+"utilizzate contemporaneamente.\n"
 
-#: mate-screenshot/src/mate-screenshot.c:1363
+#: mate-screenshot/src/mate-screenshot.c:1362
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"
 msgstr ""
-"Opzioni in conflitto: --window e --area non possono essere utilizzate allo "
-"stesso tempo.\n"
+"Opzioni in conflitto: --window e --area non possono essere utilizzate "
+"contemporaneamente.\n"
 
-#: mate-screenshot/src/screenshot-dialog.c:210
+#: mate-screenshot/src/screenshot-dialog.c:209
 #, c-format
 msgid ""
 "Error loading UI definition file for the screenshot program: \n"
@@ -3330,16 +3342,16 @@ msgid ""
 "\n"
 "Please check your installation of mate-utils."
 msgstr ""
-"Errore nel caricamento del file di definizione dell'interfaccia utente per il programma di cattura schermata:\n"
+"Errore nel caricamento del file di definizione dell'interfaccia utente per il programma di cattura della schermata:\n"
 "%s\n"
 "\n"
-"Controllate l'installazione di mate-utils."
+"Per favore controllate l'installazione di mate-utils."
 
-#: mate-screenshot/src/screenshot-dialog.c:233
+#: mate-screenshot/src/screenshot-dialog.c:232
 msgid "Select a folder"
 msgstr "Seleziona una cartella"
 
-#: mate-screenshot/src/screenshot-dialog.c:328
+#: mate-screenshot/src/screenshot-dialog.c:329
 #: mate-screenshot/src/screenshot-save.c:202
 msgid "Screenshot.png"
 msgstr "Schermata.png"
@@ -3358,12 +3370,12 @@ msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
 msgstr ""
-"Il processo figlio per il salvataggio è terminato inaspettatamente. "
-"Impossibile scrivere su disco la schermata catturata."
+"Il processo figlio per il salvataggio è terminato inaspettatamente. Non è "
+"possibile scrivere sul disco la schermata catturata."
 
 #: mate-screenshot/src/screenshot-save.c:231
 msgid "Unknown error saving screenshot to disk"
-msgstr "Errore sconosciuto nel salvare la schermata su disco"
+msgstr "Errore sconosciuto nel salvare la schermata sul disco"
 
 #: mate-screenshot/src/screenshot-xfer.c:74
 msgid "File already exists"
@@ -3372,7 +3384,7 @@ msgstr "Il file esiste già"
 #: mate-screenshot/src/screenshot-xfer.c:77
 #, c-format
 msgid "The file \"%s\" already exists. Would you like to replace it?"
-msgstr "Il file «%s» esiste già. Volete sostituirlo?"
+msgstr "Il file \"%s\" esiste già. Volete sostituirlo?"
 
 #: mate-screenshot/src/screenshot-xfer.c:122
 msgid "Saving file..."
@@ -3380,4 +3392,4 @@ msgstr "Salvataggio del file..."
 
 #: mate-screenshot/src/screenshot-xfer.c:292
 msgid "Can't access source file"
-msgstr "Impossibile accedere al file sorgente"
+msgstr "Non è possibile accedere al file sorgente"

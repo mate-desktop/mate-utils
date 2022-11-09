@@ -12,16 +12,16 @@
 # nomen omen, 2018
 # Ammuu5, 2019
 # Jiri Grönroos <jiri.gronroos@iki.fi>, 2019
-# Kimmo Kujansuu <mrkujansuu@gmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
+# Kimmo Kujansuu <mrkujansuu@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-utils 1.25.1\n"
+"Project-Id-Version: mate-utils 1.26.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
-"POT-Creation-Date: 2021-06-25 18:01+0200\n"
+"POT-Creation-Date: 2022-10-29 15:36+0200\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2021\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>, 2021\n"
 "Language-Team: Finnish (https://www.transifex.com/mate/teams/13566/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -43,6 +43,7 @@ msgstr "Tarkista kansioiden koko ja käytettävissä oleva levytila"
 #: baobab/data/mate-disk-usage-analyzer.desktop.in.in:14
 msgid "MATE;check;disk;usage;analyze;size;space;"
 msgstr ""
+"MATE;check;disk;usage;analyze;size;space;tarkista;levy;käyttö;koko;tila;"
 
 #: baobab/data/baobab-dialog-scan-props.ui:18
 msgid "Disk Usage Analyzer Preferences"
@@ -50,14 +51,14 @@ msgstr "Levynkäytön analysoinnin asetukset"
 
 #: baobab/data/baobab-dialog-scan-props.ui:32
 #: baobab/data/baobab-main-window.ui:129 logview/src/logview-window.c:825
-#: mate-dictionary/src/gdict-applet.c:1173
-#: mate-dictionary/src/gdict-window.c:1262
+#: mate-dictionary/src/gdict-applet.c:1172
+#: mate-dictionary/src/gdict-window.c:1260
 #: mate-screenshot/data/mate-screenshot.ui:41
 msgid "_Help"
 msgstr "_Ohje"
 
 #: baobab/data/baobab-dialog-scan-props.ui:48 logview/src/logview-window.c:829
-#: mate-dictionary/src/gdict-window.c:1273
+#: mate-dictionary/src/gdict-window.c:1271
 msgid "_Close"
 msgstr "_Sulje"
 
@@ -90,7 +91,7 @@ msgid "S_can Remote Folder..."
 msgstr "Kartoita _etäkansio…"
 
 #: baobab/data/baobab-main-window.ui:74 logview/src/logview-window.c:822
-#: mate-dictionary/src/gdict-window.c:1259
+#: mate-dictionary/src/gdict-window.c:1257
 msgid "_Edit"
 msgstr "_Muokkaa"
 
@@ -103,7 +104,7 @@ msgid "_Collapse All"
 msgstr "_Kutista kaikki"
 
 #: baobab/data/baobab-main-window.ui:101 logview/src/logview-window.c:823
-#: mate-dictionary/src/gdict-window.c:1260
+#: mate-dictionary/src/gdict-window.c:1258
 msgid "_View"
 msgstr "_Näytä"
 
@@ -120,12 +121,12 @@ msgid "All_ocated Space"
 msgstr "Varattu _tila"
 
 #: baobab/data/baobab-main-window.ui:136 logview/src/logview-window.c:851
-#: mate-dictionary/src/gdict-window.c:1312
+#: mate-dictionary/src/gdict-window.c:1310
 msgid "_Contents"
 msgstr "_Sisältö"
 
 #: baobab/data/baobab-main-window.ui:183 baobab/src/baobab.c:1237
-#: baobab/src/callbacks.c:103
+#: baobab/src/callbacks.c:102
 msgid "Disk Usage Analyzer"
 msgstr "Levynkäytön analysointi"
 
@@ -227,6 +228,9 @@ msgid ""
 " use to view and monitor your disk usage and folder structure. It displays "
 "summary information in ring or treemap charts."
 msgstr ""
+"Kuten nimestä voi päätellä, \"Disk Usage Analyzer\" on graafinen apuohjelma,"
+" jonka avulla voit seurata levytilaa ja kansiorakennetta. Se näyttää "
+"yhteenvedon renkaina tai hakemistopuuna."
 
 #: baobab/data/mate-disk-usage-analyzer.appdata.xml.in:15
 msgid ""
@@ -234,6 +238,10 @@ msgid ""
 "local or remote. There is also an option to constantly monitor any external "
 "changes to the home directory and warn the user if a file is added/removed."
 msgstr ""
+"Voit skannata tiedostojärjestelmän, koti tai missä muussa tahansa "
+"tietokoneen kansiossa tai etäyhteydet. Mahdollisuus on myös seurata "
+"jatkuvasti kotihakemiston muutoksia ja varoittaa käyttäjää, jos tiedosto "
+"lisätään/poistetaan."
 
 #: baobab/src/baobab.c:141 baobab/src/baobab.c:358
 msgid "Scanning..."
@@ -251,11 +259,11 @@ msgstr "käytössä:"
 msgid "available:"
 msgstr "vapaana:"
 
-#: baobab/src/baobab.c:243 baobab/src/baobab.c:300 baobab/src/callbacks.c:268
+#: baobab/src/baobab.c:243 baobab/src/baobab.c:300 baobab/src/callbacks.c:267
 msgid "Calculating percentage bars..."
 msgstr "Lasketaan prosenttipalkkeja…"
 
-#: baobab/src/baobab.c:254 baobab/src/baobab.c:1300 baobab/src/callbacks.c:272
+#: baobab/src/baobab.c:254 baobab/src/baobab.c:1300 baobab/src/callbacks.c:271
 msgid "Ready"
 msgstr "Valmis"
 
@@ -330,39 +338,39 @@ msgstr "Yhtäkään liitoskohtaa ei havaittu."
 msgid "Without mount points disk usage cannot be analyzed."
 msgstr "Ilman liitoskohtia levynkäyttöä ei voi analysoida."
 
-#: baobab/src/baobab-chart.c:204
+#: baobab/src/baobab-chart.c:203
 msgid "Maximum depth"
 msgstr "Enimmäissyvyys"
 
-#: baobab/src/baobab-chart.c:205
+#: baobab/src/baobab-chart.c:204
 msgid "The maximum depth drawn in the chart from the root"
 msgstr "Kaavioon piirretty enimmäissyvyys juuresta lähtien"
 
-#: baobab/src/baobab-chart.c:214
+#: baobab/src/baobab-chart.c:213
 msgid "Chart model"
 msgstr "Kaaviomalli"
 
-#: baobab/src/baobab-chart.c:215
+#: baobab/src/baobab-chart.c:214
 msgid "Set the model of the chart"
 msgstr "Aseta kaavion malli"
 
-#: baobab/src/baobab-chart.c:222
+#: baobab/src/baobab-chart.c:221
 msgid "Chart root node"
 msgstr "Kaavion juurisolmu"
 
-#: baobab/src/baobab-chart.c:223
+#: baobab/src/baobab-chart.c:222
 msgid "Set the root node from the model"
 msgstr "Aseta juurisolmu mallista"
 
-#: baobab/src/baobab-chart.c:1713
+#: baobab/src/baobab-chart.c:1708
 msgid "Cannot create pixbuf image!"
 msgstr "Pixbuf-kuvaa ei voi luoda."
 
-#: baobab/src/baobab-chart.c:1723
+#: baobab/src/baobab-chart.c:1718
 msgid "Save Snapshot"
 msgstr "Tallenna kuvakaappaus"
 
-#: baobab/src/baobab-chart.c:1750
+#: baobab/src/baobab-chart.c:1745
 msgid "_Image type:"
 msgstr "Kuvan tyypp_i:"
 
@@ -390,89 +398,89 @@ msgstr "Kokonaiskoko"
 msgid "Available"
 msgstr "Käytettävissä"
 
-#: baobab/src/baobab-remote-connect-dialog.c:70
+#: baobab/src/baobab-remote-connect-dialog.c:68
 #, c-format
 msgid "Cannot scan location \"%s\""
 msgstr "Sijaintia ”%s” ei voi tutkia"
 
-#: baobab/src/baobab-remote-connect-dialog.c:168
+#: baobab/src/baobab-remote-connect-dialog.c:166
 msgid "Custom Location"
 msgstr "Oma sijainti"
 
-#: baobab/src/baobab-remote-connect-dialog.c:170
+#: baobab/src/baobab-remote-connect-dialog.c:168
 msgid "SSH"
 msgstr "SSH"
 
-#: baobab/src/baobab-remote-connect-dialog.c:173
+#: baobab/src/baobab-remote-connect-dialog.c:171
 msgid "Public FTP"
 msgstr "Julkinen FTP"
 
-#: baobab/src/baobab-remote-connect-dialog.c:175
+#: baobab/src/baobab-remote-connect-dialog.c:173
 msgid "FTP (with login)"
 msgstr "FTP (vaatii sisäänkirjautumisen)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:178
+#: baobab/src/baobab-remote-connect-dialog.c:176
 msgid "Windows share"
 msgstr "Windows-jako"
 
-#: baobab/src/baobab-remote-connect-dialog.c:180
+#: baobab/src/baobab-remote-connect-dialog.c:178
 msgid "WebDAV (HTTP)"
 msgstr "WebDAV (HTTP)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:182
+#: baobab/src/baobab-remote-connect-dialog.c:180
 msgid "Secure WebDAV (HTTPS)"
 msgstr "Salattu WebDAV (HTTPS)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:242
+#: baobab/src/baobab-remote-connect-dialog.c:240
 msgid "Cannot Connect to Server. You must enter a name for the server."
 msgstr "Palvelimeen ei saatu yhteyttä. Sinun täytyy antaa nimi palvelimelle."
 
-#: baobab/src/baobab-remote-connect-dialog.c:245
+#: baobab/src/baobab-remote-connect-dialog.c:243
 msgid "Please enter a name and try again."
 msgstr "Syötä nimi ja yritä uudestaan."
 
-#: baobab/src/baobab-remote-connect-dialog.c:439
+#: baobab/src/baobab-remote-connect-dialog.c:437
 msgid "_Location (URI):"
 msgstr "_Sijainti (URI):"
 
-#: baobab/src/baobab-remote-connect-dialog.c:455
+#: baobab/src/baobab-remote-connect-dialog.c:453
 msgid "_Server:"
 msgstr "_Palvelin:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:468
+#: baobab/src/baobab-remote-connect-dialog.c:466
 msgid "Optional information:"
 msgstr "Lisätiedot:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:477
+#: baobab/src/baobab-remote-connect-dialog.c:475
 msgid "_Share:"
 msgstr "_Jako:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:492
+#: baobab/src/baobab-remote-connect-dialog.c:490
 #: mate-dictionary/data/mate-dictionary-source.ui:121
 msgid "_Port:"
 msgstr "Po_rtti:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:506
+#: baobab/src/baobab-remote-connect-dialog.c:504
 msgid "_Folder:"
 msgstr "_Kansio:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:520
+#: baobab/src/baobab-remote-connect-dialog.c:518
 msgid "_User Name:"
 msgstr "_Käyttäjätunnus:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:535
+#: baobab/src/baobab-remote-connect-dialog.c:533
 msgid "_Domain Name:"
 msgstr "_Toimialue:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:592
+#: baobab/src/baobab-remote-connect-dialog.c:590
 msgid "Connect to Server"
 msgstr "Yhdistä palvelimeen"
 
-#: baobab/src/baobab-remote-connect-dialog.c:608
+#: baobab/src/baobab-remote-connect-dialog.c:606
 msgid "Service _type:"
 msgstr "Palvelun _tyyppi:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:726
+#: baobab/src/baobab-remote-connect-dialog.c:722
 msgid "_Scan"
 msgstr "_Kartoita"
 
@@ -492,7 +500,7 @@ msgstr ""
 msgid "_Rescan"
 msgstr "Kartoita _uudestaan"
 
-#: baobab/src/baobab-treeview.c:222 gsearchtool/src/gsearchtool.c:2453
+#: baobab/src/baobab-treeview.c:222 gsearchtool/src/gsearchtool.c:2447
 msgid "Folder"
 msgstr "Kansio"
 
@@ -500,7 +508,7 @@ msgstr "Kansio"
 msgid "Usage"
 msgstr "Käyttö"
 
-#: baobab/src/baobab-treeview.c:258 gsearchtool/src/gsearchtool.c:2466
+#: baobab/src/baobab-treeview.c:258 gsearchtool/src/gsearchtool.c:2460
 msgid "Size"
 msgstr "Koko"
 
@@ -533,7 +541,7 @@ msgstr "Levynkäyttöä ei voitu analysoida."
 msgid "_Open Folder"
 msgstr "Avaa _kansio"
 
-#: baobab/src/baobab-utils.c:349 gsearchtool/src/gsearchtool-callbacks.c:1330
+#: baobab/src/baobab-utils.c:349 gsearchtool/src/gsearchtool-callbacks.c:1326
 msgid "Mo_ve to Trash"
 msgstr "_Siirrä roskakoriin"
 
@@ -601,22 +609,26 @@ msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program.  If not, see <https://www.gnu.org/licenses/>."
 msgstr ""
+"Sinun olisi pitänyt saada kopio \"GNU General Public License\" tämän "
+"ohjelman mukana. Jos et, katso täältä <http://www.gnu.org/licenses/>."
 
-#: baobab/src/callbacks.c:105
+#: baobab/src/callbacks.c:104
 msgid "About Disk Usage Analyzer"
 msgstr "Tietoja levyn käytön analysoimisesta"
 
-#: baobab/src/callbacks.c:106
+#: baobab/src/callbacks.c:105
 msgid "Analyze your disk usage through a graphical tool."
-msgstr ""
+msgstr "Analysoi levyn käyttöä graafisen työkalun avulla."
 
-#: baobab/src/callbacks.c:107
+#: baobab/src/callbacks.c:106
 msgid ""
 "Copyright © 2005-2010 Fabio Marzocca\n"
 "Copyright © 2011-2021 MATE developers"
 msgstr ""
+"Copyright © 2005-2010 Fabio Marzocca\n"
+"Copyright © 2011-2021 MATE developers"
 
-#: baobab/src/callbacks.c:113 logview/src/logview-about.h:62
+#: baobab/src/callbacks.c:112 logview/src/logview-about.h:62
 #: mate-dictionary/src/gdict-about.c:53
 msgid "translator-credits"
 msgstr ""
@@ -626,12 +638,12 @@ msgstr ""
 "Jarkko Ranta, 2003-2004\n"
 "Johanna Makkonen, 2003"
 
-#: baobab/src/callbacks.c:211 gsearchtool/src/gsearchtool-callbacks.c:506
-#: gsearchtool/src/gsearchtool-callbacks.c:879
+#: baobab/src/callbacks.c:210 gsearchtool/src/gsearchtool-callbacks.c:505
+#: gsearchtool/src/gsearchtool-callbacks.c:878
 msgid "The document does not exist."
 msgstr "Asiakirja ei ole olemassa."
 
-#: baobab/src/callbacks.c:292
+#: baobab/src/callbacks.c:291
 msgid "The folder does not exist."
 msgstr "Kansiota ei ole olemassa."
 
@@ -901,63 +913,63 @@ msgstr ""
 "Tämä avain määrittelee, onko hakuehto ”älä hae toisista "
 "tiedostojärjestelmistä” valittu etsintätyökalun käynnistyessä."
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:169
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:168
 msgid "File is not a valid .desktop file"
 msgstr "Tiedosto ei ole kelvollinen .desktop-tiedosto"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:194
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:193
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
 msgstr "Tuntematon työpöytätiedoston versio ”%s”"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:976
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:975
 #, c-format
 msgid "Starting %s"
 msgstr "Käynnistetään %s"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1118
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1117
 msgid "Application does not accept documents on command line"
 msgstr "Sovellus ei hyväksy asiakirjoja komentoriviltä"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1186
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1185
 #, c-format
 msgid "Unrecognized launch option: %d"
 msgstr "Tuntematon käynnistysvalitsin: %d"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1402
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1401
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 msgstr ""
 "Asiakirjojen URI:a ei voi antaa ”Type=Link”-muotoisille työpöytälinkeille"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1423
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1422
 msgid "Not a launchable item"
 msgstr "Ei käynnistettävä kohde"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:234
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:233
 msgid "Disable connection to session manager"
 msgstr "Estä yhteys istunnonhallintaan"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:239
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:238
 msgid "Specify file containing saved configuration"
 msgstr "Anna tallennetun määrittelyn sisältävä tiedosto"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:239
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:238
 msgid "FILE"
 msgstr "TIEDOSTO"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:244
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:243
 msgid "Specify session management ID"
 msgstr "Anna istunnonhallinan tunniste"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:244
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:243
 msgid "ID"
 msgstr "ID"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:270
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:269
 msgid "Session management options:"
 msgstr "Istunnonhallinan valitsimet:"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:271
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:270
 msgid "Show session management options"
 msgstr "Näytä istunnonhallinan valitsimet"
 
@@ -1076,7 +1088,7 @@ msgid "Searching..."
 msgstr "Etsitään…"
 
 #: gsearchtool/src/gsearchtool.c:511 gsearchtool/src/gsearchtool.c:1048
-#: gsearchtool/src/gsearchtool.c:3078
+#: gsearchtool/src/gsearchtool.c:3077
 msgid "Search for Files"
 msgstr "Etsi tiedostoja"
 
@@ -1205,119 +1217,119 @@ msgstr "%s %s"
 msgid "Enter a value in %s for the \"%s\" search option."
 msgstr "Kirjoita arvo kenttään %s hakuehtoa ”%s” varten."
 
-#: gsearchtool/src/gsearchtool.c:2095
+#: gsearchtool/src/gsearchtool.c:2096
 #, c-format
 msgid "Remove \"%s\""
 msgstr "Poista ”%s”"
 
-#: gsearchtool/src/gsearchtool.c:2096
+#: gsearchtool/src/gsearchtool.c:2097
 #, c-format
 msgid "Click to remove the \"%s\" search option."
 msgstr "Poista hakuehto ”%s” napsauttamalla."
 
-#: gsearchtool/src/gsearchtool.c:2189
+#: gsearchtool/src/gsearchtool.c:2190
 msgid "A_vailable options:"
 msgstr "_Mahdolliset hakuehdot:"
 
-#: gsearchtool/src/gsearchtool.c:2218
+#: gsearchtool/src/gsearchtool.c:2219
 msgid "Available options"
 msgstr "Mahdolliset hakuehdot"
 
-#: gsearchtool/src/gsearchtool.c:2219
+#: gsearchtool/src/gsearchtool.c:2220
 msgid "Select a search option from the drop-down list."
 msgstr "Valitse hakuehto pudotusvalikosta."
 
-#: gsearchtool/src/gsearchtool.c:2236
+#: gsearchtool/src/gsearchtool.c:2238
 msgid "Add search option"
 msgstr "Lisää hakuehto"
 
-#: gsearchtool/src/gsearchtool.c:2237
+#: gsearchtool/src/gsearchtool.c:2239
 msgid "Click to add the selected available search option."
 msgstr "Napsauta lisätäksesi jonkin mahdollisista hakuehdoista."
 
-#: gsearchtool/src/gsearchtool.c:2326
+#: gsearchtool/src/gsearchtool.c:2328
 msgid "S_earch results:"
 msgstr "Haku_tulokset:"
 
-#: gsearchtool/src/gsearchtool.c:2369
+#: gsearchtool/src/gsearchtool.c:2371
 msgid "List View"
 msgstr "Luettelonäkymä"
 
-#: gsearchtool/src/gsearchtool.c:2429
-#: mate-dictionary/libgdict/gdict-source.c:243
+#: gsearchtool/src/gsearchtool.c:2423
+#: mate-dictionary/libgdict/gdict-source.c:240
 msgid "Name"
 msgstr "Nimi"
 
-#: gsearchtool/src/gsearchtool.c:2478
+#: gsearchtool/src/gsearchtool.c:2472
 msgid "Type"
 msgstr "Tyyppi"
 
-#: gsearchtool/src/gsearchtool.c:2490
+#: gsearchtool/src/gsearchtool.c:2484
 msgid "Date Modified"
 msgstr "Viimeksi muokattu:"
 
-#: gsearchtool/src/gsearchtool.c:2820
+#: gsearchtool/src/gsearchtool.c:2813
 msgid "_Name contains:"
 msgstr "_Nimi sisältää:"
 
-#: gsearchtool/src/gsearchtool.c:2835 gsearchtool/src/gsearchtool.c:2836
+#: gsearchtool/src/gsearchtool.c:2828 gsearchtool/src/gsearchtool.c:2829
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr ""
 "Kirjoita tiedostonimi tai sen osa, mahdollisesti jokerimerkkien kanssa."
 
-#: gsearchtool/src/gsearchtool.c:2836
+#: gsearchtool/src/gsearchtool.c:2829
 msgid "Name contains"
 msgstr "Nimi sisältää"
 
-#: gsearchtool/src/gsearchtool.c:2842
+#: gsearchtool/src/gsearchtool.c:2835
 msgid "_Look in folder:"
 msgstr "Etsi _kansiosta:"
 
-#: gsearchtool/src/gsearchtool.c:2848
+#: gsearchtool/src/gsearchtool.c:2841
 msgid "Browse"
 msgstr "Selaa"
 
-#: gsearchtool/src/gsearchtool.c:2858
+#: gsearchtool/src/gsearchtool.c:2851
 msgid "Look in folder"
 msgstr "Etsi kansiosta"
 
-#: gsearchtool/src/gsearchtool.c:2858
+#: gsearchtool/src/gsearchtool.c:2851
 msgid "Select the folder or device from which you want to begin the search."
 msgstr "Syötä kansion nimi, josta haluat etsinnän alkavan."
 
-#: gsearchtool/src/gsearchtool.c:2876
+#: gsearchtool/src/gsearchtool.c:2869
 msgid "Select more _options"
 msgstr "N_äytä lisää valintoja"
 
-#: gsearchtool/src/gsearchtool.c:2885
+#: gsearchtool/src/gsearchtool.c:2879
 msgid "Select more options"
 msgstr "Näytä lisää valintoja"
 
-#: gsearchtool/src/gsearchtool.c:2885
+#: gsearchtool/src/gsearchtool.c:2879
 msgid "Click to expand or collapse the list of available options."
 msgstr "Napsauta laajentaaksesi tai kutistaaksesi etsintäasetusten luettelon."
 
-#: gsearchtool/src/gsearchtool.c:2916
+#: gsearchtool/src/gsearchtool.c:2910
 msgid "Click to display the help manual."
 msgstr "Napsauta nähdäksesi ohjeen."
 
-#: gsearchtool/src/gsearchtool.c:2929
+#: gsearchtool/src/gsearchtool.c:2924
 msgid "Click to close \"Search for Files\"."
 msgstr "Napsauta sulkeaksesi ”Etsi tiedostoja”-ikkunan."
 
-#: gsearchtool/src/gsearchtool.c:2964
+#: gsearchtool/src/gsearchtool.c:2962
 msgid "Click to perform a search."
 msgstr "Napsauta hakeaksesi."
 
-#: gsearchtool/src/gsearchtool.c:2965
+#: gsearchtool/src/gsearchtool.c:2963
 msgid "Click to stop a search."
 msgstr "Napsauta haun pysäyttämiseksi."
 
-#: gsearchtool/src/gsearchtool.c:3061
+#: gsearchtool/src/gsearchtool.c:3060
 msgid "- the MATE Search Tool"
 msgstr "- MATEn hakutyökalu"
 
-#: gsearchtool/src/gsearchtool.c:3072
+#: gsearchtool/src/gsearchtool.c:3071
 #, c-format
 msgid "Failed to parse command line arguments: %s\n"
 msgstr "Komentoriviargumenttien jäsennys epäonnistui: %s\n"
@@ -1326,145 +1338,145 @@ msgstr "Komentoriviargumenttien jäsennys epäonnistui: %s\n"
 msgid "Could not open help document."
 msgstr "Ohjeen avaaminen ei onnistunut."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:343
+#: gsearchtool/src/gsearchtool-callbacks.c:342
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:348
-#: gsearchtool/src/gsearchtool-callbacks.c:548
+#: gsearchtool/src/gsearchtool-callbacks.c:347
+#: gsearchtool/src/gsearchtool-callbacks.c:547
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
 msgstr[0] ""
 msgstr[1] ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:393
+#: gsearchtool/src/gsearchtool-callbacks.c:392
 #, c-format
 msgid "Could not open document \"%s\"."
 msgstr "Asiakirjan ”%s” avaaminen ei onnistunut."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:422
+#: gsearchtool/src/gsearchtool-callbacks.c:421
 #, c-format
 msgid "Could not open folder \"%s\"."
 msgstr "Kansion ”%s” avaaminen epäonnistui."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:430
+#: gsearchtool/src/gsearchtool-callbacks.c:429
 msgid "The caja file manager is not running."
 msgstr "Caja-tiedostonhallinta ei ole käynnissä."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:521
+#: gsearchtool/src/gsearchtool-callbacks.c:520
 msgid "There is no installed viewer capable of displaying the document."
 msgstr "Ei löydy ohjelmaa, joka voisi näyttää asiakirjan."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:543
+#: gsearchtool/src/gsearchtool-callbacks.c:542
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: gsearchtool/src/gsearchtool-callbacks.c:725
+#: gsearchtool/src/gsearchtool-callbacks.c:724
 #, c-format
 msgid "Could not move \"%s\" to trash."
 msgstr "Kohteen ”%s” siirtäminen roskakoriin epäonnistui."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:756
+#: gsearchtool/src/gsearchtool-callbacks.c:755
 #, c-format
 msgid "Do you want to delete \"%s\" permanently?"
 msgstr "Haluatko poistaa kohteen ”%s” pysyvästi?"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:759
+#: gsearchtool/src/gsearchtool-callbacks.c:758
 #, c-format
 msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
 msgstr ""
 "Roskakori ei ole saatavilla. Kohteen ”%s” siirtäminen sinne ei onnistunut."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:803
+#: gsearchtool/src/gsearchtool-callbacks.c:802
 #, c-format
 msgid "Could not delete \"%s\"."
 msgstr "Kohteen ”%s” poistaminen epäonnistui."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:915
+#: gsearchtool/src/gsearchtool-callbacks.c:914
 #, c-format
 msgid "Deleting \"%s\" failed: %s."
 msgstr "Kohteen ”%s” poistaminen epäonnistui: %s."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:927
+#: gsearchtool/src/gsearchtool-callbacks.c:926
 #, c-format
 msgid "Moving \"%s\" failed: %s."
 msgstr "Kohteen ”%s” siirtäminen epäonnistui: %s."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1143
-#: gsearchtool/src/gsearchtool-callbacks.c:1169
+#: gsearchtool/src/gsearchtool-callbacks.c:1142
+#: gsearchtool/src/gsearchtool-callbacks.c:1167
 msgid "_Open"
 msgstr "_Avaa"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1199
+#: gsearchtool/src/gsearchtool-callbacks.c:1196
 #, c-format
 msgid "_Open with %s"
 msgstr "_Avaa ohjelmalla %s"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1220
+#: gsearchtool/src/gsearchtool-callbacks.c:1217
 #, c-format
 msgid "Open with %s"
 msgstr "Avaa ohjelmalla %s"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1249
+#: gsearchtool/src/gsearchtool-callbacks.c:1246
 msgid "Open Wit_h"
 msgstr "Avaa _ohjelmalla"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1299
+#: gsearchtool/src/gsearchtool-callbacks.c:1297
 msgid "Open Containing _Folder"
 msgstr "Avaa sisältävä kansio"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1310
+#: gsearchtool/src/gsearchtool-callbacks.c:1307
 msgid "Copy _Path"
-msgstr ""
+msgstr "Kopioi _polku"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1344
+#: gsearchtool/src/gsearchtool-callbacks.c:1339
 msgid "_Save Results As..."
 msgstr "_Tallenna tulokset nimellä…"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1722
+#: gsearchtool/src/gsearchtool-callbacks.c:1715
 msgid "Save Search Results As..."
 msgstr "Tallenna hakutulokset nimellä…"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1751
+#: gsearchtool/src/gsearchtool-callbacks.c:1744
 msgid "Could not save document."
 msgstr "Asiakirjan tallentaminen ei onnistunut."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1752
+#: gsearchtool/src/gsearchtool-callbacks.c:1745
 msgid "You did not select a document name."
 msgstr "Asiakirjan nimeä ei annettu."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1782
+#: gsearchtool/src/gsearchtool-callbacks.c:1775
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
 msgstr "Asiakirjan ”%s” tallentaminen kansioon ”%s” ei onnistunut."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1815
+#: gsearchtool/src/gsearchtool-callbacks.c:1808
 #, c-format
 msgid "The document \"%s\" already exists.  Would you like to replace it?"
 msgstr "Asiakirja ”%s” on jo olemassa. Haluatko korvata sen?"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1819
+#: gsearchtool/src/gsearchtool-callbacks.c:1812
 msgid "If you replace an existing file, its contents will be overwritten."
 msgstr ""
 "Olemassa olevan tiedoston korvaaminen ylikirjoittaa nykyisen sisällön."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1834
+#: gsearchtool/src/gsearchtool-callbacks.c:1827
 #: mate-screenshot/src/screenshot-xfer.c:84
 msgid "_Replace"
 msgstr "_Korvaa"
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1883
+#: gsearchtool/src/gsearchtool-callbacks.c:1876
 msgid "The document name you selected is a folder."
 msgstr "Antamasi asiakirjan nimi vastaa kansiota."
 
-#: gsearchtool/src/gsearchtool-callbacks.c:1919
+#: gsearchtool/src/gsearchtool-callbacks.c:1912
 msgid "You may not have write permissions to the document."
 msgstr "Tähän asiakirjaan ei ole lupaa kirjoittaa."
 
@@ -1489,75 +1501,75 @@ msgstr "linkki (rikki)"
 msgid "link to %s"
 msgstr "linkki tiedostoon %s"
 
-#: gsearchtool/src/gsearchtool-support.c:1101
+#: gsearchtool/src/gsearchtool-support.c:1099
 msgid " (copy)"
 msgstr " (kopio)"
 
-#: gsearchtool/src/gsearchtool-support.c:1103
+#: gsearchtool/src/gsearchtool-support.c:1101
 msgid " (another copy)"
 msgstr " (toinen kopio)"
 
+#: gsearchtool/src/gsearchtool-support.c:1104
 #: gsearchtool/src/gsearchtool-support.c:1106
 #: gsearchtool/src/gsearchtool-support.c:1108
-#: gsearchtool/src/gsearchtool-support.c:1110
-#: gsearchtool/src/gsearchtool-support.c:1120
+#: gsearchtool/src/gsearchtool-support.c:1118
 msgid "th copy)"
 msgstr ". kopio"
 
-#: gsearchtool/src/gsearchtool-support.c:1113
+#: gsearchtool/src/gsearchtool-support.c:1111
 msgid "st copy)"
 msgstr ". kopio)"
 
-#: gsearchtool/src/gsearchtool-support.c:1115
+#: gsearchtool/src/gsearchtool-support.c:1113
 msgid "nd copy)"
 msgstr ". kopio"
 
-#: gsearchtool/src/gsearchtool-support.c:1117
+#: gsearchtool/src/gsearchtool-support.c:1115
 msgid "rd copy)"
 msgstr ". kopio"
 
-#: gsearchtool/src/gsearchtool-support.c:1134
+#: gsearchtool/src/gsearchtool-support.c:1132
 #, c-format
 msgid "%s (copy)%s"
 msgstr "%s (kopio)%s"
 
-#: gsearchtool/src/gsearchtool-support.c:1136
+#: gsearchtool/src/gsearchtool-support.c:1134
 #, c-format
 msgid "%s (another copy)%s"
 msgstr "%s (toinen kopio)%s"
 
+#: gsearchtool/src/gsearchtool-support.c:1137
 #: gsearchtool/src/gsearchtool-support.c:1139
 #: gsearchtool/src/gsearchtool-support.c:1141
-#: gsearchtool/src/gsearchtool-support.c:1143
-#: gsearchtool/src/gsearchtool-support.c:1152
+#: gsearchtool/src/gsearchtool-support.c:1150
 #, c-format
 msgid "%s (%dth copy)%s"
 msgstr "%s (%d. kopio)%s"
 
-#: gsearchtool/src/gsearchtool-support.c:1146
+#: gsearchtool/src/gsearchtool-support.c:1144
 #, c-format
 msgid "%s (%dst copy)%s"
 msgstr "%s (%d. kopio)%s"
 
-#: gsearchtool/src/gsearchtool-support.c:1148
+#: gsearchtool/src/gsearchtool-support.c:1146
 #, c-format
 msgid "%s (%dnd copy)%s"
 msgstr "%s (%d. kopio)%s"
 
-#: gsearchtool/src/gsearchtool-support.c:1150
+#: gsearchtool/src/gsearchtool-support.c:1148
 #, c-format
 msgid "%s (%drd copy)%s"
 msgstr "%s (%d. kopio)%s"
 
-#: gsearchtool/src/gsearchtool-support.c:1197
+#: gsearchtool/src/gsearchtool-support.c:1195
 msgid " (invalid Unicode)"
 msgstr " (virheellistä Unicodea)"
 
-#: gsearchtool/src/gsearchtool-support.c:1286
+#: gsearchtool/src/gsearchtool-support.c:1284
 msgid " ("
 msgstr " ("
 
-#: gsearchtool/src/gsearchtool-support.c:1294
+#: gsearchtool/src/gsearchtool-support.c:1292
 #, c-format
 msgid " (%d"
 msgstr " (%d"
@@ -1713,7 +1725,7 @@ msgstr "Muokkaa suodinta"
 msgid "Add new filter"
 msgstr "Lisää uusi suodin"
 
-#: logview/src/logview-filter-manager.c:469
+#: logview/src/logview-filter-manager.c:470
 msgid "Filters"
 msgstr "Suotimet"
 
@@ -1761,7 +1773,7 @@ msgstr "Tämä järjestelmälokin versio ei tue gzip-pakattuja lokeja."
 msgid "%A, %e %b"
 msgstr ""
 
-#: logview/src/logview-loglist.c:314
+#: logview/src/logview-loglist.c:313
 msgid "Loading..."
 msgstr "Ladataan…"
 
@@ -1817,9 +1829,9 @@ msgid "Wrapped"
 msgstr "Rivitetty"
 
 #: logview/src/logview-window.c:493
-#: mate-dictionary/libgdict/gdict-defbox.c:1125
-#: mate-dictionary/libgdict/gdict-defbox.c:1219
-#: mate-dictionary/libgdict/gdict-defbox.c:1253
+#: mate-dictionary/libgdict/gdict-defbox.c:1127
+#: mate-dictionary/libgdict/gdict-defbox.c:1221
+#: mate-dictionary/libgdict/gdict-defbox.c:1255
 msgid "Not found"
 msgstr "Ei löydy"
 
@@ -1837,7 +1849,7 @@ msgstr ""
 msgid "View, monitor or analyze your system logs in a gradual manner."
 msgstr ""
 
-#: logview/src/logview-window.c:821 mate-dictionary/src/gdict-window.c:1258
+#: logview/src/logview-window.c:821 mate-dictionary/src/gdict-window.c:1256
 msgid "_File"
 msgstr "_Tiedosto"
 
@@ -1865,7 +1877,7 @@ msgstr "_Lopeta"
 msgid "Quit the log viewer"
 msgstr "Lopeta lokien katselu"
 
-#: logview/src/logview-window.c:834 mate-dictionary/src/gdict-window.c:1277
+#: logview/src/logview-window.c:834 mate-dictionary/src/gdict-window.c:1275
 msgid "_Copy"
 msgstr "_Kopioi"
 
@@ -1873,7 +1885,7 @@ msgstr "_Kopioi"
 msgid "Copy the selection"
 msgstr "Kopioi valinta"
 
-#: logview/src/logview-window.c:836 mate-dictionary/src/gdict-window.c:1279
+#: logview/src/logview-window.c:836 mate-dictionary/src/gdict-window.c:1277
 msgid "Select _All"
 msgstr "Valitse k_aikki"
 
@@ -1925,8 +1937,8 @@ msgstr "Hallitse suotimia"
 msgid "Open the help contents for the log viewer"
 msgstr "Näytä lokien katselun ohjeen sisältö"
 
-#: logview/src/logview-window.c:853 mate-dictionary/src/gdict-applet.c:1176
-#: mate-dictionary/src/gdict-window.c:1314
+#: logview/src/logview-window.c:853 mate-dictionary/src/gdict-applet.c:1175
+#: mate-dictionary/src/gdict-window.c:1312
 msgid "_About"
 msgstr "_Tietoja"
 
@@ -2073,61 +2085,61 @@ msgstr "Thai"
 msgid "Longdo Thai-English Dictionaries"
 msgstr "Longdon Thai-Englanti -sanakirjat"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:283
+#: mate-dictionary/libgdict/gdict-client-context.c:281
 msgid "Client Name"
 msgstr "Asiakkaan nimi"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:284
+#: mate-dictionary/libgdict/gdict-client-context.c:282
 msgid "The name of the client of the context object"
 msgstr "Kontekstiolion asiakkaan nimi"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:297
+#: mate-dictionary/libgdict/gdict-client-context.c:295
 msgid "Hostname"
 msgstr "Palvelin"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:298
+#: mate-dictionary/libgdict/gdict-client-context.c:296
 msgid "The hostname of the dictionary server to connect to"
 msgstr "Käytettävän sanakirjapalvelimen verkkonimi"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:311
+#: mate-dictionary/libgdict/gdict-client-context.c:309
 msgid "Port"
 msgstr "Portti"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:312
+#: mate-dictionary/libgdict/gdict-client-context.c:310
 msgid "The port of the dictionary server to connect to"
 msgstr "Portti, johon sanakirjapalvelimella otetaan yhteyttä"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:327
+#: mate-dictionary/libgdict/gdict-client-context.c:325
 msgid "Status"
 msgstr "Tila"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:328
+#: mate-dictionary/libgdict/gdict-client-context.c:326
 msgid "The status code as returned by the dictionary server"
 msgstr "Sanakirjapalvelimen palauttama tilakoodi"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:772
+#: mate-dictionary/libgdict/gdict-client-context.c:764
 #, c-format
 msgid "No connection to the dictionary server at '%s:%d'"
 msgstr "Ei yhteyttä sanakirjapalvelimeen osoitteessa ”%s:%d”"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1052
+#: mate-dictionary/libgdict/gdict-client-context.c:1044
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
 msgstr ""
 "Palvelimen ”%s” osoitteen selvitys epäonnistui: tarvittavia resursseja ei "
 "löytynyt"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1083
+#: mate-dictionary/libgdict/gdict-client-context.c:1075
 #, c-format
 msgid "Lookup failed for host '%s': %s"
 msgstr "Palvelimen ”%s” etsintä epäonnistui: %s"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1117
+#: mate-dictionary/libgdict/gdict-client-context.c:1109
 #, c-format
 msgid "Lookup failed for host '%s': host not found"
 msgstr "Palvelimen ”%s” etsintä epäonnistui: palvelinta ei löydy"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1169
+#: mate-dictionary/libgdict/gdict-client-context.c:1161
 #, c-format
 msgid ""
 "Unable to connect to the dictionary server at '%s:%d'. The server replied "
@@ -2136,7 +2148,7 @@ msgstr ""
 "Sanakirjapalvelimeen osoitteessa ”%s:%d” ei saatu yhteyttä. Palvelin "
 "palautti tilakoodin %d (palvelin pois käytöstä)"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1188
+#: mate-dictionary/libgdict/gdict-client-context.c:1180
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
@@ -2145,47 +2157,47 @@ msgstr ""
 "Sanakirjapalvelimen antamaa vastausta ei voi tulkita\n"
 ": ”%s”"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1217
+#: mate-dictionary/libgdict/gdict-client-context.c:1209
 #, c-format
 msgid "No definitions found for '%s'"
 msgstr "Sanalle ”%s” ei löytynyt määritelmiä"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1232
+#: mate-dictionary/libgdict/gdict-client-context.c:1224
 #, c-format
 msgid "Invalid database '%s'"
 msgstr "Virheellinen tietokanta ”%s”"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1247
+#: mate-dictionary/libgdict/gdict-client-context.c:1239
 #, c-format
 msgid "Invalid strategy '%s'"
 msgstr "Virheellinen hakutapa ”%s”"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1262
+#: mate-dictionary/libgdict/gdict-client-context.c:1254
 #, c-format
 msgid "Bad command '%s'"
 msgstr "Virheellinen komento ”%s”"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1277
+#: mate-dictionary/libgdict/gdict-client-context.c:1269
 #, c-format
 msgid "Bad parameters for command '%s'"
 msgstr "Virheellisiä parametreja komennolle ”%s”"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1292
+#: mate-dictionary/libgdict/gdict-client-context.c:1284
 #, c-format
 msgid "No databases found on dictionary server at '%s'"
 msgstr "Sanakirjapalvelimelta ”%s” ei löytynyt tietokantoja"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1307
+#: mate-dictionary/libgdict/gdict-client-context.c:1299
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
 msgstr "Hakutapoja ei löytynyt sanakirjapalvelimella ”%s”"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1732
+#: mate-dictionary/libgdict/gdict-client-context.c:1724
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
 msgstr "Yhteydenotto sanakirjanpalvelimeen osoitteessa ”%s:%d” epäonnistui"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1771
+#: mate-dictionary/libgdict/gdict-client-context.c:1763
 #, c-format
 msgid ""
 "Error while reading reply from server:\n"
@@ -2194,166 +2206,166 @@ msgstr ""
 "Virhe luettaessa vastausta palvelimelta:\n"
 "%s"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1844
+#: mate-dictionary/libgdict/gdict-client-context.c:1836
 #, c-format
 msgid "Connection timeout for the dictionary server at '%s:%d'"
 msgstr "Yhteydenotto aikakatkaisu sanakirjanpalvelimeen osoitteessa ”%s:%d”"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1878
+#: mate-dictionary/libgdict/gdict-client-context.c:1870
 msgid "No hostname defined for the dictionary server"
 msgstr "Sanakirjapalvelimelle ei annettu verkkonimeä"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1914
-#: mate-dictionary/libgdict/gdict-client-context.c:1929
+#: mate-dictionary/libgdict/gdict-client-context.c:1905
+#: mate-dictionary/libgdict/gdict-client-context.c:1920
 msgid "Unable to create socket"
 msgstr "Pistoketta ei voi luoda"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1955
+#: mate-dictionary/libgdict/gdict-client-context.c:1946
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
 msgstr "Kanavaa ei voi asettaa non-blocking-tilaan: %s"
 
-#: mate-dictionary/libgdict/gdict-client-context.c:1970
+#: mate-dictionary/libgdict/gdict-client-context.c:1961
 #, c-format
 msgid "Unable to connect to the dictionary server at '%s:%d'"
 msgstr "Sanakirjapalvelimeen osoitteessa ”%s:%d” ei saatu yhteyttä"
 
-#: mate-dictionary/libgdict/gdict-context.c:220
+#: mate-dictionary/libgdict/gdict-context.c:221
 msgid "Local Only"
 msgstr "Vain paikallinen"
 
-#: mate-dictionary/libgdict/gdict-context.c:221
+#: mate-dictionary/libgdict/gdict-context.c:222
 msgid "Whether the context uses only local dictionaries or not"
 msgstr "Käyttääkö konteksti ainoastaan paikallisia sanakirjoja"
 
-#: mate-dictionary/libgdict/gdict-database-chooser.c:376
+#: mate-dictionary/libgdict/gdict-database-chooser.c:375
 msgid "Reload the list of available databases"
 msgstr "Lataa luettelo käytettävissä olevista tietokannoista uudestaan"
 
-#: mate-dictionary/libgdict/gdict-database-chooser.c:388
+#: mate-dictionary/libgdict/gdict-database-chooser.c:387
 msgid "Clear the list of available databases"
 msgstr "Tyhjennä luettelo käytettävissä olevista tietokannoista"
 
-#: mate-dictionary/libgdict/gdict-database-chooser.c:836
-#: mate-dictionary/libgdict/gdict-speller.c:773
+#: mate-dictionary/libgdict/gdict-database-chooser.c:835
+#: mate-dictionary/libgdict/gdict-speller.c:772
 #: mate-dictionary/libgdict/gdict-strategy-chooser.c:783
 msgid "Error while matching"
 msgstr "Virhe etsittäessä vastaavuuksia"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:1314
+#: mate-dictionary/libgdict/gdict-defbox.c:1316
 msgid "F_ind:"
 msgstr "_Etsi:"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:1327
+#: mate-dictionary/libgdict/gdict-defbox.c:1329
 msgid "_Previous"
 msgstr "_Edellinen"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:1335
+#: mate-dictionary/libgdict/gdict-defbox.c:1337
 msgid "_Next"
 msgstr "Seu_raava"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:2483
+#: mate-dictionary/libgdict/gdict-defbox.c:2485
 msgid "Error while looking up definition"
 msgstr "Virhe etsittäessä määritelmää"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:2525
-#: mate-dictionary/libgdict/gdict-speller.c:731
+#: mate-dictionary/libgdict/gdict-defbox.c:2527
+#: mate-dictionary/libgdict/gdict-speller.c:730
 msgid "Another search is in progress"
 msgstr "Toinen haku on jo käynnissä"
 
-#: mate-dictionary/libgdict/gdict-defbox.c:2526
-#: mate-dictionary/libgdict/gdict-speller.c:732
+#: mate-dictionary/libgdict/gdict-defbox.c:2528
+#: mate-dictionary/libgdict/gdict-speller.c:731
 msgid "Please wait until the current search ends."
 msgstr "Odota, että käynnissä oleva haku valmistuu."
 
-#: mate-dictionary/libgdict/gdict-defbox.c:2565
+#: mate-dictionary/libgdict/gdict-defbox.c:2568
 msgid "Error while retrieving the definition"
 msgstr "Virhe haettaessa määritelmää"
 
-#: mate-dictionary/libgdict/gdict-source.c:229
+#: mate-dictionary/libgdict/gdict-source.c:226
 msgid "Filename"
 msgstr "Tiedostonimi"
 
-#: mate-dictionary/libgdict/gdict-source.c:230
+#: mate-dictionary/libgdict/gdict-source.c:227
 msgid "The filename used by this dictionary source"
 msgstr "Sanakirjan lähteen käyttämän tiedoston nimi"
 
-#: mate-dictionary/libgdict/gdict-source.c:244
+#: mate-dictionary/libgdict/gdict-source.c:241
 msgid "The display name of this dictionary source"
 msgstr "Sanakirjan lähteen näytettävä nimi"
 
-#: mate-dictionary/libgdict/gdict-source.c:257
+#: mate-dictionary/libgdict/gdict-source.c:254
 msgid "Description"
 msgstr "Kuvaus"
 
-#: mate-dictionary/libgdict/gdict-source.c:258
+#: mate-dictionary/libgdict/gdict-source.c:255
 msgid "The description of this dictionary source"
 msgstr "Sanakirjan lähteen kuvaus"
 
-#: mate-dictionary/libgdict/gdict-source.c:271
-#: mate-dictionary/libgdict/gdict-speller.c:375
+#: mate-dictionary/libgdict/gdict-source.c:268
+#: mate-dictionary/libgdict/gdict-speller.c:374
 msgid "Database"
 msgstr "Tietokanta"
 
-#: mate-dictionary/libgdict/gdict-source.c:272
+#: mate-dictionary/libgdict/gdict-source.c:269
 msgid "The default database of this dictionary source"
 msgstr "Sanakirjan lähteen oletustietokanta"
 
-#: mate-dictionary/libgdict/gdict-source.c:285
-#: mate-dictionary/libgdict/gdict-speller.c:382
+#: mate-dictionary/libgdict/gdict-source.c:282
+#: mate-dictionary/libgdict/gdict-speller.c:381
 msgid "Strategy"
 msgstr "Hakutapa"
 
-#: mate-dictionary/libgdict/gdict-source.c:286
+#: mate-dictionary/libgdict/gdict-source.c:283
 msgid "The default strategy of this dictionary source"
 msgstr "Sanakirjan lähteen kanssa käytettävä oletushakutapa"
 
-#: mate-dictionary/libgdict/gdict-source.c:299
+#: mate-dictionary/libgdict/gdict-source.c:296
 msgid "Transport"
 msgstr "Siirtoyhteys"
 
-#: mate-dictionary/libgdict/gdict-source.c:300
+#: mate-dictionary/libgdict/gdict-source.c:297
 msgid "The transport mechanism used by this dictionary source"
 msgstr "Tämän sanakirjan lähteen käyttämä siirtoyhteystapa"
 
-#: mate-dictionary/libgdict/gdict-source.c:314
-#: mate-dictionary/libgdict/gdict-speller.c:368
+#: mate-dictionary/libgdict/gdict-source.c:311
+#: mate-dictionary/libgdict/gdict-speller.c:367
 msgid "Context"
 msgstr "Konteksti"
 
-#: mate-dictionary/libgdict/gdict-source.c:315
+#: mate-dictionary/libgdict/gdict-source.c:312
 msgid "The GdictContext bound to this source"
 msgstr "Tähän lähteeseen liitetty GdictContext"
 
-#: mate-dictionary/libgdict/gdict-source.c:408
+#: mate-dictionary/libgdict/gdict-source.c:404
 #, c-format
 msgid "Invalid transport type '%d'"
 msgstr "Virheellinen siirtoyhteyden tyyppi ”%d”"
 
-#: mate-dictionary/libgdict/gdict-source.c:436
+#: mate-dictionary/libgdict/gdict-source.c:432
 #, c-format
 msgid "No '%s' group found inside the dictionary source definition"
 msgstr "Ryhmää ”%s” ei löydy sanakirjan lähteen määrittelystä"
 
-#: mate-dictionary/libgdict/gdict-source.c:452
-#: mate-dictionary/libgdict/gdict-source.c:476
-#: mate-dictionary/libgdict/gdict-source.c:500
-#: mate-dictionary/libgdict/gdict-source.c:525
+#: mate-dictionary/libgdict/gdict-source.c:448
+#: mate-dictionary/libgdict/gdict-source.c:472
+#: mate-dictionary/libgdict/gdict-source.c:496
+#: mate-dictionary/libgdict/gdict-source.c:521
 #, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
 msgstr "Avainta ”%s” ei löydy sanakirjan lähteen määrittelystä: %s"
 
-#: mate-dictionary/libgdict/gdict-source.c:550
+#: mate-dictionary/libgdict/gdict-source.c:546
 #, c-format
 msgid ""
 "Unable to get the '%s' key inside the dictionary source definition file: %s"
 msgstr "Avainta ”%s” ei löydy sanakirjan lähteen määrittelytiedostosta: %s"
 
-#: mate-dictionary/libgdict/gdict-source.c:736
+#: mate-dictionary/libgdict/gdict-source.c:732
 msgid "Dictionary source does not have name"
 msgstr "Sanakirjan lähteellä ei ole nimeä"
 
-#: mate-dictionary/libgdict/gdict-source.c:745
+#: mate-dictionary/libgdict/gdict-source.c:741
 #, c-format
 msgid "Dictionary source '%s' has invalid transport '%s'"
 msgstr "Sanakirjalähteellä ”%s” on virheellinen siirtotapa ”%s”"
@@ -2362,35 +2374,35 @@ msgstr "Sanakirjalähteellä ”%s” on virheellinen siirtotapa ”%s”"
 msgid "Reload the list of available sources"
 msgstr "Lataa luettelo käytettävissä olevista lähteistä uudestaan"
 
-#: mate-dictionary/libgdict/gdict-source-loader.c:163
+#: mate-dictionary/libgdict/gdict-source-loader.c:160
 msgid "Paths"
 msgstr "Polut"
 
-#: mate-dictionary/libgdict/gdict-source-loader.c:164
+#: mate-dictionary/libgdict/gdict-source-loader.c:161
 msgid "Search paths used by this object"
 msgstr "Kohteelle käytettävät hakupolut"
 
-#: mate-dictionary/libgdict/gdict-source-loader.c:176
+#: mate-dictionary/libgdict/gdict-source-loader.c:173
 msgid "Sources"
 msgstr "Lähteet"
 
-#: mate-dictionary/libgdict/gdict-source-loader.c:177
+#: mate-dictionary/libgdict/gdict-source-loader.c:174
 msgid "Dictionary sources found"
 msgstr "Sanakirjan lähteitä löytyi"
 
-#: mate-dictionary/libgdict/gdict-speller.c:347
+#: mate-dictionary/libgdict/gdict-speller.c:346
 msgid "Clear the list of similar words"
 msgstr "Tyhjennä luettelo samankaltaisista sanoista"
 
-#: mate-dictionary/libgdict/gdict-speller.c:369
+#: mate-dictionary/libgdict/gdict-speller.c:368
 msgid "The GdictContext object used to get the word definition"
 msgstr "GdictContext-olio, jota käytetään sanan määritelmän etsintään"
 
-#: mate-dictionary/libgdict/gdict-speller.c:376
+#: mate-dictionary/libgdict/gdict-speller.c:375
 msgid "The database used to query the GdictContext"
 msgstr "GdictContext-olion kyselyssä käytettävä tietokanta"
 
-#: mate-dictionary/libgdict/gdict-speller.c:383
+#: mate-dictionary/libgdict/gdict-speller.c:382
 msgid "The strategy used to query the GdictContext"
 msgstr "GdictContext-olion kyselyssä käytettävä hakutapa"
 
@@ -2427,9 +2439,9 @@ msgstr "Näytä GDict-valinnat"
 msgid "Look up words or terms in a dictionary source."
 msgstr ""
 
-#: mate-dictionary/src/gdict-about.c:82 mate-dictionary/src/gdict-app.c:363
-#: mate-dictionary/src/gdict-window.c:580
-#: mate-dictionary/src/gdict-window.c:1864
+#: mate-dictionary/src/gdict-about.c:82 mate-dictionary/src/gdict-app.c:360
+#: mate-dictionary/src/gdict-window.c:578
+#: mate-dictionary/src/gdict-window.c:1862
 msgid "Dictionary"
 msgstr "Sanakirja"
 
@@ -2446,7 +2458,7 @@ msgstr ""
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
 #. * keep the new lines.
-#: mate-dictionary/src/gdict-app.c:207
+#: mate-dictionary/src/gdict-app.c:203
 #, c-format
 msgid ""
 "Definition for '%s'\n"
@@ -2459,20 +2471,20 @@ msgstr ""
 "\n"
 "%s\n"
 
-#: mate-dictionary/src/gdict-app.c:221
+#: mate-dictionary/src/gdict-app.c:217
 #, c-format
 msgid "Error: %s\n"
 msgstr "Virhe: %s\n"
 
-#: mate-dictionary/src/gdict-app.c:247
+#: mate-dictionary/src/gdict-app.c:243
 msgid "See mate-dictionary --help for usage\n"
 msgstr "Lisätietoja saa komennolla mate-dictionary --help\n"
 
-#: mate-dictionary/src/gdict-app.c:260
+#: mate-dictionary/src/gdict-app.c:256
 msgid "Unable to find a suitable dictionary source"
 msgstr "Sopivaa sanakirjan lähdettä ei löydy"
 
-#: mate-dictionary/src/gdict-app.c:294
+#: mate-dictionary/src/gdict-app.c:290
 #, c-format
 msgid ""
 "Error while looking up the definition of \"%s\":\n"
@@ -2481,171 +2493,171 @@ msgstr ""
 "Virhe etsittäessä sanan ”%s” määritelmää:\n"
 "%s"
 
-#: mate-dictionary/src/gdict-app.c:323 mate-dictionary/src/gdict-app.c:333
+#: mate-dictionary/src/gdict-app.c:319 mate-dictionary/src/gdict-app.c:329
 msgid "Words to look up"
 msgstr "Etsittävät sanat"
 
-#: mate-dictionary/src/gdict-app.c:323 mate-dictionary/src/gdict-app.c:325
-#: mate-dictionary/src/gdict-app.c:333
+#: mate-dictionary/src/gdict-app.c:319 mate-dictionary/src/gdict-app.c:321
+#: mate-dictionary/src/gdict-app.c:329
 msgid "word"
 msgstr "sana"
 
-#: mate-dictionary/src/gdict-app.c:325
+#: mate-dictionary/src/gdict-app.c:321
 msgid "Words to match"
 msgstr "Etsittävät sanat"
 
-#: mate-dictionary/src/gdict-app.c:327
+#: mate-dictionary/src/gdict-app.c:323
 msgid "Dictionary source to use"
 msgstr "Käytettävä sanakirjan lähde"
 
-#: mate-dictionary/src/gdict-app.c:327
+#: mate-dictionary/src/gdict-app.c:323
 msgid "source"
 msgstr "lähde"
 
-#: mate-dictionary/src/gdict-app.c:329
+#: mate-dictionary/src/gdict-app.c:325
 msgid "Print result to the console"
 msgstr "Näytä tulos pääteikkunassa"
 
-#: mate-dictionary/src/gdict-app.c:331
+#: mate-dictionary/src/gdict-app.c:327
 msgid "Database to use"
 msgstr "Käytettävä tietokanta"
 
-#: mate-dictionary/src/gdict-app.c:331
+#: mate-dictionary/src/gdict-app.c:327
 msgid "db"
 msgstr "db"
 
-#: mate-dictionary/src/gdict-app.c:343
+#: mate-dictionary/src/gdict-app.c:339
 msgid " - Look up words in dictionaries"
 msgstr " - Etsi sanoja sanakirjoista"
 
-#: mate-dictionary/src/gdict-applet.c:194
-#: mate-dictionary/src/gdict-window.c:935
+#: mate-dictionary/src/gdict-applet.c:193
+#: mate-dictionary/src/gdict-window.c:933
 msgid "Save a Copy"
 msgstr "Tallenna kopio"
 
-#: mate-dictionary/src/gdict-applet.c:204
-#: mate-dictionary/src/gdict-window.c:945
+#: mate-dictionary/src/gdict-applet.c:203
+#: mate-dictionary/src/gdict-window.c:943
 msgid "Untitled document"
 msgstr "Nimeämätön asiakirja"
 
-#: mate-dictionary/src/gdict-applet.c:225
-#: mate-dictionary/src/gdict-window.c:966
+#: mate-dictionary/src/gdict-applet.c:224
+#: mate-dictionary/src/gdict-window.c:964
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "Virhe kirjoitettaessa tiedostoon ”%s”"
 
-#: mate-dictionary/src/gdict-applet.c:350
+#: mate-dictionary/src/gdict-applet.c:349
 msgid "Clear the definitions found"
 msgstr "Tyhjennä löytyneet määritelmät"
 
-#: mate-dictionary/src/gdict-applet.c:352
+#: mate-dictionary/src/gdict-applet.c:351
 msgid "Clear definition"
 msgstr "Tyhjennä määritelmä"
 
-#: mate-dictionary/src/gdict-applet.c:353
+#: mate-dictionary/src/gdict-applet.c:352
 msgid "Clear the text of the definition"
 msgstr "Tyhjennä määritelmän teksti"
 
-#: mate-dictionary/src/gdict-applet.c:365
+#: mate-dictionary/src/gdict-applet.c:364
 msgid "Print the definitions found"
 msgstr "Tulosta löytyneet määritelmät"
 
-#: mate-dictionary/src/gdict-applet.c:367
+#: mate-dictionary/src/gdict-applet.c:366
 msgid "Print definition"
 msgstr "Tulosta määritelmä"
 
-#: mate-dictionary/src/gdict-applet.c:368
+#: mate-dictionary/src/gdict-applet.c:367
 msgid "Print the text of the definition"
 msgstr "Tulosta määritelmän teksti"
 
-#: mate-dictionary/src/gdict-applet.c:380
+#: mate-dictionary/src/gdict-applet.c:379
 msgid "Save the definitions found"
 msgstr "Tallenna löytyneet määritelmät"
 
-#: mate-dictionary/src/gdict-applet.c:382
+#: mate-dictionary/src/gdict-applet.c:381
 msgid "Save definition"
 msgstr "Tallenna määritelmä"
 
-#: mate-dictionary/src/gdict-applet.c:383
+#: mate-dictionary/src/gdict-applet.c:382
 msgid "Save the text of the definition to a file"
 msgstr "Tallenna määritelmän teksti tiedostoon"
 
-#: mate-dictionary/src/gdict-applet.c:520
+#: mate-dictionary/src/gdict-applet.c:519
 msgid "Click to view the dictionary window"
 msgstr "Napsauta näyttääksesi sanakirjaikkuna"
 
-#: mate-dictionary/src/gdict-applet.c:522
+#: mate-dictionary/src/gdict-applet.c:521
 msgid "Toggle dictionary window"
 msgstr "Vaihtele sanakirjaikkunan näyttämistä"
 
-#: mate-dictionary/src/gdict-applet.c:523
+#: mate-dictionary/src/gdict-applet.c:522
 msgid "Show or hide the definition window"
 msgstr "Piilota tai näytä määritelmäikkuna"
 
-#: mate-dictionary/src/gdict-applet.c:574
+#: mate-dictionary/src/gdict-applet.c:573
 msgid "Type the word you want to look up"
 msgstr "Kirjoita sanat, joita haluat hakea"
 
-#: mate-dictionary/src/gdict-applet.c:576
+#: mate-dictionary/src/gdict-applet.c:575
 msgid "Dictionary entry"
 msgstr "Sanakirjan kohta"
 
-#: mate-dictionary/src/gdict-applet.c:577
+#: mate-dictionary/src/gdict-applet.c:576
 msgid "Look up words in dictionaries"
 msgstr "Etsi sanoja sanakirjoista"
 
-#: mate-dictionary/src/gdict-applet.c:705
-#: mate-dictionary/src/gdict-window.c:1077
+#: mate-dictionary/src/gdict-applet.c:704
+#: mate-dictionary/src/gdict-window.c:1075
 msgid "Dictionary Preferences"
 msgstr "Sanakirjan asetukset"
 
-#: mate-dictionary/src/gdict-applet.c:729
-#: mate-dictionary/src/gdict-pref-dialog.c:496
-#: mate-dictionary/src/gdict-source-dialog.c:477
-#: mate-dictionary/src/gdict-window.c:1224
+#: mate-dictionary/src/gdict-applet.c:728
+#: mate-dictionary/src/gdict-pref-dialog.c:494
+#: mate-dictionary/src/gdict-source-dialog.c:476
+#: mate-dictionary/src/gdict-window.c:1222
 msgid "There was an error while displaying help"
 msgstr "Ohjetta näytettäessä tapahtui virhe"
 
-#: mate-dictionary/src/gdict-applet.c:868
-#: mate-dictionary/src/gdict-window.c:495
+#: mate-dictionary/src/gdict-applet.c:867
+#: mate-dictionary/src/gdict-window.c:493
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "Nimellä ”%s” ei löydy sanakirjan lähdettä"
 
-#: mate-dictionary/src/gdict-applet.c:872
-#: mate-dictionary/src/gdict-window.c:499
+#: mate-dictionary/src/gdict-applet.c:871
+#: mate-dictionary/src/gdict-window.c:497
 msgid "Unable to find dictionary source"
 msgstr "Sanakirjan lähdettä ei löydy"
 
-#: mate-dictionary/src/gdict-applet.c:888
-#: mate-dictionary/src/gdict-window.c:515
+#: mate-dictionary/src/gdict-applet.c:887
+#: mate-dictionary/src/gdict-window.c:513
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "Lähteelle ”%s” ei löydy kontekstia"
 
-#: mate-dictionary/src/gdict-applet.c:892
-#: mate-dictionary/src/gdict-window.c:519
+#: mate-dictionary/src/gdict-applet.c:891
+#: mate-dictionary/src/gdict-window.c:517
 msgid "Unable to create a context"
 msgstr "Kontekstia ei voi luoda"
 
-#: mate-dictionary/src/gdict-applet.c:1158
+#: mate-dictionary/src/gdict-applet.c:1157
 msgid "_Look Up Selected Text"
 msgstr "_Etsi valittu teksti"
 
-#: mate-dictionary/src/gdict-applet.c:1161
+#: mate-dictionary/src/gdict-applet.c:1160
 msgid "Cl_ear"
 msgstr "_Tyhjennä"
 
-#: mate-dictionary/src/gdict-applet.c:1164
+#: mate-dictionary/src/gdict-applet.c:1163
 msgid "_Print"
 msgstr "T_ulosta:"
 
-#: mate-dictionary/src/gdict-applet.c:1167
+#: mate-dictionary/src/gdict-applet.c:1166
 #: mate-screenshot/data/mate-screenshot.ui:109
 msgid "_Save"
 msgstr "_Tallenna"
 
-#: mate-dictionary/src/gdict-applet.c:1170
+#: mate-dictionary/src/gdict-applet.c:1169
 msgid "Preferences"
 msgstr "Asetukset"
 
@@ -2660,42 +2672,42 @@ msgstr "Tiedostoa ”%s” ei voi nimetä uudestaan nimelle ”%s”: %s"
 msgid "Unable to create the data directory '%s': %s"
 msgstr "Hakemistoa ”%s” ei voi luoda: %s"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:238
-#: mate-dictionary/src/gdict-pref-dialog.c:427
+#: mate-dictionary/src/gdict-pref-dialog.c:236
+#: mate-dictionary/src/gdict-pref-dialog.c:425
 msgid "Edit Dictionary Source"
 msgstr "Muokkaa sanakirjan lähdettä"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:302
+#: mate-dictionary/src/gdict-pref-dialog.c:300
 msgid "Add Dictionary Source"
 msgstr "Lisää sanakirjan lähde"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:347
+#: mate-dictionary/src/gdict-pref-dialog.c:345
 #, c-format
 msgid "Remove \"%s\"?"
 msgstr "Poistetaanko ”%s”?"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:349
+#: mate-dictionary/src/gdict-pref-dialog.c:347
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "Tämä poistaa sanakirjan lähteen pysyvästi listalta."
 
-#: mate-dictionary/src/gdict-pref-dialog.c:379
+#: mate-dictionary/src/gdict-pref-dialog.c:377
 #, c-format
 msgid "Unable to remove source '%s'"
 msgstr "Lähdettä ”%s” ei voi poistaa"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:713
+#: mate-dictionary/src/gdict-pref-dialog.c:711
 msgid "Add a new dictionary source"
 msgstr "Lisää uusi sanakirjan lähde"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:719
+#: mate-dictionary/src/gdict-pref-dialog.c:717
 msgid "Remove the currently selected dictionary source"
 msgstr "Poista valittu sanakirjan lähde"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:725
+#: mate-dictionary/src/gdict-pref-dialog.c:723
 msgid "Edit the currently selected dictionary source"
 msgstr "Muokkaa valittuna olevaa sanastolähdettä"
 
-#: mate-dictionary/src/gdict-pref-dialog.c:733
+#: mate-dictionary/src/gdict-pref-dialog.c:731
 msgid "Set the font used for printing the definitions"
 msgstr "Aseta määritelmien tulostuksessa käytetty fontti"
 
@@ -2705,199 +2717,199 @@ msgid "Unable to display the preview: %s"
 msgstr "Esikatselua ei voi näyttää: %s"
 
 #: mate-dictionary/src/gdict-source-dialog.c:339
-#: mate-dictionary/src/gdict-source-dialog.c:432
+#: mate-dictionary/src/gdict-source-dialog.c:431
 msgid "Unable to create a source file"
 msgstr "Lähdetiedosto ei voi luoda"
 
 #: mate-dictionary/src/gdict-source-dialog.c:357
-#: mate-dictionary/src/gdict-source-dialog.c:450
+#: mate-dictionary/src/gdict-source-dialog.c:449
 msgid "Unable to save source file"
 msgstr "Lähdetiedostoa ei voi tallentaa"
 
-#: mate-dictionary/src/gdict-window.c:290
+#: mate-dictionary/src/gdict-window.c:288
 #, c-format
 msgid "Searching for '%s'..."
 msgstr "Etsitään sanaa ”%s”…"
 
-#: mate-dictionary/src/gdict-window.c:322
-#: mate-dictionary/src/gdict-window.c:379
+#: mate-dictionary/src/gdict-window.c:320
+#: mate-dictionary/src/gdict-window.c:377
 msgid "No definitions found"
 msgstr "Määritelmiä ei löytynyt"
 
-#: mate-dictionary/src/gdict-window.c:324
+#: mate-dictionary/src/gdict-window.c:322
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
 msgstr[0] ""
 msgstr[1] ""
 
-#: mate-dictionary/src/gdict-window.c:578
+#: mate-dictionary/src/gdict-window.c:576
 #, c-format
 msgid "%s - Dictionary"
 msgstr "%s - sanakirja"
 
-#: mate-dictionary/src/gdict-window.c:1261
+#: mate-dictionary/src/gdict-window.c:1259
 msgid "_Go"
 msgstr "_Siirry"
 
-#: mate-dictionary/src/gdict-window.c:1265
+#: mate-dictionary/src/gdict-window.c:1263
 #: mate-screenshot/data/mate-screenshot.ui:58
 msgid "_New"
 msgstr "_Uusi"
 
-#: mate-dictionary/src/gdict-window.c:1266
+#: mate-dictionary/src/gdict-window.c:1264
 msgid "New look up"
 msgstr "Uusi haku"
 
-#: mate-dictionary/src/gdict-window.c:1267
+#: mate-dictionary/src/gdict-window.c:1265
 msgid "_Save a Copy..."
 msgstr "Tallenna _kopio…"
 
-#: mate-dictionary/src/gdict-window.c:1269
+#: mate-dictionary/src/gdict-window.c:1267
 msgid "P_review..."
 msgstr "_Esikatselu…"
 
-#: mate-dictionary/src/gdict-window.c:1270
+#: mate-dictionary/src/gdict-window.c:1268
 msgid "Preview this document"
 msgstr "Esikatsele asiakirjaa"
 
-#: mate-dictionary/src/gdict-window.c:1271
+#: mate-dictionary/src/gdict-window.c:1269
 msgid "_Print..."
 msgstr "T_ulosta…"
 
-#: mate-dictionary/src/gdict-window.c:1272
+#: mate-dictionary/src/gdict-window.c:1270
 msgid "Print this document"
 msgstr "Tulosta tämä asiakirja"
 
-#: mate-dictionary/src/gdict-window.c:1281
+#: mate-dictionary/src/gdict-window.c:1279
 msgid "_Find"
 msgstr "_Etsi"
 
-#: mate-dictionary/src/gdict-window.c:1282
+#: mate-dictionary/src/gdict-window.c:1280
 msgid "Find a word or phrase in the document"
 msgstr "Etsi sanaa tai lausetta asiakirjasta"
 
-#: mate-dictionary/src/gdict-window.c:1284
+#: mate-dictionary/src/gdict-window.c:1282
 msgid "Find Ne_xt"
 msgstr "Etsi _seuraava"
 
-#: mate-dictionary/src/gdict-window.c:1286
+#: mate-dictionary/src/gdict-window.c:1284
 msgid "Find Pre_vious"
 msgstr "Etsi edellinen"
 
-#: mate-dictionary/src/gdict-window.c:1288
+#: mate-dictionary/src/gdict-window.c:1286
 msgid "_Preferences"
 msgstr "_Asetukset"
 
-#: mate-dictionary/src/gdict-window.c:1292
+#: mate-dictionary/src/gdict-window.c:1290
 msgid "_Previous Definition"
 msgstr "_Edellinen määritelmä"
 
-#: mate-dictionary/src/gdict-window.c:1293
+#: mate-dictionary/src/gdict-window.c:1291
 msgid "Go to the previous definition"
 msgstr "Siirry edelliseen määritelmään"
 
-#: mate-dictionary/src/gdict-window.c:1294
+#: mate-dictionary/src/gdict-window.c:1292
 msgid "_Next Definition"
 msgstr "_Seuraava määritelmä"
 
-#: mate-dictionary/src/gdict-window.c:1295
+#: mate-dictionary/src/gdict-window.c:1293
 msgid "Go to the next definition"
 msgstr "Siirry seuraavaan määritelmään"
 
-#: mate-dictionary/src/gdict-window.c:1296
+#: mate-dictionary/src/gdict-window.c:1294
 msgid "_First Definition"
 msgstr "_Ensimmäinen määritelmä"
 
-#: mate-dictionary/src/gdict-window.c:1297
+#: mate-dictionary/src/gdict-window.c:1295
 msgid "Go to the first definition"
 msgstr "Siirry ensimmäiseen määritelmään"
 
-#: mate-dictionary/src/gdict-window.c:1298
+#: mate-dictionary/src/gdict-window.c:1296
 msgid "_Last Definition"
 msgstr "_Viimeinen määritelmä"
 
-#: mate-dictionary/src/gdict-window.c:1299
+#: mate-dictionary/src/gdict-window.c:1297
 msgid "Go to the last definition"
 msgstr "Siirry viimeiseen määritelmään"
 
-#: mate-dictionary/src/gdict-window.c:1302
+#: mate-dictionary/src/gdict-window.c:1300
 msgid "Similar _Words"
 msgstr "_Samankaltaiset sanat"
 
-#: mate-dictionary/src/gdict-window.c:1304
+#: mate-dictionary/src/gdict-window.c:1302
 msgid "Dictionary Sources"
 msgstr "Sanakirjalähteet"
 
-#: mate-dictionary/src/gdict-window.c:1306
+#: mate-dictionary/src/gdict-window.c:1304
 msgid "Available _Databases"
 msgstr "Mahdolliset _tietokannat"
 
-#: mate-dictionary/src/gdict-window.c:1308
+#: mate-dictionary/src/gdict-window.c:1306
 msgid "Available St_rategies"
 msgstr "Mahdolliset _hakutavat"
 
-#: mate-dictionary/src/gdict-window.c:1325
+#: mate-dictionary/src/gdict-window.c:1323
 msgid "_Sidebar"
 msgstr "_Sivupalkki"
 
-#: mate-dictionary/src/gdict-window.c:1327
+#: mate-dictionary/src/gdict-window.c:1325
 msgid "S_tatusbar"
 msgstr "_Tilarivi"
 
-#: mate-dictionary/src/gdict-window.c:1392
+#: mate-dictionary/src/gdict-window.c:1390
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "Sanakirjalähde ”%s” valittu"
 
-#: mate-dictionary/src/gdict-window.c:1413
+#: mate-dictionary/src/gdict-window.c:1411
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "Hakutapa ”%s” valittu"
 
-#: mate-dictionary/src/gdict-window.c:1433
+#: mate-dictionary/src/gdict-window.c:1431
 #, c-format
 msgid "Database `%s' selected"
 msgstr "Tietokanta ”%s” valittu"
 
-#: mate-dictionary/src/gdict-window.c:1453
+#: mate-dictionary/src/gdict-window.c:1451
 #, c-format
 msgid "Word `%s' selected"
 msgstr "Sana ”%s” valittu"
 
-#: mate-dictionary/src/gdict-window.c:1478
+#: mate-dictionary/src/gdict-window.c:1476
 msgid "Double-click on the word to look up"
 msgstr "Kaksoisnapsauta sanaa hakeaksesi sitä"
 
-#: mate-dictionary/src/gdict-window.c:1484
+#: mate-dictionary/src/gdict-window.c:1482
 msgid "Double-click on the matching strategy to use"
 msgstr "Kaksoisnapsauta käytettävää täsmäystapaa"
 
-#: mate-dictionary/src/gdict-window.c:1489
+#: mate-dictionary/src/gdict-window.c:1487
 msgid "Double-click on the source to use"
 msgstr "Käytä lähdettä kaksoisnapsauttamalla"
 
-#: mate-dictionary/src/gdict-window.c:1498
+#: mate-dictionary/src/gdict-window.c:1496
 msgid "Double-click on the database to use"
 msgstr "Kaksoisnapsauta käytettävää tietokantaa"
 
-#: mate-dictionary/src/gdict-window.c:1670
+#: mate-dictionary/src/gdict-window.c:1668
 msgid "Look _up:"
 msgstr "_Etsi sanaa:"
 
-#: mate-dictionary/src/gdict-window.c:1745
+#: mate-dictionary/src/gdict-window.c:1743
 msgid "Similar words"
 msgstr "Samankaltaiset sanat"
 
-#: mate-dictionary/src/gdict-window.c:1758
+#: mate-dictionary/src/gdict-window.c:1756
 msgid "Available dictionaries"
 msgstr "Saatavilla olevat sanakirjat"
 
-#: mate-dictionary/src/gdict-window.c:1776
+#: mate-dictionary/src/gdict-window.c:1774
 msgid "Available strategies"
 msgstr "Saatavilla olevat täsmäystavat"
 
-#: mate-dictionary/src/gdict-window.c:1792
+#: mate-dictionary/src/gdict-window.c:1790
 msgid "Dictionary sources"
 msgstr "Sanakirjalähteet"
 
@@ -2994,17 +3006,17 @@ msgstr ""
 msgid "Attach and mount one or more disk image files."
 msgstr ""
 
-#: mate-disk-image-mounter/src/main.c:234
+#: mate-disk-image-mounter/src/main.c:236
 #, c-format
 msgid "Cannot open `%s' - maybe the volume isn't mounted?"
 msgstr ""
 
-#: mate-disk-image-mounter/src/main.c:241
+#: mate-disk-image-mounter/src/main.c:243
 #, c-format
 msgid "Error opening `%s': %m"
 msgstr ""
 
-#: mate-disk-image-mounter/src/main.c:262
+#: mate-disk-image-mounter/src/main.c:264
 #, c-format
 msgid "Error attaching disk image: %s (%s, %d)"
 msgstr ""
@@ -3142,7 +3154,7 @@ msgid "Grab _after a delay of"
 msgstr "Kaappaa _viiveellä"
 
 #: mate-screenshot/src/mate-screenshot.c:500
-#: mate-screenshot/src/mate-screenshot.c:1320
+#: mate-screenshot/src/mate-screenshot.c:1319
 msgid "seconds"
 msgstr "sekuntia"
 
@@ -3169,75 +3181,75 @@ msgstr ""
 "Virhe oli %s\n"
 "Valitse joku muu sijainti ja yritä uudestaan."
 
-#: mate-screenshot/src/mate-screenshot.c:796
+#: mate-screenshot/src/mate-screenshot.c:795
 msgid "Screenshot taken"
 msgstr "Kuvakaappaus otettu"
 
-#: mate-screenshot/src/mate-screenshot.c:851
+#: mate-screenshot/src/mate-screenshot.c:850
 msgid "Unable to take a screenshot of the current window"
 msgstr "Nykyisestä ikkunasta ei voitu ottaa kuvakaappausta"
 
-#: mate-screenshot/src/mate-screenshot.c:916
+#: mate-screenshot/src/mate-screenshot.c:915
 #, c-format
 msgid "Screenshot at %s.png"
 msgstr "Kuvakaappaus%s.png"
 
-#: mate-screenshot/src/mate-screenshot.c:923
+#: mate-screenshot/src/mate-screenshot.c:922
 #, c-format
 msgid "Screenshot at %s - %d.png"
 msgstr "Kuvakaappaus%s-%d.png"
 
-#: mate-screenshot/src/mate-screenshot.c:1315
+#: mate-screenshot/src/mate-screenshot.c:1314
 msgid "Grab a window instead of the entire screen"
 msgstr "Kaappaa kuva ikkunasta koko ruudun sijaan"
 
-#: mate-screenshot/src/mate-screenshot.c:1316
+#: mate-screenshot/src/mate-screenshot.c:1315
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Kaappa alue näytöltä koko ruudun sijaan"
 
-#: mate-screenshot/src/mate-screenshot.c:1317
+#: mate-screenshot/src/mate-screenshot.c:1316
 msgid "Send grabbed area directly to the clipboard"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1318
+#: mate-screenshot/src/mate-screenshot.c:1317
 msgid "Include the window border with the screenshot"
 msgstr "Kaappaa myös ikkunan kehykset mukaan kuvaan"
 
-#: mate-screenshot/src/mate-screenshot.c:1319
+#: mate-screenshot/src/mate-screenshot.c:1318
 msgid "Remove the window border from the screenshot"
 msgstr "Poista ikkunan kehykset kuvakaappauksesta"
 
-#: mate-screenshot/src/mate-screenshot.c:1320
+#: mate-screenshot/src/mate-screenshot.c:1319
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Kaappaa kuva annetun viiveen (sekuntia) jälkeen"
 
-#: mate-screenshot/src/mate-screenshot.c:1321
+#: mate-screenshot/src/mate-screenshot.c:1320
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Reunoihin lisättävä tehoste (varjo, reuna tai ei mitään)"
 
-#: mate-screenshot/src/mate-screenshot.c:1321
+#: mate-screenshot/src/mate-screenshot.c:1320
 msgid "effect"
 msgstr "tehoste"
 
-#: mate-screenshot/src/mate-screenshot.c:1322
+#: mate-screenshot/src/mate-screenshot.c:1321
 msgid "Interactively set options"
 msgstr "Aseta valinnat interaktiivisesti"
 
-#: mate-screenshot/src/mate-screenshot.c:1323
+#: mate-screenshot/src/mate-screenshot.c:1322
 msgid "Print version information and exit"
 msgstr "Tulosta versiotiedot ja poistu"
 
-#: mate-screenshot/src/mate-screenshot.c:1334
+#: mate-screenshot/src/mate-screenshot.c:1333
 msgid "Take a picture of the screen"
 msgstr "Ota kuva näytöstä"
 
-#: mate-screenshot/src/mate-screenshot.c:1357
+#: mate-screenshot/src/mate-screenshot.c:1356
 msgid ""
 "Conflicting options: --clipboard and --interactive should not be used at the"
 " same time.\n"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1363
+#: mate-screenshot/src/mate-screenshot.c:1362
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"
@@ -3245,7 +3257,7 @@ msgstr ""
 "Ristiriitaiset valitsimet: et voi käyttää valistimia --window ja --area "
 "samaan aikaan.\n"
 
-#: mate-screenshot/src/screenshot-dialog.c:210
+#: mate-screenshot/src/screenshot-dialog.c:209
 #, c-format
 msgid ""
 "Error loading UI definition file for the screenshot program: \n"
@@ -3254,11 +3266,11 @@ msgid ""
 "Please check your installation of mate-utils."
 msgstr ""
 
-#: mate-screenshot/src/screenshot-dialog.c:233
+#: mate-screenshot/src/screenshot-dialog.c:232
 msgid "Select a folder"
 msgstr "Valitse kansio"
 
-#: mate-screenshot/src/screenshot-dialog.c:328
+#: mate-screenshot/src/screenshot-dialog.c:329
 #: mate-screenshot/src/screenshot-save.c:202
 msgid "Screenshot.png"
 msgstr "Kuvakaappaus.png"

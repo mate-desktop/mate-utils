@@ -2,15 +2,16 @@
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
 # Wolfgang Ulbrich <mate@raveit.de>, 2018
-# Микола Ткач <chistomov@gmail.com>, 2018
 # Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>, 2019
+# Микола Ткач <chistomov@gmail.com>, 2021
+# Sergiy <sergiy@gorichenko.com>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-06-04 20:34+0200\n"
+"POT-Creation-Date: 2022-10-29 15:36+0200\n"
 "PO-Revision-Date: 2018-09-13 10:15+0000\n"
-"Last-Translator: Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>, 2019\n"
+"Last-Translator: Sergiy <sergiy@gorichenko.com>, 2022\n"
 "Language-Team: Ukrainian (https://www.transifex.com/mate/teams/13566/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,7 +42,7 @@ msgstr ""
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:31
 msgid "<year>2015-2021</year> <holder>MATE Documentation Project</holder>"
-msgstr ""
+msgstr "<year>2015-2021</year> <holder>Проект документування MATE</holder>"
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:35
@@ -94,6 +95,9 @@ msgid ""
 "<firstname>Dennis</firstname> <surname>Cranston</surname> <affiliation> "
 "<orgname>Search for Files Maintainer</orgname> <_:address-1/> </affiliation>"
 msgstr ""
+"<firstname>Деніс</firstname> <surname>Кренстон <affiliation> "
+"<orgname>Супровідник додатку «Пошук файлів»</orgname> <_:address-1/> "
+"</affiliation> "
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:81
@@ -125,7 +129,7 @@ msgstr "Вольфґанґ Ульбріх"
 #. (itstool) path: revdescription/para
 #: C/index.docbook:127 C/index.docbook:137 C/index.docbook:147
 msgid "Search for Files Maintainer"
-msgstr ""
+msgstr "Супровідник додатку «Пошук файлів»"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:121
@@ -243,9 +247,14 @@ msgstr "Зворотній зв'язок"
 #: C/index.docbook:206
 msgid ""
 "To report a bug or make a suggestion regarding the Search for Files "
-"application or this manual, follow the directions in the <ulink url=\"help"
-":mate-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+"application or this manual, follow the directions in the <ulink "
+"url=\"help:mate-user-guide/feedback\" type=\"help\">MATE Feedback "
+"Page</ulink>."
 msgstr ""
+"Щоб повідомити про помилку чи внести пропозицію, пов'язану з додатком «Пошук"
+" файлів» або цим керівництвом, дотримуйтесь приписів на <ulink "
+"url=\"help:mate-user-guide/feedback\" type=\"help\">сторінці зворотнього "
+"зв'язку MATE</ulink>."
 
 #. (itstool) path: article/indexterm
 #: C/index.docbook:212
@@ -265,6 +274,10 @@ msgid ""
 "filename or a partial filename, with or without wildcards. To refine your "
 "search, you can apply additional search options."
 msgstr ""
+"Додаток <application>Пошук файлів</application> дозволяє виконати пошук "
+"файлів у системі. Для виконання простого пошуку потрібно ввести ім'я файлу "
+"чи його частину, з шаблонами чи без. Аби уточнити пошуковий запит, можна "
+"застосувати додаткові параметри пошуку."
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:222
@@ -276,6 +289,12 @@ msgid ""
 "<command>locate</command> command, and then uses the slower but more "
 "thorough <command>find</command> command."
 msgstr ""
+"Додаток <application>Пошук файлів</application> використовує команди UNIX "
+"<command>find</command>, <command>grep</command> і "
+"<command>locate</command>. При виконанні простого пошуку додаток "
+"<application>Пошук файлів</application>усталено спочатку використовує "
+"команду <command>locate</command>, а потім менш швидку, але ретельнішу "
+"команду <command>find</command>."
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:223
@@ -285,6 +304,9 @@ msgid ""
 " <command>locate</command> commands support the <literal>-i</literal> "
 "option, so all searches are case-insensitive."
 msgstr ""
+"Чутливість пошуку до регістру залежить від операційної системи. Наприклад, у"
+" Linux команди find, grep і locate підтримують параметр -i, тому будь-який "
+"пошук нечутливий да регістру."
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:227
@@ -297,11 +319,13 @@ msgid ""
 "You can start <application>Search for Files</application> in the following "
 "ways:"
 msgstr ""
+"Запустити додаток <application>Пошук файлів</application> можна у такі "
+"способи:"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:233
 msgid "From a <guimenu>Menu Bar</guimenu> on a panel"
-msgstr ""
+msgstr "Із <guimenu>Рядка Меню</guimenu> на панелі"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:235
@@ -309,11 +333,14 @@ msgid ""
 "Choose <menuchoice><guisubmenu>Places</guisubmenu><guimenuitem>Search for "
 "Files...</guimenuitem></menuchoice>"
 msgstr ""
+"Оберіть пункт меню "
+"<menuchoice><guisubmenu>Місця</guisubmenu><guimenuitem>Пошук "
+"файлів...</guimenuitem></menuchoice> "
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:239
 msgid "From a <guimenu>Main Menu</guimenu> on a panel"
-msgstr ""
+msgstr "Із <guimenu>Головного Меню</guimenu> на панелі"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:241
@@ -321,16 +348,17 @@ msgid ""
 "Choose <menuchoice><guimenuitem>Search for "
 "Files...</guimenuitem></menuchoice>"
 msgstr ""
+"Оберіть <menuchoice><guimenuitem>Пошук файлів...</guimenuitem></menuchoice> "
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:245
 msgid "From a command line"
-msgstr ""
+msgstr "З командного рядка"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:247
 msgid "Execute the following command: <command>mate-search-tool</command>"
-msgstr ""
+msgstr "Виконайте таку команду: <command>mate-search-tool</command>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:254
@@ -338,11 +366,13 @@ msgid ""
 "When you start <application>Search for Files</application>, the following "
 "window is displayed."
 msgstr ""
+"При запуску додатку <application>Пошук файлів</application> буде показано "
+"таке вікно."
 
 #. (itstool) path: figure/title
 #: C/index.docbook:258
 msgid "Search for Files Window"
-msgstr ""
+msgstr "Вікно додатку «Пошук файлів»"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -365,6 +395,9 @@ msgid ""
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows Search for Files "
 "main window. </phrase> </textobject>"
 msgstr ""
+"<imageobject><imagedata fileref=\"figures/mate-search-tool_window.png\" "
+"format=\"PNG\"/></imageobject><textobject><phrase>Головне вікно додатку "
+"«Пошук файлів». </phrase></textobject> "
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:277
@@ -374,7 +407,7 @@ msgstr "Використання"
 #. (itstool) path: sect2/title
 #: C/index.docbook:280
 msgid "To Perform a Basic Search"
-msgstr ""
+msgstr "Виконання простого пошуку"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:282
@@ -390,31 +423,34 @@ msgid ""
 "search text can be a filename or partial filename, with or without "
 "wildcards, as shown in the following table:"
 msgstr ""
+"Уведіть текст для пошуку в поле <guilabel>Ім'я містить</guilabel>. Це може "
+"бути ім'я файлу чи його частина, з шаблонами чи без, як показано у цій "
+"таблиці:"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:294
 msgid "Name Contains Text"
-msgstr ""
+msgstr "Ім'я містить текст"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:296
 msgid "Example"
-msgstr ""
+msgstr "Приклад"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:298
 msgid "Result"
-msgstr ""
+msgstr "Результат"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:304
 msgid "Full or partial filename"
-msgstr ""
+msgstr "Ім'я файлу чи його частину"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:308
 msgid "<userinput>myfile.txt</userinput>"
-msgstr ""
+msgstr "<userinput>myfile.txt</userinput>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:312
@@ -422,16 +458,18 @@ msgid ""
 "<application>Search for Files</application> searches for all files that "
 "contain the text <userinput>myfile.txt</userinput> in the filename."
 msgstr ""
+"Додаток <application>Пошук файлів</application> виконує пошук усіх файлів, "
+"імена яких містять текст <userinput>мій файл.txt</userinput>."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:318
 msgid "Partial filename combined with wildcards (*, [, ])"
-msgstr ""
+msgstr "Частину ім'я файлу з шаблонами (*, [, ])"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:322
 msgid "<userinput>*.[ch]</userinput>"
-msgstr ""
+msgstr "<userinput>*.[ch]</userinput>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:326
@@ -439,6 +477,8 @@ msgid ""
 "<application>Search for Files</application> searches for all files that have"
 " extension <userinput>.c</userinput> or <userinput>.h</userinput>."
 msgstr ""
+"Додаток <application>Пошук файлів</application> виконує пошук усіх файлів з "
+"розширенням 2.c2 чи 3.h3."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:334
@@ -447,11 +487,14 @@ msgid ""
 "device from which you want <application>Search for Files</application> to "
 "begin the search."
 msgstr ""
+"У поле <guilabel>Шукати у теці</guilabel> виберіть теку чи пристрій, на "
+"якому додатку <application>Пошук файлів</application> потрібно виконати "
+"пошук."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:336
 msgid "Click <guibutton>Find</guibutton> to perform the search."
-msgstr ""
+msgstr "Натисніть кнопку <guibutton>Знайти</guibutton> для виконання пошуку."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:339
@@ -464,6 +507,13 @@ msgid ""
 "the application displays the message \"No files found\" in the "
 "<guilabel>Search results</guilabel> list box."
 msgstr ""
+"Додаток <application>Пошук файлів</application> виконує пошук у вказаному "
+"каталозі та відповідних вкладених каталогах. Результати пошуку, виконаного "
+"додатком <application>Пошук файлів</application>, показуються у переліку "
+"<guilabel>Результати пошуку</guilabel>. Якщо додатку <application>Пошук "
+"файлів</application> не вдалося знайти відповідні до умов пошуку файли, у "
+"переліку <guilabel>Результати пошуку</guilabel> буде показано повідомлення "
+"«Файлів не знайдено»."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:343
@@ -478,6 +528,16 @@ msgid ""
 "search. To update the database, run the command <command>updatedb</command> "
 "as the root user."
 msgstr ""
+"Усталено додаток <application>Пошук файлів</application> спочатку виконує "
+"швидкий пошук за допомогою команди <command>locate</command>, а потім більш "
+"ретельний другий пошук за допомогою команди <command>find</command>. Команда"
+" <command>locate</command> працює швидше завдяки використанню бази даних з "
+"відомостями про файли. Якщо ця база даних не оновлювалася більше тижня, "
+"додаток <application>Пошук файлів</application> виведе попередження про те, "
+"що результати пошуку можуть бути застарілими; користувачу буде запропоновано"
+" відімкнути швидкий пошук. Щоб оновити базу даних, виконайте команду "
+"<command>updatedb</command> від ім'я користувача з повноваженнями "
+"розпорядника."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:347
@@ -496,12 +556,13 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:350
 msgid "Click on the <guilabel>Select more options</guilabel> text."
-msgstr ""
+msgstr "Клацніть по тексту <guilabel>Додаткові параметри</guilabel>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:351
 msgid "Click on the <guilabel>Available options</guilabel> drop-down list."
 msgstr ""
+"Клацніть по розкривному переліку <guilabel>Доступні параметри</guilabel>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:352
@@ -535,6 +596,8 @@ msgid ""
 "To remove a search option from the current search, click on the "
 "<guibutton>Remove</guibutton> button next to the option."
 msgstr ""
+"Щоб вилучити параметр пошуку з поточного пошуку, натисніть розташовану поряд"
+" з ним кнопку <guibutton>Вилучити</guibutton>."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:358
@@ -542,6 +605,8 @@ msgid ""
 "To disable the search options from the current search, click on the "
 "<guilabel>Select more options</guilabel> text."
 msgstr ""
+"Щоб відімкнути вибрані параметри пошуку для поточного пошуку, клацніть по "
+"тексту <guilabel>Додаткові параметри</guilabel>."
 
 #. (itstool) path: table/title
 #: C/index.docbook:361
@@ -551,7 +616,7 @@ msgstr "Параметри пошуку"
 #. (itstool) path: entry/para
 #: C/index.docbook:368
 msgid "Option Name"
-msgstr ""
+msgstr "Назва параметра"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:370
@@ -566,18 +631,18 @@ msgstr "Містить текст"
 #. (itstool) path: entry/para
 #: C/index.docbook:378
 msgid "Search for files of type plain text that contain the specified text."
-msgstr ""
+msgstr "Пошук простих текстових файлів, які містять вказаний текст."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:382
 msgid "Date modified less than"
-msgstr ""
+msgstr "Дата змінювання менша, ніж"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:384
 msgid ""
 "Search for files that are modified less than the period specified in days."
-msgstr ""
+msgstr "Пошук файлів, давність змінювання яких менша вказаної кількости днів."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:388
@@ -589,11 +654,12 @@ msgstr "Да_та останньої зміни більша за"
 msgid ""
 "Search for files that are modified longer than the period specified in days."
 msgstr ""
+"Пошук файлів, давність змінювання яких більша вказаної кількости днів."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:394
 msgid "Size at least"
-msgstr ""
+msgstr "Розмір не менше"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:396
@@ -601,11 +667,13 @@ msgid ""
 "Search for files that are equal to or larger than the size specified in "
 "kilobytes."
 msgstr ""
+"Пошук файлів, розмір яких дорівнює чи перевищує вказану кількість "
+"кілобайтів."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:400
 msgid "Size at most"
-msgstr ""
+msgstr "Розмір не більше"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:402
@@ -613,6 +681,7 @@ msgid ""
 "Search for files that are smaller than or equal to the size specified in "
 "kilobytes."
 msgstr ""
+"Пошук файлів, розмір яких менший або дорівнює вказаній кількості кілобайтів."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:406
@@ -627,7 +696,7 @@ msgstr "Пошук порожніх файлів."
 #. (itstool) path: entry/para
 #: C/index.docbook:412
 msgid "Owned by user"
-msgstr ""
+msgstr "Належить користувачеві"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:414
@@ -635,11 +704,13 @@ msgid ""
 "Search for files that are owned by the user specified. Type the name of the "
 "user in the text box provided."
 msgstr ""
+"Пошук файлів, власником яких є вказаний користувач. Уведіть ім'я користувача"
+" у відповідному текстовому полі."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:418
 msgid "Owned by group"
-msgstr ""
+msgstr "Належить групі"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:420
@@ -647,6 +718,8 @@ msgid ""
 "Search for files that are owned by the group specified. Type the name of the"
 " group in the text box provided."
 msgstr ""
+"Пошук файлів, власником яких є вказана група. Уведіть ім'я групи у "
+"відповідному текстовому полі."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:424
@@ -659,11 +732,12 @@ msgid ""
 "Search for files that are owned by a user or group that is unknown to the "
 "system."
 msgstr ""
+"Пошук файлів, власником яких є невідомий системі користувач або група."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:430
 msgid "Name does not contain"
-msgstr ""
+msgstr "Ім'я не містить"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:432
@@ -673,11 +747,15 @@ msgid ""
 "Use * to indicate a sequence of characters. Use ? to indicate a single "
 "character. The search is case-sensitive."
 msgstr ""
+"Пошук файлів, які не містять вказаного рядка. Уведіть у відповідному полі "
+"ім'я файлу повністю чи частково (з шаблонами). Використовуйте «*» для "
+"позначення послідовности символів. Використовуйте «?» для позначення "
+"окремого символу. Пошук чутливий до регістру."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:436
 msgid "Name matches regular expression"
-msgstr ""
+msgstr "Ім'я збігається з регулярним виразом"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:438
@@ -686,6 +764,8 @@ msgid ""
 "directory path or filename. Type the regular expression in the text box "
 "provided."
 msgstr ""
+"Пошук файлів, які містять вказаний регулярний вираз у шляху чи імені. "
+"Уведіть регулярний вираз у надане текстове поле."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:442
@@ -695,7 +775,7 @@ msgstr "Показувати приховані файли та резервні
 #. (itstool) path: entry/para
 #: C/index.docbook:444
 msgid "Include hidden and backup files in the search."
-msgstr ""
+msgstr "Включити приховані файли та резервні копії у пошукк."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:448
@@ -705,12 +785,12 @@ msgstr "Переходити за символічними посиланням�
 #. (itstool) path: entry/para
 #: C/index.docbook:450
 msgid "Follow symbolic links when searching for files."
-msgstr ""
+msgstr "Йти за символьними посиланнями при пошуку файлів."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:454
 msgid "Exclude other filesystems"
-msgstr "Не шукати на иньших файлових системах"
+msgstr "Не шукати на інших файлових системах"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:456
@@ -718,11 +798,13 @@ msgid ""
 "Search in directories that are in the same filesystem as the start "
 "directory."
 msgstr ""
+"Пошук у каталогах, що знаходяться у тій самій файловій системі, що й "
+"початковий каталог."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:466
 msgid "To Stop a Search"
-msgstr ""
+msgstr "Зупинка пошуку"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:467
@@ -730,11 +812,13 @@ msgid ""
 "Click <guibutton>Stop</guibutton> to stop a search before "
 "<application>Search for Files</application> completes the search."
 msgstr ""
+"Натисніть кнопку <guibutton>Зупинити</guibutton> для зупинки пошуку до того,"
+" як він буде завершений додатком <application>Пошук файлів</application>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:471
 msgid "To Open a Displayed File"
-msgstr ""
+msgstr "Відкриття показуваного файлу"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:472
@@ -742,16 +826,20 @@ msgid ""
 "To open a file displayed in the <guilabel>Search results</guilabel> list "
 "box, perform one of the following steps:"
 msgstr ""
+"Щоб відкрити файл, показаний у переліку <guilabel>Результати "
+"пошуку</guilabel>, виконайте одну з таких дій:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:474
 msgid "Right-click on the file, then choose <guimenuitem>Open</guimenuitem>."
 msgstr ""
+"Клацніть по файлу правою кнопкою миші й оберіть у контекстному меню пункт "
+"<guimenuitem>Відкрити</guimenuitem>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:475
 msgid "Double-click on the file."
-msgstr ""
+msgstr "Двічі клацніть по файлу."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:477
@@ -760,11 +848,15 @@ msgid ""
 "results</guilabel> list box, right-click on the file, then choose "
 "<guimenuitem>Open Containing Folder</guimenuitem>."
 msgstr ""
+"Щоб відкрити теку, яка містить показаний у переліку <guilabel>Результати "
+"пошуку</guilabel> файл, клацніть по ньому правою кнопкою миші й оберіть у "
+"контекстному меню пункт <guimenuitem>Відкрити теку, що "
+"містить</guimenuitem>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:481
 msgid "To Delete a Displayed File"
-msgstr ""
+msgstr "Вилучення показуваного файлу"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:482
@@ -773,11 +865,14 @@ msgid ""
 "box, right-click on the file, then choose <guimenuitem>Move to "
 "Trash</guimenuitem>."
 msgstr ""
+"Щоб вилучити файл, показаний у переліку <guilabel>Результати "
+"пошуку</guilabel>, клацніть по ньому правою кнопкою миші й оберіть у "
+"контекстному меню пункт <guimenuitem>Вилучити у смітник</guimenuitem>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:493
 msgid "To Save the Search Results"
-msgstr ""
+msgstr "Збереження результатів пошуку"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:494
@@ -788,6 +883,11 @@ msgid ""
 "As</guimenuitem>. Enter the name of the file to which you want to save the "
 "results, then click Save."
 msgstr ""
+"Щоб зберегти результати останнього пошуку, виконаного додатком "
+"<application>Пошук файлів</application>, клацніть по переліку "
+"<guilabel>Результати пошуку</guilabel> й оберіть у контекстному меню пункт "
+"<guimenuitem>Зберегти результати як...</guimenuitem>. Уведіть ім'я файлу, в "
+"якому потрібно зберегти результати, та натисніть кнопку «Зберегти»."
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:502
@@ -801,6 +901,10 @@ msgid ""
 "modify some of its behavior. The gsettings values can be changed by starting"
 " the <application>Configuration Editor</application> in the following ways:"
 msgstr ""
+"Додаток <application>Пошук файлів</application> надає ключі gsettings, за "
+"допомогою яких можна налаштувати деякі аспекти його поведінки. Щоб змінити "
+"значення gsettings, запустіть <application>Редактор dconf</application>. "
+"Існують такі способи запуску цього редактора:"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:508
@@ -813,6 +917,8 @@ msgid ""
 "Choose <menuchoice><guisubmenu>System Tools</guisubmenu><guimenuitem>dconf "
 "Editor</guimenuitem></menuchoice>."
 msgstr ""
+"Оберіть пункт меню <menuchoice><guisubmenu>Системні "
+"Засоби</guisubmenu><guimenuitem>Редактор dconf</guimenuitem></menuchoice>."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:514
@@ -822,7 +928,7 @@ msgstr "Командний рядок"
 #. (itstool) path: listitem/para
 #: C/index.docbook:516
 msgid "Execute the following command: <command>dconf-editor</command>"
-msgstr ""
+msgstr "Виконайте таку команду: <command>dconf-editor</command> "
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:522
@@ -832,12 +938,12 @@ msgstr "Вимкнути \"Швидкий пошук\""
 #. (itstool) path: sect2/para
 #: C/index.docbook:523
 msgid "Key name: org.mate.search-tool.disable-quick-search"
-msgstr ""
+msgstr "Ім'я ключа: org.mate.search-tool.disable-quick-search"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:524 C/index.docbook:531 C/index.docbook:552
 msgid "Default value: false"
-msgstr ""
+msgstr "Типове значення: false"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:525
@@ -848,6 +954,12 @@ msgid ""
 "<command>locate</command> relies on a file index, the <guilabel>Search "
 "results</guilabel> list may not always be up to date."
 msgstr ""
+"Додаток <application>Пошук файлів</application> пришвидшує виконання пошуку "
+"за допомогою команди <command>locate</command>. <command>Locate</command> "
+"дозволяє безпечно індексувати та швидко знаходити файли. Так як робота "
+"команди <command>locate</command> залежить від індексу файлів, можливо, що "
+"дані у переліку <guilabel>Результати пошуку</guilabel> не завжди будуть "
+"актуальними."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:529
@@ -857,7 +969,7 @@ msgstr "Вимкнути друге сканування швидкого пош
 #. (itstool) path: sect2/para
 #: C/index.docbook:530
 msgid "Key name: org.mate.search-tool.disable-quick-search-second-scan"
-msgstr ""
+msgstr "Ім'я ключа: org.mate.search-tool.disable-quick-search-second-scan"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:532
@@ -868,6 +980,11 @@ msgid ""
 " Files that match the search criteria are added to the <guilabel>Search "
 "results</guilabel> list keeping the list up to date."
 msgstr ""
+"Після завершення швидкого пошуку додатку <application>Пошук "
+"файлів</application> виконує більш ретельний пошук за допомогою команди "
+"<command>find</command>. Мета другого проходу — знайти файли, які не було "
+"проіндексовано. Файли, які відповідають умові пошуку, додаються до переліку "
+"<guilabel>Результати пошуку</guilabel>, що робить його актуальним."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:536
@@ -877,7 +994,7 @@ msgstr "Шляхи, що виключені зі швидкого пошуку"
 #. (itstool) path: sect2/para
 #: C/index.docbook:537
 msgid "Key name: org.mate.search-tool.quick-search-excluded-paths"
-msgstr ""
+msgstr "Ім'я ключа: org.mate.search-tool.quick-search-excluded-paths"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:538
@@ -892,6 +1009,10 @@ msgid ""
 "use the <command>find</command> command. The wildcards '*' and '?' are "
 "supported."
 msgstr ""
+"Додаток <application>Пошук файлів</application> не буде виконувати швидкий "
+"пошук за вказаними цим ключем шляхами. Для пошуку файлів за вказаними "
+"шляхами буде використовуватися команда <command>find</command>. "
+"Підтримуються шаблони «*» та «?»."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:543
@@ -902,6 +1023,7 @@ msgstr "Шляхи, що виключені з другого проходу ш�
 #: C/index.docbook:544
 msgid "Key name: org.mate.search-tool.quick-search-second-scan-excluded-paths"
 msgstr ""
+"Ім'я ключа: org.mate.search-tool.quick-search-second-scan-excluded-paths"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:545
@@ -916,6 +1038,10 @@ msgid ""
 "the defined paths will not be followed by a thorough search using the "
 "<command>find</command> command. The wildcards '*' and '?' are supported."
 msgstr ""
+"Додаток <application>Пошук файлів</application> не буде виконувати другий "
+"прохід за вказаними цим ключем шляхами. Це означає, що за вказаними шляхами "
+"буде виконано лише швидкий пошук, але не більш ретельний пошук за допомогою "
+"команди <command>find</command>. Підтримуються шаблони «*» та «?»."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:550
@@ -925,7 +1051,7 @@ msgstr "Показувати додаткові параметри"
 #. (itstool) path: sect2/para
 #: C/index.docbook:551
 msgid "Key name: org.mate.search-tool.show-additional-options"
-msgstr ""
+msgstr "Ім'я ключа: org.mate.search-tool.show-additional-options"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:553
@@ -933,6 +1059,8 @@ msgid ""
 "This key determines if the <guilabel>Select more options</guilabel> section "
 "is expanded when <application>Search for Files</application> is started."
 msgstr ""
+"Цей ключ визначає, чи буде область <guilabel>Додаткові параметри</guilabel> "
+"розгорнута при запуску додатку <application>Пошук файлів</application>."
 
 #. (itstool) path: para/ulink
 #: C/legal.xml:9

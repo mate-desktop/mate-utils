@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-06-04 20:34+0200\n"
+"POT-Creation-Date: 2022-10-29 15:36+0200\n"
 "PO-Revision-Date: 2018-09-14 23:21+0000\n"
 "Last-Translator: Jerom Turible <jeromet9208@gmail.com>, 2021\n"
 "Language-Team: French (https://www.transifex.com/mate/teams/13566/fr/)\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -221,8 +221,9 @@ msgstr "Votre avis"
 #: C/index.docbook:201
 msgid ""
 "To report a bug or make a suggestion regarding the System Log Viewer "
-"application or this manual, follow the directions in the <ulink url=\"help"
-":mate-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+"application or this manual, follow the directions in the <ulink "
+"url=\"help:mate-user-guide/feedback\" type=\"help\">MATE Feedback "
+"Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -380,8 +381,8 @@ msgid ""
 msgstr ""
 "Par défaut, la <application>visionneuse de journaux système</application> "
 "surveille tous les journaux ouverts et tout changement s'affiche "
-"automatiquement dans la fenêtre principale. Consultez <xref linkend"
-"=\"syslog-monitor\"/> pour plus d'informations."
+"automatiquement dans la fenêtre principale. Consultez <xref "
+"linkend=\"syslog-monitor\"/> pour plus d'informations."
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:299

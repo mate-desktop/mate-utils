@@ -5,32 +5,32 @@
 # Marco Z. <minaz666@gmail.com>, 2018
 # Giuseppe Pignataro <rogepix@gmail.com>, 2019
 # Enrico B. <enricobe@hotmail.com>, 2019
-# Alessandro Volturno <alelvb@inwind.it>, 2021
+# Alessandro Volturno <alelvb@inwind.it>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-06-04 20:34+0200\n"
+"POT-Creation-Date: 2022-10-29 15:36+0200\n"
 "PO-Revision-Date: 2018-09-13 10:55+0000\n"
-"Last-Translator: Alessandro Volturno <alelvb@inwind.it>, 2021\n"
+"Last-Translator: Alessandro Volturno <alelvb@inwind.it>, 2022\n"
 "Language-Team: Italian (https://www.transifex.com/mate/teams/13566/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Enrico Bella, 2019\n"
-"Alessandro Volturno, 2020"
+"Alessandro Volturno, 2020, 2022"
 
 #. (itstool) path: articleinfo/title
 #: C/index.docbook:24
 msgid "Dictionary Manual"
-msgstr "Manuale di Dizionario"
+msgstr "Manuale di Dictionary"
 
 #. (itstool) path: abstract/para
 #: C/index.docbook:27
@@ -38,7 +38,7 @@ msgid ""
 "Dictionary enables you to look up definitions and correct spellings of "
 "words."
 msgstr ""
-"Dizionario permette di controllare le definizioni delle parole e la loro "
+"Dictionary permette di controllare le definizioni delle parole e la loro "
 "scrittura corretta."
 
 #. (itstool) path: articleinfo/copyright
@@ -93,7 +93,7 @@ msgid ""
 "<revnumber>Dictionary Manual V1.10.0</revnumber> <date>July 2015</date> "
 "<_:revdescription-1/>"
 msgstr ""
-"<revnumber>Manuale di Dizionario V1.10.0</revnumber> <date>Luglio "
+"<revnumber>Manuale di Dictionary V1.10.0</revnumber> <date>Luglio "
 "2015</date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
@@ -104,7 +104,7 @@ msgstr "Emmanuele Bassi"
 #. (itstool) path: articleinfo/releaseinfo
 #: C/index.docbook:109
 msgid "This manual describes version 1.10 of Dictionary."
-msgstr "Questo manuale si riferisce alla versione 1.10 di Dizionario"
+msgstr "Questo manuale si riferisce alla versione 1.10 di Dictionary"
 
 #. (itstool) path: legalnotice/title
 #: C/index.docbook:111
@@ -125,7 +125,7 @@ msgstr ""
 #. (itstool) path: article/indexterm
 #: C/index.docbook:121
 msgid "<primary>Dictionary</primary>"
-msgstr "<primary>Dizionario</primary>"
+msgstr "<primary>Dictionary</primary>"
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:128
@@ -138,7 +138,7 @@ msgid ""
 "The <application>Dictionary</application> application enables you to search "
 "words and terms on a dictionary source."
 msgstr ""
-"L'applicazione <application>Dizionario</application> permette di cercare "
+"L'applicazione <application>Dictionary</application> permette di cercare "
 "parole e termini in un dizionario."
 
 #. (itstool) path: sect1/title
@@ -149,14 +149,14 @@ msgstr "Introduzione"
 #. (itstool) path: sect2/title
 #: C/index.docbook:141
 msgid "To Start Dictionary"
-msgstr "Avviare Dizionario"
+msgstr "Avviare il dizionario"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:143
 msgid ""
 "You can start <application>Dictionary</application> in the following ways:"
 msgstr ""
-"Si può avviare <application>Dizionario</application> nei seguenti modi:"
+"Si può avviare <application>Dictionary</application> nei seguenti modi:"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:148
@@ -170,7 +170,7 @@ msgid ""
 "<guimenuitem>Dictionary</guimenuitem></menuchoice>."
 msgstr ""
 "Selezionare <menuchoice> <guisubmenu>Accessori</guisubmenu> "
-"<guimenuitem>Dizionario di MATE</guimenuitem> </menuchoice>."
+"<guimenuitem>Dizionario</guimenuitem> </menuchoice>."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:156
@@ -187,14 +187,14 @@ msgstr "Eseguire il comando: <command>mate-dictionary</command>"
 msgid ""
 "Once started, the <application>Dictionary</application> window is displayed:"
 msgstr ""
-"Quando avvii il <application>Dizionario</application>, viene mostrata la "
+"Quando si avvia <application>Dictionary</application>, viene mostrata la "
 "seguente finestra:"
 
 #. (itstool) path: figure/title
 #: C/index.docbook:167 C/index.docbook:196 C/index.docbook:238
 #: C/index.docbook:279 C/index.docbook:299 C/index.docbook:368
 msgid "Dictionary Window"
-msgstr "Finestra di Dizionario"
+msgstr "Finestra di Dictionary"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -219,12 +219,12 @@ msgid ""
 msgstr ""
 "<imageobject> <imagedata fileref=\"figures/mate-dictionary-application.png\""
 " format=\"PNG\"/> </imageobject> <textobject><phrase>Mostra la finestra "
-"principale di Dizionario.</phrase></textobject>"
+"principale di Dictionary.</phrase></textobject>"
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:184
 msgid "Usage"
-msgstr "Uso"
+msgstr "Utilizzo"
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:187
@@ -272,7 +272,7 @@ msgid ""
 msgstr ""
 "<imageobject> <imagedata fileref=\"figures/mate-dictionary-lookup.png\" "
 "format=\"PNG\"/> </imageobject> <textobject><phrase>Mostra una definizione "
-"nella finestra di Dizionario.</phrase></textobject>"
+"nella finestra del dizionario.</phrase></textobject>"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:207
@@ -342,7 +342,7 @@ msgstr "Per stampare, premere <guibutton>Stampa</guibutton>."
 #. (itstool) path: sect2/title
 #: C/index.docbook:235
 msgid "Find Text"
-msgstr "Trova testo"
+msgstr "Trovare del testo"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -401,8 +401,8 @@ msgid ""
 "<guibutton>Previous</guibutton>."
 msgstr ""
 "Per trovare il risultato successivo fare clic su "
-"<guibutton>Successivo</guibutton>. Per trovare il risultato successivo fare "
-"clic isu <guibutton>Precedente</guibutton>."
+"<guibutton>Successivo</guibutton>. Per trovare il risultato precedente fare "
+"clic su <guibutton>Precedente</guibutton>."
 
 #. (itstool) path: sect1/title
 #. (itstool) path: sect2/title
@@ -417,14 +417,14 @@ msgid ""
 " choose "
 "<menuchoice><guimenu>Edit</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>."
 msgstr ""
-"Per modificare le preferenze di <application>Dizionario</application>, "
+"Per modificare le preferenze di <application>Dictionary</application>, "
 "selezionare "
 "<menuchoice><guimenu>Modifica</guimenu><guimenuitem>Preferenze</guimenuitem></menuchoice>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:276
 msgid "Dictionary Sources"
-msgstr "Sorgenti del dizionario"
+msgstr "Sorgenti di Dictionary"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -457,7 +457,7 @@ msgid ""
 "To change the dictionary source used to look up words, select the desired "
 "source from the list."
 msgstr ""
-"Per modificare la fonte utilizzata per le definizioni, selezionarla "
+"Per modificare la sorgente utilizzata per le definizioni, selezionarla "
 "dall'elenco."
 
 #. (itstool) path: sect2/title
@@ -493,7 +493,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:310
 msgid "To add a new dictionary source, perform the following steps:"
-msgstr "Per aggiungere una nuova sorgente, procedi come segue:"
+msgstr "Per aggiungere una nuova sorgente, procedere come segue:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:313
@@ -550,7 +550,7 @@ msgstr "Attributi"
 #. (itstool) path: entry/para
 #: C/index.docbook:333
 msgid "Dictionary Server"
-msgstr "Server del dizionario"
+msgstr "Server di Dizionari"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:335
@@ -570,7 +570,7 @@ msgstr "Rimuovere una sorgente"
 #. (itstool) path: sect2/para
 #: C/index.docbook:349
 msgid "To remove a dictionary source, perform the following steps:"
-msgstr "Per rimuovere una sorgente, procedi come segue:"
+msgstr "Per rimuovere una sorgente, procedere come segue:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:352
@@ -652,7 +652,7 @@ msgstr "Fare clic su <guibutton>Ok</guibutton>"
 #. (itstool) path: sect1/title
 #: C/index.docbook:394
 msgid "The Dictionary Applet"
-msgstr "L'applet Dizionario"
+msgstr "Dictionary Applet"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:396
@@ -662,15 +662,15 @@ msgid ""
 "<application>Dictionary Applet</application> applet to a panel and look up "
 "words in dictionaries."
 msgstr ""
-"L'applicazione <application>Dizionario</application> viene fornita assieme "
-"ad una applet, la <application>Applet dizionario</application>. È possibile "
-"aggiungere l'<application>Applet dizionario</application> ad un pannello per"
-" cercare le parole nei dizionari."
+"L'applicazione <application>Dictionary</application> viene fornita assieme "
+"ad una applet, <application>Dictionary Applet</application>. È possibile "
+"aggiungere <application>Dictionary Applet</application> ad un pannello per "
+"cercare le parole nei dizionari."
 
 #. (itstool) path: figure/title
 #: C/index.docbook:402 C/index.docbook:438
 msgid "Dictionary Applet Window"
-msgstr "Finestra applet dizionario"
+msgstr "Finestra di Dictionary Applet"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -694,13 +694,13 @@ msgid ""
 "Applet.</phrase></textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"figures/mate-dictionary-applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject><phrase>Mostra l'applet "
-"dizionario.</phrase></textobject>"
+"format=\"PNG\"/> </imageobject> <textobject><phrase>Mostra Dictionary "
+"Applet.</phrase></textobject>"
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:416
 msgid "To Start Dictionary Applet"
-msgstr "Avviare l'applet Dizionario"
+msgstr "Avviare Dictionary Applet"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:418
@@ -710,16 +710,16 @@ msgid ""
 "Dictionary Applet in the <application>Add to the panel</application> dialog,"
 " then click <guibutton>OK</guibutton>."
 msgstr ""
-"Per aggiungere l'<application>Applet dizionario</application> ad un "
-"pannello, fare clic col pulsante destro del mouse sul pannello e selezionare"
-" <guimenuitem>Aggiungi al pannello</guimenuitem>. Scegliere l'Applet "
-"Dizionario nella finestra <application>Aggiungi al pannello</application> e "
-"fare clic su <guibutton>OK</guibutton>."
+"Per aggiungere <application>Dictionary Applet</application> ad un pannello, "
+"fare clic col pulsante destro del mouse sul pannello e selezionare "
+"<guimenuitem>Aggiungi al pannello</guimenuitem>. Scegliere Dictionary Applet"
+" nella finestra <application>Aggiungi al pannello</application> e fare clic "
+"su <guibutton>OK</guibutton>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:427
 msgid "Using the Dictionary Applet"
-msgstr "Usare l'Applet Dizionario"
+msgstr "Usare Dictionary Applet"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:429
@@ -728,7 +728,7 @@ msgid ""
 "press <keycap>Enter</keycap> or right-click on the dictionary icon and then "
 "choose <guimenuitem>Look up</guimenuitem>."
 msgstr ""
-"Per cercare una parola, digitarla nel <guilabel>campo di inserimento "
+"Per cercare una parola, digitarla nel <guilabel>campo di inserimento del "
 "testo</guilabel> e premere <keycap>Invio</keycap> o fare clic col pulsante "
 "destro del mouse sull'icona del dizionario e selezionare "
 "<guimenuitem>Cerca</guimenuitem>."
@@ -765,7 +765,7 @@ msgid ""
 msgstr ""
 "<imageobject> <imagedata fileref=\"figures/mate-dictionary-applet-"
 "window.png\" format=\"PNG\"/> </imageobject> <textobject><phrase>Mostra la "
-"finestra principale dell'Applet Dizionario</phrase></textobject>"
+"finestra principale di Dictionary Applet</phrase></textobject>"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:449
@@ -795,19 +795,19 @@ msgid ""
 "To configure the <application>Dictionary Applet</application>, right-click "
 "on the dictionary icon, then choose <guimenuitem>Preferences</guimenuitem>."
 msgstr ""
-"Per configurare l'<application>Applet Dizionario</application>, fare clic "
-"col tasto destro del mouse sull'icona del dizionario e selezionare "
+"Per configurare <application>Dictionary Applet</application>, fare clic col "
+"tasto destro del mouse sull'icona del dizionario e selezionare "
 "<guimenuitem>Preferenze</guimenuitem>."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:464
 msgid ""
 "The <guilabel>Preferences</guilabel> dialog is the same used by the "
-"<application>Dictionary</application> application, so refer to <xref linkend"
-"=\"mate-dictionary-preferences\"/>"
+"<application>Dictionary</application> application, so refer to <xref "
+"linkend=\"mate-dictionary-preferences\"/>"
 msgstr ""
 "La finestra <guilabel>Preferenze</guilabel> è uguale a quella "
-"dell'applicazione <application>Dizionario</application> quindi fare "
+"dell'applicazione <application>Dictionary</application> quindi fare "
 "riferimento a <xref linkend=\"mate-dictionary-preferences\"/>"
 
 #. (itstool) path: para/ulink
@@ -827,10 +827,10 @@ msgid ""
 msgstr ""
 "È concesso il permesso di copiare, distribuire e/o modificare questo "
 "documento secondo i termini della GNU Free Documentation License (GFDL), "
-"Versione 1.1 o qualsiasi versione successiva pubblicata dalla Free Software "
-"Foundation senza sezioni invarianti, senza testi di copertina e nessun testo"
-" di retro copertina. Puoi trovare una copia del GFDL qui <_:ulink-1/> o nel "
-"file COPYING-DOCS distribuito con questo manuale."
+"Versione 1.1 o una qualsiasi versione successiva pubblicata dalla Free "
+"Software Foundation senza sezioni invarianti, senza testi di copertina e "
+"nessun testo di retro copertina. Puoi trovare una copia del GFDL qui "
+"<_:ulink-1/> o nel file COPYING-DOCS distribuito con questo manuale."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
@@ -887,7 +887,7 @@ msgstr ""
 "REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA "
 "LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO"
 " DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I "
-"TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA;"
+"TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA; E"
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
