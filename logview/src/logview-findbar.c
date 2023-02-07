@@ -197,7 +197,8 @@ logview_findbar_init (LogviewFindbar *findbar)
   gtk_widget_show_all (GTK_WIDGET (priv->forward_button));
 
   /* clear button */
-  priv->clear_button = gtk_tool_button_new_from_stock ("gtk-clear");
+  w = gtk_image_new_from_icon_name ("edit-clear-all", GTK_ICON_SIZE_BUTTON);
+  priv->clear_button = gtk_tool_button_new (w, NULL);
   gtk_tool_item_set_tooltip_text (priv->clear_button,
                                  _("Clear the search string"));
   gtk_toolbar_insert (gtoolbar, priv->clear_button, -1);

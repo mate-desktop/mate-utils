@@ -64,17 +64,14 @@ struct _LogviewLogPrivate {
 
 typedef struct {
   LogviewLog *log;
-  GError *err;
   LogviewCreateCallback callback;
   gpointer user_data;
 } LoadJob;
 
 typedef struct {
   LogviewLog *log;
-  GError *err;
   const char **lines;
   GSList *new_days;
-  GCancellable *cancellable;
   LogviewNewLinesCallback callback;
   gpointer user_data;
 } NewLinesJob;
@@ -237,19 +234,21 @@ add_new_days_to_cache (LogviewLog *log, const char **new_lines, guint lines_offs
   return new_days;
 }
 
-static gboolean
-new_lines_job_done (gpointer data)
+static void
+new_lines_job_done (GObject      *source_object,
+                    GAsyncResult *res,
+                    gpointer      user_data)
 {
-  NewLinesJob *job = data;
+  NewLinesJob      *job = user_data;
+  g_autoptr(GError) error = NULL;
+  gboolean          ret;
 
-  if (job->err) {
-    job->callback (job->log, NULL, NULL, job->err, job->user_data);
-    g_error_free (job->err);
+  ret = g_task_propagate_boolean (G_TASK (res), &error);
+  if (!ret) {
+    job->callback (job->log, NULL, NULL, error, job->user_data);
   } else {
-    job->callback (job->log, job->lines, job->new_days, job->err, job->user_data);
+    job->callback (job->log, job->lines, job->new_days, error, job->user_data);
   }
-
-  g_clear_object (&job->cancellable);
 
   g_slist_free_full (job->new_days, (GDestroyNotify) logview_utils_day_free);
 
@@ -257,14 +256,13 @@ new_lines_job_done (gpointer data)
   g_object_unref (job->log);
 
   g_slice_free (NewLinesJob, job);
-
-  return FALSE;
 }
 
-static gboolean
-do_read_new_lines (GIOSchedulerJob *io_job,
-                   GCancellable *cancellable,
-                   gpointer user_data)
+static void
+do_read_new_lines (GTask        *task,
+                   gpointer      source_object,
+                   gpointer      user_data,
+                   GCancellable *cancellable)
 {
   /* this runs in a separate thread */
   NewLinesJob *job = user_data;
@@ -287,7 +285,7 @@ do_read_new_lines (GIOSchedulerJob *io_job,
   g_ptr_array_remove_index (lines, lines->len - 1);
 
   while ((line = g_data_input_stream_read_line (log->priv->stream, NULL,
-                                                job->cancellable, &err)) != NULL)
+                                                cancellable, &err)) != NULL)
   {
     g_ptr_array_add (lines, (gpointer) line);
   }
@@ -296,8 +294,7 @@ do_read_new_lines (GIOSchedulerJob *io_job,
   g_ptr_array_add (lines, NULL);
 
   if (err) {
-    job->err = err;
-    goto out;
+    g_task_return_error (task, err);
   }
 
   log->priv->has_new_lines = FALSE;
@@ -309,23 +306,23 @@ do_read_new_lines (GIOSchedulerJob *io_job,
   job->new_days = add_new_days_to_cache (log, job->lines, log->priv->lines_no);
   log->priv->lines_no = (lines->len - 1);
 
-out:
-  g_io_scheduler_job_send_to_mainloop_async (io_job,
-                                             new_lines_job_done,
-                                             job, NULL);
-  return FALSE;
+  g_task_return_boolean (task, TRUE);
 }
 
-static gboolean
-log_load_done (gpointer user_data)
+static void
+log_load_done (GObject      *source_object,
+               GAsyncResult *res,
+               gpointer      user_data)
 {
   LoadJob *job = user_data;
+  g_autoptr(GError) error = NULL;
+  gboolean          ret;
 
-  if (job->err) {
-    /* the callback will have NULL as log, and the error set */
+  ret = g_task_propagate_boolean (G_TASK (res), &error);
+
+  if (!ret) {
     g_object_unref (job->log);
-    job->callback (NULL, job->err, job->user_data);
-    g_error_free (job->err);
+    job->callback (NULL, error, job->user_data);
   } else {
     job->callback (job->log, NULL, job->user_data);
     setup_file_monitor (job->log);
@@ -333,7 +330,6 @@ log_load_done (gpointer user_data)
 
   g_slice_free (LoadJob, job);
 
-  return FALSE;
 }
 
 #ifdef HAVE_ZLIB
@@ -592,11 +588,11 @@ create_zlib_error (void)
 }
 
 #endif /* HAVE_ZLIB */
-
-static gboolean
-log_load (GIOSchedulerJob *io_job,
-          GCancellable *cancellable,
-          gpointer user_data)
+static void
+log_load (GTask        *task,
+          gpointer      source_object,
+          gpointer      user_data,
+          GCancellable *cancellable)
 {
   /* this runs in a separate i/o thread */
   LoadJob *job = user_data;
@@ -772,13 +768,10 @@ log_load (GIOSchedulerJob *io_job,
 
 out:
   if (err) {
-    job->err = err;
+    g_task_return_error (task, err);
   }
 
-  g_io_scheduler_job_send_to_mainloop_async (io_job,
-                                             log_load_done,
-                                             job, NULL);
-  return FALSE;
+  g_task_return_boolean (task, TRUE);
 }
 
 static void
@@ -786,17 +779,17 @@ log_setup_load (LogviewLog *log, LogviewCreateCallback callback,
                 gpointer user_data)
 {
   LoadJob *job;
+  GTask   *task;
 
   job = g_slice_new0 (LoadJob);
   job->callback = callback;
   job->user_data = user_data;
   job->log = log;
-  job->err = NULL;
 
-  /* push the loading job into another thread */
-  g_io_scheduler_push_job (log_load,
-                           job,
-                           NULL, 0, NULL);
+  task = g_task_new (log, NULL, log_load_done, job);
+  g_task_set_task_data (task, job, NULL);
+  g_task_run_in_thread (task, log_load);
+  g_object_unref (task);
 }
 
 /* public methods */
@@ -808,22 +801,20 @@ logview_log_read_new_lines (LogviewLog *log,
                             gpointer user_data)
 {
   NewLinesJob *job;
+  GTask       *task;
 
   /* initialize the job struct with sensible values */
   job = g_slice_new0 (NewLinesJob);
   job->callback = callback;
   job->user_data = user_data;
-  job->cancellable = (cancellable != NULL) ? g_object_ref (cancellable) : NULL;
   job->log = g_object_ref (log);
-  job->err = NULL;
   job->lines = NULL;
   job->new_days = NULL;
 
-  /* push the fetching job into another thread */
-  g_io_scheduler_push_job (do_read_new_lines,
-                           job,
-                           NULL, 0,
-                           job->cancellable);
+  task = g_task_new (log, cancellable, new_lines_job_done, job);
+  g_task_set_task_data (task, job, NULL);
+  g_task_run_in_thread (task, do_read_new_lines);
+  g_object_unref (task);
 }
 
 void
