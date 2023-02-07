@@ -1,33 +1,291 @@
-<ui>
-  <menubar name="LogviewMenu">
-    <menu action="FileMenu">
-      <menuitem action="OpenLog"/>
-      <menuitem action="CloseLog"/>
-      <menuitem action="Quit"/>
-    </menu>
-    <menu action="EditMenu">
-      <menuitem action="Copy"/>
-      <menuitem action="SelectAll"/>
-    </menu>
-    <menu action="ViewMenu">
-      <menuitem action="ShowStatusBar"/>
-      <menuitem action="ShowSidebar"/>
-      <separator/>
-      <menuitem action="Search"/>
-      <separator/>
-      <menuitem action="ViewZoomIn"/>
-      <menuitem action="ViewZoomOut"/>
-      <menuitem action="ViewZoom100"/>
-    </menu>
-    <menu action="FilterMenu">
-      <placeholder name="PlaceholderFilters"/>
-      <separator />
-      <menuitem action="FilterMatchOnly" />
-      <menuitem action="FilterManage" />
-    </menu>
-    <menu action="HelpMenu">
-      <menuitem action="HelpContents"/>
-      <menuitem action="AboutAction"/>
-    </menu>
-  </menubar>
-</ui>
+<?xml version="1.0" standalone="no"?>
+<!--*- mode: xml -*-->
+<interface>
+  <object class="GtkImage" id="menu_icon_open">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">document-open</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_close">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">window-close</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_quit">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">application-exit</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_copy">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">edit-copy</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_find">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">edit-find</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_in">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">zoom-in</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_out">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">zoom-out</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_normal">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">zoom-original</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_help">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">help-browser</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_about">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">help-about</property>
+  </object>
+  <object class="GtkMenuBar" id="logmenubar">
+    <property name="visible">1</property>
+    <child internal-child="accessible">
+      <object class="AtkObject" id="a11y-menubar">
+        <property name="AtkObject::accessible-name">The menubar</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem">
+        <property name="visible">1</property>
+        <property name="label" translatable="yes">_File</property>
+        <property name="use-underline">1</property>
+        <child type="submenu">
+          <object class="GtkMenu" id="file_menu">
+            <child>
+              <object class="GtkImageMenuItem" id="open_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Open...</property>
+                <property name="tooltip-text" translatable="yes">Open a log from file</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_open</property>
+                <property name="action-name">win.OpenLog</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImageMenuItem" id="close_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Close</property>
+                <property name="tooltip-text" translatable="yes">Close this log</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_close</property>
+                <property name="action-name">win.CloseLog</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSeparatorMenuItem">
+                <property name="visible">1</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImageMenuItem" id="quit_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Quit</property>
+                <property name="tooltip-text" translatable="yes">Quit the log viewer</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_quit</property>
+                <property name="action-name">win.Quit</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem">
+        <property name="visible">1</property>
+        <property name="label" translatable="yes">_Edit</property>
+        <property name="use-underline">1</property>
+        <child type="submenu">
+          <object class="GtkMenu">
+            <child>
+              <object class="GtkImageMenuItem" id="copy_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Copy</property>
+                <property name="tooltip-text" translatable="yes">Copy the selection</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_copy</property>
+                <property name="action-name">win.Copy</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem" id="select_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">Select _All</property>
+                <property name="tooltip-text" translatable="yes">Select the entire log</property>
+                <property name="use-underline">1</property>
+                <property name="action-name">win.SelectAll</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem">
+        <property name="visible">1</property>
+        <property name="label" translatable="yes">_View</property>
+        <property name="use-underline">1</property>
+        <child type="submenu">
+          <object class="GtkMenu">
+            <child>
+              <object class="GtkCheckMenuItem" id="status_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Statusbar</property>
+                <property name="tooltip-text" translatable="yes">Show Status Bar</property>
+                <property name="use-underline">1</property>
+                <property name="action-name">win.ShowStatusBar</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkCheckMenuItem" id="side_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">Side _Pane</property>
+                <property name="tooltip-text" translatable="yes">Show Side Pane</property>
+                <property name="use-underline">1</property>
+                <property name="action-name">win.ShowSidebar</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSeparatorMenuItem">
+                <property name="visible">1</property>
+                <property name="use_action_appearance">0</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImageMenuItem" id="find_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Find...</property>
+                <property name="tooltip-text" translatable="yes">Find a word or phrase in the log</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_find</property>
+                <property name="action-name">win.Search</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSeparatorMenuItem">
+                <property name="visible">1</property>
+                <property name="use_action_appearance">0</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImageMenuItem" id="in_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">Zoom _In</property>
+                <property name="tooltip-text" translatable="yes">Bigger text size</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_in</property>
+                <property name="action-name">win.ViewZoomIn</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImageMenuItem" id="out_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">Zoom _Out</property>
+                <property name="tooltip-text" translatable="yes">Smaller text size</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_out</property>
+                <property name="action-name">win.ViewZoomOut</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImageMenuItem" id="normal_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Normal Size</property>
+                <property name="tooltip-text" translatable="yes">Normal text size</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_normal</property>
+                <property name="action-name">win.ViewZoom100</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="filters"> 
+        <property name="visible">1</property>
+        <property name="label" translatable="yes">_Filters</property>
+        <property name="use-underline">1</property>
+        <child type="submenu">
+          <object class="GtkMenu">
+            <child>
+              <object class="GtkCheckMenuItem">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">Show matches only</property>
+                <property name="tooltip-text" translatable="yes">Only show lines that match one of the given filters</property>
+                <property name="use-underline">1</property>
+                <property name="action-name">win.FilterMatchOnly</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">Manage Filters</property>
+                <property name="tooltip-text" translatable="yes">Manage filters</property>
+                <property name="use-underline">1</property>
+                <property name="action-name">win.FilterManage</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">Filter Items</property>
+                <property name="tooltip-text" translatable="yes"></property>
+                <property name="use-underline">1</property>
+                <child type="submenu">
+                  <object class="GtkMenu" id="filter_menu">
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem">
+        <property name="visible">1</property>
+        <property name="label" translatable="yes">_Help</property>
+        <property name="use-underline">1</property>
+        <child type="submenu">
+          <object class="GtkMenu">
+            <child>
+              <object class="GtkImageMenuItem" id="help_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Contents</property>
+                <property name="tooltip-text" translatable="yes">Open the help contents for the log viewer</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_help</property>
+                <property name="action-name">win.HelpContents</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImageMenuItem" id="about_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_About</property>
+                <property name="tooltip-text" translatable="yes">Show the about dialog for the log viewer</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_about</property>
+                <property name="action-name">win.AboutAction</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
