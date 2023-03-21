@@ -66,8 +66,8 @@ struct _GdictWindow
   GtkWidget *status;
   GtkWidget *progress;
 
-  GtkUIManager *ui_manager;
-  GtkActionGroup *action_group;
+  GtkBuilder *ui_manager;
+  GActionGroup *action_group;
 
   GtkEntryCompletion *completion;
   GtkListStore *completion_model;

@@ -1,48 +1,388 @@
-<ui>
-  <menubar name="MainMenu">
-    <menu name="FileMenu" action="File">
-      <menuitem name="NewMenu" action="FileNew"/>
-      <menuitem name="SaveAsMenu" action="FileSaveAs"/>
-      <separator/>
-      <menuitem name="FilePreviewMenu" action="FilePreview"/>
-      <menuitem name="FilePrintMenu" action="FilePrint"/>
-      <separator/>
-      <menuitem name="FileCloseWindowMenu" action="FileCloseWindow"/>
-    </menu>
-    <menu name="EditMenu" action="Edit">
-      <menuitem name="EditCopyMenu" action="EditCopy"/>
-      <separator/>
-      <menuitem name="EditSelectAllMenu" action="EditSelectAll"/>
-      <separator/>
-      <menuitem name="EditFindMenu" action="EditFind"/>
-      <menuitem name="EditFindNextMenu" action="EditFindNext"/>
-      <menuitem name="EditFindPreviousMenu" action="EditFindPrevious"/>
-      <separator/>
-      <menuitem name="EditPreferencesMenu" action="EditPreferences"/>
-    </menu>
-    <menu name="ViewMenu" action="View">
-      <menuitem name="ViewSidebarMenu" action="ViewSidebar"/>
-      <menuitem name="ViewStatusbarMenu" action="ViewStatusbar"/>
-      <separator/>
-      <menuitem name="ViewSpellerMenu" action="ViewSpeller"/>
-      <menuitem name="ViewSourceMenu" action="ViewSource"/>
-      <menuitem name="ViewDBMenu" action="ViewDB"/>
-      <menuitem name="ViewStratMenu" action="ViewStrat"/>
-    </menu>
-    <menu name="GoMenu" action="Go">
-      <menuitem name="GoPreviousDefMenu" action="GoPreviousDef"/>
-      <menuitem name="GoNextDefMenu" action="GoNextDef"/>
-      <separator/>
-      <menuitem name="GoFirstDefMenu" action="GoFirstDef"/>
-      <menuitem name="GoLastDefMenu" action="GoLastDef"/>
-    </menu>
-    <menu name="HelpMenu" action="Help">
-      <menuitem name="HelpContentsMenu" action="HelpContents"/>
-      <menuitem name="HelpAboutMenu" action="HelpAbout"/>
-    </menu>
-  </menubar>
- 
-  <accelerator name="LookupAccel" action="Lookup"/>
-  <accelerator name="EscapeAccel" action="Escape"/>
-  <accelerator name="SlashAccel" action="Slash"/>
-</ui>
+<interface>
+  <object class="GtkImage" id="menu_icon_new">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">document-new</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_save_as">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">document-save-as</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_print">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">document-print</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_close">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">window-close</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_copy">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">edit-copy</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_find">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">edit-find</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_preferences">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">preferences-desktop</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_previous">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">go-previous</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_next">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">go-next</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_first">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">go-first</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_last">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">go-last</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_help">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">help-browser</property>
+  </object>
+  <object class="GtkImage" id="menu_icon_about">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon-name">help-about</property>
+  </object>
+
+  <object class="GtkMenuBar" id="dictionarymenubar">
+    <property name="visible">1</property>
+    <child internal-child="accessible">
+      <object class="AtkObject" id="a11y-menubar">
+        <property name="AtkObject::accessible-name">The menubar</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem">
+        <property name="visible">1</property>
+        <property name="label" translatable="yes">_File</property>
+        <property name="use-underline">1</property>
+        <child type="submenu">
+          <object class="GtkMenu" id="file_menu">
+            <child>
+              <object class="GtkImageMenuItem" id="new_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_New</property>
+                <property name="tooltip-text" translatable="yes">New look up</property>
+                <property name="use-underline">1</property>
+				/<property name="image">menu_icon_new</property>
+                <property name="action-name">win.FileNew</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImageMenuItem" id="save_as_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Save a Copy...</property>
+                <property name="tooltip-text" translatable="yes"></property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_save_as</property>
+                <property name="action-name">win.FileSaveAs</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSeparatorMenuItem">
+                <property name="visible">1</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImageMenuItem" id="preview_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">P_review...</property>
+                <property name="tooltip-text" translatable="yes">Preview this document</property>
+				<property name="use-underline">1</property>
+                <property name="action-name">win.FilePreview</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImageMenuItem" id="print_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Print...</property>
+                <property name="tooltip-text" translatable="yes">Print this document</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_print</property>
+                <property name="action-name">win.FilePrint</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSeparatorMenuItem">
+                <property name="visible">1</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImageMenuItem" id="close_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Close</property>
+                <property name="tooltip-text" translatable="yes">close the window</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_close</property>
+                <property name="action-name">win.FileCloseWindow</property>
+              </object>
+	        </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem">
+        <property name="visible">1</property>
+        <property name="label" translatable="yes">_Edit</property>
+        <property name="use-underline">1</property>
+        <child type="submenu">
+          <object class="GtkMenu">
+            <child>
+              <object class="GtkImageMenuItem" id="copy_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Copy</property>
+                <property name="tooltip-text" translatable="yes">Copy the selection</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_copy</property>
+                <property name="action-name">win.EditCopy</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSeparatorMenuItem">
+                <property name="visible">1</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem" id="select_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">Select _All</property>
+                <property name="tooltip-text" translatable="yes"></property>
+                <property name="use-underline">1</property>
+                <property name="action-name">win.EditSelectAll</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSeparatorMenuItem">
+                <property name="visible">1</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImageMenuItem" id="find_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Find</property>
+                <property name="tooltip-text" translatable="yes">Find a word or phrase in the document</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_find</property>
+                <property name="action-name">win.EditFind</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem" id="find_next_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">Find Ne_xt</property>
+                <property name="tooltip-text" translatable="yes"></property>
+                <property name="use-underline">1</property>
+                <property name="action-name">win.EditFindNext</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem" id="find_previous_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">Find Pre_vious</property>
+                <property name="tooltip-text" translatable="yes"></property>
+                <property name="use-underline">1</property>
+                <property name="action-name">win.EditFindPrevious</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSeparatorMenuItem">
+                <property name="visible">1</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImageMenuItem" id="preferences_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Preferences</property>
+                <property name="tooltip-text" translatable="yes"></property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_preferences</property>
+                <property name="action-name">win.EditPreferences</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem">
+        <property name="visible">1</property>
+        <property name="label" translatable="yes">_View</property>
+        <property name="use-underline">1</property>
+        <child type="submenu">
+          <object class="GtkMenu">
+            <child>
+              <object class="GtkCheckMenuItem" id="side_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Sidebar</property>
+                <property name="tooltip-text" translatable="yes">Show Side Pane</property>
+                <property name="use-underline">1</property>
+                <property name="action-name">win.ViewSidebar</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkCheckMenuItem" id="status_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">S_tatusbar</property>
+                <property name="tooltip-text" translatable="yes">Show Status Bar</property>
+                <property name="use-underline">1</property>
+                <property name="action-name">win.ViewStatusbar</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSeparatorMenuItem">
+                <property name="visible">1</property>
+                <property name="use_action_appearance">0</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem" id="speller_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">Similar _Words</property>
+                <property name="tooltip-text" translatable="yes"></property>
+                <property name="use-underline">1</property>
+                <property name="action-name">win.ViewSpeller</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem" id="sources_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">Dictionary Sources</property>
+                <property name="tooltip-text" translatable="yes"></property>
+                <property name="use-underline">1</property>
+                <property name="action-name">win.ViewSource</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem" id="db_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">Available _Databases</property>
+                <property name="tooltip-text" translatable="yes"></property>
+                <property name="use-underline">1</property>
+                <property name="action-name">win.ViewDB</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem" id="strategies_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">Available St_rategies</property>
+                <property name="tooltip-text" translatable="yes"></property>
+                <property name="use-underline">1</property>
+                <property name="action-name">win.ViewStrat</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="go_menu">
+        <property name="visible">1</property>
+        <property name="label" translatable="yes">_Go</property>
+        <property name="use-underline">1</property>
+        <child type="submenu">
+          <object class="GtkMenu">
+            <child>
+              <object class="GtkImageMenuItem" id="go_up_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Previous Definition</property>
+                <property name="tooltip-text" translatable="yes">Go to the previous definition</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_previous</property>
+                <property name="action-name">win.GoPreviousDef</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImageMenuItem" id="go_down_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Next Definition</property>
+                <property name="tooltip-text" translatable="yes">Go to the next definition</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_next</property>
+                <property name="action-name">win.GoNextDef</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSeparatorMenuItem">
+                <property name="visible">1</property>
+                <property name="use_action_appearance">0</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImageMenuItem" id="go_home_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_First Definition</property>
+                <property name="tooltip-text" translatable="yes">Go to the first definition</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_first</property>
+                <property name="action-name">win.GoFirstDef</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImageMenuItem" id="go_end_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Last Definition</property>
+                <property name="tooltip-text" translatable="yes">Go to the last definition</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_last</property>
+                <property name="action-name">win.GoLastDef</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem">
+        <property name="visible">1</property>
+        <property name="label" translatable="yes">_Help</property>
+        <property name="use-underline">1</property>
+        <child type="submenu">
+          <object class="GtkMenu">
+            <child>
+              <object class="GtkImageMenuItem" id="help_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_Contents</property>
+                <property name="tooltip-text" translatable="yes">Open the help contents for the dictionary</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_help</property>
+                <property name="action-name">win.HelpContents</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImageMenuItem" id="about_item">
+                <property name="visible">1</property>
+                <property name="label" translatable="yes">_About</property>
+                <property name="tooltip-text" translatable="yes">Show the about dialog for the dictionary</property>
+                <property name="use-underline">1</property>
+                <property name="image">menu_icon_about</property>
+                <property name="action-name">win.HelpAbout</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+	</child>
+  </object>
+</interface>
