@@ -4,21 +4,22 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Kenneth Jenssen <kennethjenssen@yahoo.com>, 2018
-# Kim Malmo <berencamlost@msn.com>, 2018
-# b84df44fb72862b85bae7a669218c6c2, 2019
-# heskjestad <cato@heskjestad.xyz>, 2021
+# b84df44fb72862b85bae7a669218c6c2, 2021
+# Kim Malmo <berencamlost@msn.com>, 2021
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
 # Allan Nordhøy <epost@anotheragency.no>, 2021
+# Kenneth Jenssen <kennethjenssen@yahoo.com>, 2021
+# 87d96f43665dd9fb55eba4603e184cae, 2021
+# heskjestad <cato@heskjestad.xyz>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-utils 1.25.1\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
 "POT-Creation-Date: 2021-06-25 18:01+0200\n"
-"PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>, 2021\n"
-"Language-Team: Norwegian Bokmål (https://www.transifex.com/mate/teams/13566/nb/)\n"
+"PO-Revision-Date: 2021-09-21 19:03+0000\n"
+"Last-Translator: heskjestad <cato@heskjestad.xyz>, 2021\n"
+"Language-Team: Norwegian Bokmål (https://app.transifex.com/mate/teams/13566/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -171,7 +172,7 @@ msgstr "Overvåk hjem"
 
 #: baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in:10
 msgid "Whether any change to the home directory should be monitored."
-msgstr "Om endringer i hjemmekatalogen skal overvåkes."
+msgstr "Om endringer i hjemmemappa skal overvåkes."
 
 #: baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in:14
 msgid "Excluded partitions URIs"
@@ -286,7 +287,7 @@ msgstr "Kunne ikke initiere overvåking"
 
 #: baobab/src/baobab.c:594
 msgid "Changes to your home folder will not be monitored."
-msgstr "Endringer i hjemmekatalogen vil ikke overvåkes."
+msgstr "Endringer i hjemmemappa vil ikke overvåkes."
 
 #: baobab/src/baobab.c:913
 msgid "Move to parent folder"
@@ -318,11 +319,11 @@ msgstr "Vis versjon"
 
 #: baobab/src/baobab.c:1225
 msgid "[DIRECTORY]"
-msgstr "[KATALOG]"
+msgstr "[MAPPE]"
 
 #: baobab/src/baobab.c:1257
 msgid "Too many arguments. Only one directory can be specified."
-msgstr "For mange argumenter. Du kan kun oppgi en katalog."
+msgstr "For mange argumenter. Du kan kun oppgi ei mappe."
 
 #: baobab/src/baobab.c:1274
 msgid "Could not detect any mount point."
@@ -1097,7 +1098,7 @@ msgstr "Søk etter filer"
 
 #: gsearchtool/src/gsearchtool.c:994 gsearchtool/src/gsearchtool.c:1023
 msgid "No files found"
-msgstr "Ingen filer funnet"
+msgstr "Fant ingen filer"
 
 #: gsearchtool/src/gsearchtool.c:1016
 msgid "(stopped)"
@@ -1105,7 +1106,7 @@ msgstr "(stoppet)"
 
 #: gsearchtool/src/gsearchtool.c:1022
 msgid "No Files Found"
-msgstr "Ingen filer funnet"
+msgstr "Fant ingen filer"
 
 #: gsearchtool/src/gsearchtool.c:1027
 #, c-format
@@ -1699,7 +1700,7 @@ msgstr "Sun GNOME-dokumentasjonslaget <gdocteam@sun.com>"
 #: logview/src/logview-app.c:369
 #, c-format
 msgid "Impossible to open the file %s"
-msgstr "Kam ikke åpne filen %s"
+msgstr "Kan ikke åpne filen %s"
 
 #: logview/src/logview-filter-manager.c:93
 msgid "Filter name is empty!"
@@ -1744,7 +1745,7 @@ msgstr "Finn forrige"
 
 #: logview/src/logview-findbar.c:187
 msgid "Find previous occurrence of the search string"
-msgstr "Finn forrige oppføring av søkestrengen"
+msgstr "Finn forrige forekomst av søkestrengen"
 
 #: logview/src/logview-findbar.c:192
 msgid "Find Next"
@@ -1752,7 +1753,7 @@ msgstr "Finn neste"
 
 #: logview/src/logview-findbar.c:195
 msgid "Find next occurrence of the search string"
-msgstr "Finn neste oppøring av søkestrengen"
+msgstr "Finn neste forekomst av søkestrengen"
 
 #: logview/src/logview-findbar.c:202
 msgid "Clear the search string"
@@ -1841,7 +1842,7 @@ msgstr "Brutt"
 #: mate-dictionary/libgdict/gdict-defbox.c:1219
 #: mate-dictionary/libgdict/gdict-defbox.c:1253
 msgid "Not found"
-msgstr "Ikke funnet"
+msgstr "Fant ikke"
 
 #: logview/src/logview-window.c:773
 msgid "About System Log Viewer"
@@ -1905,7 +1906,7 @@ msgstr "Velg hele loggen"
 
 #: logview/src/logview-window.c:838
 msgid "_Find..."
-msgstr "_Finn …"
+msgstr "_Finn…"
 
 #: logview/src/logview-window.c:838
 msgid "Find a word or phrase in the log"
@@ -1950,7 +1951,7 @@ msgstr "Åpne hjelp for loggvisning"
 #: logview/src/logview-window.c:853 mate-dictionary/src/gdict-applet.c:1176
 #: mate-dictionary/src/gdict-window.c:1314
 msgid "_About"
-msgstr "Om"
+msgstr "_Om"
 
 #: logview/src/logview-window.c:853
 msgid "Show the about dialog for the log viewer"
@@ -2138,8 +2139,7 @@ msgstr "Ingen tilkobling til ordboktjener på «%s:%d»"
 #: mate-dictionary/libgdict/gdict-client-context.c:1052
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
-msgstr ""
-"Oppslag mislyktes for vertsnavn «%s»: Ingen passende ressurser ble funnet"
+msgstr "Oppslag mislyktes for vertsnavn «%s»: Fant ingen passende ressurser"
 
 #: mate-dictionary/libgdict/gdict-client-context.c:1083
 #, c-format
@@ -2149,7 +2149,7 @@ msgstr "Oppslag mislyktes for vert «%s» : %s"
 #: mate-dictionary/libgdict/gdict-client-context.c:1117
 #, c-format
 msgid "Lookup failed for host '%s': host not found"
-msgstr "Oppslag mislyktes for vert «%s»: vert ikke funnet"
+msgstr "Oppslag mislyktes for vert «%s»: Fant ikke vert"
 
 #: mate-dictionary/libgdict/gdict-client-context.c:1169
 #, c-format
@@ -2172,7 +2172,7 @@ msgstr ""
 #: mate-dictionary/libgdict/gdict-client-context.c:1217
 #, c-format
 msgid "No definitions found for '%s'"
-msgstr "Ingen definisjoner funnet for «%s»"
+msgstr "Fant ingen definisjoner for «%s»"
 
 #: mate-dictionary/libgdict/gdict-client-context.c:1232
 #, c-format
@@ -2197,12 +2197,12 @@ msgstr "Ugyldige parametere for kommando «%s»"
 #: mate-dictionary/libgdict/gdict-client-context.c:1292
 #, c-format
 msgid "No databases found on dictionary server at '%s'"
-msgstr "Ingen databaser funnet på ordboktjener «%s»"
+msgstr "Fant ingen databaser på ordboktjener «%s»"
 
 #: mate-dictionary/libgdict/gdict-client-context.c:1307
 #, c-format
 msgid "No strategies found on dictionary server at '%s'"
-msgstr "Ingen strategier funnet på ordboktjener «%s»"
+msgstr "Fant ingen strategier på ordboktjener «%s»"
 
 #: mate-dictionary/libgdict/gdict-client-context.c:1732
 #, c-format
@@ -2357,7 +2357,7 @@ msgstr "Ugyldig transporttype «%d»"
 #: mate-dictionary/libgdict/gdict-source.c:436
 #, c-format
 msgid "No '%s' group found inside the dictionary source definition"
-msgstr "Ingen gruppe \"%s\" funnet i ordbokkildens definisjon"
+msgstr "Fant ikke gruppa «%s» i kildedefinisjonen for ordbok"
 
 #: mate-dictionary/libgdict/gdict-source.c:452
 #: mate-dictionary/libgdict/gdict-source.c:476
@@ -2365,13 +2365,13 @@ msgstr "Ingen gruppe \"%s\" funnet i ordbokkildens definisjon"
 #: mate-dictionary/libgdict/gdict-source.c:525
 #, c-format
 msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
-msgstr "Kunne ikke finne nøkkelen «%s» i kildedefinisjonen for ordbok: %s"
+msgstr "Fant ikke nøkkelen «%s» i kildedefinisjonen for ordbok: %s"
 
 #: mate-dictionary/libgdict/gdict-source.c:550
 #, c-format
 msgid ""
 "Unable to get the '%s' key inside the dictionary source definition file: %s"
-msgstr "Kan ikke finne nøkkelen «%s» i definisjonsfilen for ordbokkilde: %s"
+msgstr "Fant ikke nøkkelen «%s» i definisjonsfilen for ordbokkilde: %s"
 
 #: mate-dictionary/libgdict/gdict-source.c:736
 msgid "Dictionary source does not have name"
@@ -2400,7 +2400,7 @@ msgstr "Kilder"
 
 #: mate-dictionary/libgdict/gdict-source-loader.c:177
 msgid "Dictionary sources found"
-msgstr "Ordbokkilder funnet"
+msgstr "Fant ordbokkilder"
 
 #: mate-dictionary/libgdict/gdict-speller.c:347
 msgid "Clear the list of similar words"
@@ -2480,8 +2480,8 @@ msgid ""
 "\n"
 "%s\n"
 msgstr ""
-"Definisjon av \"%s\"\n"
-" Fra \"%s\":\n"
+"Definisjon av «%s»\n"
+" Fra «%s»:\n"
 "\n"
 "%s\n"
 
@@ -2496,7 +2496,7 @@ msgstr "Se mate-dictionary --help for bruk\n"
 
 #: mate-dictionary/src/gdict-app.c:260
 msgid "Unable to find a suitable dictionary source"
-msgstr "Kan ikke finne en passende ordbokkilde"
+msgstr "Fant ikke en passende ordbokkilde"
 
 #: mate-dictionary/src/gdict-app.c:294
 #, c-format
@@ -2641,7 +2641,7 @@ msgstr "Ingen ordbokkilde ved navnet «%s» tilgjengelig"
 #: mate-dictionary/src/gdict-applet.c:872
 #: mate-dictionary/src/gdict-window.c:499
 msgid "Unable to find dictionary source"
-msgstr "Kan ikke finne ordbokkilde"
+msgstr "Fant ikke ordbokkilde"
 
 #: mate-dictionary/src/gdict-applet.c:888
 #: mate-dictionary/src/gdict-window.c:515
@@ -2754,7 +2754,7 @@ msgstr "Fant ingen definisjoner"
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
-msgstr[0] "Fant én definisjon"
+msgstr[0] "Fant %d definisjon"
 msgstr[1] "Fant %d definisjoner"
 
 #: mate-dictionary/src/gdict-window.c:578
@@ -2813,7 +2813,7 @@ msgstr "Finn forri_ge"
 
 #: mate-dictionary/src/gdict-window.c:1288
 msgid "_Preferences"
-msgstr "Innstillinger"
+msgstr "Innstillin_ger"
 
 #: mate-dictionary/src/gdict-window.c:1292
 msgid "_Previous Definition"
@@ -3098,7 +3098,7 @@ msgstr "Mappe for skjermdump"
 
 #: mate-screenshot/data/org.mate.screenshot.gschema.xml.in:11
 msgid "The directory the last screenshot was saved in."
-msgstr "Katalog hvor forrige skjermdump ble lagret."
+msgstr "Mappe hvor forrige skjermdump ble lagret."
 
 #: mate-screenshot/data/org.mate.screenshot.gschema.xml.in:15
 msgid "Include Border"
@@ -3267,7 +3267,8 @@ msgid ""
 "Conflicting options: --clipboard and --interactive should not be used at the"
 " same time.\n"
 msgstr ""
-"Motstridende valg: --clipboard og --interactive kan ikke brukes samtidig.\n"
+"Konflikt mellom flagg: --clipboard og --interactive kan ikke brukes "
+"samtidig.\n"
 
 #: mate-screenshot/src/mate-screenshot.c:1363
 msgid ""

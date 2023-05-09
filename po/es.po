@@ -4,34 +4,34 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# difusion, 2018
-# Fabian Rodriguez, 2018
-# Lluís Tusquellas <lutusq@gmail.com>, 2018
-# Benjamin Perez Carrillo <benperezc@gmail.com>, 2018
-# Daniel Aranda <dwarandae@gmail.com>, 2018
-# Andres Sanchez <blackatze93@gmail.com>, 2018
-# seacat <seacat.linux@gmail.com>, 2018
-# Adolfo Jayme Barrientos, 2018
-# Emiliano Fascetti, 2018
-# Joel Barrios <darkshram@gmail.com>, 2019
-# Mario Verdin <jmvl1303@gmail.com>, 2019
-# Toni Estévez <toni.estevez@gmail.com>, 2021
-# Stefano Karapetsas <stefano@karapetsas.com>, 2021
+# Fabian Rodriguez, 2021
+# Andres Sanchez <blackatze93@gmail.com>, 2021
+# Lluís Tusquellas <lutusq@gmail.com>, 2021
 # ebray187 <ebray187@gmail.com>, 2021
+# seacat <seacat.linux@gmail.com>, 2021
+# Benjamin Perez Carrillo <benperezc@gmail.com>, 2021
+# difusion, 2021
+# Adolfo Jayme-Barrientos, 2021
+# Stefano Karapetsas <stefano@karapetsas.com>, 2021
+# clefebvre <clement.lefebvre@linuxmint.com>, 2021
+# Emiliano Fascetti, 2021
+# Joel Barrios <darkshram@gmail.com>, 2021
+# Daniel Aranda <dwarandae@gmail.com>, 2021
+# Toni Estévez <toni.estevez@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-utils 1.25.1\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
 "POT-Creation-Date: 2021-06-25 18:01+0200\n"
-"PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: ebray187 <ebray187@gmail.com>, 2021\n"
-"Language-Team: Spanish (https://www.transifex.com/mate/teams/13566/es/)\n"
+"PO-Revision-Date: 2021-09-21 19:03+0000\n"
+"Last-Translator: Toni Estévez <toni.estevez@gmail.com>, 2021\n"
+"Language-Team: Spanish (https://app.transifex.com/mate/teams/13566/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: baobab/data/mate-disk-usage-analyzer.desktop.in.in:3
 #: baobab/data/mate-disk-usage-analyzer.appdata.xml.in:7
@@ -241,7 +241,7 @@ msgid ""
 " use to view and monitor your disk usage and folder structure. It displays "
 "summary information in ring or treemap charts."
 msgstr ""
-"Como su nombre indica, el Analizador del uso del disco es una utilidad "
+"Como su nombre indica, el Analizador del uso del disco es una herramienta "
 "gráfica que puede usar para ver y monitorear el uso del disco y la "
 "estructura de carpetas. Muestra información resumida en gráficos de anillo o"
 " de árbol."
@@ -299,6 +299,7 @@ msgid "%5d item"
 msgid_plural "%5d items"
 msgstr[0] "%5d elemento"
 msgstr[1] "%5d elementos"
+msgstr[2] "%5d elementos"
 
 #: baobab/src/baobab.c:593
 msgid "Could not initialize monitoring"
@@ -431,7 +432,7 @@ msgstr "FTP público"
 
 #: baobab/src/baobab-remote-connect-dialog.c:175
 msgid "FTP (with login)"
-msgstr "FTP (con inicio de sesión)"
+msgstr "FTP (con entrada)"
 
 #: baobab/src/baobab-remote-connect-dialog.c:178
 msgid "Windows share"
@@ -490,7 +491,7 @@ msgstr "Nombre del _dominio:"
 
 #: baobab/src/baobab-remote-connect-dialog.c:592
 msgid "Connect to Server"
-msgstr "Conectarse al servidor"
+msgstr "Conectar con el servidor"
 
 #: baobab/src/baobab-remote-connect-dialog.c:608
 msgid "Service _type:"
@@ -591,7 +592,7 @@ msgstr "Se ha producido un error al mostrar la ayuda."
 #: baobab/src/callbacks.c:74 logview/src/logview-about.h:44
 #: mate-dictionary/src/gdict-about.c:49
 msgid "MATE Documentation Team"
-msgstr "Equipo de Documentación de MATE"
+msgstr "Equipo de documentación de MATE"
 
 #: baobab/src/callbacks.c:79 logview/src/logview-about.h:49
 #: mate-dictionary/src/gdict-about.c:57
@@ -648,7 +649,8 @@ msgstr ""
 #: mate-dictionary/src/gdict-about.c:53
 msgid "translator-credits"
 msgstr ""
-"Toni Estevez <toni.estevez@gmail.com>, 2019\n"
+"Toni Estevez <toni.estevez@gmail.com>, 2020-2021\n"
+"Adolfo Jayme Barrientos <fitojb@ubuntu.com>, 2018\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2007-2010\n"
 "Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003-2006\n"
 "Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2002-2003"
@@ -679,10 +681,10 @@ msgid ""
 " contained within a file, ownership, date of modification, file size, folder"
 " exclusion, etc.."
 msgstr ""
-"La herramienta de búsqueda MATE es una utilidad simple pero potente que le "
-"permite buscar archivos y carpetas en cualquier sistema de archivos montado."
-" Su interfaz le da acceso instantáneo a una amplia variedad de parámetros "
-"para cada búsqueda, como el contenido de un archivo de texto, el "
+"La herramienta de búsqueda MATE es una herramienta simple pero potente que "
+"le permite buscar archivos y carpetas en cualquier sistema de archivos "
+"montado. Su interfaz le da acceso instantáneo a una amplia variedad de "
+"parámetros para cada búsqueda, como el contenido de un archivo de texto, el "
 "propietario, la fecha de modificación, el tamaño del archivo, la exclusión "
 "de carpetas, etc."
 
@@ -956,17 +958,17 @@ msgstr "Iniciando %s"
 
 #: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1118
 msgid "Application does not accept documents on command line"
-msgstr "La aplicación no acepta documentos en la línea de órdenes"
+msgstr "La aplicación no acepta documentos en la consola"
 
 #: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1186
 #, c-format
 msgid "Unrecognized launch option: %d"
-msgstr "Opción de inicio no reconocida: %d"
+msgstr "Opción de apertura no reconocida: %d"
 
 #: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1402
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 msgstr ""
-"No se pueden pasar los URI de documentos a una entrada .desktop «Type=Link»"
+"No se pueden pasar URI de documentos a una entrada .desktop «Type=Link»"
 
 #: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1423
 msgid "Not a launchable item"
@@ -990,15 +992,15 @@ msgstr "Especificar el id. de gestión de sesión"
 
 #: gsearchtool/mate-submodules/libegg/eggsmclient.c:244
 msgid "ID"
-msgstr "Id."
+msgstr "ID"
 
 #: gsearchtool/mate-submodules/libegg/eggsmclient.c:270
 msgid "Session management options:"
-msgstr "Opciones de gestión de sesiones:"
+msgstr "Opciones de gestión de la sesión:"
 
 #: gsearchtool/mate-submodules/libegg/eggsmclient.c:271
 msgid "Show session management options"
-msgstr "Mostrar las opciones de gestión de sesiones"
+msgstr "Mostrar las opciones de gestión de la sesión"
 
 #: gsearchtool/src/gsearchtool.c:82
 msgid "Contains the _text"
@@ -1135,8 +1137,9 @@ msgstr "No se han encontrado archivos"
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
-msgstr[0] "%'d Archivo Encontrado"
-msgstr[1] "%'d Archivos Encontrados"
+msgstr[0] "%'d archivo encontrado"
+msgstr[1] "%'d archivos encontrados"
+msgstr[2] "%'d archivos encontrados"
 
 #: gsearchtool/src/gsearchtool.c:1031 gsearchtool/src/gsearchtool.c:1069
 #, c-format
@@ -1144,6 +1147,7 @@ msgid "%'d file found"
 msgid_plural "%'d files found"
 msgstr[0] "%'d archivo encontrado"
 msgstr[1] "%'d archivos encontrados"
+msgstr[2] "%'d archivos encontrados"
 
 #: gsearchtool/src/gsearchtool.c:1160
 msgid "Entry changed called for a non entry option!"
@@ -1377,14 +1381,16 @@ msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
 msgstr[0] "¿Seguro que quiere abrir %d documento?"
 msgstr[1] "¿Seguro que quiere abrir %d documentos?"
+msgstr[2] "¿Seguro que quiere abrir %d documentos?"
 
 #: gsearchtool/src/gsearchtool-callbacks.c:348
 #: gsearchtool/src/gsearchtool-callbacks.c:548
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
-msgstr[0] "Esto abrirá %d ventana separada."
-msgstr[1] "Esto abrirá %d ventanas separadas."
+msgstr[0] "Esta acción abrirá %d ventana separada."
+msgstr[1] "Esta acción abrirá %d ventanas separadas."
+msgstr[2] "Esta acción abrirá %d ventanas separadas."
 
 #: gsearchtool/src/gsearchtool-callbacks.c:393
 #, c-format
@@ -1410,6 +1416,7 @@ msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
 msgstr[0] "¿Seguro que quiere abrir %d carpeta?"
 msgstr[1] "¿Seguro que quiere abrir %d carpetas?"
+msgstr[2] "¿Seguro que quiere abrir %d carpetas?"
 
 #: gsearchtool/src/gsearchtool-callbacks.c:725
 #, c-format
@@ -1877,7 +1884,7 @@ msgstr "Ajustado"
 #: mate-dictionary/libgdict/gdict-defbox.c:1219
 #: mate-dictionary/libgdict/gdict-defbox.c:1253
 msgid "Not found"
-msgstr "No encontrado"
+msgstr "No se ha encontrado"
 
 #: logview/src/logview-window.c:773
 msgid "About System Log Viewer"
@@ -2033,7 +2040,7 @@ msgstr "No se han podido abrir los archivos siguientes:"
 
 #: mate-dictionary/data/default.desktop.in:3
 msgid "Default"
-msgstr "Predeterminado"
+msgstr "Por defecto"
 
 #: mate-dictionary/data/default.desktop.in:4
 msgid "Default Dictionary Server"
@@ -2345,7 +2352,7 @@ msgstr "Se ha producido un error al obtener la definición"
 
 #: mate-dictionary/libgdict/gdict-source.c:229
 msgid "Filename"
-msgstr "Archivo"
+msgstr "Nombre del archivo"
 
 #: mate-dictionary/libgdict/gdict-source.c:230
 msgid "The filename used by this dictionary source"
@@ -2696,7 +2703,7 @@ msgstr "No hay ninguna fuente de diccionario con el nombre «%s»"
 #: mate-dictionary/src/gdict-applet.c:872
 #: mate-dictionary/src/gdict-window.c:499
 msgid "Unable to find dictionary source"
-msgstr "No se puede encontrar la fuente de diccionario"
+msgstr "No se puede encontrar la fuente del diccionario"
 
 #: mate-dictionary/src/gdict-applet.c:888
 #: mate-dictionary/src/gdict-window.c:515
@@ -2809,8 +2816,9 @@ msgstr "No se han encontrado definiciones"
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
-msgstr[0] "Una definición entrontrada"
+msgstr[0] "Una definición encontrada"
 msgstr[1] "%d definiciones encontradas"
+msgstr[2] "%d definiciones encontradas"
 
 #: mate-dictionary/src/gdict-window.c:578
 #, c-format
@@ -2868,7 +2876,7 @@ msgstr "Encontrar _anterior"
 
 #: mate-dictionary/src/gdict-window.c:1288
 msgid "_Preferences"
-msgstr "Preferencias"
+msgstr "_Preferencias"
 
 #: mate-dictionary/src/gdict-window.c:1292
 msgid "_Previous Definition"
@@ -2997,7 +3005,7 @@ msgstr "Tipografía de _impresión:"
 
 #: mate-dictionary/data/mate-dictionary-preferences.ui:216
 msgid "Print"
-msgstr "Imprimir"
+msgstr "Impr"
 
 #: mate-dictionary/data/mate-dictionary-source.ui:38
 msgid "_Description:"
@@ -3099,7 +3107,7 @@ msgstr "Captura de pantalla de MATE"
 
 #: mate-screenshot/data/mate-screenshot.appdata.xml.in:8
 msgid "A screenshot utility for MATE Desktop"
-msgstr "Una utilidad de captura de pantalla para el escritorio MATE"
+msgstr "Una herramienta de captura de pantalla para el escritorio MATE"
 
 #: mate-screenshot/data/mate-screenshot.appdata.xml.in:10
 msgid ""
@@ -3108,10 +3116,10 @@ msgid ""
 "system clipboard or save them in Portable Network Graphics (.png) image "
 "format."
 msgstr ""
-"Captura de pantalla de MATE es una sencilla utilidad que le permite obtener "
-"capturas de pantalla de su escritorio o de las ventanas de las aplicaciones."
-" Puede seleccionar copiarlas al portapapeles del sistema o guardarlas en "
-"formato de imagen PNG (.png)."
+"Captura de pantalla de MATE es una sencilla herramienta que le permite "
+"obtener capturas de pantalla de su escritorio o de las ventanas de las "
+"aplicaciones. Puede seleccionar copiarlas al portapapeles del sistema o "
+"guardarlas en formato de imagen PNG (.png)."
 
 #: mate-screenshot/data/mate-screenshot.desktop.in:3
 #: mate-screenshot/src/mate-screenshot.c:519

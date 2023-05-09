@@ -4,20 +4,21 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Asier Iturralde Sarasola <asier.iturralde@gmail.com>, 2019
-# Alexander Gabilondo <alexgabi@disroot.org>, 2020
-# David García-Abad <dgarciabad@gmail.com>, 2020
-# Porrumentzio <porrumentzio@riseup.net>, 2020
+# clefebvre <clement.lefebvre@linuxmint.com>, 2021
+# David García-Abad <dgarciabad@gmail.com>, 2021
+# Porrumentzio <porrumentzio@riseup.net>, 2021
+# Asier Iturralde Sarasola <asier.iturralde@gmail.com>, 2021
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
+# Alexander Gabilondo <alexgabi@disroot.org>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-utils 1.25.1\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
 "POT-Creation-Date: 2021-06-25 18:01+0200\n"
-"PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2021\n"
-"Language-Team: Basque (https://www.transifex.com/mate/teams/13566/eu/)\n"
+"PO-Revision-Date: 2021-09-21 19:03+0000\n"
+"Last-Translator: Alexander Gabilondo <alexgabi@disroot.org>, 2022\n"
+"Language-Team: Basque (https://app.transifex.com/mate/teams/13566/eu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -27,7 +28,7 @@ msgstr ""
 #: baobab/data/mate-disk-usage-analyzer.desktop.in.in:3
 #: baobab/data/mate-disk-usage-analyzer.appdata.xml.in:7
 msgid "MATE Disk Usage Analyzer"
-msgstr ""
+msgstr "MATE Disko Erabileraren Analizatzailea"
 
 #: baobab/data/mate-disk-usage-analyzer.desktop.in.in:4
 msgid "Check folder sizes and available disk space"
@@ -37,7 +38,7 @@ msgstr "Egiaztatu karpeten tamainak eta diskoan dagoen leku erabilgarria"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: baobab/data/mate-disk-usage-analyzer.desktop.in.in:14
 msgid "MATE;check;disk;usage;analyze;size;space;"
-msgstr ""
+msgstr "MATE; egiaztatu; diskoa; erabilera; aztertu; tamaina; espazioa;"
 
 #: baobab/data/baobab-dialog-scan-props.ui:18
 msgid "Disk Usage Analyzer Preferences"
@@ -190,7 +191,7 @@ msgstr "Leiho nagusiko tresna-barra ikusgai dagoen edo ez."
 
 #: baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in:26
 msgid "Statusbar is Visible"
-msgstr ""
+msgstr "Egoera-barra ikusgai dago"
 
 #: baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in:27
 msgid "Whether the status bar at the bottom of main window should be visible."
@@ -198,7 +199,7 @@ msgstr "Leiho nagusiko beheko egoera-barra ikusgai dagoen edo ez."
 
 #: baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in:31
 msgid "Subfolder tips visible"
-msgstr ""
+msgstr "Azpikarpeta aholkuak ikusgai"
 
 #: baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in:32
 msgid "Whether the subfolder tooltips of the selected folder are drawn."
@@ -207,7 +208,7 @@ msgstr ""
 
 #: baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in:36
 msgid "Active Chart"
-msgstr ""
+msgstr "Diagrama aktiboa"
 
 #: baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in:37
 msgid "Which type of chart should be displayed."
@@ -223,8 +224,8 @@ msgid ""
 " use to view and monitor your disk usage and folder structure. It displays "
 "summary information in ring or treemap charts."
 msgstr ""
-"Bere izena dioen bezala, Diskaren Erabilera Aztertzeko tresna zure diskaren "
-"erabiliera eta karpeten egitura aztertzeko eta kontrolatzeko erabili "
+"Bere izenak dioen bezala, Diskaren Erabilera Aztertzeko tresna zure diskaren"
+" erabiliera eta karpeten egitura aztertzeko eta kontrolatzeko erabili "
 "dezakezu. Informazioa eraztun edo zuhaitz grafiko gisa erabiliz laburbiltzen"
 " du."
 
@@ -234,6 +235,10 @@ msgid ""
 "local or remote. There is also an option to constantly monitor any external "
 "changes to the home directory and warn the user if a file is added/removed."
 msgstr ""
+"Fitxategi-sistema bat, zure home karpeta edo beste edozein karpeta eskaneatu"
+" dezakezu - lokala edo urrunekoa. Aukera ere badago home direktorioaren "
+"kanpoko aldaketak etengabe kontrolatzeko eta erabiltzaileari fitxategi bat "
+"gehitzen/kentzen bada abisatzeko."
 
 #: baobab/src/baobab.c:141 baobab/src/baobab.c:358
 msgid "Scanning..."
@@ -603,10 +608,12 @@ msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program.  If not, see <https://www.gnu.org/licenses/>."
 msgstr ""
+"Programa honekin batera GNU Lizentzia Publiko Orokorraren kopia bat jaso "
+"beharko zenuke. Hala ez bada, ikusi <https://www.gnu.org/licenses/>"
 
 #: baobab/src/callbacks.c:105
 msgid "About Disk Usage Analyzer"
-msgstr ""
+msgstr "Disko-erabileraren analizatzaileari buruz"
 
 #: baobab/src/callbacks.c:106
 msgid "Analyze your disk usage through a graphical tool."
@@ -637,11 +644,11 @@ msgstr "Karpeta ez da existitzen."
 #: gsearchtool/data/mate-search-tool.appdata.xml.in:7
 #: gsearchtool/data/mate-search-tool.desktop.in:3
 msgid "MATE Search Tool"
-msgstr ""
+msgstr "MATE Bilaketa tresna"
 
 #: gsearchtool/data/mate-search-tool.appdata.xml.in:8
 msgid "A file searching tool for MATE Desktop"
-msgstr ""
+msgstr "MATE mahaigainerako fitxategiak bilatzeko tresna"
 
 #: gsearchtool/data/mate-search-tool.appdata.xml.in:10
 msgid ""
@@ -651,6 +658,11 @@ msgid ""
 " contained within a file, ownership, date of modification, file size, folder"
 " exclusion, etc.."
 msgstr ""
+"MATE Bilaketa tresna sinple baina indartsua da, muntatutako edozein "
+"fitxategi-sistematan fitxategiak eta karpetak bilatzeko aukera ematen duena."
+" Bere interfazeak bilaketa bakoitzerako parametro ugarietarako berehalako "
+"sarbidea ematen dizu, hala nola, fitxategi batean jasotako testua, jabetza, "
+"aldaketa data, fitxategiaren tamaina, karpeta baztertzea, etab."
 
 #: gsearchtool/data/mate-search-tool.desktop.in:4
 msgid "Locate documents and folders on this computer by name or content"
@@ -664,14 +676,15 @@ msgstr ""
 msgid ""
 "MATE;search;files;locate;documents;folders;computer;name;content;find;tool;"
 msgstr ""
+"MATE;bilatu;fitxategiak;kokatu;dokumentuak;karpetak;ordenagailua;izena;edukia;aurkitu;tresna;"
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:5
 msgid "Search history"
-msgstr ""
+msgstr "Bilaketen historia"
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:6
 msgid "This key defines the items which were searched for in the past."
-msgstr ""
+msgstr "Gako honek iraganean bilatu diren elementuak definitzen ditu."
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:10
 msgid "Show Additional Options"
@@ -1421,11 +1434,11 @@ msgstr "I_reki honekin"
 
 #: gsearchtool/src/gsearchtool-callbacks.c:1299
 msgid "Open Containing _Folder"
-msgstr ""
+msgstr "Ireki dagoen karpeta"
 
 #: gsearchtool/src/gsearchtool-callbacks.c:1310
 msgid "Copy _Path"
-msgstr ""
+msgstr "Kopiatu _bidea"
 
 #: gsearchtool/src/gsearchtool-callbacks.c:1344
 msgid "_Save Results As..."
@@ -1636,11 +1649,11 @@ msgstr ""
 
 #: logview/data/org.mate.system-log.gschema.xml.in:30
 msgid "List of saved filters"
-msgstr ""
+msgstr "Gordetako iragazkien zerrenda"
 
 #: logview/data/org.mate.system-log.gschema.xml.in:31
 msgid "List of saved regexp filters"
-msgstr ""
+msgstr "Gordetako ohiko iragazkien zerrenda"
 
 #: logview/data/logview-filter.ui:32 mate-disk-image-mounter/src/main.c:124
 #: mate-screenshot/data/mate-screenshot.ui:92
@@ -1649,7 +1662,7 @@ msgstr "_Utzi"
 
 #: logview/data/logview-filter.ui:48
 msgid "_Apply"
-msgstr ""
+msgstr "_Aplikatu"
 
 #: logview/data/logview-filter.ui:91
 #: mate-screenshot/data/mate-screenshot.ui:178
@@ -1682,7 +1695,7 @@ msgstr "Efektua:"
 
 #: logview/src/logview-about.h:41 mate-dictionary/src/gdict-about.c:46
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
-msgstr ""
+msgstr "Sun GNOMEren dokumentazio taldea <gdocteam@sun.com>"
 
 #: logview/src/logview-app.c:369
 #, c-format
@@ -1781,6 +1794,9 @@ msgid ""
 "Copyright (C) 2004-2008 Vincent Noel, Cosimo Cecchi and others.\n"
 "Copyright (C) 2011-2021 MATE developers.\n"
 msgstr ""
+"%s - bertsioa %s\n"
+"Copyright (C) 2004-2008 Vincent Noel, Cosimo Cecchi eta beste batzuk.\n"
+"Copyright (C) 2011-2021 MATE garatzaileak.\n"
 
 #: logview/src/logview-main.c:64
 msgid "Show the application's version"
@@ -1834,17 +1850,20 @@ msgstr "Ez da aurkitu"
 
 #: logview/src/logview-window.c:773
 msgid "About System Log Viewer"
-msgstr ""
+msgstr "Egunkari-fitxategien ikustaileari buruz"
 
 #: logview/src/logview-window.c:774
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
 "Copyright © 2011-2021 MATE developers"
 msgstr ""
+"Copyright 1998-2008 Free Software Foundation, Inc.\n"
+"Copyright 2011-2021 MATE garatzaileak"
 
 #: logview/src/logview-window.c:778
 msgid "View, monitor or analyze your system logs in a gradual manner."
 msgstr ""
+"Ikusi, kontrolatu edo aztertu zure sistemaren erregistroak modu mailakatuan."
 
 #: logview/src/logview-window.c:821 mate-dictionary/src/gdict-window.c:1258
 msgid "_File"
@@ -2005,7 +2024,7 @@ msgstr ""
 
 #: mate-dictionary/data/mate-dictionary.appdata.xml.in:8
 msgid "A dictionary for MATE Desktop"
-msgstr ""
+msgstr "MATE mahaigainerako hiztegia"
 
 #: mate-dictionary/data/mate-dictionary.appdata.xml.in:10
 msgid ""
@@ -2014,6 +2033,10 @@ msgid ""
 " add your own sources, while you can select specific servers for a specific "
 "query."
 msgstr ""
+"MATE Hiztegiak lineako hiztegietan hitzak bilatzeko aukera ematen du. Dict "
+"zerbitzarien (RFC 2229) zerrenda batekin aurrez konfiguratuta dator, eta "
+"horri zure iturriak gehi ditzaiokezu, eta kontsulta zehatz baterako "
+"zerbitzari zehatzak hauta ditzakezu."
 
 #: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:5
 msgid "Dictionary Applet Factory"
@@ -2290,7 +2313,7 @@ msgstr "Hiztegi-iturburuak erabiltzen duen fitxategi-izena"
 
 #: mate-dictionary/libgdict/gdict-source.c:244
 msgid "The display name of this dictionary source"
-msgstr ""
+msgstr "Hiztegi-iturburu honen bistaratzeko izena"
 
 #: mate-dictionary/libgdict/gdict-source.c:257
 msgid "Description"
@@ -2307,7 +2330,7 @@ msgstr "Datu-basea"
 
 #: mate-dictionary/libgdict/gdict-source.c:272
 msgid "The default database of this dictionary source"
-msgstr ""
+msgstr "Hiztegi-iturburu honen datu-base lehenetsia"
 
 #: mate-dictionary/libgdict/gdict-source.c:285
 #: mate-dictionary/libgdict/gdict-speller.c:382
@@ -2316,7 +2339,7 @@ msgstr "Estrategia"
 
 #: mate-dictionary/libgdict/gdict-source.c:286
 msgid "The default strategy of this dictionary source"
-msgstr ""
+msgstr "Hiztegi-iturburu honen estrategia lehenetsia"
 
 #: mate-dictionary/libgdict/gdict-source.c:299
 msgid "Transport"
@@ -2437,7 +2460,7 @@ msgstr "Erakutsi GDict-en aukerak"
 
 #: mate-dictionary/src/gdict-about.c:54
 msgid "Look up words or terms in a dictionary source."
-msgstr ""
+msgstr "Bilatu hitzak edo terminoak hiztegi-iturburu batean."
 
 #: mate-dictionary/src/gdict-about.c:82 mate-dictionary/src/gdict-app.c:363
 #: mate-dictionary/src/gdict-window.c:580
@@ -2447,13 +2470,15 @@ msgstr "Hiztegia"
 
 #: mate-dictionary/src/gdict-about.c:84
 msgid "About Dictionary"
-msgstr ""
+msgstr "Hiztegiari buruz"
 
 #: mate-dictionary/src/gdict-about.c:85
 msgid ""
 "Copyright © 2005-2006 Emmanuele Bassi\n"
 "Copyright © 2011-2021 MATE developers"
 msgstr ""
+"Copyright 2005-2006 Emmanuele Bassi\n"
+"Copyright 2011-2021 MATE garatzaileak"
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
@@ -2705,7 +2730,7 @@ msgstr "Kendu unean hautatutako hiztegi-iturburua"
 
 #: mate-dictionary/src/gdict-pref-dialog.c:725
 msgid "Edit the currently selected dictionary source"
-msgstr ""
+msgstr "Editatu une honetan hautatutako hiztegi-iturburua"
 
 #: mate-dictionary/src/gdict-pref-dialog.c:733
 msgid "Set the font used for printing the definitions"
@@ -2783,7 +2808,7 @@ msgstr "Inprimatu dokumentu hau"
 
 #: mate-dictionary/src/gdict-window.c:1281
 msgid "_Find"
-msgstr ""
+msgstr "_Bilatu"
 
 #: mate-dictionary/src/gdict-window.c:1282
 msgid "Find a word or phrase in the document"
@@ -2957,11 +2982,11 @@ msgstr "Estrategiak"
 #: mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in:3
 #: mate-disk-image-mounter/src/main.c:62
 msgid "MATE Disk Image Mounter"
-msgstr ""
+msgstr "MATE disko-irudien muntatzailea"
 
 #: mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in:4
 msgid "Attach and mount one or more disk image files"
-msgstr ""
+msgstr "Erantsi eta muntatu disko-irudi fitxategi bat edo gehiago"
 
 #: mate-disk-image-mounter/src/main.c:60
 msgid "An error occurred"
@@ -2969,7 +2994,7 @@ msgstr "Errorea gertatu da"
 
 #: mate-disk-image-mounter/src/main.c:81
 msgid "Allow writing to the image"
-msgstr ""
+msgstr "Baimendu irudian idaztea"
 
 #: mate-disk-image-mounter/src/main.c:101
 msgid "All Files"
@@ -2977,11 +3002,11 @@ msgstr "Fitxategi guztiak"
 
 #: mate-disk-image-mounter/src/main.c:105
 msgid "Disk Images (*.img, *.iso)"
-msgstr ""
+msgstr "Disko-irudiak (*.img, *.iso)"
 
 #: mate-disk-image-mounter/src/main.c:121
 msgid "Select Disk Image(s) to Mount"
-msgstr ""
+msgstr "Hautatu muntatu beharreko disko-irudia(k)"
 
 #: mate-disk-image-mounter/src/main.c:125
 msgid "_Mount"
@@ -2989,45 +3014,47 @@ msgstr "_Muntatu"
 
 #: mate-disk-image-mounter/src/main.c:131
 msgid "Set up _read-only mount"
-msgstr ""
+msgstr "Ezarri soilik irakurtzeko muntaketa"
 
 #: mate-disk-image-mounter/src/main.c:132
 msgid ""
 "If checked, the mount will be read-only. This is useful if you don't want "
 "the underlying disk image to be modified"
 msgstr ""
+"Hautatzen bada, muntaketa irakurtzeko soilik izango da. Hau erabilgarria da "
+"azpiko diskoaren irudia aldatzea nahi ez baduzu"
 
 #: mate-disk-image-mounter/src/main.c:178
 #, c-format
 msgid "Error connecting to udisks daemon: %s (%s, %d)"
-msgstr ""
+msgstr "Errore bat gertatu da udisks demoniora konektatzean: %s (%s, %d)"
 
 #: mate-disk-image-mounter/src/main.c:186
 msgid "Attach and mount one or more disk image files."
-msgstr ""
+msgstr "Erantsi eta muntatu disko-irudi fitxategi bat edo gehiago."
 
 #: mate-disk-image-mounter/src/main.c:234
 #, c-format
 msgid "Cannot open `%s' - maybe the volume isn't mounted?"
-msgstr ""
+msgstr "Ezin da '%s' ireki - agian bolumena ez dago muntatuta?"
 
 #: mate-disk-image-mounter/src/main.c:241
 #, c-format
 msgid "Error opening `%s': %m"
-msgstr ""
+msgstr "Errorea `%s' irekitzean: %m"
 
 #: mate-disk-image-mounter/src/main.c:262
 #, c-format
 msgid "Error attaching disk image: %s (%s, %d)"
-msgstr ""
+msgstr "Errore bat gertatu da disko-irudia eranstean: %s (%s, %d)"
 
 #: mate-screenshot/data/mate-screenshot.appdata.xml.in:7
 msgid "MATE Screenshot"
-msgstr ""
+msgstr "MATE Pantaila-argazkia"
 
 #: mate-screenshot/data/mate-screenshot.appdata.xml.in:8
 msgid "A screenshot utility for MATE Desktop"
-msgstr ""
+msgstr "MATE mahaigainerako pantaila-argazki tresna"
 
 #: mate-screenshot/data/mate-screenshot.appdata.xml.in:10
 msgid ""
@@ -3036,6 +3063,10 @@ msgid ""
 "system clipboard or save them in Portable Network Graphics (.png) image "
 "format."
 msgstr ""
+"MATE Pantaila-argazkia zure mahaigainaren edo aplikazioaren leihoetako "
+"pantaila-argazkiak ateratzeko aukera ematen duen tresna sinple bat da. "
+"Sistemaren arbelean kopiatzea edo Portable Network Graphics (.png) irudi "
+"formatuan gordetzea hauta dezakezu."
 
 #: mate-screenshot/data/mate-screenshot.desktop.in:3
 #: mate-screenshot/src/mate-screenshot.c:519
@@ -3192,12 +3223,12 @@ msgstr "Ezin izan da uneko leihoaren kaptura egin."
 #: mate-screenshot/src/mate-screenshot.c:916
 #, c-format
 msgid "Screenshot at %s.png"
-msgstr ""
+msgstr "Pantaila-argazkia %s.png-ra"
 
 #: mate-screenshot/src/mate-screenshot.c:923
 #, c-format
 msgid "Screenshot at %s - %d.png"
-msgstr ""
+msgstr "Pantaila-argazkia %s - %d.png-ra"
 
 #: mate-screenshot/src/mate-screenshot.c:1315
 msgid "Grab a window instead of the entire screen"
@@ -3209,7 +3240,7 @@ msgstr "Kapturatu pantailako area bat pantaila osoaren ordez"
 
 #: mate-screenshot/src/mate-screenshot.c:1317
 msgid "Send grabbed area directly to the clipboard"
-msgstr ""
+msgstr "Bidali ateratako eremua zuzenean arbelera"
 
 #: mate-screenshot/src/mate-screenshot.c:1318
 msgid "Include the window border with the screenshot"
@@ -3237,7 +3268,7 @@ msgstr "Ezarri aukerak interaktiboki"
 
 #: mate-screenshot/src/mate-screenshot.c:1323
 msgid "Print version information and exit"
-msgstr ""
+msgstr "Inprimatu bertsioaren informazioa eta irten"
 
 #: mate-screenshot/src/mate-screenshot.c:1334
 msgid "Take a picture of the screen"
@@ -3265,6 +3296,10 @@ msgid ""
 "\n"
 "Please check your installation of mate-utils."
 msgstr ""
+"Errore bat gertatu da pantaila-argazkiaren programarako UI definizio fitxategia kargatzean:\n"
+"%s\n"
+"\n"
+"Mesedez, egiaztatu zure mate-tresnen instalazioa."
 
 #: mate-screenshot/src/screenshot-dialog.c:233
 msgid "Select a folder"

@@ -4,29 +4,29 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Emanuele Antonio Faraone <emanueleant03@gmail.com>, 2018
-# Simone Centonze <mypythonit@gmail.com>, 2018
-# Dario Di Nucci <linkin88mail@gmail.com>, 2018
-# Giuseppe Pignataro <rogepix@gmail.com>, 2019
-# Marco Z. <minaz666@gmail.com>, 2019
-# Enrico B. <enricobe@hotmail.com>, 2020
-# Alessandro Volturno <alelvb@inwind.it>, 2021
+# Marco Z. <minaz666@gmail.com>, 2021
+# Marco Bartolucci, 2021
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
-# Marco Bartolucci <nap.84@live.it>, 2021
+# Dario Di Nucci <linkin88mail@gmail.com>, 2021
+# Giuseppe Pignataro <rogepix@gmail.com>, 2021
+# Enrico B. <enricobe@hotmail.com>, 2021
+# Emanuele Antonio Faraone <emanueleant03@gmail.com>, 2021
+# 6d1bb5d393520b00f70a137a58397ea1_b5ba1e2 <22cc5e560e0d5b6554809bfb51b90403_882095>, 2021
+# Alessandro Volturno <alelvb@inwind.it>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-utils 1.25.1\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
 "POT-Creation-Date: 2021-06-25 18:01+0200\n"
-"PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: Marco Bartolucci <nap.84@live.it>, 2021\n"
-"Language-Team: Italian (https://www.transifex.com/mate/teams/13566/it/)\n"
+"PO-Revision-Date: 2021-09-21 19:03+0000\n"
+"Last-Translator: Alessandro Volturno <alelvb@inwind.it>, 2022\n"
+"Language-Team: Italian (https://app.transifex.com/mate/teams/13566/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: baobab/data/mate-disk-usage-analyzer.desktop.in.in:3
 #: baobab/data/mate-disk-usage-analyzer.appdata.xml.in:7
@@ -53,7 +53,7 @@ msgstr "Preferenze di Analizzatore di utilizzo del disco"
 #: mate-dictionary/src/gdict-window.c:1262
 #: mate-screenshot/data/mate-screenshot.ui:41
 msgid "_Help"
-msgstr "_Aiuto"
+msgstr "Aiuto"
 
 #: baobab/data/baobab-dialog-scan-props.ui:48 logview/src/logview-window.c:829
 #: mate-dictionary/src/gdict-window.c:1273
@@ -91,7 +91,7 @@ msgstr "S_cansiona cartella remota..."
 #: baobab/data/baobab-main-window.ui:74 logview/src/logview-window.c:822
 #: mate-dictionary/src/gdict-window.c:1259
 msgid "_Edit"
-msgstr "_Modifica"
+msgstr "Modifica"
 
 #: baobab/data/baobab-main-window.ui:80
 msgid "_Expand All"
@@ -142,7 +142,7 @@ msgstr "Scansiona il file system"
 
 #: baobab/data/baobab-main-window.ui:249
 msgid "Scan Filesystem"
-msgstr "Scansione fil Fle system"
+msgstr "Scansione il file system"
 
 #: baobab/data/baobab-main-window.ui:265
 msgid "Scan a folder"
@@ -219,7 +219,7 @@ msgstr "Grafico attivo"
 
 #: baobab/data/org.mate.disk-usage-analyzer.gschema.xml.in:37
 msgid "Which type of chart should be displayed."
-msgstr "Che tipo dl grafico che debba essere mostrato."
+msgstr "Che tipo dl grafico deve essere mostrato."
 
 #: baobab/data/mate-disk-usage-analyzer.appdata.xml.in:8
 msgid "A disk usage analyzing tool for MATE Desktop"
@@ -290,6 +290,7 @@ msgid "%5d item"
 msgid_plural "%5d items"
 msgstr[0] "%5d oggetto"
 msgstr[1] "%5d oggetti"
+msgstr[2] "%5d oggetti"
 
 #: baobab/src/baobab.c:593
 msgid "Could not initialize monitoring"
@@ -520,7 +521,7 @@ msgstr "Dimensione"
 
 #: baobab/src/baobab-treeview.c:274
 msgid "Contents"
-msgstr "Sommario"
+msgstr "Contenuti"
 
 #: baobab/src/baobab-utils.c:105
 msgid "Select Folder"
@@ -558,8 +559,7 @@ msgstr "Impossibile aprire la cartella «%s»"
 
 #: baobab/src/baobab-utils.c:381
 msgid "There is no installed viewer capable of displaying the folder."
-msgstr ""
-"Non è installato alcun visualizzatore capace di visualizzare la cartella."
+msgstr "Non è installato alcun visualizzatore capace di mostrare la cartella."
 
 #: baobab/src/baobab-utils.c:448
 #, c-format
@@ -582,7 +582,7 @@ msgstr "Si è verificato un errore nel visualizzare la guida."
 #: baobab/src/callbacks.c:74 logview/src/logview-about.h:44
 #: mate-dictionary/src/gdict-about.c:49
 msgid "MATE Documentation Team"
-msgstr "Team Documentazione di MATE"
+msgstr "Team della documentazione MATE"
 
 #: baobab/src/callbacks.c:79 logview/src/logview-about.h:49
 #: mate-dictionary/src/gdict-about.c:57
@@ -639,7 +639,7 @@ msgstr ""
 #: baobab/src/callbacks.c:113 logview/src/logview-about.h:62
 #: mate-dictionary/src/gdict-about.c:53
 msgid "translator-credits"
-msgstr " Alessandro Volturno, 2020"
+msgstr "Alessandro Volturno, 2021"
 
 #: baobab/src/callbacks.c:211 gsearchtool/src/gsearchtool-callbacks.c:506
 #: gsearchtool/src/gsearchtool-callbacks.c:879
@@ -728,7 +728,7 @@ msgstr ""
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:24
 msgid "Disable Quick Search Second Scan"
-msgstr "Disabilita il secondo passaggio della ricerca rapida"
+msgstr "Disabilita il secondo passaggio di ricerca rapida"
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:25
 msgid ""
@@ -934,17 +934,17 @@ msgstr ""
 
 #: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:169
 msgid "File is not a valid .desktop file"
-msgstr "Il file non è un file .desktop valido"
+msgstr "Non è un file .desktop valido"
 
 #: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:194
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
-msgstr "Versione «%s» del file desktop non riconosciuta"
+msgstr "Versione '%s' del file desktop non riconosciuta"
 
 #: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:976
 #, c-format
 msgid "Starting %s"
-msgstr "Avvio di «%s»"
+msgstr "Avvio di %s"
 
 #: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1118
 msgid "Application does not accept documents on command line"
@@ -953,17 +953,17 @@ msgstr "L'applicazione non accetta documenti sulla riga di comando"
 #: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1186
 #, c-format
 msgid "Unrecognized launch option: %d"
-msgstr "Opzione di lancio non riconosciuta: %d"
+msgstr "Opzione di avvio non riconosciuta: %d"
 
 #: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1402
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 msgstr ""
-"Impossibile passare URI di documenti a un elemento desktop con "
-"\"Tipo=Collegamento\""
+"Impossibile passare percorsi URI di documenti a un elemento desktop con "
+"\"Type=Link\""
 
 #: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1423
 msgid "Not a launchable item"
-msgstr "Non è un oggetto lanciabile"
+msgstr "Non è un oggetto avviabile"
 
 #: gsearchtool/mate-submodules/libegg/eggsmclient.c:234
 msgid "Disable connection to session manager"
@@ -987,11 +987,11 @@ msgstr "ID"
 
 #: gsearchtool/mate-submodules/libegg/eggsmclient.c:270
 msgid "Session management options:"
-msgstr "Opzioni di gestione sessione:"
+msgstr "Opzioni di gestione della sessione:"
 
 #: gsearchtool/mate-submodules/libegg/eggsmclient.c:271
 msgid "Show session management options"
-msgstr "Mostra le opzioni di gestione sessione"
+msgstr "Mostra le opzioni di gestione della sessione"
 
 #: gsearchtool/src/gsearchtool.c:82
 msgid "Contains the _text"
@@ -1068,7 +1068,7 @@ msgstr "STRINGA"
 
 #: gsearchtool/src/gsearchtool.c:160
 msgid "PATH"
-msgstr "PERCORSO"
+msgstr "PATH"
 
 #: gsearchtool/src/gsearchtool.c:161
 msgid "VALUE"
@@ -1128,15 +1128,17 @@ msgstr "Nessun file trovato"
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
-msgstr[0] "%'d file trovato"
-msgstr[1] "%'d file trovati"
+msgstr[0] "Trovato %'d File"
+msgstr[1] "Trovati %'d File "
+msgstr[2] "Trovati %'d File "
 
 #: gsearchtool/src/gsearchtool.c:1031 gsearchtool/src/gsearchtool.c:1069
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
-msgstr[0] "%'d file trovato"
-msgstr[1] "%'d file trovati"
+msgstr[0] "trovato %'d file"
+msgstr[1] " trovati %'d file"
+msgstr[2] " trovati %'d file"
 
 #: gsearchtool/src/gsearchtool.c:1160
 msgid "Entry changed called for a non entry option!"
@@ -1277,7 +1279,7 @@ msgstr "Risultati della ric_erca:"
 
 #: gsearchtool/src/gsearchtool.c:2369
 msgid "List View"
-msgstr "Vista a elenco"
+msgstr "Vista ad elenco"
 
 #: gsearchtool/src/gsearchtool.c:2429
 #: mate-dictionary/libgdict/gdict-source.c:243
@@ -1368,16 +1370,18 @@ msgstr "Impossibile aprire il documento della guida"
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] "Sei sicuro di voler aprire %d documento?"
-msgstr[1] "Sei sicuro di voler aprire %d documenti?"
+msgstr[0] "Siete sicuri di voler aprire %d documento?"
+msgstr[1] "Siete sicuri di voler aprire %d documenti?"
+msgstr[2] "Siete sicuri di voler aprire %d documenti?"
 
 #: gsearchtool/src/gsearchtool-callbacks.c:348
 #: gsearchtool/src/gsearchtool-callbacks.c:548
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
-msgstr[0] "Verrà aperta %d finestra separata."
+msgstr[0] "Verrà aperta %d finestra separate."
 msgstr[1] "Verranno aperte %d finestre separate."
+msgstr[2] "Verranno aperte %d finestre separate."
 
 #: gsearchtool/src/gsearchtool-callbacks.c:393
 #, c-format
@@ -1402,8 +1406,9 @@ msgstr ""
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] "Aprire veramente %d cartella?"
-msgstr[1] "Aprire veramente %d cartelle?"
+msgstr[0] "Siete sicuri di voler aprire %d cartella?"
+msgstr[1] "Siete sicuri di voler aprire %d cartelle?"
+msgstr[2] "Siete sicuri di voler aprire %d cartelle?"
 
 #: gsearchtool/src/gsearchtool-callbacks.c:725
 #, c-format
@@ -1438,7 +1443,7 @@ msgstr "Spostamento di «%s» fallito: %s."
 #: gsearchtool/src/gsearchtool-callbacks.c:1143
 #: gsearchtool/src/gsearchtool-callbacks.c:1169
 msgid "_Open"
-msgstr "_Apri"
+msgstr "Apri"
 
 #: gsearchtool/src/gsearchtool-callbacks.c:1199
 #, c-format
@@ -1516,7 +1521,7 @@ msgstr "ieri alle %-I:%M %p"
 
 #: gsearchtool/src/gsearchtool-support.c:431
 msgid "%A, %B %-d %Y at %-I:%M:%S %p"
-msgstr "%A, %B %-d %Y alle %-I:%M:%S %p"
+msgstr "%A, %-d %B %Y alle %-H.%M.%S"
 
 #: gsearchtool/src/gsearchtool-support.c:478
 msgid "link (broken)"
@@ -1684,7 +1689,7 @@ msgstr "Lista dei filtri di espressioni regolari salvati"
 #: logview/data/logview-filter.ui:32 mate-disk-image-mounter/src/main.c:124
 #: mate-screenshot/data/mate-screenshot.ui:92
 msgid "_Cancel"
-msgstr "A_nnulla"
+msgstr "Annulla"
 
 #: logview/data/logview-filter.ui:48
 msgid "_Apply"
@@ -1771,11 +1776,11 @@ msgstr "Trova precedente"
 
 #: logview/src/logview-findbar.c:187
 msgid "Find previous occurrence of the search string"
-msgstr "Trova la precedente occorrenza della stringa di ricerca"
+msgstr "Trova l'occorrenza precedente della stringa di ricerca"
 
 #: logview/src/logview-findbar.c:192
 msgid "Find Next"
-msgstr "Trova successiva"
+msgstr "Trova successivo"
 
 #: logview/src/logview-findbar.c:195
 msgid "Find next occurrence of the search string"
@@ -1888,7 +1893,9 @@ msgstr ""
 
 #: logview/src/logview-window.c:778
 msgid "View, monitor or analyze your system logs in a gradual manner."
-msgstr "Visiona, monitora o analizza il vostro file system in modo graduale."
+msgstr ""
+"Visiona, monitora o analizza il registro del vostro sistema in modo "
+"graduale."
 
 #: logview/src/logview-window.c:821 mate-dictionary/src/gdict-window.c:1258
 msgid "_File"
@@ -1912,7 +1919,7 @@ msgstr "Chiudi questo registro"
 
 #: logview/src/logview-window.c:831
 msgid "_Quit"
-msgstr "_Esci"
+msgstr "Esci"
 
 #: logview/src/logview-window.c:831
 msgid "Quit the log viewer"
@@ -1944,7 +1951,7 @@ msgstr "Trova una parola o una frase nel registro"
 
 #: logview/src/logview-window.c:841
 msgid "Zoom _In"
-msgstr "Aum_enta ingrandimento"
+msgstr "Aumenta _ingrandimento"
 
 #: logview/src/logview-window.c:841
 msgid "Bigger text size"
@@ -1952,7 +1959,7 @@ msgstr "Dimensione del testo più grande"
 
 #: logview/src/logview-window.c:843
 msgid "Zoom _Out"
-msgstr "Rid_uci ingrandimento"
+msgstr "Riduci ingrandiment_o"
 
 #: logview/src/logview-window.c:843
 msgid "Smaller text size"
@@ -1981,7 +1988,7 @@ msgstr "Apri il sommario di aiuto di Visualizzatore di registri"
 #: logview/src/logview-window.c:853 mate-dictionary/src/gdict-applet.c:1176
 #: mate-dictionary/src/gdict-window.c:1314
 msgid "_About"
-msgstr "_Informazioni"
+msgstr "Informazioni"
 
 #: logview/src/logview-window.c:853
 msgid "Show the about dialog for the log viewer"
@@ -1997,7 +2004,7 @@ msgstr "Mostra la barra di stato"
 
 #: logview/src/logview-window.c:860
 msgid "Side _Pane"
-msgstr "Riquadro _laterale"
+msgstr "Pannello _laterale"
 
 #: logview/src/logview-window.c:860
 msgid "Show Side Pane"
@@ -2089,10 +2096,10 @@ msgid ""
 "dictionary source. An exclamation mark (\"!\") means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
-"Nome del database individuale predefinito o del meta-database da utilizzare "
-"su una sorgente del dizionario. Un punto esclamativo (\"!\") specifica che "
-"debbano essere cercati tutti i database presenti in una sorgente di "
-"dizionario"
+"Il nome del database individuale o del meta-database predefiniti da "
+"utilizzare su una sorgente dizionario. Un punto esclamativo (\"!\") "
+"specifica che devono essere consultati tutti i database presenti in una "
+"sorgente dizionario"
 
 #: mate-dictionary/data/org.mate.dictionary.gschema.xml.in:11
 msgid "The default search strategy to use"
@@ -2175,7 +2182,8 @@ msgstr "Nessuna connessione al server di dizionario a «%s:%d»"
 #, c-format
 msgid "Lookup failed for hostname '%s': no suitable resources found"
 msgstr ""
-"Ricerca fallita per il nome host «%s»: nessuna risorsa adeguata trovata"
+"Ricerca fallita per il nome host '%s': non è stata trovata nessuna risorsa "
+"adeguata"
 
 #: mate-dictionary/libgdict/gdict-client-context.c:1083
 #, c-format
@@ -2332,7 +2340,7 @@ msgstr "Errore durante l'ottenimento della definizione"
 
 #: mate-dictionary/libgdict/gdict-source.c:229
 msgid "Filename"
-msgstr "Nome file"
+msgstr "Nome del file"
 
 #: mate-dictionary/libgdict/gdict-source.c:230
 msgid "The filename used by this dictionary source"
@@ -2797,8 +2805,9 @@ msgstr "Nessuna definizione trovata"
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
-msgstr[0] "Una definizione trovata"
-msgstr[1] "%d definizioni trovate"
+msgstr[0] "trovata una definizione"
+msgstr[1] "trovate %d definizioni "
+msgstr[2] "trovate %d definizioni "
 
 #: mate-dictionary/src/gdict-window.c:578
 #, c-format
@@ -2896,7 +2905,7 @@ msgstr "_Parole simili"
 
 #: mate-dictionary/src/gdict-window.c:1304
 msgid "Dictionary Sources"
-msgstr "Sorgenti dizionario"
+msgstr "Sorgenti del dizionario"
 
 #: mate-dictionary/src/gdict-window.c:1306
 msgid "Available _Databases"

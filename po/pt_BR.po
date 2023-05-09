@@ -4,41 +4,45 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Herick Vinicius <herick.gustavo@gmail.com>, 2018
-# Gilberto José Souza Coutinho <gilberto.jsc@gmail.com>, 2018
-# Matheus Macabu <mkbu95@gmail.com>, 2018
-# Enrico Nicoletto <enrico.BR@gmx.co.uk>, 2018
-# 65f2af3cfa184c075942a0418b98d2de_d688669, 2018
-# Victor Gonçalves <hotcyv@gmail.com>, 2018
-# Samuel Henrique <samueloph@debian.org>, 2018
-# Willian Nunes de Oliveira <williangd@yahoo.com.br>, 2018
-# 642cf48d39bca7f9ad9d185d4bcea8c8, 2018
-# Allan Richardson <luke.downhill@gmail.com>, 2018
-# Aldo Oliveira <america103@gmail.com>, 2018
-# Lucas Dias <lucasdiaas@outlook.com>, 2018
-# jose, 2018
-# 18ab4449a00621534598e84a949423ea, 2018
-# b36c7cf4cf669a51ae00d04c19629819, 2019
-# George Silva <algoritmo.linux@gmail.com>, 2019
-# Rodrigo Piñero <rodrigo.pinero@yahoo.com.br>, 2019
-# Marcelo Ghelman <marcelo.ghelman@gmail.com>, 2020
-# LemFre, 2021
+# Victor Gonçalves <hotcyv@gmail.com>, 2021
+# Lucas Dias <lucasdiaas@outlook.com>, 2021
+# George Silva <algoritmo.linux@gmail.com>, 2021
+# Matheus Macabu <mkbu95@gmail.com>, 2021
+# Enrico Nicoletto <enrico.BR@gmx.co.uk>, 2021
+# clefebvre <clement.lefebvre@linuxmint.com>, 2021
+# Samuel Henrique <samueloph@debian.org>, 2021
+# Willian Nunes de Oliveira <williangd@yahoo.com.br>, 2021
+# Rodrigo Piñero <rodrigo.pinero@yahoo.com.br>, 2021
+# Herick Vinicius <herick.gustavo@gmail.com>, 2021
+# b36c7cf4cf669a51ae00d04c19629819, 2021
+# Josué Teodoro Moreira <jteodomo@gmail.com>, 2021
+# Gilberto José Souza Coutinho <gilberto.jsc@gmail.com>, 2021
+# jose, 2021
+# 18ab4449a00621534598e84a949423ea, 2021
+# Allan Richardson <luke.downhill@gmail.com>, 2021
+# gustavo s, 2021
+# 808007d4a0e569ece8fbccc32b57c592_b53d1a5, 2021
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
+# Aldo Oliveira <america103@gmail.com>, 2021
+# Marcelo Ghelman <marcelo.ghelman@gmail.com>, 2021
+# 65f2af3cfa184c075942a0418b98d2de_d688669, 2021
+# Wolfgang Ulbrich <mate@raveit.de>, 2021
 # Roger Araújo <roger.rf@gmail.com>, 2021
+# Luciano Luck, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-utils 1.25.1\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
 "POT-Creation-Date: 2021-06-25 18:01+0200\n"
-"PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: Roger Araújo <roger.rf@gmail.com>, 2021\n"
-"Language-Team: Portuguese (Brazil) (https://www.transifex.com/mate/teams/13566/pt_BR/)\n"
+"PO-Revision-Date: 2021-09-21 19:03+0000\n"
+"Last-Translator: Luciano Luck, 2022\n"
+"Language-Team: Portuguese (Brazil) (https://app.transifex.com/mate/teams/13566/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt_BR\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: baobab/data/mate-disk-usage-analyzer.desktop.in.in:3
 #: baobab/data/mate-disk-usage-analyzer.appdata.xml.in:7
@@ -53,7 +57,7 @@ msgstr "Verifique o tamanho das pastas e o espaço disponível em disco"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: baobab/data/mate-disk-usage-analyzer.desktop.in.in:14
 msgid "MATE;check;disk;usage;analyze;size;space;"
-msgstr ""
+msgstr "MATE;verificar;disco;uso;analisar;tamanho;espaço;"
 
 #: baobab/data/baobab-dialog-scan-props.ui:18
 msgid "Disk Usage Analyzer Preferences"
@@ -121,7 +125,7 @@ msgstr "_Exibir"
 
 #: baobab/data/baobab-main-window.ui:108
 msgid "_Toolbar"
-msgstr "Barra de _ferramentas"
+msgstr "_Barra de Ferramentas"
 
 #: baobab/data/baobab-main-window.ui:115
 msgid "St_atusbar"
@@ -244,6 +248,10 @@ msgid ""
 " use to view and monitor your disk usage and folder structure. It displays "
 "summary information in ring or treemap charts."
 msgstr ""
+"Como o próprio nome indica, o Disk Usage Analyzer é um utilitário \n"
+"gráfico que você pode usar para visualizar e monitorar o uso do disco e a\n"
+" estrutura de pastas. Ele exibe informações resumidas em gráficos de \n"
+"anel ou de mapa de árvore."
 
 #: baobab/data/mate-disk-usage-analyzer.appdata.xml.in:15
 msgid ""
@@ -251,6 +259,10 @@ msgid ""
 "local or remote. There is also an option to constantly monitor any external "
 "changes to the home directory and warn the user if a file is added/removed."
 msgstr ""
+"Você pode executar scans em a sistema de arquivo, o teu nome. casa ou "
+"qualquer pasta de trabalho - local ou remoto. Há também Opção Para Monitor "
+"de controle Quais as externas alterações ao casa um e avise o usuário Se a "
+"arquivo do arquivo é adicionado / removido."
 
 #: baobab/src/baobab.c:141 baobab/src/baobab.c:358
 msgid "Scanning..."
@@ -292,8 +304,9 @@ msgstr "contém hardlinks para:"
 #, c-format
 msgid "%5d item"
 msgid_plural "%5d items"
-msgstr[0] "%5d item"
-msgstr[1] "%5d itens"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: baobab/src/baobab.c:593
 msgid "Could not initialize monitoring"
@@ -517,7 +530,7 @@ msgstr "Pasta"
 
 #: baobab/src/baobab-treeview.c:244
 msgid "Usage"
-msgstr "Utilização"
+msgstr "Uso"
 
 #: baobab/src/baobab-treeview.c:258 gsearchtool/src/gsearchtool.c:2466
 msgid "Size"
@@ -620,6 +633,8 @@ msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program.  If not, see <https://www.gnu.org/licenses/>."
 msgstr ""
+"Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este\n"
+" programa. Caso contrário, consulte https://www.gnu.org/licenses/."
 
 #: baobab/src/callbacks.c:105
 msgid "About Disk Usage Analyzer"
@@ -627,13 +642,15 @@ msgstr "Sobre o Analisador de Uso do Disco"
 
 #: baobab/src/callbacks.c:106
 msgid "Analyze your disk usage through a graphical tool."
-msgstr ""
+msgstr "Analise o uso do disco por meio de uma ferramenta gráfica."
 
 #: baobab/src/callbacks.c:107
 msgid ""
 "Copyright © 2005-2010 Fabio Marzocca\n"
 "Copyright © 2011-2021 MATE developers"
 msgstr ""
+"Copyright © 2005-2010 Fabio Marzocca\n"
+"Copyright © 2011-2021 desenvolvedores MATE"
 
 #: baobab/src/callbacks.c:113 logview/src/logview-about.h:62
 #: mate-dictionary/src/gdict-about.c:53
@@ -659,7 +676,10 @@ msgstr ""
 "Matheus Martins https://www.transifex.com/accounts/profile/Matheus_Martins\n"
 "Michele dos Santos da Silva https://www.transifex.com/accounts/profile/mchelem\n"
 "Thiago Cangussu https://www.transifex.com/accounts/profile/cangussu.thg\n"
-"vitorgatti https://www.transifex.com/accounts/profile/vitorgatti"
+"vitorgatti https://www.transifex.com/accounts/profile/vitorgatti\n"
+"Ítalo Rangel Penaforte https://www.transifex.com/accounts/profile/italo.penaforte\n"
+"George Salu da Silva https://www.transifex.com/user/profile/George_salu_da_silva/\n"
+"Josué Teodoro Moreira https://www.transifex.com/user/profile/J0sueTM/"
 
 #: baobab/src/callbacks.c:211 gsearchtool/src/gsearchtool-callbacks.c:506
 #: gsearchtool/src/gsearchtool-callbacks.c:879
@@ -687,6 +707,12 @@ msgid ""
 " contained within a file, ownership, date of modification, file size, folder"
 " exclusion, etc.."
 msgstr ""
+"O MATE Search Tool é um utilitário simples, mas poderoso, que permite \n"
+"pesquisar arquivos e pastas em qualquer sistema de arquivos montado. Sua\n"
+" interface oferece acesso instantâneo a uma ampla variedade de \n"
+"parâmetros para cada pesquisa, como texto contido em um arquivo, \n"
+"propriedade, data de modificação, tamanho do arquivo, exclusão de \n"
+"pastas, etc."
 
 #: gsearchtool/data/mate-search-tool.desktop.in:4
 msgid "Locate documents and folders on this computer by name or content"
@@ -698,6 +724,7 @@ msgstr "Localizar documentos e pastas neste computador por nome ou conteúdo"
 msgid ""
 "MATE;search;files;locate;documents;folders;computer;name;content;find;tool;"
 msgstr ""
+"MATE;pesquisar;arquivos;localizar;documentos;pastas;computador;nome;conteúdo;localizar;ferramenta;"
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:5
 msgid "Search history"
@@ -1136,15 +1163,17 @@ msgstr "Nenhum arquivo localizado"
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
-msgstr[0] "%'d Arquivo Localizado"
-msgstr[1] "%'d Arquivos Localizados"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: gsearchtool/src/gsearchtool.c:1031 gsearchtool/src/gsearchtool.c:1069
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
-msgstr[0] "%'d arquivo localizado"
-msgstr[1] "%'d arquivos localizados"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: gsearchtool/src/gsearchtool.c:1160
 msgid "Entry changed called for a non entry option!"
@@ -1377,16 +1406,18 @@ msgstr "Não foi possível abrir o documento de ajuda."
 #, c-format
 msgid "Are you sure you want to open %d document?"
 msgid_plural "Are you sure you want to open %d documents?"
-msgstr[0] "Você tem certeza de que deseja abrir %d documento?"
-msgstr[1] "Você tem certeza de que deseja abrir %d documentos?"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: gsearchtool/src/gsearchtool-callbacks.c:348
 #: gsearchtool/src/gsearchtool-callbacks.c:548
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
-msgstr[0] "Isso abrirá %d janela distinta."
-msgstr[1] "Isso abrirá %d janelas distintas."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: gsearchtool/src/gsearchtool-callbacks.c:393
 #, c-format
@@ -1410,8 +1441,9 @@ msgstr "Não há visualizador instalado capaz de exibir o documento."
 #, c-format
 msgid "Are you sure you want to open %d folder?"
 msgid_plural "Are you sure you want to open %d folders?"
-msgstr[0] "Tem certeza de que deseja abrir %d pasta?"
-msgstr[1] "Tem certeza de que deseja abrir %d pastas?"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: gsearchtool/src/gsearchtool-callbacks.c:725
 #, c-format
@@ -1469,7 +1501,7 @@ msgstr "Abrir pasta correspondente"
 
 #: gsearchtool/src/gsearchtool-callbacks.c:1310
 msgid "Copy _Path"
-msgstr ""
+msgstr "Copiar _Caminho"
 
 #: gsearchtool/src/gsearchtool-callbacks.c:1344
 msgid "_Save Results As..."
@@ -1621,7 +1653,7 @@ msgstr "Ver ou monitorar arquivos de log do sistema"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: logview/data/mate-system-log.desktop.in.in:13
 msgid "MATE;monitor;view;system;log;files;logviewer;"
-msgstr ""
+msgstr "MATE;monitor;exibir;sistema;log;arquivos;visualizador de log;"
 
 #: logview/data/org.mate.system-log.gschema.xml.in:5
 msgid "Log file to open up on startup"
@@ -1824,6 +1856,9 @@ msgid ""
 "Copyright (C) 2004-2008 Vincent Noel, Cosimo Cecchi and others.\n"
 "Copyright (C) 2011-2021 MATE developers.\n"
 msgstr ""
+"%s - Versão %s\n"
+"Copyright (C) 2004-2008 Vincent Noel, Cosimo Cecchi e outros.\n"
+"Copyright (C) 2011-2021 desenvolvedores MATE.\n"
 
 #: logview/src/logview-main.c:64
 msgid "Show the application's version"
@@ -1877,17 +1912,20 @@ msgstr "Não encontrado"
 
 #: logview/src/logview-window.c:773
 msgid "About System Log Viewer"
-msgstr ""
+msgstr "Sobre o Visualizador de Log do Sistema"
 
 #: logview/src/logview-window.c:774
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
 "Copyright © 2011-2021 MATE developers"
 msgstr ""
+"Copyright © 1998-2008 Free Software Foundation, Inc.\n"
+"Copyright © 2011-2021 desenvolvedores MATE"
 
 #: logview/src/logview-window.c:778
 msgid "View, monitor or analyze your system logs in a gradual manner."
 msgstr ""
+"Visualize, monitore ou analise os logs do seu sistema de forma gradual."
 
 #: logview/src/logview-window.c:821 mate-dictionary/src/gdict-window.c:1258
 msgid "_File"
@@ -2046,7 +2084,7 @@ msgstr ""
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: mate-dictionary/data/mate-dictionary.desktop.in.in:13
 msgid "MATE;dictionary;applet;thesaurus;spelling;definitions;online;"
-msgstr ""
+msgstr "MATE;dicionário;applet;thesaurus;ortografia;definições;online;"
 
 #: mate-dictionary/data/mate-dictionary.appdata.xml.in:8
 msgid "A dictionary for MATE Desktop"
@@ -2059,6 +2097,10 @@ msgid ""
 " add your own sources, while you can select specific servers for a specific "
 "query."
 msgstr ""
+"O Dicionário MATE permite que você procure palavras em dicionários \n"
+"online. Ele vem pré-configurado com uma lista de servidores Dict (RFC \n"
+"2229), aos quais você pode adicionar suas próprias fontes, enquanto pode\n"
+" selecionar servidores específicos para uma consulta específica."
 
 #: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:5
 msgid "Dictionary Applet Factory"
@@ -2486,7 +2528,7 @@ msgstr "Mostra as opções do GDict"
 
 #: mate-dictionary/src/gdict-about.c:54
 msgid "Look up words or terms in a dictionary source."
-msgstr ""
+msgstr "Procure palavras ou termos em uma fonte de dicionário."
 
 #: mate-dictionary/src/gdict-about.c:82 mate-dictionary/src/gdict-app.c:363
 #: mate-dictionary/src/gdict-window.c:580
@@ -2496,13 +2538,15 @@ msgstr "Dicionário"
 
 #: mate-dictionary/src/gdict-about.c:84
 msgid "About Dictionary"
-msgstr ""
+msgstr "Sobre Dicionário"
 
 #: mate-dictionary/src/gdict-about.c:85
 msgid ""
 "Copyright © 2005-2006 Emmanuele Bassi\n"
 "Copyright © 2011-2021 MATE developers"
 msgstr ""
+"Copyright © 2005-2006 Emmanuele Bassi\n"
+"Copyright © 2011-2021 desenvolvedores MATE"
 
 #. Translators: the first is the word found, the second is the
 #. * database name and the last is the definition's text; please
@@ -2789,8 +2833,9 @@ msgstr "Nenhuma definição localizada"
 #, c-format
 msgid "A definition found"
 msgid_plural "%d definitions found"
-msgstr[0] "Uma definição localizada"
-msgstr[1] "%d definições localizadas"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: mate-dictionary/src/gdict-window.c:578
 #, c-format
@@ -3006,11 +3051,11 @@ msgstr "Estratégias"
 #: mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in:3
 #: mate-disk-image-mounter/src/main.c:62
 msgid "MATE Disk Image Mounter"
-msgstr ""
+msgstr "Analisador de Uso do Disco MATE"
 
 #: mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in:4
 msgid "Attach and mount one or more disk image files"
-msgstr ""
+msgstr "Anexe e monte um ou mais arquivos de imagem de disco."
 
 #: mate-disk-image-mounter/src/main.c:60
 msgid "An error occurred"
@@ -3030,7 +3075,7 @@ msgstr "Imagens de disco (*.img, *.iso)"
 
 #: mate-disk-image-mounter/src/main.c:121
 msgid "Select Disk Image(s) to Mount"
-msgstr "Selecione a Imagem de Disco a ser Montada"
+msgstr "Selecionar a Imagem de Disco a ser Montada"
 
 #: mate-disk-image-mounter/src/main.c:125
 msgid "_Mount"
@@ -3038,27 +3083,29 @@ msgstr "_Montar"
 
 #: mate-disk-image-mounter/src/main.c:131
 msgid "Set up _read-only mount"
-msgstr ""
+msgstr "Configurar montagem _somente leitura"
 
 #: mate-disk-image-mounter/src/main.c:132
 msgid ""
 "If checked, the mount will be read-only. This is useful if you don't want "
 "the underlying disk image to be modified"
 msgstr ""
+"Se marcado, a montagem será somente leitura. Isso é útil se você não quiser "
+"que a imagem de disco subjacente seja modificada"
 
 #: mate-disk-image-mounter/src/main.c:178
 #, c-format
 msgid "Error connecting to udisks daemon: %s (%s, %d)"
-msgstr ""
+msgstr "Erro ao conectar-se ao daemon udisks: %s (%s, %d)"
 
 #: mate-disk-image-mounter/src/main.c:186
 msgid "Attach and mount one or more disk image files."
-msgstr ""
+msgstr "Anexe e monte um ou mais arquivos de imagem de disco."
 
 #: mate-disk-image-mounter/src/main.c:234
 #, c-format
 msgid "Cannot open `%s' - maybe the volume isn't mounted?"
-msgstr ""
+msgstr "Não é possível abrir `%s' - talvez o volume não esteja montado?"
 
 #: mate-disk-image-mounter/src/main.c:241
 #, c-format
@@ -3072,7 +3119,7 @@ msgstr "Erro ao anexar imagem de disco: %s (%s, %d)"
 
 #: mate-screenshot/data/mate-screenshot.appdata.xml.in:7
 msgid "MATE Screenshot"
-msgstr "Captura de tela do MATE"
+msgstr "Captura de Tela do MATE"
 
 #: mate-screenshot/data/mate-screenshot.appdata.xml.in:8
 msgid "A screenshot utility for MATE Desktop"
@@ -3085,6 +3132,10 @@ msgid ""
 "system clipboard or save them in Portable Network Graphics (.png) image "
 "format."
 msgstr ""
+"MATE Screenshot é um utilitário simples que permite capturar screenshots\n"
+" de sua área de trabalho ou de janelas de aplicativos. Você pode optar \n"
+"por copiá-los para a área de transferência do sistema ou salvá-los no \n"
+"formato de imagem Portable Network Graphics (.png)."
 
 #: mate-screenshot/data/mate-screenshot.desktop.in:3
 #: mate-screenshot/src/mate-screenshot.c:519
@@ -3100,7 +3151,7 @@ msgstr "Salvar imagens da sua área de trabalho ou de janelas individuais"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: mate-screenshot/data/mate-screenshot.desktop.in:13
 msgid "MATE;screenshot;snapshot;desktop;window;image;"
-msgstr ""
+msgstr "MATE;captura de tela;instantâneo;área de trabalho;janela;imagem;"
 
 #: mate-screenshot/data/mate-screenshot.ui:24
 msgid "Save Screenshot"
