@@ -115,8 +115,6 @@ variables:
     -enable-checker security.insecureAPI.strcpy"'
 
 before_scripts:
-  # disable pt language for help in search tool
-  - sed -i s/"IGNORE_HELP_LINGUAS ="/"IGNORE_HELP_LINGUAS = pt"/g gsearchtool/help/Makefile.am
 
 build_scripts:
   - NOCONFIGURE=1 ./autogen.sh
