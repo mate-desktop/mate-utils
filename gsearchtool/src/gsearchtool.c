@@ -52,7 +52,6 @@
 #include "gsearchtool-entry.h"
 
 #define MATE_SEARCH_TOOL_DEFAULT_ICON_SIZE 16
-#define MATE_SEARCH_TOOL_STOCK "panel-searchtool"
 #define MATE_SEARCH_TOOL_REFRESH_DURATION  50000
 #define LEFT_LABEL_SPACING "     "
 
@@ -2499,39 +2498,6 @@ create_search_results_section (GSearchWindow * gsearch)
 	return vbox;
 }
 
-static void
-register_gsearchtool_icon (GtkIconFactory * factory)
-{
-	GtkIconSource * source;
-	GtkIconSet * icon_set;
-
-	source = gtk_icon_source_new ();
-
-	gtk_icon_source_set_icon_name (source, MATE_SEARCH_TOOL_ICON);
-
-	icon_set = gtk_icon_set_new ();
-	gtk_icon_set_add_source (icon_set, source);
-
-	gtk_icon_factory_add (factory, MATE_SEARCH_TOOL_STOCK, icon_set);
-
-	gtk_icon_set_unref (icon_set);
-
-	gtk_icon_source_free (source);
-}
-
-static void
-gsearchtool_init_stock_icons (void)
-{
-	GtkIconFactory * factory;
-
-	factory = gtk_icon_factory_new ();
-	gtk_icon_factory_add_default (factory);
-
-	register_gsearchtool_icon (factory);
-
-	g_object_unref (factory);
-}
-
 void
 set_clone_command (GSearchWindow * gsearch,
                    gint * argcp,
@@ -3076,8 +3042,6 @@ main (int argc,
 
 	g_set_application_name (_("Search for Files"));
 	gtk_window_set_default_icon_name (MATE_SEARCH_TOOL_ICON);
-
-	gsearchtool_init_stock_icons ();
 
 	window = g_object_new (GSEARCH_TYPE_WINDOW, NULL);
 	gsearch = GSEARCH_WINDOW (window);
