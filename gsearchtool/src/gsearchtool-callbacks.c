@@ -1614,7 +1614,7 @@ drag_begin_file_cb (GtkWidget * widget,
 	number_of_selected_rows = gtk_tree_selection_count_selected_rows (GTK_TREE_SELECTION (gsearch->search_results_selection));
 
 	if (number_of_selected_rows > 1) {
-		gtk_drag_set_icon_stock (context, "gtk-dnd-multiple", 0, 0);
+		gtk_drag_set_icon_name (context, "gtk-dnd-multiple", 0, 0);
 	}
 	else if (number_of_selected_rows == 1) {
 		GdkPixbuf * pixbuf;
@@ -1637,7 +1637,7 @@ drag_begin_file_cb (GtkWidget * widget,
 			gtk_drag_set_icon_pixbuf (context, pixbuf, 0, 0);
 		}
 		else {
-			gtk_drag_set_icon_stock (context, "gtk-dnd", 0, 0);
+			gtk_drag_set_icon_name (context, "gtk-dnd", 0, 0);
 		}
 	}
 }
