@@ -62,9 +62,17 @@ appletdir = $(datadir)/mate-panel/applets
 applet_in_files = org.mate.DictionaryApplet.mate-panel-applet.desktop.in
 applet_DATA = $(applet_in_files:.mate-panel-applet.desktop.in=.mate-panel-applet)
 
+if ENABLE_IN_PROCESS
+APPLET_LOCATION = $(pkglibdir)/libmate-dictionary-applet.so
+APPLET_IN_PROCESS = true
+else
+APPLET_LOCATION = $(libexecdir)/mate-dictionary-applet
+APPLET_IN_PROCESS = false
+endif
 $(applet_in_files): $(applet_in_files).in Makefile
 	$(AM_V_GEN)sed \
-		-e "s|\@LIBEXECDIR\@|$(libexecdir)|" \
+		-e "s|\@APPLET_LOCATION\@|$(APPLET_LOCATION)|" \
+		-e "s|\@APPLET_IN_PROCESS\@|$(APPLET_IN_PROCESS)|" \
 		$< > $@
 
 $(applet_DATA): $(applet_in_files) Makefile
@@ -74,6 +82,7 @@ else
 	$(AM_V_GEN) cp $< $@
 endif
 
+if !ENABLE_IN_PROCESS
 servicedir = $(datadir)/dbus-1/services
 service_in_files = org.mate.panel.applet.DictionaryAppletFactory.service.in
 service_DATA = $(service_in_files:.service.in=.service)
@@ -82,6 +91,7 @@ org.mate.panel.applet.DictionaryAppletFactory.service: $(service_in_files)
 	$(AM_V_GEN)sed \
 		-e "s|\@LIBEXECDIR\@|$(libexecdir)|" \
 		$< > $@
+endif
 
 ui_DATA += dictionary-applet-menu.xml
 

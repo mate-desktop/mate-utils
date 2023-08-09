@@ -154,8 +154,10 @@ gdict_aligned_window_position (GdictAlignedWindow *window)
   gint entry_x, entry_y, entry_width, entry_height;
   gint x, y;
   GdkGravity gravity = GDK_GRAVITY_NORTH_WEST;
-  GdkWindow *gdk_window;
+  GdkWindow  *gdk_window;
   GdkDisplay *display;
+  GdkMonitor *monitor;
+  GdkRectangle geometry = {0};
 
   g_assert (GDICT_IS_ALIGNED_WINDOW (window));
   priv = window->priv;
@@ -185,7 +187,12 @@ gdict_aligned_window_position (GdictAlignedWindow *window)
   			 &entry_y);
   gdk_window_get_geometry (gdk_window, NULL, NULL, &entry_width, &entry_height);
 
-  if (entry_x + our_width < WidthOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())))
+  /*Get the monitor dimensions*/
+  display= gdk_screen_get_display (gdk_screen_get_default ());
+  monitor = gdk_display_get_monitor (display, 0);
+  gdk_monitor_get_geometry (monitor, &geometry);
+
+  if (entry_x + our_width < geometry.width)
     x = entry_x + 1;
   else
     {
@@ -194,7 +201,7 @@ gdict_aligned_window_position (GdictAlignedWindow *window)
       gravity = GDK_GRAVITY_NORTH_EAST;
     }
 
-  if (entry_y + entry_height + our_height < HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ())))
+  if (entry_y + entry_height + our_height < geometry.height)
     y = entry_y + entry_height - 1;
   else
     {

@@ -1214,9 +1214,9 @@ gdict_applet_factory (MatePanelApplet *applet,
 }
 
 /* this defines the main () for the applet */
-MATE_PANEL_APPLET_OUT_PROCESS_FACTORY ("DictionaryAppletFactory",
-			     GDICT_TYPE_APPLET,
-			     "mate-dictionary-applet",
-			     gdict_applet_factory,
-			     NULL);
+PANEL_APPLET_FACTORY ("DictionaryAppletFactory",
+		      GDICT_TYPE_APPLET,
+		      "mate-dictionary-applet",
+		      gdict_applet_factory,
+		      NULL);
 
