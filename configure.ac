@@ -206,6 +206,26 @@ AS_CASE([$enable_gdict_applet],
 
 AM_CONDITIONAL([BUILD_GDICT_APPLET], [test "x$enable_gdict_applet" = "xyes"])
 
+AC_ARG_ENABLE([in-process],
+              [AS_HELP_STRING([--enable-in-process],
+                              [Build dictionary applet in-process])],
+              [enable_in_process=$enableval],
+              [enable_in_process=no])
+
+# Automake conditional on whether to build dictionary applet in-process
+AM_CONDITIONAL([ENABLE_IN_PROCESS], [test "x$enable_in_process" = "xyes"])
+AS_IF([test "x$enable_in_process" = "xyes"],
+      [AC_SUBST([APPLET_IN_PROCESS], [true])],
+      [AC_SUBST([APPLET_IN_PROCESS], [false])])
+# C conditional on whether to build in-process
+AS_IF([test "x$enable_in_process" = "xyes"],
+      [AC_DEFINE([ENABLE_IN_PROCESS], [1], [building in-process])])
+# Convenience C define selecting the right applet factory
+AS_IF([test "x$enable_in_process" = "xyes"],
+      [factory=MATE_PANEL_APPLET_IN_PROCESS_FACTORY],
+      [factory=MATE_PANEL_APPLET_OUT_PROCESS_FACTORY])
+AC_DEFINE_UNQUOTED([PANEL_APPLET_FACTORY], [$factory], [Panel applet factory])
+
 # Baobab checks
 PKG_CHECK_MODULES(LIBGTOP, libgtop-2.0 >= $LIBGTOP_REQUIRED)
 AC_SUBST(LIBGTOP_CFLAGS)
@@ -411,5 +431,6 @@ mate-utils $VERSION configuration summary:
       API Reference (libmatedict) : $enable_gtk_doc
   Logview built with ZLib support : $msg_zlib
      Dictionary mate-panel applet : $enable_gdict_applet
+     Dictionary applet in-process : $enable_in_process
           Native Language support : ${USE_NLS}
 "

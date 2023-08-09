@@ -27,7 +27,11 @@ AM_CPPFLAGS = \
 bin_PROGRAMS = mate-dictionary
 
 if BUILD_GDICT_APPLET
+if ENABLE_IN_PROCESS
+pkglib_LTLIBRARIES = libmate-dictionary-applet.la
+else
 libexec_PROGRAMS = mate-dictionary-applet
+endif
 endif
 
 mate_dictionary_SOURCES = \
@@ -69,6 +73,45 @@ mate_dictionary_LDADD = \
 
 if BUILD_GDICT_APPLET
 
+if ENABLE_IN_PROCESS
+libmate_dictionary_applet_la_SOURCES = \
+	gdict-about.c 		\
+	gdict-about.h		\
+	gdict-aligned-window.c	\
+	gdict-aligned-window.h	\
+	gdict-applet.c		\
+	gdict-applet.h		\
+	gdict-common.c		\
+	gdict-common.h		\
+	gdict-pref-dialog.c	\
+	gdict-pref-dialog.h	\
+	gdict-print.c 		\
+	gdict-print.h 		\
+	gdict-sidebar.c		\
+	gdict-sidebar.h		\
+	gdict-source-dialog.c 	\
+	gdict-source-dialog.h 	\
+	$(NULL)
+
+libmate_dictionary_applet_la_CFLAGS = \
+	-I$(top_builddir)/mate-dictionary \
+	-I$(top_srcdir)/mate-dictionary \
+	$(APPLET_CFLAGS) \
+	$(GLIB_CFLAGS) \
+	$(GIO_CFLAGS) \
+	$(GTK_CFLAGS) \
+	$(WARN_CFLAGS) \
+	$(NULL)
+
+libmate_dictionary_applet_la_LIBADD = \
+	-lm			\
+	$(top_builddir)/mate-dictionary/libgdict/libmatedict.la \
+	$(APPLET_LIBS) \
+	$(GLIB_LIBS) \
+	$(GIO_LIBS) \
+	$(GTK_LIBS) \
+	$(NULL)
+else
 mate_dictionary_applet_SOURCES = \
 	gdict-about.c 		\
 	gdict-about.h		\
@@ -106,7 +149,7 @@ mate_dictionary_applet_LDADD = \
 	$(GIO_LIBS) \
 	$(GTK_LIBS) \
 	$(NULL)
-
+endif # ENABLE_IN_PROCESS
 endif # BUILD_GDICT_APPLET
 
 -include $(top_srcdir)/git.mk
