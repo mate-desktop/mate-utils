@@ -206,20 +206,46 @@ AS_CASE([$enable_gdict_applet],
 
 AM_CONDITIONAL([BUILD_GDICT_APPLET], [test "x$enable_gdict_applet" = "xyes"])
 
+#============================================================================
+# Dictionary Applet in-process and Wayland support
+#============================================================================
+
+AC_ARG_ENABLE([wayland],
+              [AS_HELP_STRING([--enable-wayland],
+                              [Explicitly enable or disable Wayland support
+                               (default is to enable only if Wayland client development library is detected)])],
+              [enable_wayland=$enableval],
+              [enable_wayland=auto])
 AC_ARG_ENABLE([in-process],
               [AS_HELP_STRING([--enable-in-process],
-                              [Build dictionary applet in-process])],
+                              [Enable in-process build of dictionary applet (default: no, required for wayland)])],
               [enable_in_process=$enableval],
-              [enable_in_process=no])
+              [dnl the default follows whether Wayland is requested or not,
+               dnl as Wayland support requires it but we d rather not have it
+               dnl otherwise for the moment
+               enable_in_process=$enable_wayland])
 
-# Automake conditional on whether to build dictionary applet in-process
+dnl $enable_in_process is gonna be either:
+dnl - "no" if explicitly disabled
+dnl - "yes" if explicitly enabled or if Wayland is explicitly enabled
+dnl - "auto" if nothing specific is requested, in which case, default back to "no"
+AS_IF([test "x$enable_in_process" != xyes], [enable_in_process=no])
+
+WAYLAND_DEPS="gtk-layer-shell-0 >= $GTK_LAYER_SHELL_REQUIRED_VERSION wayland-client gdk-wayland-3.0 >= $GDK_WAYLAND_REQUIRED_VERSION"
+AS_CASE(["x$enable_wayland$enable_in_process"],
+        [xautoyes], [PKG_CHECK_MODULES([WAYLAND], [$WAYLAND_DEPS],
+                                       [enable_wayland=yes], [enable_wayland=no])],
+        [xyesyes], [PKG_CHECK_MODULES([WAYLAND], [$WAYLAND_DEPS])],
+        [xyes*], [AC_MSG_ERROR([--enable-wayland requires --enable-in-process])],
+        [enable_wayland=no])
+
 AM_CONDITIONAL([ENABLE_IN_PROCESS], [test "x$enable_in_process" = "xyes"])
 AS_IF([test "x$enable_in_process" = "xyes"],
-      [AC_SUBST([APPLET_IN_PROCESS], [true])],
-      [AC_SUBST([APPLET_IN_PROCESS], [false])])
-# C conditional on whether to build in-process
-AS_IF([test "x$enable_in_process" = "xyes"],
-      [AC_DEFINE([ENABLE_IN_PROCESS], [1], [building in-process])])
+      [AC_DEFINE([ENABLE_IN_PROCESS], [1], [Enable if you want to build the panel applet in-process])])
+AM_CONDITIONAL(ENABLE_WAYLAND, [test "x$enable_wayland" = "xyes"])
+AS_IF([test "x$enable_wayland" = "xyes"],
+      [AC_DEFINE([ENABLE_WAYLAND], [1], [Enable if you want to build the panel applet in-process])])
+
 # Convenience C define selecting the right applet factory
 AS_IF([test "x$enable_in_process" = "xyes"],
       [factory=MATE_PANEL_APPLET_IN_PROCESS_FACTORY],
@@ -432,5 +458,6 @@ mate-utils $VERSION configuration summary:
   Logview built with ZLib support : $msg_zlib
      Dictionary mate-panel applet : $enable_gdict_applet
      Dictionary applet in-process : $enable_in_process
+Dictionary applet wayland support : $enable_wayland
           Native Language support : ${USE_NLS}
 "

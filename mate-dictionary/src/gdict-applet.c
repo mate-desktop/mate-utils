@@ -38,6 +38,11 @@
 #include "gdict-common.h"
 #include "gdict-aligned-window.h"
 
+#if defined (ENABLE_WAYLAND) && defined (GDK_WINDOWING_WAYLAND)
+#include <gdk/gdkwayland.h>
+#include <gtk-layer-shell/gtk-layer-shell.h>
+#endif
+
 #define GDICT_APPLET_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), GDICT_TYPE_APPLET, GdictAppletClass))
 #define GDICT_APPLET_GET_CLASS(obj)	(G_TYPE_INSTANCE_GET_CLASS ((obj), GDICT_TYPE_APPLET, GdictAppletClass))
 
@@ -314,6 +319,16 @@ gdict_applet_build_window (GdictApplet *applet)
   		    G_CALLBACK (window_show_cb),
 		    applet);
 
+  GdkDisplay *display = gdk_screen_get_display (gdk_screen_get_default());
+
+#if defined (ENABLE_WAYLAND) && defined (GDK_WINDOWING_WAYLAND)
+  if ((GDK_IS_WAYLAND_DISPLAY (display)) && (!gtk_layer_is_layer_window (GTK_WINDOW (window))))
+  {
+    gtk_layer_init_for_window (GTK_WINDOW (window));
+    gtk_layer_set_layer (GTK_WINDOW (window), GTK_LAYER_SHELL_LAYER_TOP);
+    gtk_layer_set_keyboard_mode (GTK_WINDOW (window), GTK_LAYER_SHELL_KEYBOARD_MODE_ON_DEMAND);
+  }
+#endif
   frame = gtk_frame_new (NULL);
   gtk_frame_set_shadow_type (GTK_FRAME (frame), GTK_SHADOW_IN);
   gtk_container_add (GTK_CONTAINER (window), frame);
