@@ -33,6 +33,11 @@
 
 #include "gdict-aligned-window.h"
 
+#if defined (ENABLE_WAYLAND) && defined (GDK_WINDOWING_WAYLAND)
+#include <gdk/gdkwayland.h>
+#include <gtk-layer-shell/gtk-layer-shell.h>
+#endif
+
 struct _GdictAlignedWindowPrivate
 {
   GtkWidget *align_widget;
@@ -215,6 +220,61 @@ gdict_aligned_window_position (GdictAlignedWindow *window)
 
   gtk_window_set_gravity (GTK_WINDOW (window), gravity);
   gtk_window_move (GTK_WINDOW (window), x, y);
+
+#if defined (ENABLE_WAYLAND) && defined (GDK_WINDOWING_WAYLAND)
+  if (GDK_IS_WAYLAND_DISPLAY (display))
+  {
+    gboolean top, bottom, left, right;
+    GtkWidget *toplevel = gtk_widget_get_toplevel (GTK_WIDGET(priv->align_widget));
+
+    top = gtk_layer_get_anchor (GTK_WINDOW (toplevel), GTK_LAYER_SHELL_EDGE_TOP);
+    bottom = gtk_layer_get_anchor (GTK_WINDOW (toplevel), GTK_LAYER_SHELL_EDGE_BOTTOM);
+    left = gtk_layer_get_anchor (GTK_WINDOW (toplevel), GTK_LAYER_SHELL_EDGE_LEFT);
+    right = gtk_layer_get_anchor (GTK_WINDOW (toplevel), GTK_LAYER_SHELL_EDGE_RIGHT);
+
+    /*Set anchors to the edges (will hold to panel edge) and position along the panel
+     *Unset margins and anchors from any other position so as to avoid rendering issues
+     *when orientation changes as when the panel is moved
+     */
+    if (top && left && right)
+    {
+      gtk_layer_set_anchor (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_TOP, TRUE);
+      gtk_layer_set_anchor (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_LEFT, TRUE);
+      gtk_layer_set_anchor (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_BOTTOM, FALSE);
+      gtk_layer_set_anchor (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_RIGHT, FALSE);
+      gtk_layer_set_margin (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_LEFT, entry_x);
+      gtk_layer_set_margin (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_TOP, 0);
+    }
+
+    if (bottom && left && right)
+    {
+      gtk_layer_set_anchor (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_BOTTOM, TRUE);
+      gtk_layer_set_anchor (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_LEFT, TRUE);
+      gtk_layer_set_anchor (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_TOP, FALSE);
+      gtk_layer_set_anchor (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_RIGHT, FALSE);
+      gtk_layer_set_margin (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_LEFT, entry_x);
+      gtk_layer_set_margin (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_TOP, 0);
+    }
+      if (left && bottom && top && !right)
+      {
+          gtk_layer_set_anchor (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_LEFT, TRUE);
+          gtk_layer_set_anchor (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_TOP, TRUE);
+          gtk_layer_set_anchor (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_RIGHT, FALSE);
+          gtk_layer_set_anchor (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_BOTTOM, FALSE);
+          gtk_layer_set_margin (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_TOP, entry_y);
+          gtk_layer_set_margin (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_LEFT, 0);
+      }
+      if (right && bottom && top && !left)
+      {
+          gtk_layer_set_anchor (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_RIGHT, TRUE);
+          gtk_layer_set_anchor (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_TOP, TRUE);
+          gtk_layer_set_anchor (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_LEFT, FALSE);
+          gtk_layer_set_anchor (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_BOTTOM, FALSE);
+          gtk_layer_set_margin (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_TOP, entry_y);
+          gtk_layer_set_margin (GTK_WINDOW (window), GTK_LAYER_SHELL_EDGE_LEFT, 0);
+      }
+  }
+#endif
 }
 
 static void

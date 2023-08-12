@@ -111,6 +111,14 @@ libmate_dictionary_applet_la_LIBADD = \
 	$(GIO_LIBS) \
 	$(GTK_LIBS) \
 	$(NULL)
+
+if ENABLE_WAYLAND
+libmate_dictionary_applet_la_LIBADD += \
+	$(WAYLAND_LIBS)
+libmate_dictionary_applet_la_CFLAGS += \
+	$(WAYLAND_CFLAGS)
+endif
+
 else
 mate_dictionary_applet_SOURCES = \
 	gdict-about.c 		\
