@@ -137,7 +137,17 @@ set_window_default_size (GdictApplet *applet)
   font_size = pango_font_description_get_size (gtk_widget_get_style (defbox)->font_desc);
   font_size = PANGO_PIXELS (font_size);
 
-  width = font_size * WINDOW_NUM_COLUMNS;
+#if defined (ENABLE_WAYLAND) && defined (GDK_WINDOWING_WAYLAND)
+  display = gtk_widget_get_display (widget);
+  if (GDK_IS_WAYLAND_DISPLAY (display))
+    width = font_size * WINDOW_NUM_COLUMNS - 100;
+
+  else
+#endif
+  {
+    width = font_size * WINDOW_NUM_COLUMNS;
+  }
+
   height = font_size * WINDOW_NUM_ROWS;
 
   /* Use at least the requisition size of the window... */
@@ -146,7 +156,6 @@ set_window_default_size (GdictApplet *applet)
   height = MAX (height, req.height);
 
   /* ... but make it no larger than half the monitor size */
-  display = gtk_widget_get_display (widget);
   monitor_num = gdk_display_get_monitor_at_window (display,
                                                    gtk_widget_get_window (widget));
   gdk_monitor_get_geometry (monitor_num, &monitor);
@@ -319,9 +328,8 @@ gdict_applet_build_window (GdictApplet *applet)
   		    G_CALLBACK (window_show_cb),
 		    applet);
 
-  GdkDisplay *display = gdk_screen_get_display (gdk_screen_get_default());
-
 #if defined (ENABLE_WAYLAND) && defined (GDK_WINDOWING_WAYLAND)
+  GdkDisplay *display = gdk_screen_get_display (gdk_screen_get_default());
   if ((GDK_IS_WAYLAND_DISPLAY (display)) && (!gtk_layer_is_layer_window (GTK_WINDOW (window))))
   {
     gtk_layer_init_for_window (GTK_WINDOW (window));
@@ -352,6 +360,14 @@ gdict_applet_build_window (GdictApplet *applet)
   bbox = gtk_button_box_new (GTK_ORIENTATION_HORIZONTAL);
   gtk_button_box_set_layout (GTK_BUTTON_BOX (bbox), GTK_BUTTONBOX_END);
   gtk_box_set_spacing (GTK_BOX (bbox), 6);
+
+#if defined (ENABLE_WAYLAND) && defined (GDK_WINDOWING_WAYLAND)
+  if (GDK_IS_WAYLAND_DISPLAY (display))
+  {
+    gtk_box_pack_start (GTK_BOX (bbox), priv->entry, TRUE, TRUE, 0);
+    gtk_button_box_set_child_non_homogeneous(GTK_BOX (bbox), priv->entry, TRUE);
+  }
+#endif
   gtk_box_pack_end (GTK_BOX (vbox), bbox, FALSE, FALSE, 0);
   gtk_widget_show (bbox);
 
@@ -399,6 +415,11 @@ gdict_applet_build_window (GdictApplet *applet)
   g_signal_connect (button, "clicked", G_CALLBACK (save_cb), applet);
   gtk_box_pack_start (GTK_BOX (bbox), button, FALSE, FALSE, 0);
   gtk_widget_show (button);
+
+#if defined (ENABLE_WAYLAND) && defined (GDK_WINDOWING_WAYLAND)
+  if (GDK_IS_WAYLAND_DISPLAY (display))
+    gtk_widget_show (priv->entry);
+#endif
 
   gtk_window_set_default (GTK_WINDOW (window), priv->defbox);
 
@@ -497,6 +518,11 @@ gdict_applet_icon_button_press_event_cb (GtkWidget      *widget,
   if (event->button != 1)
     g_signal_stop_emission_by_name (priv->toggle, "button-press-event");
 
+#if defined (ENABLE_WAYLAND) && defined (GDK_WINDOWING_WAYLAND)
+  GdkDisplay *display = gdk_screen_get_display (gdk_screen_get_default());
+  if ((GDK_IS_WAYLAND_DISPLAY (display)) && (GTK_IS_WIDGET (priv->window)) && (event->button == 1))
+    gtk_widget_show_all (GTK_WIDGET (priv->window));
+#endif
   return FALSE;
 }
 
@@ -585,13 +611,23 @@ gdict_applet_draw (GdictApplet *applet)
 
   /* entry */
   priv->entry = gtk_entry_new ();
+#if defined (ENABLE_WAYLAND) && defined (GDK_WINDOWING_WAYLAND)
+  GdkDisplay *display = gdk_screen_get_display (gdk_screen_get_default());
+  if (GDK_IS_WAYLAND_DISPLAY (display))
+  {
+    gtk_entry_set_icon_from_icon_name (GTK_ENTRY(priv->entry), GTK_ENTRY_ICON_PRIMARY, "gtk-edit");
+    gtk_entry_set_icon_activatable (GTK_ENTRY(priv->entry), GTK_ENTRY_ICON_PRIMARY, FALSE);
+    /*Fill the available space since we must move the entry to the popup window for wayland*/
+  }
+#endif
+  gtk_entry_set_width_chars (GTK_ENTRY (priv->entry), 12);
+
   gtk_widget_set_tooltip_text (priv->entry, _("Type the word you want to look up"));
   set_atk_name_description (priv->entry,
 		  	    _("Dictionary entry"),
 			    _("Look up words in dictionaries"));
 
   gtk_editable_set_editable (GTK_EDITABLE (priv->entry), TRUE);
-  gtk_entry_set_width_chars (GTK_ENTRY (priv->entry), 12);
   g_signal_connect (priv->entry, "activate",
   		    G_CALLBACK (gdict_applet_entry_activate_cb),
   		    applet);
@@ -601,8 +637,19 @@ gdict_applet_draw (GdictApplet *applet)
   g_signal_connect (priv->entry, "key-press-event",
 		    G_CALLBACK (gdict_applet_entry_key_press_cb),
 		    applet);
+
+#if defined (ENABLE_WAYLAND) && defined (GDK_WINDOWING_WAYLAND)
+  if (GDK_IS_WAYLAND_DISPLAY (display))
+  {
+    GtkStyleContext *context = gtk_widget_get_style_context (priv->entry);
+    gtk_style_context_add_class (context, "view");
+  }
+  else
+#endif
+  {
   gtk_box_pack_end (GTK_BOX (box), priv->entry, FALSE, FALSE, 0);
   gtk_widget_show (priv->entry);
+  }
 
   if (text)
     {
