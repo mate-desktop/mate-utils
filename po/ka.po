@@ -5,15 +5,16 @@
 # 
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
+# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2023
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-utils 1.26.0\n"
+"Project-Id-Version: mate-utils 1.27.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
-"POT-Creation-Date: 2022-10-29 15:36+0200\n"
+"POT-Creation-Date: 2023-09-10 10:29+0200\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2021\n"
-"Language-Team: Georgian (https://www.transifex.com/mate/teams/13566/ka/)\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2023\n"
+"Language-Team: Georgian (https://app.transifex.com/mate/teams/13566/ka/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,15 +41,13 @@ msgid "Disk Usage Analyzer Preferences"
 msgstr ""
 
 #: baobab/data/baobab-dialog-scan-props.ui:32
-#: baobab/data/baobab-main-window.ui:129 logview/src/logview-window.c:825
-#: mate-dictionary/src/gdict-applet.c:1172
-#: mate-dictionary/src/gdict-window.c:1260
+#: baobab/data/baobab-main-window.ui:129
+#: mate-dictionary/src/gdict-applet.c:1234
 #: mate-screenshot/data/mate-screenshot.ui:41
 msgid "_Help"
 msgstr "_დახმარება"
 
-#: baobab/data/baobab-dialog-scan-props.ui:48 logview/src/logview-window.c:829
-#: mate-dictionary/src/gdict-window.c:1271
+#: baobab/data/baobab-dialog-scan-props.ui:48
 msgid "_Close"
 msgstr "_დახურვა"
 
@@ -80,8 +79,7 @@ msgstr ""
 msgid "S_can Remote Folder..."
 msgstr ""
 
-#: baobab/data/baobab-main-window.ui:74 logview/src/logview-window.c:822
-#: mate-dictionary/src/gdict-window.c:1257
+#: baobab/data/baobab-main-window.ui:74
 msgid "_Edit"
 msgstr "_დამუშავება"
 
@@ -93,8 +91,7 @@ msgstr ""
 msgid "_Collapse All"
 msgstr ""
 
-#: baobab/data/baobab-main-window.ui:101 logview/src/logview-window.c:823
-#: mate-dictionary/src/gdict-window.c:1258
+#: baobab/data/baobab-main-window.ui:101
 msgid "_View"
 msgstr "_ხედი"
 
@@ -110,8 +107,7 @@ msgstr "სტ_ატუსზოლი"
 msgid "All_ocated Space"
 msgstr ""
 
-#: baobab/data/baobab-main-window.ui:136 logview/src/logview-window.c:851
-#: mate-dictionary/src/gdict-window.c:1310
+#: baobab/data/baobab-main-window.ui:136
 msgid "_Contents"
 msgstr "_შინაარსი"
 
@@ -381,89 +377,89 @@ msgstr ""
 msgid "Available"
 msgstr "ხელმისაწვდომი"
 
-#: baobab/src/baobab-remote-connect-dialog.c:68
+#: baobab/src/baobab-remote-connect-dialog.c:71
 #, c-format
 msgid "Cannot scan location \"%s\""
 msgstr ""
 
-#: baobab/src/baobab-remote-connect-dialog.c:166
+#: baobab/src/baobab-remote-connect-dialog.c:160
 msgid "Custom Location"
 msgstr "ინდივიდუალური მდებარეობა"
 
-#: baobab/src/baobab-remote-connect-dialog.c:168
+#: baobab/src/baobab-remote-connect-dialog.c:162
 msgid "SSH"
 msgstr "SSH (უხიფათო შელი)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:171
+#: baobab/src/baobab-remote-connect-dialog.c:165
 msgid "Public FTP"
 msgstr "Public FTP (საზოგადო FTP)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:173
+#: baobab/src/baobab-remote-connect-dialog.c:167
 msgid "FTP (with login)"
 msgstr "FTP (რეგისტრაციით)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:176
+#: baobab/src/baobab-remote-connect-dialog.c:170
 msgid "Windows share"
 msgstr "Windows share (ზიარი)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:178
+#: baobab/src/baobab-remote-connect-dialog.c:172
 msgid "WebDAV (HTTP)"
 msgstr "WebDAV (HTTP)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:180
+#: baobab/src/baobab-remote-connect-dialog.c:174
 msgid "Secure WebDAV (HTTPS)"
 msgstr "დაცული WebDAV (HTTPS)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:240
+#: baobab/src/baobab-remote-connect-dialog.c:234
 msgid "Cannot Connect to Server. You must enter a name for the server."
 msgstr "შეუძლებელია სერვერთან დაკავშირება. საჭიროა სახელწოდების მითითება."
 
-#: baobab/src/baobab-remote-connect-dialog.c:243
+#: baobab/src/baobab-remote-connect-dialog.c:237
 msgid "Please enter a name and try again."
 msgstr "გთხოვთ, მიუთითოთ სახელი და ხელმეორედ სცადოთ"
 
-#: baobab/src/baobab-remote-connect-dialog.c:437
+#: baobab/src/baobab-remote-connect-dialog.c:431
 msgid "_Location (URI):"
 msgstr "_მდეარეობა (URI):"
 
-#: baobab/src/baobab-remote-connect-dialog.c:453
+#: baobab/src/baobab-remote-connect-dialog.c:447
 msgid "_Server:"
 msgstr "_სერვერი:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:466
+#: baobab/src/baobab-remote-connect-dialog.c:460
 msgid "Optional information:"
 msgstr "დამატებითი ინფორმაცია:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:475
+#: baobab/src/baobab-remote-connect-dialog.c:469
 msgid "_Share:"
 msgstr "_ზიარი:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:490
+#: baobab/src/baobab-remote-connect-dialog.c:484
 #: mate-dictionary/data/mate-dictionary-source.ui:121
 msgid "_Port:"
 msgstr "_პორტი:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:504
+#: baobab/src/baobab-remote-connect-dialog.c:498
 msgid "_Folder:"
 msgstr "_დასტა:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:518
+#: baobab/src/baobab-remote-connect-dialog.c:512
 msgid "_User Name:"
 msgstr "_მომხმარებლის სახელი"
 
-#: baobab/src/baobab-remote-connect-dialog.c:533
+#: baobab/src/baobab-remote-connect-dialog.c:527
 msgid "_Domain Name:"
 msgstr "_დომეინის სახელი:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:590
+#: baobab/src/baobab-remote-connect-dialog.c:584
 msgid "Connect to Server"
 msgstr "სერვერთან დაკავშირება"
 
-#: baobab/src/baobab-remote-connect-dialog.c:606
+#: baobab/src/baobab-remote-connect-dialog.c:600
 msgid "Service _type:"
 msgstr "სერვისის _ტიპი:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:722
+#: baobab/src/baobab-remote-connect-dialog.c:716
 msgid "_Scan"
 msgstr ""
 
@@ -481,7 +477,7 @@ msgstr ""
 msgid "_Rescan"
 msgstr ""
 
-#: baobab/src/baobab-treeview.c:222 gsearchtool/src/gsearchtool.c:2447
+#: baobab/src/baobab-treeview.c:222 gsearchtool/src/gsearchtool.c:2446
 msgid "Folder"
 msgstr "საქაღალდე"
 
@@ -489,7 +485,7 @@ msgstr "საქაღალდე"
 msgid "Usage"
 msgstr ""
 
-#: baobab/src/baobab-treeview.c:258 gsearchtool/src/gsearchtool.c:2460
+#: baobab/src/baobab-treeview.c:258 gsearchtool/src/gsearchtool.c:2459
 msgid "Size"
 msgstr "ზომა"
 
@@ -872,249 +868,250 @@ msgid ""
 "selected when the search tool is started."
 msgstr ""
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:168
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:169
 msgid "File is not a valid .desktop file"
-msgstr ""
+msgstr "ფაილი არასწორი .desktop ფაილია"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:193
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:194
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
 msgstr "ამოუცნობი desktop ფაილის ვერსია '%s'"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:975
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:984
 #, c-format
 msgid "Starting %s"
 msgstr "ირთვება %s"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1117
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1126
 msgid "Application does not accept documents on command line"
-msgstr ""
+msgstr "აპლიკაციას დოკუმენტების ბრძანების სტრიქონიდან აღება არ შეუძლია"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1185
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1194
 #, c-format
 msgid "Unrecognized launch option: %d"
-msgstr ""
+msgstr "გაშვების უცნობი პარამეტრი: %d"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1401
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1410
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 msgstr ""
+"დოკუმენტის URI-ების გადაცემა დესკტოპის ჩანაწერში „Type=Link“ შეუძლებელია"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1422
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1431
 msgid "Not a launchable item"
 msgstr "არ არის გაშვებადი ელემენტი"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:233
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:234
 msgid "Disable connection to session manager"
 msgstr "ვერ ვუკავშირდები სესიის მენეჯერს"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:238
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:239
 msgid "Specify file containing saved configuration"
 msgstr "დამახსოვრებული კონფიგურაციის მქონე ფაილის მინიშნება"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:238
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:239
 msgid "FILE"
 msgstr "ფაილი"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:243
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:244
 msgid "Specify session management ID"
 msgstr "აღნიშნეთ თუ რომელი სეანსი ჩაიტვირთოს"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:243
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:244
 msgid "ID"
 msgstr "ID"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:269
-msgid "Session management options:"
-msgstr ""
-
 #: gsearchtool/mate-submodules/libegg/eggsmclient.c:270
+msgid "Session management options:"
+msgstr "სესიების მმართველის პარამეტრები:"
+
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:271
 msgid "Show session management options"
 msgstr "აჩვენე სეანსის მართვის პარამეტრები"
 
-#: gsearchtool/src/gsearchtool.c:82
+#: gsearchtool/src/gsearchtool.c:81
 msgid "Contains the _text"
 msgstr "შეიცავს _ტექსტს"
 
-#: gsearchtool/src/gsearchtool.c:84
+#: gsearchtool/src/gsearchtool.c:83
 msgid "_Date modified less than"
 msgstr "შეცვლის თარიღი·_ნაკლებია ვიდრე"
 
-#: gsearchtool/src/gsearchtool.c:84 gsearchtool/src/gsearchtool.c:85
+#: gsearchtool/src/gsearchtool.c:83 gsearchtool/src/gsearchtool.c:84
 msgid "days"
 msgstr "დღე"
 
-#: gsearchtool/src/gsearchtool.c:85
+#: gsearchtool/src/gsearchtool.c:84
 msgid "Date modified more than"
 msgstr "შეცვლის·თარიღი _მეტია·ვიდრე"
 
-#: gsearchtool/src/gsearchtool.c:87
+#: gsearchtool/src/gsearchtool.c:86
 msgid "S_ize at least"
 msgstr "_ზომა არანაკლებ"
 
-#: gsearchtool/src/gsearchtool.c:87 gsearchtool/src/gsearchtool.c:88
+#: gsearchtool/src/gsearchtool.c:86 gsearchtool/src/gsearchtool.c:87
 msgid "kilobytes"
 msgstr "კილობაიტი"
 
-#: gsearchtool/src/gsearchtool.c:88
+#: gsearchtool/src/gsearchtool.c:87
 msgid "Si_ze at most"
 msgstr "_ზომა არაუმეტეს"
 
-#: gsearchtool/src/gsearchtool.c:89
+#: gsearchtool/src/gsearchtool.c:88
 msgid "File is empty"
 msgstr "ფაილი ცარიელია"
 
-#: gsearchtool/src/gsearchtool.c:91
+#: gsearchtool/src/gsearchtool.c:90
 msgid "Owned by _user"
 msgstr "_მფლობელი - მომხმარებელი"
 
-#: gsearchtool/src/gsearchtool.c:92
+#: gsearchtool/src/gsearchtool.c:91
 msgid "Owned by _group"
 msgstr "მფლობელი - ჯგუფი"
 
-#: gsearchtool/src/gsearchtool.c:93
+#: gsearchtool/src/gsearchtool.c:92
 msgid "Owner is unrecognized"
 msgstr "მფლობელი უცნობია"
 
-#: gsearchtool/src/gsearchtool.c:95
+#: gsearchtool/src/gsearchtool.c:94
 msgid "Na_me does not contain"
 msgstr "_სახელი არ შეიცავს"
 
-#: gsearchtool/src/gsearchtool.c:96
+#: gsearchtool/src/gsearchtool.c:95
 msgid "Name matches regular e_xpression"
 msgstr "ძიება რეგულარული გამოსახულებით"
 
-#: gsearchtool/src/gsearchtool.c:98
+#: gsearchtool/src/gsearchtool.c:97
 msgid "Show hidden and backup files"
 msgstr "დამალული და სარეზერვო ფაილების ჩვენება"
 
-#: gsearchtool/src/gsearchtool.c:99
+#: gsearchtool/src/gsearchtool.c:98
 msgid "Follow symbolic links"
 msgstr "სიმბოლურ ბმულზე მიყოლა"
 
-#: gsearchtool/src/gsearchtool.c:100
+#: gsearchtool/src/gsearchtool.c:99
 msgid "Exclude other filesystems"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:158
+#: gsearchtool/src/gsearchtool.c:157
 msgid "Show version of the application"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:159 gsearchtool/src/gsearchtool.c:164
-#: gsearchtool/src/gsearchtool.c:173
+#: gsearchtool/src/gsearchtool.c:158 gsearchtool/src/gsearchtool.c:163
+#: gsearchtool/src/gsearchtool.c:172
 msgid "STRING"
-msgstr ""
+msgstr "სტრიქონი"
 
-#: gsearchtool/src/gsearchtool.c:160
+#: gsearchtool/src/gsearchtool.c:159
 msgid "PATH"
 msgstr "გეზი"
 
-#: gsearchtool/src/gsearchtool.c:161
+#: gsearchtool/src/gsearchtool.c:160
 msgid "VALUE"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:165 gsearchtool/src/gsearchtool.c:166
+#: gsearchtool/src/gsearchtool.c:164 gsearchtool/src/gsearchtool.c:165
 msgid "DAYS"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:167 gsearchtool/src/gsearchtool.c:168
+#: gsearchtool/src/gsearchtool.c:166 gsearchtool/src/gsearchtool.c:167
 msgid "KILOBYTES"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:170
+#: gsearchtool/src/gsearchtool.c:169
 msgid "USER"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:171
+#: gsearchtool/src/gsearchtool.c:170
 msgid "GROUP"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:174
+#: gsearchtool/src/gsearchtool.c:173
 msgid "PATTERN"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:385
+#: gsearchtool/src/gsearchtool.c:384
 msgid "A locate database has probably not been created."
 msgstr "მითითებული ბაზა შეიძლება არ იყოს გახსნილი."
 
-#: gsearchtool/src/gsearchtool.c:487
+#: gsearchtool/src/gsearchtool.c:486
 #, c-format
 msgid "Character set conversion failed for \"%s\""
 msgstr "შრიფტების კონვერტირება ჩაიშალა \"%s\""
 
-#: gsearchtool/src/gsearchtool.c:511
+#: gsearchtool/src/gsearchtool.c:510
 msgid "Searching..."
 msgstr "ძებნა..."
 
-#: gsearchtool/src/gsearchtool.c:511 gsearchtool/src/gsearchtool.c:1048
-#: gsearchtool/src/gsearchtool.c:3077
+#: gsearchtool/src/gsearchtool.c:510 gsearchtool/src/gsearchtool.c:1047
+#: gsearchtool/src/gsearchtool.c:3043
 msgid "Search for Files"
 msgstr "ფაილების ძებნა"
 
-#: gsearchtool/src/gsearchtool.c:994 gsearchtool/src/gsearchtool.c:1023
+#: gsearchtool/src/gsearchtool.c:993 gsearchtool/src/gsearchtool.c:1022
 msgid "No files found"
 msgstr "არცერთი ფაილი არ მოინახა"
 
-#: gsearchtool/src/gsearchtool.c:1016
+#: gsearchtool/src/gsearchtool.c:1015
 msgid "(stopped)"
 msgstr "(შეჩერებული)"
 
-#: gsearchtool/src/gsearchtool.c:1022
+#: gsearchtool/src/gsearchtool.c:1021
 msgid "No Files Found"
 msgstr "ფაილი არ არის ნაპოვნი"
 
-#: gsearchtool/src/gsearchtool.c:1027
+#: gsearchtool/src/gsearchtool.c:1026
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
 msgstr[0] ""
 msgstr[1] ""
 
-#: gsearchtool/src/gsearchtool.c:1031 gsearchtool/src/gsearchtool.c:1069
+#: gsearchtool/src/gsearchtool.c:1030 gsearchtool/src/gsearchtool.c:1068
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
 msgstr[0] ""
 msgstr[1] ""
 
-#: gsearchtool/src/gsearchtool.c:1160
+#: gsearchtool/src/gsearchtool.c:1159
 msgid "Entry changed called for a non entry option!"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:1325
+#: gsearchtool/src/gsearchtool.c:1324
 msgid "Set the text of \"Name contains\" search option"
 msgstr "ტექსტის ძებნა პირობით: \"სახელი შეიცავს\""
 
-#: gsearchtool/src/gsearchtool.c:1326
+#: gsearchtool/src/gsearchtool.c:1325
 msgid "Set the text of \"Look in folder\" search option"
 msgstr "ტექსტის·ძებნა·პირობით:·\"მითითებულ დასტაში\""
 
-#: gsearchtool/src/gsearchtool.c:1327
+#: gsearchtool/src/gsearchtool.c:1326
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr "ფაილების სორტირება რომელიმე ნიშნით: სახელი, დასტა, ზომა, ტიპი, თარიღი"
 
-#: gsearchtool/src/gsearchtool.c:1328
+#: gsearchtool/src/gsearchtool.c:1327
 msgid "Set sort order to descending, the default is ascending"
 msgstr "სორტირება კლებადობით. (ნაგულისხმები მნიშვნელობა - ზრდადობით)"
 
-#: gsearchtool/src/gsearchtool.c:1329
+#: gsearchtool/src/gsearchtool.c:1328
 msgid "Automatically start a search"
 msgstr "ძებნის ავტომატური დაწყება"
 
-#: gsearchtool/src/gsearchtool.c:1335
+#: gsearchtool/src/gsearchtool.c:1334
 #, c-format
 msgid "Select the \"%s\" search option"
 msgstr "\"%s\" ძებნის ფუნქციის არჩევა"
 
-#: gsearchtool/src/gsearchtool.c:1338
+#: gsearchtool/src/gsearchtool.c:1337
 #, c-format
 msgid "Select and set the \"%s\" search option"
 msgstr "\"%s\" ძებნის ფუნქციის არჩევა და გააქტიურება"
 
-#: gsearchtool/src/gsearchtool.c:1445
+#: gsearchtool/src/gsearchtool.c:1444
 msgid "Invalid option passed to sortby command line argument."
 msgstr "sortby ბრძანების არგუმენტის დაუშვებელი მნიშვნელობა"
 
-#: gsearchtool/src/gsearchtool.c:1737
+#: gsearchtool/src/gsearchtool.c:1736
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -1122,18 +1119,18 @@ msgstr ""
 "\n"
 "... მეტისმეტად ბევრი შეცდომაა ..."
 
-#: gsearchtool/src/gsearchtool.c:1751
+#: gsearchtool/src/gsearchtool.c:1750
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
 msgstr ""
 "ძებნისას მომხდარი შეცდომების გამო ძებნის შედეგი შეიძლება არასწორი იყოს."
 
-#: gsearchtool/src/gsearchtool.c:1763 gsearchtool/src/gsearchtool.c:1807
+#: gsearchtool/src/gsearchtool.c:1762 gsearchtool/src/gsearchtool.c:1806
 msgid "Show more _details"
 msgstr "დამატებითი ინფოს ჩ_ვენება"
 
-#: gsearchtool/src/gsearchtool.c:1793
+#: gsearchtool/src/gsearchtool.c:1792
 msgid ""
 "The search results may be out of date or invalid.  Do you want to disable "
 "the quick search feature?"
@@ -1141,153 +1138,153 @@ msgstr ""
 "ძებნის შედეგები შეიძლება ვადაგასული ან არასწორი იყოს. ხომ არ გამოვრთოთ "
 "სწრაფი ძებნის ფუნქცია?"
 
-#: gsearchtool/src/gsearchtool.c:1818
+#: gsearchtool/src/gsearchtool.c:1817
 msgid "Disable _Quick Search"
 msgstr "_სწრაფი ძებნის გამორთვა"
 
-#: gsearchtool/src/gsearchtool.c:1845
+#: gsearchtool/src/gsearchtool.c:1844
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
 msgstr "ვერ განხორციელდა ჯგუფის id შვილობილისათვის %d:·%s.\n"
 
-#: gsearchtool/src/gsearchtool.c:1870
+#: gsearchtool/src/gsearchtool.c:1869
 msgid "Error parsing the search command."
 msgstr "შეცდომა ძებნის ბრძანების შესრულებისას."
 
-#: gsearchtool/src/gsearchtool.c:1902
+#: gsearchtool/src/gsearchtool.c:1901
 msgid "Error running the search command."
 msgstr "შეცდომა·ძებნის·ბრძანების გაშვებისას."
 
-#: gsearchtool/src/gsearchtool.c:2025
+#: gsearchtool/src/gsearchtool.c:2024
 #, c-format
 msgid "Enter a text value for the \"%s\" search option."
 msgstr "ტექსტი ძებნის პირობისათვის \"%s\"."
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
-#: gsearchtool/src/gsearchtool.c:2030
+#: gsearchtool/src/gsearchtool.c:2029
 #, c-format
 msgid "\"%s\" in %s"
 msgstr "„%s\"·%s-ში"
 
-#: gsearchtool/src/gsearchtool.c:2032
+#: gsearchtool/src/gsearchtool.c:2031
 #, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
 msgstr "%s-ს მნიშვნელობა ძებნის პირობისათვის \"%s\"."
 
-#: gsearchtool/src/gsearchtool.c:2096
+#: gsearchtool/src/gsearchtool.c:2095
 #, c-format
 msgid "Remove \"%s\""
 msgstr "გავაუქმოთ \"%s\""
 
-#: gsearchtool/src/gsearchtool.c:2097
+#: gsearchtool/src/gsearchtool.c:2096
 #, c-format
 msgid "Click to remove the \"%s\" search option."
 msgstr "დაწკაპეთ·ძებნის·პირობის·\"%s\"·გასაუქმებლად"
 
-#: gsearchtool/src/gsearchtool.c:2190
+#: gsearchtool/src/gsearchtool.c:2189
 msgid "A_vailable options:"
 msgstr "_დაშვებული პარამეტრები:"
 
-#: gsearchtool/src/gsearchtool.c:2219
+#: gsearchtool/src/gsearchtool.c:2218
 msgid "Available options"
 msgstr "დაშვებული პარამეტრები"
 
-#: gsearchtool/src/gsearchtool.c:2220
+#: gsearchtool/src/gsearchtool.c:2219
 msgid "Select a search option from the drop-down list."
 msgstr "ჩამოშლილ სიაში აირჩიეთ ძებნის პირობა."
 
-#: gsearchtool/src/gsearchtool.c:2238
+#: gsearchtool/src/gsearchtool.c:2237
 msgid "Add search option"
 msgstr "ძებნის პირობის დამატება"
 
-#: gsearchtool/src/gsearchtool.c:2239
+#: gsearchtool/src/gsearchtool.c:2238
 msgid "Click to add the selected available search option."
 msgstr "დაწკაპეთ არჩეული პირობის დასამატებლად."
 
-#: gsearchtool/src/gsearchtool.c:2328
+#: gsearchtool/src/gsearchtool.c:2327
 msgid "S_earch results:"
 msgstr "ძი_ების შედეგი:"
 
-#: gsearchtool/src/gsearchtool.c:2371
+#: gsearchtool/src/gsearchtool.c:2370
 msgid "List View"
 msgstr "სიის სახით"
 
-#: gsearchtool/src/gsearchtool.c:2423
+#: gsearchtool/src/gsearchtool.c:2422
 #: mate-dictionary/libgdict/gdict-source.c:240
 msgid "Name"
 msgstr "სახელი"
 
-#: gsearchtool/src/gsearchtool.c:2472
+#: gsearchtool/src/gsearchtool.c:2471
 msgid "Type"
 msgstr "ტიპი"
 
-#: gsearchtool/src/gsearchtool.c:2484
+#: gsearchtool/src/gsearchtool.c:2483
 msgid "Date Modified"
 msgstr "შეცვლის თარიღი"
 
-#: gsearchtool/src/gsearchtool.c:2813
+#: gsearchtool/src/gsearchtool.c:2779
 msgid "_Name contains:"
 msgstr "_სახელი შეიცავს:"
 
-#: gsearchtool/src/gsearchtool.c:2828 gsearchtool/src/gsearchtool.c:2829
+#: gsearchtool/src/gsearchtool.c:2794 gsearchtool/src/gsearchtool.c:2795
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr ""
 "შეიყვანეთ სახელი ან მისი ნაწილი, დაშვებულია შაბლონების [* და ?] გამოყენება."
 
-#: gsearchtool/src/gsearchtool.c:2829
+#: gsearchtool/src/gsearchtool.c:2795
 msgid "Name contains"
 msgstr "სახელი შეიცავს"
 
-#: gsearchtool/src/gsearchtool.c:2835
+#: gsearchtool/src/gsearchtool.c:2801
 msgid "_Look in folder:"
 msgstr "_მიუთითეთ დასტის სახელი:"
 
-#: gsearchtool/src/gsearchtool.c:2841
+#: gsearchtool/src/gsearchtool.c:2807
 msgid "Browse"
 msgstr "ნუსხადასტებიდათვალიერებაგეზი"
 
-#: gsearchtool/src/gsearchtool.c:2851
+#: gsearchtool/src/gsearchtool.c:2817
 msgid "Look in folder"
 msgstr "ნახვა ·დასტაში"
 
-#: gsearchtool/src/gsearchtool.c:2851
+#: gsearchtool/src/gsearchtool.c:2817
 msgid "Select the folder or device from which you want to begin the search."
 msgstr "აირჩიეთ დასტა ან მოწყობილობა, სადაც იწარმოებს ძებნა."
 
-#: gsearchtool/src/gsearchtool.c:2869
+#: gsearchtool/src/gsearchtool.c:2835
 msgid "Select more _options"
 msgstr "_დამატებითი პირობები"
 
-#: gsearchtool/src/gsearchtool.c:2879
+#: gsearchtool/src/gsearchtool.c:2845
 msgid "Select more options"
 msgstr "დამატებითი·პირობები"
 
-#: gsearchtool/src/gsearchtool.c:2879
+#: gsearchtool/src/gsearchtool.c:2845
 msgid "Click to expand or collapse the list of available options."
 msgstr "დაწკაპეთ პირობების სიის გასაშლელად/დასაკეცად."
 
-#: gsearchtool/src/gsearchtool.c:2910
+#: gsearchtool/src/gsearchtool.c:2876
 msgid "Click to display the help manual."
 msgstr "დაწკაპეთ დამხმარე სახელმძღვანელოს სანახავად."
 
-#: gsearchtool/src/gsearchtool.c:2924
+#: gsearchtool/src/gsearchtool.c:2890
 msgid "Click to close \"Search for Files\"."
 msgstr "დაწკაპეთ, თუ გინდათ დახუროთ \"ფაილების ძებნა\"."
 
-#: gsearchtool/src/gsearchtool.c:2962
+#: gsearchtool/src/gsearchtool.c:2928
 msgid "Click to perform a search."
 msgstr "დაწკაპეთ ძებნის დასაწყებად."
 
-#: gsearchtool/src/gsearchtool.c:2963
+#: gsearchtool/src/gsearchtool.c:2929
 msgid "Click to stop a search."
 msgstr "დაწკაპეთ·ძებნის·შესაწყვეტად."
 
-#: gsearchtool/src/gsearchtool.c:3060
+#: gsearchtool/src/gsearchtool.c:3026
 msgid "- the MATE Search Tool"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:3071
+#: gsearchtool/src/gsearchtool.c:3037
 #, c-format
 msgid "Failed to parse command line arguments: %s\n"
 msgstr ""
@@ -1308,8 +1305,8 @@ msgstr[1] ""
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ეს %d ცალკე ფანჯარას გახსნის."
+msgstr[1] "ეს %d ცალკე ფანჯარას გახსნის."
 
 #: gsearchtool/src/gsearchtool-callbacks.c:392
 #, c-format
@@ -1709,23 +1706,23 @@ msgstr ""
 msgid "Find next occurrence of the search string"
 msgstr "იპოვე საძიებო ნუსხის  შემდეგი ვარიანტი"
 
-#: logview/src/logview-findbar.c:202
+#: logview/src/logview-findbar.c:203
 msgid "Clear the search string"
 msgstr ""
 
-#: logview/src/logview-log.c:589
+#: logview/src/logview-log.c:585
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
 msgstr ""
 
-#: logview/src/logview-log.c:635
+#: logview/src/logview-log.c:631
 msgid "You don't have enough permissions to read the file."
 msgstr ""
 
-#: logview/src/logview-log.c:650
+#: logview/src/logview-log.c:646
 msgid "The file is not a regular file or is not a text file."
 msgstr ""
 
-#: logview/src/logview-log.c:743
+#: logview/src/logview-log.c:739
 msgid "This version of System Log does not support GZipped logs."
 msgstr ""
 
@@ -1761,186 +1758,64 @@ msgstr "ჟურნალის თვალიერება და მონ
 msgid "Log Viewer"
 msgstr "ჟურნალის დამთვალიერებელი"
 
-#: logview/src/logview-window.c:41 logview/src/logview-window.c:771
+#: logview/src/logview-window.c:41 logview/src/logview-window.c:807
 msgid "System Log Viewer"
 msgstr "სისტემური ჟურნალის ნახვის პროგრამა"
 
-#: logview/src/logview-window.c:216
+#: logview/src/logview-window.c:227
 #, c-format
 msgid "last update: %s"
 msgstr ""
 
-#: logview/src/logview-window.c:220
+#: logview/src/logview-window.c:231
 #, c-format
 msgid "%d lines (%s) - %s"
 msgstr "%d ხაზი (%s) - %s"
 
-#: logview/src/logview-window.c:325
+#: logview/src/logview-window.c:340
 msgid "Open Log"
 msgstr "ჟურნალის გახსნა"
 
-#: logview/src/logview-window.c:364
+#: logview/src/logview-window.c:385
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "დახმარების გამოძახებისას მოხდა შეცდომა: %s"
 
-#: logview/src/logview-window.c:478
+#: logview/src/logview-window.c:517
 msgid "Wrapped"
 msgstr ""
 
-#: logview/src/logview-window.c:493
+#: logview/src/logview-window.c:532
 #: mate-dictionary/libgdict/gdict-defbox.c:1127
 #: mate-dictionary/libgdict/gdict-defbox.c:1221
 #: mate-dictionary/libgdict/gdict-defbox.c:1255
 msgid "Not found"
 msgstr "ვერ მოიძებნა"
 
-#: logview/src/logview-window.c:773
+#: logview/src/logview-window.c:809
 msgid "About System Log Viewer"
 msgstr ""
 
-#: logview/src/logview-window.c:774
+#: logview/src/logview-window.c:810
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
 "Copyright © 2011-2021 MATE developers"
 msgstr ""
 
-#: logview/src/logview-window.c:778
+#: logview/src/logview-window.c:814
 msgid "View, monitor or analyze your system logs in a gradual manner."
 msgstr ""
 
-#: logview/src/logview-window.c:821 mate-dictionary/src/gdict-window.c:1256
-msgid "_File"
-msgstr "_ფაილი"
-
-#: logview/src/logview-window.c:824
-msgid "_Filters"
-msgstr ""
-
-#: logview/src/logview-window.c:827
-msgid "_Open..."
-msgstr "_გახსნა..."
-
-#: logview/src/logview-window.c:827
-msgid "Open a log from file"
-msgstr "ჟურნალის გახსნა ფაილიდან"
-
-#: logview/src/logview-window.c:829
-msgid "Close this log"
-msgstr "ჟურნალის დახურვა"
-
-#: logview/src/logview-window.c:831
-msgid "_Quit"
-msgstr "_გასვლა"
-
-#: logview/src/logview-window.c:831
-msgid "Quit the log viewer"
-msgstr "ჟურნალიდან გამოსვლა"
-
-#: logview/src/logview-window.c:834 mate-dictionary/src/gdict-window.c:1275
-msgid "_Copy"
-msgstr "_კოპირება"
-
-#: logview/src/logview-window.c:834
-msgid "Copy the selection"
-msgstr "მონიშნულის კოპირება"
-
-#: logview/src/logview-window.c:836 mate-dictionary/src/gdict-window.c:1277
-msgid "Select _All"
-msgstr "მონიშნე _ყველა"
-
-#: logview/src/logview-window.c:836
-msgid "Select the entire log"
-msgstr "მთელი ჟურნალის მონიშვნა"
-
-#: logview/src/logview-window.c:838
-msgid "_Find..."
-msgstr "_ძიება..."
-
-#: logview/src/logview-window.c:838
-msgid "Find a word or phrase in the log"
-msgstr ""
-
-#: logview/src/logview-window.c:841
-msgid "Zoom _In"
-msgstr "მიახლოვება"
-
-#: logview/src/logview-window.c:841
-msgid "Bigger text size"
-msgstr "ტექსტის ზომის გადიდება"
-
-#: logview/src/logview-window.c:843
-msgid "Zoom _Out"
-msgstr "და_პატარავება"
-
-#: logview/src/logview-window.c:843
-msgid "Smaller text size"
-msgstr "ტექსტის ზომის შემცირება"
-
-#: logview/src/logview-window.c:845
-msgid "_Normal Size"
-msgstr "_ნორმალური ზომა"
-
-#: logview/src/logview-window.c:845
-msgid "Normal text size"
-msgstr "ჩვეულებრივი ზომის ტექსტი"
-
-#: logview/src/logview-window.c:848
-msgid "Manage Filters"
-msgstr ""
-
-#: logview/src/logview-window.c:848
-msgid "Manage filters"
-msgstr ""
-
-#: logview/src/logview-window.c:851
-msgid "Open the help contents for the log viewer"
-msgstr "დახმარება ჟურნალის·დათვალიერებისას"
-
-#: logview/src/logview-window.c:853 mate-dictionary/src/gdict-applet.c:1175
-#: mate-dictionary/src/gdict-window.c:1312
-msgid "_About"
-msgstr "_შესახებ"
-
-#: logview/src/logview-window.c:853
-msgid "Show the about dialog for the log viewer"
-msgstr ""
-"ჟურნალის დათვალიერების პროგრამის შესახებანპროგრამის·შესახებანინფორმაცია"
-
-#: logview/src/logview-window.c:858
-msgid "_Statusbar"
-msgstr "_სტატუსის პანელი"
-
-#: logview/src/logview-window.c:858
-msgid "Show Status Bar"
-msgstr "სტატუსის პანელის ჩვენება"
-
-#: logview/src/logview-window.c:860
-msgid "Side _Pane"
-msgstr "გვერდითა _პანელი"
-
-#: logview/src/logview-window.c:860
-msgid "Show Side Pane"
-msgstr "გვერდითა პანელის ჩვენება"
-
-#: logview/src/logview-window.c:862
-msgid "Show matches only"
-msgstr ""
-
-#: logview/src/logview-window.c:862
-msgid "Only show lines that match one of the given filters"
-msgstr ""
-
-#: logview/src/logview-window.c:994
+#: logview/src/logview-window.c:1042
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr ""
 
-#: logview/src/logview-window.c:1419
+#: logview/src/logview-window.c:1462
 msgid "Version: "
 msgstr "ვერსია: "
 
-#: logview/src/logview-window.c:1525
+#: logview/src/logview-window.c:1565
 msgid "Could not open the following files:"
 msgstr ""
 
@@ -1979,19 +1854,19 @@ msgid ""
 "query."
 msgstr ""
 
-#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:5
+#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:6
 msgid "Dictionary Applet Factory"
 msgstr ""
 
-#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:6
+#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:7
 msgid "Factory for the dictionary applet"
 msgstr ""
 
-#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:9
+#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:10
 msgid "Dictionary Look up"
 msgstr "ლექსიკონის გახსნა"
 
-#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:10
+#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:11
 msgid "Look up words in a dictionary"
 msgstr "სიტყვების ძებნა ლექსიკონში"
 
@@ -2403,7 +2278,7 @@ msgstr ""
 
 #: mate-dictionary/src/gdict-about.c:82 mate-dictionary/src/gdict-app.c:360
 #: mate-dictionary/src/gdict-window.c:578
-#: mate-dictionary/src/gdict-window.c:1862
+#: mate-dictionary/src/gdict-window.c:1954
 msgid "Dictionary"
 msgstr "ლექსიკონი"
 
@@ -2492,136 +2367,140 @@ msgstr ""
 msgid " - Look up words in dictionaries"
 msgstr " ·-·ლექსიკონები·სიტყვების·საძიებლად"
 
-#: mate-dictionary/src/gdict-applet.c:193
-#: mate-dictionary/src/gdict-window.c:933
+#: mate-dictionary/src/gdict-applet.c:207
+#: mate-dictionary/src/gdict-window.c:937
 msgid "Save a Copy"
 msgstr "ასლის შენახვა"
 
-#: mate-dictionary/src/gdict-applet.c:203
-#: mate-dictionary/src/gdict-window.c:943
+#: mate-dictionary/src/gdict-applet.c:217
+#: mate-dictionary/src/gdict-window.c:947
 msgid "Untitled document"
 msgstr "უსახელო დოკუმენტი"
 
-#: mate-dictionary/src/gdict-applet.c:224
-#: mate-dictionary/src/gdict-window.c:964
+#: mate-dictionary/src/gdict-applet.c:238
+#: mate-dictionary/src/gdict-window.c:968
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "შეცდომა '%s'-ში ჩაწერისას"
 
-#: mate-dictionary/src/gdict-applet.c:349
+#: mate-dictionary/src/gdict-applet.c:380
 msgid "Clear the definitions found"
 msgstr "ნაპოვნი შესატყვისების წაშლა"
 
-#: mate-dictionary/src/gdict-applet.c:351
+#: mate-dictionary/src/gdict-applet.c:382
 msgid "Clear definition"
 msgstr "განსაზღვრების წაშლა"
 
-#: mate-dictionary/src/gdict-applet.c:352
+#: mate-dictionary/src/gdict-applet.c:383
 msgid "Clear the text of the definition"
 msgstr "განსაზღვრების·ტექსტის წაშლა"
 
-#: mate-dictionary/src/gdict-applet.c:364
+#: mate-dictionary/src/gdict-applet.c:395
 msgid "Print the definitions found"
 msgstr "ნაპოვნი განსაზღვრებების ბეჭდვა"
 
-#: mate-dictionary/src/gdict-applet.c:366
+#: mate-dictionary/src/gdict-applet.c:397
 msgid "Print definition"
 msgstr "განსაზღვრების·ბეჭდვა"
 
-#: mate-dictionary/src/gdict-applet.c:367
+#: mate-dictionary/src/gdict-applet.c:398
 msgid "Print the text of the definition"
 msgstr "განსაზღვრების ტექსტის ბეჭდვა"
 
-#: mate-dictionary/src/gdict-applet.c:379
+#: mate-dictionary/src/gdict-applet.c:410
 msgid "Save the definitions found"
 msgstr "ნაპოვნი·განსაზღვრებების შენახვა"
 
-#: mate-dictionary/src/gdict-applet.c:381
+#: mate-dictionary/src/gdict-applet.c:412
 msgid "Save definition"
 msgstr "განსაზღვრების·შენახვა"
 
-#: mate-dictionary/src/gdict-applet.c:382
+#: mate-dictionary/src/gdict-applet.c:413
 msgid "Save the text of the definition to a file"
 msgstr "განსაზღვრების·ტექსტის შენახვა ფაილში"
 
-#: mate-dictionary/src/gdict-applet.c:519
+#: mate-dictionary/src/gdict-applet.c:560
 msgid "Click to view the dictionary window"
 msgstr "დააწკაპეთ ლექსიკონის ფანჯრის დასათვალიერებლად"
 
-#: mate-dictionary/src/gdict-applet.c:521
+#: mate-dictionary/src/gdict-applet.c:562
 msgid "Toggle dictionary window"
 msgstr "ლექსიკონის ფანჯრის გადართვა"
 
-#: mate-dictionary/src/gdict-applet.c:522
+#: mate-dictionary/src/gdict-applet.c:563
 msgid "Show or hide the definition window"
 msgstr "ლექსიკონის·ფანჯრის·დამალვა/გამოჩენა"
 
-#: mate-dictionary/src/gdict-applet.c:573
+#: mate-dictionary/src/gdict-applet.c:625
 msgid "Type the word you want to look up"
 msgstr "შეიყვანეთ საძიებელი სიტყვა"
 
-#: mate-dictionary/src/gdict-applet.c:575
+#: mate-dictionary/src/gdict-applet.c:627
 msgid "Dictionary entry"
 msgstr "ლექსიკონის ელემენტი"
 
-#: mate-dictionary/src/gdict-applet.c:576
+#: mate-dictionary/src/gdict-applet.c:628
 msgid "Look up words in dictionaries"
 msgstr "სიტყვების ძებნა ლექსიკონებში"
 
-#: mate-dictionary/src/gdict-applet.c:704
-#: mate-dictionary/src/gdict-window.c:1075
+#: mate-dictionary/src/gdict-applet.c:766
+#: mate-dictionary/src/gdict-window.c:1096
 msgid "Dictionary Preferences"
 msgstr "ლექსიკონის პარამეტრები"
 
-#: mate-dictionary/src/gdict-applet.c:728
+#: mate-dictionary/src/gdict-applet.c:790
 #: mate-dictionary/src/gdict-pref-dialog.c:494
 #: mate-dictionary/src/gdict-source-dialog.c:476
-#: mate-dictionary/src/gdict-window.c:1222
+#: mate-dictionary/src/gdict-window.c:1297
 msgid "There was an error while displaying help"
 msgstr "შეცდომა დახმარების ჩვენებისას"
 
-#: mate-dictionary/src/gdict-applet.c:867
+#: mate-dictionary/src/gdict-applet.c:929
 #: mate-dictionary/src/gdict-window.c:493
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "ვერ მოიძებნა ლექსიკონის წყარო სახელად '%s'"
 
-#: mate-dictionary/src/gdict-applet.c:871
+#: mate-dictionary/src/gdict-applet.c:933
 #: mate-dictionary/src/gdict-window.c:497
 msgid "Unable to find dictionary source"
 msgstr "ვერ·მოიძებნა·ლექსიკონის·წყარო"
 
-#: mate-dictionary/src/gdict-applet.c:887
+#: mate-dictionary/src/gdict-applet.c:949
 #: mate-dictionary/src/gdict-window.c:513
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "ვერ·მოიძებნა·კონტექსტი ლექსიკონის·წყაროსათვის '%s'"
 
-#: mate-dictionary/src/gdict-applet.c:891
+#: mate-dictionary/src/gdict-applet.c:953
 #: mate-dictionary/src/gdict-window.c:517
 msgid "Unable to create a context"
 msgstr "კონტექსტი ვერ შეიქმნა"
 
-#: mate-dictionary/src/gdict-applet.c:1157
+#: mate-dictionary/src/gdict-applet.c:1219
 msgid "_Look Up Selected Text"
 msgstr "მონიშნული ტექსტის _ძებნა"
 
-#: mate-dictionary/src/gdict-applet.c:1160
+#: mate-dictionary/src/gdict-applet.c:1222
 msgid "Cl_ear"
 msgstr "_წაშლა"
 
-#: mate-dictionary/src/gdict-applet.c:1163
+#: mate-dictionary/src/gdict-applet.c:1225
 msgid "_Print"
 msgstr "_ბეჭდვა"
 
-#: mate-dictionary/src/gdict-applet.c:1166
+#: mate-dictionary/src/gdict-applet.c:1228
 #: mate-screenshot/data/mate-screenshot.ui:109
 msgid "_Save"
 msgstr "_შენახვა"
 
-#: mate-dictionary/src/gdict-applet.c:1169
+#: mate-dictionary/src/gdict-applet.c:1231
 msgid "Preferences"
 msgstr "პარამეტრები"
+
+#: mate-dictionary/src/gdict-applet.c:1237
+msgid "_About"
+msgstr "_შესახებ"
 
 #: mate-dictionary/src/gdict-common.c:77
 #, c-format
@@ -2710,168 +2589,59 @@ msgstr[1] ""
 msgid "%s - Dictionary"
 msgstr "%s - ლექსიკონი"
 
-#: mate-dictionary/src/gdict-window.c:1259
-msgid "_Go"
-msgstr "_წინ"
-
-#: mate-dictionary/src/gdict-window.c:1263
-#: mate-screenshot/data/mate-screenshot.ui:58
-msgid "_New"
-msgstr "_ახალი"
-
-#: mate-dictionary/src/gdict-window.c:1264
-msgid "New look up"
-msgstr "მორიგი ძებნა"
-
-#: mate-dictionary/src/gdict-window.c:1265
-msgid "_Save a Copy..."
-msgstr "_ასლის შენახვა"
-
-#: mate-dictionary/src/gdict-window.c:1267
-msgid "P_review..."
-msgstr ""
-
-#: mate-dictionary/src/gdict-window.c:1268
-msgid "Preview this document"
-msgstr ""
-
-#: mate-dictionary/src/gdict-window.c:1269
-msgid "_Print..."
-msgstr "_ბეჭდვა..."
-
-#: mate-dictionary/src/gdict-window.c:1270
-msgid "Print this document"
-msgstr "დაბეჭდე ეს დოკუმენტი"
-
-#: mate-dictionary/src/gdict-window.c:1279
-msgid "_Find"
-msgstr ""
-
-#: mate-dictionary/src/gdict-window.c:1280
-msgid "Find a word or phrase in the document"
-msgstr "დოკუმენტში სიტყვის ან ფრაზის ძიება"
-
-#: mate-dictionary/src/gdict-window.c:1282
-msgid "Find Ne_xt"
-msgstr "შემდეგის ძ_იება"
-
-#: mate-dictionary/src/gdict-window.c:1284
-msgid "Find Pre_vious"
-msgstr "წ_ინას მოძებნა"
-
-#: mate-dictionary/src/gdict-window.c:1286
-msgid "_Preferences"
-msgstr "_პარამეტრები"
-
-#: mate-dictionary/src/gdict-window.c:1290
-msgid "_Previous Definition"
-msgstr "_წინა განსაზღვრება"
-
-#: mate-dictionary/src/gdict-window.c:1291
-msgid "Go to the previous definition"
-msgstr "_გადასვლა წინა განსაზღვრებაზე"
-
-#: mate-dictionary/src/gdict-window.c:1292
-msgid "_Next Definition"
-msgstr "_შემდეგი განსაზღვრება"
-
-#: mate-dictionary/src/gdict-window.c:1293
-msgid "Go to the next definition"
-msgstr "გადასვლა შემდეგ·განსაზღვრებაზე"
-
-#: mate-dictionary/src/gdict-window.c:1294
-msgid "_First Definition"
-msgstr "_პირველი განსაზღვრება"
-
-#: mate-dictionary/src/gdict-window.c:1295
-msgid "Go to the first definition"
-msgstr "გადასვლა პირველ·განსაზღვრებაზე"
-
-#: mate-dictionary/src/gdict-window.c:1296
-msgid "_Last Definition"
-msgstr "_ბოლო განსაზღვრება"
-
-#: mate-dictionary/src/gdict-window.c:1297
-msgid "Go to the last definition"
-msgstr "გადასვლა ბოლო·განსაზღვრებაზე"
-
-#: mate-dictionary/src/gdict-window.c:1300
-msgid "Similar _Words"
-msgstr ""
-
-#: mate-dictionary/src/gdict-window.c:1302
-msgid "Dictionary Sources"
-msgstr ""
-
-#: mate-dictionary/src/gdict-window.c:1304
-msgid "Available _Databases"
-msgstr ""
-
-#: mate-dictionary/src/gdict-window.c:1306
-msgid "Available St_rategies"
-msgstr ""
-
-#: mate-dictionary/src/gdict-window.c:1323
-msgid "_Sidebar"
-msgstr ""
-
-#: mate-dictionary/src/gdict-window.c:1325
-msgid "S_tatusbar"
-msgstr ""
-
-#: mate-dictionary/src/gdict-window.c:1390
+#: mate-dictionary/src/gdict-window.c:1466
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1411
+#: mate-dictionary/src/gdict-window.c:1487
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1431
+#: mate-dictionary/src/gdict-window.c:1507
 #, c-format
 msgid "Database `%s' selected"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1451
+#: mate-dictionary/src/gdict-window.c:1527
 #, c-format
 msgid "Word `%s' selected"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1476
+#: mate-dictionary/src/gdict-window.c:1552
 msgid "Double-click on the word to look up"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1482
+#: mate-dictionary/src/gdict-window.c:1558
 msgid "Double-click on the matching strategy to use"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1487
+#: mate-dictionary/src/gdict-window.c:1563
 msgid "Double-click on the source to use"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1496
+#: mate-dictionary/src/gdict-window.c:1572
 msgid "Double-click on the database to use"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1668
+#: mate-dictionary/src/gdict-window.c:1760
 msgid "Look _up:"
 msgstr "_ძებნა:"
 
-#: mate-dictionary/src/gdict-window.c:1743
+#: mate-dictionary/src/gdict-window.c:1835
 msgid "Similar words"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1756
+#: mate-dictionary/src/gdict-window.c:1848
 msgid "Available dictionaries"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1774
+#: mate-dictionary/src/gdict-window.c:1866
 msgid "Available strategies"
 msgstr ""
 
-#: mate-dictionary/src/gdict-window.c:1790
+#: mate-dictionary/src/gdict-window.c:1882
 msgid "Dictionary sources"
 msgstr ""
 
@@ -3020,6 +2790,10 @@ msgstr ""
 msgid "Save Screenshot"
 msgstr "ეკრანის ანაბეჭდის დამახსოვრება"
 
+#: mate-screenshot/data/mate-screenshot.ui:58
+msgid "_New"
+msgstr "_ახალი"
+
 #: mate-screenshot/data/mate-screenshot.ui:74
 msgid "C_opy to Clipboard"
 msgstr ""
@@ -3115,7 +2889,7 @@ msgid "Grab _after a delay of"
 msgstr ""
 
 #: mate-screenshot/src/mate-screenshot.c:500
-#: mate-screenshot/src/mate-screenshot.c:1319
+#: mate-screenshot/src/mate-screenshot.c:1290
 msgid "seconds"
 msgstr "წამი"
 
@@ -3157,57 +2931,57 @@ msgstr ""
 msgid "Screenshot at %s - %d.png"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1314
+#: mate-screenshot/src/mate-screenshot.c:1285
 msgid "Grab a window instead of the entire screen"
 msgstr "ფანჯრის (და არა მთელი ეკრანის) ასლი"
 
-#: mate-screenshot/src/mate-screenshot.c:1315
+#: mate-screenshot/src/mate-screenshot.c:1286
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1316
+#: mate-screenshot/src/mate-screenshot.c:1287
 msgid "Send grabbed area directly to the clipboard"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1317
+#: mate-screenshot/src/mate-screenshot.c:1288
 msgid "Include the window border with the screenshot"
 msgstr "ფანჯრის ასლი ჩარჩოს ჩათვლით"
 
-#: mate-screenshot/src/mate-screenshot.c:1318
+#: mate-screenshot/src/mate-screenshot.c:1289
 msgid "Remove the window border from the screenshot"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1319
+#: mate-screenshot/src/mate-screenshot.c:1290
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "ეკრანის ასლის აღება მითითებული დროის შემდეგ [წამებში]"
 
-#: mate-screenshot/src/mate-screenshot.c:1320
+#: mate-screenshot/src/mate-screenshot.c:1291
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1320
+#: mate-screenshot/src/mate-screenshot.c:1291
 msgid "effect"
 msgstr "ეფექტი"
 
-#: mate-screenshot/src/mate-screenshot.c:1321
+#: mate-screenshot/src/mate-screenshot.c:1292
 msgid "Interactively set options"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1322
+#: mate-screenshot/src/mate-screenshot.c:1293
 msgid "Print version information and exit"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1333
+#: mate-screenshot/src/mate-screenshot.c:1304
 msgid "Take a picture of the screen"
 msgstr "ეკრანის ასლის აღება"
 
-#: mate-screenshot/src/mate-screenshot.c:1356
+#: mate-screenshot/src/mate-screenshot.c:1327
 msgid ""
 "Conflicting options: --clipboard and --interactive should not be used at the"
 " same time.\n"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1362
+#: mate-screenshot/src/mate-screenshot.c:1333
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"

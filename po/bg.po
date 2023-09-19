@@ -6,7 +6,6 @@
 # Translators:
 # breaker loc <breaker9loc@gmail.com>, 2018
 # Yasen Pramatarov <yasen@lindeas.com>, 2018
-# Georgi Georgiev (Жоро) <g.georgiev.shumen@gmail.com>, 2018
 # Kiril Kirilov <cybercop_montana@abv.bg>, 2018
 # Борислав Георгиев <crazyroler@gmail.com>, 2018
 # Любомир Василев, 2019
@@ -16,12 +15,12 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-utils 1.26.0\n"
+"Project-Id-Version: mate-utils 1.27.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
-"POT-Creation-Date: 2022-10-29 15:36+0200\n"
+"POT-Creation-Date: 2023-09-10 10:29+0200\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
 "Last-Translator: Замфир Йончев <zamfir.yonchev@gmail.com>, 2021\n"
-"Language-Team: Bulgarian (https://www.transifex.com/mate/teams/13566/bg/)\n"
+"Language-Team: Bulgarian (https://app.transifex.com/mate/teams/13566/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -48,15 +47,13 @@ msgid "Disk Usage Analyzer Preferences"
 msgstr "Настройки на анализатора на дисково пространство"
 
 #: baobab/data/baobab-dialog-scan-props.ui:32
-#: baobab/data/baobab-main-window.ui:129 logview/src/logview-window.c:825
-#: mate-dictionary/src/gdict-applet.c:1172
-#: mate-dictionary/src/gdict-window.c:1260
+#: baobab/data/baobab-main-window.ui:129
+#: mate-dictionary/src/gdict-applet.c:1234
 #: mate-screenshot/data/mate-screenshot.ui:41
 msgid "_Help"
 msgstr "_Помощ"
 
-#: baobab/data/baobab-dialog-scan-props.ui:48 logview/src/logview-window.c:829
-#: mate-dictionary/src/gdict-window.c:1271
+#: baobab/data/baobab-dialog-scan-props.ui:48
 msgid "_Close"
 msgstr "_Затваряне"
 
@@ -89,8 +86,7 @@ msgstr "Търсене в _папка…"
 msgid "S_can Remote Folder..."
 msgstr "Търсене в отдале_чена папка…"
 
-#: baobab/data/baobab-main-window.ui:74 logview/src/logview-window.c:822
-#: mate-dictionary/src/gdict-window.c:1257
+#: baobab/data/baobab-main-window.ui:74
 msgid "_Edit"
 msgstr "_Редактиране"
 
@@ -102,8 +98,7 @@ msgstr "_Разширяване на всичко"
 msgid "_Collapse All"
 msgstr "_Свиване на всичко"
 
-#: baobab/data/baobab-main-window.ui:101 logview/src/logview-window.c:823
-#: mate-dictionary/src/gdict-window.c:1258
+#: baobab/data/baobab-main-window.ui:101
 msgid "_View"
 msgstr "_Изглед"
 
@@ -119,8 +114,7 @@ msgstr "Лента за _състоянието"
 msgid "All_ocated Space"
 msgstr "Заделено _пространство"
 
-#: baobab/data/baobab-main-window.ui:136 logview/src/logview-window.c:851
-#: mate-dictionary/src/gdict-window.c:1310
+#: baobab/data/baobab-main-window.ui:136
 msgid "_Contents"
 msgstr "_Ръководство"
 
@@ -395,91 +389,91 @@ msgstr "Общ размер"
 msgid "Available"
 msgstr "Налично"
 
-#: baobab/src/baobab-remote-connect-dialog.c:68
+#: baobab/src/baobab-remote-connect-dialog.c:71
 #, c-format
 msgid "Cannot scan location \"%s\""
 msgstr "Местоположението „%s“ не може да бъде претърсено"
 
-#: baobab/src/baobab-remote-connect-dialog.c:166
+#: baobab/src/baobab-remote-connect-dialog.c:160
 msgid "Custom Location"
 msgstr "Друг адрес"
 
-#: baobab/src/baobab-remote-connect-dialog.c:168
+#: baobab/src/baobab-remote-connect-dialog.c:162
 msgid "SSH"
 msgstr "SSH"
 
-#: baobab/src/baobab-remote-connect-dialog.c:171
+#: baobab/src/baobab-remote-connect-dialog.c:165
 msgid "Public FTP"
 msgstr "Публично FTP"
 
-#: baobab/src/baobab-remote-connect-dialog.c:173
+#: baobab/src/baobab-remote-connect-dialog.c:167
 msgid "FTP (with login)"
 msgstr "FTP (с идентификация)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:176
+#: baobab/src/baobab-remote-connect-dialog.c:170
 msgid "Windows share"
 msgstr "Споделено устройство на Windows"
 
-#: baobab/src/baobab-remote-connect-dialog.c:178
+#: baobab/src/baobab-remote-connect-dialog.c:172
 msgid "WebDAV (HTTP)"
 msgstr "WebDAV по HTTP"
 
-#: baobab/src/baobab-remote-connect-dialog.c:180
+#: baobab/src/baobab-remote-connect-dialog.c:174
 msgid "Secure WebDAV (HTTPS)"
 msgstr "Сигурен WebDAV по HTTPS"
 
-#: baobab/src/baobab-remote-connect-dialog.c:240
+#: baobab/src/baobab-remote-connect-dialog.c:234
 msgid "Cannot Connect to Server. You must enter a name for the server."
 msgstr ""
 "Не може да се осъществи връзка със сървъра. Трябва да въведете име за "
 "сървъра."
 
-#: baobab/src/baobab-remote-connect-dialog.c:243
+#: baobab/src/baobab-remote-connect-dialog.c:237
 msgid "Please enter a name and try again."
 msgstr "Въведете име и опитайте отново"
 
-#: baobab/src/baobab-remote-connect-dialog.c:437
+#: baobab/src/baobab-remote-connect-dialog.c:431
 msgid "_Location (URI):"
 msgstr "_Адрес:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:453
+#: baobab/src/baobab-remote-connect-dialog.c:447
 msgid "_Server:"
 msgstr "_Сървър:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:466
+#: baobab/src/baobab-remote-connect-dialog.c:460
 msgid "Optional information:"
 msgstr "Допълнителна информация"
 
-#: baobab/src/baobab-remote-connect-dialog.c:475
+#: baobab/src/baobab-remote-connect-dialog.c:469
 msgid "_Share:"
 msgstr "_Споделено устройство:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:490
+#: baobab/src/baobab-remote-connect-dialog.c:484
 #: mate-dictionary/data/mate-dictionary-source.ui:121
 msgid "_Port:"
 msgstr "_Порт:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:504
+#: baobab/src/baobab-remote-connect-dialog.c:498
 msgid "_Folder:"
 msgstr "П_апка"
 
-#: baobab/src/baobab-remote-connect-dialog.c:518
+#: baobab/src/baobab-remote-connect-dialog.c:512
 msgid "_User Name:"
 msgstr "_Име на потребител:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:533
+#: baobab/src/baobab-remote-connect-dialog.c:527
 msgid "_Domain Name:"
 msgstr "Име на _домейн:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:590
+#: baobab/src/baobab-remote-connect-dialog.c:584
 msgid "Connect to Server"
 msgstr "Свързване към сървър"
 
-#: baobab/src/baobab-remote-connect-dialog.c:606
+#: baobab/src/baobab-remote-connect-dialog.c:600
 msgid "Service _type:"
 msgstr "Вид _услуга:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:722
+#: baobab/src/baobab-remote-connect-dialog.c:716
 msgid "_Scan"
 msgstr "_Търсене"
 
@@ -499,7 +493,7 @@ msgstr ""
 msgid "_Rescan"
 msgstr "_Ново търсене"
 
-#: baobab/src/baobab-treeview.c:222 gsearchtool/src/gsearchtool.c:2447
+#: baobab/src/baobab-treeview.c:222 gsearchtool/src/gsearchtool.c:2446
 msgid "Folder"
 msgstr "Папка"
 
@@ -507,7 +501,7 @@ msgstr "Папка"
 msgid "Usage"
 msgstr "Употреба"
 
-#: baobab/src/baobab-treeview.c:258 gsearchtool/src/gsearchtool.c:2460
+#: baobab/src/baobab-treeview.c:258 gsearchtool/src/gsearchtool.c:2459
 msgid "Size"
 msgstr "Размер"
 
@@ -910,250 +904,250 @@ msgstr ""
 "Този ключ определя дали условието за търсене „Изключване на други файлови "
 "системи.“ е избрано при стартирането на инструмента за търсене."
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:168
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:169
 msgid "File is not a valid .desktop file"
 msgstr "Файлът не е във формат .desktop"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:193
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:194
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
 msgstr "Непозната версия на файла: %s"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:975
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:984
 #, c-format
 msgid "Starting %s"
 msgstr "Стартиране на %s"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1117
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1126
 msgid "Application does not accept documents on command line"
 msgstr "Програмата не приема документи през командния ред"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1185
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1194
 #, c-format
 msgid "Unrecognized launch option: %d"
 msgstr "Непозната опция при стартиране: %d"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1401
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1410
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 msgstr ""
 "В обекти от вида „Type=Link“ не може да се подават адреси на документи"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1422
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1431
 msgid "Not a launchable item"
 msgstr "Не е обект за стартиране"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:233
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:234
 msgid "Disable connection to session manager"
 msgstr "Изключване на връзката с управлението на сесиите"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:238
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:239
 msgid "Specify file containing saved configuration"
 msgstr "Указване на файла със запазените настройки"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:238
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:239
 msgid "FILE"
 msgstr "ФАЙЛ"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:243
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:244
 msgid "Specify session management ID"
 msgstr "Указване на идентификатор за управлението на сесиите"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:243
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:244
 msgid "ID"
 msgstr "ИдПр"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:269
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:270
 msgid "Session management options:"
 msgstr "Настройки на управлението на сесии:"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:270
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:271
 msgid "Show session management options"
 msgstr "Показване на настройките за управлението на сесиите"
 
-#: gsearchtool/src/gsearchtool.c:82
+#: gsearchtool/src/gsearchtool.c:81
 msgid "Contains the _text"
 msgstr "_Съдържа текста"
 
-#: gsearchtool/src/gsearchtool.c:84
+#: gsearchtool/src/gsearchtool.c:83
 msgid "_Date modified less than"
 msgstr "_Датата на промяна е преди"
 
-#: gsearchtool/src/gsearchtool.c:84 gsearchtool/src/gsearchtool.c:85
+#: gsearchtool/src/gsearchtool.c:83 gsearchtool/src/gsearchtool.c:84
 msgid "days"
 msgstr "дни"
 
-#: gsearchtool/src/gsearchtool.c:85
+#: gsearchtool/src/gsearchtool.c:84
 msgid "Date modified more than"
 msgstr "Датата на промяна е сл_ед"
 
-#: gsearchtool/src/gsearchtool.c:87
+#: gsearchtool/src/gsearchtool.c:86
 msgid "S_ize at least"
 msgstr "_Размерът е поне"
 
-#: gsearchtool/src/gsearchtool.c:87 gsearchtool/src/gsearchtool.c:88
+#: gsearchtool/src/gsearchtool.c:86 gsearchtool/src/gsearchtool.c:87
 msgid "kilobytes"
 msgstr "килобайта"
 
-#: gsearchtool/src/gsearchtool.c:88
+#: gsearchtool/src/gsearchtool.c:87
 msgid "Si_ze at most"
 msgstr "Р_азмерът е най-много"
 
-#: gsearchtool/src/gsearchtool.c:89
+#: gsearchtool/src/gsearchtool.c:88
 msgid "File is empty"
 msgstr "Файлът е празен"
 
-#: gsearchtool/src/gsearchtool.c:91
+#: gsearchtool/src/gsearchtool.c:90
 msgid "Owned by _user"
 msgstr "Собственост е на п_отребителя"
 
-#: gsearchtool/src/gsearchtool.c:92
+#: gsearchtool/src/gsearchtool.c:91
 msgid "Owned by _group"
 msgstr "Собственост е на _групата"
 
-#: gsearchtool/src/gsearchtool.c:93
+#: gsearchtool/src/gsearchtool.c:92
 msgid "Owner is unrecognized"
 msgstr "Собственикът не е разпознат"
 
-#: gsearchtool/src/gsearchtool.c:95
+#: gsearchtool/src/gsearchtool.c:94
 msgid "Na_me does not contain"
 msgstr "И_мето не съдържа"
 
-#: gsearchtool/src/gsearchtool.c:96
+#: gsearchtool/src/gsearchtool.c:95
 msgid "Name matches regular e_xpression"
 msgstr "Името напасва с регул_ярния израз"
 
-#: gsearchtool/src/gsearchtool.c:98
+#: gsearchtool/src/gsearchtool.c:97
 msgid "Show hidden and backup files"
 msgstr "Скритите файлове и папки да се показват"
 
-#: gsearchtool/src/gsearchtool.c:99
+#: gsearchtool/src/gsearchtool.c:98
 msgid "Follow symbolic links"
 msgstr "Символните връзки се следват"
 
-#: gsearchtool/src/gsearchtool.c:100
+#: gsearchtool/src/gsearchtool.c:99
 msgid "Exclude other filesystems"
 msgstr "Изключване на други файлови системи"
 
-#: gsearchtool/src/gsearchtool.c:158
+#: gsearchtool/src/gsearchtool.c:157
 msgid "Show version of the application"
 msgstr "Показване на версията на програмата"
 
-#: gsearchtool/src/gsearchtool.c:159 gsearchtool/src/gsearchtool.c:164
-#: gsearchtool/src/gsearchtool.c:173
+#: gsearchtool/src/gsearchtool.c:158 gsearchtool/src/gsearchtool.c:163
+#: gsearchtool/src/gsearchtool.c:172
 msgid "STRING"
 msgstr "НИЗ"
 
-#: gsearchtool/src/gsearchtool.c:160
+#: gsearchtool/src/gsearchtool.c:159
 msgid "PATH"
 msgstr "ПЪТ"
 
-#: gsearchtool/src/gsearchtool.c:161
+#: gsearchtool/src/gsearchtool.c:160
 msgid "VALUE"
 msgstr "СТОЙНОСТ"
 
-#: gsearchtool/src/gsearchtool.c:165 gsearchtool/src/gsearchtool.c:166
+#: gsearchtool/src/gsearchtool.c:164 gsearchtool/src/gsearchtool.c:165
 msgid "DAYS"
 msgstr "ДНИ"
 
-#: gsearchtool/src/gsearchtool.c:167 gsearchtool/src/gsearchtool.c:168
+#: gsearchtool/src/gsearchtool.c:166 gsearchtool/src/gsearchtool.c:167
 msgid "KILOBYTES"
 msgstr "КИЛОБАЙТА"
 
-#: gsearchtool/src/gsearchtool.c:170
+#: gsearchtool/src/gsearchtool.c:169
 msgid "USER"
 msgstr "ПОТРЕБИТЕЛ"
 
-#: gsearchtool/src/gsearchtool.c:171
+#: gsearchtool/src/gsearchtool.c:170
 msgid "GROUP"
 msgstr "ГРУПА"
 
-#: gsearchtool/src/gsearchtool.c:174
+#: gsearchtool/src/gsearchtool.c:173
 msgid "PATTERN"
 msgstr "ШАБЛОН"
 
-#: gsearchtool/src/gsearchtool.c:385
+#: gsearchtool/src/gsearchtool.c:384
 msgid "A locate database has probably not been created."
 msgstr "Вероятно не е създадена база от данни за местоположения."
 
-#: gsearchtool/src/gsearchtool.c:487
+#: gsearchtool/src/gsearchtool.c:486
 #, c-format
 msgid "Character set conversion failed for \"%s\""
 msgstr "Неуспешно преобразуване на набора символи за „%s“"
 
-#: gsearchtool/src/gsearchtool.c:511
+#: gsearchtool/src/gsearchtool.c:510
 msgid "Searching..."
 msgstr "Търсене…"
 
-#: gsearchtool/src/gsearchtool.c:511 gsearchtool/src/gsearchtool.c:1048
-#: gsearchtool/src/gsearchtool.c:3077
+#: gsearchtool/src/gsearchtool.c:510 gsearchtool/src/gsearchtool.c:1047
+#: gsearchtool/src/gsearchtool.c:3043
 msgid "Search for Files"
 msgstr "Търсене за файлове"
 
-#: gsearchtool/src/gsearchtool.c:994 gsearchtool/src/gsearchtool.c:1023
+#: gsearchtool/src/gsearchtool.c:993 gsearchtool/src/gsearchtool.c:1022
 msgid "No files found"
 msgstr "Не са намерени файлове"
 
-#: gsearchtool/src/gsearchtool.c:1016
+#: gsearchtool/src/gsearchtool.c:1015
 msgid "(stopped)"
 msgstr "(спрян)"
 
-#: gsearchtool/src/gsearchtool.c:1022
+#: gsearchtool/src/gsearchtool.c:1021
 msgid "No Files Found"
 msgstr "Не са намерени файлове"
 
-#: gsearchtool/src/gsearchtool.c:1027
+#: gsearchtool/src/gsearchtool.c:1026
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
 msgstr[0] ""
 msgstr[1] ""
 
-#: gsearchtool/src/gsearchtool.c:1031 gsearchtool/src/gsearchtool.c:1069
+#: gsearchtool/src/gsearchtool.c:1030 gsearchtool/src/gsearchtool.c:1068
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
 msgstr[0] ""
 msgstr[1] ""
 
-#: gsearchtool/src/gsearchtool.c:1160
+#: gsearchtool/src/gsearchtool.c:1159
 msgid "Entry changed called for a non entry option!"
 msgstr "Промененото условие изисква условие, което не присъства!"
 
-#: gsearchtool/src/gsearchtool.c:1325
+#: gsearchtool/src/gsearchtool.c:1324
 msgid "Set the text of \"Name contains\" search option"
 msgstr "Задаване на текст за „Името съдържа“"
 
-#: gsearchtool/src/gsearchtool.c:1326
+#: gsearchtool/src/gsearchtool.c:1325
 msgid "Set the text of \"Look in folder\" search option"
 msgstr "Задаване на текст за „Гледане в папка“"
 
-#: gsearchtool/src/gsearchtool.c:1327
+#: gsearchtool/src/gsearchtool.c:1326
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr "Подреждане на файловете по: име, папка, размер, вид, или дата"
 
-#: gsearchtool/src/gsearchtool.c:1328
+#: gsearchtool/src/gsearchtool.c:1327
 msgid "Set sort order to descending, the default is ascending"
 msgstr "Задаване на намаляващ ред на сортирането, по подразбиране е възходящ"
 
-#: gsearchtool/src/gsearchtool.c:1329
+#: gsearchtool/src/gsearchtool.c:1328
 msgid "Automatically start a search"
 msgstr "Автоматично стартиране на търсенето"
 
-#: gsearchtool/src/gsearchtool.c:1335
+#: gsearchtool/src/gsearchtool.c:1334
 #, c-format
 msgid "Select the \"%s\" search option"
 msgstr "Избиране на „%s“ като условие за търсене"
 
-#: gsearchtool/src/gsearchtool.c:1338
+#: gsearchtool/src/gsearchtool.c:1337
 #, c-format
 msgid "Select and set the \"%s\" search option"
 msgstr "Избиране и задаване условието за търсене „%s“"
 
-#: gsearchtool/src/gsearchtool.c:1445
+#: gsearchtool/src/gsearchtool.c:1444
 msgid "Invalid option passed to sortby command line argument."
 msgstr "Грешно условие, зададено в командата за подреждане"
 
-#: gsearchtool/src/gsearchtool.c:1737
+#: gsearchtool/src/gsearchtool.c:1736
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -1161,7 +1155,7 @@ msgstr ""
 "\n"
 "… Твърде много грешки за показване …"
 
-#: gsearchtool/src/gsearchtool.c:1751
+#: gsearchtool/src/gsearchtool.c:1750
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
@@ -1169,11 +1163,11 @@ msgstr ""
 "Резултатите от търсенето може да са неверни. Имаше грешки при изпълнението "
 "на това търсене."
 
-#: gsearchtool/src/gsearchtool.c:1763 gsearchtool/src/gsearchtool.c:1807
+#: gsearchtool/src/gsearchtool.c:1762 gsearchtool/src/gsearchtool.c:1806
 msgid "Show more _details"
 msgstr "_Повече информация"
 
-#: gsearchtool/src/gsearchtool.c:1793
+#: gsearchtool/src/gsearchtool.c:1792
 msgid ""
 "The search results may be out of date or invalid.  Do you want to disable "
 "the quick search feature?"
@@ -1181,154 +1175,154 @@ msgstr ""
 "Резултатите от търсенето може да са остарели или неверни. Искате ли да "
 "спрете възможността за бързо търсене?"
 
-#: gsearchtool/src/gsearchtool.c:1818
+#: gsearchtool/src/gsearchtool.c:1817
 msgid "Disable _Quick Search"
 msgstr "Спиране на _бързото търсене"
 
-#: gsearchtool/src/gsearchtool.c:1845
+#: gsearchtool/src/gsearchtool.c:1844
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
 msgstr ""
 "Неуспех при задаването на идентификатор на група на дъщерен процес %d: %s.\n"
 
-#: gsearchtool/src/gsearchtool.c:1870
+#: gsearchtool/src/gsearchtool.c:1869
 msgid "Error parsing the search command."
 msgstr "Грешка при изпълнението на командата за търсене"
 
-#: gsearchtool/src/gsearchtool.c:1902
+#: gsearchtool/src/gsearchtool.c:1901
 msgid "Error running the search command."
 msgstr "Грешка при изпълнение на командата за търсене."
 
-#: gsearchtool/src/gsearchtool.c:2025
+#: gsearchtool/src/gsearchtool.c:2024
 #, c-format
 msgid "Enter a text value for the \"%s\" search option."
 msgstr "Задаване на текстова стойност на условието за търсене „%s“."
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
-#: gsearchtool/src/gsearchtool.c:2030
+#: gsearchtool/src/gsearchtool.c:2029
 #, c-format
 msgid "\"%s\" in %s"
 msgstr "„%s“ в %s"
 
-#: gsearchtool/src/gsearchtool.c:2032
+#: gsearchtool/src/gsearchtool.c:2031
 #, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
 msgstr "Задаване на стойност в %s за условието за търсене „%s“."
 
-#: gsearchtool/src/gsearchtool.c:2096
+#: gsearchtool/src/gsearchtool.c:2095
 #, c-format
 msgid "Remove \"%s\""
 msgstr "Премахване на „%s“"
 
-#: gsearchtool/src/gsearchtool.c:2097
+#: gsearchtool/src/gsearchtool.c:2096
 #, c-format
 msgid "Click to remove the \"%s\" search option."
 msgstr "Натиснете, за да премахнете условието за търсене „%s“."
 
-#: gsearchtool/src/gsearchtool.c:2190
+#: gsearchtool/src/gsearchtool.c:2189
 msgid "A_vailable options:"
 msgstr "Възмо_жни условия:"
 
-#: gsearchtool/src/gsearchtool.c:2219
+#: gsearchtool/src/gsearchtool.c:2218
 msgid "Available options"
 msgstr "Налични условия"
 
-#: gsearchtool/src/gsearchtool.c:2220
+#: gsearchtool/src/gsearchtool.c:2219
 msgid "Select a search option from the drop-down list."
 msgstr "Избор на условие за търсене от падащото меню."
 
-#: gsearchtool/src/gsearchtool.c:2238
+#: gsearchtool/src/gsearchtool.c:2237
 msgid "Add search option"
 msgstr "Добавяне на условие за търсене"
 
-#: gsearchtool/src/gsearchtool.c:2239
+#: gsearchtool/src/gsearchtool.c:2238
 msgid "Click to add the selected available search option."
 msgstr "Натискане за избиране на избраното налично условие за търсене."
 
-#: gsearchtool/src/gsearchtool.c:2328
+#: gsearchtool/src/gsearchtool.c:2327
 msgid "S_earch results:"
 msgstr "_Резултати от търсенето:"
 
-#: gsearchtool/src/gsearchtool.c:2371
+#: gsearchtool/src/gsearchtool.c:2370
 msgid "List View"
 msgstr "Списъчен изглед"
 
-#: gsearchtool/src/gsearchtool.c:2423
+#: gsearchtool/src/gsearchtool.c:2422
 #: mate-dictionary/libgdict/gdict-source.c:240
 msgid "Name"
 msgstr "Име"
 
-#: gsearchtool/src/gsearchtool.c:2472
+#: gsearchtool/src/gsearchtool.c:2471
 msgid "Type"
 msgstr "Вид"
 
-#: gsearchtool/src/gsearchtool.c:2484
+#: gsearchtool/src/gsearchtool.c:2483
 msgid "Date Modified"
 msgstr "Дата на промяна"
 
-#: gsearchtool/src/gsearchtool.c:2813
+#: gsearchtool/src/gsearchtool.c:2779
 msgid "_Name contains:"
 msgstr "_Името съдържа:"
 
-#: gsearchtool/src/gsearchtool.c:2828 gsearchtool/src/gsearchtool.c:2829
+#: gsearchtool/src/gsearchtool.c:2794 gsearchtool/src/gsearchtool.c:2795
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr "Въведете цяло или непълно име с или без шаблонни знаци."
 
-#: gsearchtool/src/gsearchtool.c:2829
+#: gsearchtool/src/gsearchtool.c:2795
 msgid "Name contains"
 msgstr "Името съдържа"
 
-#: gsearchtool/src/gsearchtool.c:2835
+#: gsearchtool/src/gsearchtool.c:2801
 msgid "_Look in folder:"
 msgstr "Т_ърсене в папка:"
 
-#: gsearchtool/src/gsearchtool.c:2841
+#: gsearchtool/src/gsearchtool.c:2807
 msgid "Browse"
 msgstr "Разглеждане"
 
-#: gsearchtool/src/gsearchtool.c:2851
+#: gsearchtool/src/gsearchtool.c:2817
 msgid "Look in folder"
 msgstr "Търсене в папка"
 
-#: gsearchtool/src/gsearchtool.c:2851
+#: gsearchtool/src/gsearchtool.c:2817
 msgid "Select the folder or device from which you want to begin the search."
 msgstr ""
 "Избор на папката или устройството, от което желаете да започне търсенето."
 
-#: gsearchtool/src/gsearchtool.c:2869
+#: gsearchtool/src/gsearchtool.c:2835
 msgid "Select more _options"
 msgstr "Допълнителни _условия"
 
-#: gsearchtool/src/gsearchtool.c:2879
+#: gsearchtool/src/gsearchtool.c:2845
 msgid "Select more options"
 msgstr "Допълнителни условия"
 
-#: gsearchtool/src/gsearchtool.c:2879
+#: gsearchtool/src/gsearchtool.c:2845
 msgid "Click to expand or collapse the list of available options."
 msgstr "Разширяване или свиване на списъка с наличните условия."
 
-#: gsearchtool/src/gsearchtool.c:2910
+#: gsearchtool/src/gsearchtool.c:2876
 msgid "Click to display the help manual."
 msgstr "Натиснете, за да видите ръководството"
 
-#: gsearchtool/src/gsearchtool.c:2924
+#: gsearchtool/src/gsearchtool.c:2890
 msgid "Click to close \"Search for Files\"."
 msgstr "Натиснете, за да затворите „Търсене на файлове“."
 
-#: gsearchtool/src/gsearchtool.c:2962
+#: gsearchtool/src/gsearchtool.c:2928
 msgid "Click to perform a search."
 msgstr "Натиснете, за да проведете търсенето."
 
-#: gsearchtool/src/gsearchtool.c:2963
+#: gsearchtool/src/gsearchtool.c:2929
 msgid "Click to stop a search."
 msgstr "Натиснете, за да спрете търсенето."
 
-#: gsearchtool/src/gsearchtool.c:3060
+#: gsearchtool/src/gsearchtool.c:3026
 msgid "- the MATE Search Tool"
 msgstr "— инструментът на MATE за търсене"
 
-#: gsearchtool/src/gsearchtool.c:3071
+#: gsearchtool/src/gsearchtool.c:3037
 #, c-format
 msgid "Failed to parse command line arguments: %s\n"
 msgstr ""
@@ -1749,24 +1743,24 @@ msgstr "Търсене напред"
 msgid "Find next occurrence of the search string"
 msgstr "Откриване на следващата поява на търсения низ"
 
-#: logview/src/logview-findbar.c:202
+#: logview/src/logview-findbar.c:203
 msgid "Clear the search string"
 msgstr "Изчистване на низа за търсене"
 
-#: logview/src/logview-log.c:589
+#: logview/src/logview-log.c:585
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
 msgstr ""
 "Грешка при декомпресиране на журнала с gzip. Файлът може би е повреден."
 
-#: logview/src/logview-log.c:635
+#: logview/src/logview-log.c:631
 msgid "You don't have enough permissions to read the file."
 msgstr "Нямате права да прочетете този файл."
 
-#: logview/src/logview-log.c:650
+#: logview/src/logview-log.c:646
 msgid "The file is not a regular file or is not a text file."
 msgstr "Файлът нито е обикновен файл, нито е текстов файл."
 
-#: logview/src/logview-log.c:743
+#: logview/src/logview-log.c:739
 msgid "This version of System Log does not support GZipped logs."
 msgstr ""
 "Тази версия на прегледа на системните дневници не поддържа компресия с gzip."
@@ -1803,188 +1797,64 @@ msgstr " — преглед и следене на дневниците"
 msgid "Log Viewer"
 msgstr "Преглед на системните дневници"
 
-#: logview/src/logview-window.c:41 logview/src/logview-window.c:771
+#: logview/src/logview-window.c:41 logview/src/logview-window.c:807
 msgid "System Log Viewer"
 msgstr "Преглед на системните дневници"
 
-#: logview/src/logview-window.c:216
+#: logview/src/logview-window.c:227
 #, c-format
 msgid "last update: %s"
 msgstr "последно актуализиране: %s"
 
-#: logview/src/logview-window.c:220
+#: logview/src/logview-window.c:231
 #, c-format
 msgid "%d lines (%s) - %s"
 msgstr "%d реда (%s) — %s"
 
-#: logview/src/logview-window.c:325
+#: logview/src/logview-window.c:340
 msgid "Open Log"
 msgstr "Отваряне на дневник"
 
-#: logview/src/logview-window.c:364
+#: logview/src/logview-window.c:385
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "Грешка при показване на помощта: %s"
 
-#: logview/src/logview-window.c:478
+#: logview/src/logview-window.c:517
 msgid "Wrapped"
 msgstr "Пренесени редове"
 
-#: logview/src/logview-window.c:493
+#: logview/src/logview-window.c:532
 #: mate-dictionary/libgdict/gdict-defbox.c:1127
 #: mate-dictionary/libgdict/gdict-defbox.c:1221
 #: mate-dictionary/libgdict/gdict-defbox.c:1255
 msgid "Not found"
 msgstr "Търсеният текст не е намерен"
 
-#: logview/src/logview-window.c:773
+#: logview/src/logview-window.c:809
 msgid "About System Log Viewer"
 msgstr ""
 
-#: logview/src/logview-window.c:774
+#: logview/src/logview-window.c:810
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
 "Copyright © 2011-2021 MATE developers"
 msgstr ""
 
-#: logview/src/logview-window.c:778
+#: logview/src/logview-window.c:814
 msgid "View, monitor or analyze your system logs in a gradual manner."
 msgstr ""
 
-#: logview/src/logview-window.c:821 mate-dictionary/src/gdict-window.c:1256
-msgid "_File"
-msgstr "_Файл"
-
-#: logview/src/logview-window.c:824
-msgid "_Filters"
-msgstr "_Филтри"
-
-#: logview/src/logview-window.c:827
-msgid "_Open..."
-msgstr "_Отваряне…"
-
-#: logview/src/logview-window.c:827
-msgid "Open a log from file"
-msgstr "Отваряне на дневник"
-
-#: logview/src/logview-window.c:829
-msgid "Close this log"
-msgstr "Затваряне на този диалогов прозорец"
-
-#: logview/src/logview-window.c:831
-msgid "_Quit"
-msgstr "_Изход"
-
-#: logview/src/logview-window.c:831
-msgid "Quit the log viewer"
-msgstr "Спиране на програмата за преглед на дневници"
-
-#: logview/src/logview-window.c:834 mate-dictionary/src/gdict-window.c:1275
-msgid "_Copy"
-msgstr "_Копиране"
-
-#: logview/src/logview-window.c:834
-msgid "Copy the selection"
-msgstr "Копиране на избраното"
-
-#: logview/src/logview-window.c:836 mate-dictionary/src/gdict-window.c:1277
-msgid "Select _All"
-msgstr "Избор на _всичко"
-
-#: logview/src/logview-window.c:836
-msgid "Select the entire log"
-msgstr "Избор на целия дневник"
-
-#: logview/src/logview-window.c:838
-msgid "_Find..."
-msgstr "_Търсене…"
-
-#: logview/src/logview-window.c:838
-msgid "Find a word or phrase in the log"
-msgstr "Търсене на дума или фраза в дневника"
-
-#: logview/src/logview-window.c:841
-msgid "Zoom _In"
-msgstr "_Увеличаване"
-
-#: logview/src/logview-window.c:841
-msgid "Bigger text size"
-msgstr "По-голям размер на текста"
-
-#: logview/src/logview-window.c:843
-msgid "Zoom _Out"
-msgstr "На_маляване"
-
-#: logview/src/logview-window.c:843
-msgid "Smaller text size"
-msgstr "По-малък размер на текста"
-
-#: logview/src/logview-window.c:845
-msgid "_Normal Size"
-msgstr "Но_рмален размер"
-
-#: logview/src/logview-window.c:845
-msgid "Normal text size"
-msgstr "Нормален размер на текста"
-
-#: logview/src/logview-window.c:848
-msgid "Manage Filters"
-msgstr "Управление на филтри"
-
-#: logview/src/logview-window.c:848
-msgid "Manage filters"
-msgstr "Управление на филтри"
-
-#: logview/src/logview-window.c:851
-msgid "Open the help contents for the log viewer"
-msgstr "Отваряне на съдържанието на помощта за разглеждането на дневници"
-
-#: logview/src/logview-window.c:853 mate-dictionary/src/gdict-applet.c:1175
-#: mate-dictionary/src/gdict-window.c:1312
-msgid "_About"
-msgstr "_Относно…"
-
-#: logview/src/logview-window.c:853
-msgid "Show the about dialog for the log viewer"
-msgstr ""
-"Показване на диалоговия прозорец относно програмата за преглед на системните"
-" дневници"
-
-#: logview/src/logview-window.c:858
-msgid "_Statusbar"
-msgstr "Лента за _състоянието"
-
-#: logview/src/logview-window.c:858
-msgid "Show Status Bar"
-msgstr "Показване на лентата за състоянието"
-
-#: logview/src/logview-window.c:860
-msgid "Side _Pane"
-msgstr "Страничен _панел"
-
-#: logview/src/logview-window.c:860
-msgid "Show Side Pane"
-msgstr "Показване на страничната лента"
-
-#: logview/src/logview-window.c:862
-msgid "Show matches only"
-msgstr "Показване само на съвпадащите редове"
-
-#: logview/src/logview-window.c:862
-msgid "Only show lines that match one of the given filters"
-msgstr ""
-"Да се показват само редовете, които съвпадат с един от дадените филтри"
-
-#: logview/src/logview-window.c:994
+#: logview/src/logview-window.c:1042
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr "Не може да се чете от „%s“"
 
-#: logview/src/logview-window.c:1419
+#: logview/src/logview-window.c:1462
 msgid "Version: "
 msgstr "Версия: "
 
-#: logview/src/logview-window.c:1525
+#: logview/src/logview-window.c:1565
 msgid "Could not open the following files:"
 msgstr "Следните файлове не могат да бъдат отворени:"
 
@@ -2023,19 +1893,19 @@ msgid ""
 "query."
 msgstr ""
 
-#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:5
+#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:6
 msgid "Dictionary Applet Factory"
 msgstr "Фабрика за аплета на речника"
 
-#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:6
+#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:7
 msgid "Factory for the dictionary applet"
 msgstr "Фабрика за аплета на речника"
 
-#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:9
+#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:10
 msgid "Dictionary Look up"
 msgstr "Търсене в речника"
 
-#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:10
+#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:11
 msgid "Look up words in a dictionary"
 msgstr "Търсене в речника"
 
@@ -2451,7 +2321,7 @@ msgstr ""
 
 #: mate-dictionary/src/gdict-about.c:82 mate-dictionary/src/gdict-app.c:360
 #: mate-dictionary/src/gdict-window.c:578
-#: mate-dictionary/src/gdict-window.c:1862
+#: mate-dictionary/src/gdict-window.c:1954
 msgid "Dictionary"
 msgstr "Речник"
 
@@ -2540,136 +2410,140 @@ msgstr "бд"
 msgid " - Look up words in dictionaries"
 msgstr " — търсене на думи в речници"
 
-#: mate-dictionary/src/gdict-applet.c:193
-#: mate-dictionary/src/gdict-window.c:933
+#: mate-dictionary/src/gdict-applet.c:207
+#: mate-dictionary/src/gdict-window.c:937
 msgid "Save a Copy"
 msgstr "Запазване на копие"
 
-#: mate-dictionary/src/gdict-applet.c:203
-#: mate-dictionary/src/gdict-window.c:943
+#: mate-dictionary/src/gdict-applet.c:217
+#: mate-dictionary/src/gdict-window.c:947
 msgid "Untitled document"
 msgstr "Неозаглавен документ"
 
-#: mate-dictionary/src/gdict-applet.c:224
-#: mate-dictionary/src/gdict-window.c:964
+#: mate-dictionary/src/gdict-applet.c:238
+#: mate-dictionary/src/gdict-window.c:968
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "Грешка при запис към „%s“."
 
-#: mate-dictionary/src/gdict-applet.c:349
+#: mate-dictionary/src/gdict-applet.c:380
 msgid "Clear the definitions found"
 msgstr "Изчистване на откритите определения"
 
-#: mate-dictionary/src/gdict-applet.c:351
+#: mate-dictionary/src/gdict-applet.c:382
 msgid "Clear definition"
 msgstr "Изчистване на определението"
 
-#: mate-dictionary/src/gdict-applet.c:352
+#: mate-dictionary/src/gdict-applet.c:383
 msgid "Clear the text of the definition"
 msgstr "Изчистване на текста на определението"
 
-#: mate-dictionary/src/gdict-applet.c:364
+#: mate-dictionary/src/gdict-applet.c:395
 msgid "Print the definitions found"
 msgstr "Печат на откритите определения"
 
-#: mate-dictionary/src/gdict-applet.c:366
+#: mate-dictionary/src/gdict-applet.c:397
 msgid "Print definition"
 msgstr "Печат на определението"
 
-#: mate-dictionary/src/gdict-applet.c:367
+#: mate-dictionary/src/gdict-applet.c:398
 msgid "Print the text of the definition"
 msgstr "Печат на текста на определението"
 
-#: mate-dictionary/src/gdict-applet.c:379
+#: mate-dictionary/src/gdict-applet.c:410
 msgid "Save the definitions found"
 msgstr "Запазване на откритите определения"
 
-#: mate-dictionary/src/gdict-applet.c:381
+#: mate-dictionary/src/gdict-applet.c:412
 msgid "Save definition"
 msgstr "Запазване на определение"
 
-#: mate-dictionary/src/gdict-applet.c:382
+#: mate-dictionary/src/gdict-applet.c:413
 msgid "Save the text of the definition to a file"
 msgstr "Запазване на текста от определението във файл"
 
-#: mate-dictionary/src/gdict-applet.c:519
+#: mate-dictionary/src/gdict-applet.c:560
 msgid "Click to view the dictionary window"
 msgstr "Натискане за показване на прозореца на речника"
 
-#: mate-dictionary/src/gdict-applet.c:521
+#: mate-dictionary/src/gdict-applet.c:562
 msgid "Toggle dictionary window"
 msgstr "Показване/скриване на речника"
 
-#: mate-dictionary/src/gdict-applet.c:522
+#: mate-dictionary/src/gdict-applet.c:563
 msgid "Show or hide the definition window"
 msgstr "Показване или скриване на прозореца с определение"
 
-#: mate-dictionary/src/gdict-applet.c:573
+#: mate-dictionary/src/gdict-applet.c:625
 msgid "Type the word you want to look up"
 msgstr "Напишете думата, която търсите"
 
-#: mate-dictionary/src/gdict-applet.c:575
+#: mate-dictionary/src/gdict-applet.c:627
 msgid "Dictionary entry"
 msgstr "Дума в речника"
 
-#: mate-dictionary/src/gdict-applet.c:576
+#: mate-dictionary/src/gdict-applet.c:628
 msgid "Look up words in dictionaries"
 msgstr "Търсене за думи в речници"
 
-#: mate-dictionary/src/gdict-applet.c:704
-#: mate-dictionary/src/gdict-window.c:1075
+#: mate-dictionary/src/gdict-applet.c:766
+#: mate-dictionary/src/gdict-window.c:1096
 msgid "Dictionary Preferences"
 msgstr "Настройки на речника"
 
-#: mate-dictionary/src/gdict-applet.c:728
+#: mate-dictionary/src/gdict-applet.c:790
 #: mate-dictionary/src/gdict-pref-dialog.c:494
 #: mate-dictionary/src/gdict-source-dialog.c:476
-#: mate-dictionary/src/gdict-window.c:1222
+#: mate-dictionary/src/gdict-window.c:1297
 msgid "There was an error while displaying help"
 msgstr "Получи се грешка при показването на помощта."
 
-#: mate-dictionary/src/gdict-applet.c:867
+#: mate-dictionary/src/gdict-applet.c:929
 #: mate-dictionary/src/gdict-window.c:493
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "Липсва източник на речници с име „%s“"
 
-#: mate-dictionary/src/gdict-applet.c:871
+#: mate-dictionary/src/gdict-applet.c:933
 #: mate-dictionary/src/gdict-window.c:497
 msgid "Unable to find dictionary source"
 msgstr "Неуспех при откриване на източник на речници"
 
-#: mate-dictionary/src/gdict-applet.c:887
+#: mate-dictionary/src/gdict-applet.c:949
 #: mate-dictionary/src/gdict-window.c:513
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "Липсва контекст за източника „%s“"
 
-#: mate-dictionary/src/gdict-applet.c:891
+#: mate-dictionary/src/gdict-applet.c:953
 #: mate-dictionary/src/gdict-window.c:517
 msgid "Unable to create a context"
 msgstr "Неуспех при създаването на контекст"
 
-#: mate-dictionary/src/gdict-applet.c:1157
+#: mate-dictionary/src/gdict-applet.c:1219
 msgid "_Look Up Selected Text"
 msgstr "Търс_ене на избрания текст"
 
-#: mate-dictionary/src/gdict-applet.c:1160
+#: mate-dictionary/src/gdict-applet.c:1222
 msgid "Cl_ear"
 msgstr "_Изчистване"
 
-#: mate-dictionary/src/gdict-applet.c:1163
+#: mate-dictionary/src/gdict-applet.c:1225
 msgid "_Print"
 msgstr "_Печат"
 
-#: mate-dictionary/src/gdict-applet.c:1166
+#: mate-dictionary/src/gdict-applet.c:1228
 #: mate-screenshot/data/mate-screenshot.ui:109
 msgid "_Save"
 msgstr "_Запазване"
 
-#: mate-dictionary/src/gdict-applet.c:1169
+#: mate-dictionary/src/gdict-applet.c:1231
 msgid "Preferences"
 msgstr "Настройки"
+
+#: mate-dictionary/src/gdict-applet.c:1237
+msgid "_About"
+msgstr "_Относно…"
 
 #: mate-dictionary/src/gdict-common.c:77
 #, c-format
@@ -2758,168 +2632,59 @@ msgstr[1] ""
 msgid "%s - Dictionary"
 msgstr "%s — речник"
 
-#: mate-dictionary/src/gdict-window.c:1259
-msgid "_Go"
-msgstr "_Отиване"
-
-#: mate-dictionary/src/gdict-window.c:1263
-#: mate-screenshot/data/mate-screenshot.ui:58
-msgid "_New"
-msgstr "_Нов"
-
-#: mate-dictionary/src/gdict-window.c:1264
-msgid "New look up"
-msgstr "Ново търсене"
-
-#: mate-dictionary/src/gdict-window.c:1265
-msgid "_Save a Copy..."
-msgstr "Запазване на _копие…"
-
-#: mate-dictionary/src/gdict-window.c:1267
-msgid "P_review..."
-msgstr "П_реглед…"
-
-#: mate-dictionary/src/gdict-window.c:1268
-msgid "Preview this document"
-msgstr "Преглед на този документ"
-
-#: mate-dictionary/src/gdict-window.c:1269
-msgid "_Print..."
-msgstr "_Печат…"
-
-#: mate-dictionary/src/gdict-window.c:1270
-msgid "Print this document"
-msgstr "Печатане на този документ"
-
-#: mate-dictionary/src/gdict-window.c:1279
-msgid "_Find"
-msgstr ""
-
-#: mate-dictionary/src/gdict-window.c:1280
-msgid "Find a word or phrase in the document"
-msgstr "Търсене на дума или фраза в документа"
-
-#: mate-dictionary/src/gdict-window.c:1282
-msgid "Find Ne_xt"
-msgstr "_Следваща поява"
-
-#: mate-dictionary/src/gdict-window.c:1284
-msgid "Find Pre_vious"
-msgstr "_Предишна поява"
-
-#: mate-dictionary/src/gdict-window.c:1286
-msgid "_Preferences"
-msgstr "_Настройки"
-
-#: mate-dictionary/src/gdict-window.c:1290
-msgid "_Previous Definition"
-msgstr "_Предишно определение"
-
-#: mate-dictionary/src/gdict-window.c:1291
-msgid "Go to the previous definition"
-msgstr "Предишно определение"
-
-#: mate-dictionary/src/gdict-window.c:1292
-msgid "_Next Definition"
-msgstr "_Следващо определение"
-
-#: mate-dictionary/src/gdict-window.c:1293
-msgid "Go to the next definition"
-msgstr "Следващо определение"
-
-#: mate-dictionary/src/gdict-window.c:1294
-msgid "_First Definition"
-msgstr "П_ърво определение"
-
-#: mate-dictionary/src/gdict-window.c:1295
-msgid "Go to the first definition"
-msgstr "Първо определение"
-
-#: mate-dictionary/src/gdict-window.c:1296
-msgid "_Last Definition"
-msgstr "П_оследно определение"
-
-#: mate-dictionary/src/gdict-window.c:1297
-msgid "Go to the last definition"
-msgstr "Последно определение"
-
-#: mate-dictionary/src/gdict-window.c:1300
-msgid "Similar _Words"
-msgstr "_Подобни думи"
-
-#: mate-dictionary/src/gdict-window.c:1302
-msgid "Dictionary Sources"
-msgstr "Източници на речници"
-
-#: mate-dictionary/src/gdict-window.c:1304
-msgid "Available _Databases"
-msgstr "Налични _речници"
-
-#: mate-dictionary/src/gdict-window.c:1306
-msgid "Available St_rategies"
-msgstr "Налични _стратегии"
-
-#: mate-dictionary/src/gdict-window.c:1323
-msgid "_Sidebar"
-msgstr "_Странична лента"
-
-#: mate-dictionary/src/gdict-window.c:1325
-msgid "S_tatusbar"
-msgstr "_Лента за състоянието"
-
-#: mate-dictionary/src/gdict-window.c:1390
+#: mate-dictionary/src/gdict-window.c:1466
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "Избран е източникът на речници „%s“"
 
-#: mate-dictionary/src/gdict-window.c:1411
+#: mate-dictionary/src/gdict-window.c:1487
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "Избрана е стратегията „%s“"
 
-#: mate-dictionary/src/gdict-window.c:1431
+#: mate-dictionary/src/gdict-window.c:1507
 #, c-format
 msgid "Database `%s' selected"
 msgstr "Избрана е базата от данни „%s“"
 
-#: mate-dictionary/src/gdict-window.c:1451
+#: mate-dictionary/src/gdict-window.c:1527
 #, c-format
 msgid "Word `%s' selected"
 msgstr "Избрана е думата „%s“"
 
-#: mate-dictionary/src/gdict-window.c:1476
+#: mate-dictionary/src/gdict-window.c:1552
 msgid "Double-click on the word to look up"
 msgstr "Натиснете двукратно върху думата, която търсите"
 
-#: mate-dictionary/src/gdict-window.c:1482
+#: mate-dictionary/src/gdict-window.c:1558
 msgid "Double-click on the matching strategy to use"
 msgstr "Натиснете двукратно върху стратегията, която да се използва"
 
-#: mate-dictionary/src/gdict-window.c:1487
+#: mate-dictionary/src/gdict-window.c:1563
 msgid "Double-click on the source to use"
 msgstr "Натиснете двукратно върху източника, който да се използва"
 
-#: mate-dictionary/src/gdict-window.c:1496
+#: mate-dictionary/src/gdict-window.c:1572
 msgid "Double-click on the database to use"
 msgstr "Натиснете двукратно върху базата от данни, която да се използва"
 
-#: mate-dictionary/src/gdict-window.c:1668
+#: mate-dictionary/src/gdict-window.c:1760
 msgid "Look _up:"
 msgstr "_Търсене:"
 
-#: mate-dictionary/src/gdict-window.c:1743
+#: mate-dictionary/src/gdict-window.c:1835
 msgid "Similar words"
 msgstr "Подобни думи"
 
-#: mate-dictionary/src/gdict-window.c:1756
+#: mate-dictionary/src/gdict-window.c:1848
 msgid "Available dictionaries"
 msgstr "Налични речници"
 
-#: mate-dictionary/src/gdict-window.c:1774
+#: mate-dictionary/src/gdict-window.c:1866
 msgid "Available strategies"
 msgstr "Налични стратегии"
 
-#: mate-dictionary/src/gdict-window.c:1790
+#: mate-dictionary/src/gdict-window.c:1882
 msgid "Dictionary sources"
 msgstr "Източници на речници"
 
@@ -3067,6 +2832,10 @@ msgstr ""
 msgid "Save Screenshot"
 msgstr "Запазване на снимка на екрана"
 
+#: mate-screenshot/data/mate-screenshot.ui:58
+msgid "_New"
+msgstr "_Нов"
+
 #: mate-screenshot/data/mate-screenshot.ui:74
 msgid "C_opy to Clipboard"
 msgstr "_Копиране в буфера за обмен"
@@ -3164,7 +2933,7 @@ msgid "Grab _after a delay of"
 msgstr "Снимка _след"
 
 #: mate-screenshot/src/mate-screenshot.c:500
-#: mate-screenshot/src/mate-screenshot.c:1319
+#: mate-screenshot/src/mate-screenshot.c:1290
 msgid "seconds"
 msgstr "секунди"
 
@@ -3209,57 +2978,57 @@ msgstr "Снимка на %s.png"
 msgid "Screenshot at %s - %d.png"
 msgstr "Снимка на %s - %d.png"
 
-#: mate-screenshot/src/mate-screenshot.c:1314
+#: mate-screenshot/src/mate-screenshot.c:1285
 msgid "Grab a window instead of the entire screen"
 msgstr "Снимка на прозорец, а не на целия екран"
 
-#: mate-screenshot/src/mate-screenshot.c:1315
+#: mate-screenshot/src/mate-screenshot.c:1286
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "Снимка на област, а не на целия екран"
 
-#: mate-screenshot/src/mate-screenshot.c:1316
+#: mate-screenshot/src/mate-screenshot.c:1287
 msgid "Send grabbed area directly to the clipboard"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1317
+#: mate-screenshot/src/mate-screenshot.c:1288
 msgid "Include the window border with the screenshot"
 msgstr "Включване на рамката на прозореца в снимката"
 
-#: mate-screenshot/src/mate-screenshot.c:1318
+#: mate-screenshot/src/mate-screenshot.c:1289
 msgid "Remove the window border from the screenshot"
 msgstr "Изключване на рамката на прозореца от снимката"
 
-#: mate-screenshot/src/mate-screenshot.c:1319
+#: mate-screenshot/src/mate-screenshot.c:1290
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "Правене на снимка след определено време (в секунди)"
 
-#: mate-screenshot/src/mate-screenshot.c:1320
+#: mate-screenshot/src/mate-screenshot.c:1291
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "Какъв ефект да се добави към снимката (сянка, рамка или никакъв)"
 
-#: mate-screenshot/src/mate-screenshot.c:1320
+#: mate-screenshot/src/mate-screenshot.c:1291
 msgid "effect"
 msgstr "ефект"
 
-#: mate-screenshot/src/mate-screenshot.c:1321
+#: mate-screenshot/src/mate-screenshot.c:1292
 msgid "Interactively set options"
 msgstr "Интерактивно задаване на настройки"
 
-#: mate-screenshot/src/mate-screenshot.c:1322
+#: mate-screenshot/src/mate-screenshot.c:1293
 msgid "Print version information and exit"
 msgstr "Показване на информация за версията"
 
-#: mate-screenshot/src/mate-screenshot.c:1333
+#: mate-screenshot/src/mate-screenshot.c:1304
 msgid "Take a picture of the screen"
 msgstr "Снимане на екрана"
 
-#: mate-screenshot/src/mate-screenshot.c:1356
+#: mate-screenshot/src/mate-screenshot.c:1327
 msgid ""
 "Conflicting options: --clipboard and --interactive should not be used at the"
 " same time.\n"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1362
+#: mate-screenshot/src/mate-screenshot.c:1333
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"

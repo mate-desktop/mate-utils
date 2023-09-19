@@ -8,12 +8,12 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-utils 1.26.0\n"
+"Project-Id-Version: mate-utils 1.27.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
-"POT-Creation-Date: 2022-10-29 15:36+0200\n"
+"POT-Creation-Date: 2023-09-10 10:29+0200\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2021\n"
-"Language-Team: Malayalam (https://www.transifex.com/mate/teams/13566/ml/)\n"
+"Language-Team: Malayalam (https://app.transifex.com/mate/teams/13566/ml/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,15 +40,13 @@ msgid "Disk Usage Analyzer Preferences"
 msgstr "ഡിസ്ക് ഉപയോഗ വിശകലനിയുടെ മുന്‍ഗണനകള്‍"
 
 #: baobab/data/baobab-dialog-scan-props.ui:32
-#: baobab/data/baobab-main-window.ui:129 logview/src/logview-window.c:825
-#: mate-dictionary/src/gdict-applet.c:1172
-#: mate-dictionary/src/gdict-window.c:1260
+#: baobab/data/baobab-main-window.ui:129
+#: mate-dictionary/src/gdict-applet.c:1234
 #: mate-screenshot/data/mate-screenshot.ui:41
 msgid "_Help"
 msgstr "_സഹായം"
 
-#: baobab/data/baobab-dialog-scan-props.ui:48 logview/src/logview-window.c:829
-#: mate-dictionary/src/gdict-window.c:1271
+#: baobab/data/baobab-dialog-scan-props.ui:48
 msgid "_Close"
 msgstr "_അടയ്ക്കു:"
 
@@ -82,8 +80,7 @@ msgstr "ഫോള്‍ഡര്‍ _പരിശോധിയ്ക്കക..."
 msgid "S_can Remote Folder..."
 msgstr "ദൂരെയുള്ള ഫോള്‍ഡര്‍ _പരിശോധിയ്ക്കുക..."
 
-#: baobab/data/baobab-main-window.ui:74 logview/src/logview-window.c:822
-#: mate-dictionary/src/gdict-window.c:1257
+#: baobab/data/baobab-main-window.ui:74
 msgid "_Edit"
 msgstr "_മാറ്റം വരുത്തുക"
 
@@ -95,8 +92,7 @@ msgstr "എല്ലാം വികസിപ്പിക്കുക"
 msgid "_Collapse All"
 msgstr "_എല്ലാം കൊളാപ്സ് ചെയ്യുക"
 
-#: baobab/data/baobab-main-window.ui:101 logview/src/logview-window.c:823
-#: mate-dictionary/src/gdict-window.c:1258
+#: baobab/data/baobab-main-window.ui:101
 msgid "_View"
 msgstr "_കാഴ്ച"
 
@@ -112,8 +108,7 @@ msgstr "_അവസ്ഥ കാണിയ്ക്കുന്ന പട്ട"
 msgid "All_ocated Space"
 msgstr "_നല്‍കിയ സ്ഥലം"
 
-#: baobab/data/baobab-main-window.ui:136 logview/src/logview-window.c:851
-#: mate-dictionary/src/gdict-window.c:1310
+#: baobab/data/baobab-main-window.ui:136
 msgid "_Contents"
 msgstr "_ഉളളടക്കം"
 
@@ -388,91 +383,91 @@ msgstr "മൊത്തം വ്യാപ്തി"
 msgid "Available"
 msgstr "ലഭ്യമായ"
 
-#: baobab/src/baobab-remote-connect-dialog.c:68
+#: baobab/src/baobab-remote-connect-dialog.c:71
 #, c-format
 msgid "Cannot scan location \"%s\""
 msgstr "\"%s\" എന്ന സ്ഥാനം പരിശോധിയ്ക്കാന്‍ സാധ്യമല്ല"
 
-#: baobab/src/baobab-remote-connect-dialog.c:166
+#: baobab/src/baobab-remote-connect-dialog.c:160
 msgid "Custom Location"
 msgstr "ഇഷ്ടമുളള സ്ഥാനം "
 
-#: baobab/src/baobab-remote-connect-dialog.c:168
+#: baobab/src/baobab-remote-connect-dialog.c:162
 msgid "SSH"
 msgstr "SSH"
 
-#: baobab/src/baobab-remote-connect-dialog.c:171
+#: baobab/src/baobab-remote-connect-dialog.c:165
 msgid "Public FTP"
 msgstr "പബ്ളിക് FTP"
 
-#: baobab/src/baobab-remote-connect-dialog.c:173
+#: baobab/src/baobab-remote-connect-dialog.c:167
 msgid "FTP (with login)"
 msgstr "FTP (ലോഗിന്‍ ഉപയോഗിച്ച്)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:176
+#: baobab/src/baobab-remote-connect-dialog.c:170
 msgid "Windows share"
 msgstr "Windows ഷെയര്‍"
 
-#: baobab/src/baobab-remote-connect-dialog.c:178
+#: baobab/src/baobab-remote-connect-dialog.c:172
 msgid "WebDAV (HTTP)"
 msgstr "WebDAV (HTTP)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:180
+#: baobab/src/baobab-remote-connect-dialog.c:174
 msgid "Secure WebDAV (HTTPS)"
 msgstr "സെക്യൂര്‍ WebDAV (HTTPS)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:240
+#: baobab/src/baobab-remote-connect-dialog.c:234
 msgid "Cannot Connect to Server. You must enter a name for the server."
 msgstr ""
 "സെര്‍വറുമായി ബന്ധപ്പെടാന്‍ സാധിച്ചില്ല. സെര്‍വറിനു് ഒരു പേരു് നിര്‍ബന്ധമായും"
 " നല്‍കേണ്ടതാണു്."
 
-#: baobab/src/baobab-remote-connect-dialog.c:243
+#: baobab/src/baobab-remote-connect-dialog.c:237
 msgid "Please enter a name and try again."
 msgstr "ദയവായി ഒരു പേരു് നല്‍കി വീണ്ടും ശ്രമിക്കുക."
 
-#: baobab/src/baobab-remote-connect-dialog.c:437
+#: baobab/src/baobab-remote-connect-dialog.c:431
 msgid "_Location (URI):"
 msgstr "സ്ഥാനം (URI): "
 
-#: baobab/src/baobab-remote-connect-dialog.c:453
+#: baobab/src/baobab-remote-connect-dialog.c:447
 msgid "_Server:"
 msgstr "_സെര്‍വര്‍:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:466
+#: baobab/src/baobab-remote-connect-dialog.c:460
 msgid "Optional information:"
 msgstr "ഐച്ഛികമായ വിവരം:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:475
+#: baobab/src/baobab-remote-connect-dialog.c:469
 msgid "_Share:"
 msgstr "‌_ഷെയര്‍:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:490
+#: baobab/src/baobab-remote-connect-dialog.c:484
 #: mate-dictionary/data/mate-dictionary-source.ui:121
 msgid "_Port:"
 msgstr "_പോര്‍ട്ട്:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:504
+#: baobab/src/baobab-remote-connect-dialog.c:498
 msgid "_Folder:"
 msgstr "_ഫോള്‍ഡര്‍:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:518
+#: baobab/src/baobab-remote-connect-dialog.c:512
 msgid "_User Name:"
 msgstr "_ഉപയോക്താവിന്റെ പേരു്:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:533
+#: baobab/src/baobab-remote-connect-dialog.c:527
 msgid "_Domain Name:"
 msgstr "_ഡൊമയിന്റെ പേരു്:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:590
+#: baobab/src/baobab-remote-connect-dialog.c:584
 msgid "Connect to Server"
 msgstr "സെര്‍വറുമായി ബന്ധപ്പെടുക"
 
-#: baobab/src/baobab-remote-connect-dialog.c:606
+#: baobab/src/baobab-remote-connect-dialog.c:600
 msgid "Service _type:"
 msgstr "_ഏത് തരം സര്‍വീസ്:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:722
+#: baobab/src/baobab-remote-connect-dialog.c:716
 msgid "_Scan"
 msgstr "‌പരിശോധിയ്ക്കക"
 
@@ -493,7 +488,7 @@ msgstr ""
 msgid "_Rescan"
 msgstr "_വീണ്ടും പരിശോധിയ്ക്കക"
 
-#: baobab/src/baobab-treeview.c:222 gsearchtool/src/gsearchtool.c:2447
+#: baobab/src/baobab-treeview.c:222 gsearchtool/src/gsearchtool.c:2446
 msgid "Folder"
 msgstr "അറ"
 
@@ -501,7 +496,7 @@ msgstr "അറ"
 msgid "Usage"
 msgstr "ഉപയോഗം"
 
-#: baobab/src/baobab-treeview.c:258 gsearchtool/src/gsearchtool.c:2460
+#: baobab/src/baobab-treeview.c:258 gsearchtool/src/gsearchtool.c:2459
 msgid "Size"
 msgstr "വലിപ്പം"
 
@@ -917,255 +912,255 @@ msgstr ""
 "മാറ്റുക\" എന്ന തെരച്ചില്‍ ഉപാധി തെരഞ്ഞെടുത്തിട്ടുണ്ടോ എന്നു് ഈ കീ "
 "കണ്ടുപിടിക്കുന്നു."
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:168
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:169
 msgid "File is not a valid .desktop file"
 msgstr "ഫയല്‍ ശരിയായ ഒരു .desktop ഫയല്‍ അല്ല"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:193
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:194
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
 msgstr "അപരിചിതമായ പണിയിട ഫയല്‍ പതിപ്പു് '%s'"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:975
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:984
 #, c-format
 msgid "Starting %s"
 msgstr "%s ആരംഭിക്കുന്നു"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1117
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1126
 msgid "Application does not accept documents on command line"
 msgstr "കമാന്‍ഡ് ലൈനില്‍ പ്രയോഗം രേഖകള്‍ സ്വീകരിക്കുന്നതല്ല"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1185
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1194
 #, c-format
 msgid "Unrecognized launch option: %d"
 msgstr "അപരിചിതമായ ലഭ്യമാക്കുവാനുള്ള ഉപാധി: %d"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1401
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1410
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 msgstr ""
 "'Type=Link'  പണിയിട അംഗത്തിലേക്കു് ഡോക്യുമെന്റ് URI അയക്കാന്‍ കഴിയില്ല"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1422
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1431
 msgid "Not a launchable item"
 msgstr "ലഭ്യമാക്കുവാന്‍ സാധിക്കുന്ന വസ്തുവല്ല"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:233
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:234
 msgid "Disable connection to session manager"
 msgstr "സെഷന്‍ മാനേജറിലേക്കുള്ള കണക്ഷന്‍ പ്രവര്‍ത്തന രഹിതമാക്കുക"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:238
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:239
 msgid "Specify file containing saved configuration"
 msgstr "സൂക്ഷിച്ചിട്ടുള്ള ക്രമീകരണം അടങ്ങുന്ന ഫയല്‍ നല്‍കുക"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:238
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:239
 msgid "FILE"
 msgstr "FILE"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:243
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:244
 msgid "Specify session management ID"
 msgstr "സെഷന്‍ മാനേജ്മെന്റ് ID വ്യക്തമാക്കുക"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:243
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:244
 msgid "ID"
 msgstr "ID"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:269
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:270
 msgid "Session management options:"
 msgstr "സെഷന്‍ മാനേജ്മെന്റ് ഉപാധികള്‍:"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:270
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:271
 msgid "Show session management options"
 msgstr "സെഷന്‍ മാനേജ്മെന്റ് ഉപാധികള്‍ കാണിക്കുക"
 
-#: gsearchtool/src/gsearchtool.c:82
+#: gsearchtool/src/gsearchtool.c:81
 msgid "Contains the _text"
 msgstr "_പദാവലി അടങ്ങുന്നു"
 
-#: gsearchtool/src/gsearchtool.c:84
+#: gsearchtool/src/gsearchtool.c:83
 msgid "_Date modified less than"
 msgstr "_തീയതി മാറ്റിയിരിക്കുന്നു, എത്ര ദിവസം കുറവു്"
 
-#: gsearchtool/src/gsearchtool.c:84 gsearchtool/src/gsearchtool.c:85
+#: gsearchtool/src/gsearchtool.c:83 gsearchtool/src/gsearchtool.c:84
 msgid "days"
 msgstr "ദിവസങ്ങള്‍"
 
-#: gsearchtool/src/gsearchtool.c:85
+#: gsearchtool/src/gsearchtool.c:84
 msgid "Date modified more than"
 msgstr "തീയതി മാറ്റിയിരിക്കുന്നു, എത്ര ദിവസം കൂടുതല്‍"
 
-#: gsearchtool/src/gsearchtool.c:87
+#: gsearchtool/src/gsearchtool.c:86
 msgid "S_ize at least"
 msgstr "നിര്‍ബന്ധമായ _വ്യാപ്തി "
 
-#: gsearchtool/src/gsearchtool.c:87 gsearchtool/src/gsearchtool.c:88
+#: gsearchtool/src/gsearchtool.c:86 gsearchtool/src/gsearchtool.c:87
 msgid "kilobytes"
 msgstr "കിലോബെറ്റ്സ്"
 
-#: gsearchtool/src/gsearchtool.c:88
+#: gsearchtool/src/gsearchtool.c:87
 msgid "Si_ze at most"
 msgstr "ഏറ്റവും കൂടിയ _വലിപ്പം"
 
-#: gsearchtool/src/gsearchtool.c:89
+#: gsearchtool/src/gsearchtool.c:88
 msgid "File is empty"
 msgstr "ഫയല്‍ ശൂന്യമാണ്"
 
-#: gsearchtool/src/gsearchtool.c:91
+#: gsearchtool/src/gsearchtool.c:90
 msgid "Owned by _user"
 msgstr "ഉപയോക്താവിന്‍റെ ഉടമസ്ഥതയില്‍ (_u)"
 
-#: gsearchtool/src/gsearchtool.c:92
+#: gsearchtool/src/gsearchtool.c:91
 msgid "Owned by _group"
 msgstr "ഗ്രൂപ്പിന്‍റെ ഉടമസ്ഥതയില്‍ (_g)"
 
-#: gsearchtool/src/gsearchtool.c:93
+#: gsearchtool/src/gsearchtool.c:92
 msgid "Owner is unrecognized"
 msgstr "ഉടമയെ തിരിച്ചറിയാനായില്ല"
 
-#: gsearchtool/src/gsearchtool.c:95
+#: gsearchtool/src/gsearchtool.c:94
 msgid "Na_me does not contain"
 msgstr "പേരില്‍ ഇല്ല (_m)"
 
-#: gsearchtool/src/gsearchtool.c:96
+#: gsearchtool/src/gsearchtool.c:95
 msgid "Name matches regular e_xpression"
 msgstr "പേരു് റെഗുലര്‍ _എക്സ്പ്രെഷനുമായി ചേരുന്നു"
 
-#: gsearchtool/src/gsearchtool.c:98
+#: gsearchtool/src/gsearchtool.c:97
 msgid "Show hidden and backup files"
 msgstr "അദൃശ്യമായതും ബാക്കപ്പ് ഫയലുകളും കാണിക്കുക"
 
-#: gsearchtool/src/gsearchtool.c:99
+#: gsearchtool/src/gsearchtool.c:98
 msgid "Follow symbolic links"
 msgstr "സിംബോളിക് ലിങ്കുകള്‍ ഉപയോഗിക്കുക"
 
-#: gsearchtool/src/gsearchtool.c:100
+#: gsearchtool/src/gsearchtool.c:99
 msgid "Exclude other filesystems"
 msgstr "മറ്റ് ഫയല്‍സിസ്റ്റമുകള്‍ മാറ്റുക"
 
-#: gsearchtool/src/gsearchtool.c:158
+#: gsearchtool/src/gsearchtool.c:157
 msgid "Show version of the application"
 msgstr ""
 
-#: gsearchtool/src/gsearchtool.c:159 gsearchtool/src/gsearchtool.c:164
-#: gsearchtool/src/gsearchtool.c:173
+#: gsearchtool/src/gsearchtool.c:158 gsearchtool/src/gsearchtool.c:163
+#: gsearchtool/src/gsearchtool.c:172
 msgid "STRING"
 msgstr "STRING"
 
-#: gsearchtool/src/gsearchtool.c:160
+#: gsearchtool/src/gsearchtool.c:159
 msgid "PATH"
 msgstr "PATH"
 
-#: gsearchtool/src/gsearchtool.c:161
+#: gsearchtool/src/gsearchtool.c:160
 msgid "VALUE"
 msgstr "VALUE"
 
-#: gsearchtool/src/gsearchtool.c:165 gsearchtool/src/gsearchtool.c:166
+#: gsearchtool/src/gsearchtool.c:164 gsearchtool/src/gsearchtool.c:165
 msgid "DAYS"
 msgstr "DAYS"
 
-#: gsearchtool/src/gsearchtool.c:167 gsearchtool/src/gsearchtool.c:168
+#: gsearchtool/src/gsearchtool.c:166 gsearchtool/src/gsearchtool.c:167
 msgid "KILOBYTES"
 msgstr "KILOBYTES"
 
-#: gsearchtool/src/gsearchtool.c:170
+#: gsearchtool/src/gsearchtool.c:169
 msgid "USER"
 msgstr "USER"
 
-#: gsearchtool/src/gsearchtool.c:171
+#: gsearchtool/src/gsearchtool.c:170
 msgid "GROUP"
 msgstr "GROUP"
 
-#: gsearchtool/src/gsearchtool.c:174
+#: gsearchtool/src/gsearchtool.c:173
 msgid "PATTERN"
 msgstr "PATTERN"
 
-#: gsearchtool/src/gsearchtool.c:385
+#: gsearchtool/src/gsearchtool.c:384
 msgid "A locate database has probably not been created."
 msgstr "ഒരു locate ഡേറ്റാബെയിസ് ഉണ്ടാവില്ല."
 
-#: gsearchtool/src/gsearchtool.c:487
+#: gsearchtool/src/gsearchtool.c:486
 #, c-format
 msgid "Character set conversion failed for \"%s\""
 msgstr "\"%s\"-നുള്ള ഒരു ക്യാരക്ടര്‍ സെറ്റ് കോണ്‍വര്‍സേഷന്‍ പരാജയപ്പെട്ടു"
 
-#: gsearchtool/src/gsearchtool.c:511
+#: gsearchtool/src/gsearchtool.c:510
 msgid "Searching..."
 msgstr "തെരയുന്നു..."
 
-#: gsearchtool/src/gsearchtool.c:511 gsearchtool/src/gsearchtool.c:1048
-#: gsearchtool/src/gsearchtool.c:3077
+#: gsearchtool/src/gsearchtool.c:510 gsearchtool/src/gsearchtool.c:1047
+#: gsearchtool/src/gsearchtool.c:3043
 msgid "Search for Files"
 msgstr "ഫയലുകള്‍ തിരയുക"
 
-#: gsearchtool/src/gsearchtool.c:994 gsearchtool/src/gsearchtool.c:1023
+#: gsearchtool/src/gsearchtool.c:993 gsearchtool/src/gsearchtool.c:1022
 msgid "No files found"
 msgstr "ഫയലുകള്‍ ഒന്നും കണ്ടില്ല"
 
-#: gsearchtool/src/gsearchtool.c:1016
+#: gsearchtool/src/gsearchtool.c:1015
 msgid "(stopped)"
 msgstr "(നിര്‍ത്തിയിരിക്കുന്നു)"
 
-#: gsearchtool/src/gsearchtool.c:1022
+#: gsearchtool/src/gsearchtool.c:1021
 msgid "No Files Found"
 msgstr "ഫയലുകള്‍ ഒന്നും കണ്ടില്ല"
 
-#: gsearchtool/src/gsearchtool.c:1027
+#: gsearchtool/src/gsearchtool.c:1026
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
 msgstr[0] ""
 msgstr[1] ""
 
-#: gsearchtool/src/gsearchtool.c:1031 gsearchtool/src/gsearchtool.c:1069
+#: gsearchtool/src/gsearchtool.c:1030 gsearchtool/src/gsearchtool.c:1068
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
 msgstr[0] ""
 msgstr[1] ""
 
-#: gsearchtool/src/gsearchtool.c:1160
+#: gsearchtool/src/gsearchtool.c:1159
 msgid "Entry changed called for a non entry option!"
 msgstr ""
 "നോണ്‍ എന്‍ട്രി ഉപാധിയ്ക്കു് ഒരു എന്‍ട്രിയില്‍ മാറ്റം വരുത്തിയിരിക്കുന്നു!"
 
-#: gsearchtool/src/gsearchtool.c:1325
+#: gsearchtool/src/gsearchtool.c:1324
 msgid "Set the text of \"Name contains\" search option"
 msgstr "\"പേരില്‍ അടങ്ങുന്നത്\" എന്ന തെരച്ചില്‍ ഉപാധിയ്ക്കുള്ള പദാവലി സജ്ജമാക്കുക"
 
-#: gsearchtool/src/gsearchtool.c:1326
+#: gsearchtool/src/gsearchtool.c:1325
 msgid "Set the text of \"Look in folder\" search option"
 msgstr "\"ഫോള്‍ഡറില്‍ തെരയുക\" എന്ന തെരച്ചില്‍ ഉപാധിയ്ക്കുള്ള പദാവലി സജ്ജമാക്കുക"
 
-#: gsearchtool/src/gsearchtool.c:1327
+#: gsearchtool/src/gsearchtool.c:1326
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr ""
 "ഇവയുടെ അടിസ്ഥാനത്തില്‍ ഫയലുകള്‍ ക്രമികരിക്കുക: പേരു്, ഫോള്‍ഡര്‍, വ്യാപ്തി, "
 "ഏത് തരം അല്ലെങ്കില്‍ തീയതി"
 
-#: gsearchtool/src/gsearchtool.c:1328
+#: gsearchtool/src/gsearchtool.c:1327
 msgid "Set sort order to descending, the default is ascending"
 msgstr ""
 "അവസാനം മുതല്‍ ആദ്യം വരെയുള്ള ക്രമത്തില്‍ സജ്ജമാക്കുക, സ്വതവേയുള്ളതു് "
 "തിരിച്ചുള്ള ക്രമമാണു്"
 
-#: gsearchtool/src/gsearchtool.c:1329
+#: gsearchtool/src/gsearchtool.c:1328
 msgid "Automatically start a search"
 msgstr "സ്വവയമായി തിരച്ചില്‍ ആരംഭിക്കുക"
 
-#: gsearchtool/src/gsearchtool.c:1335
+#: gsearchtool/src/gsearchtool.c:1334
 #, c-format
 msgid "Select the \"%s\" search option"
 msgstr "\"%s\" എന്ന തിരച്ചില്‍ ഉപാധി തിരഞ്ഞെടുക്കുക"
 
-#: gsearchtool/src/gsearchtool.c:1338
+#: gsearchtool/src/gsearchtool.c:1337
 #, c-format
 msgid "Select and set the \"%s\" search option"
 msgstr "\"%s\" എന്ന തിരച്ചില്‍ പ്രക്രിയ തിരഞ്ഞെടുത്ത് ക്റമികരിക്കുക"
 
-#: gsearchtool/src/gsearchtool.c:1445
+#: gsearchtool/src/gsearchtool.c:1444
 msgid "Invalid option passed to sortby command line argument."
 msgstr "sortby കമാന്‍ഡ് ലൈന്‍ ആര്‍ഗ്യുമെന്റിലേക്ക് തെറ്റായ ഉപാധി നല്‍കി."
 
-#: gsearchtool/src/gsearchtool.c:1737
+#: gsearchtool/src/gsearchtool.c:1736
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -1173,7 +1168,7 @@ msgstr ""
 "\n"
 "... കാണിക്കുന്നതിനായി വളരെ പിശകുകളുണ്ട് ..."
 
-#: gsearchtool/src/gsearchtool.c:1751
+#: gsearchtool/src/gsearchtool.c:1750
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
@@ -1181,11 +1176,11 @@ msgstr ""
 "തിരച്ചിലിന്രെ ഫലം അസാധുവാകാന്‍ സാധുതയുണ്ട്. ഈ പ്റക്റിയയ്ക്കിടയില്‍ പിശക് "
 "സംഭവിച്ചിരുന്നു."
 
-#: gsearchtool/src/gsearchtool.c:1763 gsearchtool/src/gsearchtool.c:1807
+#: gsearchtool/src/gsearchtool.c:1762 gsearchtool/src/gsearchtool.c:1806
 msgid "Show more _details"
 msgstr "അറുതല്‍ വിവരങ്ങള്‍ കാണിക്കുക (_d)"
 
-#: gsearchtool/src/gsearchtool.c:1793
+#: gsearchtool/src/gsearchtool.c:1792
 msgid ""
 "The search results may be out of date or invalid.  Do you want to disable "
 "the quick search feature?"
@@ -1193,162 +1188,162 @@ msgstr ""
 "തെരച്ചില്‍ ഫലങ്ങള്‍ തെറ്റോ അല്ലെങ്കില്‍ തീയതി കഴിഞ്ഞതോ ആവാം.  വേഗത്തിലുള്ള "
 "തെരച്ചില്‍ വിശേഷത നിങ്ങള്‍ക്കു് പ്രവര്‍ത്തന രഹിതമാക്കണമോ?"
 
-#: gsearchtool/src/gsearchtool.c:1818
+#: gsearchtool/src/gsearchtool.c:1817
 msgid "Disable _Quick Search"
 msgstr "പെട്ടെന്നുള്ള തിരച്ചില്‍ പ്രവര്‍ത്തന രഹിതമാക്കുക (_Q)"
 
-#: gsearchtool/src/gsearchtool.c:1845
+#: gsearchtool/src/gsearchtool.c:1844
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
 msgstr ""
 "%d ചൈള്‍ഡിനുള്ള പ്റൊസസ്സ് ഗ്രൂപ്പ് id ക്രമികരിക്കുന്നതില്‍ പരാജയപ്പെട്ടു: "
 "%s.\n"
 
-#: gsearchtool/src/gsearchtool.c:1870
+#: gsearchtool/src/gsearchtool.c:1869
 msgid "Error parsing the search command."
 msgstr "തെരച്ചില്‍ കമാന്‍ഡ് പാഴ്സ് ചെയ്യുന്നതില്‍ പിശക്."
 
-#: gsearchtool/src/gsearchtool.c:1902
+#: gsearchtool/src/gsearchtool.c:1901
 msgid "Error running the search command."
 msgstr "തിരയുന്നതിനുള്ള കമാന്‍ഡ് പ്റവര്‍ത്തിപ്പിക്കുന്നതില്‍ പിശക്."
 
-#: gsearchtool/src/gsearchtool.c:2025
+#: gsearchtool/src/gsearchtool.c:2024
 #, c-format
 msgid "Enter a text value for the \"%s\" search option."
 msgstr "\"%s\" തെരച്ചില്‍ ഉപാധിയ്ക്കു് ഒരു പദാവലി മൂല്ല്യം നല്‍കുക."
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
-#: gsearchtool/src/gsearchtool.c:2030
+#: gsearchtool/src/gsearchtool.c:2029
 #, c-format
 msgid "\"%s\" in %s"
 msgstr "%s-ല്‍ \"%s\" "
 
-#: gsearchtool/src/gsearchtool.c:2032
+#: gsearchtool/src/gsearchtool.c:2031
 #, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
 msgstr "%s-ല്‍ ഒരു മൂല്ല്യം നല്‍കുക. ഇതു് \"%s\" തെരച്ചില്‍ ഉപാധിയ്ക്കുള്ളതാണു്."
 
-#: gsearchtool/src/gsearchtool.c:2096
+#: gsearchtool/src/gsearchtool.c:2095
 #, c-format
 msgid "Remove \"%s\""
 msgstr "\"%s\" നീക്കുക"
 
-#: gsearchtool/src/gsearchtool.c:2097
+#: gsearchtool/src/gsearchtool.c:2096
 #, c-format
 msgid "Click to remove the \"%s\" search option."
 msgstr "\"%s\" തിരച്ചില്‍ ഉപാധി നീക്കം ചെയ്യുന്നതിനായി ക്ളിക്ക് ചെയ്യുക."
 
-#: gsearchtool/src/gsearchtool.c:2190
+#: gsearchtool/src/gsearchtool.c:2189
 msgid "A_vailable options:"
 msgstr "ലഭ്യമായ ഉപാധികള്‍: (_v)"
 
-#: gsearchtool/src/gsearchtool.c:2219
+#: gsearchtool/src/gsearchtool.c:2218
 msgid "Available options"
 msgstr "ലഭ്യമായ ഉപാധികള്‍"
 
-#: gsearchtool/src/gsearchtool.c:2220
+#: gsearchtool/src/gsearchtool.c:2219
 msgid "Select a search option from the drop-down list."
 msgstr ""
 "ഡ്രോപ്പ്-ഡൌണ്‍ പട്ടികയില്‍ നിന്നും ഒരു തെരച്ചില്‍ ഉപാധി തെരഞ്ഞെടുക്കുക."
 
-#: gsearchtool/src/gsearchtool.c:2238
+#: gsearchtool/src/gsearchtool.c:2237
 msgid "Add search option"
 msgstr "തിരച്ചില്‍ ഉപാധി ചേര്‍ക്കുക"
 
-#: gsearchtool/src/gsearchtool.c:2239
+#: gsearchtool/src/gsearchtool.c:2238
 msgid "Click to add the selected available search option."
 msgstr ""
 "തിരഞ്ഞെടുത്ത ലഭ്യമായ തിരച്ചില്‍ ഉപാധി ചേര്‍ക്കുന്നതിനായി ക്ളിക്ക് ചെയ്യുക."
 
-#: gsearchtool/src/gsearchtool.c:2328
+#: gsearchtool/src/gsearchtool.c:2327
 msgid "S_earch results:"
 msgstr "_തിരയല്‍ ഫലം:"
 
-#: gsearchtool/src/gsearchtool.c:2371
+#: gsearchtool/src/gsearchtool.c:2370
 msgid "List View"
 msgstr "പട്ടികയായുള്ള കാഴ്ച"
 
-#: gsearchtool/src/gsearchtool.c:2423
+#: gsearchtool/src/gsearchtool.c:2422
 #: mate-dictionary/libgdict/gdict-source.c:240
 msgid "Name"
 msgstr "പേര്"
 
-#: gsearchtool/src/gsearchtool.c:2472
+#: gsearchtool/src/gsearchtool.c:2471
 msgid "Type"
 msgstr "തരം"
 
-#: gsearchtool/src/gsearchtool.c:2484
+#: gsearchtool/src/gsearchtool.c:2483
 msgid "Date Modified"
 msgstr "മാറ്റം വരുത്തിയ തീയതി"
 
-#: gsearchtool/src/gsearchtool.c:2813
+#: gsearchtool/src/gsearchtool.c:2779
 msgid "_Name contains:"
 msgstr "_പേരില്‍ ഉള്‍ക്കൊള്ളുന്നു:"
 
-#: gsearchtool/src/gsearchtool.c:2828 gsearchtool/src/gsearchtool.c:2829
+#: gsearchtool/src/gsearchtool.c:2794 gsearchtool/src/gsearchtool.c:2795
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr ""
 "വൈള്‍ഡ്കാര്‍ഡുള്ളതോ അല്ലാത്തതോ ആയി ഒരു ഫയല്‍നാമം അല്ലെങ്കില്‍ "
 "ഫയല്‍നാമത്തിന്റെ ഭാഗം നല്‍കുക."
 
-#: gsearchtool/src/gsearchtool.c:2829
+#: gsearchtool/src/gsearchtool.c:2795
 msgid "Name contains"
 msgstr "പേരില്‍ അടങ്ങുന്നത്"
 
-#: gsearchtool/src/gsearchtool.c:2835
+#: gsearchtool/src/gsearchtool.c:2801
 msgid "_Look in folder:"
 msgstr "ഫോള്‍ഡറില്‍ തിരയുക (_L):"
 
-#: gsearchtool/src/gsearchtool.c:2841
+#: gsearchtool/src/gsearchtool.c:2807
 msgid "Browse"
 msgstr "പരതുക"
 
-#: gsearchtool/src/gsearchtool.c:2851
+#: gsearchtool/src/gsearchtool.c:2817
 msgid "Look in folder"
 msgstr "ഫോള്‍ഡറില്‍ തിരയുക"
 
-#: gsearchtool/src/gsearchtool.c:2851
+#: gsearchtool/src/gsearchtool.c:2817
 msgid "Select the folder or device from which you want to begin the search."
 msgstr ""
 "നിങ്ങള്‍ക്ക് തിരച്ചില്‍ ആരംഭിക്കേണ്ട ഫോള്‍ഡര്‍ അല്ലെങ്കില്‍ ഉപകരണം "
 "തിരഞ്ഞെടുക്കുക."
 
-#: gsearchtool/src/gsearchtool.c:2869
+#: gsearchtool/src/gsearchtool.c:2835
 msgid "Select more _options"
 msgstr "അറുതല്‍ ഉപാധികള്‍ തിരഞ്ഞെടുക്കുക (_o)"
 
-#: gsearchtool/src/gsearchtool.c:2879
+#: gsearchtool/src/gsearchtool.c:2845
 msgid "Select more options"
 msgstr "അറുതല്‍ ഉപാധികള്‍ തിരഞ്ഞെടുക്കുക"
 
-#: gsearchtool/src/gsearchtool.c:2879
+#: gsearchtool/src/gsearchtool.c:2845
 msgid "Click to expand or collapse the list of available options."
 msgstr ""
 "ലഭ്യമായ ഉപാധികളുടെ പട്ടിക വികസിപ്പിക്കുക അല്ലെങ്കില്‍ കൊളാപ്സ് "
 "ചെയ്യുന്നതിനായി ക്ലിക്ക് ചെയ്യുക."
 
-#: gsearchtool/src/gsearchtool.c:2910
+#: gsearchtool/src/gsearchtool.c:2876
 msgid "Click to display the help manual."
 msgstr "സഹായത്തിന് ആവശ്യമുള്ള രേഖ കാണിക്കുന്നതിനായി ക്ളിക്ക് ചെയ്യുക."
 
-#: gsearchtool/src/gsearchtool.c:2924
+#: gsearchtool/src/gsearchtool.c:2890
 msgid "Click to close \"Search for Files\"."
 msgstr "\"ഫയലുകള്‍ തിരയുക\"അവസാനിപ്പിക്കുന്നതിനായി ക്ളിക്ക് ചെയ്യുക."
 
-#: gsearchtool/src/gsearchtool.c:2962
+#: gsearchtool/src/gsearchtool.c:2928
 msgid "Click to perform a search."
 msgstr "തിരയുന്നതിനായി ക്ളിക്ക് ചെയ്യുക."
 
-#: gsearchtool/src/gsearchtool.c:2963
+#: gsearchtool/src/gsearchtool.c:2929
 msgid "Click to stop a search."
 msgstr "ഒരു തിരച്ചില്‍ നിര്‍ത്തുന്നതിനായി ക്ളിക്ക് ചെയ്യുക."
 
-#: gsearchtool/src/gsearchtool.c:3060
+#: gsearchtool/src/gsearchtool.c:3026
 msgid "- the MATE Search Tool"
 msgstr "- ഗ്നോമിലെ തെരയാനുള്ള ഉപകരണം"
 
-#: gsearchtool/src/gsearchtool.c:3071
+#: gsearchtool/src/gsearchtool.c:3037
 #, c-format
 msgid "Failed to parse command line arguments: %s\n"
 msgstr ""
@@ -1775,23 +1770,23 @@ msgstr ""
 "തിരച്ചില്‍ നടത്തുന്ന വാചകം ഇതിന് ശേഷം ഏത് വരിയില്‍ ഉളളത് എന്ന് "
 "കണ്ടുപിടിക്കുക"
 
-#: logview/src/logview-findbar.c:202
+#: logview/src/logview-findbar.c:203
 msgid "Clear the search string"
 msgstr "തെരഞ്ഞ വാചകം മായ്ക്കുക"
 
-#: logview/src/logview-log.c:589
+#: logview/src/logview-log.c:585
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
 msgstr "GZipped ലോഗ് അണ്‍കംപ്രസ്സ് ചെയ്യുമ്പോള്‍ പിശക്. ഫയല്‍ തെറ്റാവാം."
 
-#: logview/src/logview-log.c:635
+#: logview/src/logview-log.c:631
 msgid "You don't have enough permissions to read the file."
 msgstr "ഈ ഫയല്‍ തുറക്കുവാനുള്ള അനുവാദം നിങ്ങള്‍ക്കില്ല."
 
-#: logview/src/logview-log.c:650
+#: logview/src/logview-log.c:646
 msgid "The file is not a regular file or is not a text file."
 msgstr "ഈ ഫയല്‍ ഒരു സാധാരണ ഫയലോ പദാവലി ഫയലോ അല്ല."
 
-#: logview/src/logview-log.c:743
+#: logview/src/logview-log.c:739
 msgid "This version of System Log does not support GZipped logs."
 msgstr ""
 "സിസ്റ്റം ലോഗിന്റെ ഈ പതിപ്പു് ജിസിപ്പു് ചെയ്ത ലോഗുകളെ പിന്തുണയ്ക്കുന്നില്ല."
@@ -1828,186 +1823,64 @@ msgstr " - ലോഗുകള്‍ പരുതി അവ നിരീക്ഷ
 msgid "Log Viewer"
 msgstr "ലോഗ് നിരീക്ഷകന്‍"
 
-#: logview/src/logview-window.c:41 logview/src/logview-window.c:771
+#: logview/src/logview-window.c:41 logview/src/logview-window.c:807
 msgid "System Log Viewer"
 msgstr "സിസ്റ്റം ലോഗ് നിരീക്ഷകന്‍"
 
-#: logview/src/logview-window.c:216
+#: logview/src/logview-window.c:227
 #, c-format
 msgid "last update: %s"
 msgstr "അവസാനമായി മാറ്റം വരുത്തിയത്: %s"
 
-#: logview/src/logview-window.c:220
+#: logview/src/logview-window.c:231
 #, c-format
 msgid "%d lines (%s) - %s"
 msgstr "%d വരികള്‍ (%s) - %s"
 
-#: logview/src/logview-window.c:325
+#: logview/src/logview-window.c:340
 msgid "Open Log"
 msgstr "ലോഗ് തുറക്കുക"
 
-#: logview/src/logview-window.c:364
+#: logview/src/logview-window.c:385
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "സഹായം ലഭിക്കുന്നതില്‍ തകരാറ്: %s"
 
-#: logview/src/logview-window.c:478
+#: logview/src/logview-window.c:517
 msgid "Wrapped"
 msgstr "ഒതുക്കിയതു്"
 
-#: logview/src/logview-window.c:493
+#: logview/src/logview-window.c:532
 #: mate-dictionary/libgdict/gdict-defbox.c:1127
 #: mate-dictionary/libgdict/gdict-defbox.c:1221
 #: mate-dictionary/libgdict/gdict-defbox.c:1255
 msgid "Not found"
 msgstr "കണ്ടെത്തിയില്ല"
 
-#: logview/src/logview-window.c:773
+#: logview/src/logview-window.c:809
 msgid "About System Log Viewer"
 msgstr ""
 
-#: logview/src/logview-window.c:774
+#: logview/src/logview-window.c:810
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
 "Copyright © 2011-2021 MATE developers"
 msgstr ""
 
-#: logview/src/logview-window.c:778
+#: logview/src/logview-window.c:814
 msgid "View, monitor or analyze your system logs in a gradual manner."
 msgstr ""
 
-#: logview/src/logview-window.c:821 mate-dictionary/src/gdict-window.c:1256
-msgid "_File"
-msgstr "_ഫയല്‍"
-
-#: logview/src/logview-window.c:824
-msgid "_Filters"
-msgstr "_ഫില്‍‌റ്ററുകള്‍"
-
-#: logview/src/logview-window.c:827
-msgid "_Open..."
-msgstr "തുറക്കുക... (_O)"
-
-#: logview/src/logview-window.c:827
-msgid "Open a log from file"
-msgstr "ഫയലില്‍ നിന്നും ഒരു ലോഗ് തുറക്കുക"
-
-#: logview/src/logview-window.c:829
-msgid "Close this log"
-msgstr "ഈ ലോഗ് അടയ്ക്കുക"
-
-#: logview/src/logview-window.c:831
-msgid "_Quit"
-msgstr "പുറത്ത് കടക്കുക (_Q)"
-
-#: logview/src/logview-window.c:831
-msgid "Quit the log viewer"
-msgstr "ലോഗ് ദര്‍ശിനിയില്‍ നിന്നും പുറത്തു് കടക്കുക"
-
-#: logview/src/logview-window.c:834 mate-dictionary/src/gdict-window.c:1275
-msgid "_Copy"
-msgstr "പകര്‍ത്തുക (_C)"
-
-#: logview/src/logview-window.c:834
-msgid "Copy the selection"
-msgstr "തെരഞ്ഞെടുത്തതു് പകര്‍ത്തുക"
-
-#: logview/src/logview-window.c:836 mate-dictionary/src/gdict-window.c:1277
-msgid "Select _All"
-msgstr "_എല്ലാം തെരഞ്ഞെടുക്കുക "
-
-#: logview/src/logview-window.c:836
-msgid "Select the entire log"
-msgstr "ലോഗ് മുഴുവന്‍ തിരഞ്ഞെടുക്കുക"
-
-#: logview/src/logview-window.c:838
-msgid "_Find..."
-msgstr "തിരയുക (_F)..."
-
-#: logview/src/logview-window.c:838
-msgid "Find a word or phrase in the log"
-msgstr "ഒരു വാക്ക് അല്ലെങ്കില്‍ വാചകം ലോഗില്‍ കണ്ടെത്തുക"
-
-#: logview/src/logview-window.c:841
-msgid "Zoom _In"
-msgstr "വ_ലുതാക്കുക"
-
-#: logview/src/logview-window.c:841
-msgid "Bigger text size"
-msgstr "വലിയ ടെക്സ്റ്റ് വ്യാപ്തി"
-
-#: logview/src/logview-window.c:843
-msgid "Zoom _Out"
-msgstr "_ചെറുതാക്കുക"
-
-#: logview/src/logview-window.c:843
-msgid "Smaller text size"
-msgstr "ചെറിയ ടെക്സ്റ്റ് വ്യാപ്തി"
-
-#: logview/src/logview-window.c:845
-msgid "_Normal Size"
-msgstr "_സാധാരണ വലിപ്പം"
-
-#: logview/src/logview-window.c:845
-msgid "Normal text size"
-msgstr "സാധാരണ ടെക്സ്റ്റ് വലിപ്പം"
-
-#: logview/src/logview-window.c:848
-msgid "Manage Filters"
-msgstr "ഫില്‍‌റ്ററുകള്‍ കൈകാര്യം ചെയ്യുക"
-
-#: logview/src/logview-window.c:848
-msgid "Manage filters"
-msgstr "ഫില്‍‌റ്ററുകള്‍ കൈകാര്യം ചെയ്യുക"
-
-#: logview/src/logview-window.c:851
-msgid "Open the help contents for the log viewer"
-msgstr "ലോഗ് നിരീക്ഷകനുള്ള സഹായവിവരങ്ങള്‍ തുറക്കുക"
-
-#: logview/src/logview-window.c:853 mate-dictionary/src/gdict-applet.c:1175
-#: mate-dictionary/src/gdict-window.c:1312
-msgid "_About"
-msgstr "_സംബന്ധിച്ച്"
-
-#: logview/src/logview-window.c:853
-msgid "Show the about dialog for the log viewer"
-msgstr "ലോഗ് നിരീക്ഷകനുള്ള ഡയലോഗ് കാണിക്കുക"
-
-#: logview/src/logview-window.c:858
-msgid "_Statusbar"
-msgstr "_അവസ്ഥാപട്ട"
-
-#: logview/src/logview-window.c:858
-msgid "Show Status Bar"
-msgstr "അവസ്ഥാ പട്ട കാണിക്കുക"
-
-#: logview/src/logview-window.c:860
-msgid "Side _Pane"
-msgstr "_പാര്‍ശ്വപട്ട"
-
-#: logview/src/logview-window.c:860
-msgid "Show Side Pane"
-msgstr "സൈഡ് പെയിന്‍ കാണിക്കുക"
-
-#: logview/src/logview-window.c:862
-msgid "Show matches only"
-msgstr "ചേരുന്നവ മാത്രം കാണിക്കുക"
-
-#: logview/src/logview-window.c:862
-msgid "Only show lines that match one of the given filters"
-msgstr ""
-"തന്നരിക്കുന്ന ഫില്‍‌റ്ററുകളില്‍ ഒന്നുമായി ചേരുന്ന വരികള്‍ മാത്രം കാണിക്കുക"
-
-#: logview/src/logview-window.c:994
+#: logview/src/logview-window.c:1042
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr ""
 
-#: logview/src/logview-window.c:1419
+#: logview/src/logview-window.c:1462
 msgid "Version: "
 msgstr "പതിപ്പു്: "
 
-#: logview/src/logview-window.c:1525
+#: logview/src/logview-window.c:1565
 msgid "Could not open the following files:"
 msgstr "താഴെ പറയുന്ന ഫയലുകള്‍ തുറക്കുവാന്‍ സാധ്യമായില്ല:"
 
@@ -2047,19 +1920,19 @@ msgid ""
 "query."
 msgstr ""
 
-#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:5
+#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:6
 msgid "Dictionary Applet Factory"
 msgstr ""
 
-#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:6
+#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:7
 msgid "Factory for the dictionary applet"
 msgstr ""
 
-#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:9
+#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:10
 msgid "Dictionary Look up"
 msgstr "നിഘണ്ടു നോക്കുക "
 
-#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:10
+#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:11
 msgid "Look up words in a dictionary"
 msgstr "നിഘണ്ടുവില്‍ വാക്കുകള്‍ നോക്കുക"
 
@@ -2477,7 +2350,7 @@ msgstr ""
 
 #: mate-dictionary/src/gdict-about.c:82 mate-dictionary/src/gdict-app.c:360
 #: mate-dictionary/src/gdict-window.c:578
-#: mate-dictionary/src/gdict-window.c:1862
+#: mate-dictionary/src/gdict-window.c:1954
 msgid "Dictionary"
 msgstr "നിഘണ്ടു"
 
@@ -2566,136 +2439,140 @@ msgstr "db"
 msgid " - Look up words in dictionaries"
 msgstr " - നിഘണ്ടുവില്‍ വാക്കുകള്‍ തിരയുക"
 
-#: mate-dictionary/src/gdict-applet.c:193
-#: mate-dictionary/src/gdict-window.c:933
+#: mate-dictionary/src/gdict-applet.c:207
+#: mate-dictionary/src/gdict-window.c:937
 msgid "Save a Copy"
 msgstr "ഒരു പകര്‍പ്പ് സൂക്ഷിയ്ക്കുക"
 
-#: mate-dictionary/src/gdict-applet.c:203
-#: mate-dictionary/src/gdict-window.c:943
+#: mate-dictionary/src/gdict-applet.c:217
+#: mate-dictionary/src/gdict-window.c:947
 msgid "Untitled document"
 msgstr "തലകെട്ടില്ലാത്ത രേഖ"
 
-#: mate-dictionary/src/gdict-applet.c:224
-#: mate-dictionary/src/gdict-window.c:964
+#: mate-dictionary/src/gdict-applet.c:238
+#: mate-dictionary/src/gdict-window.c:968
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "'%s'-ലേക്ക് എഴുതുന്നതില്‍ പിശക്"
 
-#: mate-dictionary/src/gdict-applet.c:349
+#: mate-dictionary/src/gdict-applet.c:380
 msgid "Clear the definitions found"
 msgstr "കണ്ട നിര്‍വചനം മായ്ക്കുക"
 
-#: mate-dictionary/src/gdict-applet.c:351
+#: mate-dictionary/src/gdict-applet.c:382
 msgid "Clear definition"
 msgstr "നിര്‍വചനം മായ്ക്കുക"
 
-#: mate-dictionary/src/gdict-applet.c:352
+#: mate-dictionary/src/gdict-applet.c:383
 msgid "Clear the text of the definition"
 msgstr "നിര്‍വചനത്തിന്റെ പദാവലി പ്രിന്റ് ചെയ്യുക"
 
-#: mate-dictionary/src/gdict-applet.c:364
+#: mate-dictionary/src/gdict-applet.c:395
 msgid "Print the definitions found"
 msgstr "കണ്ടുപിടിച്ച നിര്‍വചനങ്ങള്‍ പ്രിന്റ് ചെയ്യുക"
 
-#: mate-dictionary/src/gdict-applet.c:366
+#: mate-dictionary/src/gdict-applet.c:397
 msgid "Print definition"
 msgstr "നിര്‍വചനം പ്രിന്റ് ചെയ്യുക"
 
-#: mate-dictionary/src/gdict-applet.c:367
+#: mate-dictionary/src/gdict-applet.c:398
 msgid "Print the text of the definition"
 msgstr "നിര്‍വചനത്തിന്റെ പദാവലി പ്രിന്റ് ചെയ്യുക"
 
-#: mate-dictionary/src/gdict-applet.c:379
+#: mate-dictionary/src/gdict-applet.c:410
 msgid "Save the definitions found"
 msgstr "കണ്ടുപിടിച്ച് നിര്‍വചനങ്ങള്‍ സംരക്ഷിക്കുക"
 
-#: mate-dictionary/src/gdict-applet.c:381
+#: mate-dictionary/src/gdict-applet.c:412
 msgid "Save definition"
 msgstr "നിര്‍വചനം സംരക്ഷിക്കുക"
 
-#: mate-dictionary/src/gdict-applet.c:382
+#: mate-dictionary/src/gdict-applet.c:413
 msgid "Save the text of the definition to a file"
 msgstr "നിര്‍വചനത്തിന്റെ പദാവലി ഒരു ഫയലിലേക്ക് സൂക്ഷിക്കുക"
 
-#: mate-dictionary/src/gdict-applet.c:519
+#: mate-dictionary/src/gdict-applet.c:560
 msgid "Click to view the dictionary window"
 msgstr "നിഘണ്ടുവിന്‍റെ ജാലകം കാണുന്നതിനായി ക്ളിക്ക് ചെയ്യുക"
 
-#: mate-dictionary/src/gdict-applet.c:521
+#: mate-dictionary/src/gdict-applet.c:562
 msgid "Toggle dictionary window"
 msgstr "നിഘണ്ടുവിനുള്ള ജാലകം ടൊഗിള്‍ ചെയ്യുക"
 
-#: mate-dictionary/src/gdict-applet.c:522
+#: mate-dictionary/src/gdict-applet.c:563
 msgid "Show or hide the definition window"
 msgstr "നിര്‍വചനം കാണിക്കുന്ന ജാലകം കാണിക്കുക അല്ലേല്‍ മറയ്ക്കുക"
 
-#: mate-dictionary/src/gdict-applet.c:573
+#: mate-dictionary/src/gdict-applet.c:625
 msgid "Type the word you want to look up"
 msgstr "നിങ്ങള്‍ക്ക് കണ്ടുപിടിക്കേണ്ട വാക്ക് ടൈപ്പ് ചെയ്യുക"
 
-#: mate-dictionary/src/gdict-applet.c:575
+#: mate-dictionary/src/gdict-applet.c:627
 msgid "Dictionary entry"
 msgstr "നിഘണ്ടു എന്‍ട്രി"
 
-#: mate-dictionary/src/gdict-applet.c:576
+#: mate-dictionary/src/gdict-applet.c:628
 msgid "Look up words in dictionaries"
 msgstr "നിഘണ്ടുവില്‍ വാക്കുകള്‍ തിരയുക"
 
-#: mate-dictionary/src/gdict-applet.c:704
-#: mate-dictionary/src/gdict-window.c:1075
+#: mate-dictionary/src/gdict-applet.c:766
+#: mate-dictionary/src/gdict-window.c:1096
 msgid "Dictionary Preferences"
 msgstr "നിഘണ്ടു മുന്‍ഗണനകള്‍"
 
-#: mate-dictionary/src/gdict-applet.c:728
+#: mate-dictionary/src/gdict-applet.c:790
 #: mate-dictionary/src/gdict-pref-dialog.c:494
 #: mate-dictionary/src/gdict-source-dialog.c:476
-#: mate-dictionary/src/gdict-window.c:1222
+#: mate-dictionary/src/gdict-window.c:1297
 msgid "There was an error while displaying help"
 msgstr "സഹായം ലഭ്യമാക്കുന്നതില്‍ പിശക്"
 
-#: mate-dictionary/src/gdict-applet.c:867
+#: mate-dictionary/src/gdict-applet.c:929
 #: mate-dictionary/src/gdict-window.c:493
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "'%s' എന്ന പേരില്‍ നിഘണ്ടു ലഭ്യമല്ല."
 
-#: mate-dictionary/src/gdict-applet.c:871
+#: mate-dictionary/src/gdict-applet.c:933
 #: mate-dictionary/src/gdict-window.c:497
 msgid "Unable to find dictionary source"
 msgstr "നിഘണ്ടു ഉറവിടം കണ്ടുപിടിക്കുവാന്‍ സാധ്യമായില്ല"
 
-#: mate-dictionary/src/gdict-applet.c:887
+#: mate-dictionary/src/gdict-applet.c:949
 #: mate-dictionary/src/gdict-window.c:513
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "'%s'-നുള്ള കോണ്‍ടെക്സ്റ്റ് ലഭ്യമായില്ല"
 
-#: mate-dictionary/src/gdict-applet.c:891
+#: mate-dictionary/src/gdict-applet.c:953
 #: mate-dictionary/src/gdict-window.c:517
 msgid "Unable to create a context"
 msgstr "ഒരു കോണ്‍ടെക്സ്റ്റ് ഉണ്ടാക്കുവാന്‍ സാധ്യമായില്ല"
 
-#: mate-dictionary/src/gdict-applet.c:1157
+#: mate-dictionary/src/gdict-applet.c:1219
 msgid "_Look Up Selected Text"
 msgstr "തിരഞ്ഞെടുത്ത വാചകം നോക്കുക"
 
-#: mate-dictionary/src/gdict-applet.c:1160
+#: mate-dictionary/src/gdict-applet.c:1222
 msgid "Cl_ear"
 msgstr "വെടിപ്പാക്കുക"
 
-#: mate-dictionary/src/gdict-applet.c:1163
+#: mate-dictionary/src/gdict-applet.c:1225
 msgid "_Print"
 msgstr "അച്ചടി"
 
-#: mate-dictionary/src/gdict-applet.c:1166
+#: mate-dictionary/src/gdict-applet.c:1228
 #: mate-screenshot/data/mate-screenshot.ui:109
 msgid "_Save"
 msgstr "സംരക്ഷിക്കുക"
 
-#: mate-dictionary/src/gdict-applet.c:1169
+#: mate-dictionary/src/gdict-applet.c:1231
 msgid "Preferences"
 msgstr "മുന്‍ഗണനകള്‍"
+
+#: mate-dictionary/src/gdict-applet.c:1237
+msgid "_About"
+msgstr "_സംബന്ധിച്ച്"
 
 #: mate-dictionary/src/gdict-common.c:77
 #, c-format
@@ -2786,168 +2663,59 @@ msgstr[1] ""
 msgid "%s - Dictionary"
 msgstr "%s - നിഘണ്ടു"
 
-#: mate-dictionary/src/gdict-window.c:1259
-msgid "_Go"
-msgstr "_പോകുക"
-
-#: mate-dictionary/src/gdict-window.c:1263
-#: mate-screenshot/data/mate-screenshot.ui:58
-msgid "_New"
-msgstr "പുതിയ (_N)"
-
-#: mate-dictionary/src/gdict-window.c:1264
-msgid "New look up"
-msgstr "പുതുതായി തിരയുക"
-
-#: mate-dictionary/src/gdict-window.c:1265
-msgid "_Save a Copy..."
-msgstr "ഒരു പകര്‍പ്പ് സംരക്ഷിക്കുക... (_S)"
-
-#: mate-dictionary/src/gdict-window.c:1267
-msgid "P_review..."
-msgstr "തിരനോട്ടം..."
-
-#: mate-dictionary/src/gdict-window.c:1268
-msgid "Preview this document"
-msgstr "ഈ പ്രമാണം അച്ചടിയ്ക്കുന്നതിനു് മുമ്പു് സ്ക്രീനില്‍ കാണുക"
-
-#: mate-dictionary/src/gdict-window.c:1269
-msgid "_Print..."
-msgstr "_അച്ചടിയ്ക്കുക..."
-
-#: mate-dictionary/src/gdict-window.c:1270
-msgid "Print this document"
-msgstr "ഈ രേഖ അച്ചടിക്കുക"
-
-#: mate-dictionary/src/gdict-window.c:1279
-msgid "_Find"
-msgstr ""
-
-#: mate-dictionary/src/gdict-window.c:1280
-msgid "Find a word or phrase in the document"
-msgstr "രേഖയില്‍ ഒരു വാക്ക് ആല്ലങ്കില്‍ വാചകം കണ്ടെത്തുക"
-
-#: mate-dictionary/src/gdict-window.c:1282
-msgid "Find Ne_xt"
-msgstr "_അടുത്തത് കണ്ടു പിടിക്കുക"
-
-#: mate-dictionary/src/gdict-window.c:1284
-msgid "Find Pre_vious"
-msgstr "_മുമ്പുള്ളതു് കണ്ടു പിടിക്കുക"
-
-#: mate-dictionary/src/gdict-window.c:1286
-msgid "_Preferences"
-msgstr "മുന്‍ഗണനകള്‍"
-
-#: mate-dictionary/src/gdict-window.c:1290
-msgid "_Previous Definition"
-msgstr "_മുമ്പുള്ള നിര്‍വചനം"
-
-#: mate-dictionary/src/gdict-window.c:1291
-msgid "Go to the previous definition"
-msgstr "മുമ്പുള്ള നിര്‍വചനത്തിലേക്ക് പോവുക"
-
-#: mate-dictionary/src/gdict-window.c:1292
-msgid "_Next Definition"
-msgstr "_അടുത്ത നിര്‍വചനം"
-
-#: mate-dictionary/src/gdict-window.c:1293
-msgid "Go to the next definition"
-msgstr "അടുത്ത നിര്‍വചനത്തിലേക്ക് പോവുക"
-
-#: mate-dictionary/src/gdict-window.c:1294
-msgid "_First Definition"
-msgstr "_ആദ്യത്തെ നിര്‍വചനം"
-
-#: mate-dictionary/src/gdict-window.c:1295
-msgid "Go to the first definition"
-msgstr "ആദ്യത്തെ നിര്‍വചനത്തിലേക്ക് പോവുക"
-
-#: mate-dictionary/src/gdict-window.c:1296
-msgid "_Last Definition"
-msgstr "_അവസാനത്തെ നിര്‍വചനം"
-
-#: mate-dictionary/src/gdict-window.c:1297
-msgid "Go to the last definition"
-msgstr "അവസാനത്തെ നിര്‍വചനത്തിലേക്ക് പോവുക"
-
-#: mate-dictionary/src/gdict-window.c:1300
-msgid "Similar _Words"
-msgstr "സാമ്യമുളള വാക്കുകള്‍ (_W)"
-
-#: mate-dictionary/src/gdict-window.c:1302
-msgid "Dictionary Sources"
-msgstr "നിഘണ്ടുവിന്‍റെ ഉറവിടം "
-
-#: mate-dictionary/src/gdict-window.c:1304
-msgid "Available _Databases"
-msgstr "ലഭ്യമായ ഡേറ്റാബെയിസുകള്‍ (_D)"
-
-#: mate-dictionary/src/gdict-window.c:1306
-msgid "Available St_rategies"
-msgstr "ലഭ്യമായ നയങ്ങള്‍ (_r)"
-
-#: mate-dictionary/src/gdict-window.c:1323
-msgid "_Sidebar"
-msgstr "സൈഡ് ബാര്‍ (_S)"
-
-#: mate-dictionary/src/gdict-window.c:1325
-msgid "S_tatusbar"
-msgstr "സ്റ്റേറ്റസ് ബാര്‍ (_t)"
-
-#: mate-dictionary/src/gdict-window.c:1390
+#: mate-dictionary/src/gdict-window.c:1466
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "`%s' എന്ന നിഘണ്ടുവിന്‍റെ ഉറവിടം തിരഞ്ഞെടുത്തിരിക്കുന്നു"
 
-#: mate-dictionary/src/gdict-window.c:1411
+#: mate-dictionary/src/gdict-window.c:1487
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "`%s' എന്ന നയം തിരഞ്ഞെടുത്തിരിക്കുന്നു"
 
-#: mate-dictionary/src/gdict-window.c:1431
+#: mate-dictionary/src/gdict-window.c:1507
 #, c-format
 msgid "Database `%s' selected"
 msgstr "`%s' ഡേറ്റാബെയിസ് തിരഞ്ഞെടുത്തിരിക്കുന്നു"
 
-#: mate-dictionary/src/gdict-window.c:1451
+#: mate-dictionary/src/gdict-window.c:1527
 #, c-format
 msgid "Word `%s' selected"
 msgstr "`%s' വാചകം തിരഞ്ഞെടുത്തിരിക്കുന്നു"
 
-#: mate-dictionary/src/gdict-window.c:1476
+#: mate-dictionary/src/gdict-window.c:1552
 msgid "Double-click on the word to look up"
 msgstr "തിരയുന്നതിനായി വാക്കില്‍ രണ്ടുതവണ ക്ളിക്ക് ചെയ്യുക"
 
-#: mate-dictionary/src/gdict-window.c:1482
+#: mate-dictionary/src/gdict-window.c:1558
 msgid "Double-click on the matching strategy to use"
 msgstr "ഉപയോഗത്തിനായി ചേരുന്ന നയത്തില്‍ രണ്ടുതവണ ക്ളിക്ക് ചെയ്യുക"
 
-#: mate-dictionary/src/gdict-window.c:1487
+#: mate-dictionary/src/gdict-window.c:1563
 msgid "Double-click on the source to use"
 msgstr "ഉപയോഗിക്കുന്നതിനായി ഉറവിടത്തില്‍ രണ്ടുതവണ ക്ളിക്ക് ചെയ്യുക"
 
-#: mate-dictionary/src/gdict-window.c:1496
+#: mate-dictionary/src/gdict-window.c:1572
 msgid "Double-click on the database to use"
 msgstr "ഉപയോഗിക്കുന്നതിനായി ഡേറ്റാബെയിസില്‍ രണ്ടുതവണ ക്ളിക്ക് ചെയ്യുക"
 
-#: mate-dictionary/src/gdict-window.c:1668
+#: mate-dictionary/src/gdict-window.c:1760
 msgid "Look _up:"
 msgstr "തിരയുക: (_u)"
 
-#: mate-dictionary/src/gdict-window.c:1743
+#: mate-dictionary/src/gdict-window.c:1835
 msgid "Similar words"
 msgstr "സാമ്യമുളള വാക്കുകള്‍"
 
-#: mate-dictionary/src/gdict-window.c:1756
+#: mate-dictionary/src/gdict-window.c:1848
 msgid "Available dictionaries"
 msgstr "ലഭ്യമായ നിഘണ്ടു"
 
-#: mate-dictionary/src/gdict-window.c:1774
+#: mate-dictionary/src/gdict-window.c:1866
 msgid "Available strategies"
 msgstr "ലഭ്യമായ നയങ്ങള്‍"
 
-#: mate-dictionary/src/gdict-window.c:1790
+#: mate-dictionary/src/gdict-window.c:1882
 msgid "Dictionary sources"
 msgstr "നിഘണ്ടുവിന്‍റെ ഉറവിടം"
 
@@ -3095,6 +2863,10 @@ msgstr ""
 msgid "Save Screenshot"
 msgstr "സ്ക്രീന്‍ഷോട്ട് സംരക്ഷിക്കുക"
 
+#: mate-screenshot/data/mate-screenshot.ui:58
+msgid "_New"
+msgstr "പുതിയ (_N)"
+
 #: mate-screenshot/data/mate-screenshot.ui:74
 msgid "C_opy to Clipboard"
 msgstr "ഓര്‍മ്മച്ചെപ്പിലേയ്ക്കു് പ_കര്‍ത്തുക"
@@ -3194,7 +2966,7 @@ msgid "Grab _after a delay of"
 msgstr "പറഞ്ഞിരിക്കുന്ന സമയത്തിന് ശേഷം തിരഞ്ഞെടുക്കുക"
 
 #: mate-screenshot/src/mate-screenshot.c:500
-#: mate-screenshot/src/mate-screenshot.c:1319
+#: mate-screenshot/src/mate-screenshot.c:1290
 msgid "seconds"
 msgstr "സെക്കന്‍ഡുകള്‍"
 
@@ -3239,59 +3011,59 @@ msgstr ""
 msgid "Screenshot at %s - %d.png"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1314
+#: mate-screenshot/src/mate-screenshot.c:1285
 msgid "Grab a window instead of the entire screen"
 msgstr "പൂര്‍ണ്ണമായ സ്ക്രീനിന് പകരം ഒരു ജാലകം തിരഞ്ഞെടുക്കുക"
 
-#: mate-screenshot/src/mate-screenshot.c:1315
+#: mate-screenshot/src/mate-screenshot.c:1286
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "പൂര്‍ണ്ണമായ സ്ക്രീനിനു് പകരം സ്ക്രീനിന്റെ ഒരു ഭാഗം തെരഞ്ഞെടുക്കുക"
 
-#: mate-screenshot/src/mate-screenshot.c:1316
+#: mate-screenshot/src/mate-screenshot.c:1287
 msgid "Send grabbed area directly to the clipboard"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1317
+#: mate-screenshot/src/mate-screenshot.c:1288
 msgid "Include the window border with the screenshot"
 msgstr "സ്ക്രീന്‍ഷോട്ടിനൊപ്പം ജാലകത്തിന്രെ അതിരും ഉള്‍പ്പെടുത്തുക"
 
-#: mate-screenshot/src/mate-screenshot.c:1318
+#: mate-screenshot/src/mate-screenshot.c:1289
 msgid "Remove the window border from the screenshot"
 msgstr "സ്ക്രീന്‍ഷോട്ടില്‍ നിന്നും ജാലകത്തിന്റെ അതിരു് നീക്കം ചെയ്യുക"
 
-#: mate-screenshot/src/mate-screenshot.c:1319
+#: mate-screenshot/src/mate-screenshot.c:1290
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr ""
 "നല്‍കിയിരിക്കുന്ന സമയത്തിന് [സെക്കന്‍ഡുകള്‍] ശേഷം സ്ക്രീന്‍ഷോട്ട് എടുക്കുക "
 
-#: mate-screenshot/src/mate-screenshot.c:1320
+#: mate-screenshot/src/mate-screenshot.c:1291
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr ""
 "അതിരിലേക്ക് ചേര്‍ക്കുവാനുള്ള പ്രഭാവം (shadow, border അല്ലെങ്കില്‍ none)"
 
-#: mate-screenshot/src/mate-screenshot.c:1320
+#: mate-screenshot/src/mate-screenshot.c:1291
 msgid "effect"
 msgstr "പ്രഭാവം"
 
-#: mate-screenshot/src/mate-screenshot.c:1321
+#: mate-screenshot/src/mate-screenshot.c:1292
 msgid "Interactively set options"
 msgstr "പരസ്പര സംവാദത്തിലൂടെ ഐച്ഛികങ്ങള്‍ സജ്ജീകരിയ്ക്കുക"
 
-#: mate-screenshot/src/mate-screenshot.c:1322
+#: mate-screenshot/src/mate-screenshot.c:1293
 msgid "Print version information and exit"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1333
+#: mate-screenshot/src/mate-screenshot.c:1304
 msgid "Take a picture of the screen"
 msgstr "സ്ക്രീനിന്‍റെ ഒരു ചിത്രം എടുക്കുക"
 
-#: mate-screenshot/src/mate-screenshot.c:1356
+#: mate-screenshot/src/mate-screenshot.c:1327
 msgid ""
 "Conflicting options: --clipboard and --interactive should not be used at the"
 " same time.\n"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1362
+#: mate-screenshot/src/mate-screenshot.c:1333
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"

@@ -8,12 +8,12 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-utils 1.26.0\n"
+"Project-Id-Version: mate-utils 1.27.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
-"POT-Creation-Date: 2022-10-29 15:36+0200\n"
+"POT-Creation-Date: 2023-09-10 10:29+0200\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2021\n"
-"Language-Team: Panjabi (Punjabi) (https://www.transifex.com/mate/teams/13566/pa/)\n"
+"Language-Team: Panjabi (Punjabi) (https://app.transifex.com/mate/teams/13566/pa/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,15 +40,13 @@ msgid "Disk Usage Analyzer Preferences"
 msgstr "ਡਿਸਕ ਵਰਤੋਂ ਜਾਂਚਕਾਰ ਪਸੰਦ"
 
 #: baobab/data/baobab-dialog-scan-props.ui:32
-#: baobab/data/baobab-main-window.ui:129 logview/src/logview-window.c:825
-#: mate-dictionary/src/gdict-applet.c:1172
-#: mate-dictionary/src/gdict-window.c:1260
+#: baobab/data/baobab-main-window.ui:129
+#: mate-dictionary/src/gdict-applet.c:1234
 #: mate-screenshot/data/mate-screenshot.ui:41
 msgid "_Help"
 msgstr "ਮੱਦਦ(_H)"
 
-#: baobab/data/baobab-dialog-scan-props.ui:48 logview/src/logview-window.c:829
-#: mate-dictionary/src/gdict-window.c:1271
+#: baobab/data/baobab-dialog-scan-props.ui:48
 msgid "_Close"
 msgstr "ਬੰਦ ਕਰੋ(_C)"
 
@@ -80,8 +78,7 @@ msgstr "ਫੋਲਡਰ ਜਾਂਚ(_O)..."
 msgid "S_can Remote Folder..."
 msgstr "ਰਿਮੋਟ ਫੋਲਡਰ ਜਾਂਚ(_c)..."
 
-#: baobab/data/baobab-main-window.ui:74 logview/src/logview-window.c:822
-#: mate-dictionary/src/gdict-window.c:1257
+#: baobab/data/baobab-main-window.ui:74
 msgid "_Edit"
 msgstr "ਸੋਧ(_E)"
 
@@ -93,8 +90,7 @@ msgstr "ਸਭ ਫੈਲਾਓ(_E)"
 msgid "_Collapse All"
 msgstr "ਸਭ ਸਮੇਟੋ(_C)"
 
-#: baobab/data/baobab-main-window.ui:101 logview/src/logview-window.c:823
-#: mate-dictionary/src/gdict-window.c:1258
+#: baobab/data/baobab-main-window.ui:101
 msgid "_View"
 msgstr "ਵੇਖੋ(_V)"
 
@@ -110,8 +106,7 @@ msgstr "ਹਾਲਤ-ਪੱਟੀ(_A)"
 msgid "All_ocated Space"
 msgstr "ਜਾਰੀ ਥਾਂ(_o)"
 
-#: baobab/data/baobab-main-window.ui:136 logview/src/logview-window.c:851
-#: mate-dictionary/src/gdict-window.c:1310
+#: baobab/data/baobab-main-window.ui:136
 msgid "_Contents"
 msgstr "ਸਮੱਗਰੀ(_C)"
 
@@ -381,90 +376,90 @@ msgstr "ਕੁੱਲ ਸਾਈਜ਼"
 msgid "Available"
 msgstr "ਉਪਲੱਬਧ"
 
-#: baobab/src/baobab-remote-connect-dialog.c:68
+#: baobab/src/baobab-remote-connect-dialog.c:71
 #, c-format
 msgid "Cannot scan location \"%s\""
 msgstr "ਟਿਕਾਣਾ \"%s\" ਸਕੈਨ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ"
 
-#: baobab/src/baobab-remote-connect-dialog.c:166
+#: baobab/src/baobab-remote-connect-dialog.c:160
 msgid "Custom Location"
 msgstr "ਪਸੰਦੀਦਾ ਟਿਕਾਣਾ"
 
-#: baobab/src/baobab-remote-connect-dialog.c:168
+#: baobab/src/baobab-remote-connect-dialog.c:162
 msgid "SSH"
 msgstr "SSH"
 
-#: baobab/src/baobab-remote-connect-dialog.c:171
+#: baobab/src/baobab-remote-connect-dialog.c:165
 msgid "Public FTP"
 msgstr "ਪਬਲਿਕ FTP"
 
-#: baobab/src/baobab-remote-connect-dialog.c:173
+#: baobab/src/baobab-remote-connect-dialog.c:167
 msgid "FTP (with login)"
 msgstr "FTP (ਲਾਗਇਨ ਸਮੇਤ)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:176
+#: baobab/src/baobab-remote-connect-dialog.c:170
 msgid "Windows share"
 msgstr "Windows ਸਾਂਝ"
 
-#: baobab/src/baobab-remote-connect-dialog.c:178
+#: baobab/src/baobab-remote-connect-dialog.c:172
 msgid "WebDAV (HTTP)"
 msgstr "WebDAV (HTTP)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:180
+#: baobab/src/baobab-remote-connect-dialog.c:174
 msgid "Secure WebDAV (HTTPS)"
 msgstr "ਸੁਰੱਖਿਅਤ WebDAV (HTTPS)"
 
-#: baobab/src/baobab-remote-connect-dialog.c:240
+#: baobab/src/baobab-remote-connect-dialog.c:234
 msgid "Cannot Connect to Server. You must enter a name for the server."
 msgstr ""
 "ਸਰਵਰ ਨਾਲ ਕੁਨੈਕਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ। ਤੁਹਾਨੂੰ ਸਰਵਰ ਲਈ ਇੱਕ ਨਾਂ ਦੇਣਾ ਪਵੇਗਾ।"
 
-#: baobab/src/baobab-remote-connect-dialog.c:243
+#: baobab/src/baobab-remote-connect-dialog.c:237
 msgid "Please enter a name and try again."
 msgstr "ਇੱਕ ਨਾਂ ਦੇ ਕੇ ਮੁੜ-ਕੋਸ਼ਿਸ਼ ਕਰੋ ਜੀ।"
 
-#: baobab/src/baobab-remote-connect-dialog.c:437
+#: baobab/src/baobab-remote-connect-dialog.c:431
 msgid "_Location (URI):"
 msgstr "ਟਿਕਾਣਾ(_L) (URI):"
 
-#: baobab/src/baobab-remote-connect-dialog.c:453
+#: baobab/src/baobab-remote-connect-dialog.c:447
 msgid "_Server:"
 msgstr "ਸਰਵਰ(_S):"
 
-#: baobab/src/baobab-remote-connect-dialog.c:466
+#: baobab/src/baobab-remote-connect-dialog.c:460
 msgid "Optional information:"
 msgstr "ਚੋਣਵੀਂ ਜਾਣਕਾਰੀ:"
 
-#: baobab/src/baobab-remote-connect-dialog.c:475
+#: baobab/src/baobab-remote-connect-dialog.c:469
 msgid "_Share:"
 msgstr "ਸਾਂਝ(_S):"
 
-#: baobab/src/baobab-remote-connect-dialog.c:490
+#: baobab/src/baobab-remote-connect-dialog.c:484
 #: mate-dictionary/data/mate-dictionary-source.ui:121
 msgid "_Port:"
 msgstr "ਪੋਰਟ(_P):"
 
-#: baobab/src/baobab-remote-connect-dialog.c:504
+#: baobab/src/baobab-remote-connect-dialog.c:498
 msgid "_Folder:"
 msgstr "ਫੋਲਡਰ(_F):"
 
-#: baobab/src/baobab-remote-connect-dialog.c:518
+#: baobab/src/baobab-remote-connect-dialog.c:512
 msgid "_User Name:"
 msgstr "ਯੂਜ਼ਰ ਨਾਂ(_U):"
 
-#: baobab/src/baobab-remote-connect-dialog.c:533
+#: baobab/src/baobab-remote-connect-dialog.c:527
 msgid "_Domain Name:"
 msgstr "ਡੋਮੇਨ ਨਾਂ(_D):"
 
-#: baobab/src/baobab-remote-connect-dialog.c:590
+#: baobab/src/baobab-remote-connect-dialog.c:584
 msgid "Connect to Server"
 msgstr "ਸਰਵਰ ਨਾਲ ਕੁਨੈਕਟ"
 
-#: baobab/src/baobab-remote-connect-dialog.c:606
+#: baobab/src/baobab-remote-connect-dialog.c:600
 msgid "Service _type:"
 msgstr "ਸਰਵਿਸ ਕਿਸਮ(_t):"
 
-#: baobab/src/baobab-remote-connect-dialog.c:722
+#: baobab/src/baobab-remote-connect-dialog.c:716
 msgid "_Scan"
 msgstr "ਜਾਂਚ(_S)"
 
@@ -484,7 +479,7 @@ msgstr ""
 msgid "_Rescan"
 msgstr "ਮੁੜ-ਜਾਂਚ(_R)"
 
-#: baobab/src/baobab-treeview.c:222 gsearchtool/src/gsearchtool.c:2447
+#: baobab/src/baobab-treeview.c:222 gsearchtool/src/gsearchtool.c:2446
 msgid "Folder"
 msgstr "ਫੋਲਡਰ"
 
@@ -492,7 +487,7 @@ msgstr "ਫੋਲਡਰ"
 msgid "Usage"
 msgstr "ਵਰਤੋਂ"
 
-#: baobab/src/baobab-treeview.c:258 gsearchtool/src/gsearchtool.c:2460
+#: baobab/src/baobab-treeview.c:258 gsearchtool/src/gsearchtool.c:2459
 msgid "Size"
 msgstr "ਅਕਾਰ"
 
@@ -889,249 +884,249 @@ msgstr ""
 "ਇਹ ਕੁੰਜੀ ਇਹ ਨਿਰਧਾਰਤ ਕਰਦੀ ਹੈ ਕਿ ਖੋਜ ਟੂਲ ਸ਼ੁਰੂ ਹੋਣ ਸਮੇਂ \"ਹੋਰ ਫਾਇਲ ਸਿਸਟਮ ਅੱਡ "
 "ਰੱਖੋ\" ਖੋਜ ਚੋਣ ਚੁਣੀ ਹੋਵੇ ਜਾਂ ਨਾ।"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:168
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:169
 msgid "File is not a valid .desktop file"
 msgstr "ਫਾਇਲ ਇੱਕ ਢੁੱਕਵੀਂ .desktop ਫਾਇਲ ਨਹੀਂ ਹੈ"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:193
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:194
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
 msgstr "ਬੇਪਛਾਣ ਡੈਸਕਟਾਪ ਫਾਇਲ ਵਰਜਨ '%s'"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:975
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:984
 #, c-format
 msgid "Starting %s"
 msgstr "%s ਸ਼ੁਰੂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1117
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1126
 msgid "Application does not accept documents on command line"
 msgstr "ਐਪਲੀਕੇਸ਼ਨ ਕਮਾਂਡ ਲਾਈਨ ਉੱਤੇ ਡੌਕੂਮੈਂਟ ਮਨਜ਼ੂਰ ਨਹੀਂ ਕਰਦੀ ਹੈ"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1185
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1194
 #, c-format
 msgid "Unrecognized launch option: %d"
 msgstr "ਬੇਪਛਾਣ ਚਲਾਉਣ ਚੋਣ: %d"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1401
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1410
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 msgstr "ਡੌਕੂਮੈਂਟ URIs  'Type=Link' ਡੈਸਕਟਾਪ ਐਂਟਰੀ ਨੂੰ ਦਿੱਤਾ ਨਹੀਂ ਜਾ ਸਕਦਾ"
 
-#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1422
+#: gsearchtool/mate-submodules/libegg/eggdesktopfile.c:1431
 msgid "Not a launchable item"
 msgstr "ਚਲਾਉਣਯੋਗ ਆਈਟਮ ਨਹੀਂ"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:233
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:234
 msgid "Disable connection to session manager"
 msgstr "ਸ਼ੈਸ਼ਨ ਮੈਨੇਜਰ ਨਾਲ ਕੁਨੈਕਸ਼ਨ ਬੰਦ ਕਰੋ"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:238
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:239
 msgid "Specify file containing saved configuration"
 msgstr "ਸੰਭਾਲੀ ਸੰਰਚਨਾ ਦੇਣ ਵਾਲੀ ਫਾਇਲ ਦਿਓ"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:238
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:239
 msgid "FILE"
 msgstr "ਫਾਇਲ"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:243
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:244
 msgid "Specify session management ID"
 msgstr "ਸ਼ੈਸ਼ਨ ਪਰਬੰਧ ID ਦਿਓ"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:243
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:244
 msgid "ID"
 msgstr "ID"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:269
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:270
 msgid "Session management options:"
 msgstr "ਸ਼ੈਸ਼ਨ ਪਰਬੰਧ ਚੋਣਾਂ:"
 
-#: gsearchtool/mate-submodules/libegg/eggsmclient.c:270
+#: gsearchtool/mate-submodules/libegg/eggsmclient.c:271
 msgid "Show session management options"
 msgstr "ਸ਼ੈਸ਼ਨ ਪਰਬੰਧ ਚੋਣਾਂ ਵੇਖੋ"
 
-#: gsearchtool/src/gsearchtool.c:82
+#: gsearchtool/src/gsearchtool.c:81
 msgid "Contains the _text"
 msgstr "ਪਾਠ ਰੱਖਦਾ ਹੈ(_t)"
 
-#: gsearchtool/src/gsearchtool.c:84
+#: gsearchtool/src/gsearchtool.c:83
 msgid "_Date modified less than"
 msgstr "ਸੋਧ ਮਿਤੀ ਤੋਂ ਘੱਟ (ਦਿਨ)(_D)"
 
-#: gsearchtool/src/gsearchtool.c:84 gsearchtool/src/gsearchtool.c:85
+#: gsearchtool/src/gsearchtool.c:83 gsearchtool/src/gsearchtool.c:84
 msgid "days"
 msgstr "ਦਿਨ"
 
-#: gsearchtool/src/gsearchtool.c:85
+#: gsearchtool/src/gsearchtool.c:84
 msgid "Date modified more than"
 msgstr "ਸੋਧ ਮਿਤੀ ਤੋਂ ਜਿਆਦਾ"
 
-#: gsearchtool/src/gsearchtool.c:87
+#: gsearchtool/src/gsearchtool.c:86
 msgid "S_ize at least"
 msgstr "ਅਕਾਰ ਘੱਟੋ-ਘੱਟ(_i)"
 
-#: gsearchtool/src/gsearchtool.c:87 gsearchtool/src/gsearchtool.c:88
+#: gsearchtool/src/gsearchtool.c:86 gsearchtool/src/gsearchtool.c:87
 msgid "kilobytes"
 msgstr "ਕਿਲੋਬਾਈਟ"
 
-#: gsearchtool/src/gsearchtool.c:88
+#: gsearchtool/src/gsearchtool.c:87
 msgid "Si_ze at most"
 msgstr "ਅਕਾਰ ਅਧਿਕਤਮ(_z)"
 
-#: gsearchtool/src/gsearchtool.c:89
+#: gsearchtool/src/gsearchtool.c:88
 msgid "File is empty"
 msgstr "ਫਾਇਲ ਖਾਲੀ ਹੈ"
 
-#: gsearchtool/src/gsearchtool.c:91
+#: gsearchtool/src/gsearchtool.c:90
 msgid "Owned by _user"
 msgstr "ਯੂਜ਼ਰ ਰੱਖਦਾ ਹੈ(_u)"
 
-#: gsearchtool/src/gsearchtool.c:92
+#: gsearchtool/src/gsearchtool.c:91
 msgid "Owned by _group"
 msgstr "ਗਰੁੱਪ ਰੱਖਦਾ ਹੈ(_g)"
 
-#: gsearchtool/src/gsearchtool.c:93
+#: gsearchtool/src/gsearchtool.c:92
 msgid "Owner is unrecognized"
 msgstr "ਮਾਲਕ ਪਛਾਣ-ਰਹਿਤ ਹੈ"
 
-#: gsearchtool/src/gsearchtool.c:95
+#: gsearchtool/src/gsearchtool.c:94
 msgid "Na_me does not contain"
 msgstr "ਨਾਂ ਨਹੀ ਰੱਖਦਾ ਹੈ(_m)"
 
-#: gsearchtool/src/gsearchtool.c:96
+#: gsearchtool/src/gsearchtool.c:95
 msgid "Name matches regular e_xpression"
 msgstr "ਨਾਂ ਨਿਰੰਤਰ ਸਮੀਕਰਨ ਨਾਲ ਮਿਲਦਾ ਹੈ(_x)"
 
-#: gsearchtool/src/gsearchtool.c:98
+#: gsearchtool/src/gsearchtool.c:97
 msgid "Show hidden and backup files"
 msgstr "ਲੁਕਵੀਆਂ ਅਤੇ ਬੈਕਅੱਪ ਫਾਇਲਾਂ ਵੇਖੋ"
 
-#: gsearchtool/src/gsearchtool.c:99
+#: gsearchtool/src/gsearchtool.c:98
 msgid "Follow symbolic links"
 msgstr "ਨਿਸ਼ਾਨ ਸਬੰਧ ਦਾ ਪਿੱਛਾ ਕਰੋ"
 
-#: gsearchtool/src/gsearchtool.c:100
+#: gsearchtool/src/gsearchtool.c:99
 msgid "Exclude other filesystems"
 msgstr "ਹੋਰ ਫਾਇਲ-ਸਿਸਟਮ ਅੱਡ ਰੱਖੋ"
 
-#: gsearchtool/src/gsearchtool.c:158
+#: gsearchtool/src/gsearchtool.c:157
 msgid "Show version of the application"
 msgstr "ਕਾਰਜ ਦਾ ਵਰਜਨ ਵੇਖੋ"
 
-#: gsearchtool/src/gsearchtool.c:159 gsearchtool/src/gsearchtool.c:164
-#: gsearchtool/src/gsearchtool.c:173
+#: gsearchtool/src/gsearchtool.c:158 gsearchtool/src/gsearchtool.c:163
+#: gsearchtool/src/gsearchtool.c:172
 msgid "STRING"
 msgstr "ਲਾਈਨ"
 
-#: gsearchtool/src/gsearchtool.c:160
+#: gsearchtool/src/gsearchtool.c:159
 msgid "PATH"
 msgstr "ਮਾਰਗ"
 
-#: gsearchtool/src/gsearchtool.c:161
+#: gsearchtool/src/gsearchtool.c:160
 msgid "VALUE"
 msgstr "ਮੁੱਲ"
 
-#: gsearchtool/src/gsearchtool.c:165 gsearchtool/src/gsearchtool.c:166
+#: gsearchtool/src/gsearchtool.c:164 gsearchtool/src/gsearchtool.c:165
 msgid "DAYS"
 msgstr "ਦਿਨ"
 
-#: gsearchtool/src/gsearchtool.c:167 gsearchtool/src/gsearchtool.c:168
+#: gsearchtool/src/gsearchtool.c:166 gsearchtool/src/gsearchtool.c:167
 msgid "KILOBYTES"
 msgstr "ਕਿਲੋਬਾਈਟ"
 
-#: gsearchtool/src/gsearchtool.c:170
+#: gsearchtool/src/gsearchtool.c:169
 msgid "USER"
 msgstr "ਯੂਜ਼ਰ"
 
-#: gsearchtool/src/gsearchtool.c:171
+#: gsearchtool/src/gsearchtool.c:170
 msgid "GROUP"
 msgstr "ਗਰੁੱਪ"
 
-#: gsearchtool/src/gsearchtool.c:174
+#: gsearchtool/src/gsearchtool.c:173
 msgid "PATTERN"
 msgstr "ਪੈਟਰਨ"
 
-#: gsearchtool/src/gsearchtool.c:385
+#: gsearchtool/src/gsearchtool.c:384
 msgid "A locate database has probably not been created."
 msgstr "ਟਿਕਾਣਾ ਡਾਟਾਬੇਸ ਠੀਕ ਤਰਾਂ ਬਣਾਇਆ ਨਹੀਂ ਗਿਆ ਹੈ।"
 
-#: gsearchtool/src/gsearchtool.c:487
+#: gsearchtool/src/gsearchtool.c:486
 #, c-format
 msgid "Character set conversion failed for \"%s\""
 msgstr "\"%s\" ਲਈ ਅੱਖਰ ਸਮੂਹ ਸੰਚਾਰ ਅਸਫਲ"
 
-#: gsearchtool/src/gsearchtool.c:511
+#: gsearchtool/src/gsearchtool.c:510
 msgid "Searching..."
 msgstr "ਖੋਜ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ..."
 
-#: gsearchtool/src/gsearchtool.c:511 gsearchtool/src/gsearchtool.c:1048
-#: gsearchtool/src/gsearchtool.c:3077
+#: gsearchtool/src/gsearchtool.c:510 gsearchtool/src/gsearchtool.c:1047
+#: gsearchtool/src/gsearchtool.c:3043
 msgid "Search for Files"
 msgstr "ਫਾਇਲਾਂ ਦੀ ਖੋਜ"
 
-#: gsearchtool/src/gsearchtool.c:994 gsearchtool/src/gsearchtool.c:1023
+#: gsearchtool/src/gsearchtool.c:993 gsearchtool/src/gsearchtool.c:1022
 msgid "No files found"
 msgstr "ਕੋਈ ਫਾਇਲ ਨਹੀ ਲੱਭੀ"
 
-#: gsearchtool/src/gsearchtool.c:1016
+#: gsearchtool/src/gsearchtool.c:1015
 msgid "(stopped)"
 msgstr "(ਰੋਕਿਆ)"
 
-#: gsearchtool/src/gsearchtool.c:1022
+#: gsearchtool/src/gsearchtool.c:1021
 msgid "No Files Found"
 msgstr "ਕੋਈ ਫਾਇਲ ਨਹੀ ਲੱਭੀ"
 
-#: gsearchtool/src/gsearchtool.c:1027
+#: gsearchtool/src/gsearchtool.c:1026
 #, c-format
 msgid "%'d File Found"
 msgid_plural "%'d Files Found"
 msgstr[0] ""
 msgstr[1] ""
 
-#: gsearchtool/src/gsearchtool.c:1031 gsearchtool/src/gsearchtool.c:1069
+#: gsearchtool/src/gsearchtool.c:1030 gsearchtool/src/gsearchtool.c:1068
 #, c-format
 msgid "%'d file found"
 msgid_plural "%'d files found"
 msgstr[0] ""
 msgstr[1] ""
 
-#: gsearchtool/src/gsearchtool.c:1160
+#: gsearchtool/src/gsearchtool.c:1159
 msgid "Entry changed called for a non entry option!"
 msgstr "ਨਾ -ਇੰਦਰਾਜ਼ ਚੋਣ ਲਈ ਇੰਦਰਾਜ਼ ਤਬਦੀਲੀ ਕਰੋ!"
 
-#: gsearchtool/src/gsearchtool.c:1325
+#: gsearchtool/src/gsearchtool.c:1324
 msgid "Set the text of \"Name contains\" search option"
 msgstr "\"ਨਾਂ ਰੱਖਦਾ ਹੈ\" ਖੋਜ ਚੋਣ ਲਈ ਪਾਠ ਨਿਰਧਾਰਨ"
 
-#: gsearchtool/src/gsearchtool.c:1326
+#: gsearchtool/src/gsearchtool.c:1325
 msgid "Set the text of \"Look in folder\" search option"
 msgstr "\"ਫੋਲਡਰ ਵਿੱਚ ਵੇਖੋ\" ਖੋਜ ਚੋਣ ਲਈ ਪਾਠ ਨਿਰਧਾਰਨ"
 
-#: gsearchtool/src/gsearchtool.c:1327
+#: gsearchtool/src/gsearchtool.c:1326
 msgid "Sort files by one of the following: name, folder, size, type, or date"
 msgstr "ਫਾਇਲ ਨੂੰ ਇੱਕ ਢੰਗ ਨਾਲ ਨਿਰਧਾਰਿਤ ਕਰੋ: ਨਾਂ, ਫੋਲਡਰ, ਅਕਾਰ, ਕਿਸਮ, ਜਾਂ ਮਿਤੀ"
 
-#: gsearchtool/src/gsearchtool.c:1328
+#: gsearchtool/src/gsearchtool.c:1327
 msgid "Set sort order to descending, the default is ascending"
 msgstr "ਕਰਮ ਨੂੰ ਘੱਟਦੇ ਕਰਮ ਅਨੁਸਾਰ ਨਿਰਧਾਰਿਤ ਕਰੋ, ਮੂਲ ਵੱਧਦੇ ਕਰਮ ਅਨੁਸਾਰ ਹੈ।"
 
-#: gsearchtool/src/gsearchtool.c:1329
+#: gsearchtool/src/gsearchtool.c:1328
 msgid "Automatically start a search"
 msgstr "ਆਟੋਮੈਟਿਕ ਹੀ ਖੋਜ ਚਾਲੂ ਕਰੋ"
 
-#: gsearchtool/src/gsearchtool.c:1335
+#: gsearchtool/src/gsearchtool.c:1334
 #, c-format
 msgid "Select the \"%s\" search option"
 msgstr "\"%s\" ਖੋਜ ਚੋਣ ਚੁਣੋ"
 
-#: gsearchtool/src/gsearchtool.c:1338
+#: gsearchtool/src/gsearchtool.c:1337
 #, c-format
 msgid "Select and set the \"%s\" search option"
 msgstr "\"%s\" ਖੋਜ ਚੋਣ ਚੁਣੋ ਅਤੇ ਨਿਰਧਾਰਤ ਕਰੋ"
 
-#: gsearchtool/src/gsearchtool.c:1445
+#: gsearchtool/src/gsearchtool.c:1444
 msgid "Invalid option passed to sortby command line argument."
 msgstr "ਕਰਮ ਅਨੁਸਾਰ ਕਮਾਂਡ ਲਾਈਨ ਲਈ ਗਲਤ ਚੋਣ ਆਰਗੂਮੈਂਟ ਦਿੱਤਾ ਗਿਆ ਹੈ।"
 
-#: gsearchtool/src/gsearchtool.c:1737
+#: gsearchtool/src/gsearchtool.c:1736
 msgid ""
 "\n"
 "... Too many errors to display ..."
@@ -1139,17 +1134,17 @@ msgstr ""
 "\n"
 "... ਵੇਖਾਉਣ ਲਈ ਗਲਤੀਆਂ ਬਹੁਤ ਜਿਆਦਾ ਹਨ ..."
 
-#: gsearchtool/src/gsearchtool.c:1751
+#: gsearchtool/src/gsearchtool.c:1750
 msgid ""
 "The search results may be invalid.  There were errors while performing this "
 "search."
 msgstr "ਖੋਜ ਨਤੀਜੇ ਗਲਤ ਵੀ ਹੋ ਸਕਦੇ ਹਨ। ਇਹ ਖੋਜ ਕਰਨ ਦੌਰਾਨ ਇਹ ਗਲਤੀਆਂ ਆਈਆਂ ਹਨ।"
 
-#: gsearchtool/src/gsearchtool.c:1763 gsearchtool/src/gsearchtool.c:1807
+#: gsearchtool/src/gsearchtool.c:1762 gsearchtool/src/gsearchtool.c:1806
 msgid "Show more _details"
 msgstr "ਹੋਰ ਚੋਣ ਵੇਖੋ(_d)"
 
-#: gsearchtool/src/gsearchtool.c:1793
+#: gsearchtool/src/gsearchtool.c:1792
 msgid ""
 "The search results may be out of date or invalid.  Do you want to disable "
 "the quick search feature?"
@@ -1157,152 +1152,152 @@ msgstr ""
 "ਖੋਜ ਨਤੀਜੇ ਪੁਰਾਣੇ ਜਾਂ ਗਲਤ ਵੀ ਹੋ ਸਕਦੇ ਹਨ, ਕੀ ਤੁਸੀਂ ਤੇਜ਼ ਖੋਜ ਫੀਚਰ ਨੂੰ ਆਯੋਗ ਕਰਨਾ "
 "ਚਾਹੋਗੇ?"
 
-#: gsearchtool/src/gsearchtool.c:1818
+#: gsearchtool/src/gsearchtool.c:1817
 msgid "Disable _Quick Search"
 msgstr "ਤੇਜ਼ ਖੋਜ ਆਯੋਗ ਕਰੋ(_Q)"
 
-#: gsearchtool/src/gsearchtool.c:1845
+#: gsearchtool/src/gsearchtool.c:1844
 #, c-format
 msgid "Failed to set process group id of child %d: %s.\n"
 msgstr "%d ਚਲਾਇਡ ਦਾ ਪਰੋਗਰੈੱਸ ਗਰੁੱਪ id ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ ਅਸਫਲ: %s\n"
 
-#: gsearchtool/src/gsearchtool.c:1870
+#: gsearchtool/src/gsearchtool.c:1869
 msgid "Error parsing the search command."
 msgstr "ਗਲਤੀ ਖੋਜ ਕਮਾਂਡ ਨੂੰ ਪਾਰਸ ਕਰਨ ਦੌਰਾਨ ਹੈ।"
 
-#: gsearchtool/src/gsearchtool.c:1902
+#: gsearchtool/src/gsearchtool.c:1901
 msgid "Error running the search command."
 msgstr "ਗਲਤੀ ਖੋਜ ਕਮਾਂਡ ਨੂੰ ਚਲਾਉਣ ਦੌਰਾਨ ਹੈ।"
 
-#: gsearchtool/src/gsearchtool.c:2025
+#: gsearchtool/src/gsearchtool.c:2024
 #, c-format
 msgid "Enter a text value for the \"%s\" search option."
 msgstr "\"%s\" ਖੋਜ ਚੋਣ ਲਈ ਪਾਠ ਮੁੱਲ਼ ਦਿਓ।"
 
 #. Translators:  Below is a string displaying the search options name
 #. and unit value.  For example, "\"Date modified less than\" in days".
-#: gsearchtool/src/gsearchtool.c:2030
+#: gsearchtool/src/gsearchtool.c:2029
 #, c-format
 msgid "\"%s\" in %s"
 msgstr "\"%s\", %s ਵਿੱਚ"
 
-#: gsearchtool/src/gsearchtool.c:2032
+#: gsearchtool/src/gsearchtool.c:2031
 #, c-format
 msgid "Enter a value in %s for the \"%s\" search option."
 msgstr "%s ਲਈ ਮੁੱਲ \"%s\" ਖੋਜ ਚੋਣ ਲਈ ਦਿਓ।"
 
-#: gsearchtool/src/gsearchtool.c:2096
+#: gsearchtool/src/gsearchtool.c:2095
 #, c-format
 msgid "Remove \"%s\""
 msgstr "\"%s\" ਹਟਾਓ"
 
-#: gsearchtool/src/gsearchtool.c:2097
+#: gsearchtool/src/gsearchtool.c:2096
 #, c-format
 msgid "Click to remove the \"%s\" search option."
 msgstr "\"%s\" ਖੋਜ ਚੋਣ ਹਟਾਉਣ ਲਈ ਦਬਾਓ।"
 
-#: gsearchtool/src/gsearchtool.c:2190
+#: gsearchtool/src/gsearchtool.c:2189
 msgid "A_vailable options:"
 msgstr "ਉਪਲੱਬਧ ਚੋਣ(_v):"
 
-#: gsearchtool/src/gsearchtool.c:2219
+#: gsearchtool/src/gsearchtool.c:2218
 msgid "Available options"
 msgstr "ਉਪਲੱਬਧ ਚੋਣ"
 
-#: gsearchtool/src/gsearchtool.c:2220
+#: gsearchtool/src/gsearchtool.c:2219
 msgid "Select a search option from the drop-down list."
 msgstr "ਲਟਕਦੀ ਸੂਚੀ ਤੋਂ ਖੋਜ ਚੋਣ ਚੁਣੋ।"
 
-#: gsearchtool/src/gsearchtool.c:2238
+#: gsearchtool/src/gsearchtool.c:2237
 msgid "Add search option"
 msgstr "ਖੋਜ ਚੋਣ ਸ਼ਾਮਲ"
 
-#: gsearchtool/src/gsearchtool.c:2239
+#: gsearchtool/src/gsearchtool.c:2238
 msgid "Click to add the selected available search option."
 msgstr "ਚੁਣੀ ਉਪਲੱਬਧ ਖੋਜ ਚੋਣ ਸ਼ਾਮਲ ਕਰਨ ਲਈ ਦਬਾਓ।"
 
-#: gsearchtool/src/gsearchtool.c:2328
+#: gsearchtool/src/gsearchtool.c:2327
 msgid "S_earch results:"
 msgstr "ਖੋਜ ਨਤੀਜੇ(_e):"
 
-#: gsearchtool/src/gsearchtool.c:2371
+#: gsearchtool/src/gsearchtool.c:2370
 msgid "List View"
 msgstr "ਲਿਸਟ ਝਲਕ"
 
-#: gsearchtool/src/gsearchtool.c:2423
+#: gsearchtool/src/gsearchtool.c:2422
 #: mate-dictionary/libgdict/gdict-source.c:240
 msgid "Name"
 msgstr "ਨਾਂ"
 
-#: gsearchtool/src/gsearchtool.c:2472
+#: gsearchtool/src/gsearchtool.c:2471
 msgid "Type"
 msgstr "ਟਾਈਪ"
 
-#: gsearchtool/src/gsearchtool.c:2484
+#: gsearchtool/src/gsearchtool.c:2483
 msgid "Date Modified"
 msgstr "ਸੋਧ ਤਾਰੀਖ"
 
-#: gsearchtool/src/gsearchtool.c:2813
+#: gsearchtool/src/gsearchtool.c:2779
 msgid "_Name contains:"
 msgstr "ਨਾਂ ਰੱਖਦਾ ਹੈ(_N):"
 
-#: gsearchtool/src/gsearchtool.c:2828 gsearchtool/src/gsearchtool.c:2829
+#: gsearchtool/src/gsearchtool.c:2794 gsearchtool/src/gsearchtool.c:2795
 msgid "Enter a filename or partial filename with or without wildcards."
 msgstr "ਫਾਇਲ ਨਾਂ ਜਾਂ ਵਾਇਲਡ ਕਾਰਜ ਸਮੇਤ ਜਾਂ ਬਿਨਾਂ ਅਧੂਰਾ ਫਾਇਲ ਨਾਂ ਦਿਓ।"
 
-#: gsearchtool/src/gsearchtool.c:2829
+#: gsearchtool/src/gsearchtool.c:2795
 msgid "Name contains"
 msgstr "ਨਾਂ ਰੱਖਦਾ ਹੈ"
 
-#: gsearchtool/src/gsearchtool.c:2835
+#: gsearchtool/src/gsearchtool.c:2801
 msgid "_Look in folder:"
 msgstr "ਫੋਲਡਰ ਵਿੱਚ ਵੇਖੋ(_L):"
 
-#: gsearchtool/src/gsearchtool.c:2841
+#: gsearchtool/src/gsearchtool.c:2807
 msgid "Browse"
 msgstr "ਝਲਕ"
 
-#: gsearchtool/src/gsearchtool.c:2851
+#: gsearchtool/src/gsearchtool.c:2817
 msgid "Look in folder"
 msgstr "ਫੋਲਡਰ ਵਿੱਚ ਵੇਖੋ"
 
-#: gsearchtool/src/gsearchtool.c:2851
+#: gsearchtool/src/gsearchtool.c:2817
 msgid "Select the folder or device from which you want to begin the search."
 msgstr "ਫੋਲਡਰ ਜਾਂ ਜੰਤਰ ਦਾ ਨਾਂ ਦਿਉ, ਜਿਥੋ ਕਿ ਤੁਸੀ ਖੋਜ ਸ਼ੁਰੂ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ।"
 
-#: gsearchtool/src/gsearchtool.c:2869
+#: gsearchtool/src/gsearchtool.c:2835
 msgid "Select more _options"
 msgstr "ਹੋਰ ਚੋਣ ਵੇਖੋ(_o)"
 
-#: gsearchtool/src/gsearchtool.c:2879
+#: gsearchtool/src/gsearchtool.c:2845
 msgid "Select more options"
 msgstr "ਹੋਰ ਚੋਣ ਵੇਖੋ"
 
-#: gsearchtool/src/gsearchtool.c:2879
+#: gsearchtool/src/gsearchtool.c:2845
 msgid "Click to expand or collapse the list of available options."
 msgstr "ਉਪਲੱਬਧ ਚੋਣਾਂ ਦੀ ਸੂਚੀ ਨੂੰ ਫੈਲਾਉਣ ਜਾਂ ਸਮੇਟਣ ਲ਼ਈ ਦਬਾਓ।"
 
-#: gsearchtool/src/gsearchtool.c:2910
+#: gsearchtool/src/gsearchtool.c:2876
 msgid "Click to display the help manual."
 msgstr "ਮੱਦਦ ਡੌਕੂਮੈਂਟ ਨੂੰ ਖੋਲਣ ਲਈ ਦਬਾਓ।"
 
-#: gsearchtool/src/gsearchtool.c:2924
+#: gsearchtool/src/gsearchtool.c:2890
 msgid "Click to close \"Search for Files\"."
 msgstr "\"ਫਾਇਲਾਂ ਦੀ ਖੋਜ\" ਨੂੰ ਬੰਦ ਕਰਨ ਲਈ ਦਬਾਓ।"
 
-#: gsearchtool/src/gsearchtool.c:2962
+#: gsearchtool/src/gsearchtool.c:2928
 msgid "Click to perform a search."
 msgstr "ਖੋਜ ਕਰਨ ਲ਼ਈ ਦਬਾਓ।"
 
-#: gsearchtool/src/gsearchtool.c:2963
+#: gsearchtool/src/gsearchtool.c:2929
 msgid "Click to stop a search."
 msgstr "ਖੋਜ ਰੋਕਣ ਲਈ ਦਬਾਓ।"
 
-#: gsearchtool/src/gsearchtool.c:3060
+#: gsearchtool/src/gsearchtool.c:3026
 msgid "- the MATE Search Tool"
 msgstr "- ਗਨੋਮ ਖੋਜ ਟੂਲ"
 
-#: gsearchtool/src/gsearchtool.c:3071
+#: gsearchtool/src/gsearchtool.c:3037
 #, c-format
 msgid "Failed to parse command line arguments: %s\n"
 msgstr "ਕਮਾਂਡ ਲਾਈਨ ਆਰਗੂਮੈਂਟ ਪਾਰਸ ਕਰਨ ਲਈ ਫੇਲ੍ਹ: %s\n"
@@ -1723,23 +1718,23 @@ msgstr "ਅੱਗੇ ਲੱਭੋ"
 msgid "Find next occurrence of the search string"
 msgstr "ਖੋਜ ਸਤਰ ਦੀ ਅਗਲੀ ਮੌਜੂਦਗੀ ਦੀ ਖੋਜ ਕਰੋ"
 
-#: logview/src/logview-findbar.c:202
+#: logview/src/logview-findbar.c:203
 msgid "Clear the search string"
 msgstr "ਖੋਜ ਸਤਰ ਸਾਫ਼ ਕਰੋ"
 
-#: logview/src/logview-log.c:589
+#: logview/src/logview-log.c:585
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
 msgstr "GZip ਕੀਤੀ ਲਾਗ ਫਾਇਲ ਅਣ-ਕੰਪਰੈਸ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ। ਫਾਇਲ ਨਿਕਾਰਾ ਹੋ ਸਕਦੀ ਹੈ।"
 
-#: logview/src/logview-log.c:635
+#: logview/src/logview-log.c:631
 msgid "You don't have enough permissions to read the file."
 msgstr "ਤੁਹਾਨੂੰ ਫਾਇਲ ਪੜ੍ਹਨ ਲਈ ਲੋੜੀਦੇ ਅਧਿਕਾਰ ਨਹੀਂ ਹਨ।"
 
-#: logview/src/logview-log.c:650
+#: logview/src/logview-log.c:646
 msgid "The file is not a regular file or is not a text file."
 msgstr "ਫਾਇਲ ਰੈਗੂਲਰ ਫਾਇਲ ਨਹੀਂ ਜਾਂ ਇੱਕ ਟੈਕਸਟ ਫਾਇਲ ਨਹੀਂ ਹੈ।"
 
-#: logview/src/logview-log.c:743
+#: logview/src/logview-log.c:739
 msgid "This version of System Log does not support GZipped logs."
 msgstr "ਸਿਸਟਮ ਲਾਗ ਦਾ ਇਹ ਵਰਜਨ GZip ਕੀਤੇ ਲਾਗ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।"
 
@@ -1775,185 +1770,64 @@ msgstr " - ਝਲਕ ਅਤੇ ਨਿਗਰਾਨੀ ਲਾਗ"
 msgid "Log Viewer"
 msgstr "ਲਾਗ ਦਰਸ਼ਕ"
 
-#: logview/src/logview-window.c:41 logview/src/logview-window.c:771
+#: logview/src/logview-window.c:41 logview/src/logview-window.c:807
 msgid "System Log Viewer"
 msgstr "ਸਿਸਟਮ ਲਾਗ ਦਰਸ਼ਕ"
 
-#: logview/src/logview-window.c:216
+#: logview/src/logview-window.c:227
 #, c-format
 msgid "last update: %s"
 msgstr "ਆਖਰੀ ਅੱਪਡੇਟ: %s"
 
-#: logview/src/logview-window.c:220
+#: logview/src/logview-window.c:231
 #, c-format
 msgid "%d lines (%s) - %s"
 msgstr "%d ਲਾਈਨਾਂ (%s) - %s"
 
-#: logview/src/logview-window.c:325
+#: logview/src/logview-window.c:340
 msgid "Open Log"
 msgstr "ਲਾਗ ਖੋਲ੍ਹੋ"
 
-#: logview/src/logview-window.c:364
+#: logview/src/logview-window.c:385
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "ਮੱਦਦ ਵੇਖਾਉਣ ਵਿੱਚ ਗਲਤੀ: %s"
 
-#: logview/src/logview-window.c:478
+#: logview/src/logview-window.c:517
 msgid "Wrapped"
 msgstr "ਸਮੇਟਿਆ"
 
-#: logview/src/logview-window.c:493
+#: logview/src/logview-window.c:532
 #: mate-dictionary/libgdict/gdict-defbox.c:1127
 #: mate-dictionary/libgdict/gdict-defbox.c:1221
 #: mate-dictionary/libgdict/gdict-defbox.c:1255
 msgid "Not found"
 msgstr "ਨਹੀਂ ਲੱਭਿਆ"
 
-#: logview/src/logview-window.c:773
+#: logview/src/logview-window.c:809
 msgid "About System Log Viewer"
 msgstr ""
 
-#: logview/src/logview-window.c:774
+#: logview/src/logview-window.c:810
 msgid ""
 "Copyright © 1998-2008 Free Software Foundation, Inc.\n"
 "Copyright © 2011-2021 MATE developers"
 msgstr ""
 
-#: logview/src/logview-window.c:778
+#: logview/src/logview-window.c:814
 msgid "View, monitor or analyze your system logs in a gradual manner."
 msgstr ""
 
-#: logview/src/logview-window.c:821 mate-dictionary/src/gdict-window.c:1256
-msgid "_File"
-msgstr "ਫਾਇਲ(_F)"
-
-#: logview/src/logview-window.c:824
-msgid "_Filters"
-msgstr "ਫਿਲਟਰ(_F)"
-
-#: logview/src/logview-window.c:827
-msgid "_Open..."
-msgstr "ਖੋਲ੍ਹੋ(_O)..."
-
-#: logview/src/logview-window.c:827
-msgid "Open a log from file"
-msgstr "ਫਾਇਲ ਤੋਂ ਲਾਗ ਖੋਲ੍ਹੋ"
-
-#: logview/src/logview-window.c:829
-msgid "Close this log"
-msgstr "ਇਹ ਲਾਗ ਬੰਦ ਕਰੋ"
-
-#: logview/src/logview-window.c:831
-msgid "_Quit"
-msgstr "ਬਾਹਰ(_Q)"
-
-#: logview/src/logview-window.c:831
-msgid "Quit the log viewer"
-msgstr "ਲਾਗ ਦਰਸ਼ਕ ਤੋਂ ਬਾਹਰ"
-
-#: logview/src/logview-window.c:834 mate-dictionary/src/gdict-window.c:1275
-msgid "_Copy"
-msgstr "ਕਾਪੀ ਕਰੋ(_C)"
-
-#: logview/src/logview-window.c:834
-msgid "Copy the selection"
-msgstr "ਚੋਣ ਦੀ ਕਾਪੀ ਕਰੋ"
-
-#: logview/src/logview-window.c:836 mate-dictionary/src/gdict-window.c:1277
-msgid "Select _All"
-msgstr "ਸਭ ਚੁਣੋ(_A)"
-
-#: logview/src/logview-window.c:836
-msgid "Select the entire log"
-msgstr "ਪੂਰੇ ਲਾਗ ਵਿੱਚ ਖੋਜੋ"
-
-#: logview/src/logview-window.c:838
-msgid "_Find..."
-msgstr "ਖੋਜ(_F)..."
-
-#: logview/src/logview-window.c:838
-msgid "Find a word or phrase in the log"
-msgstr "ਲਾਗ ਵਿੱਚ ਇੱਕ ਸ਼ਬਦ ਜਾਂ ਪ੍ਹੈਰਾ ਲੱਭੋ"
-
-#: logview/src/logview-window.c:841
-msgid "Zoom _In"
-msgstr "ਜ਼ੂਮ ਇਨ(_I)"
-
-#: logview/src/logview-window.c:841
-msgid "Bigger text size"
-msgstr "ਵੱਡਾ ਪਾਠ ਅਕਾਰ"
-
-#: logview/src/logview-window.c:843
-msgid "Zoom _Out"
-msgstr "ਜ਼ੂਮ ਆਉਟ(_O)"
-
-#: logview/src/logview-window.c:843
-msgid "Smaller text size"
-msgstr "ਛੋਟਾ ਪਾਠ ਅਕਾਰ"
-
-#: logview/src/logview-window.c:845
-msgid "_Normal Size"
-msgstr "ਸਧਾਰਨ ਅਕਾਰ(_N)"
-
-#: logview/src/logview-window.c:845
-msgid "Normal text size"
-msgstr "ਸਧਾਰਨ ਪਾਠ ਅਕਾਰ"
-
-#: logview/src/logview-window.c:848
-msgid "Manage Filters"
-msgstr "ਫਿਲਟਰ ਪਰਬੰਧ"
-
-#: logview/src/logview-window.c:848
-msgid "Manage filters"
-msgstr "ਫਿਲਟਰ ਪਰਬੰਧ"
-
-#: logview/src/logview-window.c:851
-msgid "Open the help contents for the log viewer"
-msgstr "ਲਾਗ ਦਰਸ਼ਕ ਲਈ ਮੱਦਦ ਭਾਗ ਖੋਲ੍ਹੋ"
-
-#: logview/src/logview-window.c:853 mate-dictionary/src/gdict-applet.c:1175
-#: mate-dictionary/src/gdict-window.c:1312
-msgid "_About"
-msgstr "ਇਸ ਬਾਰੇ(_A)"
-
-#: logview/src/logview-window.c:853
-msgid "Show the about dialog for the log viewer"
-msgstr "ਲਾਗ ਦਰਸ਼ਕ ਬਾਰੇ ਡਾਈਲਾਗ ਵੇਖੋ"
-
-#: logview/src/logview-window.c:858
-msgid "_Statusbar"
-msgstr "ਹਾਲਤ-ਪੱਟੀ(_S)"
-
-#: logview/src/logview-window.c:858
-msgid "Show Status Bar"
-msgstr "ਹਾਲਤ-ਪੱਟੀ ਵੇਖੋ"
-
-#: logview/src/logview-window.c:860
-msgid "Side _Pane"
-msgstr "ਬਾਹੀ(_P)"
-
-#: logview/src/logview-window.c:860
-msgid "Show Side Pane"
-msgstr "ਬਾਹੀ ਵੇਖੋ"
-
-#: logview/src/logview-window.c:862
-msgid "Show matches only"
-msgstr "ਕੇਵਲ ਰਲਦੇ ਵੇਖੋ"
-
-#: logview/src/logview-window.c:862
-msgid "Only show lines that match one of the given filters"
-msgstr "ਕੇਵਲ ਲਾਈਨਾਂ ਵੇਖਾਓ, ਜਿੱਥੇ ਦਿੱਤੇ ਫਿਲਟਰਾਂ ਵਿੱਚੋਂ ਕੋਈ ਮਿਲਦਾ ਹੋਵੇ"
-
-#: logview/src/logview-window.c:994
+#: logview/src/logview-window.c:1042
 #, c-format
 msgid "Can't read from \"%s\""
 msgstr "\"%s\" ਤੋਂ ਪੜ੍ਹਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ"
 
-#: logview/src/logview-window.c:1419
+#: logview/src/logview-window.c:1462
 msgid "Version: "
 msgstr "ਵਰਜਨ : "
 
-#: logview/src/logview-window.c:1525
+#: logview/src/logview-window.c:1565
 msgid "Could not open the following files:"
 msgstr "ਹੇਠ ਦਿੱਤੀਆਂ ਫਾਇਲਾਂ ਖੋਲ੍ਹੀਆਂ ਨਹੀਂ ਜਾ ਸਕੀਆਂ:"
 
@@ -1992,19 +1866,19 @@ msgid ""
 "query."
 msgstr ""
 
-#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:5
+#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:6
 msgid "Dictionary Applet Factory"
 msgstr ""
 
-#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:6
+#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:7
 msgid "Factory for the dictionary applet"
 msgstr ""
 
-#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:9
+#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:10
 msgid "Dictionary Look up"
 msgstr "ਡਿਕਸ਼ਨਰੀ ਖੋਜ"
 
-#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:10
+#: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:11
 msgid "Look up words in a dictionary"
 msgstr "ਇੱਕ ਡਿਕਸ਼ਨਰੀ ਵਿੱਚ ਸ਼ਬਦ ਦੀ ਖੋਜ"
 
@@ -2414,7 +2288,7 @@ msgstr ""
 
 #: mate-dictionary/src/gdict-about.c:82 mate-dictionary/src/gdict-app.c:360
 #: mate-dictionary/src/gdict-window.c:578
-#: mate-dictionary/src/gdict-window.c:1862
+#: mate-dictionary/src/gdict-window.c:1954
 msgid "Dictionary"
 msgstr "ਡਿਕਸ਼ਨਰੀ"
 
@@ -2503,136 +2377,140 @@ msgstr "db"
 msgid " - Look up words in dictionaries"
 msgstr " - ਡਿਕਸ਼ਨਰੀਾਂ ਵਿੱਚ ਸ਼ਬਦਾਂ ਦੀ ਖੋਜ"
 
-#: mate-dictionary/src/gdict-applet.c:193
-#: mate-dictionary/src/gdict-window.c:933
+#: mate-dictionary/src/gdict-applet.c:207
+#: mate-dictionary/src/gdict-window.c:937
 msgid "Save a Copy"
 msgstr "ਕਾਪੀ ਸੰਭਾਲੋ"
 
-#: mate-dictionary/src/gdict-applet.c:203
-#: mate-dictionary/src/gdict-window.c:943
+#: mate-dictionary/src/gdict-applet.c:217
+#: mate-dictionary/src/gdict-window.c:947
 msgid "Untitled document"
 msgstr "ਬਿਨਾਂ-ਨਾਂ ਡੌਕੂਮੈਂਟ"
 
-#: mate-dictionary/src/gdict-applet.c:224
-#: mate-dictionary/src/gdict-window.c:964
+#: mate-dictionary/src/gdict-applet.c:238
+#: mate-dictionary/src/gdict-window.c:968
 #, c-format
 msgid "Error while writing to '%s'"
 msgstr "'%s' ਲਿਖਣ ਦੌਰਾਨ ਗਲਤੀ"
 
-#: mate-dictionary/src/gdict-applet.c:349
+#: mate-dictionary/src/gdict-applet.c:380
 msgid "Clear the definitions found"
 msgstr "ਲੱਭੀਆਂ ਪਰਿਭਾਸ਼ਾਵਾਂ ਸਾਫ਼ ਕਰੋ"
 
-#: mate-dictionary/src/gdict-applet.c:351
+#: mate-dictionary/src/gdict-applet.c:382
 msgid "Clear definition"
 msgstr "ਪਰਿਭਾਸ਼ਾ ਸਾਫ਼"
 
-#: mate-dictionary/src/gdict-applet.c:352
+#: mate-dictionary/src/gdict-applet.c:383
 msgid "Clear the text of the definition"
 msgstr "ਪਰਿਭਾਸ਼ਾ ਦਾ ਪਾਠ ਹਟਾਓ"
 
-#: mate-dictionary/src/gdict-applet.c:364
+#: mate-dictionary/src/gdict-applet.c:395
 msgid "Print the definitions found"
 msgstr "ਮਿਲੀ ਪ੍ਰੀਭਾਸ਼ਾ ਸਾਫ਼ ਕਰੋ"
 
-#: mate-dictionary/src/gdict-applet.c:366
+#: mate-dictionary/src/gdict-applet.c:397
 msgid "Print definition"
 msgstr "ਪਰਿਭਾਸ਼ਾ ਪਰਿੰਟ ਕਰੋ"
 
-#: mate-dictionary/src/gdict-applet.c:367
+#: mate-dictionary/src/gdict-applet.c:398
 msgid "Print the text of the definition"
 msgstr "ਪਰਿਭਾਸ਼ਾ ਦਾ ਪਾਠ ਪਰਿੰਟ ਕਰੋ"
 
-#: mate-dictionary/src/gdict-applet.c:379
+#: mate-dictionary/src/gdict-applet.c:410
 msgid "Save the definitions found"
 msgstr "ਲੱਭੀਆਂ ਪ੍ਰੀਭਾਸ਼ਾਵਾਂ ਸੰਭਾਲੋ"
 
-#: mate-dictionary/src/gdict-applet.c:381
+#: mate-dictionary/src/gdict-applet.c:412
 msgid "Save definition"
 msgstr "ਪਰਿਭਾਸ਼ਾ ਸੰਭਾਲੋ"
 
-#: mate-dictionary/src/gdict-applet.c:382
+#: mate-dictionary/src/gdict-applet.c:413
 msgid "Save the text of the definition to a file"
 msgstr "ਇੱਕ ਫਾਇਲ ਵਿੱਚ ਪਰਿਭਾਸ਼ਾ ਦਾ ਪਾਠ ਸੰਭਾਲੋ"
 
-#: mate-dictionary/src/gdict-applet.c:519
+#: mate-dictionary/src/gdict-applet.c:560
 msgid "Click to view the dictionary window"
 msgstr "ਡਿਕਸ਼ਨਰੀ ਝਰੋਖਾ ਵੇਖਣ ਲਈ ਦਬਾਓ"
 
-#: mate-dictionary/src/gdict-applet.c:521
+#: mate-dictionary/src/gdict-applet.c:562
 msgid "Toggle dictionary window"
 msgstr "ਡਿਕਸ਼ਨਰੀ ਵਿੰਡੋ ਬਦਲੋ"
 
-#: mate-dictionary/src/gdict-applet.c:522
+#: mate-dictionary/src/gdict-applet.c:563
 msgid "Show or hide the definition window"
 msgstr "ਪਰਿਭਾਸ਼ਾ ਵਿੰਡੋ ਵੇਖੋ ਜਾਂ ਓਹਲੇ"
 
-#: mate-dictionary/src/gdict-applet.c:573
+#: mate-dictionary/src/gdict-applet.c:625
 msgid "Type the word you want to look up"
 msgstr "ਸ਼ਬਦ, ਜਿਸ ਦੀ ਤੁਸੀਂ ਖੋਜ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ, ਲਿਖੋ"
 
-#: mate-dictionary/src/gdict-applet.c:575
+#: mate-dictionary/src/gdict-applet.c:627
 msgid "Dictionary entry"
 msgstr "ਡਿਕਸ਼ਨਰੀ ਐਂਟਰੀ"
 
-#: mate-dictionary/src/gdict-applet.c:576
+#: mate-dictionary/src/gdict-applet.c:628
 msgid "Look up words in dictionaries"
 msgstr "ਡਿਕਸ਼ਨਰੀਆਂ ਵਿੱਚ ਸ਼ਬਦਾਂ ਦੀ ਖੋਜ"
 
-#: mate-dictionary/src/gdict-applet.c:704
-#: mate-dictionary/src/gdict-window.c:1075
+#: mate-dictionary/src/gdict-applet.c:766
+#: mate-dictionary/src/gdict-window.c:1096
 msgid "Dictionary Preferences"
 msgstr "ਡਿਕਸ਼ਨਰੀ ਪਸੰਦ"
 
-#: mate-dictionary/src/gdict-applet.c:728
+#: mate-dictionary/src/gdict-applet.c:790
 #: mate-dictionary/src/gdict-pref-dialog.c:494
 #: mate-dictionary/src/gdict-source-dialog.c:476
-#: mate-dictionary/src/gdict-window.c:1222
+#: mate-dictionary/src/gdict-window.c:1297
 msgid "There was an error while displaying help"
 msgstr "ਮੱਦਦ ਵੇਖਾਉਣ ਲਈ ਗਲਤੀ ਆਈ ਸੀ"
 
-#: mate-dictionary/src/gdict-applet.c:867
+#: mate-dictionary/src/gdict-applet.c:929
 #: mate-dictionary/src/gdict-window.c:493
 #, c-format
 msgid "No dictionary source available with name '%s'"
 msgstr "ਨਾਂ '%s' ਨਾਲ ਕੋਈ ਡਿਕਸ਼ਨਰੀ ਸਰੋਤ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ"
 
-#: mate-dictionary/src/gdict-applet.c:871
+#: mate-dictionary/src/gdict-applet.c:933
 #: mate-dictionary/src/gdict-window.c:497
 msgid "Unable to find dictionary source"
 msgstr "ਡਿਕਸ਼ਨਰੀ ਸਰੋਤ ਲੱਭਣ ਲਈ ਅਸਫ਼ਲ ਹੈ"
 
-#: mate-dictionary/src/gdict-applet.c:887
+#: mate-dictionary/src/gdict-applet.c:949
 #: mate-dictionary/src/gdict-window.c:513
 #, c-format
 msgid "No context available for source '%s'"
 msgstr "ਸਰੋਤ '%s' ਲਈ ਕੋਈ ਪਰਸੰਗ ਉਪਲੱਬਧ ਨਹੀਂ"
 
-#: mate-dictionary/src/gdict-applet.c:891
+#: mate-dictionary/src/gdict-applet.c:953
 #: mate-dictionary/src/gdict-window.c:517
 msgid "Unable to create a context"
 msgstr "ਇੱਕ ਭਾਗ ਬਣਾਉਣ ਲਈ ਅਸਫ਼ਲ ਹੈ"
 
-#: mate-dictionary/src/gdict-applet.c:1157
+#: mate-dictionary/src/gdict-applet.c:1219
 msgid "_Look Up Selected Text"
 msgstr "ਚੁਣੇ ਪਾਠ ਦੀ ਖੋਜ(_L)"
 
-#: mate-dictionary/src/gdict-applet.c:1160
+#: mate-dictionary/src/gdict-applet.c:1222
 msgid "Cl_ear"
 msgstr "ਸਾਫ਼ ਕਰੋ(_E)"
 
-#: mate-dictionary/src/gdict-applet.c:1163
+#: mate-dictionary/src/gdict-applet.c:1225
 msgid "_Print"
 msgstr "ਪਰਿੰਟ ਕਰੋ(_P)"
 
-#: mate-dictionary/src/gdict-applet.c:1166
+#: mate-dictionary/src/gdict-applet.c:1228
 #: mate-screenshot/data/mate-screenshot.ui:109
 msgid "_Save"
 msgstr "ਸੰਭਾਲੋ(_S)"
 
-#: mate-dictionary/src/gdict-applet.c:1169
+#: mate-dictionary/src/gdict-applet.c:1231
 msgid "Preferences"
 msgstr "ਮੇਰੀ ਪਸੰਦ"
+
+#: mate-dictionary/src/gdict-applet.c:1237
+msgid "_About"
+msgstr "ਇਸ ਬਾਰੇ(_A)"
 
 #: mate-dictionary/src/gdict-common.c:77
 #, c-format
@@ -2721,168 +2599,59 @@ msgstr[1] ""
 msgid "%s - Dictionary"
 msgstr "%s - ਡਿਕਸ਼ਨਰੀ"
 
-#: mate-dictionary/src/gdict-window.c:1259
-msgid "_Go"
-msgstr "ਜਾਓ(_G)"
-
-#: mate-dictionary/src/gdict-window.c:1263
-#: mate-screenshot/data/mate-screenshot.ui:58
-msgid "_New"
-msgstr "ਵੇਖੋ(_N)"
-
-#: mate-dictionary/src/gdict-window.c:1264
-msgid "New look up"
-msgstr "ਨਵੀਂ ਖੋਜ"
-
-#: mate-dictionary/src/gdict-window.c:1265
-msgid "_Save a Copy..."
-msgstr "ਇੱਕ ਨਕਲ ਸੰਭਾਲੋ(_S)..."
-
-#: mate-dictionary/src/gdict-window.c:1267
-msgid "P_review..."
-msgstr "ਝਲਕ(_r)..."
-
-#: mate-dictionary/src/gdict-window.c:1268
-msgid "Preview this document"
-msgstr "ਇਹ ਡੌਕੂਮੈਂਟ ਦੀ ਝਲਕ"
-
-#: mate-dictionary/src/gdict-window.c:1269
-msgid "_Print..."
-msgstr "ਪਰਿੰਟ ਕਰੋ(_P)..."
-
-#: mate-dictionary/src/gdict-window.c:1270
-msgid "Print this document"
-msgstr "ਇਹ ਡੌਕੂਮੈਂਟ ਪਰਿੰਟ ਕਰੋ"
-
-#: mate-dictionary/src/gdict-window.c:1279
-msgid "_Find"
-msgstr ""
-
-#: mate-dictionary/src/gdict-window.c:1280
-msgid "Find a word or phrase in the document"
-msgstr "ਡੌਕੂਮੈਂਟ 'ਚ ਸ਼ਬਦ ਜਾਂ ਪ੍ਹੈਰਾ ਖੋਜੋ"
-
-#: mate-dictionary/src/gdict-window.c:1282
-msgid "Find Ne_xt"
-msgstr "ਅੱਗੇ ਖੋਜ(_x)"
-
-#: mate-dictionary/src/gdict-window.c:1284
-msgid "Find Pre_vious"
-msgstr "ਪਿੱਛੇ ਖੋਜ(_v)"
-
-#: mate-dictionary/src/gdict-window.c:1286
-msgid "_Preferences"
-msgstr "ਮੇਰੀ ਪਸੰਦ(_P)"
-
-#: mate-dictionary/src/gdict-window.c:1290
-msgid "_Previous Definition"
-msgstr "ਪਰਿਭਾਸ਼ਾ ਪਿੱਛੇ(_P)"
-
-#: mate-dictionary/src/gdict-window.c:1291
-msgid "Go to the previous definition"
-msgstr "ਪਿਛਲੀ ਪਰਿਭਾਸ਼ਾ ਉੱਤੇ ਜਾਓ"
-
-#: mate-dictionary/src/gdict-window.c:1292
-msgid "_Next Definition"
-msgstr "ਪਰਿਭਾਸ਼ਾ ਅੱਗੇ(_N)"
-
-#: mate-dictionary/src/gdict-window.c:1293
-msgid "Go to the next definition"
-msgstr "ਅਗਲੀ ਪਰਿਭਾਸ਼ਾ ਉੱਤੇ ਜਾਓ"
-
-#: mate-dictionary/src/gdict-window.c:1294
-msgid "_First Definition"
-msgstr "ਪਹਿਲੀਂ ਪਰਿਭਾਸ਼ਾ(_F)"
-
-#: mate-dictionary/src/gdict-window.c:1295
-msgid "Go to the first definition"
-msgstr "ਪਹਿਲੀਂ ਪਰਿਭਾਸ਼ਾ ਉੱਤੇ ਜਾਓ"
-
-#: mate-dictionary/src/gdict-window.c:1296
-msgid "_Last Definition"
-msgstr "ਆਖਰੀ ਪਰਿਭਾਸ਼ਾ(_L)"
-
-#: mate-dictionary/src/gdict-window.c:1297
-msgid "Go to the last definition"
-msgstr "ਆਖਰੀ ਪਰਿਭਾਸ਼ਾ ਉੱਤੇ ਜਾਓ"
-
-#: mate-dictionary/src/gdict-window.c:1300
-msgid "Similar _Words"
-msgstr "ਰਲਦੇ ਸ਼ਬਦ(_W)"
-
-#: mate-dictionary/src/gdict-window.c:1302
-msgid "Dictionary Sources"
-msgstr "ਡਿਕਸ਼ਨਰੀ ਸਰੋਤ"
-
-#: mate-dictionary/src/gdict-window.c:1304
-msgid "Available _Databases"
-msgstr "ਉਪਲੱਬਧ ਡਾਟਾਬੇਸ(_D)"
-
-#: mate-dictionary/src/gdict-window.c:1306
-msgid "Available St_rategies"
-msgstr "ਉਪਲੱਬਧ ਨੀਤੀਆਂ(_r)"
-
-#: mate-dictionary/src/gdict-window.c:1323
-msgid "_Sidebar"
-msgstr "ਬਾਹੀ(_S)"
-
-#: mate-dictionary/src/gdict-window.c:1325
-msgid "S_tatusbar"
-msgstr "ਹਾਲਤ-ਪੱਟੀ(_t)"
-
-#: mate-dictionary/src/gdict-window.c:1390
+#: mate-dictionary/src/gdict-window.c:1466
 #, c-format
 msgid "Dictionary source `%s' selected"
 msgstr "ਡਿਕਸ਼ਨਰੀ ਸਰੋਤ '%s' ਚੁਣਿਆ"
 
-#: mate-dictionary/src/gdict-window.c:1411
+#: mate-dictionary/src/gdict-window.c:1487
 #, c-format
 msgid "Strategy `%s' selected"
 msgstr "ਨੀਤੀ `%s' ਚੁਣੀ"
 
-#: mate-dictionary/src/gdict-window.c:1431
+#: mate-dictionary/src/gdict-window.c:1507
 #, c-format
 msgid "Database `%s' selected"
 msgstr "ਡਾਟਾਬੇਸ `%s' ਚੁਣਿਆ"
 
-#: mate-dictionary/src/gdict-window.c:1451
+#: mate-dictionary/src/gdict-window.c:1527
 #, c-format
 msgid "Word `%s' selected"
 msgstr "ਸ਼ਬਦ `%s' ਚੁਣਿਆ"
 
-#: mate-dictionary/src/gdict-window.c:1476
+#: mate-dictionary/src/gdict-window.c:1552
 msgid "Double-click on the word to look up"
 msgstr "ਸ਼ਬਦ ਖੋਜ ਲਈ ਦੋ ਵਾਰ ਦਬਾਓ"
 
-#: mate-dictionary/src/gdict-window.c:1482
+#: mate-dictionary/src/gdict-window.c:1558
 msgid "Double-click on the matching strategy to use"
 msgstr "ਵਰਤਣ ਲਈ ਰਲਦੀ ਨੀਤੀ ਉੱਤੇ ਦੋ ਵਾਰ ਦਬਾਓ"
 
-#: mate-dictionary/src/gdict-window.c:1487
+#: mate-dictionary/src/gdict-window.c:1563
 msgid "Double-click on the source to use"
 msgstr "ਵਰਤਣ ਲਈ ਸਰੋਤ ਉੱਤੇ ਡਬਲ ਕਲਿੱਕ ਕਰੋ"
 
-#: mate-dictionary/src/gdict-window.c:1496
+#: mate-dictionary/src/gdict-window.c:1572
 msgid "Double-click on the database to use"
 msgstr "ਵਰਤਣ ਲਈ ਡਾਟਾਬੇਸ ਉੱਤੇ ਦੋ ਵਾਰ ਦਬਾਓ"
 
-#: mate-dictionary/src/gdict-window.c:1668
+#: mate-dictionary/src/gdict-window.c:1760
 msgid "Look _up:"
 msgstr "ਖੋਜ(_U):"
 
-#: mate-dictionary/src/gdict-window.c:1743
+#: mate-dictionary/src/gdict-window.c:1835
 msgid "Similar words"
 msgstr "ਰਲਦੇ ਸ਼ਬਦ"
 
-#: mate-dictionary/src/gdict-window.c:1756
+#: mate-dictionary/src/gdict-window.c:1848
 msgid "Available dictionaries"
 msgstr "ਉਪਲੱਬਧ ਡਿਕਸ਼ਨਰੀਆਂ"
 
-#: mate-dictionary/src/gdict-window.c:1774
+#: mate-dictionary/src/gdict-window.c:1866
 msgid "Available strategies"
 msgstr "ਉਪਲੱਬਧ ਨੀਤੀਆਂ"
 
-#: mate-dictionary/src/gdict-window.c:1790
+#: mate-dictionary/src/gdict-window.c:1882
 msgid "Dictionary sources"
 msgstr "ਡਿਕਸ਼ਨਰੀ ਸਰੋਤ"
 
@@ -3030,6 +2799,10 @@ msgstr ""
 msgid "Save Screenshot"
 msgstr "ਸਕਰੀਨ-ਸ਼ਾਂਟ ਸੰਭਾਲੋ"
 
+#: mate-screenshot/data/mate-screenshot.ui:58
+msgid "_New"
+msgstr "ਵੇਖੋ(_N)"
+
 #: mate-screenshot/data/mate-screenshot.ui:74
 msgid "C_opy to Clipboard"
 msgstr "ਕਲਿੱਪਬੋਰਡ 'ਚ ਕਾਪੀ ਕਰੋ(_o)"
@@ -3125,7 +2898,7 @@ msgid "Grab _after a delay of"
 msgstr "ਇੱਕ ਅੰਤਰਾਲ ਬਾਅਦ ਲਵੋਂ (_a)"
 
 #: mate-screenshot/src/mate-screenshot.c:500
-#: mate-screenshot/src/mate-screenshot.c:1319
+#: mate-screenshot/src/mate-screenshot.c:1290
 msgid "seconds"
 msgstr "ਸਕਿੰਟ"
 
@@ -3170,57 +2943,57 @@ msgstr ""
 msgid "Screenshot at %s - %d.png"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1314
+#: mate-screenshot/src/mate-screenshot.c:1285
 msgid "Grab a window instead of the entire screen"
 msgstr "ਪੂਰੀ ਸਕਰੀਨ ਦੀ ਬਜਾਏ ਇੱਕ ਵਿੰਡੋ ਹੀ ਲਵੋ"
 
-#: mate-screenshot/src/mate-screenshot.c:1315
+#: mate-screenshot/src/mate-screenshot.c:1286
 msgid "Grab an area of the screen instead of the entire screen"
 msgstr "ਪੂਰੀ ਸਕਰੀਨ ਦੀ ਬਜਾਏ ਸਕਰੀਨ ਦਾ ਇੱਕ ਖੇਤਰ ਲਵੋ"
 
-#: mate-screenshot/src/mate-screenshot.c:1316
+#: mate-screenshot/src/mate-screenshot.c:1287
 msgid "Send grabbed area directly to the clipboard"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1317
+#: mate-screenshot/src/mate-screenshot.c:1288
 msgid "Include the window border with the screenshot"
 msgstr "ਵਿੰਡੋ ਬਾਰਡਰ ਸਮੇਤ ਸਕਰੀਨ-ਸ਼ਾਟ ਲਵੋ"
 
-#: mate-screenshot/src/mate-screenshot.c:1318
+#: mate-screenshot/src/mate-screenshot.c:1289
 msgid "Remove the window border from the screenshot"
 msgstr "ਸਕਰੀਨ-ਸ਼ਾਟ ਤੋਂ ਵਿੰਡੋ ਹਾਸ਼ੀਆ (ਬਾਰਡਰ) ਹਟਾਓ"
 
-#: mate-screenshot/src/mate-screenshot.c:1319
+#: mate-screenshot/src/mate-screenshot.c:1290
 msgid "Take screenshot after specified delay [in seconds]"
 msgstr "ਖਾਸ ਅੰਤਰਾਲ ਬਾਅਦ ਸਕਰੀਨ-ਸ਼ਾਟ ਲਵੋ (ਸਕਿੰਟ ਵਿੱਚ)"
 
-#: mate-screenshot/src/mate-screenshot.c:1320
+#: mate-screenshot/src/mate-screenshot.c:1291
 msgid "Effect to add to the border (shadow, border or none)"
 msgstr "ਬਾਰਡਰ ਵਿੱਚ ਜੋੜਨ ਲਈ ਪਰਭਾਵ (ਛਾਂ, ਹਾਸ਼ੀਆ, ਜਾਂ ਕੋਈ ਨਹੀਂ)"
 
-#: mate-screenshot/src/mate-screenshot.c:1320
+#: mate-screenshot/src/mate-screenshot.c:1291
 msgid "effect"
 msgstr "ਪਰਭਾਵ"
 
-#: mate-screenshot/src/mate-screenshot.c:1321
+#: mate-screenshot/src/mate-screenshot.c:1292
 msgid "Interactively set options"
 msgstr "ਦਿਲ-ਖਿੱਚਵੀਆਂ ਚੋਣਾਂ ਸੈੱਟ ਕਰੋ"
 
-#: mate-screenshot/src/mate-screenshot.c:1322
+#: mate-screenshot/src/mate-screenshot.c:1293
 msgid "Print version information and exit"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1333
+#: mate-screenshot/src/mate-screenshot.c:1304
 msgid "Take a picture of the screen"
 msgstr "ਸਕਰੀਨ ਦੀ ਤਸਵੀਰ ਲਵੋ"
 
-#: mate-screenshot/src/mate-screenshot.c:1356
+#: mate-screenshot/src/mate-screenshot.c:1327
 msgid ""
 "Conflicting options: --clipboard and --interactive should not be used at the"
 " same time.\n"
 msgstr ""
 
-#: mate-screenshot/src/mate-screenshot.c:1362
+#: mate-screenshot/src/mate-screenshot.c:1333
 msgid ""
 "Conflicting options: --window and --area should not be used at the same "
 "time.\n"
