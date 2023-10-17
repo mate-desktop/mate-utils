@@ -60,6 +60,7 @@ mate_dictionary_CFLAGS = \
 	$(GLIB_CFLAGS) \
 	$(GIO_CFLAGS) \
 	$(GTK_CFLAGS) \
+	$(MATE_DESKTOP_CFLAGS) \
 	$(WARN_CFLAGS) \
 	$(NULL)
 
@@ -69,6 +70,7 @@ mate_dictionary_LDADD = \
 	$(GLIB_LIBS) \
 	$(GIO_LIBS) \
 	$(GTK_LIBS) \
+	$(MATE_DESKTOP_LIBS) \
 	$(NULL)
 
 if BUILD_GDICT_APPLET
@@ -100,6 +102,7 @@ libmate_dictionary_applet_la_CFLAGS = \
 	$(GLIB_CFLAGS) \
 	$(GIO_CFLAGS) \
 	$(GTK_CFLAGS) \
+	$(MATE_DESKTOP_CFLAGS) \
 	$(WARN_CFLAGS) \
 	$(NULL)
 
@@ -110,6 +113,7 @@ libmate_dictionary_applet_la_LIBADD = \
 	$(GLIB_LIBS) \
 	$(GIO_LIBS) \
 	$(GTK_LIBS) \
+	$(MATE_DESKTOP_LIBS) \
 	$(NULL)
 
 if ENABLE_WAYLAND
@@ -146,6 +150,7 @@ mate_dictionary_applet_CFLAGS = \
 	$(GLIB_CFLAGS) \
 	$(GIO_CFLAGS) \
 	$(GTK_CFLAGS) \
+	$(MATE_DESKTOP_CFLAGS) \
 	$(WARN_CFLAGS) \
 	$(NULL)
 
@@ -156,6 +161,7 @@ mate_dictionary_applet_LDADD = \
 	$(GLIB_LIBS) \
 	$(GIO_LIBS) \
 	$(GTK_LIBS) \
+	$(MATE_DESKTOP_LIBS) \
 	$(NULL)
 endif # ENABLE_IN_PROCESS
 endif # BUILD_GDICT_APPLET

@@ -62,6 +62,7 @@ mate_disk_usage_analyzer_CFLAGS = \
 	$(GIO_CFLAGS) \
 	$(GTK_CFLAGS) \
 	$(LIBGTOP_CFLAGS) \
+	$(MATE_DESKTOP_CFLAGS) \
 	$(WARN_CFLAGS) \
 	$(NULL)
 
@@ -72,6 +73,7 @@ mate_disk_usage_analyzer_LDADD = \
 	$(GIO_LIBS) \
 	$(GTK_LIBS) \
 	$(LIBGTOP_LIBS) \
+	$(MATE_DESKTOP_LIBS) \
 	$(NULL)
 
 CLEANFILES = $(BUILT_SOURCES)
