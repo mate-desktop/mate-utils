@@ -26,6 +26,8 @@
 #include <gio/gio.h>
 #include <glibtop.h>
 
+#include <libmate-desktop/mate-image-menu-item.h>
+
 #include "baobab.h"
 #include "baobab-scan.h"
 #include "baobab-treeview.h"
@@ -910,20 +912,20 @@ create_context_menu (void)
 
 	menu->widget = gtk_menu_new ();
 
-	menu->up_item = gtk_image_menu_item_new_with_label (_("Move to parent folder"));
-	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (menu->up_item),
+	menu->up_item = mate_image_menu_item_new_with_label (_("Move to parent folder"));
+	mate_image_menu_item_set_image (MATE_IMAGE_MENU_ITEM (menu->up_item),
 				       gtk_image_new_from_icon_name("go-up", GTK_ICON_SIZE_MENU));
 
-	menu->zoom_in_item = gtk_image_menu_item_new_with_label (_("Zoom in")) ;
-	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (menu->zoom_in_item),
+	menu->zoom_in_item = mate_image_menu_item_new_with_label (_("Zoom in")) ;
+	mate_image_menu_item_set_image (MATE_IMAGE_MENU_ITEM (menu->zoom_in_item),
 				       gtk_image_new_from_icon_name("list-add", GTK_ICON_SIZE_MENU));
 
-	menu->zoom_out_item = gtk_image_menu_item_new_with_label (_("Zoom out"));
-	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (menu->zoom_out_item),
+	menu->zoom_out_item = mate_image_menu_item_new_with_label (_("Zoom out"));
+	mate_image_menu_item_set_image (MATE_IMAGE_MENU_ITEM (menu->zoom_out_item),
 				       gtk_image_new_from_icon_name("list-remove", GTK_ICON_SIZE_MENU));
 
-	menu->snapshot_item = gtk_image_menu_item_new_with_label (_("Save screenshot"));
-	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (menu->snapshot_item),
+	menu->snapshot_item = mate_image_menu_item_new_with_label (_("Save screenshot"));
+	mate_image_menu_item_set_image (MATE_IMAGE_MENU_ITEM (menu->snapshot_item),
 				       gtk_image_new_from_icon_name ("applets-screenshooter", GTK_ICON_SIZE_MENU));
 
 	gtk_menu_shell_append (GTK_MENU_SHELL (menu->widget),

@@ -33,6 +33,8 @@
 #include <gdk/gdkkeysyms.h>
 #include <glib/gi18n.h>
 
+#include <libmate-desktop/mate-image-menu-item.h>
+
 #include "gdict-sidebar.h"
 
 typedef struct
@@ -409,7 +411,7 @@ gdict_sidebar_add_page (GdictSidebar *sidebar,
 					  NULL);
 
   /* add the menu item for the page */
-  menu_item = gtk_image_menu_item_new_with_label (page_name);
+  menu_item = mate_image_menu_item_new_with_label (page_name);
   g_object_set_qdata_full (G_OBJECT (menu_item),
 			   sidebar_page_id_quark,
                            g_strdup (page_id),

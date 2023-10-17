@@ -33,6 +33,8 @@
 #include <glibtop/mountlist.h>
 #include <glibtop/fsusage.h>
 
+#include <libmate-desktop/mate-image-menu-item.h>
+
 #include "baobab.h"
 #include "baobab-treeview.h"
 #include "baobab-utils.h"
@@ -323,9 +325,9 @@ add_popupmenu_item (GtkMenu *pmenu, const gchar *label, const gchar *icon_name, 
 	GtkWidget *item;
 	GtkWidget *image;
 
-	item = gtk_image_menu_item_new_with_mnemonic (label);
+	item = mate_image_menu_item_new_with_mnemonic (label);
 	image = gtk_image_new_from_icon_name (icon_name, GTK_ICON_SIZE_MENU);
-	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (item), image);
+	mate_image_menu_item_set_image (MATE_IMAGE_MENU_ITEM (item), image);
 
 	g_signal_connect (item, "activate", item_cb, NULL);
 
