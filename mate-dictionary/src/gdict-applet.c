@@ -365,7 +365,7 @@ gdict_applet_build_window (GdictApplet *applet)
   if (GDK_IS_WAYLAND_DISPLAY (display))
   {
     gtk_box_pack_start (GTK_BOX (bbox), priv->entry, TRUE, TRUE, 0);
-    gtk_button_box_set_child_non_homogeneous(GTK_BOX (bbox), priv->entry, TRUE);
+    gtk_button_box_set_child_non_homogeneous(GTK_BUTTON_BOX (bbox), priv->entry, TRUE);
   }
 #endif
   gtk_box_pack_end (GTK_BOX (vbox), bbox, FALSE, FALSE, 0);
