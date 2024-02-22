@@ -3,14 +3,14 @@
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
 # ABE Tsunehiko, 2018
 # Wolfgang Ulbrich <mate@raveit.de>, 2018
-# Green <usergreen@users.osdn.me>, 2021
+# Green <usergreen@users.osdn.me>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-29 15:36+0200\n"
 "PO-Revision-Date: 2018-09-13 09:22+0000\n"
-"Last-Translator: Green <usergreen@users.osdn.me>, 2021\n"
+"Last-Translator: Green <usergreen@users.osdn.me>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/mate/teams/13566/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -167,7 +167,7 @@ msgid ""
 " Usage Analyzer</application> can easily scan either the whole filesystem "
 "tree, or a specific user-requested directory branch (local or remote)."
 msgstr ""
-"<application>ディスク使用量解析器</application>は、メニュー・ベースのグラフィカル・アプリケーションであり、あらゆるMATE環境におけるディスク使用量を分析します。<application>ディスク使用量解析器</application>は、ファイルのシステム・ツリー全体、またはユーザーが要求した特定のディレクトリ・ブランチ"
+"<application>ディスク使用量解析器</application>は、メニュー・ベースのグラフィカル・アプリケーションであり、あらゆるMATE環境におけるディスク使用量を分析します。<application>ディスク使用量解析器</application>は、ファイルのシステム・ツリー全体、またはユーザが要求した特定のディレクトリ・ブランチ"
 " (ローカルまたはリモート) を簡単にスキャンできます。"
 
 #. (itstool) path: sect1/para
@@ -234,7 +234,7 @@ msgid ""
 "starts and remains in a stand-by state, waiting for user action."
 msgstr ""
 "MATE "
-"メニューから起動した場合は、<application>ディスク使用量解析器</application>が起動して、ユーザーの操作を待つスタンバイ状態となります。"
+"メニューから起動した場合は、<application>ディスク使用量解析器</application>が起動して、ユーザの操作を待つスタンバイ状態となります。"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:171
@@ -279,7 +279,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: C/index.docbook:189
 msgid "The user can then:"
-msgstr "ユーザーは次の操作を実行できます。"
+msgstr "ユーザは次の操作を実行できます。"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:191
@@ -434,7 +434,7 @@ msgid ""
 "following dialog box. <application>Disk Usage Analyzer</application> can "
 "connect to a server through ssh, ftp, smb, http and https."
 msgstr ""
-"リモートのサーバーフォルダをスキャンする必要がある場合は、ツールバーアイコンの<guibutton>リモートフォルダーのスキャン</guibutton>をクリックするか、またはメニューから<menuchoice><guimenu>解析</guimenu><guimenuitem>リモート・フォルダのスキャン</guimenuitem></menuchoice>を選択するだけ実行できます。次のダイアログボックスが表示されます。<application>ディスク使用量解析器</application>は、ssh、ftp、smb、http、https"
+"リモートのサーバフォルダをスキャンする必要がある場合は、ツールバーアイコンの<guibutton>リモートフォルダのスキャン</guibutton>をクリックするか、またはメニューから<menuchoice><guimenu>解析</guimenu><guimenuitem>リモートフォルダのスキャン</guimenuitem></menuchoice>を選択するだけ実行できます。次のダイアログボックスが表示されます。<application>ディスク使用量解析器</application>は、ssh、ftp、smb、http、https"
 " を使用してサーバに接続できます。"
 
 #. (itstool) path: figure/title
@@ -542,7 +542,7 @@ msgid ""
 "will constantly monitor any external changes to home directory and warn the "
 "user if a file is added/removed."
 msgstr ""
-"このオプションをチェックすると、<application>ディスク使用量解析器</application>は、ホーム・ディレクトリに対する外部からの変更を常時に監視し、ファイルが追加または削除された場合にユーザーへ警告します。"
+"このオプションをチェックすると、<application>ディスク使用量解析器</application>は、ホーム・ディレクトリに対する外部からの変更を常時に監視し、ファイルが追加または削除された場合にユーザへ警告します。"
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:332
@@ -736,8 +736,8 @@ msgid ""
 "are displayed, to avoid overlappings."
 msgstr ""
 "<guilabel>リング・チャート</guilabel>は、中央の円を囲む一連の入れ子状のリングで構成されています。この円は、部分ツリーのルート・フォルダ"
-" (ユーザーがスキャン用に選択したフォルダ) "
-"を表しています。各リングは部分ツリーのレベルを表しています。つまり、ルート・フォルダのサブフォルダは最初のリングで表され、ツリーのより深いレベルはチャートの外側のリングに対応しています。各サブフォルダはリングのセクタで表されており、その角度はフォルダ内容のサイズに比例していて、視覚化を容易にするために異なる色で着色されています。最大5つのレベルを描画できます。最後の5番目のレベルのフォルダにさらに多くのサブフォルダが含まれている場合、その状況はそのフォルダのリング・セクタの端に、近い黒い曲線の存在によって示されます。サブフォルダのないフォルダを部分ツリーのルートとして選択すると、内側の円のみが描画されます。マウス・ポインタをグラフィック内のいずれかのフォルダに重ねると、そのフォルダが強調表示され、ツールヒントに名前とサイズに関する情報が表示されます。もしサブフォルダがある場合は、名前を示す小さな灰色のツールヒントが表示されます。重複を避けるために、サブフォルダの名前がすべて表示されない場合があります。"
+" (ユーザがスキャン用に選択したフォルダ) "
+"を表しています。各リングは部分ツリーのレベルを表しています。つまり、ルート・フォルダのサブフォルダは最初のリングで表され、ツリーのより深いレベルはチャートの外側のリングに対応しています。各サブフォルダはリングのセクタで表されており、その角度はフォルダ内容のサイズに比例していて、視覚化を容易にするために異なる色で着色されています。最大5つのレベルを描画できます。最後の5番目のレベルのフォルダにさらに多くのサブフォルダが含まれている場合、その状況はそのフォルダのリング・セクタの端に、近い黒い曲線の存在によって示されます。サブフォルダのないフォルダを部分ツリーのルートとして選択すると、内側の円のみが描画されます。マウスポインタをグラフィック内のいずれかのフォルダに重ねると、そのフォルダが強調表示され、ツールヒントに名前とサイズに関する情報が表示されます。もしサブフォルダがある場合は、名前を示す小さな灰色のツールヒントが表示されます。重複を避けるために、サブフォルダの名前がすべて表示されない場合があります。"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:446
