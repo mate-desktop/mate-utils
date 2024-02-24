@@ -106,6 +106,8 @@ libmate_dictionary_applet_la_CFLAGS = \
 	$(WARN_CFLAGS) \
 	$(NULL)
 
+libmate_dictionary_applet_la_LDFLAGS = -module -avoid-version
+
 libmate_dictionary_applet_la_LIBADD = \
 	-lm			\
 	$(top_builddir)/mate-dictionary/libgdict/libmatedict.la \
