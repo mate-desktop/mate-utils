@@ -55,6 +55,7 @@
 #define LAST_SAVE_DIRECTORY_KEY "last-save-directory"
 #define BORDER_EFFECT_KEY       "border-effect"
 #define DELAY_KEY               "delay"
+#define ENABLE_SOUND_KEY        "enable-sound"
 #define CAJA_PREFERENCES_SCHEMA "org.mate.caja.preferences"
 
 enum
@@ -852,7 +853,8 @@ finish_prepare_screenshot (char *initial_uri, GdkWindow *window, GdkRectangle *r
       exit (1);
     }
 
-  play_sound_effect (window);
+  if (g_settings_get_boolean (settings, ENABLE_SOUND_KEY))
+    play_sound_effect (window);
 
   if (noninteractive_clipboard_arg) {
     save_screenshot_in_clipboard (gdk_window_get_display (window), screenshot);
