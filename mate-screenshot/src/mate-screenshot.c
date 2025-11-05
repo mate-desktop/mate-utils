@@ -32,6 +32,8 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <errno.h>
+#include <signal.h>
+#include <glib-unix.h>
 #ifdef ENABLE_NLS
 #include <locale.h>
 #endif /* ENABLE_NLS */
@@ -1270,6 +1272,14 @@ loop_dialog_screenshot (void)
   gtk_main ();
 }
 
+static gboolean
+signal_handler (gpointer data)
+{
+  /* exit cleanly on signals to allow cleaning up temporary files */
+  gtk_main_quit ();
+  return FALSE;
+}
+
 /* main */
 int
 main (int argc, char *argv[])
@@ -1362,6 +1372,9 @@ main (int argc, char *argv[])
 
   if (delay_arg > 0)
     delay = delay_arg;
+
+  g_unix_signal_add (SIGINT, signal_handler, NULL);
+  g_unix_signal_add (SIGTERM, signal_handler, NULL);
 
   loop_dialog_screenshot();
 
