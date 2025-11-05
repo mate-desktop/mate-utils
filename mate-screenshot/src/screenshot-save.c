@@ -29,6 +29,15 @@
 
 #include "screenshot-save.h"
 
+typedef struct
+{
+  GdkPixbuf          *pixbuf;
+  GFileOutputStream  *stream;
+  SaveFunction        callback;
+  gpointer            user_data;
+}
+SaveAsyncData;
+
 static char *parent_dir = NULL;
 static char *tmp_filename = NULL;
 
@@ -81,12 +90,97 @@ cleanup_handler (void)
   clean_up_temporary_dir ();
 }
 
+static void
+save_async_finish_and_free (SaveAsyncData *data, GError *err)
+{
+  if (err)
+    {
+      GtkWidget *dialog;
+
+      dialog = gtk_message_dialog_new (NULL, 0, GTK_MESSAGE_ERROR,
+                                       GTK_BUTTONS_OK,
+                                       "Unable to save the screenshot to disk:\n\n%s",
+                                       err->message);
+      gtk_dialog_run (GTK_DIALOG (dialog));
+      gtk_widget_destroy (dialog);
+
+      clean_up_temporary_dir ();
+    }
+
+  if (data->callback)
+    data->callback (data->user_data);
+
+  if (data->stream)
+    g_clear_object (&data->stream);
+
+  g_clear_object (&data->pixbuf);
+  g_free (data);
+}
+
+static void
+stream_close_async_ready (GObject* object, GAsyncResult* res, gpointer user_data)
+{
+  SaveAsyncData  *data  = user_data;
+  GError         *err   = NULL;
+
+  if (! g_output_stream_close_finish (G_OUTPUT_STREAM(object), res, &err))
+    {
+      save_async_finish_and_free (data, err);
+      g_error_free (err);
+    }
+  else
+    {
+      /* all done! */
+      save_async_finish_and_free (data, NULL);
+    }
+}
+
+static void
+save_to_stream_async_ready (GObject* object, GAsyncResult* res, gpointer user_data)
+{
+  SaveAsyncData  *data  = user_data;
+  GError         *err   = NULL;
+
+  if (! gdk_pixbuf_save_to_stream_finish (res, &err))
+    {
+      save_async_finish_and_free (data, err);
+      g_error_free (err);
+    }
+  else
+    {
+      g_output_stream_close_async (G_OUTPUT_STREAM (data->stream), G_PRIORITY_DEFAULT,
+                                   NULL, stream_close_async_ready, data);
+    }
+}
+
+static void
+replace_async_ready (GObject* object, GAsyncResult* res, gpointer user_data)
+{
+  SaveAsyncData  *data  = user_data;
+  GError         *err   = NULL;
+
+  data->stream = g_file_replace_finish (G_FILE(object), res, &err);
+  if (! data->stream)
+    {
+      save_async_finish_and_free (data, err);
+      g_error_free (err);
+    }
+  else
+    {
+      gdk_pixbuf_save_to_stream_async (data->pixbuf, G_OUTPUT_STREAM (data->stream),
+                                       "png", NULL, save_to_stream_async_ready, data,
+                                       "tEXt::Software", "mate-screenshot",
+                                       NULL);
+    }
+}
+
 void
 screenshot_save_start (GdkPixbuf    *pixbuf,
                        SaveFunction  callback,
                        gpointer      user_data)
 {
-  GError *error = NULL;
+  SaveAsyncData  *data;
+  GFile          *file;
 
   static gboolean cleanup_registered = FALSE;
   if (!cleanup_registered)
@@ -109,23 +203,16 @@ screenshot_save_start (GdkPixbuf    *pixbuf,
                                    _("Screenshot.png"),
                                    NULL);
 
-  if (! gdk_pixbuf_save (pixbuf, tmp_filename,
-                        "png", &error,
-                        "tEXt::Software", "mate-screenshot",
-                        NULL))
-    {
-      if (error && error->message)
-        g_warning ("Failed to save screenshot: %s", error->message);
-      else
-        g_warning ("Failed to save screenshot: Unknown error");
+  data = g_malloc (sizeof *data);
+  data->pixbuf = g_object_ref (pixbuf);
+  data->stream = NULL;
+  data->callback = callback;
+  data->user_data = user_data;
 
-      g_error_free (error);
-
-      clean_up_temporary_dir ();
-    }
-
-  if (callback)
-    callback (user_data);
+  file = g_file_new_for_path (tmp_filename);
+  g_file_replace_async (file, NULL, FALSE, G_FILE_CREATE_REPLACE_DESTINATION,
+                        G_PRIORITY_DEFAULT, NULL, replace_async_ready, data);
+  g_object_unref (file);
 }
 
 const char *
