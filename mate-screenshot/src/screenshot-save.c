@@ -154,6 +154,46 @@ replace_async_ready (GObject* object, GAsyncResult* res, gpointer user_data)
     }
 }
 
+#if ! GLIB_CHECK_VERSION (2, 74, 0)
+/* poor man's emulation of the temp dir async API -- it's not actually async */
+static void
+file_new_tmp_dir_async (const char          *tmpl,
+                        int                  io_priority,
+                        GCancellable        *cancellable,
+                        GAsyncReadyCallback  callback,
+                        gpointer             user_data)
+{
+  GError *error = NULL;
+  gchar *path;
+  gpointer task_data[2];
+
+  path = g_dir_make_tmp (tmpl, &error);
+  task_data[0] = path;
+  task_data[1] = error;
+  callback (NULL, (GAsyncResult *) task_data, user_data);
+  if (path)
+    g_free (path);
+  /* error is freed in finish() */
+}
+
+static GFile *
+file_new_tmp_dir_finish (GAsyncResult  *result,
+                         GError       **error)
+{
+  gpointer *task_data = (gpointer *) result;
+
+  if (task_data[0])
+    return g_file_new_for_path (task_data[0]);
+
+  g_propagate_error (error, task_data[1]);
+
+  return NULL;
+}
+
+#define g_file_new_tmp_dir_async file_new_tmp_dir_async
+#define g_file_new_tmp_dir_finish file_new_tmp_dir_finish
+#endif
+
 /* gets a #GFile path, setting @err if there is none */
 static gchar *
 get_path (GFile *file, GError **err)
