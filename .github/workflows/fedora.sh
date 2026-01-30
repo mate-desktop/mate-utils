@@ -30,6 +30,7 @@ requires+=(
 	libudisks2-devel
 	make
 	mate-common
+	mate-desktop-devel
 	mate-panel-devel
 	mesa-libGL-devel
 	popt-devel

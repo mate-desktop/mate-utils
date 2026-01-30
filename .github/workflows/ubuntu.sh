@@ -26,6 +26,7 @@ requires+=(
 	libglib2.0-dev
 	libgtk-3-dev
 	libgtop2-dev
+	libmate-desktop-dev
 	libmate-panel-applet-dev
 	libudisks2-dev
 	libx11-dev
