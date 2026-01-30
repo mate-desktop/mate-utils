@@ -14,6 +14,9 @@ concurrency:
   group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.head_ref || github.sha }}
   cancel-in-progress: true
 
+env:
+  MATE_DESKTOP_VERSION: 1.28.2
+  CACHE_PATH: /tmp/.cache
 
 jobs:
   build:
@@ -21,6 +24,9 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ${{matrix.container}}
+      volumes:
+        - /tmp/.cache
+        - /var/cache/apt
 
     strategy:
       fail-fast: false # don't cancel other jobs in the matrix if one fails
@@ -72,6 +78,17 @@ jobs:
         uses: hendrikmuhs/ccache-action@v1.2
         with:
           key: ${{ env.DISTRO }}-${{ matrix.cc }}
+
+      # INFO: mate-utils depends mate-desktop 1.27.1+, so we should install it from source.
+      - name: Cache mate-desktop binary packages
+        uses: actions/cache@v5
+        id: cache-mate-desktop
+        with:
+          path: ${{ env.CACHE_PATH }}
+          key: ${{ env.DISTRO }}-build-mate-desktop-${{env.MATE_DESKTOP_VERSION}}
+      - name: Built and install mate-desktop from source
+        run: .github/workflows/mate-desktop.sh ${{env.MATE_DESKTOP_VERSION}} ${{ env.CACHE_PATH }}
+      # INFO: mate-utils depends mate-desktop 1.27.1+, install finished.
 
       - name: Build the source code
         run: .github/workflows/builds.sh
