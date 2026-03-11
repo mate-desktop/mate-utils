@@ -1357,6 +1357,7 @@ logview_window_init (LogviewWindow *logview)
                                        &error);
 
   if (res == FALSE) {
+    g_object_unref (priv->ui_manager);
     priv->ui_manager = NULL;
     g_critical ("Can't load the UI description: %s", error->message);
     g_error_free (error);

@@ -321,5 +321,6 @@ baobab_prefs_dialog (void)
 			  G_CALLBACK (filechooser_response_cb), model);
 
 	gtk_widget_show_all (dlg);
+	g_object_unref (builder);
 }
 

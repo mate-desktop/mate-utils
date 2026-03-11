@@ -641,6 +641,7 @@ open_folder_cb (GtkAction * action,
 				display_dialog_could_not_open_folder (gsearch->window, utf8_folder);
 
 				g_list_free_full (list, (GDestroyNotify) gtk_tree_path_free);
+				g_free (locale_file);
 				g_free (locale_folder);
 				g_free (utf8_folder);
 				g_object_unref (g_file);
