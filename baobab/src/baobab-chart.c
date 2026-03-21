@@ -73,6 +73,7 @@ struct _BaobabChartPrivate
   GList *first_item;
   GList *last_item;
   GList *highlighted_item;
+  GList *tooltip_item;
 };
 
 /* Signals */
@@ -153,6 +154,8 @@ static gint baobab_chart_scroll (GtkWidget *widget,
                                  GdkEventScroll *event);
 static gint baobab_chart_motion_notify (GtkWidget *widget,
                                         GdkEventMotion *event);
+static gint baobab_chart_enter_notify (GtkWidget *widget,
+                                       GdkEventCrossing *event);
 static gint baobab_chart_leave_notify (GtkWidget *widget,
                                        GdkEventCrossing *event);
 static inline void baobab_chart_disconnect_signals (GtkWidget *chart,
@@ -257,6 +260,7 @@ baobab_chart_init (BaobabChart *chart)
   priv->first_item = NULL;
   priv->last_item = NULL;
   priv->highlighted_item = NULL;
+  priv->tooltip_item = NULL;
 }
 
 static void
@@ -325,7 +329,7 @@ baobab_chart_realize (GtkWidget *widget)
                          GDK_EXPOSURE_MASK | GDK_BUTTON_PRESS_MASK |
                          GDK_BUTTON_RELEASE_MASK | GDK_POINTER_MOTION_MASK |
                          GDK_POINTER_MOTION_HINT_MASK | GDK_LEAVE_NOTIFY_MASK |
-                         GDK_SCROLL_MASK);
+                         GDK_ENTER_NOTIFY_MASK | GDK_SCROLL_MASK);
 }
 
 static void
@@ -997,9 +1001,10 @@ baobab_chart_set_item_highlight (GtkWidget *chart,
                               &item->rect, TRUE);
 }
 
-static gint
-baobab_chart_motion_notify (GtkWidget *widget,
-                            GdkEventMotion *event)
+static void
+baobab_chart_highlight_item_at_position (GtkWidget *widget,
+                                         gint x,
+                                         gint y)
 {
   BaobabChartPrivate *priv;
   BaobabChartClass *class;
@@ -1016,7 +1021,7 @@ baobab_chart_motion_notify (GtkWidget *widget,
     {
       item = (BaobabChartItem *) node->data;
 
-      if ((item->visible) && (class->is_point_over_item (widget, item, event->x, event->y)))
+      if ((item->visible) && (class->is_point_over_item (widget, item, x, y)))
         {
           if (priv->highlighted_item != node)
             {
@@ -1039,6 +1044,20 @@ baobab_chart_motion_notify (GtkWidget *widget,
       baobab_chart_set_item_highlight (widget, priv->highlighted_item, FALSE);
       gtk_widget_set_has_tooltip (widget, FALSE);
     }
+}
+
+static gint
+baobab_chart_motion_notify (GtkWidget *widget,
+                            GdkEventMotion *event)
+{
+  BaobabChartPrivate *priv;
+
+  /* Highlight any item the pointer is over */
+  baobab_chart_highlight_item_at_position (widget, event->x, event->y);
+
+  /* Set the tooltip item to the highlighted item, if any */
+  priv = BAOBAB_CHART (widget)->priv;
+  priv->tooltip_item = priv->highlighted_item;
 
   /* Continue receiving motion notifies */
   gdk_event_request_motions (event);
@@ -1054,6 +1073,22 @@ baobab_chart_leave_notify (GtkWidget *widget,
 
   priv = BAOBAB_CHART (widget)->priv;
   baobab_chart_set_item_highlight (widget, priv->highlighted_item, FALSE);
+
+  return FALSE;
+}
+
+static gint
+baobab_chart_enter_notify (GtkWidget *widget,
+                           GdkEventCrossing *event)
+{
+  BaobabChartPrivate *priv;
+
+  /* Highlight any item the pointer is over */
+  baobab_chart_highlight_item_at_position (widget, event->x, event->y);
+
+  /* Set the tooltip item to the highlighted item, if any */
+  priv = BAOBAB_CHART (widget)->priv;
+  priv->tooltip_item = priv->highlighted_item;
 
   return FALSE;
 }
@@ -1095,6 +1130,10 @@ baobab_chart_connect_signals (GtkWidget *chart,
                     G_CALLBACK (baobab_chart_leave_notify),
                     chart);
   g_signal_connect (chart,
+                    "enter-notify-event",
+                    G_CALLBACK (baobab_chart_enter_notify),
+                    chart);
+  g_signal_connect (chart,
                     "button-release-event",
                     G_CALLBACK (baobab_chart_button_release),
                     chart);
@@ -1129,6 +1168,9 @@ baobab_chart_disconnect_signals (GtkWidget *chart,
                                         baobab_chart_leave_notify,
                                         chart);
   g_signal_handlers_disconnect_by_func (chart,
+                                        baobab_chart_enter_notify,
+                                        chart);
+  g_signal_handlers_disconnect_by_func (chart,
                                         baobab_chart_button_release,
                                         chart);
 }
@@ -1147,10 +1189,10 @@ baobab_chart_query_tooltip (GtkWidget  *widget,
 
   priv = BAOBAB_CHART (widget)->priv;
 
-  if (priv->highlighted_item == NULL)
+  if (priv->tooltip_item == NULL)
     return FALSE;
 
-  item = (BaobabChartItem *) priv->highlighted_item->data;
+  item = (BaobabChartItem *) priv->tooltip_item->data;
 
   if ( (item->name == NULL) || (item->size == NULL) )
     return FALSE;
