@@ -73,7 +73,6 @@ struct _BaobabChartPrivate
   GList *first_item;
   GList *last_item;
   GList *highlighted_item;
-  GList *tooltip_item;
 };
 
 /* Signals */
@@ -260,7 +259,6 @@ baobab_chart_init (BaobabChart *chart)
   priv->first_item = NULL;
   priv->last_item = NULL;
   priv->highlighted_item = NULL;
-  priv->tooltip_item = NULL;
 }
 
 static void
@@ -1003,8 +1001,8 @@ baobab_chart_set_item_highlight (GtkWidget *chart,
 
 static void
 baobab_chart_highlight_item_at_position (GtkWidget *widget,
-                                         gint x,
-                                         gint y)
+                                         gdouble x,
+                                         gdouble y)
 {
   BaobabChartPrivate *priv;
   BaobabChartClass *class;
@@ -1050,14 +1048,8 @@ static gint
 baobab_chart_motion_notify (GtkWidget *widget,
                             GdkEventMotion *event)
 {
-  BaobabChartPrivate *priv;
-
   /* Highlight any item the pointer is over */
   baobab_chart_highlight_item_at_position (widget, event->x, event->y);
-
-  /* Set the tooltip item to the highlighted item, if any */
-  priv = BAOBAB_CHART (widget)->priv;
-  priv->tooltip_item = priv->highlighted_item;
 
   /* Continue receiving motion notifies */
   gdk_event_request_motions (event);
@@ -1081,14 +1073,8 @@ static gint
 baobab_chart_enter_notify (GtkWidget *widget,
                            GdkEventCrossing *event)
 {
-  BaobabChartPrivate *priv;
-
   /* Highlight any item the pointer is over */
   baobab_chart_highlight_item_at_position (widget, event->x, event->y);
-
-  /* Set the tooltip item to the highlighted item, if any */
-  priv = BAOBAB_CHART (widget)->priv;
-  priv->tooltip_item = priv->highlighted_item;
 
   return FALSE;
 }
@@ -1189,10 +1175,10 @@ baobab_chart_query_tooltip (GtkWidget  *widget,
 
   priv = BAOBAB_CHART (widget)->priv;
 
-  if (priv->tooltip_item == NULL)
+  if (priv->highlighted_item == NULL)
     return FALSE;
 
-  item = (BaobabChartItem *) priv->tooltip_item->data;
+  item = (BaobabChartItem *) priv->highlighted_item->data;
 
   if ( (item->name == NULL) || (item->size == NULL) )
     return FALSE;
