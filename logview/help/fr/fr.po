@@ -1,7 +1,6 @@
-# 
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# Wolfgang Ulbrich <mate@raveit.de>, 2018
+# Wolfgang Ulbrich <raveit65.sun@gmail.com>, 2018
 # df3de0cb43d289cd23a753345b3743cd_a20684f, 2018
 # Guillaume Fayard <guillaume2.fayard@wanadoo.fr>, 2018
 # Laurent Napias <tamplan+transifex@free.fr>, 2018
@@ -9,15 +8,16 @@
 # Étienne Deparis <etienne@depar.is>, 2018
 # Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>, 2019
 # Tubuntu, 2020
-# Stéphane PETRUS <stephane.petrus@posteo.net>, 2021
+# Stéphane PETRUS <stephane.petrus@mailfence.com>, 2021
 # Jerom Turible <jeromet9208@gmail.com>, 2021
+# David D, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-29 15:36+0200\n"
 "PO-Revision-Date: 2018-09-14 23:21+0000\n"
-"Last-Translator: Jerom Turible <jeromet9208@gmail.com>, 2021\n"
+"Last-Translator: David D, 2025\n"
 "Language-Team: French (https://app.transifex.com/mate/teams/13566/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -93,6 +93,8 @@ msgid ""
 "<surname>MATE Documentation Team</surname> <affiliation> <orgname>Mate "
 "desktop</orgname> </affiliation>"
 msgstr ""
+"<surname>Équipe documentation MATE</surname> <affiliation> <orgname>MATE "
+"Desktop</orgname> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:66
@@ -140,7 +142,7 @@ msgstr ""
 #. (itstool) path: revdescription/para
 #: C/index.docbook:129
 msgid "Paul Cutler <email>pcutler@gnome.org</email>"
-msgstr ""
+msgstr "Paul Cutler <email>pcutler@gnome.org</email>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:125
@@ -152,7 +154,7 @@ msgstr ""
 #. (itstool) path: revdescription/para
 #: C/index.docbook:139
 msgid "Vincent Noel <email>vincent.noel@gmail.com</email>"
-msgstr ""
+msgstr "Vincent Noel <email>vincent.noel@gmail.com</email>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:135
@@ -210,7 +212,7 @@ msgstr ""
 #. (itstool) path: articleinfo/releaseinfo
 #: C/index.docbook:197
 msgid "This manual describes version 1.10 of System Log Viewer."
-msgstr ""
+msgstr "Ce manuel décrit la version 1.10 de System Log Viewer."
 
 #. (itstool) path: legalnotice/title
 #: C/index.docbook:200
@@ -346,6 +348,8 @@ msgid ""
 "external ref='figures/syslog_window.png' "
 "md5='7cb5e186fe792ed85e408ff33f21eced'"
 msgstr ""
+"external ref='figures/syslog_window.png' "
+"md5='7cb5e186fe792ed85e408ff33f21eced'"
 
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:271
@@ -355,6 +359,11 @@ msgid ""
 " main window. Contains menubar, display area, scrollbars, and statusbar. "
 "</phrase> </textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"figures/syslog_window.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Affiche la fenêtre "
+"principale de System Log Viewer. Contient une barre de menus, une zone "
+"d’affichage, des barres de défilement et une barre d’état. </phrase> "
+"</textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:282
@@ -431,7 +440,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: C/index.docbook:322
 msgid "To Copy Log Lines to the Clipboard"
-msgstr ""
+msgstr "Pour copier les lignes de journal dans le presse-papiers"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:323
@@ -457,6 +466,10 @@ msgid ""
 "select the <menuchoice><guimenu>View</guimenu><guimenuitem>Side "
 "pane</guimenuitem></menuchoice> menu option."
 msgstr ""
+"Pour masquer la barre latérale gauche, qui contient la liste des journaux et"
+" le calendrier, il suffit de sélectionner l’option "
+"<menuchoice><guimenu>Vue</guimenu> <guimenuitem>Panneau "
+"latéral</guimenuitem></menuchoice>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:343
@@ -478,12 +491,14 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: C/index.docbook:355
 msgid "To View Log Information"
-msgstr ""
+msgstr "Pour afficher les informations du journal"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:356
 msgid "Log information are generally displayed in the status bar, including :"
 msgstr ""
+"Les informations de journal sont généralement affichées dans la barre "
+"d’état, y compris :"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:359
@@ -493,12 +508,12 @@ msgstr "Nombre de ligne dans le journal de log"
 #. (itstool) path: listitem/para
 #: C/index.docbook:361
 msgid "Size of the log in bytes."
-msgstr ""
+msgstr "Taille du journal en octets."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:363
 msgid "Date the log was last modified."
-msgstr ""
+msgstr "Date à laquelle le journal a été modifié la dernière fois."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:366
@@ -507,6 +522,9 @@ msgid ""
 "<menuchoice><guimenu>View</guimenu><guimenuitem>Statusbar</guimenuitem></menuchoice>"
 " option."
 msgstr ""
+"La barre d’état peut être affichée ou masquée en utilisant l’option "
+"<menuchoice><guimenu>Vue</guimenu> <guimenuitem>Barre "
+"d’état</guimenuitem></menuchoice>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:372
@@ -519,6 +537,8 @@ msgid ""
 "To close a log, choose "
 "<menuchoice><guimenu>File</guimenu><guimenuitem>Close</guimenuitem></menuchoice>."
 msgstr ""
+"Pour fermer un journal, choisissez <menuchoice><guimenu>Fichier</guimenu> "
+"<guimenuitem>Fermer</guimenuitem></menuchoice>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:379
