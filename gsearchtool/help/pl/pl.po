@@ -1,7 +1,6 @@
-# 
 # Translators:
 # Piotr Drąg <piotrdrag@gmail.com>, 2018
-# Piotr Strębski <strebski@gmail.com>, 2018
+# Piotr Strebski <strebski@gmail.com>, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
 # Kajetan Rosiak <roskaj@gmail.com>, 2018
 # Adam Czabara <kolofaza@o2.pl>, 2018
@@ -13,13 +12,14 @@
 # Daniel Tokarzewski <bezimo@gmail.com>, 2021
 # pietrasagh <kowalik.piotr@pm.me>, 2022
 # f91d578b5f6d79f8731c18a004205359_9ca50b9, 2022
+# Bartek Adamski, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2022-10-29 15:36+0200\n"
 "PO-Revision-Date: 2018-09-13 10:15+0000\n"
-"Last-Translator: f91d578b5f6d79f8731c18a004205359_9ca50b9, 2022\n"
+"Last-Translator: Bartek Adamski, 2025\n"
 "Language-Team: Polish (https://app.transifex.com/mate/teams/13566/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,12 +39,14 @@ msgstr ""
 #. (itstool) path: articleinfo/title
 #: C/index.docbook:23
 msgid "Search for Files Manual"
-msgstr ""
+msgstr "Wyszukiwanie plików – podręcznik"
 
 #. (itstool) path: abstract/para
 #: C/index.docbook:26
 msgid "A search tool to find files, folders and documents on your computer."
 msgstr ""
+"Narzędzie do wyszukiwania pozwalające znaleźć pliki, foldery i dokumenty na "
+"twoim komputerze."
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:31
@@ -127,7 +129,7 @@ msgstr "Wolfgang Ulbrich"
 #. (itstool) path: revdescription/para
 #: C/index.docbook:127 C/index.docbook:137 C/index.docbook:147
 msgid "Search for Files Maintainer"
-msgstr ""
+msgstr "Osoba rozwijająca Wyszukiwarkę Plików"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:121
@@ -216,7 +218,7 @@ msgstr ""
 #. (itstool) path: articleinfo/releaseinfo
 #: C/index.docbook:202
 msgid "This manual describes version 1.10 of Search for Files."
-msgstr ""
+msgstr "Ten podręcznik opisuje wersję 1.10 Wyszukiwarki Plików."
 
 #. (itstool) path: legalnotice/title
 #: C/index.docbook:205
@@ -231,11 +233,15 @@ msgid ""
 "url=\"help:mate-user-guide/feedback\" type=\"help\">MATE Feedback "
 "Page</ulink>."
 msgstr ""
+"Aby zgłosić błędy lub sugestie związane z programem Wyszukiwarka Plików lub "
+"tym podręcznikiem, postępuj zgodnie ze wskazówkami z poradnika <ulink "
+"url=\"help:mate-user-guide/feedback\" type=\"help\">Zgłaszanie Uwag "
+"Dotyczących MATE</ulink>."
 
 #. (itstool) path: article/indexterm
 #: C/index.docbook:212
 msgid "<primary>Search Tool</primary>"
-msgstr ""
+msgstr "<primary>Wyszukiwarka</primary>"
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:220
@@ -250,6 +256,10 @@ msgid ""
 "filename or a partial filename, with or without wildcards. To refine your "
 "search, you can apply additional search options."
 msgstr ""
+"Program <application>Wyszukiwanie plików</application> pozwala ci szukać "
+"plików na twoim systemie. Aby wykonać proste wyszukiwanie, możesz wpisać "
+"pełną lub częściową nazwę pliku, dodając do niej ewentualnie znaki "
+"specjalne. Dodatkowe opcje pozwolą ci doprecyzować zapytanie."
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:222
@@ -261,6 +271,12 @@ msgid ""
 "<command>locate</command> command, and then uses the slower but more "
 "thorough <command>find</command> command."
 msgstr ""
+"<application>Wyszukiwarka plików</application> wykorzystuje komendy UNIX-owe"
+" <command>find</command>, <command>grep</command> oraz "
+"<command>locate</command>. W przypadku podstawowego wyszukiwania "
+"<application>Wyszukiwarka</application> korzysta najpierw z komendy "
+"<command>locate</command>, a następnie używa wolniejszej, ale dokładniejszej"
+" komendy <command>find</command>."
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:223
@@ -270,6 +286,11 @@ msgid ""
 " <command>locate</command> commands support the <literal>-i</literal> "
 "option, so all searches are case-insensitive."
 msgstr ""
+"Czułość wyszukiwania na wielkość liter zależy od twojego systemu "
+"operacyjnego. W przypadku systemu Linux, polecenia <command>find</command>, "
+"<command>grep</command> oraz <command>locate</command> wspierają opcję "
+"<literal>-i</literal>, więc wszystkie wyszukiwania są obojętne na wielkość "
+"liter."
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:227
@@ -282,11 +303,13 @@ msgid ""
 "You can start <application>Search for Files</application> in the following "
 "ways:"
 msgstr ""
+"Możesz uruchomić <application>Wyszukiwarkę plików</application> na kilka "
+"różnych sposobów:"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:233
 msgid "From a <guimenu>Menu Bar</guimenu> on a panel"
-msgstr ""
+msgstr "Z <guimenu>Paska Menu</guimenu> na panelu"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:235
@@ -294,11 +317,13 @@ msgid ""
 "Choose <menuchoice><guisubmenu>Places</guisubmenu><guimenuitem>Search for "
 "Files...</guimenuitem></menuchoice>"
 msgstr ""
+"Wybierz <menuchoice><guisubmenu>Miejsca</guisubmenu><guimenuitem>Szukaj "
+"plików...</guimenuitem></menuchoice>"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:239
 msgid "From a <guimenu>Main Menu</guimenu> on a panel"
-msgstr ""
+msgstr "Z <guimenu>Menu Głównego</guimenu> na panelu"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:241
@@ -306,16 +331,17 @@ msgid ""
 "Choose <menuchoice><guimenuitem>Search for "
 "Files...</guimenuitem></menuchoice>"
 msgstr ""
+"Wybierz <menuchoice><guimenuitem>Szukaj plików...</guimenuitem></menuchoice>"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:245
 msgid "From a command line"
-msgstr ""
+msgstr "Z wiersza poleceń"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:247
 msgid "Execute the following command: <command>mate-search-tool</command>"
-msgstr ""
+msgstr "Wykonaj następujące polecenie: <command>mate-search-tool</command>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:254
@@ -323,11 +349,13 @@ msgid ""
 "When you start <application>Search for Files</application>, the following "
 "window is displayed."
 msgstr ""
+"Kiedy uruchomisz <application>Wyszukiwanie plików</application>, wyświetli "
+"się następujące okno."
 
 #. (itstool) path: figure/title
 #: C/index.docbook:258
 msgid "Search for Files Window"
-msgstr ""
+msgstr "Okno Wyszukiwania plikó"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -340,6 +368,8 @@ msgid ""
 "external ref='figures/mate-search-tool_window.png' "
 "md5='bb0f097535682e53e6bd43c66f0373c7'"
 msgstr ""
+"external ref='figures/mate-search-tool_window.png' "
+"md5='bb0f097535682e53e6bd43c66f0373c7'"
 
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:260
@@ -348,6 +378,9 @@ msgid ""
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows Search for Files "
 "main window. </phrase> </textobject>"
 msgstr ""
+"<imageobject><imagedata fileref=\"figures/mate-search-tool_window.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Pokazuje główne okno "
+"Wyszukiwarki Plików. </phrase> </textobject>"
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:277
@@ -357,7 +390,7 @@ msgstr "Użycie"
 #. (itstool) path: sect2/title
 #: C/index.docbook:280
 msgid "To Perform a Basic Search"
-msgstr ""
+msgstr "Aby wykonać proste wyszukiwanie"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:282
@@ -365,6 +398,8 @@ msgid ""
 "To perform a basic search for a file on the system, perform the following "
 "steps:"
 msgstr ""
+"Aby w prosty sposób przejrzeć zawartość systemu w poszukiwaniu plików, "
+"wykonaj następujące kroki:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:284
@@ -373,11 +408,14 @@ msgid ""
 "search text can be a filename or partial filename, with or without "
 "wildcards, as shown in the following table:"
 msgstr ""
+"Wpisz szukany tekst w polu <guilabel>Nazwa zawiera</guilabel>. Może to być "
+"pełna nazwa pliku lub jej część, ze znakami specjalnymi albo bez nich, co "
+"pokazuje dokładniej następująca tabela:"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:294
 msgid "Name Contains Text"
-msgstr ""
+msgstr "Nazwa zawiera tekst"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:296
@@ -387,17 +425,17 @@ msgstr "Przykład"
 #. (itstool) path: entry/para
 #: C/index.docbook:298
 msgid "Result"
-msgstr ""
+msgstr "Wynik"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:304
 msgid "Full or partial filename"
-msgstr ""
+msgstr "Pełna nazwa pliku lub jej część"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:308
 msgid "<userinput>myfile.txt</userinput>"
-msgstr ""
+msgstr "<userinput>mojplik.txt</userinput>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:312
@@ -405,16 +443,18 @@ msgid ""
 "<application>Search for Files</application> searches for all files that "
 "contain the text <userinput>myfile.txt</userinput> in the filename."
 msgstr ""
+"<application>Wyszukiwarka plików</application> poszuka wszystkich plików "
+"zawierających w nazwie tekst <userinput>myfile.txt</userinput>."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:318
 msgid "Partial filename combined with wildcards (*, [, ])"
-msgstr ""
+msgstr "Częściowa nazwa pliku w połączeniu ze znakami specjalnymi (*, [, ])"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:322
 msgid "<userinput>*.[ch]</userinput>"
-msgstr ""
+msgstr "<userinput>*.[ch]</userinput>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:326
@@ -422,6 +462,8 @@ msgid ""
 "<application>Search for Files</application> searches for all files that have"
 " extension <userinput>.c</userinput> or <userinput>.h</userinput>."
 msgstr ""
+"<application>Wyszukiwarka plików</application> poszuka wszystkich plików o "
+"rozszerzeniu <userinput>.c</userinput> lub <userinput>.h</userinput>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:334
@@ -430,11 +472,14 @@ msgid ""
 "device from which you want <application>Search for Files</application> to "
 "begin the search."
 msgstr ""
+"W polu <guilabel>Wyszukiwanie w katalogu</guilabel> możesz wybrać folder "
+"albo urządzenie, od którego <application>Wyszukiwarka plików</application> "
+"powinna rozpocząć szukanie."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:336
 msgid "Click <guibutton>Find</guibutton> to perform the search."
-msgstr ""
+msgstr "Kliknij <guibutton>Znajdź</guibutton>, żeby rozpocząć szukanie."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:339
@@ -447,6 +492,13 @@ msgid ""
 "the application displays the message \"No files found\" in the "
 "<guilabel>Search results</guilabel> list box."
 msgstr ""
+"<application>Wyszukiwarka Plików</application> przeszukuje wskazany folder, "
+"a także wszystkie jego podfoldery. <application>Wyszukiwarka</application> "
+"wyświetla znalezione elementy na liście podpisanej <guilabel>Wyniki "
+"wyszukiwania</guilabel>. Jeśli <application>Wyszukiwarka</application> nie "
+"znajdzie żadnych plików pasujących do podanych kryteriów, wyświetli "
+"wiadomość „Nie odnaleziono plików” w polu <guilabel>Wyniki "
+"wyszukiwania</guilabel>."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:343
@@ -461,11 +513,20 @@ msgid ""
 "search. To update the database, run the command <command>updatedb</command> "
 "as the root user."
 msgstr ""
+"Domyślnie <application>Wyszukiwarka Plików</application> wykonuje szybkie "
+"szukanie z użyciem komendy <command>locate</command>, po którym następuje "
+"drugie, dokładniejsze szukanie komendą <command>find</command>. Komenda "
+"<command>locate</command> jest szybsza, ponieważ korzysta z bazy danych z "
+"informacjami na temat plików. Jeśli ta baza danych jest starsza niż tydzień,"
+" <application>Wyszukiwarka Plików</application> może cię ostrzec, że wyniki "
+"wyszukiwania mogą być nieaktualne i dać możliwość wyłączenia szybkiego "
+"szukania. Żeby zaktualizować bazę danych, użyj polecenia "
+"<command>updatedb</command> jako administrator."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:347
 msgid "To Add Search Options"
-msgstr ""
+msgstr "Aby dodać opcje wyszukiwania"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:348
@@ -473,21 +534,23 @@ msgid ""
 "You can add additional options to search for a file on the system. To add "
 "search options, perform the following steps:"
 msgstr ""
+"Jeśli chcesz, możesz dodać więcej opcji wyszukiwania plików. Aby dodać "
+"opcje, wykonaj następujące kroki:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:350
 msgid "Click on the <guilabel>Select more options</guilabel> text."
-msgstr ""
+msgstr "Kliknij tekst <guilabel>Więcej opcji</guilabel>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:351
 msgid "Click on the <guilabel>Available options</guilabel> drop-down list."
-msgstr ""
+msgstr "Kliknij rozwijaną listę <guilabel>Dostępne opcje</guilabel>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:352
 msgid "Select the search option that you want to apply."
-msgstr ""
+msgstr "Wybierz opcję wyszukiwania, którą chcesz zastosować."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:353
@@ -500,11 +563,15 @@ msgid ""
 "Specify the required search information for the search option, as described "
 "in <xref linkend=\"tbl-search-rules\"/>."
 msgstr ""
+"Określ wymagane informacje dla opcji wyszukiwania zgodnie z częścią <xref "
+"linkend=\"tbl-search-rules\"/>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:355
 msgid "Repeat the above steps for each search option that you want to apply."
 msgstr ""
+"Powtórz powyższe kroki dla każdej opcji wyszukiwania, jaką chcesz "
+"zastosować."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:357
@@ -512,6 +579,8 @@ msgid ""
 "To remove a search option from the current search, click on the "
 "<guibutton>Remove</guibutton> button next to the option."
 msgstr ""
+"Aby usunąć opcję ustawioną dla aktualnego wyszukiwania, kliknij przycisk "
+"<guibutton>Usuń</guibutton> obok tej opcji."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:358
@@ -519,6 +588,8 @@ msgid ""
 "To disable the search options from the current search, click on the "
 "<guilabel>Select more options</guilabel> text."
 msgstr ""
+"Aby wyłączyć opcje związane z aktualnym wyszukiwaniem, kliknij tekst "
+"<guilabel>Więcej opcji</guilabel>."
 
 #. (itstool) path: table/title
 #: C/index.docbook:361
@@ -644,6 +715,8 @@ msgid ""
 "Search for files that are owned by a user or group that is unknown to the "
 "system."
 msgstr ""
+"Szuka plików, których właścicielami są użytkownicy lub grupy nieznane dla "
+"systemu."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:430
@@ -658,11 +731,15 @@ msgid ""
 "Use * to indicate a sequence of characters. Use ? to indicate a single "
 "character. The search is case-sensitive."
 msgstr ""
+"Szuka nazw plików, które nie zawierają podanego przez ciebie ciągu znaków. "
+"Wpisz pełną lub częściową nazwę pliku w pole odpowiadające tej opcji, "
+"stosując znaki specjalne. Znak * oznacza dowolny ciąg znaków, a ? dowolny "
+"pojedynczy znak. Szukanie będzie wrażliwe na wielkość znaków."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:436
 msgid "Name matches regular expression"
-msgstr ""
+msgstr "Plik pasuje do wyrażenia regularnego"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:438
@@ -671,6 +748,8 @@ msgid ""
 "directory path or filename. Type the regular expression in the text box "
 "provided."
 msgstr ""
+"Szuka plików, których ścieżka albo nazwa pasuje do podanego wyrażenia "
+"regularnego, wpisanego w odpowiednie pole tekstowe."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:442
@@ -717,6 +796,8 @@ msgid ""
 "Click <guibutton>Stop</guibutton> to stop a search before "
 "<application>Search for Files</application> completes the search."
 msgstr ""
+"Kliknij <guibutton>Zatrzymaj</guibutton>, żeby zatrzymać wyszukiwanie, zanim"
+" <application>Wyszukiwarka Plików</application> je zakończy."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:471
@@ -729,16 +810,20 @@ msgid ""
 "To open a file displayed in the <guilabel>Search results</guilabel> list "
 "box, perform one of the following steps:"
 msgstr ""
+"Aby otworzyć plik wymieniony na liście <guilabel>Wyniki "
+"wyszukiwania</guilabel>, wykonaj któryś z podanych kroków:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:474
 msgid "Right-click on the file, then choose <guimenuitem>Open</guimenuitem>."
 msgstr ""
+"Kliknij plik prawym przyciskiem i wybierz opcję "
+"<guimenuitem>Otwórz</guimenuitem>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:475
 msgid "Double-click on the file."
-msgstr ""
+msgstr "Kliknij plik dwukrotnie."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:477
@@ -747,11 +832,14 @@ msgid ""
 "results</guilabel> list box, right-click on the file, then choose "
 "<guimenuitem>Open Containing Folder</guimenuitem>."
 msgstr ""
+"Aby otworzyć folder, w którym znajduje się element z listy <guilabel>Wyników"
+" wyszukiwania</guilabel>, kliknij ten element prawym przyciskiem myszy i "
+"wybierz opcję <guimenuitem>Otwórz katalog zawierający</guimenuitem>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:481
 msgid "To Delete a Displayed File"
-msgstr ""
+msgstr "Aby usunąć wyświetlony plik"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:482
@@ -760,6 +848,9 @@ msgid ""
 "box, right-click on the file, then choose <guimenuitem>Move to "
 "Trash</guimenuitem>."
 msgstr ""
+"Aby usunąć plik zawarty w <guilabel>Wynikach wyszukiwania</guilabel>, "
+"kliknij go prawym przyciskiem i wybierz opcję <guimenuitem>Przenieś do "
+"kosza</guimenuitem>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:493
@@ -775,6 +866,11 @@ msgid ""
 "As</guimenuitem>. Enter the name of the file to which you want to save the "
 "results, then click Save."
 msgstr ""
+"Aby zapisać wynik ostatniego wyszukiwania wykonanego przez "
+"<application>Wyszukiwarkę Plików</application>, kliknij prawym przyciskiem "
+"listę <guilabel>Wyników wyszukiwania</guilabel>, a następnie wybierz opcję "
+"<guimenuitem>Zapisz wyniki jako</guimenuitem>. Wpisz nazwę pliku, do którego"
+" chcesz zapisać wyniki, po czym kliknij Zapisz."
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:502
@@ -788,11 +884,15 @@ msgid ""
 "modify some of its behavior. The gsettings values can be changed by starting"
 " the <application>Configuration Editor</application> in the following ways:"
 msgstr ""
+"<application>Wyszukiwarka Plików</application> daje możliwość częściowej "
+"zmiany swojego działania przez edycję ustawień (kluczy gsettings). Wartości "
+"gsettings można zmienić, uruchamiając <application>Edytor "
+"Ustawień</application> na któryś z podanych sposobów:"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:508
 msgid "<guimenu>Applications</guimenu> menu"
-msgstr ""
+msgstr "Menu <guimenu>Programy</guimenu>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:510
@@ -800,6 +900,8 @@ msgid ""
 "Choose <menuchoice><guisubmenu>System Tools</guisubmenu><guimenuitem>dconf "
 "Editor</guimenuitem></menuchoice>."
 msgstr ""
+"Wybierz <menuchoice><guisubmenu>Narzędzia "
+"systemowe</guisubmenu><guimenuitem>Edytor dconf</guimenuitem></menuchoice>."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:514
@@ -809,7 +911,7 @@ msgstr "Wiersz poleceń"
 #. (itstool) path: listitem/para
 #: C/index.docbook:516
 msgid "Execute the following command: <command>dconf-editor</command>"
-msgstr ""
+msgstr "Wykonaj następujące polecenie: <command>dconf-editor</command>"
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:522
@@ -819,12 +921,12 @@ msgstr "Wyłączenie szybkiego wyszukiwania"
 #. (itstool) path: sect2/para
 #: C/index.docbook:523
 msgid "Key name: org.mate.search-tool.disable-quick-search"
-msgstr ""
+msgstr "Nazwa klucza: org.mate.search-tool.disable-quick-search"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:524 C/index.docbook:531 C/index.docbook:552
 msgid "Default value: false"
-msgstr ""
+msgstr "Wartość domyślna: false"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:525
@@ -835,6 +937,12 @@ msgid ""
 "<command>locate</command> relies on a file index, the <guilabel>Search "
 "results</guilabel> list may not always be up to date."
 msgstr ""
+"<application>Wyszukiwarka plików</application> wykorzystuje w celu szybszego"
+" działania komendę <command>locate</command>. <command>Locate</command> "
+"zapewnia bezpieczny sposób na indeksowanie i szybkie wyszukiwanie nazw "
+"plików. Ze względu na to, że <command>locate</command> czerpie dane z "
+"indeksu plików, lista podpisana <guilabel>Wyniki wyszukiwania</guilabel> "
+"może czasem być nieaktualna."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:529
@@ -844,7 +952,7 @@ msgstr "Wyłączenie drugiego przebiegu szybkiego wyszukiwania"
 #. (itstool) path: sect2/para
 #: C/index.docbook:530
 msgid "Key name: org.mate.search-tool.disable-quick-search-second-scan"
-msgstr ""
+msgstr "Nazwa klucza: org.mate.search-tool.disable-quick-search-second-scan"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:532
@@ -855,6 +963,12 @@ msgid ""
 " Files that match the search criteria are added to the <guilabel>Search "
 "results</guilabel> list keeping the list up to date."
 msgstr ""
+"Po zakończeniu szybkiego szukania, <application>Wyszukiwarka "
+"Plików</application> wykona szukanie dokładne z użyciem komendy "
+"<command>find</command>. Celem drugiego przelotu jest znalezienie plików, "
+"które nie trafiły wcześniej do indeksu. Pliki pasujące do kryteriów "
+"wyszukiwania zostaną dodane do listy <guilabel>Wyników "
+"wyszukiwania</guilabel>, zapewniając jej aktualność."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:536
@@ -864,12 +978,12 @@ msgstr "Ścieżki wyłączone z szybkiego wyszukiwania"
 #. (itstool) path: sect2/para
 #: C/index.docbook:537
 msgid "Key name: org.mate.search-tool.quick-search-excluded-paths"
-msgstr ""
+msgstr "Nazwa klucza: org.mate.search-tool.quick-search-excluded-paths"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:538
 msgid "Default values: [/mnt/*,/media/*,/dev/*,/tmp/*,/proc/*,/var/*]"
-msgstr ""
+msgstr "Wartości domyślne: [/mnt/*,/media/*,/dev/*,/tmp/*,/proc/*,/var/*]"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:539
@@ -879,6 +993,10 @@ msgid ""
 "use the <command>find</command> command. The wildcards '*' and '?' are "
 "supported."
 msgstr ""
+"<application>Wyszukiwarka plików</application> nie będzie wykonywała "
+"szybkiego przeszukiwania ścieżek ustalonych dla tego klucza. W przypadku "
+"tych ścieżek wyszukiwanie będzie się odbywało z użyciem komendy "
+"<command>find</command>. Znaki specjalne '*' oraz '?' nadal będą wspierane."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:543
@@ -889,11 +1007,12 @@ msgstr "Ścieżki wyłączone z drugiego przebiegu szybkiego wyszukiwania"
 #: C/index.docbook:544
 msgid "Key name: org.mate.search-tool.quick-search-second-scan-excluded-paths"
 msgstr ""
+"Nazwa klucza: org.mate.search-tool.quick-search-second-scan-excluded-paths"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:545
 msgid "Default values: [/]"
-msgstr ""
+msgstr "Wartości domyślne: [/]"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:546
@@ -903,6 +1022,11 @@ msgid ""
 "the defined paths will not be followed by a thorough search using the "
 "<command>find</command> command. The wildcards '*' and '?' are supported."
 msgstr ""
+"Jeśli <application>Wyszukiwarka Plików</application> trafi na ścieżki "
+"przypisane do tego klucza, nie wykona po pierwszym szukaniu drugiego "
+"przelotu. Szybkie przeszukiwanie ścieżek nie będzie uzupełniane dokładnym "
+"szukaniem z użyciem komendy <command>find</command>. Ścieżki mogą zawierać "
+"znaki specjalne '*' oraz '?'."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:550
@@ -912,7 +1036,7 @@ msgstr "Wyświetlanie dodatkowych opcji"
 #. (itstool) path: sect2/para
 #: C/index.docbook:551
 msgid "Key name: org.mate.search-tool.show-additional-options"
-msgstr ""
+msgstr "Nazwa klucza: org.mate.search-tool.show-additional-options"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:553
@@ -920,6 +1044,8 @@ msgid ""
 "This key determines if the <guilabel>Select more options</guilabel> section "
 "is expanded when <application>Search for Files</application> is started."
 msgstr ""
+"Ten klucz określa, czy zakładka <guilabel>Więcej opcji</guilabel> będzie się"
+" rozwijała po uruchomieniu <application>Wyszukiwarki plików</application>."
 
 #. (itstool) path: para/ulink
 #: C/legal.xml:9

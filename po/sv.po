@@ -16,7 +16,8 @@
 # eckeman <eckeman@zoho.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
 # Tobias Lekare <lekare@linux.com>, 2021
-# Luna Jernberg <droidbittin@gmail.com>, 2023
+# Luna Jernberg <droidbittin@gmail.com>, 2024
+# Daniel Nylander <po@danielnylander.se>, 2025
 # 
 msgid ""
 msgstr ""
@@ -24,7 +25,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
 "POT-Creation-Date: 2023-09-10 10:29+0200\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: Luna Jernberg <droidbittin@gmail.com>, 2023\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2025\n"
 "Language-Team: Swedish (https://app.transifex.com/mate/teams/13566/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -45,7 +46,7 @@ msgstr "Kontrollera mappstorlekar och tillgängligt diskutrymme"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: baobab/data/mate-disk-usage-analyzer.desktop.in.in:14
 msgid "MATE;check;disk;usage;analyze;size;space;"
-msgstr ""
+msgstr "MATE;kontrollera;disk;användning;analysera;storlek;utrymme;"
 
 #: baobab/data/baobab-dialog-scan-props.ui:18
 msgid "Disk Usage Analyzer Preferences"
@@ -226,6 +227,9 @@ msgid ""
 " use to view and monitor your disk usage and folder structure. It displays "
 "summary information in ring or treemap charts."
 msgstr ""
+"Som namnet antyder är Diskanvändningsanalysator ett grafiskt verktyg som du "
+"kan använda för att visa och övervaka din diskanvändning och mappstruktur. "
+"Det visar sammanfattande information i ring- eller träddiagram."
 
 #: baobab/data/mate-disk-usage-analyzer.appdata.xml.in:15
 msgid ""
@@ -233,6 +237,10 @@ msgid ""
 "local or remote. There is also an option to constantly monitor any external "
 "changes to the home directory and warn the user if a file is added/removed."
 msgstr ""
+"Du kan utföra skanningar på ett filsystem, din hemkatalog eller någon annan "
+"mapp - lokal eller fjärrstyrd. Det finns också en möjlighet att ständigt "
+"övervaka alla externa ändringar i hemkatalogen och varna användaren om en "
+"fil läggs till eller tas bort."
 
 #: baobab/src/baobab.c:141 baobab/src/baobab.c:358
 msgid "Scanning..."
@@ -600,6 +608,8 @@ msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program.  If not, see <https://www.gnu.org/licenses/>."
 msgstr ""
+"Du bör ha fått en kopia av GNU General Public License tillsammans med detta "
+"program.  Om inte, se <https://www.gnu.org/licenses/>."
 
 #: baobab/src/callbacks.c:104
 msgid "About Disk Usage Analyzer"
@@ -648,6 +658,11 @@ msgid ""
 " contained within a file, ownership, date of modification, file size, folder"
 " exclusion, etc.."
 msgstr ""
+"MATE Sökverktyg är ett enkelt men kraftfullt verktyg som gör att du kan söka"
+" efter filer och mappar på alla monterade filsystem. Dess gränssnitt ger dig"
+" omedelbar tillgång till ett brett utbud av parametrar för varje sökning, "
+"till exempel text som finns i en fil, ägande, datum för ändring, filstorlek,"
+" mapputeslutning etc."
 
 #: gsearchtool/data/mate-search-tool.desktop.in:4
 msgid "Locate documents and folders on this computer by name or content"
@@ -660,6 +675,7 @@ msgstr ""
 msgid ""
 "MATE;search;files;locate;documents;folders;computer;name;content;find;tool;"
 msgstr ""
+"MATE;söka;filer;lokalisera;dokument;mappar;dator;namn;innehåll;hitta;verktyg;"
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:5
 msgid "Search history"
@@ -1576,7 +1592,7 @@ msgstr "Visa eller övervaka systemloggfiler"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: logview/data/mate-system-log.desktop.in.in:13
 msgid "MATE;monitor;view;system;log;files;logviewer;"
-msgstr ""
+msgstr "MATE;övervaka;visa;system;logg;filer;logviewer;"
 
 #: logview/data/org.mate.system-log.gschema.xml.in:5
 msgid "Log file to open up on startup"
@@ -1679,7 +1695,7 @@ msgstr "Effekt:"
 
 #: logview/src/logview-about.h:41 mate-dictionary/src/gdict-about.c:46
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
-msgstr ""
+msgstr "Sun GNOME-dokumentationsteamet <gdocteam@sun.com>"
 
 #: logview/src/logview-app.c:369
 #, c-format
@@ -1878,7 +1894,7 @@ msgstr "Kontrollera definitioner av ord och stavningar i en onlineordbok"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: mate-dictionary/data/mate-dictionary.desktop.in.in:13
 msgid "MATE;dictionary;applet;thesaurus;spelling;definitions;online;"
-msgstr ""
+msgstr "MATE;ordbok;applet;tesaurus;stavning;definitioner;online;"
 
 #: mate-dictionary/data/mate-dictionary.appdata.xml.in:8
 msgid "A dictionary for MATE Desktop"
@@ -1891,6 +1907,10 @@ msgid ""
 " add your own sources, while you can select specific servers for a specific "
 "query."
 msgstr ""
+"Med MATE Ordbok kan du slå upp ord i online-ordböcker. Programmet är "
+"förkonfigurerat med en lista över Dict-servrar (RFC 2229), till vilken du "
+"kan lägga till dina egna källor, och du kan välja specifika servrar för en "
+"specifik fråga."
 
 #: mate-dictionary/data/org.mate.DictionaryApplet.mate-panel-applet.desktop.in.in:6
 msgid "Dictionary Applet Factory"
@@ -2312,7 +2332,7 @@ msgstr "Visa GDict-alternativ"
 
 #: mate-dictionary/src/gdict-about.c:54
 msgid "Look up words or terms in a dictionary source."
-msgstr ""
+msgstr "Slå upp ord eller termer i en ordbokskälla."
 
 #: mate-dictionary/src/gdict-about.c:82 mate-dictionary/src/gdict-app.c:360
 #: mate-dictionary/src/gdict-window.c:578
@@ -2729,11 +2749,11 @@ msgstr "Strategier"
 #: mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in:3
 #: mate-disk-image-mounter/src/main.c:62
 msgid "MATE Disk Image Mounter"
-msgstr ""
+msgstr "MATE Diskavbildningsmonterare"
 
 #: mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in:4
 msgid "Attach and mount one or more disk image files"
-msgstr ""
+msgstr "Bifoga och montera en eller flera diskavbildningsfiler"
 
 #: mate-disk-image-mounter/src/main.c:60
 msgid "An error occurred"
@@ -2741,7 +2761,7 @@ msgstr "Ett fel inträffade"
 
 #: mate-disk-image-mounter/src/main.c:81
 msgid "Allow writing to the image"
-msgstr ""
+msgstr "Tillåt skrivning till avbilden"
 
 #: mate-disk-image-mounter/src/main.c:101
 msgid "All Files"
@@ -2761,13 +2781,15 @@ msgstr "_Montera"
 
 #: mate-disk-image-mounter/src/main.c:131
 msgid "Set up _read-only mount"
-msgstr ""
+msgstr "Konfigurera _skrivskyddad montering"
 
 #: mate-disk-image-mounter/src/main.c:132
 msgid ""
 "If checked, the mount will be read-only. This is useful if you don't want "
 "the underlying disk image to be modified"
 msgstr ""
+"Om markerad kommer monteringen att vara skrivskyddad. Detta är användbart om"
+" du inte vill att den underliggande diskavbildningen ska ändras"
 
 #: mate-disk-image-mounter/src/main.c:178
 #, c-format
@@ -2776,12 +2798,12 @@ msgstr "Fel vid anslutning till udisks-demonen: %s (%s,%d)"
 
 #: mate-disk-image-mounter/src/main.c:186
 msgid "Attach and mount one or more disk image files."
-msgstr ""
+msgstr "Bifoga och montera en eller flera diskavbildningsfiler."
 
 #: mate-disk-image-mounter/src/main.c:236
 #, c-format
 msgid "Cannot open `%s' - maybe the volume isn't mounted?"
-msgstr ""
+msgstr "Kan inte öppna `%s' - kanske är volymen inte monterad?"
 
 #: mate-disk-image-mounter/src/main.c:243
 #, c-format
@@ -2791,11 +2813,11 @@ msgstr "Fel vid öppnande av `%s': %m"
 #: mate-disk-image-mounter/src/main.c:264
 #, c-format
 msgid "Error attaching disk image: %s (%s, %d)"
-msgstr ""
+msgstr "Fel vid anslutning av diskavbildning: %s (%s, %d)"
 
 #: mate-screenshot/data/mate-screenshot.appdata.xml.in:7
 msgid "MATE Screenshot"
-msgstr ""
+msgstr "MATE skärmdump"
 
 #: mate-screenshot/data/mate-screenshot.appdata.xml.in:8
 msgid "A screenshot utility for MATE Desktop"
@@ -2808,6 +2830,10 @@ msgid ""
 "system clipboard or save them in Portable Network Graphics (.png) image "
 "format."
 msgstr ""
+"MATE Skärmbild är ett enkelt verktyg som låter dig ta skärmdumpar av ditt "
+"skrivbord eller av programfönster. Du kan välja att kopiera dem till "
+"systemets urklipp eller spara dem i bildformatet Portable Network Graphics "
+"(.png)."
 
 #: mate-screenshot/data/mate-screenshot.desktop.in:3
 #: mate-screenshot/src/mate-screenshot.c:519
@@ -2823,7 +2849,7 @@ msgstr "Spara bilder av ditt skrivbord eller individuella fönster"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: mate-screenshot/data/mate-screenshot.desktop.in:13
 msgid "MATE;screenshot;snapshot;desktop;window;image;"
-msgstr ""
+msgstr "MATE;skärmdump;ögonblicksbild;skrivbord;fönster;bild;"
 
 #: mate-screenshot/data/mate-screenshot.ui:24
 msgid "Save Screenshot"

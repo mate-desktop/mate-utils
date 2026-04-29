@@ -7,10 +7,11 @@
 # Edward Sawyer <saoded@gmail.com>, 2018
 # בר בוכובזה <bokovzabox@gmail.com>, 2018
 # haxoc c11 <haxoc112@disroot.org>, 2018
-# Yaron Shahrabani <sh.yaron@gmail.com>, 2020
 # shy tzedaka <shaytzedaka123@gmail.com>, 2020
 # 63f334ffc0709ba0fc2361b80bf3c0f0_00ffd1e <ab96c93ca0ac55ba7fa06385427e60dd_878890>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2024
+# Avi Markovitz <avi.markovitz@gmail.com>, 2024
 # 
 msgid ""
 msgstr ""
@@ -18,13 +19,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
 "POT-Creation-Date: 2023-09-10 10:29+0200\n"
 "PO-Revision-Date: 2018-03-12 09:18+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2021\n"
+"Last-Translator: Avi Markovitz <avi.markovitz@gmail.com>, 2024\n"
 "Language-Team: Hebrew (https://app.transifex.com/mate/teams/13566/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: he\n"
-"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+"Plural-Forms: nplurals=3; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: 2;\n"
 
 #: baobab/data/mate-disk-usage-analyzer.desktop.in.in:3
 #: baobab/data/mate-disk-usage-analyzer.appdata.xml.in:7
@@ -54,7 +55,7 @@ msgstr "ע_זרה"
 
 #: baobab/data/baobab-dialog-scan-props.ui:48
 msgid "_Close"
-msgstr "_סגור"
+msgstr "_סגירה"
 
 #: baobab/data/baobab-dialog-scan-props.ui:81
 msgid "Select _devices to include in filesystem scan:"
@@ -268,10 +269,9 @@ msgstr "מכיל קישורים קשיחים עבור:"
 #, c-format
 msgid "%5d item"
 msgid_plural "%5d items"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "פריט"
+msgstr[1] "%5d פריטים"
+msgstr[2] "%5d פריטים"
 
 #: baobab/src/baobab.c:593
 msgid "Could not initialize monitoring"
@@ -295,7 +295,7 @@ msgstr "התרחק"
 
 #: baobab/src/baobab.c:925
 msgid "Save screenshot"
-msgstr "שמור תצלום מסך"
+msgstr "שמירת צילום מצג"
 
 #: baobab/src/baobab.c:1111
 msgid "View as Rings Chart"
@@ -355,7 +355,7 @@ msgstr "לא ניתן ליצור תמונת pixbuf!"
 
 #: baobab/src/baobab-chart.c:1718
 msgid "Save Snapshot"
-msgstr "שמור צילום מפה"
+msgstr "שמירת תצלום־חטף"
 
 #: baobab/src/baobab-chart.c:1745
 msgid "_Image type:"
@@ -596,6 +596,8 @@ msgid ""
 "You should have received a copy of the GNU General Public License along with"
 " this program.  If not, see <https://www.gnu.org/licenses/>."
 msgstr ""
+"יחד עם תכנית זו אמור היה להיות מצורף עותק של הרישיון הציבורי הכללי של GNU; "
+"במידה שלא, ניתן בקר בכתובת <https://www.gnu.org/licenses/>."
 
 #: baobab/src/callbacks.c:104
 msgid "About Disk Usage Analyzer"
@@ -929,7 +931,7 @@ msgstr "Disable connection to session manager"
 
 #: gsearchtool/mate-submodules/libegg/eggsmclient.c:239
 msgid "Specify file containing saved configuration"
-msgstr "הגדר קובץ המכיל הגדרות שמורות"
+msgstr "ציון קובץ שמכיל תצורה שמורה"
 
 #: gsearchtool/mate-submodules/libegg/eggsmclient.c:239
 msgid "FILE"
@@ -1089,7 +1091,6 @@ msgid_plural "%'d Files Found"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
-msgstr[3] ""
 
 #: gsearchtool/src/gsearchtool.c:1030 gsearchtool/src/gsearchtool.c:1068
 #, c-format
@@ -1098,7 +1099,6 @@ msgid_plural "%'d files found"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
-msgstr[3] ""
 
 #: gsearchtool/src/gsearchtool.c:1159
 msgid "Entry changed called for a non entry option!"
@@ -1324,17 +1324,15 @@ msgid_plural "Are you sure you want to open %d documents?"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
-msgstr[3] ""
 
 #: gsearchtool/src/gsearchtool-callbacks.c:347
 #: gsearchtool/src/gsearchtool-callbacks.c:547
 #, c-format
 msgid "This will open %d separate window."
 msgid_plural "This will open %d separate windows."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "פעולה זו תפתח חלון נפרד."
+msgstr[1] "פעולה זו תפתח %d חלונות נפרדים."
+msgstr[2] "פעולה זו תפתח %d חלונות נפרדים."
 
 #: gsearchtool/src/gsearchtool-callbacks.c:392
 #, c-format
@@ -1361,7 +1359,6 @@ msgid_plural "Are you sure you want to open %d folders?"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
-msgstr[3] ""
 
 #: gsearchtool/src/gsearchtool-callbacks.c:724
 #, c-format
@@ -1422,15 +1419,15 @@ msgstr ""
 
 #: gsearchtool/src/gsearchtool-callbacks.c:1339
 msgid "_Save Results As..."
-msgstr "_שמור תוצאות בשם..."
+msgstr "_שמירת תוצאות בשם..."
 
 #: gsearchtool/src/gsearchtool-callbacks.c:1715
 msgid "Save Search Results As..."
-msgstr "שמור תוצאות חיפוש בשם..."
+msgstr "שמירת תוצאות חיפוש בשם..."
 
 #: gsearchtool/src/gsearchtool-callbacks.c:1744
 msgid "Could not save document."
-msgstr "לא ניתן לשמור את המסמך"
+msgstr "לא ניתן לשמור מסמך"
 
 #: gsearchtool/src/gsearchtool-callbacks.c:1745
 msgid "You did not select a document name."
@@ -1439,7 +1436,7 @@ msgstr "לא בחרת שם מסמך."
 #: gsearchtool/src/gsearchtool-callbacks.c:1775
 #, c-format
 msgid "Could not save \"%s\" document to \"%s\"."
-msgstr "לא ניתן לשמור את המסמך \"%s\" ל\"%s\"."
+msgstr "לא ניתן לשמור מסמך \"%s\" ל\"%s\"."
 
 #: gsearchtool/src/gsearchtool-callbacks.c:1808
 #, c-format
@@ -1625,11 +1622,11 @@ msgstr ""
 
 #: logview/data/org.mate.system-log.gschema.xml.in:30
 msgid "List of saved filters"
-msgstr "רשימת המסננים שנשמרו"
+msgstr "רשימת מסננים שמורים"
 
 #: logview/data/org.mate.system-log.gschema.xml.in:31
 msgid "List of saved regexp filters"
-msgstr "רשימת מסנני regexp שנשמרו"
+msgstr "רשימת מסנני ביטוי־סדיר  שמורים"
 
 #: logview/data/logview-filter.ui:32 mate-disk-image-mounter/src/main.c:124
 #: mate-screenshot/data/mate-screenshot.ui:92
@@ -1953,7 +1950,7 @@ msgstr "שם לקוח"
 
 #: mate-dictionary/libgdict/gdict-client-context.c:282
 msgid "The name of the client of the context object"
-msgstr "The name of the client of the context object"
+msgstr ""
 
 #: mate-dictionary/libgdict/gdict-client-context.c:295
 msgid "Hostname"
@@ -2095,7 +2092,7 @@ msgstr "מקומי בלבד"
 
 #: mate-dictionary/libgdict/gdict-context.c:222
 msgid "Whether the context uses only local dictionaries or not"
-msgstr "Whether the context uses only local dictionaries or not"
+msgstr ""
 
 #: mate-dictionary/libgdict/gdict-database-chooser.c:375
 msgid "Reload the list of available databases"
@@ -2190,11 +2187,11 @@ msgstr "מנגנון התעבורה אשר בשימוש על ידי מקור מ�
 #: mate-dictionary/libgdict/gdict-source.c:311
 #: mate-dictionary/libgdict/gdict-speller.c:367
 msgid "Context"
-msgstr "תוכן"
+msgstr "הקשר"
 
 #: mate-dictionary/libgdict/gdict-source.c:312
 msgid "The GdictContext bound to this source"
-msgstr "The GdictContext bound to this source"
+msgstr ""
 
 #: mate-dictionary/libgdict/gdict-source.c:404
 #, c-format
@@ -2255,15 +2252,15 @@ msgstr "נקה את רשימת המילים הדומות"
 
 #: mate-dictionary/libgdict/gdict-speller.c:368
 msgid "The GdictContext object used to get the word definition"
-msgstr "The GdictContext object used to get the word definition"
+msgstr ""
 
 #: mate-dictionary/libgdict/gdict-speller.c:375
 msgid "The database used to query the GdictContext"
-msgstr "The database used to query the GdictContext"
+msgstr ""
 
 #: mate-dictionary/libgdict/gdict-speller.c:382
 msgid "The strategy used to query the GdictContext"
-msgstr "The strategy used to query the GdictContext"
+msgstr ""
 
 #: mate-dictionary/libgdict/gdict-strategy-chooser.c:358
 msgid "Reload the list of available strategies"
@@ -2392,7 +2389,7 @@ msgstr " - Look up words in dictionaries"
 #: mate-dictionary/src/gdict-applet.c:207
 #: mate-dictionary/src/gdict-window.c:937
 msgid "Save a Copy"
-msgstr "שמירת העתק"
+msgstr "שמירת עותק"
 
 #: mate-dictionary/src/gdict-applet.c:217
 #: mate-dictionary/src/gdict-window.c:947
@@ -2431,15 +2428,15 @@ msgstr "הדפס את ההגדרה"
 
 #: mate-dictionary/src/gdict-applet.c:410
 msgid "Save the definitions found"
-msgstr "שמור את ההגדרות שנימצאו"
+msgstr "שמירת הבחנות שנמצאו"
 
 #: mate-dictionary/src/gdict-applet.c:412
 msgid "Save definition"
-msgstr "שמור את ההגדרה"
+msgstr "שמירת הבחנה"
 
 #: mate-dictionary/src/gdict-applet.c:413
 msgid "Save the text of the definition to a file"
-msgstr "שמור את תוכן ההגדרה לקובץ"
+msgstr "שמירת מלל המובחנות לקובץ"
 
 #: mate-dictionary/src/gdict-applet.c:560
 msgid "Click to view the dictionary window"
@@ -2492,7 +2489,7 @@ msgstr "לא ניתן למצוא את מקור המילון"
 #: mate-dictionary/src/gdict-window.c:513
 #, c-format
 msgid "No context available for source '%s'"
-msgstr "לא קיים הקשר עבור המקור '%s'"
+msgstr "לא זמין הקשר למקור '%s'"
 
 #: mate-dictionary/src/gdict-applet.c:953
 #: mate-dictionary/src/gdict-window.c:517
@@ -2514,7 +2511,7 @@ msgstr "_הדפס"
 #: mate-dictionary/src/gdict-applet.c:1228
 #: mate-screenshot/data/mate-screenshot.ui:109
 msgid "_Save"
-msgstr "_שמור"
+msgstr "_שמירה"
 
 #: mate-dictionary/src/gdict-applet.c:1231
 msgid "Preferences"
@@ -2587,7 +2584,7 @@ msgstr "לא ניתן ליצור קובץ מקור."
 #: mate-dictionary/src/gdict-source-dialog.c:357
 #: mate-dictionary/src/gdict-source-dialog.c:449
 msgid "Unable to save source file"
-msgstr "לא ניתן לשמור את קובץ המקור"
+msgstr "לא ניתן לשמור קובץ מקור"
 
 #: mate-dictionary/src/gdict-window.c:288
 #, c-format
@@ -2606,7 +2603,6 @@ msgid_plural "%d definitions found"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
-msgstr[3] ""
 
 #: mate-dictionary/src/gdict-window.c:576
 #, c-format
@@ -2801,7 +2797,7 @@ msgstr "צילום מסך"
 
 #: mate-screenshot/data/mate-screenshot.desktop.in:4
 msgid "Save images of your desktop or individual windows"
-msgstr "שמור תמונות של שולחן העבודה או החלונות שלך"
+msgstr "שמירת תמונות שולחן העבודה או החלונות ייחודיים"
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -2811,7 +2807,7 @@ msgstr ""
 
 #: mate-screenshot/data/mate-screenshot.ui:24
 msgid "Save Screenshot"
-msgstr "שמור תצלום מסך"
+msgstr "שמירת צילום מצג"
 
 #: mate-screenshot/data/mate-screenshot.ui:58
 msgid "_New"
@@ -2823,7 +2819,7 @@ msgstr "ה_עתק ללוח הגזירים"
 
 #: mate-screenshot/data/mate-screenshot.ui:192
 msgid "Save in _folder:"
-msgstr "שמור בתיקייה:"
+msgstr "שמירה בתיקייה:"
 
 #: mate-screenshot/data/org.mate.screenshot.gschema.xml.in:5
 msgid "Screenshot delay"
@@ -2839,7 +2835,7 @@ msgstr "Screenshot directory"
 
 #: mate-screenshot/data/org.mate.screenshot.gschema.xml.in:11
 msgid "The directory the last screenshot was saved in."
-msgstr "The directory the last screenshot was saved in."
+msgstr ""
 
 #: mate-screenshot/data/org.mate.screenshot.gschema.xml.in:15
 msgid "Include Border"
@@ -2937,7 +2933,7 @@ msgid ""
 " Error was %s.\n"
 " Please choose another location and retry."
 msgstr ""
-"בלתי אפשרי לשמור את תצלום המסך ל-%s.‏\n"
+"לא אפשרי לשמור את צילום המצג ל-%s.‏\n"
 " השגיאה הייתה %s.‏\n"
 "‏ נא לבחור מיקום שונה ולנסות שוב."
 
@@ -3048,7 +3044,8 @@ msgstr ""
 msgid ""
 "The child save process unexpectedly exited.  We are unable to write the "
 "screenshot to disk."
-msgstr "תהליך השמירה הסתיים באופן בלתי צפוי. תצלום המסך לא נכתב לדיסק."
+msgstr ""
+"תת תהליך השמירה הסתיים באופן בלתי צפוי. לא ניתן לכתוב את צילום המצג לכונן."
 
 #: mate-screenshot/src/screenshot-save.c:231
 msgid "Unknown error saving screenshot to disk"
