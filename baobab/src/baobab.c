@@ -234,6 +234,8 @@ baobab_scan_location (GFile *file)
 		gtk_toggle_action_set_active (ck_allocated, FALSE);
 		gtk_action_set_sensitive (GTK_ACTION (ck_allocated), FALSE);
 		baobab.show_allocated = FALSE;
+
+		baobab_treeview_show_allocated_size (baobab.tree_view, FALSE);
 	}
 	else {
 		gtk_action_set_sensitive (GTK_ACTION (ck_allocated), TRUE);
