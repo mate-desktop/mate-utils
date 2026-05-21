@@ -608,14 +608,18 @@ screenshot_get_pixbuf (GdkWindow    *window,
   gint x_real_orig, y_real_orig, x_orig, y_orig;
   gint width, real_width, height, real_height;
   gint screen_width, screen_height, scale;
+  gint invis_x = 0, invis_y = 0;
 
   /* If the screenshot should include the border, we look for the WM window. */
+
+  Window client_xid = None;
 
   if (include_border)
     {
       Window xid, wm;
 
       xid = GDK_WINDOW_XID (window);
+      client_xid = xid;
       wm = find_wm_window (xid);
 
       if (wm != None)
@@ -639,6 +643,47 @@ screenshot_get_pixbuf (GdkWindow    *window,
   y_orig = y_real_orig;
   width  = real_width;
   height = real_height;
+
+  if (include_border && client_xid != None && width > 0 && height > 0)
+    {
+      Display *xdpy = GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
+      Atom frame_extents = XInternAtom (xdpy, "_NET_FRAME_EXTENTS", False);
+      Atom type;
+      int fmt;
+      unsigned long nitems, bytes;
+      unsigned char *data = NULL;
+
+      if (XGetWindowProperty (xdpy, client_xid, frame_extents, 0, 4, False,
+                              XA_CARDINAL, &type, &fmt, &nitems, &bytes,
+                              &data) == Success && data && nitems >= 4)
+        {
+          unsigned long *ext = (unsigned long *) data;
+          XWindowAttributes wa;
+
+          if (XGetWindowAttributes (xdpy, client_xid, &wa))
+            {
+              int vis_w = (int)(wa.width  + ext[0] + ext[1]) / scale;
+              int vis_h = (int)(wa.height + ext[2] + ext[3]) / scale;
+              int border_x = (wa.x - (int) ext[0]) / scale;
+              int border_y = (wa.y - (int) ext[2]) / scale;
+
+              if (border_x > 0 && vis_w < real_width)
+                {
+                  invis_x = (wa.x - (int) ext[0]);
+                  x_orig += border_x;
+                  width  = vis_w;
+                }
+              if (border_y > 0 && vis_h < real_height)
+                {
+                  invis_y = (wa.y - (int) ext[2]);
+                  y_orig += border_y;
+                  height = vis_h;
+                }
+            }
+        }
+      if (data)
+        XFree (data);
+    }
 
   if (x_orig < 0)
     {
@@ -711,10 +756,27 @@ screenshot_get_pixbuf (GdkWindow    *window,
               gint rec_width, rec_height;
               gint y;
 
-              rec_x = rectangles[i].x;
-              rec_y = rectangles[i].y;
+              rec_x = rectangles[i].x - invis_x;
+              rec_y = rectangles[i].y - invis_y;
               rec_width = rectangles[i].width / scale;
               rec_height = rectangles[i].height / scale;
+
+              if (rec_x < 0)
+                {
+                  rec_width += rec_x;
+                  rec_x = 0;
+                }
+              if (rec_y < 0)
+                {
+                  rec_height += rec_y;
+                  rec_y = 0;
+                }
+              if (rec_x + rec_width > width)
+                rec_width = width - rec_x;
+              if (rec_y + rec_height > height)
+                rec_height = height - rec_y;
+              if (rec_width <= 0 || rec_height <= 0)
+                continue;
 
               if (x_real_orig < 0)
                 {
