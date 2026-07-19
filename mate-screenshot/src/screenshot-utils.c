@@ -24,16 +24,22 @@
 
 #include "screenshot-utils.h"
 
-#include <X11/Xatom.h>
-#include <gdk/gdkx.h>
+#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
+#include "wayland-screenshot.h"
+#endif
+
 #include <gdk/gdkkeysyms.h>
 #include <gtk/gtk.h>
 #include <glib.h>
 #include <glib/gi18n.h>
 
+#ifdef GDK_WINDOWING_X11
+#include <X11/Xatom.h>
+#include <gdk/gdkx.h>
 #ifdef HAVE_X11_EXTENSIONS_SHAPE_H
 #include <X11/extensions/shape.h>
 #endif
+#endif /* GDK_WINDOWING_X11 */
 
 static GtkWidget *selection_window;
 
@@ -46,9 +52,14 @@ static GtkWidget *selection_window;
 gboolean
 screenshot_grab_lock (void)
 {
+#ifdef GDK_WINDOWING_X11
   GdkAtom selection_atom;
   gboolean result = FALSE;
   GdkDisplay *display;
+
+  /* On Wayland, we don't need to grab the server */
+  if (wayland_screenshot_is_available ())
+    return TRUE;
 
   selection_atom = gdk_atom_intern (SELECTION_NAME, FALSE);
   gdk_x11_grab_server ();
@@ -77,6 +88,9 @@ screenshot_grab_lock (void)
   gdk_display_flush (display);
 
   return result;
+#else
+  return TRUE;
+#endif
 }
 
 void
@@ -84,11 +98,17 @@ screenshot_release_lock (void)
 {
   GdkDisplay *display;
 
+#ifdef GDK_WINDOWING_X11
+  /* On Wayland, we don't need to release the server grab */
+  if (wayland_screenshot_is_available ())
+    return;
+
   if (selection_window)
     {
       gtk_widget_destroy (selection_window);
       selection_window = NULL;
     }
+#endif
 
   display = gdk_display_get_default ();
   gdk_display_flush (display);
@@ -97,12 +117,17 @@ screenshot_release_lock (void)
 static GdkWindow *
 screen_get_active_window (GdkScreen *screen)
 {
+#ifdef GDK_WINDOWING_X11
   GdkWindow *ret = NULL;
   Atom type_return;
   gint format_return;
   gulong nitems_return;
   gulong bytes_after_return;
   guchar *data = NULL;
+
+  /* On Wayland, we can't get the active window this way */
+  if (wayland_screenshot_is_available ())
+    return NULL;
 
   if (!gdk_x11_screen_supports_net_wm_hint (screen,
                                             gdk_atom_intern_static_string ("_NET_ACTIVE_WINDOW")))
@@ -134,6 +159,9 @@ screen_get_active_window (GdkScreen *screen)
     XFree (data);
 
   return ret;
+#else
+  return NULL;
+#endif
 }
 
 static GdkWindow *
@@ -350,6 +378,8 @@ create_select_window (void)
 {
   GdkScreen *screen = gdk_screen_get_default ();
   GtkWidget *window = gtk_window_new (GTK_WINDOW_POPUP);
+  GdkMonitor *monitor;
+  GdkRectangle monitor_geom;
 
   GdkVisual *visual = gdk_screen_get_rgba_visual (screen);
   if (gdk_screen_is_composited (screen) && visual)
@@ -360,8 +390,15 @@ create_select_window (void)
 
   g_signal_connect (window, "draw", G_CALLBACK (draw), NULL);
 
-  gtk_window_move (GTK_WINDOW (window), -100, -100);
-  gtk_window_resize (GTK_WINDOW (window), 10, 10);
+  /* Make the window cover the entire screen so the seat grab
+   * delivers pointer events everywhere. */
+  monitor = gdk_display_get_primary_monitor (gdk_display_get_default ());
+  if (!monitor)
+    monitor = gdk_display_get_monitor (gdk_display_get_default (), 0);
+
+  gdk_monitor_get_geometry (monitor, &monitor_geom);
+  gtk_window_move (GTK_WINDOW (window), monitor_geom.x, monitor_geom.y);
+  gtk_window_resize (GTK_WINDOW (window), monitor_geom.width, monitor_geom.height);
   gtk_widget_show (window);
   return window;
 }
@@ -446,11 +483,15 @@ out:
   g_timeout_add (200, emit_select_callback_in_idle, cb_data);
 }
 
+#ifdef GDK_WINDOWING_X11
 static Window
 find_wm_window (Window xid)
 {
   Window root, parent, *children;
   unsigned int nchildren;
+
+  if (wayland_screenshot_is_available ())
+    return None;
 
   do
     {
@@ -468,6 +509,7 @@ find_wm_window (Window xid)
     }
   while (TRUE);
 }
+#endif /* GDK_WINDOWING_X11 */
 
 static cairo_region_t *
 make_region_with_monitors (GdkScreen *screen)
@@ -568,6 +610,7 @@ blank_region_in_pixbuf (GdkPixbuf *pixbuf, cairo_region_t *region)
  * not be visible in the monitors, so that screenshot do not end up with content
  * that the user won't ever see.
  */
+#ifdef GDK_WINDOWING_X11
 static void
 mask_monitors (GdkPixbuf *pixbuf, GdkWindow *root_window)
 {
@@ -576,6 +619,10 @@ mask_monitors (GdkPixbuf *pixbuf, GdkWindow *root_window)
   cairo_region_t *invisible_region;
   cairo_rectangle_int_t rect;
   gint scale;
+
+  /* On Wayland, we don't need to mask monitors */
+  if (wayland_screenshot_is_available ())
+    return;
 
   screen = gdk_window_get_screen (root_window);
   scale = gdk_window_get_scale_factor (root_window);
@@ -595,6 +642,7 @@ mask_monitors (GdkPixbuf *pixbuf, GdkWindow *root_window)
   cairo_region_destroy (region_with_monitors);
   cairo_region_destroy (invisible_region);
 }
+#endif /* GDK_WINDOWING_X11 */
 
 GdkPixbuf *
 screenshot_get_pixbuf (GdkWindow    *window,
@@ -603,6 +651,43 @@ screenshot_get_pixbuf (GdkWindow    *window,
                        gboolean      include_border,
                        gboolean      include_mask)
 {
+#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
+  if (wayland_screenshot_is_available ())
+    {
+      GdkPixbuf *screenshot = NULL;
+
+      if (rectangle)
+        {
+          /* On Wayland, capture the full output containing the region,
+           * then crop to the requested rectangle. */
+          screenshot = wayland_screenshot_capture_screen (include_pointer);
+          if (screenshot != NULL)
+            {
+              GdkPixbuf *cropped;
+              gint src_x = MAX (0, rectangle->x);
+              gint src_y = MAX (0, rectangle->y);
+              gint src_w = MIN (rectangle->width, gdk_pixbuf_get_width (screenshot) - src_x);
+              gint src_h = MIN (rectangle->height, gdk_pixbuf_get_height (screenshot) - src_y);
+
+              if (src_w > 0 && src_h > 0)
+                {
+                  cropped = gdk_pixbuf_new_subpixbuf (screenshot, src_x, src_y, src_w, src_h);
+                  g_object_unref (screenshot);
+                  screenshot = cropped;
+                }
+            }
+        }
+      else
+        {
+          /* Capture entire screen */
+          screenshot = wayland_screenshot_capture_screen (include_pointer);
+        }
+
+      return screenshot;
+    }
+#endif
+
+#ifdef GDK_WINDOWING_X11
   GdkWindow *root;
   GdkPixbuf *screenshot;
   gint x_real_orig, y_real_orig, x_orig, y_orig;
@@ -898,6 +983,10 @@ screenshot_get_pixbuf (GdkWindow    *window,
     }
 
   return screenshot;
+#else
+  /* Fallback for unsupported platforms */
+  return NULL;
+#endif
 }
 
 void

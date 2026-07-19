@@ -23,7 +23,9 @@
 #include <config.h>
 #endif
 
+#ifdef GDK_WINDOWING_X11
 #include <gdk/gdkx.h>
+#endif
 #include <gdk/gdkkeysyms.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -40,8 +42,15 @@
 #include <glib/gi18n.h>
 #include <gio/gio.h>
 #include <pwd.h>
+#ifdef GDK_WINDOWING_X11
 #include <X11/Xutil.h>
+#endif
 #include <canberra-gtk.h>
+
+#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
+#include "wayland-screenshot.h"
+#include "wayland-select-region.h"
+#endif
 
 #include "screenshot-shadow.h"
 #include "screenshot-utils.h"
@@ -122,6 +131,8 @@ static GtkWidget *effect_combo = NULL;
 static GtkWidget *effect_label = NULL;
 static GtkWidget *effects_vbox = NULL;
 static GtkWidget *delay_hbox = NULL;
+static GtkWidget *window_radio = NULL;
+static GtkWidget *area_radio = NULL;
 
 void loop_dialog_screenshot (void);
 
@@ -391,6 +402,15 @@ create_effects_frame (GtkWidget   *outer_vbox,
   gtk_label_set_mnemonic_widget (GTK_LABEL (label), combo);
   gtk_widget_show (combo);
   effect_combo = combo;
+
+#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
+  if (wayland_screenshot_is_available ())
+    {
+      gtk_widget_hide (border_check);
+      gtk_widget_hide (effect_label);
+      gtk_widget_hide (effect_combo);
+    }
+#endif
 }
 
 static void
@@ -458,6 +478,13 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
   gtk_box_pack_start (GTK_BOX (vbox), radio, FALSE, FALSE, 0);
   group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (radio));
   gtk_widget_show (radio);
+  window_radio = radio;
+
+#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
+  /** Capturing individual windows currently not available in Wayland **/
+  if (wayland_screenshot_is_available ())
+    gtk_widget_hide (window_radio);
+#endif
 
   /** Grab area of the desktop **/
   radio = gtk_radio_button_new_with_mnemonic (group,
@@ -469,6 +496,7 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
                     GINT_TO_POINTER (TARGET_TOGGLE_AREA));
   gtk_box_pack_start (GTK_BOX (vbox), radio, FALSE, FALSE, 0);
   gtk_widget_show (radio);
+  area_radio = radio;
 
   /** Grab after delay **/
   delay_hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
@@ -714,6 +742,7 @@ save_screenshot_in_clipboard (GdkDisplay *display, GdkPixbuf *screenshot)
   GtkClipboard *clipboard =
     gtk_clipboard_get_for_display (display, GDK_SELECTION_CLIPBOARD);
   gtk_clipboard_set_image (clipboard, screenshot);
+  gtk_clipboard_store (clipboard);
 }
 
 static void
@@ -799,7 +828,9 @@ play_sound_effect (GdkWindow *window)
   if (res < 0)
     goto done;
 
-  if (window != NULL)
+#ifdef GDK_WINDOWING_X11
+  /* On Wayland, we can't use X11 window IDs for sound routing */
+  if (!wayland_screenshot_is_available () && window != NULL)
     {
       res = ca_proplist_setf (p,
                               CA_PROP_WINDOW_X11_XID,
@@ -808,6 +839,7 @@ play_sound_effect (GdkWindow *window)
       if (res < 0)
         goto done;
     }
+#endif
 
   ca_context_play_full (c, 0, p, NULL, NULL);
 
@@ -1101,6 +1133,18 @@ rectangle_found_cb (GdkRectangle *rectangle)
 static void
 prepare_screenshot (void)
 {
+#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
+  if (take_area_shot && wayland_screenshot_is_available ())
+    {
+      GdkRectangle region;
+      if (wayland_select_region (&region))
+        push_check_file_job (&region);
+      else
+        gtk_main_quit ();
+      return;
+    }
+#endif
+
   if (take_area_shot)
     screenshot_select_area_async (rectangle_found_cb);
   else
@@ -1347,6 +1391,17 @@ main (int argc, char *argv[])
     exit (1);
   }
 
+#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
+  if (wayland_screenshot_init ())
+    {
+      g_info ("Wayland screenshot support initialized");
+    }
+  else
+    {
+      g_info ("Wayland screenshot not available, using X11");
+    }
+#endif
+
   gtk_window_set_default_icon_name (SCREENSHOOTER_ICON);
 
   settings = g_settings_new (MATE_SCREENSHOT_SCHEMA);
@@ -1373,10 +1428,34 @@ main (int argc, char *argv[])
   if (delay_arg > 0)
     delay = delay_arg;
 
+#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
+  if (wayland_screenshot_is_available ())
+    {
+      if (window_arg)
+        {
+          g_printerr (_("Error: window capture is not supported on Wayland.\n"));
+          exit (1);
+        }
+
+      if (include_border_arg)
+        g_printerr (_("Warning: --include-border is not supported on Wayland.\n"));
+
+      if (disable_border_arg)
+        g_printerr (_("Warning: --remove-border is not supported on Wayland.\n"));
+
+      if (border_effect_arg)
+        g_printerr (_("Warning: --border-effect is not supported on Wayland.\n"));
+    }
+#endif
+
   g_unix_signal_add (SIGINT, signal_handler, NULL);
   g_unix_signal_add (SIGTERM, signal_handler, NULL);
 
   loop_dialog_screenshot();
+
+#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
+  wayland_screenshot_cleanup ();
+#endif
 
   return EXIT_SUCCESS;
 }
