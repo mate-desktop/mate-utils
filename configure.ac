@@ -187,8 +187,53 @@ AC_SUBST(GDICT_VERSION)
 # xext for mate-screenshot; in theory checking for xext should be
 # enough but there are a lot of broken distros out there
 PKG_CHECK_MODULES(XSHAPE, xext x11,
-                  [AC_CHECK_HEADERS(X11/extensions/shape.h, XSHAPE_LIBS="-lXext -lX11")])
+                  [
+                    AC_CHECK_HEADERS(X11/extensions/shape.h, XSHAPE_LIBS="-lXext -lX11")
+                  ])
 AC_SUBST(XSHAPE_LIBS)
+
+# Wayland support for mate-screenshot
+AC_ARG_ENABLE([wayland],
+              [AS_HELP_STRING([--enable-wayland=@<:@yes/no/auto@:>@],
+                              [Enable Wayland support (default: auto)])],
+              [enable_wayland=$enableval],
+              [enable_wayland=auto])
+
+AS_CASE([$enable_wayland],
+        [auto],
+        [
+          PKG_CHECK_MODULES([WAYLAND_CLIENT], [wayland-client >= 1.18.0],
+                            [enable_wayland=yes],
+                            [enable_wayland=no])
+        ],
+        [yes],
+        [
+          PKG_CHECK_MODULES([WAYLAND_CLIENT], [wayland-client >= 1.18.0])
+        ],
+        [no], [],
+        [*], [AC_MSG_ERROR([Invalid value for --enable-wayland])]
+)
+
+AS_IF([test "x$enable_wayland" = "xyes"],
+      [
+        PKG_CHECK_MODULES([WAYLAND_PROTOCOLS], [wayland-protocols >= 1.24])
+        PKG_CHECK_MODULES([GDK_WAYLAND], [gdk-wayland-3.0 >= $GTK_REQUIRED])
+        PKG_CHECK_MODULES([GTK_LAYER_SHELL], [gtk-layer-shell-0 >= 0.6])
+
+        # Check for wayland-scanner
+        AC_PATH_PROG([WAYLAND_SCANNER], [wayland-scanner])
+        AS_IF([test -z "$WAYLAND_SCANNER"],
+              [AC_MSG_ERROR([wayland-scanner not found. Install wayland-tools or wayland-scanner.])])
+
+        # Get wayland-protocols directory
+        WAYLAND_PROTOCOLS_DIR=$($PKG_CONFIG --variable=pkgdatadir wayland-protocols)
+        AC_SUBST([WAYLAND_PROTOCOLS_DIR])
+
+        AC_DEFINE([ENABLE_WAYLAND], [1], [Enable Wayland support])
+      ]
+)
+
+AM_CONDITIONAL([ENABLE_WAYLAND], [test "x$enable_wayland" = "xyes"])
 
 AC_ARG_ENABLE([gdict-applet],
                [AS_HELP_STRING([--enable-gdict-applet=@<:@yes/no@:>@],

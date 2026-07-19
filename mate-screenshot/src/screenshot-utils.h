@@ -21,7 +21,10 @@
 #define __SCREENSHOT_UTILS_H__
 
 #include <gtk/gtk.h>
+
+#ifdef GDK_WINDOWING_X11
 #include <gdk/gdkx.h>
+#endif
 
 G_BEGIN_DECLS
 
