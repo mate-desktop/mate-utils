@@ -25,6 +25,7 @@ requires+=(
 	libdconf-dev
 	libglib2.0-dev
 	libgtk-3-dev
+	libgtk-layer-shell-dev
 	libgtop2-dev
 	libmate-panel-applet-dev
 	libudisks2-dev
@@ -40,6 +41,7 @@ requires+=(
 	gobject-introspection
 	iso-codes
 	libgirepository1.0-dev
+	wayland-protocols
 )
 
 infobegin "Update system"

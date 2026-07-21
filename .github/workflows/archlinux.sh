@@ -23,6 +23,7 @@ requires+=(
 	gettext
 	git
 	glib2-devel
+	gtk-layer-shell
 	inkscape
 	intltool
 	itstool
@@ -38,6 +39,7 @@ requires+=(
 	udisks2
 	which
 	yelp-tools
+	wayland-protocols
 )
 
 infobegin "Update system"
