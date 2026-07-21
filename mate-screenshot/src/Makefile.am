@@ -75,7 +75,7 @@ if ENABLE_WAYLAND
 EXT_IMAGE_CAPTURE_SOURCE_XML = $(WAYLAND_PROTOCOLS_DIR)/staging/ext-image-capture-source/ext-image-capture-source-v1.xml
 EXT_IMAGE_COPY_CAPTURE_XML = $(WAYLAND_PROTOCOLS_DIR)/staging/ext-image-copy-capture/ext-image-copy-capture-v1.xml
 EXT_FOREIGN_TOPLEVEL_XML = $(WAYLAND_PROTOCOLS_DIR)/staging/ext-foreign-toplevel-list/ext-foreign-toplevel-list-v1.xml
-WLR_SCREENCOPY_XML = $(srcdir)/../protocols/wlr-screencopy-unstable-v1.xml
+WLR_SCREENCOPY_XML = $(top_srcdir)/mate-screenshot/protocols/wlr-screencopy-unstable-v1.xml
 
 # Generate per-protocol client headers and code
 ext-image-capture-source-client.h: $(EXT_IMAGE_CAPTURE_SOURCE_XML)

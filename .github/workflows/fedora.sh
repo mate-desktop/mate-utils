@@ -40,7 +40,7 @@ requires+=(
 	dconf-devel
 	gobject-introspection-devel
 	iso-codes-devel
-	wayland-protocols
+	wayland-protocols-devel
 )
 
 infobegin "Update system"
