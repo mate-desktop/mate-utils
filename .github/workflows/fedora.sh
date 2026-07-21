@@ -22,6 +22,7 @@ requires+=(
 	gcc
 	gcc-c++
 	git
+	gtk-layer-shell-devel
 	hardlink
 	libX11-devel
 	libXmu-devel
@@ -39,6 +40,7 @@ requires+=(
 	dconf-devel
 	gobject-introspection-devel
 	iso-codes-devel
+	wayland-protocols
 )
 
 infobegin "Update system"
