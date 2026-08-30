@@ -478,30 +478,23 @@ free_client_data (ClientData *cd)
 static GdkPixbuf *
 compose_screenshot (GList *outputs)
 {
-  gint max_scale = 1;
   gint total_width = 0;
   gint total_height = 0;
 
-  /* Calculate the virtual framebuffer size and find max scale factor */
+  /* Calculate the virtual framebuffer size using GDK logical coordinates */
   for (GList *elem = outputs; elem; elem = elem->next)
     {
       OutputData *od = elem->data;
       GdkRectangle geometry;
-      gint scale;
 
       gdk_monitor_get_geometry (od->monitor, &geometry);
-      scale = (gdouble) od->width / (gdouble) geometry.width;
-      if (scale < 1)
-        scale = 1;
 
-      gint sx = geometry.x + od->width;
-      gint sy = geometry.y + od->height;
+      gint sx = geometry.x + geometry.width;
+      gint sy = geometry.y + geometry.height;
       if (sx > total_width)
         total_width = sx;
       if (sy > total_height)
         total_height = sy;
-      if (scale > max_scale)
-        max_scale = scale;
     }
 
   if (total_width == 0 || total_height == 0)
@@ -517,6 +510,8 @@ compose_screenshot (GList *outputs)
       OutputData *od = elem->data;
       GdkRectangle geometry;
       GdkPixbuf *raw;
+      gdouble scale;
+      gdouble composite_scale;
 
       if (od->capture_failed)
         continue;
@@ -533,23 +528,23 @@ compose_screenshot (GList *outputs)
           raw = flipped;
         }
 
+      /* The capture buffer is in physical pixels; the destination uses the
+       * same GDK logical coordinates as the rest of the application, so we
+       * downscale each output by its own scale factor. */
       gdk_monitor_get_geometry (od->monitor, &geometry);
-      gint scale = (gdouble) od->width / (gdouble) geometry.width;
+      scale = (gdouble) od->width / (gdouble) geometry.width;
       if (scale < 1)
         scale = 1;
 
-      gdouble composite_scale = (gdouble) max_scale / (gdouble) scale;
-      gint dest_x = geometry.x * max_scale;
-      gint dest_y = geometry.y * max_scale;
-      gint dest_w = (gdouble) od->width * composite_scale;
-      gint dest_h = (gdouble) od->height * composite_scale;
+      composite_scale = 1.0 / scale;
 
-      g_info ("Wayland screenshot: compositing output %dx%d at (%d,%d) scale %d->%.1f",
-              od->width, od->height, dest_x, dest_y, scale, composite_scale);
+      g_info ("Wayland screenshot: compositing output %dx%d at (%d,%d) scale %.2f",
+              od->width, od->height, geometry.x, geometry.y, scale);
 
       gdk_pixbuf_composite (raw, dest,
-                            dest_x, dest_y, dest_w, dest_h,
-                            dest_x, dest_y,
+                            geometry.x, geometry.y,
+                            geometry.width, geometry.height,
+                            geometry.x, geometry.y,
                             composite_scale, composite_scale,
                             GDK_INTERP_BILINEAR, 255);
       g_object_unref (raw);
@@ -559,7 +554,7 @@ compose_screenshot (GList *outputs)
 }
 
 static GdkPixbuf *
-capture_screenshot (gboolean capture_all_monitors, gboolean show_mouse)
+capture_screenshot (G_GNUC_UNUSED gboolean capture_all_monitors, gboolean show_mouse)
 {
   ClientData client_data = { 0 };
   GList *outputs = NULL;
@@ -650,32 +645,7 @@ capture_screenshot (gboolean capture_all_monitors, gboolean show_mouse)
 
   if (!failure && outputs != NULL)
     {
-      if (capture_all_monitors && g_list_length (outputs) > 1)
-        {
-          screenshot = compose_screenshot (outputs);
-        }
-      else
-        {
-          /* Single monitor: just convert directly */
-          OutputData *od = outputs->data;
-          if (!od->capture_failed)
-            {
-              GdkPixbuf *raw = convert_buffer_to_pixbuf (od);
-              if (raw != NULL)
-                {
-                  if (od->y_inverted)
-                    {
-                      screenshot = gdk_pixbuf_rotate_simple (raw, GDK_PIXBUF_ROTATE_UPSIDEDOWN);
-                      g_object_unref (raw);
-                    }
-                  else
-                    {
-                      screenshot = gdk_pixbuf_copy (raw);
-                      g_object_unref (raw);
-                    }
-                }
-            }
-        }
+      screenshot = compose_screenshot (outputs);
     }
 
   free_client_data (&client_data);
