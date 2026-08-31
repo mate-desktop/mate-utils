@@ -1300,11 +1300,12 @@ loop_dialog_screenshot (void)
     }
   else
     {
-      if (interactive_arg)
+      if (interactive_arg || take_area_shot)
         {
-          /* HACK: give time to the dialog to actually disappear.
+          /* HACK: give time to the dialog to actually disappear or keyboard
+           * shortcuts to release their grab.
            * We don't have any way to tell when the compositor has finished
-           * re-drawing.
+           * re-drawing or when keys are un-grabbed.
            */
           g_timeout_add (200,
                          prepare_screenshot_timeout, NULL);
