@@ -47,10 +47,9 @@
 #endif
 #include <canberra-gtk.h>
 
-#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
+/* These files include stubs in case Wayland support is disabled */
 #include "wayland-screenshot.h"
 #include "wayland-select-region.h"
-#endif
 
 #include "screenshot-shadow.h"
 #include "screenshot-utils.h"
