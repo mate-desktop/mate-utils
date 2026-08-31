@@ -84,19 +84,9 @@ typedef enum {
   SCREENSHOT_EFFECT_BORDER
 } ScreenshotEffectType;
 
-typedef enum
-{
-  TEST_LAST_DIR = 0,
-  TEST_DESKTOP = 1,
-  TEST_TMP = 2,
-} TestType;
-
 typedef struct
 {
   char *base_uris[3];
-  char *retval;
-  int iteration;
-  TestType type;
   GdkWindow *window;
   GdkRectangle *rectangle;
 } AsyncExistenceJob;
@@ -921,143 +911,163 @@ async_existence_job_free (AsyncExistenceJob *job)
   g_slice_free (AsyncExistenceJob, job);
 }
 
-static gboolean
-check_file_done (gpointer user_data)
+static void
+on_check_file_done (GObject      *source,
+                    GAsyncResult *result,
+                    gpointer      user_data)
 {
-  AsyncExistenceJob *job = user_data;
+  AsyncExistenceJob *job = g_task_get_task_data (G_TASK (result));
+  GError *error = NULL;
+  char *uri;
 
-  finish_prepare_screenshot (job->retval, job->window, job->rectangle);
+  (void) source;
+  (void) user_data;
 
-  async_existence_job_free (job);
+  uri = g_task_propagate_pointer (G_TASK (result), &error);
 
-  return FALSE;
+  if (error != NULL)
+    {
+      if (!g_error_matches (error, G_IO_ERROR, G_IO_ERROR_CANCELLED))
+        g_warning ("Unable to determine screenshot save URI: %s", error->message);
+
+      g_error_free (error);
+      screenshot_release_lock ();
+      return;
+    }
+
+  finish_prepare_screenshot (uri, job->window, job->rectangle);
 }
 
 static char *
-build_uri (AsyncExistenceJob *job)
+build_screenshot_filename (int iteration)
 {
-  char *retval, *file_name;
-  char *timestamp;
   GDateTime *d;
+  char *timestamp, *file_name;
 
   d = g_date_time_new_now_local ();
   timestamp = g_date_time_format (d, "%Y-%m-%d %H-%M-%S");
   g_date_time_unref (d);
 
-  if (job->iteration == 0)
-    {
-      /* translators: this is the name of the file that gets made up
-       * with the screenshot if the entire screen is taken */
-      file_name = g_strdup_printf (_("Screenshot at %s.png"), timestamp);
-    }
+  if (iteration == 0)
+    /* translators: this is the name of the file that gets made up
+     * with the screenshot if the entire screen is taken */
+    file_name = g_strdup_printf (_("Screenshot at %s.png"), timestamp);
   else
-    {
-      /* translators: this is the name of the file that gets
-       * made up with the screenshot if the entire screen is
-       * taken */
-      file_name = g_strdup_printf (_("Screenshot at %s - %d.png"), timestamp, job->iteration);
-    }
+    /* translators: this is the name of the file that gets
+     * made up with the screenshot if the entire screen is
+     * taken */
+    file_name = g_strdup_printf (_("Screenshot at %s - %d.png"), timestamp, iteration);
 
-  retval = g_build_filename (job->base_uris[job->type], file_name, NULL);
-  g_free (file_name);
   g_free (timestamp);
-
-  return retval;
+  return file_name;
 }
 
-static gboolean
-try_check_file (GIOSchedulerJob *io_job,
-                GCancellable *cancellable,
-                gpointer data)
+static void
+try_check_file (GTask        *task,
+                gpointer      source_object,
+                gpointer      task_data,
+                GCancellable *cancellable)
 {
-  AsyncExistenceJob *job = data;
-  GFile *file;
-  GFileInfo *info;
-  GError *error;
-  char *uri;
+  AsyncExistenceJob *job = task_data;
+  guint n_types = G_N_ELEMENTS (job->base_uris);
 
-retry:
-  error = NULL;
-  uri = build_uri (job);
-  file = g_file_new_for_uri (uri);
+  (void) source_object;
 
-  info = g_file_query_info (file, G_FILE_ATTRIBUTE_STANDARD_TYPE,
-			    G_FILE_QUERY_INFO_NONE, cancellable, &error);
-  if (info != NULL)
+  for (guint t = 0; t < n_types; t++)
     {
-      /* file already exists, iterate again */
-      g_object_unref (info);
-      g_object_unref (file);
-      g_free (uri);
+      GFile *dir;
+      GFileInfo *dir_info;
+      GError *error = NULL;
+      gboolean writable;
 
-      (job->iteration)++;
+      if (job->base_uris[t] == NULL)
+        continue;
 
-      goto retry;
-    }
-  else
-    {
-      /* see the error to check whether the location is not accessible
-       * or the file does not exist.
-       */
-      if (error->code == G_IO_ERROR_NOT_FOUND)
+      if (cancellable != NULL && g_cancellable_is_cancelled (cancellable))
         {
-          GFile *parent;
-
-          /* if the parent directory doesn't exist as well, forget the saved
-           * directory and treat this as a generic error.
-           */
-
-          parent = g_file_get_parent (file);
-
-          if (!g_file_query_exists (parent, NULL))
-            {
-              (job->type)++;
-              job->iteration = 0;
-
-              g_object_unref (file);
-              g_object_unref (parent);
-              goto retry;
-            }
-          else
-            {
-              job->retval = uri;
-
-              g_object_unref (parent);
-              goto out;
-            }
+          g_task_return_new_error (task,
+                                   G_IO_ERROR,
+                                   G_IO_ERROR_CANCELLED,
+                                   "Screenshot save URI lookup cancelled");
+          return;
         }
-      else
+
+      dir = g_file_new_for_uri (job->base_uris[t]);
+
+      /* Query the directory itself to verify writability before probing names. */
+      dir_info = g_file_query_info (dir,
+                                    G_FILE_ATTRIBUTE_ACCESS_CAN_WRITE,
+                                    G_FILE_QUERY_INFO_NONE,
+                                    cancellable,
+                                    &error);
+      if (dir_info == NULL)
         {
-          /* another kind of error, assume this location is not
-           * accessible.
-           */
-          g_free (uri);
-          if (job->type == TEST_TMP)
-            {
-              job->retval = NULL;
-              goto out;
-            }
-          else
-            {
-              (job->type)++;
-              job->iteration = 0;
-
-              g_error_free (error);
-              g_object_unref (file);
-              goto retry;
-            }
+          g_clear_error (&error);
+          g_object_unref (dir);
+          continue;
         }
+
+      writable = !g_file_info_has_attribute (dir_info, G_FILE_ATTRIBUTE_ACCESS_CAN_WRITE) ||
+                 g_file_info_get_attribute_boolean (dir_info, G_FILE_ATTRIBUTE_ACCESS_CAN_WRITE);
+      g_object_unref (dir_info);
+
+      if (!writable)
+        {
+          g_object_unref (dir);
+          continue;
+        }
+
+      for (int iteration = 0; ; iteration++)
+        {
+          char *file_name;
+          GFile *file;
+          GFileInfo *file_info;
+
+          if (cancellable != NULL && g_cancellable_is_cancelled (cancellable))
+            {
+              g_object_unref (dir);
+              g_task_return_new_error (task,
+                                       G_IO_ERROR,
+                                       G_IO_ERROR_CANCELLED,
+                                       "Screenshot save URI lookup cancelled");
+              return;
+            }
+
+          file_name = build_screenshot_filename (iteration);
+          file = g_file_get_child (dir, file_name);
+          g_free (file_name);
+
+          file_info = g_file_query_info (file,
+                                         G_FILE_ATTRIBUTE_STANDARD_TYPE,
+                                         G_FILE_QUERY_INFO_NONE,
+                                         cancellable,
+                                         &error);
+          if (file_info != NULL)
+            {
+              g_object_unref (file_info);
+              g_object_unref (file);
+              continue;
+            }
+
+          if (error != NULL && error->code == G_IO_ERROR_NOT_FOUND)
+            {
+              char *uri = g_file_get_uri (file);
+              g_clear_error (&error);
+              g_object_unref (file);
+              g_object_unref (dir);
+              g_task_return_pointer (task, uri, g_free);
+              return;
+            }
+
+          g_clear_error (&error);
+          g_object_unref (file);
+          break;
+        }
+
+      g_object_unref (dir);
     }
 
-out:
-  g_error_free (error);
-  g_object_unref (file);
-
-  g_io_scheduler_job_send_to_mainloop_async (io_job,
-                                             check_file_done,
-                                             job,
-                                             NULL);
-  return FALSE;
+  g_task_return_pointer (task, NULL, NULL);
 }
 
 static GdkWindow *
@@ -1095,8 +1105,6 @@ push_check_file_job (GdkRectangle *rectangle)
   /* we'll have to free these two */
   job->base_uris[1] = get_desktop_dir ();
   job->base_uris[2] = g_strconcat ("file://", g_get_tmp_dir (), NULL);
-  job->iteration = 0;
-  job->type = TEST_LAST_DIR;
   job->window = find_current_window ();
 
   if (rectangle != NULL)
@@ -1117,11 +1125,11 @@ push_check_file_job (GdkRectangle *rectangle)
       return;
     }
 
-  g_io_scheduler_push_job (try_check_file,
-                           job,
-                           NULL,
-                           0, NULL);
 
+  GTask *task = g_task_new (NULL, NULL, on_check_file_done, NULL);
+  g_task_set_task_data (task, job, (GDestroyNotify) async_existence_job_free);
+  g_task_run_in_thread (task, try_check_file);
+  g_object_unref (task);
 }
 
 static void
