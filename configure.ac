@@ -192,7 +192,7 @@ PKG_CHECK_MODULES(XSHAPE, xext x11,
                   ])
 AC_SUBST(XSHAPE_LIBS)
 
-# Wayland support for mate-screenshot
+# Wayland support for mate-screenshot and the dictionary applet
 AC_ARG_ENABLE([wayland],
               [AS_HELP_STRING([--enable-wayland=@<:@yes/no/auto@:>@],
                               [Enable Wayland support (default: auto)])],
@@ -200,38 +200,48 @@ AC_ARG_ENABLE([wayland],
               [enable_wayland=auto])
 
 AS_CASE([$enable_wayland],
-        [auto],
+        [no], [],
+        [yes|auto],
         [
           PKG_CHECK_MODULES([WAYLAND_CLIENT], [wayland-client >= 1.18.0],
-                            [enable_wayland=yes],
-                            [enable_wayland=no])
+                            [have_wayland_client=yes], [have_wayland_client=no])
+          PKG_CHECK_MODULES([WAYLAND_PROTOCOLS], [wayland-protocols >= 1.24],
+                            [have_wayland_protocols=yes], [have_wayland_protocols=no])
+          PKG_CHECK_MODULES([GDK_WAYLAND], [gdk-wayland-3.0 >= $GTK_REQUIRED],
+                            [have_gdk_wayland=yes], [have_gdk_wayland=no])
+          PKG_CHECK_MODULES([GTK_LAYER_SHELL], [gtk-layer-shell-0 >= 0.6],
+                            [have_gtk_layer_shell=yes], [have_gtk_layer_shell=no])
+
+          # Check for wayland-scanner
+          AC_PATH_PROG([WAYLAND_SCANNER], [wayland-scanner], [no])
+
+          have_wayland=yes
+          AS_IF([test "x$have_wayland_client" != "xyes" ||
+                 test "x$have_wayland_protocols" != "xyes" ||
+                 test "x$have_gdk_wayland" != "xyes" ||
+                 test "x$have_gtk_layer_shell" != "xyes" ||
+                 test "x$WAYLAND_SCANNER" = "xno"],
+                [have_wayland=no])
+
+          AS_IF([test "x$enable_wayland" = "xyes"],
+                [
+                  AS_IF([test "x$have_wayland" != "xyes"],
+                        [AC_MSG_ERROR([Wayland support requested but not all dependencies were found:
+wayland-client >= 1.18.0, wayland-protocols >= 1.24, gdk-wayland-3.0 >= $GTK_REQUIRED,
+gtk-layer-shell-0 >= 0.6 and wayland-scanner are required])])
+                ],
+                [enable_wayland=$have_wayland])
         ],
-        [yes],
-        [
-          PKG_CHECK_MODULES([WAYLAND_CLIENT], [wayland-client >= 1.18.0])
-        ],
-        [no], [],
-        [*], [AC_MSG_ERROR([Invalid value for --enable-wayland])]
-)
+        [*], [AC_MSG_ERROR([Invalid value for --enable-wayland])])
 
 AS_IF([test "x$enable_wayland" = "xyes"],
       [
-        PKG_CHECK_MODULES([WAYLAND_PROTOCOLS], [wayland-protocols >= 1.24])
-        PKG_CHECK_MODULES([GDK_WAYLAND], [gdk-wayland-3.0 >= $GTK_REQUIRED])
-        PKG_CHECK_MODULES([GTK_LAYER_SHELL], [gtk-layer-shell-0 >= 0.6])
-
-        # Check for wayland-scanner
-        AC_PATH_PROG([WAYLAND_SCANNER], [wayland-scanner])
-        AS_IF([test -z "$WAYLAND_SCANNER"],
-              [AC_MSG_ERROR([wayland-scanner not found. Install wayland-tools or wayland-scanner.])])
-
         # Get wayland-protocols directory
         WAYLAND_PROTOCOLS_DIR=$($PKG_CONFIG --variable=pkgdatadir wayland-protocols)
         AC_SUBST([WAYLAND_PROTOCOLS_DIR])
 
         AC_DEFINE([ENABLE_WAYLAND], [1], [Enable Wayland support])
-      ]
-)
+      ])
 
 AM_CONDITIONAL([ENABLE_WAYLAND], [test "x$enable_wayland" = "xyes"])
 
@@ -261,12 +271,6 @@ AM_CONDITIONAL([BUILD_GDICT_APPLET], [test "x$enable_gdict_applet" = "xyes"])
 # Dictionary Applet in-process and Wayland support
 #============================================================================
 
-AC_ARG_ENABLE([wayland],
-              [AS_HELP_STRING([--enable-wayland],
-                              [Explicitly enable or disable Wayland support
-                               (default is to enable only if Wayland client development library is detected)])],
-              [enable_wayland=$enableval],
-              [enable_wayland=auto])
 AC_ARG_ENABLE([in-process],
               [AS_HELP_STRING([--enable-in-process],
                               [Enable in-process build of dictionary applet (default: no, required for wayland)])],
@@ -277,25 +281,27 @@ AC_ARG_ENABLE([in-process],
                enable_in_process=$enable_wayland])
 
 dnl $enable_in_process is gonna be either:
-dnl - "no" if explicitly disabled
-dnl - "yes" if explicitly enabled or if Wayland is explicitly enabled
-dnl - "auto" if nothing specific is requested, in which case, default back to "no"
+dnl - "no" if explicitly disabled or if Wayland is disabled
+dnl - "yes" if explicitly enabled or if Wayland is enabled
+dnl - anything else, in which case, default back to "no"
 AS_IF([test "x$enable_in_process" != xyes], [enable_in_process=no])
 
-WAYLAND_DEPS="gtk-layer-shell-0 >= $GTK_LAYER_SHELL_REQUIRED_VERSION wayland-client gdk-wayland-3.0 >= $GDK_WAYLAND_REQUIRED_VERSION"
-AS_CASE(["x$enable_wayland$enable_in_process"],
-        [xautoyes], [PKG_CHECK_MODULES([WAYLAND], [$WAYLAND_DEPS],
-                                       [enable_wayland=yes], [enable_wayland=no])],
-        [xyesyes], [PKG_CHECK_MODULES([WAYLAND], [$WAYLAND_DEPS])],
-        [xyes*], [AC_MSG_ERROR([--enable-wayland requires --enable-in-process])],
-        [enable_wayland=no])
+dnl Wayland support for the dictionary applet requires the in-process build
+AS_IF([test "x$enable_wayland" = "xyes" && test "x$enable_in_process" != "xyes"],
+      [AC_MSG_ERROR([--enable-wayland requires --enable-in-process])])
+
+dnl Reuse the pkg-config results from the Wayland checks above
+AS_IF([test "x$enable_wayland" = "xyes"],
+      [
+        WAYLAND_CFLAGS="$WAYLAND_CLIENT_CFLAGS $GDK_WAYLAND_CFLAGS $GTK_LAYER_SHELL_CFLAGS"
+        WAYLAND_LIBS="$WAYLAND_CLIENT_LIBS $GDK_WAYLAND_LIBS $GTK_LAYER_SHELL_LIBS"
+      ])
+AC_SUBST(WAYLAND_CFLAGS)
+AC_SUBST(WAYLAND_LIBS)
 
 AM_CONDITIONAL([ENABLE_IN_PROCESS], [test "x$enable_in_process" = "xyes"])
 AS_IF([test "x$enable_in_process" = "xyes"],
       [AC_DEFINE([ENABLE_IN_PROCESS], [1], [Enable if you want to build the panel applet in-process])])
-AM_CONDITIONAL(ENABLE_WAYLAND, [test "x$enable_wayland" = "xyes"])
-AS_IF([test "x$enable_wayland" = "xyes"],
-      [AC_DEFINE([ENABLE_WAYLAND], [1], [Enable if you want to build the panel applet in-process])])
 
 # Convenience C define selecting the right applet factory
 AS_IF([test "x$enable_in_process" = "xyes"],

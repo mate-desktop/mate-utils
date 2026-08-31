@@ -24,9 +24,8 @@
 
 #include "screenshot-utils.h"
 
-#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
+/* This file includes stubs in case Wayland support is disabled */
 #include "wayland-screenshot.h"
-#endif
 
 #include <gdk/gdkkeysyms.h>
 #include <gtk/gtk.h>
