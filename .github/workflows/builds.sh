@@ -14,14 +14,6 @@ infoend() {
 }
 
 if [ -f autogen.sh ]; then
-	if [ "$DISTRO" = "fedora" ]; then
-		# disable pt language for help in search tool
-		# See: https://github.com/itstool/itstool/issues/36
-		infobegin "Apply Portuguese gsearchtool help workaround"
-		sed -i 's/^IGNORE_HELP_LINGUAS =.*$/IGNORE_HELP_LINGUAS = pt/' gsearchtool/help/Makefile.am
-		infoend
-	fi
-
 	infobegin "Configure (autotools)"
 	NOCONFIGURE=1 ./autogen.sh
 	./configure --prefix=/usr --enable-compile-warnings=maximum || {
