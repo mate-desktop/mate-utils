@@ -237,6 +237,7 @@ dnl - "yes" if explicitly enabled or if Wayland is explicitly enabled
 dnl - "auto" if nothing specific is requested, in which case, default back to "no"
 
 GTK_LAYER_SHELL_REQUIRED_VERSION=0.6
+GDK_WAYLAND_REQUIRED_VERSION=3.24.0
 
 AS_IF([test "x$enable_in_process" != xyes], [enable_in_process=no])
 
