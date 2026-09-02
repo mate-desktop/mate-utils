@@ -44,7 +44,16 @@ EXTRA_DIST = \
 	xmldocs.make \
 	COPYING.libs \
 	COPYING.docs \
-	README.md
+	README.md \
+	meson.build \
+	meson_options.txt \
+	baobab/meson.build \
+	gsearchtool/meson.build \
+	logview/meson.build \
+	mate-dictionary/meson.build \
+	mate-disk-image-mounter/meson.build \
+	mate-screenshot/meson.build \
+	po/meson.build
 
 DISTCLEANFILES =                \
 	gtk-doc.make
