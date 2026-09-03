@@ -64,7 +64,7 @@ EXTRA_DIST = \
 	mate-dictionary/data/meson.build \
 	mate-dictionary/docs/meson.build \
 	mate-dictionary/help/meson.build \
-	mate-dictionary/libdict/meson.build \
+	mate-dictionary/libgdict/meson.build \
 	mate-dictionary/src/meson.build \
 	mate-disk-image-mounter/meson.build \
 	mate-disk-image-mounter/data/meson.build \
