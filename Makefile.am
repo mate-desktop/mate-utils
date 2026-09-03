@@ -48,11 +48,30 @@ EXTRA_DIST = \
 	meson.build \
 	meson_options.txt \
 	baobab/meson.build \
+	baobab/data/meson.build \
+	baobab/help/meson.build \
+	baobab/src/meson.build \
 	gsearchtool/meson.build \
+	gsearchtool/data/meson.build \
+	gsearchtool/help/meson.build \
+	gsearchtool/libmateui-deprecated/meson.build \
+	gsearchtool/src/meson.build \
 	logview/meson.build \
+	logview/data/meson.build \
+	logview/help/meson.build \
+	logview/src/meson.build \
 	mate-dictionary/meson.build \
+	mate-dictionary/data/meson.build \
+	mate-dictionary/docs/meson.build \
+	mate-dictionary/help/meson.build \
+	mate-dictionary/libdict/meson.build \
+	mate-dictionary/src/meson.build \
 	mate-disk-image-mounter/meson.build \
+	mate-disk-image-mounter/data/meson.build \
+	mate-disk-image-mounter/src/meson.build \
 	mate-screenshot/meson.build \
+	mate-screenshot/data/meson.build \
+	mate-screenshot/src/meson.build \
 	po/meson.build
 
 DISTCLEANFILES =                \
