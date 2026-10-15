@@ -916,9 +916,13 @@ window_size_changed_cb (GtkWidget *widget, GdkEventConfigure *event,
                         gpointer data)
 {
   LogviewWindow *window = data;
+  gint width;
+  gint height;
+
+  gtk_window_get_size (GTK_WINDOW (window), &width, &height);
 
   logview_prefs_store_window_size (window->priv->prefs,
-                                   event->width, event->height);
+                                   width, height);
 
   return FALSE;
 }
