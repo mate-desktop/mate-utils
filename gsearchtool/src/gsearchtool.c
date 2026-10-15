@@ -2703,8 +2703,7 @@ gsearch_window_size_allocate (GtkWidget * widget,
                               GSearchWindow * gsearch)
 {
 	if (gsearch->is_window_maximized == FALSE) {
-		gsearch->window_width = allocation->width;
-		gsearch->window_height = allocation->height;
+		gtk_window_get_size (GTK_WINDOW (gsearch->window), &gsearch->window_width, &gsearch->window_height);
 	}
 }
 
