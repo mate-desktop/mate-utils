@@ -14,16 +14,16 @@ msgstr ""
 "Project-Id-Version: mate-utils 1.27.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org/\n"
 "POT-Creation-Date: 2023-09-10 10:29+0200\n"
-"PO-Revision-Date: 2026-06-18 14:10+0000\n"
+"PO-Revision-Date: 2026-10-08 03:53+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://translate.fedoraproject.org/projects/mate-"
-"desktop/mate-utils/oc/>\n"
+"desktop/applications/mate-utils/oc/>\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.6.1\n"
+"X-Generator: Weblate 2026.10\n"
 
 #: baobab/data/mate-disk-usage-analyzer.desktop.in.in:3
 #: baobab/data/mate-disk-usage-analyzer.appdata.xml.in:7
@@ -223,10 +223,10 @@ msgid ""
 " use to view and monitor your disk usage and folder structure. It displays "
 "summary information in ring or treemap charts."
 msgstr ""
-"Coma son nom o indica, l'Analisador d'utilizacion del disc es un utilitari "
-"grafic que podètz utilizar per visualizar e susvelhar l'utilizacion del disc"
-" e l'estructura dels dossièrs. Aficha las informacions resumidas dins de "
-"grafics en camembert o en arborescéncia."
+"Coma son nom o indica, l'Analisador d’utilizacion dels disques es un "
+"utilitari grafic que podètz utilizar per visualizar e susvelhar "
+"l'utilizacion del disc e l'estructura dels dossièrs. Aficha las informacions "
+"resumidas dins de grafics en camembèrt o en arborescéncia."
 
 #: baobab/data/mate-disk-usage-analyzer.appdata.xml.in:15
 msgid ""
@@ -273,7 +273,7 @@ msgstr "Utilizacion totala del sistèma de fichièrs"
 
 #: baobab/src/baobab.c:458
 msgid "contains hardlinks for:"
-msgstr ""
+msgstr "conten de ligams fòrts per a :"
 
 #: baobab/src/baobab.c:467
 #, c-format
@@ -342,27 +342,27 @@ msgstr "Prigondor maximum"
 
 #: baobab/src/baobab-chart.c:204
 msgid "The maximum depth drawn in the chart from the root"
-msgstr ""
+msgstr "La prigondor maximala indicada sul grafic dempuèi la raiç"
 
 #: baobab/src/baobab-chart.c:213
 msgid "Chart model"
-msgstr ""
+msgstr "Modèl de grafic"
 
 #: baobab/src/baobab-chart.c:214
 msgid "Set the model of the chart"
-msgstr ""
+msgstr "Definir lo modèl de grafic"
 
 #: baobab/src/baobab-chart.c:221
 msgid "Chart root node"
-msgstr ""
+msgstr "Nos raiç del grafic"
 
 #: baobab/src/baobab-chart.c:222
 msgid "Set the root node from the model"
-msgstr ""
+msgstr "Definir lo nos raiç a partir del modèl"
 
 #: baobab/src/baobab-chart.c:1708
 msgid "Cannot create pixbuf image!"
-msgstr ""
+msgstr "Impossible de crear l’imatge pixbuf !"
 
 #: baobab/src/baobab-chart.c:1718
 msgid "Save Snapshot"
@@ -550,7 +550,7 @@ msgstr "Dubertura impossibla del dossièr « %s »"
 
 #: baobab/src/baobab-utils.c:381
 msgid "There is no installed viewer capable of displaying the folder."
-msgstr ""
+msgstr "I a pas cap de visualizaira installada que pòsca afichar lo dossièr."
 
 #: baobab/src/baobab-utils.c:448
 #, c-format
@@ -722,17 +722,19 @@ msgstr ""
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:24
 msgid "Disable Quick Search Second Scan"
-msgstr ""
+msgstr "Desactivar la segonda passa de recèrca rapida"
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:25
 msgid ""
 "This key determines if the search tool disables the use of the find command "
 "after performing a quick search."
 msgstr ""
+"Aquesta clau determina se l’aisina de recèrca desactiva l’utilizacion de la "
+"comanda «find» aprèp aver efectuat una recèrca rapida."
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:29
 msgid "Quick Search Second Scan Excluded Paths"
-msgstr ""
+msgstr "Camins excluses de la segonda passa de la recèrca rapida"
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:30
 msgid ""
@@ -742,16 +744,23 @@ msgid ""
 "not been indexed. The wildcards '*' and '?' are supported. The default value"
 " is /."
 msgstr ""
+"Aquesta clau definís los camins que l’aisina de recèrca exclurà d’una "
+"segonda analisi quand efectua una recèrca rapida. La segonda analisi utiliza "
+"la comanda find per cercar de fichièrs. L’objectiu de la segonda analisi es "
+"de trobar los fichièrs que son pas estats indexats. Los caractèrs de "
+"substitucion '*' e '?' son admeses. La valor per defaut es /."
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:34
 msgid "Search Result Columns Order"
-msgstr ""
+msgstr "Òrdre de las colomnas dels resultats de recèrca"
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:35
 msgid ""
 "This key defines the order of the columns in the search results. This key "
 "should not be modified by the user."
 msgstr ""
+"Aquesta clau definís l’òrdre de las colomnas dins los resultats de recèrca. "
+"Aquesta clau deu pas èsser modificada per l’utilizaire."
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:39
 msgid "Default Window Width"
@@ -763,6 +772,9 @@ msgid ""
 " search tool between sessions. Setting it to -1 will make the search tool "
 "use the default width."
 msgstr ""
+"Aquesta clau definís la largor de la fenèstra e servís a memorizar la talha "
+"de l'aisina de recèrca entre las sessions. La definir a -1 farà que l'aisina "
+"de recèrca utilize la largor per defaut."
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:44
 msgid "Default Window Height"
@@ -774,6 +786,9 @@ msgid ""
 "the search tool between sessions. Setting it to -1 will make the search tool"
 " use the default height."
 msgstr ""
+"Aquesta clau definís la nautor de la fenèstra e servís a memorizar la talha "
+"de l’aisina de recèrca entre las sessions. La definir a -1 farà que l’aisina "
+"de recèrca utilize la nautor per defaut."
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:49
 msgid "Default Window Maximized"
@@ -783,10 +798,12 @@ msgstr "Fenèstra per defaut maximalizada"
 msgid ""
 "This key determines if the search tool window starts in a maximized state."
 msgstr ""
+"Aquesta clau determina se la fenèstra de l'aisina de recèrca s'aviá en estat "
+"maximizat."
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:54
 msgid "Look in Folder"
-msgstr ""
+msgstr "Cercar dins lo dossièr"
 
 #: gsearchtool/data/org.mate.search-tool.gschema.xml.in:55
 msgid "This key defines the default value of the \"Look in Folder\" widget."
