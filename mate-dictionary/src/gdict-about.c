@@ -25,7 +25,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <glib/gi18n.h>
+#include <glib/gi18n-lib.h>
 #include <gdk-pixbuf/gdk-pixbuf.h>
 
 #include "gdict-about.h"
@@ -78,7 +78,7 @@ gdict_show_about_dialog (GtkWidget *parent)
     *p = _(*p);
 #endif
 
-  gtk_show_about_dialog (GTK_IS_WINDOW (parent) ? GTK_WINDOW (parent) : NULL,
+  GtkWidget *about = g_object_new (GTK_TYPE_ABOUT_DIALOG,
 			 "program-name", _("Dictionary"),
   			 "version", VERSION,
 			 "title", _("About Dictionary"),
@@ -94,5 +94,15 @@ gdict_show_about_dialog (GtkWidget *parent)
 			 "screen", gtk_widget_get_screen (parent),
   			 NULL);
 
+  if (GTK_IS_WINDOW (parent))
+    {
+      gtk_window_set_modal (GTK_WINDOW (about), TRUE);
+      gtk_window_set_transient_for (GTK_WINDOW (about), GTK_WINDOW(parent));
+      gtk_window_set_destroy_with_parent (GTK_WINDOW (about), TRUE);
+    }
+
+  g_signal_connect_swapped (about, "response",
+                            G_CALLBACK (gtk_widget_destroy), about);
+  gtk_widget_show (about);
   g_free(license_trans);
 }

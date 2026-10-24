@@ -30,7 +30,7 @@
 #include <unistd.h>
 #endif
 
-#include <glib/gi18n.h>
+#include <glib/gi18n-lib.h>
 #include <gio/gio.h>
 
 #include "gdict-source-dialog.h"
@@ -583,6 +583,7 @@ gdict_source_dialog_constructor (GType                  type,
 
   /* get the UI from the GtkBuilder file */
   dialog->builder = gtk_builder_new ();
+  gtk_builder_set_translation_domain (dialog->builder, GETTEXT_PACKAGE);
   gtk_builder_add_from_file (dialog->builder, GDICT_SOURCE_UI, &error);
 
   if (error) {
