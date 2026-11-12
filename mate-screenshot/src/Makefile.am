@@ -76,6 +76,7 @@ EXT_IMAGE_CAPTURE_SOURCE_XML = $(WAYLAND_PROTOCOLS_DIR)/staging/ext-image-captur
 EXT_IMAGE_COPY_CAPTURE_XML = $(WAYLAND_PROTOCOLS_DIR)/staging/ext-image-copy-capture/ext-image-copy-capture-v1.xml
 EXT_FOREIGN_TOPLEVEL_XML = $(WAYLAND_PROTOCOLS_DIR)/staging/ext-foreign-toplevel-list/ext-foreign-toplevel-list-v1.xml
 WLR_SCREENCOPY_XML = $(srcdir)/../protocols/wlr-screencopy-unstable-v1.xml
+WLR_FOREIGN_TOPLEVEL_XML = $(srcdir)/../protocols/wlr-foreign-toplevel-management-unstable-v1.xml
 
 # Generate per-protocol client headers and code
 ext-image-capture-source-client.h: $(EXT_IMAGE_CAPTURE_SOURCE_XML)
@@ -96,6 +97,12 @@ wlr-screencopy-client.h: $(WLR_SCREENCOPY_XML)
 wlr-screencopy-client.c: $(WLR_SCREENCOPY_XML)
 	$(AM_V_GEN) $(WAYLAND_SCANNER) private-code $< $@
 
+wlr-foreign-toplevel-client.h: $(WLR_FOREIGN_TOPLEVEL_XML)
+	$(AM_V_GEN) $(WAYLAND_SCANNER) client-header $< $@
+
+wlr-foreign-toplevel-client.c: $(WLR_FOREIGN_TOPLEVEL_XML)
+	$(AM_V_GEN) $(WAYLAND_SCANNER) private-code $< $@
+
 ext-foreign-toplevel-list-client.h: $(EXT_FOREIGN_TOPLEVEL_XML)
 	$(AM_V_GEN) $(WAYLAND_SCANNER) client-header $< $@
 
@@ -111,6 +118,8 @@ WAYLAND_PROTOCOL_SRCS =			\
 	wlr-screencopy-client.h		\
 	ext-foreign-toplevel-list-client.c	\
 	ext-foreign-toplevel-list-client.h	\
+	wlr-foreign-toplevel-client.c	\
+	wlr-foreign-toplevel-client.h	\
 	$(NULL)
 
 # Add Wayland-specific sources and flags
@@ -127,6 +136,7 @@ BUILT_SOURCES +=				\
 	ext-image-copy-capture-client.h	\
 	wlr-screencopy-client.h		\
 	ext-foreign-toplevel-list-client.h	\
+	wlr-foreign-toplevel-client.h	\
 	$(NULL)
 
 mate_screenshot_CFLAGS +=		\
@@ -154,6 +164,8 @@ CLEANFILES =				\
 	wlr-screencopy-client.c		\
 	ext-foreign-toplevel-list-client.h	\
 	ext-foreign-toplevel-list-client.c	\
+	wlr-foreign-toplevel-client.h	\
+	wlr-foreign-toplevel-client.c	\
 	$(NULL)
 
 install-exec-local:
