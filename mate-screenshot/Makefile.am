@@ -15,6 +15,7 @@
 
 SUBDIRS = data src
 
-EXTRA_DIST = protocols/wlr-screencopy-unstable-v1.xml
+EXTRA_DIST = protocols/wlr-screencopy-unstable-v1.xml \
+	protocols/wlr-foreign-toplevel-management-unstable-v1.xml
 
 -include $(top_srcdir)/git.mk
