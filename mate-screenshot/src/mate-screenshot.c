@@ -479,12 +479,6 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
   gtk_widget_show (radio);
   window_radio = radio;
 
-#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
-  /** Capturing individual windows currently not available in Wayland **/
-  if (wayland_screenshot_is_available ())
-    gtk_widget_hide (window_radio);
-#endif
-
   /** Grab area of the desktop **/
   radio = gtk_radio_button_new_with_mnemonic (group,
                                               _("Select _area to grab"));
@@ -854,6 +848,19 @@ finish_prepare_screenshot (char *initial_uri, GdkWindow *window, GdkRectangle *r
   ScreenshotDialog *dialog;
   gboolean include_mask = (!take_window_shot && !take_area_shot);
 
+#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
+  if (take_window_shot && wayland_screenshot_is_available ())
+    {
+      screenshot = wayland_screenshot_capture_active_window (include_pointer);
+      if (screenshot == NULL)
+        {
+          /* No usable focused window: take the whole screen instead */
+          take_window_shot = FALSE;
+          screenshot = screenshot_get_pixbuf (window, NULL, include_pointer, FALSE, FALSE);
+        }
+    }
+  else
+#endif
   /* always disable window border for full-desktop or selected-area screenshots */
   if (!take_window_shot)
     screenshot = screenshot_get_pixbuf (window, rectangle, include_pointer, FALSE, include_mask);
@@ -1069,6 +1076,11 @@ find_current_window (void)
 
   if (take_window_shot)
     {
+#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
+      /* The window is picked by the Wayland capture code */
+      if (wayland_screenshot_is_available ())
+        return gdk_get_default_root_window ();
+#endif
       window = screenshot_find_current_window ();
       if (!window)
 	{
@@ -1430,12 +1442,6 @@ main (int argc, char *argv[])
 #if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
   if (wayland_screenshot_is_available ())
     {
-      if (window_arg)
-        {
-          g_printerr (_("Error: window capture is not supported on Wayland.\n"));
-          exit (1);
-        }
-
       if (include_border_arg)
         g_printerr (_("Warning: --include-border is not supported on Wayland.\n"));
 

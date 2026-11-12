@@ -47,6 +47,9 @@ GdkPixbuf *wayland_screenshot_capture_output (GdkMonitor *monitor, gboolean incl
 /* Capture a specific region */
 GdkPixbuf *wayland_screenshot_capture_region (GdkRectangle *region, gboolean include_pointer);
 
+/* Capture the focused window (needs foreign toplevel and image copy capture) */
+GdkPixbuf *wayland_screenshot_capture_active_window (gboolean include_pointer);
+
 #else /* !(ENABLE_WAYLAND && GDK_WINDOWING_WAYLAND) */
 
 /* Stub implementations when Wayland support is disabled */
@@ -81,6 +84,12 @@ wayland_screenshot_capture_output (GdkMonitor *monitor, gboolean include_pointer
 
 static inline GdkPixbuf *
 wayland_screenshot_capture_region (GdkRectangle *region, gboolean include_pointer)
+{
+  return NULL;
+}
+
+static inline GdkPixbuf *
+wayland_screenshot_capture_active_window (gboolean include_pointer)
 {
   return NULL;
 }

@@ -37,6 +37,8 @@
 #include "ext-image-capture-source-client.h"
 #include "ext-image-copy-capture-client.h"
 #include "wlr-screencopy-client.h"
+#include "ext-foreign-toplevel-list-client.h"
+#include "wlr-foreign-toplevel-client.h"
 
 #include <wayland-client.h>
 
@@ -47,7 +49,26 @@ typedef struct {
   struct zwlr_screencopy_manager_v1 *screencopy_manager;
   struct ext_output_image_capture_source_manager_v1 *output_image_capture_source_manager;
   struct ext_image_copy_capture_manager_v1 *image_copy_capture_manager;
+  struct ext_foreign_toplevel_image_capture_source_manager_v1 *toplevel_source_manager;
+  struct ext_foreign_toplevel_list_v1 *toplevel_list;
+  struct zwlr_foreign_toplevel_manager_v1 *wlr_toplevel_manager;
+  GList *ext_toplevels;   /* ExtToplevel */
+  GList *wlr_toplevels;   /* WlrToplevel */
 } ClientData;
+
+typedef struct {
+  struct ext_foreign_toplevel_handle_v1 *handle;
+  char *title;
+  char *app_id;
+} ExtToplevel;
+
+typedef struct {
+  struct zwlr_foreign_toplevel_handle_v1 *handle;
+  char *title;
+  char *app_id;
+  gboolean activated;
+  gboolean minimized;
+} WlrToplevel;
 
 typedef struct {
   ClientData *client_data;
@@ -176,6 +197,137 @@ convert_buffer_to_pixbuf (OutputData *output)
   return pixbuf;
 }
 
+/* --- Toplevel listing --- */
+
+static void
+ext_top_identifier (void *d, struct ext_foreign_toplevel_handle_v1 *h, const char *id) { }
+
+static void
+ext_top_title (void *d, struct ext_foreign_toplevel_handle_v1 *h, const char *title)
+{
+  ExtToplevel *t = d;
+  g_free (t->title);
+  t->title = g_strdup (title);
+}
+
+static void
+ext_top_app_id (void *d, struct ext_foreign_toplevel_handle_v1 *h, const char *app_id)
+{
+  ExtToplevel *t = d;
+  g_free (t->app_id);
+  t->app_id = g_strdup (app_id);
+}
+
+static void
+ext_top_done (void *d, struct ext_foreign_toplevel_handle_v1 *h) { }
+
+static void
+ext_top_closed (void *d, struct ext_foreign_toplevel_handle_v1 *h) { }
+
+static const struct ext_foreign_toplevel_handle_v1_listener ext_top_listener = {
+  .closed = ext_top_closed,
+  .done = ext_top_done,
+  .title = ext_top_title,
+  .app_id = ext_top_app_id,
+  .identifier = ext_top_identifier,
+};
+
+static void
+ext_list_toplevel (void *data, struct ext_foreign_toplevel_list_v1 *list,
+                   struct ext_foreign_toplevel_handle_v1 *handle)
+{
+  ClientData *cd = data;
+  ExtToplevel *t = g_new0 (ExtToplevel, 1);
+
+  t->handle = handle;
+  ext_foreign_toplevel_handle_v1_add_listener (handle, &ext_top_listener, t);
+  cd->ext_toplevels = g_list_append (cd->ext_toplevels, t);
+}
+
+static void
+ext_list_finished (void *data, struct ext_foreign_toplevel_list_v1 *list) { }
+
+static const struct ext_foreign_toplevel_list_v1_listener ext_list_listener = {
+  .toplevel = ext_list_toplevel,
+  .finished = ext_list_finished,
+};
+
+static void
+wlr_top_title (void *d, struct zwlr_foreign_toplevel_handle_v1 *h, const char *title)
+{
+  WlrToplevel *t = d;
+  g_free (t->title);
+  t->title = g_strdup (title);
+}
+
+static void
+wlr_top_app_id (void *d, struct zwlr_foreign_toplevel_handle_v1 *h, const char *app_id)
+{
+  WlrToplevel *t = d;
+  g_free (t->app_id);
+  t->app_id = g_strdup (app_id);
+}
+
+static void
+wlr_top_output (void *d, struct zwlr_foreign_toplevel_handle_v1 *h, struct wl_output *o) { }
+
+static void
+wlr_top_state (void *d, struct zwlr_foreign_toplevel_handle_v1 *h, struct wl_array *state)
+{
+  WlrToplevel *t = d;
+  uint32_t *entry;
+
+  t->activated = FALSE;
+  t->minimized = FALSE;
+  wl_array_for_each (entry, state)
+    {
+      if (*entry == ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_STATE_ACTIVATED)
+        t->activated = TRUE;
+      else if (*entry == ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_STATE_MINIMIZED)
+        t->minimized = TRUE;
+    }
+}
+
+static void
+wlr_top_done (void *d, struct zwlr_foreign_toplevel_handle_v1 *h) { }
+
+static void
+wlr_top_closed (void *d, struct zwlr_foreign_toplevel_handle_v1 *h)
+{
+  WlrToplevel *t = d;
+  t->activated = FALSE;
+}
+
+static const struct zwlr_foreign_toplevel_handle_v1_listener wlr_top_listener = {
+  .title = wlr_top_title,
+  .app_id = wlr_top_app_id,
+  .output_enter = wlr_top_output,
+  .output_leave = wlr_top_output,
+  .state = wlr_top_state,
+  .done = wlr_top_done,
+  .closed = wlr_top_closed,
+};
+
+static void
+wlr_manager_toplevel (void *data, struct zwlr_foreign_toplevel_manager_v1 *manager,
+                      struct zwlr_foreign_toplevel_handle_v1 *handle)
+{
+  ClientData *cd = data;
+  WlrToplevel *t = g_new0 (WlrToplevel, 1);
+
+  t->handle = handle;
+  zwlr_foreign_toplevel_handle_v1_add_listener (handle, &wlr_top_listener, t);
+  cd->wlr_toplevels = g_list_append (cd->wlr_toplevels, t);
+}
+
+static void
+wlr_manager_finished (void *data, struct zwlr_foreign_toplevel_manager_v1 *manager) { }
+
+static const struct zwlr_foreign_toplevel_manager_v1_listener wlr_manager_listener = {
+  .toplevel = wlr_manager_toplevel,
+  .finished = wlr_manager_finished,
+};
+
 /* --- Registry --- */
 
 static void
@@ -195,6 +347,22 @@ handle_global (void *data, struct wl_registry *registry, uint32_t name,
   else if (g_strcmp0 (interface, ext_image_copy_capture_manager_v1_interface.name) == 0)
     cd->image_copy_capture_manager = wl_registry_bind (registry, name,
       &ext_image_copy_capture_manager_v1_interface, 1);
+  else if (g_strcmp0 (interface, ext_foreign_toplevel_image_capture_source_manager_v1_interface.name) == 0)
+    cd->toplevel_source_manager = wl_registry_bind (registry, name,
+      &ext_foreign_toplevel_image_capture_source_manager_v1_interface, 1);
+  else if (g_strcmp0 (interface, ext_foreign_toplevel_list_v1_interface.name) == 0)
+    {
+      cd->toplevel_list = wl_registry_bind (registry, name,
+        &ext_foreign_toplevel_list_v1_interface, 1);
+      ext_foreign_toplevel_list_v1_add_listener (cd->toplevel_list, &ext_list_listener, cd);
+    }
+  else if (g_strcmp0 (interface, zwlr_foreign_toplevel_manager_v1_interface.name) == 0)
+    {
+      cd->wlr_toplevel_manager = wl_registry_bind (registry, name,
+        &zwlr_foreign_toplevel_manager_v1_interface, 1);
+      zwlr_foreign_toplevel_manager_v1_add_listener (cd->wlr_toplevel_manager,
+                                                     &wlr_manager_listener, cd);
+    }
 }
 
 static void
@@ -470,6 +638,36 @@ free_client_data (ClientData *cd)
     ext_output_image_capture_source_manager_v1_destroy (cd->output_image_capture_source_manager);
   if (cd->image_copy_capture_manager != NULL)
     ext_image_copy_capture_manager_v1_destroy (cd->image_copy_capture_manager);
+  for (GList *l = cd->ext_toplevels; l; l = l->next)
+    {
+      ExtToplevel *t = l->data;
+      ext_foreign_toplevel_handle_v1_destroy (t->handle);
+      g_free (t->title);
+      g_free (t->app_id);
+      g_free (t);
+    }
+  g_list_free (cd->ext_toplevels);
+  for (GList *l = cd->wlr_toplevels; l; l = l->next)
+    {
+      WlrToplevel *t = l->data;
+      zwlr_foreign_toplevel_handle_v1_destroy (t->handle);
+      g_free (t->title);
+      g_free (t->app_id);
+      g_free (t);
+    }
+  g_list_free (cd->wlr_toplevels);
+  if (cd->toplevel_list != NULL)
+    {
+      ext_foreign_toplevel_list_v1_stop (cd->toplevel_list);
+      ext_foreign_toplevel_list_v1_destroy (cd->toplevel_list);
+    }
+  if (cd->wlr_toplevel_manager != NULL)
+    {
+      zwlr_foreign_toplevel_manager_v1_stop (cd->wlr_toplevel_manager);
+      zwlr_foreign_toplevel_manager_v1_destroy (cd->wlr_toplevel_manager);
+    }
+  if (cd->toplevel_source_manager != NULL)
+    ext_foreign_toplevel_image_capture_source_manager_v1_destroy (cd->toplevel_source_manager);
   wl_registry_destroy (cd->registry);
 }
 
@@ -654,6 +852,99 @@ capture_screenshot (G_GNUC_UNUSED gboolean capture_all_monitors, gboolean show_m
   return screenshot;
 }
 
+static ExtToplevel *
+find_active_ext_toplevel (ClientData *cd)
+{
+  for (GList *l = cd->wlr_toplevels; l; l = l->next)
+    {
+      WlrToplevel *w = l->data;
+
+      if (!w->activated || w->minimized)
+        continue;
+
+      for (GList *e = cd->ext_toplevels; e; e = e->next)
+        {
+          ExtToplevel *t = e->data;
+          if (g_strcmp0 (t->app_id, w->app_id) == 0 &&
+              g_strcmp0 (t->title, w->title) == 0)
+            return t;
+        }
+    }
+  return NULL;
+}
+
+static GdkPixbuf *
+capture_active_window (gboolean show_mouse)
+{
+  ClientData client_data = { 0 };
+  OutputData *output;
+  ExtToplevel *toplevel;
+  GdkPixbuf *screenshot = NULL;
+  struct ext_image_capture_source_v1 *source;
+
+  client_data.display = gdk_wayland_display_get_wl_display (gdk_display_get_default ());
+  client_data.registry = wl_display_get_registry (client_data.display);
+  wl_registry_add_listener (client_data.registry, &registry_listener, &client_data);
+  wl_display_roundtrip (client_data.display);
+  /* Toplevel handles, then their properties */
+  wl_display_roundtrip (client_data.display);
+  wl_display_roundtrip (client_data.display);
+
+  if (client_data.shm == NULL || client_data.image_copy_capture_manager == NULL ||
+      client_data.toplevel_source_manager == NULL || client_data.toplevel_list == NULL ||
+      client_data.wlr_toplevel_manager == NULL)
+    {
+      g_warning ("Wayland screenshot: window capture protocols not available");
+      goto out;
+    }
+
+  toplevel = find_active_ext_toplevel (&client_data);
+  if (toplevel == NULL)
+    {
+      g_warning ("Wayland screenshot: no active window found");
+      goto out;
+    }
+
+  output = g_new0 (OutputData, 1);
+  output->client_data = &client_data;
+
+  source = ext_foreign_toplevel_image_capture_source_manager_v1_create_source (
+    client_data.toplevel_source_manager, toplevel->handle);
+  output->image_copy_capture_session =
+    ext_image_copy_capture_manager_v1_create_session (
+      client_data.image_copy_capture_manager, source,
+      show_mouse ? EXT_IMAGE_COPY_CAPTURE_MANAGER_V1_OPTIONS_PAINT_CURSORS : 0);
+  ext_image_copy_capture_session_v1_add_listener (output->image_copy_capture_session,
+                                                  &ext_session_listener, output);
+  ext_image_capture_source_v1_destroy (source);
+
+  while (!output->capture_done && !output->capture_failed)
+    {
+      if (wl_display_dispatch (client_data.display) < 0)
+        {
+          output->capture_failed = TRUE;
+          break;
+        }
+    }
+
+  if (!output->capture_failed)
+    {
+      GdkPixbuf *raw = convert_buffer_to_pixbuf (output);
+
+      if (raw != NULL)
+        {
+          screenshot = gdk_pixbuf_copy (raw);
+          g_object_unref (raw);
+        }
+    }
+
+  free_output_data (output);
+
+ out:
+  free_client_data (&client_data);
+  return screenshot;
+}
+
 /* --- Public API --- */
 
 gboolean
@@ -720,6 +1011,15 @@ wayland_screenshot_capture_region (GdkRectangle *region, gboolean include_pointe
     monitor = gdk_display_get_monitor (display, 0);
 
   return wayland_screenshot_capture_output (monitor, include_pointer);
+}
+
+GdkPixbuf *
+wayland_screenshot_capture_active_window (gboolean include_pointer)
+{
+  if (!wayland_initialized)
+    return NULL;
+
+  return capture_active_window (include_pointer);
 }
 
 #endif /* ENABLE_WAYLAND && GDK_WINDOWING_WAYLAND */
