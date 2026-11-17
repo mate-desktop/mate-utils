@@ -29,10 +29,19 @@ G_BEGIN_DECLS
 
 gboolean wayland_select_region (GdkRectangle *region);
 
+/* Whether the compositor offers what the selection overlay needs */
+gboolean wayland_select_region_is_supported (void);
+
 #else
 
 static inline gboolean
 wayland_select_region (GdkRectangle *region)
+{
+  return FALSE;
+}
+
+static inline gboolean
+wayland_select_region_is_supported (void)
 {
   return FALSE;
 }

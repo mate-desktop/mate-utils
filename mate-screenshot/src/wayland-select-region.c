@@ -371,6 +371,12 @@ cb_motion_notify (GtkWidget      *widget,
 }
 
 gboolean
+wayland_select_region_is_supported (void)
+{
+  return gtk_layer_is_supported ();
+}
+
+gboolean
 wayland_select_region (GdkRectangle *region)
 {
   RubberBandData rbdata = {0};
