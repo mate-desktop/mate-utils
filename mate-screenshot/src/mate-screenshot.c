@@ -130,8 +130,16 @@ static GtkWidget *effect_combo = NULL;
 static GtkWidget *effect_label = NULL;
 static GtkWidget *effects_vbox = NULL;
 static GtkWidget *delay_hbox = NULL;
+static GtkWidget *desktop_radio = NULL;
 static GtkWidget *window_radio = NULL;
 static GtkWidget *area_radio = NULL;
+
+#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
+/* FALSE when the Wayland compositor lacks a protocol the mode needs */
+static gboolean screen_supported = TRUE;
+static gboolean window_supported = TRUE;
+static gboolean area_supported = TRUE;
+#endif
 
 void loop_dialog_screenshot (void);
 
@@ -412,6 +420,19 @@ create_effects_frame (GtkWidget   *outer_vbox,
 #endif
 }
 
+#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
+static void
+disable_unsupported_mode (GtkWidget *radio,
+                          gboolean   supported)
+{
+  if (supported)
+    return;
+
+  gtk_widget_set_sensitive (radio, FALSE);
+  gtk_widget_set_tooltip_text (radio, _("Not supported by this compositor"));
+}
+#endif
+
 static void
 create_screenshot_frame (GtkWidget   *outer_vbox,
                          const gchar *frame_title)
@@ -465,6 +486,7 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
   gtk_box_pack_start (GTK_BOX (vbox), radio, FALSE, FALSE, 0);
   group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (radio));
   gtk_widget_show (radio);
+  desktop_radio = radio;
 
   /** Grab current window **/
   radio = gtk_radio_button_new_with_mnemonic (group,
@@ -490,6 +512,15 @@ create_screenshot_frame (GtkWidget   *outer_vbox,
   gtk_box_pack_start (GTK_BOX (vbox), radio, FALSE, FALSE, 0);
   gtk_widget_show (radio);
   area_radio = radio;
+
+#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
+  if (wayland_screenshot_is_available ())
+    {
+      disable_unsupported_mode (desktop_radio, screen_supported);
+      disable_unsupported_mode (window_radio, window_supported);
+      disable_unsupported_mode (area_radio, area_supported);
+    }
+#endif
 
   /** Grab after delay **/
   delay_hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
@@ -1335,6 +1366,57 @@ signal_handler (gpointer data)
   return FALSE;
 }
 
+#if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
+/* Find which capture modes the compositor supports, refuse command line
+ * requests for unsupported ones and steer the saved mode to a usable one */
+static void
+check_wayland_capture_modes (gboolean window_arg,
+                             gboolean area_arg)
+{
+  screen_supported = wayland_screenshot_can_capture_screen ();
+  window_supported = wayland_screenshot_can_capture_window ();
+  /* The selected area is cropped from a whole-screen capture */
+  area_supported = screen_supported && wayland_select_region_is_supported ();
+
+  if (!screen_supported && !window_supported)
+    {
+      g_printerr (_("Error: the compositor does not offer a screen capture protocol.\n"));
+      screenshot_show_error_dialog (NULL,
+                                    _("Unable to take a screenshot"),
+                                    _("The compositor does not offer a screen capture protocol."));
+      exit (1);
+    }
+
+  if (!window_arg && !area_arg && !interactive_arg && !screen_supported)
+    {
+      g_printerr (_("Error: whole-screen capture is not supported by this compositor.\n"));
+      exit (1);
+    }
+
+  if (window_arg && !window_supported)
+    {
+      g_printerr (_("Error: window capture is not supported by this compositor.\n"));
+      exit (1);
+    }
+
+  if (area_arg && !area_supported)
+    {
+      g_printerr (_("Error: area selection is not supported by this compositor.\n"));
+      exit (1);
+    }
+
+  /* A mode saved in the settings may not be available here */
+  if (!window_supported)
+    take_window_shot = FALSE;
+  if (!area_supported)
+    take_area_shot = FALSE;
+  /* Whole-screen capture is the fallback mode. use window capture
+   * when the compositor only offers that */
+  if (!screen_supported && !take_area_shot)
+    take_window_shot = TRUE;
+}
+#endif
+
 /* main */
 int
 main (int argc, char *argv[])
@@ -1442,6 +1524,8 @@ main (int argc, char *argv[])
 #if defined(ENABLE_WAYLAND) && defined(GDK_WINDOWING_WAYLAND)
   if (wayland_screenshot_is_available ())
     {
+      check_wayland_capture_modes (window_arg, area_arg);
+
       if (include_border_arg)
         g_printerr (_("Warning: --include-border is not supported on Wayland.\n"));
 
