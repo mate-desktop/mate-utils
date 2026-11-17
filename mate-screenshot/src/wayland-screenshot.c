@@ -947,6 +947,62 @@ capture_active_window (gboolean show_mouse)
 
 /* --- Public API --- */
 
+/* Which globals the compositor offers this client. A compositor may hide
+ * privileged globals from untrusted clients, so this is what we can use. */
+typedef struct {
+  gboolean shm;
+  gboolean screencopy;
+  gboolean output_source;
+  gboolean image_copy_capture;
+  gboolean toplevel_source;
+  gboolean toplevel_list;
+  gboolean wlr_toplevel_manager;
+} Globals;
+
+static Globals globals;
+
+static void
+probe_global (void *data, struct wl_registry *registry, uint32_t name,
+              const char *interface, uint32_t version)
+{
+  Globals *g = data;
+
+  if (g_strcmp0 (interface, wl_shm_interface.name) == 0)
+    g->shm = TRUE;
+  else if (g_strcmp0 (interface, zwlr_screencopy_manager_v1_interface.name) == 0)
+    g->screencopy = TRUE;
+  else if (g_strcmp0 (interface, ext_output_image_capture_source_manager_v1_interface.name) == 0)
+    g->output_source = TRUE;
+  else if (g_strcmp0 (interface, ext_image_copy_capture_manager_v1_interface.name) == 0)
+    g->image_copy_capture = TRUE;
+  else if (g_strcmp0 (interface, ext_foreign_toplevel_image_capture_source_manager_v1_interface.name) == 0)
+    g->toplevel_source = TRUE;
+  else if (g_strcmp0 (interface, ext_foreign_toplevel_list_v1_interface.name) == 0)
+    g->toplevel_list = TRUE;
+  else if (g_strcmp0 (interface, zwlr_foreign_toplevel_manager_v1_interface.name) == 0)
+    g->wlr_toplevel_manager = TRUE;
+}
+
+static void
+probe_global_remove (void *data, struct wl_registry *registry, uint32_t name) { }
+
+static const struct wl_registry_listener probe_listener = {
+  .global = probe_global,
+  .global_remove = probe_global_remove,
+};
+
+static void
+probe_globals (struct wl_display *display)
+{
+  struct wl_registry *registry;
+
+  memset (&globals, 0, sizeof globals);
+  registry = wl_display_get_registry (display);
+  wl_registry_add_listener (registry, &probe_listener, &globals);
+  wl_display_roundtrip (display);
+  wl_registry_destroy (registry);
+}
+
 gboolean
 wayland_screenshot_init (void)
 {
@@ -956,6 +1012,7 @@ wayland_screenshot_init (void)
   if (!GDK_IS_WAYLAND_DISPLAY (gdk_display))
     return FALSE;
 
+  probe_globals (gdk_wayland_display_get_wl_display (gdk_display));
   wayland_initialized = TRUE;
 
   g_info ("Wayland screenshot: support initialized");
@@ -973,6 +1030,20 @@ gboolean
 wayland_screenshot_is_available (void)
 {
   return wayland_initialized;
+}
+
+gboolean
+wayland_screenshot_can_capture_screen (void)
+{
+  return wayland_initialized && globals.shm &&
+         ((globals.output_source && globals.image_copy_capture) || globals.screencopy);
+}
+
+gboolean
+wayland_screenshot_can_capture_window (void)
+{
+  return wayland_initialized && globals.shm && globals.image_copy_capture &&
+         globals.toplevel_source && globals.toplevel_list && globals.wlr_toplevel_manager;
 }
 
 GdkPixbuf *
