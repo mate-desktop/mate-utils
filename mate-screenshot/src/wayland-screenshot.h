@@ -38,6 +38,10 @@ void wayland_screenshot_cleanup (void);
 /* Check if we're running on Wayland */
 gboolean wayland_screenshot_is_available (void);
 
+/* Whether the compositor offers what each kind of capture needs */
+gboolean wayland_screenshot_can_capture_screen (void);
+gboolean wayland_screenshot_can_capture_window (void);
+
 /* Capture the entire screen */
 GdkPixbuf *wayland_screenshot_capture_screen (gboolean include_pointer);
 
@@ -66,6 +70,18 @@ wayland_screenshot_cleanup (void)
 
 static inline gboolean
 wayland_screenshot_is_available (void)
+{
+  return FALSE;
+}
+
+static inline gboolean
+wayland_screenshot_can_capture_screen (void)
+{
+  return FALSE;
+}
+
+static inline gboolean
+wayland_screenshot_can_capture_window (void)
 {
   return FALSE;
 }
