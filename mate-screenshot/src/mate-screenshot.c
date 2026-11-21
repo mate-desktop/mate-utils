@@ -1368,6 +1368,15 @@ main (int argc, char *argv[])
   textdomain (GETTEXT_PACKAGE);
 #endif /* ENABLE_NLS */
 
+  /* A nested Wayland compositor can make GTK prefer Wayland even when the
+   * desktop session is X11. Keep screenshots on the session's X11 display,
+   * unless the user has selected a GDK backend explicitly.
+   */
+  if (g_strcmp0 (g_getenv ("XDG_SESSION_TYPE"), "x11") == 0 &&
+      g_getenv ("DISPLAY") != NULL &&
+      g_getenv ("GDK_BACKEND") == NULL)
+    gdk_set_allowed_backends ("x11");
+
   context = g_option_context_new (_("Take a picture of the screen"));
   g_option_context_set_ignore_unknown_options (context, FALSE);
   g_option_context_set_help_enabled (context, TRUE);
