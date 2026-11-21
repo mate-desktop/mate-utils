@@ -1,0 +1,18 @@
+option('disk-image-mounter', type: 'boolean', value: true,
+  description: 'Whether to build the Disk Image Mounter utility')
+option('wayland', type: 'feature', value: 'auto',
+  description: 'Enable Wayland support for mate-screenshot and dictionary applet')
+option('gdict-applet', type: 'boolean', value: true,
+  description: 'Whether to build the Dictionary mate-panel applet')
+option('in-process', type: 'boolean', value: false,
+  description: 'Enable in-process build of dictionary applet (required for Wayland)')
+option('ipv6', type: 'boolean', value: true,
+  description: 'Enables compilation of IPv6 code')
+option('zlib', type: 'boolean', value: true,
+  description: 'Enable zlib support for logview')
+option('gtk-doc', type: 'feature', value: 'auto',
+  description: 'Use gtk-doc to build API documentation')
+option('help', type: 'feature', value: 'auto',
+  description: 'Build user documentation (requires itstool)')
+option('grep-path', type: 'string', value: 'grep',
+  description: 'Path to grep binary for mate-search-tool')
