@@ -25,7 +25,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <glib/gi18n.h>
+#include <glib/gi18n-lib.h>
 #include <gio/gio.h>
 #include <gtk/gtk.h>
 #include <gdk/gdkkeysyms.h>
@@ -1169,7 +1169,9 @@ gdict_applet_init (GdictApplet *applet)
   gdict_source_loader_add_search_path (priv->loader, data_dir);
   g_free (data_dir);
 
+#ifndef ENABLE_IN_PROCESS
   gtk_window_set_default_icon_name ("accessories-dictionary");
+#endif
 
   mate_panel_applet_set_flags (MATE_PANEL_APPLET (applet),
 			  MATE_PANEL_APPLET_EXPAND_MINOR);
